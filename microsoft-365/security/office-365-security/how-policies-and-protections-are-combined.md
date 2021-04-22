@@ -1,6 +1,6 @@
 ---
 title: Ordre et priorité de la protection de la messagerie
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, PROTECTION ATP, Microsoft Defender pour le point de terminaison, Office 365 - Protection contre les menaces, Azure ATP
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, Microsoft Defender pour point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour l'identité
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l'ordre d'application des protections dans Exchange Online Protection (EOP) et sur la façon dont la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 8cd2809fa69064c2058516f459eeba60683c91b9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769009"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930376"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 

@@ -1,7 +1,7 @@
 ---
 title: Intégrer des serveurs Windows au service Microsoft Defender for Endpoint
 description: Intégrer des serveurs Windows afin qu'ils peuvent envoyer des données de capteur au capteur Microsoft Defender for Endpoint.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Windows ATP servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
+keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f2660f19d4b6b0d5f8e2dbf48843002a2bfb7f1d
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769057"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932952"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender for Endpoint
 
@@ -55,7 +55,7 @@ Vous pouvez intégrer Windows Server 2008 R2 SP1, Windows Server 2012 R2 et Wind
 Après avoir effectué les étapes d'intégration à l'aide de l'une des options fournies, vous devez configurer et mettre à jour [les clients System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> La licence de serveur autonome Defender pour les points de terminaison est requise, par nœud, pour intégrer un serveur Windows via l'Agent de surveillance Microsoft (option 1) ou par le biais de Microsoft Endpoint Manager (option 3). Une licence Azure Defender pour les serveurs est également requise, par nœud, pour intégrer un serveur Windows via Azure Security Center (option 2), voir fonctionnalités prise en charge disponibles dans le Centre de sécurité [Azure.](https://docs.microsoft.com/azure/security-center/security-center-services)
+> La licence de serveur autonome Defender pour les points de terminaison est requise, par nœud, pour intégrer un serveur Windows via l'Agent de surveillance Microsoft (option 1) ou par le biais de Microsoft Endpoint Manager (option 3). Une licence Azure Defender pour les serveurs est également requise, par nœud, pour intégrer un serveur Windows via Azure Security Center (option 2), voir fonctionnalités pris en charge disponibles dans [Azure Defender.](https://docs.microsoft.com/azure/security-center/security-center-services)
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>Option 1 : intégrer en installant et en configurant l'Agent de surveillance Microsoft (MMA)
 
@@ -127,13 +127,13 @@ Une fois terminé, vous devriez voir les serveurs Windows intégrés dans le por
 
 3. Cliquez **sur Serveurs intégrés dans le Centre de sécurité Azure.**
 
-4. Suivez les instructions d'intégration dans [Microsoft Defender pour point](https://docs.microsoft.com/azure/security-center/security-center-wdatp) de terminaison avec Azure Security Center et si vous utilisez Azure ARC, suivez les instructions d'intégration dans l'activation de Microsoft Defender pour l'intégration de point de [terminaison.](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)
+4. Suivez les instructions d'intégration dans [Microsoft Defender pour point](https://docs.microsoft.com/azure/security-center/security-center-wdatp) de terminaison avec Azure Defender et si vous utilisez Azure ARC, suivez les instructions d'intégration dans l'activation de Microsoft Defender pour l'intégration de point de [terminaison.](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)
 
 Après avoir effectué les étapes d'intégration, vous devez configurer et mettre à jour [les clients System Center Endpoint Protection.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
 >
-> - Pour que l'intégration via Azure Defender for Servers (anciennement Azure Security Center Standard Edition) fonctionne comme prévu, le serveur doit avoir un espace de travail et une clé appropriés configurés dans les paramètres de l'agent de surveillance Microsoft (MMA).
+> - Pour que l'intégration via Azure Defender for Servers fonctionne comme prévu, le serveur doit avoir un espace de travail et une clé appropriés configurés dans les paramètres de l'Agent de surveillance Microsoft (MMA).
 > - Une fois configuré, le pack d'administration cloud approprié est déployé sur l'ordinateur et le processus de capteur (MsSenseS.exe) est déployé et démarré.
 > - Cette configuration est également requise si le serveur est configuré pour utiliser un serveur de passerelle OMS comme proxy.
 
@@ -188,26 +188,25 @@ La prise en charge de Windows Server fournit des informations plus approfondies 
 
     Pour plus d'informations sur l'utilisation de la stratégie de groupe pour configurer et gérer l'Antivirus Microsoft Defender sur vos serveurs Windows, voir Utiliser les paramètres de stratégie de groupe pour configurer et gérer [l'Antivirus Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
 
-## <a name="integration-with-azure-security-center"></a>Intégration au Centre de sécurité Azure
+## <a name="integration-with-azure-defender"></a>Intégration à Azure Defender
 
-Defender pour le point de terminaison peut s'intégrer au Centre de sécurité Azure pour fournir une solution complète de protection de serveur Windows. Avec cette intégration, Azure Security Center peut utiliser la puissance de Defender for Endpoint pour fournir une détection améliorée des menaces pour les serveurs Windows.
+Defender pour point de terminaison peut s'intégrer à Azure Defender pour fournir une solution complète de protection de serveur Windows. Avec cette intégration, Azure Defender peut utiliser la puissance de Defender for Endpoint pour fournir une détection améliorée des menaces pour les serveurs Windows.
 
 Les fonctionnalités suivantes sont incluses dans cette intégration :
 
-- Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés au Centre de sécurité Azure. Pour plus d'informations sur l'intégration du Centre de sécurité Azure, voir Intégration à [Azure Security Center Standard pour une sécurité renforcée.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
+- Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés à Azure Defender. Pour plus d'informations sur l'intégration d'Azure Defender, voir [Intégration à Azure Defender Standard pour une sécurité renforcée.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
 
     > [!NOTE]
     > L'intégration entre Azure Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Les serveurs Windows surveillés par le Centre de sécurité Azure seront également disponibles dans Defender for Endpoint - Azure Security Center se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes Defender pour le point de terminaison seront disponibles dans la console Azure Security Center.
-- Enquête sur le serveur : les clients du Centre de sécurité Azure peuvent accéder au Centre de sécurité Microsoft Defender pour effectuer une enquête détaillée afin de découvrir l'étendue d'une violation potentielle.
+- Les serveurs Windows surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes defender pour point de terminaison seront disponibles dans la console Azure Defender.
+- Enquête sur le serveur : les clients Azure Defender peuvent accéder au Centre de sécurité Microsoft Defender pour effectuer une enquête détaillée afin de découvrir l'étendue d'une violation potentielle.
 
 > [!IMPORTANT]
->
-> - Lorsque vous utilisez le Centre de sécurité Azure pour surveiller les serveurs, un client Defender for Endpoint est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l'UE pour les utilisateurs européens et anglais).
+> - Lorsque vous utilisez Azure Defender pour surveiller les serveurs, un client Defender pour point de terminaison est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l'UE pour les utilisateurs européens et anglais).<br>
 Les données collectées par Defender pour endpoint sont stockées dans l'emplacement géographique du client, comme identifié lors de l'approvisionnement.
-> - Si vous utilisez Defender pour endpoint avant d'utiliser Azure Security Center, vos données seront stockées à l'emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez le Centre de sécurité Azure ultérieurement.
-> - Une fois configuré, vous ne pouvez pas modifier l'emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client.
+> - Si vous utilisez Defender pour Endpoint avant d'utiliser Azure Defender, vos données seront stockées à l'emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez Azure Defender ultérieurement.
+> - Une fois configuré, vous ne pouvez pas modifier l'emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client. <br>
 La surveillance des points de terminaison du serveur utilisant cette intégration a été désactivée pour les clients Office 365 GCC.
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurer et mettre à jour les clients System Center Endpoint Protection

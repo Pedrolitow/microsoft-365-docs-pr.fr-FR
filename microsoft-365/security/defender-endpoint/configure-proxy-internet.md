@@ -1,6 +1,6 @@
 ---
 title: Configurer les paramètres de proxy d'appareil et de connexion Internet
-description: Configurez les paramètres proxy et Internet de Microsoft Defender pour les points de terminaison pour permettre la communication avec le service cloud.
+description: Configurez les paramètres proxy et Internet de Microsoft Defender pour les points de terminaison afin d'activer la communication avec le service cloud.
 keywords: configurer, proxy, Internet, connectivité Internet, paramètres, paramètres proxy, netsh, winhttp, serveur proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893600"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932798"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy d'appareil et de connectivité Internet
 
@@ -41,7 +41,7 @@ Le capteur Defender for Endpoint incorporé s'exécute dans le contexte système
 >[!TIP]
 >Pour les organisations qui utilisent des proxies de transfert comme passerelle vers l'Internet, vous pouvez utiliser la protection du réseau pour enquêter derrière un proxy. Pour plus d'informations, voir [Enquêter sur les événements de connexion qui se produisent derrière les procurations](investigate-behind-proxy.md).
 
-Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et ne peut découvrir un serveur proxy qu'à l'aide des méthodes de découverte suivantes :
+Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et peut uniquement découvrir un serveur proxy à l'aide des méthodes de découverte suivantes :
 
 - Méthodes de découverte automatique :
   - Proxy transparent
@@ -68,7 +68,7 @@ Configurez un proxy statique basé sur le Registre pour autoriser uniquement le 
 Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
 - Modèles d'administration > composants Windows > collecte de données et builds d'aperçu > Configurer l'utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et télémétrie
-  - Définissez-le **sur Activé et** sélectionnez Désactiver **l'utilisation** du proxy authentifié : Image du paramètre de stratégie ![ de groupe1](images/atp-gpo-proxy1.png)
+  - Définissez-le **sur Activé et** sélectionnez Désactiver **l'utilisation** du proxy authentifié : ![ Image du paramètre de stratégie de groupe1](images/atp-gpo-proxy1.png)
 - **Modèles d'administration > composants Windows >** collecte de données et builds d'aperçu > configurer les expériences utilisateur connectées et la télémétrie :
   - Configurez le proxy :<br>
     ![Image du paramètre de stratégie de groupe2](images/atp-gpo-proxy2.png)
@@ -146,7 +146,7 @@ Si un proxy ou un pare-feu bloque le trafic anonyme, comme le capteur Defender f
 
 Les informations ci-dessous répentent les informations de configuration du proxy et du pare-feu requises pour communiquer avec l'agent d'analyse des journaux (souvent appelé Agent de surveillance Microsoft) pour les versions précédentes de Windows, telles que Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 et Windows Server 2016.
 
-|Ressource agent|Ports |Direction |Contourner l'inspection HTTPS|
+|Ressource Agent|Ports |Direction |Contourner l'inspection HTTPS|
 |------|---------|--------|--------|   
 |*.ods.opinsights.azure.com |Port 443 |Sortant|Oui |  
 |*.oms.opinsights.azure.com |Port 443 |Sortant|Oui |  
@@ -167,7 +167,7 @@ Consultez les instructions suivantes pour éliminer les caractères génériques
 
 3.  Exécutez l'outil TestCloudConnection.exe à partir de « C:\Program Files\Microsoft Monitoring Agent\Agent » pour valider la connectivité et voir les URL requises pour votre espace de travail spécifique.
 
-4.  Consultez la liste des URL des points de terminaison De Microsoft Defender pour obtenir la liste complète des conditions requises pour votre région (reportez-vous à la feuille de calcul URL [de](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)service).
+4.  Consultez la liste des URL de point de terminaison Microsoft Defender pour obtenir la liste complète des conditions requises pour votre région (reportez-vous à la feuille de calcul URL [de](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)service).
 
 ![Image de l'administrateur dans Windows PowerShell](images/admin-powershell.png)
 
@@ -176,7 +176,7 @@ Les caractères génériques (*) utilisés dans les points de terminaison d'URL 
 Le point de terminaison d'URL *.blob.core.windows.net peut être remplacé par les URL affichées dans la section « Règle de pare-feu : *.blob.core.windows.net » des résultats du test. 
 
 > [!NOTE]
-> Dans le cas de l'intégration via Azure Security Center (ASC), plusieurs espaces de travail peuvent être utilisés. Vous devrez effectuer la procédure TestCloudConnection.exe ci-dessus sur un ordinateur intégré à partir de chaque espace de travail (pour déterminer s'il existe des modifications apportées aux URL *.blob.core.windows.net entre les espaces de travail).
+> Dans le cas de l'intégration via Azure Defender, plusieurs espaces de travail peuvent être utilisés. Vous devrez effectuer la procédure TestCloudConnection.exe ci-dessus sur un ordinateur intégré à partir de chaque espace de travail (pour déterminer s'il existe des modifications apportées aux URL *.blob.core.windows.net entre les espaces de travail).
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Vérifier la connectivité du client aux URL du service Microsoft Defender pour les points de terminaison
 

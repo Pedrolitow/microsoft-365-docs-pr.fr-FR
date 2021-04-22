@@ -1,7 +1,7 @@
 ---
 title: Nouveaux profils de configuration pour macOS Et les versions plus récentes de macOS
 description: Cette rubrique décrit les modifications qui doivent être apportées pour bénéficier des extensions système, qui remplacent les extensions de noyau sur macOS Contrôlez et les versions plus récentes de macOS.
-keywords: microsoft, defender, atp, mac, noyau, système, extensions, contrôle
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, noyau, système, extensions, contrôle
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689124"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932738"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nouveaux profils de configuration pour macOS Et les versions plus récentes de macOS
 
@@ -36,9 +36,9 @@ ms.locfileid: "51689124"
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-En adéquation avec l'évolution de macOS, nous préparons un Microsoft Defender pour endpoint sur la mise à jour macOS qui tire parti des extensions système au lieu des extensions de noyau. Cette mise à jour s'applique uniquement à macOS Fonctionnalité (10.15.4) et aux versions plus récentes de macOS.
+En adéquation avec l'évolution de macOS, nous préparons une mise à jour Microsoft Defender pour Endpoint sur macOS qui tire parti des extensions système au lieu des extensions de noyau. Cette mise à jour s'applique uniquement à macOS Fonctionnalité (10.15.4) et aux versions plus récentes de macOS.
 
-Si vous avez déployé Microsoft Defender pour endpoint sur macOS dans un environnement géré (via JAMF, Intune ou une autre solution MDM), vous devez déployer de nouveaux profils de configuration. Si vous n'exécutez pas ces étapes, les utilisateurs auront accès à des invites d'approbation pour exécuter ces nouveaux composants.
+Si vous avez déployé Microsoft Defender pour Endpoint sur macOS dans un environnement géré (via JAMF, Intune ou une autre solution MDM), vous devez déployer de nouveaux profils de configuration. Si vous n'exécutez pas ces étapes, les utilisateurs auront accès à des invites d'approbation pour exécuter ces nouveaux composants.
 
 ## <a name="jamf"></a>JAMF
 
@@ -47,7 +47,7 @@ Si vous avez déployé Microsoft Defender pour endpoint sur macOS dans un enviro
 Pour approuver les extensions système, créez la charge utile suivante :
 
 1. In **Computers > Configuration Profiles** select Options > System **Extensions**.
-2. Sélectionnez **Extensions système autorisées dans** la liste de listes listes des types d'extensions système. 
+2. Sélectionnez **Extensions système autorisées dans** la liste de listes listes des **types** d'extensions système.
 3. Utilisez **UBF8T346G9** pour l'ID d'équipe.
 4. Ajoutez les identificateurs d'ensemble suivants à la **liste Extensions système autorisées** :
 
@@ -156,7 +156,7 @@ Dans le cadre des fonctionnalités de détection et de réponse des points de te
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
     ```
     
-3. Suivez les instructions de [cette page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) pour créer un certificat de signature à l'aide de l'autorité de certification intégrée de JAMF.
+3. Suivez les instructions de cette [page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) pour créer un certificat de signature à l'aide de l'autorité de certification intégrée de JAMF.
 
 4. Une fois le certificat créé et installé sur votre appareil, exécutez la commande suivante à partir du Terminal pour signer le fichier :
 
@@ -170,7 +170,7 @@ Dans le cadre des fonctionnalités de détection et de réponse des points de te
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
-5. À partir du portail JAMF, accédez aux **profils de configuration** et cliquez sur le **bouton** Télécharger. Sélectionnez `com.microsoft.network-extension.signed.mobileconfig` le fichier lorsque vous y avez été invité.
+5. À partir du portail JAMF, accédez à **Profils de configuration** et cliquez sur le **bouton** Télécharger. Sélectionnez `com.microsoft.network-extension.signed.mobileconfig` le fichier lorsque vous y avez été invité.
 
 ## <a name="intune"></a>Intune
 

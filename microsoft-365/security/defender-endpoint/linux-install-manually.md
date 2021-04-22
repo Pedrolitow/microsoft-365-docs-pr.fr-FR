@@ -2,7 +2,7 @@
 title: Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour Endpoint sur Linux manuellement à partir de la ligne de commande.
-keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2beb46c62de2e9720d1626e0e1e5ce806a6d7e19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903915"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929084"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour point de terminaison sur Linux manuellement
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51903915"
 
 Cet article explique comment déployer Microsoft Defender pour Endpoint sur Linux manuellement. Un déploiement réussi nécessite l'exécution de toutes les tâches suivantes :
 
-- [Déployer Microsoft Defender pour point de terminaison sur Linux manuellement](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
+- [Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Conditions préalables et système requis](#prerequisites-and-system-requirements)
   - [Configurer le référentiel de logiciels Linux](#configure-the-linux-software-repository)
     - [RHEL et variantes (CentOS et Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
@@ -58,7 +58,7 @@ Avant de commencer, consultez [Microsoft Defender pour Endpoint sur Linux](micro
 
 ## <a name="configure-the-linux-software-repository"></a>Configurer le référentiel de logiciels Linux
 
-Defender pour le point de terminaison pour Linux peut être déployé à partir de l'un des canaux suivants (indiqué ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l'un de ces référentiels sont fournies ci-dessous.
+Defender for Endpoint sur Linux peut être déployé à partir de l'un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux. Les instructions de configuration de votre appareil pour utiliser l'un de ces référentiels sont fournies ci-dessous.
 
 Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
@@ -86,7 +86,7 @@ Afin d'afficher un aperçu des nouvelles fonctionnalités et de fournir des comm
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Par exemple, si vous exécutez CentOS 7 et que vous souhaitez déployer Defender pour Endpoint pour Linux à partir du *canal prod* :
+    Par exemple, si vous exécutez CentOS 7 et que vous souhaitez déployer Defender pour Endpoint sur Linux à partir du *canal prod* :
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -328,7 +328,7 @@ Téléchargez le package d'intégration à partir du Centre de sécurité Micros
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l'installation initiale. Voir [Configure Defender for Endpoint for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
+    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l'installation initiale. Voir Configurer Defender pour endpoint sur Linux pour [la découverte de proxy statique : configuration post-installation.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
 5. Exécutez un test de détection pour vérifier que l'appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l'appareil nouvellement intégré :
 
@@ -344,7 +344,7 @@ Téléchargez le package d'intégration à partir du Centre de sécurité Micros
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Le fichier doit avoir été mis en quarantaine par Defender for Endpoint pour Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
+    - Le fichier doit avoir été mis en quarantaine par Defender for Endpoint sur Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
 
         ```bash
         mdatp threat list
@@ -352,7 +352,7 @@ Téléchargez le package d'intégration à partir du Centre de sécurité Micros
 
 ## <a name="installer-script"></a>Script du programme d'installation
 
-Vous pouvez également utiliser un script d'installation [bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
+Vous pouvez également utiliser un script bash de [programme](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) d'installation automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
 Le script identifie la distribution et la version, et définit l'appareil pour qu'il tire le dernier package et l'installe.
 Vous pouvez également intégrer un script fourni.
 
@@ -381,7 +381,7 @@ Pour [plus d'informations](linux-resources.md#log-installation-issues) sur la re
 
 ## <a name="operating-system-upgrades"></a>Mises à niveau du système d'exploitation
 
-Lors de la mise à niveau de votre système d'exploitation vers une nouvelle version majeure, vous devez d'abord désinstaller Defender pour Endpoint pour Linux, installer la mise à niveau, puis reconfigurer Defender pour Endpoint pour Linux sur votre appareil.
+Lors de la mise à niveau de votre système d'exploitation vers une nouvelle version majeure, vous devez d'abord désinstaller Defender pour Endpoint sur Linux, installer la mise à niveau, puis reconfigurer Defender pour Endpoint sur Linux sur votre appareil.
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Comment migrer de Insiders-Fast canal de production
 
@@ -406,4 +406,4 @@ Lors de la mise à niveau de votre système d'exploitation vers une nouvelle ver
 
 ## <a name="uninstallation"></a>Désinstallation
 
-Voir [Désinstaller](linux-resources.md#uninstall) pour plus d'informations sur la suppression de Defender pour Endpoint pour Linux des appareils clients.
+Voir [Désinstaller](linux-resources.md#uninstall) pour plus d'informations sur la suppression de Defender for Endpoint sur Linux des appareils clients.

@@ -1,7 +1,7 @@
 ---
 title: Laboratoire d'évaluation de Microsoft Defender for Endpoint
 description: Découvrez les fonctionnalités de Microsoft Defender pour les points de terminaison, exécutez des simulations d'attaques et découvrez comment il empêche, détecte et remédie aux menaces.
-keywords: évaluer mdatp, évaluation, atelier, simulation, windows 10, windows server 2019, laboratoire d'évaluation
+keywords: évaluer Microsoft Defender pour le point de terminaison, évaluation, laboratoire, simulation, windows 10, windows server 2019, laboratoire d'évaluation
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893436"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932786"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d'évaluation de Microsoft Defender for Endpoint
 
@@ -43,7 +43,7 @@ Le laboratoire d'évaluation de Microsoft Defender pour points de terminaison es
 
 Grâce à l'expérience de mise en place simplifiée, vous pouvez vous concentrer sur l'exécution de vos propres scénarios de test et des simulations pré-réalisées pour voir les résultats de Defender for Endpoint. 
 
-Vous aurez un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l'analyse des menaces, ce qui vous permettra de tester la pile de protection complète que Defender pour Endpoint offre. 
+Vous disposez d'un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l'analyse des menaces, ce qui vous permet de tester la pile de protection complète de Defender for Endpoint. 
 
 Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 pré-configurés pour avoir les dernières versions du système d'exploitation et les composants de sécurité en place, ainsi qu'Office 2019 Standard installé.
 
@@ -204,7 +204,7 @@ Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [sc�
 
 
 ### <a name="threat-simulator-scenarios"></a>Scénarios de simulateur de menaces
-Si vous avez choisi d'installer l'un des simulateurs de menaces pris en charge pendant l'installation de l'atelier, vous pouvez exécuter les simulations intégrées sur les périphériques de laboratoire d'évaluation. 
+Si vous avez choisi d'installer l'un des simulateurs de menaces pris en charge pendant l'installation de l'atelier, vous pouvez exécuter les simulations intégrées sur les périphériques du laboratoire d'évaluation. 
 
 
 L'exécution de simulations de menaces à l'aide de plateformes tierces est un bon moyen d'évaluer microsoft Defender pour les fonctionnalités de point de terminaison dans les limites d'un environnement de laboratoire.
@@ -223,7 +223,7 @@ L'exécution de simulations de menaces à l'aide de plateformes tierces est un b
 3. Choisissez une simulation ou parcourez la galerie de simulations pour parcourir les simulations disponibles. 
 
     Vous pouvez obtenir la galerie de simulations à partir de :
-    - Tableau de bord d'évaluation principal dans la **vignette Vue d'ensemble simulations** ou
+    - Tableau de bord d'évaluation principal dans la **vignette de vue d'ensemble simulations** ou
     - En naviguant à partir du volet de navigation Évaluation et didacticiels  >  **Simulation & didacticiels,** puis sélectionnez Le catalogue **simulations**.
 
 4. Sélectionnez les appareils sur lequel vous souhaitez exécuter la simulation.
@@ -242,7 +242,7 @@ Recherchez des preuves d'attaque par le biais d'une recherche avancée à l'aide
 ## <a name="simulation-gallery"></a>Galerie de simulations
 Microsoft Defender pour le point de terminaison s'est associé à différentes plateformes de simulation de menaces pour vous donner un accès pratique pour tester les fonctionnalités de la plateforme directement à partir du portail. 
 
-Affichez toutes les simulations disponibles en allant au catalogue **Simulations et** didacticiels  >  **Simulations** à partir du menu. 
+Affichez toutes les simulations disponibles en allant dans le catalogue **Simulations et** didacticiels  >  **Simulations** à partir du menu. 
 
 Une liste d'agents de simulation de menace tiers pris en charge est répertoriée, et des types spécifiques de simulations ainsi que des descriptions détaillées sont fournis dans le catalogue. 
 

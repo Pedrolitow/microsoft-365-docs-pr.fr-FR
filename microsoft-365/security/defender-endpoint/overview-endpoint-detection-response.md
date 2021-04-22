@@ -1,8 +1,8 @@
 ---
 title: Vue d'ensemble des fonctionnalités de détection et de réponse des points de terminaison
 ms.reviewer: ''
-description: En savoir plus sur les fonctionnalités de détection et de réponse des points de terminaison dans Microsoft Defender for Endpoint
-keywords: microsoft defender pour le point de terminaison, la détection et la réponse des points de terminaison, la réponse, la détection, la cybersécurité, la protection
+description: En savoir plus sur les fonctionnalités de détection et de réponse des points de terminaison dans Microsoft Defender pour point de terminaison
+keywords: Microsoft Defender pour le point de terminaison, détection et réponse des points de terminaison, réponse, détection, cybersécurité, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b00bef611a3e4b33bf15a5366b09a96f68d4c1a2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861718"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933516"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Vue d'ensemble de la détection et de la réponse des points de terminaison
 

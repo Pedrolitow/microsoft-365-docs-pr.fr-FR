@@ -1,7 +1,7 @@
 ---
 title: Table DeviceTvmSecureConfigurationAssessment dans le schéma de repérage avancé
-description: Découvrez les événements d’évaluation de la sécurité dans la table DeviceTvmSecureConfigurationAssessment du schéma de recherche avancé. Ces événements de gestion & des vulnérabilités fournissent des informations sur l’appareil, ainsi que des détails sur la configuration de la sécurité, l’impact et les informations de conformité.
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment
+description: Découvrez les événements d’évaluation de la sécurité dans la table DeviceTvmSecureConfigurationAssessment du schéma de recherche avancé. Ces événements de gestion & des vulnérabilités fournissent des informations sur l’appareil, ainsi que des informations sur la configuration de la sécurité, l’impact et la conformité.
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1c4b71139a0fba84928c3f604e3c770d140d9e2b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e128eabc43c73949b5c747e51f3b59ac8b9a0ac5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499743"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933024"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -52,9 +52,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ConfigurationSubcategory` | string | Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. |
 | `ConfigurationImpact` | string | Impact nominal de la configuration sur la note de configuration globale (1-10) |
 | `IsCompliant` | booléen | Indique si la configuration ou la stratégie est correctement configurée. |
-| `IsApplicable` | booléen | Indique si la configuration ou la stratégie s’applique à l’appareil |
+| `IsApplicable` | valeur booléenne | Indique si la configuration ou la stratégie s’applique à l’appareil |
 | `Context` | string | Informations contextuelles supplémentaires sur la configuration ou la stratégie |
-| `IsExpectedUserImpact` | booléen | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée |
+| `IsExpectedUserImpact` | valeur booléenne | Indique s’il y aura un impact sur l’utilisateur si la configuration ou la stratégie est appliquée |
 
 ## <a name="related-topics"></a>Sujets associés
 

@@ -14,13 +14,13 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Les clients Microsoft Defender pour Office 365 E5 et ATP P1 et ATP P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d'entité de messagerie.
-ms.openlocfilehash: e96e83ce5e3af9e61599ab67ce9f91ac797cc6db
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d'entité de messagerie.
+ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768757"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933360"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -39,7 +39,7 @@ Le centre de sécurité et conformité Office (protection.office.com) existant o
 |Centre|URL|Navigation|
 |---|---|---|
 |Sécurité et conformité |protection.office.com|Explorateur de gestion des \> menaces|
-|Centre de sécurité Microsoft 365 |security.microsoft.com|E-mail & Collaboration \> Explorer|
+|Centre de sécurité Microsoft 365 |security.microsoft.com|E-mail & Collaboration \> Explorer|
 
 Dans l'Explorateur de menaces, sélectionnez l'objet d'un e-mail que vous examinez. Une barre d'or s'affiche en haut du volant du courrier électronique pour ce courrier. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d'entité de messagerie avec des données enrichies... ». Sélectionnez pour afficher la nouvelle page.
 

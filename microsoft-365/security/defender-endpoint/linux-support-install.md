@@ -2,7 +2,7 @@
 title: Résoudre les problèmes d'installation de Microsoft Defender pour endpoint sur Linux
 ms.reviewer: ''
 description: Résoudre les problèmes d'installation de Microsoft Defender pour endpoint sur Linux
-keywords: microsoft, defender, atp, linux, installation
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 270ad1145308aaa2af703cda84307a4a96097a53
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 12f648ce476f6e29cbb6b038cc42f2e744d77104
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903129"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933300"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d'installation de Microsoft Defender pour endpoint sur Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "51903129"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="verify-if-installation-succeeded"></a>Vérifier si l'installation a réussi
 
@@ -149,7 +149,7 @@ Essayez maintenant de redémarrer le service mdatp à l'aide de l'étape 2. Reve
 
 ## <a name="if-mdatp-service-is-running-but-eicar-text-file-detection-doesnt-work"></a>Si le service mdatp est en cours d'exécution, mais que la détection de fichier texte EICAR ne fonctionne pas
 
-1. Vérifiez le type de système de fichiers en utilisant :
+1. Vérifiez le type de système de fichiers à l'aide des :
 
     ```bash
     findmnt -T <path_of_EICAR_file>
@@ -177,4 +177,4 @@ Essayez maintenant de redémarrer le service mdatp à l'aide de l'étape 2. Reve
     Diagnostic file created: <path to file>
     ```
 
-    Le chemin d'accès à un fichier zip qui contient les journaux s'affiche en tant que sortie. Connectez-vous à notre support client à l'aide de ces journaux.
+    Le chemin d'accès à un fichier zip qui contient les journaux s'affiche en tant que sortie. À l'aide de ces journaux, connectez-vous au support technique.

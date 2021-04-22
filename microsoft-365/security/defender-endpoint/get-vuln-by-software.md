@@ -1,7 +1,7 @@
 ---
-title: Liste des vulnérabilités par logiciel
+title: Répertorier les vulnérabilités par logiciel
 description: Récupérez la liste des vulnérabilités dans le logiciel installé.
-keywords: api, api de graphique, api pris en charge, obtenir, liste de vulnérabilités, api tvm mdatp
+keywords: api, api de graphique, api pris en charge, obtenir, liste de vulnérabilités, api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f05c1a67c845e7f88cbcb3ee88cf7a664d5a4bf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c28417d9782d14d890e771ed401f8ee5d3c26bc0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166743"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932762"
 ---
-# <a name="list-vulnerabilities-by-software"></a>Liste des vulnérabilités par logiciel
+# <a name="list-vulnerabilities-by-software"></a>Répertorier les vulnérabilités par logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "51166743"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,9 +42,9 @@ ms.locfileid: "51166743"
 Récupérez la liste des vulnérabilités dans le logiciel installé. 
 
 ## <a name="permissions"></a>Autorisations
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d'informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d'informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
 :---|:---|:---
 Application | Software.Read.All | « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | Software.Read | « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
@@ -58,7 +58,7 @@ GET /api/Software/{Id}/vulnerabilities
 
 | Nom        | Type | Description
 |:--------------|:-------|:--------------|
-| Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+| Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 Vide

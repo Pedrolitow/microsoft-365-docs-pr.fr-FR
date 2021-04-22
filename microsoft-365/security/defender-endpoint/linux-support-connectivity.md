@@ -2,7 +2,7 @@
 title: Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
 ms.reviewer: ''
 description: Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
-keywords: microsoft, defender, atp, linux, cloud, connectivité, communication
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, cloud, connectivité, communication
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 985e4c39c60600da892c010b6ee26e9c98bb0611
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0345d7f88d147abb750e66a5e61f516abf38d553
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903165"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933108"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de connectivité cloud pour Microsoft Defender pour endpoint sur Linux
 
@@ -33,11 +33,11 @@ ms.locfileid: "51903165"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="run-the-connectivity-test"></a>Exécuter le test de connectivité
 
-Pour tester si Defender pour Endpoint pour Linux peut communiquer avec le cloud avec les paramètres réseau actuels, exécutez un test de connectivité à partir de la ligne de commande :
+Pour tester si Defender pour Endpoint sur Linux peut communiquer avec le cloud avec les paramètres réseau actuels, exécutez un test de connectivité à partir de la ligne de commande :
 
 ```bash
 mdatp connectivity test
@@ -66,7 +66,7 @@ Si le test de connectivité échoue, vérifiez si [](microsoft-defender-endpoint
 
 Les échecs avec erreur d'erreur 35 ou 60 indiquent le rejet de l'épinglage du certificat. Vérifiez si la connexion est sous inspection SSL ou HTTPS. Si c'est le cas, ajoutez Microsoft Defender pour le point de terminaison à la liste d'accès.
 
-## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>Étapes de résolution des problèmes pour les environnements sans proxy ou avec proxy transparent
+## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-transparent-proxy"></a>Étapes de dépannage pour les environnements sans proxy ou avec proxy transparent
 
 Pour vérifier qu'une connexion n'est pas bloquée dans un environnement sans proxy ou avec un proxy transparent, exécutez la commande suivante dans le terminal :
 
@@ -84,11 +84,11 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 ## <a name="troubleshooting-steps-for-environments-with-static-proxy"></a>Étapes de résolution des problèmes pour les environnements avec proxy statique
 
 > [!WARNING]
-> Les pacs, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
+> Pac, WPAD et les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seul un proxy statique ou transparent est utilisé.
 >
-> L'inspection et l'interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l'inspection SSL et votre serveur proxy pour transmettre directement les données de Defender for Endpoint for Linux aux URL pertinentes sans interception. L'ajout de votre certificat d'interception au magasin global n'autorise pas l'interception.
+> L'inspection et l'interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l'inspection SSL et votre serveur proxy afin de transmettre directement les données de Defender pour Endpoint sur Linux aux URL pertinentes sans interception. L'ajout de votre certificat d'interception au magasin global n'autorise pas l'interception.
 
-Si un proxy statique est requis, ajoutez un paramètre proxy à la commande ci-dessus, où correspond à l'adresse `proxy_address:port` proxy et au port :
+Si un proxy statique est requis, ajoutez un paramètre de proxy à la commande ci-dessus, où correspond à l'adresse `proxy_address:port` proxy et au port :
 
 ```bash
 curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
@@ -107,7 +107,7 @@ Pour utiliser un proxy statique, le `mdatp.service` fichier doit être modifié.
 
 Assurez-vous également que l'adresse proxy statique correcte est remplie pour remplacer `address:port` .
 
-Si ce fichier est correct, essayez d'exécutez la commande suivante dans le terminal pour recharger Defender pour endpoint pour Linux et propager le paramètre :
+Si ce fichier est correct, essayez d'exécutez la commande suivante dans le terminal pour recharger Defender pour Endpoint sur Linux et propager le paramètre :
 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp
@@ -123,4 +123,4 @@ Si le problème persiste, contactez le support technique.
 
 ## <a name="resources"></a>Ressources
 
-- Pour plus d'informations sur la configuration du produit afin qu'il utilise un proxy statique, voir [Configurer Microsoft Defender pour endpoint pour](linux-static-proxy-configuration.md)la découverte de proxy statique.
+- Pour plus d'informations sur la configuration du produit afin qu'il utilise un proxy statique, voir [Configurer Microsoft Defender pour endpoint](linux-static-proxy-configuration.md)pour la découverte de proxy statique.

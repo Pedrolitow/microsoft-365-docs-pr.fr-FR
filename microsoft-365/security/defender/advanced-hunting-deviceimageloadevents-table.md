@@ -1,7 +1,7 @@
 ---
 title: Table DeviceImageLoadEvents dans le schéma de recherche avancé
 description: En savoir plus sur les événements de chargement de DLL dans la table DeviceImageLoadEvents du schéma de recherche avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, imageloadevents, DeviceImageLoadEvents, DLL loading, library, file image
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, imageloadevents, DeviceImageLoadEvents, DLL loading, library, file image
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2999f45b1389dac5bf578bdba6dc3fc4ce72fb9b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 23d242fa211924e421c6fc2d9c4e02c297edfd0c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498562"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933048"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -40,7 +40,7 @@ ms.locfileid: "51498562"
 Le `DeviceImageLoadEvents` tableau du schéma de [recherche](advanced-hunting-overview.md) avancée contient des informations sur les événements de chargement DLL. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
+> Pour plus d'informations sur les types d'événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -49,21 +49,21 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
+| `ActionType` | string | Type d'activité qui a déclenché l'événement. Pour plus [d'informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
-| `FolderPath` | string | Dossier contenant le fichier à lequel l’action enregistrée a été appliquée |
+| `FolderPath` | string | Dossier contenant le fichier à lequel l'action enregistrée a été appliquée |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
-| `MD5` | string | Hachage MD5 du fichier à l’application de l’action enregistrée |
+| `MD5` | string | Hachage MD5 du fichier à l'application de l'action enregistrée |
 | `FileSize` | long | Taille du fichier en octets |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
-| `InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a tenu le processus responsable de l’événement |
-| `InitiatingProcessIntegrityLevel` | string | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité à des processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
-| `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
-| `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l'événement |
+| `InitiatingProcessAccountName` | string | Nom d'utilisateur du compte qui a dirigé le processus responsable de l'événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l'événement |
+| `InitiatingProcessAccountUpn` | string | Nom d'utilisateur principal (UPN) du compte qui a lancé le processus responsable de l'événement |
+| `InitiatingProcessAccountObjectId` | string | ID d'objet Azure AD du compte d'utilisateur qui a dirigé le processus responsable de l'événement |
+| `InitiatingProcessIntegrityLevel` | string | Niveau d'intégrité du processus à l'origine de l'événement. Windows affecte des niveaux d'intégrité à des processus en fonction de certaines caractéristiques, par exemple s'ils ont été lancés à partir d'un téléchargement Internet. Ces niveaux d'intégrité influencent les autorisations sur les ressources |
+| `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l'absence d'élévation de privilège du contrôle d'accès utilisateur (UAC) appliquée au processus à l'origine de l'événement |
+| `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l'origine de l'événement |
 | `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |

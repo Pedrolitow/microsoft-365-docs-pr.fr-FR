@@ -1,7 +1,7 @@
 ---
 title: Fonction DeviceFromIP() dans le recherche avancée pour Microsoft 365 Defender
 description: Découvrez comment utiliser la fonction DeviceFromIP() pour obtenir les appareils affectés à une adresse IP spécifique
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, device, devicefromIP, function, enrichment
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, device, devicefromIP, function, enrichment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d2996021a84186adc6656927dbdc910db4d037de
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063534"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933180"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -39,14 +39,14 @@ ms.locfileid: "51063534"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement la liste des appareils qui ont été affectés à une certaine adresse IP à `DeviceFromIP()` un moment donné dans le temps. [](advanced-hunting-overview.md) 
+Utilisez la fonction dans vos requêtes de recherche avancées pour obtenir rapidement la liste des périphériques qui ont été affectés à une certaine adresse IP à `DeviceFromIP()` un moment donné dans le temps. [](advanced-hunting-overview.md) 
 
 Cette fonction renvoie un tableau avec les colonnes suivantes :
 
 | Column | Type de données | Description |
 |------------|-------------|-------------|
 | `IP` | string | Adresse IP  |
-| `DeviceId` | string | Identificateur unique de l’appareil dans le service |
+| `DeviceId` | string | Identificateur unique de l'appareil dans le service |
 
 
 ## <a name="syntax"></a>Syntaxe
@@ -57,10 +57,10 @@ invoke DeviceFromIP()
 
 ## <a name="arguments"></a>Arguments
 
-Cette fonction est invoquée dans le cadre d’une requête.
+Cette fonction est invoquée dans le cadre d'une requête.
 
-- **x**— Le premier paramètre est généralement déjà une colonne dans la requête. Dans ce cas, il s’agit de la colonne nommée , l’adresse IP pour laquelle vous souhaitez voir la liste des appareils qui lui ont `IP` été affectés. Il doit s’agit d’une adresse IP locale. Les adresses IP externes ne sont pas pris en charge.
-- **y**— Un deuxième paramètre facultatif est le , qui indique à la fonction d’obtenir les appareils affectés les plus `Timestamp` récents à partir d’un moment spécifique. Si elle n’est pas spécifiée, la fonction renvoie les derniers enregistrements disponibles.
+- **x**— Le premier paramètre est généralement déjà une colonne dans la requête. Dans ce cas, il s'agit de la colonne nommée , l'adresse IP pour laquelle vous souhaitez voir la liste des périphériques qui lui ont `IP` été affectés. Il doit s'agit d'une adresse IP locale. Les adresses IP externes ne sont pas pris en charge.
+- **y**— Un deuxième paramètre facultatif est le , qui indique à la fonction d'obtenir les appareils affectés les plus `Timestamp` récents à partir d'un moment spécifique. Si elle n'est pas spécifiée, la fonction renvoie les derniers enregistrements disponibles.
 
 ## <a name="example"></a>Exemple
 

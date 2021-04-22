@@ -1,7 +1,7 @@
 ---
-title: Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
-description: Installez Microsoft Defender pour endpoint sur macOS, à l'aide de Microsoft Intune.
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos, magasin, mojave, high sierra
+title: Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur Mac
+description: Installez Microsoft Defender pour endpoint sur Mac, à l'aide de Microsoft Intune.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: c98ce17b7b71f2d05aeffe66dbb1e08f9046f463
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764214"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933144"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
 
@@ -37,7 +37,7 @@ ms.locfileid: "51764214"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 
 Cette rubrique décrit comment déployer Microsoft Defender pour endpoint sur macOS via Intune. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
 
@@ -52,7 +52,7 @@ Cette rubrique décrit comment déployer Microsoft Defender pour endpoint sur ma
 Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour endpoint sur Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
 

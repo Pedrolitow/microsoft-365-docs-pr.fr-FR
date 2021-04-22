@@ -1,7 +1,7 @@
 ---
-title: Inscrire Microsoft Defender pour endpoint pour les appareils macOS dans Jamf Pro
-description: Inscrire Microsoft Defender pour le point de terminaison pour les appareils macOS dans Jamf Pro
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamfpro, macos,pépé, mojave, high sierra
+title: Inscrire Microsoft Defender pour le point de terminaison sur les appareils macOS dans Jamf Pro
+description: Inscrire Microsoft Defender pour le point de terminaison sur les appareils macOS dans Jamf Pro
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, désinstallation, intune, jamfpro, macos, magasin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e832493159649cb6721320da53c25f57855baa4f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 0fa0db3ba85ff003d91b43d06c709ab66c37ce02
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861646"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933096"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>Inscrire Microsoft Defender pour le point de terminaison sur les appareils macOS dans Jamf Pro 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51861646"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="enroll-macos-devices"></a>Inscrire des appareils macOS
 

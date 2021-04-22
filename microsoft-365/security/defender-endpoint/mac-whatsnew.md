@@ -1,7 +1,7 @@
 ---
 title: Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 description: Découvrez les principales modifications apportées aux versions précédentes de Microsoft Defender pour Endpoint sur Mac.
-keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 67bbc987dc339c0e1f0354e07d6d2db8c39ec8b9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: edbabf83c7bf1ac8dbe1ca9451ad191b45a862ac
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689040"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932726"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -40,7 +40,7 @@ ms.locfileid: "51689040"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
-- Microsoft Defender pour le point de terminaison sur macOS est désormais disponible en prévisualisation pour les clients du gouvernement des États-Unis. Pour plus d'informations, [voir Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Microsoft Defender pour point de terminaison sur macOS est désormais disponible en prévisualisation pour les clients du gouvernement des États-Unis. Pour plus d'informations, [voir Microsoft Defender for Endpoint for US Government customers](gov.md).
 - Améliorations des performances (en particulier pour la situation d'utilisation de l'application Simulateur XCode) & résolutions de bogues
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
@@ -77,7 +77,7 @@ ms.locfileid: "51689040"
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
 
 - Conditions supprimées lorsque Microsoft Defender pour le point de terminaison déclenchant un bogue macOS 11 (Big Sur) qui se manifeste en noyau
-- Correction d'une fuite de mémoire dans l'extension système de sécurité des points de terminaison lors de l'exécution sur mac 11 (Big Sur)
+- Correction d'une fuite de mémoire dans l'extension du système de sécurité des points de terminaison lors de l'exécution sur mac 11 (Big Sur)
 - Résolutions de bogues
 
 ## <a name="1011072"></a>101.10.72
@@ -121,7 +121,7 @@ ms.locfileid: "51689040"
 
 ## <a name="1010663"></a>101.06.63
 
-- Nous avons résolu une régression des performances introduite dans la version `101.05.17` . La régression a été introduite avec le correctif pour éliminer les noyaux que certains clients ont observés lors de l'accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d'examiner d'autres façons d'éliminer les noyaux.
+- Nous avons résolu une régression des performances introduite dans la `101.05.17` version. La régression a été introduite avec le correctif pour éliminer les noyaux que certains clients ont observés lors de l'accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d'examiner d'autres façons d'éliminer les noyaux.
 
 ## <a name="1010517"></a>101.05.17
 
@@ -146,14 +146,14 @@ ms.locfileid: "51689040"
 ## <a name="1010154"></a>101.01.54
 
 - Améliorations en matière de compatibilité avec Time Machine
-- Améliorations de l'accessibilité
+- Améliorations en matière d'accessibilité
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1010031"></a>101.00.31
 
 - Amélioration de [l'expérience d'intégration de produit pour les utilisateurs d'Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Les [exclusions antivirus désormais prise en charge les caractères génériques](mac-exclusions.md#supported-exclusion-types)
-- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner Analyser **avec Microsoft Defender pour le point de terminaison**
+- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner **Analyser avec Microsoft Defender pour le point de terminaison**
 - Les rétrogradations de produits sur place sont désormais explicitement interdits par le programme d'installation. Si vous devez rétrograder, désinstallez d'abord la version existante et reconfigurez votre appareil.
 - Autres améliorations en matière de performances & résolutions de bogues
 
@@ -210,11 +210,11 @@ ms.locfileid: "51689040"
 
 ## <a name="1007099"></a>100.70.99
 
-- Nous avons résolu un problème qui a une incidence sur la capacité de certains utilisateurs à mettre à niveau vers macOS Ils sont activés lorsque la protection en temps réel est activée. Ce problème ponctuel a été provoqué par microsoft Defender pour le verrouillage des fichiers de point de terminaison dans le package de mise à niveau De base lors de l'analyse des menaces, ce qui a entraîné des échecs dans la séquence de mise à niveau.
+- Nous avons résolu un problème qui a un impact sur la capacité de certains utilisateurs à mettre à niveau vers macOS Ils sont activés lorsque la protection en temps réel est activée. Ce problème ponctuel a été provoqué par microsoft Defender pour le verrouillage des fichiers de point de terminaison dans le package de mise à niveau De base lors de l'analyse des menaces, ce qui a entraîné des échecs dans la séquence de mise à niveau.
 
 ## <a name="1006899"></a>100.68.99
 
-- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu'elle s'exécute [en mode passif](mac-preferences.md#enable--disable-passive-mode)
+- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu'elle s'exécute en [mode passif](mac-preferences.md#enable--disable-passive-mode)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1006528"></a>100.65.28

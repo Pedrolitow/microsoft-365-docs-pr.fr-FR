@@ -1,7 +1,7 @@
 ---
 title: Blocage comportemental du client
 description: Le blocage du comportement client fait partie des fonctionnalités de blocage et de blocage du comportement dans Microsoft Defender pour point de terminaison
-keywords: blocage comportemental, protection rapide, comportement du client, Microsoft Defender ATP, microsoft defender pour le point de terminaison
+keywords: blocage comportemental, protection rapide, comportement du client, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 48929d0e2b0c932d37cb5d29783712d00b17117f
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: c58c81cd4623ec03850c167cad285e052413174c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904151"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933420"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
@@ -34,11 +34,11 @@ ms.locfileid: "51904151"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le blocage du comportement client est un composant [des](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) fonctionnalités de blocage et de blocage du comportement dans Defender pour point de terminaison. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement. 
+Le blocage du comportement client est un composant des fonctionnalités de blocage du comportement et de blocage [de](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) contenu dans Defender for Endpoint. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement. 
 
 :::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Protection du cloud et du client":::
 
@@ -54,7 +54,7 @@ Le blocage du comportement client est efficace, car il permet non seulement d'em
 
 ## <a name="behavior-based-detections"></a>Détections basées sur le comportement
 
-Les détections basées sur le comportement sont nommées en fonction de la matrice [CK&MITRE ATT pour Entreprise.](https://attack.mitre.org/matrices/enterprise) La convention d'attribution de noms permet d'identifier la phase d'attaque où le comportement malveillant a été observé :
+Les détections basées sur le comportement sont nommées en fonction de la matrice CK&[MITRE ATT pour Entreprise.](https://attack.mitre.org/matrices/enterprise) La convention d'attribution de noms permet d'identifier la phase d'attaque où le comportement malveillant a été observé :
 
 
 |Tactique |   Nom de la menace de détection |

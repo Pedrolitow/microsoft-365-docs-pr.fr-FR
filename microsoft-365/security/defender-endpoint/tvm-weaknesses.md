@@ -1,7 +1,7 @@
 ---
 title: 'Vulnérabilités dans mon organisation : gestion des menaces et des vulnérabilités'
 description: Répertorie les vulnérabilités courantes et l'ID d'exposition (CVE) des faiblesses trouvées dans le logiciel en cours d'exécution dans votre organisation. Découverte par microsoft Defender pour la fonctionnalité de gestion des menaces et des vulnérabilités des points de terminaison.
-keywords: menace mdatp & gestion des vulnérabilités, gestion des menaces et des vulnérabilités, page de faiblesses tvm mdatp, recherche de faiblesses par le biais de tvm, liste de vulnérabilités tvm, détails de vulnérabilité dans tvm
+keywords: Microsoft Defender for Endpoint threat & vulnerability management, threat and vulnerability management, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0f573b2425764876e877de44555691979a0e1fcf
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: a8039a06dc58c31158f90d39857ffbeba92138d5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689400"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933072"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnérabilités dans mon organisation : gestion des menaces et des vulnérabilités
 
@@ -79,7 +79,7 @@ Affichez les informations sur les violations et menaces associées dans la colon
  >[!NOTE]
  > Toujours hiérarchiser les recommandations associées aux menaces en cours. Ces recommandations sont marquées avec l'icône d'informations sur les menaces ![ Simple dessin d'un bogue rouge.](images/tvm_bug_icon.png) et l'icône d'informations sur la violation, dessin ![ simple d'une flèche qui atteint une cible. ](images/tvm_alert_icon.png) .  
 
-L'icône Informations sur les violations est mise en surbrillant si une vulnérabilité est trouvée dans votre organisation.
+L'icône Informations sur les violations est mise en surbrill valeur si une vulnérabilité est trouvée dans votre organisation.
 ![Exemple de texte d'informations sur la violation qui pourrait s'afficher lorsque vous placez le pointage sur l'icône. Celle-ci indique « une alerte active possible est associée à cette recommandation.](images/tvm-breach-insights.png)
 
 L'icône Informations sur les menaces est mise en évidence si la vulnérabilité trouvée dans votre organisation est associée à des exploits. Le pointage sur l'icône indique si la menace fait partie d'un kit d'exploitation ou est connectée à des campagnes avancées persistantes ou à des groupes d'activités spécifiques. Lorsqu'il est disponible, il existe un lien vers un rapport d'analyse des menaces avec les actualités sur l'exploitation zéro jour, les divulgations ou les conseils de sécurité associés.  
@@ -97,7 +97,7 @@ Si vous sélectionnez un contrôle CVE, un panneau volant s'ouvre avec plus d'in
 
 ### <a name="software-that-isnt-supported"></a>Logiciel non pris en charge
 
-Les VC pour les logiciels qui ne sont actuellement pas pris en charge par la gestion des menaces & des vulnérabilités sont toujours présents dans la page Faiblesses. Étant donné que le logiciel n'est pas pris en charge, seules des données limitées seront disponibles.
+Les VC pour les logiciels qui ne sont actuellement pas pris en charge par les menaces & gestion des vulnérabilités sont toujours présents dans la page Faiblesses. Étant donné que le logiciel n'est pas pris en charge, seules des données limitées seront disponibles.
 
 Les informations sur l'appareil exposé ne seront pas disponibles pour les VC avec des logiciels non pris en cas de non-gestion. Filtrez en sélectionnant l'option « Non disponible » dans la section « Appareils exposés ».
 
@@ -137,16 +137,16 @@ Afficher les informations sur les faiblesses associées dans la page de l'appare
 
 Comme pour la preuve logicielle, nous montrons maintenant la logique de détection que nous avons appliquée sur un appareil afin de l'afficher comme vulnérable. La nouvelle section est appelée « Logique de détection » (dans toute vulnérabilité détectée dans la page de l'appareil) et affiche la logique et la source de détection.
 
-La catégorie « Fonctionnalité du système d'exploitation » est également affichée dans les scénarios pertinents. Une CVE affecterait les appareils qui exécutent un système d'exploitation vulnérable uniquement si un composant de système d'exploitation spécifique est activé. Supposons que Windows Server 2019 présente une vulnérabilité dans son composant DNS. Avec cette nouvelle fonctionnalité, nous attacherons uniquement cette CVE aux appareils Windows Server 2019 avec la fonctionnalité DNS activée dans leur système d'exploitation.
+La catégorie « Fonctionnalité du système d'exploitation » est également affichée dans les scénarios pertinents. Une CVE affecterait les appareils qui exécutent un système d'exploitation vulnérable uniquement si un composant de système d'exploitation spécifique est activé. Supposons que Windows Server 2019 présente une vulnérabilité dans son composant DNS. Avec cette nouvelle fonctionnalité, nous n'attacherons cette CVE qu'aux appareils Windows Server 2019 avec la fonctionnalité DNS activée dans leur système d'exploitation.
 
 ![Exemple de logique de détection qui répertorie les logiciels détectés sur l'appareil et les ko.](images/tvm-cve-detection-logic.png)
 
-## <a name="report-inaccuracy"></a>Inaccuracy de rapport
+## <a name="report-inaccuracy"></a>Report inaccuracy
 
 Signalez un faux positif lorsque vous voyez des informations vagues, inexactes ou incomplètes. Vous pouvez également signaler les recommandations de sécurité qui ont déjà été corrigés.
 
 1. Ouvrez la CVE sur la page Faiblesses.
-2. Select **Report inaccuracy** and a flyout pane will open.
+2. Sélectionnez **l'imprécision du rapport** et un volet volant s'ouvre.
 3. Sélectionnez la catégorie d'imprécision dans le menu déroulant et remplissez votre adresse e-mail et les détails d'imprécision.
 4. Sélectionnez **Envoyer**. Vos commentaires sont immédiatement envoyés aux experts en gestion des menaces et des vulnérabilités.
 

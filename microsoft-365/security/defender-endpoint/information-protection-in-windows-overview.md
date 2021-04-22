@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 803c0af0c495eedfd26023d4e71d98df6a1b1b64
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 65c5161f110e95008f2dc56aa3a2d17266ac1cb1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904021"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933348"
 ---
 # <a name="information-protection-in-windows-overview"></a>Vue d’ensemble de la protection des informations dans Windows
 
@@ -41,7 +41,7 @@ La protection des informations fait partie intégrante de la suite Microsoft 365
 
 
 >[!TIP]
-> Lisez notre billet de blog sur la façon dont Microsoft Defender pour point de terminaison (anciennement appelé Microsoft Defender ATP) s'intègre à Microsoft Information Protection pour découvrir, protéger et surveiller les données sensibles sur les appareils [Windows.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
+> Lisez notre billet de blog sur l'intégration de Microsoft Defender for Endpoint à Microsoft Information Protection pour découvrir, protéger et surveiller les données sensibles sur [les appareils Windows.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
 
 Defender pour le point de terminaison applique les méthodes suivantes pour découvrir, classifier et protéger les données :
 
@@ -66,7 +66,7 @@ Les types personnalisés sont ceux que vous définissez et sont conçus pour pro
 
 Lorsqu'un fichier est créé ou modifié sur un appareil Windows, Defender for Endpoint analyse le contenu pour évaluer s'il contient des informations sensibles.
 
-Activer l'intégration Azure Information Protection de sorte que lorsqu'un fichier contenant des informations sensibles est découvert par Defender pour le point de terminaison à l'aide d'étiquettes ou de types d'informations, il est automatiquement transmis à Azure Information Protection à partir de l'appareil.
+Activer l'intégration Azure Information Protection de sorte que lorsqu'un fichier contenant des informations sensibles est découvert par Defender for Endpoint à l'aide d'étiquettes ou de types d'informations, il est automatiquement transmis à Azure Information Protection à partir de l'appareil.
 
 ![Image de la page de paramètres avec Azure Information Protection](images/atp-settings-aip.png)
 
@@ -89,11 +89,11 @@ Cliquez sur un appareil pour afficher la liste des fichiers observés sur cet ap
 
 La découverte de données basée sur Defender pour le point de terminaison est également disponible dans [Azure Log Analytics,](https://docs.microsoft.com/azure/log-analytics/log-analytics-overview)où vous pouvez effectuer des requêtes complexes sur les données brutes.
 
-Pour plus d'informations sur l'analyse d'Azure Information Protection, voir [Rapports centraux pour Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/reports-aip)
+Pour plus d'informations sur l'analyse Azure Information Protection, consultez la fonctionnalité [Rapports centralisées pour Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/reports-aip)
 
 Ouvrez Azure Log Analytics dans le portail Azure et ouvrez un générateur de requêtes (standard ou classique).
 
-Pour afficher les données de Defender for Endpoint, effectuez une requête qui contient :
+Pour afficher les données defender pour point de terminaison, exécutez une requête qui contient :
 
 ```
 InformationProtectionLogs_CL

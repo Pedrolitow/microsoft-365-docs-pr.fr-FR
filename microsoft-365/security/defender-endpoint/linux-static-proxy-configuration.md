@@ -2,7 +2,7 @@
 title: Microsoft Defender pour point de terminaison sur la découverte de proxy statique Linux
 ms.reviewer: ''
 description: Décrit comment configurer Microsoft Defender pour endpoint sur Linux, pour la découverte de proxy statique.
-keywords: microsoft, defender, atp, linux, installation, proxy
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e59727b6bb5fca58595764fc003009891546d8f6
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: c5dc14c71c344bf508cda8d39f892d740781ac87
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903845"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933120"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurer Microsoft Defender pour le point de terminaison sur Linux pour la découverte de proxy statique
 
@@ -68,7 +68,7 @@ Lors de l'installation, ```HTTPS_PROXY``` la variable d'environnement doit être
 
 La `HTTPS_PROXY` variable d'environnement peut être définie de la même manière lors de la désinstallation.
 
-Notez que l'installation et la désinstallation ne échouent pas nécessairement si un proxy est requis mais n'est pas configuré. Toutefois, la télémétrie n'est pas envoyée et l'opération peut prendre beaucoup plus de temps en raison de délai d'accès réseau.
+Notez que l'installation et la désinstallation ne échouent pas nécessairement si un proxy est requis mais non configuré. Toutefois, la télémétrie n'est pas envoyée et l'opération peut prendre beaucoup plus de temps en raison de délai d'accès réseau.
 
 ## <a name="post-installation-configuration"></a>Configuration post-installation
   

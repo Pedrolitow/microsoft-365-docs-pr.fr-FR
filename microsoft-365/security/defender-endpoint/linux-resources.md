@@ -2,7 +2,7 @@
 title: Microsoft Defender pour point de terminaison sur les ressources Linux
 ms.reviewer: ''
 description: Décrit les ressources de Microsoft Defender pour Endpoint sur Linux, notamment comment le désinstaller, comment collecter les journaux de diagnostic, les commandes CLI et les problèmes connus avec le produit.
-keywords: microsoft, defender, atp, linux, installation, déployer, désinstallation, casque, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 176ee89c8d60a1515855296e2565f0649f908a33
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903141"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933324"
 ---
 # <a name="resources"></a>Ressources
 
@@ -52,7 +52,7 @@ Si vous pouvez reproduire un problème, augmentez d'abord le niveau de journalis
 
 2. Reproduisez le problème.
 
-3. Exécutez la commande suivante pour back up Defender for Endpoint's logs. Les fichiers sont stockés dans une archive .zip.
+3. Exécutez la commande suivante pour enregistrer Defender pour les journaux du point de terminaison. Les fichiers sont stockés dans une archive .zip.
 
    ```bash
    sudo mdatp diagnostic create
@@ -81,11 +81,11 @@ Le journal détaillé sera enregistré dans `/var/log/microsoft/mdatp_install.lo
 
 ## <a name="uninstall"></a>Uninstall
 
-Il existe plusieurs façons de désinstaller Defender pour Endpoint pour Linux. Si vous utilisez un outil de configuration tel que l'Outil de configuration, suivez les instructions de désinstallation du package pour l'outil de configuration.
+Il existe plusieurs façons de désinstaller Defender pour Endpoint sur Linux. Si vous utilisez un outil de configuration tel que l'Outil de configuration, suivez les instructions de désinstallation du package pour l'outil de configuration.
 
 ### <a name="manual-uninstallation"></a>Désinstallation manuelle
 
-- `sudo yum remove mdatp` pour RHEL et les variantes (CentOS et Oracle Linux).
+- `sudo yum remove mdatp` pour RHEL et ses variantes (CentOS et Oracle Linux).
 - `sudo zypper remove mdatp` pour SLES et variantes.
 - `sudo apt-get purge mdatp` pour les systèmes Ubuntu et Debian.
 
@@ -127,7 +127,7 @@ Le tableau suivant répertorie les commandes pour certains des scénarios les pl
 |Protection            |Faire une analyse rapide                                         |`mdatp scan quick`                                                     |
 |Protection            |Faire une analyse complète                                          |`mdatp scan full`                                                      |
 |Protection            |Annuler une analyse à la demande en cours                        |`mdatp scan cancel`                                                    |
-|Protection            |Demander une mise à jour des informations de sécurité                  |`mdatp definitions update`                                             |
+|Protection            |Demander une mise à jour de l’intelligence de la sécurité                  |`mdatp definitions update`                                             |
 |Historique de la protection    |Imprimer l’historique complet de la protection                       |`mdatp threat list`                                                    |
 |Historique de la protection    |Obtenir les détails sur les menaces                                      |`mdatp threat get --id [threat-id]`                                    |
 |Gestion de la mise en quarantaine |Liste de tous les fichiers mis en quarantaine                              |`mdatp threat quarantine list`                                         |

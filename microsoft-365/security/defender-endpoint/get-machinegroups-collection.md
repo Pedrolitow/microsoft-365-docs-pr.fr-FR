@@ -1,6 +1,6 @@
 ---
-title: API obtenir la collection de groupes d’ordinateurs RBAC
-description: Découvrez comment utiliser l’API obtenir une collection de ko pour récupérer une collection de groupes d’appareils RBAC dans Microsoft Defender - Protection avancée contre les menaces.
+title: API obtenir la collection de groupes d'ordinateurs RBAC
+description: Découvrez comment utiliser l'API get KB collection pour récupérer une collection de groupes d'appareils RBAC dans Microsoft Defender pour Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, RBAC, groupe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: 54a0edb47204fe6e48666f0927d05121af95e00a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 18566025d79f02281c1d2c1509dd98f1e57879c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166648"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932774"
 ---
 # <a name="get-kb-collection-api"></a>API Obtenir une collection de ko
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S'applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -37,10 +37,10 @@ ms.locfileid: "51166648"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Récupère une collection de groupes d’appareils RBAC.
+Récupère une collection de groupes d'appareils RBAC.
 
 ## <a name="permissions"></a>Autorisations
-L’utilisateur a besoin d’autorisations de lecture.
+L'utilisateur a besoin d'autorisations de lecture.
 
 ## <a name="http-request"></a>Requête HTTP
 ```
@@ -74,7 +74,7 @@ Content-type: application/json
 **Réponse**
 
 Voici un exemple de réponse.
-L’ID de champ contient **l’ID** du groupe d’appareils et est égal au champ **rbacGroupId** dans les informations des appareils. Le **champ non regroupé** n’est vrai que pour un seul groupe pour tous les appareils qui n’ont été affectés à aucun groupe. Comme d’habitude, ce groupe a le nom « UnassignedGroup ».
+L'ID de champ contient **l'ID** du groupe d'appareils et est égal au champ **rbacGroupId** dans les informations des appareils. Le **champ non regroupé** n'est vrai que pour un seul groupe pour tous les appareils qui n'ont été affectés à aucun groupe. Comme d'habitude, ce groupe a le nom « UnassignedGroup ».
 
 ```
 HTTP/1.1 200 OK

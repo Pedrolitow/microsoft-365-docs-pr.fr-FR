@@ -1,7 +1,7 @@
 ---
-title: 'Microsoft Defender ATP pour Android : informations de confidentialité'
-description: Contrôles de confidentialité, comment configurer des paramètres de stratégie qui ont une incidence sur la confidentialité et des informations sur les données de diagnostic collectées dans Microsoft Defender ATP pour Android.
-keywords: microsoft, defender, atp, android, confidentialité, diagnostic
+title: 'Microsoft Defender pour point de terminaison Android : informations sur la confidentialité'
+description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour Endpoint sur Android.
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, android, confidentialité, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876108"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930136"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender pour point de terminaison Android : informations sur la confidentialité
 
@@ -32,7 +32,7 @@ ms.locfileid: "51876108"
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender pour le point de terminaison pour Android collecte des informations à partir de vos appareils Android configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir defender pour point de terminaison pour iOS sécurisé, à jour, performant comme prévu et pour prendre en charge le service.
+Defender pour le point de terminaison sur Android collecte des informations à partir de vos appareils Android configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir defender pour point de terminaison pour Android sécurisé, à jour, performant comme prévu et pour prendre en charge le service.
 
 Pour plus d'informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité des données de point [de terminaison.](data-storage-privacy.md)
 
@@ -90,7 +90,7 @@ Les informations suivantes sont collectées uniquement pour l'application Micros
 
 Les données facultatives incluent les données de diagnostic et les données de commentaires. Les données de diagnostic facultatives nous aident à améliorer le produit et nous fournissent des informations complémentaires pour détecter, diagnostiquer et résoudre les problèmes. Les données de diagnostic facultatives incluent :
 
--   Utilisation de l'application, du processeur et du réseau
+-   Utilisation de l'application, de l'UC et du réseau
 
 -   État de l'appareil du point de vue de l'application, y compris l'état de l'analyse, le minutage de l'analyse, les autorisations d'application accordées et l'état de mise à niveau
 

@@ -1,7 +1,7 @@
 ---
-title: Portails de sécurité Microsoft et centres d’administration
-description: Recherchez le portail ou le Centre d’administration Microsoft qui vous permet de gérer divers services liés à la sécurité Microsoft 365
-keywords: sécurité, portails, Microsoft 365, M365, centre de sécurité, centre d’administration, URL, lien, MTP, Microsoft Defender ATP, Centre de sécurité Microsoft Defender, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC,AGP, AATP, Cloud App Security, Azure AD, centre de conformité & sécurité
+title: Portails de sécurité Microsoft et centres d'administration
+description: Recherchez le portail ou le Centre d'administration Microsoft qui vous permet de gérer divers services liés à la sécurité Microsoft 365
+keywords: sécurité, portails, Microsoft 365, M365, centre de sécurité, centre d'administration, URL, lien, Microsoft 365 Defender, Microsoft Defender pour point de terminaison, Centre de sécurité Microsoft Defender, Microsoft Defender pour l'identité, Microsoft Defender pour Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Cloud App Security , Azure AD, centre de conformité & sécurité
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -17,14 +17,14 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 66e1bfa8007a972a1963745857a25e1e255634b6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c304d8badd9bde11ad0f483b482628503569dc26
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200184"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51931934"
 ---
-# <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité Microsoft et centres d’administration
+# <a name="microsoft-security-portals-and-admin-centers"></a>Portails de sécurité Microsoft et centres d'administration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,18 +35,18 @@ Bien que le Centre de sécurité [Microsoft 365](overview-security-center.md) so
 
 ## <a name="security-portals"></a>Portails de sécurité
 
-Les administrateurs et les opérateurs de sécurité peuvent se rendre sur les portails suivants pour gérer les paramètres spécifiques à la sécurité, examiner les activités de menace possibles, répondre aux menaces actives et collaborer avec les administrateurs informatiques pour résoudre les problèmes.
+Les opérateurs de sécurité et les administrateurs peuvent se rendre sur les portails suivants pour gérer les paramètres spécifiques à la sécurité, examiner les activités de menace possibles, répondre aux menaces actives et collaborer avec les administrateurs informatiques pour résoudre les problèmes.
 <p></p>
 
 | Nom du portail | Description | Liens |
 |---|---|---| 
-| Centre de sécurité Microsoft 365 | Surveiller l’activité contre les menaces et y répondre, et renforcer la sécurité au sein de vos identités, e-mails, données, points de terminaison et applications [avec Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
-| Centre de sécurité Microsoft Defender | Surveiller l’activité des menaces sur vos points de terminaison et y répondre à l’aide des fonctionnalités fournies [avec Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
+| Centre de sécurité Microsoft 365 | Surveiller l'activité contre les menaces et y répondre, et renforcer la sécurité au sein de vos identités, e-mails, données, points de terminaison et applications [avec Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
+| Centre de sécurité Microsoft Defender | Surveiller l'activité des menaces sur vos points de terminaison et y répondre à l'aide des fonctionnalités fournies [avec Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
 | Centre de sécurité et conformité | Gérer [Exchange Online Protection et](../office-365-security/exchange-online-protection-overview.md?view=o365-worldwide) Microsoft Defender pour Office [365](/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide) pour protéger vos services de messagerie et de collaboration, et garantir la conformité aux différentes réglementations de gestion des données | [protection.office.com](https://protection.office.com) |
 | Portail Azure Defender | Utiliser [Azure Defender pour](/azure/security-center/security-center-intro) renforcer la posture de sécurité de vos centres de données et de vos charges de travail hybrides dans le cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
-| Portail Microsoft Defender pour l’identité | Identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes internes à l’aide de signaux Active Directory avec [Microsoft Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
+| Portail Microsoft Defender pour l'identité | Identifier, détecter et examiner les menaces avancées, les identités compromises et les actions malveillantes internes à l'aide de signaux Active Directory avec [Microsoft Defender pour l'identité](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Portail Cloud App Security | Utiliser [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) pour obtenir une visibilité enrichie, contrôler les déplacements de données et des analyses sophistiquées pour identifier et lutter contre les cybermenaces sur les services cloud | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
-| Portail Microsoft Defender Security Intelligence | Obtenir des mises à jour d’intelligence de sécurité pour Microsoft Defender pour le point de terminaison, soumettre des exemples et explorer les menaces | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
+| Portail Microsoft Defender Security Intelligence | Obtenir des mises à jour d'intelligence de sécurité pour Microsoft Defender pour le point de terminaison, soumettre des exemples et explorer les menaces | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## <a name="portals-for-other-workloads"></a>Portails pour les autres charges de travail
 
@@ -58,5 +58,5 @@ Bien que ces portails ne soient pas spécifiquement dédiés à la gestion de la
 | Portail Azure | Afficher et gérer [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) et toutes vos [ressources Azure](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Centre de conformité Microsoft 365 | Gérer les stratégies de gestion des données et garantir [la conformité avec les réglementations](/compliance/regulatory/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Centre d’administration Microsoft 365 | Configurer les services Microsoft 365 ; gérer les rôles, les licences et suivre les mises à jour de vos services Microsoft 365 | [admin.microsoft.com](https://admin.microsoft.com/) |
-| Centre d’administration Microsoft Endpoint Manager | Utiliser [Microsoft Endpoint Manager pour gérer](/mem/configmgr/) et sécuriser des appareils à l’aide des fonctionnalités combinées d’Intune et de Configuration Manager | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
-| Portail Microsoft Intune | Utiliser [Microsoft Intune pour déployer](/intune/fundamentals/what-is-intune) des stratégies d’appareil et surveiller la conformité des appareils | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)
+| Centre d’administration Microsoft Endpoint Manager | Utiliser [Microsoft Endpoint Manager pour gérer](/mem/configmgr/) et sécuriser des appareils à l'aide des fonctionnalités combinées d'Intune et de Configuration Manager | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
+| Portail Microsoft Intune | Utiliser [Microsoft Intune pour déployer](/intune/fundamentals/what-is-intune) des stratégies d'appareil et surveiller la conformité des appareils | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)
