@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7f3dd65aea0efa570ec5d6a1d27479b787e16831
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 42b15edd933d80dd397f4681c4f0fdb035f030f2
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935280"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943004"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "51935280"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 >[!IMPORTANT]
 >Cette rubrique contient des instructions sur la façon de définir des préférences pour Defender pour Endpoint sur Linux dans les environnements d'entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources.](linux-resources.md#configure-from-the-command-line)
@@ -90,7 +90,7 @@ Détermine si le moteur antivirus s'exécute en mode passif ou non. En mode pass
 | **Commentaires** | Disponible dans Defender pour Endpoint version 100.67.60 ou supérieure. |
 |||
 
-#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d'exclusions
+#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d'exclusion
 
 Spécifie la stratégie de fusion pour les exclusions. Il peut s'agit d'une combinaison d'exclusions définies par l'administrateur et d'exclusions définies par l'utilisateur ( ) ou uniquement `merge` d'exclusions définies par l'administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
@@ -138,7 +138,7 @@ Utilisé pour exclure le contenu de l'analyse par chemin d'accès complet au fic
 
 **Type de chemin d'accès (fichier/répertoire)**
 
-Indique si la propriété *du chemin d'accès* fait référence à un fichier ou un répertoire. 
+Indique si la propriété *de chemin d'accès* fait référence à un fichier ou un répertoire. 
 
 |||
 |:---|:---|
@@ -221,7 +221,7 @@ Type de menace pour lequel le comportement est configuré.
 Action à prendre en cas de menace du type spécifié dans la section précédente. Peut être :
 
 - **Audit**: l'appareil n'est pas protégé contre ce type de menace, mais une entrée sur la menace est enregistrée.
-- **Bloc**: l'appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
+- **Bloquer**: l'appareil est protégé contre ce type de menace et vous êtes averti dans la console de sécurité.
 - **Off**: l'appareil n'est pas protégé contre ce type de menace et rien n'est enregistré.
 
 |||
@@ -239,7 +239,7 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 |:---|:---|
 | **Key** | threatTypeSettingsMergePolicy |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | merge (par défaut) <br/> admin_only |
+| **Valeurs possibles** | merge (valeur par défaut) <br/> admin_only |
 | **Commentaires** | Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure. |
 |||
 
@@ -263,7 +263,7 @@ Spécifiez le nombre maximal d'entrées à conserver dans l'historique d'analyse
 |:---|:---|
 | **Key** | scanHistoryMaximumItems |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments. |
+| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments. |
 | **Commentaires** | Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure. |
 |||
 
@@ -360,7 +360,7 @@ Le profil de configuration suivant :
    "cloudService":{
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
-      "enabled":true
+      "enabled":true,
       "proxy":"http://proxy.server:port/"
    }
 }
@@ -421,7 +421,7 @@ Le profil de configuration suivant contient des entrées pour tous les paramètr
       "enabled":true,
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
-      "automaticDefinitionUpdateEnabled":true
+      "automaticDefinitionUpdateEnabled":true,
       "proxy": "http://proxy.server:port/"
    }
 }

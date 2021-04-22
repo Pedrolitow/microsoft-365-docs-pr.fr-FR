@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935136"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51942992"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Évaluer Microsoft Defender pour Office 365
 
@@ -32,11 +33,14 @@ ms.locfileid: "51935136"
 > [!IMPORTANT]
 > L'évaluation de Microsoft Defender pour Office 365 est en prévisualisation publique. Cette version préliminaire est fournie sans contrat de niveau de service. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
 
-La conduite d'une évaluation complète du produit de sécurité peut vous aider à prendre des décisions éclairées sur les mises à niveau et les achats. Il permet d'essayer les fonctionnalités du produit de sécurité pour évaluer comment il peut aider votre équipe en charge des opérations de sécurité dans ses tâches quotidiennes.
+La conduite d'une évaluation approfondie du produit de sécurité peut vous aider à prendre des décisions éclairées sur les mises à niveau et les achats. Il permet d'essayer les fonctionnalités du produit de sécurité pour évaluer comment il peut aider votre équipe en charge des opérations de sécurité dans ses tâches quotidiennes.
 
 L'expérience d'évaluation de Microsoft Defender pour [Office 365](defender-for-office-365.md) est conçue pour éliminer la complexité de la configuration de l'appareil et de l'environnement afin que vous pouvez vous concentrer sur l'évaluation des fonctionnalités de Microsoft Defender pour Office 365. Avec le mode d'évaluation, tous les messages envoyés aux boîtes aux lettres Exchange Online peuvent être évalués sans pointer les enregistrements MX vers Microsoft. La fonctionnalité s'applique uniquement à la protection de la messagerie et non aux clients Office tels que Word, SharePoint ou Teams.
 
 Si vous n'avez pas encore de licence qui prend en charge Microsoft Defender pour Office 365, vous pouvez démarrer une évaluation gratuite de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) jours et tester les fonctionnalités dans le Centre de sécurité & conformité Office 365 ( https://protection.office.com/homepage) . Vous pourrez profiter de la mise en place rapide et la désactiver facilement si nécessaire.
+
+> [!NOTE]
+> Si vous êtes dans le portail de sécurité Microsoft 365 unifié (security.microsoft.com), vous pouvez démarrer une évaluation de Defender pour Office 365 ici : Email & Collaboration > Policies & Rules > Threat Policies > Additional Policies.
 
 ## <a name="how-the-evaluation-works"></a>Fonctionnement de l'évaluation
 
@@ -46,7 +50,7 @@ Avec le mode d'évaluation, les [](set-up-anti-phishing-policies.md#impersonat
 
 Dans le cadre de l'installation, le mode d'évaluation configure également [le filtrage amélioré pour les connecteurs.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Il améliore la précision du filtrage en conservant l'adresse IP et les informations de l'expéditeur, qui sont sinon perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant Defender pour Office 365. Le filtrage amélioré pour les connecteurs améliore également la précision du filtrage pour vos stratégies de protection contre le courrier indésirable et anti-hameçonnage Exchange Online Protection (EOP) existantes.
 
-Le filtrage amélioré activé pour les connecteurs améliore la précision du filtrage, mais peut modifier la livrabilité de certains messages si vous disposez d'un ESG devant Defender pour Office 365 et que vous ne contournez pas actuellement le filtrage EOP. L'impact est limité aux stratégies EOP ; La configuration des stratégies MDO dans le cadre de l'évaluation est créée en mode non d'application. Pour minimiser l'impact potentiel sur la production, vous pouvez contourner tout filtrage EOP en créant une règle de transport pour définir le niveau de confiance du courrier indésirable (SCL) sur -1. Pour plus d'informations, voir Utiliser le EAC pour créer une règle de flux de messagerie qui définit le [SCL d'un message.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
+Le filtrage amélioré activé pour les connecteurs améliore la précision du filtrage, mais peut modifier la livrabilité de certains messages si vous disposez d'un ESG devant Defender pour Office 365 et que vous ne contournez pas actuellement le filtrage EOP. L'impact est limité aux stratégies EOP ; La configuration des stratégies MDO dans le cadre de l'évaluation est créée en mode non d'application. Pour minimiser l'impact potentiel sur la production, vous pouvez contourner tout le filtrage EOP en créant une règle de transport pour définir le niveau de confiance du courrier indésirable (SCL) sur -1. Pour plus d'informations, voir Utiliser le EAC pour créer une règle de flux de messagerie qui définit le [SCL d'un message.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
 
 Lorsque le mode d'évaluation est installé, vous avez un rapport mis à jour quotidiennement avec jusqu'à 90 jours de données quantifiant les messages qui auraient été bloqués si les stratégies étaient implémentées (par exemple, supprimer, envoyer en courrier indésirable, mettre en quarantaine). Les rapports sont générés pour toutes les détections Defender pour Office 365 et EOP. Elles sont agrégées par technologie de détection (par exemple, l'emprunt d'identité) et peuvent être filtrées par plage de temps. En outre, les rapports de messages peuvent être créés à la demande pour créer des tableaux croisés dynamiques personnalisés ou pour explorer les messages en profondeur à l'aide de l'Explorateur de menaces.
 

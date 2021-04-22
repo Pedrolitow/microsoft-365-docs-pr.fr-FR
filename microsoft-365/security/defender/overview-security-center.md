@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f9bb0690cf48c4cc694c0d563ba7d4203953358a
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939263"
+ms.locfileid: "51943052"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Vue d'ensemble du Centre de sécurité Microsoft 365 unifié
 
@@ -50,6 +50,9 @@ Si vous avez besoin d'informations sur les changements du Centre de sécurité &
 
 - [Defender pour Office 365 dans le Centre de sécurité Microsoft 365](microsoft-365-security-center-mdo.md)
 - [Defender pour point de terminaison dans le Centre de sécurité Microsoft 365](microsoft-365-security-center-mde.md)
+
+> [!NOTE]
+> Le portail de sécurité Microsoft 365 utilise et applique l'accès basé sur les rôles existant et déplace chaque modèle de sécurité vers le portail unifié. Chaque charge de travail convergée (par exemple, MDO ou MDE) dispose de son propre accès basé sur les rôles. Les rôles déjà dans les produits seront automatiquement convergés vers le portail de sécurité Microsoft 365. Toutefois, les rôles et les autorisations pour MCAS seront toujours gérés dans MCAS.
 
 ## <a name="what-to-expect"></a>À quoi s'attendre
 
@@ -132,19 +135,19 @@ Les cartes sont dans les catégories suivantes :
 ## <a name="threat-analytics-with-better-data-coverage"></a>Analyse des menaces avec une meilleure couverture de données
 Suivez les menaces émergentes et répondez-y avec l'expérience intégrée d'analyse des menaces Microsoft 365 Defender suivante :
 
-- Meilleure couverture des données entre Microsoft Defender pour le point de terminaison et Microsoft Defender pour Office 365, rendant possible la gestion combinée des incidents, l’examen automatique, la correction et la recherche proactive ou réactive de menaces sur plusieurs domaines. 
+- Meilleure couverture des données entre Microsoft Defender pour le point de terminaison et Microsoft Defender pour Office 365, rendant possible la gestion combinée des incidents, l'examen automatique, la correction et la recherche proactive ou réactive de menaces sur plusieurs domaines. 
 - Détections et atténuations liées à la messagerie électronique de Microsoft Defender pour Office 365, en plus des données de point de terminaison déjà disponibles dans Microsoft Defender pour Endpoint.
-- Une vue des incidents liés aux menaces qui regroupent les alertes en articles d’attaque de bout en bout dans Microsoft Defender pour point de terminaison et Microsoft Defender pour Office 365 pour réduire la file d’attente de travail, ainsi que simplifier et accélérer votre enquête.
-- Tentatives d’attaque détectées et bloquées par les solutions Microsoft 365 Defender. Il existe également des données que vous pouvez utiliser pour piloter des actions préventives qui atténuent les risques d’exposition supplémentaire et augmentent la résilience. 
-- Conception améliorée qui place des informations exploitables à la une pour vous aider à identifier rapidement les données sur qui il est urgent de se concentrer, d’examiner et de tirer parti des rapports.
+- Une vue des incidents liés aux menaces qui regroupent les alertes en articles d'attaque de bout en bout dans Microsoft Defender pour point de terminaison et Microsoft Defender pour Office 365 pour réduire la file d'attente de travail, ainsi que simplifier et accélérer votre enquête.
+- Tentatives d'attaque détectées et bloquées par les solutions Microsoft 365 Defender. Il existe également des données que vous pouvez utiliser pour piloter des actions préventives qui atténuent les risques d'exposition supplémentaire et augmentent la résilience. 
+- Conception améliorée qui place des informations exploitables à la une pour vous aider à identifier rapidement les données sur qui il est urgent de se concentrer, d'examiner et de tirer parti des rapports.
 
-## <a name="a-centralized-learning-hub"></a>Hub d’apprentissage centralisé
+## <a name="a-centralized-learning-hub"></a>Hub d'apprentissage centralisé
 
-Le Centre de sécurité Microsoft 365 inclut un hub d’apprentissage qui publie des conseils officiels à partir de ressources telles que le blog sur la sécurité Microsoft, la communauté de sécurité Microsoft sur YouTube et la documentation officielle sur docs.microsoft.com.
+Le Centre de sécurité Microsoft 365 inclut un hub d'apprentissage qui publie des conseils officiels à partir de ressources telles que le blog sur la sécurité Microsoft, la communauté de sécurité Microsoft sur YouTube et la documentation officielle sur docs.microsoft.com.
 
-À l’intérieur du hub d’apprentissage, les conseils de collaboration de messagerie & (Microsoft Defender pour Office 365 ou MDO) sont côte à côte avec Endpoint (Microsoft Defender pour Endpoint ou MDE) et les ressources d’apprentissage de Microsoft 365 Defender.
+À l'intérieur du hub d'apprentissage, les conseils de collaboration de messagerie & (Microsoft Defender pour Office 365 ou MDO) sont côte à côte avec Endpoint (Microsoft Defender pour Endpoint ou MDE) et les ressources d'apprentissage de Microsoft 365 Defender.
 
-Le hub d’apprentissage s’ouvre avec des parcours d’apprentissage organisés autour de rubriques telles que « Comment examiner l’utilisation de Microsoft 365 Defender ? » et « Meilleures pratiques de Microsoft Defender pour Office 365 ». Cette section est actuellement organisée par le groupe produit de sécurité au sein de Microsoft. Chaque parcours d’apprentissage reflète le temps projeté qu’il faut pour passer en travers des concepts. Par exemple, « Étapes à suivre lorsqu'un compte d'utilisateur Microsoft Defender pour Office 365 est compromis » est projeté pour prendre 8 minutes et constitue un apprentissage précieux à la volée.
+Le hub d'apprentissage s'ouvre avec des parcours d'apprentissage organisés autour de rubriques telles que « Comment examiner l'utilisation de Microsoft 365 Defender ? » et « Meilleures pratiques de Microsoft Defender pour Office 365 ». Cette section est actuellement organisée par le groupe produit de sécurité au sein de Microsoft. Chaque parcours d'apprentissage reflète le temps projeté qu'il faut pour passer en travers des concepts. Par exemple, « Étapes à suivre lorsqu'un compte d'utilisateur Microsoft Defender pour Office 365 est compromis » est projeté pour prendre 8 minutes et constitue un apprentissage précieux à la volée.
 
 Après avoir cliqué sur le contenu, il peut être utile de mettre en signet ce site et d'organiser les signets dans un dossier « Sécurité » ou « Critique ». Pour afficher tous les chemins d'accès d'apprentissage, cliquez sur le lien Afficher tout dans le panneau principal.
 
