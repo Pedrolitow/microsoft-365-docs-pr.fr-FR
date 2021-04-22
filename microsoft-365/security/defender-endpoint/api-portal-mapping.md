@@ -1,6 +1,6 @@
 ---
-title: Champs de l’API de détection Microsoft Defender ATP
-description: Comprendre comment les champs de l’API Détections sont mapés avec les valeurs du Centre de sécurité Microsoft Defender
+title: Champs de l'API microsoft Defender pour les détections de points de terminaison
+description: Comprendre comment les champs de l'API Détections sont mapés avec les valeurs du Centre de sécurité Microsoft Defender
 keywords: détections, champs de détections, champs, api, champs, pull Detections, api rest, demande, réponse
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e304d731409c4cd0fac722d492b3fab5ed28fd35
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164880"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933636"
 ---
-# <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Champs de l’API microsoft Defender pour les détections de points de terminaison
+# <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Champs de l'API microsoft Defender pour les détections de points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,19 +31,19 @@ ms.locfileid: "51164880"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-Comprendre les champs de données qui sont exposés dans le cadre de l’API de détections et comment ils sont mapés au Centre de sécurité Microsoft Defender.
+Comprendre les champs de données qui sont exposés dans le cadre de l'API de détections et comment ils sont mapés au Centre de sécurité Microsoft Defender.
 
 >[!Note]
->- [Defender for Endpoint Alert](alerts.md) se compose d’une ou de plusieurs détections.
->- **La détection Microsoft Defender ATP est** composée de l’événement suspect qui s’est produit sur l’appareil et de ses détails **d’alerte** associés.
->- L’API d’alerte microsoft Defender pour point de terminaison est la dernière API pour la consommation des alertes et contient une liste détaillée des preuves associées à chaque alerte. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
+>- [Defender for Endpoint Alert](alerts.md) se compose d'une ou de plusieurs détections.
+>- **La détection Microsoft Defender ATP est** composée de l'événement suspect qui s'est produit sur l'appareil et de ses détails **d'alerte** associés.
+>- L'API d'alerte microsoft Defender pour point de terminaison est la dernière API pour la consommation des alertes et contient une liste détaillée des preuves associées à chaque alerte. Pour plus d'informations, voir [Méthodes et propriétés d'alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>Champs API détections et mappage de portail
-Le tableau suivant répertorie les champs disponibles exposés dans la charge utile de l’API de détections. Il présente des exemples pour les valeurs remplies et une référence sur la façon dont les données sont reflétées sur le portail.
+Le tableau suivant répertorie les champs disponibles exposés dans la charge utile de l'API de détections. Il présente des exemples pour les valeurs remplies et une référence sur la façon dont les données sont reflétées sur le portail.
 
-La colonne de champ ArcSight contient le mappage par défaut entre les champs Defender pour le point de terminaison et les champs intégrés dans ArcSight. Vous pouvez télécharger le fichier de mappage à partir du portail lorsque vous activez la fonctionnalité d’intégration SIEM et le modifier pour répondre aux besoins de votre organisation. Pour plus d’informations, voir [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
+La colonne de champ ArcSight contient le mappage par défaut entre les champs Defender pour point de terminaison et les champs intégrés dans ArcSight. Vous pouvez télécharger le fichier de mappage à partir du portail lorsque vous activez la fonctionnalité d'intégration SIEM et le modifier pour répondre aux besoins de votre organisation. Pour plus d'informations, voir [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
 
 Les numéros de champ correspondent aux numéros dans les images ci-dessous.
 
@@ -51,7 +51,7 @@ Les numéros de champ correspondent aux numéros dans les images ci-dessous.
 > 
 > | Étiquette de portail   | Nom du champ SIEM           | Champ ArcSight      | Exemple de valeur                                                                      | Description                                                                                                                                                                    |
 > |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-> | 1                | AlertTitle                | nom                | L’Antivirus Microsoft Defender a détecté un programme malveillant de gravité élevée | Valeur disponible pour chaque détection.                                                                                                                                               |
+> | 1                | AlertTitle                | name                | L’Antivirus Microsoft Defender a détecté un programme malveillant de gravité élevée | Valeur disponible pour chaque détection.                                                                                                                                               |
 > | 2                | Severity                  | deviceSeverity      | Élevé                                                                             | Valeur disponible pour chaque détection.                                                                                                                                               |
 > | 3                | Catégorie                  | deviceEventCategory | Programme malveillant                                                               | Valeur disponible pour chaque détection.                                                                                                                                               |
 > | 4                 | Source de détection                    | sourceServiceName   | Antivirus                                                                 | Antivirus Microsoft Defender ou Defender pour point de terminaison. Valeur disponible pour chaque détection.                                                                                         |
@@ -80,29 +80,29 @@ Les numéros de champ correspondent aux numéros dans les images ci-dessous.
 | | LinkToMTP | Aucun mappage | `https://security.microsoft.com/alert/da637370718981685665_16349121` | Valeur disponible pour chaque détection.
 | | IncidentLinkToMTP | Aucun mappage | `"https://security.microsoft.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM` | Valeur disponible pour chaque détection.
 | | IncidentLinkToWDATP | Aucun mappage | `https://securitycenter.windows.com/incidents/byalert?alertId=da637370718981685665_16349121&source=SIEM` | Valeur disponible pour chaque détection.
-> | Champ interne | LastProcessedTimeUtc      | Aucun mappage          | 2017-05-07T01:56:58.9936648Z                                                       | Heure à quel moment l’événement est arrivé au niveau du back-end. Ce champ peut être utilisé lors de la définition du paramètre de demande pour la durée de récupération des détections.                         |
+> | Champ interne | LastProcessedTimeUtc      | Aucun mappage          | 2017-05-07T01:56:58.9936648Z                                                       | Heure à quel moment l’événement est arrivé au niveau du back-end. Ce champ peut être utilisé lors de la définition du paramètre de demande pour la période de récupération des détections.                         |
 > |                  | Ne fait pas partie du schéma    | deviceVendor        |                                                                                    | Valeur statique dans le mappage ArcSight : « Microsoft ».                                                                                                                          |
 > |                  | Ne fait pas partie du schéma    | deviceProduct       |                                                                                    | Valeur statique dans le mappage ArcSight : « Microsoft Defender ATP ».                                                                                                               |
 > |                  | Ne fait pas partie du schéma    | deviceVersion       |                                                                                    | Valeur statique dans le mappage ArcSight - « 2.0 » utilisé pour identifier les versions de mappage.                                                                                         
 
 
-![Image de l’alerte avec des nombres](images/atp-alert-page.png)
+![Image de l'alerte avec des nombres](images/atp-alert-page.png)
 
-![Image du volet Détails de l’alerte avec numéros](images/atp-siem-mapping13.png)
+![Image du volet Détails de l'alerte avec numéros](images/atp-siem-mapping13.png)
 
-![Image de la chronologie de l’artefact avec numbers1](images/atp-siem-mapping3.png)
+![Image de la chronologie de l'artefact avec numbers1](images/atp-siem-mapping3.png)
 
-![Image de la chronologie de l’artefact avec numbers2](images/atp-siem-mapping4.png)
+![Image de la chronologie de l'artefact avec numbers2](images/atp-siem-mapping4.png)
 
-![Image de l’ordinateur](images/atp-mapping6.png)
+![Image de l'ordinateur](images/atp-mapping6.png)
 
-![URL du navigateur d’images](images/atp-mapping5.png)
+![URL du navigateur d'images](images/atp-mapping5.png)
 
-![Alerte d’acteur d’image](images/atp-mapping7.png)
+![Alerte d'acteur d'image](images/atp-mapping7.png)
 
 
 ## <a name="related-topics"></a>Voir aussi
-- [Activer l’intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)
+- [Activer l'intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)
 - [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
-- [Détecter Microsoft Defender pour les points de terminaison à l’aide de l’API REST](pull-alerts-using-rest-api.md)
-- [Résoudre les problèmes d’intégration de l’outil SIEM](troubleshoot-siem.md)
+- [Détecter Microsoft Defender pour les points de terminaison à l'aide de l'API REST](pull-alerts-using-rest-api.md)
+- [Résoudre des problèmes d’intégration de l’outil SIEM](troubleshoot-siem.md)

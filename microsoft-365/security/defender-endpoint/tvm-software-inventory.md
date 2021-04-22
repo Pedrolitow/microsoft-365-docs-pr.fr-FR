@@ -1,7 +1,7 @@
 ---
 title: Inventaire logiciel dans la gestion des menaces et des vulnérabilités
 description: La page d'inventaire logiciel de Microsoft Defender pour la gestion des menaces et des vulnérabilités des points de terminaison indique le nombre de faiblesses et de vulnérabilités détectées dans les logiciels.
-keywords: gestion des menaces et des vulnérabilités, microsoft defender pour le point de terminaison, microsoft defender pour l'inventaire des logiciels de point de terminaison, gestion des vulnérabilités des menaces mdatp &, inventaire logiciel de gestion des menaces mdatp &, inventaire des logiciels tvm mdatp, inventaire des logiciels tvm
+keywords: gestion des menaces et des vulnérabilités, Microsoft Defender pour point de terminaison, inventaire logiciel Microsoft Defender pour les points de terminaison, Microsoft Defender pour la gestion des vulnérabilités & des menaces de point de terminaison, Microsoft Defender pour l'inventaire logiciel de gestion des menaces de point de terminaison &, inventaire logiciel tvm de Microsoft Defender pour endpoint, inventaire des logiciels tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4ceb7cc4d39dbddbb4cd325491c16f4503bfc52
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0d270760cfed965c8190668afcdb1cc25223d2b1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689376"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933720"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventaire logiciel : gestion des menaces et des vulnérabilités
 

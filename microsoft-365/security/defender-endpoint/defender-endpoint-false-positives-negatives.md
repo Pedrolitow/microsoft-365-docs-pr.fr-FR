@@ -1,7 +1,7 @@
 ---
 title: Résoudre des faux négatifs/positifs dans Microsoft Defender pour point de terminaison
 description: Découvrez comment gérer les faux positifs ou les faux négatifs dans Microsoft Defender pour endpoint.
-keywords: antivirus, exception, exclusion, defender atp, faux positif, faux négatif, fichier bloqué, URL bloquée
+keywords: antivirus, exception, exclusion, Microsoft Defender pour point de terminaison, faux positif, faux négatif, fichier bloqué, URL bloquée
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759869"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933588"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre des faux négatifs/positifs dans Microsoft Defender pour point de terminaison
 
@@ -338,11 +338,11 @@ Pour vérifier les mises à jour concernant votre soumission, connectez-vous sur
 
 Microsoft Defender pour point de terminaison offre un large éventail d'options, notamment la possibilité d'affiner les paramètres de différentes fonctionnalités et fonctionnalités. Si vous avez de nombreux faux positifs, veillez à passer en revue les paramètres de protection contre les menaces de votre organisation. Vous devrez peut-être effectuer quelques ajustements pour :
 
-- [Protection cloud](#cloud-delivered-protection)
+- [Protection fournie par le cloud](#cloud-delivered-protection)
 - [Correction des applications potentiellement indésirables](#remediation-for-potentially-unwanted-applications)
 - [Examen et correction automatisés](#automated-investigation-and-remediation)
 
-### <a name="cloud-delivered-protection"></a>Protection cloud
+### <a name="cloud-delivered-protection"></a>Protection fournie par le cloud
 
 Vérifiez votre niveau de protection cloud pour l'Antivirus Microsoft Defender. Par défaut, la protection cloud est définie sur Non **configuré,** ce qui correspond à un niveau de protection normal pour la plupart des organisations. Si votre protection cloud est définie sur **Tolérance** élevée, Élevée **+** ou **Zéro,** vous pouvez voir un plus grand nombre de faux positifs.
 
@@ -440,7 +440,7 @@ Selon le niveau [d'automatisation](/microsoft-365/security/defender-endpoint/aut
 > [!IMPORTANT]
 > Nous vous recommandons *d'utiliser l'automatisation complète* pour l'examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d'un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions](#indicators-for-microsoft-defender-for-endpoint)et conservez l'investigation et la correction automatisées pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d'alertes que votre équipe des opérations de sécurité doit gérer. 
 
-## <a name="still-need-help"></a>Encore besoin d’aide ?
+## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
 
 Si vous avez passé en revue toutes les étapes de cet article et que vous avez toujours besoin d'aide, contactez le support technique.
 
@@ -450,7 +450,7 @@ Si vous avez passé en revue toutes les étapes de cet article et que vous avez 
 
 3. Dans la **fenêtre assistant support,** décrivez votre problème, puis envoyez votre message. À partir de là, vous pouvez ouvrir une demande de service.  
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Articles associés
 
 [Gérer Microsoft Defender pour le point de terminaison](manage-atp-post-migration.md)
 

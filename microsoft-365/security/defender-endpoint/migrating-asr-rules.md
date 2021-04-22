@@ -1,7 +1,7 @@
 ---
 title: Migration d'un hips tiers vers des règles asr
 description: Décrit comment aborder une migration d'une solution hips (Host Intrusion Prevention System) tierce vers des règles asr.
-keywords: Règles de réduction de la surface d'attaque, règles asr, règles d'attaque, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison, Microsoft Defender ATP
+keywords: Règles de réduction de la surface d'attaque, règles asr, règles d'attaque, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 5b2c6c12de7b87a045a81a552e3fe74b4829e94d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764782"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933780"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d'un hips tiers vers des règles asr
 
@@ -41,17 +41,17 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **S'applique** à - Tous les processus
 - **Processus**- N/A
 - **Opération**: modifications du Registre
-- **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger,HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
+- **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services** -  *\Software*,HKCU\Environment\UserInitMprLogonScript,HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger, HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location, HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **Règles de réduction de la surface d'attaque**: les règles de réduction de la surface d'attaque bloquent les techniques d'attaque et non les indicateurs de compromis (IOC). Le blocage d'une extension de fichier spécifique n'est pas toujours utile, car cela n'empêche pas un appareil d'être compromis. Elle ne déjoue que partiellement une attaque jusqu'à ce que les attaquants créent un nouveau type d'extension pour la charge utile.
 - **Autres fonctionnalités recommandées**: l'antivirus Microsoft Defender activé, ainsi que l'analyse du comportement et de la protection cloud sont vivement recommandés. Nous vous recommandons d'utiliser une prévention supplémentaire, telle que la règle asr « Utiliser une protection avancée contre les ransomware ». Cela offre un niveau de protection plus élevé contre les attaques par ransomware. En outre, plusieurs de ces clés de Registre sont surveillées par Microsoft Defender pour endpoint, telles que les techniques ASEP, qui déclenchent des alertes spécifiques. En outre, les clés de Registre utilisées nécessitent un minimum de privilèges d'administrateur local ou de programme d'installation approuvé qui peuvent être modifiés. L'utilisation d'un environnement verrouillé, avec des comptes ou des droits d'administration minimaux, est recommandée. D'autres configurations système peuvent être activées, notamment « Désactiver SeDebug pour les rôles non requis » qui font partie de nos recommandations de sécurité plus larges.
 
-### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Empêcher l'exécution de programmes nontrus à partir de lecteurs amovibles
+### <a name="block-untrusted-programs-from-running-from-removable-drives"></a>Empêcher l'exécution de programmes non confiance à partir de lecteurs amovibles
 
 - **S'applique** à - Programmes nontrus à partir du port USB
 - **Processus**- *
 - **Operation**- Process Execution
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services :-*
-- Règles de réduction de la **surface** d'attaque : les règles de réduction de la surface d'attaque ont une règle intégrée pour empêcher le lancement de programmes non signés et non signés à partir de lecteurs amovibles : « Bloquer les processus nontrus et non signés qui s'exécutent à partir de USB », GUID « b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 ».
+- Règles de réduction de la **surface** d'attaque : les règles de réduction de la surface d'attaque ont une règle intégrée pour empêcher le lancement de programmes non signés et non signés à partir de lecteurs amovibles : « Bloquer les processus nontrus et non signés qui s'exécutent à partir d'une clé USB », GUID « b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 ».
 - Autres fonctionnalités recommandées : explorez les contrôles supplémentaires pour les périphériques USB et autres supports amovibles à l'aide de Microsoft Defender pour le point de terminaison : comment contrôler les périphériques USB et autres supports amovibles à l'aide de[Microsoft Defender pour endpoint](/windows/security/threat-protection/device-control/control-usb-devices-using-intune).
 
 ### <a name="block-mshta-from-launching-certain-child-processes"></a>Empêcher Mshta de lancer certains processus enfants
@@ -87,8 +87,8 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **S'applique** à - Office
 - **Processus**: winword.exe, powerpnt.exe, excel.exe
 - **Opération**: création de fichier
-- **Exemples de fichiers/dossiers, clés de Registre/valeurs, processus,services**- C:\Users *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop**.exe
-- **Règles de réduction de la surface d'attaque**: N/A.
+- **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, Services**- C:\Users *\AppData **.exe, C:\ProgramData**.exe, C:\ProgramData**.com, C:\Users* AppData\Local\Temp **.com, C:\Users*\Downloads**.exe, C:\Users *\AppData **.scf, C:\ProgramData**.scf, C:\Users\Public*.exe, C:\Users*\Desktop**.exe
+- **Règles de réduction de la surface d'attaque**- N/A.
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>Empêcher Wscript de lire certains types de fichiers
 
@@ -115,7 +115,7 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Processus**- certutil.exe
 - **Opération**: création de fichier
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services**- *.exe
-- **Règles de réduction de la surface** d'attaque : les règles de réduction de la surface d'attaque ne les prisent pas en charge, car elles font partie de la protection de l'Antivirus Microsoft Defender.
+- **Règles de réduction de la surface** d'attaque : les règles de réduction de la surface d'attaque ne sont pas pris en charge dans ces scénarios, car elles font partie de la protection de l'Antivirus Microsoft Defender.
 - **Autres fonctionnalités recommandées**: Microsoft Defender AV empêche CertUtil de créer ou de télécharger du contenu exécutable.
 
 
@@ -137,16 +137,16 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Règles de réduction de la surface d'attaque**: globalement, les règles de réduction de la surface d'attaque ne sont pas conçues pour fonctionner en tant que gestionnaire d'applications.
 - **Autres fonctionnalités recommandées**: pour empêcher les utilisateurs de lancer des processus ou des programmes spécifiques, il est recommandé d'utiliser Windows Defender Contrôle d'application. Les indicateurs Microsoft Defender for Endpoint File et Cert peuvent être utilisés dans un scénario de réponse aux incidents (ne doivent pas être considérés comme un mécanisme de contrôle d'application).
     
-### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>Bloquer les modifications non autorisées apportées aux configurations av MDATP
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloquer les modifications non autorisées apportées aux configurations de l'Antivirus Microsoft Defender
 
 - **S'applique** à - Tous les processus
 - **Processus**- *
 - **Opération**: modifications du Registre
 - Exemples de **fichiers/dossiers, clés de Registre/valeurs, processus, services**- HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring, etc.
 - **Règles de réduction de** la surface d'attaque : les règles de réduction de la surface d'attaque ne couvrent pas ces scénarios, car elles font partie de la protection intégrée de Microsoft Defender for Endpoint.
-- Autres fonctionnalités recommandées : la protection contre les falsifications (opt-in, géré à partir d'Intune) empêche les modifications non autorisées apportées aux clés de Registre DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring et DisableIOAVProtection (et bien plus encore).
+- Autres fonctionnalités recommandées : la protection contre la falsification (opt-in, géré à partir d'Intune) empêche les modifications non autorisées apportées aux clés de Registre DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring et DisableIOAVProtection (et bien plus encore).
 
-Voir aussi
+Articles associés
 
 - [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.md).
 - [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)

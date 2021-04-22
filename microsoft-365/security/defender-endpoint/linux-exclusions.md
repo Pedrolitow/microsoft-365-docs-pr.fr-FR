@@ -1,7 +1,7 @@
 ---
 title: Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Linux
 description: Fournir et valider des exclusions pour Microsoft Defender pour endpoint sur Linux. Les exclusions peuvent être définies pour les fichiers, dossiers et processus.
-keywords: microsoft, defender, atp, linux, exclusions, analyses, antivirus
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, exclusions, analyses, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903939"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934296"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Linux
 
@@ -38,18 +38,18 @@ ms.locfileid: "51903939"
 Cet article fournit des informations sur la définition d'exclusions qui s'appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
 
 > [!IMPORTANT]
-> Les exclusions décrites dans cet article ne s'appliquent pas aux autres fonctionnalités de Defender for Endpoint for Linux, y compris la détection et la réponse des points de terminaison (EDR). Les fichiers que vous excluez à l'aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes EDR et d'autres détections.
+> Les exclusions décrites dans cet article ne s'appliquent pas aux autres fonctionnalités de Defender for Endpoint sur Linux, y compris la détection et la réponse des points de terminaison (EDR). Les fichiers que vous excluez à l'aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes EDR et d'autres détections.
 
-Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par processus de Defender for Endpoint for Linux scans.
+Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par processus de Defender for Endpoint sur les analyses Linux.
 
-Les exclusions peuvent être utiles pour éviter les détections incorrectes sur les fichiers ou les logiciels qui sont uniques ou personnalisés pour votre organisation. Ils peuvent également être utiles pour atténuer les problèmes de performances causés par Defender pour Endpoint pour Linux.
+Les exclusions peuvent être utiles pour éviter les détections incorrectes sur les fichiers ou les logiciels qui sont uniques ou personnalisés pour votre organisation. Ils peuvent également être utiles pour atténuer les problèmes de performances causés par Defender pour Endpoint sur Linux.
 
 > [!WARNING]
-> La définition d'exclusions réduit la protection offerte par Defender pour Endpoint pour Linux. Vous devez toujours évaluer les risques associés à l'implémentation d'exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu'ils ne sont pas malveillants.
+> La définition d'exclusions réduit la protection offerte par Defender pour Endpoint sur Linux. Vous devez toujours évaluer les risques associés à l'implémentation d'exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu'ils ne sont pas malveillants.
 
 ## <a name="supported-exclusion-types"></a>Types d'exclusion pris en charge
 
-Le tableau suivant indique les types d'exclusion pris en charge par Defender pour Endpoint pour Linux.
+Le tableau suivant indique les types d'exclusion pris en charge par Defender pour Endpoint sur Linux.
 
 Exclusion | Définition | Exemples
 ---|---|---
@@ -72,7 +72,7 @@ Caractère générique | Description | Exemple | Correspondances | Ne correspond
 
 ### <a name="from-the-management-console"></a>À partir de la console de gestion
 
-Pour plus d'informations sur la configuration des exclusions à partir d'Une autre console de gestion, Ansible ou d'une autre console de gestion, voir Définir les préférences de [Defender pour Endpoint pour Linux.](linux-preferences.md)
+Pour plus d'informations sur la configuration des exclusions à partir d'Une autre console de gestion, Ansible ou d'une autre console de gestion, voir Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
 
 ### <a name="from-the-command-line"></a>À partir de la ligne de commande
 
@@ -144,7 +144,7 @@ Exemples :
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d'exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d'exclusions fonctionnent à l'aide `curl` du téléchargement d'un fichier de test.
+Vous pouvez vérifier que vos listes d'exclusions fonctionnent en téléchargeant `curl` un fichier de test.
 
 Dans l'extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d'exclusion. Par exemple, si vous avez exclu `.testing` l'extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d'accès, veillez à exécuter la commande dans ce chemin d'accès.
 
@@ -152,7 +152,7 @@ Dans l'extrait de code Bash suivant, remplacez-le par un fichier conforme `test.
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Si Defender pour point de terminaison pour Linux signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n'est détecté et que le fichier téléchargé existe, l'exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
+Si Defender pour point de terminaison sur Linux signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n'est détecté et que le fichier téléchargé existe, l'exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
 
 Si vous n'avez pas accès à Internet, vous pouvez créer votre propre fichier de test EICAR. Écrivez la chaîne EICAR dans un nouveau fichier texte avec la commande Bash suivante :
 

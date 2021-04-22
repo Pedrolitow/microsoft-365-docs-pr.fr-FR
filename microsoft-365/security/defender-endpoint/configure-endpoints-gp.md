@@ -1,7 +1,7 @@
 ---
 title: Intégrer des appareils Windows 10 à Microsoft Defender pour le point de terminaison via une stratégie de groupe
 description: Utilisez la stratégie de groupe pour déployer le package de configuration sur les appareils Windows 10 afin qu'ils soient intégrés au service.
-keywords: configurer des appareils à l'aide de la stratégie de groupe, de la gestion des appareils, configurer des appareils Windows ATP, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe
+keywords: configurer des appareils à l'aide de la stratégie de groupe, de la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893633"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933960"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Intégrer des appareils Windows 10 à l'aide de la stratégie de groupe 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51893633"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 
 > [!NOTE]
@@ -46,7 +46,7 @@ ms.locfileid: "51893633"
 
 [![Image du PDF montrant les différents chemins de déploiement](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-Consultez le [pdf ou](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d'accès dans le déploiement de Defender pour Endpoint. 
+Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  ou  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d'accès dans le déploiement de Defender pour Endpoint. 
 
 
 
@@ -68,7 +68,7 @@ Consultez le [pdf ou](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/pu
 
 5. Cliquez avec le bouton droit **sur Tâches programmées,** pointez sur **Nouveau,** puis cliquez sur **Tâche immédiate (Au moins Windows 7).**
 
-6. Dans la **fenêtre** Tâche qui s'ouvre, allez dans **l'onglet** Général. Sous **Options de sécurité,** **cliquez sur Modifier** l'utilisateur ou le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier **les noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d'utilisateur que la tâche exécutera.
+6. Dans la **fenêtre** Tâche qui s'ouvre, allez dans **l'onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l'utilisateur ou** le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier les **noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d'utilisateur que la tâche exécutera.
 
 7. Sélectionnez **Exécuter, que l'utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
 
@@ -144,7 +144,7 @@ Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont req
 
 <br/>
 
-**Emplacement de la stratégie :** \Composants Windows\Windows Defender Antivirus\Protection en temps réel
+**Emplacement de la stratégie :** \Composants Windows\antivirus Windows Defender\Protection en temps réel
 
 Stratégie | Setting 
 :---|:---
@@ -168,7 +168,7 @@ Recherchez les dernières informations sur la sécurité des virus et logiciels 
 
 **Emplacement de la stratégie :** \Composants Windows\antivirus Windows Defender\Windows Defender Exploit Guard\Réduction de la surface d'attaque
 
-Obtenir la liste actuelle des GUID de réduction de la surface d'attaque à partir des règles de personnalisation de la [réduction de la surface d'attaque](customize-attack-surface-reduction.md)
+Obtenir la liste actuelle des GUID de réduction de la surface d'attaque à partir des règles de personnalisation des règles de [réduction de la surface d'attaque](customize-attack-surface-reduction.md)
 
 1. Ouvrez la **stratégie Configurer la Réduction de la surface d'attaque.**
 
@@ -186,12 +186,12 @@ Obtenir la liste actuelle des GUID de réduction de la surface d'attaque à part
 
 Stratégie | Setting 
 :---|:---
-Configurer l'accès contrôlé aux dossiers| Activé, mode Audit
+Configurer l'accès contrôlé aux dossiers| Activé, mode audit
 
 
 
 ## <a name="offboard-devices-using-group-policy"></a>Appareils de tableau de bord à l'aide de la stratégie de groupe
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d'expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d'expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d'intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
@@ -206,7 +206,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
     1. Cliquez **sur Télécharger le package** et enregistrez le fichier .zip.
 
-2. Extrayez le contenu du fichier .zip dans un emplacement partagé en lecture seule accessible par l'appareil. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par l'appareil. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Ouvrez [la Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) de gestion des stratégies de groupe (GPMC), cliquez avec le bouton droit sur l'objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
@@ -227,11 +227,11 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l'appareil
-Avec la stratégie de groupe, il n'existe pas d'option pour surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l'aide des différents outils de déploiement.
+Avec la stratégie de groupe, il n'est pas possible de surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l'aide des différents outils de déploiement.
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l'aide du portail
 1. Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).
-2. Cliquez **sur Liste des appareils.**
+2. Cliquez **sur La liste Appareils.**
 3. Vérifiez que les appareils apparaissent.
 
 > [!NOTE]

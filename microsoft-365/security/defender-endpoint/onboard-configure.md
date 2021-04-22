@@ -1,7 +1,7 @@
 ---
 title: Intégrer des appareils au service Microsoft Defender for Endpoint
 description: Intégrer des appareils Windows 10, des serveurs, des appareils autres que Windows et apprendre à exécuter un test de détection.
-keywords: intégration, microsoft defender pour l'intégration de point de terminaison, intégration windows atp, sccm, stratégie de groupe, mdm, script local, test de détection
+keywords: intégration, intégration de Microsoft Defender pour point de terminaison, sccm, stratégie de groupe, mdm, script local, test de détection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 05cc5770df5bb05687bb8be69ad89a7abd6875ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861374"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933552"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des appareils au service Microsoft Defender for Endpoint
 
@@ -71,4 +71,4 @@ Rubrique | Description
 [Configurer les paramètres proxy et Internet](configure-proxy-internet.md)| Activez la communication avec le service cloud Defender for Endpoint en configurant les paramètres de proxy et de connectivité Internet.
 [Résoudre des problèmes d’intégration](troubleshoot-onboarding.md) | Découvrez comment résoudre les problèmes qui peuvent survenir lors de l'intégration.
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

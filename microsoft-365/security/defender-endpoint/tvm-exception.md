@@ -1,7 +1,7 @@
 ---
 title: 'Créer et afficher des exceptions pour les recommandations de sécurité : gestion des menaces et des vulnérabilités'
 description: Créer et surveiller des exceptions pour les recommandations de sécurité dans la gestion des menaces et des vulnérabilités.
-keywords: microsoft defender pour la correction tvm de point de terminaison, tvm mdatp, gestion des menaces et des vulnérabilités, gestion des vulnérabilités des menaces &, correction de la gestion des vulnérabilités des menaces &, correction tvm intune, sccm de correction tvm
+keywords: Correction tvm de Microsoft Defender pour les points de terminaison, tvm Microsoft Defender pour les points de terminaison, gestion des menaces et des vulnérabilités, gestion des vulnérabilités des & menaces, correction de la gestion des vulnérabilités des menaces &, correction tvm intune, sccm de correction tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1af8e5ec9d3aef560c739de5212e8118cf89cd7a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689412"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933744"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Créer et afficher des exceptions pour les recommandations de sécurité : gestion des menaces et des vulnérabilités
 
@@ -78,7 +78,7 @@ Si votre organisation compte plus de 20 groupes d'appareils, sélectionnez **Mod
 
 ![Montrant comment modifier un grand nombre de groupes.](images/tvm-exception-edit-groups.png)
 
-Un volant s'affiche où vous pouvez rechercher et choisir les groupes d'appareils que vous souhaitez inclure. Sélectionnez l'icône de coche sous Recherche pour vérifier/décocher tout.
+Un volant s'affiche où vous pouvez rechercher et choisir les groupes d'appareils que vous souhaitez inclure. Sélectionnez l'icône de coche sous Recherche pour tout vérifier/décocher.
 
 ![Affichage du volant de groupe d'appareils de grande taille.](images/tvm-exception-device-group-flyout-400.png)
 
@@ -99,7 +99,7 @@ Sélectionnez votre justification pour l'exception que vous devez déposer au li
 
 La liste suivante détaille les justifications des options d'exception :
 
-- **Contrôle tiers** - Un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d'exposition et augmente votre score de sécurité car votre risque est réduit
+- **Contrôle tiers** : un produit ou un logiciel tiers répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d'exposition et augmente votre niveau de sécurité, car votre risque est réduit
 - **Atténuation de** remplacement : un outil interne répond déjà à cette recommandation : le choix de ce type de justification réduit votre score d'exposition et augmente votre score de sécurité car votre risque est réduit
 - **Risque accepté :** pose un risque faible et/ou l'implémentation de la recommandation est trop coûteuse
 - **Correction planifiée (grâce)** : déjà planifiée mais en attente d'exécution ou d'autorisation

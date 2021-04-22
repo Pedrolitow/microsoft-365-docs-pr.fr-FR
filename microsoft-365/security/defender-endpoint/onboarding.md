@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2a3325a290dc985bdb99a5a843b4b9e1f642a62b
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f63b4f81f454fec60a26c7cb063d66bed4a2bead
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861802"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933540"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Intégration au service Microsoft Defender for Endpoint
 
@@ -71,7 +71,7 @@ Le tableau suivant répertorie les outils disponibles en fonction du point de te
 
 | Point de terminaison     | Options de l'outil                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script local (jusqu'à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Gestionnaire de point de terminaison Microsoft/ Gestionnaire d'appareils mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Azure Security Center](configure-server-endpoints.md#integration-with-azure-security-center) |
+| **Windows**  |  [Script local (jusqu'à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Gestionnaire de point de terminaison Microsoft/ Gestionnaire d'appareils mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration à Azure Defender](configure-server-endpoints.md#integration-with-azure-defender) |
 | **MacOS**    | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Basée sur l'application](ios-install.md)                                |
@@ -85,7 +85,7 @@ Après avoir intégré les points de terminaison, vous allez configurer les diff
 ## <a name="example-deployments"></a>Exemples de déploiements
 Dans ce guide de déploiement, nous allons vous guider tout au long de l'utilisation de deux outils de déploiement pour intégrer des points de terminaison et configurer des fonctionnalités.
 
-Les outils de l'exemple de déploiement sont :
+Les outils de l’exemple de déploiement sont les :
 - [Intégration à l'aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Intégration à l'aide de Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 

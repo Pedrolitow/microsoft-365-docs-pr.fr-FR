@@ -1,7 +1,7 @@
 ---
-title: Obtenir les ko manquants par ID d’appareil
-description: Récupère les mises à jour de sécurité manquantes par ID d’appareil
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d’appareil, api de gestion des menaces & vulnérabilité, api tvm mdatp
+title: Obtenir les ko manquants par ID d'appareil
+description: Récupère les mises à jour de sécurité manquantes par ID d'appareil
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d'appareil, api de gestion des menaces & vulnérabilité, Api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,18 +14,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4364e6a38d4597a95d4d9a1f05dcce6fce5797ef
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500701"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933576"
 ---
-# <a name="get-missing-kbs-by-device-id"></a>Obtenir les ko manquants par ID d’appareil
+# <a name="get-missing-kbs-by-device-id"></a>Obtenir les ko manquants par ID d'appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S'applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -33,7 +33,7 @@ ms.locfileid: "51500701"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Récupère les ko manquants (mises à jour de sécurité) par ID d’appareil
+Récupère les ko manquants (mises à jour de sécurité) par ID d'appareil
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -45,7 +45,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 

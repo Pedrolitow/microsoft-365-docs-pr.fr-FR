@@ -2,7 +2,7 @@
 title: Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 ms.reviewer: ''
 description: Décrit les informations de confidentialité de Microsoft Defender pour Endpoint sur iOS
-keywords: microsoft, defender, atp, ios, stratégie, vue d'ensemble
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, ios, stratégie, vue d'ensemble
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5598df8a9e3493a1c4922f672468dd54e84c31e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688200"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934284"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 
@@ -31,20 +31,20 @@ ms.locfileid: "51688200"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> Defender pour le point de terminaison pour iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s'agit pas d'un VPN normal et d'un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l'appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
+> Defender pour le point de terminaison sur iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s'agit pas d'un VPN normal et d'un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l'appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
 
-Defender pour le point de terminaison pour iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir defender pour point de terminaison pour iOS sécurisé, à jour, performant comme prévu et pour prendre en charge le service.
+Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender pour point de terminaison sur iOS sécurisé, à jour, en cours d'évaluation et pour prendre en charge le service.
 
 Pour plus d'informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité des données de point [de terminaison.](data-storage-privacy.md)
 
 ## <a name="required-data"></a>Données requises 
 
-Les données requises sont constituées de données nécessaires pour que Defender for Endpoint for iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l'utilisateur final, à l'organisation, à l'appareil et aux applications. 
+Les données requises sont constituées de données nécessaires pour que Defender for Endpoint sur iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l'utilisateur final, à l'organisation, à l'appareil et aux applications. 
 
-Voici une liste des types de données collectées : 
+Voici la liste des types de données collectées : 
 
 ### <a name="web-page-or-network-information"></a>Page Web ou informations réseau 
 
@@ -52,7 +52,7 @@ Voici une liste des types de données collectées :
 
 ### <a name="device-and-account-information"></a>Informations sur l'appareil et le compte 
 
-- Informations sur l'appareil telles que l'& date, la version d'iOS, les informations sur le processeur et l'identificateur de l'appareil, où l'identificateur d'appareil est l'un des éléments suivants : 
+- Informations sur l'appareil telles que l'& date, la version d'iOS, les informations sur l'UC et l'identificateur de l'appareil, où l'identificateur d'appareil est l'un des éléments suivants : 
 
     - Wi-Fi'adaptateur MAC 
 
@@ -86,7 +86,7 @@ Les données facultatives incluent les données de diagnostic et les données de
 
 Les données de diagnostic facultatives incluent : 
 
-- Utilisation de l’application, de l’UC et du réseau pour Defender pour endpoint. 
+- Utilisation de l’application, du processeur et du réseau pour Defender pour endpoint. 
 
 - Fonctionnalités configurées par l’administrateur de Defender pour le point de terminaison. 
 

@@ -1,7 +1,7 @@
 ---
 title: Configurer les notifications d'alerte dans Microsoft Defender pour le point de terminaison
 description: Vous pouvez utiliser Microsoft Defender pour le point de terminaison pour configurer les paramètres de notification par courrier électronique pour les alertes de sécurité, en fonction de la gravité et d'autres critères.
-keywords: notifications par courrier électronique, configurer les notifications d'alerte, microsoft defender pour le point de terminaison, microsoft defender pour les notifications de point de terminaison, microsoft defender pour les alertes de point de terminaison, Windows 10 Entreprise, Windows 10 Éducation
+keywords: notifications par courrier électronique, configurer les notifications d'alerte, Microsoft Defender pour le point de terminaison, Microsoft Defender pour les notifications de point de terminaison, Microsoft Defender pour les alertes de point de terminaison, Windows 10 Entreprise, Windows 10 Éducation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893627"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933948"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurer les notifications d'alerte dans Microsoft Defender pour le point de terminaison
 

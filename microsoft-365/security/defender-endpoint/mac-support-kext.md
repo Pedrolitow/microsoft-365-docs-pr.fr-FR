@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes d'extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
-description: Résoudre les problèmes liés à l'extension du noyau dans Microsoft Defender pour point de terminaison sur macOS.
-keywords: microsoft, defender, atp, mac, noyau, extension
+description: Résolution des problèmes liés à l'extension du noyau dans Microsoft Defender pour point de terminaison sur macOS.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, noyau, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9dc3ee17d79972b5d36c5fff58fbe4cc486027bd
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689652"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934272"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes d'extension du noyau dans Microsoft Defender pour point de terminaison sur macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689652"
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -73,7 +73,7 @@ Si moins de 30 minutes se sont écoulées depuis l'installation du produit, acc�
 
 Si vous ne voyez pas cette invite, cela signifie que 30 minutes ou plus se sont écoulées et que l'extension de noyau n'a toujours pas été approuvée pour s'exécuter sur votre appareil :
 
-![Fenêtre de sécurité et de confidentialité après la capture d'écran de l'invite expirée](images/mdatp-33-securityprivacysettings-noprompt.png)
+![Fenêtre de sécurité et de confidentialité après l'expiration de l'invite](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 Dans ce cas, vous devez effectuer les étapes suivantes pour déclencher à nouveau le flux d'approbation.
 

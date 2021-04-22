@@ -1,7 +1,7 @@
 ---
 title: Obtenir les vulnérabilités découvertes
-description: Récupère une collection de vulnérabilités découvertes liées à un ID d’appareil donné.
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, vulnérabilités découvertes, api de gestion des & menace, api tvm mdatp
+description: Récupère une collection de vulnérabilités découvertes liées à un ID d'appareil donné.
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, vulnérabilités découvertes, api de gestion des vulnérabilités & menace, Api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73b8fe5140ff635791e7d42358024bb7fb4ee926
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 133a8525a2e561062a492f7148de97a77d37444e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570326"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934320"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Obtenir les vulnérabilités découvertes
 
@@ -36,17 +36,17 @@ ms.locfileid: "51570326"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a>Description de l’API
-Récupère une collection de vulnérabilités découvertes liées à un ID d’appareil donné.
+## <a name="api-description"></a>Description de l'API
+Récupère une collection de vulnérabilités découvertes liées à un ID d'appareil donné.
 
 ## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 50 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
+Type d’autorisation | Autorisation | Nom d'affichage de l'autorisation
 :---|:---|:---
 Application |Vulnerability.Read.All | « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | Vulnerability.Read | « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »

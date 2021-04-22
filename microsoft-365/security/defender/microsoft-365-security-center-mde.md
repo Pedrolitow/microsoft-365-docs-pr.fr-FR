@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour point de terminaison dans le Centre de sécurité Microsoft 365
 description: En savoir plus sur les modifications apportées au Centre de sécurité Microsoft Defender vers le Centre de sécurité Microsoft 365
-keywords: Mise en place avec le Centre de sécurité Microsoft 365, LAPDE, MDATP, MDO, MDE, volet unique, portail convergé, portail de sécurité, portail de sécurité Defender
+keywords: Mise en place du Centre de sécurité Microsoft 365, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, portail convergé, portail de sécurité, portail de sécurité Defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: edf0baa369142f6a0aafc86794a47ab0be6e345a
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: c8e38e3f22b48b58ea7fb1a4a6f000c80c170675
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760049"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934404"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender pour point de terminaison dans le Centre de sécurité Microsoft 365
 
@@ -75,7 +75,7 @@ Ce tableau est une référence rapide des modifications apportées entre le Cent
 
 |**Catégorie**  |**Description de la modification**  |
 |---------|---------|
-|Rechercher   |  Au lieu d'être dans l'en-tête, la barre de recherche Microsoft Defender pour les points de terminaison se déplace sous la section Points de terminaison. Vous pouvez continuer à rechercher des appareils, des fichiers, des utilisateurs, des URL, des adresses INTERNET, des vulnérabilités, des logiciels et des recommandations.  |
+|Recherche   |  Au lieu d'être dans l'en-tête, la barre de recherche Microsoft Defender pour les points de terminaison se déplace sous la section Points de terminaison. Vous pouvez continuer à rechercher des appareils, des fichiers, des utilisateurs, des URL, des adresses INTERNET, des vulnérabilités, des logiciels et des recommandations.  |
 |[Tableau de bord](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Il s'agit de votre tableau de bord des opérations de sécurité. Consultez une vue d'ensemble du nombre d'alertes actives déclenchées, des appareils à risque, des utilisateurs à risque et du niveau de gravité pour les alertes, les appareils et les utilisateurs. Vous pouvez également voir si des appareils ont des problèmes de capteur, l'état global de votre service et la façon dont des alertes non résolues ont été détectées. |
 |Inventaire des appareils | Aucune modification. |
 |[Gestion des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Le nom a été raccourci pour tenir dans le volet de navigation. Il est identique à la section gestion des menaces et des vulnérabilités, avec toutes les pages en dessous.     |

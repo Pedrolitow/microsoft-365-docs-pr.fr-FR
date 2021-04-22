@@ -1,7 +1,7 @@
 ---
-title: Ressources pour Microsoft Defender pour point de terminaison pour Mac
-description: Ressources pour Microsoft Defender pour point de terminaison pour Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos, magasin, mojave, high sierra
+title: Ressources pour Microsoft Defender pour point de terminaison sur Mac
+description: Ressources pour Microsoft Defender pour point de terminaison sur Mac, notamment comment le désinstaller, comment collecter des journaux de diagnostic, des commandes CLI et des problèmes connus avec le produit.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862174"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934524"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressources pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -103,7 +103,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Configuration|Activer/désactiver l'envoi automatique d'échantillons    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
 |Configuration|Ajouter un nom de menace à la liste autorisée      |`mdatp threat allowed add --name [threat-name]`                                   |
 |Configuration|Supprimer un nom de menace de la liste autorisée |`mdatp threat allowed remove --name [threat-name]`                                |
-|Configuration|Liste de tous les noms de menaces autorisés              |`mdatp threat allowed list`                                                       |
+|Configuration|Liste de tous les noms de menace autorisés              |`mdatp threat allowed list`                                                       |
 |Configuration|Activer la protection PUA                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
 |Configuration|Désactiver la protection PUA                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
 |Configuration|Activer le mode audit pour la protection PUA      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
@@ -117,7 +117,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Protection   |Faire une analyse complète                             |`mdatp scan full`                                                                 |
 |Protection   |Annuler une analyse à la demande en cours           |`mdatp scan cancel`                                                               |
 |Protection   |Demander une mise à jour de l'intelligence de la sécurité     |`mdatp definitions update`                                                        |
-|EDR          |Ajouter une balise de groupe à l'appareil. Les balises EDR sont utilisées pour gérer les groupes d'appareils. Pour plus d'informations, visitez https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |Ajouter une balise de groupe à l'appareil. Les balises EDR sont utilisées pour gérer les groupes d'appareils. Pour plus d'informations, consultez la https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Supprimer une balise de groupe de l'appareil               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |Ajouter un ID de groupe                               |`mdatp edr group-ids --group-id [group]`                                          |
 
@@ -152,7 +152,7 @@ Pour activer lacompletion automatique dans zsh :
    sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender for Endpoint
+## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>Répertoire de mise en quarantaine du client Microsoft Defender pour point de terminaison
 
 `/Library/Application Support/Microsoft/Defender/quarantine/` contient les fichiers mis en quarantaine par `mdatp` . Les fichiers sont nommés d'après l'threat trackingId. Le trackingIds actuel est affiché avec `mdatp threat list` .
 

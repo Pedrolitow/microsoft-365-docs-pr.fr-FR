@@ -1,7 +1,7 @@
 ---
 title: Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
 description: Résolution des problèmes de performances dans Microsoft Defender pour point de terminaison sur macOS.
-keywords: microsoft, defender, atp, mac, performances
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, performances
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698219"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934248"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour le point de terminaison sur macOS
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
 
-- [Microsoft Defender pour point de terminaison sur macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,13 +40,13 @@ ms.locfileid: "51698219"
 
 Cette rubrique fournit quelques étapes générales qui peuvent être utilisées pour affiner les problèmes de performances liés à Microsoft Defender pour Endpoint sur macOS.
 
-La protection en temps réel (RTP) est une fonctionnalité de Microsoft Defender for Endpoint sur macOS qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus et d'autres heuristiques.
+La protection en temps réel (RTP) est une fonctionnalité de Microsoft Defender for Endpoint sur macOS qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus, ainsi que d'autres heuristiques.
 
 Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez obtenir des performances sous-optimales lors de l'exécution de Microsoft Defender pour Endpoint sur macOS. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources sur un court laps de temps peuvent entraîner des problèmes de performances dans Microsoft Defender pour Endpoint sur macOS.
 
 Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces problèmes :
 
-1. Désactivez la protection en temps réel à l'aide de l'une des méthodes suivantes et observez si les performances sont améliorées. Cette approche permet de déterminer si Microsoft Defender pour Point de terminaison sur macOS contribue aux problèmes de performances.
+1. Désactivez la protection en temps réel à l'aide de l'une des méthodes suivantes et observez si les performances s'améliorent. Cette approche permet de déterminer si Microsoft Defender pour Point de terminaison sur macOS contribue aux problèmes de performances.
 
       Si votre appareil n'est pas géré par votre organisation, la protection en temps réel peut être désactivée à l'aide de l'une des options suivantes :
 
@@ -66,7 +66,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
 
 2. Ouvrez Finder et accédez aux  >  **utilitaires d'applications.** Ouvrez **l'Analyseur** d'activité et analysez les applications qui utilisent les ressources de votre système. Les compilateurs et les outils de mise à jour logicielles sont des exemples classiques.
 
-1. Pour rechercher les applications qui déclenchent le plus d'analyses, vous pouvez utiliser les statistiques en temps réel recueillies par Defender pour Endpoint pour Mac.
+1. Pour rechercher les applications qui déclenchent le plus d'analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Mac.
 
       > [!NOTE]
       > Cette fonctionnalité est disponible dans la version 100.90.70 ou une version plus récente.

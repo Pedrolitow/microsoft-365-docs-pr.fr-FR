@@ -1,7 +1,7 @@
 ---
 title: Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
-description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu'ils soient intégrés au service Microsoft Defender for Endpoint.
-keywords: configurer l'infrastructure VDI (Virtual Desktop Infrastructure), vdi, gestion des appareils, configurer les points de terminaison Windows ATP, configurer Microsoft Defender pour les points de terminaison de point de terminaison
+description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu'il soit intégré au service Microsoft Defender for Endpoint.
+keywords: configurer l'infrastructure VDI (Virtual Desktop Infrastructure), vdi, gestion des appareils, configurer Microsoft Defender pour les points de terminaison, points de terminaison
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 1e970be7967e221c29017be804a98770a778654f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 3872be343e51c4e28f946192256932b048a23791
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892792"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933900"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
@@ -34,14 +34,14 @@ ms.locfileid: "51892792"
 - Périphériques VDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
 
 Defender pour le point de terminaison prend en charge l'intégration de session VDI non persistante. 
 
 
-Il peut y avoir des difficultés associées lors de l'intégration des VDIs. Voici quelques défis classiques pour ce scénario :
+Il peut y avoir des difficultés associées lors de l'intégration des VDIs. Les défis classiques de ce scénario sont les suivants :
 
 - Intégration anticipée instantanée d'une session à durée de vie courte, qui doit être intégré à Defender for Endpoint avant la mise en service réelle.
 - Le nom de l'appareil est généralement réutilisé pour les nouvelles sessions.
@@ -101,7 +101,7 @@ Les étapes suivantes vous guident tout au long de l'intégration des appareils 
 
    1. Créez un pool avec un seul appareil.
       
-   1. Se logo à l'appareil.
+   1. Logon à l'appareil.
       
    1. Ffage de la logo à partir de l'appareil.
 
@@ -144,7 +144,7 @@ Les étapes suivantes vous guident tout au long de l'intégration des appareils 
 
 
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d'images DDI (Virtual Desktop Infrastructure) non persistantes
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d'images VDI (Virtual Desktop Infrastructure) non persistantes
 En tant que meilleure pratique, nous vous recommandons d'utiliser des outils de maintenance hors connexion pour mettre à jour les images de base/de base.<br>
 Par exemple, vous pouvez utiliser les commandes ci-dessous pour installer une mise à jour pendant que l'image reste hors connexion :
 

@@ -2,7 +2,7 @@
 title: Vue d’ensemble de la réduction de la surface d'attaque
 ms.reviewer: ''
 description: Découvrez les fonctionnalités de réduction de la surface d'attaque de Microsoft Defender pour point de terminaison.
-keywords: asr, réduction de la surface d'attaque, microsoft defender atp, microsoft defender pour le point de terminaison, microsoft defender, antivirus, av, windows defender
+keywords: asr, réduction de la surface d'attaque, Microsoft Defender pour point de terminaison, microsoft defender, antivirus, av, windows defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60efae91e4b65c5977bd2aebf111d9174d7c1042
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 68c9bad95e36863a57d27d49adc2ad46744cbd4a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893552"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933528"
 ---
 # <a name="overview-of-attack-surface-reduction"></a>Vue d’ensemble de la réduction de la surface d'attaque
 
