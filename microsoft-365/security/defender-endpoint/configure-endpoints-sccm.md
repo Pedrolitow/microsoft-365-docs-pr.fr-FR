@@ -1,7 +1,7 @@
 ---
 title: Appareils Windows 10 intégrés utilisant Configuration Manager
 description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu'ils soient intégrés au service.
-keywords: intégrer des appareils à l'aide de sccm, gestion des appareils, configurer des appareils Windows ATP, configurer Microsoft Defender pour les appareils Endpoint
+keywords: intégrer des appareils à l'aide de sccm, gestion des appareils, configurer Microsoft Defender pour les appareils endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e919f697048840b0eb7bffd34914328fe233f823
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892862"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935160"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Appareils Windows 10 intégrés utilisant Configuration Manager
 
@@ -77,7 +77,7 @@ Consultez le [pdf ou](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/pu
     
     1. Sélectionnez Windows 10 comme système d'exploitation.
 
-    1. Dans le **champ Méthode de** déploiement, sélectionnez System Center Configuration Manager **2012/2012 R2/1511/1602**.
+    1. Dans le champ Méthode **de** déploiement, sélectionnez **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
     1. Sélectionnez **le package** de téléchargement et enregistrez le fichier .zip.
 
@@ -109,7 +109,7 @@ Pour chaque appareil, vous pouvez définir une valeur de configuration pour dét
 
 Vous pouvez définir une règle de conformité pour l'élément de configuration dans Configuration Manager afin de modifier le paramètre de partage d'exemples sur un appareil.
 
-Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d'une clé de Registre sur les appareils ciblés afin de s'assurer qu'ils sont conformes.
+Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d'une clé de Registre sur les appareils ciblés pour s'assurer qu'ils sont conformes.
 
 La configuration est définie par le biais de l'entrée de clé de Registre suivante :
 
@@ -168,7 +168,7 @@ Pour plus d'informations, voir [Évaluer l'accès contrôlé aux dossiers.](eval
 
 ## <a name="offboard-devices-using-configuration-manager"></a>Hors-carte des appareils à l'aide de Configuration Manager
 
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d'expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d'expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d'intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
@@ -177,7 +177,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 Si vous utilisez la branche actuelle de Microsoft Endpoint Manager, consultez Créer un fichier [de configuration deboarding.](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage à l'aide de System Center 2012 R2 Configuration Manager
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Déboardage d'appareils à l'aide de System Center 2012 R2 Configuration Manager
 
 1. Obtenez le package deboarding à partir du [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
 
@@ -219,7 +219,7 @@ Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se
 
 4. Examinez les indicateurs d'état sous **Statistiques d'achèvement** et **État du contenu.**
 
-    En cas d'échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d'échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d'informations, voir résoudre les problèmes d'intégration de Microsoft Defender pour les points [de terminaison.](troubleshoot-onboarding.md)
+    En cas d'échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d'échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d'informations, voir résoudre les problèmes d'intégration de Microsoft Defender pour les [points de terminaison.](troubleshoot-onboarding.md)
 
     ![Configuration Manager affichant un déploiement réussi sans erreur](images/sccm-deployment.png)
 

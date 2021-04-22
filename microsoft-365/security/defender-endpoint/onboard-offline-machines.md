@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ee06f927579445825a2b2813e483c24357d2ed78
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861346"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934920"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Appareils intégrés sans accès à Internet à Microsoft Defender pour le point de terminaison
 
@@ -66,14 +66,14 @@ Pour plus d'informations sur les méthodes d'intégration, consultez les article
 ## <a name="azure-virtual-machines"></a>Machines virtuelles Azure
 - Configurer et activer [l'espace de travail Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/gateway)
 
-    - Configurer Azure Log Analytics Gateway (anciennement passerelle OMS) pour qu'elle agisse en tant que proxy ou hub :
+    - Configurer Azure Log Analytics Gateway (anciennement appelé passerelle OMS) pour qu'elle agisse en tant que proxy ou hub :
       - [Passerelle Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
       - Installer et configurer le point [MMA (Microsoft Monitoring Agent)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) vers la clé d'espace de travail Defender for Endpoint & ID
     - Ordinateurs VM Azure hors connexion dans le même réseau de passerelle OMS
       - Configurer l'adresse IP Azure Log Analytics en tant que proxy
       - ID de clé d'espace de travail Azure Log Analytics & ID
 
-    - Centre de sécurité Azure (ASC)
+    - Azure Defender
       - [Espace de travail \> Analyse des journaux de stratégie de sécurité](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [Détection des \> menaces : autoriser Defender pour le point de terminaison à accéder à mes données](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

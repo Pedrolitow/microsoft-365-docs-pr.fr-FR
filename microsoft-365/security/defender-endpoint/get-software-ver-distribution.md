@@ -1,7 +1,7 @@
 ---
-title: Liste de la distribution des versions des logiciels
+title: Répertorier la distribution de versions du logiciel
 description: Récupère la liste de la distribution des versions logicielles de votre organisation
-keywords: api, api de graphique, api pris en charge, obtenir, distribution de version de logiciel, api tvm mdatp
+keywords: api, api de graphique, api pris en charge, obtenir, distribution de version de logiciel, api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,18 +14,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88f446ddd87768817099c1a206bab17aa8be5b7b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e47a97477500491f634e3f5134a32241bd68985b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198576"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935292"
 ---
-# <a name="list-software-version-distribution"></a>Liste de la distribution des versions des logiciels 
+# <a name="list-software-version-distribution"></a>Répertorier la distribution de versions du logiciel 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S'applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -38,9 +38,9 @@ ms.locfileid: "51198576"
 Extrait une liste de la distribution des versions de logiciels de votre organisation. 
 
 ## <a name="permissions"></a>Autorisations
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d'informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d'informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
 :---|:---|:---
 Application | Software.Read.All | « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | Software.Read | « Lire les informations sur les logiciels de gestion des menaces et des vulnérabilités »
@@ -54,7 +54,7 @@ GET /api/Software/{Id}/distributions
 
 | Nom        | Type | Description
 |:--------------|:-------|:--------------|
-| Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+| Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
 Vide

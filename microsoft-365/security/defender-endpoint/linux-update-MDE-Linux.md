@@ -1,7 +1,7 @@
 ---
 title: Planification d'une mise à jour de Microsoft Defender pour Endpoint (Linux)
 description: Découvrez comment planifier une mise à jour de Microsoft Defender pour Endpoint (Linux) pour mieux protéger les ressources de votre organisation.
-keywords: microsoft, defender, atp, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 22ff42cb399b3d07c0ebd8ec4f947352eb6f44aa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688800"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934764"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planifier une mise à jour de Microsoft Defender pour point de terminaison (Linux)
 
@@ -66,7 +66,7 @@ And
 
 02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 
-Voir [Analyses de planification avec Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)
+Voir [Analyses de planification avec Microsoft Defender pour Endpoint (Linux)](linux-schedule-scan-atp.md)
 
 Appuyez sur « Insérer »
 
@@ -148,7 +148,7 @@ Pour plus d’informations, voir [https://puppet.com/blog/automating-puppet-cron
 > [!TIP]
 > Faites-le avant de modifier ou de supprimer. <br>
 
-**Pour restaurer des entrées crontab**
+**Pour restaurer des entrées de crontab**
 
 `crontab /var/tmp/cron_backup.dat`
 

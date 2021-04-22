@@ -1,7 +1,7 @@
 ---
 title: "Attribuer une valeur d'appareil : gestion des menaces et des vulnérabilités"
 description: Découvrez comment affecter une valeur faible, normale ou élevée à un appareil pour vous aider à différencier les priorités des ressources.
-keywords: microsoft defender pour la valeur de l'appareil de point de terminaison, la valeur de l'appareil de gestion des menaces et des vulnérabilités, les appareils à valeur élevée, le score d'exposition de la valeur de l'appareil
+keywords: Valeur de l'appareil Microsoft Defender for Endpoint, valeur de l'appareil de gestion des menaces et des vulnérabilités, appareils à valeur élevée, score d'exposition de la valeur de l'appareil
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f5d90190418f84795bdd899ea0e48ac25831a96
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: ca6c88b08b331eb65035387a9c070d0914b1651d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689388"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935196"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Attribuer une valeur d'appareil : gestion des menaces et des vulnérabilités
 
@@ -39,7 +39,7 @@ ms.locfileid: "51689388"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-La définition de la valeur d'un appareil vous permet de différencier les priorités des biens. La valeur de l'appareil est utilisée pour incorporer le risque d'exposition d'un bien individuel dans le calcul du score d'exposition de la gestion des menaces et des vulnérabilités. Les appareils affectés en tant que « valeur élevée » recevront plus de poids.
+La définition de la valeur d'un appareil vous permet de différencier les priorités des ressources. La valeur de l'appareil est utilisée pour incorporer le risque d'exposition d'un bien individuel dans le calcul du score d'exposition de la gestion des menaces et des vulnérabilités. Les appareils affectés en tant que « valeur élevée » recevront plus de poids.
 
 Vous pouvez également utiliser [l'API définir la valeur de l'appareil.](set-device-value.md)
 

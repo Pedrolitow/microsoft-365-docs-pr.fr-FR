@@ -1,10 +1,10 @@
 ---
 title: Intégrer Microsoft Defender pour point de terminaison à d'autres solutions Microsoft
-description: Découvrez comment Microsoft Defender pour endpoint s'intègre à d'autres solutions Microsoft, notamment Microsoft Defender pour l'identité et Azure Security Center.
+description: Découvrez comment Microsoft Defender pour le point de terminaison s'intègre à d'autres solutions Microsoft, notamment Microsoft Defender pour l'identité et Azure Defender.
 author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
-keywords: microsoft 365 defender, accès conditionnel, Office, protection avancée contre les menaces, microsoft defender pour l'identité, microsoft defender pour office, centre de sécurité Azure, microsoft cloud app security, azure sentinel
+keywords: microsoft 365 defender, accès conditionnel, office, Microsoft Defender pour le point de terminaison, microsoft defender pour l'identité, microsoft defender pour office, Azure Defender, microsoft cloud app security, azure sentinel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ce8dbef2f4fb7c3503f04f15148d2071b449b2dc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765394"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935532"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender pour le point de terminaison et d'autres solutions Microsoft
 
@@ -38,7 +38,7 @@ ms.locfileid: "51765394"
 
 Microsoft Defender pour point de terminaison s'intègre directement à différentes solutions Microsoft.
 
-### <a name="azure-security-center"></a>Centre de sécurité Azure
+### <a name="azure-defender"></a>Azure Defender
 Microsoft Defender pour point de terminaison fournit une solution de protection serveur complète, y compris les fonctionnalités de détection et de réponse des points de terminaison (EDR) sur les serveurs Windows.
 
 ### <a name="azure-sentinel"></a>Azure Sentinel
@@ -50,14 +50,14 @@ Nous avons récemment supprimé l'intégration Azure Information Protection, car
 ### <a name="conditional-access"></a>Accès conditionnel
 Le score de risque de l'appareil dynamique de Microsoft Defender pour le point de terminaison est intégré à l'évaluation de l'accès conditionnel, garantissant que seuls les appareils sécurisés ont accès aux ressources. 
 
-### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+### <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 Microsoft Cloud App Security tire parti des signaux de point de terminaison Microsoft Defender pour les points de terminaison pour permettre une visibilité directe de l'utilisation des applications cloud, y compris l'utilisation de services cloud non pris en compte (shadow IT) de tous les appareils Surveillés par Microsoft Defender pour endpoint.
 
-### <a name="microsoft-defender-for-identity"></a>Microsoft Defender pour Identity
-Les activités suspectes sont des processus en cours d'exécution dans un contexte utilisateur. L'intégration entre Microsoft Defender pour point de terminaison et Azure ATP offre la flexibilité nécessaire pour mener des enquêtes sur la cybersécurité entre les activités et les identités.
+### <a name="microsoft-defender-for-identity"></a>Microsoft Defender pour l’identité
+Les activités suspectes sont des processus en cours d'exécution dans un contexte utilisateur. L'intégration entre Microsoft Defender pour point de terminaison et Microsoft Defender pour l'identité offre la flexibilité nécessaire pour mener des enquêtes sur la cybersécurité entre les activités et les identités.
 
 ### <a name="microsoft-defender-for-office"></a>Microsoft Defender pour Office
-[Defender pour Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) permet de protéger votre organisation contre les programmes malveillants dans les messages électroniques ou les fichiers par le biais de liens sécurisés ATP, de pièces jointes sécurisées ATP, d'anti-hameçonnage avancé et de fonctionnalités d'intelligence contre l'usurpation d'informations. L'intégration entre Office 365 ATP et Microsoft Defender for Endpoint permet aux analystes de sécurité d'aller en amont pour examiner le point d'entrée d'une attaque. Grâce au partage des renseignements sur les menaces, les attaques peuvent être contenues et bloquées. 
+[Defender pour Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) permet de protéger votre organisation contre les programmes malveillants dans les messages électroniques ou les fichiers par le biais de liens sécurisés, de pièces jointes sécurisées, d'anti-hameçonnage avancé et de fonctionnalités d'intelligence contre l'usurpation d'adresses. L'intégration entre Microsoft Defender pour Office 365 et Microsoft Defender pour point de terminaison permet aux analystes de sécurité d'aller en amont pour examiner le point d'entrée d'une attaque. Grâce au partage des renseignements sur les menaces, les attaques peuvent être contenues et bloquées. 
 
 >[!NOTE]
 > Les données Defender pour Office 365 sont affichées pour les événements des 30 derniers jours. Pour les alertes, les données De Defender pour Office 365 sont affichées en fonction de la première activité. Ensuite, les données ne sont plus disponibles dans Defender pour Office 365.

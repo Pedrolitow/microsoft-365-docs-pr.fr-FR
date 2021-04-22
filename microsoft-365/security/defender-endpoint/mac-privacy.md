@@ -1,7 +1,7 @@
 ---
-title: Confidentialité pour Microsoft Defender pour point de terminaison pour Mac
-description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour Endpoint pour Mac.
-keywords: microsoft, defender, atp, mac, confidentialité, diagnostic
+title: Confidentialité pour Microsoft Defender pour point de terminaison sur Mac
+description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour Endpoint sur Mac.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, confidentialité, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26ae83dc8a8b3bb7d686e3674437a12999b5146f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b2897766570c6ef8979a7944a687ba024e55b3ce
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862234"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934548"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Confidentialité pour Microsoft Defender pour point de terminaison sur macOS
 
@@ -94,14 +94,14 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | hostname                | Nom de l'appareil local (sans suffixe DNS). Permet à Microsoft d'identifier si des problèmes ont un impact sur un ensemble d'installation sélectionné et le nombre d'utilisateurs touchés. |
 | product_guid            | Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes gammes du produit. |
 | app_version             | Version de Microsoft Defender pour point de terminaison sur l'application macOS. Permet à Microsoft d'identifier les versions du produit qui affichent un problème afin qu'il puisse être correctement hiérarchisé.|
-| sig_version             | Version de la base de données d'informations de sécurité. Permet à Microsoft d'identifier les versions de l'intelligence de sécurité qui affichent un problème afin qu'il puisse être correctement hiérarchisé. |
+| sig_version             | Version de la base de données d'informations de sécurité. Permet à Microsoft d'identifier les versions de l'intelligence de sécurité qui affichent un problème afin qu'elle puisse être correctement hiérarchisées. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l'application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu'il communique avec l'application. |
-| release_ring            | Sonnerie à l'appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d'identifier l'anneau de publication sur lequel un problème peut se produire afin qu'il puisse être correctement hiérarchisé. |
+| release_ring            | Sonner à l'appareil (par exemple Insider Fast, Insider Slow, Production). Permet à Microsoft d'identifier l'anneau de publication sur lequel un problème peut se produire afin qu'il puisse être correctement hiérarchisé. |
 
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la performance de Microsoft Defender for Endpoint sur l'appareil sur laquelle il est installé.
+**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la mise à jour de Microsoft Defender for Endpoint sur l'appareil sur laquelle il est installé.
 
 Les données de diagnostic requises permettent d'identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d'appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Microsoft Defender pour point de terminaison se crashe plus fréquemment sur une version de système d'exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Microsoft Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l'impact sur les utilisateurs ou les organisations.
 
@@ -140,7 +140,7 @@ Les champs suivants sont collectés :
 
 #### <a name="product-and-service-usage-data-events"></a>Événements de données liés à l'utilisation des produits et services
 
-**Rapport de mise à jour de l'intelligence de la sécurité**
+**Rapport de mise à jour des informations de sécurité**
 
 Les champs suivants sont collectés :
 
@@ -189,7 +189,7 @@ Les journaux de diagnostic sont collectés uniquement avec le consentement de l'
 
 - Tous les fichiers *sous /Library/Logs/Microsoft/mdatp/*
 - Sous-ensemble de fichiers sous */Library/Application Support/Microsoft/Defender/* créés et utilisés par Microsoft Defender pour endpoint sur macOS
-- Sous-ensemble de fichiers sous */Library/Managed Preferences* qui sont utilisés par Microsoft Defender pour Endpoint sur macOS
+- Sous-ensemble de fichiers sous */Library/Managed Preferences* utilisées par Microsoft Defender pour Endpoint sur macOS
 - /Library/Logs/Microsoft/autoupdate.log
 - $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 
@@ -218,7 +218,7 @@ Les champs suivants sont collectés :
 | antivirus_engine.exclusions[].name                 | Nom du fichier exclu de l’analyse. |
 | antivirus_engine.scan_cache_maximum                | Taille du cache du produit. |
 | antivirus_engine.maximum_scan_threads              | Nombre maximal de threads utilisés pour l’analyse. |
-| antivirus_engine.threat_restoration_exclusion_time | Délai d’délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
+| antivirus_engine.threat_restoration_exclusion_time | Délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
 | filesystem_scanner.full_scan_directory             | Répertoire d’analyse complet. |
 | filesystem_scanner.quick_scan_directories          | Liste des répertoires utilisés dans l'analyse rapide. |
 | edr.latency_mode                                   | Mode latence utilisé par le composant de détection et de réponse. |
@@ -230,7 +230,7 @@ Les champs suivants sont collectés :
 
 | Champ                       | Description |
 | --------------------------- | ----------- |
-| how_to_check                | Détermine la façon dont les mises à jour du produit sont vérifiées (par exemple, automatiques ou manuelles). |
+| how_to_check                | Détermine la façon dont les mises à jour des produits sont vérifiées (par exemple, automatiques ou manuelles). |
 | channel_name                | Canal de mise à jour associé à l'appareil. |
 | manifest_server             | Serveur utilisé pour télécharger les mises à jour. |
 | update_cache                | Emplacement du cache utilisé pour stocker les mises à jour. |

@@ -1,7 +1,7 @@
 ---
 title: Erreurs courantes de l'API Microsoft Defender for Endpoint
 description: Liste des erreurs d'API De Microsoft Defender pour point de terminaison courantes avec descriptions.
-keywords: api, api mdatp, erreurs, résolution des problèmes
+keywords: API, API Microsoft Defender pour point de terminaison, erreurs, résolution des problèmes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fc2aeb6ee5a95f7eb121abdcf4431dc6d34cd49
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 54ae77c28523d3be6092e1567424d2d87a5f2927
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893460"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934788"
 ---
 # <a name="common-rest-api-error-codes"></a>Codes d’erreur courants de l’API REST
 
@@ -32,7 +32,7 @@ ms.locfileid: "51893460"
 * Le message est un texte libre qui peut être modifié.
 * En bas de la page, vous trouverez des exemples de réponse.
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Code d’erreur |Code d’état HTTP |Message 
 :---|:---|:---

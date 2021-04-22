@@ -1,8 +1,8 @@
 ---
-title: Termes du contrat de licence de l'application Microsoft Defender ATP pour Android
+title: Termes du contrat de licence de l'application Microsoft Defender pour Endpoint sur Android
 ms.reviewer: ''
-description: Décrit les termes du contrat de licence Microsoft Defender ATP pour Android
-keywords: microsoft, defender, atp, android,license, terms, application, use, installation, service, feedback, scope,
+description: Décrit les termes du contrat de licence De Microsoft Defender pour Point de terminaison sur Android
+keywords: microsoft, defender, Microsoft Defender for Endpoint, android, license, terms, application, use, installation, service, feedback, scope,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 2bcc8c1f977a6060ac94dc3a634f075a5c1ee041
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687948"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934620"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Termes du contrat de licence de l'application Microsoft Defender pour Endpoint sur Android
 
@@ -73,11 +73,11 @@ pour cette application, sauf si d'autres termes accompagnent ces éléments. Si 
         -   Données d'utilisation. Microsoft collecte automatiquement les données d'utilisation et de performances sur Internet. Ces données seront utilisées pour fournir et améliorer les produits et services Microsoft et améliorer votre expérience.
             Vous pouvez limiter ou contrôler la collecte de certaines données d'utilisation et de performances par le biais des paramètres de votre appareil. Cela peut perturber l'utilisation de certaines fonctionnalités de l'application. Pour plus d'informations sur la collecte et l'utilisation des données Microsoft, consultez les [conditions d'utilisation des services en ligne.](https://go.microsoft.com/fwlink/?linkid=2106777)
 
-    2.  Utilisation abusive des services Internet. Vous ne pouvez utiliser aucun service Internet qui pourrait l'endommager ou nuire à l'utilisation de celui-ci ou du réseau sans fil par d'autres personnes. Vous ne pouvez pas utiliser le service pour essayer d'obtenir un accès non autorisé à un service, à des données, à un compte ou à un réseau par quelque moyen que ce soit.
+    2.  Utilisation abusive des services Internet. Vous ne pouvez utiliser aucun service Internet qui pourrait l'endommager ou nuire à l'utilisation de celui-ci ou du réseau sans fil par d'autres personnes. Vous ne pouvez pas utiliser le service pour essayer d'obtenir un accès non autorisé à un service, à des données, à un compte ou à un réseau de quelque façon que ce soit.
 
 4.  **FEEDBACK.** Si vous faites part de vos commentaires sur l'application à Microsoft, vous accordez à Microsoft, sans frais, le droit d'utiliser, de partager et de commercialiser vos commentaires d'une manière ou d'une autre. Vous accordez également à des tiers, sans frais, les droits de brevet nécessaires pour que leurs produits, technologies et services utilisent ou s'interfacent avec des parties spécifiques d'un logiciel ou d'un service Microsoft qui inclut les commentaires. Vous ne donnerez aucun commentaire faisant l’objet d’une licence qui obligerait Microsoft à émettre une licence pour son logiciel ou sa documentation envers des tiers du fait d’y inclure votre commentaire. These rights survive this agreement.
 
-5.  **SCOPE OF LICENSE.** L'application est sous licence, et non vendue. Ce contrat vous donne uniquement certains droits d'utilisation de l'application. Microsoft reserves all other rights. Sauf si la loi applicable vous donne davantage de droits malgré cette limitation, vous pouvez utiliser l'application uniquement comme expressément autorisé dans le cadre du contrat. Ce faisant, vous devez vous conformer aux limitations techniques de l'application qui vous permettent uniquement de l'utiliser de certaines manières. Vous n'êtes pas autorisé à :
+5.  **SCOPE OF LICENSE.** L'application est sous licence, et non vendue. Ce contrat vous donne uniquement certains droits d'utilisation de l'application. Microsoft reserves all other rights. Sauf si la loi applicable vous donne davantage de droits malgré cette limitation, vous pouvez utiliser l'application uniquement comme expressément autorisé dans le cadre du contrat. Ce faisant, vous devez vous conformer à toutes les limitations techniques dans l'application qui vous permettent uniquement de l'utiliser d'une certaine manière. Vous n'êtes pas autorisé à :
 
     -   contourner les limitations techniques dans l'application ;
 
@@ -105,7 +105,7 @@ pour cette application, sauf si d'autres termes accompagnent ces éléments. Si 
 
     2.  Le fournisseur de magasin d'applications respectif et ses filiales sont des bénéficiaires tiers des conditions d'utilisation, et dès que vous acceptez ces Conditions, le ou les fournisseurs de magasins d'applications auront le droit d'appliquer et de s'appuyer directement sur toute disposition de ces Conditions qui leur accorde un avantage ou des droits.
 
-9.  **AVIS DE MARQUE.** Microsoft, Microsoft Defender ATP, MDATP et Microsoft 365 sont des marques déposées ou de droit commun de Microsoft Corporation aux États-Unis et/ou dans d'autres pays.
+9.  **AVIS DE MARQUE.** Microsoft, Microsoft Defender pour le point de terminaison et Microsoft 365 sont des marques déposées ou de droit commun de Microsoft Corporation aux États-Unis et/ou dans d'autres pays.
 
 10. **ENTIRE AGREEMENT.** Ce contrat et les conditions pour les suppléments, les mises à jour, les services Internet et les services de support que vous utilisez sont l'intégralité du contrat pour les services d'application et de support.
 

@@ -1,7 +1,7 @@
 ---
 title: Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles
 description: Utilisez les outils de gestion des appareils mobiles pour déployer le package de configuration sur les appareils afin qu'ils soient intégrés au service.
-keywords: appareils intégrés à l'aide de mdm, gestion des appareils, appareils Windows ATP intégrés, intégration de Microsoft Defender pour les appareils endpoint, mdm
+keywords: intégrer des appareils à l'aide de mdm, gestion des appareils, intégration de Microsoft Defender pour les appareils Endpoint, mdm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f3042ef9ced11ebc5439308d2781528d5267975f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 951b0f33356ab99485f09ccc4147691e13ed3c6e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893612"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935004"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles
 
@@ -38,9 +38,9 @@ Vous pouvez utiliser des solutions de gestion des périphériques mobiles (MDM) 
 Pour plus d'informations sur l'utilisation du programme CSP Defender for Endpoint, voir le fichier DDF [WindowsAdvancedThreatProtection](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) et [WindowsAdvancedThreatProtection.](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)
 
 ## <a name="before-you-begin"></a>Avant de commencer
-Si vous utilisez Microsoft Intune, vous devez avoir inscrit l'appareil MDM. Dans le cas contraire, les paramètres ne seront pas appliqués correctement. 
+Si vous utilisez Microsoft Intune, l'appareil doit être inscrit à la gestion des appareils. Dans le cas contraire, les paramètres ne seront pas appliqués correctement. 
 
-Pour plus d'informations sur l'activation de la gestion des périphériques multi-appareils avec Microsoft Intune, voir Inscription d'appareils [(Microsoft Intune).](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+Pour plus d'informations sur l'activation de la gestion des périphériques multi-appareils avec Microsoft Intune, voir Inscription des appareils [(Microsoft Intune).](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>Intégrer des appareils à l'aide de Microsoft Intune
 
@@ -65,7 +65,7 @@ Pour plus d'informations sur l'utilisation du programme CSP Defender for Endpoin
 Consultez le [pdf ou](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d'accès dans le déploiement de Microsoft Defender pour Endpoint.
 
 ## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Utiliser les outils de gestion des périphériques mobiles pour les appareils mobiles pour les hors-bord et les surveiller
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d'expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d'expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d'intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.

@@ -1,7 +1,7 @@
 ---
 title: Symantec vers Microsoft Defender pour le point de terminaison - Phase 3, Intégration
 description: Il s'agit de la phase 3, intégration, de la migration de Symantec vers Microsoft Defender pour endpoint
-keywords: migration, protection avancée contre les menaces Windows Defender, atp, edr
+keywords: migration, Microsoft Defender pour point de terminaison, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: b42a33d975e1368ad25d4a7102ef44bf8b9824a8
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 63c870c5682e963e6ab29160218c7405cabb0838
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698279"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935544"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Migrer de Symantec - Phase 3 : intégration à Microsoft Defender pour le point de terminaison
 
@@ -39,7 +39,7 @@ ms.locfileid: "51698279"
 || |*Vous êtes là !* |
 
 
-**Bienvenue dans la phase 3 de [la migration de Symantec vers Microsoft Defender pour endpoint.](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)** Cette phase de migration comprend les étapes suivantes :
+**Bienvenue dans la phase 3 de [la migration de Symantec vers Microsoft Defender pour Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. Cette phase de migration comprend les étapes suivantes :
 
 1. [Intégrer des appareils à Microsoft Defender pour le point de terminaison.](#onboard-devices-to-microsoft-defender-for-endpoint)
 2. [Exécutez un test de détection.](#run-a-detection-test)
@@ -51,7 +51,7 @@ ms.locfileid: "51698279"
 1. Go to the Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) and sign in.
 2. Choose **Settings**  >  **Device management**  >  **Onboarding**. 
 3. Dans la **liste Sélectionner le système d'exploitation pour démarrer le** processus d'intégration, sélectionnez un système d'exploitation. 
-4. Sous **Méthode de déploiement,** sélectionnez une option. Suivez les liens et invites pour intégrer les appareils de votre organisation. Vous avez besoin d’aide ? Voir [méthodes d'intégration](#onboarding-methods) (dans cet article).
+4. Sous **Méthode de déploiement,** sélectionnez une option. Suivez les liens et invites pour intégrer les appareils de votre organisation. Besoin d’aide ? Voir [méthodes d'intégration](#onboarding-methods) (dans cet article).
 
 ### <a name="onboarding-methods"></a>Méthodes d'intégration
  
@@ -61,9 +61,9 @@ Les méthodes de déploiement varient en fonction du système d'exploitation sé
 |---------|---------|
 |Windows 10     |- [Stratégie de groupe](configure-endpoints-gp.md)<br/>- [Configuration Manager](configure-endpoints-sccm.md)<br/>- [Gestion des appareils mobiles (Intune)](configure-endpoints-mdm.md)<br/>- [Script local](configure-endpoints-script.md) <br/><br/>**REMARQUE**: un script local est approprié pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d'utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.         |
 |- Windows 8.1 Entreprise <br/>- Windows 8.1 Professionnel <br/>- Windows 7 SP1 Entreprise <br/>- Windows 7 SP1 Professionnel     | [Agent de surveillance Microsoft](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<br/><br/>**REMARQUE**: l'Agent de surveillance Microsoft est désormais l'agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d'ensemble de l'agent Log Analytics.](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)        |
-|- Windows Server 2019 et ultérieur <br/>- Édition principale de Windows Server 2019 <br/>- Windows Server version 1803 et ultérieures |- [Script local](configure-endpoints-script.md) <br/>- [Stratégie de groupe](configure-endpoints-gp.md) <br/>- [Configuration Manager](/configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [Scripts d'intégration VDI pour les appareils non persistants](configure-endpoints-vdi.md) <br/><br/>**REMARQUE**: un script local convient pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d'utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.    |
-|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Centre de sécurité Microsoft Defender](configure-server-endpoints.md)<br/>- [Centre de sécurité Azure](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
-|macOS<br/>- 10.15 (Caserline)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<br/><br/>iOS<br/><br/>Linux :<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS ou un LTS supérieur<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
+|- Windows Server 2019 et ultérieur <br/>- Édition principale de Windows Server 2019 <br/>- Windows Server version 1803 et ultérieures |- [Script local](configure-endpoints-script.md) <br/>- [Stratégie de groupe](configure-endpoints-gp.md) <br/>- [Configuration Manager](/configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [Scripts d'intégration VDI pour les appareils non persistants](configure-endpoints-vdi.md) <br/><br/>**REMARQUE**: un script local est approprié pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d'utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.    |
+|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Centre de sécurité Microsoft Defender](configure-server-endpoints.md)<br/>- [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
+|macOS<br/>- 10.15 (Îles)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<br/><br/>iOS<br/><br/>Linux :<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS ou un LTS supérieur<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>Exécuter un test de détection
 
@@ -96,7 +96,7 @@ Maintenant que vous avez intégré les appareils de votre organisation à Micros
 Maintenant que vous avez désinstallé Symantec, l'étape suivante consiste à vous assurer que l'Antivirus Microsoft Defender et Microsoft Defender pour le point de terminaison sont activés et en mode actif.
 
 Pour ce faire, visitez le site de démonstration de Microsoft Defender for Endpoint ( [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) ). Essayez un ou plusieurs scénarios de démonstration sur cette page, y compris au moins les scénarios suivants :
-- Protection cloud
+- Protection fournie par le cloud
 - Applications potentiellement indésirables (PUA)
 - Protection du réseau (NP)
 

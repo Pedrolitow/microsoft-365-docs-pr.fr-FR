@@ -1,7 +1,7 @@
 ---
-title: Définir des préférences pour Microsoft Defender pour endpoint pour Mac
-description: Configurez Microsoft Defender pour endpoint pour Mac dans les organisations d'entreprise.
-keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos,pé, mojave, high sierra
+title: Définir des préférences pour Microsoft Defender pour le point de terminaison sur Mac
+description: Configurez MMicrosoft Defender pour endpoint sur Mac dans les organisations d'entreprise.
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, gestion, préférences, entreprise, intune, jamf, macos,pératin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860922"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934560"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Définir des préférences pour Microsoft Defender pour le point de terminaison sur macOS
 
@@ -39,7 +39,7 @@ ms.locfileid: "51860922"
 
 ## <a name="summary"></a>Résumé
 
-Dans les organisations d'entreprise, Microsoft Defender pour endpoint sur macOS peut être géré via un profil de configuration déployé à l'aide de l'un des outils de gestion. Les préférences gérées par votre équipe en charge des opérations de sécurité prévalent sur les préférences définies localement sur l'appareil. La modification des préférences définies par le biais du profil de configuration nécessite des privilèges escalades et n'est pas disponible pour les utilisateurs sans autorisations administratives.
+Dans les organisations d'entreprise, Microsoft Defender pour endpoint sur macOS peut être géré via un profil de configuration déployé à l'aide de l'un des outils de gestion. Les préférences gérées par votre équipe des opérations de sécurité prévalent sur les préférences définies localement sur l'appareil. La modification des préférences définies par le biais du profil de configuration nécessite des privilèges escalades et n'est pas disponible pour les utilisateurs sans autorisations administratives.
 
 Cet article décrit la structure du profil de configuration, inclut un profil recommandé que vous pouvez utiliser pour commencer et fournit des instructions sur la façon de déployer le profil.
 
@@ -91,7 +91,7 @@ Spécifiez si le moteur antivirus s'exécute en mode passif. Le mode passif a le
 | **Valeurs possibles** | false (par défaut) <br/> true |
 | **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 100.67.60 ou supérieure. |
 
-#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d'exclusions
+#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d'exclusion
 
 Spécifiez la stratégie de fusion pour les exclusions. Il peut s'agit d'une combinaison d'exclusions définies par l'administrateur et d'exclusions définies par l'utilisateur ( ) ou uniquement `merge` d'exclusions définies par l'administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
@@ -100,7 +100,7 @@ Spécifiez la stratégie de fusion pour les exclusions. Il peut s'agit d'une com
 | **Domaine** | `com.microsoft.wdav` |
 | **Key** | exclusionsMergePolicy |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | merge (par défaut) <br/> admin_only |
+| **Valeurs possibles** | merge (valeur par défaut) <br/> admin_only |
 | **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure. |
 
 #### <a name="scan-exclusions"></a>Analyser les exclusions
@@ -168,14 +168,14 @@ Spécifiez un processus pour lequel toute l'activité de fichier est exclue de l
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | nom |
+| **Key** | name |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | n'importe quelle chaîne |
 | **Commentaires** | Applicable uniquement *si $type* est *excluFileName* |
 
 #### <a name="allowed-threats"></a>Menaces autorisées
 
-Spécifiez les menaces par nom qui ne sont pas bloquées par Defender pour endpoint pour Mac. Ces menaces seront autorisées à s'exécuter.
+Spécifiez les menaces par nom qui ne sont pas bloquées par Defender pour endpoint sur Mac. Ces menaces seront autorisées à s'exécuter.
 
 |Section|Valeur|
 |:---|:---|
@@ -265,7 +265,7 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 | **Domaine** | `com.microsoft.wdav` |
 | **Key** | scanHistoryMaximumItems |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments. |
+| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments. |
 | **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 101.07.23 ou supérieure. |
 
 ### <a name="cloud-delivered-protection-preferences"></a>Préférences de protection dans le cloud
@@ -279,7 +279,7 @@ Configurez les fonctionnalités de protection informatique de Microsoft Defender
 | **Type de données** | Dictionnaire (préférence imbriée) |
 | **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
-#### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection cloud
+#### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection livrée par le cloud
 
 Spécifiez s’il faut activer ou non la protection de l’appareil livrée par le cloud. Pour améliorer la sécurité de vos services, nous vous recommandons de maintenir cette fonctionnalité allumée.
 
@@ -290,7 +290,7 @@ Spécifiez s’il faut activer ou non la protection de l’appareil livrée par 
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 
-#### <a name="diagnostic-collection-level"></a>Niveau de collection de diagnostics
+#### <a name="diagnostic-collection-level"></a>Niveau de collecte de diagnostics
 
 Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Microsoft Defender for Endpoint, détecter, diagnostiquer et résoudre les problèmes, ainsi que pour améliorer les produits. Ce paramètre détermine le niveau de diagnostics envoyés par Microsoft Defender pour endpoint à Microsoft.
 
@@ -303,7 +303,7 @@ Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Mic
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Activer/désactiver les envois automatiques d'échantillons
 
-Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Vous êtes invité à savoir si le fichier envoyé est susceptible de contenir des informations personnelles.
+Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Vous êtes invité à vous demander si le fichier envoyé est susceptible de contenir des informations personnelles.
 
 |Section|Valeur|
 |:---|:---|
@@ -333,7 +333,7 @@ Gérez les préférences pour l'interface utilisateur de Microsoft Defender pour
 | **Type de données** | Dictionnaire (préférence imbriée) |
 | **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
-#### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l'icône du menu État
+#### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l'icône du menu d'état
 
 Spécifiez s'il faut afficher ou masquer l'icône du menu d'état dans le coin supérieur droit de l'écran.
 
@@ -408,12 +408,12 @@ Spécifie la valeur de la balise
 
 ## <a name="recommended-configuration-profile"></a>Profil de configuration recommandé
 
-Pour commencer, nous recommandons la configuration suivante pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection que Microsoft Defender pour Endpoint fournit.
+Pour commencer, nous vous recommandons la configuration suivante pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection que Microsoft Defender pour Endpoint fournit.
 
 Le profil de configuration suivant (ou, dans le cas de JAMF, une liste de propriétés qui peut être téléchargée dans le profil de configuration des paramètres personnalisés) sera :
 - Activer la protection en temps réel (RTP)
 - Spécifiez la façon dont les types de menaces suivants sont gérés :
-  - **Les applications potentiellement indésirables (PUA) sont** bloquées
+  - **Les applications potentiellement indésirables (PUA)** sont bloquées
   - **Les archives** archivées (fichier avec un taux de compression élevé) sont auditées dans Microsoft Defender pour les journaux de point de terminaison
 - Activer les mises à jour automatiques des informations de sécurité
 - Activer la protection cloud
@@ -812,7 +812,7 @@ Une fois que vous avez créé le profil de configuration pour votre entreprise, 
 
 ### <a name="jamf-deployment"></a>Déploiement JAMF
 
-À partir de la console JAMF, **ouvrez** profils de configuration ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez  >   **Paramètres personnalisés.** Créez une entrée avec `com.microsoft.wdav` comme domaine de préférence et téléchargez le *.plist* produit précédemment.
+À partir de la console JAMF, **ouvrez** profils de configuration ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez  >   **Paramètres personnalisés.** Créez une entrée avec comme domaine de préférence `com.microsoft.wdav` et téléchargez *le .plist* produit précédemment.
 
 >[!CAUTION]
 >Vous devez entrer le domaine de préférence correct ( ) ; sinon, les préférences ne seront pas reconnues par `com.microsoft.wdav` Microsoft Defender pour le point de terminaison.

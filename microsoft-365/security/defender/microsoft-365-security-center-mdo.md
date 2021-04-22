@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour Office 365 dans le centre de sécurité Microsoft 365
 description: En savoir plus sur les modifications apportées du centre de sécurité et conformité Office 365 au centre de sécurité Microsoft 365.
-keywords: Sécurité Microsoft 365, prise en main du centre de sécurité Microsoft 365,OATP, MDATP, MDO, MDE, volet unique de la loupe, nouveau portail de sécurité, nouveau portail de sécurité Defender
+keywords: Sécurité Microsoft 365, mise en place du Centre de sécurité Microsoft 365, Microsoft Defender pour Office 365, Microsoft Defender pour le point de terminaison, MDO, MDE, volet unique, nouveau portail de sécurité, nouveau portail de sécurité Defender
 ms.date: 02/02/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 0c4a849bf3f91d4803adcb45c13b59d76afda388
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 980a384d3c4fd44a368f35d6f885ea0c8288376a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760187"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935412"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender pour Office 365 dans le centre de sécurité Microsoft 365
 

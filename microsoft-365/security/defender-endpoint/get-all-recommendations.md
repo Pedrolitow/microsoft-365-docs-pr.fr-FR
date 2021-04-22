@@ -1,7 +1,7 @@
 ---
-title: Liste de toutes les recommandations
-description: Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
-keywords: api, api de graphique, api pris en charge, obtenir, recommandations de sécurité, api tvm mdatp, gestion des menaces et vulnérabilités, api de gestion des menaces et des vulnérabilités
+title: Répertorier toutes les actions d’amélioration
+description: Récupère la liste de toutes les recommandations de sécurité affectant l'organisation.
+keywords: api, api de graphique, api pris en charge, obtenir, recommandations de sécurité, api tvm Microsoft Defender pour endpoint, gestion des menaces et vulnérabilités, api de gestion des menaces et des vulnérabilités
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5fb68572ee1b154be1db5eb5a092013a1c1a257e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0cb0a1f8a42b419db960e5097667c335bf7f7877
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166594"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935016"
 ---
-# <a name="list-all-recommendations"></a>Liste de toutes les recommandations
+# <a name="list-all-recommendations"></a>Répertorier toutes les actions d’amélioration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,12 +39,12 @@ ms.locfileid: "51166594"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
+Récupère la liste de toutes les recommandations de sécurité affectant l'organisation.
 
 ## <a name="permissions"></a>Autorisations
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d'informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d'informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
 :---|:---|:---
 Application |   SecurityRecommendation.Read.All |   « Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | SecurityRecommendation.Read |  « Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
@@ -58,7 +58,7 @@ GET /api/recommendations
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande

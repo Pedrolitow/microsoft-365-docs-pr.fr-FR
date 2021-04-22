@@ -1,7 +1,7 @@
 ---
 title: Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 description: Installez Microsoft Defender pour le point de terminaison sur macOS manuellement, à partir de la ligne de commande.
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamf, macos, magasin, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, installation, déployer, désinstallation, intune, jamf, macos,pératin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d8458f1bacc6577d83878a94c24e649371d90038
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688596"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935328"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement manuel de Microsoft Defender pour endpoint sur macOS
 
@@ -85,7 +85,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d'administrateur s
    > Si vous ne sélectionnez pas **Autoriser,** l'installation se poursuit au bout de 5 minutes. Microsoft Defender pour le point de terminaison sera chargé, mais certaines fonctionnalités, telles que la protection en temps réel, seront désactivées. Pour [plus d'informations](mac-support-kext.md) sur la résolution de ce problème, voir Résoudre les problèmes d'extension du noyau.
 
 > [!NOTE]
-> MacOS peut demander à redémarrer l'appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel ne sera pas disponible tant que l'appareil n'aura pas redémarrage.
+> MacOS peut demander à redémarrer l'appareil lors de la première installation de Microsoft Defender pour Endpoint. La protection en temps réel n'est pas disponible tant que l'appareil n'est pas redémarrage.
 
 ## <a name="application-installation-macos-11-and-newer-versions"></a>Installation d'applications (macOS 11 et versions plus récentes)
 
@@ -146,7 +146,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d'administrateur s
 ## <a name="how-to-allow-full-disk-access"></a>Comment autoriser l'accès disque total
 
 > [!CAUTION]
-> macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l'absence de ce consentement, Microsoft Defender pour le point de terminaison n'est pas en mesure de protéger entièrement votre appareil.
+> macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l'absence de ce consentement, Microsoft Defender pour le point de terminaison n'est pas en mesure de protéger entièrement votre appareil.
 
 1. Pour accorder le consentement, **ouvrez La** sécurité des préférences système  >  **&**  >  **confidentialité** confidentialité accès disque  >  **total**. Cliquez sur l'icône de verrouillage pour apporter des modifications (en bas de la boîte de dialogue). Sélectionnez Microsoft Defender pour le point de terminaison.
 
@@ -164,7 +164,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d'administrateur s
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. Le fichier doit avoir été mis en quarantaine par Defender pour Endpoint pour Mac. Utilisez la commande suivante pour lister toutes les menaces détectées :
+    1. Le fichier doit avoir été mis en quarantaine par Defender pour point de terminaison sur Mac. Utilisez la commande suivante pour lister toutes les menaces détectées :
 
         ```bash
         mdatp threat list
@@ -191,7 +191,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d'administrateur s
    > Si vous double-cliquez, vous recevez le message suivant :
    > 
    > > **« MDATP MacOS VERIFIE » ne peut pas être ouvert, car le développeur ne peut pas être vérifié.**<br/>
-   > > macOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
+   > > MacOS ne peut pas vérifier que cette application est exempt de programmes malveillants.<br/>
    > > **\[ Déplacer vers \] annuler la corbeille** **\[ \]** 
   
 7. Cliquez sur **Annuler**.
@@ -207,7 +207,7 @@ Pour effectuer ce processus, vous devez avoir des privilèges d'administrateur s
 
     Le système doit afficher le message suivant :
 
-    > Microsoft Defender ATP - fichier test MACOS EDR PDF<br/>
+    > Microsoft Defender pour le point de terminaison - fichier test MACOS EDR PDF<br/>
     > L'alerte correspondante sera disponible dans le portail MDATP.
 
 11. Cliquez sur **Ouvrir**. 
@@ -228,4 +228,4 @@ Pour [plus d'informations](mac-resources.md#logging-installation-issues) sur la 
 
 ## <a name="uninstallation"></a>Désinstallation
 
-Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d'informations sur la suppression de Microsoft Defender pour endpoint pour macOS des appareils clients.
+Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d'informations sur la suppression de Microsoft Defender pour Endpoint sur macOS des appareils clients.

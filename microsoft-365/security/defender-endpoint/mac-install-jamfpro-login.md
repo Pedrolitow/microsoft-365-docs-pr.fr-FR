@@ -1,7 +1,7 @@
 ---
 title: Connectez-vous à Jamf Pro
 description: Connectez-vous à Jamf Pro
-keywords: microsoft, defender, atp, mac, installation, déployer, désinstallation, intune, jamfpro, macos,pérable, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, installation, déployer, désinstallation, intune, jamfpro, macos, magasin, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a868c8608f3db556fa7ff4c98f769d82980ac86b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 19988a2810a5cca05b102ad50124e3b36d7b6cad
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187676"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935580"
 ---
 # <a name="log-in-to-jamf-pro"></a>Connectez-vous à Jamf Pro
 
@@ -33,7 +33,7 @@ ms.locfileid: "51187676"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 1. Entrez vos informations d’identification.
 
@@ -49,5 +49,5 @@ ms.locfileid: "51187676"
 
 
 ## <a name="next-step"></a>Étape suivante
-[Configurer les groupes d’appareils dans Jamf Pro](mac-jamfpro-device-groups.md)
+[Configurer les groupes d'appareils dans Jamf Pro](mac-jamfpro-device-groups.md)
 

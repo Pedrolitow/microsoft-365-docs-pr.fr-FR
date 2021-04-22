@@ -1,7 +1,7 @@
 ---
-title: 'Microsoft Defender pour point de terminaison pour Mac : extensions système (prévisualisation)'
-description: Cet article contient des instructions pour essayer la fonctionnalité d'extensions système de Microsoft Defender pour Endpoint pour Mac. Cette fonctionnalité est actuellement en prévisualisation publique.
-keywords: microsoft, defender, atp, mac, noyau, système, extensions, contrôle
+title: 'Microsoft Defender pour point de terminaison sur Mac : extensions système (prévisualisation)'
+description: Cet article contient des instructions pour essayer la fonctionnalité d'extensions système de Microsoft Defender pour Endpoint sur Mac. Cette fonctionnalité est actuellement en prévisualisation publique.
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, noyau, système, extensions, contrôle
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cc148bcc0b2623eaaa8d31ef50708174264fa3b2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860326"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934944"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>Microsoft Defender pour point de terminaison sur macOS : version d'évaluation publique des extensions système)
 
@@ -34,7 +34,7 @@ ms.locfileid: "51860326"
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-En adéquation avec l'évolution de macOS, nous préparons une mise à jour defender pour point de terminaison pour Mac qui tire parti des extensions système au lieu des extensions de noyau. Cette mise à jour s'applique uniquement à macOS Genrer (10.15.4) et aux versions ultérieures de macOS.
+En adéquation avec l'évolution de macOS, nous préparons une mise à jour defender pour point de terminaison sur Mac qui tire parti des extensions système au lieu des extensions de noyau. Cette mise à jour s'applique uniquement à macOS Genrer (10.15.4) et aux versions ultérieures de macOS.
 
 Cette fonctionnalité est actuellement en prévisualisation publique. Cet article explique comment activer cette fonctionnalité sur votre appareil. Vous pouvez tester cette fonctionnalité localement sur votre propre appareil ou la configurer à distance via un outil de gestion.
 
@@ -42,8 +42,8 @@ Ces étapes supposent que Defender for Endpoint est déjà en cours d'exécution
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Nous avons reçu des rapports sur l'extension réseau qui interfère avec l'extension Kerberos sso d'Apple.
-- La version actuelle du produit installe toujours une extension de noyau. L'extension de noyau est utilisée uniquement comme mécanisme de retour et sera supprimée avant que cette fonctionnalité n'atteigne la prévisualisation publique.
+- Nous avons reçu des rapports sur l'extension réseau qui interfère avec l'extension Kerberos d' cesso Apple.
+- La version actuelle du produit installe toujours une extension de noyau. L'extension de noyau est uniquement utilisée comme mécanisme de retour et sera supprimée avant que cette fonctionnalité n'atteigne la prévisualisation publique.
 - Nous travaillons toujours sur une version de produit qui se déploie et fonctionne correctement sur macOS 11 Big Sur.
 
 ## <a name="deployment-prerequisites"></a>Conditions préalables au déploiement
@@ -62,7 +62,7 @@ Ces étapes supposent que Defender for Endpoint est déjà en cours d'exécution
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  Par ailleurs, si vous êtes dans un environnement géré (JAMF ou Intune), vous pouvez configurer le canal de mise à jour à distance. Pour plus d'informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint pour Mac : définissez le nom du canal.](mac-updates.md#set-the-channel-name)
+  Par ailleurs, si vous êtes dans un environnement géré (JAMF ou Intune), vous pouvez configurer le canal de mise à jour à distance. Pour plus d'informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint sur Mac : définissez le nom du canal.](mac-updates.md#set-the-channel-name)
 
 ## <a name="deployment-steps"></a>Étapes de déploiement
 
@@ -74,15 +74,15 @@ Suivez les étapes de déploiement qui correspondent à votre environnement et �
 
 1. Une fois toutes les conditions préalables au déploiement remplies, redémarrez votre appareil pour lancer le processus d'approbation et d'activation de l'extension système.
 
-   Vous verrez une série d'invites système pour approuver les extensions système Defender for Endpoint. Vous devez approuver toutes **les** invites de la série, car macOS nécessite une approbation explicite pour chaque extension installée par Defender pour Endpoint pour Mac sur l'appareil.
+   Vous verrez une série d'invites système pour approuver les extensions système Defender for Endpoint. Vous devez approuver toutes **les** invites de la série, car macOS nécessite une approbation explicite pour chaque extension installée par Defender for Endpoint sur Mac sur l'appareil.
    
    Pour chaque approbation, sélectionnez Ouvrir les préférences **de sécurité,** puis **autorisez** l'extension système à s'exécuter.
 
    > [!IMPORTANT]
-   > Vous devez fermer et rouvrir la **fenêtre** Sécurité des préférences système  >  **& confidentialité** entre les approbations suivantes. Dans le cas contraire, macOS n'affichera pas l'approbation suivante.
+   > Vous devez fermer et rouvrir la **fenêtre** Sécurité des préférences système  >  **& confidentialité** entre les approbations suivantes. Sinon, macOS n'affichera pas l'approbation suivante.
 
    > [!IMPORTANT]
-   > Il y a un délai d'une minute avant le retour du produit à l'extension du noyau. Cela garantit que l'appareil est protégé.
+   > Il y a un délai d'une minute avant que le produit ne revenir à l'extension du noyau. Cela garantit que l'appareil est protégé.
    >
    > Si plus d'une minute s'écoule, redémarrez le daemon en redémarré l'appareil ou en utilisant pour déclencher à nouveau le flux `sudo killall -9 wdavdaemon` d'approbation.
 
@@ -90,15 +90,15 @@ Suivez les étapes de déploiement qui correspondent à votre environnement et �
 
    ![Fenêtre d'approbation de l'extension système](images/mac-system-extension-pref.png)
 
-1. Une fois les extensions système approuvées, macOS demande une approbation pour autoriser le filtrage du trafic réseau. Cliquez sur **Autoriser.**
+1. Une fois les extensions système approuvées, macOS demande une approbation pour autoriser le filtrage du trafic réseau. Cliquez sur **Autoriser**.
 
-   ![Fenêtre fenêtre fenêtre d'approbation de l'extension réseau](images/mac-system-extension-filter.png)
+   ![Fenêtre fenêtre d'approbation de l'extension réseau](images/mac-system-extension-filter.png)
 
 #### <a name="grant-full-disk-access-to-the-endpoint-security-system-extension"></a>Accorder un accès disque total à l'extension du système de sécurité des points de terminaison
 
 Ouvrez **l'onglet** Sécurité des préférences système & confidentialité et accordez un accès disque total à l'extension de sécurité du point de  >    >   **terminaison Microsoft Defender.** 
 
-![Accès disque total pour l'extension du système de sécurité des points de terminaison](images/mac-system-extension-fda.png)
+![Accès disque complet pour l'extension du système de sécurité des points de terminaison](images/mac-system-extension-fda.png)
 
 #### <a name="reboot-your-device"></a>Redémarrer votre appareil
 
@@ -116,7 +116,7 @@ La sortie `endpoint_security_extension` terminal indique que le produit utilise 
 
 ### <a name="managed-deployment"></a>Déploiement géré
 
-Reportez-vous aux nouveaux profils de [configuration pour macOS Genre et](mac-sysext-policies.md#jamf) les versions plus récentes de macOS : JAMF pour les nouveaux profils de configuration que vous devez déployer pour cette nouvelle fonctionnalité.
+Reportez-vous aux nouveaux profils de [configuration pour macOS Fonctionnalité et](mac-sysext-policies.md#jamf) versions plus récentes de macOS : JAMF pour les nouveaux profils de configuration que vous devez déployer pour cette nouvelle fonctionnalité.
 
 En plus de ces profils, veillez à configurer les appareils cibles pour qu'ils soient dans le canal insider de mise à jour rapide, comme décrit dans les conditions [préalables au déploiement.](#deployment-prerequisites)
 

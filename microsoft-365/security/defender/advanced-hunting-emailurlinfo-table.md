@@ -1,7 +1,7 @@
 ---
 title: Table EmailUrlInfo dans le schéma de repérage avancé
 description: En savoir plus sur les URL ou les liens dans la table EmailUrlInfo du schéma de repérage avancé
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailUrlInfo, network message id, url, link
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailUrlInfo, network message id, url, link
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 323ec9292115cf810bca7bf5de03b09cb35bceb1
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a3baea57a2237ca6eb3f85cd5bd4a204d45d4bc0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498859"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935460"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -42,9 +42,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `NetworkMessageId` | string | Identificateur unique de l’e-mail, généré par Microsoft 365 |
+| `NetworkMessageId` | string | Identificateur unique de l'e-mail, généré par Microsoft 365 |
 | `Url` | string | URL complète dans l’objet, le corps ou la pièce jointe de l’e-mail |
-| `UrlDomain` | string | Nom de domaine ou nom d’hôte de l’URL |
+| `UrlDomain` | string | Nom de domaine ou nom d'hôte de l'URL |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
 
 ## <a name="related-topics"></a>Voir aussi

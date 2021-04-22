@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c4cdc80170b49a111f476d2d17222c41e2b5c55f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893400"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935364"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corriger les capteurs défectueux dans Microsoft Defender pour le point de terminaison
 
@@ -66,7 +66,7 @@ Cet état indique qu'il existe une communication limitée entre l'appareil et le
 Les suggestions d'actions suivantes peuvent aider à résoudre les problèmes liés à un appareil mal configuré avec des communications mal configurées :
 
 - [Vérifier que l'appareil dispose d'une connexion Internet](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Le capteur Window Defender ATP nécessite Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender for Endpoint.
+  Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender pour point de terminaison.
 
 - [Vérifier la connectivité du client aux URL du service Microsoft Defender pour les points de terminaison](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   Vérifiez que la configuration du proxy s'est correctement terminée, que WinHTTP peut découvrir et communiquer via le serveur proxy dans votre environnement, et que le serveur proxy autorise le trafic vers les URL du service Microsoft Defender for Endpoint.
@@ -78,7 +78,7 @@ Un appareil mal configuré avec l'état « Aucune donnée de capteur » a une co
 Suivez ces actions pour corriger les problèmes connus liés à un appareil mal configuré avec l'état « Aucune donnée de capteur » :
 
 - [Vérifier que l'appareil dispose d'une connexion Internet](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Le capteur Window Defender ATP nécessite Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender for Endpoint.
+  Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender pour point de terminaison.
 
 - [Vérifier la connectivité du client aux URL du service Microsoft Defender pour les points de terminaison](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   Vérifiez que la configuration du proxy s'est correctement terminée, que WinHTTP peut découvrir et communiquer via le serveur proxy dans votre environnement, et que le serveur proxy autorise le trafic vers les URL du service Microsoft Defender for Endpoint.
@@ -91,5 +91,5 @@ Si vos appareils exécutent un client de logiciel anti-programme malveillant tie
 
 Si vous avez pris des mesures correctives et que l'état de l'appareil est toujours mal configuré, [ouvrez un ticket de support.](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Articles associés
 - [Vérifier l'état d'état du capteur dans Microsoft Defender pour le point de terminaison](check-sensor-status.md)

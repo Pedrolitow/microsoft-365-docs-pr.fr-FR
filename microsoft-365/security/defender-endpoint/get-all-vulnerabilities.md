@@ -1,7 +1,7 @@
 ---
 title: Obtenir toutes les vulnérabilités
-description: Récupère une liste de toutes les vulnérabilités affectant l’organisation
-keywords: api, api de graphique, api pris en charge, obtenir, informations de vulnérabilité, api tvm mdatp
+description: Récupère une liste de toutes les vulnérabilités affectant l'organisation
+keywords: api, api de graphique, api pris en charge, obtenir, informations de vulnérabilité, api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c97b70b682351e5ad9d92435068b97622032f769
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bfce003f586c5bfa32d65c834bb244ac13f6cf31
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166587"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935088"
 ---
-# <a name="list-vulnerabilities"></a>Liste des vulnérabilités
+# <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,12 +38,12 @@ ms.locfileid: "51166587"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère une liste de toutes les vulnérabilités affectant l’organisation.
+Récupère une liste de toutes les vulnérabilités affectant l'organisation.
 
 ## <a name="permissions"></a>Autorisations
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
+L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d'informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d'informations.
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
 :---|:---|:---
 Application |   Vulnerability.Read.All |    « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | Vulnerability.Read |   « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
@@ -57,7 +57,7 @@ GET /api/vulnerabilities
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande
@@ -109,4 +109,4 @@ Voici un exemple de la réponse.
 
 ## <a name="see-also"></a>Voir aussi
 - [Gestion des menaces & vulnérabilité basée sur les risques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités de votre organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Vulnérabilités dans votre organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

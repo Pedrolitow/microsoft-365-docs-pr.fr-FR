@@ -1,7 +1,7 @@
 ---
 title: Contrôle d'appareil pour macOS
 description: Découvrez comment configurer Microsoft Defender pour endpoint sur Mac afin de réduire les menaces liées au stockage amovible tel que les périphériques USB.
-keywords: microsoft, defender, atp, mac, appareil, contrôle, usb, amovible, média
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, mac, appareil, contrôle, usb, amovible, média
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 39f8367c34e98c5e9dd11e9716f08e6c9e7fd9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688680"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935124"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d'appareil pour macOS
 
@@ -60,7 +60,7 @@ Le contrôle d'appareil pour macOS présente les conditions préalables suivante
 >    mdatp health --field release_ring 
 >    ```
 >
->    Si la commande ci-dessus n'imprime pas l'une ou l'autre des commandes `Beta` `InsiderFast` ci-dessus, exécutez la commande suivante à partir du Terminal. La mise à jour du canal prend effet lors du prochain démarrage du produit (lors de l'installation de la prochaine mise à jour du produit ou du redémarrage de l'appareil). 
+>    Si la commande ci-dessus n'imprime pas l'une ou l'autre des commandes, exécutez `Beta` la commande suivante à partir du `InsiderFast` Terminal. La mise à jour du canal prend effet lors du prochain démarrage du produit (lors de l'installation de la prochaine mise à jour du produit ou du redémarrage de l'appareil). 
 > 
 >    ```bash
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
@@ -100,7 +100,7 @@ Lorsque les utilisateurs finaux cliquent sur cette notification, une page web s'
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
 | **Key** | navigationTarget |
-| **Type de données** | Chaîne |
+| **Type de données** | String |
 | **Commentaires** | S'il n'est pas défini, le produit utilise une URL par défaut pointant vers une page générique expliquant l'action entreprise par le produit. |
 
 ### <a name="allow-or-block-removable-devices"></a>Autoriser ou bloquer les appareils amovibles
@@ -198,7 +198,7 @@ Pour chaque fournisseur, vous pouvez spécifier le niveau d'autorisation souhait
 | **Type de données** | Tableau de chaînes |
 | **Valeurs possibles** | Identique au [niveau d'autorisation Par défaut](#default-permission-level) |
 
-En outre, vous pouvez éventuellement spécifier l'ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus granulaires sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `products` identifiée par l'ID de produit. 
+En outre, vous pouvez éventuellement spécifier l'ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus précises sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par `products` l'ID de produit. 
 
 |Section|Valeur|
 |:---|:---|
@@ -213,11 +213,11 @@ Pour chaque produit, vous pouvez spécifier le niveau d'autorisation souhaité p
 | **Domaine** | `com.microsoft.wdav` |
 | **Key** | autorisation |
 | **Type de données** | Tableau de chaînes |
-| **Valeurs possibles** | Identique au [niveau d'autorisation par défaut](#default-permission-level) |
+| **Valeurs possibles** | Identique au [niveau d'autorisation Par défaut](#default-permission-level) |
 
 En outre, vous pouvez spécifier un ensemble facultatif de numéros de série pour lesquels des autorisations plus granulaires sont définies.
 
-Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `serialNumbers` identifiée par le numéro de série.
+Le `serialNumbers` dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par le numéro de série.
 
 |Section|Valeur|
 |:---|:---|
@@ -232,7 +232,7 @@ Pour chaque numéro de série, vous pouvez spécifier le niveau d'autorisation s
 | **Domaine** | `com.microsoft.wdav` |
 | **Key** | autorisation |
 | **Type de données** | Tableau de chaînes |
-| **Valeurs possibles** | Identique au [niveau d'autorisation par défaut](#default-permission-level) |
+| **Valeurs possibles** | Identique au [niveau d'autorisation Par défaut](#default-permission-level) |
 
 #### <a name="example-device-control-policy"></a>Exemple de stratégie de contrôle d'appareil
 
@@ -322,7 +322,7 @@ Pour rechercher l'ID du fournisseur, l'ID de produit et le numéro de série d'u
 
     ![Détails d'un périphérique USB](images/mac-device-control-lookup-4.png)
 
-1. L'ID de fournisseur, l'ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l'ID fournisseur et l'ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l'image ci-dessous, l'ID du fournisseur `1000` est et l'ID de produit est `090c` .
+1. L'ID du fournisseur, l'ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l'ID fournisseur et l'ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l'image ci-dessous, l'ID du fournisseur `1000` est et l'ID de produit est `090c` .
 
 #### <a name="discover-usb-devices-in-your-organization"></a>Découvrir les périphériques USB de votre organisation
 
@@ -336,7 +336,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Déploiement de stratégie de contrôle d'appareil
 
-La stratégie de contrôle d'appareil doit être incluse en plus des autres paramètres du produit, comme décrit dans Définir les préférences pour [Microsoft Defender pour endpoint sur macOS.](mac-preferences.md)
+La stratégie de contrôle d'appareil doit être incluse en plus des autres paramètres du produit, comme décrit dans Définir les préférences de [Microsoft Defender pour endpoint sur macOS.](mac-preferences.md)
 
 Ce profil peut être déployé à l'aide des instructions répertoriées dans le déploiement de [profil de configuration.](mac-preferences.md#configuration-profile-deployment)
 
@@ -348,7 +348,7 @@ Après avoir lancé le profil de configuration via Intune ou JAMF, vous pouvez v
 mdatp device-control removable-media policy list
 ```
 
-Cette commande imprime en sortie standard la stratégie de contrôle d'appareil que le produit utilise. Dans le cas où cela imprime, assurez-vous (a) que le profil de configuration a bien été poussée vers votre appareil à partir de la console de gestion et (b) qu'il s'agit d'une stratégie de contrôle d'appareil valide, comme décrit dans ce `Policy is empty` document.
+Cette commande imprime en sortie standard la stratégie de contrôle d'appareil que le produit utilise. Dans le cas où cela imprime, assurez-vous (a) que le profil de configuration a bien été poussée sur votre appareil à partir de la console de gestion et (b) qu'il s'agit d'une stratégie de contrôle d'appareil valide, comme décrit dans ce `Policy is empty` document.
 
 Sur un appareil sur lequel la stratégie a été correctement livrée et où un ou plusieurs appareils sont branchés, vous pouvez exécuter la commande suivante pour lister tous les appareils et les autorisations effectives qui leur sont appliquées.
 
