@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7db7607d3ed9d6f1b215fb842d5b6dd2415a770a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: abc6b561c2fca8106397b1656432628c983e2ece
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934896"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952691"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Pratiques recommandées pour la requête de repérage avancé
 
@@ -44,7 +44,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
 
 ## <a name="general-optimization-tips"></a>Conseils généraux d'optimisation
 
-- **Dimensionnez les nouvelles requêtes**— Si vous pensez qu'une requête retournera un jeu de résultats important, évaluez-la d'abord à l'aide de [l'opérateur de nombre.](/azure/data-explorer/kusto/query/countoperator) Utilisez [limit ou](/azure/data-explorer/kusto/query/limitoperator) son synonyme pour éviter les jeux de résultats `take` importants.
+- **Dimensioniser les nouvelles requêtes**— Si vous pensez qu'une requête retournera un jeu de résultats important, évaluez-la d'abord à l'aide de [l'opérateur de nombre.](/azure/data-explorer/kusto/query/countoperator) Utilisez [limit](/azure/data-explorer/kusto/query/limitoperator) ou son synonyme pour éviter les `take` jeux de résultats importants.
 - Appliquer des filtres tôt — Appliquer des filtres de temps et d'autres filtres pour réduire le jeu de données, en particulier avant d'utiliser des fonctions de transformation et d'analyse, telles que sous-string() , [replace()](/azure/data-explorer/kusto/query/replacefunction), [](/azure/data-explorer/kusto/query/substringfunction) [trim()](/azure/data-explorer/kusto/query/trimfunction), [toupper()](/azure/data-explorer/kusto/query/toupperfunction)ou [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Dans l'exemple ci-dessous, la fonction d'recherche [extractjson()](/azure/data-explorer/kusto/query/extractjsonfunction) est utilisée après que les opérateurs de filtrage ont réduit le nombre d'enregistrements.
 
     ```kusto
@@ -150,7 +150,7 @@ Les clients qui exécutent plusieurs requêtes régulièrement doivent suivre la
 ## <a name="optimize-the-summarize-operator"></a>Optimiser `summarize` l'opérateur
 [L'opérateur de synthèse](/azure/data-explorer/kusto/query/summarizeoperator) agrège le contenu d'un tableau. Appliquez ces conseils pour optimiser les requêtes qui utilisent cet opérateur.
 
-- **Rechercher des valeurs distinctes**: en général, utilisez cette recherche pour `summarize` rechercher des valeurs distinctes qui peuvent être répétitives. Il peut être inutile de l'utiliser pour agréger des colonnes qui n'ont pas de valeurs répétitives.
+- **Rechercher des valeurs distinctes**: en général, utilisez cette recherche pour `summarize` trouver des valeurs distinctes qui peuvent être répétitives. Il peut être inutile de l'utiliser pour agréger des colonnes qui n'ont pas de valeurs répétitives.
 
     Bien qu'un seul e-mail puisse faire  partie de plusieurs événements, l'exemple ci-dessous n'est pas une utilisation efficace, car un ID de message réseau pour un message électronique individuel est toujours fourni avec une adresse d'expéditeur `summarize` unique.
  
@@ -262,7 +262,10 @@ Il existe différentes fonctions que vous pouvez utiliser pour gérer efficaceme
 | Adresses IPv4 | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | Convertissez une adresse IPv4 en un long integer. Pour comparer les adresses IPv4 sans les convertir, [utilisez ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | Adresses IPv6 | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Convertissez une adresse IPv4 ou IPv6 en notation IPv6 canonique. Pour comparer les adresses IPv6, [utilisez ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
-Pour en savoir plus sur toutes les fonctions d'doncsing prise en charge, lisez la suite sur les fonctions [de chaîne Kusto.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
+Pour en savoir plus sur toutes les fonctions d'parsage prise en charge, lisez la suite sur les fonctions [de chaîne Kusto.](/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
+
+>[!NOTE]
+>Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour qu'il recherche les menaces à l'aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Voir aussi
 - [Documentation sur le langage de requête Kusto](/azure/data-explorer/kusto/query/)

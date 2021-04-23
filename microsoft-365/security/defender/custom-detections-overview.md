@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bf635ed03cb0d99d54fc94b622bf244447b32a80
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 748b3534ef1f6ca5736667fc3910bb9fa96d23ff
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935700"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952535"
 ---
 # <a name="custom-detections-overview"></a>Vue d’ensemble des détections personnalisées
 
@@ -32,6 +32,7 @@ ms.locfileid: "51935700"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 Grâce aux détections personnalisées, vous pouvez surveiller et répondre de manière proactive à divers événements et états système, y compris les activités suspectées de violation et les points de terminaison mal configurés. Cela est rendu possible par des règles de détection personnalisables qui déclenchent automatiquement des alertes, ainsi que des actions de réponse.
 
@@ -41,7 +42,7 @@ Les détections personnalisées fournissent :
 - Alertes pour les détections basées sur des règles conçues à partir de requêtes de repérage avancé
 - Actions de réponse automatique
 
-## <a name="see-also"></a>Articles associés
+## <a name="see-also"></a>Voir aussi
 - [Créer et gérer des règles de détection personnalisées](custom-detection-rules.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Migrer des requêtes de recherche avancée à partir de Microsoft Defender pour le point de terminaison](advanced-hunting-migrate-from-mde.md)

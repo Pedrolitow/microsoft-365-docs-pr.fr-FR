@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939729"
+ms.locfileid: "51957604"
 ---
 # <a name="analyze-users-in-microsoft-365-security-center"></a>Analyser les utilisateurs dans le Centre de sécurité Microsoft 365
 
@@ -41,6 +41,13 @@ Une partie de votre analyse des incidents peut inclure des comptes d'utilisateur
 Pour obtenir un résumé rapide d'un compte d'utilisateur pour l'incident, cochez la coche en regard du nom du compte d'utilisateur. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exemple de volet récapitulatif du compte d'utilisateur pour un incident dans le Centre de sécurité Microsoft 365":::
+
+> [!NOTE]
+> La page Utilisateur affiche l'organisation Azure Active Directory (AD), ainsi que les groupes, pour vous aider à comprendre les groupes et les autorisations associés à un utilisateur.
+
+Dans cette page volante, vous pouvez passer en revue les informations sur les menaces des utilisateurs, notamment les incidents actuels, les alertes actives et le niveau de risque, ainsi que l'exposition des utilisateurs, les comptes, les appareils, etc.
+
+En outre, vous pouvez agir directement dans le Centre de sécurité Microsoft 365 pour traiter un utilisateur compromis, en confirmant que l'utilisateur est compromis ou en exigeant qu'il se connecte à nouveau.
 
 À partir de là, vous pouvez sélectionner La page d'accès à **l'utilisateur** pour voir les détails d'un compte d'utilisateur. Voici un exemple.
 

@@ -2,7 +2,7 @@
 title: Test le plus élevé parmi les tests du secteur d’activité – Microsoft 365 Defender
 ms.reviewer: ''
 description: Consultez les analyses et les scores les plus récents de Microsoft 365 Defender. La solution réalise constamment les meilleurs scores en tests indépendants (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Affichez les analyses et les scores les plus récents.
-keywords: Antivirus Microsoft Defender, Antivirus Microsoft Defender, évaluations de l’antivirus, test de l’antivirus, test antivirus, scores antivirus les plus récents, test de sécurité du produit, tests de sécurité du secteur d’activité, tests antivirus du secteur d’activité, meilleur antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, plateforme de protection de point de terminaison, EPP, détection et réponse du point de terminaison, EDR, Windows 10, Antivirus Microsoft Defender, WDAV, MDATP, Protection Microsoft contre les menaces, sécurité, logiciel malveillant, av, antivirus, scores, score, protection de nouvelle génération, classement, succès
+keywords: Antivirus Microsoft Defender, Antivirus Microsoft Defender, évaluations de l’antivirus, test de l’antivirus, test antivirus, scores antivirus les plus récents, test de sécurité du produit, tests de sécurité du secteur d’activité, tests antivirus du secteur d’activité, meilleur antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, plateforme de protection de point de terminaison, EPP, détection et réponse du point de terminaison, EDR, Windows 10, Antivirus Microsoft Defender, WDAV, Microsoft Defender pour point de terminaison, Microsoft 365 Defender, sécurité, logiciel malveillant, av, antivirus, scores, score, protection de nouvelle génération, classement, succès
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 1f649af2ca6089d1366cc6e080a430a6a00fc300
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569859"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934392"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Test le plus élevé parmi les tests du secteur d’activité
 

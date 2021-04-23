@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17aca5fb388aef26504902ee63b22410420c8827
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932952"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952487"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer des serveurs Windows au service Microsoft Defender for Endpoint
 
@@ -194,7 +194,7 @@ Defender pour point de terminaison peut s'intégrer à Azure Defender pour fourn
 
 Les fonctionnalités suivantes sont incluses dans cette intégration :
 
-- Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés à Azure Defender. Pour plus d'informations sur l'intégration d'Azure Defender, voir [Intégration à Azure Defender Standard pour une sécurité renforcée.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
+- Intégration automatisée : le capteur Defender for Endpoint est automatiquement activé sur les serveurs Windows intégrés à Azure Defender. Pour plus d'informations sur l'intégration d'Azure Defender, voir Utiliser la [licence Microsoft Defender for Endpoint intégrée.](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
 
     > [!NOTE]
     > L'intégration entre Azure Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
@@ -338,12 +338,13 @@ Une fois cette stratégie effectuée, vous devez créer une stratégie de script
 
 :::image type="content" source="images/startupprops.png" alt-text="démarrer les propriétés":::
 
-Le nom du fichier à exécuter ici est c:\windows\MMA\DeployMMA.cmd Une fois que le serveur est redémarré dans le cadre du processus de démarrage, il installe la mise à jour de la base de données de télémétrie de diagnostic et d'expérience client, puis installe MMAAgent, lors de la définition de l'ID et de la clé de l'espace de travail, et le serveur est intégré.
+Le nom du fichier à exécuter ici est c:\windows\MMA\DeployMMA.cmd.
+Une fois que le serveur est redémarré dans le cadre du processus de démarrage, il installe la mise à jour pour la base de données de télémétrie de diagnostic et d'expérience client, puis installe l'agent MMA, lors de la définition de l'ID et de la clé de l'espace de travail, et le serveur est intégré.
 
 Vous pouvez également utiliser une **tâche immédiate** pour exécuter le deployMMA.cmd si vous ne souhaitez pas redémarrer tous les serveurs.
 Cette étape peut être effectuée en deux phases. Tout **d'abord,** créez les fichiers et le dossier dans GPO : donnez au système le temps de s'assurer que l'GPO a été appliqué et que tous les serveurs disposent des fichiers d'installation. Ensuite, ajoutez la tâche immédiate. Cela permettra d'obtenir le même résultat sans nécessiter de redémarrage.
 
-Étant donné que le script dispose d'une méthode de sortie et ne se ré-exécute pas si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. À l'exemple d'une stratégie de conformité Configuration Manager, elle vérifie quotidiennement la présence du MMA.
+Étant donné que le script dispose d'une méthode de sortie et ne se ré-exécute pas si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu'il vérifie quotidiennement pour s'assurer que le MMA est présent.
 
 :::image type="content" source="images/schtask.png" alt-text="planifier une tâche":::
 

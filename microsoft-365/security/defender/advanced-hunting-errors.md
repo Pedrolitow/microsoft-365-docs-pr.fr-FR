@@ -20,16 +20,21 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 32d50103c6476a89f24568edeea75a206e37e227
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935448"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952679"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gérer les erreurs de recherche avancée
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+**S’applique à :**
+- Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 
 Le recherche avancée affiche des erreurs pour signaler les erreurs de syntaxe et chaque fois que les requêtes touchent des quotas et des [paramètres d'utilisation prédéfinies.](advanced-hunting-limits.md) Reportez-vous au tableau ci-dessous pour obtenir des conseils sur la façon de résoudre ou d'éviter les erreurs.
@@ -43,6 +48,8 @@ Le recherche avancée affiche des erreurs pour signaler les erreurs de syntaxe e
 | Limite de taille de résultat dépassée  | La taille agrégée du jeu de résultats pour la requête a dépassé la taille maximale. Cette erreur peut se produire si le jeu de résultats est si grand que la troncation à 10 000 enregistrement limite ne peut pas la réduire à une taille acceptable. Les résultats qui ont plusieurs colonnes avec un contenu important sont plus susceptibles d'être touchés par cette erreur. | [Optimiser la requête](advanced-hunting-best-practices.md) | `Result size limit exceeded. Use "summarize" to aggregate results, "project" to drop uninteresting columns, or "take" to truncate results.` |
 | Consommation excessive de ressources | La requête a consommé des quantités excessives de ressources et a été arrêtée de se terminer. Dans certains cas, le hunting avancé identifie l'opérateur spécifique qui n'a pas été optimisé. | [Optimiser la requête](advanced-hunting-best-practices.md) | -`Query stopped due to excessive resource consumption.`<br>-`Query stopped. Adjust use of the <operator name> operator to avoid excessive resource consumption.` |
 | Erreurs inconnues | La requête a échoué pour une raison inconnue. | Recommencez l'exécution de la requête. Contactez Microsoft via le portail si les requêtes continuent de renvoyer des erreurs inconnues. | `An unexpected error occurred during query execution. Please try again in a few minutes.`
+
+
 
 ## <a name="related-topics"></a>Voir aussi
 - [Meilleures pratiques de recherche avancée](advanced-hunting-best-practices.md)

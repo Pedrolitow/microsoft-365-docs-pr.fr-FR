@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40cec28bf88445df13f78e672c4289d440b2b848
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f4b1399b77583e95b109575a9577d8b1af89e6ad
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935856"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952667"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Étendre la couverture de recherche avancée avec les bons paramètres
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935856"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 [La recherche](advanced-hunting-overview.md) avancée repose sur des données provenant de différentes sources, notamment vos appareils, vos espaces de travail Office 365, Azure AD et Microsoft Defender pour l'identité. Pour obtenir les données les plus complètes possibles, assurez-vous que vous avez les paramètres corrects dans les sources de données correspondantes.
 
@@ -52,6 +53,9 @@ Si vous exécutez Active Directory en local, vous devez installer le capteur Mic
 | Data | Description | Table schema | Procédure de configuration |
 | --- | --- | --- | --- |
 | Contrôleur de domaine | Données provenant d'Active Directory local envoyées à Microsoft Defender pour l'identité, enrichissant les informations relatives à l'identité, telles que les détails du compte, l'activité d'accès et les requêtes Active Directory | Plusieurs tables, y [compris IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)et [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installer le capteur Microsoft Defender pour l'identité](/azure-advanced-threat-protection/install-atp-step4)<br>- [Activer les événements Windows pertinents](/azure-advanced-threat-protection/configure-event-collection) |
+
+>[!NOTE]
+>Certains tableaux de cet article peuvent ne pas être disponibles dans Microsoft Defender pour Endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour qu'il recherche les menaces à l'aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)

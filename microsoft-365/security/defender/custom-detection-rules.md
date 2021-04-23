@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935712"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952559"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Créer et gérer des règles de détection personnalisées
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935712"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 Les règles de détection personnalisées sont des règles que vous pouvez concevoir et modifier à l'aide de requêtes [de repérage](advanced-hunting-overview.md) avancé. Ces règles vous permet de surveiller de manière proactive différents événements et états système, y compris les activités suspectées de violation et les points de terminaison mal configurés. Vous pouvez les configurer pour qu'ils s'exécutent à intervalles réguliers, générant des alertes et prenant des mesures de réponse chaque fois qu'il existe des correspondances.
 
@@ -220,7 +221,10 @@ Dans l'écran détails de la règle (**Détections** personnalisées de repérag
 >[!TIP]
 >Pour afficher rapidement des informations et agir sur un élément d'un tableau, utilisez la colonne de sélection [&#10003;] à gauche du tableau.
 
-## <a name="see-also"></a>Articles associés
+>[!NOTE]
+>Certaines colonnes de cet article peuvent ne pas être disponibles dans Microsoft Defender pour endpoint. [Activer Microsoft 365 Defender](m365d-enable.md) pour qu'il recherche les menaces à l'aide de sources de données plus nombreuses. Vous pouvez déplacer vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison vers Microsoft 365 Defender en suivant les étapes de la procédure de migration des requêtes de recherche avancée à partir de Microsoft Defender pour le point de [terminaison.](advanced-hunting-migrate-from-mde.md)
+
+## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md)
 - [Vue d’ensemble du repérage avancé](advanced-hunting-overview.md)
 - [Découvrir le langage de requête de repérage avancé](advanced-hunting-query-language.md)
