@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911641"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939485"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -55,6 +55,22 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 2. Sous l’onglet **Factures**, sélectionnez une plage de dates dans la liste déroulante, puis sélectionnez l’ordre à afficher.
 3. Dans la page résumé, vous pouvez voir les éléments, la quantité, le prix, la remise et le total de tous les articles de la facture.
 4. Pour imprimer ou enregistrer une copie PDF de la facture, sélectionnez **Télécharger un fichier PDF**.
+
+::: moniker region="o365-21vianet"
+
+## <a name="request-a-fapiao"></a>Demander un Fapiao
+
+Vous pouvez soumettre votre demande Fapiao à notre [système de gestion Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) environ trois (3) jours après votre paiement.
+
+1. Dans le <a href=”https://go.microsoft.com/fwlink/p/?linkid=850627” target=”_blank”>Centre d'administration</a>, accédez à la page **Facturation** > **Factures et paiements**.
+
+2. Recherchez la facture souhaitée, puis sélectionnez **Obtenir des Fapiaos**.
+
+> [!NOTE]
+
+> Un compte enregistré est nécessaire pour accéder au [système de gestion Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465). Si vous n’avez pas encore configuré de compte, consultez [Demander un fapiao pour Office 365 géré par 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
+
+::: moniker-end
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Recevoir une copie de votre relevé de facturation par courrier électronique
 
