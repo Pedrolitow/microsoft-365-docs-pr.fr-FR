@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edbabf83c7bf1ac8dbe1ca9451ad191b45a862ac
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932726"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994996"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -38,10 +38,14 @@ ms.locfileid: "51932726"
 > [!IMPORTANT]
 > Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur [cette page.](mac-sysext-policies.md)
 
+## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
+
+- Correctif à prendre en compte pour l'expiration du certificat Apple pour macOS Fixz et les version antérieures. Ce correctif restaure la fonctionnalité gestion & menaces et vulnérabilités (TVM).
+
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
 - Microsoft Defender pour point de terminaison sur macOS est désormais disponible en prévisualisation pour les clients du gouvernement des États-Unis. Pour plus d'informations, [voir Microsoft Defender for Endpoint for US Government customers](gov.md).
-- Améliorations des performances (en particulier pour la situation d'utilisation de l'application Simulateur XCode) & résolutions de bogues
+- Améliorations des performances (en particulier pour la situation d'utilisation de l'application Simulateur XCode) & résolutions de bogues.
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
 
@@ -71,7 +75,7 @@ ms.locfileid: "51932726"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0)
 
 - Amélioration de la fiabilité de l'agent lors de l'exécution sur macOS 11 Big Sur
-- Ajout d'un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions antivirus lors des `--ignore-exclusions` analyses personnalisées ( `mdatp scan custom` )
+- Ajout d'un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions av lors `--ignore-exclusions` des analyses personnalisées ( `mdatp scan custom` )
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
@@ -121,14 +125,14 @@ ms.locfileid: "51932726"
 
 ## <a name="1010663"></a>101.06.63
 
-- Nous avons résolu une régression des performances introduite dans la `101.05.17` version. La régression a été introduite avec le correctif pour éliminer les noyaux que certains clients ont observés lors de l'accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d'examiner d'autres façons d'éliminer les noyaux.
+- Nous avons résolu une régression des performances introduite dans la version `101.05.17` . La régression a été introduite avec le correctif pour éliminer les noyaux observés par certains clients lors de l'accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d'examiner d'autres façons d'éliminer les noyaux.
 
 ## <a name="1010517"></a>101.05.17
 
 > [!IMPORTANT]
 > Nous travaillons sur une syntaxe nouvelle et améliorée pour `mdatp` l'outil en ligne de commande. La nouvelle syntaxe est actuellement la valeur par défaut dans les canaux de mise à jour Insider Fast et Insider Slow. Nous vous encourageons à vous familiariser avec cette nouvelle syntaxe.
 > 
-> Nous continuerons à assurer la prise en charge de l'ancienne syntaxe parallèlement à la nouvelle syntaxe et nous fournirons davantage de communication autour du plan de désaprétation de l'ancienne syntaxe dans les mois à venir.
+> Nous continuerons à la prise en charge de l'ancienne syntaxe parallèlement à la nouvelle syntaxe et nous fournirons une meilleure communication autour du plan de désaprétation de l'ancienne syntaxe dans les mois à venir.
 
 - Nous avons résolu un problème de noyau qui se produisait parfois lors de l'accès aux partages de fichiers SMB
 - Améliorations des performances & résolutions de bogues
@@ -153,7 +157,7 @@ ms.locfileid: "51932726"
 
 - Amélioration de [l'expérience d'intégration de produit pour les utilisateurs d'Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Les [exclusions antivirus désormais prise en charge les caractères génériques](mac-exclusions.md#supported-exclusion-types)
-- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner **Analyser avec Microsoft Defender pour le point de terminaison**
+- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner Analyser **avec Microsoft Defender pour le point de terminaison**
 - Les rétrogradations de produits sur place sont désormais explicitement interdits par le programme d'installation. Si vous devez rétrograder, désinstallez d'abord la version existante et reconfigurez votre appareil.
 - Autres améliorations en matière de performances & résolutions de bogues
 
@@ -174,7 +178,7 @@ ms.locfileid: "51932726"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Pour garantir la protection la plus complète pour vos appareils macOS et en adéquation avec l'arrêt par Apple de la distribution de mises à jour de sécurité natives macOS aux versions de système d'exploitation antérieures à [actuel – 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations de MDATP pour Mac seront apportées aux appareils exécutant les versions Derline [10.15], Mojave [10.14] et High Sierra [10.13]. 
+> Pour garantir la protection la plus complète pour vos appareils macOS et en adéquation avec l'arrêt par Apple des mises à jour de sécurité natives macOS aux versions de système d'exploitation antérieures à [actuel – 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations de MDATP pour Mac seront apportées aux appareils exécutant les versions Derline [10.15], Mojave [10.14] et High Sierra [10.13]. 
 >
 > Si vous avez déjà déployé MDATP pour Mac sur vos appareils Sierra [10.12], veuillez mettre à niveau vers la dernière version de macOS afin d'éliminer les risques de perte de protection.
 
@@ -210,7 +214,7 @@ ms.locfileid: "51932726"
 
 ## <a name="1007099"></a>100.70.99
 
-- Nous avons résolu un problème qui a un impact sur la capacité de certains utilisateurs à mettre à niveau vers macOS Ils sont activés lorsque la protection en temps réel est activée. Ce problème ponctuel a été provoqué par microsoft Defender pour le verrouillage des fichiers de point de terminaison dans le package de mise à niveau De base lors de l'analyse des menaces, ce qui a entraîné des échecs dans la séquence de mise à niveau.
+- Nous avons résolu un problème qui a une incidence sur la capacité de certains utilisateurs à mettre à niveau vers macOS Ils sont activés lorsque la protection en temps réel est activée. Ce problème ponctuel a été provoqué par microsoft Defender pour le verrouillage des fichiers de point de terminaison dans le package de mise à niveau De base lors de l'analyse des menaces, ce qui a entraîné des échecs dans la séquence de mise à niveau.
 
 ## <a name="1006899"></a>100.68.99
 
@@ -222,7 +226,7 @@ ms.locfileid: "51932726"
 - Prise en charge supplémentaire de macOS
 
   > [!CAUTION]
-  > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur le disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l'absence de ce consentement, Microsoft Defender pour le point de terminaison n'est pas en mesure de protéger entièrement votre appareil.
+  > macOS 10.15 (Contrôle) contient de nouvelles améliorations en matière de sécurité et de confidentialité. À partir de cette version, par défaut, les applications ne peuvent pas accéder à certains emplacements sur disque (par exemple, Documents, Téléchargements, Bureau, etc.) sans consentement explicite. En l'absence de ce consentement, Microsoft Defender pour le point de terminaison n'est pas en mesure de protéger entièrement votre appareil.
   >
   > Le mécanisme d'octroi de ce consentement dépend de la façon dont vous avez déployé Microsoft Defender pour endpoint :
   >

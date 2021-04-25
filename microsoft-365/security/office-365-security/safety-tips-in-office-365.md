@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment EOP et Office 365 vous protègent contre le courrier indésirable, le hameçonnage et la protection contre les programmes malveillants en ajoutant un conseil de sécurité en haut des e-mails.
+description: Découvrez comment EOP et Office 365 vous protègent contre le courrier indésirable, le hameçonnage et la prévention des programmes malveillants en ajoutant un conseil de sécurité en haut des e-mails.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1820cab63abbbac09aa60a9c1684f3672882451
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 659a83c73b4fef9097aa317332c9951d53b09a33
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204307"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994984"
 ---
 # <a name="safety-tips-in-email-messages"></a>Conseils de sécurité dans les e-mails
 
@@ -51,10 +51,10 @@ Le conseil de sécurité( un message codé en couleur) vous avertit des messages
 
     ![Capture d’écran shows a green safety tip.](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
-    Outre les messages non sécurisés, nous vous indiquerons également les messages valides provenant d’expéditeurs dont nous avons confiance avec un conseil de sécurité vert. Un conseil de sécurité vert dans un e-mail signifie que nous avons vérifié l’expéditeur du message et vérifié qu’il est sûr. Microsoft tient à jour cette liste d’expéditeurs fiables qui inclut les organisations financières et d’autres personnes fréquemment usurpées ou usurpées d’identité.
+    Outre les messages non sécurisés, nous vous indiquerons également les messages valides provenant d’expéditeurs dont nous avons confiance avec un conseil de sécurité vert. Un conseil de sécurité vert dans un e-mail signifie que nous avons vérifié l’expéditeur du message et vérifié qu’il est sûr. Microsoft tient à jour cette liste d'expéditeurs fiables qui inclut les organisations financières et d'autres personnes fréquemment usurpées ou usurpées d'identité.
 
 ## <a name="working-with-safety-tips"></a>Fonctionnement des conseils de sécurité
 
-Les conseils de sécurité sont toujours activés pour Outlook sur le web, même si tous les messages n’en reçoivent pas un. Les administrateurs peuvent désactiver les conseils de sécurité pour d’autres clients de messagerie tels qu’Outlook. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
+Les administrateurs peuvent activer ou désactiver les conseils de sécurité dans les stratégies anti-courrier indésirable. Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans Office 365](configure-your-spam-filter-policies.md).
 
-Si vous n’êtes pas d’accord avec la façon dont EOP a catégorisé un message (autrement dit, si le message n’est pas un courrier indésirable ou qu’il doit avoir été marqué comme courrier indésirable), vous pouvez soumettre les messages à Microsoft pour analyse afin d’améliorer votre expérience. Pour obtenir des instructions, [reportez-vous aux messages et fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md) Vous pouvez également cliquer sur le lien Commentaires dans le conseil de sécurité pour envoyer des commentaires directement à Microsoft pour nous aider à améliorer.
+Si vous n'êtes pas d'accord avec la façon dont EOP a catégorisé un message (autrement dit, si le message n'est pas un courrier indésirable ou qu'il doit avoir été marqué comme courrier indésirable), vous pouvez soumettre les messages à Microsoft pour analyse afin d'améliorer votre expérience. Pour obtenir des instructions, [reportez-vous aux messages et fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md) Vous pouvez également cliquer sur le lien Commentaires dans le conseil de sécurité pour envoyer des commentaires directement à Microsoft pour nous aider à améliorer.

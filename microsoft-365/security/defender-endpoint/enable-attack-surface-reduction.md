@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939241"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995068"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -33,32 +33,28 @@ ms.locfileid: "51939241"
 > [!TIP]
 > Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Les règles de réduction de la surface d'attaque](attack-surface-reduction.md) (règles de réduction de la surface d'attaque) permettent d'éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux. Vous pouvez définir des règles de asr pour les appareils exécutant l'une des éditions et versions suivantes de Windows :
-- Windows 10 Professionnel, [version 1709 ou](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
-- Windows 10 Entreprise, [version 1709 ou](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
-- Windows Server, [version 1803 (canal semi-annuel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+[Les règles de réduction de la surface d'attaque](attack-surface-reduction.md) (règles de réduction de la surface d'attaque) permettent d'éviter les actions que les programmes malveillants abusent souvent pour compromettre les appareils et les réseaux.
 
 **Conditions requises** Vous pouvez définir des règles de réduction de la surface d'attaque pour les appareils exécutant l'une des éditions et versions suivantes de Windows :
 
-- Windows 10 Professionnel, version 1709 ou ultérieure
-- Windows 10 Entreprise, version 1709 ou ultérieure
-- Windows Server, version 1803 (canal semi-annuel) ou version ultérieure
-- Windows Server 2019
+- Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
+- Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
+- Windows Server, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Bien que les règles de réduction de la surface d'attaque ne nécessitent pas de licence Windows E5, si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l'analyse et les flux de travail disponibles dans Defender pour point de terminaison, ainsi que les fonctionnalités de rapports et de configuration dans le Centre de sécurité Microsoft 365. Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3 ; toutefois, si vous avez ces licences, vous pouvez utiliser l'Observateur d'événements et les journaux de l'Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d'attaque.
+Bien que les règles de réduction de la surface d'attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l'analyse et les flux de travail disponibles dans [Defender pour](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans le Centre de sécurité [Microsoft 365](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professionnel ou Windows E3 . toutefois, si vous avez ces licences, vous pouvez utiliser l'Observateur d'événements et les journaux de l'Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d'attaque.
 
 Chaque règle asr contient l'un des quatre paramètres ci-après :
 
 - **Non configuré :** désactiver la règle asr
 - **Bloquer**: activer la règle asr
 - **Audit**: évaluer l'impact de la règle asr sur votre organisation si elle est activée
-- **Avertir**: activer la règle asr, mais permettre à l'utilisateur final de contourner le blocage
+- **Avertir :** activer la règle asr, mais autoriser l'utilisateur final à contourner le blocage
 
 > [!IMPORTANT]
 > Pour l'instant, le mode avertissement n'est pas pris en charge pour trois règles de la asr lorsque vous configurez des règles asr dans Microsoft Endpoint Manager (MEM). Pour en savoir plus, consultez [les cas où le mode d'avertissement n'est pas pris en charge.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Il est vivement recommandé d'utiliser des règles asr avec une licence Windows E5 (ou une référence de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender pour Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender pour Endpoint). Toutefois, pour d'autres licences telles que Windows Professionnel ou E3 qui n'ont pas accès aux fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la asr. sont déclenchées (par exemple, le forwarding d'événement).
+Il est vivement recommandé d'utiliser des règles asr avec une licence Windows E5 (ou une référence de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender pour Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender pour Endpoint). Toutefois, pour d'autres licences telles que Windows Professionnel ou E3 qui n'ont pas accès aux fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles DE LAS sont déclenchées (par exemple, le forwarding d'événement).
 
 > [!TIP]
 > Pour en savoir plus sur les licences Windows, voir [Licences Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) et obtenir le guide des licences en [volume pour Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
@@ -81,7 +77,7 @@ Vous pouvez également exclure les règles asr du déclenchement en fonction des
 
 > [!IMPORTANT]
 > L'exclusion de fichiers ou de dossiers peut réduire considérablement la protection fournie par les règles de réduction de la réduction du nombre de messages. Les fichiers exclus sont autorisés à s'exécuter et aucun rapport ou événement n'est enregistré.
-> Si les règles de la récupération automatique des données détectent des fichiers qui, selon vous, ne devraient pas être détectés, vous devez d'abord utiliser le [mode audit pour tester la règle.](evaluate-attack-surface-reduction.md)
+> Si les règles DER détectent des fichiers qui, selon vous, ne doivent pas être détectés, vous devez d'abord utiliser le [mode audit pour tester la règle.](evaluate-attack-surface-reduction.md)
 
 
 Vous pouvez spécifier des fichiers ou des dossiers individuels (à l'aide de chemins d'accès aux dossiers ou de noms de ressources complets), mais vous ne pouvez pas spécifier les règles à laquelle les exclusions s'appliquent. Une exclusion est appliquée uniquement au démarrage de l'application ou du service exclu. Par exemple, si vous ajoutez une exclusion pour un service de mise à jour déjà en cours d'exécution, le service de mise à jour continue à déclencher des événements jusqu'à ce que le service soit arrêté et redémarré.
@@ -117,7 +113,7 @@ Les valeurs à activer (bloquer), désactiver, avertir ou activer en mode audit 
 - 0 : Désactiver (désactiver la règle asr)
 - 1 : Bloquer (activer la règle asr)
 - 2 : Audit (évaluer l'impact de la règle asr sur votre organisation si elle est activée)
-- 6 : Avertir (activer la règle asr mais autoriser l'utilisateur final à contourner le bloc). Le mode Avertissement est désormais disponible pour la plupart des règles de la asr.
+- 6 : Avertir (activer la règle asr mais autoriser l'utilisateur final à contourner le blocage). Le mode Avertissement est désormais disponible pour la plupart des règles de la asr.
 
 Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) (CSP) pour ajouter des exclusions.
 
@@ -140,7 +136,7 @@ Exemple :
 
 4. Choisissez les règles qui bloqueront ou auditeront les actions et sélectionnez **Suivant.**
 
-5. Examinez les paramètres et sélectionnez **Suivant** pour créer la stratégie.
+5. Examinez les paramètres et **sélectionnez Suivant** pour créer la stratégie.
 
 6. Une fois la stratégie créée, **fermez**.
 
@@ -196,7 +192,7 @@ Exemple :
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
 
-    Pour désactiver les règles de la asr, utilisez la cmdlet suivante :
+    Pour désactiver les règles de asr, utilisez l'cmdlet suivante :
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled

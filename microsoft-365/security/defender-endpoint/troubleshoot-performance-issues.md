@@ -1,7 +1,7 @@
 ---
 title: Résoudre des problèmes de performance
-description: Résoudre les problèmes d'utilisation élevée du processeur lié au service de protection en temps réel dans Microsoft Defender pour Endpoint.
-keywords: résolution des problèmes, performances, utilisation élevée du processeur, utilisation élevée du processeur, erreur, correctif, mise à jour de conformité, oms, surveiller, rapport, Microsoft Defender AV
+description: Résoudre les problèmes d'utilisation élevée de l'UC liée au service de protection en temps réel dans Microsoft Defender pour Endpoint.
+keywords: résolution des problèmes, performances, utilisation élevée du processeur, utilisation élevée du processeur, erreur, correctif, conformité des mises à jour, oms, surveiller, rapport, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876336"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995080"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Résoudre les problèmes de performances liés à la protection en temps réel
 
@@ -33,7 +33,7 @@ ms.locfileid: "51876336"
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Si votre système présente des problèmes élevés d'utilisation du processeur ou de performances liés au service de protection en temps réel dans Microsoft Defender pour le point de terminaison, vous pouvez soumettre un ticket au support Microsoft. Suivez les étapes de [collecte des données de diagnostic de Microsoft Defender AV.](/collect-diagnostic-data.md)
+Si votre système présente des problèmes élevés d'utilisation du processeur ou de performances liés au service de protection en temps réel dans Microsoft Defender pour le point de terminaison, vous pouvez soumettre un ticket au support Microsoft. Suivez les étapes de [collecte des données de diagnostic de l'Antivirus Microsoft Defender.](collect-diagnostic-data.md)
 
 En tant qu'administrateur, vous pouvez également résoudre ces problèmes vous-même. 
 
@@ -42,7 +42,7 @@ Tout d'abord, vous pouvez vérifier si le problème est dû à un autre logiciel
 Dans le cas contraire, vous pouvez identifier les logiciels associés au problème de performances identifié en suivant les étapes de la procédure d'analyse du [journal de protection Microsoft.](#analyze-the-microsoft-protection-log) 
 
 Vous pouvez également fournir des journaux supplémentaires à votre soumission au support Microsoft en suivant les étapes ci-après :
-- [Capturer les journaux de processus à l'aide du Moniteur de processus](#capture-process-logs-using-process-monitor)
+- [Capturer les journaux de processus à l'aide du moniteur de processus](#capture-process-logs-using-process-monitor)
 - [Capturer les journaux de performances à l'aide de l'Enregistreur de performances Windows](#capture-performance-logs-using-windows-performance-recorder) 
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Consulter le fournisseur pour les exclusions antivirus
@@ -132,7 +132,6 @@ Process Monitor (ProcMon) est un outil de surveillance avancé qui peut afficher
  
     >[!TIP] 
     >Attendez que le problème soit entièrement reproduit, puis notez l'timestamp au début du suivi.
-    
 
 10. Une fois que vous avez deux à quatre minutes d'activité de processus pendant la condition d'utilisation élevée du processeur, arrêtez la capture en sélectionnant l'icône de loupe.
 
@@ -187,7 +186,7 @@ Vous pouvez également utiliser l'outil en ligne de commande *wpr.exe*, qui est 
 
 6. Sélectionnez **Ajouter des profils...** et accédez au chemin d'accès du `WD.wprp` fichier.
 
-7. Après cela, vous devriez voir un nouveau profil sous Mesures *personnalisées nommées* Analyse du point de terminaison *Microsoft Defender* en dessous.
+7. Après cela, vous devriez voir un nouveau profil sous mesures *personnalisées nommées* Analyse du point de terminaison *Microsoft Defender* en dessous.
 
     ![dans le fichier](images/wpr-infile.png)
 
@@ -196,7 +195,7 @@ Vous pouvez également utiliser l'outil en ligne de commande *wpr.exe*, qui est 
  
 8. Pour utiliser le profil d'analyse détaillée de la mesure personnalisée Microsoft Defender pour point de terminaison dans l'interface utilisateur WPR :
 
-    1. Assurez-vous qu'aucun profil n'est sélectionné dans les groupes *Tri de premier* niveau, Analyse *des* ressources et *Analyse de* scénario.
+    1. Assurez-vous qu'aucun profil n'est sélectionné dans les groupes *de tri* de premier niveau, Analyse *des* ressources et *Analyse de* scénario.
     2. Sélectionnez **mesures personnalisées**.
     3. Sélectionnez **Microsoft Defender pour l'analyse des points de terminaison.**
     4. Sélectionnez **Détaillé sous** *niveau* Détails.
@@ -250,7 +249,7 @@ L'outil en ligne *dewpr.exe* fait partie du système d'exploitation à partir de
 
 1. Téléchargez **[le profil d'analyse](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** De Microsoft Defender pour point de terminaison pour le suivi des performances vers un fichier nommé dans un `WD.wprp` répertoire local tel que `C:\traces` .
 
-3. Cliquez avec le bouton droit sur l'icône **Menu** Démarrer et sélectionnez **Windows Powershell (Administrateur)** ou Invite de commandes **(Administrateur)** pour ouvrir une fenêtre d'invite de commandes d'administration.
+3. Cliquez avec  le bouton droit sur l'icône Menu Démarrer et **sélectionnez Windows PowerShell (Administrateur)** ou Invite de commandes **(Administrateur)** pour ouvrir une fenêtre d'invite de commandes d'administration.
 
 4. Lorsque la boîte de dialogue Contrôle de compte d'utilisateur s'affiche, sélectionnez **Oui**.
 
