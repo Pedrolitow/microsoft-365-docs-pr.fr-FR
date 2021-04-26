@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez comment ajouter des utilisateurs et attribuer des licences Microsoft 365 simultanément.
 ms.date: 07/01/2020
-ms.openlocfilehash: a7c5fcf1a129a1d434b6e641688ce4c5d234817d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 97b7118f4052d4ab4e0ffe8ecec96f32e4042108
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760001"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024012"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
@@ -85,7 +85,7 @@ Toutes les méthodes suivantes permettent d’ajouter de multiples utilisateurs 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après avoir ajouté un utilisateur, vous recevez une notification par courrier de Microsoft. Ce courrier électronique contient l’identifiant de l’utilisateur et son mot de passe à lui faire parvenir pour qu’il puisse se connecter à Microsoft 365. Nous vous conseillons d'utiliser le processus habituel pour communiquer les nouveaux mots de passe. Partagez le [guide de démarrage rapide pour les employés](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) avec vos nouveaux utilisateurs pour mettre certaines choses en place, en leur faisant par exemple découvrir [comment télécharger et installer des applications Office sur un PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) ou [comment configurer les applications Office et la messagerie électronique sur un appareil mobile](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+Après avoir ajouté un utilisateur, vous recevez une notification par courrier de Microsoft. Ce courrier électronique contient l’identifiant de l’utilisateur et son mot de passe à lui faire parvenir pour qu’il puisse se connecter à Microsoft 365. Nous vous conseillons d'utiliser le processus habituel pour communiquer les nouveaux mots de passe. Partagez le [guide de démarrage rapide pour les employés](../../business-video/employee-quick-setup.md) avec vos nouveaux utilisateurs pour mettre certaines choses en place, en leur faisant par exemple découvrir [comment télécharger et installer des applications Office sur un PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) ou [comment configurer les applications Office et la messagerie électronique sur un appareil mobile](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Contenu connexe
 

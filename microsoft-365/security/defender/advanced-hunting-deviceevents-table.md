@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: fc28159f9f83354868142584740e2cb7810724b9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 63a2d41714329918192caccd384587a4e4f04112
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933684"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023200"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,8 +33,9 @@ ms.locfileid: "51933684"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
-Le tableau ou les événements divers de périphérique dans le schéma de recherche avancée contient des informations sur différents types d'événements, y compris les événements déclenchés par des contrôles de sécurité, tels que `DeviceEvents` l'antivirus [](advanced-hunting-overview.md) Windows Defender et Exploit Protection. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau ou les événements divers du périphérique dans le schéma de recherche avancée contient des informations sur différents types d'événements, y compris les événements déclenchés par des contrôles de sécurité, tels que `DeviceEvents` l'antivirus [](advanced-hunting-overview.md) Windows Defender et Exploit Protection. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
 > Pour plus d'informations sur les types d'événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
@@ -64,7 +65,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `ProcessCreationTime` | DateHeure | Date et heure de création du processus |
 | `ProcessTokenElevation` | string | Type de jeton indiquant la présence ou l'absence d'élévation de privilège du contrôle d'accès utilisateur (UAC) appliquée au processus nouvellement créé |
 | `LogonId` | string | Identificateur d'une session d'ouverture de session. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
-| `RegistryKey` | string | Clé de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryKey` | string | Clé de Registre à l’application de l’action enregistrée |
 | `RegistryValueName` | string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` | string | Données de la valeur de Registre à l’application de l’action enregistrée |
 | `RemoteIP` | string | Adresse IP à laquelle la connexion était en cours |
@@ -86,7 +87,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
-| `InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a tenu le processus responsable de l’événement |
 | `InitiatingProcessVersionInfoCompanyName` | string | Nom de la société à partir des informations de version du processus (fichier image) responsable de l’événement |
 | `InitiatingProcessVersionInfoProductName` | string | Nom du produit à partir des informations de version du processus (fichier image) responsable de l’événement |
 | `InitiatingProcessVersionInfoProductVersion` | string | Version du produit à partir des informations de version du processus (fichier image) responsable de l’événement |

@@ -15,16 +15,16 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Découvrez les dernières instructions, conseils, ressources et conseils sur le travail à distance pour les entreprises utilisant Microsoft 365.
-ms.openlocfilehash: 3ef8bb3527e6be258eda8d745d841e8bd81cdd6c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860582"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023736"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Permettre à votre petite entreprise de travailler à distance 
 
-À mesure que les entreprises s'adaptent au besoin accru de travail à distance et de connexion virtuelle avec leurs clients, ce site est mis à jour avec les dernières instructions, conseils, ressources et conseils sur le travail à distance pour les entreprises utilisant Microsoft 365.
+À mesure que les entreprises s'adaptent à l'augmentation du besoin que les personnes travaillent à distance et se connectent virtuellement à leurs clients, ce site est mis à jour avec les dernières informations, conseils, ressources et conseils sur le travail à distance pour les entreprises utilisant Microsoft 365.
 
 >[!TIP]
 >Vous n'avez pas Microsoft_Teams ? Obtenez 6 mois de Microsoft Teams dans Office gratuitement (lorsque vous vous inscrivez pour 1 an). Obtenez les technologies décrites dans cet article dans le cadre de l'offre. Pour plus d'informations, [voir Try 1 month free](https://aka.ms/SMBTeamsOffer).
@@ -37,9 +37,9 @@ ms.locfileid: "51860582"
 
 À la lumière de l'épidémie COVID-19 (Novel Coronavirus), de nombreux propriétaires d'entreprise se retrouvent avec un personnel de travail totalement distant. Voici ce que vous pouvez faire pour effectuer une transition vers un travail à distance sécurisé, sécurisé et productif.
 
-Pour plus d'informations, [consultez La mise en place de Microsoft Teams dans votre petite entreprise.](https://support.microsoft.com/office/get-started-with-microsoft-teams-in-your-small-business-184f1aba-2f91-43f0-86e1-9fae607e24f6)
+Pour plus d'informations, [consultez La mise en place de Microsoft Teams dans votre petite entreprise.](../../business-video/get-started-teams-small-business.md)
 
-Vous avez déjà un abonnement, mais vous devez vous y installer ? Consultez [la formation Microsoft 365 petite entreprise.](https://support.microsoft.com/office/set-up-your-small-business-6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+Vous avez déjà un abonnement, mais vous devez vous y installer ? Consultez [la formation Microsoft 365 petite entreprise.](../../business-video/index.yml)
 
 ## <a name="connect-with-employees-and-customers"></a>Entrer en contact avec les employés et les clients
 
@@ -49,19 +49,19 @@ Vous pouvez toujours vous connecter avec des employés, des clients, des clients
 
 Hébergez des réunions audio, vidéo et web avec des employés, des clients ou des partenaires via Microsoft Teams.
 
-Pour plus d'informations, voir [Réunions en ligne d'hôte](https://support.microsoft.com/topic/host-online-meetings-for-your-business-d5101f5c-30e3-4097-bb10-6d2fdeb9cf53) et [conversation avec les employés et les clients.](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)
+Pour plus d'informations, voir [Réunions en ligne d'hôte](../../business-video/start-and-pin-chats.md) et [conversation avec les employés et les clients.](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92)
 
 ### <a name="store-and-share-files"></a>Stocker et partager des fichiers
 
 Placez vos documents d'entreprise dans le cloud et partagez-les en toute sécurité, à la fois en interne et en externe.
 
-Pour plus d'informations, consultez cette [vue d'ensemble](https://support.microsoft.com/topic/share-your-business-files-overview-6725104a-6df7-4778-99c4-c06217dffecc) du partage de fichiers métiers et [téléchargez et partagez des fichiers.](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)
+Pour plus d'informations, consultez cette [vue d'ensemble](../../business-video/overview-file-sharing.md) du partage de fichiers métiers et [téléchargez et partagez des fichiers.](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)
 
 ### <a name="collaborate-with-customers"></a>Collaborer avec des clients
 
 Invitez les employés et les clients à une équipe afin que vous pouvez travailler directement avec eux pour coordonner et collaborer au même endroit.
 
-Pour plus d'informations, voir [Créer une équipe et](https://support.microsoft.com/office/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7) activer [l'accès invité.](https://docs.microsoft.com/MicrosoftTeams/guest-joins)
+Pour plus d'informations, voir [Créer une équipe et](../../business-video/team-with-guests.md) activer [l'accès invité.](/MicrosoftTeams/guest-access)
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>Gérer et sécuriser votre entreprise pour qu'elle s'exécute à distance
 
@@ -71,13 +71,13 @@ Quelques étapes peuvent vous aider à préserver la sécurité de votre entrepr
 
 Utilisez l'authentification multifacteur pour protéger vos données et appareils.
 
-Pour plus d'informations, voir [Activer l'authentification multifacteur.](https://support.microsoft.com/office/secure-employee-accounts-with-mfa-in-microsoft-365-business-e12187b8-216a-4490-9e3b-df34a06fb787)
+Pour plus d'informations, voir [Activer l'authentification multifacteur.](../../business-video/turn-on-mfa.md)
 
 ### <a name="secure-your-devices"></a>Sécuriser vos appareils
 
 Gérez à distance les PC et les téléphones et assurez-vous qu'ils sont protégés et à jour. Nécessite Microsoft 365 Business.
 
-Pour plus d'informations, voir [Gérer les appareils.](https://support.microsoft.com/office/manage-policies-for-windows-10-pcs-5b5aec9e-e267-463a-bc39-54753375e579)
+Pour plus d'informations, voir [Gérer les appareils.](../../business-video/secure-win-10-pro-devices.md)
 
 ### <a name="more-for-admins-and-partners"></a>En savoir plus pour les administrateurs et les partenaires
 

@@ -21,12 +21,12 @@ description: "Centre d'administration Microsoft 365 : découvrez les fonctionnal
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768728"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024192"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d'administration Microsoft 365
 
@@ -79,7 +79,7 @@ Bienvenue dans Microsoft Ignite. Nous espérons que vous avez pu participer à c
 
 ### <a name="message-center"></a>Centre de messages
 
-Nous avons repensé le centre de messages pour vous aider à découvrir les messages pertinents et ajouté une expérience de lecture plus flexible. Nous avons ajouté une nouvelle colonne **Service** pour vous aider à analyser le service auquel s'applique un message et à filtrer les messages par service et d'autres métadonnées. Vous pouvez mettre un message en favori pour le marquer pour le suivi, choisir les colonnes qui apparaissent dans la liste des messages et naviguer entre les messages avec les boutons Retour et Suivant. Nous avons également amélioré le processus pour faciliter les commentaires sur les billets du centre de messages.
+Nous avons repensé le centre de messages pour vous aider à découvrir les messages pertinents et ajouté une expérience de lecture plus flexible. Nous avons ajouté une nouvelle colonne **Service** pour vous aider à analyser le service auquel s'applique un message et à filtrer les messages par service et d'autres métadonnées. Vous pouvez mettre un message en favori pour le marquer pour le suivi, choisir les colonnes qui apparaissent dans la liste des messages et naviguer entre les messages avec les boutons Retour et Suivant. Nous avons également amélioré le processus pour faciliter l'avis sur les publications du centre de messages.
 
 :::image type="content" source="../media/message-center.png" alt-text="Capture d'écran : page d'accueil du centre de messages affichant la boîte de réception et les messages":::
 
@@ -103,7 +103,7 @@ Nous avons développé un ensemble de fonctionnalités pour les administrateurs 
 
 - **Vos locataires :** basculez rapidement entre les locataires que vous gérez.
 - **Tous** les clients : nouvelle page où vous pouvez voir rapidement l'état de tous les services de vos clients, les demandes de service ouvertes, vos produits et facturation, les tâches de configuration recommandées et le nombre d'utilisateurs dans ce client.
-- **Programme d'installation**: la page d'installation multi-locataires vous donne un affichage liste de la page d'installation, mais organisée pour de nombreux locataires. Vous pouvez voir quelles fonctionnalités ne sont pas désactivées, quelles tâches sont terminées pour tous les locataires, tâches que les locataires doivent encore effectuer. Cette vue vous aidera à effectuer le suivi de l'adoption des fonctionnalités et à vous assurer que les tâches de configuration de sécurité recommandées sont toujours réalisées.
+- **Programme d'installation**: la page d'installation multi-client vous donne un affichage liste de la page d'installation, mais elle est organisée pour de nombreux locataires. Vous pouvez voir quelles fonctionnalités ne sont pas désactivées, quelles tâches sont terminées pour tous les locataires, tâches que les locataires doivent encore effectuer. Cette vue vous aidera à effectuer le suivi de l'adoption des fonctionnalités et à vous assurer que les tâches de configuration de sécurité recommandées sont toujours réalisées.
 - **État du** service : l'affichage d'état du service vous indique si des incidents ou des avis affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés. Sélectionnez simplement un incident pour obtenir plus d'informations sous l'onglet Vue d'ensemble, puis basculez vers l'onglet Locataires affectés pour descendre et prendre en charge ce client.
 - **Les migrations** de boîtes aux lettres entre clients sont un nouveau service, désormais en prévisualisation publique, qui vous permet de déplacer des boîtes aux lettres entre des clients sans avoir à retenter les boîtes aux lettres, puis à les intégrer. 
 - **Partage de domaine entre** locataires : bientôt, vous pouvez rejoindre un aperçu privé pour les fonctionnalités qui vous permettent de partager un domaine entre plusieurs locataires. Par exemple, si Contoso acquiert Wingtip Toys, Contoso peut partager le domaine avec Wingtip Toys afin que les personnes des deux locataires peuvent utiliser « contoso.com » comme adresses de messagerie.
@@ -112,7 +112,7 @@ Nous avons développé un ensemble de fonctionnalités pour les administrateurs 
 
 ### <a name="monitor-your-most-important-accounts"></a>Surveiller vos comptes les plus importants
 
-Vous pouvez surveiller et suivre les messages électroniques ayant échoué ou différés envoyés à vos utilisateurs qui ont un impact important sur l'entreprise, comme votre PDG. Vous pouvez suivre les comptes prioritaires en ajoutant des utilisateurs à votre liste de comptes prioritaires dans le Centre d'administration Microsoft 365. Ajoutez des cadres, des responsables, des responsables ou d'autres utilisateurs ayant accès à des informations sensibles ou prioritaires.
+Vous pouvez surveiller et suivre les messages électroniques ayant échoué ou différés envoyés à vos utilisateurs ayant un impact important sur l'entreprise, comme votre PDG. Vous pouvez suivre les comptes prioritaires en ajoutant des utilisateurs à votre liste de comptes prioritaires dans le Centre d'administration Microsoft 365. Ajoutez des cadres, des responsables, des responsables ou d'autres utilisateurs ayant accès à des informations sensibles ou prioritaires.
 
 Les comptes de priorité sont disponibles uniquement pour les organisations qui répondent aux deux exigences suivantes :
 
@@ -150,7 +150,7 @@ L'application mobile d'administration [Microsoft 365,](https://www.microsoft.com
 
 - Prise en charge des stratégies de gestion des applications mobiles et d'accès conditionnel de **Microsoft Intune**: vous pouvez désormais utiliser votre appareil personnel pour gérer Microsoft 365, même si votre organisation a désactivé les stratégies de gestion des applications mobiles et d'accès conditionnel d'Intune.
 - **Notifications du centre de messages**: activer les notifications du centre de messages sur les notifications de **paramètres** si vous souhaitez être averti des nouvelles publications du centre de  >   messages. Par le biais de notifications, nous voulons vous assurer que vous restez informé des informations et des événements importants au sein de votre client.
-- **Alertes de facturation**: vous pouvez également activer les notifications de facturation à l'adresse **Settings** Notifications si vous souhaitez obtenir des notifications de facturation sur votre appareil si un abonnement est sur le point d'expirer.  >  
+- **Alertes de facturation**: vous pouvez également activer les notifications de facturation sur les **notifications** de paramètres si vous souhaitez obtenir des notifications de facturation sur votre appareil si un abonnement est sur le point d'expirer.  >  
 - **Mode sombre**: bienvenue sur le côté sombre de l'application mobile. Il s'agissait de l'une de nos fonctionnalités les plus demandées. Go to **Settings**  >  **Themes** to turn it on.
 - **Signalez un problème**: vous pouvez maintenant signaler un problème dans l'application ou afficher les problèmes signalés par d'autres administrateurs. Visitez **l'état du** service pour l'consulter.
 
@@ -209,7 +209,7 @@ La gestion des abonnements a fait beaucoup de travail pour accélérer le charge
 
 - **Nouvelle conception du** tableau : le tableau a été repensé afin de pouvoir grouper des abonnements similaires. Go to **Billing**  >  **Your products**.
 - **Détails du produit**: obtenez plus de détails que jamais sur vos abonnements en sélectionnant le produit dans la liste.
-- **Faites tout à partir d'ici**: et vous n'avez pas besoin de vous déplacer sur plusieurs pages pour gérer un produit. Par exemple, si vous avez besoin d'annuler un abonnement, le panneau s'ouvre pour y faire l'action.
+- **Faites tout à partir d'ici**: et vous n'avez pas besoin de vous déplacer sur plusieurs pages pour gérer un produit. Par exemple, si vous devez annuler un abonnement, le panneau s'ouvre pour y faire l'action.
 
 ![Page Produits avec le panneau Annuler l'abonnement ouvert.](../media/MAC-WN-SubscrDetails.png)
 
@@ -231,7 +231,7 @@ Il y a quelques mois, nous avons ajouté un paramètre qui vous permet de gérer
 
 ### <a name="docs-training-and-videos-june"></a>Documentation, formation et vidéos (juin)
 
-- [Mise en place de Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Mise en place de Teams](../business-video/get-started-teams-small-business.md)
 
 ## <a name="may-2020"></a>Mai 2020
 
@@ -292,11 +292,11 @@ Nous l'avons fait ! Nous avons pris la deuxième étape vers une expérience de 
 
 ### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>« Vous avez besoin d'aide ? » lancé dans le Centre d'administration Teams pour & sécurité et conformité
 
-Le Centre d'administration Teams, le Centre de sécurité et le Centre de conformité utilisent désormais le même « Besoin d'aide ? » que le Centre d'administration Microsoft 365 utilise pour trouver de l'aide et contacter le support. Nous avons reçu de nombreux commentaires d'administrateurs qui vous ont fait part de votre souhait d'obtenir le même niveau d'aide et de support, et nous sommes heureux de vous en faire part. Essayez et faites-nous part de vos commentaires !
+Le Centre d'administration Teams, le Centre de sécurité et le Centre de conformité utilisent désormais le même « Besoin d'aide ? » fonctionnalité que le Centre d'administration Microsoft 365 utilise pour trouver de l'aide et contacter le support technique. Nous avons reçu de nombreux commentaires d'administrateurs qui vous ont fait part de votre souhait d'obtenir le même niveau d'aide et de support, et nous sommes heureux de vous en faire part. Essayez et faites-nous part de vos commentaires !
 
 #### <a name="need-chat"></a>Vous avez besoin d'une conversation ?
 
-Nos agents de support technique travaillent à domicile tout en prenant des cas clients et des limitations sur la bande passante Internet tout en travaillant à domicile peuvent avoir un impact sur la qualité des appels des clients. Pour continuer à vous aider, nous avons lancé l'option de support de conversation en direct pour les clients commerciaux dans le Centre d'administration Microsoft 365.
+Nos agents de support technique travaillent à domicile tout en prenant en charge les cas clients et les limitations de bande passante Internet pendant qu'ils travaillent à domicile peuvent avoir un impact sur la qualité des appels des clients. Pour continuer à vous aider, nous avons lancé l'option de support de conversation en direct pour les clients commerciaux dans le Centre d'administration Microsoft 365.
 
 Lors de la création d'une demande de service, vous verrez désormais la conversation en tant qu'option, en plus du téléphone et de la messagerie. Sélectionnez la conversation comme canal de communication préféré et créez la demande. Une fois que vous avez créé la demande, vous pouvez démarrer la conversation lorsque vous êtes prêt à discuter avec des agents Microsoft.
 
@@ -333,19 +333,19 @@ Nouveautés de la série de vidéos **Microsoft 365**: ce mois-ci, nous couvrent
 
 #### <a name="for-your-users"></a>Pour vos utilisateurs
 
-- [Planifier une réunion](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Planifier une réunion](../business-video/schedule-guest-meeting.md)
 - [Rejoindre une réunion Teams](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Créer une équipe à l’échelle de l’organisation dans Teams](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Créer une équipe avec des invités](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Rejoindre une équipe en tant qu'invité](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Créer une adresse e-mail de groupe](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Créer une équipe à l’échelle de l’organisation dans Teams](../business-video/org-wide-team.md)
+- [Créer une équipe avec des invités](../business-video/team-with-guests.md)
+- [Rejoindre une équipe en tant qu'invité](../business-video/join-team-guest.md)
+- [Créer une adresse e-mail de groupe](../business-video/group-email.md)
 
 #### <a name="for-admins-and-business-owners"></a>Pour les administrateurs et les propriétaires d'entreprise
 
 - [Permettre à votre petite entreprise de travailler à distance ](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Gestion d'une petite entreprise distante](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [S'inscrire à Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Configuration de la sign-in à deux facteurs](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Gestion d'une petite entreprise distante](../business-video/sign-up.md)
+- [S'inscrire à Microsoft Business Basic](../business-video/sign-up.md)
+- [Configuration de la sign-in à deux facteurs](../business-video/sign-up.md)
 
 ## <a name="march-2020"></a>Mars 2020
 
@@ -382,9 +382,9 @@ Les nouveaux noms de produits entrent en vigueur le 21 avril 2020. Il s'agit d'u
 |Nom actuel |Nouveau nom  |
 |---------|---------|
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Applications Microsoft 365 pour les entreprises       |
+|Applications Microsoft 365 pour les PME     |    Applications Microsoft 365 pour les entreprises       |
 |Office 365 ProPlus    |   Applications Microsoft 365 pour les entreprises      |
 
 ### <a name="videos-training-and-docs"></a>Vidéos, formation et documents
@@ -395,7 +395,7 @@ Nouveautés de la série [web Microsoft 365](https://go.microsoft.com/fwlink/p/?
 
 ### <a name="featured-feedback-fix-multi-organization-switcher"></a>Correctif des commentaires mis en avant : s'il s'est multi-organisation
 
-Nous avons reçu de nombreux commentaires de partenaires et d'administrateurs sur les défis liés à la gestion de plusieurs organisation cloud Microsoft. L'une de nos premières fonctionnalités de gestion multi-organisation est le commutateur **Organization,** qui vous permet de basculer entre les organisations que vous gérez en 2 clics seulement.
+Nous avons reçu de nombreux commentaires de partenaires et d'administrateurs sur les défis liés à la gestion de plusieurs organisation cloud Microsoft. L'une de nos premières fonctionnalités de gestion multi-organisation est le s **switcher Organization,** qui vous permet de basculer entre les organisations que vous gérez en seulement 2 clics.
 > [!TIP]
 > Vous n'avez rien à faire pour faire apparaître le commutateur d'organisation tant que vous êtes le partenaire de registre d'au moins une organisation.
 
@@ -409,9 +409,9 @@ C'est littéralement cela!!!
 
 ### <a name="groups"></a>Groupes
 
-Quelques modifications dans la zone des groupes ce mois-ci :
+Quelques modifications ont été apportées dans la zone des groupes ce mois-ci :
 
-- **Trier par nom de groupe**: vous pouvez trier la liste des groupes par ordre alphabétique, en sélectionnant la colonne Nom **du** groupe.
+- **Trier par nom de groupe**: vous pouvez trier les groupes par ordre alphabétique, en sélectionnant la colonne Nom **du** groupe.
 - Restaurer les groupes **Microsoft 365** supprimés : vous n'avez plus besoin d'aller au Centre d'administration Exchange pour restaurer les groupes Microsoft 365 supprimés. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. Il rétablit le groupe  dans la liste Groupes et restaure le courrier électronique, les conversations, le bloc-notes, les fichiers et le calendrier du groupe.
 
 ### <a name="videos-training-and-docs-february"></a>Vidéos, formation et documents (février)

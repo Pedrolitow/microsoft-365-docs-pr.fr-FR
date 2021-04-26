@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40663a06e380377ccfa33dcb41a69c42e729704d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1b716a37aa39dffc8dc541335f42265ae47fe989
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935508"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023000"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935508"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 Le tableau du schéma de recherche avancée contient des informations sur la création, la modification et d'autres événements `DeviceFileEvents` de système de fichiers. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
@@ -61,9 +62,9 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `FileSize` | long | Taille du fichier en octets |
 | `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l'événement |
 | `InitiatingProcessAccountName` | string | Nom d'utilisateur du compte qui a dirigé le processus responsable de l'événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l'événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l'événement |
 | `InitiatingProcessAccountUpn` | string | Nom d'utilisateur principal (UPN) du compte qui a lancé le processus responsable de l'événement |
-| `InitiatingProcessAccountObjectId` | string | ID d'objet Azure AD du compte d'utilisateur qui a tenu le processus responsable de l'événement |
+| `InitiatingProcessAccountObjectId` | string | ID d'objet Azure AD du compte d'utilisateur qui a dirigé le processus responsable de l'événement |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |

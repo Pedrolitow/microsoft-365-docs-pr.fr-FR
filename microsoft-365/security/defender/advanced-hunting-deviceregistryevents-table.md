@@ -1,6 +1,6 @@
 ---
 title: Table DeviceRegistryEvents dans le schéma de recherche avancé
-description: En savoir plus sur les événements de Registre que vous pouvez interroger à partir de la table DeviceRegistryEvents du schéma de recherche avancé
+description: En savoir plus sur les événements de Registre que vous pouvez interroger à partir de la table DeviceRegistryEvents du schéma de recherche avancée
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, registr registrents, registry, DeviceRegistryEvents, key, subkey, value
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a256282ffd8afabae7ffe6dab9a2b132e4fee475
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0eef71a7ab88d24c1f9d0b3ebdba16b13c855355
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934865"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024256"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -34,8 +34,9 @@ ms.locfileid: "51934865"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
-Le tableau du schéma de recherche avancée contient des informations sur la création et la modification des `DeviceRegistryEvents` entrées de [](advanced-hunting-overview.md) Registre. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur la création et `DeviceRegistryEvents` la modification d'entrées de Registre. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
 > Pour plus d'informations sur les types d'événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
@@ -55,7 +56,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `PreviousRegistryKey` | string | Clé de Registre d'origine de la valeur de Registre avant sa modification |
 | `PreviousRegistryValueName` | string | Nom d'origine de la valeur de Registre avant sa modification |
 | `PreviousRegistryValueData` | string | Données d'origine de la valeur de Registre avant sa modification |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l'événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l'événement |
 | `InitiatingProcessAccountName` | string | Nom d'utilisateur du compte qui a dirigé le processus responsable de l'événement |
 | `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l'événement |
 | `InitiatingProcessAccountUpn` | string | Nom d'utilisateur principal (UPN) du compte qui a lancé le processus responsable de l'événement |

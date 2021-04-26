@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 23d242fa211924e421c6fc2d9c4e02c297edfd0c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0129c98fe21df2976fae57fc3c4011af75facdda
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933048"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023001"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -34,6 +34,7 @@ ms.locfileid: "51933048"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 
 
@@ -60,7 +61,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessAccountName` | string | Nom d'utilisateur du compte qui a dirigé le processus responsable de l'événement |
 | `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l'événement |
 | `InitiatingProcessAccountUpn` | string | Nom d'utilisateur principal (UPN) du compte qui a lancé le processus responsable de l'événement |
-| `InitiatingProcessAccountObjectId` | string | ID d'objet Azure AD du compte d'utilisateur qui a dirigé le processus responsable de l'événement |
+| `InitiatingProcessAccountObjectId` | string | ID d'objet Azure AD du compte d'utilisateur qui a tenu le processus responsable de l'événement |
 | `InitiatingProcessIntegrityLevel` | string | Niveau d'intégrité du processus à l'origine de l'événement. Windows affecte des niveaux d'intégrité à des processus en fonction de certaines caractéristiques, par exemple s'ils ont été lancés à partir d'un téléchargement Internet. Ces niveaux d'intégrité influencent les autorisations sur les ressources |
 | `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l'absence d'élévation de privilège du contrôle d'accès utilisateur (UAC) appliquée au processus à l'origine de l'événement |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l'origine de l'événement |

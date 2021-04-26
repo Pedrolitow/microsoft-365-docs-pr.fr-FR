@@ -1,6 +1,6 @@
 ---
 title: Changements de nommage dans le schéma de recherche avancée Microsoft 365 Defender
-description: Suivre et passer en revue les tables et colonnes de modifications d'attribution de noms dans le schéma de recherche avancé
+description: Suivre et passer en revue les tables et les colonnes des modifications d'attribution de noms dans le schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 22d26dac6b7ee502d6934349d22b1d40532f575f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935772"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023784"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d'attribution de noms
 
@@ -99,8 +99,9 @@ Les modifications d'attribution de noms sont automatiquement appliquées aux req
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Commentaires des clients. |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Commentaires des clients. |
 
+## <a name="march-2021"></a>9 mars 2021
 
-
+La `DeviceTvmSoftwareInventoryVulnerabilities` table a été dépréciée. Les tables et les tables le `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` remplacent.
 
 
 

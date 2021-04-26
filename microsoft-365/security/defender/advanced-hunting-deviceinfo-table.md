@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e3686099606ec1cdab756bd4991cf61289299b43
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f97947c2c9f02720facae4f0c3c29ff702416261
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934884"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023128"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -34,6 +34,7 @@ ms.locfileid: "51934884"
 
 **S’applique à :**
 - Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 
 
@@ -47,7 +48,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ClientVersion` | string | Version de l'agent de point de terminaison ou du capteur en cours d'exécution sur l'ordinateur |
-| `PublicIP` | string | Adresse IP publique utilisée par l'ordinateur intégré pour se connecter au service Microsoft Defender for Endpoint. Il peut s'agit de l'adresse IP de l'ordinateur lui-même, d'un périphérique NAT ou d'un proxy. |
+| `PublicIP` | string | Adresse IP publique utilisée par l'ordinateur intégré pour se connecter au service Microsoft Defender for Endpoint. Il peut s'agit de l'adresse IP de l'ordinateur lui-même, d'un périphérique NAT ou d'un proxy |
 | `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
 | `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d'exploitation spécifiques, y compris des variantes au sein de la même famille, tels que Windows 10 et Windows 7 |
 | `OSBuild` | string | Version de build du système d'exploitation en cours d'exécution sur l'ordinateur |

@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a3f9d023628177b3d9bc784a129abe359c4a28c2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 93b3c5813d2f95ffeb4e55ee8f8aba3f9283e4a0
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549975"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024096"
 ---
 # <a name="payment-information-for-united-kingdom"></a>Informations de paiement pour le Royaume-Uni
 
@@ -25,12 +25,12 @@ ms.locfileid: "50549975"
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en GBP et référencer les numéro(s) de facture à votre paiement.**
+**Veuillez payer en GBP et référencer les numéro(s) de facture sur votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 
 Banque :Bankbank, Londres\
-Code SWIFT : CITIGB2L\
+Code SWIFT :VBGB2L\
 Code IBAN : GB41CITI18500812207605\
 Code SORT : 185008\
 Numéro de compte : 12207605\
@@ -43,3 +43,5 @@ Code SWIFT : CITIIE2X\
 Code IBAN : IE65CITI99005170000121\
 Numéro de compte : 70000121\
 Nom du compte : MICROSOFT
+
+Les factures émises à partir d'une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.

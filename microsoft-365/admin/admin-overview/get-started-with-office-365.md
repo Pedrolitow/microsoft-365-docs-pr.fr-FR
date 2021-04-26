@@ -23,25 +23,25 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, téléphone et tablette.
-ms.openlocfilehash: 0bc2478375cdec231a00bade933680cb69578126
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9b1dc7d42cf532e3f18af74df5d3d87b712fb4d4
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759881"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023928"
 ---
-# <a name="get-started"></a>Démarrer
+# <a name="get-started"></a>Prise en main
 
 Votre organisation a récemment reçu Microsoft 365 et vous devez maintenant l'utiliser pour pouvoir commencer à lire des e-mails, à partager des documents, etc. Découvrez comment configurer et utiliser Microsoft 365 sur votre ordinateur, téléphone et tablette.
 
 ## <a name="training-resources-for-your-users"></a>Ressources de formation pour vos utilisateurs
 
 
-- [Démarrage rapide de l'employé](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
-    
+- [Démarrage rapide de l'employé](../../business-video/employee-quick-setup.md)
+
 - [Centre de formation Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Où se connectez-vous](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Où se connectez-vous ?](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
 - [Installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     

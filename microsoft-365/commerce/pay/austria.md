@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour l’Autriche
+title: Informations de paiement pour l'Autriche
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -12,20 +12,20 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f973737f3be59a9206b207e58605784da617fc81
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6b405536aaa86df5ca6f7f959bd5e9b1cf942ca4
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549603"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024156"
 ---
-# <a name="payment-information-for-austria"></a>Informations de paiement pour l’Autriche
+# <a name="payment-information-for-austria"></a>Informations de paiement pour l'Autriche
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en EUR et référencer les numéro(s) de facture sur votre paiement.**
+**Veuillez payer en EUR et référencer les numéro(s) de facture à votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 
@@ -43,3 +43,5 @@ Code SWIFT : CITIIE2X\
 Code IBAN : IE81CITI99005170000124\
 Numéro de compte : 70000124\
 Nom du compte : MICROSOFT
+
+Les factures émises à partir d'une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.

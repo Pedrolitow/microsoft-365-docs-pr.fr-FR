@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour l’Allemagne
+title: Informations de paiement pour l'Allemagne
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -12,25 +12,25 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c051eabf1f66f83bcacc83f34f0116a6427f4747
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 3b32a55816f96e88b5a8c4ab1a03de0b5993951d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551223"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024060"
 ---
-# <a name="payment-information-for-germany"></a>Informations de paiement pour l’Allemagne
+# <a name="payment-information-for-germany"></a>Informations de paiement pour l'Allemagne
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en EUR et référencer les numéro(s) de facture à votre paiement.**
+**Veuillez payer en EUR et référencer les numéro(s) de facture sur votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 
 Banque :Bankbank, Londres\
-Code SWIFT :VBGB2L\
+Code SWIFT : CITIGB2L\
 Code IBAN : GB31CITI18500812207591\
 Code SORT : 185008\
 Numéro de compte : 12207591\
@@ -43,3 +43,5 @@ Code SWIFT : CITIIE2X\
 Code IBAN : IE38CITI99005170000122\
 Numéro de compte : 70000122\
 Nom du compte : MICROSOFT
+
+Les factures émises à partir d'une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.
