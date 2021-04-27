@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Découvrez les types de groupes que vous pouvez utiliser.
-ms.openlocfilehash: 8565b567706a70bb014fab42b23e9c55fb0efc45
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908745"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023844"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
@@ -83,8 +83,8 @@ Les utilisateurs disposant d’autorisations sur la boîte aux lettres du groupe
 
 Pour le moment, il n'est pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Est-ce une fonction que vous souhaitez avoir ? Faites-le nous savoir. **[Votez ici](https://go.microsoft.com/fwlink/?linkid=871518)**.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)
 
-[Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+[Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)
