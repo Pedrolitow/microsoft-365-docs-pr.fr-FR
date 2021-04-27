@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907455"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028663"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratoire de déploiement Windows et Office
 
 Le kit de laboratoire de déploiement Windows et Office est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des bureaux exécutant Windows 10 Entreprise et Microsoft 365 Apps pour entreprise. Les ateliers du kit couvrent l’utilisation de Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
 
-Ce kit est vivement recommandé pour les organisations qui se préparent aux mises à niveau de Windows 8.1 vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Microsoft 365 Apps pour entreprise (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
+Ce kit est vivement recommandé pour les organisations qui se préparent aux mises à niveau de Windows 8.1 vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Microsoft 365 Apps pour entreprise (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester votre automatisation liée au déploiement.
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -56,7 +56,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 ### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
 - Analyses du bureau 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Attachement du client, cogestion et changement de charges de travail 
+- Attachement des locataires, cogestion et changement de charges de travail 
 - Accès à distance (VPN) 
 
 ### <a name="prepare-configuration"></a>Préparer la configuration   
@@ -99,7 +99,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La version de référence 2002 installée peut être mise à jour vers la version 2010 à l’aide de la mise à jour dans la console. Utilisez une connexion Internet à large bande passante pour télécharger ce contenu et autorisez 30 à 45 minutes pour l’approvisionnement automatique. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le kit expire le 2 mai 2021. Une nouvelle version sera publiée avant expiration.
+* La version de référence 2002 installée peut être mise à jour vers la version 2010 à l’aide de la mise à jour dans la console. Utilisez une connexion Internet à large bande passante pour télécharger ce contenu et autorisez 30 à 45 minutes pour l’approvisionnement automatique. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le kit expire le 22 juillet 2021. Une nouvelle version sera publiée avant expiration.
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

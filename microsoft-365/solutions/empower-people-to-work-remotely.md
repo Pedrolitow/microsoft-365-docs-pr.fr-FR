@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: Vérifiez que vous avez bien activé toutes les fonctionnalités de Microsoft 365. Ce faisant, vous pourrez optimiser la productivité des télétravailleurs et sécuriser l’accès à vos serveurs, vos données et votre cloud.
-ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055518"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029121"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
 
