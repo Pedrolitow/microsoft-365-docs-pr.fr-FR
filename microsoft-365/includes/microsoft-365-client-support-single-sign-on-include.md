@@ -26,7 +26,7 @@
 |NOTES QUI COLLENT|N/A|N/A|N/A|N/A|✔|
 |STREAM|Planifié|Planifié|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|Planifié|Planifié|S/O|
+|TEAMS|✔|✔|Planifié|✔|S/O|
 |TO-DO|✔|✔|N/A|N/A|✔|
 |VISIO|S/O|✔|S/O|✔|S/O|
 |TABLEAU BLANC|S/O|✔|N/A|N/A|✔|
