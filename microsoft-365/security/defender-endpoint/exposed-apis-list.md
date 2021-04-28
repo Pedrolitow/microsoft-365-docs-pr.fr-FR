@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab3d3aa9a13b71f65d3d4335646e32a7e4270242
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061048"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073828"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison.
 
@@ -35,7 +35,7 @@ ms.locfileid: "52061048"
 
 ### <a name="endpoint-uri"></a>URI de point de terminaison
 
-> L'URI de base de service est : [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
+> L'URI de base du service est : [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
 >
 > Les requêtes basées sur OData ont le préfixe « /api ». Par exemple, pour obtenir des alertes, vous pouvez envoyer une requête GET à [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
 
@@ -62,17 +62,16 @@ Rubrique | Description
 [Repérage avancé](run-advanced-query-api.md) | Exécuter des requêtes à partir de l'API.
 [Méthodes et propriétés de l’alerte](alerts.md) | Exécutez des appels d'API tels \- que obtenir des alertes, créer une alerte, mettre à jour une alerte, etc.
 [Méthodes et propriétés d'investigation automatisée](investigation.md) | Exécutez des appels d'API tels \- que obtenir la collection d'examens.
-[Obtenir des alertes liées au domaine](get-domain-related-alerts.md) | Exécutez des appels d'API tels \- que l'get domain-related devices, domain statistics and more.
+[Obtenir des alertes liées au domaine](get-domain-related-alerts.md) | Exécutez des appels d'API comme obtenir des appareils liés \- au domaine, des statistiques de domaine, etc.
 [Soumettre des méthodes et propriétés](files.md) | Exécutez des appels d'API tels que obtenir des informations sur les fichiers, des alertes liées aux fichiers, des périphériques liés \- aux fichiers et des statistiques sur les fichiers.
 [Méthodes et propriétés des indicateurs](ti-indicator.md) | Exécutez un appel d'API tel que obtenir des indicateurs, créer un \- indicateur et supprimer des indicateurs.
 [Obtenir des alertes liées à l’IP](get-ip-related-alerts.md) | Exécutez des appels d'API tels \- que l'get IP-related alerts and get IP statistics.
 [Méthodes et propriétés de l’ordinateur](machine.md) | Exécutez des appels d'API tels que obtenir des appareils, obtenir des appareils par ID, des informations sur les utilisateurs connectés, modifier des \- balises, etc.
 [Méthodes et propriétés de l’action de l’ordinateur](machineaction.md) | Exécutez un appel d'API tel \- que Isolation, Exécuter une analyse antivirus et bien plus encore.
 [Méthodes et propriétés de l’action d'amélioration](recommendation.md) | Exécutez des appels d'API tels \- que obtenir une recommandation par ID.
-[Méthodes et propriétés des activités de correction](get-remediation-methods-properties.md) | Exécutez un appel d'API comme obtenir toutes les tâches de correction, obtenir une tâche de correction des appareils exposés et obtenir une tâche de correction \- par ID.
 [Méthodes et propriétés du score](score.md) | Exécutez des appels d'API tels \- que obtenir le score d'exposition ou obtenir le score de sécurité de l'appareil.
 [Méthodes et propriétés du logiciel](software.md) | Exécutez des appels d'API tels que \- des vulnérabilités de liste par logiciel.
-[Méthodes de l’utilisateur](user.md) | Exécutez des appels d'API tels \- que des alertes liées à l'utilisateur et des appareils liés à l'utilisateur.
+[Méthodes de l’utilisateur](user.md) | Exécutez des appels d'API tels que l'accès à des \- alertes liées à l'utilisateur et à des appareils liés à l'utilisateur.
 [Méthodes et propriétés de la vulnérabilité](vulnerability.md) | Exécutez des appels d'API tels \- que des périphériques de liste par vulnérabilité.
 
 ## <a name="see-also"></a>Voir aussi
