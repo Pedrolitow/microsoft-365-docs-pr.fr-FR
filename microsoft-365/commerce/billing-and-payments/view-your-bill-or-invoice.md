@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939485"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060966"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -62,7 +62,7 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 
 Vous pouvez soumettre votre demande Fapiao à notre [système de gestion Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) environ trois (3) jours après votre paiement.
 
-1. Dans le <a href=”https://go.microsoft.com/fwlink/p/?linkid=850627” target=”_blank”>Centre d'administration</a>, accédez à la page **Facturation** > **Factures et paiements**.
+1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre d'administration</a>, allez à la page **Facturation** > **– Factures** et paiements.
 
 2. Recherchez la facture souhaitée, puis sélectionnez **Obtenir des Fapiaos**.
 
