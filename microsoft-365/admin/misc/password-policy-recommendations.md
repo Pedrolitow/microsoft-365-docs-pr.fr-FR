@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Découvrez comment renforcer la sécurité de votre organisation contre les attaques par mot de passe et la raison pour laquelle vous devez interdire les mots de passe courants et activer l’authentification multifacteur basée sur le risque.
-ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914725"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073864"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -34,7 +34,15 @@ En tant qu’administrateur d’une organisation, vous êtes chargé de la confi
   
 Pour déterminer la fréquence d’expiration des mots de passe Microsoft 365 dans votre organisation, consultez la page [Définir une stratégie d’expiration de mot de passe pour Microsoft 365](../manage/set-password-expiration-policy.md).
 
-Pour obtenir plus d’informations sur les mots de passe Microsoft 365, consultez ces [articles connexes](#related-articles).
+Pour obtenir plus d’informations sur les mots de passe Microsoft 365, consultez :
+
+[Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)
+
+[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](../add-users/set-password-to-never-expire.md) (article)
+
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)
+
+[Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur](../add-users/resend-user-password.md) (article)
   
 ## <a name="understanding-password-recommendations"></a>Présentation des recommandations concernant les mots de passe
 
@@ -134,12 +142,12 @@ L’authentification multifacteur basée sur le risque s'assure que, lorsque not
 
 - [Plus mauvais mots de passe en 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Réinitialiser les mots de passe](../add-users/reset-passwords.md)
+[Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)
 
-[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](../add-users/set-password-to-never-expire.md)
+[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](../add-users/set-password-to-never-expire.md) (article)
 
-[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md)
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)
 
-[Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur](../add-users/resend-user-password.md)
+[Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur](../add-users/resend-user-password.md) (article)

@@ -1,5 +1,5 @@
 ---
-title: Créer un groupe Microsoft 365 avec un PDL spécifique
+title: Créer un groupe Microsoft 365 avec un emplacement de données préféré spécifique
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -13,20 +13,20 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: Découvrez comment créer un groupe Microsoft 365 avec un emplacement de données préféré spécifié dans un environnement multigéogé.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f02a5eb6d8b30e8381c65d4735812675d35af2b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 41984dc24e0f30e5e7b7eb0f9672c75b6d65388f
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923743"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086822"
 ---
-# <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Créer un groupe Microsoft 365 avec un PDL spécifique
+# <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>Créer un groupe Microsoft 365 avec un emplacement de données préféré spécifique
 
-Lorsque les utilisateurs d’un environnement multigéogéal créent un groupe Microsoft 365, l’emplacement de données préféré du groupe est automatiquement définie sur celui de l’utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
+Lorsque les utilisateurs d'un environnement multigéogéal créent un groupe Microsoft 365, l'emplacement de données par favori du groupe (PDL) est automatiquement réglé sur celui de l'utilisateur. Les administrateurs Exchange, SharePoint et généraux peuvent créer des groupes dans n’importe quelle région sélectionnée. 
 
 Si vous devez créer un groupe avec un emplacement par défaut des données spécifique, vous le faire à l’aide de l’applet de commande Microsoft PowerShell New-UnifiedGroup d’Exchange Online ou à partir du Centre d’administration SharePoint. Lorsque vous procédez de la sorte, la boîte aux lettres de groupe et le site SharePoint associé à celui-ci sont configurés dans l’emplacement par défaut des données spécifié.
 
-Pour créer un groupe Microsoft 365 avec le PDL que vous spécifiez, allez au Centre d’administration SharePoint dans l’emplacement géographique où vous souhaitez créer le site de groupe.
+Pour créer un groupe Microsoft 365 avec la PDL que vous spécifiez, allez au Centre d'administration SharePoint dans l'emplacement géographique où vous souhaitez créer le site de groupe.
 
 Par exemple :
 
@@ -55,6 +55,6 @@ Notez que l’approvisionnement du site du groupe SharePoint est à la demande. 
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
