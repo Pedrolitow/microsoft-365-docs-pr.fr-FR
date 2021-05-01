@@ -10,19 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
+- commerce_subscription
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
-ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.date: 04/02/2021
+ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860546"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107471"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
@@ -38,18 +43,18 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 
 Supprimez tous les utilisateurs à l'exception d'un administrateur général. L'administrateur général termine les étapes de fermeture du compte. Avant de pouvoir supprimer l'annuaire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
 
-Si les utilisateurs sont synchronisés en local, désynchronisé, supprimez les utilisateurs dans l'annuaire cloud à l'aide du portail Azure ou des cmdlets Azure PowerShell.
+Si les utilisateurs sont synchronisés en local, désynchronisé, supprimez-les dans l'annuaire cloud à l'aide du portail Azure ou Azure PowerShell cmdlets.
 
-Pour supprimer des utilisateurs, voir Administrateur de gestion des <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">utilisateurs : Supprimer un ou plusieurs utilisateurs.</a>
+Pour supprimer des utilisateurs, [consultez l'administrateur de gestion des utilisateurs : supprimez un ou plusieurs utilisateurs.](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365)
 
-Vous pouvez également utiliser <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">l'cmdlet Remove-MsolUser</a> PowerShell pour supprimer des utilisateurs en bloc.
+Vous pouvez également utiliser [l'cmdlet Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell pour supprimer des utilisateurs en bloc.
 
-Si votre organisation utilise Active Directory qui se synchronise avec Microsoft Azure Active Directory (Azure AD), supprimez le compte d'utilisateur d'Active Directory. Pour obtenir des instructions, <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">voir Suppression en bloc d'utilisateurs dans Azure Active Directory.</a>
+Si votre organisation utilise Active Directory qui se synchronise avec Microsoft Azure Active Directory (Azure AD), supprimez le compte d'utilisateur d'Active Directory. Pour obtenir des instructions, [voir Suppression en bloc d'utilisateurs Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Étape 2 : Annuler tous les abonnements actifs
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sous **l'onglet Produits,** recherchez un abonnement actif. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
+2. Sous **l'onglet** Produits, recherchez un abonnement actif. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
 3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
 4. Sélectionnez **Enregistrer**.
 5. Répétez les étapes 1 à 4 pour annuler tous les abonnements actifs.
@@ -64,7 +69,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Microsoft
 6. Pour chaque abonnement désactivé, répétez les étapes 3 à 5 jusqu'à ce que tous les abonnements soient supprimés.
 
 > [!NOTE]
-> Si vous ne parvenez pas à supprimer immédiatement un abonnement désactivé, contactez <a href="/microsoft-365/Admin/contact-support-for-business-products" target="_blank">le support technique</a>
+> Si vous ne parvenez pas à supprimer immédiatement un abonnement désactivé, [contactez le support technique.](../admin/contact-support-for-business-products.md)
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Étape 4 : Désactiver l'authentification multifacteur
 
@@ -73,7 +78,8 @@ Si votre organisation utilise Active Directory qui se synchronise avec Microsoft
 3. Choisissez **Authentification multifacteur.**
 4. Dans la page Authentification multifacteur, désactivez tous les comptes à l'exception du compte d'administrateur général que vous utilisez actuellement.
 
-Vous pouvez également <a href="/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">utiliser PowerShell pour désactiver l'authentification multifacteur pour plusieurs utilisateurs.</a>
+Vous pouvez également [utiliser PowerShell pour désactiver l'authentification multifacteur pour plusieurs utilisateurs.](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)
+
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Étape 5 : Supprimer le répertoire dans Azure Active Directory
 

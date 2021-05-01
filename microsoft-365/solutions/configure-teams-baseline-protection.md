@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment déployer des équipes à l’aide d’un niveau de protection de référence.
-ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222742"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114293"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurer les équipes avec la protection de référence
 
@@ -96,7 +96,7 @@ Microsoft 365 offre d’autres méthodes pour la sécurisation de votre contenu
 
 - Demandez aux invités d’accepter les [conditions d’utilisation](/azure/active-directory/conditional-access/terms-of-use).
 - Configurez une [stratégie de délai d’expiration de session](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) pour les invités.
-- Créez les [Types d’informations sensibles](../compliance/sensitive-information-type-learn-about.md) et utilisez [Protection contre la perte de données](../compliance/data-loss-prevention-policies.md) pour définir des stratégies autour de l’accès aux informations sensibles.
+- Créez les [Types d’informations sensibles](../compliance/sensitive-information-type-learn-about.md) et utilisez [Protection contre la perte de données](../compliance/dlp-learn-about-dlp.md) pour définir des stratégies autour de l’accès aux informations sensibles.
 
 ## <a name="see-also"></a>Voir aussi
 

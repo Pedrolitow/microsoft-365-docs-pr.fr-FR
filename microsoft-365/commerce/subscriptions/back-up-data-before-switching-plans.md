@@ -12,48 +12,50 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
-ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Sauvegardez le contenu Outlook, OneDrive, Yammer et SharePoint avant de modifier les plans Microsoft 365.
-ms.openlocfilehash: ecfd17d779cbb39ff786b192f72621bc94677776
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: Sauvegardez Outlook, OneDrive, Yammer et SharePoint contenu avant de modifier Microsoft 365 plans.
+ms.date: 03/17/2021
+ms.openlocfilehash: cdbeb7267105742082358dcd985e8fd1052a5679
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860522"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107423"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Back up data before switching Microsoft 365 for business plans
 
 Si un utilisateur est basculé vers un autre abonnement qui a moins de services liés aux données ou si un utilisateur quitte l'organisation, une copie de ses données stockées dans Microsoft 365 peut être téléchargée avant d'être basculée vers le nouvel abonnement.
 
-Si vous souhaitez déplacer un utilisateur vers un abonnement qui possède le même ou plusieurs services, vous n'avez pas besoin de le faire. Voir [Déplacer des utilisateurs vers un autre abonnement.](./move-users-different-subscription.md)
+Si vous souhaitez déplacer un utilisateur vers un abonnement qui dispose du même ou de plusieurs services, vous n'avez pas besoin de le faire. Voir [Déplacer des utilisateurs vers un autre abonnement.](./move-users-different-subscription.md)
   
-## <a name="save-a-copy-of-outlook-information"></a>Enregistrer une copie des informations Outlook
+## <a name="save-a-copy-of-outlook-information"></a>Enregistrer une copie des informations Outlook données
 
-Si les utilisateurs ont Outlook, ils peuvent exporter ou sauvegarder le courrier électronique, les contacts et le calendrier vers un fichier [.pst Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) avant de changer d'offre.
+Si les utilisateurs Outlook, ils peuvent exporter ou sauvegarder le courrier électronique, les contacts et le calendrier vers un [fichier .pst Outlook avant](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) que leur plan ne change.
   
-Une fois le basculement vers la nouvelle offre terminé, les utilisateurs peuvent importer le courrier électronique, les contacts et le calendrier à partir d'un fichier [.pst Outlook.](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
+Une fois le basculement vers la nouvelle offre terminé, les utilisateurs peuvent importer le courrier électronique, les contacts et le calendrier à partir d Outlook [fichier .pst .](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
   
-## <a name="save-files-stored-in-onedrive-for-business"></a>Enregistrer des fichiers stockés dans OneDrive Entreprise
+## <a name="save-files-stored-in-onedrive-for-business"></a>Enregistrer les fichiers stockés dans OneDrive Entreprise
 
-Avant de passer à un autre abonnement, les utilisateurs peuvent télécharger des fichiers et des dossiers à partir de OneDrive ou [SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) vers un autre emplacement, comme un dossier sur le disque dur de leur ordinateur ou un partage de fichiers sur le réseau de l'organisation.
+Avant de passer à un autre abonnement, les utilisateurs peuvent télécharger des fichiers et des [dossiers](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) depuis OneDrive ou SharePoint vers un autre emplacement, tel qu'un dossier sur le disque dur de leur ordinateur ou un partage de fichiers sur le réseau de l'organisation.
   
 ## <a name="save-yammer-information"></a>Enregistrer les Yammer données
 
-Les administrateurs peuvent exporter tous les messages, notes, fichiers, rubriques, utilisateurs et groupes vers un fichier .zip. Pour plus d'informations, [voir Export data from Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Les développeurs peuvent également [utiliser Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) de gestion pour ce faire.
+Les administrateurs peuvent exporter tous les messages, notes, fichiers, rubriques, utilisateurs et groupes vers .zip fichier. Pour plus d'informations, [voir Exporter des données à partir Yammer Entreprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Les développeurs peuvent également [utiliser Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) pour ce faire.
   
-## <a name="how-to-save-sharepoint-information"></a>Comment enregistrer des informations SharePoint
+## <a name="how-to-save-sharepoint-information"></a>Comment enregistrer des SharePoint de données
 
-Si un utilisateur passe d'un abonnement qui a SharePoint Online à un abonnement qui ne l'a pas, la vignette **SharePoint** n'apparaîtra plus dans son menu Microsoft 365.
+Si un utilisateur passe d'un abonnement SharePoint Online à un abonnement qui ne l'a pas, la vignette **SharePoint** n'apparaît plus dans son menu Microsoft 365.
   
-Toutefois, tant que le nouvel abonnement est au sein de la même organisation que celle à partir de celle-ci, les utilisateurs pourront toujours accéder au site d'équipe SharePoint. Ils peuvent afficher et mettre à jour des blocs-notes, des documents, des tâches et des calendriers à l'aide de l'URL directe vers le site d'équipe.
+Toutefois, tant que le nouvel abonnement est au sein de la même organisation que celle à partir de celle-ci, les utilisateurs pourront toujours accéder au site d SharePoint'équipe. Ils peuvent afficher et mettre à jour des blocs-notes, des documents, des tâches et des calendriers à l'aide de l'URL directe vers le site d'équipe.
   
 > [!TIP]
 > Nous recommandons aux utilisateurs d'accéder au site d'équipe avant de changer d'abonnement et d'enregistrer l'URL en tant que favori ou signet dans leur navigateur.
@@ -68,4 +70,4 @@ où  _\<orgDomain\>_ se trouve l'URL de l'organisation.
   
 Par exemple, si le domaine de l'organisation est contoso.onmicrosoft.com, l'URL directe vers le site d'équipe sera `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx` .
   
-Bien entendu, les utilisateurs peuvent également télécharger des documents SharePoint Online à partir du site d'équipe SharePoint sur leur ordinateur local ou vers un autre emplacement à tout moment.
+Bien entendu, les utilisateurs peuvent également télécharger SharePoint documents en ligne à partir du site d'équipe SharePoint sur leur ordinateur local ou à un autre emplacement à tout moment.

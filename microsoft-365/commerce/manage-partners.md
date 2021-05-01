@@ -10,17 +10,23 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: Découvrez comment travailler avec des fournisseurs de solutions (partenaires) certifiés par Microsoft pour acheter et gérer des produits et des services pour votre organisation ou votre établissement scolaire.
-ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.date: 04/13/2021
+ms.openlocfilehash: e225fa0c525d484e8c5a3887b82277a1da5861b0
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51749853"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107567"
 ---
 # <a name="manage-partner-relationships"></a>Gérer les relations de partenariat
 
@@ -28,7 +34,7 @@ Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifi�
 
 1. Les administrateurs recherchent et contactent un partenaire à l'aide du formulaire à <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> l'adresse .
 2. Les partenaires envoient une demande par courrier électronique aux clients pour établir une relation de partenaire.
-3. Les clients acceptent l'invitation dans le Centre d'administration Microsoft 365 et commencent à travailler avec le partenaire.
+3. Les clients acceptent l'invitation Microsoft 365 centre d'administration et commencent à travailler avec le partenaire.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -41,7 +47,7 @@ Un partenaire peut travailler avec vous de plusieurs façons. En fonction des be
 | Type de partenaire | Description |
 | ------ | ------------------- |
 | Revendeur | Partenaires qui vendent des produits Microsoft à votre organisation ou à votre établissement scolaire. |
-| Administrateur délégué | Partenaires qui gèrent les produits et services pour votre organisation ou votre établissement scolaire. Dans Azure Active Directory (AD), le partenaire est administrateur général de votre client. Ce rôle leur permet de gérer des services tels que la création de comptes d'utilisateurs, l'attribution et la gestion des licences, ainsi que les réinitialisations de mot de passe. |
+| Administrateur délégué | Partenaires qui gèrent les produits et services pour votre organisation ou votre établissement scolaire. Dans Azure Active Directory (AD), le partenaire est administrateur général de votre client. Ce rôle leur permet de gérer des services tels que la création de comptes d'utilisateurs, l'attribution et la gestion de licences et la réinitialisation des mots de passe. |
 | Administrateur délégué & revendeur | Partenaires qui vendent et gèrent des produits et services Microsoft à votre organisation ou à votre établissement scolaire. |
 | Partenaire | Vous donnez à votre partenaire un compte d'utilisateur dans votre client et ils travaillent avec d'autres services Microsoft en votre nom. |
 | Advisor | Les partenaires peuvent réinitialiser les mots de passe et gérer les incidents de support pour vous. |
@@ -61,7 +67,7 @@ Le partenaire vous contacte et vous donne la possibilité d'en savoir plus à le
 
 Une fois que vous avez trouvé un partenaire et décidé de travailler avec lui, il vous envoie une invitation par courrier électronique.
 
-1. Dans le courrier électronique, sélectionnez le lien pour aller au Centre d'administration Microsoft 365.
+1. Dans l'e-mail, sélectionnez le lien vers le centre d Microsoft 365'administration.
 2. Dans la page **Accepter & autoriser** le partenaire, sélectionnez le lien du contrat client **Microsoft** et lisez le document.
 3. Cochez la case pour reconnaître que vous avez lu le contrat.
 4. Sélectionnez **Accepter & autoriser**.
@@ -71,7 +77,7 @@ Une fois que vous avez trouvé un partenaire et décidé de travailler avec lui,
 
 Si vous avez déjà un partenaire mais que vous n'avez pas encore signé de contrat client Microsoft, vous devez accepter le contrat avant qu'il puisse effectuer des achats ou gérer vos abonnements en votre nom.
 
-1. Si vous recevez un e-mail de votre partenaire, sélectionnez le lien pour aller au Centre d'administration Microsoft 365 ou sur la page Accepter <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">un contrat.</a>
+1. Si vous recevez un courrier électronique de votre partenaire, sélectionnez le lien pour vous rendre dans le Centre d'administration Microsoft 365 ou sur la page Accepter <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">un</a> contrat.
 2. Sélectionnez le lien du **contrat client Microsoft** et lisez le document.
 3. Cochez la case pour reconnaître que vous avez lu le contrat.
 4. Sélectionnez **Accepter**.
@@ -85,7 +91,7 @@ Si vous ne souhaitez pas donner les rôles d'administrateur au partenaire, annul
 
 Vous pouvez supprimer des rôles d'administrateur d'un partenaire à tout moment. La suppression des rôles d'administrateur ne supprime pas la relation de partenaire. Ils peuvent toujours travailler avec vous à une autre capacité, par exemple un revendeur. Si vous décidez de ne plus travailler avec un partenaire, contactez-le pour mettre fin à la relation.
 
-1. Dans le Centre d'administration, allez à la page **Relations des partenaires paramètres.**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank"></a>
+1. Dans le Centre d'administration, allez à la page **Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relations de partenaires.</a>
 2. Dans la page **Relations des** partenaires, sélectionnez la ligne qui contient le nom du partenaire à supprimer.
 3. Sélectionnez la ligne qui contient le nom du partenaire.
 4. Dans la page partenaire, sélectionnez **Supprimer des rôles.**

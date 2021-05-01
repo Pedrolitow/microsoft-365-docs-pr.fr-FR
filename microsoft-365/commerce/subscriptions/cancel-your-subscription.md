@@ -12,20 +12,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Découvrez comment annuler un abonnement payant ou une version d’évaluation de Microsoft 365 for business.
-ms.date: ''
-ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.date: 04/08/2021
+ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644643"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107001"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
