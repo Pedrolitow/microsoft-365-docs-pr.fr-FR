@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Découvrez les options disponibles pour créer un environnement de partage d’invités sécurisé dans Microsoft 365, offrant un accès invité pour une collaboration améliorée.
-ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a04ee4a96b5e9124ca94a4ece16c32ccc6b072d1
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918465"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114305"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Créer un environnement de partage d’invités sécurisé
 
@@ -72,7 +72,7 @@ Les invités doivent maintenant s'inscrire à l'authentification multifacteur av
 
 Dans certains cas, Il arrive souvent que des invités n'aient pas signé de contrat de non-divulgation ou d’autres accords juridiques avec votre organisation. Vous pouvez demander aux invités d’accepter les conditions d’utilisation avant d’accéder aux fichiers partagés avec eux. Les conditions d’utilisation peuvent s’afficher lors de la première tentative d’accès à un fichier ou à un site partagé.
 
-Pour créer des conditions d’utilisation, vous devez commencer par créer le document dans Word ou dans un autre logiciel de création, puis l’enregistrer sous forme de fichier .pdf. Ce fichier peut ensuite être chargé sur Azure AD.
+Pour créer des conditions d’utilisation, vous devez commencer par créer le document dans Word ou dans un autre logiciel de création, puis l’enregistrer sous forme de fichier .pdf. Ce fichier peut alors être chargé dans Azure AD.
 
 Pour créer des conditions d’utilisation d’Azure AD, procédez comme suit :
 
@@ -256,7 +256,7 @@ Une fois la stratégie en place, lorsqu’un utilisateur tape « Projet Saturne
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Créer une stratégie DLP pour supprimer l’accès invité aux fichiers hautement sensibles
 
-Vous pouvez utiliser la [protection contre la perte de données (DLP)](../compliance/data-loss-prevention-policies.md) pour empêcher le partage de contenu sensible indésirable. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité d’un fichier et supprimer l’accès invité.
+Vous pouvez utiliser la [protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage de contenu sensible indésirable. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité d’un fichier et supprimer l’accès invité.
 
 Création d’une stratégie DLP
 

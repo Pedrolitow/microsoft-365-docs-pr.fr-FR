@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Découvrez comment créer une équipe avec une étiquette de confidentialité unique pour la sécurité.
-ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042685"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113401"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurer une équipe avec l’isolation de sécurité
 
@@ -60,8 +60,8 @@ Voir comment Contoso Corporation a utilisé une équipe isolée pour un projet t
 ## <a name="initial-protections"></a>Protections initiales
 
 Pour vous aider à protéger l’accès à l’équipe et à son site SharePoint sous-jacent, consultez les pratiques recommandées suivantes :
-- [Stratégies pour les accès aux identités et appareils](../security/defender-365-security/identity-access-policies.md)
-- [Stratégies d’accès à SharePoint Online](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [Stratégies pour les accès aux identités et appareils](../security/office-365-security/identity-access-policies.md)
+- [Stratégies d’accès à SharePoint Online](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Déployer les équipes avec la protection Base de référence](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Partage d’invités
@@ -111,8 +111,8 @@ Pour créer une étiquette de confidentialité
 1. Ouvrez [Centre de conformité Microsoft 365](https://compliance.microsoft.com).
 2. Sous **Solutions**, cliquez sur **Protection des informations**.
 3. Cliquez sur **Créer une étiquette**.
-4. Donnez un nom à l’étiquette. Nous vous suggérons de donner le même nom que l’équipe avec qui vous allez l’utiliser.
-5. Tapez un nom et une description pour le complément, puis cliquez sur **Suivant**.
+4. Entrez un nom pour l’étiquette. Nous vous suggérons de donner le même nom que l’équipe avec qui vous allez l’utiliser.
+5. Tapez un nom et une description, puis cliquez sur **Suivant**.
 6. Dans la page **Définir l’étendue de cette page d’étiquettes**, sélectionnez **Fichiers et courriers électroniques** et **Groupes et sites**, puis cliquez sur **Suivant**.
 7. Sur la page **Choisir les paramètres de protection pour les fichiers et les e-mails**, sélectionnez **Chiffrer les fichiers et les e-mails**, puis cliquez sur **Suivant**.
 8. Sur la page **Chiffrement**, sélectionnez **Configurer les paramètres de chiffrement**.
@@ -231,7 +231,7 @@ Microsoft 365 offre d’autres méthodes pour la sécurisation de votre contenu
 
 - Demandez à vos invités d’accepter les [conditions d’utilisation](/azure/active-directory/conditional-access/terms-of-use).
 - Configurez une [stratégie de délai d’expiration de session](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) pour les invités.
-- Créez les [Types d’informations sensibles](../compliance/sensitive-information-type-learn-about.md) et utilisez [Protection contre la perte de données](../compliance/data-loss-prevention-policies.md) pour définir des stratégies autour de l’accès aux informations sensibles.
+- Créez les [Types d’informations sensibles](../compliance/sensitive-information-type-learn-about.md) et utilisez [Protection contre la perte de données](../compliance/dlp-learn-about-dlp.md) pour définir des stratégies autour de l’accès aux informations sensibles.
 - Utilisez révisions d’[Accès Azure Active Directory](/azure/active-directory/governance/access-reviews-overview) pour examiner régulièrement les membres de l’équipe.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Favorisez l’adoption par les utilisateurs pour les membres de l’équipe

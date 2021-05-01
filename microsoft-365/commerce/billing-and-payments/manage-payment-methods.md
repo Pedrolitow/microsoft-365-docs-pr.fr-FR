@@ -12,22 +12,23 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jamitche
 search.appverid:
 - MET150
 description: Découvrez comment gérer les modes de paiement dans le centre d'administration Microsoft 365.
-ms.date: ''
-ms.openlocfilehash: 1d28d082c0a7c123aadaa2230930326139fdcb8e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579781"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107038"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
@@ -35,7 +36,7 @@ Lors de votre achat de produits ou de services commerciaux Microsoft, vous pouve
 
 Si votre compte professionnel comporte un profil de facturation dont vous êtes le propriétaire ou le contributeur, vous pouvez effectuer vos achats par sa carte de crédit associée ou par paiement de facture. Si vous êtes le directeur financier, vous ne pouvez utiliser qu’un profil de facturation pour régler les factures. Pour en savoir plus sur les profils de facturation et les rôles, consultez [Gérer les profils de facturation](manage-billing-profiles.md).
 
-Si votre compte professionnel ne comporte pas de profil de facturation, tout administrateur global ou financier peut gérer et utiliser les comptes bancaires ajoutés au compte professionnel. Cependant, vous ne pouvez gérer ou utiliser que les cartes de crédit que vous ajoutez.
+Si votre compte d’entreprise n’a pas de profil de facturation, un administrateur global ou de facturation peut gérer et utiliser n’importe quel compte bancaire ajouté au compte d’entreprise. Toutefois, vous pouvez uniquement gérer ou utiliser les cartes de crédit que vous ajoutez.
 
 > [!NOTE]
 > L’option de règlement par compte bancaire n’est pas disponible dans certains pays ou régions.
@@ -122,7 +123,7 @@ Si un mode de paiement est associé à un abonnement ou à un profil de facturat
 | Problème | Étapes de résolution des problèmes |
 |:----------|:-----|
 |**Un message d'erreur indiquant que le navigateur est actuellement configuré pour bloquer les cookies apparaît.** |Configurez votre navigateur pour autoriser les cookies tiers, puis réessayez. |
-|**Ma carte bancaire a été refusée.** |Si vous payez par carte bancaire et que cette dernière est refusée, vous recevez un courrier électronique vous informant que Microsoft n’a pas pu procéder au paiement. Vérifiez que les détails de la carte (numéro, date d’expiration, nom du détenteur et adresse, dont la ville et le code postal) correspondent exactement à ceux inscrits sur la carte et sur votre relevé. Vous pouvez mettre à jour les informations de la carte et autoriser immédiatement le paiement en suivant le lien **Régler le montant** dans la section **Facturation** de la page de détails de l’abonnement. Pour plus d’informations, consultez [Que se passe-t-il si j’ai un montant impayé ?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Si vous obtenez toujours le message de refus de la carte, contactez votre banque. Votre carte n’est peut-être pas active. Si la carte vous a récemment été remise par courrier postal pour cause d’extension de validité, assurez-vous qu’elle a été activée. Votre établissement bancaire peut également vous indiquer si votre carte bancaire ne vous permet pas d'effectuer de transactions en ligne, internationales ou récurrentes. |
+|**Ma carte bancaire a été refusée.** |Si vous payez par carte bancaire et que cette dernière est refusée, vous recevez un courrier électronique vous informant que Microsoft n’a pas pu procéder au paiement. Vérifiez que les détails de la carte (numéro, date d’expiration, nom du détenteur et adresse, dont la ville et le code postal) correspondent exactement à ceux inscrits sur la carte et sur votre relevé. Vous pouvez mettre à jour les informations de la carte et autoriser immédiatement le paiement en suivant le lien **Régler le montant** dans la section **Facturation** de la page de détails de l’abonnement. Pour plus d’informations, consultez [Que se passe-t-il si j’ai un montant impayé ?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Si vous continuez à recevoir le message « Refusé », contactez votre banque. Il est possible que votre carte ne soit pas active. Si vous avez reçu cette carte récemment par courrier avec une date d’expiration mise à jour, assurez-vous de l’activer. Votre établissement bancaire peut également vous indiquer si votre carte n’est pas approuvée pour des transactions en ligne, internationales ou récurrentes. |
 |**Je souhaite mettre à jour un numéro de carte ou de compte bancaire.** |Vous ne pouvez pas modifier le numéro de carte ou de compte bancaire d’un mode de paiement existant. Si le numéro de carte ou de compte bancaire a changé, [procédez au remplacement du mode de paiement](#replace-a-payment-method) : tous les abonnements associés à ce mode de paiement seront reportés sur le nouveau mode ; puis [supprimez le mode obsolète](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Je n'ai qu'une carte ou qu’un compte bancaire sur mon compte et je souhaite le ou la supprimer.** |Si vous n’avez qu’un seul mode de paiement, vous devez en [effectuez le remplacement par un nouveau mode de paiement](#replace-a-payment-method) avant de pouvoir le supprimer. |
 |**Je ne parviens pas à ajouter ma carte ou mon compte bancaire.**  |Vous devez utiliser un mode de paiement provenant du même pays que celui de votre client. Si vous ne parvenez pas à entrer les informations de votre carte ou votre compte bancaire, vous pouvez [contacter le support technique](../../admin/contact-support-for-business-products.md). |
