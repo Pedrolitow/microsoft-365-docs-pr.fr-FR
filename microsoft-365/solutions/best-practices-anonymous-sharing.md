@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1e696611d37cd1b57f881457025464dccea54496
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199524"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114317"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
 Le partage non authentifié (liens *Tout le monde*) est pratique et utile dans différents scénarios. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les personnes peuvent ouvrir le lien sans authentification et sont libres de le transmettre à d’autres personnes.
 
-En règle générale, l’ensemble du contenu d’une organisation ne nécessite pas de partage non authentifié. Cet article décrit les options possibles pour vous aider à créer un environnement dans lequel vos utilisateurs peuvent partager des fichiers et des dossiers de manière non authentifiée, mais où des éléments de protection sont mis en place pour protéger le contenu de votre organisation.
+Généralement, tout le contenu d’une organisation n’est pas approprié pour un partage sans identification. Cet article décrit les options possibles pour vous aider à créer un environnement dans lequel vos utilisateurs peuvent partager des fichiers et des dossiers de manière non authentifiée, mais où des éléments de protection sont mis en place pour protéger le contenu de votre organisation.
 
 > [!NOTE]
 > Pour que le partage non authentifié puisse fonctionner, vous devez l’activer pour votre organisation et pour le site ou l’équipe qui sera concerné. Pour plus d’informations sur le scénario que vous souhaitez mettre en place, voir [Collaborer avec des personnes extérieures à votre organisation](collaborate-with-people-outside-your-organization.md).
@@ -103,7 +103,7 @@ Pour définir le lien de partage de fichier et de dossier par défaut pour un si
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Empêcher le partage non authentifié de contenu sensible
 
-Vous pouvez utiliser la [protection contre la perte de données (DLP)](../compliance/data-loss-prevention-policies.md) pour empêcher le partage non authentifié de contenu sensible. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité, l’étiquette de rétention ou les informations sensibles d’un fichier proprement dit.
+Vous pouvez utiliser la [protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage non authentifié de contenu sensible. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité, l’étiquette de rétention ou les informations sensibles d’un fichier proprement dit.
 
 Création d’une stratégie DLP
 1. Dans le Centre de conformité Microsoft 365, accédez à la [page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
