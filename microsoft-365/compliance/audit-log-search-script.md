@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Utilisez un script PowerShell qui exécute l’applet de commande Search-UnifiedAuditLog dans Exchange Online pour effectuer des recherches dans le journal d’audit. Ce script est optimisé pour renvoyer les enregistrements d’un grand jeu d’audits (jusqu’à 50 000). Le script exporte ces enregistrements dans un fichier CSV que vous pouvez afficher ou transformer à l’aide de Power Query dans Excel.
-ms.openlocfilehash: 7ac3903abffc0bedb28363159c81b1f67a199f32
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: df5e675e5e36603a73078bd5ecf5e64bc7a76f95
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907762"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939564"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit
 
@@ -45,14 +45,14 @@ Lorsque vous devez récupérer manuellement des données d’audit pour une enqu
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
-  
+
   La valeur `True` de la propriété **UnifiedAuditLogIn élémentsenabled** indique que vous avez activé la recherche dans le journal d’audit.
 
 - Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour exécuter correctement le script. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page Autorisations dans le Centre d’administration Exchange. Pour plus d’informations, voir la section « Exigences pour effectuer une recherche dans le journal d’audit » dans [Effectuer des recherches dans le journal d’audit dans le Centre de conformité](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log).
 
 - La fin du script peut prendre un certain temps. Le temps d’exécuter dépend de la plage de dates et de la taille de l’intervalle pour laquelle vous configurez le script afin de récupérer les enregistrements d’audit. Des plages de dates plus grandes et des intervalles plus petits entraînent une durée d’exécution longue. Pour plus d’informations sur la plage de dates et les intervalles, consultez le tableau de l’étape 2.
 
-- L’exemple de script fourni dans cet article n’est pas pris en charge par les services ou programmes d’assistance standard de Microsoft. L’exemple de script est fourni tel quel, sans garantie d’aucune sorte. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. La totalité des risques découlant de l’utilisation ou de la performance de l’exemple de script et de la documentation repose sur vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison de script ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser l’exemple de script ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+- L’exemple de script fourni dans cet article n’est pris en charge dans aucun programme de support ou service standard de Microsoft. L’exemple de script est fourni en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution de l’exemple de script et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison du script ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser l’exemple de script ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
 ## <a name="step-1-connect-to-exchange-online-powershell"></a>Étape 1 : Connexion à Exchange Online PowerShell
 
@@ -62,88 +62,92 @@ La première étape consiste à se connecter à Exchange Online PowerShell. Vous
 
 Une fois que vous êtes connecté à Exchange Online PowerShell, l’étape suivante consiste à créer, modifier et exécuter le script afin de récupérer les données d’audit. Les sept premières lignes du script de recherche dans le journal d’audit contiennent les variables suivantes que vous pouvez modifier pour configurer votre recherche. Consultez le tableau à l’étape 2 pour obtenir une description de ces variables.
 
-1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l'aide du suffixe de nom de fichier .ps1. Par exemple, SearchAuditLog.ps1.
+1. Enregistrez le texte suivant dans un fichier de script Windows PowerShell à l’aide du suffixe de nom de fichier .ps1. Par exemple, SearchAuditLog.ps1.
 
-```powershell
-#Modify the values for the following variables to configure the audit log search.
-$logFile = "d:\AuditLogSearch\AuditLogSearchLog.txt"
-$outputFile = "d:\AuditLogSearch\AuditLogRecords.csv"
-[DateTime]$start = [DateTime]::UtcNow.AddDays(-1)
-[DateTime]$end = [DateTime]::UtcNow
-$record = "AzureActiveDirectory"
-$resultSize = 5000
-$intervalMinutes = 60
-
-#Start script
-[DateTime]$currentStart = $start
-[DateTime]$currentEnd = $start
-
-Function Write-LogFile ([String]$Message)
-{
-    $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
-    $final | Out-File $logFile -Append
-}
-
-Write-LogFile "BEGIN: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize."
-Write-Host "Retrieving audit records for the date range between $($start) and $($end), RecordType=$record, ResultsSize=$resultSize"
-
-$totalCount = 0
-while ($true)
-{
-    $currentEnd = $currentStart.AddMinutes($intervalMinutes)
-    if ($currentEnd -gt $end)
-    {
-        $currentEnd = $end
-    }
-
-    if ($currentStart -eq $currentEnd)
-    {
-        break
-    }
-
-    $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
-    Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
-    Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
-    $currentCount = 0
-
-    $sw = [Diagnostics.StopWatch]::StartNew()
-    do
-    {
-        $results = Search-UnifiedAuditLog -StartDate $currentStart -EndDate $currentEnd -RecordType $record -SessionId $sessionID -SessionCommand ReturnLargeSet -ResultSize $resultSize
-
-        if (($results | Measure-Object).Count -ne 0)
-        {
-            $results | export-csv -Path $outputFile -Append -NoTypeInformation
-
-            $currentTotal = $results[0].ResultCount
-            $totalCount += $results.Count
-            $currentCount += $results.Count
-            Write-LogFile "INFO: Retrieved $($currentCount) audit records out of the total $($currentTotal)"
-
-            if ($currentTotal -eq $results[$results.Count - 1].ResultIndex)
-            {
-                $message = "INFO: Successfully retrieved $($currentTotal) audit records for the current time range. Moving on!"
-                Write-LogFile $message
-                Write-Host "Successfully retrieved $($currentTotal) audit records for the current time range. Moving on to the next interval." -foregroundColor Yellow
-                ""
-                break
-            } 
-        }
-    }
-    while (($results | Measure-Object).Count -ne 0)
-
-    $currentStart = $currentEnd
-}
-
-Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
-Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
-```
+   ```powershell
+   #Modify the values for the following variables to configure the audit log search.
+   $logFile = "d:\AuditLogSearch\AuditLogSearchLog.txt"
+   $outputFile = "d:\AuditLogSearch\AuditLogRecords.csv"
+   [DateTime]$start = [DateTime]::UtcNow.AddDays(-1)
+   [DateTime]$end = [DateTime]::UtcNow
+   $record = "AzureActiveDirectory"
+   $resultSize = 5000
+   $intervalMinutes = 60
+   
+   #Start script
+   [DateTime]$currentStart = $start
+   [DateTime]$currentEnd = $start
+   
+   Function Write-LogFile ([String]$Message)
+   {
+       $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
+       $final | Out-File $logFile -Append
+   }
+   
+   Write-LogFile "BEGIN: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize."
+   Write-Host "Retrieving audit records for the date range between $($start) and $($end), RecordType=$record, ResultsSize=$resultSize"
+   
+   $totalCount = 0
+   while ($true)
+   {
+       $currentEnd = $currentStart.AddMinutes($intervalMinutes)
+       if ($currentEnd -gt $end)
+       {
+           $currentEnd = $end
+       }
+   
+       if ($currentStart -eq $currentEnd)
+       {
+           break
+       }
+   
+       $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
+       Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
+       Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
+       $currentCount = 0
+   
+       $sw = [Diagnostics.StopWatch]::StartNew()
+       do
+       {
+           $results = Search-UnifiedAuditLog -StartDate $currentStart -EndDate $currentEnd -RecordType $record -SessionId $sessionID -SessionCommand ReturnLargeSet -ResultSize $resultSize
+   
+           if (($results | Measure-Object).Count -ne 0)
+           {
+               $results | export-csv -Path $outputFile -Append -NoTypeInformation
+   
+               $currentTotal = $results[0].ResultCount
+               $totalCount += $results.Count
+               $currentCount += $results.Count
+               Write-LogFile "INFO: Retrieved $($currentCount) audit records out of the total $($currentTotal)"
+   
+               if ($currentTotal -eq $results[$results.Count - 1].ResultIndex)
+               {
+                   $message = "INFO: Successfully retrieved $($currentTotal) audit records for the current time range. Moving on!"
+                   Write-LogFile $message
+                   Write-Host "Successfully retrieved $($currentTotal) audit records for the current time range. Moving on to the next interval." -foregroundColor Yellow
+                   ""
+                   break
+               }
+           }
+       }
+       while (($results | Measure-Object).Count -ne 0)
+   
+       $currentStart = $currentEnd
+   }
+   
+   Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
+   Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
+   ```
 
 2. Modifiez les variables répertoriées dans le tableau suivant pour configurer les critères de recherche. Le script inclut des exemples de valeurs pour ces variables, mais vous devez les modifier (sauf indication contraire) pour répondre à vos exigences spécifiques.
 
+   <br>
+
+   ****
+
    |Variable|Exemple de valeur|Description|
    |---|---|---|
-   |`$logFile`|"d:\temp\AuditSearchLog.txt"|Indique le nom et l’emplacement du fichier journal qui contient des informations sur la progression de la recherche dans le journal d’audit effectuée par le script. Le script écrit les horodatages UTC sur le fichier d’audit.|
+   |`$logFile`|"d:\temp\AuditSearchLog.txt"|Indique le nom et l’emplacement du fichier journal qui contient des informations sur la progression de la recherche dans le journal d’audit effectuée par le script. Le script écrit les horodatages UTC sur le fichier journal.|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|Indique le nom et l’emplacement du fichier CSV contenant les enregistrements d’audit renvoyés par le script.|
    |`[DateTime]$start` et `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Spécifie la plage de dates pour la recherche dans le journal d’audit. Le script retourne les enregistrements des activités d’audit qui se sont produites dans la plage de dates spécifiée. Par exemple, pour renvoyer les activités effectuées en janvier 2021, vous pouvez utiliser une date de début de `"2021-01-01"` et une date de fin de `"2021-01-31"` (n’oubliez pas d’entourer les valeurs de guillemets doubles) La valeur d’exemple dans le script renvoie les enregistrements des activités effectuées au cours des 24 heures précédentes. si vous n’incluez pas d’horodatage dans la valeur, l’horodatage par défaut est 00:00 (minuit) pour la date spécifiée.|
    |`$record`|« AzureActiveDirectory »|Spécifie le type d’enregistrement des activités d’audit (également *opérations*) à rechercher. Cette propriété indique le service ou la fonctionnalité dans qui une activité a été déclenchée. Pour obtenir la liste des types d’enregistrement que vous pouvez utiliser pour cette variable, consultez [Type d’enregistrement journal d’audit](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). Vous pouvez utiliser le nom du type d’enregistrement ou la valeur ENUM. <br/><br/>**Conseil :** pour renvoyer les enregistrements d'audit pour tous les types d'enregistrements, utilisez la valeur `$null` (sans guillemets doubles).|

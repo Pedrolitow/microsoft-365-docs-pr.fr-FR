@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: 7ba807dce8b1d67280aeab929901327b7bfe03ef
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 18679e171fa704341094dee582124f36a950f8a5
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908532"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113986"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
 Cette rubrique vous montre comment utiliser PowerShell pour créer une *Règle de package* qui définit vos propres [Types d’informations sensibles](sensitive-information-type-entity-definitions.md) personnalisés. Vous devez savoir comment créer une expression régulière. À titre d’exemple, cette rubrique permet de créer un type d’informations sensibles personnalisé qui identifie un ID d’employé. Vous pouvez utiliser cet exemple de code XML comme point de départ de votre propre fichier XML. Si vous découvrez les types d’informations sensibles pour la première fois, consultez [En savoir plus sur les types d’informations sensibles](sensitive-information-type-learn-about.md).
 
-Après la création d’un fichier XML correct, vous pouvez le charger sur Microsoft 365 à l’aide de Microsoft 365 PowerShell.   Ensuite, vous pouvez utiliser votre type d’informations sensibles personnalisé dans vos stratégies et vérifier qu’il détecte bien les informations sensibles comme souhaité.
+Après avoir créé un fichier XML bien formé, vous pouvez le charger sur Microsoft 365 à l’aide de Microsoft 365 PowerShell. Ensuite, vous pouvez utiliser votre type d’informations sensibles personnalisé dans vos stratégies et vérifier qu’il détecte bien les informations sensibles comme souhaité.
 
 > [!NOTE]
 > Si vous n’avez pas besoin du contrôle parfait offert par PowerShell, vous pouvez créer des types d’informations sensibles personnalisés dans le centre de conformité. Pour en savoir plus, consulter [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md).
@@ -61,15 +61,15 @@ Voici l’exemple de code XML du package de règles que nous allons créer dans
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-        <Pattern confidenceLevel="60">
+    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="65">
             <IdMatch idRef="Regex_employee_id"/>
         </Pattern>
-        <Pattern confidenceLevel="70">
+        <Pattern confidenceLevel="75">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
         </Pattern>
-        <Pattern confidenceLevel="80">
+        <Pattern confidenceLevel="85">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
             <Any minMatches="1">
@@ -134,7 +134,7 @@ Dans cette rubrique, les marques XML utilisent la règle pour désigner les moti
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>Scénario le plus simple : entité avec un modèle
 
-Voici le scénario le plus simple. Vous souhaitez que votre stratégie identifie le contenu qui comprend l’ID d’employé de votre organisation, sous la forme d’un nombre à neuf chiffres. Par conséquent, le modèle référence une expression régulière contenue dans la règle qui identifie le nombre à neuf chiffres. Tout contenu comprenant un nombre à neuf chiffres correspond au modèle.
+Voici le scénario le plus simple : vous souhaitez que votre stratégie identifie le contenu qui comprend l’ID d’employé de votre organisation, sous la forme d’un nombre à neuf chiffres. Par conséquent, le modèle référence une expression régulière contenue dans la règle qui identifie le nombre à neuf chiffres. Tout contenu comprenant un nombre à neuf chiffres correspond au modèle.
   
 ![Diagramme d’une entité avec un modèle](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
@@ -150,7 +150,7 @@ Par exemple, pour augmenter la probabilité d’identifier le contenu qui contie
   
 Voici quelques aspects importants de cette structure à prendre en compte :
   
-- Les modèles qui nécessitent plus de preuves ont un niveau de confiance plus élevé. Ceci est utile, car lorsque vous utilisez ultérieurement ce type d’informations sensibles dans une stratégie, vous pouvez utiliser des actions plus restrictives (par exemple, le blocage de contenu) avec uniquement les correspondances de confiance les plus élevées, et vous pouvez utiliser les actions moins restrictives (par exemple, envoyer une notification) avec les correspondances de confiance inférieures.
+- Les modèles qui nécessitent plus de preuves ont un niveau de confiance plus élevé. Ceci est utile, car lorsque vous utilisez ultérieurement ce type d’informations sensibles dans une stratégie, vous pouvez utiliser des actions plus restrictives (par exemple, le blocage de contenu) avec uniquement les correspondances dont le niveau de confiance est le plus élevé, et vous pouvez utiliser les actions moins restrictives (par exemple, l’envoi de notification) avec les correspondances dont le niveau de confiance est le moins élevé.
 
 - Les éléments de soutien IdMatch et Match font référence à des regex (expressions régulières) et à des mots clés qui sont des enfants de l’élément Rule, pas de l’élément Pattern. Ces éléments de soutien sont référencés par le modèle, mais inclus dans la règle. Cela signifie qu’une seule définition d’un élément de soutien, par exemple, une expression régulière ou une liste de mots clés, peut être référencée par plusieurs entités et modèles.
 
@@ -161,7 +161,7 @@ Une entité est un type d’informations sensibles, tel qu’un numéro de carte
 ### <a name="name-the-entity-and-generate-its-guid"></a>Nommer l’entité et générer son GUID
 
 1. Dans l’éditeur XML de votre choix, ajoutez les éléments Règles et Entité.
-2. Ajoutez un commentaire qui contient le nom de votre entité personnalisée — dans cet exemple, l’ID d’employé. Plus tard, vous allez ajouter le nom de l’entité à la section de chaînes localisées et ce nom s’affiche dans l’interface utilisateur lorsque vous créez une stratégie.
+2. Ajoutez un commentaire qui contient le nom de votre entité personnalisée – dans cet exemple, l’ID d’employé. Plus tard, vous allez ajouter le nom de l’entité à la section de chaînes localisées et ce nom s’affiche dans l’interface utilisateur lorsque vous créez une stratégie.
 3. Générez un GUID pour votre entité. Vous disposez de plusieurs méthodes pour générer des GUID, mais cette opération peut être effectuée facilement dans PowerShell en saisissant **[guid]::NewGuid()**. Plus tard, vous ajouterez également le GUID de l’entité à la section de chaînes localisées.
   
 ![Balisage XML montrant les éléments Rules et Entity](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -210,7 +210,7 @@ Dans cet exemple, l’entité d’ID d’employé utilise déjà l’élément I
   
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Autres modèles tels que des dates ou des adresses [fonctions intégrées]
 
-En plus des types d’informations sensibles intégrés, les types d’informations sensibles peuvent également utiliser des fonctions intégrées qui peuvent identifier une preuve d’appui telle que la date des États-Unis, celle de l’Union Européenne, la date d’expiration, une adresse des États-Unis. Microsoft 365 ne prend pas en charge le chargement de fonctions personnalisées, mais lorsque vous créez un type d’informations sensibles personnalisé, votre entité peut référencer les fonctions intégrées.
+En plus des types d’informations sensibles intégrés, les types d’informations sensibles peuvent également utiliser des fonctions intégrées qui peuvent identifier une preuve d’appui telle que la date des États-Unis, celle de l’Union Européenne, la date d’expiration, une adresse des États-Unis. Microsoft 365 ne prend pas en charge le chargement de fonctions personnalisées, mais lorsque vous créez un type d’informations sensibles personnalisé, votre entité peut référencer les fonctions intégrées.
   
 Par exemple, une date figure sur les badges d’ID d’employé. Cette entité personnalisée peut donc utiliser la fonction intégrée `Func_us_date` pour identifier une date au format utilisé aux États-Unis. 
   
@@ -300,9 +300,9 @@ L’élément Pattern est associé à un attribut confidenceLevel obligatoire. V
   
 En plus de l’attribut confidenceLevel de chaque modèle, l’entité possède un attribut recommendedConfidence. L’attribut de niveau de confiance recommandé est assimilable au niveau de confiance par défaut de la règle. Lorsque vous créez une règle dans une stratégie, si vous n’indiquez pas le niveau de confiance que la règle doit utiliser, cette règle recherche les correspondances en fonction du niveau de confiance recommandé pour l’entité. Notez que l’attribut recommendedConfidence est obligatoire pour chaque ID d’entité dans le package de règles, sans lui, vous ne pourrez pas enregistrer les stratégies utilisant le type d’informations sensibles. 
   
-## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Voulez-vous prendre en charge d’autres langues dans l’interface utilisateur du centre de conformité ? Élément LocalizedStrings
+## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Voulez-vous prendre en charge d’autres langues dans l’interface utilisateur du Centre de conformité ? [élément LocalizedStrings]
 
-Si votre équipe de conformité utilise le centre de sécurité  conformité Microsoft 365 pour créer des stratégies avec différents paramètres régionaux et dans différentes langues, vous pouvez fournir des versions localisées du nom et de la description de votre type d’informations sensibles personnalisé. Lorsque votre équipe de conformité utilise Microsoft 365 dans une langue que vous prenez en charge, le nom localisé s’affiche dans l’interface utilisateur.
+Si votre équipe de conformité utilise le Centre de conformité Microsoft 365 pour créer des stratégies avec différents paramètres régionaux et dans différentes langues, vous pouvez fournir des versions localisées du nom et de la description de votre type d’informations sensibles personnalisé. Lorsque votre équipe de conformité utilise Microsoft 365 dans une langue que vous prenez en charge, le nom localisé s’affiche dans l’interface utilisateur.
   
 ![Nombre d’instances et options de précision de correspondance](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -310,7 +310,7 @@ L’élément Rules doit contenir un élément LocalizedStrings, qui contient un
   
 ![Balisage XML montrant le contenu de l’élément LocalizedStrings](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
-Notez que vous utilisez des chaînes localisées uniquement pour l’affichage de votre type d’informations sensibles dans l’interface utilisateur du centre de conformité. Vous ne pouvez pas utiliser des chaînes localisées pour fournir différentes versions localisées d’une liste de mots clés ou une expression régulière.
+Notez que vous utilisez des chaînes localisées uniquement pour l’affichage de votre type d’informations sensibles dans l’interface utilisateur du Centre de conformité. Vous ne pouvez pas utiliser des chaînes localisées pour fournir différentes versions localisées d’une liste de mots clés ou une expression régulière.
   
 ## <a name="other-rule-package-markup-rulepack-guid"></a>Autre balisage de package de règles [GUID RulePack]
 
@@ -348,7 +348,7 @@ Lorsque vous avez terminé, votre élément RulePack doit ressembler à ce qui s
   
 ## <a name="changes-for-exchange-online"></a>Modifications pour Exchange Online
 
-Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Désormais, vos types d’informations sensibles personnalisés peuvent être utilisés dans le centre d’administration Exchange et dans le centre de conformité. Dans le cadre de cette amélioration, nous vous conseillons d’utiliser PowerShell dans le centre conformité pour importer vos types d’informations sensibles personnalisés, car vous ne pouvez plus les importer à partir de PowerShell Exchange. Vos types d’informations sensibles personnalisés continueront à fonctionner comme d’habitude. Toutefois, l’affichage dans le centre d’administration Exchange des modifications apportées aux types d’informations sensibles personnalisés dans le centre de conformité peut prendre au maximum une heure.
+Auparavant, vous utilisiez peut-être Exchange Online PowerShell pour importer vos types d’informations sensibles personnalisés pour DLP. Désormais, vos types d’informations sensibles personnalisés peuvent être utilisés dans le Centre d’administration Exchange et dans le Centre de conformité. Dans le cadre de cette amélioration, nous vous conseillons d’utiliser l’interface PowerShell du Centre conformité pour importer vos types d’informations sensibles personnalisés, car vous ne pouvez plus les importer à partir de PowerShell Exchange. Vos types d’informations sensibles personnalisés continueront à fonctionner comme d’habitude. Toutefois, l’affichage dans le Centre d’administration Exchange des modifications apportées aux types d’informations sensibles personnalisés dans le Centre de conformité peut prendre au maximum une heure.
   
 Notez que, dans le centre de conformité, vous pouvez utiliser la cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** pour charger un package de règles. (Auparavant, dans le centre d’administration Exchange, vous utilisiez la cmdlet **ClassificationRuleCollection**.) 
   
@@ -453,7 +453,7 @@ Si un type d’informations sensibles personnalisé contient un problème qui pe
     
 ## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>Analyser de nouveau le contenu pour identifier les informations sensibles
 
-Microsoft 365 utilise le robot de recherche pour identifier et classer les informations sensibles du contenu d’un site. Le contenu des sites SharePoint Online et OneDrive Entreprise est à nouveau analysé automatiquement chaque fois qu’il est mis à jour. Mais pour que votre nouveau type d’informations sensibles personnalisé puisse être identifié dans l’ensemble du contenu existant, il doit être de nouveau analysé.
+Microsoft 365 utilise le robot de recherche pour identifier et classer les informations sensibles du contenu d’un site. Le contenu des sites SharePoint Online et OneDrive Entreprise est à nouveau analysé automatiquement chaque fois qu’il est mis à jour. Mais pour que votre nouveau type d’informations sensibles personnalisé puisse être identifié dans l’ensemble du contenu existant, il doit être de nouveau analysé.
   
 Dans Microsoft 365, vous ne pouvez pas demander manuellement une nouvelle analyse de l’ensemble d’un client, mais vous pouvez le faire pour une collection de sites, une liste ou une bibliothèque (consultez l’article [Demander manuellement l’analyse et la réindexation d’un site, d’une bibliothèque ou d’une liste](/sharepoint/crawl-site-content)).
   
@@ -532,7 +532,7 @@ Pour vous connecter à PowerShell du centre de conformité, consultez [Se connec
    ```
 
    > [!NOTE]
-   > Le package de règles intégré qui contient les types d’informations sensibles intégrés s’intitule Microsoft Rule Package. Le package de règles qui contient les types d’informations sensibles personnalisés que vous avez créés dans l’interface utilisateur du centre de conformité est nommé Microsoft.SCCManaged.CustomRulePack.
+   > Le package de règles intégré qui contient les types d’informations sensibles intégrés s’intitule Microsoft Rule Package. Le package de règles qui contient les types d’informations sensibles personnalisés que vous avez créés dans l’interface utilisateur du Centre de conformité est nommé Microsoft.SCCManaged.CustomRulePack.
 
 2. Utilisez la cmdlet [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) pour stocker le package de règles personnalisé dans une variable :
 
@@ -921,7 +921,7 @@ Vous pouvez copier ce balisage, l’enregistrer sous la forme d’un fichier XS
 
 ## <a name="more-information"></a>Plus d’informations
 
-- [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 

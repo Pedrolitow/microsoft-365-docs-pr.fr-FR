@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
+ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222417"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52079257"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -45,7 +45,7 @@ Enfin, en tant qu’administrateur, lorsque vous configurez une étiquette de co
 - **Attribuer des autorisations maintenant**, afin de déterminer précisément les utilisateurs autorisés à accéder au contenu associé à cette étiquette.
 - **Permettre aux utilisateurs d'attribuer des autorisations** lorsqu’ils appliquent l’étiquette au contenu. De cette façon, vous pouvez proposer aux membres de votre organisation la souplesse nécessaire pour mieux collaborer et accomplir leur travail.
 
-Les paramètres de chiffrement sont disponibles lorsque vous [créez une étiquette de sensibilité](create-sensitivity-labels.md) dans le Centre de conformité Microsoft 365, le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité.
+Les paramètres de chiffrement sont disponibles lorsque vous [créez une étiquette de confidentialité](create-sensitivity-labels.md) dans le Centre de conformité Microsoft 365. Vous pouvez également utiliser l’ancien portail, le Centre de sécurité et conformité.
 
 ## <a name="understand-how-the-encryption-works"></a>Comprendre comment fonctionne le chiffrement
 
@@ -236,7 +236,7 @@ Vous pouvez utiliser les options suivantes pour autoriser les utilisateurs à at
     
     L’option Ne pas transférer est prise en charge par tous les clients de messagerie électronique qui prennent en charge les étiquettes de confidentialité. Toutefois, l’application de l’option **Chiffrer uniquement** avec une étiquette de confidentialité est une nouveauté prise en charge uniquement par l’étiquetage intégré et non par le client d’étiquetage unifié Azure Information Protection. Pour les clients de messagerie électronique qui ne prennent pas cette fonctionnalité en charge, l’étiquette n’est pas visible.
     
-    Pour savoir quelles applications Outlook prennent charge l’étiquetage intégré qui applique l’option Chiffrer uniquement avec une étiquette de niveau de confidentialité, utilisez le [tableau des fonctionnalités pour Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) et la ligne **Permettre aux utilisateurs d’attribuer des autorisations : – Chiffrer uniquement**.
+    Pour consulter les versions minimales des applications Outlook qui utilisent l’étiquetage intégré pour en prendre en charge l’application de l’option Chiffrer uniquement avec une étiquette de confidentialité, utilisez le [tableau des fonctionnalités pour Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) et la ligne **Permettre aux utilisateurs d’attribuer des autorisations : – Chiffrer uniquement**.
 
 - Dans Word, PowerPoint et Excel, l’utilisateur est invité à sélectionner ses propres niveaux d’autorisation pour des utilisateurs, des groupes ou des organisations spécifiques.
 
@@ -424,7 +424,7 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
 
 - Configurer Exchange pour Azure Information Protection
     
-    Il n’est pas indispensable de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook afin de chiffrer leurs courriers électroniques. Cependant, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
+    Il n’est pas indispensable de configurer Exchange pour Azure Information Protection pour que les utilisateurs puissent appliquer des étiquettes dans Outlook afin de chiffrer leurs e-mails. Toutefois, aussi longtemps que Exchange n’est pas configuré pour Azure Information Protection, vous ne bénéficiez pas de toutes les fonctionnalités d’utilisation de la protection d’Azure Rights Management avec Exchange.
     
     Par exemple, les utilisateurs ne peuvent pas afficher les e-mails chiffrés sur des téléphones mobiles ou avec Outlook sur le web, les messages e-mails chiffrés ne peuvent pas être indexés pour la recherche et vous ne pouvez pas configurer la protection contre la perte de données (DLP) Exchange Online pour la protection Rights Management. 
     

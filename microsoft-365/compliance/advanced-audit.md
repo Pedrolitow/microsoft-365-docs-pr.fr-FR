@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574653"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892905"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
@@ -41,7 +41,7 @@ L’audit avancé conserve tous les enregistrements d’audit Exchange, SharePoi
 Nous publions également la fonctionnalité pour retenir les journaux d’audit pendant 10 ans. La rétention de 10 ans des journaux d’audit permet de faciliter les investigations de longue durée et de répondre aux obligations réglementaires, légales et internes.
 
 > [!NOTE]
-> La rétention des journaux d’audit pendant 10 ans nécessite une licence supplémentaire de complément.  Cette nouvelle licence sera disponible au début de 2021. Pour plus d’informations, voir la section [Questions Courantes sur l’Audit Avancé](#faqs-for-advanced-audit) de cet article.
+> La rétention des journaux d’audit pendant 10 ans nécessite une licence supplémentaire de complément.  Pour plus d’informations, voir la section [Questions Courantes sur l’Audit Avancé](#faqs-for-advanced-audit) de cet article.
 
 ### <a name="audit-log-retention-policies"></a>Stratégies de rétention du journal d'audit
 
@@ -63,9 +63,12 @@ L’audit avancé permet aux organisations de mener des investigations de confor
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> Pour l’instant, cet événement n’est pas disponible dans les environnements de secteur public Office 365 et Microsoft 365. Cela inclut les environnements GCC, GCC High (Cloud de la communauté du secteur public) et DoD (Département de la Défense américain).
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
@@ -197,17 +200,13 @@ Pour bénéficier des fonctionnalités d’audit avancées de niveau utilisateur
 
 Pour les clients éligibles et les utilisateurs disposants de la licence appropriée, aucune action n’est requise pour accéder aux événements d’audit cruciaux.
 
-**Quand la nouvelle licence de complément de rétention de journal d’audit de 10 ans sera-t-elle disponible?**
+**Qu’arrive-t-il aux données du journal d’audit de mon organisation si je crée une stratégie de rétention du journal d’audit de 10 ans lorsque la fonctionnalité est publiée pour la disponibilité générale, mais avant que la licence de composant additionnel requise ne soit disponible ?**
 
-Le nouveau complément de rétention de journal d’audit de 10 ans est désormais disponible à l’achat par les clients disposant d’abonnements E5.
+Toutes les données de journal d’audit couvertes par une stratégie de rétention du journal d’audit de 10 ans que vous créez après la mise à disposition générale de la fonctionnalité au dernier trimestre de 2020 sont conservées pendant 10 ans. Cela inclut les stratégies de rétention du journal d’audit de 10 ans qui ont été créées avant que la licence de composant additionnel requise ne soit disponible à l’achat. Toutefois, étant donné que la licence de composant additionnel de rétention du journal d’audit de 10 ans est désormais disponible, vous devez acheter ces licences de composant additionnel et les attribuer à tous les utilisateurs dont les données d’audit sont couvertes par une stratégie de rétention d’audit de 10 ans.
 
-**Qu’arrive-t-il aux données du journal d’audit de mon organisation si je crée une stratégie de rétention du journal d’audit de 10 ans lorsque la fonctionnalité est publiée pour la disponibilité générale, mais avant que la licence de complément requise ne soit disponible en février 2021 ?**
+**Les nouveaux événements dans l’audit avancé sont-ils disponibles dans l’API Activité de gestion Office 365 ?**
 
-Toutes les données du journal d’audit couvertes par une stratégie de rétention de journal d’audit de 10 ans que vous créez après la mise à disposition générale sont conservées pendant 10 ans. Lorsque la licence de complément de rétention de journal d’audit de 10 ans est disponible au début de 2021, vous devez acheter des licences de complément pour les utilisateurs dont les données d’audit sont retenues par une stratégie de rétention d’audit existante de 10 ans.
-
-**Les nouveaux événements dans l’audit avancé sont-ils disponibles dans l’API Activité de gestion Office 365 ?**
-
-Oui. Tant que les enregistrements d’audit sont générés pour les utilisateurs disposant de la licence appropriée, vous pourrez accéder à ces enregistrements via l’API Activité de gestion Office 365.
+Oui. Tant que les enregistrements d’audit sont générés pour les utilisateurs disposant de la licence appropriée, vous pourrez accéder à ces enregistrements via l’API Activité de gestion Office 365.
 
 **Une bande passante élevée est-elle synonyme d’une meilleure latence ou d’un SLA supérieur ?**
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: d645d185524d111af4eafed4b5fba06483525a85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23320d962b52e1a443d459cb6b57d444fca91592
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920074"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939308"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -52,7 +52,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
 
 - **Étiquetage côté service lorsque le contenu est déjà enregistré (dans SharePoint ou dans OneDrive) ou est envoyé par e-mail (traité par Exchange Online)**  : utilisez une stratégie d’étiquetage automatique. 
     
-    Cette méthode est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et de données en transit (courriers envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres).
+    Cette méthode est également appelée étiquetage automatique des données au repos (documents dans SharePoint et dans OneDrive) et des données en transit (e-mails envoyés ou reçus par Exchange). Dans le cas d’Exchange, cela n’inclut pas les e-mails au repos (boîtes aux lettres).
     
     Comme cet étiquetage est appliqué par les services plutôt que par les applications, vous n’avez pas à vous soucier des applications des utilisateurs et de leur version. Par conséquent, cette fonctionnalité est immédiatement disponible dans toute l’organisation et est appropriée pour l’étiquetage à grande échelle. Les stratégies d’étiquetage automatique ne prennent pas en charge l’étiquetage recommandé, car l’utilisateur n’interagit pas avec le processus d’étiquetage. En effet, l’administrateur exécute les stratégies en mode simulation pour s’assurer que le contenu est correctement étiqueté avant d’appliquer réellement l’étiquette.
     
@@ -71,7 +71,9 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
         - Pour ces fichiers Office, le format Open XML est pris en charge (par exemple, .docx et .xlsx), mais pas le format Microsoft Office 97-2003 (par exemple, .doc et .xls).
     - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
     - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
-    - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique. Toutefois, si l’étiquette est configurée pour le chiffrement, celui-ci n’est pas appliqué.
+    - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique :
+        - Si l’étiquette est configurée pour le [chiffrement](encryption-sensitivity-labels.md), celui-ci n’est pas appliqué.
+        - Si l’étiquette est configurée pour appliquer des [marquages dynamiques](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), sachez que cela peut donner lieu à des noms de personnes hors de votre organisation.
     - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui envoie le courrier électronique.
     
 
@@ -118,7 +120,7 @@ Lorsque vous parcourez l’Assistant, la page **Étiquetage automatique des fich
 
 ![Conditions de l’étiquetage automatique dans les applications Office](../media/sensitivity-labels-conditions.png)
 
-Lorsqu’une étiquette de confidentialité est appliquée automatiquement, les utilisateurs voit une notification dans leur application Office. Par exemple :
+Lorsqu’une étiquette de confidentialité est appliquée automatiquement, l’utilisateur voit une notification dans son application Office. Par exemple :
 
 ![Notification dont un document disposait d’une étiquette appliquée automatiquement](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
 
@@ -164,21 +166,21 @@ Pendant la période de préversion pour cette option, les applications suivantes
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Recommander que l’utilisateur applique une étiquette de critère de sensibilité
 
-Si vous le souhaitez, vous pouvez recommander à vos utilisateurs qu’ils appliquent l’étiquette. Cette option permet à vos utilisateurs d’accepter la classification et toute protection associée, ou d’ignorer la recommandation si l’étiquette ne convient pas à leur contenu.
+Si vous le souhaitez, vous pouvez recommander à vos utilisateurs qu’ils appliquent l’étiquette. Cette option permet à vos utilisateurs d’accepter la classification et toute protection associée ou faire disparaitre la valeur recommandée si l’étiquette n’est pas adaptée à leur contenu.
 
 ![Option pour recommander une étiquette de confidentialité à des utilisateurs](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Voici un exemple d’une invite de commandes d’Azure Information Protection lorsque vous configurez une condition pour appliquer une étiquette comme action recommandée avec un conseil de stratégie personnalisé. Vous pouvez choisir le texte qui s’affiche dans le conseil de stratégie.
+Voici un exemple d’une invite du client de l’étiquetage unifié d’Azure Information Protection lorsque vous configurez une condition pour appliquer une étiquette comme action recommandée avec un conseil de stratégie personnalisé. Vous pouvez choisir le texte qui s’affiche dans le conseil de stratégie.
 
 ![Invite à appliquer une étiquette recommandée](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>Quand les étiquettes automatiques ou recommandées sont appliquées
 
-L’implémentation de l’étiquetage automatique et recommandé dans les applications Office varie selon que vous utilisez l’étiquetage intégré à Office ou le client d’étiquetage unifié d’Azure Information Protection. Dans les deux cas, toutefois :
+L’implémentation de l’étiquetage automatique et recommandé dans les applications Office varie selon que vous utilisez l’étiquetage intégré à Office ou le client de l’étiquetage unifié d’Azure Information Protection. Toutefois, dans les deux cas :
 
-- Vous ne pouvez pas utiliser la classification automatique pour les documents et les e-mails qui ont été précédemment étiquetés manuellement ou automatiquement avec une classification supérieure. N’oubliez pas que vous ne pouvez appliquer qu’une seule étiquette de confidentialité à un document ou un e-mail (en plus d’une seule étiquette de rétention).
+- Vous ne pouvez pas utiliser l’étiquetage automatique pour les documents et les e-mails qui ont été précédemment étiquetés manuellement ou automatiquement avec un niveau de confidentialité supérieur. N’oubliez pas que vous ne pouvez appliquer qu’une seule étiquette de confidentialité à un document ou un e-mail (en plus d’une seule étiquette de rétention).
 
-- Vous ne pouvez pas utiliser la classification recommandée pour les documents ou e-mails qui ont été étiquetés précédemment avec une classification supérieure. Lorsque le contenu est déjà étiqueté avec une classification supérieure, l'utilisateur ne voit pas l'invite avec la recommandation et le conseil de stratégie.
+- Vous ne pouvez pas utiliser l’étiquetage recommandé pour les documents ou e-mails qui ont été précédemment étiquetés avec un niveau de confidentialité supérieur. Lorsque le contenu est déjà étiqueté avec un niveau de confidentialité supérieur, l’utilisateur ne voit pas l’invite avec la recommandation et le conseil de stratégie.
 
 Spécifique à l’étiquetage intégré :
 
@@ -204,7 +206,7 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 
 - Mode de simulation :
     - L’audit pour Microsoft 365 doit être activé. Si vous devez activer l’audit ou si vous ne savez pas celui-ci est déjà activé, consultez l’article [Activer ou désactiver la recherche dans un journal d’audit](turn-audit-log-search-on-or-off.md).
-    - Pour afficher le contenu d’un fichier en mode Source, vous devez disposer du rôle de **visionneur de contenu** de . Par défaut, les administrateurs généraux n’ont pas ce rôle. Si vous n’avez pas cette autorisation, le volet Aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Éléments correspondants**.
+    - Pour afficher le contenu d’un fichier ou d’un e-mail en mode Source, vous devez disposer du rôle de **Visionneuse de contenu de l’Explorateur de contenu**. Par défaut, les administrateurs généraux n’ont pas ce rôle. Si vous n’avez pas cette autorisation, le volet Aperçu ne s’affiche pas lorsque vous sélectionnez un élément dans l’onglet **Éléments correspondants**.
 
 - Pour étiqueter automatiquement des fichiers dans SharePoint et OneDrive :
     - Vous avez [activé les étiquettes de confidentialité pour les fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).

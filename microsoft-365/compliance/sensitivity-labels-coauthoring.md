@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034223"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764363"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -179,6 +179,6 @@ Si un ingénieur du support technique désactive ce paramètre pour votre client
 
 - Le nouveau format de métadonnées et l’emplacement des documents Office utilisés pendant l’utilisation du paramètre ne seront pas copiés dans le format et l’emplacement d’origine. Par conséquent, ces informations d’étiquetage pour les fichiers Word, Excel et PowerPoint non chiffrés seront perdues.
 
-- La co-édition et l’enregistrement automatique ne fonctionnent plus dans votre client.
+- La co-édition et de l'enregistrement automatique ne fonctionnent plus dans votre client pour les documents étiquetés et chiffrés.
 
 - Les étiquettes de niveau de confidentialité restent activées pour les fichiers Office dans OneDrive et SharePoint.

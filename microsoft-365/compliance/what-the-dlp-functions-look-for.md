@@ -17,19 +17,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+recommendations: false
 description: Découvrez ce que les fonctions de protection contre la perte de données (DLP) recherchent.
-ms.openlocfilehash: b77075b0b31ad5d6e6e2b7062c35e96649fa8365
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 47eda79470fd131939c493ac4f66af6efea01dd6
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841445"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086511"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Éléments recherchés par les fonctions DLP
 
-Les stratégies de protection contre la perte de données (DLP) peuvent utiliser des types d’informations sensibles pour identifier les éléments sensibles. Le numéro de carte de crédit et le numéro de carte de crédit de l’UE sont des exemples de types d’informations sensibles. Les types d’informations sensibles recherchent des modèles spécifiques. Les types d’informations sensibles valident les données en regardant leur format, leurs sommes de contrôle et recherchent des mots clés pertinents ou d’autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Par exemple, le type d’informations sensibles Numéro de carte de crédit utilise une fonction pour rechercher les dates qui sont formatées comme une date d’expiration. Cela permet de confirmer qu’un numéro est un numéro de carte de crédit.
+Les stratégies de protection contre la perte de données (DLP) peuvent utiliser des types d'informations sensibles pour identifier les éléments sensibles. Le numéro de carte de crédit et le numéro de carte de crédit de l'UE sont des exemples de types d'informations sensibles. Les types d'informations sensibles recherchent des modèles spécifiques. Les types d'informations sensibles valident les données en regardant leur format, leurs sommes de contrôle et recherchent des mots clés pertinents ou d'autres informations. Certaines de ces fonctionnalités sont effectuées par des fonctions internes. Par exemple, le type d'informations sensibles Numéro de carte de crédit utilise une fonction pour rechercher les dates qui sont formatées comme une date d'expiration. Cela permet de confirmer qu'un numéro est un numéro de carte de crédit.
   
-Cet article explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d’informations sensibles prédéfincis. Pour plus d’informations, voir [Définitions d’entités de type d’informations sensibles](sensitive-information-type-entity-definitions.md)
+Cet article explique ce que ces fonctions recherchent, pour vous aider à comprendre le fonctionnement des types d'informations sensibles prédéfincis. Pour plus d'informations, voir [Définitions d'entités de type d'informations sensibles](sensitive-information-type-entity-definitions.md)
   
 ## <a name="table-of-functions"></a>Table des fonctions
 
@@ -37,31 +38,31 @@ Cet article explique ce que ces fonctions recherchent, pour vous aider à compre
 |---------|---------|---------|
 |Func_Argentina_Unique_Tax_Key|détecte et valide la clé fiscale unique argentine|Non|
 |Func_aba_routing|détecte le numéro de routage ABA| oui|
-|Func_alabama_drivers_license_number|détecte le numéro de permis de conduire de l’État d’Alabama|Non|
-|Func_alaska_delaware_oregon_drivers_license_number|détecte le numéro de permis de conduire de l’État de Oregon, États-Unis et États-Unis|Non|
+|Func_alabama_drivers_license_number|détecte le numéro de permis de conduire de l'État d'Alabama|Non|
+|Func_alaska_delaware_oregon_drivers_license_number|détecte le numéro de permis de conduire De Oregon, Oregon|Non|
 |Func_alaska_drivers_license_number|détecte le numéro de permis de conduire De Alaska|Non|
-|Func_alberta_drivers_license_number|détecte le numéro de permis de conduire De l’Alberta|Non|
+|Func_alberta_drivers_license_number|détecte le numéro de permis de conduire De l'Alberta|Non|
 |Func_Argentina_Unique_Tax_Key|détecte la clé fiscale unique argentine|Non|
 |Func_arizona_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
 |Func_arkansas_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
-|Func_australian_business_number|détecte le numéro d’entreprise Australie|Non|
+|Func_australian_business_number|détecte le numéro d'entreprise Australie|Non|
 |Func_Australian_Company_Number|détecte le numéro de société australie|Non|
 |Func_australian_medical_account_number|détecte le numéro de compte médical australie|Non|
 |Func_australian_tax_file_number|détecte le numéro de fichier fiscal australie|oui|
-|Func_austria_eu_ssn_or_equivalent|détecte le numéro de sécurité sociale d’Autriche|Non|
+|Func_austria_eu_ssn_or_equivalent|détecte le numéro de sécurité sociale d'Autriche|Non|
 |Func_austria_eu_tax_file_number|détecte le numéro de fichier fiscal autrichen|Non|
 |Func_Austria_Value_Added_Tax|détecte la taxe sur la valeur ajoutée en Autriche|Non|
 |Func_belgium_national_number|détecte le numéro national belgique|Non|
 |Func_belgium_value_added_tax_number|détecte le numéro de taxe sur la valeur ajoutée en Belgique|Non|
-|Func_brazil_cnpj|détecte le numéro d’entité juridique brésil (CNPJ)|oui|
+|Func_brazil_cnpj|détecte le numéro d'entité juridique brésil (CNPJ)|oui|
 |Func_brazil_cpf|détecte le brésil CPF|oui|
 |Func_brazil_rg|détecte la R.A.S. du Brésil|Non|
 |Func_british_columbia_drivers_license_number|détecte le numéro de permis de conduire britannique|Non|
 |Func_bulgaria_eu_national_id_card|détecte le numéro civile uniforme bulgarien|Non|
 |Func_california_drivers_license_number|détecte le numéro de permis de conduire californien|Non|
 |Func_canadian_sin|détecte le sin du Canada|oui|
-|Func_chile_id_card|détecte la carte d’ID chili|Non|
-|Func_china_resident_id|détecte l’ID d’un résident chinois|Non|
+|Func_chile_id_card|détecte la carte d'ID chili|Non|
+|Func_china_resident_id|détecte l'ID d'un résident chinois|Non|
 |Func_colorado_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
 |Func_connecticut_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
 |Func_credit_card|détecte la carte de crédit|Oui|Non|
@@ -77,7 +78,7 @@ Cet article explique ce que ces fonctions recherchent, pour vous aider à compre
 |Func_eu_debit_card|détecte la carte de débit de l’UE|Non|
 |Func_finnish_national_id|détecte l’ID national finnois|Non|
 |Func_florida_drivers_license_number|détecte le numéro de permis de conduire De Sons|Non|
-|Func_florida_maryland_michigan_minnesota_drivers_license_number|détecte le numéro de permis de conduire de l’un des permis de conduire de l’un des deux pilotes|Non|
+|Func_florida_maryland_michigan_minnesota_drivers_license_number|détecte le numéro de permis de conduire de l’un des pilotes de l’état de l’État du États-Unis, de l’État du États-Unis et du États-Unis|Non|
 |Func_formatted_itin|détecte l’ITIN américain formaté|oui|
 |Func_fr_insee|détecte la France INSEE|Non|
 |Func_fr_passport|détecte un passeport français|Non|
@@ -113,7 +114,7 @@ Cet article explique ce que ces fonctions recherchent, pour vous aider à compre
 |Func_jp_bank_account|détecte un compte bancaire japonais|Non|
 |Func_jp_bank_account_branch_code|détecte le code de succursale d’un compte bancaire japonais|Non|
 |Func_jp_drivers_license_number|détecte le numéro de permis de conduire Japon|Non|
-|Func_jp_passport|détecte un passeport japon|Non|
+|Func_jp_passport|détecte un passeport japonais|Non|
 |Func_jp_resident_registration_number|détecte le numéro d’inscription d’un résident japonais|Non|
 |Func_jp_sin|détecte le sin du Japon|Non|
 |Func_jp_sin_pre_1997|détecte le sin du Japon avant 1997|Non|
@@ -127,9 +128,9 @@ Cet article explique ce que ces fonctions recherchent, pour vous aider à compre
 |Func_luxemburg_eu_tax_file_number_non_natural|détecte le numéro d’identification national (personnes non physiques)|Non|
 |Func_maine_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
 |Func_manitoba_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
-|Func_maryland_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
+|Func_maryland_drivers_license_number|détecte le numéro de permis de conduire De Sons|Non|
 |Func_massachusetts_drivers_license_number|détecte le numéro de permis de conduire du Massachusetts|Non|
-|Func_mexico_population_registry_code|détecte le code du Registre de la population du Mexique|Non|
+|Func_mexico_population_registry_code|détecte le code du Registre de population du Mexique|Non|
 |Func_michigan_minnesota_drivers_license_number|détecte le numéro de permis de conduire Du Monde|Non|
 |Func_minnesota_drivers_license_number|détecte le numéro de permis de conduire du États-Unis|Non|
 |Func_mississippi_oklahoma_drivers_license_number|détecte le numéro de permis de conduire Desoe|Non|
@@ -140,8 +141,8 @@ Cet article explique ce que ces fonctions recherchent, pour vous aider à compre
 |Func_netherlands_eu_tax_file_number|détecte le numéro de fichier fiscal des Pays-Bas|Non|
 |Func_netherlands_value_added_tax_number|détecte le numéro de taxe sur la valeur ajoutée aux Pays-Bas|Non|
 |Func_nevada_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
-|Func_new_brunswick_drivers_license_number|détecte le numéro de permis de conduire new-|Non|
-|Func_new_hampshire_drivers_license_number|détecte le numéro de permis de conduire new-|Non|
+|Func_new_brunswick_drivers_license_number|détecte le numéro de permis de conduire De Nouveau-Île|Non|
+|Func_new_hampshire_drivers_license_number|détecte le numéro de permis de conduire new-driver’s|Non|
 |Func_new_jersey_drivers_license_number |détecte le numéro de permis de conduire du New Jersey|Non|
 |Func_new_mexico_drivers_license_number |détecte le numéro de permis de conduire New Mexico|Non|
 |Func_new_york_drivers_license_number   |détecte le numéro de permis de conduire de New York|Non|
@@ -157,7 +158,7 @@ Cet article explique ce que ces fonctions recherchent, pour vous aider à compre
 |Func_nova_scotia_drivers_license_number|détecte le numéro de permis de conduire de l’entreprise|Non|
 |Func_ohio_drivers_license_number   |détecte le numéro de permis de conduire de Sons|Non|
 |Func_ontario_drivers_license_number    |détecte le numéro de permis de conduire de Sons|Non|
-|Func_pennsylvania_drivers_license_number|détecte le numéro de permis de conduire de #|Non|
+|Func_pennsylvania_drivers_license_number|détecte le numéro de permis de conduire de #A0|Non|
 |Func_pesel_identification_number   |détecte l’ID national polonais (PESEL)|Non|
 |Func_poland_eu_tax_file_number |détecte le numéro de fichier fiscal polonais|Non|
 |Func_polish_national_id    |détecte la carte d’identité pologne|Non|
@@ -197,7 +198,7 @@ Cet article explique ce que ces fonctions recherchent, pour vous aider à compre
 |Func_uk_nhs_number |détecte le numéro NHS au Royaume-Uni|oui|
 |Func_uk_nino   |détecte le NINO (Royaume-Uni)|Non|
 |Func_unformatted_canadian_sin|détecte un SIN canadien non formaté|Non|
-|Func_unformatted_itin  |détecte les itins américains non formatés|oui|
+|Func_unformatted_itin  |détecte l’ITIN américain non formaté|oui|
 |Func_unformatted_ssn   |détecte le SSN américain non aléatoire non aléatoire|oui|
 |Func_usa_uk_passport   |détecte les passeports des États-Unis et du Royaume-Uni|oui|
 |Func_utah_drivers_license_number|détecte le numéro de permis de conduire de Sons|Non|
@@ -231,7 +232,7 @@ Exemples :
     
 Noms de mois acceptés :
   
-- Anglais
+- Français
     
   - Janvier, Février, Mars, Avril, peut, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre
     
@@ -259,7 +260,7 @@ Exemples :
     
 Noms de mois acceptés :
   
-- Anglais
+- Français
     
   - Janvier, Février, Mars, Avril, peut, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre
     
@@ -337,7 +338,7 @@ Noms de mois acceptés :
 > [!NOTE]
 > Cette fonction est dépréciée car elle prend en charge uniquement les noms de mois néerlandais, qui sont désormais inclus dans la  `Func_eu_date` fonction ci-dessus. 
   
-Cette fonction recherche une date au format couramment utilisé en néerlandais. Le format de cette fonction est le même que  `Func_eu_date` , différent uniquement dans le langage utilisé.
+Cette fonction recherche une date au format couramment utilisé en néerlandais. Le format de cette fonction est identique à  `Func_eu_date` , différent uniquement dans le langage utilisé.
   
 Exemples :
   
@@ -385,11 +386,11 @@ Les formats suivants prennent en charge AA ou AAAA :
     
 - MoisAAAA, par exemple, « janvier2010 », « jan2010 », « janvier10 » ou « jan10 »
     
-- Mois/AAAA, par exemple, « janvier/2010 » ou « Jan/2010 » ou « janvier/10 » ou « jan/10 »
+- Mois/AAAAY : par exemple, « janvier/2010 » ou « jan/2010 » ou « janvier/10 » ou « jan/10 »
     
 Noms de mois acceptés :
   
-- Anglais
+- Français
     
   - Janvier, Février, Mars, Avril, peut, Juin, Juillet, Août, Septembre, Octobre, Novembre, Décembre
     
@@ -397,7 +398,7 @@ Noms de mois acceptés :
     
 ## <a name="func_us_address"></a>Func_us_address
 
-Func_us_address recherche un nom d’état américain ou une abréviation postale suivie d’un code postal valide. Le code postal doit être l’un des codes postaux corrects qui sont associés au nom de l’état américain ou à son abréviation. Le nom de l’état américain et le code postal ne doivent pas être séparés par des signes de ponctuation ou des lettres.
+Func_us_address recherche un nom d'état américain ou une abréviation postale suivie d'un code postal valide. Le code postal doit être l’un des codes postaux corrects qui sont associés au nom de l’état américain ou à son abréviation. Le nom de l’état américain et le code postal ne doivent pas être séparés par des signes de ponctuation ou des lettres.
   
 Exemples :
   

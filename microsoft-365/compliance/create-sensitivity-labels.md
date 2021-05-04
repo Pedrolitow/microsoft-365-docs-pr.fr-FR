@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: "Une exigence pour l'ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les documents et messages électroniques de votre organisation."
-ms.openlocfilehash: 34cbea7199ed50de8e65a48f8087e6475fb41a50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
+ms.openlocfilehash: c34025d2b68eb0ee179c98ce9c97a59193f782e3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926642"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994951"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-L'ensemble des solutions Microsoft Information Protection (parfois sous la forme abrégée MIP) sont mises en œuvre à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au centre d'administration des étiquettes, tel que le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser le Centre de sécurité Microsoft 365 ou le Centre de sécurité et conformité.
+L'ensemble des solutions Microsoft Information Protection (parfois sous la forme abrégée MIP) sont mises en œuvre à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser l’ancien portail, le Centre de sécurité et conformité Office 365.
 
 Commencez par créer et configurer les étiquettes de confidentialité que vous souhaitez rendre disponibles pour les applications et autres services. Par exemple, les étiquettes que vous voulez que les utilisateurs voient et appliquent à partir des applications Office. 
 
@@ -46,9 +46,6 @@ L’administrateur général de votre organisation dispose des autorisations tot
         - **Solutions** > **Information protection**
         
         Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
-    
-    - Centre de sécurité Microsoft 365 : 
-        - **Classification** > **des étiquettes de confidentialité**
     
     - Centre de sécurité et conformité :
         - **Classification** > **des étiquettes de confidentialité**
@@ -144,9 +141,6 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
         Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
     
-    - Centre de sécurité Microsoft 365 : 
-        - **Classification** > **des étiquettes de confidentialité**
-    
     - Centre de sécurité et conformité :
         - **Classification** > **des étiquettes de confidentialité**
 
@@ -192,7 +186,7 @@ Lorsque vous utilisez l’étiquette intégrée pour les applications Office sur
 
 Des paramètres de stratégie d’étiquette supplémentaires sont disponibles dans l’applet de commande [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
 
-Pour le client d’étiquetage unifié d’Azure Information Protection uniquement, vous pouvez spécifier des [paramètres avancés](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) qui incluent la définition d’une autre étiquette par défaut pour Outlook et l’implémentation de messages contextuels dans Outlook qui avertissent, justifient ou bloquent les messages envoyés. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les stratégies d’étiquette](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) depuis le guide d’administration de ce client.
+Le client de l’étiquetage unifié d’Azure Information Protection prend en charge de nombreux [paramètres avancés](/azure/information-protection/rms-client/clientv2-admin-guide-customizations), notamment la migration depuis d’autres solutions d’étiquetage et les messages contextuels dans Outlook qui avertissent, justifient ou bloquent l’envoi d’e-mails. Pour obtenir la liste complète, voir [Paramètres avancés disponibles pour les stratégies d’étiquette](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) depuis le guide d’administration de ce client.
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Utiliser PowerShell pour les étiquettes de confidentialité ainsi que leurs stratégies
 
@@ -225,7 +219,7 @@ Par comparaison, lorsque vous supprimez une étiquette :
 
 - Pour Office sur le Web : les utilisateurs ne voient pas le nom de l’étiquette sur la barre d’État ni dans la colonne **Sensibilité**. Les informations d’étiquette dans les métadonnées restent uniquement si l’étiquette n’applique pas le chiffrement. Si l’étiquette a appliqué le chiffrement et que vous avez activé des [étiquettes de confidentialité pour SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), les informations d’étiquette dans les métadonnées sont supprimées et le chiffrement est supprimé. 
 
-Lorsque vous supprimez une étiquette de confidentialité d’une stratégie d’étiquette, ou supprimez une étiquette de confidentialité, la réplication de ces modifications peut prendre jusqu’à une heure pour tous les utilisateurs et services.
+Lorsque vous supprimez une étiquette de confidentialité d’une stratégie d’étiquette, ou supprimez une étiquette de confidentialité, la réplication de ces modifications peut prendre jusqu’à 24 heures pour tous les utilisateurs et services.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

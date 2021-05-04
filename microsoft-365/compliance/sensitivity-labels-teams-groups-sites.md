@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919580"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860873"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -51,7 +51,7 @@ Avant d’activer les étiquettes de confidentialité pour les conteneurs et de 
 
 ![Étiquette de confidentialité affichée dans l’application de bureau Word](../media/sensitivity-label-word.png)
 
-Une fois que vous avez activé et configuré les étiquettes de confidentialité pour les conteneurs, les utilisateurs peuvent également voir et appliquer des étiquettes de confidentialité aux sites d’équipe Microsoft, aux groupes Microsoft 365 et aux sites SharePoint. Par exemple, lorsque vous créez un nouveau site d’équipe à partir de SharePoint :
+Une fois que vous avez activé et configuré des étiquettes de confidentialité pour les conteneurs, les utilisateurs peuvent également voir et appliquer des étiquettes de confidentialité aux sites d’équipe Microsoft, aux groupes Microsoft 365 et aux sites SharePoint. Par exemple, lorsque vous créez un nouveau site d’équipe à partir de SharePoint :
 
 ![Étiquette de confidentialité lors de la création d’un site d’équipe à partir de SharePoint](../media/sensitivity-labels-new-team-site.png)
 
@@ -144,7 +144,7 @@ Nous vous recommandons de ne pas modifier les paramètres du site et du groupe p
 
 De plus, si vos modifications incluent les **l’accès des utilisateurs externes** paramètre :
 
-- Le nouveau paramètre s’applique aux nouveaux utilisateurs, mais pas aux utilisateurs existants. Par exemple, si ce paramètre a été préalablement sélectionné et, par conséquent, les utilisateurs invités ont accédé au site, ces utilisateurs invités peuvent continuer à accéder au site une fois ce paramètre désactivé dans la configuration d’étiquette.
+- Le nouveau paramètre s’applique aux nouveaux utilisateurs, mais pas aux utilisateurs existants. Par exemple, si ce paramètre a été préalablement sélectionné et, par conséquent, les utilisateurs invités ont accédé au site, ceux-ci peuvent continuer à accéder au site une fois ce paramètre désactivé dans la configuration d’étiquette.
 
 - Les paramètres de confidentialité des propriétés de groupe hiddenMembership et roleEnabled ne sont pas mis à jour.
 
@@ -239,13 +239,13 @@ Vérifiez que vous disposez de la version 16.0.19418.12000 ou ultérieure de Sha
    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
    ```
 
-5. Pour appliquer l’étiquette à ces sites, exécutez la commande suivante. Utilisation de nos exemples :
+5. Exécutez la commande suivante pour appliquer l’étiquette à ces sites. À l’aide de nos exemples :
 
    ```powershell
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
    ```
 
-Pour appliquer différentes étiquettes à différents sites, répétez la commande suivante pour chaque site : `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+Cette série de commandes vous permet d’étiqueter plusieurs sites de votre client avec la même étiquette de confidentialité. C’est pourquoi vous utilisez la cmdlet Set-SPOTenant, plutôt que la cmdlet Set-SPOSite qui est destinée à la configuration par site. Utilisez toutefois la cmdlet Set-SPOSite lorsque vous devez appliquer une autre étiquette à des sites spécifiques en répétant la commande suivante pour chacun de ces sites : `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Afficher et gérer les étiquettes de confidentialité dans le Centre d’administration SharePoint
 
@@ -317,7 +317,7 @@ Pour convertir vos anciennes classifications en étiquettes de confidentialité,
 
 Ensuite :
 
-1. Utilisez PowerShell pour appliquer les étiquettes de confidentialité aux groupes et sites SharePoint Microsoft 365 existants à l’aide du mappage de noms. Pour connaître les instructions, reportez-vous à la section suivante.
+1. Utilisez PowerShell pour appliquer les étiquettes de confidentialité aux groupes Microsoft 365 et sites SharePoint existants à l’aide du mappage de noms. Pour connaître les instructions, reportez-vous à la section suivante.
 
 2. Supprimez les anciennes classifications dans les groupes et sites existants.
 
@@ -347,7 +347,7 @@ Pour vous aider à gérer la coexistence des étiquettes de confidentialité et 
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. Pour chaque groupe, ajoutez le nouveau GUID de l’étiquette de confidentialité. Par exemple :
+6. Pour chaque groupe, ajoutez la nouvelle étiquette de confidentialité GUID. Par exemple :
 
     ```PowerShell
     foreach ($g in $groups)

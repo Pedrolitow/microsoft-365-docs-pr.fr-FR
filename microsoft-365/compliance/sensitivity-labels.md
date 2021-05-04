@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 467960f2faf6c6262083ff238ee3b085e0e99129
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 1e21da114154a5258f81a48e39d46ae875ee3930
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499678"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892927"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -94,7 +94,7 @@ Chaque élément qui prend en charge les étiquettes de confidentialité peut se
 
 ## <a name="what-sensitivity-labels-can-do"></a>Fonction des étiquettes de niveau de confidentialité
 
-Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou un document, tout paramètre de protection relatif à cette étiquette sont appliqués au contenu. Vous pouvez configurer une étiquette de confidentialité pour :
+Une fois qu’une étiquette de confidentialité est appliquée à un e-mail ou à un document, tous les paramètres de protection configurés pour cette étiquette sont appliqués au contenu. Vous pouvez configurer une étiquette de confidentialité pour :
 
 - **Chiffrer** des courriers électroniques et des documents pour empêcher l’accès à ces données par des personnes non autorisées. Vous pouvez en outre choisir les utilisateurs ou le groupe autorisés à effectuer telle ou telle action et la durée de l’autorisation. Par exemple, vous pouvez décider d’autoriser tous les utilisateurs de votre organisation à modifier un document tandis qu’un groupe spécifique d’une autre organisation peut uniquement l’afficher. Par ailleurs, au lieu d’autorisations définies par l'administrateur, vous pouvez autoriser vos utilisateurs à attribuer des autorisations au contenu lorsqu’ils appliquent l’étiquette. 
     
@@ -190,7 +190,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
 - **Exigez que les utilisateurs appliquent une étiquette** avec une option pour les e-mails et les documents, et une autre pour les conteneurs. Également connues sous le nom d'étiquetage obligatoire, ces options permettent d’assurer qu’une étiquette soit appliquée avant que les utilisateurs puissent enregistrer des documents, envoyer des e-mails, ainsi que créer des groupes ou des sites.
     
-    Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l'option d’étiquette par défaut précédemment décrite). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
+    Pour les documents et les e-mails, une étiquette peut être attribuée manuellement par l’utilisateur, automatiquement suite à une condition que vous configurez, ou être attribuée par défaut (l’option d’étiquette par défaut précédemment décrite). Un exemple d’invite présenté dans Outlook lorsqu’un utilisateur doit attribuer une étiquette :
 
     ![Invite demandant à l’utilisateur Outlook d’appliquer l’étiquette requise](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
@@ -201,7 +201,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
     
     Envisagez d’utiliser cette option pour vous permettre d'augmenter la couverture d’étiquetage. Il faut noter que, sans formation des utilisateurs, ces paramètres peuvent entraîner un étiquetage incorrect. De plus, sauf si vous avez également défini une étiquette correspondante par défaut, l’étiquetage obligatoire risque de contrarier vos utilisateurs qui reçoivent de fréquentes invites.
 
-- **Fournir un lien d’aide vers une page d’aide personnalisée.** Si vos utilisateurs ne sont pas sûrs de comprendre la signification ou l'utilisation de vos étiquettes de confidentialité, vous pouvez fournir une URL de type En savoir plus, qui apparaît en bas du menu **Etiquettes de confidentialité** dans les applications Office :
+- **Fournir un lien d’aide vers une page d’aide personnalisée.** Si vos utilisateurs ne sont pas sûrs de savoir ce que signifient vos étiquettes de confidentialité ou comment elles doivent être utilisées, vous pouvez fournir une URL de type En savoir plus, qui apparaît en bas du menu **Étiquette de confidentialité** dans les applications Office :
 
     ![Lien En savoir plus sur le bouton Niveau de confidentialité dans le ruban](../media/Sensitivity-label-learn-more.png)
 
@@ -219,9 +219,9 @@ Une stratégie d’étiquette comprend les éléments suivants :
 - les utilisateurs et les groupes auxquels la stratégie sera attribuée avec des étiquettes.
 - l’étendue de la stratégie et des paramètres de stratégie pour cette étendue (comme l’étiquette par défaut pour les fichiers et les e-mails).
 
-Vous pouvez inclure un utilisateur dans différentes stratégies d’étiquette, et celui-ci pourra voir toutes les étiquettes de confidentialité de ces stratégies. Toutefois, un utilisateur n'obtient les paramètres de stratégie qu'à partir de la stratégie d’étiquette dont la priorité est la plus élevée.
+Vous pouvez inclure un utilisateur dans plusieurs stratégies d’étiquette, et celui-ci pourra voir toutes les étiquettes de confidentialité et paramètres de ces stratégies. En cas de conflit dans les paramètres de plusieurs stratégies, le paramètre de la stratégie ayant la priorité la plus élevée est appliqué. En d’autres termes, la priorité la plus élevée l’emporte pour chaque paramètre.
 
-Si vous ne voyez pas l'étiquette ou le paramètre de stratégie d’étiquette attendu pour un utilisateur ou un groupe, vérifiez l’ordre des stratégies d’étiquette de confidentialité. Pour réorganiser les stratégies d’étiquette, sélectionnez une stratégie d’étiquette de confidentialité > sélectionnez les points de suspension sur la droite > **Descendre** ou **Monter**.
+Si vous ne voyez pas l’étiquette ou le paramètre de stratégie d’étiquette attendu pour un utilisateur ou un groupe, vérifiez l’ordre des stratégies d’étiquette de confidentialité. Pour réorganiser les stratégies d’étiquette, sélectionnez une stratégie d’étiquette de confidentialité > sélectionnez les points de suspension sur la droite > **Descendre** ou **Monter**.
 
 ![Option déplacer dans la page pour les stratégies d’étiquette de confidentialité](../media/sensitivity-label-policy-priority.png)
 

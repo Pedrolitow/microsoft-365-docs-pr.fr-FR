@@ -1,12 +1,12 @@
 ---
-title: Résoudre les erreurs de distribution de la découverte électronique
+title: Résoudre les erreurs de mise en suspens de la découverte électronique
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -15,15 +15,80 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ROBOTS: NOINDEX, NOFOLLOW
-description: Résoudre les erreurs liées aux conservations appliquées aux dépositaires et aux sources de données non privatives dans Advanced eDiscovery.
-ms.openlocfilehash: a9956ac76cc083b6e408bd2f458b0320158fa231
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+description: Résoudre les erreurs liées aux conservations légales appliquées aux dépositaires et aux sources de données non dépositaires dans core eDiscovery.
+ms.openlocfilehash: 3bd417f2eb6bfb8de8d4b5ccaeb48e6ae1c888eb
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099827"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860385"
 ---
-# <a name="troubleshoot-ediscovery-hold-errors"></a>Résoudre les erreurs de la découverte électronique
+# <a name="troubleshoot-ediscovery-hold-errors"></a>Résoudre les erreurs de mise en suspens de la découverte électronique
 
-commencer à ajouter du contenu ici
+Cet article traite des problèmes courants qui peuvent se produire avec les conserves eDiscovery et explique comment les résoudre. L'article inclut également des pratiques recommandées pour vous aider à atténuer ou à éviter ces problèmes.
+
+## <a name="recommended-practices"></a>Pratiques recommandées
+
+Pour réduire le nombre d'erreurs liées aux conserves eDiscovery, nous vous recommandons les pratiques suivantes :
+
+- Si une distribution de la mise en attente est toujours en attente, avec l'un ou l'autre état, patientez jusqu'à ce que la distribution de la mise en attente soit `On (Pending)` terminée avant d'effectuer d'autres mises à `Off (Pending)` jour.
+
+- Fusionnez vos mises à jour dans une mise en attente eDiscovery dans une seule demande en bloc au lieu de mettre à jour la stratégie de mise à jour à plusieurs reprises pour chaque transaction. Par exemple, pour ajouter plusieurs boîtes aux lettres utilisateur à une stratégie de blocage existante à l'aide de la cmdlet [Set-CaseHoldPolicy,](/powershell/module/exchange/set-caseholdpolicy) exécutez la commande (ou ajoutez-la en tant que bloc de code à un script) afin qu'elle ne s'exécute qu'une seule fois pour ajouter plusieurs utilisateurs.
+
+  **Correct**
+
+    ```powershell
+    Set-CaseHoldPolicy -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
+    ```
+
+   **Incorrect**
+
+    ```powershell
+    $users = {$user1, $user2, $user3, $user4, $user5}
+    ForEach($user in $users)
+    {
+        Set-CaseHoldPolicy -AddExchangeLocation $user
+    }
+    ```
+
+   Dans l'exemple incorrect précédent, la cmdlet est exécuté cinq fois distinctement pour effectuer la tâche. Pour plus d'informations sur les pratiques recommandées pour ajouter des utilisateurs à une stratégie de attente, consultez la section [Plus d'informations.](#more-information)
+
+- Avant de contacter le Support Microsoft concernant les problèmes de la découverte électronique, suivez les étapes de la section [Erreur/problème](#errorissue-holds-dont-sync) : Les attentes ne sont pas synchronisées pour réessayer la distribution de la attente. Ce processus résout souvent des problèmes temporaires, notamment des erreurs de serveur interne.
+
+## <a name="errorissue-holds-dont-sync"></a>Erreur/problème : les holds ne sont pas synchronisés
+
+Si vous voyez l'un des messages d'erreur suivants lors de la mise en attente des dépositaires et des sources de données, utilisez les étapes de résolution pour résoudre le problème.
+
+> Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l'état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez donc dans quelques heures.
+
+> La stratégie ne peut pas être déployée sur la source de contenu en raison d'un problème Office 365 de centre de données temporaire. La stratégie actuelle n'est appliquée à aucun contenu de la source, donc le déploiement bloqué n'a aucun impact. Pour résoudre ce problème, essayez de redéployer la stratégie.
+
+> Désolé, nous n'avons pas pu effectuer les modifications demandées à la stratégie en raison d'une erreur temporaire du serveur interne. Veuillez essayer à nouveau dans 30 minutes.
+
+### <a name="resolution"></a>Résolution
+
+1. Connecter [au Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell) et exécutez la commande suivante pour une mise en attente eDiscovery :
+
+   ```powershell
+   Get-CaseHoldPolicy <policyname> -DistributionDetail | FL
+   ```
+
+2. Examinez la valeur dans le *paramètre DistributionDetail.* Recherchez les erreurs suivantes :
+
+   > Erreur : Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l'état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez donc dans quelques heures.
+
+3. Essayez d'exécution de la commande **Set-CaseHoldPolicy -RetryDistribution** sur la stratégie de mise en attente en question ; par exemple :
+
+   ```powershell
+   Set-CaseHoldPolicy <policyname> -RetryDistribution
+   ```
+
+## <a name="more-information"></a>Plus d’informations
+
+- Les instructions sur la mise à jour des stratégies de blocage pour plusieurs utilisateurs dans la section « Pratiques recommandées » résultent du fait que le système bloque les mises à jour simultanées d'une stratégie de blocage. Cela signifie que lorsqu'une stratégie de mise à jour de mise en attente est appliquée aux nouveaux emplacements de contenu et que la stratégie de mise en attente est dans un état en attente, des emplacements de contenu supplémentaires ne peuvent pas être ajoutés à la stratégie de mise en attente. Voici quelques éléments à garder à l'esprit pour vous aider à atténuer ce problème :
+  
+  - Chaque fois qu'une mise à jour de la mise à jour d'une mise en attente est mise à jour, elle passe immédiatement à l'état en attente. L'état d'état en attente signifie que la attente est appliquée aux emplacements de contenu.
+  
+  - Si vous avez un script qui exécute une boucle et ajoute des emplacements à la stratégie un par un (semblable à l'exemple incorrect présenté dans la section « Pratiques recommandées », le premier emplacement de contenu (par exemple, une boîte aux lettres utilisateur) lance le processus de synchronisation qui déclenche l'état en attente. Cela signifie que les autres utilisateurs ajoutés à la stratégie dans les boucles suivantes entraînent une erreur.
+  
+  - Si votre organisation utilise un script qui exécute une boucle pour mettre à jour les emplacements de contenu pour une stratégie de mise en attente, vous devez mettre à jour le script afin qu'il met à jour les emplacements en une seule opération en bloc (comme illustré dans l'exemple correct dans la section « Pratiques recommandées »).
