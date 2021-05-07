@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408643"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113996"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -48,7 +48,7 @@ Mais que se passe-t-il si vous voulez utiliser un type d’informations sensible
 
 ![Classification EDM](../media/EDMClassification.png)
 
-La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. Vous pouvez également utiliser la classification basée sur EDM avec des stratégies, telles [que les stratégies de protection contre la perte de données](data-loss-prevention-policies.md) (DLP) ou [les stratégies de fichier de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+La classification EDM vous permet de créer des types d’informations sensibles personnalisés qui font référence à des valeurs exactes dans une base de données d’informations sensibles. La base de données peut être actualisée quotidiennement et peut contenir jusqu’à 100 millions de lignes de données. À mesure que des employés, patients ou clients vont et viennent, et que les enregistrements changent, vos types d’informations sensibles personnalisés restent à jour et valides. Vous pouvez également utiliser la classification basée sur EDM avec des stratégies, telles [que les stratégies de protection contre la perte de données](dlp-learn-about-dlp.md) ou [les stratégies de fichier de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
@@ -167,7 +167,7 @@ Lorsque vous incluez le champ **ignoredDelimiters** _ avec les caractères pris 
 - \~
 - \; 
 
-- L’indicateur `ignoredDelimiters` ne prend pas en charge :
+L’indicateur `ignoredDelimiters` ne prend pas en charge :
 - Les caractères 0 à 9
 - A-Z
 - a-z
@@ -301,6 +301,8 @@ Rappelez-vous que la procédure précédente de notre schéma PatientRecords dé
 
 > [!NOTE]
 > La mise à jour du schéma EDMS avec les ajouts peut prendre de 10 à 60 minutes. Vous devez l’effectuer avant d’exécuter les étapes qui utilisent les ajouts.
+ 
+Après avoir importé votre package de règles avec votre type d’informations sensibles EDM et importé votre table de données sensibles, vous pouvez tester votre type nouvellement créé à l’aide de la fonction **Tester** dans l’Assistant Gestion des problèmes de sécurité des données dans le Centre de conformité. Consultez [Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles](sit-edm-wizard.md) pour obtenir des instructions sur l’utilisation de cette fonctionnalité.
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Modification du schéma pour la classification EDM
 
@@ -427,7 +429,7 @@ Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
    > Vous pouvez télécharger des données avec EDMUploadAgent vers n’importe quel magasin de données donné deux fois par jour uniquement.
 
    > [!TIP]
-   > Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent. exe ».
+   > Exécutez l'agent sans arguments pour obtenir une liste des paramètres de commande pris en charge. Par exemple, « EdmUploadAgent.exe ».
 
 2. Autorisez l’agent de chargement EDM, en ouvrant l’invite de commandes Windows (en tant qu’administrateur), puis en accédant au répertoire **C:\EDM\Data** pour exécuter la commande suivante :
 
@@ -655,7 +657,7 @@ Les types d’informations sensibles EDM pour les scénarios suivants sont en co
 
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [En savoir plus sur les types d’informations confidentielles](sensitive-information-type-learn-about.md).
-- [Vue d’ensemble des stratégies DLP](data-loss-prevention-policies.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [Modifier le schéma de correspondance des données exactes pour utiliser la correspondance configurable](sit-modify-edm-schema-configurable-match.md)

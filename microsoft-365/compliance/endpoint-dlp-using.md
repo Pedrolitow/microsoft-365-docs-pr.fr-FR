@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment configurer les stratégies de protection contre la perte de données (DLP) en utilisant les points de terminaison de protection contre la perte de données (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 91e8a25c2a15e82cd7f286d1110b1c87bedf31d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b918346467f9878582dfb301f48e530bfb400f8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926432"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114092"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Utilisation de la protection contre la perte de données de point de terminaison
 
@@ -122,7 +122,8 @@ Pour vous familiariser avec les fonctionnalités de point de terminaison DLP et 
 
 > [!IMPORTANT]
 > Ces scénarios de points de terminaison DLP ne sont pas les procédures officielles pour la création et le réglage des stratégies DLP. Reportez-vous aux rubriques ci-dessous lorsque vous devez utiliser les stratégies DLP dans les situations générales suivantes :
->- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+
+>- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 >- [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)
 >- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 >- [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
@@ -216,7 +217,7 @@ Ces scénarios nécessitent que les appareils soient déjà intégrés et report
 
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
 - [Prise en main la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
-- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)

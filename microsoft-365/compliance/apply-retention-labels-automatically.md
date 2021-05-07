@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créez des étiquettes de rétention et des stratégies d’étiquetage automatique afin de pouvoir appliquer les étiquettes de manière automatique pour conserver les éléments utiles et supprimer les éléments inutiles.
-ms.openlocfilehash: 6b7e8f91706a9d12135069f0a6753c76eaff1fb4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920017"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107636"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Application automatique d’une étiquette de rétention pour conserver ou supprimer du contenu
 
@@ -44,7 +44,7 @@ Les étiquettes de rétention appliquées automatiquement sont puissantes pour l
 Vous pouvez appliquer automatiquement des étiquettes de rétention à du contenu lorsque celui-ci contient des informations sensibles, des mots clés, des propriétés pouvant faire l’objet d’une recherche ou une correspondance pour des [classifieurs pouvant être formés](classifier-get-started-with.md).
 
 > [!TIP]
-> A présent dans l’aperçu, utiliser les propriétés de recherche pour identifier [Les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings).
+> Publié récemment, utilisez les propriétés de recherche pour identifier [Les enregistrements de réunion Teams](#microsoft-teams-meeting-recordings).
 
 Les processus d’application automatique d’une étiquette de rétention sont fonction des conditions suivantes :
 
@@ -134,11 +134,11 @@ Vous pouvez appliquer automatiquement des étiquettes de rétention au contenu q
 
 Lorsque vous créez des étiquettes de rétention d’application automatique pour des informations sensibles, vous voyez s’afficher la même liste de modèles de stratégie que lorsque vous créez une stratégie de protection contre la perte de données. Chaque modèle est préconfiguré pour rechercher des types spécifiques d’informations sensibles. Par exemple, le modèle présenté ici recherche les numéros américains d’identification fiscale (ITIN), de sécurité sociale (SSN) et de passeports depuis la catégorie **Confidentialité**, ainsi que le modèle **de données d’informations d’identification personnelle (PII) américaines** :
 
-![Modèles de stratégies avec des types d’informations sensibles](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![Modèles de stratégies avec des types d’informations sensibles](../media/sensitive-info-configuration.png)
 
-Pour plus d’informations sur les types d’informations sensibles, voir les [définitions d’entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md).
+Pour plus d’informations sur les types d’informations sensibles, voir les [définitions d’entités de types d’informations sensibles](sensitive-information-type-entity-definitions.md). Actuellement, les [correspondances exactes de données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) et les [empreintes digitales de documents](document-fingerprinting.md) ne sont pas prises en charge pour ce scénario.
 
-Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supprimer tout type d’informations sensibles, ainsi que modifier le nombre d’instances et la précision de correspondance. Sur la capture d’écran d’exemple présentée ensuite, une étiquette de rétention est appliquée automatiquement uniquement lorsque :
+Après avoir sélectionné un modèle de stratégie, vous pouvez ajouter ou supprimer tout type d’informations sensibles, et vous pouvez modifier le nombre d’instances et la précision de correspondance. Dans l’exemple de capture d’écran présenté ici, une étiquette de rétention sera appliquée automatiquement uniquement dans les cas suivants :
   
 - Le type d’information sensible est détecté avec une précision de correspondance (ou niveau de confiance) minimale de 75. De nombreux types d’informations sensibles sont définis avec plusieurs modèles. Un modèle définissant une précision de correspondance élevée impose davantage de critères (par exemple, mots clés, dates ou adresses) qu’un modèle définissant une précision de correspondance moindre. Plus la valeur de précision de correspondance **min** est faible, plus il y a de contenu correspondant à la condition.
 
@@ -228,7 +228,7 @@ Notez que ce dernier exemple utilise la pratique recommandée qui consiste à to
 ##### <a name="microsoft-teams-meeting-recordings"></a>Enregistrements de réunion Microsoft Teams
 
 > [!NOTE]
-> La possibilité de conserver et de supprimer les enregistrements de réunions Teams est déployé dans l’aperçu et ne fonctionnera pas avant la sauvegarde des enregistrements dans OneDrive ou SharePoint. Pour plus d’informations, consultez [Utiliser OneDrive Entreprise et SharePoint Online ou Stream pour les enregistrements de réunion](/MicrosoftTeams/tmr-meeting-recording-change).
+> La possibilité de conserver et de supprimer les enregistrements de réunions Teams et ne fonctionnera pas avant la sauvegarde des enregistrements dans OneDrive ou SharePoint. Pour plus d’informations, consultez [Utiliser OneDrive Entreprise et SharePoint Online ou Stream pour les enregistrements de réunion](/MicrosoftTeams/tmr-meeting-recording-change).
 
 Pour identifier les enregistrements de réunion Microsoft Teams stockés dans les comptes OneDrive des utilisateurs ou dans SharePoint, spécifiez les éléments suivants pour **l’éditeur de requête de mot clé**:
 
@@ -236,7 +236,7 @@ Pour identifier les enregistrements de réunion Microsoft Teams stockés dans le
 ProgID:Media AND ProgID:Meeting
 ```
 
-La plupart du temps, les enregistrements de réunion sont enregistrés dans OneDrive. Mais les réunions de canal sont enregistrés dans SharePoint.
+La plupart du temps, les enregistrements de réunion sont enregistrés dans OneDrive, mais pour les réunions de canal, ils sont enregistrés dans SharePoint.
 
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Appliquer automatiquement des étiquettes au contenu à l’aide de classifieurs entraînables
@@ -285,7 +285,7 @@ Certains paramètres ne peuvent pas être modifiés une fois l’étiquette ou l
 
 ### <a name="deleting-retention-labels"></a>Suppression des étiquettes de rétention.
 
-Vous pouvez supprimer des étiquettes de rétention qui ne sont pas actuellement incluses dans les stratégies d’étiquette de rétention, qui ne sont pas configurées pour la rétention basée sur des événements, ou qui marquent des éléments comme enregistrements réglementaires. La possibilité de supprimer des étiquettes de rétention qui marquent des éléments comme enregistrements est en cours de déploiement dans la préversion.
+Vous pouvez supprimer des étiquettes de rétention qui ne sont pas actuellement incluses dans les stratégies d’étiquette de rétention, qui ne sont pas configurées pour la rétention basée sur des événements, ou qui marquent des éléments comme enregistrements réglementaires.
 
 Pour les étiquettes de rétention que vous pouvez supprimer, si elles ont été appliquées à des éléments, la suppression échoue et un lien vers l’explorateur de contenu permettant d’identifier les éléments étiquetés s’affiche.
 

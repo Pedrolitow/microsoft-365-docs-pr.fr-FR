@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Le scanneur local de protection contre la perte de données Microsoft 365 en local étend la surveillance des activités sur fichier et des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint. Le scanneur Azure Information Protection (AIP) analyse, puis protège les fichiers.
-ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917810"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114162"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>En savoir plus sur le scanneur local de protection contre la perte de données Microsoft 365 (préversion)
 
-Le scanneur de protection contre la perte de données Microsoft Points de terminaison Protection contre la perte de données (Endpoint DLP) fait partie de la suite de fonctionnalités de protection contre la perte de données (DLP) Microsoft 365 que vous pouvez utiliser pour découvrir, puis protéger les éléments sensibles dans les services Microsoft 365. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md).
+Le scanneur de protection contre la perte de données Microsoft Points de terminaison Protection contre la perte de données (Endpoint DLP) fait partie de la suite de fonctionnalités de protection contre la perte de données (DLP) Microsoft 365 que vous pouvez utiliser pour découvrir, puis protéger les éléments sensibles dans les services Microsoft 365. Si vous souhaitez en savoir plus sur les offres DLP de Microsoft, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
 
 Le **scanneur local de protection contre la perte de données** analyse les données locales au repos dans les partages de fichiers, ainsi que dans les dossiers et bibliothèques de documents SharePoint pour y rechercher les éléments sensibles. En cas de fuite, ces éléments constitueraient un risque pour votre organisation ou un risque de violation de la stratégie de conformité. Ainsi, vous bénéficiez de la visibilité et du contrôle dont vous avez besoin pour garantir une utilisation et une protection correctes de ces éléments, puis éviter tout comportement risqué susceptible de les compromettre. Le scanneur local de protection contre la perte de données détecte les informations sensibles à l’aide de types d’informations [intégrées](sensitive-information-type-entity-definitions.md) ou [sensibles personnalisées](create-a-custom-sensitive-information-type.md), d’[étiquettes de niveau de](sensitivity-labels.md) ou de propriétés de fichier. Les informations relatives aux actions des utilisateurs avec les éléments sensibles apparaissent dans [l’Explorateur d’activités](data-classification-activity-explorer.md), et vous pouvez appliquer des actions de protection à ces éléments via les [stratégies DLP](create-test-tune-dlp-policy.md).
 
@@ -89,6 +89,6 @@ Maintenant que vous en savez plus sur le scanneur local de protection contre la 
 
 - [Prise en main du scanner local de protection contre la perte de données Microsoft](dlp-on-premises-scanner-get-started.md)
 - [Utilisation du scanneur local de protection contre la perte de données Microsoft](dlp-on-premises-scanner-use.md)
-- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: L’Explorateur de contenu vous permet d’afficher des éléments étiquetés en mode natif.
-ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080723"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114214"
 ---
 # <a name="get-started-with-content-explorer"></a>Prise en main de l’explorateur de contenu
 
@@ -82,7 +82,7 @@ L’Explorateur de contenu présente un instantané actuel des éléments qui on
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
-Une [stratégie DLP](data-loss-prevention-policies.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) provenant de nombreuses régions différentes qui sont prêtes à l’emploi. Par exemple, un numéro de carte bancaire, des numéros de compte bancaire, des numéros d’identification nationaux et des numéros de service Windows Live ID.
+Une [stratégie DLP](dlp-learn-about-dlp.md) peut contribuer à protéger les informations sensibles, définies selon des **types d’informations sensibles**. Microsoft 365 inclut des [définitions pour de nombreux types d’informations sensibles courants](sensitive-information-type-entity-definitions.md) provenant de nombreuses régions différentes qui sont prêtes à l’emploi. Par exemple, un numéro de carte bancaire, des numéros de compte bancaire, des numéros d’identification nationaux et des numéros de service Windows Live ID.
 
 > [!NOTE]
 > Actuellement, l’explorateur de contenu n’analyse pas les types d’informations sensibles dans Exchange Online.
@@ -145,4 +145,4 @@ Vous pouvez effectuer une recherche sur les éléments suivants :
 - [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
 - [En savoir plus sur les stratégies et les balises de rétention](retention.md)
 - [Définitions d’entités des types d’informations sensibles.md](sensitive-information-type-entity-definitions.md)
-- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)

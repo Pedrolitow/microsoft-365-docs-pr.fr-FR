@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Apprenez comment configurer les paramètres de proxy et de connexion Internet du dispositif pour le DLP Endpoint.
-ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199273"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114122"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison
 
@@ -142,7 +142,7 @@ Sujets connexes – Périphériques Windows 10 embarqués – Dépannage des pro
 
 - [En savoir plus sur les points de terminaison de protection contre la perte de données (Preview)](endpoint-dlp-learn-about.md)
 - [Utilisation des points de terminaison de protection contre la perte de données (aperçu)](endpoint-dlp-using.md)
-- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)

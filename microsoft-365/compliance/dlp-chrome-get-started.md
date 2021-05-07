@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Préparer et déployer l’extension de la conformité Microsoft.
-ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838347"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113862"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Prise en main de l’extension de la conformité Microsoft (préversion)
 
@@ -35,7 +35,7 @@ Utilisez les procédures ci-après pour déployer l’extension de la conformit�
 Pour utiliser l’extension de la conformité Microsoft, l’appareil doit être intégré à la protection contre la perte de données du point de terminaison. Consultez ces articles si vous êtes novice en matière de DLP ou de DLP des points d'extrémité.
 
 - [En savoir plus sur l’extension de la conformité Microsoft](dlp-chrome-learn-about.md)
-- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
@@ -274,7 +274,7 @@ Maintenant que vous disposez d’appareils intégrés et que vous pouvez affiche
 
 - [En savoir plus sur les points de terminaison de protection contre la perte de données (Preview)](endpoint-dlp-learn-about.md)
 - [Utilisation des points de terminaison de protection contre la perte de données (aperçu)](endpoint-dlp-using.md)
-- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/)

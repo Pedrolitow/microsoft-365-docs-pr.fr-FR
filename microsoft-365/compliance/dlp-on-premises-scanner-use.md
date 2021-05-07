@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez comment utiliser le scanneur de protection contre la perte de données Microsoft 365 en local pour analyser les données au repos, puis implémenter des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint locales.
-ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0abe36af5588c1828da106779a144b6e7f37d6a8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917820"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114152"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Utilisation du scanneur local de protection contre la perte de données Microsoft 365 (préversion)
 
@@ -32,7 +32,7 @@ Pour vous familiariser avec les fonctionnalités locales DLP et la manière dont
 
 > [!IMPORTANT]
 > Ces scénarios locaux DLP ne sont pas les procédures officielles de création et de réglage des stratégies DLP. Reportez-vous aux rubriques ci-dessous lorsque vous devez utiliser les stratégies DLP dans les situations générales suivantes :
->- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+>- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 >- [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)
 >- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 >- [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
@@ -80,6 +80,6 @@ Si vous souhaitez appliquer des règles DLP aux fichiers analysés, vous devez a
 
 - [En savoir plus sur le scanneur local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-learn.md)
 - [Prise en main du scanner local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-get-started.md)
-- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)

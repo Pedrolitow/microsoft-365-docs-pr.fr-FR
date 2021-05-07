@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -16,13 +16,14 @@ search.appverid:
 ms.collection:
 - m365solution-mip
 - m365initiative-compliance
+recommendations: false
 description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: e8487bf443592fa45b887929f947b701406dba55
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 36e8e917349edd5523677112818cd39514710583
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394692"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114360"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 
@@ -77,8 +78,19 @@ Pour éviter le partage excessif accidentel d’informations sensibles, utilisez
 
 |Fonctionnalité|Utilité|Prise en main|
 |:------|:------------|:---------------------|
-|[Protection contre la perte de données (DLP)](data-loss-prevention-policies.md)| Permet d’empêcher le partage involontaire d’éléments sensibles. | [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)|
+|[En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)| Permet d’empêcher le partage involontaire d’éléments sensibles. | [Prise en main de la stratégie DLP par défaut](get-started-with-the-default-dlp-policy.md)|
 |[Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)| Étend les fonctionnalités DLP aux éléments utilisés et partagés sur les ordinateurs Windows 10. | [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)|
 |[En savoir plus sur l’extension de la conformité Microsoft (préversion).](dlp-chrome-learn-about.md) | Étend les fonctionnalités de protection contre la perte de données au navigateur Chrome | [Prise en main de l’extension de conformité Microsoft (préversion)](dlp-chrome-get-started.md)|
 |[En savoir plus sur le scanneur local de protection contre la perte de données Microsoft 365 (préversion)](dlp-on-premises-scanner-learn.md)|Étend la surveillance de la protection contre la perte de données des activités sur fichier et des actions de protection pour les partages de fichiers locaux, pour les dossiers locaux et les bibliothèques de documents SharePoint.|[Prise en main du scanner local de protection contre la perte de données Microsoft 365 (préversion)](dlp-on-premises-scanner-get-started.md)|
 |[Protéger les informations sensibles dans les messages de conversation et de canal de Microsoft Teams](dlp-microsoft-teams.md) | Étend certaines fonctionnalités de protection contre la perte de données aux messages de canal et aux conversations Teams. | [En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préversion)](dlp-teams-default-policy.md)| 
+
+
+## <a name="additional-resources"></a>Ressources supplémentaires
+
+De nombreuses organisations utilisent ces fonctionnalités de protection des informations pour se conformer aux réglementations relatives à la confidentialité des données. Pour vous aider, nous avons conçu un flux de travail qui vous guide dans un processus de bout en bout pour planifier et implémenter des fonctionnalités dans Microsoft 365, notamment l’accès sécurisé, la protection contre les menaces, la protection des informations et la gouvernance des données. Pour plus d’informations, consultez [Déployer la protection des informations pour la confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+
+En outre, pour vous aider à planifier une stratégie intégrée pour l’implémentation des fonctionnalités de protection des informations, téléchargez l'ensemble d'illustrations sur les *Fonctionnalités de conformité et de protection des informations Microsoft 365*.  N’hésitez pas à les adapter à votre usage personnel.
+
+| Élément | Description |
+|:-----|:------------|
+|[![Poster du modèle : fonctionnalités de la conformité et de la protection des informations Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Télécharger au format PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonais : [Télécharger au format PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Mise à jour : octobre 2020|Inclus : <ul><li>  Protection des informations et protection contre la perte de données Microsoft</li><li>Stratégies de rétention et étiquettes de rétention </li><li>Obstacles aux informations</li><li>Conformité des communications</li><li>Gestion des risques internes</li><li>Réception de données tierces</li>|

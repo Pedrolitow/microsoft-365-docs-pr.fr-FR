@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurer un scanneur local de protection contre la perte de données Microsoft 365
-ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917830"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114172"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Prise en main du scanneur local de protection contre la perte de données (préversion)
 
@@ -127,7 +127,7 @@ Maintenant que vous avez déployé une stratégie de test pour les emplacements 
 
 - [En savoir plus sur le scanneur local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-learn.md)
 - [Utiliser le scanneur local de protection contre la perte de données (préversion)](dlp-on-premises-scanner-use.md)
-- [Vue d’ensemble de la protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

@@ -1,7 +1,7 @@
 ---
-title: Liste des appareils exposés d'une activité de correction
+title: Répertorier les appareils exposés d’une activité de correction
 description: Retourne des informations sur les appareils exposés pour la tâche de correction spécifiée.
-keywords: api, correction, api de correction, obtenir, tâches de correction,
+keywords: api, correction, api de correction, obtenir, tâches de correction, correction des appareils exposés
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061146"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241711"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a>Liste des appareils exposés d'une activité de correction
+# <a name="list-exposed-devices-of-one-remediation-activity"></a>Répertorier les appareils exposés d’une activité de correction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "52061146"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a>Description de l'API
+## <a name="api-description"></a>Description de l’API
 
 Retourne des informations sur les appareils exposés pour la tâche de correction spécifiée.
 
@@ -49,24 +49,33 @@ Retourne des informations sur les appareils exposés pour la tâche de correctio
 
 **URL :** GET: /api/remediationTasks/ \{ id \} /machineReferences
 
-**Détails** des propriétés
+## <a name="permissions"></a>Autorisations
+
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
+
+Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
+:---|:---|:---
+Application | RemediationTask.Read.All | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire) | RemediationTask.Read.Read | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+
+## <a name="properties-details"></a>Détails des propriétés
 
 Propriété (id) | Type de données | Description | Exemple
 :---|:---|:---|:---
-id | String | ID d'appareil | w2957837fwda8w9ae7f023dba081059dw8d94503
+id | String | ID d’appareil | w2957837fwda8w9ae7f023dba081059dw8d94503
 computerDnsName | String | Nom du périphérique | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | String | Système d'exploitation d'appareil | WindowsServer2012R2
-rbacGroupName | String | Nom du groupe d'appareils associé à cet appareil | Serveurs
+osPlatform | String | Système d’exploitation d’appareil | WindowsServer2012R2
+rbacGroupName | String | Nom du groupe d’appareils associé à cet appareil | Serveurs
 
 ## <a name="example"></a>Exemple
 
-**Exemple de** requête
+### <a name="request-example"></a>Exemple de requête
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**Exemple de** réponse
+### <a name="response-example"></a>Exemple de réponse
 
 ```json
 {
@@ -108,10 +117,10 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [Méthodes et propriétés de correction](get-remediation-methods-properties.md)
 
-- [Obtenir une activité de correction par ID](get-remediation-one-activity.md)
+- [Obtenir une activité de correction par son ID](get-remediation-one-activity.md)
 
-- [Liste de toutes les activités de correction](get-remediation-all-activities.md)
+- [Répertorier toutes les activités de correction](get-remediation-all-activities.md)
 
-- [Gestion des menaces basée sur & des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

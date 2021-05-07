@@ -1,5 +1,5 @@
 ---
-title: Découvrir la classification de données
+title: En savoir plus sur la classification des données
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922678"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899384"
 ---
-# <a name="know-your-data---data-classification-overview"></a>Connaissez vos données : vue d’ensemble de la classification des données
+# <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
 En tant qu'administrateur Microsoft 365 ou administrateur de conformité, vous pouvez évaluer puis baliser le contenu de votre organisation afin de contrôler où il va, de le protéger où qu'il soit et de vous assurer qu'il est préservé et supprimé en fonction des besoins de votre organisation. Pour ce faire, vous devez utiliser les [étiquettes de confidentialité](sensitivity-labels.md), les [étiquettes de rétention](retention.md#retention-labels) et la classification des informations sensibles par types. Plusieurs méthodes s’offrent à vous pour effectuer la découverte, l’évaluation et le balisage, mais le résultat final est de disposer d’un grand nombre de documents et de messages électroniques balisés et classifiés avec ces étiquettes. Après avoir appliqué vos étiquettes de rétention et vos étiquettes de confidentialité, vous souhaiterez voir de quelle manière elles sont utilisées par vos clients. La page classification des données fournit une visibilité dans ce corps de contenu, notamment :
 
@@ -36,8 +36,12 @@ En tant qu'administrateur Microsoft 365 ou administrateur de conformité, vous p
 - les emplacements de vos données sensibles et conservées
 
 Vous pouvez également gérer ces fonctionnalités sur la page classification de données :
+
 - [classifieurs avec capacité d’apprentissage](classifier-learn-about.md)
-- [types d’informations sensibles](./sensitive-information-type-entity-definitions.md)
+- [types d’informations sensibles](sensitive-information-type-learn-about.md)
+- [correspondances exactes des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Explorateur de contenu](data-classification-content-explorer.md)
+- [Explorateur d’activités](data-classification-activity-explorer.md)
 
 Vous trouverez la classification des données dans le **Centre de conformité Microsoft 365** ou le **Centre de sécurité Microsoft 365** > **Classification** > **Classification de données**.
 
@@ -96,7 +100,7 @@ La carte d’étiquette de confidentialité affiche le nombre d’éléments (ad
 ![répartition du contenu par capture d’écran de l’espace réservé pour la classification des étiquettes de confidentialité](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Si vous n’avez pas créé ou publié d’étiquettes de confidentialité ou si aucune étiquette de confidentialité n’a été appliquée à votre contenu, cette carte affiche le message « Aucune étiquette de confidentialité détectée ». Pour commencer à utiliser les étiquettes de confidentialité, voir :
+> Si vous n’avez pas créé ou publié d’étiquettes de confidentialité ou si aucune étiquette de confidentialité n’a été appliquée à votre contenu, cette carte affiche le message « Aucune étiquette de confidentialité détectée ». Pour commencer à utiliser les étiquettes de confidentialité, consultez :
 >- [Commencez avec les étiquettes de sensibilité](get-started-with-sensitivity-labels.md) ou pour AIP [Configurer la politique de protection des informations sur Azure](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Principales étiquettes de rétention appliquées au contenu
@@ -113,10 +117,10 @@ La carte étiquettes de rétention les plus utilisées vous indique le nombre d�
 
 ## <a name="top-activities-detected"></a>Principales activités détectées
 
-Cette carte décrit brièvement les actions les plus courantes que les utilisateurs effectuent sur les éléments étiquetés comme sensibles. Vous pouvez utiliser [L’explorateur d’activité](data-classification-activity-explorer.md) pour explorer en profondeur huit activités différentes que Microsoft 365 suit sur le contenu étiqueté et le contenu qui se trouve sur les points de terminaison de Windows 10.
+Cette carte décrit brièvement les actions les plus courantes que les utilisateurs effectuent sur les éléments étiquetés comme sensibles. Vous pouvez utiliser [L’explorateur d’activité](data-classification-activity-explorer.md) pour explorer en profondeur les différentes activités que Microsoft 365 suit sur le contenu étiqueté et le contenu qui se trouve sur les points de terminaison de Windows 10.
 
 > [!NOTE]
-> Si cette carte affiche le message « Aucune activité détectée », cela signifie qu’il n’y a eu aucune activité sur les fichiers, ou que l’audit de l’utilisateur et de l’administrateur n’est pas activé. Pour activer les journaux d’audit, voir :
+> Si cette carte affiche le message « Aucune activité détectée », cela signifie qu’il n’y a eu aucune activité sur les fichiers, ou que l’audit de l’utilisateur et de l’administrateur n’est pas activé. Pour activer les journaux d’audit, consultez :
 >- [Effectuer des recherches dans le journal d’audit depuis le centre de sécurité et conformité](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="sensitivity-and-retention-labeled-data-by-location"></a>Données étiquetées confidentielles ou retenues par emplacement
@@ -124,7 +128,7 @@ Cette carte décrit brièvement les actions les plus courantes que les utilisate
 L’objectif de la création de rapports sur la classification des données est de fournir une visibilité sur le nombre d’éléments qui ont une étiquette, ainsi que leur emplacement. Ces cartes vous permettent de connaître le nombre d’éléments étiquetés dans Exchange, SharePoint, OneDrive, etc.
 
 > [!NOTE]
-> Si cette carte affiche le message, « Aucun emplacement détecté », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de confidentialité ou qu’aucune étiquette de confidentialité n’a été appliquée à votre contenu. Pour commencer à utiliser les étiquettes de confidentialité, voir :
+> Si cette carte affiche le message, « Aucun emplacement détecté », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de confidentialité ou qu’aucune étiquette de confidentialité n’a été appliquée à votre contenu. Pour commencer à utiliser les étiquettes de confidentialité, consultez :
 >- [Étiquettes de confidentialité](sensitivity-labels.md)
 
 ## <a name="see-also"></a>Voir aussi
@@ -133,5 +137,6 @@ L’objectif de la création de rapports sur la classification des données est 
 - [Afficher le contenu étiqueté](data-classification-content-explorer.md)
 - [En savoir plus sur les étiquettes de niveau de confidentialité](sensitivity-labels.md)
 - [En savoir plus sur les stratégies et les balises de rétention](retention.md)
+- [En savoir plus sur les types d’informations confidentielles](sensitive-information-type-learn-about.md).
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Découvrez les classificateurs de formation (préversion)](classifier-learn-about.md)

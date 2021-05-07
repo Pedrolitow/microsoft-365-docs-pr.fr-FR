@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment créer un type d’informations sensibles personnalisé qui vous permettra d’utiliser des règles répondant aux besoins de votre organisation.
-ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b24313c54fdf49876c58d1809cbb29159f4508f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922658"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114258"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personnaliser un type d’informations sensibles intégré
 
@@ -232,7 +232,7 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
 |Fonctions|Le fichier XML fait référence à `Func_credit_card`, qui est une fonction dans le code compilé. Les fonctions sont utilisées pour exécuter des expressions régulières complexes et vérifier que les sommes de contrôle correspondent pour nos règles intégrées. Étant donné que tout ceci se passe dans le code, certaines variables ne figurent pas dans le fichier XML.|
 |IdMatch|Il s’agit de l’identificateur auquel le modèle tente de correspondre, par exemple un numéro de carte de crédit.|
 |Listes de mots clés|Le fichier XML fait également référence à `keyword_cc_verification` et à `keyword_cc_name`, qui sont des listes de mots clés dans lesquelles nous recherchons des correspondances à l’intérieur du paramètre `patternsProximity` pour l’entité. Ces éléments ne sont actuellement pas affichés dans le fichier XML.|
-|Modèle|Le modèle contient la liste de ce que le type sensible recherche. Celle-ci inclut des mots clés, des expressions régulières et des fonctions internes qui effectuent des tâches telles que la vérification des sommes de contrôle. Ces types d’informations sensibles peuvent avoir plusieurs modèles avec des niveaux de confiance uniques. Ceci est utile lors de la création d’un type d’informations sensibles qui renvoie un niveau de confiance élevé si des preuves crédibles sont trouvées et un niveau de confiance faible dans le cas contraire.|
+|Modèle|Le modèle contient la liste de ce que le type sensible recherche. Cela inclut des mots clés, des expressions régulières et des fonctions internes, qui effectuent des tâches telles que la vérification des sommes de contrôle. Ces types d’informations sensibles peuvent avoir plusieurs modèles avec des niveaux de confiance uniques. Ceci est utile lors de la création d’un type d’informations sensibles qui renvoie un niveau de confiance élevé si des preuves crédibles sont trouvées et un niveau de confiance faible dans le cas contraire.|
 |confidenceLevel|Il s’agit du niveau de confiance appliqué lorsque le moteur DLP trouve une correspondance. Ce niveau de confiance est associé à une correspondance pour le modèle si les exigences du modèle sont remplies. C’est la mesure de confiance à prendre en considération lorsque vous utilisez des règles de flux de messagerie Exchange (également appelées règles de transport).|
 |patternsProximity|Lorsque nous trouvons ce qui ressemble à un modèle de numéro de carte de crédit, `patternsProximity` correspond à la proximité de recherche de preuves crédibles autour de ce numéro.|
 |recommendedConfidence|Il s’agit du niveau de confiance recommandé pour cette règle. La confiance recommandée s’applique aux entités et aux affinités. Pour les entités, ce nombre n’est jamais évalué par rapport au paramètre `confidenceLevel` pour le modèle. Il s’agit d’une simple suggestion pour vous aider à choisir un niveau de confiance, si vous voulez en appliquer un. Pour les affinités, le paramètre `confidenceLevel` du modèle doit être supérieur au nombre `recommendedConfidence` pour une action de règle de flux de messagerie à appeler. Le paramètre `recommendedConfidence` correspond au niveau de confiance par défaut utilisé dans les règles de flux de messagerie qui appelle une action. Si vous le souhaitez, vous pouvez modifier manuellement la règle de flux de messagerie à appeler pour le faire à partir du niveau de confiance du modèle.|
@@ -240,7 +240,5 @@ Voici les définitions des termes que vous avez rencontrés au cours de cette pr
 ## <a name="for-more-information"></a>Pour plus d'informations
 
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
-    
 - [Créer un type d’informations sensibles personnalisé](create-a-custom-sensitive-information-type.md)
-    
-- [Vue d’ensemble des stratégies de protection contre la perte de données](data-loss-prevention-policies.md)
+- [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
