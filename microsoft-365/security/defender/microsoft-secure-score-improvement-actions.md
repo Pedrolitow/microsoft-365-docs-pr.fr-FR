@@ -1,6 +1,6 @@
 ---
 title: Évaluer votre posture de sécurité via le Score de sécurité Microsoft
-description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le Centre de sécurité Microsoft 365.
+description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le centre Microsoft 365 sécurité.
 keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,31 +21,31 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0b2b9f1f01a583a96e0ae663e3f78cb0a7d846fc
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570599"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246395"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver dans le Centre de sécurité https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore centre de [sécurité Microsoft 365.](overview-security-center.md)
 
 Pour vous aider à trouver les informations dont vous avez besoin plus rapidement, les actions d’amélioration de Microsoft sont organisées en groupes :
 
-* Identité (comptes Azure Active Directory & rôles)
+* Identité (Azure Active Directory comptes & rôles)
 * Appareil (Microsoft Defender pour point de terminaison, appelé [Score de sécurité Microsoft pour les appareils)](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)
-* Application (applications de messagerie et cloud, notamment Office 365 et Microsoft Cloud App Security)
+* Applications (applications de messagerie et cloud, y compris Office 365 et Microsoft Cloud App Security)
 
 >[!NOTE]
->Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui rend le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
+>Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui a rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
 
 Dans la page vue d’ensemble du score de sécurité Microsoft, affichez la répartition des points entre ces groupes et les points disponibles. Vous pouvez également obtenir une vue globale du score total, de la tendance historique de votre score sécurisé avec des comparaisons de critères et des actions d’amélioration hiérarchisées qui peuvent être prises pour améliorer votre score.
 
-![Page d’accueil du score de sécurisation](../../media/secure-score/secure-score-homepage-new.png)
+![Page d’accueil du score de sécurisation](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>Vérifier votre score actuel
 
@@ -55,13 +55,13 @@ En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, 
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global pour vous donner une image plus complète de votre score global :
 
-- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score planifié :** afficher le score projeté lorsque les actions planifiées sont terminées
 - **Score de licence actuel**: afficher le score qui peut être obtenu avec votre licence Microsoft actuelle
 - **Score réalisable :** afficher le score qui peut être obtenu avec vos licences Microsoft et l’acceptation actuelle des risques
 
 Cette vue ressemblera à ce à quoi elle ressemblera si vous avez inclus tous les affichages de score possibles :
 
-![Votre score sécurisé, y compris le score planifié, le score de licence actuel et le score réalisable](../../media/secure-score/your-secure-score.png)
+![Votre score sécurisé, y compris le score planifié, le score de licence actuel et le score réalisable](../../media/secure-score/secure-score-achievable.png)
 
 ## <a name="take-action-to-improve-your-score"></a>Prendre des mesures pour améliorer votre score
 
@@ -81,7 +81,7 @@ Pour effectuer l’action, vous avez plusieurs options :
 
 - Sélectionnez **Gérer** pour passer à l’écran de configuration et apporter les changements. Vous gagnerez ensuite les points que l’action vaut, visibles dans le volant. La mise à jour des points prend généralement environ 24 heures.
 
-- Sélectionnez **Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que la messagerie, Microsoft Teams, Le Planificateur Microsoft ou ServiceNow. La sélection de ServiceNow vous permet de créer un ticket de modification qui sera visible dans ServiceNow et le centre de sécurité Microsoft 365. Pour en savoir plus, consultez le Centre de sécurité [Microsoft 365 et l’intégration de ServiceNow.](./tickets.md)
+- Sélectionnez **Partager** pour copier le lien direct vers l’action d’amélioration. Vous pouvez également choisir la plateforme pour partager le lien, telle que le courrier électronique, Microsoft Teams ou Microsoft Planner.
 
 Ajoutez **des notes** pour suivre la progression ou tout autre commentaire que vous souhaitez commenter. Si vous ajoutez vos propres **balises à** l’action d’amélioration, vous pouvez filtrer par ces balises.
 
@@ -94,9 +94,9 @@ Choisissez les états et les notes d’enregistrement spécifiques à l’action
 - **Risque accepté :** la sécurité doit toujours être équilibrée avec la convivialité, et toutes les recommandations ne fonctionnent pas pour votre environnement. Lorsque c’est le cas, vous pouvez choisir d’accepter le risque, ou le risque restant, et de ne pas adopter l’action d’amélioration. Aucun point ne vous sera attribué, mais l’action ne sera plus visible dans la liste des actions d’amélioration. Vous pouvez afficher cette action dans l’historique ou l’annuler à tout moment.
 - **Résolu par le**  biais d’un tiers et résolu par le biais d’une atténuation alternative : l’action d’amélioration a déjà été traitée par une application ou un logiciel tiers, ou par un outil interne. Vous gagnerez les points que l’action vaut, afin que votre score reflète mieux votre posture de sécurité globale. Si un outil tiers ou interne ne couvre plus le contrôle, vous pouvez choisir un autre état. N’oubliez pas que Microsoft n’aura aucune visibilité sur l’intégralité de l’implémentation si l’action d’amélioration est marquée comme l’un de ces états.
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d’amélioration & la gestion des vulnérabilités des menaces
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Actions d& gestion des vulnérabilités d’amélioration des menaces
 
-Pour les actions d’amélioration dans la catégorie « Appareil », vous ne pouvez pas choisir les états. Au lieu de cela, vous [](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) serez dirigé vers la recommandation de sécurité associée à la gestion des menaces et des vulnérabilités dans le Centre de sécurité [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use) pour prendre des mesures. L’exception que vous choisissez et la justification que vous écrivez sera spécifique à ce portail. Il ne sera pas présent dans le portail Score de sécurité Microsoft.
+Pour les actions d’amélioration dans la catégorie « Appareil », vous ne pouvez pas choisir les états. Au lieu de cela, vous [](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) serez dirigé vers la recommandation de sécurité Gestion des menaces et des vulnérabilités associée dans la [Centre de sécurité Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use) pour prendre des mesures. L’exception que vous choisissez et la justification que vous écrivez sera spécifique à ce portail. Il ne sera pas présent dans le portail Score de sécurité Microsoft.
 
 #### <a name="completed-improvement-actions"></a>Actions d’amélioration terminées
 
@@ -112,7 +112,7 @@ La section appelée **En un coup d’œil** vous indique la catégorie, les atta
 
 La  section Implémentation présente les conditions préalables, les étapes suivantes pas à pas pour effectuer l’action d’amélioration, l’état d’implémentation actuel de l’action d’amélioration et les liens supplémentaires.
 
-Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration ne soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
+Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

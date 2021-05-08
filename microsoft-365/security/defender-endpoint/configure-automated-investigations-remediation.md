@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 31a1c79440a8c1edc2bc8e2f2a163ded2a92fd64
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 23d6c8c87a6cbcc7b8060440ba2c0cae6182767d
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165764"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274543"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Configurer des fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour endpoint
 
@@ -66,4 +66,4 @@ Pour configurer l’examen et la correction automatisés,
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Corriger les faux positifs/négatifs dans Microsoft Defender pour le point de terminaison](defender-endpoint-false-positives-negatives.md)
+- [Résoudre des faux négatifs/positifs dans Microsoft Defender pour point de terminaison](defender-endpoint-false-positives-negatives.md)

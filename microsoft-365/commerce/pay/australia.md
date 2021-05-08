@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour l'Australie
+title: Informations de paiement pour l’Australie
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -8,18 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8087535472e0affe4d7f7526b4c05aabe44ad2ac
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 6b02242af4e1beb5b113c72ce3e1ab91d682417a
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024168"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274277"
 ---
-# <a name="payment-information-for-australia"></a>Informations de paiement pour l'Australie
+# <a name="payment-information-for-australia"></a>Informations de paiement pour l’Australie
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
@@ -43,4 +43,4 @@ Code BSB : 248053\
 Numéro de compte : 100001074\
 Nom du compte : MICROSOFT
 
-Les factures émises à partir d'une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.
+Les factures émises à partir d’une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.

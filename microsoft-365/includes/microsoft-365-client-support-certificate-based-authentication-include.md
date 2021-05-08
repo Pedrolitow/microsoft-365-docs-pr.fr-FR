@@ -36,7 +36,7 @@
 |TEAMS|✔|✔|✔|Planifié|S/O|
 |TO-DO|✔|✔|✔|S/O|✔|
 |VISIO|S/O|✔|S/O|✔|S/O|
-|TABLEAU BLANC|S/O|Planifié|N/A|N/A|✔|
+|TABLEAU BLANC|✔|Planifié|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |ANALYSE DU TEMPS DE TRAVAIL|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|✔|✔|Planifié|Planifié|S/O|

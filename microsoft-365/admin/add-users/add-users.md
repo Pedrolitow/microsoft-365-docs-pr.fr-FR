@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment ajouter des utilisateurs et attribuer des licences Microsoft 365 simultanément.
 ms.date: 07/01/2020
-ms.openlocfilehash: 6a1361d9cfebd2b305a71248fcbb461d0a68a052
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 3efa32d21a21ed12041f5731296c1b033374712f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107085"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274387"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
@@ -40,7 +40,24 @@ Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **m
 
 :::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Capture d’écran : mode simplifié du Centre d'administration":::
 
+::: moniker range="o365-worldwide"
+
 1. Accédez au centre d’administration sur <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
 2. Sélectionnez **Créer un compte pour une autre personne**.
 3. Sur la page **Ajouter un compte utilisateur**, remplissez le prénom et le nom, le nom d'affichage et le nom d'utilisateur qu’il utilisera pour se connecter.
 4. Ajoutez l’adresse e-mail de l’utilisateur dans la zone de texte **Jusqu’à 5 adresses e-mail...**. Ceci permettra de s’assurer que le nouvel utilisateur reçoive les informations dont il a besoin pour se connecter aux services Microsoft 365.
@@ -55,22 +72,15 @@ Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **m
 
 ## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>Ajouter un utilisateur à la fois dans l’affichage du tableau de bord
 
- ::: moniker range="o365-worldwide"
-
 :::image type="content" source="../../media/classic-admin-center.png" alt-text="Capture d’écran : affichage du tableau de bord du Centre d'administration":::
 
-1. Accédez au centre d’administration sur<https://admin.microsoft.com>.
-2. Accédez à **Utilisateurs** > **Utilisateurs actifs** puis sélectionnez **Ajouter un utilisateur**.
-3. Dans le volet **Configurer les informations de base**, renseignez les informations de base de l’utilisateur, puis sélectionnez **Suivant**.
-    - **Nom** Renseignez le nom complet, le nom d'affichage et le nom d'utilisateur.
-    - **Domaine** Choisissez le domaine pour le compte de l’utilisateur. Par exemple, pour un nom d'utilisateur Jérôme et un domaine contoso.com, l’utilisateur pourra se connecter en utilisant jerome@contoso.com.
-    - **Paramètres du mot de passe** Choisissez d’utiliser un mot de passe généré automatiquement ou un mot de passe fort que vous aurez créé pour l’utilisateur.
-    - L’utilisateur devra modifier son mot de passe après 90 jours. Vous pouvez aussi choisir d’**Exiger de cet utilisateur qu’il modifie son mot de passe lors de sa première connexion**.
-    - Indiquez si le mot de passe doit être envoyé par e-mail lorsque l’utilisateur est ajouté.
-4. Dans le volet **Attribuer des licences de produits**, sélectionnez l’emplacement et la licence adaptée à l’utilisateur. Si vous n’avez pas de licence disponible, vous pouvez toujours ajouter un utilisateur et acheter des licences supplémentaires. Développez l’onglet **Applications** et sélectionnez ou désélectionnez les applications pour lesquelles attribuer les licences à l’utilisateur. Sélectionnez **Suivant**.
-5. Dans le volet **Paramètres facultatifs**, développez l’onglet **Rôles** et promouvez cet utilisateur au rôle d’administrateur. Développez l’onglet **Informations du profil** pour ajouter plus d’informations sur l’utilisateur.
-6. Sélectionnez **Suivant**, passez en revue les paramètres du nouvel utilisateur, effectuez les changements que vous souhaitez, puis sélectionnez **Finaliser l’ajout**, puis **Fermer**.
+::: moniker range="o365-worldwide"
 
+1. Accédez au centre d’administration sur<https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
 
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 

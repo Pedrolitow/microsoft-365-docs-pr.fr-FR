@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7853c6c535a9b4daf9f29a1125c805c29ca6f93f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7bea9a1632e7a9ed9d394c2c411123d0601a9397
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245911"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274579"
 ---
 # <a name="the-action-center"></a>Le Centre de notifications
 
@@ -35,27 +35,27 @@ ms.locfileid: "52245911"
 **S’applique à :**
 - Microsoft 365 Defender
 
-## <a name="a-single-pane-of-glass-experience"></a>Expérience de type « écran unique »
+Le centre de sécurité fournit une expérience de « volet unique » pour les tâches d’incident et d’alerte telles que :
 
-Le centre de notifications offre une expérience de type « écran unique » pour certaines tâches :
-- Approbation des actions de correction en attente ;
-- Affichage d’un journal d’audit des actions de correction déjà approuvées ; et
+- Approbation des actions de correction en attente.
+- Affichage d’un journal d’audit des actions de correction déjà approuvées.
 - Évaluation des actions de correction terminées.
 
-Votre équipe des opérations de sécurité peut fonctionner plus efficacement, car le centre de sécurité offre une vue complète de Microsoft 365 Defender au travail.
+Étant donné que le centre de gestion des actions offre une vue complète de Microsoft 365 Defender au travail, votre équipe des opérations de sécurité peut fonctionner plus efficacement.
 
-## <a name="a-new-unified-action-center"></a>Un nouveau centre de l’action unifié
+## <a name="the-unified-action-center"></a>Centre de l’action unifiée
 
-Nous sommes heureux d’annoncer un nouveau centre de travail unifié ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) )! 
+Le centre de actions unifié () répertorie les actions de correction en attente et terminées pour vos appareils, les & contenu de collaboration et les identités dans [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) un seul emplacement.
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée dans Microsoft 365 Defender":::
 
-Le centre de mise en œuvre amélioré répertorie les actions de correction en attente et terminées pour vos appareils, la messagerie & contenu de collaboration et les identités dans un seul emplacement.
-- Si vous utilisiez précédemment le Centre Office 365 sécurité & conformité ( ), essayez le nouveau centre de sécurité unifié dans le centre de sécurité [https://protection.office.com](https://protection.office.com) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Si vous utilisiez le centre de Centre de sécurité Microsoft Defender ( ), essayez le nouveau centre de sécurité unifié du centre de sécurité Microsoft 365 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Si vous utilisiez déjà le centre de sécurité Microsoft 365 ( ), vous verrez plusieurs améliorations dans le centre [https://security.microsoft.com](https://security.microsoft.com) de l’action ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+Par exemple : 
 
-Le centre de mise en œuvre unifié regroupe les actions de correction dans Defender pour Endpoint et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’examen unifiée. Le centre de gestion des actions fournit à votre équipe des opérations de sécurité une expérience de « volet unique » pour afficher et gérer les actions de correction.  
+- Si vous utilisiez précédemment le Centre de sécurité & et conformité Office 365 ( ), essayez le centre de sécurité unifié dans le Centre de sécurité [https://protection.office.com](https://protection.office.com) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Si vous utilisiez le Centre de sécurité Microsoft Defender ( ), essayez le centre de sécurité unifié dans le Centre de sécurité [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Si vous utilisiez déjà le Centre de sécurité Microsoft 365 ( ), vous verrez plusieurs améliorations dans le centre [https://security.microsoft.com](https://security.microsoft.com) de l’action ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+
+Le centre de mise en œuvre unifié regroupe les actions de correction dans Defender pour Endpoint et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’examen unifiée. Votre équipe des opérations de sécurité dispose d’une expérience de « volet unique » pour afficher et gérer les actions de correction.  
 
 Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisations appropriées et un ou plusieurs des abonnements suivants :
 
@@ -71,7 +71,7 @@ Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisat
 1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-Lorsque vous visitez le centre de l’action, vous voyez deux onglets : Actions en attente et Historique. Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
+Lorsque vous visitez le centre de actions, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
 
 |Tab  |Description  |
 |---------|---------|
@@ -103,7 +103,7 @@ Toutes les actions, qu’elles soient en attente d’approbation ou qu’elles o
 - Exécuter une analyse antivirus 
 - Arrêter et mettre en quarantaine 
 
-En plus des actions de correction qui [](m365d-autoir.md)sont prises automatiquement à la suite d’enquêtes automatisées, le centre de mise en œuvre effectue également le suivi des actions que votre équipe de sécurité a prises pour traiter les menaces détectées et des actions qui ont été prises à la suite des fonctionnalités de protection contre les menaces dans Microsoft 365 Defender. Pour plus d’informations sur les actions de correction automatiques et manuelles, voir [Actions de correction.](m365d-remediation-actions.md)
+En plus des actions de correction qui [](m365d-autoir.md)sont prises automatiquement à la suite d’enquêtes automatisées, le centre de sécurité effectue également le suivi des actions que votre équipe de sécurité a prises pour traiter les menaces détectées et des actions qui ont été prises à la suite des fonctionnalités de protection contre les menaces dans Microsoft 365 Defender. Pour plus d’informations sur les actions de correction automatiques et manuelles, voir [Actions de correction.](m365d-remediation-actions.md)
 
 ## <a name="viewing-action-source-details"></a>Affichage des détails de la source de l’action
 
@@ -114,24 +114,24 @@ En plus des actions de correction qui [](m365d-autoir.md)sont prises automatique
 | **Action manuelle de l’appareil** | Action manuelle sur un appareil. Par exemple, [l’isolation de l’appareil ou](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) [la mise en quarantaine du fichier](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files). |
 | **Action de messagerie manuelle** | Action manuelle sur le courrier électronique. Un exemple inclut la suppression de messages électroniques ou la [correction d’un message électronique.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Action automatisée sur l’appareil** | Action automatisée entreprise sur une entité, telle qu’un fichier ou un processus. L’envoi d’un fichier en quarantaine, l’arrêt d’un processus et la suppression d’une clé de Registre sont des exemples d’actions automatisées. (Voir [les actions de correction dans Microsoft Defender pour le point de terminaison.)](../defender-endpoint/manage-auto-investigation.md#remediation-actions) |
-| **Action de messagerie automatisée** | Action automatisée sur le contenu du courrier électronique, telle qu’un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression (à l’aide de logiciels) des messages électroniques, le blocage des URL et la désinstruction du forwarding de courrier externe. (Voir [actions de correction dans Microsoft Defender pour Office 365.)](../office-365-security/air-remediation-actions.md) |
+| **Action de messagerie automatisée** | Action automatisée sur le contenu du courrier électronique, telle qu’un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression (à l’aide de logiciels) des messages électroniques, le blocage des URL et la désinstruction du forwarding de courrier externe. (Voir [les actions de correction dans Microsoft Defender pour Office 365.)](../office-365-security/air-remediation-actions.md) |
 | **Action de recherche avancée** | Actions prises sur des appareils ou des e-mails avec [un chasse avancée](./advanced-hunting-overview.md). |
 | **Action de l’explorateur** | Actions prises sur le contenu du courrier électronique avec [l’Explorateur](../office-365-security/threat-explorer.md). |
-| **Action de réponse en direct manuelle** | Actions entreprises sur un appareil avec [réponse en direct.](../defender-endpoint/live-response.md) Par exemple, la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée. |
-| **Action de réponse en direct** | Actions prises sur un appareil avec [les API Microsoft Defender pour les points de terminaison.](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) L’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier sont des exemples d’actions. |
+| **Action de réponse en direct manuelle** | Actions prises sur un appareil avec [réponse en direct.](../defender-endpoint/live-response.md) Par exemple, la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée. |
+| **Action de réponse en direct** | Actions entreprises sur un appareil à [l’aide des API Microsoft Defender pour les points de terminaison.](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) L’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier sont des exemples d’actions. |
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Autorisations requises pour les tâches du centre de notifications
 
-Pour effectuer des tâches, telles que l’approbation ou le rejet des actions en attente dans le centre de actions, vous devez avoir des autorisations attribuées comme répertorié dans le tableau suivant :
+Pour effectuer des tâches, telles que l’approbation ou le rejet des actions en attente dans le centre de actions, vous devez avoir des autorisations attribuées comme répertoriés dans le tableau suivant :
 
 |Action de correction |Rôles et des autorisations requis |
 |--|----|
-|Correction de Microsoft Defender pour les points de terminaison (appareils) |Rôle **Administrateur de la sécurité** attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- ou ---<br/>**Rôle des actions de** correction actives attribué dans Microsoft Defender pour le point de terminaison <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle (Microsoft Defender pour point de terminaison)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender pour la correction Office 365 (contenu Office courrier électronique)  |Rôle **Administrateur de la sécurité** attribué dans Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) ou dans le Centre d’administration Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- et --- <br/>**Rôle rechercher et vider** attribué au Centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANT :** si  le rôle Administrateur de la sécurité est attribué uniquement dans le Centre de sécurité & conformité Office 365 ( ), vous ne pourrez pas accéder aux fonctionnalités du centre de sécurité ou de [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. Le rôle **Administrateur** de la sécurité doit être attribué dans Azure Active Directory ou le centre d’administration Microsoft 365 de sécurité. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Correction de Microsoft Defender pour les points de terminaison (appareils) |**Rôle d’administrateur** de la sécurité attribué dans Azure Active Directory (Azure AD) ( ) ou dans le Centre d’administration [https://portal.azure.com](https://portal.azure.com) Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- ou ---<br/>**Rôle des actions de** correction actives attribué dans Microsoft Defender pour le point de terminaison <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations de rôle d’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle (Microsoft Defender pour point de terminaison)](../defender-endpoint/user-roles.md)  |
+|Correction de Microsoft Defender pour Office 365 (contenu et courrier Office)  |**Rôle d’administrateur** de la sécurité attribué dans Azure AD ( ) ou dans le Centre d’administration [https://portal.azure.com](https://portal.azure.com) Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- et --- <br/>**Rôle de recherche et** de purge attribué dans le Centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANT :** si  le rôle Administrateur de la sécurité est attribué uniquement dans le Centre de sécurité & conformité Office 365 ( ), vous ne pourrez pas accéder au Centre de sécurité ou aux fonctionnalités de [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. Le rôle **Administrateur** de la sécurité doit être attribué dans Azure AD ou dans le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations de rôle d’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
-> Les utilisateurs qui ont le rôle **Administrateur général** attribué dans Azure Active Directory peuvent approuver ou rejeter toute action en attente dans le centre de notifications. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du Centre de sécurité.
+> Les utilisateurs qui ont le **rôle Administrateur général** attribué dans Azure AD peuvent approuver ou rejeter toute action en attente dans le centre de gestion des actions. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du centre de gestion des actions.
 
 ## <a name="next-step"></a>Étape suivante 
 
-- [Examiner et gérer les actions de correction](m365d-autoir-actions.md)
+- [Afficher et gérer les actions de correction](m365d-autoir-actions.md)

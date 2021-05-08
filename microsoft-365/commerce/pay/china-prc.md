@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2342ee6fd7c75596ac1c1211f908187a43569689
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 3f71407e837b9a623caa84494aa4ee529133ba18
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551727"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274015"
 ---
 # <a name="payment-information-for-china-prc"></a>Informations de paiement pour la Chine (RPC)
 
@@ -33,4 +33,4 @@ Veuillez payer en CNY et référencer le nom de votre société et le ou les num
 **Code CNAP :** 989584000600   
 **Numéro de compte :** 1199527009  
 **Nom du compte :** MICROSOFT REGIONAL SALES CORP  
-**Remarque : Payez via le canal RTGS DE LAS RTGS dans HK.**  
+**Remarque : Payez par le biais du canal RTGS DE LAS DANS HK.**  

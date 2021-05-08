@@ -3,7 +3,7 @@ title: Vue d’ensemble du tableau de bord de sécurité
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: Utilisez le nouveau tableau de bord de sécurité pour passer en revue l’état de la protection contre les menaces Office 365, et afficher et agir sur les alertes de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7114776f686d25808c141a07b8cb2868cc67615d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204302"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274411"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -71,7 +71,7 @@ Les détails varient selon que votre abonnement Microsoft 365 inclut [Exchange O
 |Si votre abonnement inclut...|Vous verrez ces détails|
 |---|---|
 |EOP, mais pas Microsoft Defender pour Office 365|Courrier électronique malveillant détecté et bloqué par EOP.<p> Consultez [le rapport d’état de la protection contre les menaces (EOP).](view-email-security-reports.md#threat-protection-status-report)|
-|Microsoft Defender pour Office 365|Contenu malveillant et courriers malveillants détectés et bloqués par EOP et Defender pour Office 365 <p> Nombre agrégé de messages électroniques uniques avec du contenu malveillant bloqué par le moteur [anti-programme](zero-hour-auto-purge.md)malveillant, [](safe-links.md)purge automatique de zéro heure et fonctionnalités de Defender pour Office 365 (y compris les liens [sécurisés,](safe-attachments.md)pièces jointes et anti-hameçonnage dans [Defender pour Office 365).](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <p> Voir [le rapport d’état de la protection contre les menaces.](view-reports-for-mdo.md#threat-protection-status-report)|
+|Microsoft Defender pour Office 365|Contenu malveillant et courriers malveillants détectés et bloqués par EOP et Defender pour Office 365 <p> Nombre agrégé de messages électroniques uniques avec du contenu malveillant bloqué par le moteur [anti-programme](zero-hour-auto-purge.md)malveillant, [](safe-links.md)purge automatique d’heure zéro et fonctionnalités de Defender pour Office 365 (y compris les liens [sécurisés,](safe-attachments.md)pièces jointes et anti-hameçonnage dans [Defender pour Office 365).](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <p> Voir [le rapport d’état de la protection contre les menaces.](view-reports-for-mdo.md#threat-protection-status-report)|
 
 Pour afficher ou accéder au widget d’état de la protection contre les menaces, vous devez être autorisé à afficher les rapports Defender pour Office 365. Pour en savoir plus, voir quelles autorisations sont nécessaires pour afficher les [rapports Defender pour Office 365 ?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -87,7 +87,7 @@ Les mesures sont calculées comme décrit dans le tableau suivant :
 |---|---|
 |Messages analysés|Nombre de messages électroniques analysés multiplié par le nombre de destinataires|
 |Menaces arrêtées|Nombre de messages électroniques identifiés comme contenant des programmes malveillants multipliés par le nombre de destinataires|
-|Bloqué par [Defender pour Office 365 ](defender-for-office-365.md)|Nombre de messages électroniques bloqués par Defender pour Office 365 multiplié par le nombre de destinataires|
+|Bloqué par [Defender pour Office 365](defender-for-office-365.md)|Nombre de messages électroniques bloqués par Defender pour Office 365 multiplié par le nombre de destinataires|
 |Supprimé après la remise|Nombre de messages supprimés par purge automatique [de](zero-hour-auto-purge.md) zéro heure multiplié par le nombre de destinataires|
 
 ## <a name="malware"></a>Programme malveillant
@@ -96,9 +96,9 @@ Les widgets de programmes malveillants montrent des détails sur les tendances d
 
 ![Tendances des programmes malveillants et types de famille](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>Connaissances
+## <a name="insights"></a>Informations
 
-Les informations ne sont pas seulement des problèmes majeurs que vous devez examiner, mais elles incluent également des recommandations et des actions à prendre en compte.
+Les informations ne sont pas seulement des problèmes clés que vous devez examiner, mais elles incluent également des recommandations et des actions à prendre en compte.
 
 ![Informations intelligentes](../../media/smartinsights.png)
 

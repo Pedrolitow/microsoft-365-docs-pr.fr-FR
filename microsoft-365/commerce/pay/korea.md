@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fbce897c3a9e0cb030de46b5e381cba056b800b1
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 21cdbc8822c10bc56460d57ea08fd0e854918277
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50550587"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273451"
 ---
 # <a name="payment-information-for-korea"></a>Informations de paiement pour la Corée
 
@@ -28,7 +28,7 @@ Veuillez payer en KRW uniquement et référencer les numéro(s) de facture à vo
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
 **Banque :** Bank  
-**Branche :** 89-29 Contrôlemunro-2ka Chongro-guÖl, Corée 110-062  
+**Branche :** 89-29 Contrôlemunro-2ka Chongro-gu Korea, Corée 110-062  
 **Code SWIFT :** CITIKRSX  
 **Numéro de compte :** 5001296088  
 **Nom du compte :** MICROSOFT KOREA  

@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 94febae2ba015ebc102473937443129bcfc56e9c
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: c13c4573ae7c7a77fe06bbe28496a16fffc281d8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024132"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274063"
 ---
 # <a name="payment-information-for-canada"></a>Informations de paiement pour le Canada
 
@@ -25,7 +25,7 @@ ms.locfileid: "52024132"
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en CAD et référencer vos numéro(s) de facture lors de votre paiement.**
+**Veuillez payer en CAD et référencer vos numéro(s) de facture à votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Corporation,** utilisez les informations bancaires ci-après :
 
@@ -41,8 +41,8 @@ Si vous avez une facture facturée par **Microsoft Canada Inc.** pour les comman
 
 Banque :Bankbank N.A., Succursale canadienne\
 Numéro de routage : 032820012\
-Code BIC/SWIFT : CITICATTBCH\
+CODE BIC/SWIFT : CITICATTBCH\
 Numéro de compte : 3003600001\
 Nom du compte : MICROSOFT
 
-Les factures émises à partir d'une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.
+Les factures émises à partir d’une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.

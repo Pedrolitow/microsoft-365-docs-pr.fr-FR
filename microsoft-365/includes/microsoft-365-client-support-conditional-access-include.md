@@ -24,7 +24,7 @@
 |POWER BI|Planifié|Planifié|S/O|Planifié|Planifié|
 |POWERPOINT|✔|Planifié|Planifié|Planifié|Planifié|
 |PROJECT|N/A|N/A|N/A|Planifié|S/O|
-|PUBLISHER|N/A|N/A|N/A|Planifié|S/O|
+|PUBLISHER|N/A|N/A|N/A|✔|S/O|
 |ADMINISTRATEUR SHAREPOINT|N/A|N/A|N/A|Planifié|S/O|
 |SHAREPOINT|Planifié|Planifié|N/A|N/A|N/A|
 |NOTES QUI COLLENT|N/A|N/A|N/A|N/A|Planifié|
@@ -33,7 +33,7 @@
 |TEAMS|✔|✔|✔|Planifié|S/O|
 |TO-DO|Planifié|Planifié|Planifié|S/O|Planifié|
 |VISIO|S/O|✔|S/O|Planifié|S/O|
-|TABLEAU BLANC|S/O|Planifié|N/A|N/A|Planifié|
+|TABLEAU BLANC|✔|Planifié|N/A|N/A|Planifié|
 |WORD|✔|Planifié|Planifié|Planifié|✔|
 |ANALYSE DU TEMPS DE TRAVAIL|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|Planifié|Planifié|Planifié|Planifié|S/O|
