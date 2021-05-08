@@ -1,5 +1,5 @@
 ---
-title: Confier des responsabilités aux travailleurs à distance avec Microsoft 365
+title: Configurez votre infrastructure pour le télétravail avec Microsoft 365
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,17 +17,20 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: Vérifiez que vous avez bien activé toutes les fonctionnalités de Microsoft 365. Ce faisant, vous pourrez optimiser la productivité des télétravailleurs et sécuriser l’accès à vos serveurs, vos données et votre cloud.
-ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
+description: Traversez les couches d’infrastructure pour que vos employés distants accèdent aux ressources locales et Microsoft 365 en toute sécurité.
+ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029121"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246319"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>Confier des responsabilités aux travailleurs à distance avec Microsoft 365
+# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>Configurez votre infrastructure pour le télétravail avec Microsoft 365
 
-Votre entreprise devra sans doute autoriser vos employés à bénéficier d’un accès sécurisé aux informations, outils et ressources en local et sur le cloud de votre organisation depuis leur domicile. Permettre aux employés de travailler à distance est important pour de nombreuses organisations :
+Pour sécuriser et optimiser la productivité et la collaboration de vos employés à distance, vous devez configurer votre infrastructure informatique et de cloud computing pour permettre le travail à distance et fournir un accès aux informations, outils et ressources de votre organisation sur site et dans le cloud. Cette solution prévoit le déploiement de couches d'infrastructure clés qui permettent à vos travailleurs de donner le meilleur d'eux-mêmes, où qu'ils soient.
+
+Permettre aux employés de travailler à distance est important pour de nombreuses organisations :
 
 - Économisez sur l’espace de bureau.
 - Embaucher et retenir les travailleurs qui ne sont pas disposés à se déplacer.
@@ -125,8 +128,6 @@ Procédez comme suit pour sécuriser et optimiser l’accès aux serveurs et aux
 5. [Déployer les applications et les services de productivité des travailleurs à distance](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Former des télétravailleurs et répondre aux commentaires sur l’utilisation](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Mesures pour confier des responsabilités aux travailleurs à distance avec Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Étapes de configurer votre infrastructure pour le travail à distance avec Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Si vous souhaitez en savoir plus sur les informations Microsoft les plus récentes relatives à la prise en charge des travailleurs à distance, consultez [Activation du travail hybride avec le site de Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
-
-Pour découvrir comment une organisation multinationale représentative, bien que fictive, a responsabilisé ses employés à distance, consultez [Réponse COVID-19 et infrastructure de Contoso pour le travail à distance et sur site](contoso-remote-onsite-work.md).
+Pour découvrir comment une organisation multinationale représentative, bien que fictive, a mis en place son infrastructure pour le travail à distance, consultez [Réponse COVID-19 et infrastructure de Contoso pour le travail à distance et sur site](contoso-remote-onsite-work.md).
