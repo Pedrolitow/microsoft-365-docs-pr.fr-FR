@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Découvrez les types de groupes que vous pouvez utiliser.
-ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9f36688972f00a27a274b6a974d958d1d590aa93
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023844"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243983"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
 Dans la section **Groupes** du Centre d’administration Microsoft 365, vous pouvez créer et gérer les types de groupes suivants : 
 
 - **Microsoft 365 Groups** (anciennement groupes Office 365) est utilisé pour la collaboration entre les utilisateurs, à l’intérieur et à l’extérieur de votre entreprise.
-- Les **Groupes de distribution** sont utilisés pour envoyer des notifications à un groupe de personnes.
+- **Les groupes de distribution** sont utilisés pour envoyer des notifications par courrier électronique à un groupe de personnes.
 - Les **Groupes de sécurité** sont utilisés pour accorder l’accès aux ressources telles que les sites SharePoint.
 - Les **Groupes de sécurité à extension courrier** sont utilisés pour accorder l’accès aux ressources telles que SharePoint et envoyer par e-mail des notifications à ces utilisateurs.
 - Les **Boîtes aux lettres partagées** sont utilisées lorsque plusieurs personnes doivent accéder à la même boîte aux lettres, par exemple, une information d’entreprise ou une adresse de courrier du support technique.
@@ -59,13 +59,17 @@ Les groupes de distribution conviennent aux situations dans lesquelles vous deve
 
 Les groupes de distribution peuvent être [mis à niveau vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md).
 
+Des groupes de distribution peuvent être ajoutés à une équipe dans Microsoft Teams.
+
 ## <a name="security-groups"></a>Groupes de sécurité
 
 Les [Groupes de sécurité](../email/create-edit-or-delete-a-security-group.md) sont utilisés pour accorder l’accès aux ressources Microsoft 365 telles que SharePoint. Ils peuvent simplifier l’administration, car vous n’avez qu'à gérer le groupe qu’au lieu d’ajouter de manière individuelle des utilisateurs dans chaque ressource.
 
-Les groupes de sécurité peuvent inclure des utilisateurs ou des appareils. La création d’un groupe de sécurité pour des appareils peut être utilisée avec des services de gestion d'appareils mobiles, tels que Intune.
+Les groupes de sécurité peuvent contenir des utilisateurs ou des appareils. La création d’un groupe de sécurité pour les appareils peut être utilisée avec des services de gestion des appareils mobiles, tels que Intune.
 
 Les groupes de sécurité peuvent être [configurés pour l’appartenance dynamique à Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), ce qui permet aux membres d’un groupe ou à des appareils d’être ajoutés ou supprimés automatiquement en fonction de leurs attributs, tels que le service, le lieu ou le titre, ou les attributs d'appareils comme la version du système d'exploitation.
+
+Les groupes de sécurité peuvent être ajoutés à une équipe.
 
 ## <a name="mail-enabled-security-groups"></a>Groupes de sécurité à extension messagerie
 
@@ -73,11 +77,15 @@ Les groupes de sécurité à extension messagerie fonctionnent de la même faço
 
 Ils incluent la possibilité d’envoyer des e-mails à tous les membres du groupe.
 
+Les groupes de sécurité à accès à la messagerie peuvent être ajoutés à une équipe.
+
 ## <a name="shared-mailboxes"></a>Boîtes aux lettres partagées
 
 Les [Boîtes aux lettres partagées](../email/create-a-shared-mailbox.md) sont utilisées lorsque plusieurs personnes doivent accéder à la même boîte aux lettres, par exemple, une information d’entreprise ou une adresse de courrier du support technique, du bureau d'accueil, ou d'un autre poste pouvant être partagé par plusieurs personnes.
 
 Les boîtes aux lettres partagées peuvent recevoir des e-mails externes si l’administrateur a activé cette option.
+
+Les boîtes aux lettres partagées incluent un calendrier qui peut être utilisé pour la collaboration.
 
 Les utilisateurs disposant d’autorisations sur la boîte aux lettres du groupe peuvent Envoyer en tant que ou Envoyer de la part pour le compte de l’adresse de messagerie de la boîte aux lettres si l’administrateur leur a accordé cette autorisation. Cette fonctionnalité est particulièrement utile pour les boîtes aux lettres d’aide et de support, car les utilisateurs peuvent envoyer des e-mails à partir du « Support technique de Contoso » ou du « Bureau d'accueil du bâtiment A ».
 
