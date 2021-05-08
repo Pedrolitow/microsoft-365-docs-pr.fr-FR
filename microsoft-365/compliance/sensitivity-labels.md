@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e21da114154a5258f81a48e39d46ae875ee3930
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: da660f79cd218c4b97cd2159f2811985d4651cef
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892927"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245623"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -261,3 +261,5 @@ Vous pouvez également en savoir plus sur les [solutions de partenaires intégr�
 ## <a name="deployment-guidance"></a>Instructions de déploiement
 
 Pour la planification et les instructions relatives au déploiement, notamment les informations relatives aux licences, les autorisations, la stratégie de déploiement, une liste de scénarios pris en charge et la documentation de l’utilisateur final, consultez [Prise en main des étiquettes de confidentialité](get-started-with-sensitivity-labels.md).
+
+Pour découvrir comment utiliser des étiquettes de confidentialité afin de respecter les réglementations en matière de confidentialité des données, voir [Déployer la protection des informations pour les réglementations en matière de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).

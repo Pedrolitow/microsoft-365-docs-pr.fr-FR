@@ -1,13 +1,13 @@
 ---
 title: Exécuter et personnaliser des analyses à la demande dans Antivirus Microsoft Defender
-description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows app.
+description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows appl.
 keywords: analyse, à la demande, dos, intune, analyse instantanée
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 8b6889a2eabcfb777983be79d78060165497de72
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 124ebde48c008743a486a4454e7772fd93f9eca7
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246343"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275359"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender.
 
@@ -40,7 +40,7 @@ L’analyse rapide examine tous les emplacements où des programmes malveillants
 > [!IMPORTANT]
 > Antivirus Microsoft Defender s’exécute dans le contexte du [compte LocalSystem](/windows/win32/services/localsystem-account) lors de l’analyse locale. Pour les analyses réseau, il utilise le contexte du compte d’appareil. Si le compte d’appareil de domaine ne peut pas accéder au partage, l’analyse ne fonctionne pas. Assurez-vous que l’appareil dispose d’autorisations sur le partage réseau d’accès.
 
-Combinée à la fonctionnalité de [protection](configure-real-time-protection-microsoft-defender-antivirus.md)en temps réel toujours en cours (qui examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier), une analyse rapide permet de fournir une couverture solide à la fois pour les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau.  
+Combinée avec la fonctionnalité de [protection](configure-real-time-protection-microsoft-defender-antivirus.md)en temps réel toujours en cours (qui examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier), une analyse rapide permet d’assurer une couverture solide à la fois pour les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau.  
 
 Dans la plupart des cas, une analyse rapide permet de trouver des programmes malveillants qui n’ont pas été détectés par la protection en temps réel.
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur l’utilisation de l’outil et des paramètres s
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and log in.
 2. Dans la barre latérale, sélectionnez **Appareils > tous** les appareils et choisissez l’appareil que vous souhaitez analyser.
-3. Sélectionnez **... Plus**. Dans les options, sélectionnez **Analyse rapide** ou **Analyse complète.**
+3. Sélectionnez **... Plus**. Dans les options, sélectionnez **Analyse rapide** **ou Analyse complète.**
 
 ## <a name="use-the-windows-security-app-to-run-a-scan"></a>Utiliser l’application Sécurité Windows pour exécuter une analyse
 
@@ -83,7 +83,7 @@ Voir [Exécuter une analyse dans l’application Sécurité Windows pour](micros
 
 ## <a name="use-powershell-cmdlets-to-run-a-scan"></a>Utiliser les cmdlets PowerShell pour exécuter une analyse
 
-Utilisez la cmdlet suivante :
+Utilisez l’cmdlet suivante :
 
 ```PowerShell
 Start-MpScan

@@ -5,23 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Depuis le 14 septembre 2019, les banques des 31 pays de l’Espace économique européen sont tenues de vérifier l’identité de la personne qui a effectué un achat en ligne avant que le paiement puisse être effectué. »
 keywords: directive 2 sur les services de paiement, authentification client forte, authentification multifacteur
-ms.openlocfilehash: d6564a8c6d31bd0758f1084e7ee9b6857aed034e
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.date: 11/03/2020
+ms.openlocfilehash: e687cac5bb1b7f1c88e9166993e29d437134e138
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906608"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280846"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Directive 2 sur les services de paiement et authentification client forte pour les clients commerciaux
 
@@ -35,7 +40,8 @@ Actuellement, les exigences de vérification de cette directive utilisant l’au
 
 ### <a name="customer-actions"></a>Actions du client
 
-Votre banque peut exiger une vérification par le biais de l’authentification multifacteur. Voici quelques exemples :
+Votre banque peut exiger une vérification par le biais de l’authentification multifacteur. Voici quelques exemples :
+
 - Inscription à un nouvel abonnement
 - Ajout de licences à un abonnement
 - Ajout ou remplacement de la carte bancaire utilisée pour payer un abonnement ou un service
@@ -49,6 +55,7 @@ Les frais pour les paiements périodiques peuvent échouer. Si c’est le cas, v
 ## <a name="need-more-help"></a>Besoin d’aide supplémentaire ?
 
 Votre établissement financier est le meilleur contact pour les scénarios suivants :
+
 - Vous n’avez pas reçu de code de vérification.  
 - Le processus de vérification n’a pas fonctionné une fois que vous avez envoyé le code de vérification.
 - Vous ne savez pas si les coordonnées de votre carte de crédit sont correctes.

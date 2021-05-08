@@ -8,22 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c80b461a27ee747c14cfa521dfd617a67db3b1a2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a4f6d339296454ff3591c988732fb8ffd8aa0d31
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549927"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272611"
 ---
 # <a name="payment-information-for-uruguay"></a>Informations de paiement pour l’Uruguay
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en USD uniquement et référencer les numéro(s) de facture sur votre paiement.
+Veuillez payer en USD uniquement et référencer les numéro(s) de facture à votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 

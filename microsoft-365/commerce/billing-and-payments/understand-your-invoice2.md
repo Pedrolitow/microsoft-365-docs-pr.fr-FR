@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,30 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre facture Microsoft 365 pour les entreprises, et comment modifier le numéro de bon de commande.
-ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245015"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280486"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
 > [!IMPORTANT]
-> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne et aux États-Unis. Si vous êtes un client existant dans l’un de ces pays, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant et vous pouvez y ajouter de nouveaux abonnements, mais uniquement tant que le compte bancaire est en règle.
+> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces pays, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant et ajouter de nouveaux abonnements à celui-ci, mais pourvu que le compte bancaire soit en règle.
 
 Chaque mois ou année (selon l’option choisie lors de l’achat de votre abonnement), vous recevez un e-mail vous indiquant que votre nouvelle facture est disponible dans le centre d’administration. [Découvrez comment rechercher et afficher votre facture](view-your-bill-or-invoice.md).
   
@@ -96,7 +93,7 @@ Le tableau suivant décrit les termes pouvant figurer sur votre facture. Il est 
 |Adresse d'utilisation du service|L'adresse de l'endroit où le service est utilisé, généralement le même que votre adresse de vente. Pour mettre à jour votre adresse d’utilisation du service, consultez [Modifier vos adresses de facturation](change-your-billing-addresses.md).|
 |Vente|Le nom et l'adresse de votre société. Pour plus d'informations, consultez [Modifier l'adresse physique et l'adresse de courrier électronique, ainsi que d'autres informations de votre organisation](../../admin/manage/change-address-contact-and-more.md).  |
 |Sous-total|Chaque abonnement répertorié sur votre facture a une ligne de sous-total distincte pour toutes les colonnes Frais, Remises, Crédits, Sous-total, Taxes et Total pour cet abonnement.|
-|Taxes|La page 1 de votre facture indique le total des taxes. La page 2 indique le taux d'imposition appliqué et le montant total des taxes pour chaque ligne. Si votre facture contient des taxes dont votre entreprise est exonérée, veuillez [contacter le support technique](../../admin/contact-support-for-business-products.md).  |
+|Taxes|La page 1 de votre facture indique le total des taxes. La page 2 indique le taux d'imposition appliqué et le montant total des taxes pour chaque ligne. Si votre facture contient des taxes dont votre entreprise est exonérée, veuillez [contacter le support technique](../../business-video/get-help-support.md).  |
 |Total|Le montant dû pour la période de facturation de la facture.|
 
 ## <a name="change-your-purchase-order-number"></a>Changer votre numéro de bon de commande
@@ -109,27 +106,28 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+
 ::: moniker-end
 
 1. Sur l’onglet **Produits**, sélectionnez l’abonnement que vous souhaitez modifier.
 
-1. Dans la page détails de l’abonnement, dans la section **Paramètres** d’abonnement et de paiement, **sélectionnez Modifier la facture.** 
+1. Dans la page détails de l’abonnement, dans la section **Paramètres** d’abonnement et de paiement, **sélectionnez Modifier la facture.**
 
 1. En bas des **détails de** modification pour le paiement par volet vocal, entrez votre numéro de bon de commande, puis sélectionnez **Enregistrer.**
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu connexe
 
-[Régler votre abonnement Microsoft 365 pour les entreprises](pay-for-your-subscription.md)
-
-[ Options de paiement de Minecraft: Education Edition ](/education/windows/school-get-minecraft)
+[Payer votre abonnement Microsoft 365 entreprise](pay-for-your-subscription.md) (article)\
+[Options de paiement de Minecraft: Education Edition](/education/windows/school-get-minecraft) (article)

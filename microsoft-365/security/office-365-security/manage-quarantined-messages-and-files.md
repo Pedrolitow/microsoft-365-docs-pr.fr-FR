@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599534"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272203"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -41,7 +41,7 @@ Les administrateurs peuvent afficher, libérer et supprimer tous les types de me
 
 Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également afficher, télécharger et supprimer des fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 
-Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
+Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 ayant des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -59,12 +59,12 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
-  - <sup>\*</sup>Les membres du **groupe** de rôles Administrateur  de quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine les procédures dans Exchange Online PowerShell.
+  - <sup>\*</sup>Les membres  du groupe de rôles Administrateur  de mise en quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine des procédures dans Exchange Online PowerShell.
 
 - Les messages mis en quarantaine sont conservés pendant une période par défaut avant d’être automatiquement supprimés :
   - 30 jours pour les messages mis en quarantaine par les stratégies anti-courrier indésirable (courrier indésirable, hameçonnage et courrier électronique en masse). Il s’agit de la valeur par défaut et de la valeur maximale. Pour configurer (plus bas) cette valeur, voir [Configurer des stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
   - 15 jours pour les messages contenant des programmes malveillants.
-  - 15 jours pour les fichiers mis en quarantaine par pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams dans Defender pour Office 365.
+  - 15 jours pour les fichiers mis en quarantaine par les pièces jointes SharePoint, OneDrive et Microsoft Teams dans Defender for Office 365.
 
   Lorsqu’un message arrive à expiration de la quarantaine, vous ne pouvez pas le récupérer.
 
@@ -106,7 +106,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
    - **Raison de la mise en quarantaine :**
      - **Stratégie**: le message correspond aux conditions d’une règle de flux de messagerie (également appelée règle de transport).
      - **E-mail de masse**
-     - **Hameçonnage**: le  verdict de filtrage du courrier indésirable était le courrier de hameçonnage ou la protection anti-hameçonnage mis en quarantaine le message ([paramètres](set-up-anti-phishing-policies.md#spoof-settings) d’usurpation d’identité ou protection contre [l’usurpation d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
+     - **Hameçonnage**: le  verdict de filtrage du courrier indésirable était le courrier électronique de hameçonnage ou la protection anti-hameçonnage qui a mis en quarantaine le message [(paramètres](set-up-anti-phishing-policies.md#spoof-settings) d’usurpation d’identité ou protection contre [l’usurpation d’identité).](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
      - **Programme malveillant**
      - **Courrier indésirable**
      - **Hameçonnage à haut niveau de confiance**
@@ -118,7 +118,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
      - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
      - **Règle de transport**
 
-   - **Destinataire du message** électronique : tous les utilisateurs ou uniquement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent uniquement gérer les messages mis en quarantaine qui leur sont envoyés.
+   - **Destinataire du message électronique**: tous les utilisateurs ou uniquement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent uniquement gérer les messages mis en quarantaine qui leur sont envoyés.
 
    Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
 
@@ -196,15 +196,15 @@ Une fois que vous avez sélectionné un message, plusieurs options s’offrent �
 
 - **Télécharger le message** : dans le volet déroulant qui s’affiche, sélectionnez **Je comprends les risques liés au téléchargement de ce message** pour enregistrer une copie locale du message au format .eml.
 
-- **Bloquer l’expéditeur**: empêche l’expéditeur d’envoyer des messages à des destinataires de l’organisation.
+- **Bloquer l’expéditeur**: ajoutez l’expéditeur à la liste des expéditeurs bloqués sur votre boîte aux lettres. Pour plus d’informations, voir [Bloquer un expéditeur de courrier.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
 
 - **Envoyer un message**: dans le volet volant qui s’affiche, choisissez les options suivantes :
 
-  - **Type d’objet**: **e-mail** (par défaut), **URL** ou **pièce jointe**.
+  - **Type d’objet**: **e-mail** (par **défaut), URL** ou **pièce jointe**.
 
   - **Format de** soumission : **ID de message** réseau (par défaut, avec la valeur correspondante dans la zone **ID** de message réseau) ou fichier **(accédez** à un fichier .eml ou .msg local). Notez que si vous sélectionnez **Fichier,** puis **ID de message** réseau, la valeur initiale a disparu.
 
-  - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer sur **Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
+  - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer **sur Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
 
   - **Raison de l’envoi** **: ne doit pas avoir été bloqué** (par défaut) ou doit avoir été **bloqué**.
 

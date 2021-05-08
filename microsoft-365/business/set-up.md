@@ -29,17 +29,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: c8e2ca94f4947d4f9c69915d2fef410a6075bfed
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez les étapes de configuration Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
+ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579911"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245041"
 ---
-# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer Microsoft 365 Business Premium dans l’Assistant Installation
+# <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer des Microsoft 365 Business Premium dans l’Assistant Installation
 
-Regardez cette vidéo pour obtenir une vue d’ensemble de la configuration de Microsoft 365 Business Premium.<br><br>
+Regardez cette vidéo pour obtenir une vue d’ensemble Microsoft 365 Business Premium configuration.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
@@ -67,7 +67,7 @@ Lorsque vous achetez Microsoft 365 Business Premium, vous avez la possibilité d
     ![Capture d’écran de la page Personnaliser votre connectez-vous.](../media/adddomain.png)
 
     
-4. Suivez les étapes de l’Assistant pour créer des enregistrements DNS chez un fournisseur d’hébergement [DNS pour Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes propriétaire du domaine. Si vous savez qu’il s’agit de votre hôte de domaine, consultez également les [Instructions propres à l’hôte](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Suivez les étapes de l’Assistant pour créer des enregistrements DNS chez un fournisseur d’hébergement [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Microsoft 365 qui vérifie que vous êtes propriétaire du domaine. Si vous savez qu’il s’agit de votre hôte de domaine, consultez également les [Instructions propres à l’hôte](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
     Si votre fournisseur d’hébergement est GoDaddy ou si un autre hôte est activé avec [connexion de domaine](/office365/admin/get-help-with-domains/domain-connect), le processus est simple et vous êtes automatiquement invité à vous connecter et à laisser Microsoft s’authentifier en votre nom.
 
@@ -79,11 +79,11 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
 
 #### <a name="add-users-in-the-wizard"></a>Ajouter des utilisateurs dans l’Assistant
 
-Les utilisateurs que vous ajoutez dans l’Assistant obtiennent automatiquement une licence Microsoft 365 Business Premium.
+Tous les utilisateurs que vous ajoutez dans l’Assistant obtiennent automatiquement une licence Microsoft 365 Business Premium’utilisateur.
 
 ![Capture d’écran de la page Ajouter de nouveaux utilisateurs dans l’Assistant](../media/addnewuserspage.png)
 
-1. Si votre abonnement Microsoft 365 Business Premium a des utilisateurs existants (par exemple, si vous avez utilisé Azure AD Connect), vous avez la possibilité de leur attribuer des licences maintenant. Poursuivez et ajoutez des licences pour eux aussi.
+1. Si votre abonnement Microsoft 365 Business Premium a des utilisateurs existants (par exemple, si vous avez utilisé Azure AD Connecter), vous avez la possibilité de leur attribuer des licences maintenant. Poursuivez et ajoutez des licences pour eux aussi.
 
 2. Une fois que vous avez ajouté les utilisateurs, vous avez également la possibilité de partager des informations d’identification avec les nouveaux utilisateurs que vous ajoutez. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou de les télécharger.
 
@@ -107,30 +107,30 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
 
 Les stratégies que vous avez définies dans l’Assistant sont appliquées automatiquement à un groupe [de sécurité](/office365/admin/create-groups/compare-groups#security-groups) appelé Tous *les utilisateurs.* Vous pouvez également créer des groupes supplémentaires pour attribuer des stratégies dans le Centre d’administration.
 
-1. Dans l’option Augmenter la **protection** contre les cybermenaces avancées, il est recommandé d’accepter les valeurs par défaut pour laisser [Office 365 -](../security/office-365-security/defender-for-office-365.md) Protection avancée contre les menaces analyser les fichiers et les liens dans les applications Office.
+1. Dans l’option Augmenter la protection contre les **cybermenaces** avancées, il est recommandé d’accepter les valeurs par défaut pour laisser Office 365 Les fichiers et les liens de la [Protection](../security/office-365-security/defender-for-office-365.md) avancée contre les menaces peuvent être Office applications.
 
     ![Capture d’écran de la page Augmenter la protection.](../media/increasetreatprotection.png)
 
 
 2. Dans la page Empêcher les fuites de données **sensibles,** acceptez les valeurs par défaut pour activer la protection contre la perte de données Office 365 (DLP) pour suivre les données sensibles dans les applications Office et empêcher le partage accidentel de ces données à l’extérieur de votre organisation.
 
-3. Dans la page Protéger les données dans Office pour **appareils mobiles,** laissez la gestion des applications mobiles en place, développez les paramètres et examinez-les, puis sélectionnez Créer une stratégie de gestion des applications **mobiles.**
+3. Dans la page Protéger les données **dans Office** pour appareils mobiles, laissez la gestion des applications mobiles en place, développez les paramètres et examinez-les, puis sélectionnez Créer une stratégie de gestion des applications **mobiles.**
 
-    ![Capture d’écran de la page Protéger les données dans Office pour appareils mobiles.](../media/protectdatainmobile.png)
+    ![Capture d’écran de protéger les données Office page mobile.](../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Sécuriser les PC Windows 10
 
-Dans le navigation de gauche, sélectionnez **Programme** d’installation, puis, sous Se connectez **et sécurité,** sélectionnez Sécuriser **vos ordinateurs Windows 10.** Choose **View** to get started. Pour obtenir des instructions complètes, consultez sécuriser vos ordinateurs [Windows 10.](secure-win-10-pcs.md)
+Dans le navigation de gauche, sélectionnez **Installation,** puis, sous Se **connectez-vous** et sécurité, sélectionnez Sécuriser **Windows 10 ordinateurs.** Choose **View** to get started. Pour obtenir des instructions [complètes, Windows 10 vos ordinateurs](secure-win-10-pcs.md) de sécurité.
 
-## <a name="deploy-office-365-client-apps"></a>Déployer des applications clientes Office 365
+## <a name="deploy-office-365-client-apps"></a>Déployer Office 365 applications clientes
 
-Si vous avez choisi d’installer automatiquement les applications Office lors de l’installation, les applications s’installent sur les appareils Windows 10 une fois que les utilisateurs se sont connectés à Azure AD à partir de leurs appareils Windows, à l’aide de leurs informations d’identification professionnelles.
+Si vous avez choisi d’installer automatiquement des applications Office lors de l’installation, les applications s’installent sur les appareils Windows 10 une fois que les utilisateurs se sont connectés à Azure AD à partir de leurs appareils Windows, à l’aide de leurs informations d’identification professionnelles.
 
-Pour installer Office sur des appareils iOS ou Android mobiles, voir Configurer des appareils mobiles pour les utilisateurs [de Microsoft 365 Business Premium.](set-up-mobile-devices.md)
+Pour installer Office sur des appareils mobiles iOS ou Android, voir Configurer des appareils [mobiles pour Microsoft 365 Business Premium utilisateurs.](set-up-mobile-devices.md)
 
-Vous pouvez également installer Office individuellement. Voir [installer Office sur un PC ou Mac pour](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) obtenir des instructions.
+Vous pouvez également installer Office individuellement. Pour [obtenir des instructions, voir Office’installation](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) sur un PC ou Mac.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml)

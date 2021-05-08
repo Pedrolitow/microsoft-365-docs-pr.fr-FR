@@ -1,27 +1,28 @@
 ---
-title: Configurer la façon dont les utilisateurs peuvent interagir avec Microsoft Defender AV
-description: Configurez la façon dont les utilisateurs finaux interagissent avec Microsoft Defender AV, les notifications qu'ils voient et s'ils peuvent remplacer les paramètres.
-keywords: point de terminaison, utilisateur, interaction, notifications, mode de verrouillage de l'interface utilisateur, mode sans tête, masquer l'interface
+title: Configurer la façon dont les utilisateurs peuvent interagir avec Antivirus Microsoft Defender
+description: Configurez la façon dont les utilisateurs finaux interagissent Antivirus Microsoft Defender, les notifications qu’ils voient et s’ils peuvent remplacer les paramètres.
+keywords: point de terminaison, utilisateur, interaction, notifications, mode de verrouillage de l’interface utilisateur, mode sans tête, masquer l’interface
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: df9f87e725575bad2f36cf7b016d257e766e523b
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 711765ca9638e310ab03f841ba3aba558b4fd1cb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765226"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275287"
 ---
-# <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a>Configurer l'interaction de l'utilisateur final avec l'Antivirus Microsoft Defender
+# <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a>Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,14 +31,12 @@ ms.locfileid: "51765226"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez configurer la façon dont les utilisateurs des points de terminaison de votre réseau peuvent interagir avec l'Antivirus Microsoft Defender.
+Vous pouvez configurer la façon dont les utilisateurs des points de terminaison de votre réseau peuvent interagir avec Antivirus Microsoft Defender. Vous pouvez configurer si les utilisateurs voient l’interface Antivirus Microsoft Defender, les notifications qu’ils voient et s’ils peuvent remplacer localement les paramètres de stratégie de groupe déployés globalement.
 
-Cela inclut s'ils voient l'interface antivirus Microsoft Defender, les notifications qu'ils voient et s'ils peuvent remplacer localement les paramètres de stratégie de groupe déployés globalement.
+Utilisez les articles suivants pour configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender
 
-## <a name="in-this-section"></a>Dans cette section
+- [Configurer les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md) Configurer et personnaliser des notifications, du texte personnalisé pour les notifications et des notifications sur les redémarrages pour la correction
 
-Rubrique | Description 
----|---
-[Configurer les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md) | Configurer et personnaliser des notifications supplémentaires, du texte personnalisé pour les notifications et des notifications sur les redémarrages pour la correction
-[Empêcher les utilisateurs de voir ou d'interagir avec l'interface utilisateur de l'Antivirus Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md) | Masquer l'interface utilisateur aux utilisateurs
-[Empêcher les utilisateurs de modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) | Empêcher (ou autoriser) les utilisateurs de remplacement des paramètres de stratégie sur leurs points de terminaison individuels
+- [Empêcher les utilisateurs de voir ou d’interagir avec l’interface Antivirus Microsoft Defender utilisateur](prevent-end-user-interaction-microsoft-defender-antivirus.md) Masquer l’interface utilisateur aux utilisateurs
+
+- [Empêcher les utilisateurs de modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) Empêcher (ou autoriser) les utilisateurs de remplacement des paramètres de stratégie sur leurs points de terminaison individuels

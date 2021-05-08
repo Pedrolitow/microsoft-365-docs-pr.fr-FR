@@ -3,7 +3,7 @@ title: Vue d’ensemble du tableau de bord de sécurité
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: siosulli
+author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez le nouveau tableau de bord de sécurité pour passer en revue l’état de la protection contre les menaces Office 365, et afficher et agir sur les alertes de sécurité.
+description: Utilisez le nouveau tableau de bord de sécurité pour passer en revue Office 365 l’état de la protection contre les menaces, et afficher et agir sur les alertes de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 71c077853c8dbb68b78c8073f650bcb2df4d1b9a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274411"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246452"
 ---
 # <a name="security-dashboard"></a>Tableau de bord de sécurité
 
@@ -58,7 +58,7 @@ Les informations que vous verrez dans le résumé de la gestion des menaces dép
 |---|---|
 |Messages de programmes malveillants bloqués<br>Messages de hameçonnage bloqués<br>Messages signalés par les utilisateurs<br><br><br><br>|Messages de programmes malveillants bloqués<br>Messages de hameçonnage bloqués<br>Messages signalés par les utilisateurs<br>Programmes malveillants zero-day bloqués<br>Messages de hameçonnage avancés détectés<br>URL malveillantes bloquées|
 
-Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez être autorisé à afficher les rapports Defender pour Office 365. Pour en savoir plus, consultez les autorisations nécessaires pour afficher les rapports [Defender pour Office 365 .](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+Pour afficher ou accéder au widget Résumé de la gestion des menaces, vous devez être autorisé à afficher Defender pour Office 365 rapports. Pour en savoir plus, voir [quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)sont nécessaires pour afficher les rapports defender pour Office 365' .
 
 ## <a name="threat-protection-status"></a>État de la protection contre les menaces
 
@@ -66,14 +66,14 @@ Le widget d’état de la protection contre les menaces montre l’efficacité d
 
 ![Widget d’état de la protection contre les menaces](../../media/tpswidget.png)
 
-Les détails varient selon que votre abonnement Microsoft 365 inclut [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) avec ou sans Microsoft Defender pour Office [365.](defender-for-office-365.md)
+Les détails varient selon que [](exchange-online-protection-overview.md) votre abonnement Microsoft 365 inclut Exchange Online Protection (EOP) avec ou sans [Microsoft Defender pour Office 365](defender-for-office-365.md).
 
 |Si votre abonnement inclut...|Vous verrez ces détails|
 |---|---|
 |EOP, mais pas Microsoft Defender pour Office 365|Courrier électronique malveillant détecté et bloqué par EOP.<p> Consultez [le rapport d’état de la protection contre les menaces (EOP).](view-email-security-reports.md#threat-protection-status-report)|
-|Microsoft Defender pour Office 365|Contenu malveillant et courriers malveillants détectés et bloqués par EOP et Defender pour Office 365 <p> Nombre agrégé de messages électroniques uniques avec du contenu malveillant bloqué par le moteur [anti-programme](zero-hour-auto-purge.md)malveillant, [](safe-links.md)purge automatique d’heure zéro et fonctionnalités de Defender pour Office 365 (y compris les liens [sécurisés,](safe-attachments.md)pièces jointes et anti-hameçonnage dans [Defender pour Office 365).](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) <p> Voir [le rapport d’état de la protection contre les menaces.](view-reports-for-mdo.md#threat-protection-status-report)|
+|Microsoft Defender pour Office 365|Contenu malveillant et e-mail malveillant détectés et bloqués par EOP et Defender pour Office 365 <p> Nombre agrégé de messages électroniques uniques avec du contenu malveillant bloqué par le moteur [anti-programme](zero-hour-auto-purge.md)malveillant, [](safe-links.md)purge automatique d’heure zéro et fonctionnalités de Defender pour Office 365 (y compris les liens [sécurisés,](safe-attachments.md)les pièces jointes et l’anti-hameçonnage dans [Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> Voir [le rapport d’état de la protection contre les menaces.](view-reports-for-mdo.md#threat-protection-status-report)|
 
-Pour afficher ou accéder au widget d’état de la protection contre les menaces, vous devez être autorisé à afficher les rapports Defender pour Office 365. Pour en savoir plus, voir quelles autorisations sont nécessaires pour afficher les [rapports Defender pour Office 365 ?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+Pour afficher ou accéder au widget d’état de la protection contre les menaces, vous devez être autorisé à afficher Defender pour Office 365 rapports. Pour en savoir plus, [voir quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports) sont nécessaires pour afficher les rapports Defender for Office 365 ?
 
 ## <a name="global-weekly-threat-detections"></a>Détections hebdomadaires globales des menaces
 
@@ -98,7 +98,7 @@ Les widgets de programmes malveillants montrent des détails sur les tendances d
 
 ## <a name="insights"></a>Informations
 
-Les informations ne sont pas seulement des problèmes clés que vous devez examiner, mais elles incluent également des recommandations et des actions à prendre en compte.
+Les informations ne sont pas seulement des problèmes majeurs que vous devez examiner, mais elles incluent également des recommandations et des actions à prendre en compte.
 
 ![Informations intelligentes](../../media/smartinsights.png)
 
@@ -106,19 +106,19 @@ Par exemple, vous pouvez constater que les messages électroniques de hameçonna
 
 ## <a name="threat-investigation-and-response"></a>Examen et réponse contre les menaces
 
-Si l’abonnement de votre organisation inclut Microsoft Defender pour  [Office 365 Plan 2,](office-365-ti.md)votre tableau de bord de sécurité comporte une section qui inclut des outils avancés d’examen et de réponse aux menaces. Ces outils incluent [des fonctionnalités automatisées d’examen et de réponse.](automated-investigation-response-office.md) L’examen et la réponse automatisés peuvent être utiles dans des scénarios tels que la gestion rapide des comptes [d’utilisateur compromis.](address-compromised-users-quickly.md)
+Si l’abonnement de votre organisation inclut Microsoft Defender pour [Office 365 Plan 2,](office-365-ti.md)votre tableau de bord de sécurité comporte une section qui inclut des outils avancés d’examen et de réponse aux menaces. Ces outils incluent [des fonctionnalités automatisées d’examen et de réponse.](automated-investigation-response-office.md) L’examen et la réponse automatisés peuvent être utiles dans des scénarios tels que la gestion rapide des comptes [d’utilisateur compromis.](address-compromised-users-quickly.md)
 
-Pour plus d’informations, voir Commencer à utiliser l’investigation et la réponse automatisées [(AIR) dans Office 365.](office-365-air.md)
+Pour plus d’informations, voir [Commencer à utiliser l’investigation automatisée et la réponse (AIR) dans Office 365](office-365-air.md).
 
 ## <a name="trends"></a>Tendances
 
-En bas du tableau de bord de sécurité se trouve une section **Tendances,** qui récapitule les tendances de flux de messagerie pour votre organisation. Les rapports fournissent des informations sur les courriers électroniques classés comme courrier indésirable, programmes malveillants, tentatives de hameçonnage et courrier électronique de qualité. Cliquez sur une vignette pour afficher des informations plus détaillées dans le rapport.
+En bas du tableau de bord de sécurité se trouve une section **Tendances,** qui récapitule les tendances de flux de messagerie pour votre organisation. Les rapports fournissent des informations sur les courriers électroniques classés comme courrier indésirable, programmes malveillants, tentatives d’hameçonnage et courrier électronique de qualité. Cliquez sur une vignette pour afficher des informations plus détaillées dans le rapport.
 
 ![La section Tendances récapitule les tendances de flux de messagerie pour l’organisation](../../media/trends.png)
 
-En outre, si l’abonnement de votre organisation inclut Defender pour [Office 365 Plan 2,](office-365-ti.md)vous aurez également un rapport d’alertes de gestion des **menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher et d’agir sur les alertes de sécurité prioritaires.
+En outre, si l’abonnement de votre organisation inclut [Defender pour Office 365 Plan 2,](office-365-ti.md)vous aurez également un rapport d’alertes de gestion des **menaces récentes** dans cette section qui permet à votre équipe de sécurité d’afficher et d’agir sur les alertes de sécurité prioritaires.
 
-Pour afficher ou accéder au widget Courrier envoyé et reçu, vous devez être autorisé à afficher les rapports Defender pour Office 365. Pour en savoir plus, consultez les autorisations nécessaires pour afficher les rapports [Defender pour Office 365 .](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+Pour afficher ou accéder au widget Courrier envoyé et reçu, vous devez avoir les autorisations d’afficher Defender pour Office 365 rapports. Pour en savoir plus, voir [quelles autorisations](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)sont nécessaires pour afficher les rapports defender pour Office 365' .
 
 Pour afficher ou accéder au widget Alertes de gestion des menaces récentes, vous devez être autorisé à afficher les alertes. Pour en savoir plus, consultez [les autorisations RBAC requises pour afficher les alertes.](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)
 
@@ -130,4 +130,4 @@ Pour afficher ou accéder au widget Alertes de gestion des menaces récentes, vo
 
 [Defender pour Office 365](defender-for-office-365.md)
 
-[Examen et réponse aux menaces Office 365](office-365-ti.md)
+[Office 365 Examen et réponse contre les menaces](office-365-ti.md)

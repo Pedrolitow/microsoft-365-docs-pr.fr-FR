@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +13,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
-ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
+search.appverid: MET150
 description: Découvrez les modes de paiement disponibles pour régler votre abonnement Microsoft 365 for business.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+- commerce_billing
+- PPM_jmueller
+ms.date: 05/04/2021
+ms.openlocfilehash: 85fdcc0aca52b91ed34b1729f6eea805cce37ade
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245003"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280582"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 
@@ -89,6 +90,7 @@ Si vous n’avez pas ajouté le mode de paiement actuellement utilisé pour le r
  **Choisissez votre pays ou région de facturation dans le menu déroulant ci-dessous.**
 
 > [!div class="op_single_selector"]
+>
 > - **Choisissez votre pays ou région**
 > - [Afghanistan](../pay/afghanistan.md)
 > - [Albanie](../pay/albania.md)
@@ -254,7 +256,7 @@ Vous ne pouvez passer au règlement par facture que pour un abonnement dont le c
 
 Vous ne pouvez pas passer automatiquement du mode de paiement par facturation à un autre mode de paiement. Au lieu de cela, vous devez [Acheter un autre abonnement](../try-or-buy-microsoft-365.md#buy-a-different-subscription) payé par carte de crédit, carte de débit, ou compte bancaire, [Passer tous les utilisateurs au nouvel abonnement](../subscriptions/move-users-different-subscription.md), puis [Annuler l’ancien abonnement](../subscriptions/cancel-your-subscription.md).
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
 [Gérer les modes de paiement](manage-payment-methods.md) (article)\
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\

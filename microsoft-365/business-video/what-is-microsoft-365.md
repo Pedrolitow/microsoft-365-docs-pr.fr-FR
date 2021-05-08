@@ -20,12 +20,12 @@ search.appverid:
 description: En savoir plus sur les fonctionnalités de Microsoft 365 Business Premium.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f4c41e86f3a98c2af076a58e311aa14be79704e9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580329"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245179"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -45,5 +45,7 @@ Lorsque vous souscrivez un abonnement à Microsoft 365 Business Premium, vous b
 | Sécuriser les données professionnelles | Vos données personnelles sont protégées sur les appareils personnels avec accès par code confidentiel, ainsi que par la limitation de la copie et de l’enregistrement. Vous pouvez également ajouter la protection des informations afin de vous assurer que seules les personnes autorisées peuvent accéder aux informations sensibles. |
 | Sécuriser vos appareils | Vous pouvez protéger vos fichiers de travail sur les appareils en restreignant l’accès mobile (par exemple, les actions Copier et Coller). Vous pouvez également effacer de façon sélective les données professionnelles provenant d’appareils mobiles inscrits en cas de perte ou de vol. |
 | Autres fonctionnalités de sécurité | Les fonctionnalités avancées de Microsoft 365 Business Premium sont disponibles pour vous aider à protéger votre activité contre les cybermenaces et protéger les informations sensibles. Les fonctionnalités incluent Office 365 – Protection avancée contre les menaces, les stratégies de protection contre la perte de données (DLP), l’archivage Exchange Online, Azure Information Protection et Intune. |
+
+Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués. 
 
 Pour plus d’informations, voir [Contenu de Microsoft 365 Business](../business/index.yml).
