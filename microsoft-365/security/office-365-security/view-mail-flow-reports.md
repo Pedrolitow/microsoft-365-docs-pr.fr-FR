@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les rapports de flux
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13871908c3b09660906b9233d23495830cf31ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204506"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245671"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord Rapports du Centre de sécurité & conformité
 
@@ -35,9 +35,9 @@ ms.locfileid: "51204506"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Outre les rapports de flux de [](mail-flow-insights-v2.md) messagerie disponibles dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité, plusieurs rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord Rapports pour vous aider à surveiller votre organisation Microsoft 365.
+Outre les rapports de flux de [](mail-flow-insights-v2.md) messagerie disponibles dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité, plusieurs rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord Rapports pour vous aider à surveiller votre organisation Microsoft 365.
 
-Si vous avez les [autorisations](#what-permissions-are-needed-to-view-these-reports)nécessaires, vous pouvez afficher ces rapports dans le Centre de sécurité [& conformité](https://protection.office.com) en allant au Tableau **de bord des** \> **rapports.** Pour aller directement au tableau de bord Rapports, ouvrez <https://protection.office.com/insightdashboard> .
+Si vous avez les [autorisations](#what-permissions-are-needed-to-view-these-reports)nécessaires, vous pouvez afficher ces rapports dans le Centre de sécurité [& conformité](https://protection.office.com) en allant au Tableau de bord **des** \> **rapports.** Pour aller directement au tableau de bord Rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
 ![Tableau de bord Rapports dans le Centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -73,9 +73,9 @@ Les graphiques suivants sont disponibles en affichage état :
   - **Vers Internet sans connecteur**
   - Connecteur spécifique que vous avez configuré.
 
-  ![Afficher les données par utilisation de TLS dans le rapport connecteur](../../media/connector-report-view-data-by-tls-usage.png)
+  ![Afficher les données par utilisation de TLS dans le rapport Connecteur](../../media/connector-report-view-data-by-tls-usage.png)
 
-Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
+Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
 
 ### <a name="details-table-view-for-the-connector-report"></a>Vue de table Détails pour le rapport Connecteur
 
@@ -91,33 +91,33 @@ Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de ra
 - **TLS 1.2** (pourcentage)
 - **Volume**: nombre de messages.
 
-Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
+Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
 Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
-## <a name="exchange-transport-rule-report"></a>Rapport de règles de transport Exchange
+## <a name="exchange-transport-rule-report"></a>Exchange de règles de transport
 
-Le **rapport des règles** de transport Exchange indique l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
+Le Exchange de règles de **transport** de messagerie affiche l’effet des règles de flux de messagerie (également appelées règles de transport) sur les messages entrants et sortants dans votre organisation.
 
-Pour afficher le rapport, ouvrez le Centre  de sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord rapports \>  et **sélectionnez Règle de transport Exchange.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Pour afficher le rapport, ouvrez le Centre  de sécurité [& conformité,](https://protection.office.com)allez au tableau de bord rapports et sélectionnez Exchange \>  règle **de transport.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Widget de règle de transport Exchange dans le tableau de bord Rapports](../../media/transport-rule-report-widget.png)
+![Exchange widget de règle de transport dans le tableau de bord Rapports](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Affichage du rapport pour le rapport des règles de transport Exchange
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Affichage du rapport pour le rapport Exchange règles de transport
 
 Les graphiques suivants sont disponibles en affichage état :
 
-- **Afficher les données par : règles de transport** \> Exchange **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport.
+- **Afficher les données par : Exchange transport** \> **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport.
 
-- **Afficher les données par : règles de transport** \> Exchange **Décomposez par : Gravité :** ce  graphique affiche le nombre de messages de gravité élevée, moyenne et **faible.** Vous définissez le niveau de gravité en tant qu’action dans la règle (**Auditez** cette règle avec le niveau de gravité _ou SetAuditSeverity_). Pour plus d’informations, voir [Actions de règle de flux de messagerie dans Exchange Online.](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **Afficher les données par : Exchange transport** \> **Décomposez par : Gravité :** ce  graphique affiche le nombre de messages de gravité élevée, moyenne et **faible.** Vous définissez le niveau de gravité en tant qu’action dans la règle (**Auditez** cette règle avec le niveau de gravité _ou SetAuditSeverity_). Pour plus d’informations, voir [Actions de règle de flux](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)de messagerie dans Exchange Online .
 
-- **Afficher les données par : règles de transport** \> Exchange DLP **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport de protection contre la perte de données (DLP). Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
+- Afficher les données par : règles de transport **Exchange DLP** \> **Décomposer par : Direction**: ce  graphique affiche le nombre de **messages** entrants et sortants affectés par les règles de transport de protection contre la perte de données (DLP). Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
 
   - **Afficher les données pour : toutes les règles de transport DLP**
   - **Afficher les données pour : utilisateurs compromis**
   - **Afficher les données pour : faible volume de contenu détecté pour le Patriot Act des États-Unis**
 
-- **Afficher les données par : règles de transport** \> Exchange DLP **Décomposez par : Direction**: cet  affichage indique le nombre de **messages** de gravité élevée et moyenne **et** faible qui ont été affectés par les règles de transport DLP. Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
+- Afficher les données par : règles de transport **Exchange DLP** \> **Décomposez par : Direction**: cet  affichage indique le nombre de **messages** de gravité élevée et moyenne **et** faible qui ont été affectés par les règles de transport DLP. Vous pouvez affiner davantage le graphique en sélectionnant l’une des options suivantes :
 
   - **Afficher les données pour : toutes les règles de transport DLP**
   - **Afficher les données pour : utilisateurs compromis**
@@ -125,17 +125,17 @@ Les graphiques suivants sont disponibles en affichage état :
 
 Si vous cliquez **sur Filtres** dans un affichage de rapport, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 - Valeurs de direction
 - Valeurs de gravité
 
-![Affichage du rapport dans le rapport des règles de transport Exchange](../../media/transport-rule-report-report-view.png)
+![Affichage du rapport dans le rapport Exchange règles de transport](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vue de table Détails pour le rapport des règles de transport Exchange
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vue de table Détails pour le rapport Exchange règle de transport
 
 Si vous cliquez sur Afficher le tableau des **détails,** les informations affichées dépendent du graphique que vous regardiez :
 
-- **Afficher les données par : Règles de transport Exchange**:
+- **Afficher les données par : Exchange transport :**
 
   - **Date**
   - **Règle de transport**
@@ -145,7 +145,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
   - **Gravité**
   - **Direction**
 
-- **Afficher les données par : Règles de transport Exchange DLP**:
+- **Afficher les données par : DLP Exchange de transport**:
 
   - **Date**
   - **Stratégie DLP**
@@ -158,7 +158,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
 
 Si vous cliquez **sur Filtres** dans une vue de tableau de détails, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 - Valeurs de direction
 - Valeurs de gravité
 
@@ -166,7 +166,7 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
 ## <a name="forwarding-report"></a>Rapport de forwarding
 
-Le **rapport de forwarding** affiche les messages automatiquement transmis par votre organisation à des domaines externes à partir de boîtes aux lettres Exchange Online. Les messages transmis peuvent présenter un risque de sécurité ou de conformité, et peuvent indiquer un compte compromis.
+Le **rapport de forwarding** affiche les messages automatiquement transmis par votre organisation à des domaines externes à partir Exchange Online boîtes aux lettres. Les messages transmis peuvent présenter un risque de sécurité ou de conformité, et peuvent indiquer un compte compromis.
 
 Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)allez au Tableau de bord des rapports \>  et sélectionnez Rapport **de report.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -194,7 +194,7 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
   ![Affichage des forwardeurs dans le rapport de forwarding](../../media/forwarding-report-forwarders.png)
 
-Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
+Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
 
 ### <a name="details-table-view-for-the-forwarding-report"></a>Vue de table Détails pour le rapport de report
 
@@ -208,13 +208,13 @@ Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de ra
 - **Count**
 - **Première date d’avance**
 
-Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
+Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
 Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
 ## <a name="mailflow-status-report"></a>Rapport d’état du flux de messagerie
 
-Le **rapport d’état du** flux de messagerie est similaire au rapport de courrier électronique envoyé et reçu, avec des informations supplémentaires sur le courrier électronique autorisé ou bloqué sur le edge. [](#sent-and-received-email-report) Il s’agit du seul rapport qui contient des informations sur la protection edge et qui indique la quantité de courrier électronique bloquée avant d’être autorisé dans le service pour évaluation par Exchange Online Protection (EOP). Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
+Le **rapport d’état du** flux de messagerie est similaire au rapport de courrier électronique envoyé et reçu, avec des informations supplémentaires sur le courrier électronique autorisé ou bloqué sur le edge. [](#sent-and-received-email-report) Il s’agit du seul rapport qui contient des informations sur la protection edge et qui indique la quantité de messages électroniques bloqués avant d’être autorisé à entrer dans le service pour évaluation par Exchange Online Protection (EOP). Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
 Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord rapports et sélectionnez Rapport d’état du \>  flux **de messagerie.** Pour aller directement au rapport d’état du **flux de messagerie,** ouvrez <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget de rapport d’état du flux de messagerie dans le tableau de bord Rapports](../../media/mail-flow-status-report-widget.png)
@@ -251,9 +251,9 @@ La table de données contient les informations suivantes :
 - **3 jours**
 - **7 jours**
 - **15 jours**
-- **30 jours**
+- **30 jours**
 
-Si vous cliquez **sur Choisir une catégorie pour plus de détails,** vous pouvez choisir parmi les valeurs suivantes :
+Si vous cliquez **sur Choisir une catégorie pour plus d’informations,** vous pouvez sélectionner l’une des valeurs suivantes :
 
 - **E-mail de hameçonnage**: cette sélection vous place dans le rapport d’état [de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
 - **Programmes malveillants dans les e-mails**: cette sélection vous place dans le rapport d’état [de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)
@@ -266,13 +266,13 @@ Pour l’affichage détaillé, vous ne pouvez exporter les données que pour une
 
 Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de ce jour contiennent plus de 150 000 lignes, plusieurs fichiers .csv seront créés.
 
-![Affichage des types dans le rapport d’état du flux de messagerie ](../../media/mail-flow-status-report-type-view.png)
+![Affichage des types dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-type-view.png)
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Affichage direction pour le rapport d’état du flux de messagerie
 
 Si vous cliquez sur **l’onglet Direction,** les mêmes filtres par défaut de **l’affichage Type** sont utilisés.
 
-Le graphique est organisé par **valeurs de direction.**
+Le graphique est organisé par **valeurs direction.**
 
 Vous pouvez modifier ces filtres en cliquant sur **Filtre** ou en cliquant sur une valeur dans la légende du graphique. Les mêmes filtres de **l’affichage Type** sont utilisés.
 
@@ -286,7 +286,7 @@ Pour l’affichage détaillé, vous ne pouvez exporter les données que pour une
 
 Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de ce jour contiennent plus de 150 000 lignes, plusieurs fichiers .csv seront créés.
 
-![Affichage direction dans le rapport d’état du flux de messagerie ](../../media/mail-flow-status-report-direction-view.png)
+![Affichage direction dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Affichage en entonnoir pour le rapport d’état du flux de messagerie
 
@@ -309,7 +309,7 @@ Si vous cliquez **sur Filtre,** vous pouvez filtrer le graphique et la table de 
 Ce graphique indique le nombre de messages électroniques organisés par :
 
 - **Nombre total de messages électroniques**
-- **E-mail après protection edge**
+- **Courrier électronique après protection edge**
 - **Courrier électronique après anti-programme malveillant, réputation du fichier, bloc de type de fichier**
 - **Courrier électronique après anti-hameçonnage, réputation d’URL, emprunt d’identité de marque, anti-usurpation d’identité**
 - **Courrier électronique après filtrage du courrier indésirable en bloc**
@@ -319,7 +319,7 @@ Ce graphique indique le nombre de messages électroniques organisés par :
 
 <sup>1</sup> Defender pour Office 365 uniquement
 
-Pour afficher séparément les messages électroniques filtrés par EOP ou Defender pour Office 365, cliquez sur la valeur dans la légende du graphique.
+Pour afficher l’e-mail filtré par EOP ou Defender Office 365 séparément, cliquez sur la valeur dans la légende du graphique.
 
 La table de données contient les informations suivantes, indiquées dans l’ordre décroit de date :
 
@@ -335,10 +335,10 @@ La table de données contient les informations suivantes, indiquées dans l’or
   - **Anti-usurpation**: messages filtrés en raison de la tentative d’usurpation d’un domaine appartenant au destinataire ou d’un domaine que l’expéditeur du message ne possède pas.
 - **Anti-courrier indésirable, filtrage du courrier en bloc**:
   - **Filtrage du courrier en nombre**: messages filtrés en raison d’une tentative de remettre des messages en nombre à ses destinataires.
-- **Emprunt d’identité d’utilisateur et de domaine (Defender pour Office 365)**:
+- **Emprunt d’identité d’utilisateur et** de domaine (Defender pour Office 365) :
   - **Emprunt d’identité** d’utilisateur : messages filtrés en raison d’une tentative d’emprunt d’identité d’un utilisateur (expéditeur de message) défini dans les paramètres de protection contre l’emprunt d’identité d’une stratégie anti-hameçonnage.
   - **Emprunt d’identité** de domaine : messages filtrés en raison d’une tentative d’emprunt d’identité d’un domaine défini dans les paramètres de protection contre l’emprunt d’identité d’une stratégie anti-hameçonnage.
-- **Détonation de fichiers et d’URL (Defender pour Office 365)**:
+- **Détonation de fichier et d’URL (Defender pour Office 365)**:
   - **Détonation de fichier**: messages filtrés par une stratégie de pièces jointes sécurisées.
   - **Détonation d’URL**: message filtré par une stratégie de liens sécurisés.
 - **Protection post-remise et ZAP (ATP) ou ZAP (EOP)**: ZAP indique une purge automatique de zéro heure.
@@ -352,11 +352,11 @@ Après avoir cliqué **sur Exporter** sous **Options,** vous pouvez sélectionne
 - **Résumé (avec des données pour les 90 derniers jours au maximum)**
 - **Détails (avec des données pour les 30 derniers jours au maximum)**
 
-Sous **Date**, choisissez une plage, puis cliquez sur **Appliquer**. Les données des filtres actuels sont exportées vers un fichier .csv.
+Sous **Date**, choisissez une plage, puis cliquez sur **Appliquer**. Les données des filtres actuels sont exportées vers un .csv de données.
 
-Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs fichiers .csv seront créés.
+Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs .csv fichiers seront créés.
 
- ![Affichage en entonnoir dans le rapport d’état du flux de messagerie ](../../media/mail-flow-status-report-funnel-view.png)
+ ![Affichage en entonnoir dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Affichage technique pour le rapport d’état du flux de messagerie
 
@@ -386,7 +386,7 @@ Ce graphique présente les messages organisés dans les catégories suivantes :
 - **Pas de courrier indésirable** et  **de courrier indésirable**
 - **Courrier non malveillant,** **détection de liens fiables** <sup>\*</sup> et **ZAP**
 
-<sup>\*</sup> Defender pour Office 365
+<sup>\*</sup>Defender for Office 365
 
 Lorsque vous pointez sur une catégorie dans le graphique, vous pouvez voir le nombre de messages dans cette catégorie.
 
@@ -408,16 +408,16 @@ Si vous sélectionnez une ligne dans la table de données, une répartition supp
 
 **Exporter**:
 
-En cliquant sur **Exporter,** sous **Options,** vous pouvez sélectionner l’une des valeurs suivantes :
+En cliquant **sur Exporter,** sous **Options,** vous pouvez sélectionner l’une des valeurs suivantes :
 
 - **Résumé (avec des données pour les 90 derniers jours au maximum)**
 - **Détails (avec des données pour les 30 derniers jours au maximum)**
 
-Sous **Date**, choisissez une plage, puis cliquez sur **Appliquer**. Les données des filtres actuels sont exportées vers un fichier .csv.
+Sous **Date**, choisissez une plage, puis cliquez sur **Appliquer**. Les données des filtres actuels sont exportées vers un .csv de données.
 
-Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs fichiers .csv seront créés.
+Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs .csv fichiers seront créés.
 
- ![Affichage technique dans le rapport d’état du flux de messagerie ](../../media/mail-flow-status-report-Tech-view.png)
+ ![Affichage technique dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Rapport de courrier électronique envoyé et reçu
 
@@ -456,7 +456,7 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
 Si vous cliquez **sur Filtres** dans un affichage de rapport, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 - Valeurs de direction
 - Valeurs de type
 
@@ -473,7 +473,7 @@ Si vous cliquez **sur Afficher les détails dans** le tableau Décomposer par : 
 
 Si vous cliquez **sur Filtres** dans une vue de tableau de détails, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 - Valeurs de direction
 - Valeurs de type
 
@@ -483,7 +483,7 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
 Le **rapport Des principaux expéditeurs et destinataires** est un graphique en secteurs montrant vos principaux expéditeurs et destinataires de courrier électronique.
 
-Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord des rapports et sélectionnez Principaux \>  **expéditeurs et destinataires.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
+Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord rapports et sélectionnez Principaux \>  **expéditeurs et destinataires.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=TopSenderRecipientsATP> .
 
 ![Widget des principaux expéditeurs et destinataires dans le tableau de bord Rapports](../../media/top-senders-and-recipients-widget.png)
 
@@ -494,14 +494,14 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 - **Afficher les données pour \> les principaux expéditeurs de courrier**
 - **Afficher les données pour \> les principaux destinataires du courrier**
 - **Afficher les données des \> principaux destinataires du courrier indésirable**
-- **Afficher les données pour \> Principaux destinataires des programmes malveillants** (EOP)
+- **Afficher les données pour \> Principaux destinataires de programmes malveillants** (EOP)
 - **Afficher les données \> des principaux destinataires de programmes malveillants (Defender pour Office 365)**
 
 La composition du graphique en secteurs change en fonction de ces sélections.
 
 Lorsque vous pointez sur une souris dans le graphique en secteurs, vous pouvez voir le nombre de messages envoyés ou reçus.
 
-Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
+Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
 
 ![Graphique en secteurs en affichage Rapport dans le rapport Des principaux expéditeurs et destinataires](../../media/top-senders-and-recipients-report-view.png)
 
@@ -524,17 +524,17 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
   - **Principaux destinataires du courrier indésirable**
   - **Count**
 
-- **Afficher les données pour \> Principaux destinataires des programmes malveillants** (EOP)
+- **Afficher les données pour \> Principaux destinataires de programmes malveillants** (EOP)
 
   - **Principaux destinataires de programmes malveillants**
   - **Count**
 
 - **Afficher les données \> des principaux destinataires de programmes malveillants (Defender pour Office 365)**
 
-  - **Principaux destinataires des programmes malveillants (Defender pour Office 365)**
+  - **Principaux destinataires de programmes malveillants (Defender pour Office 365)**
   - **Count**
 
-Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
+Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
 Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
@@ -543,7 +543,7 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le Centre de sécurité & conformité :
 
 - **Gestion de l'organisation**
-- **Administrateur de la sécurité**
+- **Administrateur de sécurité**
 - **Lecteur sécurité**
 - **Lecteur global**
 

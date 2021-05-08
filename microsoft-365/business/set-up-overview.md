@@ -27,20 +27,20 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration de Microsoft 365 Business Premium, de l’abonnement, à l’ajout d’un domaine et des utilisateurs, à la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 749acbfdbde92ad97b09dc720c85dd850b76c9cf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 008a5c51698589667acc0d01649f67dab33b4c58
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579931"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245061"
 ---
 # <a name="overview-of-setup"></a>Vue d’ensemble de la configuration
 
-Regardez une courte vidéo sur la configuration de Microsoft 365 Business Premium.<br><br>
+Regardez une courte vidéo sur Microsoft 365 Business Premium configuration.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
 
 La plupart des étapes de configuration peuvent être réalisées dans l’installation guidée, mais les autres options sont également répertoriées.
 
@@ -50,7 +50,7 @@ La plupart des étapes de configuration peuvent être réalisées dans l’insta
 
    - **Ajouter des utilisateurs**. Vous pouvez ajouter des utilisateurs de l’une des trois manières possibles :
         - Dans la [configuration guidée](set-up.md#add-users-in-the-wizard).
-        - Utilisez la synchronisation d’annuaires pour ajouter des utilisateurs à l’aide [d’Azure AD Connect](../enterprise/set-up-directory-synchronization.md) si vous avez un annuaire Active Directory local.
+        - Utilisez la synchronisation d’annuaires pour ajouter des utilisateurs à l’aide [d’Azure AD Connecter](../enterprise/set-up-directory-synchronization.md) si vous avez un annuaire Active Directory local.
         - Vous pouvez également ajouter [des utilisateurs ultérieurement](../admin/add-users/add-users.md) dans le Centre d’administration.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2 : Configurer des stratégies de sécurité et des appareils 
 
@@ -67,32 +67,32 @@ La plupart des étapes de configuration peuvent être réalisées dans l’insta
 
 Pour commencer, voir augmenter la [protection contre les menaces](increase-threat-protection.md) [et configurer les fonctionnalités de conformité.](set-up-compliance.md)
 
-Découvrez également les 10 principales façons de sécuriser [votre Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) pour obtenir un plan des meilleures pratiques en matière de sécurité.
+Découvrez également [les 10 principales façons](/office365/admin/security-and-compliance/secure-your-business-data) de sécuriser votre Microsoft 365 Business Premium pour obtenir un plan des meilleures pratiques en matière de sécurité.
 
-## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Étape 3 : Configurer et gérer les appareils Windows 10
+## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Étape 3 : Configurer et gérer Windows 10 appareils
 
-Une fois l’installation guidée terminée, vous devez protéger tous les ordinateurs Windows 10 de votre organisation.
+Une fois la configuration guidée terminée, vous devez protéger tous les ordinateurs Windows 10 de votre organisation.
   
-- Windows 10 Professionnel [](pre-requisites-for-data-protection.md) est une condition préalable pour Microsoft 365 Business Premium, mais si vous avez Windows 7 Professionnel, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement vous donne droit à une mise à niveau vers [Windows 10 Professionnel.](./upgrade-to-windows-pro-creators-update.md)
-- Suivez les étapes de [la sécurisation des PC Windows 10](secure-win-10-pcs.md) pour configurer des stratégies pour les appareils Windows 10.
+- Windows 10 Professionnel est une [](pre-requisites-for-data-protection.md) condition préalable pour Microsoft 365 Business Premium, mais si vous avez Windows 7 Pro, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement vous donne droit à une mise à niveau vers [Windows 10 Professionnel](./upgrade-to-windows-pro-creators-update.md).
+- Suivez les étapes de [l’Windows 10 sécurisé pour](secure-win-10-pcs.md) configurer des stratégies pour Windows 10 appareils.
 
-Lorsque vous joignez un appareil Windows 10 à Azure AD, les stratégies que vous définissez pour les ordinateurs Windows 10 s’y appliquent. Pour plus d’informations, voir [Configurer des appareils Windows pour les utilisateurs de Microsoft 365.](set-up-windows-devices.md)
+Lorsque vous joignez un Windows 10 à Azure AD, les stratégies que vous définissez pour Windows 10 ordinateurs s’y appliquent. Pour plus d’informations, voir [Configurer des Windows pour les Microsoft 365 utilisateurs.](set-up-windows-devices.md)
 
-## <a name="step-4-install-microsoft-365-apps-for-business"></a>Étape 4 : Installer Microsoft 365 Apps for business
-- Vous pouvez installer automatiquement Office sur les appareils Windows à l’aide de [l’Assistant Installation.](set-up.md#deploy-office-365-client-apps)
-- Permet aux [utilisateurs d’installer des applications Office](/office365/admin/setup/install-applications) pour Windows et les appareils.
+## <a name="step-4-install-microsoft-365-apps-for-business"></a>Étape 4 : Installer Applications Microsoft 365 pour les PME
+- Vous pouvez installer automatiquement les Office sur les Windows à l’aide de [l’Assistant Installation.](set-up.md#deploy-office-365-client-apps)
+- Laissez les [utilisateurs installer Office applications pour](/office365/admin/setup/install-applications) Windows et les appareils.
      
 ## <a name="advanced"></a>Avancé
 - **Utiliser Autopilot pour configurer de nouveaux appareils**
             
-     Vous pouvez utiliser [Windows Autopilot](add-autopilot-devices-and-profile.md) pour pré-configurer automatiquement de nouveaux appareils **Windows** 10 [](https://www.microsoft.com/solution-providers/search) pour un utilisateur, mais il peut être plus facile d’obtenir un partenaire qui peut le faire pour vous. Vous pouvez également vous rendre dans [le Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)et demander à un expert en technologie cloud de configurer les nouveaux appareils que vous achetez.
+     Vous pouvez utiliser [Windows Autopilot](add-autopilot-devices-and-profile.md) pour pré-configurer automatiquement de nouveaux appareils **Windows 10** pour un utilisateur, [](https://www.microsoft.com/solution-providers/search) mais il peut être plus facile d’obtenir un partenaire qui peut le faire pour vous. Vous pouvez également vous [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)et demander à un expert en technologie cloud de configurer de nouveaux appareils que vous achetez.
 
 - **Accès aux ressources locales**
 
-     - Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de l’étape Activer les appareils Windows 10 joints à un domaine pour qu’ils soient gérés par [Microsoft 365 Business Premium](manage-windows-devices.md) pour le configurer. Il s’agit de la méthode préférée, et les appareils dans cet état sont appelés appareils joints à Azure AD hybride.
+     - Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de [la procédure d’Windows 10 de](manage-windows-devices.md) domaine à gérer par Microsoft 365 Business Premium pour configurer cette procédure. Il s’agit de la méthode préférée, et les appareils dans cet état sont appelés appareils joints à Azure AD hybride.
 
-    - Si votre entreprise possède un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes ci-après : Accéder aux ressources locales à partir d’un appareil joint à Azure AD dans [Microsoft 365 Business Premium](access-resources.md).
+    - Si votre entreprise possède un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez accorder à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes ci-après : Accéder aux ressources locales à partir d’un appareil joint à [Azure AD](access-resources.md)dans Microsoft 365 Business Premium .
 
-## <a name="see-also"></a>Voir aussi
+## <a name="related-content"></a>Contenu connexe
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 vidéos de formation pour les entreprises](../business-video/index.yml) (page de liens)

@@ -1,7 +1,7 @@
 ---
 title: Méthodes et propriétés des activités de correction
-description: La réponse de l'API contient les & de correction de la gestion des vulnérabilités créées dans votre client. Vous pouvez demander toutes les activités de correction, une seule activité de correction ou des informations sur les appareils exposés pour une tâche de correction sélectionnée.
-keywords: api, correction, api de correction, obtenir, tâches de correction,
+description: La réponse de l’API contient les & gestion des vulnérabilités de correction des menaces créées dans votre client. Vous pouvez demander toutes les activités de correction, une seule activité de correction ou des informations sur les appareils exposés pour une tâche de correction sélectionnée.
+keywords: api, correction, api de correction, obtenir, tâches de correction, méthodes de correction, propriétés de correction,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f720d638ec469523a1d567dee9c01fa0974b0090
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061123"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245539"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Méthodes et propriétés des activités de correction
 
@@ -39,15 +39,15 @@ ms.locfileid: "52061123"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-La réponse de l'API contient [les &](next-gen-threat-and-vuln-mgt.md)de gestion des vulnérabilités qui ont   été créées dans votre client.  
+La réponse de l’API [contient les & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)de correction des menaces qui ont été   créées dans votre client.  
 
 ## <a name="methods"></a>Méthodes
 
 Méthode | Type de données | Description
 :---|:---|:---
-[Liste de toutes les activités de correction](get-remediation-all-activities.md) | Collection d'examens | Retourne des informations sur toutes les activités de correction.
-[Liste des appareils exposés d'une activité de correction](get-remediation-exposed-devices-activities.md) | Entité Investigation | Retourne des informations sur les appareils exposés pour l'activité de correction spécifiée.
-[Obtenir une activité de correction par ID](get-remediation-one-activity.md) | Entité Investigation | Renvoie des informations pour l'activité de correction spécifiée.
+[Répertorier toutes les activités de correction](get-remediation-all-activities.md) | Collection d’examens | Retourne des informations sur toutes les activités de correction.
+[Répertorier les appareils exposés d’une activité de correction](get-remediation-exposed-devices-activities.md) | Entité Investigation | Retourne des informations sur les appareils exposés pour l’activité de correction spécifiée.
+[Obtenir une activité de correction par son ID](get-remediation-one-activity.md) | Entité Investigation | Renvoie des informations pour l’activité de correction spécifiée.
 
 En savoir plus sur [les activités de correction.](tvm-remediation.md)
 
@@ -55,7 +55,7 @@ En savoir plus sur [les activités de correction.](tvm-remediation.md)
 
 ID de propriété | Type de données | Description
 :---|:---|:---
-category | String | Catégorie de l'activité de correction (configuration logicielle/sécurité)
+category | String | Catégorie de l’activité de correction (configuration logicielle/sécurité)
 completerEmail | String | Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique
 completerId | String | Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet
 completionMethod | String | Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé ».
@@ -77,21 +77,21 @@ requesterEmail | String | Adresse de messagerie du créateur
 requesterId | String | ID d’objet Creator
 requesterNotes | String | Notes (texte libre) ajoutées par le créateur pour cette activité de correction
 scid | String | SCID de la recommandation de sécurité associée
-status | String | État de l'activité de correction (actif/terminé)
-statusLastModifiedOn | Date/heure | Date de mise à jour du champ d'état
-targetDevices | Entier long | Nombre d'appareils exposés à appliquer à cette correction
+status | String | État de l’activité de correction (actif/terminé)
+statusLastModifiedOn | Date/heure | Date de mise à jour du champ d’état
+targetDevices | Entier long | Nombre d’appareils exposés pour qui cette correction s’applique
 title | String | Titre de cette activité de correction
 type | String | Type de correction
 vendorId | String | Nom du fournisseur associé
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Obtenir une activité de correction par ID](get-remediation-one-activity.md)
+- [Obtenir une activité de correction par son ID](get-remediation-one-activity.md)
 
-- [Liste de toutes les activités de correction](get-remediation-all-activities.md)
+- [Répertorier toutes les activités de correction](get-remediation-all-activities.md)
 
-- [Liste des appareils exposés d'une activité de correction](get-remediation-exposed-devices-activities.md)
+- [Répertorier les appareils exposés d’une activité de correction](get-remediation-exposed-devices-activities.md)
 
-- [Gestion des menaces basée sur & les vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: En savoir plus sur les listes Microsoft. Avec Listes Microsoft, vous pouvez suivre les détails des clients, tels que le type de client, l’avancement des commandes et l’avancement des commandes.
-ms.openlocfilehash: 79094c6b039e62ba88720424985814354bd299b4
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509424"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245191"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>Utiliser les listes Microsoft pour suivre les informations professionnelles
 
@@ -29,13 +29,13 @@ ms.locfileid: "50509424"
 
 ## <a name="try-it"></a>Essayer
 
-Suivez les informations et organisez le travail avec les listes Microsoft. Créez une liste à partir de zéro, à partir d’Excel, d’une liste existante ou d’un modèle. Vous pouvez commencer à partir de Microsoft 365, Microsoft Teams ou SharePoint.
+Suivez les informations et organisez le travail avec les listes Microsoft. Créez une liste à partir de zéro, Excel, d’une liste existante ou d’un modèle. Vous pouvez commencer à partir Microsoft 365, Microsoft Teams ou SharePoint.
 
 ### <a name="add-an-item-to-the-list"></a>Ajouter un élément à la liste
 
 1. Sélectionnez **Nouveau**.
 1. Ajoutez des détails sur la commande.
-1. Sélectionnez **Enregistrer**.
+1. Cliquez sur **Enregistrer**.
 
 ### <a name="share-the-list-with-partners-or-coworkers"></a>Partager la liste avec des partenaires ou des collègues
 
@@ -63,7 +63,7 @@ Mettez en forme une colonne pour mettre en évidence les détails qu’elle int 
 
 Vous pouvez hiérarchiser une liste de commandes de différentes manières :
 
-- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Ancien à Nouveau.
+- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Plus ancien à Plus nouveau.
 - Pour grouper les commandes par client, sélectionnez la colonne Type de client, puis grouper par type de client.
 
 ### <a name="update-an-items-status"></a>Mettre à jour l’état d’un élément
@@ -72,6 +72,6 @@ Vous pouvez suivre la progression instantanément :
 
 - Double-cliquez sur un élément pour l’ouvrir et mettez à jour la progression de la commande.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-content"></a>Contenu connexe
 
 [Créer une liste à partir de l’application Listes](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

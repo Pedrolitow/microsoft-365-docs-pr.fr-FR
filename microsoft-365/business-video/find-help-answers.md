@@ -1,5 +1,5 @@
 ---
-title: Trouver des réponses et de l’aide
+title: Rechercher des documents et une formation
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,33 +20,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment trouver de l’aide pour les administrateurs pour Microsoft 365 Business Premium.
-ms.openlocfilehash: 6d16f3ece9782a33c3377e4a6bc2a93b29d54c1a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment trouver de l’aide pour les administrateurs Microsoft 365 Business Premium.
+ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578902"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245227"
 ---
-# <a name="find-answers-and-help-for-admins"></a>Rechercher des réponses et de l’aide pour les administrateurs
+# <a name="find-docs-and-training"></a>Rechercher des documents et une formation
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGn5?autoplay=false]
+Si vous avez une question ou si vous avez besoin d’Microsoft 365 Business Premium, vous avez plusieurs options pour obtenir de l’aide.
 
-Si vous avez une question ou si vous avez besoin d’aide avec Microsoft 365 Business Premium, plusieurs options s’offrent à vous pour obtenir de l’aide.
+## <a name="browse-all-small-business-training"></a>Parcourir toutes les formations pour les petites entreprises
 
-## <a name="try-it"></a>Essayez !
+Pour obtenir des liens vers l’ensemble du support de formation dont vous aurez besoin pour utiliser Microsoft 365 votre petite entreprise, voir Microsoft 365 formation pour les petites [entreprises.](index.yml) 
 
-1. Connectez-vous [office.com](https://office.com) avec vos informations d’identification professionnelles et sélectionnez **Administrateur.**
-1. Dans la page d’accueil du Centre d’administration, sélectionnez Formation pour les **administrateurs** afin de voir les options de formation disponibles.
-1. Choisissez **les propriétaires d’entreprise et les administrateurs** pour la formation pour les petites et moyennes entreprises.
-1. Choisissez **Les professionnels de l’informatique d’entreprise** pour les entreprises plus grandes ou plus complexes.
-1. Revenir au Centre d’administration et, cette fois, choisissez des instructions d’installation personnalisées pour voir un certain nombre de guides qui vous guident à travers des tâches d’installation spécifiques. 
-1. Revenir à la page  d’accueil du Centre d’administration et choisissez Formation pour que les utilisateurs obtiennent de l’aide sur des applications spécifiques et découvrez comment tirer le meilleur profit des fonctionnalités que vous utilisez chaque jour.
-1. Revenir au Centre d’administration et choisissez **Besoin d’aide** pour ouvrir l’Assistant Support. Tapez votre question ou la rubrique avec qui vous souhaitez de l’aide, puis **sélectionnez Envoyer.** Choisissez le lien dans le Centre d’administration ou l’article qui répond à votre question.
-1. Si vous ne trouvez pas de réponse à votre question, vous pouvez toujours contacter le support technique et un technicien du support technique vous répondra prochainement.
+## <a name="search-for-microsoft-365-admin-center-docs-and-resources"></a>Recherchez des Microsoft 365 du Centre d’administration et des ressources
 
-Vous pouvez également utiliser les ressources suivantes pour obtenir de l’aide sur votre problème :
+Pour rechercher des tâches et de l’aide relatives à l’administration, telles que la réinitialisation des mots de passe et l’affectation d’abonnements Microsoft, voir [Microsoft 365'aide du Centre d’administration.](../admin/index.yml)
 
-- [aka.ms/learn365admin](../admin/index.yml), pour rechercher toutes les tâches et aide relatives à l’administrateur, telles que la réinitialisation des mots de passe et l’affectation d’abonnements Microsoft.
-- [answers.microsoft.com](https://answers.microsoft.com), pour rechercher des réponses, démarrer une discussion et poser des questions à d’autres utilisateurs.
-- [techcommunity.microsoft.com](https://techcommunity.microsoft.com), pour rejoindre une communauté d’experts et trouver les meilleures pratiques avec Microsoft 365 pour votre entreprise.
+## <a name="join-the-community"></a>Rejoindre la communauté
+
+Démarrez une conversation, suivez les discussions et partagez vos connaissances avec d’autres utilisateurs Microsoft 365 petites entreprises en rejoignant le microsoft [small business Community](https://smallbusiness.microsoft.com/).
+
+Si vous avez des questions spécifiques sur d’autres produits et services, posez des questions et suivez les discussions pertinentes sur [Ask the Microsoft Community](https://answers.microsoft.com).

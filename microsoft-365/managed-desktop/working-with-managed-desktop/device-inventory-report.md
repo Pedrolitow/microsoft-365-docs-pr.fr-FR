@@ -1,7 +1,7 @@
 ---
 title: Rapport d’inventaire des appareils
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0ae2952337c2b7dd6f056f637fdcf295776ab404
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 3ebbb4359e460c0e8ddd6d353ce70057ed352212
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46613037"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245335"
 ---
 # <a name="device-inventory-report"></a>Rapport d’inventaire des appareils
 
@@ -38,8 +38,11 @@ Dans la vue **Appareils,**  vous pouvez sélectionner l’onglet Exporter tout p
 - Utilisateur affecté
 - Statut
 - Âge (mois)
-- Profils
+- Profil
 - Utilisateurs connectés
+- Version du TPM
+- Démarrage sécurisé activé
+- Type de disque principal
+- Mémoire physique totale 
 
-
-![Affichage Des appareils affichant la liste des appareils et les détails associés. Cases à cocher situées dans la partie supérieure sélectionnez filtres pour l’activité, état d’inscription. Au-dessus, il s’agit d’une zone de recherche. Onglets en haut pour l’inscription de nouveaux appareils, l’actualisation de l’affichage, l’exportation d’erreurs et l’exportation des données. ](../../media/mmd-devices-view.png)
+![Affichage Des appareils affichant la liste des appareils et les détails associés. Cases à cocher situées dans la partie supérieure sélectionnez les filtres pour l’activité, état d’inscription. Au-dessus, il s’agit d’une zone de recherche. Onglets en haut pour l’inscription de nouveaux appareils, l’actualisation de l’affichage, l’exportation d’erreurs et l’exportation des données. ](../../media/mmd-devices-view.png)

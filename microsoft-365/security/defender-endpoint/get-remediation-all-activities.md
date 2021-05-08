@@ -1,7 +1,7 @@
 ---
-title: Liste de toutes les activités de correction
+title: Répertorier toutes les activités de correction
 description: Retourne des informations sur toutes les activités de correction.
-keywords: api, correction, api de correction, obtenir, tâches de correction,
+keywords: api, correction, api de correction, obtenir, tâches de correction, toutes les corrections,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac4a777136dcdfc5d7ab61ddc8d496b7452f69e2
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: cf7c79cb6cc76af88ce0293a013ba6edbf435d8c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061128"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245491"
 ---
-# <a name="list-all-remediation-activities"></a>Liste de toutes les activités de correction
+# <a name="list-all-remediation-activities"></a>Répertorier toutes les activités de correction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "52061128"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a>Description de l'API
+## <a name="api-description"></a>Description de l’API
 
 Retourne des informations sur toutes les activités de correction.
 
@@ -47,48 +47,57 @@ Retourne des informations sur toutes les activités de correction.
 
 **URL :** GET: /api/remediationTasks
 
-**Détails** des propriétés
+## <a name="permissions"></a>Autorisations
+
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
+
+Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
+:---|:---|:---
+Application | RemediationTask.Read.All | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire) | RemediationTask.Read.Read | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+
+## <a name="properties"></a>Propriétés
 
 Propriété (id) | Type de données | Description | Exemple de valeur renvoyée
 :---|:---|:---|:---
-category | String | Catégorie de l'activité de correction (configuration logicielle/sécurité) | Logiciels
-completerEmail | String | Si l'activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique | null
-completerId | String | Si l'activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d'objet | null
+category | String | Catégorie de l’activité de correction (configuration logicielle/sécurité) | Logiciels
+completerEmail | String | Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son courrier électronique | null
+completerId | String | Si l’activité de correction a été effectuée manuellement par une personne, cette colonne contient son ID d’objet | null
 completionMethod | String | Une activité de correction peut être effectuée « automatiquement » (si tous les appareils sont corrigés) ou « manuellement » par une personne qui sélectionne « marquer comme terminé » | Automatique
 createdOn | Date/heure | Heure de création de cette activité de correction | 2021-01-12T18:54:11.5499478Z
-description | String | Description de cette activité de correction | Mettez à jour Chrome vers une version ultérieure pour atténuer les vulnérabilités connues 1248 affectant vos appareils.
+description | String | Description de cette activité de correction | Mettez à jour Microsoft Silverlight vers une version ultérieure pour atténuer les vulnérabilités connues affectant vos appareils.
 dueOn | Date/heure | Date d’échéance définie par le créateur pour cette activité de correction | 2021-01-13T00:00:00Z
 fixedDevices | . | Nombre d’appareils qui ont été corrigés | 2
 id | String | ID de cette activité de correction | 097d9735-5479-4899-b1b7-77398899df92
-nameId | String | Nom du produit associé | chrome
-priorité | String | Priorité définie par le créateur pour cette activité de correction (High\Medium\Low) | Élevé
-productId | String | ID de produit associé | google-_-chrome
+nameId | String | Nom du produit associé | Microsoft Silverlight
+priorité | String | Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible) | Élevé
+productId | String | ID de produit associé | microsoft-_-silverlight
 productivityImpactRemediationType | String | Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ». | AllExposedAssets
 rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Servers », « Windows 10 » ]
 recommendedProgram | String | Programme recommandé pour la mise à niveau vers | null
 recommendedVendor | String | Fournisseur recommandé pour la mise à niveau vers | null
 recommendedVersion | String | Version recommandée pour la mise à jour/mise à niveau vers | null
-relatedComponent | String | Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité) | Google Chrome
+relatedComponent | String | Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité) | Microsoft Silverlight
 requesterEmail | String | Adresse de messagerie du créateur | globaladmin@UserName.contoso.com
-requesterId | String | ID d'objet Creator | r647211f-2e16-43f2-a480-16ar3a2a796r
+requesterId | String | ID d’objet Creator | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | String | Notes (texte libre) ajoutées par le créateur pour cette activité de correction | null
 scid | String | SCID de la recommandation de sécurité associée | null
-status | String | État de l'activité de correction (actif/terminé) | Actif
-statusLastModifiedOn | Date/heure | Date de mise à jour du champ d'état | 2021-01-12T18:54:11.5499487Z
-targetDevices | Entier long | Nombre d'appareils exposés pour qui cette correction s'applique | 43
-title | String | Titre de cette activité de correction | Mettre à jour Google Chrome
+status | String | État de l’activité de correction (actif/terminé) | Actif
+statusLastModifiedOn | Date/heure | Date de mise à jour du champ d’état | 2021-01-12T18:54:11.5499487Z
+targetDevices | Entier long | Nombre d’appareils exposés pour qui cette correction s’applique | 43
+title | String | Titre de cette activité de correction | Mettre à jour Microsoft Silverlight
 type | String | Type de correction | Update
-vendorId | String | Nom du fournisseur associé | google
+vendorId | String | Nom du fournisseur associé | Microsoft
 
 ## <a name="example"></a>Exemple
 
-**Exemple de** requête
+### <a name="request-example"></a>Exemple de requête
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 ```
 
-**Exemple de** réponse
+### <a name="response-example"></a>Exemple de réponse
 
 ```json
 {
@@ -135,10 +144,10 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 
 - [Méthodes et propriétés de correction](get-remediation-methods-properties.md)
 
-- [Obtenir une activité de correction par ID](get-remediation-one-activity.md)
+- [Obtenir une activité de correction par son ID](get-remediation-one-activity.md)
 
-- [Liste des appareils exposés d'une activité de correction](get-remediation-exposed-devices-activities.md)
+- [Répertorier les appareils exposés d’une activité de correction](get-remediation-exposed-devices-activities.md)
 
-- [Gestion des menaces basée sur & les vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

@@ -18,14 +18,14 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher et configurer les paramètres globaux (la liste « Bloquer les URL suivantes » et la protection pour les applications Office 365) pour les liens sécurisés dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 390177a24648cf860a78ab831d5dfe334b2c9590
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 11544953bf348c47e697b3210da709cccdb31a7e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203935"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245839"
 ---
-# <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurer les paramètres globaux pour les liens sécurisés dans Microsoft Defender pour Office 365
+# <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Configurer les paramètres globaux pour la stratégie de liens sécurisés dans Microsoft Defender Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,22 +34,22 @@ ms.locfileid: "51203935"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous êtes un utilisateur d’accueil à la recherche d’informations sur Les liens sécurisés dans Outlook, voir [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Cet article est destiné aux entreprises qui ont [Microsoft Defender pour Office 365](defender-for-office-365.md). Si vous êtes un utilisateur d’accueil à la recherche d’informations sur les liens sécurisés dans Outlook, voir [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-La fonctionnalité Liens sécurisés de Microsoft Defender pour [Office 365](defender-for-office-365.md) permet d’analyser les URL des messages électroniques entrants dans le flux de messagerie, ainsi que l’heure de vérification des URL et des liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, [voir Liens sécurisés dans Microsoft Defender pour Office 365.](safe-links.md)
+La fonctionnalité Liens sécurisés de [Microsoft Defender](defender-for-office-365.md) pour Office 365 permet d’analyser les URL des messages électroniques entrants dans le flux de messagerie et de vérifier en un clic les URL et les liens dans les messages électroniques et à d’autres emplacements. Pour plus d’informations, [voir Liens sécurisés dans Microsoft Defender pour Office 365](safe-links.md).
 
-Vous configurez la plupart des paramètres de liens sécurisés dans les stratégies de liens sécurisés. Pour obtenir des instructions, voir Configurer des stratégies de liens [sécurisés dans Microsoft Defender pour Office 365.](set-up-safe-links-policies.md)
+Vous configurez la plupart des paramètres de liens sécurisés dans les stratégies de liens sécurisés. Pour obtenir des instructions, voir [Configurer des stratégies de liens](set-up-safe-links-policies.md)sécurisés dans Microsoft Defender Office 365 .
 
-Toutefois, la stratégie de liens sécurisés utilise également des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies de liens sécurisés actives. La zone de paramètres globaux ci-après :
+Toutefois, la stratégie de liens sécurisés utilise également les paramètres globaux suivants que vous configurez en dehors des stratégies de liens sécurisés elles-mêmes :
 
-- La **liste Bloquer les URL suivantes.** Pour plus d’informations, consultez la liste [« Bloquer les URL suivantes](safe-links.md#block-the-following-urls-list-for-safe-links) » pour les liens sécurisés
-- Protection des liens sécurisés pour les applications Office 365. Pour plus d’informations, voir Paramètres de liens [sécurisés pour les applications Office 365.](safe-links.md#safe-links-settings-for-office-365-apps)
+- La **liste Bloquer les URL suivantes.** Ce paramètre s’applique à tous les utilisateurs inclus dans les stratégies de liens sécurisés actives. Pour plus d’informations, consultez la liste [« Bloquer les URL suivantes](safe-links.md#block-the-following-urls-list-for-safe-links) » pour les liens sécurisés
+- Protection des liens sécurisés pour Office 365 applications. Ces paramètres s’appliquent à tous les utilisateurs de l’organisation titulaires d’une licence Defender pour Office 365, que les utilisateurs soient inclus ou non dans les stratégies de liens sécurisés actives. Pour plus d’informations, voir paramètres de liens [sécurisés pour Office 365 applications.](safe-links.md#safe-links-settings-for-office-365-apps)
 
-Vous pouvez configurer les paramètres globaux de liens sécurisés dans le Centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online, mais avec des abonnements de modules supplémentaires Microsoft Defender pour Office 365).
+Vous pouvez configurer les paramètres globaux de liens sécurisés dans le Centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 éligibles avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online, mais avec Microsoft Defender pour les abonnements de modules supplémentaires Office 365).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu’il faut savoir avant de commencer
 
-- Les fonctionnalités fournies par les paramètres globaux de liens sécurisés s’appliquent uniquement aux utilisateurs inclus dans les stratégies de liens sécurisés actives. Il n’existe aucune stratégie de liens sécurisés intégrée ou par défaut. Vous devez donc créer au moins une stratégie de liens sécurisés pour que ces paramètres globaux soient actifs. Pour obtenir des instructions, voir Configurer des stratégies de liens [sécurisés dans Microsoft Defender pour Office 365.](set-up-safe-links-policies.md)
+- Il n’existe aucune stratégie de liens sécurisés intégrée ou par défaut. Vous devez donc créer au moins une stratégie de liens sécurisés pour que la liste Bloquer les URL **suivantes** soit active. Pour obtenir des instructions, voir [Configurer des stratégies de liens](set-up-safe-links-policies.md)sécurisés dans Microsoft Defender Office 365 .
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **Liens sécurisés,** utilisez <https://protection.office.com/safelinksv2> .
 
@@ -70,7 +70,7 @@ Vous pouvez configurer les paramètres globaux de liens sécurisés dans le Cent
 
 - Autorisez jusqu’à 30 minutes pour qu’une stratégie nouvelle ou mise à jour soit appliquée.
 
-- [De nouvelles fonctionnalités sont continuellement ajoutées à Microsoft Defender pour Office 365.](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365) À mesure que de nouvelles fonctionnalités sont ajoutées, vous devrez peut-être apporter des ajustements à vos stratégies de liens sécurisés existantes.
+- [De nouvelles fonctionnalités sont continuellement ajoutées à Microsoft Defender pour Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). À mesure que de nouvelles fonctionnalités sont ajoutées, vous devrez peut-être apporter des ajustements à vos stratégies de liens sécurisés existantes.
 
 ## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>Configurer la liste « Bloquer les URL suivantes » dans le Centre de sécurité & conformité
 
@@ -86,7 +86,7 @@ La **liste Bloquer les URL suivantes** identifie les liens qui doivent toujours 
 
 ### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>Configurer la liste « Bloquer les URL suivantes » dans PowerShell
 
-Pour plus d’informations sur la syntaxe d’entrée, voir syntaxe d’entrée pour la liste [« Bloquer les URL suivantes](safe-links.md#entry-syntax-for-the-block-the-following-urls-list)».
+Pour plus d’informations sur la syntaxe d’entrée, voir la syntaxe d’entrée pour la liste [« Bloquer les URL suivantes](safe-links.md#entry-syntax-for-the-block-the-following-urls-list)».
 
 Vous pouvez utiliser la cmdlet **Get-AtpPolicyForO365** pour afficher les entrées existantes dans la _propriété BlockURLs._
 
@@ -117,34 +117,34 @@ Vous pouvez utiliser la cmdlet **Get-AtpPolicyForO365** pour afficher les entré
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>Configurer la protection des liens sécurisés pour les applications Office 365 dans le Centre de sécurité & conformité
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>Configurer la protection des liens sécurisés pour Office 365 applications dans le Centre de sécurité & conformité
 
-La protection des liens sécurisés pour les applications Office 365 s’applique aux documents dans les applications office de bureau, mobiles et web pris en charge. Pour plus d’informations, voir Paramètres de liens [sécurisés pour les applications Office 365.](safe-links.md#safe-links-settings-for-office-365-apps)
+La protection des liens sécurisés Office 365 applications s’applique aux documents dans les applications Office bureau, mobiles et web pris en charge. Pour plus d’informations, voir paramètres de liens [sécurisés pour Office 365 applications.](safe-links.md#safe-links-settings-for-office-365-apps)
 
 1. Dans le Centre de sécurité &  conformité, cliquez sur Stratégie de gestion des menaces - Liens \>  \> sécurisés **ATP,** puis cliquez sur **Paramètres globaux.**
 
-2. Dans la **stratégie de liens sécurisés** de votre organisation qui s’affiche, configurez les paramètres suivants dans les **paramètres** qui s’appliquent au contenu à l’exception de la section courrier électronique :
+2. Dans la stratégie **de** liens sécurisés de votre organisation qui s’affiche, configurez les paramètres suivants dans la Paramètres qui s’appliquent au contenu à l’exception de la section **courrier** électronique :
 
-   - **Applications Office 365**: vérifiez que le basculement est à droite pour activer les liens sécurisés pour les applications Office 365 pris en charge : ![ activer/ ](../../media/scc-toggle-on.png) activer.
+   - **Office 365 applications**: vérifiez que le basculement se trouve à droite pour activer les liens sécurisés pour les applications Office 365 pris en charge : ![ activer/ ](../../media/scc-toggle-on.png) activer.
 
-   - **Ne** suivez pas le moment où les utilisateurs cliquent sur Liens sécurisés : déplacez le bouton bascule vers la gauche pour suivre les clics des utilisateurs liés aux URL bloquées dans les applications Office 365 pris en charge : basculez vers ![ la ](../../media/scc-toggle-off.png) gauche.
+   - **Ne suivez** pas le moment où les utilisateurs cliquent sur Liens sécurisés : déplacez le bouton bascule vers la gauche pour suivre les clics des utilisateurs liés aux URL bloquées dans les applications Office 365 pris en charge : ![ basculez vers la ](../../media/scc-toggle-off.png) gauche.
 
    - Ne laissez pas les utilisateurs cliquer sur liens sécurisés vers **l’URL** d’origine : vérifiez que le bouton bascule est à droite pour empêcher les utilisateurs de cliquer sur l’URL bloquée d’origine dans les applications Office 365 pris en charge : basculez sur ![ ](../../media/scc-toggle-on.png) .
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>Configurer la protection des liens sécurisés pour les applications Office 365 dans PowerShell
+### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>Configurer la protection des liens sécurisés pour Office 365 applications dans PowerShell
 
-Si vous préférez utiliser PowerShell pour configurer la protection contre les liens sécurisés pour les applications Office 365, utilisez la syntaxe suivante dans Exchange Online PowerShell ou Exchange Online Protection PowerShell :
+Si vous préférez utiliser PowerShell pour configurer la protection des liens sécurisés pour les applications Office 365, utilisez la syntaxe suivante dans Exchange Online PowerShell ou Exchange Online Protection PowerShell :
 
 ```powershell
 Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
 ```
 
-Cet exemple configure les paramètres suivants pour la protection des liens sécurisés dans les applications Office 365 :
+Cet exemple configure les paramètres suivants pour la protection des liens sécurisés dans Office 365 applications :
 
-- La fonction Liens sécurisés pour les applications Office 365 est activée (nous n’utilisons pas le paramètre _EnableSafeLinksForO365Clients_ et la valeur par défaut est $true).
-- Les clics des utilisateurs liés aux URL bloquées dans les applications Office 365 pris en charge sont suivis.
+- La fonction Liens sécurisés pour Office 365 applications est activée (nous n’utilisons pas le paramètre _EnableSafeLinksForO365Clients_ et la valeur par défaut est $true).
+- L’utilisateur clique sur les URL bloquées dans les Office 365 les applications sont suivis.
 - Les utilisateurs ne sont pas autorisés à accéder à l’URL bloquée d’origine dans les applications Office 365 pris en charge (nous n’utilisons pas le paramètre _AllowClickThrough_ et la valeur par défaut est $false).
 
 ```powershell

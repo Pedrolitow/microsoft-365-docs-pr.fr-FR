@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: La gestion des enregistrements dans Microsoft 365 vous permet d’appliquer des planifications de rétention dans un plan de gestion de fichiers afin de gérer la rétention, la déclaration d’enregistrements et la destruction de ceux-ci.
-ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051686"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245431"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Découvrez la gestion des enregistrements dans Microsoft 365
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Les organisations de tous types ont besoin d’une solution de gestion des enregistrements pour gérer les documents réglementaires, juridiques et commerciaux critiques dans l'ensemble de leurs données d'entreprise. La gestion des enregistrements dans Microsoft 365 aide les organisations à gérer leurs obligations juridiques ainsi qu’à démontrer leur conformité avec les réglementations, et renforce leur efficacité grâce à la destruction régulière d’éléments dont la conservation n'est plus requise, qui n’ont plus de valeur ou qui ne sont plus nécessaires.
+Tous les types d’organisation nécessitent une solution de gestion des enregistrements pour gérer des enregistrements réglementaires, légaux, et hautement professionnels dans les données d’entreprise. La gestion des enregistrements dans Microsoft 365 permet à une organisation de gérer ses obligations légales, démontrer la conformité aux réglementations, et améliore l’efficacité avec une disposition régulière des éléments dont la rétention n’est plus nécessaire, qui n’ont plus de valeur, ou ne sont plus nécessaires pour des objectifs professionnels.
 
 Les fonctionnalités suivantes permettent la prise en charge votre solution de gestion des enregistrements dans Microsoft 365 :
 
@@ -48,7 +48,7 @@ Les fonctionnalités suivantes permettent la prise en charge votre solution de g
 
 - **Exporter des informations sur tous les éléments supprimés** avec l’[option exporter](disposition.md#filter-and-export-the-views).
 
-- **Définir des autorisations spécifiques** afin que les fonctions de gestionnaire d’enregistrements au sein de votre organisation [disposent du droit d’accès](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Définir des autorisations spécifiques** afin que les fonctions de gestionnaire d’enregistrements au sein de votre organisation [disposent du droit d’accès](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Grâce à ces capacités, vous pouvez intégrer les calendriers de rétention et les exigences de votre organisation dans une solution de gestion des documents qui gère la rétention, la déclaration et l'élimination des enregistrements, afin de prendre en charge le cycle de vie complet de votre contenu.
 
@@ -111,6 +111,4 @@ Lorsque vous appliquez une étiquette de rétention à un élément de liste qui
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Veuillez consulter la page [Prise en main de la gestion des enregistrements](get-started-with-records-management.md).
-
-Pour marquer du contenu en tant qu’enregistrement, consultez [Déclarer des enregistrements à l’aide d’étiquettes de rétention](declare-records.md).
+Veuillez consulter la page [Prise en main de la gestion des enregistrements](get-started-with-records-management.md). Cet article présente des informations sur les abonnements, les autorisations, et des liens vers des instructions de configuration de bout en bout pour des scénarios de gestion des enregistrements.

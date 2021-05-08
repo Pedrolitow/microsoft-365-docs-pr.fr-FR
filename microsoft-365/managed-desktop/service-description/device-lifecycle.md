@@ -1,28 +1,28 @@
 ---
-title: Cycle de vie du produit Bureau géré Microsoft
-description: Cet article répertorie les spécifications d’appareil utilisées dans bureau géré Microsoft.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+title: Bureau géré Microsoft vie du produit
+description: Cet article répertorie les spécifications d’appareil utilisées dans Bureau géré Microsoft.
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 75e6c2853a0ff41efdf7d5639f675927f3b95ea4
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: a8b8abc58b82d08d004d204396cfd8e381c6303a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841198"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245311"
 ---
-# <a name="microsoft-managed-desktop-product-lifecycle"></a>Cycle de vie du produit Bureau géré Microsoft
+# <a name="microsoft-managed-desktop-product-lifecycle"></a>Bureau géré Microsoft vie du produit
 
-Bureau géré Microsoft permet aux utilisateurs de s’assurer qu’ils utilisent toujours les appareils qui offrent les meilleures performances, fiabilité, conception et sécurité (telles que la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, Bureau géré Microsoft gère un petit catalogue d’appareils approuvés mis à jour [en continu.](device-list.md) 
+Bureau géré Microsoft permet aux utilisateurs de s’assurer qu’ils utilisent toujours les appareils qui offrent les meilleures performances, fiabilité, conception et sécurité (telles que la prise en charge de fonctionnalités telles que Windows Hello). Pour ce faire, Bureau géré Microsoft un petit catalogue d’appareils approuvés mis à jour en continu. Vous pouvez afficher les appareils approuvés en filtrant les Bureau géré Microsoft sur le site [Windows 10 Professionnel d’entreprise.](https://www.microsoft.com/windowsforbusiness/view-all-devices)
  
 Cet article détaille le cycle de vie des appareils à mesure qu’ils sont ajoutés et supprimés du catalogue approuvé. 
 
 > [!NOTE]
-> Dans cette rubrique, nous allons faire une distinction entre un « appareil » et un « produit ». Par « appareil », nous voulons dire un ordinateur spécifique. Par exemple, « Numéro de série 1234 », « Ordinateur portable de Bill », « VM XYZ partagé » font référence à des appareils spécifiques. Toutefois, un « produit » fait référence à une collection ou à une famille d’appareils. Par exemple, « Fabrikam Laptop », « Adatum ZX450 Laptop », etc. Ceci est important car les produits sont ajoutés à notre liste [ou](device-list.md)catalogue approuvé, et les appareils sont inscrits au Bureau géré Microsoft.
+> Dans cette rubrique, nous allons faire une distinction entre un « appareil » et un « produit ». Par « appareil », nous voulons dire un ordinateur spécifique. Par exemple, « Numéro de série 1234 », « Ordinateur portable de Bill », « VM XYZ partagé » font référence à des appareils spécifiques. Toutefois, un « produit » fait référence à une collection ou à une famille d’appareils. Par exemple, « Fabrikam Laptop », « Adatum ZX450 Laptop », etc. Ceci est important car les produits sont ajoutés à notre liste ou catalogue approuvé, et les appareils sont inscrits dans Bureau géré Microsoft.
 
 ## <a name="product-lifecycle"></a>Cycle de vie du produit
 
@@ -54,7 +54,7 @@ Ce tableau montre des exemples de dates pour les appareils *théoriques*:
 |ID d’appareil  |Date d’inscription  |Date de retrait  |
 |---------|---------|---------|
 |Ordinateur portable #123412     |  2/3/2018       |  2/3/2021       |
-|Ordinateur de #321513     | 6/2/2018        |  6/2/2021       |
+|Bureau #321513     | 6/2/2018        |  6/2/2021       |
 
 
 ## <a name="product-release-and-evaluation"></a>Version et évaluation du produit
@@ -63,7 +63,7 @@ Le cycle de vie du produit démarre lorsqu’un fabricant publie publiquement le
 
 ![Chronologie du cycle de vie affichant la publication et la période d’évaluation](../../media/non-dark3-edits.PNG)
 
-Au cours de cette étape, l’équipe d’ingénierie du bureau géré Microsoft fait son évaluation et sa certification d’un produit. L’équipe évalue des éléments tels que la fiabilité et les performances avec Windows, la conformité avec une ligne de base matérielle, l’opinion du marché et la préparation des stocks et des canaux, entre autres choses. Ce processus prend généralement environ six semaines.
+Au cours de cette étape, l’équipe Bureau géré Microsoft’ingénierie locale fait l’évaluation et la certification d’un produit. L’équipe évalue des éléments tels que la fiabilité et les performances avec Windows, la conformité avec une base de référence matérielle, l’opinion du marché et la préparation des stocks et des canaux, entre autres choses. Ce processus prend généralement environ six semaines.
   
 Bureau géré Microsoft évaluera uniquement les appareils pour certification au cours de leurs six premiers mois de disponibilité. Cette stratégie garantit que nous concentrons toujours nos efforts sur la dernière génération de matériel.
  
@@ -76,15 +76,15 @@ Cette période est au cœur de la disponibilité du produit :
 
 ![Chronologie du cycle de vie affichant la disponibilité principale](../../media/non-dark4-edits.PNG)
 
-Tout appareil inscrit au cours de cette période reçoit les trois ans complets de support de Bureau géré Microsoft (comme illustré par la chronologie bleue). Cette période dure jusqu’à une date de fin définie sur 24 mois à partir de la date de disponibilité générale.
+Tout appareil inscrit au cours de cette période reçoit les trois années complètes de prise en charge de Bureau géré Microsoft (comme illustré par la chronologie bleue). Cette période dure jusqu’à une date de fin définie sur 24 mois à partir de la date de disponibilité générale.
 
-Vous pouvez penser que cette période est effectivement « ouvrir l’inscription », donc pour optimiser la valeur de Bureau géré Microsoft, vous devez cibler vos modèles d’approvisionnement et les produits sélectionnés pour se trouver au cours de cette période. À titre d’exemple, vous devez éviter de mettre en place une période de déploiement de deux ans à l’aide d’un produit qui se trouve dans son dernier mois de disponibilité primaire . La plupart de ces appareils ne recevront pas les trois ans complets de gestion du Bureau géré Microsoft (voir la période de [grâce](#product-grace-period) pour plus d’informations).  
+Vous pouvez penser que cette période est effectivement « ouvrir l’inscription », donc pour optimiser la valeur de Bureau géré Microsoft, vous devez cibler vos modèles d’approvisionnement et les produits sélectionnés pour se trouver au cours de cette période. À titre d’exemple, vous devez éviter de mettre en place une période de déploiement de deux ans à l’aide d’un produit qui [](#product-grace-period) se trouve dans son dernier mois de disponibilité primaire . La plupart de ces appareils ne bénéficieront pas des trois ans complets de gestion de Bureau géré Microsoft (voir la période de grâce pour plus d’informations).  
 
 ## <a name="product-grace-period"></a>Période de grâce du produit
 
-La période de grâce du produit est une période de trois ans suivant la disponibilité principale. Cette phase vous permet d’inscrire des appareils issus d’une famille de produits pris en charge, tout en respectant les promesses de Bureau géré Microsoft concernant les performances du matériel et des appareils modernes. Cette phase est idéale pour les clients qui ont pris des décisions d’approvisionnement avant de connaître Le Bureau géré Microsoft. 
+La période de grâce du produit est une période de trois ans suivant la disponibilité principale. Cette phase vous permet d’inscrire des appareils issus d’une famille de produits pris en charge, tout en maintenant les promesses de Bureau géré Microsoft concernant les performances du matériel et des appareils modernes. Cette phase est idéale pour les clients qui ont pris des décisions d’approvisionnement avant de connaître Bureau géré Microsoft. 
 
-Si vous avez récemment acheté des appareils approuvés avant de vous inscrire au Bureau géré Microsoft, vous pouvez toujours les inscrire, mais vous ne recevrez pas trois ans de gestion complets. Au lieu de cela, ils ne seront pas conformes à la date de retrait, quel que soit le moment où ils ont été inscrits. En coulisses, bureau géré Microsoft traite ces appareils comme s’ils étaient inscrits le dernier jour de disponibilité principale. Dans cette illustration, vous pouvez voir ce scénario en notant que les appareils bleu et vert se terminent tous les deux le même jour, malgré leur différence d’inscription d’un an :
+Si vous avez récemment acheté des appareils approuvés avant de vous inscrire auprès de Bureau géré Microsoft, vous pouvez toujours les inscrire, mais vous ne recevrez pas trois ans de gestion complets. Au lieu de cela, ils ne seront pas conformes à la date de retrait, quel que soit le moment où ils ont été inscrits. En arrière-plan, Bureau géré Microsoft traitent ces appareils comme s’ils étaient inscrits le dernier jour de disponibilité principale. Dans cette illustration, vous pouvez voir ce scénario en notant que les appareils bleu et vert se terminent tous les deux le même jour, malgré leur différence d’inscription d’un an :
 
 
 ![Chronologie du cycle de vie affichant la période de grâce](../../media/non-dark2-edits.PNG)
@@ -102,13 +102,13 @@ Enfin, au cours de cette phase, l’appareil est supprimé de la liste des appar
 
 ## <a name="product-retirement"></a>Retrait du produit
 
-Le retrait du produit est la dernière phase du cycle de vie. Dans cette phase, aucun nouvel appareil de ce type de produit ne peut être inscrit au Bureau géré Microsoft et, par définition, tous les appareils existants sont désormais en dehors de leur période de trois ans autorisée. Pendant ce temps, Bureau géré Microsoft supprimera entièrement l’appareil de la liste publique. C’est également au cours de cette phase que, si vous n’avez pas encore obtenu de remplacements, vous commencez à voir les services diminués au fil du démarrage de la montée en puissance par le Bureau géré Microsoft sur les appareils qui ne sont pas conformes. 
+Le retrait du produit est la dernière phase du cycle de vie. Dans cette phase, aucun nouvel appareil de ce type de produit ne peut être inscrit dans Bureau géré Microsoft et, par définition, tous les appareils existants sont désormais en dehors de leur période de trois ans autorisée. Pendant ce temps, Bureau géré Microsoft supprimera entièrement l’appareil de la liste publique. C’est également au cours de cette phase que, si vous n’avez pas encore obtenu de remplacements, vous commencez à voir les services diminués à mesure que Bureau géré Microsoft commence à descendre en puissance sur les appareils qui ne sont pas conformes. 
 
 ## <a name="devices-that-are-out-of-compliance"></a>Appareils non conformes
 
-Un appareil n’est pas conforme lorsque sa fenêtre autorisée pour la gestion du Bureau géré Microsoft est écoulée. Cette situation se produit lorsque l’appareil a atteint trois ans de gestion ou lorsque ce type de produit est supprimé du catalogue d’appareils, selon ce qui se produit en premier. Vous devez toujours cibler vos cycles d’approvisionnement de sorte que de nouveaux appareils soient déployés avant que les appareils actuels ne soient hors conformité.
+Un appareil n’est pas conforme lorsque sa fenêtre d’Bureau géré Microsoft gestion est écoulée. Cette situation se produit lorsque l’appareil a atteint trois ans de gestion ou lorsque ce type de produit est supprimé du catalogue d’appareils, selon ce qui se produit en premier. Vous devez toujours cibler vos cycles d’approvisionnement afin que les nouveaux appareils soient déployés avant que les appareils actuels ne soient hors conformité.
 
-L’équipe Bureau géré Microsoft sait que les cycles d’approvisionnement sont longs et planifiés autour de budgets à long terme. Pour vous assurer que vous êtes toujours conscient de l’état de la population de votre appareil, nous fournissons un site web qui répertorie chaque appareil sous gestion, son âge et un état indiquant sa conformité. [](https://aka.ms/mmdportal) Le site web vous permet de toujours avoir les informations les plus récentes concernant l’âge de l’appareil et peut utiliser le rapport dans n’importe quel cycle de planification de l’approvisionnement. 
+L’Bureau géré Microsoft sait que les cycles d’approvisionnement sont longs et planifiés autour de budgets à long terme. Pour vous assurer que vous êtes toujours conscient de l’état de la population de votre appareil, nous fournissons un site web qui répertorie chaque appareil sous gestion, son âge et un état indiquant sa conformité. [](https://aka.ms/mmdportal) Le site web vous aide à toujours avoir les dernières informations concernant l’âge de l’appareil et peut utiliser le rapport dans n’importe quel cycle de planification de l’approvisionnement. 
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Degré de sécurisation Microsoft
-description: Décrit le niveau de sécurité Microsoft dans le Centre de sécurité Microsoft 365, comment améliorer votre posture de sécurité et ce à quoi les administrateurs de sécurité peuvent s’attendre.
+description: Décrit le niveau de sécurité Microsoft dans le centre Microsoft 365 sécurité, comment améliorer votre posture de sécurité et ce à quoi les administrateurs de sécurité peuvent s’attendre.
 keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570462"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245375"
 ---
 # <a name="microsoft-secure-score"></a>Niveau de sécurité Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Vous pouvez le trouver dans le Centre de sécurité https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'une organisation, un chiffre plus élevé indiquant que davantage de mesures d'amélioration ont été prises. Il se trouve dans le https://security.microsoft.com/securescore centre de [sécurité Microsoft 365.](overview-security-center.md)
 
-En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le Centre de sécurité Microsoft 365, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365.
+En suivant les recommandations du Niveau de sécurité, vous pouvez protéger votre organisation contre les menaces. À partir d’un tableau de bord centralisé dans le centre de sécurité Microsoft 365, les organisations peuvent surveiller et travailler sur la sécurité de leurs identités, applications et appareils Microsoft 365 de sécurité.
 
 Score sécurisé aide les organisations :  
 
@@ -44,9 +44,9 @@ Score sécurisé aide les organisations :
 
 Les organisations ont accès à des visualisations robustes de mesures et de tendances, à l’intégration avec d’autres produits Microsoft, à la comparaison des scores avec des organisations similaires, et bien plus encore. Le score peut également refléter le moment où des solutions tierces ont traité les actions recommandées.
 
-![Page d’accueil du score de sécurisation](../../media/secure-score/secure-score-homepage-new.png)
+![Page d’accueil du score de sécurisation](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>Mode de fonctionnement
+## <a name="how-it-works"></a>Fonctionnement
 
 Vous avez des points pour les actions suivantes :
 
@@ -84,11 +84,11 @@ Il existe actuellement des recommandations pour les produits suivants :
 - Cloud App Security
 - Microsoft Teams
 
-Des recommandations pour d’autres produits de sécurité seront bientôt ajoutées. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont une bonne base de référence. Vous pouvez également marquer les actions d’amélioration comme couvertes par un tiers ou d’autres mesures de prévention.
+Recommandations d’autres produits de sécurité seront bientôt disponible. Les recommandations ne couvrent pas toutes les surfaces d’attaque associées à chaque produit, mais elles sont une bonne base de référence. Vous pouvez également marquer les actions d’amélioration comme couvertes par un tiers ou d’autres mesures de prévention.
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
 
-Microsoft Secure Score a mis à jour les actions d’amélioration pour prendre en charge les paramètres de sécurité par défaut dans [Azure Active Directory,](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)ce qui facilite la protection de votre organisation avec des paramètres de sécurité pré-configurés pour les attaques courantes.
+Microsoft Secure Score a mis à jour les actions d’amélioration pour prendre en charge les paramètres de sécurité par défaut dans Azure Active Directory, ce qui facilite la protection de votre organisation avec des paramètres de sécurité pré-configurés pour les [attaques](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)courantes.
 
 Si vous allumez les paramètres de sécurité par défaut, des points complets vous seront attribués pour les actions d’amélioration suivantes :
 
@@ -101,7 +101,7 @@ Si vous allumez les paramètres de sécurité par défaut, des points complets v
 
 ## <a name="required-permissions"></a>Autorisations requises
 
-Pour avoir l’autorisation d’accéder à La Sécurisation Microsoft, vous devez avoir l’un des rôles suivants dans Azure Active Directory.
+Pour avoir l’autorisation d’accéder au Score de sécurité Microsoft, vous devez avoir l’un des rôles suivants dans Azure Active Directory.
 
 ### <a name="read-and-write-roles"></a>Lire et écrire des rôles
 

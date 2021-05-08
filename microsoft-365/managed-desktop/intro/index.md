@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445553"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245527"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
@@ -57,7 +57,7 @@ Les administrateurs informatiques bénéficient des fonctionnalités suivantes 
 ## <a name="device-management"></a>Gestion des appareils
 Bureau géré Microsoft prend en charge la gestion des appareils enregistrés et des logiciels Microsoft utilisés.
 
-- **Matériel :** au lieu de faire rechercher et tester les appareils (et leurs pilotes) par votre service informatique, des appareils spécifiques sont soigneusement testés par Bureau géré Microsoft, ce qui permet d'établir une [liste d'appareils](../service-description/device-list.md) organisée répondant aux exigences de performance à l'échelle de l'entreprise et garantissant leur fonctionnement avec le service. Vous pouvez soit vous procurer les appareils vous-même (ou travailler avec un partenaire), soit réutiliser les appareils que vous avez déjà, à condition qu'ils figurent sur la liste approuvée. L'inscription des appareils est simple et facile, et avant leur déploiement, vous pouvez également [personnaliser](../working-with-managed-desktop/config-setting-overview.md) certains aspects de l'expérience des appareils pour vos utilisateurs.
+- **Matériel :** Nous avons dispensé votre service de la recherche de compatibilité des appareils au service en fournissant des conditions, des outils et des processus pour simplifier la sélection de sorte que vous pouvez choisir des appareils en toute confiance. Vous pouvez trouver les appareils recommandés en appliquant le filtre pour Microsoft Managed Desktop sur le site [Acheter des appareils Windows 10 Professionnel](https://www.microsoft.com/windowsforbusiness/view-all-devices). Vous pouvez soit vous procurer les appareils vous-même (ou travailler avec un partenaire), soit réutiliser les appareils que vous avez déjà, à condition qu'ils figurent sur la liste approuvée. L'inscription des appareils est simple et facile, et avant leur déploiement, vous pouvez également [personnaliser](../working-with-managed-desktop/config-setting-overview.md) certains aspects de l'expérience des appareils pour vos utilisateurs.
 
 - **Mises à jour :** Bureau géré Microsoft configure et gère tous les aspects des [groupes de déploiement](../service-description/updates.md) pour les mises à jour de qualité et de fonctionnalités de Windows 10, les pilotes, les micrologiciels, les définitions des anti-virus et les mises à jour de Microsoft 365 Apps for enterprise. Cela comprend des tests et des vérifications approfondies de toutes les mises à jour, afin de s'assurer que les appareils enregistrés sont toujours à jour et de minimiser les perturbations, libérant ainsi votre département informatique de cette tâche permanente.
 
@@ -66,7 +66,7 @@ Bureau géré Microsoft prend en charge la gestion des appareils enregistrés et
 
 ## <a name="device-monitoring"></a>Surveillance des appareils
 
-Nous vous aidons à maintenir la sécurité de vos appareils grâce à un centre d'opérations de sécurité dédié qui surveille vos appareils et utilise les données des menaces uniques que Microsoft analyse chaque mois. Ces fonctionnalités de sécurité sont intégrées au lieu d'être ajoutées ultérieurement.
+Nous vous aidons à maintenir la sécurité de vos appareils grâce à un centre d'opérations de sécurité dédié qui surveille vos appareils et utilise les données des menaces uniques que Microsoft analyse chaque mois. Au lieu d’être ajoutées ultérieurement, ces fonctionnalités de sécurité sont intégrées.
 
 Nous surveillons également l'intégrité des appareils et vous fournissons des informations sur leurs performances. Pour en savoir plus, consultez la rubrique [Opérations et analyse de Bureau géré Microsoft](../service-description/operations-and-monitoring.md).
 

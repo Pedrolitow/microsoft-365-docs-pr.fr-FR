@@ -1,5 +1,5 @@
 ---
-title: Renforcer la protection contre les menaces pour Microsoft 365 Business Premium
+title: Renforcer la protection contre les menaces pour les Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurer des fonctionnalités de conformité pour éviter la perte de données et sécuriser les informations sensibles de vos clients et de vos clients.
-ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579951"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245081"
 ---
 # <a name="set-up-compliance-features"></a>Configurer les fonctionnalités de conformité
 
-Votre Microsoft 365 Business Premium int mente des fonctionnalités pour protéger vos données et appareils, et vous aider à sécuriser vos informations sensibles et vos clients.
+Votre Microsoft 365 Business Premium comprend des fonctionnalités pour protéger vos données et appareils, et vous aider à sécuriser vos informations sensibles et vos clients.
 
 ## <a name="set-up-dlp-features"></a>Configurer les fonctionnalités DLP
 
@@ -41,7 +41,7 @@ DLP est livré avec de nombreux modèles de stratégie prêts à l’emploi pour
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurer la rétention du courrier électronique avec Archivage Exchange Online
 
- **Archivage Exchange Online** licences permettent de maintenir les normes réglementaires et de conformité en conservant le contenu du courrier électronique pour eDiscovery. Cela permet également de réduire les risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
+ **Archivage Exchange Online** de licence permettent de maintenir les normes réglementaires et de conformité en conservant le contenu des e-mails pour eDiscovery. Cela permet également de réduire les risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
   
 **Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en attente pour litige. 
     
@@ -49,7 +49,7 @@ Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’ad
     
 1. Dans le navigation gauche, allez à **Utilisateurs** \> **actifs.**
     
-2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres de messagerie,** puis en plus des **paramètres,** choisissez **Modifier les propriétés Exchange**.
+2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres** de messagerie, puis en plus des **paramètres,** choisissez **Modifier Exchange propriétés.**
     
 3. Dans la page de boîte aux lettres de l’utilisateur, choisissez ** fonctionnalités de boîte aux lettres ** dans le navigation gauche, puis choisissez le lien Activer sous Attente pour **litige.** 
     
@@ -61,7 +61,7 @@ Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’ad
 
 Les étiquettes de niveau de sensibilité sont disponibles avec Azure Information Protection (AIP) Plan 1 et vous aident à classer et éventuellement protéger vos documents et e-mails en appliquant des étiquettes. Les étiquettes peuvent être appliquées automatiquement par les administrateurs qui définissent des règles et des conditions, manuellement par les utilisateurs ou à l’aide d’une combinaison dans laquelle des recommandations sont données aux utilisateurs.
 
-Pour configurer les étiquettes de niveau de sensibilité, affichez la vidéo créer et gérer [les étiquettes de](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) sensibilité.
+Pour configurer les étiquettes de niveau de sensibilité, affichez la vidéo créer et gérer [les étiquettes de](../business-video/create-sensitivity-labels.md) sensibilité.
 
 
 

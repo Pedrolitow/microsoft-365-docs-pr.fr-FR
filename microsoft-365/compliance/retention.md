@@ -19,19 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860953"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245587"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Si vous voyez des messages concernant les stratégies de rétention dans vos applications, contactez votre service informatique pour obtenir des informations sur leur configuration. Si ces messages sont pour les messages de conversation ou de canal Teams, consultez [Teams sur les stratégies de rétention](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> Si vous voyez des messages concernant des stratégies de rétention dans Teams ou avez des questions relatives aux étiquettes de rétention, contactez votre service informatique pour obtenir des informations sur leur configuration. En attendant, ces articles peuvent vous être utiles :
+> -  [Messages et stratégies de rétention Teams](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [Appliquer des étiquettes de rétention aux fichiers dans SharePoint ou OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > Les informations sur cette page sont pour les administrateurs informatiques qui peuvent créer des stratégies de rétention et des étiquettes de rétention pour des raisons de conformité.
 
@@ -470,8 +472,4 @@ Si vous avez configuré des sites SharePoint pour des stratégies de type de con
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 
-Si vous êtes prêt à créer des stratégies de rétention, voir [Créer et configurer des stratégies de rétention](create-retention-policies.md).
-
-Pour créer et publier des étiquettes de rétention :
-- [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
-- [Appliquer automatiquement une étiquette de rétention au contenu](apply-retention-labels-automatically.md)
+Consultez [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md). Cet article présente des informations sur les abonnements, les autorisations, et des liens vers des instructions de configuration de bout en bout pour des scénarios de rétention.
