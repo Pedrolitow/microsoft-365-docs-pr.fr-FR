@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur Linux
+title: Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 description: Résolution des problèmes de performances dans Microsoft Defender pour point de terminaison sur Linux.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, performances
 search.product: eADQiWindows 10XVcnh
@@ -18,35 +18,35 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 998d8c500613ffa9fc6d790535e555ff9503f590
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933216"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281016"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur Linux
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes de performances pour Microsoft Defender pour point de terminaison sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article fournit quelques étapes générales qui peuvent être utilisées pour affiner les problèmes de performances liés à Defender pour Endpoint sur Linux.
 
-La protection en temps réel (RTP) est une fonctionnalité de Defender for Endpoint sur Linux qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus, ainsi que d'autres heuristiques.
+La protection en temps réel (RTP) est une fonctionnalité de Defender for Endpoint sur Linux qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus et d’autres heuristiques.
 
-Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez obtenir des performances sous-optimales lors de l'exécution de Defender pour Endpoint sur Linux. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources sur un court laps de temps peuvent entraîner des problèmes de performances dans Defender pour Endpoint sur Linux.
+Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez obtenir des performances sous-optimales lors de l’exécution de Defender pour Endpoint sur Linux. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources sur un court laps de temps peuvent entraîner des problèmes de performances dans Defender pour Endpoint sur Linux.
 
-Avant de commencer, assurez-vous que les autres produits de sécurité ne sont pas en cours **d'exécution sur l'appareil.** Plusieurs produits de sécurité peuvent être en conflit et avoir un impact sur les performances de l'hôte.
+Avant de commencer, assurez-vous que les autres produits de sécurité ne sont pas en cours **d’exécution sur l’appareil.** Plusieurs produits de sécurité peuvent être en conflit et avoir un impact sur les performances de l’hôte.
 
 Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces problèmes :
 
-1. Désactivez la protection en temps réel à l'aide de l'une des méthodes suivantes et observez si les performances s'améliorent. Cette approche permet de déterminer si Defender for Endpoint sur Linux contribue aux problèmes de performances.
+1. Désactivez la protection en temps réel à l’aide de l’une des méthodes suivantes et observez si les performances sont améliorées. Cette approche permet de déterminer si Defender for Endpoint sur Linux contribue aux problèmes de performances.
 
-    Si votre appareil n'est pas géré par votre organisation, la protection en temps réel peut être désactivée à partir de la ligne de commande :
+    Si votre appareil n’est pas géré par votre organisation, la protection en temps réel peut être désactivée à partir de la ligne de commande :
 
     ```bash
     mdatp config real-time-protection --value disabled
@@ -55,11 +55,11 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     Configuration property updated
     ```
 
-    Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l'aide des instructions de définir les préférences pour [Defender pour Endpoint sur Linux.](linux-preferences.md)
+    Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l’aide des instructions dans Définir les préférences pour [Defender pour Endpoint sur Linux.](linux-preferences.md)
 
-    Si le problème de performances persiste alors que la protection en temps réel est éteinte, l'origine du problème peut être le composant de détection et de réponse du point de terminaison. Dans ce cas, contactez le support technique pour obtenir des instructions supplémentaires et des mesures de prévention.
+    Si le problème de performances persiste alors que la protection en temps réel est éteinte, l’origine du problème peut être protection évolutive des points de terminaison composant. Dans ce cas, contactez le support technique pour obtenir des instructions supplémentaires et des mesures de prévention.
 
-2. Pour rechercher les applications qui déclenchent le plus d'analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Linux.
+2. Pour rechercher les applications qui déclenchent le plus d’analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Linux.
 
     > [!NOTE]
     > Cette fonctionnalité est disponible dans la version 100.90.70 ou une version plus récente.
@@ -69,13 +69,13 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     mdatp config real-time-protection-statistics --value enabled
     ```
 
-    Cette fonctionnalité nécessite une protection en temps réel pour être activée. Pour vérifier l'état de la protection en temps réel, exécutez la commande suivante :
+    Cette fonctionnalité nécessite une protection en temps réel pour être activée. Pour vérifier l’état de la protection en temps réel, exécutez la commande suivante :
 
     ```bash
     mdatp health --field real_time_protection_enabled
     ```
 
-    Vérifiez que `real_time_protection_enabled` l'entrée est `true` . Sinon, exécutez la commande suivante pour l'activer :
+    Vérifiez que `real_time_protection_enabled` l’entrée est `true` . Sinon, exécutez la commande suivante pour l’activer :
 
     ```bash
     mdatp config real-time-protection --value enabled
@@ -91,11 +91,11 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     ```
 
     > [!NOTE]
-    > L'utilisation (notez le tiret double) permet de s'assurer que le format de sortie ```--output json``` est prêt pour l'utilisation.
+    > L’utilisation (notez le tiret double) permet de s’assurer que le format de sortie ```--output json``` est prêt pour l’utilisation.
 
-    Le résultat de cette commande affiche tous les processus et l'activité d'analyse associée.
+    Le résultat de cette commande affiche tous les processus et l’activité d’analyse associée.
 
-3. Sur votre système Linux, téléchargez l'exemple d'analyseur Python **high_cpu_parser.py** à l'aide de la commande :
+3. Sur votre système Linux, téléchargez l’exemple d’analyseur Python **high_cpu_parser.py** à l’aide de la commande :
 
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
@@ -123,7 +123,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
     ```
 
-      La sortie de ce qui précède est une liste des principaux contributeurs aux problèmes de performances. La première colonne est l'identificateur de processus (PID), la deuxième colonne est le nom du processus te et la dernière colonne le nombre de fichiers analysés, triés par impact.
+      La sortie de ce qui précède est une liste des principaux contributeurs aux problèmes de performances. La première colonne est l’identificateur de processus (PID), la deuxième colonne est le nom du processus te et la dernière colonne le nombre de fichiers analysés, triés par impact.
     Par exemple, la sortie de la commande ressemblera à ce qui suit : 
 
     ```Output
@@ -140,11 +140,14 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
     125  CrashPlanService 164
     ```
 
-    Pour améliorer les performances de Defender pour Endpoint sur Linux, recherchez celui qui a le plus grand nombre sous la ligne et ajoutez une `Total files scanned` exclusion pour celui-ci. Pour plus d'informations, voir Configurer et valider des [exclusions pour Defender pour Endpoint sur Linux.](linux-exclusions.md)
+    Pour améliorer les performances de Defender pour Endpoint sur Linux, recherchez celui qui a le plus grand nombre sous la ligne et ajoutez une `Total files scanned` exclusion pour celui-ci. Pour plus d’informations, voir Configurer et valider des [exclusions pour Defender pour Endpoint sur Linux.](linux-exclusions.md)
 
     >[!NOTE]
-    > L'application stocke les statistiques en mémoire et suit uniquement l'activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.
+    > L’application stocke les statistiques en mémoire et suit uniquement l’activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.
 
 5. Configurez Microsoft Defender pour endpoint sur Linux avec des exclusions pour les processus ou les emplacements de disque qui contribuent aux problèmes de performances et activez à nouveau la protection en temps réel.
 
-    Pour plus d'informations, voir Configurer et valider des [exclusions pour Microsoft Defender pour Endpoint sur Linux.](linux-exclusions.md)
+    Pour plus d’informations, voir Configurer et valider des [exclusions pour Microsoft Defender pour Endpoint sur Linux.](linux-exclusions.md)
+
+## <a name="see-also"></a>Voir aussi
+- [Examiner les problèmes d’état de l’agent](health-status.md)

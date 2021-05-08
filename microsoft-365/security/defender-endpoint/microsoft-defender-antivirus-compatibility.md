@@ -16,12 +16,12 @@ ms.topic: article
 manager: dansimp
 ms.technology: mde
 ms.date: 05/06/2021
-ms.openlocfilehash: 866a36828c5c83d833d66bd7ed7d32b3499cbbdf
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 885844b46d603dc318dbaf877cd445b5caaa4e46
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275155"
+ms.locfileid: "52280980"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Antivirus Microsoft Defender compatibilité
 
@@ -80,7 +80,7 @@ Si vous utilisez Windows Server, version 1803 ou plus récente, ou Windows Serve
 - Valeur : `1`
 
 > [!NOTE]
-> Le mode passif n’est pas pris en charge Windows Server 2016. La `ForcePassiveMode` clé de Registre n’est pas applicable aux Windows Server 2016. 
+> Le mode passif n’est pas pris en charge Windows Server 2016. La clé de Registre peut être utilisée sur `ForcePassiveMode` Windows Server, version 1803 ou plus récente, ou Windows Server 2019, mais pas Windows Server 2016. 
 
 (<a id="fn2">2</a>) Sur Windows Server 2016, si vous utilisez un produit antivirus non Microsoft, vous ne pouvez pas exécuter Antivirus Microsoft Defender en mode passif ou actif. Dans ce cas, [désactivez/désinstallez](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) les Antivirus Microsoft Defender manuellement pour éviter les problèmes causés par l’installation de plusieurs produits antivirus sur un serveur.
 
@@ -89,7 +89,7 @@ Voir [Antivirus Microsoft Defender sur Windows Server pour](microsoft-defender-a
 > [!IMPORTANT]
 > Antivirus Microsoft Defender est disponible uniquement sur les appareils exécutant Windows 10, Windows Server 2016, Windows Server, version 1803 ou ultérieure et Windows Server 2019.
 >
-> Dans Windows 8.1 et Windows Server 2012, la protection antivirus de point de terminaison au niveau de l’entreprise est proposée sous [la](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10))System Center Endpoint Protection, qui est gérée via Microsoft Endpoint Configuration Manager.
+> Dans Windows 8.1 et Windows Server 2012, la protection antivirus de point de terminaison au niveau de l’entreprise est proposée sous [la](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10))System Center Endpoint Protection , qui est gérée via Microsoft Endpoint Configuration Manager.
 >
 > Windows Defender est également proposé pour les appareils grand public sur Windows 8.1 et [Windows Server 2012,](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender)bien qu’il ne fournisse pas de gestion au niveau de l’entreprise (ou une interface sur les installations Windows Server 2012 Server Core).
 

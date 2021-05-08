@@ -1,7 +1,7 @@
 ---
-title: Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
+title: Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 ms.reviewer: ''
-description: Décrit comment déployer Microsoft Defender pour endpoint sur Linux à l'aide d'Ansible.
+description: Décrit comment déployer Microsoft Defender pour endpoint sur Linux à l’aide d’Ansible.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ff9834e2853c1745c20847f869bc2cba4e082e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 9cd544ca3d714ea46c74e10f8aba5e46dc0e1b35
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114269"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280992"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "52114269"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cet article explique comment déployer Defender pour endpoint sur Linux à l'aide d'Ansible. Un déploiement réussi nécessite l'exécution de toutes les tâches suivantes :
+Cet article explique comment déployer Defender pour point de terminaison sur Linux à l’aide d’Ansible. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
-- [Télécharger le package d'intégration](#download-the-onboarding-package)
+- [Télécharger le package d’intégration](#download-the-onboarding-package)
 - [Créer des fichiers YAML ansibles](#create-ansible-yaml-files)
 - [Déploiement](#deployment)
 - [References](#references)
@@ -47,15 +47,15 @@ Cet article explique comment déployer Defender pour endpoint sur Linux à l'aid
 
 Avant de commencer, consultez la page principale de [Defender for Endpoint sur Linux](microsoft-defender-endpoint-linux.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-En outre, pour le déploiement Ansible, vous devez être familiarisé avec les tâches d'administration Ansible, configurer Ansible et savoir déployer des playbooks et des tâches. Ansible dispose de nombreuses façons d'effectuer la même tâche. Ces instructions supposent la disponibilité des modules Ansible pris en charge, tels que *apt* et *unarchive* pour vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d'informations, voir la [documentation Ansible.](https://docs.ansible.com/)
+En outre, pour le déploiement Ansible, vous devez être familiarisé avec les tâches d’administration Ansible, configurer Ansible et savoir déployer des playbooks et des tâches. Ansible dispose de nombreuses façons d’effectuer la même tâche. Ces instructions supposent la disponibilité des modules Ansible pris en charge, tels que *apt* et *unarchive* pour vous aider à déployer le package. Votre organisation peut utiliser un flux de travail différent. Pour plus d’informations, voir la [documentation Ansible.](https://docs.ansible.com/)
 
-- Ansible doit être installé sur au moins un ordinateur (Ansible l'appelle le nœud de contrôle).
-- SSH doit être configuré pour un compte d'administrateur entre le nœud de contrôle et tous les nœuds gérés (sur les appareils sur qui Defender for Endpoint sera installé), et il est recommandé de le configurer avec l'authentification à clé publique.
+- Ansible doit être installé sur au moins un ordinateur (Ansible l’appelle le nœud de contrôle).
+- SSH doit être configuré pour un compte d’administrateur entre le nœud de contrôle et tous les nœuds gérés (sur les appareils sur qui Defender for Endpoint sera installé), et il est recommandé de le configurer avec l’authentification à clé publique.
 - Les logiciels suivants doivent être installés sur tous les nodes gérés :
   - sous-président
   - python-apt
 
-- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou le fichier approprié :
+- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou dans le fichier approprié :
 
     ```bash
     [servers]
@@ -69,17 +69,17 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
     ansible -m ping all
     ```
 
-## <a name="download-the-onboarding-package"></a>Télécharger le package d'intégration
+## <a name="download-the-onboarding-package"></a>Télécharger le package d’intégration
 
-Téléchargez le package d'intégration à partir Centre de sécurité Microsoft Defender :
+Téléchargez le package d’intégration à partir Centre de sécurité Microsoft Defender :
 
 1. In Centre de sécurité Microsoft Defender, go to **Paramètres > Device Management > Onboarding**.
-2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d'exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
-3. Sélectionnez **Télécharger le package d'intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
+2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez Votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
+3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Centre de sécurité Microsoft Defender capture d'écran](images/atp-portal-onboarding-linux-2.png)
+    ![Centre de sécurité Microsoft Defender capture d’écran](images/atp-portal-onboarding-linux-2.png)
 
-4. À partir d'une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l'archive :
+4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l’archive :
 
     ```bash
     ls -l
@@ -100,7 +100,7 @@ Téléchargez le package d'intégration à partir Centre de sécurité Microsoft
 
 Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou une tâche.
 
-- Créez la tâche d'intégration : `onboarding_setup.yml`
+- Créez la tâche d’intégration : `onboarding_setup.yml`
 
     ```bash
     - name: Create MDATP directories
@@ -129,21 +129,21 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
 
 - Ajoutez le référentiel et la clé Defender for Endpoint.
 
-    Defender for Endpoint sur Linux peut être déployé à partir de l'un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
+    Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
     Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 
-    Afin d'afficher un aperçu des nouvelles fonctionnalités et de fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise pour utiliser les *insiders-fast* ou *insider-slow*.
+    Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des commentaires préliminaires, il est recommandé de configurer certains appareils dans votre entreprise pour utiliser les *insiders-fast* ou *insider-slow*.
 
     > [!WARNING]
-    > Le basculement du canal après l'installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
+    > Le basculement du canal après l’installation initiale nécessite la réinstallation du produit. Pour basculer le canal de produit : désinstallez le package existant, configurez de nouveau votre appareil pour utiliser le nouveau canal et suivez les étapes de ce document pour installer le package à partir du nouvel emplacement.
 
-    Notez votre distribution et version et identifiez l'entrée la plus proche sous `https://packages.microsoft.com/config/` .
+    Notez votre distribution et version et identifiez l’entrée la plus proche sous `https://packages.microsoft.com/config/` .
 
     Dans les commandes suivantes, *remplacez [distro]* et *[version]* par les informations que vous avez identifiées.
 
     > [!NOTE]
-    > Dans le cas d'Oracle Linux, *remplacez [distro]* par « rhel ».
+    > Dans le cas d’Oracle Linux, *remplacez [distro]* par « rhel ».
 
   ```bash
   - name: Add Microsoft APT key
@@ -177,7 +177,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
     when: ansible_os_family == "RedHat"
   ```
 
-- Créez les fichiers YAML d'installation et de désinstallation Ansible.
+- Créez les fichiers YaML d’installation et de désinstallation Ansible.
 
     - Pour les distributions basées sur apt, utilisez le fichier YAML suivant :
 
@@ -248,7 +248,7 @@ Exécutez maintenant les fichiers de tâches sous `/etc/ansible/playbooks/` ou d
     ```
 
 > [!IMPORTANT]
-> Lorsque le produit démarre pour la première fois, il télécharge les dernières définitions de logiciel anti-programme malveillant. Selon votre connexion Internet, cela peut prendre jusqu'à quelques minutes.
+> Lorsque le produit démarre pour la première fois, il télécharge les dernières définitions de logiciel anti-programme malveillant. Selon votre connexion Internet, cela peut prendre jusqu’à quelques minutes.
 
 - Validation/configuration :
 
@@ -265,13 +265,13 @@ Exécutez maintenant les fichiers de tâches sous `/etc/ansible/playbooks/` ou d
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a>Journal des problèmes d'installation
+## <a name="log-installation-issues"></a>Journaux des problèmes d’installation
 
-Pour [plus d'informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d'installation en cas d'erreur, voir problèmes d'installation des journaux.
+Pour [plus d’informations](linux-resources.md#log-installation-issues) sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir problèmes d’installation des journaux.
 
-## <a name="operating-system-upgrades"></a>Mises à niveau du système d'exploitation
+## <a name="operating-system-upgrades"></a>Mises à niveau du système d’exploitation
 
-Lors de la mise à niveau de votre système d'exploitation vers une nouvelle version majeure, vous devez d'abord désinstaller Defender pour Endpoint sur Linux, installer la mise à niveau, puis reconfigurer Defender pour Endpoint sur Linux sur votre appareil.
+Lors de la mise à niveau de votre système d’exploitation vers une nouvelle version majeure, vous devez d’abord désinstaller Defender pour Endpoint sur Linux, installer la mise à niveau, puis reconfigurer Defender pour Endpoint sur Linux sur votre appareil.
 
 ## <a name="references"></a>Références
 
@@ -282,3 +282,6 @@ Lors de la mise à niveau de votre système d'exploitation vers une nouvelle ver
 - [Ajouter et supprimer des référentiels APT](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
 - [Gérer les packages apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
+
+## <a name="see-also"></a>Voir aussi
+- [Examiner les problèmes d’état de l’agent](health-status.md)

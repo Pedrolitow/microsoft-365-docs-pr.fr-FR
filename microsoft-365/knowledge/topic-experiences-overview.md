@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Présentation de Rubriques Viva.
-ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275197"
+ms.locfileid: "52281028"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
-Rubriques Viva utilise la technologie d’IA Microsoft, Microsoft 365, Microsoft Graph, Recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent tous les jours, à partir des pages modernes de SharePoint et de Recherche Microsoft.
+Cette rubrique utilise la technologie Microsoft AI, les Microsoft 365, Microsoft Graph, la recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par les pages modernes SharePoint, Recherche Microsoft et Recherche dans Word et PowerPoint.
 
 </br>
 
@@ -42,6 +42,7 @@ Lorsqu’une rubrique est mentionnée dans du contenu sur des actualités et pag
 
    ![Points forts de la rubrique](../media/knowledge-management/saturn.png) 
 
+Lorsque vous utilisez la recherche dans Word ou PowerPoint, soit par  le biais de la zone de recherche, soit en sélectionnant Rechercher dans le menu contextatif, les résultats affichés peuvent également afficher le résumé de la rubrique.
 
    ![Capture d’écran montrant la recherche dans Word via la zone de recherche.](../media/knowledge-management/word-search-2.png)
 

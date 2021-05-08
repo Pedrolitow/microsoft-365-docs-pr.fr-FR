@@ -13,16 +13,16 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: dc9881bf869ce013a2ff913baa97f9b7d3de9bcc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4532afc40c2324b77725d9ddad158587083e6e9b
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245815"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280949"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Illustrations de documents sur le cloud Microsoft pour les architectes d’entreprise
 
-Ces affiches d’architecture cloud vous donnent des informations sur les services cloud de Microsoft, notamment Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365, ainsi que les solutions hybrides locales et cloud. 
+Ces affiches sur l’architecture cloud vous donnent des informations sur les services cloud de Microsoft, notamment Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 et les solutions hybrides locales et cloud. 
 
 Les décideurs informatiques et les architectes peuvent utiliser ces ressources pour déterminer les solutions idéales pour leurs charges de travail et prendre des décisions sur les composants d’infrastructure principaux tels que la mise en réseau, l’identité et la sécurité.
 
@@ -34,7 +34,16 @@ Découvrez tout ce que les architectes informatiques doivent savoir sur la conce
   
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Image miniature représentant le modèle d’identité cloud Microsoft](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [Affichage au format PDF](../downloads/MSFT_cloud_architecture_identity.pdf) \| [Téléchargement au format PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \| [Téléchargement en tant que Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>Mise à jour d’août 2020 | Ce modèle contient :  <ul> <li> Introduction aux identités avec le cloud de Microsoft </li><li> Fonctions IDaaS d’Azure AD </li><li> Intégration de comptes AD DS (Active Directory Domain Services) locaux à Azure AD </li><li> Mise en place de composants d’annuaire dans Azure IaaS </li><li> Options AD DS pour les charges de travail dans Azure IaaS </li></ul><br/>  <br/>|
+|[![Image miniature représentant le modèle d’identité cloud Microsoft](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [Affichage au format PDF](../downloads/MSFT_cloud_architecture_identity.pdf) \| [Téléchargement au format PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf) \| [Téléchargement en tant que Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.vsdx)   <br/>Mise à jour de septembre 2020 | Ce modèle contient :  <ul> <li> Introduction aux identités avec le cloud de Microsoft </li><li> Fonctions IDaaS d’Azure AD </li><li> Intégration de comptes AD DS (Active Directory Domain Services) locaux à Azure AD </li><li> Placer des composants d’annuaire dans Azure IaaS </li><li> Options AD DS pour les charges de travail dans Azure IaaS </li></ul><br/>  <br/>|
+
+<a name="security"></a>
+### <a name="microsoft-cloud-security-for-enterprise-architects"></a>La sécurité dans le cloud Microsoft pour les architectes d’entreprise
+
+Découvrez tout ce que les architectes informatiques doivent savoir sur la sécurité dans les plateformes et les services de cloud computing Microsoft.
+  
+|**Élément**|**Description**|
+|:-----|:-----|
+|[![Miniature du modèle de sécurité cloud Microsoft pour les architectes d’entreprise](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>Mise à jour d’avril 2021 | Ce modèle contient : <ul><li>Responsabilités de Microsoft et de sécurité client</li><li>Accès aux identités et appareils</li><li>Protection contre les menaces</li><li>Protection des informations </ul><br/>|
    
 <a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>La mise en réseau dans le cloud Microsoft pour les architectes d’entreprise
@@ -53,34 +62,17 @@ Tout ce que les architectes informatiques doivent savoir sur l’hybridation du 
 |**Élément**|**Description**|
 |:-----|:-----|
 |[![Image miniature représentant le modèle du cloud hybride Microsoft](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [Affichage au format PDF](../downloads/MSFT_cloud_architecture_hybrid.pdf) \| [Téléchargement au format PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) \| [Téléchargement en tant que Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx)     <br>Mise à jour d’août 2020 | Ce modèle contient : <ul><li> Offres du cloud Microsoft (SaaS, Azure PaaS et Azure IaaS) et leurs éléments communs </li><li> Architecture de Cloud hybride pour les offres Cloud de Microsoft </li><li> Scénarios de cloud hybride pour les services SaaS Microsoft (Office 365), Azure PaaS et Azure IaaS </li></ul><br/>|
-   
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Approches d’architecture pour les migrations client-client de Microsoft Cloud 
 Cette série de rubriques illustre plusieurs approches d’architecture pour les fusions, les acquisitions, les scissions et d’autres scénarios susceptibles de vous amener à migrer vers un nouveau client cloud. Ces rubriques fournissent des conseils de départ pour la planification des ressources d’entreprise. 
 
 |**Élément**|**Description**|
 |:-----|:-----|
-|[![Image miniature représentant le poster architecture logique Teams](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>Mise à jour : octobre 2020    |Ce modèle contient : <ul><li>Un mappage des scénarios d’entreprises aux approches de l’architecture</li><li>Considérations en matière de conception</li><li>Exemple de flux de migration d’événements unique</li><li>Exemple de flux de migration par phases</li><li>Exemple de déplacement de client ou de flux fractionnement</li></ul>|
-
-<a name="security"></a>
-### <a name="microsoft-cloud-security-for-enterprise-architects"></a>La sécurité dans le cloud Microsoft pour les architectes d’entreprise
-
->[!Note]
->Ce modèle est en cours de révision. Veuillez consulter cet article à l’avenir pour obtenir la version mise à jour.
->
-
-<!--
-
-What IT architects need to know about security in Microsoft cloud services and platforms.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Poster for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| <br/>Updated April 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
-
---> 
+|[![Image miniature pour les migrations client-client dans le cloud Microsoft](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>Mise à jour de février 2021    |Ce modèle contient : <ul><li>Un mappage des scénarios d’entreprises aux approches de l’architecture</li><li>Considérations en matière de conception</li><li>Exemple de flux de migration d’événements unique</li><li>Exemple de flux de migration par phases</li><li>Exemple de déplacement de client ou de flux fractionnement</li></ul>|
 
 <a name="attacks"></a>
-### Attaques courantes et fonctionnalités Microsoft qui protègent votre organisation Découvrez les cyberattaques les plus courantes et comment Microsoft peut aider votre organisation à chaque étape d’une attaque. 
+### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Attaques courantes et fonctionnalités Microsoft pour protéger votre organisation
+Découvrez les cyberattaques les plus courantes et comment Microsoft peut aider votre organisation à chaque étape d’une attaque. 
 
 |**Élément**|**Description**|
 |:-----|:-----|
