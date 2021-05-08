@@ -1,28 +1,31 @@
 ---
 title: Modifications de service et communication
-description: ''
+description: Comment les modifications apportées au service se produisent et sont communiquées
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 879e5dc96cf19c8070769b62f59cca0e409bf1df
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+manager: laurawi
+ms.topic: article
+audience: Admin
+ms.openlocfilehash: 20af244d14f8f29e0175fb5e8efdabff94ff9a2b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917757"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244103"
 ---
 # <a name="service-changes-and-communication"></a>Modifications de service et communication
 
-Parfois, Microsoft peut avoir besoin de modifier les détails sur le fonctionnement de Bureau géré Microsoft. De même, vous devrez peut-être apporter des modifications qui affecteraient également le service. Ces changements sont gérés différemment en fonction de leur importance. Cette rubrique définit les modifications que nous considérons comme majeures et explique comment les gérer par rapport à d’autres modifications.
+Parfois, Microsoft peut avoir besoin de modifier les détails de la façon dont Bureau géré Microsoft fonctionne. De même, vous devrez peut-être apporter des modifications qui affecteraient également le service. Ces changements sont gérés différemment en fonction de leur importance. Cette rubrique définit les modifications que nous considérons comme majeures et explique comment les gérer par rapport à d’autres modifications.
 
 
 
 ## <a name="changes-made-by-microsoft"></a>Modifications apportées par Microsoft
 
-Nous vous fournirons une notification au moins 30 jours à l’avance pour toute modification majeure nécessitant une action. Nous vous le faire savoir à l’aide du système de messagerie du portail d’administration du bureau géré Microsoft.
+Nous vous fournirons une notification au moins 30 jours à l’avance pour toute modification majeure nécessitant une action. Nous vous le faire savoir à l’aide Bureau géré Microsoft système de messagerie du portail d’administration.
 
 **Les principales modifications** sont celles qui peuvent avoir un impact sur l’un de ces domaines :
 - Modifications affectant la productivité quotidienne
@@ -40,19 +43,19 @@ Nous vous fournirons une notification au moins 30 jours à l’avance pour toute
 
 Nous apporterons régulièrement d’autres modifications au service pour améliorer l’expérience utilisateur, la sécurité, la fiabilité et la reporting. Voici quelques exemples de ces modifications :
 
-- Installation des mises à jour Windows et Office
+- Installation des mises à jour Windows et Office jour
 - Mises à jour de la ligne de base de sécurité appliquée aux appareils
-- [Supported devices](device-list.md)
+- Appareils pris en charge. Pour voir les appareils recommandés, filtrez les Bureau géré Microsoft sur le site [Windows 10 Professionnel’entreprise.](https://www.microsoft.com/windowsforbusiness/view-all-devices)
 
-Nous communiquerons ces modifications à l’aide de canaux établis. Si vous avez des questions sur les modifications, contactez l’équipe Microsoft Managed Desktop [Operations](../working-with-managed-desktop/admin-support.md). Les modifications apportées au service sont également documentées selon les besoins dans [l’historique des modifications.](../change-history-managed-desktop.md)
+Nous communiquerons ces modifications à l’aide de canaux établis. Si vous avez des questions sur les modifications, contactez l’équipe Bureau géré Microsoft [opérations.](../working-with-managed-desktop/admin-support.md) Les modifications apportées au service sont également documentées selon les besoins dans [l’historique des modifications.](../change-history-managed-desktop.md)
 
-Les modifications et les communications du Bureau géré Microsoft sont régies par deux stratégies Microsoft :
+Bureau géré Microsoft modifications et communications sont régies par deux stratégies Microsoft :
 - [Stratégie moderne de cycle de vie](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
-- [Microsoft 365 Change Communication Policy](/office365/admin/manage/message-center?view=o365-worldwide)
+- [Microsoft 365 Modifier la stratégie de communication](/office365/admin/manage/message-center)
 
 ## <a name="changes-you-make"></a>Modifications apportées
 
-Certaines modifications que vous pouvez apporter à votre environnement peuvent avoir un impact sur bureau géré Microsoft. Pour ces modifications majeures, nous vous demandons de nous envoyer une notification d’au moins 30 jours en envoyant une demande de service dans le portail d’administration du bureau géré Microsoft. Pour obtenir [des instructions, consultez](../working-with-managed-desktop/admin-support.md) la prise en charge par l’administrateur du Bureau géré Microsoft. Cela nous laisse suffisamment de temps pour planifier et préparer la modification afin d’éviter les perturbations.
+Certaines modifications que vous pouvez apporter à votre environnement peuvent avoir un impact sur Bureau géré Microsoft. Pour ces modifications majeures, nous vous demandons de nous envoyer une notification d’au moins 30 jours en envoyant une demande de service dans le portail Bureau géré Microsoft administrateur. Pour [plus d’Bureau géré Microsoft,](../working-with-managed-desktop/admin-support.md) consultez la prise en charge de l’administrateur. Cela nous laisse suffisamment de temps pour planifier et préparer la modification afin d’éviter les perturbations.
 
 Les principales modifications sont celles qui peuvent avoir un impact sur l’un de ces domaines :
 
@@ -62,7 +65,7 @@ Les principales modifications sont celles qui peuvent avoir un impact sur l’un
 - Certificats d’utilisateur ou d’appareil utilisés pour l’identité ou la sécurisation des services réseau
 - Systèmes de gestion qui interagissent avec le service
 - Systèmes de sécurité ou agents qui interagissent avec le service
-- Configuration de l’un des services cloud Microsoft 365 associés au service ou utilisés par celui-là
+- Configuration de l’un des services Microsoft 365 cloud associés au service ou utilisés par celui-là
 
 Ces modifications ne sont pas susceptibles d’être perturbantes, vous n’avez donc pas besoin de nous les faire savoir à l’avance :
 

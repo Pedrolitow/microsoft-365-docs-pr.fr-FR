@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 0410d4d09354ca716c83a63da9c1fdd22eda8551
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114112"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259498"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
@@ -102,7 +102,7 @@ Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déplo
     - Pour Windows 10 version 2004 : KB4568831, KB4577063
     - Pour les appareils exécutant Office 2016 (et non aucune autre version d’Office) : KB4577063 
 
-4. Tous les appareils doivent être [joints à Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join) ou jointure hybride Azure AD.
+4. Tous les appareils doivent être [jointure à Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join), jointure AD, jointure hybride Azure AD ou inscrits à AAD.
 
 5. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 

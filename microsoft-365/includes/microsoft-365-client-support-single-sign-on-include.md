@@ -29,6 +29,6 @@
 |TEAMS|✔|✔|Planifié|✔|S/O|
 |TO-DO|✔|✔|N/A|N/A|✔|
 |VISIO|S/O|✔|S/O|✔|S/O|
-|TABLEAU BLANC|S/O|✔|N/A|N/A|✔|
+|TABLEAU BLANC|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|S/O|Planifié|S/O|

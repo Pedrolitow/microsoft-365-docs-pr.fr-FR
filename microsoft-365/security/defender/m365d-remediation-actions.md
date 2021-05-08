@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245851"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269467"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Actions de correction dans Microsoft 365 Defender
 
@@ -36,8 +36,6 @@ ms.locfileid: "52245851"
 **S’applique à :**
 - Microsoft 365 Defender
 
-## <a name="remediation-actions"></a>Actions de correction
-
 Pendant et après un examen automatisé dans Microsoft 365 Defender, des actions de correction sont identifiées pour les éléments malveillants ou suspects. Certains types d’actions de correction sont prises sur les appareils, également appelés points de terminaison. D’autres mesures correctives sont prises sur le contenu du courrier électronique. Les enquêtes automatisées se terminent après que des mesures correctives ont été prises, approuvées ou rejetées.
 
 > [!IMPORTANT]
@@ -46,7 +44,7 @@ Pendant et après un examen automatisé dans Microsoft 365 Defender, des actions
 > - [Comment les menaces sont corrigés sur les appareils](../defender-endpoint/automated-investigations.md)
 > - [Menaces et actions de correction sur le contenu de collaboration & courrier électronique](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-Le tableau suivant récapitule les actions de correction actuellement prises en charge dans Microsoft 365 Defender : 
+Le tableau suivant récapitule les actions de correction actuellement prises en charge dans Microsoft 365 Defender. 
 
 |Actions de correction de l’appareil (point de terminaison)  |Actions de correction des e-mails  |
 |:---------|:---------|
@@ -60,7 +58,7 @@ Lorsqu’une enquête automatisée se termine, un verdict est atteint pour chaqu
 
 Le tableau suivant répertorie les verdicts et résultats possibles :
 
-| Verdict    | Domaine    | Résultats|
+| Verdict    | Entités affectées    | Résultats|
 |------|------|------|
 | Malveillant    | Appareils (points de terminaison)    | Des mesures correctives sont prises automatiquement [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) (en supposant que les groupes d’appareils de votre organisation sont entièrement corrects - corriger **les menaces automatiquement)**|
 | Malveillant    | Contenu de l’e-mail (URL ou pièces jointes) | Les actions de correction recommandées sont en attente d’approbation|
@@ -70,17 +68,17 @@ Le tableau suivant répertorie les verdicts et résultats possibles :
 
 ## <a name="remediation-actions-that-are-taken-manually"></a>Mesures correctives prises manuellement
 
-En plus des actions de correction qui suivent des enquêtes automatisées, votre équipe des opérations de sécurité peut prendre certaines mesures correctives manuellement. Il s’agit notamment des actions suivantes :
+En plus des actions de correction qui suivent des enquêtes automatisées, votre équipe des opérations de sécurité peut prendre certaines mesures correctives manuellement. Elles incluent notamment les éléments suivants :
 
-- Action manuelle de l’appareil, telle que l’isolation de l’appareil ou la mise en quarantaine du fichier.
-- Action de messagerie manuelle, telle que la suppression possible des messages électroniques. 
-- [Action de recherche](../defender-endpoint/advanced-hunting-overview.md) avancée sur les appareils ou les e-mails.
-- [Action de](../office-365-security/threat-explorer.md) l’Explorateur sur le contenu du courrier électronique, telle que le déplacement du courrier électronique vers le courrier indésirable, la suppression possible ou la suppression de courrier électronique.
-- Action [de réponse en](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) direct manuelle, telle que la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée.
-- Action de réponse en direct avec [les API microsoft Defender pour](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)les points de terminaison, telles que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier. 
+- Action manuelle de l’appareil, telle que l’isolation de l’appareil ou la mise en quarantaine des fichiers
+- Action de messagerie manuelle, telle que la suppression possible des messages électroniques 
+- [Action de recherche](../defender-endpoint/advanced-hunting-overview.md) avancée sur les appareils ou les e-mails
+- [Action de](../office-365-security/threat-explorer.md) l’Explorateur sur le contenu du courrier électronique, telle que le déplacement du courrier électronique vers le courrier indésirable, la suppression possible ou la suppression de courrier électronique
+- Action [de réponse en direct](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) manuelle, telle que la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée
+- Action de réponse en direct [avec les API microsoft Defender pour](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)les points de terminaison, telles que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Visiter le Centre de notifications](m365d-action-center.md)
-- [Afficher et gérer les actions de correction]( m365d-autoir-actions.md)
-- [Gérer les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse](m365d-autoir-report-false-positives-negatives.md)
+- [Afficher et gérer les actions de correction](m365d-autoir-actions.md)
+- [Corriger les faux positifs ou les faux négatifs](m365d-autoir-report-false-positives-negatives.md)

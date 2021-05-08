@@ -1,5 +1,5 @@
 ---
-title: Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer activité
+title: Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer activité de gestion
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,40 +14,39 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: Obtenez le Yammer d’activité et en savoir plus sur le nombre d’utilisateurs qui utilisent Yammer pour publier, aimer ou lire un message.
-ms.openlocfilehash: 636e5fae9a71fc819a032743e06127dace25f0a4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 49be460141c419355af1a42d1cc0f93275700f2d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579493"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244067"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Rapports Microsoft 365 dans le Centre d’administration - Rapport Yammer activité
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Rapports dans le Centre d’administration - Rapport Yammer activité de gestion
 
-En tant qu’administrateur Microsoft 365, le tableau de bord **Rapports** vous présente les données sur l’utilisation des produits au sein de votre organisation. Consultez les [rapports d’activité dans le Centre d’administration.](activity-reports.md) Le **rapport d'activité Yammer** vous permet de comprendre le niveau d'engagement de votre organisation avec Yammer en consultant le nombre d'utilisateurs utilisant Yammer pour publier, aimer ou lire un message, et le volume d'activité généré dans l'ensemble de l'organisation. 
+En tant Microsoft 365, le tableau de bord **Rapports** vous présente les données sur l’utilisation des produits au sein de votre organisation. Consultez les [rapports d’activité dans le Centre d’administration.](activity-reports.md) Le **rapport d'activité Yammer** vous permet de comprendre le niveau d'engagement de votre organisation avec Yammer en consultant le nombre d'utilisateurs utilisant Yammer pour publier, aimer ou lire un message, et le volume d'activité généré dans l'ensemble de l'organisation. 
   
 > [!NOTE]
-> Vous devez être un administrateur général, un lecteur global ou un lecteur de rapports dans Microsoft 365 ou un administrateur Exchange, SharePoint, Teams Service, Teams Communications ou Skype Entreprise pour voir les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
  
 ## <a name="how-do-i-get-to-the-yammer-activity-report"></a>Comment puis-je obtenir le rapport Yammer’activité de l’entreprise ?
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
-2. Dans la page d’accueil du tableau de bord, cliquez sur **le** bouton Afficher plus sur la Yammer tableau de bord.
+2. Dans la page d’accueil du tableau de bord, cliquez sur **le** bouton Afficher plus sur Yammer carte.
 
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpréter le rapport d'activité Yammer
 
-Vous pouvez afficher les activités dans le rapport Yammer en choisissant **l’onglet** Activité.<br/>![Rapports Microsoft 365 - Rapport d’Yammer microsoft.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
+Vous pouvez afficher les activités dans le rapport Yammer en choisissant **l’onglet** Activité.<br/>![Microsoft 365- Rapport d’activité Yammer Microsoft.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
 Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![Yammer d’activité de l’entreprise : choisir des colonnes](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
-Vous pouvez également exporter les données du rapport dans un fichier .csv Excel en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
 |Élément|Description|
 |:-----|:-----|
