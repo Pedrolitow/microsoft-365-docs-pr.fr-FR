@@ -25,27 +25,27 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Découvrez ce que Microsoft 365 Business Premium inclut et obtenez des instructions pas à pas pour vous inscrire à Microsoft 365 Business Premium.
-ms.openlocfilehash: d4aa1ae9ea48863434c960da69e41ffb2d3a0a89
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez ce Microsoft 365 Business Premium et obtenez des instructions pas à pas pour vous inscrire à Microsoft 365 Business Premium.
+ms.openlocfilehash: 18f4cea19225f053bef6ac8838275755b8a1f7ab
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578104"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244753"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>S’inscrire à Microsoft 365 Business Premium
 
-Pour découvrir ce que Microsoft 365 Business Premium inclut, regardez une [courte vidéo](../business-video/what-is-microsoft-365.md) et consultez la [vue d’ensemble.](microsoft-365-business-overview.md)
+Pour en savoir plus sur les Microsoft 365 Business Premium, regardez une [courte vidéo](../business-video/what-is-microsoft-365.md) et regardez la [vue d’ensemble.](microsoft-365-business-overview.md)
 
-Il existe trois façons d’obtenir Microsoft 365 Business Premium :
-- **Achetez Microsoft 365 Business Premium** et terminez votre propre configuration : Pour acheter Microsoft 365 Business Premium en ligne, suivez les étapes ci-dessous. [](#sign-up-steps)
-- **Pour les partenaires Microsoft**: si vous êtes un partenaire, voir [Obtenir Microsoft 365 Business Premium à partir de l’Partner Center Microsoft.](get-microsoft-365-business.md)
-- **Obtenir de l’aide dans un Microsoft Store**: rendez-vous sur un Microsoft [Store.](https://go.microsoft.com/fwlink/?linkid=2109652) Les magasins Microsoft peuvent vous aider à répondre à vos questions sur les plans, à acheter un plan adapté aux besoins de votre entreprise et à effectuer votre configuration.
+Il existe trois façons d’Microsoft 365 Business Premium :
+- **Achetez Microsoft 365 Business Premium et complétez votre** propre configuration : pour acheter Microsoft 365 Business Premium en ligne, [suivez les étapes ci-dessous.](#sign-up-steps)
+- **Pour les partenaires Microsoft**: si vous êtes un partenaire, consultez Obtenir des Microsoft 365 Business Premium à partir de [l’Microsoft Partner Center.](get-microsoft-365-business.md)
+- **Obtenir de l’aide dans un Microsoft Store**: rendez-vous sur un [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652). Les magasins Microsoft peuvent vous aider à répondre à vos questions sur les plans, à acheter un plan adapté aux besoins de votre entreprise et à effectuer votre configuration.
 
 **Vous avez besoin d’un autre modèle ?** Vous pouvez :
-- [Mettre à niveau votre plan Office 365 vers Microsoft 365 Business Premium.](migrate-to-microsoft-365-business.md)
-- [Obtenez un essai gratuit](https://go.microsoft.com/fwlink/p/?linkid=2102309) de Microsoft 365 Business Premium pour un mois.
-- [Inscrivez-vous à Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkID=510935) si vous avez besoin d’un plan avec moins de fonctionnalités. Découvrez ce que chaque plan d’entreprise inclut [dans products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397).
+- [Mettre à niveau Office 365 plan de Microsoft 365 Business Premium](migrate-to-microsoft-365-business.md).
+- [Obtenez une version d’Microsoft 365 Business Premium](https://go.microsoft.com/fwlink/p/?linkid=2102309) gratuite pendant un mois.
+- [Inscrivez-vous Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkID=510935) si vous avez besoin d’un plan avec moins de fonctionnalités. Découvrez ce que chaque plan d’entreprise inclut [dans products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397).
 - [Inscrivez-vous à un plan famille](https://go.microsoft.com/fwlink/?linkid=2109398) ou famille si vous n’achetez pas pour une entreprise. 
 
 ## <a name="sign-up-steps"></a>Étapes d’inscription
@@ -56,15 +56,15 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du processus d’
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, complétez les étapes suivantes :
+Pour vous inscrire et acheter des Microsoft 365 pour votre entreprise, complétez les étapes suivantes :
 
-1. Dans la [page Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2109654)pour les entreprises, sélectionnez Voir les plans & **tarifs.** 
-2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur ce qui est inclus dans Microsoft 365. Sous Microsoft 365 Business Premium, **sélectionnez Acheter maintenant.**
-3. Dans la page **Merci d’avoir choisi Microsoft 365 Business Premium,** entrez vos informations pour commencer.
+1. Dans la [page Microsoft 365 entreprise,](https://go.microsoft.com/fwlink/?linkid=2109654)sélectionnez Voir les plans & **tarifs.** 
+2. Sur la page suivante, découvrez le coût mensuel, puis faites défiler la page vers le bas pour en savoir plus sur les informations incluses dans Microsoft 365. Sous Microsoft 365 Business Premium, sélectionnez **Acheter maintenant.**
+3. Sur la page **Merci d’avoir choisi Microsoft 365 Business Premium,** entrez vos informations pour commencer.
 4. À **l’étape 1,** entrez une adresse de messagerie que vous utilisez déjà. Il peut s’tr de votre adresse e-mail de travail actuelle ou de toute adresse que Microsoft doit utiliser pour communiquer avec vous lors de l’installation. Il s’agit également de l’adresse à laquelle nous vous envoyons des informations sur votre facture et vos renouvellements. Sélectionnez ensuite, **Configurer le compte.**
 5. À **l’étape 2,** entrez votre nom, votre numéro de téléphone d’entreprise, le nom de la société et votre emplacement. Votre pays ou région détermine les services exacts que vous recevez de Microsoft et ne peut pas être modifié une fois cette étape terminée. Sélectionnez **Suivant**.
     > [!NOTE]
-    > Nous affichons le nom de votre société dans le Centre d’administration. C’est ici que vous gérez les utilisateurs, les licences et ainsi de suite Microsoft 365. Nous l’incluons également dans n’importe quelle URL de site interne (SharePoint).
+    > Nous affichons le nom de votre société dans le Centre d’administration. C’est ici que vous gérez Microsoft 365 utilisateurs, les licences, etc. Nous l’incluons également dans n’importe quelle URL de site interne (SharePoint).
 6. À **l’étape 3**:
 
     1. Prouvez que vous n’êtes pas un robot ! Sélectionnez **m’envoyer un** sms ou **m’appeler,** puis entrez un numéro dans lequel nous pouvons vous joindre. Sélectionnez **Code de vérification** d’envoi et vous recevrez un sms ou un appel immédiatement. Entrez votre code, puis sélectionnez **Vérifier.**
@@ -84,17 +84,17 @@ Pour vous inscrire et acheter Microsoft 365 pour votre entreprise, complétez le
     3. Sélectionnez **Suivant** pour créer votre ID d’utilisateur et votre adresse de messagerie professionnelle. Entrez le nom (également appelé alias) que vous souhaitez utiliser. Par exemple, Robert Young peut utiliser RobY ou RobYoung comme alias de travail. Ajoutez un mot de passe et **sélectionnez S’inscrire.** Notez votre mot de passe. Nous vous enverrons un e-mail à l’adresse que vous avez entrée à l’étape 1 pour vous rappeler votre ID d’utilisateur.
 7. À **l’étape 4**: 
 
-    1. Déterminez le nombre de personnes de votre entreprise qui  ont besoin d’une licence Microsoft 365, ou laissez le nombre d’utilisateurs sur 1 pour le moment et ajoutez d’autres personnes ultérieurement. 
+    1. Déterminez le nombre de personnes de votre entreprise qui  ont besoin d’une licence Microsoft 365 ou laissez le nombre d’utilisateurs sur 1 pour le moment et ajoutez d’autres personnes ultérieurement. 
     2. Sélectionnez facturation mensuelle ou annuelle, vérifiez le coût total, puis sélectionnez **Suivant**. 
     3. Ajoutez les détails de votre carte de crédit. Si l’adresse de votre entreprise ne correspond pas à votre adresse de carte de crédit, nous avons également besoin de l’adresse de votre société. L’adresse de votre entreprise détermine les taxes que vous payez et les services disponibles. Pour plus d’informations sur les taxes, voir [quelles taxes seront facturées ?](../commerce/billing-and-payments/tax-information.md)
     4. Select **Place order**. Microsoft met un peu de temps à terminer la configuration d’une nouvelle offre.
 
 ## <a name="whats-next"></a>Étape suivante
 
-Sélectionnez **Go to setup** to complete other steps such as adding more security to protect your business, and downloading Office apps like Word and Excel.
+Sélectionnez **Aller au programme d’installation** pour effectuer d’autres étapes telles que l’ajout d’une sécurité renforcée pour protéger votre entreprise et le téléchargement Office applications telles que Word et Excel.
 
 Pour obtenir de l’aide sur la configuration, voir [configurer.](set-up.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vidéos de formation Microsoft 365 Entreprise](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml)

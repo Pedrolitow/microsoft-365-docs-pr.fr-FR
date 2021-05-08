@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 840cb16360a793f351507122566931e648e04866
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c6f1e6617431d155cfd8282bcaaf3cfd4bc86dfd
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542775"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272995"
 ---
 # <a name="payment-information-for-russia"></a>Informations de paiement pour la Russie
 
@@ -33,5 +33,5 @@ Veuillez payer en RUB uniquement et référencer les numéro(s) de facture à vo
 **PRINCIPALE :** 7731420476  
 **KPP :** 773101001  
 **Numéro de compte :** 40702810000702700004  
-**Compte correspondant :** 301018103000000000202 dans la banque GTU OPERU Moskeck de Russie  
+**Compte correspondant :** 301018103000000000202 dans OPERU Moskkh GTU Bank of Russie  
 **Nom du compte :** Microsoft Payments Russie LLC

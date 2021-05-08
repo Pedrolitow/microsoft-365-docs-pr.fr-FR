@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le tableau de bord de classification des données vous permet de consulter les données sensibles qui ont été trouvées et classifiées au sein de votre organisation.
-ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899384"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244382"
 ---
 # <a name="learn-about-data-classification"></a>En savoir plus sur la classification des données
 
@@ -112,7 +112,7 @@ La carte étiquettes de rétention les plus utilisées vous indique le nombre d�
 ![capture d’écran de l’espace réservé pour les étiquettes de rétention les plus utilisées](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> Si cette carte affiche le message « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucune étiquette de rétention n’a été appliquée à votre contenu. Pour commencer à utiliser les étiquettes de rétention, voir :
+> Si cette carte affiche le message, « Aucune étiquette de rétention détectée », cela veut dire que vous n’avez pas créé ou publié d’étiquettes de rétention ou qu’aucun contenu n’a eu d’étiquette appliquée. Pour commencer à utiliser les étiquettes de confidentialité, consultez :
 >- [Prise en main des stratégies et des étiquettes de rétention](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Principales activités détectées
@@ -140,3 +140,5 @@ L’objectif de la création de rapports sur la classification des données est 
 - [En savoir plus sur les types d’informations confidentielles](sensitive-information-type-learn-about.md).
 - [Définitions d’entités des types d’informations sensibles](sensitive-information-type-entity-definitions.md)
 - [Découvrez les classificateurs de formation (préversion)](classifier-learn-about.md)
+
+Pour découvrir comment utiliser la classification des données afin de respecter les réglementations en matière de confidentialité des données, voir [Déployer la protection des informations pour les réglementations relatives à la confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).

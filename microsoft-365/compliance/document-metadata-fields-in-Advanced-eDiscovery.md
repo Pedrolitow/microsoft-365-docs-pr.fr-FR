@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents d’un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259462"
+ms.locfileid: "52244599"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -119,7 +119,7 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Date de fin de réunion|MeetingEndDate|Meeting_end_date|Date de fin de réunion pour les réunions.|
 |Date de début de la réunion|MeetingStartDate|Meeting_start_date|Date de début de réunion pour les réunions.|
 |Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : documents de contacts e-mail **<br /> <br /> <br /> <br /> <br /> externaldata <br /> faxes <br /> im <br /> journals <br /> meetings <br /> microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br /> notes posts <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
-|ID parent de pièce jointe moderne||ModernAttachment_ParentId|ID non permutable du parent du document.|
+|ModernAttachment_ParentId||ModernAttachment_ParentId||
 |Native Extension|NativeExtension|Native_extension|Extension native de l’élément.|
 |Nom de fichier natif|NativeFileName|Native_file_name|Nom de fichier natif de l’élément.|
 |NativeMD5||Native_MD5|Hachage MD5 (valeur de hachage 128 bits) du flux de fichier.|
@@ -164,7 +164,6 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Titre|Titre|Doc_title|Titre des métadonnées du document.|
 |À|À|Email_to|Champ pour les types de messages. Format : **DisplayName \<SmtpAddress>**|
 |Unique dans l’ensemble de courriers électroniques|UniqueInEmailSet||**False** s’il existe un doublon de la pièce jointe dans son ensemble de courriers électroniques.|
-|ID de groupe de version||Version_Group_Id|Rassemble les différentes versions du même document.|
 |A été corrigé|WasRemediated|Was_Remediated|**True** si l’élément a été corrigé, sinon **False**.|
 |Statistiques|WordCount|Word_count|Nombre de mots dans l’élément.|
 |||||

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble du partage de vos fichiers métiers.
-ms.openlocfilehash: a28830b9dc863c38ff45e2d6a140ab764ae66b06
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 408979728e4f834acb57f39a6eed3ac40057feba
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580521"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244907"
 ---
 # <a name="overview-of-sharing-business-files"></a>Vue d’ensemble du partage de fichiers métiers
 
@@ -47,28 +47,28 @@ En savoir plus sur le partage de [fichiers en dehors](securely-share-files-exter
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Partager et collaborer avec un client ou un partenaire commercial
 
-Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un lieu continu de partage et de collaboration. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires continuent de s’en sortir.
+Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un lieu continu pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires continuent de s’en sortir.
 
 1. Créez l’équipe.
-1. Chargez vos fichiers.
+1. Télécharger vos fichiers.
 1. Invitez vos partenaires ou fournisseurs à accéder à l’équipe en tant qu’utilisateurs « invités » pour leur donner accès.
 
-En savoir plus sur le partage [de fichiers en dehors](https://support.microsoft.com/office/7266f44e-3e06-4736-b9d3-0580c24bba34)de votre organisation avec des liens sécurisés.
+En savoir plus sur le partage [de fichiers en dehors de votre organisation avec un lien sécurisé.](securely-share-files-externally.md)
 
 ## <a name="share-inside-your-business"></a>Partager au sein de votre entreprise
 
 Si vous travaillez avec des fichiers que vous partagez au sein de votre entreprise, il est également bon de configurer une équipe dans Microsoft Teams. Partagez vos fichiers à cet endroit et tous les personnes de votre entreprise peuvent facilement les trouver et les modifier, et vous savez que vous travaillez tous sur la même page.
 
 1. Créez l’équipe et invitez votre équipe à l’y faire.
-1. Chargez vos fichiers.
+1. Télécharger vos fichiers.
 
-En savoir plus sur [le stockage de fichiers d’entreprise](https://support.microsoft.com/office/e4d98e10-3532-4eed-85d6-92728454e32b) et le stockage de fichiers des [employés.](https://support.microsoft.com/office/12dbe3e4-dbef-48f8-a90e-87f1bc607073)
+En savoir plus sur [le stockage de fichiers d’entreprise](files-to-sharepoint.md) et le stockage de fichiers des [employés.](files-to-onedrive.md)
 
 ## <a name="how-to-get-it-done"></a>Comment y arriver
 
 Vous avez besoin d’aide ? Découvrez comment :
 
-- [Envoyer et recevoir des pièces jointes](https://support.microsoft.com/en-us/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
-- [Partager des fichiers et des dossiers avec OneDrive](https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
-- [Créer une équipe à l’échelle de l’entreprise](https://support.microsoft.com/en-us/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Ajouter des invités à une équipe](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
+- [Envoyer et recevoir des pièces jointes](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
+- [Partager des fichiers et des dossiers avec OneDrive](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
+- [Créer une équipe à l’échelle de l’entreprise](org-wide-team.md)
+- [Ajouter des invités à une équipe](https://support.microsoft.com/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)

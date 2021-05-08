@@ -25,14 +25,17 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre facture Microsoft 365 pour les entreprises, et comment modifier le numéro de bon de commande.
-ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615374"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245015"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
+
+> [!IMPORTANT]
+> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne et aux États-Unis. Si vous êtes un client existant dans l’un de ces pays, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant et vous pouvez y ajouter de nouveaux abonnements, mais uniquement tant que le compte bancaire est en règle.
 
 Chaque mois ou année (selon l’option choisie lors de l’achat de votre abonnement), vous recevez un e-mail vous indiquant que votre nouvelle facture est disponible dans le centre d’administration. [Découvrez comment rechercher et afficher votre facture](view-your-bill-or-invoice.md).
   

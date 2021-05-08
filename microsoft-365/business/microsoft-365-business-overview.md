@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez Microsoft 365 Business Premium, un service d’abonnement qui inclut les applications de productivité Office et une protection avancée pour votre entreprise contre les menaces informatiques.
-ms.openlocfilehash: d6b0ded25e0478f85e73b807789463e4d55b1bb0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578344"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244853"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Vue d’ensemble de la sécurité de Microsoft 365 Business Premium
 
@@ -46,7 +46,7 @@ Regardez cette vidéo pour découvrir Microsoft 365 Business Premium dans les g
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml). 
 
 Microsoft 365 Business Premium est prévu pour un maximum de 300 licences. Si vous avez besoin de licences supplémentaires, consultez la documentation de [Microsoft 365 Entreprise](../enterprise/index.yml) pour obtenir plus d’informations.
 
@@ -75,7 +75,7 @@ Microsoft 365 Business Premium permet de vous **défendre contre les menaces**�
 
 - Effectuer une analyse avancée des pièces jointes dans un environnement bac à sable (sandbox) pour détecter les programmes malveillants récemment développés (pièces jointes sécurisées). 
 
-- Activation de stratégies anti-hameçonnage qui utilisent des modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour fournir une protection contre les attaques avancées (anti-hameçonnage dans Defender pour office 365 intelligence). 
+- Activation de stratégies anti-hameçonnage qui utilisent des modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour fournir une protection contre les attaques avancées (anti-hameçonnage dans Defender pour Office 365 intelligence). 
 
 - En configurant des stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou qui ignorent l’authentification multifacteur à partir d’emplacements approuvés, comme votre réseau Office (authentification multifacteur Azure, y compris les adresses IP approuvées et l’accès conditionnel). 
 
@@ -111,6 +111,6 @@ Pour découvrir la liste complète des fonctionnalités de sécurité, consultez
 
 - Si vous n’avez pas de partenaire et que vous voulez bénéficier de Microsoft 365 Business Premium, vous pouvez [l’acheter ici](https://www.microsoft.com/microsoft-365/business) et suivre les instructions d’[inscription](sign-up.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="related-content"></a>Contenu connexe
 
-[Vidéos de formation Microsoft 365 Business Premium](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Premium vidéos de formation](../business-video/index.yml) (page de liens)

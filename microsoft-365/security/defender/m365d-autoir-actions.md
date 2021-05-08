@@ -1,5 +1,5 @@
 ---
-title: Afficher et gérer les actions dans le centre de gestion des actions
+title: Afficher et gérer les actions dans le centre de gestion de l’action
 description: Utiliser le Centre de gestion des actions pour afficher et gérer les actions de correction
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245887"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274651"
 ---
-# <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion des actions
+# <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion de l’action
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,37 +36,38 @@ ms.locfileid: "52245887"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Les fonctionnalités de protection contre les menaces Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
-- [Les examens automatisés](m365d-autoir.md) peuvent entraîner des actions de correction prises automatiquement ou en attente d’approbation.
+Les fonctionnalités de protection contre les menaces de Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
+
+- [Les examens](m365d-autoir.md) automatisés peuvent entraîner des actions de correction qui sont prises automatiquement ou qui attendent votre approbation.
 - Un antivirus, un logiciel anti-programme malveillant et d’autres fonctionnalités de protection contre les menaces peuvent entraîner des actions de correction, telles que le blocage d’un fichier, d’une URL ou d’un processus, ou l’envoi d’un artefact en quarantaine.
 - Votre équipe en matière d’opérations de [](advanced-hunting-overview.md) sécurité peut prendre des mesures correctives manuellement, par exemple lors d’une recherche avancée ou lors de l’investigation d’alertes [ou d’incidents.](investigate-incidents.md) [](investigate-alerts.md)
 
 > [!NOTE]
-> Vous devez disposer des [autorisations appropriées](m365d-action-center.md#required-permissions-for-action-center-tasks) pour approuver ou rejeter les actions de correction. Pour plus d’informations, [voir Les conditions préalables à l’examen et](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)à la réponse automatisés dans Microsoft 365 Defender .
+> Vous devez disposer des [autorisations appropriées](m365d-action-center.md#required-permissions-for-action-center-tasks) pour approuver ou rejeter les actions de correction. Pour plus d’informations, consultez [les conditions préalables.](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 
 ## <a name="review-pending-actions-in-the-action-center"></a>Passer en revue les actions en attente dans le centre de actions
 
 Il est important d’approuver (ou de refuser) les actions en attente dès que possible de sorte que vos enquêtes automatisées puissent se poursuivre et se terminer dans un délai raisonnable. 
 
-![Approuver ou rejeter une action](../../media/air-actioncenter-itemselected.png)
-
 1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-3. Dans le centre de notifications, dans l’onglet **En attente**, sélectionnez un élément dans la liste. Son volet volant s’ouvre.
+3. Dans le centre de notifications, dans l’onglet **En attente**, sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
+
+   ![Approuver ou rejeter une action](../../media/air-actioncenter-itemselected.png)
 
 4. Examinez les informations dans le volet volant, puis prenez l’une des étapes suivantes :
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour aller [dans le recherche avancée](advanced-hunting-overview.md). 
+   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md). 
 
 ## <a name="undo-completed-actions"></a>Annuler les actions terminées
 
 Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, vous pouvez annuler les actions de correction qui ont été prises, que ces actions soient prises automatiquement ou manuellement. Dans le centre de actions, sous **l’onglet** Historique, vous pouvez annuler l’une des actions suivantes :  
 
-| Source de l’action | Actions prises en charge |
+| Source d’action | Actions prises en charge |
 |:---|:---|
 | - Examen automatisé <br/>- Antivirus Microsoft Defender <br/>- Actions de réponse manuelles | - Isoler l’appareil <br/>- Restreindre l’exécution du code <br/>- Mettre en quarantaine un fichier <br/>- Supprimer une clé de Registre <br/>- Arrêter un service <br/>- Désactiver un pilote <br/>- Supprimer une tâche programmée |
 
@@ -90,11 +91,11 @@ Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, 
 
 1. Go to the Action center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) and sign in.
 
-2. Sous **l’onglet** Historique, sélectionnez un fichier dont le fichier de mise en quarantaine du type d’action **est sélectionné.**
+2. Sous **l’onglet** Historique, sélectionnez un fichier dont le type de fichier de mise en **quarantaine** est action.
 
 3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Consulter les détails et les résultats d'un examen automatisé](m365d-autoir-results.md)
-- [Découvrez comment gérer les faux positifs/négatifs (si vous en obtenez un)](m365d-autoir-report-false-positives-negatives.md)
+- [Corriger les faux positifs ou les faux négatifs)](m365d-autoir-report-false-positives-negatives.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft permet aux organisations de simplifier et d’automatiser les évaluations des risques, et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570451"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244394"
 ---
 # <a name="microsoft-compliance-manager"></a>Gestionnaire de conformité Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "51570451"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Nouveautés : la version GA du Gestionnaire de conformité
 
-Le Gestionnaire de conformité est désormais généralement disponible en tant que solution de gestion de la conformité de bout en bout dans le Centre de conformité [Microsoft 365.](microsoft-365-compliance-center.md) Avec cette version, le Gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’confiance des services Microsoft. Le Gestionnaire de conformité est également disponible pour les clients de la communauté GCC (Us Government Community), GCC High et Department of Defense (DoD).
+Le Gestionnaire de conformité est désormais généralement disponible (GA) en tant que solution de gestion de la conformité de bout en bout dans le centre [Microsoft 365 conformité.](microsoft-365-compliance-center.md) Avec cette version, le Gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’confiance des services Microsoft. Le Gestionnaire de conformité est également disponible pour les clients modérés, Cloud de la communauté du secteur public et du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
 
 Ce qui a commencé par la prévisualisation publique du Score de conformité est devenu un outil centralisé avec des fonctionnalités de gestion de la conformité améliorées et une plus grande facilité d’utilisation.  La version GA apporte une collection plus importante d’évaluations pré-conçues pour vous aider à mettre à l’échelle vos activités de conformité.
 
@@ -45,7 +45,7 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 
 ## <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
-[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du Centre de conformité Microsoft [365](microsoft-365-compliance-center.md) qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire de vos risques de protection des données à la gestion des complexités de l’implémentation des contrôles, à la mise à jour des réglementations et des certifications et à la gestion des rapports aux auditeurs.
+[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du Centre [de](microsoft-365-compliance-center.md) conformité Microsoft 365 qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire de vos risques de protection des données à la gestion des complexités de l’implémentation des contrôles, à la mise à jour des réglementations et des certifications et à la gestion des rapports aux auditeurs.
 
 Le Gestionnaire de conformité simplifie la conformité et réduit les risques en fournissant :
 
@@ -65,7 +65,7 @@ Votre tableau de bord du Gestionnaire de conformité affiche votre score de conf
 
 Le Gestionnaire de conformité vous indique que vous avez terminé les actions d’amélioration prises pour se conformer à une réglementation, une norme ou une stratégie, et combine ces points dans un score de conformité global. Chaque action a un impact différent sur votre score en fonction des risques potentiels impliqués. Votre score de conformité peut vous aider à hiérarchiser l’action sur laquelle vous concentrer pour améliorer votre posture de conformité globale.
 
-Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base de protection des données Microsoft 365. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données.
+Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données.
 
 ##### <a name="learn-more"></a>En savoir plus
 
@@ -165,3 +165,5 @@ Le Gestionnaire de conformité est disponible dans les langues suivantes :
 Découvrez comment vous inscrire, attribuer des autorisations et des rôles, configurer des paramètres et personnaliser l’affichage de votre tableau de bord lors de la mise en place du [Gestionnaire de conformité.](compliance-manager-setup.md)
 
 Commencez ensuite à personnaliser le Gestionnaire de conformité pour vous aider à vous conformer aux normes industrielles les plus importantes pour votre organisation en [mettant en place des évaluations.](compliance-manager-assessments.md)
+
+Pour vous aider à vous conformer aux réglementations en matière de confidentialité des données, nous avons conçu un flux de travail qui vous guide tout au long d’un processus de bout en bout pour planifier et implémenter des fonctionnalités au sein de Microsoft 365, notamment à l’aide du Gestionnaire de conformité. Pour plus d’informations, consultez [Déployer la protection des informations pour la confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implémentez Microsoft Information Protection (MIP) pour vous permettre de protéger les informations sensibles où qu’elles se trouvent.
-ms.openlocfilehash: 36e8e917349edd5523677112818cd39514710583
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: f39890db2338d5811e15c81dfafef47c60b028c5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114360"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244331"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection dans Microsoft 365.
 
@@ -89,7 +89,7 @@ Pour éviter le partage excessif accidentel d’informations sensibles, utilisez
 
 De nombreuses organisations utilisent ces fonctionnalités de protection des informations pour se conformer aux réglementations relatives à la confidentialité des données. Pour vous aider, nous avons conçu un flux de travail qui vous guide dans un processus de bout en bout pour planifier et implémenter des fonctionnalités dans Microsoft 365, notamment l’accès sécurisé, la protection contre les menaces, la protection des informations et la gouvernance des données. Pour plus d’informations, consultez [Déployer la protection des informations pour la confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
-En outre, pour vous aider à planifier une stratégie intégrée pour l’implémentation des fonctionnalités de protection des informations, téléchargez l'ensemble d'illustrations sur les *Fonctionnalités de conformité et de protection des informations Microsoft 365*.  N’hésitez pas à les adapter à votre usage personnel.
+En outre, pour vous aider à planifier une stratégie intégrée pour l’implémentation des fonctionnalités de protection des informations, téléchargez l'ensemble des illustrations sur les *Fonctionnalités de conformité et de protection des informations Microsoft 365*.  N’hésitez pas à les adapter à votre usage personnel.
 
 | Élément | Description |
 |:-----|:------------|

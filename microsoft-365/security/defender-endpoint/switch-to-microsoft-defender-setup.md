@@ -1,7 +1,7 @@
 ---
 title: Basculer vers Microsoft Defender pour le point de terminaison - Installation
-description: Il s’agit de la phase 2, le programme d’installation, pour basculer vers Microsoft Defender pour le point de terminaison.
-keywords: migration, Microsoft Defender pour point de terminaison, edr
+description: Phase 2, le processus d’installation, lors du basculement vers Microsoft Defender pour point de terminaison.
+keywords: migration, Microsoft Defender pour point de terminaison, edr, Windows Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 03/03/2021
+ms.date: 05/06/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 21a3ee2f40667e31c6eb9b1cf80a30997f167b82
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7b8a34fe1c7e73c172db2a06c31e2a1d239be428
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245743"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274663"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 2 : Installation
 
@@ -40,18 +40,18 @@ ms.locfileid: "52245743"
 
 **Bienvenue dans la phase d’installation [du basculement vers Microsoft Defender pour le point de terminaison.](switch-to-microsoft-defender-migration.md#the-migration-process)** Cette phase comprend les étapes suivantes :
 1. [Activez Antivirus Microsoft Defender et confirmez qu’il est en mode passif.](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode)
-2. [Obtenir les mises à jour de Antivirus Microsoft Defender](#get-updates-for-microsoft-defender-antivirus).
+2. [Obtenir les mises à jour Antivirus Microsoft Defender](#get-updates-for-microsoft-defender-antivirus).
 3. [Ajoutez Microsoft Defender pour le point de terminaison à la liste d’exclusions de votre solution de point de terminaison existante.](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution)
-4. [Ajoutez votre solution existante à la liste d’exclusions pour Antivirus Microsoft Defender](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
+4. [Ajoutez votre solution existante à la liste d’exclusions Antivirus Microsoft Defender](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
 5. [Ajoutez votre solution existante à la liste d’exclusions de Microsoft Defender pour le point de terminaison.](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-for-endpoint)
 6. [Configurer vos groupes d’appareils, collections d’appareils et unités d’organisation.](#set-up-your-device-groups-device-collections-and-organizational-units)
 7. [Configurer des stratégies de logiciel anti-programme malveillant et une protection en temps réel.](#configure-antimalware-policies-and-real-time-protection)
 
 ## <a name="enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode"></a>Activer Antivirus Microsoft Defender et vérifier qu’il est en mode passif
 
-Sur certaines versions de Windows, telles que Windows Server, les Antivirus Microsoft Defender ont peut-être été désinstallées ou désactivées lors de l’installation de votre solution Mc Antivirus. En effet, Antivirus Microsoft Defender n’entre pas en mode passif ou désactivé lorsque vous installez un produit antivirus tiers, tel que Mc Antivirus. (Pour en savoir plus à ce sujet, [voir Antivirus Microsoft Defender compatibilité.)](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+Sur certaines versions de Windows, telles que Windows Server, Antivirus Microsoft Defender a peut-être été désinstallé ou désactivé lors de l’installation de votre solution Mc Antivirus. Lorsque vous êtes prêt à intégrer vos points de terminaison à Defender pour le point de terminaison, Antivirus Microsoft Defender n’entre pas en mode passif ou désactivé automatiquement. En outre, sur Windows Server, vous ne pouvez pas avoir de Antivirus Microsoft Defender en mode actif à côté d’une solution antivirus/anti-programme malveillant non Microsoft, telle que Mc Symantec, etc. Pour en savoir plus sur ce qui se passe avec Defender pour les solutions de point de terminaison et antivirus, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
-Cette étape du processus de migration comprend les tâches suivantes :
+Pour vous assurer que la Antivirus Microsoft Defender est activée et en mode passif, complétez les tâches suivantes décrites dans cet article :
 - [Définition de DisableAntiSpyware sur false sur Windows Server](#set-disableantispyware-to-false-on-windows-server)
 - [Réinstaller Antivirus Microsoft Defender sur Windows Server ;](#reinstall-microsoft-defender-antivirus-on-windows-server)
 - [Définition Antivirus Microsoft Defender mode passif sur Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
@@ -60,19 +60,19 @@ Cette étape du processus de migration comprend les tâches suivantes :
 
 ### <a name="set-disableantispyware-to-false-on-windows-server"></a>Définir DisableAntiSpyware sur false sur Windows Server
 
-La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) a été utilisée dans le passé pour désactiver Antivirus Microsoft Defender et déployer un autre produit antivirus, tel que Mc Antivirus. En règle générale, vous ne devez pas avoir cette clé de Registre sur vos Windows et points de terminaison ; toutefois, si vous avez configuré, voici comment définir sa valeur `DisableAntiSpyware` sur false :
+La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) a été utilisée dans le passé pour désactiver Antivirus Microsoft Defender et déployer un autre produit antivirus, tel que Mc Antivirus. En règle générale, vous ne devez pas avoir cette clé de Registre sur vos Windows et points de terminaison ; Toutefois, si vous avez configuré, voici comment définir sa valeur `DisableAntiSpyware` sur false :
 
 1. Sur votre Windows server, ouvrez l’Éditeur du Registre.
 
-1. Accédez à la page `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
+2. Accédez à la page `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-1. Dans ce dossier, recherchez une entrée DWORD appelée **DisableAntiSpyware**.
-   - Si vous ne voyez pas cette entrée, tout est prêt.
+3. Dans ce dossier, recherchez une entrée DWORD appelée **DisableAntiSpyware**.
+   - Si vous ne voyez pas cette entrée, vous êtes prêt.
    - Si vous voyez **DisableAntiSpyware,** procédez à l’étape 4.
 
-1. Cliquez avec le bouton droit sur la DWORD DisableAntiSpyware, puis choisissez **Modifier**.
+4. Cliquez avec le bouton droit sur la DWORD DisableAntiSpyware, puis choisissez **Modifier**.
 
-1. Définissez la valeur sur `0` . (Cela définit la valeur de la clé de Registre sur *false*.)
+5. Définissez la valeur sur `0` . (Cette action définit la valeur de la clé de Registre sur *false*.)
 
 > [!TIP]
 > Pour en savoir plus sur cette clé de Registre, voir [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
@@ -83,17 +83,18 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
 > La procédure suivante s’applique uniquement aux points de terminaison ou appareils qui exécutent les versions de Windows :
 > - Windows Server 2019
 > - Windows Serveur, version 1803 (mode principal uniquement)
-> - Windows Server 2016
+> - Windows Server 2016 (voir les informations importantes dans [l’Windows Server 2016 ?](#are-you-using-windows-server-2016))
 
 1. En tant qu’administrateur local sur le point de terminaison ou l’appareil, ouvrez Windows PowerShell.
+
 2. Exécutez les cmdlets PowerShell suivantes : <br/>   
-   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <br/><br/>
+   `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
     > [!NOTE]
     > Lorsque vous utilisez la commande DISM dans une séquence de tâches exécutant PS, le chemin d’accès cmd.exe est requis.
     > Exemple :<br/>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/><br/>
+    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
     > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. Pour vérifier Antivirus Microsoft Defender est en cours d’exécution, utilisez l’cmdlet PowerShell suivante : <br/>
@@ -101,14 +102,19 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
 
 #### <a name="are-you-using-windows-server-2016"></a>Utilisez-vous Windows Server 2016 ?
 
+Si vous avez des points de terminaison Windows Server 2016, vous ne pouvez pas exécuter Antivirus Microsoft Defender à côté d’une solution antivirus/anti-programme malveillant non-Microsoft. Antivirus Microsoft Defender ne peut pas s’exécuter en mode passif sur Windows Server 2016. Dans ce cas, vous devrez désinstaller la solution antivirus/anti-programme malveillant non Microsoft et installer/activer Antivirus Microsoft Defender à la place. Pour en savoir plus, [consultez la compatibilité des solutions antivirus avec Defender pour Endpoint.](microsoft-defender-antivirus-compatibility.md)
+
 Si vous utilisez Windows Server 2016 et que vous avez des difficultés à activer Antivirus Microsoft Defender, utilisez l’cmdlet PowerShell suivante :
 
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> Encore besoin d’aide ? Voir [Antivirus Microsoft Defender sur Windows Server.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
+> Encore besoin d’aide ? Voir [Antivirus Microsoft Defender sur Windows Server.](microsoft-defender-antivirus-on-windows-server.md)
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Définir Antivirus Microsoft Defender en mode passif sur Windows Server
+
+> [!IMPORTANT]
+> Vous pouvez Antivirus Microsoft Defender le mode passif sur Windows Server, version 1803 ou plus récente, ou Windows Server 2019. Toutefois, le mode passif n’est pas pris en charge Windows Server 2016. Pour en savoir plus, [consultez la compatibilité des solutions antivirus avec Microsoft Defender pour Endpoint.](defender-compatibility.md)
 
 Étant donné que votre organisation utilise toujours votre solution de protection de point de terminaison existante, vous devez Antivirus Microsoft Defender le mode passif. Ainsi, votre solution et votre Antivirus Microsoft Defender peuvent s’exécuter côte à côte jusqu’à ce que vous avez terminé l’intégration à Microsoft Defender pour endpoint.
 
@@ -125,7 +131,7 @@ Si vous utilisez Windows Server 2016 et que vous avez des difficultés à active
 >- [Outil d’objet de stratégie de groupe local](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
 >- [Un package dans Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
-### <a name="enable-microsoft-defender-antivirus-on-your-windows-client-devices"></a>Activer Antivirus Microsoft Defender sur vos appareils clients Windows client
+### <a name="enable-microsoft-defender-antivirus-on-your-windows-client-devices"></a>Activer Antivirus Microsoft Defender sur vos appareils Windows client
 
 Étant donné que votre organisation utilise une solution antivirus non Microsoft, Antivirus Microsoft Defender est probablement désactivée sur les appareils Windows de votre organisation. Cette étape du processus de migration implique l’activation Antivirus Microsoft Defender. 
 
@@ -133,9 +139,9 @@ Pour activer Antivirus Microsoft Defender, nous vous recommandons d’utiliser I
 
 |Méthode  |Procédure  |
 |---------|---------|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**REMARQUE**: Intune est désormais Microsoft Endpoint Manager. |1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and sign in.<br/><br/>2. Sélectionnez les  >  **profils de configuration des** appareils, puis sélectionnez le type de profil que vous souhaitez configurer. Si vous n’avez pas encore créé de type de profil de **restrictions** d’appareil, ou si vous souhaitez en créer un nouveau, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .<br/><br/>3. Sélectionnez **propriétés,** puis sélectionnez **Paramètres de configuration : Modifier**.<br/><br/>4. **Développez Antivirus Microsoft Defender**. <br/><br/>5. Activez **la protection cloud.**<br/><br/>6. Dans la demande **d’utilisateurs** avant la soumission d’exemples, sélectionnez Envoyer tous **les exemples automatiquement.**<br/><br/>7. Dans la dropdown **Détecter les applications potentiellement indésirables,** sélectionnez **Activer** ou **Auditer.**<br/><br/>8. Sélectionnez **Révision + Enregistrer,** puis sélectionnez **Enregistrer.**<br/>**CONSEIL**: pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, consultez les Microsoft Intune [profils d’appareil .](/intune/device-profiles)|
-|Panneau de Windows     |Suivez les instructions ci-après [: Antivirus Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows). <br/>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows.         |
-|[Gestion avancée des stratégies de groupe](/microsoft-desktop-optimization-pack/agpm/) <br/>ou<br/>[Console de gestion des stratégies de groupe ](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. Allez à `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` . <br/><br/>2. Recherchez une stratégie appelée **Désactiver Antivirus Microsoft Defender**.<br/><br/>3. Choisissez **Modifier le paramètre de stratégie** et assurez-vous que la stratégie est désactivée. Cela permet d’Antivirus Microsoft Defender. <br/><br/>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows.  |
+|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**REMARQUE**: Intune est désormais Microsoft Endpoint Manager. | 1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and sign in.<p> 2. Sélectionnez les  >  **profils de configuration des** appareils, puis sélectionnez le type de profil que vous souhaitez configurer. Si vous n’avez pas encore créé de type de profil de **restrictions** d’appareil, ou si vous souhaitez en créer un nouveau, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .<p> 3. Sélectionnez **propriétés,** puis sélectionnez **Paramètres de configuration : Modifier**.<p> 4. **Développez Antivirus Microsoft Defender**. <p> 5. Activez **la protection cloud.**<p> 6. Dans la demande **d’utilisateurs** avant la soumission d’exemples, sélectionnez Envoyer tous **les exemples automatiquement.**<p> 7. Dans la dropdown **Détecter les applications potentiellement indésirables,** **sélectionnez Activer** ou **Auditer.**<p> 8. **Sélectionnez Révision + Enregistrer,** puis sélectionnez **Enregistrer.**<p>**CONSEIL**: pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, voir [Microsoft Intune profils d’appareil .](/intune/device-profiles)|
+|Panneau de Windows     |Suivez les instructions ci-après [: Antivirus Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows). <p>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows.         |
+|[Gestion avancée des stratégies de groupe](/microsoft-desktop-optimization-pack/agpm/) <br/>ou<br/>[Console de gestion des stratégies de groupe ](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  | 1. Go to **Computer configuration**  >  **Administrative templates** Windows  >  **components**  >  **Antivirus Microsoft Defender**. <p> 2. Recherchez une stratégie appelée **Désactiver Antivirus Microsoft Defender**.<p> 3. Choisissez **Modifier le paramètre de stratégie** et assurez-vous que la stratégie est désactivée. Cette action active Antivirus Microsoft Defender. <p>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows.  |
 
 
 ### <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode"></a>Vérifier que Antivirus Microsoft Defender est en mode passif
@@ -144,8 +150,8 @@ Antivirus Microsoft Defender peut s’exécuter avec votre solution de protectio
 
 |Méthode  |Procédure  |
 |---------|---------|
-|Invite de commandes     |1. Sur un Windows, ouvrez l’invite de commandes en tant qu’administrateur. <br/><br/>2. `sc query windefend` Tapez, puis appuyez sur Entrée.<br/><br/>3. Examinez les résultats pour vérifier que Antivirus Microsoft Defender est en cours d’exécution en mode passif.         |
-|PowerShell     |1. Sur un appareil Windows, ouvrez Windows PowerShell en tant qu’administrateur.<br/><br/>2. Exécutez la cmdlet [Get-MpComputerStatus.](/powershell/module/defender/Get-MpComputerStatus) <br/><br/>3. Dans la liste des résultats, recherchez **AMRunningMode : Mode passif** ou **AMRunningMode : Mode passif SxS**.          |
+|Invite de commandes     | 1. Sur un Windows, ouvrez l’invite de commandes en tant qu’administrateur. <p> 2. `sc query windefend` Tapez, puis appuyez sur Entrée.<p> 3. Examinez les résultats pour vérifier que Antivirus Microsoft Defender est en cours d’exécution en mode passif.         |
+|PowerShell     | 1. Sur un appareil Windows, ouvrez Windows PowerShell en tant qu’administrateur.<p> 2. Exécutez la cmdlet [Get-MpComputerStatus.](/powershell/module/defender/Get-MpComputerStatus) <p> 3. Dans la liste des résultats, recherchez **AMRunningMode : Mode passif** ou **AMRunningMode : Mode passif SxS**.          |
 
 > [!NOTE]
 > Vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender *dans* certaines versions de Windows.
@@ -171,12 +177,12 @@ Les exclusions spécifiques à configurer dépendent de la version de Windows vo
 
 |SYSTÈME D’EXPLOITATION |Exclusions |
 |--|--|
-|- Windows 10, [version 1803](/windows/release-health/status-windows-10-1803) ou ultérieure (voir [Windows 10 de publication)](/windows/release-health/release-information)<br/>- Windows 10, version 1703 ou 1709 avec [KB4493441](https://support.microsoft.com/help/4493441) installé <br/>- [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Serveur, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>  |
-|- [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/>- [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/>- [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**REMARQUE**: les fichiers temporaires de l’hôte de surveillance 6\45 peuvent être des sous-dossiers numérotés différents.<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
+|- Windows 10, [version 1803](/windows/release-health/status-windows-10-1803) ou ultérieure (voir [Windows 10 de publication)](/windows/release-health/release-information)<br/>- Windows 10, version 1703 ou 1709 avec [KB4493441](https://support.microsoft.com/help/4493441) installé <br/>- [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Serveur, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<p>  |
+|- [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/>- [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/>- [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**REMARQUE**: les fichiers temporaires de l’hôte de surveillance 6\45 peuvent être des sous-dossiers numérotés différents. <br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>Ajoutez votre solution existante à la liste d’exclusions Antivirus Microsoft Defender
 
-Au cours de cette étape du processus d’installation, vous ajoutez votre solution existante à la Antivirus Microsoft Defender exclusion. 
+Au cours de cette étape du processus de configuration, vous ajoutez votre solution existante à la liste d Antivirus Microsoft Defender exclusion. 
 
 Lorsque vous ajoutez [des exclusions Antivirus Microsoft Defender analyses,](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)vous devez ajouter des exclusions de chemin d’accès et de processus. Gardez les points suivants à l’esprit :
 - Les exclusions de chemin d’accès excluent des fichiers spécifiques et tout ce à quoi ces fichiers ont accès.
@@ -189,13 +195,11 @@ Vous pouvez choisir parmi plusieurs méthodes pour ajouter vos exclusions à Ant
 
 |Méthode | Procédure|
 |--|--|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**REMARQUE**: Intune est désormais Microsoft Endpoint Manager. |1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and sign in.<br/><br/>2. Sélectionnez les  >  **profils de configuration des** appareils, puis sélectionnez le profil à configurer.<br/><br/>3. Sous **Gérer,** sélectionnez **Propriétés.**<br/> <br/>4. Sélectionnez **les paramètres de configuration : Modifier.**<br/><br/>5. Développez **Antivirus Microsoft Defender,** puis développez **Antivirus Microsoft Defender exclusions.**<br/><br/>6. Spécifiez les fichiers et dossiers, extensions et processus à exclure de Antivirus Microsoft Defender analyses. Pour référence, voir [Antivirus Microsoft Defender exclusions.](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)<br/><br/>7. Choisissez **Révision + Enregistrer,** puis **Enregistrer.**  |
-|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) |1. À l’aide de la [console Configuration Manager,](/mem/configmgr/core/servers/manage/admin-console)go to **Assets and Compliance**  >  **Endpoint Protection**  >  **Antimalware Policies,** and then select the policy that you want to modify. <br/><br/>2. Spécifiez les paramètres d’exclusion pour les fichiers et dossiers, les extensions et les processus à exclure de Antivirus Microsoft Defender analyses. |
-|[Objet de stratégie de groupe](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**<br/><br/>2. Dans l’Éditeur de gestion des **stratégies** de groupe, allez à **Configuration** ordinateur et cliquez sur **Modèles d’administration.**<br/><br/>3. Développez l’arborescence **pour Windows composants > Antivirus Microsoft Defender > exclusions**.<br/>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows. <br/><br/>4. Double-cliquez sur le paramètre **Exclusions** de chemin d’accès et ajoutez les exclusions.<br/>- Définissez l’option **sur Activé.**<br/>- Sous la section **Options,** cliquez sur **Afficher...**.<br/>- Spécifiez chaque dossier sur sa propre ligne sous la **colonne Nom de** la valeur.<br/>- Si vous spécifiez un fichier, veillez à entrer un chemin d’accès complet au fichier, y compris la lettre de lecteur, le chemin d’accès au dossier, le nom de fichier et l’extension. Entrez **0 dans** la **colonne** Valeur.<br/><br/>5. Cliquez sur **OK.**<br/><br/>6. Double-cliquez sur le paramètre **Exclusions d’extensions** et ajoutez les exclusions.<br/>- Définissez l’option **sur Activé.**<br/>- Sous la section **Options,** cliquez sur **Afficher...**.<br/>- Entrez chaque extension de fichier sur sa propre ligne sous la **colonne Nom de** la valeur.  Entrez **0 dans** la **colonne** Valeur.<br/><br/>7. Cliquez sur **OK.** |
-|Objet de stratégie de groupe local |1. Sur le point de terminaison ou l’appareil, ouvrez l’Éditeur de stratégie de groupe local. <br/><br/>2. Go to **Computer Configuration**  >  **Administrative Templates** Windows  >  **Components**  >  **Antivirus Microsoft Defender**  >  **Exclusions**.<br/><br/>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows. <br/><br/>3. Spécifiez votre chemin d’accès et les exclusions de processus. |
-|Clé du Registre |1. Exporte la clé de Registre suivante : `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` .<br/><br/>2. Importez la clé de Registre. Voici deux exemples :<br/>- Chemin d’accès local : `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Partage réseau : `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
-|||
-
+|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**REMARQUE**: Intune est désormais Microsoft Endpoint Manager. | 1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and sign in.<p> 2. Sélectionnez les  >  **profils de configuration des** appareils, puis sélectionnez le profil à configurer.<p> 3. Sous **Gérer,** sélectionnez **Propriétés.**<p> 4. Sélectionnez **paramètres de configuration : Modifier.**<p> 5. **Développez Antivirus Microsoft Defender,** puis développez **Antivirus Microsoft Defender exclusions.**<p> 6. Spécifiez les fichiers et dossiers, extensions et processus à exclure de Antivirus Microsoft Defender analyses. Pour référence, voir [Antivirus Microsoft Defender exclusions.](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)<p> 7. Choisissez **Révision + Enregistrer,** puis Enregistrer **.**  |
+|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) | 1. À l’aide de la [console Configuration Manager,](/mem/configmgr/core/servers/manage/admin-console)go to **Assets and Compliance**  >  **Endpoint Protection**  >  **Antimalware Policies,** and then select the policy that you want to modify. <p> 2. Spécifiez les paramètres d’exclusion pour les fichiers et les dossiers, les extensions et les processus à exclure de Antivirus Microsoft Defender analyses. |
+|[Objet de stratégie de groupe](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**<p> 2. Dans l’Éditeur de gestion **des stratégies** de groupe, sélectionnez **Configuration** ordinateur et **sélectionnez Modèles d’administration.**<p> 3. Développez l’arborescence **pour Windows composants > Antivirus Microsoft Defender > exclusions.**<br/>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows. <p> 4. Double-cliquez sur le paramètre **Exclusions** de chemin d’accès et ajoutez les exclusions.<br/>- Définissez l’option **sur Activé.**<br/>- Sous la section **Options,** sélectionnez **Afficher...**.<br/>- Spécifiez chaque dossier sur sa propre ligne sous la **colonne Nom de** la valeur.<br/>- Si vous spécifiez un fichier, veillez à entrer un chemin d’accès complet au fichier, y compris la lettre de lecteur, le chemin d’accès au dossier, le nom de fichier et l’extension. Entrez **0 dans** la **colonne** Valeur.<p> 5. Sélectionnez **OK**.<p> 6. Double-cliquez sur le paramètre **Exclusions d’extensions** et ajoutez les exclusions.<br/>- Définissez l’option **sur Activé.**<br/>- Sous la section **Options,** sélectionnez **Afficher...**.<br/>- Entrez chaque extension de fichier sur sa propre ligne sous la **colonne Nom de** la valeur.  Entrez **0 dans** la **colonne** Valeur.<p> 7. Sélectionnez **OK**. |
+|Objet de stratégie de groupe local |1. Sur le point de terminaison ou l’appareil, ouvrez l’Éditeur de stratégie de groupe local. <p>2. Go to **Computer Configuration**  >  **Administrative Templates** Windows  >  **Components**  >  **Antivirus Microsoft Defender**  >  **Exclusions**.<p>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows. <p>3. Spécifiez votre chemin d’accès et les exclusions de processus. |
+|Clé du Registre |1. Exporte la clé de Registre suivante : `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` .<p>2. Importez la clé de Registre. Voici deux exemples :<br/>- Chemin d’accès local : `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Partage réseau : `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-for-endpoint"></a>Ajouter votre solution existante à la liste d’exclusions pour Microsoft Defender pour le point de terminaison
 
@@ -205,19 +209,19 @@ Pour ajouter des exclusions à Microsoft Defender pour le point de terminaison, 
 
 1. Dans le volet de navigation, choisissez **Paramètres**  >  **indicateurs de**  >  **règles.**<br/>
 
-1. Sous **l’onglet Hchéths fichier,** choisissez **Ajouter un indicateur.**<br/>
+2. Sous **l’onglet Hchéths fichier,** choisissez **Ajouter un indicateur.**<br/>
 
-1. Sous **l’onglet** Indicateur, spécifiez les paramètres suivants :
+3. Sous **l’onglet** Indicateur, spécifiez les paramètres suivants :
    - Hachage de fichier (besoin d’aide ? Voir [Rechercher un hachage de fichier à l’aide de CMPivot](#find-a-file-hash-using-cmpivot) dans cet article.)
    - Under **Expires on (UTC)**, choose **Never**.<br/>
    
-1. Sous **l’onglet Action,** spécifiez les paramètres suivants :
+4. Sous **l’onglet Action,** spécifiez les paramètres suivants :
    - **Action de réponse**: **Autoriser**
    - Titre et description<br/>
    
-1. Sous **l’onglet Étendue,** sous **Groupes d’appareils,** sélectionnez **Tous les appareils** de mon étendue ou Sélectionner dans **la liste.**<br/>
+5. Sous **l’onglet Étendue,** sous **Groupes d’appareils,** sélectionnez **Tous les appareils** de mon étendue ou Sélectionner dans **la liste.**<br/>
 
-1. Sous **l’onglet Résumé,** examinez les paramètres, puis cliquez sur **Enregistrer.**
+6. Sous **l’onglet Résumé,** examinez les paramètres, puis sélectionnez **Enregistrer.**
 
 ### <a name="find-a-file-hash-using-cmpivot"></a>Rechercher un hachage de fichier à l’aide de CMPivot
 
@@ -226,10 +230,15 @@ CMPivot est un utilitaire de console pour Configuration Manager. CMPivot permet 
 Pour utiliser CMPivot afin d’obtenir le hachage de votre fichier, suivez les étapes suivantes :
 
 1. Examinez les [conditions préalables.](/mem/configmgr/core/servers/manage/cmpivot#prerequisites)
+
 2. [Démarrez CMPivot](/mem/configmgr/core/servers/manage/cmpivot#start-cmpivot). 
+
 3. Connecter configuration Manager ( `SCCM_ServerName.DomainName.com` ).
+
 4. Sélectionnez **l’onglet** Requête.
+
 5. Dans la liste **Device Collection,** choisissez **Tous les systèmes (par défaut).**
+
 6. Dans la zone de requête, tapez la requête suivante :<br/>
 
    ```kusto
@@ -244,7 +253,7 @@ Pour utiliser CMPivot afin d’obtenir le hachage de votre fichier, suivez les �
 
 | Type de collection | Procédure |
 |--|--|
-|[Les groupes d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) (anciennement appelés groupes d’ordinateurs) permettent à votre équipe des opérations de sécurité de configurer des fonctionnalités de sécurité, telles que l’examen et la correction automatisés.<br/> Les groupes d’appareils sont également utiles pour attribuer l’accès à ces appareils afin que votre équipe des opérations de sécurité puisse prendre des mesures correctives si nécessaire. <br/>Les groupes d’appareils sont créés dans le Centre de sécurité Microsoft Defender. |1. Go to the Centre de sécurité Microsoft Defender ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ).<br/><br/>2. Dans le volet de navigation sur la gauche, choisissez Paramètres groupes d’appareils  >  **Autorisations.**  >    <br/><br/>3. Choisissez **+ Ajouter un groupe d’appareils.**<br/><br/>4. Spécifiez un nom et une description pour le groupe d’appareils.<br/><br/>5. Dans la liste de **niveau Automation,** sélectionnez une option. (Nous vous recommandons **de corriger les menaces automatiquement.** Pour en savoir plus sur les différents niveaux d’automatisation, voir [comment les menaces sont corrigés.](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)<br/><br/>6. Spécifiez les conditions d’une règle correspondante pour déterminer quels appareils appartiennent au groupe d’appareils. Par exemple, vous pouvez choisir un domaine, des versions de système d’exploitation ou même utiliser des [balises d’appareil.](/microsoft-365/security/defender-endpoint/machine-tags)<br/><br/>7. Sous **l’onglet** Accès utilisateur, spécifiez les rôles qui doivent avoir accès aux appareils inclus dans le groupe d’appareils. <br/><br/>8. Choisissez **Terminé**. |
+|[Les groupes d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) (anciennement appelés groupes d’ordinateurs) permettent à votre équipe des opérations de sécurité de configurer des fonctionnalités de sécurité, telles que l’examen et la correction automatisés.<br/> Les groupes d’appareils sont également utiles pour attribuer l’accès à ces appareils afin que votre équipe des opérations de sécurité puisse prendre des mesures correctives si nécessaire. <br/>Les groupes d’appareils sont créés dans le Centre de sécurité Microsoft Defender. |1. Go to the Centre de sécurité Microsoft Defender ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ).<p>2. Dans le volet de navigation sur la gauche, choisissez Paramètres groupes d’appareils  >  **Autorisations.**  >    <p>3. Choisissez **+ Ajouter un groupe d’appareils.**<p>4. Spécifiez un nom et une description pour le groupe d’appareils.<p>5. Dans la liste de **niveau Automation,** sélectionnez une option. (Nous vous recommandons **de corriger les menaces automatiquement.** Pour en savoir plus sur les différents niveaux d’automatisation, voir [comment les menaces sont corrigés.](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)<p>6. Spécifiez les conditions d’une règle correspondante pour déterminer quels appareils appartiennent au groupe d’appareils. Par exemple, vous pouvez choisir un domaine, des versions de système d’exploitation ou même utiliser des [balises d’appareil.](/microsoft-365/security/defender-endpoint/machine-tags)<p>7. Sous **l’onglet** Accès utilisateur, spécifiez les rôles qui doivent avoir accès aux appareils inclus dans le groupe d’appareils. <p>8. Choisissez **Terminé**. |
 |[Les collections d’appareils](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) permettent à votre équipe des opérations de sécurité de gérer les applications, de déployer les paramètres de conformité ou d’installer des mises à jour logicielles sur les appareils de votre organisation.<br/>Les collections d’appareils sont créées à l’aide [de Configuration Manager.](/mem/configmgr/) |Suivez les étapes de [la procédure de création d’une collection.](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create) |
 |[Les unités d’organisation](/azure/active-directory-domain-services/create-ou) vous permettent de grouper logiquement des objets tels que des comptes d’utilisateur, des comptes de service ou des comptes d’ordinateur. Vous pouvez ensuite affecter des administrateurs à des unités d’organisation spécifiques et appliquer une stratégie de groupe pour appliquer des paramètres de configuration ciblés.<br/> Les unités d’organisation sont définies [dans Azure Active Directory Services de domaine.](/azure/active-directory-domain-services) | Suivez les étapes de la section Créer une unité [d’organisation dans Azure Active Directory domaine](/azure/active-directory-domain-services/create-ou)géré des services de domaine. |
 

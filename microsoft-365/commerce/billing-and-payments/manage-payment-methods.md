@@ -23,14 +23,17 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les modes de paiement dans le centre d'administration Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107038"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244719"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
+
+> [!IMPORTANT]
+> Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces pays, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant et ajouter de nouveaux abonnements à celui-ci, mais pourvu que le compte bancaire soit en règle.
 
 Lors de votre achat de produits ou de services commerciaux Microsoft, vous pouvez choisir un mode de paiement existant ou bien en ajouter un autre. Les cartes de débit, de crédit et les informations bancaires sont acceptées pour effectuer ces achats.
 

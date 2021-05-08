@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Découvrez comment gérer les signatures électroniques, notamment les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation de tous les messages électroniques entrants ou qui quittent votre organisation.
-ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914233"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244526"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914233"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Créer une signature qui s'applique à tous les messages
 
@@ -67,9 +67,9 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 1. Sélectionnez le lanceur d’applications ![ L’icône du lanceur d’applications, ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) puis sélectionnez **Administrateur.**
    
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
-2. Sélectionnez **Centres d’administration,** puis choisissez **Exchange.**
+2. Sélectionnez **Centres d’administration,** puis **sélectionnez Exchange**.
     
 3. Sous Flux de messagerie, sélectionnez **Règles.**
     
@@ -80,7 +80,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 6. Sous **Appliquer cette règle,** **sélectionnez [Appliquer à tous les messages]**.
     
     > [!TIP]
-    > [Découvrez-en plus](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sur l'application de conditions si vous ne souhaitez pas appliquer l'exclusion de responsabilité à tous les messages. (Cet article s’applique Exchange Server, mais il s’applique également à Microsoft 365.) 
+    > [Découvrez-en plus](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sur l'application de conditions si vous ne souhaitez pas appliquer l'exclusion de responsabilité à tous les messages. (Cet article s’applique aux Exchange Server, mais il s’applique également aux Microsoft 365.) 
   
 7. Sous Effectuer les opérations suivantes, laissez **Ajouter l'exclusion de responsabilité** sélectionné. 
     
@@ -111,8 +111,8 @@ Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures 
     
 - Ignorer les lignes qui contiennent des variables qui n’ont pas pu être mises à jour (par exemple, parce que la valeur n’a pas été fournie pour un utilisateur)
     
-Pour obtenir ces fonctionnalités et d’autres pour gérer les signatures électroniques, utilisez un outil tiers. Veuillez effectuer une recherche sur Internet pour le logiciel **de signature électronique.** Un certain nombre de ces fournisseurs sont des partenaires Microsoft Gold et leurs logiciels fournissent ces fonctionnalités. 
+Pour obtenir ces fonctionnalités et d’autres fonctionnalités de gestion des signatures électroniques, utilisez un outil tiers. Veuillez effectuer une recherche sur Internet pour le logiciel **de signature électronique.** Un certain nombre de ces fournisseurs sont des partenaires Microsoft Gold et leurs logiciels fournissent ces fonctionnalités. 
   
 ## <a name="more-resources"></a>Plus de ressources
 
-- Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de responsabilité, les signatures, les pieds de ligne ou les [en-têtes](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) des messages à l’échelle de l’organisation dans Exchange Online.
+- Pour [plus d’informations](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) sur l’utilisation de PowerShell, voir les clauses d’exclusion de responsabilité, les signatures, les pieds de Exchange Online à l’échelle de l’organisation.

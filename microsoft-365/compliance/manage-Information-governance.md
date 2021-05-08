@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implémentez les fonctionnalités de gouvernance des informations de Microsoft pour gérer vos données en matière de conformité ou d’obligations réglementaires.
-ms.openlocfilehash: 6a0db63f218db72dbda9afc510cb5ef5f5e13eaa
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107702"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244563"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gouvernance des informations dans Microsoft 365
 
@@ -31,6 +31,8 @@ Utilisez les fonctionnalités de gouvernance des informations de Microsoft (parf
 ![Gérez vos données : gouvernance des informations et gestion des enregistrements](../media/information-governance-records-management.png)
 
 Vous souhaitez protéger vos données ? Consultez l’article [Découvrir Microsoft Information Protection dans Microsoft 365](information-protection.md).
+
+Pour vous aider à vous conformer aux réglementations relatives à la confidentialité des données, nous avons conçu un flux de travail pour vous guider tout au long d’un processus de bout en bout pour planifier et implémenter des fonctionnalités au sein de Microsoft 365, notamment l’accès sécurisé, la protection contre les menaces, la protection des informations et la gouvernance des données. Pour plus d’informations, consultez [Déployer la protection des informations pour la confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Gouvernance des informations
 

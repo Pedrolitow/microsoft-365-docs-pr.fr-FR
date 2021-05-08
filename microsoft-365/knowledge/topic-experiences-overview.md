@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des rubriques de Microsoft Viva
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Présentation de Rubriques Viva.
-ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488156"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275197"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
@@ -40,8 +40,12 @@ Rubriques Viva utilise l’IA pour rechercher et identifier automatiquement **ru
 
 Lorsqu’une rubrique est mentionnée dans du contenu sur des actualités et pages SharePoint, elle est mise en évidence. Vous pouvez ouvrir le résumé du sujet à partir de la mise en évidence. Ouvrez les détails du sujet à partir du titre du résumé. La rubrique mentionnée peut être identifiée automatiquement ou a été ajoutée à la page avec une référence directe à la rubrique par l’auteur de la page. 
 
-   ![Points forts de la rubrique](../media/knowledge-management/saturn.png) </br> 
+   ![Points forts de la rubrique](../media/knowledge-management/saturn.png) 
 
+
+   ![Capture d’écran montrant la recherche dans Word via la zone de recherche.](../media/knowledge-management/word-search-2.png)
+
+   ![Capture d’écran montrant la recherche dans Word par le biais du menu context de recherche.](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>Indexation des informations
 
@@ -99,7 +103,7 @@ Pour plus d’information, consultez [Gérer les rubriques dans le centre théma
 
 ## <a name="admin-controls"></a>Contrôles d’administration
 
-Les contrôles d’administration dans le Centre d’administration Microsoft 365 vous permettent de gérer Des rubriques. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
+Les contrôles d’administration dans Microsoft 365 centre d’administration vous permettent de gérer Les rubriques De LaSerrité. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
 
 - Contrôler quels utilisateurs de votre organisation sont autorisés à consulter les rubriques dans les pages modernes de SharePoint ou dans les résultats de recherche SharePoint.
 - Contrôler les sites SharePoint qui seront analyser pour identifier les rubriques.
