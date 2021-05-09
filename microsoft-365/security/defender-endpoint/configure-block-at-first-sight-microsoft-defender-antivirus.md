@@ -1,12 +1,12 @@
 ---
-title: Activer bloquer à la première vue pour détecter les programmes malveillants en quelques secondes
-description: Activer la fonctionnalité Bloquer à la première vue pour détecter et bloquer les programmes malveillants en quelques secondes.
-keywords: analyser, bloquer à la première vue, programmes malveillants, première vue, cloud, defender, antivirus
+title: Activer Bloquer à la première consultation pour la détection d’un programme malveillant en quelques secondes
+description: Activer la fonctionnalité Bloquer à la première consultation pour la détection et le blocage d’un programme malveillant en quelques secondes.
+keywords: analyser, bloquer à la première consultation, programme malveillant, à la première consultation, cloud, defender, antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: marcmcc
@@ -14,14 +14,15 @@ manager: dansimp
 ms.custom: nextgen
 ms.date: 04/28/2021
 ms.technology: mde
-ms.openlocfilehash: d4db3549d04e5883f02ba263c06371371d385022
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
-ms.translationtype: MT
+ms.topic: article
+ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079202"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274951"
 ---
-# <a name="turn-on-block-at-first-sight"></a> Activer le bloquage à première vue
+# <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,190 +31,190 @@ ms.locfileid: "52079202"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Cet article décrit une fonctionnalité antivirus/anti-programme malveillant appelée « bloquer à la première vue » et explique comment activer la fonctionnalité Bloquer à la première vue pour votre organisation. 
+Cet article présente la fonctionnalité antivirus/logiciel anti-programme malveillant appelée « Bloquer à la première consultation » et décrit la façon d’activer Bloquer à la première consultation pour votre organisation. 
 
 > [!TIP]
-> Cet article est destiné aux administrateurs d'entreprise et aux professionnels de l'informatique qui gèrent les paramètres de sécurité pour les organisations. Si vous n'êtes pas un administrateur d'entreprise ou un professionnel de l'informatique, mais que vous avez des questions sur bloquer à la première vue, voir Pas un administrateur d'entreprise ou un [professionnel de l'informatique ?](#not-an-enterprise-admin-or-it-pro).
+> Cet article est destiné aux administrateurs d’entreprise et aux professionnels de l’informatique qui gère les paramètres de sécurité pour des organisations. Si vous n’êtes pas un administrateur d’entreprise ou un professionnel de l’informatique, mais que vous avez des questions à propos de Bloquer à la première consultation, consultez [Vous n’êtes pas un administrateur d’entreprise ou un professionnel de l’informatique ?](#not-an-enterprise-admin-or-it-pro).
 
-## <a name="what-is-block-at-first-sight"></a>Qu'est-ce que « bloquer à la première vue » ?
+## <a name="what-is-block-at-first-sight"></a>Qu’est-ce que « Bloquer à la première consultation » ?
 
-Bloquer à la première vue est une fonctionnalité de protection contre les menaces de la nouvelle génération qui détecte les nouveaux programmes malveillants et les bloque en quelques secondes. Bloquer à la première vue est activé lorsque certains paramètres de sécurité sont activés. Ces paramètres sont les suivants :
+Bloquer à la première consultation est une fonctionnalité de protection de nouvelle génération de protection contre les menaces qui détecte un nouveau programme malveillant et le bloque en quelques secondes. La fonctionnalité Bloquer à la première consultation est activée lorsque certains paramètres de sécurité sont activés. Ces paramètres sont les suivants :
 
-- Protection cloud 
-- Un délai d'envoi d'exemple spécifié (par exemple, 50 secondes) ; et 
-- Niveau de blocage de fichiers élevé. 
+- Protection fournie par le cloud ; 
+- Un échantillon spécifique d’expiration de l'envoi (tel que 50 secondes) et 
+- Un blocage des fichiers de niveau élevé. 
 
-Dans la plupart des organisations, les paramètres nécessaires pour activer bloquer à la première vue sont configurés avec les déploiements de l'Antivirus Microsoft Defender. 
+Dans la plupart des entreprises, les paramètres nécessaires pour activer Bloquer à la première consultation sont configurés avec les déploiements de l’Antivirus Microsoft Defender. 
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
-Lorsque l'Antivirus Microsoft Defender rencontre un fichier suspect mais non détecté, il interroge notre système de protection cloud. Le système back-end cloud applique l'heuristique, l'apprentissage automatique et l'analyse automatisée du fichier pour déterminer si les fichiers sont malveillants ou ne sont pas une menace.
+Lorsque l’Antivirus Microsoft Defender rencontre un fichier suspect, mais non détecté, il interroge notre serveur principal de protection cloud. Le serveur principal de protection cloud applique la méthode heuristique, l’apprentissage automatique et l’analyse automatisée de fichier pour déterminer si les fichiers sont suspects ou s’ils ne sont pas une menace.
 
-L'Antivirus Microsoft Defender utilise plusieurs technologies de détection et de prévention pour fournir une protection précise, intelligente et en temps réel. 
+L’Antivirus Microsoft Defender utilise plusieurs technologies de prévention et de détection pour fournir une protection exacte, intelligente et en temps réel. 
 
-![Liste des moteurs de Microsoft Defender AV](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Liste des moteurs AV de Microsoft Defender](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> Pour en savoir plus, consultez ce blog : Découvrez les technologies avancées au cœur de Microsoft Defender pour la protection nouvelle génération de point [de terminaison.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
+> Pour en savoir plus, consultez ce blog : [Découvrir les technologies avancées au cœur de la protection de nouvelle génération de Microsoft Defender pour point de terminaison](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
-## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Quelques informations à connaître sur bloquer à la première vue
+## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Quelques éléments à connaître à propos de la fonctionnalité Bloquer à la première consultation
 
-- Dans Windows 10, version 1803 ou ultérieure, bloquer à la première vue peut bloquer les fichiers exécutables non portables (tels que JS, VBS ou macros) et les fichiers exécutables.
+- Dans Windows 10, version 1803 ou ultérieure, Bloquer à la première consultation peut bloquer des fichiers exécutables non portables (tels que JS, VBS ou les macros) et des fichiers exécutables.
 
-- Bloquer à la première vue utilise uniquement le système de protection cloud pour les fichiers exécutables et les fichiers exécutables non portables qui sont téléchargés à partir d'Internet ou qui proviennent de la zone Internet. Une valeur de hachage du fichier .exe est vérifiée via le système backend cloud pour déterminer si le fichier est un fichier précédemment non détecté.
+- Bloquer à la première consultation utilise uniquement le serveur principal de protection cloud pour les fichiers exécutables et les fichiers exécutables non portables qui sont téléchargés à partir d’Internet ou qui sont issus de la zone Internet. Une valeur de hachage du fichier .exe est vérifiée via le serveur principal de protection cloud pour déterminer s’il s’agit d’un fichier précédemment non détecté.
 
-- Si le système cloud backend ne parvient pas à effectuer une détermination, l'Antivirus Microsoft Defender verrouille le fichier et charge une copie dans le cloud. Le cloud effectue davantage d'analyses pour parvenir à une détermination avant d'autoriser l'exécution du fichier ou de le bloquer dans toutes les futures rencontres, selon qu'il détermine si le fichier est malveillant ou non une menace.
+- Si le serveur principal cloud ne peut pas se prononcer, l’Antivirus Microsoft Defender bloque le fichier et télécharge une copie dans le cloud. Le cloud effectue d’autres analyses pour se prononcer avant d’autoriser le fichier à s’exécuter ou de le bloquer dans toutes les autres occurrences, selon qu’il détermine que le fichier est suspect ou qu’il n’est pas une menace.
 
-- Dans de nombreux cas, ce processus peut réduire le temps de réponse des nouveaux programmes malveillants de plusieurs heures à quelques secondes.
+- Dans de nombreux cas, ce processus peut diminuer le temps de réponse de plusieurs heures à quelques secondes pour un nouveau programme malveillant.
 
-- Vous pouvez [spécifier la durée d'exécution](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) d'un fichier pendant que le service de protection informatique analyse le fichier. De plus, vous pouvez personnaliser le message affiché sur le bureau des [utilisateurs](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) lorsqu'un fichier est bloqué. Vous pouvez modifier le nom de la société, les informations de contact et l'URL du message.
+- Vous pouvez [spécifier la durée d’interdiction d’exécution d’un fichier](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) pendant que le service de protection dans le cloud analyse le fichier. Vous pouvez également [personnaliser le message affiché sur les bureaux des utilisateurs](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) lorsqu’un fichier est bloqué. Vous pouvez modifier le nom de l’entreprise, les informations de contact et l’URL du message.
 
-## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Activer bloquer à la première vue avec Microsoft Intune
+## <a name="turn-on-block-at-first-sight-with-microsoft-intune"></a>Activer la fonctionnalité Bloquer à la première consultation avec Microsoft Intune
 
 > [!TIP]
 > Microsoft Intune fait désormais partie de Microsoft Endpoint Manager.
 
-1. Dans le Centre d'administration Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), accédez aux **profils**  >  **de configuration des appareils.**
+1. Dans le Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), naviguez vers **Appareils** > **Profils de configuration**.
 
-2. Sélectionnez ou créez un profil à l'aide du type de profil **Restrictions d'appareil.**
+2. Sélectionnez ou créez un profil à l’aide du type de profil **Restrictions d’appareil**.
 
-3. Dans les **paramètres de configuration du** profil restrictions d'appareil, définissez ou confirmez les paramètres suivants sous **l'Antivirus Microsoft Defender**:
+3. Dans **Paramètres de configuration** pour le profil des Restrictions d’appareil, configurez ou confirmez les paramètres suivants sous **Antivirus Microsoft Defender** :
 
-   - **Protection cloud :** activée
-   - **Niveau de blocage de fichiers**: Élevé
-   - **Extension de temps pour l'analyse de fichiers par le cloud**: 50
-   - **Invite des utilisateurs avant l'envoi** de l'échantillon : envoyer toutes les données sans invite
+   - **Protection fournie par le cloud** : Activée
+   - **Niveau de blocage des fichiers** : Élevé
+   - **Extension de temps pour l’analyse des fichiers dans le cloud** : 50
+   - **Demander aux utilisateurs avant la soumission d’échantillons** : Envoyer tous les données sans demande
 
-   ![Config Intune](images/defender/intune-block-at-first-sight.png)
+   ![Configuration Intune](images/defender/intune-block-at-first-sight.png)
 
 4. Enregistrez vos paramètres.
 
 > [!TIP]
-> - La définition du niveau de blocage de fichiers **sur Élevé** applique un niveau élevé de détection. Dans le cas peu probable que le blocage de fichiers entraîne une détection de faux positifs de fichiers légitimes, votre équipe des opérations de sécurité peut restaurer les [fichiers mis en quarantaine.](./restore-quarantined-files-microsoft-defender-antivirus.md)
-> - Pour plus d'informations sur la configuration des restrictions d'appareil de l'Antivirus Microsoft Defender dans Intune, voir Configurer les paramètres de [restriction d'appareil dans Microsoft Intune.](/intune/device-restrictions-configure)
-> - Pour obtenir la liste des restrictions d'appareil de l'Antivirus Microsoft Defender dans Intune, voir Restriction d'appareil pour les [paramètres Windows 10 (et](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)les plus nouveaux) dans Intune.
+> - Le paramétrage du niveau de blocage des fichiers sur **Élevé** applique un niveau fort de détection. Dans le cas peu probable où le blocage du fichier entraîne la détection de faux positif de fichiers légitimes, votre équipe des opérations de sécurité peut [restaurer les fichiers mis en quarantaine](./restore-quarantined-files-microsoft-defender-antivirus.md).
+> - Pour plus d’informations sur la configuration de restriction d’appareils de l’Antivirus Microsoft Defender dans Microsoft Intune, voir [Configurer les paramètres de restriction d’appareil de dans Microsoft Intune](/intune/device-restrictions-configure).
+> - Pour une liste des restrictions d’appareils de l’Antivirus Microsoft Defender dans Intune, voir [Paramètres de restriction d’appareil pour Windows 10 (et versions ultérieures) dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
-## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Activer bloquer à la première vue avec Microsoft Endpoint Manager
+## <a name="turn-on-block-at-first-sight-with-microsoft-endpoint-manager"></a>Activer la fonctionnalité Bloquer à la première consultation avec Microsoft Endpoint Manager
 
 > [!TIP]
 > Si vous recherchez Microsoft Endpoint Configuration Manager, il fait désormais partie de Microsoft Endpoint Manager.
 
-1. Dans Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), go to **Endpoint security**  >  **Antivirus**.
+1. Dans Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), accédez à **Sécurité des points de terminaison** > **Antivirus**.
 
-2. Sélectionnez une stratégie existante ou créez une stratégie à l'aide du type de profil **Antivirus Microsoft Defender.**
+2. Sélectionnez une stratégie existante ou créez-en une nouvelle à l’aide du type de profil **Antivirus Microsoft Defender**.
 
-3. Définissez ou confirmez les paramètres de configuration suivants :
+3. Configurez ou confirmez les paramètres de configuration suivants :
 
-   - **Activer la protection cloud :** Oui
-   - **Niveau de protection cloud :** élevé
-   - **Délai d'out étendu de Defender Cloud en secondes**: 50
+   - **Activer la protection par le cloud** : Oui
+   - **Niveau de protection par le cloud** : Élevé
+   - **Délai d’attente étendu du cloud Defender en secondes** : 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Bloquer les paramètres à la première vue dans le Gestionnaire de point de terminaison":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Paramètres Bloquer à la première consultation dans Endpoint Manager":::
 
-4. Appliquez le profil antivirus Microsoft Defender à un groupe, tel que Tous les utilisateurs, Tous les **appareils** ou Tous **les utilisateurs et appareils.**
+4. Appliquer un profil Antivirus Microsoft Defender à un groupe, tel que **Tous les utilisateurs**, **Tous les appareils** ou **Tous les utilisateurs et tous les appareils**.
 
-## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Activer bloquer à la première vue avec la stratégie de groupe
+## <a name="turn-on-block-at-first-sight-with-group-policy"></a>Activer la fonctionnalité Bloquer à la première consultation avec une stratégie de groupe
 
 > [!NOTE]
-> Nous vous recommandons d'utiliser Intune ou Microsoft Endpoint Manager pour activer bloquer à la première vue. 
+> Nous vous recommandons d’utiliser Intune ou Microsoft Endpoint Manager pour activer Bloquer à la première consultation. 
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l'objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.** 
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**. 
 
-2. À **l'aide de l'Éditeur de gestion des stratégies** de groupe, go to **Computer configuration**  >  **Administrative**  >  **templates Windows Components**  >  **Microsoft Defender Antivirus**  >  **MAPS**. 
+2. En utilisant **l’Éditeur de gestion des stratégies de groupe**, accédez à **Configuration de l’ordinateur** > **Modèles d’administration** > **Composants Windows** > **Antivirus Microsoft Defender** > **CARTES**. 
 
-3. Dans la section MAPS, double-cliquez sur **Configurer** la fonctionnalité « Bloquer à la première vue » et définissez-la sur **Activé,** puis sélectionnez **OK.**
+3. Dans la section CARTES, cliquez deux fois sur **Configurer la fonctionnalité « Bloquer à la première consultation »**, puis configurez-la sur **Activé**, puis sélectionnez **OK**.
 
     > [!IMPORTANT]
-    > Le fait **de définir Always prompt (0)** réduit l'état de protection de l'appareil. Le paramètre **Ne jamais envoyer (2)** signifie que bloquer à la première vue ne fonctionne pas.
+    > La configuration sur **Toujours demander (0)** diminuera l’état de protection de l’appareil. La configuration sur **Ne jamais envoyer (2)** signifie que Bloquer à la première consultation ne fonctionnera pas.
 
-4. Dans la section MAPS, double-cliquez sur Envoyer des **exemples** de fichiers lorsque d'autres analyses sont requises et définissez-la **sur Activé.** Sous **Envoyer des exemples de fichier lorsque d'autres analyses sont** **requises, sélectionnez Envoyer** tous les exemples, puis **sélectionnez OK.**
+4. Dans la section CARTES, cliquez deux fois sur **Envoyer des échantillons de fichier lorsqu'une analyse supplémentaire est nécessaire**, puis configurez l’option sur **Activé**. Sous **Envoyer des exemples de fichier lorsqu'une analyse supplémentaire est nécessaire**, sélectionnez **Envoyer tous les échantillons**, puis **OK**.
 
-5. Redéployer votre objet de stratégie de groupe sur votre réseau comme vous le faites généralement.
+5. Redéployez votre objet de stratégie de groupe sur votre réseau comme vous le faites habituellement.
 
-## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Vérifier que bloquer à la première vue est activé sur des appareils clients individuels
+## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>Confirmer que la fonctionnalité Bloquer à la première consultation est activée sur les appareils client individuels
 
-Vous pouvez vérifier que bloquer à la première vue est activé sur des appareils clients individuels à l'aide de l'application Sécurité Windows. Bloquer à la première vue est automatiquement activé tant  que la protection cloud **et** l'envoi automatique d'échantillons sont tous deux activés.
+Vous pouvez confirmer que Bloquer à la première consultation est activé sur des appareils client individuels en utilisant l’application Sécurité Windows. La fonctionnalité Bloquer à la première consultation est automatiquement activée tant que les options **Protection assurée par le cloud** et **Envoi automatique d’un échantillon** sont activées.
 
-1. Ouvrez l'application Sécurité Windows.
+1. Ouvrez l’application Sécurité Windows.
 
-2. Sélectionnez **Protection & virus** contre les **menaces,** puis, sous Paramètres de protection contre & virus, sélectionnez Gérer **les paramètres.**
+2. Sélectionnez **Protection contre les virus et les menaces**, puis sous **Paramètres de protection contre les virus et les menaces**, sélectionnez **Gérer les paramètres**.
 
-   ![Capture d'écran de l'étiquette & protection contre les virus dans l'application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
+   ![Capture d’écran de l’étiquette des paramètres de protection contre les virus et les menaces dans l’application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
 
-3. Confirmez **que la protection du cloud et** l'envoi automatique **d'échantillons** sont tous deux allumés.
+3. Confirmez que les options **Protection assurée par le cloud** et **Envoi automatique d’un échantillon** sont activées.
 
 > [!NOTE]
-> - Si les paramètres prérequis sont configurés et déployés à l'aide de la stratégie de groupe, les paramètres décrits dans cette section sont grisés et ne peuvent pas être utilisés sur des points de terminaison individuels. 
-> - Les modifications apportées via un objet de stratégie de groupe doivent d'abord être déployées sur des points de terminaison individuels avant que le paramètre ne soit mis à jour dans les paramètres Windows.
+> - Si les paramètres de condition préalable sont configurés et déployés à l’aide d’une stratégie de groupe, les paramètres décrits dans cette section seront grisés et non disponibles pour une utilisation sur des points de terminaison individuels. 
+> - Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
 
-## <a name="validate-block-at-first-sight-is-working"></a>Vérifier que bloquer à la première vue fonctionne
+## <a name="validate-block-at-first-sight-is-working"></a>Confirmer que le fonctionnement de Bloquer à la première consultation
 
-Pour vérifier que la fonctionnalité fonctionne, suivez les instructions de Validation des [connexions entre votre réseau et le cloud.](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+Pour valider le fonctionnement de la fonctionnalité, suivez les instructions dans [Valider les connexions entre votre réseau et le cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
-## <a name="turn-off-block-at-first-sight"></a>Désactiver bloquer à la première vue
+## <a name="turn-off-block-at-first-sight"></a>Désactiver la fonctionnalité Bloquer à la première consultation
 
 > [!CAUTION]
-> La non-utilisation du blocage à la première vue réduit l'état de protection de vos appareils et de votre réseau.
+> La désactivation de Bloquer à la première consultation diminue le niveau de protection de votre ou vos appareils et de votre réseau.
 
-Vous pouvez choisir de désactiver bloquer à la première vue si vous souhaitez conserver les paramètres prérequis sans utiliser réellement la protection bloquer à la première vue. Vous pouvez désactiver temporairement bloquer à la première vue pour voir l'impact de cette fonctionnalité sur votre réseau. Toutefois, nous vous déconseillons de désactiver définitivement la protection bloquer à la première vue.
+Vous pouvez peut-être décider de désactiver Bloquer à la première consultation si vous souhaitez retenir les paramètres de condition préalable sans utiliser réellement la protection Bloquer à la première consultation. Vous pouvez peut-être désactiver temporairement Bloquer à la première consultation pour voir comment cette fonctionnalité affecte votre réseau. Cependant, nous vous déconseillons de désactiver la protection Bloquer à la première consultation de manière permanente.
 
-### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Désactiver bloquer à la première vue avec Microsoft Endpoint Manager
+### <a name="turn-off-block-at-first-sight-with-microsoft-endpoint-manager"></a>Désactiver la fonctionnalité Bloquer à la première consultation avec Microsoft Endpoint Manager
 
-1. Go to Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and sign in.
+1. Accédez au Centre d’administration Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), puis connectez-vous.
 
-2. Go to **Endpoint security**  >  **Antivirus,** and then select your Microsoft Defender Antivirus policy.
+2. Accédez à **Sécurité des points de terminaison** > **Antivirus**, puis sélectionnez votre stratégie Antivirus Microsoft Defender.
 
-3. Under **Manage**, choose **Properties**.
+3. Sous **Gérer**, choisissez **Propriétés**.
 
-4. En de côté **des paramètres de configuration,** choisissez **Modifier.**
+4. Près de **Paramètres de configuration**, choisissez **Modifier**.
 
-5. Modifiez un ou plusieurs des paramètres suivants :
+5. Modifiez un ou plusieurs des paramètres suivants :
 
-   - Définissez **Activer la protection cloud sur** **Non** ou **Non configuré.**
-   - Définissez **le niveau de protection livré par le cloud** sur Non **configuré.**
-   - Clear the check box for **Defender Cloud Extended Timeout In Seconds**.
+   - Définissez **Activer la protection assurée par le cloud** sur **Non** ou sur **Non configuré**.
+   - Définissez **Niveau de protection assuré par le cloud** sur **Non configuré**.
+   - Désactivez la case à cocher pour **Délai d’attente étendu du cloud Defender en secondes**.
 
-6. Examinez et enregistrez vos paramètres.
+6. Évaluez et enregistrez vos paramètres.
 
-### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Désactiver bloquer à la première vue avec la stratégie de groupe
+### <a name="turn-off-block-at-first-sight-with-group-policy"></a>Désactiver Bloquer à la première consultation à l’aide d’une stratégie de groupe
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l'objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
-2. À **l'aide de l'Éditeur de gestion des stratégies** de groupe, sélectionnez **Configuration** ordinateur et **sélectionnez Modèles d'administration.**
+2. En utilisant l’**Éditeur de gestion des stratégies de groupe**, accédez à **Configuration ordinateur**, puis sélectionnez **Modèles d’administration**.
 
-3. Développez l'arborescence à **travers les composants Windows** Microsoft Defender  >  **Antivirus**  >  **MAPS**.
+3. Développez l’arborescence via les **Composants Windows** > **Antivirus Microsoft Defender** > **CARTES**.
 
-4. Double-cliquez **sur Configurer la fonctionnalité «** Bloquer à la première vue » et définissez l'option sur **Désactivé.**
+4. Cliquez deux fois sur **Configurer la fonctionnalité « Bloquer à la première consultation »**, puis définissez l’option sur **Désactivé**.
 
     > [!NOTE]
-    > La désactivation de bloquer à la première vue ne désactive pas ou ne modifie pas les stratégies de groupe prérequises.
+    > La désactivation de la fonctionnalité Bloquer à la première consultation ne désactive pas ou n’altère pas les stratégies de groupe de condition préalable.
 
-## <a name="not-an-enterprise-admin-or-it-pro"></a>Vous n'êtes pas un administrateur d'entreprise ou un professionnel de l'informatique ?
+## <a name="not-an-enterprise-admin-or-it-pro"></a>Vous n’êtes pas un administrateur d’entreprise ou un professionnel de l’informatique ?
 
-Si vous n'êtes pas un administrateur d'entreprise ou un professionnel de l'informatique, mais que vous avez des questions sur bloquer à la première vue, cette section est pour vous. Bloquer à la première vue est une fonctionnalité de protection contre les menaces qui détecte et bloque les programmes malveillants en quelques secondes. Bien qu'il n'existe pas de paramètre spécifique appelé « Bloquer à la première vue », la fonctionnalité est activée lorsque certains paramètres sont configurés sur votre appareil.
+Si vous n’êtes pas un administrateur d’entreprise ou un professionnel de l’informatique, mais que vous avez des questions à propos de Bloquer à la première consultation, cette section s’adresse à vous. Bloquer à la première consultation est une fonctionnalité de protection de contre les menaces qui détecte et bloque un programme malveillant en quelques secondes. Bien qu’il n’existe aucun paramètre spécifique appelé « Bloquer à la première consultation », la fonctionnalité est activée lorsque certains paramètres sont configurés sur votre appareil.
 
-### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Comment gérer bloquer à la première vue sur ou hors de votre propre appareil
+### <a name="how-to-manage-block-at-first-sight-on-or-off-on-your-own-device"></a>Comment gérer l’activation ou la désactivation de Bloquer à la première consultation sur votre appareil
 
-Si vous avez un appareil personnel qui n'est pas géré par une organisation, vous vous demandez peut-être comment activer ou désactiver bloquer à la première vue. Vous pouvez utiliser l'application Sécurité Windows pour gérer bloquer à la première vue.
+Si vous disposez d’un appareil personnel qui n’est pas géré par une organisation, vous n’aurez peut-être pas à vous demander comment activer ou désactiver la fonctionnalité Bloquer à la première consultation. Vous pouvez utiliser l’application Sécurité Windows pour gérer la fonctionnalité Bloquer à la première consultation.
 
-1. Sur votre ordinateur Windows 10, ouvrez l'application Sécurité Windows.
+1. Sur votre ordinateur Windows 10, ouvrez l’application Sécurité Windows.
 
-2. Sélectionnez **Protection contre & virus**.
+2. Sélectionnez **Protection contre les virus et les menaces**.
 
-3. Sous Paramètres & protection contre les virus contre les **menaces,** **sélectionnez Gérer les paramètres.**
+3. Sous **Paramètres de protection contre les virus et les menaces**, sélectionnez **Gérer les paramètres**.
 
 4. Effectuez l’une des étapes suivantes :
 
-   - Pour activer bloquer à la première vue, **assurez-vous** que la protection cloud et l'envoi automatique d'échantillons sont tous deux activés. 
+   - Pour activer la fonctionnalité Bloquer à la première consultation, vérifiez que les options **Protection assurée par le cloud** et **Envoi automatique d’un échantillon** sont activées.
 
-   - Pour désactiver bloquer à la première vue, désactivez la protection cloud **ou** l'envoi **automatique d'échantillons.** <br/>
+   - Pour désactiver la fonctionnalité Bloquer à la première consultation, désactivez **Protection assurée par le cloud** ou **Envoi automatique d’un échantillon**. <br/>
     
      > [!CAUTION]
-     > La non-utilisation du blocage à la première vue réduit le niveau de protection de votre appareil. Nous vous déconseillons de désactiver définitivement bloquer à la première vue. 
+     > La désactivation de la fonctionnalité Bloquer à la première consultation diminue le niveau de protection de votre appareil. Nous vous déconseillons de désactiver définitivement la fonctionnalité Bloquer à la première consultation. 
 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Activer la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
-- [Restez protégé avec la sécurité Windows](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Restez protégé grâce à la sécurité Windows](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)

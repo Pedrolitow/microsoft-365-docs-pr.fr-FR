@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932857"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280798"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -163,13 +163,13 @@ Au 1er jour, un utilisateur crée un message de conversation ou de canal.
 
 Exemple de résultat de rétention si l’utilisateur ne modifie ou ne supprime pas le message :
 
-- 5e jour (généralement 1 à 7 jours après le début de la période de rétention au 3e jour) :
+- 5e jour (généralement 1 à 7 jours après le début de la période de rétention au 2e jour) :
     - Le message est alors déplacé vers le dossier SubstrateHolds et y reste pendant au moins 1 jour où il peut toujours être recherché à l’aide des outils eDiscovery.
 
 - 9e jour (généralement 1 à 7 jours après une durée minimale de 1 jour dans le dossier SubstrateHolds) :
     - Le message est définitivement supprimé et n’est pas renvoyé avec les recherches eDiscovery.
 
-Comme le montre cet exemple, même si vous parvenez à configurer une stratégie de rétention pour supprimer les messages au bout d’une seule journée, le service est soumis à plusieurs processus pour garantir une suppression conforme. Par conséquent, une action de suppression après 1 jour peut prendre 18 jours avant que le message ne soit définitivement supprimé, de sorte qu’il ne soit plus renvoyé dans les recherches eDiscovery.
+Comme le montre cet exemple, même si vous parvenez à configurer une stratégie de rétention pour supprimer les messages au bout d’une seule journée, le service est soumis à plusieurs processus pour garantir une suppression conforme. Par conséquent, une action de suppression après 1 jour peut prendre 16 jours avant que le message ne soit définitivement supprimé, de sorte qu’il ne soit plus renvoyé dans les recherches eDiscovery.
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Interopérabilité des conversations Skype Entreprise et Teams
 
@@ -197,7 +197,7 @@ Si l’utilisateur a stocké des fichiers dans Teams, consultez la [section équ
 
 ## <a name="limitations"></a>Limites
 
-Nous travaillons sans cesse afin d’optimiser les fonctionnalités de rétention dans Teams. En attendant, voici quelques limitations à prendre en compte lors de l’utilisation de stratégies de rétention pour les messages et conversations de canal Teams :
+Nous travaillons en permanence sur l’amélioration de la fonctionnalité de rétention dans Teams. En attendant, voici quelques limitations à prendre en compte lors de l’utilisation de stratégies de rétention pour les messages et conversations de canal Teams :
 
 - **Problème d’affichage incorrect dans Outlook**. Si vous créez des stratégies de rétention pour les emplacements Skype ou Teams, l’une de ces stratégies apparaît comme stratégie de dossier par défaut lorsqu’un utilisateur affiche les propriétés d’un dossier de boîte aux lettres dans le client de la version bureau de Outlook. Il s’agit [d’un problème connu](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)d’affichage incorrect dans Outlook. À la place, vous devez voir la stratégie de rétention de boîte aux lettres qui est appliquée au dossier. La stratégie de rétention de Skype ou Teams n’est pas appliquée à la boîte aux lettres de l’utilisateur.
 
