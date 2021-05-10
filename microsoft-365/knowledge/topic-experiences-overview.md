@@ -14,22 +14,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Présentation de Rubriques Viva.
-ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281028"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302123"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
-Cette rubrique utilise la technologie Microsoft AI, les Microsoft 365, Microsoft Graph, la recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par les pages modernes SharePoint, Recherche Microsoft et Recherche dans Word et PowerPoint.
+Cette rubrique utilise la technologie Microsoft AI, les Microsoft 365, Microsoft Graph, la recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par les pages modernes SharePoint, Recherche Microsoft et Recherche dans Word, PowerPoint, Outlook et Excel.
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
 
-</br>
+<br/>
 
 Rubriques Viva aide à résoudre un problème d’entreprise majeur dans de nombreuses entreprises, en fournissant les informations aux utilisateurs lorsqu’ils en ont besoin. Par exemple, les nouveaux employés doivent apprendre rapidement un grand nombre de nouvelles informations et rencontrer des conditions dont ils ne connaissent rien lorsqu’ils lisent les informations de l’entreprise. Pour en savoir plus, l’utilisateur devra peut-être s’éloigner de ce qu’il fait et consacrer un temps précieux à la recherche de détails, tels que des informations sur ce terme, les membres de l’organisation comme experts dans le domaine, et les sites et documents liés au terme.
 
@@ -42,11 +42,11 @@ Lorsqu’une rubrique est mentionnée dans du contenu sur des actualités et pag
 
    ![Points forts de la rubrique](../media/knowledge-management/saturn.png) 
 
-Lorsque vous utilisez la recherche dans Word ou PowerPoint, soit par  le biais de la zone de recherche, soit en sélectionnant Rechercher dans le menu contextatif, les résultats affichés peuvent également afficher le résumé de la rubrique.
+Lorsque vous utilisez la recherche dans Word, PowerPoint, Outlook ou Excel, soit par le  biais de la zone de recherche, soit en sélectionnant Rechercher dans le menu contextatif, les résultats qui s’affichent peuvent également afficher le résumé de la rubrique.
 
    ![Capture d’écran montrant la recherche dans Word via la zone de recherche.](../media/knowledge-management/word-search-2.png)
 
-   ![Capture d’écran montrant la recherche dans Word par le biais du menu context de recherche.](../media/knowledge-management/word-search-1.png)
+   ![Capture d’écran montrant la recherche dans Word par le biais du menu contexto de recherche.](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>Indexation des informations
 
@@ -71,7 +71,7 @@ Lorsqu'une rubrique est identifiée et que l'IA détermine qu'elle contient suff
 
 Vos administrateurs d’informations peuvent choisir d’analyser tous les sites SharePoint dans votre client pour les sujets ou simplement en sélectionner certains.
 
-Consultez [Découverte et traitement de rubrique](./topic-experiences-discovery-curation.md)
+Voir [La découverte et la curation des rubriques.](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Rôles
 
@@ -97,14 +97,14 @@ Les responsables d’informations peuvent :
 
 - Confirmez ou supprimez des rubriques qui ont été découverte dans votre client.
 - Créez des rubriques manuellement si nécessaire (par exemple, si les informations fournies ne sont pas suffisantes pour être découvertes par l'IA).
-- Modifier les pages de rubrique existantes.</br>
+- Modifier les pages de rubrique existantes.<br/>
 
 Pour plus d’information, consultez [Gérer les rubriques dans le centre thématique](manage-topics.md).  
 
 
 ## <a name="admin-controls"></a>Contrôles d’administration
 
-Les contrôles d’administration dans Microsoft 365 centre d’administration vous permettent de gérer Les rubriques De LaSerrité. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
+Les contrôles d’administration Microsoft 365 centre d’administration vous permettent de gérer Des rubriques. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
 
 - Contrôler quels utilisateurs de votre organisation sont autorisés à consulter les rubriques dans les pages modernes de SharePoint ou dans les résultats de recherche SharePoint.
 - Contrôler les sites SharePoint qui seront analyser pour identifier les rubriques.
@@ -125,7 +125,8 @@ Les utilisateurs que vous autorisez à consulter les rubriques dans le cadre de 
 
 En outre, les utilisateurs ayant les autorisations appropriées peuvent identifier les éléments, tels que les conversations Yammer, qui sont pertinents pour un sujet, et les ajouter à une rubrique spécifique. 
 
-Consultez [Découverte et traitement de rubrique](./topic-experiences-discovery-curation.md)
+Voir [La découverte et la curation des rubriques.](./topic-experiences-discovery-curation.md)
 
-
-## <a name="see-also"></a>Voir aussi
+<!--
+## See also
+-->

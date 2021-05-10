@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/07/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296730"
+ms.locfileid: "52302099"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -55,7 +55,7 @@ En règle générale, vous pouvez utiliser la procédure suivante pour configure
 Le tableau suivant de cette rubrique répertorie les paramètres de stratégie de groupe disponibles dans Windows 10, version 1703 et fournit des liens vers la rubrique appropriée dans cette bibliothèque de documentation (le cas échéant). 
 
 > [!TIP]
-> Téléchargez la feuille de calcul Paramètres de référence de la stratégie de groupe pour Windows 10 mise à jour de mai [2020 (2004)](https://www.microsoft.com/download/101451). Cette feuille de calcul répertorie les paramètres de stratégie pour les configurations des ordinateurs et des utilisateurs qui sont inclus dans les fichiers de modèles d’administration remis pour la mise à jour Windows 10 mai 2020 (2004). Vous pouvez configurer ces paramètres de stratégie lorsque vous modifiez des objets de stratégie de groupe.
+> Téléchargez la feuille de calcul Paramètres de référence de la stratégie de groupe pour Windows 10 mise à jour de mai [2020 (2004)](https://www.microsoft.com/download/101451). Cette feuille de calcul répertorie les paramètres de stratégie pour les configurations des ordinateurs et des utilisateurs qui sont inclus dans les fichiers de modèles d’administration remis pour la mise à jour Windows 10 mai 2020 (2004). Vous pouvez configurer la référence à la feuille de calcul lorsque vous modifiez des objets de stratégie de groupe.
 
 | Emplacement | Paramètre | Article |
 |:---|:---|:---|
@@ -106,13 +106,13 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 | Root | Randomize scheduled task times | [Configurer des analyses programmées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Analyser | Autoriser les utilisateurs à suspendre l’analyse | [Empêcher les utilisateurs de voir ou d’interagir avec Antivirus Microsoft Defender’interface utilisateur](prevent-end-user-interaction-microsoft-defender-antivirus.md) (non pris en charge Windows 10) |
 | Analyser | Recherchez les dernières définitions de virus et de logiciels espions avant d’exécution d’une analyse programmée | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
-| Analyser | Définir le nombre de jours après lesquels une analyse de rattrapage est forcée | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
-| Analyser | Activer l’analyse complète de rattrapage | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
-| Analyser | Activer l’analyse rapide de rattrapage | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Analyser | Définir le nombre de jours après lesquels une analyse de rattrapage est forcée | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Analyser | Activer l’analyse complète de rattrapage | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Analyser | Activer l’analyse rapide de rattrapage | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | Analyser | Configurer le remplacement de paramètre local pour le pourcentage maximal d’utilisation du processeur | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Analyser | Configurer le remplacement de paramètre local pour le jour de l’analyse de planification | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Analyser | Configurer le remplacement de paramètre local pour le temps d’analyse rapide programmé | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| Analyser | Configurer le remplacement de paramètre local pour l’heure d’analyse prévue | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
+| Analyser | Configurer le remplacement de paramètre local pour l’heure d’analyse programmée | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Analyser | Configurer le remplacement de paramètre local pour le type d’analyse à utiliser pour une analyse programmée | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Analyser | Créer un point de restauration du système | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
 | Analyser | Activer la suppression des éléments du dossier d’historique d’analyse | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
@@ -145,7 +145,7 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 | Mises à jour de l’intelligence de la sécurité | Définir l’ordre des sources pour le téléchargement des mises à jour de l’intelligence de la sécurité | [Gérer les mises à jour Antivirus Microsoft Defender protection et d’intelligence de la sécurité](manage-protection-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Lancer la mise à jour des informations de sécurité au démarrage | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Spécifier le jour de la semaine pour vérifier les mises à jour des informations de sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Spécifier l’intervalle pour vérifier les mises à jour de l’intelligence de la sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Spécifier l’intervalle pour vérifier les mises à jour des informations de sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Spécifier l’heure de recherche des mises à jour de l’intelligence de la sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Activer l’analyse après la mise à jour des informations de sécurité | [Configurer des analyses programmées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Menaces | Spécifier les niveaux d’alerte contre les menaces pour lesquels aucune action par défaut ne doit être prise lorsqu’elle est détectée | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |

@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Découvrez comment rechercher des rubriques dans Microsoft Microsoft Microsoft.
-ms.openlocfilehash: 15b42c9d3689a73c865be53bb29f298fcbf896bd
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281041"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301715"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utiliser Microsoft Search (recherche Microsoft) pour rechercher des rubriques dans les rubriques microsoft
 
-Bien que les utilisateurs de Rubriques Dev peuvent trouver des rubriques par le biais des points forts de rubriques sur leurs sites SharePoint sites, ils peuvent également les trouver par le biais de Microsoft Search (recherche Microsoft). 
+Bien que les utilisateurs de rubriques Topics trouvent des rubriques par le biais des points forts de ces rubriques dans leurs sites SharePoint, ils peuvent également les trouver par le biais de Microsoft Search (recherche Microsoft). 
 
 ## <a name="topic-answer"></a>Réponse à la rubrique
 
@@ -36,7 +36,7 @@ La réponse à la rubrique s’affiche :
 
 La page de rubrique peut s’afficher dans les résultats de la recherche même si la carte de réponse de la rubrique n’apparaît pas.
 
-Les résultats de la recherche dans Word et PowerPoint afficheront également la réponse à la rubrique lorsqu’une réponse est trouvée.
+Les résultats de la recherche dans Word, PowerPoint, Outlook et Excel afficheront également la réponse à la rubrique lorsqu’une réponse est trouvée.
 
 
 ## <a name="acronyms"></a>Acronymes
@@ -47,16 +47,16 @@ Dans Rubriques de Contrôle, vous pouvez modifier manuellement une rubrique afin
 
 ## <a name="bookmarks-and-topics"></a>Signets et rubriques
 
-[Les signets](/microsoftsearch/manage-bookmarks) sont une fonctionnalité de Recherche Microsoft qui permet aux personnes de trouver rapidement des sites et des outils importants à l’aide d’une simple recherche (par exemple, un outil de réservation de voyage sur un site externe en dehors de leur client Microsoft 365). Ils sont créés par les administrateurs de recherche dans Microsoft 365'administration centrale. 
+Les signets sont une fonctionnalité de Recherche Microsoft qui permet aux personnes de trouver rapidement des sites et des [outils](/microsoftsearch/manage-bookmarks) importants à l’aide d’une simple recherche (par exemple, un outil de réservation de voyage sur un site externe en dehors de leur client Microsoft 365). Ils sont créés par les administrateurs de recherche dans Microsoft 365'administration centrale. 
 
 Pour les utilisateurs qui recherchent des informations sur la réservation d’un voyage pour le travail :
 
 - Si certains utilisateurs connaissent le nom de l’outil de voyage (par exemple, « Concur ») il est plus facile de créer un signet pour aller directement sur le site externe.
 - Pour les utilisateurs qui recherchent généralement « voyage », créez une rubrique sur « Voyage » avec les informations qu’ils s’attendent à voir. Envisagez d’ajouter un lien vers le site externe Concur dans la description de la rubrique. Si le lien est plutôt vers un site de réservation de voyage interne hébergé sur le client Microsoft 365, vous pouvez l’ajouter aux « ressources épinglées ».
  
-### <a name="search-results-priority"></a>Priorité des résultats de la recherche 
+### <a name="search-results-priority"></a>Priorité des résultats de recherche 
  
-Dans l’expérience de recherche des utilisateurs, lorsqu’un utilisateur recherche un terme comme « voyage », les résultats de la recherche s’affichent selon la priorité suivante dans Microsoft Search (recherche Microsoft)
+Dans l’expérience de recherche des utilisateurs, lorsqu’un utilisateur recherche un terme comme « voyage », les résultats de la recherche s’affichent selon la priorité suivante dans Recherche Microsoft
 1. Rubriques publiées ou confirmées 
 2. Signets
 3. Rubriques suggérées
