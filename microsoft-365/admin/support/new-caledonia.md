@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d9bbb10f18125307de52b310069d3413d147cd67
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c5af218ecda44a2157b32571d8b37803c0a7e3ae
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545463"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297967"
 ---
 # <a name="contact-support-for-new-caledonia"></a>Contacter le support pour la Nouvelle-Calédienne
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +1 312 843 5147
@@ -31,7 +31,7 @@ ms.locfileid: "50545463"
 
 Français : Mon-Fri 19h00 à 15h00
 
-Anglais : Mon-Fri 19h00 à 15h00
+Anglais : Mon-Fri 19:00-15:00
 
 ### <a name="technical-support"></a>Support technique :
 

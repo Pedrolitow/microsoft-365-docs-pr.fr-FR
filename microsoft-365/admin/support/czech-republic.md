@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f04c1a05ee18472742910b0131a746f7c9b7691c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 77843171550bfe07b0bd8739adc8464e527c7331
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547887"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298949"
 ---
 # <a name="contact-support-for-czech-republic"></a>Contacter le support pour la République tchèque
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 800 701 371
@@ -39,6 +39,6 @@ Tchèque : Mon-Fri 8 h à 18 h
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 239 016 433
+Autre Téléphone numéro : 239 016 433
 
 Frais d’appel local applicables

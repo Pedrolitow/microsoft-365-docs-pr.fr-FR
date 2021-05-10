@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour le Sénégal
+title: Informations de support pour le Mali
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f05ffa119ca03243cba1904867054bd1dab25c46
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 4c0e3a80eb4233501a57206c761bb4285dc851a8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545967"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298087"
 ---
 # <a name="contact-support-for-mali"></a>Contacter le support technique pour le Sénégal
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +1 312 843 5147

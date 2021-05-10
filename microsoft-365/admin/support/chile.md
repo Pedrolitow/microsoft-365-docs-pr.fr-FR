@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d19a08b85f4f102fd4f56e41ab9c070961eb9846
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 47b48e492eb0ed0b299060097c8d9ce00c64a132
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548127"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299927"
 ---
 # <a name="contact-support-for-chile"></a>Contacter le support pour le Chili
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 800 226 826
@@ -35,6 +35,6 @@ Espagnol : Mon-Fri 9 h à 17 h
 
 Espagnol : 24 heures sur 24, 7 jours sur 7
 
-Autre numéro de téléphone : 123 002 000 05
+Autre Téléphone numéro : 123 002 000 05
 
 Frais d’appel local applicables

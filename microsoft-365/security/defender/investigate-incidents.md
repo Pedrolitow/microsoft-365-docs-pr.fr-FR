@@ -1,6 +1,6 @@
 ---
-title: Analyser les incidents dans Microsoft 365 Defender
-description: Analyser les incidents liés aux appareils, aux utilisateurs et aux boîtes aux lettres.
+title: Examiner les incidents dans Microsoft 365 Defender
+description: Examiner les incidents liés aux appareils, aux utilisateurs et aux boîtes aux lettres.
 keywords: incident, incidents, analyse, réponse, ordinateurs, appareils, utilisateurs, identités, courrier électronique, boîte aux lettres, enquête, graphique, preuve
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259634"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300084"
 ---
-# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analyser les incidents dans Microsoft 365 Defender
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender regroupe toutes les alertes, biens, enquêtes et preuves 
 
 Au sein d’un incident, vous analysez les alertes qui affectent votre réseau, comprenez ce qu’elles signifient et rassemblez les preuves afin de pouvoir mettre au point un plan de correction efficace.
 
-## <a name="initial-analysis"></a>Analyse initiale
+## <a name="initial-investigation"></a>Examen initial
 
 Avant de vous plonger dans les détails, jetez un œil aux propriétés et à la synthèse de l’incident.
 
@@ -49,7 +49,7 @@ Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. V
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d’un incident dans la colonne de coche":::
 
-Lorsque vous le faites, un volet récapitulatif s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
+Lorsque vous le faites, un volet de synthèse s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple de volet récapitulatif pour un incident":::
 
@@ -61,9 +61,9 @@ Vous pouvez également ouvrir la page principale d’un incident en sélectionna
 
 La page **Résumé** vous donne un aperçu instantané des principaux éléments à noter concernant l’incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le centre Microsoft 365 sécurité":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le centre de Microsoft 365 de sécurité":::
 
-Les catégories d’attaque vous donnent une vue visuelle et numérique de l’avancement de l’attaque par rapport à la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [ &trade; CK de MITRE ATT&.](https://attack.mitre.org/)
+Les catégories d’attaques vous donnent une vue visuelle et numérique de l’avancement de l’attaque par rapport à la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [ &trade; CK de MITRE ATT&.](https://attack.mitre.org/)
 
 La section l'étendue fournit la liste des principales ressources affectées à cet incident. S’il existe des informations spécifiques sur cet élément (par exemple, niveau de risque, priorité d’examen, et balisage sur les éléments) qui s’affichent également dans cette section.
 
@@ -88,7 +88,7 @@ Voici un exemple.
 
 Par défaut, les alertes sont classés dans l’ordre chronologique pour vous permettre de voir comment l’incident s’est produit au fil du temps. La sélection de chaque alerte vous conduit à la page principale de l’alerte où vous pouvez effectuer une analyse approfondie de cette alerte. 
 
-Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte [dans l’analyse des alertes](investigate-alerts.md)
+Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte pour [examiner les alertes.](investigate-alerts.md)
 
 ## <a name="devices"></a>Appareils
 
@@ -107,7 +107,7 @@ Dans la page appareil, vous pouvez collecter des informations supplémentaires s
 
 ## <a name="users"></a>Utilisateurs
 
-**L’onglet** Utilisateurs répertorie tous les utilisateurs qui ont été identifiés comme faisant partie ou associés à l’incident. Voici un exemple.
+**L’onglet** Utilisateurs répertorie tous les utilisateurs identifiés comme faisant partie ou associés à l’incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident":::
 
@@ -123,11 +123,13 @@ Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des al
 
 ## <a name="investigations"></a>Examens
 
-**L’onglet** Enquêtes répertorie toutes les enquêtes automatisées déclenchées par les alertes dans cet incident. Les enquêtes effectuent des actions de correction ou attendent l’approbation par un analyste des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Microsoft Defender pour Endpoint et Defender pour Office 365.
+**L’onglet** Enquêtes répertorie toutes les [enquêtes](m365d-autoir.md) automatisées déclenchées par les alertes dans cet incident. Les enquêtes effectuent des actions de correction ou attendent l’approbation par un analyste des actions, selon la façon dont vous avez configuré vos enquêtes automatisées pour qu’ils s’exécutent dans Microsoft Defender pour Endpoint et Defender pour Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exemple de page Investigations pour un incident":::
 
 Sélectionnez un examen pour accéder à la page Détails de l’examen pour obtenir des informations complètes sur l’état l’examen et de la correction. Si des actions sont en attente d’approbation dans le cadre de l’examen, elles apparaissent dans l’onglet Actions en attente. Prendre des mesures dans le cadre de la correction des incidents.
+
+Pour plus d’informations, voir [Examen et réponse automatisés dans Microsoft 365 Defender.](m365d-autoir.md)
 
 ## <a name="evidence-and-response"></a>Preuve et réponse
 
@@ -155,8 +157,14 @@ Le graphique d’incident vous permet de comprendre rapidement l’étendue comp
 
 Vous pouvez maintenant comprendre comment l’attaque s’est propagée sur votre réseau au fil du temps, où elle a commencé et jusqu’où l’attaque s’est étendue.
 
+## <a name="next-steps"></a>Étapes suivantes
 
-## <a name="related-topics"></a>Sujets associés
+Selon les besoins :
+
+- [Examiner les alertes d’un incident](investigate-alerts.md)
+- [Examiner les utilisateurs d’un incident](investigate-users.md)
+
+## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des incidents](incidents-overview.md)
 - [Hiérarchiser les incidents](incident-queue.md)

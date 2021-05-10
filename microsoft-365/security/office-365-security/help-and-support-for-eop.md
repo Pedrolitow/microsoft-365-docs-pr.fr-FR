@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5859adec666fc8cd957ab0b199a1bd600279288f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204199"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298027"
 ---
 # <a name="help-and-support-for-eop"></a>Aide et support pour EOP
 
@@ -29,25 +29,25 @@ ms.locfileid: "51204199"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans les organisations Microsoft 365 avec boîtes aux lettres dans Exchange Online ou les organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les ressources de support technique répertoriées dans cet article vous aideront à trouver des réponses si vous avez des difficultés avec EOP. Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
+Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les ressources de support technique répertoriées dans cet article vous aideront à trouver des réponses si vous avez des difficultés avec EOP. Microsoft offre une assistance pour EOP à divers emplacements et via plusieurs méthodes, y compris via des options de support autonome et de support assisté.
 
 ## <a name="self-support-options"></a>Options de support autonome
 
-Lors de la connexion, le Centre d’administration Microsoft 365 fournit des informations sur l’état des services de votre organisation. En outre, la section État du service affiche l’état actuel de vos services, des détails sur les interruptions et les pannes, et répertorie les temps de maintenance planifiés. Le Centre d’administration Microsoft 365 fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur la zone d’état du service, voir [État et continuité du service.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Vous pourrez peut-être trouver de l’aide vous-même à l’aide des outils, forums et sites communautaires répertoriés ici.
+Lors de la connexion, Microsoft 365 centre d’administration central fournit des informations sur l’état des services de votre organisation. En outre, la section État du service affiche l’état actuel de vos services, des détails sur les interruptions et les pannes, et répertorie les temps de maintenance planifiés. Le centre Microsoft 365'administration centrale fournit également des informations sur les problèmes connus et les résolutions attendues. Si vous êtes concerné par un événement de niveau de service, vous devriez voir une alerte de communication (généralement accompagnée d'une icône en forme de cloche). Nous vous recommandons de lire ces informations et d'effectuer les actions appropriées. Pour plus d’informations sur la zone d’état du service, voir [État et continuité du service.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Vous pourrez peut-être trouver de l’aide vous-même à l’aide des outils, forums et sites communautaires répertoriés ici.
 
 [Présentation du produit Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contacter le support relatif aux produits d’entreprises - Aide de l’administrateur](../../admin/contact-support-for-business-products.md)
+[Contacter le support relatif aux produits d’entreprises - Aide de l’administrateur](../../business-video/get-help-support.md)
 
-[Communauté Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365 communauté](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Assistant Support et récupération Microsoft (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Assistant Support et récupération (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Dépannage du flux de messagerie](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Support assisté de Microsoft
 
-Vous pouvez obtenir de l’aide de Microsoft en commençant une nouvelle demande de service dans le Centre d’administration Microsoft 365 ou en appelant au téléphone. Les abonnés au support Premier offrent des options de support supplémentaires.
+Vous pouvez obtenir de l’aide de Microsoft en commençant une nouvelle demande de service dans le centre d’administration Microsoft 365 ou en appelant au téléphone. Les abonnés au support Premier offrent des options de support supplémentaires.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Assistance pour les abonnés au support Microsoft Premier
 
@@ -57,7 +57,7 @@ Pour plus d’informations sur la façon dont le support Premier peut aider votr
 
 ### <a name="ask-for-help-on-the-web"></a>Demander une assistance sur le web
 
-1. Connectez-vous au Centre d’administration Microsoft 365.
+1. Connectez-vous au centre Microsoft 365'administration.
 
 2. Accédez à **Support** \> **Demander une assistance clientèle** \> **Nouvelle demande de service**.
 
@@ -65,9 +65,9 @@ Pour plus d’informations sur la façon dont le support Premier peut aider votr
 
 ### <a name="ask-for-help-on-the-telephone"></a>Demander une assistance téléphonique
 
-1. Connectez-vous au Centre d’administration Microsoft 365.
+1. Connectez-vous au centre Microsoft 365'administration.
 
-2. Pour les problèmes généraux du produit, allez au **support** \> **technique Demander l’assistance** technique du support \> **technique.**
+2. Pour les problèmes généraux du produit, allez au **support** technique Demander un support technique pour \>  \> **le support technique.**
 
    Pour des questions préalables à l'achat d'EOP ou ayant trait à la facturation et aux abonnements, accédez à **Support** \> **Demander une assistance clientèle** \> **Appeler le support de facturation et d'abonnement**.
 
@@ -75,7 +75,7 @@ Pour plus d’informations sur la façon dont le support Premier peut aider votr
 
 ## <a name="support-telephone-numbers"></a>Numéros de téléphone du support technique
 
-Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour contacter le support technique dans le monde entier. La plupart de ces Centres d'aide et de support fournissent une assistance dans votre langue pendant les heures d'ouverture ou une assistance en anglais 24h/24, 7j/7. Si votre emplacement n’est pas répertorié ci-dessous, utilisez l’agent virtuel comme décrit ci-dessus pour trouver votre numéro de téléphone de support local.
+Microsoft met à disposition des numéros de téléphone locaux ou gratuits pour contacter le support technique dans le monde entier. La plupart de ces Centres d'aide et de support fournissent une assistance dans votre langue pendant les heures d'ouverture ou une assistance en anglais 24h/24, 7j/7. Si votre emplacement ne figure pas dans la liste ci-dessous, utilisez l’agent virtuel comme décrit ci-dessus pour trouver votre numéro de téléphone de support local.
 
 ****
 
