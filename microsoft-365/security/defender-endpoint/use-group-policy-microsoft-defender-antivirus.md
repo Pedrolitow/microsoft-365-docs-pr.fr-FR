@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 04/13/2021
+ms.date: 05/07/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 8db14b016491ac10872f29f04b8166e548d6c63b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275335"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296730"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Utiliser les paramètres de stratégie de groupe pour configurer et gérer les Antivirus Microsoft Defender
 
@@ -33,6 +33,8 @@ ms.locfileid: "52275335"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
 Vous pouvez utiliser [la stratégie de](/windows/win32/srvnodes/group-policy) groupe pour configurer et gérer les Antivirus Microsoft Defender sur vos points de terminaison.
+
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>Configurer les Antivirus Microsoft Defender à l’aide de la stratégie de groupe
 
 En règle générale, vous pouvez utiliser la procédure suivante pour configurer ou modifier Antivirus Microsoft Defender de stratégie de groupe :
 
@@ -48,9 +50,14 @@ En règle générale, vous pouvez utiliser la procédure suivante pour configure
 
 6. [Déployez l’GPO mis à jour comme vous le faites normalement.](/windows/win32/srvnodes/group-policy) 
 
-Le tableau suivant de cette rubrique répertorie les paramètres de stratégie de groupe disponibles dans Windows 10, version 1703 et fournit des liens vers la rubrique appropriée dans cette bibliothèque de documentation (le cas échéant).
+## <a name="group-policy-settings-and-resources"></a>Ressources et paramètres de stratégie de groupe
 
-| Lieu | Paramètre | Article |
+Le tableau suivant de cette rubrique répertorie les paramètres de stratégie de groupe disponibles dans Windows 10, version 1703 et fournit des liens vers la rubrique appropriée dans cette bibliothèque de documentation (le cas échéant). 
+
+> [!TIP]
+> Téléchargez la feuille de calcul Paramètres de référence de la stratégie de groupe pour Windows 10 mise à jour de mai [2020 (2004)](https://www.microsoft.com/download/101451). Cette feuille de calcul répertorie les paramètres de stratégie pour les configurations des ordinateurs et des utilisateurs qui sont inclus dans les fichiers de modèles d’administration remis pour la mise à jour Windows 10 mai 2020 (2004). Vous pouvez configurer ces paramètres de stratégie lorsque vous modifiez des objets de stratégie de groupe.
+
+| Emplacement | Paramètre | Article |
 |:---|:---|:---|
 | Interface client | Activer le mode d’interface utilisateur sans en-tête | [Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur](prevent-end-user-interaction-microsoft-defender-antivirus.md) |
 | Interface client | Afficher du texte supplémentaire pour les clients lorsqu’ils doivent effectuer une action | [Configurer les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md) |
@@ -61,14 +68,14 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 | Exclusions | Exclusions de processus | [Configurer et valider des exclusions dans Antivirus Microsoft Defender analyses](configure-exclusions-microsoft-defender-antivirus.md) | 
 | Exclusions | Désactiver les exclusions automatiques | [Configurer et valider des exclusions dans Antivirus Microsoft Defender analyses](configure-exclusions-microsoft-defender-antivirus.md) |
 | MAPS | Configurer la fonctionnalité « Bloquer à la première vue » | [Activer bloquer à la première vue](configure-block-at-first-sight-microsoft-defender-antivirus.md) |
-| MAPS | Rejoindre Microsoft MAPS | [Activer la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| MAPS | Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont requises | [Activer la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| MAPS | Rejoindre Microsoft MAPS | [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| MAPS | Envoyer des exemples de fichiers lorsque des analyses plus approfondies sont requises | [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | MAPS | Configurer le remplacement de paramètre local pour la création de rapports à Microsoft MAPS | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | Configurer la vérification cloud étendue | [Configurer le délai de blocage du cloud](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | Sélectionner le niveau de protection cloud | [Spécifier le niveau de protection pour le cloud](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| Système d’inspection du réseau | Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau | N’est plus pertinent |
-| Système d’inspection du réseau | Activer le retrait des définitions | N’est plus pertinent |
-| Système d’inspection du réseau | Activer la reconnaissance de protocole | N’est plus pertinent |
+| Système d’inspection du réseau | Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau | [Spécifier des ensembles de définitions supplémentaires pour l’inspection du trafic réseau](specify-additional-definitions-network-traffic-inspection-mdav.md) |
+| Système d’inspection du réseau | Activer le retrait des définitions | [Configurer le retrait des définitions](turn-on-definition-retirement.md)  |
+| Système d’inspection du réseau | Activer la reconnaissance de protocole | [Activer la reconnaissance de protocole](turn-on-protocol-recognition.md)  |
 | Quarantaine | Configurer le remplacement de paramètre local pour la suppression des éléments du dossier de mise en quarantaine | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Quarantaine | Configurer la suppression des éléments du dossier de mise en quarantaine | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
 | Protection en temps réel | Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur | [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres de stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -127,25 +134,24 @@ Le tableau suivant de cette rubrique répertorie les paramètres de stratégie d
 | Analyser | Spécifier l’heure de la journée pour exécuter une analyse programmée | [Configurer des analyses programmées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Analyser | Démarrer l’analyse programmée uniquement lorsque l’ordinateur est en cours d’utilisation | [Configurer des analyses programmées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Autoriser les mises à jour des informations de sécurité à partir de Microsoft Update | [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Autoriser les mises à jour de l’intelligence de la sécurité lors de l’exécution sur batterie | [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Autoriser les mises à jour d’informations de sécurité lors de l’exécution sur batterie | [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Autoriser les notifications à désactiver les rapports basés sur des définitions pour Microsoft MAPS | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Autoriser les mises à jour d’informations de sécurité en temps réel basées sur des rapports à Microsoft MAPS | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Recherchez les dernières définitions de virus et de logiciels espions au démarrage | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Définir des partages de fichiers pour le téléchargement des mises à jour d’informations de sécurité | [Gérer les mises à jour Antivirus Microsoft Defender protection et d’intelligence de la sécurité](manage-protection-updates-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours après lesquels une mise à jour de l’intelligence de sécurité de rattrapage est requise | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours avant que les définitions de logiciels espions ne soient considérées comme non à jour | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours avant que les définitions de virus soient considérées comme non à jour | [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours après lesquels une mise à jour de l’intelligence de sécurité de rattrapage est requise | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours avant que les définitions de logiciels espions ne soient considérées comme non à jour | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Définir le nombre de jours avant que les définitions de virus soient considérées comme non à jour | [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Définir l’ordre des sources pour le téléchargement des mises à jour de l’intelligence de la sécurité | [Gérer les mises à jour Antivirus Microsoft Defender protection et d’intelligence de la sécurité](manage-protection-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Lancer la mise à jour des informations de sécurité au démarrage | [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Spécifier le jour de la semaine pour vérifier les mises à jour des informations de sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
-| Mises à jour de l’intelligence de la sécurité | Spécifier l’intervalle pour vérifier les mises à jour des informations de sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
+| Mises à jour de l’intelligence de la sécurité | Spécifier l’intervalle pour vérifier les mises à jour de l’intelligence de la sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Spécifier l’heure de recherche des mises à jour de l’intelligence de la sécurité | [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) |
 | Mises à jour de l’intelligence de la sécurité | Activer l’analyse après la mise à jour des informations de sécurité | [Configurer des analyses programmées pour Antivirus Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Menaces | Spécifier les niveaux d’alerte contre les menaces pour lesquels aucune action par défaut ne doit être prise lorsqu’elle est détectée | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
 | Menaces | Spécifier les menaces sur lesquelles l’action par défaut ne doit pas être prise lorsqu’elle est détectée | [Configurer la correction pour Antivirus Microsoft Defender analyses](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## <a name="related-articles"></a>Articles connexes
+## <a name="see-also"></a>Voir aussi
 
 - [Rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

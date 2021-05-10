@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1118c8ec115b01083259d23bdbd955c3d0d6beac
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 94d8996f876451fd30e39c08cdff9cb7d8c61996
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548859"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296610"
 ---
 # <a name="contact-support-for-australia"></a>Contacter le support pour l’Australie
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 1800 197 503
@@ -35,6 +35,6 @@ Anglais : Mon-Fri 9h00 à 18h00
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 02 8223 9959
+Autre Téléphone numéro : 02 8223 9959
 
 Frais d’appel local applicables

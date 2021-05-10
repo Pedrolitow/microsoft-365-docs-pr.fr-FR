@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5247948cd365c7946eb89ed7aa67924ced00a7e4
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: dabfd8a901d4b4c375cf666e3fd1b2fe281db347
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545919"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295842"
 ---
 # <a name="contact-support-for-martinique"></a>Contacter le support pour la Martinique
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +1 312 843 5147
@@ -35,7 +35,7 @@ Anglais : Mon-Fri 6 h-13 h
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 18h00 à 13h00
+Français : Mon-Fri 6 h-13 h
 
 Anglais : 24h/24, 7j/7
 

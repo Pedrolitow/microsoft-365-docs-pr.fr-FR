@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aa3250f530fd37454f28e22457c731264e0bfdbb
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b2cde3754f06d5aa567c923eb51f5cee72bb6d92
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545667"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295710"
 ---
 # <a name="contact-support-for-morocco"></a>Contacter le support technique pour le Maroc
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 0801 000 809
@@ -43,7 +43,7 @@ Anglais : Mon-Fri 8 h à 16 h
 
 Arabe : Sun-Thu 8 h à 16 h
 
-Français : Mon-Fri 7h00 à 20h00
+Français : Mon-Fri 7 H 00 à 20 h 00
 
 Anglais : 24h/24, 7j/7
 

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e4bbef3fa2548fc35a4b0869b232335bfecaa24
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: ad044d7cb0ad2ed15d738e99deb14a9a04218479
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548259"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296815"
 ---
-# <a name="contact-support-for-canada"></a>Contacter le support pour le Canada
+# <a name="contact-support-for-canada"></a>Contacter le support technique pour le Canada
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 1 800 865 9408

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f6c8a8e0b58fe31e7dcaba91b81ca36bd03e9f06
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9a634f05c1d4a7adbe7df16b328429e91dbb20ce
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547419"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296226"
 ---
 # <a name="contact-support-for-finland"></a>Contacter le support technique pour la Finlande
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 0800 98462
@@ -35,6 +35,6 @@ Anglais : Lun.-ven. 9H-17h
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 09 72 51 96 30
+Autre Téléphone numéro : 09 72 51 96 30
 
 Frais d’appel local applicables

@@ -1,5 +1,5 @@
 ---
-title: Référence de la protection contre la perte de données
+title: Référence de protection contre la perte de données
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -22,17 +22,17 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: documents de référence sur la protection contre la perte de données
-ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114400"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296767"
 ---
 # <a name="data-loss-prevention-reference"></a>Référence de protection contre la perte de données
  
 > [!IMPORTANT]
-> Il s'agit de la rubrique de référence qui n'est plus la ressource principale pour Microsoft 365 protection contre la perte de données (DLP). L'ensemble de contenu DLP est mis à jour et restructuré. Les rubriques couvertes dans cet article vont passer à de nouveaux articles mis à jour. Pour plus d'informations sur la protection contre la perte de données, voir [En savoir plus sur la protection contre la perte de données.](dlp-learn-about-dlp.md)
+> Il s’agit de la rubrique de référence qui n’est plus la ressource principale pour Microsoft 365 protection contre la perte de données (DLP). L’ensemble de contenu DLP est mis à jour et restructuré. Les rubriques couvertes dans cet article vont passer à de nouveaux articles mis à jour. Pour plus d’informations sur la protection contre la perte de données, voir [En savoir plus sur la protection contre la perte de données.](dlp-learn-about-dlp.md)
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -385,7 +385,7 @@ Lorsque vous utilisez une [étiquette de rétention](retention.md#retention-labe
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette de confidentialité comme condition dans une stratégie DLP
 
-L'étiquette de confidentialité comme condition dans les stratégies DLP est actuellement en cours de préparation. [En savoir plus](./dlp-sensitivity-label-as-condition.md).
+[En savoir plus](./dlp-sensitivity-label-as-condition.md) sur l’utilisation de l’étiquette de confidentialité comme condition dans les stratégies DLP.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Relations entre cette fonctionnalité et d’autres fonctionnalités
 
@@ -518,7 +518,7 @@ Au fur et à mesure de l’ajout ou de la modification de documents dans ses sit
 La protection contre la perte de données évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Pour empêcher le partage de documents avant que les stratégies DLP n'ont eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué tant que son contenu n'a pas été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default). 
+> Afin d’empêcher le partage de documents avant que les stratégies DLP n’ont eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué jusqu’à ce que son contenu ait été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation des stratégies dans Exchange Online, Outlook et Outlook sur le web
 

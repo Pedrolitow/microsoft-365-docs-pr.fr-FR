@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 95dcb4b707919d8f944282f433345bd51379203b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 5ccc39d25b4aa8fee662b4710f2560f4ad3dfd30
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546603"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296010"
 ---
 # <a name="contact-support-for-japan"></a>Contacter le support technique pour le Japon
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 0120 996 680 (Office 365 Entreprise)
@@ -51,7 +51,7 @@ Anglais : 24h/24, 7j/7
 
 Le support technique téléphonique est disponible de 9 h 00 à 17 h 30 les jours de la semaine. Pour les problèmes de gravité élevée, le support technique est disponible 24 heures sur 24, 7 jours sur 7.
 
-Autre numéro de téléphone :
+Autre Téléphone numéro :
 
 Frais d’appel local applicables
 

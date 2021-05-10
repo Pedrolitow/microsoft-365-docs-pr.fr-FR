@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Découvrez comment supprimer un ancien domaine de Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
-ms.openlocfilehash: 916730975e9e17c42b01d9fa0ff55b3cb7078f66
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+description: Découvrez comment supprimer un ancien domaine d’Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine.
+ms.openlocfilehash: ca12a886c508024bf39ae9e619744a355376a80d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470964"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296706"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
   
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-Supprimez-vous votre domaine car vous souhaitez l’ajouter à un autre plan d’abonnement Microsoft 365 ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
+Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan Microsoft 365 abonnement ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Étape 1 : Déplacer des utilisateurs vers un autre domaine
 
@@ -97,7 +97,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 3. Sous **l’onglet** Compte, **sélectionnez Gérer** le nom d’utilisateur, puis choisissez un autre domaine.
   
-4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
+4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -113,7 +113,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 3. Sélectionnez **Définir comme principal** > **Save** > **Close**.
   
-4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
+4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -129,7 +129,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 3. Sélectionnez **Définir comme principal** > **Save** > **Close**.
   
-4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
+4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -203,18 +203,18 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Combien de temps faut-il pour qu'un domaine soit supprimé ?
 
-La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minutes s’il n’est pas référencé dans un grand nombre d’endroits tels que les groupes de sécurité, les listes de distribution, les utilisateurs et les groupes Microsoft 365. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
+La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minutes s’il n’est pas référencé dans un grand nombre d’endroits tels que les groupes de sécurité, les listes de distribution, les utilisateurs et les groupes Microsoft 365 de sécurité. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
   
 Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShell pour interroger tous les utilisateurs, puis déplacez-les vers un autre domaine. Sinon, il est possible que quelques-uns des utilisateurs manquent dans l'interface utilisateur. De plus, lorsque vous voudrez supprimer le domaine, vous ne pourrez pas et vous ne saurez pas pourquoi. Pour en savoir plus, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
-## <a name="still-need-help"></a>Encore besoin d’aide ?
+## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Vous ne pouvez pas supprimer le domaine [« onmicrosoft.com »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateur reviennent à l’adresse « .onmicrosoft.com » en tant que SMTP/UserprincipalName principal.
+> Vous ne pouvez pas supprimer le domaine [« onmicrosoft.com »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateurs reviennent à l’adresse « .onmicrosoft.com » en tant que SMTP/UserprincipalName principal.
   
-Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../contact-support-for-business-products.md) et nous vous aiderons à effectuer cette tâche.
+Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../../business-video/get-help-support.md) et nous vous aiderons à effectuer cette tâche.
   
 ::: moniker-end
 
