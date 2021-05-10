@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveiller et gérer la suppression de contenu, que vous utilisiez une révision de destruction ou que le contenu soit automatiquement supprimé selon les paramètres que vous avez configurés.
-ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b64db336aa619313f2ff744e94d48e44c13856a0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488167"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296755"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -52,7 +52,7 @@ Assurez-vous que l’audit est activé au moins un jour avant la première actio
 
 ## <a name="disposition-reviews"></a>Révisions avant destruction
 
-Lorsque le contenu atteint la fin de la période de rétention, vous souhaiterez peut-être réviser ce contenu et confirmer s’il peut être supprimé définitivement (« supprimé »). Par exemple, au lieu de supprimer le contenu, vous devrez peut-être :
+Lorsque le contenu atteint la fin de la période de rétention, vous souhaiterez peut-être réviser ce contenu et confirmer s’il peut être supprimé définitivement (« supprimé »). Par exemple, au lieu de supprimer le contenu, vous devrez peut-être :
   
 - Suspendre la suppression de contenu pertinent en cas de litige ou d’audit.
 
@@ -133,7 +133,7 @@ Ces éléments affichent **Enregistrements supprimés** dans la colonne **Type**
 
 ![Éléments supprimés sans révision avant destruction](../media/records-disposed2.png)
 
-Les éléments qui s’affichent dans l’onglet **Éléments supprimés** sont conservés pendant sept ans après la suppression de l’élément, avec une limite d’un million d’éléments par enregistrement pour cette période. Si vous voyez le nombre de **Count** approcher cette limite d'un million, et que vous avez besoin d'une preuve de destruction pour vos enregistrements, contactez le [Support Microsoft](/office365/admin/contact-support-for-business-products).
+Les éléments qui s’affichent dans l’onglet **Éléments supprimés** sont conservés pendant sept ans après la suppression de l’élément, avec une limite d’un million d’éléments par enregistrement pour cette période. Si vous voyez le nombre de **Count** approcher cette limite d'un million, et que vous avez besoin d'une preuve de destruction pour vos enregistrements, contactez le [Support Microsoft](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Cette fonctionnalité est basée sur les informations du [Journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite par conséquent que l’audit soit [Activé et accessible à la recherche](turn-audit-log-search-on-or-off.md) pour la capture des événements correspondants.

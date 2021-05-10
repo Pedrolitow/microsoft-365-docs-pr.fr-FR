@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
-ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644655"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297271"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 
 Lorsque votre abonnement se termine (parce qu’il est arrivé à sa date d’expiration ou que vous avez décidé de l’annuler), votre accès aux services, applications et données client Microsoft 365 passent par plusieurs états avant la désactivation complète de l’abonnement ou sa *suppression*. En connaissance de cette progression, vous aurez toutes les cartes en main pour réactiver votre abonnement avant qu’il ne soit trop tard, ou si vous ne souhaitez plus utiliser Microsoft 365, pour sauvegarder vos données avant leur suppression finale.
 
-Veuillez consulter ces informations essentielles avant de contacter le [service clientèle de Microsoft 365](../../admin/contact-support-for-business-products.md).
+Veuillez consulter ces informations essentielles avant de contacter le [service clientèle de Microsoft 365](../../business-video/get-help-support.md).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Qu’arrive-t-il à mes données à l’expiration de mon abonnement ?
 
@@ -73,7 +73,7 @@ Pour plus d'informations sur l'annulation de votre abonnement, consultez la rubr
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Quelles options s’offrent à moi si mon abonnement expire bientôt ?
 
-Tant que votre abonnement est actif, vous et vos utilisateurs finaux disposez d'un accès normal à vos données, aux services tels que le courrier électronique et OneDrive Entreprise, ainsi qu’aux applications Office. En tant qu'administrateur, vous recevez plusieurs notifications par courrier électronique et dans le Centre d'administration lorsque la date d'expiration de votre abonnement approche.
+Tant que votre abonnement est actif, vous et vos utilisateurs finaux disposez d'un accès normal à vos données, aux services tels que le courrier électronique et OneDrive Entreprise, et aux applications Office. En tant qu'administrateur, vous recevez plusieurs notifications par courrier électronique et dans le Centre d'administration lorsque la date d'expiration de votre abonnement approche.
   
 Avant que l’abonnement n’atteigne sa date d’expiration, plusieurs options s’offrent à vous :
   
@@ -99,7 +99,7 @@ Avant que l’abonnement n’atteigne sa date d’expiration, plusieurs options 
 
 ## <a name="what-happens-after-my-subscription-expires"></a>Que se passe-t-il une fois mon abonnement expiré ?
 
-Si vous laissez votre abonnement expirer, il passe par plusieurs états avant sa suppression finale. En tant qu'administrateur, cela vous laisse le temps de le réactiver si vous voulez continuer à utiliser le service, ou de sauvegarder vos données si vous décidez de ne plus utiliser l'abonnement.
+Si vous laissez votre abonnement expirer, il passe par plusieurs états avant sa suppression finale. En tant qu’administrateur, cela vous laisse le temps de le réactiver si vous voulez continuer à utiliser le service, ou de sauvegarder vos données si vous décidez de ne plus utiliser l’abonnement.
   
 Voici ce à quoi vous pouvez vous attendre lorsque votre abonnement atteint ces différents états.
   
@@ -123,9 +123,9 @@ En tant qu'administrateur général ou de facturation, vous pouvez [réactiver l
   
  **Ce à quoi vous devez vous attendre :** si vous ne réactivez pas votre abonnement tant qu’il est expiré ou désactivé, il est supprimé.
   
-Les administrateurs et les utilisateurs n’ont plus accès aux services ou aux applications Office inclus dans l’abonnement. Toutes les données client, par exemple les données, les documents et les messages électroniques des utilisateurs, sont supprimées définitivement et irrémédiablement.
+Les administrateurs et les utilisateurs n'ont plus accès aux services ou applications Office inclus dans l'abonnement. Toutes les données client, par exemple les données, les documents et les messages électroniques des utilisateurs, sont supprimées définitivement et irrémédiablement.
   
-À ce stade, vous ne pouvez plus réactiver l'abonnement. Toutefois, en tant qu'administrateur général ou de facturation, vous pouvez toujours accéder à centre d'administration pour gérer d'autres abonnements ou acheter de nouveaux abonnements pour répondre aux besoins de votre entreprise.
+À ce stade, vous ne pouvez pas réactiver l'abonnement. Toutefois, en tant qu'administrateur général ou administrateur de facturation, vous pouvez toujours accéder à Centre d'administration pour gérer d'autres abonnements ou acheter de nouveaux abonnements pour répondre aux besoins de votre entreprise.
   
 > [!NOTE]
 > - L'ajout d'un nouvel abonnement du même type que celui précédemment supprimé ne restaure pas les données associées à l'abonnement supprimé.

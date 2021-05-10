@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Découvrez comment un administrateur général peut modifier l’adresse de messagerie et le nom complet d’un utilisateur. '
-ms.openlocfilehash: 94ed05d87fa290f2ae1059ae04c62c5d0d5e6860
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023772"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291018"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
@@ -50,7 +50,7 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
     
 2. Sélectionnez le nom de l’utilisateur, puis sous l’onglet **Compte**, sélectionnez **Gérer le nom d’utilisateur**.
     
-3. Dans la première zone, tapez la première partie de la nouvelle adresse de courrier. Si vous avez ajouté votre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias de messagerie dans la liste déroulante. 
+3. Dans la première case, tapez la première partie de la nouvelle adresse e-mail. Si vous avez ajouté votre propre domaine à Microsoft 365, choisissez le domaine pour le nouvel alias de messagerie en utilisant la liste déroulante. 
 
 4. Sélectionnez **Enregistrer les modifications**.
 
@@ -63,7 +63,7 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 2. Sélectionnez l’utilisateur. Dans le volet du menu volant, en regard de **Nom d’utilisateur/E-mail**, sélectionnez **Modifier**.
 
-3. Dans la première zone, tapez la première partie de la nouvelle adresse de courrier. Si vous avez ajouté votre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante.
+3. Dans la première case, tapez la première partie de la nouvelle adresse e-mail. Si vous avez ajouté votre propre domaine à Microsoft 365, vous pouvez choisir le domaine pour le nouvel alias de messagerie en utilisant la liste déroulante.
 
 4. Sélectionnez **Enregistrer**.
 
@@ -75,7 +75,7 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 2. Sélectionnez l’utilisateur. Dans le volet du menu volant, en regard de **Nom d’utilisateur/E-mail**, sélectionnez **Modifier**.
 
-3. Dans la première zone, tapez la première partie de la nouvelle adresse de courrier. Si vous avez ajouté votre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias d'e-mail dans la liste déroulante.
+3. Dans la première case, tapez la première partie de la nouvelle adresse e-mail. Si vous avez ajouté votre propre domaine à Microsoft 365, vous pouvez choisir le domaine pour le nouvel alias de messagerie en utilisant la liste déroulante.
 
 4. Sélectionnez **Enregistrer**.
 
@@ -221,9 +221,9 @@ L'application de cette modification dans tous les services peut prendre jusqu'à
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>« Impossible de trouver un paramètre correspondant au nom "EmailAddresses" »
 
-Si le message d’erreur « **Impossible de trouver un paramètre correspondant au nom ’EmailAddresses** » s’affiche, cela signifie qu’il faut un peu plus de temps pour configurer votre client, ou votre domaine personnalisé si vous venez d’en ajouter un. Le processus de configuration peut prendre jusqu’à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le [support](../contact-support-for-business-products.md) et demandez-lui d’effectuer une synchronisation complète pour vous.
+Si le message d’erreur « **Impossible de trouver un paramètre correspondant au nom ’EmailAddresses** » s’affiche, cela signifie qu’il faut un peu plus de temps pour configurer votre client, ou votre domaine personnalisé si vous venez d’en ajouter un. Le processus de configuration peut prendre jusqu’à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le [support](../../business-video/get-help-support.md) et demandez-lui d’effectuer une synchronisation complète pour vous.
   
-### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>« Impossible de modifier l’utilisateur. Vérifiez les informations sur l’utilisateur et réessayez. »
+### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>«Nous sommes désolés, l'utilisateur n'a pas pu être édité. Vérifiez les informations de l'utilisateur et réessayez»
 
 Si le message d'erreur « **Impossible de modifier l'utilisateur. Vérifiez les informations sur l'utilisateur et réessayez.** Cela signifie que vous n’êtes pas un administrateur général et que vous n’êtes pas autorisé à modifier le nom de l’utilisateur. Recherchez l'administrateur global au sein de votre entreprise et demandez-lui d'apporter la modification.
 

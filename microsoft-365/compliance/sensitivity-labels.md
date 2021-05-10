@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: da660f79cd218c4b97cd2159f2811985d4651cef
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd3cc0a71fab9f2ceb6d3219a371bb4d5c030744
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245623"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297247"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -49,7 +49,9 @@ Exemple illustrant les étiquettes de confidentialité disponibles dans Excel à
 Pour appliquer des étiquettes de confidentialité, les utilisateurs doivent être connectés avec leur compte Microsoft 365 professionnel ou scolaire.
 
 > [!NOTE]
-> Pour les clients du secteur public américain, les étiquettes de niveau de confidentialité sont [désormais prises en charge pour les environnements du cloud de la communauté du secteur public et le cloud de la communauté du secteur public de haut niveau](/officeupdates/current-channel#version-2101-january-26) et actuellement en cours de déploiement pour les environnements DoD.
+> Pour les clients du gouvernement américain, les étiquettes de niveau de vie privée sont désormais pris en charge pour toutes les plateformes :
+> - Pour les environnements élevés du GCC et du GCC : notes de publication pour [Office pour Windows](/officeupdates/current-channel#version-2101-january-26) et [Office pour Mac](/officeupdates/release-notes-office-for-mac#feature-updates-2)
+> - Pour les environnements DoD : notes de publication pour [Office pour Windows](/officeupdates/current-channel#version-2103-march-30)
 >
 > Si vous utilisez le client d’étiquettes et le scanneur unifiés de Azure Information Protection, consultez la [Description du service public premium Azure Information Protection](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
@@ -219,13 +221,14 @@ Une stratégie d’étiquette comprend les éléments suivants :
 - les utilisateurs et les groupes auxquels la stratégie sera attribuée avec des étiquettes.
 - l’étendue de la stratégie et des paramètres de stratégie pour cette étendue (comme l’étiquette par défaut pour les fichiers et les e-mails).
 
-Vous pouvez inclure un utilisateur dans plusieurs stratégies d’étiquette, et celui-ci pourra voir toutes les étiquettes de confidentialité et paramètres de ces stratégies. En cas de conflit dans les paramètres de plusieurs stratégies, le paramètre de la stratégie ayant la priorité la plus élevée est appliqué. En d’autres termes, la priorité la plus élevée l’emporte pour chaque paramètre.
+Vous pouvez inclure un utilisateur dans plusieurs stratégies d’étiquette, et celui-ci pourra voir toutes les étiquettes de confidentialité et paramètres de ces stratégies. En cas de conflit dans les paramètres de plusieurs stratégies, les paramètres de la stratégie ayant la priorité la plus élevée (position la plus forte) sont appliqués. En d’autres termes, la priorité la plus élevée l’emporte pour chaque paramètre.
 
-Si vous ne voyez pas l’étiquette ou le paramètre de stratégie d’étiquette attendu pour un utilisateur ou un groupe, vérifiez l’ordre des stratégies d’étiquette de confidentialité. Pour réorganiser les stratégies d’étiquette, sélectionnez une stratégie d’étiquette de confidentialité > sélectionnez les points de suspension sur la droite > **Descendre** ou **Monter**.
+Si vous ne voyez pas l’étiquette ou le paramètre de stratégie d’étiquette attendu pour un utilisateur ou un groupe, vérifiez l’ordre des stratégies d’étiquette de confidentialité. Vous devrez peut-être déplacer la stratégie vers le bas. Pour réorganiser les stratégies d’étiquette, sélectionnez une stratégie d’étiquette de confidentialité > sélectionnez les points de suspension sur la droite > **Descendre** ou **Monter**.
 
 ![Option déplacer dans la page pour les stratégies d’étiquette de confidentialité](../media/sensitivity-label-policy-priority.png)
 
-Si vous utilisez des étiquettes de rétention en plus des étiquettes de confidentialité, il est important de ne pas oublier l'aspect prioritaire des stratégies d’étiquette de confidentialité, mais pas pour les [étiquettes de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence).
+> [!NOTE]
+> N’oubliez pas : en cas de conflit de paramètres pour un utilisateur à qui plusieurs stratégies ont été affectées, le paramètre de la stratégie ayant la priorité la plus élevée (position la plus faible) est appliqué.
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Étiquettes de niveau de confidentialité et étiquettes Azure Information Protection
 
