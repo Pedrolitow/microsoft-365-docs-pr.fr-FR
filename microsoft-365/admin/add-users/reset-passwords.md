@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Découvrez comment réinitialiser le mot de passe d’un utilisateur dans Microsoft 365 abonnement pour les entreprises.
-ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8720942d60b5ce4efaca8885bd5209cb3e7e7ef8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241699"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290994"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -86,7 +86,7 @@ Si vous avez oublié votre mot de passe et que vous ne pouvez pas vous y inscrir
 
 - Assurez-vous que vous avez fourni d’autres informations de contact, notamment un numéro de téléphone mobile.
 
-- Sinon, [appelez le Support Microsoft.](../contact-support-for-business-products.md)
+- Sinon, [appelez le Support Microsoft.](../../business-video/get-help-support.md)
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Réinitialiser tous les mots de passe d’entreprise pour tous les membres de votre organisation en même temps
 <a name="bkmk_forgot"> </a>

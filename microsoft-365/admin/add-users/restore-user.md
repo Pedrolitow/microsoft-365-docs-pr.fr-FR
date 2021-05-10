@@ -23,16 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Découvrez comment restaurer les comptes d’utilisateur supprimés et toutes les données associées.
-ms.openlocfilehash: 9cdc4100f963ed450b50caa0f07a3863bc87992d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244031"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291066"
 ---
 # <a name="restore-a-user"></a>Restaurer un utilisateur
    
-Lorsque vous restaurez un compte d'utilisateur dans les 30 jours après sa suppression, celui-ci et toutes les données associées sont restaurés. L'utilisateur peut se connecter avec le même compte professionnel ou scolaire. Sa boîte aux lettres est entièrement restaurée. Pour déterminer le temps restant avant qu'un compte d'utilisateur spécifique ne puisse plus être restauré, [contactez-nous](../contact-support-for-business-products.md).
+Lorsque vous restaurez un compte d'utilisateur dans les 30 jours après sa suppression, celui-ci et toutes les données associées sont restaurés. L'utilisateur peut se connecter avec le même compte professionnel ou scolaire. Sa boîte aux lettres est entièrement restaurée. Pour déterminer le temps restant avant qu'un compte d'utilisateur spécifique ne puisse plus être restauré, [contactez-nous](../../business-video/get-help-support.md).
   
 Voici quelques conseils :
   

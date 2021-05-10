@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269503"
+ms.locfileid: "52280426"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -85,9 +85,9 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 
 5. Terminez l’assistant pour enregistrer vos paramètres.
 
-Pour plus d’informations sur les stratégies de rétention pour Teams, consultez [Stratégies de rétention dans Microsoft Teams](/microsoftteams/retention-policies) dans la documentation Teams.
+Pour obtenir des conseils permettant de déterminer quand utiliser les stratégies de rétention pour Teams et comprendre l’expérience de l’utilisateur final, voir [Gérer les stratégies de rétention pour Microsoft Teams](/microsoftteams/retention-policies) dans la documentation Teams.
 
-Pour obtenir des détails techniques sur le fonctionnement de la rétention pour Teams, y compris les éléments de messages pris en charge pour la rétention et le minutage des informations avec des exemples de stratégies pas à pas, consultez [En savoir plus sur la rétention de Microsoft Teams](retention-policies-teams.md).
+Pour obtenir des détails techniques sur le fonctionnement de la rétention pour Teams, y compris les éléments de messages pris en charge pour la rétention et le minutage des informations avec des exemples pas à pas, consultez [En savoir plus sur la rétention de Microsoft Teams](retention-policies-teams.md).
 
 #### <a name="known-configuration-issues"></a>Problèmes de configuration connus
 

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5fcdc7d9890df18fa24c80a2169c75b1300b986c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 2fbfe46a3f0f99adca974765e370f2bbd766b882
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543507"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52294982"
 ---
 # <a name="contact-support-for-vatican-city"></a>Contacter le support technique de la ville du Paris
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 800 917 919
@@ -39,6 +39,6 @@ Italien : Mon-Fri 9h00 à 18h00
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 02 6943 0746
+Autre Téléphone numéro : 02 6943 0746
 
 Frais d’appel local applicables

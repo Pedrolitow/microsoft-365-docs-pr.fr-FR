@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0c23823b76a6cdf262b43aef1a581f59d2c69b4e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: dbc41b13c8b4d8d05b794988159f3bbff081fa71
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543747"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295042"
 ---
 # <a name="contact-support-for-turks-and-caicos-islands"></a>Contacter le support technique pour les îles Turks-et-Caïques
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +1 312 843 5145

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 452461f2147484b6bf5f034b612afccdd08e1449
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 0f167e1634071eefe6a5563bc1ed0fe92cfcc2d6
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544491"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295402"
 ---
 # <a name="contact-support-for-singapore"></a>Contacter le support pour Singapour
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 1 800 622 1856
@@ -35,6 +35,6 @@ Anglais : Mon-Fri 9h00 à 18h00
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 6622 1855
+Autre Téléphone numéro : 6622 1855
 
 Frais d’appel local applicables

@@ -1,6 +1,6 @@
 ---
 title: Préparer Microsoft Defender pour le déploiement de point de terminaison
-description: Préparer l’approbation des parties prenantes, les chronologies, les considérations sur l’environnement et l’ordre d’adoption lors du déploiement de Microsoft Defender pour endpoint
+description: Préparer l’approbation des parties prenantes, les chronologies, les considérations sur l’environnement et l’ordre d’adoption lors du déploiement de Microsoft Defender pour Endpoint
 keywords: déployer, préparer, partie prenante, chronologie, environnement, point de terminaison, serveur, gestion, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e57d03ae636837120b53c0de16861ad142ef76
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: e3df1286c69132c960c412f6f74512bb49c32b28
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280932"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291042"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -52,7 +52,7 @@ La préparation est essentielle pour tout déploiement réussi. Dans cet article
 ## <a name="stakeholders-and-approval"></a>Parties prenantes et approbation
 La section suivante sert à identifier toutes les parties prenantes impliquées dans le projet et qui doivent approuver, réviser ou rester informées.
 
-Ajoutez les parties prenantes au tableau ci-dessous selon le cas pour votre organisation.
+Ajoutez des parties prenantes au tableau ci-dessous, le cas échéant, pour votre organisation.
 
 -   SO = Approuver le projet
 
@@ -85,7 +85,7 @@ Cette section permet de s’assurer que votre environnement est bien compris par
 
 ## <a name="role-based-access-control"></a>Contrôle d'accès basé sur les rôles
 
-Microsoft recommande d’utiliser le concept de privilèges minimum. Defender for Endpoint tire parti des rôles intégrés dans Azure Active Directory. Microsoft recommande de [passer en revue les différents rôles](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) disponibles et de choisir celui qui vous permet de répondre à vos besoins pour chaque personnage de cette application. Certains rôles devront peut-être être temporairement appliqués et supprimés une fois le déploiement terminé.
+Microsoft recommande d’utiliser le concept de privilèges minimum. Defender for Endpoint tire parti des rôles intégrés dans Azure Active Directory. Microsoft recommande de [passer en revue les différents](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) rôles disponibles et de choisir celui qui vous permet de répondre à vos besoins pour chaque personnage de cette application. Certains rôles devront peut-être être temporairement et supprimés une fois le déploiement terminé.
 
 | Personas                     | Rôles | Rôle Azure AD (si nécessaire) | Affecter à |
 |------------------------------|-------|-----------------------------|-----------|
@@ -97,13 +97,13 @@ Microsoft recommande d’utiliser le concept de privilèges minimum. Defender fo
 
 Microsoft recommande [d’utiliser Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) pour gérer vos rôles afin de fournir un audit, un contrôle et une révision d’accès supplémentaires pour les utilisateurs ayant des autorisations d’annuaire.
 
-Defender pour le point de terminaison prend en charge deux façons de gérer les autorisations :
+Defender pour le point de terminaison prend en charge deux méthodes de gestion des autorisations :
 
--   **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule. Dans le cas de la gestion des autorisations de base, les utilisateurs ayant le rôle Administrateur général ou Administrateur de la sécurité dans Azure Active Directory disposent d’un accès total alors que le rôle lecteur Sécurité dispose d’un accès en lecture seule.
+-   **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule. Dans le cas de la gestion des autorisations de base, les utilisateurs ayant le rôle Administrateur général ou Administrateur de sécurité dans Azure Active Directory disposent d’un accès total alors que le rôle lecteur Sécurité dispose d’un accès en lecture seule.
 
--   Contrôle d’accès basé sur un rôle **(RBAC)**: définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations. voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle.](rbac.md)
+-   Contrôle d’accès basé sur les rôles **:** définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations. voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle.](rbac.md)
 
-Microsoft recommande d’utiliser le RBAC pour s’assurer que seuls les utilisateurs qui ont une justification professionnelle peuvent accéder à Defender for Endpoint.
+Microsoft recommande de tirer parti du RBAC pour s’assurer que seuls les utilisateurs qui ont une justification professionnelle peuvent accéder à Defender for Endpoint.
 
 Vous trouverez des détails sur les instructions [d’autorisation ici.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 
@@ -113,7 +113,7 @@ Le tableau d’exemple suivant sert à identifier la structure du Centre des op�
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | Niveau 1 | **Équipe locale des opérations de sécurité/équipe informatique**<br>Cette équipe trie et examine généralement les alertes contenues dans leur géolocalisation et atteint le niveau 2 dans les cas où une correction active est nécessaire.                                              |                     |
 | Niveau 2 | **Équipe des opérations de sécurité régionale**<br>Cette équipe peut voir tous les appareils de leur région et effectuer des actions de correction.                                                                                                                        |        Afficher les données               |
-| Niveau 3 | **Équipe des opérations de sécurité globale**<br>Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail. | Afficher les données <br>  Alertes examen Actions de correction actives <br> Alertes examen Actions de correction actives <br> Gérer les paramètres système du portail <br> Gérer les paramètres de sécurité |
+| Niveau 3 | **Équipe des opérations de sécurité globale**<br>Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail. | Afficher les données <br>  Examen des alertes Actions de correction actives <br> Examen des alertes Actions de correction actives <br> Gérer les paramètres système du portail <br> Gérer les paramètres de sécurité |
 
 
 
@@ -134,7 +134,6 @@ Choisissez le composant de Defender for Endpoint à utiliser et supprimez ceux q
 | Spécialistes des menaces Microsoft (MTE)          | Spécialistes des menaces Microsoft est un service de recherche géré qui fournit des centres d’opérations de sécurité (SOC) avec une analyse et une surveillance de niveau expert pour les aider à s’assurer que les menaces critiques dans leurs environnements uniques ne sont pas manquées. <br>[Pour en savoir plus.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Non applicable      |
 
 ## <a name="next-step"></a>Étape suivante
-|||
-|:-------|:-----|
-|![Phase 2 : configuration](images/setup.png) <br>[Phase 2 : configuration](production-deployment.md) | Configurer Microsoft Defender pour le déploiement de point de terminaison
+
+![Phase 2 : configuration](images/setup.png) <br>[Phase 2 : Configuration |](production-deployment.md) Configurer Microsoft Defender pour le déploiement de point de terminaison
 

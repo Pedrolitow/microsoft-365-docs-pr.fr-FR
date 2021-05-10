@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8de63fad7741171dc628ff9064796d64dccd96da
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 55b2406147272cf1aff69e0469f1cc7e6fce9ef2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544251"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295174"
 ---
 # <a name="contact-support-for-spain"></a>Contacter le support pour l’Espagne
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 900 814 197
@@ -39,6 +39,6 @@ Espagnol : Mon-Fri 8 h à 21 h
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 912 718 160
+Autre Téléphone numéro : 912 718 160
 
 Frais d’appel local applicables
