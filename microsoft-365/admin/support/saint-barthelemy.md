@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 53e453e6bb96666c4a5eda30efad1c30c17b71f5
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: f16ae8235ef308b2f703847b46cbbd4e00f4ef17
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544779"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297799"
 ---
 # <a name="contact-support-for-saint-barthelemy"></a>Contacter le support de Saint-Sélemy
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 +1 312 843 5147
@@ -29,7 +29,7 @@ ms.locfileid: "50544779"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 16h00 à 12h00
+Français : Mon-Fri 4 h-12 h
 
 Anglais : Mon-Fri 4 h à 12 h
 

@@ -24,12 +24,12 @@ ms.custom:
 - PPM_jmueller
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: eff193689817c1c89fff7c8ffbc5335fff64ee0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280822"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297355"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -37,7 +37,7 @@ Cet article s’adresse aux personnes disposant d’un abonnement Microsoft 365
   
 Si vous avez besoin d’aide pour identifier les frais qui apparaissent sur votre facture, voir [Comprendre votre facture](understand-your-invoice2.md) pour bénéficier d’informations détaillées.
   
-**Vous rencontrez un problème avec votre facture ?** [Contacter le support technique pour les produits d’entreprise](../../admin/contact-support-for-business-products.md).
+**Vous rencontrez un problème avec votre facture ?** [Contacter le support technique pour les produits d’entreprise](../../business-video/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

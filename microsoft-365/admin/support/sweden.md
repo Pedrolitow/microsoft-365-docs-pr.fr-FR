@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9737e8db50d71149f49ac1c06b6897c8375eb830
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c570e6d6dba2f823ac007fe2e6b5bbadcc5eb89b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544047"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297595"
 ---
 # <a name="contact-support-for-sweden"></a>Contacter le support technique pour la Suède
 
-[Rechercher un autre pays ou une autre région](../contact-support-for-business-products.md).
+[Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Numéro de téléphone
 020 160 5899
@@ -35,6 +35,6 @@ Anglais : Lun.-ven. 9H-17h
 
 Anglais : 24h/24, 7j/7
 
-Autre numéro de téléphone : 08 5176 1966
+Autre Téléphone numéro : 08 5176 1966
 
 Frais d’appel local applicables

@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment Microsoft 365 pour les entreprises, comment le configurer et comment préparer les appareils et pc de vos utilisateurs afin qu’ils sont protégés par Microsoft 365 entreprise.
-ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245121"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293704"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Mise en place Microsoft 365 entreprise
 
@@ -105,7 +105,7 @@ Si vous conservez un Active Directory local qui contient certaines ressources lo
   
 - Contactez votre partenaire.
     
-- En tant qu Microsoft 365 pour les entreprises, vous avez accès à notre équipe de support client : Contacter le support technique pour les produits d’entreprise - Aide **[de l’administrateur](../admin/contact-support-for-business-products.md)**
+- En tant qu Microsoft 365 pour les entreprises, vous avez accès à notre équipe de support client : Contacter le support technique pour les produits d’entreprise - Aide **[de l’administrateur](../business-video/get-help-support.md)**
     
 ## <a name="related-content"></a>Contenu connexe
 

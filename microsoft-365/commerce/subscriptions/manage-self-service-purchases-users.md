@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920191"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297295"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50920191"
 
 ::: moniker-end
 
-En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements aux membres de votre équipe. Vous êtes responsable du paiement des achats en libre-service effectués. Vous pouvez gérer vos abonnements dans le Centre d’administration Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">sur admin.microsoft.com</a>.
+En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements aux membres de votre équipe. Vous êtes responsable du paiement des achats en libre-service effectués. Vous pouvez gérer vos abonnements dans le Centre d’administration Microsoft 365 à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">l’adresse admin.microsoft.com</a>.
 
 Votre administrateur dispose d’une vue en lecture seule des abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
 
@@ -103,8 +103,8 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 1. Dans le Centre d’administration, allez sur la page **Factures**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& paiements.</a>
 2. Sous **l’onglet Factures,** sélectionnez la facture à afficher. Si aucune facture n’est visible, modifiez les **3** derniers mois en **6 derniers** mois ou spécifiez **une plage de dates.**
 
-## <a name="need-help-contact-us"></a>Vous avez besoin d’aide ? Contactez-nous.
+## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
 
 Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.md)
 
-Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../admin/contact-support-for-business-products.md)
+Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../business-video/get-help-support.md)

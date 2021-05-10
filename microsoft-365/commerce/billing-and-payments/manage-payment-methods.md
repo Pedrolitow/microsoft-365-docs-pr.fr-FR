@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les modes de paiement dans le centre d'administration Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 82b2880eed830bd3b65cce14635c4fa10f618740
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244719"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297367"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
@@ -129,7 +129,7 @@ Si un mode de paiement est associé à un abonnement ou à un profil de facturat
 |**Ma carte bancaire a été refusée.** |Si vous payez par carte bancaire et que cette dernière est refusée, vous recevez un courrier électronique vous informant que Microsoft n’a pas pu procéder au paiement. Vérifiez que les détails de la carte (numéro, date d’expiration, nom du détenteur et adresse, dont la ville et le code postal) correspondent exactement à ceux inscrits sur la carte et sur votre relevé. Vous pouvez mettre à jour les informations de la carte et autoriser immédiatement le paiement en suivant le lien **Régler le montant** dans la section **Facturation** de la page de détails de l’abonnement. Pour plus d’informations, consultez [Que se passe-t-il si j’ai un montant impayé ?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Si vous continuez à recevoir le message « Refusé », contactez votre banque. Il est possible que votre carte ne soit pas active. Si vous avez reçu cette carte récemment par courrier avec une date d’expiration mise à jour, assurez-vous de l’activer. Votre établissement bancaire peut également vous indiquer si votre carte n’est pas approuvée pour des transactions en ligne, internationales ou récurrentes. |
 |**Je souhaite mettre à jour un numéro de carte ou de compte bancaire.** |Vous ne pouvez pas modifier le numéro de carte ou de compte bancaire d’un mode de paiement existant. Si le numéro de carte ou de compte bancaire a changé, [procédez au remplacement du mode de paiement](#replace-a-payment-method) : tous les abonnements associés à ce mode de paiement seront reportés sur le nouveau mode ; puis [supprimez le mode obsolète](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**Je n'ai qu'une carte ou qu’un compte bancaire sur mon compte et je souhaite le ou la supprimer.** |Si vous n’avez qu’un seul mode de paiement, vous devez en [effectuez le remplacement par un nouveau mode de paiement](#replace-a-payment-method) avant de pouvoir le supprimer. |
-|**Je ne parviens pas à ajouter ma carte ou mon compte bancaire.**  |Vous devez utiliser un mode de paiement provenant du même pays que celui de votre client. Si vous ne parvenez pas à entrer les informations de votre carte ou votre compte bancaire, vous pouvez [contacter le support technique](../../admin/contact-support-for-business-products.md). |
+|**Je ne parviens pas à ajouter ma carte ou mon compte bancaire.**  |Vous devez utiliser un mode de paiement provenant du même pays que celui de votre client. Si vous ne parvenez pas à entrer les informations de votre carte ou votre compte bancaire, vous pouvez [contacter le support technique](../../business-video/get-help-support.md). |
 
 ## <a name="related-content"></a>Contenu connexe
 
