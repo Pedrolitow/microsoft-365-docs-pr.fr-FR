@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Utilisez les outils eDiscovery dans Microsoft 365 pour rechercher et exporter des données de conversation Teams des utilisateurs locaux dans un déploiement Exchange hybride.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: ab59c179b62903dd5f1ddd9b718f81a1ac78923a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471023"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311799"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Recherche de données de conversations Teams pour les utilisateurs locaux
 
@@ -40,7 +40,7 @@ Voici la configuration requise et les limitations applicables à l’activation 
 - Seules les données de conversation Teams associées à un utilisateur local sont stockées dans la zone de stockage basée sur le cloud. Un utilisateur local ne peut en aucune façon accéder à cette zone de stockage.
 
 > [!NOTE]
-> Les conversations pa canaux Teams sont toujours stockées dans la boîte aux lettres basée sur le cloud qui est associée à Teams, ce qui signifie que vous pouvez rechercher des conversations dans les canaux. Pour plus d’informations sur la recherche conversations par canaux Teams, consultez[Recherche Microsoft Teams et Groupes Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Les conversations pa canaux Teams sont toujours stockées dans la boîte aux lettres basée sur le cloud qui est associée à Teams, ce qui signifie que vous pouvez rechercher des conversations dans les canaux. Pour plus d’informations sur la recherche conversations par canaux Teams, consultez[Recherche Microsoft Teams et Groupes Microsoft 365](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Mode de fonctionnement
 
@@ -56,11 +56,11 @@ En plus de cette fonctionnalité, vous pouvez également utiliser les outils eDi
 
 Ces éléments d’interface utilisateur de la recherche de contenu et de l’outil de recherche associés aux cas Core eDiscovery principaux dans le Centre de conformité Microsoft 365 :
   
-- La case à cocher **Ajouter du contenu d’application Office pour des utilisateurs locaux** est affichée sous **Emplacements** dans la recherche de contenu. Cochez cette case pour inclure le stockage basé sur le cloud pour les utilisateurs locaux dans une recherche de contenu.
+- La case à cocher **Ajouter du contenu d’application pour des utilisateurs locaux** s’affiche dans la page de l’Assistant **Emplacements** de l’outil de recherche de contenu et est sélectionnée par défaut. Conservez cette case à cocher sélectionnée pour inclure le stockage basé sur le cloud pour les utilisateurs locaux dans une recherche de contenu.
 
-    ![La case à cocher « Ajouter du contenu d’application Office pour les utilisateurs locaux » est ajoutée à l’interface de recherche de contenu.](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![La case à cocher « Ajouter du contenu d’application Office pour les utilisateurs locaux » est ajoutée à l’interface de recherche de contenu.](../media/EHAMShardCheckBox.png)
   
-- Les utilisateurs locaux sont affichés dans le sélecteur d’emplacements de contenu que vous utilisez pour sélectionner les boîtes aux lettres d’utilisateur à rechercher.
+- Vous pouvez rechercher des utilisateurs locaux lorsque vous sélectionnez des utilisateurs spécifiques à rechercher.
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Recherche du contenu de conversations Teams pour des utilisateurs locaux
 
@@ -68,29 +68,25 @@ Voici comment utiliser la recherche de contenu dans le Centre de conformité Mic
   
 1. Dans le centre de conformité Microsoft 365, accédez à **Recherche de contenu**.
 
-2. Sur l’onglet **Recherche**, cliquez sur ![Ajouter une icône](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nouvelle recherche**.
+2. Sous l’onglet **Recherches** , cliquez sur **Nouvelle recherche**, puis nommez la nouvelle recherche.
 
-    Comme indiqué précédemment, la case à cocher **Ajouter du contenu d’application Office pour les utilisateurs locaux** s’affiche sous **Emplacements**. Elle est sélectionnée par défaut.
+3. Dans la page **Emplacements** , définissez la bascule sur **Activé** pour les boîtes aux lettres Exchange. Notez que la case à cocher **Ajouter du contenu d’application pour les utilisateurs locaux** est affichée et sélectionnée par défaut.
 
-3. Créez la requête de mot clé et ajoutez des conditions à la requête de recherche, le cas échéant. Pour rechercher uniquement les données de conversations Teams, vous pouvez ajouter la requête suivante dans la zone **Mots clés** :
+4. Pour rechercher du contenu Teams pour des utilisateurs spécifiques, sélectionnez **Sélectionner un utilisateur, des groupes ou des équipes**, puis choisissez les utilisateurs spécifiques à inclure dans la recherche. Sinon, cliquez sur **Suivant** pour rechercher du contenu Teams pour tous les utilisateurs, y compris les utilisateurs locaux.
+
+5. Dans la page **Définir vos conditions de recherche**, créez une requête mot clé et ajoutez des conditions à la requête de recherche si nécessaire. Pour rechercher uniquement les données de conversations Teams, vous pouvez ajouter la requête suivante dans la zone **Mots clés** :
 
     ```text
     kind:im AND kind:microsoftteams
     ```
 
-4. À ce stade, vous pouvez choisir l’une des options suivantes sous **Emplacements**:
+6. Envoyez et exécutez la recherche. Les résultats de recherche pour des utilisateurs locaux peuvent être prévisualisés comme tout autre résultat de recherche. Vous pouvez également exporter les résultats de la recherche (y compris les données de conversation des équipes) vers un fichier PST. Pour plus d’informations, voir :
 
-    - **Tous les emplacements :** sélectionnez cette option pour effectuer une recherche dans les boîtes aux lettres de tous les utilisateurs de votre organisation. Lorsque la case est cochée, l’ensemble du stockage cloud des conversations Teams pour les utilisateurs locaux sont également recherchées.
+    - [Créer une recherche](content-search.md)
 
-    - **Emplacements spécifiques :** sélectionnez cette option, puis cliquez sur **Modifier** \> Choisir un utilisateur, groupes ou équipes pour rechercher des boîtes aux lettres spécifiques. Comme indiqué précédemment, le sélecteur d’emplacements vous permet de rechercher des données de conversations Teams pour des utilisateurs locaux.
+    - [Aperçu des résultats de la recherche](preview-ediscovery-search-results.md)
 
-5. Enregistrez et exécutez la recherche. Les résultats de recherche pour des utilisateurs locaux peuvent être prévisualisés comme tout autre résultat de recherche. Vous pouvez également exporter les résultats de la recherche (y compris les données de conversation des équipes) vers un fichier PST. Pour plus d’informations, voir :
-
-    - [Créer une recherche](content-search.md#create-a-search)
-
-    - [Aperçu des résultats de la recherche](content-search.md#preview-search-results)
-
-    - [Exporter les résultats de la recherche de contenu](export-search-results.md)
+    - [Exporter les résultats de la recherche](export-search-results.md)
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Utilisation de PowerShell pour la recherche de données de conversations Teams pour les utilisateurs locaux
 
@@ -106,13 +102,13 @@ Vous pouvez utiliser les applets de commande **New-ComplianceSearch** et **Compl
 
     Le paramètre *IncludeUserAppContent* est utilisé pour spécifier le stockage cloud pour l’utilisateur ou les utilisateurs spécifiés par le paramètre *ExchangeLocation*. *AllowNotFoundExchangeLocationsEnabled* vous permet d’effectuer une recherche dans le stockage cloud pour les utilisateurs locaux. Lorsque vous utilisez la valeur `$true` pour ce paramètre, la recherche n’essaie pas de valider l’existence de la boîte aux lettres avant son exécution. Celle-ci est nécessaire pour effectuer des recherches dans le stockage cloud des utilisateurs locaux, car ce stockage cloud n’est pas résolu comme une boîte aux lettres cloud normale.
 
-    L’exemple suivant recherche les conversations Teams (messages instantanés) qui contiennent le mot clé « redstone » dans le stockage basé sur le cloud de Marie Davis, utilisateur local de l’organisation Contoso.
+    L’exemple suivant recherche les conversations Teams qui contiennent le mot clé « redstone » dans le stockage basé sur le cloud de Marie Davis, utilisateur local de l’organisation Contoso.
   
     ```powershell
-    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
+    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND (kind:im AND kind:microsoftteams)" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   Une fois que vous avez créé une recherche, veillez à utiliser l’applet de commande **Start-ComplianceSearch** pour lancer la recherche. 
+   Une fois que vous avez créé une recherche, veillez à utiliser l’applet de commande **Start-ComplianceSearch** pour lancer la recherche.
   
 Pour plus d’informations sur l’utilisation de ces applets de commande, consultez :
   

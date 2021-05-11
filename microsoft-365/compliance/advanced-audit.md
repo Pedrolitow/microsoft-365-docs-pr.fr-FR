@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: L’audit avancé de Microsoft 365 offre de nouvelles fonctionnalités d’audit pour aider votre organisation à effectuer des enquêtes de conformité et de légalité.
-ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 3c91a388bc01a5531309b556a5a8532cb2efbaa6
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892905"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311735"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avancé de Microsoft 365
 
 La [fonctionnalité d'audit unifiée](search-the-audit-log-in-security-and-compliance.md) de Microsoft 365 offre aux organisations une visibilité dans de nombreux types d’activités auditées dans différents services de Microsoft 365. L’audit avancé permet aux organisations d’effectuer des investigations de conformité et d’audit en augmentant la rétention du journal d’audit nécessaire pour mener une investigation, en fournissant l’accès à des événements importants qui permettent de déterminer l’étendue de la compromission et un accès plus rapide à l’API de l’Activité de Gestion d’Office 365.
 
 > [!NOTE]
-> L’Audit avancé est à la disposition des organisations disposant d’un abonnement Office 365 E5/G5 ou Microsoft 365 Entreprise E5/G5. De plus, une Conformité Microsoft 365 E5 ou E5 eDiscovery et une licence de complément d’audit peuvent être attribuées aux utilisateurs lorsqu'une licence par utilisateur est requise pour des fonctionnalités d’audit avancées, comme dans le cas de la rétention à long terme de journaux d’audit et l’accès à des évènements essentiels pour enquêtes. Pour plus d’informations sur les licences, voir [instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> L’Audit avancé est à la disposition des organisations disposant d’un abonnement Office 365 E5/A5/G5 ou Microsoft 365 Entreprise E5/A5/G5. De plus, une Conformité Microsoft 365 E5/A5/G5 ou eDiscovery E5/A5/G5 et une licence de complément d’audit peuvent être attribuées aux utilisateurs lorsqu'une licence par utilisateur est requise pour des fonctionnalités d’audit avancées, comme dans le cas de la rétention à long terme de journaux d’audit et l’accès à des évènements essentiels pour enquêtes. Pour plus d'informations sur les licences, consultez :<br/>- [Critères de licence d’audit avancé](auditing-solutions-overview.md#licensing-requirements)<br/>- [Conseils sur les licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 Cet article fournit une vue d’ensemble des fonctionnalités Audit avancé et décrit la configuration des utilisateurs pour l’audit avancé.
 
@@ -131,9 +131,7 @@ Pour rechercher les enregistrements d’audit de SearchQueryInitiatedExchange, v
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Vous devez exécuter la commande suivante dans Exchange Online PowerShell de sorte que les événements SearchQueryInitiatedExchange (effectués par l’utilisateur E5 spécifié) soient inclus dans les résultats de la recherche dans le journal d’audit: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
-Dans un environnement multigéographique, vous devez exécuter la commande **Set-Mailbox** dans la forêt où se trouve la boîte aux lettres de l’utilisateur. Pour identifier l’emplacement de boîte aux lettres de l’utilisateur, exécutez la commande suivante : `Get-Mailbox <user identity> | FL MailboxLocations`.
-Si vous avez déjà exécuté la commande `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` dans une forêt différente de celle où se trouve la boîte aux lettres de l’utilisateur, vous devez supprimer la valeur SearchQueryInitiated de la boîte aux lettres de l’utilisateur (en exécutant `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`), puis l’ajouter à la boîte aux lettres de l’utilisateur dans la forêt où elle se trouve.
+> Vous devez activer la journalisation de SearchQueryInitiatedExchange pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez la section [Configurer l'audit avancé](set-up-advanced-audit.md#step-2-enable-crucial-events).
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -156,47 +154,25 @@ Pour rechercher les enregistrements d’audit SearchQueryInitiatedSharePoint, vo
 Vous pouvez également exécuter le [Search-UnifiedAuditLog-Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) dans Exchange Online PowerShell.
 
 > [!NOTE]
-> Vous devez exécuter la commande suivante dans Exchange Online PowerShell de sorte que les événements SearchQueryInitiatedSharePoint (effectués par l’utilisateur E5 spécifié) soient inclus dans les résultats de la recherche dans le journal d’audit: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
-Dans un environnement multigéographique, vous devez exécuter la commande **Set-Mailbox** dans la forêt où se trouve la boîte aux lettres de l’utilisateur. Pour identifier l’emplacement de boîte aux lettres de l’utilisateur, exécutez la commande suivante : `Get-Mailbox <user identity> | FL MailboxLocations`.
-Si vous avez déjà exécuté la commande `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` dans une forêt différente de celle où se trouve la boîte aux lettres de l’utilisateur, vous devez supprimer la valeur SearchQueryInitiated de la boîte aux lettres de l’utilisateur (en exécutant `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`), puis l’ajouter à la boîte aux lettres de l’utilisateur dans la forêt où elle se trouve.
+> Vous devez activer la journalisation de SearchQueryInitiatedSharePoint pour pouvoir rechercher cet événement dans le journal d'audit. Pour obtenir des instructions, consultez la section [Configurer l'audit avancé](set-up-advanced-audit.md#step-2-enable-crucial-events).
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Accès haut débit à l’API Activité de gestion Office 365
 
 Les organisations ayant accès à des journaux d’audit via l’API Activité de gestion Office 365 étaient restreintes par des seuils de limitation au niveau de l’éditeur. Cela signifie que pour un éditeur faisant une extraction de données pour le compte de plusieurs clients, la limite était partagée par tous les clients.
 
-Grâce à la publication de l'audit avancé, nous allons passer d’une limite au niveau éditeur à une limite au niveau du client. Chaque organisation obtient ainsi son propre quota de bande passante entièrement allouée pour accéder à ses données d’audit. La bande passante n'est pas une limite statique prédéfinie. Elle est modelée sur une combinaison de facteurs, tels que le nombre de sièges au sein de l’organisation, et les organisations E5 obtiennent une bande passante plus importante que les organisations non E5.
+Grâce à la publication de l'audit avancé, nous allons passer d’une limite au niveau éditeur à une limite au niveau du client. Chaque organisation obtient ainsi son propre quota de bande passante entièrement allouée pour accéder à ses données d’audit. La bande passante n'est pas une limite statique prédéfinie. Elle est modelée sur une combinaison de facteurs, tels que le nombre de sièges au sein de l’organisation, et les organisations E5/A5/G5 obtiennent une bande passante plus importante que les organisations non E5/A5/G5.
 
-Les organisations reçoivent une ligne de base de 2 000 demandes par minute. Cette limite augmentera de façon dynamique en fonction du nombre de sièges d’une organisation et du nombre de licences dans son abonnement. Les organisations E5 disposeront d’environ deux fois plus de bande passante que les organisations non-E5. La bande passante aura également un plafond maximal pour protéger l’état d’intégrité du service.
+Les organisations reçoivent une ligne de base de 2 000 demandes par minute. Cette limite augmentera de façon dynamique en fonction du nombre de sièges d’une organisation et du nombre de licences dans son abonnement. Les organisations E5/A5/G5 disposeront d’environ deux fois plus de bande passante que les organisations non-E5/A5/G5. La bande passante aura également un plafond maximal pour protéger l’état d’intégrité du service.
 
 Pour plus d’informations, consultez la rubrique « Limitation de l'API » dans la [Référence de l’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
-## <a name="set-up-advanced-audit-for-users"></a>Configurer l’audit avancé pour les utilisateurs
-
-Les fonctionnalités d’audit avancées telles que la possibilité d’enregistrer des événements importants tels que MailItemsAccessed et envoyer nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs. Pour vérifier que l’application d’audit avancée est attribuée aux utilisateurs, procédez comme suit pour chaque utilisateur :
-
-1. Dans le [Centre d’administration Microsoft 365](https://admin.microsoft.com/Adminportal), accédez à **Utilisateurs** > **Utilisateurs actifs**, puis sélectionnez un utilisateur.
-
-2. Dans la page déroulante des propriétés de l’utilisateur, cliquez sur **Licences et applications**.
-
-3. Dans la section **Licences** , vérifiez qu’une licence E5 est attribuée à l’utilisateur.
-
-4. Développez la section **Applications** et vérifiez que la case à cocher **Audit avancé Microsoft 365** est activée.
-
-5. Si la case à cocher n’est pas activée, sélectionnez-la, puis cliquez sur **Enregistrer les modifications.**
-
-   La journalisation des enregistrements d’audit pour MailItemsAccessed, Envoyer et d’autres événements importants pour l’utilisateur commence dans les 24 heures.
-
-Pour les organisations qui attribuent des licences à des groupes d’utilisateurs à l’aide d’une gestion de licences basée sur les groupes, vous devez désactiver l’attribution des licences pour Microsoft 365 audit avancé pour le groupe. Une fois que vous avez enregistré vos modifications, vérifiez que l’audit avancé Microsoft 365 est désactivé pour le groupe. Réactivez ensuite l’attribution des licences pour le groupe. Pour obtenir des instructions sur la gestion des licences basée sur les groupes, voir [Attribuer des licences aux utilisateurs par appartenance aux groupes dans Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
-
-De plus, si vous avez personnalisé les actions de boîte aux lettres qui sont enregistrées sur les boîtes aux lettres d’utilisateur ou les boîtes aux lettres partagées, les nouvelles actions de boîte aux lettres par défaut, telles que MailItemsAccessed, ne sont pas automatiquement auditées sur ces boîtes aux lettres. Pour plus d’informations sur la modification des actions de boîte aux lettres auditées pour chaque type de connexion, consultez la section « Modifier ou restaurer les actions de boîte aux lettres enregistrées par défaut » dans [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
-
 ## <a name="faqs-for-advanced-audit"></a>FAQ pour l’audit avancé
 
-**Est-ce que chaque utilisateur a besoin d'une licence E5 pour bénéficier de l'Audit avancé ?**
+**Est-ce que chaque utilisateur a besoin d'une licence E5/A5/G5 pour bénéficier de l'Audit avancé ?**
 
-Pour bénéficier des fonctionnalités d’audit avancées de niveau utilisateur, ce dernier doit se voir attribuer une licence E5. Certaines fonctionnalités vous permettront de vérifier la présence de la licence appropriée pour exposer la fonctionnalité à l’utilisateur. Par exemple, si vous essayez de conserver les enregistrements d’audit pour un utilisateur ne disposant pas d’une licence E5 pendant plus de 90 jours, le système renvoie un message d’erreur.
+Pour bénéficier des fonctionnalités d’audit avancées de niveau utilisateur, ce dernier doit se voir attribuer une licence E5/A5/G5. Certaines fonctionnalités vous permettront de vérifier la présence de la licence appropriée pour exposer la fonctionnalité à l’utilisateur. Par exemple, si vous essayez de conserver les enregistrements d’audit pour un utilisateur ne disposant pas la licence appropriée pendant plus de 90 jours, le système renvoie un message d’erreur.
 
-**Mon organisation dispose d'un abonnement E5. Dois-je faire quelque chose pour accéder aux enregistrements d'audit des événements importants?**
+**Mon organisation dispose d'un abonnement E5/A5/G5. Dois-je faire quelque chose pour accéder aux enregistrements d'audit des événements importants ?**
 
 Pour les clients éligibles et les utilisateurs disposants de la licence appropriée, aucune action n’est requise pour accéder aux événements d’audit cruciaux.
 
