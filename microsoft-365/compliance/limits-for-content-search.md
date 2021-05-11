@@ -16,16 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Découvrez les limites en vigueur pour la fonctionnalité de recherche de contenu dans le centre de conformité Microsoft 365, telles que le nombre maximal de recherches simultanées. Ces limites de recherche s’appliquent également aux recherches associées à des cas eDiscovery principaux.
-ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Découvrez les limites en vigueur pour la recherche de contenu et les fonctionnalités eDiscovery principales dans le centre Microsoft 365 conformité.
+ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244319"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311411"
 ---
-# <a name="limits-for-content-search"></a>Limites pour la recherche de contenu 
-Diverses limites sont appliquées à l’outil de recherche de contenu dans le centre Microsoft 365 conformité. Cela inclut les recherches qui s’exécutent sur la **page** de recherche de contenu et les recherches associées à un cas eDiscovery sur la page **Core eDiscovery.** Ces limites permettent de maintenir l’état et la qualité des services fournis aux organisations. Il existe également des limites liées à l’indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier les limites de recherche de contenu ou d’indexation de courrier électronique, mais vous devez en avoir connaissance afin de pouvoir prendre ces limites en considération lors de la planification, de l’exécution et du dépannage des recherches de contenu.
+# <a name="limits-for-ediscovery-search"></a>Limites pour la recherche eDiscovery 
+
+Diverses limites sont appliquées aux outils de recherche eDiscovery dans le centre Microsoft 365 conformité. Cela inclut les recherches qui s’exécutent sur la **page** de recherche de contenu et les recherches associées à un cas eDiscovery sur la page **Core eDiscovery.** Ces limites permettent de maintenir l’état et la qualité des services fournis aux organisations. Il existe également des limites liées à l’indexation des messages électroniques dans Exchange Online pour la recherche. Vous ne pouvez pas modifier les limites pour les recherches eDiscovery ou l’indexation de courrier électronique, mais vous devez les connaître afin de pouvoir prendre ces limites en considération lors de la planification, de l’exécution et du dépannage des recherches de découverte électronique.
+
+Pour les limites liées à l’outil Advanced eDiscovery, voir [Limites dans Advanced eDiscovery](limits-ediscovery20.md)
   
 ## <a name="search-limits"></a>Limites de la recherche
 

@@ -1,5 +1,5 @@
 ---
-title: Vérifier la présence d’erreurs dans vos requêtes de recherche de contenu
+title: Vérifier la présence d’erreurs dans vos requêtes de recherche
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: Découvrez comment détecter les erreurs et les fautes de frappe dans votre requête par mot clé pour la recherche de contenu, avant d’effectuer la recherche.
-ms.openlocfilehash: 939ac3d227f176a0b74138107ced5dd5b7142bcd
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: Découvrez comment détecter les erreurs et les fautes de frappe dans votre requête de mot clé pour les recherches de découverte électronique avant d’effectuer la recherche.
+ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488211"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311687"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Vérifier la présence d’erreurs dans vos requêtes de recherche de contenu
+# <a name="check-your-search-query-for-errors"></a>Vérifier la présence d’erreurs dans vos requêtes de recherche
   
-Voici une liste des caractères non pris en place que nous vérifions. Les caractères non pris enupportés sont souvent masqués et ils provoquent généralement une erreur de recherche ou retournent des résultats inattendus.
+Voici une liste des caractères non pris en place que nous vérifions dans les requêtes de recherche pour la recherche de contenu et la découverte électronique principale. Les caractères non pris enupportés sont souvent masqués et ils provoquent généralement une erreur de recherche ou retournent des résultats inattendus.
   
 - **Guillemets intelligents** : les guillemets simples et doubles (également appelés guillemets) ne sont pas pris en charge. Seuls les guillemets droits peuvent être utilisés dans une requête de recherche. 
 
@@ -45,4 +45,4 @@ Voici un exemple du message d’avertissement qui s’affiche après que vous av
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Comment empêcher les caractères non pris en compte dans vos requêtes de recherche
 
-Les caractères non pris en compte sont généralement ajoutés à une requête lorsque vous copiez la requête ou certaines parties de la requête à partir d’autres applications (telles que Microsoft Word ou Microsoft Excel) et que vous les collez dans la zone de mot clé de la page de requête d’une recherche de contenu. Le meilleur moyen d'éviter les caractères non pris en charge est de saisir la requête dans la zone de mot clé. Vous pouvez également copier une requête à partir de Word ou d’Excel, puis la coller dans un éditeur de texte simple, tel que le Bloc-notes Microsoft. Enregistrez le fichier texte et sélectionnez **ANSI** dans **la** liste de listes listes de codage. Cette action supprime tout le formatage et tous les caractères non pris en charge. Vous pouvez ensuite copier la requête du fichier texte vers la zone de mot clé de la requête. 
+Les caractères non pris en aide sont généralement ajoutés à une requête lorsque vous copiez la requête ou certaines parties de la requête à partir d’autres applications (telles que Microsoft Word ou Microsoft Excel) et que vous les collez dans la zone de mot clé de la page de requête d’une recherche de contenu. Le meilleur moyen d'éviter les caractères non pris en charge est de saisir la requête dans la zone de mot clé. Vous pouvez également copier une requête à partir de Word ou Excel, puis la coller dans un éditeur de texte simple, tel que Microsoft Bloc-notes. Enregistrez le fichier texte et sélectionnez **ANSI** dans **la** liste de listes listes de codage. Cette action supprime tout le formatage et tous les caractères non pris en charge. Vous pouvez ensuite copier la requête du fichier texte vers la zone de mot clé de la requête.

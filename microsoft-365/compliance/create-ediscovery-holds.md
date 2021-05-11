@@ -16,25 +16,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Vous pouvez créer une conservation associée à un cas core eDiscovery pour conserver le contenu qui peut être pertinent pour un examen.
-ms.openlocfilehash: 1026de3b5357c3417a00a69b4ae6890e8036c091
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: Vous pouvez créer une conservation associée à un cas eDiscovery principal dans Microsoft 365 conserver le contenu pertinent pour un examen ou un dossier juridique.
+ms.openlocfilehash: 61bbe2e8d2713c2960105e2ec4eb4beffcd4306e
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488243"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311608"
 ---
 # <a name="create-an-ediscovery-hold"></a>Créer une suspension de cas eDiscovery
 
-Vous pouvez utiliser un cas core eDiscovery pour créer des conservations afin de conserver le contenu qui peut être pertinent pour le cas. Vous pouvez placer en attente les boîtes aux lettres Exchange et les comptes OneDrive Entreprise des personnes que vous examinez dans le cas. Vous pouvez également placer en attente les boîtes aux lettres et les sites associés à Microsoft Teams, groupes Office 365 et groupes Yammer groupes. Lorsque vous placez des emplacements de contenu en conservation, le contenu est conservé jusqu’à ce que vous supprimiez la conservation de l’emplacement de contenu ou jusqu’à ce que vous supprimiez la conservation.
+Vous pouvez utiliser un cas core eDiscovery pour créer des conservations afin de conserver le contenu qui peut être pertinent pour le cas. Vous pouvez placer en Exchange boîtes aux lettres et OneDrive Entreprise des personnes que vous examinez dans le cas. Vous pouvez également placer en attente les boîtes aux lettres et les sites associés à des groupes Microsoft Teams, Office 365 groupes Yammer web. Lorsque vous placez des emplacements de contenu en conservation, le contenu est conservé jusqu’à ce que vous supprimiez l’emplacement du contenu de la conservation ou jusqu’à ce que vous supprimiez la conservation.
 
-Une fois que vous avez créé une attente eDiscovery, la prise en compte de la attente peut prendre jusqu’à 24 heures. 
+Une fois que vous avez créé une attente eDiscovery, la prise en compte de la attente peut prendre jusqu’à 24 heures.
 
-Lorsque vous créez une conservation, vous avez les options suivantes pour étendue du contenu qui est conservé dans les emplacements de contenu spécifiés :
+Lorsque vous créez une conservation, vous avez les options suivantes pour étendue du contenu conservé dans les emplacements de contenu spécifiés :
   
-- Vous créez une attente infinie dans laquelle tout le contenu des emplacements spécifiés est placé en attente. Vous pouvez également créer une mise en attente basée sur une requête dans laquelle seul le contenu des emplacements spécifiés qui correspond à une requête de recherche est mis en attente.
+- Créez une attente infinie dans laquelle tout le contenu des emplacements spécifiés est placé en attente. Vous pouvez également créer une mise en attente basée sur une requête dans laquelle seul le contenu des emplacements spécifiés qui correspond à une requête de recherche est mis en attente.
 
-- Vous pouvez spécifier une plage de dates pour conserver uniquement le contenu qui a été envoyé, reçu ou créé dans cette plage de dates. Vous pouvez également conserver tout le contenu à des emplacements spécifiés, quel que soit le moment où il a été envoyé, reçu ou créé.
+- Spécifiez une plage de dates pour conserver uniquement le contenu qui a été envoyé, reçu ou créé dans cette plage de dates. Vous pouvez également conserver tout le contenu à des emplacements spécifiés, quel que soit le moment où il a été envoyé, reçu ou créé.
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>Comment créer une attente eDiscovery
 
@@ -42,48 +42,48 @@ Pour créer une attente eDiscovery associée à un cas core eDiscovery :
   
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
 
-2. Dans le volet de navigation gauche du Centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur Afficher **tout,** puis sur **eDiscovery > Core**.
 
-3. Dans la page **Core eDiscovery,** sélectionnez le cas dans le cas où vous souhaitez créer la attente, puis cliquez sur **Ouvrir le cas**.
+3. Dans la page **Core eDiscovery,** cliquez sur le nom du cas où vous souhaitez créer la attente.
 
-4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet Contient.**
+4. Dans la page **d’accueil** du cas, cliquez sur **l’onglet** Conserver.
   
-5. On the **Holds** page, click **Create**.
+5. Dans la page **Mettre en** attente, cliquez sur **Créer.**
 
 6. Dans la page **Nom de l’Assistant** De votre attente, donnez un nom à la attente et ajoutez une description facultative, puis cliquez sur **Suivant**. Le nom de la conservation doit être unique dans toute votre organisation.
 
-7. Dans la page **Emplacements de** contenu, choisissez les emplacements de contenu que vous souhaitez placer en attente. Vous pouvez placer des boîtes aux lettres, des sites et des dossiers publics en attente.
+7. Dans la page **Choisir des emplacements** de l’Assistant, choisissez les emplacements de contenu que vous souhaitez placer en attente. Vous pouvez placer des boîtes aux lettres, des sites et des dossiers publics en attente.
 
-    ![Choisissez les emplacements de contenu à mettre sous conservation](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
+    ![Choisissez les emplacements de contenu à mettre sous conservation](../media/eDiscoveryHoldLocations.png)
   
-   1. **Emplacements des boîtes** aux lettres : cliquez sur Choisir les utilisateurs, les groupes ou les équipes, puis cliquez à nouveau sur Choisir des utilisateurs, des groupes ou des équipes pour spécifier les boîtes aux lettres à placer en attente.   Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer en attente les boîtes aux lettres des membres du groupe) à placer en attente. Vous pouvez également placer en attente la boîte aux lettres associée pour une équipe Microsoft, un groupe Office 365 ou Yammer groupe. Sélectionnez la case à cocher Utilisateur, Groupe, Équipe, Cliquez sur **Choisir,** puis cliquez sur **Terminé**.
+   1. **Exchange boîtes** aux lettres : définissez le bouton bascule sur **Sur,** puis cliquez sur Choisir des utilisateurs, des groupes ou des équipes pour spécifier les boîtes aux lettres à placer en attente.  Utilisez la zone de recherche pour rechercher des boîtes aux lettres utilisateur et des groupes de distribution (pour placer en attente les boîtes aux lettres des membres du groupe) à placer en attente. Vous pouvez également placer la boîte aux lettres associée en attente pour une équipe Microsoft, un groupe Office 365 et un groupe Yammer microsoft. Pour plus d’informations sur les données d’application qui sont conservées lorsqu’une boîte aux lettres est placée en conservation, voir Contenu stocké dans les boîtes aux lettres pour [eDiscovery](what-is-stored-in-exo-mailbox.md).
 
-   1. **Emplacements de site** : cliquez sur Choisir **des sites,** puis cliquez à nouveau sur Choisir **des sites** pour spécifier les comptes SharePoint et OneDrive à placer en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL pour le site SharePoint d’une équipe Microsoft, d’un groupe Office 365 ou d’Yammer groupe. Cliquez **sur Choisir,** puis sur **Terminé.**
+   1. **SharePoint sites**: définissez le bouton bascule sur **Sur,** puis cliquez sur Choisir des **sites** pour spécifier les sites SharePoint et les comptes OneDrive à placer en attente. Saisissez l’URL de chaque site à placer en conservation. Vous pouvez également ajouter l’URL du site SharePoint pour une équipe Microsoft, un groupe Office 365 ou un groupe Yammer microsoft.
   
-   1. **Dossiers publics Exchange.** Déplacez le bouton bascule vers la position Tout pour placer tous les dossiers publics de votre organisation ![ ](../media/scc-toggle-on.png) Exchange Online en attente.  Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule sur **Aucun** si vous ne souhaitez pas placer de mise en attente sur les dossiers publics.
+   1. **Exchange publics :** définissez le basculement sur **Sur** pour placer tous les dossiers publics de votre organisation Exchange Online en attente. Vous ne pouvez pas choisir des dossiers publics spécifiques à mettre en attente. Laissez le bouton bascule éteint si vous ne souhaitez pas mettre en attente les dossiers publics.
 
    > [!NOTE]
-   > Vous devez ajouter au moins un emplacement de contenu à la attente. Dans le cas contraire, les statiques de la hold eDiscovery indiquent qu’aucun des éléments n’est en attente.
+   > Vous devez ajouter au moins un emplacement de contenu à la attente. Dans le cas contraire, les statistiques de la hold-in eDiscovery indiquent qu’aucun des éléments n’est en attente.
 
-8. Lorsque vous avez terminé d’ajouter des emplacements de contenu à la attente, cliquez sur **Suivant**.
+8. Lorsque vous avez terminé d’ajouter des emplacements à la attente, cliquez sur **Suivant**.
 
-9. Pour créer une attente basée sur une requête avec des conditions, complétez les conditions suivantes. Dans le cas contraire, pour conserver tout le contenu dans les emplacements de contenu spécifiés, cliquez sur **Suivant**.
+9. Pour créer une attente basée sur une requête à l’aide de mots clés ou de conditions, complétez les étapes suivantes. Pour conserver tout le contenu dans les emplacements de contenu spécifiés, cliquez sur **Suivant**.
 
-    ![Créer une attente basée sur une requête avec des conditions](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
+    ![Créer une attente basée sur une requête avec mot clé et conditions](../media/eDiscoveryHoldQuery.png)
   
-    1. Dans la zone sous **Mots clés,** tapez une requête de recherche afin que seul le contenu qui répond aux critères de recherche soit conservé. Vous pouvez spécifier des mots clés, des propriétés de message électronique ou des propriétés de document, telles que des noms de fichiers. Vous pouvez également utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **AND,** **OR** ou **NOT**.
+    1. Dans la zone sous **Mots clés,** tapez une requête pour conserver uniquement le contenu qui correspond aux critères de requête. Vous pouvez spécifier des mots clés, des propriétés de message électronique ou des propriétés de site, telles que des noms de fichiers. Vous pouvez également utiliser des requêtes plus complexes qui utilisent un opérateur booléen, comme **AND,** **OR** ou **NOT**.
 
-    1. Cliquez **sur Ajouter des conditions** pour ajouter une ou plusieurs conditions afin de restreindre la requête de recherche pour la attente. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et qui s’exécute lorsque vous créez la requête de recherche KQL. Par exemple, vous pouvez spécifier une plage de dates afin que les documents électroniques ou de site créés dans la plage de dates soient mis en attente. Une condition est connectée logiquement à la requête de mot clé (spécifiée dans la zone Mots **clés)** par **l’opérateur AND.** Cela signifie que les éléments doivent satisfaire la requête de mot clé et la condition à conserver.
+    2. Cliquez **sur Ajouter une condition** pour ajouter une ou plusieurs conditions afin de restreindre la requête pour la attente. Chaque condition ajoute une clause à la requête de recherche KQL qui est créée et qui s’exécute lorsque vous créez la requête de recherche KQL. Par exemple, vous pouvez spécifier une plage de dates afin que les documents électroniques ou de site créés dans la plage de dates soient conservés. Une condition est connectée logiquement à la requête  de mot clé (spécifiée dans la zone Mots clés) et à d’autres conditions par l’opérateur **AND.** Cela signifie que les éléments doivent satisfaire la requête de mot clé et la condition à conserver.
 
-    Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
+    Pour plus d’informations sur la création d’une requête de recherche et l’utilisation de conditions, voir Requêtes par mot clé et conditions de recherche [pour eDiscovery.](keyword-queries-and-search-conditions.md)
 
 10. Après avoir configuré une attente basée sur une requête, cliquez sur **Suivant.**
 
-11. Examinez vos paramètres (et modifiez-les si nécessaire), puis cliquez **sur Créer cette mise en attente.**
+11. Examinez vos paramètres (et modifiez-les si nécessaire), puis cliquez sur **Envoyer.**
 
-## <a name="query-based-holds-placed-on-site-documents"></a>Mises en garde à jour basées sur des requêtes placées sur des documents de site
+## <a name="query-based-holds-placed-on-sites"></a>Des mises en garde basées sur des requêtes sont placées sur des sites
 
-Gardez les points suivants à l’esprit lorsque vous placez une attente eDiscovery basée sur une requête sur les documents situés dans des sites SharePoint :
+Gardez les points suivants à l’esprit lorsque vous placez une attente eDiscovery basée sur une requête sur les documents situés dans SharePoint sites :
 
 - Une conservation basée sur une requête conserve initialement tous les documents d’un site pendant une courte période après leur suppression. Cela signifie que lorsqu’un document est supprimé, il est déplacé vers la bibliothèque de conservation et de préservation des documents même s’il ne correspond pas aux critères de la conservation basée sur une requête. Toutefois, les documents supprimés qui ne correspondent pas à une conservation basée sur une requête sont supprimés par un travail du timer qui traite la bibliothèque de conservation et de préservation. Le travail du timer s’exécute régulièrement et compare tous les documents de la bibliothèque de conservation et de préservation des documents à vos conservations eDiscovery basées sur des requêtes (et à d’autres types de conservations et stratégies de rétention). Le travail du temps supprime les documents qui ne correspondent pas à une conservation basée sur une requête et conserve les documents qui le font.
 
@@ -93,7 +93,7 @@ Gardez les points suivants à l’esprit lorsque vous placez une attente eDiscov
 
 Une fois que vous avez créé une attente eDiscovery, les informations sur la nouvelle attente s’affichent sur la page de présentation de la demande d’attente sélectionnée. Ces informations incluent le nombre de boîtes aux lettres et de sites en attente, ainsi que les statistiques sur le contenu placé en attente, telles que le nombre total et la taille des éléments placés en attente et la dernière fois que les statistiques de mise en attente ont été calculées. Ces statistiques de conservation vous aident à identifier la quantité de contenu liée au cas en cours de conservation.
   
-![Statistiques de la hold](../media/575cfe0a-9210-4ae4-8df8-65665d66712e.png)
+![Statistiques de la hold](../media/eDiscoveryHoldStatistics.png)
   
 Gardez les points suivants à l’esprit concernant les statistiques de la découverte électronique :
   
@@ -105,13 +105,11 @@ Gardez les points suivants à l’esprit concernant les statistiques de la déco
 
 - Il est normal que le nombre d’éléments en attente augmente au fil du temps, car les utilisateurs dont la boîte aux lettres ou le site est en attente envoient ou reçoivent généralement de nouveaux messages électroniques et créent des documents dans SharePoint et OneDrive.
 
-- Si une boîte aux lettres Exchange, un site SharePoint ou un compte OneDrive est déplacé vers une autre région dans un environnement multigé géographique, les statistiques de ce site ne seront pas incluses dans les statistiques de la boîte aux lettres. Toutefois, le contenu de ces emplacements sera conservé. En outre, si une boîte aux lettres ou un site est déplacé vers une autre région, l’adresse SMTP ou l’URL affichée dans la mise en attente ne sera pas automatiquement mise à jour. Vous devez modifier la mise en attente et mettre à jour l’URL ou l’adresse SMTP afin que les emplacements de contenu soient de nouveau inclus dans les statistiques de la mise en attente.
+- Si une boîte aux lettres, un site SharePoint ou un compte OneDrive Exchange est déplacé vers une autre région dans un environnement multigéogé, les statistiques de ce site ne seront pas incluses dans les statistiques de la OneDrive. Toutefois, le contenu de ces emplacements sera conservé. En outre, si une boîte aux lettres ou un site est déplacé vers une autre région, l’adresse SMTP ou l’URL affichée dans la mise en attente ne sera pas automatiquement mise à jour. Vous devez modifier la mise en attente et mettre à jour l’URL ou l’adresse SMTP afin que les emplacements de contenu soient de nouveau inclus dans les statistiques de la mise en attente.
 
 ## <a name="search-locations-on-ediscovery-hold"></a>Emplacements de recherche en attente eDiscovery
 
 Lorsque vous [recherchez](search-for-content-in-core-ediscovery.md) du contenu dans un cas core eDiscovery, vous pouvez rapidement configurer la recherche pour rechercher uniquement les emplacements de contenu qui ont été placés en attente associée au cas.
-
-![Emplacements en attente](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
 
 Sélectionnez **l’option Emplacements en attente** pour rechercher tous les emplacements de contenu qui ont été placés en attente. Si le cas contient plusieurs holds eDiscovery, les emplacements de contenu de toutes les retenues sont recherchés lorsque vous sélectionnez cette option. En outre, si un emplacement de contenu a été placé en attente basée sur une requête, seuls les éléments qui correspondent à la requête de mise en attente seront recherchés lorsque vous exécuterez la recherche. En d’autres termes, seul le contenu qui correspond aux critères de recherche et aux critères de recherche est renvoyé avec les résultats de la recherche. Par exemple, si un utilisateur a été mis en attente de cas basé sur une requête qui conserve les éléments qui ont été envoyés ou créés avant une date spécifique, seuls ces éléments sont recherchés. Pour ce faire, connectez la requête de mise en attente et la requête de recherche par un **opérateur AND.**
 
@@ -123,18 +121,18 @@ Voici d’autres éléments à garder à l’esprit lors de la recherche d’emp
 
 - Si plusieurs mises en attente eDiscovery sont placées sur un seul emplacement dans un cas eDiscovery et que vous choisissez de rechercher des emplacements en attente, le nombre maximal de mots clés pour cette requête de recherche est de 500. En raison du fait que la recherche combine toutes les requêtes basées sur des requêtes à l’aide de **l’opérateur OR.** S’il existe plus de 500 mots clés dans les requêtes de recherche et les requêtes de recherche combinées, tout le contenu de la boîte aux lettres est recherché, et pas seulement le contenu qui correspond aux cas basés sur une requête.
 
-- Si l’état d’une attente eDiscovery est « En cours d’utilisation **»**, vous pouvez toujours rechercher les emplacements en attente pendant que la attente est en cours d’utilisation.
+- Si une attente eDiscovery a l’état **On (En attente),** vous pouvez toujours rechercher les emplacements en attente pendant que la attente est en cours d’utilisation.
 
 ## <a name="preserve-content-in-microsoft-teams"></a>Conserver le contenu dans Microsoft Teams
 
-Les conversations qui font partie d’un canal Microsoft Teams sont stockées dans la boîte aux lettres associée à Microsoft Team. De même, les fichiers partagés par les membres d’une équipe dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez placer la boîte aux lettres d’équipe et le site SharePoint en conservation eDiscovery pour conserver les conversations et les fichiers dans un canal.
+Les conversations qui font partie d’un canal Microsoft Teams sont stockées dans la boîte aux lettres associée à Microsoft Team. De même, les fichiers partagés par les membres d’une équipe dans un canal sont stockés sur le site SharePoint de l’équipe. Par conséquent, vous devez placer la boîte aux lettres d’équipe et SharePoint site en conservation eDiscovery pour conserver les conversations et les fichiers dans un canal.
 
-Sinon, les conversations qui font partie de la liste de conversation dans Teams (appelées conversations *1:1* ou conversations de groupe *1:N)* sont stockées dans les boîtes aux lettres des utilisateurs qui participent à la conversation. Les fichiers que les utilisateurs partagent dans les conversations sont stockés dans le compte OneDrive de l’utilisateur qui partage le fichier. Par conséquent, vous devez ajouter les boîtes aux lettres utilisateur individuelles et les comptes OneDrive à une conservation eDiscovery pour conserver les conversations et les fichiers dans la liste de conversation. Il est bon de mettre en attente les boîtes aux lettres des membres d’une équipe Microsoft en plus de placer la boîte aux lettres et le site d’équipe en attente.
+En outre, les conversations qui font partie de la liste de conversation dans Teams (appelées conversations *1:1* ou conversations de groupe *1:N)* sont stockées dans les boîtes aux lettres des utilisateurs qui participent à la conversation. Les fichiers que les utilisateurs partagent dans les conversations sont stockés dans le compte OneDrive de l’utilisateur qui partage le fichier. Par conséquent, vous devez ajouter les boîtes aux lettres utilisateur et les comptes OneDrive à une conservation eDiscovery pour conserver les conversations et les fichiers dans la liste de conversation. Il est bon de mettre en attente les boîtes aux lettres des membres d’une équipe Microsoft en plus de placer la boîte aux lettres et le site d’équipe en attente.
 
 > [!NOTE]
-> Si votre organisation dispose d’un déploiement Hybride Exchange (ou si votre organisation synchronise une organisation Exchange sur site avec Office 365) et a activé Microsoft Teams, les utilisateurs locaux peuvent utiliser l’application de conversation Teams et participer à des conversations 1:1 et des conversations de groupe 1:N. Ces conversations sont stockées dans un stockage en nuage associé à un utilisateur local. Si un utilisateur local est placé en conservation eDiscovery, le contenu de conversation Teams dans le stockage en nuage est conservé. Pour plus d'informations, voir [Recherche de données de conversation des équipes pour les utilisateurs sur site](search-cloud-based-mailboxes-for-on-premises-users.md).
+> Si votre organisation dispose d’un déploiement hybride Exchange (ou si votre organisation synchronise une organisation Exchange sur site avec Office 365) et a activé Microsoft Teams, les utilisateurs locaux peuvent utiliser l’application de conversation Teams et participer à des conversations 1:1 et des conversations de groupe 1:N. Ces conversations sont stockées dans un stockage en nuage associé à un utilisateur local. Si un utilisateur local est placé en conservation eDiscovery, le contenu Teams conversation dans le stockage en nuage est conservé. Pour plus d'informations, voir [Recherche de données de conversation des équipes pour les utilisateurs sur site](search-cloud-based-mailboxes-for-on-premises-users.md).
 
-Pour plus d’informations sur la conservation du contenu Teams, voir Placer un utilisateur ou une équipe [Microsoft Teams en conservation légale.](/MicrosoftTeams/legal-hold)
+Pour plus d’informations sur la conservation Teams contenu, voir Placer un utilisateur Microsoft Teams ou une équipe [en conservation légale.](/MicrosoftTeams/legal-hold)
 
 ### <a name="preserve-card-content"></a>Conserver le contenu de la carte
 
@@ -157,13 +155,13 @@ Chaque canal d’équipe ou d’équipe contient également un Wiki pour la pris
 
 ### <a name="office-365-groups"></a>Groupes Office 365
 
-Teams repose sur les groupes Office 365. Par conséquent, placer des groupes Office 365 en attente eDiscovery est similaire en plaçant le contenu Teams en attente.
+Teams est construit sur Office 365 groupes. Par conséquent, placer Office 365 groupes en attente eDiscovery est similaire à placer Teams contenu en attente.
 
-Gardez les points suivants à l’esprit lorsque vous placez Teams et les groupes Office 365 en attente eDiscovery :
+Gardez les points suivants à l’esprit lorsque vous placez les groupes Teams et Office 365 en attente eDiscovery :
 
-- Comme indiqué précédemment, pour placer le contenu situé dans Teams et les groupes Office 365 en attente, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou une équipe.
+- Comme indiqué précédemment, pour placer le contenu situé dans les groupes Teams et Office 365 en attente, vous devez spécifier la boîte aux lettres et le site SharePoint associés à un groupe ou à une équipe.
 
-- Exécutez la cmdlet **Get-UnifiedGroup** dans [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) pour afficher les propriétés de Teams et des groupes Office 365. C’est un bon moyen d’obtenir l’URL du site associé à une équipe ou à un groupe Office 365. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team :
+- Exécutez **l’cmdlet Get-UnifiedGroup** [dans Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) pour afficher les propriétés Teams et Office 365 groupes. C’est un bon moyen d’obtenir l’URL du site associé à une équipe ou un Office 365 groupe. Par exemple, la commande suivante affiche les propriétés sélectionnées d’un groupe Office365 nommé Senior Leadership Team :
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -177,9 +175,9 @@ Gardez les points suivants à l’esprit lorsque vous placez Teams et les groupe
     > [!NOTE]
     > Pour exécuter l'applet de commande **Get-UnifiedGroup**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul. 
   
-- Lorsque la recherche est sur la boîte aux lettres d’un utilisateur, aucune équipe ou groupe Office 365 dont l’utilisateur est membre n’est recherché. De même, lorsque vous placez une équipe ou un groupe Office 365 en attente eDiscovery, seules la boîte aux lettres de groupe et le site de groupe sont mis en attente. Les boîtes aux lettres et les sites OneDrive Entreprise des membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement à la mise en attente eDiscovery. Par exemple, si vous devez placer une équipe ou un groupe Office 365 en attente pour une raison juridique, envisagez d’ajouter les boîtes aux lettres et les comptes OneDrive des membres de l’équipe ou du groupe en même temps.
+- Lorsque la recherche est sur la boîte aux lettres d’un utilisateur, aucune recherche n’est Office 365 groupe d’équipe ou de groupe dont l’utilisateur est membre. De même, lorsque vous placez une équipe ou un groupe Office 365 en attente eDiscovery, seules la boîte aux lettres de groupe et le site de groupe sont mis en attente. Les boîtes aux lettres et OneDrive Entreprise sites de membres du groupe ne sont pas mis en attente, sauf si vous les ajoutez explicitement à la mise en attente eDiscovery. Par exemple, si vous devez placer un groupe d’équipe ou de groupe Office 365 en attente pour une raison juridique, envisagez d’ajouter les boîtes aux lettres et les comptes OneDrive des membres de l’équipe ou du groupe en même temps.
 
-- Pour obtenir la liste des membres d’une équipe ou d’un groupe Office 365, vous pouvez afficher les propriétés sur la **page** Groupes dans le Centre d’administration Microsoft 365. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
+- Pour obtenir la liste des membres d’une équipe ou d’un groupe Office 365, vous pouvez afficher les propriétés sur la **page** Groupes dans le Centre d’administration Microsoft 365'administration. Vous pouvez également exécuter la commande suivante dans Exchange Online PowerShell :
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -188,16 +186,16 @@ Gardez les points suivants à l’esprit lorsque vous placez Teams et les groupe
     > [!NOTE]
     > Pour exécuter l'applet de commande **Get-UnifiedGroupLinks**, vous devez avoir le rôle de destinataires en affichage seul dans Exchange Online ou être membre d’un groupe de rôles affecté du rôle de destinataires en affichage seul.
 
-## <a name="preserve-content-in-onedrive-accounts"></a>Conserver le contenu dans les comptes OneDrive
+## <a name="preserve-content-in-onedrive-accounts"></a>Conserver le contenu dans OneDrive comptes
 
-Pour collecter une liste des URL des sites OneDrive Entreprise de votre organisation afin de pouvoir les ajouter à une attente ou à une recherche associée à un cas eDiscovery, voir Créer une liste de tous les emplacements [OneDrive](/onedrive/list-onedrive-urls)de votre organisation. Le script de cet article crée un fichier texte qui contient la liste de tous les sites OneDrive de votre organisation. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+Pour collecter une liste des URL pour les sites OneDrive Entreprise de votre organisation afin de pouvoir les ajouter à une attente ou à une recherche associée à un cas eDiscovery, voir Créer une liste de tous les emplacements [OneDrive](/onedrive/list-onedrive-urls)de votre organisation. Le script de cet article crée un fichier texte qui contient la liste de tous les sites OneDrive de votre organisation. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
 > [!IMPORTANT]
-> L’URL du compte OneDrive d’un utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où le nom d’upn d’une personne est modifié, son URL OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente eDiscovery, qu’il est ancien et que son UPN est modifié, vous devez mettre à jour la mise en attente et ajouter la nouvelle URL OneDrive de l’utilisateur et supprimer l’ancienne. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
+> L’URL du compte d’OneDrive utilisateur inclut son nom d’utilisateur principal (UPN) (par exemple, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). Dans les rares cas où l’UPN d’une personne est modifié, son URL OneDrive change également pour incorporer le nouvel UPN. Si le compte OneDrive d’un utilisateur fait partie d’une mise en attente eDiscovery, qu’il est ancien et que son UPN est modifié, vous devez mettre à jour la mise en attente et ajouter la nouvelle URL OneDrive de l’utilisateur et supprimer l’ancienne. Pour plus d’informations, voir [Comment les modifications du nom d’utilisateur principal affectent l’URL OneDrive](/onedrive/upn-changes).
 
 ## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Suppression d’emplacements de contenu d’une attente eDiscovery
 
-Après la suppression d’une boîte aux lettres, d’un site SharePoint ou d’un compte OneDrive d’une boîte aux lettres d’une découverte électronique, un délai *est* appliqué. Cela signifie que la suppression réelle de la attente est retardée de 30 jours pour empêcher la suppression définitive (purgée) des données d’un emplacement de contenu. Cela permet aux administrateurs de rechercher ou de récupérer du contenu qui sera purgé après la suppression d’une attente eDiscovery. Les détails du fonctionnement du délai d’attente pour les boîtes aux lettres et les sites sont différents.
+Une fois qu’une boîte SharePoint, un site ou un compte OneDrive est supprimé d’une boîte aux lettres, d’un site ou d’un compte de découverte électronique, un délai *est* appliqué. Cela signifie que la suppression réelle de la attente est retardée de 30 jours pour empêcher la suppression définitive (purgée) des données d’un emplacement de contenu. Cela permet aux administrateurs de rechercher ou de récupérer du contenu qui sera purgé après la suppression d’une attente eDiscovery. Les détails du fonctionnement du délai d’attente pour les boîtes aux lettres et les sites sont différents.
 
 - **Boîtes aux lettres :** Une mise en attente différée est placée sur une boîte aux lettres la prochaine fois que l’Assistant Dossier géré traite la boîte aux lettres et détecte qu’une mise en attente eDiscovery a été supprimée. Plus précisément, un délai d’attente est appliqué à une boîte aux lettres lorsque l’Assistant Dossier géré définit l’une des propriétés de boîte aux lettres suivantes sur **True**:
 
@@ -205,11 +203,11 @@ Après la suppression d’une boîte aux lettres, d’un site SharePoint ou d’
 
    - **DelayReleaseHoldApplied :** Cette propriété s’applique au contenu en nuage (généré par des applications non Outlook telles que Microsoft Teams, Microsoft Forms et Microsoft Yammer) stocké dans la boîte aux lettres d’un utilisateur. Les données cloud générées par une application Microsoft sont généralement stockées dans un dossier masqué dans la boîte aux lettres d’un utilisateur.
 
-   Lorsqu’une mise en attente différée est placée sur la boîte aux lettres (lorsque l’une des propriétés précédentes est définie sur **True),** la boîte aux lettres est toujours considérée comme étant en attente pour une durée illimitée, comme si la boîte aux lettres était en attente pour litige. Au bout de 30 jours, le délai d’attente expire et Microsoft 365 tente automatiquement de supprimer la mise en attente retardée (en fixant la propriété DelayHoldApplied ou DelayReleaseHoldApplied sur **False)** afin que la mise en attente soit supprimée. Une fois que l’une de ces propriétés est définie sur **False,** les éléments correspondants marqués pour suppression sont purgés la prochaine fois que la boîte aux lettres est traitée par l’Assistant Dossier géré.
+   Lorsqu’une mise en attente différée est placée sur la boîte aux lettres (lorsque l’une des propriétés précédentes est définie sur **True),** la boîte aux lettres est toujours considérée comme étant en attente pour une durée illimitée, comme si la boîte aux lettres était en attente pour litige. Au bout de 30 jours, le délai d’attente expire et Microsoft 365 tente automatiquement de supprimer le délai d’attente (en fixant la propriété DelayHoldApplied ou DelayReleaseHoldApplied sur **False)** afin que la mise en attente soit supprimée. Une fois que l’une de ces propriétés est définie sur **False,** les éléments correspondants marqués pour suppression sont purgés la prochaine fois que la boîte aux lettres est traitée par l’Assistant Dossier géré.
 
    Pour des informations supplémentaires, consultez [Gestion des boîtes aux lettres avec période de grâce](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
-- **Sites SharePoint et OneDrive :** Tout contenu SharePoint ou OneDrive conservé dans la bibliothèque de conservation et de préservation des données n’est pas supprimé pendant la période de conservation différée de 30 jours après la suppression d’un site d’une conservation eDiscovery. Cela est similaire à ce qui se produit lorsqu’un site est libéré d’une stratégie de rétention. En outre, vous ne pouvez pas supprimer manuellement ce contenu dans la bibliothèque de conservation et de préservation des données pendant la période de conservation différée de 30 jours. 
+- **SharePoint sites OneDrive sites :** Tout contenu SharePoint ou OneDrive conservé dans la bibliothèque de conservation et de préservation des données n’est pas supprimé pendant la période de conservation différée de 30 jours après la suppression d’un site d’une conservation eDiscovery. Cela est similaire à ce qui se produit lorsqu’un site est libéré d’une stratégie de rétention. En outre, vous ne pouvez pas supprimer manuellement ce contenu dans la bibliothèque de conservation et de préservation des données pendant la période de conservation différée de 30 jours. 
 
    Pour plus d’informations, voir [Publication d’une stratégie pour la rétention.](retention.md#releasing-a-policy-for-retention)
 
@@ -229,7 +227,7 @@ Le tableau suivant répertorie les limites pour les cas eDiscovery et les cas en
   |||
 
    > [!NOTE]
-   > <sup>1</sup> Pour afficher une liste de plus de 1 000 cas, de mise en attente, de recherches ou d’exportations, vous pouvez utiliser l’cmdlet PowerShell de sécurité & conformité Office 365 correspondante :
+   > <sup>1 Pour</sup> afficher une liste de plus de 1 000 cas, de mise en attente, de recherche ou d’exportation, vous pouvez utiliser l’cmdlet PowerShell Office 365 Security & Compliance :
    >
    > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
    > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
