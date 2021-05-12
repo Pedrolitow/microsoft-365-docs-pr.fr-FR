@@ -5,21 +5,23 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.collection: ''
+ms.custom:
+- commerce_licensing
 description: Découvrez la nouvelle fonctionnalité d’allotments.
-ms.openlocfilehash: 62df346def3fd2577568916d2d668ca50542bdbd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 949e06d4bf54405e0045f8c7512a04b1b5cc22c0
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911613"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327129"
 ---
 # <a name="allotment-basics"></a>Informations de base sur l’allotment
 
@@ -29,9 +31,9 @@ Les affectations utilisent des licences basées sur des groupes pour attribuer d
 
 Vous pouvez également déléguer la gestion de vos allotments. Les propriétaires d’autorisation délégués ont accès au Centre d’administration, mais peuvent uniquement voir et gérer les licences dans les autorisations dont ils sont propriétaires. Cela fournit une délégation plus granulaire de la gestion des licences au sein de votre organisation.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
-Vous devez respecter les exigences de licence pour [les licences basées sur des groupes.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)
+Vous devez respecter les exigences de licence pour les [licences basées sur des groupes.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)
 
 Vous pouvez utiliser des allotments avec n’importe quel produit disponible pour les utilisateurs :
 
@@ -42,10 +44,10 @@ Vous pouvez utiliser des allotments avec n’importe quel produit disponible pou
 Les produits suivants ne peuvent pas être utilisés avec des allotments :
 
 - Applications du Microsoft Store
-- Logiciels perpétuelles ou logiciels directement attribués à un utilisateur s’il n’y a aucune licence impliquée.
+- Logiciels perpétuelles ou logiciels directement attribués à un utilisateur en l’absence de licence.
 - Ressources Azure
 
-Vous devez être un administrateur global ou un administrateur de licence pour commencer avec une autorisation.
+Vous devez être un administrateur global ou un administrateur de licence pour prendre en compte une autorisation.
 
 ## <a name="getting-started"></a>Prise en main
 

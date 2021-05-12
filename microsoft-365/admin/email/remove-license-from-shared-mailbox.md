@@ -22,19 +22,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Supprimez la licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur. '
-ms.openlocfilehash: 82ec863d5c2ae550fb401e71744715a27c89d382
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470618"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327221"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
 Les boîtes aux lettres partagées ne nécessitent généralement pas de licence. Suivez ces instructions pour supprimer une licence d’une boîte aux lettres partagée afin de pouvoir l’attribuer à un utilisateur ou renvoyer la licence afin de ne pas payer pour une licence dont vous n’avez pas besoin.
 
 > [!NOTE]
+>
 > Une licence est requise dans les scénarios suivants :
+>
 > 1. La boîte aux lettres partagée utilise plus de 50 Go de stockage.
 > 2. La boîte aux lettres partagée utilise l’archivage sur place.
 > 3. La boîte aux lettres partagée est placée en attente pour litige.

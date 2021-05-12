@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: 8503ed7ea2e088a8e17b52e619ee999aa05f497a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 76bfa6272ec784518f045a50299fc7cda719eec8
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579289"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327197"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -39,9 +39,9 @@ Pour plus d’informations sur l’installation des modules complémentaires à 
 
 Un add-in peut être à **l’état On** ou **Off.**
   
-|**État**|**Comment l'état se produit**|**Impact**|
+| État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
-|**Active**  <br/> |L’administrateur a chargé le module et l’a affecté à des utilisateurs ou des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
+|**Actif**  <br/> |L’administrateur a chargé le module et l’a affecté à des utilisateurs ou des groupes.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté voient celui-ci dans les clients concernés.  <br/> |
 |**Désactivé**  <br/> |Un administrateur a désactivé le complément.  <br/> |Les utilisateurs et les groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> Si l'état du complément est modifié en Actif, les utilisateurs et groupes ont de nouveau accès à celui-ci.  <br/> |
 |**Deleted**  <br/> |Un administrateur a supprimé le complément.  <br/> |Les utilisateurs et groupes auxquels le complément est affecté ne peuvent plus accéder à celui-ci.  <br/> |
    
@@ -53,12 +53,12 @@ Vous pouvez également supprimer un module qui a été déployé.
 
 1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & des modules.**
 
-     > [!NOTE]
+    > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
 2. Sélectionnez le add-in déployé.
 
-3. Cliquez sur **Supprimer le add-in.** Supprimez le bouton du complément dans le coin inférieur droit.
+3. Cliquez sur **Supprimer le add-in.** Supprimez le bouton de la fonction de la fonction dans le coin inférieur droit.
 
 4. Validez vos sélections, puis sélectionnez **Supprimer le complément**.
 
@@ -68,7 +68,7 @@ Après le déploiement, les administrateurs peuvent également gérer l’accès
 
 1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & des modules.**
 
-     > [!NOTE]
+    > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
 2. Sélectionnez le add-in déployé.
@@ -88,29 +88,27 @@ En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux
   
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> [Services &amp; Compléments](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
-     > [!NOTE]
+    > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en allant dans **Applications intégrées**  >  **paramètres.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
     
 3. Sélectionnez **Applications et services appartenant aux utilisateurs**.
     
 4. Désactivez l’option pour permettre aux utilisateurs d’accéder à Office Store.
 
-Cela empêche tous les utilisateurs d’acquérir les modules suivants dans le Store.
-  
-- Les add-ins pour Word, Excel et PowerPoint 2016 à partir de :
-    
-  - Windows
-    
-  - Mac
-    
-  - Office
-    
-    
-- Acquisitions à partir **d’AppSource**
-    
-- Add-ins within Microsoft 365
-    
-Un utilisateur qui tente d’accéder à l’Office Store voit le message suivant : **Désolé, Microsoft 365** a été configuré pour empêcher l’acquisition individuelle de modules de l’Office Store.
+    Cela empêche tous les utilisateurs d’acquérir les modules suivants dans le Store.
+      
+    - Les add-ins pour Word, Excel et PowerPoint 2016 à partir de :
+        
+      - Windows
+      - Mac
+      - Office
+        
+        
+    - Acquisitions à partir **d’AppSource**
+        
+    - Add-ins within Microsoft 365
+        
+    Un utilisateur qui tente d’accéder à l’Office Store voit le message suivant : **Désolé, Microsoft 365** a été configuré pour empêcher l’acquisition individuelle de modules de l’Office Store.
   
 La prise en charge de la non-prise en charge de l’Office Store est disponible dans les versions suivantes :
   
@@ -126,8 +124,8 @@ Cela n’empêche pas un administrateur d’utiliser le déploiement centralisé
   
 Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez restreindre l’accès pour utiliser uniquement le compte d’organisation. Pour plus d’informations, [voir Identité, authentification et autorisation dans Office 2016.](/DeployOffice/security/identity-authentication-and-authorization-in-office)  
 
-> [!NOTE]
-> Le fait d’empêcher les utilisateurs d’accéder à l’Office Store les empêchera également de recharger une version test des [add-ins Office.](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
+> [!NOTE] 
+> En empêchant les utilisateurs d’accéder à l’Office Store, ils ne pourront pas non plus recharger de version test des [add-ins Office](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)à partir d’un partage réseau.
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
@@ -145,11 +143,15 @@ Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si 
     
 2. Sélectionnez l'onglet **Géré par l'administrateur** dans la fenêtre Compléments Office. 
     
-3. Double-cliquez sur le complément que vous avez déployé précédemment (dans cet exemple, **Citations** ). <br/>![Onglet Géré par l’administrateur de la page Des add-ins Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. Double-cliquez sur le module que vous avez déployé précédemment (dans cet exemple, **Citations).**
+
+    ![Onglet Géré par l’administrateur de la page Des add-ins Office](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>Dans Outlook
 
-1. Dans le **ruban Accueil,** **sélectionnez Obtenir des modules.**<br/>![Bouton Store dans Outlook](../../media/getaddinsicon.png)
+1. Dans le **ruban Accueil,** **sélectionnez Obtenir des modules.**
+
+    ![Bouton Store dans Outlook](../../media/getaddinsicon.png)
   
 2. Sélectionnez **Géré par l’administrateur** dans le volet de navigation gauche. 
 

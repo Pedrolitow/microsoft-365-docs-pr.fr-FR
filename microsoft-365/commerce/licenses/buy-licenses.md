@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: Découvrez comment acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 pour les entreprises.
-ms.date: ''
-ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 04/07/2021
+ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615134"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327117"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences
 
@@ -41,30 +42,30 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
-Si les personnes pour qui vous achetez des licences ne sont pas encore des utilisateurs actifs de votre organisation, l’étape suivante consiste à ajouter des utilisateurs et à attribuer des [licences en même temps.](../../admin/add-users/add-users.md)
+Si les personnes pour qui vous achetez des licences ne sont pas encore des utilisateurs actifs de votre organisation, la prochaine chose à faire est d’ajouter des utilisateurs et d’attribuer des [licences en même temps.](../../admin/add-users/add-users.md)
 
 ## <a name="watch-remove-existing-licenses"></a>Regarder : Supprimer des licences existantes
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
 
-Si vous avez supprimé des licences d’un abonnement, vous devez ensuite supprimer des utilisateurs [de votre organisation.](../../admin/add-users/delete-a-user.md)
+Si vous avez supprimé des licences d’un abonnement, la prochaine chose à faire est de supprimer des utilisateurs [de votre organisation.](../../admin/add-users/delete-a-user.md)
 
 ## <a name="buy-or-remove-licenses-for-your-business-subscription"></a>Acheter ou supprimer des licences pour votre abonnement commercial
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
 ::: moniker-end
 
 2. Sous **l’onglet** Produits, recherchez l’abonnement pour lequel vous souhaitez acheter ou supprimer des licences. Sélectionnez **Plus d’actions** (trois points), puis **sélectionnez Acheter des licences.** [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -83,8 +84,8 @@ Ce tableau décrit les raisons pour lesquelles les boutons Acheter des **licence
 |---------|---------|---------|
 |Une vérification de solvabilité est en attente. |Si une vérification de solvabilité est en attente, vous ne pouvez pas acheter ou supprimer de licences tant que la vérification de solvabilité n’est pas terminée.  | Vérifiez ultérieurement si la vérification de solvabilité est terminée. Les vérifications de la solvabilité nécessitent en général deux jours ouvrés.<br/>Une fois la vérification de solvabilité terminée, vous devez voir les boutons Acheter **des licences** et **Supprimer des licences.** |
 |Vous avez activé l’abonnement à l’aide d’une clé de produit.| Si l’abonnement a été acheté et activé à l’aide d’une clé  de produit de 25 caractères, vous voyez le mot « Prépayé » dans la colonne Canal d’achat de la page Vos **produits.**  |Voir [Ajouter des licences à un abonnement payé pour l’utilisation d’une clé de produit.](add-licenses-using-product-key.md) |
-|Vous avez acheté votre abonnement via un revendeur.| Vous voyez le mot « Revendeur  » dans la colonne Canal d’achat de la page **Vos produits.** | Si l’abonnement a été acheté via un partenaire fournisseur de solutions Cloud, contactez votre partenaire fournisseur de solutions Cloud pour acheter d’autres licences.        |
-|Vous avez un abonnement d’essai. | Pour afficher vos abonnements à la version d’essai, sélectionnez le bouton filtre, puis choisissez **Version d’essai.** | Tout d’abord, achetez votre abonnement d’essai, puis vous pouvez acheter d’autres licences.|
+|Vous avez acheté votre abonnement par le biais d’un revendeur.| Vous voyez le mot « Revendeur  » dans la colonne Canal d’achat de la page **Vos produits.** | Si l’abonnement a été acheté via un partenaire fournisseur de solutions Cloud, contactez votre partenaire fournisseur de solutions Cloud pour acheter d’autres licences.        |
+|Vous avez un abonnement d’essai. | Pour afficher vos abonnements d’essai, sélectionnez le bouton filtre, puis choisissez **Version d’essai.** | Tout d’abord, achetez votre abonnement d’essai, puis vous pouvez acheter d’autres licences.|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>Quand les nouvelles licences pourront-elles être assignées ?
 
