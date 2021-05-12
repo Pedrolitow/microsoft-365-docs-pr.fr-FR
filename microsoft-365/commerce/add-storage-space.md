@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,25 +19,22 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: drjones
-search.appverid:
-- MET150
-description: Découvrez comment ajouter et réduire le stockage de fichiers dans votre abonnement Microsoft 365 de fichiers. Avec un stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
+search.appverid: MET150
+description: Découvrez comment ajouter et réduire le stockage de fichiers dans votre abonnement Microsoft 365 de fichiers. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 98fdb4412f263bd9e0a22b6890ff66509cb3e799
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293678"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332185"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Ajouter de l’espace de stockage pour votre abonnement
 
 Si vous commencez à manquer d’espace de stockage pour vos collections de sites SharePoint Online et si votre plan est éligible, vous pouvez en ajouter à votre abonnement.  Si vous ne voyez  pas le Stockage de fichiers supplémentaire Office 365 dans la liste des modules add-on disponibles, cela signifie que votre plan n’est pas éligible. Pour plus d’informations, voir [Mon plan est-il éligible ?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Si vous avez acheté votre abonnement par le biais de  licences en volume ou d’un programme CSP, vous ne pouvez pas acheter Stockage de fichiers supplémentaire Office 365 pour votre organisation directement auprès de Microsoft. Contactez votre représentant ou partenaire pour obtenir de l’aide.
+> Si vous avez acheté votre abonnement par le biais de licences en volume ou d’un programme CSP, vous ne pouvez pas acheter **Stockage de fichiers supplémentaire Office 365** pour votre organisation directement auprès de Microsoft. Contactez votre représentant ou partenaire pour obtenir de l’aide.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -53,7 +51,7 @@ Vous devez être un administrateur global ou SharePoint pour effectuer les tâch
    > [!NOTE]
    > L’espace de stockage utilisé n’inclut pas les modifications apportées au cours des 24 à 48 dernières heures.
 
-Après avoir déterminez la quantité de stockage que vous utilisez, vous pouvez ajouter ou supprimer de l’espace de stockage pour votre abonnement. Pour connaître le coût d’ajout d’espace de stockage, suivez les étapes de cet article et examinez les informations tarifaires avant d’acheter davantage.
+Après avoir déterminez la quantité de stockage que vous utilisez, vous pouvez ajouter ou supprimer de l’espace de stockage pour votre abonnement. Pour connaître le coût d’ajout d’espace de stockage, suivez les étapes de cet article et examinez les informations de tarification avant d’acheter davantage.
   
 Pour plus d’informations sur la définition des limites de stockage des collections de sites, voir [Gérer les limites de stockage des collections de sites.](/sharepoint/manage-site-collection-storage-limits)
   
@@ -105,5 +103,5 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Gérer les limites de stockage de](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) site (article)\
+[Gérer les limites de stockage de](/sharepoint/manage-site-collection-storage-limits) site (article)\
 [Définir l’espace de stockage par défaut pour OneDrive utilisateurs](/onedrive/set-default-storage-space)(article)

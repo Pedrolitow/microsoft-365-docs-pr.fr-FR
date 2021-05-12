@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3c9c96c73a6d1843f2e7aa626cafac0860887a65
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 72dc9d448a6170cbacc71d37a60bdd059ef6ec3e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327341"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333793"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge : pour la gestion des menaces et des vulnérabilités
 
@@ -56,10 +56,10 @@ Windows Server 2008 R2 | Oui | Oui | Oui | Oui | Oui
 Windows Server 2012 R2 | Oui | Oui | Oui | Oui | Oui
 Windows Server 2016 | Oui | Oui | Oui | Oui | Oui
 Windows Server 2019 | Oui | Oui | Oui | Oui | Oui
-macOS 10.14 « Mojave » et supérieur | Oui | Oui | Aperçu \( oui\) | Aperçu \( oui\) | Aperçu \( oui\)
-Red Hat Enterprise Linux 7.2 ou supérieur (voir l’avis « Important » \* ci-dessous) | Oui | Oui | Oui | Oui | Oui
-CentOS 7.2 ou supérieur | Oui | Oui | Oui | Oui | Oui
-Ubuntu 16.04 LTS ou une LTS supérieure | Oui | Oui | Oui | Oui | Oui
+macOS 10.14 « Mojave » et supérieur | Oui | Oui | Oui (aperçu) | Oui (aperçu) | Oui (aperçu)
+Red Hat Enterprise Linux 7.2 ou version supérieure **(prévisualisation)** (voir l’avis \* « Important » ci-dessous) | Oui | Oui | Oui | Oui | Oui
+CentOS 7.2 ou version supérieure **(prévisualisation)** | Oui | Oui | Oui | Oui | Oui
+Ubuntu 16.04 LTS ou version supérieure LTS **(prévisualisation)** | Oui | Oui | Oui | Oui | Oui
 
 >[!IMPORTANT]
 > \* Red Hat Enterprise Linux : « Les données de vulnérabilité fournies et affichées dans le cadre de vos services Microsoft Defender pour Endpoint sont disponibles sous sa forme brute, « EN L’ÉTAT », à partir de Red Hat, Inc., et peuvent ne pas être à jour. Les données accessibles dans l’API de données de sécurité Red Hat sont sous licence dans le cadre de la licence internationale Creative Commons Attribution 4.0. Vous assumez les risques associés à l’utilisation de ces données. Microsoft et ses fournisseurs tiers se dé déchargent de toute responsabilité pour les dommages indirects et indirects et les garanties implicites, y compris les garanties implicites de non-contrefaçon, la qualité de marché et l’aptitude à un usage particulier. © 2020 Red Hat. Tous droits réservés. © 2020 Microsoft. Tous droits réservés. »

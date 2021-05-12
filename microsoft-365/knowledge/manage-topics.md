@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 59581dce3701e622a1e2d7ed264370c9d92b3211
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327272"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333625"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Gérer les rubriques dans le centre de rubriques dans Rubriques microsoft
 
@@ -46,10 +46,6 @@ Les gestionnaires de connaissances vous aident à guider les rubriques découver
 
 - **Supprimé :** une rubrique est rejetée par un gestionnaire de connaissances et n’est plus visible pour les visiteurs. Une rubrique peut être supprimée dans n’importe quel état (suggéré, confirmé ou publié). Pour qu’une rubrique soit supprimée, il doit y avoir un net de deux votes négatifs reçus des utilisateurs qui ont voter à l’aide des mécanismes de commentaires sur la carte de sujet. Par exemple, si un utilisateur a exprimé un vote négatif et un utilisateur a exprimé un vote positif pour une rubrique particulière, vous aurez besoin de deux autres votes négatifs pour que la rubrique soit supprimée. Lorsqu’une rubrique publiée est supprimée, la page avec les détails organisés doit être supprimée manuellement via la bibliothèque de pages du centre de rubriques.
 
-Dans la page **Gérer les rubriques,** un gestionnaire de connaissances peut voir si une rubrique a été confirmée ou supprimée par des votes d’utilisateur ou par une personne spécifique. Par exemple, pour les rubriques supprimées par des  votes d’utilisateur, la raison est affichée dans la colonne Supprimé par en tant que **votes** d’utilisateur plutôt que le nom d’une personne. 
-
-   ![Capture d’écran de la page Gérer les rubriques affichant la liste des rubriques supprimées avec les votes des utilisateurs mis en évidence.](../media/knowledge-management/removed-topics-user-votes.png) 
-
 > [!Note] 
 > Dans la page Gérer **les rubriques,** chaque gestionnaire de connaissances pourra uniquement consulter les rubriques dans laquelle il a accès aux fichiers et pages sous-jacents connectés à la rubrique. Ce suppression d’autorisation sera reflété dans la liste des rubriques qui apparaissent  dans les onglets **Suggéré,** **Confirmé,** Publié et Supprimé. Le nombre de rubriques, toutefois, indique le nombre total dans l’organisation, quelles que soient les autorisations.
 
@@ -58,15 +54,15 @@ Dans la page **Gérer les rubriques,** un gestionnaire de connaissances peut voi
 Pour gérer des rubriques dans le centre de rubriques, vous devez :
 - avoir une licence Rubriques Viva.
 
-- Avoir [**l’autorisation Qui peut gérer les rubriques.**](./topic-experiences-user-permissions.md) Les administrateurs d'informations peuvent accorder cette autorisation aux utilisateurs dans les paramètres d'autorisation Rubriques Viva. 
+- Avoir la Qui [**pouvez gérer les autorisations des rubriques.**](./topic-experiences-user-permissions.md) Les administrateurs d'informations peuvent accorder cette autorisation aux utilisateurs dans les paramètres d'autorisation Rubriques Viva. 
 
-Vous ne pourrez pas afficher la page Gérer les rubriques dans le centre de **rubriques,** sauf si vous avez l’autorisation Qui peut **gérer les rubriques.**
+Vous ne pourrez pas afficher la page Gérer les rubriques dans le centre de **rubriques,** sauf si vous Qui pouvez gérer **les rubriques.**
 
 Dans le centre de rubriques, un gestionnaire de connaissances peut consulter les rubriques qui ont été identifiées aux emplacements sources que vous avez spécifiés, et peut les confirmer ou les supprimer. Un gestionnaire de connaissances peut également créer et publier de nouvelles pages de rubriques si aucune page n’a été trouvée dans la découverte de rubrique, ou modifier des pages existantes si elles doivent être mises à jour.
 
 ## <a name="review-suggested-topics"></a>Consulter les rubriques suggérées
 
-Dans la page **Gérer les rubriques,** les rubriques qui ont été découvertes dans vos emplacements sources SharePoint spécifiés sont répertoriées sous **l’onglet Suggestions.** Si nécessaire, un gestionnaire de connaissances peut consulter des rubriques non confirmées et choisir de les confirmer ou de les supprimer.
+Dans la page Gérer **les rubriques,** les rubriques qui ont été découvertes dans SharePoint emplacements sources spécifiés sont répertoriées sous **l’onglet Suggestions.** Si nécessaire, un gestionnaire de connaissances peut consulter des rubriques non confirmées et choisir de les confirmer ou de les supprimer.
 
    ![Rubriques suggérées](../media/knowledge-management/quality-score.png) 
 
@@ -90,7 +86,7 @@ Pour consulter une rubrique suggérée :
 
 Un score de qualité est attribué à chaque rubrique qui apparaît dans la page **Rubriques** suggérées. Le score de qualité reflète la quantité d’informations que l’utilisateur moyen verra pour les informations sur le sujet, en gardant à l’esprit que chaque utilisateur peut voir plus ou moins d’informations en raison des autorisations qu’il peut ou non avoir sur les informations d’une rubrique. 
 
-Le score de qualité peut aider à donner un aperçu des rubriques les plus pertinentes et peut être utile pour trouver des rubriques qui peuvent avoir besoin d’être modifiées manuellement. Par exemple, une rubrique avec un score de qualité inférieur peut être le résultat de certains utilisateurs ne disposent pas des autorisations SharePoint pour les fichiers pertinents ou les sites que l’IA a inclus dans la rubrique. Un collaborateur peut alors modifier la rubrique afin d’nclure les informations (le cas échéant), lesquelles seront ensuite consultables par tous les utilisateurs qui peuvent consulter la rubrique.
+Le score de qualité peut aider à donner un aperçu des rubriques les plus pertinentes et peut être utile pour trouver des rubriques qui peuvent avoir besoin d’être modifiées manuellement. Par exemple, une rubrique avec un score de qualité inférieur peut être le résultat de l’SharePoint des utilisateurs sur les fichiers ou sites pertinents que l’IA a inclus dans la rubrique. Un collaborateur peut alors modifier la rubrique afin d’nclure les informations (le cas échéant), lesquelles seront ensuite consultables par tous les utilisateurs qui peuvent consulter la rubrique.
 
 ### <a name="impressions"></a>Impressions
 
@@ -98,7 +94,7 @@ La **colonne Impressions** affiche le nombre de fois qu’une rubrique a été p
 
 ## <a name="confirmed-topics"></a>Rubriques confirmées.
 
-Dans la page Gérer les **rubriques,** les rubriques qui ont été découvertes dans les emplacements sources SharePoint spécifiés et qui ont été confirmées par un gestionnaire de connaissances ou «  en nombre » confirmées par un nombre net de deux personnes ou plus (équilibrage des votes d’utilisateur négatifs par rapport aux votes d’utilisateur positifs) via le mécanisme de commentaires de carte sont répertoriées dans l’onglet Confirmé. Si nécessaire, un utilisateur autorisé à gérer des rubriques peut passer en revue les rubriques confirmées et choisir de les rejeter.
+Dans la page Gérer les **rubriques,** les rubriques qui ont été découvertes dans les emplacements sources de votre SharePoint spécifié et qui ont été confirmées par un gestionnaire de connaissances ou «  en nombre » confirmées par une ou plusieurs personnes (équilibrage des votes d’utilisateur négatifs par rapport aux votes d’utilisateur positifs) via le mécanisme de commentaires de carte sont répertoriées dans l’onglet Confirmé. Si nécessaire, un utilisateur autorisé à gérer des rubriques peut passer en revue les rubriques confirmées et choisir de les rejeter.
 
 Pour consulter une rubrique confirmée :
 

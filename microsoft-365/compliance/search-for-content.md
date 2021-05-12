@@ -13,22 +13,24 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Utilisez l’outil eDiscovery de recherche de contenu dans le Centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise.
-ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927590"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333685"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Rechercher du contenu à l’aide de l’outil de recherche de contenu
 
-Utilisez l’outil de recherche de contenu dans le Centre de sécurité & conformité pour trouver rapidement des messages électroniques dans les boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations par messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et groupes Microsoft 365.
+Utilisez l’outil de recherche de contenu dans le Centre de sécurité & conformité pour trouver rapidement des messages électroniques dans des boîtes aux lettres Exchange, des documents dans des sites SharePoint et des emplacements OneDrive, ainsi que des conversations de messagerie instantanée dans Skype Entreprise. Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des e-mails, des documents et des conversations de messagerie instantanée dans des outils de collaboration tels que Microsoft Teams et Microsoft 365 groupes.
   
 ## <a name="search-for-content"></a>Recherche de contenu
 
 La première étape consiste à commencer à utiliser l’outil de recherche de contenu pour choisir les emplacements de contenu à rechercher et configurer une requête de mot clé pour rechercher des éléments spécifiques. Vous pouvez également laisser la requête vide et renvoyer tous les éléments aux emplacements cibles.
   
-- [Créer et exécuter une](content-search.md) recherche de contenu 
+- [Créer et exécuter une](content-search.md) recherche de contenu
+
+- [Référence des fonctionnalités] pour la recherche de contenu (content-search-reference.md)
 
 - [Créer des requêtes de recherche et utiliser des conditions pour](keyword-queries-and-search-conditions.md) affiner votre recherche 
 
@@ -36,11 +38,11 @@ La première étape consiste à commencer à utiliser l’outil de recherche de 
 
 - [Exécuter une recherche de liste d’ID](csv-file-for-an-id-list-content-search.md) pour rechercher des messages électroniques spécifiques 
 
-- [Rechercher des boîtes aux ](search-cloud-based-mailboxes-for-on-premises-users.md) lettres dans le cloud pour les utilisateurs locaux dans Microsoft 365
+- [Rechercher des boîtes aux lettres dans le cloud](search-cloud-based-mailboxes-for-on-premises-users.md) pour les utilisateurs locaux dans Microsoft 365
 
 - [Afficher les statistiques de](view-keyword-statistics-for-content-search.md) mot clé pour les résultats d’une recherche, puis affiner la requête si nécessaire
 
-- [Rechercher des données tierces](use-content-search-to-search-third-party-data-that-was-imported.md) importées par votre organisation dans Microsoft 365
+- [Rechercher des données tierces que](use-content-search-to-search-third-party-data-that-was-imported.md) votre organisation a importées dans Microsoft 365
 
 - [Modification en bloc](bulk-edit-content-searches.md) des emplacements de requête et de contenu pour plusieurs recherches
 
@@ -78,7 +80,7 @@ Parfois, vous devez effectuer des tâches de recherche de contenu plus avancées
   
 - [Rechercher des dossiers de boîte](use-content-search-for-targeted-collections.md) aux lettres et de site spécifiques (appelés collection *ciblée) lorsque vous êtes certain que les éléments qui répondent à un cas se trouvent dans ce dossier
 
-- Rechercher une liste d’utilisateurs dans la boîte aux lettres et [l’emplacement OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) 
+- [Rechercher une liste d’utilisateurs dans OneDrive boîte](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) aux lettres et dans l’emplacement de l’utilisateur 
 
 - [Créer, créer des rapports et supprimer plusieurs recherches](create-report-on-and-delete-multiple-content-searches.md) pour identifier et éliminer rapidement et efficacement les données de recherche 
 

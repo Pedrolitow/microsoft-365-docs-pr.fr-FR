@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: tugu
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,23 +14,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: 'Découvrez le nombre de taxes qui vous seront facturées pour votre abonnement Microsoft 365 entreprise dans différentes régions. '
+description: 'Découvrez le nombre de taxes qui vous seront facturées pour votre abonnement Microsoft 365 pour les entreprises dans différentes régions. '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 ms.date: 03/17/2021
-ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 5c472615846ba6460bc829bc0157c6c6da940292
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280594"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332017"
 ---
 # <a name="tax-information"></a>Informations fiscales
 
-Lorsque vous achetez Microsoft 365 produits et services, les taxes que vous payez sont déterminées par l’une des deux choses : votre adresse professionnelle ou votre adresse d’expédition, si elle est différente. Si votre organisation se trouve aux États-Unis, vous devez fournir un numéro d’identification d’employeur fédéral .com.
+Lorsque vous achetez des produits et services Microsoft 365, les taxes que vous payez sont déterminées par l’une des deux choses : votre adresse professionnelle ou votre adresse d’expédition, si elle est différente. Si votre organisation se trouve aux États-Unis, vous devez fournir un numéro d’identification d’employeur fédéral .com.
 
 Les entreprises des pays suivants peuvent fournir leur numéro de TVA ou un équivalent local :
 
@@ -101,25 +100,25 @@ Les entreprises des pays suivants peuvent fournir leur numéro de TVA ou un équ
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europe, Moyen Orient et Afrique (EMEA)
 
-Lorsque vous achetez Microsoft 365 services dans la région EMEA, cet achat peut être soumis à la taxe Value-Added (TVA).
+Lorsque vous achetez des services Microsoft 365 dans la région EMEA, cet achat peut être soumis à la taxe Value-Added (TVA).
   
 - Si vous êtes situé dans un État membre de l’Union européenne, l’Arménie, la Bélarus, la Norvège, la Turquie ou les Émirats arabes unis et que vous ne fournissez pas votre numéro de TVA local valide, Microsoft Ireland Operations Ltd. appliquera le taux de TVA local actuel, en fonction du pays de facturation de votre compte.
 
 - Si vous êtes situé au Liechtenstein, en Russie, en Serbie, en Afrique du Sud ou en Suisse, la TVA est appliquée, que vous fournissiez ou non votre numéro de TVA.
 
-- Pour les clients de l’UE, avant de pouvoir valider votre numéro de TVA, celui-ci doit être disponible pour vérification dans le système d’informations sur la TVA Exchange (VIES). Si votre numéro de TVA ne peut pas être vérifié, contactez votre autorité fiscale locale.
+- Pour les clients de l’UE, avant de pouvoir valider votre numéro de TVA, celui-ci doit être disponible pour vérification dans le système d’échange d’informations sur la TVA (VIES). Si votre numéro de TVA ne peut pas être vérifié, contactez votre autorité fiscale locale.
 
-Vous pouvez bénéficier d’une tva à taux zéro si :
+Vous pouvez être éligible à la TVA avec un taux de tva nul si :
   
-- Vous êtes dans un État membre **de l’Union européenne en dehors de l’Irlande :** Vous pouvez fournir votre numéro de TVA local valide. Cela permet à Microsoft Ireland Operations Ltd. de tvar la transaction. Toutefois, vous pouvez avoir une obligation de comptabilité de TVA locale. Si vous avez des préoccupations, consultez vos conseillers fiscaux. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA.](#add-your-vat-id)
+- **Vous êtes dans un État membre de l’Union européenne en dehors de l’Irlande :** Vous pouvez fournir votre numéro de TVA local valide. Cela permet à Microsoft Ireland Operations Ltd. de tvar la transaction. Toutefois, vous pouvez avoir une obligation de comptabilité de TVA locale. Si vous avez des préoccupations, consultez vos conseillers fiscaux. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA.](#add-your-vat-id)
 
-- **Vous êtes en Irlande et vous avez la certification d’exonération de TVA valide :** Microsoft Ireland Operations Ltd. peut être autorisé à exempter la transaction de la TVA. Si ce n’est pas le cas, Microsoft Ireland Operations Ltd. applique le taux actuel de TVA pour l’Irlande, que vous fournissiez ou non un numéro de TVA.
+- **Vous êtes en Irlande et vous avez la certification d’exonération de TVA valide :** Microsoft Ireland Operations Ltd. peut être autorisé à exempter la transaction de la TVA. Si ce n’est pas le cas, Microsoft Ireland Operations Ltd. applique le taux actuel de TVA en Irlande, que vous fournissiez ou non un numéro de TVA.
 
 - **Vous êtes en Arménie, en Bélarus, en Norvège, en Turquie** ou aux Émirats arabes unis : Vous pouvez fournir votre numéro de TVA local. Cela donne droit à Microsoft Ireland Operations Ltd. à la TVA de la transaction. Toutefois, vous avez peut-être une obligation de comptabilité de TVA locale. Veuillez donc contacter votre conseiller fiscal si vous avez des préoccupations. Pour obtenir des instructions, voir [Ajouter votre numéro de TVA.](#add-your-vat-id)
 
 ## <a name="asia-pacific-countries-apac"></a>Pays d'Asie-Pacifique (APAC)
 
-Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée applicable, ventes ou taxes similaires.
+Si vous êtes facturé par le bureau des ventes régionales de Microsoft, « Microsoft Regional Sales Pte. Ltd. » apparaît sur votre facture et vous pouvez être facturé pour toute valeur ajoutée, ventes ou taxes similaires applicables.
   
 Si vous êtes facturé à partir de l’un des emplacements suivants, la taxe locale actuelle est appliquée. L’emplacement est inclus [sur votre facture](view-your-bill-or-invoice.md):
   
@@ -155,7 +154,7 @@ Par exemple :
 
 >(1,29 $ X 0,095) X 100 = 12,25 $
 
-## <a name="apply-for-tax-exempt-status"></a>Demander l’état d’exonération fiscale
+## <a name="apply-for-tax-exempt-status"></a>Demander l’exonération fiscale
 
 Si vous êtes éligible à l’exonération fiscale sur votre marché, démarrez une demande de [service](../../business-video/get-help-support.md) pour établir le statut d’exonération fiscale pour votre organisation.
 
@@ -164,8 +163,8 @@ Si vous êtes éligible à l’exonération fiscale sur votre marché, démarrez
 | Canada | Certificat d’exonération (ou lettre d’autorisation équivalente) |
 | Chili | État IVA/CAS (Registro Unico Atio) |
 | Colombie | État IVA/CAS (Registro Unico Atio) |
-| Organisations internationales qui détiennent une exonération fiscale | Certification/confirmation par courrier des autorités fiscales locales |
-| Irlande | Certificat d’exonération fiscale 13B/56A|
+| Organisations internationales qui détiennent une exonération fiscale | Certification /confirmation par courrier des autorités fiscales locales |
+| Irlande | 13B/56A Certificat d’exonération fiscale|
 | États-Unis | Certificat d’exonération fiscale |
 | Porto Rico | Certificado de Compras Exentas |
   

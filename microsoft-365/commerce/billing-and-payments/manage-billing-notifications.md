@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +16,17 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: Découvrez comment gérer les personnes qui reçoivent des e-mails de notification de facturation et des pièces jointes de facture.
-ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911853"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332137"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gérer les notifications de facturation et les pièces jointes de facture
 
@@ -32,7 +34,7 @@ La **page Notifications de facturation** vous permet de gérer les personnes qui
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global pour suivre les étapes décrites dans cet article. Les administrateurs de facturation peuvent apporter certaines de ces modifications, comme indiqué dans les sections ci-dessous. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global pour suivre les étapes décrites dans cet article. Les administrateurs de facturation peuvent apporter certaines de ces modifications, comme indiqué dans les sections ci-dessous. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Modifier la langue de réception du courrier électronique
 
@@ -41,7 +43,7 @@ Vous devez être un administrateur global pour suivre les étapes décrites dans
 
 Les e-mails de notification de facturation sont envoyés dans la langue par défaut de votre organisation. Pour modifier la langue préférée, utilisez les étapes suivantes.
 
-1. Dans le Centre d’administration Microsoft 365, allez sur la page Notifications de   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">facturation.</a>
+1. Dans le centre Microsoft 365'administration, allez à **la**  >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation.</a>
 2. Dans la **section Paramètres de notification de facturation,** **sélectionnez Modifier les paramètres de notification.**
 3. Dans le **volet Paramètres de notification de facturation,** sous Langue par défaut, sélectionnez la langue que vous souhaitez utiliser, puis  **sélectionnez Enregistrer.**
 
@@ -89,10 +91,10 @@ En plus de vos administrateurs globaux et de facturation, nous envoyons des noti
 > [!NOTE]
 > Les administrateurs de facturation peuvent également suivre les étapes de cette section.
 
-Vous pouvez avoir une copie de la facture de votre organisation attachée sous forme de fichier PDF aux courriers électroniques de notification de facture lorsqu’une nouvelle facture est prête. Utilisez les étapes suivantes pour recevoir des factures en tant que pièces jointes.
+Vous pouvez avoir une copie de la facture de votre organisation attachée sous forme de fichier PDF aux courriers électroniques de notification de facture lorsqu’une nouvelle facture est prête. Utilisez les étapes suivantes pour recevoir des factures en pièce jointe.
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-2. Sous **Paramètres de notification de facturation,** **sélectionnez Modifier les paramètres de notification.**
+2. Sous **Paramètres de notification de facturation,** sélectionnez **Modifier les paramètres de notification.**
 3. Dans le **volet Paramètres de notification de** facturation, sous Joindre un **PDF** à vos e-mails de facture, cochez la case, puis sélectionnez **Enregistrer.**
 
 Pour arrêter de recevoir la pièce jointe de la facture à tout moment, suivez les étapes ci-dessus et cochez la case Joindre un **PDF** à vos e-mails de facture à l’étape 3.
@@ -101,7 +103,7 @@ Pour arrêter de recevoir la pièce jointe de la facture à tout moment, suivez 
 
 Si vous avez un profil de facturation, certaines des étapes décrites dans cet article peuvent être légèrement différentes pour certains de vos abonnements. Cette section décrit ces différences. [Comment savoir si j’ai un profil de facturation ?](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>Qui reçoit les notifications de facturation ?
+### <a name="who-receives-billing-notifications"></a>Qui reçoit des notifications de facturation ?
 
 Les e-mails de notification de facturation sont envoyés aux adresses de messagerie principale et de remplacement pour les utilisateurs qui se voient attribuer l’un des rôles suivants :
 
@@ -128,5 +130,5 @@ Pour recevoir vos factures en pièce jointe à vos notifications de facture, uti
 ## <a name="related-content"></a>Contenu connexe
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
-[Comprendre votre facture pour Microsoft 365 pour les entreprises](understand-your-invoice2.md) (article)\
+[Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md) (article)

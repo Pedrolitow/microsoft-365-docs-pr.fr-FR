@@ -22,12 +22,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur la mise en quarantaine dans Exchange Online Protection (EOP) qui contient des messages potentiellement dangereux ou indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd748871cc09905f9878d5917351b1c185cc1106
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2a11f5f9e1e730a3b0cc09625ec8e8cb592d869
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204347"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333805"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>Messages électroniques mis en quarantaine dans EOP
 
@@ -54,4 +54,4 @@ Les utilisateurs et les administrateurs peuvent travailler avec les messages mis
 
 - Les administrateurs et les utilisateurs peuvent signaler les faux positifs à Microsoft en quarantaine.
 
-Pour plus d’informations sur la mise en quarantaine, consultez [le FAQ sur la mise en quarantaine.](quarantine-faq.md)
+Pour plus d’informations sur la mise en quarantaine, consultez la [faq sur la mise en quarantaine.](quarantine-faq.yml)

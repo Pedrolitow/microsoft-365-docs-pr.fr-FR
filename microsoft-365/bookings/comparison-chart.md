@@ -1,5 +1,5 @@
 ---
-title: 'Graphique de comparaison : application web Bookings et application Bookings Teams'
+title: 'Graphique de comparaison : application web Bookings et application Teams bookings'
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,28 +8,28 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
-description: Graphique de comparaison qui présente les différences de fonctionnalités entre l’application web Bookings et l’application Bookings Teams.
-ms.openlocfilehash: 93ab228f8dc5bf14aa09b354b176d03756fc1abe
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+description: Graphique de comparaison qui montre les différences de fonctionnalités entre l’application web Bookings et l’application Teams Bookings.
+ms.openlocfilehash: de207f2f194fff07fcc07f2f278d4a2135d4585b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419594"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332233"
 ---
-# <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Graphique de comparaison : application web Bookings et application Bookings Teams
+# <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>Graphique de comparaison : application web Bookings et application Teams bookings
 
-L’application Bookings dans Teams permet aux scheduleurs de gérer leurs tâches principales et de modifier certains paramètres. Toutefois, le site web Bookings inclut des fonctionnalités et paramètres avancés qui ne sont pas encore disponibles dans l’application Teams.
+L’application Bookings dans Teams permet aux scheduleurs de gérer leurs tâches principales et de modifier certains paramètres. Toutefois, le site web Bookings inclut des fonctionnalités et paramètres avancés qui ne sont pas encore disponibles dans Teams app.
 
-Les fonctionnalités d’application Teams sont ajoutées en continu et nous continuerons à mettre à jour cette liste. Consultez la section Toutes les fonctionnalités de l’application **web Bookings** d’origine sont-ils disponibles dans Microsoft Teams ? dans le [FAQ](bookings-faq.md) pour plus d’informations.
+Teams fonctionnalités de l’application sont ajoutées en continu et nous continuerons à mettre à jour cette liste. Consultez la section « Toutes les fonctionnalités de l’application **Web Bookings** d’origine sont-Microsoft Teams ? » du [FAQ](bookings-faq.yml) pour plus d’informations.
 
-| Fonctionnalité | Application web Bookings | Application Bookings Teams |
+| Fonctionnalité | Application web Bookings | Application Teams Bookings |
 |:---|:---|:---|
 | Créer des calendriers de réservation | Oui | Oui |
 | Ajouter et supprimer du personnel d’un calendrier de réservation | Oui | Oui |
 | Créer des types de rendez-vous | Oui | Oui |
 | Planifier des réservations en ligne | Oui | Oui |
 | Modifier les détails de l’entreprise | Oui | Oui |
-| Ajouter du personnel avec des autorisations d’invité pour les personnes extérieures à votre organisation | Oui | Non |
+| Ajouter du personnel avec des autorisations Invité pour les personnes extérieures à votre organisation | Oui | Non |
 | Planifier des réservations en personne ou hors connexion | Oui | Non |
 | Planifier des réservations de groupe ou de plusieurs clients | Oui | Non |
 | Définir un logo pour votre entreprise | Oui | Non |

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jamitche
+ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,23 +16,22 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: Depuis le 14 septembre 2019, les banques des 31 pays de l’Espace économique européen sont tenues de vérifier l’identité de la personne qui a effectué un achat en ligne avant que le paiement puisse être effectué. »
 keywords: directive 2 sur les services de paiement, authentification client forte, authentification multifacteur
 ms.date: 11/03/2020
-ms.openlocfilehash: e687cac5bb1b7f1c88e9166993e29d437134e138
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: bbbbe9f53c11fcae9c35cda1fd4e7d4b51a9c767
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280846"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331942"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>Directive 2 sur les services de paiement et authentification client forte pour les clients commerciaux
 
-Depuis le 14 septembre 2019, les banques des 31 pays de l’Espace économique européen sont tenues de vérifier l’identité de la personne qui a effectué un achat en ligne avant que le paiement puisse être effectué. Cette vérification nécessite une authentification multifacteur pour garantir la sécurité et la protection de vos achats en ligne. La date de cette exigence de vérification sera retardée pour certains pays.
+Depuis le 14 septembre 2019, les banques des 31 pays de l’Espace économique européen doivent vérifier l’identité de la personne qui a effectué un achat en ligne avant que le paiement puisse être effectué. Cette vérification nécessite une authentification multifacteur pour garantir la sécurité et la protection de vos achats en ligne. La date de cette exigence de vérification sera retardée pour certains pays.
 
-Pour plus d’informations, consultez la FAQ Microsoft sur la directive 2 des services de paiement [et l’authentification client forte.](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)
+Pour plus d’informations, voir le FAQ Microsoft sur la directive 2 des services de paiement [et l’authentification client forte.](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)
 
 ## <a name="when-is-multi-factor-authentication-required"></a>Quand l’authentification multifacteur est-elle requise ?
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,14 +19,13 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 ms.date: 04/02/2021
-ms.openlocfilehash: 00c1fdca0f1ba227dcd10dffb7c46b03618593e7
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 73acb6a12499953e56eda7d4274160c6e79ee440
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280858"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331981"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Comment payer votre abonnement avec un profil de facturation
 
@@ -42,7 +41,7 @@ Si la facturation périodique est désactivée pour  un profil de facturation, v
 
 ## <a name="paying-by-invoice"></a>Payer par facture
 
-Si vous avez un profil de facturation qui est prêt à être payé par facture, vous pouvez régler votre abonnement avec un chèque ou un eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton Payer **maintenant** sur votre facture.
+Si vous avez un profil de facturation qui est prêt à être payé par facture, vous pouvez payer votre abonnement avec un chèque ou un eft. Vous pouvez également utiliser une carte de crédit pour effectuer un paiement en ligne à l’aide du bouton Payer **maintenant** sur votre facture.
 
 Pour disposer de cette option, vous devez :
 
@@ -220,7 +219,7 @@ Si votre profil de facturation est dosé par une facture, vous recevez un e-mail
 
 ## <a name="can-i-pay-my-invoice-online"></a>Puis-je payer ma facture en ligne ?
 
-Si la facturation périodique est désactivée pour votre profil de facturation, vous pouvez utiliser une carte bancaire pour payer votre facture en ligne. Pour effectuer un paiement, utilisez le bouton Payer **maintenant** sur votre facture dans Microsoft 365'administration. Pour trouver votre facture, [consultez Consulter votre facture.](view-your-bill-or-invoice.md)
+Si la facturation périodique est désactivée pour votre profil de facturation, vous pouvez utiliser une carte de crédit pour payer votre facture en ligne. Pour effectuer un paiement, utilisez le bouton Payer **maintenant** sur votre facture dans Microsoft 365'administration. Pour trouver votre facture, [consultez Consulter votre facture.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Puis-je changer le mode de paiement actuel pour régler par facture ?
 
@@ -230,7 +229,7 @@ Si votre profil de facturation est dosé par carte de crédit ou de débit, vous
 
 Si votre profil de facturation est dosé par des paiements par facture, vous ne pouvez pas modifier le mode de paiement. Vous pouvez utiliser le bouton Payer **maintenant** sur votre facture pour payer avec une carte de crédit ou de débit, ou par chèque ou eft.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer les modes de paiement](manage-payment-methods.md) (article)\
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
