@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,17 +15,18 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_ssp
 search.appverid:
 - MET150
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9fb5593855f9523198a3d70548e444a831e82c80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/18/2021
+ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918241"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333373"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -36,7 +38,7 @@ Vous pouvez utiliser le module **PowerShell MSCommerce** pour :
 - Afficher la liste des produits applicables et si l’achat en libre-service est activé ou désactivé
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Conditions requises
 
 Pour utiliser le module **PowerShell MSCommerce,** vous devez :
 
@@ -70,7 +72,7 @@ Pour vous connecter au module PowerShell avec vos informations d’identificatio
 Connect-MSCommerce
 ```
 
-Cette commande connecte la session PowerShell active à un client Azure Active Directory. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous voulez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
+Cette commande connecte la session PowerShell active à un client Azure Active Directory. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous souhaitez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Afficher les détails de AllowSelfServicePurchase
 

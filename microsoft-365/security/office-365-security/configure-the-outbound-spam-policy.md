@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ceaf0d276aff4504dd34aa3229c28c9cb042742d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204578"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331669"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -37,11 +37,11 @@ ms.locfileid: "51204578"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîte aux lettres Exchange Online, les messages électroniques sortants envoyés via EOP sont automatiquement vérifiés pour le courrier indésirable et l’activité d’envoi inhabituelle.
 
-Le courrier indésirable sortant provenant d’un utilisateur de votre organisation indique généralement un compte compromis. Les messages sortants suspects sont marqués comme courrier indésirable (quel que soit le niveau de confiance du courrier indésirable ou SCL) et sont acheminés via le pool de remise à risque élevé pour protéger la réputation du service [(c’est-à-dire,](high-risk-delivery-pool-for-outbound-messages.md) empêcher les serveurs de messagerie source Microsoft 365 des listes d’adresses IP bloqués). Les administrateurs sont automatiquement avertis de l’activité de courrier sortant suspecte et des utilisateurs bloqués via les stratégies [d’alerte.](../../compliance/alert-policies.md)
+Le courrier indésirable sortant provenant d’un utilisateur de votre organisation indique généralement un compte compromis. Les messages sortants suspects sont marqués comme courrier indésirable (quel que soit le niveau de confiance du courrier indésirable ou SCL) et sont acheminés via le pool de remise à risque élevé pour protéger la réputation du service [(c’est-à-dire,](high-risk-delivery-pool-for-outbound-messages.md) empêcher les serveurs de messagerie source Microsoft 365 des listes d’adresses IP bloqués). Les administrateurs sont automatiquement avertis de l’activité de courrier sortant suspect et des utilisateurs bloqués via les stratégies [d’alerte.](../../compliance/alert-policies.md)
 
 EOP utilise des stratégies de courrier indésirable sortant dans le cadre de la protection globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 
-Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie de courrier indésirable sortant par défaut. Pour plus de granularité, vous pouvez également créer des stratégies de courrier indésirable sortant personnalisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
+Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie de courrier indésirable sortant par défaut. Pour plus de granularité, vous pouvez également créer des stratégies de courrier indésirable sortant personnalisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques dans votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
 
 Vous pouvez configurer des stratégies de courrier indésirable sortant dans le Centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
 
@@ -85,7 +85,7 @@ Pour accroître l’efficacité du filtrage du courrier indésirable sortant, vo
 
 - Pour obtenir nos paramètres recommandés pour les stratégies de courrier indésirable sortant, consultez les paramètres de stratégie de filtrage du courrier indésirable sortant [EOP.](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)
 
-- Les [](../../compliance/alert-policies.md) stratégies d’alerte par défaut nommées Limite d’envoi de courrier électronique ont été **dépassées,** des modèles d’envoi de courrier suspects ont été détectés et l’utilisateur ne peut pas envoyer de courrier électronique envoie déjà des notifications par courrier électronique aux membres du groupe  **TenantAdmins** (Administrateurs globaux) concernant l’activité inhabituelle de courrier sortant et les **utilisateurs** bloqués en raison du courrier indésirable sortant. Pour plus d’informations, [voir Vérifier les paramètres d’alerte pour les utilisateurs restreints.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Nous vous recommandons d’utiliser ces stratégies d’alerte au lieu des options de notification dans les stratégies de courrier indésirable sortant.
+- Les [](../../compliance/alert-policies.md) stratégies d’alerte par défaut nommées Limite d’envoi de courrier électronique ont été **dépassées,** des modèles d’envoi de courrier suspects ont été détectés et l’utilisateur ne peut pas envoyer de messages électroniques envoient déjà des notifications par courrier électronique aux membres du groupe  **TenantAdmins** **(Administrateurs** globaux) concernant l’activité inhabituelle de courrier sortant et les utilisateurs bloqués en raison du courrier indésirable sortant. Pour plus d’informations, [voir Vérifier les paramètres d’alerte pour les utilisateurs restreints.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Nous vous recommandons d’utiliser ces stratégies d’alerte au lieu des options de notification dans les stratégies de courrier indésirable sortant.
 
 ## <a name="use-the-security--compliance-center-to-create-outbound-spam-policies"></a>Utiliser le Centre de sécurité & conformité pour créer des stratégies de courrier indésirable sortant
 
@@ -120,7 +120,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
         Répétez ces étapes autant de fois que nécessaire.
 
-        Les destinataires que vous avez ajoutés apparaissent dans la section **Liste des** destinataires du volet volant. Pour supprimer un destinataire, cliquez sur ![ Supprimer le bouton ](../../media/scc-remove-icon.png) .
+        Les destinataires que vous avez ajoutés apparaissent dans la section **Liste des** destinataires du volet volant. Pour supprimer un destinataire, cliquez sur ![ Le bouton ](../../media/scc-remove-icon.png) Supprimer.
 
      1. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -149,9 +149,9 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
      - **Limite quotidienne**: nombre total maximal de destinataires par jour.
 
-   - **Action lorsqu’un utilisateur dépasse** les limites ci-dessus : Configurez l’action à prendre lorsqu’une des **limites** de destinataire est dépassée. Pour toutes les actions, les  destinataires spécifiés dans l’utilisateur ne  peuvent pas envoyer de stratégie d’alerte de courrier électronique (et, désormais, redondants, notifier des personnes spécifiques si un expéditeur est bloqué en raison de l’envoi de courrier indésirable sortant dans la stratégie de courrier indésirable sortant reçoivent des notifications par courrier électronique.
+   - **Action lorsqu’un utilisateur dépasse** les limites ci-dessus : Configurez l’action à prendre lorsqu’une des **limites** de destinataire est dépassée. Pour toutes les actions, les  destinataires spécifiés dans l’utilisateur ne  peuvent pas envoyer de stratégie d’alerte de courrier électronique (et, désormais, redondants Notifier des personnes spécifiques si un expéditeur est bloqué en raison de l’envoi de courrier indésirable sortant dans la stratégie de courrier indésirable sortant reçoivent des notifications par courrier électronique.
 
-     - **Empêchez l’utilisateur d’envoyer des messages jusqu’au jour suivant**: il s’agit de la valeur par défaut. Des notifications par courrier électronique sont envoyées et l’utilisateur ne pourra plus envoyer de messages avant le jour suivant, en fonction de l’heure UTC. Il n’existe aucun moyen pour l’administrateur de remplacer ce bloc.
+     - **Empêchez l’utilisateur d’envoyer des messages jusqu’au jour suivant**: il s’agit de la valeur par défaut. Les notifications par courrier électronique sont envoyées et l’utilisateur ne pourra plus envoyer de messages avant le jour suivant, en fonction de l’heure UTC. Il n’existe aucun moyen pour l’administrateur de remplacer ce bloc.
 
        - L’alerte d’activité nommée **Utilisateur limité à l’envoi** de courriers électroniques avertit les administrateurs (par courrier électronique et sur la page Afficher **les alertes).**
 
@@ -175,7 +175,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
    Les valeurs disponibles sont :
 
-   - **Automatique - Contrôlé par le système**: permet au filtrage du courrier indésirable sortant de contrôler le transport automatique du courrier externe. Il s’agit de la valeur par défaut.
+   - **Automatique - Contrôlé par le système**: autorise le filtrage du courrier indésirable sortant pour contrôler le transport automatique de messages externes. Ceci est la valeur par défaut.
    - **On**: le forwarding automatique du courrier externe n’est pas désactivé par la stratégie.
    - **Désactivé**: tous les envois automatiques de courrier externe sont désactivés par la stratégie.
 
@@ -263,7 +263,7 @@ Pour modifier la priorité d’une stratégie, déplacez-la vers le haut ou vers
 
 1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Stratégie** \> **Anti-courrier indésirable**.
 
-2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur Développer l’icône pour développer la stratégie personnalisée à supprimer (la colonne Type est stratégie personnalisée de courrier ![ ](../../media/scc-expand-icon.png) indésirable **sortant).** 
+2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur Développer l’icône pour développer la stratégie personnalisée à supprimer (la colonne Type est stratégie personnalisée de courrier indésirable ![ ](../../media/scc-expand-icon.png) **sortant).** 
 
 3. Dans les détails de la stratégie développée qui s’affichent, cliquez sur **Supprimer la stratégie**.
 
@@ -295,7 +295,7 @@ La création d’une stratégie de courrier indésirable sortant dans PowerShell
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage du courrier indésirable sortant dans PowerShell qui ne sont pas disponibles dans le Centre de sécurité & conformité tant que vous n’avez pas créé la stratégie :
 
   - Créez la stratégie comme _désactivée_ ( activée sur la `$false` cmdlet **New-HostedOutboundSpamFilterRule).**
-  - Définissez la priorité de la stratégie lors de la création _(priorité)_ sur la _\<Number\>_ cmdlet **New-HostedOutboundSpamFilterRule).**
+  - Définissez la priorité de la stratégie lors de la création (_Priorité_ ) sur la _\<Number\>_ cmdlet **New-HostedOutboundSpamFilterRule).**
 
 - Une nouvelle stratégie de filtrage du courrier indésirable sortant que vous créez dans PowerShell n’est pas visible dans le Centre de sécurité & conformité tant que vous n’avez pas attribué la stratégie à une règle de filtrage du courrier indésirable.
 
@@ -403,7 +403,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 Les mêmes paramètres sont disponibles lorsque vous modifiez une stratégie de filtrage des programmes malveillants dans PowerShell que lorsque vous créez la stratégie comme décrit à l’étape 1 : Utiliser [PowerShell](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) pour créer une section de stratégie de filtrage du courrier indésirable sortant plus tôt dans cet article.
 
 > [!NOTE]
-> Vous ne pouvez pas renommer une stratégie de filtrage du courrier indésirable sortant (la cmdlet **Set-HostedOutboundSpamFilterPolicy** n’a pas de _paramètre Name)._ Lorsque vous renommez une stratégie de courrier indésirable sortant dans le Centre de sécurité & conformité, vous renommez uniquement la règle de filtrage du courrier _indésirable sortant._
+> Vous ne pouvez pas renommer une stratégie de filtrage du courrier indésirable sortant (la cmdlet **Set-HostedOutboundSpamFilterPolicy** n’a pas de _paramètre Name)._ Lorsque vous renommez une stratégie de courrier indésirable sortant dans le Centre de sécurité & conformité, vous renommez uniquement la règle de filtrage du courrier indésirable _sortant._
 
 Pour modifier une stratégie de filtrage du courrier indésirable sortant, utilisez la syntaxe suivante :
 
@@ -469,7 +469,7 @@ Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 
 > [!NOTE]
 >
-> - Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez le paramètre _Priority_ sur la cmdlet **New-HostedOutboundSpamFilterRule** à la place.
+> - Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ sur la cmdlet **New-HostedOutboundSpamFilterRule.**
 >
 > - La stratégie de filtrage du courrier indésirable par défaut sortante n’a pas de règle de filtrage de courrier indésirable correspondante et elle a toujours la valeur de priorité nonmodifiable La plus **faible**.
 
@@ -509,12 +509,12 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-HostedOutboundSpamFilterRule](/powershell/module/exchange/remove-hostedoutboundspamfilterrule).
 
-## <a name="for-more-information"></a>Pour plus d’informations
+## <a name="for-more-information"></a>Pour plus d'informations
 
 [Supprimer les utilisateurs bloqués du portail des utilisateurs restreints](removing-user-from-restricted-users-portal-after-spam.md)
 
 [Pool de remise à haut risque pour les messages sortants](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Forum Aux Questions sur la protection anti-courrier indésirable](anti-spam-protection-faq.md)
+[Forum Aux Questions sur la protection anti-courrier indésirable](anti-spam-protection-faq.yml)
 
 [Rapport des messages transférés automatiquement](mfi-auto-forwarded-messages-report.md)

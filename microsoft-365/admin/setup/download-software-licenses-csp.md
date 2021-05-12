@@ -1,10 +1,11 @@
 ---
-title: Télécharger les clés de licence de produit et de logiciel perpétuelle achetées via le programme Fournisseur de solutions Cloud
+title: Télécharger les clés de licence logicielle perpétuelle et de produit achetées via le programme Fournisseur de solutions Cloud (CSP)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,18 +13,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
+- commerce_licensing
 description: Découvrez comment télécharger les clés de licence logicielle et de produit pour les logiciels perpétuelles achetés via le programme Fournisseur de solutions Cloud (CSP).
-ms.openlocfilehash: 9e55161111ae1796e8254a60ecdc693592988386
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.date: 01/27/2021
+ms.openlocfilehash: 85dfdb8952278b8c1c3dd23a2ceca7481a683989
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029397"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332401"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Télécharger les clés de licence de produit et de logiciel perpétuelle
 

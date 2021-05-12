@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
 ms.date: 04/02/2021
-ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293666"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331765"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
@@ -43,7 +41,7 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 
 Supprimez tous les utilisateurs à l’exception d’un administrateur général. L’administrateur général termine les étapes de fermeture du compte. Avant de pouvoir supprimer l’annuaire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
 
-Si les utilisateurs sont synchronisés à partir de l’local, désynchronisé, puis supprimez les utilisateurs dans l’annuaire cloud à l’aide du portail Azure ou Azure PowerShell cmdlets.
+Si les utilisateurs sont synchronisés en local, désynchronisé, supprimez-les dans l’annuaire cloud à l’aide du portail Azure ou Azure PowerShell cmdlets.
 
 Pour supprimer des utilisateurs, [consultez l’administrateur de gestion des utilisateurs : supprimez un ou plusieurs utilisateurs.](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365)
 

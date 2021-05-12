@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: Découvrez comment appliquer un code promotionnel à votre abonnement Microsoft 365 pour réduire le prix et comment résoudre les problèmes de code promotionnel en cas d’erreur.
 ms.date: 03/17/2021
-ms.openlocfilehash: 01cc7cd182f3e25867191c83b58016ef090c8934
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280402"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332917"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Utiliser votre code promotionnel pour réduire le prix
 
@@ -39,11 +38,11 @@ Lorsque vous achetez un abonnement, vous pouvez utiliser un code promotionnel po
 3. Sélectionnez **Appliquer un code promotionnel.** Vous devriez voir la confirmation qu’elle a été correctement appliquée. Si un autre message apparaît, voir [Dépannage des codes promotionnels](#troubleshooting-promo-codes) pour en déterminer la raison.
 4. Poursuivez l’enregistrement. Dans la page de confirmation de commande, votre code de remise est inclus avec le montant.
 
-Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre code promotionnel sur votre facture. Pour en savoir plus, [consultez Afficher votre](billing-and-payments/view-your-bill-or-invoice.md).
+Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre code promotionnel sur votre facture. Pour en savoir plus, voir [Afficher votre](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Conditions d'utilisation des codes promotionnels
 
-Les instructions suivantes s’appliquent aux codes promotionnels Microsoft 365 pour les abonnements pour les entreprises.
+Les instructions suivantes s’appliquent aux codes promotionnels pour les abonnements Microsoft 365 pour les entreprises.
   
 - **Nombre de codes promotionnels par abonnement** Vous pouvez utiliser un code promotionnel pour plusieurs abonnements dans la même commande, mais vous ne pouvez pas utiliser plusieurs codes promotionnels pour le même abonnement.
 - **Durée d'application de la réduction** Une fois appliquée à votre commande, la réduction liée au code promotionnel dure jusqu'à la fin de la période de votre abonnement. Si la période de votre abonnement est mensuelle, la réduction liée au code promotionnel est appliquée jusqu'à la fin du mois de facturation pendant lequel vous l'avez saisie. Si la période de votre abonnement est annuelle, la réduction liée au code promotionnel est appliquée jusqu'à la fin de l'année de facturation pendant laquelle vous l'avez saisie.

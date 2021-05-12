@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez ce qu’il advient de vos données lorsque votre abonnement Microsoft 365 Business atteint sa date d’expiration, est désactivé, ou que vous procédez à sa résiliation.
 ms.date: 04/08/2021
-ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d0821214f9a8c242306685db2ee7faf3779cecff
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326797"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333025"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 Business ?
 
@@ -50,6 +50,7 @@ Le tableau suivant explique ce à quoi vous pouvez vous attendre à l'expiration
 * Valable sur la plupart des offres, des pays et régions.
   
 > [!NOTE]
+>
 > **Qu'est-ce que les « données client » ?** Les données client, telles que définies dans les [Conditions d'utilisation du service en ligne Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613649), représentent toutes les données, y compris les fichiers texte, audio et image, qui sont fournis à Microsoft par le client, ou pour le compte du client, au cours de l'utilisation des services Microsoft 365 par le client. Pour en savoir plus sur la protection des données client, consultez la rubrique [Prise en main du portail d’approbation de services de Microsoft](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Que se passe-t-il si j’annule un abonnement ?
@@ -68,6 +69,7 @@ Pour plus d'informations sur l'annulation de votre abonnement, consultez la rubr
 > Si vous voulez que les données de votre abonnement soient supprimées avant la fin établie de l’étape de désactivation, vous pouvez [clôturer votre compte](../close-your-account.md).
   
 > [!NOTE]
+>
 > Si vous supprimez explicitement un abonnement, cela ignore les étapes Expiré et Désactivé, et les données et le contenu SharePoint Online, dont OneDrive, sont supprimés immédiatement.
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Quelles options s’offrent à moi si mon abonnement expire bientôt ?

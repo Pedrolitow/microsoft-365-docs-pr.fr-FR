@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,29 +13,28 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 description: Découvrez comment attribuer des licences à des groupes à utiliser avec des appareils.
 ms.custom:
-- okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- okr_SMB
+- commerce_licensing
+search.appverid: MET150
+ms.date: 03/17/2021
+ms.openlocfilehash: 67bd0734953c64f51390aac949a7da477914c7b4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911481"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331657"
 ---
 # <a name="manage-licenses-for-devices"></a>Gérer les licences pour les appareils
 
 Si vous avez Microsoft 365 Apps pour entreprise (appareil) ou Microsoft 365 Apps pour Éducation (appareil), vous pouvez attribuer des licences à des appareils à l’aide de groupes Azure AD. Lorsqu’un appareil dispose d’une licence, toute personne utilisant cet appareil peut utiliser les applications Microsoft 365 pour les entreprises (précédemment nommées Office 365 ProPlus). Par exemple, supposons que vous avez 20 ordinateurs portables et tablettes utilisés par les membres de votre organisation. Lorsque vous attribuez une licence à chaque appareil, chaque personne qui se connecte à l’un des appareils utilise Microsoft 365 Apps pour entreprise sans avoir besoin de sa propre licence.
 
 > [!IMPORTANT]
-> Les licences basées sur les appareils pour Microsoft 365 Apps pour entreprise sont disponibles uniquement en tant que licences de modules de développement pour certains clients commerciaux et certains clients de l’éducation. Pour les clients commerciaux, la licence *est Microsoft 365 Apps for enterprise (appareil)* et n’est disponible que par le biais d’un abonnement contrat Entreprise/Contrat Entreprise. Pour les clients de l’éducation, la licence *est Microsoft 365 Apps pour l’Éducation (appareil)* et est disponible uniquement par le biais de l’inscription pour les solutions d’éducation (EES). Pour plus d’informations, lisez le billet de blog sur la [disponibilité de l’éducation.](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/) Pour la disponibilité commerciale, contactez votre représentant de compte Microsoft.
+> Les licences basées sur les appareils pour Microsoft 365 Apps pour entreprise sont disponibles uniquement en tant que licences de modules de développement pour certains clients commerciaux et certains clients de l’éducation. Pour les clients commerciaux, la licence *est Microsoft 365 Apps for enterprise (appareil)* et n’est disponible que par le biais d’un abonnement contrat Entreprise/Contrat Entreprise. Pour les clients de l’éducation, la licence *est Microsoft 365 Apps pour l’Éducation (appareil)* et est disponible uniquement par le biais de l’inscription pour les solutions d’éducation (EES). Pour plus d’informations, lisez le billet de blog sur la [disponibilité de l’éducation.](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education) Pour la disponibilité commerciale, contactez votre représentant de compte Microsoft.
 
-Pour commencer, vous créez un groupe dans le Centre d’administration Azure Active Directory, puis attribuez des appareils au groupe. Pour en savoir plus sur la gestion des licences d’appareils, notamment la configuration requise pour les appareils, les types de groupes que vous pouvez utiliser et la configuration des applications Microsoft 365 pour les entreprises pour utiliser la gestion des licences d’appareils, voir Licences basées sur les appareils pour [Microsoft 365 Apps for enterprise.](/deployoffice/device-based-licensing)
+Pour commencer, vous créez un groupe dans le Centre d’administration Azure Active Directory, puis attribuez des appareils au groupe. Pour en savoir plus sur la gestion des licences d’appareils, notamment la configuration requise pour les appareils, les types de groupes que vous pouvez utiliser et la configuration des applications Microsoft 365 pour les entreprises afin d’utiliser la gestion des licences d’appareils, voir Licences basées sur les appareils pour [Microsoft 365 Apps for enterprise.](/deployoffice/device-based-licensing)
 
 > [!IMPORTANT]
 > Vous devez être un administrateur global pour effectuer les tâches de cet article.

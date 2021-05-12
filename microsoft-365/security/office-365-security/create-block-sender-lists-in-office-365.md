@@ -14,12 +14,12 @@ search.appverid:
 description: Les administrateurs peuvent en savoir plus sur les options disponibles et préférées pour bloquer les messages entrants dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9ee0a026e33bf07bb929607b8eed9078d0b6e4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204422"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331453"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Créer des listes d’expéditeurs bloqués dans EOP
 
@@ -55,7 +55,7 @@ Un message électronique SMTP standard est constitué d’une *enveloppe de mes
 
 - L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse de messagerie de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
 
-Souvent, les adresses et les `5321.MailFrom` `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes.
+Souvent, `5321.MailFrom` les adresses et les `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes.
 
 Les listes d’expéditeurs bloqués et les listes de domaines bloqués dans les stratégies anti-courrier indésirable dans EOP inspectent les `5321.MailFrom` adresses et les `5322.From` adresses. Les expéditeurs bloqués Outlook utilisent uniquement `5322.From` l’adresse.
 
@@ -70,7 +70,7 @@ Lorsque les messages sont correctement bloqués en raison de la liste des expéd
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Utiliser des listes d’expéditeurs bloqués ou des listes de domaines bloqués
 
-Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large, de sorte que la meilleure option suivante consiste à bloquer les listes d’expéditeurs ou les listes de domaines bloqués dans les stratégies anti-courrier indésirable. Les messages provenant d’expéditeurs dans les listes sont marqués  comme courrier indésirable et l’action que vous avez configurée pour le verdict de filtrage du courrier indésirable est prise sur le message. Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
+Lorsque plusieurs utilisateurs sont affectés, l’étendue est plus large, de sorte que la meilleure option suivante consiste à bloquer les listes d’expéditeurs ou les listes de domaines bloqués dans les stratégies anti-courrier indésirable. Les messages provenant d’expéditeurs sur les listes sont marqués comme  courrier indésirable à niveau de confiance élevé **et** l’action que vous avez configurée pour le verdict de filtrage du courrier indésirable à niveau de confiance élevé est prise sur le message. Pour plus d’informations, consultez [Configurer les stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md).
 
 La limite maximale pour ces listes est d’environ 1 000 entrées.
 
@@ -87,4 +87,4 @@ Quelles que soient les conditions ou les exceptions que vous utilisez pour ident
 
 Lorsqu’il n’est pas possible d’utiliser l’une des autres options pour bloquer un *expéditeur,* utilisez la liste d’adresses IP bloqués dans la stratégie de filtrage des connexions. Pour plus d'informations, consultez la rubrique relative à la [configuration de la stratégie de filtre de connexion](configure-the-connection-filter-policy.md). Il est important de conserver un nombre minimal d’adresses IP bloquées, de sorte que le blocage de plages d’adresses IP entières *n’est pas* recommandé.
 
-Vous  devez particulièrement éviter d’ajouter des plages d’adresses IP appartenant à des services grand public (par exemple, outlook.com) ou des infrastructures partagées, et veillez également à consulter la liste des adresses IP bloquées dans le cadre d’une maintenance régulière.
+Vous  devez notamment éviter d’ajouter des plages d’adresses IP appartenant à des services grand public (par exemple, outlook.com) ou des infrastructures partagées, et veillez également à consulter la liste des adresses IP bloquées dans le cadre d’une maintenance régulière.

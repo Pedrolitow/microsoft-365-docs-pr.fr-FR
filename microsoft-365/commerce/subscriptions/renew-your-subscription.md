@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +13,19 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+search.appverid: MET150
 description: Découvrez comment renouveler votre Microsoft 365 en activant ou en désactivant la facturation récurrente.
-ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: e24f7301f6229e76b86f19594526e3ed84689221
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244647"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333181"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
@@ -49,17 +48,19 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+
 ::: moniker-end
 
 2. Sélectionnez l’abonnement pour lequel gérer la facturation récurrente.
@@ -68,17 +69,15 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 5. Sélectionnez **Enregistrer**.
 
     > [!NOTE]
+    >
     > - Vous ne pouvez modifier le paramètre de **Facturation périodique** que pour les abonnements actifs. Si votre abonnement a déjà expiré ou s’il est désactivé, vous devez [le réactiver](reactivate-your-subscription.md) avant de pouvoir activer ou désactiver le **Facturation périodique**.
     > - Lorsque la **Facturation récurrente** est désactivée, l’abonnement n’est pas annulé. Si vous voulez conserver l’abonnement actif, vous devez payer la facture manuellement.
     > - Si vous désactivez la **Facturation récurrente**, l’abonnement reste actif jusqu’à son expiration. Vous pouvez afficher la date d’expiration sur la page Détails de l’abonnement dans la section **Abonnement et paramètres de paiement** .
     > - Pour découvrir comment annuler l’abonnement directement, voir [Annuler votre abonnement](cancel-your-subscription.md).
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Réactiver votre abonnement](reactivate-your-subscription.md)
-  
-[Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md)
-
-[Entrez votre clé de produit](../enter-your-product-key.md)
-  
-[Acheter votre version d’évaluation de Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md)
+[Réactiver votre abonnement](reactivate-your-subscription.md) (article)\
+[Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md) (article)\
+[Entrez votre de produit](../enter-your-product-key.md) (article)\
+[Acheter votre version d’essai de Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md) (article)

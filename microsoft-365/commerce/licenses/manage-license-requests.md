@@ -5,24 +5,27 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- commerce
-ms.custom: MACBillingLicensesRequests
-search.appverid:
-- MET150
+- Adm_O365
+ms.custom:
+- MACBillingLicensesRequests
+- AdminSurgePortfolio
+- commerce_licensing
+search.appverid: MET150
 description: Découvrez comment examiner et approuver ou refuser les demandes de licence des utilisateurs pour votre abonnement Microsoft 365 pour les entreprises.
 ms.date: 08/07/2020
-ms.openlocfilehash: cbcdc5550d404278832cc702560ac55f6ace8a44
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 06ee210b39c19c1f2c8a2041c463568e55001b6e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597653"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331549"
 ---
 # <a name="manage-license-requests"></a>Gérer les demandes de licence
 
@@ -49,7 +52,7 @@ Si votre organisation possède son propre processus de demande, vous pouvez l’
 
 1. Dans le Centre d’administration, allez à la page   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation,</a> puis sélectionnez **l’onglet Demandes.**
 2. Sélectionnez **Utiliser votre processus de demande existant à la place.**
-3. Dans le volet droit, dans la zone **Message,** tapez le message que les utilisateurs doivent voir lorsqu’ils demandent une licence. Si vous souhaitez également inclure un lien vers la stratégie de votre organisation ou une autre documentation, entrez l’URL dans la zone de texte Lien vers la **documentation (facultative).**
+3. Dans le volet droit, dans la zone **Message,** tapez le message que les utilisateurs doivent voir lorsqu’ils demandent une licence. Si vous souhaitez également inclure un lien vers la stratégie de votre organisation ou une autre documentation, entrez l’URL dans la zone de texte Lien vers la **documentation (facultatif).**
 4. Sélectionnez **Enregistrer**.
 
 Lorsque vous revenir à la liste **demandes,** vous voyez le message Que vous utilisez **votre propre processus** de demande de licence . Pour apporter des modifications au message envoyé aux utilisateurs, sélectionnez Utiliser votre processus **de demande existant à la place.**
@@ -66,7 +69,7 @@ Lorsque vous revenir à la liste **demandes,** vous voyez le message Que vous ut
 1. Dans le Centre d’administration, allez à la page   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation,</a> puis sélectionnez **l’onglet Demandes.**
 2. Sélectionnez la ligne qui contient la demande à réviser. Le volet droit affiche des détails sur les utilisateurs qui souhaitent obtenir des licences pour le produit.
 3. Pour refuser l’intégralité de la demande, sélectionnez **N’approuvez pas** et, dans la boîte de dialogue, sélectionnez Ne **pas approuver.**
-4. Pour refuser certains utilisateurs de la demande, mais approuver d’autres, sélectionnez le X par le nom des utilisateurs que vous souhaitez supprimer. Leurs noms sont déplacés sous **Ne pas affecter à ces utilisateurs.**
+4. Pour refuser la demande à certains utilisateurs, mais en approuver d’autres, sélectionnez le X par le nom des utilisateurs que vous souhaitez supprimer. Leurs noms sont déplacés sous **Ne pas affecter à ces utilisateurs.**
 5. Si vous avez plusieurs produits, sous Sélectionner un **produit,** sélectionnez celui pour qui vous souhaitez attribuer des licences.
 6. Pour refuser l’accès des utilisateurs à certains services et applications, développez Activer ou désactiver les applications et **services,** puis cochez les cases de ceux que vous souhaitez exclure.
 7. En bas du volet, tapez un message facultatif dans la zone de texte.

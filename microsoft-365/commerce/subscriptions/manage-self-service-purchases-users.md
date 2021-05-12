@@ -5,22 +5,25 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.collection: M365-subscription-management
+ms.custom:
+- AdminSurgePortfolio
+- commerce_ssp
 search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
-ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 03/17/2021
+ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297295"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333253"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
@@ -33,7 +36,7 @@ ms.locfileid: "52297295"
 
 En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements aux membres de votre équipe. Vous êtes responsable du paiement des achats en libre-service effectués. Vous pouvez gérer vos abonnements dans le Centre d’administration Microsoft 365 à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">l’adresse admin.microsoft.com</a>.
 
-Votre administrateur dispose d’une vue en lecture seule des abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
+Votre administrateur dispose d’une vue en lecture seule sur les abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
 
 ## <a name="view-your-subscriptions"></a>Afficher vos abonnements
 
@@ -83,7 +86,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 3. Dans la page des détails du profil de facturation, sous **Mode de paiement,** choisissez l’une des options suivantes :
     - Si vous souhaitez mettre à jour un mode de paiement existant, sélectionnez **Modifier**.
     - Si vous souhaitez ajouter un nouveau mode de paiement, sélectionnez **Remplacer.**
-4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer.**
+4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer**.
 
 ### <a name="update-an-existing-payment-method"></a>Mise à jour d’un mode de paiement existant
 

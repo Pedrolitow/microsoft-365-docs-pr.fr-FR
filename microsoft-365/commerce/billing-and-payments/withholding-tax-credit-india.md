@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,22 +13,19 @@ localization_priority: None
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Découvrez comment demander un crédit sur votre compte pour la retenue d’impôt que vous avez payée. Cet article s’applique uniquement aux clients en Inde.
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_melmar
-ms.reviewer: martinl
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 3965127bb30777f26dc04a3861167955163cd827
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246030"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331789"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients en Inde)
 

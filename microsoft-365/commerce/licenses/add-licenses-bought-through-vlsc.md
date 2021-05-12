@@ -18,17 +18,18 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: Découvrez comment ajouter des licences à votre abonnement Microsoft 365 acheté via le partenaire tiers, reconnu par Microsoft.
-ms.openlocfilehash: f40ca8f208d95ed150ad0fcea982347405e3d801
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: Découvrez comment ajouter des licences à votre abonnement Microsoft 365 acheté par le biais d’un partenaire tiers, reconnu par Microsoft.
+ms.date: 04/07/2021
+ms.openlocfilehash: 0e2a3779ae7d93eaaea660209bbc86a6843b553c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327153"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331753"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Ajouter des licences à un abonnement acheté auprès du Centre de gestion des licences en volume
 
-Si vous avez acheté votre offre Microsoft 365 pour les entreprises ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires via ce partenaire. Si ce partenaire est connu par Microsoft, procédez comme suit pour trouver les informations de contact de votre partenaire.
+Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire. Si ce partenaire est connu par Microsoft, procédez comme suit pour trouver les informations de contact de votre partenaire.
   
 ::: moniker range="o365-worldwide"
 

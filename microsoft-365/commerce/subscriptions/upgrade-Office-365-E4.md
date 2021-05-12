@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,16 @@ ms.collection:
 ms.custom:
 - customer-email
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: Découvrez comment mettre à niveau un abonnement Office 365 E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e30ece58cfc10ea258a684f9ac6ca4dba1b8692
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 59add18b8f6ede3d8696ee8e443c21ac4d6d3549
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297283"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333121"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Mise à niveau à partir d Office 365 abonnement E4
 
@@ -49,12 +48,12 @@ Le moyen le plus simple de  mettre à niveau votre plan consiste à utiliser l�
 
 ## <a name="what-does-it-mean-to-upgrade-plans-manually"></a>Que signifie la mise à niveau manuelle des plans ?
 
-La mise à niveau manuelle des plans implique d’effectuer les procédures distinctes suivantes au lieu d’utiliser l’onglet Mise **à** niveau.
+La mise à niveau manuelle des plans implique l’exécution des procédures distinctes suivantes au lieu d’utiliser l’onglet Mise **à** niveau.
 
 - Achetez un nouvel abonnement avec le nombre de licences le plus élevé.
 - Vérification du fait que le nouvel abonnement est prêt à être utilisé.
 - Réaffecter des licences aux utilisateurs.
-- Annulez l’Office 365 abonnement E4 d’origine.
+- Annulez l’abonnement Office 365 E4 d’origine.
 
 ## <a name="find-out-if-you-can-use-the-upgrade-tab-to-upgrade-to-a-new-plan"></a>Savoir si vous pouvez utiliser l’onglet Mise à niveau pour mettre à niveau vers un nouveau plan
 
@@ -91,9 +90,9 @@ Voici quelques points importants à retenir avant de commencer.
     > [!NOTE]
     > Tous les abonnements de modules Office 365 votre abonnement E4, tels que Stockage de fichiers supplémentaire Office 365 sont également répertoriés. Toutefois, si vous avez des abonnements à des modules modules qui sont inclus dans l’abonnement vers qui vous êtes en train de mettre à niveau, nous allons les supprimer.
 6. Une fois que vous avez passé en revue votre commande, **sélectionnez Go to checkout**.
-7. Dans la page **d’checkout,** **consultez La vente** à , **Facturé à** et Éléments dans **cet ordre**. Sélectionnez **Modifier** à côté de l’un de ces éléments pour modifier les informations.
+7. Dans la page **De la commande,** **consultez La vente** à , **Facturé** à et Éléments dans **cet ordre**. Sélectionnez **Modifier** à côté de l’un de ces éléments pour modifier les informations.
     > [!NOTE]
-    > L’option d’utilisation de la facture comme mode de paiement est disponible uniquement pour les commandes dont le coût dépasse un certain montant. La sélection de l’option de paiement par facture peut retarder le processus de mise à niveau de deux jours ou plus si une vérification de solvabilité est requise.
+    > L’option d’utilisation de la facture comme mode de paiement est disponible uniquement pour les commandes dont le coût est supérieur à un certain montant. La sélection de l’option de paiement par facture peut retarder le processus de mise à niveau de deux jours ou plus si une vérification de solvabilité est requise.
 8. Lorsque vous avez terminé, sélectionnez **Ordre des commandes.**
 
 > [!NOTE]
@@ -119,7 +118,7 @@ Si vous avez déjà un abonnement, continuez à l’étape suivante.
 Avant de passer à l’étape suivante, il est important de s’assurer que tous les services au sein de votre nouvel abonnement ont été mis en place. Si l’abonnement n’est pas prêt lors de la première vérification, essayez à nouveau ultérieurement.
 
 > [!NOTE]
-> Si vous avez choisi de payer le nouvel abonnement par facture, une vérification de solvabilité peut être nécessaire. L’abonnement peut prendre jusqu’à deux jours ou jours ou moins avant d’être disponible.
+> Si vous avez choisi de payer le nouvel abonnement par facture, une vérification de solvabilité peut être nécessaire. L’abonnement peut prendre jusqu’à deux jours ou moins avant d’être disponible.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Dans la **drop-down État** de l’abonnement, sélectionnez **Active**.
@@ -128,14 +127,14 @@ Avant de passer à l’étape suivante, il est important de s’assurer que tous
 
 ### <a name="step-3-reassign-licenses-to-users"></a>Étape 3 : Réattribuer des licences aux utilisateurs
 
-Vous pouvez utiliser le Centre d Microsoft 365 pour réaffecter des licences à 20 utilisateurs à la fois. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](move-users-different-subscription.md)
+Vous pouvez utiliser le centre d Microsoft 365 pour réaffecter des licences à 20 utilisateurs à la fois. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](move-users-different-subscription.md)
 
 > [!TIP]
 > Si vous avez un grand nombre d’utilisateurs, vous pouvez utiliser Office 365 PowerShell pour attribuer des [licences utilisateur en bloc.](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Étape 4 : Annuler l’abonnement Office 365 E4
 
-Une fois que tous vos utilisateurs ont été réassignés à votre nouvel abonnement, annulez [Office 365 abonnement E4.](cancel-your-subscription.md)
+Une fois que tous vos utilisateurs ont été réassignés à votre nouvel abonnement, annulez [l’abonnement Office 365 E4](cancel-your-subscription.md).
 
 ## <a name="related-content"></a>Contenu connexe
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
-- commerce
+- commerce_ssp
 search.appverid:
 - MET150
 description: Les administrateurs peuvent apprendre à gérer les achats en libre-service effectués par les utilisateurs de leur organisation.
-ms.openlocfilehash: 5378d14affd074bfad356fea4bb2adbd6ca104dd
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 03/26/2021
+ms.openlocfilehash: af1786b7e3d1b3e4a03202d605d734271acb1da5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293570"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333337"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gérer les achats libre-service (administrateur)
 
@@ -91,7 +92,7 @@ Vous pouvez désactiver ou activer les achats en libre-service pour les utilisat
 
 Vous pouvez utiliser le module **PowerShell MSCommerce** pour :
 
-- Afficher l’état par défaut de la valeur du paramètre **AllowSelfServicePurchase** , qu’elle soit activée ou désactivée par le produit
+- Afficher l’état par défaut de la valeur du paramètre **AllowSelfServicePurchase,** qu’elle soit activée ou désactivée par le produit
 - Afficher la liste des produits applicables et si l’achat en libre-service est activé ou désactivé
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
 
@@ -103,7 +104,7 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à la page **Services** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
+1. Dans le centre d’administration, allez à la page **Services** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
 
 ::: moniker-end
 
@@ -127,7 +128,7 @@ Vous pouvez attribuer des licences existantes ou acheter des abonnements supplé
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Prendre en compte un abonnement d’achat en libre-service
 
-Vous pouvez prendre le relais d’un abonnement d’achat en libre-service effectué par un utilisateur de votre organisation. Lorsque vous prenez le relais d’un abonnement d’achat en libre-service, deux options s’offrent à vous :
+Vous pouvez prendre le relais d’un abonnement d’achat en libre-service effectué par un utilisateur de votre organisation. Lorsque vous prenez le relais d’un abonnement d’achat en libre-service, vous avez deux options :
 
 1. Déplacez les utilisateurs vers un autre abonnement et annulez l’abonnement d’origine.
 2. Annulez l’abonnement d’achat en libre-service et supprimez les licences des utilisateurs affectés.
