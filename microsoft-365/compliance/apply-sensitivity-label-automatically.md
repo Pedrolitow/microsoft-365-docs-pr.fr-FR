@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: 477f176d523fbb458ae266cad98b07a63a10050c
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d0745ac2e4d5b78b40746fd0593a9af18e691021
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259342"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326829"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -220,7 +220,9 @@ N’oubliez pas de connaître les conditions préalables avant de configurer les
 - Une ou plusieurs étiquettes de confidentialité [créées et publiées](create-sensitivity-labels.md) (à au moins un utilisateur) que vous pouvez sélectionner pour vos stratégies d’étiquetage automatique. Pour ces étiquettes :
     - Cela n’a pas d’importance si le paramètre d’étiquetage automatique dans les applications Office est activé ou désactivé, car ce paramètre d’étiquette complète les stratégies d’étiquetage automatique, comme expliqué dans l’introduction.
     - Si les étiquettes que vous souhaitez utiliser pour l’étiquetage automatique sont configurées pour utiliser les marquages visuels (en-têtes, pieds de page, filigranes), notez que ceux-ci ne sont pas appliqués aux documents.
-    - Si les étiquettes appliquent le [chiffrement](encryption-sensitivity-labels.md), celles-ci doivent être configurées pour le paramètre **Attribuer des autorisations maintenant**.
+    - Si les étiquettes appliquent le [chiffrement](encryption-sensitivity-labels.md) :
+        - Lorsque la stratégie d’étiquetage automatique inclut des emplacements pour SharePoint ou OneDrive, vous devez configurer l’étiquette pour le paramètre **Attribuer des autorisations maintenant**.
+        - Lorsque la stratégie d’étiquetage automatique s’applique uniquement à Exchange, vous pouvez configurer l’étiquette pour **Attribuer des autorisations maintenant** ou **Autoriser les utilisateurs à attribuer des autorisations** (pour les options Ne pas transférer ou Chiffrer uniquement).
 
 ### <a name="learn-about-simulation-mode"></a>En savoir plus sur le mode simulation
 

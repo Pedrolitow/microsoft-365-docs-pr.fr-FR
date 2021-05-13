@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment créer et exécuter une requête dans un jeu à réviser pour organiser les données pour une révision plus efficace dans un cas Advanced eDiscovery.
+description: Découvrez comment créer et exécuter une requête dans un jeu à réviser pour organiser les données pour une révision plus efficace dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816567"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345799"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
 
-Dans la plupart des cas, il est utile de pouvoir approfondir les données d’un jeu à réviser et d’organiser ces données pour faciliter une révision plus efficace. L’utilisation de requêtes dans un jeu à réviser vous permet de vous concentrer sur un sous-ensemble de documents qui répondent aux critères de votre révision.
+Dans la plupart des cas, il est utile de pouvoir approfondir les données d’un jeu à réviser et d’organiser ces données pour faciliter une révision plus efficace. L’utilisation de requêtes dans un jeu à réviser vous permet de vous concentrer sur un sous-ensemble de documents qui répondent aux critères de votre avis.
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>Création et exécution d’une requête dans un jeu à réviser
 
@@ -64,6 +64,6 @@ Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser des filtre
 
 Les filtres diffèrent des requêtes de deux manières significatives :
 
-- Les filtres sont temporaires. Elles ne persistent pas au-delà de la session existante. En d’autres termes, vous ne pouvez pas enregistrer un filtre. Les requêtes sont enregistrées dans le jeu à réviser et y accèdent chaque fois qu’elles ouvrent le jeu à réviser.
+- Les filtres sont temporaires. Elles ne persistent pas au-delà de la session existante. En d’autres termes, vous ne pouvez pas enregistrer un filtre. Les requêtes sont enregistrées dans le jeu à réviser et y accèdent chaque fois que vous ouvrez le jeu à réviser.
 
 - Les filtres sont toujours additives. Les filtres sont appliqués en plus de la requête de jeu à réviser actuelle. L’application d’une autre requête a pour effet de remplacer les résultats renvoyés par la requête actuelle.

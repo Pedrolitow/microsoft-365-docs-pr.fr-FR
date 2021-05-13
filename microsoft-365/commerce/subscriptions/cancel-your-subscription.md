@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Découvrez comment annuler un abonnement payant ou une version d’évaluation de Microsoft 365 for business.
 ms.date: 04/08/2021
-ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297307"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333313"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
@@ -102,9 +100,9 @@ Si vous utilisez un domaine personnalisé avec votre abonnement, vous devez effe
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>Modifiez les enregistrements du serveur de noms de votre domaine (si applicable)
 
-Si vous avez configuré un domaine personnalisé, vous avez ajouté des enregistrements DNS afin que le domaine fonctionne avec les services Microsoft 365. Avant de retirer votre domaine, veillez à mettre à jour les enregistrements DNS, tels que de l'enregistrement MX de votre domaine, auprès de votre hôte DNS.
+Si vous avez configuré un domaine personnalisé, vous avez ajouté des enregistrements DNS afin que le domaine fonctionne avec les services Microsoft 365. Avant de supprimer votre domaine, veillez à mettre à jour les enregistrements DNS, tels que de l'enregistrement MX de votre domaine, auprès de votre hôte DNS.
 
-Par exemple, changez l’enregistrement MX de votre hôte DNS. Les courriers envoyés à votre domaine cesseront d’être envoyés à votre adresse Microsoft et devront être envoyés à votre nouveau fournisseur de services de messagerie électronique. (Un enregistrement MX détermine où le courrier destiné à votre domaine est envoyé).
+Par exemple, modifiez l'enregistrement MX auprès de votre hôte DNS. Le courrier électronique envoyé à votre domaine n'arrive plus à votre adresse Microsoft, mais parvienne plutôt à votre nouveau fournisseur de courrier. (Un enregistrement MX détermine où le courrier destiné à votre domaine est envoyé).
 
 - Si vos enregistrements de serveur de noms (NS) [pointent vers des serveurs de noms Microsoft 365](../../admin/setup/add-domain.md), la modification de votre enregistrement MX reste sans effet jusqu’à ce que vous modifiez vos enregistrements NS de façon à ce qu'ils pointent vers votre nouvel hôte DNS (voir l'étape 2).
 
@@ -126,7 +124,7 @@ Lorsque l’annulation prend effet, les utilisateurs perdent l’accès à leurs
 
 - Pour déplacer votre courrier électronique, vos contacts, vos tâches et vos informations de calendrier vers un autre compte, voir [Exporter ou sauvegarder les courriers électroniques, les contacts et le calendrier vers un fichier .pst Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
-- Pour enregistrer le contenu d'une bibliothèque de documents ou d'une liste (par exemple, des contacts) à partir d'un environnement SharePoint Online (OneDrive Entreprise ou sites d'équipe) vers des partages de fichiers ou un ordinateur local, voir [Migration manuelle de contenu SharePoint Online](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration).
+- Pour enregistrer le contenu d'une bibliothèque de documents ou d'une liste (par exemple, des contacts) à partir d'un environnement SharePoint Online (OneDrive Entreprise ou sites d'équipe) vers des partages de fichiers ou un ordinateur local, voir [Migration manuelle de contenu SharePoint Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### <a name="uninstall-office-optional"></a>Désinstaller Office (facultatif)
 

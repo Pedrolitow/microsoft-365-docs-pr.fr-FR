@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327257"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345835"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
 
@@ -163,24 +163,24 @@ Si vous configurez des règles de réduction de la surface d’attaque à l’ai
 |[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
-|[Bloquer le vol d’informations d’identification du sous-système d’autorité de sécurité locale Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
+|[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Bloquer le contenu exécutable du client de messagerie et de la messagerie web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Bloquer l’exécution de scripts potentiellement obscurcis](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
-|[Empêcher les applications Office de créer du contenu exécutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
-|[Empêcher les applications Office d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
-|[Empêcher l’application de communication Office de créer des processus enfants](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
-|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Non pris en charge|[Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) ou version supérieure|
+|[Empêcher Office applications de créer du contenu exécutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
+|[Empêcher Office applications d’injecter du code dans d’autres processus](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
+|[Empêcher Office application de communication de créer des processus enfants](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
+|[Bloquer la persistance via un abonnement à des événements WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|Non pris en charge|[Windows 10, version 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (build 18362) ou supérieure|
 |[Bloquer les créations de processus provenant de commandes PSExec et WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
-|[Bloquer les appels d’API Win32 à partir de macros Office](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
+|[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Pris en charge|[Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquer l’utilisation abusive des pilotes signés vulnérables exploités
 
-Cette règle empêche une application d’écrire un pilote signé vulnérable sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à la compromission du système.
+Cette règle empêche une application d’écrire un pilote vulnérable signé sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à une compromission du système.
 
 Cette règle ne bloque pas le chargement d’un pilote déjà existant sur le système.
 
@@ -195,7 +195,7 @@ Nom Intune : `Block abuse of exploited vulnerable signed drivers`
 
 GUID :  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
-Consultez la procédure personnalisée [de Microsoft Endpoint Manager pour](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) obtenir des informations sur les procédures de règles personnalisées MEM.
+Voir [Microsoft Endpoint Manager procédure personnalisée pour les](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) informations de procédure de règles personnalisées MEM.
 
 Vous pouvez exécuter cette commande dans la ligne de commande pour activer la règle asr :
 
@@ -214,7 +214,7 @@ Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants p
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 Nom Intune : `Process creation from Adobe Reader (beta)`
@@ -225,14 +225,14 @@ GUID : `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>Empêcher toutes les applications Office de créer des processus enfants
 
-Cette règle empêche les applications Office de créer des processus enfants. Les applications Office incluent Word, Excel, PowerPoint, OneNote et Access.
+Cette règle empêche Office applications de créer des processus enfants. Office applications incluent Word, Excel, PowerPoint, OneNote et Access.
 
 La création de processus enfants malveillants est une stratégie anti-programme malveillant courante. Les programmes malveillants qui utilisent Office comme vecteur exécutent souvent des macros VBA et exploitent du code pour télécharger et essayer d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins médicales, telles que la création d’une invite de commandes ou l’utilisation de PowerShell pour configurer les paramètres de Registre.
 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -242,19 +242,19 @@ Nom du Gestionnaire de configuration : `Block Office application from creating c
 
 GUID : `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
-### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification du sous-système d’autorité de sécurité locale Windows
+### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Bloquer le vol d’informations d’identification Windows sous-système de l’autorité de sécurité locale
 
 Cette règle permet d’empêcher le vol d’informations d’identification en verrouilleant le service LSASS (Local Security Authority Subsystem Service).
 
-LSASS authentifier les utilisateurs qui se connectent sur un ordinateur Windows. Microsoft Defender Credential Guard dans Windows 10 empêche normalement les tentatives d’extraction des informations d’identification de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
+LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Microsoft Defender Credential Guard dans Windows 10 normalement les tentatives d’extraction d’informations d’identification à partir de LSASS. Toutefois, certaines organisations ne peuvent pas activer Credential Guard sur tous leurs ordinateurs en raison de problèmes de compatibilité avec les pilotes de carte à puce personnalisés ou d’autres programmes chargés dans l’autorité de sécurité locale (LSA). Dans ce cas, les attaquants peuvent utiliser des outils de piratage tels que Mimikatz pour supprimer des mots de passe en texte clair et des hages NTLM à partir de LSASS.
 
 > [!NOTE]
-> Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais qui n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
+> Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -269,26 +269,26 @@ GUID : `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 Cette règle empêche le lancement des types de fichiers suivants à partir du courrier électronique ouvert dans l’application Microsoft Outlook, ou de Outlook.com et d’autres fournisseurs de messagerie web populaires :
 
 - Fichiers exécutables (tels que .exe, .dll ou .scr)
-- Fichiers de script (tels qu’un fichier .ps PowerShell, Visual Basic .vbs ou JavaScript .js fichier)
+- Fichiers de script (tels qu’un fichier .ps PowerShell, Visual Basic .vbs ou javascript .js fichier)
 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Microsoft Endpoint Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
 Nom Intune : `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Nom du Gestionnaire de points de terminaison Microsoft : `Block executable content from email client and webmail`
+Microsoft Endpoint Manager nom de l’Microsoft Endpoint Manager :`Block executable content from email client and webmail`
 
 GUID : `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 > [!NOTE]
-> La règle Bloquer **le contenu exécutable** à partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
+> La règle Bloquer **le contenu exécutable à** partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
 >
 > - Intune (Profils de configuration) : exécution du contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de la messagerie électronique (webmail/client de messagerie) (aucune exception).
-> - Gestionnaire de point de terminaison : bloquez le téléchargement de contenu exécutable à partir des clients de messagerie et de messagerie web.
+> - Endpoint Manager : bloquer le téléchargement de contenu exécutable à partir des clients de messagerie et de messagerie web.
 > - Stratégie de groupe : bloquer le contenu exécutable à partir du client de messagerie et de la messagerie web.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance
@@ -309,7 +309,7 @@ Le lancement de fichiers exécutables nontrus ou inconnus peut être risqué, ca
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -328,7 +328,7 @@ L’obfuscation de script est une technique courante que les auteurs de programm
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -347,7 +347,7 @@ Bien que cela ne soit pas courant, les applications métier utilisent parfois de
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -357,16 +357,16 @@ Nom du Gestionnaire de configuration : `Block JavaScript or VBScript from launch
 
 GUID : `D3E037E1-3EB8-44C8-A917-57927947596D`
 
-### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher les applications Office de créer du contenu exécutable
+### <a name="block-office-applications-from-creating-executable-content"></a>Empêcher Office applications de créer du contenu exécutable
 
-Cette règle empêche les applications Office, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
+Cette règle empêche Office applications, notamment Word, Excel et PowerPoint, de créer du contenu exécutable potentiellement malveillant, en bloquant l’écriture de code malveillant sur le disque.
 
-Les programmes malveillants qui abusent d’Office en tant que vecteur peuvent tenter de sortir d’Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et persisteraient sur le système. Par conséquent, cette règle se défendre contre une technique de persistance courante.
+Les programmes malveillants qui utilisent Office comme vecteur peuvent tenter de sortir de Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et persisteraient sur le système. Par conséquent, cette règle se défendre contre une technique de persistance courante.
 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates) (SCCM) CB 1710 (SCCM est désormais Microsoft Endpoint Configuration Manager)
 
@@ -376,11 +376,11 @@ Nom SCCM : `Block Office applications from creating executable content`
 
 GUID : `3B576869-A4EC-4529-8536-B80A7769E899`
 
-### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher les applications Office d’injecter du code dans d’autres processus
+### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Empêcher Office applications d’injecter du code dans d’autres processus
 
-Cette règle bloque les tentatives d’injection de code à partir d’applications Office dans d’autres processus.
+Cette règle bloque les tentatives d’injection de code Office applications dans d’autres processus.
 
-Les personnes malveillantes peuvent tenter d’utiliser des applications Office pour migrer du code malveillant vers d’autres processus par injection de code, afin que le code puisse être masqué comme un processus propre.
+Les personnes malveillantes peuvent tenter d’Office des applications malveillantes pour migrer du code malveillant vers d’autres processus via l’injection de code, afin que le code puisse être masqué en tant que processus propre.
 
 Il n’existe pas d’objectifs commerciaux légitimes connus pour l’utilisation de l’injection de code.
 
@@ -389,7 +389,7 @@ Cette règle s’applique à Word, Excel et PowerPoint.
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -399,19 +399,19 @@ Nom du Gestionnaire de configuration : `Block Office applications from injecting
 
 GUID : `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
-### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher l’application de communication Office de créer des processus enfants
+### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher Office application de communication de créer des processus enfants
 
-Cette règle empêche Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
+Cette règle empêche les Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
 
-Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les attaques par formulaire et les règles Outlook que les [attaquants](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
+Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les attaques par formulaires que les [attaquants](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
 
 > [!NOTE]
-> Cette règle s’applique à Outlook et Outlook.com uniquement.
+> Cette règle s’applique Outlook et Outlook.com uniquement.
 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 Nom Intune : `Process creation from Office communication products (beta)`
@@ -445,12 +445,12 @@ GUID : `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Cette règle empêche l’exécution des processus créés via [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) [et WMI.](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) PsExec et WMI peuvent exécuter du code à distance. Il existe donc un risque que des programmes malveillants abusent de cette fonctionnalité à des fins de commande et de contrôle, ou qu’ils propagent une infection dans le réseau d’une organisation.
 
 > [!WARNING]
-> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](https://docs.microsoft.com/intune) ou une autre solution MDM. Cette règle n’est pas compatible avec la gestion via [Microsoft Endpoint Configuration Manager,](https://docs.microsoft.com/configmgr) car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
+> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](https://docs.microsoft.com/intune) ou une autre solution MDM. Cette règle n’est [](https://docs.microsoft.com/configmgr) pas compatible avec la gestion Microsoft Endpoint Configuration Manager car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
 Nom Intune : `Process creation from PSExec and WMI commands`
@@ -466,7 +466,7 @@ Avec cette règle, les administrateurs peuvent empêcher l’exécution de fichi
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -476,7 +476,7 @@ Nom du Gestionnaire de configuration : `Block untrusted and unsigned processes t
 
 GUID : `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à partir de macros Office
+### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à partir Office macros
 
 Cette règle empêche les macros VBA d’appeler les API Win32.
 
@@ -485,7 +485,7 @@ Office VBA active les appels d’API Win32. Les programmes malveillants peuvent 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -511,7 +511,7 @@ La règle a tendance à faire preuve de prudence pour empêcher les ransomware.
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 
@@ -526,4 +526,4 @@ GUID : `c1db55ab-c21a-4637-bb3f-a12568109d35`
 - [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.md).
 - [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
 - [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
-- [Compatibilité de l’Antivirus Microsoft Defender avec d’autres solutions antivirus/anti-programme malveillant](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+- [Compatibilité des Antivirus Microsoft Defender avec d’autres solutions antivirus/anti-programme malveillant](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

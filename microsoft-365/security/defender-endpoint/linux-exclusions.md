@@ -17,62 +17,62 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934296"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346413"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Cet article fournit des informations sur la définition d'exclusions qui s'appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
+Cet article fournit des informations sur la définition d’exclusions qui s’appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
 
 > [!IMPORTANT]
-> Les exclusions décrites dans cet article ne s'appliquent pas aux autres fonctionnalités de Defender for Endpoint sur Linux, y compris la détection et la réponse des points de terminaison (EDR). Les fichiers que vous excluez à l'aide des méthodes décrites dans cet article peuvent toujours déclencher des alertes EDR et d'autres détections.
+> Les exclusions décrites dans cet article ne s’appliquent pas aux autres fonctionnalités de Defender for Endpoint sur Linux, notamment protection évolutive des points de terminaison (PEPT). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher PEPT alertes et autres détections.
 
 Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par processus de Defender for Endpoint sur les analyses Linux.
 
 Les exclusions peuvent être utiles pour éviter les détections incorrectes sur les fichiers ou les logiciels qui sont uniques ou personnalisés pour votre organisation. Ils peuvent également être utiles pour atténuer les problèmes de performances causés par Defender pour Endpoint sur Linux.
 
 > [!WARNING]
-> La définition d'exclusions réduit la protection offerte par Defender pour Endpoint sur Linux. Vous devez toujours évaluer les risques associés à l'implémentation d'exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu'ils ne sont pas malveillants.
+> La définition d’exclusions réduit la protection offerte par Defender pour Endpoint sur Linux. Vous devez toujours évaluer les risques associés à l’implémentation d’exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu’ils ne sont pas malveillants.
 
-## <a name="supported-exclusion-types"></a>Types d'exclusion pris en charge
+## <a name="supported-exclusion-types"></a>Types d’exclusion pris en charge
 
-Le tableau suivant indique les types d'exclusion pris en charge par Defender pour Endpoint sur Linux.
+Le tableau suivant indique les types d’exclusion pris en charge par Defender pour Endpoint sur Linux.
 
 Exclusion | Définition | Exemples
 ---|---|---
-Extension de fichier | Tous les fichiers avec l'extension, n'importe où sur l'appareil | `.test`
-File | Un fichier spécifique identifié par le chemin d'accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | Tous les fichiers sous le dossier spécifié (de manière récursive) | `/var/log/`<br/>`/var/*/`
-Processus | Un processus spécifique (spécifié par le chemin d'accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci | `/bin/cat`<br/>`cat`<br/>`c?t`
+Extension de fichier | Tous les fichiers avec l’extension, n’importe où sur l’appareil | `.test`
+Fichier | Un fichier spécifique identifié par le chemin d’accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Dossier | Tous les fichiers sous le dossier spécifié (de manière récursive) | `/var/log/`<br/>`/var/*/`
+Processus | Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
-> Les chemins ci-dessus doivent être des liens durs, et non symboliques, pour être correctement exclus. Vous pouvez vérifier si un chemin d'accès est un lien symbolique en exécutant `file <path-name>` .
+> Les chemins ci-dessus doivent être des liens durs, et non symboliques, pour être correctement exclus. Vous pouvez vérifier si un chemin d’accès est un lien symbolique en exécutant `file <path-name>` .
 
 Les exclusions de fichiers, de dossiers et de processus prisent en charge les caractères génériques suivants :
 
 Caractère générique | Description | Exemple | Correspondances | Ne correspond pas
 ---|---|---|---|---
-\* |    Correspond à n'importe quel nombre de caractères, y compris aucun (notez que lorsque ce caractère générique est utilisé à l'intérieur d'un chemin d'accès, il ne remplace qu'un seul dossier) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | Correspond à n'importe quel caractère | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\* |    Correspond à n’importe quel nombre de caractères, y compris aucun (notez que lorsque ce caractère générique est utilisé à l’intérieur d’un chemin d’accès, il ne remplace qu’un seul dossier) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | Correspond à n’importe quel caractère | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ## <a name="how-to-configure-the-list-of-exclusions"></a>Comment configurer la liste des exclusions
 
 ### <a name="from-the-management-console"></a>À partir de la console de gestion
 
-Pour plus d'informations sur la configuration des exclusions à partir d'Une autre console de gestion, Ansible ou d'une autre console de gestion, voir Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
+Pour plus d’informations sur la configuration des exclusions à partir d’Une autre console de gestion, Ansible ou d’une autre console de gestion, voir Définir les préférences de [Defender pour Endpoint sur Linux.](linux-preferences.md)
 
 ### <a name="from-the-command-line"></a>À partir de la ligne de commande
 
@@ -121,7 +121,7 @@ Exemples :
     ```
 
     > [!NOTE]
-    > Cela exclut uniquement les chemins d'accès d'un niveau inférieur *à /var/*, mais pas les dossiers qui sont imbrmbrés plus profondément ; par exemple, */var/this-subfolder/but-not-this-subfolder*.
+    > Cela exclut uniquement les chemins d’accès d’un niveau inférieur *à /var/*, mais pas les dossiers qui sont imbrmbrés plus profondément ; par exemple, */var/this-subfolder/but-not-this-subfolder*.
     
     ```bash
     mdatp exclusion folder add --path "/var/"
@@ -142,29 +142,29 @@ Exemples :
     Process exclusion configured successfully
     ```
 
-## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d'exclusions avec le fichier de test EICAR
+## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d’exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d'exclusions fonctionnent en téléchargeant `curl` un fichier de test.
+Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide `curl` du téléchargement d’un fichier de test.
 
-Dans l'extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d'exclusion. Par exemple, si vous avez exclu `.testing` l'extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d'accès, veillez à exécuter la commande dans ce chemin d'accès.
+Dans l’extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la commande dans ce chemin d’accès.
 
 ```bash
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Si Defender pour point de terminaison sur Linux signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n'est détecté et que le fichier téléchargé existe, l'exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
+Si Defender pour point de terminaison sur Linux signale un programme malveillant, la règle ne fonctionne pas. Si aucun programme malveillant n’est détecté et que le fichier téléchargé existe, l’exclusion fonctionne. Vous pouvez ouvrir le fichier pour vérifier que le contenu est identique à ce qui est décrit sur le site web du fichier [de test EICAR.](http://2016.eicar.org/86-0-Intended-use.html)
 
-Si vous n'avez pas accès à Internet, vous pouvez créer votre propre fichier de test EICAR. Écrivez la chaîne EICAR dans un nouveau fichier texte avec la commande Bash suivante :
+Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier de test EICAR. Écrivez la chaîne EICAR dans un nouveau fichier texte avec la commande Bash suivante :
 
 ```bash
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l'enregistrer avec le nom de fichier ou dans le dossier que vous tentez d'exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
 
 ## <a name="allow-threats"></a>Autoriser les menaces
 
-En plus d'exclure certains contenus de l'analyse, vous pouvez également configurer le produit pour qu'il ne détecte pas certaines classes de menaces (identifiées par le nom de la menace). Vous devez faire preuve de prudence lors de l'utilisation de cette fonctionnalité, car elle peut laisser votre appareil non protégé.
+En plus d’exclure certains contenus de l’analyse, vous pouvez également configurer le produit pour qu’il ne détecte pas certaines classes de menaces (identifiées par le nom de la menace). Vous devez faire preuve de prudence lors de l’utilisation de cette fonctionnalité, car elle peut laisser votre appareil non protégé.
 
 Pour ajouter un nom de menace à la liste autorisée, exécutez la commande suivante :
 
@@ -172,7 +172,7 @@ Pour ajouter un nom de menace à la liste autorisée, exécutez la commande suiv
 mdatp threat allowed add --name [threat-name]
 ```
 
-Le nom de la menace associé à une détection sur votre appareil peut être obtenu à l'aide de la commande suivante :
+Le nom de la menace associé à une détection sur votre appareil peut être obtenu à l’aide de la commande suivante :
 
 ```bash
 mdatp threat list

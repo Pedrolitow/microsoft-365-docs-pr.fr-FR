@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 8f73deb1059097640946fcf7dad1ca97cb2831b1
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296718"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464404"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -46,7 +46,7 @@ L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 2
 ## <a name="requirements"></a>Conditions requises
 
 Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des références Microsoft 365 Entreprise : référenceS E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium (et sont inscrits à Office à l’aide de leur ID d’organisation) et ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
-Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité [de déploiement centralisé.](#centralized-deployment-compatibility-checker)
+Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé.](#centralized-deployment-compatibility-checker)
 
 La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
   
@@ -155,5 +155,16 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-
   
 |**Plateforme**|**Informations de débogage**|
 |:-----|:-----|
-|Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ( [Découvrez comment](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ( [Découvrez comment](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clients riches (Windows, Mac)  <br/> | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)**  <br/> |
+
+## <a name="related-content"></a>Contenu connexe
+
+[Déployer des add-ins dans le Centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)
+
+[Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)
+
+[FAQ sur le déploiement centralisé](../manage/centralized-deployment-faq.md) (article)
+
+[Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels](../setup/upgrade-users-to-latest-office-client.md) vers le client Office le plus récent (article)
+ 

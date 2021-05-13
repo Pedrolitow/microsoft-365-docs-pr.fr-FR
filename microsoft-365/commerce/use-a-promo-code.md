@@ -17,15 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-search.appverid: MET150
+search.appverid: MET150 S
 description: Découvrez comment appliquer un code promotionnel à votre abonnement Microsoft 365 pour réduire le prix et comment résoudre les problèmes de code promotionnel en cas d’erreur.
 ms.date: 03/17/2021
-ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 2a75f3e31a417e505c0f91044c61270f8bad8bae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332917"
+ms.locfileid: "52344649"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Utiliser votre code promotionnel pour réduire le prix
 
@@ -42,7 +42,7 @@ Une fois l'achat finalisé, vous pouvez voir la réduction créée par votre cod
   
 ## <a name="promo-code-terms"></a>Conditions d'utilisation des codes promotionnels
 
-Les instructions suivantes s’appliquent aux codes promotionnels pour les abonnements Microsoft 365 pour les entreprises.
+Les instructions suivantes s’appliquent aux codes promotionnels Microsoft 365 pour les abonnements pour les entreprises.
   
 - **Nombre de codes promotionnels par abonnement** Vous pouvez utiliser un code promotionnel pour plusieurs abonnements dans la même commande, mais vous ne pouvez pas utiliser plusieurs codes promotionnels pour le même abonnement.
 - **Durée d'application de la réduction** Une fois appliquée à votre commande, la réduction liée au code promotionnel dure jusqu'à la fin de la période de votre abonnement. Si la période de votre abonnement est mensuelle, la réduction liée au code promotionnel est appliquée jusqu'à la fin du mois de facturation pendant lequel vous l'avez saisie. Si la période de votre abonnement est annuelle, la réduction liée au code promotionnel est appliquée jusqu'à la fin de l'année de facturation pendant laquelle vous l'avez saisie.

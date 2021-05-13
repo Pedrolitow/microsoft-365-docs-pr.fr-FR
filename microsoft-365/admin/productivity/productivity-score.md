@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Vue d’ensemble de niveau de productivité Microsoft.
-ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876130"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345237"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
@@ -63,7 +63,7 @@ Votre niveau de productivité repose sur les résultats combinés des catégorie
 - Intégrité de Microsoft 365 Apps (100 points)
 - **Total possible = 800 points**
  
- Dans chaque catégorie de score, nous quantifions les indicateurs clés qui déterminent la manière dont votre organisation utilise Microsoft 365 dans le trajet vers la transformation numérique. Nous fournissons l’affichage des activités clés sur 28 et 180 jours. Nous fournissons également des mesures de prise en charge qui ne font pas partie du calcul du score, mais qui sont importantes pour vous aider à identifier les statistiques d’utilisation sous-jacentes et les configurations que vous pouvez résoudre.
+Dans chaque catégorie de score, nous quantifions les indicateurs clés qui déterminent la manière dont votre organisation utilise Microsoft 365 dans le trajet vers la transformation numérique. Nous fournissons l’affichage des activités clés sur 28 et 180 jours. Nous fournissons également des mesures de prise en charge qui ne font pas partie du calcul du score, mais qui sont importantes pour vous aider à identifier les statistiques d’utilisation sous-jacentes et les configurations que vous pouvez résoudre.
 
 ### <a name="products-included-in-productivity-score"></a>Produits inclus dans le niveau de productivité 
 
@@ -74,7 +74,7 @@ Le score de votre organisation est mis à jour quotidiennement et reflète les a
 
 ## <a name="prerequisites"></a>Conditions préalables 
 
-Pour les données sur les expériences des personnes, vous avez besoin d’un abonnement Microsoft 365 Entreprise ou Office 365 Entreprise. Pour les données d’analyse de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune vous permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous disposez d’Intune, vous pouvez activer les analyses de point de terminaison au sein de l’expérience Intune. Apprenez-en davantage sur la fonctionnalité [Microsoft Intune](/mem/intune/). 
+Pour les données sur les expériences des personnes, vous avez besoin d’un abonnement Microsoft 365 Entreprise ou Office 365 Entreprise. Pour les données d’analyse de point de terminaison de votre client, vous devez ajouter Microsoft Intune à votre abonnement. Intune permet de protéger les données de votre organisation en gérant les appareils et les applications. Une fois que vous disposez d’Intune, vous pouvez activer les analyses de point de terminaison au sein de l’expérience Intune. Pour en savoir plus sur Microsoft Intune, voir la [Documentation Microsoft Intune](/mem/intune/). 
 
 > [!NOTE]
 > Il n’est pas nécessaire de disposer d’une licence d’Analyse du temps de travail pour obtenir les fonctionnalités de niveau de productivité.
@@ -107,7 +107,10 @@ La page d’accueil du niveau de productivité indique le niveau total de l’or
 
 **Le scorede votre organisation** s’affiche sous la forme d’une valeur en pourcentage et en points. Vous pouvez voir les points au niveau du numérateur et le nombre maximal de points possibles dans le dénominateur.
 
-Les **points de référence par les pairs** vous permettent de comparer le score de votre organisation avec des organisations comme la vôtre. Le point de référence par les pairs pour les catégories d’expériences des personnes est calculé comme la moyenne des mesures au sein d’un groupe d’organisations similaires. Le groupe d’organisations est composé d’organisations de votre région avec des caractéristiques similaires : nombre d’utilisateurs sous licence, types de licences, secteurs et ancienneté avec Microsoft 365. 
+Les **points de référence par les pairs** vous permettent de comparer le score de votre organisation avec des organisations comme la vôtre. Le point de référence par les pairs pour les catégories d’expériences des personnes est calculé comme la moyenne des mesures au sein d’un groupe d’organisations similaires. Le groupe d’organisations est composé d’organisations de votre région avec des caractéristiques similaires : nombre d’utilisateurs sous licence, types de licences, secteurs et ancienneté avec Microsoft 365.
+
+> [!NOTE]
+> Microsoft utilise les données internes pour déterminer le secteur d’activité correspondant à une organisation. Les clients sous une organisation parente sont mappés vers le même secteur d’activité que l’organisation parente. Les organisateurs ne peuvent pas afficher ou modifier les mappages du secteur d’activité.
 
 Le point de référence par les pairs de l’analyse de point de terminaison inclut des cibles pour les performances de démarrage des appareils, ainsi que la configuration logicielle recommandée selon des valeurs médianes agrégées pour tous les clients.
 
@@ -158,8 +161,6 @@ Partagez vos idées sur le niveau de productivité et vos idées pour l’améli
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Surveiller l’activité de Microsoft 365 à l’aide des rapports](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (article)
-
-[Activer l'analyse de l'utilisation de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (article)
-
-[Vue d’ensemble du centre d’administration Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (vidéo)
+[Surveiller l’activité de Microsoft 365 à l’aide des rapports](/microsoft-365/admin/activity-reports/activity-reports) (article)\
+[Activer l'analyse de l'utilisation de Microsoft 365](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (article)\
+[Vue d’ensemble du centre d’administration Microsoft 365](/microsoft-365/business-video/admin-center-overview) (vidéo)

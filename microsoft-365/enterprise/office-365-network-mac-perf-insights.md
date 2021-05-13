@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Informations réseau (aperçu)
+title: Microsoft 365 Informations réseau
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 Informations réseau (aperçu)
-ms.openlocfilehash: ca665f4e492b071e5a387ffde0efae8336bd96bc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365 Informations réseau
+ms.openlocfilehash: 10b1c66a8f9aae555c2841b2b290f341bec3c7ec
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245779"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470555"
 ---
-# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Informations réseau (aperçu)
+# <a name="microsoft-365-network-insights"></a>Microsoft 365 Informations réseau
 
 **Les informations réseau sont** des mesures de performances collectées à partir de votre client Microsoft 365 et disponibles uniquement pour les utilisateurs administratifs de votre client. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance> .
 
@@ -29,7 +29,7 @@ Les informations sont conçues pour vous aider à concevoir des périmètres ré
 
 Il existe six informations réseau spécifiques qui peuvent être affichées pour chaque emplacement de bureau :
 
-- [Sortie réseau backhauled](#backhauled-network-egress)
+- [Sortie du réseau backhauled](#backhauled-network-egress)
 - [Périphérique intermédiaire réseau](#network-intermediary-device)
 - [Meilleures performances détectées pour les clients proches de chez vous](#better-performance-detected-for-customers-near-you)
 - [Utilisation d’une porte d’Exchange Online service non optimale](#use-of-a-non-optimal-exchange-online-service-front-door)
@@ -45,14 +45,14 @@ Il existe deux informations réseau au niveau du client qui peuvent être affich
 >[!IMPORTANT]
 >Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
-## <a name="backhauled-network-egress"></a>Sortie réseau backhauled
+## <a name="backhauled-network-egress"></a>Sortie du réseau backhauled
 
 Cette information s’affiche si le service d’informations réseau détecte que la distance entre un emplacement d’utilisateur donné et la sortie réseau est supérieure à 500 km (800 kilomètres), ce qui indique que le trafic Microsoft 365 est rétrogradé vers un périphérique edge Internet ou un proxy commun.
 
 Cette information est abrégée en « Egress » dans certains affichages récapitulatifs.
 
 > [!div class="mx-imgBorder"]
-> ![Sortie réseau backhauled](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+> ![Sortie du réseau backhauled](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### <a name="what-does-this-mean"></a>Scénario
 
@@ -99,7 +99,7 @@ Il peut y avoir de nombreuses raisons à cette condition, notamment la latence d
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Utilisation d’une porte d’Exchange Online service non optimale
 
-Cette information s’affiche si le service d’informations réseau détecte que les utilisateurs situés à un emplacement spécifique ne se connectent pas à une porte d’entrée Exchange Online service optimale.
+Cette information s’affiche si le service d’informations réseau détecte que les utilisateurs d’un emplacement spécifique ne se connectent pas à une porte d’entrée Exchange Online service optimale.
 
 Cette information est abrégée en « Routage » dans certains affichages récapitulatifs.
 
@@ -112,11 +112,11 @@ Nous listons Exchange Online porte d’entrée du service qui conviennent à une
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-L’utilisation d’une porte frontale de service Exchange Online non optimale peut être causée par une rétrograder du réseau avant la sortie du réseau d’entreprise, auquel cas nous recommandons une sortie locale et directe du réseau. Cela peut également être dû à l’utilisation d’un serveur récursif DNS distant, auquel cas nous vous recommandons d’aligner le serveur de résolution récursive DNS avec la sortie réseau.
+L’utilisation d’une porte d’entrée du service Exchange Online non optimale peut être causée par une rétrograder du réseau avant la sortie du réseau d’entreprise, auquel cas nous recommandons une sortie locale et directe du réseau. Cela peut également être dû à l’utilisation d’un serveur récursif DNS distant, auquel cas nous vous recommandons d’aligner le serveur de résolution récursive DNS avec la sortie réseau.
 
 ## <a name="use-of-a-non-optimal-sharepoint-online-service-front-door"></a>Utilisation d’une porte d’entrée du service SharePoint Online non optimale
 
-Cette information s’affiche si le service d’informations réseau détecte que les utilisateurs situés à un emplacement spécifique ne se connectent pas à la porte d’entrée du service SharePoint Online la plus proche.
+Cette information s’affiche si le service d’informations réseau détecte que les utilisateurs d’un emplacement spécifique ne se connectent pas à la porte d’entrée du service SharePoint Online la plus proche.
 
 Cette information est abrégée en « Afd » dans certains affichages récapitulatifs.
 
@@ -129,7 +129,7 @@ Nous identifions la SharePoint frontale du service en ligne à qui le client de 
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
-L’utilisation d’une porte d’entrée du service SharePoint Online non optimale peut être causée par une rétrograder du réseau avant la sortie du réseau d’entreprise, auquel cas nous recommandons la sortie locale et directe du réseau. Cela peut également être dû à l’utilisation d’un serveur récursif DNS distant, auquel cas nous vous recommandons d’aligner le serveur de résolution récursive DNS avec la sortie réseau.
+L’utilisation d’une porte d’entrée du service SharePoint Online non optimale peut être causée par une rétrograder du réseau avant la sortie du réseau d’entreprise, auquel cas nous recommandons la sortie du réseau local et direct. Cela peut également être dû à l’utilisation d’un serveur récursif DNS distant, auquel cas nous vous recommandons d’aligner le serveur de résolution récursive DNS avec la sortie réseau.
 
 ## <a name="low-download-speed-from-sharepoint-front-door"></a>Faible vitesse de téléchargement à partir SharePoint première ligne
 
@@ -151,7 +151,7 @@ Cette information s’affiche si des utilisateurs de votre organisation en Chine
 
 ### <a name="what-does-this-mean"></a>Scénario
 
-Si votre organisation dispose d’une connectivité WAN privée, nous vous recommandons de configurer un circuit réseau WAN à partir de vos bureaux en Chine qui dispose d’une sortie réseau vers Internet dans l’un des emplacements suivants :
+Si votre organisation dispose d’une connectivité WAN privée, nous vous recommandons de configurer un circuit réseau WAN à partir de vos bureaux en Chine qui dispose d’une sortie réseau vers Internet à l’un des emplacements suivants :
 
 - Hong Kong
 - Japon
@@ -184,7 +184,7 @@ Cette information indique quand 50 % ou plus des connexions échantillonées son
 
 ### <a name="what-does-this-mean"></a>Scénario
 
-Cela indique que la majorité de vos utilisateurs rencontreront probablement des problèmes d’expérience utilisateur avec SharePoint et OneDrive. Le pourcentage d’échantillons représente probablement le pourcentage d’utilisateurs qui indiquent moins de 40 points.  
+Il s’agit d’une indication que la majorité de vos utilisateurs sont susceptibles de rencontre des problèmes d’expérience utilisateur avec SharePoint et OneDrive. Le pourcentage d’échantillons représente probablement le pourcentage d’utilisateurs qui indiquent moins de 40 points.  
 
 ### <a name="what-should-i-do"></a>Que dois-je faire ?
 
@@ -196,6 +196,6 @@ Activez la visibilité de la connectivité réseau de l’emplacement du bureau 
 
 [Microsoft 365'évaluation réseau (prévisualisation)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 de test de connectivité réseau (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 de test de connectivité réseau (prévisualisation)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Services de localisation de connectivité réseau (prévisualisation)](office-365-network-mac-location-services.md)

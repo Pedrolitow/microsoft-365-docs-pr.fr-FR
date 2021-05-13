@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259498"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332809"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
@@ -147,7 +147,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
     - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
     - Intégrer les ordinateurs Windows 10 utilisant un script local
-    - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
+    - Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants dans des scénarios de session unique
 
 Une fois l’opération effectuée et le point de terminaison intégré, celui-ci doit être visible dans la liste des appareils et commencer à créer des rapports d’activité d’audit dans l’Explorateur d’activités.
 

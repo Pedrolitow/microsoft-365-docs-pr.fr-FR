@@ -19,23 +19,23 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment gérer les abonnements gratuits à l’inscription en libre-service pour votre organisation.
 ms.date: 03/17/2021
-ms.openlocfilehash: b469515a649399c71ef64ba2567dfa376f21e9a7
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333217"
+ms.locfileid: "52345129"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Gérer les abonnements d’inscription en libre-service
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>Qu’est-ce que les abonnements en libre-service ?
 
-Un nombre limité d’abonnements d’inscription libre-service est disponible pour les utilisateurs de votre organisation. Un utilisateur peut uniquement s’inscrire et utiliser un abonnement d’inscription en libre-service pour lui-même. Vous gérez les abonnements d’inscription en libre-service en bloquant l’inscription des utilisateurs et en supprimant les abonnements gratuits pour les utilisateurs inscrits. Pour plus d’informations sur l’inscription en libre-service et les abonnements disponibles, voir l’utilisation de l’inscription en [libre-service dans votre organisation.](../../admin/misc/self-service-sign-up.md)
+Un nombre limité d’abonnements d’inscription libre-service est disponible pour les utilisateurs de votre organisation. Un utilisateur peut uniquement s’inscrire et utiliser un abonnement d’inscription en libre-service pour lui-même. Vous gérez les abonnements d’inscription en libre-service en bloquant l’inscription des utilisateurs et en supprimant les abonnements gratuits pour les utilisateurs inscrits. Pour plus d’informations sur l’inscription en libre-service et les abonnements disponibles, voir Utilisation de l’inscription en [libre-service dans votre organisation.](../../admin/misc/self-service-sign-up.md)
 
 ## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Afficher la liste des abonnements d’inscription en libre-service
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sous **l’onglet Produits,** sélectionnez l’icône de filtre, puis sélectionnez **Gratuit**. Une liste de tous les abonnements d’inscription en libre-service s’affiche.
+2. Sous **l’onglet Produits,** sélectionnez l’icône de filtre, puis sélectionnez **Gratuit**. La liste de tous les abonnements d’inscription en libre-service s’affiche.
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>En quoi ces abonnements sont-ils différents des abonnements d’achat en libre-service ?
 
@@ -48,7 +48,7 @@ Vous utilisez la cmdlet [**Set-MsolCompanySettings**](/powershell/module/msonlin
 ## <a name="delete-a-self-service-sign-up-subscription"></a>Supprimer un abonnement d’inscription en libre-service
 
 > [!IMPORTANT]
-> Lorsque vous supprimez un abonnement d’inscription en libre-service, vous bloquez l’accès de tous les utilisateurs à leurs données et messages électroniques et supprimez toutes les données et tous les messages électroniques.
+> Lorsque vous supprimez un abonnement d’inscription en libre-service, vous bloquez l’accès de tous les utilisateurs à leurs données et messages électroniques et supprimez toutes les données et tous les e-mails.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous **l’onglet Produits,** sélectionnez l’icône de filtre, puis sélectionnez **Gratuit**.

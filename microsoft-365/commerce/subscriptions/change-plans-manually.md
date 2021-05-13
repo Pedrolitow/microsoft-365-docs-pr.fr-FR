@@ -1,5 +1,5 @@
 ---
-title: Modifier manuellement les plans Microsoft 365 pour les entreprises
+title: Modifier Microsoft 365 plans pour les entreprises manuellement
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,15 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-ROBOTS: NOINDEX
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les deux abonnements sont répertoriés et actifs.
+ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 99bb732405d6420e430adad3ece7ea7f0c93579b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333301"
+ms.locfileid: "52345177"
 ---
 # <a name="change-plans-manually"></a>Modifier manuellement les plans
 
@@ -37,7 +37,7 @@ La meilleure façon de faire passer tous vos utilisateurs d’un plan à un autr
 
 - Si, lorsque vous sélectionnez **l’onglet** Mise à niveau, le plan que vous souhaitez n’est pas répertorié.
 
-- Si vous ne souhaitez pas mettre à niveau tous vos utilisateurs de la même manière. Certaines entreprises ont besoin de différents utilisateurs abonnés à différentes plans. Utilisez une modification manuelle pour ce faire.
+- Si vous ne souhaitez pas mettre à niveau tous vos utilisateurs de la même manière. Certaines entreprises ont besoin de différents utilisateurs abonnés à différentes plans. Pour ce faire, utilisez une modification manuelle.
 
 Pour continuer avec une modification manuelle, lisez [Étape 2 : Acheter un nouvel abonnement](#step-2-buy-a-new-subscription) dans cette rubrique.
 
@@ -50,7 +50,7 @@ Pour continuer avec une modification manuelle, lisez [Étape 2 : Acheter un nouv
 
 OR
 
-**Achetez un nouvel abonnement et des licences :** Suivez les étapes de la procédure d’achat d’un autre abonnement [Microsoft 365](../try-or-buy-microsoft-365.md) pour les entreprises pour acheter un nouvel abonnement.
+**Achetez un nouvel abonnement et des licences :** Suivez les étapes de [l’étape Acheter un autre Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md) pour acheter un nouvel abonnement.
 
 Veillez à acheter un abonnement pour la même organisation que les utilisateurs. Par exemple, vérifiez les adresses de messagerie des utilisateurs que vous souhaitez déplacer. Si leurs adresses de messagerie incluent contoso.com, vous devez acheter un \@ nouvel abonnement pour contoso.com.
 Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
@@ -59,7 +59,7 @@ Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 
-2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement dont vous souhaitez déplacer des utilisateurs et l’abonnement vers qui vous souhaitez déplacer des utilisateurs doivent être répertoriés ensemble. Si le nouvel abonnement n’est pas là lors de la première vérification, essayez à nouveau ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas répertorié ou n’est pas actif.](#the-new-subscription-isnt-listed-or-isnt-active)
+2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement dont vous souhaitez déplacer des utilisateurs et l’abonnement vers qui vous souhaitez déplacer des utilisateurs doivent être répertoriés ensemble. Si le nouvel abonnement n’existe pas lors de la première vérification, essayez à nouveau ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas répertorié ou n’est pas actif.](#the-new-subscription-isnt-listed-or-isnt-active)
 
 3. **Vérifier que vous avez suffisamment de licences pour chaque utilisateur** Chaque utilisateur a besoin d’une licence qui correspond à son abonnement. Ainsi, si vous souhaitez déplacer dix utilisateurs vers Microsoft 365 Business Premium, vous devez vous assurer que dix licences sont disponibles.
 
@@ -101,7 +101,7 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 5. Basculez vers la position **Sur** pour les produits que vous souhaitez affecter à ces utilisateurs.
 
     > [!TIP]
-    > - Pour limiter les services disponibles pour l’utilisateur, basculez vers la **position** d’arrêt pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur puisse accéder à tous les services disponibles à l’exception de Skype Entreprise Online, vous pouvez basculer le bouton bascule du service Skype Entreprise Online vers la **position** De.
+    > - Pour limiter les services disponibles pour l’utilisateur, basculez vers la **position** d’arrêt pour les services que vous souhaitez supprimer pour cet utilisateur. Par exemple, si vous souhaitez que l’utilisateur puisse accéder à tous les services disponibles à l’exception de Skype Entreprise Online, vous pouvez basculer le bouton bascule du service Skype Entreprise Online vers la **position** Hors service.
     > - Les attributions de licences précédentes sont alors supprimées pour les utilisateurs sélectionnés.
 
 6. En bas du volet **Remplacer les produits existants**, sélectionnez **Remplacer** \> **Fermer**.

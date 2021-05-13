@@ -1,5 +1,5 @@
 ---
-title: Référence de recherche de contenu
+title: Référence des fonctionnalités pour la recherche du contenu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: c345cf00bddba30cb543ad9682a2a332607d31fe
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314315"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332893"
 ---
-# <a name="content-search-reference"></a>Référence de recherche de contenu
+# <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
+
+Cet article décrit les fonctionnalités de la recherche du contenu.
 
 ## <a name="content-search-limits"></a>Limites de la recherche de contenu
 
@@ -71,6 +73,10 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
     
 - Si vous avez une requête de recherche qui contient des mots clés pour les caractères non anglais (tels que les caractères chinois) , vous pouvez cliquer sur l'icône **langue-pays/région**![requête pays/région dans la recherche de contenu ](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionner une valeur de code de culture dans le pays/région pour la recherche. La langue/région par défaut est neutre. Comment savoir si vous avez besoin de modifier le paramètre de langue d’une recherche de contenu ? Si vous êtes certain que les emplacements de contenu contiennent les caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut être à l’origine du problème. 
   
+## <a name="partially-indexed-items"></a>Éléments partiellement indexés
+
+- Les éléments partiellement indexés dans les boîtes aux lettres sont inclus dans les résultats de recherche estimés. Les éléments partiellement indexés de SharePoint et OneDrive ne sont pas inclus dans les résultats de recherche estimés. Si vous souhaitez en savoir plus, consultez [Éléments partiellement indexés dans eDiscovery](partially-indexed-items-in-content-search.md).
+
 ## <a name="searching-onedrive-accounts"></a>Recherche de comptes OneDrive
 
 - Pour recueillir la liste des URL des sites OneDrive au sein de votre organisation, voir [créer une liste de tous les emplacements OneDrive au sein de votre organisation](/onedrive/list-onedrive-urls). Ce script dans cet article crée un fichier texte qui contient une liste de tous les sites OneDrive. Pour exécuter ce script, vous devez installer et utiliser SharePoint Online Management Shell. N’oubliez pas d’ajouter l’URL du domaine MySite de votre organisation à chaque site OneDrive dans lequel vous souhaitez effectuer une recherche. Il s’agit du domaine où se trouve tout le contenu de votre OneDrive (par exemple,`https://contoso-my.sharepoint.com`). Voici un exemple d’URL pour le site d’un utilisateur OneDrive : `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
@@ -228,12 +234,6 @@ Si la licence Exchange Online (ou la licence Microsoft 365 entière) est supprim
 - Si vous utilisez la cmdlet **New-ComplianceSearch** pour créer une recherche de contenu et spécifiez une boîte aux lettres déconnectée comme emplacement de contenu Exchange où effectuer la recherche, la recherche de contenu ne renverra aucun résultat de la boîte aux lettres déconnectée.
 
 Si vous devez conserver les données d’une boîte aux lettres déconnectée pour y effectuer des recherches, vous devez placer la boîte aux lettres en conservation avant de supprimer la licence. Cela conserve les données et permet de continuer à effectuer des recherches dans la boîte aux lettres déconnectée jusqu’à ce que la conservation soit supprimée. Pour plus d’informations sur les conservations, voir [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
-
-## <a name="partially-indexed-items"></a>Éléments partiellement indexés
-
-- Comme indiqué précédemment, les éléments partiellement indexés dans les boîtes aux lettres sont inclus dans les résultats de recherche estimés. Les éléments partiellement indexés de SharePoint et OneDrive ne sont pas inclus dans les résultats de recherche estimés.
-
-- Si un élément partiellement non indexé correspond à la requête de la recherche (car d’autres propriétés de document ou de message répondent aux critères de recherche), il ne sera pas inclus dans l’estimation du nombre d’éléments non indexés. Si un élément partiellement indexé est exclu des critères de recherche, il n’est pas inclus dans le nombre estimé d’éléments non indexés. Si vous souhaitez en savoir plus, veuillez consulter l’article [Éléments partiellement indexés dans la recherche de contenu dans Office 365](partially-indexed-items-in-content-search.md).
 
 ## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Recherche de contenu dans un environnement SharePoint multigéographique
 

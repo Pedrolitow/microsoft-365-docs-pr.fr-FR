@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: 4b2c4551579d2609b66b5cd8fa8857f98b966a7d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297259"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332725"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -84,7 +84,7 @@ Avant d’activer cette fonctionnalité, assurez-vous de comprendre les conditio
 
 - Microsoft 365 Apps for enterprise :
     - **Windows** : Préversion : [Canal actuel (préversion)](https://office.com/insider)
-    - **macOS** : Préversion : [Canal bêta](https://office.com/insider)
+    - **macOS**: Aperçu : [Canal actuel (Aperçu)](https://office.com/insider)
     - **iOS** : pas encore pris en charge
     - **Android** : pas encore pris en charge
 

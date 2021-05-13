@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
-ms.translationtype: HT
+ms.openlocfilehash: 0bb75db5b6bb1f3a3b18033b5327f014748f6512
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113996"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464392"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -610,6 +610,7 @@ Ces emplacements prennent en charge les types d’informations sensibles EDM :
 - Microsoft Teams (conversations)
 - DLP pour SharePoint (fichiers)
 - Stratégies DLP de la sécurité de l’application Microsoft Cloud
+- Stratégies d’étiquetage automatique côté serveur
 
 Les types d’informations sensibles EDM pour les scénarios suivants sont en cours de développement, mais pas encore disponibles :
 
