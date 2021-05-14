@@ -21,7 +21,7 @@ search.appverid:
 description: Découvrez comment obtenir de l’aide ou une assistance technique pour les administrateurs dans Microsoft 365 Business Premium.
 ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
 ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52327185"
@@ -43,7 +43,7 @@ Commencez par [vérifier l’état d’intégrité actuel de vos services](../en
 
 Gagnez du temps en créant votre demande de service en ligne. Nous vous aiderons à trouver une solution, ou vous connecterons avec un spécialiste qui vous contactera par e-mail ou téléphone.
 
-1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si vous recevez un message qui indique que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action, vous n’êtes pas un administrateur. (Pour plus d’informations, voir Qui a des [autorisations](admin-center-overview.md#who-has-admin-permissions-in-my-business)d’administrateur dans mon entreprise ? .)
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si un message indiquant que vous n’êtes pas autorisé à accéder à cette page ou à effectuer cette action s’affiche, cela signifie que vous n’êtes pas un administrateur. (Pour plus d’informations, consultez [Au sein de mon entreprise, qui dispose d’autorisations d’administration ?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
 
 2. Sélectionnez le bouton **Vous avez besoin d’aide ?**
 
@@ -216,7 +216,7 @@ Le rôle d’assistance de 21Vianet consiste à :
 
 ## <a name="feature-availability"></a>Disponibilité des fonctionnalités
 
-Pour afficher la disponibilité des fonctionnalités dans Office 365 plans, voir [Office 365 Description du service.](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+Pour afficher la disponibilité des fonctionnalités entre les plans Office 365, consultez [Description du service de plateforme Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## <a name="follow-us-on-wechat"></a>Suivez-nous sur WeChat
 
