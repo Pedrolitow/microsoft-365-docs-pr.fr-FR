@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Découvrez comment acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 pour les entreprises.
+description: Découvrez comment acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/07/2021
-ms.openlocfilehash: a327149a780d2059cfc69068fc4b2122e549773c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331681"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537270"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences
 
@@ -34,9 +34,9 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 - Vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps.](../../admin/add-users/add-users.md)
-- Si vous avez acheté votre offre Microsoft 365 pour les entreprises ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
+- Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
 
 ## <a name="watch-buy-new-licenses"></a>Regarder : Acheter de nouvelles licences
 
@@ -54,21 +54,21 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 
-2. Sous **l’onglet** Produits, recherchez l’abonnement pour lequel vous souhaitez acheter ou supprimer des licences. Sélectionnez **Plus d’actions** (trois points), puis **sélectionnez Acheter des licences.** [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+2. Sous **l’onglet** Produits, recherchez l’abonnement pour lequel vous souhaitez acheter ou supprimer des licences. Sélectionnez les trois points (plus d’actions), puis **sélectionnez Acheter des licences.** [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. Si vous souhaitez réduire le nombre de licences, en haut du volet Acheter des **licences,** sélectionnez **Supprimer des licences.**
 4. Pour acheter ou supprimer  des licences, sous Nouvelle quantité dans la zone Nombre total de **licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement. Par exemple, si vous avez 100 licences et que vous souhaitez en ajouter cinq, entrez 105. Si vous souhaitez en supprimer cinq, entrez 95.
 5. Sélectionnez **Enregistrer**.
@@ -84,7 +84,7 @@ Ce tableau décrit les raisons pour lesquelles les boutons Acheter des **licence
 |---------|---------|---------|
 |Une vérification de solvabilité est en attente. |Si une vérification de solvabilité est en attente, vous ne pouvez pas acheter ou supprimer de licences tant que la vérification de solvabilité n’est pas terminée.  | Vérifiez ultérieurement si la vérification de solvabilité est terminée. Les vérifications de la solvabilité nécessitent en général deux jours ouvrés.<br/>Une fois la vérification de solvabilité terminée, vous devez voir les boutons Acheter **des licences** et **Supprimer des licences.** |
 |Vous avez activé l’abonnement à l’aide d’une clé de produit.| Si l’abonnement a été acheté et activé à l’aide d’une clé  de produit de 25 caractères, vous voyez le mot « Prépayé » dans la colonne Canal d’achat de la page Vos **produits.**  |Voir [Ajouter des licences à un abonnement payé pour l’utilisation d’une clé de produit.](add-licenses-using-product-key.md) |
-|Vous avez acheté votre abonnement par le biais d’un revendeur.| Vous voyez le mot « Revendeur  » dans la colonne Canal d’achat de la page **Vos produits.** | Si l’abonnement a été acheté via un partenaire fournisseur de solutions Cloud, contactez votre partenaire fournisseur de solutions Cloud pour acheter d’autres licences.        |
+|Vous avez acheté votre abonnement par le biais d’un revendeur.| Vous voyez le mot « Revendeur  » dans la colonne Canal d’achat de la page **Vos produits.** | Si l’abonnement a été acheté via un partenaire fournisseur de solutions Cloud (CSP), contactez votre partenaire CSP pour acheter d’autres licences.        |
 |Vous avez un abonnement d’essai. | Pour afficher vos abonnements d’essai, sélectionnez le bouton filtre, puis choisissez **Version d’essai.** | Tout d’abord, achetez votre abonnement d’essai, puis vous pouvez acheter d’autres licences.|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>Quand les nouvelles licences pourront-elles être assignées ?
@@ -108,4 +108,4 @@ Si vous avez réduit le nombre de licences pour votre abonnement parce qu’une 
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Comprendre les abonnements et les licences](subscriptions-and-licenses.md) (article)\
-[Essayer ou acheter un abonnement Microsoft 365](../try-or-buy-microsoft-365.md) (article)
+[Essayer ou acheter un abonnement Microsoft 365 abonnement](../try-or-buy-microsoft-365.md) (article)

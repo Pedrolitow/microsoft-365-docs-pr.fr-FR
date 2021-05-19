@@ -22,12 +22,12 @@ search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 keywords: comptes de facturation, informations sur l’organisation, factures
 ms.date: 05/04/2021
-ms.openlocfilehash: dc83db458d1d91942352795c9b67578e9f1a2fc2
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d173df1eac827eb835b8544f64858c28ccf0fb75
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331934"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537306"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 
@@ -144,7 +144,18 @@ Les instructions de paiement dépendent de votre mode de paiement et sont dispon
 
 L’acompte Azure est disponible comme mode de paiement uniquement pour les produits et services Azure éligibles.
 
-## <a name="need-help-contact-support"></a>Besoin d'aide ? Contacter l’assistance
+## <a name="related-content"></a>Contenu connexe
+
+[Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)
+
+[Suivre le solde de crédit Azure](/azure/billing/billing-mca-check-azure-credits-balance) du contrat client Microsoft (article)
+
+[Consulter votre facture de contrat client Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill) (article)
+
+[Commencer avec votre compte de facturation du contrat client Microsoft](/azure/billing/billing-mca-overview) (article)
+
+
+## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
 
 Si vous avez des questions ou si vous avez besoin d’aide relativement à vos crédits Azure, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">créer une demande de support avec support Azure</a>.
 

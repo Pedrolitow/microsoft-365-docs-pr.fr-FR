@@ -16,16 +16,16 @@ ms.collection:
 - Adm_O365_Setup
 search.appverid:
 - MET150
-description: Apprenez à vérifier votre domaine et à créer des enregistrements DNS auprès d’un fournisseur d'hébergement DNS pour Microsoft 365.
+description: Connectez un domaine d’un fournisseur d’hébergement DNS à Microsoft 365 en vérifiant votre domaine et en mettant à jour les enregistrements DNS dans le compte de votre bureau d’enregistrement.
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 06a5e7d081a16cd8d5aae28268b3aaf737981a43
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051041"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537558"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -129,7 +129,7 @@ Validez votre enregistrement SPF en utilisant l'un des [Outils de validation S
 
 SPF est conçu pour lutter contre l’usurpation d’adresse, mais il existe des techniques d’usurpation d’adresse contre lesquelles SPF ne peut rien faire. Pour vous protéger contre ces techniques, une fois que vous avez configuré votre SPF, vous devez également configurer DKIM et DMARC pour Microsoft 365. 
 
-Pour commencer, consultez la rubrique [Utilisation du DKIM pour valider les e-mails sortants envoyés à partir de votre domaine dans Microsoft 365](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) et [Utilisation du DMARC pour valider les e-mails dans Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
+Pour commencer, consultez la rubrique [Utilisation du DKIM pour valider les e-mails sortants envoyés à partir de votre domaine dans Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) et [Utilisation du DMARC pour valider les e-mails dans Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 ### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>Ajouter des enregistrements SRV pour les services de communications (Teams, Skype Entreprise)
 
@@ -166,3 +166,11 @@ Pour ajouter ces valeurs, créez une seule chaîne, en séparant les valeurs par
 
 - Exemple 1 : `100 1 443 sipdir.online.lync.com.`
 - Exemple 2 : `100 1 443 sipdir.online.lync.com`
+
+## <a name="related-content"></a>Contenu associé
+
+[Modifier les serveurs de noms de manière à configurer Microsoft 365 avec n'importe quel bureau d'enregistrement de domaines](change-nameservers-at-any-domain-registrar.md) (article)
+
+[Rechercher et corriger les problèmes, y compris de messagerie, après avoir ajouté votre domaine ou des enregistrements DNS](find-and-fix-issues.md) (article)
+
+[Gérer des domaines](index.yml) (page de lien)

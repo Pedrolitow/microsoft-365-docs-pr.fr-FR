@@ -1,5 +1,5 @@
 ---
-title: Autorisations dans le Centre de sécurité et de conformité Microsoft 365
+title: Permissions dans le centre de conformité et le centre de sécurité de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,12 +19,12 @@ description: En utilisant le Centre de sécurité Microsoft 365 ou le Centre de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cc0c69008d942e213f3a86e2852265969dd1971
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: cc2808ffe5d0acd3a5c3c3a6252503ee5e2cf94e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204363"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530825"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorisations dans le Centre de conformité Microsoft 365 et le Centre de sécurité Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "51204363"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Votre organisation doit gérer les scénarios de sécurité et de conformité qui s’étendent sur tous les services Microsoft 365. Vous aurez besoin de flexibilité requise pour accorder les autorisations d’administrateur aux bonnes personnes du groupe informatique de votre organisation. En utilisant le Centre de sécurité Microsoft 365 ou le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité ou à la conformité.
+Votre organisation doit gérer des scénarios de conformité et de sécurité qui couvrent tous les services de Microsoft 365. Vous aurez besoin de flexibilité requise pour accorder les autorisations d’administrateur aux bonnes personnes du groupe informatique de votre organisation. En utilisant le Centre de sécurité Microsoft 365 ou le Centre de conformité Microsoft 365, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité ou à la conformité.
 
 Une fois que l’administrateur général a attribué ces rôles d’administrateur, les administrateurs ont accès à des fonctionnalités et données qui couvrent tous les services dans Microsoft 365, tels que le Centre de sécurité Microsoft 365, le Centre de conformité Microsoft 365, Azure, Office 365 et Enterprise Mobility + Security.
 

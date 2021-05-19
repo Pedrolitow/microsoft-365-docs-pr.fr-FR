@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenez une vue d’Microsoft 365 centre de messages et son rôle dans la gestion des changements.
-ms.openlocfilehash: af65db32edd56b11adede0e4e690b3f69b07180e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244418"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537522"
 ---
 # <a name="message-center"></a>Centre de messages
 
@@ -58,7 +58,7 @@ Vous pouvez également utiliser [l’application Microsoft 365 admin](https://go
 Pour vous désabonner des e-mails du centre de messages, consultez [l’article Unsubscribe from Message center emails](#unsubscribe-from-message-center-emails) in this article.
 
   
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 |**Question**|**Réponse**|
 |:-----|:-----|
@@ -249,66 +249,21 @@ Vous voyez un message sur lequel une autre personne doit agir ? Vous pouvez par
 
 Vous devez faire un suivi avec un autre administrateur pour vous assurer qu'il est informé d'une modification et qu'il prend des mesures ? Vous pouvez générer un lien à partager par courrier électronique ou messagerie instantanée, par exemple, qui connectera l’utilisateur directement à ce message. La personne avec qui vous partagez le lien doit avoir accès au Centre de messages. Pour plus d'information, consultez [Rôles administratifs qui n'ont pas accès au centre de messages](message-center.md#admin-roles-that-dont-have-access-to-the-message-center).
 
-::: moniker range="o365-worldwide"
-
 1. Sélectionnez le message pour l'ouvrir.
 
 2. Sélectionnez **Copier le lien**.
 
 3. Utilisez Ctrl+V ou cliquez avec le bouton droit, puis sélectionnez **Coller** pour insérer le lien vers le document souhaité.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Sélectionnez le message pour l'ouvrir.
-
-2. Sélectionnez **Plus** \> **Obtenir un lien** à partir de la barre d’action.
-
-3. Autoriser la page web à accéder à votre Presse-papiers. Un lien direct est copié dans le Presse-papiers.
-
-4. Utilisez Ctrl+V ou cliquez avec le bouton droit, puis sélectionnez **Coller** pour insérer le lien.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Sélectionnez le message pour l'ouvrir.
-
-2. Sélectionnez **Copier le lien**.
-
-3. Utilisez Ctrl+V ou cliquez avec le bouton droit, puis sélectionnez **Coller** pour insérer le lien vers le document souhaité.
-
-::: moniker-end
 
 ## <a name="read-and-unread-states"></a>États Lu et Non lu
 
 Les messages non lus dans le Centre de messages s’affichent en gras. L’ouverture d’un message le marque comme lu. Vous pouvez marquer un message comme non lu.
 
-::: moniker range="o365-worldwide"
 
 - Dans la page principale du Centre de messages, sélectionnez les points de suspension **Autres options** à côté d’un message, puis sélectionnez **Marquer comme non lu**.
 
 Vous pouvez également ouvrir un message et le marquer comme non lu dans le panneau d’informations.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Sélectionnez le message pour l'ouvrir.
-
-2. Sélectionnez **Plus** \> **Marquer comme non lu**.
-
-3. Fermez le message.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- Dans la page principale du Centre de messages, sélectionnez les points de suspension **Autres options** à côté d’un message, puis sélectionnez **Marquer comme non lu**.
-
-::: moniker-end
-
 ## <a name="archive-and-restore"></a>Archiver et restaurer
 
 Si vous voyez un message qui ne vous concerne pas ou si vous avez peut-être déjà fait quelque chose, vous pouvez archiver le message pour le supprimer de la boîte de réception. L’affichage que vous voyez dans le Centre de messages est spécifique à votre compte d’utilisateur, aussi l’archivage à partir de votre affichage n’affecte pas les autres administrateurs. Il existe deux façons d’archiver un message.

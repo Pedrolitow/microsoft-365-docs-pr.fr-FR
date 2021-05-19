@@ -1,5 +1,5 @@
 ---
-title: Rechercher des tâches ou de la documentation dans le Centre d’administration Microsoft 365
+title: Rechercher des tâches ou de la documentation dans le Centre Microsoft 365'administration
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment utiliser la fonctionnalité de recherche dans le Centre d’administration pour obtenir des résultats meilleurs et plus rapides.
-ms.openlocfilehash: 4faf761c1bb478dbdd578f3acec4fb108ca7269a
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 87e7fb78e9d7ce535f481151515791c20c115836
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50054111"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537510"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Effectuer une recherche dans le Centre d’administration Microsoft 365
 
-En tant qu’administrateur d’une organisation Microsoft 365, vous pouvez utiliser la recherche pour rechercher des utilisateurs, effectuer des actions, accéder à différents paramètres et lire la documentation. Avec les nouvelles fonctionnalités de recherche, la vitesse de recherche a été améliorée et vous pouvez désormais effectuer des recherches à partir de chaque page du Centre d’administration. La zone de recherche a été déplacée vers la zone bannière en haut du centre d’administration. Vous pouvez utiliser le raccourci **Alt+S pour** utiliser la recherche à partir de n’importe quelle page.
+En tant qu’administrateur d’Microsoft 365 organisation, vous pouvez utiliser la recherche pour rechercher des utilisateurs, effectuer des actions, accéder à différents paramètres et lire la documentation. Avec les nouvelles fonctionnalités de recherche, la vitesse de recherche a été améliorée et vous pouvez désormais effectuer des recherches à partir de chaque page du Centre d’administration. La zone de recherche a été déplacée vers la zone bannière en haut du centre d’administration. Vous pouvez utiliser le raccourci **Alt+S pour** utiliser la recherche à partir de n’importe quelle page.
 
-:::image type="content" source="../../media/search-bar.png" alt-text="Capture d’écran : Barre de recherche dans le Centre d’administration Microsoft 365":::
+:::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
 Les résultats de la recherche sont organisés en différentes catégories. La plupart des catégories sont des éléments du Centre d’administration. Par exemple, les utilisateurs, les groupes, les boîtes aux lettres partagées ou les domaines. D’autres catégories indiquent les endroits où vous pouvez naviguer, les actions que vous pouvez prendre ou les paramètres de niveau application que vous pouvez modifier. Il existe également une catégorie liée à la documentation.
 
@@ -36,7 +36,7 @@ Les sections suivantes décrivent les différentes zones et catégories du Centr
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être administrateur pour effectuer des recherches dans le Centre d’administration. Les résultats de la recherche sont limitées aux autorisations d’administrateur dont dispose l’utilisateur connecté. Par exemple, si l’administrateur SharePoint ne voit pas une zone ou une catégorie dans le Centre d’administration, il ne la verra pas dans la recherche.
+Vous devez être administrateur pour effectuer des recherches dans le Centre d’administration. Les résultats de la recherche sont limitées aux autorisations d’administrateur dont dispose l’utilisateur connecté. Par exemple, si SharePoint administrateur ne voit pas de zone ou de catégorie dans le Centre d’administration, il ne la verra pas dans la recherche.
 
 ## <a name="users"></a>Utilisateurs
 
@@ -44,22 +44,22 @@ Les utilisateurs peuvent être trouvés par nom d’affichage, nom, prénom, nom
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Capture d’écran : rechercher un utilisateur":::
 
-Si vous sélectionnez le menu « Autres actions » en plus de leur nom, vous pouvez réinitialiser leur mot de passe.
+Si vous sélectionnez le menu à trois points (plus d’actions) à côté de leur nom, vous pouvez réinitialiser leur mot de passe.
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot: User search with the option to reset password from search result":::
 
-**Conseils pour améliorer les résultats de la recherche utilisateur**
+**Astuces pour améliorer les résultats de recherche des utilisateurs**
 
-- Assurez-vous d’épeler correctement les noms des utilisateurs lorsque les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionnent, mais une faute d’orthographe, telle que Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
+- Assurez-vous d’épeler correctement les noms des utilisateurs car les recherches des utilisateurs correspondent exactement aux propriétés mentionnées précédemment. Par exemple, dans l’exemple ci-dessus, Ils ou Malz fonctionneront, mais une faute d’orthographe, comme Jostin au lieu de Celle-ci, ne permettra pas de trouver cet utilisateur.
 - Pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.
 
 ## <a name="groups"></a>Groupes
 
 Vous pouvez rechercher des groupes par nom de groupe ou adresse de messagerie de groupe. Vous pouvez sélectionner le groupe et le modifier à partir de n’importe quelle page.
 
-:::image type="content" source="../../media/search-for-groups-mac.png" alt-text="Capture d’écran : résultats de recherche pour les groupes dans le Centre d’administration":::
+:::image type="content" source="../../media/search-for-groups-mac.png" alt-text="Screenshot: Search results for groups in the admin center":::
 
-**Conseils pour améliorer les résultats de recherche de groupe**
+**Astuces pour améliorer les résultats de recherche de groupe**
 
 Assurez-vous d’épeler correctement le nom du groupe.
 
@@ -79,13 +79,13 @@ Les résultats vous offrent la possibilité d’accéder rapidement à une page 
 
 Recherchez les paramètres de niveau application pris en charge liés à votre organisation, les services à qui vous vous abonnez, ainsi que les paramètres de sécurité et de confidentialité.
 
-:::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Screenshot: Search results showing settings in the admin center":::
+:::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Capture d’écran : résultats de recherche affichant les paramètres dans le Centre d’administration":::
 
 ## <a name="domain"></a>Domaine
 
 Vous trouverez des liens rapides vers vos domaines, puis le lien vous permettra d’obtenir la page de présentation de ce domaine.
 
-:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Résultats de recherche montrant les domaines du Centre d’administration":::
+:::image type="content" source="../../media/search-for-domains-mac.png" alt-text="Résultats de la recherche affichant les domaines du Centre d’administration":::
 
 ## <a name="documentation"></a>Documentation
 

@@ -1,23 +1,24 @@
 ---
 title: Informations de paiement pour l’Albanie
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dce8937e620a95779d7165a7599ddc221555d6c3
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6e17e6c69db84cf7ca91deb4b83dc2862996b70c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274339"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537258"
 ---
 # <a name="payment-information-for-albania"></a>Informations de paiement pour l’Albanie
 
@@ -31,4 +32,4 @@ N’hésitez pas à payer en USD uniquement et à référencer vos numéro(s) de
 **Code SWIFT :** CITIGB2L  
 **IBAN :** GB95CITI18500812510049  
 **Numéro de compte :** 12510049  
-**Nom du compte :** MICROSOFT  
+**Nom du compte :** MICROSOFT

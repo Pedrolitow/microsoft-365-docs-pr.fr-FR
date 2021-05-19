@@ -1,23 +1,24 @@
 ---
 title: Informations de paiement pour Le Bahamas
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 94d6ab14a58a4635a6881aac2cc4b32a6e10a972
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 5923d572f73b188d8ef2b706db7f61afe9421061
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274231"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537174"
 ---
 # <a name="payment-information-for-bahamas"></a>Informations de paiement pour Le Bahamas
 
@@ -31,4 +32,4 @@ N’hésitez pas à payer en USD uniquement et à référencer vos numéro(s) de
 **Branche :** Dallas  
 **Code SWIFT :** BOFAUS3N  
 **Numéro de compte :** 4426587954  
-**Nom du compte :** Microsoft  
+**Nom du compte :** Microsoft

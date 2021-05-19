@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment fermer votre compte auprès de Microsoft.
 ms.date: 04/02/2021
-ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331765"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537294"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
@@ -35,7 +35,7 @@ Lorsque vous fermez votre compte auprès de Microsoft, toutes les informations r
 
 Avant de commencer ce processus, veillez à sauvegarder les données que vous voulez conserver.
 
-Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="step-1-delete-users"></a>Étape 1 : Supprimer des utilisateurs
 
@@ -52,7 +52,7 @@ Si votre organisation utilise Active Directory qui se synchronise avec Microsoft
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Étape 2 : Annuler tous les abonnements actifs
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sous **l’onglet** Produits, recherchez un abonnement actif. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
+2. Sous **l’onglet** Produits, recherchez un abonnement actif. Sélectionnez les trois points (plus d’actions), puis **sélectionnez Annuler l’abonnement.**
 3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
 4. Sélectionnez **Enregistrer**.
 5. Répétez les étapes 1 à 4 pour annuler tous les abonnements actifs.

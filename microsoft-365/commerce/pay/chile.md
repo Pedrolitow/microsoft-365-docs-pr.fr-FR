@@ -1,23 +1,24 @@
 ---
 title: Informations de paiement pour le Chili
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 65e1c312a04eceaca90503501f2af384852d5be9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c0818a141b493be7f10eb29a6710c0d003286078
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274027"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536969"
 ---
 # <a name="payment-information-for-chile"></a>Informations de paiement pour le Chili
 
@@ -31,4 +32,4 @@ Veuillez payer en USD uniquement. Pour que le paiement soit effectué, le nom de
 **Branche :** Dallas  
 **Code SWIFT :** BOFAUS3N  
 **Numéro de compte :** 4426587954  
-**Nom du compte :** Microsoft  
+**Nom du compte :** Microsoft

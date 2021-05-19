@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Business Basic.
-ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 51a83d4cc230fa4bdb78bba71c9c7193a36fd391
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244466"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535721"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Configurer Microsoft 365 Business Basic
 
@@ -53,13 +53,13 @@ Lorsque vous achetez Microsoft 365 Business Basic, vous avez la possibilité d�
 
 ::: moniker range="o365-germany"
 
-1. Si vous utilisez Office 365 Allemagne, accédez à ce [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=848041).
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Si vous utilisez Office 365 géré par 21Vianet, accédez à ce [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 
@@ -68,7 +68,7 @@ Lorsque vous achetez Microsoft 365 Business Basic, vous avez la possibilité d�
 3. Dans l’étape **ajouter un domaine**, entrez le nom de domaine que vous voulez utiliser (par exemple, contoso.com).
 
     > [!IMPORTANT]
-    > Si vous avez acheté un domaine pendant l’inscription, vous ne verrez pas l’étape **Ajouter un domaine** ici. Accédez à [Ajouter des utilisateurs](#add-users-and-assign-licenses) à la place.
+    > Si vous avez acheté un domaine pendant l'inscription, vous ne verrez pas l'étape **Ajouter un domaine** ici. Allez à [Ajouter](#add-users-and-assign-licenses) des utilisateurs à la place.
 
     
 4. Suivez les étapes de l’Assistant pour [Créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes le propriétaire du domaine. Si vous savez qu’il s’agit de votre hôte de domaine, consultez également les [Instructions propres à l’hôte](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
@@ -99,7 +99,7 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
 1. L’Assistant Configuration détecte généralement votre bureau d’enregistrement et vous fournit un lien vers des instructions détaillées vous permettant de mettre à jour vos enregistrements NS sur le site web du bureau d’enregistrement. Si ce n’est pas le cas,[Modifier les serveurs de noms de manière à configurer Office 365 avec n'importe quel bureau d'enregistrement de domaines](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - Si vous avez des enregistrements DNS existants (par exemple, un site web existant), mais que votre hôte DNS est activé pour [connexion de domaine](/office365/admin/get-help-with-domains/domain-connect), sélectionnez **Ajouter des enregistrements pour moi**. Sur la page **sélectionnez votre services en ligne**, acceptez toutes les valeurs par défaut, puis sélectionnez **Suivant**, puis sélectionnez **Autoriser** sur la page de votre hôte DNS.
-    - Si vous avez des enregistrements DNS existants avec d’autres hôtes DNS (non activé pour la connexion de domaine), vous pouvez gérer vos propres enregistrements DNS pour vous assurer que les services existants restent connectés. Pour plus d’informations, consultez [notions de base du domaine](/office365/admin/get-help-with-domains/dns-basics).
+    - Si vous avez des enregistrements DNS existants avec d'autres hôtes DNS (non activés pour la connexion de domaine), vous devrez gérer vos propres enregistrements DNS pour vous assurer que les services existants restent connectés. [Voir les bases du domaine pour plus d'informations](/office365/admin/get-help-with-domains/dns-basics).
 
 2. Suivez les étapes de l’Assistant, et la messagerie électronique et d’autres services sont configurés pour vous.
 

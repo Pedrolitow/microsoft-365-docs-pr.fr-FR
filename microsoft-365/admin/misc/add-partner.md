@@ -20,32 +20,32 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Découvrez comment ajouter un partenaire conseiller en abonnement en tant que partenaire de registre au moment de l’achat de Microsoft 365, modifier le partenaire ou supprimer un partenaire d’un abonnement.
-ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment ajouter un partenaire conseiller en abonnement en tant que partenaire de registre au moment de l’achat Microsoft 365, modifier le partenaire ou supprimer un partenaire d’un abonnement.
+ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579229"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537474"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Ajouter, modifier ou supprimer un partenaire conseiller en abonnement
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Cet article s’applique à Office 365 géré par 21Vianet en Chine. Il est pour les organisations qui souhaitent autoriser un partenaire 21Vianet à administrer leur abonnement Office 365 pour eux.
+> Cet article s’applique Office 365 géré par 21Vianet en Chine. Il est pour les organisations qui souhaitent autoriser un partenaire 21Vianet à administrer leur abonnement Office 365 pour eux.
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que partenaire de registre lorsque vous achetez Microsoft 365 ou à un autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web de Microsoft Pinpoint.](https://pinpoint.microsoft.com)
+[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que partenaire de registre lorsque vous achetez Microsoft 365 ou à un autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web De Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-Le partenaire que vous choisissez dépend des services Microsoft que vous utilisez et du pays ou de la région où vous utiliserez ces services. Si vous ajoutez un partenaire, ou modifiez le partenaire pour votre abonnement, vous devez tout d'abord obtenir l'ID partenaire Microsoft de ce partenaire en lui demandant.
+Le partenaire que vous choisissez dépend du services Microsoft que vous utilisez et du pays ou de la région où vous utiliserez ces services. Si vous ajoutez un partenaire, ou modifiez le partenaire pour votre abonnement, vous devez tout d'abord obtenir l'ID partenaire Microsoft de ce partenaire en lui demandant.
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ Le partenaire que vous choisissez dépend des services Office 365 que vous utili
 
 ::: moniker range="o365-21vianet"
 
-En tant qu’administrateur d’Office 365, vous pouvez créer ou modifier des utilisateurs, réinitialiser les mots de passe des utilisateurs, gérer les licences utilisateur, gérer les domaines et attribuer des autorisations d’administrateur à d’autres utilisateurs de votre organisation, entre autres choses. Toutefois, si vous souhaitez qu’une autre personne puisse effectuer ces tâches administratives, vous pouvez déléguer ce rôle à un partenaire autorisé de 21Vianet en créant une relation de partenaire.
+En tant qu’administrateur de Office 365, vous pouvez créer ou modifier des utilisateurs, réinitialiser les mots de passe des utilisateurs, gérer les licences utilisateur, gérer les domaines et attribuer des autorisations d’administrateur à d’autres utilisateurs de votre organisation, entre autres choses. Toutefois, si vous souhaitez qu’une autre personne puisse effectuer ces tâches administratives, vous pouvez déléguer ce rôle à un partenaire autorisé de 21Vianet en créant une relation de partenaire.
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou obtenir une corres
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 2. Si vous avez plusieurs abonnements, sélectionnez l’abonnement à modifier.
-3. À droite, sous le coût de l’abonnement, choisissez **Plus d’actions** > **Ajouter un partenaire de registre**.
+3. À droite, sous le coût de l’abonnement, sélectionnez les trois points (autres actions) > ajouter un **partenaire de l’enregistrement**.
 4. Tapez l'ID partenaire Microsoft du partenaire que vous ajoutez, puis sélectionnez **Vérifier l'ID** et **Envoyer**. Vous pouvez obtenir cet ID auprès du partenaire.
 5. L'ID de partenaire apparaît sur la page **Abonnements**.
 
@@ -160,7 +160,7 @@ Pour accepter cette offre
 
 ## <a name="view-your-partner-relationships"></a>Afficher vos relations de partenaires
 
-- Dans le Centre d’administration, allez à la page **Relations des partenaires paramètres.**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank"></a> Vos partenaires sont répertoriés sur cette page.
+- Dans le Centre d’administration, allez à la page **Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relations de partenaires.</a> Vos partenaires sont répertoriés sur cette page.
 
   Si vous n’avez pas de partenaire, vous verrez un message qui indique « Il n’y a rien ici ».
   
@@ -206,7 +206,7 @@ Si vous supprimez une relation  de revendeur, l’option Supprimer est grisée e
 
 Vous ne pouvez pas supprimer une relation de revendeur vous-même.
   
-Si vous supprimez une relation  de revendeur, l’option Supprimer est grisée et vous devez demander à votre partenaire revendeur de suivre les instructions suivantes : Supprimer une relation de revendeur avec le [partenaire.](/partner-center/remove-a-relationship)
+Si vous supprimez une relation  de revendeur, l’option Supprimer est grisée et vous devez demander à votre partenaire revendeur de suivre les instructions suivantes : Supprimez une relation de revendeur avec le [partenaire.](/partner-center/remove-a-relationship)
   
 ::: moniker-end
 
@@ -220,4 +220,4 @@ Vous devez demander à votre partenaire revendeur de suivre les instructions sui
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Rechercher votre partenaire ou revendeur Microsoft 365](../manage/find-your-partner-or-reseller.md)
+[Rechercher votre Microsoft 365 partenaire ou revendeur](../manage/find-your-partner-or-reseller.md)

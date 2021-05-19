@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: Découvrez les modes de paiement disponibles pour régler votre abonnement Microsoft 365 for business.
+description: Utilisez une carte de crédit ou de débit ou un compte bancaire pour payer votre abonnement à Microsoft 365 pour entreprise. Dans certains cas, vous pouvez payer par facture.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 05/04/2021
-ms.openlocfilehash: 282e8106e75a94b3c9693a2aba9bfa2edf72f6ed
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: eb1e8ed9e932b09a82dc8529f933a1926868319d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331969"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535697"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Comment régler un abonnement
 

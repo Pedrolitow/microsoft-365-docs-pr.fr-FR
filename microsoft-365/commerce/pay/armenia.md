@@ -1,25 +1,26 @@
 ---
-title: Informations de paiement pour l’Arménie
-author: cmcatee-MSFT
+title: Informations de paiement pour l’Azerbaïdjan
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4ec6de2cf44ac9243aa43075945a078bc050b00a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 19ccd5c0dfb4581a7d310e6dabebba1746694870
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274291"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537234"
 ---
-# <a name="payment-information-for-armenia"></a>Informations de paiement pour l’Arménie
+# <a name="payment-information-for-armenia"></a>Informations de paiement pour l’Azerbaïdjan
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
@@ -31,4 +32,4 @@ N’hésitez pas à payer en USD uniquement et à référencer vos numéro(s) de
 **Code SWIFT :** CITIGB2L  
 **Numéro IBAN :** GB95CITI18500812510049  
 **Numéro de compte :** 12510049  
-**Nom du compte :** Microsoft  
+**Nom du compte :** Microsoft

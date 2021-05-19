@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Découvrez comment gérer les modes de paiement dans le centre d'administration Microsoft 365.
+description: Achetez des produits ou services professionnels auprès de Microsoft en utilisant une méthode de paiement existante ou en ajoutant une nouvelle dans le centre d'administration de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: b6fe62a70d478a98eb13a17fafb4320afc6b5952
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332005"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537318"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 
@@ -87,7 +87,7 @@ Vous pouvez changer le mode de paiement d’un seul abonnement.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Dans l’onglet **Produits**, trouvez l’abonnement pour lequel vous souhaitez utiliser un mode de paiement secondaire.
-3. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Remplacer le mode de paiement**.
+3. Sélectionnez les trois points (plus d'actions), puis sélectionnez **Remplacer le mode de paiement**.
 4. Dans le volet **Remplacer le mode de paiement**, dans la liste déroulante, choisissez un mode de paiement secondaire ou ajoutez un mode de paiement.
 5. Pour ajouter un mode de paiement, entrez les informations de la carte ou du compte bancaire, puis sélectionnez **Enregistrer**.
 6. Vérifiez l’exactitude du mode de paiement sélectionné, puis sélectionnez **Remplacer**.

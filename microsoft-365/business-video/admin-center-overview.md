@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: En savoir plus sur Microsoft 365 centre d’administration.
-ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470423"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537390"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
@@ -47,11 +47,11 @@ Si vous avez l’autorisation d’accéder au Centre d’administration, l’adm
 
 En haut du Centre d’administration, examinez les principales actions à votre place. Vous pouvez voir différentes actions en fonction de ce que vous avez déjà installé, telles que la création de comptes, l’utilisation de Teams, la configuration de la messagerie électronique et l’installation Office applications. 
  
-Sous **l’onglet** Utilisateurs de votre organisation figure la liste des personnes qui peuvent accéder aux applications et services, ajouter de nouveaux utilisateurs, réinitialiser des mots de passe ou utiliser le menu **Plus d’actions.**  Sélectionnez une personne pour afficher ou modifier ses informations et paramètres.  
+Sous **l’onglet** Utilisateurs de votre organisation figure la liste des personnes qui peuvent accéder aux applications et services, ajouter de nouveaux utilisateurs, réinitialiser des mots de passe ou utiliser le menu à trois points (autres actions).  Sélectionnez une personne pour afficher ou modifier ses informations et paramètres.  
 
-Sous **l Teams,** créez une équipe ou gérez des équipes existantes. Vous pouvez gérer les membres d’une équipe ou sélectionner d’autres **actions** pour modifier d’Teams paramètres. 
+Sous **l Teams,** créez une équipe ou gérez des équipes existantes. Vous pouvez gérer les membres d’une équipe ou sélectionner les trois points (autres actions) pour modifier d’autres Teams paramètres. 
 
-Sous **l’onglet Abonnements,** ajoutez d’autres produits, ajoutez des licences ou utilisez le menu Plus **d’actions** pour modifier les licences ou le mode de paiement.
+Sous **l’onglet Abonnements,** ajoutez d’autres produits, ajoutez des licences ou utilisez le menu à trois points (autres actions) pour modifier les licences ou le mode de paiement.
 
 Sous **l’onglet** Découvrir, parcourez des vidéos et des articles sur le Centre d’administration et d’Microsoft 365 fonctionnalités. Pour explorer les fonctionnalités plus avancées du Centre d’administration, ouvrez le menu de navigation et développez les titres pour en savoir plus. Sélectionnez **Afficher tout** pour afficher tout le menu de navigation ou utilisez la barre de recherche pour trouver rapidement ce que vous recherchez.
 
@@ -63,11 +63,11 @@ Si vous avez besoin d’aide, sélectionnez **Aide & support technique.** Recher
 
 Le Microsoft 365 d’administration est l’endroit où vous gérez votre entreprise dans le cloud. Vous pouvez effectuer des tâches telles que l’ajout et la suppression d’utilisateurs, la modification de licences et la réinitialisation des mots de passe. 
 
-Les espaces de travail spécialisés, tels que la sécurité ou la gestion des appareils, permettent un contrôle plus granulaire. Pour plus d’informations sur la façon dont les centres d’administration fonctionnent ensemble, voir Qu’en est-il des types spécifiques de [rôles informatiques](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) et d’autres espaces de travail tels que la sécurité, la gestion des appareils ou Exchange ? dans cet article.
+Les espaces de travail spécialisés, tels que la sécurité ou la gestion des appareils, permettent un contrôle plus granulaire. Pour plus d’informations sur la façon dont les centres d’administration fonctionnent ensemble, voir Qu’en est-il des types spécifiques de [rôles informatiques](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) et d’autres espaces de travail tels que sécurité, gestion des appareils ou Exchange ? dans cet article.
 
 Pour obtenir le Centre d’administration Microsoft 365, admin.microsoft.com ou, si vous êtes déjà inscrit, sélectionnez le lanceur d’applications, puis choisissez **Administrateur.** [](https://admin.microsoft.com)
 
-Dans la page d’accueil, vous pouvez créer des cartes pour les tâches que vous effectuez fréquemment. Pour ajouter une nouvelle carte, sélectionnez Ajouter une **carte,** puis sélectionnez le signe plus à côté de la carte que vous souhaitez ajouter. Lorsque vous avez terminé, fermez la fenêtre. Vous pouvez réorganiser les cartes en les sélectionnant, puis en les faisant glisser vers l’endroit voulu. Pour supprimer une carte, sélectionnez **Plus d’actions,** puis choisissez **Supprimer.**
+Dans la page d’accueil, vous pouvez créer des cartes pour les tâches que vous effectuez fréquemment. Pour ajouter une nouvelle carte, sélectionnez Ajouter une **carte,** puis sélectionnez le signe plus à côté de la carte que vous souhaitez ajouter. Lorsque vous avez terminé, fermez la fenêtre. Vous pouvez réorganiser les cartes en les sélectionnant, puis en les faisant glisser vers l’endroit voulu. Pour supprimer une carte, sélectionnez les trois points (autres actions), puis choisissez **Supprimer**.
 
 Pour afficher d’autres tâches d’administration, développez le menu de navigation. Vous trouverez des paramètres de configuration avancés dans les centres d’administration supplémentaires en bas.
 
@@ -85,7 +85,7 @@ Pour plus d’informations sur la gestion de la facturation, des mots de passe, 
 
 ## <a name="who-is-an-admin"></a>Qui est un administrateur ? 
 
-Par défaut, la personne qui s’est abonnée et achète un abonnement Microsoft 365 entreprise obtient les autorisations d’administrateur. Cette personne peut attribuer des autorisations d’administrateur à d’autres personnes pour les aider à gérer Microsoft 365 pour leur organisation.
+Par défaut, la personne qui s’est abonnée et achète un abonnement Microsoft 365 entreprise obtient les autorisations d’administrateur. Cette personne peut attribuer des autorisations d’administrateur à d’autres personnes pour les aider à gérer les Microsoft 365 de leur organisation.
 
 Si vous recevez le message «**Vous n’êtes** pas autorisé à accéder à cette page ou à effectuer cette action », vous n’êtes pas un administrateur.
   
@@ -103,7 +103,7 @@ Lorsque vous avez besoin de votre administrateur pour réinitialiser votre mot d
 Si vous ne savez pas à qui contacter votre entreprise ou votre établissement scolaire pour obtenir de l’aide, essayez de demander à la personne qui vous a donné votre compte d’utilisateur et votre mot de passe.
 
 > [!NOTE]
-> Les administrateurs de publication ciblée ont d’abord accès aux nouvelles fonctionnalités. De nouvelles fonctionnalités sont ensuite lancées pour tous les administrateurs. Cela signifie que vous ne voyez peut-être pas le Centre d’administration ou qu’il peut ressembler à ce qui est décrit dans les articles d’aide. Pour être parmi les premiers à voir les nouvelles fonctionnalités, voir Participer au Centre d’administration, ci-dessous. 
+> Les administrateurs de publication ciblée ont d’abord accès aux nouvelles fonctionnalités. De nouvelles fonctionnalités sont ensuite lancées pour tous les administrateurs. Cela signifie que vous ne voyez peut-être pas le Centre d’administration ou que son apparence peut être différente de celle décrite dans les articles d’aide. Pour être parmi les premiers à voir les nouvelles fonctionnalités, voir Participer au Centre d’administration, ci-dessous. 
 
 ## <a name="turn-on-targeted-release"></a>Activer la version ciblée
 
@@ -111,13 +111,13 @@ Si vous ne savez pas à qui contacter votre entreprise ou votre établissement s
 
 2. Go to the **Release preferences** card, and then select **Edit**. 
     
-3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez la version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
+3. Sélectionnez **la version ciblée pour tout le** monde ou la version ciblée pour les **utilisateurs sélectionnés.** Si vous choisissez La version ciblée pour les utilisateurs sélectionnés, veillez à ajouter votre compte d’administrateur (et tous les autres administrateurs de votre organisation qui souhaitent participer) à la liste des utilisateurs sélectionnés.
     
 ## <a name="admin-center-feedback"></a>Commentaires du Centre d’administration
 
-Dans le Centre d’administration, vous pouvez faire  part à Microsoft de vos commentaires sur votre expérience en sélectionnant Donner des commentaires juste en dessous du bouton Besoin d’aide **?** en bas de chaque page. Dites-nous ce que vous aimez et ce que nous pourrions faire de mieux. En outre, il se peut que vous receviez des enquêtes de temps en temps vous demandant des informations sur vos impressions globales ou sur une expérience particulière qui vient d’être publiée. Vous pouvez également nous faire part de vos commentaires à la fin de cet article en sélectionnant **Ces informations vous ont-ils été utiles ?**
+Dans le Centre d’administration, vous pouvez faire  part à Microsoft de vos commentaires sur votre expérience en sélectionnant Donner des commentaires juste en dessous du bouton Besoin d’aide **?** en bas de chaque page. Dites-nous ce que vous aimez et ce que nous pourrions faire de mieux. En outre, il se peut que vous receviez des enquêtes dans des fenêtres de temps à autre vous demandant des informations sur vos impressions globales ou sur une expérience particulière qui vient d’être publiée. Vous pouvez également nous faire part de vos commentaires à la fin de cet article en sélectionnant **Ces informations vous ont-ils été utiles ?**
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 Vos questions ne sont-elles pas posées ici ? Go to the **Feedback** section at the bottom of this page and ask your question. 
   
@@ -131,9 +131,9 @@ Microsoft 365 est une solution complète et intelligente qui inclut des Office 3
     
 Pour plus d’informations, voir [Try or buy a Microsoft 365 subscription](../commerce/try-or-buy-microsoft-365.md).
 
-### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>J’ai trouvé un bogue ou je souhaite demander une amélioration des fonctionnalités. Comment faire savoir à Microsoft ?
+### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>J’ai trouvé un bogue ou je souhaite demander une amélioration des fonctionnalités. Comment puis-je le faire savoir à Microsoft ?
 
-Nous sommes très aimés de votre part ! Le signalement des bogues et les commentaires de partage nous aident à améliorer Microsoft 365'administration centrale. Pour nous faire  part de vos commentaires, sélectionnez le bouton Commentaires en bas de la page et utilisez le formulaire pour nous faire part de vos idées. Cochez la case et confirmez votre adresse e-mail si vous souhaitez que quelqu’un de l’équipe Microsoft 365 centre d’administration suive vos commentaires. Nous ne pouvons pas nous engageons à suivre chaque commentaire, mais nous allons essayer ! 
+Nous sommes très aimés de votre part ! Le signalement des bogues et les commentaires de partage nous aident à améliorer Microsoft 365'administration centrale. Pour nous faire  part de vos commentaires, sélectionnez le bouton Commentaires en bas de la page et utilisez le formulaire pour nous faire part de vos idées. Cochez la case et confirmez votre adresse de messagerie si vous souhaitez que quelqu’un de l’équipe Microsoft 365 centre d’administration suive vos commentaires. Nous ne pouvons pas nous engageons à suivre chaque commentaire, mais nous allons essayer ! 
   
 Vous pouvez également nous faire part de vos commentaires en dehors du Centre d’administration sur notre forum UserVoice. Vous pouvez utiliser cette page pour faire des suggestions de fonctionnalités qui peuvent être voteres par d’autres utilisateurs du forum : forum UserVoice pour le nouveau centre [d’administration.](https://go.microsoft.com/fwlink/?linkid=2024994)
 

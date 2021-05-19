@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Découvrez comment annuler un abonnement payant ou une version d’évaluation de Microsoft 365 for business.
+description: Si vous avez moins de 25 licences d'utilisateur, vous pouvez annuler votre version d'essai ou votre abonnement payant de Microsoft 365 pour entreprise dans le centre d'administration.
 ms.date: 04/08/2021
-ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333313"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536117"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
@@ -46,7 +46,7 @@ Si vous avez ajouté votre propre nom de domaine pour l’utiliser avec votre ab
 ::: moniker range="o365-worldwide"
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
+2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
 3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
 4. Sélectionnez **Enregistrer**.
 
@@ -69,7 +69,7 @@ Votre abonnement présente désormais l’état **Désactivé** et propose des f
 ::: moniker-end
 
 2. Sélectionnez l’onglet **Produits**.
-3. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
+3. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
 4. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
 5. Sélectionnez **Enregistrer**.
 

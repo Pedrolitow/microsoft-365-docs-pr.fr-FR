@@ -1,23 +1,24 @@
 ---
 title: Informations de paiement pour la Croatie
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7cd485e8263f96fd5c01cce50803d6fa9ded5e57
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3b9e7c8eefe303ef350f5db6b3023b6eec904d97
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273967"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536909"
 ---
 # <a name="payment-information-for-croatia"></a>Informations de paiement pour la Croatie
 
@@ -32,4 +33,4 @@ Veuillez payer en EUR uniquement et référencer les numéro(s) de facture à vo
 **IBAN :** 12207591  
 **Code SORT :** 185008  
 **Numéro de compte :** 12207591  
-**Nom du compte :** MICROSOFT  
+**Nom du compte :** MICROSOFT

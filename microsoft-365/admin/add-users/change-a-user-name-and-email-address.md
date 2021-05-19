@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Découvrez comment un administrateur général peut modifier l’adresse de messagerie et le nom complet d’un utilisateur. '
-ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: "Apprenez comment un administrateur global Microsoft 365 peut modifier l'adresse électronique et le nom d'affichage d'un utilisateur lorsque son nom change. "
+ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291018"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535985"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
@@ -251,8 +251,10 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 Pour découvrir comment modifier le nom d'utilisateur de quelqu'un dans Active Directory, dans Windows Server 2003 et version ultérieure, voir [Renommer un compte d'utilisateur](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Administrateurs : réinitialiser le mot de passe d'un ou de plusieurs utilisateurs](reset-passwords.md)
+[ Administrateurs : Réinitialiser un mot de passe pour un ou plusieurs utilisateurs (article)](reset-passwords.md)
   
-[Ajouter une autre adresse de courrier à un utilisateur](../email/add-another-email-alias-for-a-user.md)
+[Ajouter une autre adresse email à un utilisateur (article)](../email/add-another-email-alias-for-a-user.md)
+
+[Créer une boîte aux lettres ](../email/create-a-shared-mailbox.md)partagée (article)

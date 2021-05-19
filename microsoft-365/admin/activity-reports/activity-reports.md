@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365. Le tableau de bord Vue d’ensemble de l’utilisation vous permet d’explorer chaque graphique pour obtenir d'autres informations.
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759809"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530969"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
@@ -63,7 +63,7 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 
 Les personnes disposant des autorisations suivantes : 
   
-- Administrateurs généraux : nous vous recommandons de n'attribuer ce rôle qu'à quelques personnes de votre organisation. Cela permet de limiter les risques.
+- Administrateurs généraux : nous vous recommandons de n’attribuer ce rôle qu’à quelques personnes de votre organisation. Cela permet de limiter les risques.
     
 - Administrateurs Exchange
     
@@ -199,6 +199,10 @@ Lorsque vous fermez un compte utilisateur, Microsoft supprime les données d’u
   
 Toutefois, lorsque vous sélectionnez un jour particulier (voir numéro 3), jusqu’à 28 jours à partir de la date du jour, le rapport affiche l’utilisation de l’utilisateur pour ce jour dans la tableau Détails de l’utilisateur (voir numéro 2).
   
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Rapports dans le Centre de conformité ](../../compliance/reports-in-security-and-compliance.md) et sécurité &amp;
+[Rapports dans le Centre de conformité &amp; sécurité](../../compliance/reports-in-security-and-compliance.md) (article)
+
+[Analyse de l'utilisation de Microsoft 365](../usage-analytics/usage-analytics.md) (article)
+
+[Personnaliser les rapports dans les données d’analyse de l’utilisation Microsoft 365](../usage-analytics/customize-reports.md) (article)
