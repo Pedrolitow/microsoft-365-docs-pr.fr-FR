@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez les meilleures pratiques pour gérer les nombreuses rubriques de votre organisation à l’aide de Topics.
-ms.openlocfilehash: 3246c7e91c315dadb6c2b14008c9a4da378409d5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333990"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538410"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Gérer les rubriques à grande échelle dans les rubriques microsoft
 
-Lorsque vous indexez vos sites SharePoint ou l’ensemble de votre organisation pour Topics, de nombreuses rubriques peuvent être générées. Lorsque cela se produit et que vous voyez des milliers de rubriques suggérées sur la page Gérer les **rubriques,** il peut être difficile de savoir par où commencer. Cet article explique comment Topics vous aide à optimiser les rubriques et les informations qui sont présentées aux utilisateurs qui recherchent des informations, même dans les grandes organisations avec un grand nombre de rubriques.
+Lorsque vous indexez vos sites SharePoint sites web ou toute votre organisation pour Les Rubriques, de nombreuses rubriques peuvent être générées. Lorsque cela se produit et que vous voyez des milliers de rubriques suggérées sur la page Gérer les **rubriques,** il peut être difficile de savoir par où commencer. Cet article explique comment Topics vous aide à optimiser les rubriques et les informations qui sont présentées aux utilisateurs qui recherchent des informations, même dans les grandes organisations avec un grand nombre de rubriques.
 
-Tout d’abord, un rappel des quatre états pour les rubriques :
+Tout d’abord, un rappel des [quatre étapes pour les rubriques](manage-topics.md#topic-stages):
 
 - **Suggérée** : une rubrique a été identifiée par l’IA et dispose de ressources de prise en charge, de connexions et de propriétés suffisantes. (Ils sont marqués comme **sujet suggéré dans** l’interface utilisateur.)
 

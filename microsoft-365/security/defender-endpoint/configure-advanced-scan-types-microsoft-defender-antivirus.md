@@ -14,13 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/06/2021
+ms.topic: how-to
+ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275302"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538398"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
@@ -33,7 +34,7 @@ ms.locfileid: "52275302"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Utiliser Microsoft Intune pour configurer les options d’analyse
 
-Pour plus d’informations, voir Configurer les [paramètres](/intune/device-restrictions-configure) de restriction d’appareil Microsoft Intune et Antivirus Microsoft Defender les paramètres de restriction d’appareil Windows 10 [dans Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Consultez [Configurer des paramètres de restriction d’appareils dans Microsoft Intune](/intune/device-restrictions-configure) et [Paramètres de restriction d’appareil de l’Antivirus Microsoft Defender pour Windows 10](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) pour obtenir des détails supplémentaires.
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Utiliser Microsoft Endpoint Manager pour configurer les options d’analyse
 
@@ -51,19 +52,19 @@ Pour configurer les paramètres de stratégie de groupe décrits dans le tableau
 
 4. Double-cliquez sur le paramètre **de** stratégie comme indiqué dans le tableau ci-dessous et définissez l’option sur la configuration souhaitée. Cliquez **sur OK,** puis répétez l’une des autres configurations.
 
-Description | Emplacement et paramètre | Paramètre par défaut (s’il n’est pas configuré) | Paramètre PowerShell `Set-MpPreference` ou propriété WMI pour la `MSFT_MpPreference` classe
----|---|---|---
-Analyse du courrier électronique : [consultez les limitations de l’analyse du courrier électronique](#ref1)| Analyser > activer l’analyse du courrier électronique | Désactivé | `-DisableEmailScanning`
-Analyser [les points d’analyse](/windows/win32/fileio/reparse-points) | Analyser > activer l’analyse des points d’analyse | Désactivé | Non disponible
-Analyser les lecteurs réseau mappés | Analyser > exécuter une analyse complète sur des lecteurs réseau mappés | Désactivé | `-DisableScanningMappedNetworkDrivesForFullScan`
- Analyser les fichiers d’archive (tels .zip ou .rar fichiers). La [liste d’exclusions des extensions](configure-extension-file-exclusions-microsoft-defender-antivirus.md) est prioritaire sur ce paramètre. | Analyser les > archives | Activé | `-DisableArchiveScanning`
-Analyser les fichiers sur le réseau | Analyser les > fichiers réseau | Désactivé | `-DisableScanningNetworkFiles`
-Analyser les exécutables packés | Analyser > les exécutables packés d’analyse | Activé | Non disponible
-Analyser les lecteurs amovibles uniquement pendant les analyses complètes | Analyser > analyser les lecteurs amovibles | Désactivé | `-DisableRemovableDriveScanning`
-Spécifier le niveau de sous-dossiers dans un dossier d’archivage à analyser | Analyser > spécifier la profondeur maximale pour analyser les fichiers archivés | 0 | Non disponible
- Spécifiez la charge processeur maximale (en pourcentage) au cours d’une analyse. Remarque : il ne s’agit pas d’une limite difficile, mais plutôt d’une recommandation pour que le moteur d’analyse ne dépasse pas ce maximum en moyenne. | Analyser > spécifier le pourcentage maximal d’utilisation du processeur au cours d’une analyse | 50 |  `-ScanAvgCPULoadFactor`
- Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. La valeur par défaut, **0**, ne s’applique pas à la limite | Analyser > spécifier la taille maximale des fichiers d’archivage à analyser | Sans limite | Non disponible
- Configurer une faible priorité du processeur pour les analyses programmées | Analyser > configurer une faible priorité du processeur pour les analyses programmées | Désactivé | Non disponible
+| Description | Emplacement et paramètre | Paramètre par défaut (s’il n’est pas configuré) | Paramètre PowerShell `Set-MpPreference` ou propriété WMI pour la `MSFT_MpPreference` classe |
+|---|---|---|---|
+| Analyse du courrier électronique : [consultez les limitations de l’analyse du courrier électronique](#ref1)| Analyser > activer l’analyse du courrier électronique | Désactivé | `-DisableEmailScanning` |
+|Analyser [les points d’analyse](/windows/win32/fileio/reparse-points) | Analyser > activer l’analyse des points d’analyse | Désactivé | Non disponible |
+| Analyser les lecteurs réseau mappés | Analyser > exécuter une analyse complète sur des lecteurs réseau mappés | Désactivé | `-DisableScanningMappedNetworkDrivesForFullScan`|
+ Analyser les fichiers d’archive (tels .zip ou .rar fichiers). La [liste d’exclusions des extensions](configure-extension-file-exclusions-microsoft-defender-antivirus.md) est prioritaire sur ce paramètre. | Analyser > fichiers archivés | Activé | `-DisableArchiveScanning` |
+| Analyser les fichiers sur le réseau | Analyser les > fichiers réseau | Désactivé | `-DisableScanningNetworkFiles` |
+| Analyser les exécutables packés | Analyser > les exécutables packés d’analyse | Activé | Non disponible |
+| Analyser les lecteurs amovibles uniquement pendant les analyses complètes | Analyser > analyser les lecteurs amovibles | Désactivé | `-DisableRemovableDriveScanning` |
+| Spécifier le niveau de sous-dossiers dans un dossier d’archivage à analyser | Analyser > spécifier la profondeur maximale pour analyser les fichiers archivés | 0 | Non disponible |
+| Spécifiez la charge processeur maximale (en pourcentage) pendant une analyse. Remarque : il ne s’agit pas d’une limite difficile, mais plutôt d’une recommandation pour que le moteur d’analyse ne dépasse pas ce maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur. | Analyser > spécifier le pourcentage maximal d’utilisation du processeur au cours d’une analyse | 50 |  `-ScanAvgCPULoadFactor` |
+| Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. La valeur par défaut, **0**, ne s’applique pas à la limite | Analyser > spécifier la taille maximale des fichiers d’archivage à analyser | Sans limite | Non disponible |
+| Configurer une faible priorité du processeur pour les analyses programmées | Analyser > configurer une faible priorité du processeur pour les analyses programmées | Désactivé | Non disponible |
  
 > [!NOTE]
 > Si la protection en temps réel est désactivée, les fichiers sont analysés avant d’être accessibles et exécutés. L’étendue d’analyse inclut tous les fichiers, y compris les fichiers sur les supports amovibles montés, tels que les lecteurs USB. Si l’appareil qui effectue l’analyse dispose d’une protection en temps réel ou d’une protection à l’accès, l’analyse inclut également les partages réseau.
@@ -98,4 +99,4 @@ Si Antivirus Microsoft Defender une menace à l’intérieur d’un e-mail, elle
 - [Personnaliser, lancer et passer en revue les résultats des analyses et Antivirus Microsoft Defender correction](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender](run-scan-microsoft-defender-antivirus.md).
 - [Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

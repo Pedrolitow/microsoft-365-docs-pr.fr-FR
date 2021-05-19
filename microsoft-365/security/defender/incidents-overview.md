@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: cc2fcd7410c2f3122fb3ce49a40e93bfa0767331
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300012"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539022"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidents dans Microsoft 365 Defender
 
@@ -56,10 +56,10 @@ Regardez cette courte présentation des incidents dans Microsoft 365 Defender (4
 
 Le regroupement d’alertes associées dans un incident vous offre une vue complète d’une attaque. Par exemple, vous pouvez voir :
 
-- L’endroit où l’attaque a commencé.
+- Point de départ de l’attaque.
 - Quelles tactiques ont été utilisées .
 - Jusqu’où l’attaque est passée dans votre client.
-- Étendue de l’attaque, telle que le nombre d’appareils, d’utilisateurs et de boîtes aux lettres touchés. 
+- Étendue de l’attaque, telle que le nombre d’appareils, d’utilisateurs et de boîtes aux lettres qui ont été touchés. 
 - Toutes les données associées à l’attaque.
 
 [S’il est](m365d-enable.md)activé, Microsoft 365 Defender [peut](m365d-autoir.md) automatiquement examiner et résoudre les alertes par le biais de l’automatisation et de l’intelligence artificielle. Vous pouvez également effectuer des étapes de correction supplémentaires pour résoudre l’attaque. 
@@ -72,7 +72,7 @@ Vous gérez les incidents à partir **d’incidents & alertes** > incidents dans
 
 La sélection d’un nom d’incident affiche un résumé de l’incident et donne accès aux onglets avec des informations supplémentaires.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le centre de Microsoft 365 de sécurité":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le centre Microsoft 365 sécurité":::
 
 Les onglets supplémentaires pour un incident sont les suivants :
 
@@ -135,14 +135,14 @@ Identifiez régulièrement les incidents les plus prioritaires pour l’analyse 
 
 3. Dans la mesure du possible, récupérez à partir de l’attaque en restaurant les ressources de votre client à l’état où elles se sont trouver avant l’incident.
 
-4. [Résolvez](manage-incidents.md#resolve-incident) l’incident et prenez le temps d’apprendre après l’incident pour :
+4. [Résolvez](manage-incidents.md#resolve-an-incident) l’incident et prenez le temps d’apprendre après l’incident pour :
 
    - Comprendre le type de l’attaque et son impact.
    - Recherchez une tendance des attaques de sécurité dans [l’analyse](threat-analytics.md) des menaces et la communauté de sécurité.
-   - Rappelez-vous du flux de travail que vous avez utilisé pour résoudre l’incident et mettre à jour vos flux de travail, processus, stratégies et playbooks standard selon vos besoins.
+   - Rappelez-vous du flux de travail que vous avez utilisé pour résoudre l’incident et mettre à jour vos flux de travail, processus, stratégies et playbooks standard si nécessaire.
    - Déterminez si des modifications sont nécessaires dans votre configuration de sécurité et implémentez-les.
 
-Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer en détail à un exemple d’incident.
+Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer au travers d’un exemple d’incident.
 
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>Exemples d’opérations de sécurité pour Microsoft 365 Defender
 
@@ -177,7 +177,7 @@ Les tâches quotidiennes, mensuelles, trimestrielles et annuelles peuvent être 
 
 **Si vous avez de l’expérience en** matière d’analyse de sécurité et de réponse aux incidents :
 
-- Mise en place de la file d’attente des incidents à partir de la page **Incidents** du centre Microsoft 365 de sécurité. À partir de là, vous pouvez :
+- Commencer avec la file d’attente des incidents à partir de la page **Incidents** du centre Microsoft 365 de sécurité. Ici, vous pouvez :
 
   - Voir quels incidents doivent [être](incident-queue.md) hiérarchisés en fonction de la gravité et d’autres facteurs. 
 

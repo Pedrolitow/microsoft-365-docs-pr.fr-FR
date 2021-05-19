@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les attaques par consen
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644679"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538302"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 
@@ -33,7 +33,7 @@ ms.locfileid: "51644679"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-**Résumé**  Découvrez comment reconnaître et corriger les attaques d’octroi de consentement illicite dans Office 365.
+**Résumé**  Découvrez comment reconnaître et corriger les attaques par consentement illicite dans Office 365.
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Qu’est-ce que l’attaque par consentement illicite dans Office 365 ?
 
@@ -64,7 +64,7 @@ Vous devez effectuer une recherche dans le journal **d’audit** pour trouver de
 >
 > L’affichage de l’entrée du journal d’audit correspondant dans les résultats de la recherche après un événement peut prendre entre 30 minutes et 24 heures.
 >
-> La durée de rétention et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et plus spécifiquement du type de licence attribuée à un utilisateur spécifique. Pour plus d’informations, consultez [le journal d’audit.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+> La durée de rétention et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et plus précisément du type de licence attribuée à un utilisateur spécifique. Pour plus d’informations, consultez [le journal d’audit.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 >
 > Si cette valeur est true, elle indique qu’une personne ayant un accès Administrateur général a peut-être accordé un large accès aux données. S’il s’agit d’une attaque inattendue, prenez les mesures [nécessaires pour confirmer une attaque.](#how-to-confirm-an-attack)
 
@@ -72,7 +72,7 @@ Vous devez effectuer une recherche dans le journal **d’audit** pour trouver de
 
 Si vous avez une ou plusieurs instances des CCI répertoriées ci-dessus, vous devez poursuivre l’examen pour confirmer que l’attaque s’est produite. Vous pouvez utiliser l’une de ces trois méthodes pour confirmer l’attaque :
 
-- Inventoriez les applications et leurs autorisations à l’aide du portail Azure Active Directory. Cette méthode est minutieuse, mais vous ne pouvez vérifier qu’un seul utilisateur à la fois, ce qui peut prendre beaucoup de temps si vous avez de nombreux utilisateurs à vérifier.
+- Inventorier les applications et leurs autorisations à l’aide Azure Active Directory portail. Cette méthode est minutieuse, mais vous ne pouvez vérifier qu’un seul utilisateur à la fois, ce qui peut prendre beaucoup de temps si vous avez de nombreux utilisateurs à vérifier.
 
 - Inventorier les applications et leurs autorisations à l’aide de PowerShell. Il s’agit de la méthode la plus rapide et la plus minutieuse, avec la charge de traitement la moins importante.
 
@@ -82,13 +82,13 @@ Si vous avez une ou plusieurs instances des CCI répertoriées ci-dessus, vous d
 
 Vous pouvez le faire pour vos utilisateurs avec le portail Azure Active Directory ou PowerShell, ou faire en sorte que vos utilisateurs émanent individuellement leur accès aux applications.
 
-### <a name="steps-for-using-the-azure-active-directory-portal"></a>Étapes d’utilisation du portail Azure Active Directory
+### <a name="steps-for-using-the-azure-active-directory-portal"></a>Étapes d’utilisation du portail Azure Active Directory web
 
-Vous pouvez rechercher les applications pour lesquelles un utilisateur individuel a accordé des autorisations à l’aide du [portail Azure Active Directory](https://portal.azure.com/).
+Vous pouvez rechercher les applications pour lesquelles un utilisateur individuel a accordé des autorisations à l’aide [du portail Azure Active Directory.](https://portal.azure.com/)
 
 1. Connectez-vous au portail Azure avec des droits d’administration.
 
-2. Sélectionnez le lame Azure Active Directory.
+2. Sélectionnez le Azure Active Directory de l’équipe.
 
 3. Sélectionner **Utilisateurs**.
 
@@ -104,7 +104,7 @@ Demande à vos utilisateurs d’y accéder et de consulter https://myapps.micros
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Étapes à suivre pour ce faire avec PowerShell
 
-Le moyen le plus simple de vérifier l’attaque par octroi de consentement illicite consiste à exécuter [Get-AzureADPSPermissions.ps1, ](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)qui vide toutes les autorisations OAuth et toutes les applications OAuth pour tous les utilisateurs de votre location dans un fichier .csv.
+Le moyen le plus simple de vérifier l’attaque par consentement illicite consiste à exécuter [Get-AzureADPSPermissions.ps1, ](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)qui vide toutes les autorisations OAuth et toutes les applications OAuth pour tous les utilisateurs de votre location dans un seul fichier .csv.
 
 #### <a name="pre-requisites"></a>Conditions préalables
 
@@ -119,11 +119,11 @@ Le moyen le plus simple de vérifier l’attaque par octroi de consentement illi
 
 1. Connectez-vous à l’ordinateur à partir de qui vous exécuterez le script avec des droits d’administrateur local.
 
-2. Téléchargez ou copiez le script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) à partir de GitHub dans un dossier à partir duquel vous exécuterez le script. Ce sera le même dossier dans lequel le fichier « permissions.csv » de sortie sera écrit.
+2. Téléchargez ou copiez [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script de GitHub vers un dossier à partir duquel vous exécuterez le script. Ce sera le même dossier dans lequel le fichier « permissions.csv » de sortie sera écrit.
 
 3. Ouvrez une instance PowerShell en tant qu’administrateur et ouvrez le dossier dans qui vous avez enregistré le script.
 
-4. Connectez-vous à votre annuaire à l’aide [de l’cmdlet Connect-AzureAD.](/powershell/module/azuread/connect-azuread)
+4. Connecter votre répertoire à l’aide de [l Connecter-AzureAD.](/powershell/module/azuread/connect-azuread)
 
 5. Exécutez cette commande PowerShell :
 
@@ -143,7 +143,7 @@ Le script produit un fichier nommé Permissions.csv. Pour rechercher des autoris
 
 ## <a name="determine-the-scope-of-the-attack"></a>Déterminer l’étendue de l’attaque
 
-Une fois que vous avez terminé l’inventaire de l’accès aux applications, examinez le journal **d’audit** pour déterminer l’étendue complète de la violation. Recherchez les utilisateurs concernés, les délais d’accès de l’application illicite à votre organisation et les autorisations de l’application. Vous pouvez effectuer une recherche **dans le journal d’audit** dans le Centre de sécurité et [conformité Microsoft 365.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+Une fois que vous avez terminé l’inventaire de l’accès aux applications, examinez le journal **d’audit** pour déterminer l’étendue complète de la violation. Recherchez les utilisateurs concernés, les délais d’accès de l’application illicite à votre organisation et les autorisations de l’application. Vous pouvez effectuer une recherche **dans le journal d’audit** dans le [Centre de sécurité & conformité.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
 > [L’audit de boîte](../../compliance/enable-mailbox-auditing.md) aux lettres et l’audit d’activité pour les administrateurs et les utilisateurs doivent avoir été [activés](../../compliance/turn-audit-log-search-on-or-off.md) avant l’attaque pour que vous receviez ces informations.
@@ -154,7 +154,7 @@ Une fois que vous avez identifié une application avec des autorisations illicit
 
 - Vous pouvez révoquer l’autorisation de l’application dans le portail Azure Active Directory en :
 
-  - Accédez à l’utilisateur affecté dans le **palette Utilisateur Azure Active Directory.**
+  - Accédez à l’utilisateur affecté dans le **Azure Active Directory’utilisateur.**
 
   - Sélectionnez **Applications**.
 
@@ -184,7 +184,7 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 
 - [Une application inattendue dans la](/azure/active-directory/application-access-unexpected-application) liste des applications permet aux administrateurs d’accéder aux différentes actions qu’ils souhaitent peut-être réaliser après avoir réalisé qu’il existe des applications inattendues ayant accès aux données.
 
-- [L’intégration d’applications à Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) est une vue d’ensemble générale du consentement et des autorisations.
+- [L’intégration d’applications Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) est une vue d’ensemble générale du consentement et des autorisations.
 
 - [Les problèmes liés au développement de mon application](/azure/active-directory/active-directory-application-dev-development-content-map) fournissent des liens vers différents articles relatifs au consentement.
 

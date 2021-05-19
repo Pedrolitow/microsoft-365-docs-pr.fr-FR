@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Options de fin de cycle de vie pour les groupes, les équipes et les Yammer.
-ms.openlocfilehash: 468f41df747b6cf12d3f6619d79cb97248eba1d1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346425"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538830"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Options de fin de cycle de vie pour les groupes, les équipes et les Yammer
 
@@ -32,7 +33,7 @@ Le tableau suivant décrit les services associés aux groupes et aux équipes, a
 
 |Service|Types de contenu|
 |:------|:---------------|
-|Teams|Conversations de canal, fichiers dans les canaux|
+|Équipes|Conversations de canal, fichiers dans les canaux|
 |Formulaires|Structure et résultats de l’enquête|
 |OneNote|Bloc-notes|
 |Outlook|Courrier et calendrier|
@@ -73,11 +74,11 @@ Ces questions doivent être posées avant la suppression du groupe sous-jacent, 
 
 Lorsque des invités sont invités à une équipe, un compte invité est créé dans le Azure Active Directory de l’organisation hôte avant de les ajouter à l’équipe. Lorsqu’une équipe est supprimée, les invités ne sont pas supprimés de Azure Active Directory. Bien que les invités ne peuvent pas accéder à des groupes, des sites, des équipes ou du contenu qui n’ont pas été partagés avec eux, ils peuvent toujours utiliser des fonctionnalités au sein de Microsoft Teams telles que le démarrage de conversations, les appels vocaux et vidéo et l’utilisation d’applications.
 
-Un propriétaire d’équipe ou de groupe peut inviter une personne extérieure à l’organisation à devenir Azure Active Directory en l’ajoutant à une équipe. Toutefois, un propriétaire d’équipe ne peut pas supprimer l’invité de Azure Active Directory. La suppression de comptes ne peut être effectuée que par un administrateur global ou un administrateur utilisateur.
+Un propriétaire d’équipe ou de groupe peut inviter une personne extérieure à l’organisation à devenir Azure Active Directory en l’ajoutant à une équipe. Toutefois, un propriétaire d’équipe ne peut pas supprimer l’invité de Azure Active Directory. La suppression de comptes peut uniquement être effectuée par un administrateur global ou un administrateur utilisateur.
 
 Il est important d’effectuer des révisions d’invités et de comprendre si les invités doivent être supprimés Azure Active Directory la suppression de l’équipe. Il peut y avoir un cas valide pour que les invités restent dans l’annuaire, par exemple être membre d’autres équipes ou utiliser d’autres services Microsoft 365 ou Azure.
 
-## <a name="teams"></a>Teams
+## <a name="teams"></a>Équipes
 
 Teams contenu spécifique se trouve principalement sous la forme de conversations.
 
@@ -92,7 +93,7 @@ L’avantage de [l’archivage d’une](/microsoftteams/archive-or-delete-a-team
 
 Lorsqu’une équipe est archivée par un propriétaire, elle est définie en lecture seule pour les membres à la fois pour le contenu au sein de l’équipe et, si elle est sélectionnée, le site SharePoint associé. L’objectif de cette action est de garantir que les conversations dans les canaux sont conservées dans leur état existant, ainsi que le contenu basé sur SharePoint tels que les fichiers et les wikis.
 
-Dans le site SharePoint, aucune modification n’est visible. Toutefois, aucune modification ne peut être apportée à des fichiers ou des listes, car les autorisations de SharePoint pour le groupe Microsoft 365 sont définies sur les visiteurs **du site.** Cela inclut OneNote bloc-notes pour l’équipe, qui est stocké dans la bibliothèque d’éléments de site du site SharePoint site.
+Dans le site SharePoint’il n’y a aucune modification visible. Toutefois, aucune modification ne peut être apportée à des fichiers ou des listes, car les autorisations de SharePoint pour le groupe Microsoft 365 sont définies sur les visiteurs **du site.** Cela inclut OneNote bloc-notes pour l’équipe, qui est stocké dans la bibliothèque d’éléments de site du site SharePoint site.
 
 Lorsqu’une équipe est archivée, le groupe Microsoft 365 sous-jacent est toujours soumis à la stratégie d’expiration (si elle est définie) et, en tant que tel, le propriétaire doit continuer à renouveler l’équipe.
 
@@ -116,7 +117,7 @@ Les formulaires peuvent être partagés en tant que [modèles,](https://support.
 
 **Exporter les résultats vers une feuille de calcul**
 
-Si les données des réponses du formulaire doivent être conservées, vous pouvez pour cela exporter les résultats vers une [feuille de calcul Excel feuille de calcul.](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af) Cela exporte uniquement les questions et leurs réponses sous forme de données ; il n’inclut pas de graphiques créés par Forms.
+Si les données des réponses de formulaire doivent être conservées, vous pouvez pour cela exporter les résultats vers une [feuille de calcul Excel feuille de calcul.](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af) Cela permet uniquement d’exporter les questions et leurs réponses sous forme de données ; il n’inclut pas de graphiques créés par Forms.
 
 **Supprimer le formulaire**
 
@@ -140,11 +141,11 @@ Dans les scénarios où une partie du contenu du bloc-notes doit uniquement êtr
 
 ## <a name="mailbox-and-calendar"></a>Boîte aux lettres et calendrier
 
-Il n’est pas rare que la boîte aux lettres associée au groupe soit utilisée, même si de nombreuses conversations ont pu être menées au sein de canaux d’équipe. La boîte aux lettres stocke uniquement les e-mails qui lui ont été envoyés directement et n’inclut pas les e-mails envoyés directement aux canaux.
+Il n’est pas rare que la boîte aux lettres associée au groupe soit utilisée, même si de nombreuses conversations ont pu être menées au sein de canaux d’équipe. La boîte aux lettres stocke uniquement les courriers électroniques qui lui ont été envoyés directement et n’inclut pas les e-mails envoyés directement aux canaux.
 
 Dans certains cas, les courriers électroniques stockés dans la boîte aux lettres peuvent être des notifications de réunions, de mises à jour de tâches du Planificateur et d’autres messages générés par l’application ou le système. il est important que le contenu de la boîte aux lettres soit révisé pour déterminer si le contenu doit être conservé ou supprimé.
 
-Si une stratégie de rétention est appliquée dans Exchange, les messages électroniques et les éléments de calendrier sont conservés et disponibles par le biais de recherches de découverte électronique.
+Si une stratégie de rétention est appliquée dans Exchange, les courriers électroniques et les éléments de calendrier sont conservés et disponibles par le biais de recherches de découverte électronique.
 
 **Exporter le courrier et le calendrier**
 
@@ -203,7 +204,7 @@ Les projets et les feuilles de route créés dans Project web sont associés à 
 
 **Affecter le projet à un autre groupe**
 
-Si le projet doit être conservé dans son état fonctionnel au-delà de la durée de vie du groupe ou de l’équipe, il peut être affecté à un groupe [Microsoft 365 différent.](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) Vous pouvez le faire à l’aide du Centre d’administration Dynamics 365.
+Si le projet doit être conservé dans son état fonctionnel au-delà de la durée de vie du groupe ou de l’équipe, il peut être affecté à un autre [groupe Microsoft 365.](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) Pour ce faire, vous pouvez utiliser le Centre d’administration Dynamics 365.
 
 **Exporter des données à partir du projet ou de la feuille de route**
 
@@ -216,13 +217,13 @@ Tous les fichiers des canaux d’équipe sont stockés dans le SharePoint site d
 Les fichiers sont généralement stockés dans trois emplacements principaux au sein d’SharePoint site :
 
 - Pages - Bibliothèque de pages de site
-- Images utilisées dans les pages – Bibliothèque de biens de site
+- Images utilisées dans les pages – Bibliothèque de biens du site
 - Fichiers dans les canaux – Bibliothèque de documents
 - Pages Wiki : Teams de données Wiki
 
 Si le site possède un ou plusieurs sous-sites, le processus de départ doit être répété pour chaque sous-site. Si l’équipe contient des canaux privés, il existe un site SharePoint pour chaque canal.
 
-Lors de la suppression de fichiers d’un groupe ou d’une équipe, il est important de considérer qu’ils peuvent être partagés avec des utilisateurs qui ne sont pas membres du groupe ou de l’équipe. Vous souhaitez peut-être leur communiquer la modification imminente.
+Lors de la suppression de fichiers d’un groupe ou d’une équipe, il est important de considérer qu’ils peuvent être partagés avec des utilisateurs qui ne sont pas membres du groupe ou de l’équipe. Vous souhaitez peut-être leur communiquer les changements qui s’annoncent.
 
 **Télécharger des fichiers**
 
@@ -265,3 +266,7 @@ Les conversations peuvent être déplacées vers un autre groupe de Yammer par n
 **Exporter des données réseau**
 
 Yammer réseau [exportent les données réseau.](/yammer/manage-security-and-compliance/export-yammer-enterprise-data) Toutefois, cela exportera toutes les conversations pour l’ensemble du réseau. L’exportation qui en résulte répertorie l’ID de groupe. Il est possible de filtrer les conversations en fonction de cet ID.
+
+## <a name="related-topics"></a>Voir aussi
+
+[Supprimer un ancien employé et sécuriser les données](/microsoft-365/admin/add-users/remove-former-employee)

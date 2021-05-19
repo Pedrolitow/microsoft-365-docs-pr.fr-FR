@@ -1,5 +1,5 @@
 ---
-title: Planifier la gouvernance de l’organisation et du cycle de vie pour les groupes Microsoft 365 et Microsoft Teams
+title: Planifier la gouvernance de l’organisation et du cycle de vie Microsoft 365 groupes et Microsoft Teams
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,27 +14,28 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Informations sur les options de gouvernance du cycle de vie pour les outils de collaboration dans Microsoft 365
-ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: En savoir plus sur les options de gouvernance du cycle de vie pour les outils de collaboration Microsoft 365
+ms.openlocfilehash: 7d88618b75ef731bf38df029970efdc05f3eea5a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907927"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538818"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planifier la gouvernance de l’organisation et du cycle de vie pour les groupes Microsoft 365 et Microsoft Teams
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planifier la gouvernance de l’organisation et du cycle de vie Microsoft 365 groupes et Microsoft Teams
 
-Les groupes Microsoft 365 disposent d’un riche ensemble d’outils pour implémenter les fonctionnalités de gouvernance dont votre organisation a besoin. 
+Microsoft 365 groupes disposent d’un riche ensemble d’outils pour implémenter les fonctionnalités de gouvernance dont votre organisation a besoin. 
 
 La section suivante décrit les fonctionnalités, recommande les meilleures pratiques et fournit des conseils pour poser les bonnes questions afin de déterminer les conditions requises pour la gouvernance et comment y répondre.
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>Contrôler qui peut créer des groupes Microsoft 365
+## <a name="control-who-can-create-microsoft-365-groups"></a>Contrôler les personnes qui peuvent créer Microsoft 365 groupes
 
-Les groupes peuvent être créés par les utilisateurs finaux à partir de plusieurs points de terminaison, notamment Outlook, SharePoint, Teams et d’autres environnements.
+Les groupes peuvent être créés par les utilisateurs finaux à partir de plusieurs points de fin, notamment Outlook, SharePoint, Teams et d’autres environnements.
 
 ![image desc](../media/04.png)
 
-Nous vous recommandons vivement le libre-service pour permettre aux propriétaires de groupes et aider les utilisateurs à faire leur travail plus facilement. La limitation de la création de groupes et d’équipes peut ralentir la productivité des utilisateurs, car de nombreux services Microsoft 365 nécessitent la création de groupes pour que le service fonctionne.
+Nous vous recommandons vivement le libre-service pour permettre aux propriétaires de groupes et aider les utilisateurs à faire leur travail plus facilement. La limitation de la création de groupes et d’équipes peut ralentir la productivité des utilisateurs, car de nombreux services Microsoft 365 nécessitent que des groupes soient créés pour que le service fonctionne.
 
 Prenons les options de gouvernance suivantes pour la création de groupes :
 
@@ -42,15 +43,15 @@ Prenons les options de gouvernance suivantes pour la création de groupes :
 - Limiter la création de groupes aux membres [d’un](/azure/active-directory/users-groups-roles/groups-create-rule) groupe de sécurité avec une appartenance dynamique contenant, par exemple, tous les employés à plein temps.
 - Limitez la création de groupes à un groupe de sécurité et obligez les utilisateurs à effectuer une formation sur les stratégies d’utilisation des groupes de votre organisation afin de devenir membres du groupe de sécurité.
 
-Si vous souhaitez limiter les personnes autorisées à créer des groupes, consultez Gérer les personnes autorisées à créer des groupes [Microsoft 365](manage-creation-of-groups.md) pour plus d’informations sur la configuration.
+Si vous souhaitez limiter les personnes autorisées à créer des groupes, consultez Gérer les personnes autorisées à créer des groupes Microsoft 365 [pour](manage-creation-of-groups.md) plus d’informations sur la configuration de ce groupe.
 
 ## <a name="group-delete-restore-and-archiving"></a>Suppression, restauration et archivage de groupes
 
-Lorsqu’un groupe Microsoft 365 est supprimé, il est conservé par défaut pendant 30 jours. Cette période de 30 jours est appelée « suppression réversible », car vous avez encore la possibilité de le restaurer. Après cette période de 30 jours, le groupe et le contenu associé sont supprimés de manière définitive et ne peuvent plus être restaurés.
+Lorsqu’Microsoft 365 groupe est supprimé, il est conservé par défaut pendant 30 jours. Cette période de 30 jours est appelée « suppression réversible », car vous avez encore la possibilité de le restaurer. Après cette période de 30 jours, le groupe et le contenu associé sont supprimés de manière définitive et ne peuvent plus être restaurés.
 
-Si vous avez des stratégies de rétention en place pour conserver la conversation, les fichiers ou la messagerie, ces éléments sont conservés après la suppression du groupe. Pour plus [d’informations, voir](../compliance/retention.md) En savoir plus sur les stratégies de rétention.
+Si vous avez des stratégies de rétention en place pour conserver la conversation, les fichiers ou le courrier, ces éléments sont conservés après la suppression du groupe. Pour plus [d’informations, voir](../compliance/retention.md) En savoir plus sur les stratégies de rétention.
 
-Si vous souhaitez supprimer un groupe, mais conserver le contenu d’un ou de plusieurs services connectés à un groupe, consultez Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations.
+Si vous souhaitez supprimer un groupe, mais conserver le contenu d’un ou plusieurs services connectés à un groupe, consultez Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations.
 
 ## <a name="group-naming-policy"></a>Stratégie de noms de groupes
 
@@ -61,7 +62,7 @@ Une stratégie de noms de groupes peut vous aider à régir les groupes de deux 
 
 Les stratégies d’attribution de noms sont appliquées lorsque des groupes sont créés à partir de l’un des services connectés à un groupe.
 
-Si vous décidez d’utiliser des stratégies d’attribution de noms pour les groupes, consultez la stratégie de noms des groupes [Microsoft 365.](groups-naming-policy.md)
+Si vous décidez d’utiliser des stratégies d’attribution de noms pour les groupes, [voir Microsoft 365 d’attribution de](groups-naming-policy.md)noms de groupes.
 
 ## <a name="group-expiration-policy"></a>Stratégie d’expiration de groupe
 
@@ -71,12 +72,14 @@ Une fois que vous avez fixé l’expiration des groupes :
 - Les propriétaires du groupe sont avertis de renouveler le groupe à mesure que l’expiration approche.
 - Les groupes actifs sont renouvelés automatiquement.
 - Tout groupe qui n’est pas renouvelé est supprimé.
-- Tout groupe supprimé peut être restauré dans un délai de 30 jours par les propriétaires du groupe ou l’administrateur.
+- Tout groupe supprimé peut être restauré dans les 30 jours par les propriétaires du groupe ou l’administrateur.
 
-Les stratégies d’expiration sont un bon moyen de limiter la prolifération des groupes en veillant à ce que les groupes qui ne sont plus utilisés soient supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, voir Stratégie d’expiration de groupe [Microsoft 365.](microsoft-365-groups-expiration-policy.md)
+Les stratégies d’expiration sont un bon moyen de limiter la prolifération des groupes en veillant à ce que les groupes qui ne sont plus utilisés soient supprimés. Si vous souhaitez créer une stratégie d’expiration de groupe, voir [Microsoft 365 stratégie d’expiration de groupe.](microsoft-365-groups-expiration-policy.md)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
+
+[Supprimer un ancien employé et sécuriser les données](/microsoft-365/admin/add-users/remove-former-employee)

@@ -1,7 +1,7 @@
 ---
-title: 'Atténuer les vulnérabilités du jour zéro : gestion des menaces et des vulnérabilités'
-description: Découvrez comment rechercher et atténuer les vulnérabilités « zero-day » dans votre environnement par le biais de la gestion des menaces et des vulnérabilités.
-keywords: Microsoft Defender pour endpoint tvm zero day vulnerabilities, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
+title: 'Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités'
+description: Découvrez comment rechercher et atténuer les vulnérabilités « zero-day » dans votre environnement à l’Gestion des menaces et des vulnérabilités.
+keywords: Vulnérabilités microsoft Defender pour endpoint tvm zero day, tvm, menaces & gestion des vulnérabilités, jour zéro, 0 jour, atténuer les vulnérabilités de 0 jour, vulnérabilités CVE vulnérables
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,34 +18,37 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be508e646a67f01887814a0e72170e438ee86212
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2c746a74899a34827e089f4c9c2f6ecc396bb69c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933060"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538770"
 ---
-# <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : gestion des menaces et des vulnérabilités
+# <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Une vulnérabilité « zero-day » est une vulnérabilité publiquement divulguée pour laquelle aucune mise à jour de sécurité ou correctifs officiels n'a été publié. Les vulnérabilités du jour zéro ont souvent des niveaux de gravité élevés et sont activement exploitées.
+Une vulnérabilité « zero-day » est une vulnérabilité publiquement divulguée pour laquelle aucune mise à jour de sécurité ou correctifs officiels n’a été publié. Les vulnérabilités du jour zéro ont souvent des niveaux de gravité élevés et sont activement exploitées.
 
-La gestion des menaces et des vulnérabilités affiche uniquement les vulnérabilités du jour zéro dont elle dispose d'informations.
+Les menaces et gestion des vulnérabilités afficheront uniquement les vulnérabilités zero-day dont il dispose d’informations.
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>Trouver des informations sur les vulnérabilités du jour zéro
 
-Une fois qu'une vulnérabilité zéro jour a été trouvée, les informations à ce sujet sont transmises via les expériences suivantes dans le Centre de sécurité Microsoft Defender.
+Une fois qu’une vulnérabilité zéro jour a été trouvée, les informations à ce sujet sont transmises via les expériences suivantes dans le Centre de sécurité Microsoft Defender.
 
-### <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord de gestion des menaces et des vulnérabilités
+>[!NOTE]
+> La fonctionnalité de 0 jour n’est actuellement pas disponible pour les produits non Windows (Mac, Linux) ; Il sera toutefois ajouté à l’avenir.
+
+### <a name="threat-and-vulnerability-management-dashboard"></a>Tableau de bord des menaces gestion des vulnérabilités de sécurité
 
 Recherchez des recommandations avec une balise « zero-day » dans la carte « Recommandations de sécurité les plus importantes ».
 
@@ -57,9 +60,9 @@ Recherchez les principaux logiciels avec la balise « zero-day » dans la carte 
 
 ### <a name="weaknesses-page"></a>Page Faiblesses
 
-Recherchez la vulnérabilité nommée « zero-day » ainsi qu'une description et des détails.
+Recherchez la vulnérabilité nommée « zero-day » ainsi qu’une description et des détails.
 
-- Si un ID CVE est affecté à cette vulnérabilité, vous verrez l'étiquette « zero-day » en regard du nom CVE.
+- Si un ID CVE est affecté à cette vulnérabilité, vous verrez l’étiquette « zero-day » en regard du nom CVE.
 
 - Si aucun ID CVE n’est affecté à cette vulnérabilité, vous la trouverez sous un nom interne temporaire qui ressemble à « TVM-XXXX-XXXX ». Le nom sera mis à jour une fois qu’un ID CVE officiel a été affecté, mais le nom interne précédent peut toujours être recherché et trouvé dans le panneau latéral.
 
@@ -69,13 +72,13 @@ Recherchez la vulnérabilité nommée « zero-day » ainsi qu'une description et
 
 Recherchez des logiciels avec la balise « zero-day ». Filtrez par la balise « zero day » pour voir uniquement les logiciels avec des vulnérabilités zero-day.
 
-![Exemple zero day de Windows Server 2016 dans la page d’inventaire logiciel.](images/tvm-zero-day-software-inventory.png)
+![Exemple de jour zéro Windows Server 2016 dans la page d’inventaire logiciel.](images/tvm-zero-day-software-inventory.png)
 
 ### <a name="software-page"></a>Page de logiciels
 
 Recherchez une balise zero-day pour chaque logiciel affecté par la vulnérabilité zero-day.
 
-![Exemple de jour zéro pour la page du logiciel Windows Server 2016.](images/tvm-zero-day-software-page.png)
+![Exemple de jour zéro pour Windows Server 2016 page de logiciels.](images/tvm-zero-day-software-page.png)
 
 ### <a name="security-recommendations-page"></a>Page Recommandations en matière de sécurité
 
@@ -83,7 +86,7 @@ Affichez des suggestions claires sur les options de correction et d’atténuati
 
 S’il existe un logiciel avec une vulnérabilité zéro jour et des vulnérabilités supplémentaires à résoudre, vous recevrez une recommandation sur toutes les vulnérabilités.
 
-![Exemple zero day de Windows Server 2016 dans la page recommandations de sécurité.](images/tvm-zero-day-security-recommendation.png)
+![Exemple de jour zéro de Windows Server 2016 dans la page recommandations de sécurité.](images/tvm-zero-day-security-recommendation.png)
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>Résoudre les vulnérabilités du jour zéro
 
@@ -91,23 +94,23 @@ Go to the security recommendation page and select a recommendation with a zero-d
 
 Il y aura un lien vers les options d’atténuation et les solutions de contournement si elles sont disponibles. Les solutions de contournement peuvent aider à réduire les risques posés par cette vulnérabilité zero-day jusqu’à ce qu’un correctif ou une mise à jour de sécurité puisse être déployé.
 
-Ouvrez les options de correction et choisissez le type d'attention. Une option de correction « attention requise » est recommandée pour les vulnérabilités du jour zéro, dans la mesure où une mise à jour n'a pas encore été publiée. Vous ne pourrez pas sélectionner une date d'échéance, car aucune action spécifique n'est à effectuer. S'il existe des vulnérabilités plus anciennes pour ce logiciel que vous souhaitez mettre à jour, vous pouvez remplacer l'option de correction « Attention requise » et choisir « mettre à jour ».
+Ouvrez les options de correction et choisissez le type d’attention. Une option de correction « attention requise » est recommandée pour les vulnérabilités du jour zéro, dans la mesure où une mise à jour n’a pas encore été publiée. Vous ne pourrez pas sélectionner une date d’échéance, car aucune action spécifique n’est à effectuer. S’il existe des vulnérabilités plus anciennes pour ce logiciel que vous souhaitez mettre à jour, vous pouvez remplacer l’option de correction « Attention requise » et choisir « mettre à jour ».
 
-![Exemple de flyout zero day de Windows Server 2016 dans la page recommandations de sécurité.](images/tvm-zero-day-recommendation-flyout400.png)
+![Exemple de flyout zero day Windows Server 2016 dans la page recommandations de sécurité.](images/tvm-zero-day-recommendation-flyout400.png)
 
 ## <a name="track-zero-day-remediation-activities"></a>Suivre les activités de correction du jour zéro
 
-Go to the threat and vulnerability management [Remediation](tvm-remediation.md) page to view the remediation activity item. Si vous avez choisi l'option de correction « Attention requise », il n'y aura aucune barre de progression, état du ticket ou date d'échéance, car il n'existe aucune action réelle que nous pouvons surveiller. Vous pouvez filtrer par type de correction, par exemple « mise à jour logicielle » ou « attention requise », pour voir tous les éléments d'activité dans la même catégorie.
+Go to the Gestion des menaces et des vulnérabilités [Remediation](tvm-remediation.md) page to view the remediation activity item. Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller. Vous pouvez filtrer par type de correction, par exemple « mise à jour logicielle » ou « attention requise », pour voir tous les éléments d’activité dans la même catégorie.
 
 ## <a name="patching-zero-day-vulnerabilities"></a>Correction des vulnérabilités du jour zéro
 
-Lorsqu'un correctif est publié pour le jour zéro, la recommandation est modifiée en « Mise à jour » et une étiquette bleue en plus de celle-ci indique « Nouvelle mise à jour de sécurité pour le jour zéro ». Il ne sera plus considérer comme un jour zéro, la balise « zero-day » sera supprimée de toutes les pages.
+Lorsqu’un correctif est publié pour le jour zéro, la recommandation est modifiée en « Mise à jour » et une étiquette bleue en plus de celle-ci indique « Nouvelle mise à jour de sécurité pour le jour zéro ». Il ne sera plus considérer comme un jour zéro, la balise « zero-day » sera supprimée de toutes les pages.
 
 ![Recommandation pour « Mettre à jour Microsoft Windows 10 » avec une nouvelle étiquette de correctif.](images/tvm-zero-day-patch.jpg)
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Vue d'ensemble de la gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [Vue d’ensemble gestion des vulnérabilités menaces et gestion des vulnérabilités menaces](next-gen-threat-and-vuln-mgt.md)
 - [Tableau de bord](tvm-dashboard-insights.md)
 - [Recommandations de sécurité](tvm-security-recommendation.md)
 - [Inventaire des logiciels](tvm-software-inventory.md)

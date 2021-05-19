@@ -1,5 +1,5 @@
 ---
-title: Gouvernance de l’accès dans les groupes Microsoft 365, Teams et SharePoint
+title: Gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,17 +14,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Découvrez la gouvernance de l’accès dans les groupes Microsoft 365, Teams et SharePoint.
-ms.openlocfilehash: 44b90e461c81875fa5ccf728c890d5eaebf7d613
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: En savoir plus sur la gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint.
+ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922279"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538146"
 ---
-# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Gouvernance de l’accès dans les groupes Microsoft 365, Teams et SharePoint
+# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Gouvernance de l’accès Microsoft 365 groupes, Teams et SharePoint
 
-Il existe de nombreux contrôles qui vous permettent de contrôler la façon dont les personnes accèdent aux ressources dans les groupes, les équipes et SharePoint. Examinez ces options et réfléchissez à la façon dont elles s’miquent aux besoins de votre entreprise, à la sensibilité de vos données et à l’étendue des personnes avec qui vos utilisateurs doivent collaborer.
+De nombreux contrôles vous permettent de contrôler la façon dont les utilisateurs accèdent aux ressources dans les groupes, les équipes et les SharePoint. Examinez ces options et réfléchissez à la façon dont elles s’miquent aux besoins de votre entreprise, à la sensibilité de vos données et à l’étendue des personnes avec qui vos utilisateurs doivent collaborer.
 
 Le tableau suivant fournit une référence rapide pour les contrôles d’accès disponibles dans Microsoft 365. Des informations supplémentaires sont fournies dans les sections suivantes.
 
@@ -37,10 +38,10 @@ Le tableau suivant fournit une référence rapide pour les contrôles d’accès
 |Accès conditionnel|||
 ||Authentification multifacteur|[Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Contrôler l’accès aux appareils en fonction de la sensibilité au groupe, à l’équipe ou au site.|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Limiter l’accès au site pour les appareils non utilisés.|[Contrôler l’accès à SharePoint à partir d’appareils nonmanagés](/sharepoint/control-access-from-unmanaged-devices)|
+||Limiter l’accès au site pour les appareils non utilisés.|[Contrôler SharePoint’accès à partir d’appareils non utilisés](/sharepoint/control-access-from-unmanaged-devices)|
 ||Contrôler l’accès au site en fonction de l’emplacement|[Contrôler l’accès aux données SharePoint et OneDrive en fonction de l’emplacement réseau](/sharepoint/control-access-based-on-network-location)|
 |Accès invité|||
-||Autoriser ou bloquer le partage SharePoint à partir de domaines spécifiés.|[Restreindre le partage de contenu SharePoint et OneDrive par domaine](/sharepoint/restricted-domains-sharing)|
+||Autoriser ou bloquer SharePoint partage à partir de domaines spécifiés.|[Restreindre le partage de contenu SharePoint et OneDrive par domaine](/sharepoint/restricted-domains-sharing)|
 ||Autoriser ou bloquer l’appartenance à une équipe ou à un groupe à partir de domaines spécifiés.|[Autoriser ou bloquer les invitations à des utilisateurs B2B d’organisations spécifiques](/azure/active-directory/b2b/allow-deny-list)|
 ||Empêcher le partage anonyme.|[Désactiver les liens Tout le monde](./share-limit-accidental-exposure.md#turn-off-anyone-links)|
 ||Contrôler les autorisations pour les liens d’accès anonyme.|[Définir des autorisations de lien pour les liens Tout le monde](./best-practices-anonymous-sharing.md#set-link-permissions)|
@@ -60,11 +61,11 @@ L’appartenance aux équipes et aux groupes est contrôlée par les propriétai
 
 - [Gérer la découverte d’équipes privées dans Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)
 
-Vous pouvez gérer l’appartenance d’un groupe ou d’une équipe dynamiquement en fonction de certains critères, tels que le service. Dans ce cas, les membres et les propriétaires ne peuvent pas inviter des personnes à l’équipe. Les groupes dynamiques utilisent les métadonnées que vous définissez dans Azure Active Directory pour contrôler qui est membre du groupe. Assurez-vous que les métadonnées que vous utilisez sont complètes et à jour, car des métadonnées incorrectes peuvent entraîner l’ajout d’utilisateurs en dehors des groupes ou d’utilisateurs incorrects.
+Vous pouvez gérer l’appartenance d’un groupe ou d’une équipe dynamiquement en fonction de certains critères, tels que le service. Dans ce cas, les membres et les propriétaires ne peuvent pas inviter des personnes à l’équipe. Les groupes dynamiques utilisent les métadonnées que vous Azure Active Directory pour contrôler qui est membre du groupe. Assurez-vous que les métadonnées que vous utilisez sont complètes et à jour, car des métadonnées incorrectes peuvent entraîner l’ajout d’utilisateurs en dehors des groupes ou d’utilisateurs incorrects.
 
 - [Créer ou mettre à jour un groupe dynamique dans Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
-Les sites SharePoint permettent d’ajouter des propriétaires, des membres et des visiteurs en dehors de l’appartenance à un groupe ou à une équipe. En fonction de vos besoins, vous pouvez restreindre les personnes qui peuvent inviter des personnes sur le site. En outre, en fonction de la sensibilité des informations dans un site donné, vous pouvez restreindre les personnes qui peuvent partager des fichiers et des dossiers. Ces restrictions sont configurées par l’équipe, le groupe ou le propriétaire du site :
+SharePoint sites permettent d’ajouter des propriétaires, des membres et des visiteurs en dehors de l’appartenance à un groupe ou à une équipe. En fonction de vos besoins, vous pouvez limiter les personnes qui peuvent inviter des personnes sur le site. En outre, en fonction de la sensibilité des informations dans un site donné, vous pouvez restreindre les personnes qui peuvent partager des fichiers et des dossiers. Ces restrictions sont configurées par l’équipe, le groupe ou le propriétaire du site :
 
 - [Configurer et gérer les demandes d’accès](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)
 
@@ -88,20 +89,20 @@ Ressources supplémentaires :
 
 - [Planifier un déploiement d’accès conditionnel](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Présentation de Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
+- [Microsoft Intune vue d’ensemble](/mem/intune/fundamentals/what-is-intune)
 
-- [Contrôler l’accès à SharePoint à partir d’appareils nonmanagés](/sharepoint/control-access-from-unmanaged-devices)
+- [Contrôler SharePoint’accès à partir d’appareils non utilisés](/sharepoint/control-access-from-unmanaged-devices)
 
 
 ## <a name="guest-access"></a>Accès invité
 
-Vous pouvez restreindre les invités en fonction du domaine de leur adresse de messagerie. SharePoint offre des paramètres de restriction de domaine propres à l’organisation et au site. Les groupes et Teams utilisent les listes d’autoriser et de refuser de domaine dans Azure AD. Veillez à configurer les deux paramètres pour éviter le partage indésirable et garantir une expérience utilisateur cohérente :
+Vous pouvez restreindre les invités en fonction du domaine de leur adresse de messagerie. SharePoint offre des paramètres de restriction de domaine propres à l’organisation et au site. Les groupes et Teams utiliser les listes d’autoriser et de refuser de domaine dans Azure AD. Veillez à configurer les deux paramètres pour éviter le partage indésirable et garantir une expérience utilisateur cohérente :
 
 - [Restreindre le partage de contenu SharePoint et OneDrive par domaine](/sharepoint/restricted-domains-sharing)
 
 - [Autoriser ou bloquer les invitations à des utilisateurs B2B d’organisations spécifiques](/azure/active-directory/b2b/allow-deny-list)
 
-Microsoft 365 permet le partage anonyme de fichiers et de dossiers à l’aide de *liens de* partage Tout le monde. *Tous les* liens peuvent être transmis et toute personne ayant le lien peut accéder à l’élément partagé. En fonction de la sensibilité de vos  données, envisagez de régir la façon dont les liens Tout le monde sont utilisés, y compris de les éteindre entièrement, de restreindre les autorisations de lien en lecture seule ou de définir un délai d’expiration pour eux :
+Microsoft 365 permet le partage anonyme de fichiers et de dossiers à l’aide de liens de partage *Tout le* monde. *Tous les* liens peuvent être transmis et toute personne ayant le lien peut accéder à l’élément partagé. En fonction de la sensibilité de vos  données, envisagez de régir la façon dont les liens Tout le monde sont utilisés, y compris de les éteindre entièrement, de restreindre les autorisations de lien en lecture seule ou de définir un délai d’expiration pour eux :
 
 - [Désactiver les liens Tout le monde](./share-limit-accidental-exposure.md#turn-off-anyone-links)
 
@@ -109,11 +110,11 @@ Microsoft 365 permet le partage anonyme de fichiers et de dossiers à l’aide d
 
 - [Définir une date d’expiration pour les liens Tout le monde](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)
 
-Lorsque vous partagez des fichiers ou des dossiers, les utilisateurs peuvent choisir parmi plusieurs types de liens. Pour réduire le risque de partage inapproprié accidentel, vous pouvez modifier le type de lien par défaut présenté aux utilisateurs lorsqu’ils partagent. Par exemple, la modification de la valeur par  défaut des liens *Tout* le monde (qui autorisent l’accès anonyme) vers les liens des personnes de votre organisation peut réduire le risque de partage externe indésirable d’informations sensibles :
+Lors du partage de fichiers ou de dossiers, les utilisateurs peuvent choisir parmi plusieurs types de liens. Pour réduire le risque de partage inapproprié accidentel, vous pouvez modifier le type de lien par défaut présenté aux utilisateurs lorsqu’ils partagent. Par exemple, la modification de la valeur par  défaut des liens *Tout* le monde (qui autorisent l’accès anonyme) vers les liens des personnes de votre organisation peut réduire le risque de partage externe indésirable d’informations sensibles :
 
 - [Modifier le type de lien par défaut d’un site](/sharepoint/change-default-sharing-link)
 
-Si votre organisation dispose de données sensibles que vous devez partager avec des invités, mais que vous êtes préoccupé par le partage inapproprié, vous pouvez limiter le partage externe de fichiers et de dossiers aux membres des groupes de sécurité spécifiés. De cette façon, vous pouvez restreindre le partage en externe à un groupe spécifique de personnes ou demander à vos utilisateurs de prendre une formation sur le partage externe approprié avant de les ajouter au groupe de sécurité :
+Si votre organisation dispose de données sensibles que vous devez partager avec des invités, mais que vous êtes préoccupé par le partage inapproprié, vous pouvez limiter le partage externe de fichiers et de dossiers aux membres des groupes de sécurité spécifiés. De cette façon, vous pouvez restreindre le partage en externe à un groupe spécifique de personnes ou demander à vos utilisateurs de prendre des formations sur le partage externe approprié avant de les ajouter au groupe de sécurité :
 
 - [Limiter le partage externe aux groupes de sécurité spécifiés](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
@@ -125,7 +126,7 @@ Dans un environnement où vous invitez fréquemment des invités à des groupes 
 
 - [Configurer les révisions d’accès invité](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
 
-Microsoft 365 propose de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter leur partage, examinez les options de limitation du partage :
+Microsoft 365 offre de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter la façon dont elles sont partagées, examinez les options de limitation du partage :
 
 - [Limiter le partage dans Microsoft 365](./microsoft-365-limit-sharing.md)
 
@@ -151,7 +152,7 @@ De nombreuses organisations ont des partenariats commerciaux avec d’autres org
 
 - [Qu’est-ce que la gestion des droits Azure AD ?](/azure/active-directory/governance/entitlement-management-overview)
 
-Les canaux privés dans Teams autorisent les conversations étendues et le partage de fichiers entre un sous-ensemble de membres de l’équipe. En fonction de vos besoins spécifiques, vous pouvez autoriser ou bloquer cette fonctionnalité.
+Les canaux privés Teams autoriser les conversations étendues et le partage de fichiers entre un sous-ensemble de membres de l’équipe. En fonction de vos besoins spécifiques, vous pouvez autoriser ou bloquer cette fonctionnalité.
 
 - [Canaux privés dans Microsoft Teams](/MicrosoftTeams/private-channels)
 
@@ -159,9 +160,9 @@ Les canaux privés dans Teams autorisent les conversations étendues et le parta
 
 Ressources supplémentaires :
 
-- [Gouvernance des identités Azure Active Directory](/azure/active-directory/governance)
+- [Azure Active Directory Gouvernance des identités](/azure/active-directory/governance)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 

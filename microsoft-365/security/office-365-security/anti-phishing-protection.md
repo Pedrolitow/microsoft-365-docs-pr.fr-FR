@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570611"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538338"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
@@ -43,19 +43,21 @@ Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accé
 
 - **La whaling** est dirigée vers les cadres ou d’autres cibles à valeur élevée au sein d’une organisation pour un effet maximal.
 
-- La compromission de messagerie professionnelle **(BEC)** utilise des expéditeurs de confiance falsifiés (responsables financiers, clients, partenaires de confiance, etc.) pour duplicher les destinataires dans l’approbation des paiements, le transfert de fonds ou la découverte de données client. Pour en savoir plus, regardez [cette vidéo.](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2)
+- La compromission de messagerie professionnelle **(BEC)** utilise des expéditeurs de confiance falsifiés (responsables financiers, clients, partenaires de confiance, etc.) pour duplicher les destinataires dans l’approbation des paiements, le transfert de fonds ou la découverte de données client. Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2).
 
-- **Les ransomware** qui chiffrent vos données et exigent un paiement pour les déchiffrer démarrent presque toujours dans les messages d’hameçonnage. La protection anti-hameçonnage ne peut pas vous aider à déchiffrer les fichiers chiffrés, mais elle peut vous aider à détecter les messages de hameçonnage initiaux associés à la campagne de ransomware. Pour plus d’informations sur la récupération suite à une attaque par ransomware, voir Récupérer à partir d’une attaque par ransomware dans [Microsoft 365.](recover-from-ransomware.md)
+- **Les ransomware** qui chiffrent vos données et exigent un paiement pour les déchiffrer démarrent presque toujours dans les messages d’hameçonnage. La protection anti-hameçonnage ne peut pas vous aider à déchiffrer les fichiers chiffrés, mais elle peut vous aider à détecter les messages de hameçonnage initiaux associés à la campagne de ransomware. Pour plus d’informations sur la récupération suite à une attaque par ransomware, voir [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
 
 Avec la complexité croissante des attaques, il est même difficile pour les utilisateurs formés d’identifier les messages de hameçonnage sophistiqués. Heureusement, Exchange Online Protection (EOP) et les fonctionnalités supplémentaires de Microsoft Defender pour Office 365 peuvent vous aider.
 
 ## <a name="anti-phishing-protection-in-eop"></a>Protection anti-hameçonnage dans EOP
 
-EOP (autrement dit, les organisations Microsoft 365 sans Microsoft Defender pour Office 365) contient des fonctionnalités qui peuvent aider à protéger votre organisation contre les menaces de hameçonnage :
+EOP (autrement dit, Microsoft 365 organisations sans Microsoft Defender pour Office 365) contient des fonctionnalités qui peuvent aider à protéger votre organisation contre les menaces de hameçonnage :
 
-- **Veille contre l’usurpation d’identité** : passez en revue les messages usurpant une identité provenant des expéditeurs dans les domaines internes et externes, et autorisez ou bloquez ces expéditeurs. Pour plus d’informations, voir [Configurer la veille contre l’usurpation d’adresse dans EOP.](learn-about-spoof-intelligence.md)
+- **Veille contre** l’usurpation d’adresse : utilisez la veille contre l’usurpation d’informations pour examiner les expéditeurs usurpés détectés dans les messages provenant de domaines externes et internes, et autoriser ou bloquer manuellement ces expéditeurs détectés. Pour plus d’informations, [voir informations sur l’intelligence contre l’usurpation d’adresse dans EOP.](learn-about-spoof-intelligence.md)
 
-- Stratégies **anti-hameçonnage** dans EOP : activer ou désactiver la veille contre l’usurpation d’identité, activer ou désactiver l’identification des expéditeurs non authentifiés dans Outlook et spécifier l’action pour les expéditeurs usurpés bloqués (déplacer vers le dossier Courrier indésirable ou la mise en quarantaine). Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans EOP.](configure-anti-phishing-policies-eop.md)
+- Stratégies **anti-hameçonnage** dans EOP : activer ou désactiver la veille contre l’usurpation d’identité, activer ou désactiver l’identification des expéditeurs non authentifiés dans Outlook et spécifier l’action pour les expéditeurs usurpés bloqués. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans EOP.](configure-anti-phishing-policies-eop.md)
+
+- Autoriser ou bloquer les expéditeurs usurpés dans la liste d’adresses client **autoriser/bloquer**: lorsque vous remplacez le verdict dans l’aperçu  de l’usurpation d’intelligence, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés avant qu’ils ne soit détectés par la veille contre l’usurpation d’adresse. Pour plus d’informations, [voir Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
 
 - Authentification de messagerie implicite : EOP améliore les vérifications standard de l’authentification du courrier électronique pour le courrier entrant ([SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC)](use-dmarc-to-validate-email.md)avec la réputation de l’expéditeur, l’historique des expéditeurs, l’historique des destinataires, l’analyse comportementale et d’autres techniques avancées pour vous aider à identifier les expéditeurs falsifiés. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
 
@@ -63,14 +65,14 @@ EOP (autrement dit, les organisations Microsoft 365 sans Microsoft Defender pour
 
 Microsoft Defender pour Office 365 contient des fonctionnalités supplémentaires et plus avancées de protection contre le phishing :
 
-- Stratégies anti-hameçonnage dans Microsoft Defender pour **Office 365**: créez des stratégies personnalisées, configurez les paramètres de protection contre l’emprunt d’identité (protégez les utilisateurs et les domaines contre l’emprunt d’identité), les paramètres d’intelligence des boîtes aux lettres et les seuils d’hameçonnage avancés ajustables. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.](configure-atp-anti-phishing-policies.md) Pour plus d’informations sur les différences entre les stratégies anti-hameçonnage dans EOP et les stratégies anti-hameçonnage dans Defender pour Office 365, voir stratégies anti-hameçonnage dans [Microsoft 365.](set-up-anti-phishing-policies.md)
+- Stratégies **anti-hameçonnage** dans Microsoft Defender pour Office 365 : configurer les paramètres de protection contre l’emprunt d’identité pour des expéditeurs et domaines d’expéditeur de messages spécifiques, des paramètres d’intelligence de boîte aux lettres et des seuils d’hameçonnage avancés réglables. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md). Pour plus d’informations sur les différences entre les stratégies anti-hameçonnage dans EOP et les stratégies anti-hameçonnage dans Defender pour Office 365, voir stratégies [anti-hameçonnage](set-up-anti-phishing-policies.md)dans Microsoft 365 .
 
-- **Affichages campagne**: l’apprentissage automatique et d’autres heuristiques identifient et analysent les messages impliqués dans des attaques par hameçonnage coordonnées contre l’ensemble du service et de votre organisation. Pour plus d’informations, [voir Affichages des campagnes dans Microsoft Defender pour Office 365.](campaigns.md)
+- **Affichages campagne**: l’apprentissage automatique et d’autres heuristiques identifient et analysent les messages impliqués dans des attaques par hameçonnage coordonnées contre l’ensemble du service et de votre organisation. Pour plus d’informations, [voir Affichages des campagnes dans Microsoft Defender pour Office 365](campaigns.md).
 
-- **Simulateur d’attaques**: les administrateurs peuvent créer des messages de hameçonnage factices et les envoyer à des utilisateurs internes en tant qu’outil d’éducation. Pour plus d’informations, [voir Simulateur d’attaques dans Microsoft Defender pour Office 365.](attack-simulator.md)
+- **Simulateur d’attaques**: les administrateurs peuvent créer des messages de hameçonnage factices et les envoyer à des utilisateurs internes en tant qu’outil d’éducation. Pour plus d’informations, [voir Simulateur d’attaques](attack-simulator.md)dans Microsoft Defender pour Office 365 .
 
 ## <a name="other-anti-phishing-resources"></a>Autres ressources anti-hameçonnage
 
 - Pour les utilisateurs finaux : [protégez-vous contre les schémas de hameçonnage et d’autres formes de fraude en ligne.](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)
 
-- [Comment Microsoft 365 valide l’adresse De pour empêcher le hameçonnage.](how-office-365-validates-the-from-address.md)
+- [Comment Microsoft 365 valide l’adresse De pour empêcher le hameçonnage](how-office-365-validates-the-from-address.md).

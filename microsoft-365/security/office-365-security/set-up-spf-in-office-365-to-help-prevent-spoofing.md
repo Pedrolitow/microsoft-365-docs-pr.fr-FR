@@ -19,12 +19,12 @@ ms.custom:
 description: Découvrez comment mettre à jour un enregistrement DNS (service de nom de domaine) afin que vous puissiez utiliser SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d200c4cf17a3d42ddafca301fecbf18c249ac37
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 828d76b95a1e3f8d1a1851121d28603a1922f486
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245683"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538986"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurer SPF pour empêcher l’usurpation
 
@@ -45,6 +45,13 @@ ms.locfileid: "52245683"
 Cet article vous explique comment mettre à jour un enregistrement DNS (Domain Name Service) afin que vous puissiez utiliser l’authentification de messagerie SPF (Sender Policy Framework) avec votre domaine personnalisé dans Office 365.
 
 Le SPF permet de *valider* les messages sortants envoyés à partir de votre domaine personnalisé (provenant de la personne qui la dit). Il s’agit d’une première étape de la configuration des méthodes d’authentification complètes recommandées pour le courrier électronique de SPF, [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md).
+
+- [Conditions préalables](#prerequisites)
+- [Ajouter ou mettre à jour votre enregistrement TXT SPF](#create-or-update-your-spf-txt-record)
+  - [Comment gérer les sous-domaines ?](#how-to-handle-subdomains)
+- [Comment fonctionne l’authentification de messagerie SPF ?](#what-does-spf-email-authentication-actually-do)
+  - [Résolution des problèmes SPF](#troubleshooting-spf)
+- [En savoir plus sur SPF](#more-information-about-spf)
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -118,7 +125,6 @@ Un enregistrement SPF (`*.`) est requis pour chaque domaine et sous-domaine afin
 ## <a name="troubleshooting-spf"></a>Résolution des problèmes SPF
 
 Vous rencontrez des problèmes avec votre enregistrement TXT SPF ? Lisez [Résolution des problèmes : meilleures pratiques pour SPF dans Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
-
 
 ## <a name="what-does-spf-email-authentication-actually-do"></a>Comment fonctionne l’authentification de messagerie SPF ?
 

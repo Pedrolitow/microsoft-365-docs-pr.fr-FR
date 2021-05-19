@@ -16,19 +16,20 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Découvrez les étapes de configuration de Microsoft 365 nécessaires pour configurer un site SharePoint pour la collaboration avec des invités.
-ms.openlocfilehash: fd3cf55b3d95a5c79b9bd4d7c55855f7d73fc0d2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Découvrez les étapes Microsoft 365 configuration requises pour configurer un site SharePoint pour la collaboration avec des invités.
+ms.openlocfilehash: f91b9c64dbdca8ed7e3ada3315cb57f1c728f838
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904647"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539250"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Collaborer avec des invités sur un site
 
-Si vous devez collaborer avec des invités sur plusieurs documents, données et listes, vous pouvez utiliser un site SharePoint. Les sites SharePoint modernes sont connectés aux Groupes Microsoft 365 et peuvent gérer l’appartenance au site et fournir des outils de collaboration supplémentaires tels qu’une boîte aux lettres partagée et un calendrier.
+Si vous avez besoin de collaborer avec des invités dans des documents, des données et des listes, vous pouvez utiliser un site SharePoint web. Les sites SharePoint modernes sont connectés à des groupes Microsoft 365 et peuvent gérer l’appartenance au site et fournir des outils de collaboration supplémentaires tels qu’une boîte aux lettres partagée et un calendrier.
 
-Dans cet article, nous allons passer en revue les étapes de configuration de Microsoft 365 nécessaires pour configurer un site SharePoint pour la collaboration avec des invités.
+Dans cet article, nous allons passer en revue les étapes de configuration Microsoft 365 nécessaires pour configurer un site SharePoint collaboration avec des invités.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -42,7 +43,7 @@ Le partage dans Microsoft 365 est régi à son niveau le plus élevé par les [
 
 Vérifiez les paramètres de collaboration externe B2B pour vous assurer que le partage avec des invités n’est pas bloqué.
 
-![Capture d’écran de la page Paramètres de collaboration externe Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Capture d’écran Azure Active Directory page Paramètres collaboration externe](../media/azure-ad-organizational-relationships-settings.png)
 
 Pour définir les paramètres de collaboration externe
 
@@ -59,7 +60,7 @@ Si vous travaillez avec des invités de plusieurs organisations, vous souhaitere
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Paramètres invités des groupes Microsoft 365
 
-Les sites SharePoint modernes utilisent les Groupes Microsoft 365 pour contrôler l’accès au site. Les paramètres invités des groupes Microsoft 365 doivent être allumés pour que l’accès invité dans les sites SharePoint fonctionne.
+Les sites SharePoint modernes utilisent Microsoft 365 groupes pour contrôler l’accès au site. Les paramètres Microsoft 365 groupes d’invités doivent être allumés pour que l’accès invité SharePoint sites fonctionne.
 
 ![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
 
@@ -71,11 +72,11 @@ Pour définir les paramètres invités des groupes Microsoft 365
 4. Assurez-vous que les cases à cocher **Permettre aux propriétaires de groupe d’ajouter des personnes externes à votre organisation à des groupes Microsoft 365 en tant qu'invités** et **Permettre aux membres du groupe invités d’accéder au contenu du groupe** sont cochées.
 5. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>Paramètres de partage au niveau de l’organisation SharePoint
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint de partage au niveau de l’organisation
 
-Pour que les invités ont accès aux sites SharePoint, les paramètres de partage au niveau de l’organisation SharePoint doivent autoriser le partage avec des invités.
+Pour que les invités ont accès à SharePoint sites web, les paramètres SharePoint de partage au niveau de l’organisation doivent autoriser le partage avec des invités.
 
-Les paramètres au niveau de l’organisation déterminent les paramètres qui seront disponibles pour des sites individuels. Les paramètres de site ne peuvent pas être plus permissifs que les paramètres au niveau de l’organisation.
+Les paramètres au niveau de l’organisation déterminent les paramètres qui seront disponibles pour les sites individuels. Les paramètres de site ne peuvent pas être plus permissifs que les paramètres au niveau de l’organisation.
 
 Si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifiés, choisissez **Tout le monde.** Si vous souhaitez vous assurer que toutes les personnes extérieures à votre organisation doivent s’authentifier, choisissez Invités nouveaux **et existants.** Choisissez le paramètre le plus permissif qui sera nécessaire pour n’importe quel site de votre organisation.
 
@@ -85,7 +86,7 @@ Si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifi
 Pour définir les paramètres de partage SharePoint au niveau de l’organisation
 
 1. Dans le Centre d’administration Microsoft 365, dans le volet de navigation gauche, sous **Centres d’administration**, cliquez sur **SharePoint**.
-2. Dans le Centre d’administration SharePoint, dans le volet de navigation de gauche, sous **Stratégies,** cliquez sur **Partage.**
+2. Dans le SharePoint d’administration, dans le volet de navigation de gauche, sous **Stratégies,** cliquez sur **Partage.**
 3. Assurez-vous que le partage externe pour SharePoint est **Tout le monde** ou **Invités nouveaux et existants**.
 4. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
@@ -110,7 +111,7 @@ Vérifiez les paramètres de partage au niveau du site pour vous assurer qu’il
 
 Notez que le site ne peut pas être partagé avec des personnes non authentifiés **(paramètre** Tout le monde), mais que des fichiers et dossiers individuels le peuvent.
 
-Vous pouvez également utiliser des [étiquettes de sensibilité pour contrôler les paramètres de partage externe pour les sites SharePoint.](../compliance/sensitivity-labels-teams-groups-sites.md)
+Vous pouvez également utiliser des [étiquettes de sensibilité pour contrôler les paramètres](../compliance/sensitivity-labels-teams-groups-sites.md)de partage externe pour SharePoint sites.
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -123,15 +124,15 @@ Pour définir les paramètres au niveau du site
 
 ## <a name="invite-users"></a>Inviter des utilisateurs
 
-Les paramètres de partage d’invités sont désormais configurés, afin que vous pouvez commencer à ajouter des utilisateurs internes et des invités à votre site. L’accès au site est contrôlé par le groupe Microsoft 365 associé. Nous y ajouterons donc des utilisateurs.
+Les paramètres de partage d’invités sont désormais configurés, afin que vous pouvez commencer à ajouter des utilisateurs internes et des invités à votre site. L’accès au site est contrôlé par le groupe Microsoft 365 associé, donc nous y ajouterons des utilisateurs.
 
 Pour inviter des utilisateurs internes à un groupe
 1. Accédez au site où vous souhaitez ajouter des utilisateurs.
-2. Cliquez **sur le** lien Membres dans le coin supérieur droit qui indique le nombre de membres.
+2. Cliquez **sur Lien** Membres dans le coin supérieur droit qui indique le nombre de membres.
 3. Cliquez sur **Ajouter des membres**.
 4. Tapez les noms ou adresses e-mail des utilisateurs que vous souhaitez inviter sur le site, puis cliquez sur **Enregistrer**.
 
-Les invités ne peuvent pas être ajoutés à partir du site. Vous devez les ajouter à l’aide d’Outlook sur le web. Par conséquent, comme condition préalable pour ajouter et inviter des invités à un groupe, cliquez sur l’URL du site dans la colonne **URL**  pour accéder à la page spécifique au site. Dans cette page, cliquez sur **l’icône du lanceur d’applications** et sélectionnez **Outlook.** Il s’agit de l’écran à partir duquel vous pouvez inviter des invités dans un groupe, pour lequel la procédure est décrite ci-dessous.
+Les invités ne peuvent pas être ajoutés à partir du site. Vous devez les ajouter à l’aide Outlook sur le web. Par conséquent, comme condition préalable pour ajouter et inviter des invités à un groupe, cliquez sur l’URL du site dans la colonne **URL**  pour accéder à la page spécifique au site. Dans cette page, cliquez sur **l’icône du lanceur** d’applications et **sélectionnez Outlook**. Il s’agit de l’écran à partir duquel vous pouvez inviter des invités dans un groupe, pour lequel la procédure est décrite ci-dessous.
 
 Pour inviter des invités à un groupe
 1. Sous **Groupes,** cliquez sur le groupe auquel vous souhaitez inviter des invités.

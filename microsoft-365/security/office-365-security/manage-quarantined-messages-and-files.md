@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine pour tous les utilisateurs dans Exchange Online Protection (EOP). Les administrateurs des organisations avec Microsoft Defender pour Office 365 peuvent également gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 508866fd66e4cbd00f559446d4ce52a4be063c94
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272203"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539106"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gérer les messages et fichiers mis en quarantaine en tant qu’administrateur dans Exchange Online PowerShell
 
@@ -59,10 +59,10 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
-  - <sup>\*</sup>Les membres  du groupe de rôles Administrateur  de mise en quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine des procédures dans Exchange Online PowerShell.
+  - <sup>\*</sup>Les membres  du groupe de rôles Administrateur  de mise en quarantaine doivent également être membres du groupe de rôles Gestion de l’hygiène dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) pour pouvoir mettre en quarantaine les procédures dans Exchange Online PowerShell.
 
 - Les messages mis en quarantaine sont conservés pendant une période par défaut avant d’être automatiquement supprimés :
-  - 30 jours pour les messages mis en quarantaine par les stratégies anti-courrier indésirable (courrier indésirable, hameçonnage et courrier électronique en masse). Il s’agit de la valeur par défaut et de la valeur maximale. Pour configurer (plus bas) cette valeur, voir [Configurer des stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
+  - 30 jours pour les messages mis en quarantaine par des stratégies anti-courrier indésirable (courrier indésirable, hameçonnage et courrier électronique en masse). Il s’agit de la valeur par défaut et de la valeur maximale. Pour configurer (plus bas) cette valeur, voir [Configurer des stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
   - 15 jours pour les messages contenant des programmes malveillants.
   - 15 jours pour les fichiers mis en quarantaine par les pièces jointes SharePoint, OneDrive et Microsoft Teams dans Defender for Office 365.
 
@@ -72,7 +72,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
 
 ### <a name="view-quarantined-email"></a>Afficher les e-mails mis en quarantaine
 
-1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Examiner** \> **Quarantaine**.
+1. Dans le Centre de sécurité & conformité, go to **Threat Management** \> **Review** \> **Quarantine**.
 
 2. Vérifiez que l’option **Afficher les mis en quarantaine** est définie sur la valeur par défaut de **messagerie**.
 
@@ -106,7 +106,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
    - **Raison de la mise en quarantaine :**
      - **Stratégie**: le message correspond aux conditions d’une règle de flux de messagerie (également appelée règle de transport).
      - **E-mail de masse**
-     - **Hameçonnage**: le  verdict de filtrage du courrier indésirable était le courrier électronique de hameçonnage ou la protection anti-hameçonnage qui a mis en quarantaine le message [(paramètres](set-up-anti-phishing-policies.md#spoof-settings) d’usurpation d’identité ou protection contre [l’usurpation d’identité).](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+     - **Hameçonnage**: le  verdict de filtrage du courrier indésirable était le courrier de hameçonnage ou la protection anti-hameçonnage mis en quarantaine le message ([paramètres](set-up-anti-phishing-policies.md#spoof-settings) d’usurpation d’identité ou protection contre [l’usurpation d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Programme malveillant**
      - **Courrier indésirable**
      - **Hameçonnage à haut niveau de confiance**
@@ -118,7 +118,7 @@ Vous affichez et gérez les messages mis en quarantaine dans le Centre de sécur
      - **Stratégie de filtrage de contenu hébergé** (stratégie anti-courrier indésirable)
      - **Règle de transport**
 
-   - **Destinataire du message électronique**: tous les utilisateurs ou uniquement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent uniquement gérer les messages mis en quarantaine qui leur sont envoyés.
+   - **Destinataire du message** électronique : tous les utilisateurs ou uniquement les messages qui vous sont envoyés. Les utilisateurs finaux peuvent uniquement gérer les messages mis en quarantaine qui leur sont envoyés.
 
    Pour effacer le filtre, cliquez sur **Effacer**. Pour masquer le menu déroulant de filtrage, cliquez de nouveau sur **Filtrer**.
 
@@ -168,7 +168,7 @@ Lorsque vous sélectionnez un message électronique dans la liste, les détails 
 
 ### <a name="take-action-on-quarantined-email"></a>Effectuer une action sur les messages mis en quarantaine
 
-Une fois que vous avez sélectionné un message, plusieurs options s’offrent à vous pour ce qu’il faut faire avec les messages dans le volet volant **Détails** :
+Une fois que vous avez sélectionné un message, plusieurs options s’offrent à vous pour savoir comment les faire dans le volet volant **Détails** :
 
 - **Message de publication**: dans le volet volant qui s’affiche, choisissez les options suivantes :
 
@@ -196,15 +196,15 @@ Une fois que vous avez sélectionné un message, plusieurs options s’offrent �
 
 - **Télécharger le message** : dans le volet déroulant qui s’affiche, sélectionnez **Je comprends les risques liés au téléchargement de ce message** pour enregistrer une copie locale du message au format .eml.
 
-- **Bloquer l’expéditeur**: ajoutez l’expéditeur à la liste des expéditeurs bloqués sur votre boîte aux lettres. Pour plus d’informations, voir [Bloquer un expéditeur de courrier.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+- **Bloquer l’expéditeur** : ajoutez l’expéditeur à la liste des expéditeurs bloqués dans votre boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Envoyer un message**: dans le volet volant qui s’affiche, choisissez les options suivantes :
 
-  - **Type d’objet**: **e-mail** (par **défaut), URL** ou **pièce jointe**.
+  - **Type d’objet**: **e-mail** (par défaut), **URL** ou **pièce jointe**.
 
-  - **Format de** soumission : **ID de message** réseau (par défaut, avec la valeur correspondante dans la zone **ID** de message réseau) ou fichier **(accédez** à un fichier .eml ou .msg local). Notez que si vous sélectionnez **Fichier,** puis **ID de message** réseau, la valeur initiale a disparu.
+  - **Format de** soumission : **ID de message** réseau (par défaut, avec la valeur correspondante dans la zone **ID** de message réseau) ou fichier **(accédez** à un fichier .eml ou .msg local). Notez que si vous **sélectionnez Fichier,** puis **ID de message** réseau, la valeur initiale a disparu.
 
-  - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer **sur Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
+  - **Destinataires :** tapez au moment du bail un destinataire d’origine du message, ou cliquez sur **Sélectionner** tout pour identifier tous les destinataires. Vous pouvez également cliquer sur **Sélectionner tout,** puis supprimer de manière sélective des destinataires individuels.
 
   - **Raison de l’envoi** **: ne doit pas avoir été bloqué** (par défaut) ou doit avoir été **bloqué**.
 
@@ -219,7 +219,7 @@ Lorsque vous sélectionnez plusieurs messages mis en quarantaine dans la liste (
 - **Déplacer les messages** : Les options sont les mêmes que lorsque vous déplacez un seul message, sauf que vous ne pouvez pas sélectionner **Déplacer les messages pour des destinataires spécifiques**. Vous pouvez seulement sélectionner **Déplacer le message pour tous les destinataires** ou **Déplacer les messages pour d'autres personnes**.
 
   > [!NOTE]
-  > Envisagez le scénario suivant : john@gmail.com envoie un message à faith@contoso.com et john@subsidiary.contoso.com. Gmail bifurcate ce message en deux copies qui sont toutes deux acheminées vers la quarantaine en tant que hameçonnage dans Microsoft. Un administrateur publie ces deux messages admin@contoso.com. Le premier message publié qui atteint la boîte aux lettres d’administration est remis. Le deuxième message publié est identifié comme remise en double et est ignoré. Les messages sont identifiés comme doublons s’ils ont le même ID de message et le même temps de réception.
+  > Envisagez le scénario suivant : john@gmail.com envoie un message à faith@contoso.com et john@subsidiary.contoso.com. Gmail bifurme ce message en deux copies qui sont toutes deux acheminées vers la quarantaine en tant que hameçonnage dans Microsoft. Un administrateur publie ces deux messages admin@contoso.com. Le premier message publié qui atteint la boîte aux lettres d’administration est remis. Le deuxième message publié est identifié comme remise en double et est ignoré. Les messages sont identifiés comme doublons s’ils ont le même ID de message et le même temps de réception.
 
 - **Supprimer des messages**: après avoir cliqué sur **Oui** dans l’avertissement qui s’affiche, les messages sont immédiatement supprimés sans être envoyés aux destinataires d’origine.
 
@@ -228,15 +228,15 @@ Lorsque vous avez terminé, cliquez sur **Fermer**.
 ## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Microsoft Defender pour Office 365 uniquement : utiliser le Centre de sécurité & conformité pour gérer les fichiers mis en quarantaine
 
 > [!NOTE]
-> Les procédures pour les fichiers mis en quarantaine dans cette section sont disponibles uniquement pour les abonnés à Microsoft Defender pour Office 365 Plan 1 et Plan 2.
+> Les procédures pour les fichiers mis en quarantaine dans cette section sont disponibles uniquement pour microsoft Defender pour les abonnés Office 365 Plan 1 et Plan 2.
 
-Dans les organisations avec Defender pour Office 365, les administrateurs peuvent gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams. Pour activer la protection de ces fichiers, voir Activer les [pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams.](turn-on-mdo-for-spo-odb-and-teams.md)
+Dans les organisations avec Defender pour Office 365, les administrateurs peuvent gérer les fichiers mis en quarantaine dans SharePoint Online, OneDrive Entreprise et Microsoft Teams. Pour activer la protection de ces fichiers, voir Activer les pièces [jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Afficher les fichiers mis en quarantaine
 
-1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Examiner** \> **Quarantaine**.
+1. Dans le Centre de sécurité & conformité, go to **Threat Management** \> **Review** \> **Quarantine**.
 
-2. Modifier **l’affichage mis en** quarantaine dans les fichiers de **valeurs.** Vous pouvez trier un champ en cliquant sur un en-tête de colonne disponible.
+2. Modifier **l’affichage mis en quarantaine** dans les fichiers de **valeurs.** Vous pouvez trier un champ en cliquant sur un en-tête de colonne disponible.
 
 3. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les colonnes par défaut sont marquées d’un astérisque ( <sup>\*</sup> :
 
@@ -261,7 +261,7 @@ Dans les organisations avec Defender pour Office 365, les administrateurs peuven
    - **Raison de la mise** en quarantaine : la seule valeur disponible est **Programme malveillant.**
    - **Type de stratégie**
 
-Une fois que vous avez trouvé un fichier spécifique mis en quarantaine, sélectionnez-le pour afficher les détails à son sujet et pour agir dessus (par exemple, afficher, libérer, télécharger ou supprimer le message).
+Une fois que vous avez trouvé un fichier mis en quarantaine spécifique, sélectionnez-le pour afficher les détails à son sujet et pour prendre des mesures (par exemple, afficher, libérer, télécharger ou supprimer le message).
 
 #### <a name="view-quarantined-file-details"></a>Afficher les détails du fichier mis en quarantaine
 
@@ -271,7 +271,7 @@ Lorsque vous sélectionnez un fichier dans la liste, les détails suivants appar
 - **URL du** fichier : URL qui définit l’emplacement du fichier (par exemple, dans SharePoint Online).
 - **Contenu malveillant détecté sur** Date/heure de mise en quarantaine du fichier.
 - **Expire :** date à laquelle le fichier sera supprimé de la quarantaine.
-- **Détecté par**: Defender pour Office 365 ou le moteur anti-programme malveillant de Microsoft.
+- **Detected By**: Defender for Office 365 or Microsoft’s anti-malware engine.
 - **Déplacer ?**
 - **Nom du programme malveillant**
 - **ID de document**: identificateur unique du document.
@@ -296,7 +296,7 @@ Si vous ne les relâchez pas ou ne les supprimez pas, ils seront supprimés à l
 Lorsque vous sélectionnez plusieurs fichiers mis en quarantaine dans la liste (jusqu’à 100), le volet volant **Actions** en bloc s’affiche où vous pouvez prendre les mesures suivantes :
 
 - **Libérer des fichiers**
-- **Supprimer des fichiers**: une fois que vous avez cliqué sur **Oui** dans l’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
+- **Supprimer des fichiers**: une fois que vous avez cliqué **sur Oui** dans l’avertissement qui s’affiche, les fichiers sont immédiatement supprimés.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Utiliser Exchange Online PowerShell ou EOP PowerShell autonome pour afficher et gérer les messages et fichiers mis en quarantaine
 

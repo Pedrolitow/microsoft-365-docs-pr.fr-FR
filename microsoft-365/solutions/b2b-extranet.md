@@ -15,17 +15,18 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: Découvrez comment créer un site extranet B2B ou une équipe avec des invités gérés d’une organisation partenaire.
-ms.openlocfilehash: f9b8d9326f302233ed85c9d168fdf6f343dc6cbf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d76951da5d8affa1dac08cbdc68a91329ca069ed
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904755"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538242"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Créer un extranet B2B avec des invités gérés
 
-Vous pouvez utiliser [Azure Active Directory Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) pour créer un extranet B2B afin de collaborer avec une organisation partenaire qui utilise Azure Active Directory. Cela permet aux utilisateurs de s’inscrire eux-mêmes dans le site ou l’équipe extranet et de recevoir l’accès via un flux de travail d’approbation.
+Vous pouvez utiliser [Azure Active Directory gestion des](/azure/active-directory/governance/entitlement-management-overview) droits d’accès pour créer un extranet B2B afin de collaborer avec une organisation partenaire qui utilise Azure Active Directory. Cela permet aux utilisateurs de s’inscrire eux-mêmes sur le site ou l’équipe extranet et de recevoir un accès via un flux de travail d’approbation.
 
 Grâce à cette méthode de partage de ressources pour la collaboration, l’organisation partenaire peut aider à maintenir et approuver les invités de leur côté, réduisant ainsi la charge qui pèse sur votre service informatique et permettant aux personnes les plus familiarisés avec le contrat de collaboration de gérer l’accès des utilisateurs.
 
@@ -37,7 +38,7 @@ Avant de commencer, créez le site ou l’équipe que vous souhaitez partager av
 
 L’utilisation de cette fonctionnalité nécessite une licence Azure AD Premium P2. 
 
-Les clouds spécialisés, tels qu’Azure Allemagne et Azure China 21Vianet, ne sont actuellement pas disponibles.
+Les clouds spécialisés, tels qu’Azure Germany et Azure China 21Vianet, ne sont actuellement pas disponibles.
 
 ## <a name="video-demonstration"></a>Démonstration vidéo
 
@@ -45,7 +46,7 @@ Cette vidéo illustre les procédures couvertes dans cet article.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
-## <a name="connect-the-partner-organization"></a>Connecter l’organisation partenaire
+## <a name="connect-the-partner-organization"></a>Connecter’organisation partenaire
 
 Pour inviter des invités d’une organisation partenaire, vous devez ajouter le domaine du partenaire en tant qu’organisation connectée dans Azure Active Directory.
 
@@ -56,7 +57,7 @@ Pour ajouter une organisation connectée
 5. Tapez un nom et une description pour l’organisation, puis cliquez sur **Suivant : Répertoire + domaine.**
 6. Cliquez **sur Ajouter un répertoire + domaine.**
 7. Tapez le domaine de l’organisation à connecter, puis cliquez sur **Ajouter.**
-8. Cliquez **sur** Se connecter, puis sur **Suivant : Sponsors**.
+8. Cliquez **Connecter,** puis cliquez sur **Suivant : Sponsors**.
 9. Ajoutez des personnes de votre organisation ou de l’organisation à qui vous voulez approuver l’accès pour les invités.
 10. Cliquez sur **Suivant : Révision + Créer**.
 11. Examinez les paramètres que vous avez choisis, puis cliquez sur **Créer.**
@@ -69,21 +70,21 @@ La première étape de la sélection des ressources à partager avec une organis
 
 Pour créer un catalogue
 1. Dans [Azure Active Directory,](https://aad.portal.azure.com)cliquez **sur Gouvernance des identités.**
-2. Cliquez **sur Catalogues.**
+2. Cliquez **sur Catalogues**.
 3. Cliquez **sur Nouveau catalogue.**
 4. Tapez un nom et une  description pour  le catalogue et assurez-vous que activés et activés pour les utilisateurs externes sont tous deux définies sur **Oui**.
 5. Cliquez sur **Créer**.
 
-   ![Capture d’écran de la page catalogues dans Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
+   ![Capture d’écran de la page catalogues dans Azure Active Directory gouvernance des identités](../media/identity-governance-catalogs.png)
 
 Une fois le catalogue créé, vous ajoutez le site SharePoint ou l’équipe que vous souhaitez partager avec l’organisation partenaire.
 
 Pour ajouter des ressources à un catalogue
 1. Dans Azure AD Identity Governance, cliquez sur **Catalogues,** puis cliquez sur le catalogue dans lequel vous souhaitez ajouter des ressources.
 2. Cliquez **sur Ressources,** puis sur **Ajouter des ressources.**
-3. Sélectionnez les équipes ou les sites SharePoint que vous souhaitez inclure dans votre extranet, puis cliquez sur **Ajouter**.
+3. Sélectionnez les équipes SharePoint sites que vous souhaitez inclure dans votre extranet, puis cliquez sur **Ajouter**.
 
-   ![Capture d’écran de la page ressources du catalogue dans Azure Active Directory Identity Governance](../media/identity-governance-catalog-resource.png)
+   ![Capture d’écran de la page ressources du catalogue dans Azure Active Directory gouvernance des identités](../media/identity-governance-catalog-resource.png)
 
 Une fois que vous avez défini les ressources que vous souhaitez partager, l’étape suivante consiste à créer un package d’accès, qui définit le type d’accès accordé aux utilisateurs partenaires et le processus d’approbation pour les nouveaux utilisateurs partenaires demandant l’accès.
 
@@ -105,7 +106,7 @@ Pour créer un package d’accès
 15. Choisissez les paramètres d’expiration et de révision d’accès que vous souhaitez utiliser, puis cliquez sur **Suivant : Révision + Créer.**
 16. Examinez vos paramètres, puis cliquez sur **Créer.**
 
-    ![Capture d’écran de l’écran packages d’accès dans Azure Active Directory Identity Governance](../media/identity-governance-access-packages.png)
+    ![Capture d’écran de l’écran packages d’accès Azure Active Directory gouvernance des identités](../media/identity-governance-access-packages.png)
 
 Si vous êtes partenaire d’une grande organisation, vous pouvez masquer le package d’accès. Si le package est masqué, les utilisateurs de l’organisation partenaire ne voient pas le package sur leur *portail My Access.* Au lieu de cela, un lien direct doit leur être envoyé pour s’inscrire au package. Le masquage du package d’accès peut réduire le nombre de demandes d’accès inappropriés et peut également aider à maintenir les packages d’accès disponibles organisés dans le portail de l’organisation partenaire.
 

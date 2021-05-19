@@ -1,7 +1,7 @@
 ---
 title: Présentation de Rubriques Microsoft Viva
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: ''
@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez comment rechercher des ressources pour Rubriques Microsoft Viva.
-ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 4596f703f86465e4d2d37e2744493bcaef440b7b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454122"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538914"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Présentation de Rubriques Microsoft Viva
 
@@ -29,13 +29,13 @@ ms.locfileid: "50454122"
 </br>
 
 
-Rubriques Viva est un service Office 365 qui permet aux organisations de transformer des informations en connaissances.
+Topics est un service Microsoft 365 qui aide les organisations à transformer des informations en connaissances.
 
 Les ressources de cette page sont conçues pour vous aider à commencer à découvrir et utiliser Rubriques Viva au sein de votre organisation.
 
 ## <a name="get-started"></a>Prise en main
 
-Les ressources de cette section vous aident à en savoir plus sur Rubriques Viva et sur la manière dont elle peut vous aider.
+Les ressources de cette section vous aident à en savoir plus sur ce qu’est Topics Et comment elle peut vous aider.
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
@@ -66,7 +66,7 @@ Les ressources de cette section aideront votre administrateur au sein de votre o
 |Découvrez comment gérer les personnes qui peuvent consulter des rubriques|[Gérer la visibilité d’une rubrique](topic-experiences-knowledge-rules.md)|
 |Découvrez comment gérer les paramètres de découverte de rubrique|[Gérer la découverte de rubriques](topic-experiences-discovery.md)|
 
-## <a name="work-with-topics"></a>Utiliser les rubriques
+## <a name="work-with-topics"></a>Utiliser les sujets
 
 Les ressources de cette section aident vos utilisateurs à utiliser et à gérer les rubriques.
 

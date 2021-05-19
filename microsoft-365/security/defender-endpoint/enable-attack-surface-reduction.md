@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: b3460e2c9b6073c518bea46147be69d4b89cd96a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345884"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538638"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -43,7 +43,7 @@ ms.locfileid: "52345884"
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent [pas Windows licence E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)pour le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans le centre de sécurité [Microsoft 365](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professional ou Windows E3 ; toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas [Windows licence E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)pour le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans le centre de sécurité [Microsoft 365](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professional ou Windows E3 ; toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 
 Chaque règle asr contient l’un des quatre paramètres ci-après :
 
@@ -55,10 +55,10 @@ Chaque règle asr contient l’un des quatre paramètres ci-après :
 > [!IMPORTANT]
 > Actuellement, le mode avertissement n’est pas pris en charge pour trois règles de récupération automatique lorsque vous configurez des règles asr dans Microsoft Endpoint Manager (MEM). Pour en savoir plus, consultez [les cas où le mode d’avertissement n’est pas pris en charge.](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)
 
-Il est vivement recommandé d’utiliser des règles asr avec une licence Windows E5 (ou une référence de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender pour endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender pour point de terminaison). Toutefois, pour d’autres licences telles que Windows Professional ou E3 qui n’ont pas accès aux fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la assurance sont déclenchées (par exemple, le forwarding d’événement).
+Il est vivement recommandé d’utiliser des règles asr avec une licence Windows E5 (ou une référence de licence similaire) pour tirer parti des fonctionnalités avancées de surveillance et de rapport disponibles dans [Microsoft Defender pour endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender pour endpoint). Toutefois, pour d’autres licences telles que Windows Professional ou E3 qui n’ont pas accès aux fonctionnalités avancées de surveillance et de rapport, vous pouvez développer vos propres outils de surveillance et de rapport en plus des événements générés à chaque point de terminaison lorsque des règles de la assurance sont déclenchées (par exemple, le forwarding d’événement).
 
 > [!TIP]
-> Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+> Pour en savoir plus sur Windows gestion des licences, voir Windows 10 [Licences](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) en volume et obtenir le guide des licences en [volume pour Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 Vous pouvez activer les règles de réduction de la surface d’attaque à l’aide de l’une de ces méthodes :
 
@@ -68,7 +68,7 @@ Vous pouvez activer les règles de réduction de la surface d’attaque à l’a
 - [Stratégie de groupe](#group-policy)
 - [PowerShell](#powershell)
 
-Enterprise de niveau supérieur tel qu’Intune ou Microsoft Endpoint Manager est recommandée. Enterprise au niveau de l’entreprise a pour fonction de réécrire les paramètres de stratégie de groupe ou PowerShell en conflit au démarrage.
+Enterprise de niveau supérieur tel qu’Intune ou Microsoft Endpoint Manager est recommandée. Enterprise au niveau de l’entreprise est en train de réécrire les paramètres de stratégie de groupe ou PowerShell en conflit au démarrage.
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>Exclure des fichiers et des dossiers des règles de la asr
 
@@ -90,13 +90,93 @@ Les procédures suivantes pour l’activation des règles de la asr. contiennent
 
 1. Sélectionnez **Profils de configuration**  >  **d’appareil.** Choisissez un profil de protection de point de terminaison existant ou créez-en un. Pour en créer un, sélectionnez Créer un **profil** et entrez des informations pour ce profil. Pour **le type de profil,** **sélectionnez Endpoint Protection**. Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
 
-2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez **Réduction de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
+2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez Réduction **de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
 
 3. Sous **Exceptions de réduction de la surface d’attaque,** entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
 4. Sélectionnez **OK** dans les trois volets de configuration. Sélectionnez **Ensuite Créer** si vous créez un fichier de protection de point de terminaison ou **Enregistrer** si vous modifiez un fichier existant.
+
+## <a name="mem"></a>MEM
+
+Vous pouvez utiliser Microsoft Endpoint Manager OMA-URI (MEM) pour configurer des règles ASR personnalisées. La procédure suivante utilise la règle Bloquer l’abus des pilotes [signés vulnérables exploités](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) pour l’exemple.
+
+1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil,** cliquez **sur Appareils,** sélectionnez **Profil de configuration,** puis cliquez **sur Créer un profil.**
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM Create Profile](images/mem01-create-profile.png)
+
+2. Dans **Créer un profil,** dans les deux listes de listes suivantes, sélectionnez les listes suivantes :
+
+   - Dans **Plateforme,** sélectionnez **Windows 10 et ultérieures**
+   - Dans **le type de profil,** **sélectionnez Modèles**
+
+   Sélectionnez **Personnalisé,** puis cliquez sur **Créer.**
+
+   > [!div class="mx-imgBorder"]
+   > ![Attributs de profil de règle MEM](images/mem02-profile-attributes.png)
+
+3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Éléments de base.** Dans **1 Informations de** base, dans **Nom,** tapez un nom pour votre modèle, et dans **Description,** vous pouvez taper une description (facultative).
+
+   > [!div class="mx-imgBorder"]
+   > ![Attributs de base MEM](images/mem03-1-basics.png)
+
+4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2** s’ouvrent. Pour les Paramètres OMA-URI, cliquez sur **Ajouter.** Deux options s’affichent maintenant : **Ajouter** et **exporter.**
+
+   > [!div class="mx-imgBorder"]
+   > ![Paramètres de configuration MEM](images/mem04-2-configuration-settings.png)
+
+5. Cliquez **à nouveau sur** Ajouter. La **ligne Ajouter un OMA-URI Paramètres** s’ouvre. Dans **Ajouter une ligne,** faites les choses suivantes :
+
+   - Dans **Nom,** tapez un nom pour la règle.
+   - Dans **Description,** tapez une brève description.
+   - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez.
+   - Dans **type de données,** sélectionnez **Chaîne**.
+   - Dans **Value,** tapez ou collez la valeur GUID, le signe et la valeur State sans espace \= (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+
+   > [!div class="mx-imgBorder"]
+   > ![Configuration OMA URI MEM](images/mem05-add-row-oma-uri.png)
+
+6. Cliquez sur **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** cliquez sur **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l'une des opérations suivantes :
+
+   - Cliquez **sur Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis cliquez sur **Suivant.**
+   - Ou cliquez sur **Suivant**
+
+7. À **l’étape 4 Affectations,** dans **Groupes** inclus - pour les groupes que vous souhaitez que cette règle applique - sélectionnez l’une des options suivantes :
+
+   - **Ajouter des groupes**
+   - **Ajouter tous les utilisateurs**
+   - **Ajouter tous les appareils**
+
+   > [!div class="mx-imgBorder"]
+   > ![Affectations MEM](images/mem06-4-assignments.png)
+
+8. Dans **les groupes exclus,** sélectionnez les groupes que vous souhaitez exclure de cette règle, puis cliquez sur **Suivant**.
+
+9. À **l’étape 5, règles d’applicabilité** pour les paramètres suivants, appliquez les étapes suivantes :
+
+   - Dans **la règle,** **sélectionnez Attribuer un profil si** ou **n’affectez pas de profil si**
+   - In **Property**, select the property to which you want this rule to apply
+   - Dans **Valeur,** entrez la valeur applicable ou la plage de valeurs
+
+   > [!div class="mx-imgBorder"]
+   > ![Règles d’applicabilité MEM](images/mem07-5-applicability-rules.png)
+
+10. Cliquez sur **Suivant**. À **l’étape 6 Révision + création,** examinez les paramètres et les informations que vous avez sélectionnés et entrés, puis cliquez sur **Créer.**
+
+    > [!div class="mx-imgBorder"]
+    > ![Révision et création de MEM](images/mem08-6-review-create.png)
+
+    > [!NOTE]
+    > Les règles sont actives et actives en quelques minutes.
+
+>[!NOTE]
+> Gestion des conflits :
+> 
+> Si vous affectez à un appareil deux stratégies DER différentes, la façon dont les conflits sont gérés est des règles qui sont affectées à différents états, il n’y a aucune gestion des conflits en place et le résultat est une erreur.
+> 
+> Les règles non conflictuelles n’entraînent pas d’erreur et la règle est appliquée correctement. Résultat : la première règle est appliquée et les règles non conflictuelles suivantes sont fusionnées dans la stratégie.
 
 ## <a name="mdm"></a>MDM
 
@@ -136,7 +216,7 @@ Exemple :
 
 4. Choisissez les règles qui bloqueront ou auditeront les actions et sélectionnez **Suivant.**
 
-5. Examinez les paramètres et **sélectionnez Suivant** pour créer la stratégie.
+5. Examinez les paramètres et sélectionnez **Suivant** pour créer la stratégie.
 
 6. Une fois la stratégie créée, **fermez**.
 
@@ -166,75 +246,6 @@ Exemple :
 
    > [!WARNING]
    > N’utilisez pas de guillemets, car ils ne sont pas pris en charge pour la colonne Nom de la valeur ou la **colonne** Valeur. 
-
-## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager procédure personnalisée
-
-Vous pouvez utiliser un centre d Microsoft Endpoint Manager (MEM) pour configurer des règles asr personnalisées.
-
-1. Ouvrez le Microsoft Endpoint Manager d’administration de l’utilisateur. Dans le menu **Accueil,** cliquez **sur Appareils,** sélectionnez **Profil de configuration,** puis cliquez **sur Créer un profil.**
-
-   ![MEM Create Profile](images/mem01-create-profile.png)
-
-2. Dans **Créer un profil,** dans les deux listes de listes suivantes, sélectionnez les listes suivantes :
-
-   - Dans **Plateforme,** sélectionnez **Windows 10 et ultérieures**
-   - Dans **le type de profil,** **sélectionnez Modèles**
-
-   Sélectionnez **Personnalisé,** puis cliquez sur **Créer.**
-
-   ![Attributs de profil de règle MEM](images/mem02-profile-attributes.png)
-
-3. L’outil modèle personnalisé s’ouvre à **l’étape 1 Éléments de base.** In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional ).
-
-   ![Attributs de base MEM](images/mem03-1-basics.png)
-
-4. Cliquez sur **Suivant**. Les **paramètres de configuration de l’étape 2** s’ouvrent. Pour l’OMA-URI Paramètres, cliquez sur **Ajouter.** Deux options s’affichent maintenant : **Ajouter** et **exporter.**
-
-   ![Paramètres de configuration MEM](images/mem04-2-configuration-settings.png)
-
-5. Cliquez **à nouveau sur** Ajouter. La **ligne Ajouter un OMA-URI Paramètres** s’ouvre. Dans **Ajouter une ligne,** faites les choses suivantes :
-
-   - Dans **Nom,** tapez un nom pour la règle.
-   - Dans **Description,** tapez une brève description.
-   - Dans **OMA-URI,** tapez ou collez le lien OMA-URI spécifique pour la règle que vous ajoutez.
-   - Dans **type de données,** sélectionnez **Chaîne**.
-   - Dans **Value,** tapez ou collez la valeur GUID, le signe et la valeur State sans espace \= (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
-
-   ![Configuration OMA URI MEM](images/mem05-add-row-oma-uri.png)
-
-6. Cliquez sur **Enregistrer**. **Ajouter des fermetures** de ligne. Dans **Personnalisé,** cliquez sur **Suivant**. À **l’étape 3, les balises d’étendue** sont facultatives. Effectuez l'une des opérations suivantes :
-
-   - Cliquez **sur Sélectionner des balises d’étendue,** sélectionnez la balise d’étendue (facultative), puis cliquez sur **Suivant.**
-   - Ou cliquez sur **Suivant**
-
-7. À **l’étape 4 Affectations,** dans **Groupes** inclus - pour les groupes que vous souhaitez que cette règle applique - sélectionnez l’une des options suivantes :
-
-   - **Ajouter des groupes**
-   - **Ajouter tous les utilisateurs**
-   - **Ajouter tous les appareils**
-
-   ![Affectations MEM](images/mem06-4-assignments.png)
-
-8. Dans **les groupes exclus,** sélectionnez les groupes que vous souhaitez exclure de cette règle, puis cliquez sur **Suivant**.
-
-9. À **l’étape 5, règles d’applicabilité** pour les paramètres suivants, appliquez les étapes suivantes :
-
-   - Dans **la règle,** **sélectionnez Attribuer un profil si** ou **n’affectez pas de profil si**
-   - In **Property**, select the property to which you want this rule to apply
-   - Dans **Valeur,** entrez la valeur applicable ou la plage de valeurs
-
-   ![Règles d’applicabilité MEM](images/mem07-5-applicability-rules.png)
-
-10. Cliquez sur **Suivant**. À **l’étape 6 Révision + création,** examinez les paramètres et les informations que vous avez sélectionnés et entrés, puis cliquez sur **Créer.**
-
-   ![Révision et création de MEM](images/mem08-6-review-create.png)
-
->[!NOTE]
-> Les règles sont actives et actives en quelques minutes.
-
->[!NOTE]
-> Gestion des conflits : si vous affectez à un appareil deux stratégies ASR différentes, la façon dont le conflit est géré est une règle à états différents, aucune gestion des conflits n’est en place et le résultat est une erreur.
-> Les règles non conflictuelles n’entraînent pas d’erreur et la règle est appliquée correctement. Résultat : la première règle est appliquée et les règles non conflictuelles suivantes sont fusionnées dans la stratégie.
 
 ## <a name="powershell"></a>PowerShell
 
