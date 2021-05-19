@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Découvrez comment configurer votre abonnement Microsoft 365 Apps for business.
-ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9c973866a3bf1008a8c8062e2a5b9e101494d5f9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244478"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535733"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurer Microsoft 365 Apps for business
 
@@ -45,13 +45,13 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
 
 ::: moniker range="o365-germany"
 
-1. Si vous utilisez Office 365 Allemagne, accédez à ce [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=848041).
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Si vous utilisez Office 365 géré par 21Vianet, accédez à ce [Centre d’administration](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 

@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Protégez vos données et courriers électroniques d’entreprise contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes. '
-ms.openlocfilehash: c20b0d070c4c4ca28ee681e560c4a91c412241fc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244538"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535877"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales méthodes de sécurisation des Microsoft 365 pour les plans d’entreprise
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Si vous êtes une petite ou moyenne entreprise utilisant l’un des plans d’entreprise de Microsoft et que votre type d’organisation est ciblé par des cybercriminels et des pirates informatiques, utilisez les instructions de cet article pour renforcer la sécurité de votre organisation. Ces conseils aident votre organisation à atteindre les objectifs décrits dans le Manuel de campagne de [cyber-sécurité de l’établissement d’état de L’État de Nouvelle-France.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
 
@@ -53,11 +46,11 @@ Microsoft recommande d’effectuer les tâches répertoriées dans le tableau su
 |7 |[Utiliser Office chiffrement de messages](secure-your-business-data.md#encryption)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Protéger votre courrier électronique contre les attaques par hameçonnage](secure-your-business-data.md#phishing)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Se protéger contre les pièces jointes et les fichiers malveillants avec pièces jointes sécurisées](secure-your-business-data.md#atp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Se protéger contre les attaques par hameçonnage avec des liens sécurisés](secure-your-business-data.md#phishingatp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[Se protéger contre les attaques par hameçonnage avec des liens sécurisés](secure-your-business-data.md#phishingatp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Si vous avez Microsoft Business Premium, le moyen le plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365](../../campaigns/index.md)pour les petites entreprises et les campagnes. Ces conseils ont été développés en partenariat avec l’équipe De Protection Microsoft pour protéger tous les clients des petites entreprises contre les cybermenaces lancées par des pirates informatiques sophistiqués.
+Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués.
 
-Avant de commencer, vérifiez votre score [de Microsoft 365 dans](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) le centre Microsoft 365 sécurité. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de votre Microsoft 365, données, applications, appareils et infrastructure. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre à des recommandations avec une application ou un logiciel tiers. Grâce à des informations supplémentaires et à une visibilité accrue sur un ensemble plus large de produits et de services Microsoft, vous pouvez être certain de signaler l’état de sécurité de votre organisation.
+Avant de commencer, vérifiez votre score [de Microsoft 365 dans](../../security/defender/microsoft-secure-score.md) le centre Microsoft 365 sécurité. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de votre Microsoft 365, données, applications, appareils et infrastructure. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre à des recommandations avec une application ou un logiciel tiers. Grâce à des informations supplémentaires et à une visibilité accrue sur un ensemble plus large de produits et de services Microsoft, vous pouvez être certain de signaler l’état de sécurité de votre organisation.
 
 ![Capture d’écran du score de sécurité Microsoft](../../media/secure-score.png)
 
@@ -159,9 +152,9 @@ Pour créer une règle de transport de courrier, regardez une courte vidéo de [
 
 5. Appliquez les paramètres du tableau suivant pour chaque règle. Laissez le reste des paramètres par défaut, sauf si vous souhaitez les modifier.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
     
-| Paramètres | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Paramètre | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : bloquer les types de fichiers  <br/> |
 |Appliquez cette règle si . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |
@@ -172,7 +165,7 @@ Pour créer une règle de transport de courrier, regardez une courte vidéo de [
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programme malveillant à [l’étape 4.](#4-raise-the-level-of-protection-against-malware-in-mail)
 
-Pour plus d’informations, voir :
+Pour plus d'informations, voir :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -195,9 +188,9 @@ Pour créer une règle de transport de messagerie :
 
 5. Appliquez les paramètres du tableau suivant. Laissez le reste des paramètres par défaut, sauf si vous souhaitez les modifier.
 
-6. Cliquez sur **Enregistrer**.
+6. Sélectionnez **Enregistrer**.
 
-|Paramètres|Rejeter les e-mails de forward automatique vers des domaines externes|
+|Paramètre|Rejeter les e-mails de forward automatique vers des domaines externes|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
@@ -333,7 +326,7 @@ Pour modifier la stratégie par défaut :
 
 3. Sous **Paramètres** qui s’appliquent au contenu à l’exception de la messagerie, sélectionnez **Office 365 applications**, Ne pas suivre quand les utilisateurs cliquent sur les liens sécurisés et Ne pas laisser les utilisateurs cliquer sur les liens sécurisés vers l’URL d’origine.  
 
-4. Cliquez sur **Enregistrer**.
+4. Sélectionnez **Enregistrer**.
 
 Pour créer une stratégie destinée à tous les destinataires de votre domaine :
 
@@ -341,7 +334,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 2. Appliquez les paramètres répertoriés dans le tableau suivant.
 
-3. Cliquez sur **Enregistrer**.
+3. Sélectionnez **Enregistrer**.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|

@@ -1,29 +1,30 @@
 ---
 title: Informations de paiement pour Saint-Kitts-et-Nevis
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b2dfa5f74c7648df0340dd403bed961b7491bdb7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3077ee6e346c3162a333572a2f40278ce964890c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272971"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535229"
 ---
 # <a name="payment-information-for-saint-kitts-and-nevis"></a>Informations de paiement pour Saint-Kitts-et-Nevis
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en USD uniquement et référencer les numéro(s) de facture à votre paiement.
+Veuillez payer en USD uniquement et référencer les numéro(s) de facture sur votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
@@ -31,4 +32,4 @@ Veuillez payer en USD uniquement et référencer les numéro(s) de facture à vo
 **Branche :** Dallas  
 **Code SWIFT :** BOFAUS3N  
 **Numéro de compte :** 4426587954  
-**Nom du compte :** Microsoft  
+**Nom du compte :** Microsoft

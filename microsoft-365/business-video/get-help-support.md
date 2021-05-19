@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment obtenir de l’aide ou une assistance technique pour les administrateurs dans Microsoft 365 Business Premium.
-ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: HT
+description: Vous devez être un administrateur d’un abonnement pour les entreprises pour obtenir de l’aide de l’administrateur ou une assistance en ligne ou téléphonique dans Microsoft 365 Business Premium.
+ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327185"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535709"
 ---
 # <a name="get-support"></a>Obtenir une assistance
 
@@ -253,3 +253,12 @@ Les options d’assistance ne concernent que les administrateurs des organisatio
 Vous pouvez également [rechercher dans les forums de la Communauté Microsoft 365 pour entreprises](https://go.microsoft.com/fwlink/p/?LinkId=518605) pour rechercher des problèmes connus et des sujets populaires, ou pour poser une nouvelle question. Les forums de la communauté sont modérés par des agents d’assistance Microsoft qui peuvent vous aider à résoudre votre problème.
 
 ::: moniker-end
+
+
+## <a name="related-content"></a>Contenu connexe
+
+[Rechercher des documents et une formation](find-help-answers.md) (article)
+
+[Installation rapide des employés](employee-quick-setup.md) (article)
+
+[Vue d’ensemble Microsoft 365 Business Premium configuration (vidéo)](setup-overview.md)

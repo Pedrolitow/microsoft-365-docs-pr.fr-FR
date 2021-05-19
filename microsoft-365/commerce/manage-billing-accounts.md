@@ -1,5 +1,5 @@
 ---
-title: Gérer les comptes de facturation
+title: Comprendre les comptes de facturation
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,16 +17,16 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Découvrez les comptes de facturation et comment les gérer.
+description: Découvrez les comptes de facturation et leur utilisation pour gérer les paramètres de compte, les factures, les modes de paiement et les achats.
 ms.date: 03/17/2021
-ms.openlocfilehash: 05ab759f300cb7fa6b02e06714d7d98e64890be8
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331597"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535637"
 ---
-# <a name="manage-billing-accounts"></a>Gérer les comptes de facturation
+# <a name="understand-billing-accounts"></a>Comprendre les comptes de facturation
 
 Un compte de facturation est créé lorsque vous vous inscrivez pour essayer ou acheter des produits Microsoft. Vous utilisez votre compte de facturation pour gérer vos paramètres de compte, factures, modes de paiement et achats. Vous pouvez avoir accès à plusieurs comptes de facturation. Par exemple, vous vous êtes inscrit à Microsoft 365 directement, ou vous avez accès au contrat de Accord Entreprise de votre organisation, au contrat de services Microsoft Product & ou au contrat client Microsoft. Pour chacun de ces scénarios, vous avez un compte de facturation distinct.
 

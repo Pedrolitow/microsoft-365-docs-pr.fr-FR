@@ -24,41 +24,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez les étapes de cette solution pour supprimer un ancien employé de Microsoft 365 et sécuriser les données de votre organisation.
-ms.openlocfilehash: 4b4cf59fdce81b3098ee333095daa8e1af1cd5c5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241735"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535909"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Vue d’ensemble : supprimer un ancien employé et sécuriser les données
 
 Nous avons souvent la question suivante : « Que dois-je faire pour sécuriser les données et protéger l’accès lorsqu’un employé quitte mon organisation ? » Cette série d’articles explique comment bloquer l’accès à Microsoft 365, les étapes à suivre pour sécuriser vos données et comment autoriser d’autres employés à accéder aux données.
 
-Regardez une courte vidéo sur la suppression d’un employé. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
-
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
-
-Pour empêcher un employé de se connecter :
-
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
-2. Sélectionnez la case à côté du nom de l’utilisateur, puis sélectionnez **Réinitialiser le mot de passe.**
-3. Entrez un nouveau mot de passe, puis sélectionnez **Réinitialiser.** (Ne leur envoyez pas de message.)
-4. Sélectionnez le nom de l’utilisateur pour aller  dans le volet de propriétés, puis sous l’onglet Compte, sélectionnez Lancer **la signature.**
-
-> [!NOTE]
-> Vous devez être un administrateur général pour lancer la signature.
-
-Dans l’heure qui s’affiche( ou après avoir quitté la page de Microsoft 365 en cours), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont il quitte la page web actuelle.
-
-> [!IMPORTANT]
-> Même si nous avons numéroé les étapes de cette solution et que vous n’avez pas besoin d’effectuer la solution dans l’ordre exact, nous vous recommandons d’effectuer les étapes de cette façon.
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="Capture d’écran : Étapes de vue d’ensemble pour la suppression d’un ancien employé":::
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Vous devez être administrateur général pour effectuer les étapes de cette solution.
+
+## <a name="solution-remove-a-former-employee"></a>Solution : supprimer un ancien employé
+
+> [!IMPORTANT]
+> Même si nous avons numéroé les étapes de cette solution et que vous n’avez pas besoin d’effectuer la solution dans l’ordre exact, nous vous recommandons d’effectuer les étapes de cette façon.
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="Capture d’écran : Étapes de suppression d’un ancien employé de votre organisation":::
 
 |||
 |:-----|:-----|

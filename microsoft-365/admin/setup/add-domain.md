@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Ajoutez votre domaine à Microsoft 365 dans le Centre d’administration Microsoft 365 en ajoutant un enregistrement DNS à votre hôte DNS. L’Assistant Installation vous dirige tout au long du processus.
-ms.openlocfilehash: 747de5f61dc9fce53f82f52b65f701572a56f8d4
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS à votre hôte DNS.
+ms.openlocfilehash: 96849e90a420dc31dbde8c55d5a1108f73f85978
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470880"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535829"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -39,17 +39,9 @@ ms.locfileid: "51470880"
   
  *Pour ajouter, modifier ou supprimer des domaines, vous **devez** être administrateur **général** d’un [plan d’entreprise ou d’entreprise.](https://products.office.com/business/office) Ces modifications affectent l’ensemble du  client, *les administrateurs personnalisés* ou les utilisateurs réguliers ne pourront pas effectuer ces modifications.*  
 
- Suivez ces étapes pour ajouter, configurer ou continuer à configurer un domaine. 
+ ## <a name="add-a-domain"></a>Ajouter un domaine
 
-::: moniker range="o365-worldwide"
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/dda6df6d-37b0-41ff-905b-089448355a31?autoplay=false]
-  
-::: moniker-end
+Suivez ces étapes pour ajouter, configurer ou continuer à configurer un domaine. 
 
 ::: moniker range="o365-worldwide"
 
@@ -68,7 +60,7 @@ ms.locfileid: "51470880"
 
 ::: moniker-end
     
-2. Go to the **Settings**  >  **Domains** page. 
+2. Go to the **Paramètres**  >  **Domains** page. 
 
 3. Sélectionnez **Ajouter un domaine**.
     
@@ -76,14 +68,14 @@ ms.locfileid: "51470880"
     
 5. Choisissez la façon dont vous souhaitez vérifier que vous êtes propriétaire du domaine.
     
-    1. Si votre bureau d’enregistrement de domaines utilise [Domain Connect,](#domain-connect-registrars-integrating-with-microsoft-365) [Microsoft](../get-help-with-domains/domain-connect.md) configurera vos enregistrements automatiquement en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous êtes renvoyé au Centre d’administration et Microsoft vérifie automatiquement votre domaine.
+    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365), [Microsoft](../get-help-with-domains/domain-connect.md) configurera automatiquement vos enregistrements en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous êtes renvoyé au Centre d’administration et Microsoft vérifie automatiquement votre domaine.
     2. Vous pouvez utiliser un enregistrement TXT pour vérifier votre domaine. Sélectionnez ceci et **sélectionnez Suivant** pour voir les instructions d’ajout de cet enregistrement DNS au site web de votre bureau d’enregistrement. La vérification peut prendre jusqu’à 30 minutes après l’ajout de l’enregistrement. 
-    3. Vous pouvez ajouter un fichier texte au site web de votre domaine. Sélectionnez et téléchargez le fichier .txt à partir de l’Assistant Installation, puis téléchargez le fichier dans le dossier de niveau supérieur de votre site web. Le chemin d’accès au fichier doit ressembler à : `http://mydomain.com/ms39978200.txt` . Nous vous confirmerons que vous êtes propriétaire du domaine en trouvant le fichier sur votre site web.
+    3. Vous pouvez ajouter un fichier texte au site web de votre domaine. Sélectionnez et téléchargez le .txt à partir de l’Assistant Installation, puis téléchargez le fichier dans le dossier de niveau supérieur de votre site web. Le chemin d’accès au fichier doit ressembler à : `http://mydomain.com/ms39978200.txt` . Nous vous confirmerons que vous êtes propriétaire du domaine en trouvant le fichier sur votre site web.
     
 6. Choisissez la façon dont vous souhaitez apporter les modifications DNS requises pour que Microsoft utilise votre domaine.
     
-    1. Choisissez Ajouter les enregistrements **DNS** pour moi si votre bureau d’enregistrement prend en charge [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365)et [Microsoft](../get-help-with-domains/domain-connect.md) configurera vos enregistrements automatiquement en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365.
-    2. Choisissez J’ajouterai les enregistrements **DNS** moi-même si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette étape pour le moment et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
+    1. Choisissez Ajouter les enregistrements **DNS** pour moi si votre bureau d’enregistrement prend en charge [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365)et [Microsoft](../get-help-with-domains/domain-connect.md) configurera vos enregistrements automatiquement en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365.
+    2. Choisissez **J’ajouterai** les enregistrements DNS moi-même si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette étape pour l’instant et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
 
 7. Si vous avez choisi d’ajouter vous-même des enregistrements *DNS,*  sélectionnez **Suivant** et vous verrez une page avec tous les enregistrements que vous devez ajouter à votre site web de bureau d’enregistrement pour configurer votre domaine. 
 
@@ -103,7 +95,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 1. Connectez-vous au Centre d’administration Microsoft à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> l’adresse .
 
-2. Go to the **Settings**   >  **Domains** page.
+2. Go to the **Paramètres**   >  **Domains** page.
 
 3. Dans la page **Domaines**, sélectionnez un domaine. 
     
@@ -113,16 +105,16 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
     
 6. Sélectionnez **Enregistrer**.
 
-## <a name="registrars-with-domain-connect"></a>Bureaux d’enregistrement avec Connexion au domaine
+## <a name="registrars-with-domain-connect"></a>Bureaux d’enregistrement avec Connecter
 
-[Les bureaux](https://www.domainconnect.org/) d’enregistrement activés pour Domain Connect vous permettent d’ajouter votre domaine à Microsoft 365 au cours d’un processus en trois étapes qui prend quelques minutes. 
+[Les Connecter](https://www.domainconnect.org/) bureaux d’enregistrement activés vous permettent d’ajouter votre domaine à Microsoft 365 dans un processus en trois étapes qui prend quelques minutes. 
   
-Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétaire du domaine, puis configurer automatiquement les enregistrements de votre domaine, afin que le courrier électronique soit envoyé à Microsoft 365 et à d’autres services Microsoft 365, tels que Teams, fonctionnent avec votre domaine.
+Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétaire du domaine, puis configurer automatiquement les enregistrements de votre domaine, afin que le courrier électronique soit envoyé à Microsoft 365 et d’autres services Microsoft 365, tels que Teams, fonctionnent avec votre domaine.
   
 > [!NOTE]
 > Veillez à désactiver les bloqueurs de fenêtres contextuelles dans votre navigateur avant de démarrer l'Assistant de configuration.
   
-### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Intégration des bureaux d’enregistrement Domain Connect à Microsoft 365
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Intégration Connecter bureaux d’enregistrement de domaines Microsoft 365
 
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
@@ -138,16 +130,16 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
 
 ### <a name="what-happens-to-my-email-and-website"></a>Qu’arrive-t-il à mon courrier électronique et mon site web ?
 
-Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les messages électroniques de votre domaine commenceront à arriver vers Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toute personne qui reçoit du courrier électronique sur votre domaine !
+Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
   
-Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de configuration de Domain Connect n’affectent pas votre site web.
+Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de Connecter domaine n’affectent pas votre site web.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu connexe
 
-[Foire aux questions domaines](domains-faq.yml)
+[Forum aux questions sur les domaines](domains-faq.yml) (article)
 
-[Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md)
+[Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md) (article)
 
-[Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
+[Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)
 
-[Configurer votre domaine (instructions spécifiques de l’hôte)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+[Configurer votre domaine](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (article)

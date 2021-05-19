@@ -1,23 +1,24 @@
 ---
 title: Informations de paiement pour le Vietnam
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9fb649b2aa7ec5c759aa49258e25442ac799c1c6
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: dd077fcff7f46187a7a8896463616853e8ee0b0f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272227"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536189"
 ---
 # <a name="payment-information-for-vietnam"></a>Informations de paiement pour le Vietnam
 
@@ -30,4 +31,4 @@ N’hésitez pas à payer en USD uniquement et à référencer vos numéro(s) de
 **Banque :** Bank, Singapour  
 **CODE SWIFT :** CITISGSG  
 **Numéro de compte :** 0-817543-138  
-**Nom du compte :** MICROSOFT REGIONAL SALES CORP  
+**Nom du compte :** MICROSOFT REGIONAL SALES CORP

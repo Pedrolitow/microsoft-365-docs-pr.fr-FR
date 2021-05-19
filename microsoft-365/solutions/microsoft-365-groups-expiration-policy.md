@@ -1,5 +1,5 @@
 ---
-title: Stratégie d’expiration de groupe Microsoft 365
+title: Microsoft 365 d’expiration de groupe
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -15,30 +15,31 @@ ms.collection:
 - m365solution-collabgovernance
 search.appverid:
 - MET150
-description: Découvrez les stratégies d’expiration des groupes Microsoft 365.
-ms.openlocfilehash: fdef06918ec2c35547c084e5f431aa7bef8d6a8c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+recommendations: false
+description: Découvrez les stratégies d Microsoft 365 d’expiration des groupes.
+ms.openlocfilehash: 90807d6c178061804e64db4440af42050a1d8e77
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587622"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530849"
 ---
-# <a name="microsoft-365-group-expiration-policy"></a>Stratégie d’expiration de groupe Microsoft 365
+# <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 d’expiration de groupe
 
-Avec l’augmentation de l’utilisation des groupes Microsoft 365 et de Microsoft Teams, les administrateurs et les utilisateurs ont besoin d’un moyen de nettoyer les groupes et les équipes inutilisés. Une stratégie d’expiration des groupes Microsoft 365 permet de supprimer des groupes inactifs du système et de nettoyer les choses.
+Avec l’augmentation de l’utilisation des groupes Microsoft 365 et des Microsoft Teams, les administrateurs et les utilisateurs ont besoin d’un moyen de nettoyer les groupes et les équipes inutilisés. Une stratégie Microsoft 365'expiration des groupes peut aider à supprimer des groupes inactifs du système et à rendre les choses plus propres.
 
-Lorsqu’un groupe expire, tous ses services associés (boîte aux lettres, planificateur, site SharePoint, équipe, etc.) sont également supprimés.
+Lorsqu’un groupe expire, tous ses services associés (boîte aux lettres, planificateur, SharePoint site, équipe, etc.) sont également supprimés.
 
-Lorsqu’un groupe expire, il est « supprimé (récupérez) », ce qui signifie qu’il peut toujours être récupéré pendant 30 jours.
+Lorsqu’un groupe arrive à expiration, il est « supprimé (récupérez) », ce qui signifie qu’il peut toujours être récupéré pendant 30 jours.
 
-Les administrateurs peuvent spécifier une période d’expiration et tout groupe inactif qui arrive à la fin de cette période et qui n’est pas renouvelé est supprimé. (Cela inclut les équipes archivées.) La période d’expiration commence lors de la création du groupe ou à la date de son dernier renouvellement. Les propriétaires de groupe sont automatiquement envoyés un e-mail avant l’expiration qui leur permet de renouveler le groupe pour un autre intervalle d’expiration. Les utilisateurs de Teams voient des notifications persistantes dans Teams.
+Les administrateurs peuvent spécifier une période d’expiration et tout groupe inactif qui arrive à la fin de cette période et qui n’est pas renouvelé est supprimé. (Cela inclut les équipes archivées.) La période d’expiration commence lors de la création du groupe ou à la date de son dernier renouvellement. Les propriétaires de groupe sont automatiquement envoyés un e-mail avant l’expiration qui leur permet de renouveler le groupe pour un autre intervalle d’expiration. Teams utilisateurs voient les notifications persistantes dans Teams.
 
 Les groupes qui sont activement utilisés sont renouvelés automatiquement. L’une des actions suivantes va renouveler automatiquement un groupe :
-- SharePoint : afficher, modifier, télécharger, déplacer, partager ou télécharger des fichiers. (L’affichage d’une page SharePoint ne compte pas comme une action de renouvellement automatique.)
-- Outlook : rejoindre un groupe, lire ou écrire un message de groupe à partir du groupe, et comme un message (Outlook sur le web).
-- Teams : visite d’un canal teams.
+- SharePoint : afficher, modifier, télécharger, déplacer, partager ou télécharger des fichiers. (L’affichage d SharePoint page ne compte pas comme une action de renouvellement automatique.)
+- Outlook - rejoindre un groupe, lire ou écrire un message de groupe à partir du groupe, et comme un message (Outlook sur le web).
+- Teams - visite d’un canal d’équipe.
 
-Notez que la seule activité Yammer qui déclenchera un renouvellement automatique de groupe est le téléchargement d’un document vers SharePoint au sein de la communauté.
+Notez que la seule activité Yammer qui déclenchera le renouvellement automatique d’un groupe est le téléchargement d’un document SharePoint au sein de la communauté.
 
 > [!IMPORTANT]
 > Lorsque vous modifiez la stratégie d’expiration, le service recalcule la date d’expiration de chaque groupe. Il commence toujours à compter de la date de création du groupe, puis applique la nouvelle stratégie d’expiration.
@@ -46,18 +47,18 @@ Notez que la seule activité Yammer qui déclenchera un renouvellement automatiq
 Il est important de savoir que l’expiration est désactivée par défaut. Les administrateurs doivent l’activer pour leur organisation s’ils souhaitent l’utiliser.
 
 > [!NOTE]
-> La configuration et l’utilisation de la stratégie d’expiration pour les groupes Microsoft 365 vous obligent à posséder, mais pas nécessairement attribuer des licences Azure AD Premium pour les membres de tous les groupes auquel la stratégie d’expiration est appliquée. Pour plus d’informations, [voir La mise en place d’Azure Active Directory Premium.](/azure/active-directory/active-directory-get-started-premium)
+> La configuration et l’utilisation de la stratégie d’expiration pour les groupes Microsoft 365 vous obligent à posséder, mais pas nécessairement attribuer des licences Azure AD Premium pour les membres de tous les groupes auquel la stratégie d’expiration est appliquée. Pour plus d’informations, [voir La mise en Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
 
-## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Qui peut configurer et utiliser la stratégie d’expiration des groupes Microsoft 365 ?
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Qui pouvez configurer et utiliser la stratégie d’expiration Microsoft 365 groupes de sécurité ?
 
 |Role|Ce qu’ils peuvent faire|
 |---------|---------|
-|Administrateur général Office 365 (dans Azure, administrateur d’entreprise), administrateur utilisateur|Créez, lisez, mettez à jour ou supprimez les paramètres de stratégie d’expiration des groupes Microsoft 365.|
+|Office 365 administrateur général (dans Azure, administrateur d’entreprise), administrateur utilisateur|Créez, lisez, mettez à jour ou supprimez les paramètres de stratégie d Microsoft 365 d’expiration des groupes.|
 |Utilisateur|Renouveler [ou restaurer](/azure/active-directory/users-groups-roles/groups-restore-deleted) un groupe Microsoft 365 dont il est propriétaire|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Comment définir la stratégie d’expiration
 
-Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur devra activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, allez à **l’expiration des groupes Azure Active Directory.**  >    >   Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier à l’avance le délai d’accès des première et deuxième notifications d’expiration au propriétaire du groupe.
+Comme indiqué ci-dessus, l’expiration est désactivée par défaut. Un administrateur devra activer la stratégie d’expiration et définir les propriétés pour qu’elle prenne effet. Pour l’activer, go to **Azure Active Directory**  >  **Groups**  >  **Expiration**. Ici, vous pouvez définir la durée de vie du groupe par défaut et spécifier à l’avance la date de réception des notifications d’expiration de la première et de la deuxième notification d’expiration au propriétaire du groupe.
 
 La durée de vie du groupe est spécifiée en jours et peut être définie sur 180, 365 ou sur une valeur personnalisée que vous spécifiez. La valeur personnalisée doit être d’au moins 30 jours.
 
@@ -81,7 +82,7 @@ Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne r
 
 ## <a name="archiving-group-contents"></a>Contenu du groupe d’archivage
 
-Si vous avez un groupe que vous ne prévoyez plus d’utiliser, mais que vous souhaitez conserver son contenu, voir Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations sur la façon d’exporter des informations à partir des différents services de groupes.
+Si vous avez un groupe que vous ne prévoyez plus d’utiliser, mais que vous souhaitez conserver son contenu, voir Groupes d’archivage, équipes et [Yammer](end-life-cycle-groups-teams-sites-yammer.md) pour plus d’informations sur l’exportation d’informations à partir des différents services de groupes.
 
 ## <a name="related-topics"></a>Voir aussi
 
@@ -93,4 +94,4 @@ Si vous avez un groupe que vous ne prévoyez plus d’utiliser, mais que vous so
 
 [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Configurer l’expiration des groupes Microsoft 365](/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Configurer l’expiration Microsoft 365 groupes](/azure/active-directory/active-directory-groups-lifecycle-azure-portal)

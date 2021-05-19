@@ -22,15 +22,15 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Découvrez comment créer des groupes de distribution ou des listes dans le Centre d’administration Microsoft 365 pour pouvoir envoyer des courriers électroniques à un groupe sans avoir à taper le nom de chaque destinataire.
-ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Découvrez comment créer des groupes de distribution ou des listes dans le Centre d’administration Microsoft 365 afin de pouvoir envoyer des messages électroniques à un groupe sans avoir à taper le nom de chaque destinataire.
+ms.openlocfilehash: bd5e246caa8d1b56a33db21d70eb5cbdb7b5ed92
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914245"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535817"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre d’administration Microsoft 365
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre Microsoft 365'administration
   
 Utilisé lorsque vous souhaitez envoyer un courrier électronique à un groupe de personnes sans avoir à taper le nom de chaque destinataire, les groupes de distribution (listes de distribution) sont organisés par sujet de discussion particulier (par exemple, « Marketing ») ou par des utilisateurs qui partagent un travail commun qui les oblige à communiquer fréquemment. Elles vous permettent également de transférer automatiquement le message à plusieurs adresses e-mail.
 
@@ -58,7 +58,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 1. Sélectionnez l'icône du lanceur d'applications , puis **Administrateur**.
     
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
 2. Sélectionnez **Groupes** \> **dans** le volet de navigation gauche, puis **sélectionnez Ajouter un groupe.** 
       
@@ -70,6 +70,6 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
     
 6. Pour ajouter des utilisateurs à votre liste de distribution, voir Ajouter un utilisateur [ou un contact à un groupe de distribution.](../email/add-user-or-contact-to-distribution-list.md)
     
-Découvrez comment utiliser le groupe dans Outlook 2016 et Outlook sur le web dans la rubrique Utiliser des groupes de contacts (anciennement listes de [distribution) dans Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+Découvrez comment utiliser le groupe dans Outlook 2016 et Outlook sur le web dans Utiliser des groupes de contacts (anciennement listes de [distribution) dans Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
 Consultez les [problèmes de groupe de](/office365/troubleshoot/groups/distribution-list-issues) distribution pour obtenir de l’aide sur les problèmes de liste de distribution. 

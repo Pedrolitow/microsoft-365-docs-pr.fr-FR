@@ -21,12 +21,12 @@ search.appverid:
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333373"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536129"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -42,7 +42,8 @@ Vous pouvez utiliser le module **PowerShell MSCommerce** pour :
 
 Pour utiliser le module **PowerShell MSCommerce,** vous devez :
 
-- Un appareil Windows 10
+- Un Windows 10 de sécurité
+- PowerShell 5 ou inférieur. Actuellement, PowerShell 6.x/7.x n’est pas pris en charge avec ce module.
 - Autorisation d’administrateur pour l’appareil
 - Rôle d’administrateur global ou de facturation pour votre client
 
@@ -58,13 +59,13 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>Importer MSCommerce dans la session PowerShell
 
-Après avoir installé le module sur votre appareil Windows 10, importez-le dans chaque session PowerShell que vous démarrez. Pour l’importer dans une session PowerShell, exécutez la commande suivante :
+Après avoir installé le module sur votre Windows 10, vous l’importez dans chaque session PowerShell que vous démarrez. Pour l’importer dans une session PowerShell, exécutez la commande suivante :
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Connectez-vous à MSCommerce avec vos informations d’identification
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Connecter MSCommerce avec vos informations d’identification
 
 Pour vous connecter au module PowerShell avec vos informations d’identification, exécutez la commande suivante.
 
@@ -72,7 +73,7 @@ Pour vous connecter au module PowerShell avec vos informations d’identificatio
 Connect-MSCommerce
 ```
 
-Cette commande connecte la session PowerShell active à un client Azure Active Directory. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous souhaitez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
+Cette commande connecte la session PowerShell actuelle à un Azure Active Directory client. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous souhaitez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Afficher les détails de AllowSelfServicePurchase
 
@@ -99,10 +100,10 @@ Le tableau suivant répertorie les produits disponibles et leur **ProductId**.
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (autonome) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Plan de projet 1 | CFQ7TTC0KXND |
-| Plan de projet 3 | CFQ7TTC0KXNC |
-| Visio Plan 1 | CFQ7TTC0KXN9 |
-| Visio Plan 2 | CFQ7TTC0KXN8 |
+| Project (plan 1) | CFQ7TTC0KXND |
+| Project (plan 3) | CFQ7TTC0KXNC |
+| Visio (plan 1) | CFQ7TTC0KXN9 |
+| Visio (plan 2) | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Afficher ou définir l’état de AllowSelfServicePurchase
 
@@ -161,3 +162,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## <a name="related-content"></a>Contenu connexe
+
+[Gérer les achats en libre-service (administrateur)](manage-self-service-purchases-admins.md) (article)
+
+[FAQ sur l’achat en libre-service](self-service-purchase-faq.yml) (article)

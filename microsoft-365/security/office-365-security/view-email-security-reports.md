@@ -19,12 +19,12 @@ description: Découvrez comment rechercher et utiliser des rapports de sécurit�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d9f6d12fef8a2ef6241fbbd5e0e2a980284e9cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204507"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531014"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité
 
@@ -35,14 +35,14 @@ ms.locfileid: "51204507"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-De nombreux rapports sont disponibles dans le Centre de sécurité [&](https://protection.office.com) conformité pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités anti-courrier indésirable, anti-programme malveillant et de chiffrement dans Microsoft 365, protègent votre organisation. Si vous avez les [autorisations](#what-permissions-are-needed-to-view-these-reports)nécessaires, vous pouvez afficher ces rapports dans le Centre de sécurité & conformité en allant au Tableau **de bord des** \> **rapports.** Pour aller directement au tableau de bord Rapports, ouvrez <https://protection.office.com/insightdashboard> .
+De nombreux rapports sont disponibles dans le Centre de sécurité [&](https://protection.office.com) conformité pour vous aider à voir comment les fonctionnalités de sécurité du courrier électronique, telles que les fonctionnalités anti-courrier indésirable, anti-programme malveillant et chiffrement dans Microsoft 365 protègent votre organisation. Si vous avez les [autorisations](#what-permissions-are-needed-to-view-these-reports)nécessaires, vous pouvez afficher ces rapports dans le Centre de sécurité & conformité en allant au Tableau de bord **des** \> **rapports.** Pour aller directement au tableau de bord Rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
 ![Tableau de bord Rapports dans le Centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>Rapport utilisateurs compromis
 
 > [!NOTE]
-> Ce rapport est disponible dans les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online. Il n’est pas disponible dans les organisations Exchange Online Protection (EOP) autonomes.
+> Ce rapport est disponible dans les organisations Microsoft 365 avec Exchange Online boîtes aux lettres. Il n’est pas disponible dans les organisations Exchange Online Protection autonomes (EOP).
 
 Le **rapport Utilisateurs** compromis indique le nombre de  comptes  d’utilisateurs marqués comme suspects ou restreints au cours des 7 derniers jours. Les comptes dans l’un de ces états sont problématiques, voire compromis. Avec une utilisation fréquente, vous pouvez utiliser le rapport pour repérer des pics, voire des tendances, dans des comptes suspects ou restreints. Pour plus d’informations sur les utilisateurs compromis, voir [Répondre à un compte de messagerie compromis.](responding-to-a-compromised-email-account.md)
 
@@ -54,7 +54,7 @@ Pour afficher le rapport, ouvrez le Centre de  [sécurité & conformité,](https
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtres** et en sélectionnant une ou plusieurs des valeurs suivantes :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 
 - **Suspect**: le compte d’utilisateur a envoyé des messages suspects et risque d’être limité à l’envoi de courriers électroniques.
 
@@ -72,9 +72,9 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
 ## <a name="encryption-report"></a>Rapport de chiffrement
 
-Le **rapport de chiffrement** est disponible dans EOP (abonnements avec boîtes aux lettres dans Exchange Online ou EOP autonome sans boîtes aux lettres Exchange Online). L’équipe de sécurité de votre organisation peut utiliser les informations de ce rapport pour identifier les modèles et appliquer ou ajuster de manière proactive les stratégies des messages électroniques sensibles. Par exemple :
+Le **rapport de chiffrement** est disponible dans EOP (abonnements avec des boîtes aux lettres dans Exchange Online ou EOP autonome sans boîtes aux lettres Exchange Online autonomes). L’équipe de sécurité de votre organisation peut utiliser les informations de ce rapport pour identifier les modèles et appliquer ou ajuster de manière proactive les stratégies des messages électroniques sensibles. Par exemple :
 
-- Si un nombre élevé de messages électroniques est chiffré par les utilisateurs, vous pouvez ajouter une stratégie de chiffrement pour automatiser le chiffrement dans certains cas d’utilisation. Pour plus d’informations, voir Définir des règles de flux de messagerie pour chiffrer les [messages électroniques dans Microsoft 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
+- Si un nombre élevé de messages électroniques est chiffré par les utilisateurs, vous pouvez ajouter une stratégie de chiffrement pour automatiser le chiffrement dans certains cas d’utilisation. Pour plus d’informations, voir Définir des règles de flux de messagerie [pour chiffrer](../../compliance/define-mail-flow-rules-to-encrypt-email.md)les messages électroniques Microsoft 365 .
 
 - Si plusieurs modèles de chiffrement sont disponibles, mais que personne ne les utilise, vous pouvez déterminer si les utilisateurs ont besoin d’une formation sur les fonctionnalités.
 
@@ -82,7 +82,7 @@ L’affichage agrégé autorise le filtrage pour les 90 derniers jours, tandis q
 
 Pour afficher le rapport, ouvrez le Centre  de sécurité [& conformité,](https://protection.office.com)allez au tableau de bord rapports \>  et sélectionnez Rapport **de chiffrement.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=EncryptionReport> .
 
-Pour en savoir plus sur le chiffrement, voir [Chiffrement de courrier électronique dans Microsoft 365.](../../compliance/email-encryption.md)
+Pour en savoir plus sur le chiffrement, voir [chiffrement de courrier électronique dans Microsoft 365](../../compliance/email-encryption.md).
 
 ### <a name="report-view-for-the-encryption-report"></a>Affichage du rapport pour le rapport de chiffrement
 
@@ -95,7 +95,7 @@ Vous pouvez utiliser les filtres suivants sur le graphique :
 
   Si vous cliquez **sur Filtres,** vous pouvez modifier le graphique avec les filtres suivants :
 
-  - **Date de début et** **date de fin**
+  - **Date de début** et **date de fin**
   - Méthode de chiffrement.
   - Modèle de chiffrement.
 
@@ -104,11 +104,11 @@ Vous pouvez utiliser les filtres suivants sur le graphique :
   - **Ne pas avancer**
   - **Chiffrer uniquement**
   - **OME précédent**
-  - **Personnalisé**
+  - **Custom**
 
   Si vous cliquez **sur Filtres,** vous pouvez modifier le graphique avec les filtres suivants :
 
-  - **Date de début et** **date de fin**
+  - **Date de début** et **date de fin**
   - Méthode de chiffrement
   - Modèle de chiffrement
 
@@ -137,7 +137,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
 
 Si vous cliquez **sur Filtres** dans une vue de tableau de détails, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 - Méthode de chiffrement
 - Modèle de chiffrement
 
@@ -159,7 +159,7 @@ Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtres** et en sélectionnant :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 - **Entrant**
 - **Sortant**
 
@@ -221,7 +221,7 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
 Si vous cliquez **sur Filtres** dans un affichage de rapport, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 - Valeurs de direction
 - Valeurs de type d’événement
 
@@ -238,7 +238,7 @@ Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de ra
 
 Si vous cliquez **sur Filtres** dans un tableau de détails, vous pouvez modifier les résultats avec les filtres suivants :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 - Valeurs de direction
 - Valeurs de type d’événement
 
@@ -246,48 +246,64 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
 ## <a name="spoof-detections-report"></a>Rapport sur les détections d’usurpation d’usurpation
 
-Le rapport sur les **détections** d’usurpation d’adresses indique le nombre de messages électroniques usurpés détectés et ceux qui ont été considérés comme « bons » (courrier usurpé pour des raisons professionnelles légitimes). Pour plus d’informations sur l’usurpation d’adresse, consultez la protection contre l’usurpation [d’adresse dans EOP.](anti-spoofing-protection.md)
+> [!NOTE]
+> Le rapport sur les détections d’usurpation d’usurpation d’informations amélioré, tel que décrit dans cet article, est disponible en prévisualisation, peut faire l’objet de changements et n’est pas disponible dans toutes les organisations. L’ancienne version du rapport n’a affiché que les messages **électroniques de qualité** et les **courriers indésirables**.
 
-L’affichage agrégé du rapport autorise 90 jours de filtrage, tandis que l’affichage détaillé ne permet que dix jours de filtrage.
+Le **rapport sur les détections d’usurpation d’informations** affiche des informations sur les messages qui ont été bloqués ou autorisés en raison de l’usurpation d’informations. Pour plus d’informations sur l’usurpation d’adresse, consultez la protection contre l’usurpation [d’adresse dans EOP.](anti-spoofing-protection.md)
+
+L’affichage agrégé du rapport autorise 45 jours de filtrage, tandis que l’affichage détaillé ne permet que dix jours <sup>\*</sup> de filtrage.
+
+<sup>\*</sup> Au final, vous pourrez utiliser jusqu’à 90 jours de filtrage.
 
 Pour afficher le rapport, ouvrez le Centre  de sécurité [& conformité,](https://protection.office.com)allez au tableau de bord rapports et sélectionnez \>  **Détections d’usurpation d’informations.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=SpoofMailReport> .
 
 ![Widget de détections d’usurpation d’informations dans le tableau de bord Rapports](../../media/spoof-detections-widget.png)
 
-Lorsque vous pointez sur un jour (point de données) dans le graphique, vous pouvez voir le nombre de messages électroniques usurpés.
+Lorsque vous pointez sur un jour (point de données) dans le graphique, vous pouvez voir combien de messages usurpés ont été détectés et pourquoi.
 
 Vous pouvez filtrer le graphique et le tableau de détails en cliquant sur **Filtres** et en sélectionnant une ou plusieurs des valeurs suivantes :
 
-- **Date de début et** **date de fin**
+- **Date de début** et **date de fin**
 
-- **Bon courrier**
+- **Résultat**
+  - **Pass**
+  - **Échec**
+  - **SoftPass**
+  - **Aucune**
+  - **Other**
 
-- **Capturé comme courrier indésirable**
+- **Type d’usurpation :** **interne** et **externe**
 
 ![Affichage du rapport dans le rapport de détections d’usurpation d’usurpation d’état](../../media/spoof-detections-report-view.png)
 
 Si vous cliquez **sur Afficher le tableau des détails,** vous pouvez voir les détails suivants :
 
 - **Date**
-- **Expéditeur usurpé**
-- **True sender**
-- **IP de l’expéditeur**
-- **Action**
+- **Utilisateur usurpé**
+- **Infrastructure d’envoi**
+- **Type d’usurpation**
+- **Résultat**
+- **Code de résultat**
+- **SPF**
+- **DKIM**
+- **DMARC**
 - **Nombre de messages**
 
 Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
+Pour plus d’informations sur les codes de résultats d’authentification composite, consultez les [en-têtes de message anti-courrier](anti-spam-message-headers.md)indésirable Microsoft 365 .
+
 ## <a name="threat-protection-status-report"></a>Rapport sur l’état de la protection contre les menaces
 
-Le **rapport d’état de la protection** contre les menaces est disponible dans EOP et Microsoft Defender pour Office 365 . toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans le courrier électronique, mais pas sur les fichiers malveillants détectés par les pièces [jointes sécurisées pour SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)et Microsoft Teams.
+Le **rapport d’état de la protection** contre les menaces est disponible dans EOP et Microsoft Defender pour Office 365 ; toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans le courrier électronique, mais pas sur les fichiers malveillants détectés par les pièces [jointes sécurisées](mdo-for-spo-odb-and-teams.md)pour SharePoint, OneDrive et Microsoft Teams .
 
-Le rapport indique le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses web (URL) bloqués par le moteur [](safe-links.md)anti-programme malveillant, la purge automatique d’heure zéro [(ZAP)](zero-hour-auto-purge.md)et les fonctionnalités de Defender pour Office 365 telles que les liens [sécurisés,](safe-attachments.md)les pièces jointes et l’anti-hameçonnage. [](set-up-anti-phishing-policies.md) Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si des stratégies d’organisation doivent être ajuster.
+Le rapport fournit le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses de site web (URL) qui ont [](safe-links.md)été bloqués par le moteur anti-programme malveillant, la purge automatique d’heure zéro [(ZAP)](zero-hour-auto-purge.md)et Defender pour les fonctionnalités de Office 365 telles que les liens sécurisés, les pièces [jointes sécurisées](safe-attachments.md)et l’anti-hameçonnage. [](set-up-anti-phishing-policies.md) Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si des stratégies d’organisation doivent être ajuster.
 
 **Remarque**: il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
 
 Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord rapports et sélectionnez État \>  de la protection contre **les menaces.** Pour aller directement dans le rapport, ouvrez l’une des URL suivantes :
 
-- Microsoft Defender pour Office 365 : <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- Microsoft Defender pour Office 365 :<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP : <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widget d’état de la protection contre les menaces dans le tableau de bord Rapports](../../media/threat-protection-status-report-widget.png)
@@ -306,10 +322,10 @@ Les vues disponibles sont les suivantes :
 
   ![Vue d’ensemble dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-overview-view.png)
 
-- **Afficher les données par : Contenu \> Programme**<sup>malveillant 1</sup>: les informations suivantes sont affichées pour Microsoft Defender pour les organisations Office 365 :
+- **Afficher les données par : Contenu \> Programme**<sup>malveillant 1</sup>: les informations suivantes s’affiche pour Microsoft Defender pour Office 365 organisations :
 
-  - **Moteur anti-programme** malveillant : fichiers malveillants détectés dans Sharepoint, OneDrive et Microsoft Teams par la détection de virus intégrée dans [Microsoft 365.](virus-detection-in-spo.md)
-  - **Détonation de fichiers**: fichiers malveillants détectés par les pièces [jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams.](mdo-for-spo-odb-and-teams.md)
+  - **Moteur anti-programme** malveillant : fichiers malveillants détectés dans Sharepoint, OneDrive et Microsoft Teams par la détection de virus intégrée dans [Microsoft 365](virus-detection-in-spo.md).
+  - **Détonation de fichiers**: fichiers malveillants détectés par les pièces [jointes SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
   ![Affichage des programmes malveillants de contenu dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -329,7 +345,7 @@ Les vues disponibles sont les suivantes :
 
 - **Décomposez par : technologie de détection et** affichage des données par : Hameçonnage de messagerie : les informations suivantes sont affichées : **\>**
 
-  - **Réputation d’URL** générée par atp <sup>1</sup>: réputation d’URL malveillante générée à partir de Defender pour les détonations Office 365 dans d’autres clients Microsoft 365.
+  - **Réputation d’URL** générée par atp <sup>1</sup>: réputation d’URL malveillante générée à partir de Defender pour Office 365 détonations dans d’autres Microsoft 365 clients.
   - **Filtre de hameçonnage avancé :** signaux de hameçonnage basés sur l’apprentissage automatique.
   - **Anti-usurpation - Échec DMARC**: échec de l’authentification DMARC sur les messages.
   - **Anti-usurpation - intra-organisation**: l’expéditeur tente d’usurper le domaine du destinataire.
@@ -347,7 +363,7 @@ Les vues disponibles sont les suivantes :
 
 - **Décomposez par : technologie de détection et** affichage des données par : Programme malveillant de messagerie : les informations suivantes sont affichées : **\>**
 
-  - Réputation de fichier générée **par atp**<sup>1</sup>: toutes les réputations de fichiers malveillants générées par Defender pour les détonations Office 365.
+  - Réputation de fichier générée **par atp**<sup>1</sup>: toutes les réputations de fichiers malveillants générées par Defender pour Office 365 détonations.
   - **Moteur anti-programme malveillant**<sup>1 :</sup>détection des moteurs anti-programme malveillant.
   - Blocage du type de fichier de stratégie **anti-programme** malveillant : il s’adresse aux messages électroniques filtrés en raison du type de fichier malveillant identifié dans le message.
   - **Détonation de fichier**<sup>1</sup>: détection par pièces jointes fiables.
@@ -380,11 +396,11 @@ Les vues disponibles sont les suivantes :
   - **Serveur local : remis**
   - **Mise en quarantaine**
 
-  ![Affichage de l’état de remise du courrier de hameçonnage dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
+  ![Affichage de l’état de remise du courrier d’hameçonnage dans le rapport d’état de la protection contre les menaces](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
 <sup>1</sup> Defender pour Office 365 uniquement
 
-La purge automatique de <sup>2</sup> heures zéro (ZAP) n’est pas disponible dans EOP autonome (elle fonctionne uniquement dans les boîtes aux lettres Exchange Online).
+<sup>2</sup> zap (zero-hour auto purge) is’t available in standalone EOP (it only works in Exchange Online mailboxes).
 
 Si vous cliquez sur **Filtres,** les filtres disponibles dépendent du graphique que vous regardiez :
 
@@ -392,14 +408,14 @@ Si vous cliquez sur **Filtres,** les filtres disponibles dépendent du graphique
 
 - Pour **afficher les données par : Remplacement de message,** vous pouvez modifier le rapport avec les filtres suivants :
 
-  - **Date de début et** **date de fin**
+  - **Date de début** et **date de fin**
   - **Override Reason**
   - **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
   - **Domaine**
 
 - Pour tous les autres affichages, vous pouvez modifier le rapport avec les filtres suivants :
 
-  - **Date de début et** **date de fin**
+  - **Date de début** et **date de fin**
   - **Détection**
   - **Protégé par**: **ATP** ou **EOP**
   - **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
@@ -418,9 +434,9 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
   - **Dirigé par**
   - **Nom du programme malveillant**
 
-  Si vous cliquez sur **Filtres** dans cet affichage, vous pouvez modifier le rapport par **date** de début et **de fin,** ainsi que la **valeur de** détection.
+  Si vous cliquez **sur Filtres** dans cet affichage, vous pouvez modifier le rapport par **date** de début et **de fin,** ainsi que la **valeur détection.**
 
-- **Afficher les données par : Remplacement de message**:
+- **Afficher les données par : Remplacement du message**:
 
   - **Date**
   - **Subject**
@@ -433,7 +449,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
 
   Si vous cliquez **sur Filtres** dans cet affichage, vous pouvez modifier le rapport avec les filtres suivants :
 
-  - **Date de début et** **date de fin**
+  - **Date de début** et **date de fin**
   - **Override Reason**
   - **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
   - **Domaine**
@@ -452,7 +468,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
 
   Si vous cliquez **sur Filtres,** vous pouvez modifier le rapport avec les filtres suivants :
 
-  - **Date de début et** **date de fin**
+  - **Date de début** et **date de fin**
   - **Détection**
   - **Protégé par**: **Defender pour Office 365** ou **EOP**
   - **Balise**: filtrer les résultats par utilisateurs ou groupes pour lesquels la balise utilisateur spécifiée a été appliquée (y compris les comptes de priorité). Pour plus d’informations sur les balises utilisateur, voir [Balises utilisateur.](user-tags.md)
@@ -480,11 +496,11 @@ Si vous cliquez sur **Filtres** dans l’affichage Rapport ou dans l’affichage
 
 ## <a name="url-threat-protection-report"></a>Rapport sur la protection contre les menaces d’URL
 
-Le **rapport sur la protection contre les menaces d’URL** est disponible dans Microsoft Defender pour Office 365. Pour plus d’informations, voir le rapport sur la [protection contre les menaces d’URL.](view-reports-for-mdo.md#url-threat-protection-report)
+Le **rapport sur la protection contre les menaces d’URL** est disponible dans Microsoft Defender Office 365. Pour plus d’informations, voir le rapport sur la [protection contre les menaces d’URL.](view-reports-for-mdo.md#url-threat-protection-report)
 
 ## <a name="user-reported-messages-report"></a>Rapport des messages signalés par l’utilisateur
 
-Le rapport des **messages** signalés par l’utilisateur affiche des informations sur les messages électroniques que les utilisateurs ont signalés comme courrier indésirable, tentatives d’hameçonnage ou courriers électroniques de qualité à l’aide du module complémentaire Signaler un [message](enable-the-report-message-add-in.md) ou Du signalement du hameçonnage. [](enable-the-report-phish-add-in.md)
+Le rapport des **messages** signalés par l’utilisateur affiche des informations sur les messages électroniques que les utilisateurs ont signalés comme courrier indésirable, tentatives d’hameçonnage ou courrier de qualité à l’aide du module complémentaire Signaler un [message](enable-the-report-message-add-in.md) ou Du signalement du hameçonnage. [](enable-the-report-phish-add-in.md)
 
 Des détails sont disponibles pour chaque message, y compris la raison de la remise, une exception de stratégie de courrier indésirable ou une règle de flux de messagerie configurée pour votre organisation. Pour afficher les détails, sélectionnez un élément dans la liste  des rapports utilisateur, puis affichez les informations sous les **onglets** Résumé et Détails.
 
@@ -499,20 +515,20 @@ Pour afficher ce rapport, dans le Centre de sécurité [& conformité,](https://
 ![In the Security & Compliance Center, choose Threat management \> Review \> User reported messages](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> Pour que le rapport des messages signalés par l’utilisateur fonctionne correctement, **l’enregistrement d’audit** doit être allumé pour votre environnement Office 365. Cette tâche est généralement effectuée par une personne à qui le rôle Journaux d’audit est attribué dans Exchange Online. Pour plus d’informations, voir Activer ou désactiver la recherche dans le journal [d’audit Microsoft 365.](../../compliance/turn-audit-log-search-on-or-off.md)
+> Pour que le rapport des messages signalés par l’utilisateur fonctionne correctement, l’enregistrement **d’audit** doit être Office 365 votre environnement. Cette tâche est généralement effectuée par une personne dont le rôle Journaux d’audit est Exchange Online. Pour plus d’informations, [voir Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Quelles autorisations sont nécessaires pour afficher ces rapports ?
 
 Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le Centre de sécurité & conformité :
 
 - **Gestion de l'organisation**
-- **Administrateur de la sécurité**
+- **Administrateur de sécurité**
 - **Lecteur sécurité**
-- **Lecteur global**
+- **Lecteur général**
 
 Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration  Microsoft 365 donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365  donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports n’affichent pas de données ?
 

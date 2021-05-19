@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre facture Microsoft 365 pour les entreprises, et comment modifier le numéro de bon de commande.
 ms.date: 05/04/2021
-ms.openlocfilehash: 3b183c219e25bcef21add70e2c704a7a0f3fe354
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: febcbdee563c18b3f17ee35b98f2d68b15f456d8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331957"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535685"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -110,13 +110,13 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
@@ -128,5 +128,12 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Payer votre abonnement Microsoft 365 pour les entreprises](pay-for-your-subscription.md) (article)\
+[Découvrez comment rechercher et afficher votre facture](view-your-bill-or-invoice.md) (article)
+
+[Modifier vos adresses de facturation](change-your-billing-addresses.md) (article)
+
+[Modifier l’adresse de votre organisation, le courrier électronique du contact technique et d’autres informations](../../admin/manage/change-address-contact-and-more.md) (article)
+
+[Payer votre abonnement Microsoft 365 entreprise](pay-for-your-subscription.md) (article)\
+
 [Options de paiement de Minecraft: Education Edition](/education/windows/school-get-minecraft) (article)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d69c7dc30a4cf6a3078f510a02e5572fe8b36cbb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934248"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530909"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
 
@@ -40,19 +40,19 @@ ms.locfileid: "51934248"
 
 Cette rubrique fournit quelques étapes générales qui peuvent être utilisées pour affiner les problèmes de performances liés à Microsoft Defender pour Endpoint sur macOS.
 
-La protection en temps réel (RTP) est une fonctionnalité de Microsoft Defender for Endpoint sur macOS qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus, ainsi que d'autres heuristiques.
+La protection en temps réel (RTP) est une fonctionnalité de Microsoft Defender for Endpoint sur macOS qui surveille et protège en permanence votre appareil contre les menaces. Il se compose de la surveillance des fichiers et des processus, ainsi que d’autres heuristiques.
 
-Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez obtenir des performances sous-optimales lors de l'exécution de Microsoft Defender pour Endpoint sur macOS. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources sur un court laps de temps peuvent entraîner des problèmes de performances dans Microsoft Defender pour Endpoint sur macOS.
+Selon les applications que vous exécutez et les caractéristiques de votre appareil, vous pouvez obtenir des performances sous-optimales lors de l’exécution de Microsoft Defender pour Endpoint sur macOS. En particulier, les applications ou les processus système qui accèdent à de nombreuses ressources sur un court laps de temps peuvent entraîner des problèmes de performances dans Microsoft Defender pour Endpoint sur macOS.
 
 Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces problèmes :
 
-1. Désactivez la protection en temps réel à l'aide de l'une des méthodes suivantes et observez si les performances s'améliorent. Cette approche permet de déterminer si Microsoft Defender pour Point de terminaison sur macOS contribue aux problèmes de performances.
+1. Désactivez la protection en temps réel à l’aide de l’une des méthodes suivantes et observez si les performances s’améliorent. Cette approche permet de déterminer si Microsoft Defender pour Point de terminaison sur macOS contribue aux problèmes de performances.
 
-      Si votre appareil n'est pas géré par votre organisation, la protection en temps réel peut être désactivée à l'aide de l'une des options suivantes :
+      Si votre appareil n’est pas géré par votre organisation, la protection en temps réel peut être désactivée à l’aide de l’une des options suivantes :
 
-    - À partir de l'interface utilisateur. Ouvrez Microsoft Defender pour le point de terminaison sur macOS et accédez à **Gérer les paramètres.**
+    - À partir de l’interface utilisateur. Ouvrez Microsoft Defender pour le point de terminaison sur macOS et accédez à **Gérer les paramètres.**
 
-      ![Capture d'écran gérer la protection en temps réel](images/mdatp-36-rtp.png)
+      ![Capture d’écran gérer la protection en temps réel](images/mdatp-36-rtp.png)
 
     - À partir du terminal. Pour des raisons de sécurité, cette opération nécessite une élévation.
 
@@ -60,13 +60,13 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
       mdatp config real-time-protection --value disabled
       ```
 
-      Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l'aide des instructions dans Définir les préférences de Microsoft Defender pour Endpoint sur [macOS.](mac-preferences.md)
+      Si votre appareil est géré par votre organisation, la protection en temps réel peut être désactivée par votre administrateur à l’aide des instructions dans Définir les préférences de Microsoft Defender pour Endpoint sur [macOS.](mac-preferences.md)
       
-      Si le problème de performances persiste alors que la protection en temps réel est éteinte, l'origine du problème peut être le composant de détection et de réponse du point de terminaison. Dans ce cas, contactez le support technique pour obtenir des instructions supplémentaires et des mesures d'atténuation.
+      Si le problème de performances persiste alors que la protection en temps réel est éteinte, l’origine du problème peut être protection évolutive des points de terminaison composant. Dans ce cas, contactez le support technique pour obtenir des instructions supplémentaires et des mesures d’atténuation.
 
-2. Ouvrez Finder et accédez aux  >  **utilitaires d'applications.** Ouvrez **l'Analyseur** d'activité et analysez les applications qui utilisent les ressources de votre système. Les compilateurs et les outils de mise à jour logicielles sont des exemples classiques.
+2. Ouvrez Finder et accédez aux  >  **utilitaires d’applications.** Ouvrez **l’Analyseur** d’activité et analysez les applications qui utilisent les ressources de votre système. Les compilateurs et les outils de mise à jour logicielles sont des exemples classiques.
 
-1. Pour rechercher les applications qui déclenchent le plus d'analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Mac.
+1. Pour rechercher les applications qui déclenchent le plus d’analyses, vous pouvez utiliser des statistiques en temps réel recueillies par Defender pour Endpoint sur Mac.
 
       > [!NOTE]
       > Cette fonctionnalité est disponible dans la version 100.90.70 ou une version plus récente.
@@ -75,13 +75,13 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
       mdatp config real-time-protection-statistics  --value enabled
       ```
 
-      Cette fonctionnalité nécessite une protection en temps réel pour être activée. Pour vérifier l'état de la protection en temps réel, exécutez la commande suivante :
+      Cette fonctionnalité nécessite une protection en temps réel pour être activée. Pour vérifier l’état de la protection en temps réel, exécutez la commande suivante :
 
       ```bash
       mdatp health --field real_time_protection_enabled
       ```
 
-    Vérifiez que **l'entrée real_time_protection_enabled** est vraie. Sinon, exécutez la commande suivante pour l'activer :
+    Vérifiez que **l’entrée real_time_protection_enabled** est vraie. Sinon, exécutez la commande suivante pour l’activer :
 
       ```bash
       mdatp config real-time-protection --value enabled
@@ -94,17 +94,17 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
       Pour collecter les statistiques actuelles, exécutez :
 
       ```bash
-      mdatp config real-time-protection --value enabled
+      mdatp config real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
-      > L'utilisation du json de sortie **(notez** le tiret double) garantit que le format de sortie est prêt pour l'utilisation.
-      Le résultat de cette commande affiche tous les processus et l'activité d'analyse associée.
+      > L’utilisation du json de sortie **(notez** le tiret double) garantit que le format de sortie est prêt pour l’utilisation.
+      Le résultat de cette commande affiche tous les processus et l’activité d’analyse associée.
 
-1. Sur votre système Mac, téléchargez l'exemple d'analyseur Python high_cpu_parser.py à l'aide de la commande :
+1. Sur votre système Mac, téléchargez l’exemple d’analyseur Python high_cpu_parser.py à l’aide de la commande :
 
     ```bash
-    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
 
     La sortie de cette commande doit être similaire à celle-ci :
@@ -131,7 +131,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
         cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
       ```
 
-      La sortie de ce qui précède est une liste des principaux contributeurs aux problèmes de performances. La première colonne est l'identificateur de processus (PID), la deuxième colonne est le nom du processus te et la dernière colonne le nombre de fichiers analysés, triés par impact.
+      La sortie de ce qui précède est une liste des principaux contributeurs aux problèmes de performances. La première colonne est l’identificateur de processus (PID), la deuxième colonne est le nom du processus te et la dernière colonne le nombre de fichiers analysés, triés par impact.
 
       Par exemple, la sortie de la commande ressemblera à ce qui suit :
 
@@ -149,11 +149,11 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
         125  CrashPlanService 164
       ```
 
-      Pour améliorer les performances de Defender pour Point de terminaison sur Mac, recherchez celui qui a le plus grand nombre sous la ligne Nombre total de fichiers analysés et ajoutez une exclusion pour celui-ci. Pour plus d'informations, voir Configurer et valider des [exclusions pour Defender pour Endpoint sur Linux.](linux-exclusions.md)
+      Pour améliorer les performances de Defender pour Point de terminaison sur Mac, recherchez celui qui a le plus grand nombre sous la ligne Nombre total de fichiers analysés et ajoutez une exclusion pour celui-ci. Pour plus d’informations, voir Configurer et valider des [exclusions pour Defender pour Endpoint sur Linux.](linux-exclusions.md)
 
       > [!NOTE]
-      > L'application stocke les statistiques en mémoire et suit uniquement l'activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.
+      > L’application stocke les statistiques en mémoire et suit uniquement l’activité des fichiers depuis son début et que la protection en temps réel a été activée. Les processus qui ont été lancés avant ou pendant les périodes où la protection en temps réel était hors programme ne sont pas comptabilisés. En outre, seuls les événements qui ont déclenché des analyses sont comptés.
       > 
 1. Configurez Microsoft Defender pour endpoint sur macOS avec des exclusions pour les processus ou les emplacements de disque qui contribuent aux problèmes de performances et activez à nouveau la protection en temps réel.
 
-     Pour plus d'informations, voir Configurer et valider des [exclusions pour Microsoft Defender for Endpoint sur macOS.](mac-exclusions.md)
+     Pour plus d’informations, voir Configurer et valider des [exclusions pour Microsoft Defender for Endpoint sur macOS.](mac-exclusions.md)
