@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Modifiez les abonnements manuellement en achetant un nouvel abonnement et en vous assurant que les deux abonnements sont répertoriés et actifs.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345177"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536105"
 ---
 # <a name="change-plans-manually"></a>Modifier manuellement les plans
 
@@ -37,7 +37,7 @@ La meilleure façon de faire passer tous vos utilisateurs d’un plan à un autr
 
 - Si, lorsque vous sélectionnez **l’onglet** Mise à niveau, le plan que vous souhaitez n’est pas répertorié.
 
-- Si vous ne souhaitez pas mettre à niveau tous vos utilisateurs de la même manière. Certaines entreprises ont besoin de différents utilisateurs abonnés à différentes plans. Pour ce faire, utilisez une modification manuelle.
+- Si vous ne souhaitez pas mettre à niveau tous vos utilisateurs de la même manière. Certaines entreprises ont besoin de différents utilisateurs abonnés à différentes plans. Utilisez une modification manuelle pour ce faire.
 
 Pour continuer avec une modification manuelle, lisez [Étape 2 : Acheter un nouvel abonnement](#step-2-buy-a-new-subscription) dans cette rubrique.
 
@@ -57,9 +57,9 @@ Incluez une licence pour chaque utilisateur que vous souhaitez déplacer.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Étape 3 : Vérifier votre nouvel abonnement et vos nouvelles licences
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
-2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement dont vous souhaitez déplacer des utilisateurs et l’abonnement vers qui vous souhaitez déplacer des utilisateurs doivent être répertoriés ensemble. Si le nouvel abonnement n’existe pas lors de la première vérification, essayez à nouveau ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas répertorié ou n’est pas actif.](#the-new-subscription-isnt-listed-or-isnt-active)
+2. **Vérifier que les deux abonnements sont répertoriés et actifs** L’abonnement dont vous souhaitez déplacer des utilisateurs et l’abonnement vers qui vous souhaitez déplacer des utilisateurs doivent être répertoriés ensemble. Si le nouvel abonnement n’est pas là lors de la première vérification, essayez à nouveau ultérieurement. Vérifiez que les deux abonnements sont actifs. [Le nouvel abonnement n’est pas répertorié ou n’est pas actif.](#the-new-subscription-isnt-listed-or-isnt-active)
 
 3. **Vérifier que vous avez suffisamment de licences pour chaque utilisateur** Chaque utilisateur a besoin d’une licence qui correspond à son abonnement. Ainsi, si vous souhaitez déplacer dix utilisateurs vers Microsoft 365 Business Premium, vous devez vous assurer que dix licences sont disponibles.
 
@@ -94,7 +94,7 @@ Les licences de l’abonnement actuel seront supprimées ultérieurement . Vous 
 
 2. Sélectionnez les cercles en de côté des noms des utilisateurs pour lesquels vous souhaitez remplacer les licences existantes.
 
-3. En haut, sélectionnez **Plus d’options** (**...**), puis **sélectionnez Gérer les licences de produits.**
+3. En haut, sélectionnez les trois points (plus d’actions), puis choisissez **Gérer les licences de produits.**
 
 4. Sélectionnez **Remplacer les attributions de licence de produit existantes** \> **Suivant**.
 

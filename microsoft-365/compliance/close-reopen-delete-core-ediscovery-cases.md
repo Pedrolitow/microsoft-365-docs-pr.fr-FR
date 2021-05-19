@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment gérer les cas eDiscovery principaux. Cela inclut la fermeture d’un cas, la réouverture d’un cas fermé et la suppression d’un cas.
-ms.openlocfilehash: 251ca932954071cf949c45343130f122464dcf01
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310879"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532445"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Fermer, rouvrir et supprimer un cas core eDiscovery
 
@@ -82,7 +82,7 @@ Lorsque vous rouvrez un cas, les cas de découverte électronique mis en place l
 
     Une fois le processus terminé, l’état du cas passe à **Actif** sur la page **Core eDiscovery.**
 
-7. (Facultatif) Pour activer les attentes associées au  cas rouvert, sélectionnez l’onglet Attentes, sélectionnez une attente, puis cochez la case sous État sur la page de la boîte aux lettres de la boîte aux lettres. 
+6. (Facultatif) Pour activer les attentes associées au  cas rouvert, sélectionnez l’onglet Attentes, sélectionnez une attente, puis cochez la case sous État sur la page de la boîte aux lettres de la boîte aux lettres. 
   
 ## <a name="delete-a-case"></a>Supprimer un cas
 
@@ -108,6 +108,6 @@ Pour supprimer un cas :
 
 3. Dans la page d’accueil du cas, sous **État,** cliquez **sur Supprimer le cas.**
 
-      ![Rouvrir un cas fermé](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Supprimer un cas](../media/eDiscoveryCaseHomePageDelete.png)
 
 Si le cas que vous essayez de supprimer contient toujours des conserves eDiscovery, vous recevrez un message d’erreur. Vous devez supprimer toutes les réserves associées au cas, puis essayer à nouveau de supprimer le cas.

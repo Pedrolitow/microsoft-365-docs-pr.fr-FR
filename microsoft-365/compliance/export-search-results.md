@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportez les résultats de recherche à partir d’une recherche de contenu dans le centre Microsoft 365 conformité sur un ordinateur local. Les résultats des e-mails sont exportés en tant que fichiers PST. Le contenu de SharePoint sites OneDrive Entreprise sites sont exportés en tant que documents Office natifs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311963"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536057"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
@@ -122,7 +122,7 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
 5. Configurez les options supplémentaires suivantes :
 
-   ![Exchange options](../media/OtherExportOptions.png)
+   ![Configurer d’autres options d’exportation](../media/OtherExportOptions.png)
 
    1. Activez la case à cocher Activer la **déplication Exchange contenu** pour exclure les messages en double.
   

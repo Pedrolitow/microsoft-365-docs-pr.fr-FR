@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer le compte d’utilisateur d’un ancien employé.
-ms.openlocfilehash: 0afa9b112919d2668d7553ac5bcf08e664bc1749
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244234"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535937"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : supprimer le compte d’utilisateur d’un ancien employé
 
@@ -43,7 +43,13 @@ Une fois que vous avez enregistré et consulté les données utilisateur de l'an
 3. Sous le nom de l’utilisateur, sélectionnez **Supprimer l’utilisateur.** Choisissez les options que vous souhaitez pour cet utilisateur, puis sélectionnez **Supprimer l’utilisateur.** Si vous avez déjà accordé à un autre utilisateur l’accès aux e-mails et aux OneDrive de cet utilisateur, vous n’avez pas besoin de le faire à nouveau ici.
 
 Lorsque vous supprimez un utilisateur, le compte devient inactif pendant 30 jours environ. Vous disposez de cette durée pour restaurer le compte avant sa suppression définitive.
-  
+
+## <a name="watch-delete-a-former-employees-user-account"></a>Regarder : Supprimer le compte d’utilisateur d’un ancien employé
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
+
 ## <a name="does-your-organization-use-active-directory"></a>Votre organisation utilise Active Directory ?
 
 Si votre organisation synchronise les comptes d’utilisateur avec Microsoft 365 à partir d’un environnement Active Directory local, vous devez supprimer et restaurer ces comptes d’utilisateurs dans votre service Active Directory local. Vous ne pouvez pas les supprimer et les restaurer dans Office 365.
@@ -81,3 +87,5 @@ Les opérations ci-dessus peuvent être réalisées à trois endroits :
 ## <a name="related-articles"></a>Articles connexes
 
 [Restaurer un utilisateur](restore-user.md)
+
+[Réinitialiser les mots de passe](reset-passwords.md)

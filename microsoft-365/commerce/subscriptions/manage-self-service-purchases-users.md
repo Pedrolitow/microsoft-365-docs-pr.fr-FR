@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333253"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536081"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
 
@@ -75,7 +75,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 ## <a name="cancel-a-subscription"></a>Annuler un abonnement
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sur la page **Produits**, recherchez l’abonnement que vous souhaitez annuler. Sélectionnez **Autres actions** (points de suspension), puis sélectionnez **Annuler l’abonnement**.
+2. Sur la page **Produits**, recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (plus d’actions), puis **sélectionnez Annuler l’abonnement.**
 3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Si vous le souhaitez, fournissez vos commentaires.
 4. Sélectionnez **Enregistrer**.
 
@@ -108,6 +108,6 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ## <a name="need-help-contact-us"></a>Besoin d’aide ? Contactez-nous.
 
-Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.md)
+Pour les questions courantes sur les achats en libre-service, consultez la FAQ sur les [achats en libre-service.](self-service-purchase-faq.yml)
 
 Si vous avez des questions ou si vous avez besoin d’aide sur les achats en libre-service, [contactez le support technique.](../../business-video/get-help-support.md)
