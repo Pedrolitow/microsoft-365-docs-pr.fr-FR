@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Découvrez comment acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
+description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/07/2021
-ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 144adbd9c21253bd0a8e47205c72e09062fe6552
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537270"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582703"
 ---
 # <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences
 
@@ -98,13 +98,13 @@ Si vous avez prépayé votre abonnement avec une clé de produit, vous pouvez aj
 - Les licences ajoutées au milieu de votre période de facturation apparaissent sur votre prochaine facture. Si vous payez annuellement, vous êtes facturé dans un mois pour ces modifications.
 - Sur votre relevé de facturation suivant, les frais précédents pour le nombre de licences d’origine sont déduits. Nous ajoutons un frais au prorat pour la période avec le nombre de licences d’origine et un frais pour le nouveau nombre de licences. Il existe également un frais pour le nombre de licences actuel pour le restant de votre période de facturation.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous avez acheté plus de licences pour votre abonnement, vous devez ensuite attribuer ces licences aux [utilisateurs de votre organisation.](../../admin/manage/assign-licenses-to-users.md)
 
 Si vous avez réduit le nombre de licences pour votre abonnement parce qu’une personne a quitté votre organisation, vous pouvez supprimer le compte de cet utilisateur. Pour en savoir plus, [consultez Supprimer un ancien employé.](../../admin/add-users/remove-former-employee.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Comprendre les abonnements et les licences](subscriptions-and-licenses.md) (article)\

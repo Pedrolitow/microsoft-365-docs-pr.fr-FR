@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Découvrez les abonnements et les licences dans Microsoft 365 entreprise.
+description: Les applications et les services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple Applications Microsoft 365 pour les PME.
 ms.date: 07/01/2020
-ms.openlocfilehash: a8ec5b0716a5ceaa02526520e76dc390a6fba0f7
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4e93a84df106475417289da168ca472ed5a07475
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331489"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582727"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 entreprise
 
@@ -58,7 +58,7 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
 |Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne. <br/> Pour en savoir plus sur le SLA de cette tâche à accomplir, voir [« Configuration... » messages dans le centre Microsoft 365'administration.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne a accès aux fonctionnalités associées à la licence.  <br/> |
-|Applications Microsoft 365 for entreprise  <br/> |La personne peut télécharger Office applications sur cinq Mac ou PC, cinq tablettes et cinq smartphones.  <br/> |
+|Microsoft 365 Apps for enterprise  <br/> |La personne peut télécharger Office applications sur cinq Mac ou PC, cinq tablettes et cinq smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Comprendre les licences pour les boîtes aux lettres non-utilisateur
 
@@ -82,7 +82,7 @@ Plusieurs types d'administrateurs peuvent utiliser des licences de différentes 
 |Administrateur de support de service  <br/> |Non  <br/> |Non  <br/> |Non  <br/> |Non  <br/> |
 |Administrateur d’utilisateurs  <br/> |Oui  <br/> |Oui  <br/> |Non  <br/> |Oui  <br/> |
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Acheter ou supprimer des licences pour votre abonnement commercial](buy-licenses.md) (article)\
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\

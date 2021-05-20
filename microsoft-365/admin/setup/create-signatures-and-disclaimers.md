@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Découvrez comment gérer les signatures électroniques, notamment les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation de tous les messages électroniques entrants ou qui quittent votre organisation.
-ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Gérer les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
+ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244526"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582751"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
@@ -67,7 +67,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 1. Sélectionnez le lanceur d’applications ![ L’icône du lanceur d’applications, ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) puis sélectionnez **Administrateur.**
    
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
 2. Sélectionnez **Centres d’administration,** puis **sélectionnez Exchange**.
     
@@ -103,7 +103,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures électroniques dans Microsoft 365 :
   
-- Insérez la signature directement sous la dernière réponse ou envoi d’e-mail
+- Insérer la signature directement sous la dernière réponse ou envoi d’e-mail
     
 - Afficher les signatures de courrier côté serveur dans les dossiers Éléments envoyés des utilisateurs
     
@@ -115,4 +115,13 @@ Pour obtenir ces fonctionnalités et d’autres fonctionnalités de gestion des 
   
 ## <a name="more-resources"></a>Plus de ressources
 
-- Pour [plus d’informations](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) sur l’utilisation de PowerShell, voir les clauses d’exclusion de responsabilité, les signatures, les pieds de Exchange Online à l’échelle de l’organisation.
+Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes de message à l’échelle de l’Exchange Online .
+
+## <a name="related-content"></a>Contenu associé
+
+[Migrer le courrier électronique et les contacts vers Microsoft 365](migrate-email-and-contacts-admin.md) (vidéo)
+
+[Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)
+
+[Vue d’ensemble du centre d’administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)
+
