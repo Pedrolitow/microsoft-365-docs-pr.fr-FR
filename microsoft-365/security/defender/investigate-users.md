@@ -1,7 +1,7 @@
 ---
-title: Examiner les utilisateurs dans Microsoft 365 Defender
-description: Examinez les utilisateurs pour un incident dans le centre Microsoft 365 de sécurité.
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, surveiller, signaler, identités, données, appareils, applications, incident, analyser, réponse
+title: Enquêter sur les utilisateurs dans Microsoft 365 Defender
+description: Enquêter sur les utilisateurs pour un incident dans le centre Microsoft 365 sécurité de la ville.
+keywords: sécurité, malware, Microsoft 365, M365, centre de sécurité, moniteur, rapport, identités, données, appareils, applications, incident, analyse, réponse
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539130"
+ms.locfileid: "52572800"
 ---
-# <a name="investigate-users-in-microsoft-365-defender"></a>Examiner les utilisateurs dans Microsoft 365 Defender
+# <a name="investigate-users-in-microsoft-365-defender"></a>Enquêter sur les utilisateurs dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,43 +34,43 @@ ms.locfileid: "52539130"
 
 - Microsoft 365 Defender
 
-Une partie de votre enquête sur les incidents peut inclure des comptes d’utilisateur. Commencez par **l’onglet Utilisateurs** pour un incident à partir d’incidents **& alertes >** incident *>* **utilisateurs.** 
+Une partie de votre enquête sur les incidents peut inclure des comptes d’utilisateurs. Commencez par **l’onglet** Utilisateurs pour un incident provenant **d’incidents & alertes** *>'incident* **> utilisateurs**. 
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple d’une page utilisateurs pour un incident":::
 
-Pour obtenir un résumé rapide d’un compte d’utilisateur pour l’incident, cochez la coche en regard du nom du compte d’utilisateur. Voici un exemple.
+Pour obtenir un résumé rapide d’un compte utilisateur pour l’incident, sélectionnez la marque de contrôle à côté du nom du compte d’utilisateur. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exemple de volet récapitulatif du compte d’utilisateur pour un incident dans le centre Microsoft 365 de sécurité":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Exemple du volet résumé du compte utilisateur pour un incident dans le centre de sécurité Microsoft 365'utilisateur":::
 
 > [!NOTE]
-> La page Utilisateur affiche Azure Active Directory organisation (AD), ainsi que des groupes, pour vous aider à comprendre les groupes et les autorisations associés à un utilisateur.
+> La page Utilisateur affiche Azure Active Directory organisation (Azure AD) ainsi que des groupes, vous aidant à comprendre les groupes et les autorisations associés à un utilisateur.
 
-Dans cette page volante, vous pouvez passer en revue les informations sur les menaces des utilisateurs, notamment les incidents actuels, les alertes actives et le niveau de risque, ainsi que l’exposition des utilisateurs, les comptes, les appareils, etc.
+Dans cette page de survol, vous pouvez consulter les informations sur les menaces des utilisateurs, y compris les incidents actuels, les alertes actives et le niveau de risque, ainsi que l’exposition des utilisateurs, les comptes, les appareils et plus encore.
 
-En outre, vous pouvez agir directement dans le Centre de sécurité Microsoft 365 pour traiter un utilisateur compromis, en confirmant que l’utilisateur est compromis ou en exigeant qu’il se connecte à nouveau.
+En outre, vous pouvez prendre des mesures directement dans le centre de sécurité Microsoft 365 pour s’adresser à un utilisateur compromis, confirmant que l’utilisateur est compromis ou l’obligeant à se connecter à nouveau.
 
-À partir de là, vous pouvez sélectionner La page d’accès à **l’utilisateur** pour voir les détails d’un compte d’utilisateur. Voici un exemple.
+De là, vous pouvez sélectionner Go **to user page pour voir** les détails d’un compte utilisateur. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Exemple de page de compte d’utilisateur pour un incident dans le centre Microsoft 365 sécurité":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Exemple de page de compte utilisateur pour un incident dans le centre Microsoft 365 sécurité":::
 
-Vous pouvez également voir cette page en sélectionnant le nom du compte d’utilisateur dans la liste de la page **Utilisateurs.**
+Vous pouvez également voir cette page en sélectionnant le nom du compte utilisateur à partir de la liste sur la page **Utilisateurs.**
 
-La page utilisateur du centre de sécurité Microsoft 365 combine les informations de Microsoft Defender pour endpoint, Microsoft Defender pour identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence). 
+La page utilisateur Microsoft 365 centre de sécurité combine les informations de Microsoft Defender pour Endpoint, Microsoft Defender for Identity et Microsoft Cloud App Security (selon les licences que vous avez). 
 
-Cette page affiche des informations spécifiques au risque de sécurité d’un compte d’utilisateur. Cela inclut un score qui permet d’évaluer les risques et les événements et alertes récents qui ont contribué au risque global de l’utilisateur.
+Cette page affiche des informations spécifiques au risque de sécurité d’un compte utilisateur. Cela inclut un score qui permet d’évaluer les risques et les événements récents et les alertes qui ont contribué au risque global de l’utilisateur.
 
-À partir de cette page, vous pouvez faire les actions supplémentaires suivantes : 
+À partir de cette page, vous pouvez faire ces actions supplémentaires : 
 
-- Marquer le compte d’utilisateur comme compromis
-- Exiger que l’utilisateur se connecte à nouveau
-- Suspendre le compte d’utilisateur
-- Voir les Azure Active Directory de compte d’utilisateur (Azure AD)
-- Afficher les fichiers du compte d’utilisateur
-- Afficher les fichiers partagés avec cet utilisateur. 
+- Marquer le compte utilisateur comme compromis
+- Exiger de l’utilisateur qu’il se connecte à nouveau
+- Suspendre le compte utilisateur
+- Voir les paramètres Azure Active Directory compte utilisateur (Azure AD)
+- Voir les fichiers appartenant au compte utilisateur
+- Consultez les fichiers partagés avec cet utilisateur. 
 
 Voici un exemple.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exemple d’actions sur un compte d’utilisateur pour un incident dans le centre Microsoft 365 sécurité":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Exemple des actions sur un compte utilisateur pour un incident dans le centre Microsoft 365 sécurité":::
 
 
 <!--
@@ -82,7 +82,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Si nécessaire pour les incidents in-process, poursuivez votre [enquête.](investigate-incidents.md)
+Au besoin pour les incidents en cours, poursuivez votre [enquête](investigate-incidents.md).
 
 ## <a name="see-also"></a>Voir aussi
 

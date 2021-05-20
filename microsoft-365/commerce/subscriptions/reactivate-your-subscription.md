@@ -19,22 +19,22 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Découvrez comment réactiver votre abonnement lorsqu’il expire, est désactivé ou annulé.
+description: Les administrateurs peuvent réactiver un abonnement à l’expiration, à l’annulation ou à l’annulation d’un abonnement, ou si vous avez annulé au milieu d’un abonnement.
 ms.date: 04/07/2021
-ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538458"
+ms.locfileid: "52572512"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
-Vous pouvez réactiver votre abonnement dans le Centre d’administration si : l’abonnement a expiré, a été désactivé par Microsoft ou si vous l’avez annulé au milieu d’une période d’abonnement.
+Vous pouvez réactiver votre abonnement dans le centre d’administration si : l’abonnement a expiré, a été désactivé par Microsoft, ou si vous l’avez annulé au milieu d’un terme d’abonnement.
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global ou un administrateur de facturation pour réactiver un abonnement. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être administrateur Global ou Billing pour réactiver un abonnement. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 **Vous n’êtes pas administrateur ?** Contactez votre administration pour réactiver votre abonnement.
 
@@ -58,13 +58,13 @@ Vous devez être un administrateur global ou un administrateur de facturation po
 
 ::: moniker-end
 
-2. Sur la page **Produits**, recherchez l’abonnement que vous souhaitez réactiver. Sélectionnez les trois points (plus d’actions), puis **sélectionnez Réactiver cet abonnement**.\
-    Si vous ne voyez pas Réactiver cet **abonnement,** contactez [le support technique.](../../business-video/get-help-support.md)
+2. Sur la page **Produits**, recherchez l’abonnement que vous souhaitez réactiver. Sélectionnez les trois points (plus d’actions), **puis sélectionnez Réactiver cet abonnement**.\
+    Si vous ne voyez pas **réactiver cet abonnement, contactez** [le support](../../business-video/get-help-support.md).
 3. Dans le volet **Réactiver cet abonnement** , sélectionnez un mode de paiement dans la liste déroulante, ou sélectionnez **Ajouter un mode de paiement**.
 4. Sélectionnez **Enregistrer**.
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Essayer ou acheter un abonnement Microsoft 365 entreprise](../try-or-buy-microsoft-365.md) (article)\
+[Essayez ou achetez un abonnement Microsoft 365'abonnement d’entreprise](../try-or-buy-microsoft-365.md) (article)\
 [Renouveler Microsoft 365 for business](renew-your-subscription.md) (article)\
 [Annuler votre abonnement](cancel-your-subscription.md) (article)

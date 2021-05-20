@@ -20,30 +20,28 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Découvrez comment router le trafic vers un site web public existant hébergé en dehors de Microsoft, si vous avez demandé à Microsoft de gérer les enregistrements DNS pour votre domaine personnalisé.
-ms.openlocfilehash: ceef82345e562e2aa4c291f416c454fb831ee45b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Découvrez comment acheminer le trafic vers un site Web public existant hébergé en dehors de Microsoft, si vous avez défini Microsoft pour gérer les enregistrements DNS pour votre domaine personnalisé.
+ms.openlocfilehash: 2a1559bbb902375bbc363180cdb4f98ec2b3a939
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915973"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572140"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Mettre à jour les enregistrements DNS pour conserver votre site web chez votre fournisseur d'hébergement actuel
 
- Si vous gérez les enregistrements Microsoft de votre domaine chez votre fournisseur d’hébergement **DNS,** vous n’avez pas à vous soucier des étapes de cette rubrique. Votre site web reste en place et les utilisateurs peuvent toujours y accéder. 
+ **Si vous gérez les enregistrements Microsoft de votre domaine sur votre fournisseur d’hébergement DNS,** vous n’avez pas à vous soucier des étapes de ce sujet. Votre site web reste en place et les utilisateurs peuvent toujours y accéder. 
   
- Si Microsoft gère vos enregistrements **DNS,** pour router le trafic vers un site web public existant hébergé en dehors de Microsoft, après avoir ajouté votre domaine à Microsoft, faites les choses suivantes : 
+ **Si Microsoft gère vos enregistrements DNS,** pour acheminer le trafic vers un site Web public existant hébergé en dehors de Microsoft, après avoir ajouté votre domaine à Microsoft, faites ce qui suit : 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Mettre à jour les enregistrements DNS dans le Centre d’administration Microsoft 365
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Mise à jour des enregistrements DNS dans le Microsoft 365 d’administration
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
-2. Dans la page **Domaines,** sélectionnez le domaine, puis choisissez **Enregistrements DNS**.
+1. Sur la page **Domaines,** sélectionnez le domaine puis choisissez **DNS Records**.
 
-3. Sous **les paramètres DNS,** sélectionnez **Enregistrements personnalisés.**
-
-4. Sélectionnez **+Nouvel enregistrement personnalisé** et entrez les éléments suivants : 
+1. Sélectionnez **+ Ajoutez l’enregistrement** et entrez ce qui suit : 
     
-   - Pour **Type de DNS** entrez : **A (Adresse)**
+   - Pour **saisir le type** : A **(Adresse)**
     
    - Pour **Nom d'hôte ou Alias**, tapez **@**.
     
@@ -51,13 +49,13 @@ ms.locfileid: "50915973"
     
    Il doit s'agir d'une adresse IP  *statique*  pour le site web (et non d'une adresse IP  *dynamique*  ). Vérifiez l'emplacement d'hébergement de votre site web pour vous assurer que vous pouvez obtenir une adresse IP statique pour votre site web public. 
     
-5. Sélectionnez **Enregistrer**. 
+1. Sélectionnez **Enregistrer**. 
     
 De plus, vous pouvez créer un enregistrement CNAME pour aider les clients à trouver votre site web.
   
-1. Sélectionnez **+Nouvel enregistrement personnalisé** et entrez les éléments suivants : 
+1. Sélectionnez **+ Ajoutez l’enregistrement** et entrez ce qui suit : 
     
-   - Pour **Type de DNS** entrez : **CNAME (Alias)**
+   - Pour **le type** entrer: **CNAME (Alias)**
     
    - Pour **Nom d'hôte ou Alias**, tapez **www**
     
@@ -67,6 +65,6 @@ De plus, vous pouvez créer un enregistrement CNAME pour aider les clients à tr
     
 Pour terminer, procédez comme suit :
   
-[Mettez à jour les enregistrements NS de votre](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) domaine pour qu’ils pointent vers Microsoft. 
+[Mettez à jour les enregistrements NS de votre](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) domaine pour pointer vers Microsoft. 
   
-Lorsque les enregistrements NS ont été mis à jour pour pointer vers Microsoft, votre domaine est tous mis en place. Le courrier électronique est acheminé vers Microsoft et le trafic vers votre adresse de site web continue d’être acheminé vers l’hôte de votre site web actuel.
+Lorsque les enregistrements NS ont été mis à jour pour pointer vers Microsoft, votre domaine est tout mis en place. Le courrier électronique sera acheminé vers Microsoft, et le trafic vers votre adresse web continuera d’aller à votre hôte actuel du site Web.

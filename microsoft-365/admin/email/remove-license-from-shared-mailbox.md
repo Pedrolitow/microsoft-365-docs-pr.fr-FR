@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Supprimez la licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur. '
-ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332653"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537582"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
@@ -47,6 +47,20 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+
+::: moniker-end
+
    > [!NOTE]
    > Vous devez supprimer la licence de la page Utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée, car les licences sont des paramètres utilisateur.
   
@@ -59,46 +73,6 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
 5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
 
 6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
-
-    > [!NOTE]
-    > Vous devez supprimer la licence de la page Utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée, car les licences sont des paramètres utilisateur.
-
-2. Sélectionnez la boîte aux lettres partagée, puis **sélectionnez Modifier** en plus des **licences de produit.**
-
-3. Dans la page **Licences de produits,** définissez le basculement sur **« Off** » pour la licence que vous souhaitez supprimer.
-
-4. Sélectionnez **Enregistrer**.
-
-5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
-
-6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
-
-    > [!NOTE]
-    > Vous devez supprimer la licence de la page Utilisateurs actifs. Vous ne pouvez pas supprimer la licence de la page de boîte aux lettres partagée, car les licences sont des paramètres utilisateur.
-
-2. Sélectionnez la boîte aux lettres partagée, puis **sélectionnez Modifier** en plus des **licences de produit.**
-
-3. Dans la page **Licences de produits,** définissez le basculement sur **« Off** » pour la licence que vous souhaitez supprimer.
-
-4. Sélectionnez **Enregistrer**.
-
-5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
-
-6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
 
 ## <a name="related-articles"></a>Articles connexes
 

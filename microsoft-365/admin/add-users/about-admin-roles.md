@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service peut ouvrir les tickets de support via le centre d’administration.
-ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
+ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759407"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536009"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -43,7 +43,7 @@ Vous recherchez la liste complète des descriptions de rôle Intune détaillées
 
 Si vous souhaitez en savoir plus sur l’attribution de rôles dans le Centre d’administration Microsoft 365, consultez la page [Attribuer des rôles d’administrateur](assign-admin-roles.md).
 
-### <a name="watch-what-is-an-admin"></a>Regardez : qu’est-ce qu’un administrateur ?
+## <a name="watch-what-is-an-admin"></a>Regardez : qu’est-ce qu’un administrateur ?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
@@ -93,12 +93,12 @@ Un partenaire peut attribuer ces rôles :
 
 Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous devez ajouter le partenaire en tant qu’administrateur délégué de votre compte. Ce processus est initié par un partenaire autorisé. Le partenaire vous envoie un e-mail pour vous demander l’autorisation d’agir en tant qu’administrateur délégué. Pour consulter des instructions, voir [Autoriser ou supprimer des relations de partenaire](../misc/add-partner.md).
   
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Attribuer des rôles administrateur](assign-admin-roles.md)
+[Attribuer des rôles administrateur](assign-admin-roles.md) (article)
 
-[Les rôles d'administration Azure AD dans le Centre d’administration Microsoft 365](azure-ad-roles-in-the-mac.md)
+[Les rôles d'administration Azure AD dans le Centre d’administration Microsoft 365](azure-ad-roles-in-the-mac.md) (article)
 
-[Rôle d’administrateur Exchange Online](about-exchange-online-admin-role.md)
+[Rôle d’administrateur Exchange Online](about-exchange-online-admin-role.md) (article)
   
-[Rapports d’activité dans le Centre d’administration Microsoft 365](../activity-reports/activity-reports.md)
+[Rapports d’activité dans le Centre d’administration Microsoft 365](../activity-reports/activity-reports.md) (article)

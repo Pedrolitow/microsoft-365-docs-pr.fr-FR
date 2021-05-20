@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 13310eca369949e2b66163907be4268120aa0ed0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344942"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532166"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -58,11 +58,19 @@ En outre :
     Les groupes de sécurité et les groupes Microsoft 365 qui ne sont pas à extension messagerie ne prennent pas en charge cette fonctionnalité et ne sont pas affichés dans la liste à sélectionner. Si vous devez créer un groupe de sécurité à extension messagerie, utilisez le lien vers le Centre d’administration Microsoft 365 pour créer le groupe. 
     
     > [!IMPORTANT]
-    > Vous ne pouvez pas désactiver cette autorisation ou remplacer le groupe activé à partir du Centre de conformité. Toutefois, vous pouvez activer un autre groupe de sécurité à extension messagerie en utilisant la cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
-    > 
-    > Par exemple : `Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > Après avoir activé le groupe, vous ne pouvez pas le modifier dans le Centre de conformité. Consultez la section suivante pour savoir comment activer un autre groupe à l’aide de PowerShell.
 
 - Dans la préversion : l’option **Paramètres de gestion des enregistrements** est uniquement visible par les administrateurs de gestion des enregistrements. 
+
+#### <a name="enabling-another-security-group-for-disposition"></a>Activation d’un autre groupe de sécurité pour sa disposition
+
+Après avoir activé un groupe de sécurité pour sa disposition à partir du **Paramètres de gestion des enregistrements** dans le Centre de conformité Microsoft 365, vous ne pouvez pas désactiver cette autorisation pour le groupe ou remplacer le groupe sélectionné dans le Centre de conformité. Toutefois, vous pouvez activer un autre groupe de sécurité à extension messagerie en utilisant la cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+
+Par exemple : 
+
+```PowerShell
+Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
+````
 
 ### <a name="enable-auditing"></a>Activer l’audit
 
@@ -142,13 +150,17 @@ Après avoir spécifié vos réviseurs, n’oubliez pas de leur accorder l’aut
 
 ### <a name="how-to-customize-email-messages-for-disposition-review"></a>Comment personnaliser des messages électroniques pour la révision avant destruction
 
+Exemple de notification par défaut envoyée par e-mail au réviseur :
+
+![Exemple de notification par e-mail avec texte par défaut lorsqu’un élément est prêt à être envoyé pour révision](../media/disposition-review-email.png)
+
 Également dans la préversion, vous pouvez personnaliser les messages électroniques envoyés aux réviseurs avant destruction pour la notification initiale et les rappels.
 
 À partir de l’une des pages Destruction dans le Centre de conformité, sélectionnez **Paramètres de gestion des enregistrements** :  
 
 ![Paramètres de gestion des enregistrements](../media/record-management-settings.png)
 
-Sélectionnez ensuite l’onglet **Modèles de courrier**, puis spécifiez si vous voulez utiliser simplement les modèles d’e-mail par défaut ou ajouter votre texte au modèle par défaut. Votre texte personnalisé est ajouté aux instructions de l’e-mail après les informations sur l’étiquette de rétention et avant les instructions des étapes suivantes.
+Sélectionnez ensuite l’onglet **Notifications de destruction**, puis spécifiez si vous voulez utiliser simplement le courrier électronique par défaut ou ajouter votre texte au message par défaut. Votre texte personnalisé est ajouté aux instructions de l’e-mail après les informations sur l’étiquette de rétention et avant les instructions des étapes suivantes.
 
 Un texte dans toutes les langues peut être ajouté, cependant, la mise en forme et les images ne sont actuellement pas prises en charge. Les adresses e-mail et les URL peuvent être saisies en tant que texte et, en fonction du client d’e-mail, affichées en tant que lien hypertexte ou de texte non mis en forme dans l’e-mail personnalisé.
 
@@ -162,7 +174,7 @@ Sélectionnez **Enregistrer** pour enregistrer toute modification.
 
 ### <a name="viewing-and-disposing-of-content"></a>Affichage et destruction de contenu
 
-Lorsqu’un réviseur est averti par courrier électronique que le contenu est prêt à être examiné, il passe à l’onglet **Destruction** de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365. Les réviseurs peuvent voir le nombre d’éléments en attente de destruction pour chaque étiquette de rétention à l’aide de **Type** qui afficher la **Destructions en attente**. Ils peuvent ensuite sélectionner une étiquette de rétention, puis **Ouvrir dans une nouvelle fenêtre** pour voir tout le contenu de cette étiquette :
+Lorsqu’un réviseur est averti par courrier électronique que le contenu est prêt à être examiné, il peut cliquer sur un lien dans le message électronique qui l’a directement envoyé à la page **Destruction** de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365. Les réviseurs peuvent voir le nombre d’éléments en attente de destruction pour chaque étiquette de rétention à l’aide de **Type** qui afficher la **Destructions en attente**. Ils peuvent ensuite sélectionner une étiquette de rétention, puis **Ouvrir dans une nouvelle fenêtre** pour voir tout le contenu de cette étiquette :
 
 ![Ouvrir dans une nouvelle fenêtre pour la révision avant destruction](../media/open-in-new-window.png)
 

@@ -22,26 +22,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: Découvrez comment configurer une stratégie d'expiration des mots de passe pour votre organisation dans le Centre d'administration Microsoft 365.
-ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Découvrez comment un administrateur peut définir une stratégie d’expiration des mots de passe pour votre entreprise, votre établissement scolaire ou votre association dans le Centre d’administration Microsoft 365.
+ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903153"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537486"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Définir la stratégie d’expiration des mots de passe pour votre organisation
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../microsoft-365-admin-center-preview.md?view=o365-worldwide).
-
-::: moniker-end
-
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md)
 
 En tant qu'administrateur, vous pouvez faire en sorte qu'ils expirent après un certain nombre de jours ou qu'ils n'expirent jamais. Par défaut, les mots de passe sont définies pour qu’ils n’expirent jamais pour votre organisation.
 
@@ -49,7 +42,7 @@ Des recherches actuelles indiquent sans équivoque que les changements de mot de
 
 Vous devez être un [Administrateur général](../add-users/about-admin-roles.md) pour procéder à ces étapes.
 
-Si vous êtes un utilisateur, vous ne disposez pas de l'autorisation pour paramétrer votre mot de passe afin qu'il reste valide dans le temps. Demandez au support technique de votre bureau ou de votre école d’effectuer les opérations indiquées dans cet article pour vous.
+Si vous êtes un utilisateur, vous n'avez pas les autorisations pour paramétrer votre mot de passe pour qu'il n'expire jamais. Demandez au support technique de votre bureau ou de votre école d'effectuer les opérations de cet article pour vous.
 
 ## <a name="set-password-expiration-policy"></a>Définir la stratégie d’expiration de mot de passe
 
@@ -96,6 +89,6 @@ Si vous souhaitez obtenir plus d’informations sur la mise à jour de la strat�
 
 ## <a name="related-content"></a>Contenu connexe
 
-[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md)
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)
 
-[Réinitialiser les mots de passe](../add-users/reset-passwords.md)
+[Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)

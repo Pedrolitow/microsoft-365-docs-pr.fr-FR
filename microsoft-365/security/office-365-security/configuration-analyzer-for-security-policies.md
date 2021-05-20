@@ -18,12 +18,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger les stratégies de sécurité qui se trouvent en dessous des stratégies de sécurité prédéfines Protection standard et Protection stricte.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65fd67c93711dc847a25be485b4b016af55e4a31
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fd0cf4f3194a7a8eec39f2d0c447dca2dae5948b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203995"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537930"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analyseur de configuration des stratégies de protection dans EOP et Microsoft Defender pour Office 365
 
@@ -34,17 +34,17 @@ ms.locfileid: "51203995"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-L’analyseur de configuration dans le Centre de sécurité & conformité fournit un emplacement central pour rechercher et corriger [](preset-security-policies.md)les stratégies de sécurité où les paramètres se trouvent sous les paramètres de profil protection standard et strict dans les stratégies de sécurité prédéfines.
+L’analyseur de configuration dans le Centre de sécurité et conformité & fournit un emplacement central pour rechercher et [](preset-security-policies.md)corriger les stratégies de sécurité où les paramètres se trouvent en dessous des paramètres de profil de protection standard et strict dans les stratégies de sécurité prédéfines.
 
 Les types de stratégies suivants sont analysés par l’analyseur de configuration :
 
-- **Stratégies Exchange Online Protection (EOP)**: cela inclut les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et les organisations EOP autonomes sans boîtes aux lettres Exchange Online :
+- **Exchange Online Protection (EOP)**: cela inclut les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et les organisations EOP autonomes Exchange Online boîtes aux lettres :
 
   - [Stratégies anti-courrier indésirable.](configure-your-spam-filter-policies.md)
   - [Stratégies anti-programme malveillant.](configure-anti-malware-policies.md)
   - [Stratégies anti-hameçonnage EOP](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations 365 E5 ou Defender pour les abonnements de modules office 365 :
+- **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
 
   - Stratégies anti-hameçonnage dans Microsoft Defender pour Office 365, qui incluent :
 
@@ -56,7 +56,7 @@ Les types de stratégies suivants sont analysés par l’analyseur de configurat
 
   - [Stratégies de pièces jointes sécurisées](set-up-safe-attachments-policies.md).
 
-Les **valeurs de** paramètre de stratégie Standard et **Strict** utilisées comme lignes de base sont décrites dans les paramètres recommandés pour EOP et Microsoft Defender pour la sécurité [Office 365.](recommended-settings-for-eop-and-office365.md)
+Les **valeurs de** paramètre de stratégie Standard et **Strict** utilisées comme lignes de base sont décrites dans les [paramètres recommandés](recommended-settings-for-eop-and-office365.md)pour EOP et Microsoft Defender pour Office 365 sécurité.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -92,7 +92,7 @@ L’analyseur de configuration possède deux onglets principaux :
 
 Par défaut, l’onglet s’ouvre dans la comparaison au profil de protection standard. Vous pouvez basculer vers la comparaison du profil De protection stricte en cliquant sur **Afficher les recommandations strictes.** Pour revenir en arrière, **sélectionnez Afficher les recommandations standard.**
 
-![Affichage des paramètres et des recommandations dans l’analyseur de configuration](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Paramètres et recommandations dans l’analyseur de configuration](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 Par défaut, la colonne Nom de **groupe/paramètre** de stratégie contient une vue d’ensemble des différents types de stratégies de sécurité et du nombre de paramètres qui doivent être améliorés (le cas nécessaire). Les types de stratégies sont :
 
@@ -124,7 +124,7 @@ Si la comparaison n’a aucune recommandation d’amélioration (vert), l’exte
 
 - **Dernière modification**: date de la dernière modification de la stratégie.
 
-- **Recommandations**: valeur du paramètre dans le profil de protection Standard ou Strict. Pour modifier la valeur du paramètre dans votre stratégie afin qu’elle corresponde à la valeur recommandée dans le profil de protection, cliquez sur **Adopter**. Si la modification réussit, vous verrez le message : **Recommandations correctement adoptées.** Cliquez **sur Actualiser** pour voir le nombre réduit de recommandations et la suppression de la ligne de paramètre/stratégie spécifique des résultats.
+- **Recommandations**: valeur du paramètre dans le profil de protection Standard ou Strict. Pour modifier la valeur du paramètre dans votre stratégie afin qu’elle corresponde à la valeur recommandée dans le profil de protection, cliquez sur **Adopter**. Si la modification réussit, le message suivant s’Recommandations **correctement adopté.** Cliquez **sur Actualiser** pour voir le nombre réduit de recommandations et la suppression de la ligne de paramètre/stratégie spécifique des résultats.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Analyse de dérive de configuration et onglet Historique dans l’analyseur de configuration
 
@@ -134,13 +134,13 @@ Cet onglet vous permet de suivre les modifications que vous avez apportées à v
 - **Modifié par**
 - **Nom du paramètre**
 - **Policy**
-- **Type (Type)**
+- **Type**
 
-Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le volant **Filtres** qui s’affiche, vous pouvez choisir parmi les filtres suivants :
+Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le volant **Filtres** qui s’affiche, vous pouvez sélectionner parmi les filtres suivants :
 
 - **Heure de début** **et heure de fin** (date)
 - **Protection standard** ou **protection stricte**
 
-Pour exporter les résultats dans un fichier .csv, cliquez sur **Exporter.**
+Pour exporter les résultats vers un fichier .csv, cliquez sur **Exporter.**
 
 ![Analyse de dérive de configuration et affichage historique dans l’analyseur de configuration](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

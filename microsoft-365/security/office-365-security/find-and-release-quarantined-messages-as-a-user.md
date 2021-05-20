@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 036aa164b8b77efd2365d56c07d26870eac243f5
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274447"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539118"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -54,7 +54,7 @@ En tant qu'utilisateur, vous pouvez afficher, déplacer et supprimer les message
 
 ## <a name="view-your-quarantined-messages"></a>Afficher les messages en quarantaine
 
-1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Examiner** \> **Quarantaine**.
+1. Dans le Centre de sécurité et de conformité, allez dans Gestion des **menaces –**\>**Révision**\>**de la quarantaine**.
 
 2. Vous pouvez trier les résultats en cliquant sur un en-tête de colonne disponible. Cliquez sur **Modifier les colonnes** pour afficher jusqu’à sept colonnes. Les valeurs par défaut sont marquées d'un astérisque (<sup>\*</sup>) :
 

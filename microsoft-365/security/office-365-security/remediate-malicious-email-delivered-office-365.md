@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 202ebc8b79368c8d41fd3727b67359ddcb8a08fa
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204722"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537882"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corriger les messages malveillants remis dans Office 365
 
@@ -29,10 +29,10 @@ ms.locfileid: "51204722"
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-La correction signifie prendre une action prescrite contre une menace. Les e-mails malveillants envoyés à votre organisation peuvent être nettoyés par le système, par le biais d’une purge automatique de zéro heure (ZAP) ou par les équipes de sécurité par le biais d’actions de correction telles que le déplacement vers la boîte de *réception,* le déplacement vers le courrier *indésirable,* le déplacement vers les éléments supprimés, la suppression possible ou la suppression *dure.* Microsoft Defender pour Office 365 P2/E5 permet aux équipes de sécurité de corriger les menaces dans les fonctionnalités de messagerie et de collaboration par le biais d’examens manuels et automatisés.
+La correction signifie prendre une action prescrite contre une menace. Les e-mails malveillants envoyés à votre organisation peuvent être nettoyés par le système, par le biais d’une purge automatique de zéro heure (ZAP) ou par les équipes de sécurité par le biais d’actions de correction telles que le déplacement vers la boîte de *réception,* le déplacement vers le courrier *indésirable,* le déplacement vers les éléments supprimés, la suppression possible ou la suppression *dure.* Microsoft Defender pour Office 365 P2/E5 permet aux équipes de sécurité de corriger les menaces dans les fonctionnalités de messagerie électronique et de collaboration par le biais d’examens manuels et automatisés.
 
 > [!NOTE]
-> Pour corriger les messages malveillants, les équipes de sécurité ont besoin du rôle de recherche *et de purge* qui leur est attribué. L’attribution de rôle est effectuée par le biais d’autorisations dans le centre de sécurité et conformité.
+> Pour corriger les messages malveillants, les équipes de sécurité ont besoin du rôle de recherche et de *purge* qui leur est attribué. L’attribution de rôle est effectuée par le biais des autorisations dans le [Centre de sécurité & conformité.](permissions-in-the-security-and-compliance-center.md)
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Ce que vous devez savoir avant de commencer
 
@@ -40,10 +40,10 @@ Les administrateurs peuvent effectuer les actions requises sur les e-mails, mais
 
 ## <a name="manual-and-automated-remediation"></a>Correction manuelle et automatisée
 
-*Le hunting manuel* se produit lorsque les équipes de sécurité identifient les menaces manuellement à l’aide des fonctionnalités de recherche et de filtrage dans l’Explorateur de menaces. La correction manuelle du courrier électronique peut être déclenchée par n’importe quel affichage de courrier *électronique*(programme *malveillant,* hameçonnage ou courrier *électronique)* une fois que vous avez identifié un ensemble d’e-mails qui doivent être corrigés.
+*Le hunting manuel* se produit lorsque les équipes de sécurité identifient les menaces manuellement à l’aide des fonctionnalités de recherche et de filtrage dans l’Explorateur de menaces. La correction manuelle du courrier électronique peut être déclenchée par n’importe quel affichage de courrier *électronique*(programme *malveillant,* hameçonnage ou tout e-mail) une fois que vous avez identifié un ensemble d’e-mails qui doivent être corrigés.
 
 > [!div class="mx-imgBorder"]
-> [![Recherche manuelle dans l’Explorateur de menaces Office 365 par date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Recherche manuelle dans Office 365'Explorateur de menaces par date.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Les équipes de sécurité peuvent utiliser l’Explorateur de menaces pour sélectionner des e-mails de plusieurs manières :
 
@@ -55,21 +55,21 @@ Les équipes de sécurité peuvent utiliser l’Explorateur de menaces pour sél
 
 Une fois que les e-mails sont sélectionnés par le biais de l’Explorateur de menaces, vous pouvez commencer la correction en prenant des mesures directes ou en les interrogeant pour une action :
 
-- Approbation directe : lorsque des actions telles que le déplacement vers la  boîte de *réception,* le déplacement vers le courrier *indésirable,* le déplacement vers les éléments supprimés, la suppression définitive ou la suppression définitive sont sélectionnées par le personnel de sécurité qui a les autorisations appropriées, et que les étapes suivantes de la correction sont suivies, le processus de correction commence à exécuter l’action sélectionnée. Un flyout temporaire affiche la correction en cours.
+- Approbation directe : lorsque des actions telles que le déplacement vers la  boîte de *réception,* le déplacement vers le courrier *indésirable,* le déplacement vers les éléments supprimés, la suppression définitive ou la suppression définitive sont sélectionnées par le personnel de sécurité qui a les autorisations appropriées et que les étapes suivantes de la correction sont suivies, le processus de correction commence à exécuter l’action sélectionnée. Un programme volant temporaire affiche la correction en cours.
 
 - Approbation en deux étapes : une action d’ajout à la correction peut être prise par les administrateurs qui ne sont pas autorisés à exécuter l’action ou qui doivent attendre. Dans ce cas, les e-mails ciblés sont ajoutés à un conteneur de correction. Une approbation est nécessaire avant l’exécution de la correction.
 
 **Les actions d’investigation et de** réponse automatisées sont déclenchées par des alertes ou par des équipes d’opérations de sécurité de l’Explorateur de menaces. Il peut s’agir d’actions de correction recommandées qui doivent être approuvées par une équipe des opérations de sécurité. Ces actions sont incluses sous **l’onglet Action** dans l’examen automatisé.
 
 > [!div class="mx-imgBorder"]
-> [![Courrier électronique avec programme malveillant dans la page « Péred » montrant l’heure de l’exécution de Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+> [![Courrier avec programme malveillant dans la page « Péred » affichant l’heure de l’exécution de Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-Toutes les corrections (approbation directe ou approbation en deux étapes) qui ont été créées dans l’Explorateur de menaces, ainsi que les actions approuvées provenant d’enquêtes automatisées, sont affichées dans le Centre de gestion des actions. Accédez à ces éléments via le panneau de navigation de gauche sous **Centre** \> **de révision.**
+Toutes les corrections (approbation directe ou approbation en deux étapes) qui ont été créées dans l’Explorateur de menaces, ainsi que les actions approuvées provenant d’enquêtes automatisées, sont affichées dans le Centre de gestion des actions. Accédez à ces éléments via le panneau de navigation de gauche sous **Centre** \> **de révision de l’action.**
 
 > [!div class="mx-imgBorder"]
 > [![Centre de mesures avec une liste des menaces par date et gravité.](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
-Le centre de mise en œuvre affiche toutes les actions de correction pour les 30 derniers jours. Les actions entreprises par le biais de l’Explorateur de menaces sont répertoriées par le nom fourni par l’équipe des opérations de sécurité lors de la création de la correction. Les actions entreprises par le biais d’enquêtes automatisées ont des titres qui commencent par l’alerte associée qui a déclenché l’enquête, telles que « Cluster de courrier Zap... ».
+Le centre de mise en œuvre affiche toutes les actions de correction pour les 30 derniers jours. Les actions entreprises par le biais de l’Explorateur de menaces sont répertoriées par le nom que l’équipe des opérations de sécurité a fourni lors de la création de la correction. Les actions entreprises par le biais d’enquêtes automatisées ont des titres qui commencent par l’alerte associée qui a déclenché l’enquête, telles que « Cluster de courrier Zap... ».
 
 Ouvrez n’importe quel élément de correction pour afficher des détails à son sujet, notamment son nom, sa date de création, sa description, sa gravité et son état. Il affiche également les deux onglets suivants.
 
@@ -78,7 +78,7 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
   > [!div class="mx-imgBorder"]
   > [![Centre de actions avec des menaces actionnables et non actionnables.](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
-  - **Actionnable**: les messages électroniques des emplacements de boîtes aux lettres cloud suivants peuvent être actionnables et déplacés :
+  - **Actionnable**: les e-mails des emplacements de boîte aux lettres cloud suivants peuvent être actionnables et déplacés :
     - Boîte de réception
     - Courrier indésirable
     - Dossier supprimé
@@ -87,24 +87,24 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
       > [!NOTE]
       > Actuellement, seul un utilisateur ayant accès à la boîte aux lettres peut récupérer des éléments à partir d’un dossier supprimé (récupérable).
 
-  - **Actionnable :** les messages électroniques aux emplacements suivants ne peuvent pas être actionnables ou déplacés dans les actions de correction :
+  - **Non actionnable**: les messages électroniques aux emplacements suivants ne peuvent pas être actionnables ou déplacés dans les actions de correction :
     - Quarantaine
     - Dossier supprimé définitivement
     - Local/externe
     - Échec/abandon
 
-  Les messages suspects sont classés comme étant soit remédiables, soit non immédiates. Dans la plupart des cas, les messages remédiables et les messages non immédiatement remédiables sont égaux au nombre total de messages envoyés. Mais dans de rares cas, cela peut ne pas être vrai. Cela peut se produire en raison de retards système, de délais d’expiration ou de messages expirés. Les messages expirent en fonction de la période de rétention de l’Explorateur de menaces de votre organisation.
+  Les messages suspects sont classés comme étant soit remédiables, soit non immédiates. Dans la plupart des cas, les messages remédiables et les messages non immédiatement remédiables sont égaux au nombre total de messages envoyés. Mais dans de rares cas, cela peut ne pas être vrai. Cela peut se produire en raison de retards du système, de délais d’expiration ou de messages expirés. Les messages expirent en fonction de la période de rétention de l’Explorateur de menaces de votre organisation.
 
   Sauf si vous remédiez à d’anciens messages après la période de rétention de l’Explorateur de menaces de votre organisation, il est conseillé de réessayer de corriger les éléments en cas d’incohérence de nombre. Pour les retards du système, les mises à jour de correction sont généralement actualisées en quelques heures.
 
-  Si la période de rétention du courrier électronique de votre organisation dans l’Explorateur de menaces est de 30 jours et que vous remédiez aux messages électroniques de 29 à 30 jours, il se peut que le nombre d’envois de courriers ne s’ajoute pas toujours. Les e-mails ont peut-être déjà commencé à sortir de la période de rétention.
+  Si la période de rétention du courrier électronique de votre organisation dans l’Explorateur de menaces est de 30 jours et que vous remédiez aux messages électroniques de 29 à 30 jours, il se peut que le nombre d’envois de messages ne s’ajoute pas toujours. Les e-mails ont peut-être déjà commencé à sortir de la période de rétention.
 
   Si les corrections sont bloquées à l’état « En cours » pendant un certain temps, cela est probablement dû à des retards du système. La correction peut prendre jusqu’à quelques heures. Vous pouvez voir des variations dans le nombre d’envois de courrier, car certains messages électroniques n’ont peut-être pas été inclus dans la requête au début de la correction en raison de retards du système. Il est bon de réessayer d’y remédier.
 
   > [!NOTE]
   > Pour de meilleurs résultats, la correction doit être effectuée par lots de 50 000 ou moins.
 
-  Seuls les e-mails remédiables sont actionn s pendant la correction. Les e-mails non immédiatement corrigés par le système de messagerie Office 365, car ils ne sont pas stockés dans des boîtes aux lettres cloud.
+  Seuls les e-mails remédiables sont actionn s pendant la correction. Les messages électroniques non instantanés ne peuvent pas être corrigés par le système de messagerie Office 365, car ils ne sont pas stockés dans des boîtes aux lettres cloud.
 
   Les administrateurs peuvent prendre des mesures sur les e-mails mis en quarantaine si nécessaire, mais ils expireront hors de la quarantaine s’ils ne sont pas purgés manuellement. Les e-mails mis en quarantaine en raison de contenus malveillants ne sont pas accessibles par les utilisateurs, de sorte que le personnel de sécurité n’a aucune action à prendre pour se débarrasser des menaces en quarantaine. Si les e-mails sont locaux ou externes, l’utilisateur peut être contacté pour traiter le message suspect. Les administrateurs peuvent également utiliser des outils de sécurité/serveur de messagerie distincts pour la suppression. Ces *e-mails* peuvent être identifiés en appliquant l’emplacement de remise = filtre externe sur site dans l’Explorateur de menaces. En cas d’échec ou de abandon du courrier électronique ou de courrier non accessible par les utilisateurs, il n’y aura aucun message électronique à atténuer, car ces messages n’atteignent pas la boîte aux lettres.
 
@@ -113,7 +113,7 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
   > [!div class="mx-imgBorder"]
   > [![Panneau volant de cluster de messagerie ZAP.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
-  Sélectionnez un élément de soumission de courrier pour afficher les détails de cette correction, tels que la requête (lorsque la correction est déclenchée par le biais d’enquêtes automatisées ou de l’Explorateur de menaces par le biais de la sélection d’une requête) et les heures de début et de fin de la correction. Il affiche également une liste des messages qui ont été envoyés pour correction. À mesure que les messages sortent de la période de rétention de l’Explorateur de menaces, ils disparaissent de cette liste. La liste affiche également les messages individuels qui sont remédiables.
+  Sélectionnez un élément de soumission de courrier pour afficher les détails de cette correction, tels que la requête (lorsque la correction est déclenchée par des enquêtes automatisées ou l’Explorateur de menaces par le biais de la sélection d’une requête) et les heures de début et de fin de la correction. Il affiche également une liste des messages qui ont été envoyés pour correction. À mesure que les messages sortent de la période de rétention de l’Explorateur de menaces, ils disparaissent de cette liste. La liste affiche également les messages individuels qui sont remédiables.
 
 - **Journaux d’action**: cet onglet affiche les messages corrigés, y compris la date approuvée, l’administrateur qui a approuvé l’action, l’action, l’état et le nombre.
 
@@ -127,15 +127,15 @@ Ouvrez n’importe quel élément de correction pour afficher des détails à so
 
   Comme seuls les e-mails remédiables peuvent être pris en compte, le nettoyage de chaque e-mail s’affiche comme réussi ou a échoué. À partir du nombre total d’e-mails remédiables, les atténuations réussies et échouées sont signalées.
 
-  - **Réussite**: l’action souhaitée sur les e-mails corrects a été accomplie. Par exemple : un administrateur souhaite supprimer des courriers électroniques des boîtes aux lettres, afin qu’il prenne l’action de supprimer les e-mails de la sorte. Si un e-mail remédiable n’est pas trouvé dans le dossier d’origine une fois l’action entreprise, l’état s’affiche comme réussi.
+  - **Réussite**: l’action souhaitée sur les e-mails corrects a été accomplie. Par exemple : un administrateur souhaite supprimer des e-mails des boîtes aux lettres, afin qu’il prenne l’action de supprimer les e-mails de la sorte. Si un e-mail remédiable n’est pas trouvé dans le dossier d’origine une fois l’action entreprise, l’état s’affiche comme réussi.
 
-  - **Échec :** échec de l’action souhaitée sur les e-mails corrects. Par exemple : un administrateur souhaite supprimer des courriers électroniques des boîtes aux lettres, afin qu’il prenne l’action de supprimer les e-mails de la sorte. Si un e-mail remédiable est toujours trouvé dans la boîte aux lettres après l’action, l’état s’affiche comme étant un échec.
+  - **Échec :** échec de l’action souhaitée sur les e-mails corrects. Par exemple : un administrateur souhaite supprimer des e-mails des boîtes aux lettres, afin qu’il prenne l’action de supprimer les e-mails de la sorte. Si un e-mail remédiable est toujours trouvé dans la boîte aux lettres après que l’action a été prise, l’état s’affiche comme étant un échec.
   
-  - **Déjà dans la destination**: l’action souhaitée a déjà été prise sur l’e-mail ou l’e-mail existait déjà dans l’emplacement de destination. Par exemple : un e-mail a été supprimé (à la demande) par l’administrateur via l’Explorateur le premier jour. Ensuite, des messages électroniques similaires s’afficheront le jour 2, qui seront supprimés de nouveau de façon souple par l’administrateur. Lors de la sélection de ces e-mails, l’administrateur finit par sélectionner certains messages électroniques du premier jour qui sont déjà supprimés (supprimés de la sorte). À présent, ces e-mails ne seront pas retentés, ils s’afficheront simplement comme « déjà dans la destination », car aucune action n’a été prise sur eux comme ils existaient dans l’emplacement de destination.
+  - **Déjà dans la destination**: l’action souhaitée a déjà été prise sur l’e-mail ou l’e-mail existait déjà dans l’emplacement de destination. Par exemple : un e-mail a été supprimé (à la demande) par l’administrateur via l’Explorateur le premier jour. Ensuite, des messages électroniques similaires s’afficheront le jour 2, qui sont de nouveau supprimés (supprimés de façon souple) par l’administrateur. Lors de la sélection de ces e-mails, l’administrateur finit par sélectionner certains messages électroniques du premier jour qui sont déjà supprimés (supprimés de la sorte). À présent, ces e-mails ne seront pas retentés, ils s’afficheront simplement comme « déjà dans la destination », car aucune action n’a été prise sur eux comme ils existaient dans l’emplacement de destination.
 
   Sélectionnez n’importe quel élément dans le journal des actions pour afficher les détails de correction. Si les détails indiquent « réussite » ou « in trouvé dans la boîte aux lettres », cet élément a déjà été supprimé de la boîte aux lettres. Parfois, il y a une erreur d’erreur lors de la correction. Dans ce cas, il est bon de réessayer la correction.
 
-  En cas de correction de lots importants, vous pouvez également exporter les messages envoyés pour correction via l’envoi du courrier électronique et les messages qui ont été corrigés via les journaux d’action. La limite d’exportation est augmentée à 100 000 enregistrements.
+  En cas de correction de lots importants, vous pouvez également exporter les messages envoyés pour correction via l’envoi du courrier électronique et les messages qui ont été corrigés via les journaux d’action. La limite d’exportation est augmentée jusqu’à 100 000 enregistrements.
 
 L’équipe de sécurité peut prendre jusqu’à 50 corrections manuelles simultanées . toutefois, il n’existe aucune limite définie pour les actions d’investigation et de réponse automatisées.
 

@@ -17,13 +17,14 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données hautement sensibles.
-ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d83c10df50d02f47a6d70ee80b2ddbf89fff37d0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916285"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538194"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurer des équipes avec la protection des données hautement sensibles
 
@@ -33,7 +34,7 @@ Pour ce niveau de protection, nous créons une étiquette de confidentialité qu
 
 Le niveau hautement sensible offre les protections supplémentaires suivantes sur le niveau de référence :
 
-- Une étiquette de confidentialité pour l’équipe qui vous permet d’activer ou de désactiver le partage d’invités et de bloquer l’accès au contenu SharePoint pour les appareils non gérés. Cette étiquette peut également être utilisée pour classifier et chiffrer des fichiers.
+- Une étiquette de sensibilité pour l'équipe qui vous permet d'activer ou de désactiver le partage avec les invités et de bloquer l'accès au contenu SharePoint pour les appareils non gérés. Ce label peut également être utilisé pour classer et crypter les fichiers.
 - Type de lien de partage par défaut plus restrictif
 - Seuls les propriétaires d’équipe peuvent créer des canaux privés.
 - Les demandes d’accès au site SharePoint associé sont désactivées.

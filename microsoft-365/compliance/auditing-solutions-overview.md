@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Découvrez comment auditer les activités des utilisateurs et administrateurs de votre organisation Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 214ea43348a4a33e6ce1b754cbaf9be6a43b2c70
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314332"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538525"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Audit de solutions dans Microsoft 365
 
@@ -32,9 +32,11 @@ Les solutions d'audit de Microsoft 365 fournissent une solution intégrée pour 
 
 ## <a name="microsoft-365-auditing-solutions"></a>Solutions d’audit Microsoft 365
 
-Microsoft 365 propose deux solutions d’audit : l’audit de base et l’audit avancé.
+Microsoft 365 propose deux solutions d’audit : l’audit de base et l’audit avancé.
 
-### <a name="basic-auditing"></a>Audit de base
+![Principales fonctionnalités de l’audit de base et de l’audit avancé](..\media\AuditingSolutionsComparison.png)
+
+### <a name="basic-audit"></a>Audit de base
 
 L’audit de base vous offre la possibilité de journaliser et de rechercher des activités auditées, et de mettre en place les enquêtes d’audit, informatiques, de conformité et juridiques.
 
@@ -46,12 +48,12 @@ L’audit de base vous offre la possibilité de journaliser et de rechercher des
 
 - **Cmdlet Search-UnifiedAuditLog**. Vous pouvez également utiliser la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell (cmdlet sous-jacente pour l’outil de recherche) pour rechercher des événements d’audit ou les utiliser dans un script. Pour plus d'informations, voir :
 
-  - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+  - [Référence de la cmdlet Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
   - [Utiliser un script PowerShell pour effectuer une recherche dans le journal d’audit](audit-log-search-script.md)
 
 - **Exporter des enregistrements d’audit dans un fichier CSV**. Après avoir exécuté l’outil de recherche dans le journal d’audit dans le Centre de conformité, vous pouvez exporter les enregistrements d’audit renvoyés par la recherche dans un fichier CSV. Vous pouvez ainsi trier et filtrer des fichiers Microsoft Excel sur différentes propriétés d’enregistrement d’audit. Vous pouvez également utiliser la fonctionnalité de transformation de Power Query d’Excel pour diviser chaque propriété de l’objet JSON AuditData dans sa propre colonne. Cela vous permet d’afficher et de comparer efficacement des données similaires pour différents événements. Pour plus d’informations, consultez [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md).
 
-- **Accès aux journaux d’audit via l’API Activité de gestion d’Office 365**. Une troisième méthode pour accéder et récupérer des enregistrements d’audit consiste à utiliser l’API Activité de gestion d’Office 365. Cela permet aux organisations de conserver les données d’audit pendant des périodes plus longues que les 90 jours par défaut, et de les importer dans une solution SIEM. Pour plus d’informations, consultez [Référence de l’API d’activité de gestion d’Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+- **Accès aux journaux d’audit via l’API Activité de gestion d’Office 365**. Une troisième méthode pour accéder et récupérer des enregistrements d’audit consiste à utiliser l’API Activité de gestion d’Office 365. Cela permet aux organisations de conserver les données d’audit pendant des périodes plus longues que les 90 jours par défaut, et de les importer dans une solution SIEM. Pour plus d’informations, consultez [Référence de l’API Activité de gestion Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 - **Rétention du journal d’audit de 90**. Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. Dans le cadre de l’audit de base, les enregistrements sont conservés pendant 90 jours, ce qui signifie que vous pouvez rechercher des activités qui se sont produites au cours des trois derniers mois.
 
@@ -63,7 +65,7 @@ L’Audit avancé s’appuie sur les fonctionnalités de l’audit de base en fo
 
 - **Rétention plus longue des enregistrements d’audit**. Les enregistrements d'audit Exchange, SharePoint et Azure Active Directory sont conservés par défaut pendant un an. Par défaut, les enregistrements d’audit pour toutes les autres activités sont conservés pendant 90 jours. Vous pouvez utiliser des stratégies de rétention du journal d’audit pour configurer des périodes de rétention plus longues.
 
-- **Événements importants et essentiels**. Des enregistrements d’audit pour des événements essentiels peuvent aider votre organisation à mener des recherches de sécurité et de conformité en fournissant une visibilité à des événements tels que le moment où les éléments de courrier ont été accédés, ou les moments où des éléments de courrier ont été répondus et envoyés, et quand et ce qu’un utilisateur a recherché dans Exchange Online et SharePoint Online. Ces événements importants peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission.
+- **Événements importants et essentiels**. Des enregistrements d’audit pour des événements essentiels peuvent aider votre organisation à mener des recherches de sécurité et de conformité en fournissant une visibilité à des événements tels que le moment où les éléments de courrier ont été accédés, ou les moments où des éléments de courrier ont été répondus et envoyés, ou quand et ce qu’un utilisateur a recherché dans Exchange Online et SharePoint Online. Ces événements importants peuvent vous aider à identifier les violations possibles et déterminer l’étendue de la compromission.
 
 - **Bande passante supérieure à l’API Activité de gestion Office 365**. L’audit avancé offre aux organisations davantage de bande passante pour accéder aux journaux d’audit via l’API Activité de gestion Office 365. Si toutes les organisations (qui disposent d'un audit de base ou d'un audit avancé) se voient initialement attribuer une base de référence de 2 000 demandes par minute, cette limite augmentera de manière dynamique en fonction du nombre de sièges de l'organisation et de son abonnement aux licences. Ainsi, les organisations disposant d'un Audit avancé obtiennent environ deux fois plus de bande passante que les organisations disposant d'un audit de base.
 
@@ -78,7 +80,7 @@ Le tableau suivant compare les principales fonctionnalités disponibles dans les
 |Activé par défaut|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
 |Des milliers d’événements d’audit peuvent faire l’objet de recherches.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
 |Outil de recherche d’audit dans le Centre de conformité Microsoft 365.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
-|Cmdlet **Search-UnifiedAuditLog**.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
+|Cmdlet Search-UnifiedAuditLog.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
 |Exporter des enregistrements d’audit dans un fichier CSV.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
 |Accès aux journaux d’audit via l’API Activité de gestion Office 365<sup>1</sup>.|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)</sup>|
 |Rétention du journal d’audit de 90|![Pris en charge](../media/check-mark.png)|![Pris en charge](../media/check-mark.png)|
@@ -94,7 +96,7 @@ Le tableau suivant compare les principales fonctionnalités disponibles dans les
 
 Les sections suivantes identifient les licences requises pour l’Audit de base et l’Audit avancé. La fonctionnalité d’Audit de base est incluse dans la fonctionnalité Audit avancé.
 
-### <a name="basic-auditing"></a>Audit de base
+### <a name="basic-audit"></a>Audit de base
 
 - Abonnement Microsoft 365 Entreprise E3
 - Microsoft 365 Business Premium
@@ -125,17 +127,19 @@ Les sections suivantes identifient les licences requises pour l’Audit de base 
 
 Pour commencer à utiliser les solutions d’audit dans Microsoft 365, consultez les instructions de configuration suivantes.
 
-### <a name="set-up-basic-auditing"></a>Configurer l’Audit de base
+### <a name="set-up-basic-audit"></a>Configurer l’Audit de base
 
 La première étape consiste à configurer l’audit de base, puis à lancer des recherches dans le journal d’audit.
 
-![Flux de travail pour configurer l’Audit de base](../media/BasicAuditingWorkflow.png)
+![Flux de travail pour configurer l’Audit avancé](../media/BasicAuditingWorkflow.png)
 
 1. Vérifiez que votre organisation dispose d’un abonnement qui prend en charge l’Audit de base et, le cas échéant, un abonnement qui prend en charge l’Audit avancé.
 
-2. Attribuez des autorisations dans Exchange Online aux personnes de votre organisation qui utiliseront l’outil de recherche dans le journal d’audit dans le Centre de conformité Microsoft 365 ou la cmdlet **Search-UnifiedAuditLog**. Plus précisément, les utilisateurs doivent avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online.
+2. Attribuez des autorisations dans Exchange Online aux personnes de votre organisation qui utiliseront l’outil de recherche dans le journal d’audit dans le Centre de conformité Microsoft 365 ou utilisez la cmdlet **Search-UnifiedAuditLog**. Plus précisément, les utilisateurs doivent avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online.
 
 3. Effectuer une recherche dans le journal d’audit. À l’issue des étapes 1 et 2, les utilisateurs de votre organisation peuvent utiliser l’outil de recherche dans le journal d’audit (ou cmdlet correspondante) pour rechercher des activités auditées.
+
+Pour obtenir des instructions plus détaillées, voir [Configurer l’audit de base](set-up-basic-audit.md).
 
 ### <a name="set-up-advanced-audit"></a>Configurer l’audit avancé
 
@@ -156,6 +160,8 @@ Si votre organisation a un abonnement qui prend en charge l’Audit avancé, sui
 3. Configurer des stratégies de rétention du journal d'audit. En plus de la stratégie par défaut qui conserve les enregistrements d’audit Exchange, SharePoint et Azure AD pendant un an, vous pouvez créer des stratégies de rétention supplémentaires pour le journal d’audit afin de répondre aux exigences des équipes de sécurité, informatique et de conformité de votre organisation.
 
 4. Recherchez des événements essentiels et d’autres activités lors d’enquêtes. À l’issue des étapes 1 et 2, vous pouvez rechercher des événements essentiels et d’autres activités dans le journal d’audit lors d’enquêtes approfondies sur des comptes compromis et d’autres types d’enquêtes de sécurité ou de conformité.
+
+Pour obtenir des instructions plus détaillées, voir [Configurer l’audit avancé](set-up-advanced-audit.md).
 
 ## <a name="training"></a>Formation
 

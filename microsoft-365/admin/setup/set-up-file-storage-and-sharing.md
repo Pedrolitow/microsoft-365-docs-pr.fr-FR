@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers dans Microsoft 365.
-ms.openlocfilehash: 75d310d734607f6b7be50ec35666169184c1b213
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244490"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572176"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurer le partage et le stockage de fichiers dans Microsoft 365
 
@@ -46,7 +46,7 @@ Regardez une courte vidéo sur le stockage de fichiers dans le cloud Microsoft 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
-## <a name="microsoft-365-document-storage-and-management"></a>« Gestion et stockage de documents Microsoft 365 »
+## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 stockage et gestion de documents
 
 - Nous avons conçu OneDrive pour un usage individuel et le partage occasionnel de fichiers.
 
@@ -204,3 +204,11 @@ Vous pouvez activer le stockage tiers pour permettre à vos utilisateurs dans Mi
   - [Installer et configurer Office sur un iPhone ou un iPad avec Microsoft 365](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
 
   - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
+
+## <a name="related-content"></a>Contenu connexe
+
+[Ajouter de l’espace de stockage pour votre](../../commerce/add-storage-space.md) abonnement (article)
+
+[Partager des fichiers et des dossiers avec Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (vidéo)
+
+[Personnalisez le site de votre équipe pour le stockage et le partage de](customize-team-site.md) fichiers (article)

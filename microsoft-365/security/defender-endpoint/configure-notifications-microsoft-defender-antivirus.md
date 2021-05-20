@@ -1,7 +1,7 @@
 ---
-title: Configurer les notifications de l’Antivirus Microsoft Defender
-description: Découvrez comment configurer et personnaliser les notifications standard et supplémentaires de l’Antivirus Microsoft Defender sur les points de terminaison.
-keywords: notifications, defender, antivirus, point de terminaison, gestion, administrateur
+title: Configurer Antivirus Microsoft Defender notifications
+description: Découvrez comment configurer et personnaliser les notifications standard et Antivirus Microsoft Defender sur les points de terminaison.
+keywords: notifications, défenseur, antivirus, point final, gestion, admin
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -11,105 +11,100 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 05/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6e11c9394f250a6f3882183224f53954b1390a23
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f885b6d7991e4175cd14be5bbe9e0a7c96b1580f
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274627"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572344"
 ---
 # <a name="configure-the-notifications-that-appear-on-endpoints"></a>Configurer les notifications qui apparaissent sur les points de terminaison
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Dans Windows 10, les notifications d’application concernant la détection et la correction des programmes malveillants sont plus robustes, cohérentes et concises.
+En Windows 10, les notifications d’application sur la détection et l’assainissement des logiciels malveillants sont plus robustes, cohérentes et concises.
 
-Les notifications apparaissent sur les points de terminaison lorsque des analyses déclenchées et programmées manuellement sont terminées et que des menaces sont détectées. Ces notifications apparaissent également dans le Centre de **notifications** et un résumé des analyses et des détections de menaces s’affiche à intervalles réguliers.
+Les notifications apparaissent sur les points de terminaison lorsque les analyses déclenchées manuellement et planifiées sont terminées et que les menaces sont détectées. Ces notifications apparaissent également dans le Centre **de notification,** et un résumé des analyses et des détections de menaces apparaissent à intervalles réguliers.
 
-Vous pouvez également configurer l’apparition des notifications standard sur les points de terminaison, telles que les notifications de redémarrage ou lorsqu’une menace a été détectée et corrigé.
+Vous pouvez également configurer la façon dont les notifications standard s’apparaissent sur les paramètres, tels que les notifications de redémarrage ou lorsqu’une menace a été détectée et assainie.
 
 ## <a name="configure-the-additional-notifications-that-appear-on-endpoints"></a>Configurer les notifications supplémentaires qui apparaissent sur les points de terminaison
 
-Vous pouvez configurer l’affichage de notifications supplémentaires, telles que des résumés récents de la détection des menaces, dans l’application Sécurité [Windows](microsoft-defender-security-center-antivirus.md) et avec la stratégie de groupe.
+Vous pouvez configurer l’affichage de notifications supplémentaires, telles que des résumés récents de détection de menaces, [dans l’application Sécurité Windows et](microsoft-defender-security-center-antivirus.md) avec la stratégie de groupe.
 
 > [!NOTE]
-> Dans Windows 10, version 1607, la fonctionnalité était appelée **notifications améliorées** et pouvait être configurée sous La mise à jour des **paramètres Windows**&  >  **sécurité**  >  **Windows Defender**. Dans les paramètres de stratégie de groupe dans toutes les versions de Windows 10, il s’agit des **notifications améliorées.**
+> Dans Windows 10, version 1607 la fonctionnalité a été appelée **notifications améliorées** et pourrait être **configuré sous Windows Paramètres** mise à jour &  >  **sécurité**  >  **Windows Defender**. Dans les paramètres de stratégie de groupe dans toutes les versions Windows 10, il est appelé **notifications améliorées**.
 
 > [!IMPORTANT]
-> La désactivation de notifications supplémentaires ne désactive pas les notifications critiques, telles que les alertes de détection et de correction des menaces.
+> La désactivation de notifications supplémentaires ne désactivera pas les notifications critiques, telles que les alertes de détection et d’assainissement des menaces.
 
-**Utilisez l’application sécurité Windows pour désactiver les notifications supplémentaires :**
+**Utilisez l Sécurité Windows apprable pour désactiver les notifications supplémentaires :**
 
-1. Ouvrez l’application Sécurité Windows en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
+1. Ouvrez l Sécurité Windows application en cliquant sur l’icône bouclier dans la barre des tâches ou en recherchant le menu de démarrage pour **la sécurité**.
 
-2. Cliquez sur la **vignette & protection** contre les virus contre les menaces (ou sur l’icône de bouclier dans la barre de menus de gauche), puis sur l’étiquette **paramètres** de protection contre & virus :
+2. Sélectionnez **la vignette de protection contre & virus** (ou l’icône du bouclier sur la barre de menu gauche) et sélectionnez ensuite les paramètres de protection contre les menaces & virus ou les paramètres de protection contre les **menaces**
 
-    ![Capture d’écran de l’étiquette & protection contre les virus dans l’application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
+3. Faites défiler vers la section **Notifications** et cliquez sur **Paramètres de notification de modification**.
 
-3. Faites défiler la page **jusqu’à la** section Notifications et cliquez **sur Modifier les paramètres de notification.**
+4. Faites glisser le commutateur vers **Off** ou **On** pour désactiver ou activer des notifications supplémentaires.
 
-4. Faites glisser le commutateur **sur Désactivé** ou **Activé** pour désactiver ou activer des notifications supplémentaires.
+**Utilisez la stratégie de groupe pour désactiver des notifications supplémentaires :**
 
-**Utilisez la stratégie de groupe pour désactiver les notifications supplémentaires :**
+1. Sur votre ordinateur de gestion de stratégie de groupe, ouvrez [la console de gestion de stratégie de](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))groupe, cliquez à droite sur l’objet de stratégie de groupe que vous souhaitez configurer et cliquez sur **Modifier**.
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+2. Dans le **groupe Policy Management Editor aller** à la configuration de **l’ordinateur**.
 
-2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration ordinateur.**
+3. Cliquez **sur Modèles administratifs**.
 
-3. Cliquez **sur Modèles d’administration.**
+4. Étendre l’arbre **aux Windows composants > Antivirus Microsoft Defender > Reporting**.
 
-4. Développez l’arborescence **des composants Windows >'antivirus Microsoft Defender > rapports.**
+5. Double-cliquez Désactiver **les notifications améliorées et** définir l’option **activée**. Cliquez sur **OK**. Cela empêchera l’apparition de notifications supplémentaires.
 
-5. Double-cliquez **sur Désactiver les notifications améliorées** et définissez l’option sur **Activé.** Cliquez sur **OK**. Cela empêche l’apparition de notifications supplémentaires.
-
-## <a name="configure-standard-notifications-on-endpoints"></a>Configurer des notifications standard sur les points de terminaison
+## <a name="configure-standard-notifications-on-endpoints"></a>Configurer les notifications standard sur les points de terminaison
 
 Vous pouvez utiliser la stratégie de groupe pour :
 
-- Afficher du texte personnalisé supplémentaire sur les points de terminaison lorsque l’utilisateur doit effectuer une action
+- Affichez du texte supplémentaire personnalisé sur les points de terminaison lorsque l’utilisateur a besoin d’effectuer une action
 - Masquer toutes les notifications sur les points de terminaison
 - Masquer les notifications de redémarrage sur les points de terminaison
 
-Masquer les notifications peut être utile dans les situations où vous ne pouvez pas masquer l’intégralité de l’interface antivirus Microsoft Defender. Pour [plus d’informations,](prevent-end-user-interaction-microsoft-defender-antivirus.md) voir Empêcher les utilisateurs de voir ou d’interagir avec l’interface utilisateur de l’Antivirus Microsoft Defender. 
+Masquer les notifications peut être utile dans les situations où vous ne pouvez pas masquer l’ensemble Antivirus Microsoft Defender interface. Voir [Empêcher les utilisateurs de voir ou d’interagir avec l’interface Antivirus Microsoft Defender utilisation pour](prevent-end-user-interaction-microsoft-defender-antivirus.md) plus d’informations. 
 
 > [!NOTE]
-> Le masquation des notifications se produit uniquement sur les points de terminaison sur lesquels la stratégie a été déployée. Les notifications relatives aux actions qui doivent être prises (telles qu’un redémarrage) apparaissent toujours dans le tableau de bord et les rapports de surveillance de [Microsoft Endpoint Manager Endpoint Protection.](/configmgr/protect/deploy-use/monitor-endpoint-protection) 
+> La dissimulation des notifications ne se produira que sur les points de terminaison auxquels la stratégie a été déployée. Les notifications relatives aux mesures à prendre (comme un redémarrage) apparaîtront toujours sur le [tableau de bord et les rapports Microsoft Endpoint Manager Endpoint Protection surveillance des données.](/configmgr/protect/deploy-use/monitor-endpoint-protection) 
 
-Voir [Personnaliser l’application sécurité Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) pour votre organisation pour obtenir des instructions pour ajouter des informations de contact personnalisées aux notifications que les utilisateurs voient sur leurs ordinateurs.
+Consultez [personnaliser l’application Sécurité Windows pour votre organisation pour obtenir](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) des instructions pour ajouter des coordonnées personnalisées aux notifications que les utilisateurs voient sur leurs machines.
 
 **Utilisez la stratégie de groupe pour masquer les notifications :**
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+1. Sur votre ordinateur de gestion de stratégie de groupe, ouvrez [la console de gestion de stratégie de](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))groupe, cliquez à droite sur l’objet de stratégie de groupe que vous souhaitez configurer et cliquez sur **Modifier**.
 
-2. Dans **l’Éditeur de gestion des stratégies de** groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration.**
+2. Dans le **groupe Policy Management Editor aller** à la configuration de **l’ordinateur** et **cliquez sur modèles administratifs**.
 
-3. Développez l’arborescence **des composants Windows >'interface > client antivirus Microsoft Defender.** 
+3. Élargissez l’arbre **Windows composants > Antivirus Microsoft Defender > interface client.** 
 
-4. Double-cliquez sur **Supprimer toutes les notifications et** définissez l’option sur **Activé.** Cliquez sur **OK**. Cela empêche l’apparition de notifications supplémentaires.
+4. Double-cliquez supprimer **toutes les notifications et** définir l’option activé **.** Cliquez sur **OK**. Cela empêchera l’apparition de notifications supplémentaires.
 
 **Utilisez la stratégie de groupe pour masquer les notifications de redémarrage :**
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+1. Sur votre ordinateur de gestion de stratégie de groupe, ouvrez [la console de gestion de stratégie de](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))groupe, cliquez à droite sur l’objet de stratégie de groupe que vous souhaitez configurer et cliquez sur **Modifier**.
 
-2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration ordinateur.**
+2. Dans le **groupe Policy Management Editor aller** à la configuration de **l’ordinateur**.
 
-3. Cliquez **sur Modèles d’administration.**
+3. Cliquez **sur Modèles administratifs**.
 
-4. Développez l’arborescence **des composants Windows >'interface > client antivirus Microsoft Defender.**
+4. Élargissez l’arbre **Windows composants > Antivirus Microsoft Defender > interface client.**
 
-5. Double-cliquez **sur Supprimer les notifications** de redémarrage et définir l’option **sur Activé.** Cliquez sur **OK**. Cela empêche l’apparition de notifications supplémentaires.
+5. Double-click **supprime les notifications de redémarrage et** définir l’option **activée**. Cliquez sur **OK**. Cela empêchera l’apparition de notifications supplémentaires.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Configurer l’interaction de l’utilisateur final avec l’Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Configurer l’interaction utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md)

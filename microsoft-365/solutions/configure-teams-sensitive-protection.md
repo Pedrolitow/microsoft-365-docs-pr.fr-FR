@@ -17,19 +17,20 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données sensibles.
-ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916225"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538182"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurer les équipes avec la protection des données sensibles
 
 Dans cet article, nous étudions la configuration d’une équipe pour un niveau de protection sensible. Assurez-vous d’avoir effectué les étapes décrites dans [Déployer des équipes avec une protection de base de référence](configure-teams-baseline-protection.md) avant de suivre les étapes décrites dans cet article. Le niveau sensible offre les protections supplémentaires suivantes sur le niveau de référence :
 
-- Une étiquette de confidentialité pour l’équipe qui vous permet d’activer ou de désactiver le partage d’invités et de limiter l’accès au contenu SharePoint au web uniquement pour les appareils non gérés. Cette étiquette peut également être utilisée pour classifier des fichiers.
+- Une étiquette de sensibilité pour l'équipe qui vous permet d'activer ou de désactiver le partage des invités et de limiter l'accès au contenu SharePoint au web uniquement pour les appareils non gérés. Cette étiquette peut également être utilisée pour classer les fichiers.
 - Type de lien de partage par défaut plus restrictif
 - Seuls les propriétaires d’équipe peuvent créer des canaux privés.
 

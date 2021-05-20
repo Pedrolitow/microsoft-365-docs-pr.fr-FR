@@ -1,29 +1,30 @@
 ---
 title: Informations de paiement pour la Tunisie
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4878fe81282defba0b40b080752b1d174d50c372
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 51a73b78ce3c0b6f70a5edb06060e018314bb3a7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272707"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537702"
 ---
 # <a name="payment-information-for-tunisia"></a>Informations de paiement pour la Tunisie
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md). <!--This should go to the parent "Pay for your Microsoft 365 for business subscription" topic-->
 
-Veuillez payer en USD uniquement et référencer les numéro(s) de facture à votre paiement.
+Veuillez payer en USD uniquement et référencer les numéro(s) de facture sur votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
@@ -32,6 +33,3 @@ Veuillez payer en USD uniquement et référencer les numéro(s) de facture à vo
 **IBAN :** GB95CITI18500812510049  
 **Numéro de compte :** 12510049  
 **Nom du compte :** MICROSOFT  
-
-
-

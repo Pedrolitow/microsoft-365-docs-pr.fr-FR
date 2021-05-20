@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915877"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537606"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915877"
 
 Vous pouvez facilement créer des boîtes aux lettres partagées de sorte qu’un groupe de personnes puisse surveiller et envoyer facilement du courrier électronique à partir d’une adresse de courrier commune, comme info@contoso.com. Quand une personne du groupe répond à un courrier envoyé à la boîte aux lettres partagée, la réponse semble provenir de la boîte aux lettres partagée et non de la personne.
 
-Les boîtes aux lettres partagées incluent un calendrier partagé. Un grand nombre de petites entreprises préfèrent utiliser un calendrier partagé pour que tous les employés y entrent leurs rendez-vous. Par exemple, si vous avez 3 commerciaux dans votre entreprise qui effectuent des visites chez les clients, ces 3 personnes peuvent utiliser le calendrier partagé pour saisir les rendez-vous. Tout le monde sait ainsi où elles se trouvent.
+Les boîtes aux lettres partagées incluent un calendrier partagé. Beaucoup de petites entreprises utilisent le calendrier partagé pour permettre à leurs employés d'y entrer leurs rendez-vous. Par exemple, si vous avez trois commerciaux qui effectuent des visites chez les clients, ces trois personnes peuvent utiliser le calendrier partagé pour saisir leurs rendez-vous. Tout le monde sait ainsi où elles se trouvent.
 
 Avant de créer une boîte aux lettres partagée, assurez-vous de lire la section [À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) pour plus d'informations.
 
@@ -198,14 +198,14 @@ Lorsque vous avez créé la boîte aux lettres partagée, vous avez automatiquem
 
 3. N’importe quel membre de la boîte aux lettres partagée peut créer, afficher et gérer des rendez-vous dans le calendrier, tout comme ils le feraient leurs rendez-vous personnels. Tous les membres de la boîte aux lettres partagée peuvent voir les modifications apportées au calendrier partagé.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md)
+[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) (article)
 
-[Configurer une boîte aux lettres partagée](configure-a-shared-mailbox.md)
+[Configurer une boîte aux lettres partagée](configure-a-shared-mailbox.md) (article)
 
-[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md)
+[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) (article)
 
-[Supprimer une licence à partir d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md)
+[Supprimer une licence d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md) (article)
 
-[Résoudre les problèmes liés aux boîtes aux lettres partagées](resolve-issues-with-shared-mailboxes.md)
+[Résoudre les problèmes liés aux boîtes aux lettres partagées](resolve-issues-with-shared-mailboxes.md) (article)

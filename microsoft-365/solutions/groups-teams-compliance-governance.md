@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Découvrez les options de conformité pour Microsoft 365 groupes, Teams et SharePoint collaboration.
-ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 236b977b22066830e1b36bc87676fd5fa2c9d3f5
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241675"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538122"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Options de conformité pour Microsoft 365 groupes, Teams et la collaboration SharePoint de conformité
 
@@ -35,7 +36,7 @@ Le tableau suivant fournit une référence rapide pour les contrôles de conform
 ||Conserver la conversation et les messages|[En savoir plus sur les stratégies de rétention dans Microsoft Teams](../compliance/retention-policies-teams.md)|
 |Classification des informations|||
 ||Classifier les groupes et les équipes|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Classifier automatiquement le contenu sensible|[Appliquer automatiquement une étiquette de confidentialité à du contenu](../compliance/apply-sensitivity-label-automatically.md)|
+||Classifier automatiquement le contenu sensible|[Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)|
 ||Chiffrer le contenu sensible|[Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité](../compliance/encryption-sensitivity-labels.md)|
 |Protection des informations|||
 ||Empêcher la perte d’informations sensibles|[En savoir plus sur la protection contre la perte de données](../compliance/dlp-learn-about-dlp.md)|
@@ -78,7 +79,7 @@ Vous pouvez utiliser des étiquettes de confidentialité pour régir l’accès 
 
 Vous pouvez configurer des Microsoft 365 pour appliquer automatiquement des étiquettes de sensibilité aux fichiers et aux e-mails en fonction des critères que vous spécifiez, y compris la détection de types d’informations sensibles ou la correspondance de modèles avec des classifieurs entraidables.
 
-- [Appliquer automatiquement une étiquette de confidentialité à du contenu](../compliance/apply-sensitivity-label-automatically.md)
+- [Appliquer automatiquement une étiquette de confidentialité au contenu](../compliance/apply-sensitivity-label-automatically.md)
 
 Vous pouvez utiliser des étiquettes de niveau de sensibilité pour chiffrer des fichiers, ce qui permet uniquement aux personnes autorisées de les déchiffrer et de les lire.
 

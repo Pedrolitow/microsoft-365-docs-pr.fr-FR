@@ -1,5 +1,5 @@
 ---
-title: Référence de protection contre la perte de données
+title: Référence en matière de prévention des pertes de données
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: documents de référence sur la protection contre la perte de données
-ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: matériel de référence sur la prévention des pertes de données
+ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296767"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572560"
 ---
-# <a name="data-loss-prevention-reference"></a>Référence de protection contre la perte de données
+# <a name="data-loss-prevention-reference"></a>Référence en matière de prévention des pertes de données
  
 > [!IMPORTANT]
-> Il s’agit de la rubrique de référence qui n’est plus la ressource principale pour Microsoft 365 protection contre la perte de données (DLP). L’ensemble de contenu DLP est mis à jour et restructuré. Les rubriques couvertes dans cet article vont passer à de nouveaux articles mis à jour. Pour plus d’informations sur la protection contre la perte de données, voir [En savoir plus sur la protection contre la perte de données.](dlp-learn-about-dlp.md)
+> Il s’agit d’un sujet de référence n’est plus la principale ressource Microsoft 365 de la prévention des pertes de données (DLP). L’ensemble de contenu DLP est en cours de mise à jour et de restructuration. Les sujets abordés dans cet article passeront à de nouveaux articles mis à jour. Pour plus d’informations sur DLP, voir En [savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -66,7 +66,7 @@ With a DLP policy, you can:
     To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
 
 -->    
-## <a name="create-and-manage-dlp-policies"></a>Créer et gérer des stratégies DLP
+## <a name="create-and-manage-dlp-policies"></a>Créer et gérer les stratégies DLP
 
 Vous créez et gérez des stratégies DLP sur la page Protection contre la perte de données dans le Centre de conformité Microsoft 365.
   
@@ -385,7 +385,7 @@ Lorsque vous utilisez une [étiquette de rétention](retention.md#retention-labe
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Utilisation d’une étiquette de confidentialité comme condition dans une stratégie DLP
 
-[En savoir plus](./dlp-sensitivity-label-as-condition.md) sur l’utilisation de l’étiquette de confidentialité comme condition dans les stratégies DLP.
+[En savoir plus](./dlp-sensitivity-label-as-condition.md) sur l’utilisation de l’étiquette Sensibilité comme condition dans les stratégies DLP.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Relations entre cette fonctionnalité et d’autres fonctionnalités
 
@@ -441,28 +441,30 @@ Un modèle de stratégie DLP préconfiguré peut vous aider à détecter des typ
   
 Votre organisation peut également avoir ses exigences propres, auquel cas vous pouvez créer entièrement une stratégie DLP en choisissant l’option **Stratégie personnalisée**. Une stratégie personnalisée est vide et ne contient aucune règle prédéfinie. 
   
-## <a name="roll-out-dlp-policies-gradually-with-test-mode"></a>Déployer progressivement des stratégies DLP avec le mode test
+<!-- ## Roll out DLP policies gradually with test mode
 
-Lorsque vous créez vos stratégies DLP, vous devez envisager de les déployer progressivement pour évaluer leur impact et tester leur efficacité avant de les appliquer pleinement. Par exemple, vous ne voulez pas qu’une nouvelle stratégie DLP bloque involontairement l’accès à des milliers de documents auxquels les utilisateurs doivent accéder pour effectuer leur travail.
+rehomed to Plan for DLP
+
+When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
   
-Si vous créez des stratégies DLP susceptibles d’avoir un impact important, nous vous recommandons de suivre l’ordre suivant :
+If you're creating DLP policies with a large potential impact, we recommend following this sequence:
   
-1. **Démarrez en mode test sans conseils de stratégie**, puis utilisez les rapports DLP et les rapports d’incident pour évaluer l’impact. Vous pouvez utiliser les rapports DLP pour connaître le nombre, l’emplacement, le type et la gravité des correspondances de stratégie. En fonction des résultats, vous pouvez affiner les règles selon vos besoins. En mode test, les stratégies DLP n’auront aucun impact sur la productivité des personnes qui travaillent dans votre organisation. 
+1. **Start in test mode without Policy Tips** and then use the DLP reports and any incident reports to assess the impact. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine tune the rules as needed. In test mode, DLP policies will not impact the productivity of people working in your organization. 
     
-2. **Passez en mode test avec notifications et conseils de stratégie** pour commencer à faire découvrir vos stratégies de conformité aux utilisateurs et les préparer pour les règles qui vont être appliquées. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin d’affiner les règles. 
+2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for the rules that are going to be applied. At this stage, you can also ask users to report false positives so that you can further refine the rules. 
     
-3. **Démarrez l’application complète des stratégies** afin que les actions dans les règles soient appliquées et le contenu protégé. Continuez de surveiller les rapports DLP et tous les rapports ou notifications d’incident pour vous assurer que les résultats correspondent à ce que vous aviez prévu. 
+3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend. 
 
-    ![Options pour l’utilisation du mode de test et l’activation de la stratégie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-    Vous pouvez désactiver une stratégie DLP à tout moment, ce qui a une incidence sur toutes les règles de la stratégie. Toutefois, chaque règle peut également être désactivée individuellement en basculant son état dans l’éditeur de règles.
+    You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![Options de désactivation d’une règle dans une stratégie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Options for turning off a rule in a policy](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-    Vous pouvez également modifier la priorité de plusieurs règles dans une stratégie. Pour ce faire, ouvrez une stratégie pour modification. Dans une ligne de règle, sélectionnez les points de suspension (**...**), puis choisissez une option, comme, par exemple, **Descendre** ou **Mettre à la fin**.
+    You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
     > [!div class="mx-imgBorder"]
-    > ![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
+    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
   
 ## <a name="dlp-reports"></a>Rapports DLP
 
@@ -518,7 +520,7 @@ Au fur et à mesure de l’ajout ou de la modification de documents dans ses sit
 La protection contre la perte de données évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Afin d’empêcher le partage de documents avant que les stratégies DLP n’ont eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué jusqu’à ce que son contenu ait été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default). 
+> Afin d’éviter que les documents ne soient partagés avant que les stratégies DLP n’aient eu l’occasion de les analyser, le partage de nouveaux fichiers en SharePoint peut être bloqué jusqu’à ce que son contenu ait été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation des stratégies dans Exchange Online, Outlook et Outlook sur le web
 

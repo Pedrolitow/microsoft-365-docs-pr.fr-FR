@@ -20,13 +20,14 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
+recommendations: false
 description: Découvrez comment configurer Teams pour améliorer la sécurité du partage de fichiers à l’aide de trois niveaux de protection, en équilibrant la sécurité grâce à la facilité de collaboration.
-ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916213"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539214"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurer Teams avec trois niveaux de protection
 

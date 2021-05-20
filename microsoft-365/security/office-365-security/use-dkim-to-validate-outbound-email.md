@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fc811fb513935645fa596c5a9d2e3e552b50324
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245359"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538266"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -59,7 +59,7 @@ Contenu de cet article :
 > [!NOTE]
 > Microsoft 365 configure automatiquement DKIM pour les domaines initiaux 'onmicrosoft.com'. Cela signifie que vous n’avez rien à faire pour configurer DKIM pour les noms de domaine initial (par exemple, litware.onmicrosoft.com). Pour plus d'informations sur les domaines, consultez l'article [Forum aux questions sur les domaines](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
-DKIM est l’une des trois méthodes d’authentification (SPF, DKIM et DMARC) qui empêchent les usurpateurs d’envoyer des messages qui semblent provenir de votre domaine.
+DKIM fait partie du trio de méthodes d'authentification (SPF, DKIM et DMARC) qui permet d'empêcher les attaquants d'envoyer des messages qui semblent provenir de votre domaine.
 
 DKIM vous permet d'ajouter une signature numérique aux e-mails sortants dans l'en-tête du message. Lorsque vous configurez DKIM, vous autorisez votre domaine à associer son nom à un courrier ou à l’y signer à l'aide d'une authentification de chiffrement. Les systèmes de messagerie qui reçoivent des e-mails de votre domaine peuvent utiliser cette signature numérique pour déterminer si le courrier entrant est légitime.
 

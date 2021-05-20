@@ -19,12 +19,12 @@ search.appverid:
 description: Découvrez trois outils qui permettent de surveiller les fuites de données personnelles.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0976c0d1c0c8d3ebb25ebf423f1d9df2f71fc852
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204124"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538278"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Surveillance des fuites de données personnelles
 
@@ -87,7 +87,7 @@ Il existe des solutions qui s’abonnent aux journaux d’audit unifiés via l�
 
 Plus d’informations sur les stratégies d’alerte et l’exécution d’une recherche dans le journal d’audit :
 
-- [Stratégies d’alerte dans le Centre de sécurité et de conformité Microsoft 365](../../compliance/alert-policies.md)
+- [Stratégies d’alerte dans Microsoft 365](../../compliance/alert-policies.md)
 
 - [Effectuer des recherches dans le journal d’audit dans le Centre de sécurité et de conformité Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduction)
 

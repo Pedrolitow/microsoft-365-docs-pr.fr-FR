@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345763"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532049"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -170,7 +170,7 @@ Lorsque les utilisateurs étiquettent initialement un document ou un e-mail, ils
 
 - Un utilisateur applique l’étiquette **Confidentiel \ Tous les employés** à un document. Cette étiquette est configurée pour appliquer des paramètres de chiffrement à tous les utilisateurs de l’organisation. Cet utilisateur configure ensuite manuellement les paramètres IRM pour restreindre l’accès à un utilisateur extérieur à votre organisation. Le résultat final est un document étiqueté **Confidentiel \ Tous les employés** et chiffré, mais les utilisateurs de votre organisation ne peuvent pas l’ouvrir comme prévu.
 
-- Un utilisateur applique l’étiquette **Confidentiel \ Destinataires uniquement** à un message électronique. Ce message est configuré pour appliquer le paramètre de chiffrement de **Ne pas transférer**. Dans l’application Outlook, cet utilisateur configure ensuite manuellement les paramètres IRM de telle sorte que l’e-mail soit illimité. Le résultat final est que l’e-mail peut être transmis par les destinataires, même s’il porte l’étiquette **Confidentiel \ Destinataires uniquement**.
+- Un utilisateur applique l’étiquette **Confidentiel \ Destinataires uniquement** à un message électronique. Ce message est configuré pour appliquer le paramètre de chiffrement de **Ne pas transférer**. Dans l’application Outlook, cet utilisateur sélectionne ensuite manuellement le paramètre IRM pour Chiffrer uniquement. Le résultat final est que même si le courrier électronique reste chiffré, il peut être transmis par les destinataires, même s’il porte l’étiquette **Confidentiel \ Destinataires uniquement**.
     
     À titre d’exception, pour Outlook sur le web, les options du menu **Chiffrer** ne sont pas disponibles pour qu’un utilisateur puisse les sélectionner lorsque l’étiquette actuellement sélectionnée applique le chiffrement.
 
@@ -178,13 +178,23 @@ Lorsque les utilisateurs étiquettent initialement un document ou un e-mail, ils
 
 Si le document ou l'e-mail est déjà étiqueté, un utilisateur peut effectuer l'une de ces actions si le contenu n'est pas déjà chiffré ou s'il dispose du [droit d'utilisation](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exporter ou Contrôle total. 
 
-Pour une expérience d’étiquette plus cohérente avec des rapports significatifs, fournissez des étiquettes et des instructions appropriées aux utilisateurs afin qu’ils appliquent uniquement des étiquettes pour protéger les documents. Par exemple :
+Pour une expérience d’étiquette plus cohérente avec des rapports significatifs, fournissez des étiquettes et des instructions appropriées aux utilisateurs afin qu’ils appliquent uniquement des étiquettes pour protéger les documents et e-mails. Par exemple :
 
 - Pour les cas d’exception, les utilisateurs doivent attribuer leurs propres autorisations, fournir des étiquettes qui [permettent aux utilisateurs d’attribuer leurs propres autorisations](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
 - Pour éviter que les utilisateurs suppriment manuellement le chiffrement après avoir sélectionné une étiquette qui l’applique, offrez une alternative de sous-étiquette lorsque les utilisateurs ont besoin d’une étiquette avec la même classification, mais pas de chiffrement. Par exemple :
     - **Confidentiel \ Tous les employés**
     - **Confidentiel \ Tout le monde (aucun chiffrement)**
+
+- Désactivez les paramètres IRM pour empêcher les utilisateurs de les sélectionner :
+    - Outlook pour Windows : 
+        - Clés de Registre (DWORD:00000001) *DisableDNF* et *DisableEO* de HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
+        - S’assurer que le paramètre de stratégie **Configurer l’option de chiffrement par défaut pour le bouton Chiffrer** n’est pas configuré
+    - Outlook pour Mac : 
+        - Clés des paramètres de sécurité *DisableEncryptOnly* et *DisableDoNotForward* documentées dans [Définir les préférences pour Outlook pour Mac](/DeployOffice/mac/preferences-outlook)
+    - Outlook sur le web : 
+        - Paramètres *SimplifiedClientAccessDoNotForwardDisabled* et *SimplifiedClientAccessEncryptOnlyDisabled* documentés pour [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
+        - Outlook pour iOS et Android : ces applications ne prennent pas en charge l'application de chiffrement sans étiquette par les utilisateurs, donc rien à désactiver.
 
 > [!NOTE]
 > Si les utilisateurs suppriment manuellement le chiffrement d’un document étiqueté stocké dans SharePoint ou OneDrive et que vous avez [activé les étiquettes de niveau de confidentialité des fichiers Office dans SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), le chiffrement d’étiquettes est restauré automatiquement au prochain accès ou téléchargement du document. 
@@ -413,7 +423,7 @@ Les autres paramètres avancés de PowerShell restent pris en charge pour le cli
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Conseils PowerShell pour la spécification des paramètres avancés
 
-Pour spécifier une autre étiquette par défaut pour Outlook, vous devez spécifier le GUID d’étiquette. Pour rechercher cette valeur, vous pouvez utiliser la commande suivante :
+Pour spécifier une autre étiquette par défaut pour Outlook, identifiez-la par son GUID. Pour rechercher cette valeur, vous pouvez utiliser la commande suivante :
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

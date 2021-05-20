@@ -19,12 +19,12 @@ localization_priority: Priority
 description: Les administrateurs peuvent découvrir comment EOP utilise l’authentification de messagerie électronique (SPF, DKIM et DMARC) pour empêcher l’usurpation d’identité, le hameçonnage et les courriers indésirables.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 633494717ad7cf68319a2332f435fd8b56fc8aeb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4815924714845b641819021ea793baa465cfc812
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204390"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538290"
 ---
 # <a name="email-authentication-in-eop"></a>Authentification de messagerie électronique dans EOP
 
@@ -39,9 +39,7 @@ ms.locfileid: "51204390"
 L’authentification de messagerie électronique (également appelée validation du courrier électronique) est un ensemble de normes qui tente de bloquer l’usurpation d’identité (messages électroniques provenant de faux expéditeurs). Dans toutes les organisations Microsoft 365, EOP utilise ces normes pour vérifier les e-mails entrants :
 
 - [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-
 - [DKIM](use-dkim-to-validate-outbound-email.md)
-
 - [DMARC](use-dmarc-to-validate-email.md)
 
 L’authentification de messagerie électronique vérifie que les messages électroniques d’un expéditeur (par exemple, laura@contoso.com) sont légitimes et proviennent de sources attendues pour ce domaine de courrier électronique (par exemple, contoso.com).
@@ -58,7 +56,7 @@ Depuis le mois de mars 2018, seuls 9 % des domaines des entreprises figurant a
 
 ![Stratégies DMARC des entreprises du classement Fortune 500](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-La part de petites et moyennes entreprises qui publient des stratégies d’authentification de messagerie électronique renforcées est plus petite. Ce nombre est encore plus petit pour les domaines de messagerie électronique situés hors Amérique du Nord et Europe de l’Ouest.
+La proportion de petites et moyennes entreprises qui publient des stratégies d’authentification de messagerie robustes est moindre. Et ce nombre est encore plus faible pour les domaines de messagerie en dehors de l’Amérique du Nord et de l’Europe de l’ouest.
 
 L’absence de stratégies d’authentification fortes est un problème fréquent. Si les organisations ne comprennent pas le fonctionnement de l’authentification de messagerie électronique, les intrus, eux, en tire parti grâce à leur parfaite compréhension. En raison de problèmes d’hameçonnage et du faible taux d’adoption de stratégies d’authentification fortes, Microsoft utilise l’*authentification de courrier implicite* pour vérifier les courriers entrants.
 
@@ -102,7 +100,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si fabrikam.com configure un SPF sans enregistrement DKIM, le message peut réussir l’authentification composite. Le domaine ayant réussi les vérifications SPF est aligné sur le domaine de l’adresse de l’expéditeur :
+Si fabrikam.com configure un SPF sans enregistrement DKIM, le message peut franchir l'authentification composite. Le domaine qui a franchi les vérifications SPF est aligné avec le domaine de l'adresse De :
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -113,7 +111,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Si fabrikam.com configure un DKIM sans enregistrement SPF, le message peut réussir l’authentification composite. Le domaine dans la signature DKIM est aligné sur le domaine de l’adresse de l’expéditeur :
+Si fabrikam.com configure un DKIM sans enregistrement SPF, le message peut franchir l'authentification composite. Le domaine dans la signature DKIM est aligné avec le domaine dans l'adresse De :
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -146,9 +144,7 @@ Microsoft 365 conserve la trace des contacts qui envoient du courrier électroni
 Vous pouvez utiliser cette méthode pour résoudre l’usurpation d’identité intra-organisationnelle et inter-domaines dans les cas où vous êtes propriétaire ou interagissez avec plusieurs clients. Cela aide également à résoudre l’usurpation inter-domaines lorsque vous envoyez du courrier à d’autres clients dans Microsoft 365 ou à des tiers hébergés par d’autres fournisseurs.
 
 - [Configurez des enregistrements SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md) pour vos domaines.
-
 - [Configurez des enregistrements DKIM](use-dkim-to-validate-outbound-email.md) pour vos domaines principaux.
-
 - [Pensez à configurer des enregistrements DMARC](use-dmarc-to-validate-email.md) pour votre domaine afin de déterminer qui sont vos expéditeurs légitimes.
 
 Microsoft Corporation ne fournit pas de directives d’implémentation détaillées pour les enregistrements SPF, DKIM et DMARC. Cependant, de nombreuses informations sont disponibles en ligne. Il existe également des sociétés tierces spécialisées dans l’aide à la configuration d’enregistrements d’authentification de courrier électronique.
@@ -167,17 +163,11 @@ Microsoft 365 traite les messages entrants de votre infrastructure d’entrepri
 
 Une fois que vous avez commencé à utiliser une stratégie de secours SPF de `?all`, vous pouvez progressivement découvrir et inclure d’autres sources de messagerie électronique pour vos messages, puis mettre à jour votre enregistrement SPF avec une stratégie plus stricte.
 
-### <a name="use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>Utiliser la veille contre l’usurpation d’identité pour configurer les expéditeurs autorisés de courrier électronique non authentifié.
+### <a name="configure-permitted-senders-of-unauthenticated-email"></a>Configurer les expéditeurs autorisés de courrier électronique non authentifié.
 
-Vous pouvez également utiliser la [veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) pour autoriser des expéditeurs à transmettre des messages non authentifiés à votre organisation.
+Vous pouvez également utiliser l’[Informations sur la veille contre l’usurpation d’identité](learn-about-spoof-intelligence.md) et la [Liste rouge/verte du client](tenant-allow-block-list.md) pour autoriser des expéditeurs à transmettre des messages non authentifiés à votre organisation.
 
 Pour les domaines externes, l’utilisateur usurpé est le domaine dans l’adresse De, tandis que l’infrastructure d’envoi est soit l’adresse IP source (divisée en /24 plages CIDR), soit le domaine de l’organisation de l’enregistrement DNS inversé (PTR).
-
-Dans la capture d’écran ci-dessous, l’adresse IP source peut être 131.107.18.4 avec l’enregistrement PTR outbound.mail.protection.outlook.com. Il s’affiche sous la forme outlook.com pour l’infrastructure d’envoi.
-
-Pour autoriser cet expéditeur à envoyer un courrier non authentifié, remplacez **Non** par **Oui**.
-
-![Définition des expéditeurs autorisés par la paramètre](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Créer une entrée d’autorisation pour la paire expéditeur/destinataire
 

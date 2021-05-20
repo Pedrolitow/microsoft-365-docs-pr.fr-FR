@@ -20,12 +20,12 @@ description: Les administrateurs peuvent découvrir comment supprimer des utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32748d717762d7af727a1583226b6d47ee7697c6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2171e2465aa40e187f8104c7c0d2675562f115ce
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204334"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537870"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Retirer les utilisateurs bloqués du portail Utilisateurs restreints dans Office 365
 
@@ -81,7 +81,7 @@ Les administrateurs peuvent supprimer des utilisateurs du portail Expéditeurs r
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Vérifier les paramètres d’alerte pour les utilisateurs restreints
 
-La stratégie d’alerte par défaut nommée **Utilisateur pour lequel l’envoi de courrier est restreint** avertit automatiquement les administrateurs lorsque les utilisateurs ne peuvent pas envoyer de messages sortants. Vous pouvez vérifier ces paramètres et ajouter des utilisateurs à avertir. Pour plus d’informations sur les stratégies d’alerte, accédez à [Stratégies d’alerte dans le centre de sécurité et conformité](../../compliance/alert-policies.md).
+La stratégie d’alerte par défaut nommée **Utilisateur pour lequel l’envoi de courrier est restreint** avertit automatiquement les administrateurs lorsque les utilisateurs ne peuvent pas envoyer de messages sortants. Vous pouvez vérifier ces paramètres et ajouter des utilisateurs à avertir. Pour plus d'informations sur les stratégies d'alerte, voir Stratégies [d'alerte dans Microsoft 365](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
 > Pour que les alertes fonctionnent, la recherche dans le journal d’audit doit être activée. Pour plus d’informations, voir [Activer ou désactiver la recherche dans le journal d’audit](../../compliance/turn-audit-log-search-on-or-off.md).

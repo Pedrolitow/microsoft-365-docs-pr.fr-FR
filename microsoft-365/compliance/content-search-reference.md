@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Cet article contient des informations de référence sur l’outil eDiscovery de recherche de contenu dans le Centre de conformité Microsoft 365 pour vous aider à en savoir plus sur la recherche de contenu.
-ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 14660b4cfcd09f5346fa8d0d901880d0a6c774c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332893"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538482"
 ---
 # <a name="feature-reference-for-content-search"></a>Référence des fonctionnalités pour la recherche du contenu
 
@@ -33,19 +33,7 @@ Cet article décrit les fonctionnalités de la recherche du contenu.
 
 ## <a name="content-search-limits"></a>Limites de la recherche de contenu
 
-- Pour une description des limites qui sont appliquées à la recherche de contenu, consultez [Limites de recherches de contenu](limits-for-content-search.md).
-  
-- Microsoft recueille des informations sur les performances pour les recherches de contenu effectuées par toutes les organisations dans le service. Bien que la complexité de la requête de recherche puisse avoir un impact sur les heures de recherche, le facteur le plus important qui détermine la durée de la recherche est le nombre de boîtes aux lettres recherchées. Bien que Microsoft ne fournisse pas d’accord de niveau de service pour les horaires de recherche, le tableau suivant répertorie les durées de recherche moyennes d’une recherche de contenu sur la base du nombre de boîtes aux lettres incluses dans la recherche.
-  
-  |**Nombre de boîtes aux lettres**|**Temps moyen de recherche**|
-  |:-----|:-----|
-  |100  <br/> |30 secondes  <br/> |
-  |1 000  <br/> |45 secondes  <br/> |
-  |10 000  <br/> |4 minutes  <br/> |
-  |25 000  <br/> |10 minutes  <br/> |
-  |50 000  <br/> |20 minutes  <br/> |
-  |100 000  <br/> |25 minutes  <br/> |
-  |||
+Pour une description des limites qui sont appliquées aux recherches de contenu, voir [Limites pour la recherche de contenu](limits-for-content-search.md).
   
 ## <a name="building-a-search-query"></a>Exécuter une requête de recherche
 
@@ -71,7 +59,7 @@ Gardez les points suivants à l’esprit lorsque vous utilisez la liste de mots 
   
 - Lorsque vous effectuez une recherche de contenu, Microsoft 365 vérifie automatiquement la présence de caractères non pris en charge et d’opérateurs booléens qui ne sont pas en majuscules dans votre requête de recherche. En règle générale, les caractères non pris en charge sont masqués et entraînent une erreur ou renvoient des résultats inattendus. Pour plus d’informations sur les caractères non pris en charge qui ont été vérifiés, voir [vérifier la présence d’erreurs dans votre requête de recherche de contenu](check-your-content-search-query-for-errors.md).
     
-- Si vous avez une requête de recherche qui contient des mots clés pour les caractères non anglais (tels que les caractères chinois) , vous pouvez cliquer sur l'icône **langue-pays/région**![requête pays/région dans la recherche de contenu ](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionner une valeur de code de culture dans le pays/région pour la recherche. La langue/région par défaut est neutre. Comment savoir si vous avez besoin de modifier le paramètre de langue d’une recherche de contenu ? Si vous êtes certain que les emplacements de contenu contiennent les caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut être à l’origine du problème. 
+- Si vous avez une requête de recherche qui contient des mots clés pour les caractères non anglais (tels que les caractères chinois) , vous pouvez cliquer sur l'icône **langue-pays/région**![requête pays/région dans la recherche de contenu ](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) et sélectionner une valeur de code de culture dans le pays/région pour la recherche. La langue/région par défaut est neutre. Comment savoir si vous avez besoin de modifier le paramètre de langue d’une recherche de contenu ? Si vous êtes certain que les emplacements de contenu contiennent les caractères non anglais que vous recherchez, mais que la recherche ne renvoie aucun résultat, le paramètre de langue peut être à l’origine du problème.
   
 ## <a name="partially-indexed-items"></a>Éléments partiellement indexés
 
