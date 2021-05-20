@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Apprenez à choisir le domaine à utiliser lors de la création de groupes Microsoft 365 en configurant des stratégies d’adresse de messagerie à l’aide de PowerShell.
-ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538218"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583147"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Choisir le domaine à utiliser lors de la création de Microsoft 365 groupes
 
@@ -119,10 +119,10 @@ Il y a d’autres choses à savoir :
     
 - Une limite maximale de 100 stratégies d’adresse de messagerie peut être configurée pour une organisation.
     
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Planification pas à pas de la gouvernance de la collaboration](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planification pas à pas de la gouvernance de](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) la collaboration (article)
 
-[Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
+[Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md) (article)
 
-[Créer un groupe Microsoft 365 dans le Centre d’administration](../admin/create-groups/create-groups.md)
+[Créer un groupe Microsoft 365 dans le Centre d’administration](../admin/create-groups/create-groups.md) (article)

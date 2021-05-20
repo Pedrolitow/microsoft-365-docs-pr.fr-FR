@@ -1,6 +1,6 @@
 ---
 title: Table AADSignInEventsBeta dans le schéma de recherche avancé
-description: En savoir plus sur les informations associées à la table des événements de sign-in Azure Active Directory du schéma de recherche avancée
+description: En savoir plus sur les informations associées Azure Active Directory d’événements de Azure Active Directory du schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 704752951c453a3fe872b814e7364ef1699226bf
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932606"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582979"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,12 +34,11 @@ ms.locfileid: "51932606"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de découvrir les événements de signature `AADSignInEventsBeta` Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.<br><br>
-> Les clients qui peuvent accéder à Microsoft 365 Defender par le biais de la solution Microsoft Defender pour point de terminaison intégrée d'Azure Defender, mais qui n'ont pas de licences pour Microsoft Defender pour Office, Microsoft Defender pour l'identité ou Microsoft Cloud App Security, ne pourront pas afficher ce schéma. 
+> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de passer par les événements de Azure Active Directory `AADSignInEventsBeta` (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
 
  
 
-Le tableau du schéma de recherche avancée contient des informations sur les cartes de visite interactives et `AADSignInEventsBeta` non interactives Azure Active Directory. En savoir plus sur les sign-ins dans les rapports [d'activité de sign-in Azure Active Directory - aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+Le tableau dans le schéma de recherche avancée contient des informations sur Azure Active Directory des `AADSignInEventsBeta` sign-ins interactives et non interactives. En savoir plus sur les sign-ins dans Azure Active Directory des rapports d’activité de la [sign-in - aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
@@ -51,17 +50,17 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne                 | Type de données | Description          |
 |---------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `Timestamp`                       | DateHeure      | Date et heure de génération de l’enregistrement                                                                                                                                         |
-| `Application`                     | string        | Application qui a effectué l'action enregistrée                                                                                                                                       |
-| `ApplicationId`                   | string        | Identificateur unique de l'application                                                                                                                                               |
-| `LogonType`                       | string        | Type de session d'ouverture de session, spécifiquement interactive, interactive à distance (RDP), réseau, lot et service                                                                              |
-| `ErrorCode`                       | entier        | Contient le code d'erreur si une erreur de se connecte se produit. Pour trouver une description d'un code d'erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes> .                                     |
-| `CorrelationId`                   | string        | Identificateur unique de l'événement de signature                                                                                                                                              |
-| `SessionId`                       | string        | Numéro unique attribué à un utilisateur par le serveur d'un site web pour la durée de la visite ou de la session                                                                                     |
-| `AccountDisplayName`              | string        | Nom de l'utilisateur du compte affiché dans le carnet d'adresses. En règle générale, une combinaison d'un prénom ou d'un prénom donné, d'une initiale du deuxième prénom et d'un nom ou d'un nom de famille.                             |
+| `Application`                     | string        | Application qui a effectué l’action enregistrée                                                                                                                                       |
+| `ApplicationId`                   | string        | Identificateur unique de l’application                                                                                                                                               |
+| `LogonType`                       | string        | Type de session d’ouverture de session, spécifiquement interactive, interactive à distance (RDP), réseau, lot et service                                                                              |
+| `ErrorCode`                       | entier        | Contient le code d’erreur si une erreur de se connecte se produit. Pour trouver une description d’un code d’erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes> .                                     |
+| `CorrelationId`                   | string        | Identificateur unique de l’événement de signature                                                                                                                                              |
+| `SessionId`                       | string        | Numéro unique attribué à un utilisateur par le serveur d’un site web pour la durée de la visite ou de la session                                                                                     |
+| `AccountDisplayName`              | string        | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiale du deuxième prénom et d’un nom ou d’un nom de famille.                             |
 | `AccountObjectId`                 | string        | Identificateur unique du compte dans Azure AD                                                                                                                                       |
-| `AccountUpn`                      | string        | Nom d'utilisateur principal (UPN) du compte                                                                                                                                            |
-| `IsExternalUser`                  | entier        | Indique si l'utilisateur qui s'est inscrit est externe. Valeurs possibles : -1 (non définie) , 0 (non externe), 1 (externe).                                                                   |
-| `IsGuestUser`                     | valeur booléenne       | Indique si l’utilisateur qui s’est inscrit est un invité dans le client                                                                                                                  |
+| `AccountUpn`                      | string        | Nom d’utilisateur principal (UPN) du compte                                                                                                                                            |
+| `IsExternalUser`                  | entier        | Indique si l’utilisateur qui s’est inscrit est externe. Valeurs possibles : -1 (non définie) , 0 (non externe), 1 (externe).                                                                   |
+| `IsGuestUser`                     | booléen       | Indique si l’utilisateur qui s’est inscrit est un invité dans le client                                                                                                                  |
 | `AlternateSignInName`             | string        | Nom d’utilisateur principal (UPN) local de l’utilisateur se signant à Azure AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | DateHeure        | Date et heure de la dernière fois où l’utilisateur qui s’est inscrit a modifié son mot de passe                                                                                                              |
 | `ResourceDisplayName`             | string        | Nom d’affichage de la ressource accessible                                                                                                                                               |
@@ -72,10 +71,10 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `OSPlatform`                      | string        | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.  |
 | `DeviceTrustType`                 | string        | Indique le type d’confiance de l’appareil qui s’est connecté. Pour les scénarios d’appareil géré uniquement. Les valeurs possibles sont Workplace, AzureAd et ServerAd.                                     |
 | `IsManaged`                       | entier       | Indique si l’appareil à l’origine de la connectez-vous est un appareil géré (1) ou non un appareil géré (0)                                                                         |
-| `IsCompliant`                     | entier       | Indique si l’appareil à l’origine de la signature est conforme (1) ou non (0)                                                                                       |
+| `IsCompliant`                     | entier       | Indique si l’appareil à l’origine de la signature est conforme (1) ou non conforme (0)                                                                                       |
 | `AuthenticationProcessingDetails` | string        | Détails sur le processeur d’authentification                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | Type d’authentification requis pour la signature. Valeurs possibles : multiFactorAuthentication (l’authentification multifacteur était requise) et singleFactorAuthentication (aucune authentification multifacteur n’était requise).                |
-| `TokenIssuerType`                 | entier        | Indique si l’émetteur de jeton est Azure Active Directory (0) ou services de fédération Active Directory (1)                                                                             |
+| `TokenIssuerType`                 | entier        | Indique si l’émetteur de jeton est Azure Active Directory (0) ou les services de fédération Active Directory (1)                                                                             |
 | `RiskLevelAggregated`                       | entier        | Niveau de risque agrégé lors de la signature. Valeurs possibles : 0 (niveau de risque agrégé non définie), 1 (aucun), 10 (faible), 50 (moyen) ou 100 (élevé).                               |
 | `RiskDetails`                      | entier        | Détails sur l’état à risque de l’utilisateur qui s’est inscrit                                                                                                                            |
 | `RiskState`                       | entier        | Indique l’état de l’utilisateur à risque. Valeurs possibles : 0 (aucun), 1 (sécurisé confirmé), 2 (corrigé), 3 (rejeté), 4 (à risque) ou 5 (confirmé compromis).                                |

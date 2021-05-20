@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vue d’ensemble du processus de planification de la protection contre la perte de données
-ms.openlocfilehash: 6a72a8bab27db4d8b11d3e0b3d7a1dac7a1f0092
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 84f1dc0426ba88f934c1d67d71f75364adeb4340
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52581588"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583351"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planifier la protection contre la perte de données (DLP)
 
@@ -42,7 +42,7 @@ Voici quelques exemples de la façon dont les clients peuvent aborder la DLP et 
 
 ## <a name="overview-of-planning-process"></a>Vue d’ensemble du processus de planification
 
-La [procédure En savoir plus sur la protection](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) contre la perte de données présente les trois différents aspects du processus de planification [DLP.](dlp-learn-about-dlp.md#plan-for-dlp) Nous allons passer en détail ici sur les éléments communs à tous les plans DLP.
+La [procédure En savoir plus sur la](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) protection contre la perte de données présente les trois différents aspects du processus de planification [DLP.](dlp-learn-about-dlp.md#plan-for-dlp) Nous allons passer en détail ici sur les éléments communs à tous les plans DLP.
 
 ### <a name="identify-stakeholders"></a>Identifier les parties prenantes
 
@@ -107,7 +107,7 @@ Votre plan d’implémentation doit inclure les suivants :
 - planification de la façon dont les stratégies seront d’abord testées avant de passer à l’application
 - comment vous allez former vos utilisateurs finaux
 - comment tester et régler vos stratégies
-- la manière dont vous allez examiner et mettre à jour votre stratégie de protection contre la perte de données en fonction de l’évolution des besoins de l’entreprise en matière de protection réglementaire, juridique, standard ou de propriété intellectuelle ;
+- comment vous allez examiner et mettre à jour votre stratégie de protection contre la perte de données en fonction de l’évolution des besoins de l’entreprise en matière de protection réglementaire, juridique, standard ou de propriété intellectuelle
 
 #### <a name="map-out-path-from-start-to-desired-end-state"></a>Ma cartographier le chemin d’accès du début à l’état final souhaité
 
@@ -117,11 +117,11 @@ Il est essentiel de documenter la façon dont votre organisation va passer de so
 
 #### <a name="sensitive-item-discovery"></a>Découverte d’éléments sensibles
 
-Il existe plusieurs façons de découvrir les éléments sensibles individuels et leur emplacement. Vous avez peut-être déjà déployé des étiquettes de confidentialité ou vous avez peut-être décidé de déployer une stratégie DLP très large sur tous les emplacements qui découvre et audite uniquement les éléments. Pour en savoir plus, [consultez Connaître vos données.](information-protection.md#know-your-data)
+Il existe plusieurs façons de découvrir les éléments sensibles individuels et leur emplacement. Vous avez peut-être déjà déployé des étiquettes de confidentialité ou vous avez peut-être décidé de déployer une stratégie DLP étendue à tous les emplacements qui découvre et audite uniquement les éléments. Pour en savoir plus, [consultez Connaître vos données.](information-protection.md#know-your-data)
 
 #### <a name="policy-planning"></a>Planification des stratégies
 
-Lorsque vous commencez votre adoption DLP, vous pouvez utiliser ces questions pour vous concentrer sur la conception et l’implémentation de votre stratégie.
+Lorsque vous commencez à adopter la DLP, vous pouvez utiliser ces questions pour vous concentrer sur la conception et l’implémentation de votre stratégie.
 
 ##### <a name="what-laws-regulations-and-industry-standards-must-your-organization-comply-with"></a>Quelles lois, réglementations et normes industrielles votre organisation doit-elle respecter ?
 
@@ -134,7 +134,7 @@ Lorsque vous commencez votre adoption DLP, vous pouvez utiliser ces questions po
 
 Une fois que votre organisation sait où elle se trouve en termes de exigences de conformité réglementaire, vous avez une idée des éléments sensibles qui doivent être protégés contre les fuites et de la façon dont vous souhaitez hiérarchiser l’implémentation de la stratégie pour les protéger. Cela vous aidera à choisir les modèles de stratégie DLP les plus appropriés. Microsoft 365 est livré avec des modèles DLP pré-configurés pour les données financières, médicales et médicales, la confidentialité et vous pouvez créer vos propres modèles à l’aide du modèle personnalisé. Lorsque vous concevez et créez vos stratégies DLP réelles, le fait de connaître la réponse à cette question vous aidera également à choisir le [type d’informations sensibles qui vous est le plus utile.](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 
-**Exemple** Pour commencer rapidement, vous choisissez le modèle de stratégie qui inclut les types d’informations sensibles et , et les `U.K. Financial Data` `Credit Card Number` `EU Debit Card Number` `SWIFT Code` types. 
+**Exemple** Pour commencer rapidement, vous sélectionnez le modèle de stratégie, qui inclut les types d’informations sensibles `U.K. Financial Data` `Credit Card Number` et les types `EU Debit Card Number` `SWIFT Code` d’informations sensibles. 
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>Où sont les éléments sensibles et dans quels processus d’entreprise sont-ils impliqués ?
 
@@ -148,7 +148,7 @@ Les éléments qui contiennent des informations sensibles de votre organisation 
 - Microsoft Cloud App Security
 - Référentiels locaux
 
-**Exemple** Les auditeurs internes de votre organisation font le suivi d’un ensemble de numéros de carte de crédit. Ils conservent une feuille de calcul de ces derniers dans un site SharePoint sécurisé. Plusieurs employés font des copies et les enregistrent sur leur site OneDrive Entreprise travail synchronisé avec leur Windows 10 de travail. L’un d’eux place une liste de 14 d’entre eux dans un e-mail et tente de l’envoyer aux auditeurs externes pour révision. Vous souhaitez appliquer la stratégie au site SharePoint sécurisé, à tous les auditeurs internes OneDrive Entreprise comptes, à leurs appareils Windows 10 et à Exchange messagerie électronique.
+**Exemple** Les auditeurs internes de votre organisation font le suivi d’un ensemble de numéros de carte de crédit. Ils conservent une feuille de calcul de ces derniers dans un site SharePoint sécurisé. Plusieurs employés font des copies et les enregistrent sur leur site OneDrive Entreprise travail, qui est synchronisé avec Windows 10 appareil. L’un d’eux place une liste de 14 d’entre eux dans un e-mail et tente de l’envoyer aux auditeurs externes pour révision. Vous souhaitez appliquer la stratégie au site SharePoint sécurisé, à tous les auditeurs internes OneDrive Entreprise comptes, à leurs appareils Windows 10 et à Exchange messagerie électronique.
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>Quelle est la tolérance de votre organisation pour les fuites ?
 
@@ -173,7 +173,7 @@ Si vous créez des stratégies DLP susceptibles d’avoir un impact important, n
   
 1. **Démarrez en mode test sans conseils de stratégie**, puis utilisez les rapports DLP et les rapports d’incident pour évaluer l’impact. Vous pouvez utiliser les rapports DLP pour connaître le nombre, l’emplacement, le type et la gravité des correspondances de stratégie. En fonction des résultats, vous pouvez affiner les stratégies selon vos besoins. En mode test, les stratégies DLP n’auront aucun impact sur la productivité des personnes qui travaillent dans votre organisation. Utilisez également cette étape pour tester votre flux de travail pour la révision des événements DLP et la correction des problèmes.
     
-2. **Passer en mode Test** avec les notifications et les Astuces de stratégie pour commencer à enseigner aux utilisateurs vos stratégies de conformité et les préparer aux stratégies qui vont être appliquées. Il est utile d’avoir un lien vers une page de stratégie d’organisation qui fournit des détails supplémentaires sur la stratégie dans le conseil de stratégie. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin de pouvoir affiner les stratégies. Passer à cette étape une fois que vous êtes sûr que les résultats de l’application de stratégie correspondent à ce que les parties prenantes avaient à l’esprit. 
+2. **Passer en mode Test** avec les notifications et les Astuces de stratégie pour commencer à enseigner aux utilisateurs vos stratégies de conformité et les préparer aux stratégies qui vont être appliquées. Il est utile d’avoir un lien vers une page de stratégie d’organisation qui fournit plus de détails sur la stratégie dans le conseil de stratégie. À ce stade, vous pouvez également demander aux utilisateurs de signaler les faux positifs afin de pouvoir affiner les stratégies. Passer à cette étape une fois que vous êtes sûr que les résultats de l’application de stratégie correspondent à ce que les parties prenantes avaient à l’esprit. 
     
 3. **Démarrez l’application complète des stratégies** afin que les actions dans les règles soient appliquées et le contenu protégé. Continuez de surveiller les rapports DLP et tous les rapports ou notifications d’incident pour vous assurer que les résultats correspondent à ce que vous aviez prévu. 
 
@@ -187,7 +187,7 @@ Si vous créez des stratégies DLP susceptibles d’avoir un impact important, n
 
     ![Définition d’une priorité de règle](../media/dlp-set-rule-priority.png)
 
-#### <a name="end-user-training"></a>Formation des utilisateurs finux
+#### <a name="end-user-training"></a>Formation des utilisateurs finals
 
 Lorsqu’une stratégie DLP est déclenchée, vous pouvez configurer vos stratégies pour envoyer des notifications par courrier électronique et afficher des conseils de stratégie pour les stratégies [DLP](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies) aux administrateurs et aux utilisateurs finaux. Bien que vos stratégies soient toujours en mode test et avant qu’elles ne soient définies pour appliquer une action de blocage, les conseils de stratégie sont utiles pour sensibiliser les utilisateurs aux comportements à risque sur les éléments sensibles et former les utilisateurs à éviter ces comportements à l’avenir.  
 
@@ -199,9 +199,9 @@ Les réglementations, les lois et les normes industrielles soumises à votre org
 
 |Description des besoins commerciaux des clients  | approche  |
 |---------|---------|
-|**Contoso Bank** se trouve dans un secteur hautement réglementé et dispose de nombreux types différents d’éléments sensibles dans de nombreux emplacements différents. </br> - sait quels types d’informations sensibles sont prioritaires. </br> - doit minimiser les perturbations de l’activité lors du programme de déployé des stratégies. </br> - dispose de ressources informatiques et peut faire appel à des experts pour vous aider à planifier et à concevoir le déploiement </br> - a un contrat de support premier avec Microsoft| - Prenez le temps de comprendre les réglementations qu’ils doivent respecter et la façon dont ils vont se conformer. </br> -Prenez le temps de comprendre la meilleure valeur ensemble de la pile Microsoft 365 protection des informations personnelles </br> - Développer un schéma de niveau de sensibilité pour les éléments hiérarchisés et appliquer </br> - Impliquer les propriétaires de processus d’entreprise </br>- Stratégies de conception/code, déployer en mode test, former les utilisateurs </br>- répéter|
-|**TailSpin Toys** ne sait pas ce qu’ils ont ou où il se trouve, et ont peu ou pas de profondeur de ressources. Ils utilisent Teams, ODB et Exchange de manière étendue.     |- Commencez par des stratégies simples sur les emplacements hiérarchisés. </br>- Surveiller ce qui est identifié </br>- Appliquer les étiquettes de niveau de sensibilité en conséquence </br>- Affiner les stratégies, former les utilisateurs       |
-|**Fabrikam est** un petit démarrage et souhaite protéger sa propriété intellectuelle et doit se déplacer rapidement. Ils sont prêts à dédier des ressources, mais ne peuvent pas se permettre de faire appel à des experts externes. </br>- Les éléments sensibles sont tous dans Microsoft 365 OneDdrive Entreprise/SharePoint </br>- L’adoption de OneDrive Entreprise et SharePoint est lente, les employés/shadow IT utilisent DropBox et Google Drive pour partager/stocker des éléments </br>- Vitesse de travail des employés par rapport à la protection des données </br>- Le client s’est lancé et a acheté les 18 nouveaux appareils Windows 10 employés     |- Tirez parti de la stratégie DLP par défaut dans Teams </br>- Utiliser restreint par défaut pour les éléments de SharePoint </br>- Déployer des stratégies qui empêchent le partage externe </br>- Déployer des stratégies vers des emplacements hiérarchisés </br>- Déployer des stratégies sur Windows 10 périphériques </br>- Bloquer les téléchargements vers des stockages OneDrive Entreprise cloud non privé      |
+|**Contoso Bank** se trouve dans un secteur hautement réglementé et dispose de nombreux types différents d’éléments sensibles dans de nombreux emplacements différents. </br> - sait quels types d’informations sensibles sont prioritaires. </br> - doit minimiser les perturbations de l’activité lors du programme de déployé des stratégies. </br> - dispose de ressources informatiques et peut faire appel à des experts pour vous aider à planifier et à concevoir le déploiement </br> - a un contrat de support premier avec Microsoft| - Prenez le temps de comprendre les réglementations qu’ils doivent respecter et la façon dont ils vont se conformer. </br> -Prenez le temps de comprendre la meilleure valeur ensemble de la pile Microsoft 365 protection des informations personnelles </br> - Développer un modèle d’étiquetage de niveau de sensibilité pour les éléments hiérarchisés et appliquer </br> - Impliquer les propriétaires de processus d’entreprise </br>- Stratégies de conception/code, déployer en mode test, former les utilisateurs </br>- répéter|
+|**TailSpin Toys** ne sait pas ce qu’ils ont ou où il se trouve, et ont peu ou pas de profondeur de ressources. Ils utilisent Teams, OneDrive Entreprise et Exchange de manière étendue.     |- Commencez par des stratégies simples sur les emplacements hiérarchisés. </br>- Surveiller ce qui est identifié </br>- Appliquer les étiquettes de niveau de sensibilité en conséquence </br>- Affiner les stratégies, former les utilisateurs       |
+|**Fabrikam est** un petit démarrage et souhaite protéger sa propriété intellectuelle et doit se déplacer rapidement. Ils sont prêts à dédier des ressources, mais ne peuvent pas se permettre d’engager des experts externes. </br>- Les éléments sensibles sont tous dans Microsoft 365 OneDrive Entreprise/SharePoint </br>- L’adoption de OneDrive Entreprise et SharePoint est lente, les employés/shadow IT utilisent DropBox et Google Drive pour partager/stocker des éléments </br>- Vitesse de travail des employés par rapport à la protection des données </br>- Le client s’est lancé et a acheté les 18 nouveaux Windows 10 appareils     |- Tirez parti de la stratégie DLP par défaut dans Teams </br>- Utiliser restreint par défaut pour les éléments de SharePoint </br>- Déployer des stratégies qui empêchent le partage externe </br>- Déployer des stratégies vers des emplacements hiérarchisés </br>- Déployer des stratégies sur Windows 10 périphériques </br>- Bloquer les téléchargements vers le stockage cloud OneDrive Entreprise non-stockage      |
 
 <!--
 

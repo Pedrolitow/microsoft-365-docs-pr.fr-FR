@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment utiliser Power Automate créer votre flux pour traiter vos contrats à l’aide d’Microsoft 365 solution.
-ms.openlocfilehash: d9892110d6aebd3eaae6fbc21d453b7eb14d7f7e
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281238"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583099"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Étape 3. Utiliser Power Automate pour créer votre flux pour traiter vos contrats
 
@@ -27,7 +27,7 @@ Pour votre solution de gestion des contrats, vous souhaitez créer un flux Power
 
 -  Une fois qu’un contrat a été classé par SharePoint modèle Syntex, modifiez l’état du contrat en **In review**.
 - Le contrat est ensuite examiné et approuvé ou rejeté.
-- Pour les contrats approuvés, les informations sur le contrat sont publiées dans un onglet pour le traitement des paiements.
+- Pour les contrats approuvés, les informations de contrat sont publiées dans un onglet pour le traitement des paiements.
 - Pour les contrats rejetés, l’équipe est avertie pour analyse approfondie. 
 
 Le diagramme suivant illustre le flux Power Automate pour la solution de gestion des contrats.
@@ -36,11 +36,11 @@ Le diagramme suivant illustre le flux Power Automate pour la solution de gestion
 
 ## <a name="prepare-your-contract-for-review"></a>Préparer votre contrat pour révision
 
-Lorsqu’un contrat est identifié et classé par votre modèle d’SharePoint document Syntex, le flux Power Automate change d’abord l’état en « En révision ».
+Lorsqu’un contrat est identifié et classé par votre modèle SharePoint document Syntex, le flux Power Automate change d’abord l’état en **In review**.
 
 ![Mettre à jour l’état.](../media/content-understanding/flow-overview.png)
 
-Après avoir vérifié le fichier, modifiez la valeur d’état sur « En révision ».
+Après avoir vérifié le fichier, modifiez la valeur d’état sur **En révision.**
 
 ![Dans l’état de l’avis.](../media/content-understanding/in-review.png)
 
@@ -141,7 +141,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
    ![État de la carte approuvé.](../media/content-understanding/approved-contracts-tab.png)
 
-- Dans votre flux, l’état est modifié en « Approuvé ».
+- Dans votre flux, l’état est modifié en **Approuvé**.
 
    ![Flow statut approuvé.](../media/content-understanding/status-approved.png)
 
@@ -242,7 +242,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
 ## <a name="if-the-contract-is-rejected"></a>Si le contrat est rejeté
 
-Lorsqu’un contrat a été rejeté, les choses suivantes se produisent :
+Lorsqu’un contrat a été rejeté, les éléments suivants se produisent :
 
 - Sous l’onglet **Contrats,** l’état de la carte de contrat passe à **Rejeté**.
 

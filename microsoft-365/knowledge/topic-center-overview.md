@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333817"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583591"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Vue d’ensemble du centre de rubriques dans les rubriques microsoft
 
@@ -27,7 +27,7 @@ Dans Rubriques microsoft, le centre de rubriques est un site SharePoint moderne 
 
 Le centre de rubriques possède une page d’accueil par défaut avec le volet Web Rubriques dans laquelle tous les **utilisateurs** sous licence peuvent voir les rubriques à laquelle ils ont une connexion. 
 
-Bien que tous les utilisateurs sous licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L’onglet Gérer les rubriques** s’affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques. 
+Bien que tous les utilisateurs titulaires d’une licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L’onglet Gérer les rubriques** s’affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques. 
 
 ## <a name="where-is-my-topic-center"></a>Où se trouve mon centre de rubriques
 
@@ -37,7 +37,7 @@ Le centre de rubriques est créé lors de la configuration de Topics. Une fois l
 1. Dans le Microsoft 365 d’administration, sélectionnez **Paramètres,** puis sélectionnez **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** sélectionnez **Expériences des rubriques.**
 
-    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter connaissances](../media/admin-org-knowledge-options-completed.png) 
 
 3. Sélectionnez **l’onglet Centre des** rubriques. Sous **Adresse du site** se trouve un lien vers votre centre de rubriques.
 
@@ -69,7 +69,7 @@ Une fois qu’un utilisateur a confirmé sa connexion à une rubrique, il peut a
 
 ## <a name="manage-topics-page"></a>Page Gérer les rubriques
 
-Pour travailler sur la page Gérer les rubriques du centre de **rubriques,** vous devez avoir les autorisations Gérer les rubriques requises pour le rôle de gestionnaire de connaissances. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la gestion des [connaissances,](set-up-topic-experiences.md)ou les nouveaux utilisateurs peuvent être [ajoutés](topic-experiences-knowledge-rules.md) par la suite par un administrateur via le Centre d’administration Microsoft 365 de gestion des connaissances.
+Pour travailler sur la page Gérer les rubriques du centre de **rubriques,** vous devez avoir les autorisations Gérer les rubriques requises pour le rôle de gestionnaire de connaissances. Votre administrateur peut attribuer ces autorisations aux utilisateurs lors de la configuration de la gestion des [connaissances,](set-up-topic-experiences.md)ou les nouveaux utilisateurs peuvent être [ajoutés](topic-experiences-knowledge-rules.md) par la suite par un administrateur via le centre d’administration Microsoft 365 de gestion des connaissances.
 
 Dans la page **Gérer les rubriques,** le tableau de bord de rubrique affiche toutes les rubriques, à qui vous avez accès, qui ont été identifiées à partir de vos emplacements source spécifiés. Chaque rubrique affiche la date à laquelle la rubrique a été découverte. Un utilisateur qui a reçu les autorisations Gérer les rubriques peut passer en revue les rubriques non confirmées et choisir d’utiliser :
 
@@ -79,7 +79,7 @@ Dans la page **Gérer les rubriques,** le tableau de bord de rubrique affiche to
  
 - Supprimez la rubrique : rend la rubrique introuvable pour les utilisateurs finaux. La rubrique est déplacée vers **l’onglet Supprimé** et peut être confirmée ultérieurement si nécessaire. 
 
-Pour plus d’informations sur la gestion des rubriques dans la page **Gérer les rubriques, voir [Gérer les rubriques.](manage-topics.md)
+Pour plus d’informations sur la gestion des rubriques dans la page Gérer **les rubriques,** voir [Gérer les rubriques.](manage-topics.md)
 
 ## <a name="create-or-edit-a-topic"></a>Créer ou modifier une rubrique
 

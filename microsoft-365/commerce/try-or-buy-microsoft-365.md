@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: Découvrez comment obtenir une version d’essai gratuite ou acheter un abonnement Microsoft 365 entreprise.
+description: Inscrivez-vous à un essai gratuit de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 ms.date: 08/07/2020
-ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344685"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583447"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 entreprise
 
@@ -45,7 +45,7 @@ Microsoft 365 entreprise est un service d’abonnement qui vous permet d’exéc
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures de cet article, vous devez être un administrateur global ou un administrateur de facturation pour votre organisation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures de cet article, vous devez être un administrateur global ou un administrateur de facturation pour votre organisation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Essayer un abonnement d’essai gratuit
 
@@ -74,16 +74,16 @@ Si vous souhaitez acheter votre abonnement avant la fin de votre version d’ess
 
 Avez-vous besoin de plus de temps pour tester les fonctionnalités de Microsoft 365 entreprise avant d’acheter ? Si votre abonnement d'évaluation expire dans les 15 jours et n'a jamais été prolongé, vous pouvez le prolonger de 30 jours. Cette possibilité n'est offerte qu'une fois.
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement d’essai que vous souhaitez étendre.
 3. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres de** paiement, sélectionnez **Étendre la date de fin.**
-4. Dans le volet Date **de** fin de l’extension, examinez les informations de poste et, si nécessaire, sélectionnez un mode de paiement. Lorsque vous avez terminé, sélectionnez **Étendre la version d’essai.**
+4. Dans le **volet** Date de fin de l’extension, examinez les informations de poste et, si nécessaire, sélectionnez un mode de paiement. Lorsque vous avez terminé, sélectionnez **Étendre la version d’essai.**
 
 Lorsque vous êtes prêt à acheter, voir [Acheter votre version d’essai.](#buy-a-subscription-from-your-free-trial)
 
 ## <a name="cancel-your-free-trial-subscription"></a>Annuler votre abonnement d’essai gratuit
 
-Si vous décidez d’annuler votre abonnement d’essai avant la fin de la période d’essai gratuite, rendez-vous dans le centre d’administration Microsoft 365 et désactiver [la facturation périodique.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) La version d’essai expirera automatiquement à la fin de votre mois et votre carte de crédit \' ne sera pas débitée.
+Si vous décidez d’annuler votre abonnement d’essai avant la fin de la période d’essai gratuite, rendez-vous dans le centre d’administration Microsoft 365 et désactiver [la facturation périodique.](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) La version d’essai expirera automatiquement à la fin de votre mois et votre carte de crédit ne \' sera pas débitée.
 
 ## <a name="try-a-different-subscription"></a>Essayer un autre abonnement
 
@@ -101,7 +101,7 @@ Lorsque vous ajoutez un abonnement via le Centre d’administration Microsoft 36
 
 ## <a name="buy-a-different-subscription"></a>Acheter un autre abonnement
 
-Si vous avez déjà un abonnement Microsoft 365 entreprise, vous pouvez passer par le centre d’administration Microsoft 365 pour acheter un autre abonnement pour votre organisation.
+Si vous avez déjà un abonnement Microsoft 365 entreprise, vous pouvez passer par le Centre d’administration Microsoft 365 pour acheter un autre abonnement pour votre organisation.
 
 Lorsque vous achetez un autre abonnement via le Centre d’administration, le nouvel abonnement est associé à la même organisation (espace de nom de domaine) que votre abonnement existant. Cela facilite le déplacement des utilisateurs de votre organisation entre les abonnements ou leur attribuer une licence pour l’abonnement supplémentaire dont ils ont besoin.
 
@@ -141,11 +141,11 @@ Si vous avez un nouveau compte et que vous avez configuré votre premier abonnem
 
 Si vous avez déjà un abonnement et que vous ajoutez un nouvel abonnement, vous pouvez y déplacer des utilisateurs. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](subscriptions/move-users-different-subscription.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365 vidéos de formation pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vidéos de formation)\
+[Microsoft 365 vidéos de formation pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vidéo)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../admin/add-users/add-users.md) (article)\
 [Attribuer des licences aux utilisateurs](../admin/manage/assign-licenses-to-users.md) (article)\
 [Mettre à niveau vers un autre plan](subscriptions/upgrade-to-different-plan.md) (article)\
 [Acheter ou modifier un module Microsoft 365 entreprise](buy-or-edit-an-add-on.md) (article)\
-[Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md)
+[Ajouter de l’espace de stockage pour votre abonnement](add-storage-space.md) (article)

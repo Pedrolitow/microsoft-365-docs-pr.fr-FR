@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Découvrez comment utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données à l’aide d’Microsoft 365 solution.
-ms.openlocfilehash: f246dd4ed619dd9885d2c45c69d607cfa9c2483f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 67c0a072b070cd414f5079fe4fb61e7391839951
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538554"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583567"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Étape 1. Utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données
 
@@ -42,7 +42,7 @@ Votre organisation a besoin d’un moyen d’identifier et de classer tous les d
 ## <a name="steps-to-create-and-train-your-model"></a>Étapes de création et de formation de votre modèle
 
 > [!NOTE]
-> Pour ces étapes, vous pouvez utiliser les exemples de fichiers dans le référentiel [Microsoft SharePoint Syntex Samples](https://github.com/pnp/syntex-samples). Les exemples de ce référentiel contiennent à la fois les fichiers de modèle de compréhension de document et les fichiers utilisés pour former le modèle.
+> Pour ces étapes, vous pouvez utiliser les exemples de fichiers dans le référentiel Des ressources de solution de gestion [des contrats.](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management) Les exemples de ce référentiel contiennent à la fois les fichiers de modèle de compréhension de document et les fichiers utilisés pour former le modèle.
 
 ### <a name="create-a-contract-model"></a>Créer un modèle de contrat
 
@@ -170,11 +170,11 @@ Pour vous aider à identifier la *date de début du* contrat, vous pouvez créer
 
 Vous pouvez tester votre modèle de contrat sur des exemples de fichiers qu’il n’a pas vus auparavant. Cela est facultatif, mais il peut s’avérer utile.
 
-1. Dans la page **Modèles > contrat > classifieur** de contrat, sélectionnez **l’onglet Test.** Cette fonction exécute le modèle sur vos exemples de fichiers non lamentés.
+1. Dans la page **> contrat > contrat,** sélectionnez **l’onglet Test.** Cela exécute le modèle sur vos fichiers d’exemples non lamentés.
 
-2. Dans la liste **Des fichiers de** test, vos exemples de fichiers s’affichent et indiquent si le modèle est en mesure d’extraire les informations dont vous avez besoin. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
+2. Dans la **liste Des fichiers de** test, vos exemples de fichiers s’affichent et indiquent si le modèle est en mesure d’extraire les informations dont vous avez besoin. Utilisez ces informations pour déterminer plus facilement l’efficacité de votre classifieur lors de l’identification de vos documents.
 
-3. Lorsque vous avez terminé, **sélectionnez Quitter la formation.**
+3. Lorsque vous avez terminé, **sélectionnez Quitter l’entraînement.**
 
 ### <a name="apply-your-model-to-a-document-library"></a>Appliquer votre modèle à une bibliothèque de documents
 
