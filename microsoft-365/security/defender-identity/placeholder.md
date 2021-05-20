@@ -1,6 +1,6 @@
 ---
-title: Sujet placeholder pour créer le dossier en master-to être supprimé
-description: Sujet placeholder pour créer le dossier en master-to être supprimé
+title: Rubrique sur l’espace réservé pour créer le dossier en master à supprimer
+description: Rubrique sur l’espace réservé pour créer le dossier en master à supprimer
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -29,5 +29,5 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572815"
 ---
-# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a>Sujet placeholder pour créer le dossier en master-to être supprimé
+# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a>Rubrique sur l’espace réservé pour créer le dossier en master à supprimer
 

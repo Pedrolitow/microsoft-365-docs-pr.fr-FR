@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender pour point de terminaison pour les clients du gouvernement des États-Unis
-description: En savoir plus sur le Microsoft Defender for Endpoint pour les besoins et les capacités des clients du gouvernement américain disponibles
-keywords: gouvernement, gcc, élevé, exigences, capacités, défenseur, Microsoft Defender pour Endpoint, point final, dod
+description: En savoir plus sur les exigences et fonctionnalités de Microsoft Defender pour endpoint pour le gouvernement des États-Unis disponibles
+keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,34 +28,34 @@ ms.locfileid: "52572668"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint pour les clients du gouvernement américain, construit dans l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender for Endpoint dans Azure Commercial.
+Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis, intégré à l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender pour endpoint dans Azure Commercial.
 
-Cette offre est disponible pour les clients Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD et est basée sur la même prévention, détection, enquête et assainissement que la version commerciale. Toutefois, il existe certaines différences dans la disponibilité des capacités pour cette offre.
+Cette offre est disponible pour les clients Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD et est basée sur les mêmes prévention, détection, examen et correction que la version commerciale. Toutefois, il existe certaines différences dans la disponibilité des fonctionnalités de cette offre.
 
 > [!NOTE]
-> Si vous êtes un client Cloud de la communauté du secteur public utilisant Defender for Endpoint in Commercial, veuillez consulter les pages de documentation publique.
+> Si vous êtes un client Cloud de la communauté du secteur public à l’aide de Defender for Endpoint in Commercial, reportez-vous aux pages de documentation publique.
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
-Microsoft Defender for Endpoint pour les clients du gouvernement américain nécessite l’une des offres de licences microsoft en volume suivantes :
+Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis nécessite l’une des offres de licence en volume Microsoft suivantes :
 
-### <a name="desktop-licensing"></a>Licence de bureau
+### <a name="desktop-licensing"></a>Licences de bureau
 GCC | GCC High | DoD
 :---|:---|:---
-Windows 10 Entreprise E5 Cloud de la communauté du secteur public | Windows 10 Entreprise E5 pour Cloud de la communauté du secteur public High | Windows 10 Entreprise E5 pour DOD
-| | Microsoft 365 E5 pour Cloud de la communauté du secteur public High | Microsoft 365 G5 pour dod
-| | Microsoft 365 G5 Sécurité pour Cloud de la communauté du secteur public Élevé | Microsoft 365 Sécurité G5 pour dod
-Microsoft Defender pour Endpoint - Cloud de la communauté du secteur public | Microsoft Defender pour Endpoint pour Cloud de la communauté du secteur public High | Microsoft Defender pour Endpoint pour DOD
+Windows 10 Entreprise E5 Cloud de la communauté du secteur public | Windows 10 Entreprise E5 pour Cloud de la communauté du secteur public élevé | Windows 10 Entreprise E5 pour DOD
+| | Microsoft 365 E5 pour Cloud de la communauté du secteur public Élevé | Microsoft 365 G5 pour DOD
+| | Microsoft 365 Sécurité G5 pour Cloud de la communauté du secteur public élevé | Microsoft 365 Sécurité G5 pour DOD
+Microsoft Defender pour le point de terminaison - Cloud de la communauté du secteur public | Microsoft Defender for Endpoint for Cloud de la communauté du secteur public High | Microsoft Defender pour point de terminaison pour DOD
 
-### <a name="server-licensing"></a>Licence serveur
+### <a name="server-licensing"></a>Gestion des licences de serveur
 GCC | GCC High | DoD
 :---|:---|:---
-Microsoft Defender pour endpoint server Cloud de la communauté du secteur public | Microsoft Defender pour endpoint server pour Cloud de la communauté du secteur public High | Microsoft Defender pour Endpoint Server pour DOD
-Azure Defender pour serveurs | Défenseur azuréen pour les serveurs - Gouvernement | Défenseur azuréen pour les serveurs - Gouvernement
+Microsoft Defender pour Endpoint Server Cloud de la communauté du secteur public | Microsoft Defender for Endpoint Server for Cloud de la communauté du secteur public High | Microsoft Defender pour Endpoint Server pour DOD
+Azure Defender pour les serveurs | Azure Defender pour les serveurs - Gouvernement | Azure Defender pour les serveurs - Gouvernement
 
 <br />
 
-## <a name="portal-urls"></a>URL portail
-Voici le Microsoft Defender pour les URL portail Endpoint pour les clients du gouvernement américain:
+## <a name="portal-urls"></a>URL du portail
+Les URL du portail Microsoft Defender pour les points de terminaison pour les clients du gouvernement des États-Unis sont les suivantes :
 
 Type de client | URL du portail
 :---|:---
@@ -65,22 +65,22 @@ DoD | https://securitycenter.microsoft.us
 
 <br />
 
-## <a name="endpoint-versions"></a>Versions de point de terminaison
+## <a name="endpoint-versions"></a>Versions des points de terminaison
 
-### <a name="standalone-os-versions"></a>Versions autonomes d’OS
-Les versions OS suivantes sont prises en charge :
+### <a name="standalone-os-versions"></a>Versions de système d’exploitation autonomes
+Les versions de système d’exploitation suivantes sont pris en charge :
 
-Version OS | GCC | GCC High | DoD
+Version du système d’exploitation | GCC | GCC High | DoD
 :---|:---|:---|:---
-Windows 10, version 20H2 (avec [KB4586853](https://support.microsoft.com/help/4586853)) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
+Windows 10, version 20H2 [(avec KB4586853)](https://support.microsoft.com/help/4586853) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows 10, version 2004 (avec [KB4586853](https://support.microsoft.com/help/4586853)) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows 10, version 1909 (avec [KB4586819](https://support.microsoft.com/help/4586819)) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows 10, version 1903 (avec [KB4586819](https://support.microsoft.com/help/4586819)) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows 10, version 1809 (avec [KB4586839](https://support.microsoft.com/help/4586839)) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows 10, version 1803 (avec [KB4598245](https://support.microsoft.com/help/4598245)) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
-Windows 10, version 1709 | ![Non](images/svg/check-no.svg)<br />Remarque : Ne sera pas pris en charge | ![Oui ](images/svg/check-yes.svg) avec [KB4499147](https://support.microsoft.com/help/4499147)<br />Note: [Déprécié, s’il vous](/lifecycle/announcements/revised-end-of-service-windows-10-1709)plaît mise à niveau | ![Non](images/svg/check-no.svg)<br />Remarque : Ne sera pas pris en charge
-Windows 10, version 1703 et antérieure | ![Non](images/svg/check-no.svg)<br />Remarque : Ne sera pas pris en charge | ![Non](images/svg/check-no.svg)<br />Remarque : Ne sera pas pris en charge | ![Non](images/svg/check-no.svg)<br />Remarque : Ne sera pas pris en charge
-Windows Server 2019 (avec [KB4586839](https://support.microsoft.com/help/4586839)) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
+Windows 10, version 1709 | ![Non](images/svg/check-no.svg)<br />Remarque : ne sera pas pris en charge | ![Oui ](images/svg/check-yes.svg) avec [KB4499147](https://support.microsoft.com/help/4499147)<br />Remarque : [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade | ![Non](images/svg/check-no.svg)<br />Remarque : ne sera pas pris en charge
+Windows 10, version 1703 et antérieures | ![Non](images/svg/check-no.svg)<br />Remarque : ne sera pas pris en charge | ![Non](images/svg/check-no.svg)<br />Remarque : ne sera pas pris en charge | ![Non](images/svg/check-no.svg)<br />Remarque : ne sera pas pris en charge
+Windows Server 2019 (avec [KB4586839)](https://support.microsoft.com/help/4586839) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows Server 2016 | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
@@ -90,21 +90,21 @@ Windows 7 SP1 Enterprise | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/
 Windows 7 SP1 Pro | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Linux | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 macOS | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
-Android | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie
-iOS | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie
+Android | ![Non](images/svg/check-no.svg) On engineering backlog | ![Non](images/svg/check-no.svg) On engineering backlog | ![Non](images/svg/check-no.svg) On engineering backlog
+iOS | ![Non](images/svg/check-no.svg) On engineering backlog | ![Non](images/svg/check-no.svg) On engineering backlog | ![Non](images/svg/check-no.svg) On engineering backlog
 
 > [!NOTE]
-> Lorsqu’un patch est spécifié, il doit être déployé avant l’in bord de l’appareil afin de configurer Defender for Endpoint dans l’environnement correct.
+> Lorsqu’un correctif est spécifié, il doit être déployé avant l’intégration de l’appareil afin de configurer Defender pour Endpoint dans l’environnement correct.
 
 > [!NOTE]
-> Vous essayez de les Windows plus anciens que Windows 10 ou Windows Server 2019 en utilisant [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? Vous devrez choisir « Azure US Government » sous « Azure Cloud » si vous utilisez l’assistant [de configuration,](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)ou si vous utilisez une ligne [de commande](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) ou [un script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » à 1.
+> Vous essayez d’intégrer Windows appareils plus anciens que Windows 10 ou Windows Server 2019 à l’aide [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? Vous devez choisir « Azure US Government » sous « Azure Cloud » [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) si vous utilisez l’Assistant Installation [ou](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si vous utilisez une ligne de commande ou un [script,](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
 
-### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versions OS lors de l’utilisation d’Azure Defender pour les serveurs
-Les versions OS suivantes sont prises en charge lors de [l’utilisation d’Azure Defender pour les serveurs](/azure/security-center/security-center-wdatp):
+### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versions du système d’exploitation lors de l’utilisation d’Azure Defender pour les serveurs
+Les versions de système d’exploitation suivantes sont pris en charge lors de [l’utilisation d’Azure Defender pour les serveurs](/azure/security-center/security-center-wdatp):
 
-Version OS | GCC | GCC High | DoD
+Version du système d’exploitation | GCC | GCC High | DoD
 :---|:---|:---|:---
-Windows Server 2019 | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement
+Windows Server 2019 | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement
 Windows Server 2016 | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
@@ -114,60 +114,60 @@ Windows Server 2008 R2 SP1 | ![Oui](images/svg/check-yes.svg) | ![Oui](images/
 ## <a name="required-connectivity-settings"></a>Paramètres de connectivité requis
 Si un proxy ou un pare-feu bloque tout le trafic par défaut et n'autorise le passage que de domaines spécifiques, ajoutez les domaines énumérés dans la feuille téléchargeable à la liste des domaines autorisés.
 
-La feuille de calcul téléchargeable suivante répertorie les services et leurs URL associées à qui votre réseau doit pouvoir se connecter. Vérifiez qu’il n’existe pas de règles de filtrage pare-feu ou réseau qui refuseraient l’accès à ces URL, ou *créeraient* une règle d’autoriser spécifiquement pour eux.
+La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Vérifiez qu’il n’existe aucune règle de pare-feu ou  de filtrage réseau qui refuserait l’accès à ces URL, ou créez une règle d’autoriser spécifiquement pour elles.
 
-Liste de calcul des domaines | Description
+Liste de feuilles de calcul de domaines | Description
 :-----|:-----
-![Image du pouce pour Microsoft Defender pour la feuille de calcul Endpoint URLs](images/mdatp-urls.png)<br/> | Feuille de calcul des enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <br /><br />[Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
+![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison](images/mdatp-urls.png)<br/> | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <br /><br />[Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
-Pour plus d’informations, consultez [les paramètres proxy et de connectivité Internet de l’appareil Configure.](configure-proxy-internet.md)
+Pour plus d’informations, voir [Configurer les paramètres de proxy](configure-proxy-internet.md)d’appareil et de connectivité Internet.
 
 > [!NOTE]
-> La feuille de calcul contient également des URL commerciales, assurez-vous de vérifier les onglets « Gov us ».
+> La feuille de calcul contient également des URL commerciales, veillez à vérifier les onglets « US Gov ».
 > 
-> Lors du filtrage, recherchez les enregistrements étiquetés comme « Gov us » et votre nuage spécifique sous la colonne géographie.
+> Lors du filtrage, recherchez les enregistrements étiquetés « US Gov » et votre nuage spécifique sous la colonne de géographie.
 
-### <a name="service-backend-ip-ranges"></a>Gammes IP backend service
+### <a name="service-backend-ip-ranges"></a>Plages IP de service back-end
 
-Si vos périphériques réseau ne supporte pas les règles basées sur DNS, utilisez plutôt des plages IP.
+Si vos périphériques réseau ne supportent pas les règles DNS, utilisez plutôt des plages IP.
 
-Defender for Endpoint pour les clients du gouvernement américain est construit dans l’environnement azuréen du gouvernement américain, déployé dans les régions suivantes :
+Defender pour le point de terminaison pour les clients du gouvernement des États-Unis est créé dans l’environnement Azure US Government, déployé dans les régions suivantes :
 
 - AzureCloud.usgovtexas
 - AzureCloud.usgovvirginia
 
-Vous pouvez trouver les gammes IP Azure dans [azure IP Ranges and Service Tags – US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063).
+Vous pouvez trouver les plages IP Azure dans les plages IP et les balises de [service Azure – Cloud pour le gouvernement des États-Unis.](https://www.microsoft.com/download/details.aspx?id=57063)
 
 > [!NOTE]
-> En tant que solution basée sur le cloud, les plages d’adresses IP peuvent changer. Il est recommandé de passer aux règles basées sur le DNS.
+> En tant que solution informatique, les plages d’adresses IP peuvent changer. Il est recommandé de passer aux règles DNS.
 
 <br />
 
 ## <a name="api"></a>API
-Au lieu des URL publiques répertoriées dans [notre documentation API,](apis-intro.md)vous devrez utiliser les URL suivantes :
+Au lieu des URIs publics répertoriés dans la documentation de notre [API,](apis-intro.md)vous devez utiliser les URIs suivants :
 
-Type de point final | GCC | Cloud de la communauté du secteur public DoD & haute qualité
+Type de point de terminaison | GCC | Cloud de la communauté du secteur public DoD & haut niveau
 :---|:---|:---
 Connexion | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
-Défenseur de l’API Endpoint | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
+Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
 SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
 <br />
 
-## <a name="feature-parity-with-commercial"></a>Parité des caractéristiques avec commercial
-Defender for Endpoint pour les clients du gouvernement américain n’a pas la parité complète avec l’offre commerciale. Bien que notre objectif soit de fournir toutes les fonctionnalités et fonctionnalités commerciales à nos clients du gouvernement américain, certaines fonctionnalités ne sont pas encore disponibles que nous voulons mettre en évidence.
+## <a name="feature-parity-with-commercial"></a>Parité des fonctionnalités avec commercial
+Defender for Endpoint for US Government customers doesn’t have complete parity with the commercial offering. Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales à nos clients du gouvernement des États-Unis, certaines fonctionnalités ne sont pas encore disponibles que nous voulons mettre en évidence.
 
-Ce sont les lacunes connues:
+Voici les lacunes connues :
 
 Nom de la fonctionnalité | GCC | GCC High | DoD
 :---|:---|:---|:---
-Gestion et API : API en streaming | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
-Filtrage du contenu web | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement
-Intégrations: Azure Sentinel | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) Alertes <br /> ![Non](images/svg/check-no.svg) Incidents & données brutes : en développement | ![Oui](images/svg/check-yes.svg) Alertes <br /> ![Non](images/svg/check-no.svg) Incidents & données brutes : en développement
-Intégrations : Microsoft Cloud App Security | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement
-Intégrations : Microsoft Compliance Manager | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement
-Intégrations: Microsoft Defender for Identity | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement
-Intégrations: Microsoft Endpoint DLP | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement
+Gestion et API : API de diffusion en continu | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
+Filtrage du contenu web | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement
+Intégrations : Azure Sentinel | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) Alertes <br /> ![Non](images/svg/check-no.svg) Incidents & données brutes : en développement | ![Oui](images/svg/check-yes.svg) Alertes <br /> ![Non](images/svg/check-no.svg) Incidents & données brutes : en développement
+Intégrations : Microsoft Cloud App Security | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement
+Intégrations : Gestionnaire de conformité Microsoft | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement
+Intégrations : Microsoft Defender pour l’identité | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement
+Intégrations : point de terminaison Microsoft DLP | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement
 Intégrations : Microsoft Intune | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg) | ![Oui](images/svg/check-yes.svg)
-Intégrations : Microsoft Power Automate & Azure Logic Apps | ![Oui](images/svg/check-yes.svg) | ![Non](images/svg/check-no.svg) En développement | ![Non](images/svg/check-no.svg) En développement
-Spécialistes des menaces Microsoft | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie | ![Non](images/svg/check-no.svg) Sur le carnet de commandes de l’ingénierie
+Intégrations : Microsoft Power Automate & Azure Logic Apps | ![Oui](images/svg/check-yes.svg) | ![Non](images/svg/check-no.svg) En cours de développement | ![Non](images/svg/check-no.svg) En cours de développement
+Spécialistes des menaces Microsoft | ![Non](images/svg/check-no.svg) On engineering backlog | ![Non](images/svg/check-no.svg) On engineering backlog | ![Non](images/svg/check-no.svg) On engineering backlog

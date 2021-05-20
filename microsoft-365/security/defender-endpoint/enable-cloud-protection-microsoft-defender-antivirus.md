@@ -1,7 +1,7 @@
 ---
-title: Activez la protection fournie par le cloud dans Antivirus Microsoft Defender
-description: Activez la protection fournie par le cloud pour bénéficier de fonctionnalités de protection rapides et avancées.
-keywords: Antivirus Microsoft Defender, antimalware, sécurité, cloud, bloc à première vue
+title: Activer la protection cloud dans Antivirus Microsoft Defender
+description: Activer la protection cloud pour bénéficier des fonctionnalités de protection rapide et avancée.
+keywords: Antivirus Microsoft Defender logiciel anti-programme malveillant, sécurité, cloud, bloquer à la première vue
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -31,135 +31,135 @@ ms.locfileid: "52572056"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
 > [!NOTE]
-> Le service Antivirus Microsoft Defender cloud est un mécanisme permettant d’offrir une protection mise à jour à votre réseau et à vos points de terminaison. Bien qu’il soit appelé un service cloud, il n’est pas simplement une protection pour les fichiers stockés dans le cloud; il utilise plutôt des ressources distribuées et l’apprentissage automatique pour fournir une protection à vos points de terminaison à un rythme beaucoup plus rapide que les mises à jour traditionnelles du renseignement de sécurité.
+> Le Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu’il soit appelé service cloud, il ne s’agit pas simplement de la protection des fichiers stockés dans le cloud . Au lieu de cela, il utilise des ressources distribuées et l’apprentissage automatique pour fournir une protection à vos points de terminaison à une vitesse beaucoup plus rapide que les mises à jour d’intelligence de sécurité traditionnelles.
 
-Antivirus Microsoft Defender utilise de multiples technologies de détection et de prévention pour offrir une protection précise, en temps réel et intelligente. [Faites la point de vue des technologies de pointe au cœur de Microsoft Defender pour la protection de prochaine génération Endpoint.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
+Antivirus Microsoft Defender utilise plusieurs technologies de détection et de prévention pour offrir une protection précise, en temps réel et intelligente. Faire connaître les technologies avancées au cœur de Microsoft Defender pour la protection nouvelle génération de point de [terminaison.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
-Vous pouvez activer Antivirus Microsoft Defender protection fournie par le cloud de plusieurs façons :
+Vous pouvez activer ou désactiver Antivirus Microsoft Defender protection cloud de plusieurs manières :
 
 - Microsoft Intune
 - Microsoft Endpoint Manager
 - Stratégie de groupe
 - Cmdlets PowerShell.
 
- Vous pouvez également l’activer ou l’éteindre chez des clients individuels avec l’application Sécurité Windows’application.
+ Vous pouvez également l’activer ou le désactiver dans des clients individuels à l’Sécurité Windows’application.
 
-Consultez [la protection microsoft fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md) pour une vue d’ensemble Antivirus Microsoft Defender protection fournie par le cloud.
+Voir [Utiliser la protection microsoft cloud pour](cloud-protection-microsoft-defender-antivirus.md) une vue d’ensemble Antivirus Microsoft Defender protection cloud.
 
-Pour plus d’informations sur les exigences spécifiques de connectivité réseau pour vous assurer que vos points de terminaison peuvent se connecter au service de protection livré dans le cloud, [consultez Configurer et valider les connexions réseau.](configure-network-connections-microsoft-defender-antivirus.md)
+Pour plus d’informations sur les exigences spécifiques en matière de connectivité réseau pour vous assurer que vos points de terminaison peuvent se connecter au service de protection assurée par le cloud, voir Configurer et valider les [connexions réseau.](configure-network-connections-microsoft-defender-antivirus.md)
 
 > [!NOTE]
-> En Windows 10, il n’y a pas de différence entre les options **de** rapports **de** base et avancées décrites dans ce sujet. Il s’agit d’une distinction héritée et le choix de l’un ou l’autre paramètre se traduira par le même niveau de protection fournie par le cloud. Il n’y a aucune différence dans le type ou la quantité d’informations qui sont partagées. Pour plus d’informations sur ce que nous recueillons, consultez la [déclaration de confidentialité de Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
+> Dans Windows 10, il n’existe aucune  différence  entre les options de rapports de base et avancées décrites dans cette rubrique. Il s’agit d’une distinction héritée et le choix de l’un ou l’autre des paramètres entraîne le même niveau de protection cloud. Il n’existe aucune différence dans le type ou la quantité d’informations partagées. Pour plus d’informations sur ce que nous collectons, voir la déclaration [de confidentialité de Microsoft.](https://go.microsoft.com/fwlink/?linkid=521839)
 
-## <a name="use-intune-to-turn-on-cloud-delivered-protection"></a>Utilisez Intune pour activer la protection fournie par le cloud
+## <a name="use-intune-to-turn-on-cloud-delivered-protection"></a>Utiliser Intune pour activer la protection cloud
 
-1. Allez au centre Microsoft Endpoint Manager admin [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () et connectez-vous.
+1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and log in.
 
-2. Sur le **volet Accueil,** sélectionnez la **configuration de l'> profils**.
+2. Dans le **volet Accueil,** sélectionnez Configuration de l'> **profils.**
 
-3. Sélectionnez le type **de profil** de restriction s’appliquant à l’appareil que vous souhaitez configurer. Si vous avez besoin de créer un nouveau type **de profil de restriction** s’appliquant aux périphériques, consultez les paramètres de restriction de [l’appareil Microsoft Intune](/intune/device-restrictions-configure).
+3. Sélectionnez le type **de profil restrictions d’appareil** que vous souhaitez configurer. Si vous devez créer un type de profil **de restrictions** d’appareil, voir Configurer les paramètres de [restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure).
 
-4. Sélectionnez **Paramètres**  >  **de configuration propriétés :**  >  **Modifiez Antivirus Microsoft Defender**.
+4. Sélectionnez **les**  >  **paramètres de configuration des propriétés :**  >  **Antivirus Microsoft Defender**.
 
-5. Sur le **commutateur de protection livré par Cloud,** sélectionnez **Activer**.
+5. Sur le **commutateur de protection cloud,** sélectionnez **Activer.**
 
-6. Dans les utilisateurs **prompts avant la baisse de soumission** de l’échantillon, **sélectionnez Envoyer toutes les données automatiquement**.
+6. Dans la demande **d’utilisateurs avant la** soumission d’exemples, **sélectionnez Envoyer toutes les données automatiquement.**
 
-Pour plus d’informations sur les profils des périphériques Intune, y compris la façon de créer et de configurer leurs paramètres, voir [Quels sont les profils Microsoft Intune’appareils ?](/intune/device-profiles)
+Pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, voir Quelles sont les [Microsoft Intune’appareil ?](/intune/device-profiles)
 
-## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-delivered-protection"></a>Utilisez Microsoft Endpoint Manager pour activer la protection fournie par le cloud
+## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-delivered-protection"></a>Utiliser Microsoft Endpoint Manager pour activer la protection cloud
 
-1. Allez au centre Microsoft Endpoint Manager admin [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () et connectez-vous.
+1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and log in.
 
-2. Choisissez **Endpoint security**  >  **Antivirus**.
+2. Choisissez **l’Antivirus de sécurité des points de**  >  **terminaison.**
 
-3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un nouveau profil, consultez les paramètres [de restriction de l’appareil Configure dans Microsoft Intune](/intune/device-restrictions-configure).
+3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .
 
-4. Sélectionnez **Propriétés**. Ensuite, à côté des **paramètres de configuration,** choisissez **Modifier**.
+4. Sélectionnez **les propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
-5. Élargissez **la protection** cloud, puis dans la liste de **niveau de protection fournie par cloud,** sélectionnez l’un des éléments suivants :
-   - **Haut**: Applique un fort niveau de détection.
-   - **High plus :** Utilise le niveau élevé **et** applique des mesures de protection supplémentaires (peuvent avoir une incidence sur les performances des clients).
-   - **Tolérance zéro**: Bloque tous les exécutables inconnus.
+5. Développez **la protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
+   - **Élevé**: applique un niveau de détection élevé.
+   - **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut avoir un impact sur les performances du client).
+   - **Tolérance zéro :** bloque tous les exécutables inconnus.
 
-6. Sélectionnez **Examen + enregistrer**, puis choisissez **Enregistrer**.
+6. Sélectionnez **Révision + Enregistrer,** puis **sélectionnez Enregistrer.**
 
-Pour plus d’informations sur la configuration Microsoft Endpoint Configuration Manager, voir [Comment créer et déployer des stratégies antimalware : service de protection cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
+Pour plus d’informations sur la configuration Microsoft Endpoint Configuration Manager, voir Comment créer et déployer des stratégies [anti-programme](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)malveillant : service de protection cloud .
 
-## <a name="use-group-policy-to-turn-on-cloud-delivered-protection"></a>Utilisez la stratégie de groupe pour activer la protection fournie par le cloud
+## <a name="use-group-policy-to-turn-on-cloud-delivered-protection"></a>Utiliser la stratégie de groupe pour activer la protection cloud
 
-1. Sur votre appareil de gestion de stratégie de groupe, ouvrez [la console de gestion de stratégie de](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))groupe, cliquez à droite sur l’objet de stratégie de groupe que vous souhaitez configurer et sélectionner **Modifier**.
+1. Sur votre appareil de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer et sélectionnez **Modifier.**
 
-2. Dans le **Group Policy Management Editor**, aller à la configuration **informatique**.
+2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration de l’ordinateur.**
 
-3. Sélectionnez **Modèles administratifs**.
+3. Sélectionnez **modèles d’administration.**
 
-4. Étendre l’arbre **aux Windows composants > Antivirus Microsoft Defender > MAPS**
+4. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > MAPS**
 
-5. Double-cliquez **sur Rejoindre Microsoft MAPS**. Assurez-vous que l’option est activée et réglée **sur maps de base** ou cartes **avancées.** Sélectionnez **OK**.
+5. Double-cliquez sur **Rejoindre Microsoft MAPS.** Assurez-vous que l’option est allumée et définie sur **Maps de base** ou Cartes **avancées.** Sélectionnez **OK**.
 
-6. Double-cliquez envoyer **des échantillons de fichiers lorsque d’autres analyses sont nécessaires**. Assurez-vous que la première option est définie sur **Activé et** que les autres options sont définies sur l’une ou l’autre :
+6. Double-cliquez sur **Envoyer des exemples de fichier lorsque d’autres analyses sont nécessaires.** Assurez-vous que la première option est définie sur **Activé** et que les autres options sont définies sur :
 
-    1. **Envoyer des échantillons sûrs** (1)
-    2. **Envoyer tous les échantillons** (3)
+    1. **Envoyer des exemples sécurisés** (1)
+    2. **Envoyer tous les exemples** (3)
 
         >[!NOTE]
-        > **L’option Envoyer des échantillons** sûrs (1) signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des renseignements personnels seront toujours rapides et nécessiteront une confirmation supplémentaire.
-        > Définir l’option de **Toujours prompt** (0) abaissera l’état de protection de l’appareil. Le définir pour **ne jamais envoyer** (2) signifie que la fonction Block at First [Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) de Microsoft Defender pour Endpoint ne fonctionnera pas.
+        > **L’option Envoyer des échantillons sûrs** (1) signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles seront toujours invités et nécessitent une confirmation supplémentaire.
+        > La définition de **l’option sur Always Prompt** (0) réduit l’état de protection de l’appareil. Le fait de la définir sur [](configure-block-at-first-sight-microsoft-defender-antivirus.md) **Ne** jamais envoyer (2) signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de terminaison ne fonctionne pas.
 
 7. Sélectionnez **OK**.
 
-## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>Utilisez des cmdlets PowerShell pour activer la protection fournie par le cloud
+## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>Utiliser les cmdlets PowerShell pour activer la protection cloud
 
-Les cmdlets suivants peuvent activer la protection fournie par le cloud :
+Les cmdlets suivantes peuvent activer la protection cloud :
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-Pour plus d’informations sur la façon d’utiliser PowerShell avec Antivirus Microsoft Defender, [consultez les cmdlets PowerShell pour configurer et exécuter Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlets Defender](/powershell/module/defender/). [Politique CSP - Defender a](/windows/client-management/mdm/policy-csp-defender) également plus d’informations spécifiquement sur [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/)Antivirus Microsoft Defender et Defender. [Stratégie CSP - Defender](/windows/client-management/mdm/policy-csp-defender) a également plus d’informations spécifiques sur [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
 >[!NOTE]
-> Vous pouvez également définir **-SubmitSamplesConsent à** `SendSafeSamples` (le paramètre par défaut), `NeverSend` ou `AlwaysPrompt` . Le `SendSafeSamples` paramètre signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des renseignements personnels seront toujours rapides et nécessiteront une confirmation supplémentaire.
+> Vous pouvez également définir **-SubmitSamplesConsent** sur (paramètre par `SendSafeSamples` défaut), `NeverSend` ou `AlwaysPrompt` . Le `SendSafeSamples` paramètre signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles seront toujours invités et nécessitent une confirmation supplémentaire.
 
 >[!WARNING]
-> Réglage **-SubmitSamplesConsent ou** `NeverSend` `AlwaysPrompt` abaissera le niveau de protection de l’appareil. En outre, le définir signifie `NeverSend` que la fonction Block at First [Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) de Microsoft Defender pour Endpoint ne fonctionnera pas.
+> Setting **-SubmitSamplesConsent** to `NeverSend` or will lower the protection level of the `AlwaysPrompt` device. En outre, sa définition signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de `NeverSend` terminaison ne fonctionne pas. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
-## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>Utilisez Windows instruction de gestion des systèmes (WMI) pour activer la protection fournie par le cloud
+## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>Utiliser Windows Management Instruction (WMI) pour activer la protection cloud
 
-Utilisez la [ **méthode** Set de la **MSFT_MpPreference**](/previous-versions/windows/desktop/defender/set-msft-mppreference) classe pour les propriétés suivantes :
+Utilisez la [ **méthode Set** de la **classe MSFT_MpPreference**](/previous-versions/windows/desktop/defender/set-msft-mppreference) pour les propriétés suivantes :
 
 ```WMI
 MAPSReporting
 SubmitSamplesConsent
 ```
 
-Pour plus d’informations sur les paramètres autorisés, [Windows Defender les API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Pour plus d’informations sur les paramètres autorisés, [voir Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>Activez la protection fournie par le cloud sur les clients individuels avec l’application Sécurité Windows cloud
+## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>Activer la protection cloud sur des clients individuels avec l’application Sécurité Windows cloud
 
 > [!NOTE]
-> Si le **paramètre local Configure remplace le paramètre de stratégie de groupe Microsoft MAPS** est défini sur **Désactivé,** le **paramètre de protection basé sur le Cloud** en Windows Paramètres sera grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
+> Si le paramètre Configurer le paramètre local de remplacement pour la création de rapports sur la stratégie de groupe **Microsoft MAPS** est **désactivé,** le paramètre de protection basée sur le **cloud** dans Windows Paramètres est grisé et indisponible. Les modifications apportées via un objet de stratégie de groupe doivent d’abord être déployées vers les points de terminaison individuels avant que le paramètre soit mis à jour dans les Paramètres Windows.
 
-1. Ouvrez l Sécurité Windows appe en sélectionnant l’icône bouclier dans la barre des tâches, ou en recherchant le menu de démarrage pour **Defender**.
+1. Ouvrez l’Sécurité Windows en sélectionnant l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
-2. Sélectionnez **la vignette de protection contre & virus** (ou l’icône bouclier sur la barre de menu gauche) puis **l’étiquette paramètres de protection contre les menaces virus &** :
+2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis l’étiquette **paramètres** de protection contre & virus :
 
     ![Capture d’écran de l’étiquette des paramètres de protection contre les virus et les menaces dans l’application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
 
-3. Confirmez que **la protection basée sur le Cloud** et la soumission automatique **de** l’échantillon sont commutées **à On**.
+3. Confirmez que **la protection basée sur le cloud et** **l’envoi** automatique d’échantillons sont **activés.**
 
 > [!NOTE]
-> Si la soumission automatique de l’échantillon a été configurée avec la stratégie de groupe, le paramètre sera grisé et indisponible.
+> Si l’envoi automatique d’échantillons a été configuré avec la stratégie de groupe, le paramètre est grisé et indisponible.
 
 ## <a name="related-articles"></a>Articles connexes
 
 - [Configurer le délai de blocage du cloud](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
-- [Configurer le bloc à première vue](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Configurer bloquer à la première vue](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 - [Utiliser des cmdlets PowerShell pour gérer l’antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Aider à sécuriser Windows PC avec Endpoint Protection pour Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
-- [Cmdlets defender](/powershell/module/defender/)
-- [Utilisez la protection microsoft cloud livrée dans Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
-- [Comment créer et déployer des stratégies antimalware : service de protection contre le Cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+- [Sécurisation de Windows PC avec Endpoint Protection pour Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
+- [Cmdlets Defender](/powershell/module/defender/)
+- [Utiliser la protection microsoft cloud dans Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+- [Comment créer et déployer des stratégies de logiciel anti-programme malveillant : service de protection cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

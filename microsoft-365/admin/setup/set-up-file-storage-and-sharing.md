@@ -46,7 +46,7 @@ Regardez une courte vidéo sur le stockage de fichiers dans le cloud Microsoft 
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
-## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 stockage et gestion de documents
+## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 de stockage et de gestion des documents
 
 - Nous avons conçu OneDrive pour un usage individuel et le partage occasionnel de fichiers.
 
@@ -205,10 +205,10 @@ Vous pouvez activer le stockage tiers pour permettre à vos utilisateurs dans Mi
 
   - [Configurer Office sur Windows Phone avec Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Ajouter de l’espace de stockage pour votre](../../commerce/add-storage-space.md) abonnement (article)
+[Ajouter de l’espace de stockage pour votre abonnement](../../commerce/add-storage-space.md) (article)
 
 [Partager des fichiers et des dossiers avec Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (vidéo)
 
-[Personnalisez le site de votre équipe pour le stockage et le partage de](customize-team-site.md) fichiers (article)
+[Personnaliser votre site d’équipe pour le stockage et le partage de fichiers](customize-team-site.md) (article)
