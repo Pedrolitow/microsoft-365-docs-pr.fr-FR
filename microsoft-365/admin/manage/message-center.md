@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Obtenez une vue d’Microsoft 365 centre de messages et son rôle dans la gestion des changements.
-ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Obtenez une vue d’ensemble Microsoft 365 centre de messages et son rôle dans le suivi des fonctionnalités nouvelles et modifiées et d’autres annonces importantes.
+ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537522"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593956"
 ---
 # <a name="message-center"></a>Centre de messages
 
@@ -58,17 +58,17 @@ Vous pouvez également utiliser [l’application Microsoft 365 admin](https://go
 Pour vous désabonner des e-mails du centre de messages, consultez [l’article Unsubscribe from Message center emails](#unsubscribe-from-message-center-emails) in this article.
 
   
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 |**Question**|**Réponse**|
 |:-----|:-----|
 |Qui pouvez-vous afficher les billets dans le Centre de messages ?  <br/> |La plupart des utilisateurs qui ont reçu un rôle d’administrateur dans Microsoft 365 peuvent afficher les billets du centre de messages. [Voici une liste des rôles](#admin-roles-that-dont-have-access-to-the-message-center) d’administrateur qui n’ont pas accès au centre de messages. Vous pouvez également attribuer le rôle de lecteur du centre de messages aux utilisateurs qui doivent pouvoir lire et partager des billets du Centre de messages sans disposer d’autres privilèges d’administrateur.<br/>|
 |Est-ce le seul moyen pour Microsoft de communiquer les modifications Microsoft 365 ?  <br/> |Non, mais le centre de messages est le principal moyen de communiquer le minutage des modifications individuelles dans Microsoft 365. Pour [plus d’informations sur les ressources supplémentaires, Microsoft 365 restez](stay-on-top-of-updates.md) au fait des modifications apportées.  <br/> |
 |Comment puis-je voir les billets dans ma langue ?  <br/> |Les publications du centre de messages sont écrites en anglais uniquement, mais vous pouvez contrôler si, par défaut, les publications sont affichées en anglais ou sont automatiquement traduites par machine dans votre langue préférée. Vous pouvez également choisir de traduire des billets par machine dans n’importe quelle langue prise en charge. Pour [plus d’informations,](language-translation-for-message-center-posts.md) voir Traduction linguistique pour les publications du centre de messages.  <br/> |
-|Puis-je prévisualiser les modifications ou les fonctionnalités avant qu’elles ne soient déployées dans mon organisation ?  <br/> |Certaines modifications et nouvelles fonctionnalités peuvent être prévisualiser en optant pour le programme de publication ciblée. Pour vous y rendre, dans le Centre d’administration, Paramètres paramètres de l’organisation - Préférences de publication  >    >    >  **du profil d’organisation.** (Dans le Centre d’administration,  vous devrez peut-être sélectionner Afficher tout en bas du volet de navigation gauche pour afficher **Paramètres.)** Vous pouvez choisir la version ciblée pour l’ensemble de votre organisation ou uniquement pour les utilisateurs sélectionnés. Pour plus [d’informations](release-options-in-office-365.md) sur le programme, voir les options de publication standard ou ciblée dans Microsoft 365'informations sur le programme.  <br/> |
+|Puis-je prévisualiser les modifications ou les fonctionnalités avant qu’elles ne soient déployées dans mon organisation ?  <br/> |Certaines modifications et nouvelles fonctionnalités peuvent être prévisualiser en optant pour le programme de publication ciblée. Pour vous y rendre, dans le Centre d’administration, Paramètres paramètres de l’organisation - Préférences de publication  >    >    >  **du profil d’organisation.** (Dans le Centre d’administration,  vous devrez peut-être sélectionner Afficher tout en bas du volet de navigation gauche pour afficher **Paramètres.)** Vous pouvez choisir la version ciblée pour l’ensemble de votre organisation ou uniquement pour les utilisateurs sélectionnés. Pour plus [d’informations](release-options-in-office-365.md) sur le programme, voir les options de publication standard Microsoft 365 ciblées.  <br/> |
 |Puis-je déterminer la date exacte à laquelle une modification sera disponible pour mon organisation ?  <br/> |Malheureusement, nous ne pouvons pas vous indiquer la date exacte à laquelle une modification sera apporté à votre organisation. Dans notre billet de centre de messages, nous fournirons autant d’informations que possible sur le minutage de la publication, en fonction de notre niveau de confiance. Nous travaillons sur des améliorations pour améliorer ce niveau de détail.  <br/> |
-|Ces messages sont-ils spécifiques à mon organisation ?  <br/> |Nous faisons de notre mieux pour vous assurer que seuls les billets du Centre de messages affectent votre organisation. La Microsoft 365 comprend toutes les fonctionnalités que nous travaillons actuellement et que nous allons déployer, mais toutes ces fonctionnalités ne s’appliquent pas à toutes les organisations. <br/> |
-|Puis-je recevoir des messages du centre de messages par courrier électronique à la place ?  <br/> |Oui. Vous pouvez choisir de vous envoyer un résumé hebdomadaire et jusqu’à deux autres adresses de messagerie. Le résumé hebdomadaire envoyé par courrier électronique est allumé par défaut. Si vous n’avez pas vos résumés hebdomadaires, vérifiez votre dossier de courrier indésirable. Pour plus [d’informations](#preferences) sur la façon de configurer le résumé hebdomadaire, voir la section Préférences de cet article.  <br/> |
+|Ces messages sont-ils spécifiques à mon organisation ?  <br/> |Nous faisons de notre mieux pour vous assurer que seuls les billets du Centre de messages affectent votre organisation. La Microsoft 365 comprend toutes les fonctionnalités que nous travaillons actuellement et que nous appliquons, mais toutes ces fonctionnalités ne s’appliquent pas à toutes les organisations. <br/> |
+|Puis-je recevoir des billets du centre de messages par courrier électronique à la place ?  <br/> |Oui. Vous pouvez choisir de vous envoyer un résumé hebdomadaire et jusqu’à deux autres adresses de messagerie. Le résumé hebdomadaire envoyé par courrier électronique est allumé par défaut. Si vous n’avez pas vos résumés hebdomadaires, vérifiez votre dossier de courrier indésirable. Pour plus [d’informations](#preferences) sur la façon de configurer le résumé hebdomadaire, voir la section Préférences de cet article.  <br/> |
 |Comment arrêter d’obtenir le résumé du centre de messages ?  <br/> |Go to Message center in the admin center and select **Preferences**. Dans **l’onglet Courrier** électronique, désactiver l’option **m’envoyer des notifications par courrier électronique à partir du centre de messages.**   <br/> |
 |Comment puis-je m’assurer que les notifications de confidentialité des données sont reçues par les contacts de mon organisation ? <br/> |En tant qu’administrateur global, vous recevrez des messages de confidentialité des données pour votre organisation. En outre, vous pouvez attribuer le rôle de lecteur confidentialité du Centre de messages aux personnes qui doivent voir les messages de confidentialité des données. Les autres rôles d’administrateur ayant accès au Centre de messages ne peuvent pas afficher les messages de confidentialité des données.   <br/><br/>Pour plus d’informations, voir [Préférences](#preferences) dans cet article.<br/> |
 |Pourquoi ne puis-je pas voir un message qui s’y trouvait précédemment ? <br/> |Pour gérer le nombre de messages dans le centre de messages, chaque message expire et est supprimé après un certain temps. En règle générale, les messages expirent 30 jours après la période décrite dans le corps du message. <br/> |
@@ -109,7 +109,7 @@ Vous pouvez sélectionner n’importe quel en-tête de colonne, sauf **Service**
 
 ### <a name="major-updates"></a>Mises à jour majeures
 
-Les mises à jour majeures  peuvent être examinées en sélectionnant la mise à jour majeure dans **la** liste des balises.
+Les mises à jour majeures peuvent être examinées en sélectionnant la mise à jour majeure **dans** **la** liste des balises.
 
 Les mises à jour majeures sont communiquées au moins 30 jours à l’avance lorsqu’une action est requise et peut inclure :
   
@@ -301,7 +301,7 @@ Pour une vue d’ensemble du Centre de messages, consultez [Centre de messages d
 
 2. Sélectionnez **Enregistrer** pour conserver vos modifications.<br/>
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Configurer les options de publication standard ou ciblée](../manage/release-options-in-office-365.md) (article)
 

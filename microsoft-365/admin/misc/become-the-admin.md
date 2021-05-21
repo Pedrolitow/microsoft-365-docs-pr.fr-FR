@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Découvrez comment vérifier la propriété de votre courrier électronique et de votre domaine pour prendre le contrôle d’un client non pris en charge dans Microsoft 365
-ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Découvrez comment vérifier la propriété de votre courrier électronique et de votre domaine pour prendre le contrôle d’un client non pris en charge créé par une inscription utilisateur en libre-service dans Microsoft 365.
+ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914845"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593932"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer une prise de contrôle d’administrateur interne
 
@@ -39,17 +39,17 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
 ## <a name="step-1-verify-your-email-address"></a>Étape 1 : Vérifier votre adresse de messagerie
 
 > [!NOTE]
-> Si le libre-service est activé dans votre client, les utilisateurs peuvent s’abonner à des services gratuits, tels que Power BI, eux-mêmes. Ces étapes supposent qu’un abonnement utilisateur libre-service a créé le client non pris en compte que vous souhaitez prendre en tant qu’administrateur. Dans la première étape, vous créez un contexte utilisateur dans le client non utilisé, à l’aide de Power BI pour illustrer le chemin d’accès de prise de contrôle de l’administrateur.
+> Si le libre-service est activé dans votre client, les utilisateurs peuvent s’abonner à des services gratuits, tels que Power BI, eux-mêmes. Ces étapes supposent qu’un abonnement utilisateur libre-service a créé le client non pris en compte que vous souhaitez prendre en tant qu’administrateur. Dans la première étape, vous créez un contexte utilisateur dans le client non Power BI pour illustrer le chemin d’accès de prise de contrôle de l’administrateur.
 
-1. Pour vous inscrire à Power BI, go to the [Power BI site](https://powerbi.com) and select Start **Free** Start  >  **free trial** (in Share with Power BI Pro box). 
+1. Pour vous inscrire à Power BI, allez sur le site  [Power BI et](https://powerbi.com) sélectionnez Démarrer l’essai gratuit gratuit (dans la zone Partager  >   avec Power BI Pro). 
 
 2. Inscrivez-vous avec un compte d’utilisateur qui utilise le nom de domaine de votre organisation (comme `powerbiadmin@contoso.com` ). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
 
-3. Recherchez le **code de vérification dans votre** courrier électronique et entrez-le pour valider votre adresse de messagerie.
+3. Recherchez le **code de vérification dans votre** courrier électronique et entrez le code pour valider votre adresse de messagerie.
     
 ## <a name="step-2-create-a-new-account"></a>Étape 2 : Créer un compte
 
-1. Lorsque vous entrez le code de vérification, vous êtes conduit à une page dans laquelle vous pouvez créer un compte. 
+1. Lorsque vous entrez le code de vérification, vous êtes amené à une page dans laquelle vous pouvez créer un compte. 
     
 2. Remplissez les champs nom d’utilisateur et mot de passe avec le compte que vous souhaitez utiliser, puis sélectionnez **Démarrer.** 
     
@@ -66,12 +66,12 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
 > [!NOTE]
 > Le fait de prendre le contrôle du client de secours n’aura aucun impact sur les informations ou les services existants. Toutefois, si des utilisateurs du domaine se sont inscrits aux services qui nécessitent une licence, vous serez invité à acheter des licences pour eux dans le cadre de la prise de contrôle du rôle d’administrateur. Vous pouvez acheter ou supprimer des licences une fois le processus de configuration de l’administrateur terminé.
   
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-YouTube : 3 étapes pour une prise de contrôle d’administrateur informatique [pour Power BI et Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube : [3 étapes pour une](https://www.youtube.com/watch?v=xt5EsrQBZZk) prise de contrôle d’administrateur informatique pour Power BI et Microsoft 365 (vidéo)
 
-[Prise de contrôle par l’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Prise de contrôle par l’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)
 
-[Utilisation de l’inscription en libre-service au sein de votre organisation](self-service-sign-up.md)
+[Utilisation de l’inscription en libre-service dans votre organisation](self-service-sign-up.md) (article)
   
-[Présentation du rôle d’administrateur de service Power BI](/power-bi/service-admin-role)
+[Understanding the Power BI service administrator role](/power-bi/service-admin-role) (article)

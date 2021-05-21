@@ -30,7 +30,7 @@
 |NOTES QUI COLLENT|N/A|N/A|N/A|N/A|Planifié|
 |STREAM|Planifié|Planifié|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|Planifié|
-|TEAMS|✔|✔|✔|Planifié|S/O|
+|TEAMS|✔|✔|✔|✔|S/O|
 |TO-DO|Planifié|Planifié|Planifié|S/O|Planifié|
 |VISIO|S/O|✔|S/O|Planifié|S/O|
 |TABLEAU BLANC|✔|Planifié|N/A|N/A|Planifié|

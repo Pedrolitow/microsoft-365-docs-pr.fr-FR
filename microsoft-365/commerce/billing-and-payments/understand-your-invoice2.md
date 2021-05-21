@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Découvrez comment interpréter les informations relatives aux frais, à la facturation et au paiement sur votre facture Microsoft 365 pour les entreprises, et comment modifier le numéro de bon de commande.
+description: Interpréter les frais, la facturation et les informations de paiement sur votre facture Microsoft 365 entreprise et comment modifier un numéro de bon de commande.
 ms.date: 05/04/2021
-ms.openlocfilehash: febcbdee563c18b3f17ee35b98f2d68b15f456d8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aa898f570fb17f2d9e2ebba769e285cb9d507c31
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535685"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593524"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -126,7 +126,7 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 1. En bas des **détails de** modification pour le paiement par volet vocal, entrez votre numéro de bon de commande, puis sélectionnez **Enregistrer.**
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Découvrez comment rechercher et afficher votre facture](view-your-bill-or-invoice.md) (article)
 
@@ -134,6 +134,6 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 [Modifier l’adresse de votre organisation, le courrier électronique du contact technique et d’autres informations](../../admin/manage/change-address-contact-and-more.md) (article)
 
-[Payer votre abonnement Microsoft 365 entreprise](pay-for-your-subscription.md) (article)\
+[Régler votre abonnement Microsoft 365 entreprise](pay-for-your-subscription.md) (article)
 
 [Options de paiement de Minecraft: Education Edition](/education/windows/school-get-minecraft) (article)

@@ -33,7 +33,7 @@
 |NOTES QUI COLLENT|N/A|N/A|N/A|N/A|✔|
 |STREAM|✔|✔|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|✔|
-|TEAMS|✔|✔|✔|Planifié|S/O|
+|TEAMS|✔|✔|✔|✔|S/O|
 |TO-DO|✔|✔|✔|S/O|✔|
 |VISIO|S/O|✔|S/O|✔|S/O|
 |TABLEAU BLANC|✔|Planifié|N/A|N/A|✔|

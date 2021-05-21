@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464404"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593920"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -35,7 +35,7 @@ Une déploiement centralisé offre les avantages suivants :
   
 - Un administrateur général peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
     
-- Lorsque l’application Office pertinente démarre, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
+- Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
     
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le éteint ou le supprime, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe à qui le module est affecté.
 
@@ -43,7 +43,7 @@ Le déploiement centralisé prend en charge trois plateformes de bureau Windows,
 
 L’ouverture d’un client pour tous les utilisateurs peut prendre jusqu’à 24 heures.
   
-## <a name="requirements"></a>Conditions requises
+## <a name="before-you-begin"></a>Avant de commencer
 
 Le déploiement centralisé des add-ins nécessite que les utilisateurs utilisent des références Microsoft 365 Entreprise : référenceS E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium (et sont inscrits à Office à l’aide de leur ID d’organisation) et ont des boîtes aux lettres Exchange Online et Exchange Online actives. Votre annuaire d’abonnement doit être dans ou fédéré pour Azure Active Directory.
 Vous pouvez afficher les exigences spécifiques Office et Exchange ci-dessous, ou utiliser le contrôle de compatibilité du déploiement [centralisé.](#centralized-deployment-compatibility-checker)
@@ -55,12 +55,12 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 - Déploiement de la mise en Exchange d’une boîte aux lettres sur place
 - le déploiement de compléments vers SharePoint ;  
 - Teams applications
-- Déploiement de composants COM (Component Object Model) ou de Visual Studio Tools pour Office (VSTO) de composants.
+- Déploiement de composants COM (Component Object Model) ou Visual Studio Tools pour Office (VSTO) de composants.
 - Déploiements de Microsoft 365 qui n’incluent pas de Exchange Online telles que les S SKUs : Microsoft 365 Apps for Business et Microsoft 365 Apps for Enterprise.
 
 ### <a name="office-requirements"></a>Office Conditions requises
 
-- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
+- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des valeurs suivantes :
   - Sur un appareil Windows, version 1704 ou ultérieure des références Microsoft 365 Entreprise : référenceS E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium.
   - Sur un Mac, version 15.34 ou ultérieure.
 
@@ -88,7 +88,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
   
 #### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
   
-1. Démarrez une fenêtre avec PowerShell.exe élevée.
+1. Démarrez une fenêtre PowerShell.exe avec élévation de PowerShell.exe.
     
 2. Exécutez la commande suivante :
 
@@ -101,7 +101,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_Les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
+   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
     
    > [!NOTE]
    > Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures. 
@@ -114,7 +114,7 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
     
 - Déploiement centralisé prêt - Si les autres éléments sont vérifiés
     
-- Office plan : le plan de Office leur licence
+- Office plan : le plan de Office dont ils sont titulaires d’une licence
     
 - Activation d'Office - Si l'utilisateur a activé Office
     
@@ -125,7 +125,7 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
   
 ## <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
 
-La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par les Azure Active Directory, y compris les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
+La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par les Azure Active Directory, notamment les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
   
 > [!NOTE]
 > Les groupes de sécurité sans extension messagerie ne sont pas actuellement pas pris en charge. 
@@ -158,7 +158,7 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-
 |Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ( [Découvrez comment](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clients riches (Windows, Mac)  <br/> | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)**  <br/> |
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Déployer des add-ins dans le Centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)
 

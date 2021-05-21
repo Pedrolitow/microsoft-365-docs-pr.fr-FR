@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9cb3cc67c3992773897ea8178f261d25dcd87da0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530837"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594148"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gérer les incidents dans Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "52530837"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 La gestion des incidents est essentielle pour s’assurer que les menaces sont contenues et traitées.
 
@@ -47,7 +47,7 @@ Voici comment gérer vos incidents :
 
 - [Modifier le nom de l’incident](#edit-the-incident-name)
 - [Ajouter des balises d’incident](#add-incident-tags)
-- [Affecter l’incident à un compte d’utilisateur](#assign-incidents)
+- [Affectez l’incident à vous-même](#assign-incidents)
 - [Résoudre les problèmes](#resolve-an-incident)
 - [Définir sa classification et sa détermination](#set-the-classification-and-determination)
 - [Ajouter des commentaires](#add-comments)
@@ -80,7 +80,15 @@ Lorsque vous commencez à taper, vous avez la possibilité de sélectionner des 
 
 ## <a name="assign-incidents"></a>Attribuer des incidents
 
-Si aucun incident n’a encore été affecté, vous pouvez sélectionner **Affecter** à et spécifier le compte d’utilisateur. Cette action affecte la propriété de l’incident et toutes les alertes qui lui sont associées.
+Pour affecter un incident, **sélectionnez Affecter à moi.** Cette action affecte la propriété de l’incident et toutes les alertes associées à votre compte d’utilisateur.
+
+Vous pouvez obtenir la liste des incidents qui vous sont attribués en filtrant la file d’attente des incidents. 
+
+1. Dans la file d’attente des incidents, sélectionnez **Filtres.**
+2. dans la section **Affectation de l’incident,** effacer Sélectionner **tout** et sélectionner Affecté à **moi.**
+3. **Sélectionnez** Appliquer, puis fermez le volet **Filtres.**
+
+Vous pouvez ensuite enregistrer l’URL résultante dans votre navigateur en tant que signet pour afficher rapidement la liste des incidents qui vous sont attribués.
 
 ## <a name="resolve-an-incident"></a>Résoudre un incident
 
@@ -98,7 +106,7 @@ S’il s’agissait d’une alerte réelle, vous devez également spécifier le 
 
 Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour les nouveaux incidents, commencez votre [enquête.](investigate-incidents.md)
 
