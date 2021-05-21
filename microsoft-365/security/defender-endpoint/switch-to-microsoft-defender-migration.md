@@ -1,5 +1,5 @@
 ---
-title: Passer d’une solution de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
+title: Passer de la protection de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
 description: Basculez vers Microsoft Defender pour le point de terminaison. Lisez cet article pour obtenir une vue d’ensemble.
 keywords: migration, protection avancée des points de terminaison Windows Defender, pour Endpoint, edr
 search.product: eADQiWindows 10XVcnh
@@ -19,23 +19,23 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 013205a1b5b9db204f626a6fe6ab76ad07378558
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538002"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593500"
 ---
-# <a name="make-the-switch-from-a-non-microsoft-endpoint-solution-to-microsoft-defender-for-endpoint"></a>Passer d’une solution de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
+# <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passer de la protection de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
 
-Si vous envisagez de passer d’une solution de protection de point de terminaison non-Microsoft à [Microsoft Defender pour](microsoft-defender-endpoint.md) point de terminaison (Defender pour point de terminaison), vous êtes au bon endroit. Utilisez cet article comme guide.
+Si vous envisagez de passer de votre protection de point de terminaison non-Microsoft à [Microsoft Defender pour le](microsoft-defender-endpoint.md) point de terminaison (Defender pour point de terminaison), vous êtes au bon endroit. Utilisez cet article comme guide.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Vue d’ensemble de la migration vers Defender pour le point de terminaison":::
 
-Lorsque vous passez à Defender pour point de terminaison, vous commencez par votre solution non-Microsoft en mode actif, configurez Defender pour Endpoint en mode passif, intégré à Defender pour point de terminaison, puis définissez Defender pour Point de terminaison sur le mode actif et supprimez la solution autre que Microsoft.
+Lorsque vous basculez vers Defender pour point de terminaison, vous commencez par votre solution non-Microsoft fonctionnant en mode actif, configurez Defender pour Endpoint en mode passif, intégré à Defender pour point de terminaison, définissez Defender pour Point de terminaison en mode actif, puis supprimez la solution non Microsoft.
 
 > [!TIP]
 > - Si vous utilisez actuellement Mc Antivirus Endpoint Security (Mc Antivirus), voir [Migrer de Mc Antivirus vers Defender pour Endpoint](mcafee-to-microsoft-defender-migration.md).
@@ -43,15 +43,15 @@ Lorsque vous passez à Defender pour point de terminaison, vous commencez par vo
 
 ## <a name="the-migration-process"></a>Processus de migration
 
-Lorsque vous basculez vers Defender pour le point de terminaison, vous suivez un processus qui peut être divisé en trois phases, comme décrit dans le tableau suivant :
+Le processus de migration vers Defender pour Point de terminaison peut être divisé en trois phases, comme décrit dans le tableau suivant :
 
 ![Phases de migration : préparer, configurer, intégrer](images/phase-diagrams/migration-phases.png)
 
 |Phase |Description |
 |--|--|
-|[Préparer votre migration](switch-to-microsoft-defender-prepare.md) |Pendant [la phase **de** préparation,](switch-to-microsoft-defender-prepare.md)vous mettez à jour les appareils de votre organisation, obtenez Defender pour le point de terminaison, planifiez vos rôles et autorisations et accordez l’accès au Centre de sécurité Microsoft Defender. Vous configurez également les paramètres proxy et Internet de votre appareil pour permettre la communication entre les appareils de votre organisation et Defender pour le point de terminaison. |
-|[Configurer Defender pour le point de terminaison](switch-to-microsoft-defender-setup.md) |Pendant [la phase **d’installation,**](switch-to-microsoft-defender-setup.md)vous activez Antivirus Microsoft Defender et définissez-le en mode passif. Vous configurez également les paramètres & exclusions pour Antivirus Microsoft Defender et votre solution de protection de point de terminaison existante. Ensuite, vous créez vos groupes d’appareils, collections et unités d’organisation. Enfin, vous configurez vos stratégies de logiciel anti-programme malveillant et vos paramètres de protection en temps réel.|
-|[Intégration à Defender pour le point de terminaison](switch-to-microsoft-defender-onboard.md) |Pendant la [phase **d’intégration,**](switch-to-microsoft-defender-onboard.md)vous intégrerez vos appareils à Defender pour endpoint, vérifiez que Antivirus Microsoft Defender est en cours d’exécution en mode passif et vérifiez que vos points de terminaison communiquent avec Defender pour Endpoint. Ensuite, vous désinstallez votre solution de protection de point de terminaison existante et assurez-vous que Defender pour le point de terminaison fonctionne correctement. |
+|[Préparer votre migration](switch-to-microsoft-defender-prepare.md) |Pendant [la phase **de** préparation](switch-to-microsoft-defender-prepare.md): <p>1. Mettez à jour les appareils de votre organisation. <p>2. Obtenir Defender pour le point de terminaison. <p>3. Planifiez vos rôles et autorisations et accordez l’accès au Centre de sécurité Microsoft Defender. <p>4. Configurez les paramètres proxy et Internet de votre appareil pour permettre la communication entre les appareils de votre organisation et Defender pour le point de terminaison. |
+|[Configurer Defender pour le point de terminaison](switch-to-microsoft-defender-setup.md) |Pendant [la phase **d’installation**](switch-to-microsoft-defender-setup.md): <p>1. Activez/réinstallez les Antivirus Microsoft Defender. <p>2. Configurez Defender pour endpoint. <p>3. Ajoutez Defender pour le point de terminaison à la liste d’exclusions de votre solution existante. <p>4. Ajoutez votre solution existante à la liste d’exclusions pour Antivirus Microsoft Defender. <p>5. Configurer vos groupes d’appareils, collections et unités d’organisation. <p>6. Configurez vos stratégies de logiciel anti-programme malveillant et les paramètres de protection en temps réel.|
+|[Intégration à Defender pour le point de terminaison](switch-to-microsoft-defender-onboard.md) |Pendant [la phase **d’intégration**](switch-to-microsoft-defender-onboard.md): <p>1. Intégrer vos appareils à Defender pour le point de terminaison. <p>2. Exécutez un test de détection. <p>3. Confirmez que la Antivirus Microsoft Defender est en cours d’exécution en mode passif. <p>4. Obtenir les mises à jour de Antivirus Microsoft Defender. <p>5. Désinstallez votre solution de protection de point de terminaison existante. <p>6. Assurez-vous que Defender pour le point de terminaison fonctionne correctement. |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Qu’est-ce qui est inclus dans Microsoft Defender pour le point de terminaison ?
 
@@ -66,7 +66,7 @@ Dans ce guide de migration, nous [](overview-endpoint-detection-response.md) nou
 | [Repérage avancé](advanced-hunting-overview.md) | Les fonctionnalités de recherche avancées permettent à votre équipe des opérations de sécurité de localiser des indicateurs et des entités de menaces connues ou potentielles. |
 | [Blocage et confinement comportementaux](behavioral-blocking-containment.md) | Les fonctionnalités de blocage du comportement et de contenu permettent d’identifier et d’arrêter les menaces, en fonction de leurs comportements et des arbre de traitement, même lorsque la menace a démarré l’exécution. |
 | [Examen et correction automatisés](automated-investigations.md) | Les fonctionnalités d’examen et de réponse automatisées examinent les alertes et prennent des mesures correctives immédiates pour résoudre les violations. |
-| [Service de recherche de menaces](microsoft-threat-experts.md) (Spécialistes des menaces Microsoft) | Les services de recherche de menace fournissent aux équipes des opérations de sécurité une surveillance et une analyse de niveau expert, et pour vous assurer que les menaces critiques ne sont pas manquées. |
+| [Service de recherche de menaces](microsoft-threat-experts.md) (Spécialistes des menaces Microsoft) | Les services de recherche de menace fournissent aux équipes des opérations de sécurité une analyse et une surveillance de niveau expert, et pour vous assurer que les menaces critiques ne sont pas manquées. |
 
 **Vous souhaitez en savoir plus ? Voir [Defender pour le point de terminaison.](microsoft-defender-endpoint.md)**
 

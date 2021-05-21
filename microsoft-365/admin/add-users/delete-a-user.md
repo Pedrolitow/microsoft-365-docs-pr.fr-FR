@@ -19,19 +19,19 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Découvrez comment supprimer un compte d’utilisateur. Décidez de l’utilisation du courrier électronique de l’utilisateur OneDrive contenu. Et décidez s’il faut conserver la licence de produit ou arrêter de payer pour elle.
-ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Découvrez comment supprimer un compte d’utilisateur et que faire avec le courrier électronique et le contenu OneDrive utilisateur et s’il faut conserver la licence de produit.
+ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535973"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593404"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
 **Vous recherchez comment supprimer votre *propre compte* Microsoft 365 utilisateur que vous utilisez au travail ou à l’école ? Contactez le support technique de votre entreprise ou de votre université pour suivre ces étapes à votre place.**
 
-## <a name="what-you-need-to-know-about-deleting-users"></a>Ce que vous devez savoir sur la suppression des utilisateurs
+## <a name="before-you-begin"></a>Avant de commencer
 
 - Seules les personnes qui [Microsoft 365 autorisations d’administrateur global](about-admin-roles.md) ou de gestion des utilisateurs pour l’entreprise ou l’établissement scolaire peuvent supprimer des comptes d’utilisateur.
 - Vous disposez de 30 jours pour [restaurer](restore-user.md) le compte avant que les données de l'utilisateur ne soient définitivement supprimées.
@@ -85,7 +85,7 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
   
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
 
 2. Sélectionnez les noms des utilisateurs que vous souhaitez supprimer, sélectionnez les trois points (autres actions), puis choisissez **Supprimer l’utilisateur.**
 
@@ -95,7 +95,7 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les noms des utilisateurs que vous souhaitez supprimer, puis dans le volet **Actions** en bloc, choisissez **Supprimer des utilisateurs.**
 
@@ -105,7 +105,7 @@ Avant de commencer, réfléchissez à ce que vous voulez faire avec le courrier 
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez les noms des utilisateurs que vous souhaitez supprimer, puis dans le volet **Actions** en bloc, choisissez **Supprimer des utilisateurs.**
 
@@ -169,14 +169,14 @@ Voici les problèmes les plus courants rencontrés par les utilisateurs lors de 
 
 **Voulez-vous supprimer des Microsoft 365 de votre ordinateur ? Go to [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).**
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Restaurer un utilisateur](restore-user.md)
+[Restaurer un utilisateur](restore-user.md) (article)
   
-[Supprimer définitivement une boîte aux lettres](/exchange/permanently-delete-a-mailbox-exchange-2013-help)
+[Supprimer définitivement une boîte aux lettres](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)
 
-[Supprimer un ancien employé d'Office 365](remove-former-employee.md)
+[Supprimer un ancien employé de Office 365](remove-former-employee.md) (article)
 
-[Ajouter un nouvel employé à Office 365](add-new-employee.md)
+[Ajouter un nouvel employé à Office 365](add-new-employee.md) (article)
 
-[Supprimer un compte d’utilisateur](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): utilisez ces instructions si votre entreprise utilise **Active Directory** qui se synchronise avec Azure AD. Vous ne pouvez pas utiliser Office 365.
+[Supprimer un compte d’utilisateur](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): utilisez ces instructions si votre entreprise utilise **Active Directory** qui se synchronise avec Azure AD. Vous ne pouvez pas utiliser Office 365. (article)

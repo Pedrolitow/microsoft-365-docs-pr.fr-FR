@@ -1,5 +1,5 @@
 ---
-title: Ajouter ou supprimer des membres de groupes Microsoft 365
+title: Ajouter ou supprimer des membres de Microsoft 365 groupes
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,20 +17,20 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans Microsoft 365'administration.
+ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907915"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593380"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Ajouter ou supprimer des membres de groupes Microsoft 365 à l’aide du Centre d’administration
 
-Dans Microsoft 365, les membres du groupe créent généralement leurs propres groupes, s’ajoutent aux groupes qu’ils souhaitent rejoindre ou sont invités par les propriétaires du groupe. Si la propriété du groupe change ou si vous déterminez qu’un membre doit être ajouté ou supprimé, en tant qu’administrateur, vous pouvez également effectuer cette modification. Seul un administrateur général, un administrateur Exchange, un administrateur de groupes ou un administrateur utilisateur peut apporter ces modifications. [Qu’est-ce qu’un groupe Microsoft 365 ?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+Dans Microsoft 365, les membres du groupe créent généralement leurs propres groupes, s’ajoutent aux groupes qu’ils souhaitent rejoindre ou sont invités par les propriétaires du groupe. Si la propriété du groupe change ou si vous déterminez qu’un membre doit être ajouté ou supprimé, en tant qu’administrateur, vous pouvez également effectuer cette modification. Seul un administrateur général, un administrateur Exchange, un administrateur de groupes ou un administrateur utilisateur peut apporter ces modifications. [Qu’est-ce qu Microsoft 365 groupe de travail ?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> Si vous n’êtes pas un administrateur, vous pouvez ajouter ou supprimer des membres à [l’aide d’Outlook.](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
+> Si vous n’êtes pas un administrateur, vous pouvez ajouter [ou supprimer](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)des membres à l’aide Outlook .
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Ajouter un membre à un groupe dans le Centre d’administration
 
@@ -109,14 +109,14 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 - [Attribuer un nouveau propriétaire à un groupe orphelin](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-## <a name="articles-about-managing-groups"></a>Articles sur la gestion de groupes
+## <a name="related-content"></a>Contenu associé
 
-- [Mettre à niveau les listes de distribution vers les groupes Microsoft 365 dans Outlook](../manage/upgrade-distribution-lists.md)
+[Mettre à niveau les listes](../manage/upgrade-distribution-lists.md) de distribution vers Microsoft 365 groupes dans Outlook (article)
 
-- [Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+[Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)
 
-- [Gérer l’accès invité dans les groupes Microsoft 365](manage-guest-access-in-groups.md)
+[Gérer l’accès invité dans Microsoft 365 groupes de travail](manage-guest-access-in-groups.md) (article)
 
-- [Gérer les groupes Microsoft 365 avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): cet article vous présente les cmdlets clés et fournit des exemples
+[Gérer Microsoft 365 groupes avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): cet article vous présente les cmdlets clés et fournit des exemples (article)
 
-- [Stratégie de noms de groupes Microsoft 365](../../solutions/groups-naming-policy.md)
+[Microsoft 365 de noms de groupes](../../solutions/groups-naming-policy.md) (article)
