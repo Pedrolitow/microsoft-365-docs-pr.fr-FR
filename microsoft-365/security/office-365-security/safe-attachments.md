@@ -20,12 +20,12 @@ ms.collection:
 description: Les administrateurs peuvent en savoir plus sur la fonctionnalité Pièces jointes sécurisées dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab3fd89c02186dfbdb6c9a3d754a4902d8b945f8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246379"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625004"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Pièces jointes sécurisées dans Microsoft Defender pour Office 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "52246379"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les pièces jointes sécurisées dans [Microsoft Defender](defender-for-office-365.md) pour Office 365 fournissent une couche de protection supplémentaire pour les pièces jointes de courrier électronique qui ont déjà été analysées par la protection anti-programme malveillant dans [Exchange Online Protection (EOP).](anti-malware-protection.md) Plus précisément, les pièces jointes sécurisées utilisent un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques avant qu’elles ne soit remis aux destinataires (processus appelé _détonation)._
+Les pièces jointes sécurisées dans [Microsoft Defender](defender-for-office-365.md) pour Office 365 fournissent une couche supplémentaire de protection pour les pièces jointes de courrier électronique qui ont déjà été analysées par la protection anti-programme malveillant dans [Exchange Online Protection (EOP).](anti-malware-protection.md) Plus précisément, les pièces jointes sécurisées utilisent un environnement virtuel pour vérifier les pièces jointes dans les messages électroniques avant qu’elles ne soit remis aux destinataires (processus appelé _détonation)._
 
 La protection des pièces jointes sécurisées pour les messages électroniques est contrôlée par les stratégies de pièces jointes sécurisées. Il n’existe aucune stratégie de pièces jointes sécurisées par défaut, donc pour obtenir la protection des pièces jointes sécurisées, vous devez créer une ou plusieurs stratégies de **pièces jointes sécurisées.** Pour obtenir des instructions, voir Configurer des stratégies de pièces [jointes sécurisées dans Defender pour Office 365](set-up-safe-attachments-policies.md).
 
@@ -50,10 +50,10 @@ Le tableau suivant décrit les scénarios de pièces jointes sécurisées dans l
 |Aucune stratégie de pièces jointes Microsoft 365 E5 pat n’a été configurée.|Pat n’est pas protégé par les pièces jointes sécurisées. <p> Un administrateur doit créer au moins une stratégie de pièces jointes sécurisées pour que la protection des pièces jointes sécurisées soit active. En outre, les conditions de la stratégie doivent inclure Pat si Pat doit être protégé par des pièces jointes sécurisées.|
 |L’organisation de Lee dispose d’une stratégie de pièces jointes sécurisées qui s’applique uniquement aux employés du service financier. Lee est membre du service des ventes.|Lee n’est pas protégé par les pièces jointes sécurisées. <p> Les employés du service financier sont protégés par des pièces jointes sécurisées, mais pas les employés des ventes (et les autres employés).|
 |Hier, un administrateur de l’organisation de Jean a créé une stratégie de pièces jointes sécurisées qui s’applique à tous les employés. Plus tôt dans la journée, Jean a reçu un message électronique qui inclut une pièce jointe.|Jean est protégé par des pièces jointes sécurisées. <p> En règle générale, l’application d’une nouvelle stratégie prend environ 30 minutes.|
-|L’organisation de Chris a des stratégies de pièces jointes sécurisées de longue date pour tous les membres de l’organisation. Chris reçoit un message électronique qui a une pièce jointe, puis le envoie à des destinataires externes.|Chis est protégé par les pièces jointes sécurisées. <p> Si les destinataires externes ont également des stratégies de pièces jointes sécurisées dans leur organisation, les messages transmis sont soumis à ces stratégies.|
+|L’organisation de Chris a des stratégies de pièces jointes sécurisées de longue date pour tous les membres de l’organisation. Chris reçoit un e-mail qui a une pièce jointe, puis le envoie à des destinataires externes.|Chis est protégé par des pièces jointes sécurisées. <p> Si les destinataires externes ont également des stratégies de pièces jointes sécurisées dans leur organisation, les messages transmis sont soumis à ces stratégies.|
 |
 
-L’analyse des pièces jointes sécurisées a lieu dans la même région que Microsoft 365 données personnelles. Pour plus d’informations sur la géographie du centre de données, voir [Où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All)
+L’analyse des pièces jointes sécurisées a lieu dans la même région que Microsoft 365 données de sécurité. Pour plus d’informations sur la géographie du centre de données, voir [Où se trouvent vos données ?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
 > Les fonctionnalités suivantes se trouvent dans les paramètres globaux des stratégies de pièces jointes sécurisées dans le Centre de sécurité & conformité. Toutefois, ces paramètres sont activés ou désactivés globalement et ne nécessitent pas de stratégies de pièces jointes sécurisées :
@@ -73,11 +73,11 @@ Cette section décrit les paramètres des stratégies de pièces jointes sécuri
 
   |Option|Effet|À utiliser lorsque vous souhaitez :|
   |---|---|---|
-  |**Désactivé**|Les pièces jointes ne sont pas analysées pour les programmes malveillants par les pièces jointes sécurisées. Les messages sont toujours analysés à la recherche de programmes malveillants par [la protection anti-programme malveillant dans EOP.](anti-malware-protection.md)|Désactiver l’analyse pour les destinataires sélectionnés. <p> Évitez les retards inutiles dans le routage du courrier interne. <p> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Vous ne devez utiliser cette option que pour désactiver l’analyse des pièces jointes fiables pour les destinataires qui reçoivent uniquement des messages d’expéditeurs fiables.**|
-  |**Moniteur**|Fournit des messages avec pièces jointes, puis suit ce qui se produit avec les programmes malveillants détectés. <p> La remise des messages sûrs peut être retardée en raison de l’analyse des pièces jointes sécurisées.|Découvrez où les programmes malveillants détectés sont détectés dans votre organisation.|
+  |**Désactivé**|Les pièces jointes ne sont pas analysées pour les programmes malveillants par les pièces jointes sécurisées. Les messages sont toujours analysés à la recherche de programmes malveillants par [la protection anti-programme malveillant dans EOP.](anti-malware-protection.md)|Désactiver l’analyse des destinataires sélectionnés. <p> Éviter les retards inutiles dans le routage du courrier interne. <p> **Cette option n’est pas recommandée pour la plupart des utilisateurs. Vous ne devez utiliser cette option que pour désactiver l’analyse des pièces jointes fiables pour les destinataires qui reçoivent uniquement des messages d’expéditeurs fiables.**|
+  |**Moniteur**|Fournit les messages avec pièces jointes, puis suit ce qui se produit avec les programmes malveillants détectés. <p> La remise des messages sûrs peut être retardée en raison de l’analyse des pièces jointes sécurisées.|Découvrez où les programmes malveillants détectés sont détectés dans votre organisation.|
   |**Bloquer**|Empêche la livraison des messages avec des pièces jointes de programmes malveillants détectés. <p> Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (et non les utilisateurs finaux) peuvent examiner, libérer ou supprimer les messages. <p> Bloque automatiquement les instances futures des messages et pièces jointes. <p> La remise des messages sûrs peut être retardée en raison de l’analyse des pièces jointes sécurisées.|Protège votre organisation contre les attaques répétées à l’aide des mêmes pièces jointes de programmes malveillants. <p> Il s’agit de la valeur par défaut et de la valeur recommandée dans les stratégies de sécurité standard [et](preset-security-policies.md)stricte.|
   |**Replace**|Supprime les pièces jointes de programmes malveillants détectés. <p> Informe les destinataires que les pièces jointes ont été supprimées. <p>  Les messages sont [mis en quarantaine](manage-quarantined-messages-and-files.md) lorsque seuls les administrateurs (et non les utilisateurs finaux) peuvent examiner, libérer ou supprimer les messages. <p> La remise des messages sûrs peut être retardée en raison de l’analyse des pièces jointes sécurisées.|Augmenter la visibilité pour les destinataires que les pièces jointes ont été supprimées en raison de programmes malveillants détectés.|
-  |**Remise dynamique**|Remettre les messages immédiatement, mais remplace les pièces jointes par des espaces réservé jusqu’à ce que l’analyse des pièces jointes sécurisées soit terminée. <p> Pour plus d’informations, voir la section Remise dynamique dans les stratégies de pièces [jointes sécurisées](#dynamic-delivery-in-safe-attachments-policies) plus loin dans cet article.|Évitez les retards de messages tout en protégeant les destinataires contre les fichiers malveillants. <p> Permettre aux destinataires d’afficher un aperçu des pièces jointes en mode sans échec pendant l’analyse.|
+  |**Remise dynamique**|Remettre les messages immédiatement, mais remplace les pièces jointes par des espaces réservé jusqu’à ce que l’analyse des pièces jointes sécurisées soit terminée. <p> Pour plus d’informations, voir la section Remise dynamique dans les [stratégies de pièces jointes sécurisées](#dynamic-delivery-in-safe-attachments-policies) plus loin dans cet article.|Évitez les retards de messages tout en protégeant les destinataires contre les fichiers malveillants. <p> Permettre aux destinataires d’afficher un aperçu des pièces jointes en mode sans échec pendant l’analyse.|
   |
 
 - Rediriger la pièce jointe lors de la détection : activez la **redirection** et envoyez la pièce jointe à l’adresse de messagerie suivante : Pour **bloquer,** surveiller ou remplacer **des** actions, envoyez des messages contenant des pièces jointes contenant des programmes malveillants à l’adresse de messagerie interne ou externe spécifiée pour analyse et examen.
@@ -108,12 +108,12 @@ Si une pièce jointe est malveillante, le message est mis en quarantaine. Seuls 
 
 La plupart des fichiers PDF et Office documents peuvent être prévisualiser en mode sans échec lorsque l’analyse des pièces jointes sécurisées est en cours. Si une pièce jointe n’est pas compatible avec l’aperçu de remise dynamique, les destinataires voient un espace réservé pour la pièce jointe jusqu’à ce que l’analyse des pièces jointes sécurisées soit terminée.
 
-Si vous utilisez un appareil mobile et que les FDV ne sont pas rendus dans l’aperçu de remise dynamique sur votre appareil mobile, essayez d’ouvrir le message dans Outlook sur le web (anciennement Outlook Web App) à l’aide de votre navigateur mobile.
+Si vous utilisez un appareil mobile et que les FDF ne sont pas rendus dans l’aperçu de remise dynamique sur votre appareil mobile, essayez d’ouvrir le message dans Outlook sur le web (anciennement Outlook Web App) à l’aide de votre navigateur mobile.
 
 Voici quelques considérations pour la remise dynamique et les messages transmis :
 
 - Si le destinataire transmis est protégé par une stratégie de pièces jointes sécurisées qui utilise l’option De remise dynamique, le destinataire voit l’espace réservé, avec la possibilité d’afficher un aperçu des fichiers compatibles.
-- Si le destinataire transmis n’est pas protégé par une stratégie de pièces jointes sécurisées, le message et les pièces jointes sont remis sans analyse des pièces jointes ou espaces de pièces jointes.
+- Si le destinataire transmis n’est pas protégé par une stratégie de pièces jointes sécurisées, le message et les pièces jointes sont remis sans analyse des pièces jointes sécurisées ou espaces réservé aux pièces jointes.
 
 Dans certains cas, la remise dynamique ne peut pas remplacer les pièces jointes dans les messages. Ces différents cas de figure sont présentés ci-dessous :
 
@@ -124,8 +124,8 @@ Dans certains cas, la remise dynamique ne peut pas remplacer les pièces jointes
 - Messages supprimés.
 - Le dossier de recherche de boîte aux lettres de l’utilisateur est dans un état d’erreur.
 - Exchange Online organisations où le Lanceur est activé. Pour résoudre ce problème, voir [KB4014438](https://support.microsoft.com/help/4014438).
-- [S/MIME)](s-mime-for-message-signing-and-encryption.md) messages chiffrés.
-- Vous avez configuré l’action de remise dynamique dans une stratégie de pièces jointes sécurisées, mais le destinataire ne prend pas en charge la remise dynamique (par exemple, le destinataire est une boîte aux lettres dans une organisation Exchange local). Toutefois, les liens sécurisés dans [Microsoft Defender](set-up-safe-links-policies.md) pour Office 365 peuvent analyser les pièces jointes de Office qui contiennent des URL (selon la configuration des [paramètres](configure-global-settings-for-safe-links.md) globaux des liens sécurisés).
+- [S/MIME)](/exchange/security-and-compliance/smime-exo/smime-exo) messages chiffrés.
+- Vous avez configuré l’action de remise dynamique dans une stratégie de pièces jointes sécurisées, mais le destinataire ne prend pas en charge la remise dynamique (par exemple, le destinataire est une boîte aux lettres dans une organisation Exchange local). Toutefois, les liens sécurisés dans [Microsoft Defender](set-up-safe-links-policies.md) pour Office 365 peuvent analyser les pièces jointes de Office contenant des URL (selon la configuration des [paramètres](configure-global-settings-for-safe-links.md) globaux des liens sécurisés).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Envoi de fichiers pour l’analyse des programmes malveillants
 

@@ -13,12 +13,12 @@ ms.collection:
 description: Découvrez comment signaler les faux positifs et les faux négatifs dans Outlook à l’aide de la fonctionnalité Signaler un message.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e848595035501f5da7b6099efd2700ebac6f17e3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291162"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625112"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Signaler les faux positifs et les faux négatifs dans Outlook
 
@@ -32,7 +32,7 @@ ms.locfileid: "52291162"
 > [!NOTE]
 > Si vous êtes un administrateur d’une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail Soumissions dans le Centre de sécurité & conformité. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou locales utilisant l’authentification moderne hybride, vous pouvez envoyer des faux positifs (messages électroniques de qualité bloqués ou envoyés à un dossier de courrier indésirable) et des faux négatifs (courrier indésirable ou hameçonnage qui a été remis à la boîte de réception) à Exchange Online Protection (EOP).
+Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou locales utilisant l’authentification moderne hybride, vous pouvez envoyer des faux positifs (messages électroniques de qualité bloqués ou envoyés à un dossier indésirable) et des faux négatifs (courrier indésirable ou hameçonnage remis à la boîte de réception) à Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -44,18 +44,18 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Onli
 
 - Vous pouvez configurer pour envoyer des messages directement à Microsoft, une boîte aux lettres que vous spécifiez ou les deux. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
 
-- Pour plus d’informations sur la façon d’obtenir et d’activer le message de rapport ou les add-ins De hameçonnage de rapport, voir Activer le [message](enable-the-report-message-add-in.md)de rapport ou les rapports de hameçonnage.
+- Pour plus d’informations sur la façon d’obtenir et d’activer le message de rapport ou les add-ins Signaler le hameçonnage, voir Activer le message de rapport ou les [add-ins](enable-the-report-message-add-in.md)Signaler le hameçonnage.
 
 - Pour plus d’informations sur la notification des messages à Microsoft, voir [Signaler des messages et des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-## <a name="use-the-report-message-feature"></a>Utiliser la fonctionnalité Message de rapport
+## <a name="use-the-report-message-feature"></a>Utiliser la fonctionnalité Signaler un message
 
 ### <a name="report-junk-and-phishing-messages"></a>Signaler les messages de courrier indésirable et de hameçonnage
 
 Pour les messages dans la boîte de réception ou tout autre dossier de courrier électronique à l’exception du courrier indésirable, utilisez la méthode suivante pour signaler le courrier indésirable et les messages de hameçonnage :
 
 1. Cliquez sur les **ellipses** Autres actions dans le coin supérieur droit du message sélectionné,  cliquez sur Signaler **le message** dans le menu déroulant, puis sélectionnez Courrier indésirable ou **Hameçonnage.**
-  
+
    > [!div class="mx-imgBorder"]
    > ![Message de rapport - Plus d’actions](../../media/report-message-more-actions.png)
 
@@ -67,10 +67,10 @@ Pour les messages dans la boîte de réception ou tout autre dossier de courrier
    - Déplacé vers le dossier Courrier indésirable s’il a été signalé comme courrier indésirable.
 
    - Supprimé s’il a été signalé comme hameçonnage.
-   
+
 ### <a name="report-messages-that-are-not-junk"></a>Signaler les messages qui ne sont pas indésirables
 
-1. Cliquez sur les ellipses Autres **actions** dans le coin supérieur droit du message sélectionné, cliquez sur Signaler **le message** dans le menu déroulant, puis cliquez sur Non indésirable **.**  
+1. Cliquez sur les ellipses Autres **actions** dans le coin supérieur droit du message sélectionné, cliquez sur Signaler **le message** dans le menu déroulant, puis cliquez sur Non indésirable **.**
 
    > [!div class="mx-imgBorder"]
    > ![Message de rapport - Plus d’actions](../../media/report-message-more-actions.png)
@@ -86,4 +86,4 @@ Pour passer en revue les messages que les utilisateurs signalent à Microsoft, v
 
 - Utilisez le portail Soumissions d’administrateur. Pour plus d’informations, voir [Afficher les soumissions d’utilisateurs à Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)
 
-- Créez une règle de flux de messagerie (également appelée règle de transport) pour envoyer des copies des messages signalés. Pour obtenir des instructions, voir Utiliser des règles de flux de messagerie pour voir ce [que vos utilisateurs rapportent à Microsoft.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
+- Créez une règle de flux de messagerie (également appelée règle de transport) pour envoyer des copies des messages signalés. Pour obtenir des instructions, voir Utiliser des règles de flux de messagerie pour voir les rapports [des utilisateurs à Microsoft.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)

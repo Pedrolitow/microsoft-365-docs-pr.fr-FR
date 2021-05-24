@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations de hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bebc094b56a20a43f92d1acf8d374110de43d71
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0e4e230fdca7fe29fc1c7a1bc68085454ba883b9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594120"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624788"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -107,6 +107,6 @@ Outre les deux scénarios que la stratégie de remise avancée peut vous aider, 
 
 - **Filtres tiers**: si l’enregistrement MX de votre domaine ne pointe pas vers Office 365 (les messages sont d’abord acheminés [ailleurs),](secure-by-default.md) la sécurité par défaut *n’est* *pas disponible.*
 
-  Pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers, utilisez des règles de flux de messagerie (également appelées règles de transport), voir Utiliser des règles de flux de messagerie pour définir le SCL dans les [messages.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+  Pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers, utilisez des règles de flux de messagerie (également appelées règles de transport), voir Utiliser des règles de flux de messagerie pour définir le SCL dans les [messages.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 
 - **Faux positifs** en cours d’examen : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft via des [envois](admin-submission.md) d’administrateur à signaler les messages de bonne qualité connus qui sont marqués à tort comme incorrects pour Microsoft (faux positifs). Comme pour toutes les substitutions, il est vivement recommandé **_d’annuler_** temporairement ces allocations.

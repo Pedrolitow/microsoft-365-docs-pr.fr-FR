@@ -25,16 +25,16 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils sont prêts à être utilisés par les employés.
-ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578524"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623670"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 
-Vous pouvez utiliser Windows AutoPilot pour configurer de nouveaux appareils **Windows** 10 pour votre entreprise afin qu’ils sont prêts à être utilisés lorsque vous les donnez à vos employés.
+Vous pouvez utiliser Windows AutoPilot pour configurer de nouveaux appareils **Windows 10** pour votre entreprise afin qu’ils sont prêts à être utilisés lorsque vous les donnez à vos employés.
   
 ## <a name="device-requirements"></a>Configuration requise de l’appareil
 
@@ -42,7 +42,7 @@ Les appareils doivent répondre aux exigences ci-après :
   
 - Windows 10, version 1703 ou ultérieure
     
-- Nouveaux appareils qui n’ont pas fait l’expérience d’utilisation de Windows out-of-box
+- Nouveaux appareils qui n’ont pas été Windows l’expérience pré-out-of-box
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Utiliser le guide de configuration pour créer des appareils et des profils
 
@@ -60,7 +60,7 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Dans la page **Télécharger le fichier .csv** avec la liste des appareils, accédez à un emplacement où vous avez préparé . Fichier CSV, puis **Ouvrir** \> **suivant**. Le fichier doit avoir trois en-têtes :
+3. Sur la page **Télécharger .csv** avec la liste des appareils, accédez à un emplacement où vous avez préparé le fichier .CSV, puis **Ouvrez** \> **suivant**. Le fichier doit avoir trois en-têtes :
     
     - Colonne A : Numéro de série de l'appareil
     
@@ -73,7 +73,7 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     Pour plus d'informations, voir [Fichier CSV de liste d'appareils](../admin/misc/device-list.md). Vous pouvez également télécharger un exemple de fichier sur la page **Charger un fichier .csv avec la liste des appareils**. 
     
 > [!NOTE]
-> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil avec Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit Windows (PKID), car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID étant NULL dans le fichier CSV de sortie est parfaitement correct. Seuls le numéro de série et le hachage matériel seront remplis.
+> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit (PKID) Windows, car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID null dans le fichier CSV de sortie est totalement correct. Seuls le numéro de série et le hachage matériel seront remplis.
     
 4. Dans la page **Attribuer un profil,** vous pouvez choisir un profil existant ou en créer un nouveau. Si vous n’en avez pas encore, vous serez invité à en créer un. 
     
@@ -85,7 +85,7 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     
     - Créez une expérience de connexion avec l'identité de votre entreprise.
     
-    - Connectez vos appareils à des comptes Azure Active Directory et inscrivez-les automatiquement pour qu’ils soient gérés par Microsoft 365 Business Premium.
+    - Connecter vos appareils pour Azure Active Directory comptes et les inscrire automatiquement pour qu’ils soient gérés par Microsoft 365 Business Premium.
     
     Pour plus d’informations, voir à propos des paramètres de [profil AutoPilot.](autopilot-profile-settings.md) 
     
@@ -94,3 +94,8 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     Sélectionnez **Suivant**.
     
 6. Vous avez terminé d’indiquer que le profil que vous avez créé (ou choisi) sera appliqué au groupe **d’appareils** que vous avez créé en téléchargeant la liste des appareils. Les paramètres seront en vigueur lorsque les utilisateurs de l’appareil se connectent ensuite. Sélectionnez **Fermer**.
+
+## <a name="related-content"></a>Contenu associé
+
+[À propos des paramètres de profil AutoPilot](autopilot-profile-settings.md) (article)\
+[Options de protection de vos appareils et données d’application](../admin/devices/choose-device-security.md) (article)

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez les meilleures pratiques pour gérer les nombreuses rubriques de votre organisation à l’aide de Topics.
-ms.openlocfilehash: d5cdae62cdec9193d354e7585364bd842a514a26
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593876"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624836"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Gérer les rubriques à grande échelle dans les rubriques microsoft
 
@@ -28,15 +28,16 @@ Tout d’abord, un rappel des [quatre étapes pour les rubriques](manage-topics.
 
 - **Suggérée** : une rubrique a été identifiée par l’IA et dispose de ressources de prise en charge, de connexions et de propriétés suffisantes. (Ils sont marqués comme **sujet suggéré dans** l’interface utilisateur.)
 
-- **Confirmé :** une rubrique suggérée par l’IA doit être validée. La validation de rubrique se produit dans les cas suivants :
+- **Confirmé :** rubrique qui a été découverte par l’IA et qui a été validée. La validation de rubrique se produit dans les cas suivants :
 
    - Un gestionnaire de connaissances confirme une rubrique. Un gestionnaire de [connaissances confirme une rubrique dans](manage-topics.md#confirmed-topics) la page Gérer les **rubriques.**
 
    - Plusieurs utilisateurs confirment une rubrique. Il doit y avoir un net de deux votes positifs reçus des utilisateurs qui ont voter à l’aide du mécanisme de commentaires sur la carte de sujet. Par exemple, si un utilisateur a exprimé un vote positif et un utilisateur a exprimé un vote négatif pour une rubrique particulière, vous aurez toujours besoin de deux autres votes positifs pour que la rubrique soit confirmée.
  
-- **Publié**: une rubrique confirmée qui a été organisée. Des modifications manuelles ont été réalisées pour améliorer sa qualité.
+- **Publié**: une rubrique qui a été organisée. Des modifications manuelles ont été réalisées pour améliorer sa qualité ou ont été créées par un utilisateur.
 
 - **Supprimé :** sujet qui a été rejeté et qui n’est plus visible pour les visiteurs. Une rubrique peut être supprimée dans n’importe quel état (suggéré, confirmé ou publié). La suppression d’un sujet se produit dans les cas suivants :
+
    - Un gestionnaire de connaissances supprime une rubrique. Un gestionnaire de connaissances supprime une rubrique dans la page **Gérer les rubriques.**
 
    - Plusieurs utilisateurs ont exprimé des votes négatifs à l’aide du mécanisme de commentaires sur la carte de sujet. Pour qu’une rubrique soit supprimée, il doit y avoir un net de deux votes négatifs reçus des utilisateurs. Par exemple, si un utilisateur a exprimé un vote négatif et un utilisateur a exprimé un vote positif pour une rubrique particulière, vous aurez besoin de deux autres votes négatifs pour que la rubrique soit supprimée.
@@ -67,7 +68,7 @@ Cet article fournit des conseils et des meilleures pratiques pour aborder la ges
 
 Lorsque des rubriques sont découvertes par l’IA, elles sont marquées comme sujet **suggéré,** à la fois dans la page Gérer les rubriques et dans les fiches de rubrique présentées aux **utilisateurs.** Toute rubrique qui n’a pas été marquée comme supprimée s’affiche pour les utilisateurs , y compris les rubriques confirmées, publiées et suggérées. Les rubriques des trois états sont disponibles pour les utilisateurs finaux.
 
-Dans une carte ou une page de rubrique, nous utilisons différents signaux pour montrer comment l’IA a généré les informations. Le système utilise diverses preuves pour ajouter les ressources, principalement par le biais du contenu lui-même.
+Dans une carte de rubrique ou une page, nous utilisons différents signaux pour montrer comment l’IA a généré les informations. Le système utilise diverses preuves pour ajouter les ressources, principalement par le biais du contenu lui-même.
 
 - Les étiquettes indiquent qu’une rubrique est suggérée et qu’elle a été découverte par Topics.  
 
@@ -75,9 +76,9 @@ Dans une carte ou une page de rubrique, nous utilisons différents signaux pour 
 
 - Les informations sur la carte indiquent d’où vient une définition en spécifiant sa source.
 
-- Les personnes suggérées sont dérivées en agrégeant les personnes qui ont écrit ou modifié des documents avec des preuves de sujet. Si une personne écrit un document dont le titre contient un nom de sujet et que ce document possède de nombreux affichages, un seul document peut être nécessaire pour établir la personne comme étant liée. Toutefois, dans de nombreux cas, il est préférable d’avoir plus de preuves et les personnes répertoriées ont travaillé sur plusieurs documents.  
+- Les personnes suggérées sont dérivées en agrégeant les personnes qui ont écrit ou modifié des documents avec des preuves de sujet. Si une personne écrit un document dont le titre contient un nom de sujet et que ce document possède de nombreuses vues, il se peut qu’un seul document soit nécessaire pour établir la personne comme étant liée. Toutefois, dans de nombreux cas, il est préférable d’avoir plus de preuves et les personnes répertoriées ont travaillé sur plusieurs documents.  
 
-   ![Page présentant une rubrique suggérée et inclut des personnes, des fichiers et des pages suggérés.](../media/knowledge-management/scale-topics-sample-page-suggested-topic.png)
+   ![Page montrant une rubrique suggérée et inclut des personnes, des fichiers et des pages suggérés.](../media/knowledge-management/scale-topics-sample-page-suggested-topic.png)
 
 - Pour les fichiers et les pages affichés, le système identifie le nombre de fois que la rubrique a été mentionnée dans le document, mais la rubrique doit également être mentionnée dans un contexte spécifique qui identifie la référence à la rubrique de type spécifique (par exemple, projet ou équipe). C’est ce qui compte comme preuve pour l’IA. Le système considère également l’occurrence d’un nom de rubrique dans les titres des documents, les types de documents et d’autres fonctionnalités d’analyse (telles que les affichages).
 
@@ -93,7 +94,7 @@ Ces attributs montrent que le contenu a été ajouté par l’IA et comment l’
 
 Lorsque vous communiquez à vos utilisateurs à propos de Rubriques Sous, il est important de clarifier la différence entre les rubriques suggérées par l’IA et le contenu et leurs équivalents organisés.
 
-En tant que lecteur, vous devez afficher les rubriques suggérées avec un œil plus critique. Elles ne doivent pas être perçues comme des sources faisant autorité de la réalité organisationnelle. Au lieu de cela, il s’agit d’un outil de recherche permettant d’accéder à la connaissance d’ensemble qui est présentée par le biais du contenu que vous avez accès. L’IA a découvert la rubrique et dispose de suffisamment de preuves pour vous le montrer, mais sa valeur n’a pas été confirmée par une personne.
+En tant que lecteur, vous devez afficher les rubriques suggérées avec un œil plus critique. Elles ne doivent pas être perçues comme des sources faisant autorité de la réalité organisationnelle. Au lieu de cela, il s’agit d’un outil de recherche permettant d’accéder à la connaissance d’ensemble qui est présentée par le biais du contenu à qui vous avez accès. L’IA a découvert la rubrique et dispose de suffisamment de preuves pour vous le montrer, mais sa valeur n’a pas été confirmée par une personne.
 
 ### <a name="crowdsourced-controls"></a>Contrôles de masse
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Les déplacements de données sont des opérations de base qui se produisent lorsque Microsoft déplace les services et les données associées de votre client vers une nouvelle géo de centres de données.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14563a695e5c092f9bddfbdfdcb758f90cea32c0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929419"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625256"
 ---
 # <a name="during-and-after-your-data-move"></a>Pendant et après le déplacement de vos données
 
@@ -30,7 +30,7 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Regardez le Centre de messages Microsoft 365 pour confirmer que les déplacements pour chaque service de conversation Exchange Online, SharePoint Online et Teams sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géo de centres de données.   
+Regardez le centre Microsoft 365 message de confirmation lorsque les déplacements pour chacun des services Exchange Online, SharePoint Online et Teams de conversation sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géographique de centre de données.   
 
 |**Clients dont le pays d’inscription est**|**Tous les déplacements terminés d'ici le**|
 |:-----|:-----|
@@ -59,7 +59,7 @@ Certains utilisateurs ouvrent un dossier de messagerie partagé à partir d'une 
 |**Configuration**|**Description**|
 |:-----|:-----|
 |L'utilisateur dispose d'autorisations de dossier de boîte aux lettres sur une autre boîte aux lettres  <br/> |Potentiellement limité.  <br/> Si l'utilisateur A et la boîte aux lettres B ne se trouvent pas dans la même zone géographique lors du déplacement de client, l'utilisateur A ne peut pas ouvrir le dossier la boîte aux lettres B dans Outlook Web Access s'il n'a de droit d'accès que pour un dossier spécifique de la boîte aux lettres B.  <br/> Pour ajouter un dossier partagé, cliquez avec le bouton droit de la souris sur le nom d'utilisateur dans le volet de navigation gauche, puis sélectionnez **Ajouter un dossier partagé**.  <br/> |
-|Utilisateur disposant de droits d’accès complets sur une autre boîte aux lettres  <br/> |Entièrement pris en charge  <br/> Si l’utilisateur A dispose de l’autorisation « Accès total » pour la boîte aux lettres B, l’utilisateur A peut cliquer sur le dossier partagé dans le panneau de navigation gauche de Outlook Web Access pour ouvrir une fenêtre affichant la boîte aux lettres B.  Un utilisateur peut ouvrir une boîte aux lettres partagée à l’Outlook Web Access pendant le déplacement sans aucun impact négatif. La limitation s’applique uniquement au partage au niveau du dossier dans une boîte aux lettres.           |
+|Utilisateur disposant de droits d’accès complets sur une autre boîte aux lettres  <br/> |Entièrement pris en charge  <br/> Si l’utilisateur A dispose de l’autorisation « Accès total » à la boîte aux lettres B, l’utilisateur A peut cliquer sur le dossier partagé dans le panneau de navigation gauche de Outlook Web Access pour ouvrir une fenêtre affichant la boîte aux lettres B.  Un utilisateur peut ouvrir une boîte aux lettres partagée à l’Outlook Web Access pendant le déplacement sans aucun impact négatif. La limitation s’applique uniquement au partage au niveau du dossier dans une boîte aux lettres.           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
@@ -67,17 +67,17 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
   
 - OneDrive Entreprise
     
-- Services vidéo Microsoft 365
+- Microsoft 365 Services vidéo
     
 - Office dans un navigateur
     
-- Applications Microsoft 365 pour les grandes entreprises
+- Microsoft 365 Apps for enterprise
     
 - Visio Pro pour Microsoft 365
     
 Une fois que nous aurons déplacé vos données SharePoint Online, vous pourrez éventuellement observer certains des effets suivants.
   
-### <a name="microsoft-365-video-services"></a>Services vidéo Microsoft 365
+### <a name="microsoft-365-video-services"></a>Microsoft 365 Services vidéo
 
 - Le déplacement de vidéos prend plus de temps que le déplacement d'autres contenus dans SharePoint Online.
     
@@ -103,20 +103,22 @@ Les fonctionnalités de recherche suivantes sont concernées :
     
 - Protection contre la perte de données (DLP) : Les politiques ne sont pas appliquées sur les éléments qui changent avant que l’analyse n’ait récupéré les modifications.
 
+Dans le cadre de la migration, la région par défaut change et tout le nouveau contenu est stocké au repos dans la nouvelle région par défaut. Le contenu existant se déplace en arrière-plan sans impact sur vous pendant 90 jours après la première modification de l’emplacement des données SharePoint Online dans le Centre d’administration.
+
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Outre Exchange Online, SharePoint Online et OneDrive Entreprise, Microsoft migre les données du service de conversation Teams vers le centre de données local.
+En plus de Exchange Online, SharePoint Online et OneDrive Entreprise, Microsoft migrera Teams données de service de conversation vers le centre de données local.
 
-- Messages de conversation Teams, y compris les messages privés et les messages de canal.
-- Images Teams utilisées dans les conversations.
+- Teams messages de conversation, y compris les messages privés et les messages de canal.
+- Teams images utilisées dans les conversations.
 
-Les fichiers Teams sont stockés dans SharePoint Online et les fichiers de conversation Teams sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique des conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la région du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
+Teams fichiers sont stockés dans SharePoint Online et Teams de conversation sont stockés dans OneDrive Entreprise. La messagerie vocale, le calendrier, l’historique des conversation et les contacts sont stockés dans Exchange Online. Dans de nombreux cas, Exchange Online, SharePoint Online et OneDrive Entreprise sont déjà utilisés par le client dans la région du centre de données local et font également partie du programme de migration Microsoft 365 pour les pays clients éligibles.
 
 ## <a name="skype-for-business"></a>Skype Entreprise
 
-Les déplacements Skype Entreprise ne sont plus disponibles.  [Skype Entreprise Online sera retiré](/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette période, le service n’est plus accessible. 
+Skype Entreprise déplacements ne sont plus disponibles.  [Skype Entreprise Online sera retiré](/lifecycle/announcements/skype-for-business-online-retirement) le 31 juillet 2021. Après cette période, le service n’est plus accessible. 
   
-## <a name="related-topics"></a>Rubriques connexes 
+## <a name="related-topics"></a>Voir aussi 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

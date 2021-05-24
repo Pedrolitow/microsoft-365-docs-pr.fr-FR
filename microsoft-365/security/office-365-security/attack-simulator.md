@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques pour exécuter des attaques par hameçonnage et par mot de passe simulés dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
+description: Les administrateurs peuvent apprendre à utiliser le Simulateur d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204214"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624824"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulateur d’attaques dans Microsoft Defender pour Office 365
 
@@ -33,19 +33,19 @@ ms.locfileid: "51204214"
 
 **S’applique** [à Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
-Si votre organisation dispose de Microsoft Defender pour Office [](office-365-ti.md)365 Plan 2, qui inclut des fonctionnalités d’investigation et de réponse aux menaces, vous pouvez utiliser le Simulateur d’attaques dans le Centre de sécurité & conformité pour exécuter des scénarios d’attaque réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
+Si votre organisation dispose de Microsoft Defender pour [](office-365-ti.md)Office 365 Plan 2, qui inclut des fonctionnalités d’investigation et de réponse aux menaces, vous pouvez utiliser le Simulateur d’attaques dans le Centre de sécurité & conformité pour exécuter des scénarios d’attaques réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
 
 > [!NOTE]
 >
-> Le Simulateur d’attaques, comme décrit dans cet article, est désormais en lecture seule et a été remplacé par une formation à la **simulation** d’attaque dans le nœud de collaboration e-mail **&** dans le Centre de sécurité [Microsoft 365.](https://security.microsoft.com) Pour plus d’informations, voir [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+> Le Simulateur d’attaques, comme décrit dans cet article, est désormais en lecture seule et a été remplacé par une formation à la **simulation** d’attaque dans le nœud de collaboration e-mail **&** dans le centre de sécurité [Microsoft 365.](https://security.microsoft.com) Pour plus d’informations, voir [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 >
 > La possibilité de lancer de nouvelles simulations à partir de cette version du Simulateur d’attaques a été désactivée. Toutefois, vous pouvez toujours accéder aux rapports pendant 90 jours à partir du 24 janvier 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**. Go go directly to attack simulator, open <https://protection.office.com/attacksimulator> .
+- Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**. Pour aller directement au simulateur d’attaques, ouvrez <https://protection.office.com/attacksimulator> .
 
-- Pour plus d’informations sur la disponibilité du Simulateur d’attaques dans différents abonnements Microsoft 365, voir la description du service Microsoft Defender pour [Office 365.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Pour plus d’informations sur la disponibilité du Simulateur d’attaques Microsoft 365 différents abonnements, consultez Microsoft Defender pour obtenir [Office 365 description du service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Si votre organisation dispose de Microsoft Defender pour Office [](office-365-ti
 
 - Les campagnes d’hameçonnage collectent et traitent des événements sur une durée de 30 jours. L’historique des données de la campagne est disponible pendant un maximum de 90 jours après le lancement de la campagne.
 
-- Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour les services Microsoft 365. Pour plus d’informations, voir emplacements de données [Microsoft 365.](../../enterprise/o365-data-locations.md)
+- Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour Microsoft 365 services. Pour plus [d’informations, Microsoft 365 des emplacements de données.](../../enterprise/o365-data-locations.md)
 
 - Il n’existe pas d’applet de commande PowerShell correspondante pour le Simulateur d’attaques.
 

@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur le niveau de confiance du courrier indésirable (SCL) appliqué aux messages dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 951bbcb5fcbcc7b7916ee1c34c4ab489d54b6667
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 55e64c72cc472e98baa8eb71e23dafb6b276ba01
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204055"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625280"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Niveau de confiance du courrier indésirable (SCL) dans EOP
 
@@ -35,7 +35,7 @@ ms.locfileid: "51204055"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages entrants sont filtrés par le filtrage du courrier indésirable dans EOP et un score de courrier indésirable leur est attribué. Ce score est mappé à un niveau de confiance de courrier indésirable (SCL) individuel qui est ajouté au message dans un en-tête X. Un SCL plus élevé indique qu’un message est plus susceptible d’être du courrier indésirable. EOP prend des mesures sur le message en fonction du SCL.
+Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages entrants sont filtrés par le filtrage du courrier indésirable dans EOP et un score de courrier indésirable leur est attribué. Ce score est mappé à un niveau de confiance de courrier indésirable (SCL) individuel qui est ajouté au message dans un en-tête X. Un SCL plus élevé indique qu’un message est plus susceptible d’être du courrier indésirable. EOP prend des mesures sur le message en fonction du SCL.
 
 Ce que signifie le SCL et les actions par défaut qui sont prises sur les messages sont décrits dans le tableau suivant. Pour plus d’informations sur les actions que vous pouvez prendre sur les messages en fonction du verdict de filtrage du courrier indésirable, voir Configurer des stratégies [anti-courrier indésirable dans EOP.](configure-your-spam-filter-policies.md)
 
@@ -51,10 +51,10 @@ Ce que signifie le SCL et les actions par défaut qui sont prises sur les messag
 
 Vous remarquerez que les SCL 2, 3, 4, 7 et 8 ne sont pas utilisés par le filtrage du courrier indésirable.
 
-Vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour marquer le SCL sur les messages. Si vous utilisez une règle de flux de messagerie pour définir le SCL, les valeurs 5 ou 6 déclenchent l’action de filtrage du courrier indésirable **et** les valeurs 7, 8 ou 9 déclenchent l’action de filtrage du courrier indésirable pour le courrier indésirable à niveau de confiance **élevé.** Pour plus d’informations, voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL) dans les messages.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+Vous pouvez utiliser des règles de flux de messagerie (également appelées règles de transport) pour marquer le SCL sur les messages. Si vous utilisez une règle de flux de messagerie pour définir le SCL, les valeurs 5 ou 6 déclenchent l’action de filtrage du courrier indésirable **et** les valeurs 7, 8 ou 9 déclenchent l’action de filtrage du courrier indésirable pour le courrier indésirable à niveau de confiance **élevé.** Pour plus d’informations, voir Utiliser des règles de flux de messagerie pour définir le niveau de confiance du courrier indésirable [(SCL) dans les messages.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 
-Comme le SCL, le niveau de réclamation en bloc (BCL) identifie les messages électroniques en masse (également _appelés messages gris)._ Un niveau BCL supérieur indique qu’un courrier en nombre est susceptible de générer des plaintes (et par conséquent plus susceptible d’être du courrier indésirable). Vous configurez le seuil BCL dans les stratégies anti-courrier indésirable. Pour plus d’informations, voir [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md), [Bulk complaint level (BCL) in EOP)](bulk-complaint-level-values.md)et [What’s the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+Comme pour le SCL, le niveau de réclamation en bloc (BCL) identifie les messages électroniques en masse (également appelés _messages gris)._ Un niveau BCL supérieur indique qu’un courrier en nombre est susceptible de générer des plaintes (et par conséquent plus susceptible d’être du courrier indésirable). Vous configurez le seuil BCL dans les stratégies anti-courrier indésirable. Pour plus d’informations, voir [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md), [Bulk complaint level (BCL) in EOP)](bulk-complaint-level-values.md)et [What’s the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 ****
 
-![L’icône courte pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Découvrez les cours vidéo gratuits pour les **administrateurs Microsoft 365** et les professionnels de l’informatique, présentés par LinkedIn Learning.
+![L’icône courte pour LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Découvrez des cours vidéo gratuits **pour Microsoft 365 administrateurs** et professionnels de l’informatique, présentés par LinkedIn Learning.

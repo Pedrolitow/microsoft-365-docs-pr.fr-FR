@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir les différentes façons de signaler les messages et fichiers bon et mauvais à Microsoft pour analyse.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c87938a8716da36f027300d685f0caedcf69660
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: d7534d5d88fe19fba39ac1ebef16c72cac25cae7
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291126"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625040"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Signaler les messages et fichiers à Microsoft
 
@@ -35,16 +35,19 @@ ms.locfileid: "52291126"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les utilisateurs et les administrateurs ont plusieurs méthodes différentes pour signaler des messages électroniques et des fichiers à Microsoft.
 
+<br>
+
 ****
 
 |Méthode|Description|
 |---|---|
 |[Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft](admin-submission.md)|La méthode de rapport recommandée pour les administrateurs dans les organisations Exchange Online boîtes aux lettres (non disponible dans EOP autonome).|
 |[Activer le message de rapport ou les modules de signalement du hameçonnage](enable-the-report-message-add-in.md)|Fonctionne avec Outlook et Outlook sur le web (anciennement Outlook Web App). <p> En fonction de votre abonnement, les messages que les utilisateurs ont signalés avec les modules sont disponibles dans le [](threat-explorer-views.md#email--submissions)portail de soumissions d’administration, les résultats de l’examen et de la réponse [automatisés (AIR),](air-view-investigation-results.md)le rapport des [messages](view-email-security-reports.md#user-reported-messages-report)signalés par l’utilisateur et l’Explorateur de [menaces.](admin-submission.md) <p> Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
-|[Signaler les faux positifs et les faux négatifs à Outlook](report-false-positives-and-false-negatives.md)|Envoyez les faux positifs (messages électroniques de qualité bloqués ou envoyés au dossier courrier indésirable) et les faux négatifs (courrier indésirable ou hameçonnage remis à la boîte de réception) à Exchange Online Protection (EOP) à l’aide de la fonctionnalité Signaler un message.|
+|[Signaler les faux positifs et les faux négatifs aux Outlook](report-false-positives-and-false-negatives.md)|Envoyez les faux positifs (messages électroniques de qualité bloqués ou envoyés au dossier courrier indésirable) et les faux négatifs (courrier indésirable ou hameçonnage remis à la boîte de réception) à Exchange Online Protection (EOP) à l’aide de la fonctionnalité Signaler un message.|
 |[Envoyer manuellement des messages à Microsoft pour analyse](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Envoyez manuellement des messages joints à des adresses de messagerie Microsoft spécifiques pour le courrier indésirable, et non le courrier indésirable et le hameçonnage.|
-|[Utiliser des règles de flux de messagerie pour voir ce que vos utilisateurs ont signalé à Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Découvrez comment créer une règle de flux de messagerie (également appelée règle de transport) qui vous avertit lorsque les utilisateurs signalent des messages à Microsoft pour analyse.|
+|[Utiliser des règles de flux de messagerie pour voir les rapports des utilisateurs à Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Découvrez comment créer une règle de flux de messagerie (également appelée règle de transport) qui vous avertit lorsque les utilisateurs signalent des messages à Microsoft pour analyse.|
 |[Soumettre des programmes malveillants et non malveillants à Microsoft pour analyse](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utilisez le site Renseignement de sécurité Microsoft pour envoyer des pièces jointes et d’autres fichiers.|
+|
 
 Si le courrier indésirable ou le hameçonnage a été mis en quarantaine au lieu d’être remis, les utilisateurs peuvent signaler les messages à Microsoft à partir du portail de mise en quarantaine dans le Centre de sécurité & conformité. Pour plus d’informations, voir Rechercher et libérer les messages mis en quarantaine en tant [qu’utilisateur dans Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).
 

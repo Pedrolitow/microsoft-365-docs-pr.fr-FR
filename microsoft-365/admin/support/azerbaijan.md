@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 726af48f61a279ec29ce771b9be97f75cfa74f62
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 4762942ee7340eead0f1e025de7ace61aa00cfca
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296586"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624300"
 ---
 # <a name="contact-support-for-azerbaijan"></a>Contacter le support technique pour l’Azerbaïdjan
 
@@ -26,9 +26,9 @@ ms.locfileid: "52296586"
 ## <a name="phone-number"></a>Numéro de téléphone
 01 24 37 35 55
 
-Sélectionner l’option 9
+Appuyer sur 2 pour les entreprises
 
-Entrer le code 7706
+Appuyer sur 1 pour Microsoft 365
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :

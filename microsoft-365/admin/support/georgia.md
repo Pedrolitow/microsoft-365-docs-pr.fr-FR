@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5d73b54a60b22ac74a55c301b3bd9344ee83352f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ec66115bc5ad0c8031be7117d2d8282e5c7d5041
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298817"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623880"
 ---
 # <a name="contact-support-for-georgia"></a>Contacter le support technique pour la Géorgie
 
@@ -26,11 +26,9 @@ ms.locfileid: "52298817"
 ## <a name="phone-number"></a>Numéro de téléphone
 032 297 0124
 
-Sélectionner l’option 2
+Appuyer sur 2 pour les entreprises
 
-Sélectionner l’option 9
-
-Entrer le code 7700
+Appuyer sur 1 pour Microsoft 365
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :

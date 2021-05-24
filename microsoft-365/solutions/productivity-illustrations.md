@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b47099dd0d26dba6a399ecff823bcc758be7e16d
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: df2c01bd0cc935ae8a541b40a96f3e067926674a
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583639"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625016"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrations de productivité Microsoft 365
 
@@ -33,7 +33,7 @@ L’architecture logique de services de productivité dans Microsoft 365, foncti
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>Groupes dans Microsoft 365 pour les architectes informatique
-Cette illustration inclut des informations pour les architectes de l’Microsoft 365 groupes. Pour en savoir plus sur la configuration et l’administration de groupes Microsoft 365 et d’équipes pour la collaboration dans votre organisation, voir Configurer la collaboration sécurisée avec [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) et qu’est-ce que la [gouvernance de la collaboration ?](/microsoft-365/solutions/collaboration-governance-overview)
+Cette illustration contient des informations pour les architectes de l’Microsoft 365 groupes. Pour en savoir plus sur la configuration et l’administration de groupes Microsoft 365 et d’équipes pour la collaboration dans votre organisation, voir Configurer la [collaboration](/microsoft-365/solutions/setup-secure-collaboration-with-teams) sécurisée avec Microsoft 365 et qu’est-ce que la gouvernance [de la collaboration ?](/microsoft-365/solutions/collaboration-governance-overview)
 
 | Item | Description |
 |:-----|:-----|
@@ -45,13 +45,13 @@ Microsoft fournit des outils pour migrer vos partages de fichiers réseau locaux
 
 | Item | Description |
 |:-----|:-----|
-|[![Affiche de modèle : Migrer vers Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [Télécharger au format PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf)  \| [Télécharger en tant que Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx) <br/> Mise à jour de mars 2021 |Inclus : <ul><li>  Migration de partage de fichiers</li><li>Migration du site SharePoint Server (SPMT) </li> </ul><br> Pour plus d’informations, [voir Migrer votre contenu vers Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
+|[![Affiche de modèle : Migrer vers Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/>[PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <br/> Mise à jour de mars 2021 |Inclus : <ul><li>  Migration de partage de fichiers</li><li>Migration du site SharePoint Server (SPMT) </li> </ul><br> Pour plus d’informations, [voir Migrer votre contenu vers Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
-## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 fonctionnalités de protection et de conformité des informations
+## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 protection et conformité des informations
 
-Microsoft 365 inclut un large éventail de fonctionnalités de protection et de conformité des informations. Avec les outils de productivité de Microsoft, ces fonctionnalités sont conçues pour aider les organisations à collaborer en temps réel tout en respectant les cadres stricts de conformité réglementaire. 
+Microsoft 365 inclut un large éventail de fonctionnalités de protection et de conformité des informations. Avec les outils de productivité de Microsoft, ces fonctionnalités sont conçues pour aider les organisations à collaborer en temps réel tout en respectant des cadres stricts de conformité réglementaire. 
 
-Cet ensemble d’illustrations utilise l’un des secteurs les plus réglementés, les services financiers, pour illustrer comment ces fonctionnalités peuvent être appliquées pour répondre aux exigences réglementaires courantes. N’hésitez pas à les adapter à votre usage personnel. 
+Cet ensemble d’illustrations utilise l’un des secteurs les plus réglementés, les services financiers, pour montrer comment ces fonctionnalités peuvent être appliquées pour répondre aux exigences réglementaires courantes. N’hésitez pas à les adapter à votre usage personnel. 
 
 
 | Élément | Description |

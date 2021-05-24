@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Découvrez comment restaurer les comptes d’utilisateur supprimés et toutes les données associées.
-ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: Dans les 30 jours suivant la suppression d’un compte d’utilisateur, vous pouvez restaurer le compte et toutes les données, et l’utilisateur peut se connecter avec le même compte.
+ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291066"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623820"
 ---
 # <a name="restore-a-user"></a>Restaurer un utilisateur
    
@@ -44,11 +44,11 @@ Voici quelques conseils :
 
 Vous devez être administrateur Microsoft 365 administrateur global ou administrateur de gestion des utilisateurs pour suivre ces étapes. 
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
+1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
 
 2. Dans la page **Utilisateurs** supprimés, sélectionnez les noms des utilisateurs que vous souhaitez restaurer, puis sélectionnez **Restaurer.**
     
-3. Suivez les invites pour définir leur mot de passe, puis sélectionnez **Restaurer**.
+3. Suivez les invites pour définir leur mot de passe, puis sélectionnez **Restaurer.**
     
 4. Si l’utilisateur est correctement restauré, sélectionnez **Envoyer un e-mail et fermez.** Si vous rencontrez un conflit de noms ou d'adresses de proxy, consultez les instructions ci-dessous pour savoir comment restaurer ces comptes.
     
@@ -60,7 +60,7 @@ Un conflit de noms d'utilisateur survient lorsque vous supprimez un compte d'uti
   
 Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur actif par celui que vous restaurez, soit attribuer un autre nom au compte restauré, afin que les deux comptes ne se servent plus du même nom d'utilisateur. Voici comment procéder.
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
+1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
   
 2. Dans la page **Utilisateurs** supprimés, sélectionnez les noms des utilisateurs à restaurer, puis sélectionnez **Restaurer.**
     
@@ -83,14 +83,16 @@ Un conflit d'adresses proxy survient lorsque vous supprimez un compte d'utilisat
   
 Pour ce [faire,](about-admin-roles.md) vous devez Microsoft 365 administrateur. 
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
+1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
 
 2. Sur la page **Utilisateurs supprimés**, sélectionnez l'utilisateur à restaurer, puis **Restaurer**. 
     
-3. Dans la page **Restaurer,** suivez les instructions pour définir le mot de passe et sélectionnez **Restaurer.** Toutes les adresses proxy en conflit sont supprimées automatiquement de l'utilisateur que vous restaurez.
+3. Dans la page **Restaurer,** suivez les instructions pour définir le mot de passe et sélectionner **Restaurer.** Toutes les adresses proxy en conflit sont supprimées automatiquement de l'utilisateur que vous restaurez.
     
 4. Examinez les résultats, puis sélectionnez **Fermer**.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Supprimer un utilisateur](delete-a-user.md)
+[Supprimer un utilisateur](delete-a-user.md) (article)\
+[Attribuer des rôles d’administrateur](assign-admin-roles.md) (vidéo)\
+[Attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md) (article)

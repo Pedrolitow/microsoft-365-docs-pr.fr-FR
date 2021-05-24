@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Apprenez à suivre les problèmes que vous avez à résoudre lors de la configuration d’un domaine personnalisé en vous assurez que les enregistrements DNS sont correctement configurer.
-ms.openlocfilehash: 5959cae02b87cf481fc06edd941a6da284b71736
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 70beb877251c333766a0963316287796eb81d595
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537546"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623964"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Rechercher et corriger des problèmes après avoir ajouté votre domaine ou des enregistrements DNS
 
@@ -101,7 +101,8 @@ Si vous avez corrigé tous les problèmes DNS et que vous rencontrez toujours de
     
 - Vous ne pouvez pas mettre à jour votre enregistrement A ou CNAME pour qu’il pointe vers votre site web : mettez à jour les enregistrements [DNS](../setup/add-domain.md) personnalisés dans Microsoft 365
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Résolution des problèmes : auditer les données sur la modification vérifiée du domaine](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[Résolution des problèmes : données d’audit sur la modification de domaine vérifiée](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (article)\
+[FAQ sur les domaines](../setup/domains-faq.yml) (article)
 

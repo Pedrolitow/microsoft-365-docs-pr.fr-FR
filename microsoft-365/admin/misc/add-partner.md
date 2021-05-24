@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Découvrez comment ajouter un partenaire conseiller en abonnement en tant que partenaire de registre au moment de l’achat Microsoft 365, modifier le partenaire ou supprimer un partenaire d’un abonnement.
-ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Ajoutez un partenaire de registre au moment de l Microsoft 365, modifiez-le ou supprimez un partenaire d’un abonnement.
+ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537474"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624524"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Ajouter, modifier ou supprimer un partenaire conseiller en abonnement
 
@@ -39,9 +39,11 @@ ms.locfileid: "52537474"
 
 ::: moniker range="o365-worldwide"
 
-[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que partenaire de registre lorsque vous achetez Microsoft 365 ou à un autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web De Microsoft Pinpoint.](https://pinpoint.microsoft.com)
+[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que partenaire de registre lorsque vous achetez Microsoft 365 ou à un autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web de Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
+
+## <a name="before-you-begin"></a>Avant de commencer
 
 ::: moniker range="o365-worldwide"
 
@@ -51,7 +53,7 @@ Le partenaire que vous choisissez dépend du services Microsoft que vous utilise
 
 ::: moniker range="o365-germany"
 
-[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que Partenaire de référence quand vous achetez Office 365 ou à tout autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web De Microsoft Pinpoint.](https://pinpoint.microsoft.com)
+[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que Partenaire de référence quand vous achetez Office 365 ou à tout autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web de Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
 
@@ -99,7 +101,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou obtenir une corres
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement à modifier.
 3. Dans la page des détails de l’abonnement, sous **Informations sur le partenaire,** tapez l’ID **du réseau partenaire.** Vous pouvez obtenir l’ID Microsoft Partner Network du partenaire en le demandant au partenaire.
 4. Sélectionnez **Ajouter**.
@@ -124,7 +126,7 @@ Pour accepter cette offre
   
 1. Lisez les termes du partenaire dans l’e-mail.
 2. Pour autoriser le contrat, sélectionnez le lien qui permet d’obtenir une page d’autorisation dans Office 365.
-3. Sous **Relations de** partenariat, sélectionnez **Oui** pour autoriser le partenaire à être votre administrateur délégué, puis sélectionnez **Suivant.**
+3. Sous **Relations de** partenaires, sélectionnez **Oui** pour autoriser le partenaire à être votre administrateur délégué, puis sélectionnez **Suivant.**
 4. Si l’offre de relation de partenaire est associée à un abonnement d’essai ou à une offre d’achat, créez votre compte d’essai ou d’abonnement.
 
 ::: moniker-end
@@ -133,7 +135,7 @@ Pour accepter cette offre
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Dans la page détails des abonnements, sous **Informations sur le partenaire,** sélectionnez **Supprimer.**
 3. Tapez **l’ID Microsoft Partner Network** du nouveau partenaire. Vous pouvez obtenir l’ID partenaire Microsoft du partenaire auprès du partenaire.
 4. Sélectionnez **Ajouter**.
@@ -168,7 +170,7 @@ Pour accepter cette offre
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement à modifier.
 3. Dans la page détails de l’abonnement, sous **Informations sur le partenaire,** sélectionnez **Supprimer.**
 
@@ -218,6 +220,7 @@ Vous devez demander à votre partenaire revendeur de suivre les instructions sui
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Rechercher votre Microsoft 365 partenaire ou revendeur](../manage/find-your-partner-or-reseller.md)
+[Rechercher votre Microsoft 365 ou revendeur](../manage/find-your-partner-or-reseller.md) (article)\
+[Planifier la configuration de Microsoft 365 entreprise](../setup/plan-your-setup.md) (article)

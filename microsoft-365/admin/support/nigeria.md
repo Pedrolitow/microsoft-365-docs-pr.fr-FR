@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef1b091b2b705a5ae83cba8dc7d5c22bd021856
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc500ff4418787648ee213d6f0f28bdda194e2ca
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297931"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623844"
 ---
 # <a name="contact-support-for-nigeria"></a>Contacter le support pour le Nigeria
 
@@ -26,9 +26,9 @@ ms.locfileid: "52297931"
 ## <a name="phone-number"></a>Numéro de téléphone
 01 912 5070
 
-Sélectionner l’option 9
+Appuyer sur 2 pour les entreprises
 
-Entrer le code 7705
+Appuyer sur 1 pour Microsoft 365
 
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :

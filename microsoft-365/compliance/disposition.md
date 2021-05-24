@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583471"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594072"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -30,7 +30,7 @@ ms.locfileid: "52583471"
 Utilisez la page **Destruction** de **Gestion des enregistrements** dans le Centre de conformité Microsoft 365 pour gérer les révisions de destruction et afficher les métadonnées des [enregistrements](records-management.md#records) qui ont été automatiquement supprimés à la fin de la période de rétention.
 
 > [!NOTE]
-> Déploiement dans la préversion : **révision de destruction à plusieurs étapes**.
+> En aperçu **révision avant destruction à plusieurs étapes**
 > 
 > Un administrateur peut désormais ajouter jusqu’à cinq étapes consécutives de révision de destruction dans une étiquette de rétention et les réviseurs peuvent ajouter d’autres utilisateurs à leur étape de révision de destruction. Vous pouvez également personnaliser les rappels et les notifications par e-mail. Les sections suivantes ont plus d'informations sur les modifications dans cette préversion.
 >

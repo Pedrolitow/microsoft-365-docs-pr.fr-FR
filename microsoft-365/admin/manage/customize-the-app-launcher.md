@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: 'Créez des liens rapides vers vos e-mails, documents, applications, sites SharePoint, sites externes et autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications. '
-ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: Créez des liens rapides vers vos e-mails, documents, applications, sites SharePoint, sites externes et autres ressources en ajoutant des vignettes personnalisées au lanceur d’applications.
+ms.openlocfilehash: 47f871d66f180225e877a521ef159fc745960507
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327209"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623772"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Ajouter des vignettes personnalisées au lanceur d'applications
 
-Dans Microsoft 365, vous pouvez rapidement et facilement vous rendre sur votre messagerie, vos calendriers, vos documents et vos applications à l’aide du lanceur d’applications (en[savoir plus).](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) Il s’agit des applications que vous obtenez avec Microsoft 365, ainsi que des applications personnalisées que vous ajoutez à partir du [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) ou [d’Azure AD.](/previous-versions/office/office-365-api/)
+Dans Microsoft 365, vous pouvez rapidement et facilement obtenir vos courriers électroniques, calendriers, documents et applications à l’aide du lanceur d’applications (en[savoir plus).](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) Il s’agit des applications que vous obtenez avec Microsoft 365 ainsi que des applications personnalisées que vous ajoutez à partir du [SharePoint Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) ou [d’Azure AD](/previous-versions/office/office-365-api/).
   
 Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant vers des sites SharePoint, des sites externes, des applications existantes, etc. La vignette personnalisée apparaît dans l'onglet **Toutes** les applications du lanceur d'applications. Vous pouvez également l'épingler aux applications de l'onglet **Accueil** et inviter vos utilisateurs à faire de même. Il sera ainsi plus facile de repérer les sites, les applications et les ressources dont vous avez besoin pour effectuer votre travail. Dans l'exemple ci-dessous, une vignette personnalisée nommée « Portail Contoso » permet d'accéder au site intranet SharePoint d'une organisation. 
   
@@ -40,7 +40,7 @@ Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant ver
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Ajouter une vignette personnalisée au lanceur d'applications
 
-1. Connectez-vous au Centre d’administration en tant qu’administrateur général, sélectionnez **Paramètres** de l’organisation paramètres et choisissez l’onglet  >  Profil **de l’organisation.**
+1. Connectez-vous au Centre d’administration en tant qu’administrateur général, Paramètres Organisation Paramètres et choisissez l’onglet  >  Profil **de l’organisation.**
     
 2. Sous **l’onglet Profil de** l’organisation, choisissez **Vignettes de lancement d’application personnalisées.**
   
@@ -69,7 +69,7 @@ Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant ver
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. Dans le centre d’administration, allez dans **l’onglet** Profil d’organisation  >  **Paramètres de** l’organisation paramètres de  >  **l’organisation.**
+1. Dans le Centre d’administration, allez sur **l’onglet Paramètres**  >  **organisation Paramètres**  >  **organisation.**
     
 2. Dans la page **Profil de l’organisation,** en plus d’ajouter des   **vignettes personnalisées pour votre organisation,** sélectionnez **Modifier**.
 
@@ -79,6 +79,12 @@ Vous pouvez ajouter vos propres vignettes au lanceur d'applications pointant ver
     
 Pour supprimer une vignette  personnalisée, dans la fenêtre Vignettes personnalisées, sélectionnez la vignette, **sélectionnez Supprimer la vignette**  >  **Supprimer.** 
   
-## <a name="whats-next"></a>Étape suivante
+## <a name="next-steps"></a>Étapes suivantes
 
-En plus d’ajouter des vignettes au lanceur d’applications, vous pouvez ajouter des vignettes de lanceur d’applications à la barre de navigation[(en savoir plus).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Pour personnaliser l’apparence de Microsoft 365 afin qu’elle corresponde à la marque de votre organisation, voir Personnaliser le [thème Microsoft 365.](../setup/customize-your-organization-theme.md)
+En plus d’ajouter des vignettes au lanceur d’applications, vous pouvez ajouter des vignettes de lanceur d’applications à la barre de navigation[(en savoir plus).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Pour personnaliser l’apparence de votre Microsoft 365 pour qu’elle corresponde à la marque de votre organisation, voir Personnaliser [Microsoft 365 thème .](../setup/customize-your-organization-theme.md)
+
+## <a name="related-content"></a>Contenu associé
+
+[Épingler des applications au lanceur d’applications](pin-apps-to-app-launcher.md) de vos utilisateurs (article)\
+[Mettre à niveau Microsoft 365 pour les utilisateurs professionnels](../setup/upgrade-users-to-latest-office-client.md) vers la dernière Office client (article)\
+[Gérer les add-ins dans le Centre d’administration](../manage/manage-addins-in-the-admin-center.md) (article)
