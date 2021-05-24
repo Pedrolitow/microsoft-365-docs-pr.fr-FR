@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Découvrez comment déployer des équipes avec la protection des données sensibles.
-ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572716"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583651"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configurer les équipes avec la protection des données sensibles
 
@@ -108,28 +108,18 @@ Chaque fois que vous créez une équipe avec une étiquette de confidentialité,
 - Mettez à jour les paramètres de partage d’invités pour le site dans le Centre d’administration SharePoint, afin qu’ils mettent à jour le lien de partage par défaut vers *Personnes spécifiques*.
 - Mettez à jour les paramètres de partage du site lui-même pour empêcher les membres de partager le site.
 
-### <a name="site-guest-sharing-settings"></a>Paramètres de partage d’invités du site
+### <a name="site-default-sharing-link-settings"></a>Paramètres de lien de partage par défaut du site
 
-Le paramètre de partage d’invités que vous avez choisi lors de la création de l’étiquette (qui affecte uniquement l’appartenance à l’équipe) doit correspondre aux paramètres de partage d’invités pour le site SharePoint associé, comme suit :
+Pour mettre à jour le type de lien de partage par défaut du site
 
-|Paramètre d’étiquette|Paramètre du site SharePoint|
-|:------------|:----------------------|
-|**Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation** sélectionné.|**Invités nouveaux et existants** (par défaut pour les nouvelles équipes)|
-|**Permettre aux propriétaires du groupe Office 365 d’ajouter au groupe des personnes en dehors de l’organisation** non sélectionné.|**Uniquement les personnes de votre organisation**|
-
-Pour mettre à jour les paramètres du site
 1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
 2. Sous **Sites**, cliquez sur **Sites actifs**.
 3. Cliquez sur le site associé à l’équipe.
 4. Sous l’onglet **Stratégies**, sous **Partage externe**, cliquez sur **Modifier**.
-5. Si vous avez autorisé le partage d’invités lorsque vous avez créé l’étiquette de confidentialité, assurez-vous de sélectionner **Invités nouveaux et existants**. Si vous n’avez pas autorisé le partage lors de la création de l’étiquette, sélectionnez **Uniquement les membres de votre organisation**.
-6. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes spécifiques (uniquement les membres spécifiés par l’utilisateur)**.
-7. Cliquez sur **Enregistrer**.
+5. Sous Type de lien de partage par défaut, désactivez la case à cocher **Identique au paramètre de niveau organisation**, puis sélectionnez **Personnes spécifiques (uniquement les membres spécifiés par l’utilisateur)**.
+6. Cliquez sur **Enregistrer**.
 
-Si vous voulez créer un script dans le cadre de votre processus de création d’équipe, vous pouvez utiliser [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) avec les paramètres suivants :
-
-- `-SharingCapability Disabled` pour désactiver le partage d’invités (activé par défaut)
-- `-DefaultSharingLinkType Internal` pour modifier le lien de partage par défaut en *Personnes spécifiques*
+Si vous voulez créer un script dans le cadre de votre processus de création d’équipe, vous pouvez utiliser [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) avec les paramètre `-DefaultSharingLinkType Direct` pour modifier le lien de partage par défaut pour *Personnes spécifiques*.
 
 #### <a name="private-channels"></a>Canaux privés
 

@@ -21,20 +21,20 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: 1927e481625e93afa8aa064666e75ea8f891669e
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572296"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593908"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
 En tant qu’administrateur d’une organisation, vous êtes chargé de la configuration d'une stratégie de mot de passe pour les utilisateurs au sein de votre organisation. La configuration d'une stratégie de mot de passe peut être complexe et déconcertante. Cet article vous fournit des recommandations pour renforcer la sécurité de votre organisation contre les attaques par mot de passe.
   
-Pour déterminer la fréquence d’expiration des mots de passe Microsoft 365 dans votre organisation, consultez la page [Définir une stratégie d’expiration de mot de passe pour Microsoft 365](../manage/set-password-expiration-policy.md).
+Pour déterminer la fréquence d’expiration des mots de passe Microsoft 365 dans votre organisation, consultez la page [Définir une stratégie d’expiration de mot de passe pour Microsoft 365](../manage/set-password-expiration-policy.md).
 
-Pour obtenir plus d’informations sur les mots de passe Microsoft 365, consultez :
+Pour obtenir plus d’informations sur les mots de passe Microsoft 365, consultez :
 
 [Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)
 
@@ -46,7 +46,7 @@ Pour obtenir plus d’informations sur les mots de passe Microsoft 365, consult
   
 ## <a name="understanding-password-recommendations"></a>Présentation des recommandations concernant les mots de passe
 
-Les pratiques pour mot de passe recommandées sont classées en plusieurs catégories :
+Les pratiques pour mot de passe recommandées sont classées en plusieurs catégories :
   
 - **Résistance aux attaques courantes** il s’agit du choix de l’emplacement dans lequel les utilisateurs entrent les mots de passe (les appareils connus et fiables ayant une bonne détection de programmes malveillants, sites validés) et le choix du mot de passe à adopter (longueur et unicité).
 
@@ -58,7 +58,7 @@ Les pratiques pour mot de passe recommandées sont classées en plusieurs catég
 
 La diversité des mots de passe représente l’objectif principal d’un système de mot de passe sécurisé. Votre stratégie de mot de doit contenir de nombreux mots de passe différents qui sont de plus difficiles à deviner. Voici quelques recommandations pour garantir la sécurité de votre organisation.
   
-- Conserver une exigence de longueur minimale de 8 caractères (une longueur supérieure n'est pas forcément recommandable)
+- Conserver une exigence de longueur minimale de 8 caractères (une longueur supérieure n'est pas forcément recommandable)
 
 - N'exigez pas de composition de caractères. For exemple, \*&amp;(^%$
 
@@ -74,7 +74,7 @@ La diversité des mots de passe représente l’objectif principal d’un systè
 
 ### <a name="password-guidance-for-your-users"></a>Conseils liés aux mots de passe pour vos utilisateurs
 
-Voici quelques conseils sur les mots de passe destinés aux utilisateurs de votre organisation. Assurez-vous d'informer vos utilisateurs sur ces recommandations et d'appliquer les stratégies de mot de passe recommandées au niveau de l’organisation.
+Voici quelques conseils en matière de mots de passe destinés aux utilisateurs de votre organisation. Assurez-vous d'informer vos utilisateurs sur ces recommandations et d'appliquer les stratégies de mot de passe recommandées au niveau de l’organisation.
   
 - N’utilisez pas de mot de passe identique ou similaire à celui utilisé sur d’autres sites web
 
@@ -92,11 +92,11 @@ Les conditions d’expiration du mot de passe sont plus néfastes que bénéfiqu
   
 ### <a name="requiring-long-passwords"></a>Exigence de mots de passe longs
 
-Les exigences de longueur de mot de passe (plus de 10 caractères environ) peuvent entraîner un comportement utilisateur prévisible et non souhaitable. Par exemple, il est possible que les utilisateurs devant utiliser un mot de passe de 16 caractères choisissent de répéter des modèles tels que **quatrequatrequatre** ou **motdepassemotdepasse** qui respectent les exigences de longueur de caractères, mais qui sont faciles à deviner. De plus, les exigences de longueur augmentent les risques d’adoption par les utilisateurs d’autres méthodes non sécurisées, telles que l’écriture sur papier de leurs mots de passe, leur réutilisation ou leur stockage non chiffré dans leurs documents. Pour inciter les utilisateurs à considérer un mot de passe unique, nous vous recommandons de conserver une exigence raisonnable d'une longueur minimale de 8 caractères.
+Les exigences de longueur de mot de passe (plus de 10 caractères environ) peuvent entraîner un comportement utilisateur prévisible et non souhaitable. Par exemple, il est possible que les utilisateurs devant utiliser un mot de passe de 16 caractères choisissent de répéter des modèles tels que **quatrequatrequatre** ou **motdepassemotdepasse** qui respectent les exigences de longueur de caractères, mais qui sont faciles à deviner. De plus, les exigences de longueur augmentent les risques d’adoption par les utilisateurs d’autres méthodes non sécurisées, telles que l’écriture sur papier de leurs mots de passe, leur réutilisation ou leur stockage non chiffré dans leurs documents. Pour inciter les utilisateurs à considérer un mot de passe unique, nous vous recommandons de conserver une exigence raisonnable d'une longueur minimale de 8 caractères.
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>Nécessité d’utiliser plusieurs jeux de caractères
 
-L'exigence de complexité de mots de passe permet de réduire l’espace de clé et d'amener les utilisateurs à agir de façon prévisible, faisant ainsi plus de mal que de bien. La plupart des systèmes appliquent des exigences de complexité des mots de passe d'un certain niveau. Par exemple, les mots de passe doivent contenir des caractères faisant partie des trois catégories suivantes :
+L'exigence de complexité de mots de passe permet de réduire l’espace de clé et d'amener les utilisateurs à agir de façon prévisible, faisant ainsi plus de mal que de bien. La plupart des systèmes appliquent des exigences de complexité des mots de passe d'un certain niveau. Par exemple, les mots de passe doivent contenir des caractères faisant partie des trois catégories suivantes :
   
 - caractères majuscules
 
@@ -104,7 +104,7 @@ L'exigence de complexité de mots de passe permet de réduire l’espace de clé
 
 - caractères non alphanumériques
 
-Beaucoup de personnes utilisent des modèles similaires par exemple, une lettre majuscule en premier, un symbole en dernier et un nombre dans les deux derniers caractères. Les cybercriminels le savent, de sorte qu’ils exécutent leurs attaques de dictionnaire en utilisant les substitutions les plus courantes, « $ » pour « s », « @ » pour « a », « 1 » pour « l ». Le fait de contraindre vos utilisateurs à choisir une combinaison de majuscules, minuscules et caractères spéciaux a une incidence négative. Certaines exigences de complexité empêchent également les utilisateurs d’utiliser des mots de passe sécurisés et mémorables, et de les contraint à faire usage de mots de passe moins sécurisés et moins marquants.
+Beaucoup de personnes utilisent des modèles similaires par exemple, une lettre majuscule en premier, un symbole en dernier et un nombre dans les deux derniers caractères. Les cybercriminels le savent, de sorte qu’ils exécutent leurs attaques de dictionnaire en utilisant les substitutions les plus courantes, « $ » pour « s », « @ » pour « a », « 1 » pour « l ». Le fait de contraindre vos utilisateurs à choisir une combinaison de majuscules, minuscules et caractères spéciaux a une incidence négative. Certaines exigences de complexité empêchent également les utilisateurs d’utiliser des mots de passe sécurisés et mémorables, et de les contraint à faire usage de mots de passe moins sécurisés et moins marquants.
   
 ## <a name="successful-patterns"></a>Modèles performants
 
@@ -128,9 +128,9 @@ Pour plus d'informations, voir [Configurer l'authentification multifacteur](../s
 
 L’authentification multifacteur basée sur le risque s'assure que, lorsque notre système détecte une activité suspecte, il peut défier l’utilisateur pour s’assurer qu’il s’agit bien du propriétaire du compte. 
   
-## <a name="want-to-know-more-recommended-reading"></a>Vous souhaitez en savoir plus ? Lecture recommandée
+## <a name="want-to-know-more-recommended-reading"></a>Vous souhaitez en savoir plus ? Lecture recommandée
 
-- [Les mots de passe web sont-ils performants ?](https://go.microsoft.com/fwlink/p/?linkid=861008)
+- [Les mots de passe web sont-ils performants ?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
 - [Portefeuilles de mots de passe et utilisateur à effort limité](https://go.microsoft.com/fwlink/p/?linkid=861014)
 

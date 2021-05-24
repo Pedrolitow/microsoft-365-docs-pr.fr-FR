@@ -19,44 +19,44 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245587"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572656"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Si vous voyez des messages concernant des stratégies de rétention dans Teams ou avez des questions relatives aux étiquettes de rétention, contactez votre service informatique pour obtenir des informations sur leur configuration. En attendant, ces articles peuvent vous être utiles :
+> Si vous voyez des messages concernant des stratégies de rétention dans Teams ou avez des questions relatives aux étiquettes de rétention, contactez votre service informatique pour obtenir des informations sur leur configuration. En attendant, les articles suivants vous seront peut-être utiles :
 > -  [Messages et stratégies de rétention Teams](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
 > - [Appliquer des étiquettes de rétention aux fichiers dans SharePoint ou OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > Les informations sur cette page sont pour les administrateurs informatiques qui peuvent créer des stratégies de rétention et des étiquettes de rétention pour des raisons de conformité.
 
-Le volume et la complexité des données e-mails, documents, messages instantanés et autres de la majorité des organisations augmentent quotidiennement. Il est important de gérer et de gouverner efficacement ces informations, car vous devez :
+Le volume et la complexité des données e-mails, documents, messages instantanés et autres de la majorité des organisations augmentent quotidiennement. Il est important de gérer et de gouverner efficacement ces informations, car vous devez :
 
 - **respecter de façon proactive les réglementations du secteur et les stratégies internes** qui vous obligent à conserver du contenu pendant une période minimale. Par exemple, la loi Sarbanes-Oxley vous oblige à conserver certains types de contenu pendant sept ans.
 
-- **réduire les risques en cas de litige ou de violation de la sécurité** en supprimant définitivement le contenu ancien qu’il n’est plus obligatoire de conserver ;
+- **réduire les risques en cas de litige ou de violation de la sécurité** en supprimant définitivement le contenu ancien qu’il n’est plus obligatoire de conserver ;
 
 - **aider votre organisation à partager efficacement les connaissances et à être plus agile** en vérifiant que vos utilisateurs traitent uniquement le contenu actuel et pertinent pour eux.
 
-La configuration des paramètres de rétention peut vous aider à atteindre ces objectifs. La gestion du contenu nécessite généralement deux actions :
+La configuration des paramètres de rétention peut vous aider à atteindre ces objectifs. La gestion du contenu nécessite généralement deux actions :
 
 | Action| Objectif |
 |:-----|:-----|
 |Conserver un contenu. | Empêcher la suppression définitive et rester disponible pour eDiscovery |
 |Supprimer un contenu | Supprimer définitivement un contenu de votre organisation|
 
-Avec ces deux actions de rétention, vous pouvez configurer les paramètres de rétention pour les résultats suivants :
+Avec ces deux actions de rétention, vous pouvez configurer les paramètres de rétention pour les résultats suivants :
 
-- Conservation uniquement : conserver le contenu définitivement ou pour une période spécifiée.
-- Suppression uniquement : supprimez un contenu après une période spécifiée.
-- Conservation puis suppression : conserver un contenu pendant une période spécifiée, puis le supprimer définitivement.
+- Conservation uniquement : conserver le contenu définitivement ou pour une période spécifiée.
+- Suppression uniquement : supprimez un contenu après une période spécifiée.
+- Conservation puis suppression : conserver un contenu pendant une période spécifiée, puis le supprimer définitivement.
 
 Ces paramètres de rétention fonctionnent avec du contenu en place, ce qui vous permet d’éviter les charges liées à la création et à la configuration d’un espace de stockage supplémentaire pour conserver du contenu pour des raisons de conformité. Vous n’avez plus besoin non plus d’implémenter des processus personnalisés pour copier et synchroniser ces données.
 
@@ -64,20 +64,20 @@ Utilisez ces sections pour en savoir plus sur le fonctionnement des stratégies 
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Fonctionnement des paramètres de rétention avec le contenu en place
 
-Si des paramètres de rétention sont affectés au contenu, celui-ci reste à son emplacement d’origine. Les utilisateurs peuvent continuer à travailler avec leurs documents ou la messagerie comme si rien n’avait changé. Toutefois, s’ils modifient ou suppriment le contenu qui est inclus dans la stratégie de rétention, une copie du contenu est automatiquement conservée.
+Lorsqu’un contenu est soumis à des paramètres de rétention, ce contenu demeure à son emplacement d’origine. Les contacts peuvent invariablement continuer à travailler avec leurs documents ou mails. Mais s’ils modifient ou suppriment du contenu inclus dans la stratégie de rétention, une copie du contenu est automatiquement conservée.
   
-- Pour les sites SharePoint et OneDrive : la copie est conservée dans la bibliothèque de **Conservation et préservation**.
+- Pour les sites SharePoint et OneDrive : la copie est conservée dans la bibliothèque de **Conservation et préservation**.
 
-- Pour les boîtes aux lettres Exchange : la copie est conservée dans le dossier **Éléments récupérables**. 
+- Pour les boîtes aux lettres Exchange : la copie est conservée dans le dossier **Éléments récupérables**. 
 
-- Pour les messages Teams et Yammer : la copie est conservée dans un dossier masqué appelé **SubstrateHolds** sous la forme d’un sous-dossier dans le dossier **Éléments récupérables** de Exchange.
+- Pour les messages Teams et Yammer : la copie est conservée dans un dossier masqué appelé **SubstrateHolds** sous la forme d’un sous-dossier dans le dossier **Éléments récupérables** de Exchange.
 
 > [!NOTE]
-> La bibliothèque de Conservation et préservation utilise un espace de stockage qui n’est pas exempté du quota de stockage d’un site. Il se peut que vous deviez augmenter votre espace de stockage lorsque vous utilisez des paramètres de rétention pour SharePoint et les groupes Microsoft 365.
+> La bibliothèque de Conservation et préservation utilise un espace de stockage qui n’est pas exempté du quota de stockage d’un site. Il se peut que vous deviez augmenter votre espace de stockage lorsque vous utilisez des paramètres de rétention pour SharePoint et les groupes Microsoft 365.
 > 
 Ces emplacements sécurisés et le contenu conservé ne sont pas visibles pour la plupart des utilisateurs. Dans la plupart des cas, les personnes n’ont même pas besoin de savoir que leur contenu est soumis aux paramètres de rétention.
 
-Pour plus d’informations sur le fonctionnement des paramètres de rétention en fonction des différentes charges de travail, consultez les articles suivants :
+Pour plus d’informations sur le fonctionnement des paramètres de rétention en fonction des différentes charges de travail, consultez les articles suivants :
 
 - [En savoir plus sur la rétention dans SharePoint et OneDrive](retention-policies-sharepoint.md)
 - [En savoir plus sur la rétention dans Microsoft Teams](retention-policies-teams.md)
@@ -90,9 +90,9 @@ Pour affecter vos paramètres de rétention au contenu, utilisez des **stratégi
 
 Utilisez une stratégie de rétention pour attribuer les mêmes paramètres de rétention au contenu au niveau d’un site ou d’une boîte aux lettres, et utiliser une étiquette de rétention pour affecter des paramètres de rétention à l’échelle d’un élément (dossier, document, courrier électronique).
 
-Par exemple, si tous les documents d’un site SharePoint doivent être conservés pendant cinq ans, il est plus efficace de le faire avec une stratégie de rétention que d’appliquer la même étiquette de rétention à tous les documents de ce site. Toutefois, si certains documents de ce site doivent être conservés pendant cinq ans et d’autres pendant dix ans, une stratégie de rétention ne fonctionnera pas. Lorsque vous devez spécifier les paramètres de rétention au niveau de l’élément, utilisez les étiquettes de rétention. 
+Par exemple, si tous les documents d’un site SharePoint doivent être conservés pendant cinq ans, il est plus efficace de le faire avec une stratégie de rétention que d’appliquer la même étiquette de rétention à tous les documents de ce site. Toutefois, si certains documents de ce site doivent être conservés pendant cinq ans et d’autres pendant dix ans, une stratégie de rétention ne fonctionnera pas. Lorsque vous devez spécifier les paramètres de rétention au niveau de l’élément, utilisez les étiquettes de rétention. 
 
-Contrairement aux stratégies de rétention, les paramètres de rétention des étiquettes de rétention circulent avec le contenu s’il est déplacé vers un autre emplacement au sein de votre client Microsoft 365. De plus, les étiquettes de rétention présentent les fonctionnalités suivantes, non prises en charge par les stratégies de rétention : 
+Contrairement aux stratégies de rétention, les paramètres de rétention des étiquettes de rétention circulent avec le contenu s’il est déplacé vers un autre emplacement au sein de votre client Microsoft 365. De plus, les étiquettes de rétention présentent les fonctionnalités suivantes, non prises en charge par les stratégies de rétention : 
  
 - Options de démarrage de la période de rétention à partir de la date d’étiquetage du contenu ou en fonction d’un événement, en plus de l’âge du contenu ou du moment de la dernière modification de celui-ci.
 
@@ -106,11 +106,11 @@ Contrairement aux stratégies de rétention, les paramètres de rétention des �
 
 ### <a name="retention-policies"></a>Stratégies de rétention
 
-Les stratégies de rétention peuvent être appliquées aux emplacements suivants :
+Les stratégies de rétention peuvent être appliquées aux emplacements suivants :
 - Messagerie électronique Exchange
 - Site SharePoint
 - Comptes OneDrive
-- Groupes Microsoft 365
+- Groupes Microsoft 365
 - Skype Entreprise
 - Dossiers publics Exchange
 - Messages du canal Teams
@@ -126,7 +126,7 @@ Les éléments héritent des paramètres de rétention de leur conteneur spécif
 
 ### <a name="retention-labels"></a>Étiquettes de rétention
 
-Utilisez les étiquettes de rétention pour les différents types de contenus nécessitant différents paramètres de rétention. Par exemple :
+Utilisez les étiquettes de rétention pour les différents types de contenus nécessitant différents paramètres de rétention. Par exemple :
   
 - Formulaires fiscaux qui doivent être conservés pendant une période minimale de temps. 
     
@@ -138,11 +138,11 @@ Utilisez les étiquettes de rétention pour les différents types de contenus n�
     
 Dans tous ces cas, les étiquettes de rétention vous permettent d’appliquer des paramètres de rétention au niveau de l’élément (document ou courrier électronique).
   
-Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes :
+Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes :
   
-- **Permettre aux personnel de votre organisation d’appliquer une étiquette de rétention manuellement** à du contenu dans Outlook, Outlook sur le web, OneDrive, SharePoint et des groupes Microsoft 365. Les utilisateurs savent souvent mieux quel type de contenu ils utilisent, ils peuvent donc le classer et appliquer les paramètres de rétention appropriés. 
+- **Permettre aux personnel de votre organisation d’appliquer une étiquette de rétention manuellement** à du contenu dans Outlook, Outlook sur le web, OneDrive, SharePoint et des groupes Microsoft 365. Les utilisateurs savent souvent mieux quel type de contenu ils utilisent, ils peuvent donc le classer et appliquer les paramètres de rétention appropriés. 
     
-- **Appliquer automatiquement des étiquettes de rétention au contenu** s’il répond à des conditions spécifiques, comme lorsque le contenu contient : 
+- **Appliquer automatiquement des étiquettes de rétention au contenu** s’il répond à des conditions spécifiques, comme lorsque le contenu contient : 
     - des types spécifiques d’informations sensibles.
     - des mots clés spécifiques correspondant à une requête que vous créez.
     - Le modèle correspond à un classifieur entraînable.
@@ -153,17 +153,17 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes�
 
 - **Appliquer une étiquette de rétention par défaut à une bibliothèque de documents, un dossier ou un ensemble de documents** dans SharePoint, afin que tous les documents stockés dans cette bibliothèque obtiennent l’étiquette de rétention par défaut.
 
-De plus, les étiquettes de rétention prennent en charge la [gestion des enregistrements](records-management.md) pour les e-mails et les documents dans les applications et les services Microsoft 365. Vous pouvez utiliser une étiquette de rétention pour marquer des éléments comme enregistrement. Lorsque cela se produit et que le contenu reste dans Microsoft 365, l’étiquette place des restrictions supplémentaires sur le contenu qui peuvent être nécessaires pour des raisons réglementaires. Pour obtenir plus d’informations, consultez [Comparer des restrictions relatives aux actions autorisées ou bloquées](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+De plus, les étiquettes de rétention prennent en charge la [gestion des enregistrements](records-management.md) pour les e-mails et les documents dans les applications et les services Microsoft 365. Vous pouvez utiliser une étiquette de rétention pour marquer des éléments comme enregistrement. Lorsque cela se produit et que le contenu reste dans Microsoft 365, l’étiquette place des restrictions supplémentaires sur le contenu qui peuvent être nécessaires pour des raisons réglementaires. Pour obtenir plus d’informations, consultez [Comparer des restrictions relatives aux actions autorisées ou bloquées](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Les étiquettes de rétention, contrairement [aux étiquettes de confidentialité ](sensitivity-labels.md), ne sont pas conservées si le contenu est déplacé en dehors de Microsoft 365.
 
-Il n’y a pas de limite au nombre d’étiquettes de rétention qui sont prises en charge pour un client. Toutefois, le nombre maximal de stratégies prises en charge pour un client est de 10 000, et cela inclut les stratégies qui appliquent les étiquettes (stratégies d’étiquette de rétention et stratégies de rétention qui s’appliquent automatiquement), ainsi que les stratégies de rétention.
+Il n’y a pas de limite au nombre d’étiquettes de rétention qui sont prises en charge pour un client. Toutefois, le nombre maximal de stratégies prises en charge pour un client est de 10 000, et cela inclut les stratégies qui appliquent les étiquettes (stratégies d’étiquette de rétention et stratégies de rétention qui s’appliquent automatiquement), ainsi que les stratégies de rétention.
 
 #### <a name="classifying-content-without-applying-any-actions"></a>Classification de contenu sans application d’action
 
 Bien que l’objectif principal des étiquettes de rétention soit la conservation ou la suppression de contenu, vous pouvez également les utiliser sans activer de rétention ni d’autres actions. Dans ce cas, vous pouvez utiliser une étiquette de rétention comme une simple étiquette de texte, sans appliquer la moindre action.
   
-Par exemple, vous pouvez créer et appliquer une étiquette de rétention appelée « À vérifier », qui ne déclenche aucune action, puis utiliser cette étiquette pour retrouver plus tard le contenu étiqueté.
+Par exemple, vous pouvez créer et appliquer une étiquette de rétention appelée « À vérifier », qui ne déclenche aucune action, puis utiliser cette étiquette pour retrouver plus tard le contenu étiqueté.
   
 ![Paramètres d’étiquettes pour classer uniquement](../media/retention-label-retentionoff.png)
 
@@ -175,7 +175,7 @@ Pour plus d’informations, consultez [Utilisation d’une étiquette de rétent
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>Étiquettes de rétention et stratégies qui les appliquent
 
-Lorsque vous publiez des étiquettes de rétention, celles-ci sont incluses dans une **stratégie d’étiquette de rétention** qui les rend disponibles à l’application à du contenu par les administrateurs et les utilisateurs. Comme le montre ce diagramme :
+Lorsque vous publiez des étiquettes de rétention, celles-ci sont incluses dans une **stratégie d’étiquette de rétention** qui les rend disponibles à l’application à du contenu par les administrateurs et les utilisateurs. Comme le montre ce diagramme :
 
 1. Une étiquette de conservation peut être incluse dans de multiples stratégies d’étiquette de rétention.
 
@@ -191,32 +191,32 @@ Différents types d’étiquettes de rétention peuvent être publiés dans diff
   
 | Si l’étiquette de rétention est... | La stratégie d’étiquette peut être appliquée à... |
 |:-----|:-----|
-|Publiée pour les administrateurs et les utilisateurs finaux  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
+|Publiée pour les administrateurs et les utilisateurs finaux  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
 |Appliquée automatiquement en fonction des types d’informations sensibles ou des classifieurs entraînables  <br/> |Exchange (toutes les boîtes aux lettres uniquement), SharePoint, OneDrive  <br/> |
-|Appliquée automatiquement en fonction d’une requête  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
+|Appliquée automatiquement en fonction d’une requête  <br/> |Exchange, SharePoint, OneDrive et Groupes Microsoft 365  <br/> |
    
-Dans Exchange, les étiquettes de rétention que vous appliquez automatiquement sont le sont uniquement aux nouveaux messages envoyés (données en transit) et pas à tous les éléments présents dans la boîte aux lettres (données au repos). Par ailleurs, les étiquettes de rétention à application automatique pour les types d’informations sensibles et les classifieurs entraînables s’appliquent à toutes les boîtes aux lettres. Vous ne pouvez pas sélectionner de boîtes aux lettres spécifiques.
+Dans Exchange, les étiquettes de rétention que vous appliquez automatiquement (pour les requêtes et les types d’informations sensibles) sont appliquées uniquement aux messages récemment envoyés (données en transit), et non à tous les éléments actuellement dans la boîte aux lettres (données au repos). Par ailleurs, les étiquettes de rétention à appliquer automatiquement pour les types d’informations sensibles ne peuvent s’appliquer qu’à toutes les boîtes aux lettres. Vous ne pouvez pas sélectionner des boîtes aux lettres spécifiques.
   
 Les dossiers publics Exchange, les messages Skype, Teams et Yammer ne prennent pas en charge les étiquettes de rétention. Pour conserver et supprimer du contenu stocké sur ces emplacements, utilisez plutôt les stratégies de rétention.
 
 #### <a name="only-one-retention-label-at-a-time"></a>Une seule étiquette de rétention à la fois
 
-Il n’est possible d’attribuer qu’une seule étiquette de rétention à un courrier électronique ou à un document. Une étiquette de rétention peut être appliquée [manuellement](create-apply-retention-labels.md#manually-apply-retention-labels) par un administrateur ou un utilisateur final, ou automatiquement à l’aide de l’une des méthodes suivantes :
+Il n’est possible d’attribuer qu’une seule étiquette de rétention à un courrier électronique ou à un document. Une étiquette de rétention peut être appliquée [manuellement](create-apply-retention-labels.md#manually-apply-retention-labels) par un administrateur ou un utilisateur final, ou automatiquement à l’aide de l’une des méthodes suivantes :
 
 - [Stratégies d’étiquette à application automatique](apply-retention-labels-automatically.md)
 - [Modèle de présentation de document dans Microsoft SharePoint Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Étiquette par défaut pour SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) ou [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Règles d’Outlook](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
-Pour les étiquettes de rétention standard (les éléments ne sont pas marqués comme [enregistrement ou réglementaire](records-management.md#records)) :
+Pour les étiquettes de rétention standard (les éléments ne sont pas marqués comme [enregistrement ou réglementaire](records-management.md#records)) :
 
 - Les administrateurs et les utilisateurs finaux peuvent modifier ou supprimer manuellement une étiquette de rétention existante appliquée au contenu. 
 
-- Lorsqu’une étiquette de rétention est déjà appliquée au contenu, celle-ci n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à une exception près : l’étiquette existante a été appliquée comme étiquette par défaut.
+- Lorsqu’une étiquette de rétention est déjà appliquée au contenu, celle-ci n’est pas automatiquement supprimée ou remplacée par une autre étiquette de rétention, à une exception près : l’étiquette existante a été appliquée comme étiquette par défaut.
     
-    Pour plus d’informations sur le comportement des étiquettes lorsqu’elles sont appliquées à l’aide d’une étiquette par défaut :
-    - Étiquette par défaut de SharePoint : [le comportement des étiquettes lorsque vous utilisez une étiquette par défaut pour SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-    - Étiquette par défaut pour Outlook : [l’application d’une étiquette de rétention par défaut à un dossier Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+    Pour plus d’informations sur le comportement des étiquettes lorsqu’elles sont appliquées à l’aide d’une étiquette par défaut :
+    - Étiquette par défaut de SharePoint : [le comportement des étiquettes lorsque vous utilisez une étiquette par défaut pour SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+    - Étiquette par défaut pour Outlook : [l’application d’une étiquette de rétention par défaut à un dossier Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - S’il existe plusieurs règles qui affectent une étiquette à appliquer automatiquement et que le contenu remplit les critères de plusieurs stratégies, l’étiquette de rétention de la plus ancienne stratégie d'étiquetage automatique (par date de création) est affectée.
 
@@ -231,7 +231,7 @@ Vous pouvez ensuite approfondir vos informations à l’aide de [Explorateur de 
 > [!TIP]
 >Envisagez d’utiliser d’autres informations sur la classification des données, telles que les classifieurs et les types d’informations sensibles, pour vous aider à identifier le contenu que vous devrez peut-être conserver ou supprimer, ou à gérer comme enregistrements.
 
-Le Centre de sécurité et conformité Office 365 contient des informations de présentation équivalentes pour les étiquettes de rétention de **tableau de bord** > **gouvernance d’informations**, ainsi que des informations plus détaillées de **la gouvernance des informations** > **d’activité des étiquettes**. Pour plus d’informations sur la surveillance des étiquettes de rétention dans cet ancien centre d’administration, voir la documentation suivante :
+Le Centre de sécurité et conformité Office 365 contient des informations de présentation équivalentes pour les étiquettes de rétention de **tableau de bord** > **gouvernance d’informations**, ainsi que des informations plus détaillées de **la gouvernance des informations** > **d’activité des étiquettes**. Pour plus d’informations sur la surveillance des étiquettes de rétention dans cet ancien centre d’administration, voir la documentation suivante :
 - [Afficher les rapports de gouvernance des données](view-the-data-governance-reports.md)
 - [Prise en main de la classification des données](data-classification-overview.md).
 - [Afficher l’activité des étiquettes pour les documents](view-label-activity-for-documents.md)
@@ -252,7 +252,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Fonctionnalité|Stratégie de rétention |Étiquette de rétention|
 |:-----|:-----|:-----|:-----|
 |Paramètres de rétention permettant conservation puis suppression, conservation uniquement ou suppression uniquement |Oui |Oui |
-|Charges de travail prises en charge : <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Groupes Microsoft 365 <br />- Skype Entreprise <br />- Teams<br />- Yammer|<br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui | <br /> Oui, sauf dossiers publics <br /> Oui <br /> Oui <br /> Oui <br /> Non <br /> Non <br /> Non |
+|Charges de travail prises en charge : <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Groupes Microsoft 365 <br />- Skype Entreprise <br />- Teams<br />- Yammer|<br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui <br /> Oui | <br /> Oui, sauf dossiers publics <br /> Oui <br /> Oui <br /> Oui <br /> Non <br /> Non <br /> Non |
 |Rétention appliquée automatiquement | Oui | Oui |
 |Rétention appliquée en fonction de conditions <br /> – types d’informations sensibles, requêtes KQL et mots clés, classificateurs entrainables | Non | Oui |
 |Rétention appliquée manuellement | Non | Oui |
@@ -261,13 +261,13 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Déclaration d’un élément comme enregistrement| Non | Oui |
 |Démarrage de la période de rétention à la date d’étiquetage ou en fonction d’un événement | Non | Oui |
 |Révisions avant élimination | Non| Oui |
-|Preuve de la destruction pendant 7 ans | Non |Oui, lorsque vous utilisez la révision avant destruction ou que l’élément est marqué comme enregistrement|
+|Preuve de la destruction pendant 7 ans | Non |Oui, lorsque vous utilisez la révision avant destruction ou que l’élément est marqué comme enregistrement|
 |Audit des activités administratives| Oui | Oui|
-|Identification des éléments soumis à une stratégie de rétention : <br /> - Recherche de contenu <br /> - Page classification des données, explorateur de contenu, explorateur d’activité | <br /> Non <br /> Non | <br /> Oui <br /> Oui|
+|Identification des éléments soumis à une stratégie de rétention : <br /> - Recherche de contenu <br /> - Page classification des données, explorateur de contenu, explorateur d’activité | <br /> Non <br /> Non | <br /> Oui <br /> Oui|
 
-Notez que vous pouvez utiliser les stratégies de rétention et les étiquettes de rétention comme méthodes de rétention complémentaires. Par exemple :
+Notez que vous pouvez utiliser les stratégies de rétention et les étiquettes de rétention comme méthodes de rétention complémentaires. Par exemple :
 
-1. Vous créez et configurez une stratégie de rétention qui supprime automatiquement le contenu cinq ans après sa dernière modification, et l’appliquez à tous les comptes OneDrive.
+1. Vous créez et configurez une stratégie de rétention qui supprime automatiquement le contenu cinq ans après sa dernière modification, et l’appliquez à tous les comptes OneDrive.
 
 2. Vous créez et configurez une étiquette de rétention qui conserve du contenu de façon définitive et l’ajoutez à une stratégie d’étiquette que vous publiez sur tous les comptes OneDrive. Vous expliquez aux utilisateurs comment appliquer manuellement cette étiquette à des documents spécifiques, qui ne doivent pas être supprimés automatiquement, même s’ils n’ont pas été modifiés depuis cinq ans.
 
@@ -277,7 +277,7 @@ Pour plus d’informations sur la façon dont les stratégies et les étiquettes
 
 Contrairement aux étiquettes de rétention, vous pouvez appliquer plusieurs stratégies de rétention au même contenu. Chaque stratégie de rétention peut engendrer une action de conservation et une action de suppression. De plus, cet élément peut également être soumis à ces actions à partir d’une étiquette de rétention.
 
-Dans ce scénario, lorsque les éléments peuvent être soumis à plusieurs paramètres de rétention qui peuvent entrer en conflit avec un autre, qu’est-ce qui a priorité sur la détermination du résultat ?
+Dans ce scénario, lorsque les éléments peuvent être soumis à plusieurs paramètres de rétention qui peuvent entrer en conflit avec un autre, qu’est-ce qui a priorité sur la détermination du résultat ?
 
 Le résultat n’est pas la stratégie de rétention unique ou  l’étiquette de rétention unique qui l’emporte, mais la durée de conservation d’un élément (le cas échéant) et la suppression d’un élément (le cas échéant). Ces deux actions sont calculées indépendamment l’une de l’autre, à partir des paramètres de rétention appliqués à un élément.
 
@@ -290,45 +290,45 @@ Plusieurs facteurs déterminent la suppression d’un élément, notamment l’a
 Utilisez ce flux pour comprendre les résultats de la rétention et de la suppression d’un seul élément, où chaque niveau agit comme l’élément décisif pour les conflits, de haut en bas. Si le résultat est déterminé par le premier niveau, car il n’y a plus de conflits, il n’est pas nécessaire de passer au niveau supérieur, et ainsi de suite.
 
 > [!IMPORTANT]
-> Si vous utilisez des étiquettes de rétention : avant d’utiliser ce flux pour déterminer le résultat de plusieurs paramètres de rétention sur le même élément, assurez-vous de [ l’étiquette de rétention qui est appliquée](#only-one-retention-label-at-a-time).
+> Si vous utilisez des étiquettes de rétention : avant d’utiliser ce flux pour déterminer le résultat de plusieurs paramètres de rétention sur le même élément, assurez-vous de [ l’étiquette de rétention qui est appliquée](#only-one-retention-label-at-a-time).
 
 ![Diagramme des principes de rétention](../media/principles-of-retention.png)
   
-Explication pour les quatre niveaux :
+Explication pour les quatre niveaux :
   
 1. **La rétention prend le pas sur la suppression.** Le contenu n’est pas supprimé définitivement lorsqu’il dispose également de paramètres de rétention pour conserver celui-ci.  
     
-    Exemple : un e-mail est soumis à une stratégie de rétention pour Exchange configurée pour supprimer les éléments après trois ans et dispose d’une étiquette de rétention également appliquée et configurée de manière à conserver les éléments pendant 5 ans.
+    Exemple : un e-mail est soumis à une stratégie de rétention pour Exchange configurée pour supprimer les éléments après trois ans et dispose d’une étiquette de rétention également appliquée et configurée de manière à conserver les éléments pendant 5 ans.
     
     L’e-mail est conservé pendant cinq ans, car cette action de rétention a la priorité sur la suppression. L’e-mail est supprimé à la fin de la période de cinq ans en raison de l’action de suppression différée.
 
 2. **La période de rétention la plus longue l’emporte.** Si du contenu est soumis à plusieurs paramètres de rétention pour différentes périodes, il est conservé jusqu’à la fin de la période de rétention la plus longue.
     
-    Exemple : les documents du site SharePoint marketing sont soumis à deux stratégies de rétention. La première stratégie de rétention est configurée pour que tous les sites SharePoint conservent des éléments pendant cinq ans. La seconde stratégie de rétention est configurée pour que tous les sites SharePoint conservent des éléments pendant dix ans.
+    Exemple : les documents du site SharePoint marketing sont soumis à deux stratégies de rétention. La première stratégie de rétention est configurée pour que tous les sites SharePoint conservent des éléments pendant cinq ans. La seconde stratégie de rétention est configurée pour que tous les sites SharePoint conservent des éléments pendant dix ans.
     
     Les documents de ce site SharePoint marketing sont conservés pendant 10 ans, car il s’agit de la période de rétention la plus longue.
 
-3. **L’explicite l’emporte sur l’implicite.** Applicable pour déterminer quand les éléments seront supprimés : 
+3. **L’explicite l’emporte sur l’implicite.** Applicable pour déterminer quand les éléments seront supprimés : 
     
     1. Une étiquette de rétention (même appliquée) fournit une rétention explicite par rapport aux stratégies de rétention, car les paramètres de rétention sont appliqués à un élément individuel plutôt qu’affecté à partir d’un conteneur de façon implicite. Cela signifie qu’une action de suppression d’une étiquette de rétention est toujours prioritaire par rapport à une action de suppression de toute stratégie de rétention.
         
-        Exemple : un document est soumis à deux stratégies de rétention qui ont respectivement une action de suppression de cinq ans et de dix ans, et également une étiquette de rétention qui a une action de suppression de sept ans.
+        Exemple : un document est soumis à deux stratégies de rétention qui ont respectivement une action de suppression de cinq ans et de dix ans, et également une étiquette de rétention qui a une action de suppression de sept ans.
         
         Le document est supprimé après 7 ans, car l’action de suppression de l’étiquette de rétention est prioritaire.
     
-    2. Lorsque vous disposez de stratégies de rétention uniquement : si une stratégie de rétention pour un emplacement est définie pour l’utilisation d’une configuration d’inclusion (par exemple, des utilisateurs spécifiques à la courrier Exchange), la stratégie de rétention a la priorité sur les stratégies de rétention non étendues pour le même emplacement.
+    2. Lorsque vous disposez de stratégies de rétention uniquement : si une stratégie de rétention pour un emplacement est définie pour l’utilisation d’une configuration d’inclusion (par exemple, des utilisateurs spécifiques à la courrier Exchange), la stratégie de rétention a la priorité sur les stratégies de rétention non étendues pour le même emplacement.
         
         Une stratégie de rétention non étendue est où un emplacement est sélectionné sans spécifier d’instances spécifiques. Par exemple, **Courrier Exchange** et le paramètre par défaut **Tous les destinataires** est une stratégie de rétention non étendue. Ou, **sites SharePoint** et le paramètre par défaut de **Tous les sites**. Lorsque les stratégies de rétention sont étendues, elles ont une priorité égale à ce niveau.
         
-        Exemple 1 : un courrier électronique est soumis à deux stratégies de rétention. La première stratégie de rétention est non étendue et supprime les éléments après dix ans. La deuxième stratégie de rétention est étendue aux boîtes aux lettres spécifiques et supprime les éléments après cinq ans.
+        Exemple 1 : un courrier électronique est soumis à deux stratégies de rétention. La première stratégie de rétention est non étendue et supprime les éléments après dix ans. La deuxième stratégie de rétention est étendue aux boîtes aux lettres spécifiques et supprime les éléments après cinq ans.
         
         Le courrier électronique est supprimé après cinq ans, car l’action de suppression de la stratégie de rétention étendue a la priorité sur la stratégie de rétention non étendue.
         
-        Exemple 2 : un document dans le compte OneDrive d’un utilisateur est soumis à deux stratégies de rétention. La première stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après 10 ans. La seconde stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après sept ans.
+        Exemple 2 : un document dans le compte OneDrive d’un utilisateur est soumis à deux stratégies de rétention. La première stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après 10 ans. La seconde stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après sept ans.
         
         La suppression de ce document ne peut pas être déterminée à ce niveau, car les deux stratégies de rétention sont étendues.
 
-4. **La période de suppression la plus courte l’emporte** Applicable pour déterminer quand les éléments seront supprimés des stratégies de rétention et que les résultats n’ont pas pu être résolus à partir du niveau précédent : le contenu est supprimé à la fin de la période de rétention la plus courte.
+4. **La période de suppression la plus courte l’emporte** Applicable pour déterminer quand les éléments seront supprimés des stratégies de rétention et que les résultats n’ont pas pu être résolus à partir du niveau précédent : le contenu est supprimé à la fin de la période de rétention la plus courte.
     
     Exemple : un document dans le compte OneDrive d’un utilisateur est soumis à deux stratégies de rétention. La première stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après 10 ans. La seconde stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après sept ans.
     
@@ -336,9 +336,9 @@ Explication pour les quatre niveaux :
 
 Notez que les éléments soumis à la conservation eDiscovery sont également soumis au premier principe de rétention. ils ne peuvent pas être supprimés par une stratégie de rétention ou une étiquette de rétention. Lorsque cette suspension est libérée, les principes de rétention continuent de s’appliquer. Par exemple, ils peuvent être soumis à une période de rétention non expirée ou à une action de suppression différée.
 
-Exemples plus complexes qui combinent les actions de conservation et de suppression :
+Exemples plus complexes qui combinent les actions de conservation et de suppression :
 
-1. Ces paramètres de rétention sont appliqués à un élément :
+1. Ces paramètres de rétention sont appliqués à un élément :
     
     - Une stratégie de rétention pour la suppression uniquement après cinq ans
     - Une stratégie de rétention qui conserve pendant trois ans, puis supprime
@@ -348,7 +348,7 @@ Exemples plus complexes qui combinent les actions de conservation et de suppress
     
     Bien que les deux stratégies de rétention aient des dates différentes pour les actions de suppression, l’élément le plus ancien possible peut être supprimé à la fin de la période de rétention la plus longue, qui dépasse les deux dates de suppression. Dans cet exemple, il n’y a pas de conflit à résoudre pour les dates de suppression de sorte que tous les conflits soient résolus par le deuxième niveau.
 
-2.  Ces paramètres de rétention sont appliqués à un élément :
+2.  Ces paramètres de rétention sont appliqués à un élément :
     
     - Une stratégie de rétention non étendue qui supprime uniquement après dix ans
     - Une stratégie de rétention étendue qui conserve pendant cinq ans, puis supprime
@@ -372,7 +372,7 @@ Lorsque vous effectuez l'une de ces actions, tout contenu SharePoint ou OneDrive
 
 Pour plus d’informations sur la bibliothèque de conservation et de préservation des documents, consultez [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
-En raison du comportement pendant la période de grâce, si vous rétablissez la stratégie ou rétablissez l’état de l’emplacement dans un délai de 30 jours, la stratégie reprend sans perte de données permanente pendant cette période.
+En raison du comportement pendant la période de grâce, si vous rétablissez la stratégie ou rétablissez l’état de l’emplacement dans un délai de 30 jours, la stratégie reprend sans perte de données permanente pendant cette période.
 
 ## <a name="auditing-retention-configuration"></a>Audit de la configuration de rétention
 
@@ -380,7 +380,7 @@ Les actions de l'administrateur concernant les politiques de rétention et les �
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
 
-Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter au Centre de sécurité et conformité Office 365 – PowerShell](/powershell/exchange/connect-to-scc-powershell). Utilisez ensuite l’une des applets de commande suivantes :
+Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter au Centre de sécurité et conformité Office 365 – PowerShell](/powershell/exchange/connect-to-scc-powershell). Utilisez ensuite l’une des applets de commande suivantes :
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
@@ -394,11 +394,15 @@ Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter
 
 - [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
 
+- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
+
 - [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
 
 - [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
 - [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
+
+- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig )
 
 - [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
@@ -409,6 +413,7 @@ Pour utiliser les applets de commande, vous devez tout d’abord [vous connecter
 - [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
 
 - [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Moment d’utilisation des stratégies et étiquettes de rétention ou des conservations eDiscovery 
 
@@ -422,7 +427,7 @@ Synthèse de la comparaison de la rétention et des conservations:
 
 |Considération|Rétention |Conservations eDiscovery|
 |:-----|:-----|:-----|:-----|
-|Besoin commercial : |Conformité |Informations juridiques |
+|Besoin commercial : |Conformité |Informations juridiques |
 |Étendue du temps: |À long terme |Court terme |
 |Focus: |Vaste, basé sur le contenu |Spécifique, basé sur l’utilisateur |
 |Dates de début et de fin configurables: |Oui |Non |
@@ -433,7 +438,7 @@ Si le contenu est soumis à la fois aux paramètres de rétention et à une cons
 
 Si vous utilisez des outils eDiscovery plus anciens pour conserver les données, consultez ces ressources:
 
-- Exchange : 
+- Exchange : 
     - [Conservation inaltérable et conservation pour litige](/exchange/security-and-compliance/in-place-and-litigation-holds)
     - [Comment identifier le type de conservation placé sur une boîte aux lettres Exchange Online](./identify-a-hold-on-an-exchange-online-mailbox.md)
 
@@ -444,15 +449,15 @@ Si vous utilisez des outils eDiscovery plus anciens pour conserver les données,
 
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>Utilisez des stratégies et étiquettes de rétention plutôt que les anciennes fonctionnalités
 
-Si, dans le cadre de la gouvernance des informations, vous avez besoin de conserver ou de supprimer proactivement du contenu dans Microsoft 365, nous vous recommandons d’utiliser les stratégies de rétention et les étiquettes de rétention plutôt que les anciennes fonctionnalités suivantes.
+Si, dans le cadre de la gouvernance des informations, vous avez besoin de conserver ou de supprimer proactivement du contenu dans Microsoft 365, nous vous recommandons d’utiliser les stratégies de rétention et les étiquettes de rétention plutôt que les anciennes fonctionnalités suivantes.
 
-Si vous utilisez ces fonctionnalités, elles continueront de fonctionner parallèlement aux stratégies et étiquettes de rétention. Toutefois, nous vous recommandons d’utiliser à l’avenir les stratégies de rétention et les étiquettes de rétention à la place. Elles vous fournissent un mécanisme unique pour gérer de manière centralisée la rétention et la suppression de contenu dans Microsoft 365.
+Si vous utilisez ces fonctionnalités, elles continueront de fonctionner parallèlement aux stratégies et étiquettes de rétention. Toutefois, nous vous recommandons d’utiliser à l’avenir les stratégies de rétention et les étiquettes de rétention à la place. Elles vous fournissent un mécanisme unique pour gérer de manière centralisée la rétention et la suppression de contenu dans Microsoft 365.
 
-**Anciennes fonctionnalités dans Exchange Online :**
+**Anciennes fonctionnalités dans Exchange Online :**
 
 - [Balises de rétention et stratégies de rétention](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), aussi appelées [gestion des enregistrements de messagerie (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) (suppression uniquement)
 
-**Anciennes fonctionnalités dans SharePoint et OneDrive :**
+**Anciennes fonctionnalités dans SharePoint et OneDrive :**
 
 - [Stratégies de suppression des documents](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (suppression uniquement)
     
@@ -466,8 +471,8 @@ Si vous avez configuré des sites SharePoint pour des stratégies de type de con
 
 ## <a name="related-information"></a>Informations connexes
 
-- [Limites de SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Limites et spécifications de Microsoft Teams](/microsoftteams/limits-specifications-teams) 
+- [Limites de SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Limites et spécifications de Microsoft Teams](/microsoftteams/limits-specifications-teams) 
 - [Ressources pour vous aider à respecter les réglementations en matière de gouvernance des informations et de gestion des enregistrements](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>Instructions de configuration

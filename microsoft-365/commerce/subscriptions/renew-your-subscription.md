@@ -1,5 +1,5 @@
 ---
-title: Renouveler Microsoft 365 pour les entreprises
+title: Renouveler Microsoft 365 pour les entreprises
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,21 +18,21 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Découvrez comment renouveler votre Microsoft 365 en activant ou en désactivant la facturation récurrente.
+description: Découvrez comment renouveler la plupart des abonnements Microsoft 365 Entreprises en activant ou en désactivant la facturation récurrente.
 ms.date: 05/04/2021
-ms.openlocfilehash: 7421bb59a26d3c88114ebd9145dcbfe3916e7472
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 43dd467d83375f74c7650262c40021ba631e3c72
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344637"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594036"
 ---
-# <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
+# <a name="renew-microsoft-365-for-business"></a>Renouveler Microsoft 365 pour les entreprises
 
 > [!IMPORTANT]
 > Depuis le 26 janvier 2021, les nouveaux comptes bancaires ne sont plus pris en charge pour les clients en Belgique, en France, en Italie, au Luxembourg, au Portugal, en Espagne, et aux États-Unis. Si vous êtes un client existant dans l’un de ces pays, vous pouvez continuer à payer votre abonnement avec un compte bancaire existant et ajouter de nouveaux abonnements à celui-ci, mais pourvu que le compte bancaire soit en règle.
 
-Cet article s'applique uniquement à la plupart des abonnements Microsoft 365 pour les entreprises payants.
+Cet article s'applique uniquement à la plupart des abonnements Microsoft 365 pour les entreprises payants.
   
 Pour renouveler un abonnement avec une clé de produit prépayée achetée auprès d’un magasin ou d’un partenaire Microsoft, voir [Rechercher et entrer votre clé de produit](../enter-your-product-key.md).
 
@@ -53,7 +53,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
@@ -78,6 +78,6 @@ Si vous avez prépayé votre abonnement avec une clé de produit, votre abonneme
 ## <a name="related-content"></a>Contenu associé
 
 [Réactiver votre abonnement](reactivate-your-subscription.md) (article)\
-[Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md) (article)\
+[Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement ?](what-if-my-subscription-expires.md) (article)\
 [Entrez votre de produit](../enter-your-product-key.md) (article)\
-[Acheter votre version d’essai de Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md) (article)
+[Acheter votre version d’essai de Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md) (article)
