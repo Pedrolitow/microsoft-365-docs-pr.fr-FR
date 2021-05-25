@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Les membres du groupe Microsoft 365 disposent d'une messagerie de groupe et d'un espace de travail partagé pour les conversations, les fichiers et les événements du calendrier, du flux et du planificateur.
-ms.openlocfilehash: d8bf2e20b428063b99d540896bac3e6e1ae59481
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3e4fa36520247179b653f799f7b2a061b9d9f4a9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535865"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635593"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
-Dans la section **Groupes** du Centre d’administration Microsoft 365, vous pouvez créer et gérer les types de groupes suivants : 
+Dans la section **Groupes** du Centre d’administration Microsoft 365, vous pouvez créer et gérer les types de groupes suivants : 
 
 - **Microsoft 365 Groups** (anciennement groupes Office 365) est utilisé pour la collaboration entre les utilisateurs, à l’intérieur et à l’extérieur de votre entreprise.
 - **Les groupes de distribution** sont utilisés pour envoyer des notifications par courrier électronique à un groupe de personnes.
@@ -39,15 +39,15 @@ Dans la section **Groupes** du Centre d’administration Microsoft 365, vous po
 - Les **Groupes de sécurité à extension courrier** sont utilisés pour accorder l’accès aux ressources telles que SharePoint et envoyer par e-mail des notifications à ces utilisateurs.
 - Les **Boîtes aux lettres partagées** sont utilisées lorsque plusieurs personnes doivent accéder à la même boîte aux lettres, par exemple, une information d’entreprise ou une adresse de courrier du support technique.
 
-## <a name="microsoft-365-groups"></a>Groupes Microsoft 365
+## <a name="microsoft-365-groups"></a>Groupes Microsoft 365
 
-Les Groupes Microsoft 365 sont utilisés pour la collaboration entre utilisateurs, aussi bien à l’intérieur qu’à l’extérieur de votre entreprise. Pour chaque groupe Microsoft 365, les membres bénéficient d’un e-mail de groupe et d’un espace de travail partagé pour les conversations, les fichiers et les événements de calendrier, ainsi que d’un planificateur.
+Les Groupes Microsoft 365 sont utilisés pour la collaboration entre utilisateurs, aussi bien à l’intérieur qu’à l’extérieur de votre entreprise. Pour chaque groupe Microsoft 365, les membres bénéficient d’un e-mail de groupe et d’un espace de travail partagé pour les conversations, les fichiers et les événements de calendrier, ainsi que d’un planificateur.
 
 Vous pouvez ajouter des personnes externes à votre organisation dans le cadre d’un groupe, à partir du moment où cette fonction est [activée par l'administrateur](manage-guest-access-in-groups.md). Vous pouvez également permettre aux expéditeurs externes d’envoyer des e-mails vers l’adresse de messagerie du groupe.
 
-Les groupes Microsoft 365 peuvent être [configurés pour l’appartenance dynamique à Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), ce qui permet aux membres d’un groupe d’être ajoutés ou supprimés automatiquement en fonction de leurs attributs, tels que le service, le lieu, le titre, etc.
+Les groupes Microsoft 365 peuvent être [configurés pour l’appartenance dynamique à Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), ce qui permet aux membres d’un groupe d’être ajoutés ou supprimés automatiquement en fonction de leurs attributs, tels que le service, le lieu, le titre, etc.
 
-Les groupes Microsoft 365 sont accessibles via des applications mobiles comme Outlook pour iOS et Android.
+Les groupes Microsoft 365 sont accessibles via des applications mobiles comme Outlook pour iOS et Android.
 
 Les membres du groupe peuvent Envoyer en tant que ou Envoyer de la part de l’adresse e-mail du groupe si cette fonction a été [activée par l'administrateur](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
@@ -55,15 +55,15 @@ Les membres du groupe peuvent Envoyer en tant que ou Envoyer de la part de l’a
 
 Les [Groupes de distribution](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) sont utilisés pour envoyer des notifications à un groupe de personnes. Ils peuvent recevoir des e-mails externes s’ils sont activés par l’administrateur.
 
-Les groupes de distribution conviennent aux situations dans lesquelles vous devez diffuser des informations à un groupe de personnes, tel que « Personnes dans le bâtiment A » ou « Tout le monde chez Contoso ».
+Les groupes de distribution conviennent aux situations dans lesquelles vous devez diffuser des informations à un groupe de personnes, tel que « Personnes dans le bâtiment A » ou « Tout le monde chez Contoso ».
 
-Les groupes de distribution peuvent être [mis à niveau vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md).
+Les groupes de distribution peuvent être [mis à niveau vers des groupes Microsoft 365](../manage/upgrade-distribution-lists.md).
 
 Des groupes de distribution peuvent être ajoutés à une équipe dans Microsoft Teams.
 
 ## <a name="security-groups"></a>Groupes de sécurité
 
-Les [Groupes de sécurité](../email/create-edit-or-delete-a-security-group.md) sont utilisés pour accorder l’accès aux ressources Microsoft 365 telles que SharePoint. Ils peuvent simplifier l’administration, car vous n’avez qu'à gérer le groupe qu’au lieu d’ajouter de manière individuelle des utilisateurs dans chaque ressource.
+Les [Groupes de sécurité](../email/create-edit-or-delete-a-security-group.md) sont utilisés pour accorder l’accès aux ressources Microsoft 365 telles que SharePoint. Ils peuvent simplifier l’administration, car vous n’avez qu'à gérer le groupe qu’au lieu d’ajouter de manière individuelle des utilisateurs dans chaque ressource.
 
 Les groupes de sécurité peuvent contenir des utilisateurs ou des appareils. La création d’un groupe de sécurité pour les appareils peut être utilisée avec des services de gestion des appareils mobiles, tels que Intune.
 
@@ -87,12 +87,11 @@ Les boîtes aux lettres partagées peuvent recevoir des e-mails externes si l’
 
 Les boîtes aux lettres partagées incluent un calendrier qui peut être utilisé pour la collaboration.
 
-Les utilisateurs disposant d’autorisations sur la boîte aux lettres du groupe peuvent Envoyer en tant que ou Envoyer de la part pour le compte de l’adresse de messagerie de la boîte aux lettres si l’administrateur leur a accordé cette autorisation. Cette fonctionnalité est particulièrement utile pour les boîtes aux lettres d’aide et de support, car les utilisateurs peuvent envoyer des e-mails à partir du « Support technique de Contoso » ou du « Bureau d'accueil du bâtiment A ».
+Les utilisateurs disposant d’autorisations sur la boîte aux lettres du groupe peuvent Envoyer en tant que ou Envoyer de la part pour le compte de l’adresse de messagerie de la boîte aux lettres si l’administrateur leur a accordé cette autorisation. Cette fonctionnalité est particulièrement utile pour les boîtes aux lettres d’aide et de support, car les utilisateurs peuvent envoyer des e-mails à partir du « Support technique de Contoso » ou du « Bureau d'accueil du bâtiment A ».
 
-Pour le moment, il n'est pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Est-ce une fonction que vous souhaitez avoir ? Faites-le nous savoir. **[Votez ici](https://go.microsoft.com/fwlink/?linkid=871518)**.
+Pour le moment, il n'est pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Est-ce une fonction que vous souhaitez avoir ? Faites-le nous savoir. **[Votez ici](https://go.microsoft.com/fwlink/?linkid=871518)**.
 
 ## <a name="related-content"></a>Contenu associé
 
-[En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)
-
+[En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
 [Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)

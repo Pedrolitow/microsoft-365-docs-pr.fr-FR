@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurez des étiquettes de confidentialité pour le chiffrement qui protège vos données en limitant l’accès et l’utilisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f6fff2bc595e9317ef037929a8a6828935b15bbf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532085"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624680"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restreindre l'accès au contenu grâce à la mise en place d'un chiffrement par les étiquettes de confidentialité
 
@@ -427,6 +427,10 @@ Pour utiliser le chiffrement, vous devrez peut-être effectuer des tâches de co
 - Activer la protection à partir d’Azure Information Protection
     
     Pour que le chiffrement soit appliqué par les étiquettes de confidentialité, le service de protection (Azure Rights Management) à partir d’Azure Information Protection doit être activé pour votre client. Chez les nouveaux clients, il s’agit du paramètre par défaut, mais vous devrez peut-être activer manuellement le service. Pour plus d’informations, consultez [Activation du service de protection à partir d’Azure Information Protection](/azure/information-protection/activate-service).
+
+- Vérifier la configuration réseau requise
+    
+    Vous devrez peut-être apporter quelques modifications sur vos appareils réseau tels que les pare-feux. Pour obtenir des détails, voir [Pare-feu et infrastructure réseau](/azure/information-protection/requirements#firewalls-and-network-infrastructure) dans la documentation Azure Information Protection.
 
 - Configurer Exchange pour Azure Information Protection
     

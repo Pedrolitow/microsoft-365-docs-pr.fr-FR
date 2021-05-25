@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572656"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625220"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -368,7 +368,7 @@ Vous devez appliquer un verrou de conservation une fois la stratégie de rétent
 
 Mettre en place des stratégies de rétention n’octroie pas de verrouillage de conservation, vous pouvez supprimer vos stratégies à tout moment, ce qui a pour effet de désactiver les paramètres de rétention appliqués précédemment. Vous pouvez également conserver la politique, mais supprimer un site pour SharePoint ou un compte pour OneDrive, ou modifier le statut de l'emplacement en le désactivant, ou encore désactiver la stratégie.
  
-Lorsque vous effectuez l'une de ces actions, tout contenu SharePoint ou OneDrive soumis à la conservation en vertu de la stratégie est conservé pendant 30 jours afin d'éviter toute perte de données par inadvertance. Pendant cette période de grâce de 30 jours, vous ne pouvez pas supprimer le site, les fichiers supprimés sont toujours conservés (les fichiers continuent d’être ajoutés à la bibliothèque de conservation et de préservation des documents), mais la tâche de la minuterie qui nettoie périodiquement la bibliothèque de conservation et de préservation des documents est suspendue pour ces fichiers de sorte que vous pouvez les restaurer si nécessaire.
+Lorsque vous effectuez l'une de ces actions, tout contenu SharePoint ou OneDrive soumis à la conservation en vertu de la stratégie est conservé pendant 30 jours afin d'éviter toute perte de données par inadvertance. Pendant cette période de grâce de 30 jours, les fichiers supprimés sont toujours conservés (les fichiers continuent d’être ajoutés à la bibliothèque de conservation et de préservation des documents), mais la tâche de la minuterie qui nettoie périodiquement la bibliothèque de conservation et de préservation des documents est suspendue pour ces fichiers de sorte que vous pouvez les restaurer si nécessaire.
 
 Pour plus d’informations sur la bibliothèque de conservation et de préservation des documents, consultez [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 

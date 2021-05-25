@@ -1,5 +1,5 @@
 ---
-title: Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
+title: Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,26 +23,26 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Donner à un utilisateur le droit d'accéder à la boîte aux lettres d'un autre utilisateur, ce qui permet à l'utilisateur de lire et d'envoyer des courriels à partir de la boîte aux lettres de l'autre utilisateur.
-ms.openlocfilehash: 3514be02f2ef82b727edfcf86c0bd3f6b8515510
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e5f7b154fa37ae9775e7208574b2a5395e7c239
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535961"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634279"
 ---
-# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
+# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Accorder des autorisations de boîte aux lettres à un autre utilisateur – Aide de l’administrateur
 
 En tant qu’administrateur, certaines exigences de votre entreprise vous entraînent à autoriser certains utilisateurs à accéder à la boîte aux lettres d’un autre utilisateur. Par exemple, vous souhaitez peut-être autoriser un assistant à envoyer ou à lire du courrier dans la boîte aux lettres de son responsable ou donner la possibilité à un de vos utilisateurs d’envoyer du courrier de la part d’un autre utilisateur. Cette rubrique vous explique comment procéder pour y parvenir.
   
 Si vous cherchez des informations concernant la création et la gestion de boîtes aux lettres partagées, consultez l’article [Créer une boîte aux lettres partagée](../email/create-a-shared-mailbox.md).
     
-## <a name="looking-to-set-up-mailbox-permissions"></a>Vous cherchez à configurer des autorisations de boîte aux lettres ?
+## <a name="looking-to-set-up-mailbox-permissions"></a>Vous cherchez à configurer des autorisations de boîte aux lettres ?
 
-Les autorisations de boîte aux lettres vous permettent d’accorder un accès en lecture/écriture à une boîte aux lettres à un utilisateur autre que son propriétaire. L’article qui suit vous fournira les informations dont vous avez besoin pour configurer et utiliser cette fonctionnalité :
+Les autorisations de boîte aux lettres vous permettent d’accorder un accès en lecture/écriture à une boîte aux lettres à un utilisateur autre que son propriétaire. L’article qui suit vous fournira les informations dont vous avez besoin pour configurer et utiliser cette fonctionnalité :
   
- **Configuration des autorisations :**
+ **Configuration des autorisations :**
   
-pour configurer des autorisations, la première étape consiste à décider des actions que vous voulez autoriser l’autre utilisateur à pouvoir effectuer dans la boîte aux lettres donnée. Vous pouvez autoriser un utilisateur à lire des courriers dans la boîte aux lettres, à envoyer des courriers de la part d’un autre utilisateur et à envoyer des courriers comme s’ils étaient envoyés à partir de cette boîte aux lettres. Consultez les articles suivants pour configurer chaque type d’autorisation :
+pour configurer des autorisations, la première étape consiste à décider des actions que vous voulez autoriser l’autre utilisateur à pouvoir effectuer dans la boîte aux lettres donnée. Vous pouvez autoriser un utilisateur à lire des courriers dans la boîte aux lettres, à envoyer des courriers de la part d’un autre utilisateur et à envoyer des courriers comme s’ils étaient envoyés à partir de cette boîte aux lettres. Consultez les articles suivants pour configurer chaque type d’autorisation :
   
 - [Lire du courrier à partir de la boîte aux lettres d’un autre utilisateur](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
@@ -50,13 +50,13 @@ pour configurer des autorisations, la première étape consiste à décider des 
 
 - [Envoyer un e-mail de la part d’un autre utilisateur](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
- **Propagation des modifications :**
+ **Propagation des modifications :**
   
-lorsque vous avez défini les autorisations, la propagation des modifications dans le système et leur application peut prendre jusqu’à 60 minutes.
+lorsque vous avez défini les autorisations, la propagation des modifications dans le système et leur application peut prendre jusqu’à 60 minutes.
   
- **Comment utiliser une boîte aux lettres une fois les autorisations configurées :**
+ **Comment utiliser une boîte aux lettres une fois les autorisations configurées :**
   
-Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthodes s’offrent à vous pour y accéder. Pour obtenir de l’aide sur cette fonction, consultez cet article : [Accéder à la boîte aux lettres d’une autre personne](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081).
+Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthodes s’offrent à vous pour y accéder. Pour obtenir de l’aide sur cette fonction, consultez cet article : [Accéder à la boîte aux lettres d’une autre personne](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081).
 
 > [!NOTE]
 > Les autorisations peuvent être configurées uniquement dans le locataire actuel de l’organisation. Il n’est pas possible de configurer des autorisations de boîte aux lettres pour les utilisateurs de locataire.
@@ -207,9 +207,7 @@ Lorsque vous avez reçu l’accès à une boîte aux lettres, plusieurs méthode
 
 ## <a name="related-content"></a>Contenu associé
   
-[ Gérer les éléments du courrier et du calendrier d'une autre personne](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (article)
-    
-[Envoyer un e-mail d'une autre personne ou d'un groupe ](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)(article)
-
+[Gérer les éléments du courrier et du calendrier d'une autre personne](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (article)\   
+[Envoyer un e-mail d'une autre personne ou d'un groupe](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (article)\
 [Modifier un nom d'utilisateur et une adresse électronique ](../add-users/change-a-user-name-and-email-address.md)(vidéo)
 

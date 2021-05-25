@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Découvrez comment configurer votre abonnement Microsoft 365 Business Standard.
-ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
+ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244454"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624416"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Configurer Microsoft Business Standard
 
@@ -37,11 +37,11 @@ ms.locfileid: "52244454"
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>Ajouter votre domaine pour personnaliser la connexion
 
-Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
+Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité d’utiliser un domaine que vous possédez ou d’en acheter un pendant l’inscription.
 
 - Si vous avez acheté un nouveau domaine lorsque vous vous êtes inscrit, votre domaine est configuré et vous pouvez accéder à [Ajouter des utilisateurs et attribuer des licences](#add-users-and-assign-licenses).
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification d’administrateur général. 
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) à l’aide de vos informations d’identification d’administrateur général. 
 
 2. Choisissez **Configurer** pour démarrer l’Assistant.
 
@@ -50,10 +50,10 @@ Lorsque vous achetez Microsoft 365 Business Standard, vous avez la possibilité
 4. Dans l’étape **ajouter un domaine**, entrez le nom de domaine que vous voulez utiliser (par exemple, contoso.com).
 
     > [!IMPORTANT]
-    > Si vous avez acheté un domaine pendant l’inscription, vous ne verrez pas l’étape **Ajouter un domaine** ici. Accédez à [Ajouter des utilisateurs](#add-users-and-assign-licenses) à la place.
+    > Si vous avez acheté un domaine pendant l'inscription, vous ne verrez pas l'étape **Ajouter un domaine** ici. Allez à [Ajouter](#add-users-and-assign-licenses) des utilisateurs à la place.
 
     
-4. Suivez les étapes de l’Assistant pour [Créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes le propriétaire du domaine. Si vous savez qu’il s’agit de votre hôte de domaine, consultez également les [Instructions propres à l’hôte](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Suivez les étapes de l’Assistant pour [Créer des enregistrements DNS auprès d’un fournisseur d’hébergement DNS pour Office 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) qui vérifie que vous êtes le propriétaire du domaine. Si vous savez qu’il s’agit de votre hôte de domaine, consultez également les [Instructions propres à l’hôte](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
 
     Si votre fournisseur d’hébergement est GoDaddy ou si un autre hôte est activé avec [connexion de domaine](/office365/admin/get-help-with-domains/domain-connect), le processus est simple et vous êtes automatiquement invité à vous connecter et à laisser Microsoft s’authentifier en votre nom.
 
@@ -65,11 +65,11 @@ Vous pouvez ajouter des utilisateurs dans l’Assistant, mais vous pouvez égale
 
 ## <a name="add-users-in-the-wizard"></a>Ajouter des utilisateurs dans l’Assistant
 
-Les utilisateurs que vous ajoutez à l’Assistant reçoivent automatiquement une licence Microsoft 365 Business Standard.
+Les utilisateurs que vous ajoutez à l’Assistant reçoivent automatiquement une licence Microsoft 365 Business Standard.
 
 1. Si votre abonnement Microsoft 365 Business Standard est associé à des utilisateurs existants (par exemple, si vous utilisiez Azure AD Connect), vous avez la possibilité de leur attribuer des licences à ce stade. Poursuivez et ajoutez leur des licences aussi.
 
-2. Une fois que vous avez ajouté les utilisateurs, vous avez également la possibilité de partager des informations d’identification avec les nouveaux utilisateurs que vous ajoutez. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou de les télécharger.
+2. Après avoir ajouté des utilisateurs, vous avez également la possibilité de partager des informations d'identification avec les nouveaux utilisateurs que vous avez ajouté. Vous pouvez choisir de les imprimer, de les envoyer par e-mail ou les télécharger.
 
 ## <a name="connect-your-domain"></a>Sélectionner votre domaine
 
@@ -78,10 +78,10 @@ Les utilisateurs que vous ajoutez à l’Assistant reçoivent automatiquement un
   
 Pour configurer des services, vous devez mettre à jour des enregistrements au niveau de votre hôte DNS ou de votre bureau d’enregistrement de domaines.
   
-1. L’Assistant Configuration détecte généralement votre bureau d’enregistrement et vous fournit un lien vers des instructions détaillées vous permettant de mettre à jour vos enregistrements NS sur le site web du bureau d’enregistrement. Si ce n’est pas le cas,[Modifier les serveurs de noms de manière à configurer Office 365 avec n'importe quel bureau d'enregistrement de domaines](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
+1. L’Assistant Configuration détecte généralement votre bureau d’enregistrement et vous fournit un lien vers des instructions détaillées vous permettant de mettre à jour vos enregistrements NS sur le site web du bureau d’enregistrement. Si ce n’est pas le cas,[Modifier les serveurs de noms de manière à configurer Office 365 avec n'importe quel bureau d'enregistrement de domaines](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - Si vous avez des enregistrements DNS existants (par exemple, un site web existant), mais que votre hôte DNS est activé pour [connexion de domaine](/office365/admin/get-help-with-domains/domain-connect), sélectionnez **Ajouter des enregistrements pour moi**. Sur la page **sélectionnez votre services en ligne**, acceptez toutes les valeurs par défaut, puis sélectionnez **Suivant**, puis sélectionnez **Autoriser** sur la page de votre hôte DNS.
-    - Si vous avez des enregistrements DNS existants avec d’autres hôtes DNS (non activé pour la connexion de domaine), vous pouvez gérer vos propres enregistrements DNS pour vous assurer que les services existants restent connectés. Pour plus d’informations, consultez [notions de base du domaine](/office365/admin/get-help-with-domains/dns-basics).
+    - Si vous avez des enregistrements DNS existants avec d'autres hôtes DNS (non activés pour la connexion de domaine), vous devrez gérer vos propres enregistrements DNS pour vous assurer que les services existants restent connectés. [Voir les bases du domaine pour plus d'informations](/office365/admin/get-help-with-domains/dns-basics).
 
 2. Suivez les étapes de l’Assistant, et la messagerie électronique et d’autres services sont configurés pour vous.
 
@@ -101,7 +101,7 @@ Pour configurer des services, vous devez mettre à jour des enregistrements au n
 
 2. Choisissez **Fichier** \> **Informations** \> **Ajouter un compte**.
 
-3. Entrez votre adresse e-mail Microsoft , puis sélectionnez **Se connecter**.
+3. Entrez votre adresse e-mail Microsoft , puis sélectionnez **Se connecter**.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
@@ -131,7 +131,7 @@ Vous pouvez également utiliser le Centre d’administration Exchange pour impor
   
 ### <a name="use-a-public-website"></a>Utiliser un site web public
 
-Microsoft 365 n'inclut pas de site web public pour votre entreprise. Si vous voulez en configurer un, vous pouvez utiliser un partenaire Microsoft, tel que GoDaddy ou WIX.
+Microsoft 365 n'inclut pas de site web public pour votre entreprise. Si vous voulez en configurer un, vous pouvez utiliser un partenaire Microsoft, tel que GoDaddy ou WIX.
   
 1. Dans le centre d’administration, accédez à **Ressources**, puis sélectionnez **Site web public**.
 
@@ -139,4 +139,7 @@ Microsoft 365 n'inclut pas de site web public pour votre entreprise. Si vous vo
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-Pour plus d’informations, voir [Utiliser un site web public](../../business-video/create-web-site.md).
+## <a name="related-content"></a>Contenu associé
+
+[Créer un site web](../../business-video/create-web-site.md) (vidéo)\
+[Microsoft 365 pour votre entreprise](../../business-video/index.yml) (page du lien)

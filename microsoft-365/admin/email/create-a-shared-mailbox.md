@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Créez une boîte aux lettres partagée pour permettre à plusieurs personnes au sein de votre entreprise de partager la responsabilité de la lecture du courrier électronique envoyé à une adresse et de la réponse à ces courriers.
-ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537606"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635497"
 ---
 # <a name="create-a-shared-mailbox"></a>Créer une boîte aux lettres partagée 
 
 > [!NOTE]
 > Si votre organisation utilise un environnement hybride Exchange, vous devez utiliser le Centre d’administration Exchange (CAE) local pour créer et gérer des boîtes aux lettres partagées. Consultez la rubrique [Créer des boîtes aux lettres partagées dans le Centre d’administration Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
-> Si vous n'êtes pas sûr de devoir créer une boîte aux lettres partagée ou un groupe Microsoft 365 pour Outlook, voir [Comparer les groupes](../create-groups/compare-groups.md) pour plus de conseils. Sachez qu’il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Si vous le souhaitez, dites-le nous en [votant ici](https://go.microsoft.com/fwlink/?linkid=871518).
+> Si vous n'êtes pas sûr de devoir créer une boîte aux lettres partagée ou un groupe Microsoft 365 pour Outlook, voir [Comparer les groupes](../create-groups/compare-groups.md) pour plus de conseils. Sachez qu’il n’est pour l'instant pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Si vous le souhaitez, dites-le nous en [votant ici](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Vous pouvez facilement créer des boîtes aux lettres partagées de sorte qu’un groupe de personnes puisse surveiller et envoyer facilement du courrier électronique à partir d’une adresse de courrier commune, comme info@contoso.com. Quand une personne du groupe répond à un courrier envoyé à la boîte aux lettres partagée, la réponse semble provenir de la boîte aux lettres partagée et non de la personne.
 
@@ -44,7 +44,7 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 
 ## <a name="create-a-shared-mailbox-and-add-members"></a>Créer une boîte aux lettres partagée et ajouter des membres
   
-1. Connectez-vous à l’aide d’un compte d’administrateur général ou d’un compte d’administrateur Exchange. Si vous recevez le message « **Vous ne disposez pas des autorisations requises pour accéder à cette page ou effectuer cette action** », cela signifie que vous n’êtes pas un administrateur. 
+1. Connectez-vous à l’aide d’un compte d’administrateur général ou d’un compte d’administrateur Exchange. Si vous recevez le message « **Vous ne disposez pas des autorisations requises pour accéder à cette page ou effectuer cette action** », cela signifie que vous n’êtes pas un administrateur. 
 
 ::: moniker range="o365-worldwide"
 
@@ -82,15 +82,15 @@ Avant de créer une boîte aux lettres partagée, assurez-vous de lire la sectio
 
 Vous bénéficiez à présent d’une boîte aux lettres partagée dotée d’un calendrier partagé. Passez maintenant à l'étape suivante : bloquer la connexion pour le compte de boîte aux lettres partagée.
 
-## <a name="which-permissions-should-you-use"></a>Quelles autorisations devez-vous utiliser ?
+## <a name="which-permissions-should-you-use"></a>Quelles autorisations devez-vous utiliser ?
 
-Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres partagée :
+Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres partagée :
 
-- **Accès total** : l'autorisation Accès total permet à un utilisateur d'ouvrir la boîte aux lettres partagée et d'agir comme le propriétaire de cette boîte aux lettres. Après avoir accédé à la boîte aux lettres partagée, un utilisateur peut créer des éléments de calendrier, lire, afficher, supprimer et modifier des courriers électroniques, créer des tâches et contacts de calendrier. Toutefois, un utilisateur doté d'une autorisation Accès total ne peut pas envoyer de messages à partir de la boîte aux lettres partagée à moins de disposer de l'autorisation Envoyer en tant que ou Envoyer de la part de.
+- **Accès total** : l'autorisation Accès total permet à un utilisateur d'ouvrir la boîte aux lettres partagée et d'agir comme le propriétaire de cette boîte aux lettres. Après avoir accédé à la boîte aux lettres partagée, un utilisateur peut créer des éléments de calendrier, lire, afficher, supprimer et modifier des courriers électroniques, créer des tâches et contacts de calendrier. Toutefois, un utilisateur doté d'une autorisation Accès total ne peut pas envoyer de messages à partir de la boîte aux lettres partagée à moins de disposer de l'autorisation Envoyer en tant que ou Envoyer de la part de.
 
 - **Envoyer en tant que**: l'autorisation Envoyer en tant que permet à un utilisateur d'emprunter l'identité du propriétaire de la boîte aux lettres partagée pour envoyer des messages. Par exemple, si Katerina se connecte à la boîte aux lettres partagée du service Marketing et envoie un message, le service Marketing semblera en être l'expéditeur.
 
-- **Envoyer de la part de** : l’autorisation Envoyer de la part de permet à l’utilisateur d’envoyer des messages de la part de la boîte aux lettres partagée. Par exemple, si John se connecte à la boîte aux lettres partagée Reception Building 32 et envoie un message, ce dernier semblera avoir été envoyé par « John de la part de Reception Building 32 ». Vous ne pouvez pas utiliser le Centre d’administration Exchange pour accorder l’autorisation « Envoyer de la part de ». Pour ce faire, vous devez utiliser l’applet de commande **Set-Mailbox** avec le paramètre _GrantSendonBehalf_.
+- **Envoyer de la part de** : l’autorisation Envoyer de la part de permet à l’utilisateur d’envoyer des messages de la part de la boîte aux lettres partagée. Par exemple, si John se connecte à la boîte aux lettres partagée Reception Building 32 et envoie un message, ce dernier semblera avoir été envoyé par « John de la part de Reception Building 32 ». Vous ne pouvez pas utiliser le Centre d’administration Exchange pour accorder l’autorisation « Envoyer de la part de ». Pour ce faire, vous devez utiliser l’applet de commande **Set-Mailbox** avec le paramètre _GrantSendonBehalf_.
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Utiliser le CAE pour modifier la délégation de boîte aux lettres partagée
 
@@ -110,7 +110,7 @@ Vous pouvez utiliser les autorisations suivantes avec une boîte aux lettres par
 
 Chaque boîte aux lettres partagée a un compte d'utilisateur correspondant. Vous n'avez pas été invité à fournir un mot de passe lors de la création de la boîte aux lettres partagée ? Le compte a un mot de passe qui est généré par le système (inconnu). Vous n'êtes pas censé utiliser le compte pour vous connecter à la boîte aux lettres partagée.
 
-Mais que se passe-t-il si un administrateur se contente de réinitialiser le mot de passe du compte d'utilisateur de la boîte aux lettres partagée ? Ou que se passe-t-il si un utilisateur malveillant accède aux informations d’identification du compte de boîte aux lettres partagée ? Cela permettrait au compte d’utilisateur de se connecter à la boîte aux lettres partagée et d'envoyer des courriers électroniques. Pour empêcher cela, vous devez bloquer la connexion pour le compte qui est associé à la boîte aux lettres partagée.
+Mais que se passe-t-il si un administrateur se contente de réinitialiser le mot de passe du compte d'utilisateur de la boîte aux lettres partagée ? Ou que se passe-t-il si un utilisateur malveillant accède aux informations d’identification du compte de boîte aux lettres partagée ? Cela permettrait au compte d’utilisateur de se connecter à la boîte aux lettres partagée et d'envoyer des courriers électroniques. Pour empêcher cela, vous devez bloquer la connexion pour le compte qui est associé à la boîte aux lettres partagée.
 
 ::: moniker range="o365-worldwide"
 
@@ -134,7 +134,7 @@ Mais que se passe-t-il si un administrateur se contente de réinitialiser le mot
 
 3. Dans le menu contextuel des propriétés, sélectionnez **Bloquer la connexion**.
 
-    **Remarque :** si le compte était déjà bloqué, le bouton indiquerait **Débloquer la connexion**.
+    **Remarque :** si le compte était déjà bloqué, le bouton indiquerait **Débloquer la connexion**.
 
 4. Dans le menu contextuel **Modifier le statut de la connexion**, vérifiez que l’option Empêcher l’utilisateur de se connecter est activée, sélectionnez **Enregistrer** puis **Fermer**.
 
@@ -148,12 +148,12 @@ Mais que se passe-t-il si un administrateur se contente de réinitialiser le mot
 
 3. Dans le menu contextuel des propriétés, sélectionnez **Bloquer la connexion**.
 
-    **Remarque :** si le compte était déjà bloqué, le bouton indiquerait **Débloquer la connexion**.
+    **Remarque :** si le compte était déjà bloqué, le bouton indiquerait **Débloquer la connexion**.
 
 4. Dans le menu contextuel **Modifier le statut de la connexion**, vérifiez que l’option Empêcher l’utilisateur de se connecter est activée, sélectionnez **Enregistrer** puis **Fermer**.
 ::: moniker-end
 
-Pour obtenir des instructions sur la manière de bloquer des comptes d’utilisateurs avec Azure AD PowerShell (y compris de nombreux comptes en même temps), voir [Bloquer des comptes d’utilisateurs avec Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
+Pour obtenir des instructions sur la manière de bloquer des comptes d’utilisateurs avec Azure AD PowerShell (y compris de nombreux comptes en même temps), voir [Bloquer des comptes d’utilisateurs avec Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>Ajouter la boîte aux lettres partagée à Outlook
 
@@ -161,7 +161,7 @@ Si le mappage automatique est activé dans votre entreprise (par défaut, la plu
 
 Le mappage automatique est défini sur les boîtes aux lettres des utilisateurs, et non sur la boîte aux lettres partagée.   Par conséquent, si vous essayez d'utiliser un groupe de sécurité pour gérer les personnes autorisées à accéder à la boîte aux lettres partagée, le mappage automatique ne fonctionnera pas. Par conséquent, si vous voulez utiliser le mappage automatique, vous devez attribuer des autorisations de manière explicite. Le mappage automatique est activé par défaut. Pour découvrir comment désactiver ce service, voir [Supprimer le mappage automatique d’une boîte aux lettres partagée](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
 
-Pour plus d’informations sur les boîtes aux lettres partagées dans Outlook, voir :
+Pour plus d’informations sur les boîtes aux lettres partagées dans Outlook, voir :
 
 - <a href="https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd" target="_blank">Ouvrir et utiliser une boîte aux lettres partagée dans Outlook</a>
 
@@ -190,7 +190,7 @@ Vous pouvez accéder à une boîte aux lettres partagée sur un appareil mobile 
 
 ## <a name="use-the-shared-calendar"></a>Utiliser le calendrier partagé
 
-Lorsque vous avez créé la boîte aux lettres partagée, vous avez automatiquement créé un calendrier partagé. Nous préférons le calendrier de la boîte aux lettres partagée plutôt qu’un calendrier SharePoint pour effectuer le suivi de rendez-vous et d’où se trouvent les personnes. Un calendrier partagé est intégré à Outlook et est beaucoup plus facile à utiliser qu'un calendrier SharePoint.
+La création de votre boîte aux lettres partagée entraîne automatiquement la création d’un calendrier partagé. Nous vous recommandons d’utiliser ce calendrier plutôt qu’un calendrier SharePoint pour effectuer le suivi de vos rendez-vous et de la localisation de vos contacts. Un calendrier partagé est intégré avec Outlook et est beaucoup plus facile à utiliser que celui de SharePoint.
 
 1. Dans l'application Outlook, accédez à l'affichage Calendrier, puis sélectionnez la boîte aux lettres partagée.
 
@@ -200,12 +200,8 @@ Lorsque vous avez créé la boîte aux lettres partagée, vous avez automatiquem
 
 ## <a name="related-content"></a>Contenu associé
 
-[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) (article)
-
-[Configurer une boîte aux lettres partagée](configure-a-shared-mailbox.md) (article)
-
-[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) (article)
-
-[Supprimer une licence d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md) (article)
-
+[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) (article)\
+[Configurer une boîte aux lettres partagée](configure-a-shared-mailbox.md) (article)\
+[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Supprimer une licence d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md) (article)\
 [Résoudre les problèmes liés aux boîtes aux lettres partagées](resolve-issues-with-shared-mailboxes.md) (article)

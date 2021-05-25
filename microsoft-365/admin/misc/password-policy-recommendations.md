@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593908"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635973"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -128,7 +128,9 @@ Pour plus d'informations, voir [Configurer l'authentification multifacteur](../s
 
 L’authentification multifacteur basée sur le risque s'assure que, lorsque notre système détecte une activité suspecte, il peut défier l’utilisateur pour s’assurer qu’il s’agit bien du propriétaire du compte. 
   
-## <a name="want-to-know-more-recommended-reading"></a>Vous souhaitez en savoir plus ? Lecture recommandée
+## <a name="next-steps"></a>Étapes suivantes
+
+Vous voulez en savoir plus sur la gestion des mots de passe ? Voici quelques recommandations de lecture :
 
 - [Les mots de passe web sont-ils performants ?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
@@ -144,10 +146,7 @@ L’authentification multifacteur basée sur le risque s'assure que, lorsque not
 
 ## <a name="related-content"></a>Contenu associé
 
-[Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)
-
-[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](../add-users/set-password-to-never-expire.md) (article)
-
-[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)
-
+[Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)\
+[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](../add-users/set-password-to-never-expire.md) (article)\
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
 [Renvoyer le mot de passe d’un utilisateur – Aide de l’administrateur](../add-users/resend-user-password.md) (article)
