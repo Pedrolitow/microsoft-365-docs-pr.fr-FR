@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625400"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651155"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Gérer les rubriques dans le centre de rubriques dans Rubriques microsoft
 
@@ -40,7 +40,7 @@ Les gestionnaires de connaissances vous aident à guider les rubriques découver
 
 - **Suggérée** : une rubrique a été identifiée par l’IA et dispose de ressources de prise en charge, de connexions et de propriétés suffisantes. (Ils sont marqués comme **sujet suggéré dans** l’interface utilisateur.)
 
-- **Confirmé :** rubrique qui a été découverte par l’IA et qui a été validée. La validation de rubrique se produit dans les cas suivants :
+- **Confirmé :** une rubrique qui a été découverte par l’IA et qui a été validée. La validation de rubrique se produit dans les cas suivants :
 
    - Un gestionnaire de connaissances confirme une rubrique. Un gestionnaire de [connaissances confirme une rubrique dans](manage-topics.md#confirmed-topics) la page Gérer les **rubriques.**
 
@@ -66,7 +66,7 @@ Pour gérer des rubriques dans le centre de rubriques, vous devez :
 
 - Avoir la Qui [**pouvez gérer les autorisations des rubriques.**](./topic-experiences-user-permissions.md) Les administrateurs d'informations peuvent accorder cette autorisation aux utilisateurs dans les paramètres d'autorisation Rubriques Viva. 
 
-Vous ne pourrez pas afficher la page Gérer les rubriques dans le centre de **rubriques,** sauf si vous Qui pouvez gérer **les rubriques.**
+Vous ne pourrez pas afficher la page Gérer les rubriques dans le centre de **rubriques,** sauf si vous avez la Qui pouvez gérer **les rubriques.**
 
 Dans le centre de rubriques, un gestionnaire de connaissances peut consulter les rubriques qui ont été identifiées aux emplacements sources que vous avez spécifiés, et peut les confirmer ou les supprimer. Un gestionnaire de connaissances peut également créer et publier de nouvelles pages de rubriques si aucune page n’a été trouvée dans la découverte de rubrique, ou modifier des pages existantes si elles doivent être mises à jour.
 
@@ -94,7 +94,7 @@ Pour consulter une rubrique suggérée :
 
 ### <a name="quality-score"></a>Score de qualité
 
-Un score de qualité est attribué à chaque rubrique qui apparaît dans la page **Rubriques** suggérées. Le score de qualité reflète la quantité d’informations que l’utilisateur moyen verra pour les informations sur le sujet, en gardant à l’esprit que chaque utilisateur peut voir plus ou moins d’informations en raison des autorisations qu’il peut ou non avoir sur les informations d’une rubrique. 
+Un score de qualité est attribué à chaque rubrique qui apparaît sur la page **Rubriques** suggérées. Le score de qualité reflète la quantité d’informations que l’utilisateur moyen verra pour les informations sur le sujet, en gardant à l’esprit que chaque utilisateur peut voir plus ou moins d’informations en raison des autorisations qu’il peut ou non avoir sur les informations d’une rubrique. 
 
 Le score de qualité peut aider à donner un aperçu des rubriques les plus pertinentes et peut être utile pour trouver des rubriques qui peuvent avoir besoin d’être modifiées manuellement. Par exemple, une rubrique avec un score de qualité inférieur peut être le résultat de l’SharePoint des utilisateurs sur les fichiers ou sites pertinents que l’IA a inclus dans la rubrique. Un collaborateur peut alors modifier la rubrique afin d’nclure les informations (le cas échéant), lesquelles seront ensuite consultables par tous les utilisateurs qui peuvent consulter la rubrique.
 
@@ -112,10 +112,18 @@ Pour consulter une rubrique confirmée :
 
 2. Dans la page de rubrique, examinez la page de rubrique, puis sélectionnez **Modifier** si vous devez apporter des modifications à la page.
 
-Notez que vous pouvez toujours choisir de rejeter une rubrique confirmée. Pour ce faire, allez à la  rubrique sélectionnée sous l’onglet Confirmé, puis sélectionnez **le x** si vous souhaitez rejeter la rubrique.
+Notez que vous pouvez toujours choisir de rejeter une rubrique confirmée. Pour ce faire, sélectionnez la  rubrique sélectionnée sous l’onglet Confirmé, puis sélectionnez **le x** si vous souhaitez rejeter la rubrique.
 
 ## <a name="published-topics"></a>Rubriques publiées
 
 Les rubriques publiées ont été modifiées afin que des informations spécifiques apparaissent toujours aux personnes qui rencontrent la page. Les rubriques créées manuellement sont également répertoriées ici.
 
    ![Gérer les rubriques](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="topic-count-dashboard"></a>Tableau de bord nombre de rubriques
+
+Ce graphique dans l’affichage Tableau de bord vous permet de voir le nombre de rubriques dans votre centre de rubriques Rubriques. Le graphique présente le nombre de rubriques par étape du cycle de vie des rubriques et indique également la tendance des nombres de rubriques au fil du temps. Les gestionnaires de connaissances peuvent surveiller visuellement la fréquence à laquelle les nouvelles rubriques sont découvertes par l’IA et la fréquence à laquelle les rubriques sont confirmées ou publiées par le gestionnaire de connaissances ou les actions de l’utilisateur.
+
+Les gestionnaires de connaissances peuvent voir un nombre différent de rubriques représentées dans la liste des rubriques de la page Gérer les **rubriques** qu’ils ne voient dans le tableau de bord. Cela est dû au fait qu’un gestionnaire de connaissances n’a peut-être pas accès à toutes les rubriques. Le nombre présenté dans l’affichage tableau de bord est pris avant d’appliquer le contrôle d’autorisation. 
+
+   ![Capture d’écran du tableau de bord nombre de rubriques](../media/knowledge-management/topic-count-dashboard.png)

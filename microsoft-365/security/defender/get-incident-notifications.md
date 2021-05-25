@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299963"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651391"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtenir des notifications d’incident par courrier électronique
 
@@ -35,7 +35,7 @@ ms.locfileid: "52299963"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Vous pouvez configurer Microsoft 365 Defender pour informer votre personnel par courrier électronique des nouveaux incidents ou des mises à jour des incidents existants. Vous pouvez choisir d’obtenir des notifications basées sur :
 
@@ -57,11 +57,11 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
 
 1. Dans le volet de navigation, sélectionnez Paramètres > Microsoft 365 **notifications >'incident.**
 2. Sélectionnez **Ajouter un élément.**
-3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant**.
+3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant.**
 4. Dans la **page Paramètres de** notification, configurez :
     - **Gravité de l’alerte** : choisissez les gravités d’alerte qui déclencheront une notification d’incident. Par exemple, si vous souhaitez uniquement être informé des incidents de gravité élevée, sélectionnez **Élevé**.
     - **Étendue du groupe d’appareils** : vous pouvez spécifier tous les groupes d’appareils ou sélectionner dans la liste des groupes d’appareils de votre client.
-    - **Notifier uniquement lors de la** première occurrence par incident : sélectionnez si vous souhaitez une notification uniquement sur la première alerte qui correspond à vos autres sélections. Les mises à jour ou alertes ultérieures liées à l’incident n’envoient pas de notifications supplémentaires.
+    - **Notifier uniquement lors de la** première occurrence par incident : sélectionnez si vous souhaitez recevoir une notification uniquement sur la première alerte qui correspond à vos autres sélections. Les mises à jour ou alertes ultérieures liées à l’incident n’envoient pas de notifications supplémentaires.
     - **Inclure le nom de l’organisation dans l’e-mail** : sélectionnez si vous souhaitez que le nom de votre organisation apparaisse dans la notification par courrier électronique.
     - **Inclure un** lien portail propre au client : sélectionnez si vous souhaitez ajouter un lien avec l’ID de client dans la notification par courrier électronique pour accéder à un client Microsoft 365 spécifique.
 
@@ -72,7 +72,7 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
 
 Pour modifier une règle existante, sélectionnez-la dans la liste des règles. Dans le volet avec le  nom de la règle, sélectionnez Modifier la règle et a apporté vos modifications dans les pages De **base,** **Paramètres** de notification et **Destinataires.**
 
-Pour modifier une règle existante, sélectionnez-la dans la liste des règles. Dans le volet avec le nom de la règle, sélectionnez **Supprimer.**
+Pour supprimer une règle, sélectionnez-la dans la liste des règles. Dans le volet avec le nom de la règle, sélectionnez **Supprimer.**
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble des incidents](incidents-overview.md)

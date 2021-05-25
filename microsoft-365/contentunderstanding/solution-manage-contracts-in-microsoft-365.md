@@ -12,17 +12,19 @@ ms.collection: m365solution-managecontracts
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint Syntex, Microsoft Teams et Power Automate.
-ms.openlocfilehash: 18866425cb331b01525dd488a6688608a3d1e559
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint syntex, SharePoint listes, Microsoft Teams et Power Automate.
+ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636217"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651283"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer les contrats à l’aide d’Microsoft 365 solution
 
 Cet article explique comment créer une solution de gestion des contrats pour votre organisation à l’aide SharePoint Syntex et des composants de Microsoft 365. Il vous fournit une infrastructure pour vous aider à planifier et à créer une solution qui répond aux besoins uniques de votre entreprise. Même si cette solution ne convient pas à l’ensemble de votre entreprise, une partie de celle-ci peut être adoptée dans votre planification de création d’une solution de gestion de contrat personnalisée.
+
+*Cet ensemble de contenu documente une solution Microsoft 365 développée par Tom Mol design avec l’équipe de stratégie de solution de travail moderne chez Microsoft.*
 
 ## <a name="identify-the-business-problem"></a>Identifier le problème d’entreprise
 

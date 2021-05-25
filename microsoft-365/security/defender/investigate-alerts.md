@@ -1,6 +1,6 @@
 ---
 title: Examiner les alertes dans Microsoft 365 Defender
-description: Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
+description: Examinez les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297127"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651347"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Les alertes sont la base de tous les incidents et indiquent l’occurrence d’événements malveillants ou suspects dans votre environnement. Les alertes font généralement partie d’une attaque plus large et fournissent des indices sur un incident.
 
@@ -44,13 +44,13 @@ La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous ar
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente des alertes":::
 
-Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour Endpoint, Microsoft Defender pour Office 365 et Microsoft 365 Defender s’affichent ici.
+Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour endpoint, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
 Par défaut, la file d’attente des alertes dans Microsoft 365 centre de sécurité affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste, ce qui vous permet de la voir en premier. 
 
 Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet filtres pour la file d’attente d’alertes":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet de filtres pour la file d’attente d’alertes":::
 
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
@@ -72,14 +72,12 @@ Vous pouvez également sélectionner l’action Ouvrir la **page d’alerte** pr
 
 Une page d’alerte se compose des sections suivantes : 
 
-- Article sur l’alerte
-- Actions entreprises (y compris les biens touchés)
-- Événements connexes
+- Article d’alerte, qui est la chaîne d’événements et d’alertes liés à cette alerte dans l’ordre chronologique
 - Détails récapitulatifs
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Exemple de page de détails d’une alerte dans le centre de Microsoft 365 de sécurité":::
 
-Tout au long d’une page d’alerte, vous pouvez sélectionner les ellipses (**...**) en regard de n’importe quelle entité pour voir les actions disponibles, telles que l’ouverture de la page de biens spécifique ou la prise d’étapes de correction spécifiques.
+Dans une page d’alerte, vous pouvez sélectionner les ellipses (**...**) à côté de n’importe quelle entité pour voir les actions disponibles, telles que l’ouverture de la page d’alerte ou la liaison de l’alerte à un autre incident.
 
 ### <a name="analyze-affected-assets"></a>Analyser les ressources affectées
 
