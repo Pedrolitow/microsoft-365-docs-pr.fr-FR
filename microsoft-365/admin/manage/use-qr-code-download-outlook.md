@@ -1,5 +1,5 @@
 ---
-title: Utiliser un code QR pour vous inscrire aux applications mobiles Outlook
+title: Utiliser un code QR pour vous Outlook applications mobiles
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,37 +14,38 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-description: Découvrez comment utiliser un code QR pour authentifier et télécharger Outlook Mobile.
-ms.openlocfilehash: bc8ab14d3c1c0621e84d0c95ad7448c6c50825d6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Découvrez comment utiliser un code QR pour vous authentifier et télécharger Outlook mobile.
+ms.openlocfilehash: 2c1853a6ea1dd1a5d2ad30b975d1dbd23b942040
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914965"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635997"
 ---
-# <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Utiliser un code QR pour vous inscrire aux applications mobiles Outlook
+# <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Utiliser un code QR pour vous Outlook applications mobiles
 
 > [!IMPORTANT]
-> Cette fonctionnalité est uniquement disponible pour les organisations qui ont mis en place la publication ciblée dans le Centre d’administration Microsoft 365. Pour activer la version ciblée et en savoir plus sur son fonctionnement, voir Configurer les options de publication [standard ou ciblée.](release-options-in-office-365.md) Nous allons développer davantage d’organisations au cours des prochaines semaines jusqu’à la prévisualisation publique. La prévisualisation publique fournit un accès en avant-première aux fonctionnalités de Microsoft 365.
+> Cette fonctionnalité est uniquement disponible pour les organisations qui ont mis en place la publication ciblée dans Microsoft 365'administration centrale. Pour activer la version ciblée et en savoir plus sur son fonctionnement, voir Configurer les options de publication [standard ou ciblée.](release-options-in-office-365.md) Nous allons développer davantage d’organisations au cours des prochaines semaines jusqu’à la prévisualisation publique. La prévisualisation publique fournit un accès en avant-première Microsoft 365 fonctionnalités.
 
-En tant qu’administrateur Microsoft 365, vous pouvez permettre à vos utilisateurs de se connectent à Outlook pour Android ou à l’application iOS sur leurs appareils mobiles sans avoir à entrer leur nom d’utilisateur et leur mot de passe. En analysant un code QR, les utilisateurs peuvent s’authentifier et se connectent en toute sécurité à Outlook Mobile.
+En tant qu’administrateur Microsoft 365, vous pouvez permettre à vos utilisateurs de se connectés à Outlook pour Android ou l’application iOS sur leurs appareils mobiles sans avoir à entrer leur nom d’utilisateur et leur mot de passe. En analysant un code QR, les utilisateurs peuvent s’authentifier en toute sécurité et se Outlook mobile.
 
-Dans Outlook sur le web ou dans d’autres applications Outlook de bureau, les utilisateurs peuvent voir des notifications les informant qu’ils peuvent utiliser Outlook sur leur appareil mobile. Ces notifications peuvent être gérées par l’administrateur à l’aide d’Exchange Powershell. Si les utilisateurs choisissent de s’envoyer eux-mêmes un SMS pour télécharger l’application sur leur appareil mobile, un code QR s’affiche sur leur ordinateur. Ils pourront analyser le code QR pour se connecter à Outlook sur leur téléphone ou tablette. Ce code QR est un jeton à durée de vie courte qui ne peut être échangé qu’une seule fois.
+Dans Outlook web ou d’autres applications de bureau Outlook, les utilisateurs peuvent voir des notifications les informant qu’ils peuvent utiliser Outlook sur leur appareil mobile. Ces notifications peuvent être gérées par l’administrateur à l’aide Exchange PowerShell. Si les utilisateurs choisissent de s’envoyer SMS message texte pour télécharger l’application sur leur appareil mobile, un code QR s’affiche sur leur ordinateur. Ils pourront analyser le code QR pour se connecter Outlook téléphone ou tablette. Ce code QR est un jeton à durée de vie courte qui ne peut être échangé qu’une seule fois.
 
 > [!NOTE]
-> Dans certains cas, vos utilisateurs devront s’authentifier à nouveau sur leur ordinateur pour générer le code QR.
+> Dans certains cas, vos utilisateurs doivent s’authentifier à nouveau sur leur ordinateur pour générer le code QR.
 
 ## <a name="use-exchange-powershell"></a>Utiliser Exchange PowerShell
 
 Cette fonctionnalité est activée par défaut. Pour désactiver cette fonctionnalité, suivez les étapes ci-dessous.
 
-1. [Connectez-vous à Exchange PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)
-2. À l’aide de PowerShell, vous pouvez désactiver les notifications informant vos utilisateurs des applications mobiles Outlook. Cela empêche également l’affichage du flux de la signature du code QR.
+1. [Connecter à Exchange PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)
+2. À l’aide de PowerShell, vous pouvez désactiver les notifications informant vos utilisateurs des Outlook applications mobiles. Cela empêche également l’affichage du flux de la signature du code QR.
 
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
-Rubriques connexes
+## <a name="related-content"></a>Contenu associé
 
-[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps)
+[Configurer les options de publication standard](release-options-in-office-365.md) ou ciblée (article)\
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps) (article)

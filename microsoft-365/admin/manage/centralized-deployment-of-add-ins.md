@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593920"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635449"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -60,7 +60,7 @@ La fonctionnalité Déploiement centralisé ne prend pas en charge ce qui suit :
 
 ### <a name="office-requirements"></a>Office Conditions requises
 
-- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des valeurs suivantes :
+- Pour word, Excel et les PowerPoint, vos utilisateurs doivent utiliser l’une des utilisations suivantes :
   - Sur un appareil Windows, version 1704 ou ultérieure des références Microsoft 365 Entreprise : référenceS E3/E5/F3 ou Business : Business Basic, Business Standard, Business Premium.
   - Sur un Mac, version 15.34 ou ultérieure.
 
@@ -88,7 +88,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
   
 #### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
   
-1. Démarrez une fenêtre PowerShell.exe avec élévation de PowerShell.exe.
+1. Démarrez une fenêtre avec PowerShell.exe élevée.
     
 2. Exécutez la commande suivante :
 
@@ -125,7 +125,7 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
   
 ## <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
 
-La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par les Azure Active Directory, notamment les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
+La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par les Azure Active Directory, y compris les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
   
 > [!NOTE]
 > Les groupes de sécurité sans extension messagerie ne sont pas actuellement pas pris en charge. 
@@ -160,11 +160,8 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-
 
 ## <a name="related-content"></a>Contenu associé
 
-[Déployer des add-ins dans le Centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)
-
-[Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)
-
-[FAQ sur le déploiement centralisé](../manage/centralized-deployment-faq.md) (article)
-
+[Déployer des add-ins dans le Centre d’administration](../manage/manage-deployment-of-add-ins.md) (article)\
+[Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)\
+[FAQ sur le déploiement centralisé](../manage/centralized-deployment-faq.md) (article)\
 [Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels](../setup/upgrade-users-to-latest-office-client.md) vers le client Office le plus récent (article)
  

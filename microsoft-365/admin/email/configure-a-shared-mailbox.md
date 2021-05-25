@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Créez une boîte aux lettres partagée et configurez certains paramètres pour ses utilisateurs, tels que le forwarding de courrier électronique et les réponses automatiques.
-ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c1d8007a2fcc45fbdd1a6943ee464e5aae8917b9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582667"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635509"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 
@@ -144,12 +144,8 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 
 ## <a name="related-content"></a>Contenu associé
 
-[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) (article)
-
-[Créer une boîte aux lettres ](create-a-shared-mailbox.md)partagée (article)
-
-[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) (article)
-
-[Supprimer une licence d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md) (article)
-
+[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) (article)\
+[Créer une boîte aux lettres partagée](create-a-shared-mailbox.md) (article)\
+[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Supprimer une licence d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md) (article)\
 [Résoudre les problèmes liés aux boîtes aux lettres partagées](resolve-issues-with-shared-mailboxes.md) (article)

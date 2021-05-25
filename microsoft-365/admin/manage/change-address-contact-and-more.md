@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
 search.appverid: MET150
-description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et la messagerie électronique.
+description: A apporter des modifications au profil de votre organisation, telles que le nom de l’organisation, l’adresse, le téléphone, le contact technique et le courrier électronique.
 ms.date: 03/30/2021
-ms.openlocfilehash: 9fc985f640f1544bf30ea1a6ccdd5c1ca19aa81f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 2646d2d83c72caa8a56f6658f005812f087101cb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572128"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635401"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modifier l'adresse de votre organisation, le contact technique et d'autres informations de profil
   
@@ -35,7 +35,7 @@ Pour modifier l’adresse associée à votre facture ou abonnement, consultez Mo
 ## <a name="edit-organization-information"></a>Modifier les informations de l'organisation
 
 > [!IMPORTANT]
-> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine les services disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
+> Vous ne pouvez pas modifier le pays ou la région de votre abonnement. En effet, le pays ou la région dans lequel se trouve votre organisation détermine quels services sont disponibles, les taxes et la devise de facturation, ainsi que l’emplacement du centre de données. Pour modifier le pays ou la région de votre organisation, inscrivez-vous à un nouveau compte, choisissez le pays ou la région souhaité, puis achetez un nouvel abonnement.
 
 Pour modifier d’autres informations sur la page de profil de votre entreprise :
   
@@ -72,7 +72,7 @@ En tant qu’administrateur, vous pouvez modifier votre adresse de messagerie de
 
 5. Modifiez l’adresse dans la **zone de courrier** de remplacement, puis sélectionnez **Suivant**.
 
-6. Entrez le code envoyé à l’adresse e-mail de remplacement et sélectionnez **OK** pour vérifier la modification.
+6. Entrez le code envoyé à l’autre adresse e-mail et sélectionnez **OK** pour vérifier la modification.
 Pour en savoir plus sur la modification d’autres informations de profil, voir Modifier vos [préférences de contact](change-contact-preferences.md) ou modifier votre langue [d’affichage.](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)
   
 ### <a name="email-signatures"></a>Signatures électroniques
@@ -81,8 +81,6 @@ Vous pouvez modifier votre signature électronique dans Outlook Web App. Pour pl
 
 ## <a name="related-content"></a>Contenu associé
 
-[Envoyer des messages électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)
-
-[Modifier un nom d’utilisateur et une adresse e-mail](../add-users/change-a-user-name-and-email-address.md) (article)
-
+[Envoyer des courriers électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
+[Modifier un nom d’utilisateur et une adresse e-mail](../add-users/change-a-user-name-and-email-address.md) (article)\
 [Configurer le transfert des e-mails dans Microsoft 365](../email/configure-email-forwarding.md) (article)

@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Ajoutez le stockage de fichiers dans Microsoft 365 abonnement. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: b573205c7053aba0339d1f32deb2996ef80f8754
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572320"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635857"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Ajouter de l’espace de stockage pour votre abonnement
 
@@ -38,7 +38,7 @@ Si vous commencez à manquer d’espace de stockage pour vos collections de site
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global ou SharePoint pour effectuer les tâches de cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global ou SharePoint pour effectuer les tâches de cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Afficher le stockage disponible
 
@@ -71,7 +71,7 @@ Si vous n’avez pas encore acheté de stockage supplémentaire pour votre abonn
 
 Si vous avez déjà acheté du  stockage de fichiers supplémentaire via le module Stockage de fichiers supplémentaire Office 365, vous pouvez suivre ces étapes pour augmenter ou réduire l’espace de stockage supplémentaire pour votre abonnement. Vous pouvez réduire le stockage jusqu’à 1 gigaoctet. Pour supprimer tout l’espace de stockage supplémentaire, [contactez le support technique.](../business-video/get-help-support.md)
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement qui contient **Stockage de fichiers supplémentaire Office 365** module.
 3. Dans la page détails du produit, dans la section **Modules,** sélectionnez **Gérer les modules.**
 4. In the **Manage add-ons** pane, from the **Add-on** list, choose **Stockage de fichiers supplémentaire Office 365**.
@@ -86,7 +86,7 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 - Office 365 Entreprise E2
 - Office 365 Entreprise E3
 - Office 365 Entreprise E4
-- Office 365 Entreprise E5
+- Office 365 Entreprise E5
 - Office sur le Web avec SharePoint Plan 1
 - Office sur le Web avec SharePoint Plan 2
 - SharePoint Online (plan 1)
@@ -104,4 +104,4 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 ## <a name="related-content"></a>Contenu associé
 
 [Gérer les limites de stockage de](/sharepoint/manage-site-collection-storage-limits) site (article)\
-[Définir l’espace de stockage par défaut pour OneDrive utilisateurs](/onedrive/set-default-storage-space)(article)
+[Définir l’espace de stockage par défaut pour OneDrive utilisateurs](/onedrive/set-default-storage-space) (article)

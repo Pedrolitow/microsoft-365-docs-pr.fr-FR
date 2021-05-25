@@ -20,22 +20,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: En savoir plus sur Microsoft 365 centre d’administration.
-ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Utilisez l’affichage simplifié dans Microsoft 365 gérer les tâches courantes ou l’affichage tableau de bord pour des paramètres et des tâches plus complexes.
+ms.openlocfilehash: bca3aa7bb071d9334f7a5162a78db89690421f1a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537390"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635889"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Vue d’ensemble du centre d’administration Microsoft 365
 
-- [Centre d’administration en affichage simplifié](#the-admin-center-in-simplified-view)
-- [Centre d’administration en affichage Tableau de bord](#the-admin-center-in-dashboard-view)
+- [Centre d’administration en affichage simplifié](#watch-the-admin-center-in-simplified-view)
+- [Centre d’administration en affichage Tableau de bord](#watch-the-admin-center-in-dashboard-view)
 
 Le Microsoft 365'administration centrale dispose de deux affichages : l’affichage simplifié permet aux petites organisations de gérer leurs tâches les plus courantes. L’affichage Tableau de bord inclut des paramètres et des tâches plus complexes. Vous pouvez basculer entre eux à partir d’un bouton en haut du centre d’administration.
 
-## <a name="the-admin-center-in-simplified-view"></a>Centre d’administration en affichage simplifié
+## <a name="watch-the-admin-center-in-simplified-view"></a>Regardez : Le Centre d’administration en affichage simplifié
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -57,11 +57,11 @@ Sous **l’onglet** Découvrir, parcourez des vidéos et des articles sur le Cen
 
 Si vous avez besoin d’aide, sélectionnez **Aide & support technique.** Recherchez la rubrique pour obtenir de l’aide et affichez la solution recommandée ou sélectionnez le casque pour contacter le support technique, puis entrez vos informations de question et de contact. 
 
-## <a name="the-admin-center-in-dashboard-view"></a>Centre d’administration en affichage Tableau de bord
+## <a name="watch-the-admin-center-in-dashboard-view"></a>Regardez : Centre d’administration en affichage Tableau de bord
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-Le Microsoft 365 d’administration est l’endroit où vous gérez votre entreprise dans le cloud. Vous pouvez effectuer des tâches telles que l’ajout et la suppression d’utilisateurs, la modification de licences et la réinitialisation des mots de passe. 
+Le Microsoft 365 d’administration est l’endroit où vous gérez votre entreprise dans le cloud. Vous pouvez effectuer des tâches telles que l’ajout et la suppression d’utilisateurs, la modification des licences et la réinitialisation des mots de passe. 
 
 Les espaces de travail spécialisés, tels que la sécurité ou la gestion des appareils, permettent un contrôle plus granulaire. Pour plus d’informations sur la façon dont les centres d’administration fonctionnent ensemble, voir Qu’en est-il des types spécifiques de [rôles informatiques](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) et d’autres espaces de travail tels que sécurité, gestion des appareils ou Exchange ? dans cet article.
 
@@ -73,9 +73,9 @@ Pour afficher d’autres tâches d’administration, développez le menu de navi
 
 Une tâche courante que vous pouvez effectuer dans le Centre d’administration consiste à ajouter un utilisateur. Pour ce faire, sélectionnez **Utilisateurs,** **Utilisateurs actifs,** puis **Ajoutez un utilisateur.** Entrez le nom de l’utilisateur et d’autres informations, puis sélectionnez **Suivant**. Suivez les invites pour terminer l’ajout de l’utilisateur. Lorsque vous avez terminé, **sélectionnez Terminer l’ajout,** puis **fermez**.
 
-Vous pouvez trier vos utilisateurs actifs par colonnes, telles que le nom **d’affichage** ou **les licences.** Pour ajouter d’autres colonnes, sélectionnez **Choisir** des colonnes, sélectionnez les colonnes que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
+Vous pouvez trier vos utilisateurs actifs par colonnes, telles que le nom **d’affichage** ou **les licences.** Pour ajouter d’autres colonnes, **sélectionnez Choisir** des colonnes, sélectionnez les colonnes que vous souhaitez ajouter, puis sélectionnez **Enregistrer.**
 
-Sélectionnez un utilisateur pour voir d’autres options, telles que la gestion de ses licences de produits.
+Sélectionnez un utilisateur pour voir d’autres options, telles que la gestion de ses licences de produit.
 
 Pour activer d’autres fonctionnalités qui s’offrent à vous avec votre abonnement, sélectionnez **Installation.** Vous pouvez activer la sécurité de la signature, la protection des applications mobiles, la protection contre la DLP et d’autres fonctionnalités incluses dans votre abonnement.
 
@@ -100,10 +100,10 @@ Lorsque vous avez besoin de votre administrateur pour réinitialiser votre mot d
     
 - **Petites entreprises**: contactez le propriétaire/copropriétaire de l'entreprise. Celui-ci octroie souvent les autorisations d'administrateur au consultant informatique qui effectue les tâches de maintenance informatique pour l'entreprise. 
   
-Si vous ne savez pas à qui contacter votre entreprise ou votre établissement scolaire pour obtenir de l’aide, essayez de demander à la personne qui vous a donné votre compte d’utilisateur et votre mot de passe.
+Si vous ne savez pas qui contacter pour obtenir de l’aide sur votre lieu de travail ou votre établissement scolaire, essayez de demander à la personne qui vous a donné votre compte d’utilisateur et votre mot de passe.
 
 > [!NOTE]
-> Les administrateurs de publication ciblée ont d’abord accès aux nouvelles fonctionnalités. De nouvelles fonctionnalités sont ensuite lancées pour tous les administrateurs. Cela signifie que vous ne voyez peut-être pas le Centre d’administration ou que son apparence peut être différente de celle décrite dans les articles d’aide. Pour être parmi les premiers à voir les nouvelles fonctionnalités, voir Participer au Centre d’administration, ci-dessous. 
+> Les administrateurs de publication ciblée ont d’abord accès aux nouvelles fonctionnalités. De nouvelles fonctionnalités sont ensuite lancées pour tous les administrateurs. Cela signifie que vous ne voyez peut-être pas le Centre d’administration ou qu’il peut ressembler à ce qui est décrit dans les articles d’aide. Pour être parmi les premiers à voir les nouvelles fonctionnalités, voir Participer au Centre d’administration, ci-dessous. 
 
 ## <a name="turn-on-targeted-release"></a>Activer la version ciblée
 
@@ -115,9 +115,9 @@ Si vous ne savez pas à qui contacter votre entreprise ou votre établissement s
     
 ## <a name="admin-center-feedback"></a>Commentaires du Centre d’administration
 
-Dans le Centre d’administration, vous pouvez faire  part à Microsoft de vos commentaires sur votre expérience en sélectionnant Donner des commentaires juste en dessous du bouton Besoin d’aide **?** en bas de chaque page. Dites-nous ce que vous aimez et ce que nous pourrions faire de mieux. En outre, il se peut que vous receviez des enquêtes dans des fenêtres de temps à autre vous demandant des informations sur vos impressions globales ou sur une expérience particulière qui vient d’être publiée. Vous pouvez également nous faire part de vos commentaires à la fin de cet article en sélectionnant **Ces informations vous ont-ils été utiles ?**
+Dans le Centre d’administration, vous pouvez faire  part à Microsoft de vos commentaires sur votre expérience en sélectionnant Donner des commentaires juste en dessous du bouton Besoin d’aide **?** en bas de chaque page. Dites-nous ce que vous aimez et ce que nous pourrions faire de mieux. En outre, il se peut que vous receviez des enquêtes de temps en temps vous demandant des informations sur vos impressions globales ou sur une expérience particulière qui vient d’être publiée. Vous pouvez également nous faire part de vos commentaires à la fin de cet article en sélectionnant **Ces informations vous ont-ils été utiles ?**
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 Vos questions ne sont-elles pas posées ici ? Go to the **Feedback** section at the bottom of this page and ask your question. 
   
@@ -133,7 +133,7 @@ Pour plus d’informations, voir [Try or buy a Microsoft 365 subscription](../co
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>J’ai trouvé un bogue ou je souhaite demander une amélioration des fonctionnalités. Comment puis-je le faire savoir à Microsoft ?
 
-Nous sommes très aimés de votre part ! Le signalement des bogues et les commentaires de partage nous aident à améliorer Microsoft 365'administration centrale. Pour nous faire  part de vos commentaires, sélectionnez le bouton Commentaires en bas de la page et utilisez le formulaire pour nous faire part de vos idées. Cochez la case et confirmez votre adresse de messagerie si vous souhaitez que quelqu’un de l’équipe Microsoft 365 centre d’administration suive vos commentaires. Nous ne pouvons pas nous engageons à suivre chaque commentaire, mais nous allons essayer ! 
+Nous sommes très aimés de votre part ! Le signalement des bogues et les commentaires de partage nous aident à améliorer Microsoft 365'administration centrale. Pour nous faire  part de vos commentaires, sélectionnez le bouton Commentaires en bas de la page et utilisez le formulaire pour nous faire part de vos idées. Cochez la case et confirmez votre adresse e-mail si vous souhaitez que quelqu’un de l’équipe Microsoft 365 centre d’administration suive vos commentaires. Nous ne pouvons pas nous engageons à suivre chaque commentaire, mais nous allons essayer ! 
   
 Vous pouvez également nous faire part de vos commentaires en dehors du Centre d’administration sur notre forum UserVoice. Vous pouvez utiliser cette page pour faire des suggestions de fonctionnalités qui peuvent être voteres par d’autres utilisateurs du forum : forum UserVoice pour le nouveau centre [d’administration.](https://go.microsoft.com/fwlink/?linkid=2024994)
 
@@ -188,4 +188,10 @@ Le Microsoft 365'administration centrale est entièrement localisée dans 40 lan
 |Vietnamien | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
+
+## <a name="related-content"></a>Contenu associé
+
+[Qu’est-ce qu Microsoft 365 administrateur de serveur ?](what-is-admin.md) (vidéo)\
+[Ajouter un administrateur](add-admin.md) (vidéo)\
+[Personnaliser le thème Microsoft 365 pour votre organisation](../admin/setup/customize-your-organization-theme.md) (article)
   

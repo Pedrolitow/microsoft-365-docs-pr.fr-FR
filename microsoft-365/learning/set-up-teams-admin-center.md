@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: 05/24/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Découvrez comment configurer Microsoft Learning (prévisualisation) dans le centre d Teams’administration Microsoft.
-ms.openlocfilehash: e5af676752064738e26f9b934a60973cb9b0200d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a96a2f3ecf7d4e1ee0c136ae155868218f08aaf4
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625297"
+ms.locfileid: "52636133"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurer Microsoft Learning (prévisualisation) dans le Centre d Teams’administration Microsoft
 
@@ -29,7 +29,7 @@ ms.locfileid: "52625297"
 
 L’administrateur Teams installe Learning (Prévisualisation) et applique des stratégies d’autorisation via Teams centre d’administration.
 
-1. Pour la prévisualisation publique, vous devez d’abord définir la stratégie de mise à jour. Pour plus d’informations, voir la Teams site Microsoft Teams [prévisualisation publique.](/MicrosoftTeams/public-preview-doc-updates)
+1. Pour Learning (Prévisualisation), vous devez d’abord définir la stratégie de mise à jour dans Teams. Pour plus d’informations, [voir Microsoft Teams prévisualisation publique.](/MicrosoftTeams/public-preview-doc-updates)
 
     1. Connectez-vous au centre Teams’administration.
 
@@ -39,17 +39,17 @@ L’administrateur Teams installe Learning (Prévisualisation) et applique des s
 
     4. Nommez la stratégie de mise à jour, ajoutez une stratégie et activer **Afficher les fonctionnalités d’aperçu.**
 
-2. L’administrateur doit informer les utilisateurs de la mise à jour de la stratégie afin qu’ils déplacent leur build vers la prévisualisation publique pour Teams. 
+2. L’administrateur doit informer les utilisateurs de la mise à jour de la stratégie afin qu’ils déplacent leur build dans la prévisualisation publique pour Teams. 
 
-    1. L’utilisateur doit sélectionner son image de profil --> à propos de --> prévisualisation publique.
+    1. Les utilisateurs doivent sélectionner leur image de profil > **à propos de** la  >  **prévisualisation publique.**
    
         ![Navigation supérieure dans l’application Teams montrant le profil de l’utilisateur](../media/learning/learning-app-select-profile-teams.png)
     
-    2. L’utilisateur doit accepter les termes de la prévisualisation publique.
+    2. Les utilisateurs doivent accepter les conditions générales **de la prévisualisation** publique.
 
         ![Basculer vers la version d’aperçu public](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. Pour les organisations qui ont des stratégies restrictives et qui doivent activer Learning, suivez le processus de la section suivante.
+3. Pour les organisations qui ont des stratégies restrictives et qui doivent activer Learning (Prévisualisation), suivez le processus de la section suivante.
 
 ## <a name="manage-settings-for-viva-learning-preview"></a>Gérer les paramètres de Learning Learning (prévisualisation)
 

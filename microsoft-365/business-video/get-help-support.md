@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Vous devez être un administrateur d’un abonnement pour les entreprises pour obtenir de l’aide de l’administrateur ou une assistance en ligne ou téléphonique dans Microsoft 365 Business Premium.
-ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535709"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635901"
 ---
 # <a name="get-support"></a>Obtenir une assistance
+
+## <a name="watch-get-help-or-support"></a>Regarder : Obtenir de l’aide ou du support 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -255,10 +257,8 @@ Vous pouvez également [rechercher dans les forums de la Communauté Microsoft 
 ::: moniker-end
 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Rechercher des documents et une formation](find-help-answers.md) (article)
-
-[Installation rapide des employés](employee-quick-setup.md) (article)
-
+[Rechercher des documents et des formations](find-help-answers.md) (article)\
+[Installation rapide des employés](employee-quick-setup.md) (article)\
 [Vue d’ensemble Microsoft 365 Business Premium configuration (vidéo)](setup-overview.md)

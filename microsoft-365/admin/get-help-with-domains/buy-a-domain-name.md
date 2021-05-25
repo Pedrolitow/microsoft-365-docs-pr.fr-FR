@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
-ms.openlocfilehash: 53c71796c09f08d1f50c58704b8dd95c1a241518
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537570"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635461"
 ---
 # <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
@@ -39,7 +39,7 @@ ms.locfileid: "52537570"
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Connectez-vous et Paramètres \> domaines acheter \> un domaine
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Connectez-vous et Paramètres \> domaines \> acheter un domaine
 
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
@@ -100,12 +100,12 @@ Pour configurer un domaine dans Microsoft 365, vous devez posséder un domaine e
 > [!CAUTION]
 > Certains bureaux d’enregistrement de domaines ou fournisseurs d’hébergement DNS n’autorisent pas la création de tous les enregistrements DNS requis par Microsoft 365. Les fournisseurs d'hébergement répertoriés ici prennent en charge tous les enregistrements nécessaires. Si vous envisagez d'utiliser un autre fournisseur d'hébergement, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de domaines), connectez-vous à Microsoft 365 en tant qu’administrateur et définissez votre domaine afin de pouvoir l’utiliser avec votre adresse de messagerie et d’autres services.
+Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de domaines), vous vous connectez à Microsoft 365 en tant qu’administrateur et vous définissez votre domaine afin de pouvoir l’utiliser avec votre adresse de messagerie et d’autres services.
   
 > [!NOTE]
 > Les SharePoint site web public en ligne de cet article s’appliquent uniquement si votre organisation a acheté Microsoft 365 avant le 9 mars 2015. 
 
-### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Bureaux d’enregistrement de domaines qui prisent en charge tous les enregistrements DNS requis pour Microsoft 365
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Les bureaux d’enregistrement de domaines qui prisent en charge tous les enregistrements DNS requis pour Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -117,10 +117,8 @@ Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de 
     
 ::: moniker-end
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Ajouter un domaine à Microsoft 365](../setup/add-domain.md) (article)
-
-[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)
-
+[Ajouter un domaine à Microsoft 365](../setup/add-domain.md) (article)\
+[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)\
 [Mettre à jour les enregistrements DNS pour conserver votre site web auprès de votre fournisseur d’hébergement actuel](../dns/update-dns-records-to-retain-current-hosting-provider.md) (article)

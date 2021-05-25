@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Créez des groupes de distribution ou des listes dans Microsoft 365 centre d’administration pour pouvoir envoyer des courriers électroniques à un groupe sans taper le nom de chaque destinataire.
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572248"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635665"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre Microsoft 365'administration
   
@@ -58,7 +58,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 1. Sélectionnez l'icône du lanceur d'applications , puis **Administrateur**.
     
-    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes les applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
+    Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les **applications** pour voir une liste alphabétique des applications à votre disposition. À partir de là, vous pouvez rechercher une application spécifique. 
     
 2. Sélectionnez **Groupes** \> **dans** le volet de navigation gauche, puis **sélectionnez Ajouter un groupe.** 
       
@@ -76,8 +76,6 @@ Consultez les [problèmes de groupe de](/office365/troubleshoot/groups/distribut
 
 ## <a name="related-content"></a>Contenu associé
 
-[Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)
-
-[Créer, modifier ou supprimer un groupe de](../email/create-edit-or-delete-a-security-group.md) sécurité dans le Centre d’administration Microsoft 365 (article)
-
+[Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\
+[Créer, modifier ou supprimer un groupe de](../email/create-edit-or-delete-a-security-group.md) sécurité dans le Centre d’administration Microsoft 365 (article)\
 [Créer une boîte aux lettres ](../email/create-a-shared-mailbox.md)partagée (article)

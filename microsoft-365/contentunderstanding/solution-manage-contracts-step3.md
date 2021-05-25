@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/19/2021
+ms.date: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: ''
 description: Découvrez comment utiliser Power Automate créer votre flux pour traiter vos contrats à l’aide d’Microsoft 365 solution.
-ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 0ddcbeff6c8bd119850e3e4ea45db2513e774433
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583099"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636253"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Étape 3. Utiliser Power Automate pour créer votre flux pour traiter vos contrats
 
@@ -27,7 +27,7 @@ Pour votre solution de gestion des contrats, vous souhaitez créer un flux Power
 
 -  Une fois qu’un contrat a été classé par SharePoint modèle Syntex, modifiez l’état du contrat en **In review**.
 - Le contrat est ensuite examiné et approuvé ou rejeté.
-- Pour les contrats approuvés, les informations de contrat sont publiées dans un onglet pour le traitement des paiements.
+- Pour les contrats approuvés, les informations sur le contrat sont publiées dans un onglet pour le traitement des paiements.
 - Pour les contrats rejetés, l’équipe est avertie pour analyse approfondie. 
 
 Le diagramme suivant illustre le flux Power Automate pour la solution de gestion des contrats.
@@ -242,7 +242,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
 ## <a name="if-the-contract-is-rejected"></a>Si le contrat est rejeté
 
-Lorsqu’un contrat a été rejeté, les éléments suivants se produisent :
+Lorsqu’un contrat a été rejeté, les choses suivantes se produisent :
 
 - Sous l’onglet **Contrats,** l’état de la carte de contrat passe à **Rejeté**.
 

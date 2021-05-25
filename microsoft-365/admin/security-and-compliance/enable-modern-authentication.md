@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Apprenez à définir des clés de Registre pour activer l’authentification moderne pour les appareils sur Microsoft Office 2013.
-ms.openlocfilehash: d358cb2ffb4284a51779e5a7c1dc894052b9ebc0
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 917ecd5c668ea43b0627ba2361f951ebc5e19725
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572284"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635689"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Activer l'authentification moderne pour Office 2013 sur les appareils Windows
 
@@ -59,7 +59,6 @@ Pour désactiver l'authentification moderne sur un appareil, définissez les cl�
    
 ## <a name="related-content"></a>Contenu associé
 
-[Connectez-vous Office 2013 avec une deuxième méthode de vérification](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (article)
-
+[Connectez-vous Office 2013 avec une deuxième méthode de vérification](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (article)\
 Outlook demande de mot de passe et [n’utilise](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) pas l’authentification moderne pour se connecter à Office 365 (article)
 

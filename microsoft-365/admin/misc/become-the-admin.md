@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre courrier électronique et de votre domaine pour prendre le contrôle d’un client non pris en charge créé par une inscription utilisateur en libre-service dans Microsoft 365.
-ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593932"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635985"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer une prise de contrôle d’administrateur interne
 
@@ -68,10 +68,7 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
   
 ## <a name="related-content"></a>Contenu associé
 
-YouTube : [3 étapes pour une](https://www.youtube.com/watch?v=xt5EsrQBZZk) prise de contrôle d’administrateur informatique pour Power BI et Microsoft 365 (vidéo)
-
-[Prise de contrôle par l’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)
-
-[Utilisation de l’inscription en libre-service dans votre organisation](self-service-sign-up.md) (article)
-  
+YouTube : [3 étapes pour une](https://www.youtube.com/watch?v=xt5EsrQBZZk) prise de contrôle d’administrateur informatique pour Power BI et Microsoft 365 (vidéo)\
+[Prise de contrôle par l’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)\
+[Utilisation de l’inscription en libre-service dans votre organisation](self-service-sign-up.md) (article)\
 [Understanding the Power BI service administrator role](/power-bi/service-admin-role) (article)

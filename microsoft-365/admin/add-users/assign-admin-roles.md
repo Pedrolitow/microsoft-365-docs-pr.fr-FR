@@ -27,22 +27,22 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils peuvent effectuer des tâches spécifiques dans le Centre d’administration.
-ms.openlocfilehash: f23a30cfd1be53982572d745d476558c3be615e6
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571864"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634171"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
 Si vous êtes la personne qui a acheté votre abonnement Microsoft Business, vous êtes l’administrateur global. Cela signifie que vous avez un contrôle illimité sur les produits de vos abonnements et que vous pouvez accéder à la plupart des données.
 
-Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](about-admin-roles.md).
+Pour plus d’informations, consultez [À propos des rôles d’administrateur](about-admin-roles.md).
 
 Lorsque vous ajoutez de nouveaux utilisateurs, si vous ne  leur attribuez pas de rôle d’administrateur, ils sont dans le rôle d’utilisateur et n’ont pas de privilèges d’administrateur sur les centres d’administration Microsoft. Toutefois, si vous avez besoin d’aide pour ce faire, vous pouvez attribuer un rôle d’administrateur à un utilisateur. Par exemple, si vous avez besoin d’une personne pour réinitialiser les mots de passe, vous ne devez pas lui attribuer le rôle d’administrateur global, vous devez lui attribuer le rôle d’administrateur de mot de passe. Le fait d’avoir un trop grand nombre d’administrateurs généraux, avec un accès illimité à vos données et à votre entreprise en ligne, constitue un risque pour la sécurité.
 
-## <a name="watch-add-an-adminbrbr"></a>Regardez : ajoutez un administrateur.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Regarder : Ajouter un administrateur<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -121,10 +121,7 @@ Vous pouvez vérifier les autorisations de rôle d’administrateur de 2 manièr
 
 ## <a name="related-content"></a>Contenu associé
 
-[À propos Microsoft 365 rôles d’administrateur (article)](about-admin-roles.md)
-
-[Autorisations de rôle d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (article)
-
-[Attribuer des rôles à des comptes d’utilisateur avec PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)
-
+[À propos Microsoft 365 rôles d’administrateur](about-admin-roles.md) (article)\
+[Autorisations de rôle d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (article)\
+[Attribuer des rôles à des comptes d’utilisateur avec PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)\
 [Autoriser ou supprimer des relations de partenaires](../misc/add-partner.md) (article)

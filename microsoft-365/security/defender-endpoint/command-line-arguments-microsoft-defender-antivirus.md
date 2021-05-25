@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
-ms.date: 05/17/2021
+ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: eb7fa7fdf5b88bd9361176003817116bcbb1a087
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 25f038846f9dd9855823382d4e1babcf0547fed6
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538902"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636169"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer les Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande
 
@@ -28,12 +28,10 @@ ms.locfileid: "52538902"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez effectuer diverses Antivirus Microsoft Defender fonctions avec l’outil de ligne de commande **dédiémpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Antivirus Microsoft Defender’utilisation. Vous pouvez trouver l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Vous devez l’exécuter à partir d’une invite de commandes.
+Vous pouvez effectuer différentes fonctions dans Antivirus Microsoft Defender à l’aide de l’outil en ligne de commande **dédiémpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Antivirus Microsoft Defender tâches. Vous pouvez trouver l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Exécutez-le à partir d’une invite de commandes.
 
-> [!NOTE]
-> Vous devrez peut-être ouvrir une version de niveau administrateur de l’invite de commandes. Lorsque vous recherchez **l’invite de commandes** dans le menu Démarrer, choisissez **Exécuter en tant qu’administrateur.**
-> Si vous exécutez une version mise à jour de la plateforme Microsoft Defender, exécutez-la à `**MpCmdRun**` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`
-> Pour plus d’informations sur la plateforme anti-programme malveillant, voir Antivirus Microsoft Defender mises à jour [et les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md)
+> [!TIP]
+> Vous devrez peut-être ouvrir une version de niveau administrateur de l’invite de commandes. Lorsque vous recherchez **l’invite de commandes** dans le menu Démarrer, choisissez **Exécuter en tant qu’administrateur.** Si vous exécutez une version mise à jour de la plateforme Microsoft Defender, exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` Pour plus d’informations sur la plateforme anti-programme malveillant, voir Antivirus Microsoft Defender mises à jour [et les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 L’utilitaire MpCmdRun utilise la syntaxe suivante :
 
@@ -47,10 +45,14 @@ Voici un exemple :
 MpCmdRun.exe -Scan -ScanType 2
 ``` 
 
+Dans notre exemple, l’utilitaire MpCmdRun démarre une analyse antivirus complète sur l’appareil.
+
+## <a name="commands"></a>Commandes
+
 | Command  | Description   |
 |:----|:----|
-| `-?` **ou** `-h`   | Affiche toutes les options disponibles pour cet outil |
-| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Recherche les logiciels malveillants. Les valeurs **de ScanType** sont :<p>**0 Par** défaut, en fonction de votre configuration<p>**-1** Analyse rapide<p>**-2** Analyse complète<p>**-3** Analyse personnalisée de fichier et d’annuaire.<p>CpuThrottling respectera la limitation de l’UC configurée à partir de la stratégie |
+| `-?`**ou**`-h`   | Affiche toutes les options disponibles pour l’outil MpCmdRun |
+| `-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Recherche les logiciels malveillants. Les valeurs **de ScanType** sont :<p>**0 Par** défaut, en fonction de votre configuration<p>**1 Analyse** rapide<p>**2 Analyse** complète<p>**3 Analyse** personnalisée de fichier et d’annuaire.<p>CpuThrottling s’exécute en fonction des configurations de stratégie |
 | `-Trace [-Grouping #] [-Level #]` | Démarre le suivi des diagnostics |
 | `-GetFiles [-SupportLogLocation <path>]` | Collecte des informations de support. Voir «[Collecte des données de diagnostic](collect-diagnostic-data.md)»  |
 | `-GetFilesDiagTrack`  | Identique à `-GetFiles` , mais sorties dans le dossier DiagTrack temporaire |
@@ -65,24 +67,24 @@ MpCmdRun.exe -Scan -ScanType 2
 | `-CheckExclusion -path <path>` | Vérifie si un chemin d’accès est exclu |
 | `-ValidateMapsConnection` | Vérifie que votre réseau peut communiquer avec le service Antivirus Microsoft Defender cloud. Cette commande ne fonctionne que sur Windows 10 version 1703 ou supérieure.|
 
-
 ## <a name="common-errors-in-running-commands-via-mpcmdrunexe"></a>Erreurs courantes lors de l’exécution de commandes via mpcmdrun.exe 
 
-|Message d’erreur | Raison possible
+Le tableau suivant répertorie les erreurs courantes qui peuvent se produire lors de l’utilisation de l’outil MpCmdRun.
+
+|Message d’erreur | Raison possible |
 |:----|:----|
-| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. <br>   **Remarque :**  Dans Windows 10 1909 ou plus, et Windows Server 2019 ou plus ancien, le service était appelé service Antivirus Windows Defender *service.*|
-| `0x80070667` | Vous exécutez la commande à partir d’un ordinateur qui Windows 10 version 1607 ou antérieure, ou qui `-ValidateMapsConnection` Windows Server 2016 ou une version antérieure. Exécutez la commande à partir d’un ordinateur Windows 10 version 1703 ou plus récente, ou Windows Server 2019 ou version plus récente.|
-| `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | L’outil doit être exécuté à partir de : ou (où peut différer étant donné que les mises à jour de plateforme `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` sont `2012.4-0` mensuelles à l’exception de mars)|
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | Privilèges insuffisants. Utilisez l’invite de commandes (cmd.exe) en tant qu’administrateur.|
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070006 httpcode=451)` | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80004005 httpcode=450)` | Problèmes éventuels liés au réseau, tels que les problèmes de résolution de noms|
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=0x80508015` | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D` | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
-| `ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)` | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
+| **ValidateMapsConnection a échoué (800106BA)** **ou 0x800106BA** | Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. Si vous avez besoin d’aide pour réactiver Antivirus Microsoft Defender, voir [Réinstaller/activer Antivirus Microsoft Defender sur vos points de terminaison.](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p>   **CONSEIL**  Dans Windows 10 1909 ou plus, et Windows Server 2019 ou plus ancien, le service était auparavant appelé *Antivirus Windows Defender*. |
+| **0x80070667** | Vous exécutez la commande à partir d’un ordinateur qui Windows 10 version 1607 ou antérieure, ou qui `-ValidateMapsConnection` Windows Server 2016 ou une version antérieure. Exécutez la commande à partir d’un ordinateur Windows 10 version 1703 ou plus récente, ou Windows Server 2019 ou version plus récente.|
+| **MpCmdRun n’est pas reconnu comme une commande interne ou externe, un programme opérable ou un fichier de commandes.** | L’outil doit être exécuté à partir de l’un ou l’autre des deux ou (où il peut être différent étant donné que les mises à jour de plateforme `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` sont `2012.4-0` mensuelles à l’exception de mars)|
+| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070005 httpcode=450)** | La commande a été tentée à l’aide de privilèges insuffisants. Utilisez l’invite de commandes (cmd.exe) en tant qu’administrateur.|
+| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070006 httpcode=451)** | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
+| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80004005 httpcode=450)** | Problèmes éventuels liés au réseau, tels que les problèmes de résolution de noms|
+| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=0x80508015** | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
+| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=800722F0D** | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
+| **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80072EE7 httpcode=451)** | Le pare-feu bloque la connexion ou effectue une inspection SSL. |
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Configurer les fonctionnalités antivirus Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
-- [Gérer Antivirus Microsoft Defender dans votre entreprise](configuration-management-reference-microsoft-defender-antivirus.md)
+- [Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)
 - [Rubriques de référence pour les outils de gestion et de configuration](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

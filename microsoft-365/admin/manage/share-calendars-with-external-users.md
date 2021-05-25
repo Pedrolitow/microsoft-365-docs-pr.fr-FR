@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Activez le partage de calendriers dans Microsoft 365 centre d’administration pour que les utilisateurs peuvent partager leurs calendriers avec toute personne à l’intérieur ou à l’extérieur de l’organisation.
-ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582715"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635809"
 ---
 # <a name="share-calendars-with-external-users"></a>Partager des calendriers avec des utilisateurs externes
 
@@ -50,12 +50,10 @@ Vous pouvez activer le partage de calendrier pour tous les utilisateurs de votre
 
 ## <a name="invite-people-to-access-calendars"></a>Inviter des personnes à accéder à des calendriers
 
-Une fois le partage activé, les propriétaires de calendrier peuvent étendre les invitations à des utilisateurs spécifiques. Pour plus d'informations, voir [Partage de votre calendrier dans Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
+Une fois le partage activé, les propriétaires de calendrier peuvent étendre les invitations à des utilisateurs spécifiques. Pour obtenir des instructions, [voir Partager votre calendrier dans Outlook Web App.](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)
 
 ## <a name="related-content"></a>Contenu associé
 
-[Activer ou désactiver le partage externe pour un site](/sharepoint/change-external-sharing-site) (article)
-
-[Vue d’ensemble du centre d’administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)
-
+[Activer ou désactiver le partage externe pour un site](/sharepoint/change-external-sharing-site) (article)\
+[Vue d’ensemble Microsoft 365 centre d’administration de l’utilisateur](../../business-video/admin-center-overview.md) (vidéo)\
 [Gérer les courriers électroniques et les calendriers](../email/index.yml) (page de liens)

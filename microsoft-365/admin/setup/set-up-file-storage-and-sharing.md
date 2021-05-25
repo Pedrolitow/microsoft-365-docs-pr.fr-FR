@@ -29,18 +29,18 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers dans Microsoft 365.
-ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572176"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635641"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurer le partage et le stockage de fichiers dans Microsoft 365
 
 Pour configurer le stockage et le partage des fichiers pour votre entreprise, nous vous recommandons d'utiliser OneDrive avec un site d’équipe. Cette configuration est idéale si vous avez une petite entreprise ne comptant que quelques employés.
 
-Regardez une courte vidéo sur le stockage de fichiers dans le cloud Microsoft 365.<br><br>
+## <a name="watch-where-to-store-files-in-office-365"></a>Regardez : Où stocker des fichiers dans Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
@@ -207,8 +207,6 @@ Vous pouvez activer le stockage tiers pour permettre à vos utilisateurs dans Mi
 
 ## <a name="related-content"></a>Contenu associé
 
-[Ajouter de l’espace de stockage pour votre abonnement](../../commerce/add-storage-space.md) (article)
-
-[Partager des fichiers et des dossiers avec Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (vidéo)
-
+[Ajouter de l’espace de stockage pour votre abonnement](../../commerce/add-storage-space.md) (article)\
+[Partager des fichiers et des dossiers avec Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (vidéo)\
 [Personnaliser votre site d’équipe pour le stockage et le partage de fichiers](customize-team-site.md) (article)

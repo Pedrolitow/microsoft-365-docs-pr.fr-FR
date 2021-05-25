@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: Un groupe supprimé est conservé pendant 30 jours et vous pouvez toujours le restaurer. Après 30 jours, le groupe et son contenu sont supprimés définitivement.
-ms.openlocfilehash: 285796ec45b1e6d77d46d7a0c39706f566bb8cf6
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 2c20c2bd3ce91331e7160132047dbf3ecd79c4b8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582679"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635737"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Restaurer un groupe de Microsoft 365 supprimé
 
@@ -83,10 +83,7 @@ Visitez le site [Tech Community Microsoft](https://techcommunity.microsoft.com/t
   
 ## <a name="related-content"></a>Contenu associé
 
-[Gérer Microsoft 365 groupes avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)
-  
-[Supprimer des groupes à l’aide Remove-UnifiedGroup cmdlet](/powershell/module/exchange/remove-unifiedgroup) (article)
-  
-[Gérer les paramètres de votre site d’équipe](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) connecté à un groupe (article)
-  
+[Gérer Microsoft 365 groupes avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
+[Supprimer des groupes à l’aide Remove-UnifiedGroup cmdlet](/powershell/module/exchange/remove-unifiedgroup) (article)\
+[Gérer les paramètres de votre site](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) d’équipe connecté à un groupe (article)\
 [Supprimer un groupe dans Outlook](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f) (article)

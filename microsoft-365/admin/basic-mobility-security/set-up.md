@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configurer la mobilité et la sécurité de base pour sécuriser et gérer les appareils mobiles de vos utilisateurs en faisant des actions telles que la wiping à distance d’un appareil.
-ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593416"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634291"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
 La mobilité et la sécurité de base intégrées pour Microsoft 365 vous permettent de sécuriser et de gérer les appareils mobiles des utilisateurs tels que les iPhone, iPad, Android et Windows mobiles. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
 
-Vous avez des questions ? Pour obtenir un FORUM AUX QUESTIONS pour vous aider à répondre à des questions courantes, consultez forum aux questions fréquemment posées sur la mobilité [et la sécurité .](frequently-asked-questions.md) Sachez que vous ne pouvez pas utiliser un compte d’administrateur délégué pour gérer la mobilité et la sécurité de base. Pour plus d’informations, [voir Partenaires : Proposer une administration déléguée.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
+Vous avez des questions ? Pour obtenir un FORUM AUX QUESTIONS pour vous aider à répondre aux questions les plus fréquentes, consultez forum aux questions fréquemment [posées sur](frequently-asked-questions.md)la mobilité et la sécurité . Sachez que vous ne pouvez pas utiliser un compte d’administrateur délégué pour gérer la mobilité et la sécurité de base. Pour plus d’informations, [voir Partenaires : Proposer une administration déléguée.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
 
 La gestion des appareils fait partie du Centre de sécurité & conformité. Vous devez donc y aller pour lancer la configuration de la mobilité et de la sécurité de base.
 
@@ -39,7 +39,7 @@ La gestion des appareils fait partie du Centre de sécurité & conformité. Vous
 
 2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
 
-   L’activation de la mobilité et de la sécurité de base peut prendre un certain temps. Une fois terminé, vous recevrez un courrier électronique qui vous explique les étapes à suivre.
+   L’activation de la mobilité et de la sécurité de base peut prendre un certain temps. Une fois terminé, vous recevrez un courrier électronique qui explique les étapes suivantes à suivre.
 
 ## <a name="set-up-mobile-device-management"></a>Configurer la gestion des appareils mobiles
 
@@ -129,6 +129,5 @@ Les utilisateurs avec des appareils Android ou iOS doivent installer l’applica
 
 ## <a name="related-content"></a>Contenu associé
 
-[Fonctionnalités de la mobilité et de la sécurité de](capabilities.md) base (article)
-
+[Fonctionnalités de la mobilité et de la sécurité de](capabilities.md) base (article)\
 [Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md) (article)

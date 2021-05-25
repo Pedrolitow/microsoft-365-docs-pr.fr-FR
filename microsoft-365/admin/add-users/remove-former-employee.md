@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez les étapes de cette solution pour supprimer un ancien employé de Microsoft 365 et sécuriser les données de votre organisation.
-ms.openlocfilehash: 44741382a84cca15277308a44b3fd20470aa3a08
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572044"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634243"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Vue d’ensemble : supprimer un ancien employé et sécuriser les données
 
@@ -61,4 +61,7 @@ Vous devez être administrateur général pour effectuer les étapes de cette so
 
 ## <a name="related-content"></a>Contenu associé
 
-[Restaurer un utilisateur](restore-user.md) (article)
+[Restaurer un utilisateur](restore-user.md) (article)\
+[Ajouter un nouvel employé dans Microsoft 365](add-new-employee.md) (article)\
+[Attribuer des licences aux utilisateurs](../manage/assign-licenses-to-users.md) (article)\
+[Désattribuer des licences à des utilisateurs](../manage/remove-licenses-from-users.md) (article)

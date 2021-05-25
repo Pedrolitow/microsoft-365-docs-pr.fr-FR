@@ -25,18 +25,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Gérer les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
-ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582751"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635653"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
  Vous pouvez gérer les signatures électroniques en ajoutant une signature électronique, une clause d’exclusion de responsabilité juridique ou une déclaration de divulgation aux messages électroniques qui entrent dans votre organisation ou en quittent. Vous pouvez configurer celle-ci pour qu'elle s'applique à tous les messages entrants et sortants, comme illustré ci-dessous. Ou vous pouvez l'appliquer à certains messages, comme ceux contenant des mots ou des modèles de texte spécifiques.
 
- Regardez une courte vidéo sur la création d’une signature électronique à l’échelle de l’entreprise. <br><br>
+## <a name="watch-create-a-company-wide-email-signature"></a>Regarder : Créer une signature électronique à l’échelle de l’entreprise
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -119,9 +119,7 @@ Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d
 
 ## <a name="related-content"></a>Contenu associé
 
-[Migrer le courrier électronique et les contacts vers Microsoft 365](migrate-email-and-contacts-admin.md) (vidéo)
-
-[Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)
-
-[Vue d’ensemble du centre d’administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)
+[Migrer le courrier électronique et les contacts vers Microsoft 365](migrate-email-and-contacts-admin.md) (vidéo)\
+[Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\
+[Vue d’ensemble du centre d’administration Microsoft 365](../../business-video/admin-center-overview.md) (vidéo)
 

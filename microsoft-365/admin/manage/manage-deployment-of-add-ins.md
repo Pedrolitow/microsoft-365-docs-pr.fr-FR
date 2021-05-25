@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Découvrez comment déployer des add-ins pour des utilisateurs et des groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
-ms.openlocfilehash: 2d3b90a75f38a2c1146c0b0e5470c80b0af2c63f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Découvrez comment déployer des modules pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
+ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572272"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636021"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
 
@@ -56,7 +56,7 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
 
 Avant de commencer, voir Déterminer si le déploiement centralisé des modules est efficace [pour votre organisation.](centralized-deployment-of-add-ins.md)
   
-1. Dans le Centre d’administration, Paramètres la page  \> **Des modules.** Si vous ne voyez pas la page de l’application, **rendez-vous** sur la page **Paramètres** applications \>  \> **intégrées.**
+1. Dans le Centre d’administration, Paramètres la page  \> **Des modules.** Si vous ne voyez pas la page des applications, **rendez-vous** sur la page **Paramètres** applications \>  \> **intégrées.**
 
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
 
@@ -75,14 +75,14 @@ Avant de commencer, voir Déterminer si le déploiement centralisé des modules 
 5. Sur la page suivante, sélectionnez **Tout le monde**, **Utilisateurs/groupes spécifiques** ou **Moi uniquement** pour spécifier les personnes vers lesquelles le complément est déployé. Utilisez la zone de recherche pour rechercher des utilisateurs ou des groupes spécifiques. <br/>
 
     > [!NOTE]
-    > Pour en savoir plus sur les autres états qui s’appliquent à un add-in, voir [États de l’application.](./manage-addins-in-the-admin-center.md)
+    > Pour en savoir plus sur les autres états qui s’appliquent à un add-in, consultez [États de l’application.](./manage-addins-in-the-admin-center.md)
   
 6. Sélectionnez **Déployer**.
   
-7. Une coche verte s’affiche lorsque le module est déployé. Suivez les instructions de la page pour tester le add-in.
+7. Une coche verte s’affiche lorsque le add-in est déployé. Suivez les instructions de la page pour tester le add-in.
 
     > [!NOTE]
-    > Les utilisateurs devront peut-être redémarrer Office pour afficher l’icône de la application sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application.
+    > Les utilisateurs devront peut-être redémarrer Office pour afficher l’icône du module sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application.
 
 8. Lorsque vous avez terminé, sélectionnez **Suivant**. Si vous avez déployé votre déploiement uniquement sur vous-même, vous pouvez sélectionner Modifier qui a accès au **add-in** pour le déployer pour d’autres utilisateurs.
 
@@ -131,12 +131,7 @@ Les mises à jour des compléments se produisent comme suit :
   
 ## <a name="related-content"></a>Contenu associé
 
-[Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)
-
-[Créer votre premier add-in de volet de tâches Word](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article)
-
-[Mineurs et acquisition de modules dans le Store](minors-and-acquiring-addins-from-the-store.md) (article)
-  
-[Utiliser les cmdlets PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) de déploiement centralisé pour gérer les add-ins (article)
-  
+[Gérer les add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md) (article)\
+[Créer votre premier add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) de volet de tâches Word (article\
+[Mineurs et acquisition de add-ins](minors-and-acquiring-addins-from-the-store.md) à partir du Store (article)\ Utilisez les [cmdlets PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) de déploiement centralisé pour gérer les add-ins (article)\  
 [Résolution des problèmes : l’utilisateur ne voit pas les modules (article)](/office365/troubleshoot/access-management/user-not-seeing-add-ins)

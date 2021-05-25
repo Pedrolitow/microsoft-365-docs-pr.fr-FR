@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils sont prêts à être utilisés par les employés.
-ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: e178e7df220e89605502d9ed400265bcd963e57e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623670"
+ms.locfileid: "52636103"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 
@@ -45,8 +45,6 @@ Les appareils doivent répondre aux exigences ci-après :
 - Nouveaux appareils qui n’ont pas été Windows l’expérience pré-out-of-box
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Utiliser le guide de configuration pour créer des appareils et des profils
-
-[![Étiquette vous informant le centre d’administration est en train de changer et vous pouvez trouver plus de détails à ce sujet à l’adresse aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
 Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la meilleure façon de commencer consiste à utiliser le guide pas à pas. Vous pouvez également ajouter [des appareils et](create-and-edit-autopilot-devices.md) leur attribuer des [profils](create-and-edit-autopilot-profiles.md) sans utiliser le guide. 
   

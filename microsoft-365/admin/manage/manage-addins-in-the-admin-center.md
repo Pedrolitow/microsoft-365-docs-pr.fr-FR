@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593968"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636057"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -37,7 +37,7 @@ Pour plus d’informations sur l’installation des modules complémentaires à 
   
 ## <a name="add-in-states"></a>États de complément
 
-Un add-in peut être à **l’état On** ou **Off.**
+Un add-in peut être à **l’état « On** » ou « **Off** ».
   
 | État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
@@ -51,7 +51,7 @@ Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, l
 
 Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & les autres.**
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
 
     > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en **Paramètres**  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
@@ -66,7 +66,7 @@ Vous pouvez également supprimer un module qui a été déployé.
 
 Après le déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux add-ins.
 
-1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & les autres.**
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
 
     > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en **Paramètres**  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
@@ -77,7 +77,7 @@ Après le déploiement, les administrateurs peuvent également gérer l’accès
 
 4. Enregistrez les modifications.
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de Office sur tous les clients (sauf Outlook)
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de add-ins en Office store sur tous les clients (sauf Outlook)
 
 > [!NOTE]
 > Outlook’installation du module est gérée par [un processus différent.](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)
@@ -157,12 +157,8 @@ Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Déployer des add-ins dans le Centre d’administration](./manage-deployment-of-add-ins.md) (article)
-
-En savoir plus sur la création et la [création de Office de développement](/office/dev/add-ins/overview/office-add-ins) (article)
-  
-[Utiliser les cmdlets PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) de déploiement centralisé pour gérer les add-ins (article)
-  
-[Résolution des problèmes : l’utilisateur ne voit pas les modules (article)](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
-
+[Déployer des add-ins dans le Centre d’administration](./manage-deployment-of-add-ins.md) (article)\
+En savoir plus sur la création et la [création de Office de développement](/office/dev/add-ins/overview/office-add-ins) (article)\
+[Utiliser les cmdlets PowerShell](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) de déploiement centralisé pour gérer les add-ins (article)\
+[Résolution des problèmes : l’utilisateur ne voit pas les modules](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)\
 [Mineurs et acquisition de Microsoft Store](./minors-and-acquiring-addins-from-the-store.md) (article)

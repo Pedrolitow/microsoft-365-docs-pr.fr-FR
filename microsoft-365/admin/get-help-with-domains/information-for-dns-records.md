@@ -23,18 +23,18 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Collectez les valeurs/informations dont vous avez besoin pour créer des enregistrements DNS afin de connecter votre domaine à Microsoft 365 abonnement.
-ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e65d53269f5fb8625b12c4eb22f78516818045be
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582955"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635725"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Collecter les informations dont vous avez besoin pour créer des enregistrements DNS
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : rechercher la valeur de l’enregistrement TXT et vérifier
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : Rechercher la valeur de l’enregistrement TXT et vérifier
 
 ::: moniker range="o365-worldwide"
 
@@ -100,8 +100,6 @@ ms.locfileid: "52582955"
 
 ## <a name="related-content"></a>Contenu associé
 
-[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)
-
-[Rechercher et corriger les problèmes, y compris de messagerie, après avoir ajouté votre domaine ou des enregistrements DNS](find-and-fix-issues.md) (article)
-
+[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)\
+[Rechercher et résoudre les problèmes après l’ajout de votre domaine ou d’enregistrements DNS](find-and-fix-issues.md) (article)\
 [Gérer des domaines](index.yml) (page de lien)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Connectez-vous à votre compte Microsoft 365 administrateur pour définir certains mots de passe utilisateur individuels de sorte qu’ils n’expirent jamais à l’aide Windows PowerShell.
-ms.openlocfilehash: 0747e0bfe8a7389db554d5d6a7f685605e013306
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571924"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635557"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais
 
@@ -39,7 +39,7 @@ Cet article s’adresse aux personnes responsables de la stratégie d’expirati
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
-Un administrateur global d’un service cloud Microsoft peut utiliser la Azure Active Directory [PowerShell pour Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) pour définir les mots de passe de ne pas expirer pour des utilisateurs spécifiques. Vous pouvez également utiliser les cmdlets [AzureAD](/powershell/module/Azuread) pour supprimer la configuration n’expire jamais ou pour voir les mots de passe utilisateur qui ne doivent jamais expirer.
+Un administrateur global d’un service cloud Microsoft peut utiliser la Azure Active Directory [PowerShell pour Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) pour définir les mots de passe de ne pas expirer pour des utilisateurs spécifiques. Vous pouvez également utiliser des cmdlets [AzureAD](/powershell/module/Azuread) pour supprimer la configuration qui n’expire jamais ou pour voir les mots de passe utilisateur qui ne doivent jamais expirer.
 
 Ce guide s’applique à d’autres fournisseurs, tels que Intune et Microsoft 365, qui s’appuient également sur Azure AD pour les services d’identité et d’annuaire. L’expiration du mot de passe est la seule partie de la stratégie qui peut être modifiée.
 
@@ -84,7 +84,7 @@ Exécutez une des commandes suivantes :
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le nom **ReportPasswordNeverExpires.csv**
+- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le **nomReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -126,8 +126,8 @@ Exécutez une des commandes suivantes :
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)
-
-[Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)
+[Laisser les utilisateurs réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
+[Réinitialiser les mots](../add-users/reset-passwords.md) de passe (article)\
+[Définir la stratégie d’expiration de mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)

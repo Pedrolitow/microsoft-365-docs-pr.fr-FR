@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Utilisez l’Assistant Installation pour ajouter votre domaine à Microsoft 365 dans le centre d’administration Microsoft 365 en ajoutant un enregistrement DNS à votre hôte DNS.
-ms.openlocfilehash: 96849e90a420dc31dbde8c55d5a1108f73f85978
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 152144737b0ff8cb8b0c27db2a4fc1051fb2a8a7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535829"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635677"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "52535829"
 
  ## <a name="add-a-domain"></a>Ajouter un domaine
 
-Suivez ces étapes pour ajouter, configurer ou continuer à configurer un domaine. 
+Suivez ces étapes pour ajouter, configurer ou poursuivre la configuration d’un domaine. 
 
 ::: moniker range="o365-worldwide"
 
@@ -68,14 +68,14 @@ Suivez ces étapes pour ajouter, configurer ou continuer à configurer un domain
     
 5. Choisissez la façon dont vous souhaitez vérifier que vous êtes propriétaire du domaine.
     
-    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365), [Microsoft](../get-help-with-domains/domain-connect.md) configurera automatiquement vos enregistrements en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous êtes renvoyé au Centre d’administration et Microsoft vérifie automatiquement votre domaine.
+    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365), [Microsoft](../get-help-with-domains/domain-connect.md) configurera automatiquement vos enregistrements en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous serez renvoyé au Centre d’administration et Microsoft vérifiera ensuite automatiquement votre domaine.
     2. Vous pouvez utiliser un enregistrement TXT pour vérifier votre domaine. Sélectionnez ceci et **sélectionnez Suivant** pour voir les instructions d’ajout de cet enregistrement DNS au site web de votre bureau d’enregistrement. La vérification peut prendre jusqu’à 30 minutes après l’ajout de l’enregistrement. 
     3. Vous pouvez ajouter un fichier texte au site web de votre domaine. Sélectionnez et téléchargez le .txt à partir de l’Assistant Installation, puis téléchargez le fichier dans le dossier de niveau supérieur de votre site web. Le chemin d’accès au fichier doit ressembler à : `http://mydomain.com/ms39978200.txt` . Nous vous confirmerons que vous êtes propriétaire du domaine en trouvant le fichier sur votre site web.
     
 6. Choisissez la façon dont vous souhaitez apporter les modifications DNS requises pour que Microsoft utilise votre domaine.
     
     1. Choisissez Ajouter les enregistrements **DNS** pour moi si votre bureau d’enregistrement prend en charge [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365)et [Microsoft](../get-help-with-domains/domain-connect.md) configurera vos enregistrements automatiquement en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365.
-    2. Choisissez **J’ajouterai** les enregistrements DNS moi-même si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette étape pour l’instant et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
+    2. Choisissez **J’ajouterai** les enregistrements DNS moi-même si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette étape pour le moment et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
 
 7. Si vous avez choisi d’ajouter vous-même des enregistrements *DNS,*  sélectionnez **Suivant** et vous verrez une page avec tous les enregistrements que vous devez ajouter à votre site web de bureau d’enregistrement pour configurer votre domaine. 
 
@@ -99,7 +99,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 3. Dans la page **Domaines**, sélectionnez un domaine. 
     
-4. Sous **paramètres DNS,** sélectionnez **Enregistrements personnalisés**; puis **sélectionnez Nouvel enregistrement personnalisé.**
+4. Sous **paramètres DNS**, sélectionnez **Enregistrements personnalisés**; puis **sélectionnez Nouvel enregistrement personnalisé.**
 
 5. Sélectionnez le type d’enregistrement DNS à ajouter et tapez les informations du nouvel enregistrement.
     
@@ -128,18 +128,15 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
         - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
         - [DomainRightNow](https://www.domainrightnow.com/)
 
-### <a name="what-happens-to-my-email-and-website"></a>Qu’arrive-t-il à mon courrier électronique et mon site web ?
+### <a name="what-happens-to-my-email-and-website"></a>Qu’advient-il de mon courrier électronique et de mon site web ?
 
-Une fois que vous avez terminé l’installation, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
+Une fois l’installation terminé, l’enregistrement MX de votre domaine est mis à jour pour pointer vers Microsoft 365 et tous les e-mails de votre domaine commenceront à Microsoft 365. Assurez-vous d’avoir ajouté des utilisateurs et de configurer des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui reçoit du courrier électronique sur votre domaine !
   
 Si vous avez un site web que vous utilisez dans le cadre de votre activité, il continuera à fonctionner là où il se trouve. Les étapes de Connecter domaine n’affectent pas votre site web.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Forum aux questions sur les domaines](domains-faq.yml) (article)
-
-[Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md) (article)
-
-[Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)
-
+[Forum aux questions sur les domaines](domains-faq.yml) (article)\
+[Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md) (article)\
+[Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
 [Configurer votre domaine](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (article)

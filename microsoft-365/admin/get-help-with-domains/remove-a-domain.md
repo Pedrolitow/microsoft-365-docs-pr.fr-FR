@@ -22,18 +22,18 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine d’Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
-ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582931"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635701"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
   
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan d Microsoft 365 abonnement ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
+Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan Microsoft 365 abonnement ? Ou souhaitez-vous annuler votre abonnement ? Vous pouvez [modifier votre plan ou abonnement](../../commerce/subscriptions/switch-to-a-different-plan.md) ou [annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Étape 1 : Déplacer des utilisateurs vers un autre domaine
 
@@ -97,7 +97,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 3. Sous **l’onglet** Compte, **sélectionnez Gérer** le nom d’utilisateur, puis choisissez un autre domaine.
   
-4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
+4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -113,7 +113,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 3. Select **Set as primary** > **Save** > **Close**.
   
-4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
+4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -129,7 +129,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 3. Select **Set as primary** > **Save** > **Close**.
   
-4. En haut, sélectionnez le nom de votre compte, puis **connectez-vous.**
+4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
@@ -207,7 +207,7 @@ La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minute
   
 Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShell pour interroger tous les utilisateurs, puis déplacez-les vers un autre domaine. Sinon, il est possible que quelques-uns des utilisateurs manquent dans l'interface utilisateur. De plus, lorsque vous voudrez supprimer le domaine, vous ne pourrez pas et vous ne saurez pas pourquoi. Pour en savoir plus, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
-## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
+## <a name="still-need-help"></a>Encore besoin d’aide ?
 
 ::: moniker range="o365-worldwide"
 
@@ -220,8 +220,6 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)
-
-[Basculer vers une autre Microsoft 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)
-
+[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)\
+[Basculer vers une autre Microsoft 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)\
 [Annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md) (article)

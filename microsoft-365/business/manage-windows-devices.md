@@ -24,24 +24,26 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer les Microsoft 365 pour protéger les appareils joints à Active Directory Windows 10 en quelques étapes seulement.
-ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593890"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636083"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer la gestion des appareils Windows 10 joints à un domaine par des Microsoft 365 Business Premium
 
 Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale.
 Pour configurer cette protection, vous pouvez implémenter des appareils **joints à Azure AD hybride.** Ces appareils sont joints à votre annuaire Active Directory local et à votre Azure Active Directory.
 
+## <a name="watch-configure-hybrid-azure-active-directory-join"></a>Regardez : Configurer la joint Azure Active Directory hybride
+
 Cette vidéo décrit les étapes à suivre pour la configurer pour le scénario le plus courant, qui est également détaillée dans les étapes qui suivent.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## <a name="before-you-begin"></a>Avant de commencer
 
-## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>Avant de commencer, veillez à effectuer les étapes suivantes :
 - Synchronisez les utilisateurs avec Azure AD avec Azure AD Connecter.
 - Synchronisez Azure AD Connecter’unité d’organisation( OU).
 - Assurez-vous que tous les utilisateurs de domaine que vous synchronisez ont des licences Microsoft 365 Business Premium.
@@ -58,18 +60,18 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Vérifiez qu’Azure AD est activé pour joindre des ordinateurs
 
 - Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and select **Azure Active Directory** (select Show all if Azure Active Directory is not visible) in the **Admin centers** list. 
-- Dans le **centre Azure Active Directory d’administration,** **Azure Active Directory,** choisissez **Appareils,** puis **Paramètres de l’appareil.**
+- Dans le **Azure Active Directory d’administration,** **Azure Active Directory,** choisissez  Appareils, puis **Paramètres de l’appareil.**
 - Vérifier **que les utilisateurs peuvent joindre des appareils à Azure AD** est activé 
-    1. Pour activer tous les utilisateurs, définissez-le **sur Tous.**
+    1. Pour activer tous les utilisateurs, définissez-le sur **Tous.**
     2. Pour activer des utilisateurs spécifiques, **définissez-le sur Sélectionné** pour activer un groupe spécifique d’utilisateurs.
         - Ajoutez les utilisateurs de domaine souhaités synchronisés dans Azure AD à un [groupe de sécurité.](../admin/create-groups/create-groups.md)
         - Sélectionnez **Sélectionner des groupes** pour activer l’étendue de l’utilisateur MDM pour ce groupe de sécurité.
 
 ## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. Vérifier qu’Azure AD est activé pour la gestion des données de gestion des données
 
-- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and select select **Endpoint Managemen** t (select **Show all** **if Endpoint Manager** is not visible)
+- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and select **select Endpoint Managemen** t (select **Show all** **if Endpoint Manager** is not visible)
 - Dans le centre **Microsoft Endpoint Manager' administration,** allez sur **Appareils**  >  **Windows**  >  **Windows inscription**  >  **automatique**.
-- Vérifiez que l’étendue utilisateur DE LAM est activée.
+- Vérifiez que l’étendue de l’utilisateur mdm est activée.
 
     1. Pour inscrire tous les  ordinateurs, définissez-le sur Tous pour inscrire automatiquement tous les ordinateurs utilisateur qui sont joints à Azure AD et les nouveaux ordinateurs lorsque les utilisateurs ajoutent un compte de travail à Windows.
     2. Définir sur **Some pour** inscrire les ordinateurs d’un groupe spécifique d’utilisateurs.
@@ -78,7 +80,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 
 ## <a name="4-create-the-required-resources"></a>4. Créer les ressources requises 
 
-L’utilisation de l’cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) trouvée dans le module [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell simplifie l’réalisation des tâches requises pour configurer la jointage [Azure AD](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) hybride. Lorsque vous voquez cette cmdlet, elle crée et configure le point de connexion de service et la stratégie de groupe requis.
+L’utilisation de l’cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) trouvée dans le module [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell a simplifié l’réalisation des tâches requises pour configurer la jointage [Azure AD](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) hybride. Lorsque vous voquez cette cmdlet, elle crée et configure le point de connexion de service et la stratégie de groupe requis.
 
 Vous pouvez installer ce module en invoquant les éléments suivants à partir d’une instance de PowerShell :
 
@@ -111,16 +113,14 @@ Si vous ne voyez pas la stratégie Activer l’inscription mdm automatique à l�
 2.  Installez le package sur un contrôleur de domaine.
 3.  Accédez, en fonction de la version des modèles d’administration, au dossier **: C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
 4.  Renommons le **dossier Définitions de stratégie dans** le chemin d’accès ci-dessus à **PolicyDefinitions**.
-5.  Copiez le dossier **PolicyDefinitions** dans votre partage SYSVOL, par défaut situé dans **C:\Windows\SYSVOL\domain\Policies**. 
-    -   Si vous envisagez d’utiliser un magasin central de stratégies pour l’ensemble de votre domaine, ajoutez le contenu de PolicyDefinitions à cet élément.
-6.  Si vous avez plusieurs contrôleurs de domaine, attendez que SYSVOL réplique pour que les stratégies soient disponibles. Cette procédure fonctionne également pour toute version ultérieure des modèles d’administration.
+5.  Copiez le **dossier PolicyDefinitions** dans votre partage SYSVOL, par défaut situé dans **C:\Windows\SYSVOL\domain\Policies**. 
+    -   Si vous envisagez d’utiliser un magasin central de stratégies pour l’ensemble de votre domaine, ajoutez-y le contenu de PolicyDefinitions.
+6.  Si vous avez plusieurs contrôleurs de domaine, attendez que SYSVOL réplique pour que les stratégies soient disponibles. Cette procédure fonctionne également pour n’importe quelle version future des modèles d’administration.
 
 À ce stade, vous devriez être en mesure de voir la stratégie Activer l’inscription mdm automatique à l’aide des informations d’identification **Azure AD par défaut** disponibles.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Synchroniser les utilisateurs de domaine avec Microsoft 365](manage-domain-users.md) (article)
-
-[Créer un groupe dans le Centre d’administration](../admin/create-groups/create-groups.md) (article)
-
+[Synchroniser les utilisateurs de domaine avec Microsoft 365](manage-domain-users.md) (article)\
+[Créer un groupe dans le Centre d’administration](../admin/create-groups/create-groups.md) (article)\
 [Didacticiel : Configurer la joint Azure Active Directory hybride pour les domaines gérés](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (article)

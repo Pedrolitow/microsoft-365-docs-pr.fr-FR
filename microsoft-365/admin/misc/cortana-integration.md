@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Les utilisateurs ayant des comptes professionnels ou scolaires valides peuvent obtenir Cortana dans Microsoft 365 expériences qui répondent Office 365 des promesses de sécurité au niveau de l’entreprise.
-ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582775"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635797"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
@@ -34,7 +34,7 @@ En tant qu’assistant de productivité personnelle, Cortana est conçue pour fo
 
 À l’avenir, nous concentrons Cortana sur la productivité de l’entreprise.
 
-- Conformément aux autres services Office 365, les services d’entreprise Cortana respectent les mêmes promesses de confidentialité, de sécurité et de conformité au niveau de l’entreprise que dans les conditions d’ost des [services](https://www.microsoft.com/licensing/product-licensing/products)en ligne .
+- Conformément aux autres services Office 365, les services d’entreprise Cortana respectent les mêmes promesses de confidentialité, de sécurité et de conformité au niveau de l’entreprise que dans les conditions d’ost des services en ligne [.](https://www.microsoft.com/licensing/product-licensing/products)
 
 - Les Microsoft 365 nouvelles expériences, telles que les e-mails Briefing et Lire mes e-mails, seront activées à l’aide des services d’entreprise de Cortana et seront entièrement conformes à ces promesses. Ces fonctionnalités sont actuellement disponibles dans le monde entier (client multi-locataire standard). Pour plus d’informations sur la recherche de l’emplacement d’utilisation, consultez [afficher des valeurs de](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)propriétés supplémentaires pour les comptes.
 
@@ -187,8 +187,6 @@ Pour les services régis par le contrat [de services Microsoft](https://go.micro
 
 ## <a name="related-content"></a>Contenu associé
 
-[Assistance vocale de Cortana dans Teams](/microsoftteams/cortana-in-teams) (article)
-
-[Configurer Cortana dans Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)
-
+[Assistance vocale de Cortana dans Teams](/microsoftteams/cortana-in-teams) (article)\
+[Configurer Cortana dans Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)\
 [Que pouvez-vous faire avec Lire mes e-mails à partir de Cortana ?](https://support.microsoft.com/help/4558256)

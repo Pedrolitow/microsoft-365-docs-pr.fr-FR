@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Avec Microsoft 365 groupes, vous pouvez piloter le travail d’équipe dans Microsoft 365 en donnant à un groupe de personnes l’accès à une collection de ressources partagées.
-ms.openlocfilehash: bfcd2d27bc1d63fcc8b306267efe21c3f9564522
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582739"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635749"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Présentation des Groupes Microsoft 365 pour les administrateurs
 
@@ -119,12 +119,8 @@ Microsoft 365 groupes fonctionnent avec Azure Active Directory. Les fonctionnali
 
 ## <a name="related-content"></a>Contenu associé
 
-[En savoir plus sur Microsoft 365 groupes de travail](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)
-
-[Mettre à niveau les listes](../manage/upgrade-distribution-lists.md) de distribution Microsoft 365 groupes de distribution (article)
-
-[Gérer Microsoft 365 groupes avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)
-
-[SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (article)
-
+[En savoir plus sur Microsoft 365 groupes](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) de travail (article)\
+[Mettre à niveau les listes](../manage/upgrade-distribution-lists.md) de distribution Microsoft 365 Groupes de distribution (article)\
+[Gérer Microsoft 365 groupes avec PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
+[SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (article)\
 [Organiser des groupes et des canaux dans Microsoft Stream](/stream/groups-channels-organization) (article)

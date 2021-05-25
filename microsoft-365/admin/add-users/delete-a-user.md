@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Découvrez comment supprimer un compte d’utilisateur et que faire avec le courrier électronique et le contenu OneDrive utilisateur et s’il faut conserver la licence de produit.
-ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593404"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634207"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Supprimer un utilisateur de votre organisation
   
@@ -119,7 +119,7 @@ La réduction du nombre de licences est une étape distincte qui ne peut être e
   
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>. Si cette option n’est pas disponible, vous n’êtes pas un administrateur global ou un administrateur de facturation et vous ne pouvez pas faire cette étape.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>. Si cette option n’est pas disponible, vous n’êtes pas un administrateur global ou un administrateur de facturation et vous ne pouvez pas faire cette étape.
 
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement dont vous souhaitez supprimer des licences.
 
@@ -171,12 +171,8 @@ Voici les problèmes les plus courants rencontrés par les utilisateurs lors de 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Restaurer un utilisateur](restore-user.md) (article)
-  
-[Supprimer définitivement une boîte aux lettres](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)
-
-[Supprimer un ancien employé de Office 365](remove-former-employee.md) (article)
-
-[Ajouter un nouvel employé à Office 365](add-new-employee.md) (article)
-
+[Restaurer un utilisateur](restore-user.md) (article)\
+[Supprimer définitivement une boîte aux lettres](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (article)\
+[Supprimer un ancien employé de Office 365](remove-former-employee.md) (article)\
+[Ajouter un nouvel employé à Office 365](add-new-employee.md) (article)\
 [Supprimer un compte d’utilisateur](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): utilisez ces instructions si votre entreprise utilise **Active Directory** qui se synchronise avec Azure AD. Vous ne pouvez pas utiliser Office 365. (article)

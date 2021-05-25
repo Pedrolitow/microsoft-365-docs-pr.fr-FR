@@ -6,19 +6,19 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: ''
 ms.prod: microsoft-365-enterprise
 ms.collection: m365solution-managecontracts
 search.appverid: ''
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: ''
 description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint Syntex, Microsoft Teams et Power Automate.
-ms.openlocfilehash: 057c581559aa2e5cfd6e98b379783a7d73e0bccc
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 18866425cb331b01525dd488a6688608a3d1e559
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538566"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636217"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer les contrats à l’aide d’Microsoft 365 solution
 
@@ -62,7 +62,7 @@ Cette solution de gestion des contrats comprend quatre composants de Microsoft 3
 
       ![Exemple de contrat.](../media/content-understanding/contract.png)
 
-3. Dans Microsoft Teams, toutes les parties prenantes sont membres d’un canal Teams sécurisé dans lequel tous les contrats de la bibliothèque de documents sont visibles pour approbation ou rejet. À l’Teams, toutes les parties prenantes sont averties lorsque de nouveaux contrats doivent être révisés.
+3. Dans Microsoft Teams, toutes les parties prenantes sont membres d’un canal Teams sécurisé dans lequel tous les contrats dans la bibliothèque de documents sont visibles pour approbation ou rejet. À l’Teams, toutes les parties prenantes sont averties lorsque de nouveaux contrats doivent être révisés.
  
 4. À l’Power Automate, les contrats sont déplacés via le processus d’approbation dans Teams canal. Lorsqu’un membre approuve un contrat, l’état du contrat est modifié pour approuver, tous les membres sont avertis par le biais d’un billet Teams et un élément de ligne est créé pour montrer que le contrat est prêt pour le paiement. Ce processus peut être étendu pour écrire directement dans une application financière tierce pour paiement.
 

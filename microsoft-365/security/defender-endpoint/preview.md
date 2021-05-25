@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea37ad4302eedf7d43e3ad03e94357a146c2216c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4612fbb2005145feae7bbcf9309c1ec9559a5a0d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245575"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636069"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -34,19 +34,19 @@ ms.locfileid: "52245575"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
+Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles fonctionnalités et améliorations.
 
 Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defender for Endpoint et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
 >[!TIP]
 >Recevez une notification lorsque cette page est mise à jour en copiant et en coller l’URL suivante dans votre lecteur de flux : `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
-Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Point de terminaison.](whats-new-in-microsoft-defender-atp.md)
+Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés de Defender pour Endpoint.](whats-new-in-microsoft-defender-atp.md)
 
 ## <a name="turn-on-preview-features"></a>Activer les fonctionnalités d’aperçu
 
@@ -56,19 +56,19 @@ Activez le paramètre d’expérience de préversion pour être parmi les premie
 
 1. Dans le volet de navigation, **sélectionnez** Paramètres  >  **fonctionnalités avancées d’aperçu.**  >  
 
-2. Basculez le paramètre entre **« Sur** » et « **Hors** » et sélectionnez Enregistrer **les préférences.**
+2. Basculez le paramètre entre **Sur** et **Hors et** sélectionnez Enregistrer **les préférences.**
 
 ## <a name="preview-features"></a>Fonctionnalités de préversion
 
 Les fonctionnalités suivantes sont incluses dans la version préliminaire :
 
-- [Découverte d’appareils](device-discovery.md) <br> Vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses. À l’aide d’appareils intégrés, vous pouvez rechercher des appareils non utilisés dans votre réseau et évaluer les vulnérabilités et les risques. Vous pouvez ensuite intégrer des appareils découverts afin de réduire les risques associés à l’affichage de points de terminaison non pris en compte dans votre réseau.
+- [Découverte d’appareils](device-discovery.md) <br> Vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses. À l’aide d’appareils intégrés, vous pouvez rechercher des appareils non utilisés dans votre réseau et évaluer les vulnérabilités et les risques. Vous pouvez ensuite intégrer des appareils découverts afin de réduire les risques associés à l’affichage de points de terminaison non utilisés dans votre réseau.
 
    > [!IMPORTANT]
-   > La découverte standard sera le mode par défaut pour tous les clients de prévisualisation à compter du 10 mai 2021. Vous pouvez choisir de conserver le mode de base via la page paramètres. 
+   > La découverte standard sera le mode par défaut pour tous les clients à partir du 19 juillet 2021. Vous pouvez choisir de conserver le mode de base via la page paramètres. 
 
 
-- [Filtrage de contenu Web](web-content-filtering.md) <br> Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+- [Filtrage de contenu Web](web-content-filtering.md) <br> Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 - [Rapport sur l’état et la conformité de l’appareil](machine-reports.md) <br/> Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
 

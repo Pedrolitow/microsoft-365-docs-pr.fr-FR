@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Modifiez votre adresse e-mail en une adresse de messagerie conviviale comme tom@fourthcoffee.com en achetant un nom de domaine et en l’ajoutant à Microsoft 365.
-ms.openlocfilehash: d5e70856c9200cd7e5df0eded25b6ff460e5d1fe
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572092"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635521"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Changer votre adresse de courrier pour utiliser votre domaine personnalisé
 
@@ -91,4 +91,6 @@ Vous serez guidé pour que tout soit correctement installé avec votre domaine d
   
 ## <a name="related-content"></a>Contenu associé
 
-[Acheter un domaine personnalisé à l’aide Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)
+[Acheter un domaine personnalisé à l’Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
+[Gérer les domaines](../get-help-with-domains/index.yml) (page de liens)\
+[FAQ sur les domaines](../setup/domains-faq.yml) (article)

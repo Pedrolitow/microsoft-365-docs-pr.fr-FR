@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L’authentification multifacteur (MFA) utilise à la fois un mot de passe, qui doit être fort, et une méthode de vérification supplémentaire.
-ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6e1c43bdd66849a0043c0a1a927f48d925e0806e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623688"
+ms.locfileid: "52635773"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Multi-Factor Authentication pour Microsoft 365
 
@@ -170,7 +170,7 @@ Dans le portail Azure, vous pouvez :
 
 Dans le Microsoft 365 d’administration, vous pouvez configurer les paramètres mFA par utilisateur et service.
 
-## <a name="your-next-step"></a>Étape suivante
+## <a name="next-steps"></a>Étapes suivantes
 
 [Configurer l’ment MFA pour Microsoft 365](set-up-multi-factor-authentication.md)
 
