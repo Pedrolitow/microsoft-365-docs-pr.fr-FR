@@ -1,5 +1,5 @@
 ---
-title: Informations de référence sur les paramètres de partage d’invités de Microsoft 365
+title: Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,69 +18,67 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: 60ebff4f564e7046a54cb707781acc0151aa8ad9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538110"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625443"
 ---
-# <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
+# <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
-Cet article fournit des informations de référence sur les différents paramètres qui peuvent affecter le partage avec les personnes hors de l’organisation pour les charges de travail Microsoft 365 : Teams, Groupes Microsoft 365, SharePoint et OneDrive. Ces paramètres se retrouvent dans les centres d’administration Azure Active Directory, Microsoft 365, Teams et SharePoint.
+Cet article fournit des informations de référence sur les différents paramètres qui peuvent affecter le partage avec les personnes hors de l’organisation pour les charges de travail Microsoft 365 : Teams, Groupes Microsoft 365, SharePoint et OneDrive. Ces paramètres se retrouvent dans les centres d’administration Azure Active Directory, Microsoft 365, Teams et SharePoint.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
-**Rôle d’administrateur :** administrateur général
+**Rôle d’administrateur :** administrateur général
 
-Azure Active Directory est le service d’annuaire utilisé par Microsoft 365. Les paramètres de relations organisationnelles Azure Active Directory affectent directement le partage dans Teams, Groupes Microsoft 365, SharePoint et OneDrive.
+Azure Active Directory est le service d’annuaire utilisé par Microsoft 365. Les paramètres de relations organisationnelles Azure Active Directory affectent directement le partage dans Teams, Groupes Microsoft 365, SharePoint et OneDrive.
 
 > [!NOTE]
 > Ces paramètres n’affectent SharePoint que lorsque [l’intégration de SharePoint et OneDrive avec Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) a été configurée. Le tableau ci-dessous part du principe que cette intégration a été configuré.
 
-### <a name="organizational-relationships-settings"></a>Paramètres de relations organisationnelles
+### <a name="external-collaboration-settings"></a>Paramètres de collaboration externe
 
-**Navigation :** [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identités externes > Paramètres de collaboration externe
+**Navigation :** [Centre d’administration Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identités externes > Paramètres de collaboration externe
 
 ![Capture d’écran de la page des paramètres de relations organisationnelles d’Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
-|Les autorisations des utilisateurs invités sont limitées|Oui|Ce paramètre affecte les tâches d’annuaire qu’un invité peut effectuer.|
-|Les administrateurs et les utilisateurs membres du rôle Inviteur d’invités peuvent envoyer des invitations|Oui|Lorsque ce paramètre est défini sur **Oui**, les administrateurs peuvent inviter des invités via Azure AD et via des expériences de partage Microsoft 365 telles que Teams et SharePoint. Quand il est défini sur **Non**, ils ne le peuvent pas.|
-|Les membres peuvent inviter|Oui|Lorsque ce paramètre est défini sur **Oui**, les membres Azure AD peuvent inviter des invités via Azure AD. Quand il est défini sur **Non**, ils ne le peuvent pas. Lorsqu’il est défini sur **Oui**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire. Quand il est défini sur **Non**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire, à la condition que celui-ci soit administrateur global. <br><br>Notez que l’option **Les membres peuvent inviter** fait référence aux membres d’Azure AD (par opposition aux invités), non à des membres de site ou de groupe dans Microsoft 365. <br><br>Elle produit le même effet que le paramètre **Autoriser les utilisateurs à ajouter de nouveaux invités à l’organisation** de Sécurité et confidentialité dans Microsoft 365.|
-|Les invités peuvent inviter|Oui|Lorsque ce paramètre est défini sur **Oui**, les invités figurant dans l’annuaire peuvent inviter d’autres invités à collaborer sur des ressources Azure AD, ainsi que sur les fichiers et dossiers SharePoint et OneDrive. Quand il est défini sur **Non**, ils ne le peuvent pas. <br><br>Notez que, pour que les invités puissent partager des fichiers et dossiers avec d’autres invités, le paramètre **Permettre aux utilisateurs externes de trouver des comptes d’utilisateurs dans l’annuaire en tapant des correspondances d’adresse de courrier exactes** doit être activé dans le Centre d’administration SharePoint.|
-|Activer le code secret à usage unique du courrier pour les invités (préversion)|Non|Lorsque ce paramètre est défini sur **Oui**, les invités ne disposant pas d’un compte de service administré (MSA) ou d’un compte professionnel ou scolaire peuvent s’[authentifier auprès d’Azure AD à l’aide d’un code secret à usage unique](/azure/active-directory/b2b/one-time-passcode). Quand il est défini sur **Non**, les utilisateurs doivent créer un compte Microsoft pour s’authentifier. Pour fonctionner, ce paramètre doit être défini sur **Oui** pour l’[intégration de SharePoint et de OneDrive avec Azure AD B2B (préversion)](/sharepoint/sharepoint-azureb2b-integration-preview).|
+|Accès pour l’utilisateur invité|Les utilisateurs invités ont un accès limité aux propriétés et aux appartenances des objets annuaires|Détermine les [autorisations détenues par les invités dans Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
+|Paramètres de l’invitation à un invité|Toute personne au sein de l’organisation peut inviter des utilisateurs invités, notamment des invités et des non administrateurs|Détermine si les invités, membres et administrateurs peuvent inviter des invités dans l’organisation.<br><br> Ce paramètre affecte les expériences de partage Microsoft 365 telles que Teams et SharePoint.|
+|Activer l’inscription en libre-service des invités via les flux d’utilisateur|Non|Détermine si vous pouvez créer des flux utilisateur qui permettent à un contact de s’inscrire for pour une application que vous avez créée et ouvrir un compte invité.|
 |Restrictions de collaboration|Autoriser l’envoi d’invitations à tout domaine|Ce paramètre vous permet de spécifier une liste de domaines dont le partage est autorisé ou bloqué. Lorsque des domaines autorisés sont spécifiés, des invitations de partage ne peuvent être envoyées qu’à ces domaines. Lorsque des domaines refusés sont spécifiés, des invitations de partage ne peuvent pas être envoyées à ces domaines.<br><br> Ce paramètre affecte les expériences de partage Microsoft 365 telles que Teams et SharePoint. Vous pouvez autoriser ou bloquer des domaines de façon plus précise à l’aide de la fonctionnalité de filtrage par domaine dans SharePoint ou Teams.|
 
 Ces paramètres affectent la manière dont les utilisateurs sont invités à l’annuaire. Il n’affectent pas le partage avec des invités figurant déjà dans l’annuaire.
 
-## <a name="microsoft-365"></a>Microsoft 365
+## <a name="microsoft-365"></a>Microsoft 365
 
-**Rôle d’administrateur :** administrateur général
+**Rôle d’administrateur :** administrateur général
 
-Le Centre d’administration Microsoft 365 comporte des paramètres de niveau organisation pour le partage et les Groupes Microsoft 365.
+Le Centre d’administration Microsoft 365 comporte des paramètres de niveau organisation pour le partage et les Groupes Microsoft 365.
 
 ### <a name="sharing"></a>Partage
 
-**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres de l’organisation > Paramètres > Onglet Sécurité et confidentialité > Partage
+**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres de l’organisation > Paramètres > Onglet Sécurité et confidentialité > Partage
 
 ![Capture d’écran des paramètres de sécurité et de confidentialité pour le partage d’invités dans le Centre d’administration Microsoft 365](../media/sharepoint-security-privacy-sharing-setting.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
-|Autoriser les utilisateurs à ajouter de nouveaux invités à l’organisation|Activé|Lorsque ce paramètre est défini sur **Oui**, les membres Azure AD peuvent inviter des invités via Azure AD. Quand il est défini sur **Non**, ils ne le peuvent pas. Lorsqu’il est défini sur **Oui**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire. Quand il est défini sur **Non**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire, à la condition que celui-ci soit administrateur global. <br><br>Notez que l’option **Les membres peuvent inviter** fait référence aux membres d’Azure AD (par opposition aux invités), non à des membres de site ou de groupe dans Microsoft 365. <br><br>Il produit le même effet que le paramètre **Les membres peuvent inviter** dans les paramètres de relations organisationnelles Azure Active Directory.|
+|Autoriser les utilisateurs à ajouter de nouveaux invités à l’organisation|Activé|Lorsque ce paramètre est défini sur **Oui**, les membres Azure AD peuvent inviter des invités via Azure AD. Quand il est défini sur **Non**, ils ne le peuvent pas. Lorsqu’il est défini sur **Oui**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire. Quand il est défini sur **Non**, les membres de Groupes Microsoft 365 peuvent inviter des invités avec l’approbation du propriétaire, à la condition que celui-ci soit administrateur global. <br><br>Notez que l’option **Les membres peuvent inviter** fait référence aux membres d’Azure AD (par opposition aux invités), non à des membres de site ou de groupe dans Microsoft 365. <br><br>Il produit le même effet que le paramètre **Les membres peuvent inviter** dans les paramètres de relations organisationnelles Azure Active Directory.|
 
-### <a name="microsoft-365-groups"></a>Groupes Microsoft 365
+### <a name="microsoft-365-groups"></a>Groupes Microsoft 365
 
-**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Paramètres > Groupes Microsoft 365
+**Navigation :**[Centre d’administration Microsoft 365](https://admin.microsoft.com) > Paramètres > Paramètres > Groupes Microsoft 365
 
-![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
+![Capture d’écran des paramètres d’invité des Groupes Microsoft 365 dans le Centre d’administration Microsoft 365](../media/office-365-groups-guest-settings.png)
 
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
-|Permettre aux membres du groupe extérieurs à votre organisation d’accéder au contenu du groupe|Activé|Lorsque ce paramètre est défini sur **Activé**, les invités peuvent accéder au contenu des groupes. Quand il est défini sur **Désactivé**, ils ne le peuvent pas. Ce paramètre doit être **activé** pour tout scénario dans lequel des invités interagissent avec Groupes Microsoft 365 ou Teams.|
-|Permettre aux propriétaires de groupe d’ajouter des personnes en dehors de votre organisation aux groupes|Activé|Lorsque ce paramètre est **Activé**, les propriétaires de Groupes Microsoft 365 ou d’équipes Teams peuvent inviter de nouveaux invités à rejoindre le groupe. Quand il est **Désactivé**, les propriétaires peuvent inviter que des invités figurant déjà dans l’annuaire.|
+|Permettre aux membres du groupe extérieurs à votre organisation d’accéder au contenu du groupe|Activé|Lorsque ce paramètre est défini sur **Activé**, les invités peuvent accéder au contenu des groupes. Quand il est défini sur **Désactivé**, ils ne le peuvent pas. Ce paramètre doit être **activé** pour tout scénario dans lequel des invités interagissent avec Groupes Microsoft 365 ou Teams.|
+|Permettre aux propriétaires de groupe d’ajouter des personnes en dehors de votre organisation aux groupes|Activé|Lorsque ce paramètre est **Activé**, les propriétaires de Groupes Microsoft 365 ou d’équipes Teams peuvent inviter de nouveaux invités à rejoindre le groupe. Quand il est **Désactivé**, les propriétaires peuvent inviter que des invités figurant déjà dans l’annuaire.|
 
 Ces paramètres s’appliquent au niveau de l’organisation. Pour en savoir plus sur la modification de ces paramètres au niveau du groupe à l’aide de PowerShell, consultez [Créer des paramètres pour un groupe spécifique](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group).
 
@@ -92,7 +90,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ### <a name="guest-access"></a>Accès invité
 
-**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
+**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
 
 ![Capture d’écran du commutateur Accès invité dans Teams](../media/teams-guest-access-toggle.png)
 
@@ -102,7 +100,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ### <a name="guest-calling"></a>Appel d’invité
 
-**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
+**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
 
 ![Capture d’écran des options d’appel d’invité dans Teams](../media/teams-guest-calling-setting.png)
 
@@ -112,7 +110,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ### <a name="guest-meeting"></a>Réunion d’invité
 
-**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
+**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
 
 ![Capture d’écran des paramètres de réunion d’invité dans Teams](../media/teams-guest-meeting-settings.png)
 
@@ -124,7 +122,7 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ### <a name="guest-messaging"></a>Messagerie d’invité
 
-**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
+**Navigation :** [Centre d’administration Teams](https://admin.teams.microsoft.com) > Paramètres à l’échelle de l’organisation > Accès invité
 
 ![Capture d’écran des paramètres de messagerie d’invité dans Teams](../media/teams-guest-messaging-settings.png)
 
@@ -141,9 +139,9 @@ Le commutateur d’accès invité principal de Teams, **Autoriser l’accès inv
 
 ## <a name="sharepoint-and-onedrive-organization-level"></a>SharePoint et OneDrive (niveau organisation)
 
-**Rôle d’administrateur :** Administrateur SharePoint
+**Rôle d’administrateur :** Administrateur SharePoint
 
-Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’affectent pas directement les solutions Groupes Microsoft 365 ou Teams, mais nous vous recommandons de les aligner sur les paramètres de ceux-ci afin d’éviter de perturber l’expérience utilisateur. (par exemple, si le partage d’invités est autorisé dans Teams mais pas dans SharePoint, les invités dans Teams n’ont pas accès à l’onglet Fichiers, car les fichiers de Teams sont stockés sur SharePoint).
+Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’affectent pas directement les solutions Groupes Microsoft 365 ou Teams, mais nous vous recommandons de les aligner sur les paramètres de ceux-ci afin d’éviter de perturber l’expérience utilisateur. (par exemple, si le partage d’invités est autorisé dans Teams mais pas dans SharePoint, les invités dans Teams n’ont pas accès à l’onglet Fichiers, car les fichiers de Teams sont stockés sur SharePoint).
 
 ### <a name="sharepoint-and-onedrive-sharing-settings"></a>Paramètres de partage dans SharePoint et OneDrive
 
@@ -187,9 +185,9 @@ Lorsque des fichiers et dossiers sont partagés sur SharePoint et OneDrive, les 
 
 ### <a name="sharepoint-and-onedrive-security-group-settings"></a>Paramètres de groupe de sécurité dans SharePoint et OneDrive
 
-Si vous souhaitez limiter le nombre de personnes pouvant partager avec des invités dans SharePoint et OneDrive, vous le pouvez en limitant le partage aux personnes appartenant à des groupes de sécurité spécifiés. Ces paramètres n’affectent pas le partage via Groupes Microsoft 365 et Teams. Des invités invités via un groupe ou une équipe auraient également accès au site associé, même si le partage de documents et de dossiers ne pourrait être effectué que par des personnes appartenant aux groupes de sécurité spécifiés.
+Si vous souhaitez limiter le nombre de personnes pouvant partager avec des invités dans SharePoint et OneDrive, vous le pouvez en limitant le partage aux personnes appartenant à des groupes de sécurité spécifiés. Ces paramètres n’affectent pas le partage via Groupes Microsoft 365 et Teams. Des invités invités via un groupe ou une équipe auraient également accès au site associé, même si le partage de documents et de dossiers ne pourrait être effectué que par des personnes appartenant aux groupes de sécurité spécifiés.
 
-**Navigation :** Centre d’administration SharePoint > Partage > Limiter le partage externe avec des groupes de sécurité spécifiques
+**Navigation :** Centre d’administration SharePoint > Partage > Limiter le partage externe avec des groupes de sécurité spécifiques
 
 ![Capture d’écran des paramètres de groupe de sécurité pour le partage SharePoint au niveau de l’organisation](../media/sharepoint-organization-external-sharing-security-groups.png)
 
@@ -202,7 +200,7 @@ Ces deux paramètres peuvent être utilisés en même temps. Si un utilisateur a
 
 ## <a name="sharepoint-site-level"></a>SharePoint (au niveau du site)
 
-**Rôle d’administrateur :** Administrateur SharePoint
+**Rôle d’administrateur :** Administrateur SharePoint
 
 Étant donné que ces paramètres dépendent des paramètres définis à l’échelle de l’organisation pour SharePoint, le paramètre de partage effectif pour le site peut changer si le paramètre au niveau de l’organisation change. Si vous choisissez un paramètre ici et que le niveau de l’organisation est défini ultérieurement sur une valeur plus restrictive, ce site fonctionnera conformément à cette valeur plus restrictive. Par exemple, si vous choisissez **Tout le monde** et que le paramètre au niveau de l’organisation est défini ultérieurement sur **Invités nouveaux et existants**, ce site n’autorisera que des invités nouveaux et existants. Si le paramètre au niveau de l’organisation est ensuite redéfini sur **Tout le monde**, ce site autorisera de nouveau les liens *Tout le monde*.
 
@@ -210,9 +208,9 @@ Ces deux paramètres peuvent être utilisés en même temps. Si un utilisateur a
 
 Vous pouvez définir des autorisations de partage d’invités pour chaque site dans SharePoint. Ce paramètre s’applique tant au partage de site qu’au partage de fichier et de dossier. (Le partage avec *Tout le monde* n’est pas disponible pour le partage de site. Si vous choisissez **Tout le monde**, les utilisateurs peuvent partager des fichiers et dossiers en utilisant des liens accessibles à *Tout le monde*, et le site proprement dit avec des invités nouveaux et existants.)
 
-Si une étiquette de confidentialité est appliquée au site, celle-ci peut contrôler les paramètres de partage externe. Pour plus d’informations, voir [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
+Si une étiquette de confidentialité est appliquée au site, celle-ci peut contrôler les paramètres de partage externe. Pour plus d’informations, voir [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les groupes Office 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
+**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
 
 ![Capture d’écran des paramètres de partage externe de site SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -224,7 +222,7 @@ Si une étiquette de confidentialité est appliquée au site, celle-ci peut cont
 
 Vous pouvez définir les valeurs par défaut pour le type de lien et les autorisations, ainsi que les paramètres d’expiration sur les liens *Tout le monde* de chaque site. Lorsqu’ils sont définis au niveau du site, ces paramètres remplacent les ceux au niveau de l’organisation. Notez que si les liens *Tout le monde* sont désactivés au niveau de l’organisation, *Tout le monde* n’est pas un type de lien disponible au niveau du site.
 
-**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
+**Navigation :** Centre d’administration SharePoint > Sites actifs > sélectionnez le site> Onglet des stratégies > Modifier le partage externe
 
 ![Capture d’écran des paramètres de partage SharePoint au niveau du site](../media/sharepoint-site-link-sharing-settings.png)
 
@@ -243,7 +241,7 @@ Le tableau ci-dessous présente le paramètre de partage par défaut pour chaque
 |:-----|:-----|
 |Classique|**Uniquement les membres de votre organisation**|
 |OneDrive|**Tout le monde**|
-|Sites connectés au groupe (notamment Teams)|**Invités nouveaux et existants** si le paramètre de la solution Groupes Microsoft 365 **Autoriser les propriétaires de groupe à ajouter des personnes à l’extérieur de l’organisation aux groupes** est **Activé**. Dans le cas contraire, **Invités existants uniquement**|
+|Sites connectés au groupe (notamment Teams)|**Invités nouveaux et existants** si le paramètre de la solution Groupes Microsoft 365 **Autoriser les propriétaires de groupe à ajouter des personnes à l’extérieur de l’organisation aux groupes** est **Activé**. Dans le cas contraire, **Invités existants uniquement**|
 |Communication|**Uniquement les membres de votre organisation**|
 |Sites modernes sans groupe (#STS3 TeamSite)|**Uniquement les personnes de votre organisation**|
 
@@ -254,6 +252,6 @@ Le tableau ci-dessous présente le paramètre de partage par défaut pour chaque
 
 [Vue d’ensemble du partage externe dans SharePoint et OneDrive](/sharepoint/external-sharing-overview)
 
-[Accès invité dans Microsoft Teams](/MicrosoftTeams/guest-access)
+[Accès invité dans Microsoft Teams](/MicrosoftTeams/guest-access)
 
 [Ajout d’invités aux Groupes Microsoft 365](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)

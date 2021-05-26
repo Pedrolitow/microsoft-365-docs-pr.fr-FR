@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: Le système de nom de domaine mappe les noms d’hôtes de l’ordinateur vers les adresses IP et comprendre les informations de base du bureau d'enregistrement de domaines et du DNS peut vous aider à gérer des domaines.
-ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582943"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635425"
 ---
 # <a name="dns-basics"></a>Principes de base
 
@@ -38,6 +38,8 @@ ms.locfileid: "52582943"
 ::: moniker range="o365-worldwide"
 
 Les noms de domaine, tels que contoso.com, sont gérés à l’aide d’un système mondial de bureaux d’enregistrement de domaines et de bases de données. Le système DNS (Domain Name System) fournit un mappage entre les noms d’hôtes d’ordinateurs lisibles et les adresses IP utilisées par l’équipement réseau. Comprendre les concepts de base de DNS et des bureaux d’enregistrement de domaines peut vous aider à gérer les domaines.
+
+## <a name="watch-domains--dns-an-overview"></a>À regarder : Domaines et DNS : vue d’ensemble
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -46,6 +48,8 @@ Les noms de domaine, tels que contoso.com, sont gérés à l’aide d’un syst�
 ::: moniker range="o365-germany"
 
 Les noms de domaine, tels que contoso.com, sont gérés à l’aide d’un système mondial de bureaux d’enregistrement de domaines et de bases de données. Le système DNS (Domain Name System) fournit un mappage entre les noms d’hôtes d’ordinateurs lisibles et les adresses IP utilisées par l’équipement réseau. Comprendre les concepts de base de DNS et des bureaux d’enregistrement de domaines peut vous aider à gérer les domaines.
+
+## <a name="watch-domains--dns-an-overview"></a>À regarder : Domaines et DNS : vue d’ensemble
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -190,9 +194,9 @@ Plusieurs enregistrements DNS sont requis pour permettre à Microsoft 365 de fon
   
 Vous pouvez [consulter une liste de valeurs](information-for-dns-records.md) pour configurer votre domaine. Celles-ci sont incluses directement dans le Centre d’administration Microsoft 365. 
   
-Ou, si vous envisagez de procéder à un déploiement, vous pouvez consulter la liste des enregistrements DNS requis pour Microsoft 365 avec leur fonction et des valeurs d'exemple. Consultez les [Enregistrements DNS externes pour Microsoft 365](../../enterprise/external-domain-name-system-records.md).
+Ou, si vous envisagez de procéder à un déploiement, vous pouvez consulter la liste de tous les enregistrements DNS requis pour Microsoft 365 avec leur fonction et des valeurs d'exemple. Consultez [Enregistrements DNS externes pour Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
-## <a name="how-can-i-learn-more"></a>Pour en savoir plus
+## <a name="next-steps"></a>Étapes suivantes
 
 Consultez les rubriques suivantes : 
   
@@ -201,8 +205,6 @@ Consultez les rubriques suivantes :
 
 ## <a name="related-content"></a>Contenu associé
 
-[FAQ sur les domaines](../setup/domains-faq.yml) (article)
-
-[Rechercher et corriger les problèmes, y compris de messagerie, après avoir ajouté votre domaine ou des enregistrements DNS](find-and-fix-issues.md) (article)
-
+[FAQ sur les domaines](../setup/domains-faq.yml) (article)\
+[Rechercher et corriger les problèmes, y compris de messagerie, après avoir ajouté votre domaine ou des enregistrements DNS](find-and-fix-issues.md) (article)\
 [Gérer des domaines](index.yml) (page de lien)
