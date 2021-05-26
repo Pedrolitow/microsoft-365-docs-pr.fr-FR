@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprendre pourquoi les résultats de recherche estimés et réels peuvent varier dans les recherches qui s’exécutent avec les outils eDiscovery Office 365.
-ms.openlocfilehash: d530b083b2353b66ee5d4fd4bb72b175aef28be8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532113"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653510"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Différences entre les résultats de recherche eDiscovery estimés et réels
 
@@ -69,7 +69,7 @@ Voici quelques raisons à ces différences :
 
     La raison pour laquelle vous n’exportez pas d’éléments nonndes à partir de chaque emplacement de l’organisation est qu’elle peut augmenter la probabilité d’erreurs d’exportation et augmenter le temps qu’il faut pour exporter et télécharger les résultats de la recherche.
 
-- Les éléments non inclus dans les SharePoint et OneDrive ne sont pas inclus dans les **estimations de recherche.** Les éléments nonndex provenant SharePoint sites et OneDrive Entreprise ne sont pas inclus dans les résultats de recherche estimés. Cela est dû au fait que SharePoint index ne contient pas de données pour les éléments non indexés. Seuls les éléments nonndex des boîtes aux lettres sont inclus dans les estimations de recherche. Toutefois, si vous incluez des éléments nonndes lors de l’exportation des résultats de recherche, les éléments nonndes dans SharePoint et OneDrive sont inclus, ce qui augmente le nombre d’éléments réellement exportés. Cela se traduit par des différences entre les résultats estimés (qui n’incluent pas les éléments nonndex dans les sites SharePoint et OneDrive) et les éléments réels téléchargés. La règle concernant l’exportation d’éléments nonndes uniquement à partir d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche s’applique toujours dans cette situation.
+- Les éléments non inclus dans les SharePoint et OneDrive ne sont pas inclus dans les **estimations de recherche.** Les éléments nonndex provenant SharePoint sites et OneDrive Entreprise ne sont pas inclus dans les résultats de recherche estimés. Cela est dû au fait que SharePoint index ne contient pas de données pour les éléments non indexés. Seuls les éléments nonndex provenant de boîtes aux lettres sont inclus dans les estimations de recherche. Toutefois, si vous incluez des éléments nonndes lors de l’exportation des résultats de recherche, les éléments nonndes dans SharePoint et OneDrive sont inclus, ce qui augmente le nombre d’éléments réellement exportés. Cela se traduit par des différences entre les résultats estimés (qui n’incluent pas les éléments nonndex dans les sites SharePoint et OneDrive) et les éléments réels téléchargés. La règle concernant l’exportation d’éléments nonndes uniquement à partir d’emplacements de contenu qui contiennent des éléments qui correspondent aux critères de recherche s’applique toujours dans cette situation.
 
 - **Versions de document SharePoint et OneDrive**. Lors de la recherche SharePoint sites et OneDrive comptes de recherche, plusieurs versions d’un document ne sont pas incluses dans le nombre de résultats de recherche estimés. Toutefois, vous avez la possibilité d’inclure toutes les versions de document lorsque vous exportez les résultats de la recherche. Si vous incluez des versions de documents lors de l’exportation des résultats de recherche, le nombre réel (et la taille totale) des éléments exportés sera augmenté.
 
@@ -81,7 +81,7 @@ Voici quelques raisons à ces différences :
 
 - **Dédoplication des éléments Exchange lors de l’exportation.** Pour Exchange, la déduplication réduit le nombre d’éléments exportés. Vous avez la possibilité de dupliquer les résultats de la recherche lorsque vous les exportez. Pour Exchange messages, cela signifie qu’une seule instance d’un message est exportée, même si ce message peut se trouver dans plusieurs boîtes aux lettres. Les résultats de recherche estimés incluent chaque instance d’un message. Ainsi, si vous choisissez l’option de dédoplication lors de l’exportation des résultats de recherche, le nombre réel d’éléments exportés peut être considérablement inférieur au nombre estimé d’éléments.
 
-    Une autre chose à garder à l’esprit si vous choisissez l’option de dédoplication est que tous les éléments Exchange sont exportés dans un seul fichier PST et que la structure de dossiers des boîtes aux lettres source n’est pas conservée. Le fichier PST exporté contient uniquement les éléments de courrier. Toutefois, un rapport de résultats de recherche contient une entrée pour chaque message exporté qui identifie la boîte aux lettres source où se trouve le message. Cela vous permet d’identifier toutes les boîtes aux lettres qui contiennent un message en double. Si vous n'activez pas la déduplication, un fichier PST distinct est exporté pour chaque boîte aux lettres incluse dans la recherche.
+Le rapport de résultats de recherche (Results.csv fichier) contient une entrée pour chaque message en double et identifie la boîte aux lettres source où se trouve un message en double. Cela vous permet d’identifier toutes les boîtes aux lettres qui contiennent un message en double.
 
 > [!NOTE]
 > Si vous ne sélectionnez pas l’option Inclure des éléments chiffrés ou dont le **format** n’est pas reconnu lorsque vous exportez des résultats de recherche ou téléchargez simplement les rapports, les rapports d’erreur d’index sont téléchargés, mais ils n’ont aucune entrée. Cela ne signifie pas qu’il n’y a aucune erreur d’indexation. Cela signifie simplement que les éléments nonndex n’ont pas été inclus dans l’exportation.

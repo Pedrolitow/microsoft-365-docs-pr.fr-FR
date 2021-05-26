@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportez les résultats de recherche à partir d’une recherche de contenu dans le centre Microsoft 365 conformité sur un ordinateur local. Les résultats des e-mails sont exportés en tant que fichiers PST. Le contenu de SharePoint sites OneDrive Entreprise sites sont exportés en tant que documents Office natifs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536057"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653534"
 ---
 # <a name="export-content-search-results"></a>Exporter les résultats de la recherche de contenu
 
 Une fois qu’une recherche de contenu est correctement exécuté, vous pouvez exporter les résultats de la recherche vers un ordinateur local. Lorsque vous exportez des résultats du courrier électronique, ils sont téléchargés sur votre ordinateur dans des fichiers PST. Lorsque vous exportez du contenu à SharePoint sites OneDrive Entreprise sites, des copies de documents Office natifs sont exportées. D’autres documents et rapports sont inclus dans les résultats de recherche exportés.
   
-L’exportation des résultats d’une recherche de contenu implique la préparation des résultats, puis leur téléchargement sur un ordinateur local.
+L’exportation des résultats d’une recherche de contenu implique la préparation des résultats, puis leur téléchargement sur un ordinateur local. Ces étapes d’exportation des résultats de recherche s’appliquent également à l’exportation des résultats d’une recherche associée à des cas eDiscovery principaux.
   
 ## <a name="before-you-export-search-results"></a>Avant d’exporter les résultats de recherche
 
@@ -57,7 +57,9 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
   > <sup>1</sup> Microsoft ne fabrique pas d’extensions ou d’extensions tierces pour ClickOnce applications. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou extensions tierces n’est pas prise en charge.<br/>
   > <sup>2</sup> Suite aux modifications récentes apportées à Microsoft Edge, ClickOnce prise en charge de la recherche n’est plus activée par défaut. Pour obtenir des instructions sur l’activation ClickOnce prise en charge dans Edge, voir Utiliser l’outil d’exportation [eDiscovery dans Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- Nous vous recommandons de télécharger les résultats de recherche sur un ordinateur local. Pour éliminer les problèmes de pare-feu ou d’infrastructure proxy de votre entreprise lors du téléchargement des résultats de recherche, vous pouvez envisager de télécharger les résultats de la recherche sur un bureau virtuel en dehors de votre réseau. Cela peut réduire les délai d’utilisation des connexions de données Azure lors de l’exportation d’un grand nombre de fichiers. Pour plus d’informations sur les bureaux virtuels, [voir Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
+- L’outil d’exportation eDiscovery que vous utilisez à l’étape 2 pour télécharger les résultats de la recherche ne prend pas en charge l’automatisation (à l’aide d’un script ou d’exécution d’cmdlets). Nous vous recommandons vivement de ne pas automatiser le processus de préparation à l’étape 1 ou le processus de téléchargement à l’étape 2. Si vous automatisez l’un de ces processus, le Support Microsoft ne fournira pas d’assistance si vous avez des problèmes.
+
+- Nous vous recommandons de télécharger les résultats de recherche sur un ordinateur local. Pour éliminer les problèmes de pare-feu ou d’infrastructure proxy de votre entreprise lors du téléchargement des résultats de recherche, vous pouvez envisager de télécharger les résultats de la recherche sur un bureau virtuel en dehors de votre réseau. Cela peut réduire les délai d’out qui se produisent dans les connexions de données Azure lors de l’exportation d’un grand nombre de fichiers. Pour plus d’informations sur les bureaux virtuels, [voir Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - Pour améliorer les performances lors du téléchargement des résultats de recherche, envisagez de diviser les recherches qui retournent un grand ensemble de résultats en recherches plus petites. Par exemple, vous pouvez utiliser des plages de dates dans les requêtes de recherche pour renvoyer un ensemble de résultats plus petit qui peut être téléchargé plus rapidement.
   
@@ -69,7 +71,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
   
   - **64 bits :**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
   
-    Ajoutez les lignes suivantes  *au fichiermachine.config*  quelque part entre les  `<configuration>` balises et les  `</configuration>` balises. N’oubliez pas  `ProxyServer` de remplacer et avec les  `Port` valeurs correctes pour votre organisation ; par exemple, `proxy01.contoso.com:80` . 
+    Ajoutez les lignes suivantes au  *fichiermachine.config*  quelque part entre les  `<configuration>` balises et les  `</configuration>` balises. N’oubliez pas  `ProxyServer` de remplacer et avec les  `Port` valeurs correctes pour votre organisation ; par exemple, `proxy01.contoso.com:80` . 
   
     ```xml
     <system.net>
@@ -82,7 +84,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     </system.net>
     ```
 
-- Si les résultats d’une recherche de contenu sont plus anciens que 7 jours et que vous soumettez une tâche d’exportation, un message d’erreur s’affiche vous invite à réexécuter la recherche pour mettre à jour les résultats de la recherche. Si cela se produit, annulez l’exportation, réexécutez la recherche, puis recommencez l’exportation.
+- Si les résultats d’une recherche ont plus de 7 jours et que vous soumettez une tâche d’exportation, un message d’erreur s’affiche vous invite à réexécuter la recherche pour mettre à jour les résultats de la recherche. Si cela se produit, annulez l’exportation, réexécutez la recherche, puis recommencez l’exportation.
 
 ## <a name="step-1-prepare-search-results-for-export"></a>Étape 1 : Préparer les résultats de recherche pour l’exportation
 
@@ -130,7 +132,7 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
    2. Cochez **la case Inclure les versions SharePoint fichiers pour** exporter toutes les versions de SharePoint documents. Cette option s’affiche uniquement si les sources de contenu de la recherche incluent SharePoint ou OneDrive Entreprise sites.
   
-   3. Sélectionnez **les fichiers d’exportation dans un dossier compressé (compressé). Inclut uniquement les messages individuels et SharePoint de documents** pour exporter les résultats de la recherche dans des dossiers compressés. Cette option s’affiche uniquement lorsque vous choisissez d’exporter Exchange éléments en tant que messages individuels et lorsque les résultats de la recherche incluent SharePoint ou OneDrive documents. Cette option est principalement utilisée pour contourner la limite de 260 caractères Windows noms de chemin d’accès lorsque des éléments sont exportés. Voir les « Noms de fichiers des éléments exportés » dans la section [Plus d’informations.](#more-information)
+   3. Sélectionnez **les fichiers d’exportation dans un dossier compressé (compressé). Inclut uniquement les messages individuels et SharePoint de documents** pour exporter les résultats de la recherche dans des dossiers compressés. Cette option s’affiche uniquement lorsque vous choisissez d’exporter des éléments Exchange en tant que messages individuels et lorsque les résultats de la recherche incluent SharePoint ou OneDrive documents. Cette option est principalement utilisée pour contourner la limite de 260 caractères Windows noms de chemin d’accès lorsque des éléments sont exportés. Consultez la section « Noms de fichiers des éléments exportés » dans la section [Plus d’informations.](#more-information)
   
 6. Cliquez **sur Exporter** pour démarrer le processus d’exportation. Les résultats de la recherche sont préparés pour le téléchargement, ce qui signifie qu’ils sont collectés à partir des emplacements de contenu d’origine, puis téléchargés vers un emplacement stockage Azure dans le cloud Microsoft. L'opération peut prendre plusieurs minutes.
 
@@ -140,7 +142,7 @@ Consultez la section suivante pour obtenir des instructions sur le téléchargem
 
 L’étape suivante consiste à télécharger les résultats de la recherche à partir stockage Azure’emplacement sur votre ordinateur local.
   
-1. Dans la page **Recherche de** contenu dans le centre Microsoft 365 conformité, sélectionnez **l’onglet** Exportation
+1. Dans la page **recherche de** contenu dans le centre Microsoft 365 conformité, sélectionnez **l’onglet** Exportation
   
    Vous de devez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des tâches d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux d’exportation ont le même nom que la recherche correspondante avec **_Export** au nom de recherche.
   
@@ -169,11 +171,11 @@ L’étape suivante consiste à télécharger les résultats de la recherche à 
       >- Désactivez l’analyse antivirus pour le dossier dans qui vous téléchargez le résultat de la recherche.<br/>
       >- Téléchargez les résultats de recherche dans différents dossiers pour les travaux de téléchargement simultanés.
 
-6. Cliquez sur **Démarrer** pour télécharger les résultats de recherche sur votre ordinateur.
+7. Cliquez sur **Démarrer** pour télécharger les résultats de recherche sur votre ordinateur.
   
     L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Voici plus d’informations sur l’exportation des résultats de recherche.
   
