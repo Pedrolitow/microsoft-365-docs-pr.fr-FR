@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Découvrez quels événements sont consignés lorsque les utilisateurs affectés aux autorisations eDiscovery effectuent des tâches de recherche de contenu, eDiscovery principale et Advanced eDiscovery dans le centre de conformité Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0dcc50c13ad705cb36f065639a4e971d032f22
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653498"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657692"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Rechercher des activités eDiscovery dans le journal d’audit
 
@@ -112,7 +112,7 @@ Le tableau suivant décrit les activités de recherche de contenu et de découve
 |Exportation démarrée de la recherche de contenu  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur a exporté les résultats d’une recherche de contenu.  <br/> |
 |Rapport d’exportation démarré  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Un utilisateur a exporté un rapport de recherche de contenu.  <br/> |
 |Recherche de contenu arrêtée  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Un utilisateur a arrêté une recherche de contenu.  <br/> |
-|(aucun)|CaseViewed|Get-ComplianceCase|Un utilisateur a vu la liste des cas sur la page **eDiscovery** principale dans le centre de conformité ou en exécutant la cmdlet Get-ComplianceCase web.|
+|(aucun)|CaseViewed|Get-ComplianceCase|Un utilisateur a vu la liste des cas sur la page **eDiscovery** principale ou la page **Advanced eDiscovery** dans le centre de conformité ou en exécutant la cmdlet Get-ComplianceCase.|
 |(aucun)|SearchViewed|Get-ComplianceSearch|Un utilisateur a vu la liste sur les recherches de contenu (répertoriées sous l’onglet **Recherches)** dans le centre de conformité ou en exécutant la cmdlet. Cette activité est également enregistrée lorsqu’un utilisateur voit la liste des recherches de contenu  associées à un cas eDiscovery (en cliquant sur l’onglet Recherches dans un cas) ou en exécutant la commande **Get-ComplianceSearch -Case.**|
 |(aucun)|ViewedSearchExported|Get-ComplianceSearchAction -Export|Un utilisateur a vu la liste des travaux d’exportation de recherche de contenu **(répertoriés** sous l’onglet Exportation) dans le centre de conformité ou en exécutant la cmdlet. Cette activité est également enregistrée lorsqu’un utilisateur voit la liste des tâches d’exportation dans un cas eDiscovery (répertorié sous l’onglet **Exports** dans un cas) ou en exécutant la commande **Get-ComplianceSearchAction -Case -Export.**|
 |(aucun)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|Un utilisateur affiche un aperçu des résultats d’une recherche de contenu dans le centre de conformité ou en exécutant la cmdlet.|
@@ -222,6 +222,6 @@ Le tableau suivant décrit les propriétés  qui sont incluses lorsque vous cliq
 |UserId  <br/> |L’utilisateur qui a effectué l’activité (spécifiée dans la propriété Operation) qui a entraîné la journal de l’enregistrement. Les enregistrements pour l’activité eDiscovery effectuée par les comptes système (tels que NT AUTHORITY\SYSTEM) sont également inclus dans le journal d’audit.  <br/> |
 |UserKey  <br/> |Autre ID pour l’utilisateur identifié dans la propriété UserId. Pour les activités eDiscovery, la valeur de cette propriété est généralement identique à celle de la propriété UserId.  <br/> |
 |UserServicePlan  <br/> |Abonnement utilisé par votre organisation. Pour les activités eDiscovery, cette propriété est généralement vide.  <br/> |
-|UserType  <br/> |Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur.  <br/> 0 Utilisateur normal. 2 Administrateur de votre organisation. 3 Un compte d’administrateur de centre de données Microsoft ou de système de centres de données. 4 Un compte système. 5 Application. 6 Principal de service. |
+|UserType  <br/> |Type d’utilisateur ayant effectué l’opération. Les valeurs suivantes indiquent le type d’utilisateur.  <br/> 0 Utilisateur normal. 2 Administrateur de votre organisation. 3 Un compte système d’administrateur de centre de données Microsoft ou de centre de données. 4 Un compte système. 5 Application. 6 Principal de service. |
 |Version  <br/> |Indique le numéro de version de l’activité (identifiée par la propriété Operation) enregistrée.  <br/> |
 |Charge de travail  <br/> |Le service où l’activité s’est produite. Pour les activités eDiscovery, la valeur **est SecurityComplianceCenter**.  <br/> |

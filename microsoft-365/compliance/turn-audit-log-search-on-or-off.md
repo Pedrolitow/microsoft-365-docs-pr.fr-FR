@@ -1,5 +1,5 @@
 ---
-title: Activer ou désactiver la recherche dans le journal d’audit
+title: Activer ou désactiver l’audit
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,61 +19,61 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Comment activer ou désactiver la fonctionnalité de recherche du journal d’audit dans le Centre de sécurité & conformité pour activer ou désactiver la possibilité pour les administrateurs de rechercher dans le journal d’audit.
-ms.openlocfilehash: aecd1d47592b9a5e2f134b1d9db9ff203b815b18
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Comment activer ou désactiver la fonctionnalité de recherche du journal d’audit dans le Centre de conformité Microsoft 365 pour activer ou désactiver la possibilité pour les administrateurs de rechercher dans le journal d’audit.
+ms.openlocfilehash: 091331a40a2ab6bf3c05bb289d49f63ab2dd2794
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919280"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657732"
 ---
-# <a name="turn-audit-log-search-on-or-off"></a>Activer ou désactiver la recherche dans le journal d’audit
+# <a name="turn-auditing-on-or-off"></a>Activer ou désactiver l’audit
 
-Nous activons par défaut la journalisation d’audit pour les organisations d’entreprise Microsoft 365 et Office 365. Cela inclut les organisations disposant d’abonnements E3/G3 ou E5/G5. Lorsque la recherche dans le journal d’audit dans le centre de conformité est désactivée, les activités des utilisateurs et des administrateurs de votre organisation sont enregistrées dans le journal d’audit et conservées pendant 90 jours et jusqu’à un an en fonction de la licence attribuée aux utilisateurs. Toutefois, votre organisation peut avoir des raisons de ne pas vouloir enregistrer et conserver les données du journal d’audit. Dans ce cas, un administrateur global peut décider de désactiver l’audit dans Microsoft 365.
+Nous activons par défaut la journalisation d’audit pour les organisations d’entreprise Microsoft 365 et Office 365. Cela inclut les organisations disposant d’abonnements E3/G3 ou E5/G5. Lorsque l’audit dans le centre de conformité est allumé, les activités des utilisateurs et des administrateurs de votre organisation sont enregistrées dans le journal d’audit et conservées pendant 90 jours et jusqu’à un an en fonction de la licence attribuée aux utilisateurs. Toutefois, votre organisation peut avoir des raisons de ne pas vouloir enregistrer et conserver les données du journal d’audit. Dans ce cas, un administrateur global peut décider de désactiver l’audit dans Microsoft 365.
 
 > [!IMPORTANT]
-> Si vous désactiver la recherche dans le journal d’audit dans Microsoft 365, vous ne pouvez pas utiliser l’API Activité de gestion Office 365 ou Azure Sentinel pour accéder aux données d’audit de votre organisation. La suppression de la recherche dans le journal d’audit en suivant les étapes de cet article signifie qu’aucun résultat ne sera renvoyé lorsque vous effectuerez une recherche dans le journal d’audit à l’aide du Centre de sécurité & conformité ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell. Cela signifie également que les journaux d’audit ne seront pas disponibles via l’API Activité de gestion Office 365 ou Azure Sentinel.
+> Si vous désactiver l’audit dans Microsoft 365, vous ne pouvez pas utiliser l’API activité de gestion Office 365 ou Azure Sentinel pour accéder aux données d’audit de votre organisation. La suppression de l’audit en suivant les étapes de cet article signifie qu’aucun résultat ne sera renvoyé lorsque vous effectuerez une recherche dans le journal d’audit à l’aide du Centre de sécurité & conformité ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell. Cela signifie également que les journaux d’audit ne seront pas disponibles via l Office 365 API Activité de gestion ou Azure Sentinel.
   
-## <a name="before-you-turn-audit-log-search-on-or-off"></a>Avant d’activer ou de désactiver la recherche dans le journal d’audit
+## <a name="before-you-turn-auditing-on-or-off"></a>Avant d’activer ou de désactiver l’audit
 
-- Vous devez avoir le rôle Journaux d’audit dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit dans votre organisation Microsoft 365. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page **Autorisations** du Centre d’administration Exchange. Les administrateurs globaux dans Microsoft 365 sont membres du groupe de rôles Gestion de l’organisation dans Exchange Online. 
-    
+- Le rôle Journaux d’audit doit vous être attribué dans Exchange Online pour activer ou désactiver l’audit dans Microsoft 365 organisation. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page **Autorisations** du Centre d Exchange de conformité. Les administrateurs globaux Microsoft 365 sont membres du groupe de rôles Gestion de l’organisation dans Exchange Online. 
+
     > [!NOTE]
-    > Des autorisations doivent être attribuées aux utilisateurs dans Exchange Online pour activer ou désactiver la recherche dans le journal d’audit. Si vous attribuez aux utilisateurs le rôle Journaux d’audit sur la page **Autorisations** du Centre de sécurité & conformité, ils ne pourront pas activer ou désactiver la recherche dans le journal d’audit. Cela est dû au fait que la cmdlet sous-jacente est une cmdlet Exchange Online PowerShell. 
-    
-- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, consultez la recherche dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API Activité de gestion Microsoft 365, voir Prise en charge des API de gestion [Microsoft 365.](/office/office-365-management-api/get-started-with-office-365-management-apis)
+    > Des autorisations doivent être attribuées aux utilisateurs Exchange Online pour activer ou désactiver l’audit. Si vous attribuez aux utilisateurs le rôle Journaux d’audit sur la page **Autorisations** du Centre de sécurité & conformité, ils ne pourront pas activer ou désactiver l’audit. Cela est dû au fait que l’cmdlet sous-jacente est Exchange Online cmdlet PowerShell. 
 
-- Pour vérifier que vous avez activé la recherche dans le journal d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
+- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, voir Rechercher dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API activité Microsoft 365 gestion, voir Prise en [Microsoft 365 API de gestion des données.](/office/office-365-management-api/get-started-with-office-365-management-apis)
+
+- Pour vérifier que l’audit est allumé, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
 
     ```powershell
     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
     ```
 
-    La valeur de  `True` la  _propriété UnifiedAuditLogIngestionEnabled_ indique que la recherche dans le journal d’audit est désactivée. 
-    
-## <a name="turn-on-audit-log-search"></a>Activer la recherche dans le journal d’audit
+    La valeur de  `True` la  _propriété UnifiedAuditLogIngestionEnabled_ indique que l’audit est allumé. 
 
-Si la recherche dans le journal d’audit n’est pas désactivée pour votre organisation, vous pouvez l’activer dans le centre de conformité ou à l’aide d’Exchange Online PowerShell. L’ouverture de la recherche dans le journal d’audit peut prendre plusieurs heures avant de pouvoir renvoyer des résultats lors de la recherche dans le journal d’audit.
+## <a name="turn-on-auditing"></a>Activer l’audit
+
+Si l’audit n’est pas allumé pour votre organisation, vous pouvez l’activer dans le centre de conformité ou à l’aide Exchange Online PowerShell. L’opération d’audit peut prendre plusieurs heures avant que vous ne renvoyiez des résultats lors de la recherche dans le journal d’audit.
   
-### <a name="use-the-compliance-center-to-turn-on-audit-log-search"></a>Utiliser le centre de conformité pour activer la recherche dans le journal d’audit
+### <a name="use-the-compliance-center-to-turn-on-auditing"></a>Utiliser le centre de conformité pour activer l’audit
 
-1. [Go to the compliance center](https://protection.office.com) and sign in.
+1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
 
-2. Dans le centre de conformité, allez à la recherche **dans** le journal  >  **d’audit de recherche.**
+2. Dans le volet de navigation gauche du centre Microsoft 365 conformité, cliquez sur Afficher **tout,** puis sur **Auditer.**
 
-   Si la recherche dans le journal d’audit n’est pas désactivée pour votre organisation, une bannière s’affiche pour vous dire que l’audit doit être allumé pour enregistrer l’activité des utilisateurs et des administrateurs.
+   Si l’audit n’est pas désactivé pour votre organisation, une bannière s’affiche pour vous invite à commencer à enregistrer l’activité des utilisateurs et des administrateurs.
 
-3. Cliquez **sur Activer l’audit.**
+   ![Bannière sur la page Audit](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
 
-    ![Cliquez sur Activer l’audit](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
-  
-    La bannière est mise à jour pour dire que le journal d’audit est en cours de préparation et que vous pouvez rechercher l’activité des utilisateurs et des administrateurs dans quelques heures.
+3. Cliquez sur la **bannière Démarrer l’enregistrement de l’activité de l’utilisateur et de l’administrateur.**
 
-### <a name="use-powershell-to-turn-on-audit-log-search"></a>Utiliser PowerShell pour activer la recherche dans le journal d’audit
+   L’application de la modification peut prendre jusqu’à 60 minutes.
+
+### <a name="use-powershell-to-turn-on-auditing"></a>Utiliser PowerShell pour activer l’audit
 
 1. [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Exécutez la commande PowerShell suivante pour activer la recherche dans le journal d’audit dans Office 365.
+2. Exécutez la commande PowerShell suivante pour activer l’audit dans Office 365.
 
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
@@ -81,19 +81,19 @@ Si la recherche dans le journal d’audit n’est pas désactivée pour votre or
 
     Un message s’affiche pour vous dire que l’application de la modification peut prendre jusqu’à 60 minutes.
   
-## <a name="turn-off-audit-log-search"></a>Désactiver la recherche dans le journal d’audit
+## <a name="turn-off-auditing"></a>Désactiver l’audit
 
-Vous devez utiliser Exchange Online PowerShell pour désactiver la recherche dans le journal d’audit.
+Vous devez utiliser Exchange Online PowerShell pour désactiver l’audit.
   
 1. [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Exécutez la commande PowerShell suivante pour désactiver la recherche dans le journal d’audit.
+2. Exécutez la commande PowerShell suivante pour désactiver l’audit.
 
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
-3. Après un certain temps, vérifiez que la recherche dans le journal d’audit est désactivée. Vous pouvez procéder de deux manières :
+3. Après un certain temps, vérifiez que l’audit est désactivé. Il existe deux méthodes pour y parvenir :
 
     - Dans Exchange Online PowerShell, exécutez la commande suivante :
 
@@ -101,8 +101,8 @@ Vous devez utiliser Exchange Online PowerShell pour désactiver la recherche dan
       Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
       ```
 
-      La valeur de  `False` la  _propriété UnifiedAuditLogIngestionEnabled_ indique que la recherche dans le journal d’audit est désactivée. 
+      La valeur de  `False` la  _propriété UnifiedAuditLogIngestionEnabled_ indique que l’audit est désactivé.
 
-    - Dans le centre [de conformité,](https://protection.office.com)allez à la recherche **dans** le journal \> **d’audit de recherche.**
+    - Go to the **Audit** page in the Microsoft 365 compliance center.
 
-      Une bannière s’affiche pour vous dire que l’audit doit être allumé pour enregistrer l’activité des utilisateurs et des administrateurs.
+      Si l’audit n’est pas désactivé pour votre organisation, une bannière s’affiche pour vous invite à commencer à enregistrer l’activité des utilisateurs et des administrateurs.
