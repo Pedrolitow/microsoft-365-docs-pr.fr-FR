@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment rechercher des ressources pour Microsoft SharePoint Syntex.
-ms.openlocfilehash: 350dd1a526b56525f0aca7a167841e3a77833533
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0daad53e1f6a84f0399c3bfcfb48b92db547f64b
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538074"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657620"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Présentation de Microsoft SharePoint Syntex
 
@@ -38,9 +38,9 @@ Les ressources de cette page sont conçues pour vous aider à commencer à déco
 
 ## <a name="get-started"></a>Prise en main
 
-Les ressources de cette section permettent d’en savoir plus sur les deux méthodes de classification et d’extraction des données utilisées par SharePoint Syntex : traitement des formulaires et compréhension de document.
+Les ressources de cette section permettent d’en savoir plus sur les deux méthodes de classification et d’extraction des données utilisées par SharePoint Syntex : traitement des formulaires et compréhension de document.
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |En savoir plus sur la compréhension de document|[Présentation de la présentation des documents](./document-understanding-overview.md)|
 |En savoir plus sur le traitement de formulaires|[Vue d’ensemble du traitement des formulaires](./form-processing-overview.md)|
@@ -51,17 +51,18 @@ Les ressources de cette section permettent d’en savoir plus sur les deux méth
 
 ## <a name="adoption"></a>Adoption
 
-Découvrez comment utiliser et mettre en œuvre SharePoint Syntex au sein de votre organisation pour vous aider à résoudre les problèmes de votre entreprise : 
+Découvrez comment utiliser et mettre en œuvre SharePoint Syntex au sein de votre organisation pour vous aider à résoudre les problèmes de votre entreprise : 
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|Découvrez comment commencer à planifier l’utilisation de SharePoint Syntex. |[SharePoint Syntex adoption : prise en main](./adoption-getstarted.md)<br><br>|  
+|Découvrez comment commencer à planifier l’utilisation de SharePoint Syntex |[Adoption de SharePoint Syntex : prise en main](./adoption-getstarted.md)| 
+|Découvrez comment utiliser SharePoint Syntex pour automatiser les processus de documents |[Gérer des contrats en utilisant la solution Microsoft 365](./solution-manage-contracts-in-microsoft-365.md)| 
 
-## <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
+## <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
-Les ressources de cette section aideront votre administrateur au sein de votre organisation à installer et à configurer Microsoft SharePoint Syntex dans votre environnement Microsoft 365.
+Les ressources de cette section aideront votre administrateur au sein de votre organisation à installer et à configurer Microsoft SharePoint Syntex dans votre environnement Microsoft 365.
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |Installer et configurer SharePoint Syntex|[Configurer Microsoft SharePoint Syntex](./set-up-content-understanding.md)|
 |En savoir plus sur l’utilisation des balises d’image et la désactivation|[Balisage d’image dans SharePoint Syntex](./image-tagging.md)|
@@ -70,7 +71,7 @@ Les ressources de cette section aideront votre administrateur au sein de votre o
 
 Les ressources de cette section permettent à vos utilisateurs d’apprendre à créer et à configurer les modèles de compréhension de document et de traitement de formulaire.
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |Découvrez comment utiliser les modèles|[Créer un centre de contenu](./create-a-content-center.md)<br><br>[Créer un classificateur](./create-a-classifier.md)<br><br>[Créer un extracteur](./create-an-extractor.md)<br><br>[Créer un modèle de traitement de formulaire](./create-a-form-processing-model.md)<br><br>[Types d’explications](./explanation-types-overview.md)<br><br>[Appliquer un modèle de compréhension de document](./apply-a-model.md)<br><br>[En savoir plus sur les modèles de présentation des documents via le modèle d’exemple](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Appliquer une étiquette de rétention à votre modèle|[Appliquer une étiquette de rétention à un modèle de compréhension de document](./apply-a-retention-label-to-a-model.md)|
@@ -82,7 +83,7 @@ Les ressources de cette section permettent à vos utilisateurs d’apprendre à 
 
 Une licence SharePoint Syntex offre à vos utilisateurs des services de contenu Premium qui vous permettent d’accéder à des fonctionnalités supplémentaires dans votre environnement Microsoft 365. Les ressources de cette section fournissent plus de détails sur ces fonctionnalités et sur leur utilisation.
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |En savoir plus sur l’importation d’un jeu de données à l’aide d’un format basé sur SKOS (système simple d’organisation des connaissances)|[Importer un ensemble de termes avec un format basé sur SKOS](./import-term-set-skos.md)<br><br>[Référence de format SKOS pour la taxonomie SharePoint](./skos-format-reference.md)<br><br>|
 |Découvrez comment rendre les types de contenu plus cohérents pour les bibliothèques et listes SharePoint|[Types de contenu Push vers un Hub](./push-content-type-to-hub.md)|
