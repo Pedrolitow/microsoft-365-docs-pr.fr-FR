@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Découvrez comment supprimer un ancien domaine d’Microsoft 365 et déplacer des utilisateurs et des groupes vers un autre domaine ou annuler votre abonnement.
-ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: deec298dda037009e2c66f1b686396c689ecd883
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635701"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683354"
 ---
 # <a name="remove-a-domain"></a>Supprimer un domaine
   
@@ -43,7 +43,21 @@ Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan Mi
 
 1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre administratif</a>.      
 
-2. Sélectionnez  > **Utilisateurs actifs.**
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre administratif</a>.        
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre administratif</a>.        
+
+::: moniker-end
+
+2. Sélectionnez   >  **Utilisateurs actifs.**
 
 3. Sélectionnez les cases en de côté des noms de tous les utilisateurs que vous souhaitez déplacer.
 
@@ -53,21 +67,17 @@ Supprimez-vous votre domaine, car vous souhaitez l’ajouter à un autre plan Mi
 
 Vous devrez également effectuer cette action pour vous-même si vous êtes sur le domaine que vous souhaitez supprimer. Lorsque vous modifiez le domaine de votre compte, vous devez vous déconnecter puis vous reconnecter en utilisant le nouveau domaine que vous avez choisi.
 
+#### <a name="move-yourself"></a>Se déplacer vous-même
+
+::: moniker range="o365-worldwide"
+
+1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre administratif</a>.      
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centre administratif</a>.        
-
-2. Sélectionnez  > **Utilisateurs actifs.**
-
-3. Sélectionnez les cases en de côté des noms de tous les utilisateurs que vous souhaitez déplacer.
-
-4. At the top of the page, choose **More** > **Edit domains**.
-
-5. Dans le **volet Modifier les domaines,** sélectionnez un autre domaine.
-  
-Vous devrez également effectuer cette action pour vous-même si vous êtes sur le domaine que vous souhaitez supprimer. Lorsque vous modifiez le domaine de votre compte, vous devez vous déconnecter puis vous reconnecter en utilisant le nouveau domaine que vous avez choisi.
 
 ::: moniker-end
 
@@ -75,23 +85,7 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre administratif</a>.        
 
-2. Sélectionnez  > **Utilisateurs actifs.**
-
-3. Sélectionnez les cases en de côté des noms de tous les utilisateurs que vous souhaitez déplacer.
-
-4. At the top of the page, choose **More** > **Edit domains**.
-
-5. Dans le **volet Modifier les domaines,** sélectionnez un autre domaine.
-  
-Vous devrez également effectuer cette action pour vous-même si vous êtes sur le domaine que vous souhaitez supprimer. Lorsque vous modifiez le domaine de votre compte, vous devez vous déconnecter puis vous reconnecter en utilisant le nouveau domaine que vous avez choisi.
-
 ::: moniker-end
-
-#### <a name="move-yourself"></a>Se déplacer vous-même
-
-::: moniker range="o365-worldwide"
-
-1. Allez au <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centre administratif</a>.      
 
 2. Go to **Users** \> **Active Users**, and select your account from the list.
 
@@ -101,65 +95,18 @@ Vous devrez également effectuer cette action pour vous-même si vous êtes sur 
 
 5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
 
-Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers un autre domaine. Pour des informations supplémentaires, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Go to **Users** \> **Active Users**, and select your name in the list.
-
-2. Dans la section **Nom d’utilisateur/Courrier** électronique, **sélectionnez Modifier,** puis choisissez un autre domaine.
-
-3. Select **Set as primary** > **Save** > **Close**.
-  
-4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
-
-5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
-
-Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers un autre domaine. Pour des informations supplémentaires, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Go to **Users** \> **Active Users**, and select your name in the list.
-
-2. Dans la section **Nom d’utilisateur/Courrier** électronique, **sélectionnez Modifier,** puis choisissez un autre domaine.
-
-3. Select **Set as primary** > **Save** > **Close**.
-  
-4. Dans la partie supérieure, sélectionnez le nom de votre compte, puis **sélectionnez Se sortir.**
-
-5. Connectez-vous avec le nouveau domaine et votre même mot de passe.
-
-Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers un autre domaine. Pour des informations supplémentaires, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
-
-::: moniker-end
+Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers un autre domaine. Pour des informations supplémentaires, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true).
 
 ### <a name="step-2-move-groups-to-another-domain"></a>Étape 2 : Déplacer des groupes vers un autre domaine
 
 ::: moniker range="o365-worldwide"
 
 1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groupes.</a>
-  
-2. Sélectionnez le nom du groupe, puis sous **l’onglet Général** sous **Adresse de messagerie, Principal,** sélectionnez **Modifier**.
-
-3. Utilisez la liste de listes pour choisir un autre domaine.
-
-4. Sélectionnez **Enregistrer**, puis **Fermer**. Répétez cette procédure pour les groupes ou listes de distribution associés au domaine que vous souhaitez supprimer.
 
 ::: moniker-end
-
 ::: moniker range="o365-germany"
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centre d’administration,</a>allez à la page  > **Groupes.**
-
-2. Sélectionnez le nom du groupe, puis **sélectionnez Modifier** en plus du **nom.**
-
-3. Utilisez la liste de listes pour choisir un autre domaine.
-
-4. Sélectionnez **Enregistrer**, puis **Fermer**. Répétez cette procédure pour les groupes ou listes de distribution associés au domaine que vous souhaitez supprimer.
 
 ::: moniker-end
 
@@ -167,13 +114,13 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 1. Dans le <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centre d’administration,</a>allez à la page  > **Groupes.**
 
-2. Sélectionnez le nom du groupe, puis **sélectionnez Modifier** en plus du **nom.**
+::: moniker-end
+  
+2. Sélectionnez le nom du groupe, puis sous **l’onglet Général** sous **Adresse de messagerie, Principal,** sélectionnez **Modifier**.
 
 3. Utilisez la liste de listes pour choisir un autre domaine.
 
 4. Sélectionnez **Enregistrer**, puis **Fermer**. Répétez cette procédure pour les groupes ou listes de distribution associés au domaine que vous souhaitez supprimer.
-
-::: moniker-end
 
 ### <a name="step-3-remove-the-old-domain"></a>Étape 3 : Supprimer l’ancien domaine
 
@@ -205,7 +152,7 @@ Vous pouvez également utiliser PowerShell pour déplacer des utilisateurs vers 
 
 La suppression d’un domaine par Microsoft 365 peut prendre jusqu’à 5 minutes s’il n’est pas référencé dans un grand nombre d’endroits tels que les groupes de sécurité, les listes de distribution, les utilisateurs et les groupes Microsoft 365 de sécurité. Si plusieurs références utilisent le domaine, la suppression du domaine peut prendre plusieurs heures (une journée).
   
-Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShell pour interroger tous les utilisateurs, puis déplacez-les vers un autre domaine. Sinon, il est possible que quelques-uns des utilisateurs manquent dans l'interface utilisateur. De plus, lorsque vous voudrez supprimer le domaine, vous ne pourrez pas et vous ne saurez pas pourquoi. Pour en savoir plus, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
+Si vous avez des centaines voire des milliers d'utilisateurs, utilisez PowerShell pour interroger tous les utilisateurs, puis déplacez-les vers un autre domaine. Sinon, il est possible que quelques-uns des utilisateurs manquent dans l'interface utilisateur. De plus, lorsque vous voudrez supprimer le domaine, vous ne pourrez pas et vous ne saurez pas pourquoi. Pour en savoir plus, voir [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true). Pour définir le domaine par défaut, utilisez [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true).
   
 ## <a name="still-need-help"></a>Encore besoin d’aide ?
 
@@ -218,8 +165,26 @@ Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine 
   
 ::: moniker-end
 
+::: moniker range="o365-germany"
+
+> [!NOTE]
+> Vous ne pouvez pas supprimer le domaine [« .onmicrosoft.de »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateurs reviennent à l’adresse « .onmicrosoft.de » en tant que SMTP/UserprincipalName principal.
+  
+Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true) et nous vous aiderons à effectuer cette tâche.
+  
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Vous ne pouvez pas supprimer le domaine [« .partner.onmschina.cn »](../setup/domains-faq.yml) de votre compte. Lorsque vous supprimez un domaine, les comptes d’utilisateurs reviennent à l’adresse « .partner.onmschina.cn » en tant que SMTP/UserprincipalName principal.
+  
+Cela ne fonctionne toujours pas ? Vous devez peut-être supprimer votre domaine manuellement. [Appelez-nous](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true) et nous vous aiderons à effectuer cette tâche.
+  
+::: moniker-end
+
 ## <a name="related-content"></a>Contenu associé
 
-[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)\
+[FAQ sur les domaines](../setup/domains-faq.yml) (article)\
 [Basculer vers une autre Microsoft 365 pour les entreprises](../../commerce/subscriptions/switch-to-a-different-plan.md) (article)\
 [Annuler votre abonnement](../../commerce/subscriptions/cancel-your-subscription.md) (article)

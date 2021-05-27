@@ -20,18 +20,18 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331789"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689024"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients en Inde)
 
-Les clients en Inde reçoivent des factures Web Direct (Azure et Microsoft 365) facturées par Microsoft Regional Sales Pte Ltd. Singapore (MRS) et vers Singapour pour régler la facture. Si vous avez retenu des taxes lors du versement du paiement, cet article explique le processus de revendication d’un crédit pour la retenue d’impôt sur le revenu (WHT) dans votre compte avec MRS.
+Les clients en Inde reçoivent des factures Web Direct (Azure et Microsoft 365) facturées par Microsoft Regional Sales Pte Ltd. Singapore (MRS) et font des paiements internationaux à Singapour pour régler la facture. Si vous avez retenu des taxes lors du versement du paiement, cet article explique le processus de revendication d’un crédit pour la retenue d’impôt sur le revenu (WHT) dans votre compte avec MRS.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-and-wire"></a>Pour les clients de paiement par facture qui paient par chèque et par virement
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Pour les clients de paiement par facture qui paient par chèque ou par virement
 
 Si vous avez retenu des taxes lors du versement du paiement à MRS et déposé l’impôt sur le revenu auprès du service d’impôt sur le revenu, vous devez soumettre une demande WHT pour régler le montant d’impôt retenu dans votre compte.
 
@@ -44,7 +44,7 @@ Envoyez la demande WHT en ouvrant un ticket avec le support Microsoft.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Pour les clients qui paient par carte de crédit
 
-Si votre mode de paiement est une carte de crédit et que vous avez effectué un paiement complet au service MRS et que vous avez payé wht au service d’impôt sur le revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
+Si votre mode de paiement est une carte de crédit et que vous avez effectué un paiement complet au service MRS et que vous avez également payé l’IFF au service d’impôt sur le revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
 
 Votre requête WHT doit inclure les éléments suivants :
 
@@ -53,11 +53,11 @@ Votre requête WHT doit inclure les éléments suivants :
 
 Envoyer la demande WHT en ouvrant un ticket avec le support Microsoft
 
-## <a name="timelines-to-submit-the-tds-certificate-together-with-the-withholding-tax-credit-form"></a>Chronologies de soumission du certificat TDS avec le formulaire de crédit d’impôt sur la retenue d’impôt
+## <a name="timelines-to-submit-the-tds-certificate-together-with-the-withholding-tax-credit-form"></a>Chronologies pour envoyer le certificat TDS avec le formulaire de crédit d’impôt sur la retenue d’impôt
 
 Le tableau suivant indique les dates d’échéance et les chronologies pour envoyer des formulaires de certificat TDS signés numériquement (formulaire 16A) pour chaque trimestre.
 
-| Trimestre | Period | Date d’échéance pour l’émission du certificat TDS (formulaire 16A) | Chronologies étendues pour envoyer le formulaire 16A avec le formulaire de crédit d’impôt à la retenue d’impôt |
+| Trimestre | Period | Date d’échéance pour l’émission du certificat TDS (formulaire 16A) | Chronologies étendues pour envoyer le formulaire 16A avec le formulaire de crédit d’impôt sur la retenue d’impôt |
 |-|-|-|-|
 | 1 | Avril - Juin | 15-Août | 31-Aug |
 | 2 | Juillet - Septembre | 15-Nov | 30-Nov |
@@ -67,12 +67,12 @@ Le tableau suivant indique les dates d’échéance et les chronologies pour env
 > [!IMPORTANT]
 >
 > - Les clients peuvent uniquement soumettre une demande de remboursement du montant wht après avoir payé la facture.
-> - Le montant de la facture du formulaire de retenue d’impôt doit correspondre au montant de la facture identifié dans le certificat TDS. Si le montant de la facture est différent entre les deux formulaires, vous devez spécifier la raison de la différence dans le formulaire de retenue d’impôt. Ces informations sont vérifiées par l’équipe de révision, qui peut poser des questions de clarification, le cas échéant.
-> - Les fichiers de certificat TDS doivent être dans l’un des formats de fichier suivants : .PDF ou Image uniquement (. JPEG, .PNG et .GIF). En outre, les noms de fichiers ne doivent pas contenir d’espaces ni de caractères spéciaux. La taille du fichier ne peut pas dépasser 1 Mo.
+> - Le montant de la facture du formulaire de crédit d’impôt à la source doit correspondre au montant de la facture identifié dans le certificat TDS. Si le montant de la facture est différent entre les deux formulaires, vous devez spécifier la raison de la différence dans le formulaire de retenue d’impôt. Ces informations sont vérifiées par l’équipe de révision, qui peut poser des questions de clarification, le cas échéant.
+> - Les fichiers de certificat TDS doivent être dans l’un des formats de fichier suivants : .PDF ou Image uniquement (. JPEG, .PNG ou .GIF). En outre, les noms de fichiers ne doivent pas contenir d’espaces ni de caractères spéciaux. La taille du fichier ne peut pas dépasser 1 Mo.
 
 Une fois que vous avez envoyé la demande, elle passe au processus d’approbation où elle est approuvée pour exécution ou vous est renvoyée pour correction.
 
-En cas de problème avec votre demande, l’équipe de révision peut exiger des corrections sur le montant de retenue ou le remplacement du certificat TDS. Vous devez resoumettre la demande avant qu’elle ne soit approuvée. L’équipe de révision approuve la demande ou demande d’autres modifications.
+En cas de problème avec votre demande, l’équipe de révision peut exiger des corrections sur le montant de retenue ou le remplacement du certificat TDS. Vous devez resoumettre la demande avant de pouvoir l’approuver. L’équipe de révision approuve la demande ou demande d’autres modifications.
 
 ## <a name="approved-requests"></a>Demandes approuvées
 
@@ -80,7 +80,7 @@ En cas de problème avec votre demande, l’équipe de révision peut exiger des
 
 Une fois votre demande approuvée, elle est reflétée dans le cycle de facturation suivant. Le montant wht payé est inclus dans la section paiement de votre facture suivante. Le montant est également affiché sous le montant payé dans le portail client.
 
-**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre sur-paiement est remboursé sur votre carte de crédit.
+**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre paiement surpayé est remboursé sur votre carte de crédit.
 
 > [!IMPORTANT]
 >

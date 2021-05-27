@@ -7,26 +7,27 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-ms.assetid: 298c529b-407b-4a2b-b2c5-6e77a9d1f07f
 description: Cette page permet de créer votre liste de membres du personnel et de gérer les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail.
-ms.openlocfilehash: 11d62cc34522de21e63b8bdf6e7e15729ac73dc1
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399192"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683318"
 ---
 # <a name="add-staff-to-bookings"></a>Ajouter du personnel aux réservations
 
 La page Personnel dans Bookings vous permet de créer votre liste de personnel et de gérer les détails des membres du personnel tels que le nom, le numéro de téléphone et l’adresse e-mail. Vous pouvez également définir des heures de travail pour chaque membre du personnel à partir d’ici.
 
-## <a name="add-staff"></a>Ajouter du personnel
+## <a name="before-you-begin"></a>Avant de commencer
 
-Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de votre personnel n’ont pas besoin d’avoir un compte Microsoft 365. Tous les membres du personnel doivent avoir une adresse de messagerie valide pour recevoir des réservations et planifier des modifications.
+Bien que Bookings soit une fonctionnalité de Microsoft 365, tous les membres de votre personnel ne sont pas tenus d’avoir Microsoft 365 compte. Tous les membres du personnel doivent avoir une adresse de messagerie valide pour recevoir des réservations et planifier des modifications.
 
-Regardez cette vidéo ou suivez les étapes ci-dessous pour ajouter votre personnel.
+## <a name="watch-add-your-staff-in-microsoft-bookings"></a>Regarder : Ajouter votre personnel dans Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
+
+## <a name="steps"></a>Étapes
 
 1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select Add **staff**
 
@@ -50,7 +51,7 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour ajouter votre person
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="Un e-mail de notification de Bookings":::
 
-7. La sélection d’événements sur le calendrier **Office 365** affecte la disponibilité si vous souhaitez que les informations de disponibilité des calendriers des membres du personnel affectent la disponibilité des services de réservation via Bookings.
+7. La sélection d’événements **Office 365 votre** calendrier affecte la disponibilité si vous souhaitez que les informations de disponibilité des calendriers des membres du personnel affectent la disponibilité des services bookings via Bookings.
 
     Par exemple, si un membre du personnel a une réunion d’équipe ou un rendez-vous personnel prévu pour 15h00 le mercredi, Bookings indique que ce membre du personnel n’est pas disponible pour être réservé dans ce créneau horaire. Cette heure apparaîtra comme occupée ou provisoire dans l’affichage Calendrier Bookings, comme illustré dans l’exemple ci-dessous.
 
@@ -61,7 +62,19 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour ajouter votre person
 
 8. Sélectionnez Utiliser **les** heures d’ouverture pour définir toutes les heures de réservation pour que les membres de votre personnel soient uniquement pendant les heures d’ouverture que vous avez définies dans la **section** Heures d’ouverture de la page Informations professionnelles.
 
-    La désélection de cette case permet au personnel de se voir donner des heures personnalisées qui limitent les heures de réservation. Cela est utile dans les scénarios où un membre du personnel peut se trouve uniquement le mardi et le mercredi sur le site, ou il dédie ses matins à un type de rendez-vous et ses activités pour d’autres types.
+    La désélection de cette case permet au personnel de se voir donner des heures personnalisées qui limitent les heures de réservation. Cela est utile dans les scénarios où un membre du personnel peut se trouve uniquement les mardis et mercredis sur le site, ou il dédie ses matins à un type de rendez-vous et ses activités pour d’autres types.
 
     > [!NOTE]
     > Seuls les 31 premiers membres du personnel que vous ajoutez à la page de votre personnel s’affichent lorsque vous affectez des membres du personnel à un service.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Après avoir ajouté des membres du personnel, vous pouvez planifier des fermetures d’entreprise et des [congés](schedule-closures-time-off-vacation.md) et [définir vos stratégies de planification.](set-scheduling-policies.md)
+
+## <a name="related-content"></a>Contenu associé
+
+[Microsoft Bookings](bookings-overview.md)
+
+[Planifier des fermetures d’entreprise, des congés et des congés](schedule-closures-time-off-vacation.md)
+
+[Définition de vos stratégies de planification](set-scheduling-policies.md)

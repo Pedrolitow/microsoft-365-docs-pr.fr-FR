@@ -2,8 +2,8 @@
 title: Utilisateurs invités dans le centre d Microsoft 365'administration de l’utilisateur
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment créer une équipe avec des invités dans le centre Microsoft 365'administration et comment rejoindre une équipe en tant qu’invité.
-ms.openlocfilehash: b458aaba464121e2e408013d4c8f32cd8a6852c5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Découvrez comment la liste des utilisateurs invités est remplie dans le centre Microsoft 365'administration.
+ms.openlocfilehash: 7c0fbfb57c9710103d1b670eb09024501071d602
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634183"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683390"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Utilisateurs invités dans Microsoft 365'administration centrale
 
@@ -34,35 +34,38 @@ Une fois qu’un utilisateur apparaît dans **la** liste des utilisateurs invit�
 
 Pour afficher les utilisateurs invités, dans le centre Microsoft 365'administration, dans le navigation gauche, développez **Utilisateurs,** puis choisissez **Utilisateurs invités.**
 
-## <a name="watch-create-a-team-with-guests"></a>Regarder : Créer une équipe avec des invités
+## <a name="before-you-begin"></a>Avant de commencer
 
-Pour savoir comment ajouter un invité à Teams, voir la vidéo suivante : <br><br>
+Vous devez être un administrateur général pour effectuer cette tâche.
+
+## <a name="watch-add-guests-to-teams"></a>Regarder : Ajouter des invités à Teams
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
 ## <a name="watch-join-a-team-as-a-guest"></a>Regarder : rejoindre une équipe en tant qu’invité
 
-Pour rejoindre une équipe en tant qu’invité, regardez la vidéo suivante :<br><br>
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
-## <a name="add-guests-in-azure-active-directory"></a>Ajouter des invités dans Azure Active Directory
+## <a name="steps-add-guests-in-azure-active-directory"></a>Étapes : ajouter des invités dans Azure Active Directory
 
-Pour ajouter des invités dans le Azure Active Directory, voir [ajouter des utilisateurs invités.](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
+Pour ajouter des invités dans le Azure Active Directory, voir [ajouter des utilisateurs invités.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)
 
 Après avoir ajouté un utilisateur, vous pouvez également l’affecter à un groupe ou lui donner accès à une application de votre organisation. Une fois que vous avez ajouté un utilisateur dans le portail Azure AD, cet utilisateur est également répertorié sur la **page** Des utilisateurs invités dans le centre d’administration Microsoft 365 client.
 Une fois qu’un  utilisateur est ajouté à [](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) la liste des utilisateurs invités, il peut être ajouté aux groupes dans le centre d Microsoft 365'administration.
 
-Voir [ajouter des invités en bloc](/azure/active-directory/b2b/tutorial-bulk-invite) pour inviter plusieurs invités à collaborer avec votre organisation.
+Voir [ajouter des invités en bloc](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) pour inviter plusieurs invités à collaborer avec votre organisation.
 
-## <a name="remove-a-guest"></a>Supprimer un invité
+## <a name="next-steps-remove-a-guest"></a>Étapes suivantes : Supprimer un invité
+
+Une fois que vous avez terminé de collaborer avec un utilisateur invité, vous pouvez le supprimer et il n’aura plus accès à votre organisation.
 
 1. Dans le centre Microsoft 365' administration, développez **Utilisateurs,** puis choisissez **Utilisateurs invités.**
-1. Dans la page **Utilisateurs** invités, choisissez l’utilisateur que vous souhaitez supprimer, puis **choisissez Supprimer un utilisateur.** 
+1. Dans la page **Utilisateurs** invités, choisissez l’utilisateur que vous souhaitez supprimer, puis **choisissez Supprimer un utilisateur.**
 
-Pour supprimer des utilisateurs dans le portail Azure AD, consultez [supprimer un utilisateur invité et des ressources.](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)
+Pour supprimer des utilisateurs dans le portail Azure AD, consultez [supprimer un utilisateur invité et des ressources.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)
 
 ## <a name="related-content"></a>Contenu associé
 
-[Gérer l’accès invité dans Microsoft 365 groupes de travail](../create-groups/manage-guest-access-in-groups.md) (article)\
-[Empêcher l’ajout d’invités](../../solutions/per-group-guest-access.md) à un groupe Microsoft 365 ou à Microsoft Teams équipe (article)
+[utilisateurs invités dans le Centre d’administration Microsoft 365](about-guest-users.md)
+
+[empêcher l’ajout d’invités à un groupe Microsoft 365 ou à une équipe Microsoft Teams spécifique ;](../../solutions/per-group-guest-access.md)

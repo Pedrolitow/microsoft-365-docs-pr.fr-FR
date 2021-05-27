@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment gérer les cas eDiscovery principaux. Cela inclut la fermeture d’un cas, la réouverture d’un cas fermé et la suppression d’un cas.
-ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532445"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684098"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Fermer, rouvrir et supprimer un cas core eDiscovery
 
@@ -92,7 +92,7 @@ Avant de supprimer un cas (qu’il soit actif  ou fermé), vous devez d’abord 
 
 Pour supprimer une attente eDiscovery :
 
-1. Go the **Holds** tab in the case that you want to delete.
+1. Go to the **Holds** tab in the case that you want to delete.
 
 2. Sélectionnez la attente à supprimer.
 

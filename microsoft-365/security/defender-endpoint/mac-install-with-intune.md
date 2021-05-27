@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da82b24b8a6bb6aa22028615bb3dd0c9d45acfa1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 5aeffdaff39c2f10dfa5164764bff38e99c00010
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345962"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684218"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
 
@@ -45,17 +45,17 @@ Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur ma
 
 Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour endpoint sur Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
 
 | Étape | Exemples de noms de fichiers | BundleIdentifier |
 |-|-|-|
 | [Télécharger le package d’intégration](#download-the-onboarding-package) | WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml | com.microsoft.wdav.atp |
-| [Approuver l’extension système pour Microsoft Defender pour le point de terminaison](#approve-system-extensions) | MDATP_SysExt.xml | N/A |
-| [Approuver l’extension de noyau pour Microsoft Defender pour le point de terminaison](#download-the-onboarding-package) | MDATP_KExt.xml | N/A |
+| [Approuver l’extension système pour Microsoft Defender pour le point de terminaison](#approve-system-extensions) | MDATP_SysExt.xml | S/O |
+| [Approuver l’extension de noyau pour Microsoft Defender pour le point de terminaison](#download-the-onboarding-package) | MDATP_KExt.xml | S/O |
 | [Accorder un accès disque complet à Microsoft Defender pour le point de terminaison](#full-disk-access) | MDATP_tcc_Catalina_or_newer.xml | com.microsoft.wdav.tcc |
-| [Stratégie d’extension réseau](#network-filter) | MDATP_NetExt.xml | N/A |
+| [Stratégie d’extension réseau](#network-filter) | MDATP_NetExt.xml | S/O |
 | [Configurer la mise à jour automatique Microsoft (AutoUpdate)](mac-updates.md#intune) | MDATP_Microsoft_AutoUpdate.xml | com.microsoft.autoupdate2 |
 | [Paramètres de configuration de Microsoft Defender for Endpoint](mac-preferences.md#intune-profile-1)<br/><br/> **Remarque :** Si vous envisagez d’exécuter un antivirus tiers pour macOS, définissez sur `passiveMode` `true` . | MDATP_WDAV_and_exclusion_settings_Preferences.xml | com.microsoft.wdav |
 | [Configurer Microsoft Defender pour les notifications de point de terminaison et de mise à jour automatique MS (MAU)](mac-updates.md) | MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig | com.microsoft.autoupdate2 ou com.microsoft.wdav.tray |
@@ -73,7 +73,7 @@ Téléchargez les packages d’intégration à partir Centre de sécurité Micro
 
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez-le _WindowsDefenderATPOnboardingPackage.zip_ dans le même répertoire.
 
-4. Extrayez le contenu du .zip fichier :
+4. Extrayez le contenu du fichier .zip :
 
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
@@ -126,7 +126,7 @@ Ce profil contient des informations de licence pour Microsoft Defender pour le p
 
 ### <a name="approve-system-extensions"></a>Approuver les extensions système
 
-Ce profil est nécessaire pour macOS 10.15 (Îlelier) ou une nouvelle génération. Il sera ignoré sur les anciens macOS.
+Ce profil est nécessaire pour macOS 10.15 (Genre), ou une nouvelle génération. Il sera ignoré sur les anciens macOS.
 
 1. Sélectionnez **Créer un profil** sous **Profils de configuration.**
 1. Select **Platform** = **macOS**, **Profile type** = **Templates**. **Nom du modèle** = **Extensions**. Cliquez sur **Créer**.
@@ -146,7 +146,7 @@ Ce profil est nécessaire pour macOS 10.15 (Îlelier) ou une nouvelle générati
 
 ### <a name="kernel-extensions"></a>Extensions de noyau
 
-Ce profil est nécessaire pour macOS 10.15 (Genre) ou une ancienne. Il sera ignoré sur les nouveaux macOS.
+Ce profil est nécessaire pour macOS 10.15 (Îles) ou une ancienne. Il sera ignoré sur les nouveaux macOS.
 
 > [!CAUTION]
 > Les appareils Apple Silicon (M1) ne supportent pas KEXT. L’installation d’un profil de configuration constitué de stratégies KEXT échoue sur ces appareils.
@@ -155,7 +155,7 @@ Ce profil est nécessaire pour macOS 10.15 (Genre) ou une ancienne. Il sera igno
 1. Select **Platform** = **macOS**, **Profile type** = **Templates**. **Nom du modèle** = **Extensions**. Cliquez sur **Créer**.
 1. Dans **l’onglet Basics,** nommez ce nouveau profil.
 1. Dans **l’onglet Paramètres de configuration,** développez **Extensions du noyau.**
-1. Définissez **l’identificateur** d’équipe **sur UBF8T346G9** et cliquez sur **Suivant**.
+1. Définissez **l’identificateur** d’équipe sur **UBF8T346G9** et cliquez sur **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Paramètres d’extension du noyau](images/mac-kernel-extension-intune2.png)
@@ -170,7 +170,7 @@ Ce profil est nécessaire pour macOS 10.15 (Genre) ou une ancienne. Il sera igno
    >
    > Ce profil de configuration accorde un accès disque total à Microsoft Defender pour le point de terminaison. Si vous avez précédemment configuré Microsoft Defender pour endpoint via Intune, nous vous recommandons de mettre à jour le déploiement avec ce profil de configuration.
 
-Téléchargez [**fulldisk.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) partir de [notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+Téléchargez [**fulldisk.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) partir de [notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
 Suivez les instructions d’intégration du [blob](#onboarding-blob) ci-dessus, en utilisant « MDATP Full Disk Access » comme nom de profil et **téléchargé fulldisk.mobileconfig** comme nom de profil de configuration.
 
@@ -178,7 +178,7 @@ Suivez les instructions d’intégration du [blob](#onboarding-blob) ci-dessus, 
 
 Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail Centre de sécurité Microsoft Defender. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
 
-Téléchargez [**netfilter.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) partir de [notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+Téléchargez [**netfilter.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) partir de [notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
 Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « MDATP Network Filter » comme nom de profil et **netfilter.mobileconfig** téléchargé en tant que nom de profil de configuration.
 
@@ -186,7 +186,7 @@ Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, 
 
 Ce profil permet à Microsoft Defender pour point de terminaison sur macOS et Microsoft Auto Update d’afficher des notifications dans l’interface utilisateur sur macOS 10.15 (Domaine) ou version plus nouvelle.
 
-Téléchargez [**notif.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) partir [de notre GitHub de données.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+Téléchargez [**notif.mobileconfig à partir**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) [de notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
 Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « MDATP Network Filter » comme nom de profil et téléchargé **notif.mobileconfig** comme nom de profil de configuration.
 
@@ -206,7 +206,7 @@ Cette étape permet de déployer Microsoft Defender pour le point de terminaison
     > [!div class="mx-imgBorder"]
     > ![Prêt à créer une application](images/mdatp-8-app-before.png)
 
-1. Sélectionnez par plateforme > macOS > Ajouter.
+1. Sélectionnez Par plateforme > macOS > Ajouter.
 1. Choose **App type** = **macOS,** click **Select**.
 
     > [!div class="mx-imgBorder"]
@@ -231,7 +231,7 @@ Cette étape permet de déployer Microsoft Defender pour le point de terminaison
 (Vous trouverez des informations détaillées sur la [page Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)pour le déploiement de Defender.)
 
    > [!CAUTION]
-   > Vous devez créer tous les profils de configuration requis et les pousser vers tous les ordinateurs, comme expliqué ci-dessus.
+   > Vous devez créer tous les profils de configuration requis et les pousser sur tous les ordinateurs, comme expliqué ci-dessus.
 
 ## <a name="client-device-setup"></a>Configuration de l’appareil client
 
@@ -285,4 +285,4 @@ Pour plus d’informations sur la recherche du journal généré automatiquement
 
 ## <a name="uninstallation"></a>Désinstallation
 
-Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour endpoint sur macOS des appareils clients.
+Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour Endpoint sur macOS des appareils clients.

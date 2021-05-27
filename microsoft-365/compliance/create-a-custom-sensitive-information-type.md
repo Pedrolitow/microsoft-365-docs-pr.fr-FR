@@ -9,20 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Apprenez à créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour la protection contre la perte de données dans l’interface utilisateur graphique du Centre de sécurité et conformité.
+description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908488"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683842"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -61,10 +61,10 @@ Utilisez cette procédure pour créer un type d’informations sensibles que vou
 2. Remplissez les valeurs du **Nom** et de la **Description** puis sélectionnez **Suivant**.
 3. Choisissez **Créer un motif**. Vous pouvez créer plusieurs motifs, chacun avec des éléments et des niveaux de confiance différents, lorsque vous définissez votre nouveau type d’informations sensibles.
 4. Choisissez le niveau de confiance par défaut pour le motif. Les valeurs sont **Confiance faible,**, **Confiance moyenne,** et **Confiance élevé**.
-5. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière** avec un validateur facultatif, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Pour obtenir plus d’informations sur les fonctions DLP, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md).
+5. Choisissez et définissez **L’élément principal**. L’élément principal peut être une **Expression régulière** avec un validateur facultatif, une **Liste de mots clés**, un **Dictionnaire de mots clés**, ou l’une des **Fonctions** pré-configurées. Pour obtenir plus d’informations sur les fonctions DLP, consultez l’article [Éléments recherchés par les fonctions DLP](what-the-dlp-functions-look-for.md). Pour plus d’informations sur la date et les validateurs de la checksum, voir Plus d’informations sur les [validateurs d’expression régulière.](#more-information-on-regular-expression-validators)
 6. Remplissez une valeur pour la **Proximité de caractère**.
-7. (Facultatif) Ajoutez des éléments de prise en charge si vous en avez. Les éléments de prise en charge peuvent être une expression régulière avec un validateur facultatif, une liste de mots clés, un dictionnaire de mots clés ou l’une des fonctions prédéfinies. 
-8.  (Facultatif) Ajouter des [**vérifications supplémentaires**](#more-information-on-additional-checks) à partir de la liste des vérifications disponibles.
+7. (Facultatif) Ajoutez des éléments de prise en charge si vous en avez. Les éléments de prise en charge peuvent être une expression régulière avec un validateur facultatif, une liste de mots clés, un dictionnaire de mots clés ou l’une des fonctions prédéfinies. Les éléments de prise en charge peuvent avoir leur propre configuration **de proximité des** caractères. 
+8. (Facultatif) Ajouter des [**vérifications supplémentaires**](#more-information-on-additional-checks) à partir de la liste des vérifications disponibles.
 9. Sélectionnez **Créer**.
 10. Cliquez sur **Suivant**.
 11. Choisissez le **Niveau de confiance recommandé** pour ce type d’informations sensibles.
@@ -122,6 +122,47 @@ Utilisez cette procédure pour créer un type d’informations sensibles basé s
 Vous pouvez également créer des types d’informations sensibles personnalisés à l’aide de PowerShell et de fonctionnalités de correspondance exacte des données. Pour en savoir plus sur ces méthodes, consultez :
 - [Créer un type d’informations sensibles personnalisé dans l’interface PowerShell du Centre de sécurité et conformité](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Créer un type d’informations sensibles personnalisé pour DLP à l’aide d’une correspondance exacte des données](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+## <a name="more-information-on-regular-expression-validators"></a>Plus d’informations sur les validateurs d’expression régulière
+
+### <a name="checksum-validator"></a>Validateur checksum
+
+Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la base de contrôle.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
+ 
+Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide Si mod valeur != chiffre 8 le numéro de compte n’est pas valide
+
+1. Définissez l’élément principal avec cette expression régulière :
+
+`\d{8}`
+
+2. Ajoutez ensuite le validateur de la checksum.
+3. Ajoutez les valeurs de poids séparées par des virgules, la position du chiffre de contrôle et la valeur Mod. Pour plus d’informations sur l’opération Mod sous, consultez [l’opération Mod mode.](https://en.wikipedia.org/wiki/Modulo_operation)
+
+> [!NOTE]
+> Si le chiffre de contrôle ne fait pas partie du calcul de la sommes de contrôle, utilisez 0 comme poids pour le chiffre de contrôle. Par exemple, dans le cas ci-dessus, le poids 8 est égal à 0 si le chiffre de contrôle ne doit pas être utilisé pour calculer le chiffre de vérification.  Modulo_operation).
+
+![Capture d’écran du validateur de checkum configuré](../media/checksum-validator.png)
+
+### <a name="date-validator"></a>Validateur de date
+
+Si une valeur de date incorporée dans une expression régulière fait partie d’un nouveau modèle que vous créez, vous pouvez utiliser le *validateur* de date pour tester qu’elle répond à vos critères. Par exemple, dites que vous souhaitez créer un sit pour un numéro d’identification d’employé à neuf chiffres. Les six premiers chiffres sont la date d’embauche au format DDMMYY et les trois derniers sont des numéros générés de manière aléatoire. Pour vérifier que les six premiers chiffres sont au format correct. 
+
+1. Définissez l’élément principal avec cette expression régulière :
+
+`\d{9}`
+
+2. Ajoutez ensuite le validateur de date.
+3. Sélectionnez le format de date et le décalage de début. Étant donné que la chaîne de date est les six premiers chiffres, le décalage est `0` .
+
+![Capture d’écran du validateur de date configuré](../media/date-validator.png)
+
+### <a name="functional-processors-as-validators"></a>Processeurs fonctionnels en tant que validateurs
+
+Vous pouvez utiliser des processeurs de fonctions pour certains des sits les plus couramment utilisés comme validateurs. Cela vous permet de définir votre propre expression régulière tout en vous assurant qu’elle passe les vérifications supplémentaires requises par la sit. Par exemple, Func_India_Aadhar vous assurer que l’expression régulière personnalisée définie par vous transmet la logique de validation requise pour la carte Aadhar indien. Pour plus d’informations sur les fonctions DLP qui peuvent être utilisées comme validateurs, voir ce que les fonctions [DLP recherchent.](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for) 
+
+### <a name="luhn-check-validator"></a>Validateur de vérification Luhn
+
+Vous pouvez utiliser le validateur de vérification Luhn si vous avez un type d’informations sensibles personnalisé qui inclut une expression régulière qui doit transmettre l’algorithme [Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm).
 
 ## <a name="more-information-on-additional-checks"></a>Informations supplémentaires sur les contrôles supplémentaires
 

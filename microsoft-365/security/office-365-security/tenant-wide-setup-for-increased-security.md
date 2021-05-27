@@ -20,12 +20,12 @@ ms.custom:
 description: Cette rubrique vous dirige vers la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de Microsoft 365 environnement.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 686768d05e37a4e103640c2973fd30abaa25630b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538938"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684170"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Configurer votre client Microsoft 365 pour une sécurité accrue
 
@@ -33,8 +33,8 @@ ms.locfileid: "52538938"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Cette rubrique vous dirige vers la configuration recommandée pour les paramètres à l’échelle du client qui affectent la sécurité de Microsoft 365 environnement. Vos besoins en matière de sécurité peuvent nécessiter plus ou moins de sécurité. Utilisez ces recommandations comme point de départ.
 
@@ -46,15 +46,17 @@ Office 365 Le score de sécurité analyse la sécurité de votre organisation en
 
 Le centre Microsoft 365 de sécurité inclut des fonctionnalités qui protègent votre environnement. Il inclut également des rapports et des tableaux de bord que vous pouvez utiliser pour surveiller et prendre des mesures. Certains domaines sont des configurations de stratégie par défaut. Certains domaines n’incluent pas de stratégies ou de règles par défaut. Consultez ces stratégies sous gestion des menaces pour régler les paramètres de gestion des menaces pour un environnement plus sécurisé.
 
+<br>
+
 ****
 
 |Domaine|Inclut une stratégie par défaut|Recommandation|
 |---|---|---|
 |**Anti-hameçonnage**|Oui|<ul><li>Protection contre l’emprunt d’identité — Si vous avez Defender pour Office 365 et un domaine personnalisé, configurez les paramètres de protection contre l’emprunt d’identité dans la stratégie anti-hameçonnage par défaut pour protéger les comptes de messagerie de vos utilisateurs les plus précieux, tels que votre PDG, et pour protéger votre domaine. Plus d’informations : [Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) et informations [sur l’emprunt d’identité](impersonation-insight.md)</li><li>Veille contre l’usurpation d’adresse : examinez les expéditeurs qui usurpent votre domaine. Bloquez ou autorisez ces expéditeurs. Plus d’informations : [Informations sur l’usurpation d’informations](learn-about-spoof-intelligence.md) dans EOP et gérer la liste d’adresses client [autoriser/bloquer](tenant-allow-block-list.md).</li></ul>|
-|**Moteur anti-programme malveillant**|Oui| Modifiez la stratégie par défaut : <ul><li>Filtre types de pièces jointes courants : sélectionner sur</li></ul> <p> Vous pouvez également créer des stratégies de filtrage des programmes malveillants personnalisées et les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. <p> Plus d’informations : <ul><li>[Protection contre les programmes malveillants](anti-malware-protection.md)</li><li>[Configurer des stratégies anti-programme malveillant](configure-anti-malware-policies.md)</li></ul>|
-|**Pièces jointes sécurisées dans Microsoft Defender pour Office 365**|Non|Dans la page principale des pièces jointes sécurisées, cliquez sur **Paramètres** globaux et activer ce paramètre : <ul><li>**Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams**</li></ul> <p> Créez une stratégie de pièces jointes sécurisées avec les paramètres ci-après : <ul><li> **Bloquer :** sélectionnez **Bloquer en** tant que réponse anti-programme malveillant inconnue.</li><li>**Activer la redirection**: cochez cette case et entrez une adresse de messagerie, telle qu’un compte d’administrateur ou de mise en quarantaine.</li><li>**Appliquez la sélection ci-dessus si** l’analyse des programmes malveillants pour les pièces jointes arrive à arriver à son arrivée ou si une erreur se produit : cochez cette case.</li><li>**_Appliqué à_*: **le domaine du destinataire est votre** \> domaine.</li></ul> <p> Plus d’informations : [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md) stratégies de pièces jointes sécurisées et configurer des [stratégies de pièces jointes sécurisées](set-up-safe-attachments-policies.md)|
-|**Liens sécurisés dans Microsoft Defender pour Office 365**|Oui|Dans la page principale de liens sécurisés, cliquez **sur Paramètres globaux**: <ul><li>**Utilisez la fonction Liens sécurisés dans : Office 365 applications**: vérifiez que ce paramètre est allumé.</li><li>**Ne pas savoir quand les utilisateurs cliquent sur Liens** sécurisés : désactiver ce paramètre pour suivre les clics des utilisateurs.</li></ul> <p> Créez une stratégie de liens sécurisés avec les paramètres suivants : <ul><li>**Sélectionnez l’action pour les URL potentiellement malveillantes inconnues** dans les messages : Vérifiez que ce paramètre est **sur**.</li><li>**Sélectionnez l’action pour les URL inconnues** ou potentiellement malveillantes dans Microsoft Teams : vérifiez que ce paramètre est **sur**.</li><li>**Appliquez l’analyse des URL en** temps réel pour les liens suspects et les liens pointant vers des fichiers : cochez cette case.</li><li>**Attendez que l’analyse de l’URL se termine avant de remettre le message**: cochez cette case.</li><li>**Appliquer des liens sûrs aux messages électroniques envoyés au sein** de l’organisation : cochez cette case</li><li>**N’autorisez pas les utilisateurs à cliquer sur l’URL d’origine**: cochez cette case.</li><li>**Appliqué à**: **le domaine du destinataire est votre** \> domaine.</li></ul> <p> Plus d’informations : [Configurer des stratégies de liens sécurisés.](set-up-safe-links-policies.md)|
-|**Anti-courrier indésirable (filtrage du courrier)**|Oui| Ce qu’il faut surveiller : trop de courrier indésirable — Choisissez les paramètres personnalisés et modifiez la stratégie de filtrage du courrier indésirable par défaut. Plus d’informations [: Microsoft 365 protection contre le courrier indésirable.](anti-spam-protection.md)|
+|**Moteur anti-programme malveillant**|Oui|Modifiez la stratégie par défaut : <ul><li>Select **Enable the common attachments filter**</li></ul> <p> Vous pouvez également créer des stratégies de filtrage des programmes malveillants personnalisées et les appliquer à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. <p> Plus d’informations : <ul><li>[Protection contre les programmes malveillants](anti-malware-protection.md)</li><li>[Configurer des stratégies anti-programme malveillant](configure-anti-malware-policies.md)</li></ul>|
+|**Pièces jointes sécurisées dans Microsoft Defender pour Office 365**|Non|Dans la page principale des pièces jointes sécurisées, cliquez sur **Paramètres** globaux et activer ce paramètre : <ul><li>**Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams**</li></ul> <p> Créez une stratégie de pièces jointes sécurisées avec les paramètres ci-après : <ul><li> **Bloquer :** sélectionnez **Bloquer en** tant que réponse anti-programme malveillant inconnue.</li><li>**Activer la redirection**: cochez cette case et entrez une adresse de messagerie, telle qu’un compte d’administrateur ou de mise en quarantaine.</li><li>**Appliquez la sélection ci-dessus si l’analyse des** programmes malveillants pour les pièces jointes arrive à arriver à son arrivée ou si une erreur se produit : cochez cette case.</li><li>**_Appliqué à_*: **le domaine du destinataire est votre** \> domaine.</li></ul> <p> Plus d’informations : [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](mdo-for-spo-odb-and-teams.md) stratégies de pièces jointes sécurisées et configurer des [stratégies de pièces jointes sécurisées](set-up-safe-attachments-policies.md)|
+|**Liens sécurisés dans Microsoft Defender pour Office 365**|Oui|Dans la page principale de liens sécurisés, cliquez **sur Paramètres globaux**: <ul><li>**Utilisez la fonction Liens sécurisés dans : Office 365 applications :** vérifiez que ce paramètre est allumé.</li><li>**Ne pas suivre le moment où les utilisateurs cliquent sur** Liens sécurisés : désactiver ce paramètre pour suivre les clics des utilisateurs.</li></ul> <p> Créez une stratégie de liens sécurisés avec les paramètres suivants : <ul><li>**Sélectionnez l’action pour les URL potentiellement malveillantes inconnues** dans les messages : Vérifiez que ce paramètre est **sur**.</li><li>**Sélectionnez l’action pour les URL inconnues** ou potentiellement malveillantes dans Microsoft Teams : vérifiez que ce paramètre est **sur**.</li><li>**Appliquez l’analyse d’URL en** temps réel pour les liens suspects et les liens qui pointent vers des fichiers : cochez cette case.</li><li>**Attendez que l’analyse des URL se termine avant de remettre le message**: cochez cette case.</li><li>**Appliquer des liens sûrs aux messages électroniques envoyés au sein** de l’organisation : cochez cette case</li><li>**N’autorisez pas les utilisateurs à cliquer sur l’URL d’origine**: cochez cette case.</li><li>**Appliqué à**: **le domaine du destinataire est votre** \> domaine.</li></ul> <p> Plus d’informations : [Configurer des stratégies de liens sécurisés.](set-up-safe-links-policies.md)|
+|**Anti-courrier indésirable (filtrage du courrier)**|Oui| Ce qu’il faut surveiller : trop de courrier indésirable — Choisissez les paramètres personnalisés et modifiez la stratégie de filtrage du courrier indésirable par défaut. Plus d’informations [: Microsoft 365 protection contre le courrier indésirable](anti-spam-protection.md).|
 |***Authentification de messagerie***|Oui|L’authentification de messagerie utilise un DNS (Domain Name System) pour ajouter des informations vérifiables aux messages électroniques concernant l’expéditeur d’un e-mail. Microsoft 365 l’authentification de messagerie électronique pour son domaine par défaut (onmicrosoft.com), mais les administrateurs Microsoft 365 peuvent également utiliser l’authentification de messagerie pour les domaines personnalisés. Trois méthodes d’authentification sont utilisées : <ul><li>Sender Policy Framework (ou SPF).</li><ul><li>Pour l’installation, [voir Configurer SPF dans Microsoft 365 pour empêcher l’usurpation.](set-up-spf-in-office-365-to-help-prevent-spoofing.md)</li></ul> <li>DomainKeys Identified Mail (DKIM).</li><ul><li>Voir [Utiliser DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé.](use-dkim-to-validate-outbound-email.md)</li><li>Une fois que vous avez configuré DKIM, activez-le dans le centre de sécurité.</li></ul><li>DMARC (Domain-based Message Authentication, Reporting, and Conformance).</li><ul><li>Pour le programme d’installation [de DMARC, utilisez DMARC pour valider les messages Microsoft 365](use-dmarc-to-validate-email.md).</li></ul></ul>|
 |
 
@@ -64,6 +66,8 @@ Le centre Microsoft 365 de sécurité inclut des fonctionnalités qui protègent
 ## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>Afficher les tableaux de bord et les rapports dans le Centre de sécurité & conformité
 
 Consultez ces rapports et tableaux de bord pour en savoir plus sur l’état de votre environnement. Les données de ces rapports s’enrichiront à mesure que votre organisation utilisera Office 365 services. Pour l’instant, familiarisez-vous avec ce que vous pouvez surveiller et prendre des mesures. Pour plus d’informations, [voir Rapports dans le Centre de sécurité & conformité.](../../compliance/reports-in-security-and-compliance.md)
+
+<br>
 
 ****
 
@@ -80,6 +84,8 @@ Consultez ces rapports et tableaux de bord pour en savoir plus sur l’état de 
 
 De nombreux contrôles de sécurité et de protection dans le centre Exchange’administration sont également inclus dans le centre de sécurité. Il n’est pas nécessaire de les configurer aux deux endroits. Voici quelques paramètres supplémentaires qui sont recommandés.
 
+<br>
+
 ****
 
 |Domaine|Inclut une stratégie par défaut|Recommandation|
@@ -95,6 +101,8 @@ Recommandations de Microsoft pour la configuration SharePoint sites d’équipe 
 SharePoint sites d’équipe configurés au niveau de référence autorisent le partage de fichiers avec des utilisateurs externes à l’aide de liens d’accès anonyme. Cette approche est recommandée au lieu d’envoyer des fichiers par courrier électronique.
 
 Pour prendre en charge les objectifs de protection de base, configurez les stratégies de partage à l’échelle du client comme recommandé ici. Les paramètres de partage pour des sites individuels peuvent être plus restrictifs que cette stratégie à l’échelle du client, mais pas plus permissifs.
+
+<br>
 
 ****
 
@@ -138,9 +146,7 @@ Vous pouvez également utiliser Microsoft Cloud App Security pour obtenir une vi
 Plus d’informations :
 
 - Rubrique relative au [déploiement de Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - Rubrique relative aux [informations supplémentaires concernant Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [Qu’est-ce Sécurité des applications cloud ?](/cloud-app-security/what-is-cloud-app-security)
 
 ![Tableau de bord Cloud App Security](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)

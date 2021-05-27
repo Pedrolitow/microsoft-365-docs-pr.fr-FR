@@ -23,37 +23,27 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription à Office 365.
+description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 12262a2165392b9dca699605f0b86fd7f3129ef0
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 393c1304ba4e699c6bf7d09bf51f6c81bb7389d9
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332689"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683102"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Comment s’inscrire - Aide de l’administrateur
 
-::: moniker range="o365-worldwide"
-
-Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Inscrivez-vous à Microsoft 365 pour les entreprises afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
-  
-::: moniker-end
+Inscrivez-vous à Microsoft 365 entreprise afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres Office programmes.
 
 ::: moniker range="o365-21vianet"
 
-Office 365 géré par 21Vianet est conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet. Microsoft n’utilise pas le service lui-même. 21Vianet fonctionne, fournit et gère la livraison du service. 21Vianet est le plus grand fournisseur de services de centre de données Internet neutre pour les opérateurs en Chine, fournissant des services d’hébergement, de réseau géré et d’infrastructure cloud computing. En accordant des licences aux technologies Microsoft, 21Vianet exploite des centres de données Microsoft locaux pour vous offrir la possibilité d’utiliser les services Microsoft tout en conservant vos données en Chine. 21Vianet fournit également vos services d’abonnement et de facturation, ainsi qu’un support.
+Si vous êtes en Chine, Office 365 géré par 21Vianet est conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine. Ce service fonctionne avec la technologie pour laquelle Microsoft a octroyé une licence à 21Vianet. Microsoft n’utilise pas le service lui-même. 21Vianet fonctionne, fournit et gère la livraison du service. 21Vianet est le plus grand fournisseur de services de centre de données Internet neutre pour les opérateurs en Chine, fournissant des services d’hébergement, de réseau géré et d’infrastructure cloud computing. En accordant des licences aux technologies Microsoft, 21Vianet exploite des centres de données Microsoft locaux pour vous offrir la possibilité d’utiliser services Microsoft tout en conservant vos données en Chine. 21Vianet fournit également vos services d’abonnement et de facturation, ainsi qu’un support.
   
 > [!NOTE]
 > Ces services sont soumis au droit chinois.
   
-Inscrivez-vous à Office 365 géré par 21Vianet afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
+Inscrivez-vous au Office 365 géré par 21Vianet afin que votre équipe puisse commencer à utiliser les dernières versions de Word, Excel, PowerPoint et d’autres programmes Office.
   
 Vous êtes prêt à vous inscrire ? [Sélectionnez un plan.](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)
   
@@ -64,11 +54,11 @@ Vous êtes prêt à vous inscrire ? [Sélectionnez un plan.](https://products.of
 
 Avant d’acheter, pensez à l’offre pour qui vous vous inscrivez. Cela vous évitera de rencontrer des difficultés croissantes par la suite.
 
-Regardez une courte vidéo sur le choix d’une offre Microsoft 365 pour les entreprises.<br><br>
+## <a name="watch-choose-a-microsoft-365-subscription"></a>Regarder : choisir un abonnement Microsoft 365 abonnement
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
 Vous avez besoin d’aide pour choisir un plan ? Des conseillers techniques sont disponibles pour répondre à vos questions. Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page.
   
@@ -92,7 +82,7 @@ Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter 
   
 Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
 
-Regardez une courte vidéo qui montre le processus d’inscription.<br><br>
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Set up Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -118,9 +108,9 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
   - **Adresse de courrier** et **numéro de téléphone** pour nous permettre de vous contacter le cas échéant en relation avec votre abonnement. Par exemple, si vous oubliez votre mot de passe, ces informations nous permettent de vous envoyer un mot de passe temporaire. Les informations de facturation sont également envoyées à l'adresse de courrier que vous spécifiez.
 
     > [!NOTE]
-    > L’adresse e-mail que vous entrez ici est différente de votre adresse de messagerie Microsoft 365 (votre nom de logo, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
+    > L’adresse de messagerie que vous entrez ici est différente de votre adresse Microsoft 365 de messagerie électronique (votre nom de logo, ci-dessous). Comme nous envoyons également les informations de facturation à cette adresse, nous vous recommandons d'utiliser une adresse de courrier pouvant recevoir les courriers professionnels.
   
-- **Nom de la signature (ID d’utilisateur) :** Cet ID d’utilisateur devient votre adresse de messagerie Microsoft 365 initiale, pour vous aider à démarrer rapidement.
+- **Nom de la signature (ID d’utilisateur) :** Cet ID d’utilisateur devient votre adresse Microsoft 365 initiale, juste pour vous aider à démarrer rapidement.
 
     Cet ID d’utilisateur est l’adresse de messagerie que vous utilisez pour vous inscrire. Par exemple, si le nom de votre entreprise est Fourth Coffee, vous pouvez choisir l'identifiant utilisateur rene@fourthcoffee.onmicrosoft.com.
 
@@ -131,8 +121,8 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
     Vous pouvez payer votre abonnement avec une carte de crédit. Si le coût atteint un certain montant, vous pourrez peut-être également payer par facture.
 
     > [!IMPORTANT]
-    >  Lorsque vous vous inscrivez, choisissez la meilleure option de paiement pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
+    >  Lorsque vous vous inscrivez, n’oubliez pas de choisir la meilleure option de paiement pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Vidéos de formation Microsoft 365](../../business-video/index.yml) pour les entreprises (page de liens)
+[Microsoft 365 vidéos de formation pour les entreprises](../../business-video/index.yml) (page de liens)

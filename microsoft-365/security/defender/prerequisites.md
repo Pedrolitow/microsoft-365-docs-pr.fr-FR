@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 69345a0db42ec838dc0758cdb0e93a49a8ba6cfd
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: f3fd597181d73c1768057ea7740ab111e5af2068
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259402"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689156"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Conditions préalables de Defender
 
@@ -33,12 +33,12 @@ ms.locfileid: "52259402"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Découvrez les licences et autres conditions requises pour l’approvisionnement et [l’utilisation Microsoft 365 Defender.](microsoft-365-defender.md)
 
-## <a name="licensing-requirements"></a>Critères de licence
-L’une de ces licences vous permet d’accéder aux fonctionnalités Microsoft 365 Defender dans Microsoft 365 centre de sécurité sans frais supplémentaires :
+## <a name="licensing-requirements"></a>Conditions d'octroi de licence
+L’une de ces licences vous donne accès aux fonctionnalités de Microsoft 365 Defender dans Microsoft 365 centre de sécurité sans frais supplémentaires :
 
 - Microsoft 365 E5 ou A5
 - Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module
@@ -69,10 +69,22 @@ Accédez Microsoft 365 Defender dans le centre de sécurité Microsoft 365 à l�
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilité aux états-Unis Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et à d’autres institutions gouvernementales américaines
 Actuellement, Microsoft 365 Defender *n’est pas* disponible pour :
-- États-Unis Cloud de la communauté du secteur public (Cloud de la communauté du secteur public)
+- États-Cloud de la communauté du secteur public (Cloud de la communauté du secteur public)
 - États-Unis Cloud de la communauté du secteur public élevé (Cloud de la communauté du secteur public élevé)
 - Département de la Défense des États-Unis
 - Toutes les institutions gouvernementales américaines titulaires de licences commerciales
+
+
+Actuellement, l’intégration de Microsoft Defender pour Office 365 dans les fonctionnalités Microsoft 365 Defender unifiées n’est pas disponible pour les clients dans les emplacements Office 365 de centre de données suivants :
+
+- Brésil 
+- Allemagne 
+- Norvège 
+- Singapour 
+- Afrique du Sud
+- Suisse 
+- Émirats arabes unis 
+
 
 ## <a name="related-topics"></a>Voir aussi
 - [Microsoft 365 Vue d’ensemble de Defender](microsoft-365-defender.md)

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Découvrez comment Power BI et comment les utilisateurs de votre organisation peuvent utiliser ce service d’analyse métier.
-ms.openlocfilehash: 34a48ed6ee854f0057e79ba86dbd888a65b41c5e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6da25932e1813744aa38bab2b399d6ac30c3429a
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537426"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683366"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI dans votre organisation
 
@@ -48,7 +48,7 @@ Par ailleurs, il est possible que les utilisateurs dans votre organisation puiss
 
 Trois scénarios peuvent s'appliquer aux utilisateurs de votre organisation :
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scénario 1 : votre organisation dispose déjà d’un environnement Microsoft 365 existant et l’utilisateur qui s’Power BI possède déjà un compte Microsoft 365 client.
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scénario 1 : votre organisation dispose déjà d’un environnement Microsoft 365 existant et l’utilisateur qui s’Power BI a déjà un compte Microsoft 365 client.
 
 Dans ce scénario, si un utilisateur possède déjà un compte professionnel ou scolaire dans le client (par exemple, contoso.com) mais n'a pas encore Power BI, Microsoft activera simplement l'offre pour ce compte et l'utilisateur sera automatiquement informé en relation avec l'utilisation du service Power BI.
   
@@ -58,10 +58,10 @@ Dans ce scénario, l’utilisateur dispose d’une adresse de messagerie dans le
   
 ### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Scénario 3 : votre organisation n’a pas d’environnement Microsoft 365 connecté à votre domaine de messagerie.
 
-Il n’existe aucune action administrative dont votre organisation a besoin pour tirer parti des Power BI.
+Il n’existe aucune action administrative dont votre organisation a besoin pour tirer parti Power BI.
   
 > [!IMPORTANT]
-> Si votre organisation possède plusieurs domaines de messagerie et que vous préférez que toutes les extensions d’adresse de messagerie soient dans le même client, avant que des utilisateurs ne créent votre client principal, ajoutez tous les domaines d’adresse de messagerie à ce client avant que les utilisateurs ne créent votre client principal. Il n’existe aucun mécanisme automatisé pour déplacer des utilisateurs entre des clients après leur création. Pour plus d’informations sur ce processus, voir Si j’ai plusieurs domaines, puis-je contrôler le client à qui les utilisateurs sont [ajoutés ?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) plus loin dans cet article et Ajouter un domaine à [Office 365](../setup/add-domain.md) en ligne.
+> Si votre organisation possède plusieurs domaines de messagerie et que vous préférez que toutes les extensions d’adresse de messagerie soient dans le même client, avant que des utilisateurs ne créent votre client principal, ajoutez tous les domaines d’adresse de messagerie à ce client avant que les utilisateurs ne créent votre client principal. Il n’existe aucun mécanisme automatisé pour déplacer les utilisateurs entre les clients après leur création. Pour plus d’informations sur ce processus, voir Si j’ai plusieurs domaines, puis-je contrôler le client à qui les utilisateurs sont [ajoutés ?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) plus loin dans cet article et Ajouter un domaine à [Office 365](../setup/add-domain.md) en ligne.
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>Quelles seront les conséquences sur ma méthode actuelle de gestion des identités pour les utilisateurs de mon organisation ?
 
@@ -83,19 +83,19 @@ Si un client a été créé par Microsoft, vous pouvez le revendiquer et le gér
 
 ::: moniker range="o365-worldwide"
 
-3. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com).
+3. Accédez à <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-3. Accédez à [https://portal.office.de](https://portal.office.de).
+3. Atteindre <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-3. Accédez à [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn).
+3. Accédez à <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ Si vous voulez regrouper tous les utilisateurs dans un seul client quelle que so
   
 ## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>Comment empêcher les utilisateurs de rejoindre mon client existant ?
 
-En tant qu’administrateur, vous pouvez prendre des mesures pour empêcher les utilisateurs de rejoindre votre client existant. Si vous bloquez l’accès des utilisateurs au client, les tentatives des utilisateurs de se connecter échouent et ils sont dirigés vers l’administrateur de leur organisation. Vous n’avez pas besoin de répéter ce processus si vous avez déjà désactivé la distribution automatique des licences (par exemple, Office 365 Éducation pour les étudiants, les enseignants et le personnel).
+En tant qu’administrateur, vous pouvez prendre des mesures pour empêcher les utilisateurs de rejoindre votre client existant. Si vous bloquez l’accès des utilisateurs au client, les tentatives de se connectant des utilisateurs échouent et ils sont dirigés vers l’administrateur de leur organisation. Vous n’avez pas besoin de répéter ce processus si vous avez déjà désactivé la distribution automatique des licences (par exemple, Office 365 Éducation pour les étudiants, les enseignants et le personnel).
   
 Cette procédure requiert l'utilisation de Windows PowerShell. Pour prendre en main Windows PowerShell, voir le [guide de prise en main de PowerShell](/powershell/scripting/overview).
   
@@ -196,7 +196,7 @@ Si un utilisateur s’est inscrit à Power BI, mais que vous ne souhaitez plus q
 
 Les utilisateurs qui ont rejoint votre client dans le cadre de ce programme se voient attribuer une licence unique, que vous pouvez filtrer dans votre volet d'utilisateur actif dans le tableau de bord d'administration.
   
-Pour créer cette vue, dans le Centre d’administration, suivez les étapes pour créer [un affichage utilisateur personnalisé.](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view) Sous **Licence de produit attribuée,** **sélectionnez Microsoft Power BI**. Une fois la nouvelle vue créée, vous pourrez voir tous les utilisateurs de votre client qui ont inscrit ce programme.
+Pour créer cette vue, dans le Centre d’administration, suivez les étapes de la procédure de création [d’un affichage utilisateur personnalisé.](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view) Sous **Licence de produit attribuée,** **sélectionnez Microsoft Power BI**. Une fois la nouvelle vue créée, vous pourrez voir tous les utilisateurs de votre client qui ont inscrit ce programme.
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>Quels sont les éventuels autres aspects auxquels je dois être préparé ?
 

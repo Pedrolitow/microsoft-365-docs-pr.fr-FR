@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5c8e9d8e1c8ec020b4d742f61d276c93f6730bec
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4f9d3b365fb735805644f33b3a843ad66e777ce4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245551"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684122"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Notes de publication de l’API Microsoft Defender for Endpoint
 
@@ -37,7 +37,11 @@ Les informations suivantes répertorient les mises à jour des API Microsoft Def
 > https://docs.microsoft.com/api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
 > ```
 
-## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>Notes de publication - du plus récent au plus ancien (dd.mm.yyyy)
+## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>Notes de publication - plus récent à plus ancien (dd.mm.yyyy)
+
+### <a name="05252021"></a>05.25.2021
+
+- Ajout de nouvelles méthodes et propriétés d’évaluation d’exportation d’API [par appareil.](get-assessmnt-1methods-properties.md)
 
 ### <a name="03052021"></a>03.05.2021
 

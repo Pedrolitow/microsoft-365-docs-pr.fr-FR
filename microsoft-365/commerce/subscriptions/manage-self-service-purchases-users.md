@@ -18,21 +18,14 @@ search.appverid:
 - MET150
 description: Les utilisateurs peuvent apprendre à gérer leurs achats en libre-service.
 ms.date: 03/17/2021
-ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536081"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683666"
 ---
 # <a name="manage-self-service-purchases-users"></a>Gérer les achats libre-service (utilisateurs)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Le centre d’administration change. Si votre expérience ne correspond pas aux informations présentées ici, voir [À propos du nouveau centre d’administration Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements aux membres de votre équipe. Vous êtes responsable du paiement des achats en libre-service effectués. Vous pouvez gérer vos abonnements dans le Centre d’administration Microsoft 365 à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">l’adresse admin.microsoft.com</a>.
 
@@ -42,12 +35,42 @@ Votre administrateur dispose d’une vue en lecture seule sur les abonnements qu
 
 Vous pouvez afficher la liste de tous les abonnements achetés en libre-service que vous avez achetés.
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+::: moniker range="o365-worldwide"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+::: moniker-end
 2. Sous **l’onglet** Produits, sélectionnez l’icône de filtre, puis sélectionnez **Libre-service.**
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Comment acheter plus ou réduire les licences
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+::: moniker range="o365-worldwide"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+::: moniker-end
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement dont vous souhaitez acheter davantage ou réduire les licences.
 3. Choisissez **Acheter des licences** ou **Supprimer des licences.**
 4. Dans le volet droit, dans la zone Nombre total de **licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement, puis sélectionnez **Enregistrer**. Par exemple, si vous avez 100 licences et que vous souhaitez en ajouter 5, entrez 105.
@@ -56,7 +79,23 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ### <a name="to-assign-licenses"></a>Pour attribuer des licences
 
-1. Dans le Centre d’administration, allez sur la page   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation.</a>
+:: moniker range="o365-worldwide »
+
+1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licences</a>.
+
+::: moniker-end
 2. Choisissez l’abonnement pour qui vous souhaitez attribuer des licences.
 3. Choisissez **Attribuer des licences.**
 4. Dans le volet **Attribuer des licences aux utilisateurs**, commencez à saisir un nom, puis sélectionnez-le dans les résultats pour l’ajouter à la liste. Vous pouvez ajouter jusqu'à 20 utilisateurs à la fois.
@@ -66,7 +105,23 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ### <a name="to-unassign-licenses"></a>Pour désattribuer des licences
 
-1. Dans le Centre d’administration, allez sur la page   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation.</a>
+:: moniker range="o365-worldwide »
+
+1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licences</a>.
+
+::: moniker-end
 2. Choisissez le produit pour qui vous souhaitez désattribuer des licences.
 3. Choisissez les utilisateurs dont vous souhaitez désattribuer des licences.
 4. Choose **Unassign licenses**.
@@ -74,8 +129,23 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 
 ## <a name="cancel-a-subscription"></a>Annuler un abonnement
 
-1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sur la page **Produits**, recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (plus d’actions), puis **sélectionnez Annuler l’abonnement.**
+::: moniker range="o365-worldwide"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+::: moniker-end
+2. Sur la page **Produits**, recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
 3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Si vous le souhaitez, fournissez vos commentaires.
 4. Sélectionnez **Enregistrer**.
 
@@ -86,7 +156,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 3. Dans la page des détails du profil de facturation, sous **Mode de paiement,** choisissez l’une des options suivantes :
     - Si vous souhaitez mettre à jour un mode de paiement existant, sélectionnez **Modifier**.
     - Si vous souhaitez ajouter un nouveau mode de paiement, sélectionnez **Remplacer.**
-4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer**.
+4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer.**
 
 ### <a name="update-an-existing-payment-method"></a>Mise à jour d’un mode de paiement existant
 
