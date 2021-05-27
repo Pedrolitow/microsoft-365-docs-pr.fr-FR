@@ -20,21 +20,21 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: en savoir plus sur les types de services et d’éléments dont vous pouvez utiliser les étiquettes de confidentialité comme conditions dans les stratégies DLP
-ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876293"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651091"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Utiliser les étiquettes de confidentialité comme condition dans les stratégies de protection contre la perte de données
 
 Vous pouvez utiliser [ les étiquettes de confidentialité](sensitivity-labels.md)comme condition dans les stratégies de protection contre la perte de données pour cet emplacement:
 
-- Messagerie Exchange Online
+- Messagerie Exchange Online
 - SharePoint Online
 - Sites OneDrive Entreprise
-- Appareils Windows 10
+- Appareils Windows 10
 
 Les étiquettes de confidentialité apparaissent comme une option dans la liste du **Contenu**.
 
@@ -49,20 +49,20 @@ Les étiquettes de confidentialité apparaissent comme une option dans la liste 
 
 Vous pouvez utiliser des étiquettes de confidentialité comme conditions sur ces éléments et dans ces scénarios.
 
-### <a name="supported-items"></a>Éléments non pris en charge 
+### <a name="supported-items"></a>Éléments non pris en charge 
 
 |Service  |Type d’élément  |Disponible pour l’astuce de stratégie  |Applicable  |
 |---------|---------|---------|---------|
 |Exchange    |Message électronique         |oui         |oui         |
-|Exchange    |Pièce jointe         |non *         |oui **         |
+|Exchange    |Pièce jointe         |non         |oui **         |
 |SharePoint Online     |éléments dans SharePoint Online         |oui         |oui         |
 |OneDrive Entreprise     |éléments         |oui         |oui         |
 |Teams     |Teams et messages de canal         |non applicable         |non applicable         |
 |Teams     |pièces jointes         |Oui **         |Oui **         |
-|Appareils Windows 10     |éléments         |oui         |oui         |
+|Appareils Windows 10     |éléments         |oui         |oui         |
 |MCAS (préversion) |éléments         |oui         |oui         |
 
-\* La détection DLP et l’application des étiquettes de niveau de confidentialité sur les messages électroniques et les pièces jointes sont pris en charge en transit. Les conseils de stratégie DLP des pièces jointes à étiquettes de confidentialité n’est pas prise en charge.
+\* La détection DLP des pièces jointes de courrier associées à une étiquette de confidentialité est uniquement prise en charge par les types de fichier Office.
 
 \** Les pièces jointes envoyées dans Teams au cours des conversations ou canaux de 1:1 sont chargées automatiquement sur OneDrive pour Entreprise et SharePoint. Par conséquent, si SharePoint Online ou OneDrive pour Entreprise sont inclus dans votre stratégie DLP, les pièces jointes à étiquettes envoyées dans Teams sont automatiquement incluses dans l’étendue de cette condition. Il n’est pas nécessaire de sélectionner Teams comme emplacement dans la stratégie DLP.
 

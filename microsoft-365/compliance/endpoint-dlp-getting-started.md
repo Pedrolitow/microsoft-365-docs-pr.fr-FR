@@ -18,13 +18,13 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
+ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332809"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651007"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
@@ -38,35 +38,35 @@ Microsoft Endpoint DLP vous permet de surveiller les appareils Windows 10 et de 
 
 Avant de commencer à utiliser point de terminaison DLP, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) et tous les modules complémentaires. Pour accéder à la fonctionnalité de points de terminaison DLP et l’utiliser, vous devez disposer de l’un de ces abonnements ou modules complémentaires.
 
-- Microsoft 365 E5
+- Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
-- Microsoft 365 E5 Conformité
-- Microsoft 365 A5 Conformité
-- Microsoft 365 E5, Protection des informations et gouvernance
-- Microsoft 365 A5, Protection des informations et gouvernance
+- Microsoft 365 E5 Conformité
+- Microsoft 365 A5 Conformité
+- Microsoft 365 E5, Protection des informations et gouvernance
+- Microsoft 365 A5, Protection des informations et gouvernance
 
 
 ### <a name="permissions"></a>Autorisations
 
-Pour activer la gestion des appareils, le compte que vous utilisez doit être membre de l’un de ces rôles :
+Pour activer la gestion des appareils, le compte que vous utilisez doit être membre de l’un de ces rôles :
 
 - Administrateur global
 - Administrateur de la sécurité
 - Administrateur de mise en conformité
 
-Si vous voulez utiliser un compte personnalisé pour afficher les paramètres de gestion des appareils, celui-ci doit se trouver dans l’un de ces rôles :
+Si vous voulez utiliser un compte personnalisé pour afficher les paramètres de gestion des appareils, celui-ci doit se trouver dans l’un de ces rôles :
 
 - Administrateur global
 - Administrateur de mise en conformité
 - Administrateur des données de mise en conformité
 - Lecteur général
 
-Si vous voulez utiliser un compte personnalisé pour accéder à la page d’intégration/déclassement, celui-ci doit se trouver dans l’un de ces rôles :
+Si vous voulez utiliser un compte personnalisé pour accéder à la page d’intégration/déclassement, celui-ci doit se trouver dans l’un de ces rôles :
 
 - Administrateur global
 - Administrateur de mise en conformité
 
-Si vous voulez utiliser un compte personnalisé pour activer/désactiver la surveillance de l’appareil, celui-ci doit se trouver dans l’un de ces rôles :
+Si vous voulez utiliser un compte personnalisé pour activer/désactiver la surveillance de l’appareil, celui-ci doit se trouver dans l’un de ces rôles :
 
 - Administrateur global
 - Administrateur de mise en conformité
@@ -95,18 +95,22 @@ Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déplo
 3. Les mises à jour Windows suivantes sont installées. 
  
    > [!NOTE]
-   > Remarque : ces mises à jour ne sont pas des conditions préalables à l’intégration d’un appareil au DLP de point de terminaison , mais contiennent des correctifs pour les problèmes importants qui doivent donc être installés avant d’utiliser le produit.
+   > Remarque : ces mises à jour ne sont pas des conditions préalables à l’intégration d’un appareil au DLP de point de terminaison , mais contiennent des correctifs pour les problèmes importants qui doivent donc être installés avant d’utiliser le produit.
 
-    - Pour Windows 10 version 1809 : KB4559003, KB4577069, KB4580390
-    - Pour Windows 10 version 1903 ou 1909 : KB4559004, KB4577062, KB4580386
-    - Pour Windows 10 version 2004 : KB4568831, KB4577063
-    - Pour les appareils exécutant Office 2016 (et non aucune autre version d’Office) : KB4577063 
+    - Pour Windows 10 version 1809 : KB4559003, KB4577069, KB4580390
+    - Pour Windows 10 version 1903 ou 1909 : KB4559004, KB4577062, KB4580386
+    - Pour Windows 10 version 2004 : KB4568831, KB4577063
+    - Pour les appareils exécutant Office 2016 (et non aucune autre version d’Office) : KB4577063 
 
-4. Tous les appareils doivent être [jointure à Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join), jointure AD, jointure hybride Azure AD ou inscrits à AAD.
+4. Tous les appareils doivent être l’un de ceux-ci :
+- [Jointure Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
+- Jointure Azure AD
+- [Jonction Azure AD Hybride](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [Inscrit à AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
-6. Si vous utilisez le Canal Entreprise mensuel de Microsoft 365 Apps versions 2004-2008, un problème connu concerne la protection contre la perte de données de point de terminaison qui classe le contenu Office. Vous devez effectuer une mise à jour vers la version 2009 ou une version ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](/officeupdates/current-channel#version-2010-october-27).
+6. Si vous utilisez le Canal Entreprise mensuel de Microsoft 365 Apps versions 2004-2008, un problème connu concerne la protection contre la perte de données de point de terminaison qui classe le contenu Office. Vous devez effectuer une mise à jour vers la version 2009 ou une version ultérieure. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Historique des mises à jour de Microsoft 365 Apps (répertoriées par date)](/officeupdates/update-history-microsoft365-apps-by-date). Si vous souhaitez en savoir plus sur ce problème, veuillez consultez la section Suite Office, dans les [Notes de publication pour les publications du Canal actuel dans 2020](/officeupdates/current-channel#version-2010-october-27).
 
 7. Si vous avez des terminaux qui utilisent un proxy de périphérique pour se connecter à l'internet, suivez les procédures de la section [Configurer le proxy de périphérique et les paramètres de connexion à l'internet pour le DLP de terminal](endpoint-dlp-configure-proxy.md).
 
@@ -141,7 +145,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
    > [!div class="mx-imgBorder"]
    > ![méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
    
-6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
 
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
@@ -171,7 +175,7 @@ Dans ce scénario, Microsoft Defender pour point de terminaison est déjà dépl
 
 5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement**, puis **Télécharger le package**.
 
-6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
+6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
 
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
@@ -186,7 +190,7 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 
 ### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>Affichage des alertes DLP de point de terminaison dans le tableau de bord de Gestion des alertes DLP
 
-1. Ouvrez la page de protection contre la perte de données dans le Centre de conformité Microsoft 365, puis sélectionnez Alertes.
+1. Ouvrez la page de protection contre la perte de données dans le Centre de conformité Microsoft 365, puis sélectionnez Alertes.
 
 2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
 
@@ -213,7 +217,7 @@ Maintenant que vous disposez d’appareils intégrés et que vous pouvez affiche
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](/windows/security/threat-protection/)
-- [Outils et méthodes d’intégration pour les appareils Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
-- [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Outils et méthodes d’intégration pour les appareils Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD appareils joints](/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
