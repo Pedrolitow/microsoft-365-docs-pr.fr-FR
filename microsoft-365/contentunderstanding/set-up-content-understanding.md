@@ -1,5 +1,5 @@
 ---
-title: Configurer SharePoint Online
+title: Configurer SharePoint Online
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: ssquires
@@ -13,27 +13,27 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Configurer la compréhension de contenu dans Projet Cortex
-ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994700"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683548"
 ---
-# <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
+# <a name="set-up-sharepoint-syntex"></a>Configurer SharePoint Online
 
 Les administrateurs peuvent utiliser le Centre d’administration Microsoft 365 pour configurer [Microsoft SharePoint Syntex](index.md). 
 
-Tenez compte des informations suivantes avant de démarrer :
+Tenez compte des informations suivantes avant de démarrer :
 
-- Dans quels sites SharePoint allez-vous activer le traitement des formulaires ? Tous les sites, certains sites ou des sites sélectionnés ?
-- Comment allez-vous nommer votre centre de contenu par défaut ?
+- Dans quels sites SharePoint allez-vous activer le traitement des formulaires ? Tous les sites, certains sites ou des sites sélectionnés ?
+- Comment allez-vous nommer votre centre de contenu par défaut ?
 
-Vous pouvez modifier vos paramètres après la configuration initiale dans le Centre d’administration Microsoft 365.
+Vous pouvez modifier vos paramètres après la configuration initiale dans le Centre d’administration Microsoft 365.
 
 Avant la configuration, veillez à planifier la meilleure manière d’installer et de configurer la compréhension de contenu dans votre environnement. Par exemple, vous devez prendre les décisions suivantes :
 
-- Sites SharePoint dans lesquels vous souhaitez activer le traitement des formulaires : tous les sites, certains sites ou des sites sélectionnés
+- Sites SharePoint dans lesquels vous souhaitez activer le traitement des formulaires : tous les sites, certains sites ou des sites sélectionnés
 - Le nom et les administrateurs de votre centre de contenu 
 
 ## <a name="requirements"></a>Configuration requise 
@@ -43,42 +43,44 @@ Avant la configuration, veillez à planifier la meilleure manière d’installer
 
 En tant qu’administrateur, vous pouvez également modifier vos paramètres sélectionnés à tout moment après la configuration, ainsi que les paramètres de gestion de la compréhension de contenu dans le Centre d’administration Microsoft 365.
 
+Si vous envisagez d’utiliser un environnement Platform Power personnalisé, vous devez [installer l’application *Générateur d’IA pour Project Cortex* dans cet environnement](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) et y [attribuer des crédits du Générateur d’IA](/power-platform/admin/capacity-add-on) avant de pouvoir créer des modèles de traitement des formulaires.
+
 ### <a name="licensing"></a>Gestion des licences
 
-Pour utiliser SharePoint Syntex, votre organisation doit avoir un abonnement à SharePoint Syntex, et chaque utilisateur doit avoir les licences suivantes :
+Pour utiliser SharePoint Syntex, votre organisation doit avoir un abonnement à SharePoint Syntex, et chaque utilisateur doit avoir les licences suivantes :
 
 - SharePoint Syntex
-- SharePoint Syntex : Type DPO
+- SharePoint Syntex : Type DPO
 - Service de données courant pour SharePoint Syntex
 
 Si vous annulez votre abonnement SharePoint Syntex à une date ultérieure (ou si votre version d’évaluation expire), les utilisateurs ne pourront plus créer ou exécuter des modèles de présentation ou de traitement de formulaires, et le modèle du centre de contenu ne sera plus disponible. En outre, les rapports des magasins à terme, l'importation de la taxonomie SKOS et la poussée des types de contenu ne seront plus disponibles. Aucun contenu n’est supprimé et les autorisations de site ne sont pas modifiées.
 
 ### <a name="ai-builder-credits"></a>Crédits AI Builder
 
-Si vous possédez 300 licences SharePoint Syntex au sein de votre organisation, vous bénéficierez d’un million de crédits AI Builder. Si vous possédez moins de 300 licences, vous devez acheter des crédits AI Builder pour utiliser le traitement des formulaires.
+Si vous possédez 300 licences SharePoint Syntex au sein de votre organisation, vous bénéficierez d’un million de crédits AI Builder. Si vous possédez moins de 300 licences, vous devez acheter des crédits AI Builder pour utiliser le traitement des formulaires.
 
 Vous pouvez estimer la capacité d’AI Builder qui vous convient, grâce à la calculatrice [AI Builder](https://powerapps.microsoft.com/ai-builder-calculator).
 
-Si vous planifiez d’utiliser un environnement Power Platform personnalisé, vous devez [attribuer des crédit à cet environnement](/power-platform/admin/capacity-add-on).
+Si vous planifiez d’utiliser un environnement Power Platform personnalisé, vous devez [attribuer des crédit à cet environnement](/power-platform/admin/capacity-add-on).
 
-Accédez au [Centre d’administration Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) pour vérifier vos crédits et leur utilisation.
+Accédez au [Centre d’administration Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) pour vérifier vos crédits et leur utilisation.
 
-## <a name="to-set-up-sharepoint-syntex"></a>Pour configurer SharePoint Syntex
+## <a name="to-set-up-sharepoint-syntex"></a>Pour configurer SharePoint Syntex
 
 1. Dans le Centre d’administration Microsoft 365, sélectionnez **Configuration**, puis affichez la section **Fichiers et contenu**.
 
-2. Dans la section **Fichiers et contenu**, sélectionnez **Automatiser la compréhension de contenu**.<br/>
+2. Dans la section **Fichiers et contenu**, sélectionnez **Automatiser la compréhension de contenu**. Notez que la disponibilité de votre crédit AI Builder actuel s’affiche dans la section **D’un coup d’œil**.<br/>
 
-3. À la page **Automatiser la compréhension de contenu** , cliquez sur **Commencer** pour parcourir le processus de configuration.<br/>
+3. À la page **Automatiser la compréhension de contenu** , cliquez sur **Commencer** pour parcourir le processus de configuration. <br/>
 
     > [!div class="mx-imgBorder"]
     > ![Commencer la configuration](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. Sur la page **Configurer le traitement des formulaires**, vous pouvez choisir d’autoriser ou non les utilisateurs à créer des modèles de traitement de formulaire dans des bibliothèques de documents SharePoint spécifiques. Une option de menu **Créer un modèle de traitement de formulaire** sera disponible dans les rubans des bibliothèques de documents SharePoint où le traitement des formulaires est activé.
  
-     Concernant les **bibliothèques SharePoint qui doivent afficher l’option de création d’un modèle de traitement de formulaire**, vous pouvez sélectionner les éléments suivants :</br>
+     Concernant les **bibliothèques SharePoint qui doivent afficher l’option de création d’un modèle de traitement de formulaire**, vous pouvez sélectionner les éléments suivants :</br>
       - **Les bibliothèques dans les sites SharePoint** pour rendre cette option disponible dans toutes les bibliothèques SharePoint au sein de votre organisation.</br>
-      - **Ls bibliothèques dans les sites SharePoint sélectionnés**. Sélectionnez ensuite les sites dans lesquels vous souhaitez rendre cette option disponible ou chargez une liste de 50 sites maximum.</br>
+      - **Ls bibliothèques dans les sites SharePoint sélectionnés**. Sélectionnez ensuite les sites dans lesquels vous souhaitez rendre cette option disponible ou chargez une liste de 50 sites maximum.</br>
       - **Aucune bibliothèque SharePoint** si cette option ne doit être disponible sur aucun site (vous pouvez modifier ce paramètre après la configuration).
 
    > [!div class="mx-imgBorder"]
@@ -87,13 +89,13 @@ Accédez au [Centre d’administration Power Platform](https://admin.powerplatf
    > [!Note]
    > La suppression d’un site une fois inclus n’affecte pas les modèles existants appliqués aux bibliothèques de ce site. Cette action ne vous empêche pas non plus d’appliquer des modèles de compréhension de document à une bibliothèque. 
     
-    Si vous avez plusieurs environnements Power Platform configurés, vous pouvez choisir celui à utiliser avec le traitement des formulaires. (Cette option ne s’affiche pas si vous n’avez qu’un seul environnement.)
+    Si vous avez plusieurs environnements Power Platform configurés, vous pouvez choisir celui à utiliser avec le traitement des formulaires. (Cette option ne s’affiche pas si vous n’avez qu’un seul environnement.)
 
-    ![Configurer les options Power Platform de traitement des formulaires](../media/content-understanding/setup-power-platform-env.png)
+    ![Configurer les options Power Platform de traitement des formulaires](../media/content-understanding/setup-power-platform-env.png)
 
-    Pour l’**environnement Power Platform**, vous pouvez sélectionner :
-    - **Utilisez l’environnement par défaut** pour utiliser votre environnement Power Platform par défaut.
-    - **Utilisez un environnement personnalisé** pour utiliser un environnement personnalisé. Sélectionnez l’environnement que vous souhaitez utiliser dans la liste. Vous devez installer l’application *Générateur d’IA pour Project Cortex* dans cet environnement et y attribuer des crédits du Générateur d’IA avant de pouvoir créer des modèles de traitement des formulaires.
+    Pour l’**environnement Power Platform**, vous pouvez sélectionner :
+    - **Utilisez l’environnement par défaut** pour utiliser votre environnement Power Platform par défaut.
+    - **Utilisez un environnement personnalisé** pour utiliser un environnement personnalisé. Sélectionnez l’environnement que vous souhaitez utiliser dans la liste. ([Voir la configuration requise pour un environnement personnalisé](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements)).
 
     Cliquez sur **Suivant**.
 
@@ -118,9 +120,9 @@ Accédez au [Centre d’administration Power Platform](https://admin.powerplatf
 
 Après avoir configuré SharePoint Syntex, vous devez attribuer des licences aux futurs utilisateurs des fonctionnalités de SharePoint Syntex.
 
-Pour attribuer des licences :
+Pour attribuer des licences :
 
-1. Dans le Centre d’administration Microsoft 365, sous **Utilisateurs**, cliquez sur **Utilisateurs actifs**.
+1. Dans le Centre d’administration Microsoft 365, sous **Utilisateurs**, cliquez sur **Utilisateurs actifs**.
 
 2. Sélectionnez les utilisateurs auxquels attribuer une licence, puis choisissez **Gérer les licences de produits**.
 
@@ -137,6 +139,6 @@ Pour attribuer des licences :
 
 [Vue d’ensemble du modèle de traitement de formulaire](/ai-builder/form-processing-model-overview)
 
-[Étape par étape : créer un modèle de compréhension de document (vidéo)](https://www.youtube.com/watch?v=DymSHObD-bg)
+[Étape par étape : créer un modèle de compréhension de document (vidéo)](https://www.youtube.com/watch?v=DymSHObD-bg)
 
-[Créer et gérer des environnements dans le Centre d'administration Power Platform](/power-platform/admin/create-environment)
+[Créer et gérer des environnements dans le Centre d'administration Power Platform](/power-platform/admin/create-environment)
