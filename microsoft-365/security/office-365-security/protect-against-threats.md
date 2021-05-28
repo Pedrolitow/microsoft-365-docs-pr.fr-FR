@@ -20,12 +20,12 @@ description: Les administrateurs peuvent en savoir plus sur la protection contre
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683330"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696549"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -36,7 +36,7 @@ ms.locfileid: "52683330"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Voici un guide de démarrage rapide qui décompose la configuration de Defender Office 365 en blocs. Si vous débutez avec les fonctionnalités de protection contre les menaces dans Office 365, que vous ne savez pas par où commencer, ou si vous apprenez mieux en faisant *cela,* utilisez ces instructions comme liste de contrôle et point de départ.
+Voici un guide de démarrage rapide qui décompose la configuration de Defender Office 365 en blocs. Si vous débutez avec les fonctionnalités de protection contre les menaces dans Office 365, si vous ne savez pas par où commencer, ou si vous apprenez mieux en faisant *cela,* utilisez ces instructions comme liste de contrôle et point de départ.
 
 > [!IMPORTANT]
 > **Les paramètres recommandés** initiaux sont inclus pour chaque type de stratégie ; toutefois, de nombreuses options sont disponibles et vous pouvez ajuster vos paramètres pour répondre aux besoins spécifiques de votre organisation. Laissez environ 30 minutes à vos stratégies ou modifications pour qu’elles fonctionnent dans votre centre de données.
@@ -45,10 +45,12 @@ Voici un guide de démarrage rapide qui décompose la configuration de Defender 
 
 ### <a name="subscriptions"></a>Abonnements
 
-Les fonctionnalités de protection contre les menaces sont *incluses* dans tous les abonnements Office 365 Microsoft ; toutefois, certains abonnements disposent de fonctionnalités avancées. Le tableau ci-dessous répertorie les fonctionnalités de protection incluses dans cet article, ainsi que les exigences minimales d’abonnement.
+Les fonctionnalités de protection contre les menaces sont *incluses* dans tous les abonnements Office 365 Microsoft ; toutefois, certains abonnements disposent de fonctionnalités avancées. Le tableau ci-dessous répertorie les fonctionnalités de protection incluses dans cet article, ainsi que les conditions minimales d’abonnement.
 
 > [!TIP]
 > Notez qu’au-delà des instructions  pour activer l’audit, les étapes de démarrage de la protection anti-programme malveillant, anti-hameçonnage et anti-courrier indésirable, qui sont marquées dans le cadre de Office 365 Exchange Online Protection (**EOP**). Cela peut sembler étrange dans un article defender pour Office 365, jusqu’à ce que vous vous rappeliez (**Defender pour Office 365**) contient et s’appuie sur EOP.
+
+<br>
 
 ****
 
@@ -65,7 +67,9 @@ Les fonctionnalités de protection contre les menaces sont *incluses* dans tous 
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
 
-Pour configurer Defender pour les stratégies Office 365, vous devez avoir un rôle approprié dans le Centre de sécurité [& conformité.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) Voir le tableau ci-dessous pour les rôles qui peuvent faire ces actions.
+Pour configurer Defender pour les stratégies Office 365, vous devez avoir un rôle approprié dans le Centre de sécurité [& conformité.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) Jetez un coup d’œil au tableau ci-dessous pour les rôles qui peuvent faire ces actions.
+
+<br>
 
 ****
 
@@ -80,22 +84,24 @@ Pour plus d’informations, voir Autorisations dans le [Centre de sécurité & c
 
 ### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Activer la journalisation d’audit pour la rapport et l’examen
 
-- Démarrez votre journalisation d’audit tôt. L’audit doit être **en cours pour** certaines des étapes suivantes. La journalisation d’audit est disponible dans les abonnements qui [incluent Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Pour afficher les données dans les rapports de [](view-email-security-reports.md)protection contre les menaces, tels que le tableau de bord de [sécurité,](security-dashboard.md)les rapports de sécurité du courrier électronique et [l’Explorateur,](threat-explorer.md)la journalisation d’audit doit être *sur .* Pour en savoir plus, voir Activer ou désactiver la [recherche dans le journal d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Démarrez votre journalisation d’audit tôt. Pour certaines des étapes  suivantes, l’audit doit être en cours. La journalisation d’audit est disponible dans les abonnements qui [incluent Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Pour afficher les données dans les rapports de [](view-email-security-reports.md)protection contre les menaces, tels que le tableau de bord de [sécurité,](security-dashboard.md)les rapports de sécurité du courrier électronique et [l’Explorateur,](threat-explorer.md)la journalisation d’audit doit être *sur .* Pour en savoir plus, voir Activer ou désactiver la [recherche dans le journal d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-## <a name="part-1---anti-malware-protection"></a>Partie 1 : protection contre les programmes malveillants
+## <a name="part-1---anti-malware-protection-in-eop"></a>Partie 1 : protection contre les programmes malveillants dans EOP
 
 Pour plus d’informations sur les paramètres recommandés pour la protection contre les programmes malveillants, voir les paramètres de stratégie [anti-programme malveillant EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)
 
 1. Ouvrez <https://security.microsoft.com/antimalwarev2> .
 
-2. Sélectionnez la stratégie par défaut en cliquant sur le nom de la stratégie.
+2. Dans la page **Anti-programme** malveillant, sélectionnez la stratégie nommée **Stratégie** par défaut en cliquant sur le nom.
 
 3. Dans le volant de détails de stratégie qui s’ouvre, cliquez sur Modifier les paramètres de **protection,** puis configurez les paramètres suivants :
    - Sélectionnez **Activer le filtre des pièces jointes courantes** pour activer le filtre de pièces jointes communes. Cliquez **sur Personnaliser les types de fichiers** pour ajouter d’autres types de fichiers.
-   - Vérifiez que **la fonction Activer la purge automatique d’heure zéro** pour les programmes malveillants est sélectionnée.
+   - Vérifiez que **la fonction Activer la purge automatique heure zéro pour les programmes** malveillants est sélectionnée.
    - Vérifiez qu’aucun des paramètres de la section **Notification** n’est sélectionné.
 
-   Lorsque vous avez terminé, cliquez sur **Enregistrer**
+   Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+
+4. De retour sur le volant des détails de stratégie, cliquez sur **Fermer.**
 
 Pour obtenir des instructions détaillées sur la configuration des stratégies anti-programme malveillant, voir Configurer des stratégies [anti-programme malveillant dans EOP.](configure-anti-malware-policies.md)
 
@@ -117,7 +123,7 @@ La procédure suivante décrit comment configurer une stratégie anti-hameçonna
 
    - Sous **l’onglet Actions,** sélectionnez  **Mettre le message** en quarantaine pour les options utilisateur dont l’identité est usurpée et domaine dont l’identité a **été usurpée.** En outre, activer les conseils de sécurité pour l’emprunt d’identité.
 
-   - Sous **l’onglet Renseignements** sur les boîtes aux lettres, assurez-vous que l’intelligence des boîtes aux lettres est allumée et activer la protection contre l’usurpation d’identité basée sur l’intelligence des boîtes aux lettres. In the **If email is sent by an impersonated user** list, choose Quarantine the **message**.
+   - Sous l’onglet **Veille sur la** boîte aux lettres, assurez-vous que l’intelligence de boîte aux lettres est allumée et activer la protection contre l’usurpation d’identité basée sur l’intelligence des boîtes aux lettres. In the **If email is sent by an impersonated user** list, choose Quarantine the **message**.
 
    - Sous **l’onglet Ajouter des expéditeurs** et des domaines de confiance, spécifiez les expéditeurs ou domaines de confiance que vous souhaitez ajouter.
 
@@ -125,7 +131,7 @@ La procédure suivante décrit comment configurer une stratégie anti-hameçonna
 
 4. Dans la section **Usurpation** d’informations, cliquez sur **Modifier,** puis spécifiez les paramètres suivants :
 
-   - Sous **l’onglet Paramètres** du filtre d’usurpation d’usurpation, assurez-vous que la protection contre l’usurpation d’usurpation est allumée.
+   - Sous **l’onglet Paramètres** du filtre d’usurpation d’usurpation, assurez-vous que la protection contre l’usurpation d’usurpation d’usurpation est bien allumée.
 
    - Sous **l’onglet Actions,** sélectionnez **Mettre le message en quarantaine.**
 
@@ -135,23 +141,23 @@ La procédure suivante décrit comment configurer une stratégie anti-hameçonna
 
 Pour en savoir plus sur vos options de stratégie anti-hameçonnage, voir Configurer des stratégies [anti-hameçonnage](configure-atp-anti-phishing-policies.md)dans Microsoft Defender pour Office 365 .
 
-## <a name="part-3---anti-spam-protection"></a>Partie 3 : protection contre le courrier indésirable
+## <a name="part-3---anti-spam-protection-in-eop"></a>Partie 3 : protection contre le courrier indésirable dans EOP
 
-[La protection contre le courrier](anti-spam-protection.md) indésirable est disponible dans les abonnements qui incluent [EOP.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Pour plus d’informations sur les paramètres recommandés pour la détection du courrier indésirable, consultez les paramètres de stratégie [anti-courrier indésirable EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
-1. Dans le [Centre de sécurité & conformité,](https://protection.office.com)sélectionnez Stratégie de **gestion** des \> **menaces** \> **anti-courrier indésirable.**
+1. Ouvrez <https://security.microsoft.com/antispam> .
 
-2. Sous **l’onglet** Personnalisé, activer les paramètres personnalisés.
+2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez la stratégie nommée Stratégie de courrier indésirable entrant dans la liste en cliquant sur le nom. 
 
-3. Développez **la stratégie de filtrage du courrier** indésirable par défaut, cliquez sur Modifier la **stratégie,** puis spécifiez les paramètres suivants :
+3. Dans le volant de détails  de stratégie qui s’affiche, cliquez sur Modifier le seuil de courrier indésirable et les propriétés dans la section Seuil de courrier indésirable en & de **courrier** indésirable.
 
-   - Dans la section **Courrier indésirable et actions en** bloc, définissez le seuil sur une valeur de 5 ou 6.
+4. Dans le **seuil de** courrier indésirable et  le flyout des propriétés qui s’affiche, définissez la valeur du seuil de courrier en bloc sur 5 (Strict) ou 6 (Standard). Lorsque vous avez terminé, cliquez sur **Enregistrer**
 
-   - Dans la section **Listes d’adresses** autorisées, examinez (et/ou modifiez) vos expéditeurs et domaines autorisés.
+5. De retour sur le volant des détails de stratégie, rendez-vous dans la section Expéditeurs et domaines autorisés et **bloqués,** puis examinez ou modifiez vos expéditeurs et domaines autorisés.
 
-4. Cliquez sur **Enregistrer**.
+6. Lorsque vous avez terminé, cliquez sur **Fermer**.
 
-Pour en savoir plus sur vos options de stratégie anti-courrier indésirable, voir Configurer des stratégies [anti-courrier indésirable dans EOP.](configure-your-spam-filter-policies.md)
+Pour obtenir des instructions détaillées sur la configuration des stratégies anti-courrier indésirable, voir [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Partie 4 : protection contre les URL et les fichiers malveillants (liens et pièces jointes sécurisées dans Defender pour Office 365)
 
@@ -161,11 +167,11 @@ La protection au moment du clic contre les URL et fichiers malveillants est disp
 
 Pour configurer les [pièces jointes sécurisées,](safe-attachments.md)créez au moins une stratégie de liens sécurisés.
 
-1. In the [Security & Compliance Center,](https://protection.office.com)choose **Threat management** \> **Policy** \> **ATP Safe Attachments,** and then click **Create**.
+1. Dans le [Centre de sécurité & conformité,](https://protection.office.com)sélectionnez Stratégie de gestion des  \>  \> **menaces ATP Pièces jointes sécurisées,** puis cliquez sur **Créer**.
 
 2. Dans **l’Assistant Nouvelle stratégie de pièces jointes sécurisées** qui s’affiche, configurez les paramètres suivants :
 
-   - Dans la **zone** Nom, `Block malware` tapez, puis cliquez sur **Suivant.**
+   - Dans la **zone** Nom, `Block malware` tapez, puis cliquez sur **Suivant**.
 
    - Sur la **Paramètres** page, configurez les paramètres suivants :
      - In the **Safe attachments unknown malware response** section, choose **Block**.
@@ -179,13 +185,13 @@ Pour configurer les [pièces jointes sécurisées,](safe-attachments.md)créez a
 
 ### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Stratégies de liens sécurisés dans Microsoft Defender pour Office 365
 
-Pour configurer des [liens sécurisés,](safe-links.md)examiner et modifier vos paramètres globaux pour les liens sécurisés et créer au moins une stratégie de liens sécurisés.
+Pour configurer les [liens sécurisés,](safe-links.md)examinez et modifiez vos paramètres globaux pour les liens sécurisés et créez au moins une stratégie de liens sécurisés.
 
 1. Dans le [Centre de sécurité & conformité,](https://protection.office.com)sélectionnez Stratégie de gestion des menaces - Liens  \>  \> sécurisés **ATP,** cliquez sur **Paramètres** globaux, puis configurez les paramètres suivants :
 
    - Vérifiez **l’utilisation des liens sécurisés dans : Office 365 applications** est désactivée : ![ Basculez sur ](../../media/scc-toggle-on.png) .
    - **Ne pas suivre le moment où les utilisateurs cliquent sur** Liens sécurisés : désactiver ce paramètre pour suivre les clics de l’utilisateur : ![ désactiver ](../../media/scc-toggle-off.png) .
-   - **Ne laissez pas les utilisateurs cliquer sur les** liens sécurisés vers l’URL d’origine : vérifiez que ce paramètre est allumé : ![ Basculez sur ](../../media/scc-toggle-on.png) .
+   - **Ne laissez pas les utilisateurs cliquer sur les** liens sécurisés vers l’URL d’origine : vérifiez que ce paramètre est allumé : ![ basculez sur ](../../media/scc-toggle-on.png) .
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -256,7 +262,7 @@ Pour recevoir une notification lorsqu’un fichier dans SharePoint Online, OneDr
 
 7. **Enregistrer**.
 
-Pour en savoir plus sur les alertes, voir Créer des alertes d’activité dans le Centre de [sécurité & conformité.](../../compliance/create-activity-alerts.md)
+Pour en savoir plus sur les alertes, voir Créer des [alertes d’activité dans](../../compliance/create-activity-alerts.md)le Centre de sécurité & conformité.
 
 > [!NOTE]
 > Lorsque vous avez terminé la configuration, utilisez ces liens pour lancer des enquêtes sur la charge de travail :
@@ -268,9 +274,9 @@ Pour en savoir plus sur les alertes, voir Créer des alertes d’activité dans 
 
 ## <a name="part-6---additional-settings-to-configure"></a>Partie 6 : paramètres supplémentaires à configurer
 
-Outre la configuration de la protection contre les programmes malveillants, les URL et les fichiers malveillants, le hameçonnage et le courrier indésirable, nous vous recommandons de configurer la purge automatique d’heure zéro.
+Outre la configuration de la protection contre les programmes malveillants, les URL et les fichiers malveillants, le hameçonnage et le courrier indésirable, nous vous recommandons de configurer la purge automatique sans heure.
 
-### <a name="zero-hour-auto-purge-for-email-in-eop"></a>Purge automatique zéro heure pour le courrier électronique dans EOP
+### <a name="zero-hour-auto-purge-for-email-in-eop"></a>Purge automatique d’heure zéro pour le courrier électronique dans EOP
 
 [La purge automatique d’heure](zero-hour-auto-purge.md) zéro (ZAP) est disponible dans les abonnements qui incluent [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). Cette protection est désactivée par défaut . Toutefois, les conditions suivantes doivent être remplies pour que la protection soit en vigueur :
 
@@ -282,7 +288,7 @@ Pour en savoir plus, [consultez Purge automatique heure zéro - Protection contr
 
 ## <a name="post-setup-tasks-and-next-steps"></a>Tâches post-installation et étapes suivantes
 
-Après avoir configuré les fonctionnalités de protection contre les menaces, veillez à surveiller leur fonctionnement ! Examinez et révisez vos stratégies afin qu’elles s’en sortent comme vous le souhaitez. Observez également les nouvelles fonctionnalités et mises à jour de service qui peuvent ajouter de la valeur.
+Après avoir configuré les fonctionnalités de protection contre les menaces, veillez à surveiller leur fonctionnement ! Examinez et révisez vos stratégies afin qu’elles s’en sortent comme vous le souhaitez. Observez également les nouvelles fonctionnalités et les mises à jour de service qui peuvent ajouter de la valeur.
 
 ****
 

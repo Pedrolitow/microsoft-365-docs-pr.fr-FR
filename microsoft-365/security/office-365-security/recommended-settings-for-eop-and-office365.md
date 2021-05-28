@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour Exchange Online Protection (EOP) et Defender pour Office 365 de sécurité ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous souhaitez être plus strict ? Quels sont les extras que vous obtenez si vous utilisez également Defender pour Office 365 ?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: b6661c31d0cc05a1bdfd51de986af1e7b22c9d70
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683270"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696525"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 
@@ -44,7 +44,7 @@ Pour appliquer automatiquement les paramètres Standard ou Strict aux utilisateu
 > [!NOTE]
 > La règle de courrier indésirable doit être activée sur les boîtes aux lettres pour que le filtrage fonctionne correctement. Il est activé par défaut, mais vous devez le vérifier si le filtrage ne semble pas fonctionner. Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online dans Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-Cet article décrit les paramètres par défaut, ainsi que les paramètres standard et strict recommandés pour protéger vos utilisateurs.
+Cet article décrit les paramètres par défaut, ainsi que les paramètres standard et strict recommandés pour protéger vos utilisateurs. Les tableaux contiennent les paramètres dans le centre de sécurité Microsoft 365 et PowerShell (Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online données).
 
 > [!TIP]
 > Le Office 365 module ORCA (Advanced Threat Protection Recommended Configuration Analyzer) pour PowerShell peut vous aider (administrateurs) à trouver les valeurs actuelles de ces paramètres. Plus précisément, la cmdlet **Get-ORCAReport** génère une évaluation des paramètres d’hygiène des messages anti-courrier indésirable, anti-hameçonnage et autres. Vous pouvez télécharger le module ORCA sur <https://www.powershellgallery.com/packages/ORCA/> .
@@ -65,26 +65,26 @@ Pour créer et configurer des stratégies anti-courrier indésirable, voir Confi
 |---|:---:|:---:|:---:|---|
 |**Action de** détection du courrier indésirable <p> _SpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Action de détection du courrier indésirable** à niveau de confiance élevé <p> _HighConfidenceSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|**Action de détection de courrier d’hameçonnage** <p> _PhishSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|**Action de détection de courrier de hameçonnage** à haut niveau de confiance <p> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|**Action de détection de courrier électronique** en bloc <p> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
-|Seuil des courriers électroniques en bloc <p> _BulkThreshold_|7 |6 |4 |Pour plus d’informations, [voir Le niveau de réclamation en bloc (BCL) dans Office 365](bulk-complaint-level-values.md).|
-|Période de rétention de mise en quarantaine <p> _QuarantineRetentionPeriod_|15 jours|30 jours|30 jours||
-|**Sécurité Astuces** <p> _InlineSafetyTipsEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
+|**Action de détection du** hameçonnage <p> _PhishSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
+|**Action de détection du hameçonnage à haut** niveau de confiance <p> _HighConfidencePhishAction_|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
+|**Action de** détection en bloc <p> _BulkSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
+|**Seuil des courriers électroniques en bloc** <p> _BulkThreshold_|7 |6 |4 |Pour plus d’informations, [voir Le niveau de réclamation en bloc (BCL) dans Office 365](bulk-complaint-level-values.md).|
+|_MarkAsSpamBulkMail_|Activé|Activé|Activé|Ce paramètre est uniquement disponible dans PowerShell.|
+|**Conserver le courrier indésirable en quarantaine pendant ce nombre de jours** <p> _QuarantineRetentionPeriod_|15 jours|30 jours|30 jours||
+|**Activer les conseils de sécurité contre le courrier indésirable** <p> _InlineSafetyTipsEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |Expéditeurs autorisés <p> _AllowedSenders_|Aucun|Aucun|Aucun||
-|Domaines des expéditeurs autorisés <p> _AllowedSenderDomains_|Aucun|Aucun|Aucun|L’ajout de domaines à la liste des expéditeurs autorisés est une idée très mauvaise. Les attaquants pourraient vous envoyer des messages électroniques qui seraient autrement filtrés. <p> Utilisez [](learn-about-spoof-intelligence.md) la veille contre l’usurpation d’adresses et la liste d’adresses client [autoriser/bloquer](tenant-allow-block-list.md) dans le Centre de sécurité & conformité pour passer en revue tous les expéditeurs qui usurpent des adresses e-mail d’expéditeur dans les domaines de messagerie de votre organisation ou usurpent des adresses de messagerie d’expéditeur dans des domaines externes.|
+|Domaines d’expéditeur autorisés <p> _AllowedSenderDomains_|Aucun|Aucun|Aucun|L’ajout de domaines à la liste des expéditeurs autorisés est une idée très mauvaise. Les attaquants pourraient vous envoyer des messages électroniques qui seraient autrement filtrés. <p> Utilisez [](learn-about-spoof-intelligence.md) la veille contre l’usurpation d’adresses et la liste d’adresses ip/bloqués du client pour passer en revue tous les expéditeurs usurpant des adresses de messagerie d’expéditeur dans les domaines de messagerie de votre organisation ou usurpant des adresses de messagerie d’expéditeur dans des domaines externes. [](tenant-allow-block-list.md)|
 |Expéditeurs bloqués <p> _BlockedSenders_|Aucun|Aucun|Aucun||
 |Domaines des expéditeurs bloqués <p> _BlockedSenderDomains_|Aucun|Aucun|Aucun||
 |**Activer les notifications de courrier indésirable à l’utilisateur final** <p> _EnableEndUserSpamNotifications_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Envoyer des notifications de courrier indésirable à l’utilisateur final tous les (jours)** <p> _EndUserSpamNotificationFrequency_|3 jours|3 jours|3 jours||
-|**ZAP de courrier indésirable** <p> _SpamZapEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
-|**Phish ZAP** <p> _PhishZapEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
-|_MarkAsSpamBulkMail_|Activé|Activé|Activé|Ce paramètre est uniquement disponible dans PowerShell.|
+|Activer la purge automatique d’heure zéro (ZAP) pour les messages de hameçonnage <p> _PhishZapEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
+|Activer ZAP pour le courrier indésirable <p> _SpamZapEnabled_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |
 
-Il existe plusieurs autres paramètres de filtrage avancé du courrier indésirable (ASF) dans les stratégies anti-courrier indésirable qui sont en train d’être supprimés. Plus d’informations sur la chronologie de l’amortissement de ces fonctionnalités seront communiquées en dehors de cet article.
+De nombreux paramètres de filtrage avancé du courrier indésirable (ASF) dans les stratégies anti-courrier indésirable sont en train d’être supprimés. Plus d’informations sur la chronologie de l’amortissement de ces fonctionnalités seront communiquées en dehors de cet article.
 
-Nous vous recommandons de désactiver ces **paramètres** ASF pour les niveaux **Standard** **et Strict.** Pour plus d’informations sur les paramètres ASF, voir [les paramètres](advanced-spam-filtering-asf-options.md)de filtre de courrier indésirable avancé dans Office 365 .
+Nous vous recommandons de ne pas définir les **paramètres** ASF suivants pour les **niveaux Standard** et **Strict.** Pour plus d’informations sur les paramètres ASF, voir [les paramètres](advanced-spam-filtering-asf-options.md)de filtre de courrier indésirable avancé dans Office 365 .
 
 <br>
 
@@ -121,7 +121,7 @@ Pour plus d’informations sur les limites d’envoi par défaut dans le service
 
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Nombre maximal de destinataires par utilisateur : limite horaire externe** <p> _RecipientLimitExternalPerHour_|0|500|400|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
+|**Nombre maximal de destinataires par utilisateur : limite horaire externe** <p> _RecipientLimitExternalPerHour_|0|500|30W|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
 |**Nombre maximal de destinataires par utilisateur : limite horaire interne** <p> _RecipientLimitInternalPerHour_|0|1000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
 |**Nombre maximal de destinataires par utilisateur : limite quotidienne** <p> _RecipientLimitPerDay_|0|1000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
 |**Action lorsqu’un utilisateur dépasse les limites** <p> _ActionWhenThresholdReached_|**Empêcher l’utilisateur d’envoyer des messages jusqu’au jour suivant** <p> `BlockUserForToday`|**Empêcher l’utilisateur d’envoyer des messages électroniques** <p> `BlockUser`|**Empêcher l’utilisateur d’envoyer des messages électroniques** <p> `BlockUser`||
@@ -144,7 +144,7 @@ Pour créer et configurer des stratégies anti-programme malveillant, voir Confi
 |**Avertir les expéditeurs externes lorsque les messages sont mis en quarantaine en tant que programmes malveillants** <p> _EnableExternalSenderNotifications_|Désactivé <p> `$false`|Désactivé <p> `$false`|Désactivé <p> `$false`||
 |
 
-### <a name="eop-default-anti-phishing-policy-settings"></a>Paramètres de stratégie anti-hameçonnage par défaut EOP
+### <a name="eop-default-anti-phishing-policy-settings"></a>Paramètres de stratégie anti-hameçonnage par défaut d’EOP
 
 Pour plus d’informations sur ces paramètres, voir [Paramètres d’usurpation d’informations.](set-up-anti-phishing-policies.md#spoof-settings) Pour configurer ces paramètres, voir [Configurer des stratégies anti-hameçonnage dans EOP.](configure-anti-phishing-policies-eop.md)
 
@@ -156,7 +156,7 @@ Pour plus d’informations sur ces paramètres, voir [Paramètres d’usurpation
 |---|:---:|:---:|:---:|---|
 |**Activer la protection contre l’usurpation d’usurpation** <p> _EnableSpoofIntelligence_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |**Activer l’expéditeur non authentifié** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook des expéditeurs usurpés non identifiés. Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
-|**Si un e-mail est envoyé par une personne qui n’est pas autorisée à usurper votre domaine** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont [](learn-about-spoof-intelligence.md) été automatiquement bloqués comme indiqué dans l’aperçu de l’usurpation d’intelligence ou qui ont été bloqués manuellement dans la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)|
+|**Si un e-mail est envoyé par une personne qui n’est pas autorisée à usurper votre domaine** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont [](learn-about-spoof-intelligence.md) été automatiquement bloqués, comme indiqué dans la veille contre l’usurpation d’informations ou bloqués manuellement dans la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)|
 |
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender pour la Office 365 sécurité
@@ -165,11 +165,11 @@ Des avantages supplémentaires en matière de sécurité s’offrent à vous ave
 
 > [!IMPORTANT]
 >
-> - La stratégie anti-hameçonnage par défaut dans Microsoft [](set-up-anti-phishing-policies.md#spoof-settings) Defender pour Office 365 protection contre l’usurpation d’adresses et l’intelligence des boîtes aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités disponibles de [protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) contre l’emprunt d’identité et les paramètres avancés ne sont pas [configurés](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ou activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
+> - La stratégie anti-hameçonnage par défaut dans Microsoft [](set-up-anti-phishing-policies.md#spoof-settings) Defender Office 365 protection contre l’usurpation d’adresses et la veille des boîtes aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités de [protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) contre l’emprunt d’identité disponibles et les paramètres avancés ne sont pas [configurés](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ou activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
 >
 > - Il n’existe aucune stratégie de liens sécurisés ou de pièces jointes sécurisées par défaut qui protège automatiquement tous les destinataires de l’organisation. Pour obtenir les protections, vous devez créer au moins une stratégie de liens sécurisés et une stratégie de pièces jointes sécurisées.
 >
-> - [Les pièces jointes SharePoint, OneDrive,](mdo-for-spo-odb-and-teams.md) la protection Microsoft Teams et la protection des [documents](safe-docs.md) sécurisés n’ont aucune dépendance vis-à-vis des stratégies de liens sécurisés.
+> - [Les pièces jointes SharePoint, OneDrive,](mdo-for-spo-odb-and-teams.md) et la protection Microsoft Teams [](safe-docs.md) documents sécurisés ne sont pas dépendantes des stratégies de liens sécurisés.
 
 Si votre abonnement inclut Microsoft Defender pour Office 365 ou si vous avez acheté Defender pour Office 365 en tant que modules, définissez les configurations Standard ou Strict suivantes.
 
@@ -179,7 +179,7 @@ Les clients EOP obtiennent un anti-hameçonnage de base comme décrit précédem
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
-Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d’identité dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 . Pour configurer ces paramètres, voir Configurer des stratégies [anti-hameçonnage](configure-atp-anti-phishing-policies.md)dans Defender pour Office 365 .
+Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d’identité dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 . Pour configurer ces paramètres, voir [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 <br>
 
@@ -232,7 +232,7 @@ Pour plus d’informations sur ce paramètre, voir Seuils d’hameçonnage avanc
 
 ### <a name="safe-links-settings"></a>Paramètres de liens sécurisés
 
-La stratégie Liens sécurisés dans Defender pour Office 365 inclut des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies de liens sécurisés actifs et des paramètres spécifiques à chaque stratégie de liens sécurisés. Pour plus d’informations, [voir Liens sécurisés dans Defender pour Office 365](safe-links.md).
+La stratégie Liens sécurisés dans Defender pour Office 365 inclut des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies de liens sécurisés actifs, ainsi que des paramètres spécifiques à chaque stratégie de liens sécurisés. Pour plus d’informations, [voir Liens sécurisés dans Defender pour Office 365](safe-links.md).
 
 #### <a name="global-settings-for-safe-links"></a>Paramètres globaux des liens sécurisés
 
@@ -247,7 +247,7 @@ Dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](/powershell/modu
 |Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Utiliser des liens sécurisés dans : Office 365 applications** <p> _EnableSafeLinksForO365Clients_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Utilisez des liens sécurisés dans les applications Office 365 de bureau et mobiles (iOS et Android). Pour plus d’informations, voir paramètres de liens [sécurisés pour Office 365 applications.](safe-links.md#safe-links-settings-for-office-365-apps)|
-|**Ne pas suivre le moment où les utilisateurs cliquent sur Liens sécurisés** <p> _TrackClicks_|Activé <p> `$false`|Désactivé <p> `$true`|Désactivé <p> `$true`|La définition de ce paramètre (paramètre _TrackClicks_ sur ) suit les clics de l’utilisateur `$true` dans les applications Office 365 pris en charge.|
+|**Ne pas suivre le moment où les utilisateurs cliquent sur Liens sécurisés** <p> _TrackClicks_|Activé <p> `$false`|Désactivé <p> `$true`|Désactivé <p> `$true`|La définition de ce paramètre (définition _de TrackClicks_ sur ) suit les clics de l’utilisateur `$true` dans les applications Office 365 pris en charge.|
 |**Ne pas laisser les utilisateurs cliquer sur liens sécurisés vers l’URL d’origine** <p> _AllowClickThrough_|Activé <p> `$false`|Activé <p> `$false`|Activé <p> `$false`|L’turning on this setting (setting _AllowClickThrough_ to `$false` ) prevents click through to the original URL in supported Office 365 apps.|
 |
 
@@ -318,7 +318,7 @@ Dans PowerShell, vous utilisez les cmdlets [New-SafeAttachmentPolicy](/powershel
 
 ## <a name="related-articles"></a>Articles connexes
 
-- Vous recherchez les meilleures pratiques pour Exchange règles de flux de **messagerie (également appelées règles de transport)**? Consultez [les meilleures pratiques pour configurer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Vous recherchez les meilleures pratiques pour Exchange de flux de **messagerie (également appelées règles de transport)**? Consultez [les meilleures pratiques pour configurer les règles de flux de messagerie dans Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Les administrateurs et les utilisateurs peuvent soumettre des faux positifs (courrier électronique de qualité marqué comme faux) et des faux négatifs (courriers électroniques erronés autorisés) à Microsoft pour analyse. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 

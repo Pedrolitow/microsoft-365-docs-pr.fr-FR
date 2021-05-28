@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 719bd2b86cae1c6a951cb34408ecb9d2b8da699a
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683498"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696585"
 ---
 # <a name="user-submissions-policy"></a>Stratégie de soumissions d’utilisateurs
 
@@ -56,9 +56,9 @@ Utilisez les articles suivants pour configurer les conditions préalables requis
 
 - Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez [configurer des](set-up-safe-links-policies.md) stratégies de liens sécurisés dans Defender pour Office 365 pour créer une stratégie de liens sécurisés avec le paramètre **Off** pour Sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les **messages.**
 
-- Créez une stratégie anti-programme malveillant pour désactiver la purge automatique sans heure de programmes malveillants. Voir Utiliser le Centre de sécurité & conformité pour créer des stratégies [anti-programme](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) malveillant afin de définir la **purge** automatique sans heure de programmes **malveillants sur Hors service.**
+- Créez une stratégie anti-programme malveillant pour désactiver la purge automatique sans heure de programmes malveillants. Voir Utiliser le Centre de sécurité & conformité pour créer des stratégies [anti-programme](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) malveillant afin de définir la **purge** automatique sans heure de programmes **malveillants sur Hors service.**
 
-- Créez une stratégie de filtrage du courrier indésirable pour désactiver la purge automatique d’heure zéro (ZAP) pour le courrier indésirable et le hameçonnage dans la boîte aux lettres personnalisée. Voir Utiliser le Centre de sécurité & conformité pour créer des stratégies [anti-courrier](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) indésirable et effacer les case à cocher **Sur** pour spam **ZAP** et **PHISH ZAP**.
+- Créez une stratégie de filtrage du courrier indésirable pour désactiver la purge automatique d’heure zéro (ZAP) pour le courrier indésirable et le hameçonnage dans la boîte aux lettres personnalisée. Voir Utiliser le Centre de sécurité & conformité pour créer des stratégies [anti-courrier](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) indésirable et effacer les case à cocher **Sur** pour spam **ZAP** et **PHISH ZAP**.
 
 - Désactivez la règle de courrier indésirable dans la boîte aux lettres personnalisée. Utilisez [configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux](configure-junk-email-settings-on-exo-mailboxes.md) lettres pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées sur la boîte aux lettres.
 
@@ -115,7 +115,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
         - **Microsoft (recommandé)**: la boîte aux lettres d’envoi de l’utilisateur n’est pas utilisée (tous les messages signalés sont envoyés à Microsoft).
 
-        - **Microsoft et une boîte aux lettres** personnalisée : dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les envois d’utilisateurs sont ensuite soumis à Microsoft pour analyse et à la boîte aux lettres personnalisée que votre équipe d’administration ou d’opérations de sécurité doit analyser.
+        - **Microsoft et une boîte aux lettres** personnalisée : dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les envois d’utilisateurs sont ensuite soumis à Microsoft pour analyse et à la boîte aux lettres personnalisée que votre équipe d’administration ou d’opérations de sécurité doit analyser.
 
         - **Boîte aux lettres personnalisée uniquement**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Utilisez cette option si vous souhaitez que le message ne soit envoyé qu’à un administrateur ou à l’équipe des opérations de sécurité pour analyse en premier. Les messages ne sont pas envoyés à Microsoft, sauf si l’administrateur les a transmis eux-mêmes.
 
@@ -123,7 +123,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
           > Les organisations gouvernementales américaines (Cloud de la communauté du secteur public, Cloud de la communauté du secteur public-H et DoD) peuvent uniquement configurer une boîte **aux lettres personnalisée.** Les deux autres options sont désactivées.
 
           > [!NOTE]
-          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour la rescanée et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
+          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour réascaner et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
 
       Lorsque vous avez terminé, cliquez sur **Confirmer.**
 
@@ -131,7 +131,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
       > Si vous avez désactivé la création de rapports de courrier indésirable dans Outlook sur le [web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) à l’aide de stratégies de boîte aux lettres Outlook sur le web, mais que vous configurez l’un des paramètres précédents pour signaler des messages à Microsoft, les utilisateurs pourront signaler des messages à Microsoft dans Outlook sur le web à l’aide du module de signalement des messages ou du module de signalement du hameçonnage.
 
 
-    2. Désactivez la fonctionnalité Message de rapport pour **Outlook**: sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du add-in Message de rapport, du module de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les paramètres suivants :
+    2. Désactivez la fonctionnalité Message de rapport pour **Outlook**: sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du module de rapport de message, du module de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les paramètres suivants :
 
        Sélectionnez **Utiliser cette boîte aux lettres personnalisée pour recevoir les soumissions signalées par l’utilisateur.** Dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres existante déjà Office 365. Il doit s’agit d’une boîte aux lettres existante dans Exchange Online qui peut recevoir des messages électroniques.
 

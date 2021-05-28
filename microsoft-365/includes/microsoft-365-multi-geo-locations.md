@@ -3,6 +3,7 @@
 |:----------------------------|:-------|:---------------------------------|
 |Asie-Pacifique                 |APC     |Centres de données situés en Asie de l’Est ou du Sud-Est|
 |Australie                    |AUS     |Centres de données situés en Asie de l’Est ou du Sud-Est|
+|Brésil                       |ER     |(emplacement des données eDiscovery bientôt disponible)|
 |Canada                       |CAN     |Centres de données situés aux États-Unis                    |
 |Europe / Moyen-Orient / Afrique|EUR     |Centres de données situés en Europe                |
 |France                       |FRA     |Centres de données situés en Europe                |
