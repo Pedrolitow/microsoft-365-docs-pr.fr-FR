@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Découvrez les fonctionnalités multigé géographiques dans Exchange Online, telles que les limitations de fonctionnalités et l’emplacement des boîtes aux lettres.
-ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923731"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694304"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multigéographiques d’Exchange Online
 
@@ -43,7 +43,7 @@ Exchange Online synchronise la propriété **MailboxRegion** du service d’ann
 
 - Lorsque la valeur de la propriété **PreferredDataLocation** n’est pas spécifiée sur un utilisateur, quand vous approvisionnez la boîte aux lettres, celle-ci est configurée dans l’emplacement géographique central.
 
-- Si le code **PreferredDataLocation** est incorrect (par exemple, un type de NaN au lieu de NAM), la boîte aux lettres est approvisionnée dans l’emplacement géographique central.
+- Si le code **PreferredDataLocation** est incorrect (par exemple, une faute de frappe DE TYPE AU lieu de NAM), la boîte aux lettres est mise en service dans l’emplacement géographique central.
 
 **Remarque** : les fonctionnalités multigéographiques et les réunions Skype Entreprise Online hébergées au niveau régional utilisent toutes deux la propriété **PreferredDataLocation** sur les objets utilisateur pour localiser les services. Si vous configurez les valeurs de **PreferredDataLocation** sur des objets utilisateur pour des réunions organisées par région, la boîte aux lettres des utilisateurs correspondants est automatiquement déplacée vers l’emplacement géographique spécifié après activation de la fonction multigéographique sur le client Microsoft 365.
 

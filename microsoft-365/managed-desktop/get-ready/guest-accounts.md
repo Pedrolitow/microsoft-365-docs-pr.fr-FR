@@ -10,29 +10,29 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: bbf679a01716fc48d37b241d69740f50a985f048
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d29b9d6bdc30d981b273d95925ba740bc92304c4
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574606"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694244"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Conditions préalables pour les comptes invité
 
-Bureau géré Microsoft requiert les paramètres suivants dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ces paramètres sur le portail [Azure](https://portal.azure.com) sous **Identités externes /Collaboration externe**:
+Bureau géré Microsoft nécessite les paramètres suivants dans votre organisation Azure AD pour l’accès au compte invité. Vous pouvez ajuster ces paramètres sur le portail [Azure](https://portal.azure.com) sous **Identités externes /Paramètres de collaboration externe**:
 
--   **Les administrateurs et les utilisateurs du rôle d’invite d’invités** peuvent inviter des personnes définies sur **Oui**
+-   Pour les **restrictions d’invitation d’invité définies** pour les utilisateurs membres et les utilisateurs affectés à des rôles d’administrateur spécifiques peuvent inviter des utilisateurs invités, y compris des invités avec des **autorisations de membre**
 -   Pour **les restrictions de collaboration,** choisissez l’une des options ci-après :
     -   Si vous **sélectionnez Autoriser l’envoi d’invitations** à un domaine (le plus inclus), aucune autre configuration n’est requise.
     -   Si vous sélectionnez Refuser les invitations aux domaines **spécifiés,** assurez-vous Microsoft.com n’est pas répertorié dans les domaines cibles.
     -   Si vous sélectionnez Autoriser les invitations uniquement aux domaines **spécifiés (les plus restrictifs),** assurez-vous que Microsoft.com est répertorié dans les domaines cibles. 
 
-Si vous définissez des restrictions qui interagissent avec ces paramètres, veillez à exclure les comptes azure Active Directory **Modern Workplace Service**. Par exemple, si vous avez une stratégie d’accès conditionnel qui empêche les comptes invités d’accéder au portail Intune, excluez le groupe Comptes de **service** Workplace modernes de cette stratégie.
+Si vous définissez des restrictions qui interagissent avec ces paramètres, veillez à exclure les Azure Active Directory des comptes de **service Workplace modernes.** Par exemple, si vous avez une stratégie d’accès conditionnel qui empêche les comptes invités d’accéder au portail Intune, excluez le groupe Comptes de **service** Workplace modernes de cette stratégie.
 
 ## <a name="steps-to-get-ready"></a>Étapes pour vous préparer
 
-1. Passer en [revue les conditions préalables pour le Bureau géré Microsoft.](prerequisites.md)
-2. Utiliser les [outils d’évaluation de la préparation.](readiness-assessment-tool.md)
+1. Examinez [Configuration requise pour le Bureau géré Microsoft](prerequisites.md).
+2. Utiliser les [outils de préparation d’évaluation](readiness-assessment-tool.md).
 3. [Conditions préalables pour les comptes invités](guest-accounts.md) (cet article)
 4. [Configuration du réseau pour Bureau géré Microsoft](network.md)
 5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)

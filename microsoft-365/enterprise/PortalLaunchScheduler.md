@@ -16,17 +16,17 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: Cet article explique comment lancer votre portail à l’aide du programme de lancement du portail
-ms.openlocfilehash: d7ea64b3a9fef25ddfde43e61624e49d2b7d4352
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+description: Cet article décrit comment lancer votre portail à l’aide du programme de lancement du portail
+ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280968"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694352"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du SharePoint de lancement du portail
 
-Un portail est un site de communication SharePoint sur votre intranet à fort trafic , un site qui compte entre 10 000 et plus de 100 000 visiteurs sur plusieurs semaines. Utilisez le programme de lancement du portail pour lancer votre portail afin de garantir aux utilisateurs une expérience d’affichage fluide lors de l’accès à SharePoint portail.
+Un portail est un site de communication SharePoint sur votre intranet qui présente un trafic élevé : un site qui compte entre 10 000 et plus de 100 000 visiteurs sur plusieurs semaines. Utilisez le programme de lancement du portail pour lancer votre portail afin de garantir aux utilisateurs une expérience d’affichage fluide lors de l’accès à SharePoint portail.
 <br>
 <br>
 Le programme de lancement du portail est conçu pour vous aider à suivre une approche de déploiement par étapes en par lots de visionneuses par vagues et en gérant les redirections d’URL pour le nouveau portail. Au cours du lancement de chaque vague, vous pouvez recueillir les commentaires des utilisateurs, surveiller les performances du portail et suspendre le lancement pour résoudre les problèmes avant de poursuivre la vague suivante. En savoir plus sur la [façon de planifier un lancement de portail dans SharePoint](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
@@ -73,7 +73,7 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 1.  Avant d’utiliser l’outil de planification de lancement du portail, ajoutez tous les utilisateurs qui auront besoin d’accéder à ce [site](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) via les **autorisations** site en tant que propriétaire du site, membre du site ou visiteur.
 
-2.  Commencez ensuite à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
+2.  Ensuite, commencez à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
 
     **Option 1**: les premières fois que vous modifiez et repupuyez les modifications apportées à votre page d’accueil (ou jusqu’à la version 3.0 de la page d’accueil), vous êtes invité à utiliser l’outil de planification de lancement du portail. Sélectionnez **Planifier le lancement** pour aller de l’avant avec la planification. Vous pouvez également **sélectionner Republish** pour republier vos modifications de page sans planifier le lancement.
     
@@ -95,7 +95,7 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
     - Moins de 10 000 utilisateurs : deux vagues
     - 10 000 à 30 000 utilisateurs : trois vagues 
     - 30 000 à 100 000 utilisateurs : cinq vagues
-    - Plus de 100 000 utilisateurs : cinq vagues et contactez votre équipe de compte Microsoft
+    - Plus de 100 000 utilisateurs : cinq vagues et contactez microsoft via les étapes répertoriées dans la section Portail de lancement avec plus de 100 000 utilisateurs. 
 
 5.  Ensuite, déterminez le **type de redirection** nécessaire :
 
@@ -118,6 +118,26 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 8.  Confirmez les détails du lancement du portail et sélectionnez **Planifier.** Une fois le lancement programmé, toutes les modifications apportées à la page d’accueil du portail SharePoint doivent recevoir un résultat de diagnostic sain avant que le lancement du portail reprenne.
 
+### <a name="launch-portal-with-over-100k-users"></a>Portail de lancement avec plus de 100 000 utilisateurs
+
+Si vous envisagez de migrer plus de 100 To, envoyez une demande de support en suivant les étapes décrites ci-dessous. Veillez à inclure toutes les informations demandées.
+
+Procédez comme suit :
+1. Accédez à la page https://admin.microsoft.com.
+2. Vérifiez que vous utilisez la nouvelle préversion du centre d’administration.
+3. Dans le volet de navigation gauche, sélectionnez **Support**, puis **Nouvelle demande de service**. 
+
+
+   Cette opération active le volet **Besoin d'aide ?** sur le côté droit de l’écran.
+
+4.  Dans la **zone Décrire brièvement** votre problème, entrez « Lancer SharePoint portail avec 100 000 utilisateurs ».</br>
+5. Sélectionnez **Contacter le support**.
+6. Sous **Description,** entrez « Lancer SharePoint portail avec 100 000 utilisateurs ». 
+7. Renseignez les informations restantes, puis sélectionnez **Me contacter**.
+8. Une fois le ticket créé, veillez à fournir à l’agent de support les informations suivantes :
+- URL du portail de lancement 
+- Nombre d’utilisateurs attendus
+- Heure de lancement estimée 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Apporter des modifications à un lancement de portail programmé
 
@@ -152,9 +172,9 @@ Les lancements programmés à l’aide de l’outil de planification de lancemen
 1. [Téléchargez la dernière version de SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
-    > Si vous avez installé une version antérieure de SharePoint Online Management Shell, accédez à Ajouter ou supprimer des programmes et désinstaller « SharePoint Online Management Shell ».<br>Dans la page du Centre de téléchargement, sélectionnez votre langue, puis cliquez sur le bouton Télécharger. Vous serez invité à choisir entre le téléchargement d’un fichier .msi x64 et x86. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. En cas de doute, consultez [Quelle est la version du système d’exploitation Windows que j’utilise ?](https://support.microsoft.com/help/13443/windows-which-operating-system). Une fois le fichier téléchargé, exécutez-le, puis suivez les étapes de l'Assistant d'installation.
+    > Si vous avez installé une version antérieure de SharePoint Online Management Shell, accédez à Ajouter ou supprimer des programmes et désinstaller « SharePoint Online Management Shell ».<br>Dans la page du Centre de téléchargement, sélectionnez votre langue, puis cliquez sur le bouton Télécharger. Vous serez invité à choisir entre le téléchargement d’un fichier .msi x64 et x86. Téléchargez le fichier x64 si vous exécutez la version 64 bits de Windows ou le fichier x86 si vous exécutez la version 32 bits. En cas de doute, consultez [Quelle est la version du système d’exploitation Windows que j’utilise ?](https://support.microsoft.com/help/13443/windows-which-operating-system). Une fois le fichier téléchargé, exécutez-le, puis suivez les étapes de l'Assistant d'installation.
 
-2. Connectez-vous à SharePoint en tant qu’[administrateur général ou administrateur SharePoint](/sharepoint/sharepoint-admin-role) dans Microsoft 365. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+2. Connectez-vous à SharePoint en tant qu’[administrateur général ou administrateur SharePoint](/sharepoint/sharepoint-admin-role) dans Microsoft 365. Pour savoir comment procéder, reportez-vous à l’article [Prise en main de SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 
 ### <a name="view-any-existing-portal-launch-setups"></a>Afficher les configurations de lancement de portail existantes
@@ -187,7 +207,7 @@ Pour migrer les utilisateurs d’un site SharePoint existant vers un nouveau sit
    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
    ```
 
-   Exemple :
+   Exemple :
 
    ```PowerShell
    New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType Bidirectional -RedirectUrl "https://contoso.sharepoint.com/teams/oldsite" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
@@ -208,7 +228,7 @@ La redirection de page temporaire doit être utilisée lorsqu’il n’existe au
    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
    ```
 
-   Exemple :
+   Exemple :
 
    ```PowerShell
    New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType ToTemporaryPage -RedirectUrl "https://portal.contoso.com/UnderConstruction.aspx" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
@@ -247,7 +267,7 @@ La redirection de page temporaire doit être utilisée lorsqu’il n’existe au
 
 2. Vérifier qu’aucune redirection ne se produit pour tous les utilisateurs.
 
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Si vous souhaitez en savoir plus
 
 [Planification de votre plan de déploiement de lancement de portail dans SharePoint Online](./planportallaunchroll-out.md)
 

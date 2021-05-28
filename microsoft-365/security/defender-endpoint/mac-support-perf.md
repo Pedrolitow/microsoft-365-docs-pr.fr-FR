@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d69c7dc30a4cf6a3078f510a02e5572fe8b36cbb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a4ebb360bc606845bfd3f80f31082c836b896477
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530909"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694256"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
 
@@ -34,7 +34,7 @@ ms.locfileid: "52530909"
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -94,7 +94,7 @@ Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces p
       Pour collecter les statistiques actuelles, exécutez :
 
       ```bash
-      mdatp config real-time-protection-statistics --output json > real_time_protection.json
+      mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]

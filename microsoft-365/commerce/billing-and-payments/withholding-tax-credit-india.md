@@ -18,18 +18,23 @@ description: Découvrez comment demander un crédit sur votre compte pour la ret
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689024"
+ms.locfileid: "52694220"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients en Inde)
 
-Les clients en Inde reçoivent des factures Web Direct (Azure et Microsoft 365) facturées par Microsoft Regional Sales Pte Ltd. Singapore (MRS) et font des paiements internationaux à Singapour pour régler la facture. Si vous avez retenu des taxes lors du versement du paiement, cet article explique le processus de revendication d’un crédit pour la retenue d’impôt sur le revenu (WHT) dans votre compte avec MRS.
+> [!NOTE]
+>
+> Si votre organisation n’est pas basée en Inde, consultez Demander un crédit pour la retenue d’impôt sur votre [compte (clients globaux).](withholding-tax-credit-global.md)
+
+Les clients en Inde reçoivent des factures Web Direct (Azure et Microsoft 365) facturées par Microsoft Regional Sales Pte Ltd. Singapore (MRS) et vers Singapour pour régler la facture. Si vous avez retenu des taxes lors du versement du paiement, cet article explique le processus de revendication d’un crédit pour la retenue d’impôt sur le revenu (WHT) dans votre compte avec MRS.
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Pour les clients de paiement par facture qui paient par chèque ou par virement
 
@@ -44,7 +49,7 @@ Envoyez la demande WHT en ouvrant un ticket avec le support Microsoft.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Pour les clients qui paient par carte de crédit
 
-Si votre mode de paiement est une carte de crédit et que vous avez effectué un paiement complet au service MRS et que vous avez également payé l’IFF au service d’impôt sur le revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
+Si votre mode de paiement est une carte bancaire et que vous avez effectué un paiement complet au service MRS et que vous avez également payé wht au service fiscal du revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
 
 Votre requête WHT doit inclure les éléments suivants :
 
@@ -57,7 +62,7 @@ Envoyer la demande WHT en ouvrant un ticket avec le support Microsoft
 
 Le tableau suivant indique les dates d’échéance et les chronologies pour envoyer des formulaires de certificat TDS signés numériquement (formulaire 16A) pour chaque trimestre.
 
-| Trimestre | Period | Date d’échéance pour l’émission du certificat TDS (formulaire 16A) | Chronologies étendues pour envoyer le formulaire 16A avec le formulaire de crédit d’impôt sur la retenue d’impôt |
+| Trimestre | Period | Date d’échéance pour l’émission du certificat TDS (formulaire 16A) | Chronologies étendues pour envoyer le formulaire 16A avec le formulaire de crédit d’impôt à la retenue d’impôt |
 |-|-|-|-|
 | 1 | Avril - Juin | 15-Août | 31-Aug |
 | 2 | Juillet - Septembre | 15-Nov | 30-Nov |

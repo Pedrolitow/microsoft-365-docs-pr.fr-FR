@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des autoriser et des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 270e38d65857de2f4d06460fb3bb77f72a165ecf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538962"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694484"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -29,8 +29,8 @@ ms.locfileid: "52538962"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 >
@@ -44,7 +44,6 @@ La liste des locataires autoriser/bloquer dans le Centre de sécurité & conform
 
 - URL à bloquer.
 - Fichiers à bloquer.
-- Domaines d’expéditeur de courrier en masse à autoriser. Pour plus d’informations sur le courrier en nombre, le niveau de confiance en bloc (BCL) et le filtrage des messages en bloc par des stratégies anti-courrier indésirable, voir Le niveau de réclamation en bloc [(BCL) dans EOP.](bulk-complaint-level-values.md)
 - Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’informations sur l’usurpation d’adresse, l’expéditeur  usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresses.
 
 Cet article explique comment configurer des entrées dans la liste d’adresses client autoriser/bloquer dans le Centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
@@ -75,8 +74,8 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
-  - **URL, fichiers et autoriser les expéditeurs en bloc**:
+- Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
+  - **URL et fichiers**:
     - Pour ajouter et supprimer des valeurs de la liste d’attente des locataires, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité. 
     - Pour un accès en lecture seule à la liste d’accès  au  client autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
   - **Usurpation :** l’une des combinaisons suivantes :
@@ -135,29 +134,9 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Utiliser le Centre de sécurité & conformité pour créer des entrées de domaine d’expéditeur de courrier en nombre dans la liste d’adresses client autoriser/bloquer
-
-1. Dans le Centre de sécurité & conformité, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
-
-2. Dans la page Liste d’adresses client **autoriser/bloquer,** sélectionnez l’onglet Domaines de l’expéditeur pour le contournement **BCL,** puis cliquez sur **Ajouter**.
-
-3. Dans le **programme volant Ajouter un domaine d’expéditeur** pour le contournement BCL qui s’affiche, configurez les paramètres suivants :
-
-   - **Ajouter des domaines d’expéditeur pour le** contournement BCL : entrez un domaine source de courrier en nombre par ligne, jusqu’à un maximum de 20.
-
-   - **N’expirez jamais**: faites l’une des étapes suivantes :
-
-     - Vérifiez que le paramètre est désactivé (basculement désactivé) et utilisez la case Expires on pour spécifier la ![ ](../../media/scc-toggle-off.png) date d’expiration des entrées. 
-
-     ou
-
-     - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Activer](../../media/scc-toggle-on.png).
-
-4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
-
 ## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Utiliser le Centre de sécurité & conformité pour créer des entrées d’expéditeurs usurpés ou autoriser ou bloquer dans la liste d’adresses client autoriser/bloquer
 
-**Remarques** :
+**Remarques** :
 
 - Seule la _combinaison_ de l’utilisateur usurpé et de l’infrastructure d’envoi, telle que définie dans la paire de domaines, est spécifiquement autorisée ou bloquée à l’usurpation. 
 - Lorsque vous configurez une entrée d’autoriser ou de bloquer une paire de domaines, les messages de cette paire de domaines n’apparaissent plus dans l’aperçu de l’usurpation d’intelligence.
@@ -199,11 +178,6 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
      - **Date d’expiration**
      - **Remarque**
 
-   - **Domaines des expéditeurs pour le contournement BCL**
-     - **Valeur**: domaine de l’expéditeur du courrier en masse.
-     - **Date de la dernière mise à jour**
-     - **Date d’expiration**
-
    - **Usurpation**
      - **Utilisateur usurpé**
      - **Infrastructure d’envoi**
@@ -212,14 +186,14 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier par ordre croissant ou décroit.
 
-   Vous pouvez cliquer sur **Grouper** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
+   Vous pouvez cliquer sur **Groupe** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
 
    - **URL : vous** pouvez grouper les résultats par **action.**
    - **Fichiers**: vous pouvez grouper les résultats par **action.**
    - **Domaines des expéditeurs pour le contournement BCL :** **le groupe** n’est pas disponible sous cet onglet.
    - **Usurpation :** vous pouvez grouper les résultats par **action** ou **type d’usurpation.**
 
-   Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer l’icône** ![ de recherche Effacer la ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) recherche.
+   Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer l’icône** ![ effacer la ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) recherche.
 
    Cliquez **sur Filtrer** pour filtrer les résultats. Les valeurs disponibles dans le flyout **Filter** qui s’affiche dépendent de l’onglet que vous avez sélectionné :
 
@@ -244,7 +218,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
      - **Action**
      - **Type d’usurpation**
 
-   Lorsque vous avez terminé, cliquez sur **Appliquer.** Pour effacer les filtres existants,  cliquez sur **Filtrer** et dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
+   Lorsque vous avez terminé, cliquez sur **Appliquer.** Pour effacer les filtres existants,  cliquez sur **Filtrer** et, dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
 
 ## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Utiliser le Centre de sécurité & conformité pour modifier des entrées dans la liste d’attente des locataires
 
@@ -298,7 +272,7 @@ Pour ajouter des entrées de blocage de fichier ou d’URL dans la liste d’adr
 New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
 
-Cet exemple ajoute une entrée de fichier de blocage pour les fichiers spécifiés qui n’expire jamais.
+Cet exemple ajoute une entrée de bloc de fichiers pour les fichiers spécifiés qui n’expire jamais.
 
 ```powershell
 New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
@@ -308,23 +282,6 @@ Cet exemple ajoute une entrée d’URL de bloc pour contoso.com et tous les sous
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
-```
-
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-add-allow-bulk-mail-sender-domain-entries-to-the-tenant-allowblock-list"></a>Utiliser PowerShell pour ajouter des entrées de domaine d’expéditeur de courrier en nombre à la liste d’adresses client autoriser/bloquer
-
-Pour ajouter des entrées de domaine d’expéditeur de courrier en nombre dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-Cet exemple ajoute une entrée d’expéditeur en bloc autorisée pour le domaine spécifié qui n’expire jamais.
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
@@ -359,29 +316,7 @@ Cet exemple renvoie toutes les URL bloquées.
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
-
-### <a name="use-powershell-to-view-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées de domaine d’expéditeur de courrier en nombre dans la liste d’adresses client autoriser/bloquer
-
-Pour afficher les entrées de domaine d’expéditeur de courrier en nombre dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-Cet exemple renvoie tous les domaines d’expéditeur de courrier en masse autorisés.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-Cet exemple renvoie des informations pour le domaine d’expéditeur en bloc spécifié.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
-```
-
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
 ### <a name="use-powershell-to-view-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher ou bloquer les entrées d’expéditeur usurpées dans la liste d’adresses client autoriser/bloquer
 
@@ -427,22 +362,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-modify-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour modifier les entrées de domaine d’expéditeur de courrier en nombre dans la liste d’adresses client autoriser/bloquer
-
-Pour modifier autoriser les entrées de domaine d’expéditeur de courrier en nombre dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-Cet exemple modifie l’expiration de l’entrée de domaine d’expéditeur de courrier en nombre spécifiée pour qu’elle n’expire jamais.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
-
 ### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour modifier les entrées d’expéditeurs usurpées dans la liste d’adresses client autoriser/bloquer
 
 Pour modifier les entrées d’expéditeurs usurpées dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
@@ -459,12 +378,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### <a name="use-powershell-to-remove-bulk-mail-sender-domain-file-and-domain-entries-from-the-tenant-allowblock-list"></a>Utiliser PowerShell pour supprimer les entrées de domaine, de fichier et de domaine de l’expéditeur de courrier en bloc de la liste d’adresses client
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Utiliser PowerShell pour supprimer l’URL ou les entrées de fichier de la liste d’adresses client autoriser/bloquer
 
-Pour supprimer les entrées de domaine d’expéditeur de courrier en nombre, bloquer les entrées de fichier et bloquer les entrées d’URL de la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
+Pour supprimer des entrées de fichier et d’URL de la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 Cet exemple supprime l’entrée d’URL de bloc spécifiée de la liste d’adresses client autoriser/bloquer.
@@ -477,7 +396,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="use-powershell-to-remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>Utiliser PowerShell pour supprimer les entrées d’expéditeurs usurpées de la liste d’adresses client autoriser/bloquer
 
-Pour supprimer les entrées d’expéditeurs usurpant l’usurpation d’adresse de client de la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
+Pour supprimer les entrées d’expéditeurs usurpant l’usurpation d’adresse de client de la liste d’expéditeurs bloqués ou d’expéditeurs d’usurpation d’adresses, utilisez la syntaxe suivante :
 
 ```powershell
 Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">

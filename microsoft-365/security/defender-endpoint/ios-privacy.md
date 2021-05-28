@@ -1,8 +1,8 @@
 ---
 title: Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 ms.reviewer: ''
-description: Décrit les informations de confidentialité de Microsoft Defender pour Endpoint sur iOS
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, ios, stratégie, vue d'ensemble
+description: Décrit les informations de confidentialité de Microsoft Defender pour endpoint sur iOS
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, ios, stratégie, vue d’ensemble
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,41 +18,44 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934284"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694472"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> Defender pour le point de terminaison sur iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s'agit pas d'un VPN normal et d'un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l'appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
+> Defender pour le point de terminaison sur iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l’appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
 
-Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender pour point de terminaison sur iOS sécurisé, à jour, en cours d'évaluation et pour prendre en charge le service.
+Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender for Endpoint sur iOS sécurisé, à jour, en cours d’évaluation et pour prendre en charge le service.
 
-Pour plus d'informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité des données de point [de terminaison.](data-storage-privacy.md)
+Pour plus d’informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité des données de point [de terminaison.](data-storage-privacy.md)
+
+
+Pour plus d’informations sur les questions de confidentialité les plus courantes concernant Microsoft Defender pour point de terminaison sur les appareils mobiles Android et iOS, consultez Microsoft Defender pour endpoint et votre confidentialité sur les appareils mobiles Android et [iOS.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
 
 ## <a name="required-data"></a>Données requises 
 
-Les données requises sont constituées de données nécessaires pour que Defender for Endpoint sur iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l'utilisateur final, à l'organisation, à l'appareil et aux applications. 
+Les données requises sont constituées de données qui sont nécessaires pour que Defender for Endpoint sur iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications. 
 
-Voici la liste des types de données collectées : 
+Voici une liste des types de données collectées : 
 
 ### <a name="web-page-or-network-information"></a>Page Web ou informations réseau 
 
-- Nom de domaine du site web uniquement lorsqu'une connexion malveillante ou une page web est détectée. 
+- Nom de domaine du site web uniquement lorsqu’une connexion malveillante ou une page web est détectée. 
 
-### <a name="device-and-account-information"></a>Informations sur l'appareil et le compte 
+### <a name="device-and-account-information"></a>Informations sur l’appareil et le compte 
 
-- Informations sur l'appareil telles que l'& date, la version d'iOS, les informations sur l'UC et l'identificateur de l'appareil, où l'identificateur d'appareil est l'un des éléments suivants : 
+- Informations sur l’appareil telles que l'& date, la version d’iOS, les informations sur l’UC et l’identificateur de l’appareil, où l’identificateur d’appareil est l’un des éléments suivants : 
 
     - Wi-Fi'adaptateur MAC 
 
@@ -60,9 +63,9 @@ Voici la liste des types de données collectées :
 
 - Informations sur le client, l’appareil et l’utilisateur 
 
-    - ID d’appareil Azure Active Directory (AD) et ID utilisateur Azure : identifie de manière unique l’appareil, utilisateur, respectivement dans Azure Active Directory. 
+    - Azure Active Directory (AD) ID d’appareil et ID utilisateur Azure : identifie de manière unique l’appareil, utilisateur, respectivement dans Azure Active Directory. 
 
-    - ID client Azure : GUID qui identifie votre organisation dans Azure Active Directory. 
+    - ID de client Azure : GUID qui identifie votre organisation au sein Azure Active Directory. 
 
     - ID d’organisation Microsoft Defender pour point de terminaison : identificateur unique associé à l’entreprise à qui appartient l’appareil. Permet à Microsoft d’identifier s’il existe des problèmes affectant un ensemble sélectionné d’entreprises et le nombre d’entreprises touchés. 
 
@@ -86,16 +89,16 @@ Les données facultatives incluent les données de diagnostic et les données de
 
 Les données de diagnostic facultatives incluent : 
 
-- Utilisation de l’application, du processeur et du réseau pour Defender pour endpoint. 
+- Utilisation de l’application, de l’UC et du réseau pour Defender pour endpoint. 
 
 - Fonctionnalités configurées par l’administrateur de Defender pour le point de terminaison. 
 
-Les données de commentaires sont collectées par le biais de commentaires dans l'application fournis par l'utilisateur. 
+Les données de commentaires sont collectées par le biais de commentaires dans l’application fournis par l’utilisateur. 
 
-- Adresse de messagerie de l'utilisateur, s'il choisit de la fournir.
+- Adresse de messagerie de l’utilisateur, s’il choisit de la fournir.
 
-- Type de commentaires (souris, frown, idée) et tous les commentaires envoyés par l'utilisateur. 
+- Type de commentaires (souris, frown, idée) et tous les commentaires envoyés par l’utilisateur. 
 
-Pour plus d'informations, [voir plus d'informations sur la confidentialité.](https://aka.ms/mdatpiosprivacystatement)
+Pour plus d’informations, [voir plus d’informations sur la confidentialité.](https://aka.ms/mdatpiosprivacystatement)
 
 
