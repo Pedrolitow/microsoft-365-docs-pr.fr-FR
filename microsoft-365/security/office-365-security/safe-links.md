@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection contre les liens sécurisés dans Defender for Office 365 pour protéger leur organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593568"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698987"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -74,7 +74,7 @@ Cet article contient des descriptions détaillées des types de paramètres de l
   - [Paramètres de liens sécurisés pour Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - [« Ne pas réécrire les URL suivantes » dans les stratégies de liens sécurisés](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Paramètres globaux de liens sécurisés**: ces paramètres sont configurés globalement, et non dans les stratégies de liens sécurisés. Toutefois, les paramètres s’appliquent uniquement aux utilisateurs inclus dans les stratégies de liens sécurisés actives. Ces paramètres sont les suivants :
+- **Paramètres globaux de liens sécurisés**: ces paramètres sont configurés globalement, et non dans les stratégies de liens sécurisés. Ces paramètres sont les suivants :
 
   - [Paramètres de liens sécurisés pour Office 365 applications](#safe-links-settings-for-office-365-apps)
   - [Liste « Bloquer les URL suivantes » pour les liens sécurisés](#block-the-following-urls-list-for-safe-links)
@@ -172,11 +172,11 @@ Les paramètres suivants dans les stratégies de liens sécurisés qui s’appli
 
 Ces paramètres sont expliqués précédemment dans les paramètres de liens [sécurisés pour les messages électroniques.](#safe-links-settings-for-email-messages)
 
-Une fois que vous avez activer la protection contre les liens sécurisés pour les Microsoft Teams, les URL de Teams sont vérifiées par rapport à la liste des liens malveillants connus lorsque l’utilisateur protégé clique sur le lien (protection au moment du clic). Les URL ne sont pas réécrites. Si un lien est jugé malveillant, les utilisateurs auront les expériences suivantes :
+Une fois que vous avez activer la protection contre les liens sécurisés pour les Microsoft Teams, les URL de Teams sont vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur protégé clique sur le lien (protection au moment du clic). Les URL ne sont pas réécrites. Si un lien est jugé malveillant, les utilisateurs auront les expériences suivantes :
 
 - Si vous avez cliqué sur le lien dans une conversation Teams, une conversation de groupe ou à partir de canaux, la page d’avertissement, comme illustré dans la capture d’écran ci-dessous, s’affiche dans le navigateur web par défaut.
 - Si vous avez cliqué sur le lien à partir d’un onglet épinglé, la page d’avertissement s’affiche dans l’interface Teams dans cet onglet. L’option d’ouverture du lien dans un navigateur web est désactivée pour des raisons de sécurité.
-- Selon la configuration du paramètre Ne pas autoriser les utilisateurs à accéder à **l’URL** d’origine de la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine (continuer quand même **(non recommandé)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre Ne pas autoriser les utilisateurs à cliquer sur le paramètre **d’URL** d’origine afin que les utilisateurs ne peuvent pas accéder à l’URL d’origine.
+- Selon la configuration du paramètre Ne pas autoriser les utilisateurs à accéder à **l’URL** d’origine de la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine (continuer quand même **(non recommandé)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre Ne pas autoriser les utilisateurs à accéder au paramètre **d’URL** d’origine afin que les utilisateurs ne peuvent pas accéder à l’URL d’origine.
 
 Si l’utilisateur qui a envoyé le lien n’est pas inclus dans une stratégie de liens sécurisés dans laquelle la protection Teams est activée, l’utilisateur est libre de cliquer sur l’URL d’origine sur son ordinateur ou son appareil.
 
@@ -196,12 +196,12 @@ Cliquer sur le **bouton Revenir en** arrière dans la page d’avertissement per
 
 ## <a name="safe-links-settings-for-office-365-apps"></a>Paramètres de liens sécurisés pour Office 365 applications
 
-La protection des liens sécurisés pour les applications Office 365 vérifie les liens dans les documents Office, et non dans les messages électroniques (mais elle peut vérifier les liens dans les documents Office joints dans les messages électroniques après l’ouverture du document).
+La protection des liens sécurisés pour les applications Office 365 vérifie les liens dans les documents Office, et non dans les messages électroniques (mais elle peut vérifier les liens dans les documents Office joints dans les messages électroniques une fois le document ouvert).
 
 La protection des liens sécurisés pour Office 365 applications a les exigences client suivantes :
 
 - Microsoft 365 Apps ou Microsoft 365 Business Premium.
-  - Les versions actuelles de Word, Excel et PowerPoint sur Windows Mac ou dans un navigateur web.
+  - Les versions actuelles de Word, Excel et PowerPoint sur Windows, Mac ou dans un navigateur web.
   - Office applications sur les appareils iOS ou Android.
   - Visio sur Windows.
   - OneNote dans un navigateur web.
@@ -238,7 +238,7 @@ Pour plus d’informations sur les valeurs recommandées pour les paramètres de
 
    - Si l’URL pointe vers un site web qui a été déterminé comme malveillant, une page d’avertissement de site [web](#malicious-website-warning) malveillant (ou une autre page d’avertissement) s’ouvre.
 
-   - Si l’URL pointe vers un fichier téléchargeable et que la stratégie de liens sécurisés qui s’applique à l’utilisateur est configurée pour analyser les liens vers le contenu téléchargeable (appliquez l’analyse **d’URL** en temps réel pour les liens suspects et les liens pointant vers des fichiers), le fichier téléchargeable est vérifié.
+   - Si l’URL pointe vers un fichier téléchargeable et que la stratégie de liens sécurisés qui s’applique à l’utilisateur est configurée pour analyser les liens vers le contenu téléchargeable (appliquer l’analyse **d’URL** en temps réel pour les liens suspects et les liens pointant vers des fichiers), le fichier téléchargeable est vérifié.
 
    - Si l’URL est considérée comme sûre, l’utilisateur est conduit sur le site web.
 
@@ -259,7 +259,7 @@ Lorsqu’un utilisateur d’une stratégie de liens sécurisés active clique su
 
 Vous configurez la liste des URL dans les paramètres globaux des liens sécurisés. Pour obtenir des instructions, voir Configurer la liste [« Bloquer les URL suivantes](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)».
 
-**Remarques** :
+**Remarques** :
 
 - Pour obtenir une liste véritablement universelle des URL bloquées partout, voir Gérer la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)
 - Limites pour la **liste Bloquer les URL suivantes** :
@@ -284,7 +284,7 @@ Le tableau suivant décrit des exemples de valeurs que vous pouvez entrer et leu
 |`contoso.com` <p> ou <p> `*contoso.com*`|Bloque le domaine, les sous-domaines et les chemins d’accès. Par exemple, `https://www.contoso.com` et `https://sub.contoso.com` sont `https://contoso.com/abc` bloqués.|
 |`https://contoso.com/a`|Bloque, `https://contoso.com/a` mais pas les sous-chemins supplémentaires comme `https://contoso.com/a/b` .|
 |`https://contoso.com/a*`|Blocs `https://contoso.com/a` et sous-chemins supplémentaires tels que `https://contoso.com/a/b` .|
-|`https://toys.contoso.com*`|Bloque un sous-domaine (dans cet exemple), mais autorise les clics vers d’autres `toys` URL de domaine (comme ou `https://contoso.com` `https://home.contoso.com` ).|
+|`https://toys.contoso.com*`|Bloque un sous-domaine (dans cet exemple), mais autorise les clics vers d’autres URL de `toys` domaine (comme `https://contoso.com` ou `https://home.contoso.com` ).|
 |
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>« Ne pas réécrire les URL suivantes » dans les stratégies de liens sécurisés
@@ -296,10 +296,10 @@ Chaque stratégie de liens sécurisés contient une liste Ne pas réécrire les 
 
 Pour ajouter des entrées à la liste dans les stratégies de liens sécurisés nouvelles ou existantes, voir [Créer](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) des stratégies de liens sécurisés ou [Modifier des stratégies de liens sécurisés.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-**Remarques** :
+**Remarques** :
 
 - Les clients suivants ne reconnaissent pas la liste Ne pas réécrire les URL suivantes dans les **stratégies** de liens sécurisés. Les utilisateurs inclus dans les polices peuvent être bloqués pour accéder aux URL en fonction des résultats de l’analyse des liens sécurisés dans ces clients :
-  - Microsoft Teams
+  - Microsoft Teams
   - Office web apps
 
   Pour obtenir une liste véritablement universelle d’URL autorisées partout, voir Gérer la liste d’adresses client [autorisées/bloqués.](tenant-allow-block-list.md)
@@ -373,7 +373,7 @@ Il existe plusieurs raisons pour lesquelles un administrateur bloque manuellemen
 
 La page d’avertissement d’origine ressemble à ceci :
 
-![Avertissement d’origine « Ce site web a été bloqué par la stratégie d’URL de votre organisation »](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
+![Avertissement « Ce site web a été bloqué par la stratégie d’URL de votre organisation »](../../media/3d6ba028-30bf-45fc-958e-d3aad3defc83.png)
 
 ### <a name="error-warning"></a>Avertissement d’erreur
 
