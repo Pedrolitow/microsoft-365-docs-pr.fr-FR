@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: fb4ba4f48d6f336444861b4407461efd4c8862d0
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624232"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694508"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -214,7 +214,7 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
    - **Bloquer le domaine** : cliquez sur **Modifier**. Dans le menu **Liste des domaines bloqués** qui s’affiche :
 
-      a. Entrez le domaine. Vous pouvez spécifier plusieurs domaines séparés par des points-virgules (;). Les caractères génériques (*)ne sont pas autorisés.
+      a. Entrez un domaine. Vous pouvez spécifier plusieurs domaines séparés par des points-virgules (;). Les caractères génériques (*) ne sont pas autorisés.
 
       b. Clic  ![Icône Ajouter](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) pour ajouter les domaines.
 
