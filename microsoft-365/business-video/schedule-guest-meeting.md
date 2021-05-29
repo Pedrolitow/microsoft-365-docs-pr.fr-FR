@@ -1,5 +1,5 @@
 ---
-title: Planifier une réunion Teams avec des invités
+title: Planifier une réunion Teams avec des utilisateurs externes
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,30 +19,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment planifier une réunion Teams avec des invités.
-ms.openlocfilehash: 1a48fa290211507453004c54637e588ad9ad6759
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment planifier une réunion Teams avec des utilisateurs externes.
+ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578698"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698891"
 ---
-# <a name="schedule-a-teams-meeting-with-guests"></a>Planifier une réunion Teams avec des invités
+# <a name="schedule-a-teams-meeting-with-external-users"></a>Planifier une réunion Teams avec des utilisateurs externes
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-Vous pouvez inviter des personnes extérieures à votre organisation à une réunion sans avoir à les ajouter à Microsoft Teams. Voici comment cela fonctionne pour vos clients ou partenaires lorsqu’ils rejoignent une [réunion sans compte Teams.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)
+Vous pouvez inviter des personnes extérieures à votre organisation à une réunion sans avoir à les ajouter à Microsoft Teams. Voici comment cela fonctionne pour vos clients ou partenaires lorsqu’ils rejoignent une [réunion sans Teams compte.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)
 
 ## <a name="try-it"></a>Essayez !
 
-Avec Microsoft Teams, vous pouvez créer de nouvelles équipes lorsque vous démarrez de nouveaux projets ou ajoutez des clients.
+Pour planifier des réunions avec vos employés, clients, utilisateurs externes et autres invités, utilisez Microsoft Teams. 
 
-1. Sous  **l’onglet Teams,** sélectionnez Rejoindre ou **créer** une **équipe,** créer une **équipe,** créer une équipe à partir de zéro, puis **Privé**.
-2. Entrez un nom pour votre équipe, une description, puis sélectionnez **Créer.**
-3. Dans  **la**  page Ajouter des membres, ajoutez des membres internes en les recherchant et en les sélectionnant, puis ajoutez des membres invités en entrant leur adresse e-mail, puis sélectionnez  **Ajouter**.
-
-    Si vous voyez  **que nous n’avons trouvé aucune correspondance,** vous devez activer le partage d’invités. Go to the Microsoft 365 admin center, choose the Teams admin center, choose  **Org-wide settings**,  **Guest access** , and turn on Allow guest access  **in Teams**. Cette modification peut prendre jusqu’à 24 heures.
-
-1. Sélectionnez  **Fermer**. Vos invités et membres recevront des invitations à l’équipe.
-2. Sur le canal général, entrez un message d’accueil pour tout le monde et sélectionnez **Envoyer.**
-3. Sous  **l’onglet** Fichiers, ajoutez les documents sur qui vous souhaitez travailler ensemble. Vous pouvez les créer ici ou glisser-déposer des fichiers à partir de votre ordinateur.
+1. In Microsoft Teams, in the left navigation, choose **Meetings**.
+2. Choisissez **Planifier une réunion.**
+3. Dans la **zone Nouvelle réunion,** entrez un titre **et** un **emplacement** pour la réunion.
+4. Entrez une heure et **une** date **de** début et de fin.
+5. Dans la **zone Détails,** entrez une description de la réunion et tous les autres détails que vous souhaitez ajouter, tels qu’un ordre du jour de la réunion.
+6. Sous **Inviter des personnes,** entrez les noms des employés ou des clients que vous voulez inviter.
+7. Si vous voyez **Provisoire** ou **Occupé** sous  n’importe quel nom, choisissez l’une des heures gratuites fournies ou cliquez sur Assistant Planification **pour** plus d’options.
+8. Choisissez **Planifier une réunion.**
