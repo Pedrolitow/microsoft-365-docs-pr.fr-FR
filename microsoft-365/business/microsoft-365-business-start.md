@@ -1,5 +1,5 @@
 ---
-title: Mise en place Microsoft 365 entreprise
+title: Prendre en Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -28,20 +28,20 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment Microsoft 365 pour les entreprises, comment le configurer et comment préparer les appareils et pc de vos utilisateurs afin qu’ils sont protégés par Microsoft 365 entreprise.
-ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293704"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706455"
 ---
-# <a name="get-started-with-microsoft-365-for-business"></a>Mise en place Microsoft 365 entreprise
+# <a name="get-started-with-microsoft-365-for-business"></a>Prendre en Microsoft 365 entreprise
 
 ## <a name="what-is-microsoft-365-for-business"></a>Qu’est-ce Microsoft 365 entreprise ?
 
 Microsoft 365 entreprise est un ensemble complet d’outils de productivité et de collaboration, tels que Outlook, Word, Excel et d’autres produits Office, qui sont toujours à jour. Vous pouvez protéger vos fichiers de travail sur tous vos appareils iOS, Android et Windows 10 avec une sécurité de niveau entreprise facile à gérer.
 
-Regardez cette vidéo pour obtenir une vue d’ensemble rapide Microsoft 365 pour les entreprises.<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Regardez : qu’est-ce Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -49,23 +49,23 @@ Microsoft 365 entreprise est destiné à 300 licences au plus. Si vous avez beso
   
 ## <a name="get-microsoft-365-for-business"></a>Obtenir Microsoft 365 entreprise
 
-- Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Partner Center Microsoft](get-microsoft-365-business.md).
+- Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Centre partenaires Microsoft.](get-microsoft-365-business.md)
     
-- Si vous n’avez pas de partenaire et que vous souhaitez Microsoft 365 entreprise, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
+- Si vous n’avez pas de partenaire et que vous souhaitez obtenir Microsoft 365 pour les entreprises, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
     
 ## <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 
  **Vue d’ensemble Microsoft 365 la suite pour les entreprises**
   
-Le diagramme suivant décrit la façon dont les administrateurs Microsoft 365 pour les entreprises. Il décrit également les étapes à suivre pour préparer Windows PC pour Microsoft 365 entreprise. Vous pouvez également ajouter de nouveaux appareils dans le centre d’administration Microsoft 365 avec [Windows AutoPilot](add-autopilot-devices-and-profile.md). Vous pouvez utiliser AutoPilot pour configurer et pré-configurer de nouveaux appareils afin qu’ils sont prêts à être utilisés de façon productive dès qu’un utilisateur se connecté avec ses informations d’identification Microsoft 365 entreprise.
+Le diagramme suivant décrit la façon dont les administrateurs Microsoft 365 pour les entreprises. Il décrit également les étapes à suivre pour préparer Windows PC pour Microsoft 365 entreprise. Vous pouvez également ajouter de nouveaux appareils dans le centre d’administration Microsoft 365 avec [Windows AutoPilot](add-autopilot-devices-and-profile.md). Vous pouvez utiliser AutoPilot pour configurer et pré-configurer de nouveaux appareils afin qu’ils sont prêts à être utilisés de façon productive dès qu’un utilisateur se connexion avec ses informations d’identification Microsoft 365 entreprise.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-Regardez cette vidéo pour obtenir une vue d’ensemble Microsoft 365 configuration de l’entreprise.<br><br>
+## <a name="watch-set-up-microsoft-365-business"></a>Watch: Set up Microsoft 365 Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1 : configurer Microsoft 365 entreprise (administrateur)
@@ -94,7 +94,7 @@ Suivez les étapes de la procédure De configurer des appareils mobiles pour [Mi
 
 Les administrateurs peuvent pré-sélectionner les paramètres des nouveaux PC Windows 10 à l’aide Windows [AutoPilot](add-autopilot-devices-and-profile.md). Les utilisateurs peuvent configurer leurs appareils Windows 10 existants ou nouveaux en suivant les étapes de cette rubrique : Configurer des PC Windows pour Microsoft 365 pour les utilisateurs [professionnels.](set-up-windows-devices.md) Pour les appareils existants, les utilisateurs peuvent **éventuellement** [déplacer des fichiers vers OneDrive Entreprise](move-files-to-onedrive.md). Ils peuvent également utiliser des outils tiers pour déplacer des fichiers associés Windows profil vers OneDrive.
   
-Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 pour les entreprises afin de protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de [l’étape](manage-windows-devices.md) Activer les appareils joints Windows 10 domaine à gérer par Microsoft 365 entreprise pour configurer cette procédure. Cette méthode est préférée et les appareils dans cet état sont appelés appareils joints **à Azure AD hybride.** 
+Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 pour les entreprises afin de protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de [l’étape](manage-windows-devices.md) Activer les appareils joints Windows 10 domaine à gérer par Microsoft 365 entreprise pour configurer cette procédure. Cette méthode est préférée et les appareils dans cet état sont appelés appareils joints **à Azure AD hybride.** 
   
 Si vous conservez un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes **ci-après** : Accéder aux ressources locales à partir d’un appareil joint à [Azure AD](access-resources.md)dans Microsoft 365 pour les entreprises.
   
@@ -107,10 +107,9 @@ Si vous conservez un Active Directory local qui contient certaines ressources lo
     
 - En tant qu Microsoft 365 pour les entreprises, vous avez accès à notre équipe de support client : Contacter le support technique pour les produits d’entreprise - Aide **[de l’administrateur](../business-video/get-help-support.md)**
     
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365 documentation et ressources pour les entreprises](./index.yml)
-  
-[Gérer Microsoft 365 entreprise](manage.md)[Migrer vers Microsoft 365 entreprise](migrate-to-microsoft-365-business.md)
-
-[Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml)
+[Microsoft 365 documentation et ressources pour les](./index.yml) entreprises (page de liens)\
+[Gérer Microsoft 365 entreprise](manage.md) (article)\
+[Migrer vers Microsoft 365 entreprise](migrate-to-microsoft-365-business.md) (article)\
+[Microsoft 365 vidéos de formation pour les entreprises](../business-video/index.yml) (page de liens)

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Découvrez comment personnaliser, organiser et gérer votre site d SharePoint d’équipe avec des bibliothèques de documents, des listes et des hubs.
-ms.openlocfilehash: aca2b2ff147fdb030540712133b27eba706b0985
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244514"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706345"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Personnaliser votre site d’équipe pour le stockage et le partage de fichiers
 
@@ -53,7 +53,7 @@ Améliorez la navigation sur votre site avec [personnaliser la navigation sur Sh
   
 Pour améliorer la découverte d’un site, ajoutez-le en tant que lien à l’SharePoint page d’accueil. Pour plus d’informations, [voir Ajouter des liens à la SharePoint page d’accueil.](/sharepoint/change-links-list-on-sharepoint-home-page)
   
-Pour ajouter une image à la page de démarrage d’un site d’équipe, voir Ajouter une image ou un fichier image à [SharePoint page.](https://support.microsoft.com/office/4a9b0e98-c89a-4a41-8adb-b7750dccca16)
+Pour ajouter une image à une page de démarrage de site d’équipe, voir Ajouter une image ou un fichier [image à SharePoint page.](https://support.microsoft.com/office/4a9b0e98-c89a-4a41-8adb-b7750dccca16)
   
 Pour ajouter des pages à votre site, voir [Ajouter une page à un site.](https://support.microsoft.com/office/b3d46deb-27a6-4b1e-87b8-df851e503dec)
   
@@ -63,7 +63,7 @@ Pour en savoir plus sur les paramètres du site d’équipe, consultez La [Share
 
 Un site d’équipe inclut une bibliothèque de documents que vous pouvez commencer à utiliser immédiatement pour le stockage de fichiers et la gestion des documents.
 
-Pour commencer le chargement, voir [Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
+Pour commencer le chargement, [voir Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
 Découvrez comment modifier, supprimer, consulter des fichiers, etc. Pour plus d’informations, voir [Travailler avec des fichiers dans une bibliothèque de documents.](https://support.microsoft.com/office/a9d89171-1673-4892-9dd2-1ca52037dea2)
   
@@ -103,15 +103,15 @@ Bien que le stockage de fichiers et la gestion des documents soit un point de d�
 
 Lorsque vous gérez votre site d’équipe, vous de devez peut-être ajouter ou supprimer des utilisateurs. Voici des informations pour vous aider à comprendre, ajouter et gérer les utilisateurs sur votre site d’équipe.
   
-Regardez une vidéo sur les groupes avec [Comprendre et gérer les groupes.](https://docs.microsoft.com/learn/m365/) 
+Regardez une vidéo sur les groupes avec [Comprendre et gérer les groupes.](/learn/m365/) 
   
 Pour ajouter des utilisateurs à un groupe Microsoft 365, voir Ajouter des utilisateurs et [attribuer des licences en même temps.](../add-users/add-users.md)
   
 Découvrez comment gérer les demandes d’accès avec [Configurer et gérer les demandes d’accès.](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)
   
-## <a name="here-are-more-articles-you-might-be-interested-in"></a>Voici d’autres articles qui peuvent vous intéresser
+## <a name="next-steps"></a>Étapes suivantes
 
-- **Configurer les applications Office sur vos tablettes et téléphones**. Vous devez le faire pour pouvoir modifier les fichiers stockés sur votre site d’équipe à partir de votre tablette ou téléphone. Si vous n'installez pas les applications Office sur votre tablette ou téléphone, vous pouvez consulter les fichiers de votre site d'équipe, mais pas les modifier. 
+Vous devez configurer des Office sur vos appareils afin de pouvoir modifier les fichiers stockés sur votre site d’équipe à partir de votre tablette ou téléphone. Si vous n'installez pas les applications Office sur votre tablette ou téléphone, vous pouvez consulter les fichiers de votre site d'équipe, mais pas les modifier. 
     
   - [Installer et configurer Office sur un appareil Android avec Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

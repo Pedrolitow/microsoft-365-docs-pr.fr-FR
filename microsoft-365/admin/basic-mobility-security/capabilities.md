@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base peuvent vous aider à sécuriser et à gérer les appareils mobiles.
-ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994972"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706177"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Fonctionnalités Mobility + Security de Base
 
-La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles tels que les iPhone, iPad, Android et Windows Phone utilisés par les utilisateurs sous licence Microsoft 365 de votre organisation. Vous pouvez créer des stratégies de gestion des appareils mobiles avec des paramètres qui peuvent vous aider à contrôler l'accès à la messagerie et aux documents Microsoft 365 de votre organisation pour les appareils mobiles et les applications mobiles pris en charge. En cas de perte ou de vol d’un appareil, vous pouvez le réinitialiser à distance pour supprimer les informations sensibles de l’organisation qu’il contient.
+La mobilité et la sécurité de base peuvent vous aider à sécuriser et gérer les appareils mobiles tels que les iPhone, iPad, Android et Windows Phone utilisés par les utilisateurs sous licence Microsoft 365 au sein de votre organisation. Vous pouvez créer des stratégies de gestion des appareils mobiles avec des paramètres qui permettent de contrôler l’accès au courrier électronique et aux documents Microsoft 365 de votre organisation pour les appareils mobiles et les applications mobiles pris en charge. En cas de perte ou de vol d’un appareil, vous pouvez le réinitialiser à distance pour supprimer les informations sensibles de l’organisation qu’il contient.
 
 ## <a name="supported-devices"></a>Appareils pris en charge
 
@@ -45,20 +45,20 @@ Vous pouvez utiliser la mobilité et la sécurité de base pour sécuriser et g�
 
 - Windows 10 Mobile<sup>2</sup>
 
-<sup>1</sup> Le contrôle d'accès pour les appareils Windows 8.1 RT est limité à Exchange ActiveSync.
+<sup>1</sup> Le contrôle d’Windows 8.1 les appareils RT est limité à Exchange ActiveSync.
 
-<sup>2</sup> Le contrôle d'accès pour Windows 10 nécessite un abonnement qui inclut Azure AD Premium et l'appareil doit être joint à Azure Active Directory.
+<sup>2</sup> Le contrôle d’Windows 10 nécessite un abonnement qui inclut azure AD Premium et l’appareil doit être joint à Azure Active Directory.
 
-<sup>3</sup> Après juin 2020, les versions d'Android ultérieures à 9 ne peuvent pas gérer les paramètres de mot de passe, sauf sur les appareils Samsung Knox.
+<sup>3</sup> Après juin 2020, les versions d’Android ultérieures à 9 ne peuvent pas gérer les paramètres de mot de passe, sauf sur les appareils Samsung Knox.
 
 >[!NOTE]
->Les appareils déjà inscrits avec des versions antérieures du système d'exploitation continuent de fonctionner même si les fonctionnalités peuvent changer sans préavis.
+>Les appareils déjà inscrits avec des versions antérieures du système d’exploitation continuent de fonctionner même si les fonctionnalités peuvent changer sans préavis.
 
-Si les membres de votre organisation utilisent des appareils mobiles qui ne sont pas pris en charge par la mobilité et la sécurité de base, vous pouvez bloquer l'accès de l'application Exchange ActiveSync à la messagerie Microsoft 365 pour ces appareils, afin de sécuriser les données de votre organisation. Pour obtenir la procédure de blocage Exchange ActiveSync, voir [Gérer les paramètres](manage-device-access-settings.md)d'accès aux appareils dans Basic Mobility and Security .
+Si les membres de votre organisation utilisent des appareils mobiles qui ne sont pas pris en charge par la mobilité et la sécurité de base, vous pouvez bloquer l’accès de l’application Exchange ActiveSync à la messagerie Microsoft 365 pour ces appareils, afin de sécuriser les données de votre organisation. Pour obtenir la procédure de blocage Exchange ActiveSync, voir [Gérer les paramètres](manage-device-access-settings.md)d’accès aux appareils dans Basic Mobility and Security .
 
-## <a name="access-control-for-microsoft-365-email-and-documents"></a>Contrôle d'accès pour la messagerie et les documents Microsoft 365
+## <a name="access-control-for-microsoft-365-email-and-documents"></a>Contrôle d’accès pour Microsoft 365 courrier électronique et les documents
 
-Les applications prise en charge pour les différents types d'appareils mobiles dans le tableau suivant invitent les utilisateurs à s'inscrire à Basic Mobility and Security lorsqu'une nouvelle stratégie de gestion des appareils mobiles s'applique à l'appareil d'un utilisateur et que l'utilisateur ne l'a pas précédemment inscrit. Si l'appareil d'un utilisateur n'est pas conforme à une stratégie, selon la façon dont vous la définissez, il se peut qu'un utilisateur ne puisse pas accéder aux ressources Microsoft 365 dans ces applications, ou qu'il puisse y avoir accès, mais Microsoft 365 signale une violation de stratégie.
+Les applications prise en charge pour les différents types d’appareils mobiles dans le tableau suivant invitent les utilisateurs à s’inscrire à Basic Mobility and Security lorsqu’une nouvelle stratégie de gestion des appareils mobiles s’applique à l’appareil d’un utilisateur et que l’utilisateur n’a pas précédemment inscrit l’appareil. Si l’appareil d’un utilisateur n’est pas conforme à une stratégie, selon la façon dont vous la définissez, il se peut qu’un utilisateur ne puisse pas accéder aux ressources Microsoft 365 dans ces applications, ou qu’il puisse y avoir accès mais Microsoft 365 signale une violation de stratégie.
 
 |**Produit**|**iOS 10.0 ou ultérieur**|**Android 5.0 ou version ultérieure**|
 |:-----|:-----|:-----|
@@ -66,22 +66,22 @@ Les applications prise en charge pour les différents types d'appareils mobiles 
 |**Office**   et  **OneDrive Entreprise** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**Sur les téléphones et les tablettes**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Sur les téléphones uniquement :** <br/> Office Mobile |
 
 >[!NOTE]
-- >La prise en charge d'iOS 10.0 et des versions ultérieures inclut les appareils iPhone et iPad.
-- >La gestion des appareils du système d'exploitation BlackBerry n'est pas prise en charge par la sécurité de base et la mobilité. Utilisez blackBerry Business Cloud Services (BBCS) de BlackBerry pour gérer les appareils blackBerry OS. Les appareils Blackberry exécutant le système d'exploitation Android sont pris en charge en tant qu'appareils Android standard
-- >Les utilisateurs ne seront pas invités à s'inscrire et ne seront pas bloqués ou signalés pour violation de stratégie s'ils utilisent le navigateur mobile pour accéder aux sites SharePoint Microsoft 365, aux documents dans Office Online ou à la messagerie électronique dans Outlook Web App.
+- >La prise en charge d’iOS 10.0 et des versions ultérieures inclut iPhone et iPad appareils.
+- >La gestion des appareils du système d’exploitation BlackBerry n’est pas prise en charge par la sécurité de base et la mobilité. Utilisez blackBerry Business Cloud Services (BBCS) de BlackBerry pour gérer les appareils blackBerry OS. Les appareils Blackberry exécutant le système d’exploitation Android sont pris en charge en tant qu’appareils Android standard
+- >Les utilisateurs ne seront pas invités à s’inscrire et ne seront pas bloqués ou signalés pour violation de stratégie s’ils utilisent le navigateur mobile pour accéder aux sites Microsoft 365 SharePoint, aux documents dans Office Online ou à la messagerie électronique dans Outlook Web App.
 
-Le diagramme suivant illustre ce qui se produit lorsqu'un utilisateur avec un nouvel appareil se connecté à une application qui prend en charge le contrôle d'accès avec Basic Mobility and Security. L'utilisateur ne peut pas accéder aux ressources Microsoft 365 dans l'application jusqu'à ce qu'il inscrive son appareil.
+Le diagramme suivant illustre ce qui se produit lorsqu’un utilisateur avec un nouvel appareil se connecté à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. L’utilisateur ne peut pas accéder Microsoft 365 ressources de l’application jusqu’à ce qu’il inscrive son appareil.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Contrôle d'accès de base à la mobilité et à la sécurité":::
+:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Contrôle d’accès de base à la mobilité et à la sécurité":::
 
 > [!NOTE]
-> Les stratégies et règles d'accès créées dans Basic Mobility and Security pour Microsoft 365 Business Standard remplaceront Exchange ActiveSync stratégies de boîte aux lettres d'appareil mobile et les règles d'accès aux appareils créées dans le Centre d'administration Exchange. Une fois qu'un appareil est inscrit à Basic Mobility and Security pour Microsoft 365 Business Standard, toute stratégie de boîte aux lettres d'appareil mobile ou règle d'accès aux appareils Exchange ActiveSync appliquée à l'appareil est ignorée. Pour en savoir plus sur Exchange ActiveSync, [voir Exchange ActiveSync dans Exchange Online.](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
+> Les stratégies et règles d’accès créées dans Basic Mobility and Security pour Microsoft 365 Business Standard remplaceront les stratégies de boîte aux lettres d’appareil mobile et les règles d’accès aux appareils Exchange ActiveSync créées dans le Centre d’administration Exchange. Une fois qu’un appareil est inscrit à Basic Mobility and Security pour Microsoft 365 Business Standard, toute stratégie de boîte aux lettres d’appareil mobile ou règle d’accès aux appareils Exchange ActiveSync appliquée à l’appareil est ignorée. Pour en savoir plus sur Exchange ActiveSync, voir [Exchange ActiveSync dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
 
 ## <a name="policy-settings-for-mobile-devices"></a>Paramètres de stratégie pour les appareils mobiles
 
-Si vous créez une stratégie pour bloquer l'accès avec certains paramètres désactivés, les utilisateurs ne peuvent pas accéder aux ressources Microsoft 365 lors de l'utilisation d'une application prise en charge répertoriée dans le contrôle Access pour la messagerie et les [documents Microsoft 365.](capabilities.md) 
+Si vous créez une stratégie pour bloquer l’accès avec certains paramètres désactivés, les utilisateurs ne peuvent pas accéder aux ressources Microsoft 365 lors de l’utilisation d’une application prise en charge répertoriée dans le contrôle Access pour la messagerie et les [documents Microsoft 365.](capabilities.md) 
 
-Les paramètres qui peuvent empêcher les utilisateurs d'accéder aux ressources Microsoft 365 sont disponibles dans les sections suivantes :
+Les paramètres qui peuvent empêcher les utilisateurs d’accéder Microsoft 365 ressources sont dans les sections suivantes :
 
 - Sécurité
 
@@ -91,11 +91,11 @@ Les paramètres qui peuvent empêcher les utilisateurs d'accéder aux ressources
 
 - Profil de messagerie géré  
 
-Par exemple, le diagramme suivant montre ce qui se produit lorsqu’un utilisateur disposant d’un appareil inscrit ne respecte pas un paramètre de sécurité dans une stratégie de gestion des appareils mobiles qui s’applique à son appareil. L'utilisateur se signe à une application qui prend en charge le contrôle d'accès avec Basic Mobility and Security. Ils ne peuvent pas accéder aux ressources Microsoft 365 dans l'application tant que leur appareil n'est pas conforme au paramètre de sécurité.
+Par exemple, le diagramme suivant montre ce qui se produit lorsqu’un utilisateur disposant d’un appareil inscrit ne respecte pas un paramètre de sécurité dans une stratégie de gestion des appareils mobiles qui s’applique à son appareil. L’utilisateur se signe à une application qui prend en charge le contrôle d’accès avec Basic Mobility and Security. Ils ne peuvent pas accéder aux Microsoft 365 de l’application tant que leur appareil n’est pas conforme au paramètre de sécurité.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Message de conformité de sécurité et de mobilité de base":::
 
-Les sections suivantes listent les paramètres de stratégie que vous pouvez utiliser pour sécuriser et gérer les appareils mobiles qui se connectent aux ressources de votre organisation Microsoft 365.
+Les sections suivantes listent les paramètres de stratégie que vous pouvez utiliser pour sécuriser et gérer les appareils mobiles qui se connectent à Microsoft 365 ressources de votre organisation.
 
 ## <a name="security-settings"></a>Paramètres de sécurité
 
@@ -126,7 +126,7 @@ Les sections suivantes listent les paramètres de stratégie que vous pouvez uti
 
 ## <a name="managed-email-profile-option"></a>Option de profil de messagerie géré 
 
-L'option suivante peut empêcher les utilisateurs d'accéder à leur messagerie Microsoft 365 s'ils utilisent un profil de messagerie créé manuellement. Les utilisateurs d’appareils iOS doivent supprimer leur profil de messagerie créé manuellement pour pouvoir accéder à leur messagerie. Une fois le profil supprimé, un nouveau profil est créé automatiquement sur l'appareil. Pour obtenir des instructions sur la façon dont les utilisateurs finaux peuvent obtenir la conformité, voir Un compte de [messagerie existant a été trouvé.](/intune-user-help/existing-company-email-account-found)
+L’option suivante peut empêcher les utilisateurs d’accéder Microsoft 365 courrier électronique s’ils utilisent un profil de messagerie créé manuellement. Les utilisateurs d’appareils iOS doivent supprimer leur profil de messagerie créé manuellement pour pouvoir accéder à leur messagerie. Une fois le profil supprimé, un nouveau profil est créé automatiquement sur l’appareil. Pour obtenir des instructions sur la façon dont les utilisateurs finaux peuvent obtenir la conformité, voir Un compte de [messagerie existant a été trouvé.](/intune-user-help/existing-company-email-account-found)
 
 |**Nom du paramètre**|**iOS 7.1 et les ultérieures**|**Android 5 et version ultérieure**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -167,7 +167,7 @@ L'option suivante peut empêcher les utilisateurs d'accéder à leur messagerie 
 
 ## <a name="additional-settings"></a>Paramètres supplémentaires
 
-Vous pouvez définir les paramètres de stratégie supplémentaires suivants à l'aide des cmdlets PowerShell du Centre de sécurité & conformité. Pour plus d'informations, [voir Centre de sécurité & conformité PowerShell.](/powershell/exchange/scc-powershell)
+Vous pouvez définir les paramètres de stratégie supplémentaires suivants à l’aide des cmdlets PowerShell du Centre de sécurité & conformité. Pour plus d’informations, [voir Centre de sécurité & conformité PowerShell.](/powershell/exchange/scc-powershell)
 
 |**Nom du paramètre**|**iOS 7.1 et les ultérieures**|**Android 5 et version ultérieure**|
 |:-----|:-----|:-----|
@@ -187,9 +187,9 @@ Vous pouvez définir les paramètres de stratégie supplémentaires suivants à 
 
 ## <a name="settings-supported-by-windows"></a>Paramètres pris en charge par Windows
 
-Vous pouvez gérer les appareils Windows 10 en les inscrivant en tant qu'appareils mobiles. Une fois qu'une stratégie applicable est déployée, les utilisateurs ayant des appareils Windows 10 doivent s'inscrire à Basic Mobility and Security la première fois qu'ils utilisent l'application de messagerie intégrée pour accéder à leur messagerie Microsoft 365 (nécessite un abonnement Azure AD Premium).
+Vous pouvez gérer les Windows 10 en les inscrivant en tant qu’appareils mobiles. Une fois qu’une stratégie applicable est déployée, les utilisateurs ayant des appareils Windows 10 doivent s’inscrire à Basic Mobility and Security la première fois qu’ils utilisent l’application de messagerie intégrée pour accéder à leur messagerie Microsoft 365 (nécessite un abonnement Azure AD Premium).
 
-Les paramètres suivants sont pris en charge pour les appareils Windows 10 inscrits en tant qu'appareils mobiles. Ces paramètres n'empêchera pas les utilisateurs d'accéder aux ressources Microsoft 365.
+Les paramètres suivants sont pris en charge pour Windows 10 qui sont inscrits en tant qu’appareils mobiles. Ces paramètres n’empêchera pas les utilisateurs d’accéder Microsoft 365 ressources.
 
 ### <a name="security-settings"></a>Paramètres de sécurité
 
@@ -206,15 +206,15 @@ Les paramètres suivants sont pris en charge pour les appareils Windows 10 inscr
 - Conserver l’historique des mots de passe et empêcher leur réutilisation
 
 >[!NOTE]
->Les paramètres suivants qui contrôlent les mots de passe contrôlent uniquement les comptes Windows locaux. Les comptes Windows fournis par le biais de la participation à un domaine ou d'Azure Active Directory ne sont pas affectés par ces paramètres.
+>Les paramètres suivants régulant les mots de passe contrôlent uniquement les comptes Windows locaux. Windows comptes fournis par le biais de l’adhésion à un domaine ou Azure Active Directory ne sont pas affectés par ces paramètres.
 
 ### <a name="system-settings"></a>Paramètres système
 
-Bloquer l'envoi de données de diagnostic à partir de l'appareil.
+Bloquer l’envoi de données de diagnostic à partir de l’appareil.
 
 ### <a name="additional-settings"></a>Paramètres supplémentaires
 
-Vous pouvez définir ces paramètres de stratégie supplémentaires à l'aide des cmdlets PowerShell :
+Vous pouvez définir ces paramètres de stratégie supplémentaires à l’aide des cmdlets PowerShell :
 
 - AllowConvenienceLogon
 
@@ -234,12 +234,11 @@ Vous pouvez définir ces paramètres de stratégie supplémentaires à l'aide de
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Réinitialiser un appareil mobile à distance
 
-Si un appareil est perdu ou volé, vous pouvez supprimer des données organisationnelles sensibles et empêcher l'accès aux ressources de votre organisation Microsoft 365 en faisant une effacement à partir du Centre de sécurité & conformité > Gestion des appareils de protection contre la perte de  >  données. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
+Si un appareil est perdu ou volé, vous pouvez supprimer des données organisationnelles sensibles et empêcher l’accès aux ressources de votre organisation Microsoft 365 en faisant une effacement à partir du Centre de sécurité & conformité > Gestion des appareils de protection contre la perte de  >  données. Vous pouvez effectuer une réinitialisation sélective de l’appareil afin de supprimer uniquement les données de l’organisation, ou effectuer une réinitialisation complète afin de supprimer toutes les informations qu’il contient et restaurer ses paramètres d’origine.
 
-Pour plus d'informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
+Pour plus d’informations, voir [Effacer un appareil mobile dans Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-content"></a>Contenu associé
 
-[Vue d'ensemble de la mobilité et de la sécurité de base pour Microsoft 365](overview.md)
-
-[Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md)
+[Vue d’ensemble de basic Mobility and Security for Microsoft 365](overview.md) (article)\
+[Créer des stratégies de sécurité des appareils dans Basic Mobility and Security](create-device-security-policies.md) (article)

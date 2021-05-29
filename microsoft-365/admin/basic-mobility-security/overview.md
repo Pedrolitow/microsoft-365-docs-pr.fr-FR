@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour définir des stratégies de sécurité des appareils et des règles d’accès.
-ms.openlocfilehash: e74a5df6d10f8f3fb7b420e428380af97ba75597
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 37be420a4b9499da3d1290b8b6a898b9fcb09c5b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906251"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706309"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
@@ -33,19 +33,19 @@ Vous pouvez gérer et sécuriser les appareils mobiles lorsqu’ils sont connect
 
 ## <a name="what-types-of-devices-can-you-manage"></a>Quels types d’appareils pouvez-vous gérer ?
 
-Vous pouvez utiliser Basic Mobility and Security pour gérer de nombreux types d’appareils mobiles tels que Windows Phone, Android, iPhone et iPad. Pour gérer les appareils mobiles utilisés par les membres de votre organisation, chaque personne doit avoir une licence Microsoft 365 applicable et son appareil doit être inscrit à Basic Mobility and Security.
+Vous pouvez utiliser la mobilité et la sécurité de base pour gérer de nombreux types d’appareils mobiles tels que Windows Phone, Android, iPhone et iPad. Pour gérer les appareils mobiles utilisés par les membres de votre organisation, chaque personne doit avoir une licence Microsoft 365 applicable et son appareil doit être inscrit à Basic Mobility and Security.
 
 Pour voir ce que Basic Mobility and Security prend en charge pour chaque type d’appareil, voir [Fonctionnalités de basic Mobility and Security](capabilities.md).
 
 ## <a name="setup-steps-for-basic-mobility-and-security"></a>Étapes de configuration de Basic Mobility and Security
 
-Un administrateur global Microsoft 365 doit effectuer les étapes suivantes pour activer et configurer Basic Mobility and Security. Pour obtenir la procédure détaillée, suivez les instructions de [la procédure Set up Basic Mobility and Security](set-up.md). 
+Un administrateur Microsoft 365 global doit effectuer les étapes suivantes pour activer et configurer Basic Mobility and Security. Pour obtenir la procédure détaillée, suivez les instructions de [la procédure Set up Basic Mobility and Security](set-up.md). 
 
 Voici un résumé des étapes :
 
 **Étape 1 :** Activez Basic Mobility and Security en suivant les étapes de la procédure  [Set up Basic Mobility and Security](set-up.md).
 
-**Étape 2 :** Configurer la mobilité et la sécurité de base en créant, par exemple, un certificat APNs pour gérer les appareils iOS et en ajoutant un enregistrement DNS (Domain Name System) pour votre domaine afin de prendre en charge les téléphones Windows.
+**Étape 2 :** Configurer La mobilité et la sécurité de base en créant, par exemple, un certificat APNs pour gérer les appareils iOS et en ajoutant un enregistrement DNS (Domain Name System) pour votre domaine afin de prendre en charge Windows téléphones.
 
 **Étape 3 :** Créez des stratégies d’appareil et appliquez-les à des groupes d’utilisateurs. Lorsque vous faites cela, vos utilisateurs obtiennent un message d’inscription sur leur appareil, et une fois l’inscription terminée, leurs appareils sont limités par les stratégies que vous avez définies pour eux. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). 
 
@@ -53,18 +53,15 @@ Voici un résumé des étapes :
 
 ## <a name="device-management-tasks"></a>Tâches de gestion des appareils
 
-Une fois que vous avez installé basic Mobility and Security et que vos utilisateurs ont inscrit leurs appareils, vous pouvez gérer les appareils, bloquer l’accès ou effacer un appareil, si nécessaire. Pour en savoir plus sur certaines tâches courantes de gestion des appareils, notamment sur l’endroit où effectuer les tâches, voir Gérer les appareils inscrits à Gestion des appareils mobiles [pour Microsoft 365.](manage-enrolled-devices.md)
+Une fois que vous avez installé Basic Mobility and Security et que vos utilisateurs ont inscrit leurs appareils, vous pouvez gérer les appareils, bloquer l’accès ou effacer un appareil, si nécessaire. Pour en savoir plus sur certaines tâches courantes de gestion des [appareils,](manage-enrolled-devices.md)notamment sur l’endroit où effectuer les tâches, voir Gérer les appareils inscrits dans Gestion des appareils mobiles pour Microsoft 365 .
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>Autres façons de gérer les appareils et les applications
 
 Si vous avez simplement besoin de la gestion des applications mobiles (MAM), par exemple pour les personnes mettant à jour des projets de travail sur leurs propres appareils, Intune propose une autre option en plus de l’inscription et de la gestion des appareils. Un abonnement Intune vous permet de configurer des stratégies MAM à l’aide du portail Azure, même si les appareils des personnes ne sont pas inscrits dans Intune. Pour plus d’informations, voir [vue d’ensemble des stratégies de protection des applications.](/mem/intune/apps/app-protection-policy)
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-content"></a>Contenu associé
 
-[Configurer Mobility + Security](set-up.md)
-
-[Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)
-
-[Gérer les appareils inscrits à La Gestion des appareils mobiles pour Microsoft 365](manage-enrolled-devices.md)
-
-[Obtenir des détails sur les appareils gérés par Basic Mobility and Security](get-details-about-managed-devices.md)
+[Configurer la mobilité et la sécurité de](set-up.md) base (article)\
+[Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md) (article)\
+[Gérer les appareils inscrits à Gestion des](manage-enrolled-devices.md) appareils mobiles pour Microsoft 365 (article)\
+[Obtenir des détails sur les appareils gérés par Basic Mobility and Security](get-details-about-managed-devices.md) (article)

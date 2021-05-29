@@ -1,5 +1,5 @@
 ---
-title: S’inscrire à l’abonnement Microsoft 365 Business Premium
+title: S’inscrire à Microsoft 365 Business Premium abonnement
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment vous inscrire à Microsoft 365 Business Premium.
-ms.openlocfilehash: dcc6fd42b2aab073e027135cb5e939867b2bdc9d
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment vous inscrire à Microsoft 365 Business Premium (précédemment appelé Microsoft 365 Business).
+ms.openlocfilehash: 998c1ad6a7ed30adb0d6beb9ebb7762dec8a8485
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578614"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706485"
 ---
-# <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>S’inscrire à l’abonnement Microsoft 365 Business Premium
+# <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>S’inscrire à Microsoft 365 Business Premium abonnement
+
+## <a name="watch-sign-up-for-microsoft-365-business-premium"></a>Regardez : S’inscrire à Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 
@@ -45,4 +47,4 @@ Suivez ces étapes pour vous inscrire à Microsoft 365 Business Premium (précé
 8. Entrez le nombre d’utilisateurs, choisissez un plan de facturation, puis sélectionnez  **Suivant**.
 9.  Entrez l'&#39;de votre entreprise,  **puis** Suivant .
 10. Entrez les informations de votre carte de crédit, puis **commandez.** Après quelques instants, votre compte sera créé.
-11. À ce stade, vous pouvez sélectionner  **Continuer** à configurer le compte ou vous pouvez vous inscrire au Centre d’administration Microsoft 365 et terminer l’installation ultérieurement.
+11. À ce stade, vous pouvez sélectionner **Continuer** à configurer le compte ou vous pouvez vous Microsoft 365 centre d’administration et terminer l’installation ultérieurement.

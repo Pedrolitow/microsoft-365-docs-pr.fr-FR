@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment partager facilement vos fichiers métiers en externe.
-ms.openlocfilehash: 469e4b16277b048a539767f6fc9fd54d2ea2e6cf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment utiliser un lien Tout le monde dans Microsoft 365 pour partager facilement vos fichiers métiers en externe.
+ms.openlocfilehash: cbe6a12fd8d0c2b2ec16db32178f9c2559a08c22
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578626"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706497"
 ---
 # <a name="easily-share-files-externally"></a>Partager aisément des fichiers en externe
+
+## <a name="watch-share-files-with-an-anyone-link"></a>Regarder : Partager des fichiers avec un lien Tout le monde
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 
@@ -35,8 +37,8 @@ Pour partager des fichiers avec vos clients et travailler sur des documents ense
 
 ## <a name="try-it"></a>Essayez !
 
-1. À partir de votre site SharePoint, sélectionnez le dossier que vous souhaitez partager, choisissez **Partager,** puis cliquez sur le bouton paramètres du lien.
-1. Dans la **fenêtre Paramètres du lien,** assurez-vous **que Tout le** monde est sélectionné. Si cette option est grisée, elle doit être désactivée dans le Centre d’administration SharePoint.
+1. Sur votre site SharePoint, sélectionnez le dossier que vous souhaitez partager, choisissez **Partager,** puis cliquez sur le bouton paramètres du lien.
+1. Dans la **fenêtre Lien Paramètres,** assurez-vous **que Tout le** monde est sélectionné. Si cette option est grisée, elle doit être SharePoint centre d’administration.
 1. Vous pouvez éventuellement cocher la case Autoriser **la modification** et entrer une date d’expiration pour le lien.
 1. Choose **Apply**.
 1. Dans la **fenêtre Lien d’envoi,** entrez l’adresse e-mail de votre client, tapez un message, puis choisissez **Envoyer.**

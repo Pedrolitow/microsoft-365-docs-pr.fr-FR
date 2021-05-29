@@ -19,24 +19,26 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: En savoir plus sur Microsoft Bookings.
-ms.openlocfilehash: 826cb84acace03aaf18bcb9d3a58fa5a518d71ee
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez Microsoft Bookings, une application mobile et en ligne pour les petites entreprises qui fournit des rendez-vous à vos clients.
+ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578746"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706225"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Vue d’ensemble de Microsoft Bookings
 
+## <a name="watch-overview-of-microsoft-bookings"></a>Regarder : Vue d’ensemble de Microsoft Bookings
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft Bookings est une application mobile et en ligne pour les petites entreprises qui fournissent des services aux clients sur la base d’un rendez-vous. Exemples d’entreprises : les salons de course, les bureaux de soins, les spas, les cabinets d’avocats, les fournisseurs de services financiers, les consultants et les auto-boutiques.
+Microsoft Bookings est une application mobile et en ligne pour les petites entreprises qui fournissent des services aux clients sur la base d’un rendez-vous. Exemples d’entreprises : les salons de santé, les bureaux de soins, les spas, les cabinets d’avocats, les fournisseurs de services financiers, les consultants et les auto-boutiques.
 
 ## <a name="get-started-with-bookings"></a>Mise en place de Bookings
 
-1. Pour commencer, connectez-vous à Microsoft 365 et sélectionnez **Bookings** dans le lanceur d’applications.
-1. Sélectionnez **Obtenir maintenant sur** la page **Réservations.**
+1. Pour commencer, connectez-vous Microsoft 365 et sélectionnez **Bookings** dans le lanceur d’applications.
+1. Sélectionnez **Obtenir maintenant** sur la page **Réservations.**
 1. Ajoutez vos informations professionnelles et vous êtes prêt à commencer à utiliser Bookings.
 
     Pour gérer vos réservations sur votre appareil mobile, téléchargez Bookings à partir de votre app store.

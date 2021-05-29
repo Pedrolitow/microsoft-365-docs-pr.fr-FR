@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698951"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706617"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -48,7 +48,7 @@ Consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsof
 
 ### <a name="data-connectors"></a>Connecteurs de données
 
-- [Configurer un connecteur pour archiver Cisco Jabber sur des données Oracle]/microsoft-365/compliance/archive-ciscojahoreonoracle-data)
+- [Configurer un connecteur pour archiver des données Cisco Jabber sur Oracle](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
 - [Configurer un connecteur pour archiver des données Cisco Jabber sur PostgreSQL](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
@@ -59,14 +59,15 @@ Consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsof
 
 ### <a name="retention-policies-and-retention-label-policies"></a>Stratégies de rétention et stratégies d’étiquette de rétention
 
-- L’emplacement Microsoft 365 Groups prend désormais en charge l’application des paramètres de rétention uniquement aux boîtes aux lettres Microsoft 365 ou uniquement aux sites SharePoint connectés à l’aide de la cmdlet [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) avec le paramètre Applications.
+- L’emplacement Microsoft 365 Groups prend désormais en charge l’application des paramètres de rétention uniquement aux boîtes aux lettres Microsoft 365 ou uniquement aux sites SharePoint connectés à l’aide de la cmdlet [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) avec le paramètre *Applications.*
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 Outlook et mises à jour :
-- Précédemment pris en charge uniquement par le client d’étiquetage unifié AIP, l’étiquetage intégré prend désormais en charge différents paramètres pour l’étiquette par défaut et [l’étiquetage obligatoire](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- Encrypt-Only est désormais pris en charge par macOS, iOS et Android
-- Gérer les étiquettes de niveau de sensibilité dans la rubrique des applications [Office](/microsoft-365/compliance/sensitivity-labels-office-apps) mise à jour avec les nouvelles entrées dans le tableau des fonctionnalités [de Outlook](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) pour différents [paramètres](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) pour l’étiquette par défaut et l’étiquetage obligatoire pour la nouvelle version de fonctionnalité Outlook pour l’étiquetage intégré afin de prendre en charge une étiquette par défaut différente et l’exemption de l’étiquetage obligatoire. En outre, l’option Encrypt-Only est désormais prise en charge par macOS/iOS/Android, et tous les marquages dynamiques avec des variables sont désormais pris en charge sur tous Outlook clients. L’étiquetage obligatoire est désormais en cours de déploiement sur les plateformes restantes.
+- [Différents paramètres pour l’étiquette par défaut](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) et l’étiquetage obligatoire sont désormais pris en charge pour l’étiquetage intégré. Auparavant, ces paramètres étaient pris en charge uniquement par le client d’étiquetage unifié AIP.
+- [Encrypt-Only est](encryption-sensitivity-labels.md#let-users-assign-permissions) désormais pris en charge par macOS, iOS et Android.
+- [L’étiquetage obligatoire](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) est en cours de déploiement sur les plateformes restantes.
+- [Les marquages dynamiques avec toutes les variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) sont pris en charge dans tous Outlook clients.
 
 ## <a name="march-2021"></a>9 mars 2021
 
@@ -247,7 +248,7 @@ Les solutions de conformité Microsoft 365 suivantes [](/microsoftteams/platform
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>À la une : nouveau contenu pour les solutions à risque internes
 
-L’Microsoft 365 de contenu de conformité est au travail pour créer des documents sur la « solution de contenu » afin de promouvoir la façon dont les fonctionnalités de conformité peuvent être utilisées ensemble pour vous aider à atteindre vos objectifs de conformité.
+L Microsoft 365 de contenu de conformité est au travail pour créer des documents sur la « solution de contenu » afin de promouvoir la façon dont les fonctionnalités de conformité peuvent être utilisées ensemble pour vous aider à atteindre vos objectifs de conformité.
 
 Tout d’abord, le contenu qui relie nos solutions à risque internes : conformité des communications, gestion des risques internes, obstacles à l’information et gestion des accès privilégiés. Voici un aperçu de ce que vous trouverez :
 
@@ -262,7 +263,7 @@ D’autres documents sur les solutions de contenu seront bientôt disponible !
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Amélioration du flux de travail et des fonctionnalités pour l’ajout de [dépositaires](add-custodians-to-case.md) et [de sources](non-custodial-data-sources.md) de données non privatives à Advanced eDiscovery cas.
+Amélioration du flux de travail et des fonctionnalités pour l’ajout de dépositaires et [de sources](non-custodial-data-sources.md) de données non privatives à Advanced eDiscovery cas. [](add-custodians-to-case.md)
 
 ### <a name="data-connectors"></a>Connecteurs de données
 

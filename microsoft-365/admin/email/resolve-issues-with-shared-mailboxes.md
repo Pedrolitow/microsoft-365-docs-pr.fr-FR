@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Essayez ces solutions si vous avez des problèmes avec les boîtes aux lettres partagées.
-ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Vous pouvez obtenir des erreurs lorsque vous définissez des boîtes aux lettres partagées. Essayez ces solutions si vous avez des problèmes avec les boîtes aux lettres partagées.
+ms.openlocfilehash: 89cdfbe29ab035b1eb6c3a0183629eef59d67477
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926485"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706129"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Résoudre les problèmes liés aux boîtes aux lettres partagées
 
@@ -36,7 +36,7 @@ Si vous voyez des messages d’erreur lors de la création ou de l’utilisation
 ## <a name="error-when-creating-shared-mailboxes"></a>Erreur lors de la création de boîtes aux lettres partagées
 <a name="bkmk_Fix"> </a>
 
-Si vous voyez le message d’erreur, l’adresse proxy « smtp:<nom de boîte aux lettres partagée » est déjà utilisée par les adresses proxy ou **\> LegacyExchangeDN de « \<name> ». Veuillez choisir une autre adresse proxy,** ce qui signifie que vous essayez de donner à la boîte aux lettres partagée un nom déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Vous pouvez procéder de deux manières :
+Si vous voyez le message d’erreur, l’adresse proxy « smtp:<nom de boîte aux lettres partagée » est déjà utilisée par les adresses proxy ou **\> LegacyExchangeDN de « \<name> ». Veuillez choisir une autre adresse proxy,** ce qui signifie que vous essayez de donner à la boîte aux lettres partagée un nom déjà utilisé. Par exemple, imaginons que vous vouliez donner les noms info@domaine1 et info@domaine2 à des boîtes aux lettres partagées. Il existe deux méthodes pour y parvenir :
 
   - Utiliser Windows PowerShell. Consultez ce billet de blog pour obtenir des instructions : Créer des boîtes aux lettres partagées [avec le même alias sur différents domaines](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
@@ -48,19 +48,15 @@ Si vous avez créé une boîte aux lettres partagée, puis que vous essayez d’
 
 **Ce message n’a pas pu être envoyé. Vous n’êtes pas autorisé à envoyer le message au nom de l’utilisateur spécifié.**
 
-Ce message s’affiche lorsque Microsoft 365 rencontre un problème de latence de réplication. Il devrait disparaître dans une heure ou deux, lorsque les informations sur votre nouvelle boîte aux lettres partagée (ou utilisateur ajouté) sont répliquées dans tous nos centres de données. Patientez une heure, puis tentez à nouveau d’envoyer un message.
+Ce message s’affiche Microsoft 365 rencontre un problème de latence de réplication. Il devrait disparaître dans une heure ou deux, lorsque les informations sur votre nouvelle boîte aux lettres partagée (ou utilisateur ajouté) sont répliquées dans tous nos centres de données. Patientez une heure, puis tentez à nouveau d’envoyer un message.
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md)
-
-[Créer une boîte aux lettres partagée](create-a-shared-mailbox.md)
-
-[Configurer une boîte aux lettres partagée](configure-a-shared-mailbox.md)
-
-[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md)
-
-[Supprimer une licence à partir d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md)
+[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) (article)\
+[Créer une boîte aux lettres partagée](create-a-shared-mailbox.md) (article)\
+[Configurer une boîte aux lettres partagée](configure-a-shared-mailbox.md) (article)\
+[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Supprimer une licence d’une boîte aux lettres partagée](remove-license-from-shared-mailbox.md) (article)
 
 
     

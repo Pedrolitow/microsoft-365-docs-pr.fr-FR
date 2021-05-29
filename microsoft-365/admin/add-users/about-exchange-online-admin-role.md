@@ -1,5 +1,5 @@
 ---
-title: À propos du rôle d’administrateur Exchange Online
+title: À propos Exchange Online rôle d’administrateur principal
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,23 +20,21 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: 'Les administrateurs Exchange Online gèrent la messagerie et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur. '
-ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+description: Exchange administrateurs en ligne gèrent le courrier électronique et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
+ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197648"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706213"
 ---
-# <a name="about-the-exchange-online-admin-role"></a>À propos du rôle d’administrateur Exchange Online
+# <a name="about-the-exchange-online-admin-role"></a>À propos Exchange Online rôle d’administrateur principal
 
-Pour vous aider à administrer Microsoft [](assign-admin-roles.md) 365, vous pouvez attribuer aux utilisateurs des autorisations pour gérer le courrier électronique et les boîtes aux lettres de votre organisation à partir du Centre d’administration [Exchange.](/exchange/exchange-admin-center) Pour ce faire, attribuez-leur le rôle d’administrateur Exchange.
+Pour vous aider à administrer les [](assign-admin-roles.md) Microsoft 365, vous pouvez attribuer aux utilisateurs des autorisations pour gérer le courrier électronique et les boîtes aux lettres de votre organisation à partir du Centre [d’administration Exchange.](/exchange/exchange-admin-center) Pour ce faire, attribuez-leur le rôle d’administrateur Exchange.
   
- **Conseil**: lorsque vous attribuez une personne au rôle d’administrateur Exchange, attribuez-lui également le rôle d’administrateur de service. De cette façon, ils peuvent voir des informations importantes dans le Centre d’administration Microsoft 365, telles que l’état d’état du service Exchange Online, ainsi que les notifications de modification et de publication.
-  
-## <a name="before-you-begin"></a>Avant de commencer
+ **Conseil**: lorsque vous attribuez une personne au rôle Exchange’administration, attribuez-la également au rôle d’administrateur de service. Ainsi, ils peuvent voir des informations importantes dans le Centre d’administration Microsoft 365, telles que l’état d’Exchange Online service, ainsi que les notifications de modification et de publication.
 
-Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lorsqu’ils sont affectés au rôle d’administrateur Exchange :
+Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lorsqu’ils sont affectés Exchange rôle d’administrateur principal :
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -48,15 +46,15 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
 
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour qu’un groupe de personnes puisse surveiller et envoyer des messages électroniques à partir d’une adresse de messagerie commune.
 
-- Protection contre le courrier indésirable et filtres [anti-programme](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) malveillant pour l’organisation.
+- Protection contre le courrier indésirable et filtres [anti-programme](../../security/office-365-security/anti-spam-protection.md) malveillant pour l’organisation.
 
 - Gestion des groupes Microsoft 365
 
-## <a name="exchange-online-role-groups"></a>Groupes de rôles Exchange Online
+## <a name="exchange-online-role-groups"></a>Exchange Online groupes de rôles
 
-Si vous avez une grande organisation, l’administrateur Exchange peut affecter des utilisateurs à des groupes de rôles Exchange. Lorsqu’un administrateur ajoute un utilisateur à un groupe de rôles, l’utilisateur obtient les autorisations pour effectuer certaines fonctions professionnelles que seuls les membres de ce groupe peuvent faire.
+Si vous avez une grande organisation, l’administrateur Exchange peut affecter des utilisateurs à Exchange groupes de rôles. Lorsqu’un administrateur ajoute un utilisateur à un groupe de rôles, l’utilisateur obtient les autorisations pour effectuer certaines fonctions professionnelles que seuls les membres de ce groupe peuvent faire.
   
- Par exemple, l’administrateur Exchange peut affecter une personne au groupe de rôles Gestion de la découverte afin qu’elle puisse effectuer des recherches de données dans les boîtes aux lettres qui répondent à certains critères. Pour plus d’informations, [voir Autorisations dans Exchange Online et](/exchange/permissions-exo/permissions-exo) Gérer les groupes de [rôles.](/exchange/manage-role-groups-exchange-2013-help)
+ Par exemple, l’administrateur Exchange peut affecter une personne au groupe de rôles Gestion de la découverte afin qu’elle puisse effectuer des recherches de données dans les boîtes aux lettres qui répondent à certains critères. Pour plus d’informations, [voir Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo) et gérer les groupes de [rôles.](/exchange/manage-role-groups-exchange-2013-help)
   
 ## <a name="learn-about-other-admin-roles"></a>En savoir plus sur les autres rôles d’administrateur
 
@@ -64,6 +62,6 @@ Si vous avez une grande organisation, l’administrateur Exchange peut affecter 
 
 - [À propos du rôle d'administrateur SharePoint Online](/sharepoint/sharepoint-admin-role)
 
-- [À propos du rôle d’administrateur Skype Entreprise](/skypeforbusiness/skype-for-business-online)
+- [À propos du rôle Skype Entreprise administrateur principal](/skypeforbusiness/skype-for-business-online)
 
-- [Utiliser le rôle d’administrateur Microsoft Teams](/MicrosoftTeams/using-admin-roles)
+- [Utiliser Microsoft Teams rôle d’administrateur principal](/MicrosoftTeams/using-admin-roles)

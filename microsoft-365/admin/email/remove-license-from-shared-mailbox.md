@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 'Supprimez la licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur. '
-ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 'Supprimez une licence d’une boîte aux lettres partagée pour l’affecter à un autre utilisateur ou renvoyez la licence afin que vous ne payiez pas pour elle. '
+ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537582"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706285"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Supprimer une licence d’une boîte aux lettres partagée
 
@@ -66,22 +66,18 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
   
 2. Sélectionnez la boîte aux lettres partagée.
 
-3. Un des **onglets Licences et** applications, développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
+3. Un des **onglets Licences et applications,** développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer les modifications**.
 
-5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
+5. Lorsque vous revenirz à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée est **sans permis.**
 
 6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/buy-licenses.md)
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md)
-
-[Créer une boîte aux lettres partagée](create-a-shared-mailbox.md)
-
-[Configurer une boîte aux lettres partagée](configure-a-shared-mailbox.md)
-
-[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md)
-
-[Résoudre les problèmes liés aux boîtes aux lettres partagées](resolve-issues-with-shared-mailboxes.md)
+[À propos des boîtes aux lettres partagées](about-shared-mailboxes.md) (article)\
+[Créer une boîte aux lettres partagée](create-a-shared-mailbox.md) (article)\
+[Configurer une boîte aux lettres partagée](configure-a-shared-mailbox.md) (article)\
+[Convertir une boîte aux lettres utilisateur en boîte aux lettres partagée](convert-user-mailbox-to-shared-mailbox.md) (article)\
+[Résoudre les problèmes liés aux boîtes aux lettres partagées](resolve-issues-with-shared-mailboxes.md) (article)
