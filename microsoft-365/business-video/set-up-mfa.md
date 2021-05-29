@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment configurer l’authentification multifacteur sur votre téléphone.
-ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment configurer l’authentification multifacteur, parfois appelée authentification à deux facteurs, sur votre téléphone.
+ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578662"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705653"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>Configurer l’authentification multifacteur sur votre téléphone
+
+## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>Regarder : Configurer l’authentification multifacteur avec un appareil mobile
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
