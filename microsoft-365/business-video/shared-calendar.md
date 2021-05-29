@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment créer un calendrier partagé.
-ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: cbc84523b52b7a38e25a35670abf6758a73d0a70
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464356"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705641"
 ---
 # <a name="create-a-shared-calendar"></a>Créer un calendrier partagé
+
+## <a name="watch-create-a-shared-calendar"></a>Regarder : Créer un calendrier partagé
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 
@@ -41,10 +43,8 @@ Un calendrier partagé peut vous aider à voir rapidement quand des personnes so
 1. Vous pouvez désormais afficher votre calendrier et les calendriers des personnes que vous avez ajoutées.
 1. Pour vérifier la disponibilité de votre groupe, choisissez **l’affichage** Jour.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Gérer votre calendrier et vos contacts dans Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (article)
-
-[Collaboration par courrier](../admin/email/email-collaboration.md) électronique (article)
-
+[Gérer votre calendrier et vos contacts dans Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (article)\
+[Collaboration par courrier](../admin/email/email-collaboration.md) électronique (article)\
 [Vue d’ensemble du centre Microsoft 365'administration centrale](admin-center-overview.md) (article)

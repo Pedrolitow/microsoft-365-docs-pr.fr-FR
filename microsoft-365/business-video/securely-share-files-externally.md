@@ -19,27 +19,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment partager en toute sécurité vos fichiers métiers en externe.
-ms.openlocfilehash: 317267b4051b4e250cf53f2fbc375b9277c7d000
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment partager en toute sécurité vos fichiers d’entreprise avec des personnes extérieures à votre organisation avec un lien sécurisé.
+ms.openlocfilehash: 17875dc403c96caac55a5487cf5649d6778ec160
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578674"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705581"
 ---
 # <a name="securely-share-files-externally"></a>Partager en toute sécurité des fichiers en externe
 
+## <a name="watch-securely-share-files-outside-your-organization"></a>Regarder : Partager des fichiers en toute sécurité à l’extérieur de votre organisation
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 
-Dans Microsoft 365 pour les entreprises, il est facile de partager des fichiers avec des personnes de votre organisation, mais parfois, vous devrez également partager des fichiers avec des personnes extérieures à votre organisation. Pour partager des fichiers en toute sécurité avec vos clients, vous pouvez envoyer un lien sécurisé.
+Dans Microsoft 365 entreprise, il est facile de partager des fichiers avec des personnes de votre organisation, mais parfois, vous devrez également partager des fichiers avec des personnes extérieures à votre organisation. Pour partager des fichiers en toute sécurité avec vos clients, vous pouvez envoyer un lien sécurisé.
 
 ## <a name="try-it"></a>Essayez !
 
 1. En haut de la bibliothèque documents sur votre site SharePoint, cliquez sur **Nouveau,** puis sélectionnez **Dossier.**
 1. Nommez le dossier, puis cliquez sur **Créer.**
-1. Téléchargez les fichiers que vous souhaitez partager dans la nouvelle bibliothèque ou choisissez **Nouveau** pour créer des documents directement dans la bibliothèque.
+1. Télécharger les fichiers que vous souhaitez partager avec la nouvelle bibliothèque, ou choisissez **Nouveau** pour créer des documents directement dans la bibliothèque.
 1. Sélectionnez votre nouveau dossier dans la bibliothèque documents, puis cliquez sur le **bouton** Partager.
 1. Dans la **fenêtre Lien d’envoi,** cliquez sur la liste en haut, choisissez Des personnes spécifiques, sélectionnez Autoriser la **modification,** puis sélectionnez **Appliquer**. 
 1. Dans la **fenêtre Lien d’envoi,** entrez l’adresse e-mail de votre client, tapez un message, puis choisissez **Envoyer.**
 
-    Votre client reçoit un courrier électronique avec un code de vérification qu’il doit envoyer à lui-même pour accéder à votre dossier. S’il ne trouve pas le courrier électronique, il doit vérifier son dossier De courrier indésirable.
+    Votre client reçoit un courrier électronique avec un code de vérification qu’il doit envoyer à lui-même pour accéder à votre dossier. S’il ne trouve pas l’e-mail, il doit vérifier son dossier de courrier indésirable.
