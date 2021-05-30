@@ -66,11 +66,11 @@ Les boîtes aux lettres partagées ne nécessitent généralement pas de licence
   
 2. Sélectionnez la boîte aux lettres partagée.
 
-3. Un des **onglets Licences et applications,** développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
+3. Un des **onglets Licences et** applications, développez **Licences** et décochez la case pour la licence que vous souhaitez supprimer.
 
 4. Sélectionnez **Enregistrer les modifications**.
 
-5. Lorsque vous revenirz à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée est **sans permis.**
+5. Lorsque vous revenirez à la page **Utilisateurs** actifs, l’état de la boîte aux lettres partagée sera **sans permis.**
 
 6. Vous payez toujours pour la licence. Pour arrêter de payer, [supprimez la licence de votre abonnement.](../../commerce/licenses/buy-licenses.md)
 

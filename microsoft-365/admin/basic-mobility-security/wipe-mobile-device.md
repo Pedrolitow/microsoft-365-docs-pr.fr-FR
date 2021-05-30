@@ -73,7 +73,7 @@ L’appareil mobile ne figure plus dans la liste des appareils gérés.
 
 Effacez un appareil pour les raisons suivantes :
 
-- Les appareils mobiles tels que les smartphones et les tablettes sont toujours plus complets. Cela signifie qu’il est plus facile pour vos utilisateurs de stocker des informations d’entreprise sensibles, telles que des informations d’identification personnelle ou des communications confidentielles, et d’y accéder en libre-service. Si l’un de ces appareils mobiles est perdu ou volé, la wiping de l’appareil peut aider à empêcher que les informations de votre organisation ne se terminent entre de mauvaises mains.
+- Les appareils mobiles tels que les smartphones et les tablettes sont toujours plus complets. Cela signifie qu’il est plus facile pour vos utilisateurs de stocker des informations d’entreprise sensibles, telles que des informations d’identification personnelle ou des communications confidentielles, et d’y accéder en cours de route. Si l’un de ces appareils mobiles est perdu ou volé, la wiping de l’appareil peut aider à empêcher que les informations de votre organisation ne se terminent entre de mauvaises mains.
 - Lorsqu’un utilisateur quitte l’organisation avec un appareil personnel inscrit à Basic Mobility and Security, vous pouvez empêcher les informations organisationnelles de passer avec cet utilisateur en réinitialisation d’usine.
 - Si votre organisation fournit des appareils mobiles aux utilisateurs, vous devrez peut-être réaffecter des appareils de temps à autre. La réinitialisation d’usine sur un appareil avant de l’affecter à un nouvel utilisateur permet de s’assurer que toutes les informations sensibles du propriétaire précédent sont supprimées.
 

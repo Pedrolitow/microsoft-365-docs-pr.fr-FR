@@ -20,19 +20,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment mettre à jour votre mode de paiement pour Microsoft 365 pour les entreprises.
-ms.openlocfilehash: 3b659da6745c92d777629b2912114ee214582623
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment mettre à jour votre mode de paiement pour Microsoft 365 entreprise.
+ms.openlocfilehash: b0ed8541068fe02e0bd1f005a5a9c7ee8f50ae1b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580353"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705537"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a>Mettre à jour le mode de paiement yor pour votre abonnement
+# <a name="update-the-payment-method-for-your-subscription"></a>Mettre à jour le mode de paiement de votre abonnement
+
+## <a name="watch-update-your-payment-method"></a>Regarder : Mettre à jour votre mode de paiement
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-Vous pouvez facilement mettre à jour le mode de paiement de votre abonnement Microsoft 365 Business. Vous pouvez modifier des détails tels que la carte bancaire utilisée, le nom ou l’adresse.
+Vous pouvez facilement mettre à jour le mode de paiement de Microsoft 365 Business abonnement. Vous pouvez modifier des détails tels que la carte bancaire utilisée, le nom ou l’adresse.
 
 ## <a name="try-it"></a>Essayez !
 
