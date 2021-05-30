@@ -34,7 +34,7 @@ ms.locfileid: "52706473"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
-Si un pirate informatique accède à la boîte aux lettres d’un utilisateur, il peut automatiquement envoyer son courrier électronique à une adresse externe et voler des informations confidentielles. Vous pouvez arrêter cela en créant une règle de flux de messagerie.
+Si un pirate informatique accède à la boîte aux lettres d’un utilisateur, il peut automatiquement le faire accéder à une adresse extérieure et voler des informations confidentielles. Vous pouvez arrêter cela en créant une règle de flux de messagerie.
 
 ## <a name="try-it"></a>Essayez !
 

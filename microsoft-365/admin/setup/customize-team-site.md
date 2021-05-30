@@ -57,13 +57,13 @@ Pour ajouter une image à une page de démarrage de site d’équipe, voir Ajout
   
 Pour ajouter des pages à votre site, voir [Ajouter une page à un site.](https://support.microsoft.com/office/b3d46deb-27a6-4b1e-87b8-df851e503dec)
   
-Pour en savoir plus sur les paramètres du site d’équipe, consultez La [SharePoint de votre site d’équipe.](https://support.microsoft.com/office/8376034D-D0C7-446E-9178-6AB51C58DF42)
+Pour en savoir plus sur les paramètres du site d’équipe, [voir Gérer SharePoint de site d’équipe.](https://support.microsoft.com/office/8376034D-D0C7-446E-9178-6AB51C58DF42)
   
 ## <a name="work-with-document-libraries"></a>Travailler avec des bibliothèques de documents
 
 Un site d’équipe inclut une bibliothèque de documents que vous pouvez commencer à utiliser immédiatement pour le stockage de fichiers et la gestion des documents.
 
-Pour commencer le chargement, [voir Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
+Pour commencer le chargement, voir [Télécharger dossier ou fichiers dans une bibliothèque de documents](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
 Découvrez comment modifier, supprimer, consulter des fichiers, etc. Pour plus d’informations, voir [Travailler avec des fichiers dans une bibliothèque de documents.](https://support.microsoft.com/office/a9d89171-1673-4892-9dd2-1ca52037dea2)
   
@@ -75,7 +75,7 @@ SharePoint comprend de nombreux modèles de listes que vous pouvez ajouter à vo
   
 Découvrez comment créer [une liste dans SharePoint](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online).
   
-Pour plus d’informations sur l’extension de vos listes avec d’autres colonnes, voir Créer une colonne dans [SharePoint liste ou bibliothèque.](https://support.microsoft.com/office/2b0361ae-1bd3-41a3-8329-269e5f81cfa2)
+Pour plus d’informations sur le développement de vos listes avec d’autres colonnes, voir Créer une colonne dans [SharePoint liste ou bibliothèque.](https://support.microsoft.com/office/2b0361ae-1bd3-41a3-8329-269e5f81cfa2)
   
 Si vous stockez un grand nombre de données dans une liste, voir Gérer les grandes [listes](https://support.microsoft.com/office/B8588DAE-9387-48C2-9248-C24122F07C59)et bibliothèques dans SharePoint .
   
@@ -93,7 +93,7 @@ Pour découvrir comment ajouter des sites à un site hub, voir Associer un site 
   
 ## <a name="sharing-files-with-the-team"></a>Partage de fichiers avec l’équipe
 
-Bien que le stockage de fichiers et la gestion des documents soit un point de départ, le partage avec votre équipe et les clients externes est également important. Les articles suivants vous aideront à gérer les utilisateurs et à partager vos données :
+Bien que le stockage de fichiers et la gestion des documents constitue un début, le partage avec votre équipe et les clients externes est également important. Les articles suivants vous aideront à gérer les utilisateurs et à partager vos données :
   
 - Pour le partage de fichiers avec votre équipe, voir Partager SharePoint fichiers ou [dossiers dans Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   

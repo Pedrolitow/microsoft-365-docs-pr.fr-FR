@@ -76,11 +76,11 @@ Attribuez le rôle d’administrateur de service aux utilisateurs qui doivent cr
 
 ### <a name="sharepoint-admin"></a>Administrateur SharePoint
 
-Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automatiquement créé et l’administrateur général est définie comme administrateur principal de la collection de sites. Attribuez le SharePoint administrateur principal aux utilisateurs qui souhaitent accéder au centre d SharePoint’administration. Les utilisateurs qui SharePoint rôle d’administrateur principal peuvent créer et gérer des collections de sites, désigner des administrateurs de collections de sites et gérer des profils utilisateur. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de service via le support Microsoft. [En savoir plus](/sharepoint/sharepoint-admin-role)
+Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automatiquement créé et l’administrateur général est définie comme administrateur principal de la collection de sites. Attribuez le SharePoint administrateur principal aux utilisateurs qui souhaitent accéder au centre d SharePoint’administration. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent créer et gérer des collections de sites, désigner des administrateurs de collections de sites et gérer des profils utilisateur. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de service via le support Microsoft. [En savoir plus](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Administrateur du service Teams
 
-Attribuez le Teams administrateur principal aux utilisateurs qui souhaitent accéder au centre d’administration Teams & Skype et les gérer. Les utilisateurs ayant Teams rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de service via le support Microsoft. [En savoir plus](/MicrosoftTeams/using-admin-roles)
+Attribuez le Teams administrateur principal aux utilisateurs qui vous souhaitez accéder au centre d’administration Teams & Skype et les gérer. Les utilisateurs ayant Teams rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de service via le support Microsoft. [En savoir plus](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Administrateur d’utilisateurs
 

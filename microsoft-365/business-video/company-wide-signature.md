@@ -34,7 +34,7 @@ ms.locfileid: "52706261"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
-Une signature électronique à l’échelle de l’entreprise apparaît sur chaque courrier électronique envoyé par des personnes de votre organisation. Vous pouvez l’utiliser pour afficher des détails importants, tels que les informations de contact de votre entreprise ou une clause d’exclusion de responsabilité légale. 
+Une signature électronique à l’échelle de l’entreprise apparaît sur chaque message électronique envoyé par des personnes de votre organisation. Vous pouvez l’utiliser pour afficher des détails importants, tels que les informations de contact de votre entreprise ou une clause d’exclusion de responsabilité légale. 
 
 ## <a name="try-it"></a>Essayez !
 

@@ -40,7 +40,7 @@ Lorsqu’une nouvelle personne rejoint votre entreprise, vous devez l’ajouter 
 
 1. Dans le centre Microsoft 365'administration, sélectionnez **Gestion** des utilisateurs et Ajouter un utilisateur.
 1. Entrez le prénom  et le nom du nouvel **utilisateur.** Le **nom complet** est rempli automatiquement, mais vous pouvez le modifier.
-1. Entrez un nom **d’utilisateur**. Il s’agit de l’adresse e-mail du nouvel utilisateur. Si vous avez plusieurs domaines, sélectionnez le domaine correct dans la liste de listes.
+1. Entrez un nom **d’utilisateur**. Il s’agit de l’adresse e-mail du nouvel utilisateur. Si vous avez plusieurs domaines, sélectionnez le domaine correct dans la liste liste.
 1. Pour créer automatiquement un mot de passe, sélectionnez **Générer automatiquement le mot de passe.**
 1. Pour obliger l’utilisateur à modifier son mot de passe, cochez la case Exiger de cet utilisateur qu’il modifie son mot de passe lors de sa **première** inscription.
 1. Si vous souhaitez que les détails du compte sont envoyés par courrier électronique, cochez la case Envoyer le mot de passe par courrier **électronique** à la fin de l’envoi. Votre nom de courrier sera ajouté automatiquement, mais vous pouvez ajouter l’adresse de messagerie de remplacement du nouvel utilisateur afin qu’il reçoie également les détails du compte. Sélectionnez **Suivant**.

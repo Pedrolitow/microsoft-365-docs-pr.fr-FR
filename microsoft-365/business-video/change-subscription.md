@@ -45,13 +45,13 @@ ms.locfileid: "52706273"
 1. Dans le Microsoft 365 d’administration, dans le volet de navigation de gauche, sélectionnez **Facturation,** puis **Achetez des services.**
 1. Choisissez l’abonnement que vous souhaitez ajouter, puis sélectionnez **Acheter.**
 1. Choisissez la façon dont vous souhaitez payer et le nombre de licences dont vous avez besoin, puis sélectionnez **Cocher maintenant.**
-1. Passer en revue votre commande, puis choisir **Suivant**.
+1. Examinez votre commande, puis choisissez **Suivant.**
 1. Confirmez votre total, puis sélectionnez **Ordre des commandes.**
 
 ### <a name="change-the-license-assigned-to-a-user"></a>Modifier la licence attribuée à un utilisateur
 
 1. Dans le Microsoft 365 d’administration, dans le volet de navigation de gauche, sélectionnez Utilisateurs, puis **Utilisateurs actifs.**
-1. Sélectionnez le nom de l’utilisateur, puis les **licences et les applications.**
+1. Sélectionnez le nom de l’utilisateur, puis sélectionnez **Licences et applications.**
 1. Sous **Licences,** vous verrez votre nouvel abonnement. Cochez la case en regard du nouvel abonnement, puis cochez la case en regard de l’ancien abonnement.
 1. Sélectionnez **Enregistrer les modifications**. La licence du nouvel abonnement est maintenant attribuée à cet utilisateur.
 

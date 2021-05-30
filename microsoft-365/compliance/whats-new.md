@@ -34,13 +34,13 @@ Que vous ajoutiez de nouvelles solutions au Centre de conformité [Microsoft 365
 
 > [!TIP]
 > Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du Centre d’administration Microsoft 365 de gestion](/office365/admin/whats-new-in-preview)<br>[Nouveautés du Centre d’administration SharePoint de gestion](/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
-Visitez également la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
+Consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
 
 ## <a name="april-2021"></a>Avril 2021
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- [Limites dans Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Les organisations peuvent désormais exporter jusqu’à 5 millions d’éléments ou 500 Mo, selon la taille la plus petite, dans une seule exportation d’éléments d’un groupe de révision.
+- [Limites dans Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Les organisations peuvent désormais exporter jusqu’à 5 millions d’éléments ou 500 Mo, selon la taille la plus petite, dans une seule exportation d’éléments à partir d’un ensemble de révision.
 
 ### <a name="data-classification"></a>Classification des données
 
@@ -75,7 +75,7 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- **Advanced eDiscovery collections de collections prend** désormais en charge les nouveaux [outils de collections et flux de travail.](/microsoft-365/compliance/collections-overview) D’autres nouvelles rubriques incluent [la création d’un brouillon de collection,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)la validation d’une collection provisoire dans un jeu à [réviser](/microsoft-365/compliance/commit-draft-collection)et les statistiques et les rapports [de collection.](/microsoft-365/compliance/collection-statistics-reports)
+- **Advanced eDiscovery collections de collections prend** désormais en charge les nouveaux [outils de collections et flux de travail.](/microsoft-365/compliance/collections-overview) D’autres nouvelles rubriques incluent [la création d’un brouillon de collection,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)la validation d’une collection provisoire dans un jeu à [réviser](/microsoft-365/compliance/commit-draft-collection)et les statistiques et rapports [de collection.](/microsoft-365/compliance/collection-statistics-reports)
 - **Exporter des documents** d’un jeu à réviser vers [un stockage Azure](/microsoft-365/compliance/download-export-jobs) client.
 - **Module de codage prédictif pour Advanced eDiscovery**. Tout d’abord, regardez la nouvelle fonctionnalité de [codage](/microsoft-365/compliance/predictive-coding-overview) prédictif qui remplace le module Pertinence retiré.
 
@@ -95,7 +95,7 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 ### <a name="encryption"></a>Chiffrement
 
 - **Clé client pour Microsoft 365**. [Vue d’ensemble de la](/microsoft-365/compliance/customer-key-tenant-level) clé client Microsoft 365 au niveau du client (prévisualisation publique).
-- **Chiffrement à double clé**. En savoir plus sur [l’activation de la prise](/microsoft-365/compliance/double-key-encryption) en charge des documents étiquetés et protégés dans SharePoint et OneDrive Entreprise.
+- **Chiffrement à double clé**. En savoir plus [sur l’activation de la prise](/microsoft-365/compliance/double-key-encryption) en charge des documents étiquetés et protégés dans SharePoint et OneDrive Entreprise.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
@@ -124,12 +124,12 @@ Les rubriques suivantes ont été mises à jour ou ajoutées pour prendre en cha
 - [Agir sur les cas de risques internes](/microsoft-365/compliance/insider-risk-management-cases)
 - [Passer en revue des activités avec le journal d’audit des risques Insider](/microsoft-365/compliance/insider-risk-management-audit-log)
 - [Examiner les données à l’aide de l’explorateur de contenu des risques internes](/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [Gérer le flux de travail avec le Tableau de bord des utilisateurs](/microsoft-365/compliance/insider-risk-management-users)
+- [Gérer le flux de travail avec le tableau de bord utilisateurs](/microsoft-365/compliance/insider-risk-management-users)
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
 - **Améliorations apportées au plan de fichiers.** Une mise à [jour du plan](file-plan-manager.md) de fichiers supprime ou améliore les restrictions de longueur précédentes pour l’importation.
-- **Supprimer des étiquettes de rétention pour les enregistrements**. Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme enregistrements.
+- **Supprimer des étiquettes de rétention pour les enregistrements**. Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme des enregistrements.
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 
@@ -183,7 +183,7 @@ Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
 - [Déchiffrement dans les outils Microsoft 365 eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption)
 - [Requêtes par mots clés et conditions de recherche](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Retrait du module de pertinence dans Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
+- [Retrait du module Pertinence dans Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
 - [Utiliser un script pour ajouter des utilisateurs à une attente dans un cas core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>Chiffrement
@@ -237,7 +237,7 @@ Les solutions de conformité Microsoft 365 suivantes [](/microsoftteams/platform
 
 ### <a name="information-governance-and-records-management"></a>Gouvernance des informations et gestion des enregistrements
 
-[Nouvelle évaluation de l’utilisation](retention-regulatory-requirements.md#new-zealand-public-records-act) de la gouvernance des informations et de la gestion des enregistrements pour répondre aux obligations de conformité de la Loi sur les enregistrements publics en Nouvelle-Zélande.
+[Nouvelle évaluation à prendre](retention-regulatory-requirements.md#new-zealand-public-records-act) en compte dans le cadre de l’utilisation de la gouvernance des informations et de la gestion des enregistrements pour répondre aux obligations de conformité de la Loi sur les enregistrements publics en Nouvelle-Zélande.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -248,7 +248,7 @@ Les solutions de conformité Microsoft 365 suivantes [](/microsoftteams/platform
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>À la une : nouveau contenu pour les solutions à risque internes
 
-L’Microsoft 365 de contenu de conformité est au travail pour créer des documents sur la « solution de contenu » afin de promouvoir la façon dont les fonctionnalités de conformité peuvent être utilisées ensemble pour vous aider à atteindre vos objectifs de conformité.
+L Microsoft 365 de contenu de conformité est au travail pour créer des documents sur la « solution de contenu » afin de promouvoir la façon dont les fonctionnalités de conformité peuvent être utilisées ensemble pour vous aider à atteindre vos objectifs de conformité.
 
 Tout d’abord, le contenu qui relie nos solutions à risque internes : conformité des communications, gestion des risques internes, obstacles à l’information et gestion des accès privilégiés. Voici un aperçu de ce que vous trouverez :
 
@@ -263,7 +263,7 @@ D’autres documents sur les solutions de contenu seront bientôt disponible !
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Amélioration du flux de travail et des fonctionnalités pour l’ajout de [dépositaires](add-custodians-to-case.md) et [de sources](non-custodial-data-sources.md) de données non privatives à Advanced eDiscovery cas.
+Amélioration du flux de travail et des fonctionnalités pour l’ajout de dépositaires et [de sources](non-custodial-data-sources.md) de données non privatives à Advanced eDiscovery cas. [](add-custodians-to-case.md)
 
 ### <a name="data-connectors"></a>Connecteurs de données
 

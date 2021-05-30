@@ -1,5 +1,5 @@
 ---
-title: Prendre en Microsoft 365 entreprise
+title: Mise en place Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -35,7 +35,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52706455"
 ---
-# <a name="get-started-with-microsoft-365-for-business"></a>Prendre en Microsoft 365 entreprise
+# <a name="get-started-with-microsoft-365-for-business"></a>Mise en place Microsoft 365 entreprise
 
 ## <a name="what-is-microsoft-365-for-business"></a>Qu’est-ce Microsoft 365 entreprise ?
 
@@ -49,7 +49,7 @@ Microsoft 365 entreprise est destiné à 300 licences au plus. Si vous avez beso
   
 ## <a name="get-microsoft-365-for-business"></a>Obtenir Microsoft 365 entreprise
 
-- Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Centre partenaires Microsoft.](get-microsoft-365-business.md)
+- Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Partner Center Microsoft](get-microsoft-365-business.md).
     
 - Si vous n’avez pas de partenaire et que vous souhaitez obtenir Microsoft 365 pour les entreprises, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
     
@@ -57,7 +57,7 @@ Microsoft 365 entreprise est destiné à 300 licences au plus. Si vous avez beso
 
  **Vue d’ensemble Microsoft 365 la suite pour les entreprises**
   
-Le diagramme suivant décrit la façon dont les administrateurs Microsoft 365 pour les entreprises. Il décrit également les étapes à suivre pour préparer Windows PC pour Microsoft 365 entreprise. Vous pouvez également ajouter de nouveaux appareils dans le centre d’administration Microsoft 365 avec [Windows AutoPilot](add-autopilot-devices-and-profile.md). Vous pouvez utiliser AutoPilot pour configurer et pré-configurer de nouveaux appareils afin qu’ils sont prêts à être utilisés de façon productive dès qu’un utilisateur se connexion avec ses informations d’identification Microsoft 365 entreprise.
+Le diagramme suivant décrit la façon dont les administrateurs Microsoft 365 pour les entreprises. Il décrit également les étapes à suivre pour préparer Windows PC pour Microsoft 365 entreprise. Vous pouvez également ajouter de nouveaux appareils dans le centre Microsoft 365'administration avec [Windows AutoPilot](add-autopilot-devices-and-profile.md). Vous pouvez utiliser AutoPilot pour configurer et pré-configurer de nouveaux appareils afin qu’ils sont prêts à être utilisés de façon productive dès qu’un utilisateur se connexion avec ses informations d’identification Microsoft 365 entreprise.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 

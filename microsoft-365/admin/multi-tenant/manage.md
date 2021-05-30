@@ -46,7 +46,7 @@ La gestion multi-locataires offre une forme unifiée de gestion qui permet aux a
 
 ## <a name="view-all-tenants-page"></a>Page Afficher tous les locataires
 
-1. Dans le Microsoft 365 d’administration, dans le navigation de gauche, **sélectionnez Tous les locataires.**
+1. Dans le Microsoft 365 d’administration, dans le navigation gauche, **sélectionnez Tous les locataires.**
 - Dans la page **Tous les locataires,** vous pouvez
   - Évaluer l’état du service
   - Passer en revue l’utilisation des licences
@@ -57,7 +57,7 @@ Si vous avez marqué un client comme favori, il est automatiquement développé 
 
 ## <a name="view-service-health-for-all-accounts"></a>Afficher l’état du service pour tous les comptes
 
-L’affichage d’état du service vous indique si des incidents ou des avis affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
+L’affichage d’état du service vous indique si des incidents ou des conseils affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
 
 1. Dans le Microsoft 365 d’administration, dans l’affichage multi-clients, sélectionnez **État du service.**
 2. Dans l’affichage agrégé de la **page** État du service, vous pouvez également voir le nombre total d’incidents, le nombre total d’avis affectant l’un des clients gérés et le nombre de services avec des incidents actifs. Vous pouvez également voir combien de vos locataires sont affectés par les incidents et les avis.
@@ -67,7 +67,7 @@ L’affichage d’état du service vous indique si des incidents ou des avis aff
     - Vous pouvez passer en revue les problèmes sous **tous les services** ou tous les **onglets** problèmes.
 
     :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Page d’état du service multi-client.":::
-1. Sélectionnez un incident sous l’onglet Tous les **services** ou Tous **les** problèmes pour obtenir plus d’informations sur tout incident sous l’onglet **Vue d’ensemble.** Sélectionnez **l’onglet Locataires affectés** pour obtenir la liste des locataires concernés.
+1. Sélectionnez un incident sous  l’onglet Tous les **services** ou Tous les problèmes pour obtenir plus d’informations sur tout incident sous l’onglet **Vue d’ensemble.** Sélectionnez **l’onglet Locataires affectés** pour obtenir la liste des locataires concernés.
 
     :::image type="content" source="../../media/tenantsaffected.png" alt-text="Liste des clients affectés par un problème d’état du service.":::
 
@@ -78,4 +78,4 @@ La liste des locataires concernés peut être exportée au format CSV afin que l
 Vous pouvez revenir au centre d Microsoft 365'administration pour n’importe quel client à partir de la page **Tous les** locataires.
 
 1. Dans la page **Tous les locataires,** sélectionnez le nom du client pour lequel vous souhaitez afficher le Centre d’administration.
-2. Vous êtes dirigé vers le centre d’administration pour ce client.
+2. Vous êtes dirigé vers le Centre d’administration pour ce client.

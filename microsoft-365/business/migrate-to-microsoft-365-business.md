@@ -33,7 +33,7 @@ ms.locfileid: "52705487"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Mettre à niveau vers Microsoft 365 Business Premium à partir de Microsoft 365 Business Standard
 
-Si vous avez un abonnement [Microsoft 365](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)entreprise, par exemple, Microsoft 365 Business Standard, vous pouvez facilement mettre à niveau Microsoft 365 Business Premium. Mettre à niveau Microsoft 365 Business Premium si vous souhaitez ajouter :
+Si vous avez un abonnement [Microsoft 365](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)entreprise, par exemple, Microsoft 365 Business Standard, vous pouvez facilement mettre à niveau Microsoft 365 Business Premium. Mise à niveau vers Microsoft 365 Business Premium si vous souhaitez ajouter :
 
 - Windows 10 Professionnel (sur les PC qui s’exécutent Windows 8 ou une ultérieure)
 
@@ -63,14 +63,14 @@ Nous avons ajouté une comparaison côte à côte de ces deux plans à la descri
 3. Sur la page suivante, sélectionnez **Mettre à niveau.**
 
   > [!NOTE]
-  > Si vous voyez un message qui indique que la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans **Azure Active Directory,** vous pouvez l’ignorer en toute sécurité, sauf si vous avez une organisation très importante. Les organisations qui ont sélectionné cette option savent qu’elles utilisent des licences basées sur des groupes.
+  > Si un message vous indique que la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans **Azure Active Directory,** vous pouvez l’ignorer en toute sécurité, sauf si vous avez une organisation très importante. Les organisations qui ont sélectionné cette option savent qu’elles utilisent des licences basées sur des groupes.
 
 4. Ensuite, vous pouvez afficher la liste des plans vers qui vous pouvez mettre à niveau. Dans ce cas, recherchez l’Microsoft 365 Business Premium plan. Vous pouvez faire défiler vers le bas si vous souhaitez voir toutes les applications et services inclus dans ce plan. Sous **Microsoft 365 Business Premium,** **sélectionnez Mettre à** niveau pour ajouter Microsoft 365 Business Premium à votre panier.
 
 5. Dans le panier :
 
     1. Nous inclurons automatiquement des licences pour tous vos utilisateurs actuels. Si vous avez besoin de plus ou moins de licences, vous devez acheter et [attribuer ces licences individuellement.](../admin/manage/assign-licenses-to-users.md)  
-    2. Vous pouvez ajuster la façon dont vous souhaitez payer : mensuelle ou mensuelle. Sélectionnez le menu déroulant pour effectuer votre choix.
+    2. Vous pouvez ajuster la façon dont vous souhaitez payer : mensuelle ou annuel. Sélectionnez le menu déroulant pour effectuer votre choix.
 
 6. Sélectionnez **Go to Checkout** où vous verrez un résumé de votre achat, y compris le mode de paiement de ce compte. Vous pouvez également ajouter un code promotionnel ici si vous en avez un.
 
@@ -88,9 +88,9 @@ Maintenant que Microsoft 365 Business Premium licences sont attribuées, vous de
   
 1. Dans le centre d’administration, dans le volet de navigation, allez à **Stratégies des** \> **appareils.**
 
-2. Dans la page **Stratégies d’appareil,** **sélectionnez Ajouter.**
+2. Dans la page **Stratégies d’appareil,** sélectionnez **Ajouter.**
 
-3. Dans le **volet Ajouter** une stratégie, donnez un nom à la stratégie (par exemple, Protéger les fichiers de travail), puis choisissez un **type** de stratégie dans la liste liste.
+3. Dans le **volet Ajouter** une stratégie, nommez la stratégie (par exemple, Protéger les fichiers de travail), puis choisissez un **type** de stratégie dans la liste liste liste.
 
     Vous pouvez configurer des stratégies d’application pour la protection des fichiers sur les appareils Android et iPhone, ainsi que des Windows 10, et vous pouvez configurer des stratégies de configuration d’appareil pour les appareils Windows 10 entreprise. Pour plus d’informations, voir les liens suivants :
 
@@ -102,7 +102,7 @@ Maintenant que Microsoft 365 Business Premium licences sont attribuées, vous de
 
 4. Une fois les stratégies définies, vous et vos employés pouvez configurer des appareils :
 
-    - Si vos Windows n’utilisent pas déjà la mise à jour Windows Pro Creator, vous devez les mettre à niveau [vers Windows Pro Creators Update.](upgrade-to-windows-pro-creators-update.md)
+    - Si vos Windows n’utilisent pas déjà la mise à jour Windows Pro Creator, vous devez les mettre à niveau [vers Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
 
     - Voir [Configurer des Windows pour les Microsoft 365 Business Premium utilisateurs pour](set-up-windows-devices.md) obtenir les étapes à suivre Windows appareils.
 
