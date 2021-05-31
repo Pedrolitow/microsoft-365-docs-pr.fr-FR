@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531041"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694400"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -163,6 +163,20 @@ Toutes les applications ne prennent pas en charge les contextes d'authentificati
     - Android : pas encore pris en charge
 
 Restrictions connues pour cette version préliminaire :
+
+- Cette fonctionnalité est en cours de déploiement pour certains clients. Si la stratégie d'accès conditionnel avec le contexte d'authentification sélectionné ne prend pas effet lorsqu'un utilisateur accède au site, vous pouvez utiliser PowerShell pour confirmer que votre configuration est correcte et que toutes les conditions préalables sont remplies. Vous devez supprimer l’étiquette de confidentialité du site, puis configurer le site pour le contexte d’authentification à l’aide de l’applet de commande [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) à partir de l'actuel [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online). Si cette méthode fonctionne, patientez quelques jours avant de réessayer d’appliquer l’étiquette de confidentialité.
+    
+    Pour tester le contexte d’authentification à l’aide de PowerShell :
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
+    ```
+    
+    Pour supprimer le contexte d’authentification afin de pouvoir réessayer d’appliquer l’étiquette de confidentialité :
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
+    ```
 
 - Pour l'application de synchronisation OneDrive, prise en charge pour OneDrive uniquement et non pour les autres sites.
 

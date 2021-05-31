@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: Découvrez comment rechercher votre bureau d’enregistrement de domaines et votre fournisseur d’hébergement DNS à l’aide de la recherche InterNIC.
-ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: af883f53c8c45aee2594b0f5b8b9da57e5717f9e
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655541"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706393"
 ---
 # <a name="find-your-domain-registrar"></a>Rechercher votre bureau d’enregistrement de domaine
 
@@ -40,11 +40,11 @@ ms.locfileid: "49655541"
 >[!NOTE]
 > Seuls les domaines se terminant par *. COM*, *.NET* et *.EDU* sont compatibles avec cet outil.
   
-1. Tapez votre domaine dans la [page de recherche InterNIC](https://go.microsoft.com/fwlink/p/?LinkId=402770), dans la zone **Whois Search**. Par exemple, *contoso.com*. 
+1. Sur la [page de recherche InterNIC](https://go.microsoft.com/fwlink/p/?LinkId=402770), dans la zone **Whois Search**, tapez votre domaine (par exemple,  *contoso.com).* 
     
 2. Sélectionnez l'option **Domaine**, puis cliquez sur **Envoyer**.
     
-3. Sur la page **Whois Search Results**, recherchez l'entrée **Registrar**. Cette entrée indique l'organisation qui fournit le service de bureau d'enregistrement pour votre domaine. 
+3. Sur la page **Whois Search Results**, recherchez l’entrée **Registrar**. Cette entrée indique l’organisation qui fournit le service de bureau d’enregistrement pour votre domaine. 
     
 ## <a name="dns-hosting-provider"></a>Fournisseur d’hébergement DNS
   
@@ -53,13 +53,13 @@ ms.locfileid: "49655541"
 >[!NOTE]
 > Seuls les domaines se terminant par *. COM*, *.NET* et *.EDU* sont compatibles avec cet outil.
   
-1. Tapez votre domaine dans la [page de recherche InterNIC]( https://go.microsoft.com/fwlink/p/?LinkId=402770), dans la zone **Whois Search**. Par exemple, contoso.com. 
+1. Sur la [page de recherche InterNIC]( https://go.microsoft.com/fwlink/p/?LinkId=402770), dans la zone **Whois Search**, tapez votre domaine (par exemple, contoso.com). 
     
 2. Sélectionnez l'option **Domaine**, puis cliquez sur **Envoyer**.
     
 3. Sur la page **Whois Search Results**, localisez la première entrée **Name Server**. 
     
-4. Copiez les informations sur le serveur de noms (NS) affichées après les deux-points (:), puis collez-les dans la zone **Search** en haut de la page. Sélectionnez **Serveur de noms**, puis sélectionnez **Envoyer**.
+4. Copiez les informations sur le serveur de noms (NS) affichées après les deux-points (:), puis collez-les dans la zone **Search** en haut de la page. Sélectionnez **Nameserver**, puis sélectionnez **Envoyer**.
     
 5. Sur la page **Whois Search Results**, recherchez l’entrée **Registrar**. Cette entrée indique votre fournisseur d’hébergement DNS, le fournisseur DNS qui est propriétaire du serveur de noms pour votre domaine. 
     

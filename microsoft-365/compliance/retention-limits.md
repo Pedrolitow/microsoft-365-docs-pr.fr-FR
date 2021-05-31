@@ -18,28 +18,30 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: 007ca6eec50b243e1b820938ffa67553d7882c7b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107656"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698963"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Lorsque vous utilisez les [stratégies de rétention et stratégies d’étiquette de rétention](retention.md#retention-policies-and-retention-labels) pour conserver ou supprimer automatiquement des données pour votre organisation, vous devez prendre connaissance de certains nombres maximum.
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Nombre maximal de stratégies par client
 
-Un client unique peut avoir un maximum de 10 000 stratégies (n’importe quelle configuration). Ce nombre maximal inclut les différentes stratégies de rétention et d’autres stratégies de conformité, telles que les stratégies DLP.
+Un client unique peut avoir un maximum de 10 000 stratégies (n’importe quelle configuration). Ce nombre maximal inclut les différentes stratégies de rétention et d’autres stratégies de conformité, telles que les stratégies de protection contre la perte de données, les obstacles à l’information, les conservations eDiscovery et les étiquettes de confidentialité.
 
-Nombre maximal de stratégies de rétention par charge de travail :
+Dans cette limite de 10 000 stratégies, il existe également des limites sur le nombre maximal de stratégies de rétention par charge de travail :
 
 - Exchange Online (n’importe quelle configuration) : 1 800
 - SharePoint ou OneDrive : (tous les sites sont inclus automatiquement) : 13
 - SharePoint ou OneDrive (emplacements spécifiques inclus ou exclus) : 2 600
+
+Bien que les stratégies de rétention pour Microsoft Teams et Yammer utilisent des boîtes aux lettres pour stocker des données à des fins de rétention, le nombre maximal de stratégies pour Exchange Online exclut les stratégies de rétention pour Teams et Yammer.
 
 ## <a name="maximum-number-of-items-per-policy"></a>Nombre maximal d’éléments par stratégie
 
@@ -48,7 +50,7 @@ Si vous utilisez la configuration optionnelle pour étendre vos paramètres de r
 Nombre maximal d’éléments par stratégie pour la rétention :
 
   - 1 000 boîtes aux lettres (boîtes aux lettres des utilisateurs ou boîtes aux lettres de groupe)
-  - 1 000 groupes Microsoft 365
+  - 1 000 groupes Microsoft 365
   - 1 000 utilisateurs pour conversations privées Teams
   - 100 sites (OneDrive et SharePoint)
 
