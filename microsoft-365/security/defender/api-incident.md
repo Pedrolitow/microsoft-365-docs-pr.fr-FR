@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 API d’incidents Defender et type de ressource incident
-description: En savoir plus sur les méthodes et les propriétés du type de ressource Incident dans Microsoft 365 Defender
+title: Microsoft 365 API d’incidents Defender et type de ressource incidents
+description: En savoir plus sur les méthodes et les propriétés du type de ressource Incidents dans Microsoft 365 Defender
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5cc149668e49e21b38b5fb95ae3f40db6c296e1d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572584"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730929"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 API d’incidents Defender et type de ressource incident
+# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 API Incidents Defender et type de ressource incidents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
@@ -72,10 +72,10 @@ createdTime | DateTimeOffset | Date et heure (en UTC) de création de l’incide
 lastUpdateTime | DateTimeOffset | Date et heure (en UTC) de la dernière mise à jour de l’incident.
 assignedTo | string | Propriétaire de l’incident.
 Sévérité  | Énum | Gravité de l’incident. Les valeurs possibles ```UnSpecified``` sont : , , et ```Informational``` ```Low``` ```Medium``` ```High``` .
-statut | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles ```Active``` sont : , et ```Resolved``` ```Redirected``` .
+status | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles ```Active``` sont : , et ```Resolved``` ```Redirected``` .
 classification | Énum | Spécification de l’incident. Les valeurs possibles sont les suivantes : ```Unknown```, ```FalsePositive``` et ```TruePositive```.
 détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
-étiquettes | liste de chaînes | Liste des balises d’incident.
+étiquettes | string List | Liste des balises d’incident.
 commentaires | Liste des commentaires sur les incidents | L’objet Incident Comment contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.
 alerts | Liste des alertes | Liste des alertes associées. Consultez des exemples dans la documentation [de l’API d’incidents](api-list-incidents.md) de liste.
 

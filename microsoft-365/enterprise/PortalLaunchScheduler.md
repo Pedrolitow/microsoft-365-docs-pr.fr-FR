@@ -16,17 +16,17 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: Cet article décrit comment lancer votre portail à l’aide du programme de lancement du portail
-ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+description: Cet article explique comment lancer votre portail à l’aide du programme de lancement du portail
+ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694352"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730257"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du SharePoint de lancement du portail
 
-Un portail est un site de communication SharePoint sur votre intranet qui présente un trafic élevé : un site qui compte entre 10 000 et plus de 100 000 visiteurs sur plusieurs semaines. Utilisez le programme de lancement du portail pour lancer votre portail afin de garantir aux utilisateurs une expérience d’affichage fluide lors de l’accès à SharePoint portail.
+Un portail est un site de communication SharePoint sur votre intranet à fort trafic , un site qui compte entre 10 000 et plus de 100 000 visiteurs sur plusieurs semaines. Utilisez le programme de lancement du portail pour lancer votre portail afin de garantir aux utilisateurs une expérience d’affichage fluide lors de l’accès à SharePoint portail.
 <br>
 <br>
 Le programme de lancement du portail est conçu pour vous aider à suivre une approche de déploiement par étapes en par lots de visionneuses par vagues et en gérant les redirections d’URL pour le nouveau portail. Au cours du lancement de chaque vague, vous pouvez recueillir les commentaires des utilisateurs, surveiller les performances du portail et suspendre le lancement pour résoudre les problèmes avant de poursuivre la vague suivante. En savoir plus sur la [façon de planifier un lancement de portail dans SharePoint](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide). 
@@ -44,7 +44,7 @@ Les autorisations de site doivent être définies séparément des vagues dans l
 > - La version PowerShell de cet outil est disponible aujourd’hui
 > - Cette fonctionnalité peut uniquement être utilisée sur les sites de communication SharePoint modernes
 > - Vous devez avoir des autorisations de propriétaire de site pour personnaliser et planifier le lancement d’un portail
-> - Les lancements doivent être programmés au moins sept jours à l’avance et chaque vague peut durer entre un et sept jours
+> - Les lancements doivent être programmés au moins sept jours à l’avance et chaque vague peut durer entre un et sept jours.
 > - Le nombre de vagues requis est automatiquement déterminé par le nombre d’utilisateurs attendu 
 > - Avant de planifier le lancement d’un portail, l’outil Diagnostic de page [pour SharePoint](https://aka.ms/perftool) doit être exécuté pour vérifier que la page d’accueil du site est saine
 > - À la fin du lancement, tous les utilisateurs ayant des autorisations sur le site pourront accéder au nouveau site.
@@ -73,7 +73,7 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 1.  Avant d’utiliser l’outil de planification de lancement du portail, ajoutez tous les utilisateurs qui auront besoin d’accéder à ce [site](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) via les **autorisations** site en tant que propriétaire du site, membre du site ou visiteur.
 
-2.  Ensuite, commencez à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
+2.  Commencez ensuite à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
 
     **Option 1**: les premières fois que vous modifiez et repupuyez les modifications apportées à votre page d’accueil (ou jusqu’à la version 3.0 de la page d’accueil), vous êtes invité à utiliser l’outil de planification de lancement du portail. Sélectionnez **Planifier le lancement** pour aller de l’avant avec la planification. Vous pouvez également **sélectionner Republish** pour republier vos modifications de page sans planifier le lancement.
     
@@ -106,7 +106,7 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
        
     **Option 2 :** envoyer les utilisateurs vers une page temporaire auto-genrée (redirection de page temporaire) : utilisez une redirection de page temporaire lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint moderne et si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire.
     
-    **Option 3 : Envoyer** des utilisateurs vers une page externe : fournir une URL externe à une expérience de page d’accueil temporaire jusqu’à ce que la vague de l’utilisateur soit lancée.
+    **Option 3 : Envoyer** des utilisateurs vers une page externe : fournissez une URL externe à une expérience de page d’accueil temporaire jusqu’à ce que la vague de l’utilisateur soit lancée.
     
 6.  Décomposez votre audience en vagues. Ajoutez jusqu’à 20 groupes de sécurité par vague. Les détails des vagues peuvent être modifiés jusqu’au lancement de chaque vague. Chaque vague peut durer au moins un jour (24 heures) et au maximum sept jours. Cela permet à SharePoint et à votre environnement technique d’insérabler et de s’adapter au grand volume d’utilisateurs du site. Lors de la planification d’un lancement via l’interface utilisateur, le fuseau horaire est basé sur les paramètres régionaux du site. 
 
@@ -116,11 +116,11 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 7. Déterminez qui doit afficher le site immédiatement et entrez leurs informations dans le champ **Utilisateurs exemptés des vagues.** Ces utilisateurs sont exclus des vagues et ne sont pas redirigés avant, pendant ou après le lancement.
 
-8.  Confirmez les détails du lancement du portail et sélectionnez **Planifier.** Une fois le lancement programmé, toutes les modifications apportées à la page d’accueil du portail SharePoint doivent recevoir un résultat de diagnostic sain avant que le lancement du portail reprenne.
+8.  Confirmez les détails du lancement du portail et sélectionnez **Planifier.** Une fois le lancement programmé, les modifications apportées à la page d’accueil du portail SharePoint doivent recevoir un résultat de diagnostic sain avant que le lancement du portail reprenne.
 
 ### <a name="launch-portal-with-over-100k-users"></a>Portail de lancement avec plus de 100 000 utilisateurs
 
-Si vous envisagez de migrer plus de 100 To, envoyez une demande de support en suivant les étapes décrites ci-dessous. Veillez à inclure toutes les informations demandées.
+Si vous envisagez de lancer un portail avec plus de 100 000 utilisateurs, envoyez une demande de support en suivant les étapes répertoriées ci-dessous. Veillez à inclure toutes les informations demandées.
 
 Procédez comme suit :
 1. Accédez à la page https://admin.microsoft.com.
@@ -145,7 +145,7 @@ Les détails du lancement peuvent être modifiés pour chaque vague jusqu’à l
 
 1.  Pour modifier les détails du lancement du portail, **accédez à Paramètres** puis sélectionnez **Planifier le lancement du site.**
 2.  Ensuite, sélectionnez **Modifier.**
-3.  Lorsque vous avez terminé d’effectuer vos modifications, sélectionnez **Mettre à jour.**
+3.  Lorsque vous avez terminé vos modifications, sélectionnez **Mettre à jour.**
 
 
 ## <a name="delete-a-scheduled-portal-launch"></a>Supprimer un lancement de portail programmé
@@ -267,7 +267,7 @@ La redirection de page temporaire doit être utilisée lorsqu’il n’existe au
 
 2. Vérifier qu’aucune redirection ne se produit pour tous les utilisateurs.
 
-## <a name="learn-more"></a>Si vous souhaitez en savoir plus
+## <a name="learn-more"></a>En savoir plus
 
 [Planification de votre plan de déploiement de lancement de portail dans SharePoint Online](./planportallaunchroll-out.md)
 

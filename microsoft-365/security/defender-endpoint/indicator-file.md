@@ -1,7 +1,7 @@
 ---
 title: Créer des indicateurs pour les fichiers
 ms.reviewer: ''
-description: Créez des indicateurs pour un hachage de fichier qui définissent la détection, la prévention et l'exclusion des entités.
+description: Créez des indicateurs pour un hachage de fichier qui définit la détection, la prévention et l’exclusion des entités.
 keywords: fichier, hachage, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995056"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730533"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -30,90 +30,90 @@ ms.locfileid: "51995056"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-Empêcher toute propagation supplémentaire d'une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. Si vous connaissez un fichier exécutable portable (PE) potentiellement malveillant, vous pouvez le bloquer. Cette opération l'empêche d'être lue, écrite ou exécutée sur les appareils de votre organisation.
+Empêcher toute propagation supplémentaire d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. Si vous connaissez un fichier exécutable portable (PE) potentiellement malveillant, vous pouvez le bloquer. Cette opération l’empêche d’être lue, écrite ou exécutée sur les appareils de votre organisation.
 
 Il existe trois façons de créer des indicateurs pour les fichiers :
 
 - En créant un indicateur via la page paramètres
-- En créant un indicateur contextuel à l'aide du bouton Ajouter un indicateur à partir de la page de détails du fichier
-- En créant un indicateur via [l'API d'indicateur](ti-indicator.md)
+- En créant un indicateur contextuel à l’aide du bouton Ajouter un indicateur à partir de la page de détails du fichier
+- En créant un indicateur via [l’API d’indicateur](ti-indicator.md)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
 Il est important de comprendre les conditions préalables suivantes avant de créer des indicateurs pour les fichiers :
 
-- Cette fonctionnalité est disponible si votre organisation utilise **l'Antivirus Microsoft Defender (en mode actif)** et si la protection basée sur **le cloud est activée.** Pour plus d'informations, [voir Gérer la protection basée sur le cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+- Cette fonctionnalité est disponible si votre organisation utilise **Antivirus Microsoft Defender (en mode actif)** et si la protection basée sur **le cloud est activée.** Pour plus d’informations, [voir Gérer la protection basée sur le cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 
 - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Pris en charge sur les appareils avec Windows 10, version 1703 ou ultérieure, Windows Server 2016 et 2019.
+- Pris en charge sur les appareils Windows 10, version 1703 ou ultérieure, Windows Server 2016 et 2019.
 
-- Pour commencer à bloquer des fichiers, vous devez d'abord activer la fonctionnalité « bloquer ou autoriser » [dans](advanced-features.md) paramètres.
+- Pour commencer à bloquer des fichiers, vous devez d’abord activer la fonctionnalité « bloquer ou autoriser » [dans](advanced-features.md) Paramètres.
 
-Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables (PE), y compris les fichiers .exe et .dll. La couverture sera étendue au fil du temps.
+Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables(PE), notamment les fichiers .exe et .dll portables. La couverture sera étendue au fil du temps.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Créer un indicateur pour les fichiers à partir de la page paramètres
 
 1. Dans le volet de navigation, sélectionnez **Paramètres > indicateurs.**
 
-2. Sélectionnez **l'onglet De hachage de**   fichier.
+2. Sélectionnez **l’onglet hachage**   fichier.
 
 3. Sélectionnez **Ajouter un indicateur**.
 
 4. Spécifiez les détails suivants :
-    - Indicateur : spécifiez les détails de l'entité et définissez l'expiration de l'indicateur.
-    - Action : spécifiez l'action à prendre et fournissez une description.
-    - Étendue : définir l'étendue du groupe d'appareils.
+    - Indicateur : spécifiez les détails de l’entité et définissez l’expiration de l’indicateur.
+    - Action : spécifiez l’action à prendre et fournissez une description.
+    - Étendue : définir l’étendue du groupe d’appareils.
 
-5. Examinez les détails dans l'onglet Résumé, puis sélectionnez **Enregistrer.**
+5. Examinez les détails dans l’onglet Résumé, puis sélectionnez **Enregistrer.**
 
 ## <a name="create-a-contextual-indicator-from-the-file-details-page"></a>Créer un indicateur contextuel à partir de la page de détails du fichier
 
-L'une des options lorsque vous prenez des mesures de réponse sur un [fichier consiste](respond-file-alerts.md)à ajouter un indicateur pour le   fichier. Lorsque vous ajoutez un hachage d'indicateur pour un fichier, vous pouvez choisir de lancer une alerte et de bloquer le fichier chaque fois qu'un appareil de votre organisation tente de l'exécuter.
+L’une des options lorsque vous prenez des mesures de réponse sur un [fichier consiste](respond-file-alerts.md)à ajouter un indicateur pour le   fichier. Lorsque vous ajoutez un hachage d’indicateur pour un fichier, vous pouvez choisir de lancer une alerte et de bloquer le fichier chaque fois qu’un appareil de votre organisation tente de l’exécuter.
 
-Les fichiers automatiquement bloqués par un indicateur ne s'afficheront pas dans le centre de l'action du fichier, mais les alertes resteront visibles dans la file d'attente des alertes.
+Les fichiers automatiquement bloqués par un indicateur ne s’afficheront pas dans le centre de l’action du fichier, mais les alertes resteront visibles dans la file d’attente des alertes.
 
 >[!IMPORTANT]
 >- En règle générale, les blocs de fichiers sont appliqués et supprimés en quelques minutes, mais peuvent prendre plus de 30 minutes.
->- S'il existe des stratégies d'indicateur de fichier en conflit, la stratégie d'application de la stratégie la plus sécurisée est appliquée. Par exemple, une stratégie d'indicateur de hachage de fichier SHA-256 est prioritaire sur une stratégie d'indicateur de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
->- Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, l'activation de EnableFileHashComputation peut avoir un impact sur les performances de l'appareil.
->    - Par exemple, la copie de fichiers de grande taille à partir d'un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l'appareil.
->    - Pour plus d'informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender](/windows/client-management/mdm/defender-csp)
+>- S’il existe des stratégies d’indicateur de fichier en conflit, la stratégie d’application de la stratégie la plus sécurisée est appliquée. Par exemple, une stratégie d’indicateur de hachage de fichier SHA-256 est prioritaire sur une stratégie d’indicateur de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
+>- Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, l’activation de EnableFileHashComputation peut avoir un impact sur les performances de l’appareil.
+>    - Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
+>    - Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender](/windows/client-management/mdm/defender-csp)
 
 ## <a name="policy-conflict-handling"></a>Gestion des conflits de stratégie  
 
-Le conflit de gestion des stratégies Cert et IoC de fichier suit l'ordre ci-dessous :
+Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-dessous :
 
-- Si le fichier n'est pas autorisé par Windows Defender Application Control et AppLocker appliquent des stratégies/stratégies de mode, **bloquez**
+- Si le fichier n’est pas autorisé par Windows Defender Application Control et AppLocker appliquent des stratégies/stratégies de mode, **bloquez**
 
-- Sinon, si le fichier est autorisé par l'exclusion de l'antivirus Defender, **autorisez**
+- Sinon, si le fichier est autorisé par l’exclusion Antivirus Microsoft Defender, **autorisez**
 
 - Sinon, si le fichier est bloqué ou averti par un blocage ou un avertissement de fichier IoC, **puis Bloquer/Avertir**
 
-- Sinon, si le fichier est autorisé par une stratégie IOC de fichier autorisé, **autorisez**
+- Sinon, si le fichier est autorisé par une stratégie IoC de fichier autorisé, **autorisez**
 
-- Sinon si le fichier est bloqué par les règles de la asr, cfa, av, SmartScreen, puis **bloquer**  
+- Sinon, si le fichier est bloqué par les règles de la asr, LFA, AV, SmartScreen, puis **Bloquer**  
 
 - Else **Allow** (passe Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
-S'il existe des stratégies IoC de fichier en conflit avec le même type d'application et la même cible, la stratégie de hachage le plus sécurisé (c'est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l'emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
+S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 
-Notez que les fonctionnalités de gestion des menaces et des vulnérabilités des applications vulnérables utilisent les IOC de fichier pour l'application et suivent l'ordre de gestion des conflits ci-dessus.
+Notez que Gestion des menaces et des vulnérabilités’application de blocage vulnérable utilise les IOC de fichier pour l’application et suit l’ordre de gestion des conflits ci-dessus.
 
 ### <a name="examples"></a>Exemples
 
-|Composant |Application des composants |Action de l'indicateur de fichier |Résultat
+|Composant |Application des composants |Action de l’indicateur de fichier |Résultat
 |--|--|--|--|
-|Exclusion du chemin d'accès au fichier de réduction de la surface d'attaque |Autoriser |Bloquer |Bloquer
-|Règle de réduction de la surface d'attaque |Bloquer |Autoriser |Autoriser
+|Exclusion du chemin d’accès au fichier de réduction de la surface d’attaque |Autoriser |Bloquer |Bloquer
+|Règle de réduction de la surface d’attaque |Bloquer |Autoriser |Autoriser
 |Windows Defender Application Control |Autoriser |Bloquer |Autoriser |
 |Windows Defender Application Control |Bloquer |Autoriser |Bloquer
-|Exclusion de l'Antivirus Microsoft Defender |Autoriser |Bloquer |Autoriser
+|Antivirus Microsoft Defender exclusion |Autoriser |Bloquer |Autoriser
 
 ## <a name="see-also"></a>Voir aussi
 

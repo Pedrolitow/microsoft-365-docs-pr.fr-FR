@@ -1,5 +1,5 @@
 ---
-title: Interroger les données d’un jeu à réviser
+title: Interroger le contenu d’un jeu à réviser
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,55 +15,104 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment créer et exécuter une requête dans un jeu à réviser pour organiser les données pour une révision plus efficace dans Advanced eDiscovery cas.
+description: Découvrez comment créer et exécuter une requête dans un jeu à réviser pour organiser le contenu pour une révision plus efficace dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 64dbeb8ad68f4188e5768a0a7e0e80ca6c22760b
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345799"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736423"
 ---
-# <a name="query-the-data-in-a-review-set"></a>Interroger les données d’un jeu à réviser
+# <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer le contenu d’un jeu à réviser
 
-Dans la plupart des cas, il est utile de pouvoir approfondir les données d’un jeu à réviser et d’organiser ces données pour faciliter une révision plus efficace. L’utilisation de requêtes dans un jeu à réviser vous permet de vous concentrer sur un sous-ensemble de documents qui répondent aux critères de votre avis.
+Dans la plupart des cas, il est utile d’approfondir le contenu d’un jeu à réviser et de l’organiser pour faciliter une révision plus efficace. L’utilisation de filtres et de requêtes dans un ensemble de révision vous permet de vous concentrer sur un sous-ensemble de documents qui répondent aux critères de votre avis.
 
-## <a name="creating-and-running-a-query-in-a-review-set"></a>Création et exécution d’une requête dans un jeu à réviser
+## <a name="default-filters"></a>Filtres par défaut
 
-Pour créer et exécuter une requête sur les documents d’un jeu à réviser, sélectionnez **Nouvelle requête** dans le jeu à réviser. Après avoir nommé votre requête et défini les conditions, sélectionnez **Enregistrer** pour enregistrer et exécuter la requête. Pour exécuter une requête qui a été précédemment enregistrée, sélectionnez une requête enregistrée.
+Dans un jeu à réviser, il existe cinq filtres par défaut qui sont pré-chargés dans le jeu à réviser :
 
-![Examiner les requêtes définies](../media/AeDReviewSetQueries.png)
+- Mots-clés
+- Date
+- Sender/Author
+- Objet/Titre
+- Balises
 
-## <a name="building-a-review-set-query"></a>Création d’une requête de jeu à réviser
+![Types de filtres par défaut](../media/DefaultFilterTypes.png)
 
-Vous pouvez créer une requête à l’aide d’une combinaison de mots clés, propriétés et conditions dans la condition Mots clés. Vous pouvez également grouper des conditions en tant que bloc (appelé groupe *de conditions)* pour créer une requête plus complexe. Pour consulter la liste et la description des propriétés de métadonnées que vous pouvez rechercher, consultez [Champs de métadonnées des documents dans Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Cliquez sur chaque filtre pour le développer et attribuer une valeur. Cliquez en dehors du filtre pour appliquer automatiquement le filtre au jeu à réviser. La capture d’écran suivante montre le filtre Date configuré pour afficher les documents dans une plage de dates.
 
-### <a name="conditions"></a>Conditions
+![Filtre par défaut développé](../media/ExpandedFilter.png)
 
-Chaque champ utilisable dans une recherche dans un jeu à réviser a une condition correspondante que vous pouvez utiliser pour créer votre requête.
+## <a name="add-or-remove-filters"></a>Ajouter ou supprimer des filtres
 
-Il existe plusieurs types de conditions :
+Pour ajouter ou supprimer des filtres qui sont affichés pour le jeu à réviser, sélectionnez **Filtres** pour ouvrir le panneau de filtrage, qui s’affiche sur une page volante. 
 
-- Texte libre : une condition de texte libre est utilisée pour les champs de texte tels que l’objet. Vous pouvez lister plusieurs termes de recherche en les séparant par une virgule.
+![Panneau de filtrage](../media/FilterPanel.png)
 
-- Date : une condition de date est utilisée pour les champs de date tels que la date de dernière modification.
+Les filtres disponibles sont organisés en quatre sections :
 
-- Options de recherche : une condition d’options de recherche fournit une liste des valeurs possibles pour le champ particulier dans votre jeu à réviser. Il est utilisé pour les champs, tels que l’expéditeur, où il existe un nombre fini de valeurs possibles dans votre jeu à réviser.
+- **Recherche**: filtres qui fournissent différentes fonctionnalités de recherche.
 
-- Mot clé : une condition de mot clé est une instance spécifique de condition de texte libre que vous pouvez utiliser pour rechercher des termes ou utiliser un langage de requête KQL. Pour plus d’informations, voir ci-dessous.
+- **Codage analytique &** prédictif : filtre les propriétés générées et ajoutées aux documents lorsque vous exécutez le travail d’analyse de messagerie électronique **Document &** ou que vous utilisez des modèles de codage prédictifs.
 
-### <a name="query-language"></a>Langage de requête
+- **ID :** filtre toutes les propriétés d’ID des documents.
 
-Outre les conditions, vous pouvez utiliser un langage de requête KQL dans la condition Keywords pour créer votre requête. Le langage de requête pour les requêtes de jeu à réviser prend en charge les opérateurs booléens standard, tels que **AND**, **OR**, **NOT** et **NEAR**. Il prend également en charge un caractère générique à caractère unique (?) et un caractère générique à plusieurs caractères (*).
+- **Propriétés d’élément**: filtre les propriétés de document. 
 
-## <a name="filters"></a>Filtres
+Développez chaque section et sélectionnez ou désélectionnez des filtres pour les ajouter ou les supprimer dans l’ensemble de filtres. Lorsque vous ajoutez un filtre, il s’affiche dans le jeu de filtres. 
 
-Outre les requêtes que vous pouvez enregistrer, vous pouvez utiliser des filtres de jeu à réviser pour appliquer rapidement des conditions supplémentaires à une requête de jeu à réviser. L’utilisation de filtres vous permet d’affiner davantage les résultats affichés par une requête de jeu à réviser.
+![Liste des sections et propriétés de filtre dans le panneau de filtrage](../media/FilterPanel2.png)
 
-![Passer en revue les filtres](../media/AeDReviewSetFilters.png)
+> [!NOTE]
+> Lorsque vous développez une section dans le panneau de filtrage, vous remarquerez que les types de filtres par défaut sont sélectionnés. Vous pouvez conserver ces éléments sélectionnés ou les désélectionner et les supprimer du jeu de filtres. 
 
-Les filtres diffèrent des requêtes de deux manières significatives :
+## <a name="filter-types"></a>Types de filtre
 
-- Les filtres sont temporaires. Elles ne persistent pas au-delà de la session existante. En d’autres termes, vous ne pouvez pas enregistrer un filtre. Les requêtes sont enregistrées dans le jeu à réviser et y accèdent chaque fois que vous ouvrez le jeu à réviser.
+Chaque champ utilisable dans une recherche dans un jeu à réviser possède un filtre correspondant que vous pouvez utiliser pour filtrer des éléments en fonction d’un champ spécifique.
 
-- Les filtres sont toujours additives. Les filtres sont appliqués en plus de la requête de jeu à réviser actuelle. L’application d’une autre requête a pour effet de remplacer les résultats renvoyés par la requête actuelle.
+Il existe plusieurs types de filtres :
+
+- **Texte libre**: un filtre de texte libre est appliqué à des champs de texte tels que « Subject ». Vous pouvez lister plusieurs termes de recherche en les séparant par une virgule.
+
+- **Date**: un filtre de date est utilisé pour les champs de date tels que « Date de dernière modification ».
+
+- **Options de** recherche : un filtre d’options de recherche fournit une liste des valeurs possibles (chaque valeur est affichée avec une case à cocher que vous pouvez sélectionner) pour des champs particuliers dans l’avis. Ce filtre est utilisé pour les champs, tels que « Expéditeur », où il existe un nombre fini de valeurs possibles dans le jeu à réviser.
+
+- **Mot** clé : une condition de mot clé est une instance spécifique de condition de texte libre que vous pouvez utiliser pour rechercher des termes. Vous pouvez également utiliser un langage de requête de type KQL dans ce type de filtre. Pour plus d’informations, voir les sections Langage de requête et Générateur de requêtes avancé dans cette rubrique.
+
+## <a name="include-and-exclude-filter-relationships"></a>Inclure et exclure des relations de filtre
+
+Vous avez la possibilité de modifier la relation Inclure et exclure pour un filtre particulier. Par exemple, dans le filtre Balise, vous pouvez exclure les éléments **marqués** avec une balise particulière en sélectionnant Égal à aucun des éléments du filtre de ladown. 
+
+![Exclure le filtre de balise](../media/TagFilterExclude.png)
+
+## <a name="save-filters-as-queries"></a>Enregistrer des filtres en tant que requêtes
+
+Une fois que vous êtes satisfait de vos filtres, vous pouvez enregistrer la combinaison de filtres en tant que requête de filtre. Cela vous permet d’appliquer le filtre dans les prochaines sessions de révision.
+
+Pour enregistrer un filtre, **sélectionnez Enregistrer la requête et** nommez-la. Vous ou d’autres réviseurs pouvez exécuter  des requêtes de filtre précédemment enregistrées en sélectionnant la dropdown des requêtes de filtre enregistrées et en sélectionnant une requête de filtre à appliquer aux documents de l’ensemble de révision. 
+
+![Enregistrer une requête de filtre](../media/SaveFilterQuery.png)
+
+Pour supprimer une requête de filtre, ouvrez le panneau de filtrage et sélectionnez l’icône de corbeille en côté de la requête.
+
+![Supprimer une requête de filtre](../media/DeleteFilterQuery.png)
+
+## <a name="query-language"></a>Langage de requête
+
+En plus d’utiliser des filtres, vous pouvez également utiliser un langage de requête KQL dans le filtre Mots clés pour créer votre requête de recherche de jeu à réviser. Le langage de requête pour les requêtes de jeu à réviser prend en charge les opérateurs booléens standard, tels que **AND**, **OR**, **NOT** et **NEAR**. Il prend également en charge un caractère générique à caractère unique (?) et un caractère générique à plusieurs caractères (*).
+
+## <a name="advanced-query-builder"></a>Générateur de requêtes avancé
+
+Vous pouvez également créer des requêtes plus avancées pour rechercher des documents dans un jeu à réviser.
+
+1. Ouvrez le panneau de filtrage, **sélectionnez Filtres** et **développez** la section Recherche.
+
+  ![Ajouter un filtre KQL](../media/AddKQLFilter.png)
+
+2. Sélectionnez **le filtre KQL,** puis cliquez **sur Ouvrir le générateur de requêtes.**
+
+   Dans ce panneau, vous pouvez créer des requêtes KQL complexes à l’aide du générateur de requêtes. Vous pouvez ajouter des conditions ou des groupes de conditions composés de plusieurs conditions connectées logiquement par des **relations AND** ou **OR.**
+
+   ![Utiliser le générateur de requêtes pour configurer des requêtes de filtre complexes](../media/ComplexQuery.png)

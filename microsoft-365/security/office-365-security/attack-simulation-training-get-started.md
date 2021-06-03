@@ -20,27 +20,27 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser la formation sur la simulation d’attaques pour exécuter des attaques par hameçonnage simulé et par mot de passe dans leurs organisations Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a5986bbeebd49223ebfd74773346f27fc5297243
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204088"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730904"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Commencer à utiliser la formation à la simulation d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Si votre organisation dispose de Microsoft 365 E5 ou Microsoft Defender [](office-365-ti.md)pour Office 365 Plan 2, qui inclut des fonctionnalités d’examen et de réponse aux menaces, vous pouvez utiliser une formation sur la simulation d’attaques dans le Centre de sécurité Microsoft pour exécuter des scénarios d’attaque réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
+Si votre organisation Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 2, qui inclut des fonctionnalités d’investigation et de réponse aux [menaces,](office-365-ti.md)vous pouvez utiliser une formation sur la simulation d’attaques dans le Centre de sécurité Microsoft pour exécuter des scénarios d’attaque réalistes dans votre organisation. Ces attaques simulées peuvent vous aider à identifier et à trouver des utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre ligne de bas de page. Pour en savoir plus, lisez cet article.
 
 > [!NOTE]
-> L’entraînement de simulation d’attaque remplace l’ancienne expérience du Simulateur d’attaques v1 décrite dans le Simulateur d’attaques dans [Microsoft Defender pour Office 365.](attack-simulator.md)
+> L’entraînement de simulation d’attaque remplace l’ancienne expérience du Simulateur d’attaques v1 décrite dans le Simulateur d’attaques [dans Microsoft Defender Office 365](attack-simulator.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Pour ouvrir le Centre de sécurité Microsoft, allez sur <https://security.microsoft.com/> . Une formation sur la simulation d’attaques est disponible dans la formation sur la simulation d’attaques de **messagerie** et de \> **collaboration.** Pour aller directement à la formation sur la simulation d’attaque, ouvrez <https://security.microsoft.com/attacksimulator> .
 
-- Pour plus d’informations sur la disponibilité de la formation sur la simulation d’attaques dans différents abonnements Microsoft 365, voir la description du service Microsoft Defender pour [Office 365.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Pour plus d’informations sur la disponibilité de la formation sur la simulation d’attaques dans différents abonnements Microsoft 365, voir Microsoft Defender pour obtenir [la description Office 365 service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Des autorisations doivent vous être attribuées dans le Centre de sécurité & conformité ou dans Azure Active Directory avant de pouvoir suivre les procédures de cet article. Plus précisément, vous devez être membre de la gestion de l’organisation, de l’administrateur de la sécurité ou de l’un des rôles suivants :
   - **Administrateurs du simulateur d’attaques**: créez et gérez tous les aspects des campagnes de simulation d’attaques.
@@ -50,7 +50,12 @@ Si votre organisation dispose de Microsoft 365 E5 ou Microsoft Defender [](offic
 
 - Il n’existe aucune cmdlet PowerShell correspondante pour la formation à la simulation d’attaques.
 
-- Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour les services Microsoft 365. Pour plus d’informations, voir emplacements de données [Microsoft 365.](../../enterprise/o365-data-locations.md) La simulation d’attaque est disponible dans les régions suivantes : NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN et KOR.
+- Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour Microsoft 365 services. Pour plus [d’informations, Microsoft 365 des emplacements de données.](../../enterprise/o365-data-locations.md) La simulation d’attaque est disponible dans les régions suivantes : NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN et KOR.
+
+- Depuis le 15 juin 2021, la formation sur la simulation d’attaques est disponible Cloud de la communauté du secteur public. Si votre organisation Office 365 Cloud de la communauté du secteur public G5 ou Microsoft Defender pour Office 365 (Plan 2) pour le gouvernement, vous pouvez utiliser une formation sur la simulation d’attaques dans le Centre de sécurité Microsoft pour exécuter des scénarios d’attaques réalistes dans votre organisation, comme décrit dans cet article. La formation à la simulation d’attaques n’est pas encore disponible Cloud de la communauté du secteur public environnements Élevé ou DoD.
+
+> [!NOTE]
+> La formation à la simulation d’attaques offre un sous-ensemble de fonctionnalités aux clients E3 en tant qu’essai. L’offre d’évaluation offre la possibilité d’utiliser une charge utile de la campagne de données d’identification et la possibilité de sélectionner des expériences de formation « ISA Phishing » ou « Hameçonnage de marché de masse ». Aucune autre fonctionnalité ne fait partie de l’offre d’essai E3.
 
 ## <a name="simulations"></a>Simulations
 
@@ -62,9 +67,9 @@ Dans la formation à la simulation d’attaques, plusieurs types de techniques d
 
 - **Pièce jointe malveillante**: une personne malveillante envoie au destinataire un message contenant une pièce jointe. Lorsque le destinataire ouvre la pièce jointe, du code arbitraire (par exemple, une macro) est exécuté sur l’appareil de l’utilisateur pour permettre à l’attaquant d’installer du code supplémentaire ou de s’en empêcher.
 
-- **Lien dans la pièce** jointe : il s’agit d’un hybride de la saisie des informations d’identification. Une personne malveillante envoie au destinataire un message qui contient une URL à l’intérieur d’une pièce jointe. Lorsque le destinataire ouvre la pièce jointe et clique sur l’URL, il est redéliqué sur un site web qui affiche généralement une boîte de dialogue qui demande à l’utilisateur son nom d’utilisateur et son mot de passe. En règle générale, la page de destination est un site web connu pour créer une relation d’confiance avec l’utilisateur.
+- **Lien dans la pièce** jointe : il s’agit d’un hybride de la saisie des informations d’identification. Une personne malveillante envoie au destinataire un message contenant une URL à l’intérieur d’une pièce jointe. Lorsque le destinataire ouvre la pièce jointe et clique sur l’URL, il est redéliqué sur un site web qui affiche généralement une boîte de dialogue qui demande à l’utilisateur son nom d’utilisateur et son mot de passe. En règle générale, la page de destination est un site web connu pour créer une relation d’confiance avec l’utilisateur.
 
-- **Lien vers** un programme malveillant : une personne malveillante envoie au destinataire un message contenant un lien vers une pièce jointe sur un site de partage de fichiers connu (par exemple, SharePoint Online ou Dropbox). Lorsque le destinataire clique sur l’URL, la pièce jointe s’ouvre et un code arbitraire (par exemple, une macro) est exécuté sur l’appareil de l’utilisateur pour aider l’attaquant à installer du code supplémentaire ou à s’en aller.
+- **Lien** vers un programme malveillant : une personne malveillante envoie au destinataire un message contenant un lien vers une pièce jointe sur un site de partage de fichiers connu (par exemple, SharePoint Online ou Dropbox). Lorsque le destinataire clique sur l’URL, la pièce jointe s’ouvre et un code arbitraire (par exemple, une macro) est exécuté sur l’appareil de l’utilisateur pour aider l’attaquant à installer du code supplémentaire ou à s’en aller.
 
 - **Lecteur par URL**: une personne malveillante envoie au destinataire un message contenant une URL. Lorsque le destinataire clique sur l’URL, il est dirigé vers un site web qui tente d’exécuter du code d’arrière-plan. Ce code en arrière-plan tente de collecter des informations sur le destinataire ou de déployer du code arbitraire sur son appareil. En règle générale, le site web de destination est un site web connu compromis ou un clone d’un site web connu. La connaissance du site web permet de convaincre l’utilisateur que le lien peut être cliqué en toute sécurité. Cette technique est également connue sous le nom d’attaque par trous _d’eau._
 

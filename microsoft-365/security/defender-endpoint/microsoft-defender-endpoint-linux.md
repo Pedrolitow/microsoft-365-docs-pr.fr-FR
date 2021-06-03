@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e09a313b512135785050abd5aa61bb9576ce1d8
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 2242d195f4a4ea4b8f0c345d82fa0ad1f947bfa2
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274939"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730761"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
@@ -32,14 +32,14 @@ ms.locfileid: "52274939"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser Microsoft Defender pour Endpoint sur Linux.
 
 > [!CAUTION]
-> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de defender pour point de terminaison sur la fonctionnalité Linux PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode](linux-preferences.md#enable--disable-passive-mode)passif.
+> L’exécution d’autres produits de protection de point de terminaison tiers avec Microsoft Defender pour Endpoint sur Linux est susceptible de provoquer des problèmes de performances et des effets secondaires imprévisibles. Si la protection des points de terminaison non-Microsoft est une exigence absolue dans votre environnement, vous pouvez toujours tirer parti en toute sécurité de defender pour point de terminaison sur la fonctionnalité linux PEPT après avoir configuré la fonctionnalité antivirus pour qu’elle s’exécute en [mode](linux-preferences.md#enable--disable-passive-mode)passif.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Comment installer Microsoft Defender pour endpoint sur Linux
 
@@ -75,9 +75,9 @@ Si vous avez des échecs d’installation, reportez-vous à Résolution des prob
 
 
 
-### <a name="system-requirements"></a>Configuration requise du système
+### <a name="system-requirements"></a>Configuration requise
 
-- Distributions et versions de serveur Linux pris en charge :
+- Distributions de serveurs Linux et versions x64 (AMD64/EM64T) prise en charge :
 
   - Red Hat Enterprise Linux 7.2 ou supérieur
   - CentOS 7.2 ou supérieur

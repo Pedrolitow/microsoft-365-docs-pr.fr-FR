@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez les étapes de cet article pour accorder à un autre employé l’accès aux données de OneDrive et Outlook de l’ancien employé.
-ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634255"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730197"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Étape 4 : donner à un autre employé l’accès OneDrive données Outlook données
 
@@ -37,11 +37,11 @@ Lorsqu’un employé quitte votre organisation, vous pouvez accéder à ses donn
   
 ## <a name="access-a-former-users-onedrive-documents"></a>Accéder aux documents d’un ancien OneDrive utilisateur
 
-Si vous supprimez la licence d’un utilisateur, mais que vous ne supprimez pas le compte, vous pouvez vous accorder l’accès au contenu dans le compte de l’OneDrive. Si vous supprimez le compte de l’utilisateur, vous avez 30 jours par défaut pour accéder aux données de l’OneDrive utilisateur. [Découvrez comment définir la rétention OneDrive rétention des utilisateurs supprimés.](/onedrive/set-retention) Si vous ne [restituerez pas de](/office365/admin/add-users/restore-user) compte d’utilisateur dans ce délai, son OneDrive contenu est supprimé.
+Si vous supprimez la licence d’un utilisateur, mais que vous ne supprimez pas le compte, vous pouvez vous accorder l’accès au contenu dans le compte de l’OneDrive. Si vous supprimez le compte de l’utilisateur, vous avez 30 jours par défaut pour accéder aux données de l’OneDrive utilisateur. [Découvrez comment définir le OneDrive rétention des utilisateurs supprimés.](/onedrive/set-retention) Si vous ne [restituerez pas de](/office365/admin/add-users/restore-user) compte d’utilisateur dans ce délai, son OneDrive contenu est supprimé.
 
 Pour conserver les fichiers OneDrive d’un ancien utilisateur, donnez-vous d’abord accès à leurs OneDrive, puis déplacez les fichiers que vous souhaitez conserver.
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.  
 
 2. Sélectionnez un utilisateur.
 
@@ -52,6 +52,30 @@ Pour conserver les fichiers OneDrive d’un ancien utilisateur, donnez-vous d’
 > [!NOTE]
 > Vous pouvez déplacer ou copier jusqu’à 500 Mo de fichiers et de dossiers à la fois.<br/>
 > Lorsque vous déplacez ou copiez des documents qui ont un historique des versions, seule la dernière version est déplacée.  
+
+Vous pouvez également accorder l’accès à un autre utilisateur pour accéder au compte d’un ancien OneDrive.
+
+1. Connectez-vous au Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">d’administration</a> en tant qu’administrateur global ou SharePoint administrateur.
+
+    Si vous recevez un message vous that you don’t have permission to access the admin center, then you don’t have administrator permissions in your organization.
+
+2. Dans le volet gauche, sélectionnez Centres **d’administration** \> **SharePoint**. (Vous devrez peut-être sélectionner **Afficher tout** pour afficher la liste des centres d’administration.)
+
+3. Si l’SharePoint d’administration classique  s’affiche, sélectionnez Ouvrir maintenant en haut de la page pour ouvrir SharePoint’administration centrale.
+
+4. Dans le volet gauche, sélectionnez **Autres fonctionnalités.**
+
+5. Sous **Profils utilisateur,** sélectionnez **Ouvrir.**
+
+6. Sous **Personnes,** sélectionnez **Gérer les profils utilisateur.**
+
+7. Entrez le nom de l’ancien employé et sélectionnez **Rechercher.**
+
+8. Cliquez avec le bouton droit sur l’utilisateur, puis choisissez **Gérer les propriétaires de collections de sites.**
+
+9. Ajoutez l’utilisateur aux **administrateurs de collection de sites** et sélectionnez **OK.**
+
+10. L’utilisateur peut désormais accéder au compte de l’ancien employé OneDrive l’URL OneDrive’utilisateur. 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>Révoquer l’accès administrateur au compte d’un OneDrive
 
@@ -102,7 +126,7 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
     > [!NOTE]
     > Vous pouvez exporter un compte à la fois. Si vous souhaitez exporter plusieurs comptes, une fois qu’un compte est exporté, répétez ces étapes.
   
-    ![Boîte de dialogue Exporter Outlook fichier de données avec le dossier supérieur sélectionné et Inclure les sous-dossiers sélectionnés](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Exporter Outlook boîte de dialogue Fichier de données avec le dossier supérieur sélectionné et Inclure les sous-dossiers sélectionnés](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Sélectionnez **Suivant**.
 
@@ -117,7 +141,7 @@ Pour enregistrer les messages électroniques, le calendrier, les tâches et les 
 
 Outlook l’exportation commence immédiatement, sauf si un nouveau fichier de données Outlook (.pst) est créé ou qu’un fichier protégé par mot de passe est utilisé.
   
-- Si vous créez un fichier de données Outlook (.pst), un mot de passe facultatif peut vous aider à protéger le fichier. Lorsque la **boîte de dialogue Créer Outlook** fichier  de  données s’affiche, tapez le mot de passe dans les zones Mot de passe et Vérifier le mot de passe, puis sélectionnez **OK**.  Dans la **boîte Outlook mot de passe du** fichier de données, tapez le mot de passe, puis sélectionnez **OK.** 
+- Si vous créez un fichier de données Outlook (.pst), un mot de passe facultatif peut vous aider à protéger le fichier. Lorsque la **boîte de dialogue Créer Outlook** fichier  de  données s’affiche, tapez le mot de passe dans les zones Mot de passe et Vérifier le mot de passe, puis sélectionnez **OK.**  Dans la **boîte Outlook mot de passe du** fichier de données, tapez le mot de passe, puis sélectionnez **OK.** 
 
 - Si vous exportez vers un fichier de données Outlook existant (.pst) protégé par mot de passe, dans la boîte de dialogue Mot de passe du fichier de données **Outlook,** tapez le mot de *passe,* puis sélectionnez **OK.**
 

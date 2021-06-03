@@ -1,5 +1,5 @@
 ---
-title: Kit de laboratoire de déploiement Windows et Office
+title: Windows 10 kit de laboratoire Office 365 déploiement
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060872"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736347"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratoire de déploiement Windows et Office
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 kit de laboratoire Office 365 déploiement
 
-Le kit de laboratoire de déploiement Windows et Office est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des bureaux exécutant Windows 10 Entreprise et Microsoft 365 Apps pour entreprise. Les ateliers du kit couvrent l’utilisation de Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
+Le kit de laboratoire de déploiement Windows 10 et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et la gestion des ordinateurs de bureau exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
 
-Ce kit est vivement recommandé pour les organisations qui se préparent aux mises à niveau de Windows 8.1 vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Microsoft 365 Apps pour entreprise (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
+Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester votre automatisation liée au déploiement.
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -34,9 +34,9 @@ Ce kit est vivement recommandé pour les organisations qui se préparent aux mis
 
 Le kit vous fournit un environnement de laboratoire virtuel configuré automatiquement, y compris les clients de bureau joints au domaine, un contrôleur de domaine, une passerelle Internet et une instance configuration manager entièrement configurée. Le kit contient les dernières versions d’évaluation des produits suivants :
 
-  - NOUVEAUTÉ ! Windows 10 Entreprise, version 20H2
+  - NOUVEAUTÉ ! Windows 10 Entreprise, version 21H1
   - Windows 7 Entreprise
-  - Microsoft Endpoint Configuration Manager, version 2010*
+  - NOUVEAUTÉ ! Microsoft Endpoint Configuration Manager, version 2103*
   - Kit de déploiement et d’évaluation Windows pour Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -46,7 +46,8 @@ Le kit vous fournit un environnement de laboratoire virtuel configuré automatiq
 
 L’atelier qui en résulte est conçu pour être connecté aux essais pour : 
 
-  - Microsoft 365 E5
+  - Microsoft 365 E5
+  - Microsoft 365 Apps for enterprise
   - Office 365 E5 avec Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Laboratoires détaillés
@@ -56,17 +57,17 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 ### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
 - Analyses du bureau 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Attachement des locataires, cogestion et changement de charges de travail 
+- Attachement du client, cogestion et changement de charges de travail 
 - Accès à distance (VPN) 
 
 ### <a name="prepare-configuration"></a>Préparer la configuration   
 
-- Optimiser la distribution des mises à jour Windows 10   
-- Maintenance de Windows 10 à l’aide d’une stratégie de groupe
-- Maintenance de Windows 10 à l’aide de Microsoft Intune   
-- Maintenance de Windows 10 avec Configuration Manager   
-- Maintenance des applications Microsoft 365 pour les entreprises à l’aide de Configuration Manager   
-- Maintenance des applications Microsoft 365 pour les entreprises à l’aide d’Intune  
+- Optimiser la Windows 10 des mises à jour   
+- Maintenance Windows 10'aide de la stratégie de groupe
+- Maintenance Windows 10 l’Microsoft Intune   
+- Maintenance Windows 10 avec Configuration Manager   
+- Maintenance Applications Microsoft 365 pour les grandes entreprises l’aide de Configuration Manager   
+- Maintenance Applications Microsoft 365 pour les grandes entreprises à l’aide d’Intune  
 - Sécurité et conformité   
 
 ### <a name="prepare-applications"></a>Préparer les applications    
@@ -79,15 +80,15 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 - Séquences de tâches de déploiement du système d’exploitation dans Configuration Manager
 - Séquences de tâches de déploiement du système d’exploitation dans microsoft Deployment Shared Computer Toolkit (MDT)
 - Windows Autopilot
-- Déployer et gérer le nouveau Microsoft Edge  
+- Déployer et gérer la nouvelle Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Déployer les Applications Microsoft 365 pour les grandes entreprises    
 
 - Déploiement géré dans le cloud  
 - Déploiement géré localement    
-- Déploiement des applications Microsoft 365 pour entreprise sur des appareils non joints à AD 
-- Déploiement géré dans l’entreprise à l’aide de Configuration Manager
-- Déploiement géré par l’entreprise à l’aide de Microsoft Intune  
+- Applications Microsoft 365 pour les grandes entreprises Déploiement sur des appareils non joints à AD 
+- Enterprise géré à l’aide de Configuration Manager
+- Enterprise gestion à l’aide de Microsoft Intune  
 - Déploiement et gestion des objets LOB avec Microsoft Intune
 - Déployer Microsoft Teams
 
@@ -95,11 +96,12 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 - Préparer, déployer, optimiser
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Où trouver le Kit de laboratoire de déploiement Windows et Office
+## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>Où trouver le kit de laboratoire de déploiement Windows 10 et Office 365 de déploiement
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La version de référence 2002 installée peut être mise à jour vers la version 2010 à l’aide de la mise à jour dans la console. Utilisez une connexion Internet à large bande passante pour télécharger ce contenu et autorisez 30 à 45 minutes pour l’approvisionnement automatique. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le kit expire le 22 juillet 2021. Une nouvelle version sera publiée avant expiration.
+> [!NOTE]
+> Utilisez une connexion Internet haut débit pour télécharger ce contenu et autorisez 30 à 45 minutes pour l’approvisionnement automatique. L’environnement de laboratoire nécessite au moins 16 Go de mémoire disponible et 150 Go d’espace disque libre. Pour des performances optimales, 32 Go de mémoire disponible et 300 Go d’espace libre sont recommandés. Le kit expire le 23 août 2021. Une nouvelle version sera publiée avant expiration.
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 

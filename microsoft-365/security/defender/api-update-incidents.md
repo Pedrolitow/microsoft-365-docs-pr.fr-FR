@@ -1,5 +1,5 @@
 ---
-title: API de mise à jour de l’incident
+title: API de mise à jour des incidents
 description: Découvrez comment mettre à jour les incidents à l’aide Microsoft 365 API Defender
 keywords: mise à jour, api, incident
 search.product: eADQiWindows 10XVcnh
@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3f3919d067078ef1fd1e116dc52e8a73c0726d9
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571780"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730857"
 ---
-# <a name="update-incident-api"></a>API de mise à jour de l’incident
+# <a name="update-incidents-api"></a>API de mise à jour des incidents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
@@ -51,7 +51,7 @@ Si votre demande est limitée, elle retourne un `429` code de réponse. Le corps
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Access the Microsoft 365 Defender APIs](api-access.md).
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir [Access the Microsoft 365 Defender APIs](api-access.md).
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
@@ -71,7 +71,7 @@ PATCH /api/incidents/{id}
 
 Nom | Type | Description
 -|-|-
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
