@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Récapitulatif : comprendre la migration de Microsoft Cloud Allemagne (Microsoft Cloud Deutschland) vers les services Office 365 dans les nouvelles régions de centre de données allemandes.'
-ms.openlocfilehash: ad6c81f04b9e8551ad6eeb6521f7562243df53e9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 4162e51164120cecaa431ad6883d3ee112ad4880
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346303"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796005"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centres de données allemandes
 
@@ -41,12 +41,12 @@ Les clients Microsoft Cloud Deutschland existants peuvent maintenant commencer �
 
 Pour les organisations qui optent pour l’approche pilotée par Microsoft, les migrations doivent commencer au début de l’année 2021 et se terminer le 29 octobre 2021. Suite à la migration, les données client principales et les abonnements sont transférés vers les nouvelles régions allemandes.
 
-Cet article fournit une vue d’ensemble de l’approche pilotée par Microsoft pour la migration, de la clarté sur les expériences des utilisateurs et des administrateurs pendant et après la migration, et des actions qui peuvent être requises pour les clients en fonction des charges de travail que vous utilisez.
+Cet article fournit une vue d’ensemble de l’approche pilotée par Microsoft pour la migration, de la clarté sur les expériences des utilisateurs et des administrateurs pendant et après la migration, ainsi que des actions qui peuvent être requises pour les clients en fonction des charges de travail que vous utilisez.
 
 Les services suivants seront migrés dans le cadre de l’approche dirigée par Microsoft :
 
 - Azure Active Directory (Azure AD)
-- Exchange Online
+- Exchange Online
 - Exchange Online Protection
 - SharePoint Online
 - OneDrive Entreprise
@@ -56,7 +56,7 @@ Les services suivants seront migrés dans le cadre de l’approche dirigée par 
 
 \*\*Pendant la migration de Microsoft Cloud Deutschland vers les régions de centres de données allemandes, les clients Skype Entreprise Online existants passeront à Microsoft Teams. Voir [Prise en main de votre mise à niveau de Microsoft Teams](/microsoftteams/upgrade-start-here) pour plus d’informations.
 
-\*\*\*Les conditions préalables et l’impact de la migration pour ces services sont décrits dans l’article Dynamics [365 Customer engagement.](/dynamics365/get-started/migrate-data-german-region)
+\*\*\*Les conditions préalables et l’impact de la migration pour ces services sont décrits dans l’article [Dynamics 365 Customer engagement.](/dynamics365/get-started/migrate-data-german-region)
 
 Office 365 Video va être mise hors services le 1er mars 2021. Si vous décidez de migrer votre client Office 365 vers les nouvelles régions du centre de données allemand, Office 365 Video ne sera plus prise en charge une fois la migration SharePoint Online terminée. Pour plus d’informations, consultez [la chronologie Microsoft Cloud Deutschland.](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
@@ -64,7 +64,7 @@ Office 365 Video va être mise hors services le 1er mars 2021. Si vous déci
 
 Cette figure montre les dix phases de migration vers les nouveaux centres de données allemands.
 
-![Les dix phases de migration vers les nouveaux centres de données allemands](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+:::image type="content" alt-text="Les dix phases de migration vers les nouveaux centres de données allemands" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
 Ces phases démarrent lorsque [vous optez pour la migration.](./ms-cloud-germany-migration-opt-in.md) La plupart des phases de migration sont exécutées en tant qu’opérations de service back end avec une interaction client minimale requise et sont exécutées une phase après l’autre. Le début des tâches supplémentaires dirigées par le client et l’état de migration global seront communiqués via le centre de messages du Centre d’administration Microsoft 365 pendant le processus de migration. Il peut s’agir, par exemple, de mises à jour DNS gérées par le client, de la reconfiguration de la configuration hybride pour Exchange clients hybrides ou de la migration Azure.
 
@@ -73,7 +73,7 @@ La migration ne commence pas immédiatement lorsque l’option d’opt-in se pro
 - [Actions et impacts des phases de migration](ms-cloud-germany-transition-phases.md)
 - [Pré-travail supplémentaire](ms-cloud-germany-transition-add-pre-work.md)
 
-Une semaine avant le début de la migration des clients, vous recevrez un avertissement final dans le service centre de messages vous avertissant que toutes les conditions préalables doivent être terminées.
+Une semaine avant le début de la migration des clients, vous recevrez un avertissement final dans le service du centre de messages vous avertissant que toutes les conditions préalables doivent être terminées.
 
 La migration déplace votre client Azure AD du service Azure AD allemand souverain vers l’instance de services Office 365 d’Azure AD dans la région de l’UE.
 
@@ -81,9 +81,9 @@ La phase suivante consiste à migrer vos abonnements&#39;client et les licences 
 
 Une fois toutes les étapes terminées, y compris la migration azure du client, votre client est finalisé dans le service de services Office 365 et la migration est marquée comme terminée. À ce stade, la mise à jour finale du centre de messages vous est fournie. Le client est désormais une organisation Office 365 globale.
 
-Vous êtes informé de l’avancement de la migration avec les publications du Centre de messages. Les publications auront lieu à des jalons spécifiques et fourniront des conseils sur la progression d’une étape, ainsi que des informations importantes sur les clients sur la base des exigences de processus. Les notifications du centre de messages sont fournies aux jalons suivants :
+Vous êtes informé de l’avancement de la migration avec les publications du Centre de messages. Les publications auront lieu à des jalons spécifiques et fourniront des instructions sur la progression d’une étape, ainsi que des informations importantes sur la façon dont les clients peuvent agir en fonction des exigences de processus. Les notifications du centre de messages sont fournies aux jalons suivants :
 
-- Début de la migration (5 jours ou jours ou moins avant le début de la migration Azure AD)
+- Début de la migration (5 jours ou jours ou moins avant le début de la migration d’Azure AD)
 - Migration d’Azure AD terminée
 - Migration des abonnements et des licences terminée
 - SharePoint migration terminée
@@ -93,11 +93,11 @@ Vous êtes informé de l’avancement de la migration avec les publications du C
 - Power BI terminé
 - Le cutover final des services est terminé
 
-Après le dernier passage d’Azure AD au service mondial, tous les clients et applications devraient être entièrement en transition pour utiliser les points de terminaison corrects. Il existe une fenêtre de 30 jours après le dernier passage où il est possible de continuer à obtenir des jetons Azure AD à partir du service Microsoft Cloud Deutschland. À l’expiration de la fenêtre de 30 jours, les clients et les applications ne pourront plus accéder aux points de terminaison Azure AD de Microsoft Cloud Deutschland. À partir de ce stade, l’accès des applications ou des utilisateurs échouera. Vous devez vous assurer que tous les utilisateurs et applications sont migrés vers les points de terminaison corrects avant la fermeture de cette fenêtre de temps. 
+Après le dernier passage d’Azure AD au service mondial, tous les clients et applications devraient être entièrement en transition pour utiliser les points de terminaison corrects. Il existe une fenêtre de 30 jours après le dernier passage à l’étape où il peut être possible de continuer à obtenir des jetons Azure AD à partir du service Microsoft Cloud Deutschland. À l’expiration de la fenêtre de 30 jours, les clients et les applications ne pourront plus accéder aux points de terminaison Azure AD de Microsoft Cloud Deutschland. À partir de ce stade, l’accès des applications ou des utilisateurs échouera. Vous devez vous assurer que tous les utilisateurs et applications sont migrés vers les points de terminaison corrects avant la fermeture de cette fenêtre de temps. 
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>Déplacement vers les nouvelles régions de centres de données allemandes
 
-Les clients Microsoft Cloud Deutschland existants peuvent désormais commencer à migrer leurs services Office 365, Dynamics 365 Customer Engagement et Power Platform. La première étape consiste à [opter pour une migration dirigée par Microsoft](./ms-cloud-germany-migration-opt-in.md) vers nos nouvelles régions de centre de données allemandes. Lorsque vous renouvelez votre abonnement, vous optez automatiquement pour une migration assisté par Microsoft. Microsoft informera les administrateurs clients par courrier électronique et dans le centre de messages du Centre d’administration Microsoft 365 client lorsque cela s’est produit. Toutefois, si vous préférez démarrer [](./ms-cloud-germany-migration-opt-in.md) le processus maintenant, vous pouvez l’opter directement dans Microsoft 365 centre d’administration dès aujourd’hui. Les migrations doivent commencer au début de 2021 et se terminer le 29 octobre 2021. 
+Les clients Microsoft Cloud Deutschland existants peuvent désormais commencer à migrer leurs services Office 365, Dynamics 365 Customer Engagement et Power Platform. La première étape consiste à [opter pour une migration dirigée par Microsoft](./ms-cloud-germany-migration-opt-in.md) vers nos nouvelles régions de centre de données allemandes. Lorsque vous renouvelez votre abonnement, vous optez automatiquement pour une migration assisté par Microsoft. Microsoft avertit les administrateurs clients par courrier électronique et dans le centre de messages du centre d’administration Microsoft 365 client lorsque cela s’est produit. Toutefois, si vous préférez démarrer [](./ms-cloud-germany-migration-opt-in.md) le processus maintenant, vous pouvez l’opter directement dans Microsoft 365 centre d’administration dès aujourd’hui. Les migrations doivent commencer au début de 2021 et se terminer le 29 octobre 2021. 
 
 Suite à la migration, les données client essentielles et les abonnements sont déplacés vers les nouvelles régions de centres de données allemandes.
 
@@ -106,7 +106,7 @@ Suite à la migration, les données client essentielles et les abonnements sont 
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Comment préparer la migration vers les services Office 365 dans les nouvelles régions de centre de données allemandes
 
-La première étape consiste à avertir Microsoft afin que nous ions votre autorisation pour migrer votre abonnement et vos données de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes. Pour obtenir des instructions, [reportez-vous](./ms-cloud-germany-migration-opt-in.md) au processus d’opt-in et notez que :
+La première étape consiste à avertir Microsoft afin que nous ions votre autorisation de migrer votre abonnement et vos données de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes. Pour obtenir des instructions, [reportez-vous](./ms-cloud-germany-migration-opt-in.md) au processus d’opt-in et notez que :
 
 - Tous les clients en migration doivent vérifier la connectivité aux URL et adresses IP Office 365 Services Office 365, qui incluent les nouvelles régions de centres de données [allemandes.](urls-and-ip-address-ranges.md) L’inaction peut entraîner une défaillance du service et du client.
 - Examinez la liste des [activités](ms-cloud-germany-transition-add-pre-work.md) préalables au travail pour vous assurer que votre organisation est informée et préparée pour les modifications.
@@ -121,14 +121,14 @@ Examinez la section Questions fréquemment posées ci-après.
 
 ### <a name="is-migration-required"></a>La migration est-elle obligatoire ?
 
-Microsoft offre Office 365 migration de client microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centres de données allemandes sans frais supplémentaires. Même si nous vous recommandons vivement d’opter pour la migration vers les nouvelles régions de centres de données allemandes, nous continuerons à fournir les mises à jour de sécurité nécessaires à la région Microsoft Cloud Deutschland.
+Microsoft offre une migration Office 365 client de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centres de données allemandes sans frais supplémentaires. Même si nous vous recommandons vivement d’opter pour la migration vers les nouvelles régions de centres de données allemandes, nous continuerons à fournir les mises à jour de sécurité nécessaires à la région Microsoft Cloud Deutschland.
 
 Office 365 services dans les nouvelles régions de centres de données allemandes :
 
 - Ils offrent des tarifs compétitifs pour [Azure](https://azure.microsoft.com/pricing/calculator/), [Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans), [Dynamics 365 Customer engagement](https://dynamics.microsoft.com/pricing/)et [Power BI](https://powerbi.microsoft.com/pricing/).
 - Sont connectés au réseau global de Microsoft&#39;, offrant des centaines de sites edge réseau, d’emplacements d’homologue et de points de sortie pour offrir une expérience utilisateur robuste partout dans le monde.
 - Ils vous aident à répondre aux exigences de résidence des données client en Allemagne.
-- Proposez notre offre cloud globale complète avec les versions les plus récentes de nos services et de nouvelles fonctionnalités, notamment Microsoft Teams et Multi-Géo dans Office 365. Ils permettent de comparer les produits par région pour [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&amp;regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](o365-data-locations.md) et [Dynamics 365](/dynamics365/get-started/availability).
+- Proposez notre offre de cloud mondial complète avec les versions les plus récentes de nos services et de nouvelles fonctionnalités, notamment Microsoft Teams et Multi-Géo dans Office 365. Ils permettent de comparer les produits par région pour [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&amp;regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](o365-data-locations.md) et [Dynamics 365](/dynamics365/get-started/availability).
 - Ils offrent toutes les fonctionnalités, une sécurité de qualité professionnelle et des fonctionnalités complètes pour aider les clients à respecter les exigences de conformité et de réglementation.
 - Ils sont accessibles via les contrats de services en ligne existants.
 
@@ -142,7 +142,7 @@ Les 15 services suivants sont disponibles dans l’offre de services cloud Micro
 3. Groupes (groupes modernes)
 4. Profil Delve
 5. Exchange Online Protection
-6. Defender pour Office 365
+6. Defender pour Office 365
 7. Advanced eDiscovery
 8. Gouvernance des données avancée
 9. SharePoint Online
@@ -153,16 +153,16 @@ Les 15 services suivants sont disponibles dans l’offre de services cloud Micro
 14. Office 365 Pro Plus
 15. Outlook Mobile
 
-Il existe actuellement 39 services disponibles dans le cadre de Office 365 services dans les nouvelles régions de centres de données allemandes. De nouvelles fonctionnalités et de nouveaux services sont régulièrement disponibles avec les services Office 365 globaux.
+Il existe actuellement 39 services disponibles dans le cadre des services Office 365 dans les nouvelles régions de centres de données allemandes. De nouvelles fonctionnalités et de nouveaux services sont régulièrement disponibles avec les services Office 365 globaux.
 
 1. Exchange Online
 2. Customer Lockbox for Exchange Online
-3. Groupes Microsoft 365
+3. Groupes Microsoft 365
 4. Profil Delve
 5. MyAnalytics
 6. Workplace Analytics
 7. Exchange Online Protection
-8. Defender pour Office 365
+8. Defender pour Office 365
 9. Advanced eDiscovery
 10. Gestion de la sécurité avancée
 11. Protection des informations pour Office 365 
@@ -180,7 +180,7 @@ Il existe actuellement 39 services disponibles dans le cadre de Office 365 servi
 23. Office pour le web
 24. Planificateur
 25. Sway
-26. Microsoft 365 Apps
+26. Microsoft 365 Apps
 27. Outlook Mobile
 28. Enterprise Mobility + Security (EMS) E3 (Azure AD Premium P1, Intune et Rights Management Service)
 29. Yammer Entreprise
@@ -201,11 +201,11 @@ Il existe actuellement 39 services disponibles dans le cadre de Office 365 servi
 
 Si vous êtes un client Azure [](/azure/germany/germany-migration-main) uniquement, vous pouvez commencer à migrer vos ressources Azure vers une autre région dès aujourd’hui. 
 
-Si vous avez Azure avec Office 365, Dynamics 365 ou Power BI, vous devez suivre le processus de migration pour garantir la réussite de la migration AzureAD avant de commencer la migration Azure auto-dirigée. Vous devez effectuer la migration Azure avant la fermeture du service afin de maintenir vos charges de travail Azure avec votre azureAD et Office 365 organisation.
+Si vous avez Azure avec Office 365, Dynamics 365 ou Power BI, vous devez d’abord suivre le processus de migration des services Office 365 pour garantir la réussite de la migration d’Azure AD avant de pouvoir commencer la migration Azure auto-dirigée. Vous devez effectuer la migration Azure avant de finaliser votre migration de client pour maintenir vos charges de travail Azure avec votre azure AD et Office 365 organisation. [Reportez-vous aux actions](ms-cloud-germany-transition-phases.md) et aux impacts des phases de migration pour la migration à partir de Microsoft Cloud Deutschland pour plus d’informations.
 
-**Office 365**
+**Office 365**
 
-[Optez](./ms-cloud-germany-migration-opt-in.md) pour la migration dirigée par Microsoft aujourd’hui. Lorsque nous sommes prêts à commencer votre migration, nous vous en informons via le centre de messages du centre d Microsoft 365'administration.
+[Optez](./ms-cloud-germany-migration-opt-in.md) pour la migration dirigée par Microsoft aujourd’hui. Lorsque nous sommes prêts à commencer votre migration, nous vous en informons via le centre de messages dans Microsoft 365 d’administration.
 
 **Dynamics 365 et Power BI**
 
@@ -215,9 +215,9 @@ Optez pour la migration pilotée par Microsoft pour [Dynamics 365 Customer Engag
 
 Oui. Les tarifs dans les&#39;cloud mondial de Microsoft (y compris les nouvelles régions de centres de données) sont généralement plus bas.
 
-### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>Pendant la migration de l’abonnement, quelles sont les SSO et les licences qui seront appliquées à mon organisation et aux utilisateurs ?
+### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>Pendant la migration de l’abonnement, quelles sont les S SKUs et les licences qui seront appliquées à mon organisation et aux utilisateurs ?
 
-Pendant la migration de Microsoft Cloud Deutschland vers les services Office 365, les références SKU spécifiques au service allemand sont remplacées par des versions globales de la même référence SKU ou d’une référence similaire. Dans la plupart des cas, la référence (SKU) dans les services Office 365 est identique, mais il existe peu de remplacements où la référence (SKU) en Allemagne n’est plus disponible dans les services Office 365. Si vous souhaitez mettre à jour la référence (SKU) attribuée à votre organisation une fois la migration terminée, contactez votre vendeur pour ajouter ou modifier les services affectés.
+Pendant la migration de Microsoft Cloud Deutschland vers les services Office 365, les références SKU propres au service allemand sont remplacées par des versions globales de la même référence SKU ou d’une référence similaire. Dans la plupart des cas, la référence (SKU) dans les services Office 365 est identique, mais il existe peu de remplacements où la référence (SKU) en Allemagne n’est plus disponible dans les services Office 365. Si vous souhaitez mettre à jour la référence (SKU) attribuée à votre organisation une fois la migration terminée, contactez votre vendeur pour ajouter ou modifier les services affectés.
 
 | Microsoft Cloud Deutschland - Product SKU (DE) | Microsoft Cloud Global - Référence du produit (WW) |
 | --- | --- |
@@ -303,7 +303,7 @@ La migration est conçue pour avoir un impact minimal sur les utilisateurs finau
 
 ### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>Quels clients sont concernés par la migration Azure Active Directory migration ? 
 
-Tous les clients d’Office 365 Azure Active Directory authentifier et stocker les composants de service critiques nécessaires au fonctionnement des services hébergés par Microsoft. 
+Tous les clients de Office 365 comptent sur Azure Active Directory authentifier et stocker les composants de service critiques nécessaires au fonctionnement des services hébergés par Microsoft. 
 
 
 ### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>Quels sont les impacts de la migration Azure Active Directory migration ?
@@ -316,7 +316,7 @@ La migration initiale de Azure Active Directory en phase préliminaire n’a auc
 Cet article décrit les URL et adresses IP nécessaires pour une bonne fonction du service global afin de garantir une bonne expérience client. Dans des cas relativement rares, certains clients tentent de configurer la sécurité du périmètre réseau de manière à minimiser les flux de trafic et ont un accès restreint aux services à ceux-ci uniquement dans le cadre des plages d’adresses IP du service Microsoft Cloud Deutschland.
 
 
-### <a name="how-do-i-manage-the-dns-changes-for-exchange-online-so-mail-will-continue-to-flow"></a>Comment puis-je gérer les modifications DNS pour Exchange Online pour que le courrier continue de circuler ?
+### <a name="how-do-i-manage-the-dns-changes-for-exchange-online-so-mail-will-continue-to-flow"></a>Comment gérer les modifications DNS pour Exchange Online pour que le courrier continue de circuler ?
 
 Les plages IP gérées par Microsoft et les zones DNS sont transitionn es pendant et dans le cadre de la migration vers le service global. 
 
@@ -325,12 +325,12 @@ Les zones DNS gérées par le client telles que les enregistrements MX de domain
 
 ### <a name="how-do-i-manage-the-dns-changes-for-skype-for-business"></a>Comment gérer les modifications DNS pour les Skype Entreprise ? 
  
-Tous les Skype entreprise de l’entreprise passeront à Microsoft Teams. La transition des zones DNS Skype client n’est pas requise lors de la migration vers Teams. Les clients pourront se Teams immédiatement avec toutes les fonctionnalités après la migration.
+Tous les Skype pour les entreprises passeront à la Microsoft Teams. La transition des zones DNS Skype client n’est pas requise lors de la migration vers Teams. Les clients pourront se Teams immédiatement avec toutes les fonctionnalités après la migration.
  
 
 ### <a name="will-outlook-for-ios-and-android-work-after-the-migration"></a>Les Outlook pour iOS et Android fonctionneront-ils après la migration ? 
 
-Oui. La recommandation de Microsoft est que tous les clients exécutent les dernières versions disponibles de Office clients, y compris Outlook clients iOS et Android. À la fin de la migration vers le service global Office 365, tous les clients Office doivent se déconnecter et se connecter pour obtenir un nouveau jeton d’accès Azure Active Directory auprès du service global. 
+Oui. La recommandation de Microsoft est que tous les clients exécutent les dernières versions disponibles de Office clients, y compris Outlook clients iOS et Android. À la fin de la migration vers le service global Office 365, tous les clients Office devront se déconnecter et se connecter pour obtenir un nouveau jeton d’accès Azure Active Directory auprès du service global. 
 
 
 
@@ -356,4 +356,4 @@ Applications cloud :
 
 - [Informations sur le programme de migration Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
 - [Informations sur le programme de migration Power BI](/power-bi/admin/service-admin-migrate-data-germany)
-- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)
+- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)

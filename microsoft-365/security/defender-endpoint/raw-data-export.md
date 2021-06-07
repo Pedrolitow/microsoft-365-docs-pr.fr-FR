@@ -1,6 +1,6 @@
 ---
-title: Événements Stream Microsoft 365 Defender
-description: Découvrez comment configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers des hubs d’événements ou un compte de stockage Azure
+title: Événement Stream Microsoft Defender for Endpoint
+description: Découvrez comment configurer Microsoft Defender pour le point de terminaison pour diffuser des événements de recherche avancée vers des hubs d’événements ou un compte de stockage Azure
 keywords: exportation de données brutes, API de diffusion en continu, API, hubs d’événements, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,35 +16,38 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 971cc757dcbd0a190917d2a5f11eb7f68b758008
-ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
+ms.openlocfilehash: 27d1b36f3e49112a2da95f9268c0e05fcaa72c89
+ms.sourcegitcommit: f0118e61e490496cb23189cc5c73b23e2ba939be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52778196"
+ms.locfileid: "52780140"
 ---
-# <a name="streaming-api"></a>API de diffusion en continu
+# <a name="raw-data-streaming-api"></a>API de diffusion de données brutes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Diffusez des événements de recherche avancée sur des hubs d’événements et/ou un compte de stockage Azure.
 
-Microsoft 365 Defender prend en charge la diffusion en continu de tous les événements disponibles via [la](../defender/advanced-hunting-overview.md) recherche avancée vers un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/event-hubs/)
+Defender pour le point de terminaison prend en charge la diffusion en continu de tous les événements disponibles via la recherche avancée vers un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/event-hubs/) [](advanced-hunting-overview.md)
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
 
 ## <a name="in-this-section"></a>Dans cette section
 
 Rubrique | Description
 :---|:---
-[Flux d’événements dans les Hubs d’événements Azure](raw-data-export-event-hub.md)| En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser en continu le recherche avancée [sur](../defender/advanced-hunting-overview.md) les hubs d’événements.
-[Flux d’événements sur votre compte de stockage Azure](raw-data-export-storage.md)| Découvrez comment activer l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser en continu la recherche avancée [sur](../defender/advanced-hunting-overview.md) votre compte de stockage Azure.
+[Diffuser des événements Microsoft Defender for Endpoint vers des Hubs d’événements Azure](raw-data-export-event-hub.md)| En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Defender pour le point de terminaison pour diffuser en continu [la](advanced-hunting-overview.md) recherche avancée vers les hubs d’événements.
+[Événements Stream Defender for Endpoint sur votre compte de stockage Azure](raw-data-export-storage.md)| En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Defender pour le point de terminaison pour diffuser en continu la recherche [avancée](advanced-hunting-overview.md) sur votre compte de stockage Azure.
 
 
 ## <a name="related-topics"></a>Voir aussi
-- [Vue d’ensemble du chasse avancée](../defender/advanced-hunting-overview.md)
+- [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
 - [Documentation Azure Event Hubs](/azure/event-hubs/)
 - [stockage Azure Documentation du compte](/azure/storage/common/storage-account-overview)
