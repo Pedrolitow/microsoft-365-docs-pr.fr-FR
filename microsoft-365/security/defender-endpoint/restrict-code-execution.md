@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 149f3aefd963f15eafa15030a322ec588c0615ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7195e91a3a9b7aef6977c925f2c8689d3e461815
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186777"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771572"
 ---
 # <a name="restrict-app-execution-api"></a>API Restreindre l’exécution de l’application
 
@@ -28,7 +29,7 @@ ms.locfileid: "51186777"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -40,10 +41,10 @@ ms.locfileid: "51186777"
 
 
 ## <a name="api-description"></a>Description de l’API
-Restreindre l’exécution de toutes les applications sur l’appareil à l’exception d’un ensemble prédéféré.
+Limiter l’exécution de toutes les applications sur l’appareil à l’exception d’un ensemble prédéféré.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -71,7 +72,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/restrictCodeExec
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | string | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande

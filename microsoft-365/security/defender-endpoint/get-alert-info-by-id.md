@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f9130b054ccea762e6c5cc4f2952bbfa82d24b83
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: b9de7645abc59849b3ca28f64904b0ba49d4eef5
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200424"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771896"
 ---
 # <a name="get-alert-information-by-id-api"></a>Obtenir des informations d’alerte par API d’ID
 
@@ -40,7 +41,7 @@ ms.locfileid: "51200424"
 Récupère une alerte [spécifique par](alerts.md) son ID.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Vous pouvez obtenir la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -69,11 +70,11 @@ GET /api/alerts/{id}
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande
 Vide
 
 ## <a name="response"></a>Réponse
-Si elle réussit, cette méthode renvoie 200 OK et l’entité [d’alerte](alerts.md) dans le corps de la réponse. Si l’alerte avec l’ID spécifié est in trouvée - 404 - In trouvé.
+Si elle réussit, cette méthode renvoie 200 OK et l’entité d’alerte dans le corps de la réponse. [](alerts.md) Si l’alerte avec l’ID spécifié est in trouvée - 404 - In trouvé.

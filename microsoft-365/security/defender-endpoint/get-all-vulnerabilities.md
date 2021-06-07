@@ -1,6 +1,6 @@
 ---
 title: Obtenir toutes les vulnérabilités
-description: Récupère une liste de toutes les vulnérabilités affectant l'organisation
+description: Récupère une liste de toutes les vulnérabilités affectant l’organisation
 keywords: api, api de graphique, api pris en charge, obtenir, informations de vulnérabilité, api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bfce003f586c5bfa32d65c834bb244ac13f6cf31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e9dd7e7d87e9343b0aae93e7ba47d89f9ed4bf41
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935088"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769004"
 ---
 # <a name="list-vulnerabilities"></a>Répertorier des vulnérabilités
 
@@ -28,7 +29,7 @@ ms.locfileid: "51935088"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -38,12 +39,12 @@ ms.locfileid: "51935088"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère une liste de toutes les vulnérabilités affectant l'organisation.
+Récupère une liste de toutes les vulnérabilités affectant l’organisation.
 
 ## <a name="permissions"></a>Autorisations
-L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d'informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d'informations.
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
+Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
 :---|:---|:---
 Application |   Vulnerability.Read.All |    « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | Vulnerability.Read |   « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
@@ -109,4 +110,4 @@ Voici un exemple de la réponse.
 
 ## <a name="see-also"></a>Voir aussi
 - [Gestion des menaces & vulnérabilité basée sur les risques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités dans votre organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Vulnérabilités de votre organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

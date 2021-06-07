@@ -1,5 +1,5 @@
 ---
-title: Méthodes et propriétés logicielles
+title: Méthodes et propriétés du logiciel
 description: Récupère les principales alertes récentes.
 keywords: api, api de graphique, api pris en charge, obtenir, alertes, récent
 search.product: eADQiWindows 10XVcnh
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9bfec2c4e65a390189556c14347eaf17236fb95e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187199"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771400"
 ---
 # <a name="software-resource-type"></a>Type de ressource logicielle
 
@@ -28,7 +29,7 @@ ms.locfileid: "51187199"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
@@ -45,22 +46,22 @@ ms.locfileid: "51187199"
 
 Méthode |Type renvoyé |Description
 :---|:---|:---
-[List software](get-software.md) | Collection de logiciels | Liste de l’inventaire logiciel de l’organisation.
-[Obtenir le logiciel par ID](get-software-by-id.md) | Logiciels | Obtenez un logiciel spécifique par son ID logiciel.
-[Liste de la distribution des versions des logiciels](get-software-ver-distribution.md)| Collection de distribution | Liste de la distribution des versions des logiciels par ID logiciel.
-[Lister les ordinateurs par logiciel](get-machines-by-software.md)| Collection MachineRef | Récupérez la liste des appareils associés à l’ID logiciel.
-[Liste des vulnérabilités par logiciel](get-vuln-by-software.md) | [Collection de vulnérabilités](vulnerability.md) | Récupérez la liste des vulnérabilités associées à l’ID logiciel.
-[Obtenir les ko manquants](get-missing-kbs-software.md) | Collection KB | Obtenir la liste des ko manquants associés à l’ID logiciel
+[Répertorier les logiciels](get-software.md) | Collection de logiciels | Liste de l’inventaire logiciel de l’organisation.
+[Obtenir un logiciel par ID](get-software-by-id.md) | Logiciels | Obtenez un logiciel spécifique par son ID logiciel.
+[Répertorier la distribution de versions du logiciel](get-software-ver-distribution.md)| Collection de distribution | Liste de la distribution des versions des logiciels par ID logiciel.
+[Répertorier les ordinateurs par logiciel](get-machines-by-software.md)| Collection MachineRef | Récupérez la liste des appareils associés à l’ID logiciel.
+[Répertorier les vulnérabilités par logiciel](get-vuln-by-software.md) | [Collection de vulnérabilités](vulnerability.md) | Récupérez la liste des vulnérabilités associées à l’ID logiciel.
+[Obtenir des Ko manquants](get-missing-kbs-software.md) | Collection KB | Obtenir la liste des ko manquants associés à l’ID logiciel
 
 ## <a name="properties"></a>Propriétés
 
 Propriété |   Type   |   Description
 :---|:---|:---
-id | Chaîne | ID logiciel
-Nom | Chaîne | Nom du logiciel
-Fournisseur | Chaîne | Nom du fournisseur de logiciels
+id | String | ID logiciel
+Nom | String | Nom du logiciel
+Fournisseur | String | Nom du fournisseur de logiciels
 Faiblesses | Entier long | Nombre de vulnérabilités découvertes
-publicExploit | Booléen | Une exploitation publique existe pour certaines vulnérabilités
-activeAlert | Booléen | L’alerte active est associée à ce logiciel
+publicExploit | Boolean | Une exploitation publique existe pour certaines vulnérabilités
+activeAlert | Boolean | L’alerte active est associée à ce logiciel
 exposedMachines | Entier long | Nombre d’appareils exposés
 impactScore | Double | Impact du score d’exposition de ce logiciel

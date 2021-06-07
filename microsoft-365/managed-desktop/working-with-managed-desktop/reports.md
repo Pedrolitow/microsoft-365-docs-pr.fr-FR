@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 28035a9f0a669c1daa7526d0b1fefac52a77c81a
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b37ce09a0781aa83970502224ddbb3658ed07d69
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52729967"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771884"
 ---
 # <a name="work-with-reports"></a>Utiliser les rapports
 
-Bureau géré Microsoft fournit plusieurs rapports et tableaux de bord que les administrateurs informatiques de votre organisation peuvent utiliser pour comprendre différents aspects de la population d’appareils.Vous trouverez des rapports à deux emplacements : dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com) et dans le [centre d Microsoft 365'administration.](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop) 
+Bureau géré Microsoft fournit plusieurs rapports et tableaux de bord que les administrateurs informatiques de votre organisation peuvent utiliser pour comprendre différents aspects de la population d’appareils. 
 
 ## <a name="reports-in-microsoft-endpoint-manager"></a>Rapports dans Microsoft Endpoint Manager
 
@@ -37,6 +37,13 @@ En outre, dans plusieurs emplacements dans Microsoft Endpoint Manager vous pouve
 > [!NOTE]
 > Les rôles Bureau géré Microsoft personnalisés garantissent l’accès uniquement aux Bureau géré Microsoft rapports. Pour accéder à d’autres parties Microsoft Endpoint Manager, telles que tous les **appareils,** voir Contrôle d’accès basé sur un [rôle avec Microsoft Intune](/mem/intune/fundamentals/role-based-access-control). 
 
+## <a name="endpoint-analytics"></a>Analyse des points de terminaison
+Bureau géré Microsoft est désormais intégré à [l’analyse des points de terminaison.](/mem/analytics/overview) Ces rapports vous donnent des informations sur la mesure du fonctionnement de votre organisation et de la qualité de l’expérience qu’ils offrent à vos utilisateurs. L’analyse des points de terminaison se trouve **dans le** menu Rapports [de Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Pour faire pivoter un score afin d’inclure uniquement les  appareils gérés par Bureau géré Microsoft allez à n’importe quel rapport, sélectionnez le filtre de la baisse, puis sélectionnez Bureau géré Microsoft **appareils.**
+
+Si l’analyse des points de terminaison n’a pas été configurée automatiquement pour votre organisation Azure AD (« client ») lors de l’inscription, vous pouvez le faire vous-même. Pour plus d’informations, [voir Intégrer dans le portail d’analyse des points de terminaison.](/mem/analytics/enroll-intune#bkmk_onboard) Vous pouvez inscrire tous vos appareils ou, si vous souhaitez inclure  uniquement des appareils Bureau géré Microsoft, sélectionnez les groupes d’appareils d’espace de travail modernes pour Test, Premier, Rapide et Large. Ces rapports peuvent nécessiter des autorisations différentes. Pour plus d’informations, [voir Autorisations](/mem/analytics/overview#permissions) pour vous assurer que des rôles sont correctement attribués.
+
+> [!NOTE]
+> Pour mieux respecter la confidentialité des données utilisateur, il doit y avoir plus de 10 appareils Bureau géré Microsoft inscrits avec Endpoint Analytics pour utiliser ce filtre.
 
  ## <a name="inventory-data"></a>Données d’inventaire
 

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 42bab0a9d20d5e1ef78b98b3538cef209240d890
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ce0dc0ce255e9717082687bd1f8bf5941739261d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187255"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771704"
 ---
 # <a name="submit-or-update-indicator-api"></a>API d’indicateur d’soumission ou de mise à jour
 
@@ -28,7 +29,7 @@ ms.locfileid: "51187255"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -41,13 +42,13 @@ ms.locfileid: "51187255"
 Envoie ou met à jour une nouvelle [entité d’indicateur.](ti-indicator.md)
 <br>La notation CIDR pour les IPs n’est pas prise en charge.
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 2. Il existe une limite de 15 000 indicateurs actifs par client. 
 
 
 ## <a name="permissions"></a>Autorisations
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez La mise [en place](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, [consultez La](apis-intro.md) mise en place
 
 Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -65,7 +66,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | string | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -73,16 +74,16 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 
 Paramètre | Type    | Description
 :---|:---|:---
-indicatorValue | Chaîne | Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
+indicatorValue | String | Identité de [l’entité Indicateur.](ti-indicator.md) **Obligatoire**
 indicatorType | Énum | Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ». **Obligatoire**
 action | Énum | Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ». **Obligatoire**
-application | Chaîne | Application associée à l’indicateur. **Optional**
-title | Chaîne | Titre de l’alerte de l’indicateur. **Obligatoire**
-description | Chaîne | Description de l’indicateur. **Obligatoire**
+application | String | Application associée à l’indicateur. **Optional**
+title | String | Titre de l’alerte de l’indicateur. **Obligatoire**
+description | String | Description de l’indicateur. **Obligatoire**
 expirationTime | DateTimeOffset | Heure d’expiration de l’indicateur. **Optional**
 Sévérité  | Énum | Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ». **Optional**
-recommendedActions | Chaîne | Actions recommandées pour l’alerte d’indicateur TI. **Optional**
-rbacGroupNames | Chaîne | Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
+recommendedActions | String | Actions recommandées pour l’alerte d’indicateur TI. **Optional**
+rbacGroupNames | String | Liste séparée par des virgules des noms de groupe RBAC à appliquer à l’indicateur. **Optional**
 
 
 ## <a name="response"></a>Réponse
@@ -115,4 +116,4 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 ```
 
 ## <a name="related-topic"></a>Rubrique connexe
-- [Gérer les indicateurs](manage-indicators.md)
+- [Gérer des indicateurs](manage-indicators.md)

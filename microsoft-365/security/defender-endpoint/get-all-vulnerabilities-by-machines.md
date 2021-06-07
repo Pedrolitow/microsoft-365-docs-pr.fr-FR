@@ -1,6 +1,6 @@
 ---
 title: Obtenir toutes les vulnérabilités par ordinateur et par logiciel
-description: Récupère une liste de toutes les vulnérabilités affectant l'organisation par l'ordinateur et les logiciels
+description: Récupère une liste de toutes les vulnérabilités affectant l’organisation par l’ordinateur et les logiciels
 keywords: api, api de graphique, api pris en charge, obtenir, informations de vulnérabilité, api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3aa58f3df4a4c3562cbd4dfbf6113c30816e2a0f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933408"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769196"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Répertorier les vulnérabilités par ordinateur et logiciel
 
@@ -28,7 +29,7 @@ ms.locfileid: "51933408"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -37,18 +38,18 @@ ms.locfileid: "51933408"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Récupère une liste de toutes les vulnérabilités affectant l'organisation par [ordinateur et](machine.md) [par logiciel.](software.md)
+Récupère une liste de toutes les vulnérabilités affectant l’organisation par [ordinateur et](machine.md) [par logiciel.](software.md)
 - Si la vulnérabilité a une ko de réparation, elle apparaît dans la réponse.
 - Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 - OData est ```$filter``` pris en charge sur toutes les propriétés.
 
 >[!Tip]
->Il s'agit d'une EXCELLENTE API pour [l'intégration de Power BI.](api-power-bi.md)
+>Il s’agit d’une EXCELLENTE API [pour Power BI’intégration.](api-power-bi.md)
 
 ## <a name="permissions"></a>Autorisations
-L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d'informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d'informations.
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
+Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
 :---|:---|:---
 Application |   Vulnerability.Read.All |    « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | Vulnerability.Read |   « Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités »
@@ -119,5 +120,5 @@ Voici un exemple de la réponse.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des menaces et des vulnérabilités basée sur les risques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Gestion des risques Gestion des menaces et des vulnérabilités](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Vulnérabilités dans votre organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

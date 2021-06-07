@@ -1,5 +1,5 @@
 ---
-title: Obtenir des informations sur les domaines associés à une alerte
+title: Obtenir les informations des domaines liés à l’alerte
 description: Récupérez tous les domaines liés à une alerte spécifique à l’aide de Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir des informations d’alerte, informations d’alerte, domaine associé
 search.product: eADQiWindows 10XVcnh
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cb09b23df8243d970069d087976ddc79394b67d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: a5f3db65b42d8dc98c11f2ef2c3c5d509340e386
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200412"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771260"
 ---
 # <a name="get-alert-related-domain-information-api"></a>API Obtenir les informations de domaine associées à une alerte
 
@@ -38,7 +39,7 @@ ms.locfileid: "51200412"
 Récupère tous les domaines liés à une alerte spécifique.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -65,7 +66,7 @@ GET /api/alerts/{id}/domains
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande

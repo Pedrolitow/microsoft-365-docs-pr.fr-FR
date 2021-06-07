@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639406"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771908"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender pour le point de terminaison dans le centre Microsoft 365 sécurité
 
@@ -38,7 +38,7 @@ ms.locfileid: "52639406"
 
 ## <a name="quick-reference"></a>Référence rapide
 
-L’image et le tableau ci-dessous répertorient les modifications apportées à la navigation entre le Centre de sécurité Microsoft Defender et le centre Microsoft 365 de sécurité.
+L’image et le tableau ci-dessous répertorient les modifications apportées à la navigation entre le Centre de sécurité Microsoft Defender et le centre Microsoft 365 sécurité.
 
 > [!div class="mx-imgBorder"]
 > ![Image de ce qui a été déplacé vers l’endroit](../../media/mde-m3d-security-center.png)
@@ -46,9 +46,9 @@ L’image et le tableau ci-dessous répertorient les modifications apportées à
 | Centre de sécurité Microsoft Defender | Centre de sécurité Microsoft 365 |
 |---------|---------|
 | Tableaux de bord <ul><li>Opérations de sécurité</li><li>Analyses de menaces</li></ul>  |Accueil <ul><li>Analyses de menaces</li></ul>   |
-| Incidents | Incidents & alertes |
+| Incidents | Incidents et & alertes |
 | Inventaire des appareils | Inventaire des appareils |
-| File d’attente des alertes | Incidents & alertes |
+| File d’attente des alertes | Incidents et & alertes |
 | Enquêtes automatisées | Centre de notifications |
 | Repérage avancé | Repérage |
 | Rapports | Rapports |
@@ -83,14 +83,14 @@ En savoir plus sur les avantages : [Vue d’ensemble du centre de sécurité Mic
 
 ## <a name="whats-changed"></a>Fonctionnalités modifiées
 
-Ce tableau est une référence rapide des modifications apportées entre le Centre de sécurité Microsoft Defender et le centre Microsoft 365 sécurité.
+Ce tableau est une référence rapide des modifications apportées entre le centre de sécurité Centre de sécurité Microsoft Defender et le centre Microsoft 365 de sécurité.
 
 ### <a name="alerts-and-actions"></a>Alertes et actions
 
 | Domaine | Description de la modification |
 |---------|---------|
-| [Incidents & alertes](incidents-overview.md)  | Dans le Microsoft 365 de sécurité, vous pouvez gérer les incidents et les alertes sur l’ensemble de vos points de terminaison, e-mail et identités. Nous avons convergé l’expérience pour vous aider à trouver plus facilement des événements connexes. Pour plus d’informations, voir [Vue d’ensemble des incidents.](incidents-overview.md)   |
-| [Repérage](advanced-hunting-overview.md)  |  La modification des règles de détection personnalisées créées dans Microsoft Defender pour le point de terminaison afin d’inclure des tables d’identité et de messagerie les déplace automatiquement vers Microsoft 365 Defender. Leurs alertes correspondantes apparaissent également dans Microsoft 365 Defender. Pour plus d’informations sur ces modifications, voir [Migrer des règles de détection personnalisées.](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules) <br><br>Le `DeviceAlertEvents` tableau de recherche avancée n’est pas disponible dans Microsoft 365 Defender. Pour interroger des informations d’alerte spécifiques à l’appareil dans Microsoft 365 Defender, vous pouvez utiliser les tables et les tableaux pour prendre en charge davantage d’informations provenant d’un ensemble de `AlertInfo` `AlertEvidence` sources variés. Créer votre prochaine requête liée à l’appareil en suivant les requêtes [d’écriture sans DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
+| [Incidents et & alertes](incidents-overview.md)  | Dans le Microsoft 365 de sécurité, vous pouvez gérer les incidents et les alertes sur l’ensemble de vos points de terminaison, e-mail et identités. Nous avons convergé l’expérience pour vous aider à trouver plus facilement des événements connexes. Pour plus d’informations, voir [Vue d’ensemble des incidents.](incidents-overview.md)   |
+| [Repérage](advanced-hunting-overview.md)  |  La modification des règles de détection personnalisées créées dans Microsoft Defender pour le point de terminaison afin d’inclure des tables d’identité et de messagerie les déplace automatiquement vers Microsoft 365 Defender. Leurs alertes correspondantes apparaissent également dans Microsoft 365 Defender. Pour plus d’informations sur ces modifications, voir [Migrer des règles de détection personnalisées.](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules) <br><br>Le `DeviceAlertEvents` tableau de recherche avancée n’est pas disponible dans Microsoft 365 Defender. Pour interroger des informations d’alerte spécifiques au périphérique dans Microsoft 365 Defender, vous pouvez utiliser les tables et les tableaux pour prendre en charge davantage d’informations provenant d’un ensemble de `AlertInfo` `AlertEvidence` sources variés. Créer votre prochaine requête liée à l’appareil en suivant les requêtes [d’écriture sans DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
 |[Centre de notifications](m365d-action-center.md)    | Répertorie les actions en attente et terminées qui ont été effectuées à la suite d’examens automatisés et d’actions de correction. Auparavant, le centre de gestion des Centre de sécurité Microsoft Defender listait les actions en attente et terminées pour les actions de correction effectuées uniquement sur les appareils, tandis que les enquêtes automatisées listaient les alertes et l’état. Dans le centre de sécurité Microsoft 365 amélioré, le centre de mise en œuvre regroupe les actions de correction et les enquêtes sur le courrier électronique, les appareils et les utilisateurs, le tout dans un seul emplacement.  |
 | [Analyses de menaces](threat-analytics.md) |  Déplacé vers le haut de la barre de navigation pour faciliter la découverte et l’utilisation. Inclut désormais des informations sur les menaces pour les points de terminaison et la messagerie et la collaboration.    |
 
@@ -98,7 +98,7 @@ Ce tableau est une référence rapide des modifications apportées entre le Cent
 
 | Domaine | Description de la modification |
 |---------|---------|
-|Recherche   |  Au lieu d’être dans l’en-tête, la barre de recherche Microsoft Defender pour les points de terminaison se déplace sous la section Points de terminaison. Vous pouvez continuer à rechercher des appareils, des fichiers, des utilisateurs, des URL, des adresses INTERNET, des vulnérabilités, des logiciels et des recommandations.  |
+|Rechercher   |  Au lieu d’être dans l’en-tête, la barre de recherche Microsoft Defender pour les points de terminaison se déplace sous la section Points de terminaison. Vous pouvez continuer à rechercher des appareils, des fichiers, des utilisateurs, des URL, des adresses INTERNET, des vulnérabilités, des logiciels et des recommandations.  |
 |[Tableau de bord](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Il s’agit de votre tableau de bord des opérations de sécurité. Consultez une vue d’ensemble du nombre d’alertes actives déclenchées, des appareils à risque, des utilisateurs à risque et du niveau de gravité pour les alertes, les appareils et les utilisateurs. Vous pouvez également voir si des appareils ont des problèmes de capteur, l’état global de votre service et la façon dont des alertes non résolues ont été détectées. |
 |Inventaire des appareils | Aucune modification. |
 |[Gestion des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Le nom a été raccourci pour tenir dans le volet de navigation. Il est identique à la section Gestion des menaces et des vulnérabilités, avec toutes les pages en dessous.     |
@@ -110,7 +110,7 @@ Ce tableau est une référence rapide des modifications apportées entre le Cent
 > **L’examen et la correction** automatiques font désormais partie des incidents. Vous pouvez voir les événements d’investigation et de correction automatisés dans **l’onglet Incident > Investigation.**
 
 > [!TIP]
-> La recherche d’appareil est effectuée à partir de points de terminaison > recherche.
+> La recherche d’appareil est effectuée à partir des points de terminaison > recherche.
 
 ### <a name="access-and-reporting"></a>Accès et rapports
 
@@ -176,7 +176,11 @@ Si vous utilisez [l’API SIEM defender pour point](../defender-endpoint/enable-
 
 ### <a name="email-alerts"></a>Alertes par courrier électronique
 
-Vous pouvez continuer à utiliser les alertes par courrier électronique pour Defender for Endpoint. Nous avons ajouté de nouveaux liens dans les e-mails qui pointent vers la page d’alerte ou la page incident dans le centre Microsoft 365 de sécurité. Pour plus d’informations, voir Redirection des comptes de Microsoft Defender pour le point de terminaison [vers le centre Microsoft 365 de sécurité.](./microsoft-365-security-mde-redirection.md)
+Vous pouvez continuer à utiliser les alertes par courrier électronique pour Defender for Endpoint. Nous avons ajouté de nouveaux liens dans les e-mails qui pointent vers la page d’alerte ou la page d’incident dans Microsoft 365 de sécurité. Pour plus d’informations, voir Redirection des comptes de Microsoft Defender pour le point de terminaison [vers le centre Microsoft 365 de sécurité.](./microsoft-365-security-mde-redirection.md)
+
+### <a name="managed-security-service-providers-mssp"></a>Fournisseurs de services de sécurité gérés (MSSP)
+
+La connexion à plusieurs locataires simultanément dans la même session de navigation n’est actuellement pas prise en charge dans le portail unifié. Vous pouvez refuser la redirection automatique en revenir à l’ancien portail [Microsoft Defender pour](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal)points de terminaison pour conserver cette fonctionnalité jusqu’à ce que le problème soit résolu.
 
 ## <a name="related-information"></a>Informations connexes
 

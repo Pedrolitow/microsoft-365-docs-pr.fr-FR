@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635449"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782485"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -35,7 +35,7 @@ Une déploiement centralisé offre les avantages suivants :
   
 - Un administrateur général peut affecter un add-in directement à un utilisateur, à plusieurs utilisateurs via un groupe ou à tous les membres de l’organisation.
     
-- Lorsque l’application Office est en cours de démarrage, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
+- Lorsque l’application Office pertinente démarre, le add-in se télécharge automatiquement. Si le add-in prend en charge les commandes de Office, il apparaît automatiquement dans le ruban.
     
 - Les add-ins n’apparaissent plus pour les utilisateurs si l’administrateur le éteint ou le supprime, ou si l’utilisateur est supprimé de Azure Active Directory ou d’un groupe à qui le module est affecté.
 
@@ -84,13 +84,13 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Contrôle de compatibilité du déploiement centralisé
 
-À l’aide du contrôle de compatibilité du déploiement centralisé, vous pouvez vérifier si les utilisateurs de votre client sont configurer pour utiliser le déploiement centralisé pour Word, Excel et PowerPoint. Le vérificateur de compatibilité n'est pas requis pour la prise en charge d'Outlook. Téléchargez le vérificateur de compatibilité [ici](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+À l’aide du contrôle de compatibilité du déploiement centralisé, vous pouvez vérifier si les utilisateurs de votre client sont configurer pour utiliser le déploiement centralisé pour Word, Excel et PowerPoint. Le vérificateur de compatibilité n'est pas requis pour la prise en charge d'Outlook. Téléchargez [le contrôle de compatibilité.](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)
   
 #### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
   
-1. Démarrez une fenêtre avec PowerShell.exe élevée.
+1. Démarrez une fenêtre PowerShell.exe avec élévation de PowerShell.exe.
     
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
 
    ```powershell
    Import-Module O365CompatibilityChecker
@@ -101,7 +101,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
+   Cette commande vous demande  *_TenantDomain_* (par exemple, *TailspinToysIncorporated.onmicrosoft). </span> com*) et  *_Les informations d’identification TenantAdmin_* (utilisez vos informations d’identification d’administrateur global), puis demande le consentement.
     
    > [!NOTE]
    > Selon le nombre d'utilisateurs dans votre client, l'exécution du vérificateur peut prendre quelques minutes ou plusieurs heures. 
@@ -121,11 +121,11 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
 - Boîte aux lettres prise en charge - Si l'utilisateur a une boîte aux lettres OAuth
 
 > [!NOTE]
-> L’authentification multifacteur n’est pas prise en charge lors de l’utilisation du module PowerShell de déploiement central.
+> L’authentification multifacteur n’est pas prise en charge lors de l’utilisation du module PowerShell de déploiement central. Le module fonctionne uniquement avec l’authentification de base.
   
 ## <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
 
-La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par les Azure Active Directory, y compris les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
+La fonctionnalité déploiement centralisé prend actuellement en charge la majorité des groupes pris en charge par les Azure Active Directory, notamment les groupes Microsoft 365, les listes de distribution et les groupes de sécurité.
   
 > [!NOTE]
 > Les groupes de sécurité sans extension messagerie ne sont pas actuellement pas pris en charge. 
@@ -155,7 +155,7 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-
   
 |**Plateforme**|**Informations de débogage**|
 |:-----|:-----|
-|Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ( [Découvrez comment](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ( [Découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clients riches (Windows, Mac)  <br/> | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)**  <br/> |
 
 ## <a name="related-content"></a>Contenu associé

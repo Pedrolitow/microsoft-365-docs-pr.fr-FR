@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538534"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769292"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -93,7 +93,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |Pièces jointes Exchange vérifiées pour les conditions|Non | Oui|
 |Appliquer des marquages visuels |Oui |Oui (e-mail uniquement) |
 |Remplacer le chiffrement IRM appliqué sans étiquette|Oui, si l’utilisateur dispose du droit d’utilisation minimal d’exportation |Oui (e-mail uniquement) |
-|Étiquette du courrier électronique entrant|Non |Oui (chiffrement non appliqué) |
+|Étiquette du courrier électronique entrant|Non |Oui|
 
 \* L’étiquetage automatique n’est actuellement pas disponible dans toutes les régions. Si votre client ne prend pas en charge cette fonctionnalité, l’onglet Étiquetage automatique n’apparaît pas dans le centre d’étiquettes d’administrateurs.
 

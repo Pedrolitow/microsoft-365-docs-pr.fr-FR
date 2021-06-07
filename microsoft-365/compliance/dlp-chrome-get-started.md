@@ -1,5 +1,5 @@
 ---
-title: Prise en main de l’extension de la conformité Microsoft (préversion)
+title: Prise en main de l’extension de la conformité Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Préparer et déployer l’extension de la conformité Microsoft.
-ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Préparez, puis déployez l’extension de la conformité Microsoft.
+ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113862"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730509"
 ---
-# <a name="get-started-with-microsoft-compliance-extension-preview"></a>Prise en main de l’extension de la conformité Microsoft (préversion)
+# <a name="get-started-with-microsoft-compliance-extension"></a>Prise en main de l’extension de la conformité Microsoft
 
 Utilisez les procédures ci-après pour déployer l’extension de la conformité Microsoft.
 
@@ -37,23 +37,23 @@ Pour utiliser l’extension de la conformité Microsoft, l’appareil doit être
 - [En savoir plus sur l’extension de la conformité Microsoft](dlp-chrome-learn-about.md)
 - [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
-- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
+- [Création d’une stratégie DLP à partir d’un modèle](create-a-dlp-policy-from-a-template.md)
 - [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
 - [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
-- [Outils et méthodes d’intégration pour les appareils Windows 10](dlp-configure-endpoints.md)
+- [Outils et méthodes d’intégration pour les appareils Windows 10](dlp-configure-endpoints.md)
 - [Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison](endpoint-dlp-configure-proxy.md)
 - [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md)
 
-### <a name="skusubscriptions-licensing"></a>Licences SKU / abonnements
+### <a name="skusubscriptions-licensing"></a>Licences SKU / abonnements
 
 Avant de commencer, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) et tous les modules complémentaires. Pour accéder à la fonctionnalité de points de terminaison DLP et l’utiliser, vous devez disposer de l’un de ces abonnements ou modules complémentaires.
 
-- Microsoft 365 E5
+- Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
-- Microsoft 365 E5 Conformité
-- Microsoft 365 A5 Conformité
-- Microsoft 365 E5, Protection des informations et gouvernance
-- Microsoft 365 A5, Protection des informations et gouvernance
+- Microsoft 365 E5 Conformité
+- Microsoft 365 A5 Conformité
+- Microsoft 365 E5, Protection des informations et gouvernance
+- Microsoft 365 A5, Protection des informations et gouvernance
 
 Pour obtenir des instructions détaillées sur les licences, consultez [instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
@@ -92,9 +92,9 @@ Si vous déployez l'extension de conformité Microsoft sur tous vos appareils Wi
 
 ### <a name="prepare-your-devices"></a>Préparer vos appareils
 
-1. Utilisez les procédures de ces rubriques pour intégrer vos appareils :
+1. Utilisez les procédures de ces rubriques pour intégrer vos appareils :
     1. [Prise en main de la protection contre la perte de données de point de terminaison](endpoint-dlp-getting-started.md)
-    1. [Outils et méthodes d’intégration pour les appareils Windows 10](dlp-configure-endpoints.md)
+    1. [Outils et méthodes d’intégration pour les appareils Windows 10](dlp-configure-endpoints.md)
     1. [Configurer le proxy du dispositif et les paramètres de connexion à Internet pour le DLP du point de terminaison](endpoint-dlp-configure-proxy.md)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Configuration de base ordinateur simple Selfhost
@@ -107,7 +107,7 @@ Il s'agit de la méthode recommandée.
    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
    ``` 
 
-2.  Accédez à [Extension de la conformité Microsoft : Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+2.  Accédez à [Extension de la conformité Microsoft : Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
 
 3.  Installez l’extension à l’aide des instructions de la page Chrome Web Store.
 
@@ -118,7 +118,7 @@ Utilisez cette méthode de configuration pour les déploiements à l'échelle de
 
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>Activation de la clé de Registre requise via Microsoft Endpoint Manager
 
-1.  Créez un script PowerShell avec le contenu suivant :
+1.  Créez un script PowerShell avec le contenu suivant :
 
     ```powershell
     Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
@@ -130,16 +130,16 @@ Utilisez cette méthode de configuration pour les déploiements à l'échelle de
 
 4.  Accédez à l’emplacement du script créé lorsque vous y avez été invité.
 
-5.  Sélectionnez les paramètres suivants :
-    1. Exécuter ce script à l’aide des informations d’identification connectées : OUI
-    1. Appliquer la vérification de la signature de script : NON
-    1. Exécuter un script dans l’hôte PowerShell 64 bits : OUI
+5.  Sélectionnez les paramètres suivants :
+    1. Exécuter ce script à l’aide des informations d’identification connectées : OUI
+    1. Appliquer la vérification de la signature de script : NON
+    1. Exécuter un script dans l’hôte PowerShell 64 bits : OUI
 
 6.  Sélectionnez les groupes d’appareils appropriés et appliquez la stratégie.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Étapes de l'installation forcée de Microsoft Endpoint Manager
 
-Avant d'ajouter l'extension de la conformité Microsoft à la liste des extensions installées de force, il est important d'ingérer l'ADMX de Chrome. Les étapes de ce processus dans Microsoft Endpoint Manager sont documentées par Google : [Gérer le navigateur Chrome avec Microsoft Intune - Aide de Google Chrome Enterprise](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
+Avant d'ajouter l'extension de la conformité Microsoft à la liste des extensions installées de force, il est important d'ingérer l'ADMX de Chrome. Les étapes de ce processus dans Microsoft Endpoint Manager sont documentées par Google : [Gérer le navigateur Chrome avec Microsoft Intune - Aide de Google Chrome Enterprise](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
 
  Après avoir ingéré l’ADMX, vous pouvez suivre les étapes ci-dessous pour créer un profil de configuration pour cette extension.
 
@@ -161,7 +161,7 @@ Avant d'ajouter l'extension de la conformité Microsoft à la liste des extensio
     
     OMA-URI : `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     Type de données`String`<br/>
-    Valeur : `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
+    Valeur : `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
 9.  Cliquez sur Créer.
 
@@ -193,7 +193,7 @@ Si vous ne voulez pas utiliser Microsoft Endpoint Manager, vous pouvez utiliser 
 
 10. Sélectionnez **Exécuter avec les autorisations maximales**.
 
-11. Configurez la stratégie pour Windows 10.
+11. Configurez la stratégie pour Windows 10.
 
 12. Dans l’onglet **Actions** , sélectionnez l’action **Démarrer un programme**.
 
@@ -215,7 +215,7 @@ Si vous ne voulez pas utiliser Microsoft Endpoint Manager, vous pouvez utiliser 
 
 6.  Sélectionnez **Afficher**.
 
-7.  Sous **Valeur**, ajoutez l’entrée suivante : `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+7.  Sous **Valeur**, ajoutez l’entrée suivante : `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
 8.  Sélectionnez **OK**, puis **Appliquer**.
 
@@ -227,25 +227,25 @@ Si vous ne voulez pas utiliser Microsoft Endpoint Manager, vous pouvez utiliser 
 
 #### <a name="testing-other-dlp-scenarios-in-chrome"></a>Tests d’autres scénarios DLP dans Chrome 
 
-Maintenant que vous avez supprimé Chrome de la liste des navigateurs/applications interdits, vous pouvez tester les scénarios ci-dessous pour vérifier que le comportement répond aux exigences de votre organisation :
+Maintenant que vous avez supprimé Chrome de la liste des navigateurs/applications interdits, vous pouvez tester les scénarios ci-dessous pour vérifier que le comportement répond aux exigences de votre organisation :
 
 - Copier des données d’un élément sensible vers un autre document à l’aide du Presse-papiers
     - Pour tester, ouvrez un fichier protégé contre les actions de copie vers le presse-papiers dans le navigateur Chrome et essayez de copier les données du fichier.
-    - Résultat attendu : notification toast DLP indiquant que cette action n’est pas autorisée lorsque le fichier est ouvert.
+    - Résultat attendu : notification toast DLP indiquant que cette action n’est pas autorisée lorsque le fichier est ouvert.
 - Imprimer un document
     - Pour tester, ouvrez un fichier protégé contre les actions d’impression dans le navigateur Chrome et essayez d’imprimer le fichier.
-    - Résultat attendu : notification toast DLP indiquant que cette action n’est pas autorisée lorsque le fichier est ouvert.
+    - Résultat attendu : notification toast DLP indiquant que cette action n’est pas autorisée lorsque le fichier est ouvert.
 - Copier sur un support amovible USB
     - Pour le tester, essayez d'enregistrer le fichier sur un support de stockage amovible.
-    - Résultat attendu : notification toast DLP indiquant que cette action n’est pas autorisée lorsque le fichier est ouvert.
+    - Résultat attendu : notification toast DLP indiquant que cette action n’est pas autorisée lorsque le fichier est ouvert.
 - Copier vers le partage réseau
     - Pour tester, essayez d’enregistrer le fichier sur un partage réseau.
-    - Résultat attendu : notification toast DLP indiquant que cette action n’est pas autorisée lorsque le fichier est ouvert.
+    - Résultat attendu : notification toast DLP indiquant que cette action n’est pas autorisée lorsque le fichier est ouvert.
 
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>Utiliser le tableau de bord de gestion des alertes pour afficher les alertes DLP dans Chrome
 
-1. Ouvrez la page **Protection contre la perte de données** dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), puis sélectionnez **Alertes**.
+1. Ouvrez la page **Protection contre la perte de données** dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com), puis sélectionnez **Alertes**.
 
 2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
 
@@ -261,9 +261,8 @@ Maintenant que vous avez supprimé Chrome de la liste des navigateurs/applicatio
 
 ### <a name="known-issues-and-limitations"></a>Problèmes et limites connus
 
-1. L'application de la fonction glisser-déposer pour le téléchargement de dossiers n'est pas prise en charge.
-2. L'application du Block Override pour la sortie du nuage n'est pas prise en charge.
-3. Le mode Incognito n'est pas pris en charge et doit être désactivé.
+1. L'application du Block Override pour la sortie du nuage n'est pas prise en charge.
+2. Le mode Incognito n'est pas pris en charge et doit être désactivé.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Maintenant que vous disposez d’appareils intégrés et que vous pouvez afficher les données d’activité dans l’Explorateur d’activités, vous êtes prêt à passer à l’étape suivante dans laquelle vous créez des stratégies DLP qui protègent vos éléments sensibles.
@@ -278,7 +277,7 @@ Maintenant que vous disposez d’appareils intégrés et que vous pouvez affiche
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
 - [Microsoft Defender pour point de terminaison](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Outils et méthodes d’intégration pour les appareils Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
-- [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Outils et méthodes d’intégration pour les appareils Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD appareils joints](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
 - [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

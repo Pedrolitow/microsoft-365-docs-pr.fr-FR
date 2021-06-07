@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: d0db45daa786c1a44272e4d02153af3fe658e781
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3df703fd84c87a2bd34bb2a81f8c83063e468b17
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200208"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771447"
 ---
 # <a name="run-antivirus-scan-api"></a>API d’analyse antivirus
 
@@ -35,10 +36,10 @@ ms.locfileid: "51200208"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>Description de l’API
-Lancez l’analyse de l’Antivirus Microsoft Defender sur un appareil.
+Lancez Antivirus Microsoft Defender analyse sur un appareil.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -66,7 +67,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | string | application/json
 
 ## <a name="request-body"></a>Corps de la demande
@@ -75,7 +76,7 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 Paramètre | Type    | Description
 :---|:---|:---
 Commentaire |   Chaîne | Commentaire à associer à l’action. **Obligatoire**.
-ScanType|   Chaîne  | Définit le type de l’analyse. **Obligatoire**.
+ScanType|   String  | Définit le type de l’analyse. **Obligatoire**.
 
 **ScanType** contrôle le type d’analyse à effectuer et peut être l’un des suivants :
 

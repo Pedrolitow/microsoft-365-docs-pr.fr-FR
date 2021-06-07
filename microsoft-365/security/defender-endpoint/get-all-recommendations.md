@@ -1,7 +1,7 @@
 ---
 title: Répertorier toutes les actions d’amélioration
-description: Récupère la liste de toutes les recommandations de sécurité affectant l'organisation.
-keywords: api, api de graphique, api pris en charge, obtenir, recommandations de sécurité, api tvm Microsoft Defender pour endpoint, gestion des menaces et vulnérabilités, api de gestion des menaces et des vulnérabilités
+description: Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
+keywords: api, api de graphique, api pris en charge, obtenir, recommandations de sécurité, api tvm Microsoft Defender pour endpoint, api Gestion des menaces et des vulnérabilités, Gestion des menaces et des vulnérabilités api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cb0a1f8a42b419db960e5097667c335bf7f7877
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 0a58287a9bd48a4d19144a40674e1d3ad3bd256a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935016"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768926"
 ---
 # <a name="list-all-recommendations"></a>Répertorier toutes les actions d’amélioration
 
@@ -28,7 +29,7 @@ ms.locfileid: "51935016"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -39,12 +40,12 @@ ms.locfileid: "51935016"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère la liste de toutes les recommandations de sécurité affectant l'organisation.
+Récupère la liste de toutes les recommandations de sécurité affectant l’organisation.
 
 ## <a name="permissions"></a>Autorisations
-L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d'informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d'informations.
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point](apis-intro.md) de terminaison pour plus d’informations.
 
-Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
+Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
 :---|:---|:---
 Application |   SecurityRecommendation.Read.All |   « Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | SecurityRecommendation.Read |  « Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »

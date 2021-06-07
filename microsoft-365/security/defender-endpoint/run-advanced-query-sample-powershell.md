@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 20c63daaf61b85f35aaceccb540b6d50824c801d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 9192662b8d4ed23a5903dddb555f07bf182ab17f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198670"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771500"
 ---
-# <a name="advanced-hunting-using-powershell"></a>Recherche avancée à l’aide de PowerShell
+# <a name="advanced-hunting-using-powershell"></a>Repérage avancé à l’aide de PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -113,7 +114,7 @@ $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to yo
 
 Vous pouvez désormais utiliser les résultats de la requête.
 
-Pour obtenir les résultats de la requête au format CSV dans un fichier, file1.csv ci-dessous :
+Pour obtenir les résultats de la requête au format CSV dans le fichier, file1.csv ci-dessous :
 
 ```
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
@@ -129,4 +130,4 @@ $results | ConvertTo-Json | Set-Content file1.json
 ## <a name="related-topic"></a>Rubrique connexe
 - [API Microsoft Defender pour point de terminaison](apis-intro.md)
 - [API de recherche avancée de menaces](run-advanced-query-api.md)
-- [Recherche avancée à l’aide de Python](run-advanced-query-sample-python.md)
+- [Repérage avancé à l’aide de Python](run-advanced-query-sample-python.md)

@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 78b6097ea9c3a83f35585f3b13fec4d9056ac25a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 17ad28121935adfc958629f7999311c11a8d784e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199716"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771441"
 ---
-# <a name="advanced-hunting-using-python"></a>Recherche avancée à l’aide de Python
+# <a name="advanced-hunting-using-python"></a>Repérage avancé à l’aide de Python
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -109,7 +110,7 @@ results = jsonResponse["Results"]
 
 ### <a name="complex-queries"></a>Requêtes complexes
 
-Si vous souhaitez exécuter des requêtes complexes (ou des requêtes multilignes), enregistrez votre requête dans un fichier et, au lieu de la première ligne de l’exemple ci-dessus, exécutez la commande suivante :
+Si vous souhaitez exécuter des requêtes complexes (ou des requêtes multilignes), enregistrez votre requête dans un fichier et, au lieu de la première ligne de l’exemple ci-dessus, exécutez la commande ci-dessous :
 
 ```
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file
@@ -158,4 +159,4 @@ outputFile.close()
 ## <a name="related-topic"></a>Rubrique connexe
 - [API Microsoft Defender pour point de terminaison](apis-intro.md)
 - [API de recherche avancée de menaces](run-advanced-query-api.md)
-- [Recherche avancée à l’aide de PowerShell](run-advanced-query-sample-powershell.md)
+- [Repérage avancé à l’aide de PowerShell](run-advanced-query-sample-powershell.md)

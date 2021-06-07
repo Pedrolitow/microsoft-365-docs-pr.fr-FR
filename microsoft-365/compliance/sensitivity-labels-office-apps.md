@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informations pour que les administrateurs informatiques gèrent les étiquettes de niveau de confidentialité dans les applications Office pour le bureau, les appareils mobiles et le web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625124"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730377"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gérer les étiquettes de confidentialité dans les applications Office
 
@@ -387,54 +387,24 @@ Pour obtenir des instructions sur l’utilisation de ce paramètre, consultez le
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Options spécifiques à Outlook pour l’étiquetage par défaut et l’étiquetage obligatoire
 
-Pour l’étiquetage intégré, identifiez les versions minimales d’Outlook qui prennent en charge ces fonctionnalités à l’aide du [tableau des fonctionnalités pour Outlook](#sensitivity-label-capabilities-in-outlook) sur cette page, et la ligne **Paramètres différents pour l’étiquette par défaut et l’étiquetage obligatoire**.
+Pour l’étiquetage intégré, identifiez les versions minimales d’Outlook qui prennent en charge ces fonctionnalités à l’aide du [tableau des fonctionnalités pour Outlook](#sensitivity-label-capabilities-in-outlook) sur cette page, et la ligne **Paramètres différents pour l’étiquette par défaut et l’étiquetage obligatoire**. Toutes les versions du client d’étiquetage unifié Azure Information Protection prennent en charge ces options spécifiques à Outlook.
 
-Par défaut, lorsque vous sélectionnez les paramètres de stratégie d’étiquette **Appliquer cette étiquette par défaut aux documents et aux e-mails** et **Nécessite que les utilisateurs appliquent une étiquette à leurs e-mails ou documents**, votre choix de configuration s’applique également aux e-mails et aux documents.
+Lorsque l’application Outlook prend en charge un paramètre d’étiquette par défaut différent du paramètre d’étiquette par défaut des documents :
 
-Pour appliquer différents paramètres aux e-mails, utilisez les paramètres avancés de PowerShell :
+- Dans l’assistant de stratégie d’étiquette, à la page **Appliquer une étiquette par défaut aux e-mails**, vous pouvez spécifier votre choix d’étiquette de confidentialité qui s’appliquera à tous les e-mails sans étiquette, ou aucune étiquette par défaut. Ce paramètre est indépendant du paramètre **Appliquer cette étiquette par défaut aux documents** de la page précédente **Paramètres de stratégie pour les documents** de l’assistant.
 
-- **OutlookDefaultLabel** : utilisez ce paramètre si vous souhaitez qu’Outlook applique une autre étiquette par défaut ou aucune étiquette.
+Lorsque l’application Outlook ne prend pas en charge un paramètre d’étiquette par défaut différent du paramètre d’étiquette par défaut des documents : Outlook utilise toujours la valeur que vous spécifiez pour **Appliquer cette étiquette par défaut aux documents** à la page **Paramètres de stratégie pour les documents** page de l’assistant stratégie d’étiquette.
 
-- **DisableMandlookinOutlook** : utilisez ce paramètre si vous souhaitez qu’Outlook soit exempte d’une invite des utilisateurs à sélectionner une étiquette pour les courriers électroniques non étiquetés.
+Lorsque l’application Outlook prend en charge la désactivation de l’étiquetage obligatoire :
 
-Pour plus d’informations sur la configuration de ces paramètres à l’aide de PowerShell, voir la section suivante.
+- Dans l’assistant de stratégie d’étiquette, à la page **Paramètres de stratégie**, sélectionnez **Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails ou documents**. Sélectionnez ensuite **Suivant** > **Suivant**, puis décochez la case **Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails**. Laissez la case cochée si vous souhaitez que l’étiquetage obligatoire s’applique aux e-mails et aux documents.
 
-### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>Paramètres avancés de PowerShell OutlookDefaultLabel et DisableMandatoryInOutlook
+Lorsque l’application Outlook ne prend pas en charge la désactivation de l’étiquetage obligatoire : si vous sélectionnez **Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails ou documents** en tant que paramètre de stratégie, Outlook invite toujours les utilisateurs à sélectionner une étiquette pour les e-mails sans étiquette.
 
-Ces paramètres sont pris en charge à l’aide de PowerShell avec le paramètre *AdvancedSettings* et les cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) et [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) de l’interface [PowerShell du Centre de sécurité et de conformité](/powershell/exchange/scc-powershell). Précédemment pris en charge uniquement par le client de l’étiquetage unifié d’Azure Information Protection, ces deux paramètres avancés sont désormais pris en charge pour l’étiquetage intégré.
-
-Exemples PowerShell, dans lequel la stratégie d’étiquette se nomme **Global** :
-
-- Pour exempter Outlook d’une étiquette par défaut :
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
-    ````
-
-- Pour exempter Outlook d’une étiquette obligatoire :
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
-    ````
-
-Pour l’instant, OutlookDefaultLabel et DisableMandatoryInOutlook sont les seuls paramètres avancés de PowerShell pris en charge pour l’étiquette intégrée et le client Azure Information Protection.
-
-Les autres paramètres avancés de PowerShell restent pris en charge pour le client Azure Information Protection uniquement. Pour plus d’informations sur l’utilisation des paramètres avancés du client Azure Information Protection, voir [Guide administrateur : configurations personnalisées pour le client de l’étiquetage unifié d’Azure Information Protection](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Conseils PowerShell pour la spécification des paramètres avancés
-
-Pour spécifier une autre étiquette par défaut pour Outlook, identifiez-la par son GUID. Pour rechercher cette valeur, vous pouvez utiliser la commande suivante :
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-Pour supprimer l’un de ces paramètres avancés d’une stratégie d’étiquette, utilisez la même syntaxe de paramètre AdvancedSettings, mais spécifiez une valeur de chaîne null. Par exemple :
-
-````powershell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
-````
-
+> [!NOTE]
+> Si vous avez configuré les paramètres avancés PowerShell **OutlookDefaultLabel** et **DisableMandatoryInOutlook** à l’aide des cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) ou [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) :
+> 
+> Les valeurs que vous avez choisies pour ces paramètres PowerShell apparaissent dans l’assistant de stratégie d’étiquette et fonctionnent automatiquement pour les applications Outlook qui prennent en charge ces paramètres. Les autres paramètres avancés de PowerShell restent pris en charge pour le client d’étiquetage unifié Azure Information Protection uniquement.
 
 ## <a name="end-user-documentation"></a>Documentation de l’utilisateur final
 

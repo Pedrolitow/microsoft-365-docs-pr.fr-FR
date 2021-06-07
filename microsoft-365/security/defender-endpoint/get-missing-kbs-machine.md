@@ -1,7 +1,7 @@
 ---
-title: Obtenir les ko manquants par ID d'appareil
-description: Récupère les mises à jour de sécurité manquantes par ID d'appareil
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d'appareil, api de gestion des menaces & vulnérabilité, Api tvm Microsoft Defender pour endpoint
+title: Obtenir les ko manquants par ID d’appareil
+description: Récupère les mises à jour de sécurité manquantes par ID d’appareil
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d’appareil, api & gestion des vulnérabilités menace, Api tvm microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,18 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 97cad51938c4ff3498234dbf2e9d69fd48a52367
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933576"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771872"
 ---
-# <a name="get-missing-kbs-by-device-id"></a>Obtenir les ko manquants par ID d'appareil
+# <a name="get-missing-kbs-by-device-id"></a>Obtenir les ko manquants par ID d’appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S'applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -33,7 +35,7 @@ ms.locfileid: "51933576"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Récupère les ko manquants (mises à jour de sécurité) par ID d'appareil
+Récupère les ko manquants (mises à jour de sécurité) par ID d’appareil
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -41,7 +43,7 @@ Récupère les ko manquants (mises à jour de sécurité) par ID d'appareil
 GET /api/machines/{machineId}/getmissingkbs
 ```
 
-## <a name="request-header"></a>En-tête de requête
+## <a name="request-header"></a>En-tête de demande
 
 Nom | Type | Description
 :---|:---|:---

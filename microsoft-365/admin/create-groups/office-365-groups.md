@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Avec Microsoft 365 groupes, vous pouvez piloter le travail d’équipe dans Microsoft 365 en donnant à un groupe de personnes l’accès à une collection de ressources partagées.
-ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635749"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782392"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Présentation des Groupes Microsoft 365 pour les administrateurs
 
-Microsoft 365 Les groupes sont le service d’appartenance de base qui dirige tout le travail d’équipe Microsoft 365. Avec Microsoft 365 groupes, vous pouvez accorder à un groupe de personnes l’accès à une collection de ressources partagées. Ces ressources sont les suivantes :
+Microsoft 365 Les groupes sont le service d’appartenance de base qui dirige tout le travail d’équipe dans Microsoft 365. Avec Microsoft 365 groupes, vous pouvez accorder à un groupe de personnes l’accès à une collection de ressources partagées. Ces ressources sont les suivantes :
 
 - Une boîte de Outlook partagée
 - Un calendrier partagé
@@ -45,13 +45,13 @@ Microsoft 365 Les groupes sont le service d’appartenance de base qui dirige to
 
 Avec un Microsoft 365, vous n’avez pas besoin d’attribuer manuellement des autorisations à chacune de ces ressources. L’ajout automatique de personnes au groupe leur donne les autorisations dont ils ont besoin.
 
-Tout utilisateur peut créer un groupe, sauf si vous limitez la création de groupe [à un ensemble spécifique de personnes.](../../solutions/manage-creation-of-groups.md) Si vous limitez la création de groupes, les utilisateurs qui ne peuvent pas créer de groupes ne pourront pas créer SharePoint sites, planificateurs ou équipes. Ces services nécessitent que les personnes qui les créent puissent créer un groupe. Les utilisateurs peuvent toujours participer à des activités de groupe, telles que la création de tâches dans le Planificateur ou l’utilisation de Teams conversation, à condition qu’ils soient membres du groupe.
+Tout utilisateur peut créer un groupe, sauf si vous limitez la création de groupe [à un ensemble spécifique de personnes.](../../solutions/manage-creation-of-groups.md) Si vous limitez la création de groupes, les utilisateurs qui ne peuvent pas créer de groupes ne pourront pas créer de sites SharePoint, planificateurs, équipes, calendriers de groupe Outlook, groupes de flux, groupes Yammer, bibliothèques partagées dans OneDrive ou espaces de travail Power BI partagés. Ces services nécessitent que les personnes qui les créent puissent créer un groupe. Les utilisateurs peuvent toujours participer à des activités de groupe, telles que la création de tâches dans le Planificateur ou l’utilisation de Teams conversation, à condition qu’ils soient membres du groupe.
 
 Les groupes ont les rôles suivants :
 
 - **Propriétaires** : les propriétaires de groupe peuvent ajouter ou supprimer des membres et avoir des autorisations uniques, telles que la possibilité de supprimer des conversations de la boîte de réception partagée ou de modifier différents paramètres sur le groupe. Les propriétaires de groupe peuvent renommer le groupe, mettre à jour la description ou l’image, etc.
 - **Membres** : les membres peuvent accéder à tous les paramètres du groupe, mais ne peuvent pas modifier les paramètres du groupe. Par défaut, les membres du groupe peuvent inviter des invités à rejoindre votre groupe, même si vous pouvez [contrôler ce paramètre.](manage-guest-access-in-groups.md)
-- **Invités** - Les invités de groupe sont des membres extérieurs à votre organisation.
+- **Invités** : les invités de groupe sont des membres extérieurs à votre organisation.
 
 Seuls les administrateurs globaux, les administrateurs d’utilisateurs et les administrateurs de groupes peuvent créer et gérer des groupes dans Microsoft 365 centre d’administration. Vous ne pouvez pas être un administrateur délégué (par exemple, consultant désigné comme administrateur).
 
@@ -63,13 +63,13 @@ En tant qu’administrateur, vous pouvez :
 - [Gérer l’accès invité aux groupes](manage-guest-access-in-groups.md)
 - [Récupérer un groupe supprimé](restore-deleted-group.md) (dans les 30 jours suivant la suppression)
 
-Si vous préférez une façon plus automatisée de gérer le cycle de vie de vos groupes Microsoft 365, vous pouvez utiliser des stratégies d’expiration pour expirer des groupes à un intervalle de temps spécifique. Les propriétaires du groupe obtiennent un courrier électronique 30, 15 et 1 jour avant l’expiration du groupe qui leur permet de renouveler le groupe si nécessaire. Voir : Microsoft 365 [d’expiration de groupe.](../../solutions/microsoft-365-groups-expiration-policy.md)
+Si vous préférez une façon plus automatisée de gérer le cycle de vie de vos groupes Microsoft 365, vous pouvez utiliser des stratégies d’expiration pour expirer des groupes à un intervalle de temps spécifique. Les propriétaires du groupe obtiennent un courrier électronique 30, 15 et 1 jour avant l’expiration du groupe qui leur permet de renouveler le groupe s’il est toujours nécessaire. Voir : Microsoft 365 [d’expiration de groupe.](../../solutions/microsoft-365-groups-expiration-policy.md)
 
 Vous pouvez administrer vos groupes à partir du centre d Microsoft 365'administration ou à [l’aide de PowerShell.](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
 
 Si vous avez de nombreux utilisateurs, par exemple dans une grande entreprise ou une grande entreprise, il se peut que de nombreux utilisateurs créent des groupes à diverses fins. Nous vous recommandons vivement d’examiner [le Plan de gouvernance dans Microsoft 365 groupes pour](../../solutions/collaboration-governance-overview.md) les meilleures pratiques.
 
-## <a name="group-limits"></a>Limites de groupe
+## <a name="group-limits"></a>Limites d’un groupe
 
 Les limites suivantes s’appliquent Microsoft 365 groupes :
 
@@ -85,7 +85,7 @@ Les limites suivantes s’appliquent Microsoft 365 groupes :
 
 Le nombre maximal de groupes Microsoft 365 par défaut qu’une organisation peut avoir est de 500 000. Pour aller au-delà de la limite par défaut, vous devez contacter le Support Microsoft. Pour plus d’informations sur Microsoft 365 limites des groupes, voir groupes [Microsoft 365 - Aide de l’administrateur.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-La gestion de Microsoft 365 groupes est plus efficace lorsque vous avez des informations actionnables sur l’utilisation des groupes. Le Microsoft 365 d’administration dispose d’un outil de rapports qui vous permet de voir l’utilisation du stockage, le nombre de groupes actifs dont vous disposez et la façon dont les utilisateurs utilisent les groupes. Voir : [Microsoft 365 rapports dans le Centre d’administration pour](../activity-reports/office-365-groups.md) plus d’informations.
+La gestion de Microsoft 365 groupes est plus efficace lorsque vous avez des informations actionnables sur l’utilisation des groupes. Le centre Microsoft 365'administration dispose d’un outil de rapports qui vous permet de voir l’utilisation du stockage, le nombre de groupes actifs dont vous disposez et la façon dont les utilisateurs utilisent les groupes. Voir : [Microsoft 365 rapports dans le Centre d’administration pour](../activity-reports/office-365-groups.md) plus d’informations.
 
 ## <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
@@ -98,9 +98,9 @@ Vous pouvez créer des étiquettes de niveau de sensibilité que les utilisateur
 Par exemple, vous pouvez créer une étiquette appelée *Hautement* confidentiel et spécifier que tout groupe créé avec cette étiquette sera privé et n’autorisera pas les utilisateurs externes. Lorsque les utilisateurs de votre organisation sélectionnent cette étiquette lors de la création du groupe, le groupe est définie sur privé et les membres du groupe ne sont pas autorisés à ajouter des utilisateurs externes au groupe.
 
 > [!IMPORTANT]
-> Si vous utilisez actuellement des étiquettes de classification, elles ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois les étiquettes de sensibilité activées. 
+> Si vous utilisez actuellement des étiquettes de classification, elles ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois les étiquettes de niveau de sensibilité activées. 
 
-Pour plus d’informations sur la création, la gestion et l’utilisation d’étiquettes de sensibilité, voir Utiliser des étiquettes de niveau de sensibilité pour protéger le contenu dans [Microsoft Teams, Microsoft 365 groupes](../../compliance/sensitivity-labels-teams-groups-sites.md)et sites SharePoint sites.
+Pour plus d’informations sur la création, la gestion et l’utilisation d’étiquettes de sensibilité, voir Utiliser des étiquettes de niveau de sensibilité pour protéger le contenu dans Microsoft Teams, Microsoft 365 groupes et [sites SharePoint sites.](../../compliance/sensitivity-labels-teams-groups-sites.md)
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>Quels plans Microsoft 365 les groupes sont-ils inclus ?
 

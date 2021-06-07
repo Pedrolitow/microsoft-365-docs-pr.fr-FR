@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez Windows PowerShell pour obtenir des détails sur les périphériques de mobilité et de sécurité de base dans votre organisation.
-ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cb2369c9a31210f26db12b0453e7a4228e1cccc
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904251"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782440"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>Obtenir des détails sur les appareils gérés par la mobilité et la sécurité de base
 
@@ -39,7 +39,7 @@ Voici une répartition des détails de l’appareil à votre disposition.
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell de mobilité et de sécurité de base":::
 
 >[!NOTE]
->Les commandes et les scripts de cet article retournent également des détails sur les appareils gérés [par Microsoft Intune.](https://www.microsoft.com/cloud-platform/microsoft-intune)
+>Les commandes et les scripts de cet article retournent également des détails sur les appareils gérés [par Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -47,9 +47,9 @@ Vous devez configurer plusieurs éléments pour exécuter les commandes et les s
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Étape 1 : Télécharger et installer le module Azure Active Directory pour Windows PowerShell
 
-Pour plus d’informations sur ces étapes, voir Se connecter [à Microsoft 365 avec PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell)
+Pour plus d’informations sur ces [étapes, voir Connecter à Microsoft 365 avec PowerShell.](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://www.microsoft.com/download/details.aspx?id=41950)and select Download for Microsoft Online Services    **Sign-in Assistant**.
+1. Go to [Microsoft Online Services Sign-In Assistant for IT Professionals RTWl](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)and select Download for Microsoft Online Services    **Sign-in Assistant**.
 
 2. Téléchargez et installez le Module Microsoft Azure Active Directory pour Windows PowerShell en procédant comme suit :
 
@@ -63,13 +63,13 @@ Pour plus d’informations sur ces étapes, voir Se connecter [à Microsoft 36
 
     5. Après l’installation, fermez la fenêtre de commande PowerShell.
 
-### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Étape 2 : Se connecter à votre abonnement Microsoft 365
+### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Étape 2 : Connecter à votre abonnement Microsoft 365 abonnement
 
-1. Dans le Windows Azure Module Active Directory pour Windows PowerShell, exécutez la commande suivante.  
+1. Dans le Windows Azure Active Directory module de Windows PowerShell, exécutez la commande suivante.  
 
     $UserCredential = Get-Credential
 
-2. Dans la boîte Windows PowerShell demande d’informations d’identification, tapez le nom d’utilisateur et le mot de passe de votre compte d’administrateur global Microsoft 365, puis sélectionnez **OK.**
+2. Dans la boîte Windows PowerShell demande d’informations d’identification, tapez le nom d’utilisateur et le mot de passe de votre compte Microsoft 365 administrateur global, puis sélectionnez **OK.**
 
 3. Exécutez la commande suivante.
 
@@ -82,7 +82,7 @@ Pour plus d’informations sur ces étapes, voir Se connecter [à Microsoft 36
 
 Pour exécuter le script Get-MsolUserDeviceComplianceStatus.ps1, vous devez activer l’exécution des scripts PowerShell.
 
-1. À partir de votre Bureau Windows, **sélectionnez Démarrer,** puis tapez Windows PowerShell. Cliquez avec le bouton Windows PowerShell, puis sélectionnez **Exécuter en tant qu’administrateur.**
+1. À partir de Windows bureau, sélectionnez **Démarrer,** puis tapez Windows PowerShell. Cliquez avec le bouton Windows PowerShell, puis sélectionnez **Exécuter en tant qu’administrateur.**
 
 2. Exécutez la commande suivante.
 
@@ -104,13 +104,13 @@ Pour plus d’exemples,  [voir Get-MsolDevice](https://go.microsoft.com/fwlink
 
 Tout d’abord, enregistrez le script sur votre ordinateur.
 
-1. Copiez et collez le texte suivant dans le Bloc-notes.  
+1. Copiez et collez le texte suivant dans Bloc-notes.  
 
 2.  param (
 
 3.  [PSObject[]]$users = @(),
 
-4.  [Switch]$export,
+4.  [Commutateur]$export,
 
 5.  [String]$exportFileName = « UserDeviceComplianceStatus_ » + (Get-Date -Format « yyMMdd_HHMMss ») + « .csv »,
 
@@ -263,7 +263,7 @@ Tout d’abord, enregistrez le script sur votre ordinateur.
 70.  }
     
 
-71.  Enregistrez-le en tant que fichier Windows PowerShell script à l’aide de l’extension de fichier .ps1 ; par exemple, Get-MsolUserDeviceComplianceStatus.ps1.   
+71.  Enregistrez-le en tant que fichier Windows PowerShell script à l’aide de l’extension de .ps1 ; par exemple, Get-MsolUserDeviceComplianceStatus.ps1.   
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Exécutez le script pour obtenir des informations sur l’appareil d’un seul compte d’utilisateur
 
@@ -301,9 +301,9 @@ Les informations sont exportées vers votre bureau Windows en tant que fichier C
 
 Les informations sont exportées vers votre bureau Windows en tant que fichier CSV. Vous pouvez utiliser des paramètres supplémentaires pour spécifier le nom de fichier et le chemin d’accès du fichier CSV.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Microsoft Connect a été retiré](/collaborate/connect-redirect)
+[Microsoft Connecter été retiré](/collaborate/connect-redirect)
 
 [Vue d’ensemble de la fonction Mobility + Security de Base](overview.md)
 

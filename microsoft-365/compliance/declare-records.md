@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Déclarer des enregistrements à l’aide d’étiquettes de rétention.
-ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925660"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730545"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Déclarer des enregistrements à l’aide d’étiquettes de rétention
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Pour déclarer des documents et courriers électroniques comme [enregistrements](records-management.md#records), utilisez [des étiquettes de rétention](retention.md#retention-labels) qui servent à marquer du contenu comme **enregistrement** ou **enregistrement réglementaire**.
 
@@ -41,9 +41,9 @@ Vous pouvez soit publier ces étiquettes dans une stratégie d’étiquette de r
 
 Par défaut, l’option d’étiquette de rétention permettant de marquer du contenu en tant qu’enregistrement de réglementation n’apparaît pas dans l’assistant de l’étiquette de rétention. Pour afficher cette option, vous devez commencer par exécuter une commande PowerShell:
 
-1. [Connectez-vous au PowerShell du Centre de sécurité et de Conformité Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Connectez-vous au PowerShell du Centre de sécurité et conformité Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-2. Exécutez la l’applet commande suivant :
+2. Exécutez la l’applet commande suivant :
     
     ```powershell
     Set-RegulatoryComplianceUI -Enabled $true
@@ -54,15 +54,15 @@ Si vous changez d’avis sur la façon de voir cette option dans l’assistant �
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Configuration d’étiquettes de rétention pour déclarer des enregistrements
 
-Lorsque vous créez ou modifiez une étiquette de rétention à partir de la solution **Gestion des Enregistrements** dans le centre de conformité Microsoft 365, vous avez la possibilité de marquer des éléments comme enregistrement. Si vous avez exécuté la commande PowerShell à partir de la section précédente, vous pouvez marquer les éléments comme un enregistrement réglementaire de manière alternative.
+Lorsque vous créez une étiquette de rétention depuis la solution **Gestion des enregistrements** dans le centre de conformité Microsoft 365, vous pouvez marquer des éléments comme enregistrement. Si vous avez exécuté la commande PowerShell à partir de la section précédente, vous pouvez marquer les éléments comme un enregistrement réglementaire de manière alternative.
 
-Par exemple :
+Par exemple :
 
 ![Configurer une étiquette de rétention pour marquer le contenu en tant qu’enregistrement ou réglementation](../media/recordversioning6.png)
 
 En utilisant cette étiquette de rétention, vous pouvez désormais l’appliquer aux documents SharePoint ou OneDrive et aux messages électroniques Exchange, comme souhaité. 
 
-Pour instructions complètes :
+Pour instructions complètes :
 
 - [Créer des étiquettes de rétention et les appliquer dans les applications](create-apply-retention-labels.md)
 
@@ -76,7 +76,7 @@ Lorsque des étiquettes de rétention qui marquent le contenu en tant qu’enreg
 - Pour Exchange, tout utilisateur disposant d’un accès en écriture à la boîte aux lettres peut appliquer ces étiquettes. 
 - Pour SharePoint et OneDrive, tous les utilisateurs du groupe Membres par défaut (niveau d’autorisation Collaboration) peuvent appliquer ces étiquettes.
 
-Exemple d’un document marqué en tant qu’enregistrement à l’aide d’une étiquette de rétention :
+Exemple d’un document marqué en tant qu’enregistrement à l’aide d’une étiquette de rétention :
 
 ![Volet Détails pour le document marqué comme enregistrement](../media/recordversioning7.png)
 
