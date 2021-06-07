@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 27d1b36f3e49112a2da95f9268c0e05fcaa72c89
-ms.sourcegitcommit: f0118e61e490496cb23189cc5c73b23e2ba939be
+ms.custom: api
+ms.openlocfilehash: c8403dee11070dcf0825fad2502d8d21d54933fd
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52780140"
+ms.locfileid: "52782752"
 ---
 # <a name="raw-data-streaming-api"></a>API de diffusion de données brutes
 
@@ -34,7 +35,8 @@ ms.locfileid: "52780140"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Diffusez des événements de recherche avancée sur des hubs d’événements et/ou un compte de stockage Azure.
 
-Defender pour le point de terminaison prend en charge la diffusion en continu de tous les événements disponibles via la recherche avancée vers un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/event-hubs/) [](advanced-hunting-overview.md)
+
+Microsoft Defender pour le point [](../defender/advanced-hunting-overview.md) de terminaison prend en charge les événements de diffusion en continu disponibles via le service de recherche avancée sur un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/storage/common/storage-account-overview)
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
