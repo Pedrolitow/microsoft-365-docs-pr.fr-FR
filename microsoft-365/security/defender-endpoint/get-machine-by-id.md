@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 29423230d0d8d4baaa1acca9a3661dc3436f303d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e4ed5a68b0f4c5e9472702d3cc2798a810e4f84e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200092"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769472"
 ---
 # <a name="get-machine-by-id-api"></a>API Obtenir l’ordinateur par ID
 
@@ -28,7 +30,7 @@ ms.locfileid: "51200092"
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,7 +41,7 @@ ms.locfileid: "51200092"
 Récupère un ordinateur [spécifique par](machine.md) son ID d’appareil ou son nom d’ordinateur.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Vous pouvez obtenir la dernière vue des appareils en fonction de votre stratégie de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -69,7 +71,7 @@ GET /api/machines/{id}
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande

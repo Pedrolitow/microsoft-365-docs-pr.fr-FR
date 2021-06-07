@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Cet article définit les champs de métadonnées pour les documents dans un jeu à réviser dans un cas Advanced eDiscovery dans Microsoft 365.
-ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730497"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769568"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Champs de métadonnées des documents dans l'Advanced eDiscovery
 
@@ -72,9 +72,10 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |DocLastSavedBy||Doc_last_saved_by|Nom de l’utilisateur qui a enregistré le document pour la dernière fois.|
 |Thème dominant|DominantTheme|Dominant_theme|Thème dominant tel que calculé pour l’analyse.|
 |Sous-ensemble en double||Duplicate_subset|ID de groupe pour les doublons exacts.|
-|EmailAction*||Email_action|Les valeurs **sont None**, **Reply** ou **Forward**; basé sur la ligne d’objet d’un message.|
+|EmailAction*||Email_action|Les valeurs **sont None,** **Reply** ou **Forward**; basé sur la ligne d’objet d’un message.|
 |Accusé de réception du courrier électronique demandé||Email_delivery_receipt|Adresse de messagerie fournie dans les en-têtes Internet pour l’accusé de réception.|
 |Importance|EmailImportance|Email_importance|Importance du message : **0** - Faible ; **1** - Normal ; **2** - Élevé|
+|Erreurs de traitement ignorées|ErrorIgnored|Error_Ignored|L’erreur a été ignorée et n’a pas été corrigé.|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Ensemble complet d’en-têtes de courrier à partir du message électronique|
 |EmailLevel*||Email_level|Indique le niveau d’un message dans le thread de messagerie à qui il appartient ; les pièces jointes héritent de la valeur de son message parent.|
 |ID de message électronique||Email_message_ID|ID de message Internet du message.|
@@ -87,15 +88,15 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Type de contenu extrait||Native_type|Type de contenu extrait, sous la forme de type mime ; par exemple, **image/jpeg**|
 |||Extracted_text_path|Chemin d’accès au fichier texte extrait dans l’exportation.|
 |ExtractedTextLength*||Extracted_text_length|Nombre de caractères dans le texte extrait.|
-|FamilyDuplicateSet*||Family_duplicate_set|Identificateur numérique pour les familles qui sont des doublons exacts les unes des autres (même contenu et toutes les mêmes pièces jointes).|
-|ID de famille|FamilyId|Family_ID|L’ID de famille rassemble tous les éléments ; pour le courrier électronique, cela inclut le message et toutes les pièces jointes ; pour les documents, cela inclut le document et tous les éléments incorporés.|
+|FamilyDuplicateSet*||Family_duplicate_set|Identificateur numérique pour les familles qui sont des doublons exacts les uns des autres (même contenu et toutes les mêmes pièces jointes).|
+|ID de famille|FamilyId|Family_ID|Rassemble tous les éléments pour le courrier électronique. Cela inclut le message, ainsi que toutes les pièces jointes et éléments extraits.|
 |Taille de la famille||Family_size|Nombre de documents de la famille.|
 |Classe de fichier|FileClass|File_class|Pour le contenu de SharePoint et OneDrive : **Document**; pour le contenu de Exchange : **e-mail** ou **pièce jointe**.|
 |ID de fichier|FileId|File_ID|Identificateur de document unique dans le cas.|
 |Date de création du système de fichiers||File_system_date_created|Date de création à partir du système de fichiers (s’applique uniquement aux données non Office 365 données).|
 |Date de modification du système de fichiers||File_system_date_modified|Date de modification à partir du système de fichiers (s’applique uniquement aux données Office 365 non modifiées).|
 |Type de fichier|FileType||Type de fichier de l’élément en fonction de l’extension de fichier.|
-|ID de groupe|GroupID||ID de groupe pour le contenu groupé.|
+|ID de groupe|ID de groupe|Group_ID|Rassemble tous les éléments pour les e-mails et les documents. Pour le courrier électronique, cela inclut le message, ainsi que toutes les pièces jointes et éléments extraits. Pour les documents, cela inclut le document et tous les éléments incorporés.|
 |A une pièce jointe|HasAttachment|Email_has_attachment|Indique si le message a des pièces jointes.|
 |A un avocat|HasAttorney||**True** lorsqu’au moins l’un des participants est trouvé dans la liste des avocats ; sinon, la valeur est **False**.|
 |HasText*||Has_text|Indique si l’élément possède du texte ; les valeurs possibles **sont True** et **False**.|
@@ -118,14 +119,15 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Marqué comme représentant|MarkAsRepresentative||Un document de chaque ensemble de doublons exacts est marqué comme représentant.|
 |Date de fin de réunion|MeetingEndDate|Meeting_end_date|Date de fin de réunion pour les réunions.|
 |Date de début de la réunion|MeetingStartDate|Meeting_start_date|Date de début de réunion pour les réunions.|
-|Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : documents **<br /> <br /> contacts <br /> <br /> <br /> e-mail externaldata <br /> faxes <br /> im <br /> <br /> journals meetings <br /> microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br /> notes posts <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
+|Type de message|MessageKind|Message_kind|Type de message à rechercher. Valeurs possibles : documents de contacts e-mail **<br /> <br /> <br /> <br /> <br /> externaldata <br /> faxes <br /> im <br /> journals <br /> meetings <br /> microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br /> notes posts <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
 |ID parent de pièce jointe moderne||ModernAttachment_ParentId|ID non permutable du parent du document.|
 |Native Extension|NativeExtension|Native_extension|Extension native de l’élément.|
 |Nom de fichier natif|NativeFileName|Native_file_name|Nom de fichier natif de l’élément.|
 |NativeMD5||Native_MD5|Hachage MD5 (valeur de hachage 128 bits) du flux de fichier.|
 |NativeSHA256||Native_SHA_256|Hachage SHA256 (valeur de hachage 256 bits) du flux de fichier.|
 |Tri ND/ET : exclusion des pièces jointes|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concaténation de l’ensemble de threads de messagerie (ET) et du jeu de quasi-doublons (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET.|
-|Tri ND/ET : y compris les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu de threads quasi-dupliqués (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET. Chaque élément de courrier électronique d’un ensemble ET est suivi de ses pièces jointes appropriées.|
+|Tri ND/ET : inclure les pièces jointes|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concaténation d’un ensemble de threads de messagerie (ET) et d’un jeu de threads quasi-dupliqués (ND). Ce champ est utilisé pour un tri efficace au moment de la révision. Un **D** est préfixé de jeux de ND et un **E** est précédé de jeux ET. Chaque élément de courrier électronique d’un ensemble ET est suivi de ses pièces jointes appropriées.|
+|Jeu de quasi-doublons||ND_set|Les éléments similaires au document pivot partagent la même ND_set.|
 |Auteurs O365||O365_authors|Auteur à partir SharePoint.|
 |O365 créé par||O365_created_by|Créé à partir de SharePoint.|
 |Date de création d’O365||O365_date_created|Date de création à partir SharePoint.|
@@ -155,7 +157,8 @@ Le tableau suivant répertorie les champs de métadonnées pour les documents d�
 |Domaine de l’expéditeur|SenderDomain|Email_sender_domain|Domaine de l’expéditeur.|
 |Sent|Sent|Email_date_sent|Date d’envoi du message.|
 |Définir l’ordre : premier inclus|SetOrderInclusivesFirst|Set_order_inclusives_first|Champ tri - courrier électronique et pièces jointes : contre-chronologique ; documents : s’pivoter d’abord en descendant le score de similarité.|
-|SimilarityPercent||Similarity_percent|Indique la similarité d’un document avec le tableau croisé dynamique du jeu quasi-dupliqué.|
+|Définir l’ID||Set_ID|Les documents de contenu similaire (ND_set) ou de courrier électronique dans le même thread de messagerie (Email_set) partagent la même Set_ID.|
+|SimilarityPercent||Similarity_percent|Indique à quel point un document est similaire au tableau croisé dynamique du jeu en double proche.|
 |Taille de fichier native|Size|Native_size|Nombre d’octets de l’élément natif.|
 |Sujet|Sujet|Email_subject|Objet du message.|
 |Objet/Titre|SubjectTitle||Champ calculé composé de l’objet ou du titre de l’élément.|

@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4997d7118b139d993ed94ed917137ca107940e46
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199620"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769808"
 ---
 # <a name="alert-resource-type"></a>Type de ressource Alerte
 
@@ -48,15 +49,15 @@ Méthode |Type renvoyé |Description
 [Liste des domaines associés](get-alert-related-domain-info.md)|Collection de domaines| Ré lister les URL associées à l’alerte.
 [Liste des fichiers associés](get-alert-related-files-info.md) | [Collection de](files.md) fichiers |  Liste des [entités](files.md) de fichier associées à [l’alerte.](alerts.md)
 [Liste des IP associées](get-alert-related-ip-info.md) | Collection d’adresses IP | List IPs that are associated with the alert.
-[Obtenir les ordinateurs associés](get-alert-related-machine-info.md) | [Ordinateur](machine.md) | [L’ordinateur](machine.md) associé à [l’alerte](alerts.md).
-[Obtenir des utilisateurs associés](get-alert-related-user-info.md) | [User](user.md) | Utilisateur [associé](user.md) à [l’alerte.](alerts.md)
+[Obtenir des ordinateurs associés](get-alert-related-machine-info.md) | [Ordinateur](machine.md) | [L’ordinateur](machine.md) associé à [l’alerte](alerts.md).
+[Obtenir des utilisateurs associés](get-alert-related-user-info.md) | [Utilisateur](user.md) | Utilisateur [associé](user.md) à [l’alerte.](alerts.md)
 
 
 ## <a name="properties"></a>Propriétés
 
 Propriété |    Type    |    Description
 :---|:---|:---
-id | Chaîne | ID d’alerte.
+id | String | ID d’alerte.
 title | String | Titre de l’alerte.
 description | String | Description de l’alerte.
 alertCreationTime | Nullable DateTimeOffset | Date et heure (au UTC) de création de l’alerte.
@@ -67,19 +68,19 @@ resolvedTime | Nullable DateTimeOffset | Date et heure à laquelle l’état de 
 incidentId | Nullable Long | ID [d’incident](view-incidents-queue.md) de l’alerte.
 investigationId | Nullable Long | ID [d’examen](automated-investigations.md) lié à l’alerte.
 investigationState | Nullable, enum | L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-assignedTo | Chaîne | Propriétaire de l’alerte.
+assignedTo | String | Propriétaire de l’alerte.
 Sévérité  | Énum | Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).
-statut | Énum | Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
+status | Énum | Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (inprogress) et « Resolved » (résolu).
 classification | Nullable, enum | Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).
 détermination | Nullable, enum | Spécifie la détermination de l’alerte. Les valeurs possibles sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
 category| String | Catégorie de l’alerte.
-detectionSource | Chaîne | Source de détection.
-threatFamilyName | Chaîne | Famille de menaces.
-threatName | Chaîne | Nom de la menace.
-machineId | Chaîne | ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.
-computerDnsName | Chaîne | [nom complet](machine.md) de l’ordinateur.
-aadTenantId | Chaîne | ID Azure Active Directory.
-détecteurId | Chaîne | ID du détecteur qui a déclenché l’alerte.
+detectionSource | String | Source de détection.
+threatFamilyName | String | Famille de menaces.
+threatName | String | Nom de la menace.
+machineId | String | ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.
+computerDnsName | String | [nom complet](machine.md) de l’ordinateur.
+aadTenantId | String | ID Azure Active Directory de l’autre.
+détecteurId | String | ID du détecteur qui a déclenché l’alerte.
 commentaires | Liste des commentaires d’alerte | L’objet Comment de l’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.
 Évidence | Liste des preuves d’alerte | Preuve liée à l’alerte. Voir l’exemple ci-dessous.
 

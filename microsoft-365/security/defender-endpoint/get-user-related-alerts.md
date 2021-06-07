@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: cff4530cfa4ecd6b0d918a9112e7be3c0f30209c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ab0d0e97365b5ce38b29f2b0d65e3aea48d6c28c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166525"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769928"
 ---
 # <a name="get-user-related-alerts-api"></a>API Obtenir les alertes liées à l’utilisateur
 
@@ -28,7 +29,7 @@ ms.locfileid: "51166525"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -41,7 +42,7 @@ ms.locfileid: "51166525"
 Récupère une collection d’alertes liées à un ID d’utilisateur donné.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -71,7 +72,7 @@ GET /api/users/{id}/alerts
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande

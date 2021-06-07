@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710693"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769417"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -221,11 +221,11 @@ Pour revenir à la valeur par défaut de la boîte aux lettres et du site ShareP
 
 ### <a name="configuration-information-for-skype-for-business"></a>Informations de configuration de Skype Entreprise
 
-Au contraire de Courrier Exchange, il est impossible de basculer l’état de l’emplacement Skype pour inclure automatiquement tous les utilisateurs : quand cet emplacement est activé, vous devez choisir manuellement les utilisateurs dont vous voulez conserver les conversations :
+Contrairement à d’autres emplacements, vous ne pouvez pas activer ou désactiver l’état de l’emplacement Skype pour inclure automatiquement tous les utilisateurs. Au lieu de cela, lorsque vous activez cet emplacement, vous devez sélectionner l’option **Modifier** pour choisir manuellement les utilisateurs dont vous souhaitez conserver les conversations :
 
 ![Choisir l’emplacement Skype pour les stratégies de rétention](../media/skype-location-retention-policies.png)
 
-En sélectionnant **Choisir un utilisateur**, vous pouvez facilement inclure tous les utilisateurs en sélectionnant le champ **Tout sélectionner**. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion particulière dans la stratégie. Ainsi, inclure 1 000 utilisateurs par le biais du champ **Tout sélectionner** équivaut à sélectionner manuellement ces 1 000 utilisateurs, ce qui est la quantité maximale prise en charge par Skype Entreprise.
+Après avoir sélectionné cette option **Modifier**, dans le volet **Skype Entreprise**, vous pouvez inclure rapidement tous les utilisateurs en sélectionnant la zone masquée avant la colonne **Nom**. Toutefois, il est important de comprendre que chaque utilisateur compte comme une inclusion particulière dans la stratégie. Par conséquent, si vous incluez 1 000 utilisateurs en sélectionnant cette zone équivaut à sélectionner manuellement 1 000 utilisateurs à inclure, ce qui est le maximum pris en charge pour Skype Entreprise.
 
 Notez que le dossier Outlook **Historique des conversations** est un composant qui n’a rien à voir avec l’archivage de Skype. L’**historique des conversations** peut être désactivé par l’utilisateur final, mais l’archivage de Skype s’effectue par le stockage d’une copie des conversations Skype dans un dossier masqué qui n’est pas accessible par l’utilisateur mais est visible par eDiscovery.
 

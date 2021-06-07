@@ -1,7 +1,7 @@
 ---
 title: Exporter l’évaluation des vulnérabilités logicielles par appareil
-description: La réponse api est par appareil et contient les logiciels vulnérables installés sur vos appareils exposés, ainsi que les vulnérabilités connues dans ces produits logiciels. Cette table inclut également des informations sur le système d’exploitation, les ID CVE et sur la gravité des vulnérabilités.
-keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
+description: La réponse API est par appareil et contient les logiciels vulnérables installés sur vos appareils exposés, ainsi que les vulnérabilités connues dans ces produits logiciels. Cette table inclut également des informations sur le système d’exploitation, les ID CVE et sur la gravité des vulnérabilités.
+keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: 951f78ba361a12e404a5cce2071f931eab30c43f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689212"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778325"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exporter l’évaluation des vulnérabilités logicielles par appareil
 
@@ -41,7 +41,7 @@ Renvoie toutes les vulnérabilités logicielles connues et leurs détails pour t
 
 Il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être très importante, il existe deux façons de les récupérer :
 
-- [Exporter l’évaluation des vulnérabilités logicielles OData](#1-export-software-vulnerabilities-assessment-odata)  L’API tire toutes les données de votre organisation en tant que réponses Json, en suivant le protocole OData. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 K appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
+- [Exporter l’évaluation des vulnérabilités logicielles OData](#1-export-software-vulnerabilities-assessment-odata)  L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 K appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
 - [Exporter l’évaluation des vulnérabilités logicielles via des fichiers](#2-export-software-vulnerabilities-assessment-via-files) Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
 
@@ -57,11 +57,11 @@ Les données collectées (à l’aide _d’OData_ ou _via_ des fichiers) sont l�
 
 ## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Exporter l’évaluation des vulnérabilités logicielles (OData)
 
-### <a name="11-api-method-description"></a>1.1 Description de la méthode d’API
+### <a name="11-api-method-description"></a>1.1 Description de la méthode API
 
 Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
-#### <a name="limitations"></a>Limites
+#### <a name="limitations"></a>Limitations
 
 >- La taille maximale de page est de 200 000.
 >
@@ -84,14 +84,14 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 ### <a name="14-parameters"></a>1.4 Paramètres
 
-- pageSize (par défaut = 50 000) : nombre de résultats en réponse
+- pageSize (valeur par défaut = 50 000) : nombre de résultats en réponse
 - $top : nombre de résultats à renvoyer (ne retourne pas @odata.nextLink et, par conséquent, ne tire pas toutes les données)
 
 ### <a name="15-properties"></a>1.5 Propriétés
 >
 >[!Note]
 >
->- Chaque enregistrement représente environ 1 To de données. Vous devez en tenir compte lors du choix du paramètre pageSize approprié pour vous.
+>- Chaque enregistrement représente environ 1 To de données. Vous devez prendre cela en compte lors du choix du paramètre pageSize approprié pour vous.
 >
 >- Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
 >
@@ -107,13 +107,13 @@ DeviceName | string | Nom de domaine complet (FQDN) de l’appareil. | johnlapto
 DiskPaths  | Chaîne de \[ tableau\] | Preuve disque que le produit est installé sur l’appareil. | [ « C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe » ]
 ExploitabilityLevel | string | Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
 FirstSeenTimestamp | string | Première fois que la CVE de ce produit a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880
-ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp!
+ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp !
 LastSeenTimestamp | string | Dernière fois que la CVE a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880
 OSPlatform | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10
 RbacGroupName  | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs
 RecommendationReference | string | Référence à l’ID de recommandation associé à ce logiciel. | va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (facultatif) | string | Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité. | Mises à jour de sécurité d’avril 2020
-RecommendedSecurityUpdateId (facultatif) | string | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants | 4550961
+RecommendedSecurityUpdateId (facultatif) | string | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants | 4550961
 RegistryPaths  | Chaîne de \[ tableau\] | Preuve dans le Registre que le produit est installé sur l’appareil. | [ « HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight » ]
 SoftwareName | string | Nom du produit logiciel. | chrome
 SoftwareVendor | string | Nom du fournisseur de logiciels. | google
@@ -262,7 +262,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
 
 ## <a name="2-export-software-vulnerabilities-assessment-via-files"></a>2. Exporter l’évaluation des vulnérabilités logicielles (via des fichiers)
 
-### <a name="21-api-method-description"></a>2.1 Description de la méthode API
+### <a name="21-api-method-description"></a>Description de la méthode api 2.1
 
 Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
@@ -287,7 +287,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 
 ### <a name="24-parameters"></a>2.4 Paramètres
 
-- sasValidHours : nombre d’heures pendant qui les URL de téléchargement seront valides (maximum 24 heures)
+- sasValidHours : nombre d’heures de validité des URL de téléchargement (maximum 24 heures)
 
 ### <a name="25-properties"></a>2.5 Propriétés
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le Niveau de productivité Microsoft reflète les mesures de l’expérience utilisateur et technologique, et comparez-les aux organisations de taille similaire.
-ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593840"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779673"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
@@ -40,7 +40,7 @@ Nous fournissons des mesures, des informations et des recommandations dans deux 
 
 - **Expérience des utilisateurs :** quantifie la manière dont l’organisation utilise les catégories de Microsoft 365 telles que la collaboration de contenu, la mobilité, les communications, les réunions et le travail d’équipe.  
 
-    Pour chacune des catégories mentionnées, nous examinons la recherche publique pour identifier des pratiques recommandées et des avantages associés sous la forme d’une efficacité organisationnelle. Par exemple, les recherches [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) ont montré que lorsque des personnes collaborent et partagent du contenu dans le cloud (au lieu d’envoyer des pièces jointes par courrier électronique), elles peuvent enregistrer jusqu’à 100 minutes par semaine. De plus, nous quantifions l’utilisation de ces pratiques recommandées au sein de votre organisation pour vous aider à déterminer où vous êtes sur votre transformation numérique. 
+    Pour chacune des catégories mentionnées, nous examinons la recherche publique pour identifier des pratiques recommandées et des avantages associés sous la forme d’une efficacité organisationnelle. Par exemple, les recherches Forrester ont montré que lorsque des personnes collaborent et partagent du contenu dans le cloud (au lieu d’envoyer des pièces jointes par courrier électronique), elles peuvent enregistrer jusqu’à 100 minutes par semaine. De plus, nous quantifions l’utilisation de ces pratiques recommandées au sein de votre organisation pour vous aider à déterminer où vous êtes sur votre transformation numérique. 
 
 - **Expériences technologiques :** votre organisation dépend de technologies fiables et performantes, ainsi que de l’utilisation efficace de Microsoft 365. Les [analyses de point de terminaison](https://aka.ms/endpointanalytics) vous aident à comprendre comment l’organisateur peut être affectée par des problèmes de performances et d’intégrité de votre matériel et de vos logiciels. L’état d’intégrité des applications Microsoft 365 vous permet de comprendre si les appareils de votre organisation exécutent les applications Microsoft 365 sur les canaux recommandés.
 

@@ -1,6 +1,6 @@
 ---
 title: API Obtenir des statistiques IP
-description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour le point de terminaison.
+description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, ip, statistiques, prévalence
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c47a5e58b1888447a4428fad78e71b85cfe79b69
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 55bf10d01093c17ba2d186ce0a1d1313db2c3a75
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166731"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770084"
 ---
 # <a name="get-ip-statistics-api"></a>API Obtenir des statistiques IP
 
@@ -28,9 +29,9 @@ ms.locfileid: "51166731"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,7 +40,7 @@ ms.locfileid: "51166731"
 ## <a name="api-description"></a>Description de l’API
 Récupère les statistiques de l’adresse IP donnée.
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
@@ -64,19 +65,19 @@ GET /api/ips/{ip}/stats
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
 
 Nom | Type | Description
 :---|:---|:---
-lookBackHours | Int32 | Définit les heures que nous allons rechercher pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
+lookBackHours | Int32 | Définit les heures pendant les recherches pour obtenir les statistiques. La valeur par défaut est 30 jours. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite et si ip existe : 200 - OK avec des données statistiques dans le corps. L’adresse IP n’existe pas : 404 - In trouvé.
+En cas de réussite et si ip existe - 200 OK avec des données statistiques dans le corps. L’adresse IP n’existe pas : 404 - In trouvé.
 
 
 ## <a name="example"></a>Exemple

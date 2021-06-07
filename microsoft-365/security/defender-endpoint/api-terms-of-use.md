@@ -1,6 +1,6 @@
 ---
-title: Licence et conditions d'utilisation de l'API Microsoft Defender for Endpoint
-description: Description de la licence et des conditions d'utilisation des API Microsoft Defender
+title: Licence et conditions d’utilisation de l’API Microsoft Defender for Endpoint
+description: Description de la licence et des conditions d’utilisation des API Microsoft Defender
 keywords: licence, termes, api, juridique, avis, code de conduite
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -14,37 +14,38 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f737f5a9aeb9bc45e0cf40c3be0cfdde2bde3779
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6f0fcf101388f9cae08655117caa5380af1242c2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933612"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769664"
 ---
-# <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Licence et conditions d'utilisation de l'API Microsoft Defender for Endpoint
+# <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Licence et conditions d’utilisation de l’API Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="apis"></a>API
 
-Les API Defender pour le point de terminaison sont régies par la licence [api Microsoft et les conditions d'utilisation.](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
+Les API Defender pour le point de terminaison sont régies par la licence [api Microsoft et les conditions d’utilisation.](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
 
 ### <a name="throttling-limits"></a>Limitations
 
 Nom | Appels | Période de renouvellement 
 :---|:---|:---
-Appels d'API par connexion | 100 | 60 secondes
+Appels d’API par connexion | 100 | 60 secondes
 
 
 ## <a name="legal-notices"></a>Avis juridiques
 
-Microsoft et tous les collaborateurs vous accordent une licence pour la documentation Microsoft et d'autres contenus dans ce référentiel sous la licence publique internationale Creative Commons Attribution 4.0, consultez le fichier LICENSE.
+Microsoft et tous les collaborateurs vous accordent une licence pour la documentation Microsoft et d’autres contenus dans ce référentiel sous la licence publique internationale Creative Commons Attribution 4.0, consultez le fichier LICENSE.
 
-Microsoft, Windows, Microsoft Azure et/ou d'autres produits et services Microsoft référencés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d'autres pays. Les licences de ce projet ne vous accordent pas le droit d'utiliser des noms, des logos ou des marques Microsoft. Microsoft's general trademark guidelines can be found at https://go.microsoft.com/fwlink/?LinkID=254653 .
+Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft référencés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays. Les licences de ce projet ne vous accordent pas le droit d’utiliser des noms, des logos ou des marques Microsoft. Microsoft’s general trademark guidelines can be found at https://go.microsoft.com/fwlink/?LinkID=254653 .
 
-Les informations de confidentialité sont disponibles chez Microsoft et les collaborateurs se réservent tous les autres droits, que ce soit sous leurs droits d'auteur, brevets ou marques respectives, que ce soit par implication, par défaut ou https://privacy.microsoft.com/en-us/ autrement.
+Les informations de confidentialité sont disponibles chez Microsoft et tous les collaborateurs se réservent tous les autres droits, que ce soit sous leurs droits d’auteur, brevets ou marques respectives, que ce soit par implication, par défaut ou https://privacy.microsoft.com/en-us/ autrement.

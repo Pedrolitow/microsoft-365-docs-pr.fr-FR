@@ -1,7 +1,7 @@
 ---
 title: Exporter l’évaluation de la configuration sécurisée par appareil
 description: Renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
-keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
+keywords: api, api, évaluation d’exportation, évaluation par appareil, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisé, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: ab33db7fb7acf1969973a7af8f80ea97ef3d378f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689096"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778333"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exporter l’évaluation de la configuration sécurisée par appareil
 
@@ -57,7 +57,7 @@ Les données collectées (à l’aide _d’OData_ ou _via_ des fichiers) sont l�
 
 ## <a name="1-export-secure-configuration-assessment-odata"></a>1. Exporter l’évaluation de la configuration sécurisée (OData)
 
-### <a name="11-api-method-description"></a>1.1 Description de la méthode API
+### <a name="11-api-method-description"></a>1.1 Description de la méthode d’API
 
 Cette réponse API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 
@@ -86,7 +86,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 - pageSize \( par défaut = 50 000 : nombre de résultats en \) réponse
 
-- \$top : le nombre de résultats à renvoyer ne \( retourne pas odata.nextLink et par conséquent ne tire pas \@ toutes les données\)
+- \$top : le nombre de résultats à renvoyer \( ne retourne pas odata.nextLink et, par conséquent, ne tire pas \@ toutes les données\)
 
 ### <a name="15-properties"></a>1.5 Propriétés
 
@@ -220,7 +220,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ## <a name="2-export-secure-configuration-assessment-via-files"></a>2. Exporter l’évaluation de la configuration sécurisée (via des fichiers)
 
-### <a name="21-api-method-description"></a>2.1 Description de la méthode API
+### <a name="21-api-method-description"></a>Description de la méthode api 2.1
 
 Cette réponse API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 
@@ -230,7 +230,7 @@ Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels p
 
 ### <a name="22-permissions"></a>2.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 ---|---|---

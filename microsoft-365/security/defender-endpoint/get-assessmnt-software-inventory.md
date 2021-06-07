@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: 5663a17de2e601c506b4d1b9ac44eaab6ae6245f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689188"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778330"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exporter l’évaluation de l’inventaire logiciel par appareil
 
@@ -39,7 +39,7 @@ ms.locfileid: "52689188"
 >
 Il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être très importante, il existe deux façons de les récupérer :
 
-- [Exporter l’évaluation de **l’inventaire logiciel OData**](#1-export-software-inventory-assessment-odata)  L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 K appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
+- [Exporter l’évaluation de **l’inventaire logiciel OData**](#1-export-software-inventory-assessment-odata)  L’API tire toutes les données de votre organisation en tant que réponses Json, en suivant le protocole OData. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 K appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
 - [Exporter l’évaluation de l’inventaire **logiciel via des fichiers**](#2-export-software-inventory-assessment-via-files)  Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
 
@@ -55,11 +55,11 @@ Les données collectées (à l’aide _d’OData_ ou _via_ des fichiers) sont l�
 
 ## <a name="1-export-software-inventory-assessment-odata"></a>1. Exporter l’évaluation de l’inventaire logiciel (OData)
 
-### <a name="11-api-method-description"></a>1.1 Description de la méthode API
+### <a name="11-api-method-description"></a>1.1 Description de la méthode d’API
 
 Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
-#### <a name="limitations"></a>Limites
+#### <a name="limitations"></a>Limitations
 
 - La taille maximale de page est de 200 000.
 
@@ -67,7 +67,7 @@ Cette réponse API contient toutes les données des logiciels installés par app
 
 ### <a name="12-permissions"></a>1.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 ---|---|---
@@ -103,10 +103,10 @@ DeviceName | string | Nom de domaine complet (FQDN) de l’appareil. | johnlapto
 DiskPaths | Array[string]  | Preuve disque que le produit est installé sur l’appareil. | [ « C: \\ Program Files (x86) \\ Microsoft \\ Silverlight \\ Applicationsilverlight.exe \\ " ]
 EndOfSupportDate | string | Date à laquelle la prise en charge de ce logiciel a ou va se terminer. | 2020-12-30
 EndOfSupportStatus | string | État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software. | EOS à venir
-ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp!
+ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp !
 NumberOfWeaknesses | entier | Nombre de faiblesses sur ce logiciel sur cet appareil | 3
 OSPlatform | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10
-RbacGroupName | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs
+RbacGroupName | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ». | Serveurs
 RegistryPaths | Array[string] | Preuve dans le Registre que le produit est installé sur l’appareil. | [ « HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion \\ Uninstall Microsoft \\ Silverlight » ]
 SoftwareFirstSeenTimestamp | string | La première fois que ce logiciel a été vu sur l’appareil. | 2019-04-07 02:06:47
 SoftwareName | string | Nom du produit logiciel. | Silverlight
@@ -217,7 +217,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 ## <a name="2-export-software-inventory-assessment-via-files"></a>2. Exporter l’évaluation de l’inventaire logiciel (via des fichiers)
 
-### <a name="21-api-method-description"></a>2.1 Description de la méthode API
+### <a name="21-api-method-description"></a>Description de la méthode api 2.1
 
 Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 
@@ -227,7 +227,7 @@ Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels p
 
 ### <a name="22-permissions"></a>2.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 ---|---|---
@@ -242,7 +242,7 @@ GET /api/machines/SoftwareInventoryExport
 
 ### <a name="parameters"></a>Parameters
 
-- sasValidHours : nombre d’heures pendant qui les URL de téléchargement seront valides (maximum 24 heures)
+- sasValidHours : nombre d’heures de validité des URL de téléchargement (maximum 24 heures)
 
 ### <a name="25-properties"></a>2.5 Propriétés
 

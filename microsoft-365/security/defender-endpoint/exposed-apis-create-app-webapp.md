@@ -1,7 +1,7 @@
 ---
 title: Créer une application pour accéder à Microsoft Defender pour le point de terminaison sans utilisateur
 ms.reviewer: ''
-description: Découvrez comment concevoir une application web pour obtenir un accès par programme à Microsoft Defender pour endpoint sans utilisateur.
+description: Découvrez comment concevoir une application web pour obtenir un accès par programmation à Microsoft Defender pour endpoint sans utilisateur.
 keywords: api, api de graphique, api pris en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 8f480a148d72428c6346930a91358d1e8b674ee7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4742a32fd899f41d4e7772c52415891cdd8895bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200004"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769520"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Créer une application pour accéder à Microsoft Defender pour le point de terminaison sans utilisateur
 
@@ -38,10 +39,10 @@ ms.locfileid: "51200004"
 
 Cette page explique comment créer une application pour obtenir l’accès par programme à Defender for Endpoint sans utilisateur. Si vous avez besoin d’un accès par programme à Defender for Endpoint pour le compte d’un utilisateur, voir [Obtenir l’accès avec le contexte utilisateur.](exposed-apis-create-app-nativeapp.md) Si vous n’êtes pas sûr de l’accès dont vous avez besoin, [consultez La mise en place.](apis-intro.md)
 
-Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous aideront à automatiser les flux de travail et à faire preuve d’innovation en fonction des fonctionnalités de Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, voir flux de code [d’autorisation OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
-- Créez une application Azure Active Directory (Azure AD).
+- Créez une Azure Active Directory application (Azure AD).
 - Obtenez un jeton d’accès à l’aide de cette application.
 - Utilisez le jeton pour accéder à l’API Defender for Endpoint.
 
@@ -51,16 +52,16 @@ Cet article explique comment créer une application Azure AD, obtenir un jeton d
 
 1. Connectez-vous [à Azure](https://portal.azure.com) avec un utilisateur qui a le **rôle Administrateur** général.
 
-2. Accédez **à Azure Active Directory** App  >  **registrations** New  >  **registration**. 
+2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.** 
 
-   ![Image de Microsoft Azure et navigation vers l’inscription de l’application](images/atp-azure-new-app2.png)
+   ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application](images/atp-azure-new-app2.png)
 
 3. Dans le formulaire d’inscription, choisissez un nom pour votre application, puis sélectionnez **Enregistrer**.
 
 4. Pour permettre à votre application d’accéder à Defender pour le point de terminaison et de lui attribuer l’autorisation « Lire toutes les **alertes** ». Sur votre page d’application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon organisation utilise  >    >   >, tapez **WindowsDefenderATP,** puis sélectionnez **WindowsDefenderATP**.
 
    > [!NOTE]
-   > *WindowsDefenderATP n’apparaît* pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour l’voir apparaître.
+   > *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour le voir apparaître.
 
    ![ajouter une autorisation](images/add-permission.png)
 
@@ -175,12 +176,12 @@ Voir [Obtenir un jeton à l’aide de Python.](run-advanced-query-sample-python.
 ### <a name="use-curl"></a>Utilisation de l’err.
 
 > [!NOTE]
-> La procédure suivante suppose que Le Jeu pour Windows est déjà installé sur votre ordinateur.
+> La procédure suivante part du principe que La Windows est déjà installée sur votre ordinateur.
 
 1. Ouvrez une invite de commandes et définissez CLIENT_ID sur votre ID d’application Azure.
 1. Définissez CLIENT_SECRET sur votre secret d’application Azure.
 1. Définissez TENANT_ID sur l’ID de client Azure du client qui souhaite utiliser votre application pour accéder à Defender for Endpoint.
-1. Exécutez la commande suivante :
+1. Exécutez la commande suivante :
 
 ```
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
@@ -222,5 +223,5 @@ Voici un exemple d’envoi d’une demande pour obtenir une liste d’alertes à
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [API Microsoft Defender pour point de terminaison prise en charge](exposed-apis-list.md)
+- [API prises en charge Microsoft Defender pour point de terminaison](exposed-apis-list.md).
 - [Accéder à Microsoft Defender pour le point de terminaison au nom d’un utilisateur](exposed-apis-create-app-nativeapp.md)

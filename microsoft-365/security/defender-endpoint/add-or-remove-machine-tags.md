@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 98dd513cc66683ff1b95f66d6d7b89916ce54bab
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3818fc0050790b2c3b307f95ee0760c516cbf893
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199773"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769820"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>API Ajouter ou supprimer des balises d’ordinateur
 
@@ -40,7 +41,7 @@ ms.locfileid: "51199773"
 
 Ajoute ou supprime une balise à un ordinateur [spécifique.](machine.md)
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 1. Vous pouvez publier sur les ordinateurs pour la dernière fois en fonction de votre période de rétention configurée.
 
@@ -72,7 +73,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | string | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -81,7 +82,7 @@ Dans le corps de la demande, fournissons un objet JSON avec les paramètres suiv
 
 Paramètre |    Type    | Description
 :---|:---|:---
-Valeur |    Chaîne |    Nom de la balise. **Obligatoire**.
+Valeur |    String |    Nom de la balise. **Obligatoire**.
 Action    | Énum |    Ajouter ou supprimer. Les valeurs autorisées sont : « Ajouter » ou « Supprimer ». **Obligatoire**.
 
 

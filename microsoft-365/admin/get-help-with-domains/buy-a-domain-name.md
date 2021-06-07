@@ -23,23 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Découvrez comment acheter un nom de domaine dans Microsoft 365.
-ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c4b3b0ac88671e72ed567998ad9d97486dfb6342
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635461"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779685"
 ---
 # <a name="buy-a-domain-name"></a>Acheter un nom de domaine
 
 > [!NOTE]
-> Si votre organisation utilise Office 365 géré par 21Vianet en Chine, voir Comment acheter un domaine pour Office 365 géré par [21Vianet en Chine](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md).
+> Si votre organisation utilise Office 365 géré par 21Vianet en Chine, voir Comment acheter un domaine pour Office 365 géré par [21Vianet en Chine](#how-to-buy-a-domain-for-office-365-operated-by-21vianet).
 
  *Pour ajouter, modifier ou supprimer des domaines, vous **devez** être administrateur **général** d’un [plan d’entreprise ou d’entreprise.](https://products.office.com/business/office) Ces modifications affectent l’ensemble du  client, *les administrateurs personnalisés* ou les utilisateurs réguliers ne pourront pas effectuer ces modifications.*  
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Connectez-vous et Paramètres \> domaines \> acheter un domaine
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Connectez-vous et Paramètres \> domaines acheter \> un domaine
 
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
     
@@ -89,9 +89,8 @@ Demandez le transfert auprès du bureau d'enregistrement vers lequel vous voulez
 
 
 ::: moniker range="o365-21vianet"
+
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>Acheter un nom de domaine pour Office 365 géré par 21Vianet
-
-
 
 Si vous ne possédez pas encore votre propre domaine, vous pouvez facilement en acquérir un en ligne, auprès d'un bureau d'enregistrement de noms de domaine, d'un revendeur de domaines ou même de votre fournisseur Internet actuel. Vous obtenez un nom de domaine lorsque vous vous inscrivez à Office 365 géré par 21Vianet (par exemple, contoso.partner.onmschina.cn). Mais vous souhaiterez peut-être utiliser un nom de domaine personnalisé, comme fourthcoffee.com.
   
@@ -105,7 +104,7 @@ Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de 
 > [!NOTE]
 > Les SharePoint site web public en ligne de cet article s’appliquent uniquement si votre organisation a acheté Microsoft 365 avant le 9 mars 2015. 
 
-### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Les bureaux d’enregistrement de domaines qui prisent en charge tous les enregistrements DNS requis pour Microsoft 365
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Bureaux d’enregistrement de domaines qui prisent en charge tous les enregistrements DNS requis pour Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -120,5 +119,5 @@ Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de 
 ## <a name="related-content"></a>Contenu associé
 
 [Ajouter un domaine à Microsoft 365](../setup/add-domain.md) (article)\
-[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)\
+[FAQ sur les domaines](../setup/domains-faq.yml) (article)\
 [Mettre à jour les enregistrements DNS pour conserver votre site web auprès de votre fournisseur d’hébergement actuel](../dns/update-dns-records-to-retain-current-hosting-provider.md) (article)

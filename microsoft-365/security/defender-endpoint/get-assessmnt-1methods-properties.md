@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: e820875a3350761824c3e4e67311e55507a9cb6f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689200"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778351"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exporter les méthodes et propriétés d’évaluation par appareil
 
@@ -48,15 +48,15 @@ Il existe trois méthodes API que vous pouvez utiliser pour récupérer (exporte
 
 1. Exporter l’évaluation des configurations sécurisées
 
-2. Exporter l’évaluation de l’inventaire logiciel
+2. Exporter une évaluation d’inventaire de logiciel
 
-3. Exportation de l’évaluation des vulnérabilités logicielles
+3. Exporter une évaluation de vulnérabilités de logiciel
 
 Pour chaque méthode, il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
 - **OData**  L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
-- **via des fichiers** Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
+- **via des fichiers** Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
 
   - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
 
@@ -73,7 +73,7 @@ Renvoie toutes les configurations et leur état, par appareil.
 Méthode | Type de données | Description
 :---|:---|:---
 Exporter l’évaluation de la configuration **sécurisée (OData)** | Sécurisation de la configuration par collection d’appareils. Voir : [1.2 Properties (OData)](#12-properties-odata) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour les petites organisations avec moins de 100 Ko d’appareils. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants.
-Exporter l’évaluation de la configuration **sécurisée (via des fichiers)** | Sécurisation de la configuration par collection d’appareils. Voir : [1.2 Properties (OData)](#12-properties-odata) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : 1.  Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation. 2.  Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
+Exporter l’évaluation de la configuration **sécurisée (via des fichiers)** | Sécurisation de la configuration par collection d’appareils. Voir : [1.2 Properties (OData)](#12-properties-odata) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, ConfigurationId. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : 1.  Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation. 2.  Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
 
 ### <a name="12-properties-odata"></a>1.2 Propriétés (OData)
 
@@ -110,7 +110,7 @@ Renvoie tous les logiciels installés et leurs détails sur chaque appareil.
 Méthode | Type de données | Description
 :---|:---|:---
 Exporter l’évaluation de l’inventaire **logiciel (OData)** | Inventaire logiciel par collection d’appareils. Voir : [2.2 Properties (OData)](#22-properties-odata) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. L’API tire toutes les données de votre organisation en tant que réponses Json, en suivant le protocole OData. Cette méthode est la meilleure pour les petites organisations avec moins de 100 Ko d’appareils. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants.
-Exporter l’évaluation de l’inventaire **logiciel (via des fichiers)** | Inventaire logiciel par fichiers d’appareil. Voir : [2.3 Properties (via files)](#23-properties-via-files) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : 1.  Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation. 2.  Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
+Exporter l’évaluation de l’inventaire **logiciel (via des fichiers)** | Inventaire logiciel par fichiers d’appareil. Voir : [2.3 Properties (via files)](#23-properties-via-files) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : 1.  Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation. 2.  Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
 
 ### <a name="22-properties-odata"></a>2.2 Propriétés (OData)
 
@@ -192,4 +192,4 @@ Autres associés
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

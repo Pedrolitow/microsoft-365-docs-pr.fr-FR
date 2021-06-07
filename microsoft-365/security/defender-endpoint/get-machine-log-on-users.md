@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 590bd1dee14e54359dd699e86795664819c23d05
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200093"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770048"
 ---
 # <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs de connexion de l’ordinateur
 
@@ -39,7 +41,7 @@ ms.locfileid: "51200093"
 Récupère une collection d’utilisateurs connectés sur un appareil spécifique.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -66,7 +68,7 @@ GET /api/machines/{id}/logonusers
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande

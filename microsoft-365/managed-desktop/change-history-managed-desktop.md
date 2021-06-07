@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730737"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779854"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Historique des modifications de la documentation relative au Bureau géré Microsoft
 
 Cet article répertorie les articles nouveaux et mis à jour de la [documentation Bureau géré Microsoft.](index.yml) Les articles « mis à jour » ont subi des ajouts matériels ou des corrections . Des correctifs mineurs tels que la correction de fautes de frappe, de style ou de mise en forme ne sont pas répertoriés. Vous pouvez toujours afficher l’historique des validations spécifiques (y compris les détails des modifications) en visitant le [repo sur GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="may-2021"></a>Mai 2021
+Article nouveau ou modifié | Description
+--- | ---
+[Configurer les appareils Bureau géré Microsoft](get-started/set-up-devices.md) | Article mis à jour
+[Rapport d’inventaire des appareils](working-with-managed-desktop/device-inventory-report.md) | Article mis à jour
+[Configuration du réseau pour Bureau géré Microsoft](get-ready/network.md) | Article mis à jour
+[Journaux de diagnostic](service-description/diagnostic-logs.md) | Nouvel article
+[Technologies associées de Bureau géré Microsoft](intro/technologies.md) | Article mis à jour
+[Conditions préalables pour les comptes invité](get-ready/guest-accounts.md) | Article mis à jour
+[Utiliser les rapports](working-with-managed-desktop/reports.md) | Article mis à jour
+
+## <a name="april-2021"></a>Avril 2021
+Article nouveau ou modifié | Description
+--- | ---
+[Profils d’appareil](service-description/profiles.md) | Nouvel article
+[Procédure permettant aux partenaires d’inscrire des appareils](get-started/register-devices-partner.md) | Article mis à jour
+[Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
+[Inscrivez vous-même les appareils existant](get-started/register-reused-devices-self.md) | Article mis à jour
+[Dépendance de nom d’appareil d’adresse](get-ready/address-device-names.md) | Nouvel article
+[Noms de l’appareil](service-description/device-names.md) | Nouvel article
+[Supprimer des appareils](working-with-managed-desktop/remove-devices.md) | Nouvel article
+[Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
+[Applications dans le Bureau géré Microsoft](get-ready/apps.md) | Article mis à jour
+[Valider les nouveaux appareils](get-started/validate-device.md) | Nouvel article
+[Configurer les appareils Bureau géré Microsoft](get-started/set-up-devices.md) | Article mis à jour
+[Bureau géré Microsoft cycle de vie du produit](service-description/device-lifecycle.md) | Article mis à jour
+[Bureau géré Microsoft appareils](service-description/device-list.md) |Article mis à jour
 
 ## <a name="march-2021"></a>9 mars 2021
 Article nouveau ou modifié | Description
@@ -41,7 +69,7 @@ Article nouveau ou modifié | Description
 [Technologies associées de Bureau géré Microsoft](intro/technologies.md) | Article mis à jour
 [Configuration requise de l’appareil](service-description/device-requirements.md) | Article mis à jour
 [Résoudre les problèmes détectés par l’outil de préparation et d’évaluation](get-ready/readiness-assessment-fix.md) | Article mis à jour
-[Microsoft OneDrive](get-started/onedrive.md) | Nouvel article
+[Microsoft OneDrive](get-started/onedrive.md) | Nouvel article
 [Conformité](intro/compliance.md) | Mis à jour
 [Applications Microsoft 365 pour les entreprises](get-started/m365-apps.md) | Article mis à jour
 [Outils d’évaluation de la préparation](get-ready/readiness-assessment-tool.md) | Article mis à jour
@@ -152,7 +180,7 @@ Article nouveau ou modifié | Description
 --- | ---
 [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Article mis à jour
 [Procédure permettant aux partenaires d’inscrire des appareils](get-started/register-devices-partner.md) | Article mis à jour
-[Bureau géré Microsoft appareils](service-description/device-list.md) | Article mis à jour
+[Bureau géré Microsoft périphériques](service-description/device-list.md) | Article mis à jour
 [Inscrivez vous-même les nouveaux appareils](get-started/register-devices-self.md) | Article mis à jour
 
 
@@ -198,7 +226,7 @@ Article nouveau ou modifié | Description
 Article nouveau ou modifié | Description
 --- | ---
 [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
-[Bureau géré Microsoft appareils](service-description/device-list.md) | Article mis à jour
+[Bureau géré Microsoft périphériques](service-description/device-list.md) | Article mis à jour
 [Bureau géré Microsoft archivés](service-description/archived-device-list.md) | Article mis à jour
 
 

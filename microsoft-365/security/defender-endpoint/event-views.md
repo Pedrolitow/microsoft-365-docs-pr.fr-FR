@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: article
+ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569742"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769316"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
@@ -26,9 +27,10 @@ ms.locfileid: "51569742"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> [!TIP]
+> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Examinez les événements de réduction de la surface d’attaque dans l’Observateur d’événements pour surveiller les règles ou paramètres qui fonctionnent. Vous pouvez également déterminer si des paramètres sont trop « bruyants » ou ont un impact sur votre flux de travail quotidien.
 
@@ -36,17 +38,17 @@ La révision des événements est pratique lorsque vous évaluez les fonctionnal
 
 Cet article répertorie tous les événements, leurs fonctionnalités ou paramètres associés, et explique comment créer des affichages personnalisés pour filtrer des événements spécifiques.
 
-Obtenez des rapports détaillés sur les événements et les blocs dans le cadre de la sécurité Windows si vous avez un abonnement E5 et utilisez [Microsoft Defender pour endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
+Obtenez des rapports détaillés sur les événements et les blocs dans le cadre Sécurité Windows si vous avez un abonnement E5 et utilisez [Microsoft Defender pour endpoint](microsoft-defender-endpoint.md).
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Utiliser des affichages personnalisés pour examiner les fonctionnalités de réduction de la surface d’attaque
 
-Créez des affichages personnalisés dans l’Observateur d’événements Windows pour voir uniquement les événements pour des fonctionnalités et des paramètres spécifiques. Le moyen le plus simple consiste à importer un affichage personnalisé en tant que fichier XML. Vous pouvez copier le XML directement à partir de cette page.
+Créez des affichages personnalisés dans Windows’observateur d’événements pour voir uniquement les événements pour des fonctionnalités et des paramètres spécifiques. Le moyen le plus simple consiste à importer un affichage personnalisé en tant que fichier XML. Vous pouvez copier le XML directement à partir de cette page.
 
 Vous pouvez également accéder manuellement à la zone d’événement correspondant à la fonctionnalité.
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importer une vue personnalisée XML existante
 
-1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans le fichier .txt. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
     - Vue personnalisée des événements de réduction de la surface *d’attaque :asr-events.xml*
@@ -66,7 +68,7 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 ### <a name="copy-the-xml-directly"></a>Copier directement le XML
 
-1. Tapez **l’Observateur** d’événements dans le menu Démarrer et ouvrez l’Observateur **d’événements** Windows.
+1. Tapez **l’Observateur** d’événements dans le menu Démarrer et ouvrez **l Windows’observateur d’événements.**
 
 2. Dans le panneau gauche, sous **Actions,** **sélectionnez Créer un affichage personnalisé...**
 
@@ -135,12 +137,12 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 ## <a name="list-of-attack-surface-reduction-events"></a>Liste des événements de réduction de la surface d’attaque
 
-Tous les événements de réduction de la surface d’attaque se trouvent sous Journaux des applications et des **services > Microsoft > Windows,** puis le dossier ou le fournisseur répertoriés dans le tableau suivant.
+Tous les événements de réduction de la surface d’attaque se trouvent sous **Journaux** des applications et des services > Microsoft > Windows puis le dossier ou le fournisseur répertoriés dans le tableau suivant.
 
-Vous pouvez accéder à ces événements dans l’Observateur d’événements Windows :
+Vous pouvez accéder à ces événements dans l Windows’observateur d’événements :
 
 1. Ouvrez le menu **Démarrer** et tapez **l’Observateur** d’événements, puis sélectionnez le résultat de **l’Observateur d’événements.**
-2. Développez Journaux des applications et **des services > Microsoft > Windows,** puis allez dans le dossier répertorié sous **Fournisseur/source** dans le tableau ci-dessous.
+2. Développez **Journaux** des applications et des services > Microsoft > Windows puis allez dans le dossier répertorié sous **Fournisseur/source** dans le tableau ci-dessous.
 3. Double-cliquez sur le sous-élément pour voir les événements. Faites défiler les événements pour trouver celui que vous recherchez.
 
    ![Animation montrant l’utilisation de l’Observateur d’événements](/windows/security/threat-protection/images/event-viewer)
@@ -156,12 +158,12 @@ Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 6  | 
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 7  | Bloquer l’audit des images distantes
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 8  | Bloquer le bloc d’images distantes
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 9  | Désactiver l’audit des appels système win32k
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 10  | Désactiver le bloc d’appels système win32k
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 10 | Désactiver le bloc d’appels système win32k
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 11 | Audit de protection de l’intégrité du code
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 12  | Bloc de protection de l’intégrité du code
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 13 | Audit EAF
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 14  | Appliquer EAF
-Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 15  | Audit EAF+
+Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 15 | Audit EAF+
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 16  | Appliquer EAF+
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 17  | Audit IAF
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 18  | Application IAF
@@ -172,15 +174,15 @@ Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 22 | R
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 23 | Audit SimExec ROP
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 24 | Appliquer SimExec ROP
 Exploit Protection | WER-Diagnostics | 5  | Bloc CFG
-Exploit Protection | Win32K (opérationnel) | 260 | Police nontrusted
+Exploit Protection | Win32K (opérationnel) | 260 | Police nontrus
 Protection du réseau | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Protection du réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode Audit
 Protection du réseau | Windows Defender (opérationnel) | 1126 | Événement lorsque la protection du réseau se déclenche en mode blocage
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1124 | Événement d’accès contrôlé aux dossiers audité
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1123 | Événement d’accès contrôlé aux dossiers bloqué
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1127 | Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers bloqué
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1128 | Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité
+Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1127 | Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers
+Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1128 | Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers audité
 Réduction de la surface d'attaque | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Réduction de la surface d'attaque | Windows Defender (opérationnel) | 1122 | Événement lorsque la règle se déclenche en mode audit
 Réduction de la surface d'attaque | Windows Defender (opérationnel) | 1121 | Événement lorsque la règle se déclenche en mode blocage

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 531281eba6accfb2e1ffdab1e662a03b077869bd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782485"
+ms.locfileid: "52779757"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -88,7 +88,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
   
 #### <a name="run-the-compatibility-checker"></a>Exécuter le contrôle de compatibilité
   
-1. Démarrez une fenêtre PowerShell.exe avec élévation de PowerShell.exe.
+1. Démarrez une fenêtre avec PowerShell.exe élevée.
     
 2. Exécutez la commande suivante :
 
@@ -121,7 +121,7 @@ Une fois l'exécution de l'outil terminée, celui-ci génère un fichier de sort
 - Boîte aux lettres prise en charge - Si l'utilisateur a une boîte aux lettres OAuth
 
 > [!NOTE]
-> L’authentification multifacteur n’est pas prise en charge lors de l’utilisation du module PowerShell de déploiement central. Le module fonctionne uniquement avec l’authentification de base.
+> L’authentification multifacteur n’est pas prise en charge lors de l’utilisation du module PowerShell de déploiement central.
   
 ## <a name="user-and-group-assignments"></a>Affectations à des utilisateurs et groupes
 

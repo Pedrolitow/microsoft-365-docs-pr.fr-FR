@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment déployer des modules pour les utilisateurs et les groupes de votre organisation à l’aide du déploiement centralisé dans le Centre d’administration.
-ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 796517ba13a4718c38d5200fcf9cbe38b5dc62d0
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636021"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779637"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Déployer des compléments dans le centre d’administration
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur la façon de déterminer si votre organisation pe
 Pour en savoir plus sur la gestion des add-ins après le déploiement, voir Gérer les [add-ins dans le Centre d’administration](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Pour Word, Excel et PowerPoint utilisent un catalogue d’applications [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des applications pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des SharePoint. Par Outlook utiliser Exchange panneau de Microsoft 365.
+>  Pour Word, Excel et PowerPoint utilisent un catalogue d’applications [SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) pour déployer des applications pour les utilisateurs dans un environnement local sans connexion à Microsoft 365 et/ou prise en charge des SharePoint. Par Outlook utiliser Exchange panneau de Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Approche recommandée pour le déploiement de compléments Office
 
@@ -54,18 +54,18 @@ Selon la taille de l’audience cible, vous pouvez ajouter ou supprimer des éta
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Déploiement d’un complément Office à l’aide du centre d’administration
 
-Avant de commencer, voir Déterminer si le déploiement centralisé des modules est efficace [pour votre organisation.](centralized-deployment-of-add-ins.md)
+Avant de commencer, voir Déterminer si le déploiement centralisé de vos modules de déploiement [fonctionne pour votre organisation.](centralized-deployment-of-add-ins.md)
   
 1. Dans le Centre d’administration, Paramètres la page  \> **Des modules.** Si vous ne voyez pas la page des applications, **rendez-vous** sur la page **Paramètres** applications \>  \> **intégrées.**
 
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
 
     > [!NOTE]
-    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Les applications intégrées sont visibles uniquement pour les administrateurs globaux, tandis que pour d’autres, l’ancienne expérience existe toujours. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Les applications intégrées sont visibles uniquement par les administrateurs globaux, tandis que pour d’autres, l’ancienne expérience existe toujours. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
 3. Sélectionnez une option et suivez les instructions.
   
-4. Si vous avez sélectionné l’option d’ajout d’un Office Store, faites votre choix. </br>
+4. Si vous avez sélectionné l’option d’ajout d’un Office Store, faites votre sélection. </br>
 
     Vous pouvez afficher les add-ins disponibles par catégories : Suggéré pour **vous,** **Évaluation** ou **Nom**. Seuls les add-ins gratuits sont disponibles dans Office Store. Les compléments payants ne sont pas pris en charge pour le moment. Une fois que vous avez sélectionné un module, acceptez les conditions générales pour continuer. <br/> 
 
@@ -82,7 +82,7 @@ Avant de commencer, voir Déterminer si le déploiement centralisé des modules 
 7. Une coche verte s’affiche lorsque le add-in est déployé. Suivez les instructions de la page pour tester le add-in.
 
     > [!NOTE]
-    > Les utilisateurs devront peut-être redémarrer Office pour afficher l’icône du module sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application.
+    > Les utilisateurs devront peut-être redémarrer Office pour afficher l’icône de la application sur le ruban de l’application. Outlook des applications peuvent prendre jusqu’à 24 heures pour apparaître sur les rubans de l’application.
 
 8. Lorsque vous avez terminé, sélectionnez **Suivant**. Si vous avez déployé votre déploiement uniquement sur vous-même, vous pouvez sélectionner Modifier qui a accès au **add-in** pour le déployer pour d’autres utilisateurs.
 

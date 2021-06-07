@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Dans les 30 jours suivant la suppression d’un compte d’utilisateur, vous pouvez restaurer le compte et toutes les données, et l’utilisateur peut se connecter avec le même compte.
-ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f849fe8e403aa9a72eccb4dd65665ec9f33618d1
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623820"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779649"
 ---
 # <a name="restore-a-user"></a>Restaurer un utilisateur
    
@@ -38,7 +38,7 @@ Voici quelques conseils :
   
 - Assurez-vous que les licences peuvent être assignées au compte.
     
-- Si votre entreprise utilise Active Directory, consultez [Comment résoudre les problèmes liés aux comptes d'utilisateurs supprimés dans Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md) pour obtenir des instructions sur la restauration d'un compte d'utilisateur. 
+- Si votre entreprise utilise Active Directory, pour les problèmes de restauration d’un compte d’utilisateur, voir Comment résoudre les problèmes de comptes d’utilisateur [supprimés dans Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Restaurer un ou plusieurs comptes d'utilisateur
 
@@ -48,7 +48,7 @@ Vous devez être administrateur Microsoft 365 administrateur global ou administr
 
 2. Dans la page **Utilisateurs** supprimés, sélectionnez les noms des utilisateurs que vous souhaitez restaurer, puis sélectionnez **Restaurer.**
     
-3. Suivez les invites pour définir leur mot de passe, puis sélectionnez **Restaurer.**
+3. Suivez les invites pour définir leur mot de passe, puis sélectionnez **Restaurer**.
     
 4. Si l’utilisateur est correctement restauré, sélectionnez **Envoyer un e-mail et fermez.** Si vous rencontrez un conflit de noms ou d'adresses de proxy, consultez les instructions ci-dessous pour savoir comment restaurer ces comptes.
     

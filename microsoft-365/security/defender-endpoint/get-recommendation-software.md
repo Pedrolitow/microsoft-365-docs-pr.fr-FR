@@ -1,7 +1,7 @@
 ---
-title: Obtenir une recommandation par logiciel
+title: Obtenir les actions d’amélioration par logiciel
 description: Récupère une recommandation de sécurité liée à un logiciel spécifique.
-keywords: api, api de graphique, api pris en charge, obtenir, recommandation de sécurité, recommandation de sécurité pour les logiciels, la gestion des menaces et des vulnérabilités, les api de gestion des menaces et des vulnérabilités
+keywords: api, api de graphique, api pris en charge, obtenir, recommandation de sécurité, recommandation de sécurité pour les logiciels, Gestion des menaces et des vulnérabilités, Gestion des menaces et des vulnérabilités api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 82479b0248ceee95321d269e3f48a4eeea3ad193
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 68bc53f2ae0b44567530cc1dd733c9dd37d380ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199500"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769586"
 ---
-# <a name="get-recommendation-by-software"></a>Obtenir une recommandation par logiciel
+# <a name="get-recommendation-by-software"></a>Obtenir les actions d’amélioration par logiciel
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,7 +57,7 @@ GET /api/recommendations/{id}/software
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande
