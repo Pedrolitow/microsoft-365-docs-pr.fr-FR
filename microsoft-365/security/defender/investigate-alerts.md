@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689012"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782908"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Examiner les alertes dans Microsoft 365 Defender
 
@@ -44,9 +44,9 @@ La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous ar
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente des alertes":::
 
-Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour endpoint, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
+Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour Endpoint, Microsoft Defender pour Office 365 et Microsoft 365 Defender s’affichent ici.
 
-Par défaut, la file d’attente des alertes dans Microsoft 365 centre de sécurité affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste pour que vous la voyez en premier. 
+Par défaut, la file d’attente des alertes dans Microsoft 365 centre de sécurité affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste, ce qui vous permet de la voir en premier. 
 
 Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
@@ -89,10 +89,10 @@ Microsoft 365 Les alertes Defender peuvent être issues de solutions telles que 
 
 Source de l’alerte | Caractère prédépendé 
 :---|:---
-Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender pour Office 365 | `fa{GUID}` <br> Exemple : `fa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Defender pour point de terminaison | `da` ou `ed` pour les alertes de détection personnalisées <br> 
 Microsoft Defender pour l’identité | `aa{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` 
-Microsoft Cloud App Security |`ca{GUID}` <br> Exemple : `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Exemple : `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
 
 
@@ -115,7 +115,7 @@ La page de détails affiche les détails de l’alerte sélectionnée, ainsi que
 
 Une fois que vous avez sélectionné une entité d’intérêt, la page de détails change pour afficher les informations sur le type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et les options d’action sur cette entité directement à partir de la page d’alerte.
 
-## <a name="manage-alerts"></a>Gérer des alertes
+## <a name="manage-alerts"></a>Gérer les alertes
 
 Pour gérer une alerte, sélectionnez l’alerte dans la file d’attente des alertes sur sa ligne pour voir un volet Gérer **les** alertes. Voici un exemple.
 
@@ -129,7 +129,7 @@ Le **volet Gérer les** alertes vous permet de spécifier :
 - Commentaire de l’alerte.
 
 > [!NOTE]
-> Une façon de gérer les alertes par le biais de l’utilisation de balises. La fonctionnalité de marquage de Microsoft Defender pour Office 365 est déployée de manière incrémentielle et est actuellement en prévisualisation. <br>
+> Une façon de gérer les alertes via l’utilisation de balises. La fonctionnalité de marquage de Microsoft Defender pour Office 365 est déployée de manière incrémentielle et est actuellement en prévisualisation. <br>
 > Actuellement, les noms de balise modifiés sont appliqués uniquement aux alertes créées *après la* mise à jour. Les alertes qui ont été générées avant la modification ne reflètent pas le nom de balise mis à jour. 
 
 À partir de ce volet, vous pouvez également effectuer les actions supplémentaires ci-après : 
@@ -151,7 +151,7 @@ La liste des actions supplémentaires dépend du type d’alerte.
 
 Une fois que vous avez terminé l’analyse d’une  alerte et qu’elle peut être  résolue, allez dans le volet Gérer l’alerte et marquez l’état de l’alerte comme Résolu et classez-la en tant qu’alerte **False** ou Alerte **True.** Pour les alertes vraies, spécifiez le type de menace de l’alerte dans le **champ Détermination.**
 
-La classification des alertes et la spécification de leur détermination permettent d’Microsoft 365 Defender pour fournir plus d’alertes vraies et moins de fausses alertes.
+La classification des alertes et la spécification de leur détermination permettent Microsoft 365 Defender pour fournir plus d’alertes vraies et moins de fausses alertes.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

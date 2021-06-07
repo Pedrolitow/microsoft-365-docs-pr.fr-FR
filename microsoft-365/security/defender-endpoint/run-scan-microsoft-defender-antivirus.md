@@ -11,21 +11,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 124ebde48c008743a486a4454e7772fd93f9eca7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fdca059633ab0993e07b5b1be0c6f33cfe327fcf
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275359"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789170"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender.
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
@@ -40,14 +38,12 @@ L’analyse rapide examine tous les emplacements où des programmes malveillants
 > [!IMPORTANT]
 > Antivirus Microsoft Defender s’exécute dans le contexte du [compte LocalSystem](/windows/win32/services/localsystem-account) lors de l’analyse locale. Pour les analyses réseau, il utilise le contexte du compte d’appareil. Si le compte d’appareil de domaine ne peut pas accéder au partage, l’analyse ne fonctionne pas. Assurez-vous que l’appareil dispose d’autorisations sur le partage réseau d’accès.
 
-Combinée avec la fonctionnalité de [protection](configure-real-time-protection-microsoft-defender-antivirus.md)en temps réel toujours en cours (qui examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier), une analyse rapide permet d’assurer une couverture solide à la fois pour les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau.  
+Combinée à une fonctionnalité [de protection](configure-real-time-protection-microsoft-defender-antivirus.md)en temps réel toujours en cours, une analyse rapide permet de fournir une couverture forte à la fois pour les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. La protection en temps réel et toujours en cours examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier. Par défaut, les analyses rapides s’exécutent sur des appareils amovibles montés, tels que des lecteurs USB. Dans la plupart des cas, une analyse rapide permet de trouver des programmes malveillants qui n’ont pas été détectés par la protection en temps réel.
 
-Dans la plupart des cas, une analyse rapide permet de trouver des programmes malveillants qui n’ont pas été détectés par la protection en temps réel.
+Une analyse complète peut être utile lorsqu’une menace de programmes malveillants est signalée sur un point de terminaison. L’analyse peut déterminer s’il existe des composants inactifs qui nécessitent un nettoyage plus approfondi. Toutefois, Microsoft recommande généralement d’utiliser des analyses rapides plutôt que des analyses complètes. L’analyse complète peut prendre quelques heures ou jours, en fonction de la quantité et du type de données à analyser. 
 
-Une analyse complète peut être utile sur les points de terminaison qui ont signalé une menace de programmes malveillants. L’analyse peut identifier s’il existe des composants inactifs qui nécessitent un nettoyage plus approfondi. Cela est idéal si votre organisation exécute des analyses à la demande.
-
-> [!NOTE]
-> Par défaut, les analyses rapides s’exécutent sur des appareils amovibles montés, tels que des lecteurs USB.
+> [!TIP]
+> Pour en savoir plus sur les différences entre les analyses rapides et complètes, voir Analyse rapide et analyse [complète et analyse personnalisée.](scheduled-catch-up-scans-microsoft-defender-antivirus.md#quick-scan-versus-full-scan-and-custom-scan)
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Utiliser Microsoft Endpoint Manager pour exécuter une analyse
 
@@ -75,7 +71,7 @@ Pour plus d’informations sur l’utilisation de l’outil et des paramètres s
 
 1. Go to the Microsoft Endpoint Manager admin center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) and log in.
 2. Dans la barre latérale, sélectionnez **Appareils > tous** les appareils et choisissez l’appareil que vous souhaitez analyser.
-3. Sélectionnez **... Plus**. Dans les options, sélectionnez **Analyse rapide** **ou Analyse complète.**
+3. Sélectionnez **... Plus**. Dans les options, sélectionnez **Analyse rapide** ou **Analyse complète.**
 
 ## <a name="use-the-windows-security-app-to-run-a-scan"></a>Utiliser l’application Sécurité Windows pour exécuter une analyse
 
@@ -83,7 +79,7 @@ Voir [Exécuter une analyse dans l’application Sécurité Windows pour](micros
 
 ## <a name="use-powershell-cmdlets-to-run-a-scan"></a>Utiliser les cmdlets PowerShell pour exécuter une analyse
 
-Utilisez l’cmdlet suivante :
+Utilisez la cmdlet suivante :
 
 ```PowerShell
 Start-MpScan
@@ -101,4 +97,4 @@ Pour plus d’informations sur les paramètres autorisés, voir [Windows Defende
 
 - [Configurer les options d’analyse de l’antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

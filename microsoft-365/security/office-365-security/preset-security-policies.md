@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts aux fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca65f003b0c206b0f7e23f3498a4ef0d0bc03fa6
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788978"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771224"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -69,7 +69,7 @@ Les stratégies de sécurité prédéfines utilisent les stratégies corresponda
 - **Exchange Online Protection (EOP)**: cela inclut les organisations Microsoft 365 avec des boîtes aux lettres Exchange Online et les organisations EOP autonomes Exchange Online boîtes aux lettres :
 
   - [Stratégies anti-courrier indésirable](configure-your-spam-filter-policies.md) **nommées Standard Preset Security Policy** et Strict **Preset Security Policy**.
-  - [Stratégies anti-programme](configure-anti-malware-policies.md) malveillant nommées Stratégie de sécurité **prédéfinë standard** et **Stratégie de sécurité prédéfinë stricte.**
+  - [Stratégies anti-programme malveillant](configure-anti-malware-policies.md) nommées Stratégie de sécurité **prédéfinë standard** et **Stratégie de sécurité prédéfinë stricte.**
   - [Stratégies anti-hameçonnage EOP](set-up-anti-phishing-policies.md#spoof-settings) nommées Stratégie de sécurité prédéfini **standard** et stratégie de sécurité prédéfini stricte **(paramètres** d’usurpation).
 
 - **Stratégies de Microsoft Defender pour Office 365**: cela inclut les organisations avec des abonnements Microsoft 365 E5 ou Defender pour Office 365 de modules:
@@ -88,9 +88,9 @@ Notez que vous pouvez appliquer des protections EOP à différents utilisateurs 
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Paramètres de stratégie dans les stratégies de sécurité prédéfines
 
-Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les **valeurs des** paramètres de stratégie Standard et **Strict** sont décrites dans les [paramètres recommandés](recommended-settings-for-eop-and-office365.md)pour EOP et Microsoft Defender pour Office 365 sécurité.
+Vous ne pouvez pas modifier les paramètres de stratégie dans les profils de protection. Les **valeurs des** paramètres de stratégie Standard et **Strict** sont décrites dans les paramètres recommandés pour EOP et Microsoft Defender pour [Office 365 sécurité.](recommended-settings-for-eop-and-office365.md)
 
-### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinir et autres stratégies
+### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Ordre de priorité pour les stratégies de sécurité prédéfinir et les autres stratégies
 
 Lorsque plusieurs stratégies sont appliquées à un utilisateur, l’ordre suivant est appliqué de la priorité la plus élevée à la priorité la plus faible :
 
@@ -119,11 +119,11 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Utiliser le centre de sécurité pour affecter des stratégies de sécurité prédéfines aux utilisateurs
 
-1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Templated policies** section \> **Preset Security Policies**.
+1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **Rules** \> **Threat Policies** \> **Preset Security Policies**.
 
 2. Sous **Protection standard ou** Protection **stricte,** cliquez sur **Modifier.**
 
-3. **L’Assistant Appliquer une protection standard** ou Appliquer une **protection** stricte démarre. Sur la page **des protections EOP,** identifiez les destinataires internes à qui les [protections EOP](#policies-in-preset-security-policies) s’appliquent (conditions de destinataire) :
+3. **L’Assistant Appliquer une protection standard** ou Appliquer une **protection** stricte démarre. Sur la page **des protections EOP,** identifiez les destinataires internes à qui s’appliquent les [protections EOP](#policies-in-preset-security-policies) (conditions de destinataire) :
    - **Utilisateurs**
    - **Groupes**
    - **Domaines**
@@ -152,8 +152,8 @@ Pour désactiver les stratégies de sécurité **de protection standard** ou str
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
-Pour vérifier que vous avez bien  affecté la stratégie de sécurité **Protection standard** ou Protection stricte à un utilisateur, utilisez un paramètre de protection dont la valeur par défaut est différente de celle de la **protection standard,** ce qui est différent du paramètre **Strict Protection.**
+Pour vérifier que vous avez bien  affecté la stratégie de sécurité **Protection standard** ou Protection stricte à un utilisateur, utilisez un paramètre de protection dont la valeur par défaut est différente de celle de la **protection standard,** ce qui est différent du paramètre Strict **Protection.**
 
 Par exemple, pour les e-mails détectés comme courrier indésirable (et non comme courrier indésirable à niveau de confiance élevé), vérifiez que le message est remis dans le dossier Courrier indésirable pour les utilisateurs de **la protection standard** et mis en quarantaine pour les utilisateurs à **protection** stricte.
 
-Ou, pour le courrier en [nombre,](bulk-complaint-level-values.md)vérifiez que la valeur BCL 6 ou supérieure fournit le message dans le dossier Courrier indésirable pour les utilisateurs de **la protection standard,** et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de la **protection** stricte.
+Ou, pour le courrier en [nombre,](bulk-complaint-level-values.md)vérifiez que la valeur BCL 6 ou supérieure place le message dans le dossier Courrier indésirable pour les utilisateurs de **la protection standard,** et que la valeur BCL 4 ou supérieure met le message en quarantaine pour les utilisateurs de la **protection** stricte.

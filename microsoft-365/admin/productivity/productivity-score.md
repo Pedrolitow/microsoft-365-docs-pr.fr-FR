@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment le Niveau de productivité Microsoft reflète les mesures de l’expérience utilisateur et technologique, et comparez-les aux organisations de taille similaire.
-ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779673"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789038"
 ---
 # <a name="microsoft-productivity-score"></a>Niveau de productivité Microsoft 
 
@@ -53,7 +53,7 @@ Pour les données sur les expériences des personnes, vous avez besoin d’un ab
 > [!NOTE]
 > Il n’est pas nécessaire de disposer d’une licence d’Analyse du temps de travail pour obtenir les fonctionnalités de niveau de productivité.
 
-La note de productivité est disponible uniquement dans le Centre d’administration Microsoft 365 et ne peut être consultée que par les professionnels de l’informatique qui ont l’un des rôles suivants :  
+Le niveau de productivité est disponible uniquement dans le Centre d’administration Microsoft 365 et ne peut être consulté que par les professionnels de l’informatique qui ont l’un des rôles suivants :  
 
 - Administrateur général
 - Administrateurs Exchange
@@ -116,13 +116,13 @@ Pour la connectivité réseau, le point de référence recommandé est de 80 poi
 
 La section **Répartition du score** fournit une répartition de votre niveau de productivité avec des points de référence pour les domaines des expériences des personnes et technologiques.
 
-L’historique des niveaux indique la façon dont votre niveau dans chaque catégorie a évolué au cours des 6 derniers mois.
+L’historique des niveaux indique la façon dont votre niveau dans chaque catégorie a évolué au cours des six derniers mois.
 
-Les domaines des **expériences des personnes** et des **expériences technologiques** incluent les informations principales relatives aux catégories dans ces domaines. Vous pouvez cliquer sur chaque catégorie pour consulter des informations plus approfondies.
+Les domaines des **expériences des personnes** et des **expériences technologiques** incluent les informations principales relatives aux catégories dans ces domaines. Vous pouvez sélectionner chaque catégorie pour consulter des informations plus approfondies.
 
 ## <a name="category-details-pages"></a>Pages de détails de catégorie
 
-Chaque page de détails de catégorie présente les principaux éléments d’informations et mesures concernées, ainsi que les recherches et actions associées que vous pouvez entreprendre pour faire évoluer votre organisation. Des études soutiennent l’importance des informations principales de chaque catégorie et le raisonnement associé. Pour plus d’informations, [consultez le rapport Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Chaque page de détails de catégorie présente les principaux éléments d’informations et mesures concernées, ainsi que les recherches et actions associées que vous pouvez entreprendre pour faire évoluer votre organisation. Des études soutiennent l’importance des informations principales de chaque catégorie et le raisonnement associé. Pour plus d’informations, [consultez le rapport Forrester](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
 
 Les pages de détails sont les suivantes :
 - [Collaboration de contenu – expériences des personnes](content-collaboration.md)

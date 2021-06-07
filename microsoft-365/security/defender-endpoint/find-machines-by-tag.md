@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6460860828acd5ea0c3509e9eb06061d2a9a0cc2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 88ad63d8b7cc71f7d3f809c7cb0371fc41bb9f5d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200148"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771164"
 ---
 # <a name="find-devices-by-tag-api"></a>Rechercher des appareils par API de balise
 
@@ -39,7 +41,7 @@ ms.locfileid: "51200148"
 Rechercher [des ordinateurs](machine.md) par [balise](machine-tags.md).
 <br>```startswith``` est prise en charge. 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -68,13 +70,13 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 ## <a name="request-uri-parameters"></a>Paramètres d’URI de demande
 
 Nom | Type | Description
 :---|:---|:---
-tag | Chaîne | Nom de la balise. **Obligatoire**.
+tag | String | Nom de la balise. **Obligatoire**.
 useStartsWithFilter | Boolean | Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande

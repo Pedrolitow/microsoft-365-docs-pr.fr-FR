@@ -1,5 +1,5 @@
 ---
-title: DÉMARRER l’API Investigation
+title: DÉMARRER l’API d’examen
 description: Utilisez cette API pour lancer l’examen sur un appareil.
 keywords: api, api de graphique, api pris en charge, examen
 search.product: eADQiWindows 10XVcnh
@@ -14,23 +14,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4bdbfbb20f3abb9829b2c8be83b9eaa6ec92cde7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: b7a6a3e7f6f705f322ee3eb1c1b561bc01c55d29
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187223"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770888"
 ---
-# <a name="start-investigation-api"></a>DÉMARRER l’API Investigation
+# <a name="start-investigation-api"></a>DÉMARRER l’API d’examen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -43,7 +44,7 @@ Lancez un examen automatisé sur un appareil.
 <br>Pour plus [d’informations, voir Vue d’ensemble des enquêtes](automated-investigations.md) automatisées.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Les limites de taux pour cette API sont de 50 appels par heure.
 
 
@@ -70,7 +71,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/startInvestigati
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | string | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande

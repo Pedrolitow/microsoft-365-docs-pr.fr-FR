@@ -16,18 +16,18 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 685c23f4e8daac4f00e0bbd90dcaca9a80703559
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: 48d299f2318b0a1be251132a4b50a333a1a0c7a8
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696513"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782956"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurer des fonctionnalités d’examen et de réponse automatisées dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365 Defender inclut de [puissantes fonctionnalités d’investigation](m365d-autoir.md) et de réponse automatisées qui peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité. Grâce [à une auto-ressource,](m365d-autoir.md#how-automated-investigation-and-self-healing-works)ces fonctionnalités imitent les étapes qu’un analyste de sécurité prend pour examiner les menaces et y répondre, uniquement plus rapidement et avec une plus grande capacité d’échelle.
+Microsoft 365 Defender inclut de [puissantes fonctionnalités d’investigation](m365d-autoir.md) et de réponse automatisées qui peuvent faire gagner beaucoup de temps et d’efforts à votre équipe en matière d’opérations de sécurité. Grâce [à une auto-ressource,](m365d-autoir.md#how-automated-investigation-and-self-healing-works)ces fonctionnalités imitent les étapes qu’un analyste de sécurité prend pour examiner les menaces et y répondre, uniquement plus rapidement et avec plus de possibilité d’échelle.
 
 Cet article explique comment configurer l’examen et la réponse automatisés dans Microsoft 365 Defender en suivant les étapes ci-après :
 
@@ -36,7 +36,7 @@ Cet article explique comment configurer l’examen et la réponse automatisés d
 3. [Examinez vos stratégies de sécurité et d’alerte dans Office 365](#review-your-security-and-alert-policies-in-office-365).
 4. [Assurez-vous Microsoft 365 Defender est allumé.](#make-sure-microsoft-365-defender-is-turned-on)
 
-Ensuite, une fois que vous avez tous été mis en place, vous pouvez afficher et gérer les actions de [correction dans le centre de actions.](m365d-autoir-actions.md)
+Ensuite, une fois que vous avez tous été mis en place, vous pouvez afficher et gérer les actions de correction [dans le centre de actions.](m365d-autoir-actions.md)
 
 ## <a name="prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender"></a>Conditions préalables à l’examen et à la réponse automatisés dans Microsoft 365 Defender
 
@@ -60,7 +60,7 @@ L’application d’enquêtes automatisées et l’action de correction automati
 1. Go to the Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) and sign in.
 2. Go to **Paramètres**  >  **Permissions**  >  **Device groups**.
 3. Examinez vos stratégies de groupe d’appareils. En particulier, regardez la colonne **de niveau correction.** Nous vous recommandons **d’utiliser Full - corriger les menaces automatiquement**.  Vous devrez peut-être créer ou modifier vos groupes d’appareils pour obtenir le niveau d’automatisation voulu. Pour obtenir de l’aide sur cette tâche, consultez les articles suivants :
-   - [Comment les menaces sont-elles corrigés ?](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
+   - [Comment les menaces sont corrigés](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [Créer et gérer des groupes d’appareils](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Passer en revue vos stratégies de sécurité et d’alerte dans Office 365
@@ -73,8 +73,8 @@ Les paramètres de sécurité Office 365 protéger le courrier électronique et 
 
 1. Dans le centre Microsoft 365 de sécurité ( [https://security.microsoft.com](https://security.microsoft.com) ), go to Policies & **Rules** \> **Threat policies**.
 2. Assurez-vous que toutes les stratégies suivantes sont configurées. Pour obtenir de l’aide et des recommandations, voir [Protéger contre les menaces.](/microsoft-365/security/office-365-security/protect-against-threats)
-   - [Anti-programme malveillant)](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [Anti-hameçonnage)](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Anti-programme malveillant](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+   - [Anti-hameçonnage](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
    - [Pièces jointes fiables](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Liens fiables](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Anti-courrier indésirable](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)

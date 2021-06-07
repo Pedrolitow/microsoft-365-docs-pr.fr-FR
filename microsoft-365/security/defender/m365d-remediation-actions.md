@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269467"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782944"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Actions de correction dans Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "52269467"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Pendant et après un examen automatisé dans Microsoft 365 Defender, des actions de correction sont identifiées pour les éléments malveillants ou suspects. Certains types d’actions de correction sont prises sur les appareils, également appelés points de terminaison. D’autres mesures correctives sont prises sur le contenu du courrier électronique. Les enquêtes automatisées se terminent après que des mesures correctives ont été prises, approuvées ou rejetées.
 
@@ -73,9 +73,9 @@ En plus des actions de correction qui suivent des enquêtes automatisées, votre
 - Action manuelle de l’appareil, telle que l’isolation de l’appareil ou la mise en quarantaine des fichiers
 - Action de messagerie manuelle, telle que la suppression possible des messages électroniques 
 - [Action de recherche](../defender-endpoint/advanced-hunting-overview.md) avancée sur les appareils ou les e-mails
-- [Action de](../office-365-security/threat-explorer.md) l’Explorateur sur le contenu du courrier électronique, telle que le déplacement du courrier électronique vers le courrier indésirable, la suppression possible ou la suppression de courrier électronique
+- [Action de](../office-365-security/threat-explorer.md) l’Explorateur sur le contenu du courrier électronique, telle que le déplacement du courrier électronique vers le courrier indésirable, la suppression possible ou la suppression de courriers électroniques durs
 - Action [de réponse en direct](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) manuelle, telle que la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée
-- Action de réponse en direct [avec les API microsoft Defender pour](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)les points de terminaison, telles que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
+- Action de réponse en direct [avec les API Microsoft Defender pour point](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)de terminaison, telle que l’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier
 
 ## <a name="next-steps"></a>Étapes suivantes
 

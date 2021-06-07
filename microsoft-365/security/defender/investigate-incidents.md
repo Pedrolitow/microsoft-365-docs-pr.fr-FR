@@ -17,17 +17,20 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+- incidentresponse
+- m365solution-incidentresponse
+- m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 865aa9dc34a91be251d6f7772da5cc686f9641a4
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: dcfc3bd0e06e0bdca6c834e947d7d136af47fde3
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651311"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782824"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
@@ -43,13 +46,13 @@ Au sein d’un incident, vous analysez les alertes qui affectent votre réseau, 
 
 ## <a name="initial-investigation"></a>Examen initial
 
-Avant de vous plonger dans les détails, jetez un œil aux propriétés et à la synthèse de l’incident.
+Avant de vous plonger dans les détails, jetez un œil aux propriétés et au résumé de l’incident.
 
 Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d’un incident dans la colonne de coche":::
 
-Lorsque vous le faites, un volet récapitulatif s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
+Lorsque vous le faites, un volet de synthèse s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple de volet récapitulatif pour un incident":::
 
@@ -61,9 +64,9 @@ Vous pouvez également ouvrir la page principale d’un incident en sélectionna
 
 La page **Résumé** vous donne un aperçu instantané des principaux éléments à noter concernant l’incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le centre de Microsoft 365 de sécurité":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le centre Microsoft 365 sécurité":::
 
-Les catégories d’attaques vous donnent une vue visuelle et numérique de l’avancement de l’attaque par rapport à la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [MITRE ATT&&trade; CK.](https://attack.mitre.org/)
+Les catégories d’attaque vous donnent une vue visuelle et numérique de l’avancement de l’attaque par rapport à la chaîne d’attaque. Comme avec d’autres produits de sécurité Microsoft, Microsoft 365 Defender est aligné sur l’infrastructure [ &trade; CK de MITRE ATT&.](https://attack.mitre.org/)
 
 La section l'étendue fournit la liste des principales ressources affectées à cet incident. S’il existe des informations spécifiques sur cet élément (par exemple, niveau de risque, priorité d’examen, et balisage sur les éléments) qui s’affichent également dans cette section.
 
@@ -115,11 +118,11 @@ Vous pouvez cocher la coche d’un appareil pour voir les détails de l’appare
 Dans la page appareil, vous pouvez collecter des informations supplémentaires sur l’appareil, telles que toutes ses alertes, une chronologie et des recommandations de sécurité. Par exemple,  à partir de l’onglet Chronologie, vous pouvez parcourir la chronologie de l’ordinateur et afficher tous les événements et comportements observés sur l’ordinateur dans l’ordre chronologique, entrecoupés des alertes.
 
 > [!TIP]
-> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le centre Microsoft 365 de sécurité, choisissez Points de **terminaison >'inventaire des appareils.** Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour plus d’informations, voir [Exécuter Antivirus Microsoft Defender sur les appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
+> Vous pouvez faire des analyses à la demande sur une page d’appareil. Dans le centre Microsoft 365 de sécurité, choisissez Points de **terminaison >'inventaire des appareils.** Sélectionnez un appareil qui a des alertes, puis exécutez une analyse antivirus. Les actions, telles que les analyses antivirus, sont suivis et sont visibles sur la page **d’inventaire des** appareils. Pour plus d’informations, voir [Exécuter Antivirus Microsoft Defender’analyse sur les appareils.](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)
 
 ## <a name="users"></a>Utilisateurs
 
-**L’onglet** Utilisateurs répertorie tous les utilisateurs identifiés comme faisant partie ou associés à l’incident. Voici un exemple.
+**L’onglet** Utilisateurs répertorie tous les utilisateurs qui ont été identifiés comme faisant partie ou associés à l’incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident":::
 
@@ -166,7 +169,7 @@ Avec le nouvel **onglet Graph** (en prévisualisation), vous pouvez voir :
 
 Voici un exemple.
 
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Exemple d’une page Graph pour un incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Exemple de page de Graph pour un incident":::
 
 Le graphique d’incident vous permet de comprendre rapidement l’étendue complète de l’attaque en connectant les différentes entités suspectes faisant partie de l’attaque avec leurs biens connexes tels que les utilisateurs, les périphériques et les boîtes aux lettres. 
 

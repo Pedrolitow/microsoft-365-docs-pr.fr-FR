@@ -1,7 +1,7 @@
 ---
 title: Protection par le cloud et antivirus Microsoft Defender
 description: En savoir plus sur la protection et les Antivirus Microsoft Defender
-keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, antivirus de nouvelle génération, apprentissage automatique, logiciel anti-programme malveillant, sécurité, defender, cloud, protection cloud
+keywords: Antivirus Microsoft Defender, technologies de nouvelle génération, antivirus nouvelle génération, apprentissage automatique, logiciel anti-programme malveillant, sécurité, defender, cloud, protection cloud
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -14,13 +14,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 06/03/2021
-ms.openlocfilehash: ce54f8205e62b953022fd2518caac058f4f9bab2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 836025b42bbe6142f462ee31f266a636f5101fe9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788798"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52783004"
 ---
 # <a name="cloud-delivered-protection-and-microsoft-defender-antivirus"></a>Protection par le cloud et antivirus Microsoft Defender
 
@@ -58,7 +57,7 @@ Les organisations exécutant Windows 10 E5 peuvent également tirer parti des mi
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-1. [Activer la protection cloud.](enable-cloud-protection-microsoft-defender-antivirus.md) Vous pouvez activer la protection cloud avec Microsoft Endpoint Manager (qui inclut désormais Microsoft Endpoint Configuration Manager et Microsoft Intune), une stratégie de groupe ou des cmdlets PowerShell.
+1. [Activer la protection cloud.](enable-cloud-protection-microsoft-defender-antivirus.md) Vous pouvez activer la protection de cloud avec Microsoft Endpoint Manager (qui inclut désormais Microsoft Endpoint Configuration Manager et Microsoft Intune), une stratégie de groupe ou des cmdlets PowerShell.
 
 2. [Spécifiez le niveau de protection remis par le cloud.](specify-cloud-protection-level-microsoft-defender-antivirus.md) Vous pouvez spécifier le niveau de protection proposé par le cloud à l’aide de Microsoft Endpoint Manager ou d’une stratégie de groupe. Le niveau de protection affecte la quantité d’informations partagées avec le cloud et le blocage agressif des nouveaux fichiers.
 

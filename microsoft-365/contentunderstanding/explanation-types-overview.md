@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: En savoir plus sur les types d’explications dans Microsoft SharePoint Syntex.
-ms.openlocfilehash: 515fd8af289ec7c64e14eb6d54b236ba3a8aa9f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: En savoir plus sur la liste d’expressions, les expressions régulières et les types d’explications de proximité dans Microsoft SharePoint Syntex.
+ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706560"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770864"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Types d’explications dans Microsoft SharePoint Syntex
 
@@ -115,6 +115,15 @@ Pour ajouter un type d’explication d’expression régulière :
 
    ![Capture d’écran montrant le panneau Créer une explication avec le modèle d’adresse e-mail appliqué.](../media/content-understanding/create-regular-expression-email.png)
 
+### <a name="limitations"></a>Limites
+
+Le tableau suivant présente les options de caractères inline qui ne sont actuellement pas disponibles pour une utilisation dans les modèles d’expression régulière. 
+
+|Option  |État  |Fonctionnalités actuelles  |
+|---------|---------|---------|
+|Respect de la casse | Actuellement non pris en charge. | Toutes les correspondances effectuées ne respectent pas la casse.  |
+|Ancres de ligne     | Actuellement non pris en charge. | Impossible de spécifier une position spécifique dans une chaîne où une correspondance doit se produire.   |
+
 ## <a name="proximity"></a>Proximité 
 
 Le type d’explication de proximité aide votre modèle à identifier les données en définissant la proximité d’un autre élément de données. Par exemple, dans votre modèle, vous avez défini deux explications qui étiquettent à la fois le *Numéro d’adresse* et le *Numéro de téléphone* du client. 
@@ -139,7 +148,7 @@ Le tableau suivant illustre des exemples sur la façon de déterminer le nombre 
 |Expression|Nombre de jetons|Explication|
 |--|--|--|
 |`Dog`|1|Un seul mot sans ponctuation ni espaces.|
-|`RMT33W`|1|Un numéro de localisateur d’enregistrement. Il peut inclure des chiffres et des lettres, mais pas de ponctuation.|
+|`RMT33W`|1|Numéro de localisateur d’enregistrement. Il peut inclure des chiffres et des lettres, mais n’a pas de ponctuation.|
 |`425-555-5555`|5|Un numéro de téléphone. Chaque signe de ponctuation équivaut à un seul jeton, donc `425-555-5555` correspond à 5 jetons :<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
 |`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 

@@ -19,18 +19,18 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Les applications et les services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple Applications Microsoft 365 pour les PME.
+description: Les applications et les services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple, Applications Microsoft 365 pour les PME.
 ms.date: 07/01/2020
-ms.openlocfilehash: 4e93a84df106475417289da168ca472ed5a07475
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 817ea454bf471fdc2f175658af9030925d29189a
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582727"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779878"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 entreprise
 
-Lorsque vous achetez un abonnement à Microsoft 365 entreprise, vous vous inscrivez pour un ensemble d’applications et de services que vous payez sur une base mensuelle ou annuelle. Les applications et les services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Applications Microsoft 365 pour les PME ou Microsoft 365 Business Standard. Vous pouvez voir ce qui est livré avec chaque produit sur la Microsoft 365 page pour les petites et moyennes [entreprises.](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)
+Lorsque vous achetez un abonnement à Microsoft 365 entreprise, vous vous inscrivez pour un ensemble d’applications et de services que vous payez sur une base mensuelle ou annuelle. Les applications et services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Applications Microsoft 365 pour les PME ou Microsoft 365 Business Standard. Vous pouvez voir ce qui est livré avec chaque produit sur la Microsoft 365 page pour les petites et moyennes [entreprises.](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)
 
 Lorsque vous achetez un abonnement, vous spécifiez le nombre de licences dont vous avez besoin, en fonction du nombre de personnes de votre organisation. Après avoir acheté un abonnement, vous créez des comptes pour les membres de votre organisation, puis attribuez une licence à chaque personne. À mesure que les besoins de votre organisation changent, vous pouvez acheter d’autres licences pour prendre en charge de nouvelles personnes ou réaffecter des licences à d’autres utilisateurs lorsqu’une personne quitte votre organisation.
 
@@ -58,7 +58,7 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
 |Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne. <br/> Pour en savoir plus sur le SLA de cette tâche à accomplir, voir [« Configuration... » messages dans le centre Microsoft 365'administration.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne a accès aux fonctionnalités associées à la licence.  <br/> |
-|Microsoft 365 Apps for enterprise  <br/> |La personne peut télécharger Office applications sur cinq Mac ou PC, cinq tablettes et cinq smartphones.  <br/> |
+|Microsoft 365 Apps for enterprise  <br/> |La personne peut télécharger Office applications sur cinq Mac ou PC, cinq tablettes et cinq smartphones au plus.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Comprendre les licences pour les boîtes aux lettres non-utilisateur
 
@@ -67,8 +67,6 @@ Vous n'êtes pas obligé d'attribuer des licences aux boîtes aux lettres de res
 - [Créer une boîte aux lettres partagée](../../admin/email/create-a-shared-mailbox.md)
 - [Supprimer une licence à partir d’une boîte aux lettres partagée](../../admin/email/remove-license-from-shared-mailbox.md)
 - [Boîtes aux lettres partagées dans Exchange Online](/exchange/collaboration-exo/shared-mailboxes) pour tous les autres plans Microsoft 365 de messagerie.
-- [Créer et gérer des boîtes aux lettres de salle](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [Gérer des boîtes aux lettres de ressource](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes).
 
 ## <a name="who-can-assign-licenses"></a>Qui pouvez attribuer des licences ?
 

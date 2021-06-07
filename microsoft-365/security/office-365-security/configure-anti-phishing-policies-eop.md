@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîtes aux lettres Exchange Online utilisateur.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f074596f0391e98735b07d17390cd058fd6fcafe
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c329edc517476cfb184bfa4b70c2f2c9542b6e33
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793015"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789062"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -29,7 +29,7 @@ ms.locfileid: "52793015"
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, il existe une stratégie anti-hameçonnage par défaut qui contient un nombre limité de fonctionnalités de protection contre l’usurpation d’adresses qui sont activées par défaut. Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
+Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, il existe une stratégie anti-hameçonnage par défaut qui contient un nombre limité de fonctionnalités anti-usurpation activées par défaut. Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
 
 Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie anti-hameçonnage par défaut. Pour plus de granularité, vous pouvez également créer des stratégies anti-hameçonnage personnalisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
 
@@ -77,7 +77,7 @@ Pour accroître l’efficacité de la protection anti-hameçonnage, vous pouvez 
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le **groupe de rôles** Gestion de l’organisation en affichage seul [dans Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) donne également un accès en lecture seule à la <sup>\*</sup> fonctionnalité.
 
-- Pour obtenir les paramètres recommandés pour les stratégies anti-hameçonnage, consultez les paramètres de stratégie [anti-hameçonnage EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
+- Pour obtenir les paramètres recommandés pour les stratégies anti-hameçonnage, consultez les paramètres de stratégie [anti-hameçonnage par défaut eOP.](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)
 
 - Autorisez jusqu’à 30 minutes d’application de la stratégie mise à jour.
 
@@ -117,7 +117,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le centre 
    Pour désactiver la veille contre l’usurpation d’informations, cochez la case.
 
    > [!NOTE]
-   > Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’Microsoft 365 ; vous activez le filtrage amélioré pour les connecteurs à la place. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+   > Vous n’avez pas besoin de désactiver la protection contre l’usurpation d’Microsoft 365 ; vous activez plutôt le filtrage amélioré pour les connecteurs. Pour obtenir des instructions, voir [Filtrage amélioré pour les connecteurs dans Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -131,13 +131,13 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le centre 
      - **Afficher la balise « via**» : ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse MAIL **FROM.**
 
        > [!NOTE]
-       > Actuellement, le paramètre **afficher la balise « via »** n’est pas disponible dans toutes les organisations. Si vous n’avez pas le paramètre Afficher la  balise « **via** », le point d’interrogation et la balise via sont tous deux contrôlés par la balise **Show (?)** pour les expéditeurs non authentifiés pour le paramètre d’usurpation d’adresse dans votre organisation.
+       > Actuellement, le paramètre **afficher la balise « via »** n’est pas disponible dans toutes les organisations. Si vous n’avez pas le paramètre Afficher la  balise « **via** », le point d’interrogation et la balise via sont tous deux contrôlés par l’afficheur **(?)** pour les expéditeurs non authentifiés pour le paramètre d’usurpation d’adresse dans votre organisation.
 
      Pour activer un paramètre, cochez la case. Pour la désactiver, cochez la case.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-7. Dans la page **Révision** qui s’affiche, passez en revue vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Retour** ou sélectionner la page spécifique dans l’Assistant.
+7. Dans la page **Révision** qui s’affiche, passez en revue vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section.
 
    Lorsque vous avez terminé, cliquez sur **Envoyer.**
 
@@ -416,7 +416,7 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 **Remarques** :
 
 - Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ de la cmdlet **New-AntiPhishRule.**
-- La stratégie anti-hameçonnage par défaut n’a pas de règle anti-hameçonnage correspondante et elle a toujours la valeur de priorité nonmodifiable La plus **faible**.
+- La stratégie anti-hameçonnage par défaut n’a pas de règle anti-hameçonnage correspondante et a toujours la valeur de priorité nonmodifiable La plus **faible**.
 
 ### <a name="use-powershell-to-remove-anti-phish-policies"></a>Utiliser PowerShell pour supprimer des stratégies anti-hameçonnage
 

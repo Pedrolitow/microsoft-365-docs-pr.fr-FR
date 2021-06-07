@@ -16,12 +16,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee2a5e1815dd552753ac7f3dee30df11ac4332e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.custom: api
+ms.openlocfilehash: 456507533265bc085adc1008f3264e123569a6ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068569"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770768"
 ---
 # <a name="fetch-alerts-from-mssp-customer-tenant"></a>Récupérer des alertes à partir du client MSSP
 
@@ -48,7 +49,7 @@ Pour récupérer des alertes dans votre système SIEM, vous devez suivre les ét
 
 Étape 2 : Obtenir des jetons d’accès et d’actualisation à partir du client de votre client
  
-Étape 3 : autoriser votre application sur le Centre de sécurité Microsoft Defender
+Étape 3 : autoriser votre application sur Centre de sécurité Microsoft Defender
  
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>Étape 1 : Créer une application dans Azure Active Directory (Azure AD)
  
@@ -56,7 +57,7 @@ Vous devez créer une application et lui accorder des autorisations pour récup�
 
 1. Connectez-vous au [portail Azure AD.](https://aad.portal.azure.com/)
 
-2. Sélectionnez **les inscriptions d’applications Azure Active Directory.**  >  
+2. Sélectionnez **Azure Active Directory**  >  **inscriptions d’application.**
  
 3. Cliquez **sur Nouvelle inscription.**
 
@@ -85,7 +86,7 @@ Vous devez créer une application et lui accorder des autorisations pour récup�
  
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>Étape 2 : Obtenir des jetons d’accès et d’actualisation à partir du client de votre client
-Cette section vous guide sur l’utilisation d’un script PowerShell pour obtenir les jetons du client de votre client. Ce script utilise l’application de l’étape précédente pour obtenir les jetons d’accès et d’actualisation à l’aide du flux de code d’autorisation OAuth.
+Cette section vous guide sur l’utilisation d’un script PowerShell pour obtenir les jetons du client de votre client. Ce script utilise l’application de l’étape précédente pour obtenir les jetons d’accès et d’actualisation à l’aide du code d’autorisation OAuth Flow.
 
 Après avoir fourni vos informations d’identification, vous devez donner votre consentement à l’application afin que l’application soit mise en service dans le client du client.
 
@@ -159,14 +160,14 @@ Après avoir fourni vos informations d’identification, vous devez donner votre
 
 8. Dans la fenêtre PowerShell, vous recevrez un jeton d’accès et un jeton d’actualisation. Enregistrez le jeton d’actualisation pour configurer votre connecteur SIEM. 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Étape 3 : Autoriser votre application sur le Centre de sécurité Microsoft Defender
-Vous devez autoriser l’application que vous avez créée dans le Centre de sécurité Microsoft Defender.
+### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Étape 3 : Autoriser votre application sur Centre de sécurité Microsoft Defender
+Vous devez autoriser l’application que vous avez créée dans Centre de sécurité Microsoft Defender.
  
 Vous devez avoir l’autorisation Gérer les **paramètres système** du portail pour autoriser l’application. Dans le cas contraire, vous devrez demander à votre client d’autoriser l’application pour vous.
 
 1. Go to `https://securitycenter.windows.com?tid=<customer_tenant_id>` (replace \<customer_tenant_id\> with the customer's tenant ID.
 
-2. Cliquez **sur Paramètres**  >  **SIEM**. 
+2. Cliquez **Paramètres**  >  **SIEM.** 
 
 3. Sélectionnez **l’onglet MSSP.**
 
@@ -189,4 +190,4 @@ Pour plus d’informations sur la récupération des alertes à l’aide de l’
 ## <a name="see-also"></a>Voir aussi
 - [Accorder l’accès MSSP au portail](grant-mssp-access.md)
 - [Accéder au portail client MSSP](access-mssp-portal.md)
-- [Configurer les notifications d’alerte](configure-mssp-notifications.md)
+- [Configurer des notifications d’alerte](configure-mssp-notifications.md)

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: c785dbb759afe77b14f41985b9f451a4ec52e29f
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730634"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778232"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratoire d’évaluation de Microsoft Defender for Endpoint
 
@@ -45,9 +45,9 @@ Grâce à l’expérience de mise en place simplifiée, vous pouvez vous concent
 
 Vous aurez un accès complet aux fonctionnalités puissantes de la plateforme, telles que les enquêtes automatisées, le recherche avancée et l’analyse des menaces, ce qui vous permettra de tester la pile de protection complète que Defender pour Endpoint offre. 
 
-Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 pré-configurés pour que les versions de système d’exploitation les plus récentes et les composants de sécurité en place, ainsi que Office 2019 Standard soit installé.
+Vous pouvez ajouter des appareils Windows 10 ou Windows Server 2019 qui sont pré-configurés pour que les versions de système d’exploitation les plus récentes et les composants de sécurité en place, ainsi que Office 2019 Standard soit installé.
 
-Vous pouvez également installer des simulateurs de menaces. Defender pour le point de terminaison s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
+Vous pouvez également installer des simulateurs de menaces. Defender for Endpoint s’est associé à des plateformes de simulation de menaces de pointe pour vous aider à tester les fonctionnalités de Defender for Endpoint sans avoir à quitter le portail.
 
  Installez votre simulateur préféré, exécutez des scénarios dans le laboratoire d’évaluation et voyez instantanément les résultats de la plateforme, le tout disponible sans frais supplémentaires. Vous aurez également un accès pratique à un large éventail de simulations que vous pouvez accéder et exécuter à partir du catalogue de simulations.
     
@@ -118,17 +118,17 @@ L’appareil est automatiquement intégré à votre client avec les composants d
 
 Les composants de sécurité suivants sont pré-configurés dans les périphériques de test :
 
-- [Réduction de la surface d’attaque](attack-surface-reduction.md)
-- [Bloquer à la première vue](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [Accès contrôlé aux dossiers](controlled-folders.md)
-- [Exploit Protection](enable-exploit-protection.md)
-- [Protection du réseau](network-protection.md)
-- [Détection d’applications potentiellement indésirables](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
-- [Protection cloud](cloud-protection-microsoft-defender-antivirus.md)
-- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
+- [Réduction de la surface d’attaque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [Bloquer à la première vue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
+- [Accès contrôlé aux dossiers](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [Exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [Protection du réseau](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
+- [Détection d’applications potentiellement indésirables](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [Protection cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Antivirus Microsoft Defender sera en cours (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’utiliser votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, [voir Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
+> Antivirus Microsoft Defender sera en cours (pas en mode audit). Si Antivirus Microsoft Defender vous empêche d’utiliser votre simulation, vous pouvez désactiver la protection en temps réel sur l’appareil via Sécurité Windows. Pour plus d’informations, [voir Configurer la protection toujours en place.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
 Les paramètres d’examen automatisé dépendent des paramètres du client. Elle sera configurée pour être semi-automatisée par défaut. Pour plus d’informations, voir [Vue d’ensemble des enquêtes automatisées.](automated-investigations.md)
 
@@ -187,10 +187,10 @@ Une fois approuvés, les appareils demandés sont ajoutés à votre atelier et v
 Utilisez les périphériques de test pour exécuter vos propres simulations d’attaques en vous y connectant. 
 
 Vous pouvez simuler des scénarios d’attaque à l’aide des outils suivants :
-- Scénarios d’attaque « Faire [vous-même »](https://securitycenter.windows.com/tutorials)
+- Scénarios [d’attaque « Faites-le vous-même »](https://securitycenter.windows.com/tutorials)
 - Simulateurs de menaces
 
-Vous pouvez également utiliser le service [de recherche avancée](advanced-hunting-overview.md) pour interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
+Vous pouvez également utiliser la recherche [avancée pour](advanced-hunting-query-language.md) interroger les données et l’analyse des [menaces](threat-analytics.md) afin d’afficher des rapports sur les menaces émergentes.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Scénarios d’attaques do-it-yourself
 Si vous recherchez une simulation pré-réalisée, vous pouvez utiliser nos [scénarios](https://securitycenter.windows.com/tutorials)d’attaque « Faites-le vous-même ». Ces scripts sont sûrs, documentés et faciles à utiliser. Ces scénarios reflèteront les fonctionnalités de Defender for Endpoint et vous feront découvrir l’expérience d’examen.
@@ -257,7 +257,7 @@ Recherchez des preuves d’attaque par le biais d’un recherche avancée à l�
 ## <a name="simulation-gallery"></a>Galerie de simulations
 Microsoft Defender pour le point de terminaison s’est associé à différentes plateformes de simulation de menaces pour vous donner un accès pratique pour tester les fonctionnalités de la plateforme directement à partir du portail. 
 
-Affichez toutes les simulations disponibles en allant au catalogue **Simulations et** didacticiels  >  **Simulations** à partir du menu. 
+Affichez toutes les simulations disponibles en allant dans le catalogue **Simulations et** didacticiels  >  **Simulations** à partir du menu. 
 
 Une liste d’agents de simulation de menace tiers pris en charge est répertoriée, et des types spécifiques de simulations ainsi que des descriptions détaillées sont fournis dans le catalogue. 
 
@@ -283,7 +283,7 @@ Les rapports de laboratoire résument les résultats des simulations effectuées
 En un coup d’œil, vous pourrez rapidement voir :
 - Incidents déclenchés
 - Alertes générées
-- Évaluations du niveau d’exposition 
+- Évaluations sur le niveau d’exposition 
 - Catégories de menaces observées
 - Sources de détection
 - Enquêtes automatisées

@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ed4b04acd7fec75af4e157837312b824a8d9f98
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: b830c165d91dfdc8c5c6c47abecd73ba7a9621c8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696561"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788462"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -83,9 +83,9 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 En créant une stratégie contre le courrier indésirable dans le Centre de sécurité, cela créé une règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable associée en utilisant le même nom pour les deux.
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Anti-courrier indésirable**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
-2. Cliquez sur ![Créer une icône](../../media/m365-cc-sc-create-icon.png) **Créer une stratégie**, puis sélectionnez **Entrant** dans la liste déroulante.
+2. Dans la page **Stratégies anti-courrier indésirable**, cliquez sur l’![icône Créer](../../media/m365-cc-sc-create-icon.png) **Créer une stratégie**, puis sélectionnez **Entrant** dans la liste déroulante.
 
 3. L’assistant d'application de stratégies s’ouvre. Sur la page **Nommer votre stratégie**, configurez les paramètres suivants :
    - **Nom** Entrez un nom unique et descriptif pour la stratégie.
@@ -125,7 +125,7 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
    - **Contient des langues spécifiques** : cliquez sur la zone et sélectionnez **Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’une langue dans la zone. Une liste filtrée des langues prises en charge s’affiche. Lorsque vous avez trouvé la langue que vous recherchez, sélectionnez-la. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![Supprimer un icône](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
-   - **À partir de ces pays** _ : cliquez sur la zone et sélectionnez *Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’un pays dans la zone. Une liste filtrée des pays pris en charge s’affiche. Lorsque vous trouvez le pays que vous recherchez, sélectionnez-le. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![Supprimer un icône](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+   - **Parmi ces pays** _ : cliquez sur la zone et sélectionnez *Activé** ou **Désactivé** dans la liste déroulante. Si vous l’activez, une zone s’affiche. Commencez à taper le nom d’un pays dans la zone. Une liste filtrée des pays pris en charge s’affiche. Lorsque vous trouvez le pays que vous recherchez, sélectionnez-le. Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur ![Supprimer un icône](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -242,9 +242,9 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
 ## <a name="use-the-security-center-to-view-anti-spam-policies"></a>Utiliser le Centre de sécurité pour afficher des stratégies anti-courrier indésirable
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Anti-courrier indésirable**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
-2. Dans la page **Stratégie anti-courrier indésirable**, recherchez l’une des valeurs suivantes :
+2. Dans la page **Stratégies anti-courrier indésirable**, recherchez l’une des valeurs suivantes :
    - La valeur **Type** est **Stratégie anti-courrier indésirable personnalisée**
    - La valeur **Name** est **Stratégie de trafic entrant anti-courrier indésirable (par défaut)**
 
@@ -259,9 +259,9 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
 ## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>Utiliser le Centre de sécurité pour modifier des stratégies anti-courrier indésirable
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Anti-courrier indésirable**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
-2. Dans la page **Stratégie anti-courrier indésirable**, sélectionnez une stratégie anti-courrier indésirable dans la liste en cliquant sur le nom :
+2. Dans la page **Stratégies anti-courrier indésirable**, sélectionnez une stratégie anti-courrier indésirable dans la liste en cliquant sur le nom :
    - Une stratégie personnalisée que vous avez créée où la valeur du **Type de** colonne est **stratégie anti-courrier indésirable personnalisée**.
    - La stratégie par défaut nommée **Stratégie de trafic entrant anti-courrier indésirable (par défaut)**.
 
@@ -275,7 +275,7 @@ Pour activer ou désactiver une stratégie, définir l’ordre de priorité de l
 
 Vous ne pouvez pas désactiver la stratégie anti-courrier indésirable par défaut.
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Anti-courrier indésirable**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
@@ -300,7 +300,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 - Dans le Centre de sécurité, vous pouvez uniquement modifier la priorité de la stratégie de logiciel anti-courrier indésirable après l'avoir créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de filtrage de courrier indésirable (ceci peut modifier la priorité de règles existantes).
 - Les stratégies anti-courrier indésirable sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie possède la valeur **Priorité** 0). La stratégie anti-courrier indésirable par défaut contient la valeur priorité **la plus faible**, et vous ne pouvez pas la modifier.
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Anti-courrier indésirable**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
@@ -317,7 +317,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 
 Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quarantaine, vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour informer les destinataires de qu’il est advenu des messages qui leur ont été envoyés. Pour plus d’informations sur ces notifications, voir [Notifications de courrier indésirable à l’utilisateur final dans Exchange Online PowerShell](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Anti-courrier indésirable**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, sélectionnez une stratégie anti-courrier indésirable dans la liste en cliquant sur le nom :
    - Une stratégie personnalisée que vous avez créée où la valeur du **Type de** colonne est **stratégie anti-courrier indésirable personnalisée**.
@@ -340,11 +340,11 @@ Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quara
 
 4. Dans le menu volant des détails de la stratégie, cliquez sur **Fermer**.
 
-## <a name="use-the-security-center-to-remove-anti-spam-policies"></a>Utiliser le Centre de sécurité pour supprimer des stratégies anti-courrier indésirable
+## <a name="use-the-security-center-to-remove-custom-anti-spam-policies"></a>Utiliser le Centre de sécurité pour supprimer les stratégies anti-courrier indésirable personnalisées
 
-Lorsque vous utilisez le Centre de sécurité pour supprimer une stratégie anti-courrier indésirable, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie par défaut.
+Lorsque vous utilisez le centre de sécurité pour supprimer une stratégie anti-courrier indésirable personnalisée, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie anti-courrier indésirable par défaut.
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Anti-courrier indésirable**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom. En haut du menu volant Détails de la stratégie qui s’affiche, cliquez sur l’![Icône Autres actions](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** \> ![Icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png) **Supprimer la stratégie**.
 
@@ -378,9 +378,7 @@ La création d’une stratégie anti-courrier indésirable dans PowerShell est u
  **Remarques** :
 
 - Vous pouvez créer une règle de filtrage de courrier indésirable et lui affecter une stratégie de filtrage de courrier indésirable existante, non associée. Une règle de filtrage anti-courrier indésirable ne peut pas être associée à plusieurs stratégies de filtrage de courrier indésirable.
-
 - Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage anti-courrier indésirable dans PowerShell qui ne sont pas disponibles dans le Centre de sécurité tant que vous n’avez pas créé la stratégie :
-
   - Créez la nouvelle stratégie en tant que désactivée (_Activé_ `$false` sur l’applet de commande **New-HostedContentFilterRule**).
   - Définissez la priorité de la stratégie lors de la création (_Priorité_ _\<Number\>_) sur l’applet de commande **New-HostedContentFilterRule**).
 

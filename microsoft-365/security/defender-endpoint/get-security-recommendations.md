@@ -1,7 +1,7 @@
 ---
 title: Obtenir les recommandations de sécurité
-description: Récupère une collection de recommandations de sécurité relatives à un ID d'appareil donné.
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, recommandations de sécurité par appareil, api de gestion des menaces & vulnérabilité, api tvm Microsoft Defender pour endpoint
+description: Récupère une collection de recommandations de sécurité relatives à un ID d’appareil donné.
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, recommandations de sécurité par appareil, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bc209687d51b3e05bfcfd6028042ba5912b877f6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 44f64334d08d8d0d6a5ed1e8e06baa2880859ad2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935304"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771128"
 ---
 # <a name="get-security-recommendations"></a>Obtenir les recommandations de sécurité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S'applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -35,12 +37,12 @@ ms.locfileid: "51935304"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Récupère une collection de recommandations de sécurité relatives à un ID d'appareil donné.
+Récupère une collection de recommandations de sécurité relatives à un ID d’appareil donné.
 
 ## <a name="permissions"></a>Autorisations
-L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
+Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
 :---|:---|:---
 Application | SecurityRecommendation.Read.All | « Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »
 Déléguée (compte professionnel ou scolaire) | SecurityRecommendation.Read |  « Lire les informations de recommandation sur la sécurité de la gestion des menaces et des vulnérabilités »

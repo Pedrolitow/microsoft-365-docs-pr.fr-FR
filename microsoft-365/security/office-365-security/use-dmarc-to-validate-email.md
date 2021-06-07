@@ -18,12 +18,12 @@ ms.collection:
 description: Découvrez comment configurer DMARC (Domain-based Message Authentication, Reporting, and Conformance) pour valider les messages envoyés à partir de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9beada6e0fb61e503392b0bd379f02bd1c025464
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a92c6ec50fb60d15e027a11163aad6b2186e5304
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538674"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779902"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Utiliser DMARC pour valider les e-mails
 
@@ -31,7 +31,7 @@ ms.locfileid: "52538674"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https://dmarc.org)) utilise SPF (Sender Policy Framework) et DKIM (DomainKeys Identified Mail) pour authentifier les expéditeurs d'e-mails et faire en sorte que les systèmes de messagerie de destination acceptent les messages envoyés depuis votre domaine comme fiables. L'implémentation de DMARC avec SPF et DKIM fournit une protection supplémentaire contre l'usurpation et les courriers de hameçonnage. DMARC permet aux systèmes de messagerie de réception de déterminer ce qu'ils doivent faire des messages envoyés à partir de votre domaine qui sont rejetés par les contrôles de SPF ou de DKIM.
@@ -178,7 +178,7 @@ Exemples :
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-Une fois que vous avez créé votre enregistrement, vous devez le mettre à jour auprès de votre bureau d'enregistrement de domaine. Pour obtenir des instructions sur l'ajout de l'enregistrement TXT DMARC à vos enregistrements DNS pour Microsoft 365, voir [Créer des enregistrements DNS pour Microsoft 365 lorsque vous gérez vos enregistrements DNS](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Une fois que vous avez créé votre enregistrement, vous devez le mettre à jour auprès de votre bureau d’enregistrement de domaine.
 
 ## <a name="dmarc-mail-public-preview-feature"></a>Courrier DMARC (fonctionnalité d'évaluation publique)
 > [!CAUTION]
@@ -256,7 +256,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 L’ensemble ou la majorité des messages électroniques seront d’abord acheminés vers mail.contoso.com, puisqu’il s’agit de l’enregistrement MX principal, avant d’être acheminés vers Exchange Online Protection. Dans certains cas, EOP n’est même pas présent dans la liste des enregistrements MX et des connecteurs sont simplement mis en place pour acheminer les messages électroniques. Il n’est pas nécessaire que EOP soit la première entrée de la validation DMARC à effectuer. Il s’agit simplement d’assurer la validation, car il est impossible de s’assurer que tous les serveurs locaux/non-Office 365 effectuent des vérifications DMARC.  DMARC est éligible pour être appliqué au domaine d’un client (et non au serveur) lorsque vous configurez l’enregistrement DMARC TXT, mais il revient au serveur de réception d’effectuer réellement l’application.  Si vous configurez EOP comme serveur de réception, la fonction EOP procède à l’application DMARC.
 
-![Un graphique de dépannage pour DMARC, fourni par Daniel Mande](../../media/Tp_DMARCTroublehoot.png)
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="Un graphique de dépannage pour DMARC, fourni par Daniel Mande" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
 ## <a name="for-more-information"></a>Pour plus d'informations
 

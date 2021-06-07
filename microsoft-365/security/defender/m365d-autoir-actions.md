@@ -1,6 +1,6 @@
 ---
 title: Afficher et gérer les actions dans le centre de gestion des actions
-description: Utiliser le Centre de gestion des actions pour afficher et gérer les actions de correction
+description: Utiliser le centre de gestion des actions pour afficher et gérer les actions de correction
 keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 95c82f815c794662f7eb0ffaabcfb5f81df3e828
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538842"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782992"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Afficher et gérer les actions dans le centre de gestion des actions
 
@@ -34,9 +34,9 @@ ms.locfileid: "52538842"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Les fonctionnalités de protection contre les menaces Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
+Les fonctionnalités de protection contre les menaces Microsoft 365 Defender peuvent entraîner certaines actions de correction. Voici quelques exemples :
 
 - [Les enquêtes](m365d-autoir.md) automatisées peuvent entraîner des actions de correction qui sont prises automatiquement ou qui attendent votre approbation.
 - Un antivirus, un logiciel anti-programme malveillant et d’autres fonctionnalités de protection contre les menaces peuvent entraîner des actions de correction, telles que le blocage d’un fichier, d’une URL ou d’un processus, ou l’envoi d’un artefact en quarantaine.
@@ -53,7 +53,7 @@ Il est important d’approuver (ou de refuser) les actions en attente dès que p
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-3. Dans le centre de notifications, dans l’onglet **En attente**, sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
+3. Dans le centre de l’action, sous l’onglet **En attente,** sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
 
    ![Approuver ou rejeter une action](../../media/air-actioncenter-itemselected.png)
 
@@ -61,7 +61,7 @@ Il est important d’approuver (ou de refuser) les actions en attente dès que p
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour aller [dans le recherche avancée](advanced-hunting-overview.md). 
+   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md). 
 
 ## <a name="undo-completed-actions"></a>Annuler les actions terminées
 

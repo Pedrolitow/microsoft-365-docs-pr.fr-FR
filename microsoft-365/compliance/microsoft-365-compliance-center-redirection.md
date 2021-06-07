@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Découvrez comment rediriger automatiquement Office 365 utilisateurs du Centre de sécurité et conformité vers le centre Microsoft 365 conformité.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb667e8f19b26cbe229b3aceffe194a86133c261
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772479"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782836"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Rediriger les utilisateurs du centre Office 365 sécurité et conformité vers le centre Microsoft 365 conformité de l’application
 
@@ -44,14 +44,14 @@ Cette fonctionnalité et les contrôles associés n’activent pas la redirectio
 Si quelque chose ne fonctionne pas pour vous ou s’il y a quelque chose que vous ne parvenez pas à effectuer via le portail du Centre de conformité Microsoft 365, vous pouvez désactiver temporairement la redirection automatique pour tous les utilisateurs.
 
 >[!IMPORTANT]
->Le centre Microsoft 365 conformité est le portail de gestion des remplacements pour les solutions de conformité actuellement gérées dans le centre de sécurité Office 365 conformité. Toutes Microsoft 365 solutions de conformité seront gérées uniquement dans le centre Microsoft 365 conformité. La désactivation de la redirection vers le centre Microsoft 365 conformité doit être une solution à court terme.*
+>Le centre Microsoft 365 conformité est le portail de gestion des remplacements pour les solutions de conformité actuellement gérées dans Office 365 sécurité et conformité. Toutes Microsoft 365 solutions de conformité seront gérées uniquement dans le centre Microsoft 365 conformité. La désactivation de la redirection vers le centre Microsoft 365 conformité doit être une solution à court terme.*
 
 Pour revenir au Centre Office 365 sécurité et conformité (protection.microsoft.com) pour tous les utilisateurs, passez aux étapes suivantes :
 
 1. Connectez-vous au [centre Microsoft 365](https://compliance.microsoft.com) conformité en tant qu’administrateur général ou en utilisant n’importe quel compte ayant des autorisations d’administrateur de conformité dans Azure Active Directory.
 2. Accédez à **Paramètres**  >  **redirection du Centre de conformité.**
 3. Basculez le paramètre de redirection automatique sur **Désintégation.**
-4. Sélectionnez **Désactiver et** partager des commentaires lorsque vous y sont invités.
+4. Sélectionnez **Désactiver et** partager des commentaires lorsque vous y avez été invité.
 
 Une fois désactivés, les utilisateurs ne sont plus acheminés vers compliance.microsoft.com et ils sont dirigés vers le Centre de sécurité et conformité Office 365 (protection.microsoft.com). Ce paramètre peut être à nouveau activé à tout moment par les administrateurs globaux ou de conformité.
 

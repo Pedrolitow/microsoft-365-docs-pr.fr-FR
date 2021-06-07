@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b729cb8a4c30ec13e22f36f9721cb55ecc93942d
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769460"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779866"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -377,7 +377,7 @@ Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte cl
 > Si vous utilisiez l’assistant du schéma de correspondance des données exacte et du type d’informations sensibles pour créer vos fichiers de schéma et de modèle, vous ***devez*** télécharger le schéma pour cette procédure.
 
 > [!NOTE]
-> Si votre organisation a configuré une [Clé client pour Microsoft 365 au niveau du client (préversion publique)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Cette offre est disponible uniquement pour les clients sous licence E5 dans le cloud commercial.
+> Si votre organisation a installé la clé client pour [Microsoft 365](customer-key-overview.md)au niveau du client, la correspondance exacte des données utilisera automatiquement sa fonctionnalité de chiffrement. Cette offre est disponible uniquement pour les clients sous licence E5 dans le cloud commercial.
 
 #### <a name="prerequisites"></a>Configuration requise
 

@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/18/2020
+ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4408d5e788449c0d094008261f5e7db9bfe38758
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6ef9a2c34a88d7c9f5506c681088db9dc84cb0cc
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275107"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789026"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Configurer les fonctionnalités antivirus Microsoft Defender
 
@@ -32,27 +32,24 @@ ms.locfileid: "52275107"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’outils, notamment :
+Vous pouvez configurer Antivirus Microsoft Defender avec un certain nombre d’outils, tels que :
 
-- Microsoft Intune
-- Microsoft Endpoint Configuration Manager
+- Microsoft Endpoint Manager (qui inclut les Microsoft Intune et Microsoft Endpoint Configuration Manager)
 - Stratégie de groupe
 - Cmdlets PowerShell
 - WMI (Windows Management Instrumentation)
 
 Les grandes catégories de fonctionnalités suivantes peuvent être configurées :
 
-- Protection fournie par le cloud
-- Protection en temps réel toujours continue, y compris la protection comportementale, heuristique et basée sur l’apprentissage automatique
-- Interaction des utilisateurs finaux avec le client sur des points de terminaison individuels
+- Protection cloud. Voir protection et protection des services [cloud Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+ 
+- Protection en temps réel toujours continue, y compris la protection comportementale, heuristique et basée sur l’apprentissage automatique. Voir [Configurer la protection comportementale, heuristique et en temps réel.](configure-protection-features-microsoft-defender-antivirus.md)
 
-Les articles suivants décrivent comment effectuer des tâches clés lors de la configuration Antivirus Microsoft Defender. Chaque article contient des instructions pour l’outil de configuration applicable (ou les outils).
+- Interaction des utilisateurs finaux avec le client sur des points de terminaison individuels. Consultez les ressources suivantes :
+   
+   - [Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
-|Article  |Description  |
-|---------|---------|
-|[Utiliser la protection de Antivirus Microsoft Defender microsoft fournie par le cloud](cloud-protection-microsoft-defender-antivirus.md)     | Utilisez la protection cloud pour une détection avancée, rapide et robuste de l’antivirus.        |
-|[Configurer la protection comportementale, heuristique et en temps réel.](configure-protection-features-microsoft-defender-antivirus.md)     |Activez la protection antivirus en temps réel, heuristique et basée sur le comportement.         |
-|[Configurer l’interaction de l’utilisateur final avec Antivirus Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) | Configurez la façon dont les utilisateurs finaux de votre organisation interagissent avec Antivirus Microsoft Defender, les notifications qu’ils voient et s’ils peuvent remplacer les paramètres. |
+   - [Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie](configure-local-policy-overrides-microsoft-defender-antivirus.md) 
 
 > [!TIP]
-> Vous pouvez également consulter les rubriques de référence pour les [outils](configuration-management-reference-microsoft-defender-antivirus.md) de gestion et de configuration pour obtenir une vue d’ensemble de chaque outil et des liens pour obtenir de l’aide supplémentaire.
+> Consulter les [rubriques de référence pour les outils de gestion et de configuration.](configuration-management-reference-microsoft-defender-antivirus.md)

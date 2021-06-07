@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d86303d115912d1c89b5b782bae03db4ccbba6ec
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 2ee9a4e29dded3e299ffbb2c2997fd02f32d1abf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200400"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771116"
 ---
 # <a name="list-machineactions-api"></a>List MachineActions API
 
@@ -41,7 +43,7 @@ Récupère une collection d’actions [de l’ordinateur.](machineaction.md)
 <br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. La taille maximale de page est de 10 000.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 
 
@@ -69,7 +71,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande

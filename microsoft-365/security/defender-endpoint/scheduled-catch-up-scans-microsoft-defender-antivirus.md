@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/05/2021
+ms.date: 06/04/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 1748a33be2c27123eb0437784dcdb2cb7905616a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f1344026878b7fbd6242d82b1afb0e6671c32073
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274687"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789267"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurer des analyses antivirus Microsoft Defender rapides ou complètes
 
@@ -33,9 +33,9 @@ ms.locfileid: "52274687"
 > [!NOTE]
 > Par défaut, Antivirus Microsoft Defender recherche une mise à jour 15 minutes avant l’heure des analyses programmées. Vous pouvez [gérer la planification du téléchargement](manage-protection-update-schedule-microsoft-defender-antivirus.md) et de l’application des mises à jour de la protection pour remplacer cette valeur par défaut. 
 
-Outre la protection en temps réel [](run-scan-microsoft-defender-antivirus.md) toujours en cours et les analyses à la demande, vous pouvez configurer des analyses régulières et programmées. 
+Outre la protection en temps réel toujours en cours et les [analyses](run-scan-microsoft-defender-antivirus.md) à la demande, vous pouvez configurer des analyses régulières et programmées. 
 
-Vous pouvez configurer le type d’analyse, le moment où l’analyse doit se produire et si l’analyse doit se produire après une mise à jour de [la protection](manage-protection-updates-microsoft-defender-antivirus.md) ou si le point de terminaison est utilisé. Vous pouvez également spécifier à quel moment des analyses spéciales doivent être nécessaires pour terminer la correction.
+Vous pouvez configurer le type d’analyse, le moment où l’analyse doit se produire et si l’analyse doit se produire après une mise à jour de [la protection](manage-protection-updates-microsoft-defender-antivirus.md) ou si le point de terminaison est utilisé. Vous pouvez également spécifier le moment où des analyses spéciales doivent être nécessaires pour terminer la correction.
 
 Cet article explique comment configurer des analyses programmées avec la stratégie de groupe, les cmdlets PowerShell et WMI. Vous pouvez également configurer des analyses de planifications [avec Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) ou [Microsoft Intune](/mem/intune/configuration/device-restrictions-windows-10).
 
@@ -43,7 +43,7 @@ Cet article explique comment configurer des analyses programmées avec la strat�
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, dans l’Éditeur de stratégie de groupe, allez à Modèles d’administration de **configuration** ordinateur  >    >  **Windows composants**  >    >  **Antivirus Microsoft Defender’analyse.**
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
 
 3. Spécifiez les paramètres de l’objet de stratégie de groupe, puis sélectionnez **OK**. 
 
@@ -73,15 +73,15 @@ Utilisez le tableau suivant pour choisir un type d’analyse.
 |Scénario  |Type d’analyse recommandé  |
 |---------|---------|
 |Vous souhaitez configurer des analyses régulières et programmées     | Analyse rapide <p>Une analyse rapide vérifie les processus, la mémoire, les profils et certains emplacements de l’appareil. Combinée à [une protection en](configure-real-time-protection-microsoft-defender-antivirus.md)temps réel toujours en cours, une analyse rapide permet d’assurer une couverture forte à la fois pour les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. La protection en temps réel examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier.         |
-|Les menaces, telles que les programmes malveillants, sont détectées sur un appareil     | Analyse complète <p>Une analyse complète peut aider à identifier s’il existe des composants inactifs qui nécessitent un nettoyage plus approfondi.         |
-|Vous souhaitez exécuter une [analyse à la demande](run-scan-microsoft-defender-antivirus.md)     | Analyse complète  <p>Une analyse complète examine tous les fichiers sur le disque de l’appareil, y compris les fichiers obsolètes, archivés et qui ne sont pas accessibles quotidiennement.      |
-| Vous souhaitez vous assurer qu’un appareil portable, tel qu’un lecteur USB, ne contient pas de programmes malveillants. | Analyse personnalisée <p>Une analyse personnalisée vous permet de sélectionner des emplacements, dossiers ou fichiers spécifiques et exécute une analyse rapide. |
+|Les menaces, telles que les programmes malveillants, sont détectées sur un appareil individuel     | Analyse rapide <p>Dans la plupart des cas, une analyse rapide permet de détecter et de nettoyer les programmes malveillants détectés.   |
+|Vous souhaitez exécuter une [analyse à la demande](run-scan-microsoft-defender-antivirus.md)     | Analyse rapide       |
+| Vous souhaitez vous assurer qu’un appareil portable, tel qu’un lecteur USB, ne contient pas de programmes malveillants | Analyse personnalisée <p>Une analyse personnalisée vous permet de sélectionner des emplacements, dossiers ou fichiers spécifiques et exécute une analyse rapide. |
 
 ### <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>Que dois-je savoir d’autre sur les analyses rapides et complètes ?
 
 - Les fichiers malveillants peuvent être stockés dans des emplacements qui ne sont pas inclus dans une analyse rapide. Toutefois, la protection en temps réel toujours en cours examine tous les fichiers ouverts et fermés, ainsi que tous les fichiers qui se contiennent dans des dossiers accessibles par un utilisateur. La combinaison d’une protection en temps réel et d’une analyse rapide permet de fournir une protection forte contre les programmes malveillants.
 
-- La protection à l’accès avec une protection assurée par le [cloud](cloud-protection-microsoft-defender-antivirus.md) permet de s’assurer que tous les fichiers accessibles sur le système sont analysés avec les derniers modèles d’intelligence de sécurité et d’apprentissage automatique dans le Cloud.
+- La protection à l’accès avec une protection assurée par le [cloud](cloud-protection-microsoft-defender-antivirus.md) permet de s’assurer que tous les fichiers accessibles sur le système sont analysés avec les dernières informations de sécurité et les derniers modèles d’apprentissage automatique dans le Cloud.
 
 - Lorsque la protection en temps réel détecte des programmes malveillants et que l’étendue des fichiers affectés n’est pas déterminée initialement, Antivirus Microsoft Defender lance une analyse complète dans le cadre du processus de correction.
 
@@ -98,11 +98,11 @@ Les analyses programmées s’exécutent le jour et l’heure que vous spécifie
 
 ### <a name="use-group-policy-to-schedule-scans"></a>Utiliser une stratégie de groupe pour planifier des analyses
 
-|Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
+|Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 |Analyser | Spécifier le type d’analyse à utiliser pour une analyse programmée | Analyse rapide |
 |Analyser | Spécifier le jour de la semaine pour exécuter une analyse programmée | Spécifiez le jour (ou jamais) d’exécuter une analyse. | Jamais |
-|Analyser | Spécifier l’heure de la journée pour exécuter une analyse programmée | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 heure du matin). | 2 h 00 |
+|Analyser | Spécifier l’heure de la journée pour exécuter une analyse programmée | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 h). | 2 h 00 |
 |Root | Randomize scheduled task times |In Antivirus Microsoft Defender, randomize the start time of the scan to any interval from 0 to 4 hours. <p>Dans [SCEP](/mem/intune/protect/certificates-scep-configure), rendre aléatoires les analyses à n’importe quel intervalle plus ou moins 30 minutes. Cela peut être utile dans les machines virtuelles ou les déploiements VDI. | Activé |
 
 
@@ -131,7 +131,7 @@ ScanScheduleTime
 RandomizeScheduleTaskTimes
 ```
 
-Pour plus d’informations et des paramètres autorisés, [voir Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Pour plus d’informations et les paramètres autorisés, [voir Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="start-scheduled-scans-only-when-the-endpoint-is-not-in-use"></a>Démarrer des analyses programmées uniquement lorsque le point de terminaison n’est pas en cours d’utilisation
@@ -143,7 +143,7 @@ Vous pouvez définir l’analyse programmée de façon à ce qu’elle se produi
 
 ### <a name="use-group-policy-to-schedule-scans"></a>Utiliser une stratégie de groupe pour planifier des analyses
 
-|Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
+|Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 |Analyser | Démarrer l’analyse programmée uniquement lorsque l’ordinateur est en cours d’utilisation | Les analyses programmées ne s’exécutent pas, sauf si l’ordinateur est en cours d’utilisation | Activé |
 
@@ -155,7 +155,7 @@ Utilisez les cmdlets suivantes :
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-Pour plus d’informations, [voir Utiliser les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter les [cmdlets](/powershell/module/defender/)Antivirus Microsoft Defender et Defender.
+Pour plus d’informations, voir [Utiliser les cmdlets PowerShell pour configurer et gérer l'Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) et [Cmdlets Defender](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi"></a>Utiliser Windows Management Instruction (WMI)
 
@@ -172,9 +172,9 @@ Pour plus d’informations sur les API et les paramètres autorisés, [voir Wind
 
 Certaines menaces peuvent nécessiter une analyse complète pour terminer leur suppression et leur correction. Vous pouvez spécifier quand ces analyses doivent se produire avec la stratégie de groupe, PowerShell ou WMI.
 
-### <a name="use-group-policy-to-schedule-remediation-required-scans"></a>Utiliser une stratégie de groupe pour planifier des analyses requises pour la correction
+### <a name="use-group-policy-to-schedule-remediation-required-scans"></a>Utiliser la stratégie de groupe pour planifier des analyses nécessaires à la correction
 
-| Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
+| Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |---|---|---|---|
 |Correction | Spécifier le jour de la semaine pour exécuter une analyse complète programmée afin de terminer la correction | Spécifiez le jour (ou jamais) d’exécuter une analyse. | Jamais |
 |Correction | Spécifier l’heure de la journée pour exécuter une analyse complète programmée afin de terminer la correction | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 h 00) | 2 h 00 |
@@ -188,7 +188,7 @@ Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 
 ### <a name="use-windows-management-instruction-wmi"></a>Utiliser Windows Management Instruction (WMI)
 
@@ -208,7 +208,7 @@ Vous pouvez activer une analyse rapide quotidienne qui peut être exécuté en p
 
 ### <a name="use-group-policy-to-schedule-daily-scans"></a>Utiliser une stratégie de groupe pour planifier des analyses quotidiennes
 
-|Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
+|Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
 |Analyser | Spécifier l’intervalle pour exécuter des analyses rapides par jour | Spécifiez le nombre d’heures devant s’écoulée avant la prochaine analyse rapide. Par exemple, pour exécuter toutes les deux heures, entrez **2**, pour une fois par jour, **entrez 24**. Entrez **0 pour** ne jamais exécuter une analyse rapide quotidienne. | Jamais |
 |Analyser | Spécifier l’heure d’une analyse rapide quotidienne | Spécifiez le nombre de minutes après minuit (par exemple, entrez **60** pour 1 h 00) | 2 h 00 |
@@ -236,11 +236,11 @@ Pour plus d’informations et les paramètres autorisés, [voir Windows Defender
 
 ## <a name="enable-scans-after-protection-updates"></a>Activer les analyses après les mises à jour de la protection
 
-Vous pouvez forcer l’analyse après chaque mise à jour [de la protection](manage-protection-updates-microsoft-defender-antivirus.md) avec la stratégie de groupe.
+Vous pouvez forcer une analyse à se produire après chaque mise à jour [de protection](manage-protection-updates-microsoft-defender-antivirus.md) avec la stratégie de groupe.
 
 ### <a name="use-group-policy-to-schedule-scans-after-protection-updates"></a>Utiliser la stratégie de groupe pour planifier des analyses après les mises à jour de la protection
 
-|Lieu | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré)|
+|Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré)|
 |:---|:---|:---|:---|
 |Mises à jour des signatures | Activer l’analyse après la mise à jour des informations de sécurité | Une analyse se produit immédiatement après le téléchargement d’une nouvelle mise à jour de la protection | Activé |
 
@@ -251,4 +251,4 @@ Vous pouvez forcer l’analyse après chaque mise à jour [de la protection](man
 - [Configurer les options d’analyse de l’antivirus Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

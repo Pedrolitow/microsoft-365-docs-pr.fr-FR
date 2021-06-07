@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 37319e5af6121a38965e5d2d350a7697bb78c0b1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198292"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771044"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour le point de terminaison
 
@@ -194,7 +195,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### <a name="example-2"></a>Exemple 2
 
-Obtenez toutes les alertes de la dernière mise à jour après le 11-11-22 00:00:00 :
+Obtenez toutes les alertes de la dernière mise à jour après 2019-11-22 00:00:00 :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
@@ -447,7 +448,7 @@ json{
 
 ### <a name="example-7"></a>Exemple 7
 
-Obtenir le nombre d’alertes ouvertes pour un appareil spécifique :
+Obtenez le nombre d’alertes ouvertes pour un appareil spécifique :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'

@@ -1,6 +1,6 @@
 ---
 title: API De liste des ordinateurs
-description: Découvrez comment utiliser l'API Des ordinateurs de liste pour récupérer une collection d'ordinateurs ayant communiqué avec Microsoft Defender pour le cloud endpoint.
+description: Découvrez comment utiliser l’API Des ordinateurs de liste pour récupérer une collection d’ordinateurs ayant communiqué avec Microsoft Defender pour le cloud endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -13,19 +13,20 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: article
-ms.openlocfilehash: 01e36427116ad7bd845901e7da7f5aa152bd44f9
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: f06973bc45ecac05c15d48afe5f0e2e9e7788f78
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893352"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770744"
 ---
 # <a name="list-machines-api"></a>API De liste des ordinateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S'applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -33,14 +34,14 @@ ms.locfileid: "51893352"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a>Description de l'API
-Récupère une collection [d'ordinateurs](machine.md) qui ont communiqué avec Microsoft Defender pour le cloud endpoint.
+## <a name="api-description"></a>Description de l’API
+Récupère une collection [d’ordinateurs](machine.md) qui ont communiqué avec Microsoft Defender pour le cloud endpoint.
 <br>Prend [en charge les requêtes OData V4.](https://www.odata.org/documentation/)
 <br>La requête OData est prise en charge sur `$filter` : , , et `computerDnsName` `lastSeen` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
 <br>Voir des exemples [dans les requêtes OData avec Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Vous pouvez obtenir la dernière vue des appareils en fonction de votre période de rétention configurée.
 2. La taille maximale de page est de 10 000.
 3. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 
@@ -48,17 +49,17 @@ Récupère une collection [d'ordinateurs](machine.md) qui ont communiqué avec M
 
 ## <a name="permissions"></a>Autorisations
 
-Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
+Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Machine.Read.All |  « Lire tous les profils d'ordinateur »
-Application |   Machine.ReadWrite.All | « Lire et écrire toutes les informations sur l'ordinateur »
-Déléguée (compte professionnel ou scolaire) | Machine.Read | « Lire les informations sur l'ordinateur »
-Déléguée (compte professionnel ou scolaire) | Machine.ReadWrite | « Lire et écrire des informations sur l'ordinateur »
+Application |   Machine.Read.All |  « Lire tous les profils d’ordinateur »
+Application |   Machine.ReadWrite.All | « Lire et écrire toutes les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire) | Machine.Read | « Lire les informations sur l’ordinateur »
+Déléguée (compte professionnel ou scolaire) | Machine.ReadWrite | « Lire et écrire des informations sur l’ordinateur »
 
 >[!Note]
-> Lors de l'obtention d'un jeton à l'aide des informations d'identification de l'utilisateur :
->- L'utilisateur doit avoir au moins l'autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d'informations)
->- La réponse inclut uniquement les appareils, accessibles par l'utilisateur, en fonction des paramètres de groupe d'appareils (voir Créer et gérer des groupes d'appareils [pour](machine-groups.md) plus d'informations)
+> Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
+>- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+>- La réponse inclut uniquement les appareils, accessibles par l’utilisateur, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -77,7 +78,7 @@ Autorisation | String | Porteur {token}. **Obligatoire**.
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite et si les ordinateurs existent : 200 - OK avec la liste des entités de [l'ordinateur](machine.md) dans le corps. Si aucun ordinateur récent - 404 - In trouvé.
+En cas de réussite et si les ordinateurs existent : 200 - OK avec la liste des entités de [l’ordinateur](machine.md) dans le corps. Si aucun ordinateur récent - 404 - In trouvé.
 
 
 ## <a name="example"></a>Exemple

@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 232f7133f177e3d0aa93fcb2835fb86bcfd0d37c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769322"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782872"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personnaliser les règles de réduction de la surface d’attaque
 
@@ -36,7 +36,7 @@ ms.locfileid: "52769322"
 
 Découvrez comment personnaliser les règles de réduction de la surface d’attaque en excluant des fichiers et des [dossiers](#exclude-files-and-folders) ou en ajoutant du texte personnalisé à l’alerte de [notification](#customize-the-notification) qui apparaît sur l’ordinateur d’un utilisateur.
 
-Vous pouvez définir des règles de réduction de la surface d’attaque pour les appareils exécutant l’une des éditions et versions suivantes de Windows :
+Vous pouvez définir des règles de réduction de la surface d’attaque pour les appareils exécutant l’une des éditions et versions de Windows :
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
@@ -46,8 +46,14 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 
 Vous pouvez choisir d’exclure les fichiers et dossiers de l’évaluation par les règles de réduction de la surface d’attaque. Une fois exclu, l’exécution du fichier ne sera pas bloquée même si une règle de réduction de la surface d’attaque détecte que le fichier contient un comportement malveillant.
 
+Par exemple, prenons la règle de ransomware :
+
+La règle de ransomware est conçue pour aider les clients d’entreprise à réduire les risques d’attaques par ransomware tout en assurant la continuité de l’activité. Par défaut, la règle de ransomware va faire l’erreur du côté de la prudence et se protéger contre les fichiers qui n’ont pas encore atteint une réputation et une confiance suffisantes. Pour reéphaser, la règle de ransomware se déclenche uniquement sur les fichiers qui n’ont pas acquis une réputation et une prévalence positives suffisantes, en fonction des mesures d’utilisation de millions de nos clients. En règle générale, les blocs sont auto-résolus, car les valeurs « réputation et confiance » de chaque fichier sont mises à niveau de manière incrémentielle à mesure que l’utilisation non problématique augmente.
+
+Dans les cas où les blocs ne sont pas résolus en temps voulu, les clients peuvent, à leurs propres risques, utiliser le mécanisme en libre-service ou une fonctionnalité de « liste d’autoriser » basée sur l’indicateur de compromis (IOC) pour débloquer les fichiers eux-mêmes.   
+
 > [!WARNING]
-> Cela peut potentiellement permettre à des fichiers non sécurisés de s’exécuter et d’infecter vos appareils. L’exclusion des fichiers ou dossiers peut considérablement réduire la protection fournie par les règles de réduction de la surface d’attaque. Les fichiers qui auraient été bloqués par une règle seront autorisés à s’exécuter et aucun rapport ou événement n’est enregistré.
+> L’exclusion ou le déblocage de fichiers ou de dossiers pourrait potentiellement permettre à des fichiers non sécurisés de s’exécuter et d’infecter vos appareils. L’exclusion des fichiers ou dossiers peut considérablement réduire la protection fournie par les règles de réduction de la surface d’attaque. Les fichiers qui auraient été bloqués par une règle seront autorisés à s’exécuter et aucun rapport ou événement n’est enregistré.
 
 Une exclusion s’applique à toutes les règles qui autorisent les exclusions. Vous pouvez spécifier un fichier, un chemin d’accès de dossier ou le nom de domaine complet d’une ressource. Toutefois, vous ne pouvez pas limiter une exclusion à une règle spécifique.
 
@@ -57,7 +63,7 @@ La réduction de la surface d’attaque prend en charge les variables d’enviro
 Si vous rencontrez des problèmes avec des règles détectant des fichiers qui, selon vous, ne doivent pas être détectés, utilisez le [mode audit pour tester la règle.](evaluate-attack-surface-reduction.md)
 
 | Description de la règle | GUID |
-|:----|:----|:----|
+|:----|:----|
 | Empêcher toutes les applications Office de créer des processus enfants | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | Bloquer l’exécution de scripts potentiellement obscurcis | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
 | Bloquer les appels d’API Win32 à partir Office macro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
@@ -80,7 +86,7 @@ Consultez la rubrique [réduction de la surface](attack-surface-reduction.md) d�
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe](https://technet.microsoft.com/library/cc731212.aspx), faites un clic droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier**.
 
-2. Dans **l’Éditeur de gestion des stratégies de** groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration.**
+2. Dans **l’Éditeur de gestion des stratégies de** groupe, allez à **Configuration** ordinateur et cliquez sur **Modèles d’administration.**
 
 3. Développez l’arborescence **Windows composants Antivirus Microsoft Defender**  >    >  Windows Defender réduction de la surface **d’attaque Exploit Guard.**  >  
 
@@ -116,4 +122,4 @@ Vous pouvez personnaliser la notification pour le déclenchement d’une règle 
 * [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 * [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
 * [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
-* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md).
+* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)

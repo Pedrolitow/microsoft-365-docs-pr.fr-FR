@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Teams conversations et canaux prend en charge les stratégies de protection contre la perte de données (DLP).
-ms.openlocfilehash: e55bfa34b2495465f573bcede3ebda2308dbbbbc
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 6467ae7fdfc9c8636bd306efde5cb89c100e5e6c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583387"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782560"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prévention des pertes de données et Microsoft Teams
 
@@ -31,7 +31,7 @@ Si votre organisation dispose d’une protection contre la perte de données (DL
     > [!NOTE]
     > La DLP pour Microsoft Teams bloque le contenu sensible lorsqu’il est partagé avec Microsoft Teams utilisateurs qui ont :<br/>- [accès invité dans](/MicrosoftTeams/guest-access) les équipes et les canaux ; ou<br/>- [accès externe](/MicrosoftTeams/manage-external-access) dans les réunions et les sessions de conversation. <p>La DLP pour les sessions de conversation externe ne fonctionne que si l’expéditeur et le destinataire sont en mode Teams uniquement et utilisent la fédération Microsoft Teams [native.](/microsoftteams/manage-external-access) La prévention contre la Teams ne bloque pas les messages en cas [d’Skype Entreprise](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) sessions de conversation fédérée non natives ou non natives.
 
-- **Exemple 2 : protection des informations sensibles dans les documents**. Supposons qu’une personne tente de partager un document avec des invités dans un canal Microsoft Teams ou une conversation instantanée, et que le document contient des informations sensibles. Si vous avez défini une stratégie DLP pour éviter cela, le document ne s’ouvre pas pour ces utilisateurs. Votre stratégie DLP doit inclure SharePoint et OneDrive pour que la protection soit en place. Il s’agit d’un exemple de DLP pour les SharePoint qui s’affiche dans Microsoft Teams et qui nécessite donc que les utilisateurs soient titulaires d’une licence pour Office 365 DLP (inclus dans Office 365 E3), mais ne nécessite pas que les utilisateurs soient titulaires d’une licence pour Conformité avancée Office 365.)
+- **Exemple 2 : protection des informations sensibles dans les documents**. Supposons qu’une personne tente de partager un document avec des invités dans un canal Microsoft Teams ou une conversation, et que le document contient des informations sensibles. Si vous avez défini une stratégie DLP pour éviter cela, le document ne s’ouvre pas pour ces utilisateurs. Votre stratégie DLP doit inclure SharePoint et OneDrive pour que la protection soit en place. Il s’agit d’un exemple de DLP pour les SharePoint qui s’affiche dans Microsoft Teams et qui nécessite donc que les utilisateurs soient titulaires d’une licence pour Office 365 DLP (inclus dans Office 365 E3), mais ne nécessite pas que les utilisateurs soient titulaires d’une licence pour Conformité avancée Office 365.)
 
 ## <a name="dlp-licensing-for-microsoft-teams"></a>Gestion des licences DLP pour Microsoft Teams
 
@@ -58,17 +58,14 @@ La protection DLP est appliquée différemment Teams entités.
 |Comptes d’utilisateur/groupes/liste  |Teams Entité |Protection DLP disponible|
 |---------|---------|---------|
 |comptes d’utilisateur individuels     |Conversations 1:1/n         |oui         |
-|     |conversations générales         |Non         |
-|     |canaux partagés         |Non         |
+|     |conversations générales         |non         |
 |     |canaux privés         |oui         |
 |groupes de sécurité/listes de distribution  | Conversations 1:1/n         |oui         |
-|     |conversations générales         |Non         |
-|     |canaux partagés         |Non      |
+|     |conversations générales         |non         |
 |     |canaux privés         |oui        |
-|Microsoft 365 groupe    |Conversations 1:1/n          |Non         |
+|Microsoft 365 groupe    |Conversations 1:1/n          |non         |
 |     |conversations générales          |oui        |
-|     |canaux partagés|oui |
-|     |canaux privés|Non| 
+|     |canaux privés|non| 
 
 
 ## <a name="policy-tips-help-educate-users"></a>Les conseils de stratégie aident à former les utilisateurs
@@ -123,7 +120,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 2. Choisissez **la stratégie de protection contre la perte de**  >  **données.**
 
-3. Sélectionnez une stratégie et regardez les valeurs sous **Emplacements.** Si vous voyez Teams **messages de conversation et de** canal, vous êtes tous ensemble. Si ce n’est pas le cas, cliquez sur **Modifier.**
+3. Sélectionnez une stratégie et regardez les valeurs sous **Emplacements.** Si vous voyez des **Teams de conversation et de canal,** vous êtes tous ensemble. Si ce n’est pas le cas, cliquez sur **Modifier.**
 
     > [!div class="mx-imgBorder"]
     > ![Emplacements pour la stratégie existante](../media/dlp-teams-editexistingpolicy.png)
@@ -143,7 +140,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
 
 7. Cliquez sur **Enregistrer**.
 
-Laissez environ une heure à vos modifications pour qu’elles fonctionnent dans votre centre de données et se synchronisent avec les comptes d’utilisateurs.
+Laissez environ une heure pour que vos modifications fonctionnent dans votre centre de données et se synchronisent avec les comptes d’utilisateurs.
 <!-- again, why user accounts? -->
 
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Définir une nouvelle stratégie DLP pour Microsoft Teams
@@ -174,7 +171,7 @@ Pour effectuer cette tâche, vous devez avoir un rôle qui dispose des autorisat
     > [!NOTE]
     > Si vous souhaitez vous assurer que les documents qui contiennent des informations sensibles ne sont pas partagés de manière inappropriée dans Teams, assurez-vous que les **sites SharePoint** et les comptes OneDrive sont **allumés,** ainsi que les messages de conversation et de canal **Teams.**
 
-6. Sous **l’onglet Paramètres** de stratégie, sous Personnaliser le **type** de contenu que vous souhaitez protéger, conservez les paramètres simples par défaut, ou choisissez Utiliser les **paramètres** avancés, puis choisissez **Suivant**. Si vous choisissez des paramètres avancés, vous pouvez créer ou modifier des règles pour votre stratégie. Pour obtenir de l’aide, voir [Paramètres simples et paramètres avancés.](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)
+6. Sous **l’onglet Paramètres** de stratégie, sous Personnaliser le **type** de contenu à protéger, conservez les paramètres simples par défaut, ou choisissez Utiliser les **paramètres** avancés, puis choisissez **Suivant**. Si vous choisissez des paramètres avancés, vous pouvez créer ou modifier des règles pour votre stratégie. Pour obtenir de l’aide, voir [Paramètres simples et paramètres avancés.](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)
 
 7.  Sous **l’onglet Paramètres de stratégie,** sous Que voulez-vous faire si nous détectons des informations sensibles **?**, examinez les paramètres. C’est ici que vous pouvez choisir de conserver les conseils de stratégie par défaut et les [notifications par courrier électronique,](use-notifications-and-policy-tips.md)ou de les personnaliser.
 

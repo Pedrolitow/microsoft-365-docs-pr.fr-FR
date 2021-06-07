@@ -1,5 +1,5 @@
 ---
-title: Gérer les contrats à l’aide d’Microsoft 365 solution
+title: Gérer des contrats en utilisant la solution Microsoft 365
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,18 +13,18 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint syntex, SharePoint listes, Microsoft Teams et Power Automate.
-ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: d12ccd2d4bc777b05489556f0d96ce9de80954a8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651283"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770816"
 ---
-# <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer les contrats à l’aide d’Microsoft 365 solution
+# <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer des contrats en utilisant la solution Microsoft 365
 
 Cet article explique comment créer une solution de gestion des contrats pour votre organisation à l’aide SharePoint Syntex et des composants de Microsoft 365. Il vous fournit une infrastructure pour vous aider à planifier et à créer une solution qui répond aux besoins uniques de votre entreprise. Même si cette solution ne convient pas à l’ensemble de votre entreprise, une partie de celle-ci peut être adoptée dans votre planification de création d’une solution de gestion de contrat personnalisée.
 
-*Cet ensemble de contenu documente une solution Microsoft 365 développée par Tom Mol design avec l’équipe de stratégie de solution de travail moderne chez Microsoft.*
+*Cet ensemble de contenu documente une solution Microsoft 365 développée par Tom Mol design avec l’équipe Stratégie de solution de travail moderne chez Microsoft.*
 
 ## <a name="identify-the-business-problem"></a>Identifier le problème d’entreprise
 
@@ -34,7 +34,7 @@ La première étape de la planification de votre système de gestion des contrat
 
 - **Suivi de l’historique des approbations de contrat.** Votre organisation a besoin d’un moyen fiable pour déterminer si les contrats ont été approuvés ou rejetés, et si le paiement a été effectué. 
 
-- **Site pour gérer les approbations de contrat.** Votre organisation doit configurer un site de collaboration dans lequel toutes les parties prenantes requises peuvent facilement examiner les contrats. Les parties prenantes doivent pouvoir examiner l’intégralité du contrat si nécessaire, mais se soucient principalement de voir plusieurs champs clés de chaque contrat (par exemple, le nom du client, le numéro de bon de service et le coût total). Les parties prenantes doivent pouvoir facilement approuver ou rejeter les contrats entrants.
+- **Site pour gérer les approbations de contrat.** Votre organisation doit configurer un site de collaboration dans lequel toutes les parties prenantes requises peuvent facilement examiner les contrats. Les parties prenantes doivent pouvoir examiner l’ensemble du contrat si nécessaire, mais se soucient principalement de voir plusieurs champs clés de chaque contrat (par exemple, le nom du client, le numéro de bon de service et le coût total). Les parties prenantes doivent pouvoir facilement approuver ou rejeter les contrats entrants.
 
 - **Contrats révisés d’itinéraire.** Les contrats approuvés et rejetés doivent être acheminés via un flux de travail spécifique. Les contrats approuvés doivent être acheminés vers une application tierce pour le traitement des paiements. Les contrats rejetés doivent être acheminés pour une révision supplémentaire.
 
@@ -44,7 +44,7 @@ La première étape de la planification de votre système de gestion des contrat
 
 Cette solution de gestion des contrats comprend quatre composants de Microsoft 365 :
 
-- **Microsoft SharePoint Syntex :** créez des modèles pour identifier et classer vos fichiers de contrat, puis extrayez les données appropriées à partir de ces derniers.
+- **Microsoft SharePoint Syntex**: créez des modèles pour identifier et classer vos fichiers de contrat, puis extrayez les données appropriées à partir de ces derniers.
 
 - **Listes SharePoint Microsoft**: utilisez la mise en forme disponible dans les listes SharePoint modernes pour présenter les contrats dans un format commercial convivial.
 
@@ -73,6 +73,14 @@ Cette solution de gestion des contrats comprend quatre composants de Microsoft 3
 6. Le résultat final de cette solution est un processus d’entreprise automatisé pour votre organisation. Les employés peuvent facilement utiliser la vue de vignette personnalisée dans Teams pour lancer et surveiller le flux de travail d’approbation de vos documents. 
 
      ![Onglet Contrats.](../media/content-understanding/tile-view.png)
+
+### <a name="licensing-requirements"></a>Conditions d'octroi de licence
+
+Cette solution s’appuie sur les fonctionnalités suivantes, disponibles dans le cadre d’une licence Microsoft 365 Entreprise (E1, E3, E5, F3) ou Business (De base, Standard ou Premium) :
+
+-   Microsoft SharePoint Syntex
+-   Microsoft Teams
+-   Power Automate
 
 ## <a name="create-the-solution"></a>Créer la solution
 
