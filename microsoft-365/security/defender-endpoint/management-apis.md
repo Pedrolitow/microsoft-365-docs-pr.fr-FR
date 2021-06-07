@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la gestion et des API
 ms.reviewer: ''
-description: En savoir plus sur les outils de gestion et les catégories d’API dans Microsoft Defender pour point de terminaison
+description: En savoir plus sur les outils de gestion et les catégories d’API dans Microsoft Defender for Endpoint
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,13 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7fdb8ef1689c18945352b30b3ebfe6c176c4034e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730837"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772028"
 ---
 # <a name="overview-of-management-and-apis"></a>Vue d’ensemble de la gestion et des API 
 
@@ -32,12 +33,12 @@ ms.locfileid: "52730837"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)
 
 
 Defender pour le point de terminaison prend en charge un large éventail d’options pour s’assurer que les clients peuvent facilement adopter la plateforme. 
 
-Sachant que les environnements et structures des clients peuvent varier, Defender for Endpoint a été créé avec flexibilité et contrôle granulaire pour s’adapter à différentes exigences des clients. 
+Sachant que les environnements et structures des clients peuvent varier, Defender for Endpoint a été créé avec flexibilité et contrôle granulaire pour s’adapter aux besoins divers des clients. 
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Intégration de point de terminaison et accès au portail 
 
@@ -62,26 +63,27 @@ Les API Defender pour point de terminaison peuvent être regroupées en trois :
 
 ## <a name="microsoft-defender-for-endpoint-apis"></a>API Microsoft Defender pour point de terminaison
 
-Defender pour le point de terminaison offre un modèle d’API en couches exposant des données et des fonctionnalités dans un modèle structuré, clair et facile à utiliser, exposé via un modèle d’authentification et d’autorisation Azure AD standard permettant l’accès dans le contexte des utilisateurs ou des applications SaaS. Le modèle API a été conçu pour exposer des entités et des fonctionnalités sous une forme cohérente. 
+Defender for Endpoint offre un modèle d’API en couches exposant des données et des fonctionnalités dans un modèle structuré, clair et facile à utiliser, exposé via un modèle d’authentification et d’autorisation Azure AD standard permettant l’accès dans le contexte des utilisateurs ou des applications SaaS. Le modèle API a été conçu pour exposer des entités et des fonctionnalités sous une forme cohérente. 
 
 Regardez cette vidéo pour obtenir une vue d’ensemble rapide des API de Defender for Endpoint. 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
 **L’API** Investigation expose la richesse de Defender pour point de terminaison : elle expose des entités calculées ou « profilées » (par exemple, des appareils, des utilisateurs et des fichiers) et des événements discrets (par exemple, création de processus et création de fichiers) qui décrivent généralement un comportement lié à une entité, ce qui permet d’accéder aux données via des interfaces d’investigation permettant un accès basé sur une requête aux données. Pour plus d’informations, voir [API pris en charge.](exposed-apis-list.md)
 
-**L’API Response** expose la possibilité d’agir dans le service et sur les appareils, ce qui permet aux clients d’ing d’indicateurs, de gérer les paramètres, l’état des alertes, ainsi que d’agir sur les appareils par programme, comme isoler les appareils du réseau, mettre en quarantaine des fichiers, etc. 
+**L’API Response** expose la possibilité d’agir dans le service et sur les appareils, ce qui permet aux clients d’inger des indicateurs, de gérer les paramètres, l’état des alertes, ainsi que d’prendre des actions de réponse sur les appareils par programme, telles que l’isolement des appareils du réseau, les fichiers de mise en quarantaine, etc. 
 
-## <a name="streaming-api"></a>API de diffusion en continu 
-L’API de diffusion en continu permet aux clients d’expédier des événements et des alertes en temps réel à partir de leurs instances au sein d’un flux de données unique, offrant ainsi un mécanisme de livraison à faible latence et à haut débit.
+## <a name="raw-data-streaming-api"></a>API de diffusion en continu de données brutes 
+Defender for Endpoint raw data streaming API provides the ability for customers to ship real-time events and alerts from their instances as they occur within a single data stream, providing a low latency, high débit delivery mechanism.
 
-Les informations d’événement sont directement poussées vers le stockage Azure pour la rétention des données à long terme, ou vers les Hubs d’événements Azure pour une consommation par des services de visualisation ou des moteurs de traitement de données supplémentaires. 
+Les informations d’événement Defender for Endpoint sont directement poussées vers le stockage Azure pour la rétention des données à long terme, ou vers les Hubs d’événements Azure pour une consommation par des services de visualisation ou des moteurs de traitement de données supplémentaires. 
 
->[!NOTE]
->L’API de diffusion en continu est désormais Microsoft 365 Defender. Pour plus d’informations, voir [l’API de diffusion en continu.](raw-data-export.md)
+Pour plus d’informations, voir [l’API de diffusion en continu des données brutes.](raw-data-export.md)
+
+La nouvelle API de diffusion Microsoft 365 Defender inclut des événements de messagerie et d’alerte en plus des événements d’appareil. Pour plus d’informations, [voir Microsoft 365 API de diffusion en continu de Defender.](../defender/streaming-api.md)
 
 
 ## <a name="siem-api"></a>SIEM API
-Lorsque vous activez l’intégration SIEM (Security Information and Event Management), cela vous permet d’obtenir des détections à partir de Centre de sécurité Microsoft Defender à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections. Cela active la section des détails d’accès au connecteur SIEM avec des valeurs pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD). Pour plus d’informations, voir [intégration SIEM.](enable-siem-integration.md)
+Lorsque vous activez l’intégration SIEM (Security Information and Event Management), cela vous permet d’obtenir des détections à partir de Centre de sécurité Microsoft Defender à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections. Cette action active la section des détails d’accès au connecteur SIEM avec des valeurs pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD). Pour plus d’informations, voir [intégration SIEM.](enable-siem-integration.md)
 
 ## <a name="related-topics"></a>Voir aussi
 - [Accéder aux API Microsoft Defender for Endpoint ](apis-intro.md)

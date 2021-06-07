@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
-ms.openlocfilehash: 629b236be3f857da47674cda9350d8b89e6f3445
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Utilisez la fonctionnalité de recherche et de purge dans le Centre de sécurité et de conformité Microsoft 365 pour rechercher et supprimer un message électronique dans toutes les boîtes aux lettres de votre organisation.
+ms.openlocfilehash: 95683ed5dc6cce8ff109976ebb0d13215593f046
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537642"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770708"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Rechercher et supprimer des messages électroniques
 
@@ -46,19 +46,23 @@ Vous pouvez utiliser la fonctionnalité de recherche de contenu pour rechercher 
   > [!NOTE]
   > Le groupe du rôle **Gestion de l'organisation** existe dans Exchange Online et le Centre de sécurité et conformité. Ces groupes de rôles distincts donnent des autorisations différentes. Être membre de la **Gestion des organisations** dans Exchange Online n'octroie pas les autorisations requises pour supprimer des messages électroniques. Si le rôle **Recherche et purge** ne vous est pas attribué dans le Centre de sécurité et conformité (directement ou via un groupe de rôles tel que **Gestion de l’organisation**), vous recevrez une erreur à l’étape 3 lorsque vous exécuterez la cmdlet **New-ComplianceSearchAction** avec le message « Impossible de trouver un paramètre qui correspond au nom du paramètre « Purge ».
 
-- Pour supprimer des messages, vous devez utiliser le centre de sécurité et conformité PowerShell. Pour des instructions sur la façon de se connecter, consultez [Etape 2](#step-2-connect-to-security--compliance-center-powershell).
+- Pour supprimer des messages, vous devez utiliser le centre de sécurité et conformité PowerShell. Pour des instructions sur la façon de se connecter, consultez [Etape 1](#step-1-connect-to-security--compliance-center-powershell).
 
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas conçue pour nettoyer les boîtes aux lettres des utilisateurs.
 
-- Le nombre maximal de boîtes aux lettres dans une recherche de contenus servant à supprimer des éléments à l’aide d’une action de recherche et de purge est de 50 000. Si la recherche de contenu (que vous créez à [l’étape 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) contient plus de 50 000 boîtes aux lettres, l’action de purge (que vous créez à l’étape 3) échoue. Une recherche de plus de 50 000 boîtes aux lettres au cours d’une même recherche est probable, généralement lorsque la configuration de la recherche prend en compte toutes les boîtes aux lettres de votre organisation. Cette restriction s’applique même si moins de 50 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche. Pour obtenir des instructions sur l’utilisation des filtres d’autorisation de recherche pour rechercher et vider des éléments de plus de 50 000 boîtes aux lettres, consultez la section [informations supplémentaires](#more-information).
+- Le nombre maximal de boîtes aux lettres dans une recherche de contenus servant à supprimer des éléments à l’aide d’une action de recherche et de purge est de 50 000. Si la recherche de contenu (que vous créez à l’[Étape 2](#step-2-create-a-content-search-to-find-the-message-to-delete)) contient plus de 50 000 boîtes aux lettres, l’action de purge (que vous créez à l’Étape 3) échoue. Une recherche de plus de 50 000 boîtes aux lettres au cours d’une même recherche est probable, généralement lorsque la configuration de la recherche prend en compte toutes les boîtes aux lettres de votre organisation. Cette restriction s’applique même si moins de 50 000 boîtes aux lettres contiennent des éléments qui correspondent à la requête de recherche. Pour obtenir des instructions sur l’utilisation des filtres d’autorisation de recherche pour rechercher et vider des éléments de plus de 50 000 boîtes aux lettres, consultez la section [informations supplémentaires](#more-information).
 
 - La procédure décrite dans cet article ne peut être utilisée que pour supprimer des éléments dans les boîtes aux lettres et dossiers publics Exchange Online. Vous ne pouvez pas l’utiliser pour supprimer du contenu de SharePoint ou de sites OneDrive Entreprise.
 
 - Il n’est pas possible de supprimer les éléments de courrier d’un groupe de révision dans un cas Advanced eDiscovery à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un groupe de révision sont stockés dans un emplacement de stockage Azure, et non dans le service actif. Cela signifie qu’elles ne sont pas renvoyées par la recherche de contenu que vous créez à l’étape 1. Pour supprimer des éléments d’un groupe de révision, vous devez supprimer le cas Advanced eDiscovery qui contient l’entité de révision. Pour plus d’informations, consultez [Fermer ou supprimer un cas Advanced eDiscovery](close-or-delete-case.md).
 
-## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Étape 1 : créer une recherche de contenu pour rechercher les messages à supprimer
+## <a name="step-1-connect-to-security--compliance-center-powershell"></a>Étape 1 : connectez-vous au Centre de sécurité et conformité PowerShell
 
-La première étape consiste à créer et exécuter une recherche de contenu pour rechercher le message à supprimer des boîtes aux lettres de votre organisation. Vous pouvez créer la recherche à l’aide du Centre de sécurité et conformité ou en exécutant les cmdlets **New-ComplianceSearch** et **Start-ComplianceSearch**. Les messages qui correspondent à la requête pour cette recherche sont supprimés par l’exécution de la commande **New-ComplianceSearchAction -Purge** à l’[étape 3](#step-3-delete-the-message). Pour plus d’informations sur la création d’une Recherche de contenu et sur la configuration de requêtes de recherche, consultez les rubriques suivantes :
+L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+
+## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>Étape 2 : créer une Recherche de contenu pour rechercher les messages à supprimer
+
+La seconde étape consiste à créer et exécuter une Recherche de contenu pour rechercher le message à supprimer des boîtes aux lettres de votre organisation. Vous pouvez créer la recherche à l’aide du Centre de sécurité et conformité Microsoft 365 ou en exécutant les cmdlets **New-ComplianceSearch** et **Start-ComplianceSearch** dans PowerShell Sécurité et conformité. Les messages qui correspondent à la requête pour cette recherche sont supprimés par l’exécution de la commande **New-ComplianceSearchAction -Purge** à l’[étape 3](#step-3-delete-the-message). Pour plus d’informations sur la création d’une Recherche de contenu et sur la configuration de requêtes de recherche, consultez les rubriques suivantes :
 
 - [Recherche de contenu dans Office 365](content-search.md)
 
@@ -83,7 +87,7 @@ L’objectif de la requête de recherche est de concentrer les résultats de la 
 
 - Prévisualisez les résultats de recherche pour vérifier que la recherche renvoie uniquement les messages que vous voulez supprimer.
 
-- Utilisez les statistiques d’estimation de recherche (affichées dans le volet de détails de la recherche dans le Centre de sécurité et conformité ou à l’aide de la cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)) pour obtenir le nombre total de résultats.
+- Utilisez les statistiques d’estimation de recherche (affichées dans le volet de détails de la recherche dans le Centre de sécurité et conformité Microsoft 365 ou à l’aide de la cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)) pour obtenir le nombre total de résultats.
 
 Voici deux exemples de requêtes pour rechercher des messages électroniques suspects.
 
@@ -105,12 +109,6 @@ Voici un exemple d’utilisation d’une requête pour créer et démarrer une r
 $Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation All -ContentMatchQuery '(Received:4/13/2016..4/14/2016) AND (Subject:"Action required")'
 Start-ComplianceSearch -Identity $Search.Identity
 ```
-
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Étape 2 : connectez-vous au Centre de sécurité et conformité PowerShell
-
-L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
-
-Une fois que vous vous êtes connecté au Centre de sécurité et de conformité PowerShell, exécutez les applets de commande **New-ComplianceSearch** et **Start-ComplianceSearch** préparés à l’étape précédente.
 
 ## <a name="step-3-delete-the-message"></a>Étape 3 : supprimer le message
 

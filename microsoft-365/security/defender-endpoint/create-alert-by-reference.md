@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9066bcdae549f7a6b1372714d567674eb03c1e51
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166672"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772388"
 ---
 # <a name="create-alert-api"></a>CRÉER une API d’alerte
 
@@ -28,7 +29,7 @@ ms.locfileid: "51166672"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -39,14 +40,14 @@ ms.locfileid: "51166672"
 
 ## <a name="api-description"></a>Description de l’API
 Crée une [alerte en](alerts.md) haut de **l’événement.**
-<br>**L’événement Microsoft Defender for Endpoint est** requis pour la création de l’alerte.
+<br>**Microsoft Defender for Endpoint Event est** requis pour la création de l’alerte.
 <br>Vous devez fournir 3 paramètres à partir de l’événement dans la demande : l’heure de l’événement, **l’ID** de l’ordinateur et **l’ID de rapport.** Voir l’exemple ci-dessous.
 <br>Vous pouvez utiliser un événement trouvé dans l’API de recherche avancée ou le portail.
 <br>S’il existe une alerte ouverte sur le même appareil avec le même titre, la nouvelle alerte créée est fusionnée avec elle.
 <br>Un examen automatique démarre automatiquement sur les alertes créées via l’API.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Les limites de taux pour cette API sont de 15 appels par minute.
 
 
@@ -74,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -84,12 +85,12 @@ Dans le corps de la demande, fournissons les valeurs suivantes (toutes sont obli
 Propriété | Type | Description
 :---|:---|:---
 eventTime | DateTime(UTC) | Heure précise de l’événement en tant que chaîne, tel qu’obtenu à partir d’un chasse avancée. Par exemple, ```2018-08-03T16:45:21.7115183Z``` **obligatoire**.
-reportId | Chaîne | ReportId de l’événement, tel qu’obtenu à partir d’un chasse avancée. **Obligatoire**.
-machineId | Chaîne | ID de l’appareil sur lequel l’événement a été identifié. **Obligatoire**.
-Sévérité  | Chaîne | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
-title | Chaîne | Titre de l’alerte. **Obligatoire**.
-description | Chaîne | Description de l’alerte. **Obligatoire**.
-recommendedAction| Chaîne | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.
+reportId | String | ReportId de l’événement, tel qu’obtenu à partir d’un chasse avancée. **Obligatoire**.
+machineId | String | ID de l’appareil sur lequel l’événement a été identifié. **Obligatoire**.
+Sévérité  | String | Gravité de l’alerte. Les valeurs de propriété sont : « Low » (faible), « Medium » (moyen) et « High » (élevé). **Obligatoire**.
+title | String | Titre de l’alerte. **Obligatoire**.
+description | String | Description de l’alerte. **Obligatoire**.
+recommendedAction| String | Action recommandée par le responsable de la sécurité lors de l’analyse de l’alerte. **Obligatoire**.
 category| String | Catégorie de l’alerte. Les valeurs de propriété sont : « General », « CommandAndControl », « Collection », « CredentialAccess », « DefenseEvasion », « Discovery », « Exfiltration », « Exploit », « Execution », « InitialAccess », « LateralMovement », « Malware », « Persistence », « PrivilegeEscalation », « Ransomware », « SuspiciousActivity » **Required**.
 
 ## <a name="response"></a>Réponse

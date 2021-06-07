@@ -1,5 +1,5 @@
 ---
-title: Obtenir des informations sur l’utilisateur associé à une alerte
+title: Obtenir les informations de l’utilisateur lié à l’alerte
 description: Découvrez comment utiliser l’API Obtenir les informations utilisateur associées à l’alerte pour récupérer l’utilisateur associé à une alerte spécifique dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, alerte, informations, associé, utilisateur
 search.product: eADQiWindows 10XVcnh
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: aee3c6fb381341c6823fbcb6766c0b761cb3413d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e895885a638c60a845ed4857c682cd472e42615c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166629"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772316"
 ---
 # <a name="get-alert-related-user-information-api"></a>API Obtenir les informations utilisateur associées à une alerte
 
@@ -28,7 +29,7 @@ ms.locfileid: "51166629"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -42,7 +43,7 @@ ms.locfileid: "51166629"
 Récupère l’utilisateur associé à une alerte spécifique.
 
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -69,14 +70,14 @@ GET /api/alerts/{id}/user
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite et d’alerte et si un utilisateur existe : 200 - OK avec l’utilisateur dans le corps. Si l’alerte ou l’utilisateur est in found - 404 - In trouvé.
+En cas de réussite et si l’alerte et qu’un utilisateur existe : 200 - OK avec l’utilisateur dans le corps. Si l’alerte ou l’utilisateur est in found - 404 - In trouvé.
 
 
 ## <a name="example"></a>Exemple

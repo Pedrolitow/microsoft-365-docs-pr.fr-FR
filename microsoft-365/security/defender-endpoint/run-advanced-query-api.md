@@ -15,13 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 40487143ff18cedb76c9f3f33c52cab24687c282
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 0173e271967a1b5b18d69713e9e6540e9cd11a87
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604368"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772400"
 ---
 # <a name="advanced-hunting-api"></a>API de recherche avancée
 
@@ -36,7 +37,7 @@ ms.locfileid: "51604368"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="limitations"></a>Limites
+## <a name="limitations"></a>Limitations
 
 1. Vous pouvez uniquement exécuter une requête sur les données des 30 derniers jours.
 
@@ -48,7 +49,7 @@ ms.locfileid: "51604368"
 
 4. La durée d’exécution maximale d’une seule demande est de 10 minutes.
 
-5. La réponse 429 représente l’atteinte de la limite de quota par nombre de demandes ou par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
+5. La réponse 429 représente l’atteinte de la limite de quota soit par nombre de demandes, soit par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
 
 ## <a name="permissions"></a>Autorisations
 

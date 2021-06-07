@@ -17,36 +17,36 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations de hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e4e230fdca7fe29fc1c7a1bc68085454ba883b9
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a9c1c6f7635b87e25adcb121db79f67d4ec1988f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624788"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788994"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 > La fonctionnalité décrite dans cet article est en prévisualisation, n’est pas disponible pour tout le monde et peut faire l’objet de changements.
 
-Pour assurer la sécurité de votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages qui entraînent des programmes malveillants ou des verdicts de hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour assurer la sécurité de votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations de hameçonnage tierces**: les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
 - Boîtes aux lettres d’opérations de sécurité **(SecOps)**: boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bonnes et mauvaises).
 
-Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêcher le filtrage de ces messages dans ces _scénarios spécifiques._ <sup>\*</sup> La stratégie de remise avancée garantit que les messages dans ces scénarios ne sont pas filtrés :
+Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêcher le filtrage de ces messages dans ces _scénarios spécifiques._ <sup>\*</sup> La stratégie de remise avancée garantit que les messages dans ces scénarios atteignent les résultats suivants :
 
 - Les filtres dans EOP et Microsoft Defender Office 365 aucune action sur ces messages.<sup>\*</sup>
-- [La purge sans heure (ZAP)](zero-hour-auto-purge.md) pour le courrier indésirable et le hameçonnage n’a aucune action sur ces messages.<sup>\*</sup>
+- [La purge zéro heure (ZAP) pour le](zero-hour-auto-purge.md) courrier indésirable et le hameçonnage n’a aucune action sur ces messages.<sup>\*</sup>
 - [Les alertes système par défaut](alerts.md) ne sont pas déclenchées pour ces scénarios.
 - [Air and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Plus spécifiquement pour les simulations de hameçonnage tierces :
-  - [Les soumissions d’administrateur](admin-submission.md) génèrent une réponse automatique qui dit que le message fait partie d’une campagne de simulation de hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et air ne sont pas déclenchés.
+  - [Les soumissions d’administrateur](admin-submission.md) génèrent une réponse automatique qui dit que le message fait partie d’une campagne de simulation de hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et AIR ne sont pas déclenchées.
   - [Les liens sécurisés dans Defender Office 365](safe-links.md) ne bloquent pas ou ne désaxiquent pas les URL spécifiquement identifiées dans ces messages.
   - [Les pièces jointes sécurisées](safe-attachments.md) dans Defender Office 365 ne désaxiquent pas les pièces jointes dans ces messages.
 
@@ -62,44 +62,61 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de sécurité et conformité sur <https://protection.office.com/>. Pour aller directement à la page **de remise avancée,** ouvrez <https://protection.office.com/advanceddelivery> .
+- Vous ouvrez le centre de sécurité à <https://security.microsoft.com>. Pour aller directement à la page **de remise avancée,** ouvrez <https://security.microsoft.com/advanceddelivery> .
 
 - Des autorisations doivent vous être attribuées avant de pouvoir suivre les procédures de cet article :
-  - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie  de remise avancée, vous devez être membre du groupe  de rôles Administrateur de la sécurité dans le Centre de sécurité **&** conformité et membre du groupe de rôles Gestion de l’organisation dans **Exchange Online**.  
-  - Pour accéder en lecture seule à la stratégie de remise  avancée,  vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
+  - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie  de remise avancée,  vous devez être  membre du groupe de rôles Administrateur de la sécurité dans le centre de sécurité et membre du groupe de rôles Gestion de l’organisation **dans Exchange Online**.  
+  - Pour un accès en lecture seule à la stratégie de  remise  avancée, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
-  Pour plus d’informations, [voir Autorisations](permissions-in-the-security-and-compliance-center.md) dans le Centre de sécurité & conformité et [autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Pour plus d’informations, [voir Autorisations](permissions-microsoft-365-security-center.md) dans le centre Microsoft 365 sécurité et [autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-## <a name="use-the-security--compliance-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le Centre de sécurité & conformité pour configurer des simulations d’hameçonnage tiers dans la stratégie de remise avancée
+  > [!NOTE]
+  > L’ajout d’utilisateurs au rôle Azure Active Directory donne aux utilisateurs les autorisations requises dans le centre de sécurité et les autorisations pour d’autres fonctionnalités dans Microsoft 365.  Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-1. Dans le Centre de sécurité & conformité, allez à **La** remise avancée des stratégies de gestion \>  \> **des menaces.**
+## <a name="use-the-security-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le centre de sécurité pour configurer des boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-2. Dans la page **Remise avancée,** sélectionnez l’onglet **Simulation** de hameçonnage, puis cliquez sur **Modifier.**
+1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **rules** \> **Threat policies** section Advanced \>  \> **delivery**.
 
-3. Dans le volant de simulation de **hameçonnage** tiers qui s’ouvre, configurez les paramètres suivants :
+2. Dans la page **Remise** avancée, vérifiez que l’onglet Boîte aux lettres **SecOps** est sélectionné, puis faites l’une des étapes suivantes :
+   - Cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.**
+   - S’il n’existe aucune simulation de hameçonnage configurée, cliquez sur **Ajouter.**
 
-   - **Domaine d’envoi**: au moins un domaine d’adresse de messagerie est requis (par exemple, contoso.com). Vous pouvez ajouter jusqu’à 10 entrées.
-   - **Adresse IP d’envoi**: au moins une adresse IPv4 valide est requise. Vous pouvez ajouter jusqu’à 10 entrées. Les valeurs valides sont les suivantes :
-     - Adresse IP unique : par exemple, 192.168.1.1.
-     - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
-     - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
-   - **URL de** simulation à autoriser : vous pouvez éventuellement entrer des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou détonées. Vous pouvez ajouter jusqu’à 10 entrées.
+3. Dans le volant modifier les boîtes aux lettres **SecOps** qui s’ouvre, entrez une boîte aux lettres Exchange Online existante que vous souhaitez désigner comme boîte aux lettres SecOps en suivant l’une des étapes suivantes :
+   - Cliquez dans la zone, laissez la liste des boîtes aux lettres résoudre, puis sélectionnez la boîte aux lettres.
+   - Cliquez dans la zone commencer à taper un identificateur pour la boîte aux lettres (nom, nom complet, alias, adresse e-mail, nom de compte, etc.), puis sélectionnez la boîte aux lettres (nom complet) dans les résultats.
 
-4. Lorsque vous avez terminé, cliquez sur **Enregistrer.**
+     Répétez cette étape autant de fois que nécessaire. Les groupes de distribution ne sont pas autorisés.
 
-Les entrées de simulation de hameçonnage tierces que vous avez configurées sont affichées sous l’onglet **Simulation de hameçonnage.** Pour apporter des modifications, cliquez **sur Modifier** sous l’onglet.
-
-## <a name="use-the-security--compliance-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le Centre de sécurité & conformité pour configurer les boîtes aux lettres SecOps dans la stratégie de remise avancée
-
-1. Dans le Centre de sécurité & conformité, go to **Threat Management** \> **Policy** \> **Advanced delivery**.
-
-2. Dans la page **Remise avancée,** sélectionnez l’onglet Boîte aux lettres **SecOps,** puis cliquez sur **Modifier.**
-
-3. Dans le volant de boîte aux lettres **SecOps** qui s’ouvre, entrez les adresses de messagerie des boîtes aux lettres Exchange Online existantes que vous souhaitez désigner comme boîtes aux lettres SecOps. Les groupes de distribution ne sont pas autorisés.
+     Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-Les entrées de boîte aux lettres SecOps que vous avez configurées sont affichées sous l’onglet Boîte aux lettres **SecOps.** Pour apporter des modifications, cliquez **sur Modifier** sous l’onglet.
+Les entrées de boîte aux lettres SecOps que vous avez configurées sont affichées sous l’onglet Boîte aux lettres **SecOps.** Pour apporter des modifications, cliquez ![ sur Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier** sous l’onglet.
+
+## <a name="use-the-security-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le centre de sécurité pour configurer des simulations de hameçonnage tiers dans la stratégie de remise avancée
+
+1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **rules** \> **Threat policies** section Advanced \>  \> **delivery**.
+
+2. Dans la page **Remise avancée,** sélectionnez l’onglet **Simulation** de hameçonnage, puis faites l’une des étapes suivantes :
+   - Cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.**
+   - S’il n’existe aucune simulation de hameçonnage configurée, cliquez sur **Ajouter.**
+
+3. Dans le **flyout de simulation** de hameçonnage tiers qui s’ouvre, configurez les paramètres suivants :
+
+   - **Domaine** d’envoi : développez ce paramètre et entrez au moins un domaine d’adresse de messagerie (par exemple, contoso.com) en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées.
+   - **Adresse IP** d’envoi : développez ce paramètre et entrez au moins une adresse IPv4 valide en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Répétez cette étape autant de fois que nécessaire. Vous pouvez ajouter jusqu’à 10 entrées. Les valeurs valides sont les suivantes :
+     - Adresse IP unique : par exemple, 192.168.1.1.
+     - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
+     - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
+   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées.
+
+   Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
+
+4. Lorsque vous avez terminé, faites l’une des étapes suivantes :
+   - **Première fois**: cliquez **sur Ajouter,** puis sur **Fermer.**
+   - **Modifier une version existante**: cliquez sur **Enregistrer,** puis sur **Fermer.**
+
+Les entrées de simulation de hameçonnage tierces que vous avez configurées sont affichées sous l’onglet **Simulation de hameçonnage.** Pour apporter des modifications, cliquez ![ sur Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier** sous l’onglet.
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>Scénarios supplémentaires nécessitant le contournement du filtrage
 
@@ -107,6 +124,6 @@ Outre les deux scénarios que la stratégie de remise avancée peut vous aider, 
 
 - **Filtres tiers**: si l’enregistrement MX de votre domaine ne pointe pas vers Office 365 (les messages sont d’abord acheminés [ailleurs),](secure-by-default.md) la sécurité par défaut *n’est* *pas disponible.*
 
-  Pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers, utilisez des règles de flux de messagerie (également appelées règles de transport), voir Utiliser des règles de flux de messagerie pour définir le SCL dans les [messages.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
+  Pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers, utilisez des règles de flux de messagerie (également appelées règles de transport). Pour plus d’informations, voir [Utiliser des règles de flux de messagerie pour définir le SCL dans les messages.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 
-- **Faux positifs** en cours d’examen : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft via des [envois](admin-submission.md) d’administrateur à signaler les messages de bonne qualité connus qui sont marqués à tort comme incorrects pour Microsoft (faux positifs). Comme pour toutes les substitutions, il est vivement recommandé **_d’annuler_** temporairement ces allocations.
+- **Faux positifs** en cours d’examen : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft via des [envois](admin-submission.md) d’administrateur à signaler les messages de bonne qualité connus qui sont marqués à tort comme incorrects pour Microsoft (faux positifs). Comme pour toutes les substitutions, il est **_vivement_** recommandé que ces allocations soient temporaires.

@@ -1,6 +1,6 @@
 ---
-title: API Obtenir l'URI SAS du package
-description: Utilisez cette API pour obtenir un URI qui permet de télécharger un package d'enquête.
+title: API Obtenir l’URI SAS du package
+description: Utilisez cette API pour obtenir un URI qui permet de télécharger un package d’enquête.
 keywords: api, api de graphique, api pris en charge, obtenir le package, sas, uri
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -14,18 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b9c8877e341e7438532ab3eb3f7af4c2a9114af7
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 054db1766cdab3aa5b49da4940dcdddfe6086434
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893340"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770684"
 ---
-# <a name="get-package-sas-uri-api"></a>API Obtenir l'URI SAS du package
+# <a name="get-package-sas-uri-api"></a>API Obtenir l’URI SAS du package
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S'applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -33,22 +35,22 @@ ms.locfileid: "51893340"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a>Description de l'API
-Obtenez un URI qui permet le téléchargement d'un [package d'enquête.](collect-investigation-package.md)
+## <a name="api-description"></a>Description de l’API
+Obtenez un URI qui permet le téléchargement d’un [package d’enquête.](collect-investigation-package.md)
 
 
 ## <a name="permissions"></a>Autorisations
-L'une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [l'api Microsoft Defender pour les points de terminaison.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, consultez [l’api Microsoft Defender pour les points de terminaison.](apis-intro.md)
 
-Type d’autorisation |   Autorisation  |   Nom d'affichage de l'autorisation
+Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
 :---|:---|:---
 Application |   Machine.CollectForensics |  « Collecter les enquêtes légales »
 Déléguée (compte professionnel ou scolaire) | Machine.CollectForensics | « Collecter les enquêtes légales »
 
 >[!Note]
-> Lors de l'obtention d'un jeton à l'aide des informations d'identification de l'utilisateur :
->- L'utilisateur doit avoir au moins l'autorisation de rôle suivante : « Alerts Investigation » (voir Créer et gérer des rôles [pour](user-roles.md) plus d'informations)
->- L'utilisateur doit avoir accès à l'appareil, en fonction des paramètres de groupe d'appareils (voir Créer et gérer des groupes d'appareils [pour](machine-groups.md) plus d'informations)
+> Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
+>- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Alerts Investigation » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+>- L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 

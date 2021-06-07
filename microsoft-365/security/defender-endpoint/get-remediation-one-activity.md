@@ -1,5 +1,5 @@
 ---
-title: Obtenir une activité de correction par son ID
+title: Obtenir une activité de correction par ID
 description: Renvoie des informations pour l’activité de correction spécifiée.
 keywords: api, correction, api de correction, obtenir, tâches de correction, correction par ID,
 search.product: eADQiWindows 10XVcnh
@@ -14,22 +14,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: e0f68e8a28b302f0ae1ca06a2f892fea38a219b2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c2b7afef2c090df709f9209f450d8d3aab0424bf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244442"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772148"
 ---
-# <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par son ID
+# <a name="get-one-remediation-activity-by-id"></a>Obtenir une activité de correction par ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -51,7 +52,7 @@ Renvoie des informations pour l’activité de correction spécifiée. Présente
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -75,7 +76,7 @@ nameId | String | Nom du produit associé | Microsoft Silverlight
 priorité | String | Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible) | Élevé
 productId | String | ID de produit associé | microsoft-_-silverlight
 productivityImpactRemediationType | String | Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ». | AllExposedAssets
-rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Servers », « Windows 10 » ]
+rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Serveurs », « Windows 10 » ]
 recommendedProgram | String | Programme recommandé pour la mise à niveau vers | null
 recommendedVendor | String | Fournisseur recommandé pour la mise à niveau vers | null
 recommendedVersion | String | Version recommandée pour la mise à jour/mise à niveau vers | null
@@ -86,7 +87,7 @@ requesterNotes | String | Notes (texte libre) ajoutées par le créateur pour ce
 scid | String | SCID de la recommandation de sécurité associée | null
 status | String | État de l’activité de correction (actif/terminé) | Actif
 statusLastModifiedOn | Date/heure | Date de mise à jour du champ d’état | 2021-01-12T18:54:11.5499487Z
-targetDevices | Entier long | Nombre d’appareils exposés pour qui cette correction s’applique | 43
+targetDevices | Entier long | Nombre d’appareils exposés à appliquer à cette correction | 43
 title | String | Titre de cette activité de correction | Microsoft Silverlight
 type | String | Type de correction | Update
 vendorId | String | Nom du fournisseur associé | Microsoft
