@@ -1,5 +1,5 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clients|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Applications modernes|
+|Clients|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Applications modernes|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/A|N/A|N/A|Planifié|S/O|
 |ADMINISTRATEUR AZURE ACTIVE DIRECTORY|N/A|N/A|N/A|Planifié|S/O|
@@ -13,7 +13,7 @@
 |SALLES MICROSOFT|Planifié|Planifié|N/A|N/A|N/A|
 |ADMINISTRATEUR OFFICE 365|Planifié|N/A|N/A|N/A|N/A|
 |OFFICE LENS|Planifié|Planifié|N/A|N/A|N/A|
-|OFFICE MOBILE|Planifié|Planifié|N/A|N/A|N/A|
+|OFFICE MOBILE|✔|Planifié|N/A|N/A|N/A|
 |OFFICE.COM|N/A|N/A|N/A|N/A|Planifié|
 |ONEDRIVE|✔|✔|✔|✔|Planifié|
 |ONENOTE|✔|Planifié|Planifié|Planifié|Planifié|

@@ -17,26 +17,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
+description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536045"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809142"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
-Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser le Centre de conformité Microsoft 365  pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’[activité des utilisateurs et administrateurs](#audited-activities) dans Microsoft 365 :
+Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser le Centre de conformité Microsoft 365  pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’[activité des utilisateurs et administrateurs](#audited-activities) dans Microsoft 365 :
 
-- Activité utilisateur dans SharePoint Online et OneDrive Entreprise
+- Activité utilisateur dans SharePoint Online et OneDrive Entreprise
 
-- Activité utilisateur dans Exchange Online (enregistrement d’audit de boîte aux lettres Exchange) 
+- Activité utilisateur dans Exchange Online (enregistrement d’audit de boîte aux lettres Exchange) 
 
 - Activité des administrateurs dans SharePoint Online
 
-- Activité des administrateurs dans Azure Active Directory (service d’annuaire pour Microsoft 365)
+- Activité des administrateurs dans Azure Active Directory (service d’annuaire pour Microsoft 365)
 
 - Activité des administrateurs dans Exchange Online (journalisation d’audit de l’administrateur Exchange)
 
@@ -46,7 +46,7 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 
 - Activités utilisateur et administrateur dans Microsoft Teams
 
-- Activités utilisateur et administrateur dans Dynamics 365
+- Activités utilisateur et administrateur dans Dynamics 365
 
 - Activités utilisateur et administrateur dans Yammer
 
@@ -68,37 +68,37 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 
 Avant de commencer à effectuer une recherche dans le journal d’audit, veillez à lire ce qui suit.
 
-- Nous activons par défaut la recherche dans le journal d’audit pour les organisations d’entreprise Microsoft 365 et Office 365. Cela inclut les organisations disposant d’abonnements E3/G3 ou E5/G5. Pour vérifier que vous avez activé la recherche dans le journal d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
+- Nous activons par défaut la recherche dans le journal d’audit pour les organisations d’entreprise Microsoft 365 et Office 365. Cela inclut les organisations disposant d’abonnements E3/G3 ou E5/G5. Pour vérifier que vous avez activé la recherche dans le journal d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
 
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
   La valeur `True` de la propriété *UnifiedAuditLogIn élémentsenabled* indique que vous avez activé la recherche dans le journal d’audit. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Notez que les administrateurs généraux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l’organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
+- Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Notez que les administrateurs généraux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l’organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
   > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page **Autorisations** dans le Centre de sécurité et conformité, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
 
-- Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. La durée pendant laquelle un enregistrement d'audit est conservé (et consultable dans le journal d'audit) dépend de votre abonnement Office 365 ou Microsoft 365 Entreprise, et en particulier du type de licence attribuée à des utilisateurs spécifiques.
+- Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. La durée pendant laquelle un enregistrement d'audit est conservé (et consultable dans le journal d'audit) dépend de votre abonnement Office 365 ou Microsoft 365 Entreprise, et en particulier du type de licence attribuée à des utilisateurs spécifiques.
 
-  - Pour les utilisateurs titulaires d’une licence Office 365 E5 ou d’une licence Microsoft 365 E5, ou les utilisateurs disposant d’une licence complémentaire de conformité Microsoft 365 E5 Conformité ou d’une licence Microsoft 365 E5 eDiscovery et Audit, les enregistrements d’audit pour l’activité Azure Active Directory, Exchange et SharePoint sont conservés pendant un an par défaut. Les organisations peuvent également créer des stratégies de rétention du journal d’audit pour conserver les enregistrements d’audit pour les activités dans d’autres services pendant un an. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
+  - Pour les utilisateurs titulaires d’une licence Office 365 E5 ou d’une licence Microsoft 365 E5, ou les utilisateurs disposant d’une licence complémentaire de conformité Microsoft 365 E5 Conformité ou d’une licence Microsoft 365 E5 eDiscovery et Audit, les enregistrements d’audit pour l’activité Azure Active Directory, Exchange et SharePoint sont conservés pendant un an par défaut. Les organisations peuvent également créer des stratégies de rétention du journal d’audit pour conserver les enregistrements d’audit pour les activités dans d’autres services pendant un an. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
 
     > [!NOTE]
     > Si votre organisation a participé au programme d’aperçu privé pour la conservation d’un an de rapports d’audit, la durée de conservation des enregistrements d’audit générés avant la date de lancement générale de la disponibilité ne sera pas réinitialisée.
 
-  - Pour les utilisateurs auxquels toute autre licence Office 365 ou Microsoft 365 (non E5) est attribuée, les enregistrements d’audit sont conservés pendant 90 jours. Pour obtenir la liste des abonnements Office 365 et Microsoft 365 prenant en charge la journalisation d’audit unifiée, voir [la description de service du Centre de sécurité et conformité](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+  - Pour les utilisateurs auxquels toute autre licence Office 365 ou Microsoft 365 (non E5) est attribuée, les enregistrements d’audit sont conservés pendant 90 jours. Pour obtenir la liste des abonnements Office 365 et Microsoft 365 prenant en charge la journalisation d’audit unifiée, voir [la description de service du Centre de sécurité et conformité](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
     > Même lorsque l’audit de boîtes aux lettres est activé par défaut, vous remarquerez peut-être que les événements d’audit de boîtes aux lettres de certains utilisateurs sont introuvables dans les recherches du journal d’audit dans le Centre de sécurité et de conformité ou via l’API Activité de gestion Office 365. Pour plus d’informations, consultez la rubrique [Plus d’informations sur la journalisation d’audit de boîtes aux lettres](enable-mailbox-auditing.md#more-information).
 
-- Si vous souhaitez désactiver la recherche dans le journal d’audit pour votre organisation, vous pouvez exécuter la commande suivante dans une session PowerShell distante connectée à votre organisation Exchange Online :
+- Si vous souhaitez désactiver la recherche dans le journal d’audit pour votre organisation, vous pouvez exécuter la commande suivante dans une session PowerShell distante connectée à votre organisation Exchange Online :
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
   ```
 
-    Pour réactiver la recherche d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
+    Pour réactiver la recherche d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
@@ -110,28 +110,28 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Si vous voulez télécharger par programme les données du journal d’audit, nous recommandons d’utiliser l’API Activité de gestion Office 365 au lieu d’un script PowerShell. L’API Activité de gestion Office 365 est un service web REST que vous pouvez utiliser pour développer des solutions de surveillance des opérations, de la sécurité et de la conformité pour votre organisation. Pour plus d’informations, consultez [Référence de l’API d’activité de gestion d’Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+- Si vous voulez télécharger par programme les données du journal d’audit, nous recommandons d’utiliser l’API Activité de gestion Office 365 au lieu d’un script PowerShell. L’API Activité de gestion Office 365 est un service web REST que vous pouvez utiliser pour développer des solutions de surveillance des opérations, de la sécurité et de la conformité pour votre organisation. Pour plus d’informations, consultez [Référence de l’API d’activité de gestion d’Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- Après la survenue d’un événement, le renvoi de l'enregistrement de journal d’audit correspondant dans les résultats de la recherche d'un journal peut prendre jusqu’à 30 minutes, voir 24 heures. Le tableau suivant répertorie les délais en fonction des services dans Office 365.
+- Après la survenue d’un événement, le renvoi de l'enregistrement de journal d’audit correspondant dans les résultats de la recherche d'un journal peut prendre jusqu’à 30 minutes, voir 24 heures. Le tableau suivant répertorie les délais en fonction des services dans Office 365.
 
-  |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
+  |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
   |:-----|:-----:|:-----:|
   |Defender pour Office 365 et veille contre les menaces|![Coche](../media/checkmark.png)||
   |Azure Active Directory (événements de connexion utilisateur)||![Coche](../media/checkmark.png)|
   |Azure Active Directory (événements administrateur)||![Coche](../media/checkmark.png)|
   |Protection contre la perte de données|![Coche](../media/checkmark.png)||
-  |Dynamics 365 CRM||![Coche](../media/checkmark.png)|
+  |Dynamics 365 CRM||![Coche](../media/checkmark.png)|
   |eDiscovery|![Coche](../media/checkmark.png)||
-  |Exchange Online|![Coche](../media/checkmark.png)||
+  |Exchange Online|![Coche](../media/checkmark.png)||
   |Microsoft Power Automate||![Coche](../media/checkmark.png)|
   |Microsoft Project|![Coche](../media/checkmark.png)||
   |Microsoft Stream|![Coche](../media/checkmark.png)||
-  |Microsoft Teams|![Coche](../media/checkmark.png)||
-  |Power Apps||![Coche](../media/checkmark.png)|
-  |Power BI|![Coche](../media/checkmark.png)||
+  |Microsoft Teams|![Coche](../media/checkmark.png)||
+  |Power Apps||![Coche](../media/checkmark.png)|
+  |Power BI|![Coche](../media/checkmark.png)||
   |Centre de sécurité et conformité|![Coche](../media/checkmark.png)||
   |Étiquettes de confidentialité||![Coche](../media/checkmark.png)|
-  |Sharepoint Online et OneDrive Entreprise|![Coche](../media/checkmark.png)||
+  |Sharepoint Online et OneDrive Entreprise|![Coche](../media/checkmark.png)||
   |Workplace Analytics|![Coche](../media/checkmark.png)||
   |Yammer||![Coche](../media/checkmark.png)||
   |Microsoft Forms|![Coche](../media/checkmark.png)|
@@ -145,20 +145,20 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 Pour effectuer une recherche dans le journal d’audit dans Office 365, vous devez procéder comme suit. 
 
-[Étape 1 : effectuer une recherche dans le journal d’audit](#step-1-run-an-audit-log-search)
+[Étape 1 : effectuer une recherche dans le journal d’audit](#step-1-run-an-audit-log-search)
 
-[Étape 2 : consulter les résultats de la recherche](#step-2-view-the-search-results)
+[Étape 2 : consulter les résultats de la recherche](#step-2-view-the-search-results)
 
-[Étape 3 : filtrer les résultats de la recherche](#step-3-filter-the-search-results)
+[Étape 3 : filtrer les résultats de la recherche](#step-3-filter-the-search-results)
 
-[Étape 4 : exporter les résultats de la recherche dans un fichier](#step-4-export-the-search-results-to-a-file)
+[Étape 4 : exporter les résultats de la recherche dans un fichier](#step-4-export-the-search-results-to-a-file)
 
-### <a name="step-1-run-an-audit-log-search"></a>Étape 1 : effectuer une recherche dans le journal d’audit
+### <a name="step-1-run-an-audit-log-search"></a>Étape 1 : effectuer une recherche dans le journal d’audit
 
 1. Accédez à [https://protection.office.com](https://protection.office.com).
 
     > [!TIP]
-    > Utilisez une session de navigation privée (pas une session normale) pour accéder au Centre de sécurité et de conformité, car cela empêchera l'utilisation des informations d'identification avec lesquelles vous êtes actuellement connecté. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL+MAJ+P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre de navigation privée), appuyez sur CTRL+MAJ+N.
+    > Utilisez une session de navigation privée (pas une session normale) pour accéder au Centre de sécurité et de conformité, car cela empêchera l'utilisation des informations d'identification avec lesquelles vous êtes actuellement connecté. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL+MAJ+P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre de navigation privée), appuyez sur CTRL+MAJ+N.
 
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
@@ -171,26 +171,26 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
     > [!NOTE]
     > Vous devez activer la journalisation d’audit avant d’effectuer une recherche dans le journal d’audit. Si le lien **Commencer à enregistrer les activités des utilisateurs et des administrateurs** apparaît, cliquez dessus pour activer l’audit. Si ce lien n’apparaît pas, l’audit est déjà été activé pour votre organisation.
 
-4. Configurez les critères de recherche suivants : 
+4. Configurez les critères de recherche suivants : 
 
-   1. **Activités** : Cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Les activités des utilisateurs et des administrateurs sont organisées au sein de groupes d’activités liées. Vous pouvez sélectionner des activités spécifiques ou cliquer sur le nom d’un groupe d’activités pour sélectionner toutes les activités du groupe. Vous pouvez également cliquer sur une activité sélectionnée pour effacer la sélection. Une fois la recherche terminée, seules les entrées du journal d’audit correspondant aux activités sélectionnées apparaissent. La sélection de l’option **Afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités effectuées par l’utilisateur ou le groupe d’utilisateurs sélectionné.
+   1. **Activités** : Cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Les activités des utilisateurs et des administrateurs sont organisées au sein de groupes d’activités liées. Vous pouvez sélectionner des activités spécifiques ou cliquer sur le nom d’un groupe d’activités pour sélectionner toutes les activités du groupe. Vous pouvez également cliquer sur une activité sélectionnée pour effacer la sélection. Une fois la recherche terminée, seules les entrées du journal d’audit correspondant aux activités sélectionnées apparaissent. La sélection de l’option **Afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités effectuées par l’utilisateur ou le groupe d’utilisateurs sélectionné.
 
-      Plus de 100 activités utilisateur et administrateur sont enregistrées dans le journal d’audit. Cliquez sur l’onglet **Activités auditées** pour consulter les descriptions de chaque activité pour les différents services.
+      Plus de 100 activités utilisateur et administrateur sont enregistrées dans le journal d’audit. Cliquez sur l’onglet **Activités auditées** pour consulter les descriptions de chaque activité pour les différents services.
 
-   1. **Date de début** et **Date de fin** : Les sept derniers jours sont sélectionnés par défaut. Sélectionnez une plage de dates et d’heures pour afficher les événements survenus pendant cette période. La date et l’heure sont présentées dans l’heure locale. La plage de dates maximale que vous pouvez spécifier est de 90 jours. Une erreur s’affiche si la plage de dates sélectionnée est supérieure à 90 jours.
+   1. **Date de début** et **Date de fin** : Les sept derniers jours sont sélectionnés par défaut. Sélectionnez une plage de dates et d’heures pour afficher les événements survenus pendant cette période. La date et l’heure sont présentées dans l’heure locale. La plage de dates maximale que vous pouvez spécifier est de 90 jours. Une erreur s’affiche si la plage de dates sélectionnée est supérieure à 90 jours.
 
       > [!TIP]
-      > Si vous utilisez la plage de dates maximale de 90 jours, sélectionnez l’heure actuelle pour l’option **Date de début**. Dans le cas contraire, un message d’erreur indiquant que la date de début est antérieure à la date de fin apparaît. Si vous avez activé l’audit au cours des 90 derniers jours, la plage de dates maximale ne peut pas commencer avant la date à laquelle l’audit a été activé.
+      > Si vous utilisez la plage de dates maximale de 90 jours, sélectionnez l’heure actuelle pour l’option **Date de début**. Dans le cas contraire, un message d’erreur indiquant que la date de début est antérieure à la date de fin apparaît. Si vous avez activé l’audit au cours des 90 derniers jours, la plage de dates maximale ne peut pas commencer avant la date à laquelle l’audit a été activé.
 
-   1. **Utilisateurs** : Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels afficher les résultats. Les entrées du journal d’audit pour l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone apparaissent dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
+   1. **Utilisateurs** : Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels afficher les résultats. Les entrées du journal d’audit pour l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone apparaissent dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
 
-   1. **Fichier, dossier ou site** : Tapez l’entièreté ou une partie du nom d’un fichier ou d’un dossier pour rechercher les activités liées au fichier ou au dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, veillez à entre l’URL complète. Si vous ne tapez qu’une partie de l’URL, n’incluez aucun caractère spécial ou espace.
+   1. **Fichier, dossier ou site** : Tapez l’entièreté ou une partie du nom d’un fichier ou d’un dossier pour rechercher les activités liées au fichier ou au dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, veillez à entre l’URL complète. Si vous ne tapez qu’une partie de l’URL, n’incluez aucun caractère spécial ou espace.
 
       Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation.
 
       > [!TIP]
       >
-      > - Si vous recherchez toutes les activités concernant un **site**, ajoutez le symbole générique (\*) après l’URL pour renvoyer toutes les entrées de ce site ; par exemple, `"https://contoso-my.sharepoint.com/personal*"`
+      > - Si vous recherchez toutes les activités concernant un **site**, ajoutez le symbole générique (\*) après l’URL pour renvoyer toutes les entrées de ce site ; par exemple, `"https://contoso-my.sharepoint.com/personal*"`
       >
       > - Si vous recherchez toutes les activités associées à **un fichier**, ajoutez le symbole générique (\*) avant le nom de fichier pour renvoyer toutes les entrées de ce fichier, par exemple, `"*Customer_Profitability_Sample.csv"`.
 
@@ -208,26 +208,26 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
 
 - Vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités** pour afficher les entrées du journal d’audit de l’administrateur Exchange. Les événements dans ce journal d’audit affichent un nom de cmdlet (par exemple, **Set-Mailbox**) dans la colonne **Activité** des résultats. Pour plus d’informations, cliquez sur l’onglet **activités auditées** dans cette rubrique, puis sur **activités de l’administrateur Exchange**.
 
-  De même, certaines activités d’audit n’ont pas d’élément correspondant dans la liste **Activités**. Si vous connaissez le nom de l’opération correspondant à ces activités, vous pouvez effectuer une recherche sur toutes les activités, puis filtrer les résultats en entrant le nom de l’opération dans la zone pour la colonne **Activité**. Voir [Étape 3 : filtrer les résultats de recherche](#step-3-filter-the-search-results) pour plus d’informations sur le filtrage des résultats.
+  De même, certaines activités d’audit n’ont pas d’élément correspondant dans la liste **Activités**. Si vous connaissez le nom de l’opération correspondant à ces activités, vous pouvez effectuer une recherche sur toutes les activités, puis filtrer les résultats en entrant le nom de l’opération dans la zone pour la colonne **Activité**. Voir [Étape 3 : filtrer les résultats de recherche](#step-3-filter-the-search-results) pour plus d’informations sur le filtrage des résultats.
 
 - Cliquez sur **Effacer** pour effacer les critères de recherche actuels. La plage de dates reprend la valeur par défaut des sept derniers jours. Vous pouvez également cliquer sur **Effacer tout pour afficher les résultats correspondant à toutes les activités** pour annuler toutes les activités sélectionnées.
 
-- Si 5 000 résultats sont détectés, vous pouvez partir du principe que plus de 5 000 événements correspondent aux critères de recherche. Vous pouvez affiner les critères de recherche et relancer la recherche pour renvoyer moins de résultats. Vous pouvez également exporter tous les résultats de recherche en sélectionnant **Exporter les résultats** > \> **Télécharger tous les résultats**.
+- Si 5 000 résultats sont détectés, vous pouvez partir du principe que plus de 5 000 événements correspondent aux critères de recherche. Vous pouvez affiner les critères de recherche et relancer la recherche pour renvoyer moins de résultats. Vous pouvez également exporter tous les résultats de recherche en sélectionnant **Exporter les résultats** > \> **Télécharger tous les résultats**.
 
-### <a name="step-2-view-the-search-results"></a>Étape 2 : consulter les résultats de la recherche
+### <a name="step-2-view-the-search-results"></a>Étape 2 : consulter les résultats de la recherche
 
-Les résultats d’une recherche dans le journal d’audit apparaissent sous **Résultats** sur la page **Recherche dans le journal d’audit**. Comme indiqué précédemment, un maximum de 5 000 événements (les plus récents) peut s’afficher, par incréments de 150. Pour afficher davantage d’événements, vous pouvez utiliser la barre de défilement du volet **Résultats** ou appuyer sur **Maj+Fin** afin d’afficher les 150 événements suivants.
+Les résultats d’une recherche dans le journal d’audit apparaissent sous **Résultats** sur la page **Recherche dans le journal d’audit**. Comme indiqué précédemment, un maximum de 5 000 événements (les plus récents) peut s’afficher, par incréments de 150. Pour afficher davantage d’événements, vous pouvez utiliser la barre de défilement du volet **Résultats** ou appuyer sur **Maj+Fin** afin d’afficher les 150 événements suivants.
 
-Les résultats contiennent les informations suivantes sur chaque événement renvoyé par la recherche :
+Les résultats contiennent les informations suivantes sur chaque événement renvoyé par la recherche :
 
 - **Date :** Date et heure (à votre heure locale) auxquelles l’événement s’est produit.
 
-- **Adresse IP :** Adresse IP de l’appareil utilisé lors de l’enregistrement de l’activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.
+- **Adresse IP :** Adresse IP de l’appareil utilisé lors de l’enregistrement de l’activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.
 
    > [!NOTE]
   > Pour certains services, la valeur affichée dans ce champ peut être l'adresse IP d'une application sécurisée (par exemple, Office sur les applications Web) qui appelle le service au nom d'un utilisateur et non l'adresse IP de l'appareil utilisé par la personne ayant effectué l'activité. Par ailleurs, pour l’activité d’administration (ou l’activité effectuée par un compte système) pour les événements relatifs à Azure Active Directory, l’adresse IP n’est pas enregistrée et la valeur affichée dans ce champ est `null`.
 
-- **Utilisateur** : Utilisateur (ou compte de service) qui a effectué l’action ayant déclenché l’événement.
+- **Utilisateur** : Utilisateur (ou compte de service) qui a effectué l’action ayant déclenché l’événement.
 
 - **Activité :** Activité effectuée par l’utilisateur. Cette valeur correspond aux activités que vous avez sélectionnées dans la liste déroulante **Activités**. Pour un événement figurant dans le journal d’audit de l’administrateur Exchange, la valeur dans cette colonne est une cmdlet Exchange.
 
@@ -244,11 +244,11 @@ Vous pouvez afficher davantage d’informations sur un événement en cliquant s
 
 ![Cliquez sur Informations supplémentaires pour afficher les propriétés détaillées de l’enregistrement d’événement du journal d’audit](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
-### <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
+### <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
 
 Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cette fonctionnalité permet de filtrer rapidement les résultats pour un utilisateur ou une activité spécifique. Vous pouvez créer une recherche large au départ, puis filtrer rapidement les résultats pour afficher des événements spécifiques. Vous pouvez ensuite affiner les critères de recherche, puis relancer la recherche pour renvoyer un jeu de résultats plus petit et concis.
 
-Pour filtrer les résultats :
+Pour filtrer les résultats :
 
 1. Effectuez une recherche dans le journal d’audit.
 
@@ -265,20 +265,20 @@ Pour filtrer les résultats :
 > [!TIP]
 > Pour afficher des événements dans le journal d’audit de l’administrateur Exchange, tapez un **-** (tiret) dans la zone de filtre **Activité**. Cela permet d’afficher le nom des cmdlets qui figurent dans la colonne **Activité** des événements d’administrateur Exchange. Vous pouvez ensuite trier les noms de cmdlet par ordre alphabétique.
 
-### <a name="step-4-export-the-search-results-to-a-file"></a>Étape 4 : exporter les résultats de la recherche dans un fichier
+### <a name="step-4-export-the-search-results-to-a-file"></a>Étape 4 : exporter les résultats de la recherche dans un fichier
 
 Vous pouvez exporter les résultats d’une recherche dans le journal d’audit dans un fichier de valeurs séparées par des virgules (.csv) sur votre ordinateur local. Vous pouvez ouvrir ce fichier dans Microsoft Excel et utiliser des fonctionnalités telles que la recherche, le tri, le filtrage et le fractionnement d’une colonne (dont les cellules contiennent plusieurs propriétés) en plusieurs colonnes.
 
 1. Effectuez une recherche dans le journal d’audit, puis modifiez les critères de recherche jusqu’à obtenir les résultats souhaités.
 
-2. Cliquez sur **Exporter les résultats**, puis sélectionnez l’une des options suivantes :
+2. Cliquez sur **Exporter les résultats**, puis sélectionnez l’une des options suivantes :
 
-   - **Enregistrer les résultats chargés :** Choisissez cette option pour exporter uniquement les entrées affichées sous **Résultats** sur la page **Recherche dans le journal d’audit**. Le fichier .csv téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (Date, Utilisateur, Activité, Élément et Détails). Une colonne supplémentaire (nommée **Plus**) est incluse dans le fichier .csv qui contient davantage d’informations de l’entrée du journal d’audit. Comme vous exportez les mêmes résultats que ceux chargés (et visibles) sur la page **Recherche dans le journal d’audit**, 5 000 entrées au maximum sont exportées.
+   - **Enregistrer les résultats chargés :** Choisissez cette option pour exporter uniquement les entrées affichées sous **Résultats** sur la page **Recherche dans le journal d’audit**. Le fichier .csv téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (Date, Utilisateur, Activité, Élément et Détails). Une colonne supplémentaire (nommée **Plus**) est incluse dans le fichier .csv qui contient davantage d’informations de l’entrée du journal d’audit. Comme vous exportez les mêmes résultats que ceux chargés (et visibles) sur la page **Recherche dans le journal d’audit**, 5 000 entrées au maximum sont exportées.
 
-   - **Télécharger tous les résultats** : choisissez cette option pour exporter toutes les entrées du journal d’audit qui correspondent aux critères de recherche. Pour un ensemble plus vaste de résultats de recherche, choisissez cette option pour télécharger toutes les entrées du journal d’audit en plus des 5 000 résultats d’audit qui apparaissent sur la page **Recherche dans le journal d’audit**. Cette option permet de télécharger les données brutes du journal d’audit dans un fichier .csv et contient des informations supplémentaires de l’entrée du journal d’audit dans la colonne **AuditData**. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut-être plus volumineux que celui téléchargé à l’aide de l’autre option.
+   - **Télécharger tous les résultats** : choisissez cette option pour exporter toutes les entrées du journal d’audit qui correspondent aux critères de recherche. Pour un ensemble plus vaste de résultats de recherche, choisissez cette option pour télécharger toutes les entrées du journal d’audit en plus des 5 000 résultats d’audit qui apparaissent sur la page **Recherche dans le journal d’audit**. Cette option permet de télécharger les données brutes du journal d’audit dans un fichier .csv et contient des informations supplémentaires de l’entrée du journal d’audit dans la colonne **AuditData**. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut-être plus volumineux que celui téléchargé à l’aide de l’autre option.
 
      > [!IMPORTANT]
-     > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
+     > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
 
 3. Une fois que vous avez sélectionné une option d’exportation, un message apparaît en bas de la fenêtre. Il vous invite à ouvrir le fichier .csv, à l’enregistrer dans le dossier Téléchargements ou à l’enregistrer dans un dossier spécifique.
 
@@ -290,7 +290,7 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
   Après avoir fractionné la colonne **AuditData**, vous pouvez filtrer sur la colonne **Opérations** pour afficher les propriétés détaillées pour un type d’activité spécifique.
 
-- L’option **Télécharger tous les résultats** télécharge les données brutes du journal d’audit dans un fichier .csv. Les noms de colonne qui apparaissent dans ce fichier (CreationDate, UserIds, Operation, AuditData) sont différents de ceux figurant dans le fichier téléchargé si vous sélectionnez l’option **Enregistrer les résultats chargés**. Les valeurs dans les deux fichiers .csv peuvent également différer pour la même activité. Par exemple, l’activité dans la colonne **Action** du fichier .csv peut avoir une valeur différente de la version « conviviale » qui apparaît dans la colonne **Activité** sur la page Recherche dans le **journal d’audit**. Par exemple, MailboxLogin et Utilisateur connecté à la boîte aux lettres.
+- L’option **Télécharger tous les résultats** télécharge les données brutes du journal d’audit dans un fichier .csv. Les noms de colonne qui apparaissent dans ce fichier (CreationDate, UserIds, Operation, AuditData) sont différents de ceux figurant dans le fichier téléchargé si vous sélectionnez l’option **Enregistrer les résultats chargés**. Les valeurs dans les deux fichiers .csv peuvent également différer pour la même activité. Par exemple, l’activité dans la colonne **Action** du fichier .csv peut avoir une valeur différente de la version « conviviale » qui apparaît dans la colonne **Activité** sur la page Recherche dans le **journal d’audit**. Par exemple, MailboxLogin et Utilisateur connecté à la boîte aux lettres.
 
 - Lorsque vous téléchargez tous les résultats d’une requête de recherche qui contient les événements de différents services, la colonne **AuditData** du fichier .csv contient différentes propriétés selon le service dans lequel l’action a été effectuée. Par exemple, les entrées des journaux d’audit Exchange et Azure AD incluent une propriété nommée **ResultStatus** qui indique si l’action a réussi ou non. Cette propriété n’est pas incluse pour les événements dans SharePoint. De même, les événements SharePoint ont une propriété qui identifie l’URL de site pour les activités liées aux fichiers et dossiers. Pour modifier ce comportement, vous pouvez utiliser des recherches différentes pour exporter les résultats des activités d’un service.
 
@@ -366,7 +366,7 @@ Pour accéder à un tableau spécifique, cliquez sur l’un des liens suivants.
 
 :::row:::
     :::column:::
-        [Activités dans Power BI](#power-bi-activities)
+        [Activités dans Power BI](#power-bi-activities)
     :::column-end:::
     :::column:::
         [Microsoft Workplace Analytics](#workplace-analytics-activities)
@@ -443,7 +443,7 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
 |Fichier consulté|FileAccessed|Le compte d’utilisateur ou système consulte un fichier.|
-|(aucun)|FileAccessedExtended|Cet événement est lié à l’activité « Fichier consulté » (FileAccessed). Un événement FileAccessedExtended est consigné lorsque la même personne accède à un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileAccessedExtended consiste à réduire le nombre d’événements FileAccessed enregistrés lorsqu’un fichier est consulté de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileAccessed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileAccessed initial (plus important).|
+|(aucun)|FileAccessedExtended|Cet événement est lié à l’activité « Fichier consulté » (FileAccessed). Un événement FileAccessedExtended est consigné lorsque la même personne accède à un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileAccessedExtended consiste à réduire le nombre d’événements FileAccessed enregistrés lorsqu’un fichier est consulté de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileAccessed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileAccessed initial (plus important).|
 |Étiquette de rétention modifiée pour un fichier|ComplianceSettingChanged|Une étiquette de rétention a été appliquée à un document ou supprimée de celui-ci. Cet événement est déclenché lorsqu’une étiquette de rétention est appliquée manuellement ou automatiquement à un message.|
 |État de l’enregistrement modifié sur verrouillé|LockRecord|État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement verrouillé. Cela signifie que le document ne peut pas être modifié ou supprimé. Seuls les utilisateurs ayant au moins l’autorisation de collaborateur pour un site peuvent changer le statut d’enregistrement d’un document.|
 |Modifier l’état de l’enregistrement sur verrouillé|UnlockRecord|État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement déverrouillé. Cela signifie que le document peut être modifié ou supprimé. Seuls les utilisateurs ayant au moins l’autorisation de collaborateur pour un site peuvent changer le statut d’enregistrement d’un document.|
@@ -459,10 +459,10 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Extraction de fichier ignorée|FileCheckOutDiscarded|Un utilisateur ignore (ou annule) un fichier extrait. Les modifications qu’il a apportées au fichier le temps de son extraction sont ignorées et ne sont pas enregistrées dans la version du document dans la bibliothèque de documents.|
 |Fichier téléchargé|FileDownloaded|Un utilisateur télécharge un document à partir d’un site.|
 |Fichier modifié|FileModified|Le compte d’utilisateur ou système modifie le contenu ou les propriétés d’un document sur un site.|
-|(aucun)|FileModifiedExtended|Cet événement est lié à l’activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est consigné lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
+|(aucun)|FileModifiedExtended|Cet événement est lié à l’activité « Fichier modifié » (FileModified). Un événement FileModifiedExtended est consigné lorsque la même personne modifie un fichier pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements FileModifiedExtended consiste à réduire le nombre d’événements FileModified enregistrés lorsqu’un fichier est modifié de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements FileModified pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement FileModified initial (plus important).|
 |Fichier déplacé|FileMoved|Un utilisateur déplace un document de son emplacement actuel sur un site vers un nouvel emplacement.|
-|(aucun)|FilePreviewed|Un utilisateur affiche l’aperçu de fichiers sur un site SharePoint ou OneDrive Entreprise. Ces événements se produisent généralement dans des volumes élevés basés sur une activité unique, comme l’affichage d’une galerie d’images.|
-|Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention et de conservation eDiscovery aux sites et comptes OneDrive, et lors de l'application automatique d'étiquettes de rétention ou de confidentialité au contenu du site.|
+|(aucun)|FilePreviewed|Un utilisateur affiche l’aperçu de fichiers sur un site SharePoint ou OneDrive Entreprise. Ces événements se produisent généralement dans des volumes élevés basés sur une activité unique, comme l’affichage d’une galerie d’images.|
+|Requête de recherche effectuée|SearchQueryPerformed|Un compte d’utilisateur ou système effectue une recherche dans SharePoint ou OneDrive Entreprise. Certains scénarios courants dans lesquels un compte de service effectue une requête de recherche incluent l’application d’une stratégie de rétention et de conservation eDiscovery aux sites et comptes OneDrive, et lors de l'application automatique d'étiquettes de rétention ou de confidentialité au contenu du site.|
 |Recyclage de toutes les versions mineures du fichier|FileVersionsAllMinorsRecycled|L’utilisateur supprime toutes les versions mineures de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage de toutes les versions du fichier|FileVersionsAllRecycled|L’utilisateur supprime toutes les versions de l’historique des versions d’un fichier. Les versions supprimées sont déplacées vers la Corbeille du site.|
 |Recyclage d’une version du fichier|FileVersionRecycled|L’utilisateur supprime une version de l’historique des versions d’un fichier. La version supprimée est déplacée vers la Corbeille du site.|
@@ -470,40 +470,40 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |Fichier restauré|FileRestored|Un utilisateur restaure un document à partir de la Corbeille d’un site.|
 |Fichier téléchargé|FileUploaded|Un utilisateur charge un document vers un dossier sur un site.|
 |Page affichée|PageViewed|Un utilisateur affiche une page sur un site. Ceci n’inclut pas l’utilisation d’un navigateur web pour afficher les fichiers dans une bibliothèque de documents.|
-|(aucun)|PageViewedExtended|Cet événement est lié à l’activité « Page affichée » (PageViewed). Un événement PageViewedExtended est consigné lorsque la même personne affiche une page web pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements PageViewedExtended consiste à réduire le nombre d’événements PageViewed enregistrés lorsqu’une page est affichée de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements PageViewed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement PageViewed initial (plus important).|
+|(aucun)|PageViewedExtended|Cet événement est lié à l’activité « Page affichée » (PageViewed). Un événement PageViewedExtended est consigné lorsque la même personne affiche une page web pendant une période prolongée (jusqu'à 3 heures). <br/><br/> L’objectif de la journalisation des événements PageViewedExtended consiste à réduire le nombre d’événements PageViewed enregistrés lorsqu’une page est affichée de manière continue. Cela permet de réduire le bruit généré par l’enregistrement de plusieurs événements PageViewed pour ce qui est en fait l’activité d’un seul et même utilisateur et vous permettre de vous concentrer sur l’événement PageViewed initial (plus important).|
 |Affichage signalé par le client|ClientViewSignaled|Le client d’un utilisateur (comme un site web ou une application mobile) signale que la page indiquée a été consultée par l’utilisateur. Cette activité est souvent journalisée à la suite d’un événement PagePrefetched pour une page. <br/><br/>**Remarque**: les événements ClientViewSignaled étant signalés par le client, plutôt que le serveur, il est possible que l’événement ne soit pas consigné par le serveur et, par conséquent, qu’il n’apparaisse pas dans le journal d’audit. Il est également possible que les informations dans l’enregistrement d’audit ne soient pas dignes de confiance. Toutefois, comme l’identité de l’utilisateur est validée par le jeton utilisé pour créer le signal, l’identité de l’utilisateur répertoriée dans l’enregistrement d’audit correspondant est exacte. |
 |(aucun)|PagePrefetched|Le client d’un utilisateur (comme un site web ou une application mobile) demande la page indiquée afin de vous aider à améliorer les performances lorsque l’utilisateur y accède. Cet événement est enregistré pour indiquer que le contenu de la page a été remis au client de l’utilisateur. Cet événement n’indique pas si l’utilisateur a accédé à la page. <br/><br/> Lorsque le contenu de la page est affiché par le client (conformément à la requête de l’utilisateur), un événement ClientViewSignaled est généré. Tous les clients ne prennent pas en charge l’indication d’une pré-récupération ; par conséquent, certaines activités préalablement récupérées peuvent être enregistrées en tant qu’événements PageViewed.|
 ||||
 
 #### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>Forum aux questions sur les événements FileAccessed et FilePreviewed
 
-**Des activités non-utilisateur peuvent-elles déclencher des enregistrements d’audit FilePreviewed contenant un agent utilisateur tel que « OneDriveMpc-Transform_Thumbnail » ?**
+**Des activités non-utilisateur peuvent-elles déclencher des enregistrements d’audit FilePreviewed contenant un agent utilisateur tel que « OneDriveMpc-Transform_Thumbnail » ?**
 
 Nous ne connaissons pas de situations dans lesquelles les actions non-utilisateur génèrent des événements de ce type. Les actions d’utilisateur telles que l’ouverture d’une carte de profil utilisateur (en cliquant sur son nom ou son adresse e-mail dans un message dans Outlook sur le web) génèrent des événements similaires.
 
-**Les appels à OneDriveMpc-Transform_Thumbnail sont-ils toujours déclenchés intentionnellement par l’utilisateur ?**
+**Les appels à OneDriveMpc-Transform_Thumbnail sont-ils toujours déclenchés intentionnellement par l’utilisateur ?**
 
 Non. Mais des événements similaires peuvent être enregistrés suite à une récupération préalable du navigateur.
 
-**Si un événement FilePreviewed provenant d’une adresse IP enregistrée par Microsoft s’affiche, cela signifie-t-il que l’aperçu s’affiche sur l’écran de l’appareil de l’utilisateur ?**
+**Si un événement FilePreviewed provenant d’une adresse IP enregistrée par Microsoft s’affiche, cela signifie-t-il que l’aperçu s’affiche sur l’écran de l’appareil de l’utilisateur ?**
 
 Non. L’événement a peut-être été consigné suite à la récupération préalable du navigateur.
 
-**Y a-t-il des scénarios dans lesquels un utilisateur consultant un aperçu d’un document génère des événements FileAccessed ?**
+**Y a-t-il des scénarios dans lesquels un utilisateur consultant un aperçu d’un document génère des événements FileAccessed ?**
 
 Les événements FilePreviewed et FileAccessed indiquent que l’appel d’un utilisateur a provoqué une lecture du fichier (ou une lecture d’un rendu miniature de celui-ci). Bien que ces événements soient conçus pour s’aligner sur les intentions d’aperçu ou d’accès, la distinction entre les événements ne constitue pas une garantie de l’intention de l’utilisateur.
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>L’application\@sharepoint de l’utilisateur dans des enregistrements d’audit
 
-Dans les enregistrements d’audit relatives à certaines activités de fichier (et d’autres activités liées à SharePoint), vous pouvez remarquer que l’utilisateur ayant effectué l’activité (identifié dans les champs Utilisateur et UserId) est app@sharepoint. Cela indique que l' « Utilisateur » ayant effectué l’activité était une application. Dans ce cas, l’application a obtenu des autorisations dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. Ce processus d’octroi d’autorisations à une application est appelé accès par *Application SharePoint uniquement*. Cela signifie que l’authentification présentée à SharePoint pour effectuer une action a été faite par une application au lieu d’un utilisateur. C’est la raison pour laquelle l’utilisateur app@sharepoint est trouvé dans certains enregistrements d’audit. Pour obtenir plus d'informations, consultez [Accorder l’accès en utilisant l'application SharePoint uniquement](/sharepoint/dev/solution-guidance/security-apponly-azureacs).
+Dans les enregistrements d’audit relatives à certaines activités de fichier (et d’autres activités liées à SharePoint), vous pouvez remarquer que l’utilisateur ayant effectué l’activité (identifié dans les champs Utilisateur et UserId) est app@sharepoint. Cela indique que l' « Utilisateur » ayant effectué l’activité était une application. Dans ce cas, l’application a obtenu des autorisations dans SharePoint pour effectuer des actions à l’échelle de l’organisation (par exemple, effectuer une recherche de site SharePoint ou de compte OneDrive) au nom d’un utilisateur, d’un administrateur ou d’un service. Ce processus d’octroi d’autorisations à une application est appelé accès par *Application SharePoint uniquement*. Cela signifie que l’authentification présentée à SharePoint pour effectuer une action a été faite par une application au lieu d’un utilisateur. C’est la raison pour laquelle l’utilisateur app@sharepoint est trouvé dans certains enregistrements d’audit. Pour obtenir plus d'informations, consultez [Accorder l’accès en utilisant l'application SharePoint uniquement](/sharepoint/dev/solution-guidance/security-apponly-azureacs).
 
-Par exemple, app@sharepoint est souvent considéré comme l’utilisateur des événements « Requête de recherche effectuée » et « Fichier consulté ». La raison est qu’une application de votre organisation avec accès Application SharePoint uniquement effectue des requêtes de recherche et accède à des fichiers lors de l’application de stratégies de rétention à des comptes OneDrive ainsi qu'à des sites.
+Par exemple, app@sharepoint est souvent considéré comme l’utilisateur des événements « Requête de recherche effectuée » et « Fichier consulté ». La raison est qu’une application de votre organisation avec accès Application SharePoint uniquement effectue des requêtes de recherche et accède à des fichiers lors de l’application de stratégies de rétention à des comptes OneDrive ainsi qu'à des sites.
 
-Voici d'autres scénarios dans lesquels app@sharepoint peut être identifié, dans un enregistrement d'audit, en tant qu'utilisateur ayant effectué une activité :
+Voici d'autres scénarios dans lesquels app@sharepoint peut être identifié, dans un enregistrement d'audit, en tant qu'utilisateur ayant effectué une activité :
 
-- Groupes Microsoft 365. Lorsqu’un utilisateur ou un administrateur crée un nouveau groupe, des enregistrements d’audit sont générés pour établir une collection de sites, mettre à jour des listes et ajouter des membres à un groupe SharePoint. Ces tâches exécutent une application pour le compte de l’utilisateur qui a créé le groupe.
+- Groupes Microsoft 365. Lorsqu’un utilisateur ou un administrateur crée un nouveau groupe, des enregistrements d’audit sont générés pour établir une collection de sites, mettre à jour des listes et ajouter des membres à un groupe SharePoint. Ces tâches exécutent une application pour le compte de l’utilisateur qui a créé le groupe.
 
-- Microsoft Teams. À l'instar des groupes Microsoft 365, les enregistrements d'audit sont générés pour créer une collection de sites, mettre à jour des listes et ajouter des membres à un groupe SharePoint lorsqu'une équipe est créée.
+- Microsoft Teams. À l'instar des groupes Microsoft 365, les enregistrements d'audit sont générés pour créer une collection de sites, mettre à jour des listes et ajouter des membres à un groupe SharePoint lorsqu'une équipe est créée.
 
 - Fonctionnalités de conformité. Lorsqu'un administrateur implémente des fonctionnalités de conformité, comme des stratégies de rétention, des conservations eDiscovery et des étiquettes de confidentialité appliquées automatiquement.
 
@@ -515,7 +515,7 @@ Le tableau suivant décrit les activités des fichiers dans SharePoint Online et
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Dossier copié|FolderCopied|Un utilisateur copie un dossier à partir d’un site vers un autre emplacement dans SharePoint ou OneDrive Entreprise.|
+|Dossier copié|FolderCopied|Un utilisateur copie un dossier à partir d’un site vers un autre emplacement dans SharePoint ou OneDrive Entreprise.|
 |Dossier créé|FolderCreated|Un utilisateur crée un dossier sur un site.|
 |Dossier supprimé|FolderDeleted|Un utilisateur supprime un dossier d’un site.|
 |Dossier supprimé de la Corbeille|FolderDeletedFirstStageRecycleBin|Un utilisateur supprime un dossier de la Corbeille sur un site.|
@@ -567,7 +567,7 @@ Le tableau suivant décrit les activités de demande d’accès et de partage d�
 |Ajout d’un niveau d’autorisation à la collection de sites|PermissionLevelAdded|Un niveau d’autorisation a été ajouté à une collection de sites.|
 |Demande d’accès acceptée|AccessRequestAccepted|Une demande d’accès à un site, un dossier ou un document a été acceptée et l’utilisateur à l’origine de la demande s’est vu octroyé l’accès.|
 |Invitation de partage acceptée|SharingInvitationAccepted|L’utilisateur (membre ou invité) a accepté une invitation de partage et s’est vu octroyer l’accès à une ressource. Cet événement inclut des informations sur l’utilisateur invité et l’adresse de messagerie utilisée pour accepter l’invitation (ils peuvent être différents). Cette activité est souvent accompagnée d’un deuxième événement qui décrit la manière dont l’utilisateur s’est vu octroyer l’accès à la ressource (par exemple, en ajoutant l’utilisateur à un groupe ayant accès à la ressource).|
-|Invitation de partage bloquée|SharingInvitationBlocked|Une invitation de partage envoyée par un utilisateur de votre organisation est bloquée par une stratégie de partage externe qui autorise ou refuse le partage externe en fonction du domaine de l’utilisateur cible. Dans ce cas, l’invitation de partage a été bloquée car : <br/> Le domaine de l’utilisateur cible n’est pas inclus dans la liste des domaines autorisés. <br/> Ou <br/> Le domaine de l’utilisateur cible est inclus dans la liste des domaines bloqués. <br/> Pour plus d’informations sur l’autorisation ou le blocage du partage externe en fonction des domaines, voir [Restreindre le partage des domaines dans SharePoint Online et OneDrive Entreprise](/sharepoint/restricted-domains-sharing).|
+|Invitation de partage bloquée|SharingInvitationBlocked|Une invitation de partage envoyée par un utilisateur de votre organisation est bloquée par une stratégie de partage externe qui autorise ou refuse le partage externe en fonction du domaine de l’utilisateur cible. Dans ce cas, l’invitation de partage a été bloquée car : <br/> Le domaine de l’utilisateur cible n’est pas inclus dans la liste des domaines autorisés. <br/> Ou <br/> Le domaine de l’utilisateur cible est inclus dans la liste des domaines bloqués. <br/> Pour plus d’informations sur l’autorisation ou le blocage du partage externe en fonction des domaines, voir [Restreindre le partage des domaines dans SharePoint Online et OneDrive Entreprise](/sharepoint/restricted-domains-sharing).|
 |Demande d’accès créée|AccessRequestCreated|Un utilisateur demande l’accès à un site, un dossier ou un document auquel il n’est pas autorisé à accéder.|
 |Création d’un lien d’entreprise partageable |CompanyLinkCreated|L’utilisateur a créé un lien à l’échelle de l’entreprise vers une ressource. Les liens à l’échelle de l’entreprise ne peuvent être utilisés que par les membres de votre organisation. Ils ne peuvent pas être utilisés par les invités.|
 |Création d’un lien anonyme|AnonymousLinkCreated|L’utilisateur a créé un lien anonyme vers une ressource. Toute personne disposant de ce lien peut accéder à la ressource sans être authentifiée.|
@@ -596,8 +596,8 @@ Le tableau suivant décrit les activités de synchronisation dans SharePoint Onl
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Ordinateur autorisé à synchroniser des fichiers|ManagedSyncClientAllowed|L’utilisateur a réussi à établir une relation de synchronisation avec un site. La relation de synchronisation est établie, car l’ordinateur de l’utilisateur est membre d’un domaine qui a été ajouté à la liste de domaines (*liste des destinataires approuvés*) qui peuvent accéder aux bibliothèques de documents dans votre organisation. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
-|Ordinateur non autorisé à synchroniser des fichiers|UnmanagedSyncClientBlocked|L’utilisateur tente d’établir une relation de synchronisation avec un site à partir d’un ordinateur qui n’est pas membre du domaine de votre organisation ou qui est membre d’un domaine qui n’a pas été ajouté à la liste de domaines (*liste des destinataires approuvés)* qui peut accéder aux bibliothèques de documents dans votre organisation. La relation de synchronisation n’est pas autorisée et l’ordinateur de l’utilisateur est bloqué en matière de synchronisation, de téléchargement ou de chargement de fichiers dans une bibliothèque de documents. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
+|Ordinateur autorisé à synchroniser des fichiers|ManagedSyncClientAllowed|L’utilisateur a réussi à établir une relation de synchronisation avec un site. La relation de synchronisation est établie, car l’ordinateur de l’utilisateur est membre d’un domaine qui a été ajouté à la liste de domaines (*liste des destinataires approuvés*) qui peuvent accéder aux bibliothèques de documents dans votre organisation. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
+|Ordinateur non autorisé à synchroniser des fichiers|UnmanagedSyncClientBlocked|L’utilisateur tente d’établir une relation de synchronisation avec un site à partir d’un ordinateur qui n’est pas membre du domaine de votre organisation ou qui est membre d’un domaine qui n’a pas été ajouté à la liste de domaines (*liste des destinataires approuvés)* qui peut accéder aux bibliothèques de documents dans votre organisation. La relation de synchronisation n’est pas autorisée et l’ordinateur de l’utilisateur est bloqué en matière de synchronisation, de téléchargement ou de chargement de fichiers dans une bibliothèque de documents. <br/><br/> Pour plus d’informations sur cette fonctionnalité, reportez-vous à l’article [Utilisation des cmdlet Windows PowerShell pour activer la synchronisation de OneDrive pour les domaines figurant dans la liste des destinataires approuvés](/powershell/module/sharepoint-online/).|
 |Fichiers téléchargés sur l’ordinateur|FileSyncDownloadedFull|Un utilisateur établit une relation de synchronisation et télécharge des fichiers pour la première fois sur son ordinateur à partir d’une bibliothèque de documents.|
 |Modifications du fichier téléchargées sur l’ordinateur|FileSyncDownloadedPartial|L’utilisateur télécharge les modifications apportées aux fichiers à partir d’une bibliothèque de documents. Cette activité indique que les modifications apportées à des fichiers dans la bibliothèque de documents ont été téléchargées sur l’ordinateur de l’utilisateur. Seules les modifications ont été téléchargées, car la bibliothèque de documents a été téléchargée précédemment par l’utilisateur (comme indiqué par l’activité **Fichiers téléchargés sur l’ordinateur**).|
 |Fichiers téléchargés dans la bibliothèque de documents|FileSyncUploadedFull|Un utilisateur établit une relation de synchronisation et charge des fichiers pour la première fois à partir de son ordinateur dans une bibliothèque de documents.|
@@ -614,7 +614,7 @@ Le tableau suivant répertorie les événements liés à l’attribution d’aut
 |Utilisateur ou groupe ajouté au groupe SharePoint|AddedToGroup|L’utilisateur a ajouté un membre ou un invité à un groupe SharePoint. Il s’agit peut-être d’une action intentionnelle ou du résultat d’une autre activité (par exemple, événement de partage).|
 |Fin de l’héritage des niveaux d’autorisation|PermissionLevelsInheritanceBroken|Un élément a été modifié afin qu’il n’hérite plus des niveaux d’autorisation de son parent.|
 |Fin de l’héritage de partage|SharingInheritanceBroken|Un élément a été modifié afin qu’il n’hérite plus des autorisations de partage de son parent.|
-|Groupe créé|GroupAdded|L'administrateur ou le propriétaire du site crée un groupe pour un site ou effectue une tâche qui entraîne la création d'un groupe. Par exemple, la première fois qu'un utilisateur crée un lien pour partager un fichier, un groupe système est ajouté au site OneDrive Entreprise de l'utilisateur. Cet événement peut également venir d'un utilisateur créant un lien avec des autorisations de modification vers un fichier partagé.|
+|Groupe créé|GroupAdded|L'administrateur ou le propriétaire du site crée un groupe pour un site ou effectue une tâche qui entraîne la création d'un groupe. Par exemple, la première fois qu'un utilisateur crée un lien pour partager un fichier, un groupe système est ajouté au site OneDrive Entreprise de l'utilisateur. Cet événement peut également venir d'un utilisateur créant un lien avec des autorisations de modification vers un fichier partagé.|
 |Groupe supprimé|GroupRemoved|Un utilisateur supprime un groupe d’un site.|
 |Paramètre de demande d’accès modifié|WebRequestAccessModified|Les paramètres de demande d’accès ont été modifiés sur un site.|
 |Paramètre «les membres peuvent partagés» modifié|WebMembersCanShareModified|Le paramètre **les membres peuvent partager** a été modifié sur un site.|
@@ -639,19 +639,19 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 |Ajout d’un administrateur d’emplacement géographique|GeoAdminAdded|Un administrateur SharePoint ou général a ajouté un utilisateur en tant qu’administrateur géo d’un emplacement.|
 |Utilisateur autorisé à créer des groupes|AllowGroupCreationSet|Un administrateur ou propriétaire de site ajoute un niveau d’autorisation à un site qui permet à un utilisateur auquel cette autorisation est octroyée de créer un groupe pour ce site.|
 |Annulation du géodéplacement d’un site|SiteGeoMoveCancelled|Un administrateur SharePoint ou global annule correctement un déplacement géospatial de site SharePoint ou OneDrive. La fonctionnalité Multigéographie permet à une organisation de couvrir plusieurs géographies de centre de données Microsoft (appelées géos). Pour plus d’informations, voir [Fonctionnalités multigéographiques de OneDrive et SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
-|Modification d’une stratégie de partage|SharingPolicyChanged|Un administrateur SharePoint ou général a modifié une stratégie de partage SharePoint à l’aide du portail d’administration de Microsoft 365, du portail d’administration SharePoint ou de SharePoint Online Management Shell. Les modifications apportées aux paramètres de la stratégie de partage de votre organisation sont enregistrées. La stratégie modifiée est identifiée dans le champ **ModifiedProperties** des propriétés détaillées de l’enregistrement d’événement.|
-|Modification de la stratégie d’accès aux appareils|DeviceAccessPolicyChanged|Un administrateur SharePoint ou général a modifié la stratégie relative aux appareils non gérés de votre organisation. Cette stratégie contrôle l’accès à SharePoint, OneDrive et Microsoft 365 sur les appareils qui ne sont pas associés à votre organisation. La configuration de cette stratégie nécessite un abonnement Enterprise Mobility + Security. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices).|
+|Modification d’une stratégie de partage|SharingPolicyChanged|Un administrateur SharePoint ou général a modifié une stratégie de partage SharePoint à l’aide du portail d’administration de Microsoft 365, du portail d’administration SharePoint ou de SharePoint Online Management Shell. Les modifications apportées aux paramètres de la stratégie de partage de votre organisation sont enregistrées. La stratégie modifiée est identifiée dans le champ **ModifiedProperties** des propriétés détaillées de l’enregistrement d’événement.|
+|Modification de la stratégie d’accès aux appareils|DeviceAccessPolicyChanged|Un administrateur SharePoint ou général a modifié la stratégie relative aux appareils non gérés de votre organisation. Cette stratégie contrôle l’accès à SharePoint, OneDrive et Microsoft 365 sur les appareils qui ne sont pas associés à votre organisation. La configuration de cette stratégie nécessite un abonnement Enterprise Mobility + Security. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices).|
 |Agents utilisateurs exemptés modifiés|CustomizeExemptUsers|Un administrateur SharePoint ou général a personnalisé la liste des agents utilisateurs exemptés dans le Centre d'administration SharePoint. Vous pouvez spécifier les agents utilisateurs qui ne recevront pas de page web entière à indexer. Cela signifie que lorsqu'un agent utilisateur que vous avez spécifié comme exclus rencontre un formulaire InfoPath, le formulaire est renvoyé sous forme de fichier XML, au lieu d'une page web entière. Cela accélère l'indexation des formulaires InfoPath.|
-|Modification de la stratégie d’accès au réseau|NetworkAccessPolicyChanged|Un administrateur SharePoint ou général a modifié la stratégie d’accès basée sur l’emplacement (également appelée limite réseau approuvée) dans le Centre d’administration SharePoint ou à l’aide de SharePoint Online PowerShell. Ce type de stratégie détermine qui peut accéder aux ressources SharePoint et OneDrive de votre organisation en fonction des plages d’adresses IP autorisées que vous spécifiez. Pour plus d’informations, voir [Contrôler l’accès aux données SharePoint Online et OneDrive en fonction d’emplacements réseau définis](/sharepoint/control-access-based-on-network-location).|
-|Géodéplacement de site effectué|SiteGeoMoveCompleted|Un géodéplacement planifié par un administrateur général de votre organisation a été effectué avec succès. La fonctionnalité Multigéographie permet à une organisation de couvrir plusieurs géographies de centre de données Microsoft (appelées géos). Pour plus d’informations, voir [Fonctionnalités multigéographiques de OneDrive et SharePoint Online dans Office 365](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
+|Modification de la stratégie d’accès au réseau|NetworkAccessPolicyChanged|Un administrateur SharePoint ou général a modifié la stratégie d’accès basée sur l’emplacement (également appelée limite réseau approuvée) dans le Centre d’administration SharePoint ou à l’aide de SharePoint Online PowerShell. Ce type de stratégie détermine qui peut accéder aux ressources SharePoint et OneDrive de votre organisation en fonction des plages d’adresses IP autorisées que vous spécifiez. Pour plus d’informations, voir [Contrôler l’accès aux données SharePoint Online et OneDrive en fonction d’emplacements réseau définis](/sharepoint/control-access-based-on-network-location).|
+|Géodéplacement de site effectué|SiteGeoMoveCompleted|Un géodéplacement planifié par un administrateur général de votre organisation a été effectué avec succès. La fonctionnalité Multigéographie permet à une organisation de couvrir plusieurs géographies de centre de données Microsoft (appelées géos). Pour plus d’informations, voir [Fonctionnalités multigéographiques de OneDrive et SharePoint Online dans Office 365](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
 |Connexion Envoyé à créée|SendToConnectionAdded|Un administrateur SharePoint ou général crée une nouvelle connexion Envoyer à sur la page de gestion des enregistrements dans le Centre d'administration SharePoint. Une connexion Envoyer à spécifie les paramètres d'un référentiel de documents ou d'un centre d'enregistrements. Lorsque vous créez une connexion Envoyer à, un organisateur de contenu peut soumettre des documents à l'emplacement spécifié.|
 |Collection de sites créée|SiteCollectionCreated|Un administrateur SharePoint ou global crée une collection de sites dans votre organisation SharePoint Online ou un utilisateur configure son site OneDrive Entreprise.|
 |Site hub orphelin supprimé|HubSiteOrphanHubDeleted|Un administrateur SharePoint ou général a supprimé un site hub orphelin, qui est un site concentrateur qui n’a pas de sites associé. Un concentrateur orphelin est probablement dû à la suppression du site concentrateur d’origine.|
 |Connexion Envoyé à supprimée|SendToConnectionRemoved|L’administrateur SharePoint ou général supprime une connexion Envoyer à sur la page de gestion des enregistrements dans le Centre d’administration SharePoint.|
 |Site supprimé|SiteDeleted|L’administrateur de site supprime un site.|
 |Aperçu du document activé|PreviewModeEnabledSet|Un administrateur de site active l’aperçu des documents pour un site.|
-|Flux de travail hérité activé|LegacyWorkflowEnabledSet|L’administrateur de site ou le propriétaire ajoute le type de contenu Tâche de flux de travail SharePoint 2013 au site. Les administrateurs globaux peuvent également activer des flux de travail pour l’organisation entière dans le Centre d’administration SharePoint.|
-|Office à la demande activé|OfficeOnDemandSet|L'administrateur de site active Office à la demande, qui permet aux utilisateurs d'accéder à la dernière version des applications de bureau Office. Office à la demande est activé dans le Centre d'administration SharePoint et nécessite un abonnement Microsoft 365 qui comprend des applications Office complètes et installées.|
+|Flux de travail hérité activé|LegacyWorkflowEnabledSet|L’administrateur de site ou le propriétaire ajoute le type de contenu Tâche de flux de travail SharePoint 2013 au site. Les administrateurs globaux peuvent également activer des flux de travail pour l’organisation entière dans le Centre d’administration SharePoint.|
+|Office à la demande activé|OfficeOnDemandSet|L'administrateur de site active Office à la demande, qui permet aux utilisateurs d'accéder à la dernière version des applications de bureau Office. Office à la demande est activé dans le Centre d'administration SharePoint et nécessite un abonnement Microsoft 365 qui comprend des applications Office complètes et installées.|
 |Source de résultats activée pour les recherches de personnes|PeopleResultsScopeSet|Un administrateur de site crée l’origine des résultats pour les recherches de personnes pour un site.|
 |Flux RSS activés|NewsFeedEnabledSet|L'administrateur ou le propriétaire du site active les flux RSS d'un site. Les administrateurs généraux peuvent activer les flux RSS pour l'ensemble de l'organisation dans le Centre d'administration SharePoint.|
 |Site joint au site concentrateur|HubSiteJoined|Un propriétaire de site associe son site à un site concentrateur.|
@@ -659,7 +659,7 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 |Emplacement des données autorisées supprimé|AllowedDataLocationDeleted|Un administrateur SharePoint ou général a supprimé un emplacement de données autorisé dans un environnement à plusieurs emplacements géographiques.|
 |Administrateur d’emplacement géographique supprimé|GeoAdminDeleted|Un administrateur SharePoint ou général a supprimé un utilisateur en tant qu’administrateur géo d’un emplacement.|
 |Site renommé|SiteRenamed|Un administrateur ou propriétaire de site renomme un site.|
-|Planification du géodéplacement d’un site|SiteGeoMoveScheduled|Un administrateur SharePoint ou global planifie correctement un déplacement géospatial de site SharePoint ou OneDrive. La fonctionnalité Multigéographie permet à une organisation de couvrir plusieurs géographies de centre de données Microsoft (appelées géos). Pour plus d’informations, voir [Fonctionnalités multigéographiques de OneDrive et SharePoint Online dans Office 365](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
+|Planification du géodéplacement d’un site|SiteGeoMoveScheduled|Un administrateur SharePoint ou global planifie correctement un déplacement géospatial de site SharePoint ou OneDrive. La fonctionnalité Multigéographie permet à une organisation de couvrir plusieurs géographies de centre de données Microsoft (appelées géos). Pour plus d’informations, voir [Fonctionnalités multigéographiques de OneDrive et SharePoint Online dans Office 365](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
 |Site hôte défini|HostSiteSet|Un administrateur SharePoint ou général modifie le site désigné pour l’hébergement de sites personnels ou OneDrive Entreprise.|
 |Définir un quota de stockage pour un emplacement géographique|GeoQuotaAllocated|Un administrateur SharePoint ou général a configuré un quota de stockage pour un environnement à plusieurs emplacements géographiques.|
 |Site disjoint d’un site concentrateur|HubSiteUnjoined|Un propriétaire de site dissocie son site d’un site concentrateur.|
@@ -668,13 +668,13 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 
 ### <a name="exchange-mailbox-activities"></a>Activités de la boîte aux lettres Exchange
 
-Le tableau suivant répertorie les activités qui peuvent être enregistrées par la journalisation d’audit de la boîte aux lettres. Les activités de boîte aux lettres effectuées par le propriétaire de la boîte aux lettres, un utilisateur délégué ou un administrateur sont enregistrées automatiquement dans le journal d’audit pendant 90 jours au maximum. Un administrateur peut désactiver la journalisation d’audit des boîtes aux lettres pour tous les utilisateurs de votre organisation. Dans ce cas, aucune action de boîte aux lettres pour un utilisateur n’est enregistrée. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md).
+Le tableau suivant répertorie les activités qui peuvent être enregistrées par la journalisation d’audit de la boîte aux lettres. Les activités de boîte aux lettres effectuées par le propriétaire de la boîte aux lettres, un utilisateur délégué ou un administrateur sont enregistrées automatiquement dans le journal d’audit pendant 90 jours au maximum. Un administrateur peut désactiver la journalisation d’audit des boîtes aux lettres pour tous les utilisateurs de votre organisation. Dans ce cas, aucune action de boîte aux lettres pour un utilisateur n’est enregistrée. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](enable-mailbox-auditing.md).
 
  Vous pouvez également rechercher des activités de boîte aux lettres à l’aide de l’applet de commande [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) dans Exchange Online PowerShell.
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Éléments de boîte aux lettres consultés|MailItemsAccessed|Les messages sont lus ou consultés dans la boîte aux lettres. Les enregistrements d’audit pour cette activité sont déclenchés de deux manières : lorsqu’un client de courrier (par exemple, Outlook) effectue une opération de liaison sur des messages ou lorsque des protocoles de courrier (par exemple, Exchange ActiveSync ou IMAP) synchronisent des éléments dans un dossier de courrier. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. L’analyse des enregistrements d’audit pour cette activité est utile lorsque vous êtes à la recherche d'un compte de messagerie compromis. Pour plus d’informations, voir la section « Accès aux événements critiques pour des enquêtes » dans [Audits Avancés](advanced-audit.md#access-to-crucial-events-for-investigations). |
+|Éléments de boîte aux lettres consultés|MailItemsAccessed|Les messages sont lus ou consultés dans la boîte aux lettres. Les enregistrements d’audit pour cette activité sont déclenchés de deux manières : lorsqu’un client de courrier (par exemple, Outlook) effectue une opération de liaison sur des messages ou lorsque des protocoles de courrier (par exemple, Exchange ActiveSync ou IMAP) synchronisent des éléments dans un dossier de courrier. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. L’analyse des enregistrements d’audit pour cette activité est utile lorsque vous êtes à la recherche d'un compte de messagerie compromis. Pour plus d’informations, voir la section « Accès aux événements critiques pour des enquêtes » dans [Audits Avancés](advanced-audit.md#access-to-crucial-events-for-investigations). |
 |Autorisations de boîtes aux lettres de délégué ajoutées|Add-MailboxPermission|Un administrateur a attribué l’autorisation de boîte aux lettres FullAccess à un utilisateur (appelé délégué) à la boîte aux lettres d’une autre personne. L’autorisation FullAccess permet au délégué d’ouvrir la boîte aux lettres d’un autre utilisateur ainsi que de lire et de gérer le contenu de la boîte aux lettres.|
 |Utilisateur ajouté ou supprimé avec accès délégué au dossier calendrier|UpdateCalendarDelegation|Un utilisateur a été ajouté ou supprimé en tant que délégué au calendrier de la boîte aux lettres d’un autre utilisateur. La délégation de calendrier donne à une autre personne les mêmes autorisations d’organisation pour gérer le calendrier du propriétaire de la boîte aux lettres.|
 |Autorisations ajoutées au dossier|AddFolderPermissions|Une autorisation de dossier a été ajoutée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
@@ -690,7 +690,7 @@ Le tableau suivant répertorie les activités qui peuvent être enregistrées pa
 |Messages supprimés définitivement de la boîte aux lettres|HardDelete|Un courrier a été supprimé définitivement du dossier Éléments récupérables (supprimé définitivement de la boîte aux lettres).|
 |Autorisations de boîtes aux lettres de délégué supprimées|Remove-MailboxPermission|Un administrateur a supprimé l’autorisation FullAccess (qui était attribuée à un délégué) à partir de la boîte lettres d’un autre utilisateur. Une fois l’autorisation FullAccess supprimée, le délégué ne peut pas ouvrir l’autre boîte aux lettres ni accéder au contenu.|
 |Autorisations supprimées du dossier|RemoveFolderPermissions|Une autorisation de dossier a été supprimée. Les autorisations de dossier contrôlent quels utilisateurs de votre organisation peuvent accéder aux dossiers dans une boîte aux lettres et aux messages situés dans ces dossiers.|
-|Message envoyé|Envoyer|Un message a été envoyé, répondu ou transféré. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. Pour plus d’informations, voir la section « Accès aux événements critiques pour des enquêtes » dans [Audits Avancés](advanced-audit.md#access-to-crucial-events-for-investigations).|
+|Message envoyé|Envoyer|Un message a été envoyé, répondu ou transféré. Cette activité est uniquement enregistrée pour les utilisateurs disposant d’une licence Office 365 ou Microsoft 365 E5. Pour plus d’informations, voir la section « Accès aux événements critiques pour des enquêtes » dans [Audits Avancés](advanced-audit.md#access-to-crucial-events-for-investigations).|
 |Message envoyé à l’aide d’autorisations Envoyer en tant que|SendAs|Un message a été envoyé à l'aide de l'autorisation SendAs. Cela signifie qu'un autre utilisateur a envoyé le message comme s'il provenait du propriétaire de la boîte aux lettres.|
 |Message envoyé à l’aide d’autorisations Envoyer de la part de|SendOnBehalf|Un message a été envoyé à l’aide de l’autorisation SendOnBehalf. Cela signifie qu’un autre utilisateur a envoyé le message de la part du propriétaire de la boîte aux lettres. Le message indique au destinataire de la part de qui le message a été envoyé et qui a envoyé réellement le message.|
 |Règles de boîte de réception mises à jour à partir du client Outlook|UpdateInboxRules|Un propriétaire de boîte aux lettres ou un autre utilisateur ayant accès à la boîte aux lettres a modifié une règle de boîte de réception dans le client Outlook.|
@@ -710,17 +710,17 @@ Le tableau suivant répertorie les activités d’administration des utilisateur
 |:-----|:-----|:-----|
 |Utilisateur ajouté|Ajouter un utilisateur.|Un compte d’utilisateur a été créé.|
 |Licence utilisateur modifiée|Modifier une licence d’utilisateur.|La licence attribuée à un utilisateur a été modifiée. Pour identifier les licences modifiées, voir l’activité **Utilisateur mis à jour** correspondante.|
-|Mot de passe utilisateur modifié|Modifier un mot de passe d’utilisateur.|Un utilisateur modifie son mot de passe. La réinitialisation du mot de passe en libre-service doit être activée (pour tous les utilisateurs ou les utilisateurs sélectionnés) au sein de votre organisation pour permettre aux utilisateurs de réinitialiser leur mot de passe. Vous pouvez également effectuer le suivi de l’activité de réinitialisation du mot de passe en libre-service dans Azure Active Directory. Pour plus d’informations, veuillez consulter la page [Options de création de rapports pour la gestion des mots de passe Azure AD](/azure/active-directory/authentication/howto-sspr-reporting).
+|Mot de passe utilisateur modifié|Modifier un mot de passe d’utilisateur.|Un utilisateur modifie son mot de passe. La réinitialisation du mot de passe en libre-service doit être activée (pour tous les utilisateurs ou les utilisateurs sélectionnés) au sein de votre organisation pour permettre aux utilisateurs de réinitialiser leur mot de passe. Vous pouvez également effectuer le suivi de l’activité de réinitialisation du mot de passe en libre-service dans Azure Active Directory. Pour plus d’informations, veuillez consulter la page [Options de création de rapports pour la gestion des mots de passe Azure AD](/azure/active-directory/authentication/howto-sspr-reporting).
 |Utilisateur supprimé|Supprimez l’utilisateur.|Un compte d’utilisateur a été supprimé.|
 |Réinitialiser le mot de passe de l’utilisateur|Réinitialiser un mot de passe d’utilisateur.|Un administrateur réinitialise le mot de passe d’un utilisateur.|
-|Propriété définie qui force l’utilisateur à changer de mot de passe.|Définir la modification forcée d’un mot de passe d’utilisateur.|Un administrateur a défini la propriété qui force un utilisateur à modifier son mot de passe lors de sa prochaine connexion à Office 365.|
+|Propriété définie qui force l’utilisateur à changer de mot de passe.|Définir la modification forcée d’un mot de passe d’utilisateur.|Un administrateur a défini la propriété qui force un utilisateur à modifier son mot de passe lors de sa prochaine connexion à Office 365.|
 |Propriétés de licence définies|Définir des propriétés de licence.|Un administrateur modifie les propriétés d’une licence attribuée à un utilisateur.|
-|Utilisateur mis à jour|Mettre à jour un utilisateur.|Un administrateur modifie une ou plusieurs propriétés d’un compte d’utilisateur. Pour obtenir la liste des propriétés utilisateur qui peuvent être mises à jour, voir la section « Attributs de "Mettre à jour l’utilisateur" » dans [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).|
+|Utilisateur mis à jour|Mettre à jour un utilisateur.|Un administrateur modifie une ou plusieurs propriétés d’un compte d’utilisateur. Pour obtenir la liste des propriétés utilisateur qui peuvent être mises à jour, voir la section « Attributs de "Mettre à jour l’utilisateur" » dans [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).|
 ||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Activités d’administration des groupes Azure AD
 
-Le tableau suivant répertorie les activités d’administration des groupes enregistrées lorsqu’un administrateur ou un utilisateur crée ou modifie un groupe Microsoft 365 ou lorsqu’un administrateur crée ou modifie un groupe à l’aide du Centre d’administration Microsoft 365 ou du portail de gestion Azure. Pour plus d’informations sur les groupes dans Office 365, voir [afficher, créer et supprimer des groupes dans le centre d’administration Microsoft 365](../admin/create-groups/create-groups.md).
+Le tableau suivant répertorie les activités d’administration des groupes enregistrées lorsqu’un administrateur ou un utilisateur crée ou modifie un groupe Microsoft 365 ou lorsqu’un administrateur crée ou modifie un groupe à l’aide du Centre d’administration Microsoft 365 ou du portail de gestion Azure. Pour plus d’informations sur les groupes dans Office 365, voir [afficher, créer et supprimer des groupes dans le centre d’administration Microsoft 365](../admin/create-groups/create-groups.md).
 
 > [!NOTE]
 > Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
@@ -761,14 +761,14 @@ Le tableau suivant répertorie les activités d’administration des rôles Azur
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
-|Membre ajouté au rôle|Ajouter un membre à un rôle.|Un utilisateur a été ajouté à un rôle d’administrateur dans Microsoft 365.|
-|Utilisateur supprimé d’un rôle d’annuaire|Supprimer un membre d’un rôle.|Un utilisateur a été supprimé d’un rôle d’administrateur dans Microsoft 365.|
-|Définition des informations de contact d’une entreprise|Définir des informations de contact professionnel.|Les préférences de contact au niveau de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services.|
+|Membre ajouté au rôle|Ajouter un membre à un rôle.|Un utilisateur a été ajouté à un rôle d’administrateur dans Microsoft 365.|
+|Utilisateur supprimé d’un rôle d’annuaire|Supprimer un membre d’un rôle.|Un utilisateur a été supprimé d’un rôle d’administrateur dans Microsoft 365.|
+|Définition des informations de contact d’une entreprise|Définir des informations de contact professionnel.|Les préférences de contact au niveau de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Activités d’administration de l’annuaire
 
-Le tableau suivant répertorie les activités liées à l’annuaire et au domaine Azure AD journalisées quand un administrateur gère son organisation via le Centre d’administration Microsoft 365 ou le portail de gestion Azure.
+Le tableau suivant répertorie les activités liées à l’annuaire et au domaine Azure AD journalisées quand un administrateur gère son organisation via le Centre d’administration Microsoft 365 ou le portail de gestion Azure.
 
 > [!NOTE]
 > Les noms d’opération répertoriés dans la colonne **Opération** de ce tableau contiennent un point ( `.` ). Vous devez inclure le point dans le nom de l’opération si vous spécifiez l’opération dans une commande PowerShell lors de la recherche dans le journal d’audit, la création de stratégies de rétention d’audit, la création de stratégies d’alerte, ou la création d’alertes d’activité. Utilisez également des guillemets doubles (`" "`) pour contenir le nom de l’opération.
@@ -779,7 +779,7 @@ Le tableau suivant répertorie les activités liées à l’annuaire et au domai
 |Partenaire ajouté à l’annuaire|Ajouter un partenaire à une entreprise.|Un partenaire (administrateur délégué) a été ajouté à votre organisation.|
 |Domaine supprimé de l’entreprise|Supprimer un domaine d’une entreprise.|Un domaine a été supprimé de votre organisation.|
 |Partenaire supprimé de l’annuaire|Supprimer un partenaire d’une entreprise.|Un partenaire (administrateur délégué) a été supprimé de votre organisation.|
-|Définition des informations sur la société|Définir des informations d’une entreprise.|Les informations de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services Microsoft 365.|
+|Définition des informations sur la société|Définir des informations d’une entreprise.|Les informations de l’entreprise ont été mises à jour pour votre organisation. Cela inclut les adresses de messagerie pour les messages liés à un abonnement envoyés par Microsoft 365, ainsi que les notifications techniques relatives aux services Microsoft 365.|
 |Définition de l’authentification de domaine|Définir une authentification de domaine.|Le paramètre d’authentification de domaine a été modifié pour votre organisation.|
 |Paramètres de fédération mis à jour pour un domaine|Définir des paramètres de fédération sur un domaine.|Les paramètres de la fédération (partage externe) ont été modifiés pour votre organisation.|
 |Stratégie de mot de passe définie|Définir une stratégie de mot de passe.|Les contraintes de longueur et de caractères applicables aux mots de passe utilisateur ont été modifiées dans votre organisation.|
@@ -791,28 +791,28 @@ Le tableau suivant répertorie les activités liées à l’annuaire et au domai
 
 ### <a name="ediscovery-activities"></a>Activités de découverte électronique
 
-Les activités liées à la recherche de contenu et la découverte électronique effectuées dans le centre de sécurité et conformité ou via l’exécution des cmdlets PowerShell correspondantes sont enregistrées dans le journal d’audit. Cela inclut les activités suivantes :
+Les activités liées à la recherche de contenu et la découverte électronique effectuées dans le centre de sécurité et conformité ou via l’exécution des cmdlets PowerShell correspondantes sont enregistrées dans le journal d’audit. Cela inclut les activités suivantes :
 
-- création et gestion des cas de découverte électronique ;
+- création et gestion des cas de découverte électronique ;
 
-- création, démarrage et modification des recherches de contenu ;
+- création, démarrage et modification des recherches de contenu ;
 
-- exécution des actions de recherche de contenu, telles que l’aperçu, l’exportation et la suppression des résultats de recherche ;
+- exécution des actions de recherche de contenu, telles que l’aperçu, l’exportation et la suppression des résultats de recherche ;
 
-- configuration des autorisations de filtrage de la recherche de contenu ;
+- configuration des autorisations de filtrage de la recherche de contenu ;
 
 - gestion du rôle d’administrateur eDiscovery.
 
 Pour consulter la liste et une description détaillée des activités de découverte électronique enregistrées, voir [Rechercher les activités de découverte électronique dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> Une trentaine de minutes peut être nécessaire avant que les événements résultant des activités répertoriées sous l’élément **Activités de découverte électronique** et **activités Advanced eDiscovery** de la liste déroulante **Activités** s’affichent dans les résultats de la recherche. Inversement, 24 heures peuvent être nécessaires avant que les événements correspondant aux activités de l’applet de commande eDiscovery s’affichent dans les résultats de la recherche.
+> Une trentaine de minutes peut être nécessaire avant que les événements résultant des activités répertoriées sous l’élément **Activités de découverte électronique** et **activités Advanced eDiscovery** de la liste déroulante **Activités** s’affichent dans les résultats de la recherche. Inversement, 24 heures peuvent être nécessaires avant que les événements correspondant aux activités de l’applet de commande eDiscovery s’affichent dans les résultats de la recherche.
 
 ### <a name="advanced-ediscovery-activities"></a>Activités avancées eDiscovery
 
-Vous pouvez également effectuer une recherche dans le journal d’audit des activités dans Advanced eDiscovery. Pour obtenir une description de ces activités, consultez la section « activités Advanced eDiscovery » dans [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
+Vous pouvez également effectuer une recherche dans le journal d’audit des activités dans Advanced eDiscovery. Pour obtenir une description de ces activités, consultez la section « activités Advanced eDiscovery » dans [Rechercher des activités eDiscovery dans le journal d’audit](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
 
-### <a name="power-bi-activities"></a>Activités dans Power BI
+### <a name="power-bi-activities"></a>Activités dans Power BI
 
 Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power BI. Pour plus d’informations sur les activités Power BI, voir la section «activités vérifiées par Power BI» dans [utilisation de l'audit au sein de votre organisation](/power-bi/service-admin-auditing#activities-audited-by-power-bi).
 
@@ -838,7 +838,7 @@ Analyse du temps de travail explique comment les groupes collaborent au sein de 
 
 ### <a name="microsoft-teams-activities"></a>Activités dans Microsoft Teams 
 
-Vous pouvez effectuer une recherche dans le journal d’audit des activités des utilisateurs et des administrateurs dans Microsoft Teams. Teams est un espace de travail centré sur la conversation dans Office 365. Il rassemble les conversations, réunions, fichiers et notes d’une équipe dans un emplacement unique. Pour obtenir une description des activités Teams qui font l’objet d’un audit, consultez [Rechercher dans le journal d’audit des événements dans Microsoft Teams](/microsoftteams/audit-log-events#teams-activities).
+Vous pouvez effectuer une recherche dans le journal d’audit des activités des utilisateurs et des administrateurs dans Microsoft Teams. Teams est un espace de travail centré sur la conversation dans Office 365. Il rassemble les conversations, réunions, fichiers et notes d’une équipe dans un emplacement unique. Pour obtenir une description des activités Teams qui font l’objet d’un audit, consultez [Rechercher dans le journal d’audit des événements dans Microsoft Teams](/microsoftteams/audit-log-events#teams-activities).
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Activités Santé Microsoft Teams
 
@@ -864,7 +864,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 |Modification de configuration réseau|NetworkConfigurationUpdated|Un administrateur réseau ou vérifié modifie la configuration du réseau Yammer. Cela inclut la définition d’un intervalle pour l’exportation de données et l’activation de la conversation instantanée.|
 |Modification des paramètres de profil réseau|ProcessProfileFields|Un administrateur réseau ou vérifié modifie les informations qui apparaissent sur les profils de membre des utilisateurs du réseau.|
 |Modification du mode Contenu privé|SupervisorAdminToggled|Un administrateur vérifié active ou désactive le *mode contenu privé*. Ce mode permet à un administrateur d’afficher les publications dans des groupes privés et les messages privés entre utilisateurs individuels (ou groupes d’utilisateurs). Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
-|Modification de la configuration de la sécurité|NetworkSecurityConfigurationUpdated|Un administrateur vérifié met à jour la configuration de sécurité du réseau Yammer. Cela inclut la définition des stratégies d’expiration de mot de passe et les restrictions d’adresses IP. Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
+|Modification de la configuration de la sécurité|NetworkSecurityConfigurationUpdated|Un administrateur vérifié met à jour la configuration de sécurité du réseau Yammer. Cela inclut la définition des stratégies d’expiration de mot de passe et les restrictions d’adresses IP. Seuls les administrateurs vérifiés peuvent effectuer cette opération.|
 |Création de fichier|FileCreated|Un utilisateur charge un fichier.|
 |Groupe créé|GroupCreation|L’utilisateur crée un groupe.|
 |Groupe supprimé|GroupDeletion|Un groupe est supprimé de Yammer.|
@@ -893,7 +893,7 @@ Vous pouvez effectuer une recherche dans le journal d’audit des activités dan
 
 ### <a name="content-explorer-activities"></a>Activités de l’Explorateur de contenu
 
-Le tableau suivant répertorie les activités de l’Explorateur de contenu qui sont enregistrées dans le journal d’audit. Explorateur de contenu, accessible sur l’outil classifications de données, dans le Centre de conformité Microsoft 365. Pour plus d’informations, voir [Utilisation de l’Explorateur de contenu](data-classification-content-explorer.md).
+Le tableau suivant répertorie les activités de l’Explorateur de contenu qui sont enregistrées dans le journal d’audit. Explorateur de contenu, accessible sur l’outil classifications de données, dans le Centre de conformité Microsoft 365. Pour plus d’informations, voir [Utilisation de l’Explorateur de contenu](data-classification-content-explorer.md).
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
@@ -902,7 +902,7 @@ Le tableau suivant répertorie les activités de l’Explorateur de contenu qui 
 
 ### <a name="quarantine-activities"></a>Activités de mise en quarantaine
 
-Le tableau suivant illustre une liste d’activités que vous pouvez rechercher dans le journal d’audit. Si vous souhaitez en savoir plus sur la mise en quarantaine, consultez l’article [Mettre les e-mails en quarantaine dans Office 365](../security/office-365-security/quarantine-email-messages.md).
+Le tableau suivant illustre une liste d’activités que vous pouvez rechercher dans le journal d’audit. Si vous souhaitez en savoir plus sur la mise en quarantaine, consultez l’article [Mettre les e-mails en quarantaine dans Office 365](../security/office-365-security/quarantine-email-messages.md).
 
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
@@ -926,7 +926,7 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |:-----|:-----|:-----|
 |Commentaire créé|CreateComment|Le propriétaire du formulaire ajoute un commentaire ou une note à un questionnaire.|
 |Formulaire créé|CreateForm|Le propriétaire du formulaire crée un nouveau formulaire.|
-|Formulaire modifié|EditForm|Le propriétaire du formulaire modifie un formulaire tel que la création, la suppression ou la modification d’une question. La propriété *EditOperation:string* indique le nom de l’opération de modification. Voici les opérations possibles :<br/>– CreateQuestion<br/>– CreateQuestionChoice <br/>– DeleteQuestion <br/>– DeleteQuestionChoice <br/>– DeleteFormImage <br/>– DeleteQuestionImage <br/>– UpdateQuestion <br/>– UpdateQuestionChoice <br/>– UploadFormImage/Bing/Onedrive <br/>– UploadQuestionImage <br/>– ChangeTheme <br><br>FormImage inclut tout emplacement au sein duquel l’utilisateur peut charger une image, par exemple dans une requête ou en tant que thème d’arrière-plan.|
+|Formulaire modifié|EditForm|Le propriétaire du formulaire modifie un formulaire tel que la création, la suppression ou la modification d’une question. La propriété *EditOperation:string* indique le nom de l’opération de modification. Voici les opérations possibles :<br/>– CreateQuestion<br/>– CreateQuestionChoice <br/>– DeleteQuestion <br/>– DeleteQuestionChoice <br/>– DeleteFormImage <br/>– DeleteQuestionImage <br/>– UpdateQuestion <br/>– UpdateQuestionChoice <br/>– UploadFormImage/Bing/Onedrive <br/>– UploadQuestionImage <br/>– ChangeTheme <br><br>FormImage inclut tout emplacement au sein duquel l’utilisateur peut charger une image, par exemple dans une requête ou en tant que thème d’arrière-plan.|
 |Formulaire déplacé|MoveForm|Le propriétaire du formulaire déplace un formulaire. <br><br>La propriété DestinationUserId:string indique l'ID d'utilisateur de la personne qui a déplacé le formulaire. La propriété NewFormId:String est le nouvel ID du formulaire nouvellement copié.|
 |Formulaire supprimé|DeleteForm|Un propriétaire d’un formulaire supprime une équipe. Cela inclut SoftDelete (option de suppression utilisée et formulaire déplacé vers la corbeille) et HardDelete (corbeille vidée).|
 |Formulaire consulté (moment de la création)|ViewForm|Le propriétaire du formulaire ouvre un formulaire existant pour modification.|
@@ -941,16 +941,16 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Réponse mise à jour|UpdateResponse|Le propriétaire du formulaire a mis à jour un commentaire ou une note sur un questionnaire. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
 |Toutes les réponses supprimées|DeleteAllResponses|Le propriétaire du formulaire supprime toutes les données de réponse.|
 |Réponse supprimée|DeleteResponse|Un propriétaire d’un formulaire supprime une réponse. <br><br>La propriété ResponseId:string indique la réponse en cours de suppression.|
-|Réponses consultées|ViewResponses|Propriétaire du formulaire affiche la liste agrégée des réponses. <br><br>La propriété ViewType : String indique si le propriétaire du formulaire affiche les détails ou les agrégats|
+|Réponses consultées|ViewResponses|Propriétaire du formulaire affiche la liste agrégée des réponses. <br><br>La propriété ViewType : String indique si le propriétaire du formulaire affiche les détails ou les agrégats|
 |Réponse consultée|ViewResponse|Le propriétaire du formulaire affiche une réponse spécifique. <br><br>La propriété ResponseId:string et la propriété ResponderId:string indiquent quel résultat est affiché. <br><br>Pour un répondant anonyme, la propriété ResponderId sera null.|
 |Lien de synthèse créé|GetSummaryLink|Le propriétaire du formulaire crée un lien de résultats de synthèse pour partager les résultats.|
 |Lien de synthèse supprimé|DeleteSummaryLink|Le propriétaire du formulaire supprime le lien de synthèse des résultats.|
-|Formulaire mis à jour état d’hameçonnage|UpdatePhishingStatus|Cet événement est enregistré chaque fois que la valeur détaillée de l’état de sécurité interne est modifiée, que cela modifie l’état de sécurité final ou non (par exemple, le formulaire est désormais Fermé ou Ouvert). Cela signifie que vous pouvez rencontrer des événements en double même si l’état de sécurité final n’a pas été modifié. Voici les valeurs d’état possibles pour cet événement :<br/>– Retirer <br/>– Retirer par l’administrateur <br/>– Admin débloqué <br/>– Bloqué automatiquement <br/>– Débloqué automatiquement <br/>– Utilisateur signalé <br/>– Réinitialiser l’utilisateur signalé|
-|État de l’hameçonnage de l’utilisateur mis à jour|UpdateUserPhishingStatus|Cet événement est enregistré chaque fois que la valeur de l’état de sécurité de l’utilisateur est modifiée. La valeur de l’état de l’utilisateur dans l’enregistrement d’audit est définie sur **Confirmé comme hameçonnage** lorsque l’utilisateur créé un formulaire d’hameçonnage qui est supprimé par l’équipe de sécurité de Microsoft Online. Si un administrateur débloque l’utilisateur, la valeur de l’état de l’utilisateur est définie sur **Réinitialiser en tant qu’utilisateur normal**.|
+|Formulaire mis à jour état d’hameçonnage|UpdatePhishingStatus|Cet événement est enregistré chaque fois que la valeur détaillée de l’état de sécurité interne est modifiée, que cela modifie l’état de sécurité final ou non (par exemple, le formulaire est désormais Fermé ou Ouvert). Cela signifie que vous pouvez rencontrer des événements en double même si l’état de sécurité final n’a pas été modifié. Voici les valeurs d’état possibles pour cet événement :<br/>– Retirer <br/>– Retirer par l’administrateur <br/>– Admin débloqué <br/>– Bloqué automatiquement <br/>– Débloqué automatiquement <br/>– Utilisateur signalé <br/>– Réinitialiser l’utilisateur signalé|
+|État de l’hameçonnage de l’utilisateur mis à jour|UpdateUserPhishingStatus|Cet événement est enregistré chaque fois que la valeur de l’état de sécurité de l’utilisateur est modifiée. La valeur de l’état de l’utilisateur dans l’enregistrement d’audit est définie sur **Confirmé comme hameçonnage** lorsque l’utilisateur créé un formulaire d’hameçonnage qui est supprimé par l’équipe de sécurité de Microsoft Online. Si un administrateur débloque l’utilisateur, la valeur de l’état de l’utilisateur est définie sur **Réinitialiser en tant qu’utilisateur normal**.|
 |Invitation Forms Pro envoyée|ProInvitation|L’utilisateur clique pour activer une version d’évaluation Pro.|
 |Paramètres de formulaire mis à jour|UpdateFormSetting|Le propriétaire du formulaire met à jour un paramètre de formulaire. <br><br>La propriété FormSettingName:string indique le nom du paramètre et la nouvelle valeur.|
 |Paramètres d’utilisateur mis à jour|UpdateUserSetting|Le propriétaire du formulaire met à jour un paramètre d’utilisateur. <br><br>La propriété UserSettingName:string indique le nom et la nouvelle valeur du paramètre|
-|Formulaires répertoriés|ListForms|Le propriétaire du formulaire affiche une liste de formulaires. <br><br>La propriété ViewType:string indique l'affichage que le propriétaire du formulaire consulte : Tous les formulaires, Partagés avec moi ou les Formulaires de groupe|
+|Formulaires répertoriés|ListForms|Le propriétaire du formulaire affiche une liste de formulaires. <br><br>La propriété ViewType:string indique l'affichage que le propriétaire du formulaire consulte : Tous les formulaires, Partagés avec moi ou les Formulaires de groupe|
 |Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant fait partie de la même organisation que le propriétaire du formulaire.|
 ||||
 
@@ -1001,7 +1001,7 @@ Le tableau suivant répertorie les événements provoquant des activités d’é
 
 ### <a name="briefing-email-activities"></a>Activités de récapitulatif des tâches par courrier électronique
 
-Le tableau suivant répertorie les activités de l’e-mail de récapitulatif des tâches qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur le courrier de récapitulatif des tâches, consultez :
+Le tableau suivant répertorie les activités de l’e-mail de récapitulatif des tâches qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur le courrier de récapitulatif des tâches, consultez :
 
 - [Présentation du courrier électronique de récapitulatif des tâches](/Briefing/be-overview)
 
@@ -1015,7 +1015,7 @@ Le tableau suivant répertorie les activités de l’e-mail de récapitulatif de
 
 ### <a name="myanalytics-activities"></a>Activités MyAnalytics
 
-Le tableau suivant répertorie les activités dans MyAnalytics qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur MyAnalytics, consultez [MyAnalytics pour les administrateurs](/workplace-analytics/myanalytics/overview/mya-for-admins).
+Le tableau suivant répertorie les activités dans MyAnalytics qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur MyAnalytics, consultez [MyAnalytics pour les administrateurs](/workplace-analytics/myanalytics/overview/mya-for-admins).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:-----|:-----|:-----|
@@ -1025,7 +1025,7 @@ Le tableau suivant répertorie les activités dans MyAnalytics qui sont enregist
 
 ### <a name="information-barriers-activities"></a>Activités des obstacles aux informations
 
-Le tableau suivant répertorie les activités de les obstacles aux information qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur les obstacles à l’information, consultez [sur les obstacles aux informations dans Microsoft 365](information-barriers.md).
+Le tableau suivant répertorie les activités de les obstacles aux information qui sont enregistrées dans le journal d’audit Office 365. Pour plus d’informations sur les obstacles à l’information, consultez [sur les obstacles aux informations dans Microsoft 365](information-barriers.md).
 
 |**Nom convivial**|**Opération**|**Description**|
 |:----------------|:------------|:--------------|
@@ -1036,12 +1036,12 @@ Le tableau suivant répertorie les activités de les obstacles aux information q
 
 ### <a name="exchange-admin-audit-log"></a>Journal d’audit de l’administrateur Exchange
 
-La journalisation d’audit de l’administrateur Exchange (activée par défaut dans Office 365) enregistre un événement dans le journal d’audit lorsqu’un administrateur (ou un utilisateur auquel des autorisations d’administration ont été attribuées) apporte une modification dans votre organisation Exchange. Les modifications apportées à l’aide du Centre d’administration Exchange ou en exécutant une cmdlet dans Exchange Online PowerShell sont enregistrées dans le journal d’audit de l’administrateur Exchange. Les applets de commande qui commencent par les verbes **Get-**, **Search-** ou **Test-** ne sont pas enregistrées dans le journal d’audit. Pour plus d’informations sur la journalisation d’audit de l’administrateur dans Exchange, voir [Journalisation d’audit de l’administrateur](/exchange/administrator-audit-logging-exchange-2013-help).
+La journalisation d’audit de l’administrateur Exchange (activée par défaut dans Office 365) enregistre un événement dans le journal d’audit lorsqu’un administrateur (ou un utilisateur auquel des autorisations d’administration ont été attribuées) apporte une modification dans votre organisation Exchange. Les modifications apportées à l’aide du Centre d’administration Exchange ou en exécutant une cmdlet dans Exchange Online PowerShell sont enregistrées dans le journal d’audit de l’administrateur Exchange. Les applets de commande qui commencent par les verbes **Get-**, **Search-** ou **Test-** ne sont pas enregistrées dans le journal d’audit. Pour plus d’informations sur la journalisation d’audit de l’administrateur dans Exchange, voir [Journalisation d’audit de l’administrateur](/exchange/administrator-audit-logging-exchange-2013-help).
 
 > [!IMPORTANT]
 > Certaines cmdlets Exchange Online qui ne sont pas enregistrées dans le journal d’audit de l’administrateur Exchange (ou dans le journal d’audit). Bon nombre de ces applets de commande sont liées à la maintenance du service Exchange Online et sont exécutées par le personnel du centre de données Microsoft ou les comptes de service. Ces applets de commande ne sont pas enregistrées, car elles génèrent un grand nombre d’événements d’audit «bruyants». Si une applet de commande Exchange Online ne fait pas l’objet d’un audit, envoyez une suggestion au [forum UserVoice Sécurité et conformité](https://office365.uservoice.com/forums/289138-office-365-security-compliance) et demandez à ce qu’elle soit incluse dans l’audit. Vous pouvez également envoyer une demande de modification de conception (DCR) au support Microsoft.
 
-Voici quelques conseils pour rechercher des activités d’administrateur Exchange dans le journal d’audit :
+Voici quelques conseils pour rechercher des activités d’administrateur Exchange dans le journal d’audit :
 
 - Pour renvoyer des entrées du journal d’audit de l’administrateur Exchange, vous devez sélectionner **Afficher les résultats pour toutes les activités** dans la liste **Activités**. Utiliser les zones des plages de dates et la liste **Utilisateurs** pour limiter les résultats de recherche des cmdlets exécutées par un administrateur Exchange spécifique à une plage de dates donnée.
 
@@ -1053,7 +1053,7 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
 
 - Vous pouvez également utiliser la `Search-UnifiedAuditLog -RecordType ExchangeAdmin` commande dans Exchange Online PowerShell pour renvoyer uniquement les enregistrements d’audit du journal d’audit de l’administrateur Exchange. L’exécution de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre jusqu’à 30 minutes après l’exécution d’une applet de commande Exchange. Pour plus d’informations, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Vous pouvez également afficher les événements dans le journal d’audit de l’administrateur Exchange à l’aide du centre d’administration Exchange ou à l’aide de la fonction **Search-AdminAuditLog** dans Exchange Online PowerShell. Il s’agit d’un bon moyen de rechercher spécifiquement les activités effectuées par les administrateurs Exchange Online. Pour plus d’informations, voir :
+- Vous pouvez également afficher les événements dans le journal d’audit de l’administrateur Exchange à l’aide du centre d’administration Exchange ou à l’aide de la fonction **Search-AdminAuditLog** dans Exchange Online PowerShell. Il s’agit d’un bon moyen de rechercher spécifiquement les activités effectuées par les administrateurs Exchange Online. Pour plus d’informations, voir :
 
   - [Consulter le journal d’audit de l’administrateur](/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log)
 
@@ -1063,9 +1063,9 @@ Voici quelques conseils pour rechercher des activités d’administrateur Exchan
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
-**Quels services Microsoft 365 font actuellement l’objet d’un audit ?**
+**Quels services Microsoft 365 font actuellement l’objet d’un audit ?**
 
-Les services les plus utilisés tels que Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender pour Office 365 et Power BI font l’objet d’un audit. Pour obtenir la liste des services audités, voir le [ldébut de cet article](search-the-audit-log-in-security-and-compliance.md).
+Les services les plus utilisés tels que Exchange Online, SharePoint Online, OneDrive Entreprise, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender pour Office 365 et Power BI font l’objet d’un audit. Pour obtenir la liste des services audités, voir le [ldébut de cet article](search-the-audit-log-in-security-and-compliance.md).
 
 **Quelles activités sont auditées par le service d’audit dans Office 365 ?**
 
@@ -1073,15 +1073,15 @@ Consultez la section [Activités auditées](#audited-activities) dans cet articl
 
 **Combien de temps faut-il pour que l’enregistrement d’audit soit disponible une fois qu’un événement s’est produit ?**
 
-Après la survenue d’un événement, l’apparition de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre entre 30 minutes et 24 heures. Pour plus d’informations sur la disponibilité des événements dans les différents services, consultez le tableau dans la section [Configuration requise pour la recherche dans le journal d’audit](#requirements-to-search-the-audit-log) de cet article.
+Après la survenue d’un événement, l’apparition de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre entre 30 minutes et 24 heures. Pour plus d’informations sur la disponibilité des événements dans les différents services, consultez le tableau dans la section [Configuration requise pour la recherche dans le journal d’audit](#requirements-to-search-the-audit-log) de cet article.
 
 **Pendant combien de temps les enregistrements d’audit sont-ils conservés ?**
 
-Comme indiqué précédemment, les enregistrements d’audit pour les activités effectuées par les utilisateurs ayant reçu une licence Office 365 E5 ou Microsoft E5 (ou les utilisateurs disposant d’une licence de composant additionnel Microsoft 365 E5) sont conservés pendant un an. Pour tous les autres abonnements prenant en charge la journalisation d’audit unifiée, les enregistrements d’audit sont conservés pendant 90 jours.
+Comme indiqué précédemment, les enregistrements d’audit pour les activités effectuées par les utilisateurs ayant reçu une licence Office 365 E5 ou Microsoft E5 (ou les utilisateurs disposant d’une licence de composant additionnel Microsoft 365 E5) sont conservés pendant un an. Pour tous les autres abonnements prenant en charge la journalisation d’audit unifiée, les enregistrements d’audit sont conservés pendant 90 jours.
 
 **Puis-je accéder aux données d’audit par programme ?**
 
-Oui. L’API d’activité de gestion d’Office 365 est utilisée pour extraire les journaux d’audit par programme.  Pour commencer, consultez l’article relatif à la [prise en main des API de gestion Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
+Oui. L’API d’activité de gestion d’Office 365 est utilisée pour extraire les journaux d’audit par programme.  Pour commencer, consultez l’article relatif à la [prise en main des API de gestion Office 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 **Existe-t-il d’autres méthodes pour obtenir des journaux d’audit autres que l’utilisation du centre de sécurité et conformité ou de l’API d’activité de gestion d’Office 365 ?**
 
@@ -1091,11 +1091,11 @@ Non. Ce sont les deux seuls moyens d'obtenir les données du service d'audit.
 
 Dans la plupart des services, l’audit est activé par défaut une fois que vous avez activé l’audit pour votre organisation, comme décrit dans la section [Configuration requise pour la recherche dans le journal d’audit](#requirements-to-search-the-audit-log) dans cet article.
 
-**Le service d’audit prend-il en charge la suppression des doublons d’enregistrements ?**
+**Le service d’audit prend-il en charge la suppression des doublons d’enregistrements ?**
 
 Non. Le pipeline de service d’audit est presque en temps réel et ne peut donc pas prendre en charge la déduplication.
 
-**Les données d’audit circulent-elles entre les géographies ?**
+**Les données d’audit circulent-elles entre les géographies ?**
 
 Non. Nous avons actuellement des déploiements de pipeline d’audit dans les régions NA (Amérique du Nord), EMEA (Europe, Moyen-Orient et Afrique) et APAC (Asie-Pacifique). Toutefois, il peut arriver que nous déplacions les données entre ces régions afin d’équilibrer la charge, uniquement lors de problèmes liés aux sites actifs. Lorsque nous effectuons ces activités, les données en transit sont chiffrées.
 

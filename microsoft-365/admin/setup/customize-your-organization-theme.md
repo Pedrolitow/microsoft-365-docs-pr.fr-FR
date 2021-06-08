@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635925"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809046"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -37,9 +37,9 @@ Vous pouvez ajouter ou mettre à jour un thème par défaut qui s’applique à 
   
 ## <a name="add-or-update-your-organizations-theme"></a>Ajouter ou mettre à jour le thème de votre organisation
 
-1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis sélectionnez l’onglet Profil de \>  **l’organisation.**
+1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis choisissez l’onglet Profil de \>  **l’organisation.**
 
-2. Sous **l’onglet Profil de** l’organisation, **sélectionnez Thème Organisation.**
+2. Sous **l’onglet Profil de** l’organisation, sélectionnez **Thèmes personnalisés.**
 
 Tous les thèmes peuvent être personnalisés à l’aide des onglets suivants.
 
@@ -76,7 +76,7 @@ Vous pouvez créer jusqu’à quatre thèmes de groupe supplémentaires.
 
 3. Sélectionnez **Enregistrer**.
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Capture d’écran : onglet Général montrant le thème par défaut pour un groupe d’utilisateurs de votre organisation":::
+:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
 
 ## <a name="logos-specify-your-theme-logos"></a>Logos : spécifier vos logos de thème
 
@@ -115,7 +115,7 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 
 Le thème par défaut continuera d’être affiché pour tous les employés.L’ajout d’un nouveau thème de groupe sera uniquement mis à la disposition Microsoft 365 groupes associés à ce thème.
 
-### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Pourquoi ne vois-je pas les thèmes de groupe dans le Centre d’administration ?
+### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Pourquoi les thèmes de groupe ne s’y voient-ils pas dans le Centre d’administration ?
 
 Seuls les administrateurs généraux peuvent personnaliser les thèmes d’entreprise.Les lecteurs globaux ont un accès en lecture seule.
 
@@ -150,11 +150,11 @@ Assurez-vous que le logo que vous utilisez est spécifié en tant qu’URL adres
 
 Le coefficient de contraste recommandé entre le texte, la couleur de l’icône ou du bouton et la couleur d’arrière-plan est de 4,5:1. Vous pouvez remplacer cette recommandation et tout de même enregistrer votre thème, car ce n’est pas obligatoire.
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si je définit un thème, quels sont les endroits Microsoft 365 sera-t-il utilisé ?
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si je définit un thème, quels sont les endroits Microsoft 365 seront-ils utilisés ?
 
 Tout thème apparaît dans la barre de navigation supérieure pour tous les membres de l’organisation dans le cadre de l’en-tête Microsoft 365 suite.  
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter des vignettes personnalisées à la page Mes applications et au lanceur d’applications](../manage/customize-the-app-launcher.md) (article)\
 [Vue d’Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)

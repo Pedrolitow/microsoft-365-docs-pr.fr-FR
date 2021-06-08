@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/04/2021
-ms.openlocfilehash: a1b7891e9e397e7345eb73a94d6298a9da781d98
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.date: 06/07/2021
+ms.openlocfilehash: 33170d4706ed53f4de687c34806bb0492a08836e
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795981"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809106"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -31,7 +31,7 @@ ms.locfileid: "52795981"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
 
-Il existe deux types de mises à jour liées à la mise Antivirus Microsoft Defender jour :
+Il existe deux types de mises à jour liées au Antivirus Microsoft Defender à jour :
 
 - Mises à jour de l’intelligence de la sécurité
 - Mises à jour de produit
@@ -39,7 +39,7 @@ Il existe deux types de mises à jour liées à la mise Antivirus Microsoft Defe
 > [!IMPORTANT]
 > Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque.
 > 
-> Veillez à mettre à jour votre protection antivirus même si Antivirus Microsoft Defender est en cours d’exécution en [mode passif.](./microsoft-defender-antivirus-compatibility.md)
+> Veillez à mettre à jour votre protection antivirus même si Antivirus Microsoft Defender est en cours d’exécution [en mode passif.](./microsoft-defender-antivirus-compatibility.md)
 > 
 > Pour voir le moteur, la plateforme et la date de signature les plus à jour, consultez les mises à jour de l’intelligence de sécurité pour Antivirus Microsoft Defender logiciel [anti-programme](https://www.microsoft.com/en-us/wdsi/defenderupdates)malveillant Microsoft.
 
@@ -75,11 +75,11 @@ Pour plus d’informations, [voir Gérer les sources pour les mises à jour Anti
 
 ## <a name="monthly-platform-and-engine-versions"></a>Versions mensuelles de la plateforme et du moteur
 
-Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de plateforme, voir Mise à [jour Windows Defender plateforme anti-programme malveillant.](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform)
+Pour plus d’informations sur la mise à jour ou l’installation de la mise à jour de la plateforme, voir [Update for Windows Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 Toutes nos mises à jour contiennent 
 - améliorations des performances ;
-- améliorations en matière de serviceabilité ; et 
+- améliorations de la serviceabilité ; et 
 - améliorations de l’intégration (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/>
 <details>
@@ -108,7 +108,7 @@ Aucun problème connu
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**
     
 ### <a name="whats-new"></a>Nouveautés
-- Logique de surveillance du comportement supplémentaire
+- Logique d’analyse de comportement supplémentaire
 - Détection améliorée du keylogger en mode noyau
 
 ### <a name="known-issues"></a>Problèmes connus
@@ -379,7 +379,7 @@ Aucun problème connu
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.311.4.0**   
 &ensp;Publication : **25 février 2020**  
-&ensp;Plateforme/Client : **-**  
+&ensp;Plateforme/client : **-**  
 &ensp;Moteur : **1.1.16800.2**  
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
      
@@ -407,7 +407,7 @@ Moteur : **1.1.16700.2**
 - Prise en charge des mises à jour de plateforme lorsque le TMP est redirigé vers le chemin d’accès réseau
 - Les versions de plateforme et de moteur sont [ajoutées à WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - étendre la mise à jour des signatures d’urgence [en mode passif](./microsoft-defender-antivirus-compatibility.md)
-- Correction du hang 4.18.1911.3
+- Correction du problème de 4.18.1911.3
    
 ### <a name="known-issues"></a>Problèmes connus
 
@@ -419,7 +419,7 @@ Moteur : **1.1.16700.2**
 > - a un indicateur de redémarrage pour les systèmes qui ont des problèmes en suspension ;
 > - est re-publiée en avril 2020 et ne sera pas recalée par les mises à jour plus nouvelles pour conserver la disponibilité future ;  
 > - est classée en tant que mise à jour en raison de l’exigence de redémarrage ; et
-> - est uniquement proposé avec [la mise à jour Windows.](https://support.microsoft.com/help/4027667/windows-10-update)
+> - est uniquement proposée avec [Windows Update](https://support.microsoft.com/help/4027667/windows-10-update).
 <br/>
 </details>
 
@@ -440,7 +440,7 @@ Phase de support : **aucune prise en charge**
 - ajouter des journaux MRT pour prendre en charge les fichiers
    
 ### <a name="known-issues"></a>Problèmes connus
-Lorsque cette mise à jour est installée, l’appareil a besoin du package de saut 4.10.2001.10 pour pouvoir se mettre à jour vers la dernière version de la plateforme.
+Lorsque cette mise à jour est installée, l’appareil a besoin du package de saut 4.18.2001.10 pour pouvoir se mettre à jour vers la dernière version de la plateforme.
 <br/>
 </details>
 

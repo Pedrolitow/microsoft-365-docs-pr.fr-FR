@@ -1,5 +1,5 @@
 ---
-title: Rapports d’activité dans le Centre d’administration Microsoft 365
+title: Rapports d’activité dans le Centre d’administration Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,25 +19,25 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
-ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Obtenez un rapport régulier sur la façon dont les membres de votre organisation utilisent les services Microsoft 365 et explorez chaque graphique pour obtenir plus d'informations.
+ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530969"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52808998"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
+# <a name="microsoft-365-reports-in-the-admin-center"></a>Rapports Microsoft 365 dans le centre d'administration
 
-Vous pouvez facilement identifier la manière dont les membres de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier les personnes qui utilisent souvent un service et pour lesquelles les quotas sont atteints, ou celles qui n’ont pas véritablement besoin d’une licence Microsoft 365.
+Vous pouvez facilement identifier la manière dont les membres de votre entreprise utilisent les services Microsoft 365. Par exemple, vous pouvez identifier les personnes qui utilisent souvent un service et pour lesquelles les quotas sont atteints, ou celles qui n’ont pas véritablement besoin d’une licence Microsoft 365.
   
-Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
+Des rapports sont disponibles pour les 7, 30, 90 et 180 derniers jours. Les données ne sont pas tout de suite disponibles pour toutes les périodes couvertes par les rapports. Les rapports sont disponibles au bout de 48 heures.
   
-Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les rapports :
+## <a name="watch-act-on-a-usage-report-in-office-365"></a>Regarder : Agir sur un rapport d’utilisation dans Office 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
-## <a name="how-to-get-to-the-reports-dashboard"></a>Comment accéder au tableau de bord Rapports ?
+## <a name="how-to-get-to-the-reports-dashboard"></a>Comment accéder au tableau de bord Rapports ?
 
 ::: moniker range="o365-worldwide"
 
@@ -59,11 +59,11 @@ Visionnez cette vidéo pour une vue d’ensemble : sur la façon d'utiliser les
 
 2. Cliquez sur le bouton **Afficher plus** de la carte d’activité d’aperçu pour un service (par exemple, e-mail ou OneDrive) pour afficher la page de détails du rapport. Différents rapports pour le service sont fournis dans les onglets. <br/>![Le tableau de bord d'utilisation](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
-## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
+## <a name="who-can-see-reports"></a>Qui peut voir ces rapports ?
 
-Les personnes disposant des autorisations suivantes : 
+Les personnes disposant des autorisations suivantes : 
   
-- Administrateurs généraux : nous vous recommandons de n’attribuer ce rôle qu’à quelques personnes de votre organisation. Cela permet de limiter les risques.
+- Administrateurs généraux : nous vous recommandons de n’attribuer ce rôle qu’à quelques personnes de votre organisation. Cela permet de limiter les risques.
     
 - Administrateurs Exchange
     
@@ -81,59 +81,37 @@ Les personnes disposant des autorisations suivantes :
     
 Pour plus d'informations, voir [À propos des rôles d'administrateur](../add-users/about-admin-roles.md) et [Attribuer des rôles d'administrateur](../add-users/assign-admin-roles.md).
   
-## <a name="which-activity-reports-are-available-in-the-admin-center"></a>Quels sont les rapports d'activité disponibles dans le Centre d'administration ?
+## <a name="which-activity-reports-are-available-in-the-admin-center"></a>Quels sont les rapports d'activité disponibles dans le Centre d'administration ?
 
 En fonction de votre abonnement, les rapports suivants sont disponibles.
 
 - [Usage du navigateur Microsoft](browser-usage-report.md) 
   
 - [Activité de messagerie](email-activity-ww.md)
-
-- [Utilisation de l’e-mail pour le secteur public américain](email-activity.md)
     
 - [Utilisation des boîtes aux lettres](mailbox-usage.md)
     
 - [Activations d’Office](microsoft-office-activations-ww.md)
 
-- [Activations d’Office pour le secteur public américain](microsoft-office-activations.md)
-
 - [Utilisateurs actifs](active-users-ww.md)
-
-- [Utilisateurs actifs pour le secteur public américain](active-users.md)
   
 - [Utilisation des applications de messagerie](email-apps-usage-ww.md)
 
-- [Utilisation des applications d’e-mail pour le secteur public américain](email-apps-usage.md)
-
 - [Utilisation des formulaires](forms-activity-ww.md)
 
-- [Formulaires d'activité pour le gouvernement américain](forms-activity.md)
-
 - [Activité vocale pour le client Dynamics 365](forms-pro-activity-ww.md)
-  
-- [Activité vocale pour le gouvernement américain Dynamics 365](forms-pro-activity.md)
 
-- [Groupes Microsoft 365](office-365-groups-ww.md)
-
-- [Groupes Microsoft 365 pour le secteur public américain](office-365-groups.md)
+- [Groupes Microsoft 365](office-365-groups-ww.md)
   
 - [Activité des utilisateurs de OneDrive Entreprise](onedrive-for-business-activity-ww.md)
 
-- [Activité des utilisateurs de OneDrive Entreprise pour le gouvernement américain](onedrive-for-business-activity.md)
-
 - [Utilisation de OneDrive Entreprise](onedrive-for-business-usage-ww.md)
 
-- [Utilisation de OneDrive Entreprise pour le gouvernement américain](onedrive-for-business-usage.md)
-
-- [Utilisation de Microsoft 365 Apps](microsoft365-apps-usage-ww.md)
+- [Utilisation des applications Microsoft 365](microsoft365-apps-usage-ww.md)
   
 - [Utilisation du site SharePoint](sharepoint-site-usage-ww.md)
-
-- [Utilisation du site de SharePoint pour le gouvernement américain](sharepoint-site-usage.md)
   
 - [Activité SharePoint](sharepoint-activity-ww.md)
-
-- [Activité SharePoint pour le gouvernement américain](sharepoint-activity.md)
   
 - [Activité Skype Entreprise Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -145,23 +123,13 @@ En fonction de votre abonnement, les rapports suivants sont disponibles.
 
 - [Activité sur Yammer](yammer-activity-report-ww.md)
 
-- [Activité sur Yammer pour le gouvernement américain](yammer-activity-report.md)
-
 - [Utilisation de Yammer sur des appareils](yammer-device-usage-report-ww.md)
-
-- [Utilisation des appareils Yammer pour le gouvernement américain](yammer-device-usage-report.md)
 
 - [Rapport d’activité des groupes Yammer](yammer-groups-activity-report-ww.md)
 
-- [Rapport d’activité des groupes Yammer pour le gouvernement américain](yammer-groups-activity-report.md)
-
 - [Activité des utilisateurs de Microsoft Teams](microsoft-teams-user-activity-preview.md)
 
-- [Activité des utilisateurs de Microsoft Teams pour la communauté du secteur public des États-Unis](microsoft-teams-user-activity.md)
-
-- [Utilisation des appareils Microsoft Teams](microsoft-teams-device-usage-preview.md)
-
-- [Utilisation des appareils Microsoft Teams pour la communauté du secteur public des États-Unis](microsoft-teams-device-usage.md)
+- [Utilisation de Microsoft Teams](microsoft-teams-device-usage-preview.md)
 
 ## <a name="how-to-view-licensing-information"></a>Afficher les informations de licence
 
@@ -187,22 +155,20 @@ Si vous voulez masquer les informations concernant les utilisateurs individuels 
   
 3. Dans le volet **Rapports**, sélectionnez les options souhaitées, puis enregistrez vos modifications.
   
-Votre liste d’utilisateurs se présente comme suit :
+Votre liste d’utilisateurs se présente comme suit :
   
-![Rapports : liste d’utilisateurs rendus anonymes](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Rapports : liste d’utilisateurs rendus anonymes](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 Quelques minutes sont nécessaires pour répercuter ces modifications dans les rapports du tableau de bord Rapports. Ce paramètre s’applique également à l’API Rapports.
   
-## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
+## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>Qu’advient-il des données d’utilisation lors de la fermeture d’un compte utilisateur ?
 
-Lorsque vous fermez un compte utilisateur, Microsoft supprime les données d’utilisation de celui-ci dans un délai de 30 jours. Cet utilisateur reste inclus dans les totaux des graphiques Activité (voir numéro 1) pour les périodes pendant lesquelles il était actif, mais n’apparaît pas dans la tableau Détails utilisateur (voir numéro 2).
+Lorsque vous fermez un compte utilisateur, Microsoft supprime les données d’utilisation de celui-ci dans un délai de 30 jours. Cet utilisateur reste inclus dans les totaux des graphiques Activité (voir numéro 1) pour les périodes pendant lesquelles il était actif, mais n’apparaît pas dans la tableau Détails utilisateur (voir numéro 2).
   
-Toutefois, lorsque vous sélectionnez un jour particulier (voir numéro 3), jusqu’à 28 jours à partir de la date du jour, le rapport affiche l’utilisation de l’utilisateur pour ce jour dans la tableau Détails de l’utilisateur (voir numéro 2).
+Toutefois, lorsque vous sélectionnez un jour particulier (voir numéro 3), jusqu’à 28 jours à partir de la date du jour, le rapport affiche l’utilisation de l’utilisateur pour ce jour dans la tableau Détails de l’utilisateur (voir numéro 2).
   
 ## <a name="related-content"></a>Contenu associé
 
-[Rapports dans le Centre de conformité &amp; sécurité](../../compliance/reports-in-security-and-compliance.md) (article)
-
-[Analyse de l'utilisation de Microsoft 365](../usage-analytics/usage-analytics.md) (article)
-
-[Personnaliser les rapports dans les données d’analyse de l’utilisation Microsoft 365](../usage-analytics/customize-reports.md) (article)
+[Rapports dans le Centre de sécurité &amp; Conformité](../../compliance/reports-in-security-and-compliance.md) (article)\
+[Analyse de l'utilisation de Microsoft 365](../usage-analytics/usage-analytics.md) (article)\
+[Personnaliser les rapports dans les données d’analyse de l’utilisation Microsoft 365](../usage-analytics/customize-reports.md) (article)
