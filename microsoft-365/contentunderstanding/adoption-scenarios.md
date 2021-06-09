@@ -99,12 +99,12 @@ Lorsque vous automatisez ce scénario, vous pouvez :
 - Déverrouillez les connaissances du contenu numérique.
 - Classifier les stratégies RH, cv, documents commerciaux, plans techniques, plans de compte et extraire des informations.
 - Recherchez rapidement les informations ou le document que vous recherchez.
-- Obtenez un accès instantané aux dernières informations.
+- Accédez instantanément aux dernières informations.
 - Réduisez les temps de recherche.
 
 ## <a name="scenario-improve-data-processing-to-provide-insights-and-analytics"></a>Scénario : améliorer le traitement des données pour fournir des informations et des analyses
 
-Par exemple, une société de petite entreprise peut utiliser SharePoint Syntex pour extraire des informations de documents FDA afin de répondre aux questions de leurs responsables. Le fait d’avoir les réponses plus facilement accessibles peut réduire le temps nécessaire pour produire ces réponses et augmenter la disponibilité des données afin de générer des réponses plus précises aux questions de direction.
+Par exemple, une société de production peut utiliser SharePoint Syntex pour extraire des informations de documents FDA afin de répondre aux questions de leurs responsables. Le fait d’avoir les réponses plus facilement accessibles peut réduire le temps nécessaire pour produire ces réponses et augmenter la disponibilité des données afin de générer des réponses plus précises aux questions de direction.
 
 Par exemple, un responsable de projet doit fournir rapidement des réponses aux questions relatives aux produits de mon équipe de direction. Ils doivent trouver des informations et des mesures relatives aux requêtes dans un tableau de bord consolidé. Ils recherchent une solution qui extrait les informations dont ils ont besoin à partir d’étiquettes de produits, de publications de produits et d’autres documents, et génère un rapport consolidé qu’ils peuvent utiliser lorsqu’ils font des rapports à leur équipe de direction.
 

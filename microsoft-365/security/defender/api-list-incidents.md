@@ -46,7 +46,7 @@ L’API des incidents de liste vous permet de trier les incidents pour créer un
 
 L’API prend en charge les opérateurs **OData suivants** :
 
-- `$filter`sur `lastUpdateTime` les `createdTime` propriétés `status` , et `assignedTo`
+- `$filter` sur `lastUpdateTime` le `createdTime` , et les `status` `assignedTo` propriétés
 - `$top`, avec une valeur maximale de **100**
 - `$skip`
 
@@ -132,9 +132,9 @@ Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité 
 investigationId | ID d’examen automatisé déclenché par cette alerte. | 1234
 investigationState | Informations sur l’état actuel de l’enquête. L’une des valeurs suivantes : *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Suppressed*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyMediaigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
 classification | Spécification de l’incident. Les valeurs de propriété *sont : Unknown*, *FalsePositive*, *TruePositive* ou *null* | Inconnu
-détermination | Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* ou  *null* | Apt
+détermination | Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, SecurityPersonnel , *SecurityTesting*, *UnwantedSoftware*, *Other* ou *null*  | Apt
 assignedTo | Propriétaire de l’incident ou *null* si aucun propriétaire n’est affecté. | secop2@contoso.com
-actorName | Le groupe d’activités, le caser, le groupe associé à cette alerte. | BORON
+actorName | Le groupe d’activités, le caser, l’associé à cette alerte. | BORON
 threatFamilyName | Famille de menaces associée à cette alerte. | null
 mitreTechniques | Les techniques d’attaque, telles qu’alignées avec l’infrastructure&[CK ™ MITRE ATT.](https://attack.mitre.org/) | \[\]
 appareils | Tous les appareils sur lequel des alertes liées à l’incident ont été envoyées. | \[\] (voir les détails sur les champs d’entité ci-dessous)
@@ -168,8 +168,8 @@ processCommandLine | Disponible si entityType est *Process*. | « Votre fichier 
 processCreationTime | Disponible si entityType est *Process*. | 2020-07-18T03:25:38.5269993Z
 parentProcessId | Disponible si entityType est *Process*. | 16840
 parentProcessCreationTime | Disponible si entityType est *Process*. | 2020-07-18T02:12:32.8616797Z
-ipAddress | Disponible si entityType est *Ip*. <br>Adresse IP des alertes associées aux événements réseau, telles que la *communication vers une destination réseau malveillante.* | 62.216.203.204
-url | Disponible si entityType est *l’URL*. <br>URL des alertes associées aux événements réseau, telles que la communication vers *une destination réseau malveillante.* | down.esales360.cn
+ipAddress | Disponible si entityType est *Ip*. <br>Adresse IP des alertes associées aux événements réseau, telles que la communication vers *une destination réseau malveillante.* | 62.216.203.204
+url | Disponible si entityType est *l’URL*. <br>URL des alertes associées aux événements réseau, telles que la communication avec *une destination réseau malveillante.* | down.esales360.cn
 accountName | Disponible si entityType est *User*. | testUser2
 domainName | Disponible si entityType est *User*. | europe.corp.contoso
 userSid | Disponible si entityType est *User*. | S-1-5-21-1721254763-462695806-1538882281-4156657

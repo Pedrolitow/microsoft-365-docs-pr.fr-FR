@@ -39,8 +39,8 @@ Pour planifier des réunions avec vos employés, clients, utilisateurs externes 
 
 1. In Microsoft Teams, in the left navigation, choose **Meetings**.
 2. Choisissez **Planifier une réunion.**
-3. Dans la **zone Nouvelle réunion,** entrez un titre **et** un **emplacement** pour la réunion.
-4. Entrez une heure et **une** date **de** début et de fin.
+3. Dans la **zone Nouvelle réunion,** entrez un **titre et** un **emplacement** pour la réunion.
+4. Entrez une **heure et** **une** date de début et de fin.
 5. Dans la **zone Détails,** entrez une description de la réunion et tous les autres détails que vous souhaitez ajouter, tels qu’un ordre du jour de la réunion.
 6. Sous **Inviter des personnes,** entrez les noms des employés ou des clients que vous voulez inviter.
 7. Si vous voyez **Provisoire** ou **Occupé** sous  n’importe quel nom, choisissez l’une des heures gratuites fournies ou cliquez sur Assistant Planification **pour** plus d’options.

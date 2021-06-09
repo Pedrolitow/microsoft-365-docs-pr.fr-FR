@@ -28,9 +28,9 @@ ms.locfileid: "52730569"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtrer les données lors de l’importation de fichiers PST
 
-Utilisez la nouvelle fonctionnalité d’importation intelligente du service d’importation Microsoft 365 pour filtrer les éléments des fichiers PST qui sont réellement importés dans les boîtes aux lettres cibles. Voici le principe de fonctionnement :
+Utilisez la nouvelle fonctionnalité d’importation intelligente dans le service d’importation Microsoft 365 pour filtrer les éléments des fichiers PST réellement importés dans les boîtes aux lettres cibles. Voici le principe de fonctionnement :
   
-- Après avoir créé et soumis une tâche d’importation PST, les fichiers PST sont téléchargés vers une zone de stockage Azure dans le cloud Microsoft.
+- Une fois que vous avez créé et soumis une tâche d’importation PST, les fichiers PST sont téléchargés vers une zone de stockage Azure dans le cloud Microsoft.
   
 - Microsoft 365 analyse les données des fichiers PST, de manière sécurisée et sécurisée, en identifiant l’âge des éléments de boîte aux lettres et les différents types de messages inclus dans les fichiers PST.
   
@@ -58,7 +58,7 @@ Le graphique suivant illustre le processus d’importation intelligente et met e
     
 - Une fois que vous avez créé une tâche d’importation à l’aide du chargement réseau, l’état de la tâche d’importation sur la page d’importation dans le Centre de sécurité & conformité est définie sur **Analyse** en cours, ce qui signifie que Microsoft 365 analyse les données dans les fichiers PST que vous avez téléchargés. Cliquez **sur Actualiser** pour mettre à jour ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) l’état de la tâche d’importation. 
     
-- Pour les tâches d’importation d’expédition de disque, les données sont analysées par Microsoft 365 une fois que le personnel du centre de données Microsoft reçoit votre disque dur et télécharge les fichiers PST dans l’espace de stockage Azure de votre organisation.
+- Pour les tâches d’importation d’expédition de disque, les données sont analysées par Microsoft 365 une fois que le personnel du centre de données Microsoft a reçu votre disque dur et chargé les fichiers PST dans l’espace de stockage Azure de votre organisation.
   
 ## <a name="filter-data-that-gets-imported-to-mailboxes"></a>Filtrer les données importées dans les boîtes aux lettres
 
@@ -98,7 +98,7 @@ Une fois que vous avez créé une tâche d’importation PST, suivez ces étapes
   
     Vous pouvez configurer ces filtres :
   
-      - **Âge** : sélectionnez un âge afin que seuls les éléments plus nouveaux que l’âge spécifié soient importés. Consultez la section [Plus d’informations](#more-information) pour obtenir une description Microsoft 365 détermine les compartiments d’âge pour le **filtre Âge.** 
+      - **Âge** : sélectionnez un âge afin que seuls les éléments plus nouveaux que l’âge spécifié soient importés. Consultez la section [Plus d’informations](#more-information) pour obtenir une description de la façon Microsoft 365 les compartiments d’âge pour le **filtre Âge.** 
   
       - **Type** : cette section affiche tous les types de messages trouvés dans les fichiers PST de la tâche d’importation. Vous pouvez décocher une case en de côté d’un type de message que vous souhaitez exclure. Vous ne pouvez pas exclure le type de message Autre. Consultez la section [Plus d’informations](#more-information) pour obtenir la liste des éléments de boîte aux lettres inclus dans la catégorie Autre.
   
@@ -129,7 +129,7 @@ Une fois que vous avez créé une tâche d’importation PST, suivez ces étapes
   
 7. Cliquez sur l’importation du travail pour afficher des informations plus détaillées, telles que l’état de chaque fichier PST et les paramètres de filtre que vous avez configurés.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - Comment déterminer Microsoft 365 incréments du filtre d’âge ? Lorsque Microsoft 365 analyse un fichier PST, il examine l’horodat d’envoi ou de réception de chaque élément (si un élément possède un horodaodaté envoyé et reçu, la date la plus ancienne est sélectionnée). Ensuite, Microsoft 365 la valeur de l’année pour cet timestamp et la compare à la date actuelle pour déterminer l’âge de l’élément. Ces âges sont ensuite utilisés comme valeurs dans la liste liste de listes pour le **filtre Âge.** Par exemple, si un fichier PST a des messages de 2016, 2015  et 2014, les valeurs dans le filtre Âge sont **1 an,** **2 ans** et **3 ans**.
   
@@ -142,7 +142,7 @@ Une fois que vous avez créé une tâche d’importation PST, suivez ces étapes
     |IPM. Fichier  <br/> |(identique à IPM.Document)  <br/> |
     |IPM. Note.IMC.Notification  <br/> |Rapports envoyés par internet mail Connecter, qui est la passerelle Exchange Server internet  <br/> |
     |IPM. Note.Microsoft.Fax  <br/> |Messages de télécopie  <br/> |
-    |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Messages d’autoreply de l’out-of-office  <br/> |
+    |IPM. Note.Rules.Oof.Template.Microsoft  <br/> |Messages d’autoreply d’in-office  <br/> |
     |IPM. Note.Rules.ReplyTemplate.Microsoft  <br/> |Réponses envoyées par une règle de boîte de réception  <br/> |
     |IPM. OLE. Classe  <br/> |Exceptions pour une série périodique  <br/> |
     |IPM. Recall.Report  <br/> |Rapports de rappel de message  <br/> |

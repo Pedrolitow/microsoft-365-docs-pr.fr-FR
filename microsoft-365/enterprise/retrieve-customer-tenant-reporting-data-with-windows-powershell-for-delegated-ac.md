@@ -24,13 +24,13 @@ ms.locfileid: "50927215"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Récupération des données des rapports du locataire d’un client avec Windows PowerShell pour les partenaires avec autorisation d’accès délégué
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Utilisez les Windows PowerShell distants pour Microsoft Exchange Online récupérer des rapports à partir de clients individuels.
+Utilisez les Windows PowerShell pour Microsoft Exchange Online récupérer des rapports à partir de clients individuels.
   
-Les partenaires fournisseurs de solutions Cloud et de syndication peuvent accéder aux données qui constitue les rapports du client directement via des Windows PowerShell distants pour Exchange Online PowerShell. Cela permet aux partenaires de recueillir et d'enregistrer les données des rapports et de s'en servir pour effectuer d'autres opérations. Après avoir ouvert une connexion à distance, la récupération des données de création de rapports sur une location client est identique à l'exécution de n'importe quelle cmdlet sur la location d'un client.
+Les partenaires de syndication et de fournisseur de solutions Cloud (CSP) peuvent accéder aux données qui constitue les rapports client directement via des Windows PowerShell distants pour Exchange Online PowerShell. Cela permet aux partenaires de recueillir et d'enregistrer les données des rapports et de s'en servir pour effectuer d'autres opérations. Après avoir ouvert une connexion à distance, la récupération des données de création de rapports sur une location client est identique à l'exécution de n'importe quelle cmdlet sur la location d'un client.
   
-Dans cet article, vous utilisez la Windows PowerShell distante pour Exchange Online pour vous connecter à une location client unique et récupérer un rapport. Par défaut, Windows PowerShell ne prend pas en charge le regroupement des données des rapports à partir de plusieurs locations de clients. Les rapports que vous récupérez avec cette procédure ne sont destinés qu'aux organisations déléguées ( _DelegatedOrg_) auxquelles vous vous connectez.
+Dans cet article, vous utilisez la Windows PowerShell distante Exchange Online pour vous connecter à une location client unique et récupérer un rapport. Par défaut, Windows PowerShell ne prend pas en charge le regroupement des données des rapports à partir de plusieurs locations de clients. Les rapports que vous récupérez avec cette procédure ne sont destinés qu'aux organisations déléguées ( _DelegatedOrg_) auxquelles vous vous connectez.
   
  
 ## <a name="before-you-begin"></a>Avant de commencer

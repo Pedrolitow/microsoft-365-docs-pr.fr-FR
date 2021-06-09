@@ -62,12 +62,12 @@ Vous devez être administrateur global ou administrateur Exchange pour mettre à
 
 5. Dans la boîte de dialogue d’informations, **sélectionnez Oui** pour confirmer la mise à niveau. Le processus commence immédiatement. Selon la taille et le nombre de DLs que vous êtes en train de mettre à niveau, le processus peut prendre des minutes ou des heures.<br/>Si la liste de distribution ne peut pas être mise à niveau, une boîte de dialogue s’affiche. Voir [quelles listes de distribution ne peuvent pas être mises à niveau ?](#which-distribution-lists-cant-be-upgraded).
 
-6. Si vous êtes en train de mettre à niveau plusieurs listes de distribution, utilisez la liste de listes listes pour filtrer les listes de distribution qui ont été mises à niveau. Si la liste n’est pas terminée, patientez un peu plus longtemps, puis sélectionnez **Actualiser** pour voir ce qui a été correctement mis à niveau.<br/>Aucun avis ne vous indique à quel moment le processus de mise à niveau est terminé pour toutes les DL que vous avez sélectionnées. Vous pouvez le comprendre en cherchant à voir ce qui est répertorié sous **Disponible** pour la mise à niveau ou les **DLs mises à niveau.**
+6. Si vous êtes en train de mettre à niveau plusieurs listes de distribution, utilisez la liste de listes listes pour filtrer les listes de distribution qui ont été mises à niveau. Si la liste n’est pas terminée, patientez un peu plus longtemps, puis sélectionnez **Actualiser** pour voir ce qui a été correctement mis à niveau.<br/>Aucun avis ne vous indique à quel moment le processus de mise à niveau est terminé pour toutes les DL que vous avez sélectionnées. Vous pouvez le comprendre en cherchant à voir ce qui est répertorié sous **Disponible** pour la mise à niveau ou les **DL mises à niveau.**
 
 7. Si vous avez sélectionné une DL pour la mise à niveau, mais qu’elle apparaît toujours sur la page comme disponible pour la mise à niveau, elle n’a pas réussi à mettre à niveau. Voir [que faire si la mise à niveau ne fonctionne pas](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
-> Si vous avez reçu les e-mails de condensé de groupes, vous remarquerez peut-être en bas qu’il vous proposera parfois de mettre à niveau les listes de distribution éligibles dont vous êtes le propriétaire. Voir [Avoir une conversation de groupe dans Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) pour plus d’informations sur les e-mails digest.
+> Si vous avez reçu les e-mails de condensé de groupes, vous remarquerez peut-être en bas qu’il propose parfois de vous laisser mettre à niveau les listes de distribution éligibles dont vous êtes le propriétaire. Voir [Avoir une conversation de groupe dans Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) pour plus d’informations sur les e-mails digest.
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>Que faire si la mise à niveau ne fonctionne pas
 
@@ -75,7 +75,7 @@ Les listes de distribution qui échouent à la mise à niveau restent inchangée
 
 Si une ou plusieurs listes **de** distribution éligibles ne peuvent pas être mises à niveau, ouvrez un [ticket de support.](../../business-video/get-help-support.md) Le problème doit être recalcalé à l’équipe d’ingénierie des groupes pour qu’il en soit ainsi.
 
-Il est possible que la liste de distribution n’a pas été mise à niveau en raison d’une panne de service, mais peu probable. Si vous le souhaitez, patientez un certain temps, puis essayez de mettre à niveau la DL à nouveau.
+Il est possible que la liste de distribution n’a pas été mise à niveau en raison d’une panne de service, mais peu probable. Si vous le souhaitez, patientez un certain temps, puis réessayez de mettre à niveau la DL.
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Comment utiliser PowerShell pour mettre à niveau plusieurs listes de distribution en même temps
 
@@ -111,7 +111,7 @@ Par exemple, si vous souhaitez mettre à niveau cinq DLs avec l’adresse SMTP `
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
-### <a name="upgrade-all-eligible-dls"></a>Mettre à niveau toutes les DLs éligibles
+### <a name="upgrade-all-eligible-dls"></a>Mettre à niveau toutes les DL éligibles
 
 Il existe deux façons de mettre à niveau toutes les DL éligibles.
 
@@ -138,12 +138,12 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>Quelles listes de distribution ne peuvent pas être mises à niveau ?
 
-Vous pouvez uniquement mettre à niveau des listes de distribution gérées dans le cloud, simples et non imbrmbrées. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
+Vous pouvez uniquement mettre à niveau des listes de distribution non imbrique, simples et gérées dans le cloud. Le tableau ci-dessous répertorie les listes de distribution qui **ne peuvent** pas être mises à niveau.
 
 |**Property**|**Éligible ?**|
 |:-----|:-----|
 |Liste de distribution gérée sur site.  <br/> |Non  <br/> |
-|Listes de distribution imbrmbrées. La liste de distribution possède des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |
+|Listes de distribution imbrmbrées. La liste de distribution a des groupes enfants ou est membre d’un autre groupe.  <br/> |Non  <br/> |
 |Listes de distribution dont le **membre RecipientTypeDetails** est autre que **UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |Non  <br/> |
 |Liste de distribution avec plus de 100 propriétaires  <br/> |Non  <br/> |
 |Liste de distribution qui ne possède que des membres, mais pas de propriétaire  <br/> |Non  <br/> |
@@ -171,7 +171,7 @@ Personnes ayant des droits d’administrateur global ou Exchange’administrateu
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Pourquoi la carte de visite affiche-t-elle toujours une liste de distribution ? Que dois-je faire pour empêcher l’affichage d’une liste de distribution mise à niveau dans ma liste de suggestions automatiques ?
 
-- Par Outlook : lorsqu’une personne tente d’envoyer un courrier électronique dans Outlook en tapant le nom du groupe Microsoft 365 après la migration, le destinataire est résolu en tant que liste de distribution au lieu du groupe. La carte de visite du destinataire sera la carte de visite des listes de distribution. Cela est dû au cache de destinataires ou au cache de noms d’Outlook. L’e-mail est envoyé au groupe, mais peut être source de confusion pour l’expéditeur.<br/>Vous pouvez effectuer les étapes de cet article, Information [about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) to reset the cache, which will fix this issue.
+- Par Outlook : lorsqu’une personne tente d’envoyer un courrier électronique dans Outlook en tapant le nom du groupe Microsoft 365 après la migration, le destinataire est résolu en tant que liste de distribution au lieu du groupe. La carte de visite du destinataire sera la carte de visite des listes de distribution. Cela est dû au cache de destinataires ou au cache de noms de pseudo dans Outlook. L’e-mail est envoyé au groupe, mais peut être source de confusion pour l’expéditeur.<br/>Vous pouvez effectuer les étapes de cet article, Information [about the Outlook AutoComplete list](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) to reset the cache, which will fix this issue.
 
 - Pour Outlook sur le web : en cas de Outlook sur le web, le destinataire de la liste de distribution reste dans le cache. Vous pouvez suivre [](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) les étapes de la procédure de suppression du nom suggéré ou de l’adresse de messagerie de la liste de mise à jour automatique pour actualiser le cache et voir la carte de visite du groupe.
 
@@ -181,7 +181,7 @@ Non. Le paramètre permettant d’activer les messages d’accueil est false par
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Que se passe-t-il si une ou certaines DL ne sont pas mises à niveau ?
 
-Dans certains cas, la DL est éligible mais n’a pas pu être mise à niveau. La DL n’est pas mise à niveau et reste en tant que DL.
+Dans certains cas, la DL est éligible, mais n’a pas pu être mise à niveau. La DL n’est pas mise à niveau et reste en tant que DL.
 
 - Lorsque l’administrateur a appliqué la stratégie d’adresse de messagerie de groupe pour les groupes d’une organisation et qu’il essaie de mettre à niveau les DL qui ne remplissent pas les critères, la DL n’est pas mise à niveau 
 

@@ -67,10 +67,10 @@ lastUpdateTime | Nullable DateTimeOffset | Date et heure (au UTC) de la dernièr
 resolvedTime | Nullable DateTimeOffset | Date et heure à laquelle l’état de l’alerte a été modifié en « Résolu ».
 incidentId | Nullable Long | ID [d’incident](view-incidents-queue.md) de l’alerte.
 investigationId | Nullable Long | ID [d’examen](automated-investigations.md) lié à l’alerte.
-investigationState | Nullable, enum | L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
+investigationState | Nullable, enum | L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallySystemigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 assignedTo | String | Propriétaire de l’alerte.
 Sévérité  | Énum | Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).
-status | Énum | Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (inprogress) et « Resolved » (résolu).
+status | Énum | Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
 classification | Nullable, enum | Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).
 détermination | Nullable, enum | Spécifie la détermination de l’alerte. Les valeurs possibles sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
 category| String | Catégorie de l’alerte.
@@ -79,7 +79,7 @@ threatFamilyName | String | Famille de menaces.
 threatName | String | Nom de la menace.
 machineId | String | ID d’une [entité](machine.md) d’ordinateur associée à l’alerte.
 computerDnsName | String | [nom complet](machine.md) de l’ordinateur.
-aadTenantId | String | ID Azure Active Directory de l’autre.
+aadTenantId | String | ID Azure Active Directory de l’ID de l’ID de l’Azure Active Directory.
 détecteurId | String | ID du détecteur qui a déclenché l’alerte.
 commentaires | Liste des commentaires d’alerte | L’objet Comment de l’alerte contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.
 Évidence | Liste des preuves d’alerte | Preuve liée à l’alerte. Voir l’exemple ci-dessous.

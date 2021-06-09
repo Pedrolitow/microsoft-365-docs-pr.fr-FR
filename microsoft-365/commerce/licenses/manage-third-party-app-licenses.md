@@ -47,10 +47,10 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 
 1. Dans le Centre d’administration, **page**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licences de facturation.</a>
 2. Sélectionnez l’application pour qui vous souhaitez désattribuer des licences.
-3. Dans la page détails de la licence, sélectionnez les utilisateurs et les groupes pour supprimer des licences, puis sélectionnez Désattribuer les licences.
+3. Dans la page détails de la licence, sélectionnez les utilisateurs et les groupes dont vous pouvez supprimer des licences, puis désattribuer les licences.
 4. Dans la boîte de dialogue, confirmez que vous souhaitez supprimer les licences, puis sélectionnez Désattribuer.
 
-## <a name="add-or-remove-third-party-app-licenses-for-your-account"></a>Ajouter ou supprimer des licences d’applications tierces pour votre compte
+## <a name="add-or-remove-third-party-app-licenses-for-your-account"></a>Ajouter ou supprimer des licences d’application tierces pour votre compte
 
 Les licences d’applications tierces sont gérées par le fournisseur de l’application. Contactez le fournisseur pour ajouter ou supprimer des licences pour votre compte.
 

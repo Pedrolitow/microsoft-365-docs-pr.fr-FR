@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: Découvrez les étapes à suivre pour baliser, puis travailler avec un exemple de formation de 40 fichiers pendant la phase de formation Pertinence d’Advanced eDiscovery.
+description: Découvrez les étapes à suivre pour baliser, puis travailler avec un exemple de formation de 40 fichiers pendant la phase de formation Pertinence de Advanced eDiscovery.
 ms.openlocfilehash: ae4a9f2e9fd87fdd0679bbfd8f287b6eaa98e41f
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.locfileid: "49769219"
   
 Cet article décrit la procédure d’emploi du module de formation Pertinence dans Advanced eDiscovery.
   
-Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez dans la phase de formation Pertinence, un échantillon de formation de 40 fichiers est mis dans l’onglet Balise pour le marquage.
+Une fois l’évaluation Advanced eDiscovery terminée et que vous entrez dans la phase de formation Pertinence, un échantillon de formation de 40 fichiers est ajouté à l’onglet Balise pour le marquage.
   
 ## <a name="performing-relevance-training"></a>Formation sur la pertinence
 
@@ -75,7 +75,7 @@ Une fois l’évaluation terminée dans Advanced eDiscovery et que vous entrez d
 
 ## <a name="working-with-the-sample-files-list"></a>Travailler avec la liste d’exemples de fichiers
 
-La liste des exemples de fichiers vous permet d’afficher une liste des fichiers dans un exemple de formation et d’effectuer différentes actions sur un ou plusieurs fichiers. Dans **l’onglet** Balise de pertinence, le volet gauche des exemples de fichiers affiche une liste d’exemples de fichiers à traiter avec des processus d’évaluation, de formation, de rattrapage et \> d’incohérences.  
+La liste des exemples de fichiers vous permet d’afficher une liste des fichiers d’un exemple de formation et d’effectuer différentes actions sur un ou plusieurs fichiers. Dans **l’onglet** Balise de pertinence, le volet gauche des exemples de fichiers affiche une liste d’exemples de fichiers à traiter avec des processus d’évaluation, de formation, de rattrapage et \> d’incohérences.  
   
 1. Dans **l’onglet \> Balise de** pertinence, sélectionnez les exemples de fichiers dans la liste de listes de listes listes de gauche du volet. Les exemples de fichiers sont répertoriés dans le volet gauche.
 

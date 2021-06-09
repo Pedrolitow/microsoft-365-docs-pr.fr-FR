@@ -41,18 +41,18 @@ Pour suivre les étapes décrites dans cet article, vous devez être administrat
 
 Supprimez tous les utilisateurs à l’exception d’un administrateur général. L’administrateur général termine la procédure de fermeture du compte. Avant de pouvoir supprimer l’annuaire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
 
-Si les utilisateurs sont synchronisés à partir de l’local, désynchronisé, puis supprimez les utilisateurs dans l’annuaire cloud à l’aide du portail Azure ou Azure PowerShell cmdlets.
+Si les utilisateurs sont synchronisés en local, désynchronisé, supprimez-les dans l’annuaire cloud à l’aide du portail Azure ou Azure PowerShell cmdlets.
 
-Pour supprimer des utilisateurs, voir Administrateur de gestion des [utilisateurs : Supprimer un ou plusieurs utilisateurs.](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365)
+Pour supprimer des utilisateurs, [consultez l’administrateur de gestion des utilisateurs : supprimez un ou plusieurs utilisateurs.](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365)
 
 Vous pouvez également utiliser [l’cmdlet Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell pour supprimer des utilisateurs en bloc.
 
-Si votre organisation utilise Active Directory qui se synchronise avec Microsoft Azure Active Directory (Azure AD), supprimez le compte d’utilisateur d’Active Directory. Pour obtenir des instructions, [voir Suppression en bloc d’utilisateurs dans Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
+Si votre organisation utilise Active Directory qui se synchronise avec Microsoft Azure Active Directory (Azure AD), supprimez le compte d’utilisateur d’Active Directory. Pour obtenir des instructions, [voir Suppression en bloc d’utilisateurs Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Étape 2 : Annuler tous les abonnements actifs
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
-2. Sous **l’onglet Produits,** recherchez un abonnement actif. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
+2. Sous **l’onglet** Produits, recherchez un abonnement actif. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
 3. Dans le volet **Annuler l'abonnement**, choisissez la raison pour laquelle vous annulez. Si vous le souhaitez, vous pouvez fournir des commentaires.
 4. Sélectionnez **Enregistrer**.
 5. Répétez les étapes 1 à 4 pour annuler tous les abonnements actifs.

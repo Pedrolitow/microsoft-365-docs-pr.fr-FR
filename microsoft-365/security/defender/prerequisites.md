@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Conditions préalables de Defender
-description: En savoir plus sur les licences, la configuration matérielle et logicielle requise et d’autres paramètres de configuration pour Microsoft 365 Defender
+description: En savoir plus sur les licences, la configuration matérielle et logicielle requise et les autres paramètres de configuration pour Microsoft 365 Defender
 keywords: configuration requise, conditions préalables, matériel, logiciel, navigateur, Microsoft 365 Defender, M365, licence, E5, A5, EMS, achat
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -38,18 +38,18 @@ ms.locfileid: "52689156"
 Découvrez les licences et autres conditions requises pour l’approvisionnement et [l’utilisation Microsoft 365 Defender.](microsoft-365-defender.md)
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
-L’une de ces licences vous donne accès aux fonctionnalités de Microsoft 365 Defender dans Microsoft 365 centre de sécurité sans frais supplémentaires :
+L’une de ces licences vous permet d’accéder aux fonctionnalités Microsoft 365 Defender dans Microsoft 365 centre de sécurité sans frais supplémentaires :
 
-- Microsoft 365 E5 ou A5
+- Microsoft 365 E5 ou A5
 - Microsoft 365 E3 l’Microsoft 365 E5 Sécurité de module
 - Microsoft 365 A3 avec le module Microsoft 365 sécurité A5
-- Windows 10 Entreprise E5 ou A5
+- Windows 10 Entreprise E5 ou A5
 - Enterprise Mobility + Security (EMS) E5 ou A5 
-- Office 365 E5 ou A5
-- Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité 
-- Microsoft Cloud App Security
-- Defender pour Office 365 (Plan 2)
+- Office 365 E5 ou A5
+- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour l’identité 
+- Microsoft Cloud App Security
+- Defender pour Office 365 (Plan 2)
 
 Pour plus d’informations, [consultez les plans Microsoft 365 Entreprise service.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
@@ -69,7 +69,7 @@ Accédez Microsoft 365 Defender dans le centre de sécurité Microsoft 365 à l�
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilité aux états-Unis Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et à d’autres institutions gouvernementales américaines
 Actuellement, Microsoft 365 Defender *n’est pas* disponible pour :
-- États-Cloud de la communauté du secteur public (Cloud de la communauté du secteur public)
+- États-Unis Cloud de la communauté du secteur public (Cloud de la communauté du secteur public)
 - États-Unis Cloud de la communauté du secteur public élevé (Cloud de la communauté du secteur public élevé)
 - Département de la Défense des États-Unis
 - Toutes les institutions gouvernementales américaines titulaires de licences commerciales

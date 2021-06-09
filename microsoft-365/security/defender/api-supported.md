@@ -55,7 +55,7 @@ L’URI de base pour les deux API principales est : https://api.security.microso
 
 Les jetons peuvent être acquis en accédant à https://api.security.microsoft.com .
 
-Toutes les API le long du `/api` chemin d’accès utilisent le [protocole OData](/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
+Toutes les API le long du `/api` chemin d’accès utilisent [le protocole OData](/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
 
 ## <a name="related-articles"></a>Articles connexes
 

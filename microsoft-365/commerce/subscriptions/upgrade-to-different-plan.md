@@ -35,9 +35,9 @@ Lorsque votre entreprise change ou que vous avez besoin de fonctionnalités supp
 
 Lorsque vous  utilisez l’onglet Mise à niveau, vous êtes dirigé tout au long du processus d’achat d’une nouvelle offre. Des licences sont automatiquement attribuées à tous les utilisateurs dans la nouvelle plan, et votre ancienne plan est annulée pour vous.
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturation de vos produits.</a>
+1. Dans le Centre d’administration, allez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
 2. Sélectionnez l’abonnement à mettre à niveau.
-3. Dans la page détails de l’abonnement, sélectionnez **Mettre à niveau.**
+3. Dans la page des détails de l’abonnement, sélectionnez **Mettre à niveau.**
 4. Recherchez le plan vers lequel vous souhaitez mettre à niveau, puis sélectionnez le bouton **Mettre à** niveau.
 5. Entrez le nombre de licences dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’année entière, puis sélectionnez **Accéder à l’checkout.**
     > [!NOTE]
@@ -45,7 +45,7 @@ Lorsque vous  utilisez l’onglet Mise à niveau, vous êtes dirigé tout au lon
 6. Sur la page suivante, vérifiez l’adresse de **l’acheteur** et les informations de **facturation** ainsi que **les articles de cette commande**. Vous pouvez modifier le mode de paiement par défaut à cette étape. Si vous souhaitez modifier des informations, sélectionnez **modifier** en regard de la section applicable.
 7. Lorsque vous avez terminé, sélectionnez **Ordre des commandes.**
 
-Lorsque vous avez terminé l’enregistrement, la finalisation de la mise à niveau peut prendre quelques minutes. Vous pouvez commencer à utiliser le nouvel abonnement immédiatement. Sélectionnez **Vérifier l’état de** la mise à niveau pour vérifier la progression de la mise à niveau. Vous serez averti une fois la mise à niveau terminée. La notification s’affiche sur la page **De vos produits,** en de côté de votre nouvel abonnement.
+Lorsque vous avez terminé l’enregistrement, la finalisation de la mise à niveau peut prendre quelques minutes. Vous pouvez commencer à utiliser le nouvel abonnement immédiatement. Sélectionnez **Vérifier l’état de** la mise à niveau pour vérifier la progression de la mise à niveau. Vous serez averti une fois la mise à niveau terminée. La notification s’affiche sur la page **Vos produits,** en plus de votre nouvel abonnement.
 
 ## <a name="the-upgrade-tab-is-empty"></a>L’onglet Mise à niveau est vide
 
@@ -79,7 +79,7 @@ Pour mettre à niveau les plans automatiquement, des licences valides doivent ê
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Vous ne pouvez pas mettre à niveau les abonnements pour le moment, car cet abonnement n’est pas entièrement installé ou le service n’est pas disponible.
 
-Par exemple, si l’un des services a un incident, vous ne pourrez pas mettre à niveau tant que tous les services ne seront pas en bon état. Pour voir s’il existe des problèmes d’approvisionnement ou d’état du service, dans le centre d’administration, rendez-vous sur **la** page d’état du \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">service de santé.</a>
+Par exemple, si l’un des services a un incident, vous ne pourrez pas mettre à niveau tant que tous les services ne seront pas en bon état. Pour voir s’il existe des problèmes d’approvisionnement ou  d’état du service, dans le centre d’administration, rendez-vous sur la page d’état du \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">service de santé.</a>
 
 Si vous découvrez qu'un service n'est pas entièrement configuré ou si vous rencontrez un problème d'état du service, attendez quelques heures que votre service redevienne disponible et réessayez. Si vous avez encore un problème, contactez [le support technique.](../../business-video/get-help-support.md)
 
@@ -113,7 +113,7 @@ Si vous avez un plan public ou à but non lucratif, vous pouvez modifier les [pl
 
 #### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>L’abonnement à partir de qui vous souhaitez mettre à niveau présente un problème temporaire
 
-Vous ne verrez peut-être aucun plan sous **l’onglet** Mise à niveau, car le service est en train de mettre à niveau un volume élevé de plans. Essayez à nouveau environ une heure après votre première tentative.
+Vous ne verrez peut-être aucun plan sous **l’onglet** Mise à niveau, car le service est en train de mettre à niveau un grand nombre de plans. Essayez à nouveau environ une heure après votre première tentative.
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Le plan vers qui vous souhaitez mettre à niveau n’est pas une option prise en charge
 
@@ -156,7 +156,7 @@ Le jour où la mise à niveau de votre plan est terminée, la facturation de vot
 > [!NOTE]
 > Le délai nécessaire au crédit de votre compte de paiement dépend du mode de paiement utilisé pour l'abonnement.
   
-**Mise à niveau à partir d’un abonnement prépayé avant son expiration ?** Si le coût total de votre nouvel abonnement est supérieur ou égal à la valeur restante de votre abonnement prépayé, vous ne perdrez pas de temps prépayé. La page de validation de l'achat affiche un crédit pour votre temps inutilisé. En revanche, si le coût de votre nouvel abonnement est inférieur à la valeur restante de votre abonnement prépayé actuel, vous perdrez une partie du temps non utilisé. Vous serez averti avant d’avoir vérifié votre abonnement et vous pourrez attendre la date d’expiration de votre abonnement prépayé pour attendre la date d’expiration de votre abonnement prépayé.
+**Mise à niveau à partir d’un abonnement prépayé avant son expiration ?** Si le coût total de votre nouvel abonnement est supérieur ou égal à la valeur restante de votre abonnement prépayé, vous ne perdrez pas de temps prépayé. La page de validation de l'achat affiche un crédit pour votre temps inutilisé. En revanche, si le coût de votre nouvel abonnement est inférieur à la valeur restante de votre abonnement prépayé actuel, vous perdrez une partie du temps non utilisé. Vous serez averti avant d’avoir vérifié et vous pourrez attendre la mise à niveau jusqu’à la date d’expiration de votre abonnement prépayé.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Appeler le support technique pour vous aider à mettre à niveau des plans
 

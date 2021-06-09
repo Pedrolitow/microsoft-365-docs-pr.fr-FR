@@ -1,5 +1,5 @@
 ---
-title: Obstacles à l’information dans Microsoft 365
+title: Obstacles à l’information Microsoft 365
 description: Découvrez comment configurer les obstacles aux informations dans Microsoft 365.
 keywords: Microsoft 365, risques internes, conformité
 localization_priority: Normal
@@ -23,11 +23,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50423595"
 ---
-# <a name="information-barriers-in-microsoft-365"></a>Obstacles aux informations dans Microsoft 365
+# <a name="information-barriers-in-microsoft-365"></a>Obstacles à l’information Microsoft 365
 
-Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, et prend en charge les moyens de restreindre la communication et la collaboration entre des groupes spécifiques d’utilisateurs lorsque cela est nécessaire. Il peut s’agir de situations ou de scénarios dans lesquelles vous souhaitez restreindre la communication et la collaboration entre deux groupes afin d’éviter qu’un conflit d’intérêts ne se produise dans votre organisation. Cela peut également inclure des situations dans lesquelles vous devez restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes.
+Microsoft 365 permet la communication et la collaboration entre les groupes et les organisations, et prend en charge les moyens de restreindre la communication et la collaboration entre des groupes spécifiques d’utilisateurs si nécessaire. Il peut s’agir de situations ou de scénarios dans lesquelles vous souhaitez restreindre la communication et la collaboration entre deux groupes afin d’éviter qu’un conflit d’intérêts ne se produise dans votre organisation. Cela peut également inclure des situations dans lesquelles vous devez restreindre la communication et la collaboration entre certaines personnes au sein de votre organisation afin de protéger les informations internes.
 
-Les obstacles aux informations sont pris en charge dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Un administrateur de conformité ou un administrateur des obstacles à l’information peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs dans Microsoft Teams. Les stratégies de obstacle à l’information peuvent être utilisées dans des situations comme celles-ci :
+Les obstacles aux informations sont pris en charge dans Microsoft Teams, SharePoint Online et OneDrive Entreprise. Un administrateur de conformité ou un administrateur des obstacles à l’information peut définir des stratégies pour autoriser ou empêcher les communications entre des groupes d’utilisateurs Microsoft Teams. Les stratégies de obstacle à l’information peuvent être utilisées dans des situations comme celles-ci :
 
 - L’utilisateur du jour ne doit pas communiquer ou partager des fichiers avec l’équipe marketing
 - Le personnel financier travaillant sur des informations confidentielles sur l’entreprise ne doit pas communiquer ou partager des fichiers avec certains groupes au sein de leur organisation
@@ -43,7 +43,7 @@ Pour configurer les obstacles à l’information pour votre organisation, utilis
 1. En savoir plus [sur les obstacles aux informations](information-barriers.md) dans Microsoft 365
 2. Configurer les [conditions préalables et les autorisations](information-barriers-policies.md#prerequisites)
 3. Segmenter [les utilisateurs de votre organisation](information-barriers-policies.md#part-1-segment-users)
-4. Créer et configurer des stratégies [d’obstacle aux informations](information-barriers-policies.md#part-2-define-information-barrier-policies)
+4. Créer et configurer des stratégies de [obstacle à l’information](information-barriers-policies.md#part-2-define-information-barrier-policies)
 5. Appliquer des [stratégies de obstacle à l’information](information-barriers-policies.md#part-3-apply-information-barrier-policies)
 
 ## <a name="more-information-about-information-barriers"></a>Plus d’informations sur les obstacles aux informations

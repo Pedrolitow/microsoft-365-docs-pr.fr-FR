@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez l’outil Communications dans un cas Advanced eDiscovery pour envoyer, collecter et suivre des notifications de mise en attente légale.
+description: Utilisez l’outil Communications dans Advanced eDiscovery cas pour envoyer, collecter et suivre des notifications de mise en attente légale.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: df1b2d962e83110c62ccac871f669bbc0d3bfe02
 ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
@@ -26,7 +26,7 @@ ms.locfileid: "49840559"
 ---
 # <a name="create-a-legal-hold-notice"></a>Créer une notification de non-droit
 
-Grâce aux communications de dépositaire Advanced eDiscovery, les organisations peuvent gérer leur flux de travail autour de la communication avec les dépositaires. Grâce à l’outil communications, les équipes juridiques peuvent systématiquement envoyer, collecter et suivre les notifications de mise en attente légale. Le processus de création flexible permet également aux équipes de personnaliser le flux de travail de notification de conservation et le contenu des notifications envoyées aux dépositaires.
+À l Advanced eDiscovery les communications des dépositaires, les organisations peuvent gérer leur flux de travail autour de la communication avec les dépositaires. Grâce à l’outil communications, les équipes juridiques peuvent systématiquement envoyer, collecter et suivre les notifications de mise en attente légale. Le processus de création flexible permet également aux équipes de personnaliser le flux de travail de notification de conservation et le contenu des notifications envoyées aux dépositaires.
 
 ![Communications Page](../media/CommunicationPage.PNG)
 
@@ -38,15 +38,15 @@ La première étape consiste à spécifier les détails appropriés pour les not
 
 ![Page Communication de nom](../media/NameCommunication.PNG)
 
-1. Dans le Centre de sécurité & conformité, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.
+1. Dans le Centre de sécurité & conformité, allez à **eDiscovery > Advanced eDiscovery** pour afficher la liste des cas dans votre organisation.
 
 2. Sélectionnez un cas, cliquez sur **l’onglet Communications,** puis sur **Nouvelle communication.**
 
-3. Dans la page **Communication du nom,** spécifiez les détails de communication suivants (obligatoires).
+3. Dans la page **Communication du** nom, spécifiez les détails de communication suivants (obligatoires).
 
     - **Nom**: il s’agit du nom de la communication.
 
-    - **Responsable de l’émission**: la liste de listes listes affiche la liste des membres de cas. Pour plus d’informations sur l’ajout de nouveaux membres à un cas, voir Créer un cas [Advanced eDiscovery.](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) Chaque avis envoyé aux dépositaires sera envoyé au nom du responsable de l’émission spécifié.
+    - **Responsable de l’émission**: la liste de listes listes affiche la liste des membres de cas. Pour plus d’informations sur l’ajout de nouveaux membres à un cas, voir [Créer un Advanced eDiscovery cas.](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) Chaque avis envoyé aux dépositaires sera envoyé au nom du responsable de l’émission spécifié.
 
 > [!NOTE]
 > Le responsable de l’émission doit avoir une boîte **aux lettres active** pour s’afficher dans la boîte aux lettres du responsable de l’émission
@@ -62,7 +62,7 @@ Ensuite, vous pouvez créer et ajouter le contenu de l’avis de attente. Dans l
 
 Pour créer le contenu du portail :
 
-1. Tapez (ou coupez-collez à partir d’un autre document) votre notification de non-attente dans la boîte de texte du contenu du portail. 
+1. Tapez (ou coupez-collez à partir d’un autre document) votre avis de non-attente dans la boîte de texte du contenu du portail. 
 
 2. Insérez des variables de fusion dans votre avis pour personnaliser l’avis et partager le portail de conformité des dépositaires.
 
@@ -75,7 +75,7 @@ Pour créer le contenu du portail :
 
 Une fois que vous avez défini le contenu de l’avis de mise en attente, vous pouvez configurer les flux de travail autour de l’envoi et de la gestion du processus de notification. Les notifications sont des messages électroniques envoyés pour avertir et suivre les dépositaires. Chaque dépositaire ajouté à la communication reçoit la même notification. 
 
-Pour configurer et envoyer un avis de mise en attente, vous devez inclure des notifications d’émission, de nouvelle émission et de publication.
+Pour configurer et envoyer un avis de mise en attente, vous devez inclure des notifications d’émission, de rééd envoy e et de publication.
 
 ### <a name="issuance-notification"></a>Notification d’émission 
 
@@ -95,7 +95,7 @@ Pour créer une notification d’émission :
 
 ### <a name="re-issuance-notification"></a>Re-Issuance notification
 
-Au fur et à mesure de la progression du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Une fois que vous avez mis à jour le contenu du portail, la notification de nouvelle émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
+Au fur et à mesure de l’avancement du cas, les dépositaires peuvent être tenus de conserver des données supplémentaires ou inférieures aux instructions précédemment. Une fois que vous avez mis à jour le contenu du portail, la notification de nouvelle émission est envoyée et avertit les dépositaires des modifications apportées à leurs obligations de conservation.
 
 Pour créer une notification de nouvelle émission :
 
@@ -114,7 +114,7 @@ Pour créer une notification de nouvelle émission :
 
 ### <a name="release-notification"></a>Notification de publication
 
-Une fois qu’un problème est résolu ou si un dépositaire n’est plus soumis à la conservation du contenu, vous pouvez libérer le dépositaire d’un cas. Si le dépositaire a déjà émis un avis de conservation, la notification de publication peut être utilisée pour avertir les dépositaires qu’ils ont été libérés de leur obligation.
+Une fois qu’un problème est résolu ou si un dépositaire n’est plus soumis à la conservation du contenu, vous pouvez libérer le dépositaire d’un cas. Si le dépositaire a déjà émis un avis de mise en attente, la notification de publication peut être utilisée pour avertir les dépositaires qu’ils ont été libérés de leur obligation.
 
 Pour créer une notification de publication : 
 
@@ -152,7 +152,7 @@ Pour planifier des rappels :
 
 6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis de rappel.
 
-7. Cliquez **sur Enregistrer** et allez à l’étape suivante.
+7. Cliquez **sur Enregistrer** et passer à l’étape suivante.
 
 ### <a name="escalations"></a>Escalades
 
@@ -172,7 +172,7 @@ Pour planifier des escalades :
 
 6. Spécifiez le contenu ou les instructions supplémentaires que vous souhaitez fournir au dépositaire (obligatoire). Le contenu du portail que vous avez défini à l’étape 2 est ajouté à la fin de l’avis d’escalade.
 
-7. Cliquez **sur Enregistrer** et allez à l’étape suivante.
+7. Cliquez **sur Enregistrer** et passer à l’étape suivante.
 
 ## <a name="step-5-assign-custodians-to-receive-notifications"></a>Étape 5 : Affecter des dépositaires pour recevoir des notifications
 
@@ -202,7 +202,7 @@ Le tableau suivant décrit les événements dans le processus de gestion des cas
 |Type de communication|Déclencher |
 |:---------|:---------|
 |Avis d’émission|Création initiale de la notification. Vous pouvez également renvoyer manuellement une notification de mise en attente. |
-|Notifications de réé émission|Mise à jour du contenu du portail sur la page **Définir le** contenu du portail dans **l’Assistant Modifier la communication.**|
+|Notifications de réé émission|Mise à jour du contenu du portail sur la page **Définir le contenu du** portail dans **l’Assistant Modifier la communication.**|
 |Avis de publication|Le dépositaire est libéré du cas.|
 |Reminders|Intervalle et nombre de rappels configurés pour le rappel.|
 |Escalades|Intervalle et nombre de rappels configurés pour l’escalade.|

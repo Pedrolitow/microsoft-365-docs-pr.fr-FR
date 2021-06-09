@@ -1,7 +1,7 @@
 ---
 title: 'Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités'
 description: Découvrez comment rechercher et atténuer les vulnérabilités « zero-day » dans votre environnement à l’Gestion des menaces et des vulnérabilités.
-keywords: Vulnérabilités microsoft Defender pour endpoint tvm zero day, tvm, menaces & gestion des vulnérabilités, jour zéro, 0 jour, atténuer les vulnérabilités de 0 jour, vulnérabilités CVE vulnérables
+keywords: Vulnérabilités microsoft Defender pour endpoint tvm zero day, tvm, threat & gestion des vulnérabilités, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

@@ -54,7 +54,7 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
 1. Connectez-vous [à Azure](https://portal.azure.com) avec votre **utilisateur administrateur** général.
 
-2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.** 
+2. Accédez à **Azure Active Directory**  >  **inscription de l’application Nouvelle**  >  **inscription.** 
 
    ![Image de la Microsoft Azure et de la navigation vers l’inscription de l’application](images/atp-azure-new-app2.png)
 
@@ -70,7 +70,7 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
    - Choose **Application permissions**  >  **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image de l’accès à l’API et de la sélection de l’API2](images/application-permissions.png)
+   ![Image de l’accès à l’API et sélection de l’API2](images/application-permissions.png)
 
    **Remarque importante**: vous devez sélectionner les autorisations pertinentes. « Lire toutes les alertes » n’est qu’un exemple !
 
@@ -86,7 +86,7 @@ Pour l’étape d’inscription  de l’application, vous devez avoir un rôle d
 
     ![Image de l’octroi d’autorisations](images/grant-consent.png)
 
-6. Ajoutez une secret à l’application.
+6. Ajoutez un secret à l’application.
 
     - Cliquez **sur Certificats & secrets,** ajoutez une description à la secret, puis cliquez sur **Ajouter**.
 
@@ -182,7 +182,7 @@ Out-File -FilePath $outputJsonPath -InputObject $alerts
 ```
 
 Vous avez terminé ! Vous avez réussi :
--   Créé, inscrit et application
+-   Créé et inscrit et application
 -   Autorisation accordée à cette application pour lire les alertes
 -   Connecté à l’API
 -   Utilisation d’un script PowerShell pour renvoyer les alertes créées au cours des dernières 48 heures

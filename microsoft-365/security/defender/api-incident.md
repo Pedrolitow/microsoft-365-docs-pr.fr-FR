@@ -27,7 +27,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/03/2021
 ms.locfileid: "52730929"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 API Incidents Defender et type de ressource incidents
+# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 API d’incidents Defender et type de ressource incidents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "52730929"
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Un [incident est](incidents-overview.md) un ensemble d’alertes associées qui permettent de décrire une attaque. Les événements de différentes entités de votre organisation sont regroupés automatiquement par Microsoft 365 Defender. Vous pouvez utiliser l’API d’incidents pour accéder par programmation aux incidents de votre organisation et aux alertes associées.
+Un [incident est](incidents-overview.md) un ensemble d’alertes associées qui permettent de décrire une attaque. Les événements de différentes entités de votre organisation sont automatiquement regroupés par Microsoft 365 Defender. Vous pouvez utiliser l’API d’incidents pour accéder par programmation aux incidents de votre organisation et aux alertes associées.
 
 ## <a name="quotas-and-resource-allocation"></a>Quotas et allocation de ressources
 
@@ -75,7 +75,7 @@ Sévérité  | Énum | Gravité de l’incident. Les valeurs possibles ```UnSpec
 status | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibles ```Active``` sont : , et ```Resolved``` ```Redirected``` .
 classification | Énum | Spécification de l’incident. Les valeurs possibles sont les suivantes : ```Unknown```, ```FalsePositive``` et ```TruePositive```.
 détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
-étiquettes | string List | Liste des balises d’incident.
+étiquettes | liste de chaînes | Liste des balises d’incident.
 commentaires | Liste des commentaires sur les incidents | L’objet Incident Comment contient : chaîne de commentaire, chaîne createdBy et heure de date createTime.
 alerts | Liste des alertes | Liste des alertes associées. Consultez des exemples dans la documentation [de l’API d’incidents](api-list-incidents.md) de liste.
 

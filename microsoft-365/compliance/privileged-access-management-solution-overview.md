@@ -1,6 +1,6 @@
 ---
 title: Gestion des accès privilégiés dans Microsoft 365
-description: Découvrez comment configurer les fonctionnalités de risque internes dans Microsoft 365.
+description: Découvrez comment configurer les fonctionnalités de risque internes au sein Microsoft 365.
 keywords: Microsoft 365, risques internes, conformité
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise

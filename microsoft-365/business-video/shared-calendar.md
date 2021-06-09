@@ -29,7 +29,7 @@ ms.locfileid: "52705641"
 ---
 # <a name="create-a-shared-calendar"></a>Créer un calendrier partagé
 
-## <a name="watch-create-a-shared-calendar"></a>Regarder : Créer un calendrier partagé
+## <a name="watch-create-a-shared-calendar"></a>Regarder : créer un calendrier partagé
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 

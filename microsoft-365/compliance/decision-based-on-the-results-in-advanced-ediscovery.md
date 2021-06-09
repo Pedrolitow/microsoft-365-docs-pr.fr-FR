@@ -36,7 +36,7 @@ Cet onglet comprend les composants suivants :
   
 - **Problème**: à partir de là, vous pouvez sélectionner le problème d’intérêt dans la liste.
 
-- **Taux de révision/rappel :** comparaisons de la révision Advanced eDiscovery en fonction des scores de pertinence. Le point de coupure dans le graphique représente le pourcentage de fichiers à réviser, mappé à un score de pertinence. Il est utilisé dans la phase test de pertinence et comme seuil d’exportation pour l’élimination. Le point de coupure par défaut, pour le nombre de fichiers à réviser, est au point où l’équilibre entre Rappel et Précision est optimal. Le point de départ réel doit être déterminé par l’utilisateur en fonction des objectifs et du compromis de coût (%review) et du risque (%recall). À l’aide du curseur, vous pouvez ajuster le point de coupure et voir l’effet sur le graphique et les paramètres, lors de l’ajustement du pourcentage de fichiers pertinents à récupérer et avant de valider une décision.
+- **Taux de révision/rappel :** comparaisons de la révision Advanced eDiscovery en fonction des scores de pertinence. Le point de coupure dans le graphique représente le pourcentage de fichiers à réviser, mappé à un score de pertinence. Il est utilisé dans la phase test de pertinence et comme seuil d’exportation pour l’élimination. Le point de coupure par défaut, pour le nombre de fichiers à réviser, est au point où l’équilibre entre Rappel et Précision est optimal. Le point de coupure réel doit être déterminé par l’utilisateur en fonction des objectifs et du compromis de coût (%review) et du risque (%recall). À l’aide du curseur, vous pouvez ajuster le point de coupure et voir l’effet sur le graphique et les paramètres, lors de l’ajustement du pourcentage de fichiers pertinents à récupérer et avant de valider une décision.
 
 - **Parameters**: Review, Recall, Next relevant and Total cost parameters are cumulative calculated statistics pertaining to the review set in relation to the collection for the entire case. Les définitions de ces paramètres sont les suivantes :
 
@@ -44,10 +44,10 @@ Cet onglet comprend les composants suivants :
 
   - **Rappel**: pourcentage de fichiers pertinents dans le jeu à réviser.
 
-  - **Pertinence suivante**: coût de révision et d’identification d’un autre fichier pertinent qui n’est pas actuellement dans l’ensemble de révision.
+  - **Pertinence suivante**: coût de révision et d’identification d’un autre fichier pertinent qui n’est pas actuellement dans le jeu à réviser.
 
   - **Coût total**: coût pour la révision de ce pourcentage des fichiers de cas. Les paramètres de coût peuvent être définies par le gestionnaire de cas.
 
   - **Répartition par score de pertinence**: les fichiers dans l’affichage gris foncé à gauche sont inférieurs au score de seuil. Une info-conseil affiche le score de pertinence et le pourcentage connexe de fichiers dans le jeu de fichiers de révision par rapport au nombre total de fichiers.
 
-Le volet **Détails développé** affiche plus de détails. Les fichiers dans les figures de collection n’incluent pas de fichiers vides ou nebules. Les figures de fichiers de famille représentent des fichiers qui ne sont pas chargés en Pertinence, mais qui sont toujours comptés dans le cadre de la famille.
+Le volet **Détails développé** affiche plus de détails. Les fichiers des figures de collection n’incluent pas les fichiers vides ou les fichiers nebules. Les figures de fichiers de famille représentent des fichiers qui ne sont pas chargés en Pertinence, mais qui sont toujours comptés dans le cadre de la famille.

@@ -26,19 +26,19 @@ ms.locfileid: "49769169"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Tester l’analyse de pertinence dans Advanced eDiscovery
   
-L’onglet Test dans Advanced eDiscovery vous permet de tester, comparer et valider la qualité globale du traitement. Ces tests sont effectués après le calcul par lots. En balant les fichiers de la collection, un expert décide de façon finale si chaque fichier balisé est pertinent pour le cas.
+L’onglet Test Advanced eDiscovery vous permet de tester, comparer et valider la qualité globale du traitement. Ces tests sont effectués après le calcul par lots. En balant les fichiers de la collection, un expert décide de façon finale si chaque fichier balisé est pertinent pour le cas.
   
 Dans les scénarios à problème unique ou multiple, les tests sont généralement effectués par problème. Les résultats peuvent être consultables après chaque test, et les résultats des tests peuvent être retravaillés avec des exemples de fichiers de test spécifiés.
   
 ## <a name="testing-the-rest"></a>Test du reste
 
-Le test « Tester le reste » est utilisé pour valider les décisions d’élimination, par exemple, pour passer en revue uniquement les fichiers au-dessus d’un score de pertinence spécifique basé sur les résultats finaux advanced eDiscovery. L’expert examine un échantillon de fichiers sous un score de limite sélectionné pour évaluer le nombre de fichiers pertinents dans cet ensemble.
+Le test « Tester le reste » est utilisé pour valider les décisions d’élimination, par exemple, pour passer en revue uniquement les fichiers au-dessus d’un score de pertinence spécifique en fonction des résultats Advanced eDiscovery finaux. L’expert examine un échantillon de fichiers sous un score de limite sélectionné pour évaluer le nombre de fichiers pertinents dans cet ensemble.
   
 Ce test fournit des statistiques et une comparaison entre le jeu à réviser et la population Test du reste. Les résultats du jeu à réviser sont ceux calculés par Pertinence lors de l’entraînement. Les résultats incluent des calculs basés sur des paramètres et des paramètres d’entrée, tels que :
   
 - Testez des exemples de statistiques sur le nombre de fichiers dans un exemple et identifiez les fichiers pertinents.
 
-- Comparaison tabulaire des paramètres Population du jeu à réviser et du reste, par exemple, le nombre de fichiers, le nombre estimé de fichiers pertinents, la richesse estimée et le coût moyen de recherche d’un autre fichier pertinent. Les paramètres de coût peuvent être définies par l’administrateur.
+- Comparaison tabulaire des paramètres Population du jeu à réviser et du reste, par exemple, nombre de fichiers, nombre estimé de fichiers pertinents, richesse estimée et coût moyen de recherche d’un autre fichier pertinent. Les paramètres de coût peuvent être définies par l’administrateur.
 
 Pour exécuter le test « Tester le reste » :
 

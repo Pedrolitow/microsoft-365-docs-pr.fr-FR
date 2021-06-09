@@ -41,7 +41,7 @@ ms.locfileid: "52769820"
 
 Ajoute ou supprime une balise à un ordinateur [spécifique.](machine.md)
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 1. Vous pouvez publier sur les ordinateurs pour la dernière fois en fonction de votre période de rétention configurée.
 

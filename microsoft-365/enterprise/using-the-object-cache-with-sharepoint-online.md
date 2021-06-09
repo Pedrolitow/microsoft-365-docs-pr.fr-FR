@@ -30,9 +30,9 @@ ms.locfileid: "46695873"
 
 Cet article explique la différence entre l’utilisation du cache d’objets dans SharePoint Server 2013 local et SharePoint Online.
   
-L’utilisation du cache d’objets dans le déploiement SharePoint Online a un impact négatif significatif. Toute dépendance à l’égard du cache d’objets dans SharePoint Online réduit la fiabilité de votre page. 
+L’utilisation du cache d’objets dans le déploiement SharePoint Online a un impact négatif significatif. Toute dépendance au cache d’objets dans SharePoint Online réduit la fiabilité de votre page. 
   
-## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Fonctionnement du cache d’objets SharePoint Online et SharePoint Server 2013
+## <a name="how-the-sharepoint-online-and-sharepoint-server-2013-object-cache-works"></a>Fonctionnement SharePoint cache d’objets SharePoint Server 2013
 
 Lorsque SharePoint Server 2013 est hébergé en local, le client dispose de serveurs web frontaux privés qui hébergent le cache d’objets. Cela signifie que le cache est dédié à un client et est limité uniquement par la quantité de mémoire disponible et allouée au cache d’objets. Étant donné qu’un seul client est servi dans le scénario local, les serveurs web frontaux ont généralement des utilisateurs qui font des demandes aux mêmes sites plusieurs fois. Cela signifie que le cache est rapidement plein et qu’il reste plein des résultats de requête de liste et des objets SharePoint que vos utilisateurs demandent régulièrement.
   
@@ -46,13 +46,13 @@ Dans la figure suivante, chaque point représente une page qu’un utilisateur d
   
 ![Affiche les résultats de la mise en cache d’objets dans SharePoint Online](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
-Comme vous pouvez le constater sur le diagramme, les chances pour un utilisateur donné d’atteindre un serveur avec la version mise en cache de sa page sont très importantes. En outre, en raison du débit élevé et du fait que les serveurs sont partagés entre de nombreux sites, le cache ne dure pas longtemps, car il n’y a que trop d’espace disponible pour la mise en cache.
+Comme vous pouvez le voir sur le diagramme, les chances pour un utilisateur donné d’atteindre un serveur avec la version mise en cache de sa page sont faibles. En outre, en raison du débit élevé et du fait que les serveurs sont partagés entre de nombreux sites, le cache ne dure pas longtemps, car il n’y a que trop d’espace disponible pour la mise en cache.
   
 Pour toutes ces raisons, le fait de compter sur les utilisateurs pour obtenir des objets mis en cache n’est pas un moyen efficace de garantir une expérience utilisateur de qualité et des temps de chargement de page dans SharePoint Online.
   
-## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>Si nous ne pouvons pas nous appuyer sur le cache d’objets pour améliorer les performances dans SharePoint Online, qu’utilisons-nous à la place ?
+## <a name="if-we-cant-rely-on-the-object-cache-to-improve-performance-in-sharepoint-online-what-do-we-use-instead"></a>Si nous ne pouvons pas compter sur le cache d’objets pour améliorer les performances dans SharePoint Online, qu’utilisons-nous à la place ?
 
-Étant donné que vous ne devez pas vous fier à la mise en cache dans SharePoint Online, vous devez évaluer d’autres approches de conception pour les personnalisations SharePoint qui utilisent le cache d’objets. Cela implique d’utiliser des approches pour les problèmes de performances qui ne reposent pas sur la mise en cache d’objets afin de produire de bons résultats pour les utilisateurs. Cela est décrit dans certains des autres articles de cette série et inclut :
+Étant donné que vous ne devez pas vous fier à la mise en cache dans SharePoint Online, vous devez évaluer d’autres approches de conception pour SharePoint personnalisations qui utilisent le cache d’objets. Cela implique d’utiliser des approches pour les problèmes de performances qui ne reposent pas sur la mise en cache d’objets afin de produire de bons résultats pour les utilisateurs. Cela est décrit dans certains des autres articles de cette série et inclut :
   
 - [Options de navigation pour SharePoint Online](navigation-options-for-sharepoint-online.md)
     

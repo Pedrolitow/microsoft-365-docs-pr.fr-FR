@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment acheter le module microsoft 365 Business Voice.
+description: Découvrez comment acheter le module Microsoft 365 Business Voice.
 ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -36,9 +36,9 @@ Avec Microsoft 365 Business Voice, vous pouvez effectuer et recevoir des appels,
 
 ## <a name="try-it"></a>Essayez !
 
-1. Dans le Centre d’administration Microsoft 365, sélectionnez **Facturation** et sélectionnez **Acheter des services.**
+1. Dans le centre Microsoft 365'administration, sélectionnez **Facturation,** puis **sélectionnez Acheter des services.**
 1. Faites défiler vers le bas **et choisissez Modules de modules.** 
-1. Sélectionnez **Microsoft 365 Business Voice.**
+1. Sélectionnez **Microsoft 365 Business Voice**.
 
     Si vous ne le voyez pas, vous devez d’abord acheter un abonnement commercial qui inclut Microsoft Teams.
 1. Entrez le nombre d’utilisateurs pour qui vous souhaitez obtenir des licences et **sélectionnez Check out maintenant.**

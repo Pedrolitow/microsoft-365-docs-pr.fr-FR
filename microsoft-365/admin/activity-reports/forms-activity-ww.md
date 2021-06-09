@@ -19,7 +19,7 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau de bord Microsoft 365 rapports dans le centre d Microsoft 365'administration Microsoft.
+description: Découvrez comment obtenir un rapport d’activité Microsoft Forms à l’aide du tableau de bord Microsoft 365 rapports de microsoft dans Microsoft 365'administration centrale.
 ms.openlocfilehash: 977ee360d91df0b15e25e86d052d852f9acafe6c
 ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "52242323"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 Rapports dans le Centre d’administration - Activité des formulaires
 
-Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer des rapports au niveau de chaque produit afin d'obtenir des informations plus précises sur les activités au sein de chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
+Le tableau Microsoft 365 **de rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer des rapports au niveau de chaque produit afin d'obtenir des informations plus précises sur les activités au sein de chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
 Par exemple, vous pouvez comprendre l’activité de chaque utilisateur titulaire d’une licence d’utilisation de Microsoft Forms en regardant leur interaction avec les formulaires. Il vous permet également de comprendre le niveau de collaboration en cours en regardant le nombre de formulaires créés et les formulaires à partir des formulaires à partir des utilisateurs.
   
@@ -49,7 +49,7 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Élément|Description|
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse de messagerie de l’utilisateur qui a effectué l’activité sur Microsoft Forms.  <br/> |

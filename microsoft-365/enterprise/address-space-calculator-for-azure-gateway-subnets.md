@@ -27,16 +27,16 @@ ms.locfileid: "49780567"
 
 Un réseau virtuel (VNet) dans les services d’infrastructure Azure connectés à d’autres réseaux doit avoir un sous-réseau de passerelle. Les meilleures pratiques pour définir le sous-réseau de passerelle sont les :
 
-- La longueur du préfixe du sous-réseau de passerelle peut avoir une longueur maximale de préfixe de 29 (par exemple, 10.119.255.248/29), mais il est recommandé d’utiliser une longueur de préfixe de 27 (par exemple, 10.119.255.224/27).
+- La longueur du préfixe du sous-réseau de passerelle peut avoir une longueur maximale de préfixe de 29 (par exemple, 10.119.255.248/29), mais la recommandation actuelle est que vous utilisez une longueur de préfixe de 27 (par exemple, 10.119.255.224/27).
 - Lors de la définition de l’espace d’adressare du sous-réseau de passerelle, utilisez la dernière partie de l’espace d’adressare du réseau VNet.
 
-Pour la deuxième recommandation, vous pouvez déterminer l’espace d’adressare du sous-réseau de passerelle en fixant les bits utilisés pour le sous-réseau de passerelle sur 0 et les autres bits de l’espace d’adressare du réseau VNet sur 1. Pour calculer rapidement l’espace d’adressare du sous-réseau de passerelle sans avoir à le convertir en binaire et à revenir au nombre décimal, vous pouvez utiliser une application console écrite en C# ou Python ou avec un bloc de commandes PowerShell.
+Pour la deuxième recommandation, vous pouvez déterminer l’espace d’adressare du sous-réseau de passerelle en fixant les bits utilisés pour le sous-réseau de passerelle sur 0 et les autres bits de l’espace d’adressare du réseau VNet sur 1. Pour calculer rapidement l’espace d’adressare du sous-réseau de passerelle sans avoir à convertir au format binaire et revenir au nombre décimal, vous pouvez utiliser une application console écrite en C# ou Python ou avec un bloc de commandes PowerShell.
 
 Cet article contient des blocs de code C#, Python et PowerShell qui calculent l’espace d’adressare du sous-réseau de passerelle en fonction des valeurs de w.x.y.z/n pour le préfixe d’adresse du réseau VNet et la longueur du préfixe de sous-réseau de passerelle.
 
-## <a name="c-code-block"></a>Bloc de code C#
+## <a name="c-code-block"></a>C# de code
 
-Utilisez ce bloc de code pour créer une application console en C#.
+Utilisez ce bloc de code pour créer une application console dans C#.
 
 ```c#
 using System; 
@@ -177,6 +177,6 @@ $dx= [string]$w2 + "." + [string]$x2 + "." + [string]$y2 + "." + [string]$z2 + "
 Write-Host "Your gateway address prefix is: " $dx
 ```
     
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
-[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

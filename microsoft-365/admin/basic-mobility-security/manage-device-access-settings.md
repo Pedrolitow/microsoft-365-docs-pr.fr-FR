@@ -27,16 +27,16 @@ ms.locfileid: "49876947"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Gérer les paramètres d’accès aux appareils dans Basic Mobility and Security
 
-Si vous utilisez Basic Mobility and Security, il se peut que vous ne soyez pas en mesure de gérer certains appareils avec Basic Mobility and Security. Si c’est le cas, vous devez bloquer Exchange ActiveSync’accès de l’application à la messagerie Microsoft 365 pour les appareils mobiles qui ne sont pas pris en charge par Basic Mobility and Security. Cela permet de sécuriser les informations de votre organisation sur davantage d’appareils.
+Si vous utilisez Basic Mobility and Security, il se peut que vous ne soyez pas en mesure de gérer certains appareils avec Basic Mobility and Security. Si c’est le cas, vous devez bloquer Exchange ActiveSync’accès de l’application Microsoft 365 messagerie électronique pour les appareils mobiles qui ne sont pas pris en charge par Basic Mobility and Security. Cela permet de sécuriser les informations de votre organisation sur davantage d’appareils.
 
 Utilisez les étapes suivantes :
 
-1. Connectez-vous à Microsoft 365 avec votre compte d’administrateur global.
+1. Connectez-vous Microsoft 365 avec votre compte d’administrateur global.
 
 2. Dans votre navigateur, tapez :  [https://protection.office.com](https://protection.office.com/) .    
 
     >[!IMPORTANT]
-    >Si c’est la première fois que vous utilisez Basic Mobility and Security pour Microsoft 365 Business Standard, activez-le ici : [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Une fois que vous l’avez activé, gérez vos appareils avec la conformité et la [sécurité Office 365 &.](https://protection.office.com/)
+    >Si c’est la première fois que vous utilisez Basic Mobility and Security pour Microsoft 365 Business Standard, activez-le ici : [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Une fois que vous l’avez activé, gérez vos appareils avec Office 365 [sécurité & conformité.](https://protection.office.com/)
 
 3. Accédez à Protection contre  **** la perte de >stratégies d’appareil de gestion des appareils, puis sélectionnez Gérer les paramètres d’accès des appareils à   >  **** l’échelle **de l’organisation.**
 
@@ -46,4 +46,4 @@ Utilisez les étapes suivantes :
 
 5. Sélectionnez **Enregistrer.**
 
-Pour découvrir les appareils que La mobilité et la sécurité de base prend en charge, voir [Fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)
+Pour découvrir les appareils que Basic Mobility and Security prend en charge, voir [Fonctionnalités de la mobilité et de la sécurité de base.](capabilities.md)

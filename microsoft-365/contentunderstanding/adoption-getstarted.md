@@ -46,7 +46,7 @@ Pour une comparaison plus complète des fonctionnalités, voir Différence entre
 
 Pour vous préparer à l’utilisation SharePoint Syntex dans votre organisation, vous devez d’abord comprendre les scénarios dans lesquels il sera utile. Le « pourquoi » permet de déterminer le modèle qui sera nécessaire et comment structurer votre organisation en fonction de l’endroit où le modèle sera appliqué. Voici quelques scénarios dans lequel la compréhension des documents peut aider votre organisation :
 
-- **Traitement de contenu :** Traiter les contrats, les instructions de travail et d’autres documents de type formulaire. Admission des formulaires, formation du modèle à comprendre et maque les champs, puis exécutez vos formulaires pour collecter automatiquement les données. Pour plus d’informations, voir [Vue d’ensemble du traitement des formulaires.](form-processing-overview.md)
+- **Traitement de contenu :** Traiter des contrats, des instructions de travail et d’autres documents de type formulaire. Admission des formulaires, formation du modèle à comprendre et maque les champs, puis exécutez vos formulaires pour collecter automatiquement les données. Pour plus d’informations, voir [Vue d’ensemble du traitement des formulaires.](form-processing-overview.md)
 - **Analyse des factures :** Retirez les détails pertinents de vos factures et assurez-vous qu’elles sont conformes à la stratégie ou qu’elles sont traitées correctement.
 
 Réfléchissez aux façons SharePoint Syntex peut aider votre organisation :
@@ -62,7 +62,7 @@ Lorsque vous réfléchissez aux scénarios d’entreprise à prendre en compte, 
 - Est-il possible de l’obtenir ?
 - Pouvez-vous mesurer la réussite ?
 
-Hiérarchiser les scénarios en fonction de l’impact et de la facilité d’implémentation. Faites en sorte que vos scénarios d’impact initial sur le domaine de travail soient plus faciles à implémenter. Ne pas hiérarchiser les scénarios à faible impact qui sont difficiles à implémenter.
+Hiérarchiser les scénarios en fonction de l’impact et de la facilité d’implémentation. Faites en sorte que vos scénarios d’impact initiaux soient plus faciles à implémenter. Ne pas hiérarchiser les scénarios à faible impact qui sont difficiles à implémenter.
 
 Utilisez les [exemples de scénarios](adoption-scenarios.md) et les cas d’utilisation pour vous faire des idées sur la façon d’utiliser SharePoint Syntex dans votre organisation.
 
@@ -70,13 +70,13 @@ Utilisez les [exemples de scénarios](adoption-scenarios.md) et les cas d’util
 
 Déterminer qui dans votre organisation créera et gérera les modèles ? Les rôles suivants peuvent être impliqués :
 
-| SharePoint/Administrateur de connaissances | Administrateur de plateforme Power Platform | Responsables d’informations | Propriétaire du modèle |
+| SharePoint/Administrateur de connaissances | Administrateur Power Platform | Gestionnaire des connaissances | Propriétaire du modèle |
 |:-------|:-------|:-------|:-------|
-| Rôle AAD| Rôle AAD | Rôle AAD | Champions |
+| Rôle AAD| Rôle AAD | Rôle AAD | Champions  |
 | Configurer le traitement des formulaires | Configurer l’environnement de service de données courant pour le traitement des formulaires | Recueillir des cas d’utilisation | Recueillir des cas d’utilisation professionnelle |
 | Gérer les centres de contenu et les autorisations| Acheter et allouer des crédits AIB | Établir les meilleures pratiques et examiner l’analyse du modèle | Créer et appliquer des modèles |
 
-Le gestionnaire de connaissances, le propriétaire des processus d’entreprise et le propriétaire du modèle de contenu créent des exemples de modèles et champion de l’adoption dans l’organisation.
+Le gestionnaire de connaissances, le propriétaire des processus d’entreprise et le propriétaire du modèle de contenu créent des exemples de modèles et l’adoption de champion dans l’organisation.
 Autres personnes impliquées : administrateur de conformité, responsables de taxonomie.
 
 Où créeront-ils et appliqueront-ils les modèles ? Existe-t-il des processus ou des référentiels existants qui pourraient être améliorés ?
@@ -121,7 +121,7 @@ Pour vous préparer à l’SharePoint Syntex, vous devez :
 ![Préparation pour la compréhension du contenu](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. Planifier l’état final
-    - Les modèles de compréhension de documents sont les moyens, et non la fin.
+    - Les modèles de compréhension de document sont les moyens, et non la fin.
     - Planifiez l’exploitation de la valeur des métadonnées extraites avec :
       - Recherche
       - Filtrage et mise en forme de l’affichage
@@ -131,7 +131,7 @@ Pour vous préparer à l’SharePoint Syntex, vous devez :
     - Comprendre l’utilisation existante de l’architecture des informations et de la fonctionnalité de gestion de contenu.
     - Les types de contenu existants sont-ils de bons candidats pour les modèles ?
     - Quels processus existants seraient améliorés par les métadonnées ?
-3. Conception
+3. Création
     - Concevoir votre approche de l’architecture des informations, des métadonnées gérées et des types de contenu
     - Concevez le processus de définition, de création, de gestion.
 

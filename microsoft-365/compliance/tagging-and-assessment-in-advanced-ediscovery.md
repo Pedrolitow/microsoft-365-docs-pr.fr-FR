@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 ROBOTS: NOINDEX, NOFOLLOW
-description: Examinez les étapes à suivre pour effectuer une formation sur l’évaluation, y compris le marquage des fichiers et l’examen des résultats de l’évaluation dans Advanced eDiscovery.
+description: Examinez les étapes à suivre pour effectuer une formation sur l’évaluation, y compris le marquage des fichiers et l’examen des résultats de l’Advanced eDiscovery.
 ms.openlocfilehash: 15bc8254ea1589d9afa17a74eaf3bfbcdfd4bba0
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -114,14 +114,14 @@ Lorsque l’indicateur de progression de l’évaluation indique que l’évalua
   
 L’affichage suivi développé montre l’étape suivante recommandée, les statistiques d’évaluation et l’accès aux résultats détaillés.
   
-Lorsque la richesse est très faible, le nombre de fichiers d’évaluation supplémentaires nécessaires pour atteindre un nombre minimal de fichiers pertinents afin de produire des statistiques utiles est très élevé. Advanced eDiscovery vous recommandera ensuite de passer à la formation. L’indicateur de progression de l’évaluation sera ombbré et aucune statistiques ne sera disponible.
+Lorsque la richesse est très faible, le nombre de fichiers d’évaluation supplémentaires nécessaires pour atteindre un nombre minimal de fichiers pertinents afin de produire des statistiques utiles est très élevé. Advanced eDiscovery vous recommanderez ensuite de passer à la formation. L’indicateur de progression de l’évaluation sera ombbré et aucune statistiques ne sera disponible.
   
 En l’absence de stabilisation basée sur les statistiques, des résultats seront obtenus avec un niveau de précision et de confiance inférieurs. Toutefois, ces résultats peuvent être utilisés pour rechercher des fichiers pertinents lorsque vous n’avez pas besoin de connaître le pourcentage de fichiers pertinents trouvés. De même, cet état peut être utilisé pour entraîner des problèmes de faible richesse, où les scores de pertinence peuvent accélérer l’accès aux fichiers pertinents pour un problème spécifique.
   
 > [!TIP]
 > Dans **l’onglet Suivi de \> pertinence,** affichage des problèmes développé, les options d’affichage suivantes sont disponibles : 
 > 
-> L’étape suivante recommandée,  telle que l’étape suivante : le marquage  peut être contourné (par problème) en cliquant sur le bouton Modifier à droite, puis en sélectionnant une autre étape dans l’étape **suivante.** Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’évaluation est la prochaine option recommandée, pour baliser d’autres fichiers d’évaluation et améliorer la précision des statistiques. 
+> L’étape suivante recommandée,  telle que l’étape suivante : le balisage peut être contourné (par problème) en cliquant sur le bouton Modifier à droite, puis en sélectionnant une autre étape à l’étape **suivante.**  Lorsque l’indicateur de progression de l’évaluation n’est pas terminé, l’évaluation est la prochaine option recommandée, pour baliser d’autres fichiers d’évaluation et améliorer la précision des statistiques. 
 > 
 > Vous pouvez modifier la marge d’erreur et évaluer son impact en cliquant sur Modifier **et** dans la boîte de dialogue Niveau d’évaluation, en modifiant la marge d’erreur cible pour les estimations de rappel et en cliquant sur Mettre à jour les **valeurs.** En outre, dans cette boîte de dialogue, vous pouvez afficher les options avancées en cliquant sur **Avancé.** 
 > 

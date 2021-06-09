@@ -1,5 +1,5 @@
 ---
-title: Importer des dépositaires dans un cas Advanced eDiscovery
+title: Importer des dépositaires dans un Advanced eDiscovery de données
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Utilisez l’outil d’importation pour ajouter rapidement plusieurs dépositaires et leurs sources de données associées à un cas dans Advanced eDiscovery.
+description: Utilisez l’outil d’importation pour ajouter rapidement plusieurs dépositaires et leurs sources de données associées à un cas Advanced eDiscovery.
 ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -22,13 +22,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50421611"
 ---
-# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importer des dépositaires dans un cas Advanced eDiscovery
+# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importer des dépositaires dans un Advanced eDiscovery de données
 
-Pour les cas Advanced eDiscovery qui impliquent de nombreux dépositaires, vous pouvez importer plusieurs dépositaires à la fois à l’aide d’un fichier CSV qui contient les informations nécessaires pour les ajouter à un cas.
+Pour Advanced eDiscovery cas qui impliquent de nombreux dépositaires, vous pouvez importer plusieurs dépositaires à la fois à l’aide d’un fichier CSV qui contient les informations nécessaires pour les ajouter à un cas.
 
 ## <a name="import-custodians"></a>Importer des dépositaires
 
-1. Ouvrez le cas Advanced eDiscovery et sélectionnez l’onglet **Sources de** données.
+1. Ouvrez le Advanced eDiscovery et sélectionnez **l’onglet Sources de** données.
 
 2. Cliquez **sur Ajouter des dépositaires**  >  **d’importation de source de données.**
 
@@ -51,19 +51,19 @@ Après avoir téléchargé le modèle de dépositaire CSV, vous pouvez ajouter d
 | Nom de colonne|Description|
 |:------- |:------------------------------------------------------------|
 |**ContactEmail du dépositaire**     |Adresse de messagerie UPN du dépositaire. Par exemple, sarad@contoso.onmicrosoft.com.           |
-|**Exchange activé** | Valeur TRUE/FALSE à inclure ou non à la boîte aux lettres du dépositaire.      |
-|**OneDrive activé** | Valeur TRUE/FALSE à inclure ou non au compte OneDrive Entreprise du dépositaire. |
+|**Exchange Activé** | Valeur TRUE/FALSE à inclure ou non à la boîte aux lettres du dépositaire.      |
+|**OneDrive Activé** | Valeur TRUE/FALSE à inclure ou non le compte de OneDrive Entreprise dépositaire. |
 |**Is OnHold**        | Valeur TRUE/FALSE pour indiquer s’il faut placer les sources de données du dépositaire en conservation. <sup>1</sup>     |
 |**Workload1 Type**         |Valeur de chaîne indiquant le type de source de données à associer au dépositaire. Les valeurs admises sont les suivantes : <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
-|**Emplacement de charge de travail1**     | En fonction de votre type de charge de travail, il s’errait de l’emplacement de la source de données. Par exemple, l’adresse e-mail d’une boîte aux lettres Exchange ou l’URL d’un site SharePoint. |
+|**Emplacement de charge de travail1**     | En fonction de votre type de charge de travail, il s’errait de l’emplacement de la source de données. Par exemple, l’adresse e-mail d’Exchange boîte aux lettres ou l’URL d’SharePoint site. |
 |||
 
 > [!NOTE]
-> <sup>1</sup> Vous pouvez placer un maximum de 1 000 boîtes aux lettres et 100 sites en conservation à l’aide du processus d’importation du dépositaire et du fichier CSV. Vous pouvez utiliser ce processus pour ajouter plus de 1 000 dépositaires à un cas, mais les limites de conservation s’appliquent toujours. Pour plus d’informations sur les limites de la fonctionnalité de découverte électronique avancée, voir [Limites dans Advanced eDiscovery.](limits-ediscovery20.md#hold-limits)
+> <sup>1</sup> Vous pouvez placer un maximum de 1 000 boîtes aux lettres et 100 sites en conservation à l’aide du processus d’importation du dépositaire et du fichier CSV. Vous pouvez utiliser ce processus pour ajouter plus de 1 000 dépositaires à un cas, mais les limites de conservation s’appliquent toujours. Pour plus d’informations sur les limites de la Advanced eDiscovery [.](limits-ediscovery20.md#hold-limits)
 
 Voici un exemple de fichier CSV avec des informations de dépositaire :<br/><br/>
 
-|ContactEmail du dépositaire      | Exchange activé | OneDrive activé | Is OnHold | Workload1 Type | Emplacement de charge de travail1             |
+|ContactEmail du dépositaire      | Exchange Activé | OneDrive Activé | Is OnHold | Workload1 Type | Emplacement de charge de travail1             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
@@ -71,7 +71,7 @@ Voici un exemple de fichier CSV avec des informations de dépositaire :<br/><br/
 
 ## <a name="custodian-and-data-source-validation"></a>Validation du dépositaire et de la source de données
 
-Une fois que vous avez chargé le fichier CSV du dépositaire, Advanced eDiscovery fait les choses suivantes :
+Après avoir chargé le fichier CSV du dépositaire, Advanced eDiscovery les choses suivantes :
 
 1. Valide les dépositaires et leurs sources de données.
 
@@ -79,25 +79,25 @@ Une fois que vous avez chargé le fichier CSV du dépositaire, Advanced eDiscove
 
 ### <a name="custodian-validation"></a>Validation du dépositaire
 
-Actuellement, nous 5 000 personnes qui importent des dépositaires inclus dans Azure Active Directory (Azure AD) de votre organisation.
+Actuellement, nous 5 000 dépositaires de l’importation qui sont inclus dans l’Azure Active Directory de votre organisation (Azure AD).
 
 L’outil d’importation du dépositaire trouve et valide les dépositaires à l’aide de la valeur UPN dans la colonne **contactEmail** du dépositaire dans le fichier CSV. Les dépositaires validés sont automatiquement ajoutés au cas et répertoriés sous l’onglet **Sources** de données du cas. Si un dépositaire ne peut pas être validé, il est répertorié dans le journal des erreurs  pour le travail BulkAddCustodian qui est répertorié sous l’onglet Travaux dans le cas. Les dépositaires nonvaleurs ne sont pas ajoutés au cas ou répertoriés sous l’onglet **Sources de** données.
 
 ### <a name="data-source-validation"></a>Validation de la source de données
 
-Une fois les dépositaires validés et ajoutés au cas, chaque boîte aux lettres principale et compte OneDrive associé à un dépositaire est ajouté.
+Une fois les dépositaires validés et ajoutés au cas, chaque boîte aux lettres principale OneDrive compte associé à un dépositaire est ajouté.
 
-Toutefois, si l’une des autres sources de données (telles que les sites SharePoint, Microsoft Teams, les groupes Microsoft 365 ou les  groupes Yammer) associées  à un dépositaire est in trouver, aucune d’entre elles n’est affectée au dépositaire et la valeur Non validée s’affiche dans la colonne État à côté du dépositaire sous l’onglet **Sources** de données.
+Toutefois, si l’une des autres sources de données (telles que les sites SharePoint, les Microsoft Teams, les groupes Microsoft 365 ou les groupes Yammer) associées à  un dépositaire est in  trouver, aucune d’entre elles n’est attribuée au dépositaire et la valeur Non validée est affichée dans la colonne État à côté du dépositaire sous l’onglet **Sources** de données.
 
 Pour ajouter des sources de données validées pour un dépositaire :
 
 1. Sous **l’onglet Sources de** données, sélectionnez un dépositaire qui contient des sources de données qui ne sont pas validées.
 
-2. Dans la page de flyout du dépositaire, faites défiler jusqu’à la section **Emplacements** de conservation pour afficher les sources de données validées et nonvalidées associées au dépositaire.
+2. Dans la page de flyout du dépositaire, faites défiler la **page** Emplacements de conservation pour afficher les sources de données validées et nonvalidées associées au dépositaire.
 
 3. Cliquez **sur Modifier** en haut de la page volante pour supprimer des sources de données non valides ou en ajouter de nouvelles.
 
-4. Après avoir supprimé des sources de données nonvalidées ou en  avoir ajouté une nouvelle, la valeur **Active** s’affiche dans la colonne État du dépositaire sous l’onglet **Sources** de données. Pour ajouter des sources qui apparaissaient précédemment comme non valides, suivez les étapes de correction ci-dessous pour les ajouter manuellement à un dépositaire.
+4. Une fois que vous avez supprimé des sources de données nonvalidées ou ajouté une nouvelle source de données, la valeur **Active** s’affiche dans la colonne État du dépositaire sous l’onglet **Sources de** données.  Pour ajouter des sources qui apparaissaient précédemment comme non valides, suivez les étapes de correction ci-dessous pour les ajouter manuellement à un dépositaire.
 
 ### <a name="remediating-invalid-data-sources"></a>Correction des sources de données non valides
 
@@ -105,7 +105,7 @@ Pour ajouter et associer manuellement une source de données qui n’était pas 
 
 1. Sous **l’onglet Sources de** données, sélectionnez un dépositaire pour ajouter et associer manuellement une source de données qui n’était pas valide précédemment.
 
-2. Cliquez **sur Modifier** en haut de la page volante pour associer des boîtes aux lettres, des sites, des équipes ou des groupes Yammer au dépositaire. Pour ce faire, cliquez sur **Modifier** à côté du type d’emplacement de données approprié.
+2. Cliquez **sur Modifier** en haut de la page volante pour associer des boîtes aux lettres, des sites, des Teams ou des groupes Yammer au dépositaire. Pour ce faire, cliquez sur **Modifier** à côté du type d’emplacement de données approprié.
 
 3. Cliquez **sur Suivant** pour afficher la page **Paramètres** de la mise en attente et configurer le paramètre de mise en attente pour les sources de données que vous avez ajoutées.
 

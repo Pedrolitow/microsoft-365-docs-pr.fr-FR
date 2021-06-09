@@ -48,18 +48,18 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `ClientVersion` | string | Version de l’agent de point de terminaison ou du capteur en cours d’exécution sur l’ordinateur |
-| `PublicIP` | string | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service Microsoft Defender for Endpoint. Il peut s’agit de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy |
+| `PublicIP` | string | Adresse IP publique utilisée par l’ordinateur intégré pour se connecter au service Microsoft Defender for Endpoint. Il peut s’agit de l’adresse IP de l’ordinateur lui-même, d’un périphérique NAT ou d’un proxy. |
 | `OSArchitecture` | string | Architecture du système d’exploitation s’exécutant sur la machine |
-| `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris les variantes au sein de la même famille, telles que Windows 10 et Windows 7 |
+| `OSPlatform` | string | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 10 et Windows 7 |
 | `OSBuild` | string | Version de build du système d’exploitation en cours d’exécution sur l’ordinateur |
-| `IsAzureADJoined` | booléen | Indicateur booléen pour savoir si l’ordinateur est joint au Azure Active Directory |
+| `IsAzureADJoined` | valeur booléenne | Indicateur booléen pour savoir si l’ordinateur est joint au Azure Active Directory |
 | `AadObjectId` | string | Identificateur unique de l’appareil dans Azure AD |
 | `LoggedOnUsers` | string | Liste de tous les utilisateurs connectés à l’ordinateur au moment de l’événement au format de tableau JSON |
 | `RegistryDeviceTag` | string | Balise d’ordinateur ajoutée via le Registre |
 | `OSVersion` | string | Version du système d’exploitation s’exécutant sur la machine |
 | `MachineGroup` | string | Groupe d’ordinateurs de l’ordinateur. Ce groupe est utilisé par le contrôle d’accès basé sur un rôle pour déterminer l’accès à l’ordinateur |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
-| `OnboardingStatus` | string | Indique si l’appareil est actuellement intégré ou non à Microsoft Defender For Endpoint ou si l’appareil n’est pas pris en charge |
+| `OnboardingStatus` | string | Indique si l’appareil est actuellement intégré à Microsoft Defender pour le point de terminaison ou si l’appareil n’est pas pris en charge |
 |`AdditionalFields` | string | Informations supplémentaires sur l’événement au format de tableau JSON |
 |`DeviceCategory` | string | Classification plus large qui groupe certains types d’appareils sous les catégories suivantes : Point de terminaison, Périphérique réseau, IoT, Inconnu |
 |`DeviceType` | string | Type d’appareil en fonction de l’objectif et des fonctionnalités, tels que l’appareil réseau, la station de travail, le serveur, l’appareil mobile, la console de jeu ou l’imprimante |

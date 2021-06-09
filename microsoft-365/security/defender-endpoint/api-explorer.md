@@ -45,7 +45,7 @@ Avec l’Explorateur d’API, vous pouvez :
 
 - Exécuter des demandes pour n’importe quelle méthode et voir les réponses en temps réel
 - Parcourez rapidement les exemples d’API et découvrez les paramètres qu’ils supportent
-- Effectuer des appels d’API en toute simplicité ; pas besoin de s’authentifier au-delà de la signature du portail de gestion
+- Effectuer facilement des appels d’API ; pas besoin de s’authentifier au-delà de la signature du portail de gestion
 
 ## <a name="access-api-explorer"></a>Explorateur d’API Access
 

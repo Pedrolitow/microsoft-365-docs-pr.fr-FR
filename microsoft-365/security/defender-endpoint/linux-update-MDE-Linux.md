@@ -1,7 +1,7 @@
 ---
 title: Planification d’une mise à jour de Microsoft Defender pour Endpoint (Linux)
 description: Découvrez comment planifier une mise à jour de Microsoft Defender pour Endpoint (Linux) pour mieux protéger les ressources de votre organisation.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -148,7 +148,7 @@ Pour plus d’informations, voir [https://puppet.com/blog/automating-puppet-cron
 > [!TIP]
 > Faites-le avant de modifier ou de supprimer. <br>
 
-**Pour restaurer des entrées crontab**
+**Pour restaurer des entrées de crontab**
 
 `crontab /var/tmp/cron_backup.dat`
 
