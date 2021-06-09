@@ -20,9 +20,9 @@ ms.locfileid: "48456374"
 
 La page de réservation est l’endroit où vous définissez l’apparence de la page de réservation de votre client externe. Une fois que vous personnalisez et publiez votre page de réservation, vos clients l’utiliseront pour prendre des rendez-vous avec vous.
 
-Pour personnaliser votre page de réservation, connectez-vous [Office.com,](https://office.com)puis rendez-vous sur la page  \> **Réservations.** Vous pouvez personnaliser la page de réservation avec les options suivantes. Une fois que vous avez configuré votre page de réservation, vous pouvez la publier afin que les clients peuvent commencer à prendre rendez-vous avec vous.
+Pour personnaliser votre page de réservation, connectez-vous [à Office.com,](https://office.com)puis rendez-vous sur la page  \> **Réservations.** Vous pouvez personnaliser la page de réservation avec les options suivantes. Une fois que vous avez configuré votre page de réservation, vous pouvez la publier afin que les clients peuvent commencer à prendre rendez-vous avec vous.
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings**.
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
 2. Dans le volet de navigation, sélectionnez **La page Réservation.**
 
@@ -32,9 +32,9 @@ La section ci-dessous vous donne des informations sur la configuration de votre 
 
     La page de réservation interne ressemble à ceci :
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="Page Réservations":::
 
-- Contrôle d’accès à la page de réservation : exiger un **compte Microsoft 365 de mon organisation pour le réserver**  La sélection de cette option permet uniquement aux membres de votre organisation d’afficher votre page ou de réserver des services. L’accès à la page est autorisé via des vérifications d’informations d’identification pour s’assurer que le visiteur appartient à un compte au sein du client.
+- **Contrôle d’accès à la page de réservation :** exiger un compte Microsoft 365 de mon organisation à réserver  La sélection de cette option permet uniquement aux membres de votre organisation d’afficher votre page ou de réserver des services. L’accès à la page est autorisé via des vérifications d’informations d’identification pour s’assurer que le visiteur appartient à un compte au sein du client.
 
 - **Contrôle d’accès à la page de réservation : désactiver l’indexation du** moteur de recherche direct de la page de réservation Ce paramètre empêche votre page d’apparaître dans les résultats de recherche pour Google, Bing ou d’autres moteurs de recherche. La sélection de cette case garantit que l’accès à la page est limité au lien de page généré.
 
@@ -58,7 +58,7 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour publier ou dépublie
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings**.
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
 1. Dans le volet de navigation, sélectionnez **La page Réservation.**
 

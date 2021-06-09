@@ -82,7 +82,7 @@ Consultez les ressources suivantes :
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Utiliser WMI pour configurer les options d’analyse
 
-Voir [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Voir [Windows Defender API WMIv2.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## <a name="email-scanning-limitations"></a>Limitations de l’analyse du courrier électronique
 

@@ -1,6 +1,6 @@
 ---
-title: Modèles et icônes d’architecture Microsoft 365
-description: Icônes à utiliser pour créer des diagrammes d’architecture pour Microsoft 365.
+title: Microsoft 365 et modèles d’architecture
+description: Icônes à utiliser dans la création de diagrammes d’architecture pour Microsoft 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -17,7 +17,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688731"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Modèles et icônes d’architecture Microsoft 365
+# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 et modèles d’architecture
 
 Il est important d’aider nos partenaires et clients à concevoir et à concevoir de nouvelles solutions. Les diagrammes d’architecture comme ceux inclus dans nos conseils peuvent vous aider à communiquer les décisions de conception et les relations entre les composants dans un environnement. Nous utilisons un ensemble de symboles et d’icônes avec des modèles Visio pour créer les diagrammes d’architecture que nous fournissons et fournissons ces outils ici pour vous aider à créer un diagramme d’architecture personnalisé pour votre prochaine solution.
 
@@ -35,16 +35,16 @@ Microsoft autorise l’utilisation de ces icônes dans des diagrammes architectu
  > [Télécharger les icônes SVG et PNG](https://go.microsoft.com/fwlink/?linkid=869455)
 
  > [!div class="button"]
- > [Télécharger les modèles et gabarits Visio](https://go.microsoft.com/fwlink/?linkid=2056186)
+ > [Télécharger Visio modèles et gabarits](https://go.microsoft.com/fwlink/?linkid=2056186)
 
 ## <a name="example-architecture-diagrams"></a>Exemples de diagrammes d’architecture
 
 Vous pouvez utiliser ces icônes et modèles pour créer des diagrammes comme dans les exemples suivants :
 
-1. Exemple de diagramme d’architecture de recherche pour SharePoint :
+1. Exemple de diagramme d’architecture de recherche SharePoint :
 
     ![Exemple d’architecture de recherche pour SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
 
-2. Diagramme de l’architecture du cycle de vie de rétention teams :
+2. Teams’architecture du cycle de vie de rétention :
 
-    ![Cycle de vie de rétention teams](../media/TeamsRetentionLifecycle.png)
+    ![Teams de rétention](../media/TeamsRetentionLifecycle.png)

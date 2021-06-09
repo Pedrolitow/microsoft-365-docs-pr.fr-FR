@@ -13,7 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont Microsoft 365 pour entreprise satisfait les besoins de l’entreprise.
+description: Comprendre la structure de base de l’infrastructure informatique locale de Contoso et la façon dont les besoins de l’entreprise sont satisfaits par Microsoft 365 entreprise.
 ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
 ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
@@ -91,7 +91,7 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
 - Réduire l’infrastructure d’accès distant pour les employés
 
-  Réduisez les coûts de maintenance et de support et améliorez les performances de la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
+  Réduisez les coûts de maintenance et de support et améliorez les performances pour la solution d’accès à distance en déplaçant les ressources couramment accessibles vers le cloud.
 
 - Fournir une meilleure connectivité et réduire la surcharge pour les transactions de l’entreprise à la vente (B2B)
 
@@ -107,14 +107,14 @@ Les besoins commerciaux de Contoso sont en cinq catégories principales :
 
 - Réduire la surcharge informatique pour la gestion des logiciels en cours d’exécution sur les PC et appareils clients
 
-  Automatisez l’installation des mises à jour du système d’exploitation Windows et des applications Microsoft 365 pour les entreprises au sein de l’organisation.
+  Automatisez l’installation des mises à jour Windows système d’exploitation et Applications Microsoft 365 pour les grandes entreprises au sein de l’organisation.
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Mappage des besoins de Contoso à Microsoft 365 entreprise
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Mappage des besoins métier de Contoso Microsoft 365 entreprise
 
-Le service informatique de Contoso a déterminé le mappage suivant des besoins de l’entreprise aux fonctionnalités de Microsoft 365 E5 avant le déploiement :
+Le service informatique de Contoso a déterminé le mappage suivant des besoins de l’entreprise Microsoft 365 E5 fonctionnalités avant le déploiement :
 
 
-| Catégorie | Besoin métier | Produits ou fonctionnalités Microsoft 365 pour les entreprises |
+| Catégorie | Besoin métier | Microsoft 365 pour les produits ou fonctionnalités d’entreprise |
 |:-------|:-----|:-----|
 | Productivité |  |  |
 |  | Faciliter la collaboration | Microsoft Teams, SharePoint, OneDrive |
@@ -122,9 +122,9 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 |  | Accroître la créativité et l’innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sécurité |  |  |
 |  | Gestion des identités et des accès | Comptes d’administrateur général dédiés avec Azure AD Multi-Factor Authentication (MFA) et Azure AD Privileged Identity Management (PIM) <BR> Authentification multifacteur pour tous les comptes d’utilisateur <BR> Accès conditionnel <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Defender pour Office 365 <BR> Microsoft Defender pour Office 365 <BR> Examen et réponse aux menaces microsoft 365 <BR> |
+|  | Protection contre les menaces | Advanced Threat Analytics <BR> Windows Defender <BR> Defender pour Office 365 <BR> Microsoft Defender pour Office 365 <BR> Microsoft 365 et réponse aux menaces <BR> |
 |  | Protection des informations | Azure Information Protection <BR> Protection contre la perte de données (DLP) <BR> Protection des informations Windows (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Gestion de la sécurité | Azure Defender  <BR> Centre de sécurité Windows Defender |
+|  | Gestion de la sécurité | Azure Defender  <BR> Centre de sécurité Windows Defender |
 | Accès mobile et à distance, et partenaires professionnels |  |  |
 |  | Meilleure sécurité pour les travailleurs mobiles et à distance | Microsoft Intune |
 |  | Réduire l’infrastructure d’accès distant pour les employés | Charges de travail Microsoft 365 et données informatiques |
@@ -137,10 +137,10 @@ Le service informatique de Contoso a déterminé le mappage suivant des besoins 
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez le réseau local de Contoso [Corporation](contoso-networking.md) et la façon dont il a été optimisé pour l’accès et la latence aux ressources cloud de Microsoft 365.
+Découvrez le réseau local de Contoso [Corporation](contoso-networking.md) et la façon dont il a été optimisé pour l’accès et la latence Microsoft 365 ressources informatiques.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

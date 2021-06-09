@@ -127,7 +127,7 @@ Vous pouvez également créer des types d’informations sensibles personnalisé
 
 ### <a name="checksum-validator"></a>Validateur checksum
 
-Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la base de contrôle.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
+Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la csum.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
  
 Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide Si mod valeur != chiffre 8 le numéro de compte n’est pas valide
 
@@ -141,7 +141,7 @@ Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffr
 > [!NOTE]
 > Si le chiffre de contrôle ne fait pas partie du calcul de la sommes de contrôle, utilisez 0 comme poids pour le chiffre de contrôle. Par exemple, dans le cas ci-dessus, le poids 8 est égal à 0 si le chiffre de contrôle ne doit pas être utilisé pour calculer le chiffre de vérification.  Modulo_operation).
 
-![Capture d’écran du validateur de checkum configuré](../media/checksum-validator.png)
+![Capture d’écran du validateur de la checkum configurée](../media/checksum-validator.png)
 
 ### <a name="date-validator"></a>Validateur de date
 

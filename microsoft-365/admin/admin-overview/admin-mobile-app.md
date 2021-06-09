@@ -1,5 +1,5 @@
 ---
-title: À propos de l’Microsoft 365'application mobile Admin
+title: À propos de l Microsoft 365'application mobile Admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -43,10 +43,10 @@ L’application d’administration offre un grand nombre de fonctionnalités qui
 - **Gestion et facturation des licences** Affichez la liste des licences achetées et attribuées, attribuez des licences aux utilisateurs, achetez ou supprimez des licences et affichez et téléchargez des factures.
 - **Prise en charge** Créez une demande de service et suivez toutes les mises à jour liées aux demandes de service pendant que vous êtes en cours d’utilisation.
 - **Centre de messages** Restez au courant de toutes les modifications à venir, de la maintenance planifiée ou d’autres annonces importantes relatives aux Microsoft 365
-- **État du service** Surveillez l’état de tous les services en visualxant l’état actuel du service et des détails sur les interruptions et les pannes du service.
+- **État du service** Surveillez l’état de tous les services en visualxant l’état actuel du service et des détails sur les interruptions et les pannes de service.
 - **Notifications** Restez informé de toutes les informations importantes et mises à jour relatives aux publications du centre de messages, à l’état du service et à la facturation par le biais de notifications Push. Vous pouvez même personnaliser ce dont vous souhaitez être averti.
 
-Si vous êtes un administrateur et que vous êtes responsable de plusieurs Microsoft 365 organisation, vous pouvez vous connectez à plusieurs organisations et passer rapidement d’une organisation à l’autre. L’application prend en charge le thème foncé et est disponible dans 39 langues.
+Si vous êtes un administrateur et que vous êtes responsable de plusieurs Microsoft 365 organisation, vous pouvez vous inscrire à plusieurs organisations et passer rapidement d’une organisation à l’autre. L’application prend en charge le thème foncé et est disponible en 39 langues.
   
 > [!IMPORTANT]
 > Si vous avez des problèmes lors de l’utilisation de l’application mobile Admin sur iOS ou Android, contactez-nous [feedback365@microsoft.com](mailto:feedback365@microsoft.com) nous le faire savoir.
@@ -65,7 +65,7 @@ Vous devez être administrateur dans une organisation Microsoft 365 pour utilise
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 Voici les réponses aux questions fréquemment posées.
   
@@ -103,7 +103,7 @@ Si vous sélectionnez un incident de service spécifique ou un message, l’opti
 
 Oui, vous pouvez configurer plusieurs comptes ou organisations.
 
-### <a name="im-unable-to-login-or-my-app-is-acting-funny-what-can-i-do-to-troubleshoot-or-fix-the-issue"></a>Je ne parvenez pas à me connecter ou mon application agit de façon étrange. Que puis-je faire pour résoudre le problème ?
+### <a name="im-unable-to-login-or-my-app-is-acting-funny-what-can-i-do-to-troubleshoot-or-fix-the-issue"></a>Je ne parvenez pas à me connecter ou mon application agit de façon ole. Que puis-je faire pour résoudre le problème ?
 
 Vous pouvez tenter d'exécuter les étapes classiques de dépannage d'application mobile :
 
@@ -120,7 +120,7 @@ Dans le menu de navigation de gauche, Paramètres  >  **notifications.** Vous po
 
 Envoyez [un feedback365@microsoft.com](mailto:feedback365@microsoft.com) pour signaler un problème avec l’application. Vous pouvez également nous faire part de vos commentaires au bas de cet article.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez téléchargé l’appareil mobile de l’administrateur, vous pouvez ajouter des utilisateurs pour vous aider à démarrer.
   

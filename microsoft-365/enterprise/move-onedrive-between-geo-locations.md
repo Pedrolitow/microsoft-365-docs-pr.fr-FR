@@ -24,9 +24,9 @@ ms.locfileid: "46689593"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Déplacer un site OneDrive vers un autre emplacement géographique 
 
-Avec le déplacement géographique de OneDrive, vous pouvez déplacer le OneDrive d’un utilisateur vers un autre emplacement géographique. Le déplacement géographique OneDrive est effectué par l’administrateur SharePoint Online ou l’administrateur général Microsoft 365. Avant de commencer un déplacement géographique OneDrive, n’oubliez pas d’avertir l’utilisateur dont OneDrive est déplacé et de lui recommander de fermer tous les fichiers pendant toute la durée du déplacement. (Si un document est ouvert par l’utilisateur à l’aide du client Office pendant le déplacement, le document doit être enregistré au nouvel emplacement une fois le déplacement terminé.) Le déplacement peut être programmé ultérieurement, si vous le souhaitez.
+Avec OneDrive géolocalisation, vous pouvez déplacer les données d’un OneDrive vers un autre emplacement géographique. OneDrive le déplacement géographique est effectué par l’administrateur SharePoint Online ou l’administrateur Microsoft 365 général. Avant de commencer un déplacement géographique OneDrive, n’oubliez pas d’avertir l’utilisateur dont le OneDrive est déplacé et de lui recommander de fermer tous les fichiers pendant toute la durée du déplacement. (Si un document est ouvert par l’utilisateur à l’aide du client Office pendant le déplacement, le document doit être enregistré au nouvel emplacement une fois le déplacement terminé.) Le déplacement peut être programmé ultérieurement, si vous le souhaitez.
 
-Le service OneDrive utilise le stockage Blob Azure pour stocker du contenu. Le blob de stockage associé au OneDrive de l’utilisateur sera déplacé de l’emplacement géographique source vers l’emplacement géographique de destination dans les 40 jours suivant la disposition de OneDrive de destination pour l’utilisateur. L’accès au OneDrive de l’utilisateur est restauré dès que le OneDrive de destination est disponible.
+Le service OneDrive utilise Azure Blob Stockage pour stocker du contenu. Le Stockage blob associé au OneDrive de l’utilisateur sera déplacé de la source vers l’emplacement géographique de destination dans les 40 jours suivant la OneDrive de destination disponible pour l’utilisateur. L’accès à la OneDrive de l’utilisateur est restauré dès que la OneDrive de destination est disponible.
 
 Pendant la durée du déplacement géographique du site OneDrive (environ 2 à 6 heures), le site OneDrive de l’utilisateur est défini en lecture seule. L’utilisateur peut toujours accéder à ses fichiers via le client de synchronisation OneDrive ou son site OneDrive dans SharePoint Online. Une fois le déplacement géographique du site OneDrive terminé, l’utilisateur est connecté automatiquement à son site OneDrive à l’emplacement géographique de destination lorsqu’il navigue vers OneDrive dans le lanceur d’applications Microsoft 365. Le client de synchronisation commence automatiquement la synchronisation à partir du nouvel emplacement.
 
@@ -54,13 +54,13 @@ Vous pouvez planifier les déplacements de site OneDrive à l’avance (décrit 
 
 ## <a name="moving-a-onedrive-site"></a>Déplacement d’un site OneDrive
 
-Pour effectuer un déplacement géographique OneDrive, l’administrateur client doit d’abord définir l’emplacement par choix de l’utilisateur sur l’emplacement géographique approprié. Une fois la PDL définie, attendez au moins 24 heures que la mise à jour PDL soit synchronisée entre les emplacements géographiques avant de commencer le déplacement géographique OneDrive.
+Pour effectuer un OneDrive géographique, l’administrateur client doit d’abord définir l’emplacement par choix par utilisateur (PDL) sur l’emplacement géographique approprié. Une fois la PDL définie, attendez au moins 24 heures que la mise à jour PDL soit synchronisée entre les emplacements géographiques avant de commencer le OneDrive géo.
 
-Lorsque vous utilisez les cmdlets de déplacement géographique, connectez-vous au service SPO à l’emplacement géographique OneDrive actuel de l’utilisateur, à l’aide de la syntaxe suivante :
+Lorsque vous utilisez les cmdlets de déplacement géographique, connectez-vous au service SPO à l’emplacement OneDrive l’emplacement géographique actuel de l’utilisateur, à l’aide de la syntaxe suivante :
 
 `Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
-Par exemple : pour déplacer OneDrive de l’utilisateur « Matt@contosoenergy.onmicrosoft.com » , connectez-vous au Centre d’administration EUR SharePoint, car le OneDrive de l’utilisateur se trouve dans l’emplacement géographique EUR :
+Par exemple : pour déplacer OneDrive de l’utilisateur « Matt@contosoenergy.onmicrosoft.com » , connectez-vous au Centre d’administration EUR SharePoint car le OneDrive de l’utilisateur se trouve dans l’emplacement géographique EUR :
 
 `Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
@@ -92,7 +92,7 @@ Pour démarrer le déplacement, exécutez :
 
 -   _UserPrincipalName_ : UPN de l’utilisateur dont le site OneDrive est déplacé.
 
--   _DestinationDataLocation_ : Geo-Location où OneDrive doit être déplacé. Il doit être identique à l’emplacement de données préféré de l’utilisateur.
+-   _DestinationDataLocation_ : Geo-Location où le OneDrive doit être déplacé. Il doit être identique à l’emplacement de données préféré de l’utilisateur.
 
 Par exemple, pour déplacer le site OneDrive de matt@contosoenergy.onmicrosoft.com de l’emplacement EUR à AUS, exécutez :
 
@@ -116,7 +116,7 @@ où _UserPrincipalName_ est l’UPN de l’utilisateur dont vous souhaitez arrê
 
 ## <a name="determining-current-status"></a>Déterminer l’état actuel
 
-Vous pouvez vérifier l’état d’un déplacement géographique OneDrive à l’entrée ou à la sortie de la géo à l’aide de l'Get-SPOUserAndContentMoveState de commande.
+Vous pouvez vérifier l’état d’une OneDrive géographique à l’entrée ou à la sortie de la géo à qui vous êtes connecté à l’aide de l'Get-SPOUserAndContentMoveState de données.
 
 Ces états de déplacement sont décrits dans le tableau suivant.
 
@@ -163,11 +163,11 @@ Les utilisateurs de OneDrive devraient observer des perturbations minimales si l
 
 ### <a name="onedrive-for-business"></a>OneDrive Entreprise
 
-Lorsque le déplacement est en cours, le OneDrive de l’utilisateur est en lecture seule. Une fois le déplacement terminé, l’utilisateur est dirigé vers son OneDrive dans le nouvel emplacement géographique lorsqu’il navigue vers OneDrive dans le lanceur d’applications Microsoft 365 ou un navigateur web.
+Lorsque le déplacement est en cours, la OneDrive de l’utilisateur est définie en lecture seule. Une fois le déplacement terminé, l’utilisateur est dirigé vers son OneDrive dans le nouvel emplacement géographique lorsqu’il navigue vers OneDrive le lanceur d’applications Microsoft 365 ou un navigateur web.
 
 ### <a name="permissions-on-onedrive-content"></a>Autorisations sur le contenu OneDrive
 
-Les utilisateurs ayant des autorisations sur le contenu OneDrive continueront d’avoir accès au contenu pendant le déplacement et une fois qu’il est terminé.
+Les utilisateurs autorisé à OneDrive contenu continueront d’avoir accès au contenu pendant le déplacement et une fois qu’il est terminé.
 
 ### <a name="onedrive-sync-client"></a>Client de synchronisation OneDrive 
 
@@ -199,8 +199,8 @@ Lorsque le déplacement géographique de OneDrive est terminé, l’utilisateur 
 
 ### <a name="existing-followed-groups-and-sites"></a>Sites et groupes suivis existants
 
-Les sites et groupes suivis s’afficheront dans le OneDrive de l’utilisateur, quel que soit son emplacement géographique. Les sites et groupes hébergés dans un autre emplacement géographique s’ouvrent dans un onglet distinct.
+Les sites suivis et les groupes s’afficheront dans les OneDrive de l’utilisateur, quel que soit leur emplacement géographique. Les sites et les groupes hébergés dans un autre emplacement géographique s’ouvrent dans un onglet distinct.
 
-### <a name="delve-geo-url-updates"></a>Mises à jour de l’URL géographique Delve
+### <a name="delve-geo-url-updates"></a>Delve Mises à jour de l’URL géographique
 
-Les utilisateurs sont envoyés vers la géo Delve correspondant à leur PDL uniquement après que leur OneDrive a été déplacé vers la nouvelle géographique.
+Les utilisateurs sont envoyés vers la Delve géographique correspondant à leur PDL uniquement après que leur OneDrive a été déplacée vers la nouvelle géographique.

@@ -1,6 +1,6 @@
 ---
 title: Méthodes et propriétés des activités de correction
-description: La réponse de l’API contient les & gestion des vulnérabilités de correction des menaces créées dans votre client. Vous pouvez demander toutes les activités de correction, une seule activité de correction ou des informations sur les appareils exposés pour une tâche de correction sélectionnée.
+description: La réponse d’API contient les & gestion des vulnérabilités de correction des menaces créées dans votre client. Vous pouvez demander toutes les activités de correction, une seule activité de correction ou des informations sur les appareils exposés pour une tâche de correction sélectionnée.
 keywords: api, correction, api de correction, obtenir, tâches de correction, méthodes de correction, propriétés de correction,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security

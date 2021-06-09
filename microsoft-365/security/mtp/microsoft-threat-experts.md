@@ -1,8 +1,8 @@
 ---
-title: Vue d'ensemble des experts microsoft en matière de menaces dans Microsoft 365 Defender
+title: Spécialistes des menaces Microsoft vue d’ensemble Microsoft 365 Defender
 ms.reviewer: ''
-description: Les experts microsoft en matière de menaces fournissent une couche supplémentaire d'expertise à Microsoft 365 Defender.
-keywords: service de repérage de menace gérée, repérage de menace gérée, service de détection et réponse gérée (MDR), MTE, Experts microsoft en matière de menaces
+description: Spécialistes des menaces Microsoft couche supplémentaire d’expertise pour Microsoft 365 Defender.
+keywords: service de repérage de menace gérée, repérage de menace gérée, service de détection et de réponse gérée (MDR), MTE, Spécialistes des menaces Microsoft
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -22,7 +22,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51764422"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Vue d'ensemble des experts microsoft en matière de menaces dans Microsoft 365
+# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Spécialistes des menaces Microsoft vue d’Microsoft 365'ensemble
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -33,65 +33,65 @@ ms.locfileid: "51764422"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Spécialistes des menaces Microsoft : les notifications d'attaques ciblées sont un service de recherche de menaces gérées. Une fois que vous avez appliqué et accepté, vous recevrez des notifications d'attaque ciblée de la part d'experts microsoft en matière de menaces, afin que vous ne manquez pas les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, le courrier électronique et les identités de votre organisation.
-Experts microsoft en matière de menaces : les experts à la demande vous offrent des conseils experts sur les menaces que votre organisation fait face. Vous pouvez obtenir de l'aide sur les menaces que votre organisation fait face. Il est disponible en tant que service d'abonnement.
+Spécialistes des menaces Microsoft - Les notifications d’attaques ciblées sont un service de recherche de menace gérée. Une fois que vous avez appliqué et accepté, vous recevrez des notifications d’attaque ciblée de la part d’experts microsoft en matière de menaces, afin que vous ne manquez pas les menaces critiques pour votre environnement. Ces notifications vous aideront à protéger les points de terminaison, le courrier électronique et les identités de votre organisation.
+Spécialistes des menaces Microsoft : les experts à la demande vous offrent des conseils experts sur les menaces que votre organisation est confrontée. Vous pouvez obtenir de l’aide sur les menaces que votre organisation fait face. Il est disponible en tant que service d’abonnement.
 
-## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Demander des experts microsoft en matière de menaces – Notifications d'attaque ciblée
+## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>Appliquer pour les Spécialistes des menaces Microsoft : notifications d’attaque ciblée
 
 > [!IMPORTANT]
-> Avant de vous inscrire, veillez à discuter des conditions d'éligibilité pour les experts microsoft en matière de menaces – Notifications d'attaque ciblées avec votre fournisseur de services techniques Microsoft et votre équipe de compte.
+> Avant de vous inscrire, veillez à discuter des conditions d’éligibilité pour Spécialistes des menaces Microsoft – Notifications d’attaque ciblées avec votre fournisseur de services techniques Microsoft et votre équipe de compte.
 
-Si vous avez déjà Microsoft Defender pour point de terminaison et Microsoft 365 Defender, vous pouvez demander des experts microsoft en matière de menaces – Notifications d'attaques ciblées via leur portail Microsoft 365 Defender. Go to **Settings > Endpoints > General > Advanced features > Microsoft Threat Experts – Targeted Attack Notifications,** and select **Apply**. Pour obtenir une description complète, voir Configurer les [fonctionnalités](./configure-microsoft-threat-experts.md) des experts microsoft en matière de menaces.
+Si vous avez déjà Microsoft Defender pour le point de terminaison et Microsoft 365 Defender, vous pouvez demander des notifications d’Spécialistes des menaces Microsoft – Attaques ciblées via leur portail Microsoft 365 Defender. Go to **Paramètres > Endpoints > General > Advanced features > Spécialistes des menaces Microsoft – Targeted Attack Notifications,** and select **Apply**. Voir [Configurer Spécialistes des menaces Microsoft fonctionnalités pour](./configure-microsoft-threat-experts.md) obtenir une description complète.
 
-![Capture d'écran de la page d'application MTE](../../media/mte/mte-collaboratewithmte.png)
+![Capture d’écran de la page d’application MTE](../../media/mte/mte-collaboratewithmte.png)
 
-Une fois votre application approuvée, vous commencez à recevoir des notifications d'attaque ciblée chaque fois que les experts en menace détectent une menace pour votre environnement.
+Une fois votre application approuvée, vous commencez à recevoir des notifications d’attaque ciblée chaque fois que les experts en menace détectent une menace pour votre environnement.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>S'abonner à Microsoft Threat Experts - Experts à la demande
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>S’abonner à Spécialistes des menaces Microsoft - Experts à la demande
 
-Contactez votre représentant Microsoft pour vous abonner aux Experts à la demande.  Pour [plus d'informations, voir](./configure-microsoft-threat-experts.md) Configurer les fonctionnalités des experts microsoft en matière de menaces.
+Contactez votre représentant Microsoft pour vous abonner aux Experts à la demande.  Pour [plus d’Spécialistes des menaces Microsoft,](./configure-microsoft-threat-experts.md) voir Configurer les fonctionnalités de gestion des données.
 
-## <a name="receive-targeted-attack-notification"></a>Recevoir une notification d'attaque ciblée
+## <a name="receive-targeted-attack-notification"></a>Recevoir une notification d’attaque ciblée
 
-Les experts microsoft en matière de menaces – Fonctionnalité de notification d'attaques ciblées offrent une recherche proactive des menaces les plus importantes pour votre réseau. Nos experts en matière de menaces recherchent les intrusions de l'adversaire humain, les attaques au clavier et les attaques avancées, telles que le cybermenace. Ces notifications s'afficheront sous la forme d'une nouvelle alerte. Le service de recherche géré inclut :
+La fonctionnalité Spécialistes des menaces Microsoft – Notification d’attaques ciblées fournit un recherche proactive des menaces les plus importantes pour votre réseau. Nos experts en matière de menaces recherchent les intrusions de l’adversaire humain, les attaques au clavier et les attaques avancées, telles que le cybermenace. Ces notifications s’afficheront sous la forme d’une nouvelle alerte. Le service de recherche géré inclut :
 
-- Analyse et surveillance des menaces, réduction du temps d'activité et des risques pour votre entreprise
+- Analyse et surveillance des menaces, réduction du temps d’activité et des risques pour votre entreprise
 - Intelligence artificielle entraînée pour découvrir et cibler les attaques connues et les menaces émergentes
 - Identification des risques les plus pertinents, aider les SOC à optimiser leur efficacité
-- Aide à réduire les compromissions et à fournir autant de contexte que possible pour permettre une réponse SOC rapide.
+- Aide à réduire les compromissions et à fournir autant de contexte qu’il est possible de fournir rapidement pour activer une réponse SOC rapide.
 
 ## <a name="collaborate-with-experts-on-demand"></a>Collaborer avec des experts à la demande
 
-Vous pouvez également contacter des experts microsoft en matière de menaces directement à l'intérieur du portail de sécurité Microsoft 365, pour obtenir une réponse rapide et précise aux menaces.  Les experts peuvent fournir des informations pour mieux comprendre les menaces complexes que votre organisation peut faire face.  Consultez un expert pour :
+Vous pouvez également contacter des experts microsoft en matière de menaces directement à l’intérieur Microsoft 365 portail de sécurité, pour obtenir une réponse rapide et précise aux menaces.  Les experts peuvent fournir des informations pour mieux comprendre les menaces complexes que votre organisation peut faire face.  Consultez un expert pour :
 
-- Recueillir des informations supplémentaires sur les alertes et les incidents, y compris les causes racines et l'étendue
+- Recueillir des informations supplémentaires sur les alertes et les incidents, y compris les causes racines et l’étendue
 - Gagner en clarté sur les appareils, alertes ou incidents suspects et obtenir les étapes suivantes si vous êtes confronté à une attaque avancée
 - Déterminer les risques et les protections disponibles liés aux acteurs des menaces, aux campagnes ou aux techniques malveillantes émergentes
 
-L'option de **consulter un expert en menaces** est disponible à plusieurs endroits dans le portail :
+L’option de **consulter un expert en menaces** est disponible à plusieurs endroits dans le portail :
 
-- <i>**Menu Actions de la page d'appareil**</i><BR>
-![Capture d'écran de l'option de menu MTE-EOD dans le menu d'action de la page Appareil](../../media/mte/device-actions-mte-highlighted.png)
+- <i>**Menu Actions de la page d’appareil**</i><BR>
+![Capture d’écran de l’option de menu MTE-EOD dans le menu d’action de la page Appareil](../../media/mte/device-actions-mte-highlighted.png)
 
-- <i>**Menu volant de la page d'inventaire des appareils**</i><BR>
-![Capture d'écran de l'option de menu MTE-EOD sur la page d'inventaire des appareils](../../media/mte/device-inventory-mte-highlighted.png)
+- <i>**Menu volant de la page d’inventaire des appareils**</i><BR>
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des appareils](../../media/mte/device-inventory-mte-highlighted.png)
 
 - <i>**Menu volant de la page Alertes**</i><BR>
-![Capture d'écran de l'option de menu MTE-EOD sur la page d'alerte](../../media/mte/alerts-actions-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’alerte](../../media/mte/alerts-actions-mte-highlighted.png)
 
 - <i>**Menu Actions de la page Incidents**</i><BR>
-![Capture d'écran de l'option de menu MTE-EOD sur la page Incidents](../../media/mte/incidents-action-mte-highlighted.png)
+![Capture d’écran de l’option de menu MTE-EOD sur la page Incidents](../../media/mte/incidents-action-mte-highlighted.png)
 
-- <i>**Page d'inventaire des incidents**</i><BR>
-![Capture d'écran de l'option de menu MTE-EOD sur la page d'inventaire des incidents](../../media/mte/incidents-inventory-mte-highlighted.png)
+- <i>**Page d’inventaire des incidents**</i><BR>
+![Capture d’écran de l’option de menu MTE-EOD sur la page d’inventaire des incidents](../../media/mte/incidents-inventory-mte-highlighted.png)
 
 > [!NOTE]
-> Si vous avez un abonnement au support Premier mappé à votre licence Microsoft Defender pour Office 365, vous pouvez suivre l'état de vos cas Experts à la demande via le Microsoft Services Hub.
+> Si vous avez un abonnement au support Premier mappé à votre licence Microsoft Defender pour Office 365, vous pouvez suivre l’état de vos cas Experts à la demande via le Microsoft Services Hub.
 
-Regardez cette vidéo pour obtenir une vue d'ensemble rapide du Microsoft Services Hub.
+Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Services Hub.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les fonctionnalités des experts microsoft en matière de menaces](./configure-microsoft-threat-experts.md)
+- [Configurer les fonctionnalités Spécialistes des menaces Microsoft de gestion](./configure-microsoft-threat-experts.md)

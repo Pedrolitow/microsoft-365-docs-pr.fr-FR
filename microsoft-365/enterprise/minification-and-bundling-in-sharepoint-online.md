@@ -49,7 +49,7 @@ Web Essentials offre deux formes de regroupement :
     
 - .sprite : pour les images (disponible uniquement dans Visual Studio 2013)
     
-Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation référencés dans une page maître personnalisée, telles que :
+Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité existante avec certains éléments de personnalisation qui sont référencés dans une page maître personnalisée, telle que :
   
 ![Capture d’écran de l’élément de marque sur la page maître personnalisée](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
@@ -57,7 +57,7 @@ Vous pouvez utiliser Web Essentials si vous disposez d’une fonctionnalité exi
   
 1. Dans Visual Studio, dans l’Explorateur de solutions, sélectionnez les fichiers que vous souhaitez inclure dans le fichier groupé.
     
-2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** Créer un fichier groupé \> **JavaScript** dans le menu contextif. Par exemple : 
+2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** Créer un fichier groupé \> **JavaScript** dans le menu contextif. Par exemple : 
     
     ![Capture d’écran montrant les options de menu Web Essentials](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -77,7 +77,7 @@ La figure suivante est le résultat du chargement des fichiers JavaScript et CSS
   
 ![Capture d’écran montrant 80 éléments en cours de téléchargement](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
   
-Après avoir groupé les fichiers CSS et JavaScript, le nombre de demandes abandonnées à 74 et chaque fichier n’a pris que légèrement plus de temps que les fichiers d’origine à télécharger individuellement :
+Après avoir groupé les fichiers CSS et JavaScript, le nombre de demandes est passé à 74 et chaque fichier n’a pris que légèrement plus de temps que les fichiers d’origine à télécharger individuellement :
   
 ![Capture d’écran montrant 74 éléments en cours de téléchargement](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   
@@ -87,13 +87,13 @@ Après le regroupement, le fichier groupé JavaScript est considérablement réd
   
 ## <a name="bundling-images-by-creating-an-image-sprite"></a>Regroupement d’images en créant un sprite d’image
 
-À l’image de la façon dont vous regroupez des fichiers JavaScript et CSS, vous pouvez combiner de nombreuses petites icônes et autres images communes dans une feuille de sprite plus grande, puis utiliser CSS pour révéler les images individuelles. Au lieu de télécharger chaque image individuelle, le navigateur web de l’utilisateur télécharge une seule fois la feuille de sprite, puis la met en cache sur l’ordinateur local. Cela améliore les performances de chargement des pages en réduisant le nombre de téléchargements et d’allers-retours vers le serveur web.
+À l’image de la façon dont vous regroupez des fichiers JavaScript et CSS, vous pouvez combiner de nombreuses petites icônes et d’autres images communes dans une feuille de sprite plus grande, puis utiliser CSS pour révéler les images individuelles. Au lieu de télécharger chaque image individuelle, le navigateur web de l’utilisateur télécharge une seule fois la feuille de sprite, puis la met en cache sur l’ordinateur local. Cela améliore les performances de chargement des pages en réduisant le nombre de téléchargements et d’allers-retours vers le serveur web.
   
  **Pour créer un sprite d’image dans Web Essentials**
   
 1. Dans Visual Studio, dans l’Explorateur de solutions, sélectionnez les fichiers que vous souhaitez inclure dans le fichier groupé.
     
-2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** Créer un \> **sprite d’image** dans le menu contextiqué. Par exemple : 
+2. Cliquez avec le bouton droit sur les fichiers sélectionnés, puis sélectionnez **Web Essentials** Créer un \> **sprite d’image** dans le menu contextiqué. Par exemple : 
     
     ![Capture d’écran montrant comment créer une image-objet](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

@@ -21,10 +21,10 @@ ms.locfileid: "48644854"
 ---
 # <a name="update-your-mx-records-to-transition-to-the-global-exchange-online-service"></a>Mettre à jour vos enregistrements MX pour passer au service Exchange Online global
 
-1. Connectez-vous [au portail d’administration Microsoft 365](https://admin.microsoft.com)et allez aux **domaines**  >  **paramètres**
+1. Connectez-vous [Microsoft 365 portail d’administration](https://admin.microsoft.com)et **Paramètres**  >  **Domaines**
 
 2. L’état s’affiche sur le côté droit de chaque domaine. Si les domaines de votre organisation pointent vers Microsoft Cloud Germany Exchange Online, vous devez mettre à jour votre enregistrement MX.
 
 3. Cliquez sur le domaine, puis cliquez sur **Erreurs DNS détectées, cliquez ici pour afficher**.
 
-4. Cette page vous indique comment corriger l’enregistrement MX. Si le bureau d’enregistrement de votre domaine utilise [Domain Connect,](../setup/add-domain.md#registrars-with-domain-connect)vous pouvez cliquer sur « Corriger mes enregistrements » en haut. Sinon, vous pouvez suivre le lien dans l’Assistant pour obtenir des **instructions détaillées** pour votre bureau d’enregistrement.
+4. Cette page aura des instructions pour vous montrer comment corriger l’enregistrement MX. Si le bureau d’enregistrement de votre domaine utilise [Domain Connecter](../setup/add-domain.md#registrars-with-domain-connect), vous pouvez cliquer sur « Corriger mes enregistrements » en haut. Sinon, vous pouvez suivre le lien dans l’Assistant pour suivre des **instructions détaillées pour** votre bureau d’enregistrement.

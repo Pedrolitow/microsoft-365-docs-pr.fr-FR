@@ -49,17 +49,17 @@ Avant de configurer le forwarding du courrier électronique, notez les remarques
 
 Vous devez être administrateur Exchange administrateur général ou administrateur général Microsoft 365 pour pouvoir suivre ces étapes. Pour plus d’informations, voir la rubrique [à propos des rôles d’administrateur.](../add-users/about-admin-roles.md)
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=834822)**
+1. Dans le centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=834822)**
 
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez qu’il soit transmis, puis ouvrez la page des propriétés.
 
-3. Sous **l’onglet Courrier,** **sélectionnez Gérer le forwarding de courrier.**
+3. Sous **l’onglet** Courrier, **sélectionnez Gérer le forwarding de courrier.**
 
 4. Dans la page De forwarding de courrier, sélectionnez Forward **all emails sent to this mailbox,** enter the forwarding address, and choose whether you want to keep a copy of forwarded emails. Si cette option n’est pas disponible, assurez-vous qu’une licence est attribuée au compte d’utilisateur. Sélectionnez **Enregistrer les modifications**.
 
     **Pour le forward vers plusieurs adresses** e-mail, vous pouvez demander à l’utilisateur de configurer une règle dans Outlook pour le forward aux adresses. 
     
-    1.  Ouvrir **outlook**  >  **Home**  >   **Rules >** Select Manage Rules & **Alerts**
+    1.  Ouvrez **outlook**  >  **Home**  >   **Rules** > Select Manage Rules **& Alerts**
     1. Select **New Rule** Select Apply rule on message I  >  **receive** located near bottom of list, then click **Next**.
     1. Cliquez **sur Oui** lorsque vous y êtes invité. Cette règle s’applique à chaque message que vous recevez. 
     1. Dans la liste suivante, sélectionnez les actions pour les rediriger vers des personnes ou un **groupe public** et arrêter le **traitement d’autres règles**
@@ -76,7 +76,7 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=847686)**
+1. Dans le centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=847686)**
 
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez qu’il soit transmis pour ouvrir la page de propriétés.
 
@@ -94,7 +94,7 @@ Vous devez être administrateur Exchange administrateur général ou administrat
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=850628)**
+1. Dans le centre d’administration, allez à la page **Utilisateurs** \> **[actifs.](https://go.microsoft.com/fwlink/p/?linkid=850628)**
 
 2. Sélectionnez le nom de l’utilisateur dont vous souhaitez qu’il soit transmis pour ouvrir la page de propriétés.
 

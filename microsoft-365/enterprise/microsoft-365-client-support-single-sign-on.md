@@ -25,7 +25,7 @@ ms.locfileid: "52730185"
 ---
 # <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365 Prise en charge des applications clientes : Sign-On
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 L' sign-on unique (SSO) ajoute sécurité et commodité lorsque vos utilisateurs se connectent à des applications dans Azure Active Directory. Avec l' sign-on unique, les utilisateurs se connectent une fois avec un compte pour accéder aux appareils joints au domaine AD DS (Active Directory Domain Services) locaux, aux applications SaaS (Software as a Service) et aux applications web.
 
@@ -33,7 +33,7 @@ En savoir plus [sur l' sign-on unique.](/azure/active-directory/manage-apps/what
 
 ## <a name="supported-clients--platforms"></a>Clients pris en charge & plateformes
 
-Les dernières versions des plateformes et des clients suivants prisent en charge l' sign-on unique. Pour plus d’informations sur la prise en charge des plateformes dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
+Les dernières versions des plateformes et des clients suivants prisent en charge l' sign-on unique. Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 

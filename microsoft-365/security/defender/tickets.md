@@ -1,6 +1,6 @@
 ---
-title: Intégrer des tickets ServiceNow dans le Centre de sécurité et le Centre de conformité Microsoft 365
-description: Découvrez comment créer et suivre des tickets dans ServiceNow à partir du Centre de sécurité et du Centre de conformité Microsoft 365.
+title: Intégrer des tickets ServiceNow dans le centre de sécurité Microsoft 365 et le centre de conformité
+description: Découvrez comment créer et suivre des tickets dans ServiceNow à partir du centre de sécurité Microsoft 365 et du centre de conformité.
 keywords: sécurité, Microsoft 365, M365, conformité, centre de conformité, centre de sécurité, ServiceNow, tickets, tâches, LOI, connexion
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51569867"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Intégrer des tickets ServiceNow dans le Centre de sécurité et le Centre de conformité Microsoft 365
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Intégrer des tickets ServiceNow dans le centre de sécurité Microsoft 365 et le centre de conformité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

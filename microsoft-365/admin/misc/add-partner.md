@@ -39,13 +39,13 @@ ms.locfileid: "52683342"
 
 ::: moniker range="o365-worldwide"
 
-[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que partenaire de registre lorsque vous achetez Microsoft 365 ou à un autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web de Microsoft Pinpoint.](https://pinpoint.microsoft.com)
+[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que partenaire de registre lorsque vous achetez Microsoft 365 ou à un autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web De Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que Partenaire de référence quand vous achetez Office 365 ou à tout autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web de Microsoft Pinpoint.](https://pinpoint.microsoft.com)
+[] Un partenaire agréé de Microsoft (conseiller en abonnement) vous fournit les conseils d'achat, le support et l'expertise technique dont vous avez besoin pour configurer et personnaliser votre abonnement. Vous pouvez ajouter un partenaire conseiller en abonnement en tant que Partenaire de référence quand vous achetez Office 365 ou à tout autre moment. Si vous ne travaillez pas actuellement avec un partenaire, vous en trouverez également un sur le site [web De Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou obtenir une corres
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 2. Si vous avez plusieurs abonnements, sélectionnez l’abonnement à modifier.
-3. À droite, sous le coût de l’abonnement, sélectionnez les trois points (autres actions) > ajouter un **partenaire de l’enregistrement**.
+3. À droite, sous le coût d’abonnement, sélectionnez les trois points (plus d’actions) > **ajouter un partenaire de l’enregistrement.**
 4. Tapez l'ID partenaire Microsoft du partenaire que vous ajoutez, puis sélectionnez **Vérifier l'ID** et **Envoyer**. Vous pouvez obtenir cet ID auprès du partenaire.
 5. L'ID de partenaire apparaît sur la page **Abonnements**.
 
@@ -126,7 +126,7 @@ Pour accepter cette offre
   
 1. Lisez les termes du partenaire dans l’e-mail.
 2. Pour autoriser le contrat, sélectionnez le lien qui permet d’obtenir une page d’autorisation dans Office 365.
-3. Sous **Relations de** partenaires, sélectionnez **Oui** pour autoriser le partenaire à être votre administrateur délégué, puis sélectionnez **Suivant.**
+3. Sous **Relations de** partenariat, sélectionnez **Oui** pour autoriser le partenaire à être votre administrateur délégué, puis sélectionnez **Suivant.**
 4. Si l’offre de relation de partenaire est associée à un abonnement d’essai ou à une offre d’achat, créez votre compte d’essai ou d’abonnement.
 
 ::: moniker-end

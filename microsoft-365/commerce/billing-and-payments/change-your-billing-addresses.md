@@ -39,7 +39,7 @@ Votre facture contient trois adresses :
 
 Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une adresse de messagerie de remplacement pour recevoir des notifications de facturation et modifier l’adresse de messagerie de remplacement pour d’autres administrateurs.
 
-Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoice.md) votre facture et Comprendre [votre facture.](understand-your-invoice2.md)
+Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoice.md) votre facture et [Comprendre votre facture.](understand-your-invoice2.md)
 
 ## <a name="change-your-sold-to-address"></a>Modifier votre adresse de vente
 
@@ -51,13 +51,13 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">d’administration,</a>allez à la page **Comptes** > **de facturation.**
+1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">d’administration,</a>allez à la page  > **Comptes de facturation.**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">d’administration,</a>allez à la page **Comptes** > **de facturation.**
+1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">d’administration,</a>allez à la page  > **Comptes de facturation.**
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 3. Dans la page **Détails du mode de paiement,** sélectionnez **Modifier.**
 
-4. Mettez à jour votre adresse de facturation, puis sélectionnez **Enregistrer** \> **terminé.**
+4. Mettez à jour votre adresse de facturation, puis **sélectionnez Enregistrer** \> **terminé.**
 
 ## <a name="change-your-service-usage-address"></a>Modifier votre adresse d'utilisation du service
 
@@ -117,7 +117,7 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 3. Dans la page détails de l’abonnement, dans la section **Adresse d’utilisation du service,** **sélectionnez Modifier l’adresse d’utilisation du service.**
 
-4. Dans le **volet Modifier l’adresse d’utilisation du service,** mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
+4. Dans le **volet Modifier l’adresse d’utilisation** du service, mettez à jour votre adresse, puis sélectionnez **Enregistrer.**
 
 ## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a>Modifier l'adresse de messagerie de secours à laquelle les notifications de facturation sont envoyées
 
@@ -127,7 +127,7 @@ Par défaut, les notifications de facturation de votre organisation sont envoyé
 
 2. Sélectionnez **l’icône Utilisateur,** puis **Mon compte.**
   
-3. Sélectionnez **Informations personnelles.**
+3. Sélectionnez **Informations personnelles**.
   
 4. Dans la **zone Détails du contact,** sélectionnez **Modifier.**
 

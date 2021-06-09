@@ -48,7 +48,7 @@ Par ailleurs, il est possible que les utilisateurs dans votre organisation puiss
 
 Trois scénarios peuvent s'appliquer aux utilisateurs de votre organisation :
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scénario 1 : votre organisation dispose déjà d’un environnement Microsoft 365 existant et l’utilisateur qui s’Power BI a déjà un compte Microsoft 365 client.
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scénario 1 : votre organisation dispose déjà d’un environnement Microsoft 365 existant et l’utilisateur qui s’Power BI possède déjà un compte Microsoft 365 client.
 
 Dans ce scénario, si un utilisateur possède déjà un compte professionnel ou scolaire dans le client (par exemple, contoso.com) mais n'a pas encore Power BI, Microsoft activera simplement l'offre pour ce compte et l'utilisateur sera automatiquement informé en relation avec l'utilisation du service Power BI.
   
@@ -58,14 +58,14 @@ Dans ce scénario, l’utilisateur dispose d’une adresse de messagerie dans le
   
 ### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Scénario 3 : votre organisation n’a pas d’environnement Microsoft 365 connecté à votre domaine de messagerie.
 
-Il n’existe aucune action administrative dont votre organisation a besoin pour tirer parti Power BI.
+Il n’existe aucune action administrative dont votre organisation a besoin pour tirer parti des Power BI.
   
 > [!IMPORTANT]
-> Si votre organisation possède plusieurs domaines de messagerie et que vous préférez que toutes les extensions d’adresse de messagerie soient dans le même client, avant que des utilisateurs ne créent votre client principal, ajoutez tous les domaines d’adresse de messagerie à ce client avant que les utilisateurs ne créent votre client principal. Il n’existe aucun mécanisme automatisé pour déplacer les utilisateurs entre les clients après leur création. Pour plus d’informations sur ce processus, voir Si j’ai plusieurs domaines, puis-je contrôler le client à qui les utilisateurs sont [ajoutés ?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) plus loin dans cet article et Ajouter un domaine à [Office 365](../setup/add-domain.md) en ligne.
+> Si votre organisation possède plusieurs domaines de messagerie et que vous préférez que toutes les extensions d’adresse de messagerie soient dans le même client, avant que des utilisateurs ne créent votre client principal, ajoutez tous les domaines d’adresse de messagerie à ce client avant que les utilisateurs ne créent votre client principal. Il n’existe aucun mécanisme automatisé pour déplacer des utilisateurs entre des clients après leur création. Pour plus d’informations sur ce processus, voir Si j’ai plusieurs domaines, puis-je contrôler le client à qui les utilisateurs sont [ajoutés ?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) plus loin dans cet article et Ajouter un domaine à [Office 365](../setup/add-domain.md) en ligne.
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>Quelles seront les conséquences sur ma méthode actuelle de gestion des identités pour les utilisateurs de mon organisation ?
 
-Si votre organisation dispose déjà d’un environnement Microsoft 365 et que tous les utilisateurs de votre organisation disposent Microsoft 365 comptes, la gestion des identités ne change pas.
+Si votre organisation dispose déjà d’un environnement Microsoft 365 existant et que tous les utilisateurs de votre organisation disposent Microsoft 365 comptes, la gestion des identités ne change pas.
   
 Si votre organisation dispose déjà d’un environnement Microsoft 365, mais que tous les utilisateurs de votre organisation ne disposent pas de comptes Microsoft 365, nous allons créer un utilisateur dans le client et attribuer des licences en fonction de l’adresse e-mail scolaire ou scolaire de l’utilisateur. Cela signifie que le nombre d'utilisateurs que vous gérez à un moment donné augmente à mesure que les utilisateurs de votre organisation s'inscrivent au service.
   

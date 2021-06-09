@@ -27,7 +27,7 @@ ms.locfileid: "52683774"
   
 ## <a name="data-spillage-scenario"></a>Scénario de débordement de données
 
-Vous êtes responsable de la sécurité des informations chez Contoso. Vous êtes informé d’une situation de débordement de données dans laquelle un employé a partagé sans le savoir un document hautement confidentiel avec plusieurs personnes par courrier électronique. Vous souhaitez évaluer rapidement qui a reçu ce document en interne et en externe. Une fois identifié, vous souhaitez partager les résultats des cas avec d’autres enquêteurs à examiner, puis supprimer définitivement les données de Office 365. Une fois l’examen terminé, vous souhaitez générer un rapport avec la preuve de la suppression définitive et d’autres détails de cas pour toute référence ultérieure.
+Vous êtes responsable de la sécurité des informations chez Contoso. Vous êtes informé d’une situation de débordement de données dans laquelle un employé a partagé sans le savoir un document hautement confidentiel avec plusieurs personnes par courrier électronique. Vous souhaitez évaluer rapidement qui a reçu ce document en interne et en externe. Une fois identifié, vous souhaitez partager les conclusions des cas avec d’autres enquêteurs à examiner, puis supprimer définitivement les données de Office 365. Une fois l’examen terminé, vous souhaitez générer un rapport avec la preuve de la suppression définitive et d’autres détails de cas pour toute référence ultérieure.
   
 ### <a name="scope-of-this-article"></a>Portée de cet article
 
@@ -64,7 +64,7 @@ Voici comment gérer un incident de débordement de données :
 
 Selon votre pratique organisationnelle, vous devez contrôler qui peut accéder au cas eDiscovery utilisé pour examiner un incident de débordement de données et configurer des limites de conformité. Le moyen le plus simple de le faire consiste à ajouter des enquêteurs en tant que membres d’un groupe de rôles existant dans le Centre de sécurité & conformité, puis à ajouter le groupe de rôles en tant que membre du cas eDiscovery. Pour plus d’informations sur les groupes de rôles eDiscovery intégrés et sur la façon d’ajouter des membres à un cas [eDiscovery, voir Attribuer des autorisations eDiscovery](assign-ediscovery-permissions.md).
   
-Vous pouvez également créer un groupe de rôles qui corresponde aux besoins de votre organisation. Par exemple, vous souhaitez peut-être qu’un groupe d’enquêteurs de débordement de données dans l’organisation accède à tous les cas de débordement de données et collabore sur ceux-là. Pour ce faire, créez un groupe de rôles « Enquêteur de débordement de données », attribuez les rôles appropriés (Exportation, Déchiffrement RMS, Révision, Aperçu, Recherche de conformité et Gestion des cas), ajoutez les enquêteurs de débordement de données au groupe de rôles, puis ajoutez le groupe de rôles en tant que membre du cas eDiscovery de débordement de données. Pour obtenir des instructions détaillées sur la façon de faire, voir Configurer les limites de conformité pour les enquêtes [eDiscovery](set-up-compliance-boundaries.md) dans Office 365 pour obtenir des instructions détaillées sur la façon de le faire. 
+Vous pouvez également créer un groupe de rôles qui corresponde aux besoins de votre organisation. Par exemple, vous souhaitez peut-être qu’un groupe d’enquêteurs de débordement de données dans l’organisation accède à tous les cas de débordement de données et collabore sur ceux-là. Pour ce faire, créez un groupe de rôles « Enquêteur de débordement de données », attribuez les rôles appropriés (Exportation, Déchiffrement RMS, Révision, Aperçu, Recherche de conformité et Gestion des cas), ajoutez les enquêteurs de débordement de données au groupe de rôles, puis ajoutez le groupe de rôles en tant que membre du cas de découverte électronique de débordement de données. Pour obtenir des instructions détaillées sur la façon de faire, voir Configurer les limites de conformité pour les enquêtes [eDiscovery](set-up-compliance-boundaries.md) dans Office 365 pour obtenir des instructions détaillées sur la façon de le faire. 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Étape 2 : Créer un cas eDiscovery
 
@@ -111,7 +111,7 @@ Après avoir vérifié les résultats de la recherche, vous pouvez partager vos 
  
     ![Dans la page Exportation, cliquez sur l’exportation, puis sur « Télécharger le rapport »](../media/O365-eDiscoverySolutions-DataSpillage-ExportReport2.png)
 
-Le **rapport résumé de l’exportation** contient le nombre d’emplacements trouvés avec les résultats et la taille des résultats de la recherche. Vous pouvez l’utiliser pour comparer le rapport généré après la suppression et fournir comme preuve de suppression. Le **rapport** des résultats contient un résumé plus détaillé des résultats de la recherche, y compris l’objet, l’expéditeur, les destinataires, si le message a été lu, les dates et la taille de chaque message. Si l’un des détails de ce rapport contient ces données effectivement déversées, n’oubliez pas de supprimer définitivement le fichier Results.csv une fois l’enquête terminée.
+Le **rapport de synthèse d’exportation** contient le nombre d’emplacements trouvés avec les résultats et la taille des résultats de la recherche. Vous pouvez l’utiliser pour comparer le rapport généré après la suppression et fournir comme preuve de suppression. Le **rapport** des résultats contient un résumé plus détaillé des résultats de la recherche, y compris l’objet, l’expéditeur, les destinataires, si le message a été lu, les dates et la taille de chaque message. Si l’un des détails de ce rapport contient ces données effectivement déversées, n’oubliez pas de supprimer définitivement le fichier Results.csv une fois l’enquête terminée.
 
 Pour plus d’informations sur l’exportation de rapports, voir [Exporter un rapport de recherche de contenu.](export-a-content-search-report.md)
     
@@ -131,9 +131,9 @@ Une fois que vous avez passé en revue et validé que les résultats de la reche
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Obtenir une liste d’adresses de boîtes aux lettres avec des données surdessées
 
-Il existe deux façons de collecter une liste d’adresses de messagerie de boîtes aux lettres avec des données surdessées.
+Il existe deux façons de collecter une liste d’adresses e-mail de boîtes aux lettres avec des données surdessées.
 
-**Option 1 : Obtenir une liste d’adresses de boîtes aux lettres avec des données surdessées**
+**Option 1 : obtenir une liste d’adresses de boîtes aux lettres avec des données surdessées**
 
 1. Ouvrez le cas eDiscovery, allez sur la page **De** recherche et sélectionnez la recherche de contenu appropriée. 
     
@@ -141,7 +141,7 @@ Il existe deux façons de collecter une liste d’adresses de messagerie de boî
     
 3. Dans la liste déroulante **Résultats individuels**, cliquez sur **Statistiques de recherche**.
     
-4. Dans la **liste bas Type,** cliquez sur **Emplacements supérieurs.**
+4. Dans la **liste du** type, cliquez sur **Emplacements supérieurs.**
     
     ![Obtenir la liste des boîtes aux lettres qui contiennent des résultats de recherche dans la page Emplacements principaux dans les statistiques de recherche](../media/O365-eDiscoverySolutions-DataSpillage-TopLocations.png)
 
@@ -155,7 +155,7 @@ Ouvrez le rapport de synthèse d’exportation que vous avez téléchargé à [l
   
 ### <a name="prepare-the-mailboxes-so-you-can-delete-the-spilled-data"></a>Préparer les boîtes aux lettres afin de pouvoir supprimer les données déversées
 
-Si la récupération d’élément unique est activée ou si une boîte aux lettres est placée en attente, un message supprimé définitivement (purgé) est conservé dans le dossier Éléments récupérables. Avant de pouvoir purger les données déversées, vous devez vérifier les configurations de boîte aux lettres existantes, désactiver la récupération d’élément unique et supprimer toute conservation ou stratégie de rétention. N’oubliez pas que vous pouvez préparer une boîte aux lettres à la fois, puis exécuter la même commande sur différentes boîtes aux lettres ou créer un script PowerShell pour préparer plusieurs boîtes aux lettres en même temps.
+Si la récupération d’élément unique est activée ou si une boîte aux lettres est placée en attente, un message supprimé définitivement (purgé) est conservé dans le dossier Éléments récupérables. Ainsi, avant de pouvoir purger les données déversées, vous devez vérifier les configurations de boîte aux lettres existantes, désactiver la récupération d’élément unique et supprimer toute conservation ou stratégie de rétention. N’oubliez pas que vous pouvez préparer une boîte aux lettres à la fois, puis exécuter la même commande sur différentes boîtes aux lettres ou créer un script PowerShell pour préparer plusieurs boîtes aux lettres en même temps.
 
 - Pour obtenir des instructions sur la façon de vérifier si la récupération d’élément unique est activée ou si la boîte aux lettres est placée en conservation ou si une stratégie de rétention est affectée à une stratégie de rétention, voir « Étape 1 : Collecter des informations sur la boîte aux lettres » dans Supprimer les éléments du dossier Éléments [récupérables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox) des boîtes aux lettres en nuage. 
 
@@ -183,11 +183,11 @@ Gardez les limites suivantes à l’esprit lors de la suppression des données d
 - Un maximum de 10 éléments par boîte aux lettres peuvent être supprimés à la fois. Sachant que la fonction de recherche et suppression de messages est censée être un outil de réponse aux incidents, cette limite permet de s’assurer que les messages sont rapidement supprimés des boîtes aux lettres. Cette fonctionnalité n’est pas conçue pour nettoyer les boîtes aux lettres des utilisateurs.
 
 > [!IMPORTANT]
-> Il n’est pas possible de supprimer les éléments de courrier d’un groupe de révision dans un cas Advanced eDiscovery à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un jeu à réviser sont des copies d’éléments du service en direct qui sont copiés et stockés dans stockage Azure’emplacement. Cela signifie qu’elles ne seront pas renvoyées par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments d’un groupe de révision, vous devez supprimer le cas Advanced eDiscovery qui contient l’entité de révision. Pour plus d’informations, consultez [Fermer ou supprimer un cas Advanced eDiscovery](close-or-delete-case.md).
+> Il n’est pas possible de supprimer les éléments de courrier d’un groupe de révision dans un cas Advanced eDiscovery à l’aide des procédures décrites dans cet article. Cela est dû au fait que les éléments d’un jeu à réviser sont des copies d’éléments du service en direct qui sont copiés et stockés dans un stockage Azure de données. Cela signifie qu’elles ne seront pas renvoyées par une recherche de contenu que vous créez à l’étape 3. Pour supprimer des éléments d’un groupe de révision, vous devez supprimer le cas Advanced eDiscovery qui contient l’entité de révision. Pour plus d’informations, consultez [Fermer ou supprimer un cas Advanced eDiscovery](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Étape 8 : Vérifier, fournir une preuve de suppression et audit
 
-La dernière étape du flux de travail pour gérer un incident de débordement de données consiste à vérifier que les données qui se sont déverrouées ont été définitivement supprimées de la boîte aux lettres en allant dans le cas eDiscovery et en réusant la même requête de recherche qui a été utilisée pour supprimer ces données afin de confirmer qu’aucun résultat n’est renvoyé. Une fois que vous avez confirmé que les données supprimées ont été définitivement supprimées, vous pouvez exporter un rapport et l’inclure (avec le rapport d’origine) comme preuve de suppression. Vous pouvez [ensuite fermer le cas](close-reopen-delete-core-ediscovery-cases.md) qui vous permettra de le rouvrir si vous devez y faire référence à l’avenir. En outre, vous pouvez également revenir à l’état précédent des boîtes aux lettres, supprimer la requête de recherche utilisée pour rechercher les données déversées et rechercher des enregistrements d’audit des tâches effectuées lors de la gestion de l’incident de débordement de données.
+L’étape finale du flux de travail pour gérer un incident de débordement de données consiste à vérifier que les données déverrouées ont été définitivement supprimées de la boîte aux lettres en allant dans le cas eDiscovery et en réaxant la même requête de recherche qui a été utilisée pour supprimer ces données afin de confirmer qu’aucun résultat n’est renvoyé. Une fois que vous avez confirmé que les données supprimées ont été définitivement supprimées, vous pouvez exporter un rapport et l’inclure (avec le rapport d’origine) comme preuve de suppression. Vous pouvez [ensuite fermer le cas](close-reopen-delete-core-ediscovery-cases.md) qui vous permettra de le rouvrir si vous devez y faire référence à l’avenir. En outre, vous pouvez également revenir à l’état précédent des boîtes aux lettres, supprimer la requête de recherche utilisée pour rechercher les données déversées et rechercher des enregistrements d’audit des tâches effectuées lors de la gestion de l’incident de débordement de données.
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Reconnextage des boîtes aux lettres à leur état précédent
 
@@ -205,7 +205,7 @@ Si les mots clés de la requête de recherche que vous avez créée et utilisée
 
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Audit du processus d’examen de débordement de données
 
-Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées au cours de l’examen. Vous pouvez également effectuer une recherche dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction -Purge** que vous avez mise en place à l’étape 7 pour supprimer les données surdessinées. Si vous souhaitez en savoir plus, veuillez consulter :
+Vous pouvez rechercher dans le journal d’audit les activités eDiscovery effectuées au cours de l’examen. Vous pouvez également effectuer une recherche dans le journal d’audit pour renvoyer les enregistrements d’audit de la commande **New-ComplianceSearchAction -Purge** que vous avez mise en place à l’étape 7 pour supprimer les données surdessinées. Pour plus d’informations, voir :
 
 - [Rechercher le journal d’audit](search-the-audit-log-in-security-and-compliance.md)
 

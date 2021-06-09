@@ -10,7 +10,7 @@ ms.topic: how-to
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: Découvrez comment passer en revue les messages signalés et comment envoyer des commentaires à vos utilisateurs.
+description: Découvrez comment passer en revue les messages signalés et envoyer des commentaires à vos utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1

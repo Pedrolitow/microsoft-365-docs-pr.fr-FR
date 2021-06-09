@@ -29,7 +29,7 @@ ms.locfileid: "52683666"
 
 En tant qu’utilisateur, vous pouvez acheter des abonnements à certains produits et attribuer des licences pour ces abonnements aux membres de votre équipe. Vous êtes responsable du paiement des achats en libre-service effectués. Vous pouvez gérer vos abonnements dans le Centre d’administration Microsoft 365 à <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">l’adresse admin.microsoft.com</a>.
 
-Votre administrateur dispose d’une vue en lecture seule sur les abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
+Votre administrateur dispose d’une vue en lecture seule des abonnements que vous achetez. Ils peuvent voir le produit, le nom de l’acheteur, les abonnements achetés, la date d’expiration, le prix d’achat et les utilisateurs affectés pour chaque abonnement que vous achetez.
 
 ## <a name="view-your-subscriptions"></a>Afficher vos abonnements
 
@@ -156,7 +156,7 @@ Vous pouvez afficher la liste de tous les abonnements achetés en libre-service 
 3. Dans la page des détails du profil de facturation, sous **Mode de paiement,** choisissez l’une des options suivantes :
     - Si vous souhaitez mettre à jour un mode de paiement existant, sélectionnez **Modifier**.
     - Si vous souhaitez ajouter un nouveau mode de paiement, sélectionnez **Remplacer.**
-4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer.**
+4. Dans le volet droit, entrez les détails de la carte, puis sélectionnez **Enregistrer**.
 
 ### <a name="update-an-existing-payment-method"></a>Mise à jour d’un mode de paiement existant
 

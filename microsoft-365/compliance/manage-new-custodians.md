@@ -1,5 +1,5 @@
 ---
-title: Gérer les dépositaires dans un cas Advanced eDiscovery
+title: Gérer les dépositaires dans un Advanced eDiscovery de gestion
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans un cas Advanced eDiscovery.
+description: Découvrez comment afficher les détails, modifier et modifier en bloc la liste des dépositaires dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: a1e9e9d481073c8bb2827d5d65537dbf2b63ef1f
 ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
@@ -24,9 +24,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 12/30/2020
 ms.locfileid: "49739867"
 ---
-# <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gérer les dépositaires dans un cas Advanced eDiscovery
+# <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>Gérer les dépositaires dans un Advanced eDiscovery de gestion
 
-La page Des dépositaires sous l’onglet **Sources** dans un cas Advanced eDiscovery contient la liste de tous les dépositaires qui ont été ajoutés au cas. Une fois que vous avez ajouté des dépositaires à un cas, les détails sur chaque dépositaire sont collectés automatiquement à partir d’Azure Active Directory et sont consultables dans Advanced eDiscovery.
+La page Des dépositaires sous l’onglet **Sources** dans un cas Advanced eDiscovery contient la liste de tous les dépositaires qui ont été ajoutés au cas. Une fois que vous avez ajouté des dépositaires à un cas, les détails sur chaque dépositaire sont collectés automatiquement à partir de Azure Active Directory et sont consultables dans Advanced eDiscovery.
 
 ![Gérer les dépositaires](../media/CustodianDetails.PNG)
 
@@ -50,7 +50,7 @@ Pour afficher les détails sur un dépositaire, cliquez sur le dépositaire dans
 
   - **Ville** - ville dans laquelle se trouve le dépositaire.
 
-  - **État** : département ou province dans l’adresse du dépositaire.
+  - **État** : état ou province dans l’adresse du dépositaire.
 
   - **Pays/région** : pays/région où se trouve le dépositaire.
 
@@ -66,18 +66,18 @@ Pour afficher les détails sur un dépositaire, cliquez sur le dépositaire dans
 
 - Sources de données et informations d’indexation
 
-    - **Sources de** données : indique le nombre et le type de sources de données (boîtes aux lettres, sites et teams) qui sont associées au dépositaire et qui font partie du cas.
+    - **Sources de** données : indique le nombre et le type de sources de données (boîtes aux lettres, sites et Teams) qui sont associées au dépositaire et qui font partie du cas.
 
     - **Heure de mise à jour** de l’index : indique l’heure et la date du dernier déclenchement de la tâche d’indexation avancée. Cette propriété indique également quand le processus d’indexation avancé est en cours.
 
 
 ## <a name="edit-a-custodian"></a>Modifier un dépositaire
 
-Au fur et à mesure de l’avancement de votre cas, vous pouvez découvrir qu’il peut y avoir d’autres sources de données pertinentes pour un dépositaire spécifique & votre cas. Dans d’autres scénarios, vous pouvez supprimer certaines sources de données qui ont été examinées et considérées comme non pertinentes.
+Au fur et à mesure de la progression de votre cas, vous pouvez découvrir qu’il peut y avoir d’autres sources de données pertinentes pour un dépositaire spécifique & votre cas. Dans d’autres scénarios, vous pouvez supprimer certaines sources de données qui ont été examinées et considérées comme non pertinentes.
 
 Pour mettre à jour les sources de données associées à un dépositaire :
 
-1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
+1. Go to **eDiscovery > Advanced eDiscovery** and open the case.
   
 2. Cliquez sur **l’onglet Sources.**
   
@@ -85,23 +85,23 @@ Pour mettre à jour les sources de données associées à un dépositaire :
 
     ![Modifier les sources de données](../media/EditCustodianDataSource.PNG)
   
-4. Cliquez **sur l’onglet** Choisir les sources de données pour modifier les paramètres de la boîte aux lettres Exchange du dépositaire et du compte OneDrive, cliquez sur Choisir les **sources de données.**
+4. Cliquez **sur l’onglet** Choisir les sources de données pour modifier les paramètres de la boîte aux lettres du Exchange et du compte OneDrive, cliquez sur Choisir les **sources de données.**
   
-5. Cliquez sur **l’onglet** Sélectionner des sources de données supplémentaires pour ajouter ou supprimer des boîtes aux lettres Teams, SharePoint ou Exchange associées au dépositaire. 
+5. Cliquez sur **l’onglet** Sélectionner des sources de données supplémentaires pour ajouter ou supprimer Teams, SharePoint ou Exchange boîtes aux lettres associées au dépositaire. 
 
     Pour plus d’informations sur les sources de données associées à un dépositaire, voir [Ajouter des dépositaires à un cas.](add-custodians-to-case.md) 
   
-6. Cliquez **sur Placer les conservations** pour activer ou désactiver la conservation pour le dépositaire.
+6. Cliquez **sur Placer les conservations** en conservation pour activer ou désactiver la conservation pour le dépositaire.
 
 ## <a name="re-index-custodian-data"></a>Ré-indexer les données des dépositaires
 
-Dans la plupart des flux de travail eDiscovery pour les enquêtes juridiques, un sous-ensemble des données d’un dépositaire est recherché une fois que le dépositaire est ajouté à un dossier juridique. En raison de très grandes tailles de fichiers ou d’une altération possible des données, certains éléments des sources de données associées à un dépositaire peuvent être partiellement indexés. À l’aide de la fonctionnalité [d’indexation](indexing-custodian-data.md) avancée dans Advanced eDiscovery, la plupart des éléments partiellement indexés peuvent être automatiquement corrigés en ré-indexant ces éléments à la demande.
+Dans la plupart des flux de travail eDiscovery pour les enquêtes juridiques, un sous-ensemble des données d’un dépositaire est recherché une fois que le dépositaire est ajouté à un dossier juridique. En raison de très grandes tailles de fichiers ou d’une altération possible des données, certains éléments des sources de données associées à un dépositaire peuvent être partiellement indexés. À l’aide de la fonctionnalité [d’indexation](indexing-custodian-data.md) avancée dans le Advanced eDiscovery, la plupart des éléments partiellement indexés peuvent être automatiquement corrigés en réindexant ces éléments à la demande.
 
 Lorsqu’un dépositaire est ajouté à un cas, les données situées dans les sources de données associées au dépositaire sont automatiquement ré-indexées (par le processus d’indexation avancé). Cela signifie que vous pouvez laisser les données en place au lieu de les télécharger et de les corriger, puis de les rechercher hors connexion. Toutefois, pendant le cycle de vie d’un dossier juridique, de nouvelles sources de données peuvent être associées à un dépositaire. Dans ce cas, vous pouvez ré-indexer les données du dépositaire en ré-exécutant le processus d’indexation avancé pour corriger les éléments partiellement indexés et mettre à jour l’index des données du dépositaire.
 
 Pour déclencher le processus de ré-indexation afin de traiter les éléments partiellement indexés :
 
-1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
+1. Go to **eDiscovery > Advanced eDiscovery** and open the case.
 
 2. Cliquez sur **l’onglet Sources.**
 
@@ -113,7 +113,7 @@ Pour déclencher le processus de ré-indexation afin de traiter les éléments p
 
 La ré-indexation des données des dépositaires est un processus de longue durée . la tâche correspondante créée est nommée **Re-indexation des données du dépositaire**. Vous pouvez suivre l’avancement sous l’onglet **Travaux** ou sous l’onglet **Dépositaires** en surveillant l’état dans la colonne État du travail **d’indexation.**
 
-Pour plus d’informations, voir :
+Pour plus d’informations, voir :
 
 - [Utiliser les erreurs de traitement](processing-data-for-case.md)
 
@@ -121,13 +121,13 @@ Pour plus d’informations, voir :
 
 ## <a name="release-a-custodian-from-a-case"></a>Libérer un dépositaire d’un cas
 
-Un dépositaire est libéré lorsqu’un cas est fermé, qu’il n’est plus tenu de conserver le contenu d’un cas, ou lorsque le dépositaire est considéré comme non pertinent pour le cas. 
+Un dépositaire est libéré lorsqu’un cas est fermé, qu’il n’est plus tenu de conserver le contenu d’un cas ou lorsque le dépositaire est considéré comme n’étant plus pertinent pour le cas. 
 
 Si vous relâchez un dépositaire après la publication d’une notification de conservation, une notification de publication est envoyée au dépositaire. En outre, les conservations placées sur les sources de données associées au dépositaire sont supprimées. Si le dépositaire *a* été placé en conservation silencieuse, où il n’a reçu aucune notification de conservation légale, aucune notification de publication n’est envoyée, mais les conservations placées sur les sources de données associées à ce dépositaire sont supprimées.
 
 Pour libérer un dépositaire : 
 
-1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
+1. Go to **eDiscovery > Advanced eDiscovery** and open the case.
 
 2. Cliquez sur **l’onglet Sources.**
 
@@ -135,7 +135,7 @@ Pour libérer un dépositaire :
 
 4. Dans la page volante, cliquez sur **Libérer le dépositaire**.
 
-   Une page d’avertissement s’affiche, expliquant que si une conservation est placée sur une source de données associée au dépositaire, la conservation sera supprimée et que toute autre conservation associée à un autre cas Advanced eDiscovery s’appliquera toujours. Cela inclut d’autres types de fonctionnalités de conservation et de rétention (telles qu’une stratégie de rétention Microsoft 365).
+   Une page d’avertissement s’affiche, expliquant que si une conservation est placée sur une source de données associée au dépositaire, la conservation est supprimée et que toute autre conservation associée à un cas Advanced eDiscovery différent s’applique toujours. Cela inclut d’autres types de fonctionnalités de conservation et de rétention (telles qu’Microsoft 365 stratégie de rétention).
 
 5. Cliquez **sur Oui** pour confirmer que vous souhaitez libérer le dépositaire. 
 

@@ -174,15 +174,15 @@ Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 22 | R
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 23 | Audit SimExec ROP
 Exploit Protection | Security-Mitigations (mode noyau/mode utilisateur) | 24 | Appliquer SimExec ROP
 Exploit Protection | WER-Diagnostics | 5  | Bloc CFG
-Exploit Protection | Win32K (opérationnel) | 260 | Police nontrus
+Exploit Protection | Win32K (opérationnel) | 260 | Police nontrusted
 Protection du réseau | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Protection du réseau | Windows Defender (opérationnel) | 1125 | Événement lorsque la protection du réseau se déclenche en mode Audit
 Protection du réseau | Windows Defender (opérationnel) | 1126 | Événement lorsque la protection du réseau se déclenche en mode blocage
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1124 | Événement d’accès contrôlé aux dossiers audité
 Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1123 | Événement d’accès contrôlé aux dossiers bloqué
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1127 | Événement bloqué de bloc d’écriture de secteur d’accès contrôlé aux dossiers
-Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1128 | Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers audité
+Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1127 | Événement de bloc d’écriture du secteur d’accès contrôlé aux dossiers bloqué
+Accès contrôlé aux dossiers | Windows Defender (opérationnel) | 1128 | Événement de bloc d’écriture de secteur d’accès contrôlé aux dossiers audité
 Réduction de la surface d'attaque | Windows Defender (opérationnel) | 5007 | Événement lorsque les paramètres sont modifiés
 Réduction de la surface d'attaque | Windows Defender (opérationnel) | 1122 | Événement lorsque la règle se déclenche en mode audit
 Réduction de la surface d'attaque | Windows Defender (opérationnel) | 1121 | Événement lorsque la règle se déclenche en mode blocage

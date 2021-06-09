@@ -1,7 +1,7 @@
 ---
-title: Attribuer les licences
+title: Attribuer des licences
 description: Dans le cadre de l’inscription, vous devez attribuer des licences que vous avez déjà obtenues à vos utilisateurs
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -16,16 +16,16 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50925790"
 ---
-# <a name="assign-licenses"></a>Attribuer les licences
+# <a name="assign-licenses"></a>Attribuer des licences
 
-Dans le cadre de la préparation de l’inscription au Bureau géré Microsoft, vous devez vous assurer que vous avez obtenu les licences nécessaires. Si vous n’avez pas encore obtenu les licences, voir Plus d’informations sur les [licences](../get-ready/prerequisites.md#more-about-licenses) pour plus d’informations sur les licences dont vous avez besoin.
+Dans le cadre de la préparation de l’inscription Bureau géré Microsoft, vous devez vous assurer que vous avez obtenu les licences nécessaires. Si vous n’avez pas encore obtenu les licences, voir Plus d’informations sur les [licences](../get-ready/prerequisites.md#more-about-licenses) pour plus d’informations sur les licences dont vous avez besoin.
 
 
-Si vos licences sont toutes alignées, il est temps de les attribuer à vos utilisateurs. Pour attribuer des licences, nous vous [](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) recommandons de tirer parti de la fonctionnalité de licence basée sur les groupes d’Azure Active Directory.
+Si vos licences sont toutes alignées, il est temps de les attribuer à vos utilisateurs. Pour attribuer des licences, nous vous [](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) recommandons de tirer parti de la fonctionnalité de licence basée sur les groupes de Azure Active Directory.
 
 Si vous avez des difficultés avec l’attribution de licence, contactez le [support de l’administrateur.](../working-with-managed-desktop/admin-support.md)
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en place du Bureau géré Microsoft
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Bureau géré Microsoft
 
 1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
 2. [Ajuster l’accès conditionnel](conditional-access.md)

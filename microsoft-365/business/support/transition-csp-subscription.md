@@ -1,6 +1,6 @@
 ---
 title: Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business
-description: Découvrez comment vous pouvez passer d’un abonnement CSP Microsoft 365 Business à partir de la version d’évaluation à la disponibilité générale (GA).
+description: Découvrez comment faire passer un abonnement Microsoft 365 Business CSP de la prévisualisation à la disponibilité générale.
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -34,35 +34,35 @@ Si vous avez un abonnement Fournisseur de solutions Cloud Microsoft365Business v
 
     ![Abonnements du client dans l’Espace partenaires](../../media/pc_customer_subscriptions_1.png)
     
-3. Sur la page **abonnements** de la société, sélectionnez **Ajouter un abonnement**.
-4. Sur la page **nouvel abonnement** , sélectionnez **petite entreprise** , puis sélectionnez **Microsoft 365 entreprise** dans la liste.
+3. Dans la page **Abonnements** de l’entreprise, sélectionnez **Ajouter un abonnement.**
+4. Dans la page **Nouvel abonnement,** **sélectionnez** Petite entreprise, puis **sélectionnez Microsoft 365 Business** dans la liste.
 5. Ajoutez le nombre de licences, puis sélectionnez **Suivant: révision** pour passer en revue l’abonnement, puis sélectionnez **Soumettre**.
 
     ![Passez en revue le nouvel abonnement à Microsoft 365Business](../../media/pc_customer_reviewnewsubscription.png)
 
-    Les **abonnements basés sur les licences** afficheront **Microsoft 365Business Preview** et **Microsoft 365Business**. Vous allez suspendre l’abonnement à l’aperçu suivant.
+    Les **abonnements basés sur les licences** afficheront **Microsoft 365Business Preview** et **Microsoft 365Business**. Vous allez ensuite suspendre l’abonnement Preview.
 
 6. Sélectionnez **Microsoft 365 Business Preview**.
-7. Sur la page d' **aperçu de Microsoft 365 Business Preview** , sélectionnez **suspendu** pour suspendre l’abonnement de l’aperçu.
+7. Dans la page **Microsoft 365 Business aperçu,** sélectionnez **Suspendu** pour suspendre l’abonnement d’aperçu.
 
     ![Suspendre l’abonnement à la version d’évaluation Microsoft 365Business](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Sélectionnez **Soumettre** pour confirmer.
 
-    Sur la page **abonnements** , vérifiez que l’état **aperçu de Microsoft 365 entreprise** indique **suspendu**.
+    Dans la page **Abonnements,** confirmez que **l’état Microsoft 365 Business aperçu** affiche **Suspendu.**
 
     ![Vérifier que l’état de l’abonnement à la version d’évaluation est suspendu](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Si vous le souhaitez, vous pouvez également valider le contrat de licence. Pour cela, procédez comme suit:
     1. Sélectionnez **Utilisateurs et licences** dans la page **Abonnements** de la société.
-    2. Sur la page **utilisateurs et licences** , sélectionnez un utilisateur.
-    3. Sur la page de l’utilisateur, activez la case à cocher **attribuer des licences** et vérifiez qu’elle affiche **Microsoft 365 entreprise**.
+    2. Dans la page **Utilisateurs et licences,** sélectionnez un utilisateur.
+    3. Dans la page de l’utilisateur, consultez la section Attribuer **des licences** et vérifiez qu’elle affiche **Microsoft 365 Business**.
 
         ![Vérifier que la licence Microsoft 365Business est attribuée à l’utilisateur](../../media/pc_customer_userslicenses_m365b_validate.png)
 
 ## <a name="impact-to-customers-and-users-during-and-after-transition"></a>Impact sur les clients et les utilisateurs pendant et après la transition
 
-Il n’y a aucun impact sur les clients et les utilisateurs pendant la transition et la transition post.
+Il n’y a aucun impact sur les clients et les utilisateurs pendant la transition et après la transition.
 
 ## <a name="impact-to-customers-who-dont-transition"></a>Impact sur les clients qui n’effectuent pas la transition
 
@@ -72,16 +72,16 @@ Le tableau suivant récapitule l’impact sur les clients qui ne font pas la tra
 |-------|-----------------|--------------|---------------|---------------|
 | **État** | En période de grâce | Expiré      | Désactivé      | Supprimé |
 | **Impact sur les services**                                                        |
-| **Portail d’administration Microsoft365 Business** | Aucun impact sur les fonctionnalités | Aucun impact sur les fonctionnalités | Possibilité d'ajouter/de supprimer des utilisateurs, d’acheter des abonnements.</br> Impossible d’affecter/de révoquer des licences. | L’abonnement du client et toutes les données sont supprimés. L’administrateur peut gérer d’autres abonnements payants. |
+| **Portail d’administration Microsoft365 Business** | Aucun impact sur les fonctionnalités | Aucun impact sur les fonctionnalités | Possibilité d'ajouter/de supprimer des utilisateurs, d’acheter des abonnements.</br> Ne peut pas attribuer/révoquer des licences. | L’abonnement du client et toutes les données sont supprimés. L’administrateur peut gérer d’autres abonnements payants. |
 | **Applications Office**                         | Aucun impact sur les utilisateurs finaux | Aucun impact sur les utilisateurs finaux | Office passe en mode de fonctionnalités réduites.</br> Les utilisateurs peuvent afficher uniquement les fichiers. | Office passe en mode de fonctionnalités réduites.</br> Les utilisateurs peuvent afficher uniquement les fichiers. |
 | **Services cloud (SharePoint Online, Exchange Online, Skype, Teams, etc.)** | Aucun impact sur les utilisateurs finaux | Aucun impact sur les utilisateurs finaux | Les utilisateurs finaux et les administrateurs n’ont aucun accès aux données dans le cloud. | L’abonnement du client et toutes les données sont supprimés. |
 | **Composants EM+S** | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | La fonctionnalité n’est plus appliquée.</br> Voir [Impacts sur les appareils mobiles à l’expiration de l’abonnement](#mobile-device-impacts-upon-subscription-expiration) et [Impact sur les PC Windows10à l’expiration de l’abonnement](#windows-10-pc-impacts-upon-subscription-expiration) pour plus d’informations. | La fonctionnalité n’est plus appliquée.</br> Voir [Impacts sur les appareils mobiles à l’expiration de l’abonnement](#mobile-device-impacts-upon-subscription-expiration) et [Impact sur les PC Windows10 à l’expiration de l’abonnement](#windows-10-pc-impacts-upon-subscription-expiration) pour plus d’informations. |
 | **Windows 10 Business** | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | La fonctionnalité n’est plus appliquée.</br> Voir [Impacts sur les appareils mobiles à l’expiration de l’abonnement](#mobile-device-impacts-upon-subscription-expiration) et [Impact sur les PC Windows10à l’expiration de l’abonnement](#windows-10-pc-impacts-upon-subscription-expiration) pour plus d’informations. | La fonctionnalité n’est plus appliquée.</br> Voir [Impacts sur les appareils mobiles à l’expiration de l’abonnement](#mobile-device-impacts-upon-subscription-expiration) et [Impact sur les PC Windows10à l’expiration de l’abonnement](#windows-10-pc-impacts-upon-subscription-expiration) pour plus d’informations. |
-| **Connexion Azure AD sur un PC Windows10** | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Une fois le client supprimé, un utilisateur peut se connecter avec des informations d’identification locales uniquement. Réimager l’appareil s’il n’y a aucune information d’identification locale. |
+| **Connexion Azure AD sur un PC Windows10** | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Une fois le client supprimé, un utilisateur peut se connecter uniquement avec les informations d’identification locales. Réimager l’appareil s’il n’y a aucune information d’identification locale. |
 
 ## <a name="mobile-device-impacts-upon-subscription-expiration"></a>Impacts sur les appareils mobiles à l’expiration de l’abonnement
 
-Le tableau suivant résume l’impact sur les stratégies de gestion des applications sur les appareils mobiles.
+Le tableau suivant récapitule l’impact sur les stratégies de gestion des applications sur les appareils mobiles.
 
 |                            | Expérience Licence complète                      | T+60jours après l’expiration          |
 |----------------------------|------------------------------------------------|------------------------------------|
@@ -90,9 +90,9 @@ Le tableau suivant résume l’impact sur les stratégies de gestion des applica
 | **Chiffrer les fichiers de travail** | Les fichiers de travail sont chiffrés | Les fichiers de travail ne sont plus chiffrés</br> Les stratégies de sécurité sont supprimées et les données Office sur les applications sont supprimées. |
 | **Exiger le code confidentiel ou l’empreinte digitale pour accéder aux applications Office** | Accès restreint aux applications | Aucune restriction d’accès au niveau des applications |
 | **Réinitialiser le code confidentiel en cas d’échec de connexion** | Accès restreint aux applications | Aucune restriction d’accès au niveau des applications |
-| **Obliger les utilisateurs à se connecter à nouveau après que les applications Office sont restées inactives** | Connexion requise | Aucune connexion requise |
-| **Refuser l’accès aux fichiers de travail sur les appareils débridés ou rootés** | Les fichiers de travail ne sont pas accessibles sur les périphériques un jailbreak/enracinés | Les fichiers de travail sont accessibles sur les appareils débridés/rootés |
-| **Autoriser les utilisateurs à copier le contenu des applications Office vers les applications personnelles** | Copie/collage limité aux applications disponibles dans le cadre de l’abonnement Microsoft 365 | Copier/coller disponible pour toutes les applications |
+| **Obliger les utilisateurs à se connecter à nouveau après que les applications Office sont restées inactives** | Connexion requise | Aucune sign-in requise |
+| **Refuser l’accès aux fichiers de travail sur les appareils débridés ou rootés** | Les fichiers de travail ne sont pas accessibles sur les appareils jailbreakés/racines | Les fichiers de travail sont accessibles sur les appareils débridés/rootés |
+| **Autoriser les utilisateurs à copier le contenu des applications Office vers les applications personnelles** | Copier/coller limité aux applications disponibles dans le cadre de l’abonnement Microsoft 365 abonnement | Copier/coller disponible pour toutes les applications |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Impacts sur les PC Windows10 à l’expiration de l’abonnement
 
@@ -100,10 +100,10 @@ Le tableau suivant récapitule l’impact sur les stratégies de configuration d
 
 |                            | Expérience Licence complète                      | T+60jours après l’expiration          |
 |----------------------------|------------------------------------------------|------------------------------------|
-| **Aider à protéger les PC contre les menaces à l’aide de Windows Defender** | Activer/désactiver est hors du contrôle de l’utilisateur | L’utilisateur peut activer/désactiver Windows Defender sur le PC Windows 10 |
-| **Protéger les PC contre les menaces basées sur le web dans MicrosoftEdge** | Protection du PC dans MicrosoftEdge | L’utilisateur peut activer/désactiver la protection du PC dans Microsoft Edge |
+| **Aider à protéger les PC contre les menaces à l’aide de Windows Defender** | Activer/désactiver est hors du contrôle de l’utilisateur | L’utilisateur peut activer/désactiver Windows Defender sur le PC Windows 10 pc |
+| **Protéger les PC contre les menaces basées sur le web dans MicrosoftEdge** | Protection du PC dans MicrosoftEdge | L’utilisateur peut activer/désactiver la protection pc dans Microsoft Edge |
 | **Désactiver l’écran de l’appareil en cas d’inactivité** | L’administrateur définit la stratégie d’intervalle de délai d’expiration de l’écran | Le délai d’expiration de l’écran peut être configuré par l’utilisateur final |
 | **Autoriser les utilisateurs à télécharger des applications à partir du MicrosoftStore** | L’administrateur définit si un utilisateur peut télécharger des applications à partir du MicrosoftStore | Les utilisateurs peuvent télécharger des applications du MicrosoftStore à tout moment |
 | **Permettre aux utilisateurs d’accéder à Cortana** | L’administrateur définit la stratégie de l’accès utilisateur à Cortana | Les appareils de l’utilisateur peuvent activer/désactiver Cortana |
 | **Permettre aux utilisateurs de recevoir des conseils et des publicités de Microsoft** | L’administrateur définit la stratégie utilisateur pour recevoir des conseils et des publicités de Microsoft | L’utilisateur peut activer/désactiver les conseils et les publicités de Microsoft |
-| **Autoriser les utilisateurs à copier le contenu des applications Office vers les applications personnelles** | L’administrateur définit la stratégie pour maintenir les appareils Windows 10 à jour | Les utilisateurs peuvent décider quand mettre à jour Windows |
+| **Autoriser les utilisateurs à copier le contenu des applications Office vers les applications personnelles** | L’administrateur définit une stratégie pour maintenir Windows 10 à jour des appareils | Les utilisateurs peuvent décider quand mettre à jour Windows |

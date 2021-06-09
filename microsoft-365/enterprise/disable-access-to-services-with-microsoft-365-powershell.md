@@ -29,21 +29,21 @@ ms.locfileid: "46689840"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Désactiver l’accès aux services Microsoft 365 avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Lorsqu’une licence d’un plan de gestion des licences est attribuée à un compte Microsoft 365, les services Microsoft 365 sont mis à la disposition de l’utilisateur à partir de cette licence. Toutefois, vous pouvez contrôler les services Microsoft 365 accessibles à l’utilisateur. Par exemple, même si la licence autorise l’accès au service SharePoint Online, vous pouvez désactiver l’accès à celui-ci. Vous pouvez utiliser PowerShell pour désactiver l’accès à n’importe quel nombre de services pour un plan de gestion des licences spécifique pour :
+Lorsqu’un Microsoft 365 de gestion se voit attribuer une licence à partir d’un plan de gestion des licences, les services Microsoft 365 sont mis à la disposition de l’utilisateur à partir de cette licence. Toutefois, vous pouvez contrôler les services Microsoft 365 que l’utilisateur peut accéder. Par exemple, même si la licence autorise l’accès au service SharePoint Online, vous pouvez désactiver l’accès à celui-ci. Vous pouvez utiliser PowerShell pour désactiver l’accès à n’importe quel nombre de services pour un plan de gestion des licences spécifique pour :
 
 - un compte individuel ;
 - un groupe de comptes ;
 - tous les comptes de votre organisation.
 
 >[!Note]
->Il existe des dépendances de service Microsoft 365 qui peuvent vous empêcher de désactiver un service spécifié lorsque d’autres services en dépendent.
+>Il existe Microsoft 365 dépendances de service qui peuvent vous empêcher de désactiver un service spécifié lorsque d’autres services en dépendent.
 >
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Ensuite, utilisez cette commande pour afficher vos plans de gestion des licences disponibles, également appelés AccountSkuIds :
 
@@ -72,7 +72,7 @@ Pour désactiver un ensemble spécifique de services Microsoft 365 pour les util
 $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
 ```
 
-L’exemple suivant crée un **objet LicenseOptions** qui désactive les services Office et SharePoint Online dans le plan de gestion des licences nommé `litwareinc:ENTERPRISEPACK` (Office 365 Entreprise E3).
+L’exemple suivant crée un objet **LicenseOptions** qui désactive les services Office et SharePoint Online dans le plan de gestion des licences nommé `litwareinc:ENTERPRISEPACK` (Office 365 Entreprise E3).
     
 ```powershell
 $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -92,7 +92,7 @@ L’exemple suivant crée un compte pour Allie Bellew qui attribue la licence et
 New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
 ```
 
-Pour plus d’informations sur la création de comptes d’utilisateurs dans PowerShell pour Microsoft 365, voir Créer des comptes d’utilisateur [avec PowerShell.](create-user-accounts-with-microsoft-365-powershell.md)
+Pour plus d’informations sur la création de comptes d’utilisateurs dans PowerShell pour Microsoft 365, voir Créer des comptes d’utilisateurs [avec PowerShell.](create-user-accounts-with-microsoft-365-powershell.md)
     
 Pour désactiver les services d’un utilisateur sous licence existant, utilisez la syntaxe suivante :
     
@@ -148,7 +148,7 @@ Pour ce faire, procédez comme suit :
 
    Dans cet exemple, le fichier texte est C: \\ My Documents \\Accounts.txt.
     
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
     
    ```powershell
    Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
@@ -172,7 +172,7 @@ $LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
 Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
 ```
 
-## <a name="related-topic"></a>Voir aussi
+## <a name="related-topic"></a>Rubrique connexe
 
 [Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

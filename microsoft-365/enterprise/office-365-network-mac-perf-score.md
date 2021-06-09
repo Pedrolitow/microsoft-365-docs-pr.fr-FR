@@ -30,7 +30,7 @@ La valeur des points d’évaluation réseau est de 0 à 100 et est une moyenne 
 > [!div class="mx-imgBorder"]
 > ![Valeur d’évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
-Une très faible valeur d’évaluation réseau suggère que Microsoft 365 clients auront des problèmes importants lors de la connexion au client ou de la maintenance d’une expérience utilisateur réactive. Une valeur élevée indique un réseau correctement configuré avec peu de problèmes de performances en cours. Une valeur de 80 % représente une ligne de base saine, au-dessus de laquelle vous ne devriez pas vous attendre à recevoir régulièrement des réclamations des utilisateurs concernant la connectivité Microsoft 365 ou la réactivité en raison des performances du réseau. Au fil des améliorations apportées à la connectivité réseau itérative, cette valeur augmente avec l’expérience utilisateur.
+Une très faible valeur d’évaluation du réseau suggère que Microsoft 365 clients auront des problèmes importants lors de la connexion au client ou de la maintenance d’une expérience utilisateur réactive. Une valeur élevée indique un réseau correctement configuré avec peu de problèmes de performances en cours. Une valeur de 80 % représente une ligne de base saine, au-dessus de laquelle vous ne devriez pas vous attendre à recevoir régulièrement des réclamations des utilisateurs concernant la connectivité ou la réactivité Microsoft 365 en raison des performances du réseau. Au fil des améliorations apportées à la connectivité réseau itérative, cette valeur augmente avec l’expérience utilisateur.
 
 | Évaluation du réseau | Expérience utilisateur attendue |
 | :----------------- | :----------------------- |
@@ -38,7 +38,7 @@ Une très faible valeur d’évaluation réseau suggère que Microsoft 365 clien
 | 80                 | Répond aux recommandations    |
 | 60                 | Acceptable               |
 | 40                 | Les utilisateurs peuvent être en situation de problèmes |
-| 20                 | Les utilisateurs peuvent se plaindra peut-être       |
+| 20                 | Les utilisateurs peuvent se plaindr       |
 | 0                  | Problèmes réseau : sujet de discussion courant |
 
 >[!IMPORTANT]
@@ -51,7 +51,7 @@ Chaque évaluation réseau, qu’elle soit limitée au client ou à un emplaceme
 > [!div class="mx-imgBorder"]
 > ![Exemple de valeur d’évaluation du réseau](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-La **répartition de l’évaluation** dans le panneau affiche l’évaluation pour chacune des charges de travail de composant.
+La **répartition de l’évaluation** dans le panneau présente l’évaluation de chacune des charges de travail de composant.
 
 **L’historique des** évaluations indique les 30 derniers jours de l’évaluation et le critère. Vous pouvez également faire un rapport sur l’historique des mesures pour n’importe quel emplacement de bureau pendant deux ans à l’aide de l’onglet Historique. L’onglet Historique vous permet de sélectionner vos attributs à signaler. En choisissant une période de rapport, vous pouvez mettre en évidence l’impact d’un projet de mise à jour réseau et voir l’amélioration de votre évaluation du réseau.
 
@@ -61,7 +61,7 @@ Une évaluation du réseau mesure la conception du périmètre réseau d’un em
 
 Nous montrons une valeur d’évaluation réseau pour l’ensemble Microsoft 365 client dans la page vue d’ensemble des performances réseau. Cette valeur est une moyenne pondérée des évaluations réseau pour tous les bureaux. Il existe également une valeur d’évaluation réseau spécifique pour chaque emplacement de bureau détecté sur la page récapitulatif de cet emplacement.
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange Online
 
 Par Exchange Online, la latence TCP entre l’ordinateur client et la porte d’Exchange service est mesurée. Cette latence peut être impactée par la distance parcourue par le réseau sur les réseaux lan et wan des clients. Elle peut également être impactée par les services ou les périphériques intermédiaires réseau, qui retardent la connectivité ou entraînent la réentrence des paquets. Elle est également impactée par la distance de la porte d’Exchange service la plus proche. La médiane (également appelée 50e centile ou mesure P50) est prise pour toutes les mesures des trois jours précédents.
 
@@ -91,7 +91,7 @@ L SharePoint en ligne est réalisée à l’aide du tableau suivant. Tout numér
 | 2MBps          | 20     |
 | 0MBps          | 0      |
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Par Microsoft Teams la qualité du réseau est mesurée en tant que latence UDP, gigue UDP et perte de paquets UDP. UDP est utilisé pour la connectivité multimédia audio et vidéo d’appel et de conférence pour Microsoft Teams. Cela peut être impacté par les mêmes facteurs que pour la latence et la vitesse de téléchargement en plus des lacunes de connectivité dans la prise en charge UDP d’un réseau dans la mesure où UDP est configuré séparément sur le protocole TCP le plus courant. La médiane (également appelée 50e centile ou mesure P50) est prise pour toutes les mesures des trois jours précédents. 
 
@@ -103,6 +103,6 @@ Nous calculons un score d’opinion moyenne à partir de ces mesures UDP pour un
 
 [Microsoft 365 informations sur les performances du réseau (aperçu)](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 de test de connectivité réseau (prévisualisation)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 de test de connectivité réseau (aperçu)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Services de localisation de connectivité réseau (prévisualisation)](office-365-network-mac-location-services.md)

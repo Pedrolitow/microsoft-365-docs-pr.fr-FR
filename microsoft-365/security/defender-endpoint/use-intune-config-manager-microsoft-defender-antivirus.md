@@ -1,6 +1,6 @@
 ---
 title: Configurer les Antivirus Microsoft Defender l’Microsoft Endpoint Manager
-description: Utilisez Microsoft Endpoint Manager et Microsoft Intune pour configurer l’antivirus et l’antivirus Microsoft Defender Endpoint Protection
+description: Utilisez les Microsoft Endpoint Manager et Microsoft Intune pour configurer l’Antivirus Microsoft Defender et les Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -33,7 +33,7 @@ ms.locfileid: "52683750"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour configurer des analyses Antivirus Microsoft Defender’analyse. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) Configuration [Manager](/mem/configmgr/core/understand/introduction) font désormais partie de Endpoint Manager.  
+Vous pouvez utiliser [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) pour configurer des analyses Antivirus Microsoft Defender’analyse. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) configuration [Manager](/mem/configmgr/core/understand/introduction) font désormais partie de Endpoint Manager.  
 
 ## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>Configurer des analyses Antivirus Microsoft Defender dans Endpoint Manager
 

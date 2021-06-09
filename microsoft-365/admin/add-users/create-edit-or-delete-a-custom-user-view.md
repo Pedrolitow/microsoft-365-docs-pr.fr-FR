@@ -36,7 +36,7 @@ Si vous êtes un administrateur global ou de gestion des utilisateurs d’un abo
 Lorsque vous créez, modifiez ou supprimez un affichage  utilisateur personnalisé, les modifications s’afficheront dans la liste De filtres que tous les administrateurs de votre entreprise voient lorsqu’ils vont sur la **page** Utilisateurs. Vous pouvez créer jusqu’à 50 affichages personnalisés. 
 
 > [!TIP]
->  Les affichages utilisateur standard sont affichés par défaut dans **la** liste de listes listes des filtres. Les filtres standard incluent tous les utilisateurs, les utilisateurs sous **licence,** les utilisateurs invités, les utilisateurs autorisés à se connecter, les **utilisateurs bloqués,** les utilisateurs sans **licence,** les utilisateurs avec erreur, les **administrateurs** de facturation, les **administrateurs** globaux, les administrateurs du **helpdesk,** les **administrateurs** de service et les administrateurs de gestion des **utilisateurs.** Vous ne pouvez pas modifier ou supprimer des affichages standard. 
+>  Les affichages utilisateur standard sont affichés par défaut dans **la** liste de listes listes des filtres. Les filtres standard incluent tous les utilisateurs, les utilisateurs sous **licence,** les utilisateurs invités, les utilisateurs autorisés à se connecter, les **utilisateurs bloqués,** les utilisateurs sans **licence,** les utilisateurs ayant des **erreurs,** les administrateurs de facturation, les **administrateurs** globaux, les administrateurs du **helpdesk,** les **administrateurs** de service et les administrateurs de gestion des **utilisateurs.** Vous ne pouvez pas modifier ou supprimer des affichages standard. 
 
 Quelques éléments à noter concernant les affichages standard : 
 
@@ -56,17 +56,17 @@ Vous pouvez créer et modifier vos affichages personnalisés dans le **volet** F
   
  **D - Licence de produit attribuée** Choisissez dans une liste des licences disponibles au niveau de votre organisation. Utilisez ce filtre pour afficher les utilisateurs qui ont la licence que vous avez sélectionnée. Les utilisateurs peuvent également avoir des licences supplémentaires. 
   
-Vous pouvez également filtrer en fonction des informations de profil utilisateur supplémentaires utilisées dans votre organisation, telles que le service, la ville, l’état ou la province, le pays ou la région, ou la fonction.
+Vous pouvez également filtrer en fonction des détails de profil utilisateur supplémentaires utilisés dans votre organisation, tels que le service, la ville, l’État ou la province, le pays ou la région, ou la fonction.
   
  **Autres conditions :**
   
 - **Utilisateurs synchronisés uniquement** Activez cette case pour afficher tous les utilisateurs qui ont été synchronisés avec Active Directory local, que les utilisateurs soient activés ou non. 
     
-- **Utilisateurs avec erreurs** Sélectionnez cette zone pour afficher les utilisateurs qui peuvent avoir des erreurs d’approvisionnement. 
+- **Utilisateurs avec erreurs** Sélectionnez cette case pour afficher les utilisateurs qui peuvent avoir des erreurs d’approvisionnement. 
     
 - **Utilisateurs sans permis** Sélectionnez cette case pour rechercher tous les utilisateurs qui n’ont pas reçu de licence. Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une boîte aux lettres Exchange mais qui n’ont pas de licence. Pour suivre ces utilisateurs spécifiquement, utilisez le filtre Utilisateurs sans permis Exchange boîtes aux lettres **ou d’archives.** Les résultats de cette vue peuvent également inclure les utilisateurs qui ont une archive Exchange, mais n’ont pas de licence.
     
-- **Utilisateurs sans permis avec des boîtes aux lettres Exchange ou des archives** Sélectionnez cette zone pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n’ont pas été affectés à Microsoft 365 licence. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont été affectés à Exchange archive. 
+- **Utilisateurs sans permis avec des boîtes aux lettres Exchange ou des archives** Sélectionnez cette zone pour afficher les comptes d’utilisateur qui ont été créés dans Exchange Online et qui ont une boîte aux lettres Exchange, mais qui n’ont pas été affectés à Microsoft 365 licence. Les résultats de ce filtre incluent les utilisateurs qui ont ou qui ont été affectés à une archive Exchange de données. 
 
 > [!NOTE]
 > Le **filtre des utilisateurs** sans Exchange boîtes aux lettres fonctionne dans les cas ci-après :
@@ -100,7 +100,7 @@ Vous pouvez également filtrer en fonction des informations de profil utilisateu
     
 2. Dans la page **Utilisateurs** actifs, sélectionnez **Filtres** et **Nouveau filtre.**
   
-3. Dans la page **Filtre personnalisé,** entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste de listes de filtres.
+3. Dans la page **Filtre personnalisé,** entrez le nom de votre filtre, choisissez les conditions de votre filtre personnalisé, puis sélectionnez **Ajouter**. Votre affichage personnalisé est désormais inclus dans la liste liste de filtres.
 
 ## <a name="edit-or-delete-a-custom-user-view"></a>Modifier ou supprimer un affichage utilisateur personnalisé
 

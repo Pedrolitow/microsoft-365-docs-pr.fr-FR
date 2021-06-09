@@ -28,20 +28,20 @@ ms.locfileid: "47324570"
 
 Vous pouvez utiliser l’outil [eDiscovery](content-search.md) de recherche de contenu dans le Centre de sécurité & conformité pour rechercher des éléments importés dans des boîtes aux lettres dans Microsoft 365 à partir d’une source de données tierce. Vous pouvez créer une requête pour rechercher tous les éléments de données tiers importés ou créer une requête pour rechercher des éléments de données tiers spécifiques. En outre, vous pouvez également créer une stratégie de rétention basée sur une requête ou une conservation eDiscovery basée sur une requête pour conserver les données tierces.
   
-Pour plus d’informations sur l’utilisation d’un partenaire pour importer des données tierces et une liste des types de données tierces que vous pouvez importer dans Microsoft 365, voir Travailler avec un partenaire pour archiver des données tierces dans [Office 365.](work-with-partner-to-archive-third-party-data.md)
+Pour plus d’informations sur l’utilisation d’un partenaire pour importer des données tierces et une liste des types de données tierces que vous pouvez importer dans Microsoft 365, voir Travailler avec un partenaire pour archiver des données tierces dans [Office 365](work-with-partner-to-archive-third-party-data.md).
 
 > [!IMPORTANT]
 > Les instructions de cet article s’appliquent uniquement aux données tierces importées par un connecteur partenaire personnalisé. Cet article ne s’applique pas aux données tierces importées à l’aide des [connecteurs](archiving-third-party-data.md#third-party-data-connectors) de données tiers dans le Centre de conformité Microsoft.
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Création d’une requête pour rechercher toutes les données tierces
 
-Pour rechercher (ou placer en attente) tout type de données tierces que vous avez importées dans Office 365, vous pouvez utiliser la paire propriété-valeur du message dans la zone de mot clé pour une recherche de contenu ou lors de la création d’une mise en attente basée sur une  `kind:externaldata` requête. Par exemple, pour rechercher des éléments importés à partir d’une source de données tierce et contenir le mot « contoso » dans la propriété Subject de l’élément importé, utilisez la requête suivante : 
+Pour rechercher (ou placer en attente) tout type de données tierces que vous avez importées dans Office 365, vous pouvez utiliser la paire propriété-valeur de message dans la zone de mot clé pour une recherche de contenu ou lors de la création d’une mise en attente basée sur une `kind:externaldata` requête. Par exemple, pour rechercher des éléments importés à partir d’une source de données tierce et contenir le mot « contoso » dans la propriété Subject de l’élément importé, utilisez la requête suivante : 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-L’exemple de requête de mot clé précédent inclut la propriété d’objet. Pour obtenir la liste des autres propriétés des éléments de données tiers qui peuvent être inclus dans une requête par mot clé, consultez la section « Plus d’informations » dans Travailler avec un partenaire pour archiver des données tierces dans [Office 365.](work-with-partner-to-archive-third-party-data.md#more-information)
+L’exemple de requête de mot clé précédent inclut la propriété d’objet. Pour obtenir la liste des autres propriétés des éléments de données tiers qui peuvent être inclus dans une requête par mot clé, consultez la section « Plus d’informations » dans Travailler avec un partenaire pour archiver des données tierces dans [Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
   
 Lorsque vous créez des requêtes pour rechercher et contenir des données tierces, vous pouvez également utiliser des conditions pour affiner les résultats de la recherche. Pour plus d’informations sur la création de requêtes de recherche de contenu, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
   
@@ -77,7 +77,7 @@ Le tableau suivant répertorie les types de données tierces que vous pouvez rec
 |Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |Blackberry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|Journaux d’appels BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|Journaux des appels BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
 |Code confidentiel BlackBerry  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |

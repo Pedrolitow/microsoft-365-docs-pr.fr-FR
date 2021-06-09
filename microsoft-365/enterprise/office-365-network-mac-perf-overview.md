@@ -51,7 +51,7 @@ To get started, turn on your location opt-in setting to automatically collect da
 
 Pour cette option, vous devez avoir au moins deux ordinateurs en cours d’exécution à chaque emplacement de bureau qui prendre en charge les conditions préalables. OneDrive pour Windows version doit être à jour et installée sur chaque ordinateur. Pour plus d’informations sur OneDrive versions, consultez les notes [OneDrive publication.](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0) Des mesures réseau sont prévues pour être ajoutées à d’Office 365 applications clientes dans un futur proche.
 
-Windows Le service de localisation doit être accepté sur les ordinateurs. Vous pouvez le tester en exécutant **l’application Cartes** et en vous localisant vous-même. Il peut être activé sur un seul ordinateur avec **Paramètres | Confidentialité | Emplacement** où le paramètre _Autoriser les applications à accéder à_ votre emplacement doit être activé. Windows Le consentement des services de localisation peut être déployé sur des PC à l’aide de la gestion des stratégies de groupe ou de la gestion des stratégies de groupe avec le paramètre _LetAppsAccessLocation_.
+Windows Le service de localisation doit être accepté sur les ordinateurs. Vous pouvez le tester en exécutant **l’application Cartes** et en vous localisant vous-même. Il peut être activé sur un seul ordinateur avec **Paramètres | Confidentialité | Emplacement** où le paramètre _Autoriser les applications à accéder à_ votre emplacement doit être activé. Windows Le consentement des services de localisation peut être déployé sur des PC à l’aide de la stratégie de groupe ou de la gestion des stratégies de groupe avec le paramètre _LetAppsAccessLocation_.
 
 Il n’est pas nécessaire d’ajouter des emplacements dans le Centre d’administration avec cette méthode, car ils sont automatiquement identifiés au niveau de la résolution de la ville. Plusieurs bureaux dans la même ville ne s’afficheront pas lors de l’utilisation Windows services de localisation. Les informations d’emplacement sont arrondies aux 300 mètres les plus proches sur 300 mètres afin que les informations d’emplacement plus précises ne sont pas accessibles.
 
@@ -61,17 +61,17 @@ Les exemples de mesure et les emplacements de bureau doivent commencer à appara
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Ajouter des emplacements et fournir des informations sur le sous-réseau laN
 
-Pour cette option, ni les services Windows de localisation, ni Wi-Fi sont requis. Votre OneDrive pour Windows version doit être à jour et installé sur au moins un ordinateur à l’emplacement.
+Pour cette option, ni les services Windows de localisation ni Wi-Fi sont requis. Votre OneDrive pour Windows version doit être à jour et installé sur au moins un ordinateur à l’emplacement.
 
-Vous devez également ajouter des emplacements dans la **page Emplacements** ou les importer à partir d’un fichier CSV. Les emplacements ajoutés doivent inclure les informations de votre sous-réseau local office.
+Vous devez également ajouter des emplacements dans la **page Emplacements** ou les importer à partir d’un fichier CSV. Les emplacements ajoutés doivent inclure les informations de votre sous-réseau local d’office.
 
 Cette option vous permet de définir plusieurs bureaux dans une ville.
 
 Toutes les mesures de test des ordinateurs clients incluent les informations du sous-réseau local, qui sont corrélées avec les détails de l’emplacement du bureau que vous avez entrés. Les exemples de mesure et les emplacements de bureau doivent commencer à apparaître 24 heures après que ces conditions préalables ont été remplies.
 
-### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Collecter manuellement des rapports de test avec l Microsoft 365 de test de connectivité réseau
+### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Collecte manuelle des rapports de test avec l Microsoft 365 de test de connectivité réseau
 
-Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-leur d’Microsoft 365 [test](https://connectivity.office.com) de connectivité réseau sur un ordinateur Windows sur lequel ils ont des autorisations d’administration. Sur le site web, ils doivent se Office 365 compte de la même organisation que celle dont vous souhaitez voir les résultats. Ensuite, ils doivent cliquer **sur Exécuter le test.** Pendant le test, il existe un exE de test de connectivité téléchargé. Ils doivent l’ouvrir et l’exécuter. Une fois les tests terminés, les résultats du test sont téléchargés vers le Centre d’administration.
+Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-leur d’Microsoft 365 [test](https://connectivity.office.com) de connectivité réseau sur un ordinateur Windows sur lequel ils ont des autorisations d’administration. Sur le site web, ils doivent se Office 365 compte de la même organisation que celle dont vous souhaitez voir les résultats. Ensuite, ils doivent cliquer **sur Exécuter le test.** Pendant le test, il existe un exE de test de connectivité téléchargé. Ils doivent ouvrir et exécuter cette opération. Une fois les tests terminés, les résultats du test sont téléchargés vers le Centre d’administration.
 
 Les rapports de test sont liés à un emplacement s’il a été ajouté avec des informations de sous-réseau laN, sinon ils sont affichés uniquement à l’emplacement de la ville.
 
@@ -93,7 +93,7 @@ Les entreprises complexes avec plusieurs bureaux et des architectures de périm�
 > [!div class="mx-imgBorder"]
 > ![Réseau client vers le cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-De nombreuses entreprises ont des configurations de périmètre réseau qui ont évolué au fil du temps et sont principalement conçues pour prendre en charge l’accès au site web Internet des employés, où la plupart des sites web ne sont pas connus à l’avance et ne sont pas sécurisés. L’objectif le plus indispensable est d’éviter les programmes malveillants et les attaques par hameçonnage à partir de ces sites web inconnus. Cette stratégie de configuration réseau, bien qu’utile à des fins de sécurité, peut entraîner une dégradation des performances Microsoft 365 et de l’expérience utilisateur.
+De nombreuses entreprises ont des configurations de périmètre réseau qui ont évolué au fil du temps et sont principalement conçues pour prendre en charge l’accès au site web Internet des employés, où la plupart des sites web ne sont pas connus à l’avance et ne sont pas sécurisés. Le principal objectif est d’éviter les programmes malveillants et les attaques par hameçonnage à partir de ces sites web inconnus. Cette stratégie de configuration réseau, bien qu’utile à des fins de sécurité, peut entraîner une dégradation des performances Microsoft 365 et de l’expérience utilisateur.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Comment pouvons-nous résoudre ces défis ?
 
@@ -124,11 +124,11 @@ Vous pouvez afficher un affichage tableau des emplacements où ils peuvent être
 
 ## <a name="remote-worker-assessment-and-user-connection-metrics"></a>Mesures de l’évaluation du travail à distance et de la connexion utilisateur
 
-Nous classons les journaux de trafic réseau en tant qu’utilisateurs distants ou sur site et afficheons leurs pourcentages dans la section mesures de connexion utilisateur du volet vue d’ensemble. Pour les villes où vous avez des utilisateurs distants, vous trouverez le score d’évaluation du réseau distant spécifique à l’emplacement lorsque vous ouvrez la page de cet emplacement. La liste des emplacements aura à la fois des bureaux et des villes de travail à distance, qui peuvent être filtrés et triés. Nous fournissons le score d’évaluation des travailleurs à distance, avec répartition des points pour les Exchange, SharePoint et Teams.
+Nous classons les journaux de trafic réseau en tant qu’utilisateurs distants ou sur site et afficheons leurs pourcentages dans la section mesures de connexion utilisateur du volet vue d’ensemble. Pour les villes où vous avez des utilisateurs distants, vous trouverez le score d’évaluation du réseau distant spécifique à l’emplacement lorsque vous ouvrez la page de cet emplacement. La liste des emplacements aura à la fois des bureaux et des villes de travail à distance, qui peuvent être filtrés et triés. Nous fournissons le score d’évaluation des travailleurs à distance, avec répartition des points pour Exchange, SharePoint et Teams.
 
 Les informations sur la mise en réseau des particuliers sont regroupées et signalées au niveau de la ville et limitées aux villes avec un minimum de 5 employés distants. Nous n’identifions pas les employés individuels travaillant à domicile.
 
-Les emplacements sont classés automatiquement sur site ou à distance. Toutefois, vous avez la possibilité d’entrer manuellement toutes vos adresses IP de sortie sur site pour garantir une classification à 100 %. Si vous décidez d’accéder à cet itinéraire, vous devez cocher manuellement la case à cocher Entrer toutes les **adresses IP** de sortie sur site dans le flyout Emplacements Paramètres après avoir ajouté toutes vos adresses IP de sortie. Une fois cette étape effectuée, tous les journaux de trafic réseau provenant d’adresses IP de sortie que vous avez marquées comme étant sur site seront toujours classés en tant que bureaux et toutes les autres adresses IP de sortie seront classées comme adresses IP distantes.
+Les emplacements sont classés automatiquement sur site ou à distance. Toutefois, vous avez la possibilité d’entrer manuellement toutes vos adresses IP de sortie sur site pour garantir une classification à 100 %. Si vous décidez d’accéder à cet itinéraire, vous devez cocher manuellement la case à cocher Entrer toutes les **adresses IP** de sortie sur site dans le flyout Emplacements Paramètres après avoir ajouté toutes vos adresses IP de sortie. Une fois cette étape effectuée, tous les journaux de trafic réseau provenant d’adresses IP de sortie que vous avez marquées comme sur site seront toujours classés en tant que bureaux et toutes les autres adresses IP de sortie seront classées comme distantes.
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Synthèse et informations sur les performances réseau de l’emplacement des bureaux spécifiques
 
@@ -146,15 +146,15 @@ Une carte du réseau de périmètre pour les utilisateurs de votre organisation 
 - **SharePoint service** frontal optimal : l’une des SharePoint de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
 - SharePoint service frontal **sous-optimal** : une porte d’SharePoint service à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
 - Serveur de résolution récursive **DNS** : emplacement à partir d’une base de données IP géographique du résolveur récursif DNS détecté utilisé pour Exchange Online (si disponible)
-- **Votre serveur proxy :** emplacement à partir d’une base de données IP géographique du serveur proxy détecté (si disponible) 
+- **Votre serveur proxy** : emplacement à partir d’une base de données IP géographique du serveur proxy détecté (si disponible) 
 
 La page récapitulatif de l’emplacement du bureau affiche également l’évaluation réseau de l’emplacement, l’historique de l’évaluation du réseau, une comparaison de l’évaluation de cet emplacement avec d’autres clients de la même ville, ainsi qu’une liste d’informations et de recommandations spécifiques que vous pouvez entreprendre pour améliorer les performances et la fiabilité du réseau.
 
 Les comparaisons entre les clients d’une même ville sont basées sur l’attente que tous les clients ont un accès égal aux fournisseurs de services réseau, à l’infrastructure de télécommunications et aux points de présence réseau Microsoft à proximité.
 
-Les noms d’emplacement peuvent être personnalisés lors de l’ajout d’un nouvel emplacement ou de la modification d’un emplacement existant dans le flyout d’emplacement. Cela vous offre la possibilité de personnaliser vos noms d’emplacement à tout moment. En outre, lorsque vous ajoutez des sous-réseaux LAN directement dans le volant d’emplacements, nous montrons une liste de listes de sous-réseaux LAN de correspondances soft que vous pouvez sélectionner. Les noms de circuits pour des adresses IP de sortie d’office spécifiques peuvent également être ajoutés et modifiés.
+Les noms d’emplacement peuvent être personnalisés lors de l’ajout d’un nouvel emplacement ou de la modification d’un emplacement existant dans le flyout d’emplacement. Cela vous offre la possibilité de personnaliser vos noms d’emplacement à tout moment. En outre, lorsque vous ajoutez des sous-réseaux LAN directement dans le volant d’emplacements, nous vous montrons une liste de listes de sous-réseaux LAN de correspondances soft que vous pouvez sélectionner. Les noms de circuits pour des adresses IP de sortie d’office spécifiques peuvent également être ajoutés et modifiés.
 
-L’onglet Détails de la page d’emplacement du bureau affiche les résultats de mesure spécifiques qui ont été utilisés pour obtenir des informations, des recommandations et l’évaluation du réseau. Cela permet aux ingénieurs réseau de valider les recommandations et de prendre en compte les contraintes ou les spécificités de leur environnement. Vous trouverez également le nombre estimé d’utilisateurs pour les échantillons collectés dans ces bureaux, ainsi que les travailleurs à distance dans cette ville.
+L’onglet Détails de la page d’emplacement du bureau affiche les résultats de mesure spécifiques qui ont été utilisés pour obtenir des informations, des recommandations et l’évaluation du réseau. Cela permet aux ingénieurs réseau de valider les recommandations et de prendre en compte les contraintes ou les spécificités de leur environnement. Vous trouverez également le nombre estimé d’utilisateurs pour les échantillons collectés dans ces bureaux ainsi que les travailleurs à distance dans cette ville.
 
 > [!div class="mx-imgBorder"]
 > ![Détails spécifiques à l’emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
@@ -184,9 +184,9 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    1. **userEntered** (obligatoire) : doit être 1 pour un nouvel emplacement de bureau de sous-réseau local en cours d’ajout
    1. **Nom** (obligatoire) : nom de l’emplacement du bureau
    1. **Adresse** (obligatoire) : adresse physique du bureau
-   1. **Latitude** (facultative) : rempli à partir Bing recherche de cartes de l’adresse si vide
+   1. **Latitude** (facultative) : rempli à partir de Bing recherche de l’adresse si vide
    1. **Longitude** (facultative) : remplie à partir Bing recherche de cartes de l’adresse si vide
-   1. **Egress plages d’adresses IP 1 à 5 (facultatives)** : pour chaque plage, entrez le nom du circuit suivi d’une liste séparée par des espaces d’adresses CIDR IPv4 ou IPv6 valides. Ces valeurs sont utilisées pour différencier plusieurs emplacements de bureau où vous utilisez les mêmes adresses IP de sous-réseau local. Egress Les plages d’adresses IP doivent toutes être de /24 taille réseau et /24 n’est pas inclus dans l’entrée.
+   1. **Egress plages d’adresses IP 1 à 5** (facultatives) : pour chaque plage, entrez le nom du circuit suivi d’une liste séparée par des espaces d’adresses CIDR IPv4 ou IPv6 valides. Ces valeurs sont utilisées pour différencier plusieurs emplacements de bureau où vous utilisez les mêmes adresses IP de sous-réseau local. Egress Les plages d’adresses IP doivent toutes être de /24 taille réseau et /24 n’est pas inclus dans l’entrée.
    1. **LanIps** (obligatoire) : rép.des plages de sous-réseaux LAN en cours d’utilisation à cet emplacement de bureau. Les ID de sous-réseau local doivent avoir une taille de réseau CIDR incluse, où la taille du réseau peut être comprise entre /8 et /29. Plusieurs plages de sous-réseaux LAN peuvent être séparées par une virgule ou un point-virgule.
    
 1. Lorsque vous avez ajouté vos emplacements de  bureau et enregistré  le fichier, cliquez sur le bouton Parcourir en Télécharger le champ terminé et sélectionnez le fichier CSV enregistré.
@@ -201,18 +201,18 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    > [!div class="mx-imgBorder"]
    > ![Message prêt à l’importation CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Forum aux questions
+## <a name="faq"></a>FAQ
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Qu’est-ce qu’Microsoft 365 service frontal ?
 
-La Microsoft 365 service frontal est un point d’entrée sur le réseau mondial de Microsoft où Office clients et services terminent leur connexion réseau. Pour qu’une connexion réseau Microsoft 365 optimale, il est recommandé que votre connexion réseau soit terminée sur la porte d’Microsoft 365 la plus proche.
+La Microsoft 365 service frontal est un point d’entrée sur le réseau mondial de Microsoft où Office clients et services terminent leur connexion réseau. Pour une connexion réseau optimale Microsoft 365, il est recommandé que votre connexion réseau soit terminée sur la porte d’Microsoft 365 la plus proche.
 
 >[!NOTE]
 >Microsoft 365 service frontal n’a pas de relation directe avec le produit Azure Front Door Service disponible sur Azure Marketplace.
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Qu’est-ce qu’une Microsoft 365 service frontal optimale ?
 
-Une porte Microsoft 365 service frontal optimale est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou votre région. Utilisez l Microsoft 365 de test de connectivité [(prévisualisation)](office-365-network-mac-perf-onboarding-tool.md) pour déterminer l’emplacement de votre port d’Microsoft 365 service en cours d’utilisation et la porte d’entrée de service optimale. Si l’outil détermine que votre porte frontale en cours d’utilisation est optimale, vous vous connectez de manière optimale au réseau global de Microsoft.
+Une porte Microsoft 365 service frontal optimale est celle qui est la plus proche de la sortie de votre réseau, généralement dans votre ville ou votre région. Utilisez l Microsoft 365 de test de connectivité en cours [(prévisualisation)](office-365-network-mac-perf-onboarding-tool.md) pour déterminer l’emplacement de votre Microsoft 365 service en cours d’utilisation et la porte d’entrée de service optimale. Si l’outil détermine que votre porte frontale en cours d’utilisation est optimale, vous vous connectez de manière optimale au réseau global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment sélectionner des documents à partir d’un ensemble de révision et les utiliser individuellement dans un autre ensemble dans un cas Advanced eDiscovery.
+description: Découvrez comment sélectionner des documents à partir d’un ensemble de révision et les utiliser individuellement dans un autre ensemble dans Advanced eDiscovery cas.
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
@@ -34,11 +34,11 @@ Suivez le flux de travail de cet article pour ajouter du contenu d’un jeu à r
 
 ## <a name="create-a-review-set"></a>Créer un jeu à réviser
 
-Avant de commencer, vous devez créer un jeu à réviser pour ajouter les données.  Un nouvel ensemble de révision peut être ajouté sous l’onglet **Jeux de révision** du cas. Pour plus d’informations, [voir Créer un jeu à réviser.](managing-review-sets.md#create-a-review-set)
+Avant de commencer, vous devez créer un jeu à réviser pour ajouter les données.  Un nouvel ensemble de révision peut être ajouté sous l’onglet **Ensembles de révision** du cas. Pour plus d’informations, [voir Créer un jeu à réviser.](managing-review-sets.md#create-a-review-set)
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>Étape 1 : Identifier le contenu à ajouter à un autre jeu à réviser
 
-Vous pouvez ajouter du contenu d’un ensemble de révision à un autre en sélectionnant des documents spécifiques dans l’ensemble de révision source ou en sélectionnant tous les éléments renvoyés par la requête de révision. Si vous ajoutez des éléments sélectionnés, sélectionnez-les, sélectionnez **Action,** puis sélectionnez Ajouter à un autre **jeu à réviser.**
+Vous pouvez ajouter du contenu d’un ensemble de révision à un autre en sélectionnant des documents spécifiques dans l’ensemble de révision source ou en sélectionnant tous les éléments renvoyés par la requête de révision. Si vous ajoutez des éléments sélectionnés, sélectionnez les éléments, **sélectionnez Action,** puis sélectionnez Ajouter **à un autre jeu à réviser.**
 
 ![Ajouter à un autre jeu à réviser dans le menu Action](../media/64f2a4d4-eba3-4ab3-a3ba-d519feea3142.png)
 

@@ -17,7 +17,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 pour entreprise.
+description: Utilisez ce guide de laboratoire de test pour créer un environnement de test d’entreprise simulé pour Microsoft 365 entreprise.
 ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.locfileid: "50926043"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>Configuration de base d’une entreprise simulée
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 entreprise et Office 365 Entreprise.*
+*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
 
-Cet article explique comment créer un environnement simplifié pour Microsoft 365 pour entreprise qui inclut :
+Cet article explique comment créer un environnement simplifié pour Microsoft 365 entreprise qui inclut :
 
 - Un abonnement d’évaluation ou payant Microsoft 365 E5.
 - Un intranet d’organisation simplifié connecté à Internet, constitué de trois machines virtuelles sur un réseau virtuel Azure (DC1, APP1 et CLIENT1).
@@ -40,18 +40,18 @@ La création d’un environnement de test simplifié implique deux phases :
 - [Phase 1: Créer un intranet simulé](#phase-1-create-a-simulated-intranet)
 - [Phase 2 : Création de votre abonnement Microsoft 365 E5](#phase-2-create-your-microsoft-365-e5-subscription)
 
-Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalités de [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) pour entreprise à l’aide de guides de laboratoire de [test](m365-enterprise-test-lab-guides.md) supplémentaires ou par vous-même.
+Vous pouvez utiliser l’environnement résultant pour tester les fonctionnalités de [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) entreprise à l’aide de guides de laboratoire de [test](m365-enterprise-test-lab-guides.md) supplémentaires ou par vous-même.
 
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles de la pile du Guide de laboratoire de test Microsoft 365 pour entreprise, allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>Phase 1: Créer un intranet simulé
 
-Dans cette phase, créez un intranet simulé dans les services d’infrastructure Azure qui inclut un contrôleur de domaine AD DS (Active Directory Domain Services), un serveur d’applications et un ordinateur client.
+Dans cette phase, créez un intranet simulé dans les services d’infrastructure Azure qui inclut un contrôleur de domaine Active Directory Domain Services (AD DS), un serveur d’applications et un ordinateur client.
 
-Vous utiliserez ces ordinateurs dans d’autres guides de laboratoire de [test Microsoft 365](m365-enterprise-test-lab-guides.md) pour entreprise pour configurer et montrer l’identité hybride et d’autres fonctionnalités.
+Vous utiliserez ces ordinateurs dans des Microsoft 365 pour les guides de laboratoire de [test](m365-enterprise-test-lab-guides.md) d’entreprise pour configurer et montrer l’identité hybride et d’autres fonctionnalités.
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>Méthode 1: Créer votre intranet simulé avec un Modèle de Gestion de Ressources Azure 
 
@@ -62,7 +62,7 @@ Avant de déployer le modèle, lisez la [page README du](https://github.com/maxs
 - Nom de domaine DNS public de votre environnement de test (testlab). \<*your public domain*> Vous devez entrer ce nom dans le champ Nom de **domaine** de la page **Déploiement** personnalisé.
 - Un préfixe d’étiquette DNS pour les URL d’adresses IP publiques de vos machines virtuelles. Vous devez entrer cette étiquette dans le **préfixe d’étiquette Dns** champ de la page **déploiement Personnalisé**.
 
-Après avoir lu les instructions, sélectionnez **Déployer sur Azure** sur la page MODÈLE [README](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) pour commencer.
+Après avoir lu les instructions, sélectionnez **Déployer sur Azure** sur la page DU MODÈLE [LISEZME](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) pour commencer.
 
 >[!Note]
 >L’intranet simulé créé par le modèle Azure Resource Manager nécessite un abonnement Azure payant.
@@ -160,19 +160,19 @@ Vous serez invité à indiquer un nom d’utilisateur et un mot de passe pour le
   
 Ensuite, connectez-vous à la machine virtuelle DC1 :
   
-1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez Groupes de **ressources** > <le nom de votre nouveau groupe de ressources _ ***> > _* DC1**  >  **Connect**.
+1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez Groupes de **ressources** > <le nom de votre nouveau groupe de ressources _ ***> > _* DC1**  >  **Connecter**.
     
-2. Dans le volet ouvert, sélectionnez **Télécharger le fichier RDP.** Ouvrez le fichier DC1.rdp qui est téléchargé, puis sélectionnez **Se connecter.**
+2. Dans le volet ouvert, sélectionnez **Télécharger le fichier RDP.** Ouvrez le fichier DC1.rdp qui est téléchargé, puis sélectionnez **Connecter**.
     
 3. Spécifiez le nom du compte Administrateur local DC1 :
     
    - Pour Windows 7 :
     
-     Dans la boîte **de dialogue Sécurité Windows,** **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte administrateur local **DC1 \\** < >.
+     Dans la **boîte Sécurité Windows** dialogue, **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte administrateur local **DC1 \\** < >.
     
    - Pour Windows 8 ou Windows 10 :
     
-     Dans la **boîte de dialogue Sécurité Windows,** sélectionnez Plus de **choix,** puis **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte administrateur local **DC1 \\** < >.
+     Dans la **boîte Sécurité Windows** dialogue, sélectionnez Plus de **choix,** puis sélectionnez Utiliser **un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte administrateur local **DC1 \\** < >.
     
 4. Dans **Mot de** passe, entrez le mot de passe du compte d’administrateur local, puis sélectionnez **OK.**
     
@@ -197,11 +197,11 @@ Notez que l’exécution de ces commandes peut prendre quelques minutes.
   
 Après le redémarrage de DC1, reconnectez-vous à la machine virtuelle DC1.
   
-1. Dans le [portail Azure, sélectionnez](https://portal.azure.com) **Groupes** de ressources > <*nom* de votre groupe de ressources> > **DC1**  >  **Connect**.
+1. Dans le [portail Azure,](https://portal.azure.com)sélectionnez Groupes de **ressources** > <nom de votre groupe de *ressources*> > **dc1**  >  **Connecter**.
     
-2. Exécutez le fichier DC1.rdp téléchargé, puis sélectionnez **Se connecter.**
+2. Exécutez le fichier DC1.rdp téléchargé, puis sélectionnez **Connecter**.
     
-3. Dans **Sécurité Windows,** **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte **\\** < *d’administrateur local* TESTLAB>.
+3. Dans **Sécurité Windows,** **sélectionnez Utiliser un autre compte.** Dans **le nom d’utilisateur,** entrez le nom du compte d’administrateur local **TESTLAB \\** < >.
     
 4. Dans la **zone Mot** de passe, entrez le mot de passe du compte d’administrateur local, puis sélectionnez **OK.**
     
@@ -337,9 +337,9 @@ Ensuite, vérifiez que vous pouvez accéder aux ressources web et de partage de 
   
 1. Dans le Gestionnaire de serveur, dans le volet d’arborescence, sélectionnez **Serveur local.**
     
-2. Dans **les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
+2. Dans **Les propriétés de CLIENT1,** **sélectionnez Sur** en plus de la configuration de sécurité renforcée **d’IE.**
     
-3. Dans **la configuration de sécurité renforcée d’Internet Explorer,** sélectionnez **Off** pour les administrateurs et les **utilisateurs,** puis **sélectionnez OK**. 
+3. Dans la configuration de sécurité renforcée d’Internet **Explorer,** sélectionnez **Off** pour les administrateurs et les  **utilisateurs,** puis **sélectionnez OK**.
     
 4. Dans l’écran d’accueil, **sélectionnez Internet Explorer,** puis **sélectionnez OK.**
     
@@ -379,13 +379,13 @@ Pour configurer un abonnement d’évaluation Office 365 E5, suivez les instru
 
 #### <a name="using-an-office-365-e5-test-environment"></a>Utilisation d’un environnement de test Office 365 E5
 
-Si vous n’avez besoin que d’un environnement de test Office 365, vous n’avez pas besoin de lire le reste de cet article.
+Si vous n’avez besoin Office 365 environnement de test, vous n’avez pas besoin de lire le reste de cet article.
 
-Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Microsoft 365 et Office 365, consultez les guides de laboratoire de [test Microsoft 365 pour](m365-enterprise-test-lab-guides.md)entreprise.
+Pour obtenir des guides de laboratoire de test supplémentaires qui s’appliquent à Microsoft 365 et Office 365, voir Microsoft 365 pour les guides de laboratoire de [test d’entreprise.](m365-enterprise-test-lab-guides.md)
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Ajouter un abonnement d’évaluation de Microsoft 365 E5.
 
-Pour ajouter un abonnement d’essai Microsoft 365 E5 et configurer vos comptes d’utilisateurs avec des licences, exécutez les instructions de la [phase 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) du Guide de laboratoire de test de configuration de base légère.
+Pour ajouter un abonnement Microsoft 365 E5 d’essai et configurer vos comptes d’utilisateurs avec des licences, exécutez les instructions de la [phase 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) du Guide de laboratoire de test de configuration de base légère.
 
   
 ## <a name="results"></a>Résultats
@@ -400,7 +400,7 @@ Votre configuration finale ressemble à ceci :
   
 ![Phase 2 de la configuration de base de l’entreprise simulée](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-Vous êtes maintenant prêt à expérimenter des fonctionnalités supplémentaires de [Microsoft 365 pour entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
+Vous êtes maintenant prêt à expérimenter des fonctionnalités supplémentaires de [Microsoft 365 entreprise.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -414,6 +414,6 @@ Découvrez les nouveaux ensembles de guides pour les tests de laboratoire :
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

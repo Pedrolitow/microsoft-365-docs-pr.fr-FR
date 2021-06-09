@@ -1,5 +1,5 @@
 ---
-title: Identité cloud Microsoft 365 uniquement
+title: Microsoft 365 identité cloud uniquement
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -33,15 +33,15 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/01/2020
 ms.locfileid: "48327926"
 ---
-# <a name="microsoft-365-cloud-only-identity"></a>Identité cloud Microsoft 365 uniquement
+# <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 identité cloud uniquement
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Avec l’identité cloud uniquement, tous vos utilisateurs, groupes et contacts sont stockés dans le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365. Voici les composants de base de l’identité cloud uniquement.
+Avec l’identité cloud uniquement, tous vos utilisateurs, groupes et contacts sont stockés dans le client Azure Active Directory (Azure AD) de votre abonnement Microsoft 365 client. Voici les composants de base de l’identité cloud uniquement.
  
 ![Composants de base de l’identité cloud uniquement](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Les utilisateurs et leurs comptes d’utilisateurs dans les organisations peuvent être classés de plusieurs façons. Par exemple, certains sont des employés et ont un statut permanent. Certains sont des fournisseurs, des sous-traitants ou des partenaires qui ont un statut temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent tout de même avoir accès à des services et des ressources spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
+Les utilisateurs et leurs comptes d’utilisateurs dans les organisations peuvent être classés de plusieurs façons. Par exemple, certains sont des employés et ont un statut permanent. Certains fournisseurs, sous-traitants ou partenaires ont un statut temporaire. Certains sont des utilisateurs externes qui n’ont pas de compte d’utilisateur, mais qui doivent tout de même avoir accès à des services et des ressources spécifiques pour prendre en charge l’interaction et la collaboration. Par exemple :
 
 - Les comptes client représentent les utilisateurs au sein de votre organisation auxquels vous octroyez une licence pour les services cloud
 
@@ -53,10 +53,10 @@ Par ailleurs, certains services cloud peuvent être partagés avec des utilisate
 
 Vous pouvez utiliser des groupes dans Azure AD à plusieurs fins qui simplifient la gestion de votre environnement cloud. Par exemple, avec les groupes Azure AD, vous pouvez :
 
-- Utilisez les licences basées sur les groupes pour attribuer automatiquement des licences pour Microsoft 365 à vos comptes d’utilisateur dès qu’elles sont ajoutées en tant que membres.
+- Utilisez la gestion des licences basée sur les groupes pour attribuer des licences Microsoft 365 à vos comptes d’utilisateurs automatiquement dès qu’elles sont ajoutées en tant que membres.
 - Ajoutez dynamiquement des comptes d’utilisateur à des groupes spécifiques en fonction des attributs de compte d’utilisateur, tels que le nom du service.
 - Approvisionnement automatique des utilisateurs pour les applications SaaS (Software as a Service) et pour protéger l’accès à ces applications à l’aide de l’authentification multifacteur (MFA) et d’autres stratégies d’accès conditionnel.
-- Fournir des autorisations et des niveaux d’accès pour les sites d’équipe SharePoint Online.
+- Fournir des autorisations et des niveaux d’accès pour SharePoint sites d’équipe En ligne.
 
 ## <a name="next-steps-for-cloud-only-identity"></a>Étapes suivantes pour l’identité cloud uniquement
 

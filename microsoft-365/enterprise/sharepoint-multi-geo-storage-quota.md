@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Découvrez les quotas de stockage SharePoint dans les environnements multigéo géographiques et comment les quotas peuvent être gérés par l’administrateur SharePoint Online.
+description: En savoir plus SharePoint quotas de stockage dans les environnements multigé géographiques et comment les quotas peuvent être gérés par l’administrateur SharePoint Online.
 ms.openlocfilehash: ec736a6bd6061f8b028fca7a1c34d5278a84db89
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

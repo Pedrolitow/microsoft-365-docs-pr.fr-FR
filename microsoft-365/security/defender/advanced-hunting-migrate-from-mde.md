@@ -33,14 +33,14 @@ ms.locfileid: "52470687"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Déplacez vos flux de travail de recherche avancée de Microsoft Defender pour point de terminaison pour qu’ils recherchent de manière proactive les menaces à l’aide d’un ensemble plus large de données. Dans Microsoft 365 Defender, vous avez accès aux données à partir d’autres solutions Microsoft 365 sécurité, notamment :
 
-- Microsoft Defender pour point de terminaison
-- Microsoft Defender pour Office 365
-- Microsoft Cloud App Security
-- Microsoft Defender pour l’identité
+- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour Office 365
+- Microsoft Cloud App Security
+- Microsoft Defender pour l’identité
 
 >[!NOTE]
 >La plupart des clients Microsoft Defender pour Endpoint peuvent [utiliser Microsoft 365 Defender sans licences supplémentaires.](prerequisites.md#licensing-requirements) Pour commencer la transition de vos flux de travail de recherche avancée à partir de Defender pour Endpoint, Microsoft 365 [Defender](m365d-enable.md).
@@ -120,7 +120,7 @@ AlertInfo
 
 Lorsque les règles microsoft Defender pour les points de terminaison sont modifiées sur Microsoft 365 Defender, elles continuent de fonctionner comme avant si la requête résultante examine uniquement les tables des appareils. 
 
-Par exemple, les alertes générées par des règles de détection personnalisées qui interrogent uniquement les tables des appareils continueront d’être remis à votre SIEM et de générer des notifications par courrier électronique, selon la façon dont vous les avez configurées dans Microsoft Defender pour endpoint. Toutes les règles de suppression existantes dans Defender pour le point de terminaison continueront également de s’appliquer.
+Par exemple, les alertes générées par des règles de détection personnalisées qui interrogent uniquement les tables des appareils continueront d’être remis à votre SIEM et de générer des notifications par courrier électronique, selon la façon dont vous les avez configurées dans Microsoft Defender pour le point de terminaison. Toutes les règles de suppression existantes dans Defender pour le point de terminaison continueront également de s’appliquer.
 
 Une fois que vous avez modifié une règle Defender for Endpoint afin qu’elle interroge les tables d’identité et de messagerie, qui sont uniquement disponibles dans Microsoft 365 Defender, la règle est automatiquement déplacée vers Microsoft 365 Defender. 
 
