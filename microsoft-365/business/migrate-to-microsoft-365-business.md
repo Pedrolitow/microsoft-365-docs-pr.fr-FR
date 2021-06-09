@@ -63,7 +63,7 @@ Nous avons ajouté une comparaison côte à côte de ces deux plans à la descri
 3. Sur la page suivante, sélectionnez **Mettre à niveau.**
 
   > [!NOTE]
-  > Si un message vous indique que la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans **Azure Active Directory,** vous pouvez l’ignorer en toute sécurité, sauf si vous avez une organisation très importante. Les organisations qui ont sélectionné cette option savent qu’elles utilisent des licences basées sur des groupes.
+  > Si vous voyez un message qui indique que la mise à niveau de votre abonnement n’est pas prise en charge avec la gestion des licences basée sur les groupes dans **Azure Active Directory,** vous pouvez l’ignorer en toute sécurité, sauf si vous avez une organisation très importante. Les organisations qui ont sélectionné cette option savent qu’elles utilisent des licences basées sur des groupes.
 
 4. Ensuite, vous pouvez afficher la liste des plans vers qui vous pouvez mettre à niveau. Dans ce cas, recherchez l’Microsoft 365 Business Premium plan. Vous pouvez faire défiler vers le bas si vous souhaitez voir toutes les applications et services inclus dans ce plan. Sous **Microsoft 365 Business Premium,** **sélectionnez Mettre à** niveau pour ajouter Microsoft 365 Business Premium à votre panier.
 
@@ -88,9 +88,9 @@ Maintenant que Microsoft 365 Business Premium licences sont attribuées, vous de
   
 1. Dans le centre d’administration, dans le volet de navigation, allez à **Stratégies des** \> **appareils.**
 
-2. Dans la page **Stratégies d’appareil,** sélectionnez **Ajouter.**
+2. Dans la page **Stratégies d’appareil,** **sélectionnez Ajouter.**
 
-3. Dans le **volet Ajouter** une stratégie, nommez la stratégie (par exemple, Protéger les fichiers de travail), puis choisissez un **type** de stratégie dans la liste liste liste.
+3. Dans le **volet Ajouter** une stratégie, donnez un nom à la stratégie (par exemple, Protéger les fichiers de travail), puis choisissez un **type** de stratégie dans la liste liste.
 
     Vous pouvez configurer des stratégies d’application pour la protection des fichiers sur les appareils Android et iPhone, ainsi que des Windows 10, et vous pouvez configurer des stratégies de configuration d’appareil pour les appareils Windows 10 entreprise. Pour plus d’informations, voir les liens suivants :
 

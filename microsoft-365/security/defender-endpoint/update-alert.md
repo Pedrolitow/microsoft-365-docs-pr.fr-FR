@@ -44,7 +44,7 @@ Met à jour les propriétés de l’alerte [existante.](alerts.md)
 <br>Les propriétés updatables ```status``` sont : , et ```determination``` ```classification``` ```assignedTo``` .
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Vous pouvez mettre à jour les alertes disponibles dans l’API. Pour plus [d’informations, voir Alertes](get-alerts.md) de liste.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 

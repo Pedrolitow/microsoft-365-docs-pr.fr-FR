@@ -38,11 +38,11 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Ces erreurs (avec des codes d’erreur de CS001-002, CS003-002, CS008-009, CS012-002 et d’autres erreurs de la forme CS0XX-0XX) indiquent que la recherche de contenu n’a pas réussi à rechercher des emplacements de contenu spécifiques ; dans cet exemple, deux boîtes aux lettres n’ont pas été recherchés. Ces erreurs s’affichent dans la page de présentation des détails de l’état de la recherche de contenu.
+Ces erreurs (avec des codes d’erreur de CS001-002, CS003-002, CS008-009, CS012-002 et d’autres erreurs de la forme CS0XX-0XX) indiquent que la recherche de contenu n’a pas réussi à rechercher des emplacements de contenu spécifiques ; dans cet exemple, deux boîtes aux lettres n’ont pas été recherchés. Ces erreurs sont affichées dans la page de présentation des détails de l’état de la recherche de contenu.
 
 ## <a name="cause-of-content-location-errors"></a>Cause des erreurs d’emplacement de contenu
 
-Lorsque vous recherchez un grand nombre de boîtes aux lettres, la recherche est distribuée sur des milliers de serveurs dans un centre de données Microsoft. À tout moment, des serveurs spécifiques peuvent être en état de redémarrage ou en cours de rerouillage vers des copies redondantes. Dans l’un ou l’autre de ces cas, la demande de la recherche de contenu pour récupérer des données va prendre du temps. Dans l’exemple précédent, les erreurs des boîtes aux lettres qui ont échoué étaient le résultat du délai d’insétion de la recherche.
+Lorsque vous recherchez un grand nombre de boîtes aux lettres, la recherche est distribuée sur des milliers de serveurs dans un centre de données Microsoft. À tout moment, des serveurs spécifiques peuvent être en état de redémarrage ou en cours de rerouillage vers des copies redondantes. Dans l’un ou l’autre de ces cas, la demande de récupération des données par la recherche de contenu prendra du temps. Dans l’exemple précédent, les erreurs des boîtes aux lettres qui ont échoué étaient le résultat du délai d’insétion de la recherche.
 
 ## <a name="resolving-content-location-errors"></a>Résolution des erreurs d’emplacement de contenu
 

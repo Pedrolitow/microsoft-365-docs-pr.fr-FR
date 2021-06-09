@@ -33,9 +33,9 @@ ms.locfileid: "52269576"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Les faux positifs ou négatifs peuvent parfois se produire avec n’importe quelle solution de protection contre les menaces. Si [des fonctionnalités](m365d-autoir.md) automatisées d’examen et de réponse dans Microsoft 365 Defender ont manqué ou détecté un problème, votre équipe des opérations de sécurité peut suivre les étapes suivantes :
+Les faux positifs ou négatifs peuvent parfois se produire avec n’importe quelle solution de protection contre les menaces. Si [des fonctionnalités](m365d-autoir.md) d’investigation et de réponse automatisées dans Microsoft 365 Defender ont manqué ou détecté un problème, votre équipe des opérations de sécurité peut suivre les étapes suivantes :
 
 - [Signaler un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Ajuster vos alertes](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si nécessaire)
@@ -47,14 +47,14 @@ Les sections suivantes décrivent comment effectuer ces tâches.
 
 |Élément manqué ou détecté de manière erronée |Service  |Procédure  |
 |---------|---------|---------|
-|- Message électronique <br/>- Pièce jointe d’un e-mail <br/>- URL dans un message électronique<br/>- URL dans un fichier Office      |[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et de fichiers à Microsoft pour analyse](../office-365-security/admin-submission.md)         |
+|- Message électronique <br/>- Pièce jointe d’un e-mail <br/>- URL dans un message électronique<br/>- URL dans un fichier Office de données      |[Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et de fichiers à Microsoft pour analyse](../office-365-security/admin-submission.md)         |
 |Fichier ou application sur un appareil    |[Microsoft Defender pour point de terminaison](/windows/security/threat-protection)         |[Envoyer un fichier à Microsoft pour analyse des programmes malveillants](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajuster une alerte pour éviter que les faux positifs ne se répètent
 
 |Scénario |Service |Procédure |
 |--------|--------|--------|
-|- Une alerte est déclenchée par un usage légitime <br/>- Une alerte est inexacte    |[Microsoft Cloud App Security](/cloud-app-security)<br/> ou <br/>[Protection Azure contre les menaces](/azure/security/fundamentals/threat-detection)         |[Gérer les alertes dans le portail Cloud App Security](/cloud-app-security/managing-alerts)         |
+|- Une alerte est déclenchée par un usage légitime <br/>- Une alerte est inexacte    |[Microsoft Cloud App Security](/cloud-app-security)<br/> ou <br/>[Protection Azure contre les menaces](/azure/security/fundamentals/threat-detection)         |[Gérer les alertes dans le portail Sécurité des applications cloud web](/cloud-app-security/managing-alerts)         |
 |Un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sécurisé|[Microsoft Defender pour point de terminaison](/windows/security/threat-protection) |[Créer un indicateur personnalisé avec une action « Autoriser »](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annuler une action de correction qui a été prise sur un appareil
@@ -72,5 +72,5 @@ Si une action de correction a été entreprise sur une entité (par exemple, un 
 ## <a name="see-also"></a>Voir aussi
 
 - [Consulter les détails et les résultats d'un examen automatisé](m365d-autoir-results.md)
-- [Recherche proactive des menaces avec le hunting avancé dans Microsoft 365 Defender](advanced-hunting-overview.md)
+- [Recherche proactive des menaces avec le recherche avancée dans Microsoft 365 Defender](advanced-hunting-overview.md)
 - [Résoudre des faux négatifs/positifs dans Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

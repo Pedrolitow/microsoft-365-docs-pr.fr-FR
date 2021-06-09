@@ -23,7 +23,7 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription Office 365.
+description: Comprenez ce que vous devez savoir avant de passer par le processus d’inscription pour Office 365.
 ms.date: 03/17/2021
 ms.openlocfilehash: 393c1304ba4e699c6bf7d09bf51f6c81bb7389d9
 ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
@@ -82,7 +82,7 @@ Si vous commencez par une version d’essai gratuite, vous [pourrez l’acheter 
   
 Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achetez pas l’abonnement d’essai, il expire automatiquement à la fin de la période d’essai et toutes les informations sont définitivement supprimées.
 
-## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Set up Microsoft 365 Business Premium
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Regardez : Configurer Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -121,7 +121,7 @@ Vous n’avez pas besoin d’annuler votre version d’essai. Si vous n’achete
     Vous pouvez payer votre abonnement avec une carte de crédit. Si le coût atteint un certain montant, vous pourrez peut-être également payer par facture.
 
     > [!IMPORTANT]
-    >  Lorsque vous vous inscrivez, n’oubliez pas de choisir la meilleure option de paiement pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
+    >  Lorsque vous vous inscrivez, choisissez la meilleure option de paiement pour votre organisation. Pour modifier vos options de paiement, vous devez appeler le support de facturation.
 
 ## <a name="related-content"></a>Contenu associé
 

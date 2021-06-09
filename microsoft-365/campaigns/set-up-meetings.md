@@ -34,13 +34,13 @@ ms.locfileid: "50044167"
 ---
 # <a name="set-up-meetings"></a>Organiser des réunions
 
-Les réunions dans Microsoft Teams incluent l’audio, la vidéo et le partage. Et comme ils sont en ligne, vous aurez toujours un espace de réunion (sans avoir besoin d’une salle ou d’un projecteur !), même si votre personnel est distribué géographiquement ou travaille à distance. Les réunions Microsoft Teams sont un excellent moyen de collaborer avec votre personnel à l’intérieur et à l’extérieur de votre organisation. Vous n’avez pas besoin d’être membre de votre organisation ou même d’avoir un compte pour participer à une réunion. Vous pouvez planifier et exécuter des réunions en ligne à l’aide de Microsoft Teams. Au cours d’une réunion, vous pouvez partager votre écran, partager des fichiers, affecter des tâches, etc. Les campagnes électorales peuvent inclure du personnel, des volontaires et des invités extérieurs à votre organisation dans la réunion. Les petites entreprises ou pratiques peuvent rencontrer leurs employés ou des clients ou des partenaires sur Microsoft Teams.
+Les réunions dans Microsoft Teams incluent l’audio, la vidéo et le partage. Et comme ils sont en ligne, vous aurez toujours un espace de réunion (sans avoir besoin d’une salle ou d’un projecteur !), même si votre personnel est distribué géographiquement ou travaille à distance. Microsoft Teams réunions sont un excellent moyen de collaborer avec votre personnel à l’intérieur et à l’extérieur de votre organisation. Vous n’avez pas besoin d’être membre de votre organisation ou même d’avoir un compte pour participer à une réunion. Vous pouvez planifier et exécuter des réunions en ligne à l’aide Microsoft Teams. Au cours d’une réunion, vous pouvez partager votre écran, partager des fichiers, affecter des tâches, etc. Les campagnes électorales peuvent inclure du personnel, des volontaires et des invités extérieurs à votre organisation dans la réunion. Les petites entreprises ou pratiques peuvent rencontrer leurs employés ou des clients ou des partenaires Microsoft Teams.
 
 [![Illustration de deux utilisateurs dans une réunion](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Téléchargez une infographie au [format PDF](https://go.microsoft.com/fwlink/?linkid=2078712) ou [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) pour obtenir une vue d’ensemble rapide de la façon de rejoindre ou d’héberger une réunion en ligne avec Microsoft Teams.
 
-## <a name="best-practices"></a>Bonnes pratiques
+## <a name="best-practices"></a>Meilleures pratiques
 
 Suivez les meilleures pratiques ci-après pour vos réunions en ligne :
 

@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment créer, fermer, rouvrir et supprimer des cas dans la découverte électronique principale dans Microsoft 365.
+description: Cet article explique comment créer, fermer, rouvrir et supprimer des cas dans la découverte électronique principale Microsoft 365.
 ms.openlocfilehash: 517819ce542d5f53587d21c2ee08c9d5d96cd27d
 ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT

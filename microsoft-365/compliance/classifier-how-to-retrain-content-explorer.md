@@ -26,7 +26,7 @@ ms.locfileid: "52793063"
 
 Un Microsoft 365 classifieur entraisable est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Une fois formé, vous pouvez l’utiliser pour identifier l’élément à appliquer Office étiquettes de confidentialité, stratégies de conformité des communications et stratégies d’étiquette de rétention.
 
-Cet article vous montre comment améliorer les performances des classifieurs entraisables personnalisés et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
+Cet article vous montre comment améliorer les performances des classifieurs entraçables personnalisés et de certains classifieurs pré-formés en leur fournissant des commentaires supplémentaires.
 
 Pour en savoir plus sur les différents types de classifieurs, voir En savoir plus sur les [classifieurs entraisables.](classifier-learn-about.md)
 
@@ -50,14 +50,14 @@ Vous aurez besoin de comptes avec ces autorisations pour utiliser des classifieu
 ## <a name="overall-workflow"></a>Flux de travail global
 
 > [!IMPORTANT]
-> Vous fournissez des commentaires dans l’Explorateur de contenu pour appliquer automatiquement des stratégies d’étiquette de rétention Exchange les éléments et utilise le classifieur comme condition. **Si vous n’avez pas de stratégie de rétention qui applique automatiquement une étiquette de rétention à Exchange éléments et utilise un classificateur comme condition, arrêtez-vous ici.**
+> Vous fournissez des commentaires dans l’Explorateur de contenu pour appliquer automatiquement des stratégies d’étiquette de rétention Exchange éléments et vous devez utiliser le classifieur comme condition. **Si vous n’avez pas de stratégie de rétention qui applique automatiquement une étiquette de rétention à Exchange éléments et utilise un classificateur comme condition, arrêtez-vous ici.**
 
 Lorsque vous utilisez vos classifieurs, vous souhaitez peut-être augmenter la précision des classifications qu’ils sont en train d’effectuer. Pour ce faire, vous devez évaluer la qualité des classifications des éléments qu’il a identifiés comme étant une correspondance ou non. Une fois que vous avez fait 30 évaluations pour un classificateur, il prend ce retour d’expérience et se réévalue automatiquement.
 
 Pour en savoir plus sur le flux de travail global de la nouvelle formation d’un classifieur, voir Flux de processus pour former à nouveau [un classificateur.](classifier-learn-about.md#retraining-classifiers)
 
 > [!NOTE]
-> Un classificateur doit déjà être publié et en cours d’utilisation avant de pouvoir être à nouveau formé.
+> Un classifieur doit déjà être publié et en cours d’utilisation avant de pouvoir être à nouveau formé.
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Comment reformer un classificateur en explorateur de contenu
 
@@ -67,7 +67,7 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 > [!IMPORTANT]
 > L’apparition des éléments agrégés sous l’en-tête classifieurs entraçables peut prendre jusqu’à huit jours.
 
-3. Choisissez le classifieur entraisable que vous avez utilisé dans votre stratégie d’étiquette de rétention à appliquer automatiquement. Il s’agit du classifieur entraçable sur qui vous allez nous faire part de vos commentaires.
+3. Choisissez le classifieur entra vous avez utilisé dans votre stratégie d’étiquette de rétention à appliquer automatiquement. Il s’agit du classifieur entraçable sur qui vous allez nous faire part de vos commentaires.
 
 > [!NOTE]
 > Si un élément possède une entrée dans la **colonne** Étiquette de rétention, cela signifie que l’élément a été classé en tant que `match` .  Si un élément n’a pas  d’entrée dans la colonne Étiquette de rétention, cela signifie qu’il a été classé en tant que `close match` . Vous pouvez améliorer le plus la précision du classificateur en fournissant des commentaires sur `close match` les éléments. 
@@ -85,7 +85,7 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 > [!IMPORTANT]
 > Ces informations sont ensuite données au classifieur de votre client, elles ne sont **pas revenir à Microsoft.**
 
-9. Ouvrez **les classifieurs Avec formation.**
+9. Ouvrez **les classifieurs Entraisables.**
 10. Le classificateur qui a été utilisé dans votre stratégie de conformité des communications s’affiche sous **l’en-tête Nouvelle** formation.
 
 ![classifieur dans l’état de la formation](../media/classifier-retraining.png)
@@ -94,20 +94,20 @@ Pour en savoir plus sur le flux de travail global de la nouvelle formation d’u
 
 ![Vue d’ensemble des résultats de la formation du classificateur](../media/classifier-retraining-overview.png)
 
-12. Examinez l’action recommandée, ainsi que les comparaisons de prédictions des versions du classifieur actuellement publiées et retentées.
+12. Examinez l’action recommandée et les comparaisons de prédictions des versions réétrainées et actuellement publiées du classificateur.
 13. If you satisfied with the results of the retraining, choose **Re-publish**.
 14. Si vous n’êtes pas satisfait des résultats de la nouvelle formation, vous pouvez choisir de fournir des commentaires supplémentaires au classificateur dans l’interface de l’Explorateur de contenu et de démarrer un autre cycle de formation ou de ne rien faire, auquel cas la version actuellement publiée du classificateur continuera d’être utilisée. 
 
 ## <a name="details-on-republishing-recommendations"></a>Détails sur la republier des recommandations
 
-Voici quelques informations sur la façon dont nous formulerons la recommandation pour publier à nouveau un classifieur retrained ou suggérer une nouvelle formation. Cela nécessite une compréhension plus approfondie du fonctionnement des classifieurs entraisables.
+Voici quelques informations sur la façon dont nous vous suggérons de publier à nouveau un classifieur retrained ou de suggérer une nouvelle formation. Cela nécessite une compréhension plus approfondie du fonctionnement des classifieurs entraisables.
 
 Après une nouvelle formation, nous évaluons les performances du classificateur à la fois sur les éléments avec des commentaires, ainsi que sur tous les éléments utilisés à l’origine pour former le classificateur. 
 
 - Pour les modèles intégrés, les éléments utilisés pour former le classifieur sont les éléments utilisés par Microsoft pour créer le modèle.
 - Pour les modèles personnalisés, les éléments utilisés dans la formation d’origine du classifieur sont issus des sites que vous avez ajoutés pour le test et la révision.
 
-Nous comparons les nombres de performances sur les deux ensembles d’éléments pour le classifieur réécrit et publié afin de fournir une recommandation sur l’amélioration de la publication. 
+Nous comparons les nombres de performances sur les deux ensembles d’éléments pour le classifieur réécrit et publié afin de fournir une recommandation quant à l’amélioration de la republier. 
 
 ## <a name="see-also"></a>Voir aussi
 

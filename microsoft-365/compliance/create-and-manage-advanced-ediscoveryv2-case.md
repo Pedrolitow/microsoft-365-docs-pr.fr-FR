@@ -50,7 +50,7 @@ Pour créer un cas et ajouter des membres, complétez les étapes suivantes. L�
 
 6. Dans la **vignette Autorisations & accès** sous **l’onglet Paramètres,** cliquez sur **Sélectionner.**
 
-7. Dans la page De gestion de ce **cas** volant, sous **Gérer** les membres, cliquez sur **Ajouter** pour ajouter des membres au cas.
+7. Dans la page De gestion de ce  **cas** volant, sous **Gérer** les membres, cliquez sur Ajouter pour ajouter des membres au cas.
 
 8. Dans la liste des personnes, cochez la case en regard des noms des personnes que vous souhaitez ajouter au cas. Comme indiqué précédemment, assurez-vous que les personnes que vous ajoutez au cas se sont vu attribuer les autorisations eDiscovery appropriées.
 
@@ -66,7 +66,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 ![Advanced eDiscovery flux de travail](../media/AeDWorkflow.png)
 
-1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et [des sources de données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
+1. **[Ajoutez des dépositaires](add-custodians-to-case.md) et des sources de [données non privatives](non-custodial-data-sources.md) au cas.** La première étape après la création d’un cas consiste à ajouter des dépositaires. Un *dépositaire* est une personne particulièrement concernée par le contrôle administratif d’un document ou d’un fichier électronique. En outre, vous pouvez ajouter des sources de données qui ne sont pas associées à un utilisateur spécifique, mais qui peuvent être pertinentes pour le cas.
 
    Voici quelques choses qui se produisent (ou que vous pouvez faire) lorsque vous ajoutez des dépositaires à un cas :
 
@@ -90,7 +90,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
 3. **[Valider la collection dans un jeu à réviser.](commit-draft-collection.md)** Une fois que vous avez configuré et vérifié qu’une recherche renvoie les données souhaitées, l’étape suivante consiste à ajouter les résultats de la recherche à un jeu à réviser. Lorsque vous ajoutez des données à un jeu à réviser, les éléments sont copiés à partir de leur emplacement d’origine vers un emplacement stockage Azure sécurisé. Les données sont réindexées pour optimiser les recherches approfondies et rapides lors de la révision et de l’analyse des éléments du jeu à réviser. En outre, vous pouvez également ajouter des données [non Office 365 dans un jeu à réviser.](load-non-office-365-data-into-a-review-set.md)
 
-   Il existe également un type spécial d’ensemble de révision à ajouter, appelé jeu de révision *de conversation.* Ces types d’ensembles de révision fournissent des fonctionnalités de reconstruction de conversation pour reconstruire, réviser et exporter des conversations threadées telles que celles Microsoft Teams. Pour plus d’informations, [consultez les conversations dans Advanced eDiscovery](conversation-review-sets.md).
+   Il existe également un type spécial d’ensemble de révision à ajouter, appelé jeu de révision *de conversation.* Ces types d’ensembles de révisions fournissent des fonctionnalités de reconstruction de conversation pour reconstruire, réviser et exporter des conversations threadées telles que celles Microsoft Teams. Pour plus d’informations, [consultez les conversations dans Advanced eDiscovery](conversation-review-sets.md).
 
 4. **Examiner et analyser les données d’un jeu à réviser.** Maintenant que les données sont dans un jeu à réviser, vous pouvez utiliser un large éventail d’outils et de fonctionnalités pour afficher et analyser les données de cas dans le but de réduire le jeu de données à ce qui est le plus pertinent pour le cas que vous examinez. Voici une liste de certains outils et fonctionnalités que vous pouvez utiliser au cours de ce processus.
 
@@ -100,7 +100,7 @@ Pour commencer à utiliser Advanced eDiscovery, voici un flux de travail de base
 
    - [Créer et utiliser des balises](tagging-documents.md). Vous pouvez appliquer des balises à des documents dans un jeu à réviser pour identifier ceux qui sont réactifs (ou non réactifs au cas), puis utiliser ces balises lors de la création de requêtes de recherche pour inclure ou exclure les documents marqués. Vous pouvez également baliser pour déterminer les documents à exporter.
 
-   - [Annoter et redacter des documents.](view-documents-in-review-set.md#annotate-view) Vous pouvez utiliser l’outil d’annotation dans une révision pour annoter des documents et publier du contenu dans des documents en tant que produit de travail. Nous générons une version PDF d’un document annoté ou rédigé au cours de la révision afin de réduire le risque d’exportation de la version native non expurgée du document.
+   - [Annoter et redessier des documents.](view-documents-in-review-set.md#annotate-view) Vous pouvez utiliser l’outil d’annotation dans une révision pour annoter des documents et redessier du contenu dans des documents en tant que produit de travail. Nous générons une version PDF d’un document annoté ou rédigé au cours de la révision afin de réduire le risque d’exportation de la version native non expurgée du document.
 
    - [Analyser les données de cas.](analyzing-data-in-review-set.md) La fonctionnalité d’analyse Advanced eDiscovery est puissante. Après avoir exécuté des analyses sur les données du jeu à réviser, nous avons effectué des analyses telles que la détection des quasi-doublons, le thread de messagerie électronique et les thèmes qui peuvent aider à réduire le volume de documents à réviser. Nous générons également des rapports d’analyse qui résument le résultat de l’exécution de l’analyse. Comme indiqué précédemment, l’exécution de l’analyse exécute également le modèle de détection des privilèges [client-avocat.](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)
 

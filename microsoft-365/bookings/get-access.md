@@ -22,7 +22,7 @@ Cette rubrique décrit comment accéder à Bookings pour la première fois. Il v
 
 ## <a name="access-bookings-for-the-first-time"></a>Accéder aux réservations pour la première fois
 
-Si votre administrateur informatique vous a accordé l’accès à Bookings, vous pouvez accéder à l’application via Office online.
+Si votre administrateur informatique vous a accordé l’accès à Bookings, vous pouvez accéder à l’application via Office en ligne.
 
 La première fois que vous utilisez [Bookings,](https://outlook.office.com/bookings/onboarding) vous créez un calendrier et vous définissez votre entreprise.
 

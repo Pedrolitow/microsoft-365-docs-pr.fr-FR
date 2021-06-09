@@ -27,7 +27,7 @@ ms.locfileid: "43942917"
 Lorsque vous utilisez l’outil d’exportation eDiscovery pour exporter les résultats d’une recherche eDiscovery à partir des différents outils eDiscovery de Microsoft, la taille par défaut d’un fichier PST qui peut être exporté est de 10 Go. Si vous souhaitez modifier cette taille par défaut, vous pouvez modifier le Registre Windows sur l’ordinateur que vous utilisez pour exporter les résultats de la recherche. L’une des raisons de cette situation est qu’un fichier PST peut tenir sur un support amovible, tel qu’un DVD, un disque compact ou un lecteur USB. 
   
 > [!NOTE]
-> L’outil d’exportation eDiscovery est utilisé pour exporter les résultats de recherche lors de l’utilisation de l’outil de recherche de contenu dans le Centre de sécurité & conformité, In-Place eDiscovery dans Exchange Online et le centre eDiscovery dans SharePoint Online.
+> L’outil d’exportation eDiscovery est utilisé pour exporter les résultats de la recherche lors de l’utilisation de l’outil de recherche de contenu dans le Centre de sécurité & conformité, In-Place eDiscovery dans Exchange Online et le centre eDiscovery dans SharePoint Online.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>Créer un paramètre de Registre pour modifier la taille des fichiers PST lorsque vous exportez des résultats de recherche eDiscovery
 
@@ -54,7 +54,7 @@ Effectuez la procédure suivante sur l’ordinateur que vous utiliserez pour exp
    
 3. Modifiez la valeur à la taille maximale souhaitée d’un fichier PST lorsque vous exportez les résultats de recherche, puis `PstSizeLimitInBytes` enregistrez le fichier. 
     
-4. Dans l’Explorateur Windows, cliquez ou double-cliquez sur le fichier .reg que vous avez créé aux étapes précédentes.
+4. Dans Windows Explorer, cliquez ou double-cliquez sur le fichier .reg que vous avez créé aux étapes précédentes.
     
 5. Dans la fenêtre Contrôle d’accès utilisateur, cliquez sur **Oui** pour laisser l’Éditeur du Registre effectuer la modification. 
     

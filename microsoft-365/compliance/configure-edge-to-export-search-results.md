@@ -12,7 +12,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Vous devez activer la prise en charge ClickOnce pour utiliser la dernière version de Microsoft Edge afin de télécharger les résultats de recherche à partir de la recherche de contenu et de la découverte électronique dans le centre de sécurité et conformité.
+description: Vous devez activer la prise en charge ClickOnce pour utiliser la dernière version de Microsoft Edge pour télécharger les résultats de recherche à partir de la recherche de contenu et de la découverte électronique dans le centre de sécurité et conformité.
 ms.openlocfilehash: 60f42d2884c56aaff40bc0a6a979e99698a3cd2e
 ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
@@ -22,11 +22,11 @@ ms.locfileid: "47546818"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>Utiliser l’outil d’exportation eDiscovery dans Microsoft Edge
 
-Suite aux modifications récentes apportées à la dernière version de Microsoft Edge, la prise en charge ClickOnce’est plus activée par défaut. Pour continuer à utiliser l’outil d’exportation eDiscovery pour télécharger les résultats de recherche de contenu ou de découverte électronique, vous devez utiliser [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) ou activer la prise en charge de ClickOnce dans la dernière version de Microsoft Edge.
+Suite aux modifications récentes apportées à la dernière version de Microsoft Edge, ClickOnce prise en charge des ClickOnce n’est plus activée par défaut. Pour continuer à utiliser l’outil d’exportation eDiscovery pour télécharger les résultats de recherche de contenu ou eDiscovery, vous devez utiliser [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) ou activer la prise en charge de ClickOnce dans la dernière version de Microsoft Edge.
 
-## <a name="enable-clickonce-support-in-microsoft-edge"></a>Activer ClickOnce prise en charge dans Microsoft Edge
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>Activer ClickOnce prise en charge des Microsoft Edge
 
-1. Dans Microsoft Edge, allez à **edge://flags/#edge-click-once**.
+1. In Microsoft Edge, go to **edge://flags/#edge-click-once**.
 
 2. Si la valeur existante est définie sur **Default** ou **Disabled** dans la liste liste, changez-la **en Activé.**
 

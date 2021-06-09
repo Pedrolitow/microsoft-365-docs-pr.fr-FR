@@ -43,7 +43,7 @@ Microsoft Office applications sont disponibles dans votre menu **Démarrer.** Si
 
 Les Office que vous avez installées apparaissent maintenant dans **votre** menu Démarrer.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Migrer votre contenu vers Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (article)
 

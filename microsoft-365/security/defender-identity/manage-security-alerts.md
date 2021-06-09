@@ -25,7 +25,7 @@ Cet article explique les principes de base de l’utilisation des alertes de sé
 
 Les alertes Defender pour l’identité sont intégrées en natif au centre [de sécurité Microsoft 365](https://security.microsoft.com) avec un format de page d’alerte d’identité dédié. Il s’agit de la première étape du parcours d’introduction de l’expérience [Microsoft Defender pour l’identité](/defender-for-identity/defender-for-identity-in-microsoft-365-defender)complète dans Microsoft 365 Defender .
 
-La nouvelle page d’alerte d’identité offre aux clients Microsoft Defender for Identity un meilleur enrichissement de signal entre domaines et de nouvelles fonctionnalités de réponse automatisée aux identités. Il vous permet de rester sécurisé et d’améliorer l’efficacité de vos opérations de sécurité.
+La nouvelle page d’alerte d’identité offre aux clients Microsoft Defender for Identity un meilleur enrichissement de signal entre domaines et de nouvelles fonctionnalités de réponse automatisée aux identités. Il garantit que vous restez sécurisé et contribue à améliorer l’efficacité de vos opérations de sécurité.
 
 L’un des avantages de l’examen des alertes par le biais de [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) est que les alertes Microsoft Defender pour l’identité sont davantage corrélées avec les informations obtenues à partir de chacun des autres produits de la suite. Ces alertes améliorées sont cohérentes avec les autres formats d’alerte Microsoft 365 Defender provenant de [Microsoft Defender](/microsoft-365/security/office-365-security) pour Office 365 et Microsoft Defender pour le point [de terminaison.](/microsoft-365/security/defender-endpoint) La nouvelle page élimine efficacement la nécessité d’accéder à un autre portail de produits pour examiner les alertes associées à l’identité.
 
@@ -60,7 +60,7 @@ Au-dessus de la zone Ce **qui s’est** passé se sont des boutons pour les **co
 
 Dans le volet droit, vous verrez les détails de **l’alerte.** Vous pouvez y voir plus de détails et effectuer plusieurs tâches :
 
-- **Classifier cette alerte** : ici, vous pouvez désigner cette alerte en tant qu’alerte **True** ou **False**
+- **Classifier cette alerte** : vous pouvez ici désigner cette alerte comme alerte **True** ou **False**
 
     ![Classifier une alerte](../../media/defender-identity/classify-alert.png)
 
@@ -81,12 +81,12 @@ Dans le volet droit, vous verrez les détails de **l’alerte.** Vous pouvez y v
   - **Classification** : vous pouvez choisir une **alerte True ou** **False.**
   - **Commentaire** : vous pouvez ajouter un commentaire sur l’alerte.
 
-    Si vous sélectionnez les trois points à côté de Gérer l’alerte, vous pouvez consulter un **expert** en **menaces,** exporter l’alerte vers un fichier Excel ou établir un lien vers **un autre incident.**
+    Si vous sélectionnez les trois points à côté de Gérer l’alerte, vous pouvez consulter un **expert** en **menaces,** exporter l’alerte vers un fichier Excel ou un lien vers **un autre incident.**
 
     ![Gérer l’alerte](../../media/defender-identity/manage-alert.png)
 
     >[!NOTE]
-    >Dans le Excel, deux liens sont désormais disponibles : Afficher dans **Microsoft Defender** pour l’identité et Affichage dans **Microsoft 365 Defender.** Chaque lien vous permet d’être sur le portail approprié et d’y fournir des informations sur l’alerte.
+    >Dans le Excel, deux liens sont désormais disponibles : Afficher dans **Microsoft Defender** pour l’identité et affichage dans **Microsoft 365 Defender**. Chaque lien vous permet d’être sur le portail approprié et d’y fournir des informations sur l’alerte.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Découvrez les nouveautés du gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
+description: Découvrez les nouveautés du Gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
 ms.openlocfilehash: fe5e8056bd771082436c3cd941cd6f4e602c11a9
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
@@ -44,8 +44,8 @@ Consultez la liste complète des [modèles d’évaluation.](compliance-manager-
 
 Le Gestionnaire de conformité est désormais disponible pour les clients doD du gouvernement américain, en plus des clients modérés et Cloud de la communauté du secteur public du gouvernement américain Community (Cloud de la communauté du secteur public).
 
-## <a name="march-2021"></a>9 mars 2021
+## <a name="march-2021"></a>9 mars 2021
 
 ### <a name="active-and-inactive-templates"></a>Modèles actifs et inactifs
 
-Chaque page d’évaluation et page de modèle d’évaluation possède un compteur de modèles activé. Ce compteur indique le nombre de modèles éligibles que vous utilisez conformément à votre contrat de licence. Types [de modèle d’affichage : inclus et premium, actif et inactif](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) pour en savoir plus.
+Chaque page d’évaluation et page de modèle d’évaluation possède un compteur de modèles activé. Ce compteur indique le nombre de modèles éligibles que vous utilisez conformément à votre contrat de licence. Types [de modèles d’affichage : inclus et premium, actif et inactif](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) pour en savoir plus.

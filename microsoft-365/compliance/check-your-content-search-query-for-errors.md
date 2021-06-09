@@ -29,7 +29,7 @@ Voici une liste des caractères non pris en place que nous vérifions dans les r
   
 - **Guillemets intelligents** : les guillemets simples et doubles (également appelés guillemets) ne sont pas pris en charge. Seuls les guillemets droits peuvent être utilisés dans une requête de recherche. 
 
-- **Caractères non imprimables** et de contrôle : les caractères non imprimables et les caractères de contrôle ne représentent pas un symbole écrit, tel qu’un caractère alpha-numérique. Il peut s'agir de caractères servant à mettre en forme le texte ou à séparer des lignes. 
+- **Caractères non imprimables** et de contrôle : les caractères non imprimables et de contrôle ne représentent pas un symbole écrit, tel qu’un caractère alpha numérique. Il peut s'agir de caractères servant à mettre en forme le texte ou à séparer des lignes. 
 
 -  Marques de gauche à droite et de droite à gauche : ces marques sont des caractères de contrôle utilisés pour indiquer l’orientation du texte pour les langues de gauche à droite (telles que l’anglais et l’espagnol) et de droite à gauche (comme l’arabe et l’hébreu).
 

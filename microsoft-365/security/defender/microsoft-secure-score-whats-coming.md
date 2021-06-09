@@ -45,5 +45,5 @@ Nous apporterons prochainement des modifications pour faire de [Microsoft Secure
 
 - [Vue d’ensemble du score de sécurisation Microsoft](microsoft-secure-score.md)
 - [Évaluer votre posture de sécurité](microsoft-secure-score-improvement-actions.md)
-- [Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
+- [Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs](microsoft-secure-score-history-metrics-trends.md)
 - [Nouveautés](microsoft-secure-score-whats-new.md)

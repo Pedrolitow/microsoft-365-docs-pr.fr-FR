@@ -1,6 +1,6 @@
 ---
-title: Gérer les applications dans Le Bureau géré Microsoft
-description: Informations sur la mise à jour des applications métier déployées sur les appareils de bureau géré Microsoft
+title: Gérer les applications dans Bureau géré Microsoft
+description: Informations sur la mise à jour des applications métier déployées sur Bureau géré Microsoft appareils
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -21,14 +21,14 @@ ms.locfileid: "41600681"
 
 <!--Application management -->
 
-Il existe deux façons de gérer les mises à jour des applications pour les applications que vous avez intégrés au Bureau géré Microsoft et déployées sur vos appareils de bureau géré Microsoft. Vous pouvez effectuer des mises à jour d’application dans le portail Bureau géré Microsoft ou Intune. 
+Il existe deux façons de gérer les mises à jour d’application pour les applications que vous avez intégrés à Bureau géré Microsoft et déployés sur vos appareils Bureau géré Microsoft. Vous pouvez effectuer des mises à jour d’application dans Bureau géré Microsoft portail ou Intune. 
 
 <span id="update-app-mmd" />
 
-## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Mettre à jour des applications métier dans le Bureau géré Microsoft
+## <a name="update-line-of-business-apps-in-microsoft-managed-desktop"></a>Mettre à jour des applications métier dans Bureau géré Microsoft
 
-**Pour mettre à jour vos applications métier dans le portail Bureau géré Microsoft**
-1. Connectez-vous au [portail d’administration du bureau géré Microsoft.](https://aka.ms/mmdportal)
+**Pour mettre à jour vos applications métier dans Bureau géré Microsoft web**
+1. Connectez-vous [Bureau géré Microsoft portail d’administration.](https://aka.ms/mmdportal)
 2. Sous **Inventaire,** sélectionnez **Applications.**  
 3. Sélectionnez l’application à mettre à jour, puis sélectionnez **Modifier.**
 4. Sous **Gérer,** sélectionnez **Propriétés.** 
@@ -57,16 +57,16 @@ L’application mise à jour sera déployée sur les appareils de vos utilisateu
 
 ## <a name="roll-back-an-app-to-a-previous-version"></a>Revenir à une version antérieure d’une application
 
-Si une erreur est trouvée lors du déploiement d’une nouvelle version d’une application, vous pouvez revenir à une version précédente. Le processus décrit ici est pour les applications où le type est répertorié en tant qu’application métier **Windows MSI** ou application **Windows (Win 32) - aperçu**
+Si une erreur est trouvée lors du déploiement d’une nouvelle version d’une application, vous pouvez revenir à une version précédente. Le processus décrit ici est pour les applications où le type est répertorié comme Windows application métier **MSI** ou **application Windows (Win 32) : prévisualisation**
 
 **Pour revenir à une version antérieure d’une application métier**
 
-1. Connectez-vous au [portail d’administration du bureau géré Microsoft.](https://aka.ms/mmdportal)
+1. Connectez-vous [Bureau géré Microsoft portail d’administration.](https://aka.ms/mmdportal)
 2. Sous **Inventaire,** sélectionnez **Applications.**  
 3. Sélectionnez l’application que vous devez revenir en arrière, puis sélectionnez **Modifier.**
 4. Sous **Gérer,** sélectionnez **Propriétés.** 
-    - Pour les applications métier **Windows MSI,** sélectionnez Informations sur l’application, puis sous Ignorer la **version** de l’application, sélectionnez **Oui**.
-    - Pour **l’application Windows (Win 32) : prévisualiser** les applications, sélectionner les informations sur **l’application,** sélectionner les règles de **détection,** puis sélectionner Ajouter . 
+    - Pour Windows applications **métier MSI,** sélectionnez Informations sur l’application, puis sous Ignorer la **version** de l’application, sélectionnez **Oui**.
+    - For **Windows app (Win 32) - preview** apps, select App **information,** select **Detection rules,** and then select **Add**. 
     S’il existe une règle MSI, vérifiez que la vérification de la version du produit **MSI** est définie sur **Non**.
-5. [Téléchargez une version précédente du fichier source](../get-started/deploy-apps.md) de l’application sur le portail d’administration du bureau géré Microsoft.  
+5. [Télécharger une version précédente du fichier source](../get-started/deploy-apps.md) de l’application pour Bureau géré Microsoft portail d’administration.  
 

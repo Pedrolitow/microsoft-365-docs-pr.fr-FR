@@ -45,15 +45,15 @@ Lorsque vous exportez un rapport, les fichiers de rapport sont téléchargés da
 
   - Dernière version de Windows (32 bits ou 64 bits)
 
-  - Microsoft .NET Framework 4.7
+  - Microsoft .NET Framework 4.7.
 
 - Vous devez utiliser l’un des navigateurs pris en charge suivants pour exécuter l’outil d’exportation eDiscovery<sup>1</sup>:
 
   - Microsoft Edge <sup>2</sup>
 
-    OR
+    OU
 
-  - Microsoft Internet Explorer 10 versions ultérieures
+  - Microsoft Internet Explorer 10 et versions ultérieures
 
   > [!NOTE]
   > <sup>1</sup> Microsoft ne fabrique pas d’extensions ou d’extensions tierces pour ClickOnce applications. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou extensions tierces n’est pas prise en charge.<br/>
@@ -81,9 +81,9 @@ La première étape consiste à préparer le rapport pour le téléchargement ve
   
    ![Exporter les options de sortie](../media/ExportOutputOptions.png)
 
-    - Tous les éléments, à l’exception de ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été **indexés pour d’autres raisons.** Cette option exporte uniquement les informations sur les éléments indexés.
+    - **Tous les éléments, à l’exception** de ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour d’autres raisons. Cette option exporte uniquement les informations sur les éléments indexés.
   
-    - Tous les éléments, y compris ceux qui ont un format non reconnu, sont chiffrés ou n’ont pas été **indexés pour d’autres raisons.** Cette option exporte des informations sur les éléments indexés et non indexés.
+    - Tous les éléments, y compris ceux dont le format n’est pas reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons.** Cette option exporte des informations sur les éléments indexés et non indexés.
   
     - Seuls les éléments qui ont un format non reconnu, sont chiffrés ou n’ont pas été indexés pour **d’autres raisons.** Cette option exporte uniquement les informations sur les éléments nonndex.
 
@@ -105,7 +105,7 @@ Consultez la section suivante pour obtenir des instructions sur le téléchargem
 
 L’étape suivante consiste à télécharger le rapport à partir de la stockage Azure sur votre ordinateur local.
 
-1. Dans la page **Recherche de** contenu dans le centre Microsoft 365 conformité, sélectionnez **l’onglet** Exportation
+1. Dans la page **recherche de** contenu dans le centre Microsoft 365 conformité, sélectionnez **l’onglet** Exportation
   
    Vous de devez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des tâches d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux de rapport d’exportation ont le même nom que la recherche correspondante avec **_ReportsOnly** au nom de recherche.
   
@@ -130,7 +130,7 @@ L’étape suivante consiste à télécharger le rapport à partir de la stockag
 
 7. Cliquez sur **Démarrer** pour télécharger les résultats de recherche sur votre ordinateur.
   
-    L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
+    L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Lorsque le processus d’exportation est terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
   
 ## <a name="whats-included-in-the-report"></a>Ce qui est inclus dans le rapport
 
@@ -140,7 +140,7 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
 
    Si vous incluez des éléments nonndes lors de l’exportation du rapport, le nombre d’éléments nonndex est inclus dans le nombre total de résultats de recherche estimés et dans le nombre total de résultats de recherche téléchargés (si vous de étiez pour exporter les résultats de recherche) répertoriés dans le rapport récapitulatif d’exportation. En d’autres termes, le nombre total d’éléments à télécharger est égal au nombre total de résultats estimés et au nombre total d’éléments nonndex.
   
-- **Manifeste :** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Si vous avez activé l’option de déplication, les messages en double ne sont pas inclus dans le fichier manifeste.
+- **Manifeste :** Fichier manifeste (au format XML) qui contient des informations sur chaque élément inclus dans les résultats de la recherche. Si vous avez activé l’option de dédoplication, les messages en double ne sont pas inclus dans le fichier manifeste.
 
 - **Résultats :** Un Excel qui contient une ligne contenant des informations sur chaque élément indexé qui serait exporté avec les résultats de la recherche. Pour le courrier électronique, le journal des résultats contient des informations sur chaque message, y compris : 
 
@@ -167,4 +167,4 @@ Lorsque vous générez et exportez un rapport sur les résultats d’une recherc
   
 - **Trace.log :** journal de suivi qui contient des informations de journalisation détaillées sur le processus d’exportation et peut vous aider à découvrir les problèmes pendant l’exportation. Si vous ouvrez un ticket avec le Support Microsoft à propos d’un problème lié à l’exportation de rapports de recherche, vous pouvez être invité à fournir ce journal de suivi.
 
-- **Éléments nonndexés :** Un Excel qui contient des informations sur les éléments non nonndes inclus dans les résultats de la recherche. Si vous n’incluez pas d’éléments nonndex lorsque vous générez le rapport de résultats de recherche, ce rapport sera toujours téléchargé, mais il sera vide.
+- **Éléments nonndexés :** Un Excel qui contient des informations sur les éléments nonndex inclus dans les résultats de la recherche. Si vous n’incluez pas d’éléments nonndex lorsque vous générez le rapport de résultats de recherche, ce rapport sera toujours téléchargé, mais il sera vide.

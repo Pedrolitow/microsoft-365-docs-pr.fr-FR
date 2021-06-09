@@ -30,7 +30,7 @@ ms.locfileid: "52311987"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -85,7 +85,7 @@ Si vous rencontrez une erreur lors de la tentative d’activer l’application d
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## <a name="related-topics"></a>Voir aussi
-- [Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison](enable-siem-integration.md)
+- [Activer l’intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)
 - [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
 - [Tirer les détections vers vos outils SIEM](configure-siem.md)
 - [Champs Microsoft Defender pour la détection des points de terminaison](api-portal-mapping.md)

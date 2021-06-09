@@ -27,7 +27,7 @@ Consultez la vidéo Expérience de triage des [alertes](https://www.youtube.com/
 
 ## <a name="alert-dashboard"></a>Tableau de bord d’alerte
 
-Le tableau de **bord** d’alerte des risques internes vous permet d’afficher et d’agir sur les alertes générées par les stratégies de risque internes. Chaque widget de rapport affiche des informations pour les 30 derniers jours.
+Le tableau de **bord** des alertes de risques internes vous permet d’afficher et d’agir sur les alertes générées par les stratégies de risque internes. Chaque widget de rapport affiche des informations pour les 30 derniers jours.
 
 - **Nombre total d’alertes** qui doivent être revue : le nombre total d’alertes devant être revue et triée sont répertoriés, y compris une répartition par gravité de l’alerte.
 - Ouvrez les alertes au cours des **30** derniers jours : nombre total d’alertes créées par les correspondances de stratégie au cours des 30 derniers jours, triées par niveaux de gravité d’alerte élevé, moyen et faible.
@@ -67,7 +67,7 @@ Selon le nombre et le type de stratégies de gestion des risques internes actif 
 - **Heure détectée :** sélectionnez les dates de début et de fin de la création de l’alerte.
 - **Stratégie**: sélectionnez une ou plusieurs stratégies pour filtrer les alertes générées par les stratégies sélectionnées.
 
-## <a name="search-alerts-on-the-alert-dashboard"></a>Alertes de recherche sur le tableau de bord d’alerte
+## <a name="search-alerts-on-the-alert-dashboard"></a>Alertes de recherche dans le tableau de bord d’alerte
 
 Pour rechercher le nom d’une alerte pour un mot spécifique, sélectionnez la commande **Recherche** et tapez le mot à rechercher. Les résultats de la recherche affichent une alerte de stratégie contenant le mot défini dans la recherche.
 
@@ -75,7 +75,7 @@ Pour rechercher le nom d’une alerte pour un mot spécifique, sélectionnez la 
 
 Pour trier une alerte de risque interne, effectuer les étapes suivantes :
 
-1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)sélectionnez l’onglet  **Alertes** sur la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
 3. Dans le **volet d’informations Alertes,** vous pouvez passer en revue les onglets suivants et trier l’alerte :
     - **Résumé :** Cet onglet contient des informations générales sur l’alerte et vous permet de confirmer l’alerte et de créer un cas ou de l’ignorer. Il inclut l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme *élevé,* *moyen* ou *faible*. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
@@ -100,7 +100,7 @@ L’Explorateur d’activités fournit aux enquêteurs et aux analystes des risq
 
 Pour utiliser **l’Explorateur d’activités,** complétez les étapes suivantes :
 
-1. Dans le Centre de conformité Microsoft  365, sélectionnez l’onglet **Alertes** sur la gestion des risques internes.
+1. Dans le centre Microsoft 365 conformité,  sélectionnez l’onglet **Alertes** sur la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
 3. Dans le **volet Détails des alertes,** **sélectionnez Ouvrir en vue étendue.**
 4. Dans la page de l’alerte sélectionnée, sélectionnez l’onglet **Explorateur d’activités.**
@@ -111,12 +111,12 @@ Lors de l’examen des activités dans l’Explorateur d’activités, les enqu�
 
 ## <a name="create-a-case-for-an-alert"></a>Créer un cas pour une alerte
 
-À mesure que l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
+Lorsque l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
 
-1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Alertes.**
+1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)sélectionnez l’onglet  **Alertes** sur la gestion des risques internes.
 2. Dans le **tableau de bord Alertes,** sélectionnez l’alerte pour qui vous souhaitez confirmer et créer un cas.
 3. Dans le **volet d’informations Alertes,** sélectionnez **Actions** Confirmer les  >  **alertes & créer un cas.**
 4. Dans la **boîte de** dialogue Confirmer l’alerte et créer un cas de risque interne, entrez un nom pour le cas, sélectionnez les utilisateurs à ajouter en tant que contributeurs et ajoutez des commentaires le cas échéant. Les commentaires sont automatiquement ajoutés au cas en tant que note de cas.
-5. Sélectionnez **Créer un cas** pour créer un nouveau cas ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de cas.
+5. Sélectionnez **Créer un cas** pour  créer un cas ou annuler pour fermer la boîte de dialogue sans créer de cas.
 
 Une fois le cas créé, les enquêteurs et les analystes peuvent gérer le cas et agir sur celui-ci. Pour plus [d’informations, voir](insider-risk-management-cases.md) l’article sur la gestion des risques internes.

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale autour de la notification aux dépositaires dans les enquêtes juridiques.
+description: Advanced eDiscovery facilite la gestion du flux de travail de notification de conservation légale en avertissant les dépositaires dans le cadre d’enquêtes juridiques.
 ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
 ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "43551238"
 ---
 # <a name="work-with-communications-in-advanced-ediscovery"></a>Travailler avec les communications dans Advanced eDiscovery
 
-Advanced eDiscovery permet aux services juridiques de simplifier leurs processus de suivi et de distribution des notifications de mise en attente légale. L’outil de communication du dépositaire permet aux services juridiques de gérer et d’automatiser l’ensemble du processus de conservation légale, des notifications initiales aux rappels et aux escalades, le tout dans un seul emplacement.
+Advanced eDiscovery aux services juridiques de simplifier leurs processus de suivi et de distribution des notifications de mise en attente légale. L’outil de communication du dépositaire permet aux services juridiques de gérer et d’automatiser l’intégralité du processus de conservation légale, des notifications initiales aux rappels et aux escalades, le tout dans un seul emplacement.
 
 ## <a name="what-is-a-legal-hold-notification"></a>Qu’est-ce qu’une notification de mise en attente légale ?
 

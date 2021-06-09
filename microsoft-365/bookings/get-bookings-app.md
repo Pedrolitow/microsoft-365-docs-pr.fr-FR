@@ -22,11 +22,11 @@ Merci d’avoir téléchargé l’application Microsoft Bookings ! Microsoft Boo
 
 Avant de commencer, vous devez configurer Bookings sur le web.
 
-1. Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les applications pour voir une liste alphabétique des applications Microsoft 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique
+1. Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez Toutes les applications pour voir une liste alphabétique des Microsoft 365 applications disponibles. À partir de là, vous pouvez rechercher une application spécifique
 
    ![Image du lanceur d’applications](../media/bookings-all-apps-launcher.png)
 
-2. Nous sommes [arrivés à la page d’accueil d’Office](https://office.com) et, à partir du lanceur d’applications, sélectionnez **Bookings**.
+2. Nous sommes [arrivés à Office page d’accueil](https://office.com) et à partir du lanceur d’applications, sélectionnez **Bookings**.
 
 3. Sélectionnez **Obtenir maintenant.**
 

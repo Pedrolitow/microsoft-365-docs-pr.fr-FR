@@ -18,7 +18,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment configurer l’audit avancé afin que vous pouvez effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
+description: Cet article explique comment configurer l’audit avancé afin de pouvoir effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
 ms.openlocfilehash: d1752ee7714056254a6c0e5c009aa9aa79ddff3b
 ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
@@ -30,7 +30,7 @@ ms.locfileid: "52314359"
 
 Si votre organisation dispose d’un abonnement et d’une licence d’utilisateur final qui prend en charge l’audit avancé, effectuez les étapes suivantes pour configurer et utiliser les fonctionnalités supplémentaires de l’audit avancé.
 
-![Flux de travail pour configurer l’audit avancé](../media/AdvancedAuditWorkflow.png)
+![Flux de travail pour configurer l’Audit avancé](../media/AdvancedAuditWorkflow.png)
 
 ## <a name="step1-set-up-advanced-audit-for-users"></a>Étape 1 : Configurer l’audit avancé pour les utilisateurs
 
@@ -70,7 +70,7 @@ Si la commande permettant d’activer l’audit des requêtes de recherche a ét
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>Étape 3 : Configurer des stratégies de rétention d’audit
 
-En plus de la stratégie par défaut qui conserve les enregistrements d’audit Exchange, SharePoint et Azure AD pendant un an, vous pouvez créer des stratégies de rétention de journal d’audit supplémentaires pour répondre aux exigences des équipes informatiques, de conformité et de sécurité de votre organisation. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
+En plus de la stratégie par défaut qui conserve les enregistrements d’audit Exchange, SharePoint et Azure AD pendant un an, vous pouvez créer des stratégies de rétention supplémentaires pour le journal d’audit afin de répondre aux exigences des équipes de sécurité, informatique et de conformité de votre organisation. Pour plus d’informations, voir [gérer les stratégies de rétention du journal d’audit](audit-log-retention-policies.md).
 
 ## <a name="step-4-search-for-crucial-events"></a>Étape 4 : Rechercher des événements essentiels
 

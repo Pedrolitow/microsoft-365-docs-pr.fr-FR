@@ -1,6 +1,6 @@
 ---
 title: Modèles de notifications sur la gestion des risques internes
-description: En savoir plus sur les modèles de notification de gestion des risques internes dans Microsoft 365
+description: Découvrez les modèles de notification de gestion des risques internes dans Microsoft 365
 keywords: Microsoft 365, gestion des risques internes, gestion des risques, conformité
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -53,11 +53,11 @@ Si vous souhaitez créer plus qu’un simple message électronique texte pour le
 
 ## <a name="create-a-new-notice-template"></a>Créer un modèle d’avis
 
-Pour créer un modèle de notification de gestion des risques internes, vous utiliserez l’Assistant Notification dans la **solution** de gestion des risques internes dans le Centre de conformité Microsoft 365.
+Pour créer un nouveau modèle de notification de gestion des risques internes, vous utiliserez l’Assistant Notification dans la **solution** de gestion des risques internes dans le centre Microsoft 365 conformité.
 
 Pour créer un modèle d’avis de gestion des risques internes, complétez les étapes suivantes :
 
-1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez l’onglet **Modèles de notification.**
+1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez l’onglet **Modèles de notification.**
 2. Sélectionnez **Créer un modèle de notification** pour ouvrir l’Assistant Notification.
 3. Dans la page **Créer un modèle d’avis,** complétez les champs suivants :
     - **Nom du modèle**: entrez un nom convivial pour l’avis. Ce nom apparaît dans la liste des notifications dans le tableau de bord de notification et dans la liste de sélection des notifications lors de l’envoi d’avis à partir d’un cas.
@@ -71,9 +71,9 @@ Pour créer un modèle d’avis de gestion des risques internes, complétez les 
 
 Pour mettre à jour un modèle de notification de gestion des risques internes existant, complétez les étapes suivantes :
 
-1. Dans le [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez l’onglet **Modèles de notification.**
+1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez l’onglet **Modèles de notification.**
 2. Dans le tableau de bord de notification, sélectionnez le modèle de notification que vous souhaitez gérer.
-3. Dans la page Détails de l’avis, sélectionnez **Modifier**
+3. Dans la page détails de l’avis, sélectionnez **Modifier**
 4. Dans la page **Modifier,** vous pouvez modifier les champs suivants :
     - **Nom du modèle**: entrez un nouveau nom convivial pour l’avis. Ce nom apparaît dans la liste des notifications dans le tableau de bord de notification et dans la liste de sélection des notifications lors de l’envoi d’avis à partir d’un cas.
     - **Envoyer à partir de**: mettre à jour l’adresse e-mail de l’expéditeur pour l’avis. Cette adresse apparaît dans le champ **De :** dans toutes les notifications envoyées aux utilisateurs, sauf si elle est modifiée lors de l’envoi d’une notification à partir d’un cas.
@@ -86,7 +86,7 @@ Pour mettre à jour un modèle de notification de gestion des risques internes e
 
 Pour supprimer un modèle de notification de gestion des risques internes existant, complétez les étapes suivantes :
 
-1. Dans le Centre de conformité [Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez l’onglet **Modèles de notification.**
+1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez l’onglet **Modèles de notification.**
 2. Dans le tableau de bord de notification, sélectionnez le modèle de notification à supprimer.
 3. Sélectionnez **l’icône** Supprimer dans la barre d’outils.
 4. Pour supprimer le modèle d’avis, sélectionnez **Oui** dans la boîte de dialogue de suppression. Pour annuler la suppression, sélectionnez **Annuler**.

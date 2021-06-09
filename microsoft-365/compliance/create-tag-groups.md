@@ -25,7 +25,7 @@ ms.locfileid: "42077071"
 ---
 # <a name="create-tag-groups"></a>Créer des groupes de balises
 
-Avant que vous ou d’autres personnes ne pouvez baliser des documents dans un jeu à réviser, les balises doivent être créées. Pour ce faire, vous pouvez créer des groupes de balises qui contiennent des balises enfants. Les balises sont affichées dans le panneau de marquage lors de la révision de documents dans un jeu à réviser.
+Avant que vous ou d’autres personnes ne pouvez baliser des documents dans un jeu à réviser, les balises doivent être créées. Pour ce faire, vous pouvez créer des groupes de balises qui contiennent des balises enfants. Les balises sont affichées dans le panneau de marquage lors de l’examen de documents dans un jeu à réviser.
 
 Pour créer un groupe de balises :
 

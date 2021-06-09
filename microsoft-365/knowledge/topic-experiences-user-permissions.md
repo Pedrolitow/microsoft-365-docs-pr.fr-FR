@@ -19,7 +19,7 @@ ms.locfileid: "50107396"
 ---
 # <a name="manage-topic-permissions-in-microsoft-viva-topics"></a>Gérer les autorisations des rubriques dans les rubriques microsoft
 
-Vous pouvez gérer les paramètres d’autorisations de rubrique dans le [Centre d’administration Microsoft 365.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
+Vous pouvez gérer les paramètres d’autorisations de rubrique dans [le centre d Microsoft 365'administration.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
 
 Avec les paramètres d’autorisations de rubrique, vous pouvez choisir :
 
@@ -28,10 +28,10 @@ Avec les paramètres d’autorisations de rubrique, vous pouvez choisir :
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
 
-1. Dans le Centre d’administration Microsoft 365, cliquez sur **Paramètres,** puis **Paramètres de l’organisation.**
+1. Dans le Microsoft 365 d’administration, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
-    ![Connecter les personnes aux connaissances](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 
 
 3. Sélectionnez **l’onglet Autorisations de rubrique.** Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
 
@@ -41,24 +41,24 @@ Avec les paramètres d’autorisations de rubrique, vous pouvez choisir :
 
 Pour mettre à jour les personnes autorisées à créer et modifier des rubriques :
 
-1. Sous **l’onglet Autorisations de rubrique,** sous Qui peut créer et modifier des **rubriques,** sélectionnez **Modifier**.
-2. Dans la page **Qui peut créer et modifier des rubriques,** vous pouvez sélectionner :
+1. Sous **l’onglet Autorisations des rubriques,** sous Qui pouvez créer et modifier des **rubriques,** sélectionnez **Modifier**.
+2. Dans la **page Qui créer et modifier des rubriques,** vous pouvez sélectionner :
     - **Tout le monde dans votre organisation**
     - **Personnes ou groupes de sécurité sélectionnés uniquement**
     - **Personne**
 
-    ![Créer et modifier des rubriques](../media/k-manage-who-can-create-and-edit.png)  
+    ![Créer et modifier des rubriques.](../media/k-manage-who-can-create-and-edit.png)  
 
 3. Sélectionnez **Enregistrer**.
 
 Pour mettre à jour les personnes autorisées à gérer les rubriques :
 
-1. Sous **l’onglet Autorisations de rubrique,** sous **Qui peut gérer les rubriques,** sélectionnez **Modifier**.
-2. Dans la page **Qui peut gérer les rubriques,** vous pouvez sélectionner :
+1. Sous **l’onglet Autorisations des rubriques,** **sous Qui pouvez gérer les rubriques,** sélectionnez **Modifier**.
+2. Dans la **page Qui gérer les rubriques,** vous pouvez sélectionner :
     - **Tout le monde dans votre organisation**
     - **Personnes ou groupes de sécurité sélectionnés**
 
-    ![Gérer les rubriques](../media/k-manage-who-can-manage-topics.png)  
+    ![Gestion des rubriques](../media/k-manage-who-can-manage-topics.png)  
 
 3. Sélectionnez **Enregistrer**.
 

@@ -31,7 +31,7 @@ Pour plus d’informations sur la personnalisation et la personnalisation de vot
 
 ## <a name="add-custom-questions-to-your-services"></a>Ajouter des questions personnalisées à vos services
 
-1. Connectez-vous à Microsoft 365 et **rendez-vous sur Bookings.**
+1. Connectez-vous Microsoft 365 et **rendez-vous sur Bookings.**
 
 1. Go to **Services** and either edit an existing service or **Add a service**.
 
@@ -51,13 +51,13 @@ Pour plus d’informations sur la personnalisation et la personnalisation de vot
 
 1. Cliquez **sur OK** en haut de la page, puis **enregistrez le service.**
 
-Bookings enregistre toutes vos questions personnalisées dans une liste principale afin que vous pouvez facilement ajouter des questions à chaque service sans avoir à taper à plusieurs reprises les mêmes questions. Par exemple, si vous ouvrez un autre service, la question que vous avez créée pour le premier service s’affiche dans la section Champs personnalisés, mais elle est désactivée. Cliquez sur la question pour qu’un rectangle en surbrillant s’affiche et que la question soit activée.
+Bookings enregistre toutes vos questions personnalisées dans une liste principale afin que vous pouvez facilement ajouter des questions à chaque service sans avoir à taper à plusieurs reprises les mêmes questions. Par exemple, si vous ouvrez un autre service, la question que vous avez créée pour le premier service s’affiche dans la section Champs personnalisés, mais elle est désactivée. Cliquez sur la question pour qu’un rectangle en surbrille s’affiche et que la question soit activée.
 
 Dans cet exemple, vous pouvez voir que les questions qui ont été ajoutées pour le premier service sont disponibles pour ce service. Toutes les questions que vous créez pour ce service seront disponibles pour tous les services.
 
    ![Image des questions qui s’affichent pour plusieurs services](../media/bookings-questions-services.png)
 
-Si votre page de réservation est déjà publiée, vous n’avez rien d’autre à faire. Les clients pourront voir les questions la prochaine fois qu’ils se livreront avec vous. Si votre page de réservation n’est pas encore publiée, rendez-vous sur la **page** de réservation à partir d’Outlook sur le web, puis sélectionnez **Enregistrer et publier.**
+Si votre page de réservation est déjà publiée, vous n’avez rien d’autre à faire. Les clients pourront voir les questions la prochaine fois qu’ils se livreront avec vous. Si votre page de réservation n’est pas encore publiée, rendez-vous sur la **page** de réservation à partir Outlook sur le web, puis sélectionnez Enregistrer **et publier.**
 
 > [!WARNING]
 > Vous pouvez également supprimer des questions de la liste principale. Toutefois, si vous supprimez une question, elle sera supprimée de chaque service. Nous vous recommandons de désactiver la question en la sélectionnant pour vous assurer que vous n’avez aucun impact sur les autres services. Vous pouvez voir qu’une question est désactivée si elle n’est pas entourée d’un rectangle en surbrillant.

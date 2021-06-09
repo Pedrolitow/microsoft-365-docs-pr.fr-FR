@@ -23,31 +23,31 @@ ms.locfileid: "50058547"
 ---
 # <a name="service-encryption"></a>Chiffrement de service
 
-En plus d’utiliser le chiffrement au niveau du volume, Exchange Online, Microsoft Teams, SharePoint Online et OneDrive Entreprise utilisent également le chiffrement de service pour chiffrer les données client. Le chiffrement de service offre deux options de gestion des clés :
+Outre le chiffrement au niveau du volume, Exchange Online, Microsoft Teams, SharePoint Online et OneDrive Entreprise le chiffrement de service pour chiffrer les données client. Le chiffrement de service offre deux options de gestion des clés :
 
 ## <a name="microsoft-managed-keys"></a>Clés gérées par Microsoft
 Microsoft gère toutes les clés de chiffrement, y compris les clés racines pour le chiffrement de service. Cette option est actuellement activée par défaut pour Exchange Online, SharePoint Online, OneDrive Entreprise. Les clés gérées par Microsoft fournissent le chiffrement de service par défaut, sauf si vous décidez d’intégrer à l’aide de la clé client. Si, à une date ultérieure, vous décidez d’arrêter d’utiliser la clé client sans suivre le chemin de purge des données, vos données restent chiffrées à l’aide des clés gérées par Microsoft. Vos données sont toujours chiffrées à ce niveau par défaut au minimum. 
 
 ## <a name="customer-key"></a>Clé client
-Vous fournissez les clés racine utilisées avec le chiffrement de service et vous les gérez à l’aide d’Azure Key Vault. Microsoft gère toutes les autres clés. Cette option, appelée clé client, est actuellement disponible pour Exchange Online, SharePoint Online et OneDrive Entreprise. (Précédemment appelé chiffrement avancé avec BYOK. Voir Amélioration de la transparence et du contrôle pour les clients [Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) pour l’annonce d’origine.)
+Vous fournissez les clés racine utilisées avec le chiffrement de service et vous les gérez à l’aide d’Azure Key Vault. Microsoft gère toutes les autres clés. Cette option, appelée Clé client, est actuellement disponible pour Exchange Online, SharePoint Online et OneDrive Entreprise. (Précédemment appelé chiffrement avancé avec BYOK. Voir [Amélioration de la transparence et du contrôle pour Office 365 clients pour](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) l’annonce d’origine.)
 
 Le chiffrement de service offre plusieurs avantages :
 
-- Fournit une couche de protection supplémentaire sur BitLocker.
+- Fournit une couche de protection supplémentaire en plus des BitLocker.
 
-- Permet de séparer les administrateurs du système d’exploitation Windows de l’accès aux données d’application stockées ou traitées par le système d’exploitation.
+- Permet de séparer les Windows du système d’exploitation de l’accès aux données d’application stockées ou traitées par le système d’exploitation.
 
 - Inclut une option de clé client qui permet aux services multi-clients de fournir une gestion des clés par client.
 
-- Améliore la capacité de Microsoft 365 à répondre aux demandes des clients qui ont des exigences de conformité spécifiques en matière de chiffrement.
+- Améliore la capacité des utilisateurs Microsoft 365 répondre aux demandes des clients qui ont des exigences de conformité spécifiques en matière de chiffrement.
 
-À l’aide de la clé client, vous pouvez générer vos propres clés de chiffrement à l’aide d’un module de service matériel (HSM) local ou d’Azure Key Vault (AKV). Quelle que soit la façon dont vous générez la clé, vous utilisez AKV pour contrôler et gérer les clés de chiffrement utilisées par Office 365. Une fois que vos clés sont stockées dans AKV, elles peuvent être utilisées comme racine de l’un des chaînes de clés qui chiffre les données ou fichiers de votre boîte aux lettres.
+À l’aide de la clé client, vous pouvez générer vos propres clés de chiffrement à l’aide d’un module de service matériel (HSM) local ou d’Azure Key Vault (AKV). Quelle que soit la façon dont vous générez la clé, vous utilisez AKV pour contrôler et gérer les clés de chiffrement utilisées par les Office 365. Une fois que vos clés sont stockées dans AKV, elles peuvent être utilisées comme racine de l’un des chaînes de clés qui chiffre les données ou fichiers de votre boîte aux lettres.
 
-Un autre avantage de la clé client est le contrôle que vous avez sur la capacité de Microsoft à traiter vos données. Si vous souhaitez supprimer des données d’Office 365, par exemple si vous souhaitez mettre fin au service avec Microsoft ou supprimer une partie de vos données stockées dans le cloud, vous pouvez le faire et utiliser la clé client comme contrôle technique. La suppression de données garantit que personne, y compris Microsoft, ne peut accéder aux données ni les traiter. La clé client est en plus et complète du Customer Lockbox que vous utilisez pour contrôler l’accès à vos données par le personnel Microsoft.
+Un autre avantage de la clé client est le contrôle que vous avez sur la capacité de Microsoft à traiter vos données. Si vous souhaitez supprimer des données de Office 365, par exemple si vous souhaitez mettre fin au service avec Microsoft ou supprimer une partie de vos données stockées dans le cloud, vous pouvez le faire et utiliser la clé client comme contrôle technique. La suppression de données garantit que personne, y compris Microsoft, ne peut accéder aux données ni les traiter. La clé client est en plus et complète du Customer Lockbox que vous utilisez pour contrôler l’accès à vos données par le personnel Microsoft.
 
-Pour découvrir comment configurer la clé client pour Microsoft 365 pour Exchange Online, Microsoft Teams, SharePoint Online, y compris les sites d’équipe et OneDrive Entreprise, consultez les articles suivants :
+Pour découvrir comment configurer la clé client pour Microsoft 365 pour Exchange Online, Microsoft Teams, SharePoint Online, y compris les Sites d’équipe et OneDrive Entreprise, consultez les articles suivants :
 
-- [Chiffrement du service avec la clé client](customer-key-overview.md)
+- [Chiffrement de service avec clé client](customer-key-overview.md)
 
 - [Configurer la clé client](customer-key-set-up.md)
 

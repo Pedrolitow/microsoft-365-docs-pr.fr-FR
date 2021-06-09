@@ -32,7 +32,7 @@ Lorsque le dossier juridique ou l’examen pris en charge par un Advanced eDisco
 
 Voici ce qui se produit lorsque vous fermez Advanced eDiscovery cas :
 
-- Si le cas contient des emplacements de contenu en attente, ces conservations sont désactivées. Une fois la période d’attente désactivée, une période de grâce de 30 jours (appelée attente différée) est appliquée aux emplacements de contenu qui étaient en attente. Cela permet d’empêcher la suppression immédiate du contenu et donne aux administrateurs la possibilité de rechercher ou de récupérer du contenu qui sera définitivement supprimé après l’expiration de la période de retard. Pour plus d’informations, voir [Suppression d’emplacements de contenu d’une attente eDiscovery.](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)
+- Si le cas contient des emplacements de contenu en attente, ces conservations sont désactivées. Une fois la attente désactivée, une période de grâce de 30 jours (appelée attente différée) est appliquée aux emplacements de contenu qui étaient en attente. Cela permet d’empêcher la suppression immédiate du contenu et donne aux administrateurs la possibilité de rechercher ou de récupérer du contenu qui sera définitivement supprimé après l’expiration de la période de retard. Pour plus d’informations, voir [Suppression d’emplacements de contenu d’une attente eDiscovery.](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)
 
 - La fermeture d’un cas désactive uniquement les conservations associées à ce cas. Si d’autres sont conservées sur un emplacement de contenu (par exemple, une attente pour litige, une découverte électronique principale ou une attente d’un autre cas de Advanced eDiscovery), celles-ci sont conservées.
 
@@ -40,7 +40,7 @@ Voici ce qui se produit lorsque vous fermez Advanced eDiscovery cas :
 
 - Vous pouvez modifier un cas après sa fermeture. Par exemple, vous pouvez ajouter ou supprimer des membres, créer des recherches, exporter des résultats de recherche et préparer des résultats de recherche pour analyse dans Advanced eDiscovery. La principale différence entre les cas actifs et fermés est que les conservations sont désactivées lorsqu’un cas est fermé.
 
-Pour fermer un cas :
+Pour fermer un cas :
 
 1. Dans la page **Advanced eDiscovery**, sélectionnez le cas que vous voulez fermer.
 
@@ -54,7 +54,7 @@ Pour fermer un cas :
 
 ## <a name="reopen-a-closed-case"></a>Rouvrir un cas fermé
 
-Lorsque vous rouvrez un Advanced eDiscovery, les cas de non-remise en vigueur lors de la fermeture du cas ne sont pas rétablis automatiquement. Une fois le cas rouvert, vous devez passer à l’onglet **Holds** et activer les précédentes. Pour activer une conservation, sélectionnez-la pour afficher la page de menu volant, puis réglez la bascule **État** sur **Activer**.
+Lorsque vous rouvrez un Advanced eDiscovery, les cas de non-remise en vigueur lors de la fermeture du cas ne sont pas automatiquement rétablis. Une fois le cas rouvert, vous devez passer à l’onglet **Holds** et activer les précédentes. Pour activer une conservation, sélectionnez-la pour afficher la page de menu volant, puis réglez la bascule **État** sur **Activer**.
 
 Pour rouvrir un cas fermé :
 
@@ -75,7 +75,7 @@ Vous pouvez supprimer les cas d’Advanced eDiscovery actifs et fermés. Lorsque
 > [!NOTE]
 > Dans les scénarios de débordement de données, la seule façon de supprimer des éléments d’un jeu à réviser consiste à supprimer Advanced eDiscovery cas. Les autres méthodes de « recherche et purge » ne suppriment pas les éléments d’un jeu à réviser.
 
-Avant de pouvoir supprimer un cas (qu’il soit  actif ou fermé), vous devez d’abord supprimer toutes les ententes associées au cas. Cela inclut la suppression des maintiens avec l’état **« Off**».
+Avant de pouvoir supprimer un cas (qu’il soit actif ou fermé), vous devez d’abord supprimer toutes les *réserves* associées au cas. Cela inclut la suppression des maintiens avec l’état **« Off**».
 
 Pour supprimer les cas associés à un cas :
 
@@ -85,7 +85,7 @@ Pour supprimer les cas associés à un cas :
 
 3. Dans la page volante, cliquez sur **Supprimer la attente.**
 
-Pour supprimer un cas :
+Pour supprimer un cas :
 
 1. Dans la page **Advanced eDiscovery**, sélectionnez le cas que vous voulez supprimer.
 

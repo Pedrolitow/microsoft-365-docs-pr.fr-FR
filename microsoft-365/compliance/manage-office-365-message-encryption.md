@@ -30,9 +30,9 @@ ms.locfileid: "52650983"
 
 Une fois que vous avez terminé la configuration chiffrement de messages Office 365 (OME), vous pouvez personnaliser la configuration de votre déploiement de plusieurs manières. Par exemple, vous pouvez configurer s’il faut activer  les codes de passe à temps partiel, afficher le bouton Chiffrer dans Outlook sur le web, et bien plus encore. Les tâches de cet article décrivent comment.
 
-## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Déterminer si les destinataires des comptes Google, Yahoo et Microsoft peuvent utiliser ces comptes pour se chiffrement de messages Office 365 portail
+## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Déterminer si les destinataires des comptes Google, Yahoo et Microsoft peuvent utiliser ces comptes pour se connecter au portail chiffrement de messages Office 365 web
 
-Lorsque vous définissez les nouvelles fonctionnalités chiffrement de messages Office 365, les utilisateurs de votre organisation peuvent envoyer des messages à des destinataires extérieurs à votre organisation. Si le destinataire utilise un *ID social* tel qu’un compte Google, un compte Yahoo ou un compte Microsoft, le destinataire peut se connecter au portail OME avec un ID social. Si vous le souhaitez, vous pouvez choisir de ne pas autoriser les destinataires à utiliser des ID de réseau social pour se connecter au portail OME.
+Lorsque vous définissez les nouvelles fonctionnalités chiffrement de messages Office 365, les utilisateurs de votre organisation peuvent envoyer des messages à des destinataires extérieurs à votre organisation. Si le destinataire utilise un *ID social* tel qu’un compte Google, un compte Yahoo ou un compte Microsoft, le destinataire peut se connecter au portail OME avec un ID social. Si vous le souhaitez, vous pouvez choisir de ne pas autoriser les destinataires à utiliser les ID de réseau social pour se connecter au portail OME.
   
 ### <a name="to-manage-whether-recipients-can-use-social-ids-to-sign-in-to-the-ome-portal"></a>Pour déterminer si les destinataires peuvent utiliser des ID sociaux pour se connecter au portail OME
   
@@ -163,7 +163,7 @@ Pour plus d’informations sur la façon dont Microsoft 365 implémente le chiff
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly <$true|$false>
    ```
 
-   Par exemple, pour configurer le service pour déchiffrer les pièces jointes lorsqu’un utilisateur les télécharge à partir d’un navigateur web :
+   Par exemple, pour configurer le service afin de déchiffrer les pièces jointes lorsqu’un utilisateur les télécharge à partir d’un navigateur web :
 
    ```powershell
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
@@ -175,7 +175,7 @@ Pour plus d’informations sur la façon dont Microsoft 365 implémente le chiff
    Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $false
    ```
 
-## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>Vérifier que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés
+## <a name="ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail"></a>S’assurer que tous les destinataires externes utilisent le portail OME pour lire les messages chiffrés
 
 Vous pouvez utiliser des modèles de personnalisation pour obliger les destinataires à recevoir un wrapper qui les dirige vers la lecture de messages chiffrés dans le portail OME au lieu d’utiliser Outlook ou Outlook sur le web. Vous pouvez le faire si vous souhaitez mieux contrôler la façon dont les destinataires utilisent le courrier qu’ils reçoivent. Par exemple, si des destinataires externes visualisent le courrier électronique dans le portail web, vous pouvez définir une date d’expiration pour le courrier électronique et révoquer le courrier électronique. Ces fonctionnalités sont uniquement pris en charge via le portail OME. Vous pouvez utiliser l’option Chiffrer et l’option Ne pas forwarder lors de la création des règles de flux de messagerie.
 

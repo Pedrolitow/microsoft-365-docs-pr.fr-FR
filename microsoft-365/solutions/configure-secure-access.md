@@ -1,5 +1,5 @@
 ---
-title: Configurer un accès sécurisé aux services Microsoft 365
+title: Configurer l’accès sécurisé aux services Microsoft 365 services
 description: 'Trouvez des conseils normatifs pour l’implémentation de l’mf, de l’accès conditionnel et des stratégies associées pour trois niveaux de protection : base de référence, sensible, hautement sensible.'
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050885"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a>Configurer un accès sécurisé aux services Microsoft 365
+# <a name="configure-secure-access-to-microsoft-365-services"></a>Configurer l’accès sécurisé aux services Microsoft 365 services
 
 Cette solution est basée sur la « configuration de référence[M365](../security/defender-365-security/microsoft-365-policies-configurations.md)» : conseils normatifs pour l’implémentation de l’mf, de l’accès conditionnel et des stratégies associées pour trois niveaux de protection : base de référence, sensible, hautement sensible.

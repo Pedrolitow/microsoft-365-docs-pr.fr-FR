@@ -19,14 +19,14 @@ ms.locfileid: "50107666"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Gérer la visibilité des rubriques dans les rubriques microsoft
 
-Vous pouvez gérer l’ensemble des utilisateurs qui peuvent voir les points forts de la rubrique, les cartes de rubrique et le centre de rubriques dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
+Vous pouvez gérer l’ensemble des utilisateurs qui peuvent voir les points forts de la rubrique, les cartes de rubrique et le centre de rubriques [dans le centre d Microsoft 365'administration.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
 
-1. Dans le Centre d’administration Microsoft 365, cliquez sur **Paramètres,** puis **Paramètres de l’organisation.**
+1. Dans le Microsoft 365 d’administration, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
-    ![Connecter les personnes aux connaissances](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 
 
 3. Sélectionnez **l’onglet Visibilité des rubriques.** Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
 
@@ -36,13 +36,13 @@ Vous pouvez gérer l’ensemble des utilisateurs qui peuvent voir les points for
 
 Vous pouvez modifier les utilisateurs qui peuvent voir les rubriques de votre organisation.
 
-1. Sous **l’onglet Visibilité de la rubrique,** sous **Qui peut voir les rubriques**, sélectionnez **Modifier**.
-2. Dans la page Qui peut voir les **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en évidence, les fiches de rubrique, les réponses aux rubriques dans les pages de recherche et les pages de rubriques. Vous pouvez sélectionner :
+1. Sous **l’onglet Visibilité de** la **rubrique, sous Qui pouvez voir les rubriques,** sélectionnez **Modifier**.
+2. Dans la page Qui pouvez voir les **rubriques,** vous choisissez les personnes qui auront accès aux détails des rubriques, telles que les rubriques mises en surbrill plan, les fiches de rubrique, les réponses aux rubriques dans la recherche et les pages de rubriques. Vous pouvez sélectionner :
     - **Tout le monde dans votre organisation**
     - **Personnes ou groupes de sécurité sélectionnés uniquement**
     - **Personne**
 
-    ![Personnes qui peuvent voir les rubriques](../media/k-manage-who-can-see-topics.png) 
+    ![Qui pouvez voir les rubriques](../media/k-manage-who-can-see-topics.png) 
 
 3. Sélectionnez **Enregistrer**.  
  

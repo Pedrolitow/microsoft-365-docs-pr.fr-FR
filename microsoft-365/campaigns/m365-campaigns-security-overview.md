@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment protéger votre campagne ou votre entreprise en augmentant votre sécurité avec Microsoft 365.
+description: Découvrez comment protéger votre campagne ou entreprise en augmentant votre sécurité avec Microsoft 365.
 ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT

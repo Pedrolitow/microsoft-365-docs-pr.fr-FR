@@ -18,7 +18,7 @@ ms.locfileid: "47419549"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>Planifier des fermetures d’entreprise, des congés et des congés
 
-Il peut arriver que vous vouliez fermer votre entreprise pour des congés ou des événements d’équipe, ou vos employés auront besoin de congés lorsqu’ils sont maladie, en congés ou indisponibles pour d’autres raisons. Vous pouvez planifier des congés à partir du calendrier Microsoft Bookings et l’employé n’est pas disponible pour les réservations pendant l’heure spécifiée. Une fois l’entreprise rouverte ou les employés reviennent au travail, tous les employés sont répertoriés sur la page de réservation en fonction de leurs heures de travail établies.
+Il peut arriver que vous vouliez fermer votre entreprise pour des congés ou des événements d’équipe, ou vos employés auront besoin de congés en cas de maladie, de congés ou d’indisponibilité pour d’autres raisons. Vous pouvez planifier des congés à partir du calendrier Microsoft Bookings et l’employé n’est pas disponible pour les réservations pendant l’heure spécifiée. Une fois l’entreprise rouverte ou les employés reviennent au travail, tous les employés sont répertoriés sur la page de réservation en fonction de leurs heures de travail établies.
 
 Regardez cette vidéo ou suivez les étapes ci-dessous pour planifier des fermetures d’entreprise ou des fermetures d’employés.
 
@@ -46,7 +46,7 @@ Lorsqu’un client tente de planifier le service un jour de fermeture, il voit u
 
 ## <a name="schedule-employee-time-off"></a>Planifier les congés des employés
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings**.
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
    ![Image du lanceur d’applications](../media/bookings-applauncher.png)
 
