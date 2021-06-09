@@ -34,11 +34,11 @@ Si vous avez une question ou si vous avez besoin d’Microsoft 365 Business Prem
 
 ## <a name="browse-all-small-business-training"></a>Parcourir toutes les formations pour les petites entreprises
 
-Pour obtenir des liens vers l’ensemble du support de formation dont vous aurez besoin pour utiliser Microsoft 365 votre petite entreprise, voir Microsoft 365 formation pour les petites [entreprises.](index.yml) 
+Pour obtenir des liens vers l’ensemble du support de formation dont vous aurez besoin pour utiliser Microsoft 365 votre petite entreprise, voir Microsoft 365 [formation pour les petites entreprises.](index.yml) 
 
 ## <a name="search-for-microsoft-365-admin-center-docs-and-resources"></a>Recherchez des Microsoft 365 du Centre d’administration et des ressources
 
-Pour rechercher des tâches et de l’aide relatives à l’administration, telles que la réinitialisation des mots de passe et l’affectation d’abonnements Microsoft, voir [Microsoft 365'aide du Centre d’administration.](../admin/index.yml)
+Pour rechercher des tâches et de l’aide relatives aux administrateurs, telles que la réinitialisation des mots de passe et l’affectation d’abonnements Microsoft, voir [Microsoft 365'aide du Centre d’administration.](../admin/index.yml)
 
 ## <a name="join-the-community"></a>Rejoindre la communauté
 

@@ -40,7 +40,7 @@ Si votre ancien employé avait un téléphone d’organisation, vous pouvez util
 1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
 2. Dans le Centre d'administration Exchange, accédez à **Destinataires** \> **Boîtes aux lettres**.
 3. Sélectionnez l’utilisateur, puis sous **Appareils mobiles,** **sélectionnez Afficher les détails.**
-4. Dans la page **Détails de** l’appareil mobile, sous **Appareils** mobiles, sélectionnez l’appareil mobile, sélectionnez Effacer le périphérique de effacement des données, puis ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) sélectionnez **Bloquer**.
-5. Cliquez sur **Enregistrer**.
+4. Dans la page **Détails de l’appareil** mobile, sous **Appareils** mobiles, sélectionnez l’appareil mobile, sélectionnez Effacer le périphérique de effacement ![ des données, puis ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) bloquer . 
+5. Sélectionnez **Enregistrer**.
    > [!TIP]
    > Assurez-vous de supprimer ou de désactiver l’utilisateur de votre service Blackberry Enterprise local. Vous devez également désactiver les appareils Blackberry de l'utilisateur. Reportez-vous au guide d'administration des services Blackberry Business Cloud Services pour consulter les étapes spécifiques relatives à la désactivation de l'utilisateur.

@@ -15,7 +15,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: Dans cet article, vous allez découvrir l’authentification moderne hybride et les conditions préalables à l’utilisation avec les serveurs Skype Entreprise et Exchange locaux.
+description: Dans cet article, vous allez découvrir l’authentification moderne hybride et les conditions préalables à l’utilisation avec des serveurs Skype Entreprise et Exchange locaux.
 ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -48,7 +48,7 @@ La gestion des identités des utilisateurs avec une authentification moderne don
 
 Étant donné que Skype Entreprise fonctionne étroitement avec Exchange, le comportement de connexion des utilisateurs du client Skype Entreprise sera affecté par l’état d’authentification moderne d’Exchange. Cela s’applique également si vous disposez d’une architecture Skype Entreprise hybride _domaine séparé_, dans laquelle vous disposez de Skype Entreprise Online et de Skype Entreprise local, avec des utilisateurs hébergés aux deux emplacements.
 
-Pour plus d’informations sur l’authentification moderne dans Office 365, voir Prise en charge des applications [clientes Office 365 - Authentification multifacteur.](microsoft-365-client-support-multi-factor-authentication.md)
+Pour plus d’informations sur l’authentification moderne dans Office 365, voir Office 365 [Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
 > [!IMPORTANT]
 > Depuis août 2017, tous les nouveaux clients Office 365 qui incluent Skype Entreprise Online et Exchange Online ont l’authentification moderne activée par défaut. Les clients préexistants n’ont pas de modifications dans leur état MA par défaut, mais tous les nouveaux clients prennent automatiquement en charge l’ensemble étendu de fonctionnalités d’identité répertoriées ci-dessus. Pour vérifier votre état de MA, consultez la section [Vérifier l’état de l’authentification moderne de votre environnement local](hybrid-modern-auth-overview.md#BKMK_CheckStatus).
@@ -149,19 +149,19 @@ Vérifiez et cochez les éléments de votre liste avant de continuer :
 
     La disponibilité de l’authentification moderne est déterminée par la combinaison du client, du protocole et de la configuration. Si l’authentification moderne n’est pas prise en charge par le client, le protocole et/ou la configuration, le client continuera à tirer parti de l’authentification héritée.
   
-    Les protocoles et clients suivants permettent l’authentification moderne avec Exchange local lorsque l’authentification moderne est activée dans l’environnement :
+    Les protocoles et clients suivants permettent l’authentification moderne avec l’Exchange lorsque l’authentification moderne est activée dans l’environnement :
 
   |**Clients**|**Protocole principal**|**Notes**|
   |:-----|:-----|:-----|
-  |Outlook 2013 et les ultérieures  <br/> |MAPI sur HTTP  <br/> |MAPI sur HTTP doit être activé dans Exchange afin de tirer parti de l’authentification moderne avec ces clients (généralement activé pour les nouvelles installations d’Exchange 2013 Service Pack 1 et versions ultérieures). Pour plus d’informations, consultez [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Vérifiez que vous exécutez la build minimale requise d’Outlook, consultez [Dernières mises à jour pour les versions d’Outlook qui utilisent Windows Installer (MSI)](/officeupdates/outlook-updates-msi).  <br/> |
-  |Outlook 2016 pour Mac et les ultérieures  <br/> |Services Web Exchange  <br/> |  <br/> |
+  |Outlook 2013 et ultérieures  <br/> |MAPI sur HTTP  <br/> |MAPI sur HTTP doit être activé dans Exchange afin de tirer parti de l’authentification moderne avec ces clients (généralement activé pour les nouvelles installations d’Exchange 2013 Service Pack 1 et versions ultérieures). Pour plus d’informations, consultez [Fonctionnement de l’authentification moderne pour les applications clientes Office 2013 et Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Vérifiez que vous exécutez la build minimale requise d’Outlook, consultez [Dernières mises à jour pour les versions d’Outlook qui utilisent Windows Installer (MSI)](/officeupdates/outlook-updates-msi).  <br/> |
+  |Outlook 2016 pour Mac et ultérieures  <br/> |Services Web Exchange  <br/> |  <br/> |
   |Outlook pour iOS et Android  <br/> | Technologie de synchronisation Microsoft <br/> |Pour plus d’informations, consultez [Utilisation de l’authentification moderne hybride avec Outlook pour iOS et Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
   |Clients Exchange ActiveSync (par exemple, iOS11 mail)  <br/> |Exchange ActiveSync  <br/> |Pour les clients Exchange ActiveSync qui prennent en charge l’authentification moderne, vous devez recréer le profil pour passer de l’authentification de base à l’authentification moderne.  <br/> |
 
-    Les clients et/ou protocoles qui ne sont pas répertoriés (par exemple, POP3) ne sont pas en charge de l’authentification moderne avec Exchange local et continuent à tirer parti des mécanismes d’authentification hérités même après l’authentification moderne est activée dans l’environnement.
+    Les clients et/ou protocoles qui ne sont pas répertoriés (par exemple, POP3) ne permettent pas l’authentification moderne avec les Exchange locaux et continuent à tirer parti des mécanismes d’authentification hérités même après l’authentification moderne dans l’environnement.
 
 - **Conditions préalables générales**
-  - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour garantir que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
+  - Les scénarios de forêt de ressources nécessitent une relation d’confiance double avec la forêt de comptes pour s’assurer que des recherche SID correctes sont effectuées lors des demandes d’authentification moderne hybride. 
   - Si vous utilisez AD FS, vous devez disposer de Windows 2012 R2 AD FS 3.0 et versions ultérieures pour la fédération.
   - Vos configurations d’identité sont les types pris en charge par Azure AD Connect, tels que la synchronisation de hachage de mot de passe, l’authentification relais et le STS local pris en charge par Office 365.
   - Azure AD Connect est configuré et fonctionne pour la réplication et la synchronisation des utilisateurs.

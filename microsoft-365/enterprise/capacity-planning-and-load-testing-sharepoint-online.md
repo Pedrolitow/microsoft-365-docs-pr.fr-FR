@@ -27,7 +27,7 @@ ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905223"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planification de la capacité et test de charge SharePoint Online
-Cet article explique comment déployer sur SharePoint Online sans les tests de charge traditionnels, car le test de charge n’est pas autorisé sur SharePoint Online. SharePoint Online est un service cloud et les fonctionnalités de charge, l’état d’état et l’équilibre global de la charge dans le service sont gérés par Microsoft.
+Cet article explique comment déployer sur SharePoint Online sans test de charge classique, car le test de charge n’est pas autorisé sur SharePoint Online. SharePoint Online est un service cloud et les fonctionnalités de charge, l’état d’état et l’équilibre global de la charge dans le service sont gérés par Microsoft.
   
 La meilleure approche pour garantir la réussite du lancement de votre site consiste à suivre les principes, pratiques et recommandations de base qui sont mis en évidence dans le plan de lancement de votre [portail.](planportallaunchroll-out.md)
 
@@ -40,9 +40,9 @@ Afin d’utiliser efficacement la capacité et de gérer une croissance inattend
 
 La capacité n’est pas seulement l’ajout continu de matériel, mais elle se rapporte également à la gestion et au contrôle de cette capacité pour s’assurer qu’elle gère les demandes de charge valides. Nous recommandons aux clients de suivre les instructions recommandées pour s’assurer qu’ils ont la meilleure expérience possible. Cela signifie également que nous avons des modèles de limitation et des contrôles en place pour nous assurer que nous n’autorisez pas le comportement « abusif » dans le service. Bien que tous les comportements « mauvais » ne sont pas intentionnels, nous devons nous assurer que nous limitons l’effet de ce comportement. Pour plus d’informations sur la limitation et comment l’éviter, voir l’article d’aide sur la façon d’éviter [d’être](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online) limitée.
 
-## <a name="why-you-cannot-load-test-sharepoint-online"></a>Pourquoi vous ne pouvez pas charger sharePoint Online de test
-Avec les environnements locaux, le test de charge est utilisé pour valider l’hypothèse d’échelle et, finalement, trouver le point de rupture d’une batterie de serveurs . en le saturent avec charge. 
+## <a name="why-you-cannot-load-test-sharepoint-online"></a>Pourquoi vous ne pouvez pas charger le test SharePoint Online
+Avec les environnements locaux, le test de charge est utilisé pour valider l’hypothèse d’échelle et, en fin de compte, trouver le point de rupture d’une batterie de serveurs . en le saturent avec charge. 
 
 Avec SharePoint Online, nous devons faire les choses différemment, car l’échelle est relativement fluide et ajuste, les limitations et les contrôles se chargent, en fonction de certaines heuristiques. Étant un environnement multi-locataire à grande échelle, nous devons protéger tous les locataires dans la même batterie de serveurs, afin de limiter automatiquement les tests de charge. Toutefois, si vous tentez de charger le test, en plus d’être limitée, vous recevrez des résultats erronés et potentiellement erronés, car la batterie de serveurs que vous avez testée aujourd’hui aura probablement connu des modifications d’échelle au cours de la fenêtre de test ou dans les heures qui s’après le test, car les actions d’équilibrage d’échelle et de batterie de serveurs sont effectuées de manière continue.
 
-Au lieu d’essayer de charger le test SharePoint en tant que service, concentrez-vous plutôt sur le suivi des pratiques recommandées et suivez les instructions de [création,](/sharepoint/portal-health) de lancement et de maintenance d’un portail sain.
+Au lieu d’essayer de charger des SharePoint de test en tant que service, concentrez-vous plutôt sur le suivi des pratiques recommandées et suivez les instructions de [création,](/sharepoint/portal-health) de lancement et de maintenance d’un portail sain.

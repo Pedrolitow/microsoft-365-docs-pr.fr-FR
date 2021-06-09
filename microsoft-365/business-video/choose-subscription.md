@@ -31,7 +31,7 @@ ms.locfileid: "52245239"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfzL9?autoplay=false]
 
-Le choix de l’abonnement Microsoft 365 est essentiel pour vous servir au mieux du service. Voici&#39;comment comparer les options et choisir une offre qui&#39;pour votre entreprise.
+Le choix de l’abonnement Microsoft 365 est essentiel pour obtenir le meilleur du service. Voici&#39;comment comparer les options et choisir une offre qui&#39;pour votre entreprise.
 
 ## <a name="try-it"></a>Essayez !
 
@@ -44,7 +44,7 @@ Le choix de l’abonnement Microsoft 365 est essentiel pour vous servir au mieux
 
 ## <a name="compare-plans"></a>Comparer les offres
 
-| Zone de service | Fonctionnalité | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Entreprise E3 |
+| Zone de service | Fonctionnalité | Microsoft 365 Business Standard | Microsoft 365 Business Premium | Office 365 Entreprise E3 |
 | --- | --- | --- | --- | --- |
 | **Licences disponibles** | Nombre maximal d’utilisateurs | 300 | 300 | Illimité |
 | **Applications Office** | Installer Office sur jusqu’à 5 PC/Mac + 5 smartphones par utilisateur (Word, Excel, PowerPoint, OneNote, Access), Office Online | Professionnel | Professionnel | ProPlus |

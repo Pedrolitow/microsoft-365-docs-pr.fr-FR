@@ -1,5 +1,5 @@
 ---
-title: Aider les utilisateurs à se connecter à Microsoft 365 Business Premium
+title: Aider les utilisateurs à se connecter Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -35,14 +35,14 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578444"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Aider les utilisateurs à se connecter à Microsoft 365 Business Premium
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Aider les utilisateurs à se connecter Microsoft 365 Business Premium
 
-Une fois l’installation terminée, vos stratégies d’appareil par défaut sont en place et prêtes à être appliquées. Sur les appareils mobiles, les utilisateurs téléchargent les applications Office. Les stratégies sont ensuite appliquées lorsque l’utilisateur se signe avec son compte scolaire ou scolaire. Il reste encore un peu de travail à faire avant que les stratégies ne s’appliquent aux PC Windows, telles qu’une mise à niveau sur place. Consultez et partagez les rubriques suivantes pour aider les utilisateurs à se configurer et à se connecter :
+Une fois l’installation terminée, vos stratégies d’appareil par défaut sont en place et prêtes à être appliquées. Sur les appareils mobiles, les utilisateurs téléchargent Office applications. Les stratégies sont ensuite appliquées lorsque l’utilisateur se signe avec son compte scolaire ou scolaire. Il y a un peu plus de travail à faire avant que les stratégies ne s’appliquent Windows PC, telles qu’une mise à niveau sur place. Consultez et partagez les rubriques suivantes pour aider les utilisateurs à se configurer et à se connecter :
   
-[Configurer des appareils Windows pour les utilisateurs de Microsoft 365 Business Premium](set-up-windows-devices.md)
+[Configurer des Windows pour les utilisateurs Microsoft 365 Business Premium utilisateurs](set-up-windows-devices.md)
   
 [Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot](add-autopilot-devices-and-profile.md)
   
-[Configurer des appareils mobiles pour les utilisateurs de Microsoft 365 Business Premium](set-up-mobile-devices.md)
+[Configurer des appareils mobiles pour les Microsoft 365 Business Premium utilisateurs](set-up-mobile-devices.md)
   
 

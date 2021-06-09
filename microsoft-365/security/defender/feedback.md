@@ -33,7 +33,7 @@ ms.locfileid: "51899339"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Vos commentaires nous aident à mieux protéger votre environnement contre les attaques avancées. Partagez votre expérience, vos impressions et vos demandes en fournissant des commentaires.
 
@@ -42,10 +42,10 @@ Regardez cette vidéo pour voir à quel point il est facile de fournir des comme
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LWeP]
 
 
-1. Dans n'importe quelle partie du portail, **sélectionnez Faire part de vos commentaires.** 
+1. Dans n’importe quelle partie du portail, **sélectionnez Faire part de vos commentaires.** 
 
     ![Image du bouton de commentaires](../../media/feedback.png)
 
-2. Évaluer votre expérience et fournir des détails sur ce que vous avez aimé ou sur les améliorations qui peuvent être apportées. Vous pouvez également choisir d'être contacté à propos des commentaires. 
+2. Évaluer votre expérience et fournir des détails sur ce que vous avez aimé ou sur les améliorations qui peuvent être apportées. Vous pouvez également choisir d’être contacté à propos des commentaires. 
 
 3. Sélectionnez **Envoyer**.

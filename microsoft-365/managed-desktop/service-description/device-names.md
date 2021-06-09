@@ -1,6 +1,6 @@
 ---
-title: Noms des appareils
-description: Gestion des noms d'appareils par Microsoft Managed Desktop
+title: Noms de l’appareil
+description: Comment Bureau géré Microsoft gestion des noms d’appareils
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -18,13 +18,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51893894"
 ---
-# <a name="device-names"></a>Noms des appareils
+# <a name="device-names"></a>Noms de l’appareil
 
-Bureau géré Microsoft utilise Windows Autopilot, Azure Active Directory et Microsoft Intune. Pour que ces services fonctionnent ensemble en toute transparence, les appareils ont besoin de noms cohérents et normalisés. Bureau géré Microsoft applique un format de nom standardisé (au format *MMD-%RAND11)* lorsque les appareils sont inscrits. Windows Autopilot attribue ces noms. Pour plus d'informations sur Autopilot, voir l'expérience de première expérience avec Autopilot et la page État de [l'inscription.](../get-started/esp-first-run.md)
+Bureau géré Microsoft utilise Windows Autopilot, Azure Active Directory et Microsoft Intune. Pour que ces services fonctionnent ensemble en toute transparence, les appareils ont besoin de noms cohérents et normalisés. Bureau géré Microsoft un format de nom standardisé (au format *MMD-%RAND11)* lorsque les appareils sont inscrits. Windows Autopilot attribue ces noms. Pour plus d’informations sur Autopilot, voir l’expérience de première expérience avec Autopilot et la page État de [l’inscription.](../get-started/esp-first-run.md)
 
-## <a name="automated-name-changes"></a>Modifications automatiques de nom
+## <a name="automated-name-changes"></a>Modifications automatiques de noms
 
-Si un appareil est renommé ultérieurement, Bureau géré Microsoft le renomme automatiquement sous un nouveau nom au format standardisé. Ce processus se produit toutes les quatre heures. Le changement de nom a lieu lors du prochain redémarrage de l'appareil par l'utilisateur.
+Si un appareil est renommé ultérieurement, Bureau géré Microsoft le renommera automatiquement en un nouveau nom au format standardisé. Ce processus se produit toutes les quatre heures. Le changement de nom a lieu lors du prochain redémarrage de l’appareil par l’utilisateur.
 
 > [!IMPORTANT]
-> Si votre environnement dépend de noms d'appareils spécifiques (par exemple, pour prendre en charge une configuration réseau particulière), vous devez examiner les options pour supprimer cette dépendance avant de vous inscrire au Bureau géré Microsoft. Si vous devez conserver la dépendance de nom, [](../working-with-managed-desktop/admin-support.md) vous pouvez envoyer une demande via le portail d'administration pour désactiver la fonction de changement de nom et utiliser le format de nom souhaité.
+> Si votre environnement dépend de noms d’appareils spécifiques (par exemple, pour prendre en charge une configuration réseau particulière), vous devez examiner les options pour supprimer cette dépendance avant de vous inscrire à Bureau géré Microsoft. Si vous devez conserver la dépendance de nom, [](../working-with-managed-desktop/admin-support.md) vous pouvez envoyer une demande via le portail d’administration pour désactiver la fonction de changement de nom et utiliser le format de nom souhaité.

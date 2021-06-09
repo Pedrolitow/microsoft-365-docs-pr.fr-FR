@@ -43,8 +43,8 @@ Une signature électronique à l’échelle de l’entreprise apparaît sur chaq
 1. Sélectionnez **Ajouter +**, puis appliquer **les clauses d’exclusion de responsabilité.**
 1. Dans la page **Nouvelle règle** :
     1. Entrez un nom pour la règle.
-    1. Dans la **liste de listes** de listes listes , sélectionnez **Appliquer à tous les messages.**
-    1. Dans la **liste de** listes listes suivantes, vérifiez que la clause d’exclusion de responsabilité s’affiche. 
+    1. Dans la **liste de listes** de listes générales Appliquer à cette règle, **sélectionnez Appliquer à tous les messages.**
+    1. Dans la **liste de** listes suivantes, vérifiez que la clause d’exclusion de responsabilité s’affiche. 
     1. Sur le côté droit de la page, sélectionnez Entrer du **texte,** puis entrez le texte de votre signature électronique dans la zone de texte Spécifier la clause **d’exclusion** de responsabilité. Vous pouvez améliorer l’apparence de votre signature en formatant le texte au format HTML.
     1. Si vous souhaitez qu’une image apparaisse dans votre signature, vous devez utiliser une URL disponible publiquement pour cette image. Accédez à l’image sur le web, cliquez dessus avec le bouton droit, puis sélectionnez **Copier l’adresse de l’image.** Collez l’adresse dans la **zone de texte Spécifier** la clause d’exclusion de responsabilité. Sélectionnez **OK,** puis faites défiler vers le bas.
     1. Pour vous assurer que la signature fonctionne avec les e-mails chiffrés, ajoutez une option de retour. On the right of the page, choose **Select one**, choose **Wrap,** and then select **OK**.

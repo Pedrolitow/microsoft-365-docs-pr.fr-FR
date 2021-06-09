@@ -21,7 +21,7 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents dans Microsoft 365 boîtes aux lettres.
+description: Découvrez comment importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents vers Microsoft 365 boîtes aux lettres.
 ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
 ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
@@ -35,10 +35,10 @@ Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de donnée
 
 ## <a name="third-party-data-connectors"></a>Connecteurs de données tiers
 
-Le tableau suivant répertorie les connecteurs de données tiers disponibles dans le centre Microsoft 365 conformité. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après l’importation et l’archivage dans Microsoft 365. Consultez [la section suivante](#overview-of-compliance-solutions-that-support-third-party-data) pour obtenir une description plus détaillée de chaque solution de conformité et pour savoir comment elle peut bénéficier de données tierces.
+Le tableau suivant répertorie les connecteurs de données tiers disponibles dans le centre Microsoft 365 conformité. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après l’importation et l’archivage dans Microsoft 365. Consultez [la section suivante](#overview-of-compliance-solutions-that-support-third-party-data) pour obtenir une description plus détaillée de chaque solution de conformité et de la façon dont elle peut bénéficier de données tierces.
 
 > [!TIP]
-> Cliquez sur le lien dans **la** colonne de données tierces pour suivre les instructions pas à pas pour créer un connecteur pour ce type de données.
+> Cliquez sur le lien dans la colonne **de** données tierces pour suivre les instructions détaillées de création d’un connecteur pour ce type de données.
 
 |Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -67,7 +67,7 @@ Le tableau suivant répertorie les connecteurs de données tiers disponibles dan
 |[Reuters Dealing <sup>2</sup>](archive-reutersdealing-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Reuters Eikon <sup>2</sup>](archive-reuterseikon-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[SalesforceForceForce <sup>2</sup>](archive-salesforcechatter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Salesforce Chatter <sup>2</sup>](archive-salesforcechatter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[Slack eDiscovery <sup>2</sup>](archive-slack-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Édition <sup>2</sup>](archive-symphony-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
@@ -96,11 +96,11 @@ Les sections suivantes décrivent certains des éléments que les solutions de c
 
 ### <a name="litigation-hold"></a>Attente pour litige
 
-Vous placez une boîte [aux lettres d’utilisateur](create-a-litigation-hold.md) en attente pour litige pour conserver des données tierces. Lorsque vous créez une attente, vous pouvez spécifier une durée de la rétention (également appelée « attente basée sur le temps *)* afin que les données tierces supprimées et modifiées sont conservées pendant une période spécifiée, puis supprimées définitivement de la boîte aux lettres. Vous pouvez également conserver le contenu indéfiniment (appelé « attente infinie *»* ou jusqu’à ce que la attente pour litige soit supprimée.
+Vous placez une boîte [aux lettres d’utilisateur](create-a-litigation-hold.md) en attente pour litige pour conserver des données tierces. Lorsque vous créez une attente, vous pouvez spécifier une durée de la rétention (également appelée « attente basée sur le temps *)* afin que les données tierces supprimées et modifiées sont conservées pendant une période spécifiée, puis supprimées définitivement de la boîte aux lettres. Sinon, vous pouvez simplement conserver le contenu indéfiniment (appelé une attente *infinie)* ou jusqu’à ce que la attente pour litige soit supprimée.
 
 ### <a name="ediscovery"></a>eDiscovery
 
-Les trois principaux outils eDiscovery dans Microsoft 365 sont la recherche de contenu, core eDiscovery et Advanced eDiscovery.
+Les trois principaux outils eDiscovery Microsoft 365 sont la recherche de contenu, core eDiscovery et Advanced eDiscovery.
 
 - **[Recherche de contenu](content-search.md).** Vous pouvez utiliser l’outil de recherche de contenu pour rechercher des données tierces importées dans les boîtes aux lettres. Vous pouvez utiliser des requêtes et des conditions de recherche pour affiner vos résultats de recherche et exporter les résultats de la recherche.
 
@@ -116,7 +116,7 @@ Vous pouvez [](retention.md) appliquer une stratégie de rétention aux boîtes 
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
-La [fonctionnalité de gestion](records-management.md) des enregistrements Microsoft 365 vous permet de déclarer des données tierces en tant qu’enregistrement. Cela peut être effectué manuellement par les utilisateurs qui appliquent une étiquette de rétention qui marque des données tierces dans leur boîte aux lettres comme enregistrement. Vous pouvez également appliquer automatiquement des étiquettes de rétention en identifiant des informations sensibles, des mots clés ou des types de contenu dans des données tierces.
+La [fonctionnalité de gestion](records-management.md) des enregistrements Microsoft 365 vous permet de déclarer des données tierces en tant qu’enregistrement. Cette procédure peut être effectuée manuellement par les utilisateurs qui appliquent une étiquette de rétention qui marque des données tierces dans leur boîte aux lettres en tant qu’enregistrement. Vous pouvez également appliquer automatiquement des étiquettes de rétention en identifiant des informations sensibles, des mots clés ou des types de contenu dans des données tierces.
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
@@ -128,7 +128,7 @@ Les signaux provenant de données tierces, tels que les données RH sélectives,
 
 ## <a name="data-connectors-in-the-us-government-cloud"></a>Connecteurs de données dans le cloud du gouvernement des États-Unis
 
-Comme mentionné précédemment, les connecteurs de données fournis par TeleMessage sont disponibles dans le cloud du gouvernement des États-Unis. Le tableau suivant indique les environnements spécifiques au secteur public qui supportent chaque connecteur de données TeleMessage. Pour plus d’informations sur les clouds pour le gouvernement des États-Unis, [voir Microsoft 365 gouvernement américain.](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)
+Comme mentionné précédemment, les connecteurs de données fournis par TeleMessage sont disponibles dans le cloud du gouvernement des États-Unis. Le tableau suivant indique les environnements spécifiques au secteur public qui supportent chaque connecteur de données TeleMessage. Pour plus d’informations sur les clouds du gouvernement des États-Unis, [voir Microsoft 365 gouvernement américain.](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)
 
 |Connecteur de données TeleMessage  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -144,6 +144,6 @@ Comme mentionné précédemment, les connecteurs de données fournis par TeleMes
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Collaborer avec un partenaire Microsoft pour archiver des données tierces
 
-Pour importer et archiver des données tierces, votre organisation peut également travailler avec un partenaire Microsoft. Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le Centre de conformité Microsoft, vous pouvez travailler avec un partenaire qui peut fournir un connecteur personnalisé qui sera configuré pour extraire régulièrement des éléments de la source de données tierces, puis vous connecter au cloud Microsoft par une API tierce et importer ces éléments dans Microsoft 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Microsoft 365.
+Pour importer et archiver des données tierces, votre organisation peut également travailler avec un partenaire Microsoft. Si un type de données tiers n’est pas pris en charge par les connecteurs de données disponibles dans le Centre de conformité Microsoft, vous pouvez travailler avec un partenaire qui peut fournir un connecteur personnalisé qui sera configuré pour extraire des éléments de la source de données tierces régulièrement, puis vous connecter au cloud Microsoft par une API tierce et importer ces éléments dans Microsoft 365. Le connecteur partenaire convertit également le contenu d’un élément de la source de données tierce en message électronique, puis l’importe dans une boîte aux lettres dans Microsoft 365.
 
 Pour obtenir la liste des partenaires avec qui vous pouvez travailler et le processus pas à pas pour cette méthode, voir Travailler avec un partenaire pour archiver des données tierces [dans Microsoft 365](work-with-partner-to-archive-third-party-data.md).

@@ -59,7 +59,7 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 
 3. En haut, sélectionnez **Gérer les licences de produits.**
 
-4. Dans le **volet Gérer les licences de** produits, sélectionnez **Remplacer**  et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
+4. Dans le **volet Gérer les licences de** produits, sélectionnez Remplacer et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs. 
 
 5. At the bottom, select **Save Changes** \> **Close**.
 

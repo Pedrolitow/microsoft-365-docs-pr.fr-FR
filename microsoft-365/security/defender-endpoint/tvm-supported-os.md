@@ -56,8 +56,8 @@ Windows Server 2008 R2 | Oui | Oui | Oui | Oui | Oui
 Windows Server 2012 R2 | Oui | Oui | Oui | Oui | Oui
 Windows Server 2016 | Oui | Oui | Oui | Oui | Oui
 Windows Server 2019 | Oui | Oui | Oui | Oui | Oui
-macOS 10.14 « Mojave » et supérieur | Oui | Oui | Oui (prévisualisation) | Oui (prévisualisation) | Oui (prévisualisation)
-Red Hat Enterprise Linux 7.2 ou version supérieure **(prévisualisation)** (voir l’avis \* « Important » ci-dessous) | Oui | Oui | Oui | Oui | Oui
+macOS 10.14 « Mojave » et supérieur | Oui | Oui | Oui (aperçu) | Oui (aperçu) | Oui (aperçu)
+Red Hat Enterprise Linux 7.2 ou version supérieure **(prévisualisation)** (voir la notification « Important » \* ci-dessous) | Oui | Oui | Oui | Oui | Oui
 CentOS 7.2 ou version supérieure **(prévisualisation)** | Oui | Oui | Oui | Oui | Oui
 Ubuntu 16.04 LTS ou version supérieure LTS **(prévisualisation)** | Oui | Oui | Oui | Oui | Oui
 Oracle Linux 7.2 ou version supérieure **(prévisualisation)** | Oui | Oui | Oui | Oui | Oui

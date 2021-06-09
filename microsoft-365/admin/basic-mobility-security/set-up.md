@@ -1,5 +1,5 @@
 ---
-title: Configurer Mobility + Security
+title: Configurer Mobility + Security
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,11 +25,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52634291"
 ---
-# <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
+# <a name="set-up-basic-mobility-and-security"></a>Configurer Mobility + Security
 
-La mobilité et la sécurité de base intégrées pour Microsoft 365 vous permettent de sécuriser et de gérer les appareils mobiles des utilisateurs tels que les iPhone, iPad, Android et Windows mobiles. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
+La mobilité et la sécurité de base intégrées pour Microsoft 365 vous aident à sécuriser et gérer les appareils mobiles des utilisateurs tels que les iPhone, iPad, Android et Windows mobiles. Vous pouvez créer et gérer des stratégies de sécurité des appareils, réinitialiser un appareil à distance et afficher des rapports détaillés sur les appareils.
 
-Vous avez des questions ? Pour obtenir un FORUM AUX QUESTIONS pour vous aider à répondre aux questions les plus fréquentes, consultez forum aux questions fréquemment [posées sur](frequently-asked-questions.md)la mobilité et la sécurité . Sachez que vous ne pouvez pas utiliser un compte d’administrateur délégué pour gérer la mobilité et la sécurité de base. Pour plus d’informations, [voir Partenaires : Proposer une administration déléguée.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
+Vous avez des questions ? Pour obtenir un FORUM AUX QUESTIONS pour vous aider à répondre à des questions courantes, consultez forum aux questions fréquemment posées sur la mobilité [et la sécurité .](frequently-asked-questions.md) Sachez que vous ne pouvez pas utiliser un compte d’administrateur délégué pour gérer la mobilité et la sécurité de base. Pour plus d’informations, [voir Partenaires : Proposer une administration déléguée.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
 
 La gestion des appareils fait partie du Centre de sécurité & conformité. Vous devez donc y aller pour lancer la configuration de la mobilité et de la sécurité de base.
 
@@ -39,11 +39,11 @@ La gestion des appareils fait partie du Centre de sécurité & conformité. Vous
 
 2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
 
-   L’activation de la mobilité et de la sécurité de base peut prendre un certain temps. Une fois terminé, vous recevrez un courrier électronique qui explique les étapes suivantes à suivre.
+   L’activation de la mobilité et de la sécurité de base peut prendre un certain temps. Une fois terminé, vous recevrez un courrier électronique qui vous explique les étapes à suivre.
 
 ## <a name="set-up-mobile-device-management"></a>Configurer la gestion des appareils mobiles
 
-Lorsque le service est prêt, terminez l’installation en suivant les étapes ci-après.
+Lorsque le service est prêt, remplissez les étapes suivantes pour terminer l’installation.
 
 ### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Étape 1 : (Obligatoire) Configurer des domaines pour la mobilité et la sécurité de base
 
@@ -51,7 +51,7 @@ Si vous n’avez pas de domaine personnalisé associé à Microsoft 365 ou si vo
 
 Vous avez besoin d’aide pour la configuration des enregistrements ? Recherchez votre bureau d’enregistrement de domaines et sélectionnez le nom du bureau d’enregistrement pour passer à l’aide pas à pas pour créer un enregistrement DNS dans la liste fournie dans Ajouter des enregistrements [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)pour connecter votre domaine. Utilisez ces instructions pour créer des enregistrements CNAME décrits dans Simplifier Windows inscription sans [azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
-Après avoir ajouté les deux enregistrements CNAME, revenir au Centre de sécurité & conformité et accéder à Gestion des appareils de protection contre la perte de données pour passer à  >     l’étape suivante.
+Après avoir ajouté les deux enregistrements CNAME, revenir au Centre de sécurité & conformité et accéder à la gestion des appareils de protection contre la perte de données pour passer à  >     l’étape suivante.
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Étape 2 : (Obligatoire) Configurer un certificat APNs pour les appareils iOS
 
@@ -98,7 +98,7 @@ Après avoir installé l’ation MFA, revenir au **** Centre de sécurité & c
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Étape 4 : (recommandé) Gérer les stratégies de sécurité des appareils
 
-L’étape suivante consiste à créer et déployer des stratégies de sécurité des appareils pour protéger vos données Microsoft 365'organisation. Par exemple, vous pouvez éviter la perte de données si un utilisateur perd son appareil en créant une stratégie pour verrouiller les appareils après cinq minutes d’inactivité et effacer les appareils après trois échecs de connect.
+L’étape suivante consiste à créer et déployer des stratégies de sécurité d’appareil pour protéger Microsoft 365 données de votre organisation. Par exemple, vous pouvez éviter la perte de données si un utilisateur perd son appareil en créant une stratégie pour verrouiller les appareils après cinq minutes d’inactivité et effacer les appareils après trois échecs de connect.
 
 1. Connectez-vous Microsoft 365 avec votre compte d’administrateur global.
 

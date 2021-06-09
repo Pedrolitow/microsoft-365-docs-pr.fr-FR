@@ -57,7 +57,7 @@ Si vous avez marqué un client comme favori, il est automatiquement développé 
 
 ## <a name="view-service-health-for-all-accounts"></a>Afficher l’état du service pour tous les comptes
 
-L’affichage d’état du service vous indique si des incidents ou des conseils affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
+L’affichage d’état du service vous indique si des incidents ou des avis affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés.
 
 1. Dans le Microsoft 365 d’administration, dans l’affichage multi-clients, sélectionnez **État du service.**
 2. Dans l’affichage agrégé de la **page** État du service, vous pouvez également voir le nombre total d’incidents, le nombre total d’avis affectant l’un des clients gérés et le nombre de services avec des incidents actifs. Vous pouvez également voir combien de vos locataires sont affectés par les incidents et les avis.
@@ -73,7 +73,7 @@ L’affichage d’état du service vous indique si des incidents ou des conseils
 
 La liste des locataires concernés peut être exportée au format CSV afin que les administrateurs peuvent la partager avec les équipes de support technique.
 
-## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Afficher un seul client dans le Centre d Microsoft 365'administration
+## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Afficher un seul client dans le Centre d’administration Microsoft 365 client
 
 Vous pouvez revenir au centre d Microsoft 365'administration pour n’importe quel client à partir de la page **Tous les** locataires.
 

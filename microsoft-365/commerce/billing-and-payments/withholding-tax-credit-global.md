@@ -73,7 +73,7 @@ En cas de problème avec votre demande, l’équipe de révision peut exiger des
 
 Une fois votre demande approuvée, elle est reflétée dans le cycle de facturation suivant. Le montant wht payé est inclus dans la section paiement de votre facture suivante. Le montant est également affiché sous le montant payé dans le portail client.
 
-**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre paiement surpayé est remboursé sur votre carte de crédit.
+**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre sur-paiement est remboursé sur votre carte de crédit.
 
 > [!IMPORTANT]
 >

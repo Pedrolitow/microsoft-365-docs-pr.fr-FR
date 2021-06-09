@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Découvrez comment utiliser l’outil Diagnostic de page pour optimiser le poids des pages dans les pages de sites modernes SharePoint Online.
+description: Découvrez comment utiliser l’outil Diagnostic de page pour optimiser le poids des pages dans SharePoint sites modernes en ligne.
 ms.openlocfilehash: 780d8ca0debbc5efb834f8f3543b9a5a8d168108
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

@@ -69,7 +69,7 @@ Utilisez les options suivantes pour configurer l’exportation. Toutes les optio
   - Fichiers texte : cette option inclut les versions texte extraites des fichiers natifs dans l’exportation.
   - Remplacez les natifs rédigés par des fichiers PDF convertis : si des fichiers PDF rédigés sont générés au cours de la révision, ces fichiers peuvent être exportés. Vous pouvez choisir d’exporter uniquement les fichiers natifs qui ont été rédigés (en ne sélectionnant pas cette option) ou vous pouvez sélectionner cette option pour exporter les fichiers PDF qui contiennent les actions.
 
-## <a name="the-following-sections-describe-the-folder-structure-for-loose-files-and-condensed-directory-structure-options"></a>Les sections suivantes décrivent la structure des dossiers pour les fichiers libres et les options de structure de répertoire condensé
+## <a name="the-following-sections-describe-the-folder-structure-for-loose-files-and-condensed-directory-structure-options"></a>Les sections suivantes décrivent la structure de dossiers pour les fichiers libres et les options de structure de répertoire condensé
 
 Les exportations sont partitionées dans des fichiers ZIP avec une taille maximale de contenu non compressé de 75 Go. Si la taille de l’exportation est inférieure à 75 Go, l’exportation se compose d’un fichier récapitulatif et d’un fichier ZIP unique. Pour les exportations dépassant 75 Go de données non compressées, plusieurs fichiers ZIP sont créés. Une fois téléchargés, les fichiers ZIP peuvent être décompressés dans un seul emplacement pour recréer l’exportation complète.
 
@@ -90,7 +90,7 @@ Si vous sélectionnez cette option d’exportation, le contenu exporté est orga
 - Dossier racine : ce dossier nommé [Nom d’exportation] x de z.zip est répété pour chaque partition de fichier ZIP.
   - Export_load_file_x de z.csv : le fichier de métadonnées et inclut également l’emplacement de chaque fichier stocké dans le fichier ZIP.
   - Avertissements et erreurs x de z.csv : ce fichier inclut des informations sur les erreurs rencontrées lors de la tentative d’exportation à partir du jeu à réviser.
-  - NativeFiles : ce dossier contient tous les fichiers natifs qui ont été exportés. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers *pdf convertis.*
+  - NativeFiles : ce dossier contient tous les fichiers natifs qui ont été exportés. Les fichiers natifs sont remplacés par des fichiers PDF rédigés si vous avez sélectionné l’option Remplacer les natifs rédigés par des fichiers *PDF convertis.*
   - Error_files : ce dossier contient des fichiers dont l’extraction ou une autre erreur de traitement s’est produite. Les fichiers sont placés dans des dossiers distincts, ExtractionError ou ProcessingError. Ces fichiers sont répertoriés dans le fichier de chargement.
   - Extracted_text_files : ce dossier contient tous les fichiers texte extraits qui ont été générés lors du traitement.
 

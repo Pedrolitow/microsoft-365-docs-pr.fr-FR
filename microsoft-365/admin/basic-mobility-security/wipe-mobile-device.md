@@ -33,7 +33,7 @@ Vous pouvez utiliser la mobilité et la sécurité de base intégrées pour Micr
 
 Les appareils mobiles peuvent stocker des informations organisationnelles sensibles et fournir l’accès aux ressources Microsoft 365 de votre organisation. Pour protéger les informations de votre organisation, vous pouvez réinitialiser ou supprimer des données d’entreprise aux usine :
 
-- **Réinitialisation** d’usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
+- **Réinitialisation** aux usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
 
 - **Supprimer des données d’entreprise**: supprime uniquement les données de l’organisation et laisse les applications installées, les photos et les informations personnelles sur l’appareil mobile d’un utilisateur.
 
@@ -47,7 +47,7 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/about-the-admin-center.md).
 
-2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** périphériques mobiles dans la liste des résultats.
+2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** appareils mobiles dans la liste des résultats.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option de gestion des appareils mobiles Basic Mobility and Secruity":::
 
@@ -73,7 +73,7 @@ L’appareil mobile ne figure plus dans la liste des appareils gérés.
 
 Effacez un appareil pour les raisons suivantes :
 
-- Les appareils mobiles tels que les smartphones et les tablettes sont toujours plus complets. Cela signifie qu’il est plus facile pour vos utilisateurs de stocker des informations d’entreprise sensibles, telles que des informations d’identification personnelle ou des communications confidentielles, et d’y accéder en cours de route. Si l’un de ces appareils mobiles est perdu ou volé, la wiping de l’appareil peut aider à empêcher que les informations de votre organisation ne se terminent entre de mauvaises mains.
+- Les appareils mobiles tels que les smartphones et les tablettes sont toujours plus complets. Cela signifie qu’il est plus facile pour vos utilisateurs de stocker des informations d’entreprise sensibles, telles que des informations d’identification personnelle ou des communications confidentielles, et d’y accéder en libre-service. Si l’un de ces appareils mobiles est perdu ou volé, la wiping de l’appareil peut aider à empêcher que les informations de votre organisation ne se terminent entre de mauvaises mains.
 - Lorsqu’un utilisateur quitte l’organisation avec un appareil personnel inscrit à Basic Mobility and Security, vous pouvez empêcher les informations organisationnelles de passer avec cet utilisateur en réinitialisation d’usine.
 - Si votre organisation fournit des appareils mobiles aux utilisateurs, vous devrez peut-être réaffecter des appareils de temps à autre. La réinitialisation d’usine sur un appareil avant de l’affecter à un nouvel utilisateur permet de s’assurer que toutes les informations sensibles du propriétaire précédent sont supprimées.
 

@@ -1,5 +1,5 @@
 ---
-title: Gérer les mots de passe de compte d’utilisateur Microsoft 365
+title: Gérer les Microsoft 365 de compte d’utilisateur
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Découvrez comment gérer les mots de passe de compte d’utilisateur Microsoft 365.
+description: Découvrez comment gérer les mots de passe Microsoft 365 compte d’utilisateur.
 ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905091"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Gérer les mots de passe de compte d’utilisateur Microsoft 365
+# <a name="manage-microsoft-365-user-account-passwords"></a>Gérer les Microsoft 365 de compte d’utilisateur
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer les mots de passe de compte d’utilisateur Microsoft 365 de différentes manières, en fonction de la configuration de votre identité. Vous pouvez gérer les comptes d’utilisateurs dans le Centre d’administration [Microsoft 365,](../admin/add-users/index.yml)dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration Azure Active Directory (Azure AD).
+Vous pouvez gérer Microsoft 365 mots de passe de compte d’utilisateur de différentes manières, en fonction de la configuration de votre identité. Vous pouvez gérer les comptes d’utilisateurs dans le Centre d’administration [Microsoft 365,](../admin/add-users/index.yml)dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration Azure Active Directory (Azure AD).
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planifier l’endroit et la façon dont vous allez gérer les mots de passe de votre compte d’utilisateur
 
@@ -75,7 +75,7 @@ Vous configurez l’authentification unique transparente Azure AD avec l’outil
 <a name="pw_writeback"></a>
 ## <a name="simplify-password-updates-to-ad-ds"></a>Simplifier les mises à jour de mot de passe pour AD DS
 
-Avec la réinitialisation du mot de passe, vous pouvez autoriser les utilisateurs à réinitialiser leur mot de passe via Azure AD, qui est ensuite répliqué dans AD DS. Les utilisateurs n’ont pas besoin d’accéder à leurs services AD DS locaux pour mettre à jour leurs mots de passe. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
+Avec l’écriture écriture par mot de passe, vous pouvez autoriser les utilisateurs à réinitialiser leur mot de passe via Azure AD, qui est ensuite répliqué dans AD DS. Les utilisateurs n’ont pas besoin d’accéder à leurs services AD DS locaux pour mettre à jour leurs mots de passe. C’est utile pour les utilisateurs itinérants ou distants qui ne possèdent pas de connexion d’accès à distance au réseau local.
 
 L’écriture différée de mot de passe est requise pour exploiter pleinement les fonctionnalités Azure AD Identity Protection, comme obliger les utilisateurs à modifier leur mot de passe en local lorsqu’un risque élevé de compromission de compte a été détecté.
 
@@ -87,6 +87,6 @@ Pour obtenir plus d’informations et les instructions de configuration, consult
 
 ## <a name="simplify-password-resets"></a>Simplifiez les réinitialisations du mot de passe
 
-La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leurs mots de passe ou comptes. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer la [réinitialisation du mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
+La réinitialisation du mot de passe en libre-service (SSPR) permet aux utilisateurs de réinitialiser ou de déverrouiller leurs mots de passe ou comptes. Le système inclut des rapports détaillés de suivi d’accès au système, ainsi que des notifications pour vous prévenir de toute utilisation malveillante ou de tout abus. Vous devez activer [l’écriture écriture par mot de](#pw_writeback) passe avant de pouvoir déployer les réinitialisations de mot de passe.
 
 Reportez-vous aux [Instructions pour activer la réinitialisation de mot de passe](/azure/active-directory/authentication/howto-sspr-deployment).

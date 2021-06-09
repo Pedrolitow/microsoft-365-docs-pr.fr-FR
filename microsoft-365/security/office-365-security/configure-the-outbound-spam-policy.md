@@ -85,7 +85,7 @@ Pour accroître l’efficacité du filtrage du courrier indésirable sortant, vo
 
 - Pour obtenir nos paramètres recommandés pour les stratégies de courrier indésirable sortant, consultez les paramètres de stratégie de filtrage du courrier indésirable sortant [EOP.](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)
 
-- Les [](../../compliance/alert-policies.md) stratégies d’alerte par défaut nommées Limite d’envoi de courrier électronique ont été **dépassées,** des modèles d’envoi de courrier suspects ont été détectés et l’utilisateur ne peut pas envoyer de courrier électronique envoie déjà des notifications par courrier électronique aux membres du groupe  **TenantAdmins** (Administrateurs globaux) concernant l’activité inhabituelle de courrier sortant et les **utilisateurs** bloqués en raison du courrier indésirable sortant. Pour plus d’informations, [voir Vérifier les paramètres d’alerte pour les utilisateurs restreints.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Nous vous recommandons d’utiliser ces stratégies d’alerte au lieu des options de notification dans les stratégies de courrier indésirable sortant.
+- Les [](../../compliance/alert-policies.md) stratégies d’alerte par défaut nommées Limite d’envoi de courrier électronique ont été **dépassées,** des modèles d’envoi de courrier suspects ont été détectés et l’utilisateur ne peut pas envoyer de messages électroniques envoient déjà des notifications par courrier électronique aux membres du groupe  **TenantAdmins** **(Administrateurs** globaux) concernant l’activité inhabituelle de courrier sortant et les utilisateurs bloqués en raison du courrier indésirable sortant. Pour plus d’informations, [voir Vérifier les paramètres d’alerte pour les utilisateurs restreints.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Nous vous recommandons d’utiliser ces stratégies d’alerte au lieu des options de notification dans les stratégies de courrier indésirable sortant.
 
 ## <a name="use-the-security-center-to-create-outbound-spam-policies"></a>Utiliser le centre de sécurité pour créer des stratégies de courrier indésirable sortant
 
@@ -134,7 +134,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
        - L’alerte d’activité nommée **Utilisateur limité à l’envoi** de courriers électroniques avertit les administrateurs (par courrier électronique et sur la page Afficher **les alertes).**
        - Tous les destinataires spécifiés dans la stratégie **Notifier** des personnes spécifiques si un expéditeur est bloqué en raison de l’envoi de courrier indésirable sortant dans la stratégie sont également avertis.
        - L’utilisateur ne pourra plus envoyer de messages avant le jour suivant, en fonction de l’heure UTC. Il n’existe aucun moyen pour l’administrateur de remplacer ce bloc.
-     - Empêcher  <https://security.microsoft.com/restrictedusers> l’utilisateur d’envoyer des messages électroniques : des notifications par courrier électronique sont envoyées, l’utilisateur est ajouté  aux utilisateurs restreints dans le centre de sécurité et l’utilisateur ne peut pas envoyer de courrier tant qu’un administrateur ne l’a pas supprimé des utilisateurs restreints. Une fois qu’un administrateur a supprimé l’utilisateur de la liste, il ne sera plus restreint pour ce jour. Pour obtenir des instructions, consultez La suppression d’un utilisateur du portail Utilisateurs restreints [après l’envoi de courrier indésirable.](removing-user-from-restricted-users-portal-after-spam.md)
+     - Empêcher  <https://security.microsoft.com/restrictedusers> l’utilisateur d’envoyer des messages électroniques : les notifications par courrier électronique sont envoyées, l’utilisateur est ajouté  aux utilisateurs restreints dans le centre de sécurité et l’utilisateur ne peut pas envoyer de courrier tant qu’un administrateur ne l’a pas supprimé des utilisateurs restreints. Une fois qu’un administrateur a supprimé l’utilisateur de la liste, il ne sera plus restreint pour ce jour. Pour obtenir des instructions, consultez La suppression d’un utilisateur du portail Utilisateurs restreints [après l’envoi de courrier indésirable.](removing-user-from-restricted-users-portal-after-spam.md)
      - **Aucune action, alerte uniquement :** les notifications par courrier électronique sont envoyées.
 
    - **Règles de transmission**: utilisez les paramètres de cette section pour contrôler le forwarding automatique du courrier électronique par **Exchange Online boîtes** aux lettres à des expéditeurs externes. Pour plus d’informations, voir [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md).
@@ -146,7 +146,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
      - **Automatique - Contrôlé par le système**: autorise le filtrage du courrier indésirable sortant pour contrôler le transport automatique de messages externes. Ceci est la valeur par défaut.
      - **On**: le forwarding automatique du courrier externe n’est pas désactivé par la stratégie.
-     - **Désactivé**: tous les messages externes automatiques sont désactivés par la stratégie.
+     - **Désactivé**: tous les envois automatiques de courrier externe sont désactivés par la stratégie.
 
    - **Notifications :** utilisez les paramètres de la section pour configurer des destinataires supplémentaires qui doivent recevoir des copies et des notifications de messages électroniques sortants suspects :
 
@@ -197,7 +197,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez une stratégie de courrier indésirable sortant dans la liste en cliquant sur le nom :
-   - Une stratégie personnalisée que vous avez créée lorsque la valeur dans la colonne **Type** est **Stratégie personnalisée de courrier indésirable sortant**.
+   - Une stratégie personnalisée que vous avez créée lorsque la valeur dans la colonne **Type** est **Stratégie personnalisée de** courrier indésirable sortant .
    - Stratégie par défaut nommée **Stratégie anti-courrier indésirable sortant (par défaut).**
 
 3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, voir la [section](#use-the-security-center-to-create-outbound-spam-policies) précédente Utiliser le centre de sécurité pour créer des stratégies de courrier indésirable sortant dans cet article.
@@ -242,7 +242,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 3. En haut du menu volant détails de la stratégie qui s’affiche, vous verrez **Augmenter la priorité** ou **Diminuer la priorité** en fonction de la valeur de priorité actuelle et du nombre de stratégies personnalisées :
    - La stratégie de courrier indésirable sortant dont la valeur **de** priorité **est 0** ne dispose que de **l’option** Diminuer la priorité disponible.
    - La stratégie de courrier  indésirable sortant dont la valeur de priorité est la plus faible (par exemple, **3**) ne dispose que de l’option  Augmenter la priorité disponible.
-   - Si vous disposez de trois stratégies de courrier indésirable sortant ou  plus, les **stratégies** entre les valeurs de priorité les plus élevées et les plus faibles disposent à la fois des options Augmenter la priorité et Diminuer la priorité.
+   - Si vous disposez de trois stratégies de courrier indésirable sortant ou  plus, les **stratégies** entre les valeurs de priorité la plus élevée et la plus faible disposent à la fois des options Augmenter la priorité et Diminuer la priorité.
 
    Cliquez sur l’![Icône Augmenter la priorité](../../media/m365-cc-sc-increase-icon.png) **Augmenter la priorité** ou ![Icône Diminuer la priorité](../../media/m365-cc-sc-decrease-icon.png) **Diminuer la priorité** pour modifier la valeur **Priorité**.
 

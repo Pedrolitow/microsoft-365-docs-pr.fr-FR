@@ -43,7 +43,7 @@ ms.locfileid: "52770492"
 Collecter un package d’examen à partir d’un appareil.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 

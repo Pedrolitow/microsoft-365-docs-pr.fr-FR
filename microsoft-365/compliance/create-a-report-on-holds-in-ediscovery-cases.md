@@ -41,9 +41,9 @@ Consultez la section [Plus](#more-information) d’informations pour obtenir une
 
 - Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Étape 1 : Se connecter au Centre de sécurité & conformité PowerShell
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Étape 1 : Connecter au Centre de sécurité & conformité PowerShell
 
-La première étape consiste à se connecter au Centre de sécurité & conformité PowerShell pour votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+L’étape suivante consiste à se connecter au Centre de sécurité et conformité PowerShell de votre organisation. Pour consulter des instructions détaillées, voir [Se connecter au Centre de sécurité et conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Étape 2 : Exécuter le script pour signaler les cas de découverte électronique associés
 
@@ -139,7 +139,7 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
    #script end
    ```
 
-2. Dans la Windows PowerShell qui s’est ouverte à l’étape 1, allez dans le dossier où vous avez enregistré le script.
+2. Dans la session Windows PowerShell ouverte à l’étape 1, allez dans le dossier où vous avez enregistré le script.
 
 3. Exécutez le script . par exemple :
 
@@ -154,7 +154,7 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
    > [!TIP]
    > Pour enregistrer le rapport dans le dossier où se trouve le script, tapez un point (« . ») lorsque vous y invitez un dossier cible. Pour enregistrer le rapport dans un sous-dossier du dossier où se trouve le script, tapez simplement le nom du sous-dossier.
 
-   Le script commence à collecter des informations sur tous les cas eDiscovery dans votre organisation. N’accédez pas au fichier de rapport pendant l’exécution du script. Une fois le script terminé, un message de confirmation s’affiche dans la session Windows PowerShell session. Une fois ce message affiché, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l’étape 4. Le nom de fichier du rapport est `CaseHoldsReport<DateTimeStamp>.csv` .
+   Le script commence à collecter des informations sur tous les cas eDiscovery de votre organisation. N’accédez pas au fichier de rapport pendant l’exécution du script. Une fois le script terminé, un message de confirmation s’affiche dans la session Windows PowerShell session. Une fois ce message affiché, vous pouvez accéder au rapport dans le dossier que vous avez spécifié à l’étape 4. Le nom de fichier du rapport est `CaseHoldsReport<DateTimeStamp>.csv` .
 
    Par ailleurs, le script crée également un rapport avec une liste de cas qui ne sont pas en attente. Le nom de fichier de ce rapport est `CaseswithNoHolds<DateTimeStamp>.csv` .
 
@@ -162,9 +162,9 @@ Une fois que vous êtes connecté au Centre de sécurité & conformité PowerShe
 
    ![Sortie après l’exécution du script CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
-Le rapport de cas qui est créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque attente. Comme indiqué précédemment, vous devez être administrateur eDiscovery pour retourner des informations pour toutes les ententées de votre organisation. Pour plus d’informations sur les cas de non-lieu, consultez [les cas eDiscovery.](./get-started-core-ediscovery.md)
+Le rapport de cas qui est créé lorsque vous exécutez le script dans cet article contient les informations suivantes sur chaque attente. Comme indiqué précédemment, vous devez être administrateur eDiscovery pour retourner des informations pour toutes les ententées de votre organisation. Pour plus d’informations sur les cas de non-lieu, voir les cas [eDiscovery.](./get-started-core-ediscovery.md)
 
 - Nom de la garde à vue et nom du cas eDiscovery à l’associé.
 
@@ -178,7 +178,7 @@ Le rapport de cas qui est créé lorsque vous exécutez le script dans cet artic
 
 - Si un cas est fermé, la personne qui l’a fermé, ainsi que l’heure et la date de fermeture.
 
-- Boîtes aux lettres Exchange et emplacements de sites SharePoint en attente.
+- Le Exchange boîtes aux lettres et SharePoint sites en attente.
 
 - Si la requête est en attente, la syntaxe de la requête.
 

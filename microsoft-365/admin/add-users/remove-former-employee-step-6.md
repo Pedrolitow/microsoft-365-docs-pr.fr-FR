@@ -47,7 +47,7 @@ Lorsque vous effectuez cette opération, toutes les données de cet utilisateur 
 2. Sélectionnez l’abonnement dont vous souhaitez supprimer des licences.
 3. Dans la page de détails, **sélectionnez Supprimer des licences.**
 4. Dans le **volet Supprimer des licences,** sous Nouvelle quantité, dans la zone Nombre total de **licences,** entrez le nombre total de licences que vous souhaitez pour cet abonnement. Par exemple, si vous avez 25 licences et que vous souhaitez en supprimer une, entrez 24.
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 
 Lorsque vous [ajoutez une autre](add-users.md) personne à votre entreprise, vous êtes invité à acheter une licence en même temps, en une seule étape !
 
@@ -61,4 +61,4 @@ Si l'utilisateur appartient à un groupe de files d'attente, il ne sera plus une
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configurer le forwarding d’appel vers des personnes de votre organisation
 
-Si vous devez configurer le transfert d’appel pour le numéro de téléphone de l’employé licencié, le paramètre de transfert d’appel sous stratégies d’appel peut configurer le transfert dans lequel les appels entrants peuvent être transmis à d’autres utilisateurs ou faire sonner une autre personne en même temps. Pour plus d’informations, voir [Stratégies d’appel dans Microsoft Teams](/microsoftteams/teams-calling-policy).
+Si vous devez configurer le transfert d’appel pour le numéro de téléphone de l’employé licencié, le paramètre de transfert d’appel sous stratégies d’appel peut configurer le transfert dans lequel les appels entrants peuvent être transmis à d’autres utilisateurs ou sonner en même temps. Pour plus d’informations, voir [Stratégies d’appel dans Microsoft Teams](/microsoftteams/teams-calling-policy).

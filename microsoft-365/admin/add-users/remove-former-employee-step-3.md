@@ -37,7 +37,7 @@ Dans cette étape, vous affectez l’adresse de messagerie de l’ancien employ�
 
 ## <a name="convert-former-employees-mailbox-to-a-shared-mailbox"></a>Convertir la boîte aux lettres d’un ancien employé en boîte aux lettres partagée
 
-Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux lettres partagée, l’ensemble du courrier électronique et du calendrier existants est conservé. Ce n’est que maintenant que dans une boîte aux lettres partagée que plusieurs personnes pourront y accéder au lieu d’une seule personne. Si vous le souhaitez, vous pouvez reconverti une boîte aux lettres partagée en boîte aux lettres utilisateur (privée).
+Lorsque vous convertissez la boîte aux lettres d’un utilisateur en boîte aux lettres partagée, l’ensemble du courrier électronique et du calendrier existants est conservé. Ce n’est que maintenant que dans une boîte aux lettres partagée que plusieurs personnes pourront y accéder au lieu d’une seule personne. Vous pouvez reconverti une boîte aux lettres partagée en boîte aux lettres utilisateur (privée) à une date ultérieure si vous le souhaitez.
 
 - La création d'une boîte aux lettres partagée est la solution la plus économique car aucune licence payante n'est requise **tant que la boîte aux lettres ne dépasse pas les 50 Go**. Au-delà de 50 Go, vous devrez acheter une licence.
 - Si vous convertissez la boîte aux lettres en boîte aux lettres partagée, les anciens courriers seront également disponibles. Ceux-ci peuvent occuper beaucoup d'espace.
@@ -54,5 +54,5 @@ Suivez ces étapes pour convertir la boîte aux lettres de [l’utilisateur en b
 2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sélectionnez **l’onglet** Courrier.
 3. Under **Email Forwarding**, select **Manage email forwarding**.
 4. Activez l'option **Transférer tous les messages envoyés à cette boîte aux lettres**. Dans la **zone d’adresse de** forwarding, tapez l’adresse e-mail de l’employé actuel qui va obtenir le courrier électronique.
-5. Cliquez sur **Enregistrer**.
+5. Sélectionnez **Enregistrer**.
 6. Souvenez-vous que vous ne devez pas supprimer le compte de l'ancien employé.

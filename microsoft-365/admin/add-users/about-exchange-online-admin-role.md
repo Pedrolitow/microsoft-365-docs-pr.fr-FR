@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange administrateurs en ligne gèrent le courrier électronique et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
+description: Exchange administrateurs en ligne gèrent la messagerie et les boîtes aux lettres de votre organisation. Par exemple, ils récupèrent les éléments supprimés dans la boîte aux lettres d’un utilisateur.
 ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
 ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
@@ -32,13 +32,13 @@ ms.locfileid: "52706213"
 
 Pour vous aider à administrer les [](assign-admin-roles.md) Microsoft 365, vous pouvez attribuer aux utilisateurs des autorisations pour gérer le courrier électronique et les boîtes aux lettres de votre organisation à partir du Centre [d’administration Exchange.](/exchange/exchange-admin-center) Pour ce faire, attribuez-leur le rôle d’administrateur Exchange.
   
- **Conseil**: lorsque vous attribuez une personne au rôle Exchange’administration, attribuez-la également au rôle d’administrateur de service. Ainsi, ils peuvent voir des informations importantes dans le Centre d’administration Microsoft 365, telles que l’état d’Exchange Online service, ainsi que les notifications de modification et de publication.
+ **Conseil**: lorsque vous affectez une personne au rôle Exchange’administration, attribuez-la également au rôle d’administrateur de service. Ainsi, ils peuvent voir des informations importantes dans le Centre d’administration Microsoft 365, telles que l’état d’Exchange Online service, ainsi que les notifications de modification et de publication.
 
 Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lorsqu’ils sont affectés Exchange rôle d’administrateur principal :
   
 - [Récupérer des éléments supprimés dans une boîte aux lettres utilisateur - Aide aux administrateurs](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation.](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+- [Configurer une stratégie d’archivage et de](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)suppression pour les boîtes aux lettres de votre organisation.
 
 - Configurer des fonctionnalités de boîte aux lettres telles que la stratégie de partage de boîte aux lettres : comment les utilisateurs peuvent partager des informations de calendrier et de contacts avec d’autres personnes extérieures à votre organisation.
 
@@ -46,9 +46,9 @@ Voici quelques-unes des tâches clés que les utilisateurs peuvent effectuer lor
 
 - [Créez une boîte aux lettres partagée](../email/create-a-shared-mailbox.md) pour qu’un groupe de personnes puisse surveiller et envoyer des messages électroniques à partir d’une adresse de messagerie commune.
 
-- Protection contre le courrier indésirable et filtres [anti-programme](../../security/office-365-security/anti-spam-protection.md) malveillant pour l’organisation.
+- [Protection contre le courrier indésirable et filtres anti-programme](../../security/office-365-security/anti-spam-protection.md) malveillant pour l’organisation.
 
-- Gestion des groupes Microsoft 365
+- Gestion des groupes Microsoft 365
 
 ## <a name="exchange-online-role-groups"></a>Exchange Online groupes de rôles
 

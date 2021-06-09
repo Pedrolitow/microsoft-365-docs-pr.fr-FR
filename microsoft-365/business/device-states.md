@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Découvrez les différents états de l’appareil dans la liste Actions de l’appareil dans la page Accueil de l’administrateur dans Microsoft 365 pour les entreprises.
+description: Découvrez les différents états d’appareil dans la liste Actions de l’appareil dans la page d’accueil Administrateur Microsoft 365 entreprise.
 ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "51578464"
 ---
 # <a name="device-states"></a>États des appareils
 
-Cet article s’applique à Microsoft 365 Business Premium.
+Cet article s’applique aux Microsoft 365 Business Premium.
 
 Les appareils de la liste **Actions de l'appareil** (accueil Administrateur \> **Actions de l'appareil**) peuvent présenter les états suivants.
   

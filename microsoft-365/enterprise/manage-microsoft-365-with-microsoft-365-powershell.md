@@ -1,5 +1,5 @@
 ---
-title: Gestion de Microsoft 365 à l’aide de PowerShell
+title: Gestion de Microsoft 365 à l’aide de PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: Découvrez comment gérer les utilisateurs, les licences et les applications Microsoft 365 avec PowerShell.
+description: Découvrez comment gérer les Microsoft 365 utilisateurs, les licences et les applications 365 avec PowerShell.
 ms.openlocfilehash: dee8fbce03e38a954ddea5a8ec86248f9209d96c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,13 +26,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905103"
 ---
-# <a name="manage-microsoft-365-with-powershell"></a>Gestion de Microsoft 365 à l’aide de PowerShell
+# <a name="manage-microsoft-365-with-powershell"></a>Gestion de Microsoft 365 à l’aide de PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-PowerShell pour Microsoft 365 est un outil de gestion puissant qui complète le Centre d’administration Microsoft 365. Par exemple, vous pouvez utiliser l’automatisation PowerShell pour gérer facilement plusieurs comptes d’utilisateurs et licences et pour créer des rapports.
+PowerShell pour Microsoft 365 est un outil de gestion puissant qui complète le centre d Microsoft 365'administration. Par exemple, vous pouvez utiliser l’automatisation PowerShell pour gérer facilement plusieurs comptes d’utilisateurs et licences et pour créer des rapports.
 
-Sélectionnez l’une des rubriques suivantes pour apprendre à utiliser PowerShell pour gérer Microsoft 365 :
+Sélectionnez l’une des rubriques suivantes pour apprendre à utiliser PowerShell pour gérer les Microsoft 365 :
   
 - [**Prise en main**](getting-started-with-microsoft-365-powershell.md)
 
@@ -46,9 +46,9 @@ Sélectionnez l’une des rubriques suivantes pour apprendre à utiliser PowerSh
 
     Commencez ici si vous souhaitez utiliser des commandes d’automatisation pour gérer SharePoint.
 
-- [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
+- [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
-    Commencez ici si vous souhaitez gérer Exchange Online.
+    Commencez ici si vous souhaitez gérer les Exchange Online.
 
 - [**Migration de messagerie**](use-powershell-for-email-migration-to-microsoft-365.md)
 
@@ -60,8 +60,8 @@ Sélectionnez l’une des rubriques suivantes pour apprendre à utiliser PowerSh
 
 - [**Partenaires avec autorisations d’accès délégué**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    Commencez ici si vous souhaitez utiliser des partenaires de syndication et de fournisseur de solutions Cloud (CSP) pour gérer vos clients Microsoft 365.
+    Commencez ici si vous souhaitez utiliser la syndication et fournisseur de solutions Cloud partenaires (CSP) pour gérer vos clients Microsoft 365 client.
 
-- [**Skype Entreprise Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
+- [**Skype Entreprise En ligne**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 
     Commencez ici pour gérer Skype Entreprise Online.

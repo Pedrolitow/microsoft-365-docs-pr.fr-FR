@@ -1,5 +1,5 @@
 ---
-title: S’inscrire à Microsoft 365 Business Premium
+title: S’inscrire à Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -33,7 +33,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52244753"
 ---
-# <a name="sign-up-for-microsoft-365-business-premium"></a>S’inscrire à Microsoft 365 Business Premium
+# <a name="sign-up-for-microsoft-365-business-premium"></a>S’inscrire à Microsoft 365 Business Premium
 
 Pour en savoir plus sur les Microsoft 365 Business Premium, regardez une [courte vidéo](../business-video/what-is-microsoft-365.md) et regardez la [vue d’ensemble.](microsoft-365-business-overview.md)
 
@@ -54,7 +54,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du processus d’
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Pour vous inscrire et acheter des Microsoft 365 pour votre entreprise, complétez les étapes suivantes :
 

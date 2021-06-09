@@ -82,7 +82,7 @@ Vous êtes nouveau dans Microsoft 365 entreprise ? :::image type="icon" source="
 
 ## <a name="6-get-outlook-on-your-phone"></a>6. Obtenir des Outlook sur votre téléphone
 
-- Obtenez **Outlook** sur votre téléphone à partir de l’App Store ou de Google Play Store. Ouvrez-le, choisissez **Prise en main** et ajoutez votre courrier électronique et votre mot de passe.
+- Obtenez **Outlook** sur votre téléphone à partir de l’App Store ou du Google Play Store. Ouvrez-le, choisissez **Prise en main** et ajoutez votre courrier électronique et votre mot de passe.
 - Vous pouvez également ouvrir Outlook sur un appareil Android ou iOS et accéder aux **Paramètres**.
 
     Sélectionnez **Ajouter un compte**, **Ajouter un compte de courrier**, puis entrez votre adresse de courrier et votre mot de passe.

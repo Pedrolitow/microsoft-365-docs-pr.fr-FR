@@ -35,12 +35,12 @@ Suivez les informations et organisez le travail avec les listes Microsoft. Crée
 
 1. Sélectionnez **Nouveau**.
 1. Ajoutez des détails sur la commande.
-1. Cliquez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 ### <a name="share-the-list-with-partners-or-coworkers"></a>Partager la liste avec des partenaires ou des collègues
 
 1. Au-dessus de la liste, sélectionnez **Partager.**
-1. Entrez les personnes avec qui vous souhaitez partager ; il peut s’agit d’un individu ou d’un groupe.
+1. Entrez les personnes avec qui vous souhaitez partager ; Il peut s’agit d’un individu ou d’un groupe.
 1. Choisissez les autorisations.
 1. Sélectionnez **Accorder l’accès.**
 
@@ -49,7 +49,7 @@ Suivez les informations et organisez le travail avec les listes Microsoft. Crée
 Mettez en forme une colonne pour mettre en évidence les détails qu’elle int ment :
 
 1. Sélectionnez l’en-tête de colonne, sélectionnez l’option de votre choix, par exemple une couleur d’arrière-plan ou des coins arrondis.
-1. Sélectionnez **Enregistrer** pour appliquer les modifications.
+1. Sélectionnez **Enregistrer** pour appliquer la modification.
 
 ### <a name="add-rules-to-alert-coworkers-about-list-updates"></a>Ajouter des règles pour alerter vos collègues sur les mises à jour de liste
 
@@ -63,7 +63,7 @@ Mettez en forme une colonne pour mettre en évidence les détails qu’elle int 
 
 Vous pouvez hiérarchiser une liste de commandes de différentes manières :
 
-- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Plus ancien à Plus nouveau.
+- Pour trier par échéance, sélectionnez l’ordre d’accomplir par colonne, puis sélectionnez Ancien à Nouveau.
 - Pour grouper les commandes par client, sélectionnez la colonne Type de client, puis grouper par type de client.
 
 ### <a name="update-an-items-status"></a>Mettre à jour l’état d’un élément
@@ -72,6 +72,6 @@ Vous pouvez suivre la progression instantanément :
 
 - Double-cliquez sur un élément pour l’ouvrir et mettez à jour la progression de la commande.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Créer une liste à partir de l’application Listes](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

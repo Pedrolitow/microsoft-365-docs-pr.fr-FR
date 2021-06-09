@@ -1,7 +1,7 @@
 ---
 title: Bureau géré Microsoft vie du produit
 description: Cet article répertorie les spécifications d’appareil utilisées dans Bureau géré Microsoft.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -63,7 +63,7 @@ Le cycle de vie du produit démarre lorsqu’un fabricant publie publiquement le
 
 ![Chronologie du cycle de vie affichant la publication et la période d’évaluation](../../media/non-dark3-edits.PNG)
 
-Au cours de cette étape, l’équipe Bureau géré Microsoft’ingénierie locale fait l’évaluation et la certification d’un produit. L’équipe évalue des éléments tels que la fiabilité et les performances avec Windows, la conformité avec une base de référence matérielle, l’opinion du marché et la préparation des stocks et des canaux, entre autres choses. Ce processus prend généralement environ six semaines.
+Au cours de cette étape, l’équipe Bureau géré Microsoft’ingénierie locale fait son évaluation et sa certification d’un produit. L’équipe évalue des éléments tels que la fiabilité et les performances avec Windows, la conformité avec une base de référence matérielle, l’opinion du marché et la préparation des stocks et des canaux, entre autres choses. Ce processus prend généralement environ six semaines.
   
 Bureau géré Microsoft évaluera uniquement les appareils pour certification au cours de leurs six premiers mois de disponibilité. Cette stratégie garantit que nous concentrons toujours nos efforts sur la dernière génération de matériel.
  
@@ -82,7 +82,7 @@ Vous pouvez penser que cette période est effectivement « ouvrir l’inscriptio
 
 ## <a name="product-grace-period"></a>Période de grâce du produit
 
-La période de grâce du produit est une période de trois ans suivant la disponibilité principale. Cette phase vous permet d’inscrire des appareils issus d’une famille de produits pris en charge, tout en maintenant les promesses de Bureau géré Microsoft concernant les performances du matériel et des appareils modernes. Cette phase est idéale pour les clients qui ont pris des décisions d’approvisionnement avant de connaître Bureau géré Microsoft. 
+La période de grâce du produit est une période de trois ans suivant la disponibilité principale. Cette phase vous permet d’inscrire des appareils qui sont issus d’une famille de produits prise en charge, tout en maintenant les promesses de Bureau géré Microsoft concernant les performances du matériel et des appareils modernes. Cette phase est idéale pour les clients qui ont pris des décisions d’approvisionnement avant de connaître Bureau géré Microsoft. 
 
 Si vous avez récemment acheté des appareils approuvés avant de vous inscrire auprès de Bureau géré Microsoft, vous pouvez toujours les inscrire, mais vous ne recevrez pas trois ans de gestion complets. Au lieu de cela, ils ne seront pas conformes à la date de retrait, quel que soit le moment où ils ont été inscrits. En arrière-plan, Bureau géré Microsoft traitent ces appareils comme s’ils étaient inscrits le dernier jour de disponibilité principale. Dans cette illustration, vous pouvez voir ce scénario en notant que les appareils bleu et vert se terminent tous les deux le même jour, malgré leur différence d’inscription d’un an :
 

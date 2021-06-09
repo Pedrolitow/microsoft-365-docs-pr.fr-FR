@@ -38,13 +38,13 @@ En tant qu’administrateur Microsoft 365, vous pouvez laisser les utilisateurs 
   
 ## <a name="before-you-begin"></a>Avant de commencer
   
-- Vous obtenez la réinitialisation  du mot de passe en libre-service pour les utilisateurs du cloud gratuitement avec n’importe quel plan Microsoft 365 entreprise, éducation ou à but non lucratif. Elle ne fonctionne pas avec la Microsoft 365 d’essai.
+- Vous obtenez la réinitialisation  du mot de passe en libre-service pour les utilisateurs du cloud gratuitement avec n’importe quelle offre payante Microsoft 365 entreprise, éducation ou à but non lucratif. Elle ne fonctionne pas avec Microsoft 365 d’essai.
 
 - Elle utilise Azure. Vous bénéficierez automatiquement et **gratuitement** de cette fonction dans Azure lorsque vous effectuerez ces étapes. L'activation de la réinitialisation du mot de passe libre-service ne vous coûtera rien si vous n'utilisez aucune autre fonctionnalité Azure.
 
-- **Si vous utilisez un active directory** local, les deux points ci-dessus ne s’appliquent pas. Au lieu de cela, vous pouvez configurer cette fonctionnalité, mais elle nécessite un abonnement payant **à Azure AD Premium**.
+- **Si vous utilisez un active directory** local, les deux points ci-dessus ne s’appliquent pas. Au lieu de cela, vous pouvez configurer cette fonctionnalité, mais elle nécessite un abonnement payant à **Azure AD Premium**.
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md)
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md)
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
@@ -52,7 +52,7 @@ Vous devez être administrateur général ou administrateur de [mot de](about-ad
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>Étapes : laisser les utilisateurs réinitialiser leur mot de passe
 
@@ -75,5 +75,5 @@ Ces étapes activent la réinitialisation du mot de passe libre-service pour tou
 ## <a name="related-content"></a>Contenu associé
 
 [Définir la stratégie d’expiration de mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)\
-[Définir le mot de passe d’un utilisateur individuel pour qu’il n’expire jamais](set-password-to-never-expire.md) (article)\
+[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](set-password-to-never-expire.md) (article)\
 [Microsoft 365 Business vidéos de formation](../../business-video/index.yml) (page de liens)

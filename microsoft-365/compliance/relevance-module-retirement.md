@@ -21,9 +21,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52821996"
 ---
-# <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>Retrait du module Pertinence dans Advanced eDiscovery
+# <a name="retirement-of-the-relevance-module-in-advanced-ediscovery"></a>Retrait du module de pertinence dans Advanced eDiscovery
 
-Le 10 mars 2021, nous allons retirer le module Pertinence dans Advanced eDiscovery. Ce retrait signifie que les organisations n’auront plus accès au module Pertinence (en accédant à Gérer le jeu à réviser Pertinence dans un cas Advanced eDiscovery) ou ne pourront plus accéder aux modèles  >   Pertinence existants. Le module de pertinence actuel qui est retiré sera remplacé par une nouvelle solution de codage prédictif au T2 CY 2021. Cette nouvelle fonctionnalité permettra aux organisations de créer leurs propres modèles de codage prédictifs dans un flux de travail plus simple et plus intuitif.
+Le 10 mars 2021, nous allons retirer le module Pertinence dans Advanced eDiscovery. Ce retrait signifie que les organisations n’auront plus accès au module Pertinence (en accédant à Gérer l’ensemble de révision Pertinence dans un cas Advanced eDiscovery) ou ne pourront plus accéder aux modèles  >   Pertinence existants. Le module de pertinence actuel qui est retiré sera remplacé par une nouvelle solution de codage prédictif au T2 CY 2021. Cette nouvelle fonctionnalité permettra aux organisations de créer leurs propres modèles de codage prédictifs dans un flux de travail plus simple et plus intuitif.
 
 Pour préparer ce retrait à venir, nous recommandons aux organisations qui utilisent le module Pertinence d’exporter la sortie de leur modèle avant la date de retrait en exécutant un calcul Par lot pour tous les modèles existants. Tous les scores de pertinence de votre modèle sont stockés définitivement dans le jeu à réviser correspondant et accessibles lorsque des documents sont exportés. Les scores de pertinence sont également conservés en tant que métadonnées dans le fichier de chargement. En outre, vous pourrez toujours filtrer le contenu du jeu à réviser en fonction du score de pertinence et avoir accès à toutes les métadonnées produites par vos modèles de pertinence.
 

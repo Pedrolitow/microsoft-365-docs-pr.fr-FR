@@ -28,7 +28,7 @@ ms.locfileid: "52822104"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis, intégré à l’environnement Azure US Government, utilise les mêmes technologies sous-jacentes que Defender pour endpoint dans Azure Commercial.
+Microsoft Defender for Endpoint for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
 Cette offre est disponible pour les clients Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD et est basée sur les mêmes prévention, détection, examen et correction que la version commerciale. Toutefois, il existe certaines différences dans la disponibilité des fonctionnalités de cette offre.
 
@@ -36,13 +36,13 @@ Cette offre est disponible pour les clients Cloud de la communauté du secteur p
 > Si vous êtes un client Cloud de la communauté du secteur public à l’aide de Defender for Endpoint in Commercial, reportez-vous aux pages de documentation publique.
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
-Microsoft Defender pour le point de terminaison pour les clients du gouvernement des États-Unis nécessite l’une des offres de licence en volume Microsoft suivantes :
+Microsoft Defender pour endpoint pour les clients du gouvernement des États-Unis nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 ### <a name="desktop-licensing"></a>Licences de bureau
 GCC | GCC High | DoD
 :---|:---|:---
 Windows 10 Entreprise E5 Cloud de la communauté du secteur public | Windows 10 Entreprise E5 pour Cloud de la communauté du secteur public élevé | Windows 10 Entreprise E5 pour DOD
-| | Microsoft 365 E5 pour Cloud de la communauté du secteur public Élevé | Microsoft 365 G5 pour DOD
+| | Microsoft 365 E5 for Cloud de la communauté du secteur public High | Microsoft 365 G5 pour DOD
 | | Microsoft 365 Sécurité G5 pour Cloud de la communauté du secteur public élevé | Microsoft 365 Sécurité G5 pour DOD
 Microsoft Defender pour le point de terminaison - Cloud de la communauté du secteur public | Microsoft Defender for Endpoint for Cloud de la communauté du secteur public High | Microsoft Defender pour point de terminaison pour DOD
 
@@ -114,7 +114,7 @@ Windows Server 2008 R2 SP1 | ![Oui](images/svg/check-yes.svg) | ![Oui](images/
 ## <a name="required-connectivity-settings"></a>Paramètres de connectivité requis
 Si un proxy ou un pare-feu bloque tout le trafic par défaut et n'autorise le passage que de domaines spécifiques, ajoutez les domaines énumérés dans la feuille téléchargeable à la liste des domaines autorisés.
 
-La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Vérifiez qu’il n’existe aucune règle de pare-feu ou  de filtrage réseau qui refuserait l’accès à ces URL, ou créez une règle d’autoriser spécifiquement pour eux.
+La feuille de calcul téléchargeable suivante répertorie les services et les URL associées à qui votre réseau doit pouvoir se connecter. Vérifiez qu’il n’existe aucune règle de pare-feu ou  de filtrage réseau qui refuserait l’accès à ces URL, ou créez une règle d’autoriser spécifiquement pour elles.
 
 Liste de feuilles de calcul de domaines | Description
 :-----|:-----
@@ -136,7 +136,7 @@ Defender pour le point de terminaison pour les clients du gouvernement des État
 - AzureCloud.usgovtexas
 - AzureCloud.usgovvirginia
 
-Vous pouvez trouver les plages d’adresses IP Azure dans les plages IP et les balises de [service Azure – Cloud pour le gouvernement des États-Unis.](https://www.microsoft.com/download/details.aspx?id=57063)
+Vous pouvez trouver les plages IP Azure dans les plages IP et les balises de [service Azure – Cloud pour le gouvernement des États-Unis.](https://www.microsoft.com/download/details.aspx?id=57063)
 
 > [!NOTE]
 > En tant que solution informatique, les plages d’adresses IP peuvent changer. Il est recommandé de passer aux règles DNS.
@@ -155,7 +155,7 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 <br />
 
 ## <a name="feature-parity-with-commercial"></a>Parité des fonctionnalités avec commercial
-Defender for Endpoint for US Government customers doesn’t have complete parity with the commercial offering. Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales à nos clients du gouvernement des États-Unis, certaines fonctionnalités ne sont pas encore disponibles que nous voulons mettre en évidence.
+Defender for Endpoint for US Government customers doesn’t have complete parity with the commercial offering. Bien que notre objectif soit de fournir toutes les fonctionnalités commerciales à nos clients du gouvernement des États-Unis, certaines fonctionnalités qui ne sont pas encore disponibles sont à mettre en évidence.
 
 Voici les lacunes connues :
 

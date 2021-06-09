@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour le courrier, Skype Entreprise Online et d’autres services sur Windows DNS basé sur Windows microsoft.
+description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Windows DNS basé sur Windows microsoft.
 ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
 ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
@@ -46,7 +46,7 @@ Trouble with mail flow or other issues after adding DNS records, see [Troublesho
 
 Ajoutez un enregistrement MX afin que le courrier électronique de votre domaine soit envoyé à Microsoft.
 - L’enregistrement MX que vous allez  ajouter inclut une valeur (la valeur d’adresse Points vers) qui ressemble à ceci : .mail.protection.outlook.com, où est une valeur comme \<MX token\> \<MX token\> MSxxxxxxx. 
-- À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Microsoft, copiez la valeur répertoriée sous Adresse des points. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
+- À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Microsoft, copiez la valeur répertoriée sous Adresse points. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
 - On the DNS Manager page for the domain, go to **Action**  >  **Mail Exchanger (MX)**. Pour trouver cette page pour le domaine, voir Rechercher vos enregistrements [DNS dans Windows DNS basé sur le domaine.](#find-your-dns-records-in-windows-based-dns)  
 - Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes : 
     - Nom de l’hôte :  

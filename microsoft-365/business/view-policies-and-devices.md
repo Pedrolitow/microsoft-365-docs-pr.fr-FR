@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Affichez les stratégies et actions des appareils en vous signant à Microsoft 365 pour les entreprises à l’aide d’informations d’identification d’administrateur global.
+description: Affichez les stratégies et actions des appareils en vous Microsoft 365 pour les entreprises à l’Microsoft 365 d’informations d’identification d’administrateur global.
 ms.openlocfilehash: 39d88e8fa84055e4bac62899a1b84bdf42f366a2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "51578024"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Afficher et gérer les stratégies et les appareils
 
-Cet article s’applique à Microsoft 365 Business Premium.
+Cet article s’applique aux Microsoft 365 Business Premium.
 
 ## <a name="view-and-edit-device-policies"></a>Afficher et modifier des stratégies d’appareil
 

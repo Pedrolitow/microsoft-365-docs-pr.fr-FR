@@ -1,7 +1,7 @@
 ---
 title: Configurer des appareils pour Bureau géré Microsoft
 description: Comment obtenir de nouveaux appareils ou réutiliser des appareils existants éligibles
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -23,9 +23,9 @@ Vous pouvez utiliser des appareils nouveaux et existants dans Bureau géré Micr
 
 ## <a name="to-obtain-new-devices"></a>Pour obtenir de nouveaux appareils
 
-Nous vous recommandons de collaborer avec l’un de nos partenaires d’appareils approuvés. Vous pouvez travailler avec votre contact de compte Microsoft pour obtenir de l’aide sur la configuration d’un partenariat d’appareil. Par nature, toutefois, le processus est comme ceci :
+Nous vous recommandons de collaborer avec l’un de nos partenaires d’appareils approuvés. Vous pouvez travailler avec votre contact de compte Microsoft pour obtenir de l’aide sur la configuration d’un partenariat d’appareil. Par essence, toutefois, le processus est comme ceci :
 
-1. Examinez la liste des appareils actuellement recommandés en filtrant les Bureau géré Microsoft sur le site [Shop Windows 10 Professionnel business devices.](https://www.microsoft.com/windowsforbusiness/view-all-devices)
+1. Examinez la liste des appareils actuellement recommandés en filtrant les Bureau géré Microsoft sur le site [Windows 10 Professionnel d’entreprise.](https://www.microsoft.com/windowsforbusiness/view-all-devices)
 2. Commandez un ou quelques exemples d’appareils que vous souhaitez utiliser avec une image conforme. Le traitement des commandes peut nécessiter [des étapes de commande spécifiques.](../service-description/device-images.md)
 3. [Validez](validate-device.md) les exemples d’appareils.
 5. Une fois la validation réussie, commandez les appareils, en travaillant avec un partenaire d’appareil approuvé.

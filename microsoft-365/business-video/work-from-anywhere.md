@@ -31,11 +31,11 @@ ms.locfileid: "52244883"
 
 Vous n’avez pas de bureau ? Plus de batterie d’ordinateur portable ? Pas de problème! Traitez votre travail de n’importe où Office sur votre téléphone ou tablette.
 
-**Pro conseil :** Maintenez votre équilibre entre vie professionnelle et vie privée en cocher les notifications pour vos applications de travail sur vos appareils personnels.
+**Pro conseil :** Maintenez votre équilibre entre vie professionnelle et vie privée en tenez compte des notifications pour vos applications de travail sur vos appareils personnels.
 
-Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouveriez.
+Utilisez les quatre conseils ci-dessous pour travailler où que vous vous trouvez.
 
-Téléchargez une infographie pour obtenir des conseils pour travailler où que vous soyez : 
+Téléchargez une infographie pour obtenir des conseils pour travailler n’importe où : 
 
 [PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
@@ -102,7 +102,7 @@ Vous pouvez également créer et modifier des documents directement à partir de
 
 À partir de votre ordinateur portable :
 
-- Dans Microsoft Teams, cliquez  sur le bouton Réunions sur le côté gauche de l’application et vous verrez une liste de toutes vos réunions :::image type="icon" source="../media/meetings-icon.png" border="false"::: pour la semaine. Recherchez la réunion de votre souhaitez, puis cliquez sur Participer.
+- Dans Microsoft Teams, cliquez  sur le bouton Réunions sur le côté gauche de l’application et vous verrez une liste de toutes vos réunions :::image type="icon" source="../media/meetings-icon.png" border="false"::: de la semaine. Recherchez la réunion de votre souhaitez, puis cliquez sur Participer.
 
 À partir de votre téléphone :
 

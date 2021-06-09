@@ -22,7 +22,7 @@ ms.locfileid: "52770600"
 Votre passerelle vers le service Bureau géré Microsoft est [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). Si vous ne connaissez pas les fonctionnalités de ce portail pour la gestion des appareils, consultez [la documentation Microsoft Endpoint Manager.](/mem/)
 
 > [!NOTE]
-> Dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) les navigateurs suivants sont pris en charge :
+> Dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) navigateurs suivants sont pris en charge :
 > - Microsoft Edge (dernière version)
 > - Safari (dernière version, Mac uniquement)
 > - Chrome (dernière version)
@@ -44,9 +44,9 @@ Votre compte d’administration aura besoin d’autorisations spécifiques pour 
 Si vous avez besoin d’aide pour attribuer Azure Active Directory rôles d’administrateur, consultez [autorisations](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)de rôle d’administrateur dans Azure Active Directory .
 
 > [!IMPORTANT]
-> Seul le rôle Administrateur général dispose  des autorisations nécessaires pour inscrire votre organisation dans Bureau géré Microsoft. N’Azure Active Directory pas que les rôles de compte d’utilisateur donnent des privilèges de comptes d’utilisateurs à différents services Microsoft. Une fois l’inscription Bureau géré Microsoft, vous devez toujours utiliser  le rôle avec le moins de privilèges nécessaires pour accomplir vos autres tâches.
+> Seul le rôle Administrateur général dispose  des autorisations nécessaires pour inscrire votre organisation dans Bureau géré Microsoft. N’Azure Active Directory pas que les rôles de compte d’utilisateur donnent des privilèges de comptes d’utilisateurs à différents services Microsoft. Une fois l’inscription Bureau géré Microsoft terminé, vous devez toujours  utiliser le rôle avec le moins de privilèges nécessaires pour accomplir vos autres tâches.
 
-## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Rôles intégrés fournis par les Bureau géré Microsoft
+## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Rôles intégrés fournis par Bureau géré Microsoft
 
 
 |Rôle intégré  |Bureau géré Microsoft autorisations  |
@@ -63,7 +63,7 @@ Si vous avez besoin d’aide pour attribuer Azure Active Directory rôles d’ad
 Pour faciliter la gestion des rôles intégrés, il existe un groupe de sécurité pour chaque rôle personnalisé nommé « Modern Workplace Roles - _Role Name_» (par exemple, « Modern Workplace Roles – Security Manager »). Pour affecter des utilisateurs à l’un de ces groupes de sécurité, suivez les étapes suivantes :
 1.  Go the Microsoft Endpoint Manager portal.
 2.  Sélectionnez **Groupes** sur le côté gauche.
-3.  Recherchez **les rôles d’espace** de travail modernes, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
+3.  Recherchez **les rôles de l’espace** de travail moderne, puis sélectionnez le groupe associé au rôle que vous souhaitez attribuer. 
 4.  Sélectionnez **Membres** sur le côté gauche, puis **sélectionnez + Ajouter des membres** dans la barre de commandes.
 5.  Entrez l’e-mail de la personne ajoutée. S’ils sont invités, vous devez les inviter avant de pouvoir affecter le groupe.
 6.  Sélectionnez **Sélectionner** en bas.

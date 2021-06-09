@@ -1,5 +1,5 @@
 ---
-title: Tester Microsoft 365 à l’aide des guides de laboratoire de test
+title: Test Microsoft 365 avec les guides de laboratoire de test (TLG)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -27,7 +27,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905175"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Tester Microsoft 365 à l’aide des guides de laboratoire de test
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Test Microsoft 365 avec les guides de laboratoire de test (TLG)
 
 Les guides de laboratoire de test vous permettent d’avoir un aperçu rapide des produits Microsoft. Ils sont particulièrement utiles lorsque vous avez besoin d’évaluer une technologie ou une configuration avant de décider si elle vous convient et de lancer la conception, la planification ainsi que le déploiement pour vos utilisateurs. L’expérience pratique, suite à laquelle vous pourrez dire « Je l’ai créé moi-même et ça fonctionne », vous aide à comprendre les exigences de déploiement d’un nouveau produit ou d’une nouvelle solution de façon à garantir une meilleure planification pour son hébergement dans un environnement de production.
   
@@ -35,23 +35,23 @@ Les guides de laboratoire de test créent également des environnements représe
   
 ![Guides de laboratoire de test dans Microsoft Cloud](../media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-## <a name="microsoft-365-devtest-environment"></a>Environnement de test/dev Microsoft 365
+## <a name="microsoft-365-devtest-environment"></a>Microsoft 365 dev/test
 
-Utilisez les articles suivants pour créer votre environnement dev/test Microsoft 365 :
+Utilisez les articles suivants pour créer votre environnement Microsoft 365 dev/test :
   
 - [Configuration de base légère](lightweight-base-configuration-microsoft-365-enterprise.md)
     
-    Créez un abonnement d’essai Microsoft 365 Entreprise E5.
+    Créez un Microsoft 365 Entreprise d’essai E5.
 
 - [Configuration de base d’entreprise simulée](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
-    Créez un intranet simplifié s’exécutant dans les services d’infrastructure Microsoft Azure et un abonnement d’essai Microsoft 365 Entreprise E5. 
+    Créez un intranet simplifié en cours d’exécution Microsoft Azure services d’infrastructure et un abonnement Microsoft 365 Entreprise d’essai E5. 
 
     Cette étape est facultative si vous souhaitez créer une configuration d’entreprise simulée pour une identité hybride.
     
-Pour les guides de laboratoire de test supplémentaires qui s’appliquent à Office 365 et Microsoft 365, voir [guides de laboratoire de test.](m365-enterprise-test-lab-guides.md)  
+Pour les guides de laboratoire de test supplémentaires qui s’appliquent Office 365 et Microsoft 365, voir les [guides de laboratoire de test.](m365-enterprise-test-lab-guides.md)  
     
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Centre de solutions et d'architecture Microsoft 365](../solutions/index.yml)
   

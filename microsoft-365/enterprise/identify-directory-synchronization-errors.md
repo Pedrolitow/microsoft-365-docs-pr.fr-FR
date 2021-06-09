@@ -22,7 +22,7 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Découvrez comment afficher les erreurs de synchronisation d’annuaires et les correctifs possibles dans le Centre d’administration Microsoft 365.
+description: Découvrez comment afficher les erreurs de synchronisation d’annuaires et les correctifs possibles dans Microsoft 365 centre d’administration.
 ms.openlocfilehash: 76717fc158aa0cee47f784919f19a295378bbd5b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,19 +32,19 @@ ms.locfileid: "50907503"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Afficher les erreurs de synchronisation d’annuaires dans Microsoft 365
 
-Vous pouvez afficher les erreurs de synchronisation d’annuaires dans le Centre d’administration Microsoft 365. Seules les erreurs de l’objet User sont affichées. Pour afficher les erreurs avec PowerShell, voir [Identifier les objets avec DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Vous pouvez afficher les erreurs de synchronisation d’annuaires dans Microsoft 365'administration centrale. Seules les erreurs de l’objet User sont affichées. Pour afficher les erreurs avec PowerShell, voir [Identifier les objets avec DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
-## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>Afficher les erreurs de synchronisation d’annuaires dans le Centre d’administration Microsoft 365
+## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>Afficher les erreurs de synchronisation d’annuaires dans Microsoft 365'administration centrale
 
-Pour afficher les erreurs dans le Centre d’administration Microsoft 365 :
+Pour afficher les erreurs dans le centre d Microsoft 365'administration:
   
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com) avec un compte d’administrateur général. 
+1. Connectez-vous au [centre Microsoft 365'administration](https://admin.microsoft.com) avec un compte d’administrateur général. 
     
-2. Dans  la page d’accueil, vous verrez la carte de **gestion Utilisateur.** 
+2. Dans  la page d’accueil, vous verrez la carte de **gestion utilisateur.** 
     
-    ![Carte de gestion utilisateur dans le Centre d’administration Microsoft 365](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![La carte de gestion des utilisateurs dans le centre d Microsoft 365'administration](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-3. Sur la carte, sélectionnez **Erreurs de synchronisation** sous **Azure AD Connect** pour voir les erreurs dans la page Erreurs de synchronisation **d’annuaires.**   
+3. Sur la carte, sélectionnez **Erreurs de** synchronisation sous **Azure AD Connecter** pour voir les erreurs dans la page Erreurs de synchronisation **d’annuaires.**   
     
     ![Exemple de page d’erreurs de synchronisation d’annuaires](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
 
@@ -52,4 +52,4 @@ Pour afficher les erreurs dans le Centre d’administration Microsoft 365 :
 
    ![Exemple des détails d’une erreur de synchronisation d’annuaires](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-Après l’affichage, voir résoudre les problèmes liés à la synchronisation d’annuaires [pour Microsoft 365](fix-problems-with-directory-synchronization.md) afin de corriger les problèmes identifiés.
+Après l’affichage, voir [résoudre les problèmes liés à](fix-problems-with-directory-synchronization.md) la synchronisation d’annuaires pour Microsoft 365 résoudre les problèmes identifiés.

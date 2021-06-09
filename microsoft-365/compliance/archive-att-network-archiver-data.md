@@ -45,7 +45,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 Certaines des étapes d’implémentation requises pour archiver les données réseau AT&T sont externes à Microsoft 365 et doivent être effectuées avant de pouvoir créer le connecteur dans le centre de conformité.
 
-- Commandez [le service d’archivage mobile à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous inscrire à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
+- Commandez [le service d’archivage mobile à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous connectez à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
 
 - Obtenez vos informations de contact de facturation et de compte AT&T pour remplir les formulaires d’intégration TeleMessage et commander le service d’archivage des messages auprès d’AT&T.
 
@@ -59,7 +59,7 @@ Certaines des étapes d’implémentation requises pour archiver les données r�
 
 ## <a name="create-a-att-network-connector"></a>Créer un connecteur réseau AT&T
 
-Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur réseau AT&T dans le centre de conformité Microsoft 365. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transférer des messages SMS et MMS vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
+Une fois que vous avez rempli les conditions préalables décrites dans la section précédente, vous pouvez créer un connecteur réseau AT&T dans le centre Microsoft 365 conformité. Le connecteur utilise les informations que vous fournissez pour vous connecter au site TeleMessage et transférer des messages SMS et MMS vers les boîtes aux lettres utilisateur correspondantes dans Microsoft 365.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click Data **connectors**  \  **AT&T Network**.
 
@@ -83,4 +83,4 @@ Une fois que vous avez rempli les conditions préalables décrites dans la secti
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- Pour l’instant, nous ne ons pas en charge l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.
+- Pour l’instant, l’importation de pièces jointes ou d’éléments dont la taille est supérieure à 10 Mo n’est pas prise en charge. La prise en charge des éléments plus volumineux sera disponible à une date ultérieure.

@@ -23,7 +23,7 @@ ms.locfileid: "50907685"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Déploiement de Windows 10 Entreprise pour Contoso
 
-Avant le déploiement large de Microsoft 365 pour entreprise, Contoso avait des PC et des appareils compatibles avec Windows exécutant une combinaison de Windows 7 (10 %) Windows 8.1 (65 %) et Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC pour Windows 10 Entreprise et tirer parti de la sécurité avancée et réduire la surcharge informatique des déploiements automatisés de mises à jour. 
+Avant le déploiement large de Microsoft 365 pour entreprise, Contoso avait des PC et périphériques compatibles Windows exécutant une combinaison de Windows 7 (10 %) Windows 8.1 (65 %) et Windows 10 (25 %). Contoso souhaitait mettre à niveau ses PC pour Windows 10 Entreprise tirer parti de la sécurité avancée et réduire la surcharge informatique des déploiements automatisés de mises à jour. 
 
 Après évaluation de ses besoins d’infrastructure et de ses besoins métier, Contoso a identifié les exigences principales suivantes en matière de déploiement :
 
@@ -64,7 +64,7 @@ Pour effectuer le déploiement de mises à niveau sur place de Windows 10 Entre
 2. Création de packages Windows personnalisés basés sur des images du centre de service de gestion des licences en volume
 3. Utilisé Configuration Manager pour déployer les packages Windows vers les points de distribution sur leur réseau et les builds déployées sur les trois groupes de transit de validation et de déploiement.
 4. Exécution de l’évaluation de réussite pour les PC et les périphériques dans les trois anneaux de gestion intermédiaire de la validation et du déploiement utilisant des solutions de conformité de mise à jour et d’intégrité des périphériques de Windows Analytics.
-5. Sur la base des informations Windows Analytics, Contoso a déterminé la version de Windows 10 Entreprise à déployer dans le groupe de déploiement à grande échelle.
+5. Sur la base des Windows analytics, Contoso a déterminé la version de Windows 10 Entreprise à déployer vers le groupe de déploiement à grande échelle.
 6. A lancé les séquences de tâches de déploiement configuration Manager pour déployer le package Windows sélectionné dans le groupe de déploiement étendu.
 7. Pc et appareils surveillés dans le groupe de déploiement à grande échelle à l’aide des solutions de conformité d’état et de mise à jour des périphériques pour résoudre les problèmes.
 
@@ -78,16 +78,16 @@ Cette infrastructure se compose des éléments suivants :
   - obtient des images pour les packages Windows 10 Entreprise à partir du centre de gestion des licences en volume Microsoft dans The Microsoft Network ;
   - est le point d’administration central pour les packages de déploiement.
 - Les points de distribution régionaux généralement situés dans les centres régionaux de Contoso.
-- Pc et appareils Windows à différents emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en cours en fonction de l’appartenance au groupe.
+- Windows Pc et périphériques à différents emplacements qui reçoivent et installent les packages de déploiement pour la mise à niveau sur place ou les mises à jour en cours en fonction de l’appartenance au groupe.
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez comment Contoso tire parti de son infrastructure Configuration Manager pour déployer et conserver les applications [Microsoft 365 pour](contoso-o365pp.md) entreprise actuelles au sein de son organisation. 
+Découvrez comment Contoso tire parti de son infrastructure Configuration Manager pour déployer et maintenir la Applications Microsoft 365 pour les grandes entreprises [au](contoso-o365pp.md) sein de son organisation. 
 
 ## <a name="see-also"></a>Voir aussi
 
 [Windows 10 Entreprise](/windows/deployment/)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

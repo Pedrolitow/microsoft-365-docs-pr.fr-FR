@@ -1,7 +1,7 @@
 ---
 title: Configurer et gérer les fonctionnalités de Spécialistes des menaces Microsoft
 ms.reviewer: ''
-description: Inscrivez-vous auprès des experts microsoft en matière de menaces pour configurer, gérer et utiliser ces derniers dans vos opérations de sécurité quotidiennes et votre travail d’administration de la sécurité.
+description: Inscrivez-vous aux experts microsoft en matière de menaces pour configurer, gérer et utiliser ces derniers dans vos opérations de sécurité quotidiennes et votre travail d’administration de la sécurité.
 keywords: Spécialistes des menaces Microsoft, service de recherche de menace gérée, MTE, service de recherche géré Microsoft
 search.product: Windows 10
 search.appverid: met150
@@ -34,15 +34,15 @@ ms.locfileid: "52770660"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="before-you-begin"></a>Avant de commencer 
 > [!NOTE]
-> Discutez des conditions d’éligibilité avec votre fournisseur de services techniques Microsoft et votre équipe de compte avant de vous inscrire à Spécialistes des menaces Microsoft - Service de recherche de menaces gérées de notification d’attaque ciblée.
+> Discutez des conditions d’éligibilité avec votre fournisseur de services techniques Microsoft et votre équipe de compte avant de vous inscrire à Spécialistes des menaces Microsoft - Service de recherche de menace gérée de notification d’attaque ciblée.
 
 Assurez-vous que Defender pour le point de terminaison est déployé dans votre environnement avec des appareils inscrits, et pas seulement sur une mise en place de laboratoire.
 
-Si vous êtes un client Defender for Endpoint, vous devez demander Spécialistes des menaces Microsoft - Targeted **Attack Notifications** pour obtenir des informations et une analyse spéciales afin d’identifier les menaces les plus critiques, afin de pouvoir y répondre rapidement. Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner à **Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents.
+Si vous êtes un client Defender for Endpoint, vous devez demander Spécialistes des menaces Microsoft - Targeted **Attack Notifications** pour obtenir des informations et une analyse spéciales afin d’identifier les menaces les plus critiques, afin de pouvoir y répondre rapidement. Contactez votre équipe de compte ou votre représentant Microsoft pour vous abonner **à Spécialistes des menaces Microsoft - Experts** à la demande pour consulter nos experts en matière de menaces sur les détections et les adversaires pertinents.
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Appliquer pour Spécialistes des menaces Microsoft service de notifications d’attaques ciblées 
 Si vous êtes déjà un client Defender for Endpoint, vous pouvez l’appliquer via le Centre de sécurité Microsoft Defender. 
@@ -67,7 +67,7 @@ Lorsqu’il est accepté, vous recevez un  e-mail de bienvenue et le bouton Appl
 Vous pouvez recevoir des notifications d’attaques ciblées Spécialistes des menaces Microsoft via le support suivant :  
 - Page Incidents du portail Defender pour les points **de terminaison** 
 - Tableau de bord **Alertes** du portail Defender pour point de terminaison  
-- API d’alerte OData [et API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) [REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) d’alerte OData et [API REST](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
 - [Table DeviceAlertEvents en](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) recherche avancée
 - Votre courrier électronique, si vous choisissez de le configurer 
 
@@ -93,7 +93,7 @@ Vous pouvez travailler en partenariat avec Spécialistes des menaces Microsoft q
 > - Les demandes d’alerte relatives aux données d’intelligence contre les menaces personnalisées de votre organisation ne sont actuellement pas pris en charge. Pour plus d’informations, consultez votre équipe de réponse aux incidents ou aux opérations de sécurité.
 > - Vous devez avoir l’autorisation Gérer les **paramètres** de sécurité dans le portail du Centre de sécurité pour pouvoir soumettre une demande « Consulter un expert en menaces ».
 
-1. Accédez à la page du portail avec les informations pertinentes que vous souhaitez examiner, par exemple, la page **Incident.** Assurez-vous que la page de l’alerte ou du périphérique approprié est en cours d’affichage avant d’envoyer une demande d’enquête. 
+1. Accédez à la page du portail avec les informations pertinentes que vous souhaitez examiner, par exemple, la page **Incident.** Assurez-vous que la page de l’alerte ou du périphérique approprié est en vue avant d’envoyer une demande d’enquête. 
 
 2. Dans le menu supérieur droit, cliquez sur **le bouton ?** . Ensuite, **sélectionnez Consulter un expert en menaces.** 
 
@@ -109,7 +109,7 @@ Vous pouvez travailler en partenariat avec Spécialistes des menaces Microsoft q
 
     Le **champ Rubrique de** la requête est pré-rempli avec le lien vers la page concernée pour votre demande d’enquête. Par exemple, un lien vers la page de détails de l’incident, de l’alerte ou de l’appareil que vous étiez lorsque vous avez effectué la demande.
 
-3.  Dans le champ suivant, fournissez suffisamment d’informations pour donner au Spécialistes des menaces Microsoft suffisamment de contexte pour démarrer l’examen.
+3.  Dans le champ suivant, fournissez suffisamment d’informations pour donner au Spécialistes des menaces Microsoft suffisamment de contexte pour lancer l’enquête.
   
 4. Entrez l’adresse de messagerie que vous souhaitez utiliser pour correspondre à Spécialistes des menaces Microsoft.
 
@@ -125,9 +125,9 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 ## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>Exemples de rubriques d’examen que vous pouvez consulter avec Spécialistes des menaces Microsoft - Experts à la demande 
 
 **Informations sur l’alerte**
-- Nous voyons un nouveau type d’alerte pour un fichier binaire « living-off-the-land » : [AlertID]. Pouvez-vous nous en dire plus sur cette alerte et sur la façon dont nous pouvons examiner plus en détail ?
+- Nous voyons un nouveau type d’alerte pour un binaire « living-off-the-land » : [AlertID]. Pouvez-vous nous en dire plus sur cette alerte et sur la façon dont nous pouvons examiner plus en détail ?
 - Nous avons observé deux attaques similaires, qui tentent d’exécuter des scripts PowerShell malveillants, mais génèrent des alertes différentes. L’une est « Ligne de commande PowerShell suspecte » et l’autre est « Un fichier malveillant a été détecté en fonction de l’indication fournie par O365 ». Quelle est la différence ?
-- Je reçois une alerte impaire aujourd’hui pour le nombre anormal d’échec de connexion à partir de l’appareil d’un utilisateur à profil élevé. Je ne trouve aucune preuve supplémentaire autour de ces tentatives de se connecte. Comment Defender for Endpoint peut-il voir ces tentatives ? Quel type de connectez-vous est surveillé ?
+- Je reçois une alerte impaire aujourd’hui pour le nombre anormal d’échec de connexion à partir de l’appareil d’un utilisateur à profil élevé. Je ne trouve aucune preuve supplémentaire autour de ces tentatives de se connecte. Comment Defender for Endpoint peut-il voir ces tentatives ? Quel type de signatures sont surveillés ?
 - Pouvez-vous donner plus de contexte ou d’informations sur cette alerte : « Un comportement suspect a été observé par un utilitaire système ». 
 
 **Compromission possible de l’ordinateur**
@@ -144,7 +144,7 @@ Regardez cette vidéo pour obtenir une vue d’ensemble rapide du Microsoft Serv
 - J’ai reçu une notification d’attaque ciblée de Spécialistes des menaces Microsoft. Quelles données pouvez-vous nous fournir que nous pouvons transmettre à notre équipe de réponse aux incidents ?
 
   >[!NOTE]
-  >Spécialistes des menaces Microsoft est un service de recherche de cyber-sécurité géré et non un service de réponse aux incidents. Toutefois, les experts peuvent passer en toute transparence de l’examen aux services d’équipe de détection et de réponse de Microsoft Cybersecurity Solutions Group (CSG), si nécessaire. Vous pouvez également choisir de vous engager avec votre propre équipe de réponse aux incidents pour résoudre les problèmes nécessitant une réponse aux incidents. 
+  >Spécialistes des menaces Microsoft est un service de recherche de cyber-sécurité géré et non un service de réponse aux incidents. Toutefois, les experts peuvent passer en toute transparence de l’examen aux services d’équipe de détection et de réponse de Microsoft Cybersecurity Solutions Group (CSG), le cas échéant. Vous pouvez également choisir de vous engager avec votre propre équipe de réponse aux incidents pour résoudre les problèmes nécessitant une réponse aux incidents. 
 
 ## <a name="scenario"></a>Scénario
 

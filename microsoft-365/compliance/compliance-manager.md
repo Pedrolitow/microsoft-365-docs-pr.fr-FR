@@ -162,7 +162,7 @@ Le Gestionnaire de conformité est disponible dans les langues suivantes :
 
 ## <a name="next-steps-set-up-and-customize"></a>Étapes suivantes : configurer et personnaliser
 
-Découvrez comment vous inscrire, attribuer des autorisations et des rôles, configurer des paramètres et personnaliser l’affichage de votre tableau de bord lors de la mise en place du [Gestionnaire de conformité.](compliance-manager-setup.md)
+Découvrez comment vous inscrire, attribuer des autorisations et des rôles, configurer des paramètres et personnaliser votre vue de tableau de bord lors de la mise en place [du Gestionnaire de conformité.](compliance-manager-setup.md)
 
 Commencez ensuite à personnaliser le Gestionnaire de conformité pour vous aider à vous conformer aux normes industrielles les plus importantes pour votre organisation en [mettant en place des évaluations.](compliance-manager-assessments.md)
 

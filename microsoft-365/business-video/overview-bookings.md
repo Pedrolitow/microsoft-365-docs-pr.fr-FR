@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez Microsoft Bookings, une application mobile et en ligne pour les petites entreprises qui fournit des rendez-vous à vos clients.
+description: Découvrez Microsoft Bookings, une application mobile et en ligne pour les petites entreprises qui fournit la réservation de rendez-vous à vos clients.
 ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
 ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT

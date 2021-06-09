@@ -1,5 +1,5 @@
 ---
-title: Windows 10 kit de laboratoire Office 365 déploiement
+title: Kit laboratoire de déploiement Windows 10 et Office 365
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -22,11 +22,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770672"
 ---
-# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 kit de laboratoire Office 365 déploiement
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows 10 et Office 365
 
 Le kit de laboratoire de déploiement Windows 10 et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des ordinateurs de bureau exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
 
-Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester votre automatisation liée au déploiement.
+Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
 
 [Téléchargez le kit Windows 10 et Office 365 de déploiement.](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
@@ -47,7 +47,7 @@ Le kit vous fournit un environnement de laboratoire virtuel configuré automatiq
 L’atelier qui en résulte est conçu pour être connecté aux essais pour : 
 
   - Microsoft 365 E5
-  - Microsoft 365 Apps for enterprise
+  - Applications Microsoft 365 for entreprise
   - Office 365 E5 avec Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Laboratoires détaillés
@@ -57,7 +57,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 ### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
 - Analyses du bureau 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Attachement des locataires, cogestion et changement de charges de travail 
+- Attachement du client, cogestion et changement de charges de travail 
 - Accès à distance (VPN) 
 
 ### <a name="prepare-configuration"></a>Préparer la configuration   

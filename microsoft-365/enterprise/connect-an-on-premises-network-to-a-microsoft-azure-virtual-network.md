@@ -336,4 +336,4 @@ Voici la configuration finale.
   
 ## <a name="next-step"></a>Étape suivante
   
-[Déployer la synchronisation d’annuaires Microsoft 365 dans Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Déployer Microsoft 365 synchronisation d’annuaires dans Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

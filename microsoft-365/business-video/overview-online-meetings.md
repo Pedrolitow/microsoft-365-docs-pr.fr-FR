@@ -47,8 +47,8 @@ Pour planifier des réunions avec vos employés, clients et autres invités, uti
 
 1. In Microsoft Teams, in the left navigation, choose **Meetings**.
 1. Choisissez **Planifier une réunion.**
-1. Dans la **zone Nouvelle réunion,** entrez un titre **et** un **emplacement** pour la réunion.
-1. Entrez une heure et **une** date **de** début et de fin.
+1. Dans la **zone Nouvelle réunion,** entrez un **titre et** un **emplacement** pour la réunion.
+1. Entrez une **heure et** **une** date de début et de fin.
 1. Dans la **zone Détails,** entrez une description de la réunion et tous les autres détails que vous souhaitez ajouter, tels qu’un ordre du jour de la réunion.
 1. Sous **Inviter des personnes,** entrez les noms des employés ou des clients que vous voulez inviter.
 1. Si vous voyez **Provisoire** ou **Occupé** sous  n’importe quel nom, choisissez l’une des heures gratuites fournies ou cliquez sur Assistant Planification **pour** plus d’options.
@@ -69,13 +69,13 @@ Utilisez Microsoft Teams pour participer à des réunions avec des employés de 
  
 ## <a name="3-have-an-impromptu-meeting"></a>3. Avoir une réunion impromptue
 
-Vous pouvez facilement convertir une conversation dans Microsoft Teams réunion. Il vous suffit **de choisir le** bouton d’appel vidéo ou le bouton :::image type="icon" source="../media/video-call-icon.png" border="false"::: **d’appel audio** pour démarrer un :::image type="icon" source="../media/audio-call-icon.png" border="false"::: appel. Vous pouvez également ajouter des personnes à l’appel s’il doit se transformer en discussion de groupe.
+Vous pouvez facilement convertir une conversation dans Microsoft Teams en réunion. Il vous suffit **de choisir le** bouton d’appel vidéo ou le bouton :::image type="icon" source="../media/video-call-icon.png" border="false"::: **d’appel audio** pour démarrer un :::image type="icon" source="../media/audio-call-icon.png" border="false"::: appel. Vous pouvez également ajouter des personnes à l’appel s’il doit se transformer en discussion de groupe.
 
 Vous avez besoin d’aide ? Voir [Démarrer un appel à partir d’une conversation dans Teams](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798).
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Réunions dans Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams)
+[Réunions dans Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams)
 
 [6 façons de rendre les réunions virtuelles plus efficaces](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 

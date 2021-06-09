@@ -40,7 +40,7 @@ Regardez une courte vidéo sur Microsoft 365 Business Premium configuration.<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
 
 La plupart des étapes de configuration peuvent être réalisées dans l’installation guidée, mais les autres options sont également répertoriées.
 
@@ -55,8 +55,8 @@ La plupart des étapes de configuration peuvent être réalisées dans l’insta
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Étape 2 : Configurer des stratégies de sécurité et des appareils 
 
   - Utilisez la [configuration guidée pour](set-up.md#protect-your-organization) configurer les stratégies d’appareil. 
-  - Vous pouvez également en ajouter ou les modifier ultérieurement dans le Centre d’administration [et](view-policies-and-devices.md) dans le [portail Intune.](/intune/tutorial-walkthrough-intune-portal)
-  - L’Assistant Installation configurera également des paramètres de protection contre les menaces de base et de protection contre la perte de données.
+  - Vous pouvez également en ajouter ou les modifier ultérieurement dans le [Centre](view-policies-and-devices.md) d’administration et dans le [portail Intune.](/intune/tutorial-walkthrough-intune-portal)
+  - L’Assistant Installation configurera également les paramètres de protection contre les menaces de base et de protection contre la perte de données.
   
   Outre les paramètres de sécurité de l’Assistant Installation, vous pouvez renforcer votre sécurité en ajoutant les paramètres suivants :
 
@@ -93,6 +93,6 @@ Lorsque vous joignez un Windows 10 à Azure AD, les stratégies que vous défini
 
     - Si votre entreprise possède un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez accorder à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes ci-après : Accéder aux ressources locales à partir d’un appareil joint à [Azure AD](access-resources.md)dans Microsoft 365 Business Premium .
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 vidéos de formation pour les entreprises](../business-video/index.yml) (page de liens)

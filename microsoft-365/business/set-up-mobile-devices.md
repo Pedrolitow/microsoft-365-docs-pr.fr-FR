@@ -47,7 +47,7 @@ Regardez une courte vidéo sur la façon de configurer des applications Office s
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
 
 Accédez à **App store** et tapez Microsoft Outlook dans le champ de recherche.
   
@@ -79,13 +79,13 @@ Regardez une vidéo sur l’installation Outlook et Office sur les appareils And
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
 
-Pour commencer l’installation sur votre téléphone Android, go to the Play Store.
+Pour commencer l’installation sur votre téléphone Android, allez dans le Play Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Entrez Microsoft Outlook dans la zone de recherche Google Play, puis appuyez sur **Installer.** Une Outlook l’installation, appuyez sur **Ouvrir.**
+Entrez Microsoft Outlook dans la zone de recherche Google Play, puis appuyez sur **Installer.** Une fois Outlook l’installation, appuyez sur **Ouvrir.**
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   

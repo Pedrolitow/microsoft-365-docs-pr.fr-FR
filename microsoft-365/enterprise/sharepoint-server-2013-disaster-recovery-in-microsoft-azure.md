@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Deployment
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: Cet article explique comment utiliser Azure pour créer un environnement de récupération d’urgence pour votre batterie de serveurs SharePoint sur site.
+description: Cet article explique comment utiliser Azure pour créer un environnement de récupération d’urgence pour votre batterie de serveurs SharePoint local.
 ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -232,7 +232,7 @@ Cette feuille de route part du principe que vous disposez déjà d'une batterie 
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Étape 1 : Conception de l’environnement de récupération d’urgence
 
-Utilisez les instructions figurant dans la rubrique [Architectures Microsoft Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) pour concevoir l'environnement de récupération d'urgence, y compris la batterie de serveurs de récupération SharePoint. Vous pouvez utiliser les graphiques de la solution de récupération d’urgence [SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=392554) dans le fichier Azure Visio pour démarrer le processus de conception. Il est recommandé de concevoir l'intégralité de l'environnement avant de commencer à travailler dans l'environnement Azure.
+Utilisez les instructions figurant dans la rubrique [Architectures Microsoft Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) pour concevoir l'environnement de récupération d'urgence, y compris la batterie de serveurs de récupération SharePoint. Vous pouvez utiliser les graphiques de la [solution SharePoint récupération](https://go.microsoft.com/fwlink/p/?LinkId=392554) d’urgence dans Azure Visio pour démarrer le processus de conception. Il est recommandé de concevoir l'intégralité de l'environnement avant de commencer à travailler dans l'environnement Azure.
   
 Outre les instructions fournies dans la rubrique [Architectures Microsoft Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) pour la conception du réseau virtuel, de la connexion VPN, d'Active Directory et de la batterie SharePoint, veillez à ajouter un rôle de partage de fichiers à l'environnement Azure.
   
@@ -273,7 +273,7 @@ Cette étape comprend le déploiement de Windows Server Active Directory et de D
   
 **Schéma : Configuration du domaine Active Directory hybride**
 
-![Deux machines virtuelles déployées sur le réseau virtuel Azure et le sous-réseau de batterie de serveurs SharePoint sont des contrôleurs de domaine réplicas et des serveurs DNS](../media/AZarch-HyADdomainConfig.png)
+![Deux machines virtuelles déployées sur le réseau virtuel Azure et le sous-réseau de la batterie de serveurs SharePoint sont des contrôleurs de domaine réplicas et des serveurs DNS](../media/AZarch-HyADdomainConfig.png)
   
 Dans l’illustration, deux machines virtuelles sont déployées vers le même sous-réseau. Ces machines virtuelles hébergent chacune deux rôles : Active Directory et DNS.
   
@@ -452,7 +452,7 @@ Dans la plupart des cas où vous avez plusieurs serveurs web frontaux, il est lo
   
 En règle générale, lorsque vous configurez l'équilibrage de la charge réseau, une adresse IP unique est attribuée à votre cluster. Vous créez ensuite un enregistrement d'hôte DNS dans le fournisseur DNS de votre réseau qui pointe vers le cluster. (Pour ce projet, nous mettons un serveur DNS dans Azure pour la résilience en cas de panne d'un centre de données local.) Par exemple, vous pouvez créer un enregistrement DNS, dans le gestionnaire DNS dans Active Directory, appelé  `https://sharepoint.contoso.com` et qui pointe vers l'adresse IP de votre cluster dont la charge est équilibrée.
   
-Pour l’accès externe à votre batterie de serveurs SharePoint, vous pouvez créer un enregistrement d’hôte sur un serveur DNS externe avec la même URL que celle que les clients utilisent sur votre intranet (par exemple, ) qui pointe vers une adresse IP externe dans votre pare-feu. `https://sharepoint.contoso.com` (L’une des meilleures pratiques, à l’aide de cet exemple, consiste à configurer le DNS fractionné afin que le serveur DNS interne fait autorité et route les demandes directement vers le cluster de batterie de serveurs SharePoint, plutôt que de router les demandes DNS vers votre serveur `contoso.com` DNS externe.) Vous pouvez ensuite ma cartographier l’adresse IP externe sur l’adresse IP interne de votre cluster local afin que les clients trouvent les ressources qu’ils recherchent.
+Pour l’accès externe à votre batterie de serveurs SharePoint, vous pouvez créer un enregistrement d’hôte sur un serveur DNS externe avec la même URL que celle que les clients utilisent sur votre intranet (par exemple, ) qui pointe vers une adresse IP externe dans votre pare-feu. `https://sharepoint.contoso.com` (L’une des meilleures pratiques, à l’aide de cet exemple, consiste à configurer le DNS fractionnement afin que le serveur DNS interne fait autorité et route les demandes directement vers le cluster de la batterie de serveurs SharePoint, plutôt que de router les demandes DNS vers votre serveur `contoso.com` DNS externe.) Vous pouvez ensuite ma cartographier l’adresse IP externe sur l’adresse IP interne de votre cluster local afin que les clients trouvent les ressources qu’ils recherchent.
   
 À ce stade, vous pouvez rencontrer deux scénarios de récupération d’urgence :
   
@@ -630,7 +630,7 @@ Ce problème survient lorsque les préférences de sauvegarde par défaut pour u
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Le service de métadonnées gérées (ou un autre service SharePoint) ne démarre pas automatiquement après l’installation
 
-Les services peuvent mettre plusieurs minutes à démarrer, selon les performances et la charge actuelle de votre serveur SharePoint. Cliquez sur le bouton **Démarrer** pour le service concerné et accordez suffisamment de temps au démarrage, tout en actualisant de temps à autre les services sur l'écran du serveur pour contrôler son état. Si le service est encore arrêté, activez la journalisation des diagnostics SharePoint, essayez de redémarrer le service et vérifiez si le journal contient des erreurs. Pour plus d’informations, voir [Configurer la journalisation des diagnostics dans SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)
+Les services peuvent mettre plusieurs minutes à démarrer, selon les performances et la charge actuelle de votre serveur SharePoint. Cliquez sur le bouton **Démarrer** pour le service concerné et accordez suffisamment de temps au démarrage, tout en actualisant de temps à autre les services sur l'écran du serveur pour contrôler son état. Si le service est encore arrêté, activez la journalisation des diagnostics SharePoint, essayez de redémarrer le service et vérifiez si le journal contient des erreurs. Pour plus d’informations, voir [Configure diagnostic logging in SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Après avoir modifié le service DNS sur l’environnement de basculement Azure, les navigateurs clients continuent à utiliser l’ancienne adresse IP pour le site SharePoint
 

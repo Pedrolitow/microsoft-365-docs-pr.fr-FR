@@ -27,17 +27,17 @@ ms.locfileid: "52244635"
 
 ## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Présentation de l’Analyseur de configuration de la conformité Microsoft (MCCA) (prévisualisation)
 
-L’Analyseur de configuration de la conformité Microsoft (MCCA) est un outil de prévisualisation qui peut vous aider à démarrer avec le Gestionnaire de [conformité Microsoft.](compliance-manager.md) MCCA est un utilitaire basé sur PowerShell qui récupère les configurations actuelles de votre organisation et les valide par rapport Microsoft 365 meilleures pratiques recommandées. Ces meilleures pratiques sont basées sur un ensemble de contrôles qui incluent des réglementations clés et des normes pour la protection des données et la gouvernance des données.
+L’Analyseur de configuration de la conformité Microsoft (MCCA) est un outil de prévisualisation qui peut vous aider à démarrer avec le Gestionnaire de [conformité Microsoft.](compliance-manager.md) MCCA est un utilitaire basé sur PowerShell qui récupère les configurations actuelles de votre organisation et les valide par rapport Microsoft 365 meilleures pratiques recommandées. Ces meilleures pratiques sont basées sur un ensemble de contrôles qui incluent des réglementations et des normes clés pour la protection des données et la gouvernance des données.
 
 MCCA peut vous aider à voir rapidement quelles actions d’amélioration du Gestionnaire de conformité s’appliquent à votre environnement Microsoft 365 actuel. Chaque action identifiée par MCCA vous donne des recommandations pour l’implémentation, avec des liens directs vers le Gestionnaire de conformité et la solution applicable pour commencer à prendre des mesures correctives.
 
 Une ressource supplémentaire pour comprendre MCCA consiste à consulter les [instructions README sur GitHub](https://github.com/OfficeDev/MCCA#overview). Cette page fournit des informations détaillées sur les conditions préalables et fournit des instructions d’installation complètes. Vous n’avez pas besoin d’un GitHub pour accéder à cette page.
 
-Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365 et pour les clients modérés, Cloud de la communauté du secteur public élevés et du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
+Disponibilité : MCCA est disponible pour toutes les organisations titulaires de licences Office 365 et Microsoft 365 et des clients modérés, Cloud de la communauté du secteur public élevés et du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
 
 ## <a name="install-mcca-and-run-a-report"></a>Installer MCCA et exécuter un rapport
 
-Vous pouvez installer l’outil MCCA à l’aide Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez MCCA, il vous demande vos informations d’identification de connexion et génère un nouveau rapport mis à jour.
+Vous pouvez installer l’outil MCCA à l’aide Windows PowerShell. Une fois que vous avez téléchargé et installé l’outil, vous n’avez pas besoin de répéter ces étapes pour exécuter des rapports. Chaque fois que vous ouvrez MCCA, elle vous demande vos informations d’identification de connexion et génère un nouveau rapport mis à jour.
 
 #### <a name="step-1-install-windows-powershell"></a>Étape 1 : Installer Windows PowerShell
 Pour commencer, vous aurez besoin Exchange Online module PowerShell (v2.0.3 ou supérieur) disponible dans la galerie PowerShell. [Obtenir des instructions d’installation.](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)
@@ -46,7 +46,7 @@ Pour commencer, vous aurez besoin Exchange Online module PowerShell (v2.0.3 ou s
 
 Pour installer MCCA, commencez par utiliser PowerShell en mode administrateur. Suivez les étapes ci-dessous :
 
-1. Sélectionnez le bouton Windows **démarrer.**
+1. Sélectionnez le Windows **bouton** Démarrer.
 2. Tapez **PowerShell,** cliquez avec le bouton **droit sur Windows PowerShell,** puis **sélectionnez Exécuter en tant qu’administrateur.**
 1. Depuis l’invite de commandes, tapez :
 
@@ -110,7 +110,7 @@ Suivez ces instructions pour exécuter un rapport basé sur un emplacement spéc
   | 7  | Japon |
   | 8  | Corée |
   | 9  | Amérique du Nord (à l’exception du Canada) |
-  | 10  | Amérique du Sud |
+  | 10 | Amérique du Sud |
   | 11 | Afrique du Sud |
   | 12  | Suisse |
   | 13 | Émirats arabes unis |
@@ -130,16 +130,16 @@ Le tableau ci-dessous indique les rôles qui ont accès aux sections du rapport.
 
 Exceptions :
 1. Les utilisateurs ne pourront pas générer de rapport pour l’adresse IP en dehors de la section « Utiliser la gestion des droits Exchange Online » .
-2. Les utilisateurs pourront générer un rapport pour l’adresse IP en dehors de la section « Utiliser IRM pour Exchange Online » .
+2. Les utilisateurs pourront générer un rapport pour l’adresse IP en dehors de la section « Utiliser irm pour Exchange Online » .
 3. Les utilisateurs pourront générer un rapport pour l’adresse IP en dehors de la section « Activer la conformité des communications dans O365 ».
-4. Les utilisateurs ne pourront pas générer de rapport pour l’adresse IP à part la section « Activer l’audit dans Office 365 ».
+4. Les utilisateurs ne pourront pas générer de rapport pour l’adresse IP en dehors de la section « Activer l’audit dans Office 365 ».
 5. Les utilisateurs pourront générer un rapport pour l’adresse IP en dehors de la section « Activer l’audit Office 365 » .
 
 #### <a name="solutions-summary-section"></a>Section Résumé des solutions
 
 La section **Résumé des** solutions du rapport donne une vue d’ensemble des actions d’amélioration que votre organisation peut prendre dans le Gestionnaire de conformité pour vous aider à améliorer votre posture de conformité.
 
-![MCCA : synthèse des solutions](../media/compliance-manager-mcca-solutions.png "Écran Résumé des solutions MCCA")
+![MCCA - Résumé des solutions](../media/compliance-manager-mcca-solutions.png "Écran Résumé des solutions MCCA")
 
 MCCA évalue vos configurations actuelles par rapport aux actions d’amélioration recommandées dans le Gestionnaire de conformité. Toute action d’amélioration identifiée par l’outil MCCA comme devant être attentive est répertoriée dans cette section.
 
@@ -167,4 +167,4 @@ Sélectionnez la dropdown en face de **l’étiquette Recommandation** à droite
 
 Pour plus d’informations sur l’installation, la configuration et l’utilisation de MCCA, consultez les [instructions README](https://github.com/OfficeDev/MCCA#overview) sur GitHub (aucun compte GitHub requis).
 
-Pour plus d’informations Windows PowerShell, commencez par utiliser la [documentation PowerShell.](/powershell/scripting/how-to-use-docs?view=powershell-7) Voir aussi [Démarrage Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+Pour plus d’informations Windows PowerShell, commencez par utiliser [la documentation PowerShell.](/powershell/scripting/how-to-use-docs?view=powershell-7) Voir aussi [Démarrage Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).

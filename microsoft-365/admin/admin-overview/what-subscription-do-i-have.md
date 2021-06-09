@@ -1,5 +1,5 @@
 ---
-title: Quel abonnement ai-je ?
+title: Quel abonnement ai-je ?
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -28,7 +28,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52706297"
 ---
-# <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
+# <a name="what-subscription-do-i-have"></a>Quel abonnement ai-je ?
 
 Si vous êtes un administrateur, vous pouvez vérifier les abonnements de votre organisation en allant au Centre d’administration.
   

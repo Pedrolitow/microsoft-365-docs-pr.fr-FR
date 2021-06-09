@@ -47,7 +47,7 @@ En savoir plus sur le partage de [fichiers en dehors](securely-share-files-exter
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Partager et collaborer avec un client ou un partenaire commercial
 
-Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un lieu continu pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires continuent de s’en sortir.
+Partage dans le cadre d’un projet ? Ou dans le cadre d’une relation continue avec un partenaire commercial ou un fournisseur ? Vous pouvez vous donner un peu plus de temps et configurer une équipe dans Microsoft Teams et avoir un endroit permanent pour partager et collaborer. Il est facile de travailler avec des personnes extérieures à votre entreprise, et vous pouvez même configurer des canaux distincts pour que d’autres fournisseurs ou partenaires restent au même niveau.
 
 1. Créez l’équipe.
 1. Télécharger vos fichiers.

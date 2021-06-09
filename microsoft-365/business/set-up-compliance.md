@@ -43,17 +43,17 @@ DLP est livré avec de nombreux modèles de stratégie prêts à l’emploi pour
 
  **Archivage Exchange Online** de licence permettent de maintenir les normes réglementaires et de conformité en conservant le contenu des e-mails pour eDiscovery. Cela permet également de réduire les risques en cas de poursuites judiciaires et permet de récupérer des données après une violation de la sécurité ou lorsque vous devez récupérer des éléments supprimés. Vous pouvez utiliser la conservation pour litige pour conserver tout le contenu d’un utilisateur ou utiliser des stratégies de rétention pour personnaliser ce que vous souhaitez conserver.
   
-**Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en attente pour litige. 
+**Attente pour litige :** Vous pouvez conserver tout le contenu de la boîte aux lettres, y compris les éléments supprimés, en mettant la boîte aux lettres entière d’un utilisateur en conservation pour litige. 
     
 Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’administration :
     
-1. Dans le navigation gauche, allez à **Utilisateurs** \> **actifs.**
+1. Dans le navigation de gauche, allez à **Utilisateurs** \> **actifs.**
     
-2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres** de messagerie, puis en plus des **paramètres,** choisissez **Modifier Exchange propriétés.**
+2. Sélectionnez un utilisateur dont vous souhaitez placer la boîte aux lettres en attente pour litige. Dans le volet utilisateur, développez **Paramètres** de messagerie et, en plus des **paramètres,** choisissez Modifier **Exchange propriétés.**
     
 3. Dans la page de boîte aux lettres de l’utilisateur, choisissez ** fonctionnalités de boîte aux lettres ** dans le navigation gauche, puis choisissez le lien Activer sous Attente pour **litige.** 
     
-4. Dans la boîte **de dialogue De attente** pour litige, vous pouvez spécifier la durée de la durée de la attente pour litige dans le champ Durée de la durée de la période de attente **pour** litige. Laissez le champ vide si vous souhaitez placer une attente infinie. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site web dont vous pourriez avoir besoin pour en savoir plus sur la mise en attente pour litige. \>**Enregistrer**.
+4. Dans la boîte **de dialogue De attente** pour litige, vous pouvez spécifier la durée de la durée de la attente pour litige dans le champ Durée de la durée de la attente **pour** litige. Laissez le champ vide si vous souhaitez placer une attente infinie. Vous pouvez également ajouter des notes et diriger le propriétaire de la boîte aux lettres vers un site web dont vous pourriez avoir besoin pour en savoir plus sur la mise en attente pour litige. \>**Enregistrer**.
     
 **Rétention :** Vous pouvez activer des stratégies de rétention personnalisées, par exemple, pour conserver un certain temps ou supprimer définitivement du contenu à la fin de la période de rétention. Pour plus d’informations, voir [Vue d’ensemble des stratégies de rétention.](../compliance/retention.md)
 
@@ -61,7 +61,7 @@ Pour placer une boîte aux lettres en attente pour litige, dans le Centre d’ad
 
 Les étiquettes de niveau de sensibilité sont disponibles avec Azure Information Protection (AIP) Plan 1 et vous aident à classer et éventuellement protéger vos documents et e-mails en appliquant des étiquettes. Les étiquettes peuvent être appliquées automatiquement par les administrateurs qui définissent des règles et des conditions, manuellement par les utilisateurs ou à l’aide d’une combinaison dans laquelle des recommandations sont données aux utilisateurs.
 
-Pour configurer les étiquettes de niveau de sensibilité, affichez la vidéo créer et gérer [les étiquettes de](../business-video/create-sensitivity-labels.md) sensibilité.
+Pour configurer des étiquettes de niveau de sensibilité, affichez la vidéo créer et gérer [les étiquettes de](../business-video/create-sensitivity-labels.md) sensibilité.
 
 
 

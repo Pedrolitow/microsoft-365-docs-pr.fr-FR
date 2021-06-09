@@ -26,7 +26,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: Aidez vos utilisateurs à installer Office applications sur Windows 10 appareils et à installer facilement Office sur Windows 10 PC à partir du Centre d Microsoft 365'administration.
+description: Aidez vos utilisateurs à installer Office applications sur des appareils Windows 10 et à installer facilement des Office sur Windows 10 PC à partir du Centre d Microsoft 365'administration.
 ms.openlocfilehash: 74c17533995b74655be57524b77d9c508f703c50
 ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
@@ -46,7 +46,7 @@ Regardez une courte vidéo sur l’installation Office applications.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
 
 ## <a name="manage-office-deployments"></a>Gérer les déploiements d'Office
 
@@ -54,11 +54,11 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 2. Go to **Setup** in the left navigation pane, and on the **Setup** page, scroll to **Apps and updates**.
     > [!NOTE]
-    > Il se peut que cette carte ne s’voie pas si tous vos utilisateurs ont installé Office applications.
+    > Cette carte risque de ne pas s’y voir si tous vos utilisateurs ont installé Office applications.
   
-3. Sur **l’aide, les utilisateurs installent Office carte d’application,** sélectionnez **Afficher,** puis **Commencer.**
+3. Dans **l’aide, les utilisateurs installent Office carte d’application,** sélectionnez **Afficher,** puis **Commencer.**
     
-4. Dans le **panneau Utilisateurs de messagerie,** un lien pour télécharger Office, sélectionnez les utilisateurs que vous souhaitez envoyer par courrier électronique, puis envoyez un **e-mail aux utilisateurs sélectionnés.**
+4. Dans le **panneau Utilisateurs de messagerie,** un lien pour télécharger Office, sélectionnez les utilisateurs que vous souhaitez envoyer par courrier électronique, puis envoyez un e-mail aux **utilisateurs sélectionnés.**
 
    ![Sélectionnez des utilisateurs pour envoyer des courriers électroniques Office lien de téléchargement.](../media/sendemailtousers.png)
 

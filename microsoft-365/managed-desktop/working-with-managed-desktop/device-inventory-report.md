@@ -1,7 +1,7 @@
 ---
 title: Rapport d’inventaire des appareils
 description: ''
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal

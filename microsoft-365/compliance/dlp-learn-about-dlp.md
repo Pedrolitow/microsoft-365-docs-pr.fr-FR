@@ -87,10 +87,10 @@ Vous pouvez appliquer des stratégies DLP aux données au repos, aux données en
 
 - Exchange Online courrier électronique
 - Sites SharePoint Online
-- Comptes OneDrive
+- Les comptes OneDrive
 - conversation et messages de canal Teams
-- Microsoft Cloud App Security
-- Appareils Windows 10
+- Microsoft Cloud App Security
+- Appareils Windows 10
 - Référentiels locaux
 
 Chacune d’elles a des conditions préalables différentes. Les éléments sensibles dans certains emplacements, tels que Exchange en ligne, peuvent être placés sous le cadre de la DLP en configurant simplement une stratégie qui s’applique à eux. D’autres, telles que les référentiels de fichiers locaux, nécessitent un déploiement du scanneur Azure Information Protection (AIP). Vous devez préparer votre environnement, les stratégies de brouillon de code et les tester minutieusement avant d’activer les actions de blocage.
@@ -142,13 +142,13 @@ emplacement | Inclure/exclure par|
 |Microsoft Cloud App Security |instance |
 |Référentiels locaux| chemin d’accès au fichier de référentiel|
 
-3. **Choisissez les conditions qui doivent correspondre** pour qu’une stratégie soit appliquée à un élément : vous pouvez accepter des conditions pré-configurées ou définir des conditions personnalisées. En voici quelques exemples :
+3. **Choisissez les conditions qui doivent correspondre** pour qu’une stratégie soit appliquée à un élément : vous pouvez accepter des conditions pré-configurées ou définir des conditions personnalisées. En voici quelques exemples :
 
 - contient un type spécifié d’informations sensibles qui est utilisé dans un certain contexte. Par exemple, 95 numéros de sécurité sociale envoyés par courrier électronique à un destinataire extérieur à votre organisation.
 - l’élément possède une étiquette de sensibilité spécifiée
 - l’élément avec des informations sensibles est partagé en interne ou en externe
 
-4. **Choisissez l’action à prendre lorsque les conditions de stratégie sont** remplies : les actions dépendent de l’emplacement où l’activité se produit.  En voici quelques exemples :
+4. **Choisissez l’action à prendre lorsque les conditions de stratégie sont** remplies : les actions dépendent de l’emplacement où l’activité se produit.  En voici quelques exemples :
 
 - SharePoint/Exchange/OneDrive : bloquer l’accès au contenu aux personnes extérieures à votre organisation. Affichez un conseil à l’utilisateur et envoyez-lui une notification par courrier électronique lui avertissant qu’il prend une action interdite par la stratégie DLP.
 - Teams Conversation et canal : empêcher le partage d’informations sensibles dans la conversation ou le canal
@@ -175,7 +175,7 @@ Une fois la stratégie synchronisée avec les emplacements adéquats, elle comme
 
 ## <a name="viewing-policy-application-results"></a>Affichage des résultats de l’application de stratégie
 
-DLP signale une grande quantité d’informations dans les Microsoft 365 de la surveillance, des correspondances et des actions de stratégie, ainsi que des activités des utilisateurs. Vous devez utiliser ces informations et agir sur ces informations pour régler vos stratégies et les actions de tri prises sur les éléments sensibles. La télémétrie est d’abord Microsoft 365 [journaux d’audit](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) du centre de conformité, traitée et permet d’utiliser différents outils de création de rapports. Chaque outil de rapports a un objectif différent.  
+DLP signale une grande quantité d’informations dans les Microsoft 365 de surveillance, les correspondances et actions de stratégie, ainsi que les activités des utilisateurs. Vous devez utiliser ces informations et agir sur ces informations pour régler vos stratégies et les actions de tri prises sur les éléments sensibles. La télémétrie est d’abord Microsoft 365 [journaux d’audit](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) du Centre de conformité, est traitée et permet d’utiliser différents outils de création de rapports. Chaque outil de rapports a un objectif différent.  
 
 ### <a name="dlp-alerts-dashboard"></a>Tableau de bord des alertes DLP
 
@@ -194,7 +194,7 @@ Vous pouvez également afficher les détails de l’événement associé avec de
 Les rapports [DLP montrent](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention) de larges tendances au fil du temps et donnent des informations spécifiques sur :
 
 - **Correspondances de stratégie DLP au fil** du temps et filtrage par plage de dates, emplacement, stratégie ou action
-- **Les correspondances d’incident DLP** montrent également des correspondances au fil du temps, mais s’pivotent sur les éléments plutôt que sur les règles de stratégie.
+- **Les correspondances d’incident DLP** montrent également les correspondances au fil du temps, mais s’pivotent sur les éléments plutôt que sur les règles de stratégie.
 - **Les remplacements** et faux positifs DLP indiquent le nombre de faux positifs et, s’ils sont configurés, les remplacements par l’utilisateur, ainsi que la justification de l’utilisateur.
 
 ### <a name="dlp-activity-explorer"></a>Explorateur d’activités DLP
@@ -207,7 +207,7 @@ Pour plus d’informations, voir [La mise en place de l’Explorateur d’activi
 
 Pour en savoir plus sur Microsoft 365 DLP, voir :
 
-- [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md)
+- [Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365](endpoint-dlp-learn-about.md)
 - [En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préversion)](dlp-teams-default-policy.md)
 - [En savoir plus sur le scanneur local de protection contre la perte de données Microsoft 365 (préversion)](dlp-on-premises-scanner-learn.md)
 - [En savoir plus sur l’extension de la conformité Microsoft (préversion).](dlp-chrome-learn-about.md)

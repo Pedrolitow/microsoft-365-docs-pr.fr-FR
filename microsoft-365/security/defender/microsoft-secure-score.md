@@ -1,7 +1,7 @@
 ---
 title: Degré de sécurisation Microsoft
 description: Décrit le niveau de sécurité Microsoft dans le centre Microsoft 365 sécurité, comment améliorer votre posture de sécurité et ce à quoi les administrateurs de sécurité peuvent s’attendre.
-keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -46,7 +46,7 @@ Les organisations ont accès à des visualisations robustes de mesures et de ten
 
 ![Page d’accueil du score de sécurisation](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>Fonctionnement
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Vous avez des points pour les actions suivantes :
 
@@ -67,11 +67,11 @@ Votre score est mis à jour en temps réel pour refléter les informations prés
 - [Afficher les actions d’amélioration et décider d’un plan d’action](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [Lancer des flux de travail pour examiner ou implémenter](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
 
-### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont-elles note es ?
+### <a name="how-improvement-actions-are-scored"></a>Comment les actions d’amélioration sont note es
 
 Chaque action d’amélioration vaut 10 points ou moins, et la plupart d’entre eux sont marqués de manière binaire. Si vous implémentez l’action d’amélioration, comme créer une stratégie ou activer un paramètre spécifique, vous obtenez 100 % des points. Pour les autres actions d’amélioration, les points sont donnés sous forme de pourcentage de la configuration totale.
 
-Par exemple, une action d’amélioration indique que vous obtenez 10 points en protégeant tous vos utilisateurs avec l’authentification multifacteur. Vous n’avez que 50 utilisateurs sur 100 au total protégés, donc vous obtenez un score partiel de 5 points (50 protégé / 100 au total * 10 pts max = 5 pts).
+Par exemple, une action d’amélioration indique que vous obtenez 10 points en protégeant tous vos utilisateurs avec l’authentification multifacteur. Vous n’avez que 50 utilisateurs sur 100 au total protégés. Vous obtenez donc un score partiel de 5 points (50 protégé / 100 au total * 10 pts max = 5 pts).
 
 ### <a name="products-included-in-secure-score"></a>Produits inclus dans secure score
 
@@ -79,8 +79,8 @@ Il existe actuellement des recommandations pour les produits suivants :
 
 - Microsoft 365 (y compris Exchange Online)
 - Azure Active Directory
-- Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité
+- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour l’identité
 - Cloud App Security
 - Microsoft Teams
 
@@ -88,7 +88,7 @@ Recommandations d’autres produits de sécurité seront bientôt disponible. Le
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
 
-Microsoft Secure Score a mis à jour les actions d’amélioration pour prendre en charge les paramètres de sécurité par défaut dans Azure Active Directory, ce qui facilite la protection de votre organisation avec des paramètres de sécurité pré-configurés pour les [attaques](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)courantes.
+Le Niveau de sécurité Microsoft a mis à jour les actions d’amélioration pour prendre en charge les paramètres de sécurité par défaut dans Azure Active Directory, ce qui facilite la protection de votre organisation avec des paramètres de sécurité pré-configurés pour les [attaques](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)courantes.
 
 Si vous allumez les paramètres de sécurité par défaut, des points complets vous seront attribués pour les actions d’amélioration suivantes :
 
@@ -118,7 +118,7 @@ Avec l’accès en lecture et en écriture, vous pouvez apporter des modificatio
 Avec l’accès en lecture seule, vous ne pouvez pas modifier l’état ou les notes d’une action d’amélioration, modifier des zones de score ou modifier des comparaisons personnalisées.
 
 * Administrateur du support technique
-* Administrateur d’utilisateurs
+* Administrateur d’utilisateurs
 * Administrateur de service
 * Lecteur Sécurité
 * Opérateur de sécurité
@@ -126,7 +126,7 @@ Avec l’accès en lecture seule, vous ne pouvez pas modifier l’état ou les n
 
 ## <a name="risk-awareness"></a>Sensibilisation aux risques
 
-Le Score de sécurité Microsoft est un résumé numérique de votre posture de sécurité en fonction des configurations système, du comportement de l’utilisateur et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue de la probable violation de votre système ou de vos données. Au lieu de cela, il représente la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft qui peuvent vous aider à compenser le risque de violation. Aucun service en ligne n’est contre les violations de sécurité et le score de sécurité ne doit pas être interprété comme une garantie contre les violations de sécurité.
+Le Score de sécurité Microsoft est un résumé numérique de votre posture de sécurité en fonction des configurations système, du comportement de l’utilisateur et d’autres mesures liées à la sécurité. Il ne s’agit pas d’une mesure absolue du risque de violation de votre système ou de vos données. Au lieu de cela, il représente la mesure dans laquelle vous avez adopté des contrôles de sécurité dans votre environnement Microsoft qui peuvent vous aider à compenser le risque de violation. Aucun service en ligne n’est contre les violations de sécurité et le score de sécurité ne doit pas être interprété comme une garantie contre les violations de sécurité.
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

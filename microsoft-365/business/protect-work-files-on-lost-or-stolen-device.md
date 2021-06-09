@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Découvrez les paramètres disponibles dans Microsoft 365 pour les entreprises pour protéger les fichiers de travail en cas de perte ou de vol de l’appareil d’un utilisateur.
+description: Découvrez les paramètres disponibles dans Microsoft 365 entreprise pour protéger les fichiers de travail en cas de perte ou de vol de l’appareil d’un utilisateur.
 ms.openlocfilehash: 6b10ce73d3ebe936d3878724783d6076455a3552
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

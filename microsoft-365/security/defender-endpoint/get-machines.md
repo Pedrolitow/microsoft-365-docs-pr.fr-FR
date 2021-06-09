@@ -41,7 +41,7 @@ Récupère une collection [d’ordinateurs](machine.md) qui ont communiqué avec
 <br>Voir des exemples [dans les requêtes OData avec Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Vous pouvez obtenir la dernière vue des appareils en fonction de votre période de rétention configurée.
 2. La taille maximale de page est de 10 000.
 3. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 

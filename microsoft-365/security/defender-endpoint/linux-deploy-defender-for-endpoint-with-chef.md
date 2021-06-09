@@ -27,17 +27,17 @@ ms.locfileid: "51903927"
 
 Avant de commencer :
 
-- Installez unzip s'il n'est pas déjà installé. Les composants Chef sont déjà installés et un référentiel Chef existe (le chef génère un référentiel ) pour stocker le guide de référence qui sera utilisé pour déployer defender pour point de terminaison sur les serveurs Linux gérés par <reponame> Chef.
+- Installez unzip s’il n’est pas déjà installé. Les composants Chef sont déjà installés et un référentiel Chef existe (le chef génère un référentiel ) pour stocker le guide de référence qui sera utilisé pour déployer defender pour point de terminaison sur les serveurs Linux gérés par <reponame> Chef.
 
 Vous pouvez créer un nouveau classeur dans votre référentiel existant en exécutant la commande suivante à partir du dossier des classeurs qui se trouve dans votre référentiel de chef :</br>
 `chef generate cookbook mdatp`
 
 Cette commande crée une structure de dossiers pour le nouveau classeur appelé mdatp.  Vous pouvez également utiliser un livre de recettes existant si vous en avez déjà un que vous souhaitez utiliser pour ajouter le déploiement MDE.
-Une fois le classeur créé, créez un dossier de fichiers à l'intérieur du dossier de classeur qui vient d'être créé :
+Une fois le classeur créé, créez un dossier de fichiers à l’intérieur du dossier de classeur qui vient d’être créé :
 
 `mkdir mdatp/files`
 
-Transférez le fichier zip d'intégration Linux Server qui peut être téléchargé à partir du portail centre de sécurité Microsoft Defender vers ce nouveau dossier de fichiers.
+Transférez le fichier zip d’intégration Linux Server qui peut être téléchargé à partir du portail Centre de sécurité Microsoft Defender vers ce nouveau dossier de fichiers.
 
 Sur la station de travail Chef, accédez au dossier mdatp/recipes. Ce dossier est créé lors de la création du classeur. Utilisez votre éditeur de texte préféré (comme vi ou nano) pour ajouter les instructions suivantes à la fin du fichier default.rb :
 -   include_recipe '::onboard_mdatp'
@@ -82,7 +82,7 @@ when 'rhel'
 end
 ```
 
-Vous devez modifier le numéro de version, la distribution et le nom du repo pour qu'il corresponde à la version que vous déployez et au canal que vous souhaitez déployer.
+Vous devez modifier le numéro de version, la distribution et le nom du repo pour qu’il corresponde à la version que vous déployez et au canal que vous souhaitez déployer.
 Ensuite, vous devez créer un onboard_mdatp.rb dans le dossier mdatp/recipies.  Ajoutez le texte suivant à ce fichier :
 
 ```powershell
@@ -108,10 +108,10 @@ bash 'Extract Onbaording Json MDATP' do
 end
 ```
 
-Veillez à mettre à jour le nom du chemin d'accès à l'emplacement du fichier d'intégration.
+Veillez à mettre à jour le nom du chemin d’accès à l’emplacement du fichier d’intégration.
 Pour tester son déploiement sur la station de travail Chef, exécutez simplement ``sudo chef-client -z -o mdatp`` .
 Après votre déploiement, vous devez envisager de créer et de déployer un fichier de configuration sur les serveurs en fonction des préférences définies pour [Microsoft Defender pour Endpoint sur Linux.](/linux-preferences.md)  
-Une fois que vous avez créé et testé votre fichier de configuration, vous pouvez le placer dans le dossier de guide/mdatp/fichiers où vous avez également placé le package d'intégration.  Vous pouvez ensuite créer un settings_mdatp.rb dans le dossier mdatp/recipies et ajouter ce texte :
+Une fois que vous avez créé et testé votre fichier de configuration, vous pouvez le placer dans le dossier de guide/mdatp/fichiers où vous avez également placé le package d’intégration.  Vous pouvez ensuite créer un settings_mdatp.rb dans le dossier mdatp/recipies et ajouter ce texte :
 
 ```powershell
 #Copy the configuration file
@@ -127,7 +127,7 @@ end
 Pour inclure cette étape dans la recette, ajoutez simplement include_recipe « :: settings_mdatp » à votre fichier default.rb dans le dossier de la recette.
 Vous pouvez également utiliser crontab pour planifier des mises à jour automatiques Planifier une mise à jour de [Microsoft Defender pour Endpoint (Linux).](linux-update-MDE-Linux.md)
 
-Désinstallez le manuel MDATP :
+Désinstallez MDATP de recettes :
 
 ```powershell
 #Uninstall the Defender package
