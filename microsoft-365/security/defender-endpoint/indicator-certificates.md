@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8cf611e38bc781c2302f70f6491bb827410235b0
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164680"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845449"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 
@@ -31,24 +31,24 @@ ms.locfileid: "51164680"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 >Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Vous pouvez créer des indicateurs pour les certificats. Voici quelques cas d’utilisation courants :
 
-- Scénarios dans le cas où vous devez déployer [](controlled-folders.md) des technologies de blocage, telles que les règles de réduction de la [surface](attack-surface-reduction.md) d’attaque et l’accès contrôlé aux dossiers, mais que vous devez autoriser les comportements des applications signées en ajoutant le certificat dans la liste d’autorisations.
-- Blocage de l’utilisation d’une application signée spécifique au sein de votre organisation. En créant un indicateur pour bloquer le certificat de l’application, Windows Defender ANTIVIRUS empêche les exécutions de fichiers (blocage et correction) et les examens et corrections automatisés se comportent de la même manière.
+- Scénarios dans le cas où vous devez déployer [](controlled-folders.md) des technologies de blocage, telles que les règles de réduction de la [surface](attack-surface-reduction.md) d’attaque et l’accès contrôlé aux dossiers, mais qui doivent autoriser les comportements des applications signées en ajoutant le certificat dans la liste d’autorisations.
+- Blocage de l’utilisation d’une application signée spécifique au sein de votre organisation. En créant un indicateur pour bloquer le certificat de l’application, l’antivirus Windows Defender empêchera les exécutions de fichiers (blocage et correction) et les examens et corrections automatisés se comporteront de la même manière.
 
 
 ### <a name="before-you-begin"></a>Avant de commencer
 
 Il est important de comprendre les exigences suivantes avant de créer des indicateurs pour les certificats :
 
-- Cette fonctionnalité est disponible si votre organisation utilise Windows Defender antivirus et la protection basée sur le cloud est activée. Pour plus d’informations, [voir Gérer la protection basée sur le cloud.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
+- Cette fonctionnalité est disponible si votre organisation utilise Antivirus Windows Defender protection basée sur le cloud est activée. Pour plus d’informations, [voir Gérer la protection basée sur le cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
-- Pris en charge sur les ordinateurs sur Windows 10, version 1703 ou ultérieure, Windows Server 2016 et 2019.
+- Pris en charge sur les ordinateurs Windows 10, version 1703 ou ultérieure, Windows server 2016 et 2019.
 - Les définitions de protection contre les virus et menaces doivent être à jour.
 - Cette fonctionnalité prend actuellement en charge l’entrée. CER ou . Extensions de fichier PEM.
 
@@ -60,9 +60,9 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 #### <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>Créez un indicateur pour les certificats à partir de la page paramètres :
 
 >[!IMPORTANT]
-> La création et la suppression d’un IoC de certificat peut prendre jusqu’à 3 heures.
+> La création et la suppression d’un certificat IoC peuvent prendre jusqu’à 3 heures.
 
-1. Dans le volet de navigation, sélectionnez **Indicateurs**  >  **de paramètres.**  
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **indicateurs.**  
 
 2. Sélectionnez **l’onglet** Certificat.
 
@@ -78,5 +78,5 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 ## <a name="related-topics"></a>Voir aussi
 - [Créer des indicateurs](manage-indicators.md)
 - [Créer des indicateurs pour les fichiers](indicator-file.md)
-- [Créer des indicateurs pour les adresses IP et les URL/domaines](indicator-ip-domain.md)
-- [Gérer les indicateurs](indicator-manage.md)
+- [Créer des indicateurs pour les IP et URL/domaines](indicator-ip-domain.md)
+- [Gérer des indicateurs](indicator-manage.md)

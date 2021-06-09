@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: fb87f36c5289d622df2615046c5bb2fd8fad9543
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470892"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842241"
 ---
 # <a name="create-indicators"></a>Créer des indicateurs
 
@@ -30,7 +30,7 @@ ms.locfileid: "51470892"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > [!TIP]
@@ -40,7 +40,7 @@ L’indicateur de compromission (IoCs) est une fonctionnalité essentielle dans 
 
 Créez des indicateurs qui définissent la détection, la prévention et l’exclusion des entités. Vous pouvez définir l’action à prendre, ainsi que la durée de l’application de l’action, ainsi que l’étendue du groupe d’appareils à appliquer.
 
-Les sources actuellement pris en charge sont le moteur de détection cloud de Defender pour Endpoint, le moteur d’examen et de correction automatisé et le moteur de prévention des points de terminaison (Antivirus Microsoft Defender).
+Les sources actuellement pris en charge sont le moteur de détection cloud de Defender pour Endpoint, le moteur automatisé d’investigation et de correction et le moteur de prévention des points de terminaison (Antivirus Microsoft Defender).
 
 **Moteur de détection cloud**<br>
 Le moteur de détection cloud de Defender for Endpoint analyse régulièrement les données collectées et tente de correspondre aux indicateurs que vous avez définies. En cas de correspondance, une action est prise en fonction des paramètres que vous avez spécifiés pour l’IoC.
@@ -68,7 +68,7 @@ Vous pouvez créer un indicateur pour :
 
 
 > [!NOTE]
-> Il existe une limite de 15 000 indicateurs par client. Les indicateurs de fichier et de certificat ne bloquent pas [les exclusions définies pour l’Antivirus Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Les indicateurs ne sont pas pris en charge dans l’Antivirus Microsoft Defender lorsqu’il est en mode passif. 
+> Il existe une limite de 15 000 indicateurs par client. Les indicateurs de fichier et de certificat ne bloquent pas les [exclusions définies pour Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Les indicateurs ne sont pas pris en charge Antivirus Microsoft Defender lorsqu’il est en mode passif. 
 
 
 ## <a name="related-topics"></a>Voir aussi

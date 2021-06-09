@@ -1,7 +1,7 @@
 ---
 title: Description du service Bureau géré Microsoft
 description: Décrit ce qui est inclus dans Bureau géré Microsoft en tant que service
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,23 +12,23 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: a107c6364e6766094724972e931606003e0c87f7
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 3346f6b4d05eb514bf680f87eb8452d9fd4bab38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445195"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841989"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Description du service Bureau géré Microsoft
 
-Bureau géré Microsoft est un service qui offre à vos utilisateurs une expérience moderne sécurisée et maintient toujours les appareils à jour avec les versions les plus récentes de l’édition Windows 10, Microsoft 365 Apps for enterprise et les services de sécurité Microsoft, notamment :
+Bureau géré Microsoft est un service qui offre à vos utilisateurs une expérience moderne sécurisée et maintient toujours les appareils à jour avec les versions les plus récentes de l’édition Windows 10, Microsoft 365 Apps for enterprise et les services de sécurité Microsoft, notamment :
 
 - Inscription simplifiée des nouveaux appareils
 - Configuration des appareils
 - Des fonctionnalités permettant de sécuriser les utilisateurs et les appareils, notamment Windows Hello, BitLocker, SecureBoot, et une sécurité basée sur la virtualisation selon les meilleures pratiques de Microsoft
 - Services de surveillance et de remise en état de la sécurité des appareils
-- Compatibilité des applications avec [Soutien aux applications](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure)
-- Gestion des mises à jour pour les applications Windows 10 et Microsoft 365 Apps for enterprise
+- Compatibilité des applications avec [Soutien aux applications](/fasttrack/products-and-capabilities#app-assure)
+- Gestion des mises à jour pour les applications Windows 10 et Microsoft 365 Apps for enterprise
 - Données analytiques sur l'utilisation des appareils et des applications
 - Assistance IT pour vos utilisateurs
 - Support opérationnel pour les professionnels de l’informatique

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: b95fa2da177a3ecb93bcf3e2085be6111c2c641e
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 60f80e78a5f5c7da44a218c30f4b0173d4ecc829
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770516"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845130"
 ---
 # <a name="list-all-remediation-activities"></a>Répertorier toutes les activités de correction
 
@@ -50,12 +50,12 @@ Retourne des informations sur toutes les activités de correction.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
 Application | RemediationTask.Read.All | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
-Déléguée (compte professionnel ou scolaire) | RemediationTask.Read.Read | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
+Déléguée (compte professionnel ou scolaire) | RemediationTask.Read | \'Lire les informations sur les vulnérabilités de gestion des menaces et des vulnérabilités\'
 
 ## <a name="properties"></a>Propriétés
 
@@ -74,7 +74,7 @@ nameId | String | Nom du produit associé | Microsoft Silverlight
 priorité | String | Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible) | Élevé
 productId | String | ID de produit associé | microsoft-_-silverlight
 productivityImpactRemediationType | String | Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ». | AllExposedAssets
-rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Servers », « Windows 10 » ]
+rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Serveurs », « Windows 10 » ]
 recommendedProgram | String | Programme recommandé pour la mise à niveau vers | null
 recommendedVendor | String | Fournisseur recommandé pour la mise à niveau vers | null
 recommendedVersion | String | Version recommandée pour la mise à jour/mise à niveau vers | null
@@ -85,7 +85,7 @@ requesterNotes | String | Notes (texte libre) ajoutées par le créateur pour ce
 scid | String | SCID de la recommandation de sécurité associée | null
 status | String | État de l’activité de correction (actif/terminé) | Actif
 statusLastModifiedOn | Date/heure | Date de mise à jour du champ d’état | 2021-01-12T18:54:11.5499487Z
-targetDevices | Entier long | Nombre d’appareils exposés pour qui cette correction s’applique | 43
+targetDevices | Entier long | Nombre d’appareils exposés à appliquer à cette correction | 43
 title | String | Titre de cette activité de correction | Mettre à jour Microsoft Silverlight
 type | String | Type de correction | Update
 vendorId | String | Nom du fournisseur associé | Microsoft
@@ -151,4 +151,4 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

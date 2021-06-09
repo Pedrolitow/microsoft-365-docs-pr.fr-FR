@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d102635a284ec5c802e352f097d1632e2f20e166
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b41c5ec827e110e0101c50ce7babeb6442096edb
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929060"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842889"
 ---
 # <a name="deploying-microsoft-defender-for-endpoint-on-macos-with-jamf-pro"></a>Déploiement de Microsoft Defender pour endpoint sur macOS avec Jamf Pro
 
@@ -32,21 +32,21 @@ ms.locfileid: "51929060"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Découvrez comment déployer Microsoft Defender pour Endpoint sur macOS avec Jamf Pro.
 
 > [!NOTE]
-> Si vous utilisez macOS Souhaitez (10.15.4) ou des versions plus récentes de macOS, voir Nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/mac-sysext-policies)
+> Si vous utilisez macOS Souhaitez (10.15.4) ou des versions plus récentes de macOS, voir Nouveaux profils de configuration pour macOS Et les versions plus récentes de [macOS.](/microsoft-365/security/defender-endpoint/mac-sysext-policies)
 
-Il s'agit d'un processus en plusieurs étapes. Vous devez effectuer toutes les étapes suivantes :
+Il s’agit d’un processus en plusieurs étapes. Vous devez effectuer toutes les étapes suivantes :
 
 - [Connexion au portail Jamf](mac-install-jamfpro-login.md)
-- [Configurer Microsoft Defender pour le point de terminaison sur les groupes d'appareils macOS dans Jamf Pro](mac-jamfpro-device-groups.md)
+- [Configurer Microsoft Defender pour le point de terminaison sur les groupes d’appareils macOS dans Jamf Pro](mac-jamfpro-device-groups.md)
 - [Configuration de Microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro](mac-jamfpro-policies.md)
-- [Inscrire Microsoft Defender pour le point de terminaison sur les appareils macOS dans Jamf Pro](mac-jamfpro-enroll-devices.md)
+- [Inscrire Microsoft Defender for Endpoint sur les appareils macOS dans Jamf Pro](mac-jamfpro-enroll-devices.md)
 
 
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f5db08e4eb98dd3fe6f7e8a84fb0c49e889fb73f
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 435a77432caa9d7335a22993f85cae69eff6cd38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809250"
+ms.locfileid: "52841761"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Gérer le processus de déploiement progressif pour les mises à jour De Microsoft Defender
 
@@ -65,11 +65,11 @@ Nos ingénieurs surveillent en permanence l’impact et réamorcer les problème
 Si vos ordinateurs reçoivent les mises à jour Defender de Windows Update, le processus de déploiement progressif peut entraîner la réception de mises à jour De Defender par certains de vos ordinateurs plus tôt que d’autres. La section suivante explique comment définir une stratégie qui permettra aux mises à jour automatiques de circuler différemment vers des groupes spécifiques d’appareils en tirant parti de la configuration du canal de mise à jour.
 
 > [!NOTE]
-> Lors de la planification de votre propre version progressive, assurez-vous de toujours avoir une sélection d’appareils abonnés aux canaux de prévisualisation et de version progressive. Cela permettra à votre organisation ainsi qu’à Microsoft de prévenir ou de rechercher et de résoudre des problèmes spécifiques à votre environnement.
+> Lors de la planification de votre propre version progressive, assurez-vous de toujours avoir une sélection d’appareils abonnés aux canaux de prévisualisation et de version progressive. Cela permettra à votre organisation ainsi qu’à Microsoft d’empêcher ou de rechercher et de résoudre des problèmes spécifiques à votre environnement.
 
 Pour les ordinateurs recevant des mises à jour via, par exemple, Windows Server Update Services (WSUS) ou Microsoft Endpoint Configuration Manager (MECM), d’autres options sont disponibles pour toutes les mises à jour Windows, y compris les options de Microsoft Defender pour endpoint.
 
-- En savoir plus sur l’utilisation d’une solution telle que WSUS, MECM pour gérer la distribution et l’application des mises à jour à l’aide de La gestion des mises à jour Antivirus Microsoft Defender et appliquer les lignes de base : Windows [sécurité | Microsoft Docs](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- En savoir plus sur l’utilisation d’une solution telle que WSUS, MECM pour gérer la distribution et l’application des mises à jour dans Gérer les mises à jour Antivirus Microsoft Defender et appliquer les lignes de base : Windows [sécurité | Microsoft Docs](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Mettre à jour les canaux pour les mises à jour mensuelles
 
@@ -89,7 +89,7 @@ Les canaux de mise à jour suivants sont disponibles :
 
 ### <a name="update-channels-for-daily-definition-updates"></a>Mettre à jour les canaux pour les mises à jour quotidiennes des définitions
 
-Vous pouvez affecter un ordinateur à un canal de mise à jour pour définir la cadence à laquelle un ordinateur reçoit les mises à jour quotidiennes des définitions.
+Vous pouvez affecter un ordinateur à un canal de mise à jour pour définir la cadence à laquelle un ordinateur reçoit des mises à jour de définition quotidiennes.
   
 | Nom du canal  | Description  | Application  |
 |-|-|-|
@@ -107,11 +107,11 @@ Dans la plupart des cas, la configuration recommandée lors de l’utilisation d
 Pour les environnements où il est nécessaire d’un déploiement progressif plus contrôlé des mises à jour automatiques de Defender, envisagez une approche avec les groupes de déploiement :
 
 1. Participer au programme Windows Insider ou affecter un groupe d’appareils au canal bêta.
-2. Désignez un groupe pilote qui choisit le canal de prévisualisation, généralement des environnements de validation, pour recevoir les nouvelles mises à jour au plus tôt.
+2. Désignez un groupe pilote qui choisit le canal d’aperçu, généralement des environnements de validation, pour recevoir de nouvelles mises à jour en avant-première.
 3. Désignez un groupe d’ordinateurs qui reçoivent les mises à jour ultérieurement lors du déploiement progressif à partir du canal de mise en place. En règle générale, il s’agit d’un pourcentage représentatif d’environ 10 % de la population.
 4. Désignez un groupe d’ordinateurs qui reçoivent des mises à jour une fois le cycle de publication progressive terminé. Il s’agit généralement de systèmes de production importants.
 
-Pour le reste des appareils, le paramètre par défaut consiste à recevoir les nouvelles mises à jour à mesure qu’elles arrivent pendant le processus de déploiement progressif de Microsoft et aucune configuration supplémentaire n’est requise. 
+Pour le reste des appareils, le paramètre par défaut consiste à recevoir de nouvelles mises à jour à mesure qu’elles arrivent pendant le processus de déploiement progressif de Microsoft et aucune configuration supplémentaire n’est requise. 
 
 Adoption de ce modèle :
 - Vous permet de tester les premières sorties avant qu’elles n’atteignent un environnement de production 

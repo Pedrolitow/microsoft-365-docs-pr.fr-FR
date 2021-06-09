@@ -1,7 +1,7 @@
 ---
 title: Créer et gérer des groupes d’appareils dans Microsoft Defender pour le point de terminaison
 description: Créer des groupes d’appareils et définir des niveaux de correction automatisés sur ces derniers en confirmant les règles qui s’appliquent au groupe
-keywords: groupes d’appareils, groupes, correction, niveau, règles, groupe aad, rôle, attribuer, rang
+keywords: groupes d’appareils, groupes, correction, niveau, règles, groupe aad, rôle, attribuer, classement
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d4f62acde4e7d790c7a7c8635f51c99f0823687d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259414"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842769"
 ---
 # <a name="create-and-manage-device-groups"></a>Créer et gérer des groupes d’appareils
 
@@ -41,7 +41,7 @@ Dans Microsoft Defender for Endpoint, vous pouvez créer des groupes d’apparei
 - Limiter l’accès aux alertes et données associées à des groupes d’utilisateurs Azure AD spécifiques avec [des rôles RBAC attribués](rbac.md) 
 - Configurer différents paramètres de correction automatique pour différents ensembles d’appareils
 - Affecter des niveaux de correction spécifiques à appliquer lors d’examens automatisés
-- Dans un examen, filtrez la liste **Appareils** sur des groupes d’appareils spécifiques à l’aide du **filtre** de groupe.
+- Dans un examen, filtrez la liste **Appareils** sur des groupes d’appareils spécifiques à l’aide du **filtre** Groupe.
 
 Vous pouvez créer des groupes d’appareils dans le contexte de l’accès basé sur les rôles (RBAC) pour contrôler qui peut prendre des mesures spécifiques ou voir les informations en attribuant le ou les groupes d’appareils à un groupe d’utilisateurs. Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
 
@@ -50,7 +50,7 @@ Vous pouvez créer des groupes d’appareils dans le contexte de l’accès bas�
 
 Dans le cadre du processus de création d’un groupe d’appareils, vous devez :
 - Définissez le niveau de correction automatisé pour ce groupe. Pour plus d’informations sur les niveaux de correction, voir [Utiliser l’examen automatisé pour examiner et corriger les menaces.](automated-investigations.md)
-- Spécifiez la règle correspondante qui détermine quel groupe d’appareils appartient au groupe en fonction du nom de l’appareil, du domaine, des balises et de la plateforme du système d’exploitation. Si un appareil est également en correspondance avec d’autres groupes, il est ajouté uniquement au groupe d’appareils le mieux classé.
+- Spécifiez la règle correspondante qui détermine quel groupe d’appareils appartient au groupe en fonction du nom de l’appareil, du domaine, des balises et de la plateforme du système d’exploitation. Si un appareil est également en correspondance avec d’autres groupes, il est ajouté uniquement au groupe d’appareils le plus élevé.
 - Sélectionnez le groupe d’utilisateurs Azure AD qui doit avoir accès au groupe d’appareils.
 - Classer le groupe d’appareils par rapport aux autres groupes après sa création.
 
@@ -59,7 +59,7 @@ Dans le cadre du processus de création d’un groupe d’appareils, vous devez 
 
 ## <a name="create-a-device-group"></a>Créer un groupe d’appareils
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres  >  **groupes d’appareils.**
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **groupes d’appareils.**
 
 2. Cliquez **sur Ajouter un groupe d’appareils.**
 
@@ -105,10 +105,10 @@ Les définitions de groupe d’appareils peuvent également inclure plusieurs va
 > Utilisez l’opérateur « OR » entre les lignes du même type de condition, qui autorise plusieurs valeurs par propriété.
 > Vous pouvez ajouter jusqu’à 10 lignes (valeurs) pour chaque type de propriété : balise, nom de l’appareil, domaine.
 
-Pour plus d’informations sur la liaison aux définitions de groupes d’appareils, voir [Groupes d’appareils - Microsoft 365 sécurité.](https://sip.security.microsoft.com/homepage)
+Pour plus d’informations sur la liaison aux définitions de groupes d’appareils, voir Groupes d’appareils [- Microsoft 365 sécurité.](https://sip.security.microsoft.com/homepage)
 
 ## <a name="related-topics"></a>Voir aussi
 
 - [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle](rbac.md)
 - [Créer et gérer des balises d’appareils](machine-tags.md)
-- [Obtenir la liste des groupes d’appareils client à l’aide Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [Obtenir la liste des groupes d’appareils client à l’aide Graph API](/graph/api/device-list-memberof)

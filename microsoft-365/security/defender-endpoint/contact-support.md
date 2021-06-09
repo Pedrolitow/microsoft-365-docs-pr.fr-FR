@@ -1,6 +1,6 @@
 ---
 title: Contacter le support Microsoft Defender pour point de terminaison
-description: Découvrez comment contacter le support microsoft Defender pour le point de terminaison
+description: Découvrez comment contacter microsoft Defender pour la prise en charge des points de terminaison
 keywords: support, contact, support premier, solutions, problèmes, cas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: eaf26c566b54b21e63af5ecbfe3603f2b1389208
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 2231a4fc1f8bb58a83c639c8e60ad790af0df236
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892840"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845629"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -30,38 +30,38 @@ ms.locfileid: "51892840"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l'expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender pour le point de terminaison a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
 
 Le nouveau widget permet aux clients de :
 - Trouver des solutions aux problèmes courants
-- Soumettre un dossier de support à l'équipe de support Technique Microsoft
+- Soumettre un dossier de support à l’équipe de support Microsoft
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 Il est important de connaître les rôles spécifiques qui sont autorisés à ouvrir des cas de support.
 
-Au minimum, vous devez avoir un rôle d'administrateur du support technique **OU** d'administrateur du support technique.
+Au minimum, vous devez avoir un rôle d’administrateur du support technique **OU** d’administrateur du support technique.
 
 
-Pour plus d'informations sur les rôles qui ont des autorisations, voir les [autorisations d'administrateur de sécurité.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Les rôles qui incluent l'action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
+Pour plus d’informations sur les rôles qui ont des autorisations, voir les [autorisations d’administrateur de sécurité.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
 
-Pour obtenir des informations générales sur les rôles d'administrateur, voir [à propos des rôles d'administrateur.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
+Pour obtenir des informations générales sur les rôles d’administrateur, voir [à propos des rôles d’administrateur.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
 
 
 ## <a name="access-the-widget"></a>Accéder au widget
-L'accès au nouveau widget de support peut être effectué de deux manières :
+L’accès au nouveau widget de support peut être effectué de deux manières :
 
-1.  Cliquez sur le point d'interrogation en haut à droite du portail, puis sur « Support Microsoft » :
+1.  Cliquez sur le point d’interrogation en haut à droite du portail, puis sur « Support Microsoft » :
 
-    ![Image du widget lorsque le point d'interrogation est sélectionné](images/support-widget.png)
+    ![Image du widget lorsque le point d’interrogation est sélectionné](images/support-widget.png)
 
-2. Vous avez besoin **d'aide en cliquant sur ?**  dans le coin inférieur droit du Centre de sécurité Microsoft Defender :
+2. Vous avez besoin **d’aide en cliquant sur ?**  dans le coin inférieur droit de la Centre de sécurité Microsoft Defender :
 
 
-    ![Image du bouton d'aide nécessaire](images/need-help.png)
+    ![Image du bouton d’aide nécessaire](images/need-help.png)
 
 Deux options s’offrent à vous dans le widget :
 
@@ -77,7 +77,7 @@ Si les articles suggérés ne sont pas suffisants, vous pouvez ouvrir une demand
 
 ## <a name="open-a-service-request"></a>Ouvrir une demande de service
 
-Découvrez comment ouvrir des tickets de support en contactant le support de Defender pour Endpoint. 
+Découvrez comment ouvrir des tickets de support en contactant Defender pour le support technique Endpoint. 
 
 > [!Note]
 > Si vous avez un contrat de support permier avec Microsoft, vous verrez la balise premier sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.

@@ -1,7 +1,7 @@
 ---
 title: Planifier des analyses avec Microsoft Defender pour Endpoint (Linux)
-description: Découvrez comment planifier un temps d'analyse automatique pour Microsoft Defender pour Endpoint (Linux) afin de mieux protéger les ressources de votre organisation.
-keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
+description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender pour Endpoint (Linux) afin de mieux protéger les ressources de votre organisation.
+keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f868570fccf9b30cde5f16aa8e71292fb8b09497
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 5a4beaefb2fcc12d46cf61c22644217dce1807a6
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933132"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845365"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>Planifier des analyses avec Microsoft Defender pour Endpoint (Linux)
 
-Pour exécuter une analyse pour Linux, voir [Commandes pris en charge.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)
+Pour exécuter une analyse pour Linux, voir [Commandes pris en charge.](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands)
 
 Linux (et Unix) ont un outil appelé **crontab** (semblable au Programmeur des tâches) pour pouvoir exécuter des tâches programmées.
 
@@ -52,11 +52,11 @@ Utilisez les commandes suivantes :
 > [!TIP]
 > Faites-le avant de modifier ou de supprimer. <br>
 
-Pour modifier le crontab et ajouter un nouveau travail en tant qu'utilisateur racine : <br>
+Pour modifier le crontab et ajouter un nouveau travail en tant qu’utilisateur racine : <br>
 `sudo crontab -e`
 
 > [!NOTE]
-> L'éditeur par défaut est VIM.
+> L’éditeur par défaut est VIM.
 
 Vous pouvez voir :
 
@@ -71,7 +71,7 @@ CRON_TZ=Amérique/Los_Angeles
 0 2 * * sat /bin/mdatp scan quick > ~/mdatp_cron_job.log
 
 > [!NOTE]
->Dans cet exemple, nous l'avons définie sur 00 minutes, 2 heures du matin. (heure au format 24 heures), tous les jours du mois, tous les mois, le samedi. Ce qui signifie qu'il sera exécuté le samedi à 2 h 00. Pacifique (UTC –8).
+>Dans cet exemple, nous l’avons définie sur 00 minutes, 2 heures du matin. (heure au format 24 heures), tous les jours du mois, tous les mois, le samedi. Cela signifie qu’il sera exécuté le samedi à 2 h 00. Pacifique (UTC –8).
 
 Appuyez sur « Échap »
 
@@ -106,26 +106,26 @@ Pour plus d’informations, voir [https://docs.ansible.com/ansible/latest/module
 
 Pour plus d’informations, voir [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/).
 
-### <a name="to-set-cron-jobs-in-puppet"></a>Pour définir des travaux de cron dans l'ombre
+### <a name="to-set-cron-jobs-in-puppet"></a>Pour définir des travaux de cron dans l’ombre
 Type de ressource : cron
 
 Pour plus d’informations, voir [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html).
 
-Automatisation avec l'annexe : tâches Cron et tâches programmées
+Automatisation avec l’annexe : tâches Cron et tâches programmées
 
 Pour plus d’informations, voir [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).
 
 ## <a name="additional-information"></a>Informations supplémentaires
 
-**Pour obtenir de l'aide sur crontab**
+**Pour obtenir de l’aide sur crontab**
 
 `man crontab`
 
-**Pour obtenir la liste du fichier crontab de l'utilisateur actuel**
+**Pour obtenir la liste du fichier crontab de l’utilisateur actuel**
 
 `crontab -l`
 
-**Pour obtenir la liste du fichier crontab d'un autre utilisateur**
+**Pour obtenir la liste du fichier crontab d’un autre utilisateur**
 
 `crontab -u username -l`
 
@@ -140,7 +140,7 @@ Pour plus d’informations, voir [https://puppet.com/blog/automating-puppet-cron
 
 `crontab /var/tmp/cron_backup.dat`
 
-**Pour modifier le crontab et ajouter un nouveau travail en tant qu'utilisateur racine**
+**Pour modifier le crontab et ajouter un nouveau travail en tant qu’utilisateur racine**
 
 `sudo crontab -e`
 
@@ -148,7 +148,7 @@ Pour plus d’informations, voir [https://puppet.com/blog/automating-puppet-cron
 
 `crontab -e`
 
-**Pour modifier les entrées de crontab d'autres utilisateurs**
+**Pour modifier les entrées de crontab d’autres utilisateurs**
 
 `crontab -u username -e`
 
@@ -156,7 +156,7 @@ Pour plus d’informations, voir [https://puppet.com/blog/automating-puppet-cron
 
 `crontab -r`
 
-**Pour supprimer les entrées de crontab d'autres utilisateurs**
+**Pour supprimer les entrées de crontab d’autres utilisateurs**
 
 `crontab -u username -r`
 

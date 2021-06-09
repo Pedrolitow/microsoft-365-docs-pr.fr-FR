@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d9218ad447f926f0086801036277323e7c1efb4c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: bbb3e5dfe94d5efb026e21a4cbd94fac45f36594
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770558"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845221"
 ---
 # <a name="get-missing-kbs-by-software-id"></a>Obtenir les ko manquants par ID logiciel
 
@@ -52,7 +52,7 @@ Déléguée (compte professionnel ou scolaire) | Software.Read |   « Lire les i
 GET /api/Software/{Id}/getmissingkbs
 ```
 
-## <a name="request-header"></a>En-tête de requête
+## <a name="request-header"></a>En-tête de demande
 
 Nom | Type | Description
 :---|:---|:---
@@ -102,5 +102,5 @@ Voici un exemple de réponse.
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Inventaire des logiciels de vulnérabilité & menace](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Inventaire des logiciels de vulnérabilité & menace](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

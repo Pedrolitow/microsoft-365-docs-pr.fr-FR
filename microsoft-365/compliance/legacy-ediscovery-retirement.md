@@ -12,26 +12,26 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: In-Place eDiscovery et In-Place Hold (et les cmdlets PowerShell correspondantes) dans Exchange Online seront retirés au premier semestre 2020. Les Search-Mailbox cmdlet et Advanced eDiscovery v1.0 sont également retirés au cours de la même période.
-ms.openlocfilehash: 48a20b9e73c5379325afb715a86c4945385fd0b9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: In-Place eDiscovery et In-Place Hold (et les cmdlets PowerShell correspondantes) dans Exchange Online seront retirés au cours du premier semestre 2020. Les Search-Mailbox cmdlet et Advanced eDiscovery v1.0 sont également retirés au cours de la même période.
+ms.openlocfilehash: c5f1ddb4c817ebc316c2e2efdba9a4bc605eb5a2
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903604"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842661"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>Retrait des outils eDiscovery hérités
 
 > [!IMPORTANT]
-> Microsoft a évalué la situation de santé publique et nous comprenons l’impact de cette situation sur nos clients. Nous voulons être des partenaires forts et des citoyens internationaux responsables. Pour faciliter l’une des nombreuses charges que vous devez relever, nous allons retarder de trois mois le retrait prévu pour les outils eDiscovery hérités décrits dans cet article. **Les dates de retrait mises à jour sont reflétées ci-dessous.**
+> Microsoft a évalué la situation de santé publique et nous comprenons l’impact de cette situation sur nos clients. Nous voulons être des partenaires forts et des citoyens globaux responsables. Pour faciliter l’une des nombreuses charges que vous devez relever, nous allons retarder de trois mois le retrait prévu pour les outils eDiscovery hérités décrits dans cet article. **Les dates de retrait mises à jour sont reflétées ci-dessous.**
 
-Au fil des ans, Microsoft a fourni des outils eDiscovery qui vous permettent de rechercher, d’afficher un aperçu et d’exporter du contenu de courrier électronique à partir d’Exchange Online. Toutefois, ces outils ne sont plus un moyen efficace de rechercher du contenu non Exchange dans d’autres services Microsoft 365, tels que SharePoint Online et Groupes Microsoft 365. Pour résoudre ce problème, Microsoft propose d’autres outils eDiscovery qui vous aident à rechercher un large éventail de contenu Microsoft 365. Nous avons travaillé dur pour incorporer la fonctionnalité eDiscovery la plus actuelle et la plus puissante dans le Centre de conformité [Microsoft 365.](https://compliance.microsoft.com) Cela permet aux organisations de répondre à des demandes de documents juridiques, internes et autres pour du contenu dans de nombreux services Microsoft 365, y compris Exchange Online.
+Au fil des ans, Microsoft a fourni des outils eDiscovery qui vous permettent de rechercher, d’afficher un aperçu et d’exporter du contenu de courrier à partir de Exchange Online. Toutefois, ces outils ne sont plus un moyen efficace de rechercher du contenu non Exchange dans d’autres services Microsoft 365, tels que SharePoint Online et Microsoft 365 Groups. Pour résoudre ce problème, Microsoft propose d’autres outils eDiscovery qui vous aident à rechercher un large éventail de Microsoft 365 contenu. Nous avons travaillé dur pour incorporer la fonctionnalité eDiscovery la plus actuelle et la plus puissante dans le centre [de conformité Microsoft 365.](https://compliance.microsoft.com) Cela permet aux organisations de répondre à des demandes de documents juridiques, internes et autres pour du contenu dans de nombreux services Microsoft 365, y compris Exchange Online.
 
 Suite à cette fonctionnalité eDiscovery nouvelle et améliorée dans le Centre de conformité Microsoft 365, nous allons retirer les fonctionnalités et fonctionnalités eDiscovery suivantes liées à la recherche de contenu de messagerie dans Exchange Online et Microsoft 365 :
 
-- [Découverte électronique in-place](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) et [in-Place Holds](/exchange/security-and-compliance/create-or-remove-in-place-holds) dans le Centre d’administration Exchange.
+- [eDiscovery inaltérable](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) et [in-place dans](/exchange/security-and-compliance/create-or-remove-in-place-holds) le centre d Exchange’administration.
 
-- Cmdlets Exchange Online PowerShell qui prend en charge In-Place eDiscovery et In-Place Holds (ces cmdlets sont identifiées collectivement en tant que cmdlets **-MailboxSearch).* Cela inclut les cmdlets suivantes :
+- Les cmdlets Exchange Online PowerShell qui prend en charge In-Place eDiscovery et les In-Place Holds (ces cmdlets sont identifiées collectivement en tant que cmdlets **-MailboxSearch).* Cela inclut les cmdlets suivantes :
 
   - [New-MailboxSearch](/powershell/module/exchange/new-mailboxsearch)
 
@@ -42,11 +42,11 @@ Suite à cette fonctionnalité eDiscovery nouvelle et améliorée dans le Centre
   - [Set-MailboxSearch](/powershell/module/exchange/set-mailboxsearch)
 
    > [!NOTE]
-   > Les cmdlets [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch) et [Remove-MailboxSearch](/powershell/module/exchange/remove-mailboxsearch) seront disponibles une fois les autres cmdlets ****-MailboxSearch*** retirées afin que vous pouvez les utiliser pour faciliter votre transition vers d’autres outils eDiscovery et hold. Toutefois, après une date précise (mentionnée ci-dessous), le Support Microsoft ne prend plus en charge ces deux cmdlets.
+   > Les cmdlets [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch) et [Remove-MailboxSearch](/powershell/module/exchange/remove-mailboxsearch) seront disponibles une fois les autres cmdlets ****-MailboxSearch*** supprimées afin que vous pouvez les utiliser pour faciliter votre transition vers d’autres outils eDiscovery et hold. Toutefois, après une date précise (mentionnée ci-dessous), le Support Microsoft ne prend plus en charge ces deux cmdlets.
 
 - Cmdlet [Search-Mailbox](/powershell/module/exchange/search-mailbox) dans Exchange Online PowerShell.
 
-- Opérations suivantes dans l’API des services web Exchange :
+- Les opérations suivantes dans l’API Exchange Services Web :
 
    - [GetSearchableMailboxes](/exchange/client-developer/web-service-reference/getsearchablemailboxes-operation)
 
@@ -56,28 +56,28 @@ Suite à cette fonctionnalité eDiscovery nouvelle et améliorée dans le Centre
 
    - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
-- [Office 365 Advanced eDiscovery v1.0,](./overview-ediscovery-20.md)qui est la première version d’Advanced eDiscovery accessible via un cas eDiscovery principal dans le Centre de sécurité & et conformité Office 365. Le retrait d’Advanced eDiscovery v1.0 n’a pas d’impact sur votre capacité à créer et gérer des cas eDiscovery principaux.
+- [Office 365 Advanced eDiscovery version 1.0,](./overview-ediscovery-20.md)qui est la première version de Advanced eDiscovery accessible via un cas core eDiscovery dans le Centre de sécurité & conformité Office 365. Le retrait de Advanced eDiscovery v1.0 n’a pas d’impact sur votre capacité à créer et gérer des cas eDiscovery principaux.
 
 > [!NOTE]
-> La fonctionnalité eDiscovery retirée s’applique uniquement aux versions cloud de Microsoft 365 et Office 365. La fonctionnalité eDiscovery dans les versions sur site d’Exchange et de SharePoint sera toujours prise en charge jusqu’à nouvel ordre.
+> La fonctionnalité eDiscovery retirée s’applique uniquement aux versions cloud de Microsoft 365 et Office 365. La fonctionnalité eDiscovery dans les versions sur site de Exchange et SharePoint sera toujours prise en charge jusqu’à nouvel ordre.
 
 Les sections suivantes de cet article fournissent des conseils sur chaque fonctionnalité retirée. Ces informations, y compris les chronologies et les outils de remplacement que vous pouvez utiliser à la place de l’outil retiré.
 
-## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery et les In-Place dans le Centre d’administration Exchange 
+## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery et les In-Place dans le Centre d’administration Exchange’administration 
 
-Comme indiqué dans l’annonce initiale du 1er juillet 2017, la fonctionnalité de In-Place eDiscovery & Hold dans le Centre d’administration Exchange (EAC) est retirée. La page In-Place'eDiscovery & du CEA vous a permis de rechercher, de conserver et d’exporter du contenu à partir d’Exchange Online. In-Place eDiscovery vous permet également de copier les résultats de la recherche dans une boîte aux lettres de découverte afin que vous ou d’autres responsables eDiscovery pouvez examiner le contenu et le rendre disponible pour les demandes légales, réglementaires et publiques.
+Comme indiqué dans l’annonce initiale du 1er juillet 2017, la fonctionnalité de In-Place eDiscovery & Hold dans le Centre d’administration Exchange (EAC) est retirée. La page In-Place'eDiscovery & de l’EAC vous a permis de rechercher, de conserver et d’exporter du contenu à partir Exchange Online. In-Place eDiscovery vous permet également de copier les résultats de la recherche dans une boîte aux lettres de découverte afin que vous ou d’autres gestionnaires eDiscovery pouvez examiner le contenu et le rendre disponible pour les demandes légales, réglementaires et publiques.
 
-Étant donné que toutes ces fonctionnalités (à l’exception de la copie des résultats de recherche dans une boîte aux lettres de découverte) sont désormais disponibles dans la recherche de contenu, eDiscovery et les outils Advanced eDiscovery dans le Centre de conformité [Microsoft 365](./microsoft-365-compliance-center.md) (avec des fonctionnalités, une fiabilité et une prise en charge améliorées pour un large éventail de services Microsoft 365), nous vous recommandons de commencer à utiliser ces outils dès que possible. Pour vous aider dans la transition vers ces autres outils eDiscovery, le tableau ci-dessous répertorie les outils que vous pouvez utiliser au lieu de In-Place eDiscovery et In-Place Hold.
+Étant donné que toutes ces fonctionnalités (à l’exception de la copie des résultats de recherche dans une boîte aux lettres de découverte) sont désormais disponibles dans la recherche de contenu, les outils eDiscovery et Advanced eDiscovery dans le centre de conformité [Microsoft 365](./microsoft-365-compliance-center.md) (avec des fonctionnalités améliorées, la fiabilité et la prise en charge d’un large éventail de services Microsoft 365), nous vous recommandons de commencer à utiliser ces outils dès que possible. Pour vous aider dans la transition vers ces autres outils eDiscovery, le tableau ci-dessous répertorie les outils que vous pouvez utiliser au lieu de In-Place eDiscovery et In-Place Hold.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations concernées
 
-- Organisations Office 365 et Microsoft 365 Entreprise
+- Office 365 et Microsoft 365 Entreprise organisations
 
-- Organisations Office 365 et Microsoft 365 Éducation
+- Office 365 et Microsoft 365 Éducation organisations
 
-- Organisations Office 365 et Microsoft 365 pour le secteur public ; cela inclut GCC, GCC High et DoD
+- Office 365 et Microsoft 365 secteurs publics ; cela inclut Cloud de la communauté du secteur public, Cloud de la communauté du secteur public Élevé et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline-for-retirement"></a>Chronologie du retrait
 
@@ -100,7 +100,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <tbody>
 <tr class="odd">
 <td>Rechercher, exporter et conserver à des fins juridiques</td>
-<td>Principaux cas eDiscovery dans le Centre de conformité Microsoft 365 </td>
+<td>Principaux cas eDiscovery dans le centre Microsoft 365 conformité </td>
 <td><p>L’utilisation des fonctionnalités des cas eDiscovery principaux offre la parité fonctionnelle pour In-Place eDiscovery et les In-Place de données. Les voici :</p>
 <ul>
 <li>
@@ -110,25 +110,25 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <p>Plus de fiabilité pour la recherche, l’exportation et la mise en attente du contenu</p>
 </li>
 <li>
-<p>Recherche de contenu dans Exchange Online, SharePoint Online, OneDrive Entreprise, Skype Entreprise, Microsoft Teams, groupes Yammer, groupes Microsoft 365 et autres contenus stockés dans les applications Office 365</p></li></ul>
+<p>Recherche de contenu dans Exchange Online, SharePoint Online, OneDrive Entreprise, Skype Entreprise, Microsoft Teams, Yammer Groups, Microsoft 365 Groups et autres contenus stockés dans des applications Office 365</p></li></ul>
 </td>
 </tr>
 <tr class="even">
 <td>Conservation à des fins de rétention</td>
-<td>Stratégies de rétention dans le Centre de conformité Microsoft 365</td>
+<td>Stratégies de rétention dans le centre Microsoft 365 conformité de l’entreprise</td>
 <td><p>Vous pouvez utiliser des stratégies de rétention pour conserver le contenu et, si vous le souhaitez, le supprimer après l’expiration de la période de rétention. Les autres fonctionnalités sont les suivantes :</p>
 <ul>
 <li>
 <p>Application de stratégies à l’ensemble de votre organisation </p>
 </li><li>
-<p>Application de stratégies à des emplacements de contenu spécifiques tels qu’Exchange Online, SharePoint Online, OneDrive Entreprise, Skype Entreprise, Microsoft Teams et groupes Office 365</p></li>
+<p>Application de stratégies à des emplacements de contenu spécifiques tels que Exchange Online, SharePoint Online, OneDrive Entreprise, Skype Entreprise, Microsoft Teams et Office 365 Groupes</p></li>
 <li>
 <p>Application de stratégies à des utilisateurs spécifiques</p></li></ul>
 <p>Pour plus d’informations, voir <a href="/microsoft-365/compliance/retention-policies">En savoir plus sur les stratégies de rétention et les étiquettes de rétention.</a></td>
 </tr>
 <tr class="odd">
-<td>Copier les résultats de la recherche de courrier électronique dans une boîte aux lettres de découverte pour révision</td><td>Ensembles de révision dans Advanced eDiscovery v2.0</td>
-<td><p>L’examen du contenu dans Microsoft 365 n’a jamais été aussi facile. Les ensembles de révision ont de nombreuses fonctionnalités pour vous aider à réduire le temps et les données nécessaires à la révision, notamment :</p>
+<td>Copier les résultats de la recherche de courrier électronique dans une boîte aux lettres de découverte pour révision</td><td>Ensembles de révision Advanced eDiscovery v2.0</td>
+<td><p>L’examen du contenu Microsoft 365 n’a jamais été aussi simple. Les ensembles de révision ont de nombreuses fonctionnalités pour vous aider à réduire le temps et les données nécessaires à la révision, notamment :</p>
 <ul>
 <li><p>Effectuer des requêtes de recherche rapide et filtrer le contenu dans un jeu à réviser</p></li>
 <li><p>Analyser le contenu d’un jeu à réviser ; cela inclut le thread de messagerie, la détection de quasi-doublons, l’analyse des thèmes et le codage prédictif</p></li>
@@ -136,7 +136,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <li><p>Marquage de suggestions pour vous aider à identifier le contenu du privilège client avocat</p></li></ul>
 <p>Pour plus d’informations, voir <a href="/microsoft-365/compliance/overview-ediscovery-20">vue d’ensemble de la solution avancée d'eDiscovery dans Microsoft 365</a>.</p>
 <p>
-<p>Vous pouvez également exporter les résultats de la recherche vers des fichiers PST, puis utiliser le service d’importation Microsoft 365 pour importer les fichiers PST dans une boîte aux lettres de découverte. Pour obtenir des instructions détaillées, voir Utiliser le chargement réseau pour importer des fichiers <a href="/microsoft-365/compliance/use-network-upload-to-import-pst-files">PST dans Office 365.</a>
+<p>Vous pouvez également exporter les résultats de la recherche vers des fichiers PST, puis utiliser Microsoft 365 service d’importation pour importer les fichiers PST dans une boîte aux lettres de découverte. Pour obtenir des instructions détaillées, voir Utiliser le chargement réseau pour importer des <a href="/microsoft-365/compliance/use-network-upload-to-import-pst-files">fichiers PST dans Office 365</a>.
 </tr>
 <tr class=even>
   <td>Copier des messages d’une boîte aux lettres vers une autre boîte aux lettres</td>
@@ -146,8 +146,8 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
   </tr>
 <tr class="odd">
 <td>Restaurer des éléments à partir du dossier Éléments récupérables</td>
-  <td><a href="https://docs.microsoft.com/powershell/module/exchange/Restore-RecoverableItems">Restore-RecoverableItems</td>
-  <td>Vous pouvez restaurer des éléments supprimés <i></i> définitivement (également appelés éléments supprimés (supprimés de manière temporaire) dans les boîtes aux lettres, tant que la période de rétention des éléments supprimés d’un élément n’a pas expiré. Pour plus d’informations, <a href="/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">voir dossier Éléments récupérables dans Exchange Online.</a></td>
+  <td><a href="/powershell/module/exchange/Restore-RecoverableItems">Restore-RecoverableItems</td>
+  <td>Vous pouvez restaurer des éléments supprimés <i></i> définitivement (également appelés éléments supprimés (supprimés de manière temporaire) dans les boîtes aux lettres, tant que la période de rétention des éléments supprimés d’un élément n’a pas expiré. Pour plus d’informations, <a href="/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">voir dossier Éléments récupérables dans Exchange Online</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -156,15 +156,15 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 
 **J’utilise la fonctionnalité de copie des résultats de recherche de In-Place eDiscovery & holds in the EAC to copy search results to a discovery mailbox for review by attorneys. Quelles options ai-je maintenant ?**
 
-Il existe deux façons de répliquer cette fonctionnalité aujourd’hui. La première consiste à utiliser des ensembles de révision dans [Advanced eDiscovery v2.0](./view-documents-in-review-set.md). Les ensembles de révision ont de nombreuses fonctionnalités que vous pouvez voir dans un outil de révision classique, comme la recherche rapide de documents, le marquage, le thread de courrier électronique, le regroupement de quasi-doublons, l’analyse des thèmes et le codage prédictif. Si vous souhaitez toujours utiliser des boîtes aux lettres de découverte pour révision, la deuxième option consiste à exporter les résultats de la recherche dans des fichiers PST, puis à importer les fichiers PST dans une boîte aux lettres de découverte à l’aide de la fonctionnalité d’importation [PST](use-network-upload-to-import-pst-files.md) dans le Centre de conformité Microsoft.
+Il existe deux façons de répliquer cette fonctionnalité aujourd’hui. La première consiste à utiliser des [ensembles de révision dans Advanced eDiscovery v2.0](./view-documents-in-review-set.md). Les ensembles de révision ont de nombreuses fonctionnalités que vous pouvez voir dans un outil de révision classique, comme la recherche rapide de documents, le marquage, le thread de courrier électronique, le regroupement de quasi-doublons, l’analyse des thèmes et le codage prédictif. Si vous souhaitez toujours utiliser des boîtes aux lettres de découverte pour révision, la deuxième option consiste à exporter les résultats de la recherche dans des fichiers PST, puis à importer les fichiers PST dans une boîte aux lettres de découverte à l’aide de la fonctionnalité d’importation [PST](use-network-upload-to-import-pst-files.md) dans le Centre de conformité Microsoft.
 
 **Comment contrôler les emplacements de contenu (tels que les boîtes aux lettres ou les sites) qu’un gestionnaire eDiscovery peut rechercher à l’aide des nouveaux outils ?**
 
-Le Centre de conformité Microsoft [](set-up-compliance-boundaries.md) 365 utilise également des limites de conformité pour contrôler les emplacements de contenu qu’un gestionnaire eDiscovery peut rechercher. Les limites de conformité sont utiles dans les entités gouvernementales qui doivent rester dans les limites des agences ou des entreprises multinationales requises pour respecter les réglementations géographiques.
+Le centre Microsoft 365 conformité utilise [](set-up-compliance-boundaries.md) également des limites de conformité pour contrôler les emplacements de contenu qu’un gestionnaire eDiscovery peut rechercher. Les limites de conformité sont utiles dans les entités gouvernementales qui doivent rester dans les limites des organismes ou des entreprises multinationales requises pour respecter les réglementations géographiques.
 
-**Comment puis-je déplacer mes recherches et mes recherches en cours vers le Centre de conformité Microsoft 365 ?**
+**Comment puis-je déplacer mes recherches et mes recherches en cours vers le centre de conformité Microsoft 365'application ?**
 
-Il est possible de migrer des recherches In-Place eDiscovery à partir du CAE à l’aide de PowerShell. Pour plus d’instructions, voir Migrer les recherches et les recherches en cours à partir du CENTRE D’EAC vers le Centre de conformité [Microsoft 365.](./migrate-legacy-ediscovery-searches-and-holds.md)
+Il est possible de migrer des recherches In-Place eDiscovery à partir du CAE à l’aide de PowerShell. Pour plus d’instructions, voir Migrer les recherches et les recherches en cours à partir du CENTRE d’Microsoft 365 [conformité.](./migrate-legacy-ediscovery-searches-and-holds.md)
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-MailboxSearch cmdlets
 
@@ -174,13 +174,13 @@ Comme indiqué dans l’avis initial annoncé le 1er juillet 2017 dans le Centre
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations concernées
 
-- Organisations Office 365 et Microsoft 365 Entreprise
+- Office 365 et Microsoft 365 Entreprise organisations
 
-- Organisations Office 365 et Microsoft 365 Éducation
+- Office 365 et Microsoft 365 Éducation organisations
 
-- Organisations Office 365 et Microsoft 365 pour le secteur public ; cela inclut GCC, GCC High et DoD
+- Office 365 et Microsoft 365 organisations gouvernementales ; cela inclut Cloud de la communauté du secteur public, Cloud de la communauté du secteur public Élevé et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -203,27 +203,27 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <tbody>
 <tr class="odd">
 <td>Rechercher et exporter</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
+<td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de la recherche à l’aide des cmdlets <strong>New-</strong>, <strong>Get-</strong>et <strong>Start-ComplianceSearch.</strong> Vous pouvez ensuite utiliser la cmdlet <strong>New-ComplianceSearchAction</strong> pour exporter les résultats de la recherche. Vous devez toujours utiliser l’outil eDiscovery principal dans le Centre de conformité Microsoft 365 pour télécharger ces résultats de recherche sur votre ordinateur local.</p>
+<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de la recherche à l’aide des cmdlets <strong>New-</strong>, <strong>Get-</strong>et <strong>Start-ComplianceSearch.</strong> Vous pouvez ensuite utiliser la cmdlet <strong>New-ComplianceSearchAction</strong> pour exporter les résultats de la recherche. Vous devez toujours utiliser l’outil eDiscovery principal dans le centre de conformité Microsoft 365 pour télécharger ces résultats de recherche sur votre ordinateur local.</p>
 <p>
 <p><strong>Remarque :</strong> Si vous utilisez ces cmdlets pour créer des recherches qui ne sont pas associées à un cas eDiscovery principal, ces recherches se trouveront sur la <strong>page</strong> de recherche de contenu dans le Centre de conformité Microsoft 365.</p></td>
 </tr>
 <tr class="even">
 <td>Conserver le contenu dans une boîte aux lettres</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
+<td><p><a href="/powershell/module/exchange/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
+<p><a href="/powershell/module/exchange/get-caseholdrule"><span class="underline">*-CaseHoldRule</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>Les dossiers dans le Centre de conformité Microsoft 365 doivent être associés à un complianceCase. Tout d’abord, créez le cas de conformité, puis créez un CaseHoldPolicy et un CaseHoldRule.</p>
+<td><p>Les contrôles dans Microsoft 365 conformité doivent être associés à un complianceCase. Tout d’abord, créez le cas de conformité, puis créez un CaseHoldPolicy et un CaseHoldRule.</p>
 <p><strong>Remarque :</strong> La création d’une caseHoldPolicy sans création de CaseHoldRule rend la mise en attente inopérable jusqu’à ce que CaseHoldRule soit créé et associé à CaseHoldPolicy. Pour plus d’informations, voir la documentation de la cmdlet.</p></td>
 </tr>
 <tr class="odd">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
-<td>Aucune</td>
-<td>Cette fonctionnalité ne remplace pas directement cette fonctionnalité, car elle ne permet pas d’accéder à tous les services Microsoft 365. Consultez le FAQ ci-dessous pour obtenir d’autres solutions.</td>
+<td>Aucun</td>
+<td>Cette fonctionnalité ne remplace pas directement cette fonctionnalité, car elle ne permet pas d’accéder à tous Microsoft 365 services. Consultez le FAQ ci-dessous pour obtenir d’autres solutions.</td>
 </tr>
   <tr class=even>
   <td>Copier des messages d’une boîte aux lettres vers une autre boîte aux lettres</td>
@@ -239,11 +239,11 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 
 **Nous utilisons la recherche de copie pour exporter des messages électroniques ou instantanés à d’autres fins de découverte électronique et d’enquêtes juridiques. Quelles sont les autres options disponibles une fois ces cmdlets retirées ?**
 
-Les [<span class="underline">API Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) fournissent un certain nombre de méthodes pour extraire des données à des fins d’analyse et d’autres fins qui sont beaucoup plus résilientes et évolutives que l’utilisation des cmdlets **\* -MailboxSearch.**
+Les [<span class="underline">API Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) fournissent un certain nombre de méthodes pour extraire des données à des fins d’analyse et d’autres fins beaucoup plus résilientes et évolutives que l’utilisation des cmdlets **\* -MailboxSearch.**
 
-**Comment puis-je migrer mes recherches et mes recherches dans le Centre de conformité Microsoft 365 ?**
+**Comment puis-je migrer mes recherches et mes données de mise en Microsoft 365 centre de conformité ?**
 
-Il est possible de migrer des recherches In-Place eDiscovery à partir du Centre d’administration Exchange à l’aide d’un script PowerShell. Pour plus d’informations, voir Migrer les recherches [eDiscovery héritées](migrate-legacy-eDiscovery-searches-and-holds.md)et les conserve dans le Centre de conformité Microsoft 365.
+Il est possible de migrer des recherches In-Place de découverte électronique à partir du centre d’administration Exchange à l’aide d’un script PowerShell. Pour plus d’informations, voir Migrer les recherches [eDiscovery héritées](migrate-legacy-eDiscovery-searches-and-holds.md)et les Microsoft 365 centre de conformité.
 
 **Une fois les cmdlets supprimées, puis-je toujours supprimer ou récupérer des recherches ?**
 
@@ -251,17 +251,17 @@ Oui, bien que nous supprimant la possibilité de créer et de modifier des reche
 
 ## <a name="search-mailbox-cmdlet"></a>Search-Mailbox cmdlet
 
-La cmdlet **De recherche de** boîte aux lettres dans Exchange Online PowerShell est retirée comme initialement annoncé dans un avertissement dans la sortie de cmdlet à partir de 2018. À l’origine, la cmdlet **Search-Mailbox** était utilisée pour rechercher dans la boîte aux lettres d’un utilisateur et purger le contenu malveillant. Nous vous recommandons de commencer à utiliser les cmdlets **New-ComplianceSearch** et **New-ComplianceSearchAction** dans le Centre de sécurité & conformité Office 365 PowerShell pour rechercher et vider le contenu. Pour une expérience de sécurité intégrée, les fonctionnalités de sécurité [<span class="underline">Microsoft 365</span>](../security/index.yml) fournissent une protection fiable contre les menaces pour le courrier électronique et de nombreux autres services Microsoft.
+La cmdlet **De recherche de** boîte aux lettres dans Exchange Online PowerShell est retirée comme initialement annoncé dans un avertissement dans la sortie de cmdlet à partir de 2018. À l’origine, la cmdlet **Search-Mailbox** était utilisée pour rechercher dans la boîte aux lettres d’un utilisateur et purger le contenu malveillant. Nous vous recommandons de commencer à utiliser les cmd Office 365 lets **New-ComplianceSearch** et **New-ComplianceSearchAction** dans le Centre de sécurité & conformité PowerShell pour rechercher et vider le contenu. Pour une expérience de sécurité [<span class="underline"></span>](../security/index.yml) intégrée, les fonctionnalités de sécurité Microsoft 365 fournissent une protection fiable contre les menaces pour le courrier électronique et de nombreuses autres services Microsoft.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations concernées
 
-- Organisations Office 365 et Microsoft 365 Entreprise
+- Office 365 et Microsoft 365 Entreprise organisations
 
-- Organisations Office 365 et Microsoft 365 Éducation
+- Office 365 et Microsoft 365 Éducation organisations
 
-- Organisations Office 365 et Microsoft 365 pour le secteur public ; cela inclut GCC, GCC High et DoD
+- Office 365 et Microsoft 365 organisations gouvernementales ; cela inclut Cloud de la communauté du secteur public, Cloud de la communauté du secteur public Élevé et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -282,15 +282,15 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <tbody>
 <tr class="odd">
 <td>Rechercher dans une boîte aux lettres</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de la recherche à l’aide des cmdlets <strong>New-</strong>, <strong>Get-</strong>et <strong>Start-ComplianceSearch.</strong> Ensuite, vous pouvez utiliser la <strong>commande New-ComplianceSearchAction -Export</strong> pour exporter les résultats de la recherche. Vous devez toujours utiliser l’outil eDiscovery principal dans le Centre de conformité Microsoft 365 pour télécharger ces résultats de recherche sur votre ordinateur local.</p></p>
+<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et exporter du contenu. Vous pouvez créer une recherche et afficher l’estimation de la recherche à l’aide des cmdlets <strong>New-</strong>, <strong>Get-</strong>et <strong>Start-ComplianceSearch.</strong> Vous pouvez ensuite utiliser la <strong>commande New-ComplianceSearchAction -Export</strong> pour exporter les résultats de la recherche. Vous devez toujours utiliser l’outil eDiscovery principal dans le centre de conformité Microsoft 365 pour télécharger ces résultats de recherche sur votre ordinateur local.</p></p>
 </td>
 </tr>
 <tr class="even">
 <td>Supprimer des messages électroniques en bloc d’une boîte aux lettres</td>
-<td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurer une stratégie d’archivage et de suppression de boîtes aux lettres</span></a></p>
+<td><p><a href="/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">Configurer une stratégie d’archivage et de suppression de boîtes aux lettres</span></a></p>
 <p></p></td>
 <td><p>Les administrateurs peuvent créer une stratégie d’archivage et de suppression qui déplace automatiquement des éléments vers la boîte aux lettres d’archivage d’un utilisateur et supprime automatiquement les éléments de la boîte aux lettres.</p>
 </td>
@@ -298,7 +298,7 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 <tr class="even">
 <td>Copier les résultats de la recherche dans une boîte aux lettres de découverte</td>
 <td> </td>
-<td>Cette fonctionnalité ne remplace pas directement cette fonctionnalité, car elle ne permet pas d’accéder à tous les services Microsoft 365. Consultez les FAQ de la section <strong>cmdlets *-MailboxSearch</strong> pour obtenir d’autres solutions. </td>
+<td>Cette fonctionnalité ne remplace pas directement cette fonctionnalité, car elle ne permet pas d’accéder à tous Microsoft 365 services. Consultez les FAQ de la section <strong>cmdlets *-MailboxSearch</strong> pour obtenir d’autres solutions. </td>
 </tr>
 <tr class=odd>
   <td>Copier des messages d’une boîte aux lettres vers une autre boîte aux lettres</td>
@@ -307,33 +307,33 @@ Le tableau suivant décrit les autres outils que vous pouvez utiliser pour rempl
 </tr>
 <tr class=even>
   <td>Purger des messages d’une boîte aux lettres</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
+<td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></p></td>
-<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et vider le contenu. Vous pouvez créer et exécuter une recherche avec les cmdlets <strong>New-ComplianceSearch</strong> et <strong>New-ComplianceSearch,</strong> puis vider le contenu à l’aide de la commande <strong>New-ComplianceSearchAction -Purge -PurgeType.</strong> Pour plus d’informations, <a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">voir Rechercher et supprimer des messages.</span></a></p>
+<td><p>Les cmdlets ComplianceSearch et ComplianceSearchAction fonctionnent ensemble pour vous aider à rechercher et vider le contenu. Vous pouvez créer et exécuter une recherche avec les cmdlets <strong>New-ComplianceSearch</strong> et <strong>New-ComplianceSearch,</strong> puis vider le contenu à l’aide de la commande <strong>New-ComplianceSearchAction -Purge -PurgeType.</strong> Pour plus d’informations, <a href="/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">voir Rechercher et supprimer des messages.</span></a></p>
 </td>
 </tr>
 <tr class="odd"> 
 <td>Purger des messages d’une boîte aux lettres</td>
 <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">Attribuer des autorisations à une boîte aux lettres</a></td>
-<td>Pour vider les messages d’une boîte aux lettres, attribuez à un administrateur des autorisations pour accéder à la boîte aux lettres de l’employé. Les messages peuvent être supprimés et recyclés selon les besoins, en profitant des fonctionnalités intégrées de recherche et d’affichage dans Outlook.</td>
+<td>Pour vider les messages d’une boîte aux lettres, attribuez à un administrateur des autorisations pour accéder à la boîte aux lettres de l’employé. Les messages peuvent être supprimés et recyclés selon les besoins en profitant des fonctionnalités intégrées de recherche et d’affichage dans Outlook.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="exchange-web-services-api-operations"></a>Opérations de l’API des services web Exchange
+## <a name="exchange-web-services-api-operations"></a>Exchange Opérations de l’API des services web
 
-Ces opérations dans l’API des services web Exchange sont utilisées par la fonctionnalité In-Place eDiscovery & Holds dans le Centre d’administration Exchange et les cmdlets **\* -MailboxSearch** correspondantes dans Exchange Online PowerShell. Ils seront également retirés dans le cadre de la retrait des autres outils eDiscovery hérités.
+Ces opérations dans l’API Exchange Web Services sont utilisées par la fonctionnalité In-Place eDiscovery & Holds dans le Centre d’administration Exchange et les cmdlets **\* -MailboxSearch** correspondantes dans Exchange Online PowerShell. Ils seront également retirés dans le cadre de la retrait des autres outils eDiscovery hérités.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations concernées
 
-- Organisations Office 365 et Microsoft 365 Entreprise
+- Office 365 et Microsoft 365 Entreprise organisations
 
-- Organisations Office 365 et Microsoft 365 Éducation
+- Office 365 et Microsoft 365 Éducation organisations
 
-- Organisations Office 365 et Microsoft 365 pour le secteur public ; cela inclut GCC, GCC High et DoD
+- Office 365 et Microsoft 365 secteurs publics ; cela inclut Cloud de la communauté du secteur public, Cloud de la communauté du secteur public Élevé et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -341,7 +341,7 @@ Ces opérations dans l’API des services web Exchange sont utilisées par la fo
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v1.0
 
-Advanced eDiscovery v1.0, qui est la version d’Advanced eDiscovery disponible dans un cas eDiscovery principal en cliquant sur Basculer vers **Advanced eDiscovery,** est retiré. Sa fonctionnalité a été remplacée par la nouvelle [solution Advanced eDiscovery](./ediscovery.md) dans le Centre de conformité Microsoft 365.
+Advanced eDiscovery version 1.0, qui est la version de Advanced eDiscovery disponible dans un cas eDiscovery principal en cliquant sur Basculer vers **Advanced eDiscovery**, est en cours de retrait. Ses fonctionnalités ont été remplacées par la nouvelle [solution Advanced eDiscovery dans](./ediscovery.md) le centre Microsoft 365 conformité.
 
 Pour déterminer si votre organisation utilise Advanced eDiscovery v1.0 :
 
@@ -349,27 +349,27 @@ Pour déterminer si votre organisation utilise Advanced eDiscovery v1.0 :
 
 2. Dans le volet de navigation gauche du Centre de sécurité & conformité, cliquez sur **eDiscovery > eDiscovery** et ouvrez un cas core eDiscovery.
 
-3. Si vous voyez le bouton Basculer vers Advanced **eDiscovery,** cliquez dessus pour passer à la version 1.0 d’Advanced eDiscovery, qui est en cours de retrait. La possibilité de créer et de gérer des cas dans Core eDiscovery ne sera pas affectée. Seule la possibilité d’ajouter et d’analyser des données de cas dans Advanced eDiscovery v1.0 (en cliquant sur Basculer vers **Advanced eDiscovery)** est retirée.
+3. Si vous voyez le bouton Basculer vers **Advanced eDiscovery,** le fait de cliquer dessus vous permet d’basculer vers la version 1.0 de Advanced eDiscovery, qui est en cours de retrait. La possibilité de créer et de gérer des cas dans Core eDiscovery ne sera pas affectée. Seule la possibilité d’ajouter et d’analyser des données de cas dans Advanced eDiscovery v1.0 (en cliquant sur Basculer vers **Advanced eDiscovery**) est retirée.
 
-La nouvelle solution Advanced eDiscovery dans Microsoft 365 (également appelée *Advanced eDiscovery v2.0)* fournit toutes les fonctionnalités de la solution d’origine, mais inclut désormais une approche basée sur les dépositaires qui consiste à identifier le contenu dans d’autres services Microsoft 365, à collecter ce contenu, puis à l’ajouter à un groupe de révision dans lequel les relecteurs peuvent tirer parti des requêtes de recherche rapide, des marquages et des fonctionnalités d’analyse pour aider à l’arrêt des documents pertinents. Advanced eDiscovery inclut désormais un traitement amélioré et des visionneuses natives pour [](./supported-filetypes-ediscovery20.md) les types de fichiers Microsoft et non-Microsoft, une liste complète des types de fichiers est ici et les champs de métadonnées pris en charge sont [ici](./document-metadata-fields-in-advanced-ediscovery.md). En outre, la nouvelle solution Advanced eDiscovery fournit une fonctionnalité puissante de gestion des conservations des dépositaires qui vous permet d’appliquer des conservations à du contenu dans différents services, d’informer les utilisateurs des conservations et de suivre les réponses des dépositaires, le tout dans un cas Advanced eDiscovery.
+La nouvelle solution Advanced eDiscovery dans Microsoft 365 (également appelée *Advanced eDiscovery v2.0*) fournit toutes les fonctionnalités de la solution d’origine, mais inclut désormais une approche basée sur les dépositaires qui consiste à identifier le contenu dans d’autres services Microsoft 365, à collecter ce contenu, puis à l’ajouter à un ensemble de révisions dans lequel les réviseurs peuvent tirer parti des fonctionnalités de recherche rapide, de marquage et d’analyse pour aider à mettre fin aux documents pertinents. Advanced eDiscovery inclut désormais un traitement amélioré et des visionneuses natives pour les types [](./supported-filetypes-ediscovery20.md) de fichiers Microsoft et non-Microsoft, une liste complète des types de fichiers est là et les champs de métadonnées pris en charge sont [ici.](./document-metadata-fields-in-advanced-ediscovery.md) En outre, la nouvelle solution Advanced eDiscovery fournit une fonctionnalité puissante de gestion des conservations des dépositaires qui vous permet d’appliquer des conservations au contenu de différents services, d’informer les utilisateurs des conservations et de suivre les réponses des dépositaires, le tout dans un cas Advanced eDiscovery.
 
-Pour accéder à eDiscovery avancée v 2.0 :
+Pour accéder à eDiscovery avancée v 2.0 :
 
 1. Accédez au [centre de conformité Microsoft 365](https://compliance.microsoft.com).
 
 2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **eDiscovery >avancée**.
 
-Pour l’instant, nous vous recommandons de commencer la transition de votre flux de travail eDiscovery vers la nouvelle fonctionnalité Advanced eDiscovery. Si nécessaire, vous pouvez archiver vos cas Advanced eDiscovery 1.0 en exportant le contenu et en le stockant hors connexion. Bien que vous soyez toujours en mesure d’accéder à Advanced eDiscovery v1.0 dans les cas existants jusqu’au 31 décembre 2020, le support Microsoft ne fournira pas de support après le 1er octobre 2020. Pour plus d’informations, voir la chronologie suivante.
+Pour l’instant, nous vous recommandons de commencer la transition de votre flux de travail eDiscovery vers la nouvelle fonctionnalité Advanced eDiscovery de découverte électronique. Si nécessaire, vous pouvez archiver Advanced eDiscovery cas 1.0 en exportant le contenu et en le stockant hors connexion. Bien que vous soyez toujours en mesure d’accéder à Advanced eDiscovery v1.0 dans les cas existants jusqu’au 31 décembre 2020, le support Microsoft ne fournira pas de support après le 1er octobre 2020. Pour plus d’informations, voir la chronologie suivante.
 
 ### <a name="scope-of-affected-organizations"></a>Étendue des organisations concernées
 
-- Organisations Office 365 et Microsoft 365 Entreprise
+- Office 365 et Microsoft 365 Entreprise organisations
 
-- Organisations Office 365 et Microsoft 365 Éducation
+- Office 365 et Microsoft 365 Éducation organisations
 
-- Organisations Office 365 et Microsoft 365 pour le secteur public ; cela inclut GCC, GCC High et DoD
+- Office 365 et Microsoft 365 secteurs publics ; cela inclut Cloud de la communauté du secteur public, Cloud de la communauté du secteur public Élevé et DoD
 
-- Office 365 Allemagne
+- Office 365 Allemagne
 
 ### <a name="timeline"></a>Chronologie
 
@@ -377,8 +377,8 @@ Pour l’instant, nous vous recommandons de commencer la transition de votre flu
 
 - 1er octobre 2020 : vous ne pourrez pas ajouter de nouvelles données (préparer les résultats de recherche pour Advanced eDiscovery) dans tous les cas. Vous pourrez continuer à travailler avec des données dans des cas existants à vos propres risques. Le support Microsoft ne fournira plus d’assistance. 
 
-- 31 décembre 2020 : vous ne pourrez pas accéder aux cas Advanced eDiscovery v1.0.
+- 31 décembre 2020 : vous ne pourrez pas accéder Advanced eDiscovery cas v1.0.
 
 ### <a name="alternative-tools"></a>Outils de remplacement
 
-La [solution Advanced eDiscovery](./overview-ediscovery-20.md) dans le Centre de conformité Microsoft 365.
+La [solution Advanced eDiscovery dans](./overview-ediscovery-20.md) le centre Microsoft 365 conformité.

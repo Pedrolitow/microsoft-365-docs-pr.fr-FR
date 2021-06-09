@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9913d1b0b0d5d0462fdee0b9c576a590bd3ddbc9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198321"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842061"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>API Microsoft Defender pour point de terminaison à l’aide de PowerShell
 
@@ -55,7 +55,7 @@ Dans cette section, nous partageons des exemples PowerShell pour
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-Pour plus d’informations, [voir la documentation PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+Pour plus d’informations, [voir la documentation PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## <a name="get-token"></a>Obtenir un jeton
 
@@ -132,4 +132,4 @@ $response
 ## <a name="see-also"></a>Voir aussi
 - [API Microsoft Defender pour point de terminaison](apis-intro.md)
 - [API de recherche avancée de menaces](run-advanced-query-api.md)
-- [Recherche avancée à l’aide de Python](run-advanced-query-sample-python.md)
+- [Repérage avancé à l’aide de Python](run-advanced-query-sample-python.md)
