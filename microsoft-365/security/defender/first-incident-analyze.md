@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8eb36ca630a9748de07c5cbe84f0e43ef23a47cf
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297223"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841077"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Étape 1. Trier et analyser votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 À mesure que vous consacrez du temps à établir, implémenter et maintenir des mesures de sécurité conformément aux normes de l’organisation, vous pouvez configurer des solutions de sécurité pour vous aider à identifier rapidement les risques et menaces de sécurité. Microsoft 365 Defender vous permet de détecter, de trier et d’examiner les incidents par le biais de son expérience à volet unique dans laquelle vous pouvez trouver les informations dont vous avez besoin pour prendre des décisions en temps voulu. 
 
@@ -44,11 +44,11 @@ Une fois qu’un incident de sécurité est détecté, Microsoft 365 Defender pr
 
 Microsoft 365 Defender reçoit des alertes et des événements de plusieurs plateformes de sécurité Microsoft en tant que sources de détection pour créer une image globale et un contexte d’activité malveillante. Voici les sources de détection possibles :
 
-- [Microsoft Defender pour le](../defender-endpoint/microsoft-defender-endpoint.md) point de terminaison est une solution protection évolutive des points de terminaison (PEPT) qui utilise l’antivirus Microsoft Defender, ainsi que la protection avancée contre les menaces dans le cloud à l’aide de Microsoft Security Graph. Defender pour point de terminaison est une plateforme unifiée pour la protection préventive, la détection post-violation, l’examen automatisé et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité. 
-- [Microsoft Defender pour](https://docs.microsoft.com/defender-for-identity/what-is) l’identité est une solution de sécurité basée sur le cloud qui utilise vos signaux AD DS (Active Directory Domain Services) locaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation. 
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) agit comme un garde d’accès en temps réel entre les utilisateurs de votre entreprise et les ressources cloud qu’ils utilisent, où que soient vos utilisateurs et quel que soit l’appareil qu’ils utilisent. 
+- [Microsoft Defender pour le](../defender-endpoint/microsoft-defender-endpoint.md) point de terminaison est une solution protection évolutive des points de terminaison (PEPT) qui utilise l’antivirus Microsoft Defender, ainsi que la protection avancée contre les menaces dans le cloud à l’aide de Microsoft Security Graph. Defender for Endpoint est une plateforme unifiée pour la protection préventive, la détection post-violation, l’examen automatisé et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité. 
+- [Microsoft Defender pour](/defender-for-identity/what-is) l’identité est une solution de sécurité basée sur le cloud qui utilise vos signaux AD DS (Active Directory Domain Services) locaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation. 
+- [Microsoft Cloud App Security](/cloud-app-security/) agit comme un garde d’accès en temps réel entre les utilisateurs de votre entreprise et les ressources cloud qu’ils utilisent, où que soient vos utilisateurs et quel que soit l’appareil qu’ils utilisent. 
 - [Microsoft Defender for Office 365](../office-365-security/overview.md) protège votre organisation contre les menaces malveillantes dans les messages électroniques, les liens (URL) et les outils de collaboration. 
-- [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction) est un système de gestion de la sécurité de l’infrastructure unifiée qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud ainsi que sur site. 
+- [Azure Security Center](/azure/security-center/security-center-introduction) est un système de gestion de la sécurité de l’infrastructure unifiée qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud ainsi que sur site. 
 
 Dans Microsoft 365 Defender, [les incidents](incidents-overview.md) sont identifiés en corrélant les alertes à partir de ces différentes sources de détection. Au lieu de passer des ressources en chaîne ou de distinguer plusieurs alertes dans leurs incidents respectifs, vous pouvez commencer immédiatement par la file d’attente des incidents dans Microsoft 365 Defender. Cela vous permet de trier efficacement les incidents entre les points de terminaison, les identités, le courrier électronique et les applications, et de réduire les dommages d’une attaque.
 
@@ -97,9 +97,9 @@ Voici une approche de tri :
 
 Il est également important de comprendre le contexte qui entoure les alertes. Souvent, une alerte n’est pas un événement indépendant unique. Il existe une chaîne de processus créés, de commandes et d’actions qui n’ont peut-être pas eu lieu en même temps. Par conséquent, un analyste doit rechercher les première et dernière activités de l’entité suspecte dans les chronologies des appareils pour comprendre le contexte des alertes.
 
-Il existe plusieurs façons de lire et d’analyser des données à l’aide de Microsoft 365 Defender, mais l’objectif final pour les analystes est de répondre aux incidents aussi rapidement que possible. Bien que Microsoft 365 Defender puisse réduire considérablement le temps moyen de [](m365d-autoir.md) correction [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) via la fonctionnalité d’investigation et de réponse automatisée de pointe du secteur, il existe toujours des cas qui nécessitent une analyse manuelle. 
+Il existe plusieurs façons de lire et d’analyser des données à l’aide de Microsoft 365 Defender, mais l’objectif final pour les analystes est de répondre aux incidents aussi rapidement que possible. Bien que Microsoft 365 Defender puisse réduire considérablement le temps moyen de [](m365d-autoir.md) correction [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) par le biais de la fonctionnalité d’investigation et de réponse automatisée de pointe du secteur, il existe toujours des cas qui nécessitent une analyse manuelle. 
 
-Voici un exemple :
+Voici un exemple :
 
 1. Une fois la priorité de tri déterminée, un analyste lance une analyse approfondie en sélectionnant le nom de l’incident. Cette page affiche le résumé de **l’incident** dans lequel les données sont affichées dans des onglets pour faciliter l’analyse. Sous **l’onglet Alertes,** le type d’alertes s’affiche. Les analystes peuvent cliquer sur chaque alerte pour descendre dans la source de détection respective. 
 
@@ -107,13 +107,13 @@ Voici un exemple :
  
     Pour obtenir un guide rapide sur le domaine que couvre chaque source de détection, examinez la section [Détecter](#detection-by-microsoft-365-defender) de cet article.
 
-2.  À partir de **l’onglet Alertes,** un analyste peut pivoter vers la source de détection pour effectuer une analyse et un examen plus approfondis. Par exemple, si vous sélectionnez détection de programmes malveillants avec Microsoft Cloud App Security comme source de détection, l’analyste passe à la page d’alerte correspondante.
+2.  À partir de **l’onglet Alertes,** un analyste peut pivoter vers la source de détection pour effectuer une analyse et un examen plus approfondis. Par exemple, si vous sélectionnez détection de programmes malveillants Microsoft Cloud App Security comme source de détection, l’analyste est ajouté à sa page d’alerte correspondante.
   
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Exemple de sélection d’une alerte d’incident"::: 
   
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Exemple de page correspondante dans Microsoft Cloud App Security"::: 
   
-3.  Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs concernés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier. 
+3.  Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs affectés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier. 
   
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Exemple de page d’utilisateur":::
   

@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les messages électroniques provenant de serveurs de messagerie.
+description: Les administrateurs peuvent apprendre à configurer le filtrage des connexions dans Exchange Online Protection (EOP) pour autoriser ou bloquer les e-mails provenant de serveurs de messagerie.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 27c8cbbc70a4844e11bf85003215d2798a57a7ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792979"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821960"
 ---
 # <a name="configure-connection-filtering"></a>Configurer le filtrage des connexions
 
@@ -36,7 +36,7 @@ ms.locfileid: "52792979"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-Si vous êtes un client Microsoft 365 avec des boîtes aux lettres en Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier, la stratégie de filtrage des connexions par défaut) pour identifier les serveurs de messagerie source bons ou mauvais par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
+Si vous êtes un client Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou un client Exchange Online Protection autonome (EOP) sans boîtes aux lettres Exchange Online, vous utilisez le filtrage des connexions dans EOP (en particulier, la stratégie de filtrage des connexions par défaut) pour identifier les serveurs de messagerie source bons ou mauvais par leurs adresses IP. Les principaux composants de la stratégie de filtrage des connexions par défaut sont les suivants :
 
 - **Liste d’adresses IP** permises : ignorez le filtrage du courrier indésirable pour tous les messages entrants provenant des serveurs de messagerie source que vous spécifiez par adresse IP ou plage d’adresses IP. Pour les scénarios où le filtrage du courrier indésirable peut encore se produire sur les messages provenant de ces sources, consultez la section [Scénarios](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) dans lequel les messages provenant de sources de la liste d’adresses IP sont toujours filtrés plus loin dans cet article. Pour plus d’informations sur la façon dont la liste d’adresses IP permises doit s’intégrer dans votre stratégie globale d’expéditeurs sûrs, voir Créer des listes d’expéditeurs sûrs [dans EOP.](create-safe-sender-lists-in-office-365.md)
 
@@ -51,7 +51,7 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le centre de sécurité à <https://security.microsoft.com/>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
+- Vous ouvrez le centre de sécurité à <https://security.microsoft.com>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -70,11 +70,11 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
 - La liste d’adresses IP bloquées est prioritaire sur la liste d’adresses IP bloquées (une adresse sur les deux listes n’est pas bloquée).
 
-- La liste d’adresses IP permises et la liste d’adresses IP bloqués peuvent chacune prendre en charge un maximum de 1 273 entrées, où une entrée est une adresse IP unique, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing).
+- La liste d’adresses IP et la liste d’adresses IP bloqués peuvent chacune prendre en charge un maximum de 1 273 entrées, où une entrée est une adresse IP unique, une plage d’adresses IP ou une adresse IP de routage CIDR (Classless InterDomain Routing).
 
 ## <a name="use-the-security-center-to-modify-the-default-connection-filter-policy"></a>Utiliser le centre de sécurité pour modifier la stratégie de filtrage des connexions par défaut
 
-1. Dans le centre de sécurité, go to **Email & Collaboration** Policies & \> **Rules** Threat \>  \> **Policies** section \> **Anti-spam**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez Stratégie de filtrage des connexions **(par défaut)** dans la liste en cliquant sur le nom de la stratégie.
 
@@ -93,11 +93,11 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
        Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
-     Pour ajouter l’adresse IP ou la plage d’adresses, cliquez dans la zone et tapez itclick **Icône** ![ Ajouter ](../../media/ITPro-EAC-AddIcon.png) . Pour supprimer une entrée, sélectionnez-la dans **l’adresse IP autorisée,** puis cliquez sur  ![ ](../../media/scc-remove-icon.png) Supprimer. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+     Pour ajouter l’adresse IP ou la plage d’adresses, cliquez dans la zone et tapez itclick **Ajouter** ![ une icône ](../../media/ITPro-EAC-AddIcon.png) . Pour supprimer une entrée, sélectionnez-la dans **l’adresse IP autorisée,** puis cliquez sur  ![ ](../../media/scc-remove-icon.png) Supprimer. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
    - **Toujours bloquer les messages provenant des adresses IP ou de** la plage d’adresses suivantes : il s’agit de la liste d’adresses IP bloqués. Entrez une adresse IP, une plage IP ou une adresse IP CIDR unique dans la zone comme décrit précédemment dans le paramètre Toujours autoriser les messages provenant des adresses IP ou des **plages d’adresses suivantes.**
 
-   - **Activer la liste sécurisée**: activez ou désactivez l’utilisation de la liste sécurisée pour identifier les expéditeurs connus et de qualité qui ignoreront le filtrage du courrier indésirable. Pour utiliser la liste sécurisée, cochez la case.
+   - **Activez la liste sécurisée**: activez ou désactivez l’utilisation de la liste sécurisée pour identifier les expéditeurs connus et de qualité qui ignoreront le filtrage du courrier indésirable. Pour utiliser la liste sécurisée, cochez la case.
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -105,7 +105,7 @@ Cet article explique comment configurer la stratégie de filtrage des connexions
 
 ## <a name="use-the-security-center-to-view-the-default-connection-filter-policy"></a>Utiliser le centre de sécurité pour afficher la stratégie de filtrage des connexions par défaut
 
-1. Dans le centre de sécurité, go to **Email & Collaboration** Policies & \> **Rules** Threat \>  \> **Policies** section \> **Anti-spam**.
+1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, les propriétés suivantes sont affichées dans la liste des stratégies :
 
@@ -152,7 +152,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez bien modifié la stratégie de filtrage des connexions par défaut, faites l’une des étapes suivantes :
 
-- Dans le centre de sécurité, sélectionnez stratégie de filtrage des connexions (par défaut) dans la liste e-mail **& Collaboration** Policies & Rules Threat Policies section \>  \>  \>  \> **Anti-spam** \> select Connection filter policy **(Default)** from the list by clicking on the name of the policy, and verify the settings.
+- Dans le centre de sécurité, sélectionnez stratégie de filtrage des connexions (par défaut) dans la liste e-mail **& Collaboration** Policies \> **& Rules** Threat \>  \> **Policies** section \> **Anti-spam** \> select Connection filter policy **(Default)** from the list by clicking on the name of the policy, and verify the settings.
 
 - Dans Exchange Online PowerShell ou EOP PowerShell autonome, exécutez la commande suivante et vérifiez les paramètres :
 
@@ -179,7 +179,7 @@ Vous pouvez auditer la règle, la tester, l’activer pendant une période spéc
 
 ### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>Ignorer le filtrage du courrier indésirable sur les domaines de courrier sélectifs de la même source
 
-En règle générale, l’ajout d’une adresse IP ou d’une plage d’adresses à la liste d’adresses IP permises signifie que vous faites confiance à tous les messages entrants provenant de cette source de courrier. Mais que se passe-t-il si cette source envoie du courrier électronique à partir de plusieurs domaines et que vous souhaitez ignorer le filtrage du courrier indésirable pour certains de ces domaines, mais pas pour d’autres ? Vous ne pouvez pas utiliser la liste d’adresses IP permises pour cela, mais vous pouvez utiliser la liste d’adresses IP autoriser en combinaison avec une règle de flux de messagerie.
+En règle générale, l’ajout d’une adresse IP ou d’une plage d’adresses à la liste d’adresses IP permises signifie que vous faites confiance à tous les messages entrants provenant de cette source de courrier. Mais que se passe-t-il si cette source envoie du courrier électronique à partir de plusieurs domaines et que vous souhaitez ignorer le filtrage du courrier indésirable pour certains de ces domaines, mais pas pour d’autres ? Pour ce faire, vous ne pouvez pas utiliser la liste d’adresses IP permises uniquement, mais vous pouvez utiliser la liste d’adresses IP permises en combinaison avec une règle de flux de messagerie.
 
 Par exemple, le serveur de messagerie source 192.168.1.25 envoie du courrier électronique à partir des domaines contoso.com, fabrikam.com et tailspintoys.com, mais vous souhaitez uniquement ignorer le filtrage du courrier indésirable pour les messages provenant d’expéditeurs dans fabrikam.com. Pour ce faire, utilisez les étapes suivantes :
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6f0fcf101388f9cae08655117caa5380af1242c2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: dc3ce994108f902e3119de2f5b175b232b68c891
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769664"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843721"
 ---
 # <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Licence et conditions d’utilisation de l’API Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "52769664"
 
 ## <a name="apis"></a>API
 
-Les API Defender pour le point de terminaison sont régies par la licence [api Microsoft et les conditions d’utilisation.](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
+Les API Defender pour le point de terminaison sont régies par la licence [api Microsoft et les conditions d’utilisation.](/legal/microsoft-apis/terms-of-use)
 
 ### <a name="throttling-limits"></a>Limitations
 
@@ -48,4 +48,4 @@ Microsoft et tous les collaborateurs vous accordent une licence pour la document
 
 Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft référencés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays. Les licences de ce projet ne vous accordent pas le droit d’utiliser des noms, des logos ou des marques Microsoft. Microsoft’s general trademark guidelines can be found at https://go.microsoft.com/fwlink/?LinkID=254653 .
 
-Les informations de confidentialité sont disponibles chez Microsoft et tous les collaborateurs se réservent tous les autres droits, que ce soit sous leurs droits d’auteur, brevets ou marques respectives, que ce soit par implication, par défaut ou https://privacy.microsoft.com/en-us/ autrement.
+Les informations de confidentialité sont disponibles chez Microsoft et les collaborateurs se réservent tous les autres droits, que ce soit sous leurs droits d’auteur, brevets ou marques respectives, que ce soit par implication, par défaut ou https://privacy.microsoft.com/en-us/ autrement.

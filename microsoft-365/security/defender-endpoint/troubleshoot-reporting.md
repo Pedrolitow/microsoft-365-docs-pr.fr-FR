@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ca62db922a13ab2cb3226eaf0efb92bfaf8c572b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ab987089c20d0a1d0baed152e7ddcfdd2878cc65
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274891"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843457"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour
 
@@ -32,18 +32,18 @@ ms.locfileid: "52274891"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Le 31 mars 2020, la fonctionnalité de rapport de l’Antivirus Microsoft Defender de la conformité des mises à jour sera supprimée. Vous pouvez continuer à définir et à passer en revue les stratégies de conformité de sécurité à l’aide de [Microsoft Endpoint Manager,](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)ce qui permet un contrôle plus fin sur les fonctionnalités de sécurité et les mises à jour.
+> Le 31 mars 2020, la fonctionnalité de Antivirus Microsoft Defender mise à jour de conformité sera supprimée. Vous pouvez continuer à définir et à passer en revue les stratégies de conformité de sécurité à l’aide de [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), ce qui permet un contrôle plus fin des fonctionnalités de sécurité et des mises à jour.
 
-Vous pouvez utiliser l’Antivirus Microsoft Defender avec update compliance. Vous verrez l’état des licences E3, B, F1, VL et Pro. Toutefois, pour les licences E5, vous devez utiliser le [portail Microsoft Defender pour points de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) Pour en savoir plus sur les options de licence, voir les options de licence de produit [Windows 10.](https://www.microsoft.com/licensing/product-licensing/windows10.aspx)
+Vous pouvez utiliser Antivirus Microsoft Defender conformité des mises à jour. Vous verrez l’état des licences E3, B, F1, VL et Pro licences. Toutefois, pour les licences E5, vous devez utiliser le [portail Microsoft Defender pour points de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) Pour en savoir plus sur les options de licence, [voir Windows 10 options de licence de produit.](https://www.microsoft.com/licensing/product-licensing/windows10.aspx)
 
-Lorsque vous utilisez la conformité des mises à jour [Windows Analytics](/windows/deployment/update/update-compliance-using#wdav-assessment) pour obtenir des rapports sur l’état de protection des appareils ou des points de terminaison de votre réseau qui utilisent l’Antivirus Microsoft Defender, vous pouvez rencontrer des problèmes ou des problèmes.
+Lorsque vous utilisez [Windows Analytics Update Compliance](/windows/deployment/update/update-compliance-using#wdav-assessment) pour obtenir des rapports sur l’état de protection des appareils ou des points de terminaison de votre réseau qui utilisent Antivirus Microsoft Defender, vous pouvez rencontrer des problèmes ou des problèmes.
 
 En règle générale, les indicateurs les plus courants d’un problème sont :
 - Vous ne voyez qu’un petit nombre ou un sous-ensemble de tous les appareils que vous attendiez à voir
 - Vous ne voyez aucun appareil
 - Les rapports et informations que vous voyez sont obsolètes (plus de quelques jours)
 
-Pour obtenir des codes d’erreur courants et des ID d’événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à update compliance, consultez les événements de [l’Antivirus Microsoft Defender.](troubleshoot-microsoft-defender-antivirus.md) 
+Pour les codes d’erreur courants et les ID d’événement liés au service Antivirus Microsoft Defender qui ne sont pas liés à la mise à jour de conformité, voir [Antivirus Microsoft Defender événements.](troubleshoot-microsoft-defender-antivirus.md) 
 
 La résolution de ces problèmes se fait en trois étapes :
 
@@ -57,16 +57,16 @@ La résolution de ces problèmes se fait en trois étapes :
 
 ## <a name="confirm-prerequisites"></a>Confirmer les conditions préalables
 
-Pour que les appareils s’affichent correctement dans Update Compliance, vous devez respecter certaines conditions préalables pour le service de conformité des mises à jour et pour l’Antivirus Microsoft Defender :
+Pour que les appareils s’affichent correctement dans Update Compliance, vous devez respecter certains prérequis pour le service de conformité des mises à jour et pour les Antivirus Microsoft Defender :
 
 >[!div class="checklist"]
->- Les points de terminaison utilisent l’Antivirus Microsoft Defender comme seule application de protection antivirus. [L’utilisation d’une autre application antivirus entraîne la](microsoft-defender-antivirus-compatibility.md) désactivation de Microsoft Defender AV et le point de terminaison n’est pas signalé dans Update Compliance.
+>- Les points de terminaison utilisent Antivirus Microsoft Defender comme seule application de protection antivirus. [L’utilisation d’une autre application antivirus entraîne la](microsoft-defender-antivirus-compatibility.md) désactivation de Microsoft Defender AV et le point de terminaison n’est pas signalé dans Update Compliance.
 > - [La protection cloud est activée.](enable-cloud-protection-microsoft-defender-antivirus.md)
 > - Les points de terminaison [peuvent se connecter au cloud de Microsoft Defender AV](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
-> - Si le point de terminaison exécute Windows 10 version 1607 ou antérieure, les données de [diagnostic Windows 10](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)doivent être définies sur le niveau Amélioré.
+> - Si le point de terminaison Windows 10 version 1607 ou antérieure, les données de diagnostic Windows 10 doivent être définies sur [le niveau Amélioré.](/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 > - Cela fait 3 jours que toutes les conditions requises ont été satisfaites
 
-« Vous pouvez utiliser l’Antivirus Microsoft Defender avec update compliance. Vous verrez l’état des licences E3, B, F1, VL et Pro. Toutefois, pour les licences E5, vous devez utiliser le portail Microsoft Defender pour points de terminaison ( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) . Pour en savoir plus sur les options de licence, voir les options de licence de produit Windows 10 »
+« Vous pouvez utiliser Antivirus Microsoft Defender conformité des mises à jour. Vous verrez l’état des licences E3, B, F1, VL et Pro licences. Toutefois, pour les licences E5, vous devez utiliser le portail Microsoft Defender pour les points de terminaison (/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Pour en savoir plus sur les options de licence, voir Windows 10 options de licence de produit »
 
 Si les conditions préalables ci-dessus ont toutes été remplies, vous devrez peut-être passer à l’étape suivante pour collecter des informations de diagnostic et nous les envoyer.
 
@@ -75,5 +75,5 @@ Si les conditions préalables ci-dessus ont toutes été remplies, vous devrez p
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Déployer l’Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)

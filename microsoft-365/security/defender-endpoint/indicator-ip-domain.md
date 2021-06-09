@@ -1,5 +1,5 @@
 ---
-title: Créer des indicateurs pour les adresses IP et les URL/domaines
+title: Créer des indicateurs pour les IP et URL/domaines
 ms.reviewer: ''
 description: Créez des indicateurs pour les adresses IPS et les URL/domaines qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: ip, url, domaine, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
@@ -17,20 +17,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7dc11fe709a6d04b6309706df90f0ebbc177e25
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198482"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841065"
 ---
-# <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les adresses IP et les URL/domaines 
+# <a name="create-indicators-for-ips-and-urlsdomains"></a>Créer des indicateurs pour les IP et URL/domaines 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 
@@ -51,14 +51,14 @@ En créant des indicateurs pour les adresses IP, les URL ou les domaines, vous p
 Il est important de comprendre les conditions préalables suivantes avant de créer des indicateurs pour IPS, URL ou domaines :
 - Url/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. Pour plus d’informations sur la protection du réseau et les instructions de configuration, voir [Activer la protection réseau.](enable-network-protection.md)
 - La version du client anti-programme malveillant doit être 4.18.1906.x ou version ultérieure. 
-- Pris en charge sur les ordinateurs sur Windows 10, version 1709 ou ultérieure. 
-- Assurez-vous que les indicateurs réseau **personnalisés** sont activés dans le Centre de sécurité **Microsoft Defender > paramètres > fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
-- Pour la prise en charge des indicateurs sur iOS, voir [Configurer des indicateurs personnalisés.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
+- Pris en charge sur les ordinateurs Windows 10 version 1709 ou ultérieure. 
+- **Assurez-vous que les indicateurs réseau personnalisés** sont activés dans Centre de sécurité Microsoft Defender > Paramètres > **fonctionnalités avancées.** Pour plus d’informations, voir [Fonctionnalités avancées.](advanced-features.md)
+- Pour la prise en charge des indicateurs sur iOS, voir [Configurer des indicateurs personnalisés.](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
 
 
 > [!IMPORTANT]
 > Seules les IP externes peuvent être ajoutées à la liste d’indicateurs. Les indicateurs ne peuvent pas être créés pour les IP internes.
-> Pour les scénarios de protection web, nous vous recommandons d’utiliser les fonctionnalités intégrées dans Microsoft Edge. Microsoft Edge tire parti de [la Protection](network-protection.md) du réseau pour inspecter le trafic réseau et autorise les blocs pour TCP, HTTP et HTTPS (TLS). S’il existe des stratégies d’indicateur d’URL en conflit, le chemin d’accès le plus long est appliqué. Par exemple, la stratégie d’indicateur d’URL `https:\\support.microsoft.com/en-us/office` est prioritaire sur la stratégie d’indicateur d’URL. `https:\\support.microsoft.com`
+> Pour les scénarios de protection web, nous vous recommandons d’utiliser les fonctionnalités intégrées dans Microsoft Edge. Microsoft Edge utilise la [Protection](network-protection.md) du réseau pour inspecter le trafic réseau et autorise les blocs pour TCP, HTTP et HTTPS (TLS). S’il existe des stratégies d’indicateur d’URL en conflit, le chemin d’accès le plus long est appliqué. Par exemple, la stratégie d’indicateur d’URL `https:\\support.microsoft.com/en-us/office` est prioritaire sur la stratégie d’indicateur d’URL. `https:\\support.microsoft.com`
 
 > [!NOTE]
 > Pour tous les autres processus, les scénarios de protection web tirent parti de la Protection du réseau pour l’inspection et l’application : 
@@ -73,7 +73,7 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 
 ### <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Créer un indicateur pour les adresses IP, les URL ou les domaines à partir de la page des paramètres
 
-1. Dans le volet de navigation, sélectionnez **Indicateurs**  >  **de paramètres.**  
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **indicateurs.**  
 
 2. Sélectionnez **l’onglet Adresses IP ou URL/Domaines.**
 
@@ -90,4 +90,4 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 - [Créer des indicateurs](manage-indicators.md)
 - [Créer des indicateurs pour les fichiers](indicator-file.md)
 - [Créer des indicateurs basés sur des certificats](indicator-certificates.md)
-- [Gérer les indicateurs](indicator-manage.md)
+- [Gérer des indicateurs](indicator-manage.md)
