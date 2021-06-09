@@ -19,7 +19,7 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: L’administrateur peut apprendre à utiliser le partage d’audit dans le journal d’audit Microsoft 365 pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation.
+description: L’administrateur peut apprendre à utiliser le partage d’audit dans Microsoft 365 journal d’audit pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
 ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
@@ -32,9 +32,9 @@ ms.locfileid: "44819294"
 
 Le partage est une activité clé dans SharePoint Online et OneDrive Entreprise, et il est largement utilisé dans les organisations. Les administrateurs peuvent utiliser l’audit de partage dans le journal d’audit pour déterminer comment le partage est utilisé dans leur organisation. 
   
-## <a name="the-sharepoint-sharing-schema"></a>Schéma de partage SharePoint
+## <a name="the-sharepoint-sharing-schema"></a>Schéma SharePoint partage de données
 
-Les événements de partage (sans les événements liés à la stratégie de partage et aux liens de partage) sont différents des événements liés aux fichiers et aux dossiers d’une manière principale : un utilisateur effectue une action qui a un effet sur un autre utilisateur. Par exemple, lorsqu’un utilisateur de ressource A donne à l’utilisateur B un accès à un fichier. Dans cet exemple, l’utilisateur A est *l’utilisateur agissant* et l’utilisateur B *l’utilisateur cible.* Dans le schéma de fichier SharePoint, l’action de l’utilisateur agissant affecte uniquement le fichier lui-même. Lorsque l’utilisateur A ouvre un fichier, les seules informations nécessaires dans **l’événement FileAccessed** sont l’utilisateur agissant. Pour résoudre cette différence, il existe un schéma distinct, appelé schéma de partage  *SharePoint,* qui capture plus d’informations sur les événements de partage. Cela garantit que les administrateurs ont une visibilité sur les personnes qui ont partagé une ressource et sur l’utilisateur avec qui la ressource a été partagée. 
+Les événements de partage (sans les événements liés à la stratégie de partage et aux liens de partage) sont différents des événements liés aux fichiers et aux dossiers d’une manière principale : un utilisateur effectue une action qui a un effet sur un autre utilisateur. Par exemple, lorsqu’un utilisateur de ressource A donne à l’utilisateur B un accès à un fichier. Dans cet exemple, l’utilisateur A est *l’utilisateur agissant* et l’utilisateur B *l’utilisateur cible.* Dans le schéma SharePoint fichier, l’action de l’utilisateur agissant affecte uniquement le fichier lui-même. Lorsque l’utilisateur A ouvre un fichier, les seules informations nécessaires dans l’événement **FileAccessed** sont l’utilisateur agissant. Pour résoudre cette différence, il existe un schéma distinct, appelé schéma de partage *SharePoint,* qui capture plus d’informations sur les événements de partage. Cela garantit que les administrateurs ont une visibilité sur les personnes qui ont partagé une ressource et sur l’utilisateur avec qui la ressource a été partagée. 
   
 Le schéma de partage fournit deux champs supplémentaires dans un enregistrement d’audit lié au partage d’événements : 
   
@@ -44,11 +44,11 @@ Le schéma de partage fournit deux champs supplémentaires dans un enregistremen
 
 Ces deux champs, en plus des autres propriétés du schéma du journal d’audit, telles que  User, Operation et Date, peuvent indiquer l’utilisateur qui a partagé la ressource avec qui et quand *.*   
   
-Il existe une autre propriété de schéma qui est importante pour l’article de partage. Lorsque vous exportez les résultats de recherche du journal d’audit, la colonne **AuditData** dans le fichier CSV exporté stocke des informations sur les événements de partage. Par exemple, lorsqu’un utilisateur partage un site avec un autre utilisateur, cette action est réalisée en ajoutant l’utilisateur cible à un groupe SharePoint. La **colonne AuditData** capture ces informations pour fournir un contexte aux administrateurs. Pour obtenir des instructions sur l’examen des informations dans la colonne **AuditData,** consultez l’étape [2.](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log)
+Il existe une autre propriété de schéma qui est importante pour l’article de partage. Lorsque vous exportez les résultats de recherche du journal d’audit, la colonne **AuditData** dans le fichier CSV exporté stocke des informations sur les événements de partage. Par exemple, lorsqu’un utilisateur partage un site avec un autre utilisateur, cette action est réalisée en ajoutant l’utilisateur cible à un SharePoint groupe. La **colonne AuditData** capture ces informations pour fournir du contexte aux administrateurs. Consultez [l’étape 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) pour obtenir des instructions sur l’examen des informations dans la **colonne AuditData.**
 
-## <a name="sharepoint-sharing-events"></a>Événements de partage SharePoint
+## <a name="sharepoint-sharing-events"></a>SharePoint événements de partage
 
-Le partage est défini par lorsqu’un utilisateur (l’utilisateur *agissant)* souhaite partager une ressource avec un autre utilisateur *(l’utilisateur* cible). Les enregistrements d’audit liés au partage d’une ressource avec un utilisateur externe (un utilisateur qui est en dehors de votre organisation et qui n’a pas de compte invité dans Azure Active Directory de votre organisation) sont identifiés par les événements suivants, qui sont enregistrés dans le journal d’audit :
+Le partage est défini par lorsqu’un utilisateur (l’utilisateur *agissant)* souhaite partager une ressource avec un autre utilisateur *(l’utilisateur* cible). Les enregistrements d’audit liés au partage d’une ressource avec un utilisateur externe (un utilisateur qui est en dehors de votre organisation et qui n’a pas de compte invité dans le Azure Active Directory de votre organisation) sont identifiés par les événements suivants, qui sont enregistrés dans le journal d’audit :
 
 - **SharingInvitationCreated :** Un utilisateur de votre organisation a tenté de partager une ressource (probablement un site) avec un utilisateur externe. Cela entraîne l’envoi d’une invitation de partage externe à l’utilisateur cible. Aucun accès à la ressource n’est accordé à ce stade.
 
@@ -64,15 +64,15 @@ Le partage est défini par lorsqu’un utilisateur (l’utilisateur *agissant)* 
 
 ## <a name="sharing-auditing-work-flow"></a>Partage du flux de travail d’audit
   
-Lorsqu’un utilisateur (l’utilisateur agissant) souhaite partager une ressource avec un autre utilisateur (l’utilisateur cible), SharePoint (ou OneDrive Entreprise) vérifie d’abord si l’adresse e-mail de l’utilisateur cible est déjà associée à un compte d’utilisateur dans l’annuaire de l’organisation. Si l’utilisateur cible se trouve dans l’annuaire (et possède un compte d’utilisateur invité correspondant), SharePoint fait les actions suivantes :
+Lorsqu’un utilisateur (l’utilisateur agissant) souhaite partager une ressource avec un autre utilisateur (l’utilisateur cible), SharePoint (ou OneDrive Entreprise) vérifie d’abord si l’adresse e-mail de l’utilisateur cible est déjà associée à un compte d’utilisateur dans l’annuaire de l’organisation. Si l’utilisateur cible se trouve dans l’annuaire (et possède un compte d’utilisateur invité correspondant), SharePoint les choses suivantes :
   
 -  Attribue immédiatement à l’utilisateur cible les autorisations d’accès à la ressource en ajoutant l’utilisateur cible au groupe SharePoint approprié et enregistre un **événement AddedToGroup.** 
     
 - Envoie une notification de partage à l’adresse e-mail de l’utilisateur cible.
     
-- Enregistre un **événement SharingSet.** Cet événement a un nom convivial « Fichier partagé, dossier ou site » sous Activités de demande de partage et d’accès dans le s sélectionneur d’activités de l’outil de recherche du journal d’audit.  Consultez la capture [d’écran de l’étape 1.](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file) 
+- Enregistre un **événement SharingSet.** Cet événement a le nom convivial « Fichier partagé, dossier ou site » sous Activités de demande de partage et d’accès dans le s sélectionneur d’activités de l’outil de recherche du journal d’audit.  Consultez la capture [d’écran de l’étape 1.](#step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file) 
     
-Si un compte d’utilisateur de l’utilisateur cible n’est pas dans l’annuaire, SharePoint : 
+Si un compte d’utilisateur de l’utilisateur cible n’est pas dans l’annuaire, SharePoint :: 
     
    - Enregistre l’un des événements suivants, en fonction de la façon dont la ressource est partagée :
    
@@ -90,7 +90,7 @@ Des informations supplémentaires sur l’utilisateur cible sont également enre
 
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Comment identifier les ressources partagées avec des utilisateurs externes
 
-Une exigence courante pour les administrateurs consiste à créer une liste de toutes les ressources qui ont été partagées avec des utilisateurs en dehors de l’organisation. En utilisant le partage d’audit dans Office 365, les administrateurs peuvent générer cette liste. Voici comment procéder.
+Une exigence courante pour les administrateurs consiste à créer une liste de toutes les ressources qui ont été partagées avec des utilisateurs en dehors de l’organisation. En utilisant le partage d’audit Office 365, les administrateurs peuvent générer cette liste. Voici comment procéder.
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Étape 1 : rechercher des événements de partage et exporter les résultats dans un fichier CSV
 
@@ -106,7 +106,7 @@ La première étape consiste à rechercher des événements de partage dans le j
     
 4. Sous **Activités,** cliquez sur **Activités de partage** et d’accès aux activités de demande pour rechercher des événements liés au partage. 
     
-    ![Sous Activités, sélectionnez Activités de partage et de demande d’accès](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![Sous Activités, sélectionnez Activités de partage et demande d’accès](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Sélectionnez une plage de dates et d’heures pour rechercher les événements de partage qui se sont produits au cours de cette période. 
     
@@ -126,11 +126,11 @@ Pour obtenir des instructions détaillées, consultez « Étape 2 : mise en for
 
 ### <a name="step-3-filter-the-csv-file-for-resources-shared-with-external-users"></a>Étape 3 : Filtrer le fichier CSV pour les ressources partagées avec des utilisateurs externes
 
-L’étape suivante consiste à filtrer le CSV pour les différents événements liés au partage précédemment décrits dans la section Événements de [partage SharePoint.](#sharepoint-sharing-events) Vous pouvez également filtrer la colonne **TargetUserOrGroupType** pour afficher tous les enregistrements dont la valeur de cette propriété est **Invité**. 
+L’étape suivante consiste à filtrer le CSV pour les différents événements liés au partage qui ont été précédemment décrits dans la section [SharePoint événements de partage.](#sharepoint-sharing-events) Vous pouvez également filtrer la colonne **TargetUserOrGroupType** pour afficher tous les enregistrements dont la valeur de cette propriété est **Invité**. 
 
-Après avoir suivi les instructions de l’étape précédente pour préparer le fichier CSV à l’aide de l’éditeur PowerQuery, faites ce qui suit :
+Après avoir suivi les instructions de l’étape précédente pour préparer le fichier CSV à l’aide de l’éditeur PowerQuery, faites les étapes suivantes :
     
-1. Ouvrez le fichier Excel que vous avez créé à l’étape 2. 
+1. Ouvrez le Excel que vous avez créé à l’étape 2. 
 
 2. Sous **l’onglet** Accueil, cliquez **sur Trier & filtre,** puis cliquez sur **Filtrer.**
     
@@ -150,7 +150,7 @@ Après avoir suivi les instructions de l’étape précédente pour préparer le
     
 5. Dans la **liste &** liste & filtre, effacer toutes les sélections, puis **sélectionner TargetUserOrGroupType:Guest,** puis cliquez sur **OK**.
     
-    Excel affiche maintenant les lignes pour le partage d’événements ET où l’utilisateur cible est en dehors de votre organisation, car les utilisateurs externes sont identifiés par la valeur **TargetUserOrGroupType:Guest**. 
+    Maintenant Excel affiche les lignes pour le partage d’événements ET où l’utilisateur cible se trouve en dehors de votre organisation, car les utilisateurs externes sont identifiés par la valeur **TargetUserOrGroupType:Guest**. 
   
 > [!TIP]
 > Pour les enregistrements d’audit qui sont affichés, la **colonne ObjectId** identifie la ressource qui a été partagée avec l’utilisateur cible ; par  `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx` exemple.

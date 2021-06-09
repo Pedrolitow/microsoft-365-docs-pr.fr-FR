@@ -41,7 +41,7 @@ ms.locfileid: "52769436"
 Recherchez [les](machine.md) ordinateurs visibles avec l’adresse IP interne demandée dans l’plage de temps de 15 minutes avant et après un timestamp donné.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. L’timestamp donné doit se trouver dans les 30 derniers jours.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -77,7 +77,7 @@ Autorisation | String | Porteur {token}. **Obligatoire**.
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite - 200 OK avec la liste des ordinateurs dans le corps de la réponse.
+En cas de réussite : 200 - OK avec la liste des ordinateurs dans le corps de la réponse.
 Si l’timestamp n’est pas dans les 30 derniers jours - 400 demande mauvaise.
 
 ## <a name="example"></a>Exemple

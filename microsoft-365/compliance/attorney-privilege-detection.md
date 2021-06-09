@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez le modèle de détection des privilèges client-avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans un cas Advanced eDiscovery.
+description: Utilisez le modèle de détection des privilèges client-avocat pour utiliser la détection basée sur l’apprentissage automatique du contenu privilégié lors de l’examen du contenu dans Advanced eDiscovery cas.
 ms.openlocfilehash: 73a0efeece7bc331045e9bbe1a1da56f9fd24700
 ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
@@ -25,9 +25,9 @@ ms.locfileid: "47358040"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-advanced-ediscovery"></a>Configurer la détection des privilèges client-avocat dans Advanced eDiscovery
 
-Un aspect majeur et coûteux de la phase de révision de tout processus eDiscovery consiste à examiner des documents pour le contenu privilégié. Advanced eDiscovery offre une détection basée sur l’apprentissage automatique du contenu privilégié pour rendre ce processus plus efficace. Cette fonctionnalité est appelée *détection des privilèges client-avocat.*
+Un aspect majeur et coûteux de la phase de révision de tout processus eDiscovery consiste à examiner des documents pour le contenu privilégié. Advanced eDiscovery permet une détection basée sur l’apprentissage automatique du contenu privilégié pour rendre ce processus plus efficace. Cette fonctionnalité est appelée *détection des privilèges client-avocat.*
 
-## <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
+## <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
 
 Lorsque la détection des privilèges client-avocat est activée, tous les documents d’un [](analyzing-data-in-review-set.md) jeu à réviser sont traitées par le modèle de détection des privilèges client-avocat lorsque vous analysez les données du jeu à réviser. Le modèle recherche deux éléments :
 
@@ -59,7 +59,7 @@ Une personne qui est administrateur eDiscovery dans votre organisation (membre d
 
 1. Dans le Centre de sécurité & conformité, go to **eDiscovery > Advanced eDiscovery**.
 
-2. Dans la page **d’accueil Advanced eDiscovery,** dans la vignette **Paramètres,** cliquez sur **Configurer les paramètres d’analyse globale.**
+2. Sur la **Advanced eDiscovery** d’accueil, dans la **vignette Paramètres,** cliquez sur **Configurer les paramètres d’analyse globale.**
 
    ![Sélectionnez « Configurer les fonctionnalités expérimentales »](../media/AeDExperimentalFeatures.png)
 
@@ -67,7 +67,7 @@ Une personne qui est administrateur eDiscovery dans votre organisation (membre d
 
 4. Sur la page de menu déroulant **Privilège client-avocat**, utilisez le bouton bascule pour activer la fonctionnalité, puis sélectionnez **Enregistrer**.
 
-### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Étape 2 : Télécharger une liste d’avocats (facultatif)
+### <a name="step-2-upload-a-list-of-attorneys-optional"></a>Étape 2 : Télécharger liste des avocats (facultatif)
 
 Pour tirer pleinement parti du modèle de détection des privilèges client-avocat et utiliser les résultats de la détection Has **Attorney** ou **Potentially Privileged** précédemment décrite, nous vous recommandons de charger une liste d’adresses de messagerie pour les avocats et le personnel juridique qui travaillent pour votre organisation. 
 
@@ -75,13 +75,13 @@ Pour télécharger une liste d’avocats à utiliser par le modèle de détectio
 
 1. Créez un fichier .csv (sans ligne d’en-tête), puis ajoutez l’adresse de messagerie de chaque personne appropriée sur une ligne distincte. Enregistrez ce fichier sur votre ordinateur local.
 
-2. Dans la page d’accueil Advanced **eDiscovery,** dans la vignette Paramètres, sélectionnez **Configurer** les **fonctionnalités expérimentales,** puis sélectionnez Gérer le paramètre de privilège **client-avocat.**
+2. Sur la page **Advanced eDiscovery** d’accueil, dans la **vignette Paramètres,** sélectionnez Configurer les fonctionnalités expérimentales, puis sélectionnez Gérer le paramètre de privilège **client-avocat.**
 
    La page **Privilège client-avocat** s’affiche et le basculement de détection des privilèges **client-avocat** est allumé.
 
-   ![Page de flyout de privilège client-avocat](../media/AeDUploadAttorneyList.png)
+   ![Page de volant de privilège client-avocat](../media/AeDUploadAttorneyList.png)
 
-3. Sélectionnez **Parcourir,** puis recherchez et sélectionnez le fichier .csv que vous avez créé à l’étape 1.
+3. Sélectionnez **Parcourir,** puis recherchez et sélectionnez .csv fichier que vous avez créé à l’étape 1.
 
 4. Sélectionnez **Enregistrer** pour télécharger la liste des avocats.
 
@@ -109,7 +109,7 @@ L’un des principaux moyens d’afficher les résultats de la détection du pri
 
 ### <a name="step-2-analyze-a-review-set"></a>Étape 2 : Analyser un jeu à réviser
 
-Lorsque vous analysez les documents d’un jeu à réviser, le modèle de détection des privilèges client-avocat s’exécute également et les propriétés correspondantes (décrites dans How [does it work?](#how-does-it-work) sont ajoutées à chaque document du jeu à réviser). Pour plus d’informations sur l’analyse des données dans le jeu à réviser, voir Analyser les données dans un jeu à réviser dans [Advanced eDiscovery](analyzing-data-in-review-set.md).
+Lorsque vous analysez les documents d’un jeu à réviser, le modèle de détection des privilèges client-avocat s’exécute également et les propriétés correspondantes (décrites dans How [does it work?](#how-does-it-work) sont ajoutées à chaque document du jeu à réviser). Pour plus d’informations sur l’analyse des données dans le jeu à réviser, voir Analyser les données dans un jeu à [réviser Advanced eDiscovery](analyzing-data-in-review-set.md).
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>Étape 3 : Utiliser le groupe de balises intelligentes pour passer en revue le contenu privilégié
 
@@ -117,7 +117,7 @@ Après l’analyse de l’ensemble de révision et la configuration des balises 
 
 - Si le document possède du contenu de  nature juridique, le contenu de l’étiquette Legal s’affiche à côté de la balise smart correspondante (qui est dans ce cas la balise **positive** par défaut).
 
-- Si le document contient un participant trouvé dans la liste des avocats de votre organisation, l’étiquette **Avocat** s’affiche à côté de la balise active correspondante (qui est également la balise **Positive** par défaut dans ce cas).
+- Si le document contient un participant qui figure dans la liste des avocats de votre organisation, l’étiquette **Avocat** s’affiche à côté de la balise active correspondante (qui est également la balise **Positive** par défaut dans ce cas).
 
 - Si le document contient du contenu de *nature* juridique et qu’un  participant  figure dans la liste des avocats, le contenu juridique et les étiquettes Avocat sont affichés. 
 

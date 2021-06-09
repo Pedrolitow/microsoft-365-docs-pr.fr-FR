@@ -1,5 +1,5 @@
 ---
-title: Isolation microsoft 365 et contrôle d’accès dans Azure Active Directory
+title: Microsoft 365 Isolation et contrôle d’accès dans Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Dans cet article, découvrez comment fonctionne l’isolation et le contrôle d’accès pour conserver les données de plusieurs clients isolés les uns des autres dans Azure Active Directory.
+description: Dans cet article, découvrez comment l’isolation et le contrôle d’accès fonctionnent pour conserver les données de plusieurs clients isolés les uns des autres au sein Azure Active Directory.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 198e1f37a7378d14d5a4ad28d5bce9d480b2c49e
 ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
@@ -23,7 +23,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/02/2020
 ms.locfileid: "47332411"
 ---
-# <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Isolation microsoft 365 et contrôle d’accès dans Azure Active Directory
+# <a name="microsoft-365-isolation-and-access-control-in-azure-active-directory"></a>Microsoft 365 Isolation et contrôle d’accès dans Azure Active Directory
 
 Azure Active Directory (Azure AD) a été conçu pour héberger plusieurs clients de manière hautement sécurisée via l’isolation logique des données. L’accès à Azure AD est limité par une couche d’autorisation. Azure AD isole les clients qui utilisent des conteneurs clients comme limites de sécurité pour protéger le contenu d’un client afin qu’il ne soit pas accessible ou compromis par les co-locataires. Trois vérifications sont effectuées par la couche d’autorisation d’Azure AD :
 
@@ -33,7 +33,7 @@ Azure Active Directory (Azure AD) a été conçu pour héberger plusieurs client
 
 Aucune application, utilisateur, serveur ou service ne peut accéder à Azure AD sans l’authentification et le jeton ou le certificat appropriés. Les demandes sont rejetées si elles ne sont pas accompagnées d’informations d’identification correctes.
 
-En fait, Azure AD héberge chaque client dans son propre conteneur protégé, avec des stratégies et des autorisations pour et au sein du conteneur uniquement, qui sont la propriété et la gestion du client.
+En fait, Azure AD héberge chaque client dans son propre conteneur protégé, avec des stratégies et des autorisations pour et au sein du conteneur, uniquement la propriété et la gestion par le client.
  
 ![Conteneur Azure](../media/office-365-isolation-azure-container.png)
 

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Vous pouvez corriger une erreur de traitement dans un document dans un jeu à réviser dans Advanced eDiscovery sans avoir à suivre le processus de correction des erreurs en bloc.
+description: Vous pouvez corriger une erreur de traitement dans un document dans un groupe de révision dans Advanced eDiscovery sans avoir à suivre le processus de correction des erreurs en bloc.
 ms.openlocfilehash: 8e5d8d00f507dc5792a1beda018d4c76632b82f7
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49751581"
 ---
-# <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Correction d’erreur d’élément unique dans Advanced eDiscovery
+# <a name="single-item-error-remediation-in-advanced-ediscovery"></a>Correction des erreurs d’élément unique Advanced eDiscovery
 
-La correction d’erreur permet aux utilisateurs d’Advanced eDiscovery de corriger les problèmes de données qui empêchent Advanced eDiscovery de traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traitées, car ces fichiers sont verrouillés ou chiffrés. Auparavant, vous pouviez uniquement corriger les erreurs en bloc à l’aide [de ce flux de travail.](error-remediation-when-processing-data-in-advanced-ediscovery.md) Mais parfois, il n’est pas logique de corriger les erreurs dans plusieurs fichiers lorsque vous ne savez pas si l’un de ces fichiers répond au cas que vous examinez. Il peut également ne pas être utile de corriger les erreurs avant d’avoir eu la possibilité de passer en revue les métadonnées de fichier (par exemple, l’emplacement du fichier ou les personnes ayant accès) pour vous aider à prendre des décisions à l’avance en matière de réactivité. Une nouvelle  fonctionnalité appelée correction d’erreur d’élément unique permet aux gestionnaires eDiscovery d’afficher les métadonnées des fichiers avec une erreur de traitement et, si nécessaire, de corriger l’erreur directement dans le jeu à réviser. L’article explique comment identifier, ignorer et corriger les fichiers avec des erreurs de traitement dans un jeu à réviser.
+La correction des Advanced eDiscovery permet aux utilisateurs de corriger les problèmes de données qui empêchent Advanced eDiscovery traiter correctement le contenu. Par exemple, les fichiers protégés par mot de passe ne peuvent pas être traitées, car ces fichiers sont verrouillés ou chiffrés. Auparavant, vous pouviez uniquement corriger les erreurs en bloc à l’aide [de ce flux de travail.](error-remediation-when-processing-data-in-advanced-ediscovery.md) Mais parfois, il n’est pas logique de corriger les erreurs dans plusieurs fichiers lorsque vous ne savez pas si l’un de ces fichiers répond au cas que vous examinez. Il peut également ne pas être utile de corriger les erreurs avant d’avoir eu la possibilité de passer en revue les métadonnées de fichier (par exemple, l’emplacement du fichier ou les personnes ayant accès) pour vous aider à prendre des décisions à l’avance en matière de réactivité. Une nouvelle  fonctionnalité appelée correction d’erreur d’élément unique permet aux gestionnaires eDiscovery d’afficher les métadonnées des fichiers avec une erreur de traitement et, si nécessaire, de corriger l’erreur directement dans le jeu à réviser. Cet article explique comment identifier, ignorer et corriger les fichiers avec des erreurs de traitement dans un jeu à réviser.
 
 ## <a name="identify-documents-with-errors"></a>Identifier les documents avec des erreurs
 
@@ -45,7 +45,7 @@ Vous pouvez ignorer une erreur de traitement en cliquant sur **Ignorer** dans la
 
 Vous pouvez également rechercher tous les documents dont l’erreur de traitement a été ignorée à l’aide de la *condition* d’erreurs de traitement ignorée lors de l’interrogation de documents dans un jeu à réviser.
 
-![Utiliser la condition Des erreurs de traitement ignorées pour rechercher des documents d’erreur ignorés](../media/SIERimage4.png)
+![Utiliser la condition d’erreurs de traitement ignorées pour rechercher des documents d’erreur ignorés](../media/SIERimage4.png)
 
 ## <a name="remediate-a-document-with-errors"></a>Corriger un document avec des erreurs
 
@@ -68,7 +68,7 @@ Pour corriger un document unique, suivez les étapes suivantes :
 
    ![Cliquez sur Parcourir et sélectionnez le fichier corrigé sur votre ordinateur local](../media/SIERimage7.png)
 
-    Une fois le fichier corrigé sélectionné, il est automatiquement chargé dans le jeu à réviser. Vous pouvez suivre l’état de traitement du fichier.
+    Après avoir sélectionné le fichier corrigé, il est automatiquement chargé dans le jeu à réviser. Vous pouvez suivre l’état de traitement du fichier.
 
     ![L’état du processus de correction s’affiche](../media/SIERimage8.png)
 

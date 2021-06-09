@@ -28,17 +28,17 @@ ms.locfileid: "49760065"
 
 Votre organisation configure les paramètres qui contrôlent les applications mobiles que vous pouvez utiliser pour accéder à votre compte de travail pour la messagerie, le calendrier et les contacts.
 
-Les applications mobiles Outlook pour Android et Outlook pour iOS sont conçues pour votre messagerie scolaire ou scolaire. Ces applications fournissent des fonctionnalités telles que la boîte de réception [Focus,](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)qui conserve les messages électroniques importants au premier plan et au centre, et [Assistant Planification,](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470)qui vous aide à trouver des heures de réunion qui fonctionnent avec des collègues et trouve simplement des salles de conférence disponibles.
+Les Outlook pour Android et Outlook pour les applications mobiles iOS sont conçues pour votre courrier électronique scolaire ou scolaire. Ces applications fournissent des fonctionnalités telles que la boîte de réception [Focus,](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)qui conserve les messages électroniques importants au premier plan et au centre, et [Assistant Planification](https://support.microsoft.com/office/scheduling-made-easy-in-outlook-mobile-11c5bee5-d78a-4a2b-80c2-2b386ddb4470), qui vous aide à trouver des heures de réunion qui fonctionnent avec des collègues et trouve simplement des salles de conférence disponibles.
   
 ## <a name="end-user-experience"></a>Expérience utilisateur final
 
-### <a name="outlook-only"></a>Outlook uniquement
+### <a name="outlook-only"></a>Outlook Uniquement
 
-Votre organisation exige que vous utilisez les applications mobiles Outlook pour Android ou Outlook pour iOS pour accéder à la messagerie électronique, au calendrier et aux contacts de l’entreprise. Vos données démarrent la synchronisation une fois que vous téléchargez et installez Outlook pour Android ou Outlook pour iOS.
+Votre organisation exige que vous utilisez le Outlook pour Android ou Outlook pour les applications mobiles iOS pour accéder à la messagerie électronique, au calendrier et aux contacts de l’entreprise. Vos données démarrent la synchronisation une fois que vous téléchargez et installez Outlook pour Android ou Outlook pour iOS.
 
-![Exemple de courrier électronique pour utiliser Outlook pour synchroniser le courrier électronique](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
+![Exemple de courrier électronique à utiliser Outlook pour synchroniser le courrier électronique](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
 
-Pour plus [de fonctionnalités Outlook,](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) voir Optimiser l’application mobile Outlook pour votre téléphone iOS ou Android. Et go to [Outlook for iOS and Android Help Center](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) if you run into any issues.
+Pour plus [d’Outlook,](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) consultez Optimiser l’Outlook mobile pour votre téléphone iOS ou Android. Et allez à [Outlook pour iOS](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) et le Centre d’aide Android si vous avez des problèmes.
 
 ### <a name="any-email-app"></a>N’importe quelle application de messagerie
 

@@ -1,7 +1,7 @@
 ---
 title: Planifier les versions logicielles et logicielles de fin de prise en charge
 description: Découvrez et planifiez les versions logicielles et logicielles qui ne sont plus pris en charge et qui ne reçoivent pas de mises à jour de sécurité.
-keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation sur la cybersécurité, recommandation de sécurité actionnable
+keywords: Gestion des menaces et des vulnérabilités, recommandation sur la sécurité tvm de Microsoft Defender pour les points de terminaison, recommandation en matière de cybersécurité, recommandation de sécurité actionnable
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

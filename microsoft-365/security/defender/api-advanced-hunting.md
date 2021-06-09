@@ -56,7 +56,7 @@ Les conditions suivantes concernent toutes les requêtes.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour en savoir plus, notamment sur le choix des autorisations, consultez [l’Microsoft 365 API Protection de Defender](api-access.md)
+L’une des autorisations suivantes est nécessaire pour appeler l’API de recherche avancée. Pour plus d’informations, notamment sur le choix des autorisations, consultez [la Microsoft 365 API Protection de Defender](api-access.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
@@ -79,7 +79,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 En-tête | Valeur
 -|-
-Authorization | Remarque {token} du porteur **: obligatoire**
+Autorisation | Remarque {token} du porteur **: obligatoire**
 Content-Type | application/json
 
 ## <a name="request-body"></a>Corps de la demande

@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: Utilisez les guides de laboratoire de test pour créer des solutions et des scénarios Microsoft 365 dans un environnement dev/test.
+description: Utilisez les guides de laboratoire de test pour créer Microsoft 365 solutions et scénarios dans un environnement dev/test.
 ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
 ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
@@ -36,4 +36,4 @@ Les guides de laboratoire de test vous permettent également de créer des envir
 
 Essayez [ce guide de laboratoire de test](team-security-isolation-dev-test.md) pour configurer une équipe avec l’isolation de sécurité.
 
-Pour obtenir des guides supplémentaires sur les fonctionnalités et la configuration de Microsoft 365, voir les guides de laboratoire de [test Microsoft 365 pour entreprise.](../enterprise/m365-enterprise-test-lab-guides.md)
+Pour obtenir des guides supplémentaires sur Microsoft 365 et la configuration, voir Microsoft 365 guides de laboratoire de [test d’entreprise.](../enterprise/m365-enterprise-test-lab-guides.md)

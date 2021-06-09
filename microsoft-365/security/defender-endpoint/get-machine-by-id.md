@@ -1,6 +1,6 @@
 ---
 title: API Obtenir l’ordinateur par ID
-description: Découvrez comment utiliser l’API Obtenir un ordinateur par ID pour récupérer un ordinateur par son ID d’appareil ou son nom d’ordinateur dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Get machine by ID pour récupérer un ordinateur par son ID d’appareil ou son nom d’ordinateur dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils, entité, ID
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -30,7 +30,7 @@ ms.locfileid: "52769472"
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "52769472"
 Récupère un ordinateur [spécifique par](machine.md) son ID d’appareil ou son nom d’ordinateur.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Vous pouvez obtenir la dernière vue des appareils en fonction de votre stratégie de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 

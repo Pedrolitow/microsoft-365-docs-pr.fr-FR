@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Vue d’ensemble du traitement de différentes formes de données dans Advanced eDiscovery.
+description: Vue d’ensemble du traitement de différentes formes de données Advanced eDiscovery.
 ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.locfileid: "49751511"
 
  Le traitement est le processus d’identification de fichiers, d’extension des documents et pièces jointes incorporés, d’extraction de texte et de reconnaissance optique de caractères (OCR) des fichiers image et de l’indexation ultérieure de ce contenu.  
 
-Lorsque vous ajoutez des dépositaires et des sources de données non dépositaires à un cas sous l’onglet **Sources,** tous les éléments partiellement indexés de Microsoft 365 sont traitées pour les rendre entièrement utilisables dans une recherche. De même, lorsque du contenu est ajouté à un jeu à réviser à partir de sources de données Microsoft 365 et non-Microsoft 365, ce contenu est également traitée.
+Lorsque vous ajoutez des dépositaires et des sources de données non dépositaires à un cas sous l’onglet **Sources,** tous les éléments partiellement indexés à partir de Microsoft 365 sont traitées pour les rendre entièrement utilisables dans une recherche. De même, lorsque du contenu est ajouté à un jeu à réviser à partir de sources de données Microsoft 365 et non Microsoft 365 données, ce contenu est également traitée.
 
 L’onglet **Traitement** dans Advanced eDiscovery fournit un aperçu de l’état de l’indexation avancée pour différents scénarios de traitement.
 
-Si vous souhaitez en savoir plus, consultez les articles suivants :
+Pour plus d’informations, voir les articles suivants :
 
 - [Indexation avancée des données des consignataires](indexing-custodian-data.md)
 

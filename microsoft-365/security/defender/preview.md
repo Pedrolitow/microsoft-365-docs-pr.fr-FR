@@ -1,5 +1,5 @@
 ---
-title: Fonctionnalités d’aperçu dans Microsoft 365 Defender
+title: Aperçu des fonctionnalités dans Microsoft 365 Defender
 description: En savoir plus sur les nouvelles fonctionnalités de la Sécurité Microsoft 365
 keywords: aperçu, nouveautés, sécurité M365, sécurité, 365, capacités
 search.product: eADQiWindows 10XVcnh
@@ -39,7 +39,7 @@ ms.locfileid: "52730521"
 
 Le service Microsoft 365 Defender est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
 
-Découvrez les nouvelles fonctionnalités de Microsoft 365 la version d’aperçu de Defender et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
+Découvrez les nouvelles fonctionnalités de la version Microsoft 365 La version préliminaire de Defender et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013 en 2013.
 
 Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir Nouveautés de [Microsoft 365 Defender.](whats-new.md)
 
@@ -70,6 +70,6 @@ Les fonctionnalités et améliorations suivantes sont actuellement disponibles e
 
 - **[API de diffusion](../defender-endpoint/raw-data-export.md)** en continu : Microsoft 365 Defender prend en charge la diffusion en continu de tous les événements disponibles via la recherche avancée vers un hub d’événements et/ou un compte de stockage Azure.
 - **[Microsoft 365 API Defender](api-overview.md)** : les API Microsoft 365 Defender de niveau supérieur vous permettent d’automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées. 
-- **[Prendre des mesures dans le hunting avancé](advanced-hunting-take-action.md)** : contenir rapidement des menaces ou traiter les ressources compromises que vous trouvez dans le hunting [avancé](advanced-hunting-overview.md).
-- **[Référence de schéma dans](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** le portail : obtenez des informations sur les tables de schéma de recherche avancée directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
+- **[Prendre des mesures dans le hunting avancé](advanced-hunting-take-action.md)** - Contenir rapidement des menaces ou traiter les ressources compromises que vous trouvez dans le hunting [avancé](advanced-hunting-overview.md).
+- **[Référence de schéma dans](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** le portail : obtenez des informations sur les tableaux de schéma de recherche avancés directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
 - **[Fonction DeviceFromIP()](advanced-hunting-devicefromip-function.md)** : obtenir des informations sur les appareils qui ont été affectés à une ou plusieurs adresses IP spécifiques à une plage de temps donnée.

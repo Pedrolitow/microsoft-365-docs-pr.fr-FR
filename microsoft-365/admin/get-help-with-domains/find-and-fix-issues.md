@@ -73,9 +73,9 @@ Si vous avez défini votre enregistrement MX et les autres enregistrements DNS c
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>Tout le monde a basculé vers Microsoft 365 et vous vouliez uniquement que votre courrier électronique bascule ?
 <a name="BKMK_EmailSwitched"> </a>
 
-Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous ou par Microsoft 365) pour pointer vers Microsoft 365, et tous les messages électroniques envoyés à ce domaine commenceront à Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX.
+Lorsque vous ajoutez votre domaine à Microsoft 365, l’enregistrement MX de votre domaine est généralement mis à jour (par vous ou par Microsoft 365) pour pointer vers Microsoft 365, et tous les messages électroniques envoyés à ce domaine commenceront à Microsoft 365. Assurez-vous que vous avez créé des boîtes aux lettres dans Microsoft 365 pour toutes les personnes qui ont des messages sur votre domaine AVANT de modifier l’enregistrement MX.
   
-Que se passe-t-il si vous ne souhaitez pas déplacer le courrier électronique de tous les Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses de](../setup/domains-faq.yml)messagerie à la place.
+Que se passe-t-il si vous ne souhaitez pas déplacer le courrier électronique de tous les Microsoft 365 ? Vous pouvez prendre des mesures pour [piloter Microsoft 365 avec seulement quelques adresses e-mail à la place.](../setup/domains-faq.yml)
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Vous ne pouvez pas confirmer l’état d’un compte à but non lucratif ou scolaire ?
 <a name="BKMK_validateAcct"> </a>
@@ -90,7 +90,7 @@ Consultez les instructions dans Vérifier votre domaine Microsoft 365 pour prouv
 Nous pouvons vous aider à identifier les problèmes liés à la configuration DNS de votre domaine. L’dépannage des domaines dans Microsoft 365 affiche tous les enregistrements qui doivent être corrigés et indique exactement ce que les enregistrements doivent être définies. 
 
 > [!TIP]
-> Votre DNS est correctement configuré, mais le courrier électronique ne fonctionne pas dans Outlook sur votre ordinateur de bureau ? Consultez les [différents scénarios](/exchange/mail-flow-best-practices/mail-flow-best-practices) de flux de messagerie que vous pouvez avoir avec Microsoft 365 pour vous assurer que les choses sont correctement définies pour votre entreprise. Vous pouvez également obtenir de l'aide concernant la résolution des problèmes liés à le courrier dans la page suivante : [Résoudre les problèmes liés à Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
+> Votre DNS est correctement configuré, mais le courrier électronique ne fonctionne pas dans Outlook sur votre ordinateur de bureau ? Consultez les [différents scénarios](/exchange/mail-flow-best-practices/mail-flow-best-practices) de flux de messagerie que vous pouvez avoir avec Microsoft 365 pour vous assurer que les éléments sont correctement mis en place pour votre entreprise. Vous pouvez également obtenir de l'aide concernant la résolution des problèmes liés à le courrier dans la page suivante : [Résoudre les problèmes liés à Outlook](/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues). 
   
 ## <a name="accessing-your-website-isnt-working"></a>Vous ne parvenez pas à accéder à votre site web ?
 <a name="BKMK_Website"> </a>

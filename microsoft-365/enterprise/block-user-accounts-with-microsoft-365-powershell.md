@@ -1,5 +1,5 @@
 ---
-title: Bloquer les comptes d’utilisateur Microsoft 365 avec PowerShell
+title: Bloquer Microsoft 365 comptes d’utilisateurs avec PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Comment utiliser PowerShell pour bloquer et débloquer l’accès aux comptes Microsoft 365.
+description: Comment utiliser PowerShell pour bloquer et débloquer l’accès Microsoft 365 comptes.
 ms.openlocfilehash: c1a79d925965fafd796033182098e68e26a81473
 ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
@@ -26,15 +26,15 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/24/2020
 ms.locfileid: "48754679"
 ---
-# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquer les comptes d’utilisateur Microsoft 365 avec PowerShell
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloquer Microsoft 365 comptes d’utilisateurs avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Lorsque vous bloquez l’accès à un compte Microsoft 365, vous empêchez toute personne d’utiliser le compte pour se connecter et accéder aux services et données de votre organisation Microsoft 365. Vous pouvez utiliser PowerShell pour bloquer l’accès à des comptes d’utilisateurs individuels ou multiples.
+Lorsque vous bloquez l’accès à un compte Microsoft 365, vous empêchez quiconque d’utiliser le compte pour se connecter et accéder aux services et données de votre organisation Microsoft 365. Vous pouvez utiliser PowerShell pour bloquer l’accès à des comptes d’utilisateur individuels ou multiples.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
  
 ### <a name="block-access-to-individual-user-accounts"></a>Bloquer l’accès à des comptes d’utilisateurs individuels
 
@@ -114,9 +114,9 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
     
-### <a name="block-individual-user-accounts"></a>Bloquer des comptes d’utilisateur individuels
+### <a name="block-individual-user-accounts"></a>Bloquer des comptes d’utilisateurs individuels
 
 Utilisez la syntaxe suivante pour bloquer l’accès à un compte d’utilisateur individuel :
   
@@ -125,7 +125,7 @@ Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential
 ```
 
 >[!Note]
->PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell module et les cmdlets qui ont *Msol* dans leur nom. Vous devez exécuter ces cmdlets à partir Windows PowerShell.
+>PowerShell Core ne prend pas en charge le module Microsoft Azure Active Directory pour Windows PowerShell et les cmdlets dont le nom comprend *Msol.* Vous devez exécuter ces cmdlets à partir Windows PowerShell.
 
 Cet exemple bloque l’accès au compte d’utilisateur *fabricec \@ litwareinc.com*.
   
@@ -172,6 +172,6 @@ Pour débloquer les comptes indiqués dans le fichier texte, exécutez la comman
 
 [Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)

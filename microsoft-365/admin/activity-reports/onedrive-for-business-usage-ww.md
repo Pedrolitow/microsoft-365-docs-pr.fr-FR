@@ -45,15 +45,15 @@ Par exemple, la carte OneDrive du tableau de bord offre une vue d'ensemble de ce
 
 Vous pouvez afficher l’utilisation dans le rapport OneDrive en choisissant **l’onglet** Utilisation.<br/>![Microsoft 365 rapports d’Microsoft OneDrive d’utilisation.](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![OneDrive d’utilisation : choisir des colonnes](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
+Sélectionnez **Sélectionner des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![OneDrive d’utilisation : choisir des colonnes](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
-Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
+Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant le lien **Exporter.** Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Élément|Description|
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |URL  <br/> |Adresse web de l’utilisateur OneDrive. <br/> |
-|Deleted  <br/> |État de suppression du OneDrive. La suppression effective des comptes prend au minimum 7 jours.  <br/> |
+|Supprimé  <br/> |État de suppression du OneDrive. La suppression effective des comptes prend au minimum 7 jours.  <br/> |
 |Propriétaire  <br/> |Nom d’utilisateur de l’administrateur principal du OneDrive.   <br/> |
 |Nom principal du propriétaire  <br/> |Adresse de messagerie du propriétaire du OneDrive. <br/> |
 |Date de la dernière activité (UTC)  <br/> | Date à laquelle une activité de fichier a été effectuée au plus tard dans la OneDrive. Si le OneDrive ne présente aucune activité de fichier, la valeur sera vide.  <br/> |

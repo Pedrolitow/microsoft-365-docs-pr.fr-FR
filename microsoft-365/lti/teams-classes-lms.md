@@ -1,5 +1,5 @@
 ---
-title: Utiliser Microsoft Teams classes dans votre système de gestion de l’apprentissage
+title: Utiliser Microsoft Teams classes avec tableau noir
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -13,19 +13,19 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams classes dans votre système de gestion de l’apprentissage
-ms.openlocfilehash: 18d33225dd57932af20421c6b3b5dc4fe3b397b8
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 287b9f1cadfdcf3adafdca91f4a351865bbcf3bc
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327730"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821270"
 ---
-# <a name="use-microsoft-teams-classes-in-your-learning-management-system"></a>Utiliser Microsoft Teams classes dans votre système de gestion de l’apprentissage
+# <a name="use-microsoft-teams-classes-with-blackboard"></a>Utiliser Microsoft Teams classes avec tableau noir
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Microsoft Teams équipes de cours est une application d’interopérabilité des outils d’apprentissage (LTI) qui permet aux enseignants et aux étudiants de naviguer facilement entre leur système de gestion de l’apprentissage (LMS) et Teams. Les utilisateurs peuvent accéder à leurs équipes de cours associées à leur cours directement à partir de leur LMS.
+Microsoft Teams classes est une application d’interopérabilité des outils d’apprentissage (LTI) qui permet aux enseignants et aux étudiants de naviguer facilement entre leur système de gestion de l’apprentissage (LMS) et Teams. Les utilisateurs peuvent accéder à leurs équipes de cours associées à leur cours directement à partir de leur LMS.
 
 ## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>Approuver l’application dans le Microsoft Azure client
 
@@ -68,7 +68,7 @@ En tant qu’administrateur Blackboard Learn Ultra, vous devez inscrire 2 applic
 
 5. Examinez les paramètres pré-remplis et assurez-vous que l’état de l’outil est marqué comme approuvé.
 
-6. Faites défiler jusqu’au bas, puis sélectionnez **Envoyer.**
+6. Faites défiler vers le bas, puis sélectionnez **Envoyer.**
 
 7. Répétez les étapes précédentes pour inscrire la deuxième application LTI dans votre environnement.
 

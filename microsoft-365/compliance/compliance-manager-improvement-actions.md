@@ -27,13 +27,13 @@ ms.locfileid: "51570383"
 
 ## <a name="manage-compliance-workflows-with-improvement-actions"></a>Gérer les flux de travail de conformité avec des actions d’amélioration
 
-Les actions d’amélioration centralisent vos activités de conformité. Chaque action d’amélioration fournit des instructions de mise en œuvre détaillées pour vous aider à vous aligner sur les réglementations et normes en matière de protection des données. Des actions peuvent être affectées aux utilisateurs de votre organisation pour effectuer des tâches d’implémentation et de test. Vous pouvez également stocker de la documentation, des notes et enregistrer des mises à jour d’état au sein de l’action.
+Les actions d’amélioration centralisent vos activités de conformité. Chaque action d’amélioration fournit des instructions d’implémentation détaillées pour vous aider à vous aligner sur les réglementations et normes en matière de protection des données. Des actions peuvent être affectées aux utilisateurs de votre organisation pour effectuer des tâches d’implémentation et de test. Vous pouvez également stocker de la documentation, des notes et enregistrer des mises à jour d’état au sein de l’action.
 
 Toutes vos actions d’amélioration sont répertoriées sur la page Actions d’amélioration. En savoir plus sur [l’affichage de vos actions d’amélioration.](compliance-manager-setup.md#improvement-actions-page)
 
 ## <a name="improvement-actions-details-page"></a>Page détails des actions d’amélioration
 
-Chaque action d’amélioration possède une page de détails indiquant son état actuel, les normes et exigences réglementaires associées, ainsi que les recommandations d’implémentation recommandées. [Les actions techniques](compliance-score-calculation.md#technical-and-non-technical-actions) incluent un **lien Lancer maintenant** qui vous permet d’obtenir la solution appropriée pour l’implémentation. Vous pouvez joindre la documentation d’implémentation et de test directement dans la page de détails d’une action d’amélioration.
+Chaque action d’amélioration possède une page de détails indiquant son état actuel, les normes et exigences réglementaires associées, ainsi que des recommandations d’implémentation. [Les actions techniques](compliance-score-calculation.md#technical-and-non-technical-actions) incluent **un lien Lancer maintenant** qui vous permet d’obtenir la solution appropriée pour l’implémentation. Vous pouvez joindre la documentation d’implémentation et de test directement dans la page de détails d’une action d’amélioration.
 
 Pour afficher la page de détails d’une action d’amélioration :
 
@@ -58,7 +58,7 @@ Une fois que vous avez identifié la personne appropriée, assurez-vous qu’ell
 
 3. Sélectionnez **Enregistrer et fermer.** L’utilisateur affecté reçoit un e-mail expliquant que l’action d’amélioration lui a été affectée, avec un lien direct vers l’action d’amélioration. 
 > [!NOTE]
-> Les clients de la communauté GCC (Government Community) et du département de la Défense (DoD) des États-Unis ne reçoivent pas de courrier électronique lorsque des actions d’amélioration leur sont affectées.
+> Les clients Community (Cloud de la communauté du secteur public) Haut et Département de la Défense (DoD) du gouvernement américain ne reçoivent pas de courrier électronique lorsque des actions d’amélioration leur sont affectées.
 
 L’utilisateur affecté peut ensuite effectuer les actions recommandées.
 
@@ -75,7 +75,7 @@ Vous pouvez affecter plusieurs actions d’amélioration à un utilisateur en su
 
 ## <a name="perform-work-and-store-documentation"></a>Effectuer des travaux et stocker de la documentation
 
-Vous pouvez charger des fichiers et des notes relatifs à l’implémentation et au test de travail directement dans la section **Notes et documentation.** Cet environnement est un référentiel sécurisé et centralisé pour vous aider à démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur ayant un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs ayant des droits d’édition peuvent télécharger des fichiers et entrer ou modifier des notes.
+Vous pouvez télécharger des fichiers et des notes relatifs à l’implémentation et au test de travail directement dans la section **Notes et documentation.** Cet environnement est un référentiel sécurisé et centralisé pour vous aider à démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur ayant un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs ayant des droits d’édition peuvent télécharger des fichiers et entrer ou modifier des notes.
 
 La section **Notes et documentation** contient des champs pour les documents téléchargés, les notes d’implémentation, les notes de test et les notes supplémentaires.
 
@@ -120,7 +120,7 @@ Pour modifier l’état d’une action d’amélioration, sélectionnez **Modifi
     - **Hors de portée :** l’action n’est pas étendue pour l’évaluation et ne contribue pas à votre score
 - **Date de test**: basculez dans la fenêtre pop-up du calendrier pour sélectionner la date
 
-Les actions courantes sont synchronisées entre les groupes. Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration qui sont gérées par vous, les mises à jour apportées aux détails ou à l’état d’implémentation d’une action se synchronisent automatiquement avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.
+Les actions courantes sont synchronisées entre les groupes. Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration qui sont gérées par vous, les mises à jour apportées aux détails ou à l’état d’implémentation d’une action sont automatiquement synchronisées avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.
 
 ## <a name="assign-improvement-action-to-assessor-for-completion"></a>Affecter une action d’amélioration à l’évaluateur pour l’achèvement
 

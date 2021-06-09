@@ -25,14 +25,14 @@ ms.locfileid: "48754691"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>Ressources de la communauté Microsoft 365 pour PowerShell
 
-Connectez-vous à ces communautés pour joindre vos homologues et obtenir des réponses à vos questions PowerShell pour Microsoft 365. 
+Connecter ces communautés pour joindre vos homologues et obtenir des réponses à votre PowerShell pour Microsoft 365 questions. 
   
-- [Communauté technique Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
+- [Microsoft 365 Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
-- [Exchange Server de la communauté TechNet](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
+- [Exchange Server Forum de la communauté TechNet](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 ## <a name="see-also"></a>Voir aussi
 
-[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)

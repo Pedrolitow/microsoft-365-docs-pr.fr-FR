@@ -19,14 +19,14 @@ ms.locfileid: "50107722"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>Modifier le nom du centre de rubriques dans Rubriques microsoft
 
-Vous pouvez modifier le nom de votre centre de rubriques dans le Centre d’administration [Microsoft 365.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
+Vous pouvez modifier le nom de votre centre de rubriques dans le [centre Microsoft 365'administration.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
 
-1. Dans le Centre d’administration Microsoft 365, cliquez sur **Paramètres,** puis **Paramètres de l’organisation.**
+1. Dans le Microsoft 365 d’administration, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
-    ![Connecter les personnes aux connaissances](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 
 
 3. Sélectionnez **l’onglet Centre des** rubriques. Consultez les sections suivantes pour plus d’informations sur chaque paramètre.
 

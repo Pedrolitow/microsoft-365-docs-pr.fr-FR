@@ -1,5 +1,5 @@
 ---
-title: Analyser des données dans un jeu à réviser dans Advanced eDiscovery
+title: Analyser les données d’un jeu à réviser dans Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez les outils disponibles pour organiser les ensembles de documents lors de l’analyse d’un cas Advanced eDiscovery.
+description: Découvrez les outils disponibles pour organiser les ensembles de documents lors de l’analyse Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
@@ -24,7 +24,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49751369"
 ---
-# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analyser des données dans un jeu à réviser dans Advanced eDiscovery
+# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analyser les données d’un jeu à réviser dans Advanced eDiscovery
 
 Lorsque le nombre de documents collectés est élevé, il peut être difficile de les examiner tous. Advanced eDiscovery fournit un certain nombre d’outils pour analyser les documents afin de réduire le volume de documents à examiner sans perte d’informations et pour vous aider à organiser les documents de manière cohérente. Pour en savoir plus sur ces fonctionnalités, voir :
 

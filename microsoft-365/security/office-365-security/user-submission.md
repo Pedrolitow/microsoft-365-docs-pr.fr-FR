@@ -54,19 +54,19 @@ Utilisez les articles suivants pour configurer les conditions préalables requis
 
 - Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces [jointes sécurisées](set-up-safe-attachments-policies.md) dans Defender pour Office 365 pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** pour les pièces **jointes sécurisées** réponse anti-programme malveillant inconnue .
 
-- Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez [configurer des](set-up-safe-links-policies.md) stratégies de liens sécurisés dans Defender pour Office 365 pour créer une stratégie de liens sécurisés avec le paramètre **Off** pour Sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les **messages.**
+- Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez [configurer des](set-up-safe-links-policies.md) stratégies de liens sécurisés dans Defender pour Office 365 pour créer une stratégie de liens sécurisés avec le paramètre **« Sélectionner** l’action pour les URL potentiellement malveillantes **inconnues** dans les messages ».
 
 - Créez une stratégie anti-programme malveillant pour désactiver la purge automatique sans heure de programmes malveillants. Voir Utiliser le Centre de sécurité & conformité pour créer des stratégies [anti-programme](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) malveillant afin de définir la **purge** automatique sans heure de programmes **malveillants sur Hors service.**
 
 - Créez une stratégie de filtrage du courrier indésirable pour désactiver la purge automatique d’heure zéro (ZAP) pour le courrier indésirable et le hameçonnage dans la boîte aux lettres personnalisée. Voir Utiliser le Centre de sécurité & conformité pour créer des stratégies [anti-courrier](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) indésirable et effacer les case à cocher **Sur** pour spam **ZAP** et **PHISH ZAP**.
 
-- Désactivez la règle de courrier indésirable dans la boîte aux lettres personnalisée. Utilisez [configurer les paramètres de courrier indésirable sur Exchange Online boîtes aux](configure-junk-email-settings-on-exo-mailboxes.md) lettres pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées sur la boîte aux lettres.
+- Désactivez la règle de courrier indésirable dans la boîte aux lettres personnalisée. Utilisez [configurer les paramètres du courrier indésirable sur Exchange Online boîtes aux](configure-junk-email-settings-on-exo-mailboxes.md) lettres pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées sur la boîte aux lettres.
 
 Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes les conditions préalables applicables, utilisez le Centre de sécurité & conformité pour configurer la boîte aux lettres d’envoi [des utilisateurs](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) (dans cet article).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **soumissions de l’utilisateur,** utilisez <https://protection.office.com/userSubmissionsReportMessage> .
+- Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **Soumissions de l’utilisateur,** utilisez <https://protection.office.com/userSubmissionsReportMessage> .
 
 - Pour modifier la configuration des soumissions d’utilisateurs, vous devez être membre de l’un des groupes de rôles suivants :
 
@@ -80,7 +80,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
   Pour plus d’informations sur l’activation ou la désactivation de l’accès Exchange Online PowerShell, consultez les rubriques suivantes :
 
   - [Activer ou désactiver l’accès à Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
-  - [Règles d’accès client dans Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Règles d’accès client Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Utiliser le Centre de sécurité & conformité pour configurer la boîte aux lettres d’envoi des utilisateurs
 
@@ -104,7 +104,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
     
     - **Personnalisez les options de rapport de l’utilisateur final**: cliquez sur ce lien. Dans le volant **Personnaliser les options de rapport** de l’utilisateur final qui s’affiche, entrez le texte descriptif des options de signalement du courrier indésirable. 
     
-      Sous **Options pour afficher le moment où les messages sont signalés,** sélectionnez au moins une des options suivantes :
+      Sous **Options pour afficher le moment où les messages sont** signalés, sélectionnez au moins une des options suivantes :
         - **Demandez-moi avant d’envoyer un rapport**
         - **Envoyer automatiquement des rapports**
         - **Ne jamais envoyer de rapports**
@@ -155,7 +155,7 @@ où SafetyAPIAction est l’une des valeurs d’un nombre integer suivantes :
 
 - 1 : Courrier indésirable
 - 2 : ne pas être indésirable
-- 3 : hameçonnage
+- 3 : Hameçonnage
 
 Cet exemple utilise les valeurs suivantes :
 

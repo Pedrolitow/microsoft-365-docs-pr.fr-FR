@@ -33,7 +33,7 @@ ms.locfileid: "52730533"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Empêcher toute propagation supplémentaire d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. Si vous connaissez un fichier exécutable portable (PE) potentiellement malveillant, vous pouvez le bloquer. Cette opération l’empêche d’être lue, écrite ou exécutée sur les appareils de votre organisation.
 
@@ -53,7 +53,7 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 
 - Pris en charge sur les appareils Windows 10, version 1703 ou ultérieure, Windows Server 2016 et 2019.
 
-- Pour commencer à bloquer des fichiers, vous devez d’abord activer la fonctionnalité « bloquer ou autoriser » [dans](advanced-features.md) Paramètres.
+- Pour commencer à bloquer les fichiers, vous devez d’abord [activer](advanced-features.md) la fonctionnalité « bloquer ou autoriser » dans Paramètres.
 
 Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables(PE), notamment les fichiers .exe et .dll portables. La couverture sera étendue au fil du temps.
 
@@ -61,7 +61,7 @@ Cette fonctionnalité est conçue pour empêcher le téléchargement de programm
 
 1. Dans le volet de navigation, sélectionnez **Paramètres > indicateurs.**
 
-2. Sélectionnez **l’onglet hachage**   fichier.
+2. Sélectionnez **l’onglet De hachage de**   fichier.
 
 3. Sélectionnez **Ajouter un indicateur**.
 
@@ -89,7 +89,7 @@ Les fichiers automatiquement bloqués par un indicateur ne s’afficheront pas d
 
 Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-dessous :
 
-- Si le fichier n’est pas autorisé par Windows Defender Application Control et AppLocker appliquent des stratégies/stratégies de mode, **bloquez**
+- Si le fichier n’est pas autorisé par Windows Defender application Control et AppLocker appliquent des stratégies/stratégies de mode, **bloquez**
 
 - Sinon, si le fichier est autorisé par l’exclusion Antivirus Microsoft Defender, **autorisez**
 

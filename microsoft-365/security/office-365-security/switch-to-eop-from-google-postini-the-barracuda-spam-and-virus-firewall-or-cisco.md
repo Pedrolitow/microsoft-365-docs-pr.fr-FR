@@ -28,8 +28,8 @@ ms.locfileid: "52624012"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
  Le but de cette rubrique est de vous aider à comprendre le processus de passage d'un équipement de protection de messagerie électronique local ou d'un service de protection dans le nuage à Exchange Online Protection (EOP), puis de vous fournir les ressources d'aide nécessaires pour commencer à l'utiliser. Il existe de nombreuses solutions de filtrage du courrier indésirable, mais le processus de passage à EOP est généralement similaire.
 
@@ -49,7 +49,7 @@ Si vous hébergez actuellement vos boîtes aux lettres localement et utilisez un
 
 ## <a name="switch-to-exchange-online"></a>Passage à Exchange Online
 
-Vous disposez peut-être de boîtes aux lettres sur site protégées par une appliance sur site et vous souhaitez passer à Exchange Online boîtes aux lettres hébergées dans le cloud et à la protection EOP pour tirer parti des fonctionnalités de messagerie et de protection cloud Microsoft 365. Pour commencer, vous pouvez vous inscrire à Microsoft 365 et ajouter votre domaine. Ce scénario ne nécessite pas la mise en place de connecteurs, car il n’existe aucun routage vers les boîtes aux lettres sur site. Commencez par [obtenir les dernières fonctionnalités](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) avancées avec Microsoft 365 pour vous inscrire et vous familiariser avec ses fonctionnalités.
+Vous disposez peut-être de boîtes aux lettres sur site protégées par une appliance sur site et vous souhaitez passer à Exchange Online boîtes aux lettres hébergées dans le cloud et à la protection EOP pour tirer parti des fonctionnalités de messagerie et de protection cloud Microsoft 365. Pour commencer, vous pouvez vous inscrire à Microsoft 365 et ajouter votre domaine. Ce scénario ne vous oblige pas à configurer des connecteurs, car il n’existe aucun routage vers les boîtes aux lettres sur site. Commencez par [obtenir les dernières fonctionnalités](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) avancées avec Microsoft 365 pour vous inscrire et vous familiariser avec ses fonctionnalités.
 
 Pendant le Microsoft 365 de configuration, vous allez créer vos utilisateurs de boîte aux lettres en nuage.
 
@@ -67,7 +67,7 @@ Si vous décidez de passer à EOP, soyez particulièrement attentif aux aspects 
 
 - **Listes** d’adresses IP et listes d’adresses IP bloqués : si vous avez des listes d’adresses ip et des listes d’adresses IP bloqués par utilisateur, laissez le temps de copier les listes dans EOP dans le cadre de votre processus de configuration. Pour plus d’informations sur la liste d’adresses IP permises et la liste d’adresses IP bloqués, voir [Configurer la stratégie de filtrage des connexions.](configure-the-connection-filter-policy.md)
 
-- **Communication sécurisée**: si vous avez un partenaire qui nécessite une messagerie chiffrée, nous vous recommandons de le configurer dans le Centre d Exchange’administration. Pour configurer ce scénario, voir Configurer des connecteurs pour un flux [de messagerie sécurisé avec une organisation partenaire.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
+- **Communication sécurisée**: si vous avez un partenaire qui nécessite une messagerie chiffrée, nous vous recommandons de configurer cette solution dans le Centre d’administration Exchange’administration. Pour configurer ce scénario, voir Configurer des connecteurs pour un flux [de messagerie sécurisé avec une organisation partenaire.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
 
 > [!TIP]
 > Lorsque vous passez d'un équipement local à EOP, vous pouvez conserver votre équipement ou un serveur pour effectuer les contrôles de règle d'entreprise. Par exemple, si votre appliance effectue un filtrage personnalisé sur le courrier sortant et que vous souhaitez qu’elle continue de le faire, vous pouvez configurer EOP pour qu’il envoie des messages directement à l’appliance pour un filtrage supplémentaire, avant qu’il ne soit acheminé vers Internet.

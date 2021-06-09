@@ -33,7 +33,7 @@ ms.locfileid: "52684218"
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md)
 
-Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur macOS via Intune. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
+Cette rubrique décrit comment déployer Microsoft Defender pour endpoint sur macOS via Intune. Un déploiement réussi nécessite la réalisation de toutes les étapes suivantes :
 
 1. [Télécharger le package d’intégration](#download-the-onboarding-package)
 1. [Configuration de l’appareil client](#client-device-setup)
@@ -45,7 +45,7 @@ Cette rubrique décrit comment déployer Microsoft Defender pour Endpoint sur ma
 
 Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-## <a name="overview"></a>Présentation
+## <a name="overview"></a>Vue d'ensemble
 
 Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour endpoint sur Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
 
@@ -126,11 +126,11 @@ Ce profil contient des informations de licence pour Microsoft Defender pour le p
 
 ### <a name="approve-system-extensions"></a>Approuver les extensions système
 
-Ce profil est nécessaire pour macOS 10.15 (Genre), ou une nouvelle génération. Il sera ignoré sur les anciens macOS.
+Ce profil est nécessaire pour macOS 10.15 (Îlelier) ou une nouvelle génération. Il sera ignoré sur les anciens macOS.
 
 1. Sélectionnez **Créer un profil** sous **Profils de configuration.**
 1. Select **Platform** = **macOS**, **Profile type** = **Templates**. **Nom du modèle** = **Extensions**. Cliquez sur **Créer**.
-1. Dans **l’onglet Éléments de** base, nommez ce nouveau profil.
+1. Dans **l’onglet Basics,** nommez ce nouveau profil.
 1. Dans **l’onglet Paramètres de configuration,** développez Extensions système et ajoutez les **entrées** suivantes dans la section **Extensions système autorisées** :
 
     Identificateur d’ensemble         | Identificateur d’équipe
@@ -146,7 +146,7 @@ Ce profil est nécessaire pour macOS 10.15 (Genre), ou une nouvelle génération
 
 ### <a name="kernel-extensions"></a>Extensions de noyau
 
-Ce profil est nécessaire pour macOS 10.15 (Îles) ou une ancienne. Il sera ignoré sur les nouveaux macOS.
+Ce profil est nécessaire pour macOS 10.15 (Genre) ou une ancienne. Il sera ignoré sur les nouveaux macOS.
 
 > [!CAUTION]
 > Les appareils Apple Silicon (M1) ne supportent pas KEXT. L’installation d’un profil de configuration constitué de stratégies KEXT échoue sur ces appareils.
@@ -172,7 +172,7 @@ Ce profil est nécessaire pour macOS 10.15 (Îles) ou une ancienne. Il sera igno
 
 Téléchargez [**fulldisk.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) partir de [notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Suivez les instructions d’intégration du [blob](#onboarding-blob) ci-dessus, en utilisant « MDATP Full Disk Access » comme nom de profil et **téléchargé fulldisk.mobileconfig** comme nom de profil de configuration.
+Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « MDATP Full Disk Access » comme nom de profil et **téléchargé fulldisk.mobileconfig** comme nom de profil de configuration.
 
 ### <a name="network-filter"></a>Filtre réseau
 
@@ -184,7 +184,7 @@ Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, 
 
 ### <a name="notifications"></a>Notifications
 
-Ce profil permet à Microsoft Defender pour point de terminaison sur macOS et Microsoft Auto Update d’afficher des notifications dans l’interface utilisateur sur macOS 10.15 (Domaine) ou version plus nouvelle.
+Ce profil permet à Microsoft Defender pour point de terminaison sur macOS et Microsoft Auto Update d’afficher des notifications dans l’interface utilisateur sur macOS 10.15 (Fonctionnalité) ou version plus nouvelle.
 
 Téléchargez [**notif.mobileconfig à partir**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) [de notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
@@ -231,7 +231,7 @@ Cette étape permet de déployer Microsoft Defender pour le point de terminaison
 (Vous trouverez des informations détaillées sur la [page Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)pour le déploiement de Defender.)
 
    > [!CAUTION]
-   > Vous devez créer tous les profils de configuration requis et les pousser sur tous les ordinateurs, comme expliqué ci-dessus.
+   > Vous devez créer tous les profils de configuration requis et les pousser vers tous les ordinateurs, comme expliqué ci-dessus.
 
 ## <a name="client-device-setup"></a>Configuration de l’appareil client
 
@@ -281,8 +281,8 @@ Solution : suivez les étapes ci-dessus pour créer un profil d’appareil à l�
 
 ## <a name="logging-installation-issues"></a>Journalisation des problèmes d’installation
 
-Pour plus d’informations sur la recherche du journal généré automatiquement créé par le programme d’installation lorsqu’une erreur se produit, voir [Problèmes d’installation de journalisation.](mac-resources.md#logging-installation-issues)
+Pour plus d’informations sur la recherche du journal généré automatiquement par le programme d’installation en cas d’erreur, voir [Problèmes d’installation de journalisation.](mac-resources.md#logging-installation-issues)
 
 ## <a name="uninstallation"></a>Désinstallation
 
-Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour Endpoint sur macOS des appareils clients.
+Voir [Désinstallation](mac-resources.md#uninstalling) pour plus d’informations sur la suppression de Microsoft Defender pour endpoint sur macOS des appareils clients.

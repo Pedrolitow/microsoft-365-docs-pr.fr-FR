@@ -1,5 +1,5 @@
 ---
-title: Tableau de bord Advanced eDiscovery pour les ensembles de révision
+title: Advanced eDiscovery tableau de bord pour les ensembles de révision
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez le tableau de bord Advanced eDiscovery pour les ensembles de révision afin d’analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision.
+description: Utilisez le tableau Advanced eDiscovery tableau de bord pour les ensembles de révision afin d’analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision.
 ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
 ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
@@ -23,13 +23,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/16/2020
 ms.locfileid: "44741698"
 ---
-# <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Tableau de bord Advanced eDiscovery pour les ensembles de révision
+# <a name="advanced-ediscovery-dashboard-for-review-sets"></a>Advanced eDiscovery tableau de bord pour les ensembles de révision
 
-Dans certains cas, advanced eDiscovery peut avoir un volume important de documents et de messages électroniques qui doivent être examinés. Avant de commencer le processus de révision, vous pouvez analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision. Pour ce faire, vous pouvez utiliser le tableau de bord Advanced eDiscovery pour les ensembles de révision afin d’analyser rapidement votre corpus.
+Dans certains cas, Advanced eDiscovery, il se peut que vous devrez examiner un grand nombre de documents et de messages électroniques. Avant de commencer le processus de révision, vous pouvez analyser rapidement votre corpus afin d’identifier les tendances ou les statistiques clés qui vous aideront à développer votre stratégie de révision. Pour ce faire, vous pouvez utiliser le tableau de bord Advanced eDiscovery pour les ensembles de révision afin d’analyser rapidement votre corpus.
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>Étape 1 : Créer un widget sur le tableau de bord du jeu à réviser
 
-1. Dans le Centre de sécurité & conformité, go to **eDiscovery > Advanced eDiscovery** to display the list of cases in your organization.
+1. Dans le Centre de sécurité & conformité, allez à **eDiscovery > Advanced eDiscovery** pour afficher la liste des cas dans votre organisation.
   
 2. Sélectionnez un cas existant.
   
@@ -51,13 +51,13 @@ Dans certains cas, advanced eDiscovery peut avoir un volume important de documen
   
    - **Créez un widget personnalisé :** Affiche une page de présentation que vous pouvez utiliser pour configurer un widget personnalisé. 
 
-6. Pour créer un widget personnalisé, dans la page volant Ajouter un **widget,** vous pouvez :
+6. Pour créer un widget personnalisé, faites les choses suivantes dans la page volant Ajouter un **widget** :
 
    ![Créer un widget](../media/addwidget.png)
 
     a. Tapez un nom pour le widget, qui s’affiche dans la barre de titre du widget. L’attribution d’un nom à un widget est requise, mais il est utile d’identifier les données du widget.
 
-    b. Sélectionnez une propriété dans la **liste de** listes de listes de sélection du tableau croisé dynamique qui sera utilisée pour les données du widget. Les éléments de cette liste sont les propriétés utilisables dans une recherche pour les éléments du jeu à réviser. Pour obtenir une description de ces propriétés, voir Champs de [métadonnées de document dans Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). Les options de tableau croisé dynamique pour le widget sont répertoriées dans la colonne **Nom** de champ utilisable dans une recherche dans cette rubrique.
+    b. Sélectionnez une propriété dans la **liste de** listes de listes listes de sélection du tableau croisé dynamique qui sera utilisée pour les données du widget. Les éléments de cette liste sont les propriétés utilisables dans une recherche pour les éléments du jeu à réviser. Pour obtenir une description de ces propriétés, voir champs de [métadonnées](document-metadata-fields-in-Advanced-eDiscovery.md)de document Advanced eDiscovery . Les options de tableau croisé dynamique pour le widget sont répertoriées dans la colonne **Nom** de champ utilisable dans une recherche dans cette rubrique.
 
     c. Sélectionnez un type de graphique pour afficher les données de la propriété de tableau croisé dynamique sélectionnée.
 
@@ -73,7 +73,7 @@ Dans certains cas, advanced eDiscovery peut avoir un volume important de documen
 
    ![CreateFilter](../media/applyconditionfilter.png)
 
-3. Répétez les étapes 1 à 2 pour d’autres widgets avec plusieurs widgets. 
+3. Répétez les étapes 1 à 2 pour d’autres widgets multi widgets. 
 
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer** sous la requête pour enregistrer vos conditions en tant que nouvelle requête de recherche pour le jeu à réviser.
 

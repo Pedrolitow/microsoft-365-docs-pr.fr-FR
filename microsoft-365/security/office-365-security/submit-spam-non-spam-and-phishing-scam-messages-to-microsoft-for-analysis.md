@@ -31,8 +31,8 @@ ms.locfileid: "52624024"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 > Si vous êtes un administrateur d’une organisation Exchange Online boîtes aux lettres, nous vous recommandons d’utiliser le portail Soumissions dans le Centre de sécurité & conformité. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
@@ -49,14 +49,14 @@ Vous et vos utilisateurs pouvez vous aider à ce processus en envoyant des faux 
 > [!TIP]
 > Au lieu d’utiliser les procédures suivantes pour signaler les faux négatifs, les utilisateurs de Outlook et de Outlook sur le web (anciennement Outlook Web App) peuvent utiliser le add-in Report Message ou report Phishing. Pour plus d’informations sur l’installation et l’utilisation de ces outils, voir [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
 
-Si vous recevez un message qui a été transmis par le biais du filtrage du courrier indésirable et qui doit avoir été identifié comme courrier indésirable ou hameçonnage, vous pouvez envoyer le message aux équipes d’analyse du courrier indésirable de Microsoft et d’analyse du hameçonnage Microsoft, le cas échéant. Les analystes examinent le message et l’ajoutent aux filtres à l’échelle du service s’il répond aux critères de classification.
+Si vous recevez un message qui a été transmis par le biais du filtrage du courrier indésirable et qui doit avoir été identifié comme courrier indésirable ou hameçonnage, vous pouvez le soumettre aux équipes d’analyse du courrier indésirable de Microsoft et d’analyse du hameçonnage Microsoft, le cas échéant. Les analystes examinent le message et l’ajoutent aux filtres à l’échelle du service s’il répond aux critères de classification.
 
 1. Créez un message électronique vide avec l’un des destinataires suivants :
 
    - **Courrier** indésirable : `junk@office365.microsoft.com`
    - **Hameçonnage**: `phish@office365.microsoft.com`
 
-2. Faites glisser et déposez le message de courrier indésirable ou de hameçonnage dans le nouveau message. Cela permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez et collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
+2. Faites glisser et déposez le message de courrier indésirable ou de hameçonnage dans le nouveau message. Cela permet d’enregistrer le message de courrier indésirable ou de hameçonnage en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
 
    > [!NOTE]
    >
@@ -67,18 +67,18 @@ Si vous recevez un message qui a été transmis par le biais du filtrage du cour
 3. Lorsque vous avez terminé, cliquez sur **Envoyer.**
 
 > [!TIP]
-> Les administrateurs ont plusieurs façons de bloquer des messages spécifiques qui sont mal identifiés comme courrier indésirable. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans EOP.](create-block-sender-lists-in-office-365.md)
+> Les administrateurs ont plusieurs façons de bloquer des messages spécifiques qui sont identifiés comme courrier indésirable. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans EOP.](create-block-sender-lists-in-office-365.md)
 
 ## <a name="submit-false-positives-to-microsoft"></a>Envoyer des faux positifs à Microsoft
 
 > [!TIP]
-> Au lieu d’utiliser les procédures suivantes pour signaler les faux positifs, les utilisateurs de Outlook et de Outlook sur le web (anciennement appelés Outlook Web App) peuvent utiliser le add-in Report Message ou report Phishing. Pour plus d’informations sur l’installation et l’utilisation de ces outils, voir [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
+> Au lieu d’utiliser les procédures suivantes pour signaler les faux positifs, les utilisateurs de Outlook et de Outlook sur le web (anciennement appelés Outlook Web App) peuvent utiliser le add-in Message de rapport ou le module de signalement du hameçonnage. Pour plus d’informations sur l’installation et l’utilisation de ces outils, voir [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
 
 Si un message a été identifié à tort comme courrier indésirable, vous pouvez le soumettre à l’équipe d’analyse du courrier indésirable de Microsoft. Les analystes évaluent le message et (en fonction des résultats de l’analyse) les filtres à l’échelle du service peuvent être ajustés pour autoriser le message.
 
 1. Créez un message électronique vide avec `not_junk@office365.microsoft.com` comme destinataire.
 
-2. Faites glisser et déposez le message non identifié dans le nouveau message. Cela permet d’enregistrer le message non identifié en tant que pièce jointe dans le nouveau message. Ne copiez et collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
+2. Faites glisser et déposez le message non identifié dans le nouveau message. Cela permet d’enregistrer le message non identifié en tant que pièce jointe dans le nouveau message. Ne copiez pas et ne collez pas le contenu du message ou ne le faites pas passer (nous avons besoin du message d’origine pour pouvoir inspecter les en-têtes du message).
 
    > [!NOTE]
    >

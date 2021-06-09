@@ -27,8 +27,8 @@ ms.locfileid: "52624079"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, EOP offre plusieurs façons de bloquer les messages électroniques provenant d’expéditeurs indésirables. Ces options incluent les Outlook expéditeurs bloqués, les listes d’expéditeurs bloqués ou les listes de domaines bloqués dans les stratégies anti-courrier indésirable, les règles de flux de messagerie Exchange (également appelées règles de transport) et la liste d’adresses IP bloquées (filtrage des connexions). Collectivement, vous pouvez voir ces options comme des _listes d’expéditeurs bloqués._
 
@@ -45,7 +45,7 @@ La meilleure méthode pour bloquer les expéditeurs varie selon l’étendue de 
 > [!NOTE]
 > Bien que vous pouvez utiliser les paramètres de blocage à l’échelle de l’organisation pour traiter les faux négatifs (courrier indésirable manqué), vous devez également envoyer ces messages à Microsoft pour analyse. La gestion des faux négatifs à l’aide de listes de blocage augmente considérablement votre charge administrative. Si vous utilisez des listes d’adresses de blocage pour éviter les courriers indésirables manqués, vous devez maintenir la rubrique Signaler les messages et les fichiers [à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-En revanche, vous avez également plusieurs options pour toujours autoriser les messages électroniques provenant de sources spécifiques à l’aide _de listes d’expéditeurs fiables._ Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
+En revanche, vous avez également plusieurs options pour toujours autoriser le courrier électronique provenant de sources spécifiques à l’aide de _listes d’expéditeurs fiables._ Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés](create-safe-sender-lists-in-office-365.md).
 
 ## <a name="email-message-basics"></a>Informations de base sur les messages électroniques
 
@@ -53,7 +53,7 @@ Un message électronique SMTP standard est constitué d’une *enveloppe de mes
 
 - L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse de messagerie **Return-Path).** Si le message ne peut pas être remis, il s’agit du destinataire de la non-remise (également appelée NDR ou message de non-remise).
 
-- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse e-mail de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
+- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse de messagerie de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  
 
 Souvent, `5321.MailFrom` les adresses et les `5322.From` adresses sont identiques (communication de personne à personne). Toutefois, lorsque le courrier électronique est envoyé pour le compte d’une autre personne, les adresses peuvent être différentes.
 
@@ -85,6 +85,6 @@ Quelles que soient les conditions ou les exceptions que vous utilisez pour ident
 
 ## <a name="use-the-ip-block-list"></a>Utiliser la liste d’adresses IP bloqués
 
-Lorsqu’il n’est pas possible d’utiliser l’une des autres options pour bloquer un *expéditeur,* vous devez utiliser la liste d’adresses IP bloqués dans la stratégie de filtrage des connexions. Pour plus d'informations, consultez la rubrique relative à la [configuration de la stratégie de filtre de connexion](configure-the-connection-filter-policy.md). Il est important de conserver un nombre minimal d’adresses IP bloquées, de sorte que le blocage de plages d’adresses IP entières *n’est pas* recommandé.
+Lorsqu’il n’est pas possible d’utiliser l’une des autres options pour bloquer un *expéditeur,* utilisez la liste d’adresses IP bloqués dans la stratégie de filtrage des connexions. Pour plus d'informations, consultez la rubrique relative à la [configuration de la stratégie de filtre de connexion](configure-the-connection-filter-policy.md). Il est important de conserver un nombre minimal d’adresses IP bloquées, de sorte que le blocage de plages d’adresses IP entières *n’est pas* recommandé.
 
 Vous  devez particulièrement éviter d’ajouter des plages d’adresses IP appartenant à des services grand public (par exemple, outlook.com) ou des infrastructures partagées, et veillez également à consulter la liste des adresses IP bloquées dans le cadre d’une maintenance régulière.

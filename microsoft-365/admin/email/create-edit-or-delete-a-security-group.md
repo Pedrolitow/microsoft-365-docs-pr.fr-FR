@@ -70,13 +70,13 @@ En outre, vous pouvez utiliser des [Groupes dans Exchange Online et SharePoint O
     
 2. Dans la page **Groupes,** sélectionnez le nom du groupe. 
     
-3. Sélectionnez **Supprimer le** groupe (icône wasetbin), puis confirmez en sélectionnant **Supprimer**.
+3. Sélectionnez **Supprimer le** groupe (icône wasetbin), puis confirmez en sélectionnant **Supprimer.**
     
     Sélectionnez **Fermer** une fois le groupe supprimé. 
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Groupes dans Exchange Online et SharePoint Online
 
-Si vous souhaitez créer des groupes d’utilisateurs afin de pouvoir leur envoyer des courriers électroniques en  même temps, vous pouvez le faire dans le Centre d’administration Exchange en allant à Groupes de \>  \> **destinataires** \> Exchange Administrateur. Ensuite, **sélectionnez Nouvel** ![ ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) ajout, puis sélectionnez le type de groupe que vous souhaitez créer : 
+Si vous souhaitez créer des groupes d’utilisateurs afin de pouvoir leur envoyer des courriers électroniques en  même temps, vous pouvez le faire dans le Centre d’administration Exchange en allant à Groupes de \>  \> **destinataires** \> Exchange Admin Exchange . Ensuite, **sélectionnez Nouvel** ![ ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) ajout, puis sélectionnez le type de groupe que vous souhaitez créer : 
   
 - **Groupe de distribution**: un groupe de distribution permet de distribuer des messages à un groupe d'utilisateurs. Il s’agit également d’un groupe de distribution à *messagerie* ou d’une *liste de distribution.* Pour plus d'informations, voir [Gestion des groupes de distribution](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups).
     
@@ -96,9 +96,9 @@ Les groupes de sécurité peuvent être utilisés avec SharePoint, Exchange, la 
 
 Non. Il s’agit simplement d’un moyen de plus pour gérer la sécurité de votre organisation. Vous pouvez toujours accorder des autorisations utilisateur et l’accès aux sites individuellement. Toutefois, avec les groupes de sécurité, vous pouvez facilement gérer des groupes d’utilisateurs plus importants.
   
-## <a name="can-i-send-email-to-a-security-group"></a>Puis-je envoyer un courrier électronique à un groupe de sécurité ?
+## <a name="can-i-send-email-to-a-security-group"></a>Puis-je envoyer des courriers électroniques à un groupe de sécurité ?
 
-Oui. Toutefois, si vous souhaitez utiliser des groupes pour la messagerie électronique et la collaboration, nous vous recommandons de créer [un groupe Microsoft 365 à](../create-groups/create-groups.md) la place. 
+Oui. Toutefois, si vous souhaitez utiliser des groupes pour la messagerie et la collaboration, nous vous recommandons de créer [un groupe Microsoft 365 à](../create-groups/create-groups.md) la place. 
 
 ## <a name="related-content"></a>Contenu associé
 

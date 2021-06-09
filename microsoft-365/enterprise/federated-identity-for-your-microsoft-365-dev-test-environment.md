@@ -29,19 +29,19 @@ ms.locfileid: "48487683"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>Identité fédérée pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 entreprise et Office 365 Entreprise.*
+*Ce guide de laboratoire de test peut être utilisé pour les environnements Microsoft 365'entreprise et Office 365 Entreprise test.*
 
 Microsoft 365 prend en charge l’identité fédérée. Cela signifie qu’au lieu d’effectuer la validation des informations d’identification, Microsoft 365 renvoie l’utilisateur qui se connecte à un serveur d’authentification fédérée approuvé par Microsoft 365. Si les informations d’identification de l’utilisateur sont correctes, le serveur d’authentification fédérée émet un jeton de sécurité que le client envoie ensuite à Microsoft 365 comme preuve d’authentification. L’identité fédérée autorise le déchargement et la montée en charge de l’authentification pour un abonnement Microsoft 365, ainsi que l’authentification avancée et les scénarios de sécurité.
   
-Cet article explique comment configurer l’authentification fédérée pour votre environnement de test Microsoft 365, ce qui entraîne les conséquences suivantes :
+Cet article explique comment configurer l’authentification fédérée pour Microsoft 365 environnement de test, ce qui entraîne les conséquences suivantes :
 
 ![L’authentification fédérée pour l’environnement de test Microsoft 365](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase3.png)
   
 Cette configuration se compose des éléments suivants : 
   
-- Un abonnement d’essai ou de production Microsoft 365 E5.
+- Un abonnement Microsoft 365 E5 d’essai ou de production.
     
-- Un intranet d’organisation simplifié connecté à Internet, constitué de cinq machines virtuelles sur un sous-réseau d’un réseau virtuel Azure (DC1, APP1, CLIENT1, ADFS1 et PROXY1). Azure AD Connect s’exécute sur APP1 pour synchroniser la liste des comptes du domaine des services de domaine Active Directory avec Microsoft 365. PROXY1 reçoit les demandes d’authentification entrantes. ADFS1 valide les informations d’identification avec DC1 et émet des jetons de sécurité.
+- Un intranet d’organisation simplifié connecté à Internet, constitué de cinq machines virtuelles sur un sous-réseau d’un réseau virtuel Azure (DC1, APP1, CLIENT1, ADFS1 et PROXY1). Azure AD Connecter s’exécute sur APP1 pour synchroniser la liste des comptes dans le domaine des services de domaine Active Directory Microsoft 365. PROXY1 reçoit les demandes d’authentification entrantes. ADFS1 valide les informations d’identification avec DC1 et émet des jetons de sécurité.
     
 La configuration de cet environnement de test comprend cinq phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -55,14 +55,14 @@ La configuration de cet environnement de test comprend cinq phases :
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
-Suivez les instructions de la synchronisation [de hachage de mot de passe pour Microsoft 365.](password-hash-sync-m365-ent-test-environment.md) La configuration qui en résulte ressemble à ceci :
+Suivez les instructions de synchronisation [de hachage de](password-hash-sync-m365-ent-test-environment.md)mot de passe pour Microsoft 365 . La configuration qui en résulte ressemble à ceci :
   
 ![Environnement de test de l’entreprise simulée avec la synchronisation de hachage de mot de passe](../media/federated-identity-for-your-microsoft-365-dev-test-environment/federated-tlg-phase1.png)
   
 Cette configuration se compose des éléments suivants : 
   
-- Un abonnement d’essai ou payant Microsoft 365 E5.
-- Un intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser régulièrement le domaine des services de domaine Active Directory (AD DS) TESTLAB avec le client Azure AD de vos abonnements Microsoft 365.
+- Un Microsoft 365 E5 d’essai ou payant.
+- Un intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connecter s’exécute sur APP1 pour synchroniser régulièrement le domaine des services de domaine Active Directory (AD DS) TESTLAB avec le client Azure AD de vos abonnements Microsoft 365 client.
 
 ## <a name="phase-2-create-the-ad-fs-server"></a>Phase 2 : Création du serveur AD FS
 
@@ -201,9 +201,9 @@ Ensuite, utilisez ces étapes pour enregistrer le nouveau certificat auto-signé
   
 1. Sélectionnez **Démarrer,** **entrezmmc.exe,** puis appuyez sur **Entrée.**
     
-2. Select **File**  >  **Add/Remove Snap-in**.
+2. Select **File**  >  **Add/Remove Ancrer-in**.
     
-3. Dans **Ajouter ou supprimer des snap-ins,** double-cliquez sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
+3. Dans **Ajouter ou supprimer Ancrer, double-cliquez** sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
     
 4. Dans **Sélectionner un ordinateur,** **sélectionnez Terminer,** puis **sélectionnez OK.**
     
@@ -237,7 +237,7 @@ Attendez la fin de l’installation.
   
 Ensuite, configurez le service AD FS en suivant ces étapes :
   
-1. Sélectionnez **Démarrer,** puis l’icône **Gestionnaire de** serveur.
+1. Sélectionnez **Démarrer,** puis **l’icône Gestionnaire de** serveur.
     
 2. Dans le volet d’arborescence du Gestionnaire de serveur, sélectionnez **AD FS**.
     
@@ -245,7 +245,7 @@ Ensuite, configurez le service AD FS en suivant ces étapes :
     
 4. Dans la page **d’accueil** de l’Assistant Configuration des services de fédération Active Directory, sélectionnez **Suivant.**
     
-5. Dans la page **Se connecter à AD DS,** sélectionnez **Suivant.**
+5. Dans la **page Connecter AD DS,** sélectionnez **Suivant.**
     
 6. Sur la page **Spécifier les propriétés de service** :
     
@@ -257,15 +257,15 @@ Ensuite, configurez le service AD FS en suivant ces étapes :
     
 7. Dans la page **Spécifier un compte de service,** **sélectionnez Sélectionner** **le nom du compte.**
     
-8. Dans **Sélectionner un compte d’utilisateur ou de service,** entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
+8. Dans **Sélectionner un compte d’utilisateur ou** de service, entrez **ADFS-Service,** sélectionnez **Vérifier** les noms, puis **sélectionnez OK**.
     
-9. Dans **mot de passe** du compte, entrez le mot de passe du ADFS-Service, puis sélectionnez **Suivant.**
+9. Dans **mot de passe** du compte, entrez le mot de passe du ADFS-Service, puis sélectionnez **Suivant**.
     
 10. Dans la page **Spécifier la base de données de configuration,** sélectionnez **Suivant.**
     
 11. Dans la page **Options de** révision, sélectionnez **Suivant.**
     
-12. Dans la page **Vérifications préalables,** sélectionnez **Configurer.**
+12. Dans la page **Vérifications préalables,** **sélectionnez Configurer.**
 
 13. Dans la page **Résultats,** sélectionnez **Fermer.**
     
@@ -277,9 +277,9 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
   
 1. Sélectionnez **Démarrer,** **entrezmmc.exe,** puis appuyez sur **Entrée.**
     
-2. Select **File > Add/Remove Snap-in**.
+2. Sélectionnez **fichier > ajouter/supprimer Ancrer-in**.
     
-3. Dans **Ajouter ou supprimer des snap-ins,** double-cliquez sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
+3. Dans **Ajouter ou supprimer Ancrer, double-cliquez** sur **Certificats** dans la liste des logiciels en snap-in disponibles, sélectionnez Compte d’ordinateur, puis sélectionnez **Suivant**.
     
 4. Dans **Sélectionner un ordinateur,** **sélectionnez Terminer,** puis **sélectionnez OK.**
     
@@ -301,7 +301,7 @@ Ensuite, suivez ces étapes pour installer le certificat auto-signé sur **PROXY
     
 13. Lorsque vous y invitez, **sélectionnez OK**.
     
-14. Dans le volet d’arborescence, sélectionnez **Certificats.**
+14. Dans le volet d’arborescence, **sélectionnez Certificats.**
     
 15. Sélectionnez et maintenez (ou cliquez avec le bouton droit) le certificat, puis sélectionnez **Copier**.
     
@@ -323,7 +323,7 @@ Suivez ces étapes pour configurer le service de proxy d’application web de ma
     
 2. Dans le volet d’arborescence, sélectionnez **Accès à distance.**
     
-3. Dans la barre d’outils en haut, sélectionnez le symbole d’avertissement orange, puis sélectionnez Ouvrir l’Assistant **Proxy d’application web.**
+3. Dans la barre d’outils en haut, sélectionnez le symbole d’avertissement orange, puis sélectionnez Ouvrir l’Assistant **Proxy d’application Web.**
     
 4. Dans la page **d’accueil** de l’Assistant Configuration du proxy d’application web, sélectionnez **Suivant.**
     
@@ -339,7 +339,7 @@ Suivez ces étapes pour configurer le service de proxy d’application web de ma
     
 6. Dans la page Certificat **de proxy AD FS,** sélectionnez la flèche vers le bas, sélectionnez le certificat avec votre nom de service de fédération, puis sélectionnez **Suivant**.
     
-7. Dans la page **Confirmation,** **sélectionnez Configurer.**
+7. Dans la page **Confirmation,** sélectionnez **Configurer.**
     
 8. Dans la page **Résultats,** sélectionnez **Fermer.**
     
@@ -351,19 +351,19 @@ Suivez ces étapes pour configurer Azure AD Connect et votre abonnement Microso
   
 1. Sur le bureau, double-cliquez sur **Azure AD Connect**.
     
-2. Dans la page **Bienvenue dans Azure AD Connect,** sélectionnez **Configurer.**
+2. On the **Welcome to Azure AD Connecter** page, select **Configure**.
     
 3. Dans la page **Tâches supplémentaires,** sélectionnez Modifier la **connectez-vous** de l’utilisateur, puis sélectionnez **Suivant**.
     
-4. Dans la page **Se connecter à Azure AD,** entrez le nom et le mot de passe de votre compte d’administrateur général, puis sélectionnez **Suivant.**
+4. Dans la page **Connecter azure AD,** entrez le nom et le mot de passe de votre compte d’administrateur général, puis sélectionnez **Suivant.**
     
 5. Dans la page De la page De la **connectez-vous** de l’utilisateur, sélectionnez Fédération avec **AD FS,** puis sélectionnez **Suivant**.
     
-6. Dans la page Batterie de serveurs **AD FS,** sélectionnez Utiliser une batterie  **AD FS** existante, entrez **ADFS1** dans la zone Nom du serveur, puis sélectionnez **Suivant**.
+6. Dans la page Batterie **de serveurs AD FS,** sélectionnez Utiliser une batterie  **AD FS** existante, entrez **ADFS1** dans la zone Nom du serveur, puis sélectionnez **Suivant**.
     
 7. Lorsque vous y invitez des informations d’identification de serveur, entrez les informations d’identification du compte CORP \\ User1, puis sélectionnez **OK**.
     
-8. Dans la page **Des** informations d’identification  d’administrateur de domaine,  entrez **CORP \\ User1** dans la zone Nom d’utilisateur, entrez le mot de passe du compte dans la zone Mot de passe, puis sélectionnez **Suivant**.
+8. Dans la page Des informations d’identification  **d’administrateur** de domaine,  entrez **CORP \\ User1** dans la zone Nom d’utilisateur, entrez le mot de passe du compte dans la zone Mot de passe, puis sélectionnez **Suivant**.
     
 9. Dans la page compte de **service AD FS,**  entrez **CORP \\ ADFS-Service**  dans la zone Nom d’utilisateur du domaine, entrez le mot de passe du compte dans la zone Mot de passe de l’utilisateur du domaine, puis sélectionnez **Suivant**.
     
@@ -383,7 +383,7 @@ Pour vérifier que l’authentification fédérée fonctionne, procédez comme s
     
 2. Pour les informations d’identification de connexion, entrez **user1@** \<*the domain created in Phase 1*> .
     
-    Par exemple, si votre domaine de test **est testlab.contoso.com,** vous entrez « user1@testlab.contoso.com ». Appuyez **sur la touche** de tabulation ou autorisez Microsoft 365 à vous rediriger automatiquement.
+    Par exemple, si votre domaine de test **est testlab.contoso.com,** vous entrez « user1@testlab.contoso.com ». Appuyez sur **la touche** de tabulation ou Microsoft 365 pour vous rediriger automatiquement.
     
     Une page **Votre connexion n’est pas privée** devrait s’afficher. Vous voyez cela, car vous avez installé un certificat auto-signé sur ADFS1 que votre ordinateur de bureau ne peut pas valider. Dans un déploiement de production d’authentification fédérée, vous utiliseriez un certificat provenant d’une autorité de certification approuvée et vos utilisateurs ne verraient pas cette page.
     
@@ -415,5 +415,5 @@ Votre abonnement d’évaluation est désormais configuré avec l’authentifica
   
 ## <a name="next-step"></a>Étape suivante
 
-Lorsque vous êtes prêt à déployer l’authentification fédérée haute disponibilité prête pour la production pour Microsoft 365 dans Azure, voir Déployer l’authentification fédérée haute disponibilité pour [Microsoft 365](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)dans Azure.
+Lorsque vous êtes prêt à déployer l’authentification fédérée haute disponibilité et prête pour la production pour Microsoft 365 dans Azure, voir Déployer l’authentification fédérée haute disponibilité pour [Microsoft 365 dans Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   

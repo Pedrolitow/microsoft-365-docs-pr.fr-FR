@@ -49,15 +49,15 @@ Contoso possède trois niveaux de bureaux :
 
 - Succursales
 
-  Les succursales contiennent 80 % du personnel de vente et de support technique. Ils fournissent une présence sur site pour les clients Contoso dans les villes clés ou sous-agrégations. Chaque bureau satellite est connecté à un hub régional via une liaison wan à bande passante élevée.
+  Les succursales contiennent 80 % des ventes et du personnel de support technique. Ils fournissent une présence sur site pour les clients Contoso dans les villes clés ou sous-agrégations. Chaque bureau satellite est connecté à un hub régional via une liaison wan à bande passante élevée.
 
   Les succursales ont en moyenne 250 employés.
 
-Environ 25 % des employés de Contoso sont mobiles uniquement. Les centres régionaux et les succursales ont un pourcentage plus élevé de ces travailleurs. La fourniture d’une meilleure prise en charge des travailleurs mobiles uniquement est un objectif commercial important pour Contoso.
+Environ 25 % des employés de Contoso sont mobiles uniquement. Les centres régionaux et les succursales ont un pourcentage plus élevé de ces employés. La fourniture d’une meilleure prise en charge des travailleurs mobiles uniquement est un objectif commercial important pour Contoso.
 
-## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considérations de conception pour Microsoft 365 pour entreprise
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considérations de conception pour Microsoft 365 entreprise
 
-Les architectes informatiques de Contoso ont identifié les facteurs de conception requis suivants pour le déploiement de Microsoft 365 pour entreprise :
+Les architectes informatiques de Contoso ont identifié les facteurs de conception requis suivants pour le déploiement Microsoft 365 entreprise :
 
 - Plusieurs implantations géographiques avec des réglementations et des exigences de conformité locales
 - Un centre de données intranet central dans les bureaux du siège social et les serveurs d’applications régionaux qui hébergent des applications métier internes
@@ -71,10 +71,10 @@ Les architectes informatiques de Contoso ont identifié les facteurs de concepti
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez [l’infrastructure](contoso-infra-needs.md) informatique locale de Contoso Corporation et la façon dont les besoins commerciaux de l’entreprise sont traités avec Microsoft 365 pour entreprise.
+Découvrez [l’infrastructure](contoso-infra-needs.md) informatique locale de Contoso Corporation et la façon dont les besoins de l’entreprise sont traités avec Microsoft 365 entreprise.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

@@ -1,7 +1,7 @@
 ---
-title: Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs
+title: Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs
 description: Obtenir des informations sur l’activité qui a affecté votre score de sécurité Microsoft. Découvrez les tendances et définissez des objectifs.
-keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -28,11 +28,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51571031"
 ---
-# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivre votre historique du Score de sécurisation Microsoft et atteindre les objectifs
+# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Suivre votre historique du Score de sécurité Microsoft et atteindre les objectifs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Le niveau de sécurité Microsoft](microsoft-secure-score.md) est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Vous pouvez le trouver dans le Centre de sécurité https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+[Le niveau de sécurité Microsoft](microsoft-secure-score.md) est une mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration. Il se trouve dans le https://security.microsoft.com/securescore centre de [sécurité Microsoft 365.](overview-security-center.md)
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Obtenir des informations sur l’activité qui a affecté votre score
 
@@ -52,7 +52,7 @@ Pour afficher tout l’historique de cette action d’amélioration spécifique,
 
 Dans **l’onglet & des** tendances, il existe plusieurs graphiques et graphiques pour vous donner plus de visibilité sur les tendances et définir des objectifs. Vous pouvez définir la plage de dates pour la page entière des visualisations. Les visualisations sont les suivantes :
 
-* **Votre zone De score de** sécurité : personnalisée en fonction des objectifs et des définitions de plages de scores bonnes, acceptables et mauvaises de votre organisation.
+* **Votre zone Score de** sécurité : personnalisée en fonction des objectifs et des définitions de plages de scores bonnes, acceptables et mauvaises de votre organisation.
 * **Tendance de régression :** chronologie des points qui ont régressé en raison de modifications de configuration, d’utilisateur ou d’appareil.  
 * **Tendance de comparaison** : comparaison du score de sécurité de votre organisation avec les autres au fil du temps. Cet affichage peut inclure des lignes représentant la moyenne de score des organisations dont le nombre de sièges est similaire et un affichage de comparaison personnalisé que vous pouvez définir.
 * **Tendance d’acceptation des risques** : chronologie des actions d’amélioration marquées comme « risques acceptés ».
