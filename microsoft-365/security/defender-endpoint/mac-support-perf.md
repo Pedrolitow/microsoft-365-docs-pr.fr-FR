@@ -1,5 +1,5 @@
 ---
-title: Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
+title: Résoudre les problèmes de performances pour Microsoft Defender pour le point de terminaison sur macOS
 description: Résolution des problèmes de performances dans Microsoft Defender pour point de terminaison sur macOS.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, performances
 search.product: eADQiWindows 10XVcnh
@@ -25,7 +25,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/27/2021
 ms.locfileid: "52694256"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour endpoint sur macOS
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Résoudre les problèmes de performances pour Microsoft Defender pour le point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,7 @@ Selon les applications que vous exécutez et les caractéristiques de votre appa
 
 Les étapes suivantes peuvent être utilisées pour résoudre et atténuer ces problèmes :
 
-1. Désactivez la protection en temps réel à l’aide de l’une des méthodes suivantes et observez si les performances s’améliorent. Cette approche permet de déterminer si Microsoft Defender pour Point de terminaison sur macOS contribue aux problèmes de performances.
+1. Désactivez la protection en temps réel à l’aide de l’une des méthodes suivantes et observez si les performances sont améliorées. Cette approche permet de déterminer si Microsoft Defender pour Point de terminaison sur macOS contribue aux problèmes de performances.
 
       Si votre appareil n’est pas géré par votre organisation, la protection en temps réel peut être désactivée à l’aide de l’une des options suivantes :
 

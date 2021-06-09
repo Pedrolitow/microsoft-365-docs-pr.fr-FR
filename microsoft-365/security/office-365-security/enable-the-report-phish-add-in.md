@@ -35,7 +35,7 @@ Les add-ins Signaler les messages et signaler le hameçonnage pour Outlook et Ou
 
 Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie. Par exemple, supposons que des personnes signalent de nombreux messages à l’aide du module de signalement du hameçonnage. Ces informations sont disponibles dans le Tableau [de bord de](security-dashboard.md) sécurité et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies anti-hameçonnage peuvent avoir besoin d’être mises à jour.
 
-Vous pouvez installer le add-in Signaler le message ou Signaler le hameçonnage. Si vous souhaitez que vos utilisateurs signalent à la fois le courrier indésirable et les messages de hameçonnage, déployez le add-in Signaler un message dans votre organisation. Pour plus d’informations, [voir Activer le add-in Message de rapport.](enable-the-report-message-add-in.md)
+Vous pouvez installer le module de rapport de message ou de signalement du hameçonnage. Si vous souhaitez que vos utilisateurs signalent à la fois le courrier indésirable et les messages de hameçonnage, déployez le add-in Signaler un message dans votre organisation. Pour plus d’informations, [voir Activer le add-in Message de rapport.](enable-the-report-message-add-in.md)
 
 Le module de signalement du hameçonnage offre la possibilité de signaler uniquement les messages de hameçonnage. Les administrateurs peuvent activer le module de signalement du hameçonnage pour l’organisation, et les utilisateurs individuels peuvent l’installer eux-mêmes.
 
@@ -77,7 +77,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 - Dans Outlook, l’icône ressemble à ceci :
 
-  ![Icône signaler le hameçonnage du Outlook](../../media/Outlook-ReportPhishing.png)
+  ![Icône signaler le hameçonnage d’un Outlook](../../media/Outlook-ReportPhishing.png)
 
 - Dans Outlook sur le web, l’icône ressemble à ceci :
 
@@ -92,7 +92,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
 
-   ![Page Services et add-ins dans le centre d Microsoft 365'administration](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Page Services et add-ins dans le centre d’administration Microsoft 365'administration](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. Dans le **volant Déployer un** nouveau module complémentaire qui s’affiche, examinez les informations, puis cliquez sur **Suivant**.
 
@@ -100,7 +100,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
    ![Déployer une nouvelle page de modules](../../media/NewAddInScreen2.png)
 
-5. Dans la page Sélectionner un **add-in** qui s’affiche, cliquez dans  la zone De recherche, entrez  **Hameçonnage** de rapport, puis cliquez sur Icône ![ ](../../media/search-icon.png) Recherche. Dans la liste des résultats, recherchez **l’hameçonnage** de rapport, puis cliquez sur **Ajouter.**
+5. Dans la page Sélectionner **un add-in** qui s’affiche, cliquez dans  la zone De recherche, entrez **Hameçonnage** de rapport, puis cliquez sur Icône  ![ ](../../media/search-icon.png) Recherche. Dans la liste des résultats, recherchez **l’hameçonnage** de rapport, puis cliquez sur **Ajouter.**
 
 6. Dans la boîte de dialogue qui s’affiche, examinez les informations de licence et de confidentialité, puis cliquez sur **Continuer**.
 
@@ -115,7 +115,7 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
 
      - **Fixe (par défaut)**: le add-in est automatiquement déployé sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
-     - **Disponible**: les utilisateurs peuvent installer le add-in sur **Home** \> **Get add-ins** \> **géré par l’administrateur.**
+     - **Disponible**: les utilisateurs peuvent installer le add-in sur **home** \> **get add-ins** \> **admin-managed**.
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
 
    Lorsque vous avez terminé, cliquez sur **Déployer.**
@@ -130,7 +130,7 @@ Les personnes à qui le add-in est affecté voient les icônes suivantes :
 
 - Dans Outlook, l’icône ressemble à ceci :
 
-  ![Icône signaler le hameçonnage du Outlook](../../media/Outlook-ReportPhishing.png)
+  ![Icône signaler le hameçonnage d’un Outlook](../../media/Outlook-ReportPhishing.png)
 
 - Dans Outlook sur le web, l’icône ressemble à ceci :
 

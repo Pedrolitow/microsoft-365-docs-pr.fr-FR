@@ -39,7 +39,7 @@ Les domaines inclus dans l’analyse des activités sont les suivants :
 Pour afficher et exporter des données à partir du journal d’audit, les utilisateurs doivent être affectés aux groupes de rôles Insider *Risk Management* ou Insider Risk *Management Auditors.* Pour en savoir plus sur les groupes de rôles de gestion des risques internes, voir Prise en charge de la gestion des risques internes Étape 1 : [Activation des autorisations.](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)
 
 >[!NOTE]
->Le journal d’audit de la gestion des risques internes n’est pas associé au journal d’audit Microsoft 365, il s’agit de systèmes d’audit indépendants et de capture d’informations sur des activités distinctes. La désactivation de l’audit Microsoft 365 n’a pas d’impact sur l’audit des activités au sein de la gestion des risques internes.
+>Le journal d’audit de la gestion des risques internes n’est pas associé au journal d’audit Microsoft 365, il s’agit de systèmes d’audit indépendants et de capture d’informations sur des activités distinctes. La désactivation Microsoft 365'audit n’a pas d’impact sur l’audit des activités au sein de la gestion des risques internes.
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Afficher l’activité dans le journal d’audit des risques internes
 
@@ -65,7 +65,7 @@ Les *utilisateurs affectés* aux groupes de rôles Insider *Risk Management* ou 
 Le fichier contient des informations d’activité pour les champs suivants :
 
 - **Activité effectuée par :** Nom d’utilisateur de l’utilisateur qui modifie une valeur d’élément. Les *utilisateurs répertoriés* ici ont été [](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)affectés à un ou plusieurs des groupes de rôles de gestion des risques internes suivants : Insider *Risk Management*, Insider Risk Management Admins , *Insider Risk Management Analysts*, Insider Risk Management *Investigators*. Chaque groupe de rôles dispose de différents niveaux d’autorisation pour gérer les fonctionnalités de risque internes.
-- **Activité :** Activité entreprise sur un élément. Les valeurs *sont Viewed, Deleted, Added, Edited policy, Case, User, Alert et* *Settings.*
+- **Activité :** Activité entreprise sur un élément. Les *valeurs sont Viewed, Deleted, Added, Edited policy, Case, User, Alert et* *Paramètres.*
 - **Ajout :** objets qui ont été ajoutés au cours de l’activité, tels que les utilisateurs, les types de fichiers ou les domaines.
 - **Volume d’alerte**: niveau du volume d’alerte défini dans les paramètres de gestion des risques internes.
 - **Montant**: montants des indicateurs personnalisés actuellement sélectionnés pour une stratégie.
@@ -74,7 +74,7 @@ Le fichier contient des informations d’activité pour les champs suivants :
 - **Date :** Date et heure, répertoriées dans la date et l’heure locales de votre organisation.
 - **Description**: entrée de description par l’utilisateur pour l’objet en cours d’action (par exemple, une stratégie ou un groupe d’utilisateurs prioritaire).
 - **Stratégie DLP :** stratégie de protection contre la perte de données (DLP) sélectionnée pour déclencher l’inclusion dans une stratégie de gestion des risques internes.
-- **Indicateur**: indicateur dans les paramètres de risque internes sur qui l’activité a été effectuée (par exemple, ajout ou suppression d’un indicateur).
+- **Indicateur**: indicateur dans les paramètres de risque internes sur l’activité (par exemple, ajout ou suppression d’un indicateur).
 - **Modèle de notification**: modèle d’avis sur qui l’activité a été effectuée.
 - **Nombre de jours :** fenêtre d’activation de stratégie définie dans les paramètres de risque interne.
 - **Nombre de fichiers**: limite de volume de fichiers définie dans les paramètres de gestion des risques internes.
@@ -85,5 +85,5 @@ Le fichier contient des informations d’activité pour les champs suivants :
 - **Expéditeur :** champ de l’expéditeur du modèle d’avis sur qui l’activité a été effectuée.
 - **Stratégie cible**: stratégie sur quelle stratégie l’activité a été effectuée (par exemple, ajout d’un utilisateur ou suppression d’un utilisateur).
 - **Corps du message du** modèle : corps du message du modèle d’avis sur qui l’activité a été effectuée.
-- **Objet du modèle**: champ d’objet du modèle d’avis sur qui l’activité a été effectuée.
+- **Objet du** modèle : champ d’objet du modèle d’avis sur qui l’activité a été effectuée.
 - **Utilisateur :** Utilisateur sur qui l’activité a été effectuée.

@@ -30,8 +30,8 @@ ms.locfileid: "52624800"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online, les paramètres de courrier indésirable de l’organisation sont contrôlés par Exchange Online Protection (EOP). Pour plus d’informations, voir [Protection contre le courrier indésirable dans EOP.](anti-spam-protection.md)
 
@@ -50,15 +50,15 @@ Lorsque la règle de courrier indésirable est activée sur la boîte aux lettre
 Les administrateurs peuvent utiliser Exchange Online PowerShell pour désactiver, activer et afficher l’état de la règle de courrier indésirable sur les boîtes aux lettres. Les administrateurs peuvent également utiliser Exchange Online PowerShell pour configurer les entrées de la collection de listes sécurisées sur les boîtes aux lettres (la liste des expéditeurs sûrs, la liste des destinataires sûrs et la liste des expéditeurs bloqués).
 
 > [!NOTE]
-> Les messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leurs propres listes d’expéditeurs sûrs ignorent le filtrage des connexions dans le cadre d’EOP (le SCL est -1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs sûrs dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section à propos des [paramètres](#about-junk-email-settings-in-outlook) du courrier indésirable dans Outlook plus loin dans cet article. Le filtrage des stratégies, le filtrage du contenu et defender pour Office 365 contrôles de contenu seront toujours appliqués aux messages.
+> Les messages provenant d’expéditeurs que les utilisateurs ont ajoutés à leurs propres listes d’expéditeurs sûrs ignorent le filtrage des connexions dans le cadre d’EOP (le SCL est -1). Pour empêcher les utilisateurs d’ajouter des entrées à leur liste des expéditeurs sûrs dans Outlook, utilisez la stratégie de groupe comme mentionné dans la section à propos des [paramètres](#about-junk-email-settings-in-outlook) du courrier indésirable dans Outlook plus loin dans cet article. Le filtrage des stratégies, le filtrage du contenu et defender pour Office 365 contrôles de stratégie seront toujours appliqués aux messages.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
 - Vous pouvez uniquement utiliser Exchange Online PowerShell pour suivre les procédures de cet article. Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle Destinataires de messagerie (attribué par défaut aux groupes de **rôles** Gestion de l’organisation, Gestion des destinataires et Destinataires de messagerie **personnalisés)** ou **Options** utilisateur (attribué aux groupes de rôles Gestion de l’organisation et Help **Desk** par défaut).  Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, voir Modifier les groupes de [rôles dans Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Notez que les utilisateurs ayant des autorisations par défaut peuvent suivre ces procédures sur leur propre boîte aux lettres, à condition qu’ils ont accès [à Exchange Online PowerShell.](/powershell/exchange/disable-access-to-exchange-online-powershell)
+- Des autorisations doivent vous être attribuées Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément, vous avez besoin du rôle Destinataires de messagerie (attribué par défaut aux groupes de  **rôles** Gestion de l’organisation, Gestion des destinataires et Destinataires de messagerie **personnalisés)** ou Options utilisateur (attribué aux groupes de rôles Gestion de l’organisation et Help **Desk** par défaut).   Pour ajouter des utilisateurs à des groupes de rôles dans Exchange Online, voir Modifier les groupes de [rôles dans Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Notez que les utilisateurs ayant des autorisations par défaut peuvent suivre ces procédures sur leur propre boîte aux lettres, à condition qu’ils ont accès [à Exchange Online PowerShell.](/powershell/exchange/disable-access-to-exchange-online-powershell)
 
-- Dans les environnements hybrides où EOP protège les boîtes aux lettres Exchange sur site, vous devez configurer des règles de flux de messagerie (également appelées règles de transport) dans des Exchange sur site pour traduire le verdict de filtrage du courrier indésirable EOP afin que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour plus d’informations, voir [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+- Dans les environnements hybrides où Exchange Online Protection protège les boîtes aux lettres Exchange locales, vous devez configurer des règles de flux de courrier (également appelées règles de transport) dans Exchange local pour traduire le verdict de filtrage de courrier indésirable Exchange Online Protection de sorte que la règle de courrier indésirable puisse déplacer le message vers le dossier Courrier indésirable. Pour les détails, voir [Configurer Exchange Online Protection (EOP) pour envoyer des courriers indésirables dans le dossier Courrier indésirable dans les environnements hybrides](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - Les expéditeurs sûrs pour les boîtes aux lettres partagées ne sont pas synchronisés par conception avec Azure AD et EOP.
 
@@ -91,7 +91,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 >
 > - Si l’utilisateur n’a jamais ouvert sa boîte aux lettres, vous pouvez recevoir une erreur lorsque vous exécutez la commande précédente. Pour supprimer cette erreur pour les opérations en bloc, ajoutez-la à la commande `-ErrorAction SilentlyContinue` **Set-MailboxJunkEmailConfiguration.**
 >
-> - Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable Outlook (selon sa configuration) peut également déterminer si un message est du courrier indésirable et déplacer les messages vers le dossier Boîte de réception ou Courrier indésirable en fonction de son propre verdict de courrier indésirable et de la collection de listes sécurisées de la boîte aux lettres. Pour plus d’informations, voir la section à propos des [paramètres](#about-junk-email-settings-in-outlook) du courrier indésirable Outlook dans cet article.
+> - Même si vous désactivez la règle de courrier indésirable, le filtre de courrier indésirable Outlook (selon sa configuration) peut également déterminer si un message est du courrier indésirable et peut déplacer des messages vers le dossier Boîte de réception ou Courrier indésirable en fonction de son propre verdict de courrier indésirable et de la collection de listes sécurisées de la boîte aux lettres. Pour plus d’informations, voir la section à propos des [paramètres](#about-junk-email-settings-in-outlook) du courrier indésirable Outlook dans cet article.
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
@@ -113,7 +113,7 @@ La collection de listes fiables d'une boîte aux lettres comprend la liste des e
 |---|---|
 |_BlockedSendersAndDomains_|**Déplacer les messages de ces expéditeurs ou domaines vers mon dossier Courrier indésirable**|
 |_ContactsTrusted_|**Approuver le courrier en provenance de mes contacts**|
-|_TrustedListsOnly_|**Ne faire confiance qu’aux e-mails provenant d’adresses de mes listes d’expéditeurs et de domaines sécurisés et de mes listes de diffusion sécurisée**|
+|_TrustedListsOnly_|**Ne faire confiance qu’aux e-mails provenant d’adresses dans ma liste des expéditeurs et des domaines sûrs et des listes de diffusion sécurisée**|
 |_TrustedSendersAndDomains_<sup>\*</sup>|**Ne pas déplacer le courrier de ces expéditeurs vers mon dossier Courrier indésirable**|
 |
 
@@ -181,14 +181,14 @@ Pour activer, désactiver et configurer les paramètres de filtrage du courrier 
 
 Lorsque le filtre de courrier indésirable Outlook est  définie sur  la valeur par défaut Aucun filtrage automatique dans options d’options du courrier indésirable à la maison, Outlook ne tente pas de classer les courriers indésirables, mais utilise toujours la collection de listes sécurisées (liste des expéditeurs sûrs, liste des destinataires sûrs et \>  \>  \> expéditeurs bloqués) pour déplacer les messages vers le dossier Courrier indésirable après la remise. Pour plus d’informations sur ces paramètres, voir [Vue d’ensemble du filtre de courrier indésirable.](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)
 
-Lorsque le filtre de courrier indésirable Outlook est défini sur **Faible** ou **Élevé**, le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable. Cette classification du courrier indésirable est distincte du niveau de confiance du courrier indésirable (SCL) déterminé par EOP. En fait, Outlook ignore le SCL d’EOP (sauf si EOP a marqué le message pour ignorer le filtrage du courrier indésirable) et utilise ses propres critères pour déterminer si le message est du courrier indésirable. Bien entendu, il est possible que le verdict de courrier indésirable d’EOP Outlook soit le même. Pour plus d’informations sur ces paramètres, voir Modifier le niveau [de protection dans le filtre de courrier indésirable.](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+Lorsque le filtre de courrier indésirable Outlook est défini sur **Faible** ou **Élevé**, le filtre de courrier indésirable Outlook utilise sa propre technologie de filtrage SmartScreen pour identifier et déplacer le courrier indésirable vers le dossier Courrier indésirable. Cette classification du courrier indésirable est distincte du niveau de confiance du courrier indésirable (SCL) déterminé par EOP. En fait, Outlook ignore le SCL d’EOP (sauf si EOP a marqué le message pour ignorer le filtrage du courrier indésirable) et utilise ses propres critères pour déterminer s’il s’agit d’un courrier indésirable. Bien entendu, il est possible que le verdict de courrier indésirable d’EOP Outlook soit le même. Pour plus d’informations sur ces paramètres, voir Modifier le niveau [de protection dans le filtre de courrier indésirable.](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
 
 > [!NOTE]
 > En novembre 2016, Microsoft a cessé de produire des mises à jour des définitions de courrier indésirable pour les filtres SmartScreen dans Exchange et Outlook. Les définitions de courrier indésirable SmartScreen existantes ont été laissées en place, mais leur efficacité se dégradera probablement au fil du temps. Pour plus d’informations, voir l’[Arrêt de la prise en charge de SmartScreen dans Outlook et Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).
 
 Ainsi, le filtre de courrier indésirable Outlook peut utiliser la collection de listes sécurisées de la boîte aux lettres et sa propre classification de courrier indésirable pour déplacer les messages vers le dossier Courrier indésirable, même si la règle de courrier indésirable est désactivée dans la boîte aux lettres.
 
-Outlook et Outlook sur le web, les deux prise en charge de la collection de listes sécurisées. La collection de listes sécurisées est enregistrée dans la boîte aux lettres Exchange Online, de sorte que les modifications apportées à la collection de listes sécurisées dans Outlook apparaissent dans Outlook sur le web, et inversement.
+Outlook et Outlook sur le web les deux prise en charge de la collection de listes sécurisées. La collection de listes sécurisées est enregistrée dans la boîte aux lettres Exchange Online, de sorte que les modifications apportées à la collection de listes sécurisées dans Outlook apparaissent dans Outlook sur le web, et inversement.
 
 ## <a name="limits-for-junk-email-settings"></a>Limites pour les paramètres de courrier indésirable
 
@@ -214,7 +214,7 @@ La collection de listes sécurisées (liste des expéditeurs sûrs, liste des de
 - Avec la synchronisation d’annuaires, les entrées sont synchronisées avec Azure AD dans l’ordre suivant :
 
   1. Contacts de messagerie si **les messages d’confiance provenant de** mes contacts sont activés.
-  2. La liste des expéditeurs sûrs et la liste des destinataires sûrs sont combinées, dépliquées et triées par ordre alphabétique chaque fois qu’une modification est réalisée pour les 1 024 premières entrées.
+  2. La liste des expéditeurs sûrs et la liste des destinataires sûrs sont combinées, dépliquées et triées par ordre alphabétique chaque fois qu’une modification est faite pour les 1 024 premières entrées.
 
   Les 1 024 premières entrées sont utilisées et les informations pertinentes sont estampillées dans les en-têtes de message.
 

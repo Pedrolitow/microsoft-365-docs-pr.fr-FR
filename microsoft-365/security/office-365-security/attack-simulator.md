@@ -45,7 +45,7 @@ Si votre organisation dispose de Microsoft Defender pour [](office-365-ti.md)Off
 
 - Pour ouvrir le Centre de conformité et sécurité, consultez <https://protection.office.com/>. Le Simulateur d’attaques est disponible dans **Gestion des menaces** \> **Simulateur d’attaques**. Pour aller directement au simulateur d’attaques, ouvrez <https://protection.office.com/attacksimulator> .
 
-- Pour plus d’informations sur la disponibilité du Simulateur d’attaques Microsoft 365 différents abonnements, consultez Microsoft Defender pour obtenir [Office 365 description du service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Pour plus d’informations sur la disponibilité du Simulateur d’attaques Microsoft 365 différents abonnements, consultez Microsoft Defender pour obtenir [la description Office 365 service.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Vous devez être membre des groupes de rôles **Management de l’organisation** ou **Administrateur de sécurité**. Pour des informations supplémentaires sur les groupes de rôles dans le Centre de sécurité et conformité, voir [Autorisations dans le Centre de sécurité et conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Si votre organisation dispose de Microsoft Defender pour [](office-365-ti.md)Off
 
 - Les campagnes d’hameçonnage collectent et traitent des événements sur une durée de 30 jours. L’historique des données de la campagne est disponible pendant un maximum de 90 jours après le lancement de la campagne.
 
-- Les données associées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour Microsoft 365 services. Pour plus [d’informations, Microsoft 365 des emplacements de données.](../../enterprise/o365-data-locations.md)
+- Les données liées à la simulation d’attaque et à la formation sont stockées avec d’autres données client pour Microsoft 365 services. Pour plus [d’informations, Microsoft 365 des emplacements de données.](../../enterprise/o365-data-locations.md)
 
 - Il n’existe pas d’applet de commande PowerShell correspondante pour le Simulateur d’attaques.
 

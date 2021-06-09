@@ -32,7 +32,7 @@ ms.locfileid: "52694364"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 Cette rubrique fournit des informations de dépannage pour vous aider à résoudre les problèmes qui peuvent survenir lorsque vous utilisez Microsoft Defender pour Endpoint sur iOS.
 
@@ -60,7 +60,7 @@ Bien qu’il soit activé par défaut, il se peut que vous de soyez dans certain
 
 ## <a name="issues-with-multiple-vpn-profiles"></a>Problèmes avec plusieurs profils VPN
 
-Apple iOS ne prend pas en **charge** plusieurs VPN à l’échelle de l’appareil pour être actifs simultanément. Alors que plusieurs profils VPN peuvent exister sur l’appareil, un seul VPN peut être actif à la fois.
+Apple iOS ne prend pas en **charge** plusieurs VPN à l’échelle de l’appareil pour être actifs simultanément. Même si plusieurs profils VPN peuvent exister sur l’appareil, un seul VPN peut être actif à la fois.
 
 Le VPN Microsoft Defender pour point de terminaison peut co-exister avec d’autres VPN configurés comme par application ou *« Personnel*». 
 
@@ -68,13 +68,13 @@ Le VPN Microsoft Defender pour point de terminaison peut co-exister avec d’aut
 
 Dans l’Paramètres, iOS affiche uniquement l’utilisation de la batterie des applications visibles par l’utilisateur pendant une durée spécifique. L’utilisation de la batterie par les applications affichées à l’écran ne dure que pendant cette durée et est calculée par iOS en fonction d’une multitude de facteurs, notamment l’utilisation du processeur et du réseau. Microsoft Defender pour le point de terminaison utilise un VPN local/de bouc-back en arrière-plan pour vérifier le trafic web des sites web ou connexions malveillants. Les paquets réseau de n’importe quelle application sont vérifiés et l’utilisation de la batterie de Microsoft Defender for Endpoint est calculée de manière incorrecte. La consommation réelle de batterie de Microsoft Defender pour le point de terminaison est beaucoup moins élevée que celle affichée sur la page Paramètres batterie sur l’appareil.
 
-En moyenne, l’utilisation quotidienne de la batterie par Microsoft Defender pour le point de terminaison en cours d’exécution en arrière-plan représente environ **8,81 %** de la batterie globale consommée au cours de cette journée. Cette mesure est signalée par Apple en fonction de l’utilisation réelle de Microsoft Defender pour Endpoint sur les appareils des utilisateurs finaux et, pour des raisons mentionnées ci-dessus, peut également être liée à d’autres applications qui ont une activité réseau.
+En moyenne, l’utilisation quotidienne de la batterie par Microsoft Defender pour le point de terminaison s’exécutant en arrière-plan représente environ **8,81 %** de la batterie globale consommée au cours de ce jour. Cette mesure est signalée par Apple en fonction de l’utilisation réelle de Microsoft Defender pour Endpoint sur les appareils des utilisateurs finaux et, pour des raisons mentionnées ci-dessus, peut également être liée à d’autres applications qui ont une activité réseau.
 
-En outre, le VPN utilisé est un VPN local et, contrairement à un VPN traditionnel, le trafic réseau n’est pas envoyé à l’extérieur de l’appareil.
+En outre, le VPN utilisé est un VPN local et, contrairement à un VPN traditionnel, le trafic réseau n’est pas envoyé en dehors de l’appareil.
 
 ## <a name="data-usage"></a>Utilisation des données
 
-Microsoft Defender pour le point de terminaison utilise un VPN local/loopback pour vérifier le trafic web des sites web ou des connexions malveillants. Pour cette raison, l’utilisation des données de Microsoft Defender pour les points de terminaison peut être incorrectement expliquée. L’utilisation réelle des données par Microsoft Defender pour le point de terminaison n’est pas significative et inférieure à ce qui est indiqué sur la Paramètres d’utilisation des données sur l’appareil.
+Microsoft Defender pour le point de terminaison utilise un VPN local/loopback pour vérifier le trafic web des sites web ou connexions malveillants. Pour cette raison, l’utilisation des données de Microsoft Defender pour les points de terminaison peut être incorrectement expliquée. L’utilisation réelle des données par Microsoft Defender pour le point de terminaison n’est pas significative et inférieure à ce qui est indiqué sur la Paramètres d’utilisation des données sur l’appareil.
 
 ## <a name="report-unsafe-site"></a>Signaler un site non sécurisé
 

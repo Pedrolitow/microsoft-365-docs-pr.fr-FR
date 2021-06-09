@@ -1,5 +1,5 @@
 ---
-title: Valider un brouillon de collection dans un jeu à réviser
+title: Valider une collection au brouillon vers un ensemble de révisions
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -25,11 +25,11 @@ ms.locfileid: "50838856"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Valider un brouillon de collection dans un jeu à réviser dans Advanced eDiscovery
 
-Lorsque vous êtes satisfait des éléments que vous avez collectés dans un brouillon de collection et que vous êtes prêt à les analyser, les baliser et les passer en revue, vous pouvez ajouter une collection à un jeu à réviser dans le cas. Lorsque vous valider un brouillon de collection dans un jeu à réviser, les éléments collectés sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 vers un groupe de révision. Un groupe de révision est un emplacement de stockage Azure sécurisé fourni par Microsoft dans le cloud Microsoft.
+Lorsque vous êtes satisfait des éléments que vous avez collectés dans un brouillon de collection et que vous êtes prêt à les analyser, les baliser et les examiner, vous pouvez ajouter une collection à un jeu à réviser dans le cas. Lorsque vous valider un brouillon de collection dans un jeu à réviser, les éléments collectés sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 dans un jeu à réviser. Un groupe de révision est un emplacement sécurisé fourni par Microsoft stockage Azure dans le cloud Microsoft.
 
-## <a name="commit-a-draft-collection-to-a-review-set"></a>Valider un brouillon de collection dans un jeu à réviser
+## <a name="commit-a-draft-collection-to-a-review-set"></a>Valider une collection au brouillon vers un ensemble de révisions
 
-1. Dans le Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery, puis sélectionnez l’onglet **Collections** pour afficher la liste des collections dans le cas.
+1. Dans le Microsoft 365 conformité, ouvrez le cas Advanced eDiscovery, puis sélectionnez l’onglet **Collections** pour afficher la liste des collections dans le cas.
 
    ![Liste des collections dans un cas](../media/CommitDraftCollections1.png)
 
@@ -42,7 +42,7 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 
 4. Dans l’Assistant Modification de collection, cliquez sur **Suivant** jusqu’à ce que la page Enregistrer le brouillon **ou** Collecter s’affiche.
 
-5. Configurez les paramètres suivants :
+5. Configurez les paramètres suivants :
 
    1. Sélectionnez **Collecter les éléments et ajoutez-les au jeu à réviser.**
 
@@ -50,11 +50,11 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 
    3. Configurez les paramètres de collection supplémentaires :
 
-       - **Teams et Yammer messages**: sélectionnez cette option pour ajouter des threads de conversation à la collection qui incluent les éléments de conversation renvoyés par la requête de recherche dans la collection. Cela signifie que la conversation qui contient les éléments qui correspondent aux critères de recherche est reconstruite. Cela vous permet de passer en revue les éléments de conversation dans le contexte de la conversation de va-et-vient. Pour plus d’informations, [voir Threads de conversation dans Advanced eDiscovery](conversation-review-sets.md).
+       - **Teams** et Yammer messages : sélectionnez cette option pour ajouter des threads de conversation à la collection qui incluent les éléments de conversation renvoyés par la requête de recherche dans la collection. Cela signifie que la conversation qui contient les éléments qui correspondent aux critères de recherche est reconstruite. Cela vous permet de passer en revue les éléments de conversation dans le contexte de la conversation de va-et-vient. Pour plus d’informations, [voir Threads de conversation dans Advanced eDiscovery](conversation-review-sets.md).
 
        - **Pièces jointes dans le cloud**: sélectionnez cette option pour inclure des pièces jointes modernes ou des fichiers liés lorsque les résultats de la collection sont ajoutés au jeu à réviser. Cela signifie que le fichier cible d’une pièce jointe moderne ou d’un fichier lié est ajouté au jeu à réviser.
 
-       - **Versions de SharePoint**: sélectionnez cette option pour activer la collection de toutes les versions d’un document SharePoint selon les limites de version et les paramètres de recherche de la collection. La sélection de cette option augmente considérablement la taille des éléments ajoutés au jeu à réviser.
+       - **SharePoint versions**: sélectionnez cette option pour activer la collection de toutes les versions d’un document SharePoint selon les limites de version et les paramètres de recherche de la collection. La sélection de cette option augmente considérablement la taille des éléments ajoutés au jeu à réviser.
 
    4. Configurez les paramètres pour définir l’échelle de la collection à ajouter au jeu à réviser :
 
@@ -62,7 +62,7 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 
       - **Ajoutez un exemple des résultats** de la collection : sélectionnez cette option pour ajouter un échantillon des résultats de la collection au jeu à réviser au lieu d’ajouter tous les résultats. Si vous sélectionnez cette option, cliquez sur **Modifier les exemples de paramètres** et choisissez l’une des options suivantes :
 
-         - **Exemple basé sur la confiance**: les éléments de la collection sont ajoutés au jeu à réviser sont déterminés par les paramètres statistiques que vous définissez. Si vous utilisez généralement un niveau de confiance et un intervalle lors de l’échantillonnage des résultats, spécifiez-les dans les zones de la baisse. Dans le cas contraire, utilisez les paramètres par défaut.
+         - **Exemple basé sur la confiance**: les éléments de la collection sont ajoutés au jeu à réviser seront déterminés par les paramètres statistiques que vous définissez. Si vous utilisez généralement un niveau de confiance et un intervalle lors de l’échantillonnage des résultats, spécifiez-les dans les zones de la baisse. Dans le cas contraire, utilisez les paramètres par défaut.
 
          - **Exemple aléatoire :** les éléments de la collection sont ajoutés au jeu à réviser en fonction d’une sélection aléatoire du pourcentage spécifié du nombre total d’éléments renvoyés par la recherche.
 
@@ -72,15 +72,15 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 
 ## <a name="what-happens-after-you-commit-a-draft-collection"></a>Que se passe-t-il après la validation d’un brouillon de collection ?
 
-Lorsque vous valider un brouillon de collection dans un jeu à réviser, les choses suivantes se produisent :
+Lorsque vous valider un brouillon de collection dans un groupe de révision, les choses suivantes se produisent :
 
 - La requête de recherche de collection est à nouveau exécuté. Cela signifie que les résultats de recherche réels copiés dans le jeu à réviser peuvent être différents des résultats estimés qui ont été renvoyés lors de la dernière utilisation de la recherche de collection.
 
-- Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans le service en direct et copiés dans un emplacement de stockage Azure sécurisé dans le cloud Microsoft.
+- Tous les éléments des résultats de la recherche sont copiés à partir de la source de données d’origine dans le service en direct et copiés dans un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
-- Tous les éléments (y compris le contenu et les métadonnées) qui ne se trouvent pas dans des sources de données de dépositaire ou non dépositaire sont réindexés (dans un processus appelé *indexation* approfondie) afin que toutes les données du jeu à réviser soient entièrement utilisables dans une recherche pendant l’examen des données de cas. La réindexation du contenu d’une collection entraîne des recherches approfondies et rapides lorsque vous recherchez ou filtrez le contenu du jeu à réviser au cours de l’examen du cas.
+- Tous les éléments (y compris le contenu et les métadonnées) qui ne se trouvent pas dans des sources de données de dépositaire ou non dépositaire sont réindexés (dans un processus appelé *indexation* approfondie) afin que toutes les données du jeu à réviser soient entièrement utilisables dans une recherche pendant l’examen des données de cas. La réindexation du contenu d’une collection entraîne des recherches approfondies et rapides lorsque vous recherchez ou filtrez le contenu du jeu à réviser au cours de l’examen de cas.
 
-- Les documents SharePoint et OneDrive chiffrés, ainsi que les messages électroniques joints aux fichiers chiffrés renvoyés dans les résultats de la recherche, sont déchiffrés lorsque vous validerez la collection dans un jeu à réviser. Vous pouvez examiner et interroger les fichiers déchiffrés dans le jeu à réviser. Pour plus d’informations, voir Déchiffrement dans les outils [eDiscovery de Microsoft 365.](ediscovery-decryption.md)
+- Les documents SharePoint et OneDrive chiffrés et les messages électroniques joints qui sont renvoyés dans les résultats de la recherche sont déchiffrés lorsque vous validerez la collection dans un groupe de révision. Vous pouvez examiner et interroger les fichiers déchiffrés dans le jeu à réviser. Pour plus d’informations, voir Déchiffrement dans [Microsoft 365 outils eDiscovery](ediscovery-decryption.md).
 
 - La fonctionnalité de reconnaissance optique de caractères (OCR) extrait le texte des images et inclut le texte de l’image avec le contenu ajouté à un jeu à réviser. Pour plus d’informations, voir la section [Reconnaissance optique de](#optical-character-recognition) caractères de cet article.
 

@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Découvrez comment envoyer des messages chiffrés à l’aide d’Outlook.
+description: Découvrez comment envoyer des messages chiffrés à l’aide Outlook.
 ms.openlocfilehash: 209734bd52d1d97278d5632f035723758fe2e016
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -47,21 +47,21 @@ Avant d’envoyer des messages électroniques avec des informations confidentiel
 
 ## <a name="set-it-up"></a>Configuration
 
-Si vous souhaitez chiffrer un message qui ne répond pas à une règle prédéfinie ou si votre administrateur n’a pas défini de règles, vous pouvez appliquer différentes règles de chiffrement avant d’envoyer le message. Pour envoyer un message chiffré à partir d’Outlook 2013 ou 2016 ou d’Outlook 2016 pour Mac, sélectionnez **Options > Autorisations,** puis sélectionnez l’option de protection dont vous avez besoin. Vous pouvez également envoyer un message chiffré en sélectionnant le bouton **Protéger** dans Outlook sur le web. Pour plus d’informations, voir Envoyer, afficher et répondre à des messages chiffrés [dans Outlook pour PC.](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+Si vous souhaitez chiffrer un message qui ne répond pas à une règle prédéfinie ou si votre administrateur n’a pas défini de règles, vous pouvez appliquer différentes règles de chiffrement avant d’envoyer le message. Pour envoyer un message chiffré à partir de Outlook 2013 ou 2016 ou Outlook 2016 pour Mac, sélectionnez **Options > Autorisations,** puis sélectionnez l’option de protection dont vous avez besoin. Vous pouvez également envoyer un message  chiffré en sélectionnant le bouton Protéger dans Outlook sur le web. Pour plus d’informations, voir [Envoyer, afficher et](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)répondre à des messages chiffrés Outlook pc.
 
 ## <a name="admin-settings"></a>Paramètres d’administration
 
-Vous pouvez en savoir plus sur la configuration du chiffrement du courrier électronique à l’adresse de chiffrement de [courrier électronique dans Microsoft 365.](../compliance/email-encryption.md)
+Vous pouvez en savoir plus sur la configuration du chiffrement des e-mails sur [le chiffrement](../compliance/email-encryption.md)de courrier électronique dans Microsoft 365 .
 
 ### <a name="automatically-encrypt-email-messages"></a>Chiffrer automatiquement les messages électroniques
 
 Les administrateurs peuvent créer des règles de flux de messagerie pour protéger automatiquement les messages électroniques envoyés et reçus à partir de votre campagne. Configurer des règles pour chiffrer les messages électroniques sortants et supprimer le chiffrement des messages chiffrés provenant de l’intérieur de votre organisation ou des réponses aux messages chiffrés envoyés à partir de votre organisation.
 
-Vous créez des règles de flux de messagerie pour chiffrer les messages électroniques avec les nouvelles fonctionnalités de chiffrement de messages Office 365 (OME). Définir des règles de flux de messagerie pour déclencher le chiffrement des messages avec les nouvelles fonctionnalités OME à l’aide du Centre d’administration Exchange (EAC). 
+Vous créez des règles de flux de messagerie pour chiffrer les messages électroniques avec les nouvelles fonctionnalités chiffrement de messages Office 365 (OME). Définissez des règles de flux de messagerie pour déclencher le chiffrement des messages avec les nouvelles fonctionnalités OME à l’aide du Centre d’administration Exchange (EAC). 
 
 1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous.
 2. Sélectionnez la vignette Administrateur.
-3. Dans le Centre d’administration, choisissez **Centres d’administration > Exchange.**
+3. Dans le Centre d’administration, **sélectionnez Centres d’administration > Exchange**.
 
 Pour plus d’informations, voir [Définir des règles de flux de messagerie pour chiffrer les messages électroniques.](../compliance/define-mail-flow-rules-to-encrypt-email.md)
 

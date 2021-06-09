@@ -1,6 +1,6 @@
 ---
 title: 'Microsoft Defender pour point de terminaison Android : informations sur la confidentialité'
-description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour point de terminaison sur Android.
+description: Contrôles de confidentialité, comment configurer les paramètres de stratégie qui ont une incidence sur la confidentialité et les informations sur les données de diagnostic collectées dans Microsoft Defender pour Endpoint sur Android.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, android, confidentialité, diagnostic
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -68,9 +68,9 @@ Informations sur **les** packages d’application Android malveillants (APK) sur
     - Identificateur global unique (GUID) généré de manière aléatoire
 
 - Informations sur le client, l’appareil et l’utilisateur
-    -   Azure Active Directory (AD) ID d’appareil et ID utilisateur Azure : identifie de manière unique l’appareil, Utilisateur, respectivement dans Azure Active Directory.
+    -   Azure Active Directory (AD) Device ID et Azure User ID : identifie de manière unique l’appareil, Utilisateur, respectivement dans Azure Active Directory.
 
-    -   ID de client Azure : GUID qui identifie votre organisation au sein Azure Active Directory
+    -   ID de client Azure : GUID qui identifie votre organisation dans Azure Active Directory
 
     -   ID d’organisation Microsoft Defender pour point de terminaison : identificateur unique associé à l’entreprise à qui appartient l’appareil. Permet à Microsoft d’identifier si les problèmes ont un impact sur un ensemble d’entreprises sélectionné et le nombre d’entreprises qui en sont touchées 
 

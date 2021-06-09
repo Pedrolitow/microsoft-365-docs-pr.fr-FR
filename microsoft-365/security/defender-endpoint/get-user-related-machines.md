@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les ordinateurs liés à l’utilisateur
-description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à l’utilisateur pour récupérer une collection d’appareils liés à un ID d’utilisateur dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à l’utilisateur pour récupérer une collection d’appareils liés à un ID d’utilisateur dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, utilisateur, alertes associées à l’utilisateur
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -42,7 +42,7 @@ ms.locfileid: "52769895"
 Récupère une collection d’appareils liés à un ID d’utilisateur donné.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Le marquage de documents dans un jeu à réviser permet de supprimer du contenu inutile et d’identifier le contenu pertinent dans Advanced eDiscovery cas.
+description: Le marquage de documents dans un jeu à réviser permet de supprimer le contenu inutile et d’identifier le contenu pertinent dans Advanced eDiscovery cas.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 6d6a933f24a034aced99a8eaa70c6ee951765ca0
 ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
@@ -26,7 +26,7 @@ ms.locfileid: "52736248"
 ---
 # <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Baliser des documents dans un jeu à réviser dans Advanced eDiscovery
 
-L’organisation du contenu dans un ensemble de révision est importante pour effectuer différents flux de travail dans le processus eDiscovery. Cela inclut les opérations suivantes :
+L’organisation du contenu dans un ensemble de révision est importante pour effectuer différents flux de travail dans le processus eDiscovery. Cela inclut les opérations suivantes :
 
 - Élimination de contenu inutile
 
@@ -37,7 +37,7 @@ L’organisation du contenu dans un ensemble de révision est importante pour ef
 Lorsque des experts, des avocats ou d’autres utilisateurs examinent le contenu d’un groupe de révision, leurs opinions relatives au contenu peuvent être capturées à l’aide de balises. Par exemple, si l’objectif est d’annuler le contenu inutile, un utilisateur peut baliser des documents avec une balise telle que « non réactif ». Une fois que le contenu a été révisé et balisé, une recherche de jeu à réviser peut être créée pour exclure tout contenu marqué comme « non réactif ». Ce processus élimine le contenu non réactif des étapes suivantes du flux de travail eDiscovery. Le panneau de marquage d’un jeu à réviser peut être personnalisé pour chaque cas afin que les balises de prise en charge du flux de travail de révision prévu pour le cas.
 
 > [!NOTE]
-> L’étendue des balises est Advanced eDiscovery cas. Cela signifie qu’un cas ne peut avoir qu’un seul ensemble de balises que les réviseurs peuvent utiliser pour baliser des documents de jeu de révision. Vous ne pouvez pas configurer un ensemble différent de balises pour une utilisation dans différents jeux de révision dans le même cas.
+> L’étendue des balises est Advanced eDiscovery cas. Cela signifie qu’un cas ne peut avoir qu’un seul ensemble de balises que les réviseurs peuvent utiliser pour baliser des documents de jeu de révision. Vous ne pouvez pas configurer un ensemble différent de balises pour une utilisation dans différents ensembles de révision dans le même cas.
 
 ## <a name="tag-types"></a>Types de balises
 
@@ -69,7 +69,7 @@ Avant d’appliquer des balises aux documents du jeu à réviser, vous devez cr�
 
 4. Tapez un titre de groupe de balises et une description facultative, puis cliquez sur **Enregistrer.**
 
-5. Sélectionnez le menu déroulant à trois points en regard du titre du groupe de balises, puis cliquez sur Ajouter une case à **cocher** ou sur la case **d’option Ajouter.**
+5. Sélectionnez le menu déroulant à trois points en regard du titre du groupe de balises, puis cliquez sur Ajouter une case à **cocher** ou sur **la case d’option Ajouter.**
 
 6. Tapez un nom et une description pour la case à cocher ou la case d’option.
 
@@ -87,7 +87,7 @@ Une fois la structure de balises en place, les réviseurs peuvent appliquer des 
 
 ### <a name="tag-files"></a>Fichiers de balise
 
-Que vous sélectionniez un ou plusieurs éléments dans un jeu à  réviser, vous pouvez appliquer des balises à leur sélection en cliquant sur Fichiers de balises dans la barre de commandes. Dans le panneau de marquage, vous pouvez sélectionner une balise et elle est automatiquement appliquée aux documents sélectionnés.
+Que vous sélectionniez un ou plusieurs éléments dans un jeu à  réviser, vous pouvez appliquer des balises à leur sélection en cliquant sur Les fichiers de balises dans la barre de commandes. Dans le panneau de marquage, vous pouvez sélectionner une balise et elle est automatiquement appliquée aux documents sélectionnés.
 
 ![Baliser les fichiers sélectionnés](../media/TagFile2.png)
 
@@ -126,7 +126,7 @@ Utilisez le filtre de balise dans le jeu à réviser pour rechercher ou exclure 
 
 4. Pour inclure ou exclure des éléments avec une balise spécifique d’une requête, faites l’une des choses suivantes :
 
-   - **Inclure des éléments**: sélectionnez la valeur de la balise et sélectionnez **Égal à l’un** des éléments dans le menu déroulant.
+   - **Inclure des éléments**: sélectionnez la valeur de la balise et sélectionnez Égal **à l’un** des éléments dans le menu déroulant.
 
       Ou
 

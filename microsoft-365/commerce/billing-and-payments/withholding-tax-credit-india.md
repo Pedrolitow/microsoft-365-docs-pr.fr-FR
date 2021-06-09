@@ -49,7 +49,7 @@ Envoyez la demande WHT en ouvrant un ticket avec le support Microsoft.
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Pour les clients qui paient par carte de crédit
 
-Si votre mode de paiement est une carte bancaire et que vous avez effectué un paiement complet au service MRS et que vous avez également payé wht au service fiscal du revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
+Si votre mode de paiement est une carte de crédit et que vous avez effectué un paiement complet au service MRS et que vous avez également payé l’IFF au service d’impôt sur le revenu, vous devez soumettre une demande WHT pour demander le remboursement du montant des taxes.
 
 Votre requête WHT doit inclure les éléments suivants :
 
@@ -58,7 +58,7 @@ Votre requête WHT doit inclure les éléments suivants :
 
 Envoyer la demande WHT en ouvrant un ticket avec le support Microsoft
 
-## <a name="timelines-to-submit-the-tds-certificate-together-with-the-withholding-tax-credit-form"></a>Chronologies pour envoyer le certificat TDS avec le formulaire de crédit d’impôt sur la retenue d’impôt
+## <a name="timelines-to-submit-the-tds-certificate-together-with-the-withholding-tax-credit-form"></a>Chronologies de soumission du certificat TDS avec le formulaire de crédit d’impôt sur la retenue d’impôt
 
 Le tableau suivant indique les dates d’échéance et les chronologies pour envoyer des formulaires de certificat TDS signés numériquement (formulaire 16A) pour chaque trimestre.
 
@@ -85,7 +85,7 @@ En cas de problème avec votre demande, l’équipe de révision peut exiger des
 
 Une fois votre demande approuvée, elle est reflétée dans le cycle de facturation suivant. Le montant wht payé est inclus dans la section paiement de votre facture suivante. Le montant est également affiché sous le montant payé dans le portail client.
 
-**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre paiement surpayé est remboursé sur votre carte de crédit.
+**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre sur-paiement est remboursé sur votre carte de crédit.
 
 > [!IMPORTANT]
 >

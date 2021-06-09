@@ -24,7 +24,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/03/2021
 ms.locfileid: "52736423"
 ---
-# <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer le contenu d’un jeu à réviser
+# <a name="query-and-filter-content-in-a-review-set"></a>Interroger et filtrer du contenu dans un jeu à réviser
 
 Dans la plupart des cas, il est utile d’approfondir le contenu d’un jeu à réviser et de l’organiser pour faciliter une révision plus efficace. L’utilisation de filtres et de requêtes dans un ensemble de révision vous permet de vous concentrer sur un sous-ensemble de documents qui répondent aux critères de votre avis.
 
@@ -32,7 +32,7 @@ Dans la plupart des cas, il est utile d’approfondir le contenu d’un jeu à r
 
 Dans un jeu à réviser, il existe cinq filtres par défaut qui sont pré-chargés dans le jeu à réviser :
 
-- Mots-clés
+- Mots clés
 - Date
 - Sender/Author
 - Objet/Titre

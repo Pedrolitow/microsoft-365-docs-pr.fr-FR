@@ -50,7 +50,7 @@ Avec le mode d’évaluation, les [](set-up-anti-phishing-policies.md#imperson
 
 Dans le cadre de l’installation, le mode d’évaluation configure également [le filtrage amélioré pour les connecteurs.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Il améliore la précision du filtrage en conservant l’adresse IP et les informations de l’expéditeur, qui sont sinon perdues lorsque le courrier passe par une passerelle de sécurité de messagerie (ESG) devant Defender pour Office 365. Le filtrage amélioré pour les connecteurs améliore également la précision du filtrage pour vos stratégies anti-courrier indésirable et anti-hameçonnage Exchange Online Protection (EOP) existantes.
 
-Le filtrage amélioré activé pour les connecteurs améliore la précision du filtrage, mais peut modifier la livrabilité de certains messages si vous avez un ESG devant Defender pour Office 365 et que vous ne contournez actuellement pas le filtrage EOP. L’impact est limité aux stratégies EOP ; La configuration des stratégies MDO dans le cadre de l’évaluation est créée en mode non d’application. Pour minimiser l’impact potentiel sur la production, vous pouvez contourner tout le filtrage EOP en créant une règle de transport pour définir le niveau de confiance du courrier indésirable (SCL) sur -1. Pour plus d’informations, voir Utiliser le EAC pour créer une règle de flux de messagerie qui définit le [SCL d’un message.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
+Le filtrage amélioré activé pour les connecteurs améliore la précision du filtrage, mais peut modifier la livrabilité de certains messages si vous avez un ESG devant Defender pour Office 365 et que vous ne contournez actuellement pas le filtrage EOP. L’impact est limité aux stratégies EOP ; La configuration des stratégies MDO dans le cadre de l’évaluation est créée en mode non d’application. Pour minimiser l’impact potentiel sur la production, vous pouvez contourner tout filtrage EOP en créant une règle de transport pour définir le niveau de confiance du courrier indésirable (SCL) sur -1. Pour plus d’informations, voir Utiliser le EAC pour créer une règle de flux de messagerie qui définit le [SCL d’un message.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
 
 Lorsque le mode d’évaluation est installé, vous avez un rapport mis à jour quotidiennement avec jusqu’à 90 jours de données quantifiant les messages qui auraient été bloqués si les stratégies étaient implémentées (par exemple, supprimer, envoyer au courrier indésirable, mettre en quarantaine). Des rapports sont générés pour toutes les détections Defender Office 365 et EOP. Elles sont agrégées par technologie de détection (par exemple, l’emprunt d’identité) et peuvent être filtrées par plage de temps. En outre, les rapports de messages peuvent être créés à la demande pour créer des tableaux croisés dynamiques personnalisés ou pour explorer les messages en profondeur à l’aide de l’Explorateur de menaces.
 
@@ -76,7 +76,7 @@ Si vous n’avez pas l’une de ces licences, vous devez obtenir une licence d�
 
 #### <a name="trial"></a>Version d’évaluation
 
-Pour obtenir une licence d’essai pour Microsoft Defender pour  Office 365, vous devez avoir le rôle d’administrateur de facturation ou d’administrateur **global.** Demander l’autorisation à une personne qui a le rôle d’administrateur global. [En savoir plus sur les abonnements et les licences](../../commerce/licenses/subscriptions-and-licenses.md)
+Pour obtenir une licence d’essai pour Microsoft Defender pour  Office 365, vous devez avoir le rôle d’administrateur de facturation ou d’administrateur **global.** Demandez l’autorisation d’une personne qui a le rôle d’administrateur global. [En savoir plus sur les abonnements et les licences](../../commerce/licenses/subscriptions-and-licenses.md)
 
 Une fois que vous avez le rôle approprié, le chemin d’accès recommandé consiste à obtenir une licence d’essai pour Microsoft Defender pour Office 365 (Plan 2) dans le Centre d’administration Microsoft 365 en allant à Facturation > Acheter des services. La version d’essai inclut un essai gratuit de 30 jours pour 25 licences. [Obtenez une version d’essai de Microsoft Defender pour Office 365 (Plan 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
@@ -93,16 +93,16 @@ Les rôles suivants sont nécessaires :
 
 |Tâche|Rôle (dans Exchange Online)|
 |---|---|
-|Obtenir un essai gratuit ou acheter Microsoft Defender pour Office 365 (Plan 2)|Rôle d’administrateur de facturation OU rôle d’administrateur global|
-|Créer une stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité|
-|Modifier la stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité|
-|Supprimer la stratégie d’évaluation|Rôle Domaines distants et acceptés ; Rôle d’administrateur de sécurité |
+|Obtenir une version d’essai gratuite ou acheter Microsoft Defender pour Office 365 (Plan 2)|Rôle d’administrateur de facturation OU rôle d’administrateur global|
+|Créer une stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité|
+|Modifier la stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité|
+|Supprimer la stratégie d’évaluation|Rôle domaines distants et acceptés ; Rôle d’administrateur de sécurité |
 |Afficher le rapport d’évaluation|Rôle d’administrateur de sécurité OU rôle lecteur sécurité|
 |
 
 ### <a name="enhanced-filtering"></a>Filtrage amélioré
 
-Vos stratégies Exchange Online Protection de courrier indésirable, telles que la protection en bloc et le courrier indésirable, resteront identiques. Toutefois, l’évaluation permet d’améliorer le filtrage des connecteurs, ce qui peut avoir un impact sur votre flux de messagerie et Exchange Online Protection stratégies à moins d’être contourné.
+Vos stratégies Exchange Online Protection de courrier indésirable, telles que la protection en bloc et le courrier indésirable, resteront les mêmes. Toutefois, l’évaluation permet d’améliorer le filtrage des connecteurs, ce qui peut avoir un impact sur votre flux de messagerie et Exchange Online Protection stratégies à moins d’être contourné.
 
 Le filtrage amélioré pour les connecteurs permet aux locataires d’utiliser la protection contre l’usurpation d’usurpation d’accès. La protection contre l’usurpation d’adresse n’est pas prise en charge si vous utilisez une passerelle de sécurité de messagerie (ESG) sans avoir désactivé le filtrage amélioré pour les connecteurs.
 
@@ -114,11 +114,11 @@ Les liens d’URL dans les corps des messages électroniques ne seront pas encap
 
 ### <a name="email-routing"></a>Routage du courrier électronique
 
-Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé vos messages. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage du courrier électronique](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Préparez les détails correspondants dont vous aurez besoin pour configurer la façon dont votre courrier électronique est actuellement acheminé, y compris le nom du connecteur entrant qui a acheminé votre courrier électronique. Si vous utilisez simplement Exchange Online Protection, vous n’avez pas de connecteur.  [En savoir plus sur le flux de messagerie et le routage du courrier électronique](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Les scénarios de routage de courrier pris en charge sont les suivants :
 
-- Partenaire tiers et/ou fournisseur de services local : le connecteur entrant que vous souhaitez évaluer utilise un fournisseur tiers **et/ou** vous utilisez une solution pour la sécurité du courrier électronique en local.
+- Partenaire tiers **et/ou** fournisseur de services local : le connecteur entrant que vous souhaitez évaluer utilise un fournisseur tiers et/ou vous utilisez une solution pour la sécurité du courrier électronique en local.
 - **Microsoft Exchange Online protection** uniquement : le client que vous souhaitez évaluer utilise Office 365 pour la sécurité du courrier électronique et l’enregistrement MX (Mail Exchange) pointe vers Microsoft.
 
 ### <a name="email-security-gateway"></a>Passerelle de sécurité du courrier électronique
@@ -137,11 +137,11 @@ Les partenaires tiers pris en charge sont les suivants :
 
 ### <a name="scoping"></a>Étendue
 
-Vous serez en mesure d’élargir l’étendue de l’évaluation à un connecteur entrant. Si aucun connecteur n’est configuré, l’étendue d’évaluation permettra aux administrateurs de collecter des données auprès de n’importe quel utilisateur de votre client pour évaluer Defender pour Office 365.
+Vous serez en mesure d’élargir l’étendue de l’évaluation à un connecteur entrant. Si aucun connecteur n’est configuré, l’étendue d’évaluation permettra aux administrateurs de collecter des données auprès d’un utilisateur de votre client pour évaluer Defender pour Office 365.
 
 ## <a name="get-started-with-the-evaluation"></a>Mise en place de l’évaluation
 
-Recherchez la carte de Office 365 d’évaluation Microsoft Defender for Office 365 dans le Centre de sécurité & conformité (à partir de https://protection.office.com/homepage) trois points d’accès :
+Recherchez la carte de Office 365 d’évaluation Microsoft Defender pour les Office 365 dans le Centre de sécurité & conformité (à partir de https://protection.office.com/homepage) trois points d’accès :
 
 - Tableau de bord de gestion > menaces
 - Stratégie de gestion > menaces

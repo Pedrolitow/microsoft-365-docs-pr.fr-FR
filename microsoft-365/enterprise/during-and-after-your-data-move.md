@@ -30,7 +30,7 @@ Les déplacements de données sont des opérations principales n'ayant que peu d
 > [!NOTE]
 > Le déplacement se produit à différents moments pour chaque service. Par conséquent, vous ne verrez pas la description des fonctionnalités réduites pour chaque service au même moment. 
   
-Regardez le centre Microsoft 365 message de confirmation lorsque les déplacements pour chacun des services Exchange Online, SharePoint Online et Teams de conversation sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géographique de centre de données.   
+Regardez le centre Microsoft 365 message de confirmation lorsque les déplacements pour chacun des services Exchange Online, SharePoint Online et Teams de conversation sont terminés. Comme indiqué dans le tableau ci-dessous, il faut jusqu’à 24 mois après la fin de la période d’inscription pour effectuer des déplacements de données client essentielles au repos vers la nouvelle géo de centres de données.   
 
 |**Clients dont le pays d’inscription est**|**Tous les déplacements terminés d'ici le**|
 |:-----|:-----|
@@ -71,7 +71,7 @@ Lors du déplacement de SharePoint Online, les données des services suivants so
     
 - Office dans un navigateur
     
-- Microsoft 365 Apps for enterprise
+- Applications Microsoft 365 for entreprise
     
 - Visio Pro pour Microsoft 365
     
@@ -105,7 +105,7 @@ Les fonctionnalités de recherche suivantes sont concernées :
 
 Dans le cadre de la migration, la région par défaut change et tout le nouveau contenu est stocké au repos dans la nouvelle région par défaut. Le contenu existant se déplace en arrière-plan sans impact sur vous pendant 90 jours après la première modification de l’emplacement des données SharePoint Online dans le Centre d’administration.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 En plus de Exchange Online, SharePoint Online et OneDrive Entreprise, Microsoft migrera Teams données de service de conversation vers le centre de données local.
 

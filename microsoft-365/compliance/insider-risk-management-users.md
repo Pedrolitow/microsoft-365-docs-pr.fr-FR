@@ -23,7 +23,7 @@ ms.locfileid: "50819998"
 
 Le tableau **de bord Utilisateurs** est un outil important dans le flux de travail de gestion des risques internes et permet aux enquêteurs et aux analystes de mieux comprendre les activités de risque. Ce tableau de bord offre des vues et des fonctionnalités de gestion pour répondre aux besoins administratifs entre la création de stratégies de gestion des risques internes et la gestion des cas de gestion des risques internes.
 
-Une fois que les utilisateurs sont ajoutés aux stratégies de gestion des risques internes, les processus en arrière-plan évaluent automatiquement les activités des utilisateurs pour déclencher [des indicateurs.](insider-risk-management-settings.md#indicators) Une fois les indicateurs déclenchés présents, les activités des utilisateurs se voit attribuer des scores de risque. Certaines de ces activités peuvent entraîner une alerte de risque interne, mais certaines activités peuvent ne pas atteindre un niveau de score de risque minimal et une alerte de risque interne ne sera pas créée. Le **tableau de bord Utilisateurs** vous permet d’afficher les utilisateurs avec ces types d’indicateurs et de scores de risque, ainsi que les utilisateurs qui ont des alertes de risque internes actives.
+Une fois que les utilisateurs sont ajoutés aux stratégies de gestion des risques internes, les processus en arrière-plan évaluent automatiquement les activités des utilisateurs pour déclencher [des indicateurs.](insider-risk-management-settings.md#indicators) Une fois les indicateurs de déclenchement présents, les activités des utilisateurs se voit attribuer des scores de risque. Certaines de ces activités peuvent entraîner une alerte de risque interne, mais certaines activités peuvent ne pas répondre à un niveau de score de risque minimal et une alerte de risque interne ne sera pas créée. Le **tableau de bord Utilisateurs** vous permet d’afficher les utilisateurs avec ces types d’indicateurs et de scores de risque, ainsi que les utilisateurs qui ont des alertes de risque internes actives.
 
 En savoir plus sur la façon dont le tableau de bord Utilisateurs affiche les utilisateurs dans les scénarios suivants :
 
@@ -43,10 +43,10 @@ Le **tableau de bord** Utilisateurs affiche automatiquement tous les utilisateur
 
 Le tableau **de bord Utilisateurs inclut** les utilisateurs ajoutés aux stratégies de gestion des risques internes après un événement inhabituel en dehors du flux de travail de gestion des risques internes. L’ajout temporaire d’utilisateurs (à partir du tableau de bord Stratégies) est également un moyen de commencer à marquer l’activité des utilisateurs pour une stratégie de gestion des risques internes pour tester la stratégie, même si aucun connecteur requis n’est configuré.
 
-Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités de l’utilisateur pour les 90 jours précédents sont marqués et ajoutés à la chronologie **d’activité** de l’utilisateur. Par exemple, aucun score de risque n’est actuellement attribué à un utilisateur pour une stratégie de risque interne et les activités de fuite de données sont signalées au service juridique de votre organisation. Le service juridique vous recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de fuite *de* données pour une durée donnée (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont affichés dans le tableau de bord Utilisateurs, car le déclenchement des exigences en matière d’événements est annulé. 
+Lorsqu’un utilisateur est ajouté manuellement à une stratégie, les activités de l’utilisateur des 90 jours précédents sont note et ajoutées à la chronologie **d’activité** de l’utilisateur. Par exemple, aucun score de risque n’est actuellement attribué à un utilisateur pour une stratégie de risque interne et les activités de fuite de données sont signalées au service juridique de votre organisation. Le service juridique recommande de configurer de nouvelles exigences de surveillance à court terme pour l’utilisateur. Vous pouvez affecter temporairement l’utilisateur à votre stratégie de fuite *de* données pour une durée donnée (fenêtre d’activation). Tous les utilisateurs ajoutés temporairement sont affichés dans le tableau de bord Utilisateurs, car le déclenchement des exigences en matière d’événements est annulé. 
 
 >[!NOTE]
->L’affichage des nouveaux utilisateurs ajoutés manuellement dans le tableau de bord Utilisateurs peut prendre plusieurs **heures.** L’affichage des activités des 90 derniers jours de ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés  manuellement, sélectionnez l’utilisateur dans le tableau de bord Utilisateurs et ouvrez l’onglet Activité de l’utilisateur dans le volet d’informations. 
+>L’affichage des nouveaux utilisateurs ajoutés manuellement dans le tableau de bord Utilisateurs peut prendre plusieurs **heures.** L’affichage des activités des 90 jours précédents de ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher les activités des utilisateurs ajoutés  manuellement, sélectionnez l’utilisateur dans le tableau de bord Utilisateurs et ouvrez l’onglet Activité de l’utilisateur dans le volet d’informations. 
 
 L’utilisateur est automatiquement supprimé  du tableau de bord Utilisateurs et le score s’arrête lorsque l’heure définie dans la fenêtre **Activation** expire si :
 
@@ -55,7 +55,7 @@ L’utilisateur est automatiquement supprimé  du tableau de bord Utilisateurs e
 
 Le **paramètre de la fenêtre Activation** dont la durée est la plus longue remplace toujours le paramètre de la fenêtre **Activation** avec une durée plus courte. Par exemple, vous avez configuré la fenêtre **Activation** sous l’onglet Délais de stratégie globale dans les paramètres globaux de gestion des risques internes pendant 15 jours, qui est automatiquement appliquée à toutes vos **stratégies** de risques internes. 
 
-Vous ajoutez temporairement un utilisateur à votre stratégie de risques internes de fuite *de* données et définissez 30 jours comme fenêtre **d’activation** pour cet utilisateur. Le paramètre global de la fenêtre **Activation** de 15 jours est remplacé par la définition du paramètre de fenêtre **Activation** de 30 jours pour l’utilisateur ajouté temporairement. L’utilisateur ajouté temporairement reste  dans le tableau de bord Utilisateurs et reste dans l’étendue de la stratégie pendant 30 jours.
+Vous ajoutez temporairement un utilisateur à votre stratégie de risques internes de *fuites* de données et définissez 30 jours comme fenêtre **d’activation** pour cet utilisateur. Le paramètre global de la fenêtre **Activation** de 15 jours est remplacé par la définition du paramètre de fenêtre **Activation** de 30 jours pour l’utilisateur ajouté temporairement. L’utilisateur ajouté temporairement reste  dans le tableau de bord Utilisateurs et reste dans l’étendue de la stratégie pendant 30 jours.
 
 Dans le scénario inverse  où le paramètre  de la fenêtre Activation globale est plus long que le paramètre de fenêtre Activation défini pour un utilisateur ajouté temporairement, le paramètre de fenêtre **Activation** globale remplacerait le paramètre de fenêtre **Activation** pour l’utilisateur ajouté temporairement. L’utilisateur ajouté temporairement reste  dans le tableau de bord Utilisateurs et reste dans l’étendue de la stratégie pendant le nombre de jours défini dans les paramètres globaux de la fenêtre **Activation.**
 
@@ -79,12 +79,12 @@ Chaque utilisateur affiché dans le tableau de bord **Utilisateurs** dispose des
 Pour afficher plus de détails sur l’activité de risque pour un utilisateur, ouvrez le volet d’informations utilisateur en double-cliquant sur un utilisateur dans le tableau de bord **Utilisateurs.** Dans le volet d’informations, vous pouvez afficher les informations suivantes :
 
 - **Onglet Profil** utilisateur
-    - **Nom et titre :** nom et titre de position de l’utilisateur à partir d’Azure Active Directory. Ces champs utilisateur seront rendus anonymes ou vides si le paramètre d’anonymisation global pour la gestion des risques internes est activé.
+    - **Nom et titre**: le nom et le titre de position de l’utilisateur à partir Azure Active Directory. Ces champs utilisateur seront rendus anonymes ou vides si le paramètre d’anonymisation global pour la gestion des risques internes est activé.
     - **Courrier électronique de** l’utilisateur : adresse de messagerie de l’utilisateur.
     - **Alias**: alias réseau de l’utilisateur.
     - **Organisation ou service :** l’organisation ou le service de l’utilisateur.
 
-- **Onglet Activité utilisateur**
+- **Onglet Activité de l’utilisateur**
     - **Historique des activités récentes des utilisateurs**: répertorie les indicateurs de déclenchement et les indicateurs de risque interne pour les activités des utilisateurs jusqu’aux 180 derniers jours. Toutes les activités pertinentes pour les indicateurs de risque internes sont également notés, même si les activités peuvent ou non avoir généré une alerte de risque interne. Le déclenchement d’exemples d’indicateurs peut être une date de départ ou la dernière date de travail prévue pour l’utilisateur. Les indicateurs de risque internes sont des activités déterminées comme étant à risque et définies dans les stratégies dans qui l’utilisateur est inclus. Les activités d’événement et de risque sont répertoriées avec l’élément le plus récent répertorié en premier.
 
 ## <a name="remove-users-from-in-scope-assignment-to-policies"></a>Supprimer des utilisateurs de l’attribution dans l’étendue aux stratégies
@@ -96,13 +96,13 @@ Il peut y avoir des scénarios où vous devez arrêter d’affecter des scores d
 
 Pour supprimer manuellement les utilisateurs de l’état dans l’étendue dans toutes les stratégies de gestion des risques internes, effectuer les étapes suivantes :
 
-1. Dans le Centre [de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet** Utilisateurs.
+1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)sélectionnez l’onglet Utilisateurs sur la gestion des risques internes.  
 2. Dans le tableau **de bord Utilisateurs,** sélectionnez l’utilisateur ou les utilisateurs que vous souhaitez supprimer de l’étendue des stratégies de gestion des risques internes.
 3. Sélectionnez **Supprimer des utilisateurs.**
 4. Dans le **volet Supprimer l’utilisateur,** **sélectionnez Supprimer** ou **Annuler** pour ignorer les modifications et fermer la boîte de dialogue.
 5. Sélectionnez **Supprimer** dans le volet de confirmation pour supprimer l’utilisateur.
 
-## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Exécuter des tâches automatisées avec des flux Power Automate pour un utilisateur
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Exécuter des tâches automatisées avec Power Automate flux pour un utilisateur
 
 À l’aide des flux Power Automate recommandés, les enquêteurs de risque et les analystes peuvent rapidement prendre des mesures pour :
 
@@ -114,4 +114,4 @@ Pour exécuter, gérer ou créer des flux Power Automate pour un utilisateur de 
 2. Choisissez le flux Power Automate à exécuter, puis sélectionnez **Exécuter le flux.**
 3. Une fois le flux terminé, sélectionnez **Terminé.**
 
-Pour en savoir plus sur les flux Power Automate pour la gestion des risques internes, voir Prise en charge des paramètres de [gestion des risques internes.](insider-risk-management-settings.md#power-automate-flows-preview)
+Pour en savoir plus sur les Power Automate pour la gestion des risques internes, voir Prise en charge des paramètres de [gestion des risques internes.](insider-risk-management-settings.md#power-automate-flows-preview)
