@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2214baa1c205d4e0f634c5a07f4d55522d2ad6b1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: a272e78e05f86a8f9f918c873e9fb1a85f863bfc
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822020"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793099"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -62,7 +62,7 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le centre de sécurité à <https://security.microsoft.com>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
+- Vous ouvrez le centre de sécurité à <https://security.microsoft.com/>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
