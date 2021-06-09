@@ -38,7 +38,7 @@ Vous pouvez facilement mettre à jour le mode de paiement de Microsoft 365 Busin
 
 ## <a name="try-it"></a>Essayez !
 
-1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
+1. Connectez-vous au [Centre d’administration Microsoft 365](https://admin.microsoft.com).
 1. Sélectionnez **Facturation,** puis **Modes de paiement.** Vous verrez les cartes de crédit que vous avez sur le fichier.
 1. Pour modifier une carte existante :
     1. Sélectionnez les trois points à côté de la carte, puis **sélectionnez Modifier le mode de paiement.**

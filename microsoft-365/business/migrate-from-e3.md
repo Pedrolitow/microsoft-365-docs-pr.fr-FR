@@ -31,9 +31,9 @@ ms.locfileid: "52623602"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migration de Office 365 E3 vers Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium dispose de tout ce dont vous avez besoin pour votre petite entreprise, en combinant les applications de productivité basées sur le cloud les plus classes avec une gestion et une sécurité des appareils simples. Si vous disposez actuellement d’un abonnement Office 365 E3, mais que vous n’avez pas plus de 300 employés, envisagez de passer à Microsoft 365 Business Premium fonctionnalités de sécurité supplémentaires.
+Microsoft 365 Business Premium dispose de tout ce dont vous avez besoin pour votre petite entreprise, en combinant les applications de productivité cloud les plus populaires avec une gestion et une sécurité des appareils simples. Si vous disposez actuellement d’un abonnement Office 365 E3, mais que vous n’avez pas plus de 300 employés, envisagez de passer à Microsoft 365 Business Premium fonctionnalités de sécurité supplémentaires.
 
-La migration est simple : vous changez d’abord de licence et toutes vos données et informations utilisateur dans votre abonnement actuel sont conservées. Après la migration, vous devez configurer les fonctionnalités ajoutées dans Microsoft 365 Business Premium.
+La migration est simple : vous devez d’abord changer de licence et toutes vos données et informations utilisateur dans votre abonnement actuel sont conservées. Après la migration, vous devez configurer les fonctionnalités ajoutées dans Microsoft 365 Business Premium.
 
 ## <a name="differences-between-office-365-e3-and-microsoft-365-business-premium"></a>Différences entre Office 365 E3 et Microsoft 365 Business Premium
 
@@ -42,10 +42,10 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | Fonctionnalité    | Prise en charge dans Microsoft 365 Business Premium    | Prise en charge Office 365 E3 |
 |:-------|:-----|:-----|
 | **Sur site**        | | |
-| Office applications<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Microsoft 365 Apps for enterprise |
+| Office applications<sup>1</sup>    | Applications Microsoft 365 pour les entreprises    | Applications Microsoft 365 for entreprise |
 | **Applications de productivité cloud**        | | |
 | Exchange Online et Outlook    | Limite de stockage de 50 Go par boîte aux lettres et nombre Archivage Exchange Online    | Limite de stockage de 100 Go par boîte aux lettres et nombre Archivage Exchange Online |
-| Équipes    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Office 365 E3](../media/check-mark.png) | 
+| Teams    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Office 365 E3](../media/check-mark.png) | 
 | OneDrive Entreprise    | Limite de stockage de 1 To par utilisateur    | Illimité | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Office 365 E3](../media/check-mark.png) |
@@ -56,11 +56,11 @@ Ce tableau présente les différences entre Microsoft 365 Business Premium et Of
 | **Données de gestion des appareils et des applications**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Activation d'ordinateurs partagés|     ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    | ![Inclus avec Office 365 E3](../media/check-mark.png)| 
-| Mettre à niveau les droits Windows 10 Professionnel à partir de licences win 7/8.1 Pro licences|     ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    ||
+| Droits de mise à niveau Windows 10 Professionnel à partir de licences win 7/8.1 Pro licences|     ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)    ||
 | **Protection des informations**        | | |
 |Prévention des pertes de données Office 365|    ![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)|![Inclus avec Office 365 E3](../media/check-mark.png)|
 |Azure Information Protection Plan 1, BitLocker application|![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)||
-|Azure Information Protection Plan 1, étiquettes de sensibilité|![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Plan 1, Étiquettes de sensibilité|![Inclus dans Microsoft 365 Business Premium](../media/check-mark.png)||
 |**Licence d’accès client (droits cal)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Inclus avec Office 365 E3](../media/check-mark.png)|
 
@@ -124,7 +124,7 @@ Après avoir migré vers Microsoft 365 Business Premium, vous avez Defender for 
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
-Pour commencer à utiliser des étiquettes de sensibilité, voir [Vue d’ensemble](../compliance/sensitivity-labels.md) des étiquettes de sensibilité et créer et gérer la vidéo sur [les étiquettes de](../business-video/create-sensitivity-labels.md) sensibilité.
+Pour commencer à utiliser des étiquettes de sensibilité, voir [Vue](../compliance/sensitivity-labels.md) d’ensemble des étiquettes de sensibilité et créer et gérer la vidéo sur [les étiquettes de](../business-video/create-sensitivity-labels.md) sensibilité.
 
 ## <a name="related-content"></a>Contenu associé
 

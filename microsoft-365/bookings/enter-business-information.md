@@ -18,18 +18,18 @@ ms.locfileid: "47962500"
 ---
 # <a name="enter-your-business-information"></a>Protégez vos informations
 
-Dans Microsoft Bookings, la page Informations professionnelles dans l’application web contient tous les détails que vous trouverez généralement sur la page « À propos de nous » d’une entreprise. Ces détails incluent le nom, l’adresse, le numéro de téléphone, l’URL du site web, l’URL de la politique de confidentialité, le logo et les heures d’ouverture.
+Dans Microsoft Bookings, la page Informations professionnelles dans l’application web contient tous les détails que vous trouverez généralement sur la page « À propos de nous » d’une entreprise. Ces détails incluent un nom, une adresse, un numéro de téléphone, une URL de site web, une URL de stratégie de confidentialité, un logo et des heures d’ouverture pertinents.
 
 Les informations que vous fournissez ici s’affichent sur la page que les clients et les clients utilisent pour réserver des rendez-vous (appelée page de réservation), ainsi que dans les messages et rappels qui leur sont envoyés par Bookings. Un exemple de ces informations sur la page de réservation est mis en évidence ci-dessous.
 
    ![Image de l’exemple de page Informations professionnelles dans Microsoft Bookings](../media/bookings-business-info.png)
 
 > [!NOTE]
-> To get started, see [Get access to Microsoft Bookings](get-access.md). Pour activer ou désactiver bookings, voir [Activer ou désactiver bookings pour votre organisation.](turn-bookings-on-or-off.md)
+> To get started, see [Get access to Microsoft Bookings](get-access.md). Pour activer ou désactiver bookings, voir Activer ou [désactiver bookings pour votre organisation.](turn-bookings-on-or-off.md)
 
 ## <a name="provide-business-name-and-contact-information"></a>Fournir le nom de l’entreprise et les informations de contact
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Réservations.**
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
 1. Dans le volet de navigation, sélectionnez **Informations professionnelles.**
 
@@ -37,7 +37,7 @@ Les informations que vous fournissez ici s’affichent sur la page que les clien
 
 1. Dans **Envoyer des réponses au client,** tapez l’adresse de messagerie préférée dans laquelle les réponses par courrier électronique aux confirmations et rappels de réservation doivent être transmis.
 
-1. Dans le **champ URL** du site web, entrez l’URL de la page d’accueil de votre entreprise.
+1. Dans le **champ URL du** site web, entrez l’URL de la page d’accueil de votre entreprise.
 
 1. Entrez la politique **de confidentialité et** les termes & les URL des **conditions.**
 
@@ -45,7 +45,7 @@ Les informations que vous fournissez ici s’affichent sur la page que les clien
 
 ## <a name="set-your-business-hours"></a>Définir vos heures d’ouverture
 
-Par défaut, les heures d’ouverture dans l’application Bookings sont définies sur 8 h 00. à 17 h, du lundi au vendredi. Les heures sont fournies par incréments de 15 minutes. L’application Bookings utilise l’horloge au 12 heures.
+Par défaut, les heures d’ouverture dans l’application Bookings sont définies sur 8h00. à 17 h, du lundi au vendredi. Les heures sont fournies par incréments de 15 minutes. L’application Bookings utilise l’horloge au 12 heures.
 
 Définissez **les heures d’ouverture** sur vos heures d’ouverture. Voici les heures pendant lesquelles toutes les réservations sont restreintes. Des restrictions de temps supplémentaires concernant les heures de réservation des rendez-vous peuvent être définies pour chaque service et pour chaque membre du personnel dans les pages Services et Personnel, respectivement.
 
@@ -57,9 +57,9 @@ Définissez **les heures d’ouverture** sur vos heures d’ouverture. Voici les
 
 Vous devrez peut-être bloquer une partie de chaque jour ou semaine pour avoir des réunions du personnel, mettre à jour l’inventaire ou prendre en charge d’autres détails sur le rythme de l’entreprise. L’application Bookings vous permet de limiter les rendez-vous client à vos créneaux horaires spécifiés.
 
-Par exemple, vous avez des réunions du personnel tous les jeudis de 13h00 à 14h30 et que vous souhaitez bloquer cette heure pour que tous les membres de votre personnel puisse y participer. Pour ce faire :
+Par exemple, vous avez des réunions du personnel tous les jeudis de 13h00 à 14h30 et que vous souhaitez bloquer cette heure pour que tous les membres de votre personnel puisse y participer. Pour ce faire :
 
-1. Dans la page Informations professionnelles, sous Heures d’ouverture, sélectionnez l’heure de début et de fin du jeudi. Dans cet exemple, nous allons définir 8 h 00. à 13 h 00
+1. Dans la page Informations professionnelles, sous Heures d’ouverture, sélectionnez une heure de début et de fin pour le jeudi. Dans cet exemple, nous allons définir 8 h 00. à 13 h 00
 
 1. Sélectionnez **+** pour créer une ligne pour jeudi.
 
@@ -75,11 +75,11 @@ Par exemple, vous avez des réunions du personnel tous les jeudis de 13h00 à 14
 
 ## <a name="upload-your-logo"></a>Télécharger votre logo
 
-Si vous n’avez pas encore chargé votre logo d’entreprise sur l’application Bookings, vous pouvez le faire à partir de la page Informations professionnelles.
+Si vous n’avez pas encore chargé votre logo d’entreprise sur l’application Bookings, vous pouvez le faire à partir de la page d’informations professionnelles.
 
-1. Dans la page Informations professionnelles, sous télécharger le logo, sélectionnez **Modifier.**
+1. Dans la page Informations professionnelles, sous Télécharger, sélectionnez **Modifier.**
 
-1. Sélectionnez **Charger une photo.**
+1. Sélectionnez **Télécharger photo.**
 
    ![Image du bouton télécharger une photo](../media/bookings-upload-photo.png)
 

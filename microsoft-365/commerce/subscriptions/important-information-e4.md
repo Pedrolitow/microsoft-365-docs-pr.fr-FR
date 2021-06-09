@@ -1,5 +1,5 @@
 ---
-title: Informations importantes pour les Office 365 E4
+title: Informations importantes pour Office 365 clients E4
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -27,7 +27,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/12/2021
 ms.locfileid: "52344661"
 ---
-# <a name="important-information-for-office-365-e4-customers"></a>Informations importantes pour les Office 365 E4
+# <a name="important-information-for-office-365-e4-customers"></a>Informations importantes pour Office 365 clients E4
 
 Le Office 365 plan E4 a été retiré en 2015. En tant qu’administrateur Microsoft 365, vous recevrez des mises à jour de courrier électronique et verrez des publications dans le centre de messages (partie du Centre d’administration [Microsoft 365)](https://go.microsoft.com/fwlink/p/?linkid=2024339)avec des informations sur la nécessité d’agir.
 
@@ -39,8 +39,8 @@ Vous pouvez choisir de conserver les mêmes fonctionnalités que vous aviez avec
 |-|-|-|-|-|-|
 | **Obtenir tous les services et fonctionnalités inclus dans votre abonnement Office 365 E4 actuel** | Oui | Oui | Oui | Non | Non |
 | **Téléphone numéros gérés dans Microsoft 365** | Oui | Oui | Non | Non | Non |
-| **Téléphone gérés à la fois en local et en Microsoft 365 (déploiement hybride)**<br/><br/>Réduisez la dépendance vis-à-vis des systèmes téléphoniques PBX (Private Branch Exchange) coûteux et simplifiez votre infrastructure de communication avec une seule plateforme pour les appels, les conférences, la vidéo et le partage. | Oui | Oui | Non | Non | Non |
-| **Option pour ajouter des forfaits d’appels**<br/><br/>Vous pouvez ajouter des licences pour Microsoft 365 forfait d’appels nationaux ou Microsoft 365 forfait d’appels nationaux et internationaux. Pour en savoir plus, voir [quel forfait d’appels est le mieux pour vous ?](/MicrosoftTeams/calling-plan-landing-page). | Oui<sup>1</sup> | Oui | Oui | Oui | Oui |
+| **Téléphone gérés à la fois en local et en Microsoft 365 (déploiement hybride)**<br/><br/>Réduisez la dépendance vis-à-vis des systèmes téléphoniques PBX (Private Branch Exchange) coûteux et simplifiez votre infrastructure de communication avec une plateforme d’appel, de conférence, de vidéo et de partage. | Oui | Oui | Non | Non | Non |
+| **Option pour ajouter des forfaits d’appels**<br/><br/>Vous pouvez ajouter des licences pour Microsoft 365 forfait d’appels nationaux ou Microsoft 365 forfait d’appels nationaux et internationaux. Pour en savoir plus, voir [quel forfait d’appels est le mieux pour vous](/MicrosoftTeams/calling-plan-landing-page)? . | Oui<sup>1</sup> | Oui | Oui | Oui | Oui |
 | **Audioconférence**<br/><br/>Les participants à la réunion peuvent se Skype Entreprise à partir de pratiquement n’importe quel appareil, et les organisateurs peuvent composer un appel sortant pour y appeler les participants. | Oui<sup>2</sup> | Oui | Oui | Non | Non |
 | **Outils avancés pour la collaboration, l'analyse et la sécurité** | Oui | Oui | Oui | Non | Non |
 | **Nouveaux rapports interactifs, tableaux de bord et visualisations de données** | Oui | Oui | Oui | Non | Non |

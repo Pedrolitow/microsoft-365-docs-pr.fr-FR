@@ -26,14 +26,14 @@ Pour configurer le Scheduler pour Microsoft 365, voici les conditions préalable
 |Licence du scheduleur |Pour plus d’informations sur les licences et les tarifs, voir [Scheduler for Microsoft 365](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing).        |
 
 ## <a name="create-a-mailbox-for-cortana"></a>Créer une boîte aux lettres pour Cortana
-Une Exchange de votre client fait office de boîte aux lettres Cortana pour que votre client envoie et reçoie des courriers électroniques vers et depuis Cortana. Tous les courriers électroniques envoyés à Cortana sont conservés dans la boîte aux lettres Cortana de votre client en fonction de votre stratégie de rétention.
+Une Exchange de votre client fait office de boîte aux lettres Cortana pour que votre client envoie et reçoie des courriers électroniques vers et depuis Cortana. Tous les messages électroniques envoyés à Cortana sont conservés dans la boîte aux lettres Cortana de votre client en fonction de votre stratégie de rétention.
 
 - Utilisez le centre Microsoft 365'administration pour créer une boîte aux lettres utilisateur. Une stratégie de rétention de 30 jours est recommandée. 
 - Utilisez le nom Cortana dans l’adresse SMTP principale de votre boîte aux lettres. Des noms tels que « Cortana@yourdomain.com », « CortanaScheduler@contoso.com » ou « Cortana.Scheduler@yourdomain.com » sont recommandés.
 
 ## <a name="designate-the-mailbox-as-the-scheduler-assistant"></a>Désigner la boîte aux lettres en tant qu’Assistant De planification
 
-Une fois qu’une boîte aux lettres unique pour le Scheduler de Cortana a été créée, vous devez désigner la boîte aux lettres Microsoft 365 officiellement. Une fois que vous avez désigné la boîte aux lettres du Scheduler de Cortana, elle sera disponible pour planifier des réunions au nom de vos utilisateurs.
+Une fois qu’une boîte aux lettres unique pour le Scheduler de Cortana a été créée, vous devez désigner la boîte aux lettres Microsoft 365 officiellement. Une fois que vous avez désigné la boîte aux lettres du programmeur Cortana, elle sera disponible pour planifier des réunions au nom de vos utilisateurs.
 
 Pour désigner la boîte aux lettres du Scheduler de Cortana, un administrateur autorisé doit exécuter une commande PowerShell d’une ligne. 
 
@@ -63,7 +63,7 @@ Get-mailbox -Organization contoso.com | where {($_.PersistedCapabilities -like "
 > La mise en service complète de la boîte aux lettres scheduler peut prendre jusqu’à deux heures pour définir la fonctionnalité SchedulerAssistant.
 
 ## <a name="exchange-online-mailbox"></a>Boîte aux lettres Exchange Online
-Le programmeur est un module Microsoft 365. Les organisateurs de réunion doivent avoir une boîte Exchange Online et un calendrier pour que le Scheduler fonctionne.
+Scheduler est un module Microsoft 365. Les organisateurs de réunions doivent avoir une boîte Exchange Online et un calendrier pour que le Scheduler fonctionne.
 
 ## <a name="exchange-requirements"></a>Configuration requise pour Exchange
 
@@ -76,6 +76,6 @@ Outre le Programmeur de licences, vous devez avoir l’une des licences suivante
 - Exchange Online Plan 1 ou Plan 2. 
 
 > [!Note]
-> **Le programme d’Microsoft 365** n’est pas disponible pour les utilisateurs de Office 365 gérés par 21Vianet en Chine. Il n’est pas non plus disponible pour les utilisateurs Microsoft 365 avec le cloud allemand qui utilise le groupe de sécurité de données Allemand Telekom. Nous le prenons en charge pour les utilisateurs situés en Allemagne dont les données ne résident pas dans le centre de données allemand.
+> **Le programme d’Microsoft 365** n’est pas disponible pour les utilisateurs de Office 365 21Vianet en Chine. Il n’est pas non plus disponible pour les utilisateurs Microsoft 365 avec le cloud allemand qui utilise le groupe de sécurité des données Allemand Telekom. Nous le prenons en charge pour les utilisateurs situés en Allemagne dont les données ne résident pas dans le centre de données allemand.
 >
 >Cette fonctionnalité n’est pas non plus prise en charge pour les utilisateurs du cloud public, notamment GCC, Consumer, GCC de haut niveau ou DoD.

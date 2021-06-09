@@ -92,7 +92,7 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 | sense_guid              | Identificateur unique associé à l’appareil. Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés. |
 | org_id                  | Identificateur unique associé à l’entreprise à qui appartient l’appareil. Permet à Microsoft d’identifier si les problèmes ont un impact sur un ensemble d’entreprises sélectionné et le nombre d’entreprises qui en sont touchées. |
 | hostname                | Nom de l’appareil local (sans suffixe DNS). Permet à Microsoft d’identifier si des problèmes ont un impact sur un ensemble d’installation sélectionné et le nombre d’utilisateurs touchés. |
-| product_guid            | Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes types de produit. |
+| product_guid            | Identificateur unique du produit. Permet à Microsoft de différencier les problèmes qui ont un impact sur les différentes gammes du produit. |
 | app_version             | Version de Microsoft Defender pour point de terminaison sur l’application macOS. Permet à Microsoft d’identifier les versions du produit qui affichent un problème afin qu’il puisse être correctement hiérarchisé.|
 | sig_version             | Version de la base de données d’informations de sécurité. Permet à Microsoft d’identifier les versions de l’intelligence de sécurité qui affichent un problème afin qu’il puisse être correctement hiérarchisé. |
 | supported_compressions  | Liste des algorithmes de compression pris en charge par l’application, par `['gzip']` exemple. Permet à Microsoft de comprendre les types de compressions qui peuvent être utilisés lorsqu’il communique avec l’application. |
@@ -101,7 +101,7 @@ Les champs suivants sont considérés comme courants pour tous les événements 
 
 ### <a name="required-diagnostic-data"></a>Données de diagnostic requises
 
-**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la mise à jour de Microsoft Defender for Endpoint sur l’appareil sur laquelle il est installé.
+**Les données de diagnostic** requises sont les données minimales nécessaires pour assurer la sécurité, la mise à jour et la performance de Microsoft Defender for Endpoint sur l’appareil sur laquelle il est installé.
 
 Les données de diagnostic requises permettent d’identifier les problèmes avec Microsoft Defender pour point de terminaison qui peuvent être liés à une configuration d’appareil ou de logiciel. Par exemple, il peut aider à déterminer si une fonctionnalité De Microsoft Defender pour point de terminaison se crashe plus fréquemment sur une version de système d’exploitation particulière, avec les fonctionnalités nouvellement introduites ou lorsque certaines fonctionnalités de Microsoft Defender pour le point de terminaison sont désactivées. Les données de diagnostic requises aident Microsoft à détecter, diagnostiquer et résoudre ces problèmes plus rapidement afin de réduire l’impact sur les utilisateurs ou les organisations.
 
@@ -128,12 +128,12 @@ Les champs suivants sont collectés :
 | antivirus_engine.enable_real_time_protection        | Si la protection en temps réel est activée sur l’appareil ou non. |
 | antivirus_engine.passive_mode                       | Si le mode passif est activé sur l’appareil ou non. |
 | cloud_service.enabled                               | Si la protection cloud est activée sur l’appareil ou non. |
-| cloud_service.timeout                               | Délai d’arrêt lorsque l’application communique avec microsoft Defender pour le cloud de point de terminaison. |
+| cloud_service.timeout                               | Délai d’arrêt lorsque l’application communique avec Microsoft Defender pour le cloud de point de terminaison. |
 | cloud_service.heartbeat_interval                    | Intervalle entre les pulsations consécutives envoyées par le produit au cloud. |
 | cloud_service.service_uri                           | URI utilisé pour communiquer avec le cloud. |
 | cloud_service.diagnostic_level                      | Niveau de diagnostic de l’appareil (obligatoire, facultatif). |
 | cloud_service.automatic_sample_submission           | Si l’envoi automatique d’échantillons est allumé ou non. |
-| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non. |
+| cloud_service.automatic_definition_update_enabled   | Si la mise à jour automatique des définitions est ou non allumée. |
 | edr.early_preview                                   | Si l’appareil doit s’PEPT fonctionnalités de prévisualisation anticipée. |
 | edr.group_id                                        | Identificateur de groupe utilisé par le composant de détection et de réponse. |
 | edr.tags                                            | Balises définies par l’utilisateur. |
@@ -190,7 +190,7 @@ Les journaux de diagnostic sont collectés uniquement avec le consentement de l�
 
 - Tous les fichiers *sous /Library/Logs/Microsoft/mdatp/*
 - Sous-ensemble de fichiers sous */Library/Application Support/Microsoft/Defender/* créés et utilisés par Microsoft Defender pour endpoint sur macOS
-- Sous-ensemble de fichiers sous */Library/Managed Preferences* qui sont utilisés par Microsoft Defender pour Endpoint sur macOS
+- Sous-ensemble de fichiers sous */Library/Managed Preferences* utilisées par Microsoft Defender pour Endpoint sur macOS
 - /Library/Logs/Microsoft/autoupdate.log
 - $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 
@@ -219,7 +219,7 @@ Les champs suivants sont collectés :
 | antivirus_engine.exclusions[].name                 | Nom du fichier exclu de l’analyse. |
 | antivirus_engine.scan_cache_maximum                | Taille du cache du produit. |
 | antivirus_engine.maximum_scan_threads              | Nombre maximal de threads utilisés pour l’analyse. |
-| antivirus_engine.threat_restoration_exclusion_time | Délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
+| antivirus_engine.threat_restoration_exclusion_time | Délai d’délai avant qu’un fichier restauré à partir de la quarantaine puisse à nouveau être détecté. |
 | antivirus_engine.threat_type_settings              | Configuration de la façon dont les différents types de menaces sont gérés par le produit. |
 | filesystem_scanner.full_scan_directory             | Répertoire d’analyse complet. |
 | filesystem_scanner.quick_scan_directories          | Liste des répertoires utilisés dans l’analyse rapide. |
@@ -246,7 +246,7 @@ Les champs suivants sont collectés :
 | Champ            | Description |
 | ---------------- | ----------- |
 | sha256           | Identificateur SHA256 du journal de support. |
-| taille             | Taille du journal de prise en charge. |
+| size             | Taille du journal de prise en charge. |
 | original_path    | Chemin d’accès au journal de support (toujours sous */Library/Application Support/Microsoft/Defender/wdavdiag/*). |
 | format           | Format du journal de prise en charge. |
 

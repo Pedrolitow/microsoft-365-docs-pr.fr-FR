@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Découvrez la sécurité des documents sécurisés dans Microsoft 365 E5 ou Microsoft 365 E5 Security.
+description: Découvrez les documents sécurisés dans Microsoft 365 E5 ou Microsoft 365 E5 Sécurité.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
@@ -28,15 +28,15 @@ ms.locfileid: "51644751"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-La fonctionnalité Documents sécurisés dans Microsoft 365 E5 ou Microsoft 365 E5 Security utilise Microsoft [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) [Defender pour](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) le point de terminaison pour analyser les documents et les fichiers ouverts en affichage protégé ou Application Guard [pour Office.](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)
+Les documents sécurisés sont une fonctionnalité de Microsoft 365 E5 ou de Microsoft 365 E5 Sécurité qui utilise Microsoft Defender [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) [pour](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) le point de terminaison pour analyser les documents et les fichiers ouverts en affichage protégé ou Application Guard pour [Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Les documents sécurisés sont disponibles uniquement pour les utilisateurs titulaires de licences De sécurité *Microsoft 365 E5* ou *Microsoft 365 E5.* Ces licences ne sont pas incluses dans les plans Microsoft Defender pour Office 365.
+- Les documents sécurisés sont disponibles uniquement pour les utilisateurs *Microsoft 365 E5* ou *Microsoft 365 E5 Sécurité* licences. Ces licences ne sont pas incluses dans Microsoft Defender pour Office 365 plans.
 
-- La sécurité des documents est prise en charge dans Microsoft 365 Apps for enterprise (anciennement Office 365 ProPlus) version 2004 ou ultérieure.
+- La sécurité des documents est prise en charge Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) version 2004 ou ultérieure.
 
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com>. Pour aller directement à la page Pièces **jointes sécurisées ATP,** ouvrez <https://protection.office.com/safeattachmentv2> .
 
@@ -66,7 +66,7 @@ Les fichiers envoyés par des documents sécurisés ne sont pas conservés dans 
 
 2. Dans le **volant des paramètres globaux** qui s’affiche, configurez les paramètres suivants :
 
-   - **Activer les documents sécurisés pour les clients Office**: déplacez le basculement vers la droite pour activer la fonctionnalité : ![ activer. ](../../media/scc-toggle-on.png)
+   - **Activer les documents sécurisés pour Office clients**: déplacez le basculement vers la droite pour activer la fonctionnalité : ![ Activer/ ](../../media/scc-toggle-on.png) Activer.
 
    - Autoriser les utilisateurs à cliquer dans le affichage protégé même si les **documents sécurisés identifient** le fichier comme malveillant : nous vous recommandons de laisser cette option désactivée (laissez le bouton bascule vers la gauche : ![ basculez vers la ](../../media/scc-toggle-off.png) gauche).
 
@@ -76,7 +76,7 @@ Les fichiers envoyés par des documents sécurisés ne sont pas conservés dans 
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Utiliser Exchange Online PowerShell pour configurer des documents sécurisés
 
-Utilisez la syntaxe suivante :
+Utilisez la syntaxe suivante :
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
@@ -95,7 +95,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Intégration au service Microsoft Defender for Endpoint pour activer les fonctionnalités d’audit
 
-Pour déployer Microsoft Defender pour endpoint, vous devez passer par les différentes phases de déploiement. Après l’intégration, vous pouvez configurer les fonctionnalités d’audit dans le Centre de sécurité & conformité.
+Pour déployer Microsoft Defender pour le point de terminaison, vous devez passer par les différentes phases de déploiement. Après l’intégration, vous pouvez configurer les fonctionnalités d’audit dans le Centre de sécurité & conformité.
 
 Pour plus d’informations, [voir Intégrer au service Microsoft Defender for Endpoint.](/microsoft-365/security/defender-endpoint/onboarding) Si vous avez besoin d’aide supplémentaire, reportez-vous à La résolution des problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
 
@@ -103,7 +103,7 @@ Pour plus d’informations, [voir Intégrer au service Microsoft Defender for En
 
 Pour vérifier que vous avez activé et configuré les documents sécurisés, faites l’une des étapes suivantes :
 
-- In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments,** click Global **settings**, and verify the Turn on Safe Documents for Office **clients** and Allow people to click **through Protected View even if Safe Documents identifies the file as malicious** settings.
+- Dans le Centre de sécurité &  conformité, consultez La stratégie de gestion des menaces - Pièces jointes sécurisées , cliquez sur Paramètres globaux et vérifiez l’activer pour les clients Office et autoriser les utilisateurs à cliquer en affichage protégé, même si les documents sécurisés identifient le fichier comme des \>  \> paramètres malveillants.   
 
 - Exécutez la commande suivante dans Exchange Online PowerShell et vérifiez les valeurs des propriétés :
 

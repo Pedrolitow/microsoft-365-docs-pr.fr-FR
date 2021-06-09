@@ -42,7 +42,7 @@ ms.locfileid: "52705519"
 
 Microsoft 365 Business Premium (anciennement Microsoft 365 Business) est un service d’abonnement complet pour les entreprises comptant moins de 300 employés. Il intègre vos applications et vos services de productivité Office préférés ainsi que des outils de collaboration, comme Microsoft Teams, avec des fonctionnalités de sécurité et de gestion des appareils avancées.
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>Regardez : qu’est-ce Microsoft 365 Business Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Regarder : Qu’est-ce que Microsoft 365 Business Premium ?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -105,7 +105,7 @@ Vos **appareils sont sécurisés** :
 
 Pour découvrir la liste complète des fonctionnalités de sécurité, consultez la page [Fonctionnalités de sécurité de Microsoft 365 Business Premium](security-features.md). Une fois que vous avez [configuré Microsoft 365 Business Premium](set-up.md), consultez les pages [Renforcer la protection contre les menaces](increase-threat-protection.md) et [Configurer les fonctionnalités de conformité](set-up-compliance.md) pour commencer à utiliser les fonctionnalités de sécurité qui ne sont pas incluses dans le cadre de la configuration guidée. Pour en savoir plus sur la configuration de la protection contre les cybercriminels et les pirates informatiques, consultez également la page [10 façons de sécuriser les offres Office 365 et Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - Si vous faites appel à un partenaire, il recevra Microsoft 365 Business Premium : [Obtenir Microsoft 365 Business Premium auprès de l’Espace partenaires Microsoft](get-microsoft-365-business.md).
 

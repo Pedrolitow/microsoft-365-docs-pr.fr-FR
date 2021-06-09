@@ -29,7 +29,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/25/2021
 ms.locfileid: "52651367"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3. Effectuer un examen post-incident de votre premier incident
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Étape 3. Effectuer un examen post-incident de votre premier incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ Le National Institute of Standards and Technology (NIST) recommande qu’une foi
 
 Microsoft 365 Defender peut vous aider à effectuer des activités post-incident en fournissant à une organisation des alertes qui s’alignent sur [MITRE ATT&CK Framework](https://attack.mitre.org/). Toutes les solutions Microsoft Defender étiquetent les attaques conformément à une tactique ou une technique att&CK. 
 
-En m mappage d’alertes à cette infrastructure du secteur, vous pouvez :
+En m mappage des alertes à cette infrastructure du secteur, vous pouvez :
 
 - Effectuer une analyse des lacunes dans la couverture de sécurité.
 - Déterminer l’adversaire et l’attribution de la campagne.

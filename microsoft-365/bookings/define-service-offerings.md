@@ -26,30 +26,30 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
 1. Go to the [Manage services page](https://outlook.office.com/bookings/services) and select Add a **service**.
 
-2. **Nom du** service : entrez le nom de votre service. Il s’agit du nom qui apparaîtra dans le menu déroulant de la page Calendrier. Ce nom s’affiche également lorsque quelqu’un ajoute manuellement un rendez-vous sur la page Calendrier et qu’il apparaît sous la marque d’une vignette sur la page libre-service.
+2. **Nom du** service : entrez le nom de votre service. Il s’agit du nom qui apparaîtra dans le menu déroulant de la page Calendrier. Ce nom s’affiche également lorsque quelqu’un ajoute manuellement un rendez-vous sur la page Calendrier et qu’il apparaît sous la page libre-service sous la vignette.
 
 3. **Description**: la description que vous entrez s’affiche lorsqu’un utilisateur clique sur l’icône d’informations sur la page libre-service.
 
 4. **Emplacement par** défaut : cet emplacement s’affiche sur les messages de confirmation et de rappel pour le personnel et les clients, et il s’affiche sur l’événement de calendrier créé pour la réservation.
 
-5. **Ajouter** une réunion en ligne : ce paramètre active ou désactive les réunions en ligne pour chaque rendez-vous, via Teams ou Skype, en fonction de celui que vous configurez comme client par défaut pour le membre du personnel.
+5. Ajouter une réunion en ligne : ce paramètre active ou désactive les réunions en ligne pour chaque rendez-vous, via Teams ou Skype, selon celui que vous configurez comme client par défaut pour le membre du personnel.
 
     - Activé :
 
         - Un lien vers une réunion Teams ou Skype, propre à la réservation, sera ajouté à l’événement de calendrier sur les calendriers du personnel et des clients, ainsi que des informations de connexion.
         - Le lien pour participer à la réunion est ajouté à tous les messages de confirmation et de rappel, comme illustré dans l’exemple suivant :
 
-        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exemple de lien pour rejoindre une réunion Teams dans Bookings":::
+        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Exemple de lien pour rejoindre Teams réunion dans Bookings":::
 
         > [!NOTE]
-        > Les réunions Teams peuvent être jointes via l’application mobile Teams, l’application de bureau Teams, dans un navigateur Web ou via le numéro de téléphone. Nous vous recommandons vivement d’activer Teams comme service de réunion en ligne par défaut pour votre client, pour une expérience de réservation de rendez-vous virtuels de qualité.
+        > Teams réunions peuvent être jointes via l’application mobile Teams, l’application de bureau Teams, dans un navigateur Web ou via le numéro de téléphone. Nous vous recommandons vivement d Teams en tant que service de réunion en ligne par défaut pour votre client, pour une expérience de réservation de rendez-vous virtuels de qualité.
 
     - Désactivé :
         - Les rendez-vous ne contiennent pas d’option de réunion  et tous les champs relatifs à la réunion qui apparaissent lorsque l’option Ajouter une réunion en ligne est activée ne s’affichent pas.
 
 6. **Durée par** défaut : il s’agit de la durée de réservation de toutes les réunions. L’heure est bloquée à partir de l’heure de début, qui est sélectionnée pendant la réservation. L’heure de rendez-vous complète sera bloquée sur les calendriers du personnel.
 
-7. Temps tampon que votre client ne peut pas réserver : l’activation de ce paramètre permet **d’ajouter** du temps supplémentaire au calendrier du personnel chaque fois qu’un rendez-vous est réservé.
+7. Temps tampon que votre client ne peut pas réserver : **l’activation** de ce paramètre permet d’ajouter du temps supplémentaire au calendrier du personnel chaque fois qu’un rendez-vous est réservé.
 
     L’heure sera bloquée sur le calendrier du personnel et aura un impact sur les informations de libre/occupé. Cela signifie que si un rendez-vous se termine à 15 h 00 et que 10 minutes de temps tampon ont été ajoutées à la fin de la réunion, le calendrier du personnel s’affiche comme occupé et non réservé jusqu’à 15 h 10. Cela peut être utile si votre personnel a besoin de temps avant une réunion pour se préparer, tel qu’un médecin qui examine le graphique d’un patient ou un conseiller financier qui prépare les informations de compte pertinentes. Il peut également être utile après une réunion, par exemple lorsque quelqu’un a besoin de temps pour se déplacer vers un autre emplacement.
 
@@ -68,7 +68,7 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
     - Désactivé :
 
-        L’utilisateur n’a pas la possibilité de reprogrammer ou d’annuler sa réservation lorsqu’il se réserve sous l’onglet Calendrier de l’application Web Bookings. Toutefois, lors de la réservation via la page  Self-Service, les clients ont toujours le bouton Gérer la réservation et toutes ses options, même lorsque ce paramètre est désactivé.
+        L’utilisateur n’a pas la possibilité de reprogrammer ou d’annuler sa réservation lorsqu’il se réserve sous l’onglet Calendrier de l’application Web Bookings. Toutefois, lors de la réservation via la page  Self-Service, les clients auront toujours le bouton Gérer la réservation et toutes ses options, même lorsque ce paramètre est désactivé.
 
         Nous vous recommandons de désactiver ce paramètre si vous souhaitez limiter l’accès à Self-Service page. En outre, nous vous suggérons d’ajouter du texte à vos e-mails de confirmation et de rappel qui indique à vos clients comment apporter des modifications à leur réservation par d’autres moyens, par exemple en appelant le bureau ou en appelant le service d’aide.
 
@@ -98,13 +98,13 @@ Vous pouvez également ajouter des URL et des informations personnalisées à la
 
         :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Informations supplémentaires dans un e-mail Bookings":::
 
-14. **Activer les notifications par SMS pour votre client** S’il est sélectionné, les messages SMS sont envoyés au client, mais uniquement s’il l’a choisi.
+14. **Activer les notifications par SMS pour votre client** S’il est sélectionné, SMS messages sont envoyés au client, mais uniquement s’ils y sont abonnés.
 
     - Zone d’inscription sur la page de réservation Self-Service manuelle :
 
         :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Zone d’inscription dans Bookings":::
 
-    - Les notifications par SMS ressembleront à ce qui suit (notez que les notifications par SMS sont actuellement uniquement disponibles en Amérique du Nord) :
+    - Les notifications par SMS ressembleront à ce qui suit (notez que SMS notifications sont actuellement uniquement disponibles en Amérique du Nord) :
 
         :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Une notification texte de Bookings":::
 

@@ -24,7 +24,7 @@ Vous contrôlez la façon dont les sujets sont abordés dans votre organisation.
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
 - Quels SharePoint sites que vous souhaitez analyser pour les rubriques
-- Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
+- Rubriques, le cas caser, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
 - Utilisateurs que vous souhaitez autoriser à créer ou modifier des rubriques dans le centre de rubriques
@@ -38,18 +38,18 @@ Pour en savoir plus sur la technologie d’IA derrière Rubriques, lisez Les rub
 
 Vous devez être abonné à [Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer Rubriques.
 
-Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [par la rubrique Configurer Microsoft Topics.](set-up-topic-experiences.md)
+Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [dans La rubrique](set-up-topic-experiences.md)Configurer Microsoft .
 
 ## <a name="topic-discovery"></a>Découverte de rubrique
 
 Les paramètres de découverte des rubriques spécifient les sites SharePoint utilisés comme sources pour les rubriques. Vous pouvez choisir d'inclure tous les sites SharePoint, une liste spécifique de sites ou aucun site. Nous vous recommandons de choisir tous les sites afin que les expériences de rubriques puisse découvrir un grand nombre de bonnes rubriques pour vos utilisateurs.
 
-Lorsque vous définissez Rubriques, vous pouvez choisir l’une des options suivantes :
+Lorsque vous définissez Rubriques, vous pouvez choisir l’une des options suivantes :
 
-- **Tous les sites** : tous les sites SharePoint dans votre organisation. Cela inclut les sites actuels et futurs.
-- **Tous, sauf les sites sélectionnés** : tous les sites à l’exception de ceux que vous spécifiez. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte de rubriques. 
+- **Tous les sites** : tous les sites SharePoint dans votre organisation. Cela inclut les sites actuels et futurs.
+- **Tous, sauf les sites sélectionnés** : tous les sites à l’exception de ceux que vous spécifiez. Les sites créés à l’avenir seront inclus en tant que sources pour la découverte de rubriques. 
 - **Uniquement les sites sélectionnés**: uniquement les sites que vous spécifiez. Les sites créés dans le futur ne seront pas inclus comme sources pour la découverte de rubriques.
-- **Aucun site** : n’incluez aucun site SharePoint.
+- **Aucun site** : n’incluez aucun site SharePoint.
 
 Si vous choisissez **Tous, à** l’exception des sites sélectionnés ou uniquement des **sites** sélectionnés, vous pouvez télécharger un fichier .csv avec une liste de sites. Ces options sont utiles si vous faites un projet pilote et que vous souhaitez inclure un nombre limité de sites à démarrer.
 
@@ -65,7 +65,7 @@ Nous vous recommandons de créer un processus pour que les utilisateurs ou les g
 
 ### <a name="multi-geo"></a>Multi-Géo
 
-Si votre organisation a déployé [Microsoft 365 Multi-Géo,](/microsoft-365/enterprise/microsoft-365-multi-geo)le centre de rubriques est mis en service dans l’emplacement central et seuls les sites SharePoint de l’emplacement central peuvent être utilisés comme sources pour les rubriques. (Si vous sélectionnez **Tous les sites,** Rubriques Topics utilisera tous les sites dans l’emplacement central.)
+Si votre organisation a déployé [Microsoft 365 Multi-Géo,](/microsoft-365/enterprise/microsoft-365-multi-geo)le centre de rubriques est mis en service dans l’emplacement central et seuls les sites SharePoint de l’emplacement central peuvent être utilisés comme sources pour les rubriques. (Si vous sélectionnez **Tous les sites,** Topics utilise tout le site dans l’emplacement central.)
 
 Tout le traitement et le stockage du contenu sont effectués à l’emplacement central.
 
@@ -82,7 +82,7 @@ Les gestionnaires de connaissances supervisent la qualité des informations, la 
 
 Bien que vous pouvez spécifier des responsables de rubriques individuels, nous vous recommandons de créer un groupe de sécurité (ou d’utiliser un groupe existant) qui contient les personnes que vous souhaitez utiliser comme responsables de connaissances. Vous pouvez spécifier ce groupe de sécurité pendant le processus d’installation.
 
-*Créer et modifier des rubriques*
+*Créer et modifier des rubriques.*
 
 Les contributeurs de rubriques sont les champions et les experts techniques de votre organisation. Ils peuvent créer et modifier des rubriques. 
 
@@ -94,7 +94,7 @@ Vous pouvez choisir de ne permettre à personne de contribuer à des rubriques, 
 
 *Visionneuses de rubriques*
 
-Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillables dans le contenu comme SharePoint pages. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
+Les visiteurs peuvent voir des informations sur les pages de rubriques, dans les résultats de la recherche et lorsque des rubriques sont mises en surbrillez dans le contenu tel que SharePoint pages. Les utilisateurs peuvent uniquement voir les rubriques découvertes lorsqu’ils ont accès aux fichiers et aux pages dans qui la rubrique a été découverte.
 
 Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parmi :
 
@@ -102,7 +102,7 @@ Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parm
 - **Personnes ou groupes de sécurité sélectionnés uniquement**
 - **Personne**
 
-Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les personnes à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
+Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les utilisateurs à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
 
 ## <a name="knowledge-rules"></a>Règles de connaissance
 
@@ -112,8 +112,8 @@ Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous de
 
 Le .csv doit contenir les paramètres suivants :
 
-- **Nom** : tapez le nom de la rubrique à exclure. Il existe deux méthodes pour y parvenir :
-- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
+- **Nom** : tapez le nom de la rubrique à exclure. Il existe deux méthodes pour y parvenir :
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
     - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.
@@ -128,7 +128,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administration
 
-Lorsque vous définissez Rubriques, dans le cadre du processus d’installation, un centre de rubriques est automatiquement créé. Réfléchissez à ce que vous souhaitez nommer le centre de rubriques et à ce que doit être l’URL. Vous pouvez définir le nom et l’URL dans le cadre du processus de configuration, et vous pouvez modifier le nom (mais pas l’URL) plus loin dans le Centre d’administration Microsoft 365'administration. Vous ne pouvez avoir qu’un seul centre de rubriques.
+Lorsque vous définissez Rubriques, dans le cadre du processus d’installation, un centre de rubriques est automatiquement créé. Réfléchissez à ce que vous souhaitez nommer le centre de rubriques et à ce que doit être l’URL. Vous pouvez définir le nom et l’URL dans le cadre du processus d’installation, et vous pouvez modifier le nom (mais pas l’URL) plus loin dans le Centre d’administration Microsoft 365'administration. Vous ne pouvez avoir qu’un seul centre de rubriques.
 
 ## <a name="setup-checklist"></a>Liste de vérification du programme d’installation
 

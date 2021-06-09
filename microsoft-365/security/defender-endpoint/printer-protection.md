@@ -19,11 +19,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52809229"
 ---
-# <a name="device-control-printer-protection"></a>Protection de l’imprimante des contrôles d’appareil 
+# <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil 
 
 Microsoft Defender pour endpoint Device Control Printer Protection empêche les personnes d’imprimer via des imprimantes non d’entreprise ou des imprimantes USB non approuvées.
 
-## <a name="licensing"></a>Licence 
+## <a name="licensing"></a>Licences 
 
 Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Pour accéder à printer Protection et l’utiliser, vous devez avoir les informations suivantes :
 
@@ -73,7 +73,7 @@ Vous pouvez déployer la stratégie via la stratégie de groupe ou Intune.
 
 Pour Intune, la protection de l’imprimante de contrôle d’appareil prend uniquement en charge l’OMA-URI.
 
-**Scénario 1 : empêcher les personnes d’imprimer via n’importe quelle imprimante non d’entreprise** 
+**Scénario 1 : empêcher les personnes d’imprimer via une imprimante non d’entreprise** 
 
  - Appliquez la stratégie sur l’ordinateur : 
 
@@ -105,7 +105,7 @@ La chaîne de prise en charge du programme CSP avec des imprimantes USB approuv�
 
 Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la stratégie via la stratégie de groupe. 
 
-**Scénario 1 : empêcher les personnes d’imprimer via n’importe quelle imprimante non d’entreprise** 
+**Scénario 1 : empêcher les personnes d’imprimer via une imprimante non d’entreprise** 
 
 - Appliquez la stratégie sur l’ordinateur : 
 

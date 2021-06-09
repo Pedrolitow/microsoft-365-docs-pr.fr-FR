@@ -18,9 +18,9 @@ ms.locfileid: "47962560"
 ---
 # <a name="create-a-manual-booking"></a>Créer une réservation manuelle
 
-Les réservations peuvent être programmées et programmées de deux manières différentes. La première consiste à utiliser une page de réservation autonome ou une page de réservation incorporée que vous ajoutez à votre site web. Dans l’autre cas, vous ou l’un de vos employés pouvez entrer les réservations manuellement, par exemple lorsqu’un client appelle un rendez-vous. Cet article décrit le scénario manuel.
+Vous pouvez planifier, puis gérer Bookings de deux façons différentes. La première consiste à utiliser une page de réservation autonome ou une page de réservation incorporée que vous ajoutez à votre site web. L’autre solution consiste, pour vous ou l’un de vos employés, à entrer manuellement les réservations, par exemple lorsqu’un client demande un rendez-vous. Cet article décrit le scénario manuel.
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Réservations.**
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
    ![Image de Bookings dans le lanceur d’applications](../media/bookings-applauncher.png)
 

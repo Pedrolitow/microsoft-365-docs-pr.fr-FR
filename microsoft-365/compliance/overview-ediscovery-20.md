@@ -33,7 +33,7 @@ La Advanced eDiscovery solution Microsoft 365 s’appuie sur les fonctionnalité
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery fonctionnalités
 
-Advanced eDiscovery peut aider votre organisation à répondre à des questions juridiques ou à des enquêtes internes en découvrant les données où elle se trouve. Vous pouvez gérer en toute transparence les flux de travail eDiscovery en identifiant les personnes d’intérêt et leurs sources de données, en appliquant en toute transparence des conservations pour conserver les données, puis en gérant le processus de communication de conservation légale. En collectant des données à partir de la source, vous pouvez effectuer des recherches sur la plateforme Microsoft 365 live pour trouver rapidement ce dont vous avez besoin. Les fonctionnalités intelligentes d’apprentissage automatique telles que l’indexation approfondie, le thread de courrier électronique et la détection de quasi-doublons vous aident également à réduire les volumes importants de données dans un jeu de données pertinent.
+Advanced eDiscovery peut aider votre organisation à répondre à des questions juridiques ou à des enquêtes internes en découvrant les données où elle se trouve. Vous pouvez gérer en toute transparence les flux de travail eDiscovery en identifiant les personnes concernées et leurs sources de données, en appliquant en toute transparence des conservations pour conserver les données, puis en gérant le processus de communication de conservation légale. En collectant des données à partir de la source, vous pouvez effectuer des recherches sur la plateforme Microsoft 365 live pour trouver rapidement ce dont vous avez besoin. Les fonctionnalités intelligentes d’apprentissage automatique telles que l’indexation approfondie, le thread de courrier électronique et la détection de quasi-doublons vous aident également à réduire les volumes importants de données dans un jeu de données pertinent.
 
 Les sections suivantes décrivent comment ces fonctionnalités Advanced eDiscovery peuvent aider votre organisation.
 
@@ -43,7 +43,7 @@ Les sections suivantes décrivent comment ces fonctionnalités Advanced eDiscove
 
 En général, les organisations qui s’appuient sur plusieurs solutions eDiscovery tierces nécessitent la copie de grands volumes de données hors de Microsoft 365 pour traiter et avoir à héberger des données en double. Cette nécessité augmente le temps nécessaire pour trouver des données pertinentes, ainsi que les risques, les coûts et la complexité de la gestion de plusieurs solutions.
 
-Advanced eDiscovery dans Microsoft 365 vous permet de découvrir les données au niveau de la source et de rester à l’intérieur Microsoft 365 limites de sécurité et de conformité.  En collectant des données sur place à partir du système en direct, Advanced eDiscovery réduit la friction de revenir à la source et réduit le travail inutile de recherche de contenu manquant, ce qui se produit souvent lorsque la journalité est en retard dans les solutions eDiscovery traditionnelles.
+Advanced eDiscovery dans Microsoft 365 vous permet de découvrir les données au niveau de la source et de rester à l’intérieur Microsoft 365 limites de sécurité et de conformité.  En collectant des données sur place à partir du système en direct, Advanced eDiscovery réduit la friction de revenir à la source et réduit le travail inutile d’avoir à trouver le contenu manquant, ce qui se produit souvent lorsque la journaling est en retard dans les solutions eDiscovery traditionnelles.
 
 Les fonctionnalités natives de recherche et de collecte de données dans Teams, Yammer, SharePoint Online, OneDrive Entreprise et Exchange Online améliorent davantage la découverte des données. Par exemple, Advanced eDiscovery :
 
@@ -126,7 +126,7 @@ Il existe deux étapes rapides et simples pour commencer à utiliser Advanced eD
 
 |Étapes  |Description  |
 |:---------|:---------|
-|[Configurer Advanced eDiscovery](get-started-with-advanced-ediscovery.md)| Après avoir vérifié les conditions d’abonnement et de licence, vous pouvez attribuer des autorisations et configurer les paramètres à l’échelle de l’organisation pour commencer à utiliser Advanced eDiscovery.|
+|[Configurer Advanced eDiscovery](get-started-with-advanced-ediscovery.md)| Après avoir vérifié les exigences d’abonnement et de licence, vous pouvez attribuer des autorisations et configurer les paramètres à l’échelle de l’organisation pour commencer à utiliser Advanced eDiscovery.|
 |[Créer et gérer des cas](create-and-manage-advanced-ediscoveryv2-case.md) | Créez des cas pour gérer le flux Advanced eDiscovery de travail pour tous les types d’enquêtes juridiques et autres dans votre organisation.|
 |||
 

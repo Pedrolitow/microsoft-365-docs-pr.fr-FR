@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: Découvrez comment mettre à niveau vos Windows de Windows 10 Professionnel pour utiliser des fonctionnalités de sécurité et de mise en réseau professionnelle plus avancées.
+description: Découvrez comment mettre à niveau vos Windows de Windows 10 Professionnel pour utiliser des fonctionnalités de sécurité et de réseau d’entreprise plus avancées.
 ms.openlocfilehash: 14a1705a333b2fd4d4dda37ed5170b34acb13abe
 ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
@@ -56,11 +56,11 @@ Pour mettre à niveau Windows 10 Professionnel, vous avez plusieurs options. Vou
 > [!NOTE]
 > Si vous avez des appareils Windows exécutant Windows 7 Pro, Windows 8 Professionnel ou Windows 8.1 Professionnel, votre abonnement Microsoft 365 pour les entreprises vous donne droit à une mise à niveau Windows Pro 10.
     
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour terminer la configuration des Windows 10, voir Configurer Windows pour les Microsoft 365 [pour les utilisateurs professionnels.](set-up-windows-devices.md) 
   
-Pour terminer la configuration des appareils Android et iOS, voir Configurer des appareils [mobiles pour Microsoft 365 pour les utilisateurs professionnels.](set-up-mobile-devices.md) 
+Pour terminer la configuration des appareils Android et iOS, voir Configurer des appareils [mobiles pour Microsoft 365 les utilisateurs professionnels.](set-up-mobile-devices.md) 
   
 ## <a name="related-content"></a>Contenu associé
 

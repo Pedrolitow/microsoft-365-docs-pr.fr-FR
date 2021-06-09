@@ -1,5 +1,5 @@
 ---
-title: Déployer des paramètres configurables dans bureau géré Microsoft
+title: Déployer des paramètres configurables dans Bureau géré Microsoft
 description: Déployez et suivez les modifications des paramètres configurables dans Bureau géré Microsoft.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation, déployer, déploiement par étapes, paramètres configurables
 ms.service: m365-md
@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 09/18/2020
 ms.locfileid: "48104533"
 ---
-# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables - Bureau géré Microsoft
+# <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>Déployer et suivre les paramètres configurables : Bureau géré Microsoft
 
 Après avoir apporté des modifications à vos catégories de paramètres et organisé un déploiement, la page État du déploiement vous permet de commencer à déployer vos paramètres dans des groupes. Cette page affiche un résumé de chaque paramètre configurable. En ouvrant une catégorie de paramètres, vous pouvez déployer des paramètres sur des groupes et suivre la progression de ces déploiements.
 
@@ -29,7 +29,7 @@ Statut  | Explication
 Déployer | Votre modification attend d’être déployée sur ce groupe.
 En cours | La modification est appliquée aux appareils actifs de ce groupe. 
 Exécuter | Modification effectuée sur tous les appareils actifs de ce groupe. 
-Échec | La modification a échoué sur 10 % des appareils actifs du groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support est automatiquement ouverte avec les opérations bureau géré Microsoft pour résoudre les problèmes de déploiement. 
+Échec | La modification a échoué sur 10 % des appareils actifs du groupe, de sorte que le déploiement a été arrêté.<br><br> Une demande de support est automatiquement ouverte avec les Bureau géré Microsoft pour résoudre les problèmes de déploiement. 
 Révérence | La modification a été revenir à la dernière modification qui a été correctement déployée sur tous les groupes de déploiement.
 
 ## <a name="deploy-changes"></a>Déployer les modifications
@@ -38,8 +38,8 @@ Nous allons afficher l’image d’arrière-plan du bureau dans ces instructions
 
 **Pour déployer les modifications**
 
-1. Connectez-vous au Gestionnaire de point de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
-2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres.**
+1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
+2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres**.
 3. Dans **l’espace** de travail État du déploiement, sélectionnez le paramètre à déployer, puis le déploiement par étapes à déployer.
 4. Sélectionnez **Déployer** pour déployer la modification dans l’un des groupes de déploiement.
 
@@ -56,13 +56,13 @@ Lorsque les modifications sont terminées dans chaque groupe, l’état est **te
 
 ## <a name="revert-deployment"></a>Revert deployment
 
-Une fois que vous avez déployé une modification, vous pouvez revenir à **l’état de déploiement.** Lorsque vous inversez une modification en cours **ou** **terminée,** le déploiement actuel s’arrête. Le paramètre revient à la dernière version qui a été déployée pour tous les groupes. 
+Une fois que vous avez déployé une modification, vous pouvez revenir à **l’état de déploiement.** Lorsque vous inversez une modification en cours **ou** **terminée,** le déploiement actuel s’arrête. Le paramètre revient à la dernière version qui a été déployée sur tous les groupes. 
 
 Nous allons vous montrer les étapes à suivre pour inverser une modification à l’aide de l’image d’arrière-plan du Bureau à titre d’exemple. 
 
 **Pour inverser une modification**
-1. Connectez-vous au Gestionnaire de points de [terminaison Microsoft](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
-2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres.**
+1. Connectez-vous [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) et accédez au menu **Appareils**
+2. Recherchez la section Bureau géré Microsoft, sélectionnez **Paramètres**.
 3. Dans **l’espace** de travail État du déploiement, sélectionnez le paramètre à revenir, puis sélectionnez le déploiement par étapes à inverser.
 4. Under **Need to revert this change?**, select **Revert deployment**.
 

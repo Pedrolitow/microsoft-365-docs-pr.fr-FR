@@ -1,5 +1,5 @@
 ---
-title: Rapports de pare-feu d’hôte dans Microsoft Defender pour le point de terminaison
+title: Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison
 description: Hébergez et affichez les rapports de pare-feu dans Microsoft 365 de sécurité.
 keywords: windows defender, pare-feu
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52809251"
 ---
-# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Rapports de pare-feu d’hôte dans Microsoft Defender pour le point de terminaison
+# <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Création de rapports de pare-feu d’hôte dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ Si vous êtes un administrateur, vous pouvez désormais héberger des rapports d
 - Pour intégrer des appareils au service Microsoft Defender for Endpoint, voir [ici.](onboard-configure.md) 
 - Pour que Microsoft 365 centre de sécurité commence à recevoir les données, vous devez activer les événements **d’audit** Pare-feu Windows Defender avec Fonctions avancées de sécurité : 
     - [Auditer le drop de paquets de plateforme de filtrage](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
-    - [Auditer la connexion à la plateforme de filtrage](/windows/security/threat-protection/auditing/audit-filtering-platform-connection) 
+    - [Auditer la connexion de plateforme de filtrage](/windows/security/threat-protection/auditing/audit-filtering-platform-connection) 
 - Activez ces événements à l’aide de l’Éditeur d’objets de stratégie de groupe, de la stratégie de sécurité locale ou auditpol.exe commandes. Pour plus d’informations, voir [ici.](/windows/win32/fwp/auditing-and-logging) 
     - Les deux commandes PowerShell sont :
         - **auditpol /set /subcategory:"Filtering Platform Packet Drop » /failure:enable** 
@@ -67,7 +67,7 @@ Ces rapports sont également accessibles en accédant à la section Périphériq
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>De « Ordinateurs avec une connexion bloquée » à l’appareil
 
-Les cartes supportent les objets interactifs. Vous pouvez consulter l’activité d’un appareil en cliquant sur le nom de l’appareil, qui sera lancé dans un nouvel onglet, et vous diriger directement vers l’onglet Chronologie de https://securitycenter.microsoft.com l’appareil.  
+Les cartes prisent en charge les objets interactifs. Vous pouvez consulter l’activité d’un appareil en cliquant sur le nom de l’appareil, qui sera lancé dans un nouvel onglet, et vous diriger directement vers l’onglet Chronologie de https://securitycenter.microsoft.com l’appareil.  
 
 > [!div class="mx-imgBorder"]
 > ![Ordinateurs avec une connexion bloquée](\images\firewall-reporting-blocked-connection.png)

@@ -1,6 +1,6 @@
 ---
 title: Table AADSignInEventsBeta dans le schéma de recherche avancé
-description: En savoir plus sur les informations associées Azure Active Directory d’événements de Azure Active Directory du schéma de recherche avancé
+description: En savoir plus sur les informations associées Azure Active Directory d’événements de Azure Active Directory de la recherche avancée du schéma de recherche avancée
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -31,14 +31,14 @@ ms.locfileid: "52582979"
 
 **S’applique à :**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 >[!IMPORTANT]
 > Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de passer par les événements de Azure Active Directory `AADSignInEventsBeta` (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
 
  
 
-Le tableau dans le schéma de recherche avancée contient des informations sur Azure Active Directory des `AADSignInEventsBeta` sign-ins interactives et non interactives. En savoir plus sur les sign-ins dans Azure Active Directory des rapports d’activité de la [sign-in - aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+Le tableau dans le schéma de recherche avancé contient des informations sur Azure Active Directory des `AADSignInEventsBeta` sign-ins interactives et non interactives. En savoir plus sur les sign-ins dans Azure Active Directory des rapports d’activité de la [sign-in - aperçu](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Utilisez cette référence pour créer des requêtes qui renvoient des informations de la table.
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, consultez [la référence de repérage avancé](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
@@ -60,7 +60,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `AccountObjectId`                 | string        | Identificateur unique du compte dans Azure AD                                                                                                                                       |
 | `AccountUpn`                      | string        | Nom d’utilisateur principal (UPN) du compte                                                                                                                                            |
 | `IsExternalUser`                  | entier        | Indique si l’utilisateur qui s’est inscrit est externe. Valeurs possibles : -1 (non définie) , 0 (non externe), 1 (externe).                                                                   |
-| `IsGuestUser`                     | booléen       | Indique si l’utilisateur qui s’est inscrit est un invité dans le client                                                                                                                  |
+| `IsGuestUser`                     | valeur booléenne       | Indique si l’utilisateur qui s’est inscrit est un invité dans le client                                                                                                                  |
 | `AlternateSignInName`             | string        | Nom d’utilisateur principal (UPN) local de l’utilisateur se signant à Azure AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | DateHeure        | Date et heure de la dernière fois où l’utilisateur qui s’est inscrit a modifié son mot de passe                                                                                                              |
 | `ResourceDisplayName`             | string        | Nom d’affichage de la ressource accessible                                                                                                                                               |
@@ -71,7 +71,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `OSPlatform`                      | string        | Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.  |
 | `DeviceTrustType`                 | string        | Indique le type d’confiance de l’appareil qui s’est connecté. Pour les scénarios d’appareil géré uniquement. Les valeurs possibles sont Workplace, AzureAd et ServerAd.                                     |
 | `IsManaged`                       | entier       | Indique si l’appareil à l’origine de la connectez-vous est un appareil géré (1) ou non un appareil géré (0)                                                                         |
-| `IsCompliant`                     | entier       | Indique si l’appareil à l’origine de la signature est conforme (1) ou non conforme (0)                                                                                       |
+| `IsCompliant`                     | entier       | Indique si l’appareil à l’origine de la signature est conforme (1) ou non (0)                                                                                       |
 | `AuthenticationProcessingDetails` | string        | Détails sur le processeur d’authentification                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | Type d’authentification requis pour la signature. Valeurs possibles : multiFactorAuthentication (l’authentification multifacteur était requise) et singleFactorAuthentication (aucune authentification multifacteur n’était requise).                |
 | `TokenIssuerType`                 | entier        | Indique si l’émetteur de jeton est Azure Active Directory (0) ou les services de fédération Active Directory (1)                                                                             |

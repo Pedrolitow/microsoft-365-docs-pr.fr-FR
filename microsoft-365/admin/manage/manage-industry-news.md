@@ -24,27 +24,27 @@ ms.locfileid: "51650031"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
 
-Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil bing et de la page nouvel onglet Microsoft Edge (à partir de la publication de Edge 87). 
+Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil Bing et de la page Microsoft Edge nouvel onglet (à partir de la publication de Edge 87). 
 
 ## <a name="what-your-users-will-see"></a>Ce que vos utilisateurs voient
 
 Vous avez la possibilité d’envoyer à vos utilisateurs un e-mail quotidien de mises à jour du secteur avec des titres et des liens vers des articles complets. Les utilisateurs peuvent personnaliser leurs mises à jour de messagerie en suivant des rubriques supplémentaires, en choisissant quand la mise à jour est livrée, en excluant les articles derrière les paywalls et en sélectionnant le nombre d’articles qu’ils souhaitent voir. 
  
-Les utilisateurs qui se sont inscrits à la page d’accueil Bing voient le flux d’actualités de votre secteur sous les informations personnalisées de votre organisation. 
+Les utilisateurs qui se sont inscrits et qui se Bing page d’accueil voient le flux d’actualités de votre secteur sous les informations personnalisées de votre organisation. 
  
 :::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Capture d’écran d’un carrousel d’image avec les actualités du secteur à partir du web":::
 
 :::image type="content" source="../../media/industry-updates-new.png" alt-text="Page Mises à jour du secteur avec date et titres":::
 
-Ils peuvent également consulter les actualités de l’entreprise, du secteur et internes, ou des informations de travail personnalisées sur leur nouvel onglet Microsoft Edge. 
+Ils peuvent également consulter les actualités de l’entreprise, du secteur et internes, ou des informations de travail personnalisées sur Microsoft Edge page nouvel onglet. 
 
 :::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft dans la page d’accueil des actualités":::
 
 ## <a name="news-settings"></a>Paramètres des actualités
 
-En tant qu’administrateur, vous contrôlez les paramètres du flux d’actualités pour votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
+En tant qu’administrateur, vous contrôlez les paramètres de flux d’actualités de votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page du nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
 
-1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. Dans le Microsoft 365 d’administration, Paramètres Les actualités des services des  >  **paramètres**  >    >  [**de l’organisation.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
 
 1. Dans le **panneau Actualités,** cliquez sur **l’onglet** Général.
 
@@ -60,7 +60,7 @@ En tant qu’administrateur, vous contrôlez les paramètres du flux d’actuali
 
 Vous pouvez envoyer une mise à jour quotidienne par courrier électronique avec les actualités du secteur pertinentes dans la boîte de réception de vos utilisateurs. Pour définir des mises à jour quotidiennes du courrier électronique pour les utilisateurs : 
 
-1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. Dans le Microsoft 365 d’administration, Paramètres Les actualités des services des  >  **paramètres**  >    >  [**de l’organisation.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
 
 1. Dans le **panneau Actualités,** cliquez sur **l’onglet Mises à jour du secteur.** 
 
@@ -70,23 +70,24 @@ Vous pouvez envoyer une mise à jour quotidienne par courrier électronique avec
 
 ## <a name="bing-homepage"></a>Page d’accueil de Bing
 
-Vous pouvez personnaliser la page d’accueil Bing pour inclure des actualités sur votre secteur d’activité. 
+Vous pouvez personnaliser la page Bing page d’accueil pour inclure des actualités sur votre secteur d’activité. 
 
-1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
+1. Dans le Microsoft 365 d’administration, Paramètres Les actualités des services des  >  **paramètres**  >    >  [**de l’organisation.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
 
-1. Dans le **panneau Actualités,** cliquez sur **l’onglet** Page d’accueil bing, puis **sélectionnez Inclure sur la page d’accueil Bing.** 
+1. Dans le **panneau Actualités,** cliquez sur **l’onglet Bing page** d’accueil, puis sélectionnez Inclure Bing page **d’accueil.** 
 
     Les actualités du secteur apparaissent sous les informations personnalisées de votre organisation Bing.com. 
 
-## <a name="microsoft-edge-new-tab-page"></a>Page Nouvel onglet Microsoft Edge 
+## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge page nouvel onglet 
 Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérieure) avec un compte scolaire ou scolaire valide, ils peuvent voir des actualités adaptées à votre organisation.
 
-1. Dans le Centre d’administration Microsoft 365, go to **Settings**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
-2. Dans le **panneau Actualités,** cliquez **sur la page nouvel onglet microsoft Edge.**
-3. Sélectionnez **Autoriser le contenu Office 365 sur la page nouvel onglet.** Lorsqu’il est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher les informations d’Office 365, y compris les fichiers recommandés et récents, ainsi que les sites SharePoint fréquemment utilisés et d’autres informations.
+1. Dans le Microsoft 365 d’administration, Paramètres Les actualités des services des  >  **paramètres**  >    >  [de l’organisation.](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
+2. Dans le **panneau Actualités,** cliquez **sur Microsoft Edge page nouvel onglet.**
+3. Sélectionnez **Autoriser Office 365 contenu sur la page nouvel onglet.** Lorsque ce paramètre est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher des informations provenant de Office 365, notamment des fichiers recommandés et récents, ainsi que des sites SharePoint fréquemment utilisés et d’autres informations.
 4. Sélectionnez **Afficher les informations de l’entreprise et les actualités du secteur sur la page nouvel onglet.** Des articles d’actualités sur votre organisation et votre secteur d’activité s’affichent pour les utilisateurs qui choisissent de consulter les articles sous leur nouvel onglet.
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Recherche Microsoft](/microsoftsearch/)
+- 
+  [Recherche Microsoft](/microsoftsearch/)
 - [Gérer vos données et service](./index.yml)

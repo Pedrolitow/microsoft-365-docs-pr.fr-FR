@@ -39,9 +39,9 @@ Dans Microsoft 365 entreprise, il est facile de partager des fichiers avec des p
 
 1. En haut de la bibliothèque documents sur votre site SharePoint, cliquez sur **Nouveau,** puis sélectionnez **Dossier.**
 1. Nommez le dossier, puis cliquez sur **Créer.**
-1. Télécharger les fichiers que vous souhaitez partager avec la nouvelle bibliothèque, ou choisissez **Nouveau** pour créer de nouveaux documents directement dans la bibliothèque.
+1. Télécharger les fichiers que vous souhaitez partager avec la nouvelle bibliothèque, ou choisissez **Nouveau** pour créer des documents directement dans la bibliothèque.
 1. Sélectionnez votre nouveau dossier dans la bibliothèque documents, puis cliquez sur le **bouton** Partager.
 1. Dans la **fenêtre Lien d’envoi,** cliquez sur la liste en haut, choisissez Des personnes spécifiques, sélectionnez Autoriser la **modification,** puis sélectionnez **Appliquer**. 
 1. Dans la **fenêtre Lien d’envoi,** entrez l’adresse e-mail de votre client, tapez un message, puis choisissez **Envoyer.**
 
-    Votre client reçoit un courrier électronique avec un code de vérification qu’il doit envoyer à lui-même pour accéder à votre dossier. S’il ne trouve pas le courrier électronique, il doit vérifier son dossier De courrier indésirable.
+    Votre client reçoit un courrier électronique avec un code de vérification qu’il doit envoyer à lui-même pour accéder à votre dossier. S’il ne trouve pas l’e-mail, il doit vérifier son dossier de courrier indésirable.

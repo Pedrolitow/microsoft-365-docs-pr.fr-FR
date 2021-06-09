@@ -60,7 +60,7 @@ Vous pouvez affecter des utilisateurs à un rôle de 2 manières différentes :
 1. Dans le Centre d’administration, allez à **Rôles.** Choisissez les **onglets Azure AD** ou **Intune** pour afficher les rôles d’administrateur disponibles pour votre organisation.
 2. Sélectionnez le rôle d’administrateur à attribuer à l’utilisateur.
 3. Sélectionnez **Administrateurs affectés**  >  **Ajouter.**
-4. Tapez le nom **d’affichage** ou le nom d’utilisateur de l’utilisateur, puis sélectionnez l’utilisateur dans la liste des suggestions.
+4. Tapez le nom d’affichage ou **le** nom d’utilisateur de l’utilisateur, puis sélectionnez l’utilisateur dans la liste des suggestions.
 5. Ajoutez plusieurs utilisateurs jusqu’à ce que vous avez terminé.
 6. **Sélectionnez** Enregistrer, puis l’utilisateur est ajouté à la liste des administrateurs affectés.
 

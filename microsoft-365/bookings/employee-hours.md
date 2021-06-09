@@ -30,13 +30,13 @@ Regardez cette vidéo ou suivez les étapes ci-dessous pour définir les heures 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings**.
+1. Dans Microsoft 365, sélectionnez le lanceur d’applications, puis **sélectionnez Bookings.**
 
 1. Dans le volet de navigation, sélectionnez **Personnel,** puis sélectionnez le membre du personnel dont vous souhaitez définir les heures.
 
    ![Image de l’écran du personnel Bookings avec le nom mis en évidence](../media/bookings-staff-name-highlight.png)
 
-1. Sous les heures de travail, cochez la case Utiliser **les heures** d’ouverture.
+1. Sous heures de travail, cochez la case Utiliser **les heures** d’ouverture.
 
 1. Utilisez les dropdowns pour sélectionner les heures de début et de fin de chaque jour. Les heures sont disponibles par incréments de 15 minutes.
 

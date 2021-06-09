@@ -1,5 +1,5 @@
 ---
-title: Feuille de route relative à l’identité pour Microsoft 365
+title: Feuille de route relative à l’identité pour Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -23,25 +23,25 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51051305"
 ---
-# <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route relative à l’identité pour Microsoft 365
+# <a name="identity-roadmap-for-microsoft-365"></a>Feuille de route relative à l’identité pour Microsoft 365
 
-Dans Microsoft 365 pour entreprise, une infrastructure d’identités bien planifiée et exécutée ouvre la voie à une sécurité renforcée, notamment en limitant l’accès à vos charges de travail de productivité et à leurs données uniquement aux utilisateurs et appareils authentifiés.
+Dans Microsoft 365 entreprise, une infrastructure d’identités bien planifiée et exécutée ouvre la voie à une sécurité renforcée, notamment en limitant l’accès à vos charges de travail de productivité et à leurs données uniquement aux utilisateurs et appareils authentifiés.
 
-Pour une vue d’ensemble des modèles d’identité et de l’authentification pour Microsoft 365 pour entreprise, regardez cette vidéo.
+Pour obtenir une vue d’ensemble des modèles d’identité et de l’authentification pour Microsoft 365 entreprise, regardez cette vidéo.
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Pour plus d’informations sur les fonctionnalités d’identité de chaque plan Microsoft 365 pour entreprise, le rôle d’Azure Active Directory, les composants locaux et basés sur le cloud, ainsi que les configurations d’authentification les plus courantes, voir l’affiche [Infrastructure](../downloads/m365e-identity-infra.pdf)d’identités.
+Pour plus d’informations sur les fonctionnalités d’identité de chaque Microsoft 365 pour le plan d’entreprise, le rôle de Azure Active Directory, les [](../downloads/m365e-identity-infra.pdf)composants locaux et en nuage, ainsi que les configurations d’authentification les plus courantes, voir l’affiche Infrastructure d’identités.
 
 [![Affiche Infrastructure d’identités](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-Examinez cette affiche de deux pages pour accélérer rapidement les concepts et les configurations d’identité pour Microsoft 365 pour entreprise.
+Examinez cette affiche de deux pages pour accélérer rapidement les concepts et les configurations d’identité pour Microsoft 365 entreprise.
 
 Vous pouvez également [télécharger cette affiche](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
-## <a name="plan"></a>Planification
+## <a name="plan"></a>Prévision
 
 Pour planifier l’implémentation de votre identité :
 
@@ -55,19 +55,19 @@ Pour déployer votre implémentation d’identité :
 - [Protéger vos comptes Administrateur général](protect-your-global-administrator-accounts.md)
 - [Configurer et utiliser des identités cloud uniquement](cloud-only-identities.md)
 - [Configurer et utiliser des identités hybrides](prepare-for-directory-synchronization.md)
-- [Configurez la synchronisation d’annuaires](set-up-directory-synchronization.md)
+- [Configurer la synchronisation d’annuaires](set-up-directory-synchronization.md)
 - Si nécessaire, déployez [des scénarios d’identité hybride](hybrid-solutions.md)
 
 ### <a name="identity-and-device-access-recommendations"></a>Recommandations en matière d’identité et d’accès aux appareils
 
-Pour garantir un personnel sécurisé et productif, Microsoft fournit un ensemble de recommandations pour l’accès aux identités [et aux appareils.](../security/defender-365-security/microsoft-365-policies-configurations.md) Pour l’identité, utilisez les recommandations et les paramètres des articles suivants :
+Pour garantir un personnel sécurisé et productif, Microsoft fournit un ensemble de recommandations pour l’accès aux identités [et appareils.](../security/defender-365-security/microsoft-365-policies-configurations.md) Pour l’identité, utilisez les recommandations et les paramètres des articles suivants :
 
 - [Conditions préalables](../security/defender-365-security/identity-access-prerequisites.md)
 - [Stratégies communes pour les identités et l’accès aux appareils](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>Gestion
 
-Pour gérer votre déploiement d’identités Microsoft 365, voir :
+Pour gérer votre déploiement d Microsoft 365 d’identité, voir :
 
 - [Comptes d’utilisateur](manage-microsoft-365-accounts.md)
 - [Licences](assign-licenses-to-user-accounts.md)

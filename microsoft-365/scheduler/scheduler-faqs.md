@@ -21,7 +21,7 @@ ms.locfileid: "52809164"
 Scheduler est un service indépendant des autres fonctionnalités de Cortana. D’autres fonctionnalités de Cortana peuvent être désactivées au niveau du client, et le Scheduler peut toujours être activé à l’aide de l cortana@yourdomain.com de messagerie. Actuellement, les utilisateurs ne peuvent interagir avec le Scheduler que par courrier électronique.
 
 **Question :** Cela fonctionne-t-il uniquement avec Outlook ? D’autres produits de messagerie sont-ils pris en charge ?</br>
-Tant que vous avez une licence autre que les trois conditions ci-dessus, les utilisateurs peuvent envoyer des cortana@yourdomain.com à partir de n’importe quel client de messagerie sur n’importe quel appareil.
+Tant que vous avez une licence, autres que les trois exigences ci-dessus, les utilisateurs peuvent envoyer des cortana@yourdomain.com à partir de n’importe quel client de messagerie sur n’importe quel appareil.
 
 **Question :** Les contacts peuvent-ils se trouver dans une liste de contacts personnelle sur Outlook la liste d’Outlook la liste d’attente ou une autre liste d’coordonnées équivalente à la société ?</br>
 Les participants à la réunion peuvent être n’importe qui ayant une adresse de messagerie à l’intérieur ou à l’extérieur de l’entreprise. Malheureusement, scheduler ne peut pas traduire automatiquement les noms en adresses e-mail /alias en le regardant dans la liste d’adresses gal aujourd’hui.
@@ -41,7 +41,7 @@ Le programme de planification utilise Scheduling Intelligence (IA) enrichi d’a
 Les assistants de planification sont la SSPA (Microsoft Supplier Security and Privacy Assurance) certifiée pour les informations personnelles et hautement confidentielles. 
 
 **Question :** Que peuvent afficher les Assistants SSPA ?</br>
-Le programmeur et les assistants de la SSPA peuvent afficher les messages électroniques adressés à Cortana. Dans un échange de courriers électroniques à thread, seuls les e-mails qui incluent l’adresse de messagerie de Cortana seront traitées, et non les messages électroniques précédents dans le thread avant l’ajout de Cortana.   
+Le scheduleur et les assistants de la SSPA peuvent afficher les messages électroniques adressés à Cortana. Dans un échange de courriers électroniques à thread, seuls les e-mails qui incluent l’adresse de messagerie de Cortana seront traitées, et non les messages électroniques précédents dans le thread avant l’ajout de Cortana.   
 
 **Question :** Les données client sont-elles conservées dans la base de données du Flow ? </br>
 Le programme de planification stocke tout le contenu client dans les limites du client et conserve les données conformément aux directives du R GDPR, aux stratégies de confidentialité Microsoft 365 & de confiance et aux stratégies de messagerie du client.
@@ -49,11 +49,11 @@ Le programme de planification stocke tout le contenu client dans les limites du 
 **Question :** Comment le Scheduler traitera-t-il les données de libre/occupé des participants internes ? </br>
 L’automatisation du scheduler utilise le service *findMeetingTimes* pour identifier les heures qui sont mutuellement disponibles pour les participants et l’organisateur. Ce service alimente d’Outlook expériences telles que *les* heures suggérées dans Outlook formulaire de réunion. Les informations de participant de la période de libre/occupé ne sont pas consommées explicitement en tant que blocs de libre/occupé. 
 
-**Question :** Le programme de planification est-il conforme au R GDPR ? </br>
+**Question :** Scheduler est-il conforme au R GDPR ? </br>
 Oui.
 
 **Question : Qui** a-t-il accès à la boîte aux lettres Cortana ? </br>
-Le scheduleur traite les demandes de réunion et les e-mails associés qui sont envoyés à la boîte aux lettres Cortana de votre client. Microsoft n’a aucun autre accès à la boîte aux lettres Cortana, sauf par le biais de l’approbation de Lockbox à la demande de l’administrateur client.  
+Le programme de planification traite les demandes de réunion et les e-mails associés qui sont envoyés à la boîte aux lettres Cortana de votre client. Microsoft n’a aucun autre accès à la boîte aux lettres Cortana, sauf par le biais de l’approbation de Lockbox à la demande de l’administrateur client.  
 
 **Question :** Les données client sont-elles utilisées pour les modèles d’IA de formation ?</br>
 Aucun contenu client de Scheduler pour Microsoft 365 ne peut être utilisé pour les jeux de formation sur les données. Tout le contenu client réside dans le client.  
