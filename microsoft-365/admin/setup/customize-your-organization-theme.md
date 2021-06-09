@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809046"
+ms.locfileid: "52841305"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -64,7 +64,7 @@ Le thème par défaut est le premier thème affiché.
 > [!IMPORTANT]
 > Le thème par défaut est unique, il ne peut pas être renommé et s’applique à tous les membres de votre organisation. Pour supprimer le thème par défaut, vous devez d’abord supprimer tous les autres thèmes.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Capture d’écran : onglet Général montrant le thème par défaut pour votre organisation":::
+:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
 ### <a name="create-a-group-theme"></a>Créer un thème de groupe
 
@@ -82,20 +82,13 @@ Vous pouvez créer jusqu’à quatre thèmes de groupe supplémentaires.
 
 Dans la page **Logos,** vous pouvez ajouter vos logos et spécifier l’URL vers laquelle les utilisateurs navigueront lorsqu’ils sélectionnent le logo.
 
-- **Logo par défaut**: ajoutez un emplacement d’URL qui pointe vers votre logo. Assurez-vous que l’URL utilise le protocole HTTPS et que l’image est d’au moins 200 x 30 pixels. Votre logo par défaut peut être au format JPG, PNG, GIF ou SVG.
+- **Logo par défaut**: ajoutez un emplacement d’URL qui pointe vers votre logo. Assurez-vous que l’URL utilise le protocole HTTPS. Si vous téléchargez un logo, assurez-vous qu’il est inférieur à 10 000 livres. Votre logo par défaut peut être au format JPG, PNG, GIF ou SVG. Pour les images SVG, elles seront resa taille pour s’ajuster à 24 pixels verticalement. Les images JPG, PNG et GIF seront adaptées à une taille de 200 x 48 pixels.
 - **Autre logo**: ajoutez un emplacement d’URL qui pointe vers votre logo. Votre autre logo doit être optimisé pour une utilisation dans Office thèmes foncés. Mêmes exigences que le logo par défaut.
-- **Petit logo par défaut**: ajoutez un emplacement d’URL qui pointe vers votre logo. L’image doit être d’au moins 48 x 48 pixels. Vous pouvez faire en sorte qu’elle s’adapte à des appareils plus petits ou mobiles.
-- **Petit logo de remplacement**: ajoutez un emplacement d’URL qui pointe vers votre logo. Cette image a les mêmes exigences que le petit logo par défaut.
 - **Lien sur clic :** ajoutez un emplacement d’URL qui pointe vers votre logo. Vous pouvez utiliser votre logo comme lien vers n’importe quelle ressource d’entreprise, par exemple le site web de votre entreprise.
 
 Sélectionnez **Enregistrer** pour enregistrer vos modifications.
 
 Vous pouvez supprimer vos logos à tout moment. Il vous suffit de **revenir à** la page Logos et de sélectionner **Supprimer.**
-
-:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot: Logos tab showing default theme logo for your organization":::
-
-> [!NOTE]
-> Par défaut, nous montrons d’abord les sélections de logo que la plupart des organisations utilisent. Pour voir toutes les sélections de logo, allez en bas de la liste et sélectionnez **Voir les options avancées.**
   
 ## <a name="colors-choose-theme-colors"></a>Couleurs : choisir les couleurs de thème
 
@@ -109,13 +102,13 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Capture d’écran : onglet Couleurs affichant les couleurs de thème par défaut pour votre organisation":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation possède déjà un thème pour tous les employés. Comment cela va-t-il changer ?
 
 Le thème par défaut continuera d’être affiché pour tous les employés.L’ajout d’un nouveau thème de groupe sera uniquement mis à la disposition Microsoft 365 groupes associés à ce thème.
 
-### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Pourquoi les thèmes de groupe ne s’y voient-ils pas dans le Centre d’administration ?
+### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Pourquoi ne vois-je pas les thèmes de groupe dans le Centre d’administration ?
 
 Seuls les administrateurs généraux peuvent personnaliser les thèmes d’entreprise.Les lecteurs globaux ont un accès en lecture seule.
 
@@ -132,7 +125,7 @@ Non, les nouveaux thèmes de groupe doivent être mappés à un ou plusieurs gro
 
 ### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Puis-je attribuer manuellement un thème indépendant de Microsoft 365 Groupes ?  
 
-Non, les nouveaux thèmes de groupe doivent être mappés à un ou plusieurs Microsoft 365 groupes. Les utilisateurs qui sont membres du groupe Microsoft 365 rechercheront le thème appliqué à leur groupe. Vous pouvez [créer et ajouter de nouveaux](../create-groups/create-groups.md) membres à **** un groupe Microsoft 365 en allant aux groupes Paramètres   >  **dans** le Centre d’administration.
+Non, les nouveaux thèmes de groupe doivent être mappés à un ou plusieurs Microsoft 365 groupes. Les utilisateurs membres du groupe Microsoft 365 rechercheront le thème appliqué à leur groupe. Vous pouvez [créer et ajouter de nouveaux](../create-groups/create-groups.md) membres à **** un groupe Microsoft 365 en allant aux groupes Paramètres   >  **dans** le Centre d’administration.
 
 ### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>Que se passe-t-il si un utilisateur est affecté à plusieurs thèmes de groupe ?  
 
@@ -150,11 +143,11 @@ Assurez-vous que le logo que vous utilisez est spécifié en tant qu’URL adres
 
 Le coefficient de contraste recommandé entre le texte, la couleur de l’icône ou du bouton et la couleur d’arrière-plan est de 4,5:1. Vous pouvez remplacer cette recommandation et tout de même enregistrer votre thème, car ce n’est pas obligatoire.
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si je définit un thème, quels sont les endroits Microsoft 365 seront-ils utilisés ?
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si je définit un thème, quels sont les endroits Microsoft 365 sera-t-il utilisé ?
 
 Tout thème apparaît dans la barre de navigation supérieure pour tous les membres de l’organisation dans le cadre de l’en-tête Microsoft 365 suite.  
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Ajouter des vignettes personnalisées à la page Mes applications et au lanceur d’applications](../manage/customize-the-app-launcher.md) (article)\
-[Vue d’Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)
+[Ajouter des vignettes personnalisées à la page Mes applications et](../manage/customize-the-app-launcher.md) au lanceur d’applications (article)\
+[Vue d’ensemble Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)

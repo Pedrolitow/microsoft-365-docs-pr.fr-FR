@@ -1,7 +1,7 @@
 ---
 title: Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 ms.reviewer: ''
-description: Décrit les informations de confidentialité de Microsoft Defender pour endpoint sur iOS
+description: Décrit les informations de confidentialité de Microsoft Defender pour Endpoint sur iOS
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, ios, stratégie, vue d’ensemble
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: a232bd8d600df37d5b9b01921859556476ced345
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694472"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822369"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Informations de confidentialité - Microsoft Defender pour point de terminaison sur iOS
 
@@ -31,12 +31,12 @@ ms.locfileid: "52694472"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
 > Defender pour le point de terminaison sur iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l’appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
 
-Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender for Endpoint sur iOS sécurisé, à jour, en cours d’évaluation et pour prendre en charge le service.
+Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender pour point de terminaison sur iOS sécurisé, à jour, en cours d’évaluation et pour prendre en charge le service.
 
 Pour plus d’informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité des données de point [de terminaison.](data-storage-privacy.md)
 
@@ -47,11 +47,11 @@ Pour plus d’informations sur les questions de confidentialité les plus couran
 
 Les données requises sont constituées de données qui sont nécessaires pour que Defender for Endpoint sur iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications. 
 
-Voici une liste des types de données collectées : 
+Voici la liste des types de données collectées : 
 
 ### <a name="web-page-or-network-information"></a>Page Web ou informations réseau 
 
-- Nom de domaine du site web uniquement lorsqu’une connexion malveillante ou une page web est détectée. 
+- Nom de domaine et adresse IP du site web uniquement lorsqu’une connexion malveillante ou une page web est détectée. 
 
 ### <a name="device-and-account-information"></a>Informations sur l’appareil et le compte 
 
@@ -89,7 +89,7 @@ Les données facultatives incluent les données de diagnostic et les données de
 
 Les données de diagnostic facultatives incluent : 
 
-- Utilisation de l’application, de l’UC et du réseau pour Defender pour endpoint. 
+- Utilisation de l’application, du processeur et du réseau pour Defender pour endpoint. 
 
 - Fonctionnalités configurées par l’administrateur de Defender pour le point de terminaison. 
 

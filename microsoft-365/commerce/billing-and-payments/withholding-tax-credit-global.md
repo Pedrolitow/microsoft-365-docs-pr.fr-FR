@@ -19,13 +19,13 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 monikerRange: o365-worldwide
-ms.date: ''
-ms.openlocfilehash: 35d2fa579460d7ceee7929283ae8db082c4eb7d6
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.date: 05/27/2021
+ms.openlocfilehash: 1d18cd6e43a755661997e2b3a9a3295ef6f05de1
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689227"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822092"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-global-customers"></a>Demander un crédit pour la retenue d’impôt sur votre compte (clients globaux)
 
@@ -35,7 +35,7 @@ ms.locfileid: "52689227"
 
 Certains clients reçoivent des factures Web Direct (Azure et Microsoft 365) facturées par une entité Microsoft située dans un pays étranger. Si votre organisation effectue des paiements 2 frontières à cette entité, l’autorité fiscale de votre pays peut vous obliger à refuser une partie du paiement 2 frontière en tant que retenue d’impôt sur la revenu (WHT). Si vous avez retenu les taxes requises par votre autorité fiscale lors du versement de paiements à Microsoft, cet article explique le processus de revendication d’un crédit pour l’impôt retenu.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Pour les clients payant par facture qui paient par chèque ou par virement
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Pour les clients de paiement par facture qui paient par chèque ou par virement
 
 Si vous avez retenu des taxes lors du versement et déposé l’impôt retenu auprès de l’autorité fiscale concernée, vous devez soumettre une demande WHT pour effacer le solde en suspens dans votre compte.
 
@@ -73,7 +73,7 @@ En cas de problème avec votre demande, l’équipe de révision peut exiger des
 
 Une fois votre demande approuvée, elle est reflétée dans le cycle de facturation suivant. Le montant wht payé est inclus dans la section paiement de votre facture suivante. Le montant est également affiché sous le montant payé dans le portail client.
 
-**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre sur-paiement est remboursé sur votre carte de crédit.
+**Pour les clients qui paient par carte de crédit :** Une fois votre demande approuvée, votre paiement surpayé est remboursé sur votre carte de crédit.
 
 > [!IMPORTANT]
 >

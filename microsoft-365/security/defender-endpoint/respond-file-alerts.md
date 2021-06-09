@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ba48adcf93c5b768b2280729b33a1a7d361919cb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066193"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844069"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -44,7 +44,7 @@ Les actions de réponse s’exécutent le long de la partie supérieure de la pa
 - Arrêter et mettre en quarantaine le fichier
 - Ajouter un indicateur
 - Télécharger un fichier
-- Consulter un expert en menaces
+- Consulter un spécialiste des menaces
 - Centre de notifications
 
 Vous pouvez également soumettre des fichiers pour analyse approfondie, afin d’exécuter le fichier dans un bac à sable (sandbox) cloud sécurisé. Une fois l’analyse terminée, vous obtenez un rapport détaillé qui fournit des informations sur le comportement du fichier. Vous pouvez soumettre des fichiers pour analyse approfondie et lire les rapports passés en sélectionnant **l’onglet Analyse** approfondie. Il se trouve sous les cartes d’informations de fichier.
@@ -60,23 +60,23 @@ Certaines actions nécessitent certaines autorisations. Le tableau suivant décr
 
 Pour plus d’informations sur les rôles, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](user-roles.md)
 
-## <a name="stop-and-quarantine-files-in-your-network"></a>Arrêter et mettre en quarantaine des fichiers dans votre réseau
+## <a name="stop-and-quarantine-files-in-your-network"></a>Arrêter et mettre en quarantaine des fichiers de votre réseau
 
 Vous pouvez contenir une attaque dans votre organisation en arrêtant le processus malveillant et en mettre en quarantaine le fichier là où il a été observé.
 
 > [!IMPORTANT]
 > Vous pouvez uniquement prendre cette action si :
 >
-> - L’appareil sur qui vous exécutez l’action exécute Windows 10, version 1703 ou ultérieure
+> - L’appareil sur qui vous exécutez l’action Windows 10, version 1703 ou ultérieure
 > - Le fichier n’appartient pas aux éditeurs tiers de confiance ou n’est pas signé par Microsoft
-> - L’Antivirus Microsoft Defender doit au moins être en cours d’exécution en mode passif. Pour plus d’informations, [voir Compatibilité de l’Antivirus Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+> - Antivirus Microsoft Defender doit au moins être en cours d’exécution en mode passif. Pour plus d’informations, [voir Antivirus Microsoft Defender compatibilité.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
-**L’action** Arrêter et mettre en quarantaine le fichier inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
+L’action Arrêter **et mettre en** quarantaine le fichier inclut l’arrêt des processus en cours d’exécution, la mise en quarantaine des fichiers et la suppression de données persistantes telles que les clés de Registre.
 
-Cette action prend effet sur les appareils avec Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours.
+Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours.
 
 > [!NOTE]
-> Vous pourrez restaurer le fichier à partir de la quarantaine à tout moment.
+> Vous pourrez restaurer le fichier de quarantaine à tout moment.
 
 ### <a name="stop-and-quarantine-files"></a>Arrêter et mettre en quarantaine des fichiers
 
@@ -110,15 +110,15 @@ Cette action prend effet sur les appareils avec Windows 10, version 1703 ou ult�
 **Notification sur l’utilisateur de l’appareil**:</br>
 Lorsque le fichier est supprimé d’un appareil, la notification suivante s’affiche :
 
-![Image de la notification sur l’utilisateur de l’appareil](images/atp-notification-file.png)
+![Image de notification sur l’utilisateur de l’appareil](images/atp-notification-file.png)
 
 Dans la chronologie de l’appareil, un nouvel événement est ajouté pour chaque appareil où un fichier a été arrêté et mis en quarantaine.
 
 Un avertissement s’affiche avant l’implémentation de l’action pour les fichiers largement utilisés dans l’ensemble d’une organisation. Il s’agit de vérifier que l’opération est prévue.
 
-## <a name="restore-file-from-quarantine"></a>Restaurer le fichier de mise en quarantaine
+## <a name="restore-file-from-quarantine"></a>Restaurer un fichier à partir de la mise en quarantaine
 
-Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
+Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez déterminé qu’il est propre après un examen. Exécutez la commande suivante sur chaque appareil sur lequel le fichier a été mis en quarantaine.
 
 1. Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil :
 
@@ -135,14 +135,14 @@ Vous pouvez récupérer et supprimer un fichier de la quarantaine si vous avez d
 > [!NOTE]
 > Dans certains scénarios, **threatName** peut apparaître comme : EUS:Win32/CustomEnterpriseBlock!cl.
 >
-> Defender for Endpoint restaure tous les fichiers bloqués personnalisés qui ont été mis en quarantaine sur cet appareil au cours des 30 derniers jours.
+> Defender for Endpoint restaure tous les fichiers bloqués personnalisés mis en quarantaine sur cet appareil au cours des 30 derniers jours.
 
 > [!IMPORTANT]
 > Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
-## <a name="download-or-collect-file"></a>Télécharger ou collecter un fichier
+## <a name="download-or-collect-file"></a>Télécharger ou collecter un dossier
 
-La sélection **du fichier de téléchargement** dans les actions de réponse vous permet de télécharger une archive .zip locale protégée par mot de passe contenant votre fichier. Un volant s’affiche où vous pouvez enregistrer la raison du téléchargement du fichier et définir un mot de passe.
+La sélection **du fichier de téléchargement** dans les actions de réponse vous permet de télécharger une archive locale .zip par mot de passe contenant votre fichier. Un flyout s’affiche où vous pouvez enregistrer une raison pour télécharger le fichier et définir un mot de passe.
 
 Par défaut, vous ne pourrez pas télécharger les fichiers en quarantaine.
 
@@ -150,7 +150,7 @@ Par défaut, vous ne pourrez pas télécharger les fichiers en quarantaine.
 
 ### <a name="collect-files"></a>Collecter des fichiers
 
-Si un fichier n’est pas déjà stocké par Microsoft Defender pour le point de terminaison, vous ne pouvez pas le télécharger. Au lieu de cela, vous verrez un **bouton** Collecter le fichier au même emplacement. Si un fichier n’a pas été vu dans l’organisation au cours des 30 derniers **jours,** le fichier de collecte est désactivé.
+Si un fichier n’est pas déjà stocké par Microsoft Defender pour le point de terminaison, vous ne pouvez pas le télécharger. Au lieu de cela, vous verrez un bouton Collecter **le** fichier au même emplacement. Si un fichier n’a pas été vu dans l’organisation au cours des 30 derniers **jours,** le fichier de collecte est désactivé.
 > [!Important]
 > Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
 
@@ -160,11 +160,11 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 
 > [!IMPORTANT]
 >
-> - Cette fonctionnalité est disponible si votre organisation utilise l’Antivirus Microsoft Defender et si la protection cloud est activée. Pour plus d’informations, [voir Manage cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, [voir Manage cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 >
 > - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
-> - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables (PE), y compris les fichiers _.exe_ et _.dll._ La couverture sera étendue au fil du temps.
-> - Cette action de réponse est disponible pour les appareils sur Windows 10, version 1703 ou ultérieure.
+> - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables(PE), notamment les fichiers _.exe_ et _.dll_ portables. La couverture sera étendue au fil du temps.
+> - Cette action de réponse est disponible pour les appareils Windows 10 version 1703 ou ultérieure.
 > - La fonction autoriser ou bloquer ne peut pas être effectuée sur les fichiers si la classification du fichier existe sur le cache de l’appareil avant l’action autoriser ou bloquer.
 
 > [!NOTE]
@@ -172,9 +172,9 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 >
 > Il peut y avoir quelques minutes de latence entre le moment où l’action est prise et le fichier réel bloqué.
 
-### <a name="enable-the-block-file-feature"></a>Activer la fonctionnalité bloquer les fichiers
+### <a name="enable-the-block-file-feature"></a>Activer la fonctionnalité bloquer le fichier
 
-Pour commencer à bloquer des fichiers, vous devez d’abord activer la fonctionnalité Bloquer ou [autoriser dans  ](advanced-features.md) paramètres.
+Pour commencer à bloquer les fichiers, vous devez d’abord [activer  ](advanced-features.md) la fonctionnalité Bloquer ou autoriser dans Paramètres.
 ### <a name="allow-or-block-file"></a>Autoriser ou bloquer un fichier
 
 Lorsque vous ajoutez un hachage d’indicateur pour un fichier, vous pouvez choisir de lancer une alerte et de bloquer le fichier chaque fois qu’un appareil de votre organisation tente de l’exécuter.
@@ -187,31 +187,31 @@ Pour arrêter le blocage d’un fichier, supprimez l’indicateur. Vous pouvez l
 
 Vous pouvez également modifier les indicateurs à partir de la page **Paramètres,** sous **Indicateurs**  >  **de règles.** Les indicateurs sont répertoriés dans cette zone par le hachage de leur fichier.
 
-## <a name="consult-a-threat-expert"></a>Consulter un expert en menaces
+## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 
-Consultez un expert microsoft en matière de menaces pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Les experts microsoft en matière de menaces sont impliqués directement à partir du Centre de sécurité Microsoft Defender pour obtenir une réponse précise et opportune. Les experts fournissent des informations sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblée. Ils peuvent également fournir des informations sur les alertes ou un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
+Consultez un expert microsoft en matière de menaces pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft sont en action directement à partir du Centre de sécurité Microsoft Defender pour une réponse précise et opportune. Les experts fournissent des informations sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblée. Ils peuvent également fournir des informations sur les alertes ou un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
 
-Pour [plus d’informations, consultez un Expert en](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) menaces Microsoft.
+Pour [plus d’informations, consultez un expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) microsoft en matière de menaces.
 
-## <a name="check-activity-details-in-action-center"></a>Vérifier les détails de l’activité dans le centre de données
+## <a name="check-activity-details-in-action-center"></a>Vérifier les détails de l’activité dans le Centre de notifications
 
-Le **centre de données fournit** des informations sur les actions qui ont été entreprises sur un appareil ou un fichier. Vous pouvez afficher les détails suivants :
+Le **centre de sécurité fournit** des informations sur les actions qui ont été prises sur un appareil ou un fichier. Vous pouvez afficher les détails suivants :
 
 - Collection de packages d’examen
 - Analyse antivirus
 - Restriction d’application
 - Isolation de l’appareil
 
-Tous les autres détails connexes sont également affichés, tels que la date/l’heure de soumission, l’utilisateur qui envoie l’envoi, et si l’action a réussi ou échoué.
+Tous les autres détails connexes sont également affichés, tels que la date/l’heure de soumission, l’utilisateur à l’envoi et si l’action a réussi ou échoué.
 
-![Image du centre de actions avec des informations](images/action-center-details.png)
+![Image du centre de travail avec des informations](images/action-center-details.png)
 
-## <a name="deep-analysis"></a>Analyse approfondie
+## <a name="deep-analysis"></a>Analyse profonde
 
 Les enquêtes sur la cybersécurité sont généralement déclenchées par une alerte. Les alertes sont liées à un ou plusieurs fichiers observés qui sont souvent nouveaux ou inconnus. La sélection d’un fichier vous permet d’afficher l’affichage des fichiers dans lequel vous pouvez voir les métadonnées du fichier. Pour enrichir les données liées au fichier, vous pouvez envoyer le fichier pour analyse approfondie.
 
 La fonctionnalité d’analyse approfondie exécute un fichier dans un environnement cloud sécurisé et entièrement instrumenté. Les résultats de l’analyse approfondie montrent les activités du fichier, les comportements observés et les artefacts associés, tels que les fichiers supprimés, les modifications du Registre et la communication avec les fai.
-L’analyse approfondie prend actuellement en charge l’analyse complète des fichiers exécutables portables (notamment les fichiers _.exe_ et _.dll)._
+L’analyse approfondie prend actuellement en charge l’analyse complète des fichiers exécutables portables (notamment les fichiers _.exe_ et _.dll_ portables).
 
 L’analyse approfondie d’un fichier prend plusieurs minutes. Une fois l’analyse de fichier terminée, l’onglet Analyse approfondie se met à jour pour afficher un résumé et la date et l’heure des derniers résultats disponibles.
 
@@ -227,12 +227,12 @@ Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d
 **L’envoi** pour analyse approfondie est activé lorsque le fichier est disponible dans la collection d’exemples principal Defender for Endpoint, ou s’il a été observé sur un appareil Windows 10 qui prend en charge l’envoi à une analyse approfondie.
 
 > [!NOTE]
-> Seuls les fichiers de Windows 10 peuvent être collectés automatiquement.
+> Seuls les fichiers Windows 10 peuvent être collectés automatiquement.
 
-Vous pouvez également soumettre un exemple via le portail du Centre de sécurité [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si le  fichier n’a pas été observé sur un appareil Windows 10 et attendre que le bouton Envoyer pour une analyse approfondie soit disponible.
+Vous pouvez également soumettre un exemple via le portail du Centre de sécurité [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si le  fichier n’a pas été observé sur un appareil Windows 10 et attendre que le bouton Envoyer pour analyse approfondie devienne disponible.
 
 > [!NOTE]
-> En raison des flux de traitement principal dans le portail centre de sécurité Microsoft, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichier et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender pour le point de terminaison.
+> En raison des flux de traitement principal dans le portail du Centre de sécurité Microsoft, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichiers et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender for Endpoint.
 
 Lorsque l’exemple est collecté, Defender pour point de terminaison exécute le fichier dans un environnement sécurisé. Il crée ensuite un rapport détaillé des comportements observés et des artefacts associés, tels que les fichiers déposés sur les appareils, la communication avec les fai et les modifications du Registre.
 
@@ -241,7 +241,7 @@ Lorsque l’exemple est collecté, Defender pour point de terminaison exécute l
 1. Sélectionnez le fichier que vous souhaitez soumettre pour une analyse approfondie. Vous pouvez sélectionner ou rechercher un fichier dans l’un des affichages suivants :
 
     - Alertes : sélectionnez les liens de fichier dans **la description** ou **les détails** dans la chronologie de l’artefact
-    - **Liste des appareils** : sélectionnez les liens de fichiers dans la **section Description** **ou Détails** de **l’appareil dans l’organisation**
+    - **Liste des appareils** : sélectionnez les liens de fichiers dans la **section Description** **ou Détails** de l’appareil **dans l’organisation**
     - Zone de recherche : **sélectionnez Fichier** dans le menu déroulant et entrez le nom du fichier
 
 2. Dans **l’onglet Analyse approfondie** de l’affichage de fichier, sélectionnez **Envoyer.**
@@ -249,12 +249,12 @@ Lorsque l’exemple est collecté, Defender pour point de terminaison exécute l
    ![Vous pouvez uniquement envoyer des fichiers PE dans la section Détails du fichier](images/submit-file.png)
 
    > [!NOTE]
-   > Seuls les fichiers PE sont pris en charge, y compris les fichiers _.exe_ et _.dll._
+   > Seuls les fichiers PE sont pris en _charge,.exe_ et _.dll_ fichiers.
 
 Une barre de progression s’affiche et fournit des informations sur les différentes étapes de l’analyse. Vous pouvez ensuite afficher le rapport une fois l’analyse effectuée.
 
 > [!NOTE]
-> Selon la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée si aucun appareil Windows 10 en ligne n’est signalé à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
+> En fonction de la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a pas de Windows 10'appareil en ligne à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
 
 ### <a name="view-deep-analysis-reports"></a>Afficher des rapports d’analyse approfondie
 

@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez découvrir les rapports et les outils de dépannage disponibles pour les administrateurs Microsoft Exchange Online Protection des données (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625028"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841437"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapports et suivi des messages dans EOP
 
@@ -28,8 +28,8 @@ ms.locfileid: "52625028"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, EOP propose de nombreux rapports différents qui peuvent vous aider à déterminer l’état général et l’état de votre organisation. Il existe également des outils vous permettant de résoudre des problèmes liés à des événements spécifiques (comme un message n'arrivant pas aux destinataires appropriés) et des rapports d'audit pour vous aider à respecter les exigences de conformité.
 
@@ -46,18 +46,15 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online
 Pour plus d'informations, consultez les ressources suivantes :
 
 - [Microsoft 365 Rapports dans le Centre d’administration : Microsoft 365 groupes](../../admin/activity-reports/office-365-groups.md)
-
 - [Microsoft 365 Rapports dans le Centre d’administration - Activité de messagerie](../../admin/activity-reports/email-activity.md)
-
 - [Microsoft 365 Rapports dans le Centre d’administration - Utilisation des applications de messagerie](../../admin/activity-reports/email-apps-usage.md)
-
 - [Microsoft 365 Rapports dans le Centre d’administration - Utilisation des boîtes aux lettres](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Rapports de conformité & sécurité dans le Centre d’administration Microsoft 365 de sécurité
 
 Ces rapports améliorés offrent une expérience de rapport interactive pour les administrateurs EOP, qui inclut des informations récapitulatifs et la possibilité d’obtenir plus de détails.
 
-**Defender pour Office 365**: afficher des informations sur les liens sécurisés et les pièces jointes sécurisées qui font partie de Microsoft Defender pour Office 365.
+**Defender for Office 365**: afficher des informations sur les liens sécurisés et les pièces jointes sécurisées qui font partie de Microsoft Defender pour Office 365.
 
 **EOP**: afficher des informations sur les détections de programmes malveillants, les messages usurpés, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.
 

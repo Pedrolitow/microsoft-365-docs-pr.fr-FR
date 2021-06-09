@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9192662b8d4ed23a5903dddb555f07bf182ab17f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 0d44f59f69c590ecd8d61207de8784af3e32197d
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771500"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844885"
 ---
 # <a name="advanced-hunting-using-powershell"></a>Repérage avancé à l’aide de PowerShell
 
@@ -51,7 +51,7 @@ Vous devez d’abord [créer une application.](apis-intro.md)
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
->Pour plus d’informations, [voir la documentation PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+>Pour plus d’informations, [voir la documentation PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## <a name="get-token"></a>Obtenir un jeton
 
@@ -114,7 +114,7 @@ $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to yo
 
 Vous pouvez désormais utiliser les résultats de la requête.
 
-Pour obtenir les résultats de la requête au format CSV dans le fichier, file1.csv ci-dessous :
+Pour obtenir les résultats de la requête au format CSV dans un fichier, file1.csv ci-dessous :
 
 ```
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv

@@ -1,7 +1,7 @@
 ---
 title: Utiliser les API Microsoft Defender pour les points de terminaison
 ms.reviewer: ''
-description: Découvrez comment concevoir une application Windows pour obtenir un accès par programmation à Microsoft Defender pour Endpoint sans utilisateur.
+description: Découvrez comment concevoir une application Windows pour obtenir un accès par programme à Microsoft Defender pour Endpoint sans utilisateur.
 keywords: api, api de graphique, api pris en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, recherche avancée, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 876dddf7a68b9844dea6a30ff4ebbbe3c2b75b69
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769100"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844547"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Utiliser les API Microsoft Defender pour les points de terminaison
 
@@ -44,7 +44,7 @@ Si vous avez besoin d’un accès par programmation à Microsoft Defender pour e
 
 Si vous n’êtes pas sûr de l’accès dont vous avez besoin, lisez la [page Introduction.](apis-intro.md)
 
-Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous permettront d’automatiser les flux de travail et d’innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
 - Créer une application AAD
@@ -54,7 +54,7 @@ En règle générale, vous devez suivre les étapes suivantes pour utiliser les 
 Cette page explique comment créer une application AAD, obtenir un jeton d’accès à Microsoft Defender pour le point de terminaison et valider le jeton.
 
 >[!NOTE]
-> Lorsque vous accédez à l’API Microsoft Defender pour endpoint pour le compte d’un utilisateur, vous avez besoin de l’autorisation d’application et de l’autorisation utilisateur correctes.
+> Lorsque vous accédez à l’API Microsoft Defender for Endpoint pour le compte d’un utilisateur, vous avez besoin des autorisations d’application et d’utilisateur correctes.
 > Si vous n’êtes pas familiarisé avec les autorisations utilisateur sur Microsoft Defender pour le point de terminaison, voir Gérer l’accès au portail à l’aide du contrôle [d’accès basé sur les rôles.](rbac.md)
 
 >[!TIP]
@@ -87,9 +87,9 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
      Lorsque vous avez terminé, sélectionnez **Inscrire**.
 
-4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et attribuez-lui l’autorisation « Lire les alertes » :
+4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et à lui attribuer l’autorisation « Lire les alertes » :
 
-    - Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon  >    >   organisation > **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
+    - Dans la page de votre application, sélectionnez **Autorisations api** Ajouter des API d’autorisation que mon  >    >   organisation utilise > type **WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
 
     - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour l’voir apparaître.
 
@@ -109,7 +109,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
     - Sélectionner **Accorder le consentement**
 
-      **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner accordez **l’autorisation** pour que la nouvelle autorisation prenne effet.
+      **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner l’autorisation **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
 
       ![Image de l’octroi d’autorisations](images/grant-consent.png)
 
@@ -122,7 +122,7 @@ Cette page explique comment créer une application AAD, obtenir un jeton d’acc
 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 
-Pour plus d’informations sur les jetons AAD, voir [le didacticiel Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Pour plus d’informations sur les jetons AAD, voir [le didacticiel Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>Utilisation de C #
 
@@ -178,7 +178,7 @@ Vérifiez que vous avez reçu un jeton correct :
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Utiliser le jeton pour accéder à l’API Microsoft Defender for Endpoint
 
-- Choisissez l’API que vous souhaitez utiliser : API [Microsoft Defender pour point de terminaison prise en charge](exposed-apis-list.md)
+- Choisissez l’API que vous souhaitez utiliser - API [Microsoft Defender pour point de terminaison prise en charge](exposed-apis-list.md)
 - Définissez l’en-tête Authorization dans la requête HTTP que vous envoyez à « Bearer {token} » (le porteur est le schéma d’autorisation)
 - Le délai d’expiration du jeton est de 1 heure (vous pouvez envoyer plusieurs demandes avec le même jeton)
 

@@ -1,7 +1,7 @@
 ---
 title: Images d’un appareil
 description: Exigences relatives aux images lors de la commande de nouveaux appareils ou de la réutilisation d’appareils existants
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245503"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841281"
 ---
 # <a name="device-images"></a>Images d’un appareil
 
@@ -41,7 +41,7 @@ Si vous commandez un appareil à partir de HP qui a été approuvé comme [excep
 - Global : mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Bureau géré Microsoft, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Bureau géré Microsoft, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MmD Enablement*».
+Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Bureau géré Microsoft, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Bureau géré Microsoft, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MMD Enablement*».
 
 Les produits suivants sont actuellement activés pour Bureau géré Microsoft prise en charge :
 
@@ -52,7 +52,7 @@ Les produits suivants sont actuellement activés pour Bureau géré Microsoft pr
 - L15 Gen 1 (Intel)
 - L15 Gen 1 (AMD)
 - X1 Génération carbone 8
-- X1 Monde, génération 5
+- X1 Gen 5
 - T14 Gen 1 (Intel)
 - T14 Gen 1 (AMD)
 - T15 Génération 1
@@ -79,13 +79,13 @@ Les PC commerciaux HP livrés avec l’image hp Corporate Ready incluent un . Fi
 
 Ces étapes suppriment toutes les données sur l’appareil. Avant de commencer, vous devez donc les conserver.
 
-1. [Créez un lecteur USB amorçable](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) avec WinPE.
+1. [Créez un lecteur USB amorçable](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) avec WinPE.
 2. Copiez ces fichiers de C: \\ SOURCES sur le lecteur USB :
     - Fichier WIM de récupération d’usine (par exemple, HP \_ EliteBook \_ 840 \_ G7 \_ Notebook PC CR \_ \_ \_ 2004.wim)
     - DÉPLOYER. CMD
     - ReCreatePartitions.txt
 3. [Démarrage de l’appareil vers WinPE](https://store.hp.com/us/en/tech-takes/how-to-boot-from-usb-drive-on-windows-10-pcs) Lecteur USB.
-4. Dans une invite de commandes, exécutez [Diskpart.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/diskpart#additional-references).
+4. Dans une invite de commandes, exécutez [Diskpart.exe](/windows-server/administration/windows-commands/diskpart#additional-references).
 5. Dans Diskpart, exécutez, puis notez le numéro de disque de stockage `list disk` principal (généralement, Disque 0).
 6. Quittez Diskpart en tapant `exit` .
 7. Dans l’invite de commandes, exécutez , où sys_disk est le numéro de disque du disque de stockage principal que vous avez déterminé et recovery_wim est le nom de fichier `deploy.cmd <sys_disk> <recovery_wim>` du .   Fichier WIM que vous avez copié précédemment.
@@ -108,7 +108,7 @@ Bureau géré Microsoft a créé une image contenant des Windows 10 Professionne
 - Les pilotes et les mises à jour qualité sont ajoutés à Windows lors du déploiement à partir du lecteur USB.
 
 > [!NOTE]
-> Il est de votre responsabilité d’ajouter tous les pilotes nécessaires, d’effectuer tous les tests et de vous assurer qu’il n’y a aucun problème avec l’image finale déployée. Nous fournissons l’image universelle « telle qu’elle est », mais fournirons des conseils techniques et des réponses aux questions. Contactez MMDImage@microsoft.com.
+> Il est de votre responsabilité d’ajouter tous les pilotes nécessaires, d’effectuer tous les tests et de vous assurer qu’il n’y a aucun problème avec l’image finale déployée. Nous fournissons l’image universelle « telle qu’elle est », mais fournissons des conseils techniques et des réponses aux questions. Contactez MMDImage@microsoft.com.
 
 Envoyez des demandes pour le contenu et la documentation de l’image universelle en créant une demande de modification sur le [portail d’administration.](../get-started/access-admin-portal.md)
 

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment déplacer des utilisateurs entre des abonnements.
 ms.date: 07/01/2020
-ms.openlocfilehash: 0261ee15d16e895cb2552320097d8e6b396d5220
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 96ae6a589469004f2479edb2a4f8ed384b25f841
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333205"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822080"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Transférer des utilisateurs vers un autre abonnement
 
@@ -59,18 +59,18 @@ Vous devez être un administrateur général, une licence ou un administrateur d
 
 3. En haut, sélectionnez **Gérer les licences de produits.**
 
-4. Dans le **volet Gérer les licences de** produits, sélectionnez Remplacer et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs. 
+4. Dans le **volet Gérer les licences de** produits, sélectionnez **Remplacer**  et sélectionnez les licences que vous souhaitez attribuer aux utilisateurs.
 
 5. At the bottom, select **Save Changes** \> **Close**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous ne comptez pas réattribuer les licences inutilisées à d’autres [utilisateurs,](../../managed-desktop/get-started/assign-licenses.md)envisagez de supprimer les [licences](../../commerce/licenses/buy-licenses.md) de votre abonnement afin de ne pas payer plus de licences que nécessaire.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Supprimer des licences de votre abonnement](../licenses/buy-licenses.md) (article)\
 [Modifier les plans manuellement](change-plans-manually.md) (article)\
-[Comprendre les abonnements et les licences dans Microsoft 365 pour les entreprises](../licenses/subscriptions-and-licenses.md) (article)\
-[Acheter un autre abonnement Microsoft 365 pour les entreprises](../try-or-buy-microsoft-365.md) (article)
+[Comprendre les abonnements et les licences dans Microsoft 365 entreprise](../licenses/subscriptions-and-licenses.md) (article)\
+[Acheter un autre abonnement Microsoft 365 entreprise](../try-or-buy-microsoft-365.md) (article)
