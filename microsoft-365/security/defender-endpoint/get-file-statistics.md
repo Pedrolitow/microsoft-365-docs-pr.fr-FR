@@ -42,7 +42,7 @@ ms.locfileid: "52770204"
 Extrait les statistiques du fichier donné.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -79,7 +79,7 @@ lookBackHours | Int32 | Définit les heures pendant les recherches pour obtenir 
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite et si le fichier existe - 200 OK avec des données statistiques dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
+En cas de réussite et si le fichier existe : 200 - OK avec des données statistiques dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
 
 
 ## <a name="example"></a>Exemple

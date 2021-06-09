@@ -43,7 +43,7 @@ Récupère un [examen spécifique par](investigation.md) son ID.
 <br> L’ID peut être l’ID d’investigation ou l’ID d’alerte déclenchant l’enquête.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 

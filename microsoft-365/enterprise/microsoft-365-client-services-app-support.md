@@ -1,5 +1,5 @@
 ---
-title: Prise en charge des applications client et de services Microsoft 365
+title: Microsoft 365 prise en charge des applications client et de services
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Dans cet article, recherchez des détails sur la prise en charge des applications clientes et de services Microsoft 365.
+description: Dans cet article, recherchez des détails sur Microsoft 365 prise en charge des applications clientes et de services.
 ms.openlocfilehash: e380efffc1bf29cbd4d3a77d32e4d1f8b2994da3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,15 +22,15 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905007"
 ---
-# <a name="microsoft-365-client-and-services-app-support"></a>Prise en charge des applications client et de services Microsoft 365
+# <a name="microsoft-365-client-and-services-app-support"></a>Microsoft 365 prise en charge des applications client et de services
 
-Microsoft prend en charge un large éventail de fonctionnalités de sécurité, d’authentification et de conformité pour assurer la sécurité des données client et permet aux administrateurs informatiques de personnaliser les stratégies dans le Centre d’administration Microsoft 365 pour leurs utilisateurs. Les fonctionnalités suivantes ne sont qu’un sous-ensemble des nombreuses fonctionnalités d’entreprise que vous pouvez configurer en fonction de votre abonnement Microsoft 365.
+Microsoft prend en charge un large éventail de fonctionnalités de sécurité, d’authentification et de conformité pour assurer la sécurité des données client et permet aux administrateurs informatiques de personnaliser les stratégies dans le Centre d’administration Microsoft 365 pour leurs utilisateurs. Les fonctionnalités suivantes ne sont qu’un sous-ensemble des nombreuses fonctionnalités d’entreprise que vous pouvez configurer en fonction de Microsoft 365 abonnement.
 
 ## <a name="client-and-service-support"></a>Prise en charge du client et du service
 
 ### <a name="continuous-access-evaluation-preview"></a>Évaluation de l’accès continu (prévisualisation)
 
-L’évaluation de l’accès continu est implémentée en permettant aux services, tels qu’Exchange Online, SharePoint Online et Teams, de s’abonner à des événements critiques dans Azure Active Directory afin que ces événements soient évalués et appliqués en temps quasi réel. L’évaluation d’événement critique ne repose pas sur les stratégies d’accès conditionnel et est donc disponible dans n’importe quel client.
+L’évaluation de l’accès continu est implémentée en permettant aux services, tels que Exchange Online, SharePoint Online et Teams, de s’abonner à des événements critiques dans Azure Active Directory afin que ces événements soient évalués et appliqués quasiment en temps réel. L’évaluation d’événement critique ne repose pas sur les stratégies d’accès conditionnel et est donc disponible dans n’importe quel client.
 
 Les événements suivants sont actuellement évalués :
 
@@ -50,7 +50,7 @@ L’authentification basée sur les certificats (CBA) est l’utilisation d’un
 
 Certaines solutions traditionnelles fonctionnent uniquement pour les utilisateurs, telles que la biométrie et les mots de passe à accès unique. Avec l’authentification basée sur les certificats, la même solution peut être utilisée pour tous les points de terminaison ; utilisateurs, appareils et internet des objets (IoT) croissant.
 
-Pour plus d’informations sur l’authentification basée sur les certificats pour la prise en charge des applications clientes et de services, voir Prise en charge des applications [clientes Microsoft 365](microsoft-365-client-support-certificate-based-authentication.md): Authentification basée sur les certificats.
+Pour plus d’informations sur l’authentification basée sur les certificats pour la prise en charge des applications client et de services, voir Microsoft 365 [Client App Support: Certificate-based Authentication](microsoft-365-client-support-certificate-based-authentication.md).
 
 ### <a name="conditional-access"></a>Accès conditionnel
 
@@ -78,7 +78,7 @@ Lorsque vous prenez ces décisions d’accès, les stratégies peuvent effectuer
 
 Pour plus d’informations sur l’accès conditionnel pour la prise en charge des applications client et de services, voir :
 
-- [Prise en charge des applications clientes Microsoft 365 : accès conditionnel basé sur l’appareil](microsoft-365-client-support-conditional-access.md)
+- [Microsoft 365 Prise en charge des applications clientes : accès conditionnel basé sur l’appareil](microsoft-365-client-support-conditional-access.md)
 
 ### <a name="mobile-application-management"></a>Gestion des applications mobiles
 
@@ -98,7 +98,7 @@ Pour le contenu géré par l’organisation, vous pouvez appliquer des stratégi
 - Fournir la configuration de l’application pour gérer le comportement et les paramètres de l’application
 - Limiter l’application gérée à une identité définie en désactivant les fonctionnalités multi-identité ou l’utilisation personnelle
 
-Pour plus d’informations sur la gestion des applications mobiles avec Microsoft Intune, voir [Qu’est-ce que la](/mem/intune/apps/app-management) gestion des applications Microsoft Intune ?
+Pour plus d’informations sur la gestion des applications mobiles avec Microsoft Intune, voir [Qu’est-ce Microsoft Intune’application mobile ?](/mem/intune/apps/app-management)
 
 ### <a name="multi-factor-authentication"></a>Authentification multifacteur
 
@@ -108,24 +108,24 @@ Pour plus d’informations sur la gestion des applications mobiles avec Microsof
 - Possession (quelque chose qu’ils ont)
 - Inherence (quelque chose qu’ils sont)
 
-Pour plus d’informations sur l’authentification multifacteur pour la prise en charge des applications client et de services, voir Prise en charge des applications [clientes Microsoft 365](microsoft-365-client-support-multi-factor-authentication.md): authentification multifacteur.
+Pour plus d’informations sur l’authentification multifacteur pour la prise en charge des applications client et de services, voir Microsoft 365 [Client App Support: Multi-Factor Authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
 ### <a name="single-sign-on"></a>Authentification unique
 
-L' sign-on unique (SSO) ajoute sécurité et commodité lorsque vos utilisateurs se connectent aux applications dans Azure Active Directory. Avec l' sign-on unique, les utilisateurs se connectent une fois avec un compte pour accéder aux appareils joints au domaine AD DS (Active Directory Domain Services) locaux, aux applications SaaS (Software as a Service) et aux applications web de votre organisation.
+L' sign-on unique (SSO) ajoute sécurité et commodité lorsque vos utilisateurs se connectent à des applications dans Azure Active Directory. Avec l' sign-on unique, les utilisateurs se connectent une fois avec un compte pour accéder aux appareils joints au domaine AD DS (Active Directory Domain Services) locaux, aux applications SaaS (Software as a Service) et aux applications web de votre organisation.
 
-Pour plus d’informations sur l' sign-on unique pour la prise en charge des applications client et de services, voir Prise en charge des applications [clientes Microsoft 365 : Sign-on unique](microsoft-365-client-support-single-sign-on.md).
+Pour plus d’informations sur l' sign-on unique pour la prise en charge des applications client et de services, voir Microsoft 365 [Client App Support: Single Sign-on](microsoft-365-client-support-single-sign-on.md).
 
 ## <a name="services-support"></a>Prise en charge des services
 
 ### <a name="modern-authentication"></a>Authentification moderne
 
-L’authentification moderne permet aux clients de s’authentifier sur Office 365 et aux administrateurs clients d’appliquer des exigences d’authentification spécifiques au sein de la location Office 365, telles que :
+L’authentification moderne permet aux clients de s’authentifier par rapport à Office 365 et aux administrateurs clients d’appliquer des exigences d’authentification spécifiques au sein du client Office 365, tels que :
 
 - Prise en charge de l’authentification multifacteur pour l’interaction administrative avec le client et les services, et l’interaction de l’utilisateur final avec les applications et leurs données
 - Accès conditionnel
 - Se connecte au fournisseur d’identité tiers SAML
-- Connexion par carte à puce sur des ordinateurs personnels
+- Journal des cartes à puce sur des ordinateurs personnels
 - Authentification basée sur les certificats sur les appareils mobiles
 - Ne nécessite plus la transmission des informations d’identification sur l’authentification de base.
 
@@ -133,23 +133,23 @@ Pour plus d’informations sur la prise en charge des services d’authentificat
 
 ### <a name="azure-active-directory-conditional-access"></a>Accès conditionnel Azure Active Directory
 
-Les règles d’accès conditionnel Azure Active Directory (Azure AD) permettent aux clients de contrôler l’accès aux services en ligne, en fonction d’attributs tels que la conformité des appareils ou l’emplacement réseau. Les solutions suivantes peuvent être utilisées :
+Azure Active Directory d’accès conditionnel (Azure AD) permettent aux clients de contrôler l’accès aux services en ligne, en fonction d’attributs tels que la conformité des appareils ou l’emplacement réseau. Les solutions suivantes peuvent être utilisées :
 
 - Accès conditionnel basé sur l’authentification multifacteur Azure AD
 - Accès conditionnel basé sur l’emplacement Azure AD
 - Accès conditionnel basé sur l’appareil Azure AD
 
-Les règles d’accès conditionnel Azure AD sont appliquées par application et sont disponibles pour que les clients contrôlent l’accès en fonction de différentes conditions. À l’aide de la gestion des périphériques mobiles [(MDM) ou d’Intune,](/mem/intune/fundamentals/what-is-device-management)les clients doivent être en mesure de restreindre l’accès à Microsoft 365 uniquement aux utilisateurs qui utilisent un appareil de l’organisation ou qui ont inscrit leur appareil personnel pour la gestion. Par exemple, les clients peuvent configurer des règles d’accès conditionnel pour appliquer des contrôles tels que :
+Les règles d’accès conditionnel Azure AD sont appliquées par application et sont disponibles pour que les clients contrôlent l’accès en fonction de différentes conditions. À l’aide de la gestion des périphériques mobiles [(MDM) ou d’Intune,](/mem/intune/fundamentals/what-is-device-management)les clients doivent être en mesure de restreindre l’accès aux Microsoft 365 uniquement aux utilisateurs qui utilisent un appareil de l’organisation ou qui ont inscrit leur appareil personnel pour la gestion. Par exemple, les clients peuvent configurer des règles d’accès conditionnel pour appliquer des contrôles tels que :
 
 - Autoriser uniquement l’accès à partir d’appareils joints à un domaine ou conformes à un domaine
-- Appliquer l’authentification multifacteur pour tout accès aux services Exchange Online
+- Appliquer l’authentification multifacteur pour tout accès Exchange Online services
 
-Pour plus d’informations sur l’accès conditionnel Azure Active Directory, voir [qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview)
+Pour plus d’informations sur Azure Active Directory l’accès conditionnel, voir [Qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview)
 
 ### <a name="tls-12-support"></a>Prise en charge de TLS 1.2
 
-Pour fournir le meilleur chiffrement de classe à nos clients, Microsoft prévoit d’arrêter la prise en charge des versions TLS 1.0 et 1.1 dans Office 365 et Office 365 GCC.
+Pour fournir le meilleur chiffrement de classe à nos clients, Microsoft prévoit d’arrêter la prise en charge des versions TLS 1.0 et 1.1 dans Office 365 et Office 365 Cloud de la communauté du secteur public.
 
-Nous savons que la sécurité de vos données est importante et nous nous engageons à assurer la transparence des modifications susceptibles d’affecter votre utilisation du service TLS. Il est recommandé que toutes les combinaisons client-serveur et navigateur-serveur utilisent TLS 1.2 (ou une version ultérieure) pour maintenir la connexion aux services Office 365. Il se peut que vous deviez procéder à la mise à jour de certaines combinaisons client-serveur et navigateur-serveur.
+Nous savons que la sécurité de vos données est importante et nous nous engageons à assurer la transparence des modifications susceptibles d’affecter votre utilisation du service TLS. Il est recommandé que toutes les combinaisons client-serveur et navigateur-serveur utilisent TLS 1.2 (ou une version ultérieure) pour maintenir la connexion à Office 365 services. Il se peut que vous deviez procéder à la mise à jour de certaines combinaisons client-serveur et navigateur-serveur.
 
-Pour plus d’informations sur la prise en charge de TLS 1.2 et la prise en charge des services, voir Préparation de [TLS 1.2 dans Office 365 et Office 365 GCC](../compliance/prepare-tls-1.2-in-office-365.md).
+Pour plus d’informations sur la prise en charge de TLS 1.2 et la prise en charge des services, voir Préparation de [TLS 1.2](../compliance/prepare-tls-1.2-in-office-365.md)dans Office 365 et Office 365 Cloud de la communauté du secteur public .

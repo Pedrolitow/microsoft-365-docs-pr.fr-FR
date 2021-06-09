@@ -1,5 +1,5 @@
 ---
-title: API Des indicateurs de liste
+title: API d’indicateurs de liste
 description: Découvrez comment utiliser l’API Indicateurs de liste pour récupérer une collection de tous les indicateurs actifs dans Microsoft Defender pour point de terminaison.
 keywords: api, api publique, api pris en charge, collection d’indicateurs
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770422"
 ---
-# <a name="list-indicators-api"></a>API Des indicateurs de liste
+# <a name="list-indicators-api"></a>API d’indicateurs de liste
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ Extrait une collection de tous les indicateurs [actifs.](ti-indicator.md)
 <br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 
 
 
@@ -75,7 +75,7 @@ Vide
 Si elle réussit, cette méthode renvoie le code de réponse 200, Ok avec une collection [d’entités Indicator.](ti-indicator.md)
 
 >[!Note]
-> Si l’application dispose de l’autorisation « Ti.ReadWrite.All », elle sera exposée à tous les indicateurs. Sinon, il sera exposé uniquement aux indicateurs qu’il a créés.
+> Si l’application dispose de l’autorisation « Ti.ReadWrite.All » , elle est exposée à tous les indicateurs. Sinon, il sera exposé uniquement aux indicateurs qu’il a créés.
 
 ## <a name="example-1"></a>Exemple 1 :
 

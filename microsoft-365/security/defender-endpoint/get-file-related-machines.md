@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les ordinateurs liés aux fichiers
-description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à un fichier pour obtenir une collection d’ordinateurs liés à un hachage de fichier dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des ordinateurs liés à un fichier pour obtenir une collection d’ordinateurs liés à un hachage de fichier dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, appareils, hachage
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -39,10 +39,10 @@ ms.locfileid: "52770276"
 
 
 ## <a name="api-description"></a>Description de l’API
-Récupère une collection [d’ordinateurs liés](machine.md) à un hachage de fichier donné.
+Récupère une collection [d’ordinateurs](machine.md) associés à un hachage de fichier donné.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -59,7 +59,7 @@ Déléguée (compte professionnel ou scolaire) | Machine.ReadWrite | « Lire et 
 >[!Note]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
->- La réponse inclut uniquement les appareils, accessibles par l’utilisateur, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
+>- La réponse inclut uniquement les appareils, accessibles par l’utilisateur, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 ```

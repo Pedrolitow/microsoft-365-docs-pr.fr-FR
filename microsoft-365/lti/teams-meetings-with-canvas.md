@@ -25,7 +25,7 @@ ms.locfileid: "52821890"
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Microsoft Teams réunions est une application LTI (Learning Tools Interoperability) qui permet aux enseignants et aux étudiants de naviguer facilement entre leur système de gestion de l’apprentissage (LMS) et Teams. Les utilisateurs peuvent accéder à leurs équipes de cours associées à leur cours directement à partir de leur LMS.
+Microsoft Teams réunions est une application d’interopérabilité des outils d’apprentissage (LTI) qui permet aux enseignants et aux étudiants de naviguer facilement entre leur système de gestion de l’apprentissage (LMS) et Teams. Les utilisateurs peuvent accéder à leurs équipes de cours associées à leur cours directement à partir de leur LMS.
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 Administrateur
 
@@ -49,7 +49,7 @@ Avant de gérer l’intégration Microsoft Teams dans Instructure Canvas, il est
 
 7. Sélectionnez **Accepter**.
  
-8. Activez la synchronisation Microsoft Teams l’utilisateur en activé le basculement.
+8. Activez la synchronisation Microsoft Teams l’utilisateur en activer le basculement.
 
    ![teams-sync](media/teams-sync.png)
 
@@ -59,7 +59,7 @@ Configurer l’Microsoft Teams’intégration LTI 1.3.
 
 En tant qu’administrateur de zone de dessin, vous devez ajouter l’application LTI Microsoft Teams réunions au sein de votre environnement. Notez l’ID client LTI de l’application.
 
- - Microsoft Teams réunions - 170000000000703
+ - Microsoft Teams réunions - 17000000000703
 
 1. Access **Admin settings**  >  **Apps**.
 
@@ -73,7 +73,7 @@ En tant qu’administrateur de zone de dessin, vous devez ajouter l’applicatio
 
 4. Entrez l’ID client fourni, puis sélectionnez **Envoyer.**
    
-   Vous remarquerez le nom Microsoft Teams’application LTI des réunions pour l’ID client pour confirmation. 
+   Vous remarquerez que le nom Microsoft Teams’application LTI des réunions pour l’ID client pour confirmation. 
 
 5. Sélectionnez **Installer**.
 

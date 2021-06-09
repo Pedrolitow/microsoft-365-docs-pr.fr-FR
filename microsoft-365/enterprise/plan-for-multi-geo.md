@@ -81,6 +81,6 @@ Pour commencer à configurer Microsoft 365 Multi-Geo, voir [Configurer Microsoft
 
 Une fois que vous avez terminé la configuration, n’oubliez pas de [migrer les bibliothèques OneDrive de vos utilisateurs](move-onedrive-between-geo-locations.md) pour permettre à ceux-ci de travailler à partir de leur emplacement par défaut des données.
 
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Configuration eDiscovery dans Microsoft 365 Multi-Geo](./multi-geo-ediscovery-configuration.md)

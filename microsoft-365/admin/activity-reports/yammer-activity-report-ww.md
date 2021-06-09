@@ -48,7 +48,7 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Élément|Description|
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur. Vous pouvez afficher l'adresse de courrier réelle ou rendre ce champ anonyme. Cette grille affiche les utilisateurs qui se sont connectés Yammer à l’aide du compte Microsoft 365 ou qui se sont connectés au réseau à l’aide de l' sign-on unique. <br/> |
@@ -57,7 +57,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |Date de changement d’état (UTC)  <br/> |Date à laquelle l’état de l’utilisateur a été modifié Yammer.  <br/> |
 |Date de la dernière activité (UTC)  <br/> | Date de la dernière fois que l’utilisateur a publié, lu ou aimé un message.  <br/> |
 |Publié  <br/> |Nombre de messages publiés par l’utilisateur pendant la période que vous avez spécifiée. <br/>|
-|Lire  <br/> |Nombre de conversations lues par l’utilisateur pendant la période que vous avez spécifiée.  <br/> |
+|Lecture  <br/> |Nombre de conversations lues par l’utilisateur pendant la période que vous avez spécifiée.  <br/> |
 |Aimé  <br/> |Nombre de messages que l’utilisateur a aimés pendant la période que vous avez spécifiée.  <br/>|
 |Produit affecté  <br/> |Produits affectés à cet utilisateur.|
 |||

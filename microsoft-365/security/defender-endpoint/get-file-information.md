@@ -1,6 +1,6 @@
 ---
 title: API Obtenir des informations sur les fichiers
-description: Découvrez comment utiliser l’API Obtenir des informations sur le fichier pour obtenir un fichier par l’identificateur Sha1, Sha256 ou MD5 dans Microsoft Defender for Endpoint.
+description: Découvrez comment utiliser l’API Obtenir des informations sur le fichier pour obtenir un fichier par identificateur Sha1, Sha256 ou MD5 dans Microsoft Defender pour endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, fichier, informations, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -42,7 +42,7 @@ ms.locfileid: "52770289"
 Récupère un fichier [par](files.md) identificateur Sha1 ou Sha256
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 

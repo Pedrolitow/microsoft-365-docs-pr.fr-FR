@@ -45,21 +45,21 @@ Par exemple, vous pouvez comprendre l'activité de chaque utilisateur titulaire 
 
 Vous pouvez afficher les activités dans le rapport SharePoint en choisissant **l’onglet** Activité.<br/>![Microsoft 365- Rapport d’activité SharePoint Microsoft.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
-Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![SharePoint d’activité : choisir des colonnes](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
+Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes dans le rapport.  <br/> ![SharePoint d’activité de l’entreprise : choisir des colonnes](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Élément|Description|
+|Item|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
-|Nom d’utilisateur  <br/> |Adresse de messagerie de l’utilisateur qui a effectué l’activité sur le SharePoint site.  <br/> |
+|Nom d’utilisateur  <br/> |Adresse e-mail de l’utilisateur qui a effectué l’activité sur SharePoint site.  <br/> |
 |Date de la dernière activité (UTC)  <br/> |Date à laquelle une activité de fichier a été effectuée au plus tard ou à laquelle une page a été visitée pour la plage de dates sélectionnée. Pour voir l'activité qui s'est produite à une date spécifique, sélectionnez celle-ci directement dans le graphique.  <br/> |
 |Fichiers consultables ou modifiés  <br/> |Nombre de fichiers téléchargés, téléchargés, modifiés ou visionés par l’utilisateur.   <br/> |
 |Fichiers synchronisés  <br/> |Nombre de fichiers qui ont été synchronisés à partir de l’appareil local d’un utilisateur vers SharePoint site. <br/> |
 |Fichiers partagés en interne  <br/> | Nombre de fichiers partagés avec des utilisateurs au sein de l’organisation ou avec des utilisateurs au sein de groupes (qui peuvent inclure des utilisateurs externes).  <br/> |
 |Fichiers partagés en externe  <br/> |Nombre de fichiers partagés avec des utilisateurs extérieurs à l’organisation. <br/>|
 |Pages visitées  <br/> |Visites de pages uniques par l’utilisateur. <br/>|
-|Deleted  <br/> | Cela indique que la licence de l’utilisateur a été supprimée.  <br/>  **REMARQUE :** L’activité d’un utilisateur supprimé s’affiche toujours dans le rapport tant qu’il a été titulaire d’une licence à un moment ou un autre pendant la période sélectionnée. La colonne Supprimé permet de voir que, si l'utilisateur n'est peut-être plus actif, il a été pris en compte dans les données du rapport.  <br/> |
+|Supprimé  <br/> | Cela indique que la licence de l’utilisateur a été supprimée.  <br/>  **REMARQUE :** L’activité d’un utilisateur supprimé s’affiche toujours dans le rapport tant qu’il a été titulaire d’une licence à un moment ou un autre pendant la période sélectionnée. La colonne Supprimé permet de voir que, si l'utilisateur n'est peut-être plus actif, il a été pris en compte dans les données du rapport.  <br/> |
 |Date de suppression  <br/> |Date à laquelle la licence de l’utilisateur a été supprimée. <br/>|
-|Produit affecté  <br/> |Les Microsoft 365 qui sont sous licence pour l’utilisateur.|
+|Produit affecté  <br/> |Les Microsoft 365 produits sous licence à l’utilisateur.|
 |||

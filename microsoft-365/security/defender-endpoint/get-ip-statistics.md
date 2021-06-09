@@ -1,6 +1,6 @@
 ---
 title: API Obtenir des statistiques IP
-description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour endpoint.
+description: Obtenez les dernières statistiques de votre adresse IP à l’aide de Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, ip, statistiques, prévalence
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -40,7 +40,7 @@ ms.locfileid: "52770084"
 ## <a name="api-description"></a>Description de l’API
 Récupère les statistiques de l’adresse IP donnée.
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations

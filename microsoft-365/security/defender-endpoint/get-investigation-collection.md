@@ -1,6 +1,6 @@
 ---
 title: API Enquêtes de liste
-description: Utilisez cette API pour créer des appels liés à l’utilisation de la collection Investigations
+description: Utilisez cette API pour créer des appels liés à l’accès à la collection Investigations
 keywords: api, api de graphique, api pris en charge, collection Investigations
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -45,7 +45,7 @@ Récupère une collection [d’enquêtes.](investigation.md)
 <br>Voir des exemples [dans les requêtes OData avec Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. La taille maximale de page est de 10 000.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure. 
 

@@ -18,19 +18,19 @@ ms.locfileid: "51887226"
 ---
 # <a name="reporting-info-for-bookings"></a>Informations de rapport pour Bookings
 
-Vous pouvez maintenant voir une vue de quatre mois de votre calendrier Bookings dans un fichier TSV. Le fichier TSV affiche quatre mois de données, mais vous pouvez sélectionner différentes périodes de quatre mois au cours d'une année.
+Vous pouvez maintenant voir une vue de quatre mois de votre calendrier Bookings dans un fichier TSV. Le fichier TSV affiche quatre mois de données, mais vous pouvez sélectionner différentes périodes de quatre mois au cours d’une année.
 
-Ces informations de niveau de rendez-vous peuvent être utilisées pour visualiser l'activité des clients autour de votre calendrier Bookings. Les fichiers TSV sont des fichiers de valeurs séparées par des onglets. Vous pouvez afficher ou modifier un fichier comme celui-ci avec n'importe quel éditeur de texte ou programme de feuille de calcul, tel qu'Excel.
+Ces informations de niveau de rendez-vous peuvent être utilisées pour visualiser l’activité des clients autour de votre calendrier Bookings. Les fichiers TSV sont des fichiers de valeurs séparées par des onglets. Vous pouvez afficher ou modifier un fichier comme celui-ci à l’aide d’un éditeur de texte ou d’un programme de feuilles de calcul, Excel.
 
-## <a name="see-four-months-of-booking-activity"></a>Voir quatre mois d'activité de réservation
+## <a name="see-four-months-of-booking-activity"></a>Voir quatre mois d’activité de réservation
 
 1. Dans le tableau de bord du calendrier Bookings, **sélectionnez Exporter plus de données en tant que TSV.**
 
-:::image type="content" source="../media/bookings-activities.png" alt-text="Capture d'écran : 4 mois d'activité Bookings":::
+:::image type="content" source="../media/bookings-activities.png" alt-text="Capture d’écran : 4 mois d’activité Bookings":::
 
-1. Enregistrez le fichier sous un nouveau nom et spécifiez le format .xls ou xlsx.
+1. Enregistrez le fichier sous un nouveau nom et spécifiez .xls format xlsx.
 
-1. Ouvrez le fichier pour afficher l'affichage de quatre mois de votre calendrier Bookings.
+1. Ouvrez le fichier pour afficher l’affichage de quatre mois de votre calendrier Bookings.
 
 1. Choisissez la date de votre rapport et sélectionnez **Exporter.**
 
@@ -43,11 +43,11 @@ Le rapport inclut les champs suivants.
  - **Date Heure**
 - **Nom du client**
 - **Courrier électronique client**
-- **Téléphone client**
+- **Client Téléphone**
 - **Adresse du client**
 - **Personnel**
 - **Service**
-- **Emplacement**
+- **Location**
 - **Durée (minutes)**
 - **Type d’événement**
 
@@ -56,8 +56,8 @@ Le rapport amélioré contient désormais les champs suivants.
 - **Type de tarification**   Type de tarification par défaut pour un service lors de la création du service.
 - **Prix**   Prix correspondant au type de tarification choisi.
 - **Devise**   Type de devise pour une entreprise.
-- **Participants Cc**   Destinataires qui reçoivent les notifications par courrier électronique pour une réservation. Cela peut être spécifié à partir de l'application Teams lors de la création d'une réservation.
+- **Participants Cc**   Destinataires qui reçoivent les notifications par courrier électronique pour une réservation. Cela peut être spécifié à partir de l’application Teams lors de la création d’une réservation.
 - **Nombre de participants inscrits**   Nombre de clients qui ont réservé un service de réservation de groupe.
-- **Notifications texte activées**   Si les clients peuvent recevoir des notifications textuelles SMS.
+- **Notifications texte activées**   Si les clients peuvent recevoir SMS notifications textuelles.
 - **Champs personnalisés**   Toutes les questions et réponses relatives à une seule réservation sont combinées dans ce champ.
-- **ID de réservation**   Cela est utile pour identifier les mêmes réservations d'un service de groupe.
+- **ID de réservation**   Cela est utile pour identifier les mêmes réservations d’un service de groupe.

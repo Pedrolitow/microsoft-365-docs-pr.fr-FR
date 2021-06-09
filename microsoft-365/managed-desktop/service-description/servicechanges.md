@@ -1,7 +1,7 @@
 ---
 title: Modifications de service et communication
 description: Comment les modifications apportées au service se produisent et sont communiquées
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo

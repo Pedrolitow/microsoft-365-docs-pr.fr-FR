@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: Comment une organisation globale fictive mais représentative a adopté Microsoft 365 pour entreprise.
+description: Comment une organisation globale fictive mais représentative a adopté Microsoft 365 entreprise.
 ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,11 +23,11 @@ ms.locfileid: "50927579"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 entreprise pour Contoso Corporation
 
-Microsoft 365 pour entreprise est l’offre cloud microsoft la plus élevée qui combine des applications et des services de productivité locaux et basés sur le cloud avec Windows 10 Entreprise et des fonctionnalités de sécurité avancées. Il s’agit d’une solution complète et intelligente qui permet à tout le monde de collaborer de façon créative et sécurisée.
+Microsoft 365 entreprise est l’offre cloud microsoft de premier niveau qui combine des applications et des services de productivité locaux et basés sur le cloud avec des fonctionnalités Windows 10 Entreprise de sécurité avancées. Il s’agit d’une solution complète et intelligente qui permet à tout le monde de collaborer de façon créative et sécurisée.
 
-Contoso Corporation est un conglomérat de production international fictif mais représentatif dont le siège social est à Paris. La société a déployé Microsoft 365 pour entreprise et a pris des décisions de conception majeures et des détails d’implémentation pour la mise en réseau, l’identité, Windows 10 Entreprise, Microsoft 365 Apps pour entreprise, la gestion des appareils mobiles, la protection des informations et la sécurité.
+Contoso Corporation est un conglomérat de production international fictif mais représentatif dont le siège social est à Paris. L’entreprise a déployé Microsoft 365 entreprise et a pris des décisions de conception majeures et des détails d’implémentation pour la mise en réseau, l’identité, les Windows 10 Entreprise, les Applications Microsoft 365 pour les grandes entreprises, la gestion des appareils mobiles, la protection des informations et la sécurité.
 
-L’objectif global de l’entreprise pour Microsoft 365 pour entreprise est d’accélérer sa transformation numérique à l’aide des services cloud pour rassembler ses employés, partenaires, données et processus afin de créer une valeur client et maintenir son avantage concurrentiel dans un monde avant tout numérique.
+L’objectif global de l’entreprise pour Microsoft 365 entreprise est d’accélérer sa transformation numérique à l’aide des services cloud pour rassembler ses employés, partenaires, données et processus pour créer une valeur client et maintenir son avantage concurrentiel dans un monde avant tout numérique.
 
 Reportez-vous aux articles suivants pour plus d’informations :
 
@@ -53,7 +53,7 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
 - [Applications Microsoft 365 pour les entreprises](contoso-o365pp.md)
 
-  L’infrastructure Contoso pour Microsoft 365 Apps for enterprise déploie et installe automatiquement les mises à jour de la suite Microsoft Office logiciels de productivité.
+  L’infrastructure Contoso pour Applications Microsoft 365 pour les grandes entreprises déploie et installe automatiquement les mises à jour pour Microsoft Office suite de logiciels de productivité.
 
 - [Gestion des appareils mobiles](contoso-mdm.md)
 
@@ -61,11 +61,11 @@ Reportez-vous aux articles suivants pour plus d’informations :
 
 - [Protection des informations](contoso-info-protect.md)
 
-  Pour s’assurer que les données communes et les données à valeur élevée sont identifiées, étiquetées et soumises à des couches de sécurité, Contoso applique ses stratégies de sécurité des données avec Microsoft 365 pour la protection des informations d’entreprise.
+  Pour s’assurer que les données communes et les données à valeur élevée sont identifiées, étiquetées et soumises à des couches de sécurité, Contoso applique ses stratégies de sécurité des données avec des Microsoft 365 pour la protection des informations d’entreprise.
 
-- [Résumé de microsoft 365 pour la sécurité d’entreprise](contoso-security-summary.md)
+- [Résumé des Microsoft 365 pour la sécurité d’entreprise](contoso-security-summary.md)
 
-  Contoso utilise l’éventail complet de Microsoft 365 pour les fonctionnalités de sécurité d’entreprise pour la gestion des identités et des accès, la protection contre les menaces, la protection des informations et la gestion de la sécurité.
+  Contoso utilise la gamme complète des fonctionnalités Microsoft 365 sécurité d’entreprise pour la gestion des identités et des accès, la protection contre les menaces, la protection des informations et la gestion de la sécurité.
 
 Consultez les scénarios et configurations supplémentaires suivants :
 
@@ -83,15 +83,15 @@ Consultez les scénarios et configurations supplémentaires suivants :
 
 - [Stratégie de langage choquant de conformité des communications](../compliance/communication-compliance-case-study.md)
 
-  Découvrez comment Contoso a rapidement configuré une stratégie de langage choquant pour microsoft Teams, Exchange et Yammer communications.
+  Découvrez comment Contoso a rapidement configuré une stratégie de langage choquant pour Microsoft Teams, Exchange et Yammer communications.
 
 ## <a name="next-step"></a>Étape suivante
 
-Découvrez [Contoso Corporation](contoso-overview.md) et les considérations de conception qui ont été abordées lors du déploiement de Microsoft 365 pour entreprise.
+Découvrez [Contoso Corporation et](contoso-overview.md) les considérations de conception qui ont été traitées lors du déploiement Microsoft 365 entreprise.
 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

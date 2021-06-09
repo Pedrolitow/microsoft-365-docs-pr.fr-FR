@@ -42,7 +42,7 @@ ms.locfileid: "52770296"
 Récupère une collection d’alertes liées à un hachage de fichier donné.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
