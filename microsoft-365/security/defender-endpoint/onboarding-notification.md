@@ -1,5 +1,5 @@
 ---
-title: Créer une règle de notification d’intégration ou de mise horsboard
+title: Créer une règle de notification d’intégration ou de retrait
 description: Recevoir une notification lorsqu’un script d’intégration ou de mise hors-carte local est utilisé.
 keywords: intégration, offboarding, local, script, notification, règle
 search.product: eADQiWindows 10XVcnh
@@ -30,7 +30,7 @@ ms.locfileid: "51187231"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,8 +44,8 @@ Créez une règle de notification afin que, lorsqu’un script d’intégration 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 Vous devez avoir accès à :
- - Microsoft Flow (plan de flux 1 au minimum). Pour plus d’informations, voir [la page de tarification du flux.](https://flow.microsoft.com/pricing/)
- - Table ou liste Ou bibliothèque SharePoint Azure / SQL DB
+ - Microsoft Flow (Flow plan 1 au minimum). Pour plus d’informations, [voir Flow page de tarification.](https://flow.microsoft.com/pricing/)
+ - Liste ou bibliothèque azure SharePoint ou bibliothèque/SQL DB
 
 ## <a name="create-the-notification-flow"></a>Créer le flux de notification
 
@@ -73,11 +73,11 @@ Vous devez avoir accès à :
    - Méthode : « GET » comme valeur pour obtenir la liste des appareils.
    - URI : Entrez `https://api.securitycenter.microsoft.com/api/machines` .
    - Authentification : sélectionnez « Active Directory OAuth ».
-   - Client : connectez-vous à Azure Active Directory et accédez à >'application et obtenez la valeur https://portal.azure.com de l’ID de locataire. 
+   - Client : connectez-vous et accédez à Azure Active Directory > inscriptions d’application et obtenez la valeur https://portal.azure.com de l’ID de client. 
    - Public : `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - ID client : connectez-vous et accédez à https://portal.azure.com **Azure Active Directory pour >'application** et obtenir la valeur de l’ID client.
+   - ID client : connectez-vous et accédez à Azure Active Directory >'inscription de l’application et obtenez la valeur https://portal.azure.com de l’ID client. 
    - Type d’informations d’identification : sélectionnez « Secret ».
-   - Secret : connectez-vous à Azure Active Directory et accédez à >'application et obtenez la valeur https://portal.azure.com de l’ID de client. 
+   - Secret : connectez-vous et accédez à https://portal.azure.com **Azure Active Directory > inscriptions d’application** et obtenez la valeur de l’ID de client.
 
     ![Image des conditions HTTP](images/http-conditions.png)
 
@@ -176,9 +176,9 @@ Vous devez avoir accès à :
 
     ```
 
-10.  Extrayez les valeurs de l’appel JSON et vérifiez si le ou les appareils intégrés sont / sont déjà inscrits dans la liste SharePoint à titre d’exemple :
+10.  Extrayez les valeurs de l’appel JSON et vérifiez si le ou les appareils intégrés sont / sont déjà inscrits dans la liste SharePoint par exemple :
 - Si oui, aucune notification ne sera déclenchée
-- Si non, enregistre les nouveaux appareils intégrés dans la liste SharePoint et une notification est envoyée à l’administrateur De Defender pour le point de terminaison
+- Si non, enregistre le ou les nouveaux appareils intégrés dans la liste SharePoint et une notification est envoyée à l’administrateur de Defender for Endpoint
 
     ![Image d’application à chaque](images/flow-apply.png)
 

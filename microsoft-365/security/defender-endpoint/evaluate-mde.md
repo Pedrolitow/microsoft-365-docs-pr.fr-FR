@@ -1,7 +1,7 @@
 ---
-title: Évaluer Microsoft Defender pour le point de terminaison
+title: Évaluer Microsoft Defender pour point de terminaison
 ms.reviewer: ''
-description: Évaluez les différentes fonctionnalités de sécurité dans Microsoft Defender pour le point de terminaison.
+description: Évaluez les différentes fonctionnalités de sécurité dans Microsoft Defender pour point de terminaison.
 keywords: réduction de la surface d’attaque, évaluer, suivant, génération, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,20 +17,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d13f13872954978a14454d8f3c0e66970606bd21
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: e7f065c5f42b62885c3c0fde7b402490f86ec2ba
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218782"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843197"
 ---
-# <a name="evaluate-microsoft-defender-for-endpoint"></a>Évaluer Microsoft Defender pour le point de terminaison 
+# <a name="evaluate-microsoft-defender-for-endpoint"></a>Évaluer Microsoft Defender pour point de terminaison 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -45,17 +45,17 @@ Vous pouvez également évaluer les différentes fonctionnalités de sécurité 
 Ces fonctionnalités permettent d’empêcher les attaques et les exploitations d’infecter votre organisation.
 
 - [Évaluer la réduction de la surface d’attaque](./evaluate-attack-surface-reduction.md)
-- [Évaluer Exploit Protection](./evaluate-exploit-protection.md)
+- [Évaluer exploit protection](./evaluate-exploit-protection.md)
 - [Évaluer la protection du réseau](./evaluate-exploit-protection.md)
 - [Évaluer l’accès contrôlé aux dossiers](./evaluate-controlled-folder-access.md)
-- [Évaluer Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
-- [Évaluer le pare-feu réseau](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
+- [Évaluer Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
+- [Évaluer le pare-feu réseau](/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
 
 ## <a name="evaluate-next-generation-protection"></a>Évaluer la protection nouvelle génération
 
-Les protections de nouvelle génération permettent de détecter et de bloquer les dernières menaces.
+Les protections de nouvelle génération permettent de détecter et de bloquer les menaces les plus récentes.
 
-- [Évaluer l’antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
+- [Évaluer l’antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus)
 
 ## <a name="see-also"></a>Voir aussi
 

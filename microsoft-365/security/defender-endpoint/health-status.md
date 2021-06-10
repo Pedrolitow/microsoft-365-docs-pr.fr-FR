@@ -1,5 +1,5 @@
 ---
-title: Examiner les problèmes d’état de l’agent
+title: Rechercher les problèmes d’état d’intégrité de l’agent
 description: En savoir plus sur les valeurs renvoyées lors de l’exécution de la commande d’état d’état mdatp
 keywords: mdatp health, command, health, status, command, onboarding status
 search.product: eADQiWindows 10XVcnh
@@ -23,16 +23,16 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52281175"
 ---
-# <a name="investigate-agent-health-issues"></a>Examiner les problèmes d’état de l’agent
+# <a name="investigate-agent-health-issues"></a>Rechercher les problèmes d’état d’intégrité de l’agent
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-Le tableau suivant fournit des informations sur les valeurs renvoyées lorsque vous exécutez `mdatp health` la commande et leurs descriptions correspondantes.
+Le tableau suivant fournit des informations sur les valeurs renvoyées lorsque vous exécutez la `mdatp health` commande et leurs descriptions correspondantes.
 
 | Valeur | Description |
 |-|-|
@@ -55,7 +55,7 @@ Le tableau suivant fournit des informations sur les valeurs renvoyées lorsque v
 | licensed | True si l’appareil est intégré à un client, false dans le cas contraire. |
 | log_level | Niveau de journal actuel du produit. |
 | machine_guid | Identificateur unique de l’ordinateur utilisé par le composant antivirus. |
-| network_protection_status                 | État du composant de protection réseau (macOS uniquement). Peut être l’une des valeurs suivantes :       <br> <br>- **démarrage** : la protection réseau démarre  <br> <br>     - **failed_to_start** - Impossible de démarrer la protection réseau en raison d’une erreur   <br> <br>    - **démarré** - La protection du réseau est en cours d’exécution sur l’appareil     <br> <br>  - **redémarrage** : la protection du réseau est en cours de redémarrage   <br> <br>    - **arrêt :** la protection du réseau s’arrête     <br> <br>  - **arrêté -** La protection du réseau n’est pas en cours d’exécution |
+| network_protection_status                 | État du composant de protection réseau (macOS uniquement). Peut être l’une des valeurs suivantes :       <br> <br>- **démarrage** : la protection réseau démarre  <br> <br>     - **failed_to_start** - La protection réseau n’a pas pu être démarrée en raison d’une erreur   <br> <br>    - **démarré** - La protection du réseau est en cours d’exécution sur l’appareil     <br> <br>  - **redémarrage** : la protection du réseau est en cours de redémarrage   <br> <br>    - **arrêt :** la protection du réseau s’arrête     <br> <br>  - **arrêté -** La protection du réseau n’est pas en cours d’exécution |
 | org_id | Organisation à qui l’appareil est intégré. Si l’appareil n’est pas encore intégré à une organisation, l’impression est indisponible. Pour plus d’informations sur l’intégration, voir [Onboard to Microsoft Defender for Endpoint](onboarding.md). |
 | passive_mode_enabled | True si le composant antivirus est définie pour s’exécuter en mode passif, false dans le cas contraire. |
 | product_expiration | Date et heure d’expiration de la prise en charge de la version actuelle du produit. |

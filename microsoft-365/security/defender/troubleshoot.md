@@ -39,7 +39,7 @@ Cette section traite des problèmes qui peuvent survenir lorsque vous utilisez l
 
 ## <a name="i-dont-see-microsoft-365-defender-content"></a>Je ne vois pas le Microsoft 365 Defender
 
-Si vous ne voyez pas de fonctionnalités dans le volet de navigation, telles que les incidents, le centre de action ou le hunting dans votre portail, vous devez vérifier que votre client dispose des licences appropriées.
+Si vous ne voyez pas de fonctionnalités dans le volet de navigation, telles que les incidents, le centre de gestion des actions ou le hunting dans votre portail, vous devez vérifier que votre client dispose des licences appropriées.
 
 Si vous souhaitez en savoir plus, consultez la page[Conditions préalables](prerequisites.md).
 
@@ -51,7 +51,7 @@ Pour plus d’informations, [voir Microsoft Defender pour l’intégration de l�
 
 ## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>Où se trouve la page des paramètres pour l’ment du service ?
 
-Pour activer Microsoft 365 Defender, accédez **Paramètres** à partir du volet de navigation dans le centre Microsoft 365 de sécurité. Cet élément de navigation n’est visible que si vous avez les [autorisations et licences requises.](m365d-enable.md#check-license-eligibility-and-required-permissions)
+Pour activer Microsoft 365 Defender, accédez **Paramètres** à partir du volet de navigation dans le centre Microsoft 365 de sécurité. Cet élément de navigation n’est visible que si vous avez les autorisations et [licences requises.](m365d-enable.md#check-license-eligibility-and-required-permissions)
 
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Comment créer une exception pour mon fichier/URL ?
 

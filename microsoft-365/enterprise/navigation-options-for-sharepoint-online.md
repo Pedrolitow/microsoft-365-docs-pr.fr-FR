@@ -30,16 +30,16 @@ ms.locfileid: "50923623"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Options de navigation pour SharePoint Online
 
-Cet article décrit les sites d’options de navigation avec la publication SharePoint activée dans SharePoint Online. Le choix et la configuration de la navigation ont un impact significatif sur les performances et l’évolutivité des sites dans SharePoint Online. Le modèle de site de publication SharePoint ne doit être utilisé que si nécessaire pour un portail centralisé et la fonctionnalité de publication ne doit être activée que sur des sites spécifiques et uniquement en cas d’absolue nécessité, car elle peut avoir un impact sur les performances en cas d’utilisation incorrecte.
+Cet article décrit les sites d’options de navigation avec la publication SharePoint activée dans SharePoint Online. Le choix et la configuration de la navigation ont un impact significatif sur les performances et l’évolutivité des sites SharePoint Online. Le modèle de site de publication SharePoint ne doit être utilisé que si nécessaire pour un portail centralisé et la fonctionnalité de publication ne doit être activée que sur des sites spécifiques et uniquement en cas d’absolue nécessité, car elle peut avoir un impact sur les performances en cas d’utilisation incorrecte.
 
 >[!NOTE]
->Si vous utilisez des options de navigation SharePoint modernes telles que le méga-menu, la navigation en cascade ou la navigation de hub, cet article ne s’applique pas à votre site. Les architectures de site SharePoint modernes tirent parti d’une hiérarchie de sites plus aplatie et d’un modèle de hub-and-spoke. Cela permet d’atteindre de nombreux scénarios qui ne nécessitent PAS l’utilisation de la fonctionnalité de publication SharePoint.
+>Si vous utilisez des options de navigation SharePoint modernes telles que le méga-menu, la navigation en cascade ou la navigation de hub, cet article ne s’applique pas à votre site. Les SharePoint architectures de site modernes tirent parti d’une hiérarchie de sites plus aplatie et d’un modèle de hub-and-spoke. Cela permet d’atteindre de nombreux scénarios qui ne nécessitent PAS l’utilisation de la fonctionnalité SharePoint publication.
 
 ## <a name="overview-of-navigation-options"></a>Vue d’ensemble des options de navigation
 
 La configuration du fournisseur de navigation peut avoir un impact significatif sur les performances de l’ensemble du site, et il est important de prendre en compte le choix d’un fournisseur de navigation et d’une configuration qui s’dimensionnent efficacement pour les besoins d’un site SharePoint. Il existe deux fournisseurs de navigation pré-personnalisés, ainsi que des implémentations de navigation personnalisées.
 
-La première option, la [**navigation**](#using-structural-navigation-in-sharepoint-online)structurelle, est l’option de navigation recommandée dans SharePoint Online pour les sites Sharepoint classiques, si vous allumez la mise en cache de navigation structurelle **pour votre site.** Ce fournisseur de navigation affiche les éléments de navigation sous le site actuel, et éventuellement le site actuel et ses frères. Il offre des fonctionnalités supplémentaires telles que le trimming de sécurité et l’éumération de la structure du site. Si la mise en cache est désactivée, cela a un impact négatif sur les performances et l’évolutivité, et peut être soumis à une limitation.
+La première option, la [**navigation**](#using-structural-navigation-in-sharepoint-online)structurelle, est l’option de navigation recommandée dans SharePoint Online pour les sites Sharepoint classiques, si vous allumez la mise en cache de navigation structurelle pour **votre site.** Ce fournisseur de navigation affiche les éléments de navigation sous le site actuel, et éventuellement le site actuel et ses frères. Il offre des fonctionnalités supplémentaires telles que le trimming de sécurité et l’éumération de la structure du site. Si la mise en cache est désactivée, cela a un impact négatif sur les performances et l’évolutivité, et peut être soumis à une limitation.
 
 La deuxième option, [**navigation gérée (métadonnées),**](#using-managed-navigation-and-metadata-in-sharepoint-online)représente les éléments de navigation à l’aide d’un ensemble de termes métadonnées gérées. Nous vous recommandons de désactiver le contrôle de sécurité sauf si cela est nécessaire. Le trimming de sécurité est activé en tant que paramètre sécurisé par défaut pour ce fournisseur de navigation . toutefois, de nombreux sites ne nécessitent pas la surcharge du contrôle de sécurité, car les éléments de navigation sont souvent cohérents pour tous les utilisateurs du site. Avec la configuration recommandée pour désactiver le trimming de sécurité, ce fournisseur de navigation ne nécessite pas d’éumerating la structure du site et est hautement évolutif avec un impact acceptable sur les performances.
 
@@ -61,11 +61,11 @@ L’option la plus appropriée pour votre site dépend des besoins de votre site
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analyse des performances de navigation dans SharePoint Online
 
-L’outil Diagnostic de page pour [SharePoint](./page-diagnostics-for-spo.md) est une extension de navigateur pour les navigateurs Microsoft Edge et Chrome qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication classiques. Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
+[L’outil Diagnostic de page pour SharePoint](./page-diagnostics-for-spo.md) est une extension de navigateur pour les navigateurs Microsoft Edge et Chrome qui analyse à la fois le portail moderne SharePoint Online et les pages de site de publication classiques. Cet outil fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur SharePoint page système.
 
-L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfiny de règles et affiche des informations détaillées lorsque les résultats d’un test sont en dehors de la valeur de référence. Les administrateurs et concepteurs SharePoint Online peuvent utiliser l’outil pour résoudre les problèmes de performances afin de s’assurer que les nouvelles pages sont optimisées avant la publication.
+L’outil génère un rapport pour chaque page analysée montrant comment la page fonctionne par rapport à un ensemble prédéfiny de règles et affiche des informations détaillées lorsque les résultats d’un test sont en dehors de la valeur de référence. SharePoint Les administrateurs et concepteurs en ligne peuvent utiliser l’outil pour résoudre les problèmes de performances afin de s’assurer que les nouvelles pages sont optimisées avant la publication.
 
-**SPRequestDuration, en** particulier, est le temps qu’il faut à SharePoint pour traiter la page. La navigation lourde (par exemple, inclure des pages dans la navigation), les hiérarchies de sites complexes et d’autres options de configuration et de topologie peuvent contribuer considérablement à des durées plus longues.
+**SPRequestDuration, en** particulier, est le temps qu’il faut SharePoint pour traiter la page. La navigation lourde (par exemple, inclure des pages dans la navigation), les hiérarchies de sites complexes et d’autres options de configuration et de topologie peuvent contribuer considérablement à des durées plus longues.
 
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>Utilisation de la navigation structurelle dans SharePoint Online
 
@@ -73,15 +73,15 @@ Il s’agit de la navigation pré-adaptée utilisée par défaut et de la soluti
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Comment implémenter la mise en cache de navigation structurelle
 
-Sous **l’apparence des paramètres** du site, vous pouvez vérifier si la navigation structurelle est sélectionnée pour la  >    >  navigation globale ou la navigation actuelle. La sélection de **pages Afficher** aura un impact négatif sur les performances.
+Sous **Site Paramètres** Look and Feel Navigation , vous pouvez vérifier si la navigation structurelle est sélectionnée pour la navigation globale ou la navigation  >    >  actuelle. La sélection de **pages Afficher** aura un impact négatif sur les performances.
 
 ![Navigation structurelle avec afficher les sous-sites sélectionnés](../media/SPONavOptionsStructuredShowSubsites.png)
 
-La mise en cache peut être activée ou désactivée au niveau de la collection de sites et au niveau du site, et est activée pour les deux par défaut. Pour activer au niveau de la collection de sites, sous **Paramètres** du site Administration de la collection de sites Navigation dans la collection de sites, activez la case à cocher  >    >  Activer **la mise en cache.**
+La mise en cache peut être activée ou désactivée au niveau de la collection de sites et au niveau du site, et est activée pour les deux par défaut. Pour activer au niveau de la collection de sites, sous **Site Paramètres** Site Collection Administration Site  >    >  **Collection Navigation,** activez la case à cocher Activer la mise **en cache.**
 
 ![Activer la mise en cache au niveau du site](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-Pour activer au niveau du site, sous Navigation des **paramètres** du site, activez la case à cocher  >  Activer la mise en **cache.**
+Pour activer au niveau du site, sous **Navigation Paramètres** site, activez la case à cocher Activer la mise  >  en **cache.**
 
 ![Activer la mise en cache au niveau du site](../media/structural-nav/structural-nav-caching-site.png)
 
@@ -93,7 +93,7 @@ Si vous avez besoin d’activer le contrôle de sécurité, nous vous recommando
 
 - Mettre à jour tous les liens d’URL conviviales vers des liens simples
 - Ajouter les nodes de contrôle de sécurité requis en tant qu’URL conviviales
-- Limiter le nombre d’éléments de navigation à 100 et pas plus de 3 niveaux de profondeur
+- Limiter le nombre d’éléments de navigation à 100 et pas plus de 3 niveaux
 
 De nombreux sites ne nécessitent pas de contrôle de sécurité, car la structure de navigation est souvent cohérente pour tous les utilisateurs du site. Si le contrôle de sécurité est désactivé et qu’un lien est ajouté à la navigation à l’accès de tous les utilisateurs, le lien s’affiche toujours, mais entraîne un message de refus d’accès. Il n’y a aucun risque d’accès par inadvertance au contenu.
 
@@ -101,9 +101,9 @@ De nombreux sites ne nécessitent pas de contrôle de sécurité, car la structu
 
 Il existe plusieurs articles sur docs.microsoft.com sur les détails de la navigation gérée. Par exemple, voir [Vue d’ensemble de la navigation gérée dans SharePoint Server.](/sharepoint/administration/overview-of-managed-navigation)
 
-Pour implémenter la navigation gérée, vous devez configurer des termes avec des URL correspondant à la structure de navigation du site. La navigation gérée peut même être organisée manuellement pour remplacer la navigation structurelle dans de nombreux cas. Par exemple :
+Pour implémenter la navigation gérée, vous devez configurer des termes avec des URL correspondant à la structure de navigation du site. La navigation gérée peut même être organisée manuellement pour remplacer la navigation structurelle dans de nombreux cas. Par exemple :
 
-![Structure de site SharePoint Online](../media/SPONavOptionsListOfSites.png))
+![SharePoint Structure de site en ligne](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>Utilisation de scripts côté client pilotés par la recherche
 
@@ -117,15 +117,15 @@ Ces fournisseurs de navigation ont deux avantages clés :
 
 Un exemple de fournisseur de données consiste à utiliser une **navigation** pilotée par la recherche, ce qui permet d’éumer les nodes de navigation et de gérer efficacement le tri de sécurité.
 
-Il existe d’autres options populaires pour créer **des fournisseurs de navigation personnalisés.** Consultez les solutions de navigation pour les [portails SharePoint Online](/sharepoint/dev/solution-guidance/portal-navigation) pour obtenir des instructions supplémentaires sur la création d’un fournisseur de navigation personnalisé.
+Il existe d’autres options populaires pour créer **des fournisseurs de navigation personnalisés.** Consultez les solutions de navigation pour SharePoint Online pour obtenir des [instructions](/sharepoint/dev/solution-guidance/portal-navigation) supplémentaires sur la création d’un fournisseur de navigation personnalisé.
 
-À l’aide de la recherche, vous pouvez tirer parti des index qui sont créés en arrière-plan à l’aide de l’analyse continue. Les résultats de la recherche sont obtenus à partir de l’index de recherche et les résultats sont découpés en sécurité. Cela est généralement plus rapide que les fournisseurs de navigation pré-requis lorsque le contrôle de sécurité est requis. L’utilisation de la recherche pour la navigation structurelle, en particulier si vous avez une structure de site complexe, accélérera considérablement le temps de chargement des pages. Le principal avantage de cette navigation gérée est que vous bénéficiez du trimming de sécurité.
+À l’aide de la recherche, vous pouvez tirer parti des index qui sont créés en arrière-plan à l’aide de l’analyse continue. Les résultats de la recherche sont obtenus à partir de l’index de recherche et les résultats sont découpés en sécurité. Cela est généralement plus rapide que les fournisseurs de navigation pré-requis lorsque le tri de sécurité est requis. L’utilisation de la recherche pour la navigation structurelle, en particulier si vous avez une structure de site complexe, accélérera considérablement le temps de chargement des pages. Le principal avantage de cette navigation gérée est que vous bénéficiez du trimming de sécurité.
 
-Cette approche implique la création d’une page maître personnalisée et le remplacement du code de navigation pré-personnalisé par du code HTML personnalisé. Suivez cette procédure décrite dans l’exemple suivant pour remplacer le code de navigation dans le fichier `seattle.html` . Dans cet exemple, vous allez ouvrir le `seattle.html` fichier et remplacer l’élément entier par du code HTML `id="DeltaTopNavigation"` personnalisé.
+Cette approche implique la création d’une page maître personnalisée et le remplacement du code de navigation pré-personnalisé par du code HTML personnalisé. Suivez cette procédure décrite dans l’exemple suivant pour remplacer le code de navigation dans le `seattle.html` fichier. Dans cet exemple, vous allez ouvrir le `seattle.html` fichier et remplacer l’élément entier par du code HTML `id="DeltaTopNavigation"` personnalisé.
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Exemple : Remplacer le code de navigation pré-encadré dans une page maître
 
-1. Accédez à la page Paramètres du site.
+1. Accédez à la page Paramètres site.
 2. Ouvrez la galerie de pages maîtres en cliquant sur **Pages maîtres.**
 3. À partir de là, vous pouvez naviguer dans la bibliothèque et télécharger le `seattle.master` fichier.
 4. Modifiez le code à l’aide d’un éditeur de texte et supprimez le bloc de code dans la capture d’écran suivante.<br/>![Supprimer le bloc de code affiché](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
@@ -221,7 +221,7 @@ Dans notre exemple de navigation complexe, une nouvelle charge de page sans la m
 ### <a name="about-the-javascript-file"></a>À propos du fichier JavaScript...
 
 >[!NOTE]
->Si vous utilisez javaScript personnalisé, assurez-vous que le CDN public est activé et que le fichier se trouve dans un emplacement CDN.
+>Si vous utilisez javaScript personnalisé, assurez-vous que les CDN public sont activés et que le fichier se trouve à un CDN’emplacement.
 
 L’intégralité du fichier JavaScript est la suivante :
 
@@ -468,7 +468,7 @@ Les objets sont ensuite placés dans un tableau de résultats. Ce tableau est en
 
 ### <a name="benefits-of-this-approach"></a>Avantages de cette approche
 
-L’un [](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) des principaux avantages de cette approche est qu’en utilisant le stockage local HTML5, la navigation est stockée localement pour l’utilisateur lors du prochain chargement de la page. L’utilisation de l’API de recherche pour la navigation structurelle nous permet d’obtenir des améliorations majeures en matière de performances. Toutefois, il faut une certaine capacité technique pour exécuter et personnaliser cette fonctionnalité.
+L’un [](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) des principaux avantages de cette approche est qu’en utilisant le stockage local HTML5, la navigation est stockée localement pour l’utilisateur lors du prochain chargement de la page. L’utilisation de l’API de recherche pour la navigation structurelle nous permet d’obtenir des améliorations majeures en matière de performances. Toutefois, l’exécution et la personnalisation de cette fonctionnalité prennent des fonctions techniques.
 
 Dans [l’exemple d’implémentation,](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)les sites sont ordonnés de la même manière que la navigation structurelle pré-ant. par ordre alphabétique. Si vous souhaitez vous dévier de cet ordre, il serait plus compliqué de développer et de maintenir. En outre, cette approche nécessite que vous déviiez des pages maîtres pris en charge. Si la page maître personnalisée n’est pas conservée, votre site manquera les mises à jour et les améliorations apportées par Microsoft aux pages maîtres.
 
@@ -543,7 +543,7 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 
 ```
   
-## <a name="related-topics"></a>Rubriques connexes
+## <a name="related-topics"></a>Voir aussi
 
 [Vue d'ensemble de la navigation gérée dans SharePoint Server](/sharepoint/administration/overview-of-managed-navigation)
 

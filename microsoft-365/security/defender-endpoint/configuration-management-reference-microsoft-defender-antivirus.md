@@ -39,7 +39,7 @@ Vous pouvez gérer et configurer les Antivirus Microsoft Defender à l’aide de
 - [Stratégie de groupe](./use-group-policy-microsoft-defender-antivirus.md)
 - [Cmdlets PowerShell](./use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [WMI (Windows Management Instrumentation)](./use-wmi-microsoft-defender-antivirus.md)
-- Utilitaire de ligne de commande microsoft de protection contre les programmes [malveillants](./command-line-arguments-microsoft-defender-antivirus.md) (appelé *utilitairempcmdrun.exe* logiciel
+- Utilitaire [de ligne de commande](./command-line-arguments-microsoft-defender-antivirus.md) microsoft de protection contre les programmes malveillants (appelé utilitaire *mpcmdrun.exe* logiciel
 
 Les articles suivants fournissent des informations supplémentaires, des liens et des ressources pour l’utilisation de ces outils pour gérer et configurer Antivirus Microsoft Defender.
 

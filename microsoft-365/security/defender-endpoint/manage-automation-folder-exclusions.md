@@ -1,5 +1,5 @@
 ---
-title: Gérer les exclusions de dossiers d’automatisation
+title: Gérer les exclusions du dossier d’automatisation
 description: Ajoutez des exclusions de dossier d’automatisation pour contrôler les fichiers exclus d’un examen automatisé.
 keywords: gérer, automatisation, exclusion, bloquer, nettoyer, malveillant
 search.product: eADQiWindows 10XVcnh
@@ -23,16 +23,16 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185836"
 ---
-# <a name="manage-automation-folder-exclusions"></a>Gérer les exclusions de dossiers d’automatisation 
+# <a name="manage-automation-folder-exclusions"></a>Gérer les exclusions du dossier d’automatisation 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 Les exclusions de dossiers Automation vous permettent de spécifier les dossiers que l’examen automatisé ignorera. 
 
@@ -59,13 +59,13 @@ Vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un r
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>Ajouter une exclusion de dossier d’automatisation
-1. Dans le volet de navigation, sélectionnez **Exclusions** du dossier Settings  >  **Automation.**  
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **exclusions de dossier Automation.**  
 
 2. Cliquez **sur Exclusion de nouveau dossier.**  
 
 3. Entrez les détails du dossier :
 
-    - Folder
+    - Dossier
     - Extensions
     - Noms de fichiers
     - Description
@@ -77,17 +77,17 @@ Vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un r
 > Les commandes Live Response pour collecter ou examiner les fichiers exclus échouent avec l’erreur : « Le fichier est exclu ». En outre, les examens automatisés ignorent les éléments exclus.
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Modifier une exclusion de dossier d’automatisation 
-1. Dans le volet de navigation, sélectionnez **Exclusions** du dossier Settings  >  **Automation.** 
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **exclusions de dossier Automation.** 
 
 2. Cliquez **sur Modifier** sur l’exclusion de dossier.  
 
 3. Mettez à jour les détails de la règle et cliquez sur **Enregistrer.**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Supprimer une exclusion de dossier d’automatisation 
-1. Dans le volet de navigation, sélectionnez **Exclusions** du dossier Settings  >  **Automation.**  
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **exclusions de dossier Automation.**  
 2. Cliquez sur **Supprimer l’exclusion.** 
 
 
 ## <a name="related-topics"></a>Voir aussi
 - [Gérer les listes d’automatisation autorisées/bloquées](manage-indicators.md)
-- [Gérer les téléchargements de fichiers d’automatisation](manage-automation-file-uploads.md)
+- [Gérer les chargements du fichier d’automatisation](manage-automation-file-uploads.md)

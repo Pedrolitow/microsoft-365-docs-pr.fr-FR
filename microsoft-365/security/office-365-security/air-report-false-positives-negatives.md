@@ -1,6 +1,6 @@
 ---
 title: Comment signaler des faux positifs ou des faux négatifs à la suite d’un examen automatisé dans Microsoft Defender pour Office 365
-description: Un problème a-t-il été manqué ou détecté à tort par AIR dans Microsoft Defender pour Office 365 ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
+description: Un problème a-t-il été manqué ou détecté à tort par AIR dans Microsoft Defender Office 365 ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
 keywords: automatisé, examen, alerte, déclencheur, action, correction, faux positif, faux négatif
 search.appverid: met150
 ms.mktglfcycl: deploy
@@ -35,9 +35,9 @@ ms.locfileid: "52275083"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si des fonctionnalités d’investigation et de réponse automatisées [(AIR)](automated-investigation-response-office.md) Office 365 manquées ou détectées à tort, il existe des étapes que votre équipe des opérations de sécurité peut suivre pour résoudre ce problème. Ces actions sont les suivantes :
+Si des fonctionnalités d’investigation et de réponse automatisées [(AIR)](automated-investigation-response-office.md) dans Office 365 manquées ou détectées à tort, il existe des étapes que votre équipe des opérations de sécurité peut prendre pour résoudre ce problème. Ces actions sont les suivantes :
 
 - [Signalement d’un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Ajustement des alertes](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si nécessaire) ; et
@@ -66,7 +66,7 @@ Dans la plupart des cas, si une action corrective a été prise sur un message �
 
 ### <a name="undo-an-action-using-threat-explorer"></a>Annuler une action à l’aide de l’Explorateur de menaces
 
-Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut trouver un message électronique affecté par une action et éventuellement annuler l’action.
+Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut rechercher un message électronique affecté par une action et éventuellement annuler l’action.
 
 |Scénario|Options d’annuler|En savoir plus|
 |---|---|---|
@@ -74,7 +74,7 @@ Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peu
 |Un message électronique ou un fichier a été mis en quarantaine|- Libérer le courrier électronique ou le fichier<br/>- Supprimer le courrier électronique ou le fichier|[Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)|
 |
 
-### <a name="undo-an-action-in-the-action-center"></a>Annuler une action dans le centre de l’action
+### <a name="undo-an-action-in-the-action-center"></a>Annuler une action dans le centre de données
 
 Dans le centre de correction, vous pouvez voir les actions de correction qui ont été prises et éventuellement annuler l’action.
 

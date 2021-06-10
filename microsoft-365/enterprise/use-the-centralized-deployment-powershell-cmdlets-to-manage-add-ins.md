@@ -19,7 +19,7 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Utilisez les cmdlets PowerShell de déploiement centralisé pour vous aider à déployer et gérer des add-ins Office pour votre organisation Microsoft 365.
+description: Utilisez les cmdlets PowerShell de déploiement centralisé pour vous aider à déployer et gérer des Office pour votre Microsoft 365 organisation.
 ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "50924671"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Utiliser les cmdlets PowerShell de déploiement centralisé pour gérer les add-ins
 
-En tant qu’administrateur général Microsoft 365, vous pouvez déployer des add-ins Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir Déployer des [add-ins Office](../admin/manage/manage-deployment-of-add-ins.md)dans le Centre d’administration). En plus de déployer des compléments Office via le Centre d’administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+En tant qu’administrateur général Microsoft 365, vous pouvez déployer des Office pour les utilisateurs via la fonctionnalité Déploiement centralisé (voir [Déployer](../admin/manage/manage-deployment-of-add-ins.md)des Office dans le Centre d’administration). En plus de déployer Office compléments via le centre d’administration Microsoft 365, vous pouvez également utiliser Microsoft PowerShell. Installez le [module de déploiement centralisé O365 Add-In pour Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
 
 Après avoir téléchargé le module, ouvrez une fenêtre Windows PowerShell et exécutez l’cmdlet suivante :
 
@@ -37,19 +37,19 @@ Après avoir téléchargé le module, ouvrez une fenêtre Windows PowerShell et 
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>Se connecter à l’aide de vos informations d’identification d’administrateur
+## <a name="connect-using-your-admin-credentials"></a>Connecter à l’aide de vos informations d’identification d’administrateur
 
 Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vous inscrire.
   
 1. Démarrez PowerShell.
     
-2. Connectez-vous à PowerShell à l’aide des informations d’identification d’administrateur de votre entreprise. Exécutez l’cmdlet suivante.
+2. Connecter powerShell à l’aide des informations d’identification d’administrateur de votre entreprise. Exécutez l’cmdlet suivante.
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. Dans la page **Entrer les informations d’identification,** entrez vos informations d’identification d’administrateur global Microsoft 365. Vous pouvez également entrer vos informations d’identification directement dans la cmdlet. 
+3. Dans la page **Entrer les informations d’identification,** entrez Microsoft 365 d’administrateur global. Vous pouvez également entrer vos informations d’identification directement dans la cmdlet. 
     
     Exécutez l’cmdlet suivante en spécifiant les informations d’identification d’administrateur de votre entreprise en tant qu’objet PSCredential.
     
@@ -60,7 +60,7 @@ Avant de pouvoir utiliser les cmdlets de déploiement centralisé, vous devez vo
   ```
 
 > [!NOTE]
-> Pour plus d’informations sur l’utilisation de PowerShell, voir Se connecter [à Microsoft 365 avec PowerShell.](./connect-to-microsoft-365-powershell.md) 
+> Pour plus d’informations sur l’utilisation de PowerShell, [voir Connecter à Microsoft 365 avec PowerShell.](./connect-to-microsoft-365-powershell.md) 
   
 ## <a name="upload-an-add-in-manifest"></a>Télécharger un manifeste de add-in
 
@@ -76,9 +76,9 @@ Vous pouvez également exécuter la cmdlet **New-OrganizationAdd-In** pour tél�
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Télécharger un add-in à partir de l’Office Store
+## <a name="upload-an-add-in-from-the-office-store"></a>Télécharger un add-in à partir du Office Store
 
-Exécutez **la cmdlet New-OrganizationAddIn** pour télécharger un manifeste à partir de l’Office Store.
+Exécutez la cmdlet **New-OrganizationAddIn** pour télécharger un manifeste à partir du Office Store.
   
 Dans l’exemple suivant, la **cmdlet New-OrganizationAddIn** spécifie l’AssetId d’un add-in pour un marché de contenu et un emplacement aux États-Unis.
   
@@ -86,16 +86,16 @@ Dans l’exemple suivant, la **cmdlet New-OrganizationAddIn** spécifie l’Asse
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Pour déterminer la valeur du paramètre  _AssetId,_ vous pouvez la copier à partir de l’URL de la page web de l’Office Store pour le module. AssetIds always begin with « WA » followed by a number. Par exemple, dans l’exemple précédent, la source de la valeur AssetId de WA104099688 est l’URL de la page web de l’Office Store pour le add-in [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) :
+Pour déterminer la valeur du paramètre _AssetId,_ vous pouvez la copier à partir de l’URL de la page web Office Store pour le add-in. AssetIds always begin with « WA » followed by a number. Par exemple, dans l’exemple précédent, la source de la valeur AssetId de WA104099688 est l’URL de la page web du Office Store pour le add-in : [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
   
 Les valeurs des  _paramètres Locale_ et  _ContentMarket_ sont identiques et indiquent le pays/la région à partir de quel pays vous essayez d’installer le module. Le format est en-US, fr-FR. et ainsi de suite. 
   
 > [!NOTE]
-> Les add-ins téléchargés à partir de l’Office Store seront automatiquement mis à jour dans les quelques jours suivant la mise à jour la plus récente disponible sur l’Office Store. 
+> Les add-ins téléchargés à partir du Office Store seront automatiquement mis à jour dans les quelques jours suivant la mise à jour la plus récente disponible sur le Office Store. 
   
 ## <a name="get-details-of-an-add-in"></a>Obtenir les détails d’un add-in
 
-Exécutez la cmdlet **Get-OrganizationAddIn** comme indiqué ci-dessous pour obtenir les détails de tous les modules de développement téléchargés vers le client, y compris l’ID produit d’un module.
+Exécutez la cmdlet **Get-OrganizationAddIn** comme indiqué ci-dessous pour obtenir les détails de tous les modules de développement téléchargés sur le client, y compris l’ID produit d’un module.
   
 ```powershell
 Get-OrganizationAddIn
@@ -162,7 +162,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> Les add-ins téléchargés à partir de l’Office Store seront automatiquement mis à jour dans les quelques jours suivant la mise à jour la plus récente disponible sur l’Office Store. 
+> Les add-ins téléchargés à partir du Office Store seront automatiquement mis à jour dans les quelques jours suivant la mise à jour la plus récente disponible sur le Office Store. 
   
 ## <a name="delete-an-add-in"></a>Suppression d’un complément
 

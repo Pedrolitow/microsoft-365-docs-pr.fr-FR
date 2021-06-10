@@ -1,5 +1,5 @@
 ---
-title: Afficher les comptes d’utilisateur Microsoft 365 avec PowerShell
+title: Afficher Microsoft 365 comptes d’utilisateurs avec PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
-description: Découvrez comment afficher, lister ou afficher vos comptes d’utilisateur Microsoft 365 de différentes manières avec PowerShell.
+description: Découvrez comment afficher, lister ou afficher Microsoft 365 comptes d’utilisateur de différentes manières avec PowerShell.
 ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924647"
 ---
-# <a name="view-microsoft-365-user-accounts-with-powershell"></a>Afficher les comptes d’utilisateur Microsoft 365 avec PowerShell
+# <a name="view-microsoft-365-user-accounts-with-powershell"></a>Afficher Microsoft 365 comptes d’utilisateurs avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser le Centre d’administration Microsoft 365 pour afficher les comptes de votre client Microsoft 365. PowerShell pour Microsoft 365 active cette fonctionnalité, mais fournit également des fonctionnalités supplémentaires.
+Vous pouvez utiliser le centre Microsoft 365'administration pour afficher les comptes de votre client Microsoft 365 client. PowerShell pour Microsoft 365 active cette fonctionnalité, mais fournit également des fonctionnalités supplémentaires.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 ### <a name="view-all-accounts"></a>Afficher tous les comptes
 
@@ -66,7 +66,7 @@ Pour afficher un compte d’utilisateur spécifique, exécutez la commande suiva
 Get-AzureADUser -ObjectID <sign-in name of the user account>
 ```
 
-Voici un exemple :
+Voici un exemple :
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
@@ -74,7 +74,7 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>Afficher des valeurs de propriété supplémentaires pour un compte spécifique
 
-Par défaut, l’cmdlet **Get-AzureADUser** affiche uniquement les propriétés *ObjectID,* *DisplayName* et *UserPrincipalName* des comptes.
+Par défaut, la cmdlet **Get-AzureADUser** affiche uniquement les propriétés *ObjectID,* *DisplayName* et *UserPrincipalName* des comptes.
 
 Pour être plus sélectif sur les propriétés à afficher, utilisez l’cmdlet **Select** en combinaison avec l’cmdlet **Get-AzureADUser.** Pour combiner les deux cmdlets, utilisez le caractère « pipe » (« | ») qui indique à Azure Active Directory PowerShell pour Graph de prendre les résultats d’une commande et de l’envoyer à la commande suivante. Voici un exemple de commande qui affiche *displayName,* *Department* et *UsageLocation* pour chaque compte d’utilisateur :
   
@@ -88,13 +88,13 @@ Cette commande indique à PowerShell de :
     
 1.  Afficher uniquement le nom du compte d’utilisateur, le service et l’emplacement d’utilisation (**Sélectionnez DisplayName, Service, UsageLocation**).
   
-Pour voir toutes les propriétés d’un compte d’utilisateur spécifique, utilisez la cmdlet **Select** et le caractère générique (*). Voici un exemple :
+Pour voir toutes les propriétés d’un compte d’utilisateur spécifique, utilisez la cmdlet **Select** et le caractère générique (*). Voici un exemple :
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Autre exemple : exécutez la commande suivante pour vérifier l’état activé d’un compte d’utilisateur spécifique :
+Dans un autre exemple, exécutez la commande suivante pour vérifier l’état activé d’un compte d’utilisateur spécifique :
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
@@ -106,7 +106,7 @@ Les comptes d’utilisateurs ont deux sources :
 
 - Windows Server Active Directory (AD), qui sont des comptes qui se synchronisent d’AD local vers le cloud.
 
-- Comptes Azure Active Directory (Azure AD) AD, qui sont créés directement dans le cloud.
+- Azure Active Directory (Azure AD) AD, qui sont créés directement dans le cloud.
 
 
 La commande suivante indique à PowerShell d’obtenir tous les utilisateurs dont l’attribut *DirSyncEnabled* a la valeur *True*. Vous pouvez l’utiliser pour rechercher des comptes qui se synchronisent à partir d’AD local.
@@ -123,19 +123,19 @@ Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 
 ### <a name="view-accounts-based-on-a-common-property"></a>Afficher les comptes en fonction d’une propriété commune
 
-Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez utiliser l’cmdlet **Where** en combinaison avec la cmdlet **Get-AzureADUser.** Pour combiner les deux cmdlets, utilisez le caractère « pipe » (« | ») qui indique à Azure Active Directory PowerShell pour Graph de prendre les résultats d’une commande et de l’envoyer à la commande suivante. Voici un exemple de commande qui affiche uniquement les comptes d’utilisateurs dont l’emplacement d’utilisation n’est pas spécifié :
+Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez utiliser l’cmdlet **Where** en combinaison avec l’cmdlet **Get-AzureADUser.** Pour combiner les deux cmdlets, utilisez le caractère « pipe » (« | ») qui indique à Azure Active Directory PowerShell pour Graph de prendre les résultats d’une commande et de l’envoyer à la commande suivante. Voici un exemple de commande qui affiche uniquement les comptes d’utilisateurs dont l’emplacement d’utilisation n’est pas spécifié :
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-Cette commande indique à Azure Active Directory PowerShell pour Graph de :
+Cette commande indique Azure Active Directory PowerShell pour Graph :
   
 1. Obtenez toutes les informations sur les comptes d’utilisateur (**Get-AzureADUser**) et envoyez-les à la commande suivante ( **|** ).
     
 1. Recherchez tous les comptes d’utilisateur dont l’emplacement d’utilisation n’est pas spécifié (**Où {$ \_ . UsageLocation -eq $Null}**). À l’intérieur des accolades, la commande indique à PowerShell de rechercher uniquement l’ensemble de comptes pour lesquels la propriété de compte d’utilisateur UsageLocation (**$ \_ . UsageLocation**) n’est pas spécifié (**-eq $Null**).
     
-La propriété **UsageLocation** n’est que l’une des nombreuses propriétés associées à un compte d’utilisateur. Pour afficher toutes les propriétés d’un compte d’utilisateur spécifique, utilisez la cmdlet **Select** et le caractère générique (*). Voici un exemple :
+La propriété **UsageLocation** n’est que l’une des nombreuses propriétés associées à un compte d’utilisateur. Pour afficher toutes les propriétés d’un compte d’utilisateur spécifique, utilisez la cmdlet **Select** et le caractère générique (*). Voici un exemple :
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
@@ -153,7 +153,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="view-all-accounts"></a>Afficher tous les comptes
 
@@ -228,13 +228,13 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-La propriété *UsageLocation* n’est que l’une des nombreuses propriétés associées à un compte d’utilisateur. Pour afficher toutes les propriétés des comptes d’utilisateurs, utilisez la cmdlet **Select** et le caractère générique (*) pour afficher toutes les propriétés d’un compte d’utilisateur spécifique. Voici un exemple :
+La propriété *UsageLocation* n’est que l’une des nombreuses propriétés associées à un compte d’utilisateur. Pour afficher toutes les propriétés des comptes d’utilisateurs, utilisez la cmdlet **Select** et le caractère générique (*) pour afficher toutes les propriétés d’un compte d’utilisateur spécifique. Voici un exemple :
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Par exemple, *Ville* est le nom d’une propriété de compte d’utilisateur. Vous pouvez utiliser la commande suivante pour lister tous les comptes d’utilisateur pour les utilisateurs qui habitent à Londres :
+Par exemple, *Ville* est le nom d’une propriété de compte d’utilisateur. Vous pouvez utiliser la commande suivante pour lister tous les comptes d’utilisateur des utilisateurs qui habitent à Londres :
   
 ```powershell
 Get-MsolUser | Where {$_.City -eq "London"}
@@ -259,7 +259,7 @@ Par défaut, la cmdlet **Get-MsolUser** affiche les trois propriétés des compt
     
 - isLicensed
     
-Si vous avez besoin de propriétés supplémentaires, telles que le service où travaille l’utilisateur et le pays/la région où il utilise les services Microsoft 365, vous pouvez exécuter **Get-MsolUser** en combinaison avec la cmdlet **Select** pour spécifier la liste des propriétés du compte d’utilisateur. Voici un exemple :
+Si vous avez besoin de propriétés supplémentaires, telles que le service où travaille l’utilisateur et le pays/la région où il utilise les services Microsoft 365, vous pouvez exécuter **Get-MsolUser** en combinaison avec la cmdlet **Select** pour spécifier la liste des propriétés du compte d’utilisateur. Voici un exemple :
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -284,13 +284,13 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-L’cmdlet Select vous permet de choisir les propriétés à afficher.  Pour afficher toutes les propriétés d’un compte d’utilisateur spécifique, utilisez le caractère générique (*). Voici un exemple :
+L’cmdlet Select vous permet de choisir les propriétés à afficher.  Pour afficher toutes les propriétés d’un compte d’utilisateur spécifique, utilisez le caractère générique (*). Voici un exemple :
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Pour être plus sélectif dans la liste des comptes à afficher, vous pouvez également utiliser la cmdlet **Where.** Voici un exemple de commande qui affiche uniquement les comptes d’utilisateurs dont l’emplacement d’utilisation n’est pas spécifié :
+Pour être plus sélectif sur la liste des comptes à afficher, vous pouvez également utiliser la cmdlet **Where.** Voici un exemple de commande qui affiche uniquement les comptes d’utilisateurs dont l’emplacement d’utilisation n’est pas spécifié :
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
@@ -313,9 +313,9 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-Si vous utilisez la synchronisation d’annuaires pour créer et gérer vos utilisateurs Microsoft 365, vous pouvez afficher le compte local à partir duquel un utilisateur Microsoft 365 a été projeté. L’exemple suivant suppose que :
+Si vous utilisez la synchronisation d’annuaires pour créer et gérer vos utilisateurs Microsoft 365, vous pouvez afficher le compte local à partir duquel un utilisateur Microsoft 365 été projeté. L’exemple suivant suppose que :
 
-- Azure AD Connect est configuré pour utiliser l’ancrage source par défaut d’ObjectGUID. (Pour plus d’informations sur la configuration d’une ancre source, voir [Azure AD Connect : concepts de conception).](/azure/active-directory/hybrid/plan-connect-design-concepts)
+- Azure AD Connecter est configuré pour utiliser l’ancrage source par défaut d’ObjectGUID. (Pour plus d’informations sur la configuration d’une ancre source, voir [Azure AD Connecter: Design concepts](/azure/active-directory/hybrid/plan-connect-design-concepts)).
 - Le module Services de domaine Active Directory pour PowerShell a été installé (voir [outils RSAT).](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)
 
 ```powershell
@@ -326,6 +326,6 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 
 [Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)

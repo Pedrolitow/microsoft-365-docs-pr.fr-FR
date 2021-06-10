@@ -16,7 +16,7 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: Découvrez les menaces de sécurité qui pèsent sur votre entreprise et les moyens simples dont vous et vos employés pouvez protéger vos données, vos comptes et vos appareils.
+description: Découvrez les menaces de sécurité qui pèsent sur votre entreprise et les moyens faciles dont vous et vos employés pouvez protéger vos données, vos comptes et vos appareils.
 ms.openlocfilehash: 2f7509044e785350c2703f8578d7859dc4f049f7
 ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT

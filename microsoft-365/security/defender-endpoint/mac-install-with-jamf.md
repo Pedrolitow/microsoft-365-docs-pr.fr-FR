@@ -46,7 +46,7 @@ Il s’agit d’un processus en plusieurs étapes. Vous devez effectuer toutes l
 - [Connexion au portail Jamf](mac-install-jamfpro-login.md)
 - [Configurer Microsoft Defender pour le point de terminaison sur les groupes d’appareils macOS dans Jamf Pro](mac-jamfpro-device-groups.md)
 - [Configuration de Microsoft Defender pour le point de terminaison sur les stratégies macOS dans Jamf Pro](mac-jamfpro-policies.md)
-- [Inscrire Microsoft Defender for Endpoint sur les appareils macOS dans Jamf Pro](mac-jamfpro-enroll-devices.md)
+- [Inscrivez Microsoft Defender for Endpoint sur les appareils macOS dans Jamf Pro](mac-jamfpro-enroll-devices.md)
 
 
 

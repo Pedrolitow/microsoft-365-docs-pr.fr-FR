@@ -33,15 +33,15 @@ ms.locfileid: "52023001"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 
 
 Le `DeviceImageLoadEvents` tableau du schéma de [recherche](advanced-hunting-overview.md) avancée contient des informations sur les événements de chargement DLL. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d'informations sur les types d'événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
+> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -50,21 +50,21 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `ActionType` | string | Type d'activité qui a déclenché l'événement. Pour plus [d'informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
-| `FolderPath` | string | Dossier contenant le fichier à lequel l'action enregistrée a été appliquée |
+| `FolderPath` | string | Dossier contenant le fichier à lequel l’action enregistrée a été appliquée |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
-| `MD5` | string | Hachage MD5 du fichier à l'application de l'action enregistrée |
+| `MD5` | string | Hachage MD5 du fichier à l’application de l’action enregistrée |
 | `FileSize` | long | Taille du fichier en octets |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l'événement |
-| `InitiatingProcessAccountName` | string | Nom d'utilisateur du compte qui a dirigé le processus responsable de l'événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l'événement |
-| `InitiatingProcessAccountUpn` | string | Nom d'utilisateur principal (UPN) du compte qui a lancé le processus responsable de l'événement |
-| `InitiatingProcessAccountObjectId` | string | ID d'objet Azure AD du compte d'utilisateur qui a tenu le processus responsable de l'événement |
-| `InitiatingProcessIntegrityLevel` | string | Niveau d'intégrité du processus à l'origine de l'événement. Windows affecte des niveaux d'intégrité à des processus en fonction de certaines caractéristiques, par exemple s'ils ont été lancés à partir d'un téléchargement Internet. Ces niveaux d'intégrité influencent les autorisations sur les ressources |
-| `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l'absence d'élévation de privilège du contrôle d'accès utilisateur (UAC) appliquée au processus à l'origine de l'événement |
-| `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l'origine de l'événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
+| `InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessIntegrityLevel` | string | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
+| `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
+| `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer le compte d’utilisateur d’un ancien employé.
-ms.openlocfilehash: e9f87f68650394a81c735346db929bf592e91d18
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779830"
+ms.locfileid: "52782380"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : supprimer le compte d’utilisateur d’un ancien employé
 
@@ -84,8 +84,6 @@ Les opérations ci-dessus peuvent être réalisées à trois endroits :
   
  **Plus rapide pour un utilisateur ayant une présence locale et dans le centre de données Exchange**: clôturez la session via le centre d'administration Azure Active Directory/Exchange ET apportez la modification aussi dans l'environnement local. À défaut, la modification dans le centre d'administration Azure Active Directory/Exchange est remplacée par DirSync.
   
-## <a name="related-articles"></a>Articles connexes
+## <a name="related-content"></a>Contenu associé
 
-[Restaurer un utilisateur](restore-user.md)
-
-[Réinitialiser les mots de passe](reset-passwords.md)
+[Restaurer un utilisateur](restore-user.md) (article)/ [Réinitialiser les mots de passe](reset-passwords.md) (article)

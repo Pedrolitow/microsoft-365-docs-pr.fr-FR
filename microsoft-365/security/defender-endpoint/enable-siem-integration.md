@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 337eb28b7e4b4a7c57b63ff45fb1cea81db43604
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 87078bb7bfc6b38788fea2a6a4c3c9108be1d5b4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068206"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842961"
 ---
 # <a name="enable-siem-integration-in-microsoft-defender-for-endpoint"></a>Activer l’intégration SIEM dans Microsoft Defender pour endpoint
 
@@ -33,16 +33,16 @@ ms.locfileid: "51068206"
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
-Activez l’intégration des informations de sécurité et de la gestion des événements (SIEM) afin de pouvoir tirer les détections à partir du Centre de sécurité Microsoft Defender. Tirez les détections à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections.
+Activez l’intégration des informations de sécurité et de la gestion des événements (SIEM) afin de pouvoir tirer les détections de Centre de sécurité Microsoft Defender. Tirez les détections à l’aide de votre solution SIEM ou en vous connectant directement à l’API REST de détections.
 
 >[!NOTE]
 >- [Microsoft Defender pour l’alerte de point de terminaison](alerts.md) est composé d’une ou plusieurs détections.
 >- [Microsoft Defender pour la détection des points](api-portal-mapping.md) de terminaison est composé de l’événement suspect qui s’est produit sur l’appareil et de ses détails d’alerte associés.
 >- L’API d’alerte Microsoft Defender pour point de terminaison est la dernière API pour la consommation des alertes et contient une liste détaillée des preuves associées à chaque alerte. Pour plus d’informations, voir [Méthodes et propriétés d’alerte et](alerts.md) Liste des [alertes.](get-alerts.md)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
-- L’utilisateur qui active le paramètre doit avoir les autorisations pour créer une application dans Azure Active Directory (AAD). Il s’agit d’une personne ayant les rôles suivants : 
+- L’utilisateur qui active le paramètre doit être autorisé à créer une application dans Azure Active Directory (AAD). Il s’agit d’une personne ayant les rôles suivants : 
 
   - Administrateur de sécurité et administrateur général
   - Administrateur de l'application cloud
@@ -52,20 +52,20 @@ Activez l’intégration des informations de sécurité et de la gestion des év
 - Au cours de l’activation initiale, un écran de saisie intitulant les informations d’identification s’affiche. Veillez à autoriser les fenêtres pop-up pour ce site.
 
 ## <a name="enabling-siem-integration"></a>Activation de l’intégration SIEM 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **SIEM**.
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **SIEM.**
 
-    ![Image de l’intégration SIEM à partir du menu Paramètres1](images/enable_siem.png)
+    ![Image de l’intégration SIEM à partir Paramètres menu1](images/enable_siem.png)
 
     >[!TIP]
     >Si vous rencontrez une erreur lors de la tentative d’activer l’application de connecteur SIEM, vérifiez les paramètres du bloqueur de fenêtres d’accès rapide de votre navigateur. Il peut bloquer l’ouverture de la nouvelle fenêtre lorsque vous activez la fonctionnalité. 
 
-2. Sélectionnez **Activer l’intégration SIEM.** Cela active la section des détails d’accès au connecteur SIEM avec des **valeurs** pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD).
+2. Sélectionnez **Activer l’intégration SIEM.** Cette action active la section détails d’accès au connecteur SIEM avec des **valeurs** pré-remplies et une application est créée sous votre client Azure Active Directory (Azure AD).
 
     > [!WARNING]
     >La secret client n’est affichée qu’une seule fois. Veillez à en conserver une copie en lieu sûr.<br>
      
 
-    ![Image de l’intégration SIEM à partir du menu Paramètres2](images/siem_details.png)
+    ![Image de l’intégration SIEM à partir Paramètres menu2](images/siem_details.png)
 
 3. Choisissez le type SIEM que vous utilisez dans votre organisation.
 
@@ -83,15 +83,15 @@ Activez l’intégration des informations de sécurité et de la gestion des év
    > [!NOTE]
    > Vous devez générer un nouveau jeton Actualiser tous les 90 jours. 
 
-6. Suivez les instructions pour créer une inscription d’application Azure AD pour [Microsoft Defender pour endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) et attribuez-lui les autorisations correctes pour lire les alertes.
+6. Suivez les instructions pour créer une inscription d’application Azure AD pour [Microsoft Defender pour endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) et attribuez-lui les autorisations correctes pour lire les alertes.
 
-Vous pouvez maintenant configurer votre solution SIEM ou vous connecter à l’API REST de détections par le biais d’un accès par programme. Vous devez utiliser les jetons lors de la configuration de votre solution SIEM pour lui permettre de recevoir des détections à partir du Centre de sécurité Microsoft Defender.
+Vous pouvez désormais configurer votre solution SIEM ou vous connecter à l’API REST de détections par le biais d’un accès par programme. Vous devrez utiliser les jetons lors de la configuration de votre solution SIEM pour lui permettre de recevoir des détections de Centre de sécurité Microsoft Defender.
 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>Intégrer Microsoft Defender for Endpoint à IBM QRadar 
-Vous pouvez configurer IBM QRadar pour collecter les détections à partir de Microsoft Defender for Endpoint. Pour plus d’informations, voir [le Centre de connaissances IBM.](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)
+Vous pouvez configurer IBM QRadar pour collecter des détections à partir de Microsoft Defender for Endpoint. Pour plus d’informations, voir [le Centre de connaissances IBM.](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)
 
 ## <a name="see-also"></a>Voir aussi
-- [Configurer HP ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
+- [Configurer HP ArcSight pour tirer microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
 - [Champs Microsoft Defender pour la détection des points de terminaison](api-portal-mapping.md)
 - [Détecter Microsoft Defender pour les points de terminaison à l’aide de l’API REST](pull-alerts-using-rest-api.md)
-- [Résoudre les problèmes d’intégration de l’outil SIEM](troubleshoot-siem.md)
+- [Résoudre des problèmes d’intégration de l’outil SIEM](troubleshoot-siem.md)

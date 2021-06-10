@@ -32,24 +32,24 @@ ms.locfileid: "51186064"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
 
 Examinez les détails d’un fichier associé à une alerte, un comportement ou un événement spécifique pour déterminer si le fichier présente des activités malveillantes, identifier la motivation de l’attaque et comprendre l’étendue potentielle de la violation.
 
-Il existe plusieurs façons d’accéder à la page de profil détaillée d’un fichier spécifique. Par exemple, vous pouvez utiliser la fonctionnalité de recherche, cliquer sur un lien à partir de l’arborescence du processus d’alerte, du graphique **d’incident,** de la chronologie de l’artefact **ou** sélectionner un événement répertorié dans la chronologie de **l’appareil.**
+Il existe de nombreuses façons d’accéder à la page de profil détaillée d’un fichier spécifique. Par exemple, vous pouvez utiliser la fonctionnalité de recherche, cliquer sur un lien à partir de l’arborescence du processus d’alerte, du graphique **d’incident,** de la chronologie de l’artefact **ou** sélectionner un événement répertorié dans la chronologie de **l’appareil.**
 
 Une fois sur la page de profil détaillée, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en basant **la nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
 
 Vous pouvez obtenir des informations à partir des sections suivantes dans l’affichage de fichier :
 
 - Détails du fichier, détection des programmes malveillants, prévalence du fichier
-- Analyse approfondie
+- Analyse profonde
 - Alertes
 - Observé dans l’organisation
-- Analyse approfondie
+- Analyse profonde
 - Noms de fichiers
 
 Vous pouvez également agir sur un fichier à partir de cette page.
@@ -61,7 +61,7 @@ En haut de la page de profil, au-dessus des cartes d’informations de fichier. 
 - Arrêter et mettre en quarantaine
 - Indicateur d’ajout/modification
 - Télécharger un fichier
-- Consulter un expert en menaces
+- Consulter un spécialiste des menaces
 - Centre de notifications
 
 Pour plus d’informations sur ces actions, voir [Action de réponse sur un fichier.](respond-file-alerts.md)
@@ -96,9 +96,9 @@ L’onglet Observé **dans l’organisation** vous permet de spécifier une plag
 
 Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une période à vérifier pour les événements impliquant le fichier. Vous pouvez spécifier une fenêtre de temps aussi petite qu’un seul jour. Cela vous permettra de voir uniquement les fichiers qui ont communiqué avec cette adresse IP à ce moment-là, ce qui réduit considérablement les recherches et les défilements inutiles.
 
-## <a name="deep-analysis"></a>Analyse approfondie
+## <a name="deep-analysis"></a>Analyse profonde
 
-**L’onglet** Analyse approfondie vous permet d’envoyer le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois que vous avez soumis le fichier, le rapport d’analyse approfondie apparaît dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
+**L’onglet** Analyse approfondie vous permet d’envoyer le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois le fichier soumis, le rapport d’analyse approfondie s’affiche dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
 
 ![Image de l’onglet Analyse approfondie](images/submit-file.png)
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6607d5029e45c77754a431c87eb61cd281e013c1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: ccff6abcfcd1a2da32a8e1614a2de45afed69aef
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730725"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842997"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Conditions minimales requises pour Microsoft Defender pour le point de terminaison
 
@@ -43,7 +43,7 @@ Certaines conditions minimales sont requises pour l’intégration d’appareils
 
 ## <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
-Microsoft Defender for Endpoint nécessite l’une des offres de licence en volume Microsoft suivantes :
+Microsoft Defender pour le point de terminaison nécessite l’une des offres de licence en volume Microsoft suivantes :
 
 - Windows 10 Entreprise E5
 - Windows 10 Éducation A5
@@ -60,7 +60,7 @@ Microsoft Defender for Endpoint nécessite l’une des offres de licence en volu
 
 Microsoft Defender pour le point de terminaison pour les serveurs nécessite l’une des options de licence suivantes :
 
-- [Centre de sécurité Azure avec Azure Defender activé](https://docs.microsoft.com/azure/security-center/security-center-pricing)
+- [Centre de sécurité Azure avec Azure Defender activé](/azure/security-center/security-center-pricing)
 - Microsoft Defender for Endpoint for Server (un par serveur couvert)
 
 > [!NOTE]
@@ -96,7 +96,7 @@ L’accès à Defender pour le point de terminaison s’fait par le biais d’un
 - Windows 7 SP1 Pro ([Nécessite ESU pour la prise en charge.)](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)
 - Windows 8.1 Entreprise
 - Windows 8.1 Professionnel
-- Windows 10 Entreprise
+- Windows 10 Entreprise
 - [Windows 10 Entreprise LTSC 2016 (ou une ultérieure)](/windows/whats-new/ltsc/)
 - Windows 10 Éducation
 - Windows 10 Professionnel
@@ -135,17 +135,17 @@ La configuration matérielle requise pour Defender pour Endpoint sur les apparei
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>Configuration requise pour le stockage réseau et les données
 
-Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives au point de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
+Lorsque vous exécutez l’Assistant d’intégration pour la première fois, vous devez choisir l’endroit où sont stockées vos informations relatives aux points de terminaison Microsoft Defender : dans l’Union européenne, le Royaume-Uni ou le centre de données des États-Unis.
 
 > [!NOTE]
 > - Vous ne pouvez pas modifier votre emplacement de stockage de données après la première installation.
 > - Pour plus d’informations sur l’endroit et la façon dont Microsoft stocke vos données, voir Microsoft Defender for [Endpoint data storage and privacy.](data-storage-privacy.md)
 
 
-### <a name="diagnostic-data-settings"></a>Paramètres des données de diagnostic
+### <a name="diagnostic-data-settings"></a>Paramètres de données de diagnostic
 
 > [!NOTE]
-> Microsoft Defender pour le point de terminaison ne requiert aucun niveau de diagnostic spécifique tant qu’il est activé.
+> Microsoft Defender pour point de terminaison ne nécessite aucun niveau de diagnostic spécifique tant qu’il est activé.
 
 Assurez-vous que le service de données de diagnostic est activé sur tous les appareils de votre organisation.
 Par défaut, ce service est activé. Il est bon de vérifier que vous obtenez des données de capteur à partir de ces données.
@@ -199,7 +199,7 @@ La connectivité Internet sur les appareils est requise directement ou par proxy
 
 Le capteur Defender pour point de terminaison peut utiliser une bande passante moyenne quotidienne de 5 Mo pour communiquer avec le service cloud Defender for Endpoint et signaler les cyber-données. Les activités non limitées, telles que les téléchargements de fichiers et la collecte de packages d’enquête, ne sont pas incluses dans cette bande passante moyenne quotidienne.
 
-Pour plus d’informations sur les paramètres de configuration de proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
+Pour plus d’informations sur les paramètres de configuration proxy supplémentaires, voir Configurer les [paramètres de proxy d’appareil](configure-proxy-internet.md)et de connectivité Internet.
 
 Avant d’intégrer des appareils, le service de données de diagnostic doit être activé. Le service est activé par défaut dans Windows 10.
 

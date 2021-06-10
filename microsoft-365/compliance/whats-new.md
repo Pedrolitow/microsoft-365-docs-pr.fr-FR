@@ -18,29 +18,29 @@ ms.collection:
 - M365-security-compliance
 description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: d312b3ac3c2cb43e05a09936f1e5c07b32c22ef1
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706617"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843245"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
 Que vous ajoutiez de nouvelles solutions au Centre de conformité [Microsoft 365,](microsoft-365-compliance-center.md)mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Consultez la ci-dessous pour voir les nouveautés de la conformité Microsoft 365 jour.
 
 > [!NOTE]
-> Certaines fonctionnalités de conformité sont déployées à différentes vitesses pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
+> Certaines fonctionnalités de conformité sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous ajouter à [la version ciblée.](/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
 > Vous êtes intéressé par ce qui se passe dans d’autres centres d’administration ? Consultez les articles suivants :<br>[Nouveautés du Centre d’administration Microsoft 365 de gestion](/office365/admin/whats-new-in-preview)<br>[Nouveautés du Centre d’administration SharePoint de gestion](/sharepoint/what-s-new-in-admin-center)<br>[Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
-Consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
+Visitez également la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
 
 ## <a name="april-2021"></a>Avril 2021
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- [Limites dans Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Les organisations peuvent désormais exporter jusqu’à 5 millions d’éléments ou 500 Mo, selon la taille la plus petite, dans une seule exportation d’éléments à partir d’un ensemble de révision.
+- [Limites dans Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Les organisations peuvent désormais exporter jusqu’à 5 millions d’éléments ou 500 Mo, selon la taille la plus petite, dans une seule exportation d’éléments d’un groupe de révision.
 
 ### <a name="data-classification"></a>Classification des données
 
@@ -75,7 +75,7 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- **Advanced eDiscovery collections de collections prend** désormais en charge les nouveaux [outils de collections et flux de travail.](/microsoft-365/compliance/collections-overview) D’autres nouvelles rubriques incluent [la création d’un brouillon de collection,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)la validation d’une collection provisoire dans un jeu à [réviser](/microsoft-365/compliance/commit-draft-collection)et les statistiques et rapports [de collection.](/microsoft-365/compliance/collection-statistics-reports)
+- **Advanced eDiscovery collections de collections prend** désormais en charge les nouveaux [outils de collections et flux de travail.](/microsoft-365/compliance/collections-overview) D’autres nouvelles rubriques incluent [la création d’un brouillon de collection,](/microsoft-365/compliance/create-draft-collection)la validation d’une collection provisoire dans un jeu à [réviser](/microsoft-365/compliance/commit-draft-collection)et les statistiques et les rapports [de collection.](/microsoft-365/compliance/collection-statistics-reports)
 - **Exporter des documents** d’un jeu à réviser vers [un stockage Azure](/microsoft-365/compliance/download-export-jobs) client.
 - **Module de codage prédictif pour Advanced eDiscovery**. Tout d’abord, regardez la nouvelle fonctionnalité de [codage](/microsoft-365/compliance/predictive-coding-overview) prédictif qui remplace le module Pertinence retiré.
 
@@ -95,7 +95,7 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 ### <a name="encryption"></a>Chiffrement
 
 - **Clé client pour Microsoft 365**. [Vue d’ensemble de la](/microsoft-365/compliance/customer-key-tenant-level) clé client Microsoft 365 au niveau du client (prévisualisation publique).
-- **Chiffrement à double clé**. En savoir plus [sur l’activation de la prise](/microsoft-365/compliance/double-key-encryption) en charge des documents étiquetés et protégés dans SharePoint et OneDrive Entreprise.
+- **Chiffrement à double clé**. En savoir plus sur [l’activation de la prise](/microsoft-365/compliance/double-key-encryption) en charge des documents étiquetés et protégés dans SharePoint et OneDrive Entreprise.
 
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
@@ -124,14 +124,14 @@ Les rubriques suivantes ont été mises à jour ou ajoutées pour prendre en cha
 - [Agir sur les cas de risques internes](/microsoft-365/compliance/insider-risk-management-cases)
 - [Passer en revue des activités avec le journal d’audit des risques Insider](/microsoft-365/compliance/insider-risk-management-audit-log)
 - [Examiner les données à l’aide de l’explorateur de contenu des risques internes](/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [Gérer le flux de travail avec le tableau de bord utilisateurs](/microsoft-365/compliance/insider-risk-management-users)
+- [Gérer le flux de travail avec le Tableau de bord des utilisateurs](/microsoft-365/compliance/insider-risk-management-users)
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
 - **Améliorations apportées au plan de fichiers.** Une mise à [jour du plan](file-plan-manager.md) de fichiers supprime ou améliore les restrictions de longueur précédentes pour l’importation.
-- **Supprimer des étiquettes de rétention pour les enregistrements**. Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme des enregistrements.
+- **Supprimer des étiquettes de rétention pour les enregistrements.** Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme des enregistrements.
 
-### <a name="sensitive-information-types"></a>Types d’informations sensibles
+### <a name="sensitive-information-types"></a>Types d’information sensible
 
 Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
@@ -139,7 +139,7 @@ Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 - [En savoir plus sur les types d’informations confidentielles](/microsoft-365/compliance/sensitive-information-type-learn-about).
 - [Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
 - [Créer des notifications pour les activités de correspondance de données exactes](/microsoft-365/compliance/sit-edm-notifications-activities)
-- [Définitions d’entités de types d’informations sensibles](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [Définitions d’entités de type d’informations sensibles](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 - [Créer un type d’informations sensibles personnalisé à l’aide de PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [Créer un dictionnaire de mots clés](/microsoft-365/compliance/create-a-keyword-dictionary)
 
@@ -162,29 +162,29 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 
 Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
-- [Prise en main de l’explorateur de contenu](/microsoft-365/compliance/data-classification-content-explorer)
+- [Prise en main de l’Explorateur de contenu](/microsoft-365/compliance/data-classification-content-explorer)
 - [Notes de publication pour la classification des données](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
 
 Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
-- [En savoir plus sur le point de terminaison DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [Mise en place du scanneur local de protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](https://docs.microsoft.com/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Utilisation des points de terminaison protection contre la perte de données](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-using)
-- [Prise en main de la protection contre la perte de données de point de terminaison](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started)
+- [En savoir plus sur le point de terminaison DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Envoi des notifications et affichage des conseils de stratégie pour les stratégies DLP](/microsoft-365/compliance/use-notifications-and-policy-tips)
+- [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [Mise en place du scanneur local de protection contre la perte de données](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
+- [Utilisation des points de terminaison protection contre la perte de données](/microsoft-365/compliance/endpoint-dlp-using)
+- [Prise en main la protection contre la perte de données de point de terminaison](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>eDiscovery
 
 Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
-- [Déchiffrement dans les outils Microsoft 365 eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/ediscovery-decryption)
-- [Requêtes par mots clés et conditions de recherche](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Retrait du module Pertinence dans Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/relevance-module-retirement)
-- [Utiliser un script pour ajouter des utilisateurs à une attente dans un cas core eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
+- [Déchiffrement dans les outils Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery-decryption)
+- [Requêtes par mots clés et conditions de recherche](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
+- [Retrait du module de pertinence dans Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
+- [Utiliser un script pour ajouter des utilisateurs à une attente dans un cas core eDiscovery](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
 
 ### <a name="encryption"></a>Chiffrement
 
@@ -192,44 +192,44 @@ Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
 #### <a name="azure-rights-management-service-rms"></a>Azure Rights Management Service (RMS)
 
-- [Fonctionnalités de chiffrement gérées par le client](https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online de messagerie avec AD RMS](https://docs.microsoft.com/microsoft-365/compliance/information-rights-management-in-exchange-online). La prise en charge de ce service a été dépréciée. Vous ne pouvez plus utiliser AD RMS dans un environnement Exchange hybride. Migrez plutôt vers Azure RMS.
+- [Fonctionnalités de chiffrement gérées par le client](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
+- [Exchange Online de messagerie avec AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). La prise en charge de ce service a été dépréciée. Vous ne pouvez plus utiliser AD RMS dans un environnement Exchange hybride. Migrez plutôt vers Azure RMS.
 
 #### <a name="customer-key"></a>Clé client
 
-- [Clé client pour Microsoft 365 au niveau du client](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level)
-- [Vue d’ensemble de la sécurité et de la conformité](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+- [Clé client pour Microsoft 365 au niveau du client](/microsoft-365/compliance/customer-key-tenant-level)
+- [Vue d’ensemble de la sécurité et de la conformité](/microsoftteams/security-compliance-overview)
 
 #### <a name="information-rights-management-irm"></a>Gestion des droits relatifs à l'information (IRM)
 
-- [Appliquer la Gestion des droits à l’information (IRM) à une liste ou une bibliothèque](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Ces clouds nationaux ne sont pas en charge :
+- [Appliquer la Gestion des droits à l’information (IRM) à une liste ou une bibliothèque](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Ces clouds nationaux ne sont pas en charge :
     - Microsoft Cloud for US Government
     - Microsoft Cloud Germany
     - Azure et Microsoft 365 gérés par 21Vianet en Chine)
-- [Configurez IRM pour utiliser un serveur AD RMS local.](https://docs.microsoft.com/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) La prise en charge de ce service dans un environnement Exchange hybride est devenu désacdexé.
+- [Configurez IRM pour utiliser un serveur AD RMS local.](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server) La prise en charge de ce service dans un environnement Exchange hybride est devenu désacdexé.
 
 ### <a name="sensitive-information-types"></a>Types d'informations sensibles
 
 Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
-- [En savoir plus sur les types d’informations confidentielles](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about).
-- [Créer un type d’informations sensibles personnalisé à l’aide de PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Créer des types d’informations sensibles personnalisés avec une classification exacte basée sur la correspondance de données](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Définitions d’entités des types d’informations sensibles](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [En savoir plus sur les types d’informations confidentielles](/microsoft-365/compliance/sensitive-information-type-learn-about).
+- [Créer un type d’informations sensibles personnalisé à l’aide de PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [Créer des types d’informations sensibles personnalisés avec une classification exacte basée sur la correspondance de données](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [Définitions des entités de type information sensible](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
-- **SharePoint partage externe.** Pour [les étiquettes de conteneur,](sensitivity-labels-teams-groups-sites.md) l’option de partage externe à partir SharePoint sites est désormais publiée comme généralement disponible. En outre, le Microsoft 365 d’administration et le Planificateur peuvent désormais appliquer ces étiquettes de niveau de sensibilité. 
+- **SharePoint partage externe.** Pour [les étiquettes de conteneur,](sensitivity-labels-teams-groups-sites.md) l’option de partage externe à partir SharePoint sites est désormais publiée comme généralement disponible. En outre, le Centre d Microsoft 365'administration et le Planificateur peuvent désormais appliquer ces étiquettes de niveau de sensibilité. 
 - **Co-authoring and AutoSave**. La prise en charge de la co-création et de [l’auto-ave](sensitivity-labels-coauthoring.md) pour les fichiers chiffrés est publiée en prévisualisation pour les tests dans les clients hors production.
 
 ## <a name="january-2021"></a>Janvier 2021
 
 ### <a name="support-for-card-content-in-teams"></a>Prise en charge du contenu de carte dans Teams
 
-Les solutions de conformité Microsoft 365 suivantes [](/microsoftteams/platform/task-modules-and-cards/what-are-cards) permettent désormais de détecter le contenu de carte généré par le biais d’applications Teams messages :
+Les solutions de conformité Microsoft 365 suivantes [](/microsoftteams/platform/task-modules-and-cards/what-are-cards) permettent désormais de détecter le contenu de carte généré par le biais d’applications Teams messages électroniques :
 
 - **Core et Advanced eDiscovery**. Le contenu de la carte peut désormais [être mis en attente](create-ediscovery-holds.md#preserve-card-content) ou inclus dans les [recherches](/microsoftteams/ediscovery-investigation#search-for-card-content) (s’applique également à la recherche de contenu).
 - **Audit**. L’activité de carte est [désormais enregistrée dans le journal d’audit.](/microsoftteams/audit-log-events#teams-activities)
@@ -237,7 +237,7 @@ Les solutions de conformité Microsoft 365 suivantes [](/microsoftteams/platform
 
 ### <a name="information-governance-and-records-management"></a>Gouvernance des informations et gestion des enregistrements
 
-[Nouvelle évaluation à prendre](retention-regulatory-requirements.md#new-zealand-public-records-act) en compte dans le cadre de l’utilisation de la gouvernance des informations et de la gestion des enregistrements pour répondre aux obligations de conformité de la Loi sur les enregistrements publics en Nouvelle-Zélande.
+[Nouvelle évaluation de l’utilisation](retention-regulatory-requirements.md#new-zealand-public-records-act) de la gouvernance des informations et de la gestion des enregistrements pour répondre aux obligations de conformité de la Loi sur les enregistrements publics en Nouvelle-Zélande.
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 

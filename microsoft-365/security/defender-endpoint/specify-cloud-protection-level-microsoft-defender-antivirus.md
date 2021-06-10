@@ -1,7 +1,7 @@
 ---
-title: Spécifier le niveau de protection remis par le cloud pour l’Antivirus Microsoft Defender
-description: Définissez votre niveau de protection cloud pour l’Antivirus Microsoft Defender.
-keywords: Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender, cloud, aggressiveness, niveau de protection
+title: Spécifier le niveau de protection cloud pour les Antivirus Microsoft Defender
+description: Définissez votre niveau de protection cloud pour les Antivirus Microsoft Defender.
+keywords: Antivirus Microsoft Defender logiciel anti-programme malveillant, sécurité, defender, cloud, aggressiveness, niveau de protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -32,10 +32,10 @@ ms.locfileid: "52274903"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez spécifier votre niveau de protection cloud offerte par l’Antivirus Microsoft Defender à l’aide de Microsoft Endpoint Manager (recommandé) ou d’une stratégie de groupe.
+Vous pouvez spécifier votre niveau de protection offerte par le cloud Antivirus Microsoft Defender à l’aide de Microsoft Endpoint Manager (recommandé) ou d’une stratégie de groupe.
 
 > [!TIP]
-> La protection cloud n’est pas simplement une protection pour les fichiers stockés dans le cloud. Le service cloud de l’Antivirus Microsoft Defender est un mécanisme permettant de fournir une protection mise à jour à votre réseau et à vos appareils (également appelés points de terminaison). La protection cloud avec l’Antivirus Microsoft Defender utilise des ressources distribuées et l’apprentissage automatique pour fournir une protection à vos points de terminaison à un taux beaucoup plus rapide que les mises à jour d’informations de sécurité traditionnelles. Microsoft Intune et Microsoft Endpoint Manager font désormais partie de [Microsoft Endpoint Manager.](/mem/endpoint-manager-overview) 
+> La protection cloud n’est pas simplement une protection pour les fichiers stockés dans le cloud. Le service Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et à vos appareils (également appelés points de terminaison). La protection cloud avec Antivirus Microsoft Defender utilise des ressources distribuées et l’apprentissage automatique pour fournir une protection à vos points de terminaison à un taux beaucoup plus rapide que les mises à jour d’intelligence de sécurité traditionnelles. Microsoft Intune et Microsoft Endpoint Manager font désormais partie de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). 
 
 
 ## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-delivered-protection"></a>Utiliser Microsoft Endpoint Manager pour spécifier le niveau de protection cloud
@@ -44,13 +44,13 @@ Vous pouvez spécifier votre niveau de protection cloud offerte par l’Antiviru
 
 2. Choisissez **l’Antivirus de sécurité des points de**  >  **terminaison.**
 
-3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les paramètres de [restriction d’appareil dans Microsoft Intune.](/intune/device-restrictions-configure)
+3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .
 
 4. Sélectionnez **les propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
 5. Développez **la protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
 
-    1. **Élevé**: applique un niveau élevé de détection.
+    1. **Élevé**: applique un niveau de détection élevé.
     2. **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut avoir un impact sur les performances du client).
     3. **Tolérance zéro :** bloque tous les exécutables inconnus.
 
@@ -70,12 +70,12 @@ Vous pouvez spécifier votre niveau de protection cloud offerte par l’Antiviru
 
 3.  Dans **l’Éditeur de gestion des stratégies de** groupe, allez aux   >  **modèles d’administration de configuration ordinateur.**
 
-4.  Développez l’arborescence **composants Windows**  >  **De l’Antivirus Microsoft Defender**  >  **MpEngine**.
+4.  Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **MpEngine**.
 
 5.  Double-cliquez sur le paramètre Sélectionner le **niveau de protection cloud** et définissez-le sur **Activé.** Sélectionnez le niveau de protection :
     - **Le niveau de blocage par défaut** offre une détection forte sans augmenter le risque de détection de fichiers légitimes.
     - **Un niveau de blocage modéré** fournit un niveau modéré uniquement pour les détections à niveau de confiance élevé
-    - **Un niveau de blocage élevé** applique un niveau élevé de détection tout en optimisant les performances du client (mais peut également vous donner davantage de chances de faux positifs).
+    - **Un niveau de blocage élevé** applique un niveau élevé de détection tout en optimisant les performances du client (mais peut également vous donner plus de chances de faux positifs).
     - **Un niveau élevé + de blocage applique** des mesures de protection supplémentaires (peut avoir un impact sur les performances du client et augmenter votre risque de faux positifs).
     - **Le niveau de blocage de tolérance zéro** bloque tous les exécutables inconnus.
     
@@ -91,6 +91,6 @@ Vous pouvez spécifier votre niveau de protection cloud offerte par l’Antiviru
   
 ## <a name="related-articles"></a>Articles connexes
 
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Activer la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Comment créer et déployer des stratégies de logiciel anti-programme malveillant : service de protection cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

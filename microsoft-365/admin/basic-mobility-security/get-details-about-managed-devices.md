@@ -33,7 +33,7 @@ Voici une répartition des détails de l’appareil à votre disposition.
 
 |**Detail**|**Ce qu’il faut rechercher dans PowerShell**|
 |:----------------|:------------------------------------------------------------------------------|
-|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged est*   :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
+|L’appareil est inscrit à Basic Mobility and Security. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md)|La valeur du *paramètre isManaged*   est :<br/>**True**= l’appareil est inscrit.<br/>**False**= l’appareil n’est pas inscrit. |
 |L’appareil est conforme aux stratégies de sécurité de votre appareil. Pour plus d’informations, voir [Créer des stratégies de sécurité d’appareil](create-device-security-policies.md)|La valeur du *paramètre isCompliant*   est :<br/>**True**   = l’appareil est conforme aux stratégies.<br/>**False**   = l’appareil n’est pas conforme aux stratégies.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Paramètres PowerShell de mobilité et de sécurité de base":::
@@ -110,7 +110,7 @@ Tout d’abord, enregistrez le script sur votre ordinateur.
 
 3.  [PSObject[]]$users = @(),
 
-4.  [Commutateur]$export,
+4.  [Switch]$export,
 
 5.  [String]$exportFileName = « UserDeviceComplianceStatus_ » + (Get-Date -Format « yyMMdd_HHMMss ») + « .csv »,
 
@@ -305,6 +305,6 @@ Les informations sont exportées vers votre bureau Windows en tant que fichier C
 
 [Microsoft Connecter été retiré](/collaborate/connect-redirect)
 
-[Vue d’ensemble de la fonction Mobility + Security de Base](overview.md)
+[Vue d’ensemble de la fonction Mobility + Security de Base](overview.md)
 
 [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)

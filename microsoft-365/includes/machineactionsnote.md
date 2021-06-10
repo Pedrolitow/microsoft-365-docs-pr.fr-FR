@@ -1,5 +1,5 @@
 ---
-title: Effectuer une action de l’ordinateur via l’API Microsoft Defender for Endpoint
+title: Effectuer une action de l’ordinateur via l’API Microsoft Defender pour le point de terminaison
 description: Cette page se concentre sur l’action d’un ordinateur via l’API Microsoft Defender pour endpoint.
 ms.date: 08/28/2017
 ms.reviewer: ''

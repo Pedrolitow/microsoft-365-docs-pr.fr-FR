@@ -1,5 +1,5 @@
 ---
-title: Afficher les licences et services Microsoft 365 avec PowerShell
+title: Afficher Microsoft 365 licences et services avec PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: Explique comment utiliser PowerShell pour afficher des informations sur les plans de gestion des licences, les services et les licences disponibles dans votre organisation Microsoft 365.
+description: Explique comment utiliser PowerShell pour afficher des informations sur les plans de gestion des licences, les services et les licences disponibles dans Microsoft 365 organisation.
 ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,24 +27,24 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924635"
 ---
-# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Afficher les licences et services Microsoft 365 avec PowerShell
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>Afficher Microsoft 365 licences et services avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Chaque abonnement Microsoft 365 comprend les éléments suivants :
+Chaque Microsoft 365 abonnement comprend les éléments suivants :
 
-- **Plans de gestion des licences** Ces plans sont également appelés plans de licence ou plans Microsoft 365. Les plans de gestion des licences définissent les services Microsoft 365 disponibles pour les utilisateurs. Votre abonnement Microsoft 365 peut contenir plusieurs plans de gestion des licences. Microsoft 365 E3 est un exemple de plan de gestion des licences.
+- **Plans de gestion des licences** Ces plans sont également appelés plans de licence ou plans Microsoft 365 de licence. Les plans de gestion des licences définissent Microsoft 365 services disponibles pour les utilisateurs. Votre abonnement Microsoft 365 peut contenir plusieurs plans de gestion des licences. Un exemple de plan de gestion des licences serait Microsoft 365 E3.
     
-- **Services** Ces plans sont également appelés plans de service. Les services sont les produits, fonctionnalités et fonctionnalités Microsoft 365 disponibles dans chaque plan de gestion des licences, par exemple, Exchange Online et Microsoft 365 Apps for enterprise (précédemment nommé Office 365 ProPlus). Des licences issues de différents plans de licence peuvent être attribuées à un même utilisateur, lui accordant l’accès à des services différents.
+- **Services** Ces plans sont également appelés plans de service. Les services sont les Microsoft 365, fonctionnalités et fonctionnalités disponibles dans chaque plan de gestion des licences, par exemple, Exchange Online et Applications Microsoft 365 pour les grandes entreprises (précédemment Office 365 ProPlus). Des licences issues de différents plans de licence peuvent être attribuées à un même utilisateur, lui accordant l’accès à des services différents.
     
-- **Licences** Chaque plan de gestion des licences contient le nombre de licences que vous avez achetées. Vous attribuez des licences aux utilisateurs afin qu’ils peuvent utiliser les services Microsoft 365 définis par le plan de gestion des licences. Chaque compte d’utilisateur nécessite au moins une licence d’un plan de gestion des licences pour pouvoir se connecter à Microsoft 365 et utiliser les services.
+- **Licences** Chaque plan de gestion des licences contient le nombre de licences que vous avez achetées. Vous attribuez des licences aux utilisateurs afin qu’ils peuvent utiliser les services Microsoft 365 définis par le plan de gestion des licences. Chaque compte d’utilisateur nécessite au moins une licence d’un plan de gestion des licences afin qu’il puisse se connecter Microsoft 365 et utiliser les services.
     
-Vous pouvez utiliser PowerShell pour Microsoft 365 pour afficher des détails sur les plans de gestion des licences, les licences et les services disponibles dans votre organisation Microsoft 365. Pour plus d’informations sur les produits, fonctionnalités et services disponibles dans différents abonnements Office 365, voir Options de plan [Office 365.](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+Vous pouvez utiliser PowerShell pour Microsoft 365 pour afficher des détails sur les plans de gestion des licences, les licences et les services disponibles dans Microsoft 365 organisation. Pour plus d’informations sur les produits, fonctionnalités et services disponibles dans différents abonnements Office 365, voir Office 365 [Options de plan.](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 Pour afficher des informations récapitulatifs sur vos plans de gestion des licences actuels et les licences disponibles pour chaque plan, exécutez la commande ci-après :
   
@@ -54,7 +54,7 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 Les résultats contiennent :
   
-- **SkuPartNumber :** Affiche les plans de gestion des licences disponibles pour votre organisation. Par exemple, `ENTERPRISEPACK` est le nom du plan de licence pour Office 365 Entreprise E3.
+- **SkuPartNumber :** Affiche les plans de gestion des licences disponibles pour votre organisation. Par exemple, `ENTERPRISEPACK` est le nom du plan de licence Office 365 Entreprise E3.
     
 - **Activé :** Nombre de licences que vous avez achetées pour un plan de gestion des licences spécifique.
     
@@ -103,7 +103,7 @@ Pour obtenir la liste complète des plans de licence (également appelés noms d
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 >[!Note]
 >Un script PowerShell est disponible pour automatiser les procédures décrites dans cette rubrique. Plus précisément, le script vous permet d’afficher et de désactiver des services dans votre organisation Microsoft 365, y compris Sway. Pour plus d’informations, voir [Désactiver l’accès à Sway avec PowerShell.](disable-access-to-sway-with-microsoft-365-powershell.md)
@@ -121,7 +121,7 @@ Get-MsolAccountSku
 
 Les résultats contiennent les informations suivantes :
   
-- **AccountSkuId :** Affichez les plans de gestion des licences disponibles pour votre organisation à l’aide de la `<CompanyName>:<LicensingPlan>` syntaxe.  _\<CompanyName>_ est la valeur que vous avez fournie lorsque vous vous êtes inscrit à Microsoft 365 et est unique pour votre organisation. La _\<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur , le nom de la société est et le nom du plan de gestion des licences, qui est le nom du système `litwareinc:ENTERPRISEPACK`  `litwareinc` pour Office  `ENTERPRISEPACK` 365 Entreprise E3.
+- **AccountSkuId :** Affichez les plans de gestion des licences disponibles pour votre organisation à l’aide de la `<CompanyName>:<LicensingPlan>` syntaxe.  _\<CompanyName>_ est la valeur que vous avez fournie lorsque vous vous êtes inscrit à Microsoft 365 et est unique pour votre organisation. La _\<LicensingPlan>_ valeur est la même pour tout le monde. Par exemple, dans la valeur , le nom de la société est et le nom du plan de gestion des licences, qui est le nom du système `litwareinc:ENTERPRISEPACK` `litwareinc` Office 365 Entreprise `ENTERPRISEPACK` E3.
     
 - **ActiveUnits :** Nombre de licences que vous avez achetées pour un plan de gestion des licences spécifique.
     
@@ -135,16 +135,16 @@ Pour afficher des détails sur les services Microsoft 365 disponibles dans tous 
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-Le tableau suivant présente les plans de service Microsoft 365 et leurs noms convivial pour les services les plus courants. La liste de vos plans de services peut être différente. 
+Le tableau suivant présente les plans Microsoft 365 service et leurs noms convivial pour les services les plus courants. La liste de vos plans de services peut être différente. 
   
 |**Plan de services**|**Description**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Applications Microsoft 365 pour les entreprises *(précédemment nommé Office 365 ProPlus)*  <br/> |
-| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Applications Microsoft 365 pour les grandes entreprises *(précédemment Office 365 ProPlus)*  <br/> |
+| `MCOSTANDARD` <br/> |Skype Entreprise Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online (plan 2)  <br/> |

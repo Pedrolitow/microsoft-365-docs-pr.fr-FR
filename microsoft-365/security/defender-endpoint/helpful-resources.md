@@ -1,7 +1,7 @@
 ---
 title: Ressources Utiles de Microsoft Defender pour les points de terminaison
 description: Accéder à des ressources utiles telles que des liens vers des blogs et d’autres ressources liées à Microsoft Defender for Endpoint
-keywords: Centre de sécurité Microsoft Defender, brèves, brèves, fonctionnalités, licences
+keywords: Centre de sécurité Microsoft Defender, produit bref, bref, fonctionnalités, gestion des licences
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 727576ab75d77d12be0595c081586f411887da49
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5ecee4a71ef0b6f607a284766163a90f16bc27dc
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165440"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843064"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>Ressources Utiles de Microsoft Defender pour les points de terminaison
 
@@ -30,14 +30,14 @@ ms.locfileid: "51165440"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Accédez à des ressources utiles, telles que des liens vers des blogs et d’autres ressources relatives à Microsoft Defender for Endpoint.
+Accédez à des ressources utiles telles que des liens vers des blogs et d’autres ressources liées à Microsoft Defender for Endpoint.
 
 ## <a name="endpoint-protection-platform"></a>Plateforme de protection des points de terminaison
-- [Meilleurs résultats dans les tests du secteur](https://docs.microsoft.com/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
+- [Meilleurs résultats dans les tests du secteur](/windows/security/threat-protection/intelligence/top-scoring-industry-antivirus-tests)
 
 - [À l’intérieur : découvrir les technologies avancées au cœur de la protection nouvelle génération de Defender pour Endpoint](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
@@ -61,4 +61,4 @@ Accédez à des ressources utiles, telles que des liens vers des blogs et d’au
 
 - [Comment l’automatisation apporte de la valeur à vos équipes de sécurité](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 
-- [Corriger les faux positifs/négatifs dans Microsoft Defender pour le point de terminaison](defender-endpoint-false-positives-negatives.md)
+- [Résoudre des faux négatifs/positifs dans Microsoft Defender pour point de terminaison](defender-endpoint-false-positives-negatives.md)

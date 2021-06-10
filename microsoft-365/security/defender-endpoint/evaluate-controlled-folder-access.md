@@ -71,7 +71,7 @@ ID de l'événement | Description
 
 Au cours de votre évaluation, vous pouvez ajouter des fichiers à la liste des dossiers protégés ou autoriser certaines applications à modifier des fichiers.
 
-Voir [Protéger les dossiers](controlled-folders.md) importants avec accès contrôlé aux dossiers pour configurer la fonctionnalité à l’aide d’outils de gestion, y compris la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) DE GESTION.
+Voir [Protéger les dossiers](controlled-folders.md) importants avec un accès contrôlé aux dossiers pour configurer la fonctionnalité à l’aide des outils de gestion, notamment la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) DE GESTION.
 
 ## <a name="see-also"></a>Voir aussi
 

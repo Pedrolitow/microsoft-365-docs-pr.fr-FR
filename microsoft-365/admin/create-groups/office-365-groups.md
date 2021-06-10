@@ -98,9 +98,9 @@ Vous pouvez créer des étiquettes de niveau de sensibilité que les utilisateur
 Par exemple, vous pouvez créer une étiquette appelée *Hautement* confidentiel et spécifier que tout groupe créé avec cette étiquette sera privé et n’autorisera pas les utilisateurs externes. Lorsque les utilisateurs de votre organisation sélectionnent cette étiquette lors de la création du groupe, le groupe est définie sur privé et les membres du groupe ne sont pas autorisés à ajouter des utilisateurs externes au groupe.
 
 > [!IMPORTANT]
-> Si vous utilisez actuellement des étiquettes de classification, elles ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois les étiquettes de niveau de sensibilité activées. 
+> Si vous utilisez actuellement des étiquettes de classification, elles ne seront plus disponibles pour les utilisateurs qui créent des groupes une fois les étiquettes de sensibilité activées. 
 
-Pour plus d’informations sur la création, la gestion et l’utilisation d’étiquettes de sensibilité, voir Utiliser des étiquettes de niveau de sensibilité pour protéger le contenu dans Microsoft Teams, Microsoft 365 groupes et [sites SharePoint sites.](../../compliance/sensitivity-labels-teams-groups-sites.md)
+Pour plus d’informations sur la création, la gestion et l’utilisation d’étiquettes de sensibilité, voir Utiliser des étiquettes de niveau de sensibilité pour protéger le contenu dans [Microsoft Teams, Microsoft 365 groupes](../../compliance/sensitivity-labels-teams-groups-sites.md)et sites SharePoint sites.
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>Quels plans Microsoft 365 les groupes sont-ils inclus ?
 
@@ -115,7 +115,7 @@ Microsoft 365 groupes fonctionnent avec Azure Active Directory. Les fonctionnali
 
 > [!IMPORTANT]
 > Pour toutes les fonctionnalités des groupes, si vous disposez d’un abonnement Azure AD Premium, les utilisateurs peuvent rejoindre le groupe, qu’une licence AAD P1 leur soit attribuée ou non. La gestion des licences n’est pas appliquée.
-> Régulièrement, nous allons générer des rapports d’utilisation qui vous indiquent quels utilisateurs manquent une licence et en ont besoin pour être conformes aux exigences de licence. Par exemple, supposons qu’un utilisateur n’a pas de licence et qu’il est ajouté à un groupe dans lequel la stratégie d’attribution de noms est appliquée. Le rapport vous indique qu’il a besoin d’une licence.
+> Régulièrement, nous allons générer des rapports d’utilisation qui vous indiquent quels utilisateurs manquent une licence et en ont besoin pour être conformes aux exigences de licence. Par exemple, supposons qu’un utilisateur n’a pas de licence et qu’il est ajouté à un groupe dans lequel la stratégie d’attribution de noms est appliquée. Le rapport indique qu’il a besoin d’une licence.
 
 ## <a name="related-content"></a>Contenu associé
 

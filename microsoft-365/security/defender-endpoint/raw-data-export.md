@@ -36,7 +36,7 @@ ms.locfileid: "52782752"
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Diffusez des événements de recherche avancée sur des hubs d’événements et/ou un compte de stockage Azure.
 
 
-Microsoft Defender pour le point [](../defender/advanced-hunting-overview.md) de terminaison prend en charge les événements de diffusion en continu disponibles via le service de recherche avancée sur un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/storage/common/storage-account-overview)
+Microsoft Defender pour point de [](../defender/advanced-hunting-overview.md) terminaison prend en charge les événements de diffusion en continu disponibles via le service de recherche avancée sur un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/storage/common/storage-account-overview)
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 

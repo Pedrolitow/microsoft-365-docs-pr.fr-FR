@@ -31,13 +31,13 @@ ms.locfileid: "52274831"
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Consulter les détails et les résultats d'un examen automatisé
 
 **S’applique à :**
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 Avec Microsoft Defender pour le [](automated-investigations.md) point de terminaison, lorsqu’une enquête automatisée s’exécute, des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous disposez des autorisations nécessaires, vous pouvez afficher ces détails dans une vue Détails de l'examen. La vue Détails de l’examen vous fournit l’État à jour et la possibilité d’approuver les actions en attente. 
 
 ## <a name="new-unified-investigation-page"></a>(NOUVEAU!) Page Examen unifié
 
-La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les examens automatiques dans Microsoft Defender pour [Endpoint](microsoft-defender-endpoint.md) et [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp). 
+La page d’examen a récemment été mise à jour pour inclure des informations sur vos appareils, votre courrier électronique et le contenu de collaboration. La nouvelle page d’enquête unifiée définit un langage commun et fournit une expérience unifiée pour les enquêtes automatiques dans Microsoft Defender pour [Endpoint](microsoft-defender-endpoint.md) et [Microsoft Defender pour Office 365](/microsoft-365/security/office-365-security/office-365-atp). 
 
 > [!TIP]
 > Pour en savoir plus sur ce qui change, voir [(NOUVEAU!) Page d’examen unifié](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -59,7 +59,7 @@ Le centre de [mesures amélioré](auto-investigation-action-center.md) regroupe 
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md).
+   - Sélectionnez **Go hunt** (Aller à la recherche) pour aller [dans le recherche avancée](advanced-hunting-overview.md).
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>Ouvrez un examen dans une page de détails d’incident
 

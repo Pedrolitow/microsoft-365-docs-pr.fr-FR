@@ -1,7 +1,7 @@
 ---
 title: Obtenir les vulnérabilités découvertes
 description: Récupère une collection de vulnérabilités découvertes liées à un ID d’appareil donné.
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, vulnérabilités découvertes, api & gestion des vulnérabilités menace, Api tvm microsoft Defender pour point de terminaison
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, vulnérabilités découvertes, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ac7a9ef932f2640bbc5325f0154c0ceb48ae3018
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 73d9803736df546f2381b7a84c9089d2460c4c44
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772292"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843081"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Obtenir les vulnérabilités découvertes
 
@@ -40,7 +40,7 @@ ms.locfileid: "52772292"
 ## <a name="api-description"></a>Description de l’API
 Récupère une collection de vulnérabilités découvertes liées à un ID d’appareil donné.
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 50 appels par minute et de 1 500 appels par heure.
 
 ## <a name="permissions"></a>Autorisations
@@ -110,5 +110,5 @@ Voici un exemple de réponse.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des menaces & vulnérabilité basée sur les risques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnérabilités dans votre organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Gestion des menaces & vulnérabilité basée sur les risques](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Vulnérabilités de votre organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

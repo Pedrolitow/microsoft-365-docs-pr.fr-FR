@@ -110,10 +110,10 @@ Nous vous recommandons d’inclure la configuration de l’emplacement des donn�
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Configuration de OneDrive et l’effet de PDL
 
-Si l’utilisateur possède déjà un site OneDrive créé dans le client, configurer son emplacement des données par défaut ne déplace pas automatiquement son OneDrive existant. Pour déplacer le OneDrive d’un utilisateur, voir [OneDrive](move-onedrive-between-geo-locations.md)Entreprise Geo Move .
+Si l’utilisateur possède déjà un site OneDrive créé dans le client, configurer son emplacement des données par défaut ne déplace pas automatiquement son OneDrive existant. Pour déplacer le déplacement d’un OneDrive, voir [OneDrive Entreprise Geo Move](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
-> Exchange Online relocalise automatiquement la boîte aux lettres de l’utilisateur si le PLD change et que MailboxRegion ne correspond plus au code d’emplacement géographique de la base de données de boîtes aux lettres. Pour plus d’informations, [voir Administering Exchange Online mailboxes in a multi-geo environment](./administering-exchange-online-multi-geo.md).
+> Exchange Online relocalisation automatique de la boîte aux lettres de l’utilisateur si le PLD change et que MailboxRegion ne correspond plus au code d’emplacement géographique de la base de données de boîtes aux lettres. Pour plus d’informations, [voir Administering Exchange Online mailboxes in a multi-geo environment](./administering-exchange-online-multi-geo.md).
 
 Si l’utilisateur ne dispose pas d’un site OneDrive dans le client, OneDrive est approvisionné pour lui conformément à la valeur de son emplacement des données par défaut en supposant que ce dernier correspond à l’un des emplacements satellites de l’entreprise.
 

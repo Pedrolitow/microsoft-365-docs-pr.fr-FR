@@ -31,7 +31,7 @@ ms.locfileid: "52275119"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par des processus Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent aux analyses [programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
+Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par des processus Antivirus Microsoft Defender analyses. Ces exclusions s’appliquent [aux analyses programmées,](scheduled-catch-up-scans-microsoft-defender-antivirus.md)aux analyses à la demande [et](run-scan-microsoft-defender-antivirus.md)à la protection et à la surveillance en temps réel toujours en [temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Les exclusions pour les fichiers ouverts par le processus s’appliquent uniquement à la protection en temps réel.
 
 ## <a name="configure-and-validate-exclusions"></a>Configurer et valider des exclusions
 

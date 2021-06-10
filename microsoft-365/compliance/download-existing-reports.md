@@ -1,5 +1,5 @@
 ---
-title: Télécharger des rapports existants dans le Centre de &amp; conformité de la sécurité
+title: Télécharger des rapports existants dans le Centre de &amp; conformité de sécurité
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -22,14 +22,14 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52275227"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Télécharger des rapports existants dans le Centre de &amp; conformité de la sécurité
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Télécharger des rapports existants dans le Centre de &amp; conformité de sécurité
 
 Dans le [Centre de &amp; conformité de](https://protection.office.com)la sécurité, plusieurs rapports et informations sont disponibles pour aider l’équipe de sécurité de votre organisation à atténuer et à traiter les [menaces](../security/office-365-security/reports-and-insights-in-security-and-compliance.md) qui pèsent sur votre organisation. Si vous êtes membre de l’équipe de sécurité de votre organisation, vous pouvez télécharger un ou plusieurs rapports existants. 
   
 ## <a name="download-existing-reports"></a>Télécharger des rapports existants
 
 > [!IMPORTANT]
-> Assurez-vous que vous avez les [autorisations nécessaires attribuées dans le Centre de &amp; conformité de sécurité.](../security/office-365-security/protect-against-threats.md) En règle générale, les administrateurs généraux, les administrateurs de sécurité et les lecteurs de sécurité peuvent accéder aux rapports dans le Centre de conformité &amp; de sécurité. 
+> Assurez-vous que vous avez les [autorisations nécessaires attribuées dans le Centre de conformité &amp; de sécurité.](../security/office-365-security/protect-against-threats.md) En règle générale, les administrateurs généraux, les administrateurs de sécurité et les lecteurs de sécurité peuvent accéder aux rapports dans le Centre de conformité &amp; de sécurité. 
   
 1. Dans le [Centre de conformité de &amp; sécurité,](https://protection.office.com)allez à **Rapports** de rapports pour \> **le téléchargement.**
 
@@ -43,6 +43,6 @@ Dans le [Centre de &amp; conformité de](https://protection.office.com)la sécur
   
 [Créer une planification pour un rapport dans le Centre de &amp; conformité de sécurité](../security/office-365-security/view-reports-for-mdo.md)
   
-[Gérer les planifications des rapports dans le Centre de &amp; conformité de la sécurité](../security/office-365-security/view-reports-for-mdo.md)
+[Gérer les planifications des rapports dans le Centre de &amp; conformité de sécurité](../security/office-365-security/view-reports-for-mdo.md)
   
 [Télécharger un rapport personnalisé dans le Centre de &amp; conformité de sécurité](../security/office-365-security/view-reports-for-mdo.md)

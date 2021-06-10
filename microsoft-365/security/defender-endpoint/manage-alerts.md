@@ -1,7 +1,7 @@
 ---
 title: Gérer les alertes microsoft Defender pour les points de terminaison
 description: Modifiez l’état des alertes, créez des règles de suppression pour masquer les alertes, envoyez des commentaires et examinez l’historique des changements pour les alertes individuelles à l’intérieur du menu Gérer les alertes.
-keywords: gérer les alertes, gérer, alertes, état, nouveau, en cours, résolu, résoudre les alertes, supprimer, supprimer, règles, contexte, historique, commentaires, modifications
+keywords: gérer les alertes, gérer, alertes, état, nouveau, en cours, résolu, résoudre les alertes, supprimer, suppression, règles, contexte, historique, commentaires, modifications
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -29,7 +29,7 @@ ms.locfileid: "51187000"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
@@ -50,7 +50,7 @@ Si une alerte n’est pas encore attribuée, vous pouvez sélectionner Affecter 
 
 
 ## <a name="suppress-alerts"></a>Supprimer des alertes
-Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans le Centre de sécurité Microsoft Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
+Dans certains scénarios, vous devrez peut-être supprimer l’apparition d’alertes dans Centre de sécurité Microsoft Defender. Defender pour le point de terminaison vous permet de créer des règles de suppression pour des alertes spécifiques qui sont connues comme étant superflues, telles que des outils ou des processus connus dans votre organisation.
 
 Les règles de suppression peuvent être créées à partir d’une alerte existante. Elles peuvent être désactivées et réactivées si nécessaire.
 
@@ -71,9 +71,9 @@ Vous pouvez utiliser les exemples du tableau suivant pour vous aider à choisir 
 | **Supprimer une alerte dans mon organisation** | Les alertes avec le même titre d’alerte sur n’importe quel appareil seront supprimées.                                                                                         | <ul><li>Un outil d’administration anodin est utilisé par tous les membres de votre organisation.</li></ul>                                                                                                                               |
 
 ### <a name="suppress-an-alert-and-create-a-new-suppression-rule"></a>Supprimez une alerte et créez une règle de suppression :
-Créez des règles personnalisées pour contrôler quand les alertes sont supprimées ou résolues. Vous pouvez contrôler le contexte de suppression d’une alerte en spécifiant le titre de l’alerte, l’indicateur de compromis et les conditions. Après avoir spécifié le contexte, vous pourrez configurer l’action et l’étendue de l’alerte. 
+Créez des règles personnalisées pour contrôler quand les alertes sont supprimées ou résolues. Vous pouvez contrôler le contexte de suppression d’une alerte en spécifiant le titre de l’alerte, l’indicateur de compromis et les conditions. Après avoir spécifié le contexte, vous serez en mesure de configurer l’action et l’étendue de l’alerte. 
 
-1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet gestion  des alertes s’en charge.
+1. Sélectionnez l’alerte que vous souhaitez supprimer. Le volet Gestion  des alertes s’en charge.
 
 2.  Sélectionnez **Créer une règle de suppression.**
 
@@ -98,7 +98,7 @@ Créez des règles personnalisées pour contrôler quand les alertes sont suppri
 
 #### <a name="view-the-list-of-suppression-rules"></a>Afficher la liste des règles de suppression
 
-1. Dans le volet de navigation, sélectionnez **Suppression de l’alerte**  >  **paramètres.**
+1. Dans le volet de navigation, sélectionnez Paramètres  >  **suppression de l’alerte.**
 
 2. La liste des règles de suppression affiche toutes les règles créées par les utilisateurs de votre organisation.
 
@@ -126,7 +126,7 @@ Les commentaires ajoutés apparaissent instantanément dans le volet.
 
 
 ## <a name="related-topics"></a>Voir aussi
-- [Gérer les règles de suppression](manage-suppression-rules.md)
+- [Gérer des règles de suppression](manage-suppression-rules.md)
 - [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison](investigate-files.md)

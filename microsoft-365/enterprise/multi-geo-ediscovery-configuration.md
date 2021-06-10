@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
-description: Découvrez comment utiliser le paramètre Region pour configurer eDiscovery pour une utilisation dans des emplacements satellites dans Microsoft 365 Multi-Geo.
+description: Découvrez comment utiliser le paramètre Region pour configurer eDiscovery pour une utilisation dans des emplacements satellites Microsoft 365 multigéogé.
 ms.openlocfilehash: 4d3481fe8b72bb970893ce065293a7a2cc717331
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,9 +22,9 @@ ms.locfileid: "50923719"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuration eDiscovery dans Microsoft 365 Multi-Geo
 
-[Les fonctionnalités eDiscovery](../compliance/overview-ediscovery-20.md) avancées permettent à un administrateur eDiscovery multigéogé de rechercher toutes les régions géographiques sans avoir à utiliser un filtre de sécurité « Région ». Les données sont exportées vers l’instance Azure de l’emplacement central du client multigéogé. 
+[Advanced eDiscovery permettent](../compliance/overview-ediscovery-20.md) à un administrateur eDiscovery multigéogé de rechercher toutes les régions géographiques sans avoir à utiliser un filtre de sécurité « Région ». Les données sont exportées vers l’instance Azure de l’emplacement central du client multigéogé. 
 
-Sans fonctionnalités eDiscovery avancées, un gestionnaire eDiscovery ou un administrateur d’un client multigéogé ne pourra mener eDiscovery qu’à l’emplacement central de ce client. Pour prendre en charge la possibilité d’effectuer eDiscovery pour des emplacements satellites, un nouveau paramètre de filtre de sécurité de conformité nommé « Region » est disponible via PowerShell. Ce paramètre peut être utilisé par les locataires dont l’emplacement central se trouve en Amérique du Nord, en Europe ou en Asie-Pacifique. Advanced eDiscovery est recommandé pour les locataires dont l’emplacement central n’est pas en Amérique du Nord, en Europe ou en Asie-Pacifique et qui doivent effectuer eDiscovery sur plusieurs emplacements géographiques satellites. 
+Sans fonctionnalités eDiscovery avancées, un gestionnaire eDiscovery ou un administrateur d’un client multigéogé ne pourra mener eDiscovery qu’à l’emplacement central de ce client. Pour prendre en charge la possibilité d’effectuer eDiscovery pour des emplacements satellites, un nouveau paramètre de filtre de sécurité de conformité nommé « Region » est disponible via PowerShell. Ce paramètre peut être utilisé par les locataires dont l’emplacement central se trouve en Amérique du Nord, en Europe ou en Asie-Pacifique. Advanced eDiscovery est recommandé pour les locataires dont l’emplacement central n’est pas situé en Amérique du Nord, en Europe ou en Asie-Pacifique et qui doivent effectuer eDiscovery sur plusieurs emplacements géographiques satellites. 
 
 L’administrateur général Microsoft 365 doit affecter les autorisations de gestionnaire eDiscovery pour autoriser d’autres personnes à mettre en place un processus eDiscovery, et affecter un paramètre "Région" dans le filtre de sécurité de conformité correspondant pour définir la région concernée par le processus comme emplacement satellite. Sinon, aucun processus eDiscovery n’est mis en place à l’emplacement satellite.
 

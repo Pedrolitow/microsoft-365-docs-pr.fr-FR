@@ -1,5 +1,5 @@
 ---
-title: Utilisation de PowerShell pour effectuer une migration IMAP vers Microsoft 365
+title: Utilisation de PowerShell pour effectuer une migration IMAP vers Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -23,9 +23,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924767"
 ---
-# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration IMAP vers Microsoft 365
+# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Utilisation de PowerShell pour effectuer une migration IMAP vers Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Dans le cadre du processus de déploiement de Microsoft 365, vous pouvez choisir de migrer le contenu des boîtes aux lettres utilisateur d’un service de messagerie IMAP (Internet Mail Access Protocol) vers Microsoft 365. Cet article décrit les tâches correspondant à une migration de messagerie IMAP à l'aide d'Exchange Online PowerShell. 
   
@@ -55,9 +55,9 @@ Les migrations IMAP font l'objet des restrictions suivantes :
 ### <a name="step-1-prepare-for-an-imap-migration"></a>Étape 1 : Préparez une migration IMAP
 <a name="BK_Step1"> </a>
 
-- **Si vous avez un domaine pour votre organisation IMAP, ajoutez-le en tant que domaine accepté de votre organisation Microsoft 365.** Si vous souhaitez utiliser le même domaine que celui que vous possédez déjà pour vos boîtes aux lettres Microsoft 365, vous devez d’abord l’ajouter en tant que domaine accepté à Microsoft 365. Une fois que vous l’avez ajouté, vous pouvez créer vos utilisateurs dans Microsoft 365. Pour plus d’informations,[voir Vérifier votre domaine.](../admin/setup/add-domain.md)
+- **Si vous avez un domaine pour votre organisation IMAP, ajoutez-le en tant que domaine accepté de Microsoft 365 organisation.** Si vous souhaitez utiliser le même domaine que celui que vous possédez déjà pour vos boîtes aux lettres Microsoft 365, vous devez d’abord l’ajouter en tant que domaine accepté à Microsoft 365. Une fois que vous l’avez ajouté, vous pouvez créer vos utilisateurs dans Microsoft 365. Pour plus d’informations,[voir Vérifier votre domaine.](../admin/setup/add-domain.md)
     
-- **Ajoutez chaque utilisateur à Microsoft 365 afin qu’il y a une boîte aux lettres.** Pour obtenir des instructions, voir[Ajouter des utilisateurs à Microsoft 365 pour les entreprises.](../admin/add-users/add-users.md)
+- **Ajoutez chaque utilisateur à Microsoft 365 de sorte qu’il y a une boîte aux lettres.** Pour obtenir des instructions, voir[Ajouter des utilisateurs Microsoft 365 pour les entreprises.](../admin/add-users/add-users.md)
     
 - **Obtenez le nom de domaine complet (FQDN) du serveur IMAP.** Lorsque vous créez un point de terminaison de migration IMAP, vous devez fournir le nom de domaine complet (FQDN) (également appelénom complet de l'ordinateur) du serveur IMAP à partir duquel vous allez migrer les données de boîte aux lettres. Utilisez un client IMAP ou la commande PING pour vérifier que vous pouvez utiliser le FQDN pour communiquer avec le serveur IMAP sur Internet.
     
@@ -84,7 +84,7 @@ Identifiez le groupe d'utilisateurs dont vous voulez migrer les boîtes aux lett
   
 Les attributs obligatoires pour chaque utilisateur sont les suivants : 
   
-- **EmailAddress spécifie** l’ID utilisateur de la boîte aux lettres Microsoft 365 de l’utilisateur.
+- **EmailAddress spécifie** l’ID utilisateur de la boîte aux lettres Microsoft 365'utilisateur.
     
 - **UserName** spécifie le nom de connexion du compte à utiliser pour accéder à la boîte aux lettres sur le serveur IMAP.
     
@@ -136,7 +136,7 @@ paulc@contoso.edu,#paul.cannon@contoso-students.edu#mailadmin#,P@ssw0rd
 
  **Courier IMAP :**
   
-Certains systèmes de messagerie source, tels que Courier IMAP, ne sont pas en mesure d’utiliser les informations d’identification d’administrateur de boîte aux lettres pour migrer des boîtes aux lettres vers Microsoft 365. Au lieu de cela, vous pouvez configurer votre système de messagerie source de sorte qu'il utilise des dossiers partagés virtuels. Les dossiers partagés virtuels vous permettent d'utiliser les informations d'identification d'administrateur de boîte aux lettres pour accéder aux boîtes aux lettres utilisateur sur le système de messagerie source. Pour plus d'informations sur la façon de configurer des dossiers partagés virtuels pour Courier IMAP, consultez l'article relatif aux [dossiers partagés](https://go.microsoft.com/fwlink/p/?LinkId=398870).
+Certains systèmes de messagerie source, tels que Courier IMAP, ne peuvent pas prendre en charge l’utilisation des informations d’identification d’administrateur de boîte aux lettres pour migrer des boîtes aux lettres vers Microsoft 365. Au lieu de cela, vous pouvez configurer votre système de messagerie source de sorte qu'il utilise des dossiers partagés virtuels. Les dossiers partagés virtuels vous permettent d'utiliser les informations d'identification d'administrateur de boîte aux lettres pour accéder aux boîtes aux lettres utilisateur sur le système de messagerie source. Pour plus d'informations sur la façon de configurer des dossiers partagés virtuels pour Courier IMAP, consultez l'article relatif aux [dossiers partagés](https://go.microsoft.com/fwlink/p/?LinkId=398870).
   
 Pour migrer des boîtes aux lettres après avoir configuré des dossiers partagés virtuels sur votre système de messagerie source, vous devez inclure l'attribut facultatif **UserRoot** dans le fichier de migration. Cet attribut spécifie l'emplacement de la boîte aux lettres de chaque utilisateur dans la structure de dossiers partagés virtuels sur le système de messagerie source. Par exemple, le chemin d'accès de la boîte aux lettres de Terry est /users/terry.adams.
   
@@ -152,7 +152,7 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>Étape 3 : Créez un point de terminaison de migration IMAP
 <a name="BK_Step3"> </a>
 
-Pour migrer correctement le courrier électronique, Microsoft 365 doit se connecter au système de courrier source et communiquer avec lui. Pour ce faire, Microsoft 365 utilise un point de terminaison de migration. Le point de terminaison de migration définit également le nombre de boîtes aux lettres à migrer simultanément, ainsi que le nombre de boîtes aux lettres à synchroniser simultanément durant la synchronisation incrémentielle qui se produit toutes les 24 heures. Pour créer un point de terminaison de migration pour la migration IMAP, la première étape est de [se connecter à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). 
+Pour migrer correctement le courrier électronique, Microsoft 365 doit se connecter au système de courrier source et communiquer avec lui. Pour ce faire, Microsoft 365 un point de terminaison de migration. Le point de terminaison de migration définit également le nombre de boîtes aux lettres à migrer simultanément, ainsi que le nombre de boîtes aux lettres à synchroniser simultanément durant la synchronisation incrémentielle qui se produit toutes les 24 heures. Pour créer un point de terminaison de migration pour la migration IMAP, la première étape est de [se connecter à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). 
   
 Pour la liste complète des commandes de migration, voir [Cmdlets de déplacement et de migration](/powershell/exchange/).
   
@@ -205,10 +205,10 @@ Vous pouvez également vérifier que le lot a démarré en exécutant la command
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-microsoft-365"></a>Étape 5 : Router votre courrier électronique vers Microsoft 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>Étape 5 : Router votre courrier vers Microsoft 365
 <a name="BK_Step5"> </a>
 
-Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration du courrier vers Microsoft 365 est terminée, il est temps de pointer votre enregistrement MX vers Microsoft 365. Cela permet de s’assurer que le courrier électronique est remis à vos boîtes aux lettres Microsoft 365. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt. 
+Les systèmes de messagerie utilisent un enregistrement DNS appelé enregistrement MX pour identifier l'emplacement de remise des messages électroniques. Pendant le processus de migration de la messagerie, votre enregistrement MX pointe vers votre système de messagerie source. Maintenant que la migration de messagerie vers Microsoft 365 est terminée, il est temps de faire pointer votre enregistrement MX vers Microsoft 365. Cela permet de s’assurer que le courrier électronique est remis à Microsoft 365 boîtes aux lettres. En déplaçant l'enregistrement MX, vous pouvez également désactiver votre ancien système de messagerie lorsque vous êtes prêt. 
   
 Pour plusieurs fournisseurs DNS, il existe des instructions spécifiques pour modifier votre enregistrement MX. Si votre fournisseur DNS n'est pas inclus, ou si vous souhaitez avoir une idée des instructions générales, vous avez également accès à des [instructions générales sur les enregistrements MX](https://go.microsoft.com/fwlink/?LinkId=397449).
   
@@ -217,11 +217,11 @@ Il faut compter jusqu’à 72 heures pour que les systèmes de messagerie de vo
 ### <a name="step-6-delete-imap-migration-batch"></a>Étape 6 : Supprimez le lot de migration IMAP
 <a name="BK_Step6"> </a>
 
-Après avoir changé l’enregistrement MX et vérifié que tous les messages électroniques sont acheminés vers les boîtes aux lettres Microsoft 365, informez les utilisateurs que leur courrier est acheminé vers Microsoft 365. Après cela, vous pouvez supprimer le lot de migration IMAP. Avant de supprimer le lot de migration, vérifiez les points suivants.
+Après avoir changé l’enregistrement MX et vérifié que tous les messages électroniques sont acheminés vers des boîtes aux lettres Microsoft 365, informez les utilisateurs que leur courrier va Microsoft 365. Après cela, vous pouvez supprimer le lot de migration IMAP. Avant de supprimer le lot de migration, vérifiez les points suivants.
   
-- Tous les utilisateurs utilisent des boîtes aux lettres Microsoft 365. Une fois le lot supprimé, le courrier électronique envoyé aux boîtes aux lettres sur le site Exchange Server’est pas copié dans les boîtes aux lettres Microsoft 365 correspondantes.
+- Tous les utilisateurs utilisent Microsoft 365 boîtes aux lettres. Une fois le lot supprimé, le courrier électronique envoyé aux boîtes aux lettres sur l’Exchange Server local n’est pas copié dans les boîtes aux lettres Microsoft 365 correspondantes.
     
-- Les boîtes aux lettres Microsoft 365 ont été synchronisées au moins une fois après que le courrier leur a été envoyé directement. Pour ce faire, assurez-vous que la valeur de la zone Heure de la dernière synchronisation pour le lot de migration est plus récente que le moment où le courrier a commencé à être acheminé directement vers les boîtes aux lettres Microsoft 365.
+- Microsoft 365 boîtes aux lettres ont été synchronisées au moins une fois après que le courrier leur a été envoyé directement. Pour ce faire, assurez-vous que la valeur de la zone Heure de la dernière synchronisation pour le lot de migration est plus récente que le moment où le courrier a commencé à être acheminé directement vers Microsoft 365 boîtes aux lettres.
     
 Pour supprimer le lot de migration « IMAPBatch1 » dans Exchange Online PowerShell, exécutez la commande ci-dessous :
   

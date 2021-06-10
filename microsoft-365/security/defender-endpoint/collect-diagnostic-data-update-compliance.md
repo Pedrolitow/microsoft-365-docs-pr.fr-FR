@@ -36,17 +36,17 @@ Cet article explique comment collecter des données de diagnostic qui peuvent ê
 
 Avant d’essayer ce processus, assurez-vous que vous avez lu résolution des problèmes Antivirus Microsoft Defender [rapports,](troubleshoot-reporting.md)satisfait à toutes les conditions préalables requises et pris les autres suggestions de procédures de dépannage.
 
-Sur au moins deux appareils qui ne sont pas signalés ou qui s’affichent dans Update Compliance, obtenez le fichier de diagnostic .cab en suivant les étapes ci-après :
+Sur au moins deux appareils qui ne sont pas signalés ou qui s’affichent dans Update Compliance, obtenez le fichier de diagnostic .cab en suivant les étapes suivantes :
 
 1. Ouvrez une version de niveau administrateur de l’invite de commandes comme suit :
         
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de commandes,** puis cliquez **sur Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis cliquez **sur Exécuter en tant qu’administrateur.**
 
     c. Entrez les informations d’identification de l’administrateur ou approuvez l’invite.
         
-2. Accédez au répertoire Windows Defender’annuaire. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
+2. Accédez au répertoire Windows Defender de recherche. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
 
 3. Tapez la commande suivante, puis appuyez sur **Entrée**
         

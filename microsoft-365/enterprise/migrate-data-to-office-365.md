@@ -28,18 +28,18 @@ ms.locfileid: "50924071"
 
 ## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>Vous êtes prêt à migrer vos données vers Microsoft 365 ?
 
-Nos [instructions de base](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) sur la mise en place vous aident à obtenir tout le monde à l’aide de vos applications et services Microsoft 365 le plus rapidement possible. Cela ignore les scénarios hybrides et les méthodes plus avancées pour la migration vers Microsoft 365. 
+Nos [instructions de mise en place](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) de base vous aident à faire en Microsoft 365 vos applications et services de base le plus rapidement possible. Cela ignore les scénarios hybrides et les méthodes plus avancées pour la migration vers Microsoft 365. 
   
-Si vous souhaitez obtenir de l’aide pour configurer Microsoft 365, [FastTrack](https://fasttrack.microsoft.com/office) est le moyen le plus simple de déployer Microsoft 365, vous pouvez également vous inscrire et utiliser les guides d’installation pour les [services Microsoft 365.](setup-guides-for-microsoft-365.md)
+Si vous souhaitez obtenir de l’aide pour Microsoft 365, [FastTrack](https://fasttrack.microsoft.com/office) est le moyen le plus simple de déployer des Microsoft 365, vous pouvez également vous inscrire et utiliser les guides d’installation pour [Microsoft 365 services.](setup-guides-for-microsoft-365.md)
 
 ## <a name="migrate-email-to-microsoft-365"></a>Migrer le courrier vers Microsoft 365
-- Migrer avec Exchange hybride à l’aide de [l’Assistant de déploiement Exchange.](https://technet.microsoft.com/exdeploy2013) (Administrateur)
-- En savoir plus sur les différentes [façons de migrer le courrier vers Microsoft 365.](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)
+- Effectuer une migration avec Exchange hybride à l’aide de l’ [Assistant de Déploiement Exchange](https://technet.microsoft.com/exdeploy2013). (Administrateur)
+- En savoir plus sur les différentes [façons de migrer le courrier vers Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842).
 - Trouvez des solutions de remplacement [membres de votre organisation peuvent migrer leurs propres courrier électronique, contacts et calendriers](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## <a name="migrate-files-and-folders"></a>Effectuer une migration de fichiers et dossiers
-- [Migrez vers SharePoint Online et OneDrive.](/sharepointmigration/migrate-to-sharepoint-online) (Administrateur)
-- [Feuilles de route de configuration hybride SharePoint Server.](/SharePoint/hybrid/configuration-roadmaps) (Administrateur)
+- [Migrez vers SharePoint Online et OneDrive](/sharepointmigration/migrate-to-sharepoint-online). (Administrateur)
+- [SharePoint de configuration hybride de serveur.](/SharePoint/hybrid/configuration-roadmaps) (Administrateur)
 
 ## <a name="migrate-skype-for-business-users"></a>Migrer les utilisateurs de Skype Entreprise
 - [Migrer vers Skype entreprise Online](/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). (Administrateur)

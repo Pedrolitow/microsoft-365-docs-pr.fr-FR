@@ -31,17 +31,17 @@ ms.locfileid: "52275395"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 - Antivirus Microsoft Defender
-- Microsoft 365
+- Microsoft 365
 
 Vous savez peut-être déjà que :
 
 - Antivirus Microsoft Defender protéger votre appareil Windows 10 contre les menaces logicielles, telles que les virus, les programmes **malveillants et les logiciels espions.** Antivirus Microsoft Defender votre protection complète et continue, intégrée Windows 10 et prête à l’être. [Antivirus Microsoft Defender est votre protection nouvelle génération.](./microsoft-defender-antivirus-in-windows-10.md) 
 
-- **Office 365 inclut la protection anti-programme malveillant, anti-programme** malveillant et anti-programme malveillant. Avec votre abonnement Office 365, vous obtenez des courriers électroniques et des calendriers premium, des applications Office, 1 To de stockage cloud (via OneDrive) et une sécurité avancée sur tous vos appareils. Cela est vrai pour les utilisateurs famille et professionnels. Et si vous êtes un utilisateur d’entreprise et que votre organisation utilise Office 365 E5, vous obtenez une protection encore plus grande via Microsoft Defender pour Office 365 Se protéger contre les menaces avec [Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
+- **Office 365 inclut la protection anti-programme malveillant, anti-programme** malveillant et anti-programme malveillant. Avec votre abonnement Office 365, vous obtenez des courriers électroniques et des calendriers premium, des applications Office, 1 To de stockage cloud (via OneDrive) et une sécurité avancée sur tous vos appareils. Cela est vrai pour les utilisateurs famille et professionnels. Et si vous êtes un utilisateur d’entreprise et que votre organisation utilise Office 365 E5, vous obtenez une protection encore plus grande via Microsoft Defender pour Office 365 Protéger contre les menaces avec [Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 
-- OneDrive, inclus dans Office 365, vous permet de stocker vos fichiers et dossiers en ligne et de les partager comme vous le **souhaitez.** Vous pouvez travailler avec des personnes (pour le travail ou pour le plaisir) et co-auteur des fichiers qui sont stockés dans OneDrive. Vous pouvez également accéder à vos fichiers sur tous vos appareils (pc, téléphone et tablette). [Gérer le partage dans OneDrive](/OneDrive/manage-sharing).
+- **OneDrive, inclus dans Office 365,** vous permet de stocker vos fichiers et dossiers en ligne et de les partager comme vous le souhaitez. Vous pouvez travailler avec des personnes (pour le travail ou pour le plaisir) et co-auteur des fichiers qui sont stockés dans OneDrive. Vous pouvez également accéder à vos fichiers sur tous vos appareils (pc, téléphone et tablette). [Gérer le partage dans OneDrive](/OneDrive/manage-sharing).
 
-**Mais savez-vous qu’il existe de bonnes** raisons de sécurité pour Antivirus Microsoft Defender avec Office 365 ? En voici deux :
+**Mais savez-vous qu’il existe de bonnes** raisons de sécurité pour utiliser Antivirus Microsoft Defender avec Office 365 ? En voici deux :
 
  1. [Vous obtenez la protection et la récupération des ransomware.](#ransomware-protection-and-recovery)
 

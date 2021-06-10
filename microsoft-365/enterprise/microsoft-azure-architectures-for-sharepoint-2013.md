@@ -15,7 +15,7 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Découvrez les types de solutions SharePoint 2013 qui peuvent être hébergées sur des machines virtuelles Microsoft Azure et comment configurer Azure pour en héberger une.
+description: Découvrez quels types de solutions SharePoint 2013 peuvent être hébergés sur Microsoft Azure machines virtuelles et comment configurer Azure pour en héberger une.
 ms.openlocfilehash: eed74e2dcbe383f0f63e7f6ea2fc70fe7b51b1b3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "50924175"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Architectures Microsoft Azure pour SharePoint 2013
 
-Azure est un environnement propice à l'hébergement d'une solution SharePoint Server 2013. Dans la plupart des cas, nous recommandons Microsoft 365, mais une batterie de serveurs SharePoint Server hébergée dans Azure peut être une bonne option pour des solutions spécifiques. Cet article explique comment créer des solutions SharePoint adaptées à la plateforme Azure. Les deux solutions spécifiques suivantes sont utilisées comme exemples :
+Azure est un environnement propice à l'hébergement d'une solution SharePoint Server 2013. Dans la plupart des cas, nous vous recommandons Microsoft 365, mais une batterie de serveurs SharePoint hébergée dans Azure peut être une bonne option pour des solutions spécifiques. Cet article explique comment créer des solutions SharePoint adaptées à la plateforme Azure. Les deux solutions spécifiques suivantes sont utilisées comme exemples :
   
 - [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,8 +39,8 @@ Les services d'infrastructure Azure sont une option intéressante pour l'héberg
 |:-----|:-----|
 |Environnements de test et de développement  <br/> |Il est facile de créer et de gérer ces environnements.  <br/> |
 |Récupération d'urgence de batteries de serveurs SharePoint locales sur Azure  <br/> |**Centre de données secondaire hébergé** Utilisez Azure au lieu d'investir dans un centre de données secondaire dans une autre région. <br/> **Environnements de récupération d'urgence à moindre coût** Tenez à jour et payez pour moins de ressources qu'un environnement de récupération d'urgence local. Le nombre de ressources dépend de l'environnement de récupération d'urgence choisi : reprise progressive, secours semi-automatique ou serveur de secours.<br/> **Plateforme plus flexible** En cas d'incident, augmentez facilement la taille des instances de votre batterie SharePoint de récupération pour répondre aux exigences de charge. Diminuez la taille des instances lorsque vous n'avez plus besoin des ressources.<br/> Voir [Récupération d'urgence SharePoint Server 2013 dans Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Sites accessibles sur Internet qui utilisent des fonctionnalités et une échelle non disponibles dans Microsoft 365  <br/> |**Concentrez vos efforts** Concentrez-vous sur le développement d'un site de qualité plutôt que sur la construction d'une infrastructure. <br/> **Tirez parti de l'élasticité dans Azure** Redimensionnez la batterie de serveurs pour qu'elle soit adaptée à la demande en ajoutant de nouveaux serveurs et payez uniquement pour les ressources dont vous avez besoin. L'allocation de machine dynamique n'est pas prise en charge (mise à l'échelle automatique).<br/> **Utilisez Azure Active Directory (AD)** Tirez parti d'Azure AD pour les comptes client. <br/> **Ajouter des fonctionnalités SharePoint non disponibles dans Microsoft 365** Ajoutez des rapports et des analyses web approfondies. <br/> Voir [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Batteries de serveurs d’applications pour prendre en charge les environnements microsoft 365 ou locaux  <br/> |**Créez, testez et hébergez des applications** dans Azure pour prendre en charge à la fois les environnements locaux et cloud. <br/> **Hébergez ce rôle** dans Azure au lieu d'acheter du nouveau matériel pour les environnements locaux. <br/> |
+|Sites accessibles sur Internet qui utilisent des fonctionnalités et une échelle non disponibles dans Microsoft 365  <br/> |**Concentrez vos efforts** Concentrez-vous sur le développement d'un site de qualité plutôt que sur la construction d'une infrastructure. <br/> **Tirez parti de l'élasticité dans Azure** Redimensionnez la batterie de serveurs pour qu'elle soit adaptée à la demande en ajoutant de nouveaux serveurs et payez uniquement pour les ressources dont vous avez besoin. L'allocation de machine dynamique n'est pas prise en charge (mise à l'échelle automatique).<br/> **Utilisez Azure Active Directory (AD)** Tirez parti d'Azure AD pour les comptes client. <br/> **Ajouter SharePoint fonctionnalités non disponibles dans Microsoft 365** Ajoutez des rapports et des analyses web approfondies. <br/> Voir [Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Batteries de serveurs d’applications Microsoft 365 environnements locaux ou locaux  <br/> |**Créez, testez et hébergez des applications** dans Azure pour prendre en charge à la fois les environnements locaux et cloud. <br/> **Hébergez ce rôle** dans Azure au lieu d'acheter du nouveau matériel pour les environnements locaux. <br/> |
    
 Pour des solutions et des charges de travail de collaboration et intranet, envisagez les options suivantes :
   
