@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
-description: Graphique de comparaison qui montre les différences de fonctionnalités entre l’application web Bookings et l’application Teams Bookings.
+description: Graphique de comparaison qui présente les différences de fonctionnalités entre l’application web Bookings et l’application Teams Bookings.
 ms.openlocfilehash: de207f2f194fff07fcc07f2f278d4a2135d4585b
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT

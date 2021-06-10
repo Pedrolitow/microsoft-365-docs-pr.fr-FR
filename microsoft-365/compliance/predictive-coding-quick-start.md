@@ -29,7 +29,7 @@ Voici un aperçu rapide du processus de codage prédictif :
 
 ![Processus de démarrage rapide pour le codage de prédiction](..\media\PredictiveCodingQuickStartProcess.png)
 
-Pour commencer, vous créez un modèle, étiqueter aussi peu que 50 éléments comme pertinents ou non pertinents. Le système utilise ensuite cette formation pour appliquer des scores de prédiction à chaque élément du jeu à réviser. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents). Si vous souhaitez entraîner des modèles avec des taux de rappel et des nombres de rappels plus élevés, vous pouvez continuer à étiqueter des éléments dans les séries de formation suivantes jusqu’à ce que le modèle se stabilise. Une fois le modèle stabilisé, vous pouvez appliquer le filtre de prédiction final pour hiérarchiser les éléments à réviser.
+Pour commencer, vous créez un modèle, en étiqueter aussi peu que 50 éléments comme pertinents ou non pertinents. Le système utilise ensuite cette formation pour appliquer des scores de prévision à chaque élément du jeu à réviser. Cela vous permet de filtrer les éléments en fonction du score de prédiction, ce qui vous permet d’examiner d’abord les éléments les plus pertinents (ou non pertinents). Si vous souhaitez entraîner des modèles avec des taux de rappel et des nombres de rappels plus élevés, vous pouvez continuer à étiqueter des éléments dans les séries de formation suivantes jusqu’à ce que le modèle se stabilise. Une fois le modèle stabilisé, vous pouvez appliquer le filtre de prédiction final pour hiérarchiser les éléments à réviser.
 
 Pour une vue d’ensemble détaillée du codage prédictif, voir En savoir plus sur le codage prédictif [dans Advanced eDiscovery](predictive-coding-overview.md).
 
@@ -91,7 +91,7 @@ Après avoir effectué une série de formation en bail, vous pouvez appliquer le
 
       ![Filtre de score de prédiction dans la section Analyse & codage prédictif](..\media\PredictionScoreFilter1.png)
 
-   La convention d’attribution de noms pour les filtres de score de prédiction est **le score de prédiction (nom du modèle).** Par exemple, le nom de filtre du score de prédiction pour un modèle nommé **Modèle A** est Le score de **prédiction (modèle A).**
+   La convention d’attribution de noms pour les filtres de score de prédiction est **le score de prédiction (nom du modèle).** Par exemple, le nom du filtre de score de prédiction pour un modèle nommé **Modèle A** est Le score de **prédiction (modèle A).**
 
 4. Sélectionnez le filtre de score de prédiction à utiliser, puis cliquez sur **Terminé.**
 
@@ -105,12 +105,12 @@ Après avoir effectué une série de formation en bail, vous pouvez appliquer le
 
 Pour obtenir des instructions plus détaillées, voir Appliquer un filtre de prédiction [à un jeu à réviser.](predictive-coding-apply-prediction-filter.md)
 
-## <a name="step-4-perform-more-training-rounds"></a>Étape 4 : Effectuer d’autres séries de formation
+## <a name="step-4-perform-more-training-rounds"></a>Étape 4 : Effectuer d’autres séries de formations
 
-Il est plus probable que vous dedessiez plusieurs séries de formation pour former le module afin de mieux prévoir les éléments pertinents et non pertinents dans l’ensemble de révision. En règle générale, vous allez entraîner le modèle suffisamment de fois jusqu’à ce qu’il soit suffisamment stabilisé pour répondre à vos besoins.
+Il est plus probable que vous de dû effectuer davantage de séries de formation pour former le module afin de mieux prévoir les éléments pertinents et non pertinents dans l’ensemble de révision. En règle générale, vous allez entraîner le modèle suffisamment de fois jusqu’à ce qu’il soit suffisamment stabilisé pour répondre à vos besoins.
 
 Pour plus d’informations, voir [Effectuer des séries de formation supplémentaires](predictive-coding-train-model.md#perform-additional-training-rounds)
 
-## <a name="step-5-apply-the-final-prediction-score-filter-to-prioritize-review"></a>Étape 5 : Appliquer le filtre de score de prédiction final pour hiérarchiser l’examen
+## <a name="step-5-apply-the-final-prediction-score-filter-to-prioritize-review"></a>Étape 5 : Appliquer le filtre de score de prédiction final pour hiérarchiser la révision
 
-Répétez les instructions de l’étape 3 pour appliquer le score de prédiction final au jeu à réviser afin de hiérarchiser l’examen des éléments pertinents et non pertinents une fois que vous avez terminé toutes les séries de formation et stabilisé le modèle.
+Répétez les instructions de l’étape 3 pour appliquer le score de prédiction final au jeu à réviser afin de hiérarchiser la révision des éléments pertinents et non pertinents une fois que vous avez terminé toutes les séries de formation et stabilisé le modèle.

@@ -36,7 +36,7 @@ ms.locfileid: "52841005"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft Defender pour l’identité peut vous aider à détecter les tentatives malveillantes de compromission des identités dans votre organisation. Étant donné que Defender pour l’identité s’intègre à Microsoft 365 Defender, les analystes de sécurité peuvent avoir une visibilité sur les menaces provenant de Defender for Identity, telles que les tentatives d’élévation de privilège Netlogon suspectes.
+Microsoft Defender pour l’identité peut vous aider à détecter les tentatives malveillantes de compromission des identités dans votre organisation. Dans la mesure où Defender pour l’identité s’intègre à Microsoft 365 Defender, les analystes de sécurité peuvent avoir une visibilité sur les menaces provenant de Defender for Identity, telles que les tentatives d’élévation de privilège Netlogon suspectes.
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>Analyse de l’attaque dans Microsoft Defender pour l’identité
 
@@ -64,13 +64,13 @@ Chaque processus peut être étendu pour afficher des détails supplémentaires.
  
 En sélectionnant **Voir dans la** chronologie, un analyste peut aller encore plus loin pour déterminer l’heure exacte de la compromission. 
 
-Microsoft Defender pour le point de terminaison peut détecter de nombreux fichiers et scripts malveillants. Toutefois, en raison de nombreuses utilisations légitimes pour les connexions sortantes, PowerShell et l’activité de ligne de commande, certaines activités seraient considérées comme étant anodins jusqu’à ce qu’elles créent un fichier ou une activité malveillante. Par conséquent, l’utilisation de la chronologie permet aux analystes de mettre l’alerte en contexte avec l’activité qui l’entoure afin de déterminer la source ou l’heure d’origine de l’attaque qui autrement est masquée par l’activité courante du système de fichiers et des utilisateurs. 
+Microsoft Defender pour le point de terminaison peut détecter de nombreux fichiers et scripts malveillants. Toutefois, en raison de nombreuses utilisations légitimes pour les connexions sortantes, PowerShell et l’activité de ligne de commande, certaines activités seraient considérées comme étant anodins jusqu’à ce qu’elles créent un fichier ou une activité malveillante. Par conséquent, l’utilisation de la chronologie permet aux analystes de mettre l’alerte en contexte avec l’activité qui l’entoure pour déterminer la source ou l’heure d’origine de l’attaque qui, sinon, est masquée par l’activité courante du système de fichiers et des utilisateurs. 
 
 Pour ce faire, un analyste commence au moment de la détection de l’alerte (en rouge) et fait défiler vers le bas dans le temps pour déterminer à quel moment l’activité d’origine qui a conduit à l’activité malveillante a réellement commencé. 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Exemple de démarrage au moment de la détection de l’alerte"::: 
 
-Il est important de comprendre et de distinguer les activités courantes telles que les connexions Windows Update, le trafic d’activation de logiciels de confiance Windows, d’autres connexions communes aux sites Microsoft, l’activité Internet tierce, l’activité Microsoft Endpoint Configuration Manager et toute autre activité faible contre les activités suspectes. Une façon d’y parvenir consiste à utiliser des filtres de chronologie. Il existe de nombreux filtres qui peuvent mettre en évidence une activité spécifique tout en filtrant tout ce que l’analyste ne souhaite pas afficher. 
+Il est important de comprendre et de distinguer les activités courantes telles que les connexions de mise à jour Windows, le trafic d’activation de logiciels Windows approuvé, d’autres connexions communes aux sites Microsoft, l’activité Internet tierce, l’activité Microsoft Endpoint Configuration Manager et toute autre activité faible contre une activité suspecte. Une façon d’y parvenir consiste à utiliser des filtres de chronologie. Il existe de nombreux filtres qui peuvent mettre en évidence une activité spécifique tout en filtrant tout ce que l’analyste ne souhaite pas afficher. 
 
 Dans l’image ci-dessous, l’analyste a filtré pour afficher uniquement les événements réseau et de traitement. Cela permet à l’analyste de voir les connexions réseau et les processus qui entourent l’événement où Bloc-notes a établi une connexion avec une adresse IP, ce que nous avons également vu dans l’arborescence des processus. 
 

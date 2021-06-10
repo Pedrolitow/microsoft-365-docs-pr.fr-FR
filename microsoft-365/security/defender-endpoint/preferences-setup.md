@@ -1,5 +1,5 @@
 ---
-title: Configurer les paramètres du Centre de sécurité Microsoft Defender
+title: Configurer les Centre de sécurité Microsoft Defender de configuration
 description: Utilisez la page paramètres pour configurer les paramètres généraux, les autorisations, les api et les règles.
 keywords: paramètres, paramètres généraux, autorisations, api, règles
 search.product: eADQiWindows 10XVcnh
@@ -23,17 +23,17 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "51604344"
 ---
-# <a name="configure-microsoft-defender-security-center-settings"></a>Configurer les paramètres du Centre de sécurité Microsoft Defender
+# <a name="configure-microsoft-defender-security-center-settings"></a>Configurer les Centre de sécurité Microsoft Defender de configuration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
-Utilisez le menu Paramètres pour modifier les **paramètres** généraux, les fonctionnalités avancées, activer l’expérience d’aperçu, les notifications par courrier électronique et la fonctionnalité d’intelligence contre les menaces personnalisée.
+Utilisez le menu **Paramètres** pour modifier les paramètres généraux, les fonctionnalités avancées, activer l’expérience d’aperçu, les notifications par courrier électronique et la fonctionnalité d’intelligence contre les menaces personnalisée.
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -43,5 +43,5 @@ Paramètres généraux | Modifiez vos paramètres généraux précédemment déf
 Autorisations | Gérer l’accès au portail à l’aide de RBAC ainsi que des groupes d’appareils.
 API | Activez l’intégration intel contre les menaces et SIEM.
 Règles | Configurez les règles de suppression et les paramètres d’automatisation.
-Gestion des périphériques | Appareils intégrés et hors-carte.
+Gestion des appareils | Appareils intégrés et hors intégration.
 Évaluations réseau | Choisissez les appareils à scanner régulièrement et ajoutés à l’inventaire des appareils.

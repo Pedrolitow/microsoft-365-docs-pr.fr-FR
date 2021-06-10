@@ -1,5 +1,5 @@
 ---
-title: Gestion des groupes Microsoft 365
+title: Gestion des groupes Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Découvrez comment gérer les groupes Microsoft 365.
+description: Découvrez comment gérer les groupes Microsoft 365'équipe.
 ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50911006"
 ---
-# <a name="manage-microsoft-365-groups"></a>Gestion des groupes Microsoft 365
+# <a name="manage-microsoft-365-groups"></a>Gestion des groupes Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez gérer les groupes Microsoft 365 de différentes manières, en fonction de votre configuration. Vous pouvez gérer les comptes d’utilisateurs dans le Centre d’administration [Microsoft 365,](../admin/add-users/index.yml)PowerShell, dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+Vous pouvez gérer Microsoft 365 groupes de plusieurs manières différentes, en fonction de votre configuration. Vous pouvez gérer les comptes d’utilisateurs dans le Centre [d’administration Microsoft 365,](../admin/add-users/index.yml)PowerShell, dans les services de domaine Active Directory (AD DS) ou dans le Centre d’administration [Azure Active Directory (Azure AD).](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planifier l’endroit et la façon dont vous allez gérer vos groupes
 
@@ -49,7 +49,7 @@ Vous créez et gérez des groupes avec :
     
 ### <a name="hybrid"></a>Hybride
 
-Les groupes AD DS sont synchronisés avec Microsoft 365 à partir d’AD DS. Vous devez donc utiliser les outils AD DS locaux pour gérer ces groupes.
+Les groupes AD DS sont synchronisés avec les Microsoft 365 d’AD DS. Vous devez donc utiliser les outils AD DS locaux pour gérer ces groupes.
 
 Vous pouvez également créer et gérer des groupes Azure AD séparés des groupes AD DS, mais qui peuvent contenir des utilisateurs et des groupes d’AD DS. Dans ce cas, vous pouvez utiliser :
 

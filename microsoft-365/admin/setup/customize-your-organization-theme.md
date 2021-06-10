@@ -37,9 +37,9 @@ Vous pouvez ajouter ou mettre à jour un thème par défaut qui s’applique à 
   
 ## <a name="add-or-update-your-organizations-theme"></a>Ajouter ou mettre à jour le thème de votre organisation
 
-1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis choisissez l’onglet Profil de \>  **l’organisation.**
+1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis sélectionnez l’onglet Profil de \>  **l’organisation.**
 
-2. Sous **l’onglet Profil de** l’organisation, sélectionnez **Thèmes personnalisés.**
+2. Sous **l’onglet Profil de** l’organisation, **sélectionnez Thèmes personnalisés.**
 
 Tous les thèmes peuvent être personnalisés à l’aide des onglets suivants.
 
@@ -57,14 +57,14 @@ Votre expérience sous l’onglet Général varie selon que vous ajoutez ou modi
 
 Le thème par défaut est le premier thème affiché.  
 
-1. Si vous avez précédemment personnalisé un  thème pour votre organisation, sélectionnez Thème par défaut et utilisez l’une de vos personnalisations enregistrées, ou **sélectionnez Ajouter un thème.**
+1. Si vous avez précédemment personnalisé un  thème pour votre organisation, sélectionnez Thème par défaut et utilisez l’une de vos personnalisations enregistrées, ou sélectionnez **Ajouter un thème.**
 2. Dans la page **Général,** vous pouvez empêcher les utilisateurs de remplacement de leur thème et afficher le nom complet de l’utilisateur.
 3. Sélectionnez **Enregistrer** pour enregistrer vos modifications.  
 
 > [!IMPORTANT]
 > Le thème par défaut est unique, il ne peut pas être renommé et s’applique à tous les membres de votre organisation. Pour supprimer le thème par défaut, vous devez d’abord supprimer tous les autres thèmes.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
+:::image type="content" source="../../media/default-theme-general.png" alt-text="Capture d’écran : onglet Général montrant le thème par défaut pour votre organisation":::
 
 ### <a name="create-a-group-theme"></a>Créer un thème de groupe
 
@@ -104,7 +104,7 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 
 ## <a name="frequently-asked-questions"></a>Foire aux questions
 
-### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation possède déjà un thème pour tous les employés. Comment cela va-t-il changer ?
+### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation a déjà un thème pour tous les employés. Comment cela va-t-il changer ?
 
 Le thème par défaut continuera d’être affiché pour tous les employés.L’ajout d’un nouveau thème de groupe sera uniquement mis à la disposition Microsoft 365 groupes associés à ce thème.
 

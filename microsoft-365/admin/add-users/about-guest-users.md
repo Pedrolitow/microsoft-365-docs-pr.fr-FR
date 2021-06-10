@@ -1,5 +1,5 @@
 ---
-title: Utilisateurs invités dans le Centre d Microsoft 365'administration De la recherche
+title: Utilisateurs invités dans le centre d Microsoft 365'administration de l’utilisateur
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -62,7 +62,7 @@ Une fois que vous avez terminé de collaborer avec un utilisateur invité, vous 
 1. Dans le centre Microsoft 365' administration, développez **Utilisateurs,** puis choisissez **Utilisateurs invités.**
 1. Dans la page **Utilisateurs** invités, choisissez l’utilisateur que vous souhaitez supprimer, puis **choisissez Supprimer un utilisateur.**
 
-Pour supprimer des utilisateurs dans le portail Azure AD, consultez [supprimer un utilisateur invité et des ressources.](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)
+Pour supprimer des utilisateurs dans le portail Azure AD, voir [supprimer un utilisateur invité et des ressources.](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)
 
 ## <a name="related-content"></a>Contenu associé
 

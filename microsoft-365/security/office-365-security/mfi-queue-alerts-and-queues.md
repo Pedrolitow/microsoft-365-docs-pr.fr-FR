@@ -25,15 +25,15 @@ ms.locfileid: "51599982"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Lorsque les messages ne peuvent pas être envoyés à partir de votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente dans Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
+Lorsque des messages ne peuvent pas être envoyés depuis votre organisation vers vos serveurs de messagerie locaux ou partenaires à l’aide de connecteurs, les messages sont mis en file d’attente Microsoft 365. Les exemples courants à l’origine de cette condition sont les suivants :
 
 - Le connecteur n’est pas correctement configuré.
 - Des modifications ont été apportées au réseau ou au pare-feu dans votre environnement local.
 
-Microsoft 365 continuera à réessayer d’être livré pendant 24 heures. Au bout de 24 heures, les messages expirent et sont renvoyés aux expéditeurs dans les rapports de non-remise (également appelés messages de non-remise).
+Microsoft 365 continueront à retenter la remise pendant 24 heures. Au bout de 24 heures, les messages expirent et sont renvoyés aux expéditeurs dans les rapports de non-remise (également appelés messages de non-remise).
 
 Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la valeur par défaut est 200 messages), les informations sont disponibles aux emplacements suivants :
 
@@ -45,7 +45,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
 
 - Les administrateurs recevront une notification par courrier électronique en fonction de la configuration de la stratégie d’alerte par défaut nommée **Messages qui a été retardée.** Pour configurer les paramètres de notification pour cette alerte, consultez la section suivante.
 
-  Pour plus d’informations sur les stratégies d’alerte, voir Stratégies d’alerte dans le Centre de [sécurité & conformité.](../../compliance/alert-policies.md)
+  Pour plus d’informations sur les stratégies d’alerte, voir Stratégies d’alerte dans le [Centre de sécurité & conformité.](../../compliance/alert-policies.md)
 
 ## <a name="customize-queue-alerts"></a>Personnaliser les alertes de file d’attente
 
@@ -68,7 +68,7 @@ Si le volume de courrier en file d’attente dépasse le seuil prédéfiny (la v
    - **Limite de notification quotidienne**: la valeur par défaut est **Aucune limite.**
    - **Seuil**: la valeur par défaut est 200.
 
-   ![Les paramètres de notification dans les messages ont été retardés détails de stratégie d’alerte dans le Centre de sécurité & conformité](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+   ![Les paramètres de notification dans les messages ont été retardés, détails de la stratégie d’alerte du Centre de sécurité & conformité](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
 5. Lorsque vous avez terminé, cliquez sur **Enregistrer** et **fermer.**
 
@@ -78,10 +78,10 @@ Même si le volume de messages en file d’attente n’a pas  dépassé le [](ma
 
 ![Widget Files d’attente dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-queues-widget.png)
 
-Si vous cliquez sur le nombre  de messages sur le widget, un message volant Messages mis en file d’attente apparaît avec les informations suivantes :
+Si vous cliquez sur le nombre  de messages sur le widget, un message volant messages mis en file d’attente apparaît avec les informations suivantes :
 
 - **Nombre de messages mis en file d’attente**
-- **Nom du connecteur**: cliquez sur le nom du connecteur pour gérer le connecteur dans le Centre d’administration Exchange (EAC).
+- **Nom du** connecteur : cliquez sur le nom du connecteur pour gérer le connecteur dans le Centre d’administration Exchange (EAC).
 - **Heure de début de la file d’attente**
 - **Messages les plus anciens arrivés à expiration**
 - **Serveur de destination**

@@ -25,11 +25,11 @@ ms.locfileid: "52822554"
 
 Après avoir créé un modèle de codage prédictif dans Advanced eDiscovery, l’étape suivante consiste à effectuer la première série de formations pour former le modèle à ce qui est pertinent et non pertinent dans votre jeu à réviser. Une fois que vous avez terminé la première série de formations, vous pouvez effectuer des séries de formation suivantes pour améliorer la capacité du modèle à prévoir du contenu pertinent et non pertinent.
 
-Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage](predictive-coding-overview.md#the-predictive-coding-workflow) prédictif dans Advanced eDiscovery
+Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage prédictif dans Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-train-a-model"></a>Avant d’entraîner un modèle
 
-- Au cours d’une série  de formations, étiquettez les éléments comme **pertinents** ou non pertinents en fonction de la pertinence du contenu du document. Ne basez pas votre décision sur les valeurs des champs de métadonnées. Par exemple, pour les messages électroniques ou Teams conversations, ne basez pas votre décision d’étiquetage sur les participants au message. 
+- Au cours d’une série de formations, étiquettez les éléments comme **pertinents** ou **non** pertinents en fonction de la pertinence du contenu dans le document. Ne basez pas votre décision sur les valeurs des champs de métadonnées. Par exemple, pour les messages électroniques ou Teams conversations, ne basez pas votre décision d’étiquetage sur les participants au message. 
 
 ## <a name="train-a-model-for-the-first-time"></a>Former un modèle pour la première fois
 
@@ -53,9 +53,9 @@ Pour passer en revue le flux de travail de codage prédictif, voir [En savoir pl
 
 ## <a name="perform-additional-training-rounds"></a>Effectuer des séries de formation supplémentaires
 
-Après avoir effectué la première série de formations, vous pouvez effectuer des séries de formation suivantes en suivant les étapes de la section précédente. La seule différence est que le nombre de la série de formations sera mis à jour sous l’onglet **Vue d’ensemble du** modèle. Par exemple, après avoir effectué la première  série d’entraînements, vous pouvez cliquer sur Démarrer la série de formation suivante pour démarrer la deuxième série d’entraînements. Et ainsi de suite.
+Après avoir effectué la première série de formations, vous pouvez effectuer des séries de formation suivantes en suivant les étapes de la section précédente. La seule différence est que le nombre de la série de formations sera mis à jour sous l’onglet **Vue d’ensemble du** modèle. Par exemple, après avoir effectué la première  série de formations, vous pouvez cliquer sur Démarrer la série de formation suivante pour démarrer la deuxième série d’entraînements. Et ainsi de suite.
 
-Chaque série de formations (celles en cours et celles qui  sont terminées) s’affiche sous l’onglet Formation du modèle. Lorsque vous sélectionnez un cycle de formation, une page de présentation avec des informations et des mesures pour la série s’affiche.
+Chaque série de formations (celles en cours et celles qui  sont terminées) s’affiche sous l’onglet Formation du modèle. Lorsque vous sélectionnez une série d’entraînements, une page volante avec des informations et des mesures pour la série s’affiche.
 
 ## <a name="what-happens-after-you-perform-a-training-round"></a>Que se passe-t-il après avoir effectué une série de formations ?
 
@@ -69,7 +69,7 @@ Une fois que vous avez effectué la première série de formations, un travail e
   
   |          |L’élément de prévision de modèle est pertinent |L’élément de prévision de modèle n’est pas pertinent |
   |:---------|:---------|:---------|
-  |**Élément d’étiquettes de relecteur selon la pertinence**| Vrai positif| Faux positif |
+  |**Élément d’étiquettes de relecteur pertinent**| Vrai positif| Faux positif |
   |**Élément d’étiquettes de relecteur non pertinent**| Faux négatif |Vrai négatif |
   ||||
 

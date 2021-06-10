@@ -1,7 +1,7 @@
 ---
 title: Conformité
-description: Cet article répertorie les normes de conformité applicables au Bureau géré Microsoft.
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+description: Cet article répertorie les normes de conformité applicables aux Bureau géré Microsoft.
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -42,10 +42,10 @@ Bureau géré Microsoft a obtenu les certifications suivantes :
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Rapports des auditeurs et certificats de conformité
 
-Vous trouverez des informations pertinentes, y compris des exigences techniques et de contrôle, dans le portail d’confiance des services [(STP),](https://servicetrust.microsoft.com/)le référentiel central pour obtenir de telles informations sur les offres de service Cloud De Microsoft. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
+Vous trouverez des informations pertinentes, notamment des exigences techniques et de contrôle, dans le portail d’confiance des services [(STP),](https://servicetrust.microsoft.com/)le référentiel central pour obtenir des informations sur les offres Microsoft Cloud Service client. Vous pouvez télécharger des rapports d’auditeur, des certificats de conformité et bien plus encore à partir de la section [Rapports d’audit](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) du STP.
 
 > [!NOTE]
-> Étant donné que Bureau géré Microsoft s’exécute sur Azure, les documents pertinents ont généralement des noms de fichiers tels que « Microsoft Azure, Dynamics 365 et d’autres services en ligne ». Dans ces documents, vous pouvez généralement trouver Bureau géré Microsoft sous la catégorie « Microsoft Online Services » ou « Analyse + Gestion ».
+> Comme Bureau géré Microsoft s’exécute sur Azure, les documents pertinents ont généralement des noms de fichiers tels que « Microsoft Azure, Dynamics 365 et d’autres services en ligne ». Dans ces documents, vous trouverez généralement des Bureau géré Microsoft sous la catégorie « Microsoft Online Services » ou « Analyse + Gestion ».
 
 ## <a name="shared-responsibility"></a>Responsabilité partagée
 

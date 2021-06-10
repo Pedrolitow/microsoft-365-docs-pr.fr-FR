@@ -1,5 +1,5 @@
 ---
-title: Afficher les rapports Defender pour Office 365 dans le tableau de bord Rapports
+title: Afficher defender pour les Office 365 rapports dans le tableau de bord Rapports
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -33,28 +33,28 @@ ms.locfileid: "51599898"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les organisations Microsoft Defender pour Office 365 (par exemple, les abonnements Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 1 ou Microsoft Defender pour les modules de développement Office 365 Plan 2) contiennent une variété de rapports de sécurité. Si vous avez les [autorisations](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)nécessaires, vous pouvez afficher ces rapports dans le Centre de sécurité & conformité en allant au Tableau de bord **des** \> **rapports.** Pour aller directement au tableau de bord Rapports, ouvrez <https://protection.office.com/insightdashboard> .
+Microsoft Defender pour les organisations Office 365 (par exemple, les abonnements Microsoft 365 E5 ou Microsoft Defender pour Office 365 Plan 1 ou Microsoft Defender pour les modules add-ons plan 2 de Office 365) contiennent de nombreux rapports de sécurité. Si vous avez les [autorisations](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)nécessaires, vous pouvez afficher ces rapports dans le Centre de sécurité & conformité en allant au Tableau de bord **des** \> **rapports.** Pour aller directement au tableau de bord Rapports, ouvrez <https://protection.office.com/insightdashboard> .
 
 ![Tableau de bord Rapports dans le Centre de sécurité & conformité](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="defender-for-office-365-file-types-report"></a>Rapport sur les types de fichiers de Defender pour Office 365
 
-Le rapport des types de fichiers Defender pour **Office 365** indique le type de fichiers détectés comme malveillants par [les pièces jointes sécurisées.](safe-attachments.md)
+Le **rapport defender pour Office 365 types** de fichiers vous indique le type de fichiers détectés comme malveillants par les pièces [jointes sécurisées](safe-attachments.md).
 
  L’affichage agrégé du rapport autorise 90 jours de filtrage, tandis que l’affichage détail ne permet que 10 jours de filtrage.
 
-Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord rapports et sélectionnez Defender pour les types de fichiers \>  **Office 365.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=ATPFileReport> .
+Pour afficher le rapport, ouvrez le Centre de  sécurité [&](https://protection.office.com)conformité, puis sélectionnez Tableau de bord rapports et sélectionnez \>  Defender pour Office 365 types **de fichiers.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=ATPFileReport> .
 
-![Widget de types de fichiers Defender pour Office 365 dans le tableau de bord Rapports](../../media/atp-file-types-report-widget.png)
+![Widget de types Office 365 Defender for Office 365 dans le tableau de bord Rapports](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> Les informations de ce rapport sont également disponibles dans le rapport de disposition des [messages Defender pour Office 365.](#defender-for-office-365-message-disposition-report)
+> Les informations de ce rapport sont également disponibles dans le rapport de Office 365 [de disposition des messages.](#defender-for-office-365-message-disposition-report)
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Affichage des rapports pour le rapport des types de fichiers Defender pour Office 365
+### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Affichage des rapports pour le rapport des types de Office 365 Defender
 
-Les vues disponibles sont les suivantes :
+Les vues disponibles sont les suivantes :
 
 - **Afficher les données par : Fichier**: le graphique contient les informations suivantes :
 
@@ -69,7 +69,7 @@ Les vues disponibles sont les suivantes :
 
   Lorsque vous pointez sur un jour donné (point de données), vous pouvez voir la répartition des types de fichiers [malveillants détectés](safe-attachments.md) par les pièces jointes sécurisées et la protection contre les programmes malveillants dans [EOP.](anti-malware-protection.md)
 
-  ![Affichage des fichiers dans le rapport des types de fichiers Defender pour Office 365](../../media/atp-file-types-report-file-view.png)
+  ![Affichage des fichiers dans le rapport de types de Office 365 Defender](../../media/atp-file-types-report-file-view.png)
 
   Si vous cliquez **sur Filtres,** vous pouvez modifier le rapport avec les filtres suivants :
 
@@ -83,14 +83,14 @@ Les vues disponibles sont les suivantes :
   - **Messages surveillés**
   - **Remplacé par la remise de courrier dynamique**: pour plus d’informations, voir Remise dynamique dans les [stratégies de pièces jointes sécurisées.](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)
 
-  ![Affichage des messages dans le rapport des types de fichiers Defender pour Office 365](../../media/atp-file-types-report-message-view.png)
+  ![Affichage des messages dans le rapport des types de Office 365 Defender](../../media/atp-file-types-report-message-view.png)
 
   Si vous cliquez **sur Filtres,** vous pouvez modifier le rapport avec les filtres suivants :
 
-  - **Date de début et** **date de fin**
+  - **Date de début** et **date de fin**
   - Valeurs de disposition des messages disponibles dans le graphique et valeur **messages transmises** supplémentaire.
 
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Vue de table Détails pour le rapport des types de fichiers Defender pour Office 365
+### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Vue de table Détails pour le rapport de types de fichiers Defender Office 365 fichiers
 
 Si vous cliquez sur Afficher le tableau des **détails,** le rapport fournit une vue en temps quasi réel de tous les clics qui se produisent au sein de l’organisation au cours des 10 derniers jours. Les informations affichées dépendent du graphique que vous regardiez :
 
@@ -127,16 +127,16 @@ Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
 Le rapport de disposition des messages **atp** vous indique les actions qui ont été prises pour les messages électroniques détectés comme ayant un contenu malveillant.
 
-Pour afficher le rapport, ouvrez le Centre de  sécurité [&](https://protection.office.com)conformité, puis sélectionnez Tableau de bord rapports et sélectionnez Defender pour la disposition des \>  messages **Office 365.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=ATPMessageReport> .
+Pour afficher le rapport, ouvrez le [Centre](https://protection.office.com)de  sécurité & conformité, puis sélectionnez Tableau de bord rapports \>  **et sélectionnez Defender pour la Office 365 de message.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=ATPMessageReport> .
 
-![Widget de disposition des messages Defender pour Office 365 dans le tableau de bord Rapports](../../media/atp-message-disposition-report-widget.png)
+![Defender for Office 365 message disposition widget in the Reports dashboard](../../media/atp-message-disposition-report-widget.png)
 
 > [!NOTE]
-> Les informations de ce rapport sont également disponibles dans le rapport des types de fichiers [Defender pour Office 365.](#defender-for-office-365-file-types-report)
+> Les informations de ce rapport sont également disponibles dans le rapport De Office 365 [types de fichiers.](#defender-for-office-365-file-types-report)
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Affichage du rapport pour le rapport de disposition des messages Defender pour Office 365
+### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Affichage du rapport pour le rapport de Office 365 de message defender
 
-Les vues disponibles sont les suivantes :
+Les vues disponibles sont les suivantes :
 
 - **Afficher les données par : Message**: le graphique contient les informations suivantes :
 
@@ -145,7 +145,7 @@ Les vues disponibles sont les suivantes :
   - **Messages surveillés**
   - **Remplacé par la remise de courrier dynamique**: pour plus d’informations, voir Remise dynamique dans les [stratégies de pièces jointes sécurisées.](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)
 
-  ![Affichage des messages dans le rapport des types de fichiers Defender pour Office 365](../../media/atp-file-types-report-message-view.png)
+  ![Affichage des messages dans le rapport des types de Office 365 Defender](../../media/atp-file-types-report-message-view.png)
 
   Si vous cliquez **sur Filtres,** vous pouvez modifier le rapport avec les filtres suivants :
 
@@ -165,14 +165,14 @@ Les vues disponibles sont les suivantes :
 
   Lorsque vous pointez sur un jour donné (point de données), vous pouvez voir la répartition des types de fichiers [malveillants détectés](safe-attachments.md) par les pièces jointes sécurisées et la protection contre les programmes malveillants dans [EOP.](anti-malware-protection.md)
 
-  ![Affichage des fichiers dans le rapport des types de fichiers Defender pour Office 365](../../media/atp-file-types-report-file-view.png)
+  ![Affichage des fichiers dans le rapport de types de Office 365 Defender](../../media/atp-file-types-report-file-view.png)
 
   Si vous cliquez **sur Filtres,** vous pouvez modifier le rapport avec les filtres suivants :
 
   - **Date de début** et **date de fin**
   - Valeurs de type de fichier visibles dans le graphique.
 
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Affichage du tableau détails pour le rapport de disposition des messages Defender pour Office 365
+### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Affichage du tableau détails pour le rapport de Office 365 de message defender
 
 Si vous cliquez sur Afficher le tableau des **détails,** le rapport fournit une vue en temps quasi réel de tous les clics qui se produisent au sein de l’organisation au cours des 10 derniers jours. Les informations affichées dépendent du graphique que vous regardiez :
 
@@ -207,7 +207,7 @@ Pour revenir à l’affichage Rapports, cliquez **sur Afficher le rapport.**
 
 ## <a name="mail-latency-report"></a>Rapport de latence du courrier
 
-Le **rapport de latence de messagerie** vous présente une vue agrégée de la latence de remise et de détonation du courrier au sein de votre organisation. Les délais de remise du courrier dans le service sont affectés par un certain nombre de facteurs, et le temps de remise absolu en secondes n’est souvent pas un bon indicateur de réussite ou un problème. Un délai de remise lent d’un jour peut être considéré comme un délai de livraison moyen sur un autre jour, ou inversement. Le **rapport de latence de messagerie** tente de qualifier la remise des messages en fonction de données statistiques sur les délais de remise observés d’autres messages :
+Le **rapport de latence de messagerie** vous présente une vue agrégée de la latence de remise et de détonation du courrier au sein de votre organisation. Les délais de remise du courrier dans le service sont affectés par un certain nombre de facteurs, et le temps de remise absolu en secondes n’est souvent pas un bon indicateur de réussite ou un problème. Un délai de remise lent d’un jour peut être considéré comme un délai de livraison moyen un autre jour, ou inversement. Le **rapport de latence de messagerie** tente de qualifier la remise des messages en fonction de données statistiques sur les délais de remise observés d’autres messages :
 
 - **50e centile**: il s’agit du milieu pour les heures de remise des messages. Vous pouvez considérer cette valeur comme un délai de livraison moyen.
 - **90e centile**: cela indique une latence élevée pour la remise des messages. Seuls 10 % des messages ont mis plus de temps que cette valeur à remettre.
@@ -215,7 +215,7 @@ Le **rapport de latence de messagerie** vous présente une vue agrégée de la l
 
 La latence côté client et réseau n’est pas incluse.
 
-Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)puis sélectionnez Tableau de bord rapports et sélectionnez Rapport \>  **de latence du courrier.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/mailLatencyReport?viewid=P50> .
+Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)allez dans le tableau de bord rapports et sélectionnez Rapport \>  **de latence du courrier.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/mailLatencyReport?viewid=P50> .
 
 ![Widget de rapport de latence de messagerie dans le tableau de bord Rapports](../../media/mail-latency-report-widget.png)
 
@@ -256,7 +256,7 @@ Les informations suivantes sont affichées dans l’affichage Tableau des détai
 
 ![Détails du rapport de latence de messagerie](../../media/mail-latency-report-details.png)
 
-L’exemple ci-dessus montre que, le 14 novembre, la latence moyenne de tous les messages remis et détonés était **de 108,033** secondes.
+L’exemple ci-dessus montre que le 14 novembre, la latence moyenne de tous les messages remis et détonés était **de 108,033** secondes.
 
 Le tableau de détails contient les mêmes informations sur chaque onglet.
 
@@ -266,7 +266,7 @@ Le rapport d’état de la **protection** contre les menaces est un affichage un
 
 ## <a name="url-threat-protection-report"></a>Rapport sur la protection contre les menaces d’URL
 
-Le **rapport sur la protection contre** les menaces d’URL fournit des affichages récapitulatifs et des tendances pour les menaces détectées et les actions entreprises sur les clics d’URL dans le cadre des [liens sécurisés.](safe-links.md) Ce rapport ne dispose pas des données de clic des utilisateurs pour lequel l’option Ne pas suivre les clics utilisateur est sélectionnée pour la stratégie de liens **sécurisés** appliquée.
+Le **rapport sur la protection contre** les menaces d’URL fournit des affichages récapitulatifs et des tendances pour les menaces détectées et les actions entreprises sur les clics d’URL dans le cadre de [liens sécurisés.](safe-links.md) Ce rapport ne dispose pas des données de clic des utilisateurs pour lequel l’option Ne pas suivre les clics utilisateur est sélectionnée pour la stratégie de liens **sécurisés** appliquée.
 
 Pour afficher le rapport, ouvrez le Centre  de sécurité [& conformité,](https://protection.office.com)allez au tableau de bord rapports et sélectionnez le rapport \>  de protection **des URL.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=URLProtectionActionReport> .
 
@@ -294,7 +294,7 @@ Le **rapport sur la protection contre** les menaces d’URL possède deux affich
 
   ![Url click protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **Clic d’URL par application**: affiche le nombre de clics d’URL par les applications qui la prise en charge des liens sécurisés :
+- **Clic d’URL par application**: affiche le nombre de clics d’URL par applications qui la prise en charge des liens sécurisés :
 
   - **Client de messagerie**
   - **PowerPoint**
@@ -314,11 +314,11 @@ Le **rapport sur la protection contre** les menaces d’URL possède deux affich
 
 Si vous cliquez sur Afficher le tableau des **détails,** le rapport fournit une vue en temps quasi réel de tous les clics qui se produisent au sein de l’organisation au cours des 7 derniers jours avec les détails suivants :
 
-- **Heure du clic**
+- **Temps de clic**
 - **Utilisateur**
 - **URL**
 - **Action**
-- **App**
+- **Application**
 
 Si vous cliquez sur **Filtres** dans l’affichage Tableau détails, vous pouvez filtrer selon les mêmes critères que dans l’affichage du rapport, ainsi que par domaines ou **destinataires** **séparés** par des virgules.
 
@@ -335,33 +335,33 @@ Outre les rapports décrits dans cet article, plusieurs autres rapports sont dis
 
 |Rapport|Rubrique|
 |---|---|
-|**Détections** de l’Explorateur (Microsoft Defender pour  Office 365 Plan 2) ou en temps réel (Microsoft Defender pour Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
+|**Explorateur** (Microsoft Defender pour Office 365 Plan 2) ou **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
 |**Rapports de sécurité du** courrier électronique, tels que le rapport Sur les principaux expéditeurs et destinataires, le rapport sur les courriers électroniques usurpés et le rapport sur les détections de courrier indésirable.|[Afficher les rapports de sécurité de courrier dans le centre de sécurité et conformité](view-email-security-reports.md)|
 |**Les rapports de flux de** messagerie, tels que le rapport de forwarding, le rapport d’état du flux de messagerie et le rapport des principaux expéditeurs et destinataires.|[Afficher les rapports de flux de messagerie dans le Centre de sécurité & conformité](view-mail-flow-reports.md)|
-|**Suivi d’URL pour les liens sécurisés** (PowerShell uniquement). Le résultat de cette cmdlet vous présente les résultats des actions de liens sécurisés au cours des sept derniers jours.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
+|**Suivi d’URL pour les liens sécurisés** (PowerShell uniquement). Le résultat de cette cmdlet affiche les résultats des actions de liens sécurisés au cours des sept derniers jours.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**Résultats du trafic de messagerie pour EOP et Microsoft Defender pour Office 365** (PowerShell uniquement). La sortie de cette cmdlet contient des informations sur le domaine, la date, le type d’événement, la direction, l’action et le nombre de messages.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**Rapports détaillés sur les messages pour les détections EOP et Defender pour Office 365** (PowerShell uniquement). La sortie de cette cmdlet contient des détails sur les fichiers ou URL malveillants, les tentatives d’hameçonnage, l’emprunt d’identité et d’autres menaces potentielles dans les e-mails ou les fichiers.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|**Rapports de détails de courrier pour EOP et Defender pour Office 365 détections de** courrier indésirable (PowerShell uniquement). La sortie de cette cmdlet contient des détails sur les fichiers ou URL malveillants, les tentatives d’hameçonnage, l’emprunt d’identité et d’autres menaces potentielles dans les e-mails ou les fichiers.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quelles autorisations sont nécessaires pour afficher les rapports Defender pour Office 365 ?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quelles autorisations sont nécessaires pour afficher les rapports Defender for Office 365 ?
 
 Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le Centre de sécurité & conformité :
 
 - **Gestion de l'organisation**
 - **Administrateur de sécurité**
-- **Lecteur sécurité**
+- **Lecteur de sécurité**
 - **Lecteur général**
 
-Pour plus d'informations, voir [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
-**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration  Microsoft 365 donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365  donne aux utilisateurs les autorisations requises dans le Centre de sécurité & conformité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports n’affichent pas de données ?
 
-Si vous ne voyez pas de données dans vos rapports Defender pour Office 365, vérifiez que vos stratégies sont correctement définies. Pour que [](set-up-safe-links-policies.md) la protection Defender pour Office 365 soit en place, votre organisation doit avoir défini des stratégies de liens sécurisés et des stratégies de pièces [jointes](set-up-safe-attachments-policies.md) sécurisées. Consultez également La protection contre [le courrier indésirable et les programmes malveillants.](anti-spam-and-anti-malware-protection.md)
+Si vous ne voyez pas de données dans votre defender pour Office 365 rapports, vérifiez que vos stratégies sont correctement définies. Votre organisation doit avoir défini des [stratégies](set-up-safe-links-policies.md) de liens sécurisés et des stratégies de pièces [jointes sécurisées](set-up-safe-attachments-policies.md) pour que Defender Office 365 protection soit en place. Consultez également La protection contre [le courrier indésirable et les programmes malveillants.](anti-spam-and-anti-malware-protection.md)
 
 ## <a name="related-topics"></a>Voir aussi
 
 [Rapports intelligents et aperçus dans le Centre de sécurité et conformité](reports-and-insights-in-security-and-compliance.md)
 
-[Autorisations de rôle (Azure Active Directory)](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Autorisations de rôle (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

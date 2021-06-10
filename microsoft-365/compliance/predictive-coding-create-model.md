@@ -25,7 +25,7 @@ ms.locfileid: "52822571"
 
 La première étape de l’utilisation des fonctionnalités d’apprentissage automatique du codage prédictif dans Advanced eDiscovery consiste à créer un modèle de codage prédictif. Après avoir créé un modèle, vous pouvez l’entraîner à identifier le contenu pertinent et non pertinent dans un jeu à réviser.
 
-Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage](predictive-coding-overview.md#the-predictive-coding-workflow) prédictif dans Advanced eDiscovery
+Pour passer en revue le flux de travail de codage prédictif, voir [En savoir plus sur le codage prédictif dans Advanced eDiscovery](predictive-coding-overview.md#the-predictive-coding-workflow)
 
 ## <a name="before-you-create-a-model"></a>Avant de créer un modèle
 
@@ -59,7 +59,7 @@ Après avoir créé un modèle, les éléments suivants se produisent en arrièr
 
 - Le système calcule le nombre d’éléments du jeu de contrôles. Cette taille est basée sur le nombre d’éléments du jeu à réviser et sur les paramètres du niveau de confiance et de la marge d’erreur. Les éléments du jeu de contrôles sont sélectionnés de manière aléatoire et désignés en tant qu’éléments de jeu de contrôles. Le système inclut 10 éléments du jeu de contrôles de la première série de formation.
 
-- Le système sélectionne de manière aléatoire 40 éléments dans le jeu à réviser à inclure dans l’ensemble de formation pour la première série de formations. Par conséquent, la première série de formations inclut 50 éléments pour l’étiquetage : 40 éléments de l’ensemble de formations et 10 éléments du jeu de contrôles.
+- Le système sélectionne de manière aléatoire 40 éléments dans le jeu à réviser à inclure dans l’ensemble de formation pour la première série de formations. Par conséquent, la première série de formations inclut 50 éléments pour l’étiquetage : 40 éléments de l’ensemble de formations et 10 éléments de l’ensemble de contrôles.
 
 ## <a name="next-steps"></a>Prochaines étapes
 

@@ -27,7 +27,7 @@ ms.locfileid: "50918060"
 ---
 # <a name="clone-a-content-search"></a>Cloner une recherche de contenu
 
-La création d’une recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 qui recherche de nombreuses boîtes aux lettres ou des sites SharePoint et OneDrive Entreprise peut prendre un certain temps. Spécifier les sites à rechercher peut également être source d’erreurs si vous avez mal saisie une URL. Pour éviter ces problèmes, vous pouvez utiliser le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante. Lorsque vous clonez une recherche, une nouvelle recherche (avec un nom différent) est créée et contient les mêmes propriétés (telles que les emplacements de contenu et la requête de recherche) que la recherche d’origine. Vous pouvez ensuite modifier la nouvelle recherche en modifiant la requête de mot clé ou la plage de dates, puis l’exécuter.
+La création d’une recherche de contenu dans le centre de conformité dans Office 365 ou Microsoft 365 qui recherche de nombreuses boîtes aux lettres ou sites SharePoint et OneDrive Entreprise peut prendre un certain temps. Spécifier les sites à rechercher peut également être source d’erreurs si vous avez mal saisie une URL. Pour éviter ces problèmes, vous pouvez utiliser le script Windows PowerShell dans cet article pour cloner rapidement une recherche de contenu existante. Lorsque vous clonez une recherche, une nouvelle recherche (avec un nom différent) est créée et contient les mêmes propriétés (telles que les emplacements de contenu et la requête de recherche) que la recherche d’origine. Vous pouvez ensuite modifier la nouvelle recherche en modifiant la requête de mot clé ou la plage de dates, puis l’exécuter.
   
 Pourquoi cloner des recherches de contenu ?
   
@@ -53,7 +53,7 @@ Pourquoi cloner des recherches de contenu ?
 
 Le script de cette étape crée une recherche de contenu en clonant une recherche existante. Lorsque vous exécutez ce script, vous êtes invité à fournir les informations suivantes :
   
-- **Vos informations d’identification utilisateur** : le script utilisera vos informations d’identification pour vous connecter au Centre de sécurité & conformité de votre organisation avec Windows PowerShell. Comme indiqué précédemment, vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & compCompliance pour exécuter le script. 
+- **Vos informations d’identification d’utilisateur** : le script utilise vos informations d’identification pour se connecter au Centre de sécurité & conformité de votre organisation avec Windows PowerShell. Comme indiqué précédemment, vous devez être membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & compCompliance pour exécuter le script. 
     
 - **Nom de la recherche existante :** il s’agit de la recherche de contenu que vous souhaitez cloner. 
     
@@ -141,9 +141,9 @@ Pour cloner une recherche :
   
 ## <a name="step-2-edit-and-run-the-cloned-search-in-the-compliance-center"></a>Étape 2 : Modifier et exécuter la recherche clonée dans le centre de conformité
 
-Après avoir exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à aller au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou en supprimant des conditions de recherche. Pour plus d’informations, consultez :
+Après avoir exécuté le script pour cloner une recherche de contenu existante, l’étape suivante consiste à aller au centre de conformité pour modifier et exécuter la nouvelle recherche. Comme indiqué précédemment, vous pouvez modifier une recherche en modifiant la requête de recherche par mot clé et en ajoutant ou en supprimant des conditions de recherche. Pour plus d’informations, voir :
   
-- [Recherche de contenu dans Office 365](content-search.md)
+- [Recherche de contenu dans Office 365](content-search.md)
     
 - [Requêtes par mots clés et conditions de recherche pour la recherche de contenu](keyword-queries-and-search-conditions.md)
     

@@ -61,7 +61,7 @@ id | String | ID logiciel
 Nom | String | Nom du logiciel
 Fournisseur | String | Nom du fournisseur de logiciels
 Faiblesses | Entier long | Nombre de vulnérabilités découvertes
-publicExploit | Boolean | Une exploitation publique existe pour certaines vulnérabilités
-activeAlert | Boolean | L’alerte active est associée à ce logiciel
+publicExploit | Booléen | Une exploitation publique existe pour certaines vulnérabilités
+activeAlert | Booléen | L’alerte active est associée à ce logiciel
 exposedMachines | Entier long | Nombre d’appareils exposés
 impactScore | Double | Impact du score d’exposition de ce logiciel

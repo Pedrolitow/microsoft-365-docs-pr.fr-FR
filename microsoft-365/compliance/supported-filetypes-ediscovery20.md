@@ -175,7 +175,7 @@ Advanced eDiscovery prend en charge de nombreux types de fichiers à de nombreux
 |application/vnd.oasis.opendocument.text | Oui | Oui | Oui | Oui | Oui | .odt |
 ||||||||
 
-## <a name="other"></a>Autres
+## <a name="other"></a>Autre
 
 | Type Mime | Identification de fichier | Extraction des métadonnées | Extraction de texte | Visionneuse native | Annoter la visionneuse | Extensions possibles |
 |:------| :------| :------| :------| :------| :------| :------|

@@ -110,7 +110,7 @@ results = jsonResponse["Results"]
 
 ### <a name="complex-queries"></a>Requêtes complexes
 
-Si vous souhaitez exécuter des requêtes complexes (ou des requêtes multilignes), enregistrez votre requête dans un fichier et, au lieu de la première ligne de l’exemple ci-dessus, exécutez la commande ci-dessous :
+Si vous souhaitez exécuter des requêtes complexes (ou des requêtes multilignes), enregistrez votre requête dans un fichier et, au lieu de la première ligne de l’exemple ci-dessus, exécutez la commande suivante :
 
 ```
 queryFile = open("D:\\Temp\\myQuery.txt", 'r') # Replace with the path to your file

@@ -74,13 +74,13 @@ L’heure doit être exprimée en Temps universel coordonné (UTC) pour les deux
 
 Un déplacement géographique de site SharePoint nécessite que vous vous connectiez et opériez le déplacement de l’URL d’administration SharePoint vers l’emplacement géographique du site.
 
-Par exemple, si l’URL du site est <https://contosohealthcare.sharepoint.com/sites/Turbines> , connectez-vous à l’URL d’administration SharePoint à <https://contosohealthcare-admin.sharepoint.com> l’adresse :
+Par exemple, si l’URL du site est <https://contosohealthcare.sharepoint.com/sites/Turbines> , connectez-vous à l’URL SharePoint’administration à <https://contosohealthcare-admin.sharepoint.com> l’adresse suivante :
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![Fenêtre SharePoint Online Management Shell affichant la commande Connect-SPOService commande](../media/move-onedrive-between-geo-locations-image1.png)
+![SharePoint Fenêtre Online Management Shell affichant la commande Connect-SPOService commande](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>Validation de l’environnement
 

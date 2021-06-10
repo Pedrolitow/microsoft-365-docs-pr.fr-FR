@@ -31,7 +31,7 @@ ms.locfileid: "52331942"
 
 Depuis le 14 septembre 2019, les banques des 31 pays de l’Espace économique européen doivent vérifier l’identité de la personne qui a effectué un achat en ligne avant que le paiement puisse être effectué. Cette vérification nécessite une authentification multifacteur pour garantir la sécurité et la protection de vos achats en ligne. La date de cette exigence de vérification sera retardée pour certains pays.
 
-Pour plus d’informations, voir le FAQ Microsoft sur la directive 2 des services de paiement [et l’authentification client forte.](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)
+Pour plus d’informations, consultez la FAQ Microsoft sur la directive 2 des services de paiement [et l’authentification client forte.](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)
 
 ## <a name="when-is-multi-factor-authentication-required"></a>Quand l’authentification multifacteur est-elle requise ?
 

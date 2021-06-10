@@ -57,7 +57,7 @@ Suivez ces étapes pour créer une règle et personnaliser les paramètres de no
 
 1. Dans le volet de navigation, sélectionnez Paramètres > Microsoft 365 **notifications >'incident.**
 2. Sélectionnez **Ajouter un élément.**
-3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant.**
+3. Dans la page **Informations de** base, tapez le nom de la règle et une description, puis sélectionnez **Suivant**.
 4. Dans la **page Paramètres de** notification, configurez :
     - **Gravité de l’alerte** : choisissez les gravités d’alerte qui déclencheront une notification d’incident. Par exemple, si vous souhaitez uniquement être informé des incidents de gravité élevée, sélectionnez **Élevé**.
     - **Étendue du groupe d’appareils** : vous pouvez spécifier tous les groupes d’appareils ou sélectionner dans la liste des groupes d’appareils de votre client.

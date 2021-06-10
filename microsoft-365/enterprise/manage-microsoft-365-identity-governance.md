@@ -1,5 +1,5 @@
 ---
-title: Gérer la gouvernance des identités Microsoft 365
+title: Gérer la Microsoft 365 d’identité
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Découvrez comment utiliser les fonctionnalités de gouvernance des identités Microsoft 365.
+description: Découvrez comment utiliser les fonctionnalités Microsoft 365 gouvernance des identités.
 ms.openlocfilehash: 6a97ca24c609724a2cab93feec9e90f25d3361e3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50910953"
 ---
-# <a name="manage-microsoft-365-identity-governance"></a>Gérer la gouvernance des identités Microsoft 365
+# <a name="manage-microsoft-365-identity-governance"></a>Gérer la Microsoft 365 d’identité
 
 La gouvernance des identités s’intéresse à la protection, la surveillance et l’audit de l’accès aux ressources critiques, tout en assurant la productivité des employés. Par exemple, avec la gouvernance des identités, vous pouvez vous assurer que les utilisateurs appropriés disposent de l’accès approprié aux ressources adéquates et déterminer si cet accès change au fil du temps.
 
-Pour plus d’informations, consultez cette vue d’ensemble de la gouvernance des identités pour [Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
+Pour plus d’informations, consultez cette vue d’ensemble de la gouvernance des [identités pour Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
 
 ## <a name="set-up-azure-ad-access-reviews"></a>Configurer les révisions d’accès Azure AD
 

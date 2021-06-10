@@ -47,8 +47,8 @@ Microsoft 365 Defender reçoit des alertes et des événements de plusieurs plat
 - [Microsoft Defender pour le](../defender-endpoint/microsoft-defender-endpoint.md) point de terminaison est une solution protection évolutive des points de terminaison (PEPT) qui utilise l’antivirus Microsoft Defender, ainsi que la protection avancée contre les menaces dans le cloud à l’aide de Microsoft Security Graph. Defender for Endpoint est une plateforme unifiée pour la protection préventive, la détection post-violation, l’examen automatisé et la réponse. Il protège les points de terminaison contre les cybermenaces, détecte les attaques avancées et les violations de données, automatise les incidents de sécurité et améliore la posture de sécurité. 
 - [Microsoft Defender pour](/defender-for-identity/what-is) l’identité est une solution de sécurité basée sur le cloud qui utilise vos signaux AD DS (Active Directory Domain Services) locaux pour identifier, détecter et examiner les menaces avancées, les identités compromises et les actions internes malveillantes dirigées contre votre organisation. 
 - [Microsoft Cloud App Security](/cloud-app-security/) agit comme un garde d’accès en temps réel entre les utilisateurs de votre entreprise et les ressources cloud qu’ils utilisent, où que soient vos utilisateurs et quel que soit l’appareil qu’ils utilisent. 
-- [Microsoft Defender for Office 365](../office-365-security/overview.md) protège votre organisation contre les menaces malveillantes dans les messages électroniques, les liens (URL) et les outils de collaboration. 
-- [Azure Security Center](/azure/security-center/security-center-introduction) est un système de gestion de la sécurité de l’infrastructure unifiée qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud ainsi que sur site. 
+- [Microsoft Defender pour Office 365](../office-365-security/overview.md) votre organisation contre les menaces malveillantes dans les messages électroniques, les liens (URL) et les outils de collaboration. 
+- [Azure Security Center](/azure/security-center/security-center-introduction) est un système de gestion de la sécurité de l’infrastructure unifiée qui renforce la posture de sécurité de vos centres de données et fournit une protection avancée contre les menaces sur vos charges de travail hybrides dans le cloud et localement. 
 
 Dans Microsoft 365 Defender, [les incidents](incidents-overview.md) sont identifiés en corrélant les alertes à partir de ces différentes sources de détection. Au lieu de passer des ressources en chaîne ou de distinguer plusieurs alertes dans leurs incidents respectifs, vous pouvez commencer immédiatement par la file d’attente des incidents dans Microsoft 365 Defender. Cela vous permet de trier efficacement les incidents entre les points de terminaison, les identités, le courrier électronique et les applications, et de réduire les dommages d’une attaque.
 
@@ -75,11 +75,11 @@ Voici une approche de tri :
 
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Exemple d’incident à fort impact":::
  
-2. Sélectionnez le cercle en de côté du nom de l’incident pour passer en revue les détails. Un volet latéral s’affiche sur le côté droit, qui contient des informations supplémentaires qui peuvent aider davantage votre tri. 
+2. Sélectionnez le cercle en côté du nom de l’incident pour passer en revue les détails. Un volet latéral s’affiche sur le côté droit, qui contient des informations supplémentaires qui peuvent aider davantage votre tri. 
  
    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="Exemple de volet latéral d’incident"::: 
 
-   Par exemple, en regardant les tactiques [MITRE ATT&CK](https://attack.mitre.org/) utilisées par l’attaquant en fonction des catégories de l’incident, vous pouvez hiérarchiser cet incident car l’attaquant a utilisé des informations d’identification volées, des commandes et contrôles établis, des mouvements latérals et des données exfiltrées. Cela suggère que l’attaquant a déjà été profondeur dans le réseau et éventuellement volé des informations confidentielles.
+   Par exemple, en regardant les tactiques [MITRE ATT&CK](https://attack.mitre.org/) utilisées par l’attaquant en fonction des catégories de l’incident, vous pouvez hiérarchiser cet incident car l’attaquant a utilisé des informations d’identification volées, des commandes et contrôles établis, effectué des mouvements latérals et exfiltré certaines données. Cela suggère que l’attaquant a déjà été profondeur dans le réseau et éventuellement volé des informations confidentielles.
 
    En outre, si votre organisation a implémenté l’infrastructure Confiance zéro, vous considérerez l’accès aux informations d’identification comme une violation de sécurité importante qui vaut la peine d’être hiér donc.
  
@@ -113,11 +113,11 @@ Voici un exemple :
   
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Exemple de page correspondante dans Microsoft Cloud App Security"::: 
   
-3.  Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs affectés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier. 
+3.  Pour examiner notre exemple plus en détail, faites défiler vers le bas de la page pour afficher les **utilisateurs concernés.** Pour voir l’activité et le contexte qui entourent la détection de programmes malveillants, sélectionnez la page de l’utilisateur d’An dernier. 
   
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-page.png" alt-text="Exemple de page d’utilisateur":::
   
-4.  La page de l’utilisateur affiche une liste chronologique des événements commençant par une sign-in risquée à partir d’une alerte d’adresse IP du réseau *TOR.* Bien que le caractère suspect d’une activité dépend de la nature de la façon dont une organisation effectue ses activités, dans la plupart des cas, l’utilisation du routeur de déplacement (TOR), un réseau qui permet aux utilisateurs de parcourir le web de manière anonyme, dans un environnement d’entreprise peut être considérée comme hautement peu probable et inutile pour les opérations en ligne normales.
+4.  La page de l’utilisateur affiche une liste chronologique des événements commençant par une sign-in à risque à partir d’une alerte d’adresse IP du réseau *TOR.* Bien que le caractère suspect d’une activité dépend de la nature de la façon dont une organisation effectue ses activités, dans la plupart des cas, l’utilisation du routeur de déplacement (TOR), un réseau qui permet aux utilisateurs de parcourir le web de manière anonyme, dans un environnement d’entreprise peut être considérée comme hautement peu probable et inutile pour les opérations en ligne normales.
   
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-user-event-list.png" alt-text="Exemple de liste chronologique des événements pour un utilisateur":::
   

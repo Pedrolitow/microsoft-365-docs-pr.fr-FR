@@ -31,14 +31,14 @@ Le Gestionnaire de conformité Microsoft peut vous aider à gérer les améliora
 Cet article fournit des conseils sur l’utilisation de cet outil à des fins de confidentialité des données.
 
 >[!Note]
->Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles client par rapport à votre environnement réglementaire. Ces services sont soumis aux conditions générales des [conditions générales des services en ligne.](https://go.microsoft.com/fwlink/?linkid=2108910) Voir aussi conseils [sur les licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>Les recommandations du Gestionnaire de conformité ne doivent pas être interprétées comme des garanties de conformité. C’est à vous d’évaluer et de valider l’efficacité des contrôles client par rapport à votre environnement réglementaire. Ces services sont soumis aux conditions générales des [conditions générales des services en ligne.](https://go.microsoft.com/fwlink/?linkid=2108910) Voir aussi les [conseils Microsoft 365 licences pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>Mise en place avec le Gestionnaire de conformité
 
 #### <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
-[Le Gestionnaire de](../compliance/compliance-manager.md) conformité est un outil d’évaluation des risques basé sur un flux de travail dans le Centre de conformité Microsoft 365 pour la gestion des activités de conformité réglementaire liées aux services cloud de Microsoft. Dans le cadre de votre abonnement Microsoft 365 ou Azure Active Directory (Azure AD), le Gestionnaire de conformité vous aide à gérer la conformité réglementaire dans le modèle de responsabilité partagée pour les services cloud de Microsoft.
+[Le Gestionnaire de](../compliance/compliance-manager.md) conformité est un outil d’évaluation des risques basé sur un flux de travail dans le centre Microsoft 365 conformité pour la gestion des activités de conformité réglementaire liées aux services cloud de Microsoft. Dans le cadre de votre abonnement Microsoft 365 ou Azure Active Directory (Azure AD), le Gestionnaire de conformité vous aide à gérer la conformité réglementaire dans le modèle de responsabilité partagée pour les services cloud de Microsoft.
 
 **Prêt à utiliser les évaluations**
 
@@ -50,7 +50,7 @@ Affichez [la liste complète des modèles d’évaluation](../compliance/complia
 
 **Score de conformité en temps réel**
 
-Le Gestionnaire de conformité vous fournit également un score de conformité qui mesure votre progression dans l’exécution des actions d’amélioration recommandées au sein des contrôles. Vous pouvez utiliser ce score pour surveiller votre progression et hiérarchiser les actions en fonction de leur potentiel pour réduire les risques.
+Le Gestionnaire de conformité vous fournit également un score de conformité qui mesure votre progression dans l’exécution des actions d’amélioration recommandées au sein des contrôles. Vous pouvez utiliser ce score pour surveiller votre progression et hiérarchiser les actions en fonction de leur capacité à réduire les risques.
 
 #### <a name="use-the-compliance-manager-quickstart-guide"></a>Utiliser le guide de démarrage rapide du Gestionnaire de conformité
 
@@ -66,13 +66,13 @@ Le guide [de démarrage rapide du Gestionnaire de conformité](../compliance/com
     - Exécution d’un travail d’implémentation et de test sur des actions d’amélioration pour effectuer des contrôles dans vos évaluations
     - Comprendre l’impact des différentes actions sur votre score de conformité
 - [Montée en niveau : utiliser des fonctionnalités avancées pour répondre à vos besoins personnalisés](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Création de vos évaluations personnalisées pour suivre les produits autres que Microsoft 365
+    - Création de vos évaluations personnalisées pour suivre les produits Microsoft 365 non personnalisés
     - Modification de modèles existants pour ajouter ou supprimer des contrôles
     - Configuration du test automatisé des actions d’amélioration
 
 ## <a name="how-your-compliance-score-is-calculated"></a>Comment votre score de conformité est calculé
 
-Votre score de conformité est calculé sur la base d’une combinaison d’implémentations de contrôle géré par le client et Microsoft. Voir [le calcul du score de conformité](../compliance/compliance-score-calculation.md) pour obtenir une explication détaillée.
+Votre score de conformité est calculé en fonction d’une combinaison d’implémentations de contrôle géré par le client et Microsoft. Voir [le calcul du score de conformité](../compliance/compliance-score-calculation.md) pour obtenir une explication détaillée.
 
 Une valeur de score est attribuée aux contrôles selon qu’ils sont obligatoires ou discrétionnaires, et qu’ils soient préventives, marqueurs ou correctifs. Ceux-ci représentent collectivement le risque de ne pas l’implémenter par rapport à d’autres contrôles.
 
@@ -96,7 +96,7 @@ Voici quelques conseils importants concernant l’utilisation du Gestionnaire de
 
 - L’importance relative et la priorité des actions d’amélioration identifiées dans le Gestionnaire de conformité doivent être prises en compte dans le cadre d’un examen plus large des risques, ainsi que du risque de confidentialité des données que vous avez déterminé que votre organisation doit gérer.
 
-- Même avec l’agrégation d’actions d’amélioration parmi plusieurs exigences réglementaires, si les modèles d’évaluation de la réglementation pour le RGPD, le LGPD, le CCPA et HIPAA-HITECH sont sélectionnés, par exemple, près de 400 actions d’amélioration sont répertoriées dans le Gestionnaire de conformité. Pour mieux aborder cette longue liste, utilisez le filtre d’action d’amélioration pour réduire le jeu de résultats à une liste plus facile à gérer.
+- Même avec l’agrégation d’actions d’amélioration parmi plusieurs exigences réglementaires, si les modèles d’évaluation de la réglementation pour le RGPD, le LGPD, le CCPA et HIPAA-HITECH sont sélectionnés, par exemple, près de 400 actions d’amélioration seront répertoriées dans le Gestionnaire de conformité. Pour mieux aborder cette longue liste, utilisez le filtre d’action d’amélioration pour réduire le jeu de résultats à une liste plus facile à gérer.
 
 - Le filtre Catégories permet de filtrer les actions d’amélioration par regroupement logique, auquel s’alignent les articles Suivi, Prévention, Protection, Conserver et Examiner de cette solution globale.
 

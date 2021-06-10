@@ -84,10 +84,10 @@ ID de l'événement | Description
 
 Au cours de votre évaluation, vous pouvez configurer chaque règle individuellement ou exclure certains fichiers et processus de l’évaluation par la fonctionnalité.
 
-Voir [Personnaliser les règles de réduction de la surface](customize-attack-surface-reduction.md) d’attaque pour plus d’informations sur la configuration de la fonctionnalité avec les outils de gestion, y compris la stratégie de groupe et les stratégies CSP mdM.
+Voir [Personnaliser les règles de réduction de la surface](customize-attack-surface-reduction.md) d’attaque pour plus d’informations sur la configuration de la fonctionnalité à l’aide des outils de gestion, y compris la stratégie de groupe et les stratégies CSP mdM.
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 * [Utiliser le mode audit pour évaluer les Windows Defender](audit-windows-defender.md)
-* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md).
+* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)

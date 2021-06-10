@@ -76,7 +76,7 @@ Pour modifier l’adresse de messagerie principale et de remplacement d’autres
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
 2. Dans la section **Administrateurs recevant des notifications de facturation,** sélectionnez un nom.
-3. Dans le volet droit, ajoutez ou mettez à jour l’adresse de messagerie principale et de remplacement si nécessaire, puis sélectionnez **Enregistrer**.
+3. Dans le volet droit, ajoutez ou mettez à jour l’adresse de messagerie principale et de remplacement selon vos besoins, puis sélectionnez **Enregistrer.**
 
 ## <a name="change-your-organizations-contact-email"></a>Modifier le courrier électronique de contact de votre organisation
 
@@ -127,7 +127,7 @@ Pour recevoir vos factures en pièce jointe à vos notifications de facture, uti
 2. Sélectionnez **l’onglet Profils** de facturation, puis sélectionnez un profil de facturation dans la liste.
 3. Dans la page des détails du profil de facturation, sous Obtenir les factures dans les pièces **jointes** des e-mails, basculez sur **Sur**.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
 [Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)\

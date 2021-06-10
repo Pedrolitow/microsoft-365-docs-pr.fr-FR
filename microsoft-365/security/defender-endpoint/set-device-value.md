@@ -45,7 +45,7 @@ ms.locfileid: "52771402"
 Définissez la valeur d’appareil d’un [ordinateur spécifique.](machine.md)<br>
 Pour plus [d’informations, voir](tvm-assign-device-value.md) attribuer des valeurs d’appareil.
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 1. Vous pouvez publier sur les appareils pour la dernière fois en fonction de votre période de rétention configurée.
 

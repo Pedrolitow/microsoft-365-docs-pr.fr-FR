@@ -25,13 +25,13 @@ ms.locfileid: "49877079"
 
 Pour gérer les appareils iOS tels que les iPad et les iPhone dans Basic Mobility and Security, créez un certificat APNs.
 
-1. Connectez-vous à Microsoft 365 avec votre compte d’administrateur global.
+1. Connectez-vous Microsoft 365 avec votre compte d’administrateur global.
 
 2. Dans votre navigateur, tapez  [https://protection.office.com](https://protection.office.com/) .
 
 3. Sélectionnez  **Gestion des appareils de protection contre** la perte de   >  **** données, puis sélectionnez **Certificat APNs pour les appareils iOS.**
 
-4. On the Apple Push Notification Certificate Settings page, choose **Next**.
+4. Dans la page Certificat de notification Push Apple Paramètres, choisissez **Suivant**.
 
 5. Sélectionnez Télécharger votre fichier CSR et enregistrez la demande de signature de certificat dans un endroit de votre ordinateur que vous mémoriserez. Sélectionnez  **Suivant**.
 
@@ -46,14 +46,14 @@ Pour gérer les appareils iOS tels que les iPad et les iPhone dans Basic Mobilit
 
     3. Sélectionnez  **Créer un certificat et**   acceptez les conditions d’utilisation.
 
-    4. Accédez à la demande de signature de certificat que vous avez téléchargée sur votre ordinateur à partir de Microsoft 365, puis sélectionnez **Télécharger.**
+    4. Accédez à la demande de signature de certificat que vous avez téléchargée sur votre ordinateur à partir Microsoft 365, puis sélectionnez **Télécharger**.
 
         Téléchargez le certificat APNs créé par le portail de certificats Push Apple sur votre ordinateur.
 
        >[!TIP]
        >If you're having trouble downloading the certificate, refresh your browser.
 
-7. Revenir à Microsoft 365, puis sélectionnez **Suivant** pour obtenir la page Télécharger le certificat     **APNS.**  
+7. Revenir à Microsoft 365, puis sélectionnez **Suivant** pour obtenir la   page Télécharger certificat   **APNS.**  
 
 8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 

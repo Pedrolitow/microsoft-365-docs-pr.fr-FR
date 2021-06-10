@@ -37,7 +37,7 @@ ms.locfileid: "52572140"
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Mettre à jour les enregistrements DNS dans le centre Microsoft 365'administration
 1. Dans le centre d’administration, accédez à la page **Paramètres** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domaines</a>.
 
-1. Dans la page **Domaines,** sélectionnez le domaine, puis choisissez **Enregistrements DNS**.
+1. Dans la page **Domaines,** sélectionnez le domaine, puis choisissez **Enregistrements DNS.**
 
 1. Sélectionnez **+ Ajouter un enregistrement,** puis entrez ce qui suit : 
     
