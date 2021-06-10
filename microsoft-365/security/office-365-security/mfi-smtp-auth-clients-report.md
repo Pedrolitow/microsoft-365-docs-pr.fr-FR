@@ -27,10 +27,10 @@ ms.locfileid: "51204130"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les informations sur les clients [](mail-flow-insights-v2.md) **SMTP Auth** dans le tableau de bord de flux de messagerie et le rapport des clients d’th [SMTP](#smtp-auth-clients-report) associés dans le Centre de sécurité [&](https://protection.office.com) conformité mettent en évidence l’utilisation du protocole d’envoi du client SMTP AUTH par les utilisateurs ou les comptes système de votre organisation. Ce protocole hérité (qui utilise le point de terminaison smtp.office365.com) offre uniquement l’authentification de base et peut être utilisé par des comptes compromis pour envoyer des messages électroniques. Les informations et le rapport vous permettent de vérifier l’activité inhabituelle pour les envois de courrier ÉLECTRONIQUE SMTP AUTH. Il affiche également les données d’utilisation TLS pour les clients ou les appareils utilisant SMTP AUTH.
+Les informations sur les clients [](mail-flow-insights-v2.md) **SMTP Auth** dans le tableau de bord de flux de messagerie et le rapport des clients d’th [SMTP](#smtp-auth-clients-report) associés dans le Centre de sécurité [&](https://protection.office.com) conformité mettent en évidence l’utilisation du protocole d’envoi du client SMTP AUTH par les utilisateurs ou les comptes système de votre organisation. Ce protocole hérité (qui utilise le point de terminaison smtp.office365.com) offre uniquement l’authentification de base et peut être utilisé par des comptes compromis pour envoyer des messages électroniques. Les informations et le rapport vous permettent de vérifier l’activité inhabituelle pour les envois de courrier ÉLECTRONIQUE SMTP AUTH. Il affiche également les données d’utilisation TLS pour les clients ou les appareils utilisant l’TH SMTP.
 
 Le widget indique le nombre d’utilisateurs ou de comptes de service qui ont utilisé le protocole d’th SMTP au cours des 7 derniers jours.
 
@@ -44,17 +44,17 @@ Vous pouvez cliquer sur le lien **du rapport des clients SMTP Auth** pour aller 
 
 ## <a name="smtp-auth-clients-report"></a>Rapport de clients d’authentification SMTP
 
-### <a name="report-view-for-the-smtp-auth-clients-report"></a>Affichage du rapport pour le rapport des clients d’th SMTP
+### <a name="report-view-for-the-smtp-auth-clients-report"></a>Affichage du rapport pour le rapport clients d’th SMTP
 
 Par défaut, le rapport affiche les données des 7 derniers jours, mais les données sont disponibles pour les 90 derniers jours.
 
 La section vue d’ensemble contient les graphiques suivants :
 
-- Afficher les données par : Volume d’envoi : par défaut, le graphique affiche le nombre de messages clients SMTP Auth qui ont été envoyés à partir de tous les domaines ( Afficher les données pour : Tous les domaines des **expéditeurs** est sélectionné par défaut). Vous pouvez filtrer les résultats sur un  domaine d’expéditeur spécifique en cliquant sur Afficher les données pour et en sélectionnant le domaine de l’expéditeur dans la liste liste. Si vous pointez sur un point de données spécifique (jour), le nombre de messages s’affiche.
+- Afficher les données par : volume d’envoi : par défaut, le graphique affiche le nombre de messages clients SMTP Auth qui ont été envoyés à partir de tous les domaines ( Afficher les données pour : Tous les domaines des **expéditeurs** est sélectionné par défaut). Vous pouvez filtrer les résultats sur un  domaine d’expéditeur spécifique en cliquant sur Afficher les données pour et en sélectionnant le domaine de l’expéditeur dans la liste liste. Si vous pointez sur un point de données spécifique (jour), le nombre de messages s’affiche.
 
   ![Affichage en volume de l’envoi dans le rapport des clients d’th SMTP dans le Centre de conformité & sécurité](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-- Afficher les données par : Utilisation du chiffrement **TLS**: le graphique affiche le pourcentage d’utilisation de TLS pour tous les messages clients SMTP Auth pendant la période sélectionnée. Ce graphique vous permet d’identifier les utilisateurs et les comptes système qui utilisent encore des versions antérieures de TLS et d’agir sur ces derniers.
+- **Afficher les données par : Utilisation TLS**: le graphique affiche le pourcentage d’utilisation de TLS pour tous les messages clients d’th SMTP pendant la période sélectionnée. Ce graphique vous permet d’identifier les utilisateurs et les comptes système qui utilisent encore des versions antérieures de TLS et d’agir sur ces derniers.
 
   ![Affichage de l’utilisation TLS dans le rapport des clients SMTP Auth dans le Centre de sécurité & conformité](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
@@ -62,7 +62,7 @@ Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spéci
 
 Cliquez **sur Demander un** rapport pour recevoir une version plus détaillée du rapport dans un message électronique. Vous pouvez spécifier la plage de dates et les destinataires à recevoir.
 
-### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Affichage de table Détails pour le rapport des clients d’th SMTP
+### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Vue de table Détails pour le rapport des clients d’th SMTP
 
 Si vous cliquez sur Afficher le tableau des **détails,** les informations affichées dépendent du graphique que vous regardiez :
 
@@ -83,7 +83,7 @@ Si vous cliquez sur Afficher le tableau des **détails,** les informations affic
 
   <sup>\*</sup> Cette colonne indique le pourcentage et le nombre de messages de l’expéditeur.
 
-Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
+Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
 Si vous sélectionnez une ligne, des détails similaires sont affichés dans un volant :
 

@@ -34,7 +34,7 @@ ms.locfileid: "52788994"
 > [!NOTE]
 > La fonctionnalité décrite dans cet article est en prévisualisation, n’est pas disponible pour tout le monde et peut faire l’objet de changements.
 
-Pour assurer la sécurité de votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
+Pour sécuriser votre organisation par [défaut,](secure-by-default.md)Exchange Online Protection (EOP) n’autorise pas les listes sécurisées ou le contournement de filtrage pour les messages identifiés comme programmes malveillants ou hameçonnage à haut niveau de confiance. Toutefois, il existe des scénarios spécifiques qui nécessitent la remise de messages non filtrés. Par exemple :
 
 - **Simulations de hameçonnage tierces**: les attaques simulées peuvent vous aider à identifier les utilisateurs vulnérables avant qu’une attaque réelle n’impacte votre organisation.
 - Boîtes aux lettres d’opérations de sécurité **(SecOps)**: boîtes aux lettres dédiées utilisées par les équipes de sécurité pour collecter et analyser les messages non filtrés (bonnes et mauvaises).
@@ -42,8 +42,8 @@ Pour assurer la sécurité de votre organisation par [défaut,](secure-by-defaul
 Vous utilisez la _stratégie de remise_ avancée dans Microsoft 365 pour empêcher le filtrage de ces messages dans ces _scénarios spécifiques._ <sup>\*</sup> La stratégie de remise avancée garantit que les messages dans ces scénarios atteignent les résultats suivants :
 
 - Les filtres dans EOP et Microsoft Defender Office 365 aucune action sur ces messages.<sup>\*</sup>
-- [La purge zéro heure (ZAP) pour le](zero-hour-auto-purge.md) courrier indésirable et le hameçonnage n’a aucune action sur ces messages.<sup>\*</sup>
-- [Les alertes système par défaut](alerts.md) ne sont pas déclenchées pour ces scénarios.
+- [La purge zéro heure (ZAP) pour](zero-hour-auto-purge.md) le courrier indésirable et le hameçonnage n’a aucune action sur ces messages.<sup>\*</sup>
+- [Les alertes système par](alerts.md) défaut ne sont pas déclenchées pour ces scénarios.
 - [Air and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Plus spécifiquement pour les simulations de hameçonnage tierces :
   - [Les soumissions d’administrateur](admin-submission.md) génèrent une réponse automatique qui dit que le message fait partie d’une campagne de simulation de hameçonnage et qu’il ne constitue pas une menace réelle. Les alertes et AIR ne sont pas déclenchées.
@@ -66,16 +66,16 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 - Des autorisations doivent vous être attribuées avant de pouvoir suivre les procédures de cet article :
   - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie  de remise avancée,  vous devez être  membre du groupe de rôles Administrateur de la sécurité dans le centre de sécurité et membre du groupe de rôles Gestion de l’organisation **dans Exchange Online**.  
-  - Pour un accès en lecture seule à la stratégie de  remise  avancée, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
+  - Pour accéder en lecture seule à la stratégie de remise  avancée,  vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
-  Pour plus d’informations, [voir Autorisations](permissions-microsoft-365-security-center.md) dans le centre Microsoft 365 sécurité et [autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
+  Pour plus d’informations, [voir Autorisations dans](permissions-microsoft-365-security-center.md) le centre Microsoft 365 sécurité et [autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > L’ajout d’utilisateurs au rôle Azure Active Directory donne aux utilisateurs les autorisations requises dans le centre de sécurité et les autorisations pour d’autres fonctionnalités dans Microsoft 365.  Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > L’ajout d’utilisateurs au rôle de Azure Active Directory donne aux  utilisateurs les autorisations requises dans le centre de sécurité et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-the-security-center-to-configure-secops-mailboxes-in-the-advanced-delivery-policy"></a>Utiliser le centre de sécurité pour configurer des boîtes aux lettres SecOps dans la stratégie de remise avancée
 
-1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **rules** \> **Threat policies** section Advanced \>  \> **delivery**.
+1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **rules** \> **Threat policies** rules section Advanced \>  \> **delivery**.
 
 2. Dans la page **Remise** avancée, vérifiez que l’onglet Boîte aux lettres **SecOps** est sélectionné, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.**
@@ -83,7 +83,7 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 3. Dans le volant modifier les boîtes aux lettres **SecOps** qui s’ouvre, entrez une boîte aux lettres Exchange Online existante que vous souhaitez désigner comme boîte aux lettres SecOps en suivant l’une des étapes suivantes :
    - Cliquez dans la zone, laissez la liste des boîtes aux lettres résoudre, puis sélectionnez la boîte aux lettres.
-   - Cliquez dans la zone commencer à taper un identificateur pour la boîte aux lettres (nom, nom complet, alias, adresse e-mail, nom de compte, etc.), puis sélectionnez la boîte aux lettres (nom complet) dans les résultats.
+   - Cliquez dans la zone commencer à taper un identificateur pour la boîte aux lettres (nom, nom complet, alias, adresse e-mail, nom du compte, etc.), puis sélectionnez la boîte aux lettres (nom complet) dans les résultats.
 
      Répétez cette étape autant de fois que nécessaire. Les groupes de distribution ne sont pas autorisés.
 
@@ -95,7 +95,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
 
 ## <a name="use-the-security-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Utiliser le centre de sécurité pour configurer des simulations de hameçonnage tiers dans la stratégie de remise avancée
 
-1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **rules** \> **Threat policies** section Advanced \>  \> **delivery**.
+1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **rules** \> **Threat policies** rules section Advanced \>  \> **delivery**.
 
 2. Dans la page **Remise avancée,** sélectionnez l’onglet **Simulation** de hameçonnage, puis faites l’une des étapes suivantes :
    - Cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.**
@@ -108,7 +108,7 @@ Les entrées de boîte aux lettres SecOps que vous avez configurées sont affich
      - Adresse IP unique : par exemple, 192.168.1.1.
      - Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
      - ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
-   - URL de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou désaxées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur affichée sous la zone. Vous pouvez ajouter jusqu’à 10 entrées.
+   - **URL** de simulation pour autoriser : développez ce paramètre et entrez éventuellement des URL spécifiques qui font partie de votre campagne de simulation de hameçonnage qui ne doivent pas être bloquées ou détonées en cliquant dans la zone, en entrant une valeur, puis en appuyant sur Entrée ou en sélectionnant la valeur qui s’affiche sous la zone. Vous pouvez ajouter jusqu’à 10 entrées.
 
    Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 

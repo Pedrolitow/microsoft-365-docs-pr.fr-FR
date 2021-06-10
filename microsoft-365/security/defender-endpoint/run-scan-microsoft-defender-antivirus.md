@@ -1,6 +1,6 @@
 ---
 title: Exécuter et personnaliser des analyses à la demande dans Antivirus Microsoft Defender
-description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows appl.
+description: Exécuter et configurer des analyses à la demande à l’aide de PowerShell, Windows Management Instrumentation ou individuellement sur les points de terminaison avec l Sécurité Windows app.
 keywords: analyse, à la demande, dos, intune, analyse instantanée
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -38,7 +38,7 @@ L’analyse rapide examine tous les emplacements où des programmes malveillants
 > [!IMPORTANT]
 > Antivirus Microsoft Defender s’exécute dans le contexte du [compte LocalSystem](/windows/win32/services/localsystem-account) lors de l’analyse locale. Pour les analyses réseau, il utilise le contexte du compte d’appareil. Si le compte d’appareil de domaine ne peut pas accéder au partage, l’analyse ne fonctionne pas. Assurez-vous que l’appareil dispose d’autorisations sur le partage réseau d’accès.
 
-Combinée à une fonctionnalité [de protection](configure-real-time-protection-microsoft-defender-antivirus.md)en temps réel toujours en cours, une analyse rapide permet de fournir une couverture forte à la fois pour les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. La protection en temps réel et toujours en cours examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier. Par défaut, les analyses rapides s’exécutent sur des appareils amovibles montés, tels que des lecteurs USB. Dans la plupart des cas, une analyse rapide permet de trouver des programmes malveillants qui n’ont pas été détectés par la protection en temps réel.
+Combinée à une fonctionnalité [de protection](configure-real-time-protection-microsoft-defender-antivirus.md)en temps réel toujours en cours, une analyse rapide permet d’assurer une couverture forte à la fois pour les programmes malveillants qui commencent par le système et les programmes malveillants au niveau du noyau. La protection en temps réel et toujours en cours examine les fichiers lorsqu’ils sont ouverts et fermés, et chaque fois qu’un utilisateur navigue vers un dossier. Par défaut, les analyses rapides s’exécutent sur des appareils amovibles montés, tels que des lecteurs USB. Dans la plupart des cas, une analyse rapide permet de trouver des programmes malveillants qui n’ont pas été détectés par la protection en temps réel.
 
 Une analyse complète peut être utile lorsqu’une menace de programmes malveillants est signalée sur un point de terminaison. L’analyse peut déterminer s’il existe des composants inactifs qui nécessitent un nettoyage plus approfondi. Toutefois, Microsoft recommande généralement d’utiliser des analyses rapides plutôt que des analyses complètes. L’analyse complète peut prendre quelques heures ou jours, en fonction de la quantité et du type de données à analyser. 
 

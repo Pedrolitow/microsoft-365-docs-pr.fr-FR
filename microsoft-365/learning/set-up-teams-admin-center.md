@@ -27,7 +27,7 @@ ms.locfileid: "52789230"
 > [!NOTE]
 > Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
 
-L’administrateur Teams doit effectuer certaines étapes pour activer Learning (Prévisualisation) pour ses utilisateurs dans le client. Ces étapes varient en fonction de la façon dont le client est activé : prévisualisation [*publique*](set-up-teams-admin-center.md#public-preview-tenants) ou [ *prévisualisation privée* (ou bêta).](set-up-teams-admin-center.md#private-preview-tenants)
+L’administrateur Teams doit effectuer certaines étapes pour activer l’Apprentissage Paréo (Prévisualisation) pour ses utilisateurs dans le client. Ces étapes varient en fonction de la façon dont le client est activé : prévisualisation [*publique*](set-up-teams-admin-center.md#public-preview-tenants) ou [ *prévisualisation privée* (ou bêta).](set-up-teams-admin-center.md#private-preview-tenants)
 
 ## <a name="public-preview-tenants"></a>Locataires de la prévisualisation publique
 
@@ -39,7 +39,7 @@ L’administrateur Teams doit effectuer certaines étapes pour activer Learning 
 
     a. Modifiez Teams de mise à jour pour activer les fonctionnalités de prévisualisation publique. Voir [Microsoft Teams prévisualisation publique.](/microsoftteams/public-preview-doc-updates)
 
-    b. Activez la stratégie de mise à jour pour les utilisateurs ou les groupes qui effectueront le test Learning (Prévisualisation). Voir [Attribuer des stratégies à des utilisateurs et des groupes.](/microsoftteams/assign-policies-users-and-groups)
+    b. Activez la stratégie de mise à jour pour les utilisateurs ou les groupes qui effectueront des tests d’apprentissage en prévisualisation. Voir [Attribuer des stratégies à des utilisateurs et des groupes.](/microsoftteams/assign-policies-users-and-groups)
 
 2. Modifiez la stratégie d’autorisation d’application pour les utilisateurs d’Learning (prévisualisation).
 
@@ -58,13 +58,13 @@ Les utilisateurs qui ont été activés pour le test [](/microsoftteams/public-p
 
 1. Les utilisateurs doivent sélectionner leur image de profil > **à propos de** la  >  **prévisualisation publique.**
    
-    ![Navigation supérieure dans l’application Teams affichant le profil de l’utilisateur](../media/learning/learning-app-select-profile-teams.png)
+    ![Navigation supérieure dans l’application Teams montrant le profil de l’utilisateur](../media/learning/learning-app-select-profile-teams.png)
     
 2. Les utilisateurs doivent accepter les conditions générales de la prévisualisation publique.
 
     ![Basculer vers la version d’aperçu public](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. Les utilisateurs peuvent désormais trouver Learning Learning (prévisualisation) dans le Teams app store et commencer à l’utiliser.
+3. Les utilisateurs peuvent désormais trouver Learning Learning (prévisualisation) dans le Teams’application store et commencer à l’utiliser.
 
 ## <a name="private-preview-tenants"></a>Locataires de la prévisualisation privée
 
@@ -78,7 +78,7 @@ Pour les locataires de la prévisualisation privée, aucune stratégie suppléme
 
 2. Dans la page **Gérer les applications,** dans la zone de recherche, tapez *Learning,* puis sélectionnez **Learning (Prévisualisation).**
 
-   ![Page Gérer les applications dans Teams centre d’administration affichant la zone de recherche.](../media/learning/learning-app-teams-manage-apps-page.png)
+   ![Page Gérer les applications dans le centre Teams’administration affichant la zone de recherche.](../media/learning/learning-app-teams-manage-apps-page.png)
 
 3. Dans la page **Learning (Prévisualisation),** sous **État,** sélectionnez **Autorisé** à activer Learning (Prévisualisation).
 

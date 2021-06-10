@@ -31,8 +31,8 @@ ms.locfileid: "52300048"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft 365 organisations avec des boîtes aux lettres Exchange Online et des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online prendre en charge le courrier entrant anonyme sur IPv6. Le serveur de messagerie IPv6 source doit répondre aux deux exigences suivantes :
 

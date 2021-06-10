@@ -96,7 +96,7 @@ Les onglets fournissent des informations pertinentes sur la sécurité et la pr�
 
 **L’onglet Alertes** fournit une liste des alertes associées à l’appareil. Cette liste est une version filtrée de la file d’attente des [alertes](alerts-queue.md)et affiche une brève description de l’alerte, de la gravité (élevée, moyenne, faible, informationnelle), de l’état dans la file d’attente (nouveau, en cours, résolu), de la classification (non définie, false alerte, alerte vraie), de l’état d’investigation, de la catégorie d’alerte, de la personne qui résout l’alerte et de la dernière activité. Vous pouvez également filtrer les alertes.
 
-![Image des alertes liées à l’appareil](images/alerts-device.png)
+![Image des alertes associées à l’appareil](images/alerts-device.png)
 
 Lorsque l’icône de cercle à gauche d’une alerte est sélectionnée, un volant s’affiche. À partir de ce panneau, vous pouvez gérer l’alerte et afficher plus de détails, tels que le numéro d’incident et les appareils associés. Plusieurs alertes peuvent être sélectionnées à la fois.
 
@@ -112,7 +112,7 @@ La chronologie vous permet également d’aller de manière sélective dans les 
 > Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit.](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 >Le pare-feu couvre les événements suivants
 >
->- [5025](/windows/security/threat-protection/auditing/event-5025) : service de pare-feu arrêté
+>- [5025](/windows/security/threat-protection/auditing/event-5025) - Service de pare-feu arrêté
 >- [5031](/windows/security/threat-protection/auditing/event-5031) : application bloquée pour accepter les connexions entrantes sur le réseau
 >- [5157](/windows/security/threat-protection/auditing/event-5157) : connexion bloquée
 
@@ -172,12 +172,12 @@ Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) 
 
 ### <a name="active-alerts"></a>Alertes actives
 
-La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des alertes liées à l’appareil et à leur niveau de risque, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et qu’il existe des alertes actives. Plus d’informations sont disponibles dans l’exercice « Alertes ».
+La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des alertes relatives à l’appareil et à son niveau de risque, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et qu’il existe des alertes actives. Plus d’informations sont disponibles dans l’exercice « Alertes ».
 
 ![Image de la carte d’alertes active](images/risk-level-small.png)
 
 >[!NOTE]
->Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
+>Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
 
 ### <a name="logged-on-users"></a>Utilisateurs connectés
 

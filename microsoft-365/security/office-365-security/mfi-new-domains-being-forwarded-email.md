@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: ''
-description: Les administrateurs peuvent apprendre à utiliser les informations sur les nouveaux domaines qui sont transmis par courrier électronique dans le tableau de bord du flux de messagerie dans le Centre de sécurité & conformité pour examiner le moment où leurs utilisateurs envoient des messages à des domaines externes qui n’ont jamais été transmis.
+description: Les administrateurs peuvent apprendre à utiliser les informations sur les nouveaux domaines qui sont transmis par courrier électronique dans le tableau de bord de flux de messagerie du Centre de sécurité & conformité pour déterminer si leurs utilisateurs ont transmis des messages à des domaines externes qui n’ont jamais été transmis.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2f3a5f125a045176f152ccd079ebe7f7e40bc39f
@@ -25,8 +25,8 @@ ms.locfileid: "51204040"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Il existe des raisons professionnelles valides de faire passer des messages électroniques à des destinataires externes dans des domaines spécifiques. Toutefois, il est suspect lorsque les utilisateurs de votre organisation commencent soudainement à forwardr des messages vers un domaine vers lequel aucun utilisateur de votre organisation n’a jamais transmis de messages (un nouveau domaine).
 
@@ -38,13 +38,13 @@ Cette information apparaît uniquement lorsque le problème est détecté et app
 
 ![Informations sur les nouveaux domaines transmis par courrier électronique](../../media/mfi-new-domains-being-forwarded.png)
 
-Lorsque vous cliquez sur le widget, un volant s’affiche, dans lequel vous trouverez plus de détails sur les messages transmis, y compris un lien vers le rapport [de forwarding.](view-mail-flow-reports.md#forwarding-report)
+Lorsque vous cliquez sur le widget, un flyout s’affiche, dans lequel vous trouverez plus de détails sur les messages transmis, y compris un lien vers le rapport [de forwarding.](view-mail-flow-reports.md#forwarding-report)
 
 ![Volant d’informations qui s’affiche après avoir cliqué sur l’aperçu des nouveaux domaines transmis par courrier électronique](../../media/mfi-new-domains-being-forwarded-details.png)
 
 Vous pouvez également vous rendre sur cette page de  détails lorsque vous sélectionnez l’aperçu après avoir cliqué sur Afficher tout dans la zone Recommandations & informations les plus **détaillées** **(** Tableau de bord de rapports \>  ou <https://protection.office.com/insightdashboard> ).
 
-Pour empêcher le transmission automatique de messages à des domaines externes, configurez un domaine distant pour certains domaines externes ou tous. Pour plus d’informations, voir [Gérer les domaines distants dans Exchange Online.](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)
+Pour empêcher le transmission automatique de messages à des domaines externes, configurez un domaine distant pour certains domaines externes ou tous. Pour plus d’informations, voir [Gérer les domaines distants dans Exchange Online](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).
 
 ## <a name="related-topics"></a>Voir aussi
 

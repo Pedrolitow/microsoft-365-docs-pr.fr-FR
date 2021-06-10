@@ -32,14 +32,14 @@ ms.locfileid: "51204378"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **Résumé :** Cette solution vous indique quels sont les indicateurs des attaques de cybersécurité les plus courantes dans Office 365, comment confirmer de manière positive toute attaque donnée et comment y répondre.
+ **Résumé :** Cette solution vous indique quels sont les indicateurs des attaques de cybersécurité les plus courantes dans Office 365, comment confirmer les attaques données et comment y répondre.
 
 ## <a name="learn-how-to-respond-to-cyberattacks"></a>Découvrez comment répondre aux cyberattaques
 
-Toutes les cyberattaques ne peuvent pas être déprécées. Les attaquants recherchent constamment de nouvelles faiblesses dans votre stratégie de défense ou exploitent des anciennes. Le fait de savoir reconnaître une attaque vous permet d’y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
+Toutes les cyberattaques ne peuvent pas être déprécées. Les attaquants recherchent constamment de nouvelles faiblesses dans votre stratégie de sécurité ou exploitent des anciennes. Le fait de savoir reconnaître une attaque vous permet d’y répondre plus rapidement, ce qui réduit la durée de l’incident de sécurité.
 
 Cette série d’articles vous aide à comprendre à quoi peut ressembler un type particulier d’attaque dans Microsoft 365 et vous donne les étapes à suivre pour y répondre. Ce sont des points d’entrée rapides pour comprendre :
 

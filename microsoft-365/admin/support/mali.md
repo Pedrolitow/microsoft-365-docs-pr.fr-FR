@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour le Mali
+title: Informations de support pour le Sénégal
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH

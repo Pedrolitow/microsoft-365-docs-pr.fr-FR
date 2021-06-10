@@ -30,7 +30,7 @@ ms.locfileid: "52535673"
 # <a name="manage-license-requests"></a>Gérer les demandes de licence
 
 > [!NOTE]
-> Les informations de cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez [la faq sur l’achat en libre-service.](../subscriptions/self-service-purchase-faq.yml)
+> Les informations de cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez [le FAQ sur l’achat en libre-service.](../subscriptions/self-service-purchase-faq.yml)
 
 Si vous désactivez les achats en libre-service dans votre organisation, vous pouvez utiliser les demandes de licences pour gérer le processus de demande de licence pour vos utilisateurs. Lorsqu’un utilisateur tente d’effectuer un achat en libre-service pour un produit que vous avez bloqué, il peut soumettre une demande de licence à vous, l’administrateur. Lorsqu’ils font une demande, ils peuvent ajouter les noms d’autres utilisateurs qui ont également besoin de licences pour le produit.
 
@@ -41,7 +41,7 @@ Pour voir et gérer les demandes de licence, l’administrateur utilise **l’on
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global pour effectuer les tâches de cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global pour effectuer les tâches de cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-your-own-request-process"></a>Utiliser votre propre processus de demande
 
@@ -77,7 +77,7 @@ Lorsque vous revenir à la liste **demandes,** vous voyez le message Que vous ut
 9. Fermez le volet droit.
     Les utilisateurs reçoivent un courrier électronique qui indique que leur demande a été approuvée ou refusée.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Attribuer des licences aux utilisateurs](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Déplacer les utilisateurs vers un autre abonnement](../subscriptions/move-users-different-subscription.md) (article)\

@@ -192,7 +192,7 @@ Suivez les étapes ci-dessous pour identifier l’ID d’espace de travail Defen
 4. Installez le Microsoft Monitoring Agent (MMA). <br>
     MMA est actuellement pris en charge (depuis janvier 2019) sur les systèmes d’Windows suivants :
 
-    -   SSO serveur : Windows Server 2008 SP1 ou Plus nouveau
+    -   SSO serveur : Windows Server 2008 SP1 ou plus nouveau
 
     -   SSK client : Windows 7 SP1 et ultérieures
 
@@ -236,11 +236,11 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
   
     [Analyse rapide par rapport à l’analyse complète et à l’analyse personnalisée](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    Pour plus d’informations, [voir Sécurité Windows’infrastructure de configuration](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    Pour plus d’informations, voir [Sécurité Windows’infrastructure de configuration](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![Image du volet de protection nouvelle génération2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
-    ![Image du volet de protection nouvelle génération 3](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
+    ![Image du volet de protection nouvelle génération3](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
 
     ![Image du volet de protection nouvelle génération 4](images/a28afc02c1940d5220b233640364970c.png)
 
@@ -254,7 +254,7 @@ L’antivirus Microsoft Defender est une solution de protection contre les progr
 
     ![Image du volet de protection nouvelle génération9](images/3876ca687391bfc0ce215d221c683970.png)
 
-3. Cliquez avec le bouton droit sur la stratégie de logiciel anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
+3. Cliquez avec le bouton droit sur la stratégie anti-programme malveillant nouvellement créée et sélectionnez **Déployer.**
 
     ![Image du volet de protection nouvelle génération10](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
@@ -269,7 +269,7 @@ Le pilier de réduction de la surface d’attaque de Defender pour le point de t
 
 Toutes ces fonctionnalités fournissent un mode audit et un mode bloc. En mode audit, il n’y a pas d’impact sur l’utilisateur final. Tout ce qu’il fait, c’est collecter des données de télémétrie supplémentaires et les rendre disponibles dans le Centre de sécurité Microsoft Defender. L’objectif d’un déploiement est de déplacer pas à pas les contrôles de sécurité en mode blocage.
 
-Pour définir des règles de récupération de l’accès en mode audit :
+Pour définir des règles de récupération de l’accès en mode Audit :
 
 1. Dans la console Microsoft Endpoint Configuration Manager, accédez à La vue d’ensemble des ressources et de la **conformité Endpoint Protection Windows Defender Exploit \> \> \> Guard** et choisissez Créer une stratégie **Exploit Guard.**
 

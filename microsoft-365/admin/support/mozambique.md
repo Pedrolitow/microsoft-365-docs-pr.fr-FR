@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour LeQue
+title: Informations de support pour Laque
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -29,7 +29,7 @@ ms.locfileid: "52298003"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Mon-Fri 7 h à 18 h
+Anglais : Mon-Fri 7h00 à 18h00
 
 ### <a name="technical-support"></a>Support technique :
 

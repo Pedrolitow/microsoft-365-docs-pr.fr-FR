@@ -34,9 +34,9 @@ ms.locfileid: "52299987"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Microsoft 365 Defender peut vous aider à détecter les pièces jointes malveillantes remis par courrier électronique. Dans la mesure [où](https://protection.office.com/) le Centre de sécurité et conformité Office 365 s’intègre à Microsoft 365 Defender, les analystes de sécurité peuvent avoir une visibilité sur les menaces provenant de Office 365, par exemple par le biais de pièces jointes de courrier électronique.
+Microsoft 365 Defender peut vous aider à détecter les pièces jointes malveillantes remis par courrier électronique. Dans la mesure où le Centre de sécurité et conformité [Office 365](https://protection.office.com/) s’intègre à Microsoft 365 Defender, les analystes de sécurité peuvent avoir une visibilité sur les menaces provenant de Office 365, par exemple par le biais de pièces jointes de courrier électronique.
 
 Par exemple, un analyste a été affecté à un incident à plusieurs étapes.
  
@@ -50,11 +50,11 @@ En faisant défiler vers le bas, plus d’informations s’affichent, montrant l
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="Exemple d’impact sur les utilisateurs et les fichiers d’une alerte par courrier électronique":::
   
-La sélection **de la page** Ouvrir une alerte vous permet d’obtenir l’alerte spécifique dans laquelle différentes informations peuvent être vues plus en détail en sélectionnant le lien. Vous pouvez afficher le message électronique réel en sélectionnant Afficher les messages dans **l’Explorateur** en bas du panneau.
+La sélection **de la page** Ouvrir une alerte vous permet d’obtenir l’alerte spécifique dans laquelle différentes informations peuvent être vues plus en détail en sélectionnant le lien. Le message électronique réel peut être vu en sélectionnant Afficher les messages dans **l’Explorateur** en bas du panneau.
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Exemple de détails d’une alerte"::: 
 
-L’analyste est alors envoyé à la page Gestion des menaces dans laquelle l’objet, le destinataire, l’expéditeur et d’autres informations du courrier électronique sont affichés. **ZaP** sous **Actions spéciales indique** à l’analyste que la fonctionnalité de purge automatique heure zéro a été implémentée. ZAP détecte et supprime automatiquement les messages malveillants et de courrier indésirable des boîtes aux lettres au sein de l’organisation. Pour plus d’informations, voir [la purge automatique heure zéro (ZAP) dans Exchange Online](../office-365-security/zero-hour-auto-purge.md).
+L’analyste se trouve alors sur la page Gestion des menaces dans laquelle l’objet, le destinataire, l’expéditeur et d’autres informations du courrier électronique sont affichés. **ZaP** sous **Actions spéciales indique** à l’analyste que la fonctionnalité de purge automatique heure zéro a été implémentée. ZAP détecte et supprime automatiquement les messages malveillants et de courrier indésirable des boîtes aux lettres au sein de l’organisation. Pour plus d’informations, voir [la purge automatique heure zéro (ZAP) dans Exchange Online](../office-365-security/zero-hour-auto-purge.md).
 
 D’autres actions peuvent être prises sur des messages spécifiques en sélectionnant **Actions.** 
  

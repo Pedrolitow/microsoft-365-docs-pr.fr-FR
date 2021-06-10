@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297535"
 ---
-# <a name="contact-support-for-trinidad-amp-tobago"></a>Contacter le support technique de &amp; Trinité-Tobago
+# <a name="contact-support-for-trinidad-amp-tobago"></a>Contacter le support technique de &amp; Trinité-et-Tobago
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 

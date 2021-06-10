@@ -33,7 +33,7 @@ Entrer le code 7703
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 10H00 à 18h00
+Français : Mon-Fri 10h00 à 18h00
 
 Anglais : Mon-Fri 10h00 à 18h00
 

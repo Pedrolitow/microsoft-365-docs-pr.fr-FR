@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Cet article fournit des informations de dépannage pour les problèmes d’envoi de courrier électronique à des boîtes de réception dans Microsoft 365 & meilleures pratiques en matière de publipostage en bloc pour les clients Microsoft 365.
+description: Cet article fournit des informations de dépannage pour les problèmes d’envoi de courrier électronique à des boîtes de réception Microsoft 365 & meilleures pratiques en matière de publipostage en bloc Microsoft 365 clients.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
@@ -32,9 +32,9 @@ ms.locfileid: "51204474"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
-Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi d’e-mails dans des boîtes de réception dans Microsoft 365 et les meilleures pratiques en matière de publipostage en bloc aux clients.
+Cet article fournit des informations de dépannage pour les expéditeurs qui rencontrent des problèmes lors de la tentative d’envoi d’e-mails à des boîtes de réception dans Microsoft 365 et les meilleures pratiques en matière de publipostage en masse pour les clients.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Vous gérez la réputation de l’expéditeur de votre IP et domaine ?
 
@@ -58,11 +58,11 @@ Il se peut que nous n’acceptions pas les e-mails provenant d’expéditeurs do
 - 10.0.0.0/8 (ou 10.0.0.0 - 10.255.255.255)
 - 172.16.0.0/11 (ou 172.16.0.0 - 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Vous avez reçu une rapport de non-remise (NDR) lors de l’envoi de courriers électroniques à un utilisateur dans Office 365
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Vous avez reçu une rapport de non-remise (NDR) lors de l’envoi d’un courrier électronique à un utilisateur dans Office 365
 
 Certains problèmes de remise sont dus au blocage de l'adresse IP de l'expéditeur par Microsoft ou à l'identification du compte d'utilisateur comme expéditeur interdit en raison des activité de courrier indésirable précédentes. Si vous pensez que vous avez reçu la notification d'échec de remise par erreur, suivez d'abord toutes les instructions indiquées dans le message de notification d'échec de remise pour résoudre le problème.
 
-Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans les rapports de [non-remise](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)de courrier électronique dans Exchange Online.
+Pour plus d’informations sur l’erreur que vous avez reçue, consultez la liste des codes d’erreur dans les rapports de [non-remise](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)par courrier électronique Exchange Online .
 
  Par exemple, si vous recevez la NDR suivante, cela indique que l’adresse IP d’envoi a été bloquée par Microsoft :
 
@@ -82,13 +82,13 @@ Si vous recevez une notification d'échec de remise d'EOP, cela indique que votr
 
 Vous avez reçu une notification d'échec de remise car une activité suspecte a été détectée sur l'adresse IP et a été restreinte temporairement le temps d'effectuer des évaluations supplémentaires. Si la suspicion est désactivée au cours de l'évaluation, cette restriction est bientôt levée.
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Je ne peux pas recevoir de courrier électronique d’expéditeurs dans Microsoft 365
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Je ne peux pas recevoir d’e-mails d’expéditeurs Microsoft 365
 
- Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, [consultez les adresses IP d’Exchange Online Protection.](../../enterprise/urls-and-ip-address-ranges.md)
+ Afin de recevoir des messages de la part de nos utilisateurs, assurez-vous que votre réseau autorise les connexions provenant des adresses IP utilisées par EOP dans nos centres de données. Pour plus d’informations, [voir Exchange Online Protection adresses IP.](../../enterprise/urls-and-ip-address-ranges.md)
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques pour l’envoi en bloc d’e-mails aux utilisateurs de Microsoft 365
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Meilleures pratiques en matière d’envoi de courrier électronique en Microsoft 365 utilisateurs
 
-Si vous effectuez souvent des campagnes de courrier en bloc pour les utilisateurs de Microsoft 365 et que vous souhaitez vous assurer que vos messages électroniques arrivent en toute sécurité et en temps voulu, suivez les conseils de cette section.
+Si vous effectuez souvent des campagnes de messagerie en nombre à l’Microsoft 365 et que vous souhaitez vous assurer que vos messages électroniques arrivent en toute sécurité et en temps voulu, suivez les conseils de cette section.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>S’assurer que le nom de l’envoi reflète la personne qui envoie le message
 

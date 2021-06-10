@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent en savoir plus sur les types d’adresses de messagerie acceptées ou rejetées par Exchange Online Protection (EOP) et Outlook.com pour empêcher le hameçonnage.
+description: Les administrateurs peuvent en savoir plus sur les types d’adresses de messagerie acceptées ou rejetées par Exchange Online Protection (EOP) et Outlook.com pour éviter le hameçonnage.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -32,12 +32,12 @@ ms.locfileid: "51204184"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Les attaques par hameçonnage sont une menace constante pour toute organisation de messagerie. En plus d’utiliser des [adresses](anti-spoofing-protection.md)e-mail d’expéditeur falsifiées (falsifiées), les attaquants utilisent souvent des valeurs dans l’adresse De qui ne respectent pas les normes Internet. Pour éviter ce type d’hameçonnage, Exchange Online Protection (EOP) et Outlook.com requièrent désormais que les messages entrants incluent une adresse de provenance conforme À la norme RFC, comme décrit dans cet article. Cette application a été activée en novembre 2017.
+Les attaques par hameçonnage sont une menace constante pour toute organisation de messagerie. En plus d’utiliser des [adresses](anti-spoofing-protection.md)e-mail d’expéditeur falsifiées (falsifiées), les attaquants utilisent souvent des valeurs dans l’adresse De qui ne respectent pas les normes Internet. Pour éviter ce type d’hameçonnage, Exchange Online Protection (EOP) et Outlook.com nécessitent désormais que les messages entrants incluent une adresse De conforme RFC, comme décrit dans cet article. Cette application a été activée en novembre 2017.
 
-**Remarques** :
+**Remarques** :
 
 - Si vous recevez régulièrement des messages électroniques provenant d’organisations dont les adresses ont été mal renseignées, comme décrit dans cet article, encouragez ces organisations à mettre à jour leurs serveurs de messagerie pour se conformer aux normes de sécurité modernes.
 
@@ -49,7 +49,7 @@ Un message électronique SMTP standard est constitué d’une *enveloppe de mes
 
 - L’adresse (également appelée adresse MAIL FROM, expéditeur P1 ou expéditeur d’enveloppe) est l’adresse de messagerie utilisée dans la `5321.MailFrom` transmission SMTP du message.  Cette adresse de messagerie est généralement enregistrée dans le champ **d’en-tête Return-Path** dans l’en-tête du message (bien qu’il soit possible pour l’expéditeur de désigner une autre adresse de messagerie **Return-Path).**
 
-- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse e-mail de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  L’adresse de provenance est au centre des exigences de cet article.
+- L’adresse e-mail (également appelée adresse de provenance ou expéditeur P2) est l’adresse de messagerie dans le champ d’en-tête De et l’adresse de messagerie de l’expéditeur qui s’affiche dans les clients de `5322.From` messagerie.  L’adresse de provenance est au centre des exigences de cet article.
 
 L’adresse De est définie en détail sur plusieurs RFC (par exemple, les sections RFC 5322 3.2.3, 3.4 et 3.4.1 et [RFC 3696](https://tools.ietf.org/html/rfc3696)). Il existe de nombreuses variantes sur l’adressan et ce qui est considéré comme valide ou non valide. Pour des raisons de simplicité, nous vous recommandons le format et les définitions suivants :
 
@@ -57,7 +57,7 @@ L’adresse De est définie en détail sur plusieurs RFC (par exemple, les secti
 
 - **Nom complet**: expression facultative qui décrit le propriétaire de l’adresse e-mail.
 
-  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme illustré. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
+  - Nous vous recommandons de toujours entourer le nom complet de guillemets doubles (« ) comme indiqué. Si le nom complet contient  une virgule, vous devez mettre la chaîne entre guillemets doubles par RFC 5322.
   - Si l’adresse De comprend un nom complet, la valeur EmailAddress doit être entre crochets (< >) comme illustré.
   - Microsoft recommande vivement d’insérer un espace entre le nom complet et l’adresse e-mail.
 
@@ -100,7 +100,7 @@ Les adresses de messagerie De suivantes ne sont pas valides :
 
 - `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Texte après l’adresse e-mail.)
 
-- `From: Sender, Example <sender.example@contoso.com>` (Le nom complet contient une virgule, mais n’est pas entouré de guillemets doubles.)
+- `From: Sender, Example <sender.example@contoso.com>` (Le nom complet contient une virgule, mais n’est pas entre guillemets doubles.)
 
 - `From: "Microsoft 365 <sender@contoso.com>"` (La valeur entière est incorrectement entourée de guillemets doubles.)
 
@@ -118,22 +118,22 @@ Vous ne pouvez pas utiliser la valeur `From: <>` pour supprimer les réponses au
 
 - L’enregistrement MX null pour ce domaine se compose d’un point unique.
 
-Par exemple :
+Par exemple :
 
 ```text
 noreply.contoso.com IN MX .
 ```
 
-Pour plus d’informations sur la configuration des enregistrements MX, voir Créer des enregistrements DNS chez un fournisseur d’hébergement [DNS pour Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
+Pour plus d’informations sur la configuration des enregistrements MX, voir Créer des enregistrements DNS chez un fournisseur d’hébergement [DNS pour Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 Pour plus d’informations sur la publication d’un MX null, voir [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
 ## <a name="override-from-address-enforcement"></a>Remplacer l’application de l’adresse
 
-Pour contourner les exigences d’adresse De pour le courrier entrant, vous pouvez utiliser la liste d’adresses IP (filtrage des connexions) ou les règles de flux de messagerie (également appelées règles de transport) comme décrit dans Créer des listes d’expéditeurs sûrs dans [Microsoft 365.](create-safe-sender-lists-in-office-365.md)
+Pour contourner les exigences d’adresse De pour le courrier entrant, vous pouvez utiliser la liste d’adresses IP (filtrage des connexions) ou les règles de flux de messagerie (également appelées règles de transport) comme décrit dans Créer des listes d’expéditeurs sûrs dans [Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-Vous ne pouvez pas remplacer les exigences d’adresse de provenance pour les messages sortants que vous envoyez à partir de Microsoft 365. En outre, Outlook.com n’autorise pas les remplacements de quelque type que ce soit, même par le biais de la prise en charge.
+Vous ne pouvez pas remplacer les exigences d’adresse de provenance pour les messages sortants que vous envoyez depuis Microsoft 365. En outre, Outlook.com n’autorise aucun remplacement, même par le biais de la prise en charge.
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Autres méthodes de prévention et de protection contre les cybercriminels dans Microsoft 365
 
-Pour plus d’informations sur la façon de renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, voir les 10 principales façons de sécuriser les [plans Microsoft 365](../../admin/security-and-compliance/secure-your-business-data.md)pour les entreprises.
+Pour plus d’informations sur la façon de renforcer votre organisation contre le hameçonnage, le courrier indésirable, les violations de données et d’autres menaces, voir les [10](../../admin/security-and-compliance/secure-your-business-data.md)principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise.

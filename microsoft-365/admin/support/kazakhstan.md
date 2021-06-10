@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298520"
 ---
-# <a name="contact-support-for-kazakhstan"></a>Contacter le support pour le Kazakhstan
+# <a name="contact-support-for-kazakhstan"></a>Contacter le support technique pour le Kazakhstan
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 

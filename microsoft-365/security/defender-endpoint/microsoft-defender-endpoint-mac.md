@@ -32,7 +32,7 @@ ms.locfileid: "52301775"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -43,14 +43,14 @@ Cette rubrique décrit comment installer, configurer, mettre à jour et utiliser
 
 ## <a name="whats-new-in-the-latest-release"></a>Nouveautés de la dernière version
 
-[Nouveautés dans Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-atp.md)
+[Nouveautés dans Microsoft Defender pour point de terminaison](whats-new-in-microsoft-defender-atp.md)
 
 [Nouveautés de Microsoft Defender pour Point de terminaison sur Mac](mac-whatsnew.md)
 
 > [!TIP]
 > Si vous avez des commentaires que vous souhaitez partager, envoyez-le en ouvrant Microsoft Defender pour Point de terminaison sur Mac sur votre appareil et en naviguant vers l’aide pour envoyer  >  **des commentaires.**
 
-Pour obtenir les dernières fonctionnalités, y compris les fonctionnalités de prévisualisation (telles que protection évolutive des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour endpoint comme un appareil « Insider ».
+Pour obtenir les fonctionnalités les plus récentes, y compris les fonctionnalités de prévisualisation (telles que protection évolutive des points de terminaison pour vos appareils Mac), configurez votre appareil macOS exécutant Microsoft Defender pour endpoint en tant qu’appareil « Insider ».
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Comment installer Microsoft Defender pour endpoint sur Mac
 
@@ -91,7 +91,7 @@ Les appareils macOS avec processeurs M1 ne sont pas pris en charge.
 
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions sortantes entre celui-ci et vos points de terminaison.
 
-### <a name="licensing-requirements"></a>Critères de licence
+### <a name="licensing-requirements"></a>Conditions d'octroi de licence
 
 Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licence en volume Microsoft suivantes :
 
@@ -99,7 +99,7 @@ Microsoft Defender pour endpoint sur Mac nécessite l’une des offres de licenc
 - Microsoft 365 E5 Sécurité
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Entreprise E5
-- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour point de terminaison
 
 > [!NOTE]
 > Les utilisateurs titulaires d’une licence éligible peuvent utiliser Microsoft Defender pour endpoint sur cinq appareils simultanés au plus.

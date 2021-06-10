@@ -48,4 +48,4 @@ Microsoft et tous les collaborateurs vous accordent une licence pour la document
 
 Microsoft, Windows, Microsoft Azure et/ou d’autres produits et services Microsoft référencés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays. Les licences de ce projet ne vous accordent pas le droit d’utiliser des noms, des logos ou des marques Microsoft. Microsoft’s general trademark guidelines can be found at https://go.microsoft.com/fwlink/?LinkID=254653 .
 
-Les informations de confidentialité sont disponibles chez Microsoft et les collaborateurs se réservent tous les autres droits, que ce soit sous leurs droits d’auteur, brevets ou marques respectives, que ce soit par implication, par défaut ou https://privacy.microsoft.com/en-us/ autrement.
+Les informations de confidentialité sont disponibles chez Microsoft et tous les collaborateurs se réservent tous les autres droits, que ce soit sous leurs droits d’auteur, brevets ou marques respectives, que ce soit par implication, par défaut ou https://privacy.microsoft.com/en-us/ autrement.

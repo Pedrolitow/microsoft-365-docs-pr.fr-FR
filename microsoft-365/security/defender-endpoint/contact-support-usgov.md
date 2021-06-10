@@ -47,4 +47,4 @@ DoD | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
 Si vous ne parvenez pas à vous connecter au portail, vous pouvez également ouvrir un dossier de support à l’aide du [téléphone.](../../business-video/get-help-support.md)
 
 ## <a name="opening-a-support-case"></a>Ouverture d’un dossier de support
-Pour obtenir les conditions préalables et les instructions, voir Contacter Microsoft Defender pour la prise [en charge du point de terminaison.](contact-support.md)
+Pour obtenir des instructions et des conditions préalables, consultez contacter Microsoft Defender pour la prise en charge [du point de terminaison.](contact-support.md)

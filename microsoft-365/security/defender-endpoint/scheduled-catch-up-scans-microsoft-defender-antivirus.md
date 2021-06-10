@@ -33,7 +33,7 @@ ms.locfileid: "52789267"
 > [!NOTE]
 > Par défaut, Antivirus Microsoft Defender recherche une mise à jour 15 minutes avant l’heure des analyses programmées. Vous pouvez [gérer la planification du téléchargement](manage-protection-update-schedule-microsoft-defender-antivirus.md) et de l’application des mises à jour de la protection pour remplacer cette valeur par défaut. 
 
-Outre la protection en temps réel toujours en cours et les [analyses](run-scan-microsoft-defender-antivirus.md) à la demande, vous pouvez configurer des analyses régulières et programmées. 
+Outre la protection en temps réel [](run-scan-microsoft-defender-antivirus.md) toujours en cours et les analyses à la demande, vous pouvez configurer des analyses régulières et programmées. 
 
 Vous pouvez configurer le type d’analyse, le moment où l’analyse doit se produire et si l’analyse doit se produire après une mise à jour de [la protection](manage-protection-updates-microsoft-defender-antivirus.md) ou si le point de terminaison est utilisé. Vous pouvez également spécifier le moment où des analyses spéciales doivent être nécessaires pour terminer la correction.
 
@@ -43,7 +43,7 @@ Cet article explique comment configurer des analyses programmées avec la strat�
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, dans l’Éditeur de stratégie de groupe, allez à Modèles d’administration de **configuration** ordinateur  >    >  **Windows composants**  >    >  **Antivirus Microsoft Defender’analyse.**
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis sélectionnez **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis sélectionnez **Modifier.**
 
 3. Spécifiez les paramètres de l’objet de stratégie de groupe, puis sélectionnez **OK**. 
 
@@ -51,7 +51,7 @@ Cet article explique comment configurer des analyses programmées avec la strat�
 
 5. Déployez votre objet de stratégie de groupe comme vous le faites normalement. Si vous avez besoin d’aide sur les objets de stratégie de groupe, voir [Créer un objet de stratégie de groupe.](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object)
 
-Consultez également la rubrique Gérer quand les mises à jour de [la protection](manage-protection-update-schedule-microsoft-defender-antivirus.md) doivent être téléchargées et appliquées, et empêcher ou autoriser les utilisateurs à modifier localement les [paramètres de](configure-local-policy-overrides-microsoft-defender-antivirus.md) stratégie.
+Consultez également la rubrique Gérer quand les mises à jour de [la protection](manage-protection-update-schedule-microsoft-defender-antivirus.md) doivent être téléchargées et appliquées et Empêcher ou autoriser les utilisateurs à modifier localement les [paramètres de](configure-local-policy-overrides-microsoft-defender-antivirus.md) stratégie.
 
 ## <a name="quick-scan-versus-full-scan-and-custom-scan"></a>Analyse rapide par rapport à l’analyse complète et à l’analyse personnalisée
 
@@ -60,7 +60,7 @@ Lorsque vous définissez des analyses programmées, vous pouvez définir si l’
 
 |Analyse rapide  |Analyse complète  | Analyse personnalisée |
 |---------|---------|---------|
-|Une analyse rapide examine tous les emplacements où des programmes malveillants peuvent être enregistrés pour démarrer avec le système, tels que les clés de Registre et les dossiers de démarrage Windows connus. <p>Dans la plupart des cas, une analyse rapide est suffisante et est recommandée pour les analyses programmées. |Une analyse complète commence par l’exécution d’une analyse rapide, puis se poursuit avec une analyse séquentielle de tous les disques fixes montés et lecteurs amovibles/réseau (si l’analyse complète est configurée pour le faire). <p>L’analyse complète peut prendre quelques heures ou jours, en fonction de la quantité et du type de données à analyser.<p>Une fois l’analyse complète terminée, de nouvelles informations de sécurité sont disponibles et une nouvelle analyse est nécessaire pour s’assurer qu’aucune autre menace n’est détectée avec la nouvelle intelligence de sécurité.   | Une analyse personnalisée est une analyse rapide qui s’exécute sur les fichiers et dossiers que vous spécifiez. Par exemple, vous pouvez choisir d’analyser un lecteur USB ou un dossier spécifique sur le lecteur local de votre appareil. <p> | 
+|Une analyse rapide examine tous les emplacements où des programmes malveillants peuvent être enregistrés pour démarrer avec le système, tels que les clés de Registre et les dossiers de démarrage Windows connus. <p>Dans la plupart des cas, une analyse rapide est suffisante et est recommandée pour les analyses programmées. |Une analyse complète commence par l’exécution d’une analyse rapide, puis se poursuit avec une analyse séquentielle de tous les disques fixes montés et des lecteurs amovibles/réseau (si l’analyse complète est configurée pour le faire). <p>L’analyse complète peut prendre quelques heures ou jours, en fonction de la quantité et du type de données à analyser.<p>Une fois l’analyse complète terminée, de nouvelles informations de sécurité sont disponibles et une nouvelle analyse est nécessaire pour s’assurer qu’aucune autre menace n’est détectée avec la nouvelle veille de sécurité.   | Une analyse personnalisée est une analyse rapide qui s’exécute sur les fichiers et dossiers que vous spécifiez. Par exemple, vous pouvez choisir d’analyser un lecteur USB ou un dossier spécifique sur le lecteur local de votre appareil. <p> | 
 
 >[!NOTE]
 >Par défaut, les analyses rapides s’exécutent sur des appareils amovibles montés, tels que des lecteurs USB.
@@ -131,7 +131,7 @@ ScanScheduleTime
 RandomizeScheduleTaskTimes
 ```
 
-Pour plus d’informations et les paramètres autorisés, [voir Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Pour plus d’informations et des paramètres autorisés, [voir Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="start-scheduled-scans-only-when-the-endpoint-is-not-in-use"></a>Démarrer des analyses programmées uniquement lorsque le point de terminaison n’est pas en cours d’utilisation
@@ -206,7 +206,7 @@ Pour plus d’informations et les paramètres autorisés, [voir Windows Defender
 
 Vous pouvez activer une analyse rapide quotidienne qui peut être exécuté en plus de vos autres analyses programmées avec la stratégie de groupe, PowerShell ou WMI.
 
-### <a name="use-group-policy-to-schedule-daily-scans"></a>Utiliser une stratégie de groupe pour planifier des analyses quotidiennes
+### <a name="use-group-policy-to-schedule-daily-scans"></a>Utiliser la stratégie de groupe pour planifier des analyses quotidiennes
 
 |Emplacement | Paramètre | Description | Paramètre par défaut (s’il n’est pas configuré) |
 |:---|:---|:---|:---|
@@ -236,7 +236,7 @@ Pour plus d’informations et les paramètres autorisés, [voir Windows Defender
 
 ## <a name="enable-scans-after-protection-updates"></a>Activer les analyses après les mises à jour de la protection
 
-Vous pouvez forcer une analyse à se produire après chaque mise à jour [de protection](manage-protection-updates-microsoft-defender-antivirus.md) avec la stratégie de groupe.
+Vous pouvez forcer l’analyse après chaque mise à jour [de la protection](manage-protection-updates-microsoft-defender-antivirus.md) avec la stratégie de groupe.
 
 ### <a name="use-group-policy-to-schedule-scans-after-protection-updates"></a>Utiliser la stratégie de groupe pour planifier des analyses après les mises à jour de la protection
 

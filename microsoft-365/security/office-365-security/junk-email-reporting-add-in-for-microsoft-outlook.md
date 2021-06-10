@@ -28,13 +28,13 @@ ms.locfileid: "51204238"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
 > Si vous n’utilisez pas actuellement le add-in Junk [](enable-the-report-message-add-in.md) E-mail Reporting, [](enable-the-report-phish-add-in.md) nous vous recommandons plutôt de le signaler ou de le signaler comme hameçonnage. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Le add-in Junk Email Reporting pour Microsoft Outlook permet aux utilisateurs de soumettre des faux positifs (courrier électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Microsoft. Si votre organisation n’utilise pas Exchange Online Protection (par exemple, Exchange local ou des services de messagerie autres qu’Exchange Online), l’envoi de votre rapport de courrier indésirable n’affecte pas votre filtrage du courrier indésirable.
+Le add-in Junk Email Reporting pour Microsoft Outlook permet aux utilisateurs de soumettre des faux positifs (message électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Microsoft. Si votre organisation n’utilise pas de Exchange Online Protection (par exemple, des Exchange locaux ou des services de messagerie autres que Exchange Online), l’envoi de votre rapport de courrier indésirable n’affecte pas votre filtrage du courrier indésirable.
 
 Cette rubrique explique comment installer et utiliser le add-in Junk Email Reporting.
 
@@ -42,10 +42,10 @@ Cette rubrique explique comment installer et utiliser le add-in Junk Email Repor
 
 - Pour installer le add-in Junk Email Reporting, consultez la section Installer le [add-in Junk Email Reporting](#install-the-junk-email-reporting-add-in) plus loin dans cet article.
 
-- Le add-in Junk Email Reporting fonctionne avec les versions suivantes d’Outlook :
+- Le add-in Junk Email Reporting fonctionne avec les versions suivantes de Outlook :
 
   - Outlook 2013 ou une version ultérieure
-  - Outlook inclus avec Microsoft 365 Apps for enterprise
+  - Outlook inclus dans Applications Microsoft 365 pour les grandes entreprises
 
 - Pour plus d’informations sur la notification des messages à Microsoft, voir [Signaler des messages et des fichiers à Microsoft.](report-junk-email-messages-to-microsoft.md)
 
@@ -122,9 +122,9 @@ Cette rubrique explique comment installer et utiliser le add-in Junk Email Repor
 
 1. Sur votre ordinateur, fermez Outlook.
 
-2. Dans Windows 10, vérifiez que .NET Framework 2.0 est activé. Pour obtenir des instructions, voir [Activer la .NET Framework 3.5 dans le Panneau de contrôle.](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
+2. Dans Windows 10, vérifiez que la .NET Framework 2.0 est activée. Pour obtenir des instructions, [voir Activer la .NET Framework 3.5 dans le Panneau de contrôle.](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
 
-3. Recherchez le fichier .msi que vous avez téléchargé et double-cliquez dessus.
+3. Recherchez le .msi que vous avez téléchargé et double-cliquez dessus.
 
 4. Dans la page **Bienvenue à la configuration du complément Microsoft Junk Email Reporting**, cliquez sur **Suivant**.
 
@@ -173,9 +173,9 @@ Cliquez sur la flèche vers le bas en regard du bouton **Courrier indésirable**
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" MaxMessageSelection=20 BccEmailAddress="junkreports@contoso.com; hollyd@treyresearch.net"
    ```
 
-### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
+### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vérifier que vous avez correctement installé le service Junk Email Reporting Add-in, dans Outlook, vous devez suivre l’une des étapes suivantes :
+Pour vérifier que vous avez correctement installé le module de signalement du courrier indésirable, faites l’une des étapes suivantes dans Outlook :
 
 - Sélectionnez le message ou ouvrez-le. Dans **l’onglet** Accueil **ou Message** du ruban, cliquez sur Courrier indésirable **et** vérifiez que les options suivantes sont disponibles :
 
@@ -214,19 +214,19 @@ Pour vérifier que vous avez correctement installé le service Junk Email Report
 
 Après avoir fermé Outlook, utilisez l’une des procédures suivantes pour désinstaller le add-in Junk Email Reporting :
 
-- **Panneau de commande**: appuyez sur la touche Windows + R. Dans la **boîte de** dialogue Exécuter qui s’ouvre, `control appwiz.cpl` entrez, puis cliquez sur **OK.**
+- **Panneau de contrôle**: appuyez sur la touche Windows + R. Dans la **boîte de** dialogue Exécuter qui s’ouvre, `control appwiz.cpl` entrez, puis cliquez sur **OK.**
 
-  Recherchez et **sélectionnez le** module de rapport de courrier indésirable Microsoft dans la liste, puis cliquez sur **Désinstaller.**
+  Recherchez et **sélectionnez le** module de signalement du courrier indésirable Microsoft dans la liste, puis cliquez sur **Désinstaller.**
 
-- **Package Windows Installer**: recherchez ou téléchargez le fichier .msi approprié, puis double-cliquez dessus.
+- **Windows du programme d’installation**: recherchez ou téléchargez le fichier .msi approprié, puis double-cliquez dessus.
 
   - **32 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64 bits**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  Dans la boîte de dialogue qui s’affiche, **sélectionnez Supprimer** le nouveau rapport de courrier indésirable Microsoft pour Outlook, puis cliquez sur **Suivant.**
+  Dans la boîte de dialogue qui s’affiche, sélectionnez Supprimer le Outlook de rapport de courrier indésirable **Microsoft, puis** cliquez sur **Suivant.**
 
-- **Mode silencieux**: recherchez ou téléchargez le fichier .msi approprié. Dans une fenêtre d’invite de commandes, remplacez-la par l’emplacement du fichier .msi et exécutez l’une \<PathToFile\> des commandes suivantes :
+- **Mode silencieux**: recherchez ou téléchargez le fichier .msi approprié. Dans une fenêtre d’invite de commandes, remplacez par l’emplacement du fichier .msi et exécutez l’une des \<PathToFile\> commandes suivantes :
 
   - **32 bits**:
 
@@ -268,7 +268,7 @@ Pour d’autres méthodes que vous pouvez utiliser pour envoyer des messages à 
 
 1. Vérifiez ou définissez `LoggingLevel` la clé de Registre sur la valeur « Verbose » :
 
-   - **Outlook 32 bits sur Windows 32 bits**:
+   - **32 bits Outlook sur les Windows 32 bits**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -277,7 +277,7 @@ Pour d’autres méthodes que vous pouvez utiliser pour envoyer des messages à 
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook 32 bits sur Windows 64 bits**:
+   - **32 bits Outlook sur les Windows 64 bits**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -286,7 +286,7 @@ Pour d’autres méthodes que vous pouvez utiliser pour envoyer des messages à 
      "LoggingLevel"="Verbose"
      ```
 
-   - **Outlook 64 bits**:
+   - **64 bits Outlook**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -295,7 +295,7 @@ Pour d’autres méthodes que vous pouvez utiliser pour envoyer des messages à 
      "LoggingLevel"="Verbose"
      ```
 
-2. Redémarrez Outlook et demandez aux utilisateurs de les signaler lorsqu’ils voient le message d’erreur.
+2. Redémarrez Outlook et demandez aux utilisateurs de se signaler lorsqu’ils voient le message d’erreur.
 
 3. Collectez les informations de journal se trouvant à l'emplacement suivant :
 

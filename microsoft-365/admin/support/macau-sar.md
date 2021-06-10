@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298396"
 ---
-# <a name="contact-support-for-macau-sar"></a>Contacter le support pour la R.A.S. de Macau
+# <a name="contact-support-for-macau-sar"></a>Contacter le support technique pour la R.A.S. de Macau
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
@@ -33,7 +33,7 @@ Après la numérotation, entrez
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Dimanche : Mon-Fri 9 h à 17 h
+Banques : Mon-Fri 9 h à 17 h
 
 Mandarin : Mon-Fri 9 h à 17 h
 
@@ -41,7 +41,7 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Dimanche : Mon-Fri 9 h à 17 h
+Banques : Mon-Fri 9 h à 17 h
 
 Mandarin : Mon-Fri 9 h à 17 h
 

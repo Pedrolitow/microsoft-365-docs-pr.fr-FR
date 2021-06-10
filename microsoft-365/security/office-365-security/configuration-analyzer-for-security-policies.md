@@ -96,7 +96,7 @@ Par défaut, la colonne Nom de **groupe/paramètre** de stratégie contient une 
 - **Pièces jointes sécurisées** (si votre abonnement inclut Microsoft Defender pour Office 365)
 - **Liens sécurisés** (si votre abonnement inclut Microsoft Defender pour Office 365)
 
-Dans l’affichage par défaut, tout est réduire. En regard de chaque stratégie, il existe un résumé des résultats de comparaison de vos stratégies (que vous pouvez modifier) et des paramètres dans les stratégies correspondantes pour les profils de protection standard ou strict (que vous ne pouvez pas modifier). Vous verrez les informations suivantes pour le profil de protection que vous comparez :
+Dans l’affichage par défaut, tout est réduire. En regard de chaque stratégie, il existe un résumé des résultats de comparaison de vos stratégies (que vous pouvez modifier) et des paramètres dans les stratégies correspondantes pour les profils de protection Standard ou Strict (que vous ne pouvez pas modifier). Vous verrez les informations suivantes pour le profil de protection que vous comparez :
 
 - **Vert**: tous les paramètres de toutes les stratégies existantes sont au moins aussi sécurisés que le profil de protection.
 - **Orange**: un petit nombre de paramètres dans les stratégies existantes ne sont pas aussi sécurisés que le profil de protection.
@@ -122,12 +122,12 @@ Cet onglet vous permet de suivre les modifications que vous avez apportées à v
 - **Dernière modification**
 - **Modifié par**
 - **Nom du paramètre**
-- **Policy**
-- **Type**
+- **Stratégie**
+- **Type (Type)**
 - **Modification de configuration**
 - **Dérive de configuration**: la valeur **Augmente ou** **Diminue**.
 
-Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le volant **Filtres** qui s’affiche, vous pouvez choisir parmi les filtres suivants :
+Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le volant **Filtres** qui s’affiche, vous pouvez sélectionner parmi les filtres suivants :
 
 - **Heure de début** **et heure de fin** (date)
 - **Protection standard** ou **protection stricte**

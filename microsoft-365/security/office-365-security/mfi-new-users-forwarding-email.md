@@ -25,8 +25,8 @@ ms.locfileid: "51204490"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Il est suspect lorsque de nouveaux comptes d’utilisateurs de votre organisation commencent soudainement à envoyer des messages électroniques à des domaines externes.
 
@@ -42,7 +42,7 @@ Lorsque vous cliquez sur le widget, un volant s’affiche, dans lequel vous trou
 
 Vous pouvez également vous rendre sur cette page de  détails lorsque vous sélectionnez l’aperçu après avoir cliqué sur Afficher tout dans la zone Recommandations & informations les plus **détaillées** **(** Tableau de bord de rapports \>  ou <https://protection.office.com/insightdashboard> ).
 
-Vous pouvez cliquer sur le **rapport Voir associé au** lien d’informations pour aller au rapport de modifications de **forwarding,** comme décrit dans la section suivante.
+Vous pouvez cliquer sur le **rapport Voir associé au** lien d’informations pour vous rendre dans le rapport de modifications de **forwarding,** comme décrit dans la section suivante.
 
 ## <a name="forwarding-modifications-report"></a>Rapport de modifications de forwarding
 
@@ -55,7 +55,7 @@ Ces types de messages transmis peuvent poser un risque de sécurité ou de confo
 
 Le rapport contient des données pendant 90 jours au plus. Par défaut, le rapport affiche les données des 7 derniers jours.
 
-Ce rapport n’est pas directement disponible dans le tableau de bord de flux de [messagerie](mail-flow-insights-v2.md) ou dans le tableau de bord [Rapports.](view-mail-flow-reports.md) En plus de cliquer sur le rapport  **Voir** associé au lien Informations dans l’aperçu des nouveaux utilisateurs qui envoient des e-mails, vous pouvez obtenir le rapport en :
+Ce rapport n’est pas directement disponible dans le tableau de bord de flux de [messagerie](mail-flow-insights-v2.md) ou dans le tableau de bord [Rapports.](view-mail-flow-reports.md) En plus de cliquer sur le rapport  **Voir** associé au lien d’informations dans l’aperçu des nouveaux utilisateurs qui envoient des e-mails, vous pouvez obtenir le rapport en :
 
 - Cliquez sur le **lien du rapport de notifications** de forwarding dans les détails de l’aperçu des nouveaux domaines transmis par courrier [électronique.](mfi-new-domains-being-forwarded-email.md)
 - Ouverture <https://protection.office.com/reportv2?id=MailFlowNewForwarding> .
@@ -74,7 +74,7 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
 Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
-### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Vue de table Détails pour le rapport de modifications de report
+### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Affichage du tableau détails pour le rapport de modifications de report
 
 Si vous cliquez sur Afficher le tableau des **détails,** les informations affichées dépendent du graphique que vous regardiez :
 
@@ -106,7 +106,7 @@ Si vous sélectionnez une ligne dans le tableau, un volant **Détails** s’affi
 - **Détails**
 - **Count**
 - **Date de début**
-- **Recommandation**: à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans le Centre d’administration Microsoft 365.
+- **Recommandation**: à partir de là, vous pouvez cliquer sur le lien pour gérer l’utilisateur dans Microsoft 365'administration centrale.
 
 ![Détails du tableau des détails de l’affichage Nouveaux utilisateurs de forwarding dans le rapport de modifications de forwarding](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
