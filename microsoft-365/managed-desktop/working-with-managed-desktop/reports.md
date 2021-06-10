@@ -22,7 +22,7 @@ Bureau géré Microsoft fournit plusieurs rapports et tableaux de bord que les a
 
 ## <a name="reports-in-microsoft-endpoint-manager"></a>Rapports dans Microsoft Endpoint Manager
 
-La console Microsoft Endpoint Manager regroupe les rapports de plusieurs produits dans un emplacement unique pour vous aider à surveiller et à examiner les problèmes de configuration et d’appareils de votre organisation Azure AD (« client »). Bureau géré Microsoft comprend une section sous **Rapports** dans le menu principal où vous pouvez trouver des rapports spécifiques à Bureau géré Microsoft gestion des appareils que vous avez enregistrés.
+La console Microsoft Endpoint Manager regroupe les rapports de plusieurs produits dans un emplacement unique pour vous aider à surveiller et à examiner les problèmes de configuration et d’appareils de votre organisation Azure AD (« client »). Bureau géré Microsoft comprend une section sous **Rapports** dans le menu principal où vous pouvez trouver des rapports spécifiques Bureau géré Microsoft gestion des appareils que vous avez enregistrés.
 
 Ces rapports sont les suivants :
 - **Appareils gérés**  >  **Mises à jour de fonctionnalités**: cet affichage affiche l’état global des mises à jour de fonctionnalités sur Bureau géré Microsoft appareils.

@@ -30,13 +30,13 @@ ms.locfileid: "51689088"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Découvrez les commandes courantes utilisées dans la réponse en direct et consultez des exemples sur la façon dont elles sont généralement utilisées.
 
-Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d'informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l'aide de la réponse en direct.](live-response.md)
+Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Pour plus d’informations sur les commandes de base et avancées, voir [Examiner les entités sur les appareils à l’aide de la réponse en direct.](live-response.md)
 
 
 ## <a name="analyze"></a>analyser 
@@ -108,7 +108,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 >[!NOTE]
 >
-> Les types de fichiers **suivants ne peuvent** pas être téléchargés à l'aide de cette commande à partir de Live Response :
+> Les types de fichiers **suivants ne peuvent** pas être téléchargés à l’aide de cette commande à partir de Live Response :
 >
 > * [Reparse point files](/windows/desktop/fileio/reparse-points/)
 > * [Fichiers dispersés](/windows/desktop/fileio/sparse-files/)
@@ -117,7 +117,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > Ces types de **fichiers sont pris** en charge par [PowerShell.](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)
 >
-> Utilisez PowerShell comme alternative si vous avez des problèmes à l'aide de cette commande à partir de Live Response.
+> Utilisez PowerShell comme alternative si vous avez des problèmes à l’aide de cette commande à partir de Live Response.
 
 ## <a name="processes"></a>Processus
 ```
@@ -201,7 +201,7 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 >[!NOTE]
 >
 > Pour les commandes de longue durée telles que «**exécuter**» ou «**getfile**» , vous pouvez utiliser le symbole ' ' à la fin de la commande pour effectuer cette action en arrière-plan. **&**
-> Cela vous permettra de continuer à examiner l'ordinateur et de revenir à la commande en arrière-plan lorsque vous avez terminé à l'aide de la commande de base «**fg** [».](live-response.md#basic-commands)
+> Cela vous permettra de continuer à examiner l’ordinateur et de revenir à la commande en arrière-plan lorsque vous avez terminé à l’aide de la commande de base «**fg** [».](live-response.md#basic-commands)
 >
 ## <a name="scheduledtask"></a>scheduledtask
 

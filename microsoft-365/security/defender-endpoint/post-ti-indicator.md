@@ -42,7 +42,7 @@ ms.locfileid: "52771704"
 Envoie ou met à jour une nouvelle [entité d’indicateur.](ti-indicator.md)
 <br>La notation CIDR pour les IPs n’est pas prise en charge.
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 2. Il existe une limite de 15 000 indicateurs actifs par client. 
 

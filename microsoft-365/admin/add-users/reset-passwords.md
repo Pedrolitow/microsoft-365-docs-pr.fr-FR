@@ -40,7 +40,7 @@ Cet article explique comment réinitialiser les mots de passe pour vous-même et
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md)
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md)
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
@@ -50,13 +50,13 @@ Regardez une courte vidéo sur la réinitialisation des mots de passe utilisateu
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Étapes : réinitialiser un mot de passe d’entreprise pour un utilisateur
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
-2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur, puis **réinitialisez le mot de passe.**
+2. Dans la page **Utilisateurs** actifs, sélectionnez l’utilisateur, puis réinitialisez **le mot de passe.**
 
 3. Suivez les instructions de la **page** Réinitialiser le mot de passe pour générer automatiquement un mot de passe pour l’utilisateur ou en créer un pour lui, puis sélectionnez **Réinitialiser.**  
 
@@ -93,7 +93,7 @@ Si vous avez oublié votre mot de passe et que vous ne pouvez pas vous y inscrir
 
 Ces étapes s'appliquent à une entreprise comptant des dizaines d'utilisateurs. Si vous avez des centaines ou des milliers d’utilisateurs, consultez la section suivante sur la réinitialisation des mots de passe en bloc (40 utilisateurs maximum à la fois).
   
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs >** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 
 2. Sélectionnez l’option en plus **du nom complet** pour sélectionner tous les personnes de votre entreprise. Désélectionnez votre nom. Vous ne pouvez pas réinitialiser votre propre mot de passe en même temps que vous réinitialisez le mot de passe de tous les autres utilisateurs.
 
@@ -120,10 +120,10 @@ Lisez ce billet de blog intéressant rédigé par Vasil Michev, MVP Microsoft : 
 
 Essayez cet article : [J'ai oublié le nom d'utilisateur ou le mot de passe du compte que j'utilise avec Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
   
-[Laisser les utilisateurs réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
-[Réinitialiser les mots](../add-users/reset-passwords.md) de passe (article)\
-[Définir le mot de passe d’un utilisateur individuel pour qu’il n’expire jamais](set-password-to-never-expire.md) (article)\
-[Définir la stratégie d’expiration de mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)\
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
+[Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)\
+[Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](set-password-to-never-expire.md) (article)\
+[Définir la stratégie d’expiration des mots de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)\
 [Microsoft 365 vidéos de formation pour les entreprises](../../business-video/index.yml) (page de liens)

@@ -168,7 +168,7 @@ Recherchez les dernières informations sur la sécurité des virus et logiciels 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection contre les attaques Microsoft Defender\Réduction de la surface d’attaque
 
-Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à partir des règles de personnalisation des règles de [réduction de la surface d’attaque](customize-attack-surface-reduction.md)
+Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à partir des règles de personnalisation de la [réduction de la surface d’attaque](customize-attack-surface-reduction.md)
 
 1. Ouvrez la **stratégie Configurer la Réduction de la surface d’attaque.**
 
@@ -186,7 +186,7 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
 Stratégie | Paramètre 
 :---|:---
-Configurer l’accès contrôlé aux dossiers| Activé, mode Audit
+Configurer l’accès contrôlé aux dossiers| Activé, mode audit
 
 
 
@@ -196,7 +196,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenez le package deboarding à partir [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
+1. Obtenez le package deboarding à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
 
     1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **de l’appareil.**
 
@@ -216,7 +216,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Choisissez le compte d’utilisateur SYSTÈME local (BUILTIN\SYSTEM) sous **Options de sécurité.**
 
-7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les privilèges les plus **élevés.**
+7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec les privilèges les plus **élevés.**
 
 8. Go to the **Actions** tab and click **New...**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ **Action.** Entrez le nom de fichier et l’emplacement du fichier *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd.*
 
@@ -227,11 +227,11 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
-Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
+Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 1. Go to [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/).
-2. Cliquez **sur Liste des appareils.**
+2. Cliquez **sur La liste Appareils.**
 3. Vérifiez que les appareils apparaissent.
 
 > [!NOTE]

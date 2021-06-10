@@ -29,17 +29,17 @@ ms.locfileid: "51065950"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Créer des rôles et attribuer le rôle à un groupe Azure Active Directory
+## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Créer des rôles et attribuer le rôle à un groupe Azure Active Directory de gestion
 
-Les étapes suivantes vous guident sur la création de rôles dans le Centre de sécurité Microsoft Defender. Il part du principe que vous avez déjà créé des groupes d’utilisateurs Azure Active Directory.
+Les étapes suivantes vous guident sur la création de rôles dans Centre de sécurité Microsoft Defender. Il part du principe que vous avez déjà créé Azure Active Directory groupes d’utilisateurs.
 
-1. Connectez-vous au Centre de sécurité [Microsoft Defender à](https://securitycenter.windows.com/) l’aide d’un compte attribué par un administrateur de sécurité ou un rôle d’administrateur général.
+1. Connectez-vous [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/) compte avec un rôle d’administrateur de sécurité ou d’administrateur général attribué.
 
 2. Dans le volet de navigation, sélectionnez **Paramètres > rôles.**
 
@@ -62,12 +62,12 @@ Les étapes suivantes vous guident sur la création de rôles dans le Centre de 
 
 - **Afficher les données**
     - **Opérations de sécurité** : afficher toutes les données des opérations de sécurité dans le portail
-    - **Gestion des menaces et des vulnérabilités** : afficher les données de gestion des menaces et des vulnérabilités dans le portail
+    - **Menaces et gestion des vulnérabilités** : afficher Gestion des menaces et des vulnérabilités données de sécurité dans le portail
 
 - **Actions de correction actives**
     - **Opérations de sécurité** : prendre des mesures de réponse, approuver ou ignorer les actions de correction en attente, gérer les listes autorisées/bloquées pour l’automatisation et les indicateurs
-    - **Gestion des menaces et des vulnérabilités : gestion des exceptions** : créer des exceptions et gérer les exceptions actives
-    - **Gestion des menaces et des vulnérabilités : gestion** des corrections : soumettre de nouvelles demandes de correction, créer des tickets et gérer les activités de correction existantes
+    - **Menaces et gestion des vulnérabilités - Gestion des exceptions** : créer des exceptions et gérer les exceptions actives
+    - **Threat and gestion des vulnérabilités - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
 
 - **Examen des alertes** : gérer les alertes, lancer des enquêtes automatisées, exécuter des analyses, collecter des packages d’enquête, gérer les balises d’appareil et télécharger uniquement les fichiers exécutables portables (PE) 
 
@@ -76,16 +76,16 @@ Les étapes suivantes vous guident sur la création de rôles dans le Centre de 
     > [!NOTE]
     > Ce paramètre est uniquement disponible dans le rôle d’administrateur Microsoft Defender pour point de terminaison (par défaut).
 
-- **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-carte, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
+- **Gérer les paramètres** de sécurité dans le Centre de sécurité : configurer les paramètres de suppression des alertes, gérer les exclusions de dossiers pour l’automatisation, les appareils intégrés et hors-bord, et gérer les notifications par courrier électronique, gérer le laboratoire d’évaluation
 
 - **Fonctionnalités de réponse en direct**
-    - **Commandes de** base :
+    - **Commandes** de base :
         - Démarrer une session de réponse en direct
         - Exécuter des commandes de réponse en direct en lecture seule sur un appareil distant (à l’exception de la copie et de l’exécution de fichiers)
     - **Commandes** avancées :
         - Télécharger un fichier à partir de l’appareil distant via une réponse en direct
         - Télécharger des fichiers PE et non PE à partir de la page de fichiers
-        - Télécharger un fichier sur l’appareil distant
+        - Télécharger fichier sur l’appareil distant
         - Afficher un script à partir de la bibliothèque de fichiers
         - Exécuter un script sur l’appareil distant à partir de la bibliothèque de fichiers
 
@@ -93,7 +93,7 @@ Pour plus d’informations sur les commandes disponibles, voir Examiner les appa
   
 ## <a name="edit-roles"></a>Modifier des rôles
 
-1. Connectez-vous au [Centre de sécurité Microsoft Defender à](https://securitycenter.windows.com/) l’aide d’un compte attribué par un administrateur de sécurité ou un rôle d’administrateur général.
+1. Connectez-vous à [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/) compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
 
 2. Dans le volet de navigation, sélectionnez **Paramètres > rôles.**
 
@@ -107,13 +107,13 @@ Pour plus d’informations sur les commandes disponibles, voir Examiner les appa
 
 ## <a name="delete-roles"></a>Supprimer des rôles
 
-1. Connectez-vous au [Centre de sécurité Microsoft Defender à](https://securitycenter.windows.com/) l’aide d’un compte attribué par un administrateur de sécurité ou un rôle d’administrateur général.
+1. Connectez-vous à [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/) compte avec le rôle Administrateur de sécurité ou Administrateur général attribué.
 
 2. Dans le volet de navigation, sélectionnez **Paramètres > rôles.**
 
 3. Sélectionnez le rôle que vous souhaitez supprimer.
 
-4. Cliquez sur le bouton de la drop-down et **sélectionnez Supprimer le rôle**.
+4. Cliquez sur le bouton de la déposer et sélectionnez **Supprimer le rôle.**
 
 ## <a name="related-topic"></a>Rubrique connexe
 

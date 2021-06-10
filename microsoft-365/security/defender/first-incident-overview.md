@@ -69,6 +69,6 @@ Exemples supplémentaires de réponses aux premiers incidents :
 - [Courriers hameçons](first-incident-path-phishing.md)
 - [Attaque de base d’identité](first-incident-path-identity.md)
 
-[Manuels détaillés de réponse aux incidents](/security/compass/incident-response-playbooks)
+[Manuels de réponse aux incidents détaillés](/security/compass/incident-response-playbooks)
 
 

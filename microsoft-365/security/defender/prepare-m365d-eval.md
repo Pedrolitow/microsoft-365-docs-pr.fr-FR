@@ -46,7 +46,7 @@ Vous êtes actuellement en phase de préparation.
 La préparation est essentielle pour tout déploiement réussi. Cette section vous guide à travers ce que vous devez prendre en compte lorsque vous vous préparez à créer un laboratoire d’essai ou un environnement pilote pour votre déploiement Microsoft 365 Defender.
 
 ## <a name="prerequisites"></a>Configuration requise
-Découvrez les licences, la configuration matérielle et logicielle requise et d’autres paramètres de configuration pour mettre en service et utiliser Microsoft 365 Defender. Consultez les conditions minimales requises [pour Microsoft 365 Defender,](/microsoft-365/security/defender/prerequisites) [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)pour le point de terminaison, Microsoft Defender [pour Office 365,](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) [Microsoft Defender pour](/azure-advanced-threat-protection/atp-prerequisites)l’identité, [Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-prerequisites).
+Découvrez les licences, la configuration matérielle et logicielle requise et d’autres paramètres de configuration pour mettre en service et utiliser Microsoft 365 Defender. Consultez les conditions minimales requises [pour Microsoft 365 Defender,](/microsoft-365/security/defender/prerequisites) [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)pour le point de terminaison, Microsoft Defender [pour Office 365,](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) [Microsoft Defender pour l’identité,](/azure-advanced-threat-protection/atp-prerequisites) [Microsoft Cloud App Security](/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Parties prenantes et sign-off
 Identifiez toutes les parties prenantes impliquées dans le projet et celles qui peuvent avoir besoin de se signer, de réviser ou de rester informées, que ce soit pour l’évaluation ou l’exécution d’un projet pilote.
@@ -71,7 +71,7 @@ Ajoutez des parties prenantes au tableau ci-dessous, le cas échéant, pour votr
 | Entrer un nom et un e-mail | **Analyste de sécurité** Représentant de l’équipe CDOC qui peut fournir des commentaires sur les fonctionnalités de détection, l’expérience utilisateur et l’utilité globale de ce changement du point de vue des *opérations de sécurité.* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Préparer votre Azure Active Directory
-Ignorez cette étape si vous avez déjà activé la synchronisation entre Active Directory et Azure Active Directory local. Examinez la documentation des meilleures pratiques existante à partir Azure Active Directory. Les étapes suivantes sont optimisées pour évaluer ou exécuter un projet pilote Microsoft 365 Defender.
+Ignorez cette étape si vous avez déjà activé la synchronisation entre Active Directory et Azure Active Directory sur site. Examinez la documentation des meilleures pratiques existante à partir Azure Active Directory. Les étapes suivantes sont optimisées pour évaluer ou exécuter un projet pilote Microsoft 365 Defender.
 
 1. Go to the [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) portal > **Azure AD Connecter**. 
 ![Image de la Azure Active Directory portail](../../media/mtp-eval-1.png) <br> 

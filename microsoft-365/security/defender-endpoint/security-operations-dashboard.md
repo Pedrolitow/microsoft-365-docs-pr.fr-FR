@@ -1,5 +1,5 @@
 ---
-title: Tableau de bord opérations du Centre de sécurité Microsoft Defender
+title: Centre de sécurité Microsoft Defender Tableau de bord opérations de sécurité
 description: Utilisez le tableau de bord pour identifier les appareils à risque, suivre l’état du service et consulter les statistiques et les informations sur les appareils et les alertes.
 keywords: tableau de bord, alertes, nouveau, en cours, résolu, risque, appareils à risque, infections, rapports, statistiques, graphiques, graphiques, santé, détections de programmes malveillants actifs, catégorie de menace, catégories, programme de vol de mot de passe, ransomware, exploit, menace, faible gravité, programmes malveillants actifs
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064913"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Tableau de bord opérations du Centre de sécurité Microsoft Defender
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Centre de sécurité Microsoft Defender Tableau de bord opérations de sécurité
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,9 +33,9 @@ ms.locfileid: "51064913"
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
-Le tableau **de bord Opérations de** sécurité est l’endroit où les fonctionnalités de détection et de réponse des points de terminaison sont détectées. Il fournit une vue d’ensemble de l’endroit où les détections ont été détectées et met en évidence les cas où des actions de réponse sont nécessaires. 
+Le **tableau de bord Opérations** de sécurité est l’endroit protection évolutive des points de terminaison fonctionnalités de sécurité sont à l’écran. Il fournit une vue d’ensemble de l’endroit où les détections ont été détectées et met en évidence les cas où des actions de réponse sont nécessaires. 
 
-Le tableau de bord affiche une capture instantanée des éléments :
+Le tableau de bord affiche une capture instantanée des éléments ci-dessous :
 
 - Alertes actives
 - Appareils à risque
@@ -52,7 +52,7 @@ Le tableau de bord affiche une capture instantanée des éléments :
 
 Vous pouvez explorer et examiner les alertes et les appareils pour déterminer rapidement si, où et quand des activités suspectes se sont produites dans votre réseau pour vous aider à comprendre le contexte dans lequel elles sont apparues.
 
-À partir du **tableau de bord Opérations** de sécurité, vous verrez des événements agrégés pour faciliter l’identification d’événements ou de comportements importants sur un appareil. Vous pouvez également descendre dans les événements granulaires et les indicateurs de bas niveau.
+À partir du **tableau de bord Opérations** de sécurité, vous verrez des événements agrégés pour faciliter l’identification d’événements ou de comportements significatifs sur un appareil. Vous pouvez également descendre dans les événements granulaires et les indicateurs de bas niveau.
 
 Il dispose également de vignettes cliquables qui donnent des indications visuelles sur l’état d’état général de votre organisation. Chaque vignette ouvre une vue détaillée de la vue d’ensemble correspondante.
 
@@ -71,11 +71,11 @@ Chaque ligne inclut une catégorie de gravité d’alerte et une brève descript
 ## <a name="devices-at-risk"></a>Appareils à risque
 Cette vignette affiche la liste des appareils avec le plus grand nombre d’alertes actives. Le nombre total d’alertes pour chaque appareil est affiché dans un cercle en regard du nom de l’appareil, puis classé par niveaux de gravité à l’extrémité de la vignette (placez le pointage sur chaque barre de gravité pour voir son étiquette).
 
-![La vignette Appareils à risque affiche la liste des appareils avec le plus grand nombre d’alertes et une répartition de la gravité des alertes](images/devices-at-risk-tile.png)
+![La vignette Appareils à risque affiche la liste des appareils avec le plus grand nombre d’alertes et une répartition de la gravité des alertes.](images/devices-at-risk-tile.png)
 
-Cliquez sur le nom de l’appareil pour voir les détails de cet appareil. Pour plus d’informations, consultez la liste Examiner les appareils dans la liste [Microsoft Defender pour les appareils de point de terminaison.](investigate-machines.md)
+Cliquez sur le nom de l’appareil pour voir les détails sur cet appareil. Pour plus d’informations, consultez la liste Examiner les appareils de la liste [Microsoft Defender pour les appareils de point de terminaison.](investigate-machines.md)
 
-Vous pouvez également cliquer sur **La** liste Appareils en haut de la vignette pour passer directement à la liste **Appareils,** triée par le nombre d’alertes actives. Pour plus d’informations, consultez la liste Examiner les appareils dans la liste [Microsoft Defender pour les appareils de point de terminaison.](investigate-machines.md)
+Vous pouvez également cliquer sur **La** liste Appareils en haut de la vignette pour aller directement à la liste **Appareils,** triée par le nombre d’alertes actives. Pour plus d’informations, consultez la liste Examiner les appareils de la liste [Microsoft Defender pour les appareils de point de terminaison.](investigate-machines.md)
 
 ## <a name="devices-with-sensor-issues"></a>Appareils avec des problèmes de capteur
 La **vignette Appareils avec problèmes** de capteur fournit des informations sur la capacité de chaque appareil à fournir des données de capteur au service Microsoft Defender for Endpoint. Il indique le nombre d’appareils qui nécessitent une attention particulière et vous aide à identifier les appareils problématiques.
@@ -83,10 +83,10 @@ La **vignette Appareils avec problèmes** de capteur fournit des informations su
 ![Vignette des appareils avec problèmes de capteur](images/atp-tile-sensor-health.png)
 
 Deux indicateurs d’état fournissent des informations sur le nombre d’appareils qui ne sont pas correctement signalés au service :
-- **Mal configuré :** ces appareils peuvent signaler partiellement des données de capteur au service Microsoft Defender for Endpoint et peuvent avoir des erreurs de configuration qui doivent être corrigées.
+- **Mal configurés** : ces appareils peuvent signaler partiellement des données de capteur au service Microsoft Defender for Endpoint et peuvent avoir des erreurs de configuration qui doivent être corrigées.
 - **Inactif** : appareils qui ont cessé de signaler au service Microsoft Defender for Endpoint pendant plus de sept jours au cours du mois précédent.
 
-Lorsque vous cliquez sur l’un des groupes, vous êtes dirigé vers la liste des appareils, filtré en fonction de votre choix. Pour plus d’informations, voir [Vérifier l’état du capteur](check-sensor-status.md) et examiner les [appareils.](investigate-machines.md)
+Lorsque vous cliquez sur l’un des groupes, vous êtes dirigé vers la liste des appareils, filtré en fonction de votre choix. Pour plus d’informations, voir [Vérifier l’état du capteur](check-sensor-status.md) et Examiner les [appareils.](investigate-machines.md)
 
 ## <a name="service-health"></a>L’intégrité du service
 La **vignette d’état** du service vous informe si le service est actif ou s’il existe des problèmes.
@@ -103,7 +103,7 @@ La **vignette Rapports quotidiens sur** les appareils affiche un graphique à ba
 
 
 ## <a name="active-automated-investigations"></a>Examens automatisés actifs
-Vous pouvez afficher le nombre total d’examens automatisés des 30 derniers jours de votre réseau à partir de la **vignette Enquêtes automatisées actives.** Les examens sont regroupés en **action en attente,** **en attente de l’appareil** et en **cours d’exécution.**
+Vous pouvez afficher le nombre global d’enquêtes automatisées des 30 derniers jours de votre réseau à partir de la **vignette Enquêtes automatisées actives.** Les examens sont regroupés en **action en attente,** **en attente de l’appareil** et en **cours d’exécution.**
 
 ![Inmage d’enquêtes automatisées actives](images/atp-active-investigations-tile.png)
 
@@ -113,7 +113,7 @@ Cette vignette affiche les statistiques relatives aux enquêtes automatisées au
 
 ![Image des statistiques d’enquêtes automatisées](images/atp-automated-investigations-statistics.png)
 
-Vous pouvez cliquer sur **Examens** **automatisés,** **Examens corrigés et Alertes examinées** pour accéder à la page **Enquêtes,** filtrée par catégorie appropriée. Cela vous permet d’obtenir une répartition détaillée des enquêtes en contexte.
+Vous pouvez cliquer sur **Examens** automatisés, **Examens** corrigés et **Alertes examinées** pour accéder à la page **Enquêtes,** filtrée par catégorie appropriée. Cela vous permet d’obtenir une répartition détaillée des enquêtes en contexte.
 
 ## <a name="users-at-risk"></a>Utilisateurs à risque
 La vignette affiche la liste des comptes d’utilisateurs avec les alertes les plus actives et le nombre d’alertes visibles sur les alertes élevées, moyennes ou faibles. 

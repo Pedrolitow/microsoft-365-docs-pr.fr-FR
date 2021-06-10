@@ -44,7 +44,7 @@ Pour configurer le stockage et le partage des fichiers pour votre entreprise, no
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 de stockage et de gestion des documents
 

@@ -34,7 +34,7 @@ ms.locfileid: "52635725"
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : Rechercher la valeur de l’enregistrement TXT et vérifier
+### <a name="step-1-find-the-txt-record-value-and-verify"></a>Étape 1 : rechercher la valeur de l’enregistrement TXT et vérifier
 
 ::: moniker range="o365-worldwide"
 
@@ -100,6 +100,6 @@ ms.locfileid: "52635725"
 
 ## <a name="related-content"></a>Contenu associé
 
-[Forum aux questions sur les domaines](../setup/domains-faq.yml) (article)\
-[Rechercher et résoudre les problèmes après l’ajout de votre domaine ou d’enregistrements DNS](find-and-fix-issues.md) (article)\
+[FAQ sur les domaines](../setup/domains-faq.yml) (article)\
+[Rechercher et corriger les problèmes, y compris de messagerie, après avoir ajouté votre domaine ou des enregistrements DNS](find-and-fix-issues.md) (article)\
 [Gérer des domaines](index.yml) (page de lien)

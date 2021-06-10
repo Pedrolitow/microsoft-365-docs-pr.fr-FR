@@ -1,5 +1,5 @@
 ---
-title: Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
+title: Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
 ms.reviewer: ''
 description: Décrit comment déployer Microsoft Defender pour endpoint sur Linux à l’aide d’Ansible.
 keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, installation, déployer, désinstallation, préinstallation, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -25,7 +25,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52841790"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour point de terminaison sur Linux avec Ansible
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -74,7 +74,7 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
 Téléchargez le package d’intégration à partir Centre de sécurité Microsoft Defender :
 
 1. In Centre de sécurité Microsoft Defender, go to **Paramètres > Device Management > Onboarding**.
-2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez Votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
+2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
     ![Centre de sécurité Microsoft Defender capture d’écran](images/atp-portal-onboarding-linux-2.png)
@@ -129,7 +129,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
 
 - Ajoutez la clé et le référentiel Defender pour points de terminaison : `add_apt_repo.yml`
 
-    Defender pour le point de terminaison sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
+    Defender for Endpoint sur Linux peut être déployé à partir de l’un des canaux suivants (indiqués ci-dessous sous le nom *[canal]*) : *insiders-fast,* *insiders-slow* ou *prod*. Chacun de ces canaux correspond à un référentiel de logiciels Linux.
 
     Le choix du canal détermine le type et la fréquence des mises à jour proposées à votre appareil. Les appareils *internes rapides* sont les premiers à recevoir des mises à jour et de nouvelles fonctionnalités, suivis ultérieurement par les *insiders-slow* et enfin par *prod*.
 

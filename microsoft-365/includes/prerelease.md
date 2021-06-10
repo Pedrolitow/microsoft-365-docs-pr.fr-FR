@@ -1,5 +1,5 @@
 ---
-title: Clause d’exclusion de responsabilité de version pré-publiée de Microsoft Defender for Endpoint
+title: Clause d’exclusion de responsabilité de version pré-publiée de Microsoft Defender pour point de terminaison
 description: Clause d’exclusion de responsabilité pour la version pré-publiée de Microsoft Defender pour Endpoint.
 ms.date: 08/28/2017
 ms.reviewer: ''

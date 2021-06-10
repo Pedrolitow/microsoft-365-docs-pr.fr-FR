@@ -19,7 +19,7 @@ search.appverid:
 - GEA150
 ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
-description: 'Apprenez à créer des enregistrements DNS pour Office 365 géré par 21Vianet lorsque vous gérez vos enregistrements DNS. '
+description: 'Apprenez à créer des enregistrements DNS Office 365 gérés par 21Vianet lorsque vous gérez vos enregistrements DNS. '
 monikerRange: o365-21vianet
 ms.openlocfilehash: 1eaa2bcc7263eaa12e53131246abd591006b0536
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -30,7 +30,7 @@ ms.locfileid: "50914353"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Créer des enregistrements DNS pour Office 365 lorsque vous gérez vos enregistrements DNS
 
-Pour obtenir des instructions détaillées sur la création d’enregistrements DNS pour Office 365 géré par 21Vianet, notamment l’enregistrement MX requis pour le routage du courrier, voir Créer des enregistrements DNS chez n’importe quel fournisseur d’hébergement [DNS pour Office 365.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) 
+Pour obtenir des instructions détaillées sur la création d’enregistrements DNS pour Office 365 géré par 21Vianet, notamment l’enregistrement MX requis pour le routage du courrier, voir Créer des enregistrements DNS chez un fournisseur d’hébergement [DNS](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)pour Office 365 . 
   
   
 Autres options et éléments à prendre en compte :

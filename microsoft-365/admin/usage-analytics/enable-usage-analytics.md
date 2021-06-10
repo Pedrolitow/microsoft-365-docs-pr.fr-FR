@@ -59,7 +59,7 @@ Pour plus [d’informations, voir les rôles](../add-users/about-admin-roles.md)
     
 3. Dans le panneau Rapports qui s’ouvre, définissez Rendre les données de rapport disponibles Microsoft 365 **l’analyse** de l’utilisation Power BI sur **Sur** \> **enregistrer**. 
   
-Le processus de collecte de données se terminera en 2 à 48 heures en fonction de la taille de votre client. Le **bouton Go to Power BI** est activé (plus gris) lorsque la collecte de données est terminée. 
+Le processus de collecte de données se terminera dans deux à 48 heures en fonction de la taille de votre client. Le **bouton Go to Power BI** est activé (plus gris) lorsque la collecte de données est terminée. 
     
 ## <a name="start-the-template-app"></a>Démarrer l’application de modèle
 
@@ -77,15 +77,15 @@ Pour démarrer l’application de modèle, vous devez être un administrateur **
 
 5.  Sélectionnez **Explorer l’application** pour afficher l’application avec des exemples de données. Choisissez **Connecter** pour connecter l’application aux données de votre organisation.
 
-6.  Choisissez **Connecter**, sur **l’écran d’analyse** de l’utilisation Connecter à Microsoft 365, puis tapez l’ID de locataire (sans tirets) que vous avez copié à l’étape (1), puis sélectionnez **Suivant.**
+6.  Choisissez **Connecter**, sur l’écran d’analyse de l’utilisation Connecter à **Microsoft 365,** puis tapez l’ID de locataire (sans tirets) que vous avez copié à l’étape (1), puis sélectionnez Suivant **.**
     
-7. Dans l’écran suivant, sélectionnez **OAuth2** en tant que méthode **d’authentification** \> **Sign in**. Si vous choisissez une autre méthode d’authentification, la connexion au modèle d’application échoue.
+7. Dans l’écran suivant, sélectionnez **OAuth2 en** tant que méthode **d’authentification,** \> **connectez-vous.** Si vous choisissez une autre méthode d’authentification, la connexion à l’application de modèle échoue.
     
     ![Choisir un compte Microsoft comme méthode d’authentification](../../media/ab6f0463-c3f7-4088-a605-67c699fa86adnew.png)
   
-8. Une fois l’application de modèle ins Microsoft 365 le tableau de bord d’analyse de l’utilisation sera disponible Power BI sur le web. Le chargement initial du tableau de bord prend entre 2 et 30 minutes.
+8. Une fois le modèle d’application ins Microsoft 365 le tableau de bord d’analyse de l’utilisation sera disponible Power BI sur le web. Le chargement initial du tableau de bord prend entre 2 et 30 minutes.
   
-Les agrégats au niveau du client seront disponibles dans tous les rapports après l’avoir choisi. Les détails au niveau de l’utilisateur ne seront disponibles que le 5 du mois calendaire suivant **après l’avoir choisi.** Cela aura un impact sur [](navigate-and-utilize-reports.md) tous les rapports sous Activité de l’utilisateur (voir Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation pour obtenir des conseils sur la façon d’afficher et d’utiliser ces rapports).
+Les agrégats au niveau du client seront disponibles dans tous les rapports après l’avoir choisi. Les détails au niveau de l’utilisateur ne seront disponibles qu’autour du 5 du mois calendaire suivant **après l’avoir choisi.** Cela aura un impact sur [](navigate-and-utilize-reports.md) tous les rapports sous Activité de l’utilisateur (voir Naviguer et utiliser les rapports dans Microsoft 365'analyse de l’utilisation pour obtenir des conseils sur la façon d’afficher et d’utiliser ces rapports).
     
 ## <a name="make-the-collected-data-anonymous"></a>Anonymiser les données collectées
 

@@ -111,7 +111,7 @@ Suivez les étapes ci-dessous pour ajouter l’application Microsoft Defender fo
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \> **Android Apps** \> **Add** and select Managed Google **Play app**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image du google play géré Microsoft Endpoint Manager du centre d’administration](images/579ff59f31f599414cedf63051628b2e.png)
+    > ![Image de google play géré Microsoft Endpoint Manager centre d’administration](images/579ff59f31f599414cedf63051628b2e.png)
 
 2. Sur votre page Google Play gérée qui se charge par la suite, allez dans la zone de recherche et **recherchez Microsoft Defender.** Votre recherche doit afficher l’application Microsoft Defender for Endpoint dans votre Google Play géré. Cliquez sur l’application Microsoft Defender pour le point de terminaison à partir du résultat de recherche Applications.
 
@@ -126,9 +126,9 @@ Suivez les étapes ci-dessous pour ajouter l’application Microsoft Defender fo
 
     ![Capture d’écran de l’approbation de l’application d’aperçu defender pour point de terminaison](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
-5. La page Paramètres d’approbation s’présente. La page confirme votre préférence pour gérer les nouvelles autorisations d’application que Defender pour endpoint sur Android peut demander. Examinez les choix et sélectionnez votre option préférée. Sélectionnez **Terminé**.
+5. La page Paramètres d’approbation vous sera présentée. La page confirme votre préférence pour gérer les nouvelles autorisations d’application que Defender pour endpoint sur Android peut demander. Examinez les choix et sélectionnez votre option préférée. Sélectionnez **Terminé**.
 
-    Par défaut, la fonctionnalité Google Play gérée sélectionne *Conserver approuvé lorsque l’application demande de nouvelles autorisations*
+    Par défaut, Google Play géré sélectionne *Conserver approuvé lorsque l’application demande de nouvelles autorisations*
 
     > [!div class="mx-imgBorder"]
     > ![Image de l’onglet Notifications](images/ffecfdda1c4df14148f1526c22cc0236.png)
@@ -151,14 +151,14 @@ Suivez les étapes ci-dessous pour ajouter l’application Microsoft Defender fo
 
     1. Dans la page **Applications,** go to **Policy > App configuration policies > Add > Managed devices**.
 
-       ![Image des appareils gérés android Microsoft Endpoint Manager centre d’administration](images/android-mem.png)
+       ![Image des appareils gérés android Microsoft Endpoint Manager centre d’administration Windows](images/android-mem.png)
 
     1. Dans la page **Créer une stratégie de configuration d’application,** entrez les détails suivants :
     
         - Nom : Microsoft Defender pour le point de terminaison.
         - Choisissez **Android Enterprise** en tant que plateforme.
         - Choisissez **Profil de travail uniquement en** tant que type de profil.
-        - Cliquez **sur Sélectionner une** application, choisissez **Microsoft Defender ATP,** **sélectionnez OK,** puis **Suivant**.
+        - Cliquez **sur Sélectionner l’application,** **Microsoft Defender ATP,** **sélectionnez OK,** puis **Suivant**.
     
         > [!div class="mx-imgBorder"]
         > ![Image de la page créer une stratégie de configuration d’application](images/android-create-app.png)
@@ -203,7 +203,7 @@ Suivez les étapes ci-dessous pour ajouter l’application Microsoft Defender fo
     > ![Image de la page modifier l’application](images/ea06643280075f16265a596fb9a96042.png)
 
 
-12. Dans la page **Modifier l’application,** examinez toutes les informations entrées ci-dessus. Sélectionnez **Ensuite Révision + Enregistrer,** puis **Réesser pour** commencer l’affectation.
+12. Dans la page **Modifier l’application,** examinez toutes les informations entrées ci-dessus. Sélectionnez **Ensuite Révision + Enregistrer,** puis **Réessoy pour** commencer l’affectation.
 
 ### <a name="auto-setup-of-always-on-vpn"></a>Configuration automatique du VPN toujours en service 
 Defender pour le point de terminaison prend en charge les stratégies de configuration des appareils gérés via Intune. Cette fonctionnalité peut être mise à profit pour la configuration automatique du **VPN** toujours connecté sur les appareils Enterprise Android, de sorte que l’utilisateur final n’a pas besoin de configurer le service VPN lors de l’intégration.
@@ -220,7 +220,7 @@ Sélectionnez **Créer**.
    > ![Image du nom et de la description du profil de configuration des appareils](images/2autosetupofvpn.png)
    
  3. Sélectionnez **Connectivité et** configurez vpn :
-- Activez **le programme d’installation VPN** toujours activé d’un client VPN dans le profil professionnel pour vous connecter et vous reconnecter automatiquement au VPN dès que possible. Un seul client VPN peut être configuré pour un VPN toujours connecté sur un appareil donné. Assurez-vous donc de n’avoir qu’une seule stratégie VPN toujours en service déployée sur un seul appareil. 
+- Activez **le programme d’installation VPN** toujours activé pour un client VPN dans le profil professionnel afin de vous connecter et de vous reconnecter automatiquement au VPN dès que possible. Un seul client VPN peut être configuré pour un VPN toujours connecté sur un appareil donné. Assurez-vous donc de n’avoir qu’une seule stratégie VPN toujours en service déployée sur un seul appareil. 
 - Select **Custom** in VPN client dropdown list Custom VPN in this case is Defender for Endpoint VPN which is used to provide the Web Protection feature. 
     > [!NOTE]
     > Microsoft Defender pour l’application De point de terminaison doit être installé sur l’appareil de l’utilisateur, afin de fonctionner automatiquement la configuration de ce VPN.
@@ -256,7 +256,7 @@ Sélectionnez **Créer**.
 
 4. À ce stade, l’appareil est correctement intégré à Defender for Endpoint sur Android. Vous pouvez le vérifier sur le [Centre de sécurité Microsoft Defender](https://securitycenter.microsoft.com) en naviguant vers la page **Appareils.**
 
-    ![Image du portail Microsoft Defender pour les points de terminaison](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
+    ![Image du portail Microsoft Defender pour points de terminaison](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 
 
 ## <a name="related-topics"></a>Voir aussi

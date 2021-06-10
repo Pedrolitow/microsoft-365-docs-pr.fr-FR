@@ -54,7 +54,7 @@ Pour configurer l’examen et la correction automatisés,
 2. Sélectionnez **+ Ajouter un groupe d’appareils.**
 3. Créez au moins un groupe d’appareils, comme suit :
    - Spécifiez un nom et une description pour le groupe d’appareils.
-   - Dans la liste **des niveaux Automation,** sélectionnez un niveau, tel que Complet , pour corriger automatiquement **les menaces.** Le niveau d’automatisation détermine si des actions de correction sont prises automatiquement, ou uniquement après approbation. Pour en savoir plus, consultez [Les niveaux Automation dans l’examen et la correction automatisés.](automation-levels.md)
+   - Dans la liste **des niveaux Automation,** sélectionnez un niveau, tel que Complet , pour corriger automatiquement **les menaces.** Le niveau d’automatisation détermine si les actions de correction sont prises automatiquement ou uniquement après approbation. Pour en savoir plus, consultez [Les niveaux Automation dans l’examen et la correction automatisés.](automation-levels.md)
    - Dans la section **Membres,** utilisez une ou plusieurs conditions pour identifier et inclure des appareils.
    - Sous **l’onglet** Accès utilisateur, sélectionnez [les groupes Azure Active Directory qui](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) doivent avoir accès au groupe d’appareils que vous créez.
 4. Sélectionnez **Terminé** lorsque vous avez terminé la configuration de votre groupe d’appareils.

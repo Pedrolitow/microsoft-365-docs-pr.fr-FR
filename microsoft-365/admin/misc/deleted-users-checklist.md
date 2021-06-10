@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: Suivez cette liste de vérification lors de la suppression du compte Microsoft 365 d’un utilisateur.
+description: Suivez cette liste de vérification lors de la suppression du compte Microsoft 365 utilisateur.
 ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

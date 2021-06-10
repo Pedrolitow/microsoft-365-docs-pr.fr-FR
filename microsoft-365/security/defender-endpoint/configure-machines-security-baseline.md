@@ -1,7 +1,7 @@
 ---
 title: Renforcer la conformité à la ligne de base de sécurité microsoft Defender pour les points de terminaison
 description: La ligne de base de sécurité microsoft Defender pour les points de terminaison définit les contrôles de sécurité pour fournir une protection optimale.
-keywords: Gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Microsoft Defender pour endpoint ASR, ligne de base de sécurité
+keywords: Gestion Intune, Microsoft Defender pour point de terminaison, Microsoft Defender, Microsoft Defender for Endpoint ASR, ligne de base de sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -31,7 +31,7 @@ ms.locfileid: "52841545"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Les lignes de base de sécurité garantissent que les fonctionnalités de sécurité sont configurées conformément aux conseils des experts en sécurité et des Windows administrateurs système. Lorsqu’elle est déployée, la ligne de base de sécurité defender pour point de terminaison définit les contrôles de sécurité Defender pour les points de terminaison afin de fournir une protection optimale.
 
@@ -42,7 +42,7 @@ Avant de pouvoir déployer et suivre la conformité aux lignes de base de sécur
 - [Vérifier que vous avez les autorisations nécessaires](configure-machines.md#obtain-required-permissions)
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Comparer les lignes de base de sécurité Microsoft Defender pour endpoint et Windows intune
-La ligne de base de sécurité Windows Intune fournit un ensemble complet de paramètres recommandés nécessaires pour configurer en toute sécurité les appareils exécutant Windows, y compris les paramètres du navigateur, les paramètres PowerShell, ainsi que les paramètres de certaines fonctionnalités de sécurité telles que Antivirus Microsoft Defender. En revanche, la ligne de base de Defender pour point de terminaison fournit des paramètres qui optimisent tous les contrôles de sécurité dans la pile Defender pour les points de terminaison, y compris les paramètres de protection évolutive des points de terminaison (PEPT) ainsi que les paramètres également trouvés dans la ligne de base de sécurité Windows Intune. Pour plus d’informations sur chaque ligne de base, voir :
+La ligne de base de sécurité Windows Intune fournit un ensemble complet de paramètres recommandés nécessaires pour configurer en toute sécurité les appareils exécutant des Windows, notamment les paramètres du navigateur, les paramètres PowerShell, ainsi que les paramètres de certaines fonctionnalités de sécurité telles que Antivirus Microsoft Defender. En revanche, la ligne de base de Defender pour point de terminaison fournit des paramètres qui optimisent tous les contrôles de sécurité dans la pile Defender pour les points de terminaison, y compris les paramètres de protection évolutive des points de terminaison (PEPT), ainsi que les paramètres également trouvés dans la ligne de base de sécurité Windows Intune. Pour plus d’informations sur chaque ligne de base, voir :
 
 - [Windows de base de sécurité pour Intune](/intune/security-baseline-settings-windows)
 - [Paramètres de référence de Microsoft Defender pour point de terminaison pour Intune](/intune/security-baseline-settings-defender-atp)
@@ -78,7 +78,7 @@ La gestion de la configuration des appareils surveille la conformité de référ
 1. Sélectionnez **Configurer la ligne de base de sécurité** sur la carte de **référence** sécurité pour passer à la gestion des appareils Intune. Une vue d’ensemble similaire de la conformité de référence s’affiche.
 
    >[!TIP]
-   > Vous pouvez également accéder à la ligne de base de sécurité Defender for Endpoint dans le portail Microsoft Azure à partir de Tous les **services > Intune >** Sécurité des appareils > Les lignes de base de sécurité > Microsoft Defender ATP base.
+   > Vous pouvez également accéder à la ligne de base de sécurité Defender for Endpoint dans le portail Microsoft Azure à partir de Tous les **services > Intune >** Sécurité des appareils > Sécurité > Microsoft Defender ATP base de référence.
 
 
 2. Créez un profil.

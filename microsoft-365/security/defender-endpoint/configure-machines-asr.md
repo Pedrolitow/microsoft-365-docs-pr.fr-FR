@@ -1,7 +1,7 @@
 ---
 title: Optimiser le déploiement et les détections de règles asr
 description: Optimisez vos règles de réduction de la surface d’attaque (ASR) pour identifier et empêcher les attaques de programmes malveillants classiques.
-keywords: intégré, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, réduction de la surface d’attaque, réduction de la surface d’attaque, réduction de la surface d’attaque, ligne de base de sécurité
+keywords: intégration, gestion Intune, Microsoft Defender pour le point de terminaison, Microsoft Defender, Windows Defender, réduction de la surface d’attaque, réduction de la surface d’attaque, réduction de la surface d’attaque, ligne de base de sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -38,7 +38,7 @@ ms.locfileid: "52841557"
 ![Carte de gestion de la surface d’attaque](images/secconmgmt_asr_card.png)<br>
 *Carte de gestion de la surface d’attaque*
 
-La *carte de gestion de la surface d’attaque* est un point d’entrée vers les outils Microsoft 365 centre de sécurité que vous pouvez utiliser pour :
+La *carte de gestion de la surface* d’attaque est un point d’entrée des outils Microsoft 365 centre de sécurité que vous pouvez utiliser pour :
 
 * Comprendre comment les règles de la asr. sont actuellement déployées dans votre organisation.
 * Examinez les détections de la résurv et identifiez les détections éventuellement incorrectes.

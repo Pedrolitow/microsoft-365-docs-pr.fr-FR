@@ -1,6 +1,6 @@
 ---
-title: API obtenir la collection de groupes d'ordinateurs RBAC
-description: Découvrez comment utiliser l'API get KB collection pour récupérer une collection de groupes d'appareils RBAC dans Microsoft Defender pour Endpoint.
+title: API obtenir la collection de groupes d’ordinateurs RBAC
+description: Découvrez comment utiliser l’API get KB collection pour récupérer une collection de groupes d’appareils RBAC dans Microsoft Defender pour Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, RBAC, groupe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,7 +28,7 @@ ms.locfileid: "51932774"
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S'applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+**S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -37,10 +37,10 @@ ms.locfileid: "51932774"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Récupère une collection de groupes d'appareils RBAC.
+Récupère une collection de groupes d’appareils RBAC.
 
 ## <a name="permissions"></a>Autorisations
-L'utilisateur a besoin d'autorisations de lecture.
+L’utilisateur a besoin d’autorisations de lecture.
 
 ## <a name="http-request"></a>Requête HTTP
 ```
@@ -74,7 +74,7 @@ Content-type: application/json
 **Réponse**
 
 Voici un exemple de réponse.
-L'ID de champ contient **l'ID** du groupe d'appareils et est égal au champ **rbacGroupId** dans les informations des appareils. Le **champ non regroupé** n'est vrai que pour un seul groupe pour tous les appareils qui n'ont été affectés à aucun groupe. Comme d'habitude, ce groupe a le nom « UnassignedGroup ».
+L’ID de champ contient **l’ID** du groupe d’appareils et est égal au champ **rbacGroupId** dans les informations des appareils. Le **champ non regroupé** n’est vrai que pour un seul groupe pour tous les appareils qui n’ont été affectés à aucun groupe. Comme d’habitude, ce groupe a le nom « UnassignedGroup ».
 
 ```
 HTTP/1.1 200 OK

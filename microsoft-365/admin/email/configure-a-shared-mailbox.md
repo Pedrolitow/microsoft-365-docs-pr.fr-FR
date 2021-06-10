@@ -30,7 +30,7 @@ ms.locfileid: "52635509"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 
-Une fois que vous [avez](create-a-shared-mailbox.md)créé une boîte aux lettres partagée, vous pouvez configurer certains paramètres pour les utilisateurs de la boîte aux lettres, tels que le forwarding des messages électroniques et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom de la boîte aux lettres, les membres ou les autorisations des membres. 
+Une fois que vous [avez](create-a-shared-mailbox.md)créé une boîte aux lettres partagée, vous souhaiterez configurer certains paramètres pour les utilisateurs de la boîte aux lettres, tels que le forwarding des messages électroniques et les réponses automatiques. Par la suite, vous pouvez modifier d’autres paramètres, tels que le nom de la boîte aux lettres, les membres ou les autorisations des membres. 
 
 ## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a>Modifier le nom ou l’alias de messagerie d’une boîte aux lettres partagée ou modifier l’adresse de messagerie principale
 
@@ -64,7 +64,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 4. Entrez la réponse que vous voulez envoyer aux personnes internes à votre organisation. Vous ne pouvez pas ajouter d'images, seulement du texte.
 
-5. Si vous souhaitez *également* envoyer une réponse à des personnes extérieures à votre organisation, cochez la case, qui vous souhaitez obtenir la réponse, puis tapez le texte. Vous ne pouvez pas envoyer la réponse uniquement à des personnes externes à votre organisation sans l'envoyer à des personnes internes à votre organisation.
+5. Si vous *souhaitez* également envoyer une réponse à des personnes extérieures à votre organisation, cochez la case, qui vous souhaitez obtenir la réponse, puis tapez le texte. Vous ne pouvez pas envoyer la réponse uniquement à des personnes externes à votre organisation sans l'envoyer à des personnes internes à votre organisation.
 
 6. Sélectionnez **Enregistrer**.
 
@@ -96,7 +96,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 3. Définissez le basculement sur **Sur**. 
 
-4. Éventuellement, entrez une durée, une note sur la attente et une URL avec plus d’informations.  
+4. Vous pourz éventuellement entrer une durée, une note sur la attente et une URL avec plus d’informations.  
 
 5. Sélectionnez **Enregistrer**.
 
@@ -107,9 +107,9 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 2. Sélectionnez la boîte aux lettres  partagée à modifier, puis sélectionnez \> **Modifier les membres.**
 
-3. Effectuez l'une des opérations suivantes :
-   - Pour ajouter des membres, **sélectionnez Ajouter des membres,** recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
-   - Pour supprimer des membres, utilisez la zone de recherche pour rechercher le membre si nécessaire, sélectionnez **le X** en côté du nom du membre, puis sélectionnez **Enregistrer**. 
+3. Effectuez l'une des opérations suivantes :
+   - Pour ajouter des membres, **sélectionnez Ajouter des** membres, recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
+   - Pour supprimer des membres, utilisez la zone de recherche pour rechercher le membre si nécessaire, sélectionnez **le X** à côté du nom du membre, puis sélectionnez **Enregistrer**. 
 
 4. Sélectionnez **Enregistrer à** nouveau.
 
@@ -121,7 +121,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 3. Sélectionnez **Modifier** en plus de l’autorisation que vous souhaitez modifier pour un membre. 
 
-4. Effectuez l'une des opérations suivantes :
+4. Effectuez l'une des opérations suivantes :
    - Pour accorder cette autorisation à un membre supplémentaire, sélectionnez Ajouter des **autorisations,** recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
    - Pour supprimer l’autorisation d’un membre, utilisez la zone De recherche pour rechercher le membre si nécessaire, sélectionnez **le X** en de côté du nom du membre, puis sélectionnez **Enregistrer**. 
 
@@ -140,7 +140,7 @@ Si vous choisissez de ne pas afficher la boîte aux lettres partagée dans la li
 4. Sélectionnez **Enregistrer**.
 
 > [!NOTE]
-> Masquer une boîte aux lettres partagée dans la liste d’adresses empêche les nouveaux membres de la boîte aux lettres partagée d’ajouter la boîte aux lettres masquée à leur profil Outlook tant que la boîte aux lettres partagée n’est pas de nouveau affichée dans la liste d’adresses. 
+> Le fait de masquer une boîte aux lettres partagée dans la liste d’adresses empêche les nouveaux membres de la boîte aux lettres partagée d’ajouter la boîte aux lettres masquée à leur profil Outlook tant que la boîte aux lettres partagée n’est pas de nouveau affichée dans la liste d’adresses. 
 
 ## <a name="related-content"></a>Contenu associé
 

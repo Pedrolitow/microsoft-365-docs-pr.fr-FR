@@ -39,8 +39,8 @@ Informations techniques : lorsque vous exécutez une application cliente compati
   
 Si cet enregistrement CNAME est manquant pour votre domaine, ces applications utiliseront un point de terminaison d'authentification par défaut aux États-Unis, ce qui peut ralentir le processus d'authentification. Si cet enregistrement CNAME n'est pas correctement configuré (par exemple, si la valeur **Adresse de pointage** inclut une coquille), ces applications ne pourront pas s'authentifier.
   
- **Si Office 365 gère les enregistrements DNS** de votre domaine, Office 365 définit cet enregistrement CNAME pour vous. 
+ Si Office 365 les enregistrements **DNS** de votre domaine, Office 365 cet enregistrement CNAME pour vous. 
   
  Si vous gérez des enregistrements DNS pour votre domaine sur votre hôte **DNS,** vous créez cet enregistrement vous-même en suivant les instructions pour votre hôte [DNS.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
   
-Si vous planifiez un déploiement Office 365 et que vous souhaitez en savoir plus sur tous les enregistrements DNS que vous devrez peut-être ajouter ou mettre à jour, lisez-les dans référence : Enregistrements de système de noms de domaine externes pour [Office 365.](../../enterprise/external-domain-name-system-records.md)
+Si vous planifiez un déploiement Office 365 et que vous souhaitez en savoir plus sur tous les enregistrements DNS que vous devrez peut-être ajouter ou mettre à jour, lisez-les dans Référence : Enregistrements du système de noms de domaine externe pour [Office 365](../../enterprise/external-domain-name-system-records.md).

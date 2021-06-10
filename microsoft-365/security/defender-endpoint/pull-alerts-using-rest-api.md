@@ -33,7 +33,7 @@ ms.locfileid: "52771668"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -57,12 +57,12 @@ Microsoft Defender pour le  point de terminaison prend en charge le flux d’oct
 
 Le _flux d’octroi d’autorisation_ utilise les informations d’identification de l’utilisateur pour obtenir un code d’autorisation, qui est ensuite utilisé pour obtenir un jeton d’accès.
 
-Le _flux d’informations d’identification_ du client utilise les informations d’identification du client pour s’authentifier par rapport à l’URL du point de terminaison Microsoft Defender for Endpoint. Ce flux convient aux scénarios lorsqu’un client OAuth crée des demandes à une API qui ne nécessite pas d’informations d’identification utilisateur.
+Le _flux d’informations d’identification_ du client utilise les informations d’identification du client pour s’authentifier par rapport à l’URL du point de terminaison Microsoft Defender for Endpoint. Ce flux convient aux scénarios où un client OAuth crée des demandes à une API qui ne nécessite pas d’informations d’identification utilisateur.
 
 Utilisez la méthode suivante dans l’API Microsoft Defender for Endpoint pour tirer les détections au format JSON.
 
 >[!NOTE]
->Centre de sécurité Microsoft Defender fusionne des détections d’alertes similaires en une seule alerte. Cette API tire les détections d’alertes dans sa forme brute en fonction des paramètres de requête que vous définissez, ce qui vous permet d’appliquer vos propres regroupements et filtrages. 
+>Centre de sécurité Microsoft Defender fusionne des détections d’alertes similaires en une seule alerte. Cette API tire les détections d’alertes dans sa forme brute en fonction des paramètres de requête que vous avez définies, ce qui vous permet d’appliquer votre propre regroupement et filtrage. 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 - Avant d’appeler le point de terminaison Microsoft Defender pour point de terminaison pour tirer les détections, vous devez activer l’application d’intégration SIEM dans Azure Active Directory (AAD). Pour plus d’informations, voir [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
@@ -76,7 +76,7 @@ Utilisez la méthode suivante dans l’API Microsoft Defender for Endpoint pour 
 ## <a name="get-an-access-token"></a>Obtenir un jeton d’accès
 Avant de créer des appels au point de terminaison, vous devez obtenir un jeton d’accès.
 
-Vous utiliserez le jeton d’accès pour accéder à la ressource protégée, c’est-à-dire les détections dans Microsoft Defender pour le point de terminaison.
+Vous utiliserez le jeton d’accès pour accéder à la ressource protégée, c’est-à-dire les détections dans Microsoft Defender pour point de terminaison.
 
 Pour obtenir un jeton d’accès, vous devez faire une demande POST au point de terminaison émettant le jeton. Voici un exemple de requête :
 
@@ -123,7 +123,7 @@ Utilisez des paramètres de requête facultatifs pour spécifier et contrôler l
 Nom | Valeur| Description
 :---|:---|:---
 sinceTimeUtc | Date/heure | Définit les alertes liées au temps inférieur à partir de, en fonction du champ : <br> `LastProcessedTimeUtc` <br> L’intervalle de temps sera : de l’heure sinceTimeUtc à l’heure actuelle. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, toutes les alertes générées au cours des deux dernières heures sont récupérées.
-untilTimeUtc | Date/heure | Définit les alertes liées au temps supérieur qui sont récupérées. <br> L’plage de temps est : de `sinceTimeUtc` temps en `untilTimeUtc` temps. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, la valeur par défaut est l’heure actuelle.
+untilTimeUtc | Date/heure | Définit les alertes liées au temps supérieur qui sont récupérées. <br> La plage de temps sera : de `sinceTimeUtc` temps en `untilTimeUtc` temps. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, la valeur par défaut est l’heure actuelle.
 ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> La valeur doit être définie selon le format de durée **ISO 8601** <br> Exemple : `ago=PT10M` tirera les alertes reçues au cours des 10 dernières minutes.
 limit | entier | Définit le nombre d’alertes à récupérer. Les alertes les plus récentes sont récupérées en fonction du nombre défini.<br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, toutes les alertes disponibles dans l’plage de temps sont récupérées.
 machinegroups | string | Spécifie les groupes d’appareils à partir des appareils à partir des alertes. <br><br> **REMARQUE**: lorsqu’elle n’est pas spécifiée, les alertes de tous les groupes d’appareils sont récupérées. <br><br> Exemple : <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
@@ -336,7 +336,7 @@ Code d’erreur HTTP | Description
 500 | Erreur dans le service.
 
 ## <a name="related-topics"></a>Voir aussi
-- [Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison](enable-siem-integration.md)
+- [Activer l’intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)
 - [Configurer ArcSight pour tirer Microsoft Defender pour les détections de points de terminaison](configure-arcsight.md)
 - [Tirer les détections vers vos outils SIEM](configure-siem.md)
 - [Champs Microsoft Defender pour la détection des points de terminaison](api-portal-mapping.md)

@@ -15,7 +15,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Découvrez comment configurer une Exchange Server local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
+description: Découvrez comment configurer un environnement Exchange Server local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
 ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
@@ -96,7 +96,7 @@ Assurez-vous que les url à qui les clients peuvent se connecter sont répertori
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Prenez note (et capture d’écran pour une comparaison ultérieure) de la sortie de cette commande, qui doit inclure un  *autodiscover.yourdomain.com*  https:// et une URL  *https:// mail.yourdomain.com,* mais principalement composée de SNS qui commencent par 00000002-0000-0ff1-ce00-000000000000/. Si des URL https:// de votre site local sont manquantes, nous devons ajouter ces enregistrements spécifiques à cette liste.
+   Prenez note (et capture d’écran pour comparaison ultérieure) de la sortie de cette commande, qui doit inclure un  *autodiscover.yourdomain.com*  https:// et une URL  *https:// mail.yourdomain.com,* mais principalement des SSN qui commencent par 00000002-0000-0ff1-ce00-0000000000000/. Si des URL https:// de votre site local sont manquantes, nous devons ajouter ces enregistrements spécifiques à cette liste.
 
 3. Si vous ne voyez pas vos enregistrements MAPI/HTTP, EWS, ActiveSync, OAB et Autodiscover internes et externes dans cette liste, vous devez les ajouter à l’aide de la commande ci-dessous (les exemples d’URL sont « ' » et « ' , mais vous devez remplacer les `mail.corp.contoso.com` `owa.contoso.com` **exemples d’URL** par les vôtres ) :
 
@@ -107,7 +107,7 @@ Assurez-vous que les url à qui les clients peuvent se connecter sont répertori
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant à nouveau Get-MsolServicePrincipal commande de l’étape 2 et en regardant la sortie. Comparez la liste /capture d’écran d’avant à la nouvelle liste de SSN. Vous pouvez également prendre une capture d’écran de la nouvelle liste pour vos enregistrements. Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. En suivant notre exemple, la liste des SNS inclut désormais les URL spécifiques  `https://mail.corp.contoso.com`  et  `https://owa.contoso.com` .
+4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant la commande Get-MsolServicePrincipal l’étape 2 et en regardant la sortie. Comparez la liste /capture d’écran d’avant à la nouvelle liste de SSN. Vous pouvez également prendre une capture d’écran de la nouvelle liste pour vos enregistrements. Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. En suivant notre exemple, la liste des SNS inclut désormais les URL spécifiques  `https://mail.corp.contoso.com`  et  `https://owa.contoso.com` .
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Vérifier que les répertoires virtuels sont correctement configurés
 
@@ -188,7 +188,7 @@ Si vous êtes un client local utilisant un serveur Exchange sur TCP 443, ignorez
 52.127.96.0/23
 ```
 
-L’application Outlook pour iOS et Android est conçue comme la meilleure façon de faire l’expérience des Microsoft 365 ou des Office 365 sur votre appareil mobile à l’aide de services Microsoft pour vous aider à rechercher, planifier et hiérarchiser votre vie quotidienne et votre travail. Pour plus d’informations, reportez-vous à l’utilisation de l’authentification moderne [hybride Outlook pour iOS et Android.](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
+L’application Outlook pour iOS et Android est conçue comme la meilleure façon de découvrir les Microsoft 365 ou les Office 365 sur votre appareil mobile à l’aide de services Microsoft pour vous aider à rechercher, planifier et hiérarchiser votre vie quotidienne et votre travail. Pour plus d’informations, reportez-vous à l’utilisation de l’authentification moderne [hybride Outlook pour iOS et Android.](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
 
 ## <a name="related-topics"></a>Voir aussi
 

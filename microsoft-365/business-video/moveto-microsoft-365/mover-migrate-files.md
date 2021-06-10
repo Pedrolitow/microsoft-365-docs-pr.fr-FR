@@ -1,5 +1,5 @@
 ---
-title: 'Migrer des fichiers Google vers Microsoft 365 pour les entreprises '
+title: 'Migrer des fichiers Google vers Microsoft 365 entreprise '
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment migrer des fichiers Google vers Microsoft 365 pour les entreprises à l’aide de Mover.
+description: Découvrez comment migrer des fichiers Google vers Microsoft 365 entreprise à l’aide de Mover.
 ms.openlocfilehash: 6feabff7e36e84f7dba56e74333648325cf43920
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,18 +28,18 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50913573"
 ---
-# <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrer des fichiers Google vers Microsoft 365 pour les entreprises 
+# <a name="migrate-google-files-to-microsoft-365-for-business"></a>Migrer des fichiers Google vers Microsoft 365 entreprise 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-Lorsque vous migrez vers Microsoft 365 pour les entreprises, vous souhaiterez migrer vos fichiers à partir de Google Drive. Vous pouvez utiliser l’application Mover pour déplacer des fichiers à partir de lecteurs personnels et partagés. Pour plus d’informations, [voir Migration cloud de Mover.](/sharepointmigration/mover-plan-migration)
+Lorsque vous migrez vers Microsoft 365 entreprise, vous souhaiterez migrer vos fichiers à partir de Google Drive. Vous pouvez utiliser l’application Mover pour déplacer des fichiers à partir de lecteurs personnels et partagés. Pour plus d’informations, [voir Migration cloud de Mover.](/sharepointmigration/mover-plan-migration)
 
 > [!NOTE]
-> Mover effectuera une copie des fichiers et les déplacera vers Microsoft 365 pour les entreprises. Les fichiers d’origine resteront également dans Google Drives.
+> Mover effectuera une copie des fichiers et déplacera les copies vers Microsoft 365 entreprise. Les fichiers d’origine resteront également dans Google Drives.
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-Tous les utilisateurs doivent s’être inscrits à Microsoft 365 pour les entreprises et configurer leur OneDrive Entreprise. Pour ce faire, [office.com,](https://office.com)connectez-vous avec vos informations d’identification Microsoft 365 entreprise, puis choisissez OneDrive.
+Tous les utilisateurs doivent s’être Microsoft 365 pour les entreprises et configurer leur OneDrive Entreprise. Pour ce faire, [office.com,](https://office.com)connectez-vous à l’Microsoft 365 informations d’identification de votre entreprise, puis choisissez OneDrive.
 
 ## <a name="try-it"></a>Essayez !
 
@@ -66,14 +66,14 @@ Tous les utilisateurs doivent s’être inscrits à Microsoft 365 pour les entre
 
     Mover affiche le nombre de lecteurs d’équipe et d’utilisateurs détectés. 
 
-1. Under **Select destination**, choose **Authorize New Connector**, locate Office **365**, and select **Authorize**.
-1. Pour accorder des autorisations à l’application Mover dans votre Azure Active Directory, accédez [à aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
+1. Under **Select destination**, choose **Authorize New Connector**, locate **Office 365**, and select **Authorize**.
+1. Pour accorder des autorisations à l’application Mover dans votre Azure Active Directory, accédez à [aka.ms/Office365MoverAuth](https://aka.ms/Office365MoverAuth).
 1. Sélectionnez **Office 365 Mover**, **Autorisations**, **Accorder le consentement administrateur pour votre entreprise**.
 1. Choisissez votre compte, examinez les autorisations, puis sélectionnez **Accepter.**
 1. Choose **Properties** and verify that **User assignment required?** is turned on.
 1. Revenir à l’application Mover, modifier le nom **complet,** si vous le souhaitez, choisissez **Autoriser,** puis sélectionnez un compte d’administrateur Microsoft.
 
-    Mover vous informera du nombre de sites SharePoint Online (ou SPO) et d’utilisateurs qu’il a découverts.
+    Mover vous informe du nombre de sites SharePoint Online (ou SPO) et d’utilisateurs qu’il a découverts.
 1. Choisissez **Continuer le programme d’installation de** la migration, **sélectionnez Ajouter des** utilisateurs, puis découvrir et ajouter automatiquement des **utilisateurs.**
 
     L’application Mover tentera de maser les lecteurs du chemin d’accès source dans Google au chemin d’accès de destination dans Microsoft 365. 

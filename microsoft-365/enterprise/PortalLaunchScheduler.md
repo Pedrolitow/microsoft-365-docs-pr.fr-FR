@@ -71,7 +71,7 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 1. Avant d’utiliser l’outil de planification de lancement du portail, ajoutez tous les utilisateurs qui auront besoin d’accéder à ce [site](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658) via les **autorisations** site en tant que propriétaire du site, membre du site ou visiteur.
 
-2. Commencez ensuite à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
+2. Ensuite, commencez à planifier le lancement de votre portail en accédant au programme de lancement du portail de deux manières :
 
    **Option 1**: les premières fois que vous modifiez et repupuyez les modifications apportées à votre page d’accueil (ou jusqu’à la version 3.0 de la page d’accueil), vous êtes invité à utiliser l’outil de planification de lancement du portail. Sélectionnez **Planifier le lancement** pour aller de l’avant avec la planification. Vous pouvez également **sélectionner Republish** pour republier vos modifications de page sans planifier le lancement.
 
@@ -104,7 +104,7 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
    **Option 2 :** Envoyer les utilisateurs vers une page temporaire auto-genrée (redirection de page temporaire) : utilisez une redirection de page temporaire lorsqu’il n’existe aucun portail SharePoint existant. Les utilisateurs sont dirigés vers un nouveau portail SharePoint moderne et si un utilisateur est dans une vague qui n’a pas été lancée, il est redirigé vers une page temporaire.
 
-   **Option 3 : Envoyer** des utilisateurs vers une page externe : fournissez une URL externe à une expérience de page d’accueil temporaire jusqu’à ce que la vague de l’utilisateur soit lancée.
+   **Option 3 : Envoyer** des utilisateurs vers une page externe : fournir une URL externe à une expérience de page d’accueil temporaire jusqu’à ce que la vague de l’utilisateur soit lancée.
 
 6. Décomposez votre audience en vagues. Ajoutez jusqu’à 20 groupes de sécurité par vague. Les détails des vagues peuvent être modifiés jusqu’au lancement de chaque vague. Chaque vague peut durer au moins un jour (24 heures) et au maximum sept jours. Cela permet à SharePoint et à votre environnement technique d’insérabler et de s’adapter au grand volume d’utilisateurs du site. Lors de la planification d’un lancement via l’interface utilisateur, le fuseau horaire est basé sur les paramètres régionaux du site.
 
@@ -146,8 +146,8 @@ Si vous envisagez de lancer un portail avec plus de 100 000 utilisateurs, envoye
 Les détails du lancement peuvent être modifiés pour chaque vague jusqu’à la date de lancement de la vague.
 
 1. Pour modifier les détails du lancement du portail, **accédez à Paramètres** puis sélectionnez **Planifier le lancement du site.**
-2. Ensuite, sélectionnez **Modifier.**
-3. Lorsque vous avez terminé d’effectuer vos modifications, sélectionnez **Mettre à jour.**
+2. Ensuite, sélectionnez **Modifier**.
+3. Lorsque vous avez terminé vos modifications, sélectionnez **Mettre à jour.**
 
 ## <a name="delete-a-scheduled-portal-launch"></a>Supprimer un lancement de portail programmé
 

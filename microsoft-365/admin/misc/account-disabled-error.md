@@ -1,5 +1,5 @@
 ---
-title: Vous recherchez une erreur de désactivation d’un compte dans Outlook sur le web ?
+title: Vous recherchez une erreur de désactivation d’un compte Outlook sur le web ?
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,8 +24,8 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914941"
 ---
-# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Erreur d’obtention d’un compte désactivé dans Outlook sur le web
+# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Erreur d’obtention d’un compte désactivé Outlook sur le web
 
-Si vous obtenez  l’erreur Avec qui votre compte a été désactivé lorsque vous essayez d’ouvrir Outlook sur le web (anciennement Outlook Web App), votre administrateur a peut-être désactivé votre accès à `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` Outlook sur le web.
+Si vous obtenez  l’erreur Avec qui votre compte a été désactivé lorsque vous essayez d’ouvrir Outlook sur le web (anciennement Outlook Web App), il se peut que votre administrateur ait désactivé votre accès à Outlook sur le `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` web.
 
-Votre administrateur peut corriger cette erreur en suivant les étapes de la rubrique Activer ou désactiver [Outlook Web App pour une boîte aux lettres.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
+Votre administrateur peut corriger cette erreur en suivant les étapes de la rubrique Activer ou désactiver Outlook [Web App pour une boîte aux lettres.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)

@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 pour les entreprises.
+description: Découvrez comment migrer le courrier électronique, les contacts et le calendrier de Google Workspace vers Microsoft 365 entreprise.
 ms.openlocfilehash: d6639032b379a2cd632b6ab6ee7e4082b1e7be0b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -77,7 +77,7 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
  
 1. Choose **Authorize**. 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Créer un sous-domaine pour le courrier électronique envoyé à Microsoft 365
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Créer un sous-domaine pour les messages envoyés Microsoft 365
 
 1. Revenir à la console **d’administration Google Workspace.**
 1. Select **Domains**, **Manage domains**, then, **Add a domain alias**. 
@@ -87,19 +87,19 @@ Le processus de migration prend plusieurs étapes et peut prendre de plusieurs h
     La vérification de domaine ne prend généralement que quelques minutes, mais elle peut prendre jusqu’à 48 heures.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
-1. Dans le **Centre d’administration Microsoft 365,** dans le navigation de gauche, sélectionnez Afficher **tout,** **Paramètres,** **Domaines,** puis Ajouter **un domaine.** 
+1. Dans le **Microsoft 365 d’administration,** dans le navigation gauche, sélectionnez Afficher **tout, Paramètres,** **Domaines,** puis Ajouter **un domaine.** 
 1. Entrez le sous-domaine que vous avez créé précédemment, puis **sélectionnez Utiliser ce domaine.** 
 1. Pour connecter le domaine, sélectionnez **Continuer.** 
 1. Faites défiler vers le bas et prenez note des enregistrements MX, CNAME et TXT. 
 1. Revenir à la **console d’administration Google.**
 1. Select **Domains**, select **Manage domains**, **Verify Details** and then, **Manage domain**. 
-1. Dans le navigation de gauche, choisissez **DNS et** faites défiler vers le bas **jusqu’aux enregistrements de ressource personnalisés.** 
+1. Dans le navigation de gauche, choisissez **DNS et** faites défiler vers le bas **jusqu’aux enregistrements de ressources personnalisés.** 
 1. Ouvrez la dropdown du type d’enregistrement et sélectionnez **MX,** entrez ou copiez-collez les informations d’enregistrement MX que vous avez précédemment notées, puis choisissez **Ajouter**. 
 1. Répétez le processus pour l’enregistrement CNAME et l’enregistrement TXT. 
 
     L’application de ces modifications peut prendre un certain temps.  
 
-1. Revenir à l’endroit où vous vous êtes laissé dans le Centre d’administration **Microsoft 365,** puis sélectionnez **Continuer**. 
+1. Revenir à l’endroit où vous vous êtes laissé **dans Microsoft 365 centre d’administration,** puis sélectionnez **Continuer**. 
 
 Votre domaine est maintenant installé.  
 
@@ -107,7 +107,7 @@ Votre domaine est maintenant installé.
 
 Avant de commencer la migration, vous devez créer des alias de messagerie pour vos utilisateurs avec le nouveau sous-domaine. 
 
-1. Pour commencer l’étape  suivante, dans l’Assistant Ajouter des domaines dans le Centre d’administration Microsoft 365, sélectionnez Go **to Active users**. 
+1. Pour commencer l’étape  suivante, dans l’Assistant Ajouter des domaines dans le centre Microsoft 365'administration, sélectionnez Go **to Active users**. 
 1. Sélectionnez un utilisateur, puis **gérez le nom d’utilisateur et le courrier électronique.** 
 1. Dans ladown **Domains (Domaines),** sélectionnez le sous-domaine que vous avez précédemment créé. 
 1. Entrez un nom d’utilisateur, **sélectionnez Ajouter,** **Enregistrer les modifications** et fermer la fenêtre. 
@@ -118,8 +118,8 @@ Avant de commencer la migration, vous devez créer des alias de messagerie pour 
 
 Une fois que vous avez terminé, vous êtes prêt à migrer. 
 
-1. Dans le navigation gauche du Centre d’administration **Microsoft 365,** faites défiler vers le bas jusqu’aux centres d’administration, puis sélectionnez **Exchange.** 
-1. Sous **les destinataires**, choisissez **la migration,** sélectionnez **Nouveau**, Migrer vers **Exchange Online,** choisir **la migration G Suite,** puis **Suivant**. 
+1. Dans le navigation gauche du centre **d’administration Microsoft 365,** faites défiler vers le bas jusqu’aux centres d’administration, puis sélectionnez **Exchange**. 
+1. Sous **les destinataires**, choisissez **la migration,** sélectionnez **Nouveau,** **Migrer vers Exchange Online,** choisissez **Migration G Suite,** puis **Suivant**. 
 1. Créez un fichier CSV avec une liste des boîtes aux lettres que vous souhaitez migrer. Assurez-vous que le fichier suit ce format : 
 
     ```CSV
@@ -132,7 +132,7 @@ Une fois que vous avez terminé, vous êtes prêt à migrer.
 
 1. Sélectionnez **Choisir** un fichier, accédez au fichier CSV, choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
 1. Vérifiez l’adresse de messagerie de l’administrateur que vous souhaitez utiliser pour le test. 
-1. Sélectionnez **Choisir** un fichier, accédez au fichier JSON que vous avez créé précédemment (généralement dans le dossier Téléchargements de votre ordinateur), choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
+1. Sélectionnez **Choisir** un fichier, accédez au fichier JSON que vous avez créé précédemment (généralement dans le dossier Téléchargements sur votre ordinateur), choisissez-le, sélectionnez **Ouvrir,** puis **Suivant**. 
 1. Entrez un nom dans le **champ Nouveau nom de lot de migration.**
 1. Entrez le sous-domaine que vous avez créé dans le champ de domaine de **remise** cible, sélectionnez **Suivant,** puis **Nouveau**. 
 1. Une fois les informations enregistrées, sélectionnez **OK.** 

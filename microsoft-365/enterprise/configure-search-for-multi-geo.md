@@ -44,7 +44,7 @@ Dès que l’environnement Multi-Géo est configuré, les utilisateurs qui effec
 
 Dès que l’environnement Multi-Géo est configuré, les utilisateurs qui effectuent des recherches dans Delve obtiennent des résultats de tous les emplacements géographiques.
 
-Le flux Delve et la fiche de profil n’affichent que les aperçus de fichiers stockés dans l’emplacement central. Pour les fichiers stockés dans des emplacements satellites, l’icône du type de fichier apparaît à la place.
+Le flux Delve et la carte de visite affichent uniquement les aperçus des fichiers qui sont stockés dans l’emplacement central. Pour les fichiers stockés dans des emplacements satellites, l’icône du type de fichier apparaît à la place.
 
 ### <a name="the-sharepoint-home-page"></a>Page d’accueil SharePoint
 
@@ -131,7 +131,7 @@ Certaines fonctionnalités de recherche auxquelles vous êtes habitué ne sont p
 
 Tous les clients de recherche utilisent les API REST de recherche SharePoint existantes pour interagir avec les index de recherche.
 
-![Diagramme montrant comment les API REST de recherche SharePoint interagissent avec les index de recherche](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramme montrant comment SharePoint API REST de recherche interagissent avec les index de recherche](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un client de recherche appelle le point de terminaison REST de recherche avec la propriété de requête EnableMultiGeoSearch= true.
 2. La requête est envoyée à tous les emplacements géographiques dans le client.
@@ -168,7 +168,7 @@ Chaque centre de recherche possède plusieurs secteurs verticaux et vous devez c
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Configurer des applications de recherche personnalisée pour qu’elles affichent les résultats de l’ensemble ou d’une partie des emplacements géographiques
 
-Les applications de recherche personnalisées obtiennent des résultats de tous les emplacements géographiques, ou certains, en spécifiant des paramètres de requête avec la demande à l’API REST de recherche SharePoint. Selon les paramètres de requête, la requête est fannée à tous les emplacements géographiques ou à certains emplacements géographiques. Par exemple, si vous n’avez besoin d’interroger qu’un sous-ensemble d’emplacements géographiques pour trouver des informations pertinentes, vous pouvez contrôler l’éventail vers ces emplacements uniquement. Si la demande réussit, l’API REST de recherche SharePoint renvoie les données de réponse.
+Les applications de recherche personnalisée obtiennent les résultats de l’ensemble (ou d’une partie) des emplacements géographiques en spécifiant des paramètres de requête avec la demande à l’API REST de recherche SharePoint. Selon les paramètres, la requête est distribuée à tous les emplacements géographiques ou à certains emplacements géographiques. Par exemple, si vous devez seulement interroger un sous-ensemble des emplacements géographiques pour rechercher des informations pertinentes, vous pouvez contrôler la distribution ramifiée à ces derniers uniquement. Si la demande fonctionne, l’API REST de recherche SharePoint renvoie des données de réponse.
 
 ### <a name="requirement"></a>Conditions requises
 

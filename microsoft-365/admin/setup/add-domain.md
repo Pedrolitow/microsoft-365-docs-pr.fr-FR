@@ -1,5 +1,5 @@
 ---
-title: Ajouter un domaine à Microsoft 365
+title: Ajouter un domaine à Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -33,7 +33,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52635677"
 ---
-# <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
+# <a name="add-a-domain-to-microsoft-365"></a>Ajouter un domaine à Microsoft 365
 
  **[Consultez les Forums aux questions sur les domaines](domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
@@ -68,14 +68,14 @@ Suivez ces étapes pour ajouter, configurer ou poursuivre la configuration d’u
     
 5. Choisissez la façon dont vous souhaitez vérifier que vous êtes propriétaire du domaine.
     
-    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365), [Microsoft](../get-help-with-domains/domain-connect.md) configurera automatiquement vos enregistrements en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous serez renvoyé au Centre d’administration et Microsoft vérifiera ensuite automatiquement votre domaine.
+    1. Si votre bureau d’enregistrement de domaines utilise [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365), [Microsoft](../get-help-with-domains/domain-connect.md) configurera automatiquement vos enregistrements en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365. Vous êtes renvoyé au Centre d’administration et Microsoft vérifie automatiquement votre domaine.
     2. Vous pouvez utiliser un enregistrement TXT pour vérifier votre domaine. Sélectionnez ceci et **sélectionnez Suivant** pour voir les instructions d’ajout de cet enregistrement DNS au site web de votre bureau d’enregistrement. La vérification peut prendre jusqu’à 30 minutes après l’ajout de l’enregistrement. 
     3. Vous pouvez ajouter un fichier texte au site web de votre domaine. Sélectionnez et téléchargez le .txt à partir de l’Assistant Installation, puis téléchargez le fichier dans le dossier de niveau supérieur de votre site web. Le chemin d’accès au fichier doit ressembler à : `http://mydomain.com/ms39978200.txt` . Nous vous confirmerons que vous êtes propriétaire du domaine en trouvant le fichier sur votre site web.
     
 6. Choisissez la façon dont vous souhaitez apporter les modifications DNS requises pour que Microsoft utilise votre domaine.
     
     1. Choisissez Ajouter les enregistrements **DNS** pour moi si votre bureau d’enregistrement prend en charge [domain Connecter](#domain-connect-registrars-integrating-with-microsoft-365)et [Microsoft](../get-help-with-domains/domain-connect.md) configurera vos enregistrements automatiquement en vous connectant à votre bureau d’enregistrement et en confirmant la connexion à Microsoft 365.
-    2. Choisissez **J’ajouterai** les enregistrements DNS moi-même si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette étape pour le moment et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
+    2. Choisissez **J’ajouterai** les enregistrements DNS moi-même si vous souhaitez joindre uniquement des services Microsoft 365 spécifiques à votre domaine ou si vous souhaitez ignorer cette étape pour l’instant et le faire ultérieurement. **Choisissez cette option si vous savez exactement ce que vous faites.**
 
 7. Si vous avez choisi d’ajouter vous-même des enregistrements *DNS,*  sélectionnez **Suivant** et vous verrez une page avec tous les enregistrements que vous devez ajouter à votre site web de bureau d’enregistrement pour configurer votre domaine. 
 
@@ -99,7 +99,7 @@ Suivez les étapes ci-dessous pour ajouter un enregistrement personnalisé pour 
 
 3. Dans la page **Domaines**, sélectionnez un domaine. 
     
-4. Sous **paramètres DNS**, sélectionnez **Enregistrements personnalisés**; puis **sélectionnez Nouvel enregistrement personnalisé.**
+4. Sous **paramètres DNS,** sélectionnez **Enregistrements personnalisés**; puis **sélectionnez Nouvel enregistrement personnalisé.**
 
 5. Sélectionnez le type d’enregistrement DNS à ajouter et tapez les informations du nouvel enregistrement.
     
@@ -124,7 +124,7 @@ Dans l’Assistant, nous allons simplement confirmer que vous êtes propriétair
 - [Iquésk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer ou WildWestDomains (revendeurs GoDaddy utilisant l’hébergement DNS SecureServer)
-    - Exemples :
+    - Exemples :
         - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
         - [DomainRightNow](https://www.domainrightnow.com/)
 
@@ -136,7 +136,7 @@ Si vous avez un site web que vous utilisez dans le cadre de votre activité, il 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Forum aux questions sur les domaines](domains-faq.yml) (article)\
+[FAQ sur les domaines](domains-faq.yml) (article)\
 [Qu’est-ce qu’un domaine ?](../get-help-with-domains/what-is-a-domain.md) (article)\
 [Acheter un nom de domaine dans Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
 [Configurer votre domaine](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (article)

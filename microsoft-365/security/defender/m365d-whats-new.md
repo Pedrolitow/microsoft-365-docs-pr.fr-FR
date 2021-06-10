@@ -33,7 +33,7 @@ ms.locfileid: "51064702"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 

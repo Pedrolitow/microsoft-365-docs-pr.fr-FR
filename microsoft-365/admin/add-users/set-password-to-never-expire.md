@@ -1,5 +1,5 @@
 ---
-title: Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais
+title: Configurer les mots de passe utilisateur pour qu'ils n'expirent jamais
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Connectez-vous à votre compte Microsoft 365 administrateur pour définir certains mots de passe utilisateur individuels de sorte qu’ils n’expirent jamais à l’aide Windows PowerShell.
+description: Connectez-vous à votre compte d Microsoft 365 pour définir certains mots de passe utilisateur individuels de sorte qu’ils n’expirent jamais à l’aide Windows PowerShell.
 ms.openlocfilehash: 12c717d8d625b0135f185b1af131db00e9762c73
 ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
@@ -29,13 +29,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52635557"
 ---
-# <a name="set-an-individual-users-password-to-never-expire"></a>Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais
+# <a name="set-an-individual-users-password-to-never-expire"></a>Configurer les mots de passe utilisateur pour qu'ils n'expirent jamais
 
 Cet article explique comment définir un mot de passe pour qu’un utilisateur individuel n’expire pas. Vous devez effectuer ces étapes à l’aide de PowerShell.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md) 
+Cet article s’adresse aux personnes responsables de la stratégie d’expiration des mots de passe au sein d’une entreprise, d’une école ou d’une association. Pour effectuer ces étapes, vous devez vous connecter avec votre compte d’administrateur Microsoft 365. [Qu’est-ce qu’un compte d’administrateur ?](../../business-video/admin-center-overview.md) 
 
 Vous devez être administrateur général ou administrateur de [mot de](about-admin-roles.md) passe pour effectuer ces étapes.
 
@@ -60,7 +60,7 @@ Exécutez une des commandes suivantes :
     }
     ```
 
-    Exemple :
+    Exemple :
 
     ```powershell
     Get-AzureADUser -ObjectId userUPN@contoso.com | Select-Object UserprincipalName,@{
@@ -84,7 +84,7 @@ Exécutez une des commandes suivantes :
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le **nomReportPasswordNeverExpires.csv**
+- Pour obtenir un rapport de tous les utilisateurs avec PasswordNeverExpires dans CSV sur le bureau de l’utilisateur actuel avec le nom **ReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -114,7 +114,7 @@ Run one of the following commands:
 
 Exécutez une des commandes suivantes :
 
-- Pour définir le mot de passe d’un utilisateur afin qu’il expire, exécutez l’cmdlet suivante à l’aide de l’UPN ou de l’ID utilisateur de l’utilisateur :
+- Pour définir le mot de passe d’un utilisateur afin qu’il expire, exécutez la cmdlet suivante à l’aide de l’UPN ou de l’ID utilisateur de l’utilisateur :
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
@@ -126,8 +126,8 @@ Exécutez une des commandes suivantes :
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
-[Laisser les utilisateurs réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
-[Réinitialiser les mots](../add-users/reset-passwords.md) de passe (article)\
+[Autoriser les utilisateurs à réinitialiser leur mot de passe](../add-users/let-users-reset-passwords.md) (article)\
+[Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)\
 [Définir la stratégie d’expiration de mot de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)

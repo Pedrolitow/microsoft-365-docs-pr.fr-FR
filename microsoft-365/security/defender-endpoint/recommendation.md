@@ -61,8 +61,8 @@ recommendedVersion | String | Version recommandée
 recommendationCategory | String | Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityStack »
 sous-catégorie | String | Sous-catégorie de recommandation
 severityScore | Double | Impact potentiel de la configuration sur le Score de sécurité Microsoft pour les appareils de l’organisation (1-10)
-publicExploit | Boolean | Une exploitation publique est disponible 
-activeAlert | Boolean | L’alerte active est associée à cette recommandation
+publicExploit | Booléen | Une exploitation publique est disponible 
+activeAlert | Booléen | L’alerte active est associée à cette recommandation
 associatedThreats | String collection | Le rapport d’analyse des menaces est associé à cette recommandation
 remediationType | String | Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »
 Statut | Énum | État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »

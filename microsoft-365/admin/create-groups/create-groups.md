@@ -48,7 +48,7 @@ Bien que les utilisateurs peuvent créer un groupe Microsoft 365 à partir de Ou
     
 5. Dans la page Modifier les **paramètres,** tapez une adresse e-mail unique pour le groupe, choisissez une option de confidentialité et si vous souhaitez ajouter Microsoft Teams, puis sélectionnez **Suivant**.
     
-6. Sur les **propriétaires,** choisissez le nom d’une ou de plusieurs personnes qui seront désignées pour gérer le groupe. Toute personne qui est un propriétaire de groupe peut supprimer un courrier de la boîte aux lettres du groupe. Les autres membres ne peuvent pas supprimer de courrier de la boîte aux lettres du groupe. Sélectionnez **Suivant**.
+6. Sur les **propriétaires,** choisissez le nom d’une ou plusieurs personnes qui seront désignées pour gérer le groupe. Toute personne qui est un propriétaire de groupe peut supprimer un courrier de la boîte aux lettres du groupe. Les autres membres ne peuvent pas supprimer de courrier de la boîte aux lettres du groupe. Sélectionnez **Suivant**.
     
 7. Après avoir passé en revue vos paramètres et apporté des modifications, **sélectionnez Créer un groupe.**
 
@@ -80,12 +80,12 @@ Un membre peut supprimer une conversation par courrier électronique de la boît
   
 Lorsqu’un message électronique est supprimé de la boîte aux lettres de groupe, il n’est supprimé d’aucune des boîtes aux lettres personnelles des membres du groupe.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
-Après avoir créé un groupe et ajouté des membres, vous pouvez configurer davantage votre groupe, par exemple en modifiant le nom ou la description du groupe, en modifiant les propriétaires ou les membres, et en spécifiant si les expéditeurs externes peuvent envoyer par e-mail le groupe et s’il faut envoyer des copies des conversations de groupe aux membres. Pour [plus d’informations, voir Microsoft 365 groupe](manage-groups.md) de gestion.
+Après avoir créé un groupe et ajouté des membres, vous pouvez configurer davantage votre groupe, par exemple en modifiant le nom ou la description du groupe, en modifiant les propriétaires ou les membres, et en spécifiant si les expéditeurs externes peuvent envoyer des messages électroniques au groupe et s’il faut envoyer des copies des conversations de groupe aux membres. Pour [plus d’informations, voir Microsoft 365 groupe](manage-groups.md) de gestion.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Gérer l’accès invité Microsoft 365 groupes de travail](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)\
+[Gérer l’accès invité Microsoft 365 groupes de gestion](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (article)\
 [Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md) (article)\
-[Mettre à niveau les listes](../manage/upgrade-distribution-lists.md) de distribution Microsoft 365 groupes de distribution (article)
+[Mettre à niveau les listes de distribution Microsoft 365 groupes de distribution](../manage/upgrade-distribution-lists.md) (article)

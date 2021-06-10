@@ -1,5 +1,5 @@
 ---
-title: Gérer les fonctionnalités de détection et de réponse des points de terminaison
+title: Gérer protection évolutive des points de terminaison fonctionnalités
 ms.reviewer: ''
 description: ''
 keywords: ''
@@ -25,7 +25,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064974"
 ---
-# <a name="manage-endpoint-detection-and-response-capabilities"></a>Gérer les fonctionnalités de détection et de réponse des points de terminaison
+# <a name="manage-endpoint-detection-and-response-capabilities"></a>Gérer protection évolutive des points de terminaison fonctionnalités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ Gérez la file d’attente des alertes, examinez les appareils de la liste des a
 ## <a name="in-this-section"></a>Dans cette section
 Rubrique | Description 
 :---|:---
-[File d’attente des alertes](alerts-queue-endpoint-detection-response.md)| Affichez les alertes surfacen dans le Centre de sécurité Microsoft Defender.
+[File d’attente des alertes](alerts-queue-endpoint-detection-response.md)| Afficher les alertes surface dans Centre de sécurité Microsoft Defender.
 [Liste des appareils](machines-view-overview.md) | Découvrez comment afficher et gérer la liste des appareils, gérer les groupes d’appareils et examiner les alertes liées aux appareils. 
 [Prendre des mesures de réponse](respond-machine-alerts.md)| Prendre des mesures de réponse sur les appareils et les fichiers pour répondre rapidement aux attaques détectées et contenir des menaces.
 [Données de requête à l’aide de la recherche avancée](advanced-hunting-query-language.md)| Recherchez de manière proactive les menaces potentielles au sein de votre organisation à l’aide d’un outil de recherche et de requête puissant.
