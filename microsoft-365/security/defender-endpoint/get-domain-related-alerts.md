@@ -42,7 +42,7 @@ ms.locfileid: "52772256"
 Récupère une collection d’alertes [liées](alerts.md) à une adresse de domaine donnée.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -71,7 +71,7 @@ GET /api/domains/{domain}/alerts
 
 | En-tête        | Valeur  |
 |:--------------|:-------|
-| Authorization | String |
+| Autorisation | String |
 
 ## <a name="request-body"></a>Corps de la demande
 Vide

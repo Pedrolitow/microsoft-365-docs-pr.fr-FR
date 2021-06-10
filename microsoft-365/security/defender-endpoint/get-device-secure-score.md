@@ -40,7 +40,7 @@ ms.locfileid: "52772304"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Récupère votre [score de sécurité Microsoft pour les appareils.](tvm-microsoft-secure-score-devices.md) Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. 
+Récupère votre score [de sécurité Microsoft pour les appareils.](tvm-microsoft-secure-score-devices.md) Un niveau de sécurité Microsoft plus élevé pour les appareils signifie que vos points de terminaison sont plus résistants aux attaques contre les menaces de cybersécurité. 
 
 ## <a name="permissions"></a>Autorisations
 

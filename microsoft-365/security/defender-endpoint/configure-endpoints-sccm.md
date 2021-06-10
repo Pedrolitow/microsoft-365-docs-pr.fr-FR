@@ -73,13 +73,13 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 1. Ouvrez le fichier de package de configuration Configuration Manager .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
 
-    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration.**
+    1. Dans le volet de navigation, sélectionnez  >  **Paramètres’intégration.**
     
     1. Sélectionnez Windows 10 comme système d’exploitation.
 
     1. Dans le champ Méthode **de** déploiement, **sélectionnez System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    1. Sélectionnez **le package** de téléchargement, puis enregistrez .zip fichier.
+    1. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
 
 2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -177,7 +177,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fichier [de configuration deboarding.](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage utilisant System Center Configuration Manager 2012 R2
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
 
 1. Obtenez le package deboarding à partir [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
 
@@ -187,7 +187,7 @@ Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fic
 
     1. Dans le champ Méthode **de** déploiement, **sélectionnez System Center Configuration Manager 2012/2012 R2/1511/1602**.
     
-    1. Sélectionnez **le package** de téléchargement, puis enregistrez .zip fichier.
+    1. Sélectionnez **le package** de téléchargement et enregistrez .zip fichier.
 
 2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les administrateurs réseau qui déploieront le package. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -205,7 +205,7 @@ Si vous utilisez la Microsoft Endpoint Manager actuelle, utilisez le tableau de 
 
 Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
 
-1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
+1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou qu’il s’est correctement exécuté) sur les appareils de votre réseau.
 
 2. Vérification de la conformité des appareils avec le service Defender for Endpoint (cela garantit que l’appareil peut terminer le processus d’intégration et continuer à signaler des données au service).
 
@@ -219,7 +219,7 @@ Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se
 
 4. Examinez les indicateurs d’état sous **Statistiques d’achèvement** et **État du contenu.**
 
-    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](troubleshoot-onboarding.md)
+    En cas d’échec des déploiements (appareils avec **erreur,** conditions requises non remplies ou états d’échec), vous devrez peut-être résoudre les problèmes des appareils. Pour plus d’informations, voir résoudre les problèmes d’intégration de Microsoft Defender pour les [points de terminaison.](troubleshoot-onboarding.md)
 
     ![Configuration Manager affichant un déploiement réussi sans erreur](images/sccm-deployment.png)
 

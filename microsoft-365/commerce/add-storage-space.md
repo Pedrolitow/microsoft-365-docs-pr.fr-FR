@@ -20,7 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: Ajoutez le stockage de fichiers dans Microsoft 365 abonnement. Avec le stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
+description: Ajoutez le stockage de fichiers dans Microsoft 365 abonnement. Avec un stockage de fichiers supplémentaire, vous pouvez stocker davantage de contenu dans SharePoint Online et OneDrive.
 ms.date: 04/02/2021
 ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
 ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
@@ -34,7 +34,7 @@ ms.locfileid: "52635857"
 Si vous commencez à manquer d’espace de stockage pour vos collections de sites SharePoint Online et si votre plan est éligible, vous pouvez en ajouter à votre abonnement.  Si vous ne voyez  pas le Stockage de fichiers supplémentaire Office 365 dans la liste des modules add-on disponibles, cela signifie que votre plan n’est pas éligible. Pour plus d’informations, voir [Mon plan est-il éligible ?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Si vous avez acheté votre abonnement par le biais de  licences en volume ou d’un programme CSP, vous ne pouvez pas acheter Stockage de fichiers supplémentaire Office 365 pour votre organisation directement auprès de Microsoft. Contactez votre représentant ou partenaire pour obtenir de l’aide.
+> Si vous avez acheté votre abonnement par le biais de licences en volume ou d’un programme CSP, vous ne pouvez pas acheter **Stockage de fichiers supplémentaire Office 365** pour votre organisation directement auprès de Microsoft. Contactez votre représentant ou partenaire pour obtenir de l’aide.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -96,7 +96,7 @@ Le stockage de fichiers supplémentaire Office 365 est accessible aux abonnement
 - Microsoft 365 Business Premium
 - Microsoft 365 E3
 - Microsoft 365 E5
-- Microsoft 365 F1
+- Microsoft 365 F1
 
 > [!NOTE]
 > Stockage de fichiers supplémentaire Office 365 est également disponible pour les plans Cloud de la communauté du secteur public, Cloud de la communauté du secteur public élevé et DOD.

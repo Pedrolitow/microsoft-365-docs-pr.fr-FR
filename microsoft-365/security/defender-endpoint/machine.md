@@ -44,7 +44,7 @@ ms.locfileid: "52772076"
 Méthode|Type renvoyé |Description
 :---|:---|:---
 [Répertorier les ordinateurs](get-machines.md) | [collection d’ordinateurs](machine.md) | Liste des [ensembles d’entités](machine.md) d’ordinateur dans l’organisation.
-[Obtenir un ordinateur](get-machine-by-id.md) | [ordinateur](machine.md) | Obtenir un [ordinateur par](machine.md) son identité.
+[Obtenir un ordinateur](get-machine-by-id.md) | [ordinateur](machine.md) | Obtenez un [ordinateur par](machine.md) son identité.
 [Obtenir des utilisateurs connectés](get-machine-log-on-users.md) | Collection d’[utilisateurs](user.md) | Obtenez l’ensemble [de l’utilisateur](user.md) qui s’est connecté à l’ordinateur. [](machine.md)
 [Obtenir les alertes associées](get-machine-related-alerts.md) | collection[alert](alerts.md) | Obtenir [l’ensemble](alerts.md) des entités d’alerte qui ont été élevés sur l’ordinateur . [](machine.md)
 [Obtenir les logiciels installés](get-installed-software.md) | [collection de](software.md) logiciels | Extrait une collection de logiciels installés liés à un ID d’ordinateur donné.

@@ -44,7 +44,7 @@ ms.locfileid: "52772340"
 Récupère [l’appareil](machine.md) associé à une alerte spécifique.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
@@ -62,7 +62,7 @@ Déléguée (compte professionnel ou scolaire) | Machine.ReadWrite | « Lire et 
 >[!Note]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
->- L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+>- L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 

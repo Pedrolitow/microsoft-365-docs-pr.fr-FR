@@ -33,7 +33,7 @@ ms.locfileid: "51933180"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
@@ -46,7 +46,7 @@ Cette fonction renvoie un tableau avec les colonnes suivantes :
 | Column | Type de données | Description |
 |------------|-------------|-------------|
 | `IP` | string | Adresse IP  |
-| `DeviceId` | string | Identificateur unique de l'appareil dans le service |
+| `DeviceId` | string | Identificateur unique de l’appareil dans le service |
 
 
 ## <a name="syntax"></a>Syntaxe
@@ -57,10 +57,10 @@ invoke DeviceFromIP()
 
 ## <a name="arguments"></a>Arguments
 
-Cette fonction est invoquée dans le cadre d'une requête.
+Cette fonction est invoquée dans le cadre d’une requête.
 
-- **x**— Le premier paramètre est généralement déjà une colonne dans la requête. Dans ce cas, il s'agit de la colonne nommée , l'adresse IP pour laquelle vous souhaitez voir la liste des périphériques qui lui ont `IP` été affectés. Il doit s'agit d'une adresse IP locale. Les adresses IP externes ne sont pas pris en charge.
-- **y**— Un deuxième paramètre facultatif est le , qui indique à la fonction d'obtenir les appareils affectés les plus `Timestamp` récents à partir d'un moment spécifique. Si elle n'est pas spécifiée, la fonction renvoie les derniers enregistrements disponibles.
+- **x**— Le premier paramètre est généralement déjà une colonne dans la requête. Dans ce cas, il s’agit de la colonne nommée , l’adresse IP pour laquelle vous souhaitez voir la liste des appareils qui lui ont `IP` été affectés. Il doit s’agit d’une adresse IP locale. Les adresses IP externes ne sont pas pris en charge.
+- **y**— Un deuxième paramètre facultatif est le , qui indique à la fonction d’obtenir les appareils affectés les plus `Timestamp` récents à partir d’un moment spécifique. Si elle n’est pas spécifiée, la fonction renvoie les derniers enregistrements disponibles.
 
 ## <a name="example"></a>Exemple
 

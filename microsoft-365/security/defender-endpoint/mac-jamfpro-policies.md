@@ -32,13 +32,13 @@ ms.locfileid: "52842265"
 
 **S’applique à :**
 
-- [Defender pour le point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
+- [Defender pour point de terminaison sur Mac](microsoft-defender-endpoint-mac.md)
 
 Cette page vous guide à travers les étapes à suivre pour configurer des stratégies macOS dans Jamf Pro.
 
 Vous devez suivre les étapes suivantes :
 
-1. [Obtenir le package d’intégration De Microsoft Defender pour point de terminaison](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
+1. [Obtenir le package d’intégration Microsoft Defender for Endpoint](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 
 2. [Créer un profil de configuration dans Jamf Pro à l’aide du package d’intégration](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
@@ -139,7 +139,7 @@ Vous devez suivre les étapes suivantes :
 
 ## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a>Étape 3 : Configurer Microsoft Defender pour les paramètres de point de terminaison
 
-1.  Utilisez les paramètres de configuration de Microsoft Defender pour les points de terminaison suivants :
+1.  Utilisez les paramètres de configuration microsoft Defender pour les points de terminaison suivants :
 
     - enableRealTimeProtection
     - passiveMode
@@ -273,7 +273,7 @@ Vous devez suivre les étapes suivantes :
 
 3.  Dans le tableau de bord Pro Jamf, sélectionnez **Général**.
 
-    ![Image du nouveau tableau de bord De Pro Jamf](images/644e0f3af40c29e80ca1443535b2fe32.png)
+    ![Image du nouveau tableau de bord jamf Pro tableau de bord](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
 4. Entrez les détails suivants :
 
@@ -295,7 +295,7 @@ Vous devez suivre les étapes suivantes :
 
     ![Image du fichier plist des paramètres de configuration](images/6f85269276b2278eca4bce84f935f87b.png)
 
-7. Dans **le domaine Préférences,** `com.microsoft.wdav` entrez, puis sélectionnez **Télécharger fichier PLIST.**
+7. In **Preferences Domain**, enter `com.microsoft.wdav` , then select Télécharger **PLIST File**.
 
     ![Image du domaine des préférences de paramètres de configuration](images/db15f147dd959e872a044184711d7d46.png)
 
@@ -504,7 +504,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
     ![Image du contrôle de stratégie de confidentialité de la configuration](images/715ae7ec8d6a262c489f94d14e1e51bb.png)
 
-5. Dans **Le contrôle de stratégie des préférences de confidentialité,** entrez les détails suivants :
+5. Dans **le contrôle de stratégie des préférences de confidentialité,** entrez les détails suivants :
 
     - Identificateur : `com.microsoft.wdav`
     - Type d’identificateur : ID d’offre groupée
@@ -555,7 +555,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
     ![Image de l’addimage du paramètre de configuration](images/57cef926d1b9260fb74a5f460cee887a.png)
 
-14. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** de groupe > sélectionnez Groupe MachineGroup de **Contoso.** 
+14. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** de > sélectionnez Groupe machine de **Contoso.** 
 
     ![Image du paramètre de configuration contoso machinegrp](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
@@ -610,7 +610,7 @@ Vous pouvez également télécharger [fulldisk.mobileconfig](https://github.com/
 
 6. Sélectionnez **+ Ajouter**.
 
-7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
+7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
 
 8. Sélectionnez **+ Ajouter**.
 
@@ -665,7 +665,7 @@ Vous pouvez également télécharger [kext.mobileconfig](https://github.com/micr
 
 6. Sélectionnez **+ Ajouter**.
 
-7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
+7. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
 
 8. Sélectionnez **+ Ajouter**.
 
@@ -715,7 +715,7 @@ Ces étapes s’appliquent à macOS 10.15 (Genre), ou une nouveauté.
 
 4. Sélectionnez **+ Ajouter**.
 
-5. Sélectionnez **Groupes d’ordinateurs** > **sous Nom** du > sélectionnez Groupe ordinateur de **Contoso.**
+5. Sélectionnez **Groupes d’ordinateurs** > **sous Nom du** > sélectionnez Groupe ordinateur de **Contoso.**
 
 6. Sélectionnez **+ Ajouter**.
 
@@ -738,7 +738,7 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Étape 11 : Déployer Microsoft Defender pour endpoint sur macOS
 
-1. Accédez à l’endroit où vous avez enregistré `wdav.pkg` .
+1. Accédez à l’endroit où vous avez `wdav.pkg` enregistré.
 
     ![Image de l’explorateur de fichiers wdav pkg](images/8dde76b5463047423f8637c86b05c29d.png)
 
@@ -778,7 +778,7 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
     **Onglet Limitations**<br> Conservez les valeurs par défaut.
     
-     ![Image de l’onglet Limitation des paramètres de configuration](images/56dac54634d13b2d3948ab50e8d3ef21.png)
+     ![Image de l’onglet limitation des paramètres de configuration](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
 8. Sélectionnez **Enregistrer**. Le package est téléchargé vers Jamf Pro. 
 
@@ -790,7 +790,7 @@ Suivez les instructions des [analyses de planification avec Microsoft Defender f
 
 9. Accédez à la page **Stratégies.**
 
-    ![Image des paramètres de configuration](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
+    ![Image des paramètres de configuration des locations](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
 
 10. Sélectionnez **+ Nouveau** pour créer une stratégie.
 

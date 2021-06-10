@@ -33,29 +33,29 @@ ms.locfileid: "51935496"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 
 
-Le tableau du schéma de recherche avancée contient des informations sur les pièces jointes sur les e-mails traitées par `EmailAttachmentInfo` Microsoft Defender pour Office 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur les pièces jointes sur les e-mails traitées par `EmailAttachmentInfo` Microsoft Defender Office 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `NetworkMessageId` | string | Identificateur unique de l'e-mail, généré par Microsoft 365 |
+| `NetworkMessageId` | string | Identificateur unique de l’e-mail, généré par Microsoft 365 |
 | `SenderFromAddress` | string | Adresse e-mail de l’expéditeur dans l’en-tête DE, visible par les destinataires de l’e-mail sur leurs clients de messagerie |
-| `SenderDisplayName` | string | Nom de l'expéditeur affiché dans le carnet d'adresses, généralement une combinaison d'un prénom ou d'un prénom donné, d'une initiale du deuxième prénom et d'un nom ou d'un nom de famille |
-| `SenderObjectId` | string | Identificateur unique du compte de l'expéditeur dans Azure AD |
+| `SenderDisplayName` | string | Nom de l’expéditeur affiché dans le carnet d’adresses, généralement une combinaison d’un prénom ou d’un prénom donné, d’une initiale du deuxième prénom et d’un nom ou d’un nom de famille |
+| `SenderObjectId` | string | Identificateur unique du compte de l’expéditeur dans Azure AD |
 | `RecipientEmailAddress` | string | Adresse e-mail du destinataire ou adresse e-mail du destinataire après extension de la liste de distribution |
 | `RecipientObjectId` | string | Identificateur unique du destinataire de courrier dans Azure AD |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
 | `FileType` | string | Type d’extension de fichier |
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
-| `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique selon que l'e-mail contient des programmes malveillants, du hameçonnage ou d'autres menaces |
+| `ThreatTypes` | string | Verdict de la pile de filtrage du courrier électronique selon que l’e-mail contient des programmes malveillants, du hameçonnage ou d’autres menaces |
 | `ThreatNames` | string | Nom de détection des programmes malveillants ou autres menaces détectées |
-| `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d'autres menaces détectées dans l'e-mail |
+| `DetectionMethods` | string | Méthodes utilisées pour détecter les programmes malveillants, le hameçonnage ou d’autres menaces détectées dans l’e-mail |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. |
 
 ## <a name="related-topics"></a>Voir aussi

@@ -39,7 +39,7 @@ ms.locfileid: "52842037"
 
 Vous pouvez afficher l’état de votre services Microsoft, notamment les services cloud Office sur le Web, Yammer, Microsoft Dynamics CRM et de gestion des appareils mobiles, sur la **page** État du service dans le Centre d’administration [Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pouvez utiliser la page état du [service](https://status.office365.com) pour vérifier si des problèmes connus vous empêchent de vous connecter à votre client.  Inscrivez-vous également pour nous suivre [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour voir des informations sur certains événements.
+Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pouvez utiliser la page état du [service](https://status.office365.com) pour vérifier les problèmes connus qui vous empêchent de vous connecter à votre client.  Inscrivez-vous également pour nous suivre [@MSFT365status](https://twitter.com/MSFT365Status) sur Twitter pour voir des informations sur certains événements.
 
 ## <a name="how-to-check-service-health"></a>Vérifier l’état du service
 
@@ -58,7 +58,7 @@ Si vous ne parvenez pas à vous connecter au Centre d’administration, vous pou
 
 **L’onglet Tous les services** (affichage par défaut) affiche tous les services et leur état d’état actuel. Une icône et la **colonne État** indiquent l’état de chaque service.
 
-Pour filtrer votre affichage sur les services qui rencontrent actuellement un incident, sélectionnez l’onglet **Incidents** en haut de la page. La sélection de **l’onglet Conseils** n’affiche que les services pour qui un avis est actuellement publié.
+Pour filtrer votre affichage sur les services qui rencontrent actuellement un incident, sélectionnez l’onglet **Incidents** en haut de la page. La sélection de **l’onglet Conseils** affiche uniquement les services pour qui un avis est actuellement publié.
 
 **L’onglet** Historique affiche l’historique des incidents et des avis qui ont été résolus.
 
@@ -133,11 +133,11 @@ La plupart du temps, les services apparaissent comme sains sans aucune informati
 |**Examen suspendu** | Cet état s'affiche si l'examen détaillé d'un problème potentiel implique plus d'informations de la part des clients afin de nous permettre de mieux l'étudier. Dans ce cas, nous vous indiquerons les données ou journaux dont nous avons besoin. |
 |**Service restauré** | L'action corrective a permis de résoudre le problème sous-jacent et le service a été restauré. Pour en savoir plus, consultez les détails relatifs au problème. |
 |**Faux positif** | Après un examen détaillé, nous avons confirmé que le service est sain et fonctionne comme prévu. Aucun impact sur le service n’a été observé ou la cause de l’incident provient de l’extérieur du service. |
-|**Rapport post-incident publié** | Nous avons publié un rapport post-incident pour un problème spécifique qui inclut des informations sur la cause première et les étapes suivantes pour garantir qu’un problème similaire ne se reproduise pas. |
+|**Rapport post-incident publié** | Nous avons publié un rapport post-incident pour un problème spécifique qui inclut des informations sur la cause première et les étapes suivantes pour vous assurer qu’un problème similaire ne se produit pas à nouveau. |
 
 ### <a name="history"></a>Historique
 
-L’état du service vous permet d’examiner l’état d’état actuel et d’afficher l’historique des avis et incidents de service qui ont affecté votre client au cours des 30 derniers jours. Pour afficher l’état d’état passé de tous les services, sélectionnez **Afficher l’historique** sur la page de détails du problème.
+L’état du service vous permet d’examiner l’état d’état actuel et d’afficher l’historique des avis et incidents de service qui ont affecté votre client au cours des 30 derniers jours. Pour afficher l’état d’état passé de tous les services, sélectionnez **Afficher l’historique** sur la page de détails des problèmes.
 
 ![Show link to health history](../media/service-health-view-history.png)
 
@@ -151,7 +151,7 @@ Pour plus d’informations sur notre engagement en matière de temps de fonction
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Rapports d’activité dans Microsoft 365'administration centrale](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Rapports d’activité dans le centre d Microsoft 365'administration de l’entreprise](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
 [Préférences du centre de messages](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)
 

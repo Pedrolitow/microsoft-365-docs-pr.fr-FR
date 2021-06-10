@@ -23,7 +23,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52772328"
 ---
-# <a name="get-alert-related-ips-information-api"></a>API Obtenir les informations sur les IPS associées aux alertes
+# <a name="get-alert-related-ips-information-api"></a>API Obtenir les informations sur les IPs associés à une alerte
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "52772328"
 Récupère toutes les IP associées à une alerte spécifique.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 

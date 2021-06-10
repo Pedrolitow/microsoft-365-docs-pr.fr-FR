@@ -28,13 +28,13 @@ ms.locfileid: "51165152"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Les indicateurs d’événements dans la chronologie de l’appareil Defender for Endpoint vous aident à filtrer et à organiser des événements spécifiques lorsque vous examinez des attaques potentielles.
 
-La chronologie de l’appareil Defender pour point de terminaison fournit une vue chronologique des événements et des alertes associées observés sur un appareil. Cette liste d’événements offre une visibilité totale sur les événements, fichiers et adresses IP observés sur l’appareil. La liste peut parfois être longue. Les indicateurs d’événement de chronologie de l’appareil vous aident à suivre les événements qui peuvent être liés. 
+La chronologie de l’appareil Defender pour point de terminaison fournit une vue chronologique des événements et des alertes associées observés sur un appareil. Cette liste d’événements offre une visibilité complète des événements, fichiers et adresses IP observés sur l’appareil. La liste peut parfois être longue. Les indicateurs d’événement de chronologie de l’appareil vous aident à suivre les événements qui peuvent être liés. 
 
 Une fois la chronologie de l’appareil passée, vous pouvez trier, filtrer et exporter les événements spécifiques que vous avez signalés.
 
@@ -42,7 +42,7 @@ Lors de la navigation dans la chronologie de l’appareil, vous pouvez recherche
 
 - Mise en surbrillance des événements les plus importants 
 - Marquage d’événements nécessitant une profondeur 
-- Création d’une nouvelle chronologie des violations
+- Création d’une nouvelle chronologie de violation
 
 
 

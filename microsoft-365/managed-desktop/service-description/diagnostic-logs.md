@@ -18,19 +18,19 @@ ms.locfileid: "52272890"
 ---
 # <a name="diagnostic-logs"></a>Journaux de diagnostic
 
-Lorsque nous dépannageons un problème sur un appareil géré par Bureau géré Microsoft, qu’il s’en soit un que vous avez signalé ou identifié par notre service, il se peut que nous deions collecter certains journaux de diagnostic à partir de l’appareil sans l’intervention de l’utilisateur. Nous ne collectons pas de contenu ou d’informations générés par l’utilisateur à partir des annuaires d’utilisateurs. Nous collectons uniquement les données de diagnostic et de journal qui concernent l’état et l’état de l’appareil.
+Lorsque nous dépannageons un problème sur un appareil géré par Bureau géré Microsoft, qu’il s’agit d’un problème que vous avez signalé ou identifié par notre service, il se peut que nous deions collecter certains journaux de diagnostic à partir de l’appareil sans l’intervention de l’utilisateur. Nous ne collectons pas de contenu ou d’informations générés par l’utilisateur à partir des annuaires d’utilisateurs. Nous collectons uniquement les données de diagnostic et de journal qui concernent l’état et l’état de l’appareil.
 
 Nous stockons tous les journaux collectés pendant 28 jours, puis les supprimons. Nous traiterons tous les journaux collectés à partir d’un appareil en suivant nos normes [de gestion des données.](privacy-personal-data.md)
 
 ## <a name="data-collected"></a>Données collectées
 
-Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécutables ou emplacements de Registre à partir Bureau géré Microsoft des journaux de diagnostic. Les données réelles collectées sont un sous-ensemble de cette liste et dépendent du problème identifié.
+Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécutables ou emplacements de Registre à partir Bureau géré Microsoft journaux de diagnostic. Les données réelles collectées sont un sous-ensemble de cette liste et dépendent du problème identifié.
 
 ### <a name="registry-keys"></a>Clés du Registre
 
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Services
 - HKLM \\ SOFTWARE \\ Microsoft \\ Surface
-- Stratégies logicielles HKLM \\ \\ microsoft Windows \\ \\ \\ WindowsUpdate
+- Stratégies \\ \\ logicielles \\ HKLM \\ microsoft Windows \\ WindowsUpdate
 - HKLM \\ SYSTEM \\ CurrentControlSet \\ Control \\ MUI \\ UILanguages
 - Stratégies logicielles HKLM \\ \\ Microsoft \\ \\ WindowsStore
 - HKLM \\ Software Microsoft Windows \\ \\ \\ CurrentVersion \\ WindowsStore \\ WindowsUpdate
@@ -89,7 +89,7 @@ Cette liste inclut tous les dossiers, journaux d’événements, fichiers exécu
     - Get-Process
     - Get-WmiObject Win32 \_ PnPSignedDriver
 
-### <a name="event-logs"></a>Journaux des événements
+### <a name="event-logs"></a>Journaux d’événements
 
 - Application
 - Microsoft-Windows-AppLocker/EXE et DLL

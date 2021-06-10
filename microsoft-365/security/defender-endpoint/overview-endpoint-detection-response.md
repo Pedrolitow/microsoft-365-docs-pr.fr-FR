@@ -1,8 +1,8 @@
 ---
-title: Vue d'ensemble des fonctionnalités de détection et de réponse des points de terminaison
+title: Vue d’ensemble protection évolutive des points de terminaison fonctionnalités de gestion
 ms.reviewer: ''
-description: En savoir plus sur les fonctionnalités de détection et de réponse des points de terminaison dans Microsoft Defender pour point de terminaison
-keywords: Microsoft Defender pour le point de terminaison, détection et réponse des points de terminaison, réponse, détection, cybersécurité, protection
+description: En savoir plus sur protection évolutive des points de terminaison fonctionnalités de microsoft Defender pour le point de terminaison
+keywords: Microsoft Defender pour le point de terminaison, protection évolutive des points de terminaison, réponse, détection, cybersécurité, protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -24,18 +24,18 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933516"
 ---
-# <a name="overview-of-endpoint-detection-and-response"></a>Vue d'ensemble de la détection et de la réponse des points de terminaison
+# <a name="overview-of-endpoint-detection-and-response"></a>Vue d’ensemble protection évolutive des points de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Les fonctionnalités de détection et de réponse des points de terminaison Defender for Endpoint fournissent des détections d'attaques avancées quasiment en temps réel et actionnables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces.
+Les fonctionnalités de protection évolutive des points de terminaison de Defender for Endpoint fournissent des détections d’attaques avancées quasiment en temps réel et actionnables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’ampleur d’une faille et prendre des mesures correctives pour remédier aux menaces.
 
 Lorsqu’une menace est détectée, les alertes sont créées dans le système à des fins d’analyse par un analyste. Les alertes présentant les mêmes techniques d’attaque ou attribuées au même agresseur sont regroupées dans une entité appelée _incident_. Ce regroupement d’alertes permet plus facilement aux analystes d’étudier les menaces collectivement et d’y répondre.
 

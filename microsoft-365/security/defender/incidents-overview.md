@@ -42,11 +42,11 @@ ms.locfileid: "52842025"
 
 Un incident dans Microsoft 365 Defender est une collection d’alertes corrélées et de données associées qui constitue l’histoire d’une attaque. 
 
-Microsoft 365 services et applications créent des alertes lorsqu’ils détectent un événement ou une activité suspect ou malveillant. Les alertes individuelles fournissent des indices précieux sur une attaque terminée ou en cours. Toutefois, les attaques utilisent généralement différentes techniques pour différents types d’entités, telles que les appareils, les utilisateurs et les boîtes aux lettres. Le résultat est plusieurs alertes pour plusieurs entités dans votre client. 
+Microsoft 365 et applications créent des alertes lorsqu’ils détectent un événement ou une activité suspect ou malveillant. Les alertes individuelles fournissent des indices précieux sur une attaque terminée ou en cours. Toutefois, les attaques utilisent généralement différentes techniques pour différents types d’entités, telles que les appareils, les utilisateurs et les boîtes aux lettres. Le résultat est plusieurs alertes pour plusieurs entités dans votre client. 
 
-Étant donné que l’agrégation des alertes individuelles pour obtenir des informations sur une attaque peut être difficile et chronophage, Microsoft 365 Defender regroupe automatiquement les alertes et leurs informations associées dans un incident.
+Étant donné que l’agrégation des alertes individuelles pour obtenir des informations sur une attaque peut être complexe et chronophage, Microsoft 365 Defender regroupe automatiquement les alertes et leurs informations associées dans un incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Comment Microsoft 365 Defender met en corrélation les événements des entités avec un incident":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="Comment Microsoft 365 Defender met en corrélation les événements des entités dans un incident":::
 
 Regardez cette courte présentation des incidents dans Microsoft 365 Defender (4 minutes).
 
@@ -72,7 +72,7 @@ Vous gérez les incidents à partir **d’incidents & alertes** > incidents dans
 
 La sélection d’un nom d’incident affiche un résumé de l’incident et donne accès aux onglets avec des informations supplémentaires.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le centre de Microsoft 365 de sécurité":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Exemple de page Résumé d’un incident dans le centre Microsoft 365 sécurité":::
 
 Les onglets supplémentaires pour un incident sont les suivants :
 
@@ -139,10 +139,10 @@ Identifiez régulièrement les incidents les plus prioritaires pour l’analyse 
 
    - Comprendre le type de l’attaque et son impact.
    - Recherchez une tendance des attaques de sécurité dans [l’analyse](threat-analytics.md) des menaces et la communauté de sécurité.
-   - Rappelez-vous du flux de travail que vous avez utilisé pour résoudre l’incident et mettre à jour vos flux de travail, processus, stratégies et playbooks standard selon vos besoins.
+   - Rappelez-vous du flux de travail que vous avez utilisé pour résoudre l’incident et mettre à jour vos flux de travail, processus, stratégies et playbooks standard si nécessaire.
    - Déterminez si des modifications sont nécessaires dans votre configuration de sécurité et implémentez-les.
 
-Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer en détail à un exemple d’incident.
+Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer au travers d’un exemple d’incident.
 
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>Exemples d’opérations de sécurité pour Microsoft 365 Defender
 

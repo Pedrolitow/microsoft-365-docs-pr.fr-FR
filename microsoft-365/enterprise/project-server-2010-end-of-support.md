@@ -36,7 +36,7 @@ Project Server 2010 prendra fin le **13 avril 2021.** Cette date a été prolong
 |Project 2010 Standard|13 octobre 2020|
 |Project 2010 Professional|13 octobre 2020|
 
-Pour plus d’informations sur l’arrivée à la fin de la prise en charge, voir [Upgrade from Office 2010 servers and client products](plan-upgrade-previous-versions-office.md).
+Pour plus d’informations sur la fin de la prise en charge, voir [Upgrade from Office 2010 servers and client products](plan-upgrade-previous-versions-office.md).
 
 ## <a name="what-does-end-of-support-mean"></a>*Qu’est-ce que la fin du support* signifie ?
 
@@ -157,7 +157,7 @@ Ressources clés :
 
 - [Les nouveautés de la mise à Project Server 2013](/project/what-s-new-in-project-server-2013-upgrade) couvrent les modifications importantes apportées à cette version, notamment :
 
-   - Il n’existe aucune mise à niveau sur place vers Project Server 2013. La méthode d’attachement de base de données est la seule méthode prise en charge pour la mise à niveau de Project Server 2010 vers Project Server 2013.
+   - Il n’existe aucune mise à niveau sur place vers Project Server 2013. La méthode d’attachement de base de données est le seul moyen pris en charge de mettre à niveau Project Server 2010 vers Project Server 2013.
 
    - Le processus de mise à niveau convertira non seulement vos données Project Server 2010 au format Project Server 2013, mais consolidera également les quatre bases de données Project Server 2010 en une seule base de données Project Web App.
 

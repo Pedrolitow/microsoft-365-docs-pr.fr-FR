@@ -40,10 +40,10 @@ ms.locfileid: "52842145"
 Cette page décrit comment créer une application Azure Active Directory (Azure AD) pour obtenir un accès par programmation à Microsoft Defender pour endpoint pour le compte de vos clients.
 
 
-Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API par programme. Ces API vous aideront à automatiser les flux de travail et à faire preuve d’innovation en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender pour point de terminaison expose la plupart de ses données et actions par le biais d’un ensemble d’API de programmation. Ces API vous aideront à automatiser les flux de travail et à innover en fonction des fonctionnalités de Microsoft Defender for Endpoint. L’accès à l’API nécessite une authentification OAuth2.0. Pour plus d’informations, [voir code d’autorisation OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 En règle générale, vous devez suivre les étapes suivantes pour utiliser les API :
-- Créez une application Azure AD à **plusieurs** locataires.
+- Créez une application Azure AD **multi-locataire.**
 - Obtenez l’autorisation (consentement) de votre administrateur client pour que votre application accède aux ressources Defender for Endpoint dont elle a besoin.
 - Obtenez un jeton d’accès à l’aide de cette application.
 - Utilisez le jeton pour accéder à l’API Microsoft Defender for Endpoint.
@@ -71,9 +71,9 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et à l’affecter avec le jeu minimal d’autorisations requis pour terminer l’intégration.
 
-   - Dans la page de votre application, sélectionnez **Autorisations api** Ajouter des API d’autorisation que mon  >    >   organisation utilise > type **WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
+   - Dans la page de votre application, sélectionnez **Autorisations API** Ajouter des API d’autorisation que mon  >    >   organisation > **tapez WindowsDefenderATP** et sélectionnez **sur WindowsDefenderATP**.
 
-   - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour l’voir apparaître.
+   - **Remarque**: *WindowsDefenderATP* n’apparaît pas dans la liste d’origine. Commencez à écrire son nom dans la zone de texte pour le voir apparaître.
 
    ![ajouter une autorisation](images/add-permission.png)
    
@@ -98,7 +98,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
     ![Image de l’octroi d’autorisations](images/grant-consent.png)
 
-6. Ajoutez un secret à l’application.
+6. Ajoutez une secret à l’application.
 
     - Select **Certificates & secrets,** add description to the secret and select **Add**.
 
@@ -232,7 +232,7 @@ Vérifiez que vous avez reçu un jeton correct :
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Utiliser le jeton pour accéder à l’API Microsoft Defender for Endpoint
 
 - Choisissez l’API que vous souhaitez utiliser, pour plus d’informations, voir API De Microsoft Defender pris en charge pour [les points de terminaison](exposed-apis-list.md)
-- Définissez l’en-tête d’autorisation dans la requête Http que vous envoyez à « Bearer {token} » (le porteur est le schéma d’autorisation)
+- Définissez l’en-tête Authorization dans la requête Http que vous envoyez à « Bearer {token} » (le porteur est le schéma d’autorisation)
 - Le délai d’expiration du jeton est de 1 heure (vous pouvez envoyer plusieurs demandes avec le même jeton)
 
 - Exemple d’envoi d’une demande pour obtenir une liste d’alertes à **l’aide C#** 

@@ -73,6 +73,6 @@ Chaque profil d’appareil implique également les éléments ci-après :
 
 ## <a name="limitations"></a>Limites
 
-Vous pouvez demander des exceptions aux profils d’appareil et à leurs détails comme vous le feriez avec n’importe quelle autre stratégie. N’oubliez pas que vous ne pouvez avoir qu’un seul profil d’appareil dans votre organisation Azure Active Directory ( « client »). Par exemple, vous ne pouvez pas demander que le profil d’appareil de données sensibles désactive AppLocker pour certains de vos utilisateurs uniquement. Tous les appareils avec le profil de données sensibles doivent avoir la même configuration.
+Vous pouvez demander des exceptions aux profils d’appareil et à leurs détails comme vous le feriez avec n’importe quelle autre stratégie. N’oubliez pas que vous ne pouvez avoir qu’un seul profil d’appareil dans votre organisation Azure Active Directory « client ». Par exemple, vous ne pouvez pas demander que le profil d’appareil de données sensibles désactive AppLocker pour certains de vos utilisateurs uniquement. Tous les appareils avec le profil de données sensibles doivent avoir la même configuration.
 
 Chaque appareil ne peut avoir qu’un seul profil. Si un appareil donné est utilisé par plusieurs utilisateurs, tous les utilisateurs de cet appareil auront la même configuration.

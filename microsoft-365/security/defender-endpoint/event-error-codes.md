@@ -1,7 +1,7 @@
 ---
-title: Passer en revue les événements et les erreurs à l'aide de l'Observateur d'événements
-description: Obtenez des descriptions et d'autres étapes de dépannage (si nécessaire) pour tous les événements signalés par le service Microsoft Defender for Endpoint.
-keywords: résoudre les problèmes, observateur d'événements, résumé du journal, code d'échec, échec, service Microsoft Defender pour point de terminaison, ne peut pas démarrer, rompu, ne peut pas démarrer
+title: Passer en revue les événements et les erreurs à l’aide de l’Observateur d’événements
+description: Obtenez des descriptions et d’autres étapes de dépannage (si nécessaire) pour tous les événements signalés par le service Microsoft Defender for Endpoint.
+keywords: résoudre les problèmes, observateur d’événements, résumé du journal, code d’échec, échec, service Microsoft Defender pour point de terminaison, ne peut pas démarrer, rompu, ne peut pas démarrer
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -24,7 +24,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933840"
 ---
-# <a name="review-events-and-errors-using-event-viewer"></a>Passer en revue les événements et les erreurs à l'aide de l'Observateur d'événements
+# <a name="review-events-and-errors-using-event-viewer"></a>Passer en revue les événements et les erreurs à l’aide de l’Observateur d’événements
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,21 +32,21 @@ ms.locfileid: "51933840"
 **S’applique à :**
 - Observateur d'événements
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Vous pouvez passer en revue les ID d'événement dans [l'Observateur d'événements](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) sur des appareils individuels.
+Vous pouvez passer en revue les ID d’événement dans [l’Observateur d’événements](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) sur des appareils individuels.
 
-Par exemple, si les appareils n'apparaissent pas dans la liste **Appareils,** vous devrez peut-être rechercher des ID d'événement sur les appareils. Vous pouvez ensuite utiliser ce tableau pour déterminer d'autres étapes de résolution des problèmes.
+Par exemple, si les appareils n’apparaissent pas dans la liste **Appareils,** vous devrez peut-être rechercher des ID d’événement sur les appareils. Vous pouvez ensuite utiliser ce tableau pour déterminer d’autres étapes de résolution des problèmes.
 
-**Ouvrez l'Observateur d'événements et recherchez le journal des événements du service Microsoft Defender for Endpoint :**
+**Ouvrez l’Observateur d’événements et recherchez le journal des événements du service Microsoft Defender for Endpoint :**
 
-1. Cliquez **sur Démarrer** dans le menu Windows, tapez Observateur **d'événements,** puis appuyez sur **Entrée.**
+1. Cliquez **sur Démarrer** dans le menu Windows, tapez **Observateur** d’événements, puis appuyez sur **Entrée.**
 
-2. Dans la liste des journaux, sous **Résumé du journal,** faites défiler jusqu'à ce que **microsoft-Windows-SENSE/Opérationnel s'offre à vous.** Double-cliquez sur l'élément pour ouvrir le journal.
+2. Dans la liste des journaux, sous **Résumé du journal,** faites défiler jusqu’à ce que **microsoft-Windows-SENSE/Opérationnel .** Double-cliquez sur l’élément pour ouvrir le journal.
 
-   a.  Vous pouvez également accéder au journal en expandant **Applications et services Journaux**  >  **Microsoft**  >  **Windows**  >  **SENSE** et en cliquant sur **Opérationnel**.
+   a.  Vous pouvez également accéder au journal en expandant **Journaux des applications** et des services  >  **Microsoft**  >  **Windows**  >  **SENSE** et cliquer sur **Opérationnel**.
 
    > [!NOTE]
    > SENSE est le nom interne utilisé pour faire référence au capteur comportemental qui alimente Microsoft Defender pour endpoint.
@@ -63,217 +63,217 @@ Par exemple, si les appareils n'apparaissent pas dans la liste **Appareils,** vo
 </tr>
 <tr>
 <td>1</td>
-<td>Service Microsoft Defender pour point de terminaison démarré <code>variable</code> (version).</td>
-<td>Se produit lors du démarrage, de l'arrêt et de l'intégration du système.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.</td>
+<td>Service Microsoft Defender pour point de terminaison démarré (version <code>variable</code> ).</td>
+<td>Se produit lors du démarrage, de l’arrêt et de l’intégration du système.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Arrêt du service Microsoft Defender pour point de terminaison.</td>
-<td>Se produit lorsque l'appareil est arrêté ou déboardé.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.</td>
+<td>Arrêt du service Microsoft Defender for Endpoint.</td>
+<td>Se produit lorsque l’appareil est arrêté ou déboardé.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à démarrer. Code d'échec <code>variable</code> : .</td>
-<td>Le service n'a pas commencé.</td>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à démarrer. Code d’échec <code>variable</code> : .</td>
+<td>Le service n’a pas commencé.</td>
 <td>Examinez les autres messages pour déterminer la cause possible et les étapes de résolution des problèmes.</td>
 </tr>
 <tr>
 <td>4 </td>
 <td>Microsoft Defender for Endpoint service contacted the server at <code>variable</code> .</td>
 <td>Variable = URL des serveurs de traitement Defender pour les points de terminaison.<br>
-Cette URL correspond à celle qui s'est vue dans l'activité du pare-feu ou du réseau.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.</td>
+Cette URL correspond à celle qui s’est vue dans l’activité du pare-feu ou du réseau.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 <tr>
 <td>5 </td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à se connecter au serveur à l'emplacement <code>variable</code> .</td>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à se connecter au serveur à l’emplacement <code>variable</code> .</td>
 <td>Variable = URL des serveurs de traitement Defender pour les points de terminaison.<br>
-Le service n'a pas pu contacter les serveurs de traitement externes à cette URL.</td>
-<td>Vérifiez la connexion à l'URL. Voir <a href="configure-proxy-internet.md" data-raw-source="[Configure proxy and Internet connectivity](configure-proxy-internet.md)">Configurer le proxy et la connectivité Internet.</a></td>
+Le service n’a pas pu contacter les serveurs de traitement externes à cette URL.</td>
+<td>Vérifiez la connexion à l’URL. Voir <a href="configure-proxy-internet.md" data-raw-source="[Configure proxy and Internet connectivity](configure-proxy-internet.md)">Configurer le proxy et la connectivité Internet.</a></td>
 </tr>
 <tr>
 <td>6 </td>
-<td>Le service Microsoft Defender for Endpoint n'est pas intégré et aucun paramètre d'intégration n'a été trouvé.</td>
-<td>L'appareil n'a pas été correctement intégré et ne sera pas signalé au portail.</td>
-<td>L'intégration doit être exécuté avant de démarrer le service.<br>
-Vérifiez que les paramètres et les scripts d'intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Le service Microsoft Defender for Endpoint n’est pas intégré et aucun paramètre d’intégration n’a été trouvé.</td>
+<td>L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.</td>
+<td>L’intégration doit être exécuté avant de démarrer le service.<br>
+Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>7 </td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à lire les paramètres d'intégration. Échec : <code>variable</code> .</td>
-<td>Variable = description détaillée de l'erreur. L'appareil n'a pas été correctement intégré et ne sera pas signalé au portail.</td>
-<td>Vérifiez que les paramètres et les scripts d'intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à lire les paramètres d’intégration. Échec : <code>variable</code> .</td>
+<td>Variable = description détaillée de l’erreur. L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.</td>
+<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>8 </td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à nettoyer sa configuration. Code d'échec <code>variable</code> : .</td>
-<td><b>Lors de l'intégration :</b> Le service n'a pas réussi à nettoyer sa configuration pendant l'intégration. Le processus d'intégration se poursuit. <br><br> <b>Lors de laboarding :</b> Le service n'a pas réussi à nettoyer sa configuration pendant le déboardage. Le processus deboarding est terminé, mais le service continue de s'exécute.
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à nettoyer sa configuration. Code d’échec <code>variable</code> : .</td>
+<td><b>Lors de l’intégration :</b> Le service n’a pas réussi à nettoyer sa configuration pendant l’intégration. Le processus d’intégration se poursuit. <br><br> <b>Lors de laboarding :</b> Le service n’a pas réussi à nettoyer sa configuration pendant le déboardage. Le processus deboarding est terminé, mais le service continue de s’exécute.
  </td>
-<td><b>Intégration :</b> Aucune action n'est requise. <br><br> <b>Pare-papiers :</b> Redémarrez le système.<br>
+<td><b>Intégration :</b> Aucune action n’est requise. <br><br> <b>Pare-papiers :</b> Redémarrez le système.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>9 </td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à modifier son type de démarrage. Code d'échec <code>variable</code> : .</td>
-<td><b>Lors de l'intégration :</b> L'appareil n'a pas été correctement intégré et ne sera pas signalé au portail. <br><br><b>Lors de laboarding :</b> Échec de la modification du type de démarrage du service. Le processus deboarding se poursuit. </td>
-<td>Vérifiez que les paramètres d'intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à modifier son type de démarrage. Code d’échec <code>variable</code> : .</td>
+<td><b>Lors de l’intégration :</b> L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail. <br><br><b>Lors de laboarding :</b> Échec de la modification du type de démarrage du service. Le processus deboarding se poursuit. </td>
+<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
-<td>10 </td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à rendre persistantes les informations d'intégration. Code d'échec <code>variable</code> : .</td>
-<td>L'appareil n'a pas été correctement intégré et ne sera pas signalé au portail.</td>
-<td>Vérifiez que les paramètres et les scripts d'intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>10</td>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à rendre persistantes les informations d’intégration. Code d’échec <code>variable</code> : .</td>
+<td>L’appareil n’a pas été correctement intégré et ne sera pas signalé au portail.</td>
+<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>11</td>
 <td>Intégration ou ré-intégration du service Defender for Endpoint terminée.</td>
-<td>L'appareil est correctement intégré.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.<br>
-L'apparition de l'appareil sur le portail peut prendre plusieurs heures.</td>
+<td>L’appareil est correctement intégré.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.<br>
+L’apparition de l’appareil sur le portail peut prendre plusieurs heures.</td>
 </tr>
 <tr>
 <td>12 </td>
-<td>Microsoft Defender pour le point de terminaison n'a pas réussi à appliquer la configuration par défaut.</td>
-<td>Le service n'a pas pu appliquer la configuration par défaut.</td>
+<td>Microsoft Defender pour le point de terminaison n’a pas réussi à appliquer la configuration par défaut.</td>
+<td>Le service n’a pas pu appliquer la configuration par défaut.</td>
 <td>Cette erreur doit être résolue après un court moment.</td>
 </tr>
 <tr>
 <td>13</td>
-<td>ID d'appareil Microsoft Defender pour point de terminaison calculé : <code>variable</code> .</td>
+<td>ID d’appareil Microsoft Defender pour point de terminaison calculé : <code>variable</code> .</td>
 <td>Processus de fonctionnement normal.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 <tr>
-<td>15 </td>
-<td>Microsoft Defender pour le point de terminaison ne peut pas démarrer le canal de commande avec l'URL : <code>variable</code> .</td>
+<td>15</td>
+<td>Microsoft Defender pour le point de terminaison ne peut pas démarrer le canal de commande avec l’URL : <code>variable</code> .</td>
 <td>Variable = URL des serveurs de traitement Defender pour les points de terminaison.<br>
-Le service n'a pas pu contacter les serveurs de traitement externes à cette URL.</td>
-<td>Vérifiez la connexion à l'URL. Voir <a href="configure-proxy-internet.md" data-raw-source="[Configure proxy and Internet connectivity](configure-proxy-internet.md)">Configurer le proxy et la connectivité Internet.</a></td>
+Le service n’a pas pu contacter les serveurs de traitement externes à cette URL.</td>
+<td>Vérifiez la connexion à l’URL. Voir <a href="configure-proxy-internet.md" data-raw-source="[Configure proxy and Internet connectivity](configure-proxy-internet.md)">Configurer le proxy et la connectivité Internet.</a></td>
 </tr>
 <tr>
 <td>17 </td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à modifier l'emplacement du service Expériences des utilisateurs connectés et télémétrie. Code d'échec <code>variable</code> : .</td>
-<td>Une erreur s'est produite avec le service de télémétrie Windows.</td>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à modifier l’emplacement du service Expériences des utilisateurs connectés et télémétrie. Code d’échec <code>variable</code> : .</td>
+<td>Une erreur s’est produite avec Windows service de télémétrie.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Assurez-vous que le service de données de diagnostic est activé.</a><br>
-Vérifiez que les paramètres et les scripts d'intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>18 </td>
-<td>OOBE (Bienvenue dans Windows) est terminé.</td>
-<td>Le service démarre uniquement une fois l'installation des mises à jour Windows terminée.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.</td>
+<td>OOBE (Windows Bienvenue) est terminé.</td>
+<td>Le service démarre uniquement une fois Windows mises à jour ont terminé l’installation.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 <tr>
 <td>19</td>
-<td>OOBE (Bienvenue dans Windows) n'est pas encore terminé.</td>
-<td>Le service démarre uniquement une fois l'installation des mises à jour Windows terminée.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.<br>
-Si cette erreur persiste après un redémarrage du système, assurez-vous que toutes les mises à jour Windows sont entièrement installées.</td>
+<td>La OOBE (Windows Bienvenue) n’est pas encore terminée.</td>
+<td>Le service démarre uniquement une fois Windows mises à jour ont terminé l’installation.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.<br>
+Si cette erreur persiste après un redémarrage du système, assurez-vous que toutes Windows mises à jour sont entièrement installées.</td>
 </tr>
 <tr>
 <td>20</td>
-<td>Impossible d'attendre la fin de la OOBE (Bienvenue dans Windows). Code d'échec <code>variable</code> : .</td>
+<td>Impossible d’attendre la fin de la Windows (OOBE). Code d’échec <code>variable</code> : .</td>
 <td>Erreur interne.</td>
-<td>Si cette erreur persiste après un redémarrage du système, assurez-vous que toutes les mises à jour Windows sont entièrement installées.</td>
+<td>Si cette erreur persiste après un redémarrage du système, assurez-vous que toutes Windows mises à jour sont entièrement installées.</td>
 </tr>
 <tr>
 <td>25</td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à réinitialiser l'état d'état d'état dans le Registre. Code d'échec <code>variable</code> : .</td>
-<td>L'appareil n'a pas été correctement intégré.
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à réinitialiser l’état d’état d’état dans le Registre. Code d’échec <code>variable</code> : .</td>
+<td>L’appareil n’a pas été correctement intégré.
 Il signale au portail, mais le service peut ne pas apparaître comme inscrit dans SCCM ou le Registre.</td>
-<td>Vérifiez que les paramètres et les scripts d'intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>26</td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à définir l'état d'intégration dans le Registre. Code d'échec <code>variable</code> : .</td>
-<td>L'appareil n'a pas été correctement intégré.<br>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à définir l’état d’intégration dans le Registre. Code d’échec <code>variable</code> : .</td>
+<td>L’appareil n’a pas été correctement intégré.<br>
 Il signale au portail, mais le service peut ne pas apparaître comme inscrit dans SCCM ou le Registre.</td>
-<td>Vérifiez que les paramètres et les scripts d'intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>27</td>
-<td>Le service Microsoft Defender pour points de terminaison n'a pas réussi à activer le mode sensible SENSE dans l'Antivirus Microsoft Defender. Échec du processus d'intégration. Code d'échec <code>variable</code> : .</td>
-<td>Normalement, l'Antivirus Microsoft Defender passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s'exécute correctement sur l'appareil, et que l'appareil fait des rapports à Defender pour le point de terminaison.</td>
-<td>Vérifiez que les paramètres d'intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à activer le mode sensible SENSE dans Antivirus Microsoft Defender. Échec du processus d’intégration. Code d’échec <code>variable</code> : .</td>
+<td>Normalement, Antivirus Microsoft Defender passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s’exécute correctement sur l’appareil, et que l’appareil est en rapport avec Defender pour endpoint.</td>
+<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a><br>
-Assurez-vous que la protection contre les programmes malveillants en temps réel s'exécute correctement.</td>
+Assurez-vous que la protection contre les programmes malveillants en temps réel s’exécute correctement.</td>
 </tr>
 <tr>
 <td>28</td>
-<td>Échec de l'inscription au service Expériences des utilisateurs connectés et télémétrie de Microsoft Defender for Endpoint. Code d'échec <code>variable</code> : .</td>
-<td>Une erreur s'est produite avec le service de télémétrie Windows.</td>
+<td>Échec de l’inscription au service Expériences des utilisateurs connectés et télémétrie de Microsoft Defender for Endpoint. Code d’échec <code>variable</code> : .</td>
+<td>Une erreur s’est produite avec Windows service de télémétrie.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Assurez-vous que le service de données de diagnostic est activé.</a><br>
-Vérifiez que les paramètres et les scripts d'intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>29</td>
-<td>Échec de la lecture des paramètres deboarding. Type d'erreur : %1, Code d'erreur : %2, Description : %3 </td>
+<td>Échec de la lecture des paramètres deboarding. Type d’erreur : %1, Code d’erreur : %2, Description : %3 </td>
 <td>Cet événement se produit lorsque le système ne peut&#39;pas lire les paramètres de hors-carte.</td>
-<td>Assurez-vous que l'appareil dispose d'un accès à Internet, puis exécutez à nouveau l'intégralité du processus deboarding. Assurez-vous que le package deboarding n'a pas expiré.</td>
+<td>Assurez-vous que l’appareil dispose d’un accès à Internet, puis exécutez à nouveau l’intégralité du processus deboarding. Assurez-vous que le package deboarding n’a pas expiré.</td>
 </tr>
 <tr>
 <td>30</td>
-<td>Le service Microsoft Defender pour points de terminaison n'a pas réussi à désactiver le mode sensible SENSE dans l'Antivirus Microsoft Defender. Code d'échec <code>variable</code> : .</td>
-<td>Normalement, l'Antivirus Microsoft Defender passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s'exécute correctement sur l'appareil, et que l'appareil fait des rapports à Defender pour le point de terminaison.</td>
-<td>Vérifiez que les paramètres et les scripts d'intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à désactiver le mode sensible SENSE dans Antivirus Microsoft Defender. Code d’échec <code>variable</code> : .</td>
+<td>Normalement, Antivirus Microsoft Defender passe à un état passif spécial si un autre produit anti-programme malveillant en temps réel s’exécute correctement sur l’appareil, et que l’appareil est en rapport avec Defender pour endpoint.</td>
+<td>Vérifiez que les paramètres d’intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés</a><br>
-Assurez-vous que la protection contre les programmes malveillants en temps réel s'exécute correctement.</td>
+Assurez-vous que la protection contre les programmes malveillants en temps réel s’exécute correctement.</td>
 </tr>
 <tr>
 <td>31</td>
-<td>Échec de l'agrégation du service Expériences des utilisateurs connectés et télémétrie de Microsoft Defender for Endpoint. Code d'échec <code>variable</code> : .</td>
-<td>Une erreur s'est produite avec le service de télémétrie Windows lors de l'intégration. Le processus deboarding se poursuit.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Recherchez les erreurs avec le service de télémétrie Windows.</a></td>
+<td>Échec de l’agrégation du service Expériences des utilisateurs connectés et télémétrie de Microsoft Defender for Endpoint. Code d’échec <code>variable</code> : .</td>
+<td>Une erreur s’est produite avec Windows service de télémétrie lors de l’intégration. Le processus deboarding se poursuit.</td>
+<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Recherchez les erreurs avec le service Windows télémétrie.</a></td>
 </tr>
 <tr>
 <td>32</td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à demander à s'arrêter après le processus deboarding. Code d'échec : %1</td>
-<td>Une erreur s'est produite lors de la procédure deboardage.</td>
-<td>Redémarrez l'appareil.</td>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à demander à s’arrêter après le processus deboarding. Code d’échec : %1</td>
+<td>Une erreur s’est produite lors de la procédure deboarding.</td>
+<td>Redémarrez l’appareil.</td>
 </tr>
 <tr>
 <td>33</td>
-<td>Le service Microsoft Defender for Endpoint n'a pas réussi à rendre persistant le GUID SENSE. Code d'échec <code>variable</code> : .</td>
-<td>Un identificateur unique est utilisé pour représenter chaque appareil signalant au portail.<br>
-Si l'identificateur ne persiste pas, le même appareil peut apparaître deux fois dans le portail.</td>
-<td>Vérifiez les autorisations du Registre sur l'appareil pour vous assurer que le service peut mettre à jour le Registre.</td>
+<td>Le service Microsoft Defender for Endpoint n’a pas réussi à rendre persistant le GUID SENSE. Code d’échec <code>variable</code> : .</td>
+<td>Un identificateur unique est utilisé pour représenter chaque appareil qui rapporte au portail.<br>
+Si l’identificateur ne persiste pas, le même appareil peut apparaître deux fois dans le portail.</td>
+<td>Vérifiez les autorisations du Registre sur l’appareil pour vous assurer que le service peut mettre à jour le Registre.</td>
 </tr>
 <tr>
 <td>34</td>
-<td>Le service Microsoft Defender pour points de terminaison n'a pas réussi à s'ajouter en tant que dépendance au service Expériences des utilisateurs connectés et télémétrie, ce qui a provoqué l'échec du processus d'intégration. Code d'échec <code>variable</code> : .</td>
-<td>Une erreur s'est produite avec le service de télémétrie Windows.</td>
+<td>Le service Microsoft Defender pour points de terminaison n’a pas réussi à s’ajouter en tant que dépendance au service Expériences des utilisateurs connectés et télémétrie, ce qui a provoqué l’échec du processus d’intégration. Code d’échec <code>variable</code> : .</td>
+<td>Une erreur s’est produite avec Windows service de télémétrie.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Assurez-vous que le service de données de diagnostic est activé.</a><br>
-Vérifiez que les paramètres d'intégration et les scripts ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
+Vérifiez que les paramètres et les scripts d’intégration ont été correctement déployés. Essayez de redéployer les packages de configuration.<br>
 Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Appareils Windows 10 intégrés.</a></td>
 </tr>
 <tr>
 <td>35</td>
-<td>Le service Microsoft Defender pour points de terminaison n'a pas réussi à se supprimer en tant que dépendance au service Expériences des utilisateurs connectés et télémétrie. Code d'échec <code>variable</code> : .</td>
-<td>Une erreur s'est produite avec le service de télémétrie Windows lors de la déboarding. Le processus deboarding se poursuit.
+<td>Le service Microsoft Defender pour points de terminaison n’a pas réussi à se supprimer en tant que dépendance au service Expériences des utilisateurs connectés et télémétrie. Code d’échec <code>variable</code> : .</td>
+<td>Une erreur s’est produite avec Windows service de télémétrie lors de la déboarding. Le processus deboarding se poursuit.
 </td>
-<td>Recherchez les erreurs avec le service de données de diagnostic Windows.</td>
+<td>Recherchez les erreurs avec le service Windows de diagnostic.</td>
 </tr>
 <tr>
 <td>36</td>
-<td>L'inscription au service Expériences des utilisateurs connectés et télémétrie de Microsoft Defender for Endpoint a réussi. Code d'achèvement <code>variable</code> : .</td>
-<td>L'inscription de Defender pour endpoint auprès du service Expériences des utilisateurs connectés et télémétrie s'est terminée correctement.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.</td>
+<td>L’inscription au service Expériences des utilisateurs connectés et télémétrie de Microsoft Defender for Endpoint a réussi. Code d’achèvement <code>variable</code> : .</td>
+<td>L’inscription de Defender pour endpoint auprès du service Expériences des utilisateurs connectés et télémétrie s’est terminée correctement.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 <tr>
 <td>37</td>
-<td>Microsoft Defender pour le point de terminaison A est sur le point de dépasser son quota. Module : %1, Quota : {%2} {%3}, Pourcentage d'utilisation du quota : %4.</td>
-<td>L'appareil a presque utilisé son quota alloué de la fenêtre actuelle de 24 heures. Il est sur le point d'être limitée.</td>
-<td>Notification de fonctionnement normal ; aucune action n'est requise.</td>
+<td>Microsoft Defender pour le point de terminaison A est sur le point de dépasser son quota. Module : %1, Quota : {%2} {%3}, Pourcentage d’utilisation du quota : %4.</td>
+<td>L’appareil a presque utilisé son quota alloué de la fenêtre actuelle de 24 heures. Il est sur le point d’être limitée.</td>
+<td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 <tr>
 <td>38</td>
@@ -411,7 +411,7 @@ Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 <tr>
    <td>62</td>
    <td>Échec du démarrage du service Expériences des utilisateurs connectés et télémétrie. Code d’échec : %1</td>
-   <td>Le service Expériences des utilisateurs connectés et télémétrie (diagtrack) n’a pas réussi à démarrer. La télémétrie d’un point de terminaison autre que Microsoft Defender ne sera pas envoyée à partir de cet ordinateur.</td>
+   <td>Le service Expériences des utilisateurs connectés et télémétrie (diagtrack) n’a pas réussi à démarrer. La télémétrie de point de terminaison autre que Microsoft Defender ne sera pas envoyée à partir de cet ordinateur.</td>
    <td>Recherchez d’autres conseils de dépannage dans le journal des événements : Microsoft-Windows-UniversalTelemetryClient/Operational.</td>
 </tr>
 <tr>
@@ -494,7 +494,7 @@ Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 </tr>
 <tr>
    <td>84</td>
-   <td>Définissez Windows Defender mode d’exécution antivirus. Forcer le mode passif : %1, code de résultat : %2.</td>
+   <td>Définissez Antivirus Windows Defender mode en cours d’exécution. Forcer le mode passif : %1, code de résultat : %2.</td>
    <td>Définir le mode d’exécution de Defender (actif ou passif).</td>
    <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
@@ -602,9 +602,9 @@ Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 </tr>
 <tr>
    <td>103</td>
-   <td>L'exécutable de détection et de réponse réseau microsoft Defender pour points de terminaison a pris fin</td>
-   <td>L'exécutable SenseNdr a pris fin.</td>
-   <td>Notification de fonctionnement normal ; aucune action n'est requise.</td>
+   <td>L’exécutable de détection et de réponse réseau microsoft Defender pour points de terminaison a pris fin</td>
+   <td>L’exécutable SenseNdr a pris fin.</td>
+   <td>Notification de fonctionnement normal ; aucune action n’est requise.</td>
 </tr>
 </tbody>
 </table>
@@ -612,6 +612,6 @@ Voir <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>Voir aussi
-- [Intégrer des appareils Windows 10](configure-endpoints.md)
-- [Configurer les paramètres de proxy d'appareil et de connectivité Internet](configure-proxy-internet.md)
-- [Résoudre des problèmes avec Microsoft Defender pour point de terminaison](troubleshoot-onboarding.md)
+- [Intégrer des appareils Windows 10](configure-endpoints.md)
+- [Configurer les paramètres de proxy du dispositif et de connectivité Internet](configure-proxy-internet.md)
+- [Résoudre des problèmes avec Microsoft Defender pour point de terminaison](troubleshoot-onboarding.md)

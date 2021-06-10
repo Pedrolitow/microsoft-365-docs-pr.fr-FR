@@ -52,7 +52,7 @@ Renvoie des informations pour l’activité de correction spécifiée. Présente
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -73,14 +73,14 @@ dueOn | Date/heure | Date d’échéance définie par le créateur pour cette ac
 fixedDevices |  | Nombre d’appareils qui ont été corrigés | 2
 id | String | ID de cette activité de correction | 097d9735-5479-4899-b1b7-77398899df92
 nameId | String | Nom du produit associé | Microsoft Silverlight
-priorité | String | Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible) | Élevé
+priorité | String | Priorité définie par le créateur pour cette activité de correction (High\Medium\Low) | Élevé
 productId | String | ID de produit associé | microsoft-_-silverlight
 productivityImpactRemediationType | String | Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ». | AllExposedAssets
 rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Serveurs », « Windows 10 » ]
 recommendedProgram | String | Programme recommandé pour la mise à niveau vers | null
 recommendedVendor | String | Fournisseur recommandé pour la mise à niveau vers | null
 recommendedVersion | String | Version recommandée pour la mise à jour/mise à niveau vers | null
-relatedComponent | String | Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité) | Microsoft Microsoft Silverlight
+relatedComponent | String | Composant connexe de cette activité de correction (similaire au composant associé pour une recommandation de sécurité) | Microsoft Microsoft Silverlight
 requesterEmail | String | Adresse de messagerie du créateur | globaladmin@UserName.contoso.com
 requesterId | String | ID d’objet Creator | r647211f-2e16-43f2-a480-16ar3a2a796r
 requesterNotes | String | Notes (texte libre) ajoutées par le créateur pour cette activité de correction | null

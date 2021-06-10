@@ -109,6 +109,6 @@ Voici les produits, leurs canaux et les groupes de déploiement utilisés par ce
 
 [Exemple de configurations de canal de mise à jour et de déploiement](deploy-update-channels-examples.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

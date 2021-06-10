@@ -33,18 +33,18 @@ ms.locfileid: "51935460"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Le tableau du schéma de recherche avancée contient des informations sur les URL des messages électroniques et des pièces `EmailUrlInfo` jointes traitées par Microsoft Defender pour Office 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
+Le tableau du schéma de recherche avancée contient des informations sur les URL des e-mails et des pièces `EmailUrlInfo` jointes traitées par Microsoft Defender Office 365. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table. 
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `NetworkMessageId` | string | Identificateur unique de l'e-mail, généré par Microsoft 365 |
+| `NetworkMessageId` | string | Identificateur unique de l’e-mail, généré par Microsoft 365 |
 | `Url` | string | URL complète dans l’objet, le corps ou la pièce jointe de l’e-mail |
-| `UrlDomain` | string | Nom de domaine ou nom d'hôte de l'URL |
+| `UrlDomain` | string | Nom de domaine ou nom d’hôte de l’URL |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
 
 ## <a name="related-topics"></a>Voir aussi

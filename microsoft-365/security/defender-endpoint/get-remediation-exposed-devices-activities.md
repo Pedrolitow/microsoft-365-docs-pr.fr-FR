@@ -48,11 +48,11 @@ Retourne des informations sur les appareils exposés pour la tâche de correctio
 
 ## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>Liste des appareils exposés associés à une tâche de correction (ID)
 
-**URL :** GET : /api/remediationTasks/ \{ id \} /machineReferences
+**URL :** GET: /api/remediationTasks/ \{ id \} /machineReferences
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
@@ -124,4 +124,4 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

@@ -39,10 +39,10 @@ ms.locfileid: "52772220"
 
 
 ## <a name="api-description"></a>Description de l’API
-Extrait une collection [d’ordinateurs](machine.md) qui ont communiqué avec ou à partir d’une adresse de domaine donnée.
+Récupère une collection [d’ordinateurs](machine.md) qui ont communiqué avec ou à partir d’une adresse de domaine donnée.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Vous pouvez interroger sur les appareils la dernière mise à jour en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 

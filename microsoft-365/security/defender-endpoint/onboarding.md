@@ -31,7 +31,7 @@ ms.locfileid: "51933540"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -40,22 +40,22 @@ Découvrez les différentes phases du déploiement de Microsoft Defender pour En
 
 Le déploiement de Defender pour endpoint est un processus en trois phases :
 
-| [![phase de déploiement : préparer](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1 : préparation](prepare-deployment.md) | [![phase de déploiement : configuration](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2 : configuration](production-deployment.md) | ![phase de déploiement : intégration](images/phase-diagrams/onboard.png)<br>Phase 3 : intégration |
+| [![phase de déploiement : préparer](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Phase 1 : préparation](prepare-deployment.md) | [![phase de déploiement : configuration](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Phase 2 : configuration](production-deployment.md) | ![phase de déploiement : intégration](images/phase-diagrams/onboard.png)<br>Phase 3 : intégration |
 | ----- | ----- | ----- |
 | | |*Vous êtes là !*|
 
-Vous êtes actuellement en phase d'intégration.
+Vous êtes actuellement en phase d’intégration.
 
 Voici les étapes à suivre pour déployer Defender pour Endpoint :
 
 - Étape 1 : Intégrer des points de terminaison au service 
 - Étape 2 : Configurer les fonctionnalités 
 
-## <a name="step-1-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Étape 1 : Intégrer des points de terminaison à l'aide de l'un des outils de gestion pris en charge
+## <a name="step-1-onboard-endpoints-using-any-of-the-supported-management-tools"></a>Étape 1 : Intégrer des points de terminaison à l’aide de l’un des outils de gestion pris en charge
 La [rubrique Planifier le](deployment-strategy.md) déploiement décrit les étapes générales à suivre pour déployer Defender pour Endpoint.  
 
 
-Regardez cette vidéo pour obtenir une vue d'ensemble rapide du processus d'intégration et en savoir plus sur les outils et méthodes disponibles.
+Regardez cette vidéo pour obtenir une vue d’ensemble rapide du processus d’intégration et en savoir plus sur les outils et méthodes disponibles.
 <br />
 <br />
 
@@ -63,27 +63,27 @@ Regardez cette vidéo pour obtenir une vue d'ensemble rapide du processus d'int�
 
 
 
-Après avoir identifié votre architecture, vous devez choisir la méthode de déploiement à utiliser. L'outil de déploiement que vous choisissez influence la façon dont vous intégrerez les points de terminaison au service. 
+Après avoir identifié votre architecture, vous devez choisir la méthode de déploiement à utiliser. L’outil de déploiement que vous choisissez influence la façon dont vous intégrerez les points de terminaison au service. 
 
-### <a name="onboarding-tool-options"></a>Options de l'outil d'intégration
+### <a name="onboarding-tool-options"></a>Options de l’outil d’intégration
 
 Le tableau suivant répertorie les outils disponibles en fonction du point de terminaison que vous devez intégrer.
 
-| Point de terminaison     | Options de l'outil                       |
+| Point de terminaison     | Options de l’outil                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script local (jusqu'à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Gestionnaire de point de terminaison Microsoft/ Gestionnaire d'appareils mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration à Azure Defender](configure-server-endpoints.md#integration-with-azure-defender) |
-| **MacOS**    | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
+| **Windows**  |  [Script local (jusqu’à 10 appareils)](configure-endpoints-script.md) <br>  [Stratégie de groupe](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Gestionnaire de périphériques mobiles](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md) <br> [Intégration à Azure Defender](configure-server-endpoints.md#integration-with-azure-defender) |
+| **MacOS**    | [Scripts locaux](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JamF Pro](mac-install-with-jamf.md) <br> [Gestion des appareils mobiles](mac-install-with-other-mdm.md) |
 | **Serveur Linux** | [Script local](linux-install-manually.md) <br> [Sondent](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [Basée sur l'application](ios-install.md)                                |
+| **iOS**      | [Basée sur l’application](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
 
 ## <a name="step-2-configure-capabilities"></a>Étape 2 : Configurer les fonctionnalités
-Après avoir intégré les points de terminaison, vous allez configurer les différentes fonctionnalités telles que la détection et la réponse des points de terminaison, la protection nouvelle génération et la réduction de la surface d'attaque. 
+Après avoir intégré les points de terminaison, vous allez configurer les différentes fonctionnalités telles que protection évolutive des points de terminaison, la protection nouvelle génération et la réduction de la surface d’attaque. 
 
 
 ## <a name="example-deployments"></a>Exemples de déploiements
-Dans ce guide de déploiement, nous allons vous guider tout au long de l'utilisation de deux outils de déploiement pour intégrer des points de terminaison et configurer des fonctionnalités.
+Dans ce guide de déploiement, nous allons vous guider tout au long de l’utilisation de deux outils de déploiement pour intégrer des points de terminaison et configurer des fonctionnalités.
 
 Les outils de l’exemple de déploiement sont les :
 - [Intégration à l'aide de Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)

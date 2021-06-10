@@ -49,6 +49,6 @@ Cliquez sur le lien dans la colonne **Exemple** pour passer en revue les groupes
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
 [Guides de laboratoire de test](m365-enterprise-test-lab-guides.md)

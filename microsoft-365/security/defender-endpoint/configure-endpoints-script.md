@@ -49,7 +49,7 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 1.  Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
 
-    1. Dans le volet de navigation, sélectionnez  >  **Paramètres’intégration.**
+    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration.**
 
     1. Sélectionnez Windows 10 comme système d’exploitation.
 
@@ -72,7 +72,7 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 5.  Appuyez sur **entrée** ou cliquez sur **OK.**
 
-Pour plus d’informations sur la façon dont vous pouvez vérifier manuellement que l’appareil est conforme et signale correctement les données de capteur, consultez La procédure de résolution des problèmes d’intégration des points de terminaison [dans Microsoft Defender.](troubleshoot-onboarding.md)
+Pour plus d’informations sur la façon dont vous pouvez vérifier manuellement que l’appareil est conforme et signale correctement les données du capteur, consultez La procédure de résolution des problèmes d’intégration de Microsoft Defender pour les points [de terminaison.](troubleshoot-onboarding.md)
 
 
 >[!TIP]
@@ -115,7 +115,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
     1. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
-2. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.  Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
 
@@ -141,7 +141,7 @@ La surveillance peut également être effectuée directement sur le portail ou �
 ### <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 1. Go to Centre de sécurité Microsoft Defender.
 
-2. Cliquez **sur La liste Appareils.**
+2. Cliquez **sur Liste des appareils.**
 
 3. Vérifiez que les appareils apparaissent.
 

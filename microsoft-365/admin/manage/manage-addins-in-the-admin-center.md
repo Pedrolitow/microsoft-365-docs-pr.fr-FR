@@ -37,7 +37,7 @@ Pour plus d’informations sur l’installation des modules complémentaires à 
   
 ## <a name="add-in-states"></a>États de complément
 
-Un add-in peut être à **l’état « On** » ou « **Off** ».
+Un add-in peut être à **l’état On** ou **Off.**
   
 | État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
@@ -77,7 +77,7 @@ Après le déploiement, les administrateurs peuvent également gérer l’accès
 
 4. Enregistrez les modifications.
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de add-ins en Office store sur tous les clients (sauf Outlook)
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de Office sur tous les clients (sauf Outlook)
 
 > [!NOTE]
 > Outlook’installation du module est gérée par [un processus différent.](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)
@@ -129,7 +129,7 @@ Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
-Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office.](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
+Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
@@ -137,7 +137,7 @@ Si le complément prend en charge les commandes de complément, celles-ci appara
   
 Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
   
-### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>Dans Word 2016, Excel 2016 ou PowerPoint 2016
+### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>Dans Word 2016, Excel 2016 ou PowerPoint 2016
 
 1. Sélectionnez **\> Insérer mes modules.** 
     

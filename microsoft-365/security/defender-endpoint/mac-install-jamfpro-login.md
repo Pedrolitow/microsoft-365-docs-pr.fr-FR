@@ -31,23 +31,23 @@ ms.locfileid: "51935580"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l'expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 1. Entrez vos informations d’identification.
 
-    ![Image du tableau de bord Jamf Pro1](images/jamf-pro-portal1.png)
+    ![Image de Jamf Pro dashboard1](images/jamf-pro-portal1.png)
 
 2. Sélectionnez **Ordinateurs**.
 
-    ![Image du tableau de bord Jamf Pro2](images/jamf-pro-dashboard.png)
+    ![Image de Jamf Pro dashboard2](images/jamf-pro-dashboard.png)
 
 3. Vous verrez les paramètres disponibles.
 
-     ![Image du tableau de bord Jamf Pro3](images/jamfpro-settings.png)
+     ![Image de Jamf Pro dashboard3](images/jamfpro-settings.png)
 
 
 ## <a name="next-step"></a>Étape suivante
-[Configurer les groupes d'appareils dans Jamf Pro](mac-jamfpro-device-groups.md)
+[Configurer les groupes d’appareils dans Jamf Pro](mac-jamfpro-device-groups.md)
 

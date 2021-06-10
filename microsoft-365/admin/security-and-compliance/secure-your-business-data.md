@@ -1,5 +1,5 @@
 ---
-title: 10 principales méthodes de sécurisation des Microsoft 365 pour les plans d’entreprise
+title: 10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise
 f1.keywords:
 - CSH
 ms.author: sharik
@@ -29,9 +29,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52635961"
 ---
-# <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales méthodes de sécurisation des Microsoft 365 pour les plans d’entreprise
+# <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales façons de sécuriser les Microsoft 365 pour les plans d’entreprise
 
-Si vous êtes une petite ou moyenne entreprise utilisant l’un des plans d’entreprise de Microsoft et que votre type d’organisation est ciblé par des cybercriminels et des pirates informatiques, utilisez les instructions de cet article pour renforcer la sécurité de votre organisation. Ces conseils aident votre organisation à atteindre les objectifs décrits dans le Manuel de campagne de [cyber-sécurité de l’établissement d’état de L’État de Nouvelle-France.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
+Si vous êtes une petite ou moyenne organisation utilisant l’un des plans d’entreprise de Microsoft et que votre type d’organisation est ciblé par des cybercriminels et des pirates informatiques, utilisez les instructions de cet article pour renforcer la sécurité de votre organisation. Ces conseils aident votre organisation à atteindre les objectifs décrits dans le Manuel de campagne de [cyber-sécurité de l’établissement d’état de L’État de Nouvelle-France.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
 
 Microsoft recommande d’effectuer les tâches répertoriées dans le tableau suivant qui s’appliquent à votre plan de service.
 
@@ -48,7 +48,7 @@ Microsoft recommande d’effectuer les tâches répertoriées dans le tableau su
 |9 |[Se protéger contre les pièces jointes et les fichiers malveillants avec pièces jointes sécurisées](secure-your-business-data.md#atp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Se protéger contre les attaques par hameçonnage avec des liens sécurisés](secure-your-business-data.md#phishingatp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués.
+Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués.
 
 Avant de commencer, vérifiez votre score [de Microsoft 365 dans](../../security/defender/microsoft-secure-score.md) le centre Microsoft 365 sécurité. À partir d’un tableau de bord centralisé, vous pouvez surveiller et améliorer la sécurité de votre Microsoft 365, données, applications, appareils et infrastructure. Des points vous sont attribués pour configurer les fonctionnalités de sécurité recommandées, effectuer des tâches liées à la sécurité (telles que l’affichage de rapports) ou répondre à des recommandations avec une application ou un logiciel tiers. Grâce à des informations supplémentaires et à une visibilité accrue sur un ensemble plus large de produits et de services Microsoft, vous pouvez être certain de signaler l’état de sécurité de votre organisation.
 
@@ -70,7 +70,7 @@ Si votre abonnement est nouveau, les paramètres par défaut de sécurité peuve
 
 Pour activer ou désactiver les paramètres de sécurité par défaut, accédez au volet **Propriétés** pour Azure Active Directory (Azure AD) dans le Portail Azure.
 
-1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) avec des informations d'identification d'administrateur général.
+1. Connectez-vous au [Centre d'administration Microsoft 365](https://admin.microsoft.com) avec des informations d'identification d'administrateur général.
 2. Dans le volet de navigation gauche, sélectionnez **Afficher tout** puis sous **Centres d’administration**, sélectionnez **Azure Active Directory**.
 3. Dans le centre d’administration **Azure Active Directory** sélectionnez **Azure Active Directory** > **Propriétés**.
 4. Au bas de la page, sélectionnez **Gérer les paramètres de sécurité par défaut**.
@@ -117,7 +117,7 @@ Votre environnement Microsoft 365 inclut une protection contre les programmes ma
 
 1. Connectez-vous <https://protection.office.com> avec vos informations d’identification de compte d’administrateur.
 
-2. Dans le Centre de sécurité & conformité, dans le volet de  navigation de gauche, sous Gestion des menaces, choisissez Stratégie \> **anti-programme malveillant.**
+2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
 
 3. Double-cliquez sur la stratégie par défaut pour modifier cette stratégie à l’échelle de l’entreprise.
 
@@ -129,7 +129,7 @@ Votre environnement Microsoft 365 inclut une protection contre les programmes ma
 
 Pour plus d’informations, voir [Protection contre les programmes malveillants dans EOP.](../../security/office-365-security/anti-malware-protection.md)
 
-## <a name="5-protect-against-ransomware"></a>5 : se protéger contre les ransomware
+## <a name="5-protect-against-ransomware"></a>5 : Se protéger contre les ransomware
 <a name="ransomware"> </a>
 
 Un ransomware limite l’accès aux données en chiffrant des fichiers ou en verrouiller les écrans d’ordinateur. Il tente ensuite d’extorquer de l’argent à des personnes victime en demandant « rançon », généralement sous forme de cryptomonnaie telle que Cryptograph, en échange de l’accès aux données.
@@ -154,7 +154,7 @@ Pour créer une règle de transport de messagerie, regardez une courte vidéo de
 
 6. Sélectionnez **Enregistrer**.
     
-| Paramètres | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Paramètre | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : bloquer les types de fichiers  <br/> |
 |Appliquez cette règle si . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |
@@ -165,7 +165,7 @@ Pour créer une règle de transport de messagerie, regardez une courte vidéo de
 > [!TIP]
 > Vous pouvez également ajouter les fichiers que vous souhaitez bloquer à la liste anti-programme malveillant à [l’étape 4.](#4-raise-the-level-of-protection-against-malware-in-mail)
 
-Pour plus d'informations, voir :
+Pour plus d’informations, voir :
 
 - [Ransomware : comment réduire les risques](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -190,7 +190,7 @@ Pour créer une règle de transport de messagerie :
 
 6. Sélectionnez **Enregistrer**.
 
-|Paramètres|Rejeter les e-mails de forward automatique vers des domaines externes|
+|Paramètre|Rejeter les e-mails de forward automatique vers des domaines externes|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
@@ -222,9 +222,9 @@ Dans Outlook.com, **sélectionnez Protéger** dans le courrier électronique. La
 
 ![Chiffrement des messages électroniques dans Outlook.com](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
 
-### <a name="to-receive-encrypted-email"></a>Pour recevoir des e-mails chiffrés
+### <a name="to-receive-encrypted-email"></a>Pour recevoir des messages chiffrés
 
-Si le destinataire dispose de Outlook 2013 ou Outlook 2016 et d’un compte de messagerie Microsoft, une alerte s’affichant concernant les autorisations restreintes de l’élément s’affichant dans le volet de lecture. Une fois le message ouvert, le destinataire peut afficher le message comme n’importe quel autre message.
+Si le destinataire dispose de Outlook 2013 ou Outlook 2016 et d’un compte de messagerie Microsoft, une alerte s’affichant concernant les autorisations restreintes de l’élément s’affichant dans le volet de lecture. Une fois le message ouvert, le destinataire peut afficher le message comme n’importe quel autre.
 
 Si le destinataire utilise un autre client de messagerie ou compte de messagerie, tel que Gmail ou Yahoo, il voit un lien qui lui permet de se connecter pour lire le message électronique ou de demander un code secret à usage unique pour afficher le message dans un navigateur web. Si les utilisateurs ne reçoivent pas le courrier électronique, leur faire vérifier leur dossier Courrier indésirable ou Courrier indésirable.
 
@@ -245,13 +245,13 @@ Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, rega
 
 2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, sélectionnez **Stratégie**.
 
-3. Dans la page Stratégie, **sélectionnez Anti-hameçonnage.**
+3. Dans la page Stratégie, sélectionnez **Anti-hameçonnage.**
 
 4. Dans la page Anti-hameçonnage, **sélectionnez + Créer.** Un Assistant vous lance pour définir votre stratégie anti-hameçonnage.
 
 5. Spécifiez le nom, la description et les paramètres de votre stratégie comme recommandé dans le graphique ci-dessous. Pour [plus d’informations,](../../security/office-365-security/set-up-anti-phishing-policies.md) voir la stratégie anti-hameçonnage dans Microsoft Defender Office 365 options de protection.
 
-6. Après avoir examiné vos paramètres, **sélectionnez Créer cette stratégie ou** **Enregistrer,** le cas échéant.
+6. Après avoir examiné vos paramètres, **sélectionnez Créer cette** stratégie ou **Enregistrer,** le cas échéant.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -267,10 +267,10 @@ Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, rega
 
 Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9 : Se protéger contre les pièces jointes malveillantes et les fichiers avec pièces jointes sécurisées
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9 : Se protéger contre les pièces jointes et les fichiers malveillants avec pièces jointes sécurisées
 <a name="atp"> </a>
 
-Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante en regardant simplement un message électronique. Microsoft Defender pour Office 365 inclut la protection contre les pièces jointes sécurisées, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
+Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en regardant un message électronique. Microsoft Defender pour Office 365 inclut la protection contre les pièces jointes sécurisées, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
 
 Pour créer une stratégie de pièce jointe sécurisée, regardez une courte vidéo de [formation](../../business-video/safe-attachments.md)ou complétez les étapes suivantes :
 
@@ -286,7 +286,7 @@ Pour créer une stratégie de pièce jointe sécurisée, regardez une courte vid
 
 6. Appliquez les paramètres du tableau suivant.
 
-7. Après avoir examiné vos paramètres, **sélectionnez Créer cette stratégie ou** **Enregistrer,** le cas échéant.
+7. Après avoir examiné vos paramètres, **sélectionnez Créer cette** stratégie ou **Enregistrer,** le cas échéant.
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
@@ -339,7 +339,7 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
 |Nom|Stratégie de liens sécurisés pour tous les destinataires du domaine|
-|Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages|Sélectionnez Sur : les URL seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur **clique sur le lien.**|
+|Sélectionner l’action pour les URL potentiellement malveillantes inconnues dans les messages|Sélectionnez Sur : les URL seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur **clique sur le lien.**|
 |Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers|Sélectionnez cette case.|
 |Appliqué à|Le domaine du destinataire est . . . sélectionnez votre domaine.|
 |

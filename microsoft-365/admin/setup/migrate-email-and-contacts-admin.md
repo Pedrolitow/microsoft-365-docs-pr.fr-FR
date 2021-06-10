@@ -53,7 +53,7 @@ Suivez ces étapes pour importer ou migrer le courrier électronique, les contac
     
 - [Importer un agenda Google](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
 
-## <a name="watch-import-calendars"></a>Watch: Import calendars
+## <a name="watch-import-calendars"></a>Regarder : Importer des calendriers
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   

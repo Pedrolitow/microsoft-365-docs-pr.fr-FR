@@ -44,7 +44,7 @@ ms.locfileid: "52772112"
 Isole un appareil de l’accès au réseau externe.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -90,7 +90,7 @@ IsolationType   | String |  Type de l’isolation. Les valeurs autorisées sont 
 
 
 ## <a name="response"></a>Réponse
-Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 
 ## <a name="example"></a>Exemple

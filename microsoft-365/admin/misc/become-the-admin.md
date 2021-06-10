@@ -34,7 +34,7 @@ ms.locfileid: "52635985"
 Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’un client non pris en charge créé par une inscription d’utilisateur libre-service, vous pouvez le faire avec une prise de contrôle d’administrateur interne.
 
 > [!NOTE]
-> Une inscription en libre-service pour tout service cloud qui utilise Azure AD ajoute l’utilisateur à un répertoire Azure AD nonmanaté ou « shadow » et crée un client non pris en compte. Un client non gérant est un répertoire sans administrateur général. Pour déterminer si un client est géré ou non, voir [Déterminer le type de client.](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type) 
+> Une inscription en libre-service pour tout service cloud qui utilise Azure AD ajoute l’utilisateur à un répertoire Azure AD non pris en compte ou « shadow » et crée un client non pris en compte. Un client non gérant est un répertoire sans administrateur général. Pour déterminer si un client est géré ou non, voir [Déterminer le type de client.](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type) 
   
 ## <a name="step-1-verify-your-email-address"></a>Étape 1 : Vérifier votre adresse de messagerie
 
@@ -45,11 +45,11 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
 
 2. Inscrivez-vous avec un compte d’utilisateur qui utilise le nom de domaine de votre organisation (comme `powerbiadmin@contoso.com` ). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
 
-3. Recherchez le **code de vérification dans votre** courrier électronique et entrez le code pour valider votre adresse de messagerie.
+3. Recherchez le **code de vérification dans votre** courrier électronique et entrez-le pour valider votre adresse de messagerie.
     
 ## <a name="step-2-create-a-new-account"></a>Étape 2 : Créer un compte
 
-1. Lorsque vous entrez le code de vérification, vous êtes amené à une page dans laquelle vous pouvez créer un compte. 
+1. Lorsque vous entrez le code de vérification, vous êtes conduit à une page dans laquelle vous pouvez créer un compte. 
     
 2. Remplissez les champs nom d’utilisateur et mot de passe avec le compte que vous souhaitez utiliser, puis sélectionnez **Démarrer.** 
     

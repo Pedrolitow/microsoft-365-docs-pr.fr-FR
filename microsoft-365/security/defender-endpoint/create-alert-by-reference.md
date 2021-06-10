@@ -40,14 +40,14 @@ ms.locfileid: "52772388"
 
 ## <a name="api-description"></a>Description de l’API
 Crée une [alerte en](alerts.md) haut de **l’événement.**
-<br>**Microsoft Defender for Endpoint Event est** requis pour la création de l’alerte.
+<br>**L’événement Microsoft Defender for Endpoint est** requis pour la création de l’alerte.
 <br>Vous devez fournir 3 paramètres à partir de l’événement dans la demande : l’heure de l’événement, **l’ID** de l’ordinateur et **l’ID de rapport.** Voir l’exemple ci-dessous.
 <br>Vous pouvez utiliser un événement trouvé dans l’API de recherche avancée ou le portail.
 <br>S’il existe une alerte ouverte sur le même appareil avec le même titre, la nouvelle alerte créée est fusionnée avec elle.
 <br>Un examen automatique démarre automatiquement sur les alertes créées via l’API.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 15 appels par minute.
 
 
@@ -63,7 +63,7 @@ Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et é
 >[!Note]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
->- L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+>- L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 

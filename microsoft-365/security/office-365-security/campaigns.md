@@ -43,9 +43,9 @@ Campaign Views vous permet de voir la présentation d’une attaque plus rapidem
 
 ## <a name="what-is-a-campaign"></a>Qu’est-ce qu’une campagne ?
 
-Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent des informations d’identification et des données d’entreprise sont un secteur d’activité important. À mesure que les technologies augmentent afin d’arrêter les attaques, les attaquants modifient leurs méthodes afin de garantir un succès continu.
+Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent des informations d’identification et des données d’entreprise sont un secteur d’activité important. À mesure que les technologies augmentent pour arrêter les attaques, les attaquants modifient leurs méthodes afin de garantir un succès continu.
 
-Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
+Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Source de l’attaque**: adresses IP sources et domaines de messagerie de l’expéditeur.
 - **Propriétés du** message : le contenu, le style et le ton des messages.
@@ -56,18 +56,18 @@ Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs j
 
 ## <a name="campaign-views-in-the-security-center"></a>Affichages des campagnes dans le centre de sécurité
 
-Les affichages de campagne sont disponibles dans le [centre Microsoft 365 sécurité](https://security.microsoft.com) à l’adresse **e-mail & campagnes** de \> collaboration, ou directement à l’adresse <https://security.microsoft.com/campaigns> .
+Les affichages de campagne sont disponibles dans le [centre Microsoft 365 sécurité](https://security.microsoft.com) sur le site **e-mail &** campagnes de \> collaboration, ou directement à l’adresse <https://security.microsoft.com/campaigns> .
 
 ![Vue d’ensemble des campagnes dans Microsoft 365 sécurité de l’équipe](../../media/campaigns-overview.png)
 
-Vous pouvez également obtenir les affichages de campagne à partir des pages :
+Vous pouvez également obtenir les affichages campagne à partir des points de vue de campagne :
 
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Campagnes**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Tous les e-mails** \> **Onglet Campagne**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Hameçonnage** \> **Onglet Campagne**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Programmes malveillants** \> **Onglet Campagne**
 
-Pour accéder aux affichages campagne, vous devez être membre  des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Lecteur Sécurité dans le Centre de sécurité. Pour plus d’informations, voir Autorisations dans le centre [Microsoft 365 conformité et le centre Microsoft 365 sécurité.](permissions-microsoft-365-security-center.md)
+Pour accéder aux affichages campagne, vous devez être membre  des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Lecteur Sécurité dans le centre de sécurité. Pour plus d’informations, voir Autorisations dans le centre de conformité Microsoft 365 et [le centre Microsoft 365 de sécurité.](permissions-microsoft-365-security-center.md)
 
 ## <a name="campaigns-overview"></a>Vue d’ensemble des campagnes
 
@@ -100,23 +100,23 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 - **Clicked**: nombre d’utilisateurs qui ont cliqué sur l’URL ou ouvert la pièce jointe dans le message d’hameçonnage.
 
-- **Taux de** clic : pourcentage tel que calculé par «**Boîte** de  /  **réception cliquée**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires ont pu identifier le message comme hameçonnage et s’ils n’ont pas cliqué sur l’URL de la charge utile.
+- **Taux de** clic : pourcentage calculé par «**Boîte de**  /  **réception cliquée**». Cette valeur est un indicateur de l’efficacité de la campagne. En d’autres termes, si les destinataires ont pu identifier le message comme hameçonnage et s’ils n’ont pas cliqué sur l’URL de la charge utile.
 
   Notez que **le taux de clics** n’est pas utilisé dans les campagnes anti-programme malveillant.
 
 - **Visité :** nombre d’utilisateurs qui ont réellement effectué l’accès au site web de charge utile. S’il existe **des valeurs Clicked,** mais que les liens sécurisés bloquent l’accès au site web, cette valeur est zéro.
 
-**L’onglet Origine de** la campagne affiche les sources des messages sur une carte du monde.
+**L’onglet Origine** de la campagne affiche les sources des messages sur une carte du monde.
 
 ### <a name="filters-and-settings"></a>Filtres et paramètres
 
-En haut de la page **Campagne,** plusieurs paramètres de filtre et de requête vous permettent de rechercher et d’isoler des campagnes spécifiques.
+En haut de la page **Campagne,** il existe plusieurs paramètres de filtre et de requête pour vous aider à rechercher et isoler des campagnes spécifiques.
 
 ![Filtres de campagne](../../media/campaign-filters-and-settings.png)
 
 Le filtrage le plus simple que vous pouvez faire est la date/l’heure de début et la date/heure de fin.
 
-Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser**.
+Pour filtrer davantage l’affichage, vous pouvez effectuer un filtrage de propriété unique avec plusieurs valeurs en cliquant sur le bouton **Type** de campagne, en sélectionnant, puis en cliquant sur **Actualiser.**
 
 Les propriétés filtrables de campagne disponibles dans le bouton **Type** de campagne sont décrites dans la liste suivante :
 
@@ -214,7 +214,7 @@ Le diagramme contient les informations suivantes :
 
   ****
 
-  |Valeur|Verdict du filtre anti-courrier indésirable|Description|
+  |Valeur|Verdict de filtrage du courrier indésirable|Description|
   |---|---|---|
   |**Autorisé**|`SFV:SKN` <p> `SFV:SKI`|Le message a été marqué comme n’étant pas du courrier indésirable et/ou a ignoré le filtrage avant d’être évalué par le filtrage du courrier indésirable. Par exemple, le message a été marqué comme n’étant pas un courrier indésirable par une règle de flux de messagerie (également appelée règle de transport). <p> Le message a ignoré le filtrage du courrier indésirable pour d’autres raisons. Par exemple, l’expéditeur et le destinataire semblent se trouver dans la même organisation.|
   |**Bloqué**|`SFV:SKS`|Le message a été marqué comme courrier indésirable avant d’être évalué par le filtrage du courrier indésirable. Par exemple, par une règle de flux de messagerie.|
@@ -224,7 +224,7 @@ Le diagramme contient les informations suivantes :
   |**Autoriser le client**<sup>\*</sup>|`SFV:SKA`|Le message a ignoré le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
   |**Bloc de client**<sup>\*\*</sup>|`SFV:SKA`|Le message a été bloqué par le filtrage du courrier indésirable en raison des paramètres d’une stratégie anti-courrier indésirable. Par exemple, l’expéditeur se trouvait dans la liste des expéditeurs autorisés ou dans la liste des domaines autorisés.|
   |**Autoriser l’utilisateur**<sup>\*</sup>|`SFV:SFE`|Le message a ignoré le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs sûrs d’un utilisateur.|
-  |**Blocage de l’utilisateur**<sup>\*\*</sup>|`SFV:BLK`|Le message a été bloqué par le filtrage du courrier indésirable, car l’expéditeur se trouvait dans la liste des expéditeurs bloqués d’un utilisateur.|
+  |**Blocage de l’utilisateur**<sup>\*\*</sup>|`SFV:BLK`|Le message a été bloqué par le filtrage du courrier indésirable car l’expéditeur se trouvait dans la liste des expéditeurs bloqués d’un utilisateur.|
   |**ZAP**|s/o|[La purge automatique de zéro heure (ZAP)](zero-hour-auto-purge.md) a déplacé le message remis dans le dossier Courrier indésirable ou mis en quarantaine. Vous configurez l’action dans votre stratégie anti-courrier indésirable.|
   |
 
@@ -252,12 +252,12 @@ Le diagramme contient les informations suivantes :
 
 Lorsqu’un message de hameçonnage est remis dans la boîte de réception ou le dossier Courrier indésirable d’un destinataire, il est toujours possible que l’utilisateur clique sur l’URL de la charge utile. Ne pas cliquer sur l’URL est une petite mesure de réussite, mais vous devez déterminer pourquoi le message de hameçonnage a même été remis à la boîte aux lettres.
 
-Si un utilisateur a cliqué sur l’URL de la charge utile dans le message d’hameçonnage, les actions s’affichent dans la zone de **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
+Si un utilisateur a cliqué sur l’URL de la charge utile dans le message de hameçonnage, les actions s’affichent dans la zone **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
 
 - **Autorisé**
 - **BlockPage**: le destinataire [a](safe-links.md) cliqué sur l’URL de la charge utile, mais son accès au site web malveillant a été bloqué par une stratégie de liens sécurisés dans votre organisation.
 - **BlockPageOverride**: le destinataire a cliqué sur l’URL de la charge utile dans le message, les liens sécurisés ont essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Examinez vos [stratégies de liens](set-up-safe-links-policies.md) sécurisés pour voir pourquoi les utilisateurs sont autorisés à remplacer le verdict de liens sécurisés et à continuer vers le site web malveillant.
-- **PendingDetonationPage**: pièces jointes sécurisées dans Microsoft Defender pour Office 365 est en cours d’ouverture et d’examen de l’URL de la charge utile dans un environnement d’ordinateur virtuel.
+- **PendingDetonationPage**: les pièces jointes sécurisées dans Microsoft Defender pour Office 365 sont en cours d’ouverture et d’examen de l’URL de la charge utile dans un environnement d’ordinateur virtuel.
 - **PendingDetonationPageOverride**: le destinataire a été autorisé à remplacer le processus de détonation de la charge utile et à ouvrir l’URL sans attendre les résultats.
 
 ### <a name="tabs"></a>Onglets

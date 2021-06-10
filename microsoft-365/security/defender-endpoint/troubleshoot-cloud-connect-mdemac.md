@@ -31,7 +31,7 @@ ms.locfileid: "51935208"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Plateforme** macOS
 
@@ -62,18 +62,18 @@ Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 ```
 
-Si le test de connectivité échoue, vérifiez si [](microsoft-defender-endpoint-mac.md#network-connections) l'appareil dispose d'un accès à Internet et si l'un des points de terminaison requis par le produit est bloqué par un proxy ou un pare-feu.
+Si le test de connectivité échoue, vérifiez si [](microsoft-defender-endpoint-mac.md#network-connections) l’appareil dispose d’un accès à Internet et si l’un des points de terminaison requis par le produit est bloqué par un proxy ou un pare-feu.
 
-Les échecs avec erreur d'erreur 35 ou 60 indiquent le rejet de l'épinglage de certificat, ce qui indique un problème potentiel avec l'inspection SSL ou HTTPS. Consultez les instructions ci-dessous concernant la configuration de l'inspection SSL.
+Les échecs avec erreur d’erreur 35 ou 60 indiquent le rejet de l’épinglage de certificat, ce qui indique un problème potentiel avec l’inspection SSL ou HTTPS. Consultez les instructions ci-dessous concernant la configuration de l’inspection SSL.
 
 ## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-proxy-autoconfig-pac-or-with-web-proxy-autodiscovery-protocol-wpad"></a>Étapes de résolution des problèmes pour les environnements sans proxy ou avec la mise en conférence automatique du proxy (PAC) ou avec le protocole WPAD (Web Proxy Autodiscovery Protocol)
-Utilisez la procédure suivante pour vérifier qu'une connexion n'est pas bloquée dans un environnement sans proxy ou avec la mise en service automatique du proxy (PAC) ou avec le protocole WPAD (Web Proxy Autodiscovery Protocol).
+Utilisez la procédure suivante pour vérifier qu’une connexion n’est pas bloquée dans un environnement sans proxy ou avec la mise en service automatique du proxy (PAC) ou avec le protocole WPAD (Web Proxy Autodiscovery Protocol).
 
 Si un proxy ou un pare-feu bloque le trafic anonyme, assurez-vous que le trafic anonyme est autorisé dans les URL répertoriées précédemment.
 
 > [!WARNING]
-> Les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seuls pac, WPAD ou un proxy statique est utilisé. L'inspection et l'interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l'inspection SSL et votre serveur proxy afin de transmettre directement les données de Microsoft Defender for Endpoint sur macOS aux URL pertinentes sans interception. L'ajout de votre certificat d'interception au magasin global n'autorise pas l'interception.
-Pour tester qu'une connexion n'est pas bloquée : dans un navigateur tel que Microsoft Edge pour Mac ou Safari, https://x.cp.wd.microsoft.com/api/report ouvrez et https://cdn.x.cp.wd.microsoft.com/ping .
+> Les proxies authentifiés ne sont pas pris en charge. Assurez-vous que seuls pac, WPAD ou un proxy statique est utilisé. L’inspection et l’interception des proxies SSL ne sont pas non plus pris en charge pour des raisons de sécurité. Configurez une exception pour l’inspection SSL et votre serveur proxy afin de transmettre directement les données de Microsoft Defender for Endpoint sur macOS aux URL pertinentes sans interception. L’ajout de votre certificat d’interception au magasin global n’autorise pas l’interception.
+Pour tester qu’une connexion n’est pas bloquée : dans un navigateur tel que Microsoft Edge pour Mac ou Safari, ouvrez https://x.cp.wd.microsoft.com/api/report et https://cdn.x.cp.wd.microsoft.com/ping .
 
 Éventuellement, dans Terminal, exécutez la commande suivante :
 

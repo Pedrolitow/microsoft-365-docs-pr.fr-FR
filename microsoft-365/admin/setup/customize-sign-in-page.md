@@ -49,7 +49,7 @@ La figure suivante montre les parties de la page de connexion que vous pouvez mo
     
 En plus de la page de connexion, vous pouvez personnaliser la page du Panneau d'accès dans Azure.
   
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous êtes prêt à ajouter une personnalisation, explorez les options disponibles dans le contenu Azure : [Ajout d'une marque de société aux pages de connexion et du volet d'accès](/azure/active-directory/fundamentals/customize-branding).
 

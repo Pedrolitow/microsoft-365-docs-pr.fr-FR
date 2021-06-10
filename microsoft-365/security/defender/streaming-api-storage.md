@@ -1,6 +1,6 @@
 ---
 title: Diffuser Microsoft 365 événements Defender à votre compte Stockage client
-description: Découvrez comment configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée sur Stockage compte.
+description: Découvrez comment configurer Microsoft 365 Defender pour diffuser en continu des événements de recherche avancée sur Stockage compte.
 keywords: exportation de données brutes, API de diffusion en continu, API, Hubs d’événements, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -40,7 +40,7 @@ ms.locfileid: "52772504"
 
 2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.Insights**.
 
-## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes :
+## <a name="enable-raw-data-streaming"></a>Activez la diffusion en continu des données brutes :
 
 1. Connectez-vous [Microsoft 365 centre de sécurité Defender](https://security.microsoft.com) en tant qu’administrateur général * ou _*_administrateur_ de sécurité **.
 
@@ -52,7 +52,7 @@ ms.locfileid: "52772504"
 
 5. Choose **Forward events to stockage Azure**.
 
-6. Tapez votre **ID Stockage de compte de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under Stockage Account Resource **ID:**
+6. Tapez votre **ID Stockage de ressource de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under Stockage Account Resource **ID:**
 
    ![Image de l’ID1 de ressource du hub d’événements](../defender-endpoint/images/storage-account-resource-id.png)
 

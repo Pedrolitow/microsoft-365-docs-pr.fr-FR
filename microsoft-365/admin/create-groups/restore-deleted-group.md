@@ -37,7 +37,7 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Adresses de messagerie du groupe.
     
-- Exchange Online boîte de réception et calendrier partagés.
+- Exchange Online boîte de réception et le calendrier partagés.
     
 - SharePoint Site d’équipe et fichiers en ligne.
     
@@ -45,7 +45,7 @@ En cas de restauration d'un groupe, le contenu suivant est restauré :
     
 - Planificateur.
     
-- Équipes
+- Teams
 
 - Yammer de groupe et de groupe (si le groupe Microsoft 365 a été créé à partir de Yammer)
 
@@ -79,7 +79,7 @@ Si vous êtes administrateur général ou administrateur de groupes, vous pouvez
 
 ## <a name="got-questions-about-microsoft-365-groups"></a>Vous avez des questions sur Microsoft 365 groupes ?
 
-Visitez le site [Tech Community Microsoft](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) pour publier des questions et participer à des conversations sur Microsoft 365 groupes. 
+Visitez la Community [Microsoft Tech pour](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) publier des questions et participer à des conversations sur Microsoft 365 groupes. 
   
 ## <a name="related-content"></a>Contenu associé
 

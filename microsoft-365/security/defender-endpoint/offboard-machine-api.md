@@ -31,7 +31,7 @@ ms.locfileid: "52771992"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 
@@ -44,7 +44,7 @@ ms.locfileid: "52771992"
 Appareil de tableau de bord à partir de Defender pour point de terminaison.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
  - Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -86,7 +86,7 @@ Paramètre | Type    | Description
 Commentaire |   Chaîne |    Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
+Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 
 ## <a name="example"></a>Exemple

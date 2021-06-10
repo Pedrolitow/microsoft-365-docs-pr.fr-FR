@@ -36,7 +36,7 @@ Une fois approuvé, l’utilisateur invité est ajouté à l’annuaire et au gr
 
 > [!Note]
 > Yammer Entreprise réseaux qui sont en mode natif ou la région ue ne [sont](/yammer/manage-security-and-compliance/manage-data-compliance) pas en charge les invités réseau.
-> Microsoft 365 Les Yammer connectés ne peuvent pas prendre en charge l’accès invité actuellement, mais vous pouvez créer des groupes externes non connectés dans Yammer réseau. Voir [Créer et gérer des groupes externes dans Yammer](/yammer/work-with-external-users/create-and-manage-external-groups) pour obtenir des instructions.
+> Microsoft 365 Les groupes Yammer connectés ne peuvent pas prendre en charge l’accès invité pour le moment, mais vous pouvez créer des groupes externes non connectés dans Yammer réseau. Voir [Créer et gérer des groupes externes dans Yammer](/yammer/work-with-external-users/create-and-manage-external-groups) pour obtenir des instructions.
 
 L’accès invité dans les groupes est souvent utilisé dans le cadre d’un scénario plus large qui inclut SharePoint ou Teams. Ces services ont leurs propres paramètres de partage d’invités. Pour obtenir des instructions complètes sur la configuration du partage d’invités entre groupes, SharePoint et Teams, voir :
 
@@ -47,9 +47,9 @@ L’accès invité dans les groupes est souvent utilisé dans le cadre d’un sc
 
 Si vous souhaitez activer ou désactiver l’accès invité dans les groupes, vous pouvez le faire dans Microsoft 365 d’administration.
 
-1. Dans le Centre d’administration, sélectionnez Afficher  tous Paramètres l’organisation et sous l’onglet \>  \>  **Services,** **sélectionnez Microsoft 365 groupes.**
+1. Dans le Centre d’administration, sélectionnez **Afficher** tous Paramètres l’organisation et sous l’onglet \>  \>  **Services,** **sélectionnez Microsoft 365 groupes.**
   
-2. Dans la page **Microsoft 365** groupes, choisissez si vous souhaitez laisser des personnes extérieures à votre organisation accéder aux ressources de groupe ou laisser les propriétaires de groupes ajouter des personnes extérieures à votre organisation à des groupes.
+2. Dans la page **Microsoft 365 groupes,** choisissez si vous souhaitez laisser des personnes extérieures à votre organisation accéder aux ressources de groupe ou laisser les propriétaires de groupes ajouter des personnes extérieures à votre organisation à des groupes.
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>Ajouter des invités à un groupe Microsoft 365 à partir du Centre d’administration
 

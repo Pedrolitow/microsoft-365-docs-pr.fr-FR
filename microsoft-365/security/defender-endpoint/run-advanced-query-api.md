@@ -37,7 +37,7 @@ ms.locfileid: "52772400"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 
 1. Vous pouvez uniquement exécuter une requête sur les données des 30 derniers jours.
 
@@ -49,7 +49,7 @@ ms.locfileid: "52772400"
 
 4. La durée d’exécution maximale d’une seule demande est de 10 minutes.
 
-5. La réponse 429 représente l’atteinte de la limite de quota soit par nombre de demandes, soit par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
+5. La réponse 429 représente l’atteinte de la limite de quota par nombre de demandes ou par processeur. Lire le corps de la réponse pour comprendre quelle limite a été atteinte. 
 
 ## <a name="permissions"></a>Autorisations
 
