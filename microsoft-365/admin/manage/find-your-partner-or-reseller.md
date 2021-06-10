@@ -32,13 +32,13 @@ ms.locfileid: "51580941"
 ---
 # <a name="find-your-partner-or-reseller"></a>Trouver votre partenaire ou revendeur
 
-En tant qu’administrateur, vous pouvez travailler avec un partenaire pour acheter, activer et renouveler des abonnements Microsoft 365 via un programme de licence en volume Microsoft Open. 
+En tant qu’administrateur, vous pouvez travailler avec un partenaire pour acheter, activer et renouveler des abonnements Microsoft 365 par le biais d’un programme de licence en volume Microsoft Open. 
   
  **Vous cherchez à déterminer si le programme de licence en volume Open est adapté à vos besoins ?** Consultez la [vue d'ensemble des programmes Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkId=613298).
   
 ## <a name="find-a-new-partner-or-reseller"></a>Rechercher un nouveau partenaire ou revendeur
 
-Si vous êtes prêt à acheter ou renouveler Microsoft 365 via le programme de licence en volume Open, ou si vous souhaitez simplement plus d’informations sur l’utilisation d’un partenaire, choisissez une option ci-dessous. 
+Si vous êtes prêt à acheter ou renouveler des Microsoft 365 par le biais de licences en volume ouvertes, ou si vous souhaitez simplement plus d’informations sur l’utilisation d’un partenaire, choisissez une option ci-dessous. 
   
 - [Rechercher un partenaire à l’aide de Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
@@ -51,7 +51,7 @@ Si vous êtes prêt à acheter ou renouveler Microsoft 365 via le programme de l
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Obtenir des informations sur les partenaires dans le Centre d’administration
 
-1. Dans le Centre d’administration, allez à la page **Relations des partenaires paramètres.**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank"></a>
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relations de partenaires.</a>
   
 2. Si vous avez un partenaire, son nom et sa relation avec votre organisation sont répertoriés ici. Pour afficher les informations de contact du partenaire (numéro de téléphone et adresse e-mail), sélectionnez le nom du partenaire.
     

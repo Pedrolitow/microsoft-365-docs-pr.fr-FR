@@ -1,7 +1,7 @@
 ---
 title: Corriger les vulnérabilités à l’Gestion des menaces et des vulnérabilités
 description: Corriger les faiblesses de sécurité découvertes par le biais de recommandations de sécurité et créer des exceptions si nécessaire, Gestion des menaces et des vulnérabilités.
-keywords: Correction tvm de Microsoft Defender for Endpoint, Microsoft Defender for Endpoint tvm, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités threat & gestion des vulnérabilités remediation, tvm remediation intune, tvm remediation sccm
+keywords: Correction tvm De Microsoft Defender pour point de terminaison, Microsoft Defender pour tvm de point de terminaison, Gestion des menaces et des vulnérabilités, & gestion des vulnérabilités contre les menaces, correction des menaces & gestion des vulnérabilités, correction tvm intune, sccm de correction tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -42,7 +42,7 @@ La Gestion des menaces et des vulnérabilités microsoft Defender pour point de 
 
 ### <a name="enable-microsoft-intune-connection"></a>Activer Microsoft Intune connexion
 
-Pour utiliser cette fonctionnalité, activez vos Microsoft Intune connexions. Dans la Centre de sécurité Microsoft Defender, accédez à **Paramètres**  >  **fonctionnalités**  >  **générales avancées.** Faites défiler vers le bas et **recherchez Microsoft Intune connexion.** Par défaut, le basculement est désactivé. Activer votre **Microsoft Intune de** **connexion.**
+Pour utiliser cette fonctionnalité, activez vos Microsoft Intune connexions. Dans la Centre de sécurité Microsoft Defender, accédez **à Paramètres**  >  **fonctionnalités**  >  **générales avancées.** Faites défiler vers le bas et **recherchez Microsoft Intune connexion.** Par défaut, le basculement est désactivé. Activer votre **Microsoft Intune de** **connexion.**
 
 **Remarque**: si la connexion Intune est activée, vous pouvez créer une tâche de sécurité Intune lors de la création d’une demande de correction. Cette option n’apparaît pas si la connexion n’est pas définie.
 
@@ -66,7 +66,7 @@ Pour [plus d’informations, voir Utiliser Intune](/intune/atp-manage-vulnerabil
 Si vous souhaitez vérifier la façon dont le ticket s’affiche dans Intune, voir Utiliser [Intune](/intune/atp-manage-vulnerabilities) pour corriger les vulnérabilités identifiées par Microsoft Defender pour endpoint pour plus d’informations.
 
 >[!NOTE]
->Si votre demande implique de corriger plus de 10 000 appareils, nous ne pouvons envoyer que 10 000 appareils pour correction à Intune.
+>Si votre demande implique la correction de plus de 10 000 appareils, nous ne pouvons envoyer que 10 000 appareils pour correction à Intune.
 
 Une fois les faiblesses de cybersécurité de votre organisation identifiées et mappées aux [recommandations](tvm-security-recommendation.md)de sécurité actionnables, commencez à créer des tâches de sécurité. Vous pouvez créer des tâches par le biais de l’intégration Microsoft Intune où les tickets de correction sont créés.
 
@@ -74,7 +74,7 @@ Diminuez l’exposition de votre organisation contre les vulnérabilités et aug
 
 ## <a name="view-your-remediation-activities"></a>Afficher vos activités de correction
 
-Lorsque vous envoyez une demande de correction à partir de la page Recommandations en matière de sécurité, une activité de correction démarre. Une tâche de sécurité qui peut être suivi dans la **page** de correction Gestion des menaces et des vulnérabilités et un ticket de correction est créé dans Microsoft Intune.
+Lorsque vous envoyez une demande de correction à partir de la page Recommandations en matière de sécurité, une activité de correction est lancé. Une tâche de sécurité qui peut être suivi dans la **page** de correction Gestion des menaces et des vulnérabilités et un ticket de correction est créé dans Microsoft Intune.
 
 Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller.
 

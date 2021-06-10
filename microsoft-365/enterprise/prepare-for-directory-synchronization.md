@@ -35,7 +35,7 @@ ms.locfileid: "52259558"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Les avantages de la synchronisation d’annuaires et de l’identité hybride de votre organisation sont les suivants :
 
@@ -64,7 +64,7 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
 
 3. Si possible, assurez-vous d’une valeur valide et unique pour l’attribut **userPrincipalName** dans l’objet utilisateur de **l’utilisateur.** Pour une meilleure expérience de synchronisation, assurez-vous que l’UPN AD DS correspond à l’UPN Azure AD. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName,** l’objet utilisateur doit contenir une valeur valide et unique pour l’attribut **sAMAccountName.**  Supprimez les valeurs dupliquées dans **l’attribut userPrincipalName.**
 
-4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations des attributs suivants du compte d’utilisateur AD DS sont correctes :
+4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations dans les attributs suivants du compte d’utilisateur AD DS sont correctes :
 
    - givenName
    - surname
@@ -81,7 +81,7 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
    - Code postal
    - Pays ou région
 
-## <a name="2-directory-object-and-attribute-preparation"></a>2. Préparation de l’objet directory et des attributs
+## <a name="2-directory-object-and-attribute-preparation"></a>2. Préparation de l’objet et de l’attribut d’annuaire
 
 Une synchronisation d’annuaires réussie entre vos services AD DS et Microsoft 365 exige que vos attributs AD DS soient correctement préparés. Par exemple, vous devez vous assurer que des caractères spécifiques ne sont pas utilisés dans certains attributs synchronisés avec l’environnement Microsoft 365 de sécurité. Les caractères inattendus n’entraînent pas l’échec de la synchronisation d’annuaires, mais peuvent renvoyer un avertissement. Les caractères non valides entraînent l’échec de la synchronisation d’annuaires.
 
@@ -91,7 +91,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
 
 - **displayName**
 
-  - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Microsoft 365.
+  - Si l’attribut existe dans l’objet utilisateur, il est synchronisé avec Microsoft 365.
   - Si cet attribut existe dans l’objet utilisateur, il doit y avoir une valeur pour celui-ci. Autrement dit, l’attribut ne doit pas être vide.
   - Nombre maximal de caractères : 256
 
@@ -162,7 +162,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Les lettres avec des marques diacritiques, telles que les umlauts, les accents et les tildes, sont des caractères non valides.
   - Le caractère @ est requis dans chaque **valeur userPrincipalName.**
   - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName**.
-  - Le nom d’utilisateur ne peut pas se terminer par un point (.), une eterr e ( ), un espace ou un &amp; signe at (@).
+  - Le nom d’utilisateur ne peut pas se terminer par un point (.), une eterr e ( ), un espace ou &amp; un signe at (@).
   - Le nom d’utilisateur ne peut pas contenir d’espaces.
   - Les domaines routables doivent être utilisés ; par exemple, les domaines locaux ou internes ne peuvent pas être utilisés.
   - Unicode est converti en caractères de trait de soulignement.
@@ -188,6 +188,6 @@ Si vous avez déjà défini la synchronisation d’annuaires, il se peut que l�
 
 Voir également comment préparer un domaine non routable (tel que le domaine [.local) pour la synchronisation d’annuaires.](prepare-a-non-routable-domain-for-directory-synchronization.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si vous avez effectué les étapes 1 à 5 ci-dessus, voir [Configurer la synchronisation d’annuaires.](set-up-directory-synchronization.md)

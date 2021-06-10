@@ -1,5 +1,5 @@
 ---
-title: Obtenir la dernière version de l’analyse de l’utilisation de Microsoft 365
+title: Obtenir la dernière version de l’analyse Microsoft 365'utilisation
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6561a052-02bb-479d-93ca-5a0f16faf2ee
-description: Obtenez la dernière version de l’analyse de l’utilisation de Microsoft 365.
+description: Obtenez la dernière version de l’analyse Microsoft 365'utilisation.
 ms.openlocfilehash: 2cc58814f1f2d01dd8e779751cdc6b0287faf29f
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,8 +27,8 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580761"
 ---
-# <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a>Obtenir la dernière version de l’analyse de l’utilisation de Microsoft 365
+# <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a>Obtenir la dernière version de l’analyse Microsoft 365'utilisation
 
-L’application de modèle peut être actualisée avec de nouvelles données ou de nouvelles visualisations plusieurs fois par an. Votre instance existante continuera de fonctionner, mais si vous souhaitez obtenir la dernière version, une nouvelle instance doit être créée et toutes les personnalisations doivent être appliquées à la nouvelle instance. Voir [Activer l’analyse de l’utilisation de Microsoft 365.](enable-usage-analytics.md) 
+L’application de modèle peut être actualisée avec de nouvelles données ou de nouvelles visualisations plusieurs fois par an. Votre instance existante continuera de fonctionner, mais si vous souhaitez obtenir la dernière version, une nouvelle instance doit être créée et toutes les personnalisations doivent être appliquées à la nouvelle instance. Voir [Activer l’analyse Microsoft 365'utilisation.](enable-usage-analytics.md) 
   
 

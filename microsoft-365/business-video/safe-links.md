@@ -32,7 +32,7 @@ ms.locfileid: "51580629"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
-Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 - Protection avancée contre les menaces, permet de protéger votre entreprise contre les sites malveillants lorsque les utilisateurs cliquent sur des liens dans les applications Office.
+Microsoft Defender pour Office 365 , anciennement appelé protection avancée contre les menaces Microsoft 365, permet de protéger votre entreprise contre les sites malveillants lorsque les utilisateurs cliquent sur des liens dans Office applications.
 
 ## <a name="try-it"></a>Essayez !
 
@@ -40,7 +40,7 @@ Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 - Protect
 1. Faites défiler vers le bas **pour renforcer la protection contre les menaces avancées.** Sélectionnez **Afficher,** **Gérer,** puis **Liens sécurisés ATP.**
 1. Sous **Stratégies qui s’appliquent à l’ensemble de l’organisation,** choisissez la stratégie par défaut, puis sélectionnez **l’icône** Modifier. 
 1. Entrez une URL que vous souhaitez bloquer.
-1. Sélectionnez **Utiliser des liens sécurisés dans les applications Office, Office pour iOS et Android**; select **Do not track when users click safe links**; et **sélectionnez Ne pas laisser les utilisateurs cliquer sur les liens sécurisés vers l’URL d’origine.** Elles peuvent déjà être sélectionnées si vous définissez la stratégie par défaut. Sélectionnez **Enregistrer**.
+1. Sélectionnez **Utiliser des liens sécurisés dans Office applications, Office pour iOS et Android**; select **Do not track when users click safe links**; et **sélectionnez Ne pas laisser les utilisateurs cliquer sur les liens sécurisés vers l’URL d’origine.** Elles peuvent déjà être sélectionnées si vous définissez la stratégie par défaut. Sélectionnez **Enregistrer**.
 1. Sous **Stratégies qui s’appliquent à des destinataires spécifiques,** **sélectionnez** Règle de liens sécurisés recommandée, puis sélectionnez **l’icône** Modifier.
 1. Sélectionnez **les paramètres,** faites défiler vers le bas, entrez l’URL que vous ne souhaitez pas vérifier, puis sélectionnez l’icône Ajouter. 
 1. Sélectionnez **Appliqué** à, puis sélectionnez votre nom de domaine. Sélectionnez les domaines supplémentaires à appliquer à la règle. Sélectionnez **Ajouter,** **OK,** puis **Enregistrer.**

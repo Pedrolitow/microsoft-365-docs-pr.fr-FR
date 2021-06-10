@@ -1,5 +1,5 @@
 ---
-title: Collaborer à l’aide d’Outlook et de Teams
+title: Collaborer à l’aide Outlook et Teams
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment utiliser Outlook et Microsoft Teams pour collaborer.
+description: Découvrez comment utiliser les Outlook et Microsoft Teams pour collaborer.
 ms.openlocfilehash: dc0eaf1b47796becf62222fb93ccd071cc197a1c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "51580665"
 ---
 # <a name="use-outlook-and-teams-together"></a>Utiliser conjointement Outlook et Teams
 
-Lorsque vous communiquez avec vos employés, partenaires, clients et autres membres de votre petite entreprise, utilisez Outlook et Teams dans Microsoft 365. Dans Outlook, vous trouverez la messagerie, les calendriers, les contacts et les tâches, tandis que dans Teams, vous trouverez des conversations, des fichiers, des réunions et un accès rapide à Microsoft et à des applications tierces. Voici un résumé de la façon dont vous pouvez utiliser chacun d’eux dans votre entreprise.
+Lorsque vous communiquez avec vos employés, partenaires, clients et autres membres de votre petite entreprise, utilisez Outlook et Teams dans Microsoft 365. Dans Outlook, vous trouverez le courrier électronique, les calendriers, les contacts et les tâches, tandis que dans Teams vous trouverez des conversations, des fichiers, des réunions et un accès rapide à Microsoft et à des applications tierces. Voici un résumé de la façon dont vous pouvez utiliser chacun d’eux dans votre entreprise.
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
@@ -38,20 +38,20 @@ Lorsque vous communiquez avec vos employés, partenaires, clients et autres memb
 - Ajoutez les noms, les numéros et les e-mails des personnes avec qui vous travaillez en tant que contacts.
 - Créez des tâches, des notes et d’autres façons de rester au fait de vos projets à court et à long terme.
 
-:::image type="content" source="../media/outlook-model.png" alt-text="Image stylisée de la page d’accueil d’Outlook.":::
+:::image type="content" source="../media/outlook-model.png" alt-text="Image stylisée de la page d’accueil Outlook.":::
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
 - Avoir des conversations enrichies en temps réel avec votre équipe et inviter des clients ou des invités à la conversation.
 - Avoir des conversations ou des appels privés et partager votre écran les uns avec les autres.
 - Planifier et participer à des réunions avec des employés et des invités.
-- Ajoutez ou partagez des fichiers à partir du site SharePoint associé ou de OneDrive Entreprise.
-- Ajoutez d’autres applications telles que Planner, Power BI ou GitHub à Teams.
+- Ajoutez ou partagez des fichiers à partir du site SharePoint ou de la OneDrive Entreprise.
+- Ajoutez d’autres applications telles que planner, Power BI ou GitHub à Teams.
 
-:::image type="content" source="../media/teams-model.png" alt-text="Image stylisée de la page d’accueil de Microsoft Teams."::: 
+:::image type="content" source="../media/teams-model.png" alt-text="Image stylisée de la page d Microsoft Teams d’accueil."::: 
 
 ## <a name="related-articles"></a>Articles connexes
 
-[Qu’est-ce qu’Outlook ?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
+[Qu’est-ce Outlook ?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Vue d’ensemble de Teams](/MicrosoftTeams/Teams-overview)
+[Teams vue d’ensemble](/MicrosoftTeams/Teams-overview)

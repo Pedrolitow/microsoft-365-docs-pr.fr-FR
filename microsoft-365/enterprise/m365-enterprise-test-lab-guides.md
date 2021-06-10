@@ -37,17 +37,17 @@ Vous pouvez également utiliser des TLG pour créer des environnements représen
   
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Pour obtenir une carte visuelle de tous les articles de la pile du Guide de laboratoire de test Microsoft 365 pour entreprise, développez le graphique suivant ou allez à La pile de guides de laboratoire de test [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)pour entreprise.
+Pour obtenir une carte visuelle de tous les articles de la pile de guides de laboratoire de test Microsoft 365 pour entreprise, développez le graphique suivant ou allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 [![Ensemble de guides de laboratoire de test Microsoft 365 pour entreprise](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Configuration de base
 
-Tout d’abord, créez un environnement de test [pour Microsoft 365 pour entreprise.](/microsoft-365-enterprise/) Vous pouvez créer deux types différents de configurations de base :
+Tout d’abord, créez un environnement de test [pour Microsoft 365 entreprise.](/microsoft-365-enterprise/) Vous pouvez créer deux types différents de configurations de base :
 
-- [Configuration](lightweight-base-configuration-microsoft-365-enterprise.md) de base légère : utilisez cette configuration lorsque vous souhaitez configurer et faire la démonstration des fonctionnalités de Microsoft 365 pour les entreprises dans un environnement cloud uniquement, qui n’inclut aucun composant local.
+- [Configuration](lightweight-base-configuration-microsoft-365-enterprise.md) de base légère : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités d’entreprise et les fonctionnalités dans un environnement cloud uniquement, qui n’inclut aucun composant local.
 
-- Configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) d’entreprise simulée : utilisez cette configuration lorsque vous souhaitez configurer et faire une démonstration des fonctionnalités et fonctionnalités de Microsoft 365 pour entreprise dans un environnement cloud hybride, qui utilise des composants locaux tels qu’un domaine AD DS (Active Directory Domain Services).
+- Configuration de [base](simulated-ent-base-configuration-microsoft-365-enterprise.md) d’entreprise simulée : utilisez cette fonctionnalité lorsque vous souhaitez configurer et faire une démonstration des Microsoft 365 pour les fonctionnalités d’entreprise dans un environnement cloud hybride, qui utilise des composants locaux tels qu’un domaine AD DS (Active Directory Domain Services).
 
 Vous pouvez également créer des environnements de test pour Office 365 E5 sans ajouter la licence Microsoft 365 E5 à votre version d’évaluation ou à votre environnement de test de production.
     

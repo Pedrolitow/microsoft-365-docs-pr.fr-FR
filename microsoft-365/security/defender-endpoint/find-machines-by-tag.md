@@ -41,7 +41,7 @@ ms.locfileid: "52771164"
 Rechercher [des ordinateurs](machine.md) par [balise](machine-tags.md).
 <br>```startswith``` est prise en charge. 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -77,13 +77,13 @@ Autorisation | String | Porteur {token}. **Obligatoire**.
 Nom | Type | Description
 :---|:---|:---
 tag | String | Nom de la balise. **Obligatoire**.
-useStartsWithFilter | Boolean | Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
+useStartsWithFilter | Booléen | Si la valeur est true, la recherche recherche tous les appareils dont le nom de balise commence par la balise donnée dans la requête. Par défaut est faux. **Facultatif**.
 
 ## <a name="request-body"></a>Corps de la demande
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite : 200 - OK avec la liste des ordinateurs dans le corps de la réponse.
+En cas de réussite - 200 OK avec la liste des ordinateurs dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 

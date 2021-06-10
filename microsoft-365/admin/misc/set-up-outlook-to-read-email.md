@@ -1,5 +1,5 @@
 ---
-title: Configurer Outlook pour lire les e-mails
+title: Configurer Outlook lire les e-mails
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -27,9 +27,9 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580893"
 ---
-# <a name="set-up-outlook-to-read-email"></a>Configurer Outlook pour lire les e-mails
+# <a name="set-up-outlook-to-read-email"></a>Configurer Outlook lire les e-mails
 
-Votre abonnement Microsoft 365 est livré avec un outlook basé sur le web, mais si votre abonnement inclut des applications clientes Office, vous obtenez également Outlook que vous pouvez installer sur votre ordinateur ou appareil personnel.
+Votre abonnement Microsoft 365 est livré avec une Outlook web, mais si votre abonnement inclut des applications clientes Office, vous recevrez également des Outlook que vous pouvez installer sur votre ordinateur ou appareil personnel.
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Configurer un compte de messagerie dans Outlook
 
@@ -51,27 +51,27 @@ Lire [l’intégralité de l’article](https://support.microsoft.com/office/6e2
     
 ## <a name="set-up-an-email-account-in-outlook-2016-for-mac"></a>Configurer un compte de messagerie dans Outlook 2016 pour Mac
 
-La première fois que vous ouvrez l’application Outlook, l’Assistant Configurer ma boîte de réception s’ouvre. Dans l’Assistant : 
+La première fois que vous ouvrez Outlook’application, l’Assistant Configurer ma boîte de réception s’ouvre. Dans l’Assistant : 
   
 1. Dans la page **Configurer ma boîte de réception,** **sélectionnez Ajouter un compte.**
     
-2. Dans la page **Comptes,** sélectionnez **Exchange ou Office 365.**
+2. Dans la page **Comptes,** sélectionnez **Exchange ou Office 365**.
     
-3. Dans la page **Entrer les informations de votre compte Exchange,** entrez votre nom, votre adresse e-mail et votre mot de passe, puis **sélectionnez Ajouter un compte.**
+3. Dans la page **Entrez vos informations Exchange** compte, entrez votre nom, votre adresse e-mail et votre mot de passe, puis **sélectionnez Ajouter un compte.**
     
 Lire [l’intégralité de l’article](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac). 
   
 ## <a name="how-do-i-access-my-mail-online"></a>Comment accéder à mon courrier en ligne ?
 
-Après vous être connectez à Microsoft 365, sélectionnez **Outlook.**
+Une fois que vous vous êtes Microsoft 365, **sélectionnez Outlook**.
   
-![Page d’accueil Microsoft 365 avec l’application Outlook mise en évidence](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Page Microsoft 365'accueil avec l’application Outlook mise en évidence](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes** les applications pour voir une liste alphabétique des applications Microsoft 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
+Vous ne trouvez pas l'application que vous cherchez ? Dans le lanceur d’applications, sélectionnez **Toutes** les applications pour voir une liste alphabétique des Microsoft 365 applications disponibles. À partir de là, vous pouvez rechercher une application spécifique. 
   
-## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Comment savoir si mon abonnement inclut des applications Office ?
+## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>Comment savoir si mon abonnement inclut Office applications ?
 
-Microsoft 365 Business Standard et Microsoft 365 Apps for business incluent les applications Office. Pour plus d’informations, [voir les plans Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=723731)pour les entreprises ou Office [365 Entreprise.](https://go.microsoft.com/fwlink/p/?LinkId=800029)
+Microsoft 365 Business Standard et Applications Microsoft 365 pour les PME incluent Office applications. Pour plus [d’informations, Microsoft 365 pour les plans d’entreprise](https://go.microsoft.com/fwlink/p/?LinkId=723731) [ou Office 365 Entreprise les plans.](https://go.microsoft.com/fwlink/p/?LinkId=800029)
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>Comment déterminer l’abonnement dont je suis abonné ?
 

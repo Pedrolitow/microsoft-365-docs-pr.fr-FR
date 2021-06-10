@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble du Centre de sécurité Microsoft Defender
-description: Découvrez les fonctionnalités du Centre de sécurité Microsoft Defender, notamment le fonctionnement des alertes et des suggestions sur la façon d’examiner les violations et attaques possibles.
+description: Découvrez les fonctionnalités sur Centre de sécurité Microsoft Defender, notamment le fonctionnement des alertes et des suggestions sur la façon d’examiner les violations et attaques possibles.
 keywords: tableau de bord, file d’attente des alertes, gérer les alertes, examen, examiner les alertes, examiner les appareils, soumettre des fichiers, analyse approfondie, élevé, moyen, faible, gravité, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -30,12 +30,12 @@ ms.locfileid: "51581093"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
 
-Le Centre de sécurité Microsoft Defender est le portail dans lequel vous pouvez accéder aux fonctionnalités de Microsoft Defender pour les points de terminaison.
+Centre de sécurité Microsoft Defender est le portail sur lequel vous pouvez accéder aux fonctionnalités de Microsoft Defender pour les points de terminaison.
 
 Utilisez le tableau **de bord Opérations de** sécurité pour obtenir des informations sur les différentes alertes sur les appareils et les utilisateurs de votre réseau.
 
@@ -46,7 +46,7 @@ Utilisez le tableau **de bord d’analyse des** menaces pour évaluer et contrô
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Guide interactif De Microsoft Defender pour point de terminaison
 Dans ce guide interactif, vous allez découvrir comment examiner les menaces qui pèsent sur votre organisation avec Microsoft Defender for Endpoint. Vous verrez comment Microsoft Defender pour le point de terminaison peut vous aider à identifier les activités suspectes, à examiner les risques pour votre organisation et à résoudre les menaces.
 
-[Consultez le guide interactif](https://aka.ms/MSDE-IG)
+[Consulter le guide interactif](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>Dans cette section
 

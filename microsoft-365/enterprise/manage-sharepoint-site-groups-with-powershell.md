@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: Dans cet article, recherchez les procédures d’utilisation de PowerShell pour Microsoft 365 pour gérer les groupes de sites SharePoint Online.
+description: Dans cet article, recherchez des procédures d’utilisation de PowerShell pour Microsoft 365 gérer SharePoint groupes de sites En ligne.
 ms.openlocfilehash: bcc7a00a6114a6fa2ba8aa02520267bd03a0abf5
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,9 +29,9 @@ ms.locfileid: "50909537"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Gestion des groupes de sites SharePoint Online avec PowerShell
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Bien que vous pouvez utiliser le Centre d’administration Microsoft 365, vous pouvez également utiliser PowerShell pour Microsoft 365 pour gérer vos groupes de sites SharePoint Online.
+Bien que vous pouvez utiliser Microsoft 365 d’administration, vous pouvez également utiliser PowerShell pour Microsoft 365 gérer vos groupes de sites SharePoint Online.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -39,10 +39,10 @@ Les procédures de cet article exigent que vous vous connectiez à SharePoint On
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Afficher SharePoint Online avec PowerShell pour Microsoft 365
 
-Le Centre d’administration SharePoint Online propose des méthodes simples d’utilisation pour la gestion des groupes de sites. Par exemple, supposons que vous vouliez examiner les groupes et les membres du groupe pour le `https://litwareinc.sharepoint.com/sites/finance` site. Voici ce que vous devez faire :
+Le SharePoint d’administration SharePoint Online propose des méthodes simples d’utilisation pour la gestion des groupes de sites. Par exemple, supposons que vous vouliez examiner les groupes et les membres du groupe pour le `https://litwareinc.sharepoint.com/sites/finance` site. Voici ce que vous devez faire :
 
-1. Dans le Centre d’administration SharePoint, cliquez **sur Sites actifs,** puis sur l’URL du site.
-2. Dans la page du site, cliquez sur l’icône **Paramètres** (située dans le coin supérieur droit de la page), puis cliquez sur **Autorisations du site.**
+1. Dans le SharePoint d’administration, cliquez sur **Sites actifs,** puis sur l’URL du site.
+2. Dans la page du site, cliquez sur **Paramètres** icône (située dans le coin supérieur droit de la page), puis cliquez sur **Autorisations du site.**
 
 Répétez ensuite ce processus pour le prochain site que vous souhaitez consulter.
 
@@ -61,7 +61,7 @@ foreach ($y in $x)
 
 Il existe deux façons d’exécuter ce jeu de commandes dans l’invite de commandes SharePoint Online Management Shell :
 
-- Copiez les commandes dans le Bloc-notes (ou un autre éditeur de texte), modifiez la valeur de la variable **$siteURL,** sélectionnez les commandes, puis collez-les dans l’invite de commandes SharePoint Online Management Shell. Lorsque vous le faites, PowerShell s’arrête à une **>>** invite. Appuyez sur Entrée pour exécuter la `foreach` commande.<br/>
+- Copiez les commandes dans Bloc-notes (ou un autre éditeur de texte), modifiez la valeur de la variable **$siteURL,** sélectionnez les commandes, puis collez-les dans l’invite de commandes SharePoint Online Management Shell. Lorsque vous le faites, PowerShell s’arrête à une **>>** invite. Appuyez sur Entrée pour exécuter la `foreach` commande.<br/>
 - Copiez les commandes dans le Bloc-notes (ou un autre éditeur de texte), modifiez la valeur de la variable **$siteURL** et enregistrez ce fichier texte avec un nom et l’extension .ps1 dans un dossier approprié. Ensuite, exécutez le script à partir de l’invite de commandes SharePoint Online Management Shell en spécifiant son chemin d’accès et son nom de fichier. Voici un exemple de commande :
 
 ```powershell
@@ -70,11 +70,11 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 Dans les deux cas, quelque chose de ce type doit apparaître :
 
-![Groupes de sites SharePoint Online](../media/SPO-site-groups.png)
+![SharePoint Groupes de sites en ligne](../media/SPO-site-groups.png)
 
 Ce sont tous les groupes qui ont été créés pour le site et tous les utilisateurs `https://litwareinc.sharepoint.com/sites/finance` affectés à ces groupes. Les noms de groupes apparaissent en jaune pour que vous puissiez distinguer les noms de groupes de leurs membres.
 
-Par exemple, voici un jeu de commandes qui répertorie les groupes et toutes les appartenances aux groupes pour tous vos sites SharePoint Online.
+Autre exemple : voici un jeu de commandes qui répertorie les groupes et toutes les appartenances aux groupes pour tous vos sites SharePoint Online.
 
 ```powershell
 $x = Get-SPOSite

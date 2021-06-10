@@ -25,7 +25,7 @@ ms.locfileid: "50909761"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sites Internet dans Microsoft Azure qui utilisent SharePoint Server 2013
 
- Les sites Internet qui utilisent SharePoint Server 2013 bénéficient du fait qu’ils sont hébergés dans les services d’infrastructure Azure. Cet article fournit des ressources pour la conception et l’implémentation de cette solution.
+ Les sites Internet qui utilisent SharePoint Server 2013 bénéficient d’être hébergés dans les services d’infrastructure Azure. Cet article fournit des ressources pour la conception et l’implémentation de cette solution.
 
 ## <a name="using-azure-infrastructure-services-for-internet-sites"></a>Utilisation de la solution des services d'infrastructure Azure pour les sites Internet
 
@@ -39,7 +39,7 @@ Microsoft Azure est une option intéressante pour l'hébergement de sites Intern
 
 - Tirez parti de Azure Active Directory pour les comptes client.
 
-- Ajoutez des fonctionnalités qui ne sont pas actuellement disponibles dans Microsoft 365, telles que les rapports et les analyses approfondies.
+- Ajoutez des fonctionnalités qui ne sont pas actuellement disponibles dans Microsoft 365, telles que la rapport approfondie et l’analyse.
 
 ## <a name="resources"></a>Ressources
 
@@ -48,7 +48,7 @@ Les articles et les illustrations techniques suivants fournissent des informatio
 |Resource|Plus d’informations|
 |---|---|
 |Sites Internet **SharePoint Server 2013 dans Azure** <br/> [![Image de sites Internet dans Azure utilisant SharePoint](../media/MS-AZ-SPInternetSites.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)|Ce modèle d’architecture décrit les activités de conception clés et les choix d’architecture recommandés pour les sites Internet dans Azure.|
-|**Exemple de conception : sites Internet dans Azure pour SharePoint Server 2013** <br/> [ ![ Image de l’exemple de conception : sites Internet dans Microsoft Azure pour SharePoint 2013 ](../media/MS-AZ-InternetSitesDesignSample.jpg) ] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|Utilisez cet exemple de conception comme point de départ pour votre propre architecture.|
+|**Exemple de conception : sites Internet dans Azure pour SharePoint Server 2013** <br/> [ ![ Image de l’exemple de conception : sites Internet Microsoft Azure pour SharePoint 2013 ](../media/MS-AZ-InternetSitesDesignSample.jpg) ] <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)|Utilisez cet exemple de conception comme point de départ pour votre propre architecture.|
 |**[Architectures Microsoft Azure pour SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |Cet article explique comment concevoir des architectures Azure pour héberger des solutions SharePoint.|
 |
 

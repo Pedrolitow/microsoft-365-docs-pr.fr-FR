@@ -32,7 +32,7 @@ ms.locfileid: "51580413"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-Le hameçonnage est une attaque malveillante dans laquelle un e-mail semble avoir été envoyé à partir d’une source familière, mais il tente de collecter vos informations personnelles. Par défaut, Microsoft 365 inclut une protection anti-hameçonnage, mais vous pouvez augmenter cette protection en affinant les paramètres. Examinons ce qui se fait.
+Le hameçonnage est une attaque malveillante dans laquelle un e-mail semble avoir été envoyé à partir d’une source familière, mais il tente de collecter vos informations personnelles. Par défaut, Microsoft 365 inclut une certaine protection anti-hameçonnage, mais vous pouvez augmenter cette protection en affinant les paramètres. Examinons ce qui se fait.
 
 ## <a name="try-it"></a>Essayez !
 
@@ -46,6 +46,6 @@ Le hameçonnage est une attaque malveillante dans laquelle un e-mail semble avoi
 1. Sélectionnez **Activer les conseils de sécurité pour l’emprunt d’identité.** Choisissez si des conseils doivent être fournis aux utilisateurs lorsque le système détecte des utilisateurs usurpés d’identité, des domaines ou des caractères inhabituels. Sélectionnez **Enregistrer**.
 1. Sélectionnez **l’intelligence de** boîte aux lettres et vérifiez qu’elle est allumée. Cela permet à votre courrier électronique d’être plus efficace en apprendant les modèles d’utilisation.
 1. Choose **Add trusted senders and domains**. Ici, vous pouvez ajouter des adresses e-mail ou des domaines qui ne doivent pas être classés comme emprunt d’identité.
-1. Sélectionnez **Passer en revue vos paramètres,** assurez-vous que tout est correct, **sélectionnez Enregistrer,** puis **Fermer.**
+1. Sélectionnez **Passer en revue vos paramètres,** assurez-vous que tout est correct, **sélectionnez Enregistrer,** puis **Fermer**.
 
     Votre organisation dispose désormais d’une meilleure protection contre les menaces de hameçonnage.

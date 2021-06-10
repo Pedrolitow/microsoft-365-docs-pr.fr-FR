@@ -39,7 +39,7 @@ ms.locfileid: "52771260"
 Récupère tous les domaines liés à une alerte spécifique.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 

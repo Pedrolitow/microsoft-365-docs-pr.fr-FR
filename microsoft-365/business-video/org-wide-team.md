@@ -33,9 +33,9 @@ ms.locfileid: "51580533"
 
 ## <a name="try-it"></a>Essayez !
 
-Créez une équipe à l’échelle de l’organisation dans Microsoft Teams dont tous les membres de votre entreprise peuvent faire partie. À mesure que vous ajoutez d’autres utilisateurs à Microsoft 365, ils sont automatiquement ajoutés à cette équipe.
+Créez une équipe à l’échelle de l’organisation Microsoft Teams dont tous les membres de votre entreprise peuvent faire partie. À mesure que vous ajoutez des utilisateurs Microsoft 365, ils sont automatiquement ajoutés à cette équipe.
 
-1. Dans Microsoft Teams, sélectionnez  **Teams,** puis **créez une équipe.**
+1. Dans Microsoft Teams, **sélectionnez Teams,** puis Créer **une équipe.**
 2. Choisissez **Créer une équipe à partir de zéro.**
 3. Sélectionnez **Créer une équipe à l’échelle de l’organisation.**
 
@@ -49,6 +49,6 @@ Au sein de votre équipe se trouve des canaux. Le canal Général est créé aut
 Essayez l’une des façons suivantes :
 
 - Utilisez  **l’onglet Publications** pour les conversations et annonces à l’échelle de l’organisation, telles qu’un message de bienvenue pour tout le monde.
-- Sous  **l’onglet** Fichiers, vous pouvez créer des documents que tout le monde peut contribuer, tels qu’un document Microsoft Word. Ou faites glisser et déposez des documents existants dans  **l’onglet** Fichiers.
+- Sous **l’onglet** Fichiers, vous pouvez créer de nouveaux documents que tout le monde peut contribuer, par exemple un document Microsoft Word document. Ou faites glisser et déposez des documents existants dans  **l’onglet** Fichiers.
 - Utilisez  **l’onglet Wiki** pour prendre des notes rapides. Et sélectionnez le signe plus ( **+** ) pour ajouter des applications ou des fichiers en tant qu’onglets supplémentaires.
 - Avec les onglets de gauche, vous pouvez afficher l’activité récente, discuter avec d’autres membres de l’équipe, afficher les équipes à qui vous appartenez et votre calendrier. Vous pouvez effectuer des appels vocaux et vidéo à d’autres utilisateurs de l’équipe et afficher les fichiers que vous avez récemment travaillés.

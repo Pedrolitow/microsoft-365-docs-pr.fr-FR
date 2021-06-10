@@ -1,5 +1,5 @@
 ---
-title: Informations héritées pour le chiffrement de messages Office 365
+title: Informations héritées pour le chiffrement de messages Office 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Comprendre comment faire passer les fichiers hérités vers le chiffrement de messages Office 365 (OME) pour votre organisation.
+description: Comprendre comment faire passer des fichiers hérités vers chiffrement de messages Office 365 (OME) pour votre organisation.
 ms.openlocfilehash: eabf655b6fa92a6f502ebe1e071d41f394f78929
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -25,13 +25,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51051826"
 ---
-# <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
+# <a name="legacy-information-for-office-365-message-encryption"></a>Informations héritées pour le chiffrement de messages Office 365
 
-Si vous n’avez pas encore déplacé votre organisation vers les nouvelles fonctionnalités OME, mais que vous avez déjà déployé OME, les informations de cet article s’appliquent à votre organisation. Microsoft vous recommande d’effectuer un plan pour passer aux nouvelles fonctionnalités OME dès qu’il est raisonnable pour votre organisation. Pour obtenir des instructions, voir Configurer les nouvelles fonctionnalités de chiffrement de messages [Office 365](set-up-new-message-encryption-capabilities.md)intégrées à Azure Information Protection. Si vous souhaitez en savoir plus sur le fonctionnement des nouvelles fonctionnalités, consultez chiffrement de [messages Office 365.](ome.md) Le reste de cet article fait référence au comportement OME avant la publication des nouvelles fonctionnalités OME.
+Si vous n’avez pas encore déplacé votre organisation vers les nouvelles fonctionnalités OME, mais que vous avez déjà déployé OME, les informations de cet article s’appliquent à votre organisation. Microsoft vous recommande d’effectuer un plan pour passer aux nouvelles fonctionnalités OME dès qu’il est raisonnable pour votre organisation. Pour obtenir des instructions, voir Configurer de [chiffrement de messages Office 365 nouvelles fonctionnalités intégrées à Azure Information Protection.](set-up-new-message-encryption-capabilities.md) Si vous souhaitez en savoir plus sur le fonctionnement des nouvelles fonctionnalités en premier, voir [chiffrement de messages Office 365](ome.md). Le reste de cet article fait référence au comportement OME avant la publication des nouvelles fonctionnalités OME.
   
-Avec chiffrement de messages Office 365, votre organisation peur envoyer et recevoir des messages chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. Le chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo, Gmail et d’autres services de messagerie. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages.
+Avec chiffrement de messages Office 365, votre organisation peur envoyer et recevoir des messages chiffrés entre des personnes à l’intérieur et à l’extérieur de votre organisation. chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo, Gmail et d’autres services de messagerie. Le chiffrement des messages électroniques permet de s’assurer que seuls les destinataires prévus peuvent afficher le contenu des messages.
   
-Voici quelques exemples :
+Voici quelques exemples :
   
 - Un employé de la banque envoie des relevés de carte de crédit aux clients
 
@@ -43,35 +43,35 @@ Voici quelques exemples :
 
 - Un avocat envoie des informations confidentielles à un client ou à un autre avocat
 
-## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Fonctionnement du chiffrement de messages Office 365 sans les nouvelles fonctionnalités
+## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Fonctionnement chiffrement de messages Office 365 sans les nouvelles fonctionnalités
 
-Le chiffrement de messages Office 365 est un service en ligne qui repose sur Microsoft Azure Rights Management (Azure RMS). Avec Azure RMS, les administrateurs peuvent définir des règles de flux de messagerie pour déterminer les conditions de chiffrement. Par exemple, une règle peut exiger le chiffrement de tous les messages adressés à un destinataire spécifique.
+chiffrement de messages Office 365 est un service en ligne qui repose sur Microsoft Azure Rights Management (Azure RMS). Avec Azure RMS, les administrateurs peuvent définir des règles de flux de messagerie pour déterminer les conditions de chiffrement. Par exemple, une règle peut exiger le chiffrement de tous les messages adressés à un destinataire spécifique.
   
-Lorsqu’une personne envoie un message électronique dans Exchange Online qui correspond à une règle de chiffrement, le message est envoyé avec une pièce jointe HTML. Le destinataire ouvre la pièce jointe HTML et suit les instructions pour afficher le message chiffré sur le portail de chiffrement de messages Office 365. Le destinataire peut choisir d’afficher le message en se signant à l’aide d’un compte Microsoft ou d’un établissement scolaire ou scolaire associé à Office 365, ou à l’aide d’un code de passage à usage seul. Les deux options vous permettent de vous assurer que seul le destinataire voulu peut afficher le message chiffré. Ce processus est très différent pour les nouvelles fonctionnalités OME.
+Lorsqu’une personne envoie un message électronique Exchange Online qui correspond à une règle de chiffrement, le message est envoyé avec une pièce jointe HTML. Le destinataire ouvre la pièce jointe HTML et suit les instructions pour afficher le message chiffré sur le chiffrement de messages Office 365 web. Le destinataire peut choisir d’afficher le message en se signant avec un compte Microsoft ou un travail ou une école associé à Office 365, ou à l’aide d’un code de passe à usage seul. Les deux options vous permettent de vous assurer que seul le destinataire voulu peut afficher le message chiffré. Ce processus est très différent pour les nouvelles fonctionnalités OME.
   
 Le diagramme suivant résume le passage d’un message électronique dans le processus de chiffrement et de déchiffrement.
   
 ![Diagramme montrant le cheminement d’un message électronique chiffré](../media/O365-Office365MessageEncryption-Concept.png)
   
-Pour plus d’informations, consultez les informations de service pour le chiffrement de [messages Office 365](legacy-information-for-message-encryption.md#LegacyServiceInfo)hérité avant la publication des nouvelles fonctionnalités OME.
+Pour plus d’informations, consultez les informations de service pour les chiffrement de messages Office 365 antérieures à la publication des [nouvelles fonctionnalités OME.](legacy-information-for-message-encryption.md#LegacyServiceInfo)
   
-## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>Définition de règles de flux de messagerie pour le chiffrement de messages Office 365 qui n’utilisent pas les nouvelles fonctionnalités OME
+## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>Définition de règles de flux de messagerie pour chiffrement de messages Office 365 qui n’utilisent pas les nouvelles fonctionnalités OME
 
-Pour activer le chiffrement de messages Office 365 sans les nouvelles fonctionnalités, les administrateurs Exchange Online et Exchange Online Protection définissent des règles de flux de messagerie Exchange. Ces règles déterminent dans quelles conditions les messages électroniques doivent être chiffrés, ainsi que les conditions de suppression du chiffrement des messages. Lorsqu’une action de chiffrement est définie pour une règle, le service effectue l’action sur tous les messages qui correspondent aux conditions de règle avant d’envoyer les messages.
+Pour activer chiffrement de messages Office 365 sans les nouvelles fonctionnalités, les administrateurs Exchange Online et Exchange Online Protection définissent Exchange règles de flux de messagerie. Ces règles déterminent dans quelles conditions les messages électroniques doivent être chiffrés, ainsi que les conditions de suppression du chiffrement des messages. Lorsqu’une action de chiffrement est définie pour une règle, le service effectue l’action sur tous les messages qui correspondent aux conditions de règle avant d’envoyer les messages.
 
 Les règles de flux de messagerie sont flexibles, ce qui vous permet de combiner des conditions afin de répondre à des exigences de sécurité spécifiques dans une seule règle. Par exemple, vous pouvez créer une règle pour chiffrer tous les messages qui contiennent les mots-clés spécifiés et adressés à des destinataires externes. Le chiffrement de messages Office 365 chiffre également les réponses des destinataires des messages chiffrés, et vous pouvez créer une règle qui déchiffre ces réponses pour la commodité de vos utilisateurs de messagerie. Ainsi, les utilisateurs de votre organisation n’auront pas à se connecter au portail de chiffrement pour afficher les réponses.
   
-Pour plus d’informations sur la création de règles de flux de messagerie Exchange, voir Définir des règles pour le chiffrement de [messages Office 365.](define-mail-flow-rules-to-encrypt-email.md)
+Pour plus d’informations sur la création Exchange règles de flux de messagerie, voir Définir des [règles pour chiffrement de messages Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
 ### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Utiliser le EAC pour créer une règle de flux de messagerie pour chiffrer les messages électroniques sans les nouvelles fonctionnalités OME
 
-1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous [à Office 365.](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)
+1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur général, connectez-vous [Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Sélectionnez la **vignette** Administrateur.
+2. Choisissez la **vignette** Administrateur.
 
-3. Dans le Centre d’administration Microsoft 365, sélectionnez **Centres d’administration** \> **Exchange**.
+3. Dans le centre Microsoft 365' administration, sélectionnez **Centres d’administration** \> **Exchange**.
 
-4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et sélectionnez Nouvelle icône \>  Créer une  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du CENTRE d’administration Exchange, consultez le Centre [d’administration Exchange dans Exchange Online.](/exchange/exchange-admin-center)
+4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
@@ -83,7 +83,7 @@ Pour plus d’informations sur la création de règles de flux de messagerie Exc
 
       - Pour sélectionner un nom existant, sélectionnez-le dans la liste et cliquez sur **OK**.
 
-      - Pour entrer un nouveau nom, tapez une adresse e-mail dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
+      - Pour entrer un nouveau nom, tapez une adresse de messagerie dans la case à cocher **noms,** puis sélectionnez **vérifier les noms** \> **OK.**
 
 7. Pour ajouter d’autres conditions, sélectionnez **Plus d’options,** puis **sélectionnez Ajouter une condition** et sélectionnez dans la liste.
 
@@ -115,19 +115,19 @@ Pour plus d’informations sur la création de règles de flux de messagerie Exc
 
    Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TransportRule](/powershell/module/exchange/New-TransportRule).
 
-### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Supprimer le chiffrement des réponses aux e-mails chiffrées sans les nouvelles fonctionnalités OME
+### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Supprimer le chiffrement des réponses électroniques chiffrées sans les nouvelles fonctionnalités OME
 
 Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les destinataires de ces messages peuvent y répondre par des réponses chiffrées. Vous pouvez créer des règles de flux de messagerie pour supprimer automatiquement le chiffrement des réponses afin que les utilisateurs de messagerie de votre organisation n’ont pas à se connecter au portail de chiffrement pour les afficher. Vous pouvez utiliser le EAC ou Windows PowerShell cmdlets pour définir ces règles. Vous pouvez déchiffrer les messages envoyés à partir de votre organisation ou les messages qui sont des réponses à des messages envoyés à partir de votre organisation. Vous ne pouvez pas déchiffrer les messages chiffrés provenant de l’extérieur de votre organisation.
 
 #### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utiliser le EAC pour créer une règle de suppression du chiffrement des réponses de courrier chiffrées sans les nouvelles fonctionnalités OME
 
-1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur, connectez-vous [à Office 365.](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)
+1. Dans un navigateur web, à l’aide d’un compte scolaire ou scolaire qui a reçu des autorisations d’administrateur, connectez-vous [Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Sélectionnez la **vignette** Administrateur.
+2. Choisissez la **vignette** Administrateur.
 
-3. Dans le Centre d’administration Microsoft 365, sélectionnez **Centres d’administration** \> **Exchange**.
+3. Dans le centre Microsoft 365' administration, sélectionnez **Centres d’administration** \> **Exchange**.
 
-4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et sélectionnez Nouvelle icône \>  Créer une  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du CENTRE d’administration Exchange, consultez le Centre [d’administration Exchange dans Exchange Online.](/exchange/exchange-admin-center)
+4. Dans le EAC, sélectionnez Règles de **flux de** messagerie et \>  **sélectionnez Nouvelle** icône Créer une ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **règle.** Pour plus d’informations sur l’utilisation du Centre d’administration Exchange, [voir](/exchange/exchange-admin-center)Exchange Online .
 
 5. In **Name**, type a name for the rule, such as Remove encryption from incoming mail.
 
@@ -137,7 +137,7 @@ Lorsque vos utilisateurs de messagerie envoient des messages chiffrés, les dest
 
 8. Sélectionnez **Enregistrer**.
 
-#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utiliser Exchange Online PowerShell pour créer une règle pour supprimer le chiffrement des réponses de courrier chiffrées sans les nouvelles fonctionnalités OME
+#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Utiliser Exchange Online PowerShell pour créer une règle pour supprimer le chiffrement des réponses électroniques chiffrées sans les nouvelles fonctionnalités OME
 
 1. Connectez-vous à Exchange Online PowerShell. Pour plus d'informations, reportez-vous à [Connexion à Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -160,13 +160,13 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="sending-viewing-and-replying-to-messages-encrypted-without-the-new-capabilities"></a>Envoi, affichage et réponse à des messages chiffrés sans les nouvelles fonctionnalités
 
-Avec le chiffrement de messages Office 365, les messages électroniques sont chiffrés automatiquement, en fonction des règles définies par l’administrateur. Un e-mail qui envoie un message chiffré arrive dans la boîte de réception du destinataire avec un fichier HTML joint.
+Avec chiffrement de messages Office 365, les messages électroniques sont chiffrés automatiquement, en fonction des règles définies par l’administrateur. Un e-mail qui envoie un message chiffré arrive dans la boîte de réception du destinataire avec un fichier HTML joint.
   
-Les destinataires suivent les instructions du message pour ouvrir la pièce jointe et s’authentifier à l’aide d’un compte Microsoft ou d’un établissement scolaire ou scolaire associé à Office 365. Si les destinataires n’ont aucun compte, ils sont dirigés vers la création d’un compte Microsoft qui leur permettra de se connecter pour afficher le message chiffré. Les destinataires peuvent également choisir d’obtenir un code de passe à une seule fois pour afficher le message. Après la connexion ou l’utilisation d’un code de passe à usage seul, les destinataires peuvent afficher le message déchiffré et envoyer une réponse chiffrée.
+Les destinataires suivent les instructions du message pour ouvrir la pièce jointe et s’authentifier à l’aide d’un compte Microsoft ou d’une école ou d’un travail associé à Office 365. Si les destinataires n’ont aucun compte, ils sont dirigés vers la création d’un compte Microsoft qui leur permettra de se connecter pour afficher le message chiffré. Les destinataires peuvent également choisir d’obtenir un code de passe à une seule fois pour afficher le message. Après la connexion ou l’utilisation d’un code de passe à usage seul, les destinataires peuvent afficher le message déchiffré et envoyer une réponse chiffrée.
   
-## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>Personnaliser les messages chiffrés avec le chiffrement de messages Office 365
+## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>Personnaliser les messages chiffrés à l’chiffrement de messages Office 365
 
-En tant qu’administrateur Exchange Online et Exchange Online Protection, vous pouvez personnaliser vos messages chiffrés. Par exemple, vous pouvez ajouter la marque et le logo de votre entreprise, spécifier une introduction et ajouter un texte de clause d’exclusion de responsabilité dans les messages chiffrés et dans le portail où les destinataires visualisent vos messages chiffrés. Avec les cmdlets Windows PowerShell, vous pouvez personnaliser les aspects suivants de l’expérience d’affichage des destinataires de messages électroniques chiffrés :
+En tant qu Exchange Online administrateur Exchange Online Protection, vous pouvez personnaliser vos messages chiffrés. Par exemple, vous pouvez ajouter la marque et le logo de votre entreprise, spécifier une introduction et ajouter un texte de clause d’exclusion de responsabilité dans les messages chiffrés et dans le portail où les destinataires visualisent vos messages chiffrés. Avec les cmdlets Windows PowerShell, vous pouvez personnaliser les aspects suivants de l’expérience d’affichage des destinataires de messages électroniques chiffrés :
 
 - Le texte d’introduction du message électronique contenant le message chiffré
 
@@ -185,7 +185,7 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
   
 **Pour personnaliser les messages électroniques de chiffrement et le portail de chiffrement avec la marque de votre organisation**
   
-1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans La connexion à [Exchange Online à l’aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Connecter à Exchange Online à l’aide de Remote PowerShell, comme décrit dans [Connecter pour Exchange Online à l’aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici : [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) ou utilisez le tableau suivant pour obtenir des conseils.
 
@@ -198,11 +198,11 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
    |Texte qui s’affiche en haut du portail d’affichage du message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
    |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Exemple :** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formats de fichier pris en charge : .png, .jpg, .bmp ou .tiff  <br/> Taille optimale du fichier de logo : moins de 40 Ko  <br/> Taille optimale de l’image de logo : 170x70 pixels  <br/> |
 
-**Pour supprimer les personnalisations de marque des messages électroniques de chiffrement et du portail de chiffrement**
+**Pour supprimer les personnalisations de personnalisation des messages électroniques de chiffrement et du portail de chiffrement**
   
-1. Connectez-vous à Exchange Online à l’aide de Remote PowerShell, comme décrit dans La connexion à [Exchange Online à l’aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Connecter à Exchange Online à l’aide de Remote PowerShell, comme décrit dans [Connecter pour Exchange Online à l’aide de Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Utilisez la cmdlet Set-OMEConfiguration comme décrit ici [: Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration). Pour supprimer les personnalisations de votre organisation des valeurs DisclaimerText, EmailText et PortalText, définissez la valeur sur une chaîne  `""` vide. Pour toutes les valeurs d’image, telles que Logo, définissez la valeur sur  `"$null"` .
+2. Utilisez lSet-OMEConfiguration cmdlet comme décrit ici : [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration). Pour supprimer les personnalisations de votre organisation des valeurs DisclaimerText, EmailText et PortalText, définissez la valeur sur une chaîne  `""` vide. Pour toutes les valeurs d’image, telles que Logo, définissez la valeur sur  `"$null"` .
 
    **Options de personnalisation du chiffrement**
 
@@ -213,35 +213,35 @@ L’exemple suivant montre un logo personnalisé pour ContosoPharma dans la piè
    |Texte qui s’affiche en haut du portail d’affichage du message chiffré  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Exemple de retour à la valeur par défaut :**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
    |Logo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Exemple de retour à la valeur par défaut :**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
-## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Informations de service pour le chiffrement de messages Office 365 hérité avant la publication des nouvelles fonctionnalités OME
+## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Informations de service pour les chiffrement de messages Office 365 antérieures à la publication des nouvelles fonctionnalités OME
 <a name="LegacyServiceInfo"> </a>
 
-Le tableau suivant fournit des détails techniques pour le service de chiffrement de messages Office 365 avant la publication des nouvelles fonctionnalités OME.
+Le tableau suivant fournit des détails techniques pour chiffrement de messages Office 365 service avant la publication des nouvelles fonctionnalités OME.
   
 | Détails du service | Description |
 |:-----|:-----|
 |Exigences relatives aux périphériques client  <br/> |Les messages chiffrés peuvent être affichés sur tous les périphériques client, tant que la pièce jointe HTML peut être ouverte dans un navigateur moderne qui prend en charge la publication de formulaire.  <br/> |
 |Algorithme de chiffrement et conformité aux normes FIPS (Federal Information Processing Standards)  <br/> |Le chiffrement de messages Office 365 utilise les mêmes clés de chiffrement que la gestion des droits relatifs à l’information (IRM) de Windows Azure et prend en charge le mode de chiffrement 2 (clé 2K pour RSA et clé 256 bits pour les systèmes SHA-1). Pour plus d’informations sur les modes de chiffrement IRM sous-jacents, voir Modes de chiffrement [AD RMS.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))  <br/> |
 |Types de messages pris en charge  <br/> |Le chiffrement de messages Office 365 est uniquement pris en charge pour les éléments avec un ID de classe de message **IPM.Note**. Pour plus d’informations, voir [Types d’éléments et classes de messages.](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)  <br/> |
-|Tailles limites des messages  <br/> |Le chiffrement de messages Office 365 permet de chiffrer des messages d’une taille maximale de 25 Mo. Pour plus d’informations sur les limites de taille des messages, voir [Limites d’Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)  <br/> |
-|Stratégies de rétention de messagerie Exchange Online  <br/> |Exchange Online ne stocke pas les messages chiffrés.  <br/> |
-|Prise en charge linguistique pour le chiffrement de messages Office 365  <br/> | Le chiffrement de messages Office 365 prend en charge les langues Microsoft 365, comme suit :  <br/>  Les messages électroniques entrants et les fichiers HTML joints sont localisées en fonction des paramètres de langue de l’expéditeur.  <br/>  Le portail d’affichage est localisé en fonction des paramètres de navigateur du destinataire.  <br/>  Le corps (contenu) du message chiffré n’est pas localisé.  <br/> |
+|Tailles limites des messages  <br/> |Le chiffrement de messages Office 365 permet de chiffrer des messages d’une taille maximale de 25 Mo. Pour plus d’informations sur les limites de taille des messages, [voir Exchange Online limites.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)  <br/> |
+|Exchange Online stratégies de rétention de courrier électronique  <br/> |Exchange Online ne stocke pas les messages chiffrés.  <br/> |
+|Prise en charge linguistique pour le chiffrement de messages Office 365  <br/> | Office 365 Le chiffrement de messages Microsoft 365 langues, comme suit :  <br/>  Les messages électroniques entrants et les fichiers HTML joints sont localisées en fonction des paramètres de langue de l’expéditeur.  <br/>  Le portail d’affichage est localisé en fonction des paramètres de navigateur du destinataire.  <br/>  Le corps (contenu) du message chiffré n’est pas localisé.  <br/> |
 |Informations de confidentialité pour le portail OME et l’application Visionneuse OME  <br/> |La [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) fournit des informations détaillées sur ce que fait et ne fait pas Microsoft avec vos informations privées.  <br/> |
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Questions fréquemment posées sur l’OME hérité
 <a name="LegacyServiceInfo"> </a>
 
-Vous avez des questions sur le chiffrement de messages Office 365 ? Voici les réponses à certaines questions fréquemment posées. Si vous ne trouvez pas ce dont vous avez besoin, consultez les forums de la communauté [technique Microsoft pour Office 365.](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+Vous avez des questions sur chiffrement de messages Office 365 ? Voici les réponses à certaines questions fréquemment posées. Si vous ne trouvez pas ce dont vous avez besoin, consultez les [forums Microsoft Tech Community pour](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)Office 365 .
   
- **Q. Mes utilisateurs envoient des messages électroniques chiffrés à des destinataires externes à notre organisation. Les destinataires externes doivent-ils faire quelque chose pour lire et répondre à des messages électroniques chiffrés avec le chiffrement de messages Office 365 ?**
+ **Q. Mes utilisateurs envoient des messages électroniques chiffrés à des destinataires externes à notre organisation. Les destinataires externes doivent-ils faire quelque chose pour lire et répondre à des messages électroniques chiffrés chiffrement de messages Office 365 ?**
   
-Les destinataires extérieurs à votre organisation qui reçoivent des messages chiffrés Microsoft 365 peuvent les afficher de deux manières :
+Les destinataires extérieurs à votre organisation qui Microsoft 365 messages chiffrés peuvent les afficher de deux manières :
   
 - En vous signant à l’aide d’un compte Microsoft ou d’un compte scolaire ou scolaire associé à Office 365.
 
 - À l’aide d’un code de passe à usage seul.
 
- **Q. Les messages chiffrés Microsoft 365 sont-ils stockés dans le cloud ou sur des serveurs Microsoft ?**
+ **Q. Les messages Microsoft 365 chiffrés sont-ils stockés dans le cloud ou sur des serveurs Microsoft ?**
   
 Non, les messages chiffrés sont conservés sur le système de messagerie du destinataire et, lorsque le destinataire ouvre le message, il est temporairement publié pour être affiché sur les serveurs Microsoft. Les messages électroniques n’y sont pas stockés.
   
@@ -257,13 +257,13 @@ Une licence est obligatoire pour chaque utilisateur de l’organisation qui envo
   
 Non, les destinataires externes n’ont pas besoin d’un abonnement pour lire ou répondre à des messages chiffrés.
   
- **Q. En quoi le chiffrement de messages Office 365 est-il différent des services RMS (Rights Management Services) ?**
+ **Q. En quoi les chiffrement de messages Office 365 des services RMS (Rights Management Services) sont-ils différents ?**
   
-RMS fournit des fonctionnalités de protection des droits de l’information pour les messages électroniques internes d’une organisation en fournissant des modèles intégrés, tels que : Ne pas forward et Company Confidential. Le chiffrement de messages Office 365 prend en charge le chiffrement des messages électroniques pour ceux envoyés à des destinataires externes et internes.
+RMS offre des fonctionnalités de protection des droits de l’information pour les messages électroniques internes d’une organisation en fournissant des modèles intégrés, tels que : Ne pas faire avancer et Confidentiel de l’entreprise. Le chiffrement de messages Office 365 prend en charge le chiffrement des messages électroniques pour ceux envoyés à des destinataires externes et internes.
   
- **Q. En quoi le chiffrement de messages Office 365 est-il différent de S/MIME ?**
+ **Q. En quoi chiffrement de messages Office 365 est-il différent de S/MIME ?**
   
-S/MIME est essentiellement une technologie de chiffrement côté client et exige une gestion de certificats et une infrastructure de publication complexes. Le chiffrement de messages Office 365 utilise des règles de flux de messagerie (également appelées règles de transport) et ne dépend pas de la publication de certificats.
+S/MIME est essentiellement une technologie de chiffrement côté client et exige une gestion de certificats et une infrastructure de publication complexes. chiffrement de messages Office 365 utilise des règles de flux de messagerie (également appelées règles de transport) et ne dépend pas de la publication de certificats.
   
  **Q. Puis-je lire les messages chiffrés sur des appareils mobiles ?**
   
@@ -273,13 +273,13 @@ Oui, vous pouvez afficher les messages sur Android et iOS en téléchargeant les
   
 Oui. Les réponses restent chiffrées pendant toute la durée du thread.
   
- **Q. Le chiffrement de messages Office 365 fournit-il une localisation ?**
+ **Q. Est-chiffrement de messages Office 365 la localisation ?**
   
 Le contenu HTML et les messages électroniques entrants sont localisés en fonction des paramètres de messagerie de l’expéditeur. Le portail d’affichage est localisé en fonction des paramètres de navigateur du destinataire. Cependant, le corps réel (le contenu) du message chiffré n’est pas localisé.
   
- **Q. Quelle méthode de chiffrement est utilisée pour le chiffrement de messages Office 365 ?**
+ **Q. Quelle méthode de chiffrement est utilisée pour chiffrement de messages Office 365 ?**
   
-Le chiffrement de messages Office 365 utilise rights management services (RMS) comme infrastructure de chiffrement. La méthode de chiffrement utilisée dépend de l’endroit où vous obtenez les clés RMS servant à chiffrer et déchiffrer les messages.
+chiffrement de messages Office 365 utilise rights management services (RMS) comme infrastructure de chiffrement. La méthode de chiffrement utilisée dépend de l’endroit où vous obtenez les clés RMS servant à chiffrer et déchiffrer les messages.
   
 - Si vous utilisez Microsoft Azure RMS pour obtenir les clés, le mode de chiffrement 2 est utilisé. Le mode de chiffrement 2 est un processus de chiffrement AD RMS amélioré et mis à jour. Il prend en charge RSA 2048 pour la signature et le chiffrement, et SHA 256 pour la signature.
 
@@ -287,19 +287,19 @@ Le chiffrement de messages Office 365 utilise rights management services (RMS) c
 
 Pour plus d’informations, voir Modes de chiffrement [AD RMS.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))
   
-**Q. Pourquoi certains messages chiffrés pensent-ils qu’ils proviennent** de Office365@messaging.microsoft.com ?
+**Q. Pourquoi certains messages chiffrés sont-ils issus de** Office365@messaging.microsoft.com ?
   
 Lorsqu’une réponse chiffrée est envoyée à partir du portail de chiffrement ou via l’application Visionneuse OME, l’adresse de messagerie de l’expéditeur est définie sur Office365@messaging.microsoft.com, car le message chiffré est envoyé par le biais d’un point de terminaison Microsoft. Cela permet d’éviter que les messages chiffrés soient marqués comme courrier indésirable. Le nom affiché dans le message électronique et l’adresse dans le portail de chiffrement ne sont pas modifiés en raison de cet étiquetage. En outre, cet étiquetage s’applique uniquement aux messages envoyés via le portail, et non par le biais de n’importe quel autre client de messagerie.
   
- **Q. Je suis abonné à Exchange Hosted Encryption (EHE). Où puis-je en savoir plus sur la mise à niveau vers le chiffrement de messages Office 365 ?**
+ **Q. Je suis abonné au Exchange EhE (Hosted Encryption). Où puis-je en savoir plus sur la mise à niveau vers chiffrement de messages Office 365 ?**
   
-Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Office 365. Pour plus d’informations, visitez le Centre de mise [à niveau de chiffrement hébergé Exchange.](../security/defender-365-security/exchange-online-protection-overview.md)
+Tous les clients EHE ont été mis à niveau vers le chiffrement de messages Office 365. Pour plus d’informations, visitez Exchange centre de mise à [niveau de chiffrement hébergé.](../security/defender-365-security/exchange-online-protection-overview.md)
   
- **Q. Ai-je besoin d’ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge le chiffrement de messages Office 365 ?**
+ **Q. Ai-je besoin d’ouvrir des URL, des adresses IP ou des ports dans le pare-feu de mon organisation pour prendre en charge chiffrement de messages Office 365 ?**
   
-Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste des URL Exchange Online, voir [URL et plages d’adresses IP Microsoft 365.](../enterprise/urls-and-ip-address-ranges.md)
+Oui. Vous devez ajouter des URL à la liste d’adresses autorisées pour Exchange Online afin que votre organisation permette l’authentification des messages chiffrés par Office 365. Pour obtenir la liste des EXCHANGE ONLINE, voir Microsoft 365 [URL et plages d’adresses IP.](../enterprise/urls-and-ip-address-ranges.md)
   
- **Q. À combien de destinataires puis-je envoyer un message chiffré Microsoft 365 ?**
+ **Q. À combien de destinataires puis-je envoyer Microsoft 365 message chiffré ?**
   
 La limite de destinataires est de 500 destinataires par message, ou, lorsqu’elle est combinée après l’extension de la liste de distribution, de 11 980 caractères dans le champ **À** du message, selon la première étape.
   
@@ -313,7 +313,7 @@ Il n’existe pas de rapport qui indique si un message chiffré a été vu, mais
   
  **Q. Que fait Microsoft des informations que je fournis par le biais du portail OME et de l’application Visionneuse OME ?**
   
-La déclaration de confidentialité du portail de chiffrement de messagerie [Office 365](https://privacy.microsoft.com/privacystatement) fournit des informations détaillées sur ce que Microsoft fait et ne fait pas avec vos informations privées.
+La [déclaration Office 365 confidentialité](https://privacy.microsoft.com/privacystatement) du portail de chiffrement de messagerie fournit des informations détaillées sur ce que Microsoft fait et ne fait pas avec vos informations privées.
 
 **Q. Que faire si je ne reçois pas le code de passe à temps partiel après l’avoir demandé ?**
 

@@ -56,15 +56,15 @@ Méthode|Type renvoyé |Description
 |globalPrevalence | Nullable long | Prévalence des fichiers au sein de l’organisation |
 |globalFirstObserved | DateTimeOffset | Première observation du fichier |
 |globalLastObserved | DateTimeOffset | Dernière observation du fichier |
-|taille | Nullable long | Taille du fichier |
+|size | Nullable long | Taille du fichier |
 |fileType | String | Type du fichier |
-|isPeFile | Boolean | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
+|isPeFile | Booléen | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
 |filePublisher | String | Éditeur de fichiers |
 |fileProductName | String | Nom du produit |
 |signataire | String | Signataire de fichiers |
 |émetteur | String | Émetteur de fichier |
 |signerHash | String | Hachage du certificat de signature |
-|isValidCertificate | Boolean | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
+|isValidCertificate | Booléen | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
 |determinationType | String | Type de détermination du fichier |
 |determinationValue | String | Valeur de détermination |
 

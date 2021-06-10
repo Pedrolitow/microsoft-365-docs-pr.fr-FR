@@ -29,10 +29,10 @@ ms.locfileid: "51052092"
 
 Vous pouvez créer une alerte d’activité qui vous enverra une notification par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques dans Office 365. Les alertes d’activité sont similaires à la recherche d’événements dans le journal d’audit, sauf qu’un message électronique vous est envoyé lorsqu’un événement pour une activité pour qui vous avez créé une alerte se produit. 
   
- **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité effectués par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu de devoir rechercher ces activités dans le journal d’audit, vous pouvez utiliser des alertes d’activité pour que Microsoft 365 vous envoie un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte d’activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de sa boîte aux lettres. La notification par courrier électronique qui vous est envoyée inclut des informations sur l’activité qui a été effectuée et l’utilisateur qui l’a effectuée.
+ **Pourquoi utiliser des alertes d’activité au lieu de rechercher dans le journal d’audit ?** Il peut y avoir certains types d’activité ou d’activité effectués par des utilisateurs spécifiques que vous voulez vraiment connaître. Au lieu d’avoir à rechercher ces activités dans le journal d’audit, vous pouvez utiliser des alertes d’activité pour Microsoft 365 vous envoyer un message électronique lorsque les utilisateurs effectuent ces activités. Par exemple, vous pouvez créer une alerte d’activité pour vous avertir lorsqu’un utilisateur supprime des fichiers dans SharePoint ou vous pouvez créer une alerte pour vous avertir lorsqu’un utilisateur supprime définitivement des messages de sa boîte aux lettres. La notification par courrier électronique qui vous est envoyée inclut des informations sur l’activité qui a été effectuée et l’utilisateur qui l’a effectuée.
 
 > [!NOTE]
-> Les alertes d’activité sont en cours d’precaté. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer de nouvelles alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités d’ajout, telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifiée, et d’afficher des alertes sur la page Afficher les **alertes** dans le Centre de sécurité et conformité. Pour plus d’informations, voir [Stratégies d’alerte.](alert-policies.md)
+> Les alertes d’activité sont en cours d’precaté. Nous vous recommandons de commencer à utiliser des stratégies d’alerte dans le centre de sécurité et conformité au lieu de créer de nouvelles alertes d’activité. Les stratégies d’alerte fournissent des fonctionnalités d’ajout telles que la possibilité de créer une stratégie d’alerte qui déclenche une alerte lorsqu’un utilisateur effectue une activité spécifiée, et d’afficher des alertes sur la page Afficher les **alertes** dans le Centre de sécurité et conformité. Pour plus d’informations, voir [Stratégies d’alerte.](alert-policies.md)
   
 ## <a name="confirm-roles-and-configure-audit-logging"></a>Confirmer les rôles et configurer la journalisation d’audit
 
@@ -61,7 +61,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
     a. **Nom** : tapez un nom pour l’alerte. Les noms des alertes doivent être uniques au sein de votre organisation.
     
-    b. **Description** (facultatif) : décrire l’alerte, telle que les activités et les utilisateurs suivis, ainsi que les utilisateurs à qui les notifications par courrier électronique sont envoyées. Les descriptions permettent de décrire rapidement et facilement l’objectif de l’alerte aux autres administrateurs.
+    b. **Description** (facultatif) : décrivez l’alerte, telle que les activités et les utilisateurs suivis, ainsi que les utilisateurs vers qui les notifications par courrier électronique sont envoyées. Les descriptions permettent de décrire rapidement et facilement l’objectif de l’alerte aux autres administrateurs.
     
     c. **Type d’alerte** : **assurez-vous que l’option** Personnalisée est sélectionnée. 
 
@@ -71,7 +71,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
     
      - **Utilisateurs** - Cliquez sur cette zone, puis sélectionnez un ou plusieurs utilisateurs. Si les utilisateurs de cette zone effectuent les activités que vous avez ajoutées à la zone **Activités,** une alerte est envoyée. Laissez la **zone Utilisateurs** vide pour envoyer une alerte lorsqu’un utilisateur de votre organisation effectue les activités spécifiées par l’alerte. 
 
-    e. Envoyez cette alerte à - Cliquez sur Envoyer cette **alerte,** puis cliquez dans la zone **Destinataires** et tapez un  nom pour ajouter un utilisateur qui recevra une notification par courrier électronique lorsqu’un utilisateur (spécifié dans la zone Utilisateurs) effectue une activité (spécifiée dans la zone **Activités).**  Notez que vous êtes ajouté à la liste des destinataires par défaut. Vous pouvez supprimer votre nom de cette liste.
+    e. Envoyez cette alerte à - Cliquez sur Envoyer cette alerte, puis cliquez dans la zone **Destinataires** et tapez un  nom pour ajouter un utilisateur qui  recevra une notification par courrier électronique lorsqu’un utilisateur (spécifié dans la zone Utilisateurs) effectue une activité (spécifiée dans la zone Activités).   Notez que vous êtes ajouté à la liste des destinataires par défaut. Vous pouvez supprimer votre nom de cette liste.
     
 5. Cliquez **sur Enregistrer** pour créer l’alerte. 
     
@@ -97,7 +97,7 @@ Vous pouvez désactiver une alerte d’activité afin qu’aucune notification p
     
 Pour ré-activer une alerte d’activité,  répétez simplement ces étapes et cliquez sur le bouton bascule Désactiver pour modifier l’état sur **Activer**.
   
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - Voici un exemple de notification par courrier électronique envoyée aux utilisateurs spécifiés dans le champ Envoyé à cette alerte (et répertorié sous **Destinataires** sur la page **Alertes** d’activité) dans le Centre de sécurité & conformité. 
     
