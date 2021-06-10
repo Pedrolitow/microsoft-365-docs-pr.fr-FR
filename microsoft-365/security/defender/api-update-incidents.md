@@ -1,5 +1,5 @@
 ---
-title: API mettre à jour les incidents
+title: API de mise à jour de l’incident
 description: Découvrez comment mettre à jour les incidents à l’aide Microsoft 365 API Defender
 keywords: mise à jour, api, incident
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730857"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861502"
 ---
 # <a name="update-incidents-api"></a>API mettre à jour les incidents
 
@@ -45,13 +45,13 @@ Met à jour les propriétés d’un incident existant. Les propriétés updatabl
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Quotas, allocation de ressources et autres contraintes
 
 1. Vous pouvez effectuer jusqu’à 50 appels par minute ou 1 500 appels par heure avant d’atteindre le seuil de limitation.
-2. Vous ne pouvez définir la propriété que si elle est `determination` `classification` définie sur TruePositive.
+2. Vous ne pouvez définir `determination` la propriété que si elle est définie sur `classification` TruePositive.
 
 Si votre demande est limitée, elle retourne un `429` code de réponse. Le corps de la réponse indique le moment où vous pouvez commencer à effectuer de nouveaux appels.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Access the Microsoft 365 Defender APIs](api-access.md).
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir [Access the Microsoft 365 Defender APIs](api-access.md).
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
@@ -89,7 +89,7 @@ comment | string | Commentaire à ajouter à l’incident.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie `200 OK` . Le corps de la réponse contiendra l’entité d’incident avec les propriétés mises à jour. Si un incident avec l’ID spécifié n’a pas été trouvé, la méthode renvoie `404 Not Found` .
+Si elle réussit, cette méthode renvoie `200 OK` . Le corps de la réponse contient l’entité d’incident avec les propriétés mises à jour. Si un incident avec l’ID spécifié n’a pas été trouvé, la méthode renvoie `404 Not Found` .
 
 ## <a name="example"></a>Exemple
 

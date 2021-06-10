@@ -62,7 +62,7 @@ Pour plus d’informations sur les rôles de compte de facturation, voir [Compre
 S’il s’agit d’un nouveau compte de facturation et que personne n’a accepté de contrat, vous devenez automatiquement propriétaire du compte de facturation, à condition que :
 
 - La personne nommée dans la proposition\
-    OR
+    OU
 - Êtes déjà un [administrateur Azure Active Directory de](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) votre organisation
 
 ## <a name="what-is-the-overall-workflow"></a>Qu’est-ce que le flux de travail global ?
@@ -72,7 +72,7 @@ Le flux de travail de proposition global se présente comme ceci :
 - Votre représentant Microsoft crée une proposition et vous envoie un lien dans un e-mail.
 - Vous utilisez le lien pour aller à la page de connexion de proposition.
 - Vous examinez les informations de votre organisation.
-- Vous examinez la proposition, acceptez le MCA si nécessaire et terminez le processus d’checkout.
+- Vous examinez la proposition, acceptez le MCA si nécessaire et terminez le processus d’évaluation.
     > [!IMPORTANT]
     > Vous devez avoir l’autorité pour signer un compte mca au nom de votre organisation. Si vous n’avez pas cette autorité, une personne qui le fait doit faire cette étape.
 - Une fois l’enregistrement terminé, des liens supplémentaires vous sont attribués pour configurer vos produits et services.
@@ -94,7 +94,7 @@ Le tableau suivant contient les termes et définitions qui apparaissent dans vot
 
 ## <a name="step-1-review-organization-information"></a>Étape 1 : Examiner les informations de l’organisation
 
-Une fois que vous vous êtes connecté, la première chose que vous faites est de passer en revue les informations de votre organisation.
+Une fois que vous vous connectez, la première chose que vous faites est de passer en revue les informations de votre organisation.
 
 ### <a name="your-organization"></a>Votre organisation
 
@@ -104,7 +104,7 @@ Si c’est la première fois que votre organisation établit une relation commer
 
 ### <a name="your-information"></a>Vos informations
 
-Si vous êtes un nouveau client, entrez votre nom, votre adresse e-mail et votre numéro de téléphone sous Vos **informations,** puis sélectionnez **Enregistrer**. Si vous êtes un client existant, vérifiez que vos informations sont correctes. Pour apporter des corrections, **sélectionnez Modifier,** a apporté les modifications nécessaires, puis sélectionnez **Enregistrer.**
+Si vous êtes un nouveau client, entrez votre nom, votre adresse e-mail et votre numéro de téléphone sous Vos **informations,** puis sélectionnez **Enregistrer**. Si vous êtes un client existant, vérifiez que vos informations sont correctes. Pour apporter des corrections, **sélectionnez Modifier,** a apporté les modifications nécessaires, puis **sélectionnez Enregistrer.**
 
 Lorsque vous êtes prêt, sélectionnez **Continuer** pour passer à l’étape suivante.
 
@@ -129,7 +129,7 @@ La proposition contient les informations suivantes :
 | Éléments de ligne de proposition | Cette section contient la quantité, le prix unitaire et le sous-total de tous les éléments inclus dans la proposition. |
 | Étape suivante | Cette section indique l’action nécessaire que vous devez prendre. |
 
-Pour signer un MCA, sélectionnez le bouton sous **Étape suivante.** Si vous devez signer des termes supplémentaires, un lien vous permet d’accès au site DocuSign, où vous suivez les étapes de signature du document.
+Pour signer un mca, sélectionnez le bouton sous **Étape suivante.** Si vous devez signer des termes supplémentaires, un lien vous permet d’accès au site DocuSign, où vous suivez les étapes de signature du document.
 
 Une fois que vous avez signé les contrats nécessaires ou les termes supplémentaires, **sélectionnez Go to checkout**.
 
@@ -139,13 +139,13 @@ La page d’checkout contient les sections suivantes :
 
 ### <a name="sold-to"></a>Vendu à
 
-Cette section indique le compte de facturation utilisé pour la proposition. Si vous avez besoin de modifier des informations, sélectionnez **le lien** Modifier. Vous pouvez également utiliser le lien **Modifier** pour ajouter l’ID fiscal de votre organisation. L’ID de taxe doit être lié au pays répertorié dans la section **Vendu à.** Si vous avez une exonération fiscale, vous devez ouvrir un ticket de support pour demander l’exonération fiscale.
+Cette section indique le compte de facturation utilisé pour la proposition. Si vous avez besoin de modifier des informations, sélectionnez le **lien** Modifier. Vous pouvez également utiliser le lien **Modifier** pour ajouter l’ID fiscal de votre organisation. L’ID de taxe doit être lié au pays répertorié dans la section **Vendu à.** Si vous avez une exonération fiscale, vous devez ouvrir un ticket de support pour demander l’exonération fiscale.
 
 Pour en savoir plus sur les ID de taxe et sur la façon de demander une exonération fiscale, consultez informations [fiscales.](billing-and-payments/tax-information.md)
 
 ### <a name="billed-to"></a>Facturé à
 
-Cette section présente le profil de facturation utilisé pour déterminer les éléments inclus sur votre facture et la façon dont vous payez vos factures. À chaque cycle de facturation, vous recevez une facture distincte pour chaque profil de facturation. Vous payez pour les factures à l’aide d’un chèque ou d’un transfert par virement, ou d’un paiement anticipé Azure. Si vous n’avez pas encore de profil de facturation, votre représentant Microsoft en crée un pour vous. Lors de l’checkout, vous pouvez sélectionner un profil de facturation différent, si vous en avez un, modifier le nom du profil de facturation ou ajouter une P.O. nombre. Vous pouvez également créer un profil de facturation.
+Cette section présente le profil de facturation utilisé pour déterminer les éléments inclus sur votre facture et la façon dont vous payez vos factures. À chaque cycle de facturation, vous recevez une facture distincte pour chaque profil de facturation. Vous payez pour les factures à l’aide d’un chèque ou d’un virement bancaire, ou d’un paiement anticipé Azure. Si vous n’avez pas encore de profil de facturation, votre représentant Microsoft en crée un pour vous. Lors de l’checkout, vous pouvez sélectionner un profil de facturation différent, si vous en avez un, modifier le nom du profil de facturation ou ajouter une P.O. nombre. Vous pouvez également créer un profil de facturation.
 
 Pour plus d’informations sur les profils de facturation, voir [Gérer les profils de facturation.](billing-and-payments/manage-billing-profiles.md)
 
@@ -156,7 +156,7 @@ Cette section affiche la liste de tous les éléments inclus dans la proposition
 - **Termes supplémentaires** Liste des modifications apportées au MCA qui contiennent des termes pour votre organisation. Par exemple, cette liste peut inclure des termes HIPAA ou R GDPR.
 - **Acheter maintenant** Liste des éléments que vous payez lors de l’enregistrement à la fin du flux de travail d’acceptation des propositions.
 - **Remises (appliquées aux futurs frais)** Liste des remises que vous recevez dans le cadre de la proposition.
-- **Inclus** Liste des éléments inclus dans le package de propositions sans frais supplémentaires. Certains de ces éléments peuvent avoir un coût qui leur est associé à l’avenir.
+- **Inclus** Liste des éléments inclus dans le package de propositions sans frais supplémentaires. Certains de ces éléments peuvent être associés à un coût à l’avenir.
 
 ### <a name="summary"></a>Résumé
 

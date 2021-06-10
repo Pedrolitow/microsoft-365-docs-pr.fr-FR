@@ -36,11 +36,11 @@ ms.locfileid: "51398240"
 - Comment configurer un compte d’administrateur supplémentaire pour les urgences.
 - Comment protéger ces comptes.
 
-Lorsque vous vous inscrivez à Microsoft 365 et entrez vos informations, vous devenez automatiquement l’administrateur global. Un administrateur global a le contrôle ultime des comptes d’utilisateur et de tous les autres paramètres dans le Centre d’administration Microsoft, mais il existe de nombreux types différents de comptes d’administrateur avec différents degrés d’accès. Pour plus [d’informations sur](/office365/admin/add-users/about-admin-roles) les différents niveaux d’accès pour chaque type de rôle d’administrateur, voir les rôles d’administrateur.
+Lorsque vous vous inscrivez pour Microsoft 365 et entrez vos informations, vous devenez automatiquement l’administrateur global. Un administrateur global a le contrôle ultime des comptes d’utilisateur et de tous les autres paramètres dans le Centre d’administration Microsoft, mais il existe de nombreux types différents de comptes d’administrateur avec différents degrés d’accès. Pour plus [d’informations sur](/office365/admin/add-users/about-admin-roles) les différents niveaux d’accès pour chaque type de rôle d’administrateur, voir les rôles d’administrateur.
 
 ## <a name="create-additional-admin-accounts"></a>Créer des comptes d’administrateur supplémentaires
 
-Utilisez des comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent avoir un compte d’utilisateur distinct pour une utilisation régulière des applications Office et utiliser leur compte d’administration uniquement lorsque cela est nécessaire pour gérer les comptes et les appareils, et tout en travaillant sur d’autres fonctions d’administration. Il est également bon de supprimer la licence Microsoft 365 des comptes d’administrateur afin de ne pas avoir à les payer.
+Utilisez des comptes d’administrateur uniquement pour l’administration. Les administrateurs doivent avoir un compte d’utilisateur distinct pour une utilisation régulière des applications Office et utiliser leur compte administratif uniquement lorsque cela est nécessaire pour gérer les comptes et les appareils, et tout en travaillant sur d’autres fonctions d’administration. Il est également bon de supprimer la licence Microsoft 365 des comptes d’administrateur afin de ne pas avoir à les payer.
 
 Vous pouvez configurer au moins un compte d’administrateur global supplémentaire pour accorder à l’administrateur l’accès à un autre employé approuvé. Vous pouvez également créer des comptes d’administrateur distincts pour la gestion des utilisateurs (ce rôle est appelé **administrateur de gestion des utilisateurs).** Pour plus d’informations, voir [les rôles d’administrateur.](/office365/admin/add-users/about-admin-roles)
 
@@ -57,7 +57,7 @@ Pour créer des comptes d’administrateur supplémentaires :
 
     ![Choisir le rôle d’administrateur](../media/adminroles.png)
 
- 4. Dans la section **Licences de** produits, déplacez le sélecteur de **Microsoft 365 Business** sur « **Hors** activité » et l’utilisateur Créer sans licence de produit **sur** **« On**».
+ 4. Dans la section **Licences de** produits, déplacez le  sélecteur **de Microsoft 365 Business** sur Off et l’utilisateur Créer sans licence **de** produit sur **On**.
 
     ![Choisir la licence de produit](../media/productlicense.png)
 
@@ -74,7 +74,7 @@ Pour créer un compte d’utilisateur :
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">admin center</a> and then choose **Users** \> **Active users** in the left nav.
 2. Dans la page **Utilisateurs** actifs, sélectionnez Ajouter un utilisateur  en haut de la page, puis, dans le panneau Nouvel utilisateur, entrez le nom et d’autres informations. 
 3. Développez la section **Rôles,** puis choisissez **Utilisateur (pas d’accès administratif).**
-4. Dans la section **Licences de produits,** déplacez le sélecteur **de Microsoft 365 Business** sur **On**.
+4. Dans la section **Licences de produits,** déplacez le sélecteur **de Microsoft 365 Business** sur **Sur**.
 
 ## <a name="turn-on-security-defaults"></a>Activer les paramètres de sécurité par défaut
 

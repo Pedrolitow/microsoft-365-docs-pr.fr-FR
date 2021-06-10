@@ -1,6 +1,6 @@
 ---
 title: Ordre et priorité de la protection de la messagerie
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour l’identité
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, centre de sécurité, portail Microsoft 365 Defender, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour l’identité
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l’ordre d’application des protections dans Exchange Online Protection (EOP) et comment la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7243fd79287e19528e999774dbd0dd018fa86759
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539010"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877847"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
@@ -30,8 +30,8 @@ ms.locfileid: "52539010"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages entrants peuvent être signalés par plusieurs formes de protection. Par exemple, les stratégies anti-hameçonnage intégrées dans EOP qui sont disponibles pour tous les clients Microsoft 365 et les stratégies anti-hameçonnage les plus robustes disponibles pour Microsoft Defender pour Office 365 clients. Les messages passent également par plusieurs analyses de détection des programmes malveillants, du courrier indésirable, du hameçonnage, etc. Étant donné toute cette activité, il peut y avoir une certaine confusion quant à la stratégie appliquée.
 

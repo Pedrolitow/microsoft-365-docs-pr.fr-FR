@@ -32,10 +32,10 @@ ms.locfileid: "51204938"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou dans des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les clients se demandent parfois : « Quelle est la différence entre le courrier indésirable et le courrier en masse ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
+Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les clients demandent parfois : « Quelle est la différence entre le courrier indésirable et le courrier en masse ? » Cette rubrique explique la différence et décrit les contrôles disponibles dans EOP.
 
 - **Le courrier indésirable** est du courrier indésirable, qui est un message non sollicité et universellement indésirable (s’il est correctement identifié). Par défaut, EOP rejette le courrier indésirable en fonction de la réputation du serveur de messagerie source. Si un message réussit l’inspection de l’adresse IP source, il est envoyé au filtrage du courrier indésirable. Si le message est classé comme courrier indésirable par filtrage du courrier indésirable, le message est remis (par défaut) aux destinataires prévus et déplacé vers son dossier Courrier indésirable.
 
@@ -43,7 +43,7 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
   - Si vous n’êtes pas d’accord avec le verdict de filtrage du courrier indésirable, vous pouvez signaler les messages que vous considérez comme courrier indésirable ou non indésirable à Microsoft de plusieurs manières, comme décrit dans Signaler les messages et les fichiers à [Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-- **Les messages électroniques** en nombre (également appelés _messages_ gris) sont plus difficiles à classer. Alors que le courrier indésirable est une menace constante, les courriers électroniques en masse sont souvent des publicités ou des messages marketing. Certains utilisateurs souhaitent des messages électroniques en nombre (et en fait, ils se sont délibérément inscrits pour les recevoir), tandis que d’autres considèrent les messages électroniques en masse comme du courrier indésirable. Par exemple, certains utilisateurs souhaitent recevoir des messages publicitaires de Contoso Corporation ou des invitations à une conférence à venir sur la cybersécurité, tandis que d’autres considèrent ces mêmes messages comme du courrier indésirable.
+- **Les messages électroniques** en nombre (également appelés _messages_ gris) sont plus difficiles à classer. Alors que le courrier indésirable est une menace constante, les courriers électroniques en masse sont souvent des publicités ou des messages marketing. Certains utilisateurs souhaitent des messages électroniques en nombre (et en fait, ils se sont délibérément inscrits pour les recevoir), tandis que d’autres considèrent les messages électroniques en masse comme du courrier indésirable. Par exemple, certains utilisateurs souhaitent recevoir des messages publicitaires de Contoso Corporation ou des invitations à une prochaine conférence sur la cybersécurité, tandis que d’autres considèrent ces mêmes messages comme du courrier indésirable.
 
   Pour plus d’informations sur la façon dont les messages électroniques en nombre sont identifiés, voir Le niveau de réclamation en bloc [(BCL) dans EOP.](bulk-complaint-level-values.md)
 

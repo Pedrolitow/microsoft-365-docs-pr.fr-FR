@@ -33,7 +33,7 @@ ms.locfileid: "52844261"
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-La protection réseau permet de réduire la surface d’attaque de vos appareils à partir d’événements Basés sur Internet. Elle empêche les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux qui peuvent héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet. La protection du réseau étend l’étendue des [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) pour bloquer tout le trafic HTTP sortant qui tente de se connecter à des sources de faible réputation (en fonction du domaine ou du nom d’hôte).
+La protection réseau permet de réduire la surface d’attaque de vos appareils à partir d’événements Basés sur Internet. Elle empêche les employés d’utiliser n’importe quelle application pour accéder à des domaines dangereux qui peuvent héberger des tentatives d’hameçonnage, des attaques et d’autres contenus malveillants sur Internet. La protection du réseau étend l’étendue des [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) pour bloquer tout le trafic HTTP sortant qui tente de se connecter à des sources de réputation faible (basées sur le domaine ou le nom d’hôte).
 
 La protection réseau est prise en charge Windows, à partir Windows 10 version 1709. La protection réseau n’est pas encore prise en charge sur d’autres systèmes d’exploitation, mais la protection web est prise en charge à l’aide du nouveau Microsoft Edge basé sur Chromium. Pour en savoir plus, consultez [La protection Web.](web-protection-overview.md)
 
@@ -48,7 +48,7 @@ La protection réseau fonctionne mieux avec [Microsoft Defender pour point](micr
 
 Lorsque la protection réseau bloque une connexion, une notification s’affiche à partir du centre de notifications. Votre équipe des opérations de sécurité [peut personnaliser la notification](customize-attack-surface-reduction.md#customize-the-notification) avec les détails et les informations de contact de votre organisation. En outre, les règles de réduction de la surface d’attaque individuelles peuvent être activées et personnalisées en fonction de certaines techniques à surveiller.
 
-Vous pouvez également utiliser le [mode audit pour](audit-windows-defender.md) évaluer l’impact de la protection réseau sur votre organisation si elle était activée.
+Vous pouvez également utiliser le [mode audit](audit-windows-defender.md) pour évaluer l’impact de la protection réseau sur votre organisation si elle était activée.
 
 ## <a name="requirements"></a>Conditions requises
 
@@ -108,7 +108,7 @@ En raison de la nature multi-utilisateur de Windows 10 Entreprise, gardez les po
 
 ### <a name="alternative-option-for-network-protection"></a>Autre option pour la protection du réseau
 
-Pour Windows 10 Entreprise multisession 1909 et plus, utilisée dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
+Pour Windows 10 Entreprise multisession 1909 et plus, utilisé dans Windows Virtual Desktop sur Azure, la protection réseau pour Microsoft Edge peut être activée à l’aide de la méthode suivante :
 
 1. Utilisez [Activer la protection réseau et](enable-network-protection.md) suivez les instructions pour appliquer votre stratégie.
 

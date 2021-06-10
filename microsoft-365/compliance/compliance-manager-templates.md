@@ -23,7 +23,7 @@ ms.locfileid: "51499023"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Utiliser des modèles d’évaluation dans le Gestionnaire de conformité
 
-**Dans cet article :** Comprendre **comment fonctionnent les modèles** et **comment les gérer** à partir de votre page de modèles d’évaluation. Obtenez des instructions pour **créer** des modèles,  modifier des modèles existants, mettre en forme vos données de modèle avec **Excel** et exporter des rapports de **modèles.**
+**Dans cet article :** Comprendre **comment fonctionnent les modèles** et **comment les gérer** à partir de votre page de modèles d’évaluation. Obtenez des instructions pour **créer** de nouveaux modèles,  modifier des modèles existants, mettre en forme vos données de modèle avec **Excel** et exporter des rapports de **modèles.**
 
 > [!IMPORTANT]
 > Les modèles d’évaluation disponibles pour votre organisation dépendent de votre contrat de licence. [Examinez les détails.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
@@ -41,7 +41,7 @@ Un modèle est une infrastructure de contrôles permettant de créer une évalua
 Les modèles disponibles pour une utilisation sont basés sur le contrat de licence de votre organisation (voir[les détails de licence).](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) Il existe deux catégories de modèles : incluses et premium.
 
 1. **Les modèles inclus** peuvent être utilisés dans le cadre du contrat de licence de votre organisation.
-2. **Les modèles Premium** doivent être achetés pour pouvoir créer des évaluations à partir de ces modèles. Une fois acheté, vous pouvez créer autant d’évaluations à partir d’un modèle que nécessaire. [Découvrez comment acheter des modèles Premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+2. **Premium modèles** doivent être achetés afin de créer des évaluations à partir de ces modèles. Une fois acheté, vous pouvez créer autant d’évaluations à partir d’un modèle que nécessaire. [Découvrez comment acheter des modèles Premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 #### <a name="active-and-inactive-templates"></a>Modèles actifs et inactifs
 
@@ -70,7 +70,7 @@ Sélectionnez un modèle dans sa ligne pour faire monter sa page de détails. Ce
 
 ## <a name="creating-and-modifying-templates-overview"></a>Vue d’ensemble de la création et de la modification des modèles
 
-Pour modifier un modèle existant ou créer votre propre modèle, vous allez utiliser[](https://go.microsoft.com/fwlink/?linkid=2124865)une feuille de calcul Excel spécialement mise en forme (téléchargez un exemple) pour assembler les données de contrôle nécessaires. Après avoir terminé la feuille de calcul, vous l’importez dans le Gestionnaire de conformité pendant le processus de création ou de modification d’un modèle.
+Pour modifier un modèle existant ou créer votre propre modèle, vous devez utiliser une[](https://go.microsoft.com/fwlink/?linkid=2124865)feuille de calcul Excel spécialement mise en forme (téléchargez un exemple) pour assembler les données de contrôle nécessaires. Après avoir terminé la feuille de calcul, vous l’importez dans le Gestionnaire de conformité pendant le processus de création ou de modification d’un modèle.
 
 > [!NOTE]
 > La feuille de calcul possède un format et un schéma spécifiques qui doivent être utilisés, sinon elle ne sera pas importée correctement dans le Gestionnaire de conformité. Les [instructions de mise en forme sont](#formatting-your-template-data-with-excel) ci-dessous.
@@ -86,17 +86,17 @@ Pour créer votre propre modèle (utilisé pour créer des évaluations personna
 1. Go to your **assessment templates** page in Compliance Manager.
 2. Sélectionnez **Créer un modèle.** Un Assistant Création de modèle s’ouvre.
 3. Choisissez le type de modèle que vous souhaitez créer. Dans ce cas, **sélectionnez Créer un modèle personnalisé,** puis sélectionnez **Suivant.**
-4. Dans **l’écran** Télécharger un fichier, sélectionnez **Parcourir** pour rechercher et télécharger votre fichier Excel mis en forme contenant toutes les données de modèle requises (voir les instructions pour mettre correctement en forme [votre fichier).](#formatting-your-template-data-with-excel)
-5. En l’absence de problème avec votre fichier, le nom du fichier téléchargé s’affiche. Sélectionnez **Suivant** pour continuer. (Si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).**
+4. Dans le **Télécharger** de fichier,  sélectionnez Parcourir pour rechercher et télécharger votre fichier Excel mis en forme contenant toutes les données de modèle requises (voir [les instructions](#formatting-your-template-data-with-excel)pour mettre correctement en forme votre fichier).
+5. S’il n’y a aucun problème avec votre fichier, le nom du fichier téléchargé s’affiche. Sélectionnez **Suivant** pour continuer. (Si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).**
     - En cas d’erreur avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devez corriger votre fichier et le charger à nouveau. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou si certaines informations ne sont pas valides dans certains champs (reportez-vous à nouveau aux [instructions de mise en forme).](#formatting-your-template-data-with-excel)  
     
 6. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, **sélectionnez Créer un modèle.** (Si vous devez apporter des modifications, sélectionnez **Retour.)**
 7. Le dernier écran confirme qu’un nouveau modèle a été créé. Sélectionnez **Terminé** pour quitter l’Assistant.
 8. Vous arrivez à la page de détails de votre nouveau modèle, où vous pouvez [créer votre évaluation.](compliance-manager-assessments.md#create-your-own-custom-assessment)
 
-## <a name="formatting-your-template-data-with-excel"></a>Mise en forme de vos données de modèle avec Excel
+## <a name="formatting-your-template-data-with-excel"></a>Mise en forme de vos données de modèle à l’Excel
 
-La feuille de calcul Excel utilisée pour créer des modèles contient quatre onglets, dont trois sont requis :
+La feuille Excel de calcul utilisée pour créer des modèles contient quatre onglets, dont trois sont requis :
 
 1. [Modèle](#template-tab) (obligatoire)
 2. [ControlFamily](#controlfamily-tab) (obligatoire)
@@ -107,7 +107,7 @@ Lorsque vous remplissez votre feuille de calcul avec des données de modèle, la
 
 ##### <a name="template-tab"></a>Onglet Modèle
 
-**L’onglet** Modèle est obligatoire. Les informations de cet onglet fournissent des métadonnées sur le modèle. Il existe quatre colonnes obligatoires. Les colonnes doivent conserver l’ordre dans la feuille Excel, comme répertorié ci-dessous. Vous pouvez ajouter votre propre colonne **après les** quatre colonnes pour fournir vos propres dimensions. Si vous le faites, n’oubliez pas de les ajouter à l’onglet **Dimensions** en suivant les [instructions ci-dessous.](#dimensions-tab)
+**L’onglet** Modèle est obligatoire. Les informations de cet onglet fournissent des métadonnées sur le modèle. Il existe quatre colonnes obligatoires. Les colonnes doivent conserver l’ordre dans la feuille Excel comme répertorié ci-dessous. Vous pouvez ajouter votre propre colonne **après les** quatre colonnes pour fournir vos propres dimensions. Si vous le faites, n’oubliez pas de les ajouter à l’onglet **Dimensions** en suivant les [instructions ci-dessous.](#dimensions-tab)
 
 - **titre**: il s’agit du titre de votre modèle, qui doit être unique. Il ne peut pas partager un nom avec un autre modèle que vous avez dans le Gestionnaire de conformité, y compris vos propres modèles ou un modèle gestionnaire de conformité.
 
@@ -115,7 +115,7 @@ Lorsque vous remplissez votre feuille de calcul avec des données de modèle, la
 
 - **certification**: il s’agit de la réglementation que vous utilisez pour le modèle.
 
-- **inScopeServices**: il s’agit des services du produit que cette évaluation traite (par exemple, si vous avez répertorié Office 365 comme produit, Microsoft Teams peut être un service dans l’étendue). Vous pouvez lister plusieurs services séparés par deux points-virgules.
+- **inScopeServices**: il s’agit des services au sein du produit que cette évaluation traite (par exemple, si vous avez répertorié Office 365 comme produit, Microsoft Teams peut être un service dans l’étendue). Vous pouvez lister plusieurs services séparés par deux points-virgules.
 
 > [!NOTE]
 > Les données que  vous insérez dans les cellules de produit et de **certification** ne peuvent pas être modifiées après avoir importé la feuille de calcul pour créer ou personnaliser un modèle. En outre, un groupe ne peut pas contenir deux évaluations qui ont la même combinaison **produit/certification.** Vous pouvez avoir plusieurs modèles avec la même combinaison produit/certification.
@@ -128,7 +128,7 @@ Lorsque vous remplissez votre feuille de calcul avec des données de modèle, la
 
 - **controlFamily**: fournissez un mot ou une expression pour le controlFamily, qui identifie un groupe étendu de contrôles. Un controlFamily n’a pas besoin d’être unique ; Il peut être répertorié plusieurs fois dans une feuille de calcul. Le même controlFamily peut également être répertorié dans plusieurs modèles, bien qu’ils n’ont aucune relation les uns avec les autres. Chaque controlFamily doit être mappé sur au moins un contrôle.
 
-- **controlTitle**: fournir un titre pour le contrôle. Alors que controlName est un code de référence, le titre est un format de texte enrichi généralement vu dans les réglementations.
+- **controlTitle :** fournir un titre pour le contrôle. Alors que controlName est un code de référence, le titre est un format de texte enrichi généralement vu dans les réglementations.
 
 - **controlDescription**: fournir une description du contrôle.
 
@@ -142,8 +142,8 @@ Lorsque vous remplissez votre feuille de calcul avec des données de modèle, la
 
 - **implementationType**: dans ce champ obligatoire, listez l’un des trois types d’implémentation ci-dessous :
     - **Opérationnel** : actions implémentées par les personnes et les processus pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes organisationnels, des ressources, des données et du personnel (exemple : sensibilisation et formation en matière de sécurité)
-    - Technique **:** actions effectuées par le biais de l’utilisation de la technologie et des mécanismes contenus dans les composants matériels, logiciels ou microprogrammes du système d’information pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes et données de l’organisation (exemple : authentification multifacteur)
-    - **Documentation** : actions implémentées par le biais de stratégies et de procédures documentées établissant et définissant les contrôles requis pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes organisationnels, des biens, des données et du personnel (par exemple, une stratégie de sécurité des informations)
+    - Technique **:** actions effectuées par le biais de l’utilisation de technologies et de mécanismes contenus dans les composants matériels, logiciels ou microprogrammes du système d’information pour protéger la confidentialité, l’intégrité et la disponibilité des données et des systèmes organisationnels (exemple : authentification multifacteur)
+    - **Documentation** : actions implémentées par le biais de stratégies et de procédures documentées établissant et définissant les contrôles requis pour protéger la confidentialité, l’intégrité et la disponibilité des systèmes organisationnels, des biens, des données et du personnel (exemple : une stratégie de sécurité des informations)
 
 - **actionScore**: dans ce champ obligatoire, fournissez une valeur de score numérique pour votre action. Il doit s’agit d’un nombre entier compris entre 1 et 99 ; il ne peut pas être 0, null ou vide. Plus le nombre est élevé, plus sa valeur est grande pour améliorer votre posture de conformité. L’image ci-dessous montre comment le Gestionnaire de conformité contrôle les scores :
 
@@ -166,7 +166,7 @@ Vous pouvez afficher vos dimensions existantes en allant dans **Gestion** des cl
 
 ## <a name="modify-a-template"></a>Modifier un modèle
 
-Vous pouvez modifier un modèle que vous avez déjà créé, par exemple pour ajouter des contrôles ou ajouter ou supprimer des actions d’amélioration. Le processus est similaire au processus de création de modèle dans la façon dont vous allez charger le fichier Excel mis en forme avec vos données de modèle.
+Vous pouvez modifier un modèle que vous avez déjà créé, par exemple pour ajouter des contrôles ou ajouter ou supprimer des actions d’amélioration. Le processus est similaire au processus de création de modèle dans la façon dont vous allez charger le fichier Excel formaté avec vos données de modèle.
 
 Toutefois, il existe des détails particuliers à prendre en compte lorsque vous formatez votre fichier avec les modifications apportées aux données de modèle existantes. **Nous vous recommandons de consulter attentivement ces instructions pour vous assurer que vous n’avez pas de données existantes à conserver.**
 
@@ -175,11 +175,11 @@ Toutefois, il existe des détails particuliers à prendre en compte lorsque vous
 Pour modifier un modèle, suivez les étapes ci-dessous :
 
 1. Dans la page **de vos modèles d’évaluation,** sélectionnez le modèle que vous souhaitez modifier, ce qui fera monter sa page de détails.
-2. Sélectionnez **Exporter vers Excel.** Un fichier Excel avec toutes vos données de modèle sera téléchargé. Enregistrez le fichier sur votre ordinateur local.
-3. A apporter des modifications à votre modèle en modifiant le fichier Excel à [l’aide des instructions ci-dessous.](#formatting-your-excel-file-to-modify-a-template)
-4. Lorsque vous avez terminé d’apporter des modifications à votre fichier Excel, enregistrez-le.
+2. Sélectionnez **Exporter pour Excel**. Un Excel avec toutes vos données de modèle sera téléchargé. Enregistrez le fichier sur votre ordinateur local.
+3. Modifiez votre modèle en [modifiant le fichier Excel à l’aide des instructions ci-dessous.](#formatting-your-excel-file-to-modify-a-template)
+4. Lorsque vous avez terminé d’apporter des modifications à Excel fichier, enregistrez-le.
 5. Sur la page de détails de votre modèle, **sélectionnez Modifier le modèle** pour lancer l’Assistant Modification. 
-6. Dans **l’écran Télécharger** un fichier, **sélectionnez Parcourir** pour rechercher et télécharger votre fichier Excel.
+6. Dans le **Télécharger de fichier,** sélectionnez **Parcourir** pour rechercher et télécharger Excel fichier.
 7. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. Sélectionnez Suivant pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).** 
     - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devez corriger votre fichier et le charger à nouveau. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
 
@@ -191,7 +191,7 @@ Votre modèle inclut désormais les modifications que vous avez apportées. Tout
 > [!NOTE]
 > Si vous utilisez le Gestionnaire de conformité dans une langue autre que l’anglais, vous remarquerez qu’un texte s’affiche en anglais lorsque vous exportez un modèle vers Excel. Les titres des actions (vos actions d’amélioration et les actions Microsoft) doivent être en anglais pour être reconnus par les contrôles. Si vous modifiez un titre d’action, veillez à l’écrire en anglais afin que le fichier importe correctement.
 
-### <a name="formatting-your-excel-file-to-modify-a-template"></a>Mise en forme de votre fichier Excel pour modifier un modèle
+### <a name="formatting-your-excel-file-to-modify-a-template"></a>Mise en forme de votre Excel pour modifier un modèle
 
 Pour trouver rapidement les instructions dont vous avez besoin, voir la section ci-dessous :
 
@@ -216,7 +216,7 @@ Sous **l’onglet Modèles,** vous  pouvez modifier n’importe quoi dans la col
 
 Vous pouvez modifier les informations de n’importe quelle action d’amélioration *à l’exception de son titre.* Vous pouvez modifier n’importe quelle cellule à partir des colonnes B et, lorsque vous importez de nouveau le fichier dans le modèle, les actions d’amélioration de ce modèle contiennent désormais les données mises à jour.
 
-Vous ne pouvez pas modifier **l’actionTitle** (colonne A), car si vous le faites, le Gestionnaire de conformité considère qu’il s’agit d’une nouvelle action d’amélioration. Si vous souhaitez modifier le nom d’une action d’amélioration, consultez les instructions ci-dessous.
+Vous ne pouvez pas modifier **actionTitle** (colonne A), car si vous le faites, le Gestionnaire de conformité considère qu’il s’agit d’une nouvelle action d’amélioration. Si vous souhaitez modifier le nom d’une action d’amélioration, consultez les instructions ci-dessous.
 
 #### <a name="change-an-improvement-actions-name"></a>Modifier le nom d’une action d’amélioration
 
@@ -256,8 +256,8 @@ Lorsque vous importez de nouveau votre feuille de calcul dans le modèle, votre 
 
 ## <a name="export-a-template"></a>Exporter un modèle
 
-Vous pouvez exporter un fichier Excel qui contient toutes les données d’un modèle. Vous devez exporter un modèle pour modifier le modèle, car il s’agit du fichier Excel que vous modifiez et chargez dans le processus [de modification.](#modify-a-template)
+Vous pouvez exporter un Excel qui contient toutes les données d’un modèle. Vous devez exporter un modèle pour modifier le modèle, car il s’agit du fichier Excel que vous modifiez et chargez dans le processus [de modification.](#modify-a-template)
 
-Pour exporter votre modèle, allez sur la page de détails de votre modèle et sélectionnez le bouton **Exporter vers Excel.**
+Pour exporter votre modèle, go to your template details page and select the **Export to Excel** button.
 
 Notez que lors de l’exportation d’un modèle que vous avez étendu à partir d’un modèle gestionnaire de conformité, le fichier exporté contient uniquement les attributs que vous avez ajoutés au modèle. Le fichier exporté n’inclut pas les données de modèle d’origine fournies par Microsoft. Pour obtenir un tel rapport, consultez les instructions d’exportation [d’un rapport d’évaluation.](compliance-manager-assessments.md#export-an-assessment-report)

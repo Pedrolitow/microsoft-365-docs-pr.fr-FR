@@ -26,7 +26,7 @@ ms.locfileid: "52345117"
 
 ## <a name="about-rolling-the-availability-key"></a>À propos du déploiement de la clé de disponibilité
 
-Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux clients. Par exemple, vous pouvez uniquement faire pivoter (faire pivoter) les clés que vous possédez dans Azure Key Vault. Microsoft 365 les clés de disponibilité selon une planification définie en interne. Il n’existe aucun contrat de niveau de service (SLA) client pour ces chiffres clés. Microsoft 365 la clé de disponibilité à l’aide Microsoft 365 code de service dans un processus automatisé et non manuel. Les administrateurs Microsoft peuvent lancer le processus de déploiement. La clé est déployée à l’aide de mécanismes automatisés sans accès direct au magasin de clés. L’accès au magasin de clés secrètes de disponibilité n’est pas disponible pour les administrateurs Microsoft. Le déploiement de la clé de disponibilité exploite le mécanisme utilisé initialement pour générer la clé. Pour plus d’informations sur la clé de disponibilité, voir [Comprendre la clé de disponibilité.](customer-key-availability-key-understand.md)
+Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux clients. Par exemple, vous pouvez uniquement faire pivoter (faire pivoter) les clés que vous possédez dans Azure Key Vault. Microsoft 365 les clés de disponibilité selon une planification définie en interne. Il n’existe aucun contrat de niveau de service (SLA) client pour ces chiffres clés. Microsoft 365 la clé de disponibilité à l’aide Microsoft 365 code de service dans un processus automatisé et non manuel. Les administrateurs Microsoft peuvent lancer le processus de déploiement. La clé est déployée à l’aide de mécanismes automatisés sans accès direct au magasin de clés. L’accès au magasin de clés secrètes de disponibilité n’est pas disponible pour les administrateurs Microsoft. Le déploiement de clé de disponibilité utilise le même mécanisme que celui utilisé pour générer initialement la clé. Pour plus d’informations sur la clé de disponibilité, voir [Comprendre la clé de disponibilité.](customer-key-availability-key-understand.md)
 
 > [!IMPORTANT]
 > Exchange Online et Skype Entreprise clés de disponibilité peuvent être correctement déployées par les clients qui créent une nouvelle dep, car une clé de disponibilité unique est générée pour chaque deP que vous créez. Les clés de disponibilité pour les fichiers SharePoint Online, OneDrive Entreprise et Teams existent au niveau de la forêt et sont partagées entre les PD DEP et les clients, ce qui signifie que le déploiement se produit uniquement selon une planification définie en interne par Microsoft. Pour atténuer le risque de ne pas déployer la clé de disponibilité chaque fois qu’un nouveau dep est créé, SharePoint, OneDrive et Teams la clé intermédiaire du client (TIK), la clé wrapped par les clés racine du client et la clé de disponibilité, chaque fois qu’un nouveau dep est créé.
@@ -35,7 +35,7 @@ Microsoft n’expose pas le contrôle direct de la clé de disponibilité aux cl
 
 Lorsque vous rollez une clé, vous demandez une nouvelle version d’une clé existante. Pour demander une nouvelle version d’une clé existante, utilisez la même cmdlet, [Add-AzKeyVaultKey,](/powershell/module/az.keyvault/add-azkeyvaultkey)avec la même syntaxe que celle utilisée pour créer la clé. Une fois que vous avez terminé le déploiement d’une clé associée à une stratégie de chiffrement de données ( DEP), vous exécutez une autre cmdlet pour vous assurer que la clé client commence à utiliser la nouvelle clé. Faites cette étape dans chaque coffre de clés Azure (AKV).
 
-Par exemple :
+Par exemple :
 
 1. Connectez-vous à votre abonnement Azure avec Azure PowerShell. Pour obtenir des instructions, [voir Se Azure PowerShell](/powershell/azure/authenticate-azureps).
 
@@ -49,9 +49,9 @@ Par exemple :
   
 ## <a name="update-the-keys-for-multi-workload-deps"></a>Mettre à jour les clés pour les ppp multi-charges de travail
 
-Lorsque vous rollez l’une des clés Azure Key Vault associées à un dep utilisé avec plusieurs charges de travail, vous devez mettre à jour le deP pour pointer vers la nouvelle clé. Ce processus ne fait pas pivoter la clé de disponibilité.
+Lorsque vous rollez l’une des clés Azure Key Vault associées à un dep utilisé avec plusieurs charges de travail, vous devez mettre à jour le dep pour pointer vers la nouvelle clé. Ce processus ne fait pas pivoter la clé de disponibilité.
 
-Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer plusieurs charges de travail, effectuer les étapes suivantes :
+Pour demander à la clé client d’utiliser la nouvelle clé pour chiffrer plusieurs charges de travail, complétez les étapes suivantes :
 
 1. Sur votre ordinateur local, à l’aide d’un compte scolaire ou scolaire qui dispose d’autorisations d’administrateur général ou d’administrateur de conformité dans votre organisation, connectez-vous à [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) dans une fenêtre Windows PowerShell.
 
@@ -93,7 +93,7 @@ SharePoint Online ne vous permet de déployer qu’une seule clé à la fois. Si
    Update-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
 
-   Bien que cette cmdlet démarre l’opération de SharePoint En ligne et OneDrive Entreprise, l’action ne se termine pas immédiatement.
+   Bien que cette cmdlet démarre l’opération de SharePoint Online et OneDrive Entreprise, l’action ne se termine pas immédiatement.
 
 2. Pour voir la progression de l’opération de roulis de touches, exécutez Get-SPODataEncryptionPolicy cmdlet comme suit :
 
@@ -105,7 +105,7 @@ SharePoint Online ne vous permet de déployer qu’une seule clé à la fois. Si
 
 - [Chiffrement de service avec clé client pour Office 365](customer-key-overview.md)
 
-- [Configurer la clé client pour Office 365](customer-key-set-up.md)
+- [Configurer la clé client pour Office 365](customer-key-set-up.md)
 
 - [Gérer la clé client pour Office 365](customer-key-manage.md)
 

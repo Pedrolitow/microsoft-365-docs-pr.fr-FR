@@ -69,12 +69,12 @@ Utilisez le compte scolaire ou scolaire sous-jacent que vous avez récupéré et
 Maintenant que vous avez un nouvel abonnement Microsoft 365 entreprise, vous pouvez attribuer des licences aux utilisateurs existants dans votre Microsoft Teams gratuite.
 
 1. Dans le Centre d’administration, allez à **Utilisateurs**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">actifs.</a>
-2. Sélectionnez les utilisateurs auxquels vous souhaitez attribuer des licences Microsoft 365 pour les entreprises, puis sélectionnez Gérer **les licences de produits.**
+2. Sélectionnez les utilisateurs auxquels vous souhaitez attribuer Microsoft 365 pour les licences professionnelles, puis sélectionnez Gérer **les licences de produits.**
 3. Dans le **volet Gérer les licences de** produits, **sélectionnez Remplacer les attributions de licence existantes.**
 4. Dans le volet Remplacer **les** produits existants, recherchez le produit Microsoft 365 entreprise que vous avez acheté, puis basculez le bouton bascule sur **Sur**.
 5. Sélectionnez **Remplacer,** puis **Fermez.**
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Bienvenue dans Microsoft Teams gratuitement](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (article)\
 [Mise à niveau Microsoft Teams gratuite vers la version d’abonnement](/microsoftteams/upgrade-freemium) (article)\

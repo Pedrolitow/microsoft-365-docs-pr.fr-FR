@@ -16,12 +16,12 @@ description: Afficher et examiner les tentatives de hameçonnage de programmes m
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a2a6d3d10cfa21c0ad2da948bff130cb9336ebd8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: f0326a51f14b402b9a579e8668ef2c026f9de789
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297622"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877895"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sécurité du courrier électronique avec l’Explorateur de menaces dans Microsoft Defender Office 365
 
@@ -32,7 +32,7 @@ Contenu de cet article :
 - [Démarrer un examen et une réponse automatisés](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les bases de détection **en** temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les utiliser). Les deux autres articles de cette série sont le repérage de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) de menaces et l’Explorateur de menaces et les informations de base sur les [détections en temps réel.](real-time-detections.md) 
+> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les bases de détection **en** temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont le repérage de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) de menaces et l’Explorateur de menaces et les informations de base sur les [détections en temps réel.](real-time-detections.md) 
 
 Cet article explique comment afficher et examiner les programmes malveillants et les tentatives de hameçonnage détectés dans le courrier électronique par Microsoft 365 fonctionnalités de sécurité. 
 
@@ -45,7 +45,9 @@ Cet article explique comment afficher et examiner les programmes malveillants et
 
 Pour voir les programmes malveillants détectés dans les e-mails triés par Microsoft 365 technologie, utilisez la vue Courrier [> Programmes](threat-explorer-views.md#email--malware) malveillants de l’Explorateur (ou détections en temps réel). Les programmes malveillants étant l’affichage par défaut, ils peuvent être sélectionnés dès que vous ouvrez l’Explorateur.
 
-1. Dans le Centre de sécurité & conformité ( ), choisissez l’Explorateur de gestion des <https://protection.office.com>  \>  menaces (ou **détections en temps réel).** (Cet exemple utilise l’Explorateur.) Si vous êtes dans le centre de sécurité Microsoft 365 convergé (faites défiler vers l’Explorateur de collaboration & https://security.microsoft.com/)   >  **messagerie.**
+1. Dans le Centre de sécurité & conformité ( ), choisissez l’Explorateur de gestion des <https://protection.office.com>  \>  menaces (ou **détections en temps réel).** (Cet exemple utilise l’Explorateur.)
+
+   Si vous êtes dans le portail convergé Microsoft 365 Defender ( ), faites défiler vers l’Explorateur de collaboration & <https://security.microsoft.com>   >  **courrier électronique.**
 
    À partir de là, commencez à l’affichage, choisissez une période particulière pour [](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)examiner (si nécessaire) et concentrez vos filtres, comme le décrit l’Explorateur.
 
@@ -114,13 +116,13 @@ Dans les volants d’e-mail ou d’URL, les clics principaux et dans nos expéri
 - **Verdict en attente :** La page en attente de détonation s’est présentée à l’utilisateur.
 - **Blocked overridden:** L’utilisateur ne peut pas accéder directement à l’URL. Toutefois, l’utilisateur a overrode le bloc pour accéder à l’URL.
 - **Verdict en attente contourné :** La page de détonation s’est présentée à l’utilisateur. Toutefois, l’utilisateur a overrode le message pour accéder à l’URL.
-- **Erreur :** La page d’erreur s’est présentée à l’utilisateur ou une erreur s’est produite lors de la capture du verdict.
+- **Erreur :** La page d’erreur s’est présentée à l’utilisateur, ou une erreur s’est produite lors de la capture du verdict.
 - **Échec :** Une exception inconnue s’est produite lors de la capture du verdict. L’utilisateur a peut-être cliqué sur l’URL.
 
 ## <a name="start-automated-investigation-and-response"></a>Démarrer un examen et une réponse automatisés
 
 > [!NOTE]
-> Des fonctionnalités d’investigation et de réponse automatisées sont disponibles dans *Microsoft Defender pour Office 365 Plan 2* et Office 365 *E5*.
+> Des fonctionnalités automatisées d’examen et de réponse sont disponibles dans *Microsoft Defender pour Office 365 Plan 2* et Office 365 *E5*.
 
 [L’examen et la réponse automatisés](automated-investigation-response-office.md) peuvent faire gagner du temps et des efforts à votre équipe en matière d’opérations de sécurité pour examiner et atténuer les cyberattaques. En plus de configurer des alertes qui peuvent déclencher un manuel de sécurité, vous pouvez démarrer un processus automatisé d’examen et de réponse à partir d’une vue dans l’Explorateur. Pour plus d’informations, [voir l’exemple : un administrateur de sécurité déclenche une enquête à partir de l’Explorateur.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 

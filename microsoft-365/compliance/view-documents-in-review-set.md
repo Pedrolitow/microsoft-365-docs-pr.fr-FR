@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Choisissez la façon dont vous affichez le contenu dans Advanced eDiscovery, tel que le texte, l’annoter, la conversion ou l’affichage natif.
+description: Choisissez la façon dont vous affichez le contenu Advanced eDiscovery, tel que le texte, l’annoter, la conversion ou l’affichage natif.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
@@ -29,7 +29,7 @@ Advanced eDiscovery affiche du contenu par plusieurs visionneuses à des fins di
 - Métadonnées de fichier
 - Affichage natif
 - Affichage de texte
-- Mode annotation
+- Vue Annoter
 
 ## <a name="file-metadata"></a>Métadonnées de fichier
 
@@ -47,13 +47,13 @@ La visionneuse native affiche la vue la plus riche d’un document. Elle prend e
 
 ## <a name="text-view"></a>Affichage de texte
 
-La visionneuse de texte donne un aperçu du texte extrait d’un fichier. Elle ignore toute image et mise en forme incorporées, mais elle est très efficace si vous essayez de comprendre le contenu rapidement. L’affichage de texte inclut également les fonctionnalités suivantes :
+La visionneuse de texte donne un aperçu du texte extrait d’un fichier. Elle ignore toute image et mise en forme incorporées, mais elle est très efficace si vous essayez de comprendre le contenu rapidement. L’affichage de texte inclut également les fonctionnalités suivantes :
 
   - Le compteur de ligne permet de référencer plus facilement des parties spécifiques d’un document
 
   - Mise en surbrillance des résultats de recherche qui met en surbrillance les termes dans le document ainsi que la barre de défilement
 
-  - L’affichage diff fournit un affichage de comparaison qui met en évidence les différences textuelles lors de l’affichage de documents quasi-dupliqués
+  - L’affichage diff fournit un affichage de comparaison qui met en évidence les différences textuelles lors de l’affichage de documents en double proche
 
 ![Affichage de texte
 ](../media/Reviewimage4.png)
@@ -61,7 +61,7 @@ La visionneuse de texte donne un aperçu du texte extrait d’un fichier. Elle i
 ![Affichage diff
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>Mode annotation
+## <a name="annotate-view"></a>Vue Annoter
 
 L’affichage Annotate fournit des fonctionnalités qui permettent aux utilisateurs d’appliquer des marques de contrôle sur un document, notamment :
 
@@ -85,7 +85,7 @@ L’affichage Annotate fournit des fonctionnalités qui permettent aux utilisate
 
   - Recherche : l’utilisateur peut effectuer une recherche dans un document et accéder aux différentes occurrences dans le document
     
-    ![Mode annotation
+    ![Vue Annoter
     ](../media/Reviewimage1.png)
 
 ## <a name="dashboard-view"></a>Affichage Tableau de bord 

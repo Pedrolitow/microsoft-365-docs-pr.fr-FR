@@ -33,11 +33,11 @@ ms.locfileid: "52844069"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Répondez rapidement aux attaques détectées en arrêtant et en bloquant des fichiers ou en bloquant un fichier. Après avoir pris des mesures sur les fichiers, vous pouvez vérifier les détails de l’activité dans le centre de l’action.
 
-Les actions de réponse sont disponibles sur la page de profil détaillée d’un fichier. Une fois sur cette page, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en faisant basculer **la nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
+Les actions de réponse sont disponibles sur la page de profil détaillée d’un fichier. Une fois sur cette page, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en faisant basculer la **nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
 
 Les actions de réponse s’exécutent le long de la partie supérieure de la page de fichiers et incluent :
 
@@ -135,7 +135,7 @@ Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez détermi
 > [!NOTE]
 > Dans certains scénarios, **threatName** peut apparaître comme : EUS:Win32/CustomEnterpriseBlock!cl.
 >
-> Defender for Endpoint restaure tous les fichiers bloqués personnalisés mis en quarantaine sur cet appareil au cours des 30 derniers jours.
+> Defender for Endpoint restaure tous les fichiers bloqués personnalisés qui ont été mis en quarantaine sur cet appareil au cours des 30 derniers jours.
 
 > [!IMPORTANT]
 > Un fichier mis en quarantaine comme menace réseau potentielle peut ne pas être récupérable. Si un utilisateur tente de restaurer le fichier après sa mise en quarantaine, il se peut que ce fichier ne soit pas accessible. Cela peut être dû au fait que le système n’a plus d’informations d’identification réseau pour accéder au fichier. En règle générale, cela est le résultat d’une connexion temporaire à un système ou à un dossier partagé et les jetons d’accès ont expiré.
@@ -191,11 +191,11 @@ Vous pouvez également modifier les indicateurs à partir de la page **Paramètr
 
 Consultez un expert microsoft en matière de menaces pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft sont en action directement à partir du Centre de sécurité Microsoft Defender pour une réponse précise et opportune. Les experts fournissent des informations sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblée. Ils peuvent également fournir des informations sur les alertes ou un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
 
-Pour [plus d’informations, consultez un expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) microsoft en matière de menaces.
+Pour [plus d’informations, consultez un Expert en](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) menaces Microsoft.
 
 ## <a name="check-activity-details-in-action-center"></a>Vérifier les détails de l’activité dans le Centre de notifications
 
-Le **centre de sécurité fournit** des informations sur les actions qui ont été prises sur un appareil ou un fichier. Vous pouvez afficher les détails suivants :
+Le **centre de données fournit** des informations sur les actions qui ont été entreprises sur un appareil ou un fichier. Vous pouvez afficher les détails suivants :
 
 - Collection de packages d’examen
 - Analyse antivirus
@@ -215,7 +215,7 @@ L’analyse approfondie prend actuellement en charge l’analyse complète des f
 
 L’analyse approfondie d’un fichier prend plusieurs minutes. Une fois l’analyse de fichier terminée, l’onglet Analyse approfondie se met à jour pour afficher un résumé et la date et l’heure des derniers résultats disponibles.
 
-Le résumé de l’analyse approfondie inclut une liste des comportements *observés,* dont certains peuvent indiquer une activité malveillante, et des éléments *observables,* y compris les IP contactés et les fichiers créés sur le disque. Si rien n’est trouvé, ces sections afficheront un bref message.
+Le résumé de l’analyse approfondie inclut une liste des comportements *observés,* dont certains peuvent indiquer une activité malveillante, et des éléments *observables,* y compris les IP contactés et les fichiers créés sur le disque. Si rien n’est trouvé, ces sections affichent un message court.
 
 Les résultats d’une analyse approfondie sont en correspondance avec les informations sur les menaces et les correspondances génèrent des alertes appropriées.
 
@@ -236,7 +236,7 @@ Vous pouvez également soumettre un exemple via le portail du Centre de sécurit
 
 Lorsque l’exemple est collecté, Defender pour point de terminaison exécute le fichier dans un environnement sécurisé. Il crée ensuite un rapport détaillé des comportements observés et des artefacts associés, tels que les fichiers déposés sur les appareils, la communication avec les fai et les modifications du Registre.
 
-### <a name="submit-files-for-deep-analysis"></a>Envoyer des fichiers pour analyse approfondie
+### <a name="submit-files-for-deep-analysis"></a>Soumettre des fichiers pour analyse approfondie
 
 1. Sélectionnez le fichier que vous souhaitez soumettre pour une analyse approfondie. Vous pouvez sélectionner ou rechercher un fichier dans l’un des affichages suivants :
 
@@ -254,7 +254,7 @@ Lorsque l’exemple est collecté, Defender pour point de terminaison exécute l
 Une barre de progression s’affiche et fournit des informations sur les différentes étapes de l’analyse. Vous pouvez ensuite afficher le rapport une fois l’analyse effectuée.
 
 > [!NOTE]
-> En fonction de la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a pas de Windows 10'appareil en ligne à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
+> Selon la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a pas de Windows 10'appareil en ligne à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
 
 ### <a name="view-deep-analysis-reports"></a>Afficher des rapports d’analyse approfondie
 
@@ -290,7 +290,7 @@ Si vous êtes face à un problème lors de la tentative d’soumission d’un fi
       Value = 1 – allow sample collection
     ```
 
-1. Modifiez l’unité d’organisation via la stratégie de groupe. Pour plus d’informations, [voir Configurer avec la stratégie de groupe.](configure-endpoints-gp.md)
+1. Modifiez l’unité d’organisation par le biais de la stratégie de groupe. Pour plus d’informations, [voir Configurer avec la stratégie de groupe.](configure-endpoints-gp.md)
 1. Si ces étapes ne résolvent pas le problème, contactez [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## <a name="related-topics"></a>Voir aussi

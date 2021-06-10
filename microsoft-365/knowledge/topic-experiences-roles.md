@@ -24,64 +24,64 @@ ms.locfileid: "51222766"
 # <a name="microsoft-viva-topics-roles"></a>Rôles des rubriques de Microsoft Viva 
 
 Lorsque vous utilisez Topics dans votre environnement Microsoft 365, vos utilisateurs peuvent avoir les rôles suivants :
--   Visionneuse de rubriques
--   Collaborateur de rubrique
--   Gestionnaire de connaissances
--   Administrateur de connaissances
+-   Spectateurs des rubriques
+-   Contributeur de rubrique
+-   Gestionnaire des connaissances
+-   Administrateur d’informations
 
-## <a name="topic-viewer"></a>Visionneuse de rubriques
+## <a name="topic-viewer"></a>Spectateurs des rubriques
 
 Les visiteurs des rubriques sont les utilisateurs de votre organisation qui peuvent afficher les rubriques mises en surbrillez sur leur site moderne SharePoint, Recherche Microsoft via SharePoint et Office.com et le centre de rubriques. Ils peuvent afficher plus de détails sur une rubrique sur la page de rubrique. 
 
-Pour que les points forts des rubriques et leurs pages de rubrique soient visibles par une visionneuse de rubriques, l’utilisateur doit :
--   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](./set-up-topic-experiences.md#assign-licenses)
--   Être autorisé à avoir une visibilité sur les rubriques. Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
+Pour que les points forts de la rubrique et leurs pages de rubriques soient visibles par un visionneur de rubriques, l'utilisateur doit :
+-   [Se faire attribuer une licence Topics par](./set-up-topic-experiences.md#assign-licenses) son Microsoft 365 administrateur.
+-   Être autorisé à avoir une visibilité sur des rubriques. Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans le centre d’administration Microsoft 365 de connaissances.
 
 
-## <a name="topic-contributors"></a>Contributeurs de rubriques
+## <a name="topic-contributors"></a>Contributeurs de rubrique
 
-Les collaborateurs de rubrique sont des utilisateurs de votre organisation qui ont non seulement des autorisations de visionneuse de rubriques, mais qui peuvent également modifier une rubrique existante ou en créer une nouvelle. Ils ont un rôle important dans la « organisation » manuelle des informations dans une page de rubrique (à la fois ia ou fournie manuellement) pour garantir sa qualité.
+Les contributeurs de rubriques sont des utilisateurs de votre organisation qui ont non seulement des autorisations de visionneuse de rubrique, mais qui peuvent également modifier une rubrique existante ou créer une rubrique. Ils jouent un rôle important dans la « organisation » manuelle des informations d’une page de rubrique (ia ou fournies manuellement) pour garantir sa qualité.
 
 Les utilisateurs qui ont des  autorisations de collaborateur de rubrique voient un bouton Modifier affiché sur les pages Rubrique, ce qui leur permet d’effectuer des mises à jour et de publier une rubrique.
 
-Un collaborateur de rubrique peut également créer et publier une nouvelle rubrique via son centre de rubriques.
+Un contributeur peut également créer et publier une nouvelle rubrique via son centre thématique.
 
 Pour créer et modifier une rubrique, l’utilisateur doit :
 
--   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](./set-up-topic-experiences.md#assign-licenses)
--   [Des autorisations doivent être attribuées pour créer et modifier des rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
+-   [Se faire attribuer une licence Topics par](./set-up-topic-experiences.md#assign-licenses) son Microsoft 365 administrateur.
+-   [Des autorisations doivent être attribuées pour créer et modifier des rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans le centre d’administration Microsoft 365 de connaissances.
 
-## <a name="knowledge-managers"></a>Gestionnaires de connaissances
+## <a name="knowledge-managers"></a>Responsables d’informations
 
-Les gestionnaires de connaissances sont des utilisateurs qui gèrent des sujets dans votre organisation.  La gestion des rubriques est effectuée via la page Gérer les rubriques dans le centre de rubriques et elle est visible uniquement par les gestionnaires de connaissances.
+Les responsables d’informations sont des utilisateurs qui gèrent des rubriques dans votre organisation.  La gestion des rubriques est effectuée via la page Gérer les rubriques du centre thématique. Elle est visible uniquement par les responsables d’informations.
 
-Dans la page Gérer les rubriques, les gestionnaires de connaissances peuvent effectuer les tâches suivantes :
+Dans la page Gérer les rubriques, les responsables d’informations peuvent effectuer les tâches suivantes :
 -   Afficher les rubriques suggérées par l’IA.
 -   Examinez les rubriques pour vérifier qu’elles sont valides.
 -   Supprimez les rubriques que vous ne souhaitez pas voir pour vos utilisateurs.
 
-En outre, un gestionnaire de connaissances peut modifier des rubriques existantes ou en créer de nouvelles.
+En outre, un responsable d’informations peut modifier des rubriques existantes ou en créer.
 
 Pour gérer les rubriques, l’utilisateur doit :
--   Leur administrateur Microsoft 365 se voit attribuer une [licence Topics.](./set-up-topic-experiences.md#assign-licenses)
--   [Des autorisations doivent être attribuées pour gérer les rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques dans le Centre d’administration Microsoft 365.
+-   [Se faire attribuer une licence Topics par](./set-up-topic-experiences.md#assign-licenses) son Microsoft 365 administrateur.
+-   [Des autorisations doivent être attribuées pour gérer les rubriques.](./topic-experiences-user-permissions.md) Cette tâche est effectuée par l’administrateur du savoir dans la page des paramètres Rubriques Dans le centre d’administration Microsoft 365 de connaissances.
 
 Les utilisateurs qui ont une bonne connaissance globale de votre entreprise peuvent être de bons candidats au rôle de gestionnaire de connaissances. Ces personnes peuvent non seulement avoir la connaissance de savoir si les rubriques sont valides ou non, mais peuvent également connaître les personnes au sein de l’entreprise qui sont liées à ces rubriques.
 
 
-## <a name="knowledge-admins"></a>Administrateurs du savoir
+## <a name="knowledge-admins"></a>Administrateurs d’informations
 
-Les administrateurs du savoir sont des administrateurs qui configurent et configurent Des rubriques Dans votre environnement Microsoft 365. Ils gèrent également les paramètres De La Rubriques Une fois la configuration terminée. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur microsoft 365 global ou SharePoint, car la configuration et la gestion sont réalisées dans le Centre d’administration Microsoft 365.
+Les administrateurs du savoir sont des administrateurs qui configurent et configurent Des rubriques Dans votre environnement Microsoft 365 de connaissances. Ils gèrent également les paramètres De Rubriques à l’issue de la configuration. Le rôle d’administrateur du savoir nécessite que vous soyez un administrateur Microsoft 365 ou un administrateur SharePoint, car la configuration et la gestion sont réalisées dans le Centre d Microsoft 365'administration.
 Lors de l’installation, les administrateurs du savoir peuvent configurer Topics pour :
 
 -   Sélectionnez les sites SharePoint à analyser pour les rubriques.
--   Sélectionnez les utilisateurs sous licence qui peuvent afficher des rubriques (visionneuses de rubriques).
--   Sélectionnez les rubriques qui seront exclues de l’identification.
--   Sélectionnez les utilisateurs sous licence qui peuvent créer et modifier des rubriques (contributeurs de rubrique).
--   Sélectionnez les utilisateurs titulaires d’une licence qui peuvent gérer des rubriques (gestionnaires de connaissances).
+-   Sélectionnez les utilisateurs titulaires d’une licence qui peuvent afficher des rubriques (visionneuses de rubriques).
+-   Sélectionnez les rubriques à exclure de l’identification.
+-   Sélectionnez les utilisateurs titulaires d’une licence qui peuvent créer et modifier des rubriques (contributeurs de rubriques).
+-   Sélectionnez les utilisateurs titulaires d’une licence qui peuvent gérer des rubriques (Responsables d’informations).
 -   Nommez le centre de rubriques.
 
-Les gestionnaires de connaissances doivent être en mesure de se coordonner avec toutes les parties prenantes de rubriques Dans leur organisation pour savoir comment la configurer. Par exemple, si un nouveau projet contient des informations sensibles, le gestionnaire de connaissances doit être informé afin qu’il puisse s’assurer que le site SharePoint n’est pas analyser pour les rubriques ou que des noms de sujets spécifiques doivent être exclus.
+Les responsables d’informations doivent pouvoir se coordonner avec toutes les parties prenantes de Rubriques Viva dans leur organisation pour savoir comment le configurer. Par exemple, si un nouveau projet contient des informations sensibles, le gestionnaire de connaissances doit être informé afin qu’il puisse s’assurer que le site SharePoint n’est pas analyser pour les rubriques ou que des noms de sujets spécifiques doivent être exclus.
 
 
 ## <a name="see-also"></a>Voir aussi

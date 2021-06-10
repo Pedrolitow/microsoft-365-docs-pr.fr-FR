@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866666"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844189"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
@@ -32,7 +32,7 @@ ms.locfileid: "52866666"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Les fonctionnalités suivantes sont généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint, ainsi que les fonctionnalités de sécurité dans Windows 10 et Windows Server.
 
@@ -45,9 +45,6 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 > ```https
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
-
-## <a name="june-2021"></a>Juin 2021
-- [Les définitions de groupe d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) peuvent désormais inclure plusieurs valeurs pour chaque condition. Vous pouvez définir plusieurs balises, noms d’appareils et domaines sur la définition d’un seul groupe d’appareils.
 
 ## <a name="march-2021"></a>9 mars 2021
 - [Gérer la protection contre les falsifications à l’aide Centre de sécurité Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Vous pouvez gérer les paramètres de protection contre les falsifications sur Windows 10, Windows Server 2016 et Windows Server 2019 à l’aide d’une méthode appelée attachement *client.* 
@@ -79,17 +76,17 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 ## <a name="april-2020"></a>Avril 2020
 
-- [Prise en charge & API de gestion des vulnérabilités des menaces](exposed-apis-list.md) <BR>Exécutez des appels d’API liés à la gestion des menaces et des vulnérabilités, tels que le score d’exposition aux menaces de votre organisation ou le score de sécurité de l’appareil, l’inventaire des vulnérabilités des logiciels et des appareils, la distribution des versions des logiciels, les informations sur les vulnérabilités des appareils, les informations de recommandation de sécurité. & En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
+- [Prise en charge de l& API de gestion des menaces et des vulnérabilités](exposed-apis-list.md) <BR>Exécutez des appels d’API liés à la gestion des menaces et des vulnérabilités, tels que le score d’exposition aux menaces de votre organisation ou le score de sécurité de l’appareil, l’inventaire des vulnérabilités des logiciels et des appareils, la distribution des versions des logiciels, les informations sur les vulnérabilités des appareils, les informations de recommandation de sécurité. & En savoir plus sur ce [billet de blog Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
 
 ## <a name="november-december-2019"></a>November-December 2019
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender pour le point de terminaison sur macOS apporte la protection nouvelle génération aux appareils Mac. Les principaux composants de la plateforme de sécurité de point de terminaison unifiée seront désormais disponibles pour les appareils Mac, y compris [protection évolutive des points de terminaison](microsoft-defender-endpoint-mac.md).
  
-- [Informations de fin & de l’application de gestion des vulnérabilités et de la version de l’application](tvm-security-recommendation.md) <BR>Les applications et les versions d’applications qui ont atteint leur fin de vie sont marquées ou étiquetées en tant que telles, afin que vous sachez qu’elles ne seront plus prises en charge et qu’elles peuvent prendre des mesures pour désinstaller ou remplacer. Cela permet de réduire les risques liés à diverses expositions de vulnérabilités dues à des applications non associées.
+- [Informations de fin de vie & l’application de gestion des vulnérabilités et de la version de l’application](tvm-security-recommendation.md) <BR>Les applications et les versions d’applications qui ont atteint leur fin de vie sont marquées ou étiquetées en tant que telles, afin que vous sachez qu’elles ne seront plus prises en charge et qu’elles peuvent prendre des mesures pour désinstaller ou remplacer. Cela permet de réduire les risques liés à diverses expositions de vulnérabilités dues à des applications non associées.
 
 - [Schémas de & de recherche avancée de gestion des menaces et des vulnérabilités](advanced-hunting-schema-reference.md) <BR>Utilisez les tables gestion des menaces & des vulnérabilités dans le schéma de recherche avancé pour interroger sur l’inventaire logiciel, la base de connaissances des vulnérabilités, l’évaluation de la configuration de la sécurité et la base de connaissances sur la configuration de la sécurité. 
  
- - [Contrôles d’accès basés sur les rôles de gestion des & des menaces](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Utilisez les nouvelles autorisations pour permettre une flexibilité maximale pour créer des rôles orientés SecOps, des rôles orientés gestion des vulnérabilités de & menaces ou des rôles hybrides afin que seuls les utilisateurs autorisés accèdent à des données spécifiques pour accomplir leur tâche. Vous pouvez également atteindre une granularité encore plus grande en spécifiant si un rôle gestion des menaces & des vulnérabilités peut uniquement afficher les données liées aux vulnérabilités, ou créer et gérer des corrections et des exceptions.
+ - [Contrôles d& d’accès basés sur les rôles gestion des menaces et vulnérabilités](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Utilisez les nouvelles autorisations pour permettre une flexibilité maximale pour créer des rôles orientés SecOps, des rôles orientés gestion des vulnérabilités de & menaces ou des rôles hybrides afin que seuls les utilisateurs autorisés accèdent à des données spécifiques pour accomplir leur tâche. Vous pouvez également atteindre une granularité encore plus grande en spécifiant si un rôle gestion des menaces & des vulnérabilités peut uniquement afficher les données liées aux vulnérabilités, ou créer et gérer des corrections et des exceptions.
 
 - [Rapport sur l’état et la conformité de l’appareil](machine-reports.md) <br/> Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
 

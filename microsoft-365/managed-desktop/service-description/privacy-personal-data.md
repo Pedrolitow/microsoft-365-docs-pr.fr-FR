@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908173"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861682"
 ---
 # <a name="privacy-and-personal-data"></a>Confidentialité et données personnelles
 
@@ -102,17 +102,15 @@ Les données de Microsoft Defender pour point de terminaison peuvent être stock
 
 Comme indiqué dans la Déclaration de confidentialité [Microsoft,](https://privacy.microsoft.com/privacystatement)« les données personnelles collectées par Microsoft peuvent être stockées et traitées dans votre région, aux États-Unis et dans tout autre pays où Microsoft ou ses filiales, filiales ou fournisseurs de services exploitent des installations. [...] En règle générale, l’emplacement de stockage principal se trouve dans la région du client ou aux États-Unis, souvent avec une sauvegarde vers un centre de données dans une autre région. Les emplacements de stockage sont choisis pour fonctionner efficacement, améliorer les performances et créer des redondances afin de protéger les données en cas de panne ou d’un autre problème. Nous prenons des mesures pour nous assurer que les données que nous collectons dans le cadre de cette déclaration de confidentialité sont traitées conformément aux dispositions de cette déclaration et aux exigences de la loi applicable où que se trouvent les données. »
 
-Pour plus d’informations sur la collecte de données de diagnostic de Windows 10, voir la [section](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) « Où stocker et traiter les données personnelles » de la déclaration de confidentialité Microsoft.
+Pour plus d’informations sur la collecte de données de diagnostic Windows 10, voir la [section](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) « Où stocker et traiter les données personnelles » de la déclaration de confidentialité Microsoft.
 
 ## <a name="data-access-protection"></a>Protection de l’accès aux données
 
 L’accès direct Bureau géré Microsoft magasins de données internes de l’utilisateur est restreint de plusieurs manières :
 
 - Elle nécessite une approbation de niveau de tête d’ingénierie.
-- Il est à la fois audité et limité dans le temps.
-- Il nécessite l’utilisation d’une station de travail hautement sécurisée et restreinte.
+- Elle est liée au temps et auditée.
 - Toutes les données sont chiffrées pendant qu’elles sont stockées.
-- Il n’existe aucun accès permanent.
 - L’accès Bureau géré Microsoft portail de gestion interne nécessite une station de travail hautement sécurisée et restreinte.
 
 ## <a name="processing-personal-data-in-a-compliant-manner"></a>Traitement des données personnelles de manière conforme
@@ -143,7 +141,7 @@ Les administrateurs de sécurité peuvent demander l’extraction ou la suppress
 
 ### <a name="user-related-personal-data"></a>Données personnelles liées à l’utilisateur
 
-En dehors de cela, Bureau géré Microsoft collecte pas de données personnelles. Au lieu de cela, il s’appuie sur les données personnelles collectées par d’autres microsoft Enterprise Online Services et utilise ces données. Les administrateurs informatiques qui cherchent à répondre aux demandes de leurs utilisateurs pour afficher, corriger et supprimer leurs données personnelles peuvent utiliser les fonctionnalités respectives des services sous-jacents dont Bureau géré Microsoft dépend. Si vous êtes intéressé par l’affichage ou la suppression des données personnelles utilisées par ces services, consultez d’abord les demandes des personnes soumises aux données pour Azure concernant l’article [R GDPR.](/compliance/regulatory/gdpr-dsr-Azure)
+En dehors de cela, Bureau géré Microsoft ne collecte pas de données personnelles. Au lieu de cela, il s’appuie sur les données personnelles collectées par d’autres microsoft Enterprise Online Services et utilise ces données. Les administrateurs informatiques qui cherchent à répondre aux demandes de leurs utilisateurs pour afficher, corriger et supprimer leurs données personnelles peuvent utiliser les fonctionnalités respectives des services sous-jacents dont Bureau géré Microsoft dépend. Si vous êtes intéressé par l’affichage ou la suppression des données personnelles utilisées par ces services, consultez d’abord les demandes des personnes soumises aux données pour Azure concernant l’article [R GDPR.](/compliance/regulatory/gdpr-dsr-Azure)
 
 En outre, utilisez les instructions suivantes pour exercer des DSR pour les services dont Bureau géré Microsoft dépend de la collecte de données personnelles :
 

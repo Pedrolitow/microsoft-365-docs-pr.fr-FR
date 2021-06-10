@@ -38,9 +38,9 @@ Toutes vos évaluations sont répertoriées sur la page des évaluations. En sav
 
 ## <a name="data-protection-baseline-default-assessment"></a>Évaluation par défaut de base de la protection des données
 
-Pour commencer, Microsoft fournit une **évaluation** par défaut dans le Gestionnaire de conformité pour la ligne de base de protection des données **Microsoft 365.** Cette évaluation de référence dispose d’un ensemble de contrôles pour les réglementations et normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base dessine principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
+Pour commencer, Microsoft fournit une **évaluation** par défaut dans le Gestionnaire de conformité pour la ligne de base Microsoft 365 protection **des données.** Cette évaluation de référence dispose d’un ensemble de contrôles pour les réglementations et normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base dessine principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
 
-Cette évaluation est utilisée pour calculer votre score de conformité initial la première fois que vous arrivez au Gestionnaire de conformité, avant de configurer d’autres évaluations. Le Gestionnaire de conformité collecte les signaux initiaux de vos solutions Microsoft 365. Vous verrez d’un coup d’œil les résultats de votre organisation par rapport aux principales normes et réglementations en matière de protection des données, ainsi que les suggestions d’actions d’amélioration à prendre.
+Cette évaluation est utilisée pour calculer votre score de conformité initial la première fois que vous arrivez au Gestionnaire de conformité, avant de configurer d’autres évaluations. Le Gestionnaire de conformité collecte les signaux initiaux de vos solutions Microsoft 365 de conformité. Vous verrez d’un coup d’œil les résultats de votre organisation par rapport aux principales normes et réglementations en matière de protection des données, ainsi que les suggestions d’actions d’amélioration à prendre.
 
 Le Gestionnaire de conformité devient plus utile lorsque vous créez et gérez vos propres évaluations pour répondre aux besoins particuliers de votre organisation.
 
@@ -81,7 +81,7 @@ Les groupes sont des conteneurs qui vous permettent d’organiser les évaluatio
   - ISO 27001:2013
   - ISO 27018:2014
 
-Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration qui sont gérées par vous, les mises à jour apportées aux détails ou à l’état d’implémentation d’une action se synchronisent automatiquement avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.
+Lorsque deux évaluations différentes dans le même groupe partagent des actions d’amélioration qui sont gérées par vous, les mises à jour apportées aux détails ou à l’état d’implémentation d’une action sont automatiquement synchronisées avec la même action dans toute autre évaluation du groupe. Cette synchronisation vous permet d’implémenter une action d’amélioration et de répondre à plusieurs exigences dans plusieurs réglementations.
 
 ### <a name="how-to-create-a-group"></a>Comment créer un groupe
 
@@ -123,11 +123,11 @@ Vous pouvez également commencer à partir de votre page de modèles d’évalua
     - Sélectionnez **Utiliser un groupe existant** pour l’affecter à un groupe que vous avez déjà créé ; ou
     - Sélectionnez **Créer un groupe** pour créer un groupe et lui affecter cette évaluation :
         - Déterminez un nom pour votre groupe et entrez-le dans le champ sous la bouton d’radio.
-        - Vous pouvez copier des données à partir d’un groupe **existant,** par exemple des détails et des documents d’implémentation et de test, en sélectionnant les zones appropriées.
+        - Vous pouvez copier des données à partir d’un groupe **existant,** comme les détails et les documents d’implémentation et de test, en sélectionnant les zones appropriées.
 
     Lorsque vous avez terminé, sélectionnez **Suivant**.
 
-6. **Examinez et terminez :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation.**
+6. **Révision et fin :** Le dernier écran de l’Assistant affiche le modèle, le nom et le groupe choisis pour l’évaluation. Vous pouvez modifier l’un de ces paramètres à partir des liens à l’écran, ce qui vous permet de revenir aux étapes appropriées de l’Assistant. Lorsque vous êtes prêt, sélectionnez Créer **une évaluation.**
 
 7. L’écran suivant confirme que vous avez bien créé votre nouvelle évaluation. Sélectionnez **Terminé** pour fermer l’Assistant et la page de détails de votre nouvelle évaluation s’affiche à l’écran.
 
@@ -139,7 +139,7 @@ Vous pouvez modifier le nom de votre évaluation  après l’avoir créé en sé
 
 Vous pouvez modifier une évaluation pré-conçue en ajoutant vos propres contrôles et actions d’amélioration au modèle de l’évaluation. Ce processus est appelé « extension d’un modèle Microsoft » dans le Gestionnaire de conformité. Lorsque vous étendez le modèle d’une évaluation, il reçoit les mises à jour publiées par Microsoft, ce qui peut se produire lorsque des modifications sont [apportées](#accepting-updates-to-assessments)à la réglementation ou au produit associé (voir Accepter les mises à jour des évaluations).
 
-Vous terminerez ce processus en commençant par votre page de **modèles** d’évaluation plutôt que sur votre page **d’évaluations.**
+Vous terminerez ce processus en commençant par votre page de **modèles** d’évaluation plutôt que votre page **d’évaluations.**
 
 **Avant de commencer**
 
@@ -157,7 +157,7 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 2. Choisissez le type de modèle que vous souhaitez créer. Dans ce cas, **sélectionnez Étendre un modèle Microsoft,** puis **sélectionnez Modèle Microsoft.**
 
-3. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran, affichant la liste de tous les modèles et leur état actif ou inactif. Votre **compteur de modèles activés** indique le nombre de modèles actuellement utilisés sur le nombre total disponible. Si vous avez terminé votre limite, une barre de messages vous fournira un avis. Pour plus [d’informations,](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) voir Types de modèles.
+3. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran, affichant la liste de tous les modèles et leur statut d’actif ou inactif. Votre **compteur de modèles activés** indique le nombre de modèles actuellement utilisés sur le nombre total disponible. Si vous avez terminé votre limite, une barre de messages vous fournira un avis. Pour plus [d’informations,](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) voir Types de modèles.
 
 4. Un volet volant de sélection de modèle s’affiche sur le côté droit de votre écran. Utiliser **la recherche** pour appliquer des filtres pour localiser le modèle de votre recherche
 
@@ -165,13 +165,13 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 6. L’écran suivant montre le modèle que vous avez sélectionné. Si la réponse est correcte, sélectionnez **Suivant.** (Si ce n’est pas le cas, **sélectionnez Sélectionner** un autre modèle à choisir à nouveau.)
 
-7. Dans **l’écran Télécharger un** fichier, sélectionnez **Parcourir** pour rechercher et télécharger votre fichier Excel mis en forme contenant toutes les données de modèle requises.
+7. Dans le **Télécharger** de fichiers,  sélectionnez Parcourir pour rechercher et télécharger votre fichier Excel formaté contenant toutes les données de modèle requises.
 
 8. S’il n’y a aucun problème avec votre fichier, l’écran suivant affiche le nom du fichier téléchargé. Sélectionnez Suivant pour continuer (si vous devez modifier le fichier, sélectionnez **Télécharger un autre fichier).** 
 
     - En cas de problème avec votre fichier, un message d’erreur en haut explique ce qui ne va pas. Vous devrez corriger et charger à l’autre votre fichier. Des erreurs se résultent si votre feuille de calcul n’est pas correctement mise en forme ou s’il existe des informations non valides dans certains champs.
  
-9. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant.** (Si vous devez apporter des modifications, **sélectionnez Télécharger un autre fichier.)**
+9. **L’écran Révision et fin** affiche le nombre d’actions et de contrôles d’amélioration et le score maximal pour le modèle. Lorsque vous êtes prêt à approuver, sélectionnez **Suivant.** (Si vous devez apporter des modifications, **sélectionnez Télécharger un fichier différent.)**
 
 10. Le dernier écran confirme qu’un nouveau modèle a été créé. Sélectionnez **Terminé** pour quitter l’Assistant.
 
@@ -179,17 +179,17 @@ Après avoir formaté votre feuille de calcul, suivez les étapes ci-dessous.
 
 ## <a name="create-your-own-custom-assessment"></a>Créer votre propre évaluation personnalisée
 
-Pour créer une évaluation personnalisée dans le Gestionnaire de conformité, vous devez créer votre propre modèle. Pour créer votre propre modèle, vous devez d’abord assembler une feuille de calcul Excel mise en forme pour importer les données de modèle nécessaires. Cela permet également de déterminer à l’avance le groupe auquel vous affecterez votre évaluation lorsque vous la créerez (en savoir plus sur les [groupes).](#what-are-groups)
+Pour créer une évaluation personnalisée dans le Gestionnaire de conformité, vous devez créer votre propre modèle. Pour créer votre propre modèle, vous devez d’abord assembler une feuille de calcul Excel mise en forme pour importer les données de modèle nécessaires. Il vous permet également de déterminer à l’avance le groupe auquel vous affecterez votre évaluation lorsque vous la créerez (en savoir plus sur les [groupes).](#what-are-groups)
 
 **Suivez les étapes ci-dessous pour créer votre évaluation personnalisée :**
 
-1. **Formatez votre fichier Excel.** Commencez par mettre en forme vos données de modèle dans une feuille de calcul Excel à [l’aide de ces instructions.](compliance-manager-templates.md#formatting-your-template-data-with-excel)
+1. **Formatez votre Excel fichier.** Commencez par mettre en forme vos données de modèle dans Excel feuille de calcul à l’aide [de ces instructions.](compliance-manager-templates.md#formatting-your-template-data-with-excel)
 
 2. **Créez votre modèle** en suivant [ces instructions.](compliance-manager-templates.md#create-a-new-template)
 
 3. **Créez votre évaluation** à partir du modèle. Vous pouvez commencer par ouvrir la page de détails du modèle et sélectionner Créer une **évaluation,** ou aller à votre **page** d’évaluations et sélectionner Créer une **évaluation.**
 
-4. Un Assistant Création d’évaluation s’affiche dans un grand volet volant. À partir de là, vous pouvez suivre les instructions à l’étape #3 [des instructions](#to-create-an-assessment)de création de l’évaluation, en utilisant votre nouveau modèle personnalisé pour votre évaluation.
+4. Un Assistant Création d’évaluation s’affiche dans un grand volet volant. À partir de là, vous pouvez suivre les instructions en commençant à l’étape #3 [des instructions](#to-create-an-assessment)de création de l’évaluation, en utilisant votre nouveau modèle personnalisé pour votre évaluation.
 
 ## <a name="delete-an-assessment"></a>Supprimer une évaluation
 
@@ -216,7 +216,7 @@ Si vous supprimez la seule évaluation d’un groupe, ce groupe est également s
 
 Chaque évaluation possède une page de détails qui donne un aperçu rapide de votre progression dans la réalisation de l’évaluation. La page affiche votre progression dans l’exécution des contrôles, ainsi que l’état de test des actions d’amélioration des clés au sein de ces contrôles.
 
-### <a name="overview-tab"></a>Onglet Vue d’ensemble
+### <a name="overview-tab"></a>Onglet Overview
 
 L’onglet Vue d’ensemble contient un graphique montrant votre pourcentage vers la fin de l’évaluation. Ce graphique contient une répartition des points des actions que vous possédez et des points d’actions propriété de Microsoft, afin que vous pouvez voir combien de points supplémentaires vous devez effectuer l’évaluation.
 
@@ -226,7 +226,7 @@ Pour accéder aux actions d’amélioration individuelles, visitez **l’onglet 
 
 ### <a name="controls-tab"></a>Onglet Contrôles
 
-L’onglet Contrôles affiche des informations détaillées pour chaque contrôle mappé à l’évaluation. Un **graphique de répartition de** l’état des contrôles affiche l’état des contrôles par famille, de sorte que vous pouvez voir d’un coup d’œil les regroupements de contrôles qui doivent être pris en main.
+L’onglet Contrôles affiche des informations détaillées pour chaque contrôle mappé à l’évaluation. Un **graphique de répartition de** l’état des contrôles affiche l’état des contrôles par famille, afin que vous pouvez voir d’un coup d’œil les regroupements de contrôles qui doivent être pris en main.
 
 Sous le graphique, un tableau répertorie des informations détaillées sur chaque contrôle de l’évaluation. Les contrôles sont regroupés par famille de contrôles. Développez chaque nom de famille pour révéler les contrôles qu’elle contient. Les informations répertoriées pour chaque contrôle incluent :
 
@@ -277,7 +277,7 @@ Les évaluations personnalisées que vous créez ne reçoivent aucune mise à jo
 
 La page détails de l’évaluation affiche également une **étiquette de** mise à jour en attente en plus de l’évaluation avec une mise à jour. Sélectionnez cette évaluation pour obtenir sa page de détails.
 
-Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la** mise à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
+Un message en haut de la page détails de l’évaluation indique qu’une mise à jour est disponible pour cette évaluation. Sélectionnez le **bouton Réviser la mise** à jour dans la bannière pour passer en revue les modifications spécifiques et accepter ou différer la mise à jour.
 
 La page de détails de l’évaluation peut également lister les actions d’amélioration qui ont une **étiquette** de mise à jour en attente à côté d’elles. Ces mises à jour sont pour des modifications spécifiques apportées aux actions d’amélioration elles-mêmes et doivent être acceptées séparément. Pour en [savoir plus, consultez](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) Accepter les mises à jour pour les actions d’amélioration.
 
@@ -291,7 +291,7 @@ Après avoir sélectionné la mise à **jour révision** dans la page détails d
 - Présentation de la mise à jour
 - Détails spécifiques sur les modifications, y compris l’impact sur votre score de conformité, la progression vers la fin de l’évaluation et le nombre spécifique de modifications apportées aux actions et contrôles d’amélioration.
 
-La sélection du **lien Du modèle mis** à jour téléchargera un fichier Excel contenant des données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
+La sélection du **lien** du modèle mis à jour permet de télécharger un fichier Excel contenant les données de contrôle pour la version du modèle avec les mises à jour en attente. La sélection du **lien Modèle actuel** télécharge un fichier du modèle existant sans les modifications.
 
 Pour accepter la mise à jour et apporter les modifications à votre évaluation, **sélectionnez Accepter la mise à jour.** Les modifications acceptées sont permanentes.
 
@@ -307,6 +307,6 @@ Si vous êtes en train d’effectuer une évaluation, vous voudrez peut-être vo
 
 ## <a name="export-an-assessment-report"></a>Exporter un rapport d’évaluation
 
-Vous pouvez exporter une évaluation dans un fichier Excel pour les parties prenantes en matière de conformité de votre organisation ou pour les auditeurs externes et les régulateurs. Dans la page détails  de votre évaluation, sélectionnez le bouton Générer un rapport en haut de la page, ce qui crée un fichier Excel que vous pouvez enregistrer et partager.
+Vous pouvez exporter une évaluation vers un fichier Excel de conformité pour les parties prenantes de votre organisation ou pour les auditeurs externes et les régulateurs. Dans la page détails  de votre évaluation, sélectionnez le bouton Générer un rapport en haut de la page, ce qui crée un fichier Excel que vous pouvez enregistrer et partager.
 
 Le rapport est un instantané de l’évaluation à la date et à l’heure de l’exportation. Il contient les détails des contrôles gérés par vous et Microsoft, y compris l’état de l’implémentation, la date de test et les résultats des tests.

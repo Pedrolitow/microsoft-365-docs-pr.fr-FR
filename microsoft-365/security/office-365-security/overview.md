@@ -16,12 +16,12 @@ ms.collection:
 description: La sécurité dans Office 365, de EOP à Defender pour Office 365 Plans 1 et 2, les configurations de sécurité Standard vs Strict, et plus encore. Comprenez ce que vous avez et comment sécuriser vos propriétés.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db37718ce2feae9c79ff6b323eb22e30f24e72b2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 29602d5fe62c84b9293522a94b71c550d360b3e3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204366"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877799"
 ---
 # <a name="office-365-security-overview"></a>Vue d’ensemble de la sécurité Office 365
 
@@ -117,7 +117,7 @@ Gains avec **Defender pour Office 365, Plan 2** (à ce jour) :
 
 Ainsi, Microsoft Defender pour Office 365 P2 développe le côté ***enquête et réponse de la maison***, et ajoute une nouvelle force de repérage. Automatisation.
 
-Dans Microsoft Defender pour Office 365 P2, l’outil de repérage principal de l’**Explorateur de menaces** s’appelle la détection en temps réel. Si vous voyez l’Explorateur de menaces lorsque vous accédez au Centre de sécurité, vous êtes dans Microsoft Defender pour Office 365 P2.
+Dans Microsoft Defender pour Office 365 P2, l’outil de repérage principal de l’**Explorateur de menaces** s’appelle la détection en temps réel. Si vous voyez l’Explorateur de menaces lorsque vous accédez au portail Microsoft 365 Defender, vous êtes dans Microsoft Defender pour Office 365 P2.
 
 Pour en savoir plus sur Microsoft Defender pour Office 365 P1 et P2, **[consulter cet article](defender-for-office-365.md)**.
 

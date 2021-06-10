@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Présentation de Rubriques Viva.
-ms.openlocfilehash: c7a5af9d2a038c2b9cc5f26d851eb3776a00c71f
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866690"
+ms.locfileid: "52877811"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
@@ -70,7 +70,7 @@ Lorsqu'une rubrique est identifiée et que l'IA détermine qu'elle contient suff
 
 Vos administrateurs d’informations peuvent choisir d’analyser tous les sites SharePoint dans votre client pour les sujets ou simplement en sélectionner certains.
 
-Voir [Découverte et curation des rubriques.](./topic-experiences-discovery-curation.md)
+Pour plus d’informations, voir [Découverte et curation des rubriques.](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Rôles
 
@@ -96,7 +96,7 @@ Les responsables d’informations peuvent :
 
 - Confirmez ou supprimez des rubriques qui ont été découverte dans votre client.
 - Créez des rubriques manuellement si nécessaire (par exemple, si les informations fournies ne sont pas suffisantes pour être découvertes par l'IA).
-- Modifier les pages de rubrique existantes.<br/>
+- Modifier les pages de rubrique existantes.
 
 Pour plus d’informations, [voir Gérer les rubriques dans le centre de rubriques.](manage-topics.md)  
 

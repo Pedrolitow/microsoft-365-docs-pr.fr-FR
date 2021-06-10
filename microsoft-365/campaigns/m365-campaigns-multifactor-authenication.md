@@ -33,12 +33,12 @@ ms.locfileid: "51398204"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurez l’authentification multifacteur.
 
-L’authentification multifacteur offre une sécurité renforcée pour votre entreprise. Une fois que votre administrateur vous a demandé d’utiliser l’authentification MFA, vous pouvez configurer l’application Microsoft Authenticator pour vous laisser vous connecter à des applications clés en toute sécurité avec votre téléphone. 
+L’authentification multifacteur offre une sécurité renforcée pour votre entreprise. Une fois que votre administrateur vous a demandé d’utiliser l’mfmf, vous pouvez configurer l’application Microsoft Authenticator pour vous aider à vous connecter à des applications clés en toute sécurité avec votre téléphone. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Pour plus d’informations, [voir configurer l’authentification multifacteur dans Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Pour plus d’informations, [voir Configurer l’authentification multifacteur dans Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## <a name="use-the-outlook-app-in-your-devices"></a>Utiliser l’application Outlook sur vos appareils
+## <a name="use-the-outlook-app-in-your-devices"></a>Utiliser l’Outlook sur vos appareils
 
-Une fois que votre administrateur vous a demandé d’utiliser l’authentification multifacteur et que vous avez installé une application d’authentification comme second type d’authentification, nous vous recommandons d’installer et d’utiliser uniquement l’application Outlook pour accéder à votre courrier Microsoft 365. Voir [Configurer les appareils mobiles pour](../business/set-up-mobile-devices.md) savoir comment installer des applications Office, y compris Outlook, sur votre téléphone.
+Une fois que votre administrateur vous a demandé d’utiliser l’authentification multifacteur et que vous avez installé une application d’authentification comme second type d’authentification, nous vous recommandons d’installer et d’utiliser uniquement l’application Outlook pour accéder à votre courrier Microsoft 365. Voir [Configurer les appareils mobiles pour](../business/set-up-mobile-devices.md) savoir comment installer Office applications, y compris Outlook, sur votre téléphone.

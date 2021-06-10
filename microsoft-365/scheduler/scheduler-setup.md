@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 localization_priority: Normal
 description: Configuration du Scheduler pour Microsoft 365.
-ms.openlocfilehash: c17cdbbf71359a2725a3b0a145cba5feffd7c853
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: ba1e178545001473bf73eea3eb02b5ab1c7bf084
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809190"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861478"
 ---
 # <a name="setting-up-scheduler-for-microsoft-365"></a>Configuration du Scheduler pour Microsoft 365
 
@@ -26,7 +26,7 @@ Pour configurer le Scheduler pour Microsoft 365, voici les conditions préalable
 |Licence du scheduleur |Pour plus d’informations sur les licences et les tarifs, voir [Scheduler for Microsoft 365](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing).        |
 
 ## <a name="create-a-mailbox-for-cortana"></a>Créer une boîte aux lettres pour Cortana
-Une Exchange de votre client fait office de boîte aux lettres Cortana pour que votre client envoie et reçoie des courriers électroniques vers et depuis Cortana. Tous les messages électroniques envoyés à Cortana sont conservés dans la boîte aux lettres Cortana de votre client en fonction de votre stratégie de rétention.
+Une Exchange de votre client fait office de boîte aux lettres Cortana pour que votre client envoie et reçoie des courriers électroniques vers et depuis Cortana. Tous les courriers électroniques envoyés à Cortana sont conservés dans la boîte aux lettres Cortana de votre client en fonction de votre stratégie de rétention.
 
 - Utilisez le centre Microsoft 365'administration pour créer une boîte aux lettres utilisateur. Une stratégie de rétention de 30 jours est recommandée. 
 - Utilisez le nom Cortana dans l’adresse SMTP principale de votre boîte aux lettres. Des noms tels que « Cortana@yourdomain.com », « CortanaScheduler@contoso.com » ou « Cortana.Scheduler@yourdomain.com » sont recommandés.
@@ -51,11 +51,11 @@ Après l’exécution de cette commande « set » sur la boîte aux lettres du S
 > [!NOTE]
 > Si vous ne l’avez pas déjà fait, suivez ces étapes pour connecter votre organisation à PowerShell : Connecter pour Microsoft 365 [avec PowerShell - Microsoft 365 Entreprise | Documents Microsoft](../enterprise/connect-to-microsoft-365-powershell.md)
 
-Pour découvrir quelle boîte aux lettres de votre organisation est actuellement définie en tant qu’Assistant De planification de Cortana, exécutez la fonction get :
+Pour découvrir quelle boîte aux lettres de votre organisation est actuellement définie en tant qu’Assistant De planification de Cortana, exécutez la fonction Get :
  
 ```powershell
 
-Get-mailbox -Organization contoso.com | where {($_.PersistedCapabilities -like "SchedulerAssistant")}
+Get-mailbox | where {$_.PersistedCapabilities -Match "SchedulerAssistant"}
 
 ```
 
@@ -63,7 +63,7 @@ Get-mailbox -Organization contoso.com | where {($_.PersistedCapabilities -like "
 > La mise en service complète de la boîte aux lettres scheduler peut prendre jusqu’à deux heures pour définir la fonctionnalité SchedulerAssistant.
 
 ## <a name="exchange-online-mailbox"></a>Boîte aux lettres Exchange Online
-Scheduler est un module Microsoft 365. Les organisateurs de réunions doivent avoir une boîte Exchange Online et un calendrier pour que le Scheduler fonctionne.
+Le programmeur est un module Microsoft 365. Les organisateurs de réunions doivent avoir une boîte Exchange Online et un calendrier pour que le Scheduler fonctionne.
 
 ## <a name="exchange-requirements"></a>Configuration requise pour Exchange
 
@@ -76,6 +76,6 @@ Outre le Programmeur de licences, vous devez avoir l’une des licences suivante
 - Exchange Online Plan 1 ou Plan 2. 
 
 > [!Note]
-> **Le programme d’Microsoft 365** n’est pas disponible pour les utilisateurs de Office 365 21Vianet en Chine. Il n’est pas non plus disponible pour les utilisateurs Microsoft 365 avec le cloud allemand qui utilise le groupe de sécurité des données Allemand Telekom. Nous le prenons en charge pour les utilisateurs situés en Allemagne dont les données ne résident pas dans le centre de données allemand.
+> **Le programme d’Microsoft 365** n’est pas disponible pour les utilisateurs de Office 365 gérés par 21Vianet en Chine. Il n’est pas non plus disponible pour les utilisateurs Microsoft 365 avec le cloud allemand qui utilise le groupe de sécurité de données Allemand Telekom. Nous le prenons en charge pour les utilisateurs situés en Allemagne dont les données ne résident pas dans le centre de données allemand.
 >
 >Cette fonctionnalité n’est pas non plus prise en charge pour les utilisateurs du cloud public, notamment GCC, Consumer, GCC de haut niveau ou DoD.

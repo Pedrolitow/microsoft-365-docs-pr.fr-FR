@@ -58,9 +58,9 @@ La *section antivirusEngine* du profil de configuration est utilisée pour gére
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | antivirusEngine |
+| **Clé** | antivirusEngine |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
 #### <a name="enable--disable-real-time-protection"></a>Activer/désactiver la protection en temps réel
 
@@ -69,7 +69,7 @@ Spécifiez s’il faut activer la protection en temps réel, qui analyse les fic
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | enableRealTimeProtection |
+| **Clé** | enableRealTimeProtection |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 
@@ -85,10 +85,10 @@ Spécifiez si le moteur antivirus s’exécute en mode passif. Le mode passif a 
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | passiveMode |
+| **Clé** | passiveMode |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | false (par défaut) <br/> true |
-| **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 100.67.60 ou supérieure. |
+| **Comments** | Disponible dans Microsoft Defender pour Endpoint version 100.67.60 ou supérieure. |
 
 #### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusions
 
@@ -97,10 +97,10 @@ Spécifiez la stratégie de fusion pour les exclusions. Il peut s’agit d’une
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | exclusionsMergePolicy |
+| **Clé** | exclusionsMergePolicy |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | merge (par défaut) <br/> admin_only |
-| **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure. |
+| **Comments** | Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure. |
 
 #### <a name="scan-exclusions"></a>Analyser les exclusions
 
@@ -110,9 +110,9 @@ Spécifiez les entités exclues de l’analyse. Les exclusions peuvent être sp�
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | exclusions |
+| **Clé** | exclusions |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
 ##### <a name="type-of-exclusion"></a>Type d’exclusion
 
@@ -121,7 +121,7 @@ Spécifiez le contenu exclu de l’analyse par type.
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | $type |
+| **Clé** | $type |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 
@@ -132,10 +132,10 @@ Spécifiez le contenu exclu de l’analyse par le chemin d’accès complet du f
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | chemin |
+| **Clé** | chemin |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | chemins d’accès valides |
-| **Commentaires** | Applicable uniquement si *$type* est *excluPath* |
+| **Comments** | Applicable uniquement si *$type* est *excluPath* |
 
 ## <a name="supported-exclusion-types"></a>Types d’exclusion pris en charge
 
@@ -165,10 +165,10 @@ Indiquez si la *propriété du* chemin d’accès fait référence à un fichier
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | isDirectory |
+| **Clé** | isDirectory |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | false (par défaut) <br/> true |
-| **Commentaires** | Applicable uniquement si *$type* est *excluPath* |
+| **Comments** | Applicable uniquement si *$type* est *excluPath* |
 
 ##### <a name="file-extension-excluded-from-the-scan"></a>Extension de fichier exclue de l’analyse
 
@@ -177,10 +177,10 @@ Spécifiez le contenu exclu de l’analyse par extension de fichier.
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | extension |
+| **Clé** | extension |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | extensions de fichier valides |
-| **Commentaires** | Applicable uniquement si *$type* est *excluFileExtension* |
+| **Comments** | Applicable uniquement si *$type* est *excluFileExtension* |
 
 ##### <a name="process-excluded-from-the-scan"></a>Processus exclu de l’analyse
 
@@ -189,10 +189,10 @@ Spécifiez un processus pour lequel toute l’activité de fichier est exclue de
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | name |
+| **Clé** | name |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | n’importe quelle chaîne |
-| **Commentaires** | Applicable uniquement *si $type* est *excluFileName* |
+| **Comments** | Applicable uniquement *si $type* est *excluFileName* |
 
 #### <a name="allowed-threats"></a>Menaces autorisées
 
@@ -201,7 +201,7 @@ Spécifiez les menaces par nom qui ne sont pas bloquées par Defender pour endpo
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | allowedThreats |
+| **Clé** | allowedThreats |
 | **Type de données** | Tableau de chaînes |
 
 #### <a name="disallowed-threat-actions"></a>Actions contre les menaces nonallées
@@ -211,10 +211,10 @@ Limite les actions que l’utilisateur local d’un appareil peut prendre lorsqu
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | disallowedThreatActions |
+| **Clé** | disallowedThreatActions |
 | **Type de données** | Tableau de chaînes |
 | **Valeurs possibles** | autoriser (empêche les utilisateurs d’autoriser les menaces) <br/> restaurer (empêche les utilisateurs de restaurer les menaces de la quarantaine) |
-| **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure. |
+| **Comments** | Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure. |
 
 #### <a name="threat-type-settings"></a>Paramètres du type de menace
 
@@ -223,9 +223,9 @@ Spécifiez comment certains types de menaces sont gérés par Microsoft Defender
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | threatTypeSettings |
+| **Clé** | threatTypeSettings |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
 ##### <a name="threat-type"></a>Type de menace
 
@@ -234,7 +234,7 @@ Spécifiez les types de menaces.
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | clé |
+| **Clé** | clé |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | potentially_unwanted_application <br/> archive_bomb |
 
@@ -249,7 +249,7 @@ Spécifiez l’action à prendre lorsqu’une menace du type spécifié dans la 
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | valeur |
+| **Clé** | valeur |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | audit (par défaut) <br/> block <br/> off |
 
@@ -260,10 +260,10 @@ Spécifiez la stratégie de fusion pour les paramètres de type de menace. Il pe
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | threatTypeSettingsMergePolicy |
+| **Clé** | threatTypeSettingsMergePolicy |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | merge (par défaut) <br/> admin_only |
-| **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure. |
+| **Valeurs possibles** | merge (valeur par défaut) <br/> admin_only |
+| **Comments** | Disponible dans Microsoft Defender pour Endpoint version 100.83.73 ou supérieure. |
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Conservation de l’historique d’analyse antivirus (en jours)
 
@@ -272,10 +272,10 @@ Spécifiez le nombre de jours pendant combien de jours les résultats sont conse
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | scanResultsRetentionDays |
+| **Clé** | scanResultsRetentionDays |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | 90 (valeur par défaut). Les valeurs autorisées sont de 1 jour à 180 jours. |
-| **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 101.07.23 ou supérieure. |
+| **Comments** | Disponible dans Microsoft Defender pour Endpoint version 101.07.23 ou supérieure. |
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Nombre maximal d’éléments dans l’historique d’analyse antivirus
 
@@ -284,10 +284,10 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | scanHistoryMaximumItems |
+| **Clé** | scanHistoryMaximumItems |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments. |
-| **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 101.07.23 ou supérieure. |
+| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments. |
+| **Comments** | Disponible dans Microsoft Defender pour Endpoint version 101.07.23 ou supérieure. |
 
 ### <a name="cloud-delivered-protection-preferences"></a>Préférences de protection dans le cloud
 
@@ -296,9 +296,9 @@ Configurez les fonctionnalités de protection informatique de Microsoft Defender
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | cloudService |
+| **Clé** | cloudService |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection cloud
 
@@ -307,7 +307,7 @@ Spécifiez s’il faut activer ou non la protection de l’appareil livrée par 
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | activé |
+| **Clé** | activé |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 
@@ -318,18 +318,18 @@ Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Mic
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | diagnosticLevel |
+| **Clé** | diagnosticLevel |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | facultatif (par défaut) <br/> obligatoire |
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Activer/désactiver les envois automatiques d’échantillons
 
-Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Vous êtes invité à savoir si le fichier envoyé est susceptible de contenir des informations personnelles.
+Détermine si des échantillons suspects (susceptibles de contenir des menaces) sont envoyés à Microsoft. Vous êtes invité à vous demander si le fichier envoyé est susceptible de contenir des informations personnelles.
 
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | automaticSampleSubmission |
+| **Clé** | automaticSampleSubmission |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 
@@ -339,7 +339,7 @@ Détermine si les mises à jour d’informations de sécurité sont installées 
 
 |Section|Valeur|
 |:---|:---|
-| **Key** | automaticDefinitionUpdateEnabled |
+| **Clé** | automaticDefinitionUpdateEnabled |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 
@@ -350,9 +350,9 @@ Gérez les préférences pour l’interface utilisateur de Microsoft Defender po
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | userInterface |
+| **Clé** | userInterface |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
 #### <a name="show--hide-status-menu-icon"></a>Afficher/masquer l’icône du menu d’état
 
@@ -361,7 +361,7 @@ Spécifiez s’il faut afficher ou masquer l’icône du menu d’état dans le 
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | hideStatusMenuIcon |
+| **Clé** | hideStatusMenuIcon |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | false (par défaut) <br/> true |
 
@@ -372,10 +372,10 @@ Spécifiez si les utilisateurs peuvent envoyer des commentaires à Microsoft en 
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | userInitiatedFeedback |
+| **Clé** | userInitiatedFeedback |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | activé (par défaut) <br/> désactivé |
-| **Commentaires** | Disponible dans Microsoft Defender pour Endpoint version 101.19.61 ou supérieure. |
+| **Comments** | Disponible dans Microsoft Defender pour Endpoint version 101.19.61 ou supérieure. |
 
 ### <a name="endpoint-detection-and-response-preferences"></a>Préférences de détection et de réponse des points de terminaison
 
@@ -384,9 +384,9 @@ Gérez les préférences du composant protection évolutive des points de termin
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | edr |
+| **Clé** | edr |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
 #### <a name="device-tags"></a>Balises d’appareil
 
@@ -397,9 +397,9 @@ Spécifiez un nom de balise et sa valeur.
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | étiquettes |
+| **Clé** | étiquettes |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
 ##### <a name="type-of-tag"></a>Type de balise
 
@@ -408,7 +408,7 @@ Spécifie le type de balise
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | clé |
+| **Clé** | clé |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | `GROUP` |
 
@@ -419,7 +419,7 @@ Spécifie la valeur de la balise
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Key** | valeur |
+| **Clé** | valeur |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | n’importe quelle chaîne |
 
@@ -429,7 +429,7 @@ Spécifie la valeur de la balise
 
 ## <a name="recommended-configuration-profile"></a>Profil de configuration recommandé
 
-Pour commencer, nous vous recommandons la configuration suivante pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection que Microsoft Defender pour Endpoint fournit.
+Pour commencer, nous recommandons la configuration suivante pour votre entreprise afin de tirer parti de toutes les fonctionnalités de protection que Microsoft Defender pour Endpoint fournit.
 
 Le profil de configuration suivant (ou, dans le cas de JAMF, une liste de propriétés qui peut être téléchargée dans le profil de configuration des paramètres personnalisés) sera :
 - Activer la protection en temps réel (RTP)
@@ -849,7 +849,7 @@ Une fois que vous avez créé le profil de configuration pour votre entreprise, 
 
 ### <a name="jamf-deployment"></a>Déploiement JAMF
 
-À partir de la console JAMF, **ouvrez** profils de configuration ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez Custom  >   **Paramètres**. Créez une entrée avec `com.microsoft.wdav` comme domaine de préférence et téléchargez le *.plist* produit précédemment.
+À partir de la console JAMF, **ouvrez** profils de configuration ordinateurs, accédez au profil de configuration que vous souhaitez utiliser, puis sélectionnez Custom  >   **Paramètres**. Créez une entrée avec comme domaine de préférence `com.microsoft.wdav` et téléchargez *le .plist* produit précédemment.
 
 >[!CAUTION]
 >Vous devez entrer le domaine de préférence correct ( ) ; sinon, les préférences ne seront pas reconnues par `com.microsoft.wdav` Microsoft Defender pour le point de terminaison.

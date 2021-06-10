@@ -40,7 +40,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
   
  **Cause :** Avant de pouvoir vous connecter à l’application, vous devez vous abonner aux données à partir du centre d’administration Microsoft 365'administration. Si cette étape n’est pas effectuée en premier, vous ne pourrez pas vous connecter à l’application de modèle, même si vous fournissez votre ID Microsoft 365 client. 
   
- **Pour corriger cette erreur :** Pour vous abonner aux données, go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. Sélectionnez **le** bouton Commencer,  puis, dans le volet  Rapports qui s’ouvre, rendez les données disponibles pour Microsoft 365 l’analyse de l’utilisation Power BI sur et **Enregistrer.**
+ **Pour corriger cette erreur :** Pour vous abonner aux données, go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. Sélectionnez **le** bouton Commencer,  puis dans le volet  Rapports qui s’ouvre, rendez les données disponibles pour l’analyse Microsoft 365 l’utilisation Power BI sur et **Enregistrer.**
   
 ## <a name="we-are-processing-your-data"></a>Vos données sont en cours de traitement
 
@@ -54,7 +54,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
 
  **Code d'erreur :** 423 
   
- **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
+ **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application Microsoft 365 modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
  **Cause :** Lorsque vous [optez pour l’accès](enable-usage-analytics.md) aux données dans le modèle d’application à partir du Centre d’administration, le système Microsoft 365 commence à générer des données d’utilisation historiques pour votre organisation. Selon la taille de votre client, cette étape peut prendre entre deux et 48 heures. 
   
@@ -64,7 +64,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
 
  **Code d'erreur :** 400 
   
- **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
+ **Où vous verrez ce message :** Dans Power BI, lorsque vous vous connectez à l’application Microsoft 365 modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
  **Cause :** L’ID de client est un GUID qui doit être au format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Si vous entrez une autre chaîne dans la zone d’entrée du client, vous obtenez cette erreur. 
   
@@ -76,7 +76,7 @@ Explorez la liste suivante des messages d’erreur pour obtenir de l’aide sur 
   
  **Où vous verrez ce message :** Dans Power BI lorsque vous vous connectez à l’application Microsoft 365 Modèle d’analyse de l’utilisation ou lorsque vous appelez directement les API Microsoft 365 de rapports. 
   
- **Cause :** L’ID de locataire que vous avez fourni n’est pas valide ou n’existe pas. 
+ **Cause :** L’ID de client que vous avez fourni n’est pas valide ou n’existe pas. 
   
  **Pour corriger cette erreur :** Go to the admin center \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> and locate the Microsoft 365 usage analytics tile on the main dashboard page. L’ID de client est répertorié sur la vignette. Vous pouvez le copier à partir d’ici et le coller dans la boîte de dialogue pour vous connecter à l’application de modèle. 
   
@@ -104,7 +104,7 @@ Code d'erreur : 302
 
  **Où ce message s'affichera-t-il ?** E-mail de Power BI ou état d'échec dans l'historique d'actualisation. 
   
- **Cause :** Parfois, les informations d’identification de l’utilisateur qui s’est connecté à l’application de modèle sont réinitialisées et ne sont pas mises à jour dans les paramètres de connexion de l’application de modèle, ce qui provoque des erreurs d’échec d’actualisation de l’utilisateur. 
+ **Cause :** Parfois, les informations d’identification de l’utilisateur qui s’est connecté à l’application de modèle sont réinitialisées et ne sont pas mises à jour dans les paramètres de connexion de l’application de modèle, ce qui provoque des erreurs d’échec d’actualisation. 
   
  **Pour corriger cette erreur :** Dans Power BI, recherchez le jeu de données correspondant à l’application  de modèle d’analyse Microsoft 365'utilisation, sélectionnez planifier l’actualisation et fournissez vos informations d’identification d’administrateur. 
   

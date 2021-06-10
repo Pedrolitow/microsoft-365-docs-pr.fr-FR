@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793159"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877883"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Examen et réponse automatisés (AIR) dans Microsoft Defender pour Office 365
 
@@ -46,13 +46,13 @@ Cet article décrit les aspects suivants :
 - Le [flux global d’AIR](#the-overall-flow-of-air);
 - [Comment obtenir AIR](#how-to-get-air); et
 - Autorisations [requises pour](#required-permissions-to-use-air-capabilities) configurer ou utiliser les fonctionnalités AIR.
-- Modifications bientôt apportées à votre centre de sécurité
+- Modifications bientôt apportées à votre portail Microsoft 365 Defender
 
 Cet article inclut également [les étapes suivantes](#next-steps)et des ressources pour en savoir plus.
 
-## <a name="the-overall-flow-of-air"></a>Le flux global d’AIR
+## <a name="the-overall-flow-of-air"></a>Flux global d’AIR
 
-Une alerte est déclenchée et un manuel de sécurité démarre une enquête automatisée, ce qui se traduit par des résultats et des actions recommandées. Voici le flux global d’AIR, étape par étape :
+Une alerte est déclenchée et un manuel de sécurité démarre une enquête automatisée, ce qui permet de trouver les résultats et les actions recommandées. Voici le flux global d’AIR, étape par étape :
 
 1. Une enquête automatisée est lancée de l’une des manières suivantes :
    - Une [alerte est déclenchée par un](#which-alert-policies-trigger-automated-investigations) message électronique suspect (par exemple, un message, une pièce jointe, une URL ou un compte d’utilisateur compromis). Un incident est créé et un examen automatisé commence . ou
@@ -89,7 +89,11 @@ En outre, veillez à passer en revue les stratégies [d’alerte](../../complian
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Quelles stratégies d’alerte déclenchent des enquêtes automatisées ?
 
-Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui permettent d’identifier les abus des autorisations d’administrateur Exchange, l’activité des programmes malveillants, les menaces externes et internes potentielles et les risques de gouvernance des informations. Plusieurs des [stratégies d’alerte par défaut peuvent](../../compliance/alert-policies.md#default-alert-policies) déclencher des enquêtes automatisées. Le tableau suivant décrit les alertes qui déclenchent des enquêtes automatisées, leur gravité dans le centre de sécurité Microsoft 365 et la façon dont elles sont générées :
+Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui permettent d’identifier les abus des autorisations d’administrateur Exchange, l’activité des programmes malveillants, les menaces externes et internes potentielles et les risques de gouvernance des informations. Plusieurs des [stratégies d’alerte par défaut peuvent](../../compliance/alert-policies.md#default-alert-policies) déclencher des enquêtes automatisées. Le tableau suivant décrit les alertes qui déclenchent des enquêtes automatisées, leur gravité dans le portail Microsoft 365 Defender et la façon dont elles sont générées :
+
+<br>
+
+****
 
 |Alerte|Severity|Comment l’alerte est générée|
 |---|---|---|
@@ -108,10 +112,15 @@ Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui perme
 
 Les autorisations sont accordées par le biais de certains rôles, tels que ceux décrits dans le tableau suivant :
 
+<br>
+
+****
+
 |Tâche|Rôle(s) requis(s)|
 |---|---|
 |Configurer les fonctionnalités AIR|L’un des rôles suivants : <ul><li>Administrateur général</li><li>Administrateur de sécurité</li></ul> <p> Ces rôles peuvent être attribués [dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le Centre de sécurité [& conformité.](permissions-in-the-security-and-compliance-center.md)|
 |Démarrer un examen automatisé <p> --- ou --- <p> Approuver ou rejeter les actions recommandées|L’un des rôles suivants, [attribués dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le Centre de sécurité [& conformité](permissions-in-the-security-and-compliance-center.md): <ul><li>Administrateur général</li><li>Administrateur de sécurité</li><li>Opérateur de sécurité</li><li>Lecteur de sécurité <br> --- et --- </li><li>Recherche et purge (ce rôle est attribué uniquement dans le Centre de sécurité [& conformité](permissions-in-the-security-and-compliance-center.md). Vous de devez peut-être y créer un nouveau groupe de rôles et ajouter le rôle Recherche et purge à ce nouveau groupe de rôles.</li></ul>|
+|
 
 ## <a name="required-licenses"></a>Licences requises
 
@@ -121,16 +130,16 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 - L’équipe des opérations de sécurité de votre organisation (y compris les lecteurs de sécurité et ceux avec le **rôle Recherche et purge)**
 - Utilisateurs finaux
 
-## <a name="changes-are-coming-soon-in-your-security-center"></a>Des modifications seront bientôt apportées dans votre centre de sécurité
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Des modifications seront bientôt apportées à votre portail Microsoft 365 Defender
 
-Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous êtes sur le point de voir certaines modifications dans le centre de sécurité Microsoft 365 [amélioré.](../defender/overview-security-center.md)
+Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous êtes sur le point de voir certaines modifications dans le portail [Microsoft 365 Defender amélioré.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée":::
 
-Le nouveau centre de sécurité amélioré regroupe les fonctionnalités AIR dans [Microsoft Defender pour Office 365](defender-for-office-365.md) et dans Microsoft Defender pour le point de [terminaison.](../defender-endpoint/automated-investigations.md) Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.
+Le nouveau portail Defender Microsoft 365 amélioré regroupe les fonctionnalités AIR dans [Microsoft Defender pour Office 365](defender-for-office-365.md) et dans Microsoft Defender pour le point de [terminaison.](../defender-endpoint/automated-investigations.md) Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.
 
 > [!TIP]
-> Le nouveau centre Microsoft 365 de sécurité ( <https://security.microsoft.com> ) remplace les centres suivants :
+> Le nouveau Microsoft 365 Microsoft 365 Defender ( <https://security.microsoft.com> ) remplace les centres suivants :
 >
 > - Office 365 Centre de sécurité & conformité ( <https://protection.office.com> )
 > - Centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> )
@@ -140,6 +149,10 @@ Le nouveau centre de sécurité amélioré regroupe les fonctionnalités AIR dan
 ### <a name="what-to-expect"></a>À quoi s’attendre
 
 Le tableau suivant répertorie les modifications et améliorations apportées à AIR dans Microsoft Defender pour Office 365.
+
+<br>
+
+****
 
 |Item|Qu’est-ce qui change ?|
 |---|---|
@@ -153,7 +166,7 @@ Le tableau suivant répertorie les modifications et améliorations apportées à
 |**Page Incidents**|La page **Incidents** met désormais en corrélation plusieurs enquêtes afin de fournir une meilleure vue consolidée des enquêtes. ([En savoir plus sur les incidents.)](../defender/incidents-overview.md)|
 |
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Voir les détails et les résultats d’une enquête automatisée](air-view-investigation-results.md#view-details-of-an-investigation)
 - [Examiner et approuver les actions en attente](air-remediation-actions.md)

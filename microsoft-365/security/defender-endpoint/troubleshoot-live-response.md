@@ -63,7 +63,7 @@ Si, lors d’une tentative d’action au cours d’une session de réponse en di
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Sessions de réponse en direct lentes ou retards pendant les connexions initiales
 Live Response tire parti de Defender pour l’inscription du capteur de point de terminaison auprès du service WNS dans Windows. Si vous avez des problèmes de connectivité avec la réponse en direct, confirmez les détails suivants :
-1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, voir Configurer [les paramètres de proxy d’appareil et de connectivité Internet.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+1. `notify.windows.com` n’est pas bloqué dans votre environnement. Pour plus d’informations, voir [configurer les paramètres de proxy](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)d’appareil et de connectivité Internet.
 2. WpnService (Windows Service système de notifications Push) n’est pas désactivé.
 
 Reportez-vous aux articles ci-dessous pour bien comprendre le comportement et les exigences du service WpnService :

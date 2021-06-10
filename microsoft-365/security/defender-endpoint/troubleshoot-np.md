@@ -31,7 +31,7 @@ ms.locfileid: "52844055"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 Lorsque vous utilisez [la protection réseau,](network-protection.md) vous pouvez rencontrer des problèmes, tels que :
@@ -71,7 +71,7 @@ Vous pouvez activer la protection réseau en mode audit, puis visiter un site we
 
 3. [Consultez les journaux des événements](network-protection.md#review-network-protection-events-in-windows-event-viewer) de protection réseau pour voir si la fonctionnalité aurait bloqué la connexion si elle avait été définie **sur Activé.**
    
-   Si la protection réseau ne bloque pas une connexion que vous attendez qu’elle bloque, activez la fonctionnalité.
+   Si la protection du réseau ne bloque pas une connexion que vous attendez qu’elle bloque, activez la fonctionnalité.
 
    ```PowerShell
    Set-MpPreference -EnableNetworkProtection Enabled
@@ -107,7 +107,7 @@ Lorsque vous signalez un problème avec la protection du réseau, vous êtes inv
 
 ## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>Résoudre les problèmes de connectivité avec la protection réseau (pour les clients E5)
 
-En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft ne peut pas voir les paramètres de proxy de votre système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas accéder au service cloud. Pour résoudre les problèmes de connectivité avec la protection réseau, configurez l’une des clés de Registre suivantes afin que la protection réseau soit informé de la configuration du proxy :
+En raison de l’environnement dans lequel la protection réseau s’exécute, Microsoft ne peut pas voir les paramètres de proxy de votre système d’exploitation. Dans certains cas, les clients de protection réseau ne peuvent pas accéder au service cloud. Pour résoudre les problèmes de connectivité avec la protection réseau, configurez l’une des clés de Registre suivantes afin que la protection réseau soit au courant de la configuration du proxy :
 
 ```powershell
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
@@ -129,5 +129,5 @@ Vous pouvez configurer la clé de Registre à l’aide de PowerShell, Microsoft 
 
 - [Protection du réseau](network-protection.md)
 - [Évaluer la protection du réseau](evaluate-network-protection.md)
-- [Activer la protection du réseau](enable-network-protection.md)
+- [Activer la protection réseau](enable-network-protection.md)
 - [Corriger les faux positifs/négatifs dans Defender pour le point de terminaison](defender-endpoint-false-positives-negatives.md)

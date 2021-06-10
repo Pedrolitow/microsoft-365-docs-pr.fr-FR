@@ -39,17 +39,17 @@ Pour plus d’informations sur les paramètres de sécurité par défaut et les 
 
 Si votre abonnement a été créé le 22 octobre 2019 ou après, les paramètres de sécurité par défaut ont peut-être été automatiquement activés pour vous, vous devez vérifier vos paramètres pour &mdash; vérifier.
 
-Pour activer les paramètres de sécurité par défaut dans azure Active Directory (Azure AD) ou pour vérifier s’ils sont déjà activés :
+Pour activer les paramètres de sécurité par défaut dans votre Azure Active Directory (Azure AD) ou pour vérifier s’ils sont déjà activés :
 
-1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centre d’administration Microsoft 365</a> avec les informations d’identification d’administrateur global.
+1. Connectez-vous au <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">centre Microsoft 365'administration avec</a> les informations d’identification d’administrateur global.
 
-2. Dans le volet gauche, sélectionnez **Afficher tout,** puis sous Centres d’administration,  **sélectionnez Azure Active Directory.**
+2. Dans le volet gauche, sélectionnez **Afficher tout,** puis sous Centres d’administration,  **sélectionnez Azure Active Directory**.
 
-3. Dans le volet gauche du Centre d’administration **Azure Active Directory,** sélectionnez **Azure Active Directory.**
+3. Dans le volet gauche du Centre **d’administration Azure Active Directory,** sélectionnez **Azure Active Directory**.
 
 4. Dans le menu gauche du tableau de bord, dans la section **Gérer,** sélectionnez **Propriétés.**
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Capture d’écran du Centre d’administration Azure Active Directory affichant l’emplacement de l’élément de menu Propriétés.":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Capture d’écran Azure Active Directory centre d’administration montrant l’emplacement de l’élément de menu Propriétés.":::
 
 5. En bas de la page **Propriétés,** **sélectionnez Gérer les paramètres de sécurité par défaut.**
 
@@ -66,11 +66,11 @@ Si votre organisation a des exigences de sécurité complexes ou si vous avez be
 
 L’accès conditionnel vous permet de créer et de définir des stratégies qui réagissent aux événements de connectez-vous et de demander des actions supplémentaires avant qu’un utilisateur ne soit autorisé à accéder à une application ou un service. Les stratégies d’accès conditionnel peuvent être granulaires et spécifiques, permettant aux utilisateurs d’être productifs où et quand, mais aussi de protéger votre organisation.
 
-Les paramètres de sécurité par défaut sont disponibles pour tous les clients, tandis que l’accès conditionnel nécessite une licence pour l’un des plans suivants :
+Les valeurs par défaut de sécurité sont disponibles pour tous les clients, tandis que l’accès conditionnel nécessite une licence pour l’un des plans suivants :
 
 - Azure Active Directory Premium P1 ou P2
-- Microsoft 365 Business Premium
-- Microsoft 365 E3 ou E5
+- Microsoft 365 Business Premium
+- Microsoft 365 E3 ou E5
 - Enterprise Mobility & Security E3 ou E5
 
 Si vous souhaitez utiliser l’accès conditionnel pour configurer des stratégies équivalentes à celles activées par défaut de sécurité, consultez les guides pas à pas suivants :
@@ -79,7 +79,7 @@ Si vous souhaitez utiliser l’accès conditionnel pour configurer des stratégi
 - [Exiger l’mf pour la gestion Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [Bloquer l’authentification héritée](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [Exiger l’authentification multifacteur pour tous les utilisateurs](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Exiger l’inscription Azure AD MFA](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Nécessite Azure AD Identity Protection, qui fait partie d’Azure Active Directory Premium P2
+- [Exiger l’inscription Azure AD MFA](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Nécessite Azure AD Identity Protection, qui fait partie Azure Active Directory Premium P2
 
 Pour en savoir plus sur l’accès conditionnel, voir [qu’est-ce que l’accès conditionnel ?](/azure/active-directory/conditional-access/overview) Pour plus d’informations sur la création de stratégies d’accès conditionnel, voir [Créer une stratégie d’accès conditionnel.](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)
 

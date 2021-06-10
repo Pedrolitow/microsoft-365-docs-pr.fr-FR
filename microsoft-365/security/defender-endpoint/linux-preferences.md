@@ -32,9 +32,9 @@ ms.locfileid: "52346377"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 >[!IMPORTANT]
 >Cette rubrique contient des instructions sur la façon de définir des préférences pour Defender pour Endpoint sur Linux dans les environnements d’entreprise. Si vous souhaitez configurer le produit sur un appareil à partir de la ligne de commande, consultez [Ressources.](linux-resources.md#configure-from-the-command-line)
@@ -57,9 +57,9 @@ La *section antivirusEngine* du profil de configuration est utilisée pour gére
 
 |||
 |:---|:---|
-| **Key** | antivirusEngine |
+| **Clé** | antivirusEngine |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 |||
 
 #### <a name="enable--disable-real-time-protection"></a>Activer/désactiver la protection en temps réel
@@ -68,7 +68,7 @@ Détermine si la protection en temps réel (analyser les fichiers à mesure qu�
 
 |||
 |:---|:---|
-| **Key** | enableRealTimeProtection |
+| **Clé** | enableRealTimeProtection |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 |||
@@ -84,22 +84,22 @@ Détermine si le moteur antivirus s’exécute en mode passif ou non. En mode pa
 
 |||
 |:---|:---|
-| **Key** | passiveMode |
+| **Clé** | passiveMode |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | false (par défaut) <br/> true |
-| **Commentaires** | Disponible dans Defender pour Endpoint version 100.67.60 ou supérieure. |
+| **Comments** | Disponible dans Defender pour Endpoint version 100.67.60 ou supérieure. |
 |||
 
-#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusions
+#### <a name="exclusion-merge-policy"></a>Stratégie de fusion d’exclusion
 
 Spécifie la stratégie de fusion pour les exclusions. Il peut s’agit d’une combinaison d’exclusions définies par l’administrateur et d’exclusions définies par l’utilisateur ( ) ou uniquement `merge` d’exclusions définies par l’administrateur ( `admin_only` ). Ce paramètre peut être utilisé pour empêcher les utilisateurs locaux de définir leurs propres exclusions.
 
 |||
 |:---|:---|
-| **Key** | exclusionsMergePolicy |
+| **Clé** | exclusionsMergePolicy |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | merge (par défaut) <br/> admin_only |
-| **Commentaires** | Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure. |
+| **Comments** | Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure. |
 |||
 
 #### <a name="scan-exclusions"></a>Analyser les exclusions
@@ -109,9 +109,9 @@ Entités exclues de l’analyse. Les exclusions peuvent être spécifiées par d
 
 |||
 |:---|:---|
-| **Key** | exclusions |
+| **Clé** | exclusions |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 |||
 
 **Type d’exclusion**
@@ -120,7 +120,7 @@ Spécifie le type de contenu exclu de l’analyse.
 
 |||
 |:---|:---|
-| **Key** | $type |
+| **Clé** | $type |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 |||
@@ -131,22 +131,22 @@ Utilisé pour exclure le contenu de l’analyse par chemin d’accès complet au
 
 |||
 |:---|:---|
-| **Key** | chemin |
+| **Clé** | chemin |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | chemins d’accès valides |
-| **Commentaires** | Applicable uniquement si *$type* est *excluPath* |
+| **Comments** | Applicable uniquement si *$type* est *excluPath* |
 |||
 
 **Type de chemin d’accès (fichier/répertoire)**
 
-Indique si la propriété *du chemin d’accès* fait référence à un fichier ou un répertoire. 
+Indique si la propriété *de chemin d’accès* fait référence à un fichier ou un répertoire. 
 
 |||
 |:---|:---|
-| **Key** | isDirectory |
+| **Clé** | isDirectory |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | false (par défaut) <br/> true |
-| **Commentaires** | Applicable uniquement si *$type* est *excluPath* |
+| **Comments** | Applicable uniquement si *$type* est *excluPath* |
 |||
 
 **Extension de fichier exclue de l’analyse**
@@ -155,10 +155,10 @@ Utilisé pour exclure le contenu de l’analyse par extension de fichier.
 
 |||
 |:---|:---|
-| **Key** | extension |
+| **Clé** | extension |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | extensions de fichier valides |
-| **Commentaires** | Applicable uniquement si *$type* est *excluFileExtension* |
+| **Comments** | Applicable uniquement si *$type* est *excluFileExtension* |
 |||
 
 **Processus exclu de l’analyse**
@@ -167,10 +167,10 @@ Spécifie un processus pour lequel toute l’activité de fichier est exclue de 
 
 |||
 |:---|:---|
-| **Key** | name |
+| **Clé** | name |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | n’importe quelle chaîne |
-| **Commentaires** | Applicable uniquement *si $type* est *excluFileName* |
+| **Comments** | Applicable uniquement *si $type* est *excluFileName* |
 |||
 
 #### <a name="allowed-threats"></a>Menaces autorisées
@@ -179,7 +179,7 @@ Liste des menaces (identifiées par leur nom) qui ne sont pas bloquées par le p
 
 |||
 |:---|:---|
-| **Key** | allowedThreats |
+| **Clé** | allowedThreats |
 | **Type de données** | Tableau de chaînes |
 |||
 
@@ -189,10 +189,10 @@ Limite les actions que l’utilisateur local d’un appareil peut prendre lorsqu
 
 |||
 |:---|:---|
-| **Key** | disallowedThreatActions |
+| **Clé** | disallowedThreatActions |
 | **Type de données** | Tableau de chaînes |
 | **Valeurs possibles** | autoriser (empêche les utilisateurs d’autoriser les menaces) <br/> restaurer (empêche les utilisateurs de restaurer les menaces de la quarantaine) |
-| **Commentaires** | Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure. |
+| **Comments** | Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure. |
 |||
 
 #### <a name="threat-type-settings"></a>Paramètres du type de menace
@@ -201,9 +201,9 @@ La *préférence threatTypeSettings dans* le moteur antivirus est utilisée pour
 
 |||
 |:---|:---|
-| **Key** | threatTypeSettings |
+| **Clé** | threatTypeSettings |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 |||
 
 **Type de menace**
@@ -212,7 +212,7 @@ Type de menace pour lequel le comportement est configuré.
 
 |||
 |:---|:---|
-| **Key** | clé |
+| **Clé** | clé |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | potentially_unwanted_application <br/> archive_bomb |
 |||
@@ -227,7 +227,7 @@ Action à prendre en cas de menace du type spécifié dans la section précéden
 
 |||
 |:---|:---|
-| **Key** | valeur |
+| **Clé** | valeur |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | audit (par défaut) <br/> block <br/> off |
 |||
@@ -238,10 +238,10 @@ Spécifie la stratégie de fusion pour les paramètres de type de menace. Il peu
 
 |||
 |:---|:---|
-| **Key** | threatTypeSettingsMergePolicy |
+| **Clé** | threatTypeSettingsMergePolicy |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | merge (par défaut) <br/> admin_only |
-| **Commentaires** | Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure. |
+| **Valeurs possibles** | merge (valeur par défaut) <br/> admin_only |
+| **Comments** | Disponible dans Defender pour Endpoint version 100.83.73 ou supérieure. |
 |||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Conservation de l’historique d’analyse antivirus (en jours)
@@ -250,10 +250,10 @@ Spécifiez le nombre de jours pendant combien de jours les résultats sont conse
 
 |||
 |:---|:---|
-| **Key** | scanResultsRetentionDays |
+| **Clé** | scanResultsRetentionDays |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | 90 (valeur par défaut). Les valeurs autorisées sont de 1 jour à 180 jours. |
-| **Commentaires** | Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure. |
+| **Comments** | Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure. |
 |||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Nombre maximal d’éléments dans l’historique d’analyse antivirus
@@ -262,10 +262,10 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 
 |||
 |:---|:---|
-| **Key** | scanHistoryMaximumItems |
+| **Clé** | scanHistoryMaximumItems |
 | **Type de données** | Chaîne |
-| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 1 5 000 éléments. |
-| **Commentaires** | Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure. |
+| **Valeurs possibles** | 10000 (valeur par défaut). Les valeurs autorisées sont de 5 000 à 15 000 éléments. |
+| **Comments** | Disponible dans Defender pour Endpoint version 101.04.76 ou supérieure. |
 |||
 
 ### <a name="cloud-delivered-protection-preferences"></a>Préférences de protection dans le cloud
@@ -274,9 +274,9 @@ Spécifiez le nombre maximal d’entrées à conserver dans l’historique d’a
 
 |||
 |:---|:---|
-| **Key** | cloudService |
+| **Clé** | cloudService |
 | **Type de données** | Dictionnaire (préférence imbriée) |
-| **Commentaires** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
+| **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 |||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Activer/désactiver la protection cloud
@@ -285,7 +285,7 @@ Détermine si la protection cloud est activée ou non sur l’appareil. Pour am�
 
 |||
 |:---|:---|
-| **Key** | activé |
+| **Clé** | activé |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 |||
@@ -296,7 +296,7 @@ Les données de diagnostic sont utilisées pour sécuriser et mettre à jour Def
 
 |||
 |:---|:---|
-| **Key** | diagnosticLevel |
+| **Clé** | diagnosticLevel |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | facultatif (par défaut) <br/> obligatoire |
 |||
@@ -311,7 +311,7 @@ Détermine si des échantillons suspects (susceptibles de contenir des menaces) 
 
 |||
 |:---|:---|
-| **Key** | automaticSampleSubmissionConsent |
+| **Clé** | automaticSampleSubmissionConsent |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | aucune <br/> safe (par défaut) <br/> all |
 |||
@@ -322,7 +322,7 @@ Détermine si les mises à jour d’informations de sécurité sont installées 
 
 |||
 |:---|:---|
-| **Key** | automaticDefinitionUpdateEnabled |
+| **Clé** | automaticDefinitionUpdateEnabled |
 | **Type de données** | Valeur booléenne |
 | **Valeurs possibles** | true (par défaut) <br/> false |
 |||
