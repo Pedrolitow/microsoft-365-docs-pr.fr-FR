@@ -52,10 +52,10 @@ Le centre de actions unifié répertorie les actions de correction en attente et
 Par exemple : 
 
 - Si vous utilisiez précédemment le Centre Office 365 sécurité & conformité ( ), essayez le centre de sécurité unifié dans le centre de sécurité [https://protection.office.com](https://protection.office.com) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Si vous utilisiez le centre de Centre de sécurité Microsoft Defender ( ), essayez le centre de sécurité unifié du centre [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) de sécurité Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Si vous utilisiez le centre de Centre de sécurité Microsoft Defender ( ), essayez le centre de sécurité unifié du centre de sécurité [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 - Si vous utilisiez déjà le centre de sécurité Microsoft 365 ( ), vous verrez plusieurs améliorations dans le centre [https://security.microsoft.com](https://security.microsoft.com) de l’action ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 
-Le centre de mise en œuvre unifié regroupe les actions de correction dans Defender pour Le point de terminaison et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’examen unifiée. Votre équipe des opérations de sécurité dispose d’une expérience de « volet unique » pour afficher et gérer les actions de correction.  
+Le centre de mise en œuvre unifié regroupe les actions de correction dans Defender pour Endpoint et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’examen unifiée. Votre équipe des opérations de sécurité dispose d’une expérience de « volet unique » pour afficher et gérer les actions de correction.  
 
 Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisations appropriées et un ou plusieurs des abonnements suivants :
 
@@ -64,23 +64,23 @@ Vous pouvez utiliser le centre de l’action unifiée si vous avez les autorisat
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
-> Pour en savoir plus, consultez [La réglementation requise.](./prerequisites.md)
+> Pour plus d’informations, voir [Requirements](./prerequisites.md).
 
 ## <a name="using-the-action-center"></a>Utilisation du centre de l’action
 
 1. Accédez à [https://security.microsoft.com](https://security.microsoft.com) et connectez-vous. 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-Lorsque vous visitez le centre de actions, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
+Lorsque vous visitez le centre de l’action, vous voyez deux onglets : **Actions en attente et** **Historique.** Le tableau suivant récapitule ce que vous verrez sur chaque onglet :
 
 |Tab  |Description  |
 |---------|---------|
 |**Pending**     | Affiche une liste d’actions qui nécessitent une attention particulière. Vous pouvez approuver ou rejeter des actions une par une, ou sélectionner plusieurs actions si elles ont le même type d’action (par exemple, un fichier de mise en quarantaine). <p>**CONSEIL**: veillez à examiner et à approuver (ou rejeter) les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu.       |
 |**Historique**     | Sert de journal d’audit pour les actions qui ont été entreprises, telles que : <br/>- Mesures correctives prises suite à des enquêtes automatisées <br/>- Mesures correctives qui ont été prises sur des messages électroniques suspects ou malveillants, des fichiers ou des URL<br/>- Actions de correction approuvées par votre équipe des opérations de sécurité <br/>- Commandes qui ont été exécutés et actions de correction appliquées pendant les sessions Live Response<br/>- Mesures correctives prises par votre protection antivirus <p>Fournit un moyen d’annuler certaines actions (voir [Annuler les actions terminées).](m365d-autoir-actions.md#undo-completed-actions)        |
 
-Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centre de gestion de l’action.
+Vous pouvez personnaliser, trier, filtrer et exporter des données dans le centre de gestion des actions.
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Le centre de actions vous permet de trier, de filtrer et de personnaliser votre liste d’actions":::
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Le centre de l’action vous permet de trier, de filtrer et de personnaliser votre liste d’actions":::
 
 - Sélectionnez un en-tête de colonne pour trier les éléments par ordre croissant ou décroit.
 - Utilisez le filtre de période pour afficher les données du jour, de la semaine, des 30 jours ou des 6 derniers mois.
@@ -103,7 +103,7 @@ Toutes les actions, qu’elles soient en attente d’approbation ou qu’elles o
 - Exécuter une analyse antivirus 
 - Arrêter et mettre en quarantaine 
 
-En plus des actions de correction qui [](m365d-autoir.md)sont prises automatiquement à la suite d’enquêtes automatisées, le centre de mise en œuvre effectue également le suivi des actions que votre équipe de sécurité a prises pour traiter les menaces détectées et des actions qui ont été prises à la suite des fonctionnalités de protection contre les menaces dans Microsoft 365 Defender. Pour plus d’informations sur les actions de correction automatiques et manuelles, voir [Actions de correction.](m365d-remediation-actions.md)
+En plus des actions de correction qui [](m365d-autoir.md)sont prises automatiquement à la suite d’enquêtes automatisées, le centre de mesures suit également les actions que votre équipe de sécurité a prises pour traiter les menaces détectées et les actions qui ont été prises à la suite des fonctionnalités de protection contre les menaces dans Microsoft 365 Defender. Pour plus d’informations sur les actions de correction automatiques et manuelles, voir [Actions de correction.](m365d-remediation-actions.md)
 
 ## <a name="viewing-action-source-details"></a>Affichage des détails de la source de l’action
 
@@ -114,11 +114,11 @@ En plus des actions de correction qui [](m365d-autoir.md)sont prises automatique
 | **Action manuelle de l’appareil** | Action manuelle sur un appareil. Par exemple, [l’isolation de l’appareil ou](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) [la mise en quarantaine du fichier](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files). |
 | **Action de messagerie manuelle** | Action manuelle sur le courrier électronique. Un exemple inclut la suppression de messages électroniques ou la [correction d’un message électronique.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Action automatisée sur l’appareil** | Action automatisée entreprise sur une entité, telle qu’un fichier ou un processus. L’envoi d’un fichier en quarantaine, l’arrêt d’un processus et la suppression d’une clé de Registre sont des exemples d’actions automatisées. (Voir [les actions de correction dans Microsoft Defender pour le point de terminaison.)](../defender-endpoint/manage-auto-investigation.md#remediation-actions) |
-| **Action de messagerie automatisée** | Action automatisée sur le contenu du courrier électronique, telle qu’un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression (à l’aide de logiciels) des messages électroniques, le blocage des URL et la désinstruction du forwarding de courrier externe. (Voir [les actions de correction dans Microsoft Defender pour Office 365.)](../office-365-security/air-remediation-actions.md) |
+| **Action de messagerie automatisée** | Action automatisée sur le contenu du courrier électronique, telle qu’un message électronique, une pièce jointe ou une URL. Parmi les exemples d’actions automatisées, citons la suppression (à l’aide de logiciels) des messages électroniques, le blocage des URL et la désinstruction du forwarding de courrier externe. (Voir [actions de correction dans Microsoft Defender pour Office 365.)](../office-365-security/air-remediation-actions.md) |
 | **Action de recherche avancée** | Actions prises sur des appareils ou des e-mails avec [un chasse avancée](./advanced-hunting-overview.md). |
 | **Action de l’explorateur** | Actions prises sur le contenu du courrier électronique avec [l’Explorateur](../office-365-security/threat-explorer.md). |
-| **Action de réponse en direct manuelle** | Actions prises sur un appareil avec [réponse en direct.](../defender-endpoint/live-response.md) Par exemple, la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée. |
-| **Action de réponse en direct** | Actions entreprises sur un appareil à [l’aide des API Microsoft Defender pour les points de terminaison.](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) L’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier sont des exemples d’actions. |
+| **Action de réponse en direct manuelle** | Actions entreprises sur un appareil avec [réponse en direct.](../defender-endpoint/live-response.md) Par exemple, la suppression d’un fichier, l’arrêt d’un processus et la suppression d’une tâche programmée. |
+| **Action de réponse en direct** | Actions prises sur un appareil avec [les API Microsoft Defender pour les points de terminaison.](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis) L’isolation d’un appareil, l’exécution d’une analyse antivirus et l’obtention d’informations sur un fichier sont des exemples d’actions. |
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Autorisations requises pour les tâches du centre de notifications
 

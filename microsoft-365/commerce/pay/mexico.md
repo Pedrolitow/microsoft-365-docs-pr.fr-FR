@@ -39,5 +39,5 @@ Pour payer par dépôt ou transfert électronique :
 
 ## <a name="important-information"></a>Informations importantes
 
-1. Le paiement par dépôt ou transfert électronique n’est disponible que pour les montants supérieurs à 3 500 MXN.
+1. Le paiement par dépôt ou transfert électronique n’est disponible que pour les montants supérieurs à 3 500 dollars MXN.
 2. Le paiement doit être effectué dans un délai de 30 jours . Sinon, la commande est automatiquement annulée.

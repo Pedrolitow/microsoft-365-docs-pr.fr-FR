@@ -35,7 +35,7 @@ ms.locfileid: "52782884"
 
 >Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
-L’agent Microsoft Defender for Endpoint dépend Antivirus Microsoft Defender certaines fonctionnalités telles que l’analyse de fichiers.
+L’agent Microsoft Defender pour endpoint dépend Antivirus Microsoft Defender certaines fonctionnalités telles que l’analyse de fichiers.
 
 >[!IMPORTANT]
 >Defender pour le point de terminaison ne respecte pas les paramètres Antivirus Microsoft Defender Exclusions. 
@@ -44,7 +44,7 @@ Vous devez configurer les mises à jour d’intelligence de sécurité sur les a
 
 Si un appareil intégré est protégé par un client tiers anti-programme malveillant, Antivirus Microsoft Defender sur ce point de terminaison passe en mode passif.
 
-Antivirus Microsoft Defender continue de recevoir des mises à jour et le processus *mspeng.exe* est répertorié comme un service en cours d’exécution, mais il n’effectue pas d’analyses et ne remplace pas le client anti-programme malveillant tiers en cours d’exécution.
+Antivirus Microsoft Defender continue de recevoir des mises à jour, et le processus *mspeng.exe* est répertorié comme un service en cours d’exécution, mais il n’effectue pas d’analyses et ne remplace pas le client anti-programme malveillant tiers en cours d’exécution.
 
 L’interface Antivirus Microsoft Defender sera désactivée et les utilisateurs de l’appareil ne pourront pas utiliser Antivirus Microsoft Defender pour effectuer des analyses à la demande ou configurer la plupart des options.
 

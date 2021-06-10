@@ -58,9 +58,9 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 - Vous ouvrez le Centre de conformité et sécurité sur <https://protection.office.com/>. Pour aller directement à la page **des balises utilisateur,** ouvrez <https://protection.office.com/userTags> .
 
 - Pour pouvoir utiliser ce cmdlet, vous devez disposer des autorisations dans le centre de sécurité et conformité Office 365.
-  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur de** la sécurité.
+  - Pour créer, modifier et supprimer des balises utilisateur,  vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité.
   - Pour ajouter et supprimer des membres de balises utilisateur existantes, vous devez  être membre des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Opérateur de sécurité
-  - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur de** sécurité.
+  - Pour accéder en lecture seule aux balises utilisateur,  vous devez être membre des groupes de rôles Lecteur global ou **Lecteur** de sécurité.
 
   Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
 
@@ -88,7 +88,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
 4. Dans la page **Affecter des** utilisateurs, faites l’une des étapes suivantes :
 
-   - Cliquez sur **Ajouter des utilisateurs.** Dans le volant qui s’affiche, faites l’une des étapes suivantes pour ajouter des utilisateurs individuels ou des groupes :
+   - Cliquez **sur Ajouter des utilisateurs.** Dans le volant qui s’affiche, faites l’une des étapes suivantes pour ajouter des utilisateurs individuels ou des groupes :
      - Cliquez dans la zone et faites défiler la liste pour sélectionner un utilisateur ou un groupe.
      - Cliquez dans la zone et commencez à taper pour filtrer la liste et sélectionner un utilisateur ou un groupe.
      - Pour ajouter des valeurs supplémentaires, cliquez dans une zone vide dans la zone.
@@ -101,7 +101,7 @@ Pour voir comment les balises utilisateur font partie de la stratégie visant à
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans la page **de balise Révision,** examinez vos paramètres. Vous pouvez cliquer **sur Modifier** dans la section spécifique pour apporter des modifications.
+5. Dans la page **De révision,** examinez vos paramètres. Vous pouvez cliquer **sur Modifier** dans la section spécifique pour apporter des modifications.
 
    Lorsque vous avez terminé, cliquez sur **Envoyer.**
 

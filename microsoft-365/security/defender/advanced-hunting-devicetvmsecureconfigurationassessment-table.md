@@ -1,7 +1,7 @@
 ---
 title: Table DeviceTvmSecureConfigurationAssessment dans le schéma de repérage avancé
-description: Découvrez les événements d’évaluation de la sécurité dans la table DeviceTvmSecureConfigurationAssessment du schéma de recherche avancé. Ces événements de gestion & des vulnérabilités fournissent des informations sur l’appareil, ainsi que des informations sur la configuration de la sécurité, l’impact et la conformité.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment
+description: Découvrez les événements d’évaluation de la sécurité dans la table DeviceTvmSecureConfigurationAssessment du schéma de recherche avancé. Ces événements de & gestion des vulnérabilités menace fournissent des informations sur l’appareil, ainsi que des informations sur la configuration de la sécurité, l’impact et la conformité.
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & gestion des vulnérabilités, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -33,8 +33,8 @@ ms.locfileid: "52024216"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 
 

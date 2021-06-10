@@ -33,8 +33,8 @@ ms.locfileid: "52023212"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 Le `DeviceFileCertificateInfo` tableau du schéma de [recherche](advanced-hunting-overview.md) avancée contient des informations sur les certificats de signature de fichiers. Ce tableau utilise les données obtenues à partir des activités de vérification de certificat effectuées régulièrement sur les fichiers sur les points de terminaison.
 
@@ -47,17 +47,17 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `IsSigned` | valeur booléenne | Indique si le fichier est signé |
-| `SignatureType` | string | Indique si les informations de signature ont été lues en tant que contenu incorporé dans le fichier lui-même ou lues à partir d'un fichier catalogue externe |
+| `SignatureType` | string | Indique si les informations de signature ont été lues en tant que contenu incorporé dans le fichier lui-même ou lues à partir d’un fichier catalogue externe |
 | `Signer` | string | Informations sur le signataire du fichier |
 | `SignerHash` | string | Valeur de hachage unique identifiant le signataire |
-| `Issuer` | string | Informations sur l'autorité de certification émettrice |
-| `IssuerHash` | string | Valeur de hachage unique identifiant l'autorité de certification émettrice |
-| `CertificateSerialNumber` | string | Identificateur du certificat propre à l'autorité de certification émettrice |
+| `Issuer` | string | Informations sur l’autorité de certification émettrice |
+| `IssuerHash` | string | Valeur de hachage unique identifiant l’autorité de certification émettrice |
+| `CertificateSerialNumber` | string | Identificateur du certificat propre à l’autorité de certification émettrice |
 | `CrlDistributionPointUrls` | string |  Tableau JSON répertoriant les URL des partages réseau qui contiennent des certificats et des listes de révocation de certificats (CRL) |
 | `CertificateCreationTime` | DateHeure | Date et heure de création du certificat |
-| `CertificateExpirationTime` | DateHeure | Date et heure d'expiration du certificat |
+| `CertificateExpirationTime` | DateHeure | Date et heure d’expiration du certificat |
 | `CertificateCountersignatureTime` | DateHeure | Date et heure de contre-signature du certificat |
-| `IsTrusted` | valeur booléenne | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d'autres attributs douteux |
+| `IsTrusted` | valeur booléenne | Indique si le fichier est approuvé en fonction des résultats de la fonction WinVerifyTrust, qui recherche des informations de certificat racine inconnues, des signatures non valides, des certificats révoqués et d’autres attributs discutables |
 | `IsRootSignerMicrosoft` | valeur booléenne | Indique si le signataire du certificat racine est Microsoft |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp. | 
 

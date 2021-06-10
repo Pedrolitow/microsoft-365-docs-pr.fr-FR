@@ -1,6 +1,6 @@
 ---
 title: Table DeviceEvents dans le schéma de recherche avancé
-description: En savoir plus sur l'antivirus, le pare-feu et d'autres types d'événements dans la table Divers événements de périphérique (DeviceEvents) du schéma de recherche avancée
+description: En savoir plus sur l’antivirus, le pare-feu et d’autres types d’événements dans le tableau Divers événements de périphérique (DeviceEvents) du schéma de recherche avancée
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -32,13 +32,13 @@ ms.locfileid: "52023200"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
-Le tableau ou les événements divers du périphérique dans le schéma de recherche avancée contient des informations sur différents types d'événements, y compris les événements déclenchés par des contrôles de sécurité, tels que `DeviceEvents` l'antivirus [](advanced-hunting-overview.md) Windows Defender et Exploit Protection. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau ou les événements divers de périphérique dans le schéma de recherche avancée contient des informations sur différents types d’événements, y compris les événements déclenchés par des contrôles de sécurité, tels que Antivirus Windows Defender et `DeviceEvents` Exploit Protection. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d'informations sur les types d'événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
+> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -48,23 +48,23 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `ActionType` | string | Type d'activité qui a déclenché l'événement. Pour plus [d'informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
 | `FileName` | string | Nom du fichier auquel l’action enregistrée a été appliquée |
-| `FolderPath` | string | Dossier contenant le fichier à lequel l'action enregistrée a été appliquée |
+| `FolderPath` | string | Dossier contenant le fichier à lequel l’action enregistrée a été appliquée |
 | `SHA1` | string | SHA-1 du fichier auquel l’action enregistrée a été appliquée |
 | `SHA256` | string | SHA-256 du fichier auquel l’action enregistrée a été appliquée. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
-| `MD5` | string | Hachage MD5 du fichier à l'application de l'action enregistrée |
+| `MD5` | string | Hachage MD5 du fichier à l’application de l’action enregistrée |
 | `FileSize` | long | Taille du fichier en octets |
 | `AccountDomain` | string | Domaine du compte |
-| `AccountName` | string | Nom d'utilisateur du compte |
+| `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountSid` | string | Identificateur de sécurité (SID) du compte |
 | `RemoteUrl` | string | URL ou nom de domaine complet (FQDN) à laquelle/auquel la connexion était en cours |
-| `RemoteDeviceName` | string | Nom de l'ordinateur qui a effectué une opération à distance sur l'ordinateur concerné. Selon l'événement signalé, ce nom peut être un nom de domaine complet (FQDN), un nom NetBIOS ou un nom d'hôte sans informations de domaine. |
+| `RemoteDeviceName` | string | Nom de l’ordinateur qui a effectué une opération à distance sur l’ordinateur concerné. Selon l’événement signalé, ce nom peut être un nom de domaine complet (FQDN), un nom NetBIOS ou un nom d’hôte sans informations de domaine. |
 | `ProcessId` | entier | ID de processus (PID) du processus nouvellement créé |
 | `ProcessCommandLine` | string | Ligne de commande utilisée pour créer le nouveau processus |
 | `ProcessCreationTime` | DateHeure | Date et heure de création du processus |
-| `ProcessTokenElevation` | string | Type de jeton indiquant la présence ou l'absence d'élévation de privilège du contrôle d'accès utilisateur (UAC) appliquée au processus nouvellement créé |
-| `LogonId` | string | Identificateur d'une session d'ouverture de session. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
+| `ProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus nouvellement créé |
+| `LogonId` | string | Identificateur d’une session d’ouverture de session. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
 | `RegistryKey` | string | Clé de Registre à l’application de l’action enregistrée |
 | `RegistryValueName` | string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
 | `RegistryValueData` | string | Données de la valeur de Registre à l’application de l’action enregistrée |
@@ -83,7 +83,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessId` | entier | ID de processus (PID) du processus à l’origine de l’événement |
 | `InitiatingProcessCommandLine` | string | Ligne de commande utilisée pour exécuter le processus à l’origine de l’événement |
 | `InitiatingProcessCreationTime` | DateHeure | Date et heure de début du processus à l’origine de l’événement |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l’événement |
 | `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |

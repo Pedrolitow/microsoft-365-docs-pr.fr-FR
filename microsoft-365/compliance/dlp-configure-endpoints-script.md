@@ -74,7 +74,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 4. Cliquez **sur Télécharger le package** et enregistrez .zip fichier.
 
-5. Extrayez le contenu du fichier .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+5. Extrayez le contenu du .zip vers un emplacement partagé en lecture seule accessible par les appareils. Vous devez avoir un fichier nommé *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 6.  Ouvrez une invite de ligne de commande avec élévation de niveaux sur l’appareil et exécutez le script :
 
@@ -89,7 +89,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 10.  Appuyez sur **entrée** ou cliquez sur **OK.**
 
 > [!IMPORTANT]
-> L’arrêt de l’appareil entraîne l’arrêt de l’envoi de données de capteur au portail.
+> Le fait d’arrêter l’envoi de données de capteur au portail par le fait que l’appareil n’est plus à l’origine de laboardage.
 
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil

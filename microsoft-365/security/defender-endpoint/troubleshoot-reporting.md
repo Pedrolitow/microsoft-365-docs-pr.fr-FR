@@ -71,7 +71,7 @@ Pour que les appareils s’affichent correctement dans Update Compliance, vous d
 Si les conditions préalables ci-dessus ont toutes été remplies, vous devrez peut-être passer à l’étape suivante pour collecter des informations de diagnostic et nous les envoyer.
 
 > [!div class="nextstepaction"]
-> [Collecter des données de diagnostic pour le dépannage de la conformité des mises à jour](collect-diagnostic-data.md)  
+> [Collecter des données de diagnostic pour la résolution des problèmes de conformité des mises à jour](collect-diagnostic-data.md)  
 
 ## <a name="related-topics"></a>Voir aussi
 

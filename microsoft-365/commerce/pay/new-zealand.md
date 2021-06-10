@@ -32,14 +32,14 @@ Si vous avez une facture facturée par **MICROSOFT REGIONAL SALES PTE LTD,** uti
 
 **Banque :** Bank  
 **Code bancaire :** 31  
-**Code de succursale :** 2840  
+**Code de branche :** 2840  
 **Code SWIFT :** CITINZ2X  
 **Suffixe (3 chiffres) :** 004  
 **Suffixe (2 chiffres) :** 04  
 **Numéro de compte :** 0026181  
 **Nom du compte :** MICROSOFT
 
-Si vous avez une facture facturée par **Microsoft New Zealand Limited** pour les commandes et la consommation à partir du 1er mars 2021, utilisez les informations bancaires ci-après :
+Si vous avez une facture facturée par **Microsoft New Zealand Limited** pour les commandes et la consommation à compter du 1er mars 2021, utilisez les informations bancaires ci-après :
 
 **Banque :** Bank, N.A. Nouvelle-Zélande Branch  
 **Code SWIFT :** CTINZ2X  

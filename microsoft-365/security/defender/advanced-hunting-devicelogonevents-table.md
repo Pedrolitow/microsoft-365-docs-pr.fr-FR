@@ -1,6 +1,6 @@
 ---
 title: Table DeviceLogonEvents dans le schéma de recherche avancé
-description: En savoir plus sur les événements d'authentification ou de authentification dans la table DeviceLogonEvents du schéma de recherche avancé
+description: En savoir plus sur les événements d’authentification ou de authentification dans la table DeviceLogonEvents du schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, logonevents, DeviceLogonEvents, authentication, logon, sign in
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,15 +33,15 @@ ms.locfileid: "52023152"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
 
 
-Le tableau du schéma de recherche avancée contient des informations sur les connexions utilisateur et d'autres événements `DeviceLogonEvents` d'authentification sur les appareils. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur les connexions utilisateur et d’autres événements `DeviceLogonEvents` d’authentification sur les appareils. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d'informations sur les types d'événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
+> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -50,25 +50,25 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `ActionType` | string |Type d'activité qui a déclenché l'événement |
-| `LogonType` | string | Type de session d'ouverture de session, en particulier :<br><br> - **Interactif** : l'utilisateur interagit physiquement avec l'ordinateur à l'aide du clavier et de l'écran locaux<br><br> - **Connexions RDP (Remote Interactive)** : l'utilisateur interagit avec l'ordinateur à distance à l'aide du Bureau à distance, des services Terminal Services, de l'Assistance à distance ou d'autres clients RDP<br><br> - **Réseau** : session initiée lorsque l'ordinateur est accessible à l'aide de PsExec ou lorsque les ressources partagées sur l'ordinateur, telles que les imprimantes et les dossiers partagés, sont accessibles<br><br> - **Batch** : session initiée par des tâches programmées<br><br> - **Service** : session initiée par les services au démarrage<br> |
+| `ActionType` | string |Type d’activité qui a déclenché l’événement |
+| `LogonType` | string | Type de session d’ouverture de session, en particulier :<br><br> - **Interactif** : l’utilisateur interagit physiquement avec l’ordinateur à l’aide du clavier et de l’écran locaux<br><br> - **Connexions RDP (Remote Interactive)** : l’utilisateur interagit avec l’ordinateur à distance à l’aide du Bureau à distance, des services Terminal Services, de l’Assistance à distance ou d’autres clients RDP<br><br> - **Réseau** : session initiée lorsque l’ordinateur est accessible à l’aide de PsExec ou lorsque les ressources partagées sur l’ordinateur, telles que les imprimantes et les dossiers partagés, sont accessibles<br><br> - **Batch** : session initiée par des tâches programmées<br><br> - **Service** : session initiée par les services au démarrage<br> |
 | `AccountDomain` | string | Domaine du compte |
-| `AccountName` | string | Nom d'utilisateur du compte |
+| `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountSid` | string | Identificateur de sécurité (SID) du compte |
 | `Protocol` | string | Protocole utilisé pendant la communication |
-| `FailureReason` | string | Informations expliquant pourquoi l'action enregistrée a échoué |
-| `IsLocalAdmin` | valeur booléenne | Indicateur booléen pour savoir si l'utilisateur est un administrateur local sur l'ordinateur |
-| `LogonId` | string | Identificateur d'une session d'ouverture de session. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
+| `FailureReason` | string | Informations expliquant pourquoi l’action enregistrée a échoué |
+| `IsLocalAdmin` | valeur booléenne | Indicateur booléen pour savoir si l’utilisateur est un administrateur local sur l’ordinateur |
+| `LogonId` | string | Identificateur d’une session d’ouverture de session. Cet identificateur est unique sur le même ordinateur uniquement entre les redémarrages |
 | `RemoteDeviceName` | string | Nom de l’ordinateur qui a effectué une opération à distance sur l’ordinateur concerné. Selon l’événement signalé, ce nom peut être un nom de domaine complet (FQDN), un nom NetBIOS ou un nom d’hôte sans informations de domaine. |
 | `RemoteIP` | string | Adresse IP à laquelle la connexion était en cours |
 | `RemoteIPType` | string | Type d’adresse IP, par exemple Public, Privé, Réservé, Loopback, Teredo, FourToSixMapping et Diffusion |
 | `RemotePort` | entier | Port TCP sur l’appareil distant connecté |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a tenu le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
 | `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
-| ` InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a tenu le processus responsable de l’événement |
-| `InitiatingProcessIntegrityLevel` | string | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité à des processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
+| ` InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessIntegrityLevel` | string | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple, si elles ont été lancées à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
 | `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
 | `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli ; utilisez la colonne SHA1 lorsqu’elle est disponible. |

@@ -1,5 +1,5 @@
 ---
-title: API Importer des indicateurs
+title: API d’importation d’indicateurs
 description: Découvrez comment utiliser le lot d’importation de l’API d’indicateur dans Microsoft Defender pour le point de terminaison.
 keywords: api, api pris en charge, envoyer, ti, indicateur, mettre à jour
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51198244"
 ---
-# <a name="import-indicators-api"></a>API Importer des indicateurs
+# <a name="import-indicators-api"></a>API d’importation d’indicateurs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -63,7 +63,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | string | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
@@ -144,4 +144,4 @@ Voici un exemple de réponse.
 ```
 
 ## <a name="related-topic"></a>Rubrique connexe
-- [Gérer les indicateurs](manage-indicators.md)
+- [Gérer des indicateurs](manage-indicators.md)

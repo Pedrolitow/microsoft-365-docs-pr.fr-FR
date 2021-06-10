@@ -1,6 +1,6 @@
 ---
 title: Personnaliser les règles de réduction de la surface d’attaque
-description: Définir individuellement des règles dans les modes audit, bloquer ou désactivé, et ajouter des fichiers et des dossiers qui doivent être exclus des règles de réduction de la surface d’attaque
+description: Définissez individuellement des règles dans les modes audit, blocage ou désactivé, et ajoutez des fichiers et des dossiers qui doivent être exclus des règles de réduction de la surface d’attaque
 keywords: Réduction de la surface d’attaque, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, personnaliser, configurer, exclure
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,16 +27,16 @@ ms.locfileid: "52782872"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-[Les règles de réduction de la surface](enable-attack-surface-reduction.md) d’attaque permettent d’éviter les comportements logiciels qui sont souvent mal pris en charge pour compromettre votre appareil ou votre réseau. Par exemple, un attaquant peut essayer d’exécuter un script non signé à partir d’un lecteur USB ou faire en sorte qu’une macro dans un document Office appelle directement l’API Win32. Les règles de réduction de la surface d’attaque peuvent limiter ces types de comportements risqués et améliorer la posture de défense de votre organisation.
+[Les règles de réduction de la surface](enable-attack-surface-reduction.md) d’attaque permettent d’éviter les comportements logiciels qui sont souvent mal pris en compte pour compromettre votre appareil ou votre réseau. Par exemple, un attaquant peut essayer d’exécuter un script non signé à partir d’un lecteur USB ou faire en sorte qu’une macro dans un document Office appelle directement l’API Win32. Les règles de réduction de la surface d’attaque peuvent limiter ces types de comportements risqués et améliorer la posture de défense de votre organisation.
 
 Découvrez comment personnaliser les règles de réduction de la surface d’attaque en excluant des fichiers et des [dossiers](#exclude-files-and-folders) ou en ajoutant du texte personnalisé à l’alerte de [notification](#customize-the-notification) qui apparaît sur l’ordinateur d’un utilisateur.
 
-Vous pouvez définir des règles de réduction de la surface d’attaque pour les appareils exécutant l’une des éditions et versions de Windows :
+Vous pouvez définir des règles de réduction de la surface d’attaque pour les appareils exécutant l’une des éditions et versions suivantes de Windows :
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure

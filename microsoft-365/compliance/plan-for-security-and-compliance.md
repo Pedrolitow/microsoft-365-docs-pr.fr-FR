@@ -26,23 +26,23 @@ ms.locfileid: "51198057"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planifier la conformité de &amp; la sécurité
 
-La gestion de la sécurité et de la conformité est un partenariat. Vous êtes responsable de la protection de vos données, identités et appareils, tandis que Microsoft protège les services Microsoft 365. Vous pouvez utiliser Microsoft 365 et Enterprise Mobility + Security (EMS) ensemble pour vous aider à atteindre le niveau de protection approprié pour votre organisation.
+La gestion de la sécurité et de la conformité est un partenariat. Vous êtes responsable de la protection de vos données, identités et appareils, tandis que Microsoft protège en toute sécurité Microsoft 365 services. Vous pouvez utiliser Microsoft 365 et Enterprise Mobility + Security (EMS) ensemble pour vous aider à atteindre le niveau de protection approprié pour votre organisation.
   
 ## <a name="step-1-review-capabilities"></a>Étape 1 : Examiner les fonctionnalités
 
-Orientez-vous vers les fonctionnalités de protection des informations dans l’affiche Protection des informations pour Office 365. 
+Orientez-vous vers les fonctionnalités de protection des informations dans l’affiche Protection Office 365 informations. 
   
-[Déployer la protection des informations pour les réglementations en matière de confidentialité des données avec Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[Déployer la protection des informations pour les réglementations en matière de confidentialité des Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>Étape 2 : Vérifier votre score de sécurité
 
-Après avoir mis en place votre abonnement Microsoft 365, prenez note de votre score de départ. Secure Score fournit des suggestions de configuration que vous pouvez prendre pour augmenter votre score. L’objectif est de prendre en compte les opportunités que vous pouvez prendre pour protéger votre environnement, ce qui n’affectera pas la productivité de vos utilisateurs.
+Après avoir Microsoft 365 abonnement, prenez note de votre score de départ. Secure Score fournit des suggestions de configuration que vous pouvez prendre pour augmenter votre score. L’objectif est de prendre en compte les opportunités que vous pouvez prendre pour protéger votre environnement, ce qui n’affectera pas la productivité de vos utilisateurs.
   
-- [Présentation du score de sécurité Office 365](../security/defender/microsoft-secure-score.md)
+- [Présentation du score Office 365 sécurisé](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Étape 3 : Planifier la protection de l’accès pour les identités et les appareils
 
-La protection de l’accès à vos données et services Microsoft 365 est essentielle pour la protection contre les cyberattaques et la protection contre la perte de données.
+La protection de l’accès Microsoft 365 données et services de votre entreprise est essentielle pour la protection contre les cyberattaques et la protection contre la perte de données.
   
 - [Protéger l’accès aux données et aux services dans Office 365](protect-access-to-data-and-services.md)
     
@@ -56,7 +56,7 @@ Examiner et planifier les fonctionnalités de protection des fichiers organisée
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Étape 5 : Tirer parti du Centre de conformité de sécurité Microsoft 365 &amp;
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Étape 5 : Tirer parti du Centre Microsoft 365 conformité &amp; de la sécurité
 
 Le Centre de conformité de sécurité vous offre une vue unique des contrôles que vous allez utiliser pour gérer l’éventail de la sécurité Microsoft 365, y compris la gestion des menaces, la gouvernance des données et la recherche et &amp; l’examen. 
   
@@ -74,12 +74,12 @@ Utilisez ces configurations recommandées comme point de départ pour les scéna
     
 - [Contoso dans le cloud de Microsoft](../enterprise/contoso-case-study.md)
     
-## <a name="microsoft-365-admin-centers-and-dashboards"></a>Tableaux de bord et centres d’administration Microsoft 365
+## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 et tableaux de bord d’administration
 
-Configurer vos paramètres de sécurité et de conformité dans ces centres d’administration et tableaux de bord pour protéger votre environnement Microsoft 365
+Configurer vos paramètres de sécurité et de conformité dans ces centres d’administration et tableaux de bord pour protéger Microsoft 365 environnement
   
 |**Abonnement**|**URL de gestion**|**Tableaux de bord et centres d’administration**|
 |:-----|:-----|:-----|
-|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d’administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  Centre d’administration SharePoint et Centre d’administration OneDrive Entreprise  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Centre d’administration Microsoft 365  <br/>  Security &amp; Compliance Center  <br/>  Centre d’administration Exchange  <br/>  SharePoint centre d’administration et OneDrive Entreprise’administration centrale  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Gestion des applications mobiles Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |

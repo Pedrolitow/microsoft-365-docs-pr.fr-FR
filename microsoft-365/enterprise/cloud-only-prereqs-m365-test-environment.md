@@ -23,7 +23,7 @@ ms.locfileid: "51199548"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Conditions préalables à l’accès aux identités et aux appareils uniquement pour le cloud dans votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 pour les entreprises.*
+*Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
 [Les configurations](../security/office-365-security/microsoft-365-policies-configurations.md) d’accès aux identités et appareils sont un ensemble de configurations recommandées et de stratégies d’accès conditionnel pour protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
 
@@ -35,7 +35,7 @@ La configuration de cet environnement de test comprend huit étapes :
 2. Configurer des emplacements nommés
 3. Configurer la réinitialisation du mot de passe libre-service
 4. Configurer l’authentification multifacteur
-5. Activer l’inscription automatique des ordinateurs Windows joints à un domaine
+5. Activer l’inscription automatique de l’appareil des ordinateurs Windows domaine
 6. Configurer la protection par mot de passe Azure AD 
 7. Activer Azure AD Identity Protection
 8. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
@@ -77,9 +77,9 @@ Suivez les instructions de [Étape 2 de Guide de laboratoire de Test Authentific
 
 Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 5 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 5 : Activer l’inscription automatique des appareils joints à un domaine Windows ordinateurs 
 
-Suivez [ces instructions pour](/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs Windows joints à un domaine.
+Suivez [ces instructions pour](/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs joints Windows domaine.
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>Phase 6 : Configurer la protection par mot de passe Azure AD 
 
@@ -123,6 +123,6 @@ Utilisez [Stratégies d’accès courantes identité et appareil](../security/of
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

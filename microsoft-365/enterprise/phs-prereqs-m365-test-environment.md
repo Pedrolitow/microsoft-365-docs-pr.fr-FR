@@ -23,11 +23,11 @@ ms.locfileid: "51199440"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Conditions préalables d’accès aux identités et appareils pour la synchronisation du hachage du mot de passe dans votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 pour les entreprises.*
+*Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
-Les configurations d’accès aux [identités](../security/office-365-security/microsoft-365-policies-configurations.md) et appareils sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services de Microsoft 365 pour les entreprises intégrés à Azure Active Directory (Azure AD).
+Les configurations d’accès aux [identités](../security/office-365-security/microsoft-365-policies-configurations.md) et appareils sont un ensemble de configurations et de stratégies d’accès conditionnel pour protéger l’accès à tous les services dans Microsoft 365 pour les entreprises qui sont intégrés à Azure Active Directory (Azure AD).
 
-Cet article explique comment configurer un environnement de test Microsoft 365 qui répond aux exigences de l’environnement hybride avec la [configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) préalable de l’authentification de synchronisation de hachage de mot de passe pour l’accès aux identités et aux appareils.
+Cet article explique comment configurer un environnement de test Microsoft 365 qui répond aux exigences de l’environnement hybride avec la [configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) requise de l’authentification de synchronisation de hachage de mot de passe pour l’accès aux identités et appareils.
 
 La configuration de cet environnement de test se fait en dix phases :
 
@@ -37,7 +37,7 @@ La configuration de cet environnement de test se fait en dix phases :
 4. Configurer la réécriture du mot de passe
 5. Configurer la réinitialisation de mot de passe en libre-service pour tous les comptes d’utilisateur
 6. Configurer l’authentification multifacteur pour tous les comptes d’utilisateur
-7. Activer l’inscription automatique des ordinateurs Windows joints à un domaine
+7. Activer l’inscription automatique de l’appareil des ordinateurs Windows domaine
 8. Configurer la protection par mot de passe Azure AD 
 9. Activer Azure AD Identity Protection
 10. Activer l’authentification moderne pour Exchange Online et Skype Entreprise Online
@@ -87,9 +87,9 @@ Suivez les instructions de [Phase 2 de Guide de laboratoire de Test authentifica
 
 Testez l’authentification multifacteur uniquement pour le compte Utilisateur 2.
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique d’appareils d’ordinateurs Windows joints à un domaine 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7 : Activer l’inscription automatique d’appareils joints à un domaine Windows ordinateurs 
 
-Suivez [ces instructions pour](/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs Windows joints à un domaine.
+Suivez [ces instructions pour](/azure/active-directory/devices/hybrid-azuread-join-plan) activer l’inscription automatique des ordinateurs joints Windows domaine.
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8 : Configurer la protection par mot de passe Azure AD 
 
@@ -133,6 +133,6 @@ Utilisez [Stratégies d’accès courantes identité et appareil](../security/of
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

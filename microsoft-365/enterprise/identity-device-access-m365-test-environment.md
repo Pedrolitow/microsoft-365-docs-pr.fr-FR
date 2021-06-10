@@ -23,7 +23,7 @@ ms.locfileid: "51197874"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Accès aux identités et appareils pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 pour les entreprises.*
+*Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
 [Les configurations](../security/office-365-security/microsoft-365-policies-configurations.md) d’accès aux identités et appareils sont un ensemble de configurations recommandées et de stratégies d’accès conditionnel pour protéger l’accès à tous les services intégrés à Azure Active Directory (Azure AD).
 
@@ -45,6 +45,6 @@ Pour créer un environnement de test qui dispose des configurations communes d�
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

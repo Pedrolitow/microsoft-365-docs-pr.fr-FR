@@ -1,7 +1,7 @@
 ---
 title: Localiser l’expérience utilisateur
 description: Comment trouver des appareils pour les utilisateurs
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -21,18 +21,18 @@ ms.locfileid: "52023260"
 ---
 # <a name="localize-the-user-experience"></a>Localiser l’expérience utilisateur
 
-Les utilisateurs d’appareils Bureau géré Microsoft peuvent sélectionner la langue de leur choix pendant le processus de configuration (expérience « out-of-box experience ») ou par la suite.
+Les utilisateurs Bureau géré Microsoft peuvent sélectionner la langue de leur choix pendant le processus d’installation (expérience « out of box experience ») ou par la suite.
 
 ## <a name="during-setup-the-out-of-box-experience"></a>Lors de l’installation (expérience « out-of-box »)
 
 Pendant le processus de configuration, les utilisateurs peuvent sélectionner la langue de leur choix. Cette sélection affecte les attributs ci-après :
 
-- Fonctionnalités linguistiques de Windows 10 :
+- Windows 10 fonctionnalités linguistiques :
     - Langue d’affichage
     - Langue du clavier
     - Fonctionnalités liées à la langue à la demande
 
-- Fonctionnalités linguistiques de Microsoft 365 Apps for Enterprise :
+- Microsoft 365 Apps pour Enterprise fonctionnalités linguistiques :
     - Langue d’affichage
     - Outils de preuve et de authoring
 
@@ -41,26 +41,26 @@ Pendant le processus de configuration, les utilisateurs peuvent sélectionner la
 
 ## <a name="after-completing-setup"></a>Après avoir terminé l’installation
 
-Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 et Microsoft 365 Apps for Enterprise à tout moment une fois le processus d’installation terminé. Notamment :
+Les utilisateurs peuvent sélectionner la langue de leur choix pour Windows 10 et Microsoft 365 Apps pour Enterprise à tout moment une fois le processus d’installation terminé. Notamment :
 
-- Fonctionnalités linguistiques de Windows 10 :
+- Windows 10 fonctionnalités linguistiques :
     - Langue d’affichage
     - Langue du clavier
 
-- Fonctionnalités linguistiques de Microsoft 365 Apps for Enterprise :
+- Microsoft 365 Apps pour Enterprise fonctionnalités linguistiques :
     - Langue d’affichage
     - Outils de preuve et de authoring
 
-Pour rendre les [langues](#supported-languages) prise en charge pour Microsoft 365 Apps for Enterprise disponibles pour que vos utilisateurs les installent, ajoutez-les au groupe Moderne **Workplace-Office-Language_Packs.** Les langues seront disponibles dans le portail d'entreprise Intune.
+Pour rendre les langues Microsoft 365 Apps pour Enterprise prise en charge disponibles pour vos [utilisateurs,](#supported-languages) ajoutez-les au groupe Espace de travail **Office-Language_Packs** moderne. Les langues seront disponibles dans le Portail d’entreprise Intune.
 
 
 ## <a name="supported-languages"></a>Langues prises en charge
 
-Pour les nouveaux appareils, votre fabricant doit fournir des images d'appareil qui incluent les langues dont vous avez besoin. Si l'image de votre fabricant inclut des langues autres que celles fournies dans la liste des langues prise en charge, elle est toujours prise en charge par le service.
+Pour les nouveaux appareils, votre fabricant doit fournir des images d’appareil qui incluent les langues dont vous avez besoin. Si l’image de votre fabricant inclut des langues autres que celles fournies dans la liste des langues prise en charge, elle est toujours prise en charge par le service.
 
-Si vous réutilisez des appareils existants, vous devrez peut-être travailler avec votre représentant de compte Microsoft pour obtenir les images appropriées. Pour plus d'informations, voir [Images d'appareil.](../service-description/device-images.md)
+Si vous réutilisez des appareils existants, vous devrez peut-être travailler avec votre représentant de compte Microsoft pour obtenir les images appropriées. Pour plus d’informations, voir [Images d’appareil.](../service-description/device-images.md)
 
-[L'image universelle](../service-description/device-images.md#universal-image) fournie par Bureau géré Microsoft inclut les langues suivantes et pour Windows 10 :
+[L’image universelle](../service-description/device-images.md#universal-image) fournie par Bureau géré Microsoft inclut ces langues et pour Windows 10 :
 
 - Arabe
 - Bulgare
@@ -100,18 +100,18 @@ Si vous réutilisez des appareils existants, vous devrez peut-être travailler a
 - Ukrainien
 - Vietnamien
 
-Microsoft 365 Apps for Enterprise peut avoir une liste légèrement différente.
+Microsoft 365 Apps pour Enterprise peut être prise en charge d’une liste légèrement différente.
 
-Si vos utilisateurs ont besoin d'une langue autre que celle répertoriée ici, déposez une demande de [support](../working-with-managed-desktop/admin-support.md) à l'aide du [portail d'administration.](access-admin-portal.md)
+Si vos utilisateurs ont besoin d’une langue autre que celle répertoriée ici, déposez une demande de [support](../working-with-managed-desktop/admin-support.md) à l’aide du [portail d’administration.](access-admin-portal.md)
 
 ## <a name="languages-for-support-and-operations"></a>Langues pour la prise en charge et les opérations
 
-### <a name="user-support"></a>Support pour les utilisateurs
-Bureau géré Microsoft fournit une prise en charge uniquement en anglais. Si les utilisateurs choisissent une autre langue dans l'application Obtenir de l'aide, ils obtiennent le support des canaux de support microsoft généraux, plutôt que le support directement à partir du Bureau géré Microsoft. Pour plus d'informations, voir [Obtenir de l'aide pour les utilisateurs.](../working-with-managed-desktop/end-user-support.md)
+### <a name="user-support"></a>Support des utilisateurs
+Bureau géré Microsoft prise en charge uniquement en anglais. Si les utilisateurs choisissent une autre langue dans l’application Aide, ils obtiennent le support des canaux de support microsoft généraux, plutôt que d’être directement Bureau géré Microsoft. Pour plus d’informations, voir [Obtenir de l’aide pour les utilisateurs.](../working-with-managed-desktop/end-user-support.md)
 
-Si vos utilisateurs ont besoin d'une prise en charge dans d'autres langues, vous devrez le fournir via des sources de support non-Microsoft ou à partir de votre propre organisation.
+Si vos utilisateurs ont besoin d’une prise en charge dans d’autres langues, vous devrez le fournir via des sources de support non-Microsoft ou à partir de votre propre organisation.
 
-### <a name="admin-support-and-operations"></a>Support et opérations de l'administrateur
-Bureau géré Microsoft fournit une prise en charge administrateur uniquement en anglais. Cela inclut le portail d’administration et toutes les communications avec les opérations Bureau géré Microsoft. Vous devez supposer que toutes les interactions et interfaces liées à l’administrateur seront en anglais, sauf indication contraire.
+### <a name="admin-support-and-operations"></a>Support et opérations de l’administrateur
+Bureau géré Microsoft prise en charge de l’administrateur uniquement en anglais. Cela inclut le portail d’administration et toutes les communications avec Bureau géré Microsoft opérations. Vous devez supposer que toutes les interactions et interfaces liées à l’administrateur seront en anglais, sauf indication contraire.
 
 

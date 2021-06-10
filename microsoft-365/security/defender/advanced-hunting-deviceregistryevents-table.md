@@ -1,7 +1,7 @@
 ---
 title: Table DeviceRegistryEvents dans le schéma de recherche avancé
 description: En savoir plus sur les événements de Registre que vous pouvez interroger à partir de la table DeviceRegistryEvents du schéma de recherche avancée
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, registr registrents, registry, DeviceRegistryEvents, key, subkey, value
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, registr registry, Registry, DeviceRegistryEvents, key, subkey, value
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -33,13 +33,13 @@ ms.locfileid: "52024256"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
-- Microsoft Defender pour point de terminaison
+- Microsoft 365 Defender
+- Microsoft Defender pour point de terminaison
 
-Le tableau du schéma de recherche avancée contient des informations sur la création et `DeviceRegistryEvents` la modification d'entrées de Registre. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur la création et `DeviceRegistryEvents` la modification d’entrées de Registre. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d'informations sur les types d'événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
+> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
@@ -48,20 +48,20 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
 | `DeviceId` | string | Identificateur unique de la machine dans le service |
 | `DeviceName` | string | Nom de domaine complet (FQDN) de la machine |
-| `ActionType` | string | Type d'activité qui a déclenché l'événement. Pour plus [d'informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
-| `RegistryKey` | string | Clé de Registre à l'application de l'action enregistrée |
-| `RegistryValueType` | string | Type de données, tel que binaire ou chaîne, de la valeur de Registre à qui l'action enregistrée a été appliquée |
-| `RegistryValueName` | string | Nom de la valeur de Registre à qui l'action enregistrée a été appliquée |
-| `RegistryValueData` | string | Données de la valeur de Registre à l'application de l'action enregistrée |
-| `PreviousRegistryKey` | string | Clé de Registre d'origine de la valeur de Registre avant sa modification |
-| `PreviousRegistryValueName` | string | Nom d'origine de la valeur de Registre avant sa modification |
-| `PreviousRegistryValueData` | string | Données d'origine de la valeur de Registre avant sa modification |
-| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a tenu le processus responsable de l'événement |
-| `InitiatingProcessAccountName` | string | Nom d'utilisateur du compte qui a dirigé le processus responsable de l'événement |
-| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l'événement |
-| `InitiatingProcessAccountUpn` | string | Nom d'utilisateur principal (UPN) du compte qui a lancé le processus responsable de l'événement |
-| `InitiatingProcessAccountObjectId` | string | ID d'objet Azure AD du compte d'utilisateur qui a tenu le processus responsable de l'événement |
-| `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l'origine de l'événement |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
+| `RegistryKey` | string | Clé de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryValueType` | string | Type de données, tel que binaire ou chaîne, de la valeur de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryValueName` | string | Nom de la valeur de Registre à qui l’action enregistrée a été appliquée |
+| `RegistryValueData` | string | Données de la valeur de Registre à l’application de l’action enregistrée |
+| `PreviousRegistryKey` | string | Clé de Registre d’origine de la valeur de Registre avant sa modification |
+| `PreviousRegistryValueName` | string | Nom d’origine de la valeur de Registre avant sa modification |
+| `PreviousRegistryValueData` | string | Données d’origine de la valeur de Registre avant sa modification |
+| `InitiatingProcessAccountDomain` | string | Domaine du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountName` | string | Nom d’utilisateur du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountSid` | string | Identificateur de sécurité (SID) du compte qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessAccountUpn` | string | Nom d’utilisateur principal (UPN) du compte qui a lancé le processus responsable de l’événement |
+| `InitiatingProcessAccountObjectId` | string | ID d’objet Azure AD du compte d’utilisateur qui a dirigé le processus responsable de l’événement |
+| `InitiatingProcessSHA1` | string | SHA-1 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessSHA256` | string | SHA-256 du processus (fichier image) à l’origine de l’événement. Ce champ n’est généralement pas rempli. Utilisez la colonne SHA1 lorsque celle-ci est disponible. |
 | `InitiatingProcessMD5` | string | Hachage MD5 du processus (fichier image) à l’origine de l’événement |
 | `InitiatingProcessFileName` | string | Nom du processus à l’origine de l’événement |
@@ -79,7 +79,7 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `InitiatingProcessParentId` | entier | ID de processus (PID) du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentFileName` | string | Nom du processus parent qui a généré le processus responsable de l’événement |
 | `InitiatingProcessParentCreationTime` | DateHeure | Date et heure de début du parent du processus responsable de l’événement |
-| `InitiatingProcessIntegrityLevel` | string | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité à des processus en fonction de certaines caractéristiques, par exemple s’ils ont été lancés à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
+| `InitiatingProcessIntegrityLevel` | string | Niveau d’intégrité du processus à l’origine de l’événement. Windows affecte des niveaux d’intégrité aux processus en fonction de certaines caractéristiques, par exemple, si elles ont été lancées à partir d’un téléchargement Internet. Ces niveaux d’intégrité influencent les autorisations sur les ressources |
 | `InitiatingProcessTokenElevation` | string | Type de jeton indiquant la présence ou l’absence d’élévation de privilège du contrôle d’accès utilisateur (UAC) appliquée au processus à l’origine de l’événement |
 | `ReportId` | long | Identificateur d’événement basé sur un compteur extensible. Pour identifier des événements uniques, cette colonne doit être utilisée conjointement avec les colonnes DeviceName et Timestamp |
 | `AppGuardContainerId` | string | Identificateur du conteneur virtualisé utilisé par Application Guard pour isoler l’activité du navigateur |

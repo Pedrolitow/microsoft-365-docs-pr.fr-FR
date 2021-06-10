@@ -1,6 +1,6 @@
 ---
 title: Examiner les alertes dans Microsoft 365 Defender
-description: Examinez les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
+description: Examiner les alertes visibles sur les appareils, les utilisateurs et les boîtes aux lettres.
 keywords: incidents, alertes, examiner, analyser, réponse, corrélation, attaque, ordinateurs, appareils, utilisateurs, identités, identité, boîte aux lettres, courrier électronique, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -44,13 +44,13 @@ La **file d’attente Alertes** affiche l’ensemble actuel des alertes. Vous ar
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Exemple de file d’attente des alertes":::
 
-Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour Endpoint, Microsoft Defender pour Office 365 et Microsoft 365 Defender s’affichent ici.
+Des alertes provenant de différentes solutions de sécurité Microsoft telles que Microsoft Defender pour endpoint, Microsoft Defender pour Office 365 et Microsoft 365 Defender apparaissent ici.
 
-Par défaut, la file d’attente des alertes dans Microsoft 365 centre de sécurité affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste, ce qui vous permet de la voir en premier. 
+Par défaut, la file d’attente des alertes dans Microsoft 365 centre de sécurité affiche les alertes nouvelles et en cours depuis les 30 derniers jours. L’alerte la plus récente se trouve en haut de la liste pour que vous la voyez en premier. 
 
 Dans la file d’attente des alertes par défaut, vous pouvez sélectionner **Filtres** pour voir un volet **Filtres,** à partir duquel vous pouvez spécifier un sous-ensemble des alertes. Voici un exemple.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet de filtres pour la file d’attente d’alertes":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Exemple de volet filtres pour la file d’attente d’alertes":::
 
 Vous pouvez filtrer les alertes en fonction de ces critères :
 
@@ -115,7 +115,7 @@ La page de détails affiche les détails de l’alerte sélectionnée, ainsi que
 
 Une fois que vous avez sélectionné une entité d’intérêt, la page de détails change pour afficher les informations sur le type d’entité sélectionné, les informations historiques lorsqu’elle est disponible et les options d’action sur cette entité directement à partir de la page d’alerte.
 
-## <a name="manage-alerts"></a>Gérer les alertes
+## <a name="manage-alerts"></a>Gérer des alertes
 
 Pour gérer une alerte, sélectionnez l’alerte dans la file d’attente des alertes sur sa ligne pour voir un volet Gérer **les** alertes. Voici un exemple.
 
@@ -151,9 +151,9 @@ La liste des actions supplémentaires dépend du type d’alerte.
 
 Une fois que vous avez terminé l’analyse d’une  alerte et qu’elle peut être  résolue, allez dans le volet Gérer l’alerte et marquez l’état de l’alerte comme Résolu et classez-la en tant qu’alerte **False** ou Alerte **True.** Pour les alertes vraies, spécifiez le type de menace de l’alerte dans le **champ Détermination.**
 
-La classification des alertes et la spécification de leur détermination permettent Microsoft 365 Defender pour fournir plus d’alertes vraies et moins de fausses alertes.
+La classification des alertes et la spécification de leur détermination permettent d’Microsoft 365 Defender pour fournir plus d’alertes vraies et moins de fausses alertes.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Si nécessaire pour les incidents in-process, poursuivez votre [enquête.](investigate-incidents.md)
 

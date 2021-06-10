@@ -52,7 +52,7 @@ GET /api/users/{id}/
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande

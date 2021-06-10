@@ -53,7 +53,7 @@ Il est important d’approuver (ou de refuser) les actions en attente dès que p
 
 2. Dans le volet de navigation, choisissez **Centre de notifications**. 
 
-3. Dans le centre de l’action, sous l’onglet **En attente,** sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
+3. Dans le centre de actions, sous l’onglet **En attente,** sélectionnez un élément dans la liste. Son volet volant s’ouvre. Voici un exemple.
 
    ![Approuver ou rejeter une action](../../media/air-actioncenter-itemselected.png)
 
@@ -61,7 +61,7 @@ Il est important d’approuver (ou de refuser) les actions en attente dès que p
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
-   - Sélectionnez **Go hunt** (Aller à la recherche) pour passer [à la recherche avancée](advanced-hunting-overview.md). 
+   - Sélectionnez **Go hunt** (Aller à la recherche) pour aller [dans le recherche avancée](advanced-hunting-overview.md). 
 
 ## <a name="undo-completed-actions"></a>Annuler les actions terminées
 
@@ -95,7 +95,7 @@ Si vous avez déterminé qu’un appareil ou un fichier n’est pas une menace, 
 
 3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Consulter les détails et les résultats d'un examen automatisé](m365d-autoir-results.md)
 - [Corriger les faux positifs ou les faux négatifs](m365d-autoir-report-false-positives-negatives.md)

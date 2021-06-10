@@ -42,12 +42,12 @@ Consultez le billet de blog Concernant les modifications importantes apportées 
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Autoriser les connexions au service Antivirus Microsoft Defender cloud
 
-Le Antivirus Microsoft Defender cloud fournit une protection rapide et forte pour vos points de terminaison. L’activation du service de protection cloud est facultative, mais elle est vivement recommandée, car elle offre une protection importante contre les programmes malveillants sur vos points de terminaison et sur votre réseau. Pour plus d’informations sur l’activation du service avec Intune, Microsoft Endpoint Configuration Manager, la stratégie de groupe, les cmdlets PowerShell ou sur des clients individuels dans l’application Sécurité Windows, voir Activer la [protection](enable-cloud-protection-microsoft-defender-antivirus.md) cloud. 
+Le service Antivirus Microsoft Defender cloud fournit une protection rapide et forte pour vos points de terminaison. L’activation du service de protection cloud est facultative, mais elle est vivement recommandée, car elle offre une protection importante contre les programmes malveillants sur vos points de terminaison et sur votre réseau. Pour plus d’informations sur l’activation du service avec Intune, Microsoft Endpoint Configuration Manager, la stratégie de groupe, les cmdlets PowerShell ou sur des clients individuels dans l’application Sécurité Windows, voir Activer la [protection](enable-cloud-protection-microsoft-defender-antivirus.md) cloud. 
 
 Après avoir activé le service, vous devrez peut-être configurer votre réseau ou votre pare-feu pour autoriser les connexions entre celui-ci et vos points de terminaison. Étant donné que votre protection est un service cloud, les ordinateurs doivent avoir accès à Internet et accéder à Microsoft Defender pour Office 365 services d’apprentissage automatique. N’excluez pas l’URL `*.blob.core.windows.net` d’un type d’inspection réseau. 
 
 > [!NOTE]
-> Le Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu’il soit appelé service cloud, il ne s’agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l’utilisation de ressources distribuées et d’apprentissage automatique pour fournir une protection à vos points de terminaison à une vitesse beaucoup plus rapide que les mises à jour d’informations de sécurité traditionnelles.
+> Le Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et points de terminaison. Bien qu’il soit appelé service cloud, il ne s’agit pas simplement de la protection des fichiers stockés dans le cloud, mais plutôt de l’utilisation de ressources distribuées et d’apprentissage automatique pour fournir une protection à vos points de terminaison à un taux beaucoup plus rapide que les mises à jour d’informations de sécurité traditionnelles.
 
 ## <a name="services-and-urls"></a>Services et URL
 
@@ -63,7 +63,7 @@ Assurez-vous qu’il n’existe aucune règle de pare-feu ou de filtrage réseau
 | Stockage de soumission de programmes malveillants <p>Il s’agit de l’emplacement de téléchargement des fichiers envoyés à Microsoft via le formulaire de soumission ou l’envoi automatique d’exemples | `ussus1eastprod.blob.core.windows.net` <p>    `ussus2eastprod.blob.core.windows.net` <p>    `ussus3eastprod.blob.core.windows.net` <p>    `ussus4eastprod.blob.core.windows.net` <p>    `wsus1eastprod.blob.core.windows.net` <p>    `wsus2eastprod.blob.core.windows.net` <p>    `ussus1westprod.blob.core.windows.net` <p>    `ussus2westprod.blob.core.windows.net` <p>    `ussus3westprod.blob.core.windows.net` <p>    `ussus4westprod.blob.core.windows.net` <p>    `wsus1westprod.blob.core.windows.net` <p>    `wsus2westprod.blob.core.windows.net` <p>    `usseu1northprod.blob.core.windows.net` <p>    `wseu1northprod.blob.core.windows.net` <p>    `usseu1westprod.blob.core.windows.net` <p>    `wseu1westprod.blob.core.windows.net` <p>    `ussuk1southprod.blob.core.windows.net` <p>    `wsuk1southprod.blob.core.windows.net` <p>    `ussuk1westprod.blob.core.windows.net` <p>    `wsuk1westprod.blob.core.windows.net` |
 | Liste de révocation de certificats (CRL) <p>Cette liste est utilisée par les Windows lors de la création de la connexion SSL à MAPS pour la mise à jour de la liste de niveau de liste de remise   | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
 | Magasin de symboles <p>Le magasin de symboles est utilisé par les Antivirus Microsoft Defender pour restaurer certains fichiers critiques pendant les flux de correction   | `https://msdl.microsoft.com/download/symbols` |
-| Client de télémétrie universel <p>Ce client est utilisé par les Windows pour envoyer des données de diagnostic client<p> Antivirus Microsoft Defender télémétrie à des fins de surveillance de la qualité des produits    | La mise à jour utilise SSL (port TCP 443) pour télécharger des manifestes et télécharger des données de diagnostic vers Microsoft qui utilise les points de terminaison DNS suivants : <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
+| Client de télémétrie universel <p>Ce client est utilisé par les Windows pour envoyer des données de diagnostic client<p> Antivirus Microsoft Defender télémétrie à des fins de surveillance de la qualité des produits    | La mise à jour utilise SSL (port TCP 443) pour télécharger des manifestes et charger des données de diagnostic vers Microsoft qui utilise les points de terminaison DNS suivants : <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Valider les connexions entre votre réseau et le cloud
 
@@ -101,11 +101,11 @@ Un message similaire se produit si vous utilisez Internet Explorer :
 
 ![Antivirus Microsoft Defender notification informant l’utilisateur que des programmes malveillants ont été détectés](images/defender/wdav-bafs-ie.png)
 
-Vous verrez également une  détection des menaces mises en quarantaine dans la **section** Historique des analyses de l’application Sécurité Windows :
+Vous verrez également une  détection des menaces mises en quarantaine dans la **section** Historique des analyses de l’Sécurité Windows suivante :
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant sécurité dans le menu **Démarrer.**
 
-2. Sélectionnez **Virus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
+2. Sélectionnez **Antivirus & protection contre les** menaces, puis sélectionnez Historique de la **protection.**
 
 3. Sous la section **Menaces en quarantaine,** **sélectionnez Consulter l’historique complet** pour voir les programmes malveillants factices détectés.
 

@@ -1,5 +1,5 @@
 ---
-title: Créer et gérer des balises d’appareil
+title: Créer et gérer des balises d’appareils
 description: Utiliser des balises de périphérique pour grouper des appareils pour capturer le contexte et activer la création de listes dynamiques dans le cadre d’un incident
 keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
 search.product: eADQiWindows 10XVcnh
@@ -23,17 +23,17 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51187588"
 ---
-# <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareil
+# <a name="create-and-manage-device-tags"></a>Créer et gérer des balises d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Ajoutez des balises sur les appareils pour créer une affiliation de groupe logique. Les balises de périphériques permettent un mappage correct du réseau, ce qui vous permet d’attacher différentes balises pour capturer le contexte et activer la création de listes dynamiques dans le cadre d’un incident. Les balises peuvent être  utilisées comme filtre dans l’affichage Liste des appareils ou pour grouper des appareils. Pour plus d’informations sur le regroupement d’appareils, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+Ajoutez des balises sur les appareils pour créer une affiliation de groupe logique. Les balises d’appareil prennent en charge le mappage approprié du réseau, ce qui vous permet d’attacher différentes balises pour capturer le contexte et d’activer la création de liste dynamique dans le cadre d’un incident. Les balises peuvent être  utilisées comme filtre dans l’affichage Liste des appareils ou pour grouper des appareils. Pour plus d’informations sur le regroupement d’appareils, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
 
 Vous pouvez ajouter des balises sur les appareils en utilisant les méthodes suivantes :
 
@@ -43,18 +43,18 @@ Vous pouvez ajouter des balises sur les appareils en utilisant les méthodes sui
 > [!NOTE]
 > Il peut y avoir une certaine latence entre le moment où une balise est ajoutée à un appareil et sa disponibilité dans la liste des appareils et la page de l’appareil.  
 
-Pour ajouter des balises d’appareil à l’aide de l’API, voir [Api Ajouter ou supprimer des balises d’appareil.](add-or-remove-machine-tags.md)
+Pour ajouter des balises d’appareil à l’aide de l’API, consultez [Ajouter ou supprimer des balises d’appareil API](add-or-remove-machine-tags.md).
 
 ## <a name="add-and-manage-device-tags-using-the-portal"></a>Ajouter et gérer des balises d’appareil à l’aide du portail
 
-1. Sélectionnez l’appareil sur qui vous souhaitez gérer les balises. Vous pouvez sélectionner ou rechercher un appareil dans l’un des affichages suivants :
+1. Sélectionnez l’appareil sur lequel vous souhaitez gérer les balises. Vous pouvez sélectionner ou rechercher un appareil à partir de l’une des vues suivantes :
 
    - **Tableau de bord Opérations de sécurité** : sélectionnez le nom de l’appareil dans la section Principaux appareils avec alertes actives.
-   - **File d’attente des alertes** : sélectionnez le nom de l’appareil à côté de l’icône de l’appareil dans la file d’attente des alertes.
+   - **File d’attente des alertes** : sélectionnez le nom de l’appareil en regard de l’icône de l’appareil dans la file d’attente des alertes.
    - **Liste des appareils** : sélectionnez le nom de l’appareil dans la liste des appareils.
-   - **Zone de recherche** : sélectionnez l’appareil dans le menu déroulant et entrez le nom de l’appareil.
+   - **Zone de recherche** : sélectionnez Appareil dans le menu déroulant et entrez le nom de l’appareil.
 
-     Vous pouvez également vous rendre sur la page d’alerte via le fichier et les vues IP.
+     Vous pouvez également accéder à la page d’alerte via les Affichages de fichier et d’adresse IP.
 
 2. Sélectionnez **Gérer les balises** dans la ligne des actions de réponse.
 
@@ -79,11 +79,11 @@ Vous pouvez également supprimer des balises de cet affichage.
 >[!NOTE]
 > Applicable uniquement sur les appareils suivants :
 >- Windows 10, version 1709 ou ultérieure
->- Windows Server, version 1803 ou ultérieure
+>- Windows Serveur, version 1803 ou ultérieure
 >- Windows Server 2016
->- Windows Server 2012 R2
+>- Windows Server 2012 R2
 >- Windows Server 2008 R2 SP1
->- Windows 8.1
+>- Windows 8.1
 >- Windows 7 SP1
 
 > [!NOTE] 

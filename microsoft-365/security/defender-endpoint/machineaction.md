@@ -28,7 +28,7 @@ ms.locfileid: "51187384"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
@@ -44,15 +44,15 @@ ms.locfileid: "51187384"
 |:------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------|
 | [List MachineActions](get-machineactions-collection.md)           | [Action de l’ordinateur](machineaction.md) | Liste des [entités d’action](machineaction.md) de l’ordinateur.           |
 | [Obtenir MachineAction](get-machineaction-object.md)                  | [Action de l’ordinateur](machineaction.md) | Obtenir une seule [entité d’action](machineaction.md) de l’ordinateur.     |
-| [Collecter le package d’examen](collect-investigation-package.md) | [Action de l’ordinateur](machineaction.md) | Collecter un package d’examen à partir d’un [ordinateur.](machine.md) |
-| [Obtenir l’URI SAS du package d’examen](get-package-sas-uri.md)       | [Action de l’ordinateur](machineaction.md) | Obtenez l’URI pour télécharger le package d’enquête.          |
+| [Collecter un package d’examen](collect-investigation-package.md) | [Action de l’ordinateur](machineaction.md) | Collecter un package d’examen à partir d’un [ordinateur.](machine.md) |
+| [Obtenir SAS de l’URI du package d’examen](get-package-sas-uri.md)       | [Action de l’ordinateur](machineaction.md) | Obtenez l’URI pour télécharger le package d’enquête.          |
 | [Isoler l’ordinateur](isolate-machine.md)                             | [Action de l’ordinateur](machineaction.md) | Isoler [l’ordinateur](machine.md) du réseau.                 |
-| [Libérer l’ordinateur de l’isolation](unisolate-machine.md)            | [Action de l’ordinateur](machineaction.md) | Libérer [l’ordinateur](machine.md) de l’isolation.               |
-| [Restreindre l’exécution de l’application](restrict-code-execution.md)              | [Action de l’ordinateur](machineaction.md) | Restreindre l’exécution de l’application.                             |
-| [Supprimer la restriction d’application](unrestrict-code-execution.md)            | [Action de l’ordinateur](machineaction.md) | Supprimer la restriction d’exécution de l’application.                   |
+| [Libérer la machine de l’isolation](unisolate-machine.md)            | [Action de l’ordinateur](machineaction.md) | Libérer [l’ordinateur](machine.md) de l’isolation.               |
+| [Restreindre l’exécution des applications](restrict-code-execution.md)              | [Action de l’ordinateur](machineaction.md) | Restreindre l’exécution de l’application.                             |
+| [Supprimer la restriction des applications](unrestrict-code-execution.md)            | [Action de l’ordinateur](machineaction.md) | Supprimer la restriction d’exécution de l’application.                   |
 | [Exécuter une analyse antivirus](run-av-scan.md)                              | [Action de l’ordinateur](machineaction.md) | Exécutez une analyse antivirus à l’Windows Defender (le cas échéant).    |
-| [Appareil hors-carte](offboard-machine-api.md)                       | [Action de l’ordinateur](machineaction.md) | [Hors-carte de](machine.md) Microsoft Defender pour point de terminaison. |
-| [Arrêter et mettre en quarantaine le fichier](stop-and-quarantine-file.md)           | [Action de l’ordinateur](machineaction.md) | Arrêtez l’exécution d’un fichier sur un ordinateur et supprimez-le.        |
+| [Retirer un ordinateur](offboard-machine-api.md)                       | [Action de l’ordinateur](machineaction.md) | [Hors-carte de](machine.md) Microsoft Defender pour point de terminaison. |
+| [Arrêt et fichier mis en quarantaine](stop-and-quarantine-file.md)           | [Action de l’ordinateur](machineaction.md) | Arrêtez l’exécution d’un fichier sur un ordinateur et supprimez-le.        |
 
 <br>
 
@@ -63,11 +63,11 @@ ms.locfileid: "51187384"
 | ID                  | Guid           | Identité de [l’entité Action](machineaction.md) de l’ordinateur.                                                                                                                                                     |
 | type                | Énum           | Type de l’action. Les valeurs possibles sont : « RunAntiVirusScan », « Offboard », « CollectRandigationPackage », « Isolate », « Unisolate », « StopAndQuarantineFile », « RestrictCodeExecution » et « IsolaterictCodeExecution » |
 | étendue               | string         | Étendue de l’action. « Complète » ou « Sélective » pour l’isolation, « Rapide » ou « Complète » pour l’analyse antivirus.                                                                                                   |
-| demandeur           | Chaîne         | Identité de la personne qui a exécuté l’action.                                                                                                                                                               |
-| requestorComment    | Chaîne         | Commentaire écrit lors de l’émission de l’action.                                                                                                                                                              |
-| statut              | Énum           | État actuel de la commande. Les valeurs possibles sont : « Pending », « InProgress », « Succeeded », « Failed », « TimeOut » et « Canceled ».                                                                                 |
-| machineId           | Chaîne         | ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.                                                                                                                                              |
-| machineId           | Chaîne         | Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.                                                                                                                                            |
+| demandeur           | String         | Identité de la personne qui a exécuté l’action.                                                                                                                                                               |
+| requestorComment    | String         | Commentaire écrit lors de l’émission de l’action.                                                                                                                                                              |
+| status              | Énum           | État actuel de la commande. Les valeurs possibles sont : « Pending », « InProgress », « Succeeded », « Failed », « TimeOut » et « Canceled ».                                                                                 |
+| machineId           | String         | ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.                                                                                                                                              |
+| machineId           | String         | Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.                                                                                                                                            |
 | creationDateTimeUtc | DateTimeOffset | Date et heure de création de l’action.                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | Date et heure de la dernière mise à jour de l’état de l’action.                                                                                                                                                     |
 | relatedFileInfo     | Classe          | Contient deux propriétés. chaîne ```fileIdentifier``` , Enum ```fileIdentifierType``` avec les valeurs possibles : « Sha1 », « Sha256 » et « Md5 ».                                                                         |

@@ -33,7 +33,7 @@ ms.locfileid: "52788306"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou locales utilisant l’authentification moderne [hybride,](../../enterprise/hybrid-modern-auth-overview.md)vous pouvez envoyer des faux positifs (courrier électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Exchange Online Protection (EOP).
+Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou locales utilisant l’authentification moderne [hybride,](../../enterprise/hybrid-modern-auth-overview.md)vous pouvez soumettre des faux positifs (courrier électronique de qualité marqué comme courrier indésirable), des faux négatifs (courrier indésirable autorisé) et des messages de hameçonnage à Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -42,7 +42,7 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Onli
 
 - Si vous êtes un administrateur d’une organisation Exchange Online boîtes aux lettres, nous vous recommandons d’utiliser le portail Soumissions dans le Centre de sécurité & conformité. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-- Les administrateurs peuvent désactiver ou activer la possibilité pour les utilisateurs de signaler des messages à Microsoft Outlook sur le web. Pour plus d’informations, voir la section Désactiver ou activer le signalement du courrier indésirable Outlook sur [le web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) plus loin dans cet article.
+- Les administrateurs peuvent désactiver ou activer la possibilité pour les utilisateurs de signaler des messages à Microsoft Outlook sur le web. Pour plus d’informations, voir la section Désactiver ou activer les rapports de courrier indésirable Outlook sur [le web](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) plus loin dans cet article.
 
 - Vous pouvez configurer la copie ou la redirection des messages signalés vers une boîte aux lettres que vous spécifiez. Pour plus d’informations, voir [Stratégies d’envoi des utilisateurs.](user-submission.md)
 
@@ -56,7 +56,7 @@ Par défaut, les utilisateurs peuvent signaler à Microsoft des faux positifs de
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Des autorisations doivent vous être attribuées Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément,  vous avez besoin des **rôles Stratégies** des  destinataires ou Destinataires de messagerie, qui sont attribués par défaut aux groupes de rôles Gestion de l’organisation et Gestion des destinataires.  Pour plus d’informations sur les groupes de rôles dans Exchange Online, voir [Autorisations](/exchange/permissions-exo/permissions-exo) dans Exchange Online et Modifier les groupes de rôles [dans Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups).
+- Des autorisations doivent vous être attribuées Exchange Online avant de pouvoir suivre les procédures de cet article. Plus précisément,  vous avez besoin des **rôles Stratégies** des  destinataires ou Destinataires de messagerie, qui sont attribués par défaut aux groupes de rôles Gestion de l’organisation et Gestion des destinataires.  Pour plus d’informations sur les groupes de rôles Exchange Online, voir [Autorisations](/exchange/permissions-exo/permissions-exo) dans Exchange Online et Modifier les groupes de rôles [dans Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups).
 
 - Chaque organisation possède une stratégie par défaut nommée OwaMailboxPolicy-Default, mais vous pouvez créer des stratégies personnalisées. Les stratégies personnalisées sont appliquées aux utilisateurs d’étendue avant la stratégie par défaut. Pour plus d’informations Outlook sur les stratégies de boîte aux lettres web, voir Outlook [stratégies](/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)de boîte aux lettres web dans Exchange Online .
 
@@ -92,7 +92,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ### <a name="how-do-you-know-this-worked"></a>Comment savoir si cela a fonctionné ?
 
-Pour vérifier que vous avez bien activé ou désactivé le signalement du courrier indésirable dans Outlook sur le web, utilisez l’une des étapes suivantes :
+Pour vérifier que vous avez réussi à activer ou désactiver la signalement du courrier indésirable dans Outlook sur le web, utilisez l’une des étapes suivantes :
 
 - Dans Exchange Online PowerShell, exécutez la commande suivante et vérifiez la valeur de la propriété **ReportJunkEmailEnabled** :
 
