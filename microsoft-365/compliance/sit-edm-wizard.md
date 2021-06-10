@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9d6f870239b963ee7483b9f08e93e40b10f4f0b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878003"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861658"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
@@ -42,7 +42,7 @@ dans [Partie 1 : configurer la classification EDM](create-custom-sensitive-inf
 
 1. Familiarisez-vous avec les étapes de création d’un type d’informations sensibles personnalisées avec le [flux de travail EDM en un clin d’œil](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
 
-2. Effectuez les étapes de [l’étape Enregistrer les données sensibles .csv au format .tsv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format).
+2. Suivez les étapes décrites dans la section [Enregistrer des données sensibles au format. csv](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format).
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Utiliser l’Assistant de schéma de correspondance exacte des données et de type d’informations sensibles
 
@@ -54,7 +54,7 @@ dans [Partie 1 : configurer la classification EDM](create-custom-sensitive-inf
 
 3. Indiquez un nom **approprié** et **Description**.
 
-4. Choisissez **Ignorer les délimiteur et la ponctuation pour tous** les champs de schéma si vous souhaitez ce comportement. Pour en savoir plus sur la configuration d’EDM pour ignorer les cas ou les délimiteur, voir Création d’un type d’informations sensibles personnalisé avec la [classification EDM (Exact Data Match).](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+4. Choisissez **Ignorer les délimiteur et la ponctuation pour tous** les champs de schéma si vous souhaitez ce comportement. Pour en savoir plus sur la configuration d’EDM pour ignorer les cas ou les délimiteur, voir Création d’un type d’informations sensibles personnalisé avec une [classification EDM (Exact Data Match).](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 5. Renseignez les valeurs souhaitées pour votre **Champ de schéma n° 1** et ajoutez des champs si nécessaire. 
 
@@ -96,9 +96,9 @@ Après avoir vérifié que votre table d’informations sensibles a été correc
 
 1. Ouvrez **le Centre de conformité** Types  >  **d’informations**  >  **sensibles de classification des données.**
 2. Sélectionnez votre sit EDM dans la liste, puis **sélectionnez Tester** dans le volet volant. 
-3. Télécharger un élément qui contient des données que vous souhaitez détecter, par exemple, créez un élément qui contient certaines des données de votre table d’informations sensibles. Si vous avez utilisé la fonctionnalité de correspondance configurable dans votre schéma pour définir des délimiteur ignorés, assurez-vous que l’élément inclut des exemples avec et sans ces délimiteur.
+3. Télécharger un élément qui contient les données que vous souhaitez détecter, par exemple, créez un élément qui contient certaines des données de votre table d’informations sensibles. Si vous avez utilisé la fonctionnalité de correspondance configurable dans votre schéma pour définir des délimiteur ignorés, assurez-vous que l’élément inclut des exemples avec et sans ces délimiteurs.
 4. Une fois le fichier téléchargé et analysé, recherchez les correspondances avec votre sit EDM.
-5. Si la **fonction Test** dans la fonction SIT détecte une correspondance, vérifiez qu’elle ne le coupe pas ou ne l’extrait pas de manière incorrecte. Par exemple, en extrayant uniquement une sous-chaîne de la chaîne complète qu’elle est supposée détecter, ou en sélectionnant uniquement le premier mot d’une chaîne de plusieurs mots, ou en incluant des symboles ou des caractères supplémentaires dans l’extraction. Voir [Langage des expressions régulières - Référence rapide pour](/dotnet/standard/base-types/regular-expression-language-quick-reference) la référence du langage d’expression régulière. 
+5. Si la **fonction Test** dans la fonction SIT détecte une correspondance, vérifiez qu’elle ne le coupe pas ou ne l’extrait pas de manière incorrecte. Par exemple, en extrayant uniquement une sous-chaîne de la chaîne complète qu’elle est supposée détecter, ou en sélectionnant uniquement le premier mot d’une chaîne à plusieurs mots, ou en incluant des symboles ou des caractères supplémentaires dans l’extraction. Voir [Langage des expressions régulières - Référence rapide pour](/dotnet/standard/base-types/regular-expression-language-quick-reference) la référence du langage d’expression régulière. 
 
 ### <a name="troubleshooting"></a>Résolution des problèmes
 

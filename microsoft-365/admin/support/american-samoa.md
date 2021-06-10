@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296995"
 ---
-# <a name="contact-support-for-american-samoa"></a>Contacter le support technique pour les Samoa américaines
+# <a name="contact-support-for-american-samoa"></a>Contacter le support pour les Samoa américaines
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 
@@ -29,7 +29,7 @@ ms.locfileid: "52296995"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Anglais : Mon-Fri 06:00-14:00
+Anglais : Mon-Fri 6 h à 14 h
 
 ### <a name="technical-support"></a>Support technique :
 

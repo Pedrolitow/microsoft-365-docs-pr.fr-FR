@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/08/2021
-ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.date: 06/09/2021
+ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
+ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822273"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52862146"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base
 
@@ -86,7 +86,7 @@ Toutes nos mises à jour contiennent
 <summary> Mai-2021 (plateforme : 4.18.2105.4 | Moteur : 1.1.18200.4)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.341.8.0**  
-&ensp;Publication : **4 juin 2021**  
+&ensp;Publication : **3 juin 2021**  
 &ensp;Plateforme : **4.18.2105.4**  
 &ensp;Moteur : **1.1.18200.4**  
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**
@@ -102,15 +102,13 @@ Aucun problème connu
 <summary> Avril-2021 (plateforme : 4.18.2104.14 | Moteur : 1.1.18100.5)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.337.2.0**  
-&ensp;Publication : **1er avril 2021**  
-&ensp;Plateforme : **4.18.2104.14**  
+&ensp;Publication : **26 avril 2021**  (moteur : 1.1.18100.6 publié le 5 mai 2021) Plateforme : &ensp; **4.18.2104.14**  
 &ensp;Moteur : **1.1.18100.5**  
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**
     
 ### <a name="whats-new"></a>Nouveautés
 - Logique de surveillance du comportement supplémentaire
 - Détection améliorée du keylogger en mode noyau
-- Ajout de nouveaux contrôles pour gérer le processus de déploiement progressif pour [les mises à jour de Microsoft Defender](updates.md)
 
 ### <a name="known-issues"></a>Problèmes connus
 Aucun problème connu  
@@ -119,7 +117,7 @@ Aucun problème connu
 <summary> Mars-2021 (plateforme : 4.18.2103.7 | Moteur : 1.1.18000.5)</summary>
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.335.36.0**  
-&ensp;Publication : **1er avril 2021**  
+&ensp;Publication : **2 avril 2021**  
 &ensp;Plateforme : **4.18.2103.7**  
 &ensp;Moteur : **1.1.18000.5**  
 &ensp;Phase de prise en charge **: Mises à jour critiques et de sécurité**
@@ -380,7 +378,7 @@ Aucun problème connu
 
 &ensp;Version de mise à jour des informations de sécurité **: 1.311.4.0**   
 &ensp;Publication : **25 février 2020**  
-&ensp;Plateforme/Client : **-**  
+&ensp;Plateforme/client : **-**  
 &ensp;Moteur : **1.1.16800.2**  
 &ensp;Phase de support : **prise en charge de la mise à niveau technique (uniquement)**
      
@@ -446,7 +444,7 @@ Lorsque cette mise à jour est installée, l’appareil a besoin du package de s
 </details>
 
 
-## <a name="microsoft-defender-antivirus-platform-support"></a>Antivirus Microsoft Defender prise en charge de la plateforme d’Antivirus Microsoft Defender
+## <a name="microsoft-defender-antivirus-platform-support"></a>Antivirus Microsoft Defender prise en charge de la plateforme
 Les mises à jour de la plateforme et du moteur sont fournies à une cadence mensuelle. Pour être entièrement pris en charge, tenez à jour les dernières mises à jour de plateforme. Notre structure de support est dynamique et évolue en deux phases en fonction de la disponibilité de la dernière version de plateforme :
 
 - Phase de maintenance des mises à jour **critiques** et de sécurité : lors de l’exécution de la dernière version de la plateforme, vous serez éligible à la réception des mises à jour de sécurité et critiques sur la plateforme anti-programme malveillant.
@@ -477,7 +475,7 @@ Pour Windows 10 de publication, consultez la [Windows de faits sur](https://supp
 
 Nous vous recommandons de mettre à jour vos images d’installation Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019 et Windows Server 2016 OS avec les dernières mises à jour antivirus et anti-programme malveillant. La mise à jour de vos images d’installation du système d’exploitation permet d’éviter un écart de protection. 
 
-Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
+Pour plus d’informations, voir Mise à [jour de Microsoft Defender pour Windows images d’installation du système d’exploitation.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
 
 <details>
 <summary>1.1.2106.01</summary>
@@ -609,7 +607,7 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 <summary>1.1.2009.10</summary>
 
 &ensp;Version du package **: 1.1.2011.01**    
-&ensp;Version de la plateforme **: 4.18.2008.9**   
+&ensp;Version de plateforme **: 4.18.2008.9**   
 &ensp;Version du moteur **: 1.1.17400.5**  
 &ensp;Version de signature **: 1.327.2216.0**    
     
@@ -626,8 +624,8 @@ Pour plus d’informations, voir mise à [jour de Microsoft Defender pour Window
 | Article | Description  |
 |:---|:---|
 |[Mise à jour de Microsoft Defender Windows images d’installation du système d’exploitation](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Passer en revue les packages de mise à jour anti-programme malveillant pour vos images d’installation du système d’exploitation (fichiers WIM et VHD). Obtenez Antivirus Microsoft Defender mises à jour de Windows 10 (éditions Enterprise, Pro et Famille), Windows Server 2019 et Windows Server 2016 images d’installation.  |
-|[Gérer le téléchargement et l’application des mises à jour de protection](manage-protection-updates-microsoft-defender-antivirus.md) | Les mises à jour de protection peuvent être mises à jour via de nombreuses sources. |
-|[Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Vous pouvez planifier le téléchargement des mises à jour de la protection. |
-|[Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Si un point de terminaison manque une mise à jour ou une analyse programmée, vous pouvez forcer une mise à jour ou une analyse la prochaine fois qu’un utilisateur se signe. |
+|[Gérer le téléchargement et l’application des mises à jour de protection](manage-protection-updates-microsoft-defender-antivirus.md) | Les mises à jour de la protection peuvent être livrées via de nombreuses sources. |
+|[Gérer le moment où les mises à jour de la protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Vous pouvez planifier le téléchargement des mises à jour de la protection. |
+|[Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Si un point de terminaison manque une mise à jour ou une analyse programmée, vous pouvez forcer une mise à jour ou une analyse la prochaine fois qu’un utilisateur se signe. |
 |[Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md) | Vous pouvez définir des mises à jour de protection à télécharger au démarrage ou après certains événements de protection livrés par le cloud. |
 |[Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Vous pouvez spécifier des paramètres, par exemple si des mises à jour doivent être mises à jour sur l’alimentation de la batterie, qui sont particulièrement utiles pour les appareils mobiles et les ordinateurs virtuels. |

@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296815"
 ---
-# <a name="contact-support-for-canada"></a>Contacter le support technique pour le Canada
+# <a name="contact-support-for-canada"></a>Contacter le support pour le Canada
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 

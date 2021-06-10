@@ -45,9 +45,9 @@ Pour obtenir des conseils pratiques sur la connexion de nouveaux appareils dans 
 
 Rubrique | Description
 :---|:---
-[Configurer les Centre de sécurité Microsoft Defender de configuration](preferences-setup.md) | Configurez les paramètres liés au portail tels que les paramètres généraux, les fonctionnalités avancées ou activez l’expérience d’aperçu.
+[Configurer les Centre de sécurité Microsoft Defender de configuration](preferences-setup.md) | Configurez les paramètres relatifs au portail tels que les paramètres généraux, les fonctionnalités avancées ou activez l’expérience d’aperçu.
 [Configurer les fonctionnalités de la réduction de la surface d’attaque](configure-attack-surface-reduction.md) | Configurez les fonctionnalités de réduction de la surface d’attaque pour vous assurer que les paramètres sont correctement appliqués et que les techniques d’atténuation des attaques sont définies.
 [Configurer la protection nouvelle génération](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Configurez la protection nouvelle génération pour capturer tous les types de menaces émergentes.
-[Configurer les fonctionnalités Spécialistes des menaces Microsoft de gestion](configure-microsoft-threat-experts.md) | Configurez et gérez les renseignements sur les menaces de cybersécurité à partir Spécialistes des menaces Microsoft.
+[Configurer les fonctionnalités Spécialistes des menaces Microsoft de gestion](configure-microsoft-threat-experts.md) | Configurer et gérer les renseignements sur les menaces de cybersécurité à partir Spécialistes des menaces Microsoft.
 [Configurer l’intégration Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/threat-protection-integration) | Configurez d’autres solutions qui s’intègrent à Defender for Endpoint.
 [Prise en charge de la gestion et de l’API](/microsoft-365/security/defender-endpoint/management-apis) | Tirez des alertes vers votre siEM (Security Information and Event Management) ou utilisez des API pour créer des alertes personnalisées. Créez et créez Power BI rapports.

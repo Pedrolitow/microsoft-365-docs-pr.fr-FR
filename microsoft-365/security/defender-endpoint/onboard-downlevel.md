@@ -39,7 +39,7 @@ ms.locfileid: "52844429"
 - Windows 8.1 Entreprise
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint étend la prise en charge pour inclure des systèmes d’exploitation de bas niveau, fournissant des fonctionnalités avancées de détection d’attaques et d’investigation sur les versions Windows pris en charge.
 
@@ -57,7 +57,7 @@ Pour intégrer des points de terminaison Windows client de niveau inférieur à 
 Defender pour le point de terminaison s’intègre à System Center Endpoint Protection pour fournir une visibilité aux détections de programmes malveillants et pour arrêter la propagation d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects. 
 
 Les étapes suivantes sont nécessaires pour activer cette intégration : 
-- Installer la mise à jour de la plateforme anti-programme malveillant de janvier [2017 Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+- Installer la mise à jour de la plateforme anti-programme malveillant de janvier [2017 pour Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
 - Configurer l’appartenance au service protection cloud client SCEP sur le **paramètre** Avancé
 - Configurez votre réseau pour autoriser les connexions au Antivirus Microsoft Defender cloud. Pour plus d’informations, voir [Autoriser les connexions au Antivirus Microsoft Defender cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
@@ -82,7 +82,7 @@ Examinez les détails suivants pour vérifier la minimale requise :
 
 
 
-1. Téléchargez le fichier de configuration de [l’agent : Windows agent 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) ou Windows agent [32 bits.](https://go.microsoft.com/fwlink/?LinkId=828604)
+1. Téléchargez le fichier d’installation de l Windows [agent 64 bits](https://go.microsoft.com/fwlink/?LinkId=828603) [ou Windows agent 32 bits.](https://go.microsoft.com/fwlink/?LinkId=828604)
 
 2. Obtenez l’ID d’espace de travail :
    - Dans le volet de navigation Defender pour les points de terminaison, sélectionnez Paramètres > gestion des > **l’intégration**
@@ -110,4 +110,4 @@ Une fois terminé, vous devriez voir les points de terminaison intégrés dans l
 ## <a name="offboard-client-endpoints"></a>Points de terminaison du client de hors-carte
 Pour désinstaller, vous pouvez désinstaller l’agent MMA du point de terminaison ou le détacher des rapports à votre espace de travail Defender for Endpoint. Après l’arrêt de l’agent, le point de terminaison n’envoie plus de données de capteur à Defender for Endpoint. 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à une version d’essai gratuite.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)

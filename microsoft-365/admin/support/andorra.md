@@ -29,7 +29,7 @@ ms.locfileid: "52296658"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Espagnol : Mon-Fri 10:00-18:00
+Espagnol : Mon-Fri 10h00 à 18h00
 
 Anglais : Mon-Fri 10h00 à 18h00
 

@@ -39,7 +39,7 @@ ms.locfileid: "52844417"
 Pour intégrer des appareils sans accès à Internet, vous devez suivre les étapes générales suivantes :
 
 > [!IMPORTANT] 
-> Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures ou Windows 8.1 versions antérieures.
+> Les étapes ci-dessous s’appliquent uniquement aux appareils exécutant des versions antérieures de Windows tels que : Windows Server 2016 et versions antérieures ou antérieures ou Windows 8.1 et versions antérieures.
 
 > [!NOTE]
 > - Un serveur de passerelle OMS ne peut pas être utilisé comme proxy pour les appareils Windows 10 ou Windows Server 2019 déconnectés lorsqu’ils sont configurés via le Registre ou l’GPO « TelemetryProxyServer ».
@@ -66,7 +66,7 @@ Pour plus d’informations sur les méthodes d’intégration, consultez les art
 ## <a name="azure-virtual-machines"></a>Machines virtuelles Azure
 - Configurer et activer [l’espace de travail Azure Log Analytics](/azure/azure-monitor/platform/gateway)
 
-    - Configurer Azure Log Analytics Gateway (anciennement appelé passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
+    - Configurer Azure Log Analytics Gateway (anciennement passerelle OMS) pour qu’elle agisse en tant que proxy ou hub :
       - [Passerelle Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
       - [Installer et configurer un point Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) vers la clé d’espace de travail Defender for Endpoint & ID
     - Ordinateurs VM Azure hors connexion dans le même réseau de passerelle OMS

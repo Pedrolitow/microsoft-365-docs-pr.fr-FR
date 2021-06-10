@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822321"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861694"
 ---
 # <a name="web-content-filtering"></a>Filtrage du contenu web
 
@@ -61,7 +61,9 @@ Avant d’essayer cette fonctionnalité, assurez-vous que vous disposez des cond
 
 - Windows 10 Entreprise E5, Microsoft 365 E5, Microsoft 365 E5 Sécurité, Microsoft 365 E3 + Microsoft 365 E5 Sécurité ou la licence autonome Microsoft Defender pour endpoint. 
 - Accès à Centre de sécurité Microsoft Defender portail ( https://securitycenter.windows.com) .
-- Appareils exécutant Windows 10 mise à jour anniversaire (version 1607) ou version ultérieure avec la dernière mise à jour du moteur anti-programme malveillant Microsoft Defender.
+- Appareils exécutant Windows 10 mise à jour anniversaire (version 1607) ou version ultérieure avec la dernière mise à jour MoCAMP.
+- Windows Defender SmartScreen et protection réseau activées.
+
 
 ## <a name="data-handling"></a>Gestion des données
 
@@ -162,4 +164,11 @@ Utilisez le filtre de plage de temps en haut à gauche de la page pour sélectio
 
 - Les rapports de filtrage de contenu Web sont actuellement limités à l’affichage des 5 000 premiers enregistrements. Par exemple, le rapport Domaines affiche uniquement un maximum des 5 000 principaux domaines pour une requête de filtre donnée, le cas échéant. 
 
+
+
+- [Vue d’ensemble de la protection web](web-protection-overview.md)
+- [Protection contre les menaces web](web-threat-protection.md)
+- [Surveiller la sécurité web](web-protection-monitoring.md)
+- [Répondre aux menaces web](web-protection-response.md)
+- [Conditions requises pour la protection du réseau](web-content-filtering.md)
 

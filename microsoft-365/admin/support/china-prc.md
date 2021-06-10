@@ -29,13 +29,13 @@ ms.locfileid: "52296370"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Chinois (Mandarin) : Mon-Fri 9 h à 18 h
+Chinois (Mandarin) : Mon-Fri 9h00-18h00
 
 Anglais : Mon-Fri 9h00 à 18h00
 
 ### <a name="technical-support"></a>Support technique :
 
-Chinois (Mandarin) : Mon-Fri 9 h à 18 h
+Chinois (Mandarin) : Mon-Fri 9h00-18h00
 
 Anglais : 24h/24, 7j/7
 

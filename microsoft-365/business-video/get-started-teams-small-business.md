@@ -1,5 +1,5 @@
 ---
-title: Prendre en Teams
+title: Commencez avec Teams
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -27,7 +27,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52537366"
 ---
-# <a name="get-started-with-teams"></a>Prendre en Teams
+# <a name="get-started-with-teams"></a>Commencez avec Teams
 
 Si vous ne faites que commencer à modifier votre entreprise pour qu’elle travaille à distance, vous êtes au bon endroit. Avec Microsoft 365, vous pouvez gérer une entreprise virtuellement et rester en contact avec vos employés, partenaires et clients par le biais de réunions en ligne, de [conversations,](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)de partages de fichiers et d’appels Microsoft Teams. 
 
@@ -55,11 +55,11 @@ Les canaux sont des sections dédiées au sein d’une équipe pour conserver le
 
 ### <a name="store-and-share-files"></a>Stocker et partager des fichiers
 
-Comme votre équipe travaille ensemble à distance, vous aurez des fichiers que vous souhaiterez partager et sur qui collaborer, à l’intérieur et à l’extérieur de l’entreprise. Microsoft Teams permet de partager facilement des fichiers et de travailler dessus ensemble. Si vos documents sont Word, Excel ou PowerPoint fichiers que vos collègues et clients peuvent même afficher, modifier et collaborer dessus, directement Microsoft Teams.
+Comme votre équipe travaille ensemble à distance, vous aurez des fichiers que vous souhaiterez partager et sur qui collaborer, à l’intérieur et à l’extérieur de l’entreprise. Microsoft Teams facilite le partage de fichiers et leur travail ensemble. Si vos documents sont Word, Excel ou PowerPoint fichiers que vos collègues et clients peuvent même afficher, modifier et collaborer dessus, directement Microsoft Teams.
 
-Assurez-vous que les documents clés de votre entreprise sont enregistrés dans le cloud et prêts à être partagés en toute sécurité avec des clients, des clients, des partenaires, des fournisseurs et d’autres personnes de votre entreprise. Le fait de conserver des fichiers dans le cloud signifie également que vous bénéficiez des avantages de la sauvegarde et de la possibilité de récupérer après des défaillances de disque dur, des attaques par ransomware et d’autres attaques.
+Assurez-vous que les documents clés de votre entreprise sont enregistrés dans le cloud et prêts à être partagés en toute sécurité avec les clients, clients, partenaires, fournisseurs et autres personnes de votre entreprise. Le fait de conserver des fichiers dans le cloud signifie également que vous bénéficiez des avantages de la sauvegarde et de la possibilité de récupérer après des défaillances de disque dur, des attaques par ransomware et d’autres attaques.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour approfondir les fonctionnalités de Microsoft Teams...
 
@@ -69,12 +69,12 @@ Une fonctionnalité de sécurité hautement recommandée est l’authentificatio
 
 ### <a name="microsoft-teams-templates"></a>Microsoft Teams modèles
 
-Pour faciliter et rationaliser le déploiement dans votre organisation, consultez les modèles qui sont spécifiquement disponibles pour les petites entreprises. Microsoft Teams modèles vous permettent de créer rapidement et facilement des équipes en fournissant un modèle prédéféré de paramètres, de canaux et d’applications préinstallées, tout en orientant les utilisateurs à commencer à utiliser Microsoft Teams efficacement. Voir [La mise en Teams modèles de modèles pour les petites et moyennes entreprises.](/microsoftteams/smb-templates)
+Pour faciliter et rationaliser le déploiement dans votre organisation, consultez les modèles qui sont spécifiquement disponibles pour les petites entreprises. Microsoft Teams modèles vous permettent de créer rapidement et facilement des équipes en fournissant un modèle prédéféré de paramètres, de canaux et d’applications préinstallées, tout en orientant les utilisateurs à commencer à utiliser Microsoft Teams efficacement. Voir [La mise en Teams modèles pour les petites et moyennes entreprises.](/microsoftteams/smb-templates)
 
 ### <a name="business-phone-system"></a>Système téléphonique d’entreprise
 
 Transformez n’importe quel PC, Mac ou appareil mobile en téléphone d’entreprise en ajoutant [Microsoft 365 Business Voice](https://aka.ms/getbusinessvoice) à votre abonnement. Donnez aux employés leur propre numéro de téléphone pour effectuer et recevoir des appels, configurer un système de menus d’appels pour router les appels, ajouter des audioconférences et configurer des numéros gratuits et gratuits pour votre entreprise. Tout cela tout en remplaçant les fournisseurs de téléphonie traditionnels et les systèmes téléphoniques en interne qui peuvent être coûteux et difficiles à gérer.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Permettre à votre petite entreprise de travailler à distance](../admin/misc/empower-your-small-business-with-remote-work.md) (article)

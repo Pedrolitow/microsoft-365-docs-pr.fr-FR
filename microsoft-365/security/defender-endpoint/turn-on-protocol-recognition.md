@@ -1,7 +1,7 @@
 ---
 title: Activer la reconnaissance de protocole pour Antivirus Microsoft Defender
 description: Activer la reconnaissance de protocole pour Antivirus Microsoft Defender.
-keywords: Antivirus Microsoft Defender logiciel anti-programme malveillant, sécurité, defender, reconnaissance de protocole
+keywords: Antivirus Microsoft Defender, anti-programme malveillant, sécurité, defender, reconnaissance de protocole
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -43,7 +43,7 @@ Ce paramètre de stratégie vous permet de configurer la reconnaissance de proto
 
 4. Pour modifier la stratégie, sélectionnez le lien **modifier le paramètre de stratégie.**
 
-5. Sélectionnez **Activé,** puis **OK.**
+5. Sélectionnez **Activé,** puis **OK**.
 
 6. Déployez votre objet de stratégie de groupe mis à jour. Voir [La Console de gestion des stratégies de groupe.](/windows/win32/srvnodes/group-policy)
 

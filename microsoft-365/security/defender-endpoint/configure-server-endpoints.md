@@ -100,7 +100,7 @@ Pour Windows Server 2008 R2 SP1 et Windows Server 2012 R2 : configurer et mettre
 
 2. À l’aide de l’ID d’espace de travail et de la clé d’espace de travail obtenus dans la procédure précédente, choisissez l’une des méthodes d’installation suivantes pour installer l’agent sur Windows serveur :
     - [Installez manuellement l’agent à l’aide du programme d’installation.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) 
-    Dans la page **Options de configuration** de l’agent, Connecter **l’agent dans Azure Log Analytics (OMS).**
+    Dans la page **Options d’installation** de l’agent, **Connecter l’agent dans Azure Log Analytics (OMS).**
     - [Installez l’agent à l’aide de la ligne de commande.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)
     - [Configurez l’agent à l’aide d’un script.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)
 
@@ -143,7 +143,7 @@ Vous pouvez intégrer Windows Server 2012 R2 et Windows Server 2016 en utilisant
 
 Après avoir effectué les étapes d’intégration, vous devez configurer et mettre à jour [System Center Endpoint Protection clients.](#configure-and-update-system-center-endpoint-protection-clients)
 
-## <a name="windows-server-sac-version-1803-windows-server-2019-and-windows-server-2019-core-edition"></a>Windows Server (SAC) version 1803, Windows Server 2019 et Windows Server 2019 Core
+## <a name="windows-server-sac-version-1803-windows-server-2019-and-windows-server-2019-core-edition"></a>Windows Server (SAC) version 1803, Windows Server 2019 et Windows Server 2019 Core Edition
 
 Vous pouvez intégrer Windows Server (SAC) version 1803, Windows Server 2019 ou Windows Server 2019 Core edition en utilisant les méthodes de déploiement suivantes :
 
@@ -199,13 +199,13 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
     > [!NOTE]
     > L’intégration entre Azure Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Windows serveurs surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes defender pour point de terminaison seront disponibles dans la console Azure Defender.
+- Windows serveurs surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes Defender pour le point de terminaison seront disponibles dans la console Azure Defender.
 - Enquête sur le serveur : les clients Azure Defender peuvent accéder Centre de sécurité Microsoft Defender pour effectuer une enquête détaillée afin de découvrir l’étendue d’une violation potentielle.
 
 > [!IMPORTANT]
 > - Lorsque vous utilisez Azure Defender pour surveiller les serveurs, un client Defender pour point de terminaison est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et anglais).<br>
 Les données collectées par Defender pour endpoint sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
-> - Si vous utilisez Defender pour endpoint avant d’utiliser Azure Defender, vos données seront stockées à l’emplacement spécifié lors de la création de votre client, même si vous intégrez Azure Defender ultérieurement.
+> - Si vous utilisez Defender pour Endpoint avant d’utiliser Azure Defender, vos données seront stockées à l’emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez Azure Defender ultérieurement.
 > - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client. <br>
 La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 Cloud de la communauté du secteur public clients.
 
@@ -255,7 +255,7 @@ Pour mettre hors service Windows serveur, vous pouvez utiliser l’une des méth
 
 1. Obtenez votre ID d’espace de travail :
 
-   1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration.**
+   1. Dans le volet de navigation, sélectionnez  >  **Paramètres’intégration.**
 
    1. Sélectionnez **Windows Server 2008 R2 SP1, 2012 R2 et 2016** comme système d’exploitation et obtenez votre ID d’espace de travail :
 

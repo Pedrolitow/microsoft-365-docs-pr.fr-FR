@@ -43,7 +43,7 @@ Lorsque vous êtes prêt à exécuter l’Assistant Installation et à déplacer
   
 - Liste des personnes que vous souhaitez ajouter à Microsoft 365. Même si vous les avez déjà ajoutés à Microsoft 365, si vous actualisez vos informations de domaine, vous devez entrer leurs noms ici.
 
-- Comment informer vos employés de leur ID d’utilisateur et mot de passe pour qu’ils se connectent. Comptez-vous les appeler pour leur fournir ces informations ? Comptez-vous envoyer celles-ci à leur adresse de courrier personnelle ? Ils n’ont pas accès à leur messagerie, vous ne pouvez donc pas l’utiliser.
+- Comment vous allez informer vos employés de leur ID d’utilisateur et mot de passe afin qu’ils se connectent. Comptez-vous les appeler pour leur fournir ces informations ? Comptez-vous envoyer celles-ci à leur adresse de courrier personnelle ? Ils n’ont pas accès à leur messagerie, vous ne pouvez donc pas l’utiliser.
 
 - Si vous avez un nom de domaine pour votre organisation (par exemple, **contoso.com)** et que vous envisagez d’utiliser la messagerie Électronique Microsoft, vous devez savoir où votre domaine est enregistré et avoir des informations de connectez-vous.
 
@@ -54,7 +54,7 @@ L’Assistant Installation vous permet d’installer les applications Microsoft 
 > [!NOTE]
 > Si vous devez attribuer des rôles d’administrateur [dans Microsoft 365](../add-users/assign-admin-roles.md) entreprise aux utilisateurs que vous ajoutez dans l’Assistant, vous pouvez le faire ultérieurement sur la page **Utilisateurs.** 
   
-Si vous n’avez pas terminé l’Assistant Installation, vous pouvez effectuer les tâches d’installation à tout moment à partir du programme d’installation [du Centre d’administration.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >   À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser les mots de passe et faire d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la **page** d’installation, voir Différences entre l’Assistant Microsoft 365 configuration et la [page d’installation.](o365-setup-wizard-and-setup-page.md)
+Si vous n’avez pas terminé l’Assistant Installation, vous pouvez effectuer les tâches d’installation à tout moment à partir du programme d’installation [du Centre d’administration.](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >   À partir de là, vous pouvez migrer le courrier électronique et les contacts à partir d’un autre service de messagerie, modifier le domaine de votre compte d’administrateur, gérer vos informations de facturation, ajouter ou supprimer des utilisateurs, réinitialiser des mots de passe et faire d’autres fonctions professionnelles. Pour plus d’informations sur les différences entre l’Assistant Installation et la **page** d’installation, voir Différences entre l’Assistant Microsoft 365 configuration et la [page d’installation.](o365-setup-wizard-and-setup-page.md)
 
 Si vous êtes bloqué à un moment quelconque, contactez-nous. [Nous sommes là pour vous aider.](../../business-video/get-help-support.md)
   
@@ -74,7 +74,7 @@ Il existe quelques scénarios qui incluent la migration de données ou d’utili
 
 - **Voulez-vous passer à Microsoft 365 progressivement ?** Si vous souhaitez passer à Microsoft 365 par étapes, ignorez l’exécution de l’Assistant Installation de Microsoft 365 et envisagez d’adopter Microsoft 365 fonctionnalités dans l’ordre suivant :
 
-    1. [Ajoutez vos employés à Microsoft 365](../add-users/add-users.md) afin qu’ils peuvent télécharger et installer les Office applications.
+    1. [Ajoutez vos employés à Microsoft 365](../add-users/add-users.md) pour qu’ils téléchargent et installent les Office applications.
 
     2. [Téléchargez et installez les applications Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) afin d'utiliser Word, Excel et PowerPoint sur votre ordinateur et vos appareils.
 
@@ -102,7 +102,7 @@ Si vous comptez utiliser Microsoft 365 pour votre courrier électronique :
 
 - Une fois votre hôte de domaine mis à jour, les modifications prennent généralement effet après une heure ou deux. Toutefois, sachez que la mise à jour sur Internet des modifications peut prendre jusqu’à 72 heures.
 
-- Étant donné que vous pouvez avoir un temps d’arrêt du courrier électronique, nous vous recommandons de passer à la messagerie Électronique Microsoft le soir ou le week-end lorsque vous recevez moins d’e-mails.
+- Étant donné que vous pouvez avoir un temps d’arrêt du courrier électronique, nous vous recommandons de passer à la messagerie Microsoft le soir ou le week-end lorsque vous recevez moins d’e-mails.
 
 ### <a name="plan-to-move-your-existing-email-contacts-and-calendar"></a>Planifier le déplacement de vos courriers, contacts et calendrier existants
   
@@ -115,7 +115,7 @@ Si vous comptez utiliser Microsoft 365 pour votre compte de messagerie, vous pou
 
 ## <a name="plan-for-file-storage-and-migration"></a>Planifier le stockage et la migration de fichiers
 
-Microsoft 365 offre un stockage cloud pour les individus, les petites organisations et les entreprises. Pour obtenir des instructions sur les l’endroit où stocker, voir Où stocker [des documents dans Microsoft 365](../../business-video/store-files.md).
+Microsoft 365 offre un stockage cloud pour les individus, les petites organisations et les entreprises. Pour obtenir des instructions sur les l’endroit où stocker, voir [Où stocker des documents dans Microsoft 365](../../business-video/store-files.md).
   
 - **Vous pouvez déplacer des centaines de fichiers vers** [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) ou vers un [site d SharePoint’équipe.](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242) Vous pouvez charger jusqu'à 100 fichiers à la fois. Évitez de charger des fichiers d'une taille supérieure à 2 Go, soit la taille de fichier maximale par défaut.
   
@@ -123,7 +123,7 @@ Microsoft 365 offre un stockage cloud pour les individus, les petites organisati
   
 ## <a name="plan-for-teams"></a>Planifier les Teams
 
-Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide de Teams sans configuration spéciale. Pour plus d’informations, [consultez La](/MicrosoftTeams/get-started-with-teams-quick-start)mise en Microsoft Teams .
+Vous pouvez utiliser Microsoft Teams pour appeler d’autres personnes de votre organisation qui font appel à votre abonnement. Par exemple, si votre organisation compte 10 personnes, vous pouvez vous appeler et vous instantanér à l’aide de Teams sans configuration spéciale. Pour plus d’informations, [consultez La mise en Microsoft Teams](/MicrosoftTeams/get-started-with-teams-quick-start).
 
 Pour les grandes organisations ou si vous débutez à partir de déploiements Skype Entreprise, locaux ou hybrides, voir comment déployer [Microsoft Teams](/MicrosoftTeams/how-to-roll-out-teams).
   

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841185"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861718"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
@@ -42,13 +42,17 @@ Microsoft Defender for Endpoint Device Control Removable Stockage Access Control
 ## <a name="prepare-your-endpoints"></a>Préparer vos points de terminaison
 
 Déployez le contrôle d Stockage d’accès amovible sur Windows 10 qui ont un client anti-programme malveillant version **4.18.2103.3** ou ultérieure.
-1. **4.18.2104** ou version ultérieure : ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur filepath
+1. **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur des chemins d’fichiers, ComputerSid
 
 2. **4.18.2105** ou version ultérieure : ajouter la prise en charge des caractères génériques pour HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, la combinaison d’un utilisateur spécifique sur un ordinateur spécifique, la prise en charge du SSD (Un SSD Extrême SanDisk)/USB Attached SCSI (UAS)
 
 :::image type="content" source="images/powershell.png" alt-text="Interface PowerShell":::
 
+   > [!NOTE]
+   > Aucun des Sécurité Windows n’a besoin d’être actif, vous pouvez exécuter le contrôle d’accès Stockage amovible indépendamment de l’état Sécurité Windows’utilisateur.
+
 ## <a name="policy-properties"></a>Propriétés de stratégie
+
 
 Vous pouvez utiliser les propriétés suivantes pour créer un groupe de stockage amovible :
 
@@ -68,7 +72,7 @@ Pour chaque propriété d’appareil, voir la section **Propriétés de** l’ap
         - CdRomDevices
     - DeviceId
     - HardwareId
-    - InstancePathId : InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Le numéro à la fin (par **exemple,&0**) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour obtenir de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
+    - InstancePathId : InstancePathId est une chaîne qui identifie de manière unique l’appareil dans le système, par exemple USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Le numéro à la fin (par **exemple,&0**) représente l’emplacement disponible et peut changer d’appareil à appareil. Pour de meilleurs résultats, utilisez un caractère générique à la fin. Par exemple, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - VID
@@ -80,12 +84,14 @@ Pour chaque propriété d’appareil, voir la section **Propriétés de** l’ap
         
 **Nom de la propriété : MatchType** 
 
-1. Description : lorsqu’il existe plusieurs propriétés d’appareil utilisées dans DescriptorIDList, MatchType définit la relation.
+1. Description : lorsque plusieurs propriétés d’appareil sont utilisées dans DescriptorIDList, MatchType définit la relation.
 
 1. Options :
     - MatchAll : tous les attributs sous la relation DescriptorIdList seront **And** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système vérifie si la clé USB répond aux deux valeurs.
 
     - MatchAny : les attributs sous la relation DescriptorIdList seront **Or** ; par exemple, si l’administrateur place DeviceID et InstancePathID, pour chaque clé USB connectée, le système appliquera l’application tant que la clé USB aura une valeur **DeviceID** ou **InstanceID** identique.
+
+
 
 Voici les propriétés de stratégie de contrôle d’accès :
 
@@ -124,6 +130,14 @@ L’exemple suivant illustre l’utilisation de GroupID :
     - AuditDenied : définit la notification et l’événement lorsque l’accès est refusé ; doit fonctionner avec **l’entrée** de refus.
 
 Lorsqu’il existe des types de conflit pour le même média, le système applique le premier de la stratégie. Un exemple de type de conflit est **Allow** et **Deny**.
+
+**Nom de la propriété : Sid**
+
+1. Description : définit si cette stratégie est appliquée à un utilisateur ou à un groupe d’utilisateurs spécifique ; une entrée peut avoir un sid et une entrée sans sid signifie appliquer la stratégie sur l’ordinateur.
+
+**Nom de la propriété : ComputerSid**
+
+1. Description : définit si cette stratégie est appliquée sur un ordinateur ou un groupe d’ordinateurs spécifique ; Une entrée peut avoir un maximum d’un ComputerSid et une entrée sans ComputerSid signifie appliquer la stratégie sur l’ordinateur. Si vous souhaitez appliquer une entrée à un utilisateur spécifique et à un ordinateur spécifique, ajoutez Sid et ComputerSid dans la même entrée.
 
 **Nom de la propriété : Options**
 

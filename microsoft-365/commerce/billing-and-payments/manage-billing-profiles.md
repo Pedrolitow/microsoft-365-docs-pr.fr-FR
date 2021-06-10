@@ -59,7 +59,7 @@ Les rôles sur les profils de facturation sont autorisés à contrôler les acha
 Chaque profil de facturation inclut les informations suivantes :
 
 - **Nom et état du profil de facturation** &ndash; Nom unique du profil de facturation et si le profil de facturation est actif ou désactivé pour l’achat.
-- **Paramètres de facture** &ndash; Devise basée sur le pays du compte de facturation, les informations sur la fréquence et la date de facturation, l’option de réception de factures en pièces jointes et un champ de numéro de bon de visite facultatif
+- **Paramètres de facture** &ndash; Devise en fonction du pays du compte de facturation, des informations sur la fréquence et la date de facturation, l’option de réception de factures en pièces jointes et un champ de numéro de bon de visite facultatif
 - **Modes de paiement** &ndash; Indique le mode de paiement principal et de sauvegarde, le caser, pour le profil
 - **Compte de facturation** &ndash; Nom du compte de facturation lié au profil. Pour plus d’informations sur les comptes de facturation, voir [Comprendre les comptes de facturation.](../manage-billing-accounts.md)
 - **Informations de contact** &ndash; Adresse de facturation, nom de contact et adresse e-mail
@@ -67,7 +67,7 @@ Chaque profil de facturation inclut les informations suivantes :
 
 > [!NOTE]
 >
-> Vous pouvez uniquement attribuer des rôles de profil de facturation aux utilisateurs de votre organisation.
+> Vous ne pouvez attribuer des rôles de profil de facturation qu’aux utilisateurs de votre organisation.
 
 ## <a name="need-help-contact-support"></a>Besoin d’aide ? Contacter le support technique
 
@@ -75,7 +75,7 @@ Si vous avez des questions ou avez besoin d’aide sur vos frais Azure, créez u
 
 Si vous avez des questions ou si vous avez besoin d’aide sur votre profil de facturation dans Microsoft 365 centre d’administration, [contactez le support technique.](../../business-video/get-help-support.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Comment payer votre abonnement avec un profil de facturation](pay-for-subscription-billing-profile.md) (article)\
 [Comprendre les comptes de facturation](../manage-billing-accounts.md) (article)\

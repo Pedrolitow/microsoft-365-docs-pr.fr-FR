@@ -63,7 +63,7 @@ Pendant l’exécution d’un examen, toutes les autres alertes générées à p
 
 Si une entité incriminée est vue dans un autre appareil, le processus d’examen automatisé étend son étendue pour inclure cet appareil, et un manuel de sécurité général démarre sur cet appareil. Si au moins 10 appareils sont trouvés au cours de ce processus d’expansion à partir de la même entité, cette action d’expansion nécessite une approbation et est visible sous l’onglet **Actions** en attente.
 
-## <a name="how-threats-are-remediated"></a>Comment les menaces sont corrigés
+## <a name="how-threats-are-remediated"></a>Comment les menaces sont-elles corrigés ?
 
 Lorsque des alertes sont déclenchées et qu’une enquête automatisée s’exécute, un verdict est généré pour chaque élément de preuve examiné. Les verdicts peuvent être 
 - *Malveillant*;
@@ -87,13 +87,13 @@ Votre organisation doit avoir Defender pour le point de terminaison (voir [Minim
 Actuellement, AIR prend uniquement en charge les versions de système d’exploitation suivantes :
 - Windows Server 2019
 - Windows 10, version 1709 (os Build 16299.1085 avec [KB4493441)](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)ou version ultérieure
-- Windows 10, version 1803 (os Build 17134.704 avec [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)ou version ultérieure
+- Windows 10, version 1803 (os build 17134.704 avec [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)ou version ultérieure
 - Windows 10, version [1803 ou](/windows/release-information/status-windows-10-1809-and-windows-server-2019) ultérieure
 
 ## <a name="next-steps"></a>Prochaines étapes
 
 - [En savoir plus sur les niveaux d’automatisation](automation-levels.md)
-- [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender pour le point de terminaison](https://aka.ms/MDATP-IR-Interactive-Guide)
+- [Consultez le guide interactif : Examiner et corriger les menaces avec Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurer les fonctionnalités automatisées d’examen et de correction dans Microsoft Defender pour le point de terminaison](configure-automated-investigations-remediation.md)
 
 ## <a name="see-also"></a>Voir aussi

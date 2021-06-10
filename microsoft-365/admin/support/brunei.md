@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296851"
 ---
-# <a name="contact-support-for-brunei"></a>Contacter le support pour le Brunei
+# <a name="contact-support-for-brunei"></a>Contacter le support technique pour le Brunei
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 

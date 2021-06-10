@@ -31,7 +31,7 @@ ms.locfileid: "52297103"
 Préparez-vous à mettre en place vos comptabilité et bloquer un segment de temps sur votre calendrier : le transfert de données entre deux comptes Microsoft 365 est un processus manuel, compliqué et chronophage. Il ne s’agit pas d’un processus automatisé ou pris en charge. Nous allons vous aider à démarrer.
   
 > [!CAUTION]
-> Il y aura des temps d’in Microsoft 365 pendant le processus pendant lequel le courrier électronique, les Skype Entreprise et un site web public hébergé sur Microsoft 365 ne fonctionneront pas. Les utilisateurs obtiennent de nouveaux noms d’utilisateur et mots de passe, et ils doivent réinitialiser Outlook.
+> Il y aura un temps d’in Microsoft 365 pendant le processus pendant lequel le courrier électronique, les Skype Entreprise et un site web public hébergé sur Microsoft 365 ne fonctionneront pas. Les utilisateurs obtiennent de nouveaux noms d’utilisateur et mots de passe, et ils doivent réinitialiser Outlook.
 
 **Ne transférez les données manuellement à l’aide des instructions de cette rubrique que si l’une des procédures suivantes s’applique :**
   
@@ -42,13 +42,13 @@ Préparez-vous à mettre en place vos comptabilité et bloquer un segment de tem
 - Vous devez combiner plusieurs abonnements en un nouvel abonnement.
 
 > [!IMPORTANT]
-> Si vous devez modifier votre [plan](../../commerce/subscriptions/switch-to-a-different-plan.md) d’abonnement et que vous pouvez utiliser l’Assistant Changer de plan, ou si vous devez transférer vers un nouveau plan d’abonnement dans la même famille d’abonnements même lorsque l’Assistant Changer de plan ne fonctionne pas, vous n’avez pas besoin de transférer manuellement vos données et il n’y a pas de temps d’arrêt.
+> Si vous avez besoin de modifier votre [plan](../../commerce/subscriptions/switch-to-a-different-plan.md) d’abonnement et que vous pouvez utiliser l’Assistant Changer de plan, ou si vous devez transférer vers un nouveau plan d’abonnement dans la même famille d’abonnements même lorsque l’Assistant Changer de plan ne fonctionne pas, vous n’avez pas besoin de transférer manuellement vos données et il n’y a pas de temps d’arrêt.
 
 |**Tâches**|**Étapes**|
 |:-----|:-----|
 |Achetez le plan vers qui vous souhaitez passer.  <br/> |Lorsque vous vous inscrivez, vous spécifiez le nom de la société à utiliser dans les noms de domaine initiaux : *votre* société .onmicrosoft.com,  votre société -public.sharepoint.com et votre entreprise *.sharepoint.com.* Vous devez utiliser un nom de  *votre*  entreprise différent de celui des abonnements existants.  <br/> > [!NOTE]> il faut généralement plusieurs mois après l’annulation d’un abonnement pour  libérer les noms de domaine initiaux qui utilisent votre entreprise à partir de nos systèmes. Même si vous prévoyez d’enregistrer toutes vos données à partir de  votre ancien abonnement Microsoft 365 et d’annuler cet abonnement, l’ancienne valeur de votre entreprise n’est pas immédiatement disponible pour une utilisation dans un nouvel abonnement.           |
 |Supprimez votre domaine personnalisé de votre ancien Microsoft 365 abonnement.  <br/> | Suivez les [étapes](remove-a-domain.md) requises avant de supprimer un domaine pour supprimer le nom de domaine des adresses de messagerie des utilisateurs et supprimer les enregistrements DNS pour le courrier électronique et Lync pour le domaine personnalisé. Si vous hébergez votre site web public Microsoft 365, vous devez également supprimer l’enregistrement CNAME qui pointe vers celui-ci.  <br/> > [!IMPORTANT]> Après avoir supprimé l’enregistrement MX qui approvisionnement le courrier électronique vers ce domaine personnalisé, le courrier électronique cesse de fonctionner tant que vous n’avez pas ajouté le domaine à votre nouveau compte, que vous avez installé le nouvel enregistrement MX et que vous avez installé vos utilisateurs. Lorsque vous supprimez les enregistrements DNS pour Lync, Lync cesse de fonctionner. Une fois que vous avez supprimé l’enregistrement CNAME qui pointe vers votre site web public, il ne sera pas disponible.           [Supprimez le domaine.](remove-a-domain.md)  <br/> |
-|Configurer votre domaine personnalisé pour votre nouvel abonnement et configurer vos utilisateurs.  <br/> | Configurer votre nouvel abonnement, y compris la création des enregistrements DNS requis pour votre domaine personnalisé.  <br/>  Créez vos utilisateurs, avec des adresses de messagerie sur votre domaine personnalisé.  <br/> |
+|Configurer votre domaine personnalisé pour votre nouvel abonnement et configurer vos utilisateurs.  <br/> | Configurer votre nouvel abonnement, y compris créer les enregistrements DNS requis pour votre domaine personnalisé.  <br/>  Créez vos utilisateurs, avec des adresses de messagerie sur votre domaine personnalisé.  <br/> |
 |Transférer des données de votre ancien abonnement vers votre nouvel abonnement.  <br/> | Connectez-vous aux deux comptes dans des fenêtres de navigateur distinctes :  <br/>  Cliquez avec le bouton droit sur l’icône de votre navigateur et ouvrez deux fenêtres de navigateur privées. Vous pouvez utiliser des informations d’identification différentes dans les deux fenêtres pour vous inscrire sur les deux comptes.  <br/> [Transférer les paramètres d’administration entre les abonnements](#email) <br/> [Transférer la structure et les données du site d’équipe](#transfer-team-site-structure-and-data) <br/> [Transfert d’un site web public entre les abonnements](#transfer-a-public-website-between-subscriptions) <br/> [Transférer les paramètres d’administration entre les abonnements](#email) <br/> |
 |Annulez l’abonnement pour l’offre avec qui vous avez terminé en appelant le Support Microsoft Microsoft 365.  <br/> | Vérifiez que votre nouvel abonnement fonctionne et que toutes les données ont été transférées.  <br/>  [Contactez le support technique pour](../../business-video/get-help-support.md) annuler votre ancien abonnement.  <br/> |
 
@@ -62,10 +62,10 @@ Pour Microsoft 365 Entreprise et Microsoft 365 moyenne entreprise :
   
 |**Location**|**Objectif**|
 |:-----|:-----|
-|**Administrateur** \> **Microsoft 365** \> **Paramètres de service** <br/> |Sélectionnez chaque onglet pour les paramètres de messagerie, de sites, de Lync, de logiciels utilisateur, de mots de passe, de communauté, de gestion des droits et de mobilité.  <br/> |
+|**Administrateur** \> **Microsoft 365** \> **Paramètres de service** <br/> |Sélectionnez chaque onglet pour les paramètres de messagerie, sites, Lync, logiciels utilisateur, mots de passe, communauté, gestion des droits et mobile.  <br/> |
 |**Administrateur** \> **Exchange** <br/> | Exchange Online paramètres  <br/> |
 |**Administrateur** \> **SharePoint** <br/> | SharePoint Paramètres en ligne  <br/> |
-|**Administrateur** \> **Skype Entreprise** <br/> |Paramètres Skype Entreprise supplémentaires  <br/> |
+|**Administrateur** \> **Skype Entreprise** <br/> |Paramètres de Skype Entreprise supplémentaires  <br/> |
 
 Pour Microsoft 365 petite entreprise
   
@@ -95,17 +95,17 @@ Il existe plusieurs façons d’enregistrer ou de transférer des données de si
 
 - Pour transférer des données de liste, enregistrez un modèle de [liste](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)et utilisez le modèle enregistré pour re-créer la liste sur le nouveau site.
 
-- Pour enregistrer une bibliothèque de documents ou un contenu de liste à partir d’un environnement SharePoint Online (OneDrive Entreprise ou sites d’équipe) vers des partages de fichiers ou sur un ordinateur local, voir Informations sur la migration manuelle du contenu [SharePoint Online.](/sharepoint/troubleshoot/migration-tool/content-manual-migration)
+- Pour enregistrer une bibliothèque de documents ou du contenu de liste à partir d’un environnement SharePoint Online (OneDrive Entreprise ou sites d’équipe) vers des partages de fichiers ou sur un ordinateur local, voir Informations sur la migration manuelle du contenu [SharePoint Online.](/sharepoint/troubleshoot/migration-tool/content-manual-migration)
 
 ## <a name="transfer-users-data-between-subscriptions"></a>Transférer les données des utilisateurs entre les abonnements
 
 ### <a name="email"></a>Messagerie:
 
-Demandez aux utilisateurs [de déplacer leurs messages électroniques, contacts, tâches](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) et informations de calendrier après avoir installé votre nouvel abonnement. Ils peuvent obtenir leur ancien courrier électronique à l’aide de leur nom d’utilisateur initial, par exemple sue@contoso.onmicrosoft.com.
+Demandez aux utilisateurs [de déplacer leurs messages électroniques, contacts, tâches](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) et informations de calendrier après avoir installé votre nouvel abonnement. Ils peuvent obtenir leur ancien e-mail à l’aide de leur nom d’utilisateur initial, par exemple sue@contoso.onmicrosoft.com.
   
 ### <a name="onedrive-for-business-data"></a>OneDrive Pour les données métiers :
 
-Demandez aux utilisateurs de [copier/synchroniser OneDrive Entreprise contenu](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)sur leur ordinateur, puis de l’ajouter à leur nouvel abonnement.
+Demandez aux utilisateurs de [copier/synchroniser OneDrive Entreprise contenu sur](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)leur ordinateur, puis de l’ajouter à leur nouvel abonnement.
 
 ### <a name="onenote"></a>OneNote 
 
