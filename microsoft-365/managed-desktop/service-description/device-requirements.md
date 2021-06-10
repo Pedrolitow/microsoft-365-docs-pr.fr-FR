@@ -1,7 +1,7 @@
 ---
 title: Configuration requise de l’appareil
 description: Résumé de la configuration matérielle et logicielle minimale requise pour que les appareils fonctionnent Bureau géré Microsoft
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -74,7 +74,7 @@ Si l’appareil a été effectué après le 1er juillet 2020, il doit également
 
 ## <a name="recommended-features"></a>Fonctionnalités recommandées
 
-Vos utilisateurs auront une bien meilleure expérience si vous choisissez les appareils qui disposent de ces fonctionnalités :
+Vos utilisateurs auront une bien meilleure expérience si vous choisissez des appareils dotés de ces fonctionnalités :
 
 - Soit un processeur intel vPro-platform, soit un processeur de Pro AMD Ryzen
 - Lecteur de démarrage du type SSD avec une capacité d’au moins 256 Go

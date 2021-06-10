@@ -21,7 +21,7 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Commencez à planifier votre mise à niveau à partir de serveurs et d’applications clientEs Office 2010, car la prise en charge se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
+description: Commencez à planifier votre mise à niveau à partir Office 2010 et des applications clientes, car la prise en charge se termine bientôt et les contrats de support personnalisés ne sont pas disponibles.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 85a6efac9c7e622157b01b02c5d9c38a1e74d5e4
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -40,15 +40,15 @@ La prise en charge de SharePoint 2010 et de Project Server 2010 se termine le **
 
 Lorsque vous planifiez votre mise à niveau, envisagez de passer à Microsoft 365.
 
-- Microsoft 365 propose des services basés sur le cloud pour les produits serveur Office 2010, tels que Exchange Server et SharePoint Server, et des services, tels que Teams et OneDrive Entreprise.
+- Microsoft 365 offre des services cloud pour les produits serveur Office 2010, tels que Exchange Server et SharePoint Server, et des services, tels que Teams et OneDrive Entreprise.
 
-- Microsoft 365 Apps for enterprise (précédemment nommé *Office 365 ProPlus),* qui est inclus dans Microsoft 365 E3 et E5, est l’ensemble des applications clientes Office que vous installez sur votre appareil local. Ils sont mis à jour avec de nouvelles fonctionnalités de productivité et de sécurité régulièrement à partir du cloud Microsoft.
+- Applications Microsoft 365 pour les grandes entreprises (précédemment nommé *Office 365 ProPlus*), qui est inclus avec Microsoft 365 E3 et E5, est l’ensemble des applications clientes Office que vous installez sur votre appareil local. Ils sont mis à jour avec de nouvelles fonctionnalités de productivité et de sécurité régulièrement à partir du cloud Microsoft.
 
 Pour obtenir un résumé visuel des options de mise à niveau, de migration et de migration vers le cloud pour les clients et serveurs Office 2010 et Windows 7, consultez l’affiche de fin du [support](../downloads/Office2010Windows7EndOfSupport.pdf)technique.
 
-[![Fin de la prise en charge des clients et serveurs Office 2010 et de l’affiche Windows 7](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![End of support for Office 2010 clients and servers and Windows 7 poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Cette affiche d’une page récapitule les différents chemins que vous pouvez prendre pour gérer les produits client et serveur Office 2010 et Windows 7 à partir de la fin de la prise en charge. Les chemins d’accès préférés et la prise en charge des options dans Microsoft 365 Entreprise sont mis en évidence.
+Cette affiche d’une page récapitule les différents chemins que vous pouvez prendre pour gérer les produits client et serveur Office 2010 et Windows 7 à partir de la fin de la prise en charge. Les chemins d’accès préférés et la prise en charge des options Microsoft 365 Entreprise sont mis en surbrillant.
 
 Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) affiche et l’imprimer au format lettre, légal ou tabloïd (11 x 17).
 
@@ -64,7 +64,7 @@ Vous pouvez également [télécharger cette](https://github.com/MicrosoftDocs/mi
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 
-Si vous utilisez les produits et applications Office 2010 à la maison, consultez [ces informations.](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)
+Si vous utilisez Office produits et applications 2010 à la maison, consultez [ces informations.](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)
 
 ## <a name="related-topics"></a>Voir aussi
 

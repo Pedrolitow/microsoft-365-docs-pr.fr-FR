@@ -28,4 +28,4 @@ ms.locfileid: "51579819"
 ---
 # <a name="what-subscription-is-right-for-your-small-business"></a>Quel abonnement est le bon pour votre petite entreprise ?
 
-Microsoft propose plusieurs offres pour les petites entreprises. Les abonnements recommandés sont Microsoft 365 Business Standard ou Microsoft 365 Business Premium avec jusqu’à 300 utilisateurs. Microsoft 365 Business Premium offre plus de fonctionnalités de sécurité que Microsoft 365 Business Standard pour un coût supplémentaire.
+Microsoft propose plusieurs offres pour les petites entreprises. Les abonnements recommandés sont Microsoft 365 Business Standard ou Microsoft 365 Business Premium 300 utilisateurs au plus. Microsoft 365 Business Premium offre plus de fonctionnalités de sécurité que Microsoft 365 Business Standard pour un coût supplémentaire.

@@ -36,9 +36,9 @@ ms.locfileid: "51579971"
 ---
 # <a name="secure-windows-10-devices"></a>Sécuriser les appareils Windows 10
 
-Cet article s’applique à Microsoft 365 Business Premium.
+Cet article s’applique aux Microsoft 365 Business Premium.
 
-[] Les paramètres que vous configurez ici font partie de la stratégie d'appareil par défaut pour Windows 10. Tous les utilisateurs qui connectent un appareil Windows 10, y compris les appareils mobiles et les PC, en se connectant avec leur compte de travail reçoivent automatiquement ces paramètres. Nous vous recommandons d'accepter la stratégie par défaut lors de l'installation et d'ajouter par la suite des stratégies qui ciblent des groupes d'utilisateurs spécifiques.
+[] Les paramètres que vous configurez ici font partie de la stratégie d'appareil par défaut pour Windows 10. Tous les utilisateurs qui connectent un Windows 10, y compris les appareils mobiles et les PC, en se connectant avec leur compte de travail reçoivent automatiquement ces paramètres. Nous vous recommandons d'accepter la stratégie par défaut lors de l'installation et d'ajouter par la suite des stratégies qui ciblent des groupes d'utilisateurs spécifiques.
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Paramètres de sécurisation des appareils Windows 10
 

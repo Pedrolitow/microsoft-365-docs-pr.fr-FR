@@ -33,7 +33,7 @@ ms.locfileid: "52245959"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -46,13 +46,13 @@ Ce mode permet à chaque appareil intégré à Microsoft Defender for Endpoint d
 Vous avez la possibilité de désactiver la découverte d’appareils via la page [Fonctionnalités avancées.](advanced-features.md) Toutefois, vous perdrez la visibilité sur les appareils non utilisés dans votre réseau. 
 
 ## <a name="what-is-standard-discovery-mode"></a>Qu’est-ce que le mode de découverte standard ?
- Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour le point de terminaison peuvent sonder activement les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Ce mode est vivement recommandé pour créer un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous n’aurez probablement qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
+ Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour point de terminaison peuvent sonder activement les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Ce mode est vivement recommandé pour créer un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous n’aurez probablement qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Puis-je contrôler quels appareils effectuent la découverte standard ?
- Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (appareils actuellement Windows 10 uniquement) ou sélectionner un sous-ensemble ou sous-ensemble de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
+ Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (appareils actuellement Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>Puis-je exclure des appareils non utilisés de la liste d’inventaire des appareils ?
-Oui, vous pouvez appliquer des filtres pour exclure les appareils nonmanagés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés. 
+Oui, vous pouvez appliquer des filtres pour exclure les appareils non utilisés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés. 
 
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>Quels appareils intégrés peuvent effectuer la découverte ?
@@ -84,7 +84,7 @@ Oui, vous pouvez appliquer des filtres pour exclure les appareils nonmanagés de
  L’analyse active peut générer jusqu’à 5K de trafic entre l’appareil intégré et l’appareil sondé, chaque tentative d’analyse
 
 ## <a name="why-is-there-a-discrepancy-between-can-be-onboarded-devices-in-the-device-inventory-and-the-number-of-devices-to-onboard-in-the-dashboard-tile"></a>Pourquoi existe-t-il une différence entre les appareils « peuvent être intégrés » dans l’inventaire des appareils et le nombre d’appareils à intégrer dans la vignette du tableau de bord ?
-Vous remarquerez peut-être des différences entre le nombre d’appareils répertoriés sous « Peut être intégré » dans l’inventaire des appareils, la recommandation de sécurité « intégration à Microsoft Defender pour point de terminaison » et le widget de tableau de bord « appareils à intégrer ».
+Vous remarquerez peut-être des différences entre le nombre d’appareils répertoriés sous « peut être intégré » dans l’inventaire des appareils, la recommandation de sécurité « intégration à Microsoft Defender pour point de terminaison » et le widget de tableau de bord « appareils à intégrer ».
 
  La recommandation de sécurité et le widget de tableau de bord sont pour les appareils stables dans le réseau ; à l’exclusion des appareils éphémères, des appareils invités et d’autres. L’idée est de recommander sur les appareils persistants, ce qui implique également le score de sécurité global de l’organisation.
 

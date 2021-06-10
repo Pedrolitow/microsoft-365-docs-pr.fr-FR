@@ -1,6 +1,6 @@
 ---
 title: Inscrivez vous-même les nouveaux appareils
-description: Inscrivez vous-même les appareils afin qu’ils soient gérés Bureau géré Microsoft
+description: Inscrivez vous-même les appareils afin qu’ils soient gérés par Bureau géré Microsoft
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -61,7 +61,7 @@ Vous pouvez utiliser le script [ PowerShellGet-WindowsAutoPilotInfo.ps1](https:/
 1. Sur un appareil autre que celui que vous inscrivez, insérez un lecteur USB.
 2. Ouvrez une invite PowerShell avec des droits d’administration.
 3. Exécuter `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience de configuration.* Si vous démarrez accidentellement l’installation, vous devez réinitialiser ou réinitialiser l’appareil.
+4. Activer l’appareil que vous inscrivez, mais *ne démarrez pas l’expérience d’installation.* Si vous démarrez accidentellement l’expérience d’installation, vous devez réinitialiser ou réinitialiser l’appareil.
 5. Insérez le lecteur USB, puis appuyez sur Shift + F10.
 6. Ouvrez une invite PowerShell avec des droits d’administration, puis exécutez `cd <pathToUsb>` .
 7. Exécuter `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
@@ -122,7 +122,7 @@ Vous pouvez surveiller la progression de l’inscription de l’appareil sur la 
 
 Si votre appareil est issu d’un fournisseur Bureau géré Microsoft partenaire, l’image doit être correcte.
 
-Vous pouvez également appliquer l’image vous-même si vous préférez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
+Vous pouvez également appliquer l’image vous-même si vous le souhaitez. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
 ### <a name="autopilot-group-tag"></a>Balise de groupe Autopilot
 

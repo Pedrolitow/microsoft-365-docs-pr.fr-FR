@@ -28,7 +28,7 @@ ms.locfileid: "52822237"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Examiner, résoudre et résoudre les problèmes eDiscovery courants
 
-Cette rubrique traite des étapes de dépannage de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
+Cette rubrique traite des étapes de résolution des problèmes de base que vous pouvez effectuer pour identifier et résoudre les problèmes que vous pouvez rencontrer lors d’une recherche de découverte électronique ou ailleurs dans le processus eDiscovery. La résolution de certains de ces scénarios nécessite l’aide du Support Microsoft. Les informations sur le moment où contacter le Support Microsoft sont incluses dans les étapes de résolution.
 
 ## <a name="errorissue-ambiguous-location"></a>Erreur/problème : emplacement ambigu
 
@@ -38,7 +38,7 @@ Si vous essayez d’ajouter l’emplacement de la boîte aux lettres de l’util
 
 Recherchez des utilisateurs en double ou une liste de distribution avec le même ID d’utilisateur.
 
-1. Connecter au [Centre de sécurité & conformité PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Connecter [au Centre de sécurité & conformité PowerShell.](/powershell/exchange/connect-to-scc-powershell)
 
 2. Exécutez la commande suivante pour récupérer toutes les instances du nom d’utilisateur :
 
@@ -56,9 +56,9 @@ Recherchez des utilisateurs en double ou une liste de distribution avec le même
 
 3. Si plusieurs utilisateurs sont renvoyés, recherchez et corrigez l’objet en conflit.
 
-## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue sur des emplacements spécifiques
+## <a name="errorissue-search-fails-on-specific-locations"></a>Erreur/problème : la recherche échoue à des emplacements spécifiques
 
-Une recherche de contenu ou eDiscovery peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
+Une recherche eDiscovery ou de contenu peut produire l’erreur suivante : `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![Capture d’écran d’erreur d’erreur d’un emplacement spécifique à la recherche](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -92,7 +92,7 @@ Lors de l’exécution d’une recherche de découverte électronique qui inclut
 
 ## <a name="errorissue-this-file-wasnt-exported-because-it-doesnt-exist-anymore-the-file-was-included-in-the-count-of-estimated-search-results-because-its-still-listed-in-the-index-the-file-will-eventually-be-removed-from-the-index-and-wont-cause-an-error-in-the-future"></a>Erreur/problème : ce fichier n’a pas été exporté car il n’existe plus. Le fichier a été inclus dans le nombre de résultats de recherche estimés, car il est toujours répertorié dans l’index. Le fichier sera finalement supprimé de l’index et ne provoquera pas d’erreur à l’avenir.
 
-Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et One Drive for Business. eDiscovery s’appuie sur l’index SPO pour identifier les emplacements de fichiers. Si le fichier a été supprimé mais que l’index SPO n’a pas encore été mis à jour, cette erreur peut se produire.
+Vous pouvez voir cette erreur lors de l’exécution d’une recherche de découverte électronique qui inclut SharePoint en ligne et One Drive for Business. eDiscovery s’appuie sur l’index SPO pour identifier les emplacements de fichiers. Si le fichier a été supprimé mais que l’index SPO n’a pas encore été mis à jour, cette erreur peut se produire.
 
 ### <a name="resolution"></a>Résolution 
 Ouvrez l’emplacement SPO et vérifiez que ce fichier n’y est pas.
@@ -101,7 +101,7 @@ La solution suggérée consiste à réindexer manuellement le site ou à attendr
 
 ## <a name="errorissue-this-search-result-was-not-downloaded-as-it-is-a-folder-or-other-artefact-that-cant-be-downloaded-by-itself-any-items-inside-the-folder-or-library-will-be-downloaded"></a>Erreur/problème : ce résultat de recherche n’a pas été téléchargé car il s’agit d’un dossier ou d’un autre artefact qui ne peut pas être téléchargé seul, tous les éléments à l’intérieur du dossier ou de la bibliothèque seront téléchargés.
 
-Vous pouvez voir cette erreur lors de l’exécution d’une recherche eDiscovery qui inclut SharePoint Online et One Drive for Business. Cela signifie que nous allions essayer d’exporter l’élément signalé dans l’index, mais qu’il s’est traduit par un dossier afin de ne pas l’exporter. Comme mentionné dans l’erreur, nous n’exportons pas les éléments de dossier, mais nous exportons leur contenu.
+Vous pouvez voir cette erreur lors de l’exécution d’une recherche de découverte électronique qui inclut SharePoint en ligne et One Drive for Business. Cela signifie que nous allions essayer d’exporter l’élément signalé dans l’index, mais qu’il s’est traduit par un dossier afin de ne pas l’exporter. Comme mentionné dans l’erreur, nous n’exportons pas les éléments de dossier, mais nous exportons leur contenu.
 
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Erreur/problème : la recherche échoue car le destinataire est in trouvé

@@ -1,5 +1,5 @@
 ---
-title: Ressources pour vous aider à mettre à niveau des serveurs et des clients Office 2007
+title: Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -22,7 +22,7 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Cet article fournit des ressources pour vous aider à mettre à niveau des serveurs et des clients Office 2007, à mesure que la prise en charge d’Office 2007 a pris fin.
+description: Cet article fournit des ressources pour vous aider à mettre à niveau Office serveurs et clients 2007, à mesure que la prise en charge de Office 2007 a pris fin.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 36ae7ab70b8a95a7762f426f5a0d463083e7bc71
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -31,23 +31,23 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50909285"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à mettre à niveau des serveurs et des clients Office 2007
+# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressources pour vous aider à mettre à niveau Office serveurs et clients 2007
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
 Si vous utilisez les produits et services Office 2007, sachez que la prise en charge de ces applications a pris fin. Envisagez de passer au cloud Microsoft, en commençant par Microsoft 365. Utilisez cet article comme point de départ pour passer en revue vos options et planifier votre mise à niveau.
       
-## <a name="office-2007-planning-roadmaps"></a>Feuilles de route de planification Office 2007
+## <a name="office-2007-planning-roadmaps"></a>Office de planification 2007
   
-Le support a pris fin pour les produits et services Office 2007. Les feuilles de route suivantes peuvent vous aider à planifier votre mise à niveau maintenant.
+Le support a pris fin Office produits et services 2007. Les feuilles de route suivantes peuvent vous aider à planifier votre mise à niveau maintenant.
 
 |**Planification du contenu**|**Date de fin de la prise en charge**|
 |:-----|:-----|
-|[Feuille de route de fin du support office 2007](/DeployOffice/office-2007-end-support-roadmap) <br/> |10 octobre 2017  <br/> |
-|[Feuille de route pour la fin de l’assistance pour Exchange 2007](exchange-2007-end-of-support.md) <br/> |11 avril 2017  <br/> |
-|[Feuille de route pour la fin de l’assistance pour SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
-|[Feuille de route pour la fin de l’assistance pour Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
-|[Mise à niveau à partir d’Office Communications Server](/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 janvier 2018  <br/> |
+|[Office 2007 de la feuille de route de support](/DeployOffice/office-2007-end-support-roadmap) <br/> |10 octobre 2017  <br/> |
+|[Feuille de route pour la fin de l’assistance pour Exchange 2007](exchange-2007-end-of-support.md) <br/> |11 avril 2017  <br/> |
+|[Feuille de route pour la fin de l’assistance pour SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
+|[Feuille de route pour la fin de l’assistance pour Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 octobre 2017  <br/> |
+|[Mise à niveau à Office Communications Server](/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 janvier 2018  <br/> |
 |[Feuille de route pour la fin de l’assistance pour PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 janvier 2018  <br/> |
    
 Une fois le support technique terminé pour un produit Microsoft, il n’y a plus :
@@ -56,7 +56,7 @@ Une fois le support technique terminé pour un produit Microsoft, il n’y a plu
 - Options d’assistance gratuites ou payantes disponibles (y compris les contrats de support personnalisés)
 - Nouvelles mises à jour de contenu technique en ligne
 
-Que vous s’il s’agit d’une organisation d’entreprise ou d’un particulier, vous avez plusieurs options à envisager.
+Que vous êtes une organisation d’entreprise ou un particulier, vous avez plusieurs options à envisager.
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Je suis un particulier. Que dois-je faire ?
 

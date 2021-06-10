@@ -1,6 +1,6 @@
 ---
 title: API Supprimer l’indicateur.
-description: Découvrez comment utiliser l’API Supprimer l’indicateur pour supprimer une entité d’indicateur par ID dans Microsoft Defender pour point de terminaison.
+description: Découvrez comment utiliser l’API Supprimer l’indicateur pour supprimer une entité d’indicateur par ID dans Microsoft Defender pour le point de terminaison.
 keywords: api, api publique, api pris en charge, supprimer, indicateur ti, entité, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -42,7 +42,7 @@ ms.locfileid: "52771020"
 Supprime une entité [d’indicateur](ti-indicator.md) par ID.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -74,7 +74,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 Si l’indicateur existe et a été supprimé avec succès - 204 OK sans contenu.
-If Indicator with the specified id was not found - 404 Not Found.
+Si l’indicateur avec l’ID spécifié est in trouvé - 404 - In trouvé.
 
 ## <a name="example"></a>Exemple
 

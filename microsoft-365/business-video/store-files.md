@@ -1,5 +1,5 @@
 ---
-title: Où stocker des fichiers dans Microsoft 365 pour les entreprises
+title: Où stocker des fichiers dans Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez où vous pouvez stocker des fichiers dans Microsoft 365 pour les entreprises.
+description: Découvrez où vous pouvez stocker des fichiers dans Microsoft 365 entreprise.
 ms.openlocfilehash: d1f0a35c3b9b253b8f847ae8578e26a7deec18bb
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -31,18 +31,18 @@ ms.locfileid: "51580365"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX?autoplay=false]
 
-Dans Microsoft 365, vous pouvez stocker votre travail dans OneDrive Entreprise ou sur des sites SharePoint. Chaque personne de votre organisation dispose de sa propre bibliothèque OneDrive Entreprise pour stocker des fichiers de travail personnels. Lorsque vous créez et enregistrez des fichiers dans un dossier OneDrive, ils se synchronisent avec le cloud pour que vous y accédiez depuis n’importe quel endroit (navigateur web, ordinateur ou appareil mobile). Pour le stockage de fichiers partagés et la collaboration en équipe, utilisez un site SharePoint. Les sites SharePoint sont également synchronisés avec le cloud pour faciliter l’accès à partir de n’importe où.
+Dans Microsoft 365, vous pouvez stocker votre travail dans des sites OneDrive Entreprise ou sur SharePoint sites. Chaque personne de votre organisation possède sa propre bibliothèque OneDrive Entreprise pour stocker des fichiers de travail personnels. Lorsque vous créez et enregistrez des fichiers dans un dossier OneDrive, ils sont synchronisés avec le cloud afin que vous y accédiez depuis n’importe quel endroit (navigateur web, ordinateur ou appareil mobile). Pour le stockage de fichiers partagés et la collaboration d’équipe, utilisez SharePoint site. SharePoint sites se synchronisent également avec le cloud pour faciliter l’accès à partir de n’importe où.
 
 ## <a name="try-it"></a>Essayez !
 
 ### <a name="store-or-share-files-with-onedrive"></a>Stocker ou partager des fichiers avec OneDrive
 
-1. Sur votre ordinateur, utilisez l’Explorateur de fichiers pour ouvrir OneDrive. Ou, à [partir d’Office 365,](https://www.office.com/)  **ouvrez OneDrive**  à partir du lanceur d’applications.
+1. Sur votre ordinateur, utilisez l’Explorateur de fichiers pour ouvrir OneDrive. Ou, à partir [Office 365,](https://www.office.com/) **ouvrez OneDrive** à partir du lanceur d’applications.
 2. Affichez et téléchargez des fichiers personnels, ou partagez des documents ou des dossiers en cliquant sur  **Partager,**  puis en invitant d’autres personnes à afficher les documents ou en leur envoyant un lien. [En savoir plus](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#os_type=onedrive_-_business).
 
-### <a name="collaborate-with-a-sharepoint-site"></a>Collaborer avec un site SharePoint
+### <a name="collaborate-with-a-sharepoint-site"></a>Collaborer avec un site SharePoint site web
 
-1. À [partir d’Office 365,](https://www.office.com/)ouvrez  **SharePoint**  à partir du lanceur d’applications, puis sélectionnez le Site d’équipe.
+1. À [Office 365,](https://www.office.com/)ouvrez **SharePoint** à partir du lanceur d’applications, puis sélectionnez le Site d’équipe.
 2. Ajoutez des fichiers à l’emplacement documents par défaut ou créez d’autres emplacements de documents, appelés Bibliothèques.
 
 Vous pouvez personnaliser votre site SharePoint en créant des sous-sites pour des projets, des équipes ou des clients spécifiques. Vous pouvez également ajouter le nom, le logo et l’apparence de votre entreprise, en transformant le site en intranet d’entreprise. [En savoir plus](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818).

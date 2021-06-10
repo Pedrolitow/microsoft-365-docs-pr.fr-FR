@@ -35,13 +35,13 @@ ms.locfileid: "51578590"
 
 Vous pouvez utiliser Microsoft Teams pour collaborer sur un projet avec vos employés et des personnes extérieures à l’entreprise, comme vos clients.
 
-1. Dans Teams, choisissez **Teams** dans le navigation de gauche, puis **sélectionnez Créer une équipe.**
+1. In Teams, choose **Teams** in the left navigation, and then choose **Create team**.
 2. Dans la  **zone Créer votre**  équipe, entrez un nom d’équipe, fournissez une brève description, choisissez un paramètre de confidentialité, puis choisissez  **Suivant**.
 3. Dans la  **zone Ajouter des membres,**  entrez les noms des autres employés de votre organisation. Pour les invités externes, entrez leur adresse de messagerie.
 
-    Si vous recevez un message vous qui vous demande de ne pas ajouter d’invité, visitez le Centre d’administration Teams et Skype pour activer l’accès invité.
+    Si vous recevez un message vous qui vous demande de ne pas ajouter d’invité, visitez le centre d’administration Teams et Skype pour activer l’accès invité.
 
 1. Choose  **Add** , and then choose  **Close**.
-2. Au bas de la page, entrez un court message de bienvenue à votre nouvelle équipe, puis choisissez **Envoyer** :::image type="icon" source="../media/teams-send-icon.png" border="false"::: .   
+2. En bas de la page, entrez un court message de bienvenue à votre nouvelle équipe, puis choisissez **Envoyer.** :::image type="icon" source="../media/teams-send-icon.png" border="false":::   
 
-Votre client reçoit une invitation par courrier électronique de Teams, qui l’informe qu’il a besoin d’un compte Microsoft gratuit pour rejoindre l’équipe. Ils peuvent créer un compte à l’aide de leur adresse de messagerie existante en suivant les instructions fournies. Ils peuvent ensuite utiliser Teams sur le web ou installer l’application Teams sur leur ordinateur.
+Votre client reçoit une invitation par courrier Teams, qui l’informe qu’il a besoin d’un compte Microsoft gratuit pour rejoindre l’équipe. Ils peuvent créer un compte à l’aide de leur adresse de messagerie existante en suivant les instructions fournies. Ils peuvent ensuite utiliser Teams sur le web ou installer l’application Teams sur leur ordinateur.

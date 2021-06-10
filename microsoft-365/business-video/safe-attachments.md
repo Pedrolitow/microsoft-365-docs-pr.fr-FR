@@ -32,7 +32,7 @@ ms.locfileid: "51578710"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
-Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 - Protection avancée contre les menaces, permet de protéger votre entreprise contre les fichiers qui contiennent du contenu malveillant dans Outlook, OneDrive, SharePoint et Teams.
+Microsoft Defender pour Office 365, anciennement appelé protection avancée contre les menaces Microsoft 365, permet de protéger votre entreprise contre les fichiers contenant du contenu malveillant dans Outlook, OneDrive, SharePoint et Teams.
 
 ## <a name="try-it"></a>Essayez !
 
@@ -47,6 +47,6 @@ Microsoft Defender pour Office 365, anciennement appelé Microsoft 365 - Protect
 
 Votre règle de pièces jointes sécurisées ATP a été mise à jour.
 
-Maintenant que la protection est en place, vous ne pourrez pas ouvrir un fichier malveillant à partir d’Outlook, OneDrive, SharePoint ou Teams. Les fichiers affectés auront des boucliers rouges à côté d’eux. Si une personne tente d’ouvrir un fichier bloqué, elle reçoit un message d’avertissement.
+Maintenant que la protection est en place, vous ne pourrez pas ouvrir un fichier malveillant à partir de Outlook, OneDrive, SharePoint ou Teams. Les fichiers affectés auront des boucliers rouges à côté d’eux. Si une personne tente d’ouvrir un fichier bloqué, elle reçoit un message d’avertissement.
 
 Une fois votre stratégie en place pendant un certain temps, visitez la page Rapports pour voir ce qui a été analysé.

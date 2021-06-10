@@ -47,7 +47,7 @@ Voici un résumé des étapes :
 
 **Étape 2 :** Configurer La mobilité et la sécurité de base en créant, par exemple, un certificat APNs pour gérer les appareils iOS et en ajoutant un enregistrement DNS (Domain Name System) pour votre domaine afin de prendre en charge Windows téléphones.
 
-**Étape 3 :** Créez des stratégies d’appareil et appliquez-les à des groupes d’utilisateurs. Lorsque vous faites cela, vos utilisateurs obtiennent un message d’inscription sur leur appareil, et une fois l’inscription terminée, leurs appareils sont limités par les stratégies que vous avez définies pour eux. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). 
+**Étape 3 :** Créez des stratégies d’appareil et appliquez-les à des groupes d’utilisateurs. Lorsque vous faites cela, vos utilisateurs obtiennent un message d’inscription sur leur appareil et une fois l’inscription terminée, leurs appareils sont limités par les stratégies que vous avez définies pour eux. Pour plus d’informations, voir [Inscrire votre appareil mobile à l’aide de Basic Mobility and Security](enroll-your-mobile-device.md). 
 
 :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Paramètres de stratégie de sécurité et de mobilité de base":::
 

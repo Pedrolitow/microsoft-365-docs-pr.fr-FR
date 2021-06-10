@@ -1,5 +1,5 @@
 ---
-title: Mise en place Microsoft 365 entreprise
+title: Prendre en Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -35,13 +35,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52706455"
 ---
-# <a name="get-started-with-microsoft-365-for-business"></a>Mise en place Microsoft 365 entreprise
+# <a name="get-started-with-microsoft-365-for-business"></a>Prendre en Microsoft 365 entreprise
 
 ## <a name="what-is-microsoft-365-for-business"></a>Qu’est-ce Microsoft 365 entreprise ?
 
 Microsoft 365 entreprise est un ensemble complet d’outils de productivité et de collaboration, tels que Outlook, Word, Excel et d’autres produits Office, qui sont toujours à jour. Vous pouvez protéger vos fichiers de travail sur tous vos appareils iOS, Android et Windows 10 avec une sécurité de niveau entreprise facile à gérer.
 
-## <a name="watch-what-is-microsoft-365-business-premium"></a>Regardez : qu’est-ce Microsoft 365 Business Premium
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Regarder : Qu’est-ce que Microsoft 365 Business Premium ?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -49,19 +49,19 @@ Microsoft 365 entreprise est destiné à 300 licences au plus. Si vous avez beso
   
 ## <a name="get-microsoft-365-for-business"></a>Obtenir Microsoft 365 entreprise
 
-- Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Partner Center Microsoft](get-microsoft-365-business.md).
+- Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Centre partenaires Microsoft.](get-microsoft-365-business.md)
     
-- Si vous n’avez pas de partenaire et que vous souhaitez obtenir Microsoft 365 pour les entreprises, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
+- Si vous n’avez pas de partenaire et que vous souhaitez Microsoft 365 entreprise, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
     
 ## <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 
  **Vue d’ensemble Microsoft 365 la suite pour les entreprises**
   
-Le diagramme suivant décrit la façon dont les administrateurs Microsoft 365 pour les entreprises. Il décrit également les étapes à suivre pour préparer Windows PC pour Microsoft 365 entreprise. Vous pouvez également ajouter de nouveaux appareils dans le centre Microsoft 365'administration avec [Windows AutoPilot](add-autopilot-devices-and-profile.md). Vous pouvez utiliser AutoPilot pour configurer et pré-configurer de nouveaux appareils afin qu’ils sont prêts à être utilisés de façon productive dès qu’un utilisateur se connexion avec ses informations d’identification Microsoft 365 entreprise.
+Le diagramme suivant décrit la façon dont les administrateurs Microsoft 365 pour les entreprises. Il décrit également les étapes à suivre pour préparer Windows PC pour Microsoft 365 entreprise. Vous pouvez également ajouter de nouveaux appareils dans le centre Microsoft 365'administration avec [Windows AutoPilot](add-autopilot-devices-and-profile.md). Vous pouvez utiliser AutoPilot pour configurer et pré-configurer de nouveaux appareils afin qu’ils sont prêts à être utilisés de façon productive dès qu’un utilisateur se connecté avec ses informations d’identification Microsoft 365 entreprise.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-## <a name="watch-set-up-microsoft-365-business"></a>Watch: Set up Microsoft 365 Business
+## <a name="watch-set-up-microsoft-365-business"></a>Regardez : Configurer Microsoft 365 Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -78,7 +78,7 @@ Connectez-vous [Microsoft 365 centre](https://portal.office.com/adminportal/home
     
 2. [Utiliser l’Assistant Installation pour configurer Microsoft 365 entreprise](set-up.md)
     
-    Si vous êtes en train de passer définitivement d’un annuaire **Active Directory local** au cloud, vous pouvez vous rendre dans le Centre d’administration Microsoft 365 et utiliser l’Assistant Installation pour ajouter manuellement vos utilisateurs, ou vous pouvez synchroniser vos utilisateurs de manière permanente avec Azure AD Connecter. Il existe deux méthodes pour y parvenir : 
+    Si vous êtes en train de passer définitivement d’un annuaire **Active Directory local** au cloud, vous pouvez vous rendre dans le Centre d’administration Microsoft 365 et utiliser l’Assistant Installation pour ajouter manuellement vos utilisateurs, ou vous pouvez synchroniser vos utilisateurs de manière permanente avec Azure AD Connecter. Il existe deux méthodes pour y parvenir : 
     
     - Si vous avez également un serveur Exchange 2010, Exchange 2013 ou Exchange 2016, vous pouvez utiliser un serveur hybride minimal pour migrer rapidement des boîtes aux lettres Exchange vers [Microsoft 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). Les étapes hybrides minimales incluent une synchronisation à temps seul des utilisateurs avec Azure AD et la migration du courrier électronique de l’local vers le cloud. Une fois la migration de messagerie terminée, la synchronisation d’annuaires est automatiquement désactivée lorsque vous utilisez cette méthode.
     
@@ -94,7 +94,7 @@ Suivez les étapes de la procédure De configurer des appareils mobiles pour [Mi
 
 Les administrateurs peuvent pré-sélectionner les paramètres des nouveaux PC Windows 10 à l’aide Windows [AutoPilot](add-autopilot-devices-and-profile.md). Les utilisateurs peuvent configurer leurs appareils Windows 10 existants ou nouveaux en suivant les étapes de cette rubrique : Configurer des PC Windows pour Microsoft 365 pour les utilisateurs [professionnels.](set-up-windows-devices.md) Pour les appareils existants, les utilisateurs peuvent **éventuellement** [déplacer des fichiers vers OneDrive Entreprise](move-files-to-onedrive.md). Ils peuvent également utiliser des outils tiers pour déplacer des fichiers associés Windows profil vers OneDrive.
   
-Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 pour les entreprises afin de protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de [l’étape](manage-windows-devices.md) Activer les appareils joints Windows 10 domaine à gérer par Microsoft 365 entreprise pour configurer cette procédure. Cette méthode est préférée et les appareils dans cet état sont appelés appareils joints **à Azure AD hybride.** 
+Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 pour les entreprises afin de protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de [l’étape](manage-windows-devices.md) Activer les appareils joints Windows 10 domaine à gérer par Microsoft 365 entreprise pour configurer cette procédure. Cette méthode est préférée et les appareils dans cet état sont appelés appareils joints **à Azure AD hybride.** 
   
 Si vous conservez un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes **ci-après** : Accéder aux ressources locales à partir d’un appareil joint à [Azure AD](access-resources.md)dans Microsoft 365 pour les entreprises.
   

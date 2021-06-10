@@ -1,7 +1,7 @@
 ---
 title: Exceptions au plan de service
 description: Comment demander des exceptions au plan de service standard
-keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
+keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -22,12 +22,12 @@ Bureau géré Microsoft fournit une liste d’appareils [organisés,](device-pol
  
 ## <a name="types-of-exceptions"></a>Types d’exceptions
 
-Une exception est tout ajout ou toute modification de la configuration Bureau géré Microsoft base de données . Les exemples vont de la configuration des ports USB au déploiement d’un nouveau pilote de périphérique. Nous groupons différentes exceptions comme suit :
+Une exception est l’ajout ou la modification de la configuration Bureau géré Microsoft base de données . Les exemples vont de la configuration des ports USB au déploiement d’un nouveau pilote de périphérique. Nous groupons différentes exceptions comme suit :
 
 |Type  |Description  |
 |---------|---------|
 |Logiciels de productivité     |  Logiciels de premier plan requis par les utilisateurs, restreints par les exigences [de l’application](mmd-app-requirements.md)       |
-|Agents de sécurité & VPN     |  Logiciels utilisés pour sécuriser, surveiller ou modifier le comportement de l’appareil ou du réseau       |
+|Agents de sécurité & VPN     |  Logiciel utilisé pour sécuriser, surveiller ou modifier le comportement de l’appareil ou du réseau       |
 |Surveillance de l’expérience numérique     |  Logiciel utilisé pour suivre les données sur l’appareil d’un utilisateur afin de les signaler à l’informatique       |
 |Pilotes matériels ou logiciels     |   Pilotes de périphérique, restreints par les exigences de [l’application](mmd-app-requirements.md)      |
 |Stratégies     | Windows 10 ou Applications Microsoft 365 pour les grandes entreprises sur un appareil géré        |

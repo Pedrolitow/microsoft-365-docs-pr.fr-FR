@@ -1,5 +1,5 @@
 ---
-title: DÉMARRER l’API d’examen
+title: DÉMARRER l’API Investigation
 description: Utilisez cette API pour lancer l’examen sur un appareil.
 keywords: api, api de graphique, api pris en charge, examen
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2021
 ms.locfileid: "52770888"
 ---
-# <a name="start-investigation-api"></a>DÉMARRER l’API d’examen
+# <a name="start-investigation-api"></a>DÉMARRER l’API Investigation
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "52770888"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -44,7 +44,7 @@ Lancez un examen automatisé sur un appareil.
 <br>Pour plus [d’informations, voir Vue d’ensemble des enquêtes](automated-investigations.md) automatisées.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 50 appels par heure.
 
 

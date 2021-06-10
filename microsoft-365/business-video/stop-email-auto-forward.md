@@ -54,4 +54,4 @@ Si un pirate informatique accède à la boîte aux lettres d’un utilisateur, i
 
 [Ajouter un autre alias de courrier pour un utilisateur](../admin/email/add-another-email-alias-for-a-user.md) (article)\
 [Configurer le transfert des e-mails dans Microsoft 365](../admin/email/configure-email-forwarding.md) (article)\
-Rechercher et résoudre les problèmes de remise des e-mails en [tant qu’administrateur Office 365 entreprise](/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)
+[Rechercher et résoudre les problèmes de remise des e-mails en tant qu’administrateur Office 365 entreprise](/exchange/troubleshoot/email-delivery/email-delivery-issues) (article)

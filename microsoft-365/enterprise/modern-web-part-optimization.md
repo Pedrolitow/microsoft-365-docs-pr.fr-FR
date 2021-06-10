@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants Web Parts dans les pages de sites modernes SharePoint Online.
+description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants Web SharePoint pages de sites modernes en ligne.
 ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -56,11 +56,11 @@ Si le résultat **Les composants WebPart ont un impact sur le temps de chargemen
 
 Les informations disponibles dans les résultats incluent les éléments suivants :
 
-- **L’élément «** Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
+- **L’élément** « Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
 - **Le nom et l’ID** indiquent les informations d’identification qui peuvent vous aider à trouver le partie Web Sur la page.
 - **Total** indique la durée totale du chargement, de l’initialisation et du rendu du module par le partie Web. Il s’agit du temps relatif total pris par le partie Web Pour restituer sur la page, du début à la fin.
 - **Le chargement du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
-- **Chargement différé indique** le temps de chargement différé des composants Web Parts qui ne sont pas visibles dans la section principale de la page. Dans certaines conditions, il y a trop de composants Web Parts à restituer, et ils sont mis en file d’attente pour être restituer afin de réduire le temps de chargement de la page.
+- **La charge différée** indique le temps de chargement différé des composants Web Parts qui ne sont pas visibles dans la section principale de la page. Dans certaines conditions, il y a trop de composants Web Parts à restituer, et ils sont mis en file d’attente pour être restituer afin de réduire le temps de chargement de la page.
 - **Init indique** le temps qu’a pris le partie Web Pour initialiser les données.
     Il s’agit d’un appel asynchrone et le temps d’init est le calcul du temps pour la fonction onInit lorsque la promesse renvoyée est résolue.
 - **Le** rendu indique le temps de rendu de l’interface utilisateur (interface utilisateur) une fois le chargement du module et Init terminés.

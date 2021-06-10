@@ -1,7 +1,7 @@
 ---
 title: Évaluer votre posture de sécurité via le Score de sécurité Microsoft
-description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le centre Microsoft 365 sécurité.
-keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le centre Microsoft 365 sécurité microsoft.
+keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -55,7 +55,7 @@ En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, 
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global pour vous donner une image plus complète de votre score global :
 
-- **Score planifié :** afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
 - **Score de licence actuel**: afficher le score qui peut être obtenu avec votre licence Microsoft actuelle
 - **Score réalisable :** afficher le score qui peut être obtenu avec vos licences Microsoft et l’acceptation actuelle des risques
 
@@ -110,9 +110,9 @@ La section appelée **En un coup d’œil** vous indique la catégorie, les atta
 
 ### <a name="implement-the-improvement-action"></a>Implémenter l’action d’amélioration
 
-La  section Implémentation présente les conditions préalables, les étapes suivantes pas à pas pour effectuer l’action d’amélioration, l’état d’implémentation actuel de l’action d’amélioration et les liens supplémentaires.
+La  section Implémentation présente les conditions préalables, les étapes suivantes pas à pas pour effectuer l’action d’amélioration, l’état d’implémentation actuel de l’action d’amélioration et d’autres liens.
 
-Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
+Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration ne soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

@@ -40,11 +40,11 @@ ms.locfileid: "51580251"
 
 Un profil s'applique à un appareil ou à un groupe d'appareils,
   
-1. Dans le Centre d’administration Microsoft 365, sélectionnez **Appareils** \> **AutoPilot**.
+1. Dans le centre Microsoft 365'administration, sélectionnez **Appareils** \> **AutoPilot**.
   
 2. Dans la page **AutoPilot,** sélectionnez **l’onglet Profils** \> **Créer un profil.**
     
-3. Dans la page **Créer un** profil, entrez un nom pour le profil qui vous permet de l’identifier, par exemple Marketing. Activer le paramètre de votre choix, puis sélectionnez **Enregistrer.** Pour plus d’informations sur les paramètres de profil AutoPilot, voir à propos des paramètres de profil [AutoPilot.](autopilot-profile-settings.md)
+3. Dans la page **Créer un** profil, entrez un nom pour le profil qui vous aide à l’identifier, par exemple Marketing. Activer le paramètre de votre choix, puis sélectionnez **Enregistrer.** Pour plus d’informations sur les paramètres de profil AutoPilot, voir à propos des paramètres de profil [AutoPilot.](autopilot-profile-settings.md)
     
     ![Enter name and turn on settings in the Create profile panel.](../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
@@ -74,7 +74,7 @@ Lorsque vous avez affecté un profil à un appareil, vous pouvez le mettre à jo
 
 1. Sur la page **Préparer Windows**, choisissez l'onglet **Profils**. 
     
-2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Profil,  **sélectionnez Supprimer enregistrer le** \> **profil.**
+2. Cochez la case en regard d’un nom d’appareil, puis, dans le panneau Profil, **sélectionnez Supprimer enregistrer le**  \> **profil.**
     
     Lorsque vous supprimez un profil, il est supprimé de l'appareil ou du groupe d'appareils auquel il a été affecté.
     

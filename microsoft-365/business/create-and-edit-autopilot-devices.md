@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: Découvrez comment télécharger des appareils à l’aide d’AutoPilot dans Microsoft 365 Business Premium. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
+description: Découvrez comment télécharger des appareils à l’aide d’AutoPilot Microsoft 365 Business Premium. Vous pouvez affecter un profil à un appareil ou à un groupe d’appareils.
 ms.openlocfilehash: 506ff44e3cb6656b19174e82688b5af141ea2b79
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -43,9 +43,9 @@ Les appareils doivent répondre aux exigences ci-après :
   
 - Windows 10, version 1703 ou ultérieure
     
-- Nouveaux appareils qui n’ont pas fait l’expérience d’utilisation de Windows out-of-box
+- Nouveaux appareils qui n’ont pas été Windows l’expérience pré-out-of-box
 
-1. Dans le Centre d’administration Microsoft 365, sélectionnez **Appareils** \> **AutoPilot**.
+1. Dans le centre Microsoft 365'administration, sélectionnez **Appareils** \> **AutoPilot**.
   
 2. Dans la page **AutoPilot,** sélectionnez **l’onglet Appareils** \> **Ajouter des appareils.**
     
@@ -57,7 +57,7 @@ Les appareils doivent répondre aux exigences ci-après :
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>Attribuer un profil à un appareil ou à un groupe d'appareils
 
-1. Dans la page **Préparer Windows,** sélectionnez l’onglet **Appareils,** puis cochez la case en regard d’un ou plusieurs appareils. 
+1. Dans la page **Préparer Windows,**  sélectionnez l’onglet Appareils, puis cochez la case en regard d’un ou plusieurs appareils. 
     
 2. Dans le volet **Appareil**, sélectionnez un profil dans la liste déroulante **Profil attribué**. 
     

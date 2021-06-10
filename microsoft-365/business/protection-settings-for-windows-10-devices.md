@@ -1,5 +1,5 @@
 ---
-title: Modifier ou définir les paramètres de protection des applications pour les appareils Windows 10
+title: Modifier ou définir les paramètres de protection des applications pour Windows 10 appareils
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -28,7 +28,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Découvrez comment créer ou modifier des stratégies de gestion des applications et protéger les fichiers de travail sur les appareils Windows 10 personnels de vos utilisateurs.
+description: Découvrez comment créer ou modifier des stratégies de gestion des applications et protéger les fichiers de travail sur les appareils personnels Windows 10 vos utilisateurs.
 ms.openlocfilehash: aa270c563e6bdce6fd48f8713d7db3ce23921925
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -36,15 +36,15 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580011"
 ---
-# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Définir ou modifier les paramètres de protection des applications pour les appareils Windows 10
+# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Définir ou modifier les paramètres de protection des applications pour Windows 10 appareils
 
-Cet article s’applique à Microsoft 365 Business Premium.
+Cet article s’applique aux Microsoft 365 Business Premium.
 
 ## <a name="edit-an-app-management-policy-for-windows-10"></a>Modifier une stratégie de gestion des applications pour Windows 10
 
 1. Accédez au Centre d’administration à l’adresse <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
 2. Dans le navigation  de gauche, sélectionnez \> **Stratégies d’appareils.**
-1. Choisissez une stratégie d’application Windows existante, puis **modifiez.**
+1. Choisissez une stratégie d’Windows existante, puis **modifiez.**
 1. Choose **Edit** next to a setting you want to change and then **Save**.
 
 ## <a name="create-an-app-management-policy-for-windows-10"></a>Créer une stratégie de gestion des applications pour Windows 10
@@ -58,14 +58,14 @@ Si vos utilisateurs disposent d'appareils Windows 10 sur lesquels ils effectuent
 5. Under **Device type**, choose either **Personal** or **Company Owned**.
 6. L'option **Chiffrer les fichiers de travail** est activée automatiquement. 
 7. Définissez **Empêcher les utilisateurs de copier des données d'entreprise dans leurs fichiers personnels et les obliger à enregistrer les fichiers professionnels dans OneDrive Entreprise** sur **Activé** si vous ne souhaitez pas que les utilisateurs enregistrent des fichiers professionnels sur leur PC. 
-9. Développez **Récupérer des données sur les appareils Windows.** Nous vous recommandons de **l’activer.**
+9. Développez **récupérer des données sur Windows appareils mobiles.** Nous vous recommandons de **l’activer.**
     Avant de pouvoir accéder à l'emplacement du certificat de l'agent de récupération de données, vous devez d'abord créer un tel certificat. Pour obtenir des instructions, voir Créer et vérifier un certificat d’agent de récupération de données de système de fichiers [EFS ( Encrypting File System).](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate)
     
     Par défaut, les fichiers de travail sont chiffrés à l'aide d'une clé secrète qui est stockée sur l'appareil associé au profil de l'utilisateur. Seul l'utilisateur peut ouvrir et déchiffrer le fichier. Toutefois, si un périphérique est perdu ou si un utilisateur est supprimé, un fichier peut rester bloqué à l'état chiffré. Un administrateur peut utiliser le certificat d’agent de récupération de données (DRA) pour déchiffrer le fichier.
     
     ![Browse to Data Recovery Agent certificate.](../media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-10. Développez **Protéger des** emplacements réseau et cloud supplémentaires si vous souhaitez ajouter des domaines ou des emplacements SharePoint Online supplémentaires pour vous assurer que les fichiers de toutes les applications répertoriées sont protégés. Si vous devez entrer plusieurs éléments pour chaque champ, utilisez un point-virgule ( ;) entre les différents éléments.
+10. Développez **Protéger des** emplacements réseau et cloud supplémentaires si vous souhaitez ajouter des domaines supplémentaires ou des emplacements SharePoint Online pour vous assurer que les fichiers de toutes les applications répertoriées sont protégés. Si vous devez entrer plusieurs éléments pour chaque champ, utilisez un point-virgule ( ;) entre les différents éléments.
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   

@@ -35,7 +35,7 @@ Vous pouvez discuter en interne avec vos collègues ou avec un utilisateur invit
 
 ## <a name="try-it"></a>Essayez !
 
-Démarrez les conversations de groupe ou 1:1 pour collaborer avec un petit groupe ou parler en privé, et épinglez des conversations pour un accès rapide.
+Démarrez des conversations en tête à tête ou en groupe pour collaborer avec un petit groupe ou parler en privé, et épinglez des conversations pour un accès rapide.
 
 1. Dans  **les conversations,** vous pouvez avoir des conversations en tête à tête ou en groupe avec des personnes.
 2. Sélectionnez **Nouvelle conversation.** :::image type="icon" source="../media/new-chat-icon.png" border="false":::  

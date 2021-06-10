@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: Découvrez comment, avec Microsoft 365 Business Premium, vous pouvez automatiquement vous assurer que les utilisateurs ont la dernière version d’Office sur tous leurs appareils Windows 10.
+description: Découvrez comment, avec Microsoft 365 Business Premium, vous pouvez automatiquement vous assurer que les utilisateurs ont la dernière version de Office sur tous Windows 10 appareils.
 ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,6 +37,6 @@ ms.locfileid: "51580171"
 
 ![Bannière pointant vers https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
-Ce paramètre est éteint par défaut. Vous pouvez l’activer pour vous assurer que les utilisateurs ont la dernière version d’Office sur tous leurs appareils Windows 10, mais vérifiez tout d’abord que toutes les conditions préalables sont remplies. Les utilisateurs doivent être titulaires d’une licence Microsoft 365 Business Premium pour que ce paramètre pousse le logiciel sur l’appareil, en plus des autres conditions décrites dans Préparer le déploiement du client Office par [Microsoft 365 Business Premium.](prepare-for-office-client-deployment.md)
+Ce paramètre est éteint par défaut. Vous pouvez l’activer pour vous assurer que les utilisateurs ont la dernière version de Office sur tous leurs appareils Windows 10, mais vérifiez d’abord que tous les prérequis sont satisfaits. Les utilisateurs doivent être titulaires d’une licence Microsoft 365 Business Premium pour que ce paramètre pousse le logiciel vers l’appareil, en plus des autres conditions décrites dans Préparer le déploiement de [client Office](prepare-for-office-client-deployment.md)par Microsoft 365 Business Premium .
   
 Nous vous recommandons d’accepter le paramètre par défaut lors de l’installation.

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Utilisez l’outil advanced eDiscovery Custodian Management pour accéder facilement à l’activité des dépositaires dans votre cas et y effectuer des recherches.
+description: Utilisez l’outil Advanced eDiscovery gestion des dépositaires pour accéder facilement à l’activité des dépositaires dans votre cas et y effectuer des recherches.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: f9e96d0b5dd3bf42dbba56a6e1be91014485ce98
 ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
@@ -26,7 +26,7 @@ ms.locfileid: "45024764"
 ---
 # <a name="view-custodian-audit-activity"></a>Afficher l’activité d’audit des consignataires
 
-Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Advanced eDiscovery est désormais intégré à l’outil de recherche de journal d’audit existant dans le Centre de sécurité & conformité. À l’aide de cette expérience incorporée, vous pouvez utiliser l’outil de gestion avancée des dépositaires eDiscovery pour faciliter votre examen en accédant facilement à l’activité des dépositaires dans votre cas et en recherchant celui-ci.
+Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Advanced eDiscovery est désormais intégré à l’outil de recherche de journal d’audit existant dans le Centre de sécurité & conformité. À l’aide de cette expérience incorporée, vous pouvez utiliser l’outil de gestion des dépositaires Advanced eDiscovery pour faciliter votre examen en accédant facilement à l’activité des dépositaires dans votre cas et en recherchant celui-ci.
 
 ## <a name="get-permissions"></a>Obtenir des autorisations
 
@@ -37,7 +37,7 @@ Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’a
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Étape 1 : rechercher dans le journal d’audit les activités effectuées par un dépositaire
 
-1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
+1. Go to **eDiscovery > Advanced eDiscovery** and open the case.
   
 2. Cliquez sur **l’onglet Sources.**
   
@@ -47,7 +47,7 @@ Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’a
 
     ![Page de recherche activités du consignataire](../media/AeDCustodianActivities1.png)
    
-4. Configurez les critères de recherche suivants : 
+4. Configurez les critères de recherche suivants : 
       
    1. **Activités :** cliquez sur la liste liste de listes pour afficher les activités que vous pouvez rechercher. Une fois la recherche terminée, seuls les enregistrements d’audit correspondant aux activités sélectionnées apparaissent. La sélection **Afficher les résultats pour toutes** les activités affiche les résultats de toutes les activités effectuées par le dépositaire qui correspondent aux autres critères de recherche.
 
@@ -66,7 +66,7 @@ Les résultats d’une recherche dans le journal d’audit sont affichés sous R
 Les résultats contiennent les informations suivantes sur chaque événement renvoyé par la recherche.
 - **Date :** Date et heure (au format UTC) auxquelles l’événement s’est produit.
 
-- **Adresse IP :** Adresse IP de l’appareil utilisé lors de l’enregistrement de l’activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.
+- **Adresse IP :** Adresse IP de l’appareil utilisé lors de l’enregistrement de l’activité. L’adresse IP apparaît au format d’adresse IPv4 ou IPv6.
 
 - **Utilisateur :** Utilisateur (ou compte de service) qui a effectué l’action ayant déclenché l’événement.
 
@@ -74,13 +74,13 @@ Les résultats contiennent les informations suivantes sur chaque événement ren
 
 - **Élément :** Objet qui a été créé ou modifié suite à l’activité correspondante. Par exemple, fichier consulté ou modifié, ou compte d’utilisateur mis à jour. Certaines activités n’ont pas de valeur dans cette colonne.
 
-- **Détails** : Détails supplémentaires sur une activité. Là encore, toutes les activités n’ont pas de valeur.
+- **Détails** : Détails supplémentaires sur une activité. Là encore, toutes les activités n’ont pas de valeur.
 
-## <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
+## <a name="step-3-filter-the-search-results"></a>Étape 3 : filtrer les résultats de la recherche
 
 Vous pouvez également filtrer les résultats d’une recherche dans le journal d’audit. Cela peut vous aider à filtrer rapidement les résultats d’un utilisateur ou d’une activité spécifique. 
 
-Pour filtrer les résultats :
+Pour filtrer les résultats :
 
  1. Créez et exécutez une recherche dans le journal d’audit.
   
@@ -98,14 +98,14 @@ Vous pouvez exporter les résultats d’une recherche dans le journal d’audit 
 
 1. Effectuez une recherche dans le journal d’audit, puis modifiez les critères de recherche jusqu’à obtenir les résultats souhaités.
   
-2. Cliquez sur Exporter les résultats, puis sélectionnez l’une des options suivantes :
+2. Cliquez sur Exporter les résultats, puis sélectionnez l’une des options suivantes :
 
-    - **Enregistrez les résultats chargés :** Choisissez cette option pour exporter uniquement les  entrées qui sont affichées sous Résultats sur la page de recherche du journal d’audit **du** dépositaire. Le fichier .csv téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (Date, Utilisateur, Activité, Élément et Détails). Une colonne supplémentaire (intitulée **Plus)** est incluse dans le fichier CSV qui contient plus d’informations à partir de l’entrée du journal d’audit. Comme vous exportez les mêmes résultats que ceux chargés (et visibles) sur la page Recherche dans le journal d’audit, 5 000 entrées au maximum sont exportées.
+    - **Enregistrez les résultats chargés :** Choisissez cette option pour exporter uniquement les  entrées qui sont affichées sous Résultats sur la page de recherche du journal d’audit **du** dépositaire. Le fichier .csv téléchargé contient les mêmes colonnes (et données) que celles affichées sur la page (Date, Utilisateur, Activité, Élément et Détails). Une colonne supplémentaire (intitulée **Plus)** est incluse dans le fichier CSV qui contient plus d’informations à partir de l’entrée du journal d’audit. Comme vous exportez les mêmes résultats que ceux chargés (et visibles) sur la page Recherche dans le journal d’audit, 5 000 entrées au maximum sont exportées.
         
     - **Téléchargez tous les résultats :** Choisissez cette option pour exporter toutes les entrées du journal d’audit qui répondent aux critères de recherche. Pour un grand nombre de résultats de recherche, choisissez cette option pour télécharger toutes les entrées du journal d’audit en plus des 5 000 résultats qui peuvent être affichés dans la page de recherche du journal **d’audit** du dépositaire. Cette option télécharge les données brutes du journal d’audit dans un fichier CSV et contient des informations supplémentaires à partir de l’entrée du journal d’audit dans une colonne nommée AuditData. Le téléchargement du fichier peut prendre plus de temps si vous choisissez cette option d’exportation, car le fichier peut-être plus volumineux que celui téléchargé à l’aide de l’autre option.
     
       > [!IMPORTANT]
-      > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
+      > Vous pouvez télécharger un maximum de 50 000 entrées dans un fichier .csv à partir d’une seule recherche dans le journal d’audit. Si 50 000 résultats sont téléchargés dans le fichier .csv, vous pouvez partir du principe que plus de 50 000 événements remplissent les critères de recherche. Pour exporter davantage de résultats, essayez d’utiliser une plage de dates pour réduire le nombre d’entrées du journal d’audit. Vous devrez peut-être effectuer plusieurs recherches avec des plages de dates plus réduites pour exporter plus de 50 000 entrées.
         
 
 3. Après avoir sélectionné une option d’exportation, un message s’affiche en bas de la fenêtre qui vous invite à ouvrir le fichier CSV, à l’enregistrer dans le dossier Téléchargements ou à l’enregistrer dans un dossier spécifique

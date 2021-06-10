@@ -43,7 +43,7 @@ ms.locfileid: "52770876"
 Activez l’exécution de n’importe quelle application sur l’appareil.
 
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
@@ -59,7 +59,7 @@ Déléguée (compte professionnel ou scolaire) | Machine.RestrictExecution | « 
 
 >[!Note]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
->- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+>- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Actions de correction actives » (pour plus d’informations, voir Créer et gérer [des](user-roles.md) rôles)
 >- L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP

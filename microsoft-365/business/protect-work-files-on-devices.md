@@ -37,7 +37,7 @@ ms.locfileid: "51580031"
 ---
 # <a name="protect-work-files-on-devices"></a>Protéger les fichiers de travail sur les appareils
 
-Cet article s’applique à Microsoft 365 Business Premium.
+Cet article s’applique aux Microsoft 365 Business Premium.
 
 Dans le monde d’aujourd’hui, les utilisateurs sont liés à leurs appareils, et à mesure que la vie personnelle et la vie professionnelle entrent en conflit, les données de votre entreprise peuvent se trouver sur l’appareil personnel d’un employé. Les paramètres que vous configurez ici peuvent vous aider à reprendre le contrôle et à assurer la protection des fichiers professionnels, sans affecter aucun des paramètres personnels ou des données de l'utilisateur.
   

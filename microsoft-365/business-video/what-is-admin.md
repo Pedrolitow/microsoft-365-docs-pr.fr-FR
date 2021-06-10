@@ -1,5 +1,5 @@
 ---
-title: Qu’est-ce qu’un administrateur dans Microsoft 365 pour les entreprises ?
+title: Qu’est-ce qu’un administrateur Microsoft 365 entreprise ?
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez les rôles d’administrateur dans Microsoft 365 pour les entreprises.
+description: Découvrez les rôles d’administrateur dans Microsoft 365 entreprise.
 ms.openlocfilehash: a4fcb60218069d73fe658a6dc4ef681a659ec70b
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,11 +27,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578554"
 ---
-# <a name="what-is-a-microsoft-365-admin"></a>Qu’est-ce qu’un administrateur Microsoft 365 ?
+# <a name="what-is-a-microsoft-365-admin"></a>Qu’est-ce qu Microsoft 365 administrateur de serveur ?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0?autoplay=false]
 
-Dans chaque abonnement Microsoft 365 Business, il doit y avoir au moins un compte d’administrateur. L’administrateur gère le service, les comptes d’utilisateur et les appareils. Si vous êtes celui qui s’est inscrit à l’abonnement, vous êtes l’administrateur global de votre abonnement. Vous pouvez également devenir administrateur si un autre administrateur vous en fait un.
+Dans chaque Microsoft 365 Business, il doit y avoir au moins un compte d’administrateur. L’administrateur gère le service, les comptes d’utilisateur et les appareils. Si vous êtes celui qui s’est inscrit à l’abonnement, vous êtes l’administrateur global de votre abonnement. Vous pouvez également devenir administrateur si un autre administrateur vous en fait un.
 
 Bien que vous avez toujours besoin d’au moins un rôle d’administrateur pour votre abonnement, il peut s’agit d’un risque de sécurité si le compte d’administrateur est compromis par un tiers. Nous vous recommandons d’attribuer uniquement le rôle d’administrateur à ceux qui en ont réellement besoin et d’attribuer le rôle d’utilisateur à la plupart des personnes.
 
@@ -41,8 +41,8 @@ Bien que vous avez toujours besoin d’au moins un rôle d’administrateur pour
 
 Voici comment modifier un rôle d’utilisateur en rôle d’administrateur :
 
-1. Lors de la signature de Microsoft 365, sélectionnez le lanceur d’applications. Si vous voyez le bouton Administrateur, vous êtes un administrateur.
-1. Sélectionnez **Administrateur** pour aller au Centre d’administration Microsoft 365.
+1. Lorsque vous vous Microsoft 365, sélectionnez le lanceur d’applications. Si vous voyez le bouton Administrateur, vous êtes un administrateur.
+1. Sélectionnez **Admin** pour aller au centre d Microsoft 365'administration.
 1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
 1. Sélectionnez la personne qui doit être administrateur. Les détails de l’utilisateur apparaissent dans la boîte de dialogue de droite.
 1. Choisissez **Gérer les rôles.**
@@ -53,8 +53,8 @@ Voici comment modifier un rôle d’utilisateur en rôle d’administrateur :
 
 Vous pouvez également créer un compte d’administrateur dédié pour une personne ou un service informatique :
 
-1. Lors de la signature de Microsoft 365, sélectionnez le lanceur d’applications.
-1. Sélectionnez **Administrateur** pour aller au Centre d’administration Microsoft 365.
+1. Lorsque vous vous Microsoft 365, sélectionnez le lanceur d’applications.
+1. Sélectionnez **Admin** pour aller au centre d Microsoft 365'administration.
 1. Dans le volet de navigation de gauche, sélectionnez **Utilisateurs,** puis **Utilisateurs actifs.**
 1. Sélectionnez **Ajouter un utilisateur.**
 1. Entrez le prénom  et le nom de l’utilisateur, le nom d’affichage **et** le nom d’utilisateur, puis sélectionnez **Suivant**.

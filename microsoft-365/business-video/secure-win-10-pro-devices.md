@@ -1,5 +1,5 @@
 ---
-title: Gérer les stratégies d’appareil Windows 10 Professionnel avec Microsoft 365 Business Premium
+title: Gérer les stratégies Windows 10 Professionnel appareil à l’Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment gérer les stratégies d’appareil Windows 10 Professionnel avec Microsoft 365 Business Premium.
+description: Découvrez comment gérer les stratégies Windows 10 Professionnel appareil à l’Microsoft 365 Business Premium.
 ms.openlocfilehash: 0f7cfff227e1ab4ea992414b513e341adbd9ef22
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -28,20 +28,20 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578686"
 ---
-# <a name="manage-windows-10-pro-device-policies"></a>Gérer les stratégies d’appareil Windows 10 Professionnel
+# <a name="manage-windows-10-pro-device-policies"></a>Gérer les stratégies Windows 10 Professionnel appareils
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSL?autoplay=false]
 
-Vous pouvez utiliser Microsoft 365 Business pour vous assurer que l’antivirus Windows Defender est activé sur les appareils Windows 10 et que les mises à jour Microsoft sont automatiquement téléchargées sur les appareils des utilisateurs.
+Vous pouvez utiliser Microsoft 365 Business pour vous assurer que Antivirus Windows Defender est activé sur les appareils Windows 10 et que les mises à jour Microsoft sont automatiquement téléchargées sur les appareils des utilisateurs.
 
 ## <a name="try-it"></a>Essayez !
 
-1. Connectez-vous au Centre d’administration Microsoft 365.
+1. Connectez-vous au centre d’administration Microsoft 365.
 1. Sous **Stratégies,** choisissez Ajouter une stratégie.
-1. Dans le volet Ajouter **une** stratégie, entrez un nom sous nom de **stratégie,** puis sélectionnez Configuration de l’appareil **Windows 10** sous **Type de stratégie.**
-1. Sélectionnez **Sécuriser les appareils Windows 10** pour voir les sous-paramètres.
-1. Veillez à protéger les PC contre les virus et autres menaces à l’aide de **l’antivirus Windows Defender** et que les appareils **Windows 10** sont automatiquement mis à jour.
-1. Sous **Qui obtenira ces paramètres ?**, tous les utilisateurs sont sélectionnés par défaut, mais vous pouvez choisir Modifier pour sélectionner les groupes de sécurité que vous avez créés. 
+1. Dans le volet Ajouter **une** stratégie, entrez un nom sous nom de **stratégie,** puis sélectionnez Windows 10 **configuration** de l’appareil sous Type **de stratégie.**
+1. Choisissez **Secure Windows 10 pour** voir les sous-paramètres.
+1. Veillez à protéger les PC contre les virus et  autres menaces à l’aide de **Antivirus Windows Defender** et maintenir Windows 10 les appareils à jour sont automatiquement allumés.
+1. Sous Qui vous obtenez ces **paramètres ?**, tous les utilisateurs  sont sélectionnés par défaut, mais vous pouvez choisir Modifier pour sélectionner les groupes de sécurité que vous avez créés.
 1. Pour terminer la création de la stratégie, choisissez **Ajouter.**
 1. Dans la page **Ajouter une stratégie,** choisissez **Fermer.**
 1. Dans la page d’accueil du Centre d’administration,  confirmez que votre nouvelle stratégie a été ajoutée en choisissant Stratégies et en l’avisant sur la page **Stratégies.**

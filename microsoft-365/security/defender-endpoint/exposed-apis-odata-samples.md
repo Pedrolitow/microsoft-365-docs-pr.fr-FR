@@ -448,7 +448,7 @@ json{
 
 ### <a name="example-7"></a>Exemple 7
 
-Obtenez le nombre d’alertes ouvertes pour un appareil spécifique :
+Obtenir le nombre d’alertes ouvertes pour un appareil spécifique :
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'

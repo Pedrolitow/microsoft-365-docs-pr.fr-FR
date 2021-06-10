@@ -20,7 +20,7 @@ ms.locfileid: "52246199"
 ---
 # <a name="validate-new-devices"></a>Valider les nouveaux appareils
 
-Que vous débutiez avec Bureau géré Microsoft ou un abonné de longue durée, il est préférable de tester un exemple de tout modèle d’appareil que vous inscrivez pour la première fois dans le service. Cela est vrai si vous commandez de nouveaux appareils ou que vous en utilisez des appareils existants, y compris les appareils recommandés pour Bureau géré Microsoft sur le site Shop [Windows 10 Professionnel business devices.](https://www.microsoft.com/windowsforbusiness/view-all-devices) Sur ce site, affichez les appareils recommandés  pour une  utilisation avec le service en développez les fonctionnalités dans la zone Filtrer par **zone,** puis sélectionnez Bureau géré Microsoft . La validation des appareils garantit qu’ils offrent l’expérience utilisateur que vous attendez.
+Que vous débutiez dans Bureau géré Microsoft ou que vous êtes abonné à long terme, il est préférable de tester un exemple de tout modèle d’appareil que vous inscrivez pour la première fois dans le service. Cela est vrai si vous commandez de nouveaux appareils ou que vous en utilisez des appareils existants, y compris les appareils recommandés pour Bureau géré Microsoft sur le site Shop [Windows 10 Professionnel business devices.](https://www.microsoft.com/windowsforbusiness/view-all-devices) Sur ce site, affichez les appareils recommandés  pour une  utilisation avec le service en développez les fonctionnalités dans la zone Filtrer par **zone,** puis sélectionnez Bureau géré Microsoft . La validation des appareils garantit qu’ils offrent l’expérience utilisateur que vous attendez.
 
 ## <a name="validate-devices"></a>Valider les appareils
 
@@ -31,7 +31,7 @@ Que vous débutiez avec Bureau géré Microsoft ou un abonné de longue durée, 
     - [Service d’emplacement Windows 10](device-location.md)
     - [Prise en main du contrôle d’application](get-started-app-control.md)
     - [Déployer les applications sur les appareils](deploy-apps.md)
-2. Vérifiez que les expériences suivantes fonctionnent sans échec, erreurs ou invites :
+2. Vérifiez que les expériences suivantes fonctionnent sans erreurs, erreurs ou invites :
     - Expérience Autopilot après avoir rejoint le réseau et l’utilisateur s’est
     - Si vous avez activé la [page](esp-first-run.md)État de l’inscription, cela fonctionne.
     - L’utilisateur peut se Office applications

@@ -44,7 +44,7 @@ Lorsque vous créez un modèle après avoir ajouté un utilisateur, les valeurs 
 - Choix de licence
 - Choix de l’application
 - Role
-- La plupart des informations de profil, telles que profil **de travail,** **service,** **bureau,** **téléphone office** et adresse **de rue** 
+- La plupart des informations de profil, telles que profil **de** travail, **service,** **Office,** **Office téléphone** et adresse **de rue** 
 
 Les informations suivantes sont propres à l’utilisateur et ne sont pas enregistrées dans le modèle :
 
@@ -84,7 +84,7 @@ Vous pouvez uniquement supprimer des modèles dont vous n’avez plus besoin et 
 
 3. Une liste de modèles s’affiche. Vous pouvez supprimer un modèle en faisant l’une des choses suivantes :
     - Sélectionnez un ou plusieurs modèles, puis sélectionnez **Supprimer.** 
-    - Sélectionnez les trois points à droite du nom du modèle, puis sélectionnez **Supprimer**.
+    - Sélectionnez les trois points à droite du nom du modèle, puis sélectionnez **Supprimer.**
     - Sélectionnez le nom du modèle. Lorsque les détails du modèle apparaissent sur le côté droit de votre écran, sélectionnez **Supprimer le modèle.**
 
 ## <a name="related-articles"></a>Articles connexes

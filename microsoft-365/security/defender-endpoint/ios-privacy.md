@@ -36,7 +36,7 @@ ms.locfileid: "52822369"
 > [!NOTE]
 > Defender pour le point de terminaison sur iOS utilise un VPN pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local ou en boucle autonome qui ne prend pas le trafic en dehors de l’appareil. **Microsoft ou votre organisation ne voit pas votre activité de navigation.**
 
-Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender pour point de terminaison sur iOS sécurisé, à jour, en cours d’évaluation et pour prendre en charge le service.
+Defender pour le point de terminaison sur iOS collecte des informations à partir de vos appareils iOS configurés et les stocke dans le même client que celui où vous avez Defender for Endpoint. Les informations sont collectées pour aider à maintenir Defender for Endpoint sur iOS sécurisé, à jour, en cours d’évaluation et pour prendre en charge le service.
 
 Pour plus d’informations sur le stockage des données, voir Microsoft Defender pour le stockage et la confidentialité des données de point [de terminaison.](data-storage-privacy.md)
 
@@ -45,9 +45,9 @@ Pour plus d’informations sur les questions de confidentialité les plus couran
 
 ## <a name="required-data"></a>Données requises 
 
-Les données requises sont constituées de données qui sont nécessaires pour que Defender for Endpoint sur iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications. 
+Les données requises sont constituées de données nécessaires pour que Defender for Endpoint sur iOS fonctionne comme prévu. Ces données sont essentielles au fonctionnement du service et peuvent inclure des données relatives à l’utilisateur final, à l’organisation, à l’appareil et aux applications. 
 
-Voici la liste des types de données collectées : 
+Voici une liste des types de données collectées : 
 
 ### <a name="web-page-or-network-information"></a>Page Web ou informations réseau 
 

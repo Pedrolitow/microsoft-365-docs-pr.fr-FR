@@ -64,4 +64,4 @@ Utilisez  **l’affichage**  **Graphiques**  et Tableau pour surveiller l’avan
 - Sélectionnez  **Graphiques,** **puis Groupez par** et enfin **date d’échéance**  pour voir quelle tâche arrive à échéance.
 - Sélectionnez  **Le** tableau, puis **Groupez par** et enfin **progression**  pour trier les tâches par progression.
 
-**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  afin de savoir quand vous êtes prêt à lancer votre produit.
+**Remarque :**  Les tâches sont organisées par  **Non**  **démarré,** En cours et  **Terminé**  pour vous faire savoir quand vous êtes prêt à lancer votre produit.

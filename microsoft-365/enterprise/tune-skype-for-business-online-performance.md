@@ -32,17 +32,17 @@ ms.locfileid: "50909321"
 
 Cet article fournit des liens pour les administrateurs système qui souhaitent planifier les besoins en bande passante réseau ou qui doivent améliorer les performances de Skype Entreprise Online. 
   
-## <a name="fine-tuning-skype-for-business-online-performance"></a>Optimisation des performances de Skype Entreprise Online
+## <a name="fine-tuning-skype-for-business-online-performance"></a>Optimisation des performances Skype Entreprise Online
 
 - **Pour en savoir plus** sur les paramètres et les mesures de maintien de la qualité des appels pour votre organisation, il est important de lire qualité des médias et performances de connectivité réseau dans [Skype Entreprise Online.](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance) Cet article vous fournit des informations, si vous souhaitez utiliser ExpressRoute, sur les types de déploiement et d’autres informations dont vous aurez besoin.
     
-- Pour les déploiements locaux et **hybrides,** vous pouvez voir la bande passante requise pour la conférence rendez-vous Skype Entreprise Server, voir [Plan for dial-in conferencing in Skype for Business Server 2015](/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
+- Pour les déploiements locaux et **hybrides,** vous pouvez voir la bande passante requise pour la conférence rendez-vous Skype Entreprise Server, voir [Plan for dial-in conferencing in Skype Entreprise Server 2015](/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
     
-## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Autres méthodes pour améliorer les performances de Skype Entreprise Online
+## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Autres méthodes pour améliorer les performances Skype Entreprise Online
 
-- [ExpressRoute et QoS](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)dans Skype Entreprise Online : connectez-vous à Office 365 via une connexion réseau dédiée à l’aide d’Azure ExpressRoute pour Office 365 et Skype Entreprise Online. 
+- [ExpressRoute et QoS](/skypeforbusiness/optimizing-your-network/expressroute-and-qos-in-skype-for-business-online)dans Skype Entreprise Online : Connecter à Office 365 via une connexion réseau dédiée à l’aide d’Azure ExpressRoute pour Office 365 et Skype Entreprise Online. 
     
-- L’utilisation du Tableau de bord de qualité des appels dans Skype Entreprise [Online](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): le tableau de bord de qualité des appels (CQD) vous permet de surveiller et d’obtenir des informations sur la qualité des appels effectués à l’aide des services Skype Entreprise. 
+- L’utilisation du Tableau de bord de qualité des appels dans [Skype Entreprise Online](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard): le tableau de bord de qualité des appels (CQD) vous permet de surveiller et d’obtenir des informations sur la qualité des appels effectués à l’aide des services Skype Entreprise. 
     
 ## <a name="articles-on-setting-up-skype-for-business-online"></a>Articles sur la configuration de Skype Entreprise Online
 
@@ -50,9 +50,9 @@ Cet article fournit des liens pour les administrateurs système qui souhaitent p
     
 - [Configurer l’audioconférence pour Skype Entreprise et Microsoft Teams](/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
     
-- [Configurer des forfaits d’appels (Skype Entreprise)](/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
+- [Configurer les forfaits d’appels (Skype Entreprise)](/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     
-- [Voici ce que vous obtenez avec le système téléphonique dans Office 365](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
+- [Voici ce que vous obtenez avec les Système téléphonique dans Office 365](/skypeforbusiness/what-is-phone-system-in-office-365/here-s-what-you-get-with-phone-system)
     
 ## <a name="see-also"></a>Voir aussi
 

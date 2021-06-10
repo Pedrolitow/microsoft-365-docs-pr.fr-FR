@@ -1,5 +1,5 @@
 ---
-title: Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
+title: Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -27,13 +27,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51579049"
 ---
-# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
+# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Explorer et utiliser les rapports d’analyse sur l’utilisation de Microsoft 365
 
 Le tableau de bord vous offre un aperçu rapide des principaux indicateurs d'utilisation et d'adoption. En sélectionnant les mesures de niveau supérieur, vous pouvez accéder à des rapports qui fournissent plus de détails et d’informations. Chaque onglet de rapport contient des visualisations de données spécifiques à un aspect de l’utilisation et de l’adoption pour votre organisation. Les données collectées sont expliquées dans le titre de chaque rapport et une vignette apparaît qui contient des informations supplémentaires sur les visualisations sous l’onglet du rapport que vous affichez.
 
 Pour commencer à utiliser vos rapports, voici quelques conseils :
 
-- Utilisez les onglets de navigation sur la gauche ou sur une mesure associée dans la **page** Résumé exécutif pour accéder à chaque rapport de niveau supérieur.
+- Utilisez les onglets de navigation à gauche ou sur une mesure associée dans la **page** Résumé exécutif pour accéder à chaque rapport de niveau supérieur.
 
     ![Affiche les onglets de navigation sur la gauche](../../media/navigate-usage-analytics1.png)
 
@@ -65,13 +65,13 @@ L’utilisateur qui a insséré l’application de modèle aura la possibilité 
 
 Pour partager vos rapports, sélectionnez simplement le bouton partager ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) en haut de la page.
 
-Pour découvrir comment personnaliser les rapports, voir Personnalisation des rapports dans l’analyse de l’utilisation de [Microsoft 365.](customize-reports.md)
+Pour découvrir comment personnaliser les rapports, voir Personnalisation des rapports dans [Microsoft 365'analyse de l’utilisation.](customize-reports.md)
 
 Pour plus d'informations, consultez la documentation d'aide de Power BI :
 
-- [Concepts de base de Power BI](/power-bi/service-basic-concepts)
+- [Power BI concepts de base](/power-bi/service-basic-concepts)
 
-    Découvrez le tableau de bord, les jeux de données, les rapports et d’autres concepts Power BI.
+    En savoir plus sur le tableau de bord, les jeux de données, les rapports et d’autres Power BI concepts.
 
 - [Prise en main de Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 

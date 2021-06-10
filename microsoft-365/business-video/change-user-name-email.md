@@ -45,7 +45,7 @@ Parfois, vous devrez peut-être modifier le nom ou l’adresse e-mail d’un uti
 1. Sélectionnez **Gérer les informations de contact.**
 1. Modifiez le nom complet, puis sélectionnez **Enregistrer les modifications.**
 
-    Le nouveau nom s’affiche désormais dans Outlook applications Microsoft 365 applications.
+    Le nouveau nom s’affiche désormais dans Outlook et d’autres Microsoft 365 applications.
 
 ### <a name="add-an-email-alias"></a>Ajouter un alias de messagerie
 

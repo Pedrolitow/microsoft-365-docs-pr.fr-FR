@@ -17,13 +17,13 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52822249"
 ---
-# <a name="new-microsoft-edge-app"></a>Nouvelle Microsoft Edge application
+# <a name="new-microsoft-edge-app"></a>Nouvelle application Microsoft Edge’application
 
 Le nouveau [navigateur Microsoft Edge fournit](https://www.microsoft.com/edge) des performances de niveau mondial avec plus de confidentialité, plus de productivité et plus de valeur pendant que vous naviguez. Bureau géré Microsoft offre un aperçu public du déploiement du nouveau navigateur Edge dans votre environnement.
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Pour migrer vos appareils Bureau géré Microsoft vers le nouveau navigateur Microsoft Edge, déposez un ticket de support technique via le portail Bureau géré Microsoft web. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de conserver.
+Pour migrer vos appareils Bureau géré Microsoft vers le nouveau navigateur Microsoft Edge, déposez un ticket de support technique via le portail Bureau géré Microsoft web. Nous allons déployer le canal stable Edge dans le groupe de test lorsque vous déposez le ticket, puis le déployons dans chaque groupe de déploiement suivant toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
 
 Le [canal bêta](/deployedge/microsoft-edge-channels#beta-channel) est également disponible sur demande de validation représentative au sein de votre organisation. Bureau géré Microsoft déployera l’application selon les besoins des groupes Test et First afin que tous ces utilisateurs utilisent le canal bêta en plus du canal stable. Pour tous les autres utilisateurs qui ont besoin d’accéder au canal bêta, ajoutez-les au groupe Utilisateurs bêta de l’espace de travail moderne **- Edge** et installez-le à partir du Portail d’entreprise
 
@@ -43,7 +43,7 @@ Bureau géré Microsoft a créé un ensemble de stratégies par défaut pour Mic
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge extensions
 
-La ligne de base de sécurité pour Microsoft Edge sur Bureau géré Microsoft définit deux stratégies pour désactiver toutes les extensions Chrome et sécuriser les utilisateurs. Pour activer et déployer des extensions dans votre environnement, voir Paramètres que vous gérez. 
+La ligne de base de sécurité Microsoft Edge sur Bureau géré Microsoft définit deux stratégies pour désactiver toutes les extensions Chrome et sécuriser les utilisateurs. Pour activer et déployer des extensions dans votre environnement, voir Paramètres gérer. 
 
 #### <a name="extension-installation-blocklist"></a>Liste de blocage d’installation d’extension
 **Valeur par défaut :** Tout
@@ -142,7 +142,7 @@ Avec cette stratégie appliquée, l’expérience de première utilisation ignor
 
 ## <a name="settings-you-manage"></a>Paramètres vous gérez
 
-Vous pouvez déployer tous les paramètres Microsoft Edge qui n’ont pas été précédemment décrits à l’aide du profil Modèles d’administration dans Microsoft Intune. Pour plus d’informations, [voir Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune). Si vous souhaitez évaluer une stratégie qui n’est pas actuellement incluse dans les modèles d’administration Microsoft Edge dans Intune, vous pouvez utiliser des paramètres personnalisés pour les appareils Windows 10 dans Intune.
+Vous pouvez déployer n’importe Microsoft Edge paramètres non décrits précédemment à l’aide du profil Modèles d’administration dans Microsoft Intune. Pour plus d’informations, [voir Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune). Si vous souhaitez évaluer une stratégie qui n’est pas actuellement incluse dans les modèles d’administration Microsoft Edge dans Intune, vous pouvez utiliser des paramètres personnalisés pour les appareils Windows 10 dans Intune.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Activation d’extensions Chrome spécifiques
 

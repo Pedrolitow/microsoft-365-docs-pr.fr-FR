@@ -33,7 +33,7 @@ ms.locfileid: "51579805"
 
 Votre entreprise ou votre campagne peut faciliter la procédure pour les organismes chargés de l’application de la loi de porter des poursuites judiciaires contre des personnes pénales en ligne en ajoutant une notification de confidentialité et de consentement à votre page de signature.
 
-Vous pouvez personnaliser votre page de personnalisation. Vous pouvez également ajouter du texte pour aider vos utilisateurs à se connecter, ou pour faire pointer des exigences légales ou des restrictions pour accéder aux ressources Microsoft 365.
+Vous pouvez personnaliser votre page de personnalisation. Vous pouvez également ajouter du texte pour aider vos utilisateurs à se connecter, ou pour faire pointer des exigences légales ou des restrictions pour accéder à Microsoft 365 ressources.
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>Concevoir la personnalisation du texte sur votre page de signature
 
@@ -46,4 +46,4 @@ Les éléments que vous pouvez mettre à jour sont les éléments ci-après :
 - Logo de bannière
 - Conseil sur le nom d’utilisateur
 
-Pour obtenir des exemples d’avis de confidentialité et de consentement, voir l’annexe A de la recherche et de la saisie d’ordinateurs et l’obtention de preuves électroniques [dans des enquêtes pénales.](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)
+Pour obtenir des exemples d’avis de confidentialité et de consentement, consultez l’annexe A de la recherche et de la saisie d’ordinateurs et de l’obtention de preuves électroniques [dans des enquêtes pénales.](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)

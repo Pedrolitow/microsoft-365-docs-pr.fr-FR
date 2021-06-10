@@ -1,5 +1,5 @@
 ---
-title: Protéger vos comptes d’administrateur général Microsoft 365
+title: Protéger vos comptes Microsoft 365 administrateur général
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,7 +20,7 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Cet article fournit des informations sur la protection de l’accès administrateur général à votre abonnement Microsoft 365.
+description: Cet article fournit des informations sur la protection de l’accès administrateur général à Microsoft 365 abonnement.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 4ade5fd8070a656f976caa75c16ab92cadb7b64a
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -29,11 +29,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50929047"
 ---
-# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes d’administrateur général Microsoft 365
+# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Protéger vos comptes Microsoft 365 administrateur général
 
-*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
+*Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Les violations de sécurité d’un abonnement Microsoft 365, notamment la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’un compte d’administrateur général Microsoft 365. La sécurité dans le cloud est un partenariat entre vous et Microsoft :
+Les violations de sécurité d’un abonnement Microsoft 365, y compris la collecte d’informations et les attaques par hameçonnage, sont généralement réalisées en compromettant les informations d’identification d’Microsoft 365 compte d’administrateur général. La sécurité dans le cloud est un partenariat entre vous et Microsoft :
   
 - Les services cloud de Microsoft reposent sur une base de confiance et de sécurité. Microsoft vous fournit des contrôles de sécurité et des fonctionnalités pour vous aider à protéger vos données et applications.
     
@@ -41,30 +41,30 @@ Les violations de sécurité d’un abonnement Microsoft 365, notamment la colle
     
 Microsoft fournit des fonctionnalités pour aider à protéger votre organisation, mais elles ne sont efficaces que si vous les utilisez. Si vous ne les utilisez pas, vous risquez d’être vulnérable aux attaques. Pour protéger vos comptes d’administrateur général, Microsoft est là pour vous aider avec des instructions détaillées pour :
   
-1. Créez des comptes d’administrateur général Microsoft 365 dédiés et utilisez-les uniquement si nécessaire.
+1. Créez des Microsoft 365 administrateur général dédiés et utilisez-les uniquement si nécessaire.
     
-2. Configurez l’authentification multifacteur pour vos comptes d’administrateur général Microsoft 365 dédiés et utilisez la forme d’authentification secondaire la plus forte.
+2. Configurez l’authentification multifacteur pour Microsoft 365 comptes d’administrateur général dédiés et utilisez la forme d’authentification secondaire la plus forte.
     
 > [!Note]
 > Bien que cet article soit axé sur les comptes d’administrateur général, vous devez déterminer si des comptes supplémentaires avec des autorisations étendues pour accéder aux données de votre abonnement, tels que les comptes d’administrateur eDiscovery ou d’administrateur de sécurité ou de conformité, doivent être protégés de la même manière. <br > Un compte d’administrateur général peut être créé sans ajouter de licences.
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Étape 1. Créer des comptes d’administrateur général Microsoft 365 dédiés et les utiliser uniquement si nécessaire
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Étape 1. Créer des comptes Microsoft 365 administrateur général dédiés et les utiliser uniquement si nécessaire
 
 Il existe relativement peu de tâches administratives, telles que l’attribution de rôles à des comptes d’utilisateurs, qui nécessitent des privilèges d’administrateur général. Par conséquent, au lieu d’utiliser quotidiennement des comptes d’utilisateurs qui ont été affectés au rôle d’administrateur global, utilisez les étapes suivantes :
   
-1. Déterminez l’ensemble des comptes d’utilisateurs qui ont reçu le rôle d’administrateur global. Vous pouvez le faire dans le Centre d’administration Microsoft 365 ou avec la commande Azure Active Directory PowerShell pour Graph suivante :
+1. Déterminez l’ensemble des comptes d’utilisateurs qui ont reçu le rôle d’administrateur global. Vous pouvez le faire dans le Centre d’administration Microsoft 365 ou avec l’annuaire Azure Active (Azure AD) PowerShell suivant pour Graph commande :
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
-2. Connectez-vous à votre abonnement Microsoft 365 à l’aide d’un compte d’utilisateur qui a reçu le rôle d’administrateur global.
+2. Connectez-vous à Microsoft 365 abonnement avec un compte d’utilisateur qui a reçu le rôle d’administrateur global.
     
-3. Créez jusqu’à quatre comptes d’utilisateur d’administrateur général dédiés au maximum. **Utilisez des mots de passe forts d’au moins 12 caractères.** Pour plus [d’informations, voir](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) Créer un mot de passe fort. Stockez les mots de passe des nouveaux comptes dans un emplacement sécurisé. 
+3. Créez jusqu’à quatre comptes d’utilisateur d’administrateur général dédiés. **Utilisez des mots de passe forts d’au moins 12 caractères.** Pour plus [d’informations, voir](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) Créer un mot de passe fort. Stockez les mots de passe des nouveaux comptes dans un emplacement sécurisé. 
     
 4. Attribuez le rôle d’administrateur général à chacun des nouveaux comptes d’utilisateur d’administrateur général dédiés.
     
-5. Se connectez à Microsoft 365.
+5. Se Microsoft 365.
     
 6. Connectez-vous avec l’un des nouveaux comptes d’utilisateur d’administrateur général dédiés.
     
@@ -72,9 +72,9 @@ Il existe relativement peu de tâches administratives, telles que l’attributio
     
   - Supprimez le rôle d’administrateur global.
     
-  - Attribuez des rôles d’administrateur au compte qui sont appropriés à la fonction et à la responsabilité de cet utilisateur. Pour plus d’informations sur les différents rôles d’administrateur dans Microsoft 365, voir [à propos des rôles d’administrateur.](/office365/admin/add-users/about-admin-roles)
+  - Attribuez des rôles d’administrateur au compte qui sont appropriés à la fonction et à la responsabilité de cet utilisateur. Pour plus d’informations sur les différents rôles d’administrateur Microsoft 365, voir [à propos des rôles d’administrateur.](/office365/admin/add-users/about-admin-roles)
     
-8. Se connectez à Microsoft 365.
+8. Se Microsoft 365.
     
 Les résultats doivent être :
   
@@ -86,12 +86,12 @@ Les résultats doivent être :
 
 - Tous les autres comptes d’utilisateurs qui gèrent votre abonnement quotidiennement ont des rôles d’administrateur associés à leurs responsabilités.
     
-À partir de maintenant, vous vous connectez avec les comptes d’administrateur général dédiés uniquement pour les tâches qui nécessitent des privilèges d’administrateur général. Toutes les autres administrations de Microsoft 365 doivent être réalisées en attribuant d’autres rôles d’administration à des comptes d’utilisateurs.
+À partir de maintenant, vous vous connectez avec les comptes d’administrateur général dédiés uniquement pour les tâches qui nécessitent des privilèges d’administrateur général. Toutes les autres Microsoft 365 administration doivent être réalisées en attribuant d’autres rôles d’administration à des comptes d’utilisateurs.
   
 > [!NOTE]
-> Cela nécessite des étapes supplémentaires pour vous dé connectez en tant que compte d’utilisateur quotidien et connectez-vous à l’aide d’un compte d’administrateur général dédié. Toutefois, cette opération ne doit être effectuée qu’occasionnellement pour les opérations d’administrateur général. Pensez que la récupération de votre abonnement Microsoft 365 après une violation de compte d’administrateur général nécessite beaucoup plus d’étapes.
+> Cela nécessite des étapes supplémentaires pour vous dé connectez en tant que compte d’utilisateur quotidien et avec un compte d’administrateur général dédié. Toutefois, cette opération ne doit être effectuée qu’occasionnellement pour les opérations d’administrateur général. La récupération de votre abonnement Microsoft 365 suite à une violation de compte d’administrateur général nécessite beaucoup plus d’étapes.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Étape 2. Configurer l’authentification multifacteur pour vos comptes d’administrateur général Microsoft 365 dédiés
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Étape 2. Configurer l’authentification multifacteur pour vos comptes Microsoft 365 administrateur général dédiés
 
 L’authentification multifacteur (MFA) nécessite des informations supplémentaires au-delà du nom de compte et du mot de passe. Microsoft 365 prend en charge ces méthodes de vérification supplémentaires :
   
@@ -109,17 +109,17 @@ L’authentification multifacteur (MFA) nécessite des informations supplémenta
 >Pour les organisations qui doivent respecter les normes du National Institute of Standards and Technology (NIST), l’utilisation d’un appel téléphonique ou de méthodes de vérification supplémentaires basées sur des SMS est restreinte. Cliquez [ici](https://pages.nist.gov/800-63-FAQ/#q-b01) pour plus d’informations.
 >
 
-Si vous êtes une petite entreprise qui utilise des comptes d’utilisateurs stockés uniquement dans le cloud (le modèle d’identité cloud uniquement), configurez l’ation [MFA](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) pour configurer l' usage de l’pertinence à l’aide d’un appel téléphonique ou d’un code de vérification par SMS envoyé à un smartphone pour chaque compte d’administrateur général dédié.
+Si vous êtes une petite entreprise qui utilise des comptes d’utilisateurs stockés uniquement dans le cloud (le modèle d’identité cloud uniquement), configurez l’appelez-moi en mode [MFA](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) à l’aide d’un appel téléphonique ou d’un code de vérification par SMS envoyé à un smartphone pour chaque compte d’administrateur général dédié.
     
-Si vous êtes une grande organisation qui utilise un modèle d’identité hybride Microsoft 365, vous avez davantage d’options de vérification. Si vous avez déjà mis en place l’infrastructure de sécurité pour une méthode d’authentification secondaire plus [forte,](../admin/security-and-compliance/set-up-multi-factor-authentication.md) configurez l’authentification multifacteur et configurez chaque compte d’administrateur général dédié pour la méthode de vérification appropriée.
+Si vous êtes une grande organisation qui utilise un modèle Microsoft 365 identité hybride, vous avez davantage d’options de vérification. Si vous avez déjà mis en place l’infrastructure de sécurité pour une méthode d’authentification secondaire plus [forte,](../admin/security-and-compliance/set-up-multi-factor-authentication.md) configurez l’authentification multifacteur et configurez chaque compte d’administrateur général dédié pour la méthode de vérification appropriée.
   
-Si l’infrastructure de sécurité pour la méthode de vérification renforcée souhaitée n’est pas en place et ne fonctionne pas pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes d’administrateur général dédiés avec l’authentification MFA à l’aide de l’application Microsoft Authenticator, d’un appel téléphonique ou d’un code de vérification de message texte envoyé à un smartphone pour vos comptes d’administrateur général comme mesure de sécurité intermédiaire. Ne laissez pas vos comptes d’administrateur général dédiés sans la protection supplémentaire fournie par l’mf.
+Si l’infrastructure de sécurité pour la méthode de vérification renforcée souhaitée n’est pas en place et ne fonctionne pas pour Microsoft 365 MFA, nous vous recommandons vivement de configurer des comptes d’administrateur général dédiés avec l’appelez-moi à l’aide de l’application Microsoft Authenticator, d’un appel téléphonique ou d’un code de vérification de message texte envoyé à un smartphone pour vos comptes d’administrateur général comme mesure de sécurité intermédiaire. Ne laissez pas vos comptes d’administrateur général dédiés sans la protection supplémentaire fournie par l’mf.
   
-Pour plus d’informations, voir [mFA pour Microsoft 365.](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
+Pour plus d’informations, [consultez l’mf pour Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-Pour vous connecter aux services Microsoft 365 avec mfa et PowerShell, consultez les articles suivants :
+Pour vous connecter à Microsoft 365 services avec mfa et PowerShell, consultez les articles suivants :
 
-- [PowerShell pour Microsoft 365 pour les comptes d’utilisateur, les groupes et les licences](connect-to-microsoft-365-powershell.md)
+- [PowerShell for Microsoft 365 for user accounts, groups, and licenses](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](/microsoftteams/teams-powershell-install)
 - [Exchange Online](/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
@@ -131,7 +131,7 @@ Utilisez ces méthodes supplémentaires pour vous assurer que votre compte d’a
   
 ### <a name="privileged-access-workstation"></a>Station de travail à accès privilégié
 
-Pour vous assurer que l’exécution des tâches hautement privilégiées est aussi sécurisée que possible, utilisez une station de travail à accès privilégié.. Un paw est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que la configuration de Microsoft 365 qui nécessite un compte d’administrateur général. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation internet ou la messagerie, il est mieux protégé contre les attaques et les menaces Internet.
+Pour vous assurer que l’exécution des tâches hautement privilégiées est aussi sécurisée que possible, utilisez une station de travail à accès privilégié.. Une paw est un ordinateur dédié qui est utilisé uniquement pour les tâches de configuration sensibles, telles que Microsoft 365 configuration nécessitant un compte d’administrateur général. Étant donné que cet ordinateur n’est pas utilisé quotidiennement pour la navigation internet ou la messagerie, il est mieux protégé contre les attaques et les menaces Internet.
   
 Pour obtenir des instructions sur la façon de configurer une paw, voir [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices) .
 
@@ -141,15 +141,15 @@ Reportez-vous à la rubrique [Sécurisation de l’accès privilégié pour les 
 
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-Plutôt que d’attribuer définitivement le rôle d’administrateur général à vos comptes d’administrateur général, vous pouvez utiliser Azure AD Privileged Identity Management (PIM) pour activer l’attribution à la demande et juste-à-temps du rôle d’administrateur général lorsqu’il est nécessaire.
+Au lieu d’attribuer définitivement le rôle d’administrateur général à vos comptes d’administrateur général, vous pouvez utiliser Azure AD Privileged Identity Management (PIM) pour activer l’attribution à la demande et juste-à-temps du rôle d’administrateur général lorsqu’il est nécessaire.
   
-Vos comptes d’administrateur général ne sont plus des administrateurs permanents, mais des administrateurs éligibles. Le rôle d’administrateur général est inactif jusqu’à ce que quelqu’un en a besoin. Vous terminez ensuite un processus d’activation pour ajouter le rôle d’administrateur général au compte d’administrateur général pendant un laps de temps prédéterminé. À l’expiration du délai, PIM supprime le rôle d’administrateur général du compte d’administrateur général.
+Vos comptes d’administrateur général ne sont plus des administrateurs permanents, mais des administrateurs éligibles. Le rôle d’administrateur général est inactif jusqu’à ce que quelqu’un en a besoin. Vous terminez ensuite un processus d’activation pour ajouter le rôle d’administrateur général au compte d’administrateur général pendant un laps de temps prédéterminé. Lorsque le délai expire, PIM supprime le rôle d’administrateur général du compte d’administrateur général.
   
 L’utilisation de PIM et de ce processus réduit considérablement le temps que vos comptes d’administrateur général sont vulnérables aux attaques et à l’utilisation par des utilisateurs malveillants.
 
 PIM est disponible avec Azure Active Directory Premium P2, qui est inclus avec Microsoft 365 E5. Vous pouvez également acheter des licences Azure Active Directory Premium P2 individuelles pour vos comptes d’administrateur.
   
-Pour plus d’informations, [voir Azure AD Privileged Identity Management.](/azure/active-directory/active-directory-privileged-identity-management-configure)
+Pour plus d’informations, [voir Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
   
 
 ### <a name="privileged-access-management"></a>Gestion des accès privilégiés
@@ -168,9 +168,9 @@ Pour activer la gestion des accès privilégiés, voir [Configurer la gestion de
 
 Pour plus d’informations, voir [Privileged access management](/office365/securitycompliance/privileged-access-management-overview).
 
-### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Logiciel de gestion des événements et des informations de sécurité (SIEM) pour la journalisation Microsoft 365
+### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Logiciel de gestion des événements et des informations de sécurité (SIEM) pour la journalisation Microsoft 365 données
 
-Le logiciel SIEM exécuté sur un serveur effectue une analyse en temps réel des alertes et des événements de sécurité créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure des alertes et des événements de sécurité Microsoft 365 dans ses fonctions d’analyse et de rapport, intégrez Azure AD à SEIM. Consultez [l’introduction à l’intégration des journaux Azure.](/azure/security/security-azure-log-integration-overview)
+Le logiciel SIEM exécuté sur un serveur effectue une analyse en temps réel des alertes et des événements de sécurité créés par les applications et le matériel réseau. Pour permettre à votre serveur SIEM d’inclure Microsoft 365 alertes et événements de sécurité dans ses fonctions d’analyse et de rapport, intégrez Azure AD à SEIM. Voir [introduction à Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Étape suivante
 
@@ -182,4 +182,4 @@ Si vous êtes en train de définir l’identité de votre abonnement Microsoft 3
   
 ## <a name="see-also"></a>Voir aussi
 
-[Feuille de route de sécurité Microsoft 365](/office365/securitycompliance/security-roadmap)
+[Microsoft 365 sécurité](/office365/securitycompliance/security-roadmap)

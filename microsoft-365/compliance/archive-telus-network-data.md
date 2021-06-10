@@ -19,11 +19,11 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52822176"
 ---
-# <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configurer un connecteur pour archiver les données réseau DE LASER
+# <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configurer un connecteur pour archiver les données réseau DE LASO
 
 Utilisez le connecteur TeleMessage dans le centre de conformité Microsoft 365 pour importer et archiver des données du service de messagerie courte (SMS) à partir du réseau DE DISTRIBUTION de votre organisation. Une fois que vous avez configuré et configuré un connecteur, il se connecte au réseau DE DISTRIBUTION de votre organisation une fois par jour et importe des données SMS dans des boîtes aux lettres dans Microsoft 365.
 
-Une fois SMS messages stockés dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données DE LASV. Par exemple, vous pouvez effectuer une recherche dans des messages SMS à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données DE LASV à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur réseau DROIT pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois SMS messages stockés dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 aux données DE LASV. Par exemple, vous pouvez effectuer une recherche dans des messages SMS à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données DE LASV à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur réseau DE DISTRIBUTION pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-telus-network-data"></a>Vue d’ensemble de l’archivage des données réseau CAS
 
@@ -33,7 +33,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec TeleMessage et LASUS pour configurer un connecteur réseau WORKS. Pour plus d’informations, voir [l’Archiveur réseau DE LASV.](https://www.telemessage.com/office365-activation-for-telus-network-archiver/)
 
-2. En temps réel, SMS messages provenant du réseau DE DISTRIBUTION de votre organisation sont copiés sur le site TeleMessage.
+2. En temps réel, SMS messages provenant du réseau RESO de votre organisation sont copiés sur le site TeleMessage.
 
 3. Le connecteur réseau RECUR que vous créez dans le centre de conformité Microsoft 365 se connecte au site TeleMessage tous les jours et transfère les messages SMS des 24 heures précédentes vers un emplacement stockage Azure sécurisé dans le cloud Microsoft. Le connecteur convertit également le contenu de SMS messages électroniques au format de message électronique.
 
@@ -51,7 +51,7 @@ Certaines des étapes d’implémentation requises pour archiver les données r�
 
 - Enregistrez tous les utilisateurs qui ont besoin SMS’archivage réseau DANS le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour Microsoft 365 compte.
 
-- Vos employés doivent avoir des téléphones mobiles d’entreprise et responsables sur le réseau mobileTELUS. Les messages d’archivage Microsoft 365 ne sont pas disponibles pour les appareils BYOD (Bring Your Own Devices) ou d’employés.
+- Vos employés doivent avoir des téléphones mobiles d’entreprise et responsables sur le réseau mobileTELUS. L’archivage des messages Microsoft 365 n’est pas disponible pour les appareils BYOD (Bring Your Own Devices) ou d’employés.
 
 - Le rôle Importation/Exportation de boîte aux lettres doit être attribué à l’utilisateur qui crée un connecteur réseau PRINCIPAL dans Exchange Online. Cela est nécessaire pour ajouter des connecteurs dans la page **Connecteurs** de données dans le centre Microsoft 365 conformité. Par défaut, ce rôle n’est affecté à aucun groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 

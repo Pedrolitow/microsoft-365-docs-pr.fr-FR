@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Comment activer ou désactiver la fonctionnalité de recherche du journal d’audit dans le Centre de conformité Microsoft 365 pour activer ou désactiver la possibilité pour les administrateurs de rechercher dans le journal d’audit.
+description: Comment activer ou désactiver la fonctionnalité de recherche du journal d’audit dans le centre de conformité Microsoft 365 pour activer ou désactiver la possibilité pour les administrateurs d’effectuer des recherches dans le journal d’audit.
 ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
 ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
@@ -36,12 +36,12 @@ Nous activons par défaut la journalisation d’audit pour les organisations d�
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>Avant d’activer ou de désactiver l’audit
 
-- Le rôle Journaux d’audit doit vous être attribué dans Exchange Online pour activer ou désactiver l’audit dans Microsoft 365 organisation. Par défaut, ce rôle est affecté aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page **Autorisations** du Centre d Exchange de conformité. Les administrateurs globaux Microsoft 365 sont membres du groupe de rôles Gestion de l’organisation dans Exchange Online. 
+- Le rôle Journaux d’audit doit vous être attribué dans Exchange Online pour activer ou désactiver l’audit dans Microsoft 365 organisation. Par défaut, ce rôle est attribué aux groupes de rôles Gestion de la conformité et Gestion de l’organisation dans la page **Autorisations** du Centre d Exchange de conformité. Les administrateurs globaux Microsoft 365 sont membres du groupe de rôles Gestion de l’organisation dans Exchange Online. 
 
     > [!NOTE]
     > Des autorisations doivent être attribuées aux utilisateurs Exchange Online pour activer ou désactiver l’audit. Si vous attribuez aux utilisateurs le rôle Journaux d’audit sur la page **Autorisations** du Centre de sécurité & conformité, ils ne pourront pas activer ou désactiver l’audit. Cela est dû au fait que l’cmdlet sous-jacente est Exchange Online cmdlet PowerShell. 
 
-- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, voir Rechercher dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API activité Microsoft 365 gestion, voir Prise en [Microsoft 365 API de gestion des données.](/office/office-365-management-api/get-started-with-office-365-management-apis)
+- Pour obtenir des instructions détaillées sur la recherche dans le journal d’audit, consultez la recherche dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md) Pour plus d’informations sur l’API activité Microsoft 365 gestion des données, voir Prise en [Microsoft 365 API de gestion des données.](/office/office-365-management-api/get-started-with-office-365-management-apis)
 
 - Pour vérifier que l’audit est allumé, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
 
@@ -93,7 +93,7 @@ Vous devez utiliser Exchange Online PowerShell pour désactiver l’audit.
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
-3. Après un certain temps, vérifiez que l’audit est désactivé. Il existe deux méthodes pour y parvenir :
+3. Après un certain temps, vérifiez que l’audit est désactivé. Il existe deux méthodes pour y parvenir :
 
     - Dans Exchange Online PowerShell, exécutez la commande suivante :
 

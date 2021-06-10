@@ -37,7 +37,7 @@ ms.locfileid: "51580271"
 ---
 # <a name="configure-windows-10-devices"></a>Configurer les appareils Windows 10
 
-Lors de l’installation, vous créez une stratégie d’appareil pour Windows 10 qui s’applique à tous les utilisateurs de votre organisation. Lorsqu’un utilisateur se connecte à une application Office sur son appareil Windows 10 avec son compte scolaire ou scolaire, les paramètres que vous configurez sont automatiquement appliqués pour s’assurer que l’utilisateur se connecte de manière sécurisée.
+Lors de l’installation, vous créez une stratégie d’Windows 10 qui s’applique à tous les utilisateurs de votre organisation. Lorsqu’un utilisateur se connecte à un application Office sur son appareil Windows 10 avec son compte scolaire ou scolaire, les paramètres que vous configurez sont automatiquement appliqués pour s’assurer que l’utilisateur se connecte de manière sécurisée.
   
 Nous vous recommandons d'accepter la configuration par défaut lors de l'installation. Après l’installation, vous pouvez créer d’autres stratégies et les cibler vers des groupes d’utilisateurs spécifiques.
   

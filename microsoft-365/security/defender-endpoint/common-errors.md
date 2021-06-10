@@ -1,6 +1,6 @@
 ---
 title: Erreurs courantes de l’API Microsoft Defender for Endpoint
-description: Liste des erreurs courantes de l’API Microsoft Defender for Endpoint avec descriptions.
+description: Liste des erreurs d’API De Microsoft Defender pour point de terminaison courantes avec descriptions.
 keywords: API, API Microsoft Defender pour point de terminaison, erreurs, résolution des problèmes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -33,7 +33,7 @@ ms.locfileid: "52771008"
 * Le message est un texte libre qui peut être modifié.
 * En bas de la page, vous trouverez des exemples de réponse.
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Code d’erreur |Code d’état HTTP |Message 
 :---|:---|:---

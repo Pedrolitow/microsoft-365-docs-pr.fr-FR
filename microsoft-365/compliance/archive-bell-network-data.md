@@ -27,11 +27,11 @@ Une fois que les messages SMS et MMS sont stockés dans les boîtes aux lettres 
 
 ## <a name="overview-of-archiving-bell-network-data"></a>Vue d’ensemble de l’archivage des données du réseau Bell
 
-La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données du réseau Microsoft 365.
+La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données du réseau Bell dans Microsoft 365.
 
 ![Flux de travail d’archivage du réseau Bell](../media/BellNetworkConnectorWorkflow.png)
 
-1. Votre organisation travaille avec TeleMessage et Bell pour configurer un connecteur de réseau Dent. Pour plus d’informations, voir [l’Archiveur du réseau Bell.](https://www.telemessage.com/office365-activation-for-bell-network-archiver)
+1. Votre organisation travaille avec TeleMessage et Bell pour configurer un connecteur réseau Dent. Pour plus d’informations, voir [l’Archiveur du réseau Bell.](https://www.telemessage.com/office365-activation-for-bell-network-archiver)
 
 2. En temps réel, SMS messages MMS du réseau Bell de votre organisation sont copiés sur le site TeleMessage.
 
@@ -39,7 +39,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’utilisateurs spécifiques. Un dossier nommé Archiveur réseau **SMS/MMS** Est créé dans la boîte aux lettres d’un utilisateur spécifique et les éléments y sont importés. Le connecteur fait ce mappage à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur. Chaque SMS mms contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message.
 
-   Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur, vous pouvez également définir un mappage personnalisé en téléchargeant un fichier de mappage CSV. Ce fichier de mappage contient le numéro de téléphone mobile et l’adresse Microsoft 365 courrier électronique correspondante pour les utilisateurs de votre organisation. Si vous activez à la fois le mappage d’utilisateurs automatique et le mappage personnalisé, pour chaque élément réseau De Lat; le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise les valeurs de la propriété d’adresse de messagerie de l’élément qu’il tente d’importer. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse e-mail de l’élément Réseau De La poste, l’élément n’est pas importé.
+   Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur, vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage contient le numéro de téléphone mobile et l’adresse Microsoft 365 de messagerie des utilisateurs de votre organisation. Si vous activez à la fois le mappage automatique des utilisateurs et le mappage personnalisé, pour chaque élément réseau De Lat; le connecteur examine d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise les valeurs de la propriété d’adresse de messagerie de l’élément qu’il tente d’importer. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse e-mail de l’élément Réseau De La sono, l’élément n’est pas importé.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 

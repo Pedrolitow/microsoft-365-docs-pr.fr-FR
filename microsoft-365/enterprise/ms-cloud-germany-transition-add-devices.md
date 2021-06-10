@@ -17,7 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) aux services Office 365 dans la nouvelle région de centres de données allemande.'
+description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemande.'
 ms.openlocfilehash: 21188372f03af394fe1c0e227c1adeabbad02a85
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50928155"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 **Comment savoir si mon organisation est affectée ?**
 
@@ -45,15 +45,15 @@ Pour réussir, vous devez uniquement désins inscrire et réenregistrer vos appa
 
 **Comment restaurer l’état de mon appareil après la migration ?**
 
-Pour les appareils Windows hybrides joints à Azure AD et dont l’entreprise est propriétaire et qui sont enregistrés auprès d’Azure AD, les administrateurs pourront gérer la migration de ces appareils via des flux de travail déclenchés à distance qui désinsèreront les anciens états d’appareil.
+Pour les appareils Windows hybrides joints à Azure AD et d’entreprise inscrits auprès d’Azure AD, les administrateurs pourront gérer la migration de ces appareils via des flux de travail déclenchés à distance qui désinsèreront les anciens états d’appareil.
   
-Pour tous les autres appareils, y compris les appareils Windows personnels inscrits dans Azure AD, l’utilisateur final doit effectuer ces étapes manuellement. Pour les appareils joints à Azure AD, les utilisateurs doivent avoir un compte d’administrateur local pour se désins inscrire, puis réenregistrer leurs appareils.
+Pour tous les autres appareils, y compris les appareils Windows personnels enregistrés dans Azure AD, l’utilisateur final doit effectuer ces étapes manuellement. Pour les appareils joints à Azure AD, les utilisateurs doivent avoir un compte d’administrateur local pour se désins inscrire, puis réenregistrer leurs appareils.
 
-Microsoft publiera des instructions pour la restauration de l’état de l’appareil. 
+Microsoft publiera des instructions sur la restauration de l’état de l’appareil. 
  
 **Comment savoir que tous mes appareils sont inscrits dans le cloud public ?**
 
-Pour vérifier si vos appareils sont inscrits dans le cloud public, vous devez exporter et télécharger la liste des appareils à partir du portail Azure AD vers une feuille de calcul Excel. Ensuite, filtrez les appareils inscrits (à l’aide de la colonne _registeredTime)_ après la phase de migration Distinct [de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
+Pour vérifier si vos appareils sont enregistrés dans le cloud public, vous devez exporter et télécharger la liste des appareils à partir du portail Azure AD vers une feuille de calcul Excel. Ensuite, filtrez les appareils inscrits (à l’aide de la colonne _registeredTime)_ après la phase de migration Distinct [de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
 L’inscription de l’appareil est désactivée après la migration du client et ne peut pas être activée ou désactivée. Si Intune n’est pas utilisé, connectez-vous à votre abonnement et exécutez cette commande pour réactiver l’option :
 
@@ -63,11 +63,11 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ## <a name="hybrid-azure-ad-join"></a>Jonction Azure AD Hybride
 
-### <a name="windows-down-level"></a>Windows au niveau inférieur
+### <a name="windows-down-level"></a>Windows niveau inférieur
 
-Les appareils _Windows_ de niveau inférieur sont des appareils Windows qui exécutent actuellement des versions antérieures de Windows (par exemple, Windows 8.1 ou Windows 7) ou qui exécutent des versions de Windows Server antérieures à 2019 et 2016. Si ces appareils ont été enregistrés auparavant, vous devez les désins inscrire et les réins inscrire. 
+_Windows_ de niveau inférieur sont des appareils Windows qui exécutent actuellement des versions antérieures de Windows (comme Windows 8.1 ou Windows 7) ou qui exécutent des versions de Windows Server antérieures à 2019 et 2016. Si ces appareils ont été enregistrés auparavant, vous devez les désins inscrire et les réins inscrire. 
 
-Pour déterminer si un appareil windows de bas niveau a été précédemment joint à Azure AD, utilisez la commande suivante sur l’appareil :
+Pour déterminer si un Windows niveau inférieur a été précédemment joint à Azure AD, utilisez la commande suivante sur l’appareil :
 
 ```console
 %programfiles%\Microsoft Workplace Join\autoworkplace /status
@@ -94,15 +94,15 @@ Uniquement pour les appareils qui indiquent que l’appareil est joint (en raiso
 "%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
 ```
 
-La commande précédente ne doit être exécuté qu’une seule fois par utilisateur de domaine se signant sur l’appareil windows de niveau inférieur. Cette commande doit être exécuté dans le contexte de la signature de l’utilisateur du domaine. 
+La commande précédente ne doit être exécuté qu’une seule fois par utilisateur de domaine qui se Windows sur l’appareil de bas niveau. Cette commande doit être exécuté dans le contexte de la signature de l’utilisateur du domaine. 
 
 Une attention suffisante doit être prise pour ne pas exécuter cette commande lorsque l’utilisateur se signe par la suite. Lorsque la commande précédente s’exécute, elle effacera l’état joint de l’ordinateur hybride local joint à Azure AD pour l’utilisateur qui s’est inscrit. De plus, si l’ordinateur est toujours configuré pour être joint à Azure AD hybride dans le client, il tentera d’y participer lorsque l’utilisateur se joindra à nouveau.
 
-### <a name="windows-current"></a>Windows Current
+### <a name="windows-current"></a>Windows Actuel
 
 #### <a name="unjoin"></a>Unjoin
 
-Pour déterminer si l’appareil Windows 10 a été précédemment joint à Azure AD, exécutez la commande suivante sur l’appareil :
+Pour déterminer si l’Windows 10 a été précédemment joint à Azure AD, exécutez la commande suivante sur l’appareil :
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -128,7 +128,7 @@ Uniquement pour les appareils qui indiquent que l’appareil est joint à Azure 
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-La commande précédente ne doit être exécuté qu’une seule fois dans un contexte d’administration sur l’appareil Windows.
+La commande précédente ne doit être exécuté qu’une seule fois dans un contexte d’administration sur Windows périphérique.
 
 #### <a name="hybrid-ad-joinre-registration"></a>Hybrid AD Join\Re-Registration
 
@@ -137,7 +137,7 @@ L’appareil est automatiquement joint à Azure AD sans intervention de l’util
 
 ## <a name="azure-ad-join"></a>Azure AD Join
 
-**IMPORTANT :** Le principal de service Intune sera activé après la migration commerciale, ce qui implique l’activation d’Azure AD Device Registration. Si vous avez bloqué l’inscription des appareils Azure AD avant la migration, vous devez désactiver le principal de service Intune avec PowerShell pour désactiver à nouveau l’inscription des appareils Azure AD avec le portail Azure AD. Vous pouvez désactiver le principal de service Intune avec cette commande dans le module Azure Active Directory PowerShell pour Graph.
+**IMPORTANT :** Le principal de service Intune sera activé après la migration commerciale, ce qui implique l’activation d’Azure AD Device Registration. Si vous avez bloqué l’inscription des appareils Azure AD avant la migration, vous devez désactiver le principal de service Intune avec PowerShell pour désactiver à nouveau l’inscription des appareils Azure AD avec le portail Azure AD. Vous pouvez désactiver le principal de service Intune avec cette commande dans la Azure Active Directory PowerShell pour Graph module.
 
 ```powershell
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
@@ -145,7 +145,7 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ### <a name="unjoin"></a>Unjoin
 
-Pour déterminer si l’appareil Windows 10 a été précédemment joint à Azure AD, l’utilisateur ou l’administrateur peut exécuter la commande suivante sur l’appareil :
+Pour déterminer si l’appareil Windows 10 précédemment joint à Azure AD, l’utilisateur ou l’administrateur peut exécuter la commande suivante sur l’appareil :
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -173,16 +173,16 @@ Administrateur : si l’administrateur de l’organisation souhaite déjoinder l
 %SystemRoot%\system32\dsregcmd.exe /leave
 ```
 
-La commande précédente ne doit être exécuté qu’une seule fois dans un contexte d’administration sur l’appareil Windows. 
+La commande précédente ne doit être exécuté qu’une seule fois dans un contexte d’administration sur Windows périphérique. 
 
 ### <a name="azure-ad-joinre-registration"></a>Azure AD Join/Re-Registration
 
-L’utilisateur peut joindre l’appareil à Azure AD à partir des paramètres Windows : Paramètres > Comptes > Accès Entreprise ou **Scolaire > Se connecter.**
+L’utilisateur peut joindre l’appareil à Azure AD à partir de Windows paramètres : Paramètres > Comptes > Accès Au travail ou à **l'> Connecter**.
  
 
 ## <a name="azure-ad-registered-company-owned"></a>Azure AD Registered (propriété de l’entreprise)
 
-Pour déterminer si l’appareil Windows 10 est inscrit sur Azure AD, exécutez la commande suivante sur l’appareil :
+Pour déterminer si l’Windows 10 est inscrit à Azure AD, exécutez la commande suivante sur l’appareil :
 
 ```console
 %SystemRoot%\system32\dsregcmd.exe /status
@@ -218,63 +218,63 @@ La présence de cette valeur de Registre doit bloquer l’accès à l’espace d
 
 ## <a name="android"></a>Android
 
-Pour Android, les utilisateurs doivent désins inscrire et réenregistrer leurs appareils. Pour ce faire, vous pouvez utiliser l’application Microsoft Authenticator ou l’application Portail d’entreprise. 
+Pour Android, les utilisateurs doivent désins inscrire et réenregistrer leurs appareils. Vous pouvez le faire via l’application Microsoft Authenticator ou l’application Portail d’entreprise’application. 
 
-- À partir de l’application Microsoft Authenticator, les utilisateurs peuvent passer à **Paramètres >'inscription de l’appareil.** À partir de là, les utilisateurs peuvent désins inscrire et réenregistrer leur appareil.
+- À partir de Microsoft Authenticator’application, les utilisateurs peuvent Paramètres > **inscription de l’appareil.** À partir de là, les utilisateurs peuvent désins inscrire et réenregistrer leur appareil.
  
-- À partir du portail d’entreprise, les utilisateurs peuvent se rendre sur l’onglet **Appareils** et supprimer l’appareil. Après cela, ré-inscrire l’appareil à l’aide du portail d’entreprise.
+- À partir de Portail d’entreprise, les utilisateurs peuvent se rendre sur l’onglet **Appareils** et supprimer l’appareil. Ensuite, réinscrivez l’appareil à l’aide Portail d’entreprise.
  
 - Les utilisateurs peuvent également se désins inscrire et s’inscrire à la nouvelle inscription en supprimant le compte de la page des paramètres du compte, puis en ajoutant à nouveaux le compte de travail.
 
-Pour désins inscrire et réenregistrer l’appareil sur Android à l’aide de l’application Microsoft Authenticator :
+Pour désins inscrire et réenregistrer l’appareil sur Android à l’aide Microsoft Authenticator application :
 
-1.  Ouvrez l’application Microsoft Authenticator et go to **Settings**.
+1.  Ouvrez l Microsoft Authenticator appl; et Paramètres **.**
 2.  Sélectionnez **Inscription de l’appareil.**
-3.  Désinsister l’appareil en sélectionnant **Unregister**.
+3.  Désinsinser l’appareil en sélectionnant **Désinsinsion**.
 4.  Pour **l’inscription de** l’appareil, ré-inscrivez l’appareil en tapant votre adresse e-mail, puis sélectionnez **Enregistrer.**
 
-Pour désins inscrire et réenregistrer un appareil Android avec la page Paramètres Android :
+Pour désins inscrire et réenregistrer un appareil Android à l’Paramètres page :
 
-1.  Ouvrez **Paramètres de l’appareil** et go to **Accounts**.
+1.  Ouvrez **Device Paramètres** et go to **Accounts**.
 2.  Sélectionnez le compte de travail que vous souhaitez ré-inscrire et **sélectionnez Supprimer le compte.**
 3.  Une fois le compte supprimé, dans la **page** Comptes, sélectionnez Ajouter un **compte > compte de travail.**
-4.  For **Workplace Join**, type your email address and select **Join** to complete registering the device.
+4.  Pour **Workplace Join,** tapez votre adresse e-mail et **sélectionnez Rejoindre** pour terminer l’inscription de l’appareil.
 
-Pour désins inscrire et réenregistrer l’appareil sur Android à partir du portail d’entreprise :
+Pour désins inscrire et réenregistrer l’appareil sur Android, Portail d’entreprise :
 
-1.  Lancez Le portail d’entreprise et allez dans **l’onglet Appareils.**
+1.  Lancez Portail d’entreprise et allez sur **l’onglet** Appareils.
 2.  Sélectionnez l’appareil pour voir les détails de l’appareil.
-3.  Dans le menu points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
-4.  Vous devez maintenant être déconnecté de l’application Portail d’entreprise. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
+3.  Dans le menu des points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
+4.  Vous devez maintenant être déconnecté de l’application Portail d’entreprise’application. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
 
-Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
+Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Des informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
 
 ## <a name="ios"></a>iOS
 
-Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les comptes mis en cache de Microsoft Authenticator, désinsister l’appareil et se dé dé connecter à partir des applications natives de l’appareil.
+Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les comptes mis en cache de l’Microsoft Authenticator, désinsister l’appareil et se dé dé connecter à partir de toutes les applications natives de l’appareil.
 
-### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Étape 1 : si elle est présente, supprimez le compte de l’application Microsoft Authenticator
+### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Étape 1 : si elle est présente, supprimez le compte de l’application Microsoft Authenticator client
 
-1. Appuyez sur le compte dans l’application Microsoft Authenticator.
-2. Appuyez **sur l’icône Paramètres** dans le coin supérieur droit. Si vous ne voyez pas l’icône **Paramètres,** il se peut que vous n’utilisiez pas la dernière version de Microsoft Authenticator.
+1. Appuyez sur le compte dans l Microsoft Authenticator appl;
+2. Appuyez sur **Paramètres** icône dans le coin supérieur droit. Si vous ne voyez pas **l’icône Paramètres,** il se peut que vous n’utilisiez pas la dernière version de Microsoft Authenticator.
 3. Appuyez sur **le bouton** Supprimer le compte.
 4. Appuyez **sur toutes les applications sur cet appareil.**
  
-### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Étape 2 : Désinsser l’appareil de l’application Microsoft Authenticator
+### <a name="step-2-unregister-the-device-from-the-microsoft-authenticator-app"></a>Étape 2 : Désinsser l’appareil de l’Microsoft Authenticator appel
 
 1. Appuyez sur l’icône de menu dans le coin supérieur droit.
-2. Appuyez **sur Paramètres,** puis **sur Inscription de l’appareil.**
+2. Appuyez **Paramètres** puis inscription **de l’appareil.**
 4. Si votre compte s’affiche, **appuyez sur Désinsister l’appareil** et **continuez** dans la boîte de dialogue. Vous ne devriez voir aucun compte après cela.
  
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Étape 3 : Se sortir des applications individuelles si nécessaire
 
-Les utilisateurs peuvent se rendre sur des applications individuelles telles qu’Outlook, Teams et OneDrive, et supprimer des comptes de ces applications.
+Les utilisateurs peuvent se rendre sur des applications individuelles telles que Outlook, Teams et OneDrive, et supprimer des comptes de ces applications.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Mise en place :
 
-- [Migration de Microsoft Cloud Deutschland vers les services Office 365 dans les nouvelles régions de centres de données allemandes](ms-cloud-germany-transition.md)
+- [Migration de Microsoft Cloud Deutschland vers Office 365 services dans les nouvelles régions de centres de données allemandes](ms-cloud-germany-transition.md)
 - [Aide à la migration de Microsoft Cloud Deutschland : ](https://aka.ms/germanymigrateassist)
 - [Comment opter pour une migration](ms-cloud-germany-migration-opt-in.md)
 - [Expérience client pendant la migration](ms-cloud-germany-transition-experience.md)
@@ -289,4 +289,4 @@ Applications cloud :
 
 - [Informations sur le programme de migration Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
 - [Informations sur le programme de migration Power BI](/power-bi/admin/service-admin-migrate-data-germany)
-- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)
+- [Prise en main de votre mise à niveau vers Microsoft Teams](/microsoftteams/upgrade-start-here)

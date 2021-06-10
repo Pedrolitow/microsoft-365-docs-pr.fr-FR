@@ -37,7 +37,7 @@ Vous pouvez ajouter et gérer des enregistrements DNS à l’aide des outils d�
 
 ## <a name="let-microsoft-365-manage-your-dns-records"></a>Laisser Microsoft 365 gérer vos enregistrements DNS 
 
-Découvrez comment modifier les serveurs de noms pour [configurer Microsoft 365 auprès d’un bureau d’enregistrement de domaines.](change-nameservers-at-any-domain-registrar.md)
+Découvrez comment modifier les serveurs de noms pour [configurer Microsoft 365 avec n’importe quel bureau d’enregistrement de domaines.](change-nameservers-at-any-domain-registrar.md)
 
 ## <a name="manage-your-own-dns-records"></a>Gérer vos propres enregistrements DNS
 

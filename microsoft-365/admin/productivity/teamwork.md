@@ -28,15 +28,15 @@ ms.locfileid: "51579157"
 ---
 # <a name="teamwork--people-experiences"></a>Travail d’équipe : expériences de personnes
 
-Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation de Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie travail d’équipe fait partie des mesures qui relèvent des expériences utilisateur. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
+Le Score de productivité fournit des informations sur la transformation numérique de votre organisation tout au long de son utilisation des Microsoft 365 et des expériences technologiques qui la supportent. Le score de votre organisation reflète les mesures de l’expérience des personnes et des technologies et peut être comparé aux critères d’organisations similaires aux vôtres. La catégorie travail d’équipe fait partie des mesures qui relèvent des expériences utilisateur. Pour en savoir plus, consultez la vue [d’ensemble](https://privacy.microsoft.com/privacystatement)du Score [de](productivity-score.md) productivité et lisez la déclaration de confidentialité de Microsoft.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Configuration requise
 
 Pour commencer à comprendre les informations sur le travail d’équipe, les membres de votre organisation doivent être titulaires d’une licence pour :
 
 - Microsoft Teams
 - SharePoint
-- Exchange Online
+- Exchange Online
 
 Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../manage/assign-licenses-to-users.md)
 
@@ -52,17 +52,17 @@ Nous fournissons un aperçu principal de l’expérience qui contient les mesure
 
 ### <a name="primary-insight"></a>Informations principales
 
-L’aperçu principal examine toutes les personnes qui communiquent à l’aide de courriers électroniques et de messages sur Microsoft Teams, et qui interagissent avec du contenu sur le cloud dans des espaces de travail partagés. Dans Microsoft 365, les groupes Microsoft 365 sont la base pour que les utilisateurs se rassemblent dans un espace de travail partagé avec la possibilité d’envoyer des courriers électroniques à la boîte aux lettres de groupe, de partager des fichiers sur le site d’équipe SharePoint et d’envoyer des messages de canal via Microsoft Teams.
+Le principal aperçu examine toutes les personnes qui communiquent à l’aide de messages électroniques et de messages sur Microsoft Teams, et qui interagissent avec le contenu sur le cloud dans des espaces de travail partagés. Dans Microsoft 365, les groupes Microsoft 365 sont la base pour que les personnes se rassemblent dans un espace de travail partagé avec la possibilité d’envoyer des messages électroniques à la boîte aux lettres de groupe, de partager des fichiers sur le site d’équipe SharePoint et d’envoyer des messages de canal via Microsoft Teams.
 
 :::image type="content" source="../../media/teamwork-score.png" alt-text="Graphique présentant des informations principales sur le score du travail d’équipe.":::
 
 1. **En-tête :** Fournit la mesure clé des personnes dans votre organisation qui effectuent l’une des activités suivantes :
-      - Envoi de messages électroniques à une boîte aux lettres de groupe via Exchange.
+      - Envoi de messages électroniques à une boîte aux lettres de groupe par Exchange.
       - Envoi de messages de canal via Teams
-      - Lecture et création de contenu (ce que nous appelons collectivement l’interaction de contenu) dans les sites d’équipe SharePoint.
+      - La lecture et la création de contenu (ce que nous appelons collectivement l’interaction de contenu) dans SharePoint sites d’équipe.
 
         Pourcentage de toutes les personnes de votre organisation qui effectuent l’une des activités suivantes (au sein ou en dehors des espaces de travail partagés) :
-        - Envoi d’e-mails via Exchange.
+        - Envoi de messages électroniques par Exchange.
         - Envoi de messages (messages de conversation ou de canal) sur Microsoft Teams.
         - Lecture et création de contenu sur OneDrive ou SharePoint.
 
@@ -71,9 +71,9 @@ L’aperçu principal examine toutes les personnes qui communiquent à l’aide 
 1. **Corps :** Fournit plus d’informations sur la façon dont la communication et l’interaction avec le contenu, lorsqu’elles sont réalisées dans un espace de travail partagé, peuvent avoir des résultats positifs pour la productivité au sein de votre organisation.
 2. **Visualisation (état actuel) :**
       - Barre horizontale où la partie bleue représente le pourcentage exprimé dans l’en-tête
-      - Met en évidence la fraction (numérateur/dénominateur) utilisée pour calculer le pourcentage affiché dans l’en-tête
-        - Numérateur : nombre de personnes de votre organisation qui envoient du courrier électronique à une boîte aux lettres de groupe via Exchange, OU qui envoient des messages de canal via Teams, OU qui lisent et créent du contenu dans les sites d’équipe SharePoint.
-        - Dénominateur : nombre de personnes de votre organisation qui envoient des messages électroniques via Exchange, OU qui envoient des messages (messages de conversation ou de canal) sur Microsoft Teams, OU lisent et créent du contenu sur OneDrive ou SharePoint, ET ont accès à au moins l’un des services suivants : Exchange, Microsoft Teams ou SharePoint.
+      - Temps forts la fraction (numérateur/dénominateur) utilisée pour calculer le pourcentage affiché dans l’en-tête
+        - Numérateur : nombre de personnes de votre organisation qui envoient des messages électroniques à une boîte aux lettres de groupe via Exchange, OU qui envoient des messages de canal via Teams, OU qui lisent et créent du contenu dans des sites d’équipe SharePoint.
+        - Dénominateur : nombre de personnes de votre organisation qui envoient des messages électroniques via Exchange, OU qui envoient des messages (messages de conversation ou de canal) sur Microsoft Teams, OU lisent et créent du contenu sur OneDrive ou SharePoint et ont accès à au moins l’un des services suivants : Exchange, Microsoft Teams ou SharePoint.
    - La valeur de référence homologue de la mesure clé est également affichée sous la mesure d’un pourcentage.
 3. **Afficher les ressources sur le travail d’équipe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
@@ -85,7 +85,7 @@ Le graphique suivant fournit la tendance du numérateur et le dénominateur de l
 
 ### <a name="scoring-framework"></a>Infrastructure de notation
 
-Le score de travail d’équipe de votre organisation mesure au niveau de l’agrégation (organisationnelle) si les utilisateurs communiquent de manière cohérente ou s’engagent dans l’activité des fichiers dans les espaces de travail partagés au cours des 28 derniers jours.
+Le score de travail d’équipe de votre organisation mesure au niveau de l’agrégation (organisationnelle) si les utilisateurs communiquent ou s’engagent de manière cohérente dans l’activité des fichiers dans les espaces de travail partagés au cours des 28 derniers jours.
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
@@ -102,13 +102,13 @@ Nous fournissons également des informations supplémentaires sur la façon dont
 3. **Visualisation :** La visualisation montre dans quelle mesure les personnes qui communiquent ou interagissent avec du contenu le font dans des espaces de travail partagés, comme suit :
       - **Envoi de messages** électroniques : la partie colorée et la fraction représentent le pourcentage de personnes envoyant des messages électroniques à des boîtes aux lettres de groupe. La fraction est composée des composants :
         - Numérateur : personnes envoyant des courriers électroniques à des boîtes aux lettres de groupe au cours des 28 derniers jours.
-        - Dénominateur : personnes envoyant des courriers électroniques au cours des 28 derniers jours. Il s’agit du même groupe de personnes marquées comme envoyant des courriers électroniques dans le principal aperçu du score de productivité des communications.
-      - **Envoi de messages**: la partie colorée et la fraction représentent le pourcentage de personnes envoyant des messages dans les canaux dans Microsoft Teams. La fraction est composée des composants :
+        - Dénominateur : personnes envoyant des courriers électroniques au cours des 28 derniers jours. Il s’agit du même groupe de personnes qui sont marquées comme envoyant des messages électroniques dans le principal aperçu du score de productivité des communications.
+      - **Envoi de messages**: la partie colorée et la fraction représentent le pourcentage de personnes envoyant des messages dans les canaux Microsoft Teams. La fraction est composée des composants :
         - Numérateur : personnes envoyant des messages de canal au cours des 28 derniers jours.
-        - Dénominateur : personnes envoyant des messages de conversation ou de canal au cours des 28 derniers jours. Il s’agit du même groupe de personnes qui sont marquées comme envoyant des messages dans Microsoft Teams dans l’aperçu principal de la catégorie de communication dans score de productivité.
-    - **Création de contenu**: la partie colorée et la fraction représentent le pourcentage de personnes lisant ou créant du contenu sur des sites d’équipe SharePoint Microsoft 365.
-        - Numérateur : nombre de personnes lisant ou créant du contenu sur des sites d’équipe connectés à un groupe Microsoft 365.
-        - Dénominateur : nombre de personnes ayant accès à SharePoint, qui ont lu ou créé du contenu de n’importe quel type dans les sites OneDrive ou SharePoint au cours des 28 derniers jours.
+        - Dénominateur : personnes envoyant des messages de conversation ou de canal au cours des 28 derniers jours. Il s’agit du même groupe de personnes qui sont marquées comme envoyant des messages dans Microsoft Teams dans la principale vue d’ensemble de la catégorie de communication du Score de productivité.
+    - **Création de contenu**: la partie colorée et la fraction représentent le pourcentage de personnes lisant ou créant du contenu sur Microsoft 365 SharePoint sites d’équipe.
+        - Numérateur : nombre de personnes lisant ou créant du contenu sur Microsoft 365 sites d’équipe connectés à un groupe.
+        - Dénominateur : nombre de personnes ayant accès à SharePoint, qui ont lu ou créé du contenu de n’importe quel type dans des sites OneDrive ou SharePoint au cours des 28 derniers jours.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
 ### <a name="breakdown-of-workspace-engagement-by-size-and-age"></a>Répartition de l’engagement de l’espace de travail par taille et par âge
@@ -141,23 +141,23 @@ Nous fournissons également des informations supplémentaires sur la façon dont
       - **Lecture ou création de contenu :** Pourcentage d’espaces de travail qui n’ont pas de jours/1 jour/2-3 jours/4+ jours de lecture ou de création de contenu par semaine au cours des 28 derniers jours.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
-### <a name="use-of-teams-within-microsoft-teams"></a>Utilisation des équipes dans Microsoft Teams
+### <a name="use-of-teams-within-microsoft-teams"></a>Utilisation d’équipes au sein Microsoft Teams
 
-:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Graphique qui indique le nombre d’espaces de travail partagés utilisés par Microsoft Teams.":::
+:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Graphique shows how many share workspaces are used by Microsoft Teams.":::
 
-1. **En-tête :** Indique le nombre d’espaces de travail partagés associés à une équipe Microsoft Teams.
-2. **Corps :** Fournit des informations sur la valeur de l’attachement d’une équipe Microsoft Teams aux espaces de travail partagés, pour aider à améliorer l’efficacité des personnes associées au travail d’équipe.
-3. **Visualisation :** La partie colorée du graphique de donut reflète le pourcentage d’espaces de travail associés à une équipe Microsoft Teams. Le pourcentage est calculé comme suit :
+1. **En-tête :** Indique le nombre d’espaces de travail partagés qui sont associés à Microsoft Teams’équipe.
+2. **Corps :** Fournit des informations sur la valeur d’une équipe Microsoft Teams liée aux espaces de travail partagés, pour aider à améliorer l’efficacité des personnes associées au travail d’équipe.
+3. **Visualisation :** La partie colorée du graphique de donut reflète le pourcentage d’espaces de travail sur Microsoft Teams’équipe. Le pourcentage est calculé comme suit :
 
-      - Numérateur : nombre d’espaces de travail partagés dans votre organisation qui étaient associés à une équipe Microsoft Teams au cours des 28 derniers jours
+      - Numérateur : nombre d’espaces de travail partagés au cours des 28 derniers jours au cours des 28 dernier Microsoft Teams s jours
       - Dénominateur : nombre d’espaces de travail partagés dans votre organisation au cours des 28 derniers jours
 
-        Le nombre au centre du graphique de donut représente le nombre total d’espaces de travail partagés associés à une équipe Microsoft Teams.
+        Le nombre au centre du graphique de donut représente le nombre total d’espaces de travail partagés qui sont associés à Microsoft Teams’équipe.
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher le contenu de l’aide.
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
-[Santé des applications Microsoft 365 – Expériences technologiques](apps-health.md) (article)\
+[Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\
 [Réunions : expériences de personnes](meetings.md) (article)\

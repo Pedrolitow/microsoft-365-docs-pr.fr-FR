@@ -1,7 +1,7 @@
 ---
 title: 'Rapport sur les appareils vulnérables : Gestion des menaces et des vulnérabilités'
 description: Rapport présentant les tendances des appareils vulnérables et les statistiques actuelles. L’objectif est que vous compreniez le bruit et l’étendue de l’exposition de votre appareil.
-keywords: Microsoft Defender pour les appareils vulnérables endpoint-tvm, Microsoft Defender pour point de terminaison, tvm, réduire les menaces & exposition aux vulnérabilités, réduire les menaces et vulnérabilités, surveiller la configuration de la sécurité
+keywords: Microsoft Defender pour les appareils vulnérables endpoint-tvm, Microsoft Defender pour le point de terminaison, tvm, réduire les menaces & exposition aux vulnérabilités, réduire les menaces et les vulnérabilités, surveiller la configuration de la sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -33,7 +33,7 @@ ms.locfileid: "52245479"
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
