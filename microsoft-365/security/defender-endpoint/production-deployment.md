@@ -1,6 +1,6 @@
 ---
 title: Configurer Microsoft Defender pour le déploiement de point de terminaison
-description: Découvrez comment configurer le déploiement de Microsoft Defender pour Endpoint
+description: Découvrez comment configurer le déploiement de Microsoft Defender pour endpoint
 keywords: déployer, configuration, validation de licence, configuration du client, configuration réseau
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -62,7 +62,7 @@ La vérification de l’état de la licence et si elle a été correctement mise
 
    ![Image de la page de gestion des licences Azure](images/atp-licensing-azure-portal.png)
 
-1. Vous pouvez également accéder aux abonnements de facturation dans le Centre  >  **d’administration.**
+1. Vous pouvez également accéder au Centre d’administration pour accéder **aux**  >  **abonnements de facturation.**
 
     Sur l’écran, vous verrez toutes les licences provisionées et leur état **actuel.**
 
@@ -71,7 +71,7 @@ La vérification de l’état de la licence et si elle a été correctement mise
 
 ## <a name="cloud-service-provider-validation"></a>Validation du fournisseur de services Cloud
 
-Pour accéder aux licences qui sont provisionn es pour votre entreprise et pour vérifier l’état des licences, accédez au Centre d’administration.
+Pour accéder aux licences qui sont provisionn es pour votre entreprise et vérifier l’état des licences, accédez au Centre d’administration.
 
 1. À partir du **portail partenaire,** **sélectionnez Administrer les services > Office 365**.
 
@@ -89,7 +89,7 @@ L’intégration à Microsoft Defender pour le point de terminaison est facile. 
 ## <a name="network-configuration"></a>Configuration réseau
 Si l’organisation n’exige pas que les points de terminaison utilisent un proxy pour accéder à Internet, ignorez cette section.
 
-Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender pour point de terminaison. Le capteur Microsoft Defender for Endpoint incorporé s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise les services Microsoft Windows HTTP Services (WinHTTP) pour activer la communication avec le service Cloud Microsoft Defender pour point de terminaison. Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et ne peut découvrir un serveur proxy qu’à l’aide des méthodes de découverte suivantes :
+Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windows HTTP (WinHTTP) pour signaler les données du capteur et communiquer avec le service Microsoft Defender pour point de terminaison. Le capteur Microsoft Defender for Endpoint incorporé s’exécute dans le contexte système à l’aide du compte LocalSystem. Le capteur utilise les services Microsoft Windows HTTP Services (WinHTTP) pour activer la communication avec le service Cloud Microsoft Defender pour point de terminaison. Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy de navigation Internet Windows Internet (WinINet) et peut uniquement découvrir un serveur proxy à l’aide des méthodes de découverte suivantes :
 
 **Méthodes de découverte automatique :**
 
@@ -97,7 +97,7 @@ Le capteur Microsoft Defender pour point de terminaison requiert Microsoft Windo
 
 -   WPAD (Web Proxy Autodiscovery Protocol)
 
-Si un proxy transparent ou un WPAD a été implémenté dans la topologie réseau, il n’est pas nécessaire de définir des paramètres de configuration spéciaux. Pour plus d’informations sur les exclusions d’URL de point de terminaison Microsoft Defender dans le proxy, consultez la section URL du [service](production-deployment.md#proxy-service-urls) proxy dans ce document pour obtenir la liste des URL permises ou sur configurer les paramètres de connectivité Internet et de proxy [d’appareil.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+Si un proxy transparent ou un WPAD a été implémenté dans la topologie réseau, il n’est pas nécessaire de définir des paramètres de configuration spéciaux. Pour plus d’informations sur les exclusions d’URL de point de terminaison Microsoft Defender dans le proxy, consultez la section URL du [service](production-deployment.md#proxy-service-urls) proxy dans ce document pour la liste des URL autoriser ou sur configurer les [paramètres](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)de connectivité Internet et proxy de périphérique.
 
 **Configuration manuelle du proxy statique :**
 
@@ -109,7 +109,7 @@ Si un proxy transparent ou un WPAD a été implémenté dans la topologie résea
 
 Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Microsoft Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Microsoft Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet. Le proxy statique est configurable via une stratégie de groupe. La stratégie de groupe se trouve sous :
 
- - Modèles d Windows de collecte de données et de builds d’aperçu des composants Configurez l’utilisation du proxy authentifié pour le service Expérience des utilisateurs connectés et \> \> \> télémétrie
+ - Modèles d Windows de collecte de données et de builds d’aperçu des composants Configurez l’utilisation du proxy authentifié pour le service Expériences des utilisateurs connectés et \> \> \> télémétrie
      - Définissez-le **sur Activé et** sélectionnez Désactiver **l’utilisation du proxy authentifié**
 
 1. Ouvrez la console de gestion des stratégies de groupe.
@@ -143,7 +143,7 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
 
 > [!NOTE]
 > - Cela affectera toutes les applications, y compris les services Windows qui utilisent WinHTTP avec un proxy par défaut.</br>
-> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionnent pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
+> - Les ordinateurs portables qui changent de topologie (par exemple, de bureau à domicile) ne fonctionneront pas correctement avec netsh. Utiliser la configuration statique du proxy basée sur le registre.
 
 1. Ouvrez une invite de commandes avec élévation de privilèges :
 
@@ -160,9 +160,9 @@ Utiliser netsh pour configurer un proxy statique à l’échelle du système.
    Par exemple : netsh winhttp initialiser proxy 10.0.0.6:8080
 
 
-###  <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de bas niveau
+###  <a name="proxy-configuration-for-down-level-devices"></a>Configuration du proxy pour les appareils de niveau inférieur
 
-Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’Agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
+Down-Level comprennent les stations de travail Windows 7 SP1 et Windows 8.1, ainsi que Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 et les versions de Windows Server 2016 antérieures à Windows Server CB 1803. Le proxy de ces systèmes d’exploitation est configuré dans le cadre de l’agent de gestion Microsoft pour gérer les communications entre le point de terminaison et Azure. Reportez-vous au Guide de déploiement rapide de l’agent de gestion Microsoft pour plus d’informations sur la configuration d’un proxy sur ces appareils.
 
 ### <a name="proxy-service-urls"></a>URL de service proxy
 Les URL qui incluent la version 20 sont nécessaires uniquement si vous avez des appareils Windows 10 version 1803 ou ultérieure. Par exemple, n’est nécessaire que si l’appareil est ```us-v20.events.data.microsoft.com``` Windows 10 version 1803 ou ultérieure.
@@ -177,9 +177,9 @@ La feuille de calcul téléchargeable suivante répertorie les services et les U
 |![Image miniature de la feuille de calcul DES URL de Microsoft Defender pour les points de terminaison](images/mdatp-urls.png)<br/>  | Feuille de calcul d’enregistrements DNS spécifiques pour les emplacements de service, les emplacements géographiques et le système d’exploitation. <br><br>[Téléchargez la feuille de calcul ici.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Plages d’adresses IP de système d’extrémité du service Microsoft Defender pour point de terminaison
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Plages d’adresses IP back-end du service Microsoft Defender for Endpoint
 
-Si vos périphériques réseau ne supportent pas les règles DNS, utilisez plutôt des plages IP.
+Si vos périphériques réseau ne prisent pas en charge les règles DNS, utilisez plutôt des plages IP.
 
 Defender pour le point de terminaison est intégré au cloud Azure, déployé dans les régions suivantes :
 

@@ -21,21 +21,21 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fcb7283faed6fe8c5af59cedeeb90577b557ab34
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259534"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274567"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Examen et réponse automatisés dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Si votre organisation utilise [Microsoft 365 Defender,](microsoft-365-defender.md)votre équipe des opérations de sécurité reçoit une alerte dans le centre de sécurité Microsoft 365 chaque fois qu’une activité ou un artefact malveillant ou suspect est détecté. Étant donné le flux sans fin des menaces qui peuvent survenir, les équipes de sécurité doivent souvent relever le défi de traiter le volume élevé d’alertes. Heureusement, Microsoft 365 Defender inclut des fonctionnalités d’investigation et de correction automatisées (AIR) qui peuvent aider votre équipe des opérations de sécurité à gérer les menaces plus efficacement et efficacement.
+Si votre organisation utilise [Microsoft 365 Defender,](microsoft-365-defender.md)votre équipe des opérations de sécurité reçoit une alerte dans le centre de sécurité Microsoft 365 chaque fois qu’une activité ou un artefact malveillant ou suspect est détecté. Étant donné le flux de menaces qui peut s’écouler sans fin, les équipes de sécurité doivent souvent relever le défi de traiter le volume élevé d’alertes. Heureusement, Microsoft 365 Defender inclut des fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent aider votre équipe des opérations de sécurité à traiter les menaces plus efficacement.
 
 Cet article fournit une vue d’ensemble d’AIR et inclut des liens vers les étapes suivantes et des ressources supplémentaires.
 
@@ -53,13 +53,13 @@ Regardez la vidéo suivante pour voir comment fonctionne la auto-ressource : <p>
 Dans Microsoft 365 Defender, l’examen et la réponse automatisés avec des fonctionnalités de auto-cicatrisation fonctionnent sur vos appareils, vos & de messagerie et vos identités.
  
 > [!TIP]
-> Cet article décrit le fonctionnement de l’examen et de la réponse automatisés. Pour configurer ces fonctionnalités, voir [Configurer des fonctionnalités d’investigation](m365d-configure-auto-investigation-response.md)et de réponse automatisées dans Microsoft 365 Defender.
+> Cet article décrit le fonctionnement de l’examen et de la réponse automatisés. Pour configurer ces fonctionnalités, voir Configurer les fonctionnalités d’investigation et de réponse automatisées [dans Microsoft 365 Defender.](m365d-configure-auto-investigation-response.md)
 
 ## <a name="your-own-virtual-analyst"></a>Votre propre analyste virtuel
 
-Imagine un analyste virtuel dans votre équipe des opérations de sécurité de niveau 1 ou 2. L’analyste virtuel est fidèle aux étapes recommandées par les opérations de sécurité pour examiner et corriger les menaces. L’analyste virtuel peut travailler 24 heures sur 24, 7 jours sur 7, avec une capacité illimitée et prendre en charge une charge importante d’enquêtes et de correction des menaces. Un tel analyste virtuel pourrait réduire considérablement le temps de réponse, libérant ainsi votre équipe des opérations de sécurité pour d’autres menaces importantes ou des projets stratégiques. Si ce scénario ressemble à une science fictive, ce n’est pas le cas ! Cet analyste virtuel fait partie de votre suite Microsoft 365 Defender, et son nom est examen *et réponse automatisés.*
+Imagine un analyste virtuel dans votre équipe des opérations de sécurité de niveau 1 ou 2. L’analyste virtuel est fidèle aux étapes recommandées par les opérations de sécurité pour examiner et corriger les menaces. L’analyste virtuel peut travailler 24 heures sur 24, 7 jours sur 7, avec une capacité illimitée et prendre en charge une charge importante d’examens et de correction des menaces. Un tel analyste virtuel pourrait réduire considérablement le temps de réponse, libérant ainsi votre équipe des opérations de sécurité pour d’autres menaces importantes ou des projets stratégiques. Si ce scénario ressemble à une science fictive, ce n’est pas le cas ! Cet analyste virtuel fait partie de votre suite Microsoft 365 Defender, et son nom est examen *et réponse automatisés.*
 
-Les fonctionnalités d’examen et de réponse automatisées permettent à votre équipe en charge des opérations de sécurité d’augmenter considérablement la capacité de votre organisation à gérer les alertes et les incidents de sécurité. Grâce à l’examen et à la réponse automatisés, vous pouvez réduire le coût de traitement des activités d’examen et de correction et utiliser au mieux votre suite de protection contre les menaces. Les fonctionnalités d’examen et de réponse automatisées aident votre équipe en matière d’opérations de sécurité en :
+Les fonctionnalités d’examen et de réponse automatisées permettent à votre équipe en charge des opérations de sécurité d’augmenter considérablement la capacité de votre organisation à gérer les alertes et les incidents de sécurité. Grâce à l’examen et à la réponse automatisés, vous pouvez réduire le coût de traitement des activités d’examen et de réponse et utiliser au mieux votre suite de protection contre les menaces. Les fonctionnalités d’examen et de réponse automatisées aident votre équipe en matière d’opérations de sécurité en :
 
 1. Déterminer si une menace nécessite une action.
 2. Prendre (ou recommander) toutes les actions de correction nécessaires.
@@ -91,19 +91,19 @@ Dans Microsoft 365 Defender, chaque enquête automatisée met en corrélation le
 
 |Entités |Services de protection contre les menaces  |
 |:---------|:---------|
-|Appareils (également appelés points de terminaison ou ordinateurs) |[Defender pour point de terminaison](../defender-endpoint/automated-investigations.md) |      
+|Appareils (également appelés points de terminaison ou ordinateurs) |[Defender pour le point de terminaison](../defender-endpoint/automated-investigations.md) |      
 |Utilisateurs Active Directory locaux, comportement des entités et activités     |[Defender pour l’identité](/azure-advanced-threat-protection/what-is-atp) |      
-|Contenu du courrier électronique (messages électroniques qui peuvent contenir des fichiers et des URL)     |[Defender pour Office 365](../office-365-security/defender-for-office-365.md) |
+|Contenu du courrier électronique (messages électroniques qui peuvent contenir des fichiers et des URL)     |[Defender pour Office 365](../office-365-security/defender-for-office-365.md) |
 
 > [!NOTE]
 > Toutes les alertes ne déclenchent pas une enquête automatisée, et toutes les enquêtes n’entraînent pas des actions de correction automatisées. Cela dépend de la façon dont l’examen et la réponse automatisés sont configurés pour votre organisation. Voir [Configurer les fonctionnalités d’examen et de réponse automatisées.](m365d-configure-auto-investigation-response.md)
 
 ## <a name="viewing-a-list-of-investigations"></a>Affichage d’une liste d’enquêtes
 
-Pour afficher les enquêtes, consultez la page **Incidents.** Sélectionnez un incident, puis l’onglet **Enquêtes.** Pour en savoir plus, consultez [les détails et les résultats d’une enquête automatisée.](m365d-autoir-results.md)
+Pour afficher les enquêtes, consultez la page **Incidents.** Sélectionnez un incident, puis l’onglet **Investigations.** Pour en savoir plus, consultez [les détails et les résultats d’une enquête automatisée.](m365d-autoir-results.md)
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Voir les conditions préalables à l’examen et à la réponse automatisés](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configurer l’examen et la réponse automatisés pour votre organisation](m365d-configure-auto-investigation-response.md)

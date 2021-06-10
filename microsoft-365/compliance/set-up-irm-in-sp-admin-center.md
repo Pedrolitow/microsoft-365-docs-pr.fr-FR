@@ -1,5 +1,5 @@
 ---
-title: Configurer la gestion des droits relatifs à l’information dans le centre d’administration SharePoint
+title: Configurer la Gestion des droits relatifs à l’information (Information Rights Management, IRM) dans le Centre d’administration SharePoint
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,7 +16,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
-description: Découvrez comment utiliser l’IRM SharePoint Online via Microsoft Azure services AD RMS (Active Directory Rights Management Services) (RMS) pour protéger les listes et les bibliothèques de documents SharePoint.
+description: Découvrez comment utiliser la gestion des droits SharePoint Online via Microsoft Azure Active Directory RMS (Rights Management Services) pour protéger SharePoint listes et bibliothèques de documents.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 68db84118ac8ccd7c734152aa28816db819198f7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -25,17 +25,17 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919400"
 ---
-# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Configurer la gestion des droits relatifs à l’information dans le centre d’administration SharePoint
+# <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Configurer la Gestion des droits relatifs à l’information (Information Rights Management, IRM) dans le Centre d’administration SharePoint
 
-Dans SharePoint Online, la protection IRM est appliquée aux fichiers au niveau de la liste et de la bibliothèque. Pour que votre organisation puisse utiliser la protection IRM, vous devez commencer par configurer la gestion des droits. La gestion des droits relatifs à l’information s’appuie sur le service Azure Rights Management d’Azure information protection pour chiffrer et affecter des restrictions d’utilisation. Certains plans Microsoft 365 incluent Azure Rights Management, mais pas tous. Pour en savoir plus, lisez comment les [applications et services Office peuvent prendre en charge Azure Rights Management.](/azure/information-protection/understand-explore/office-apps-services-support)
+Dans SharePoint Online, la protection IRM est appliquée aux fichiers au niveau de la liste et de la bibliothèque. Pour que votre organisation puisse utiliser la protection IRM, vous devez commencer par configurer la gestion des droits. La gestion des droits relatifs à l’information s’appuie sur le service Azure Rights Management d’Azure information protection pour chiffrer et affecter des restrictions d’utilisation. Certains Microsoft 365 incluent Azure Rights Management, mais pas tous. Pour en savoir plus, [lisez comment les applications et](/azure/information-protection/understand-explore/office-apps-services-support)les services Office la prise en charge des Azure Rights Management .
   
-## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>Activer le service IRM à l’aide du Centre d’administration SharePoint
+## <a name="turn-on-irm-service-using-sharepoint-admin-center"></a>Activer le service IRM à l’aide SharePoint’administration centrale
 
-Pour que votre organisation puisse protéger les listes et les bibliothèques SharePoint par IRM, vous devez d’abord activer le service Rights Management pour votre organisation. Pour en savoir plus sur [l’activation d’Azure Rights Management.](/information-protection/deploy-use/activate-service) Vous devez utiliser un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général pour activer le service Rights Management. Sinon, vous ne pourrez pas utiliser les fonctionnalités IRM avec SharePoint Online.
+Pour que votre organisation puisse protéger les SharePoint et les bibliothèques, vous devez d’abord activer le service Rights Management pour votre organisation. Pour en savoir plus, [consultez l’Azure Rights Management](/information-protection/deploy-use/activate-service). Vous devez utiliser un compte professionnel ou scolaire qui dispose de privilèges d’administrateur général pour activer le service Rights Management. Sinon, vous ne pourrez pas utiliser les fonctionnalités IRM avec SharePoint Online.
   
-Après avoir activé le service Rights Management, connectez-vous au Centre d’administration SharePoint pour activer IRM.
+Après avoir activé le service Rights Management, connectez-vous au centre d’administration SharePoint pour activer IRM.
   
-1. Connectez-vous en tant qu’administrateur global ou administrateur SharePoint.
+1. Connectez-vous en tant qu’administrateur global ou SharePoint administrateur.
     
 2. Sélectionnez l’icône du lanceur d’applications ![Icône du lanceur d’applications dans Office 365](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) dans la partie supérieure gauche, puis **Administrateur** pour ouvrir le centre d’administration Microsoft 365. (Si vous ne voyez pas la vignette Administrateur, vous n’avez pas d’autorisations d’administrateur dans votre organisation.) 
     
@@ -43,18 +43,18 @@ Après avoir activé le service Rights Management, connectez-vous au Centre d’
     
 4. Dans le volet gauche, choisissez les **paramètres,** puis choisissez **la page des paramètres classiques.**
     
-5. Dans la section Gestion des droits de l’information **(IRM),** choisissez Utiliser le service IRM spécifié dans votre **configuration,** puis sélectionnez Actualiser les **paramètres IRM.** Après avoir actualisé les paramètres IRM, les membres de votre organisation peuvent commencer à utiliser irm dans leurs listes et bibliothèques de documents SharePoint. Toutefois, les options pour ce faire peuvent prendre jusqu’à une heure pour apparaître dans Paramètres de la bibliothèque et Paramètres de liste.
+5. Dans la section Gestion des droits de l’information **(IRM),** choisissez Utiliser le service IRM spécifié dans votre **configuration,** puis sélectionnez Actualiser la gestion des droits **Paramètres**. Après avoir actualisé les paramètres IRM, les membres de votre organisation peuvent commencer à utiliser irm dans leurs listes SharePoint de documents et bibliothèques de documents. Toutefois, les options pour ce faire peuvent prendre jusqu’à une heure pour s’Paramètres bibliothèque et liste Paramètres.
     
-## <a name="irm-enable-sharepoint-document-libraries-and-lists"></a>Bibliothèques de documents et listes SharePoint activées par IRM
+## <a name="irm-enable-sharepoint-document-libraries-and-lists"></a>Listes et bibliothèques de documents SharePoint irm
 <a name="__toc220831191"> </a>
 
-Après l’actualisation des paramètres IRM, les propriétaires de sites peuvent protéger leurs listes et bibliothèques de documents SharePoint par IRM. Pour plus d’informations, voir [Apply Information Rights Management to a list or library](apply-irm-to-a-list-or-library.md).
+Après l’actualisation des paramètres IRM, les propriétaires de sites peuvent protéger leurs SharePoint listes et bibliothèques de documents. Pour plus d’informations, voir [Apply Information Rights Management to a list or library](apply-irm-to-a-list-or-library.md).
   
 Lorsque les propriétaires de sites activent irm pour une liste ou une bibliothèque, ils peuvent protéger tous les types de fichiers pris en charge dans cette liste ou bibliothèque. Lorsque irm est activé pour une bibliothèque, la gestion des droits s’applique à tous les fichiers de cette bibliothèque. Lorsque vous activez irm pour une liste, la gestion des droits s’applique uniquement aux fichiers joints à des éléments de liste, et non aux éléments de liste réels.
   
 Lorsque des personnes téléchargent des fichiers dans une liste ou une bibliothèque activée pour IRM, les fichiers sont chiffrés afin que seules les personnes autorisées peuvent les afficher. Chaque fichier géré par des droits contient également une licence d’émission qui impose des restrictions aux personnes qui visualisent le fichier. Les restrictions classiques incluent la lecture seule d’un fichier, la désactivation de la copie du texte, l’interdiction d’enregistrer une copie locale et l’impression du fichier. Les programmes clients qui peuvent lire les types de fichiers pris en charge par IRM utilisent la licence d’émission dans le fichier géré par des droits pour appliquer ces restrictions. C’est ainsi qu’un fichier géré par des droits conserve sa protection même après son téléchargement. Pour activer irm sur une liste ou une bibliothèque, voir Appliquer la gestion des droits d’information [à une liste ou une bibliothèque.](apply-irm-to-a-list-or-library.md)
   
-Vous ne pouvez pas créer ou modifier des documents dans une bibliothèque activée pour IRM à l’aide d’Office dans un navigateur. Au lieu de cela, une personne à la fois peut télécharger et modifier des fichiers chiffrés par IRM. Utilisez l’enregistrement et l’check-out pour gérer la  *co-auteur*  ou la authoring entre plusieurs utilisateurs. 
+Vous ne pouvez pas créer ou modifier des documents dans une bibliothèque activée pour IRM à l’Office dans un navigateur. Au lieu de cela, une personne à la fois peut télécharger et modifier des fichiers chiffrés par IRM. Utilisez l’enregistrement et l’check-out pour gérer la  *co-auteur*  ou la authoring entre plusieurs utilisateurs. 
   
 Lorsque vous téléchargez un fichier PDF à partir d’une bibliothèque protégée par IRM, Microsoft 365 crée un fichier PDF protégé. L’extension du fichier ne change pas, mais le fichier est protégé. Pour afficher ce fichier, vous aurez besoin de la visionneuse Azure Information Protection, du client Azure Information Protection complet ou d’une autre application qui prend en charge l’affichage des fichiers PDF protégés. 
   
@@ -64,7 +64,7 @@ SharePoint Online prend en charge le chiffrement des types de fichiers suivants 
     
 - Formats de fichier 97-2003 pour les programmes Microsoft Office suivants : Word, Excel et PowerPoint
     
-- Formats Office Open XML pour les programmes Microsoft Office suivants : Word, Excel et PowerPoint
+- Les Office formats Open XML pour les programmes Microsoft Office suivants : Word, Excel et PowerPoint
     
 - Format XPS (XML Paper Specification)
  
@@ -74,8 +74,8 @@ SharePoint Online prend en charge le chiffrement des types de fichiers suivants 
 ## <a name="next-steps"></a>Étapes suivantes
 <a name="__toc220831191"> </a>
 
-Une fois que vous avez activé irm pour SharePoint Online, vous pouvez commencer à appliquer la gestion des droits aux listes et bibliothèques. Pour plus d’informations, voir [Apply Information Rights Management to a list or library](apply-irm-to-a-list-or-library.md).
+Une fois que vous avez activé irm pour SharePoint Online, vous pouvez commencer à appliquer la gestion des droits aux listes et aux bibliothèques. Pour plus d’informations, voir [Apply Information Rights Management to a list or library](apply-irm-to-a-list-or-library.md).
   
-Le nouveau client de synchronisation OneDrive pour Windows prend désormais en charge la synchronisation des bibliothèques de documents SharePoint protégées par IRM et des emplacements OneDrive (à condition que le paramètre IRM de la bibliothèque n’expire pas). Pour plus d’informations ou pour commencer à déployer le nouveau client de synchronisation, voir Déployer le nouveau client de synchronisation [OneDrive pour Windows.](/onedrive/deploy-on-windows)
+Le nouveau client de synchronisation OneDrive pour Windows prend désormais en charge la synchronisation des bibliothèques de documents et des emplacements OneDrive protégés par SharePoint IRM (à condition que le paramètre IRM de la bibliothèque n’expire pas). Pour plus d’informations ou pour commencer à déployer le nouveau client de synchronisation, voir Déployer le nouveau client de synchronisation [OneDrive pour Windows](/onedrive/deploy-on-windows).
   
 [Haut de la page](set-up-irm-in-sp-admin-center.md)

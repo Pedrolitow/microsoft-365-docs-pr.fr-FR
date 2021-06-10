@@ -27,7 +27,7 @@ ms.locfileid: "50921527"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Authentification directe pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 entreprise et Office 365 Entreprise.*
+*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
 
 Les organisations désireuses d’utiliser directement leur infrastructure d’Active Directory Domain Services (AD DS) en local pour l’authentification aux applications et services sur le cloud Microsoft peuvent utiliser l’authentification directe. Cet article décrit comment configurer l’authentification unique transparente Azure AD pour votre environnement de test Microsoft 365. Voici la configuration que vous obtenez:
   
@@ -51,7 +51,7 @@ Suivez les instructions fournies dans l’article [Synchronisation de hachage de
   
 Cette configuration se compose des éléments suivants :  
   
-- Abonnement d’essai ou payant Microsoft 365 E5.
+- Microsoft 365 E5 d’essai ou payant.
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Azure AD Connect s’exécute sur APP1 pour synchroniser le domaine TESTLAB AD DS avec le client Azure AD de votre abonnement Microsoft 365 de manière périodique.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Phase 2 : Configuration de l’authentification directe pour Azure AD Connect sur APP1
@@ -94,7 +94,7 @@ Voici la configuration obtenue :
  
 Cette configuration se compose des éléments suivants : 
 
-- Un abonnement d’essai ou payant Microsoft 365 E5 avec le domaine DNS testlab.\<your domain name> Inscrit(e).
+- Un Microsoft 365 E5 d’essai ou payant avec le domaine DNS testlab.\<your domain name> Inscrit(e).
 - Un intranet d’organisation simplifié connecté à Internet, qui se compose des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure. Un agent d’authentification s’exécute sur APP1 pour traiter les demandes d’authentification directe provenant du client Azure AD de votre abonnement Microsoft 365.
 
 ## <a name="next-step"></a>Étape suivante
@@ -105,6 +105,6 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

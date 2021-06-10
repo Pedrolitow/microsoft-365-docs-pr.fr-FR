@@ -1,5 +1,5 @@
 ---
-title: Rechercher dans la boîte aux lettres & site OneDrive Entreprise pour obtenir la liste des utilisateurs avec la recherche de contenu
+title: Rechercher dans le site de & OneDrive Entreprise boîte aux lettres une liste d’utilisateurs avec la recherche de contenu
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
-description: Utilisez la recherche de contenu et le script de cet article pour rechercher des boîtes aux lettres et des sites OneDrive Entreprise pour un groupe d’utilisateurs.
+description: Utilisez la recherche de contenu et le script de cet article pour rechercher les boîtes aux lettres et OneDrive Entreprise sites pour un groupe d’utilisateurs.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 51e668438c6016a0c5f2c914dc2b2e86cc56f49e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -28,7 +28,7 @@ ms.locfileid: "50922466"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Utiliser la recherche de contenu pour rechercher une liste d’utilisateurs dans la boîte aux lettres et OneDrive Entreprise
 
-Le Centre de sécurité & conformité fournit un certain nombre d’Windows PowerShell qui vous permettent d’automatiser des tâches eDiscovery chronophages. Actuellement, la création d’une recherche de contenu dans le Centre de sécurité & conformité pour rechercher un grand nombre d’emplacements de contenu de dépositaire prend du temps et de la préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive Entreprise, puis ajouter chaque boîte aux lettres et chaque site OneDrive Entreprise à la recherche. Dans les prochaines version, cela sera plus facile à faire dans le Centre de sécurité & conformité. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à donner le nom du domaine Mon site de votre organisation (par exemple, **contoso** dans l’URL), une liste d’adresses e-mail utilisateur, le nom de la nouvelle recherche de contenu et la requête de recherche à `https://contoso-my.sharepoint.com` utiliser. Le script obtient l’URL OneDrive Entreprise pour chaque utilisateur de la liste, puis il crée et démarre une recherche de contenu qui recherche la boîte aux lettres et le site OneDrive Entreprise pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez.
+Le Centre de sécurité & conformité fournit plusieurs cmdlets Windows PowerShell qui vous permettent d’automatiser des tâches eDiscovery chronophages. Actuellement, la création d’une recherche de contenu dans le Centre de sécurité & conformité pour rechercher un grand nombre d’emplacements de contenu de dépositaire prend du temps et de la préparation. Avant de créer une recherche, vous devez collecter l’URL de chaque site OneDrive Entreprise puis ajouter chaque boîte aux lettres OneDrive Entreprise site à la recherche. Dans les prochaines version, cela sera plus facile à faire dans le Centre de sécurité & conformité. En attendant, vous pouvez utiliser le script de cet article pour automatiser ce processus. Ce script vous invite à donner le nom du domaine Mon site de votre organisation (par exemple, **contoso** dans l’URL), une liste d’adresses e-mail utilisateur, le nom de la nouvelle recherche de contenu et la requête de recherche à `https://contoso-my.sharepoint.com` utiliser. Le script obtient l’URL OneDrive Entreprise pour chaque utilisateur de la liste, puis il crée et démarre une recherche de contenu qui recherche la boîte aux lettres et le site OneDrive Entreprise pour chaque utilisateur de la liste, à l’aide de la requête de recherche que vous fournissez.
   
 ## <a name="permissions-and-script-information"></a>Autorisations et informations de script
 
@@ -36,21 +36,21 @@ Le Centre de sécurité & conformité fournit un certain nombre d’Windows Powe
 
 - N’oubliez pas d’enregistrer la liste des utilisateurs que vous créez à l’étape 2 et le script de l’étape 3 dans le même dossier. Cela facilitera l’exécuter.
 
-- Le script inclut une gestion minimale des erreurs. Son objectif principal est de rechercher rapidement et facilement la boîte aux lettres et le site OneDrive Entreprise de chaque utilisateur.
+- Le script inclut une gestion minimale des erreurs. Son objectif principal est de rechercher rapidement et facilement la boîte aux lettres et OneDrive Entreprise site de chaque utilisateur.
 
 - Les exemples de script fournis dans cette rubrique ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Étape 1 : installer SharePoint Online Management Shell
 
-La première étape consiste à installer SharePoint Online Management Shell. Vous n’avez pas besoin d’utiliser l’shell dans cette procédure, mais vous devez l’installer car il contient les conditions préalables requises par le script que vous exécutez à l’étape 3. Ces conditions préalables permettent au script de communiquer avec SharePoint Online pour obtenir les URL des sites OneDrive Entreprise.
+La première étape consiste à installer SharePoint Online Management Shell. Vous n’avez pas besoin d’utiliser l’shell dans cette procédure, mais vous devez l’installer car il contient les conditions préalables requises par le script que vous exécutez à l’étape 3. Ces conditions préalables permettent au script de communiquer avec SharePoint Online pour obtenir les URL des sites OneDrive Entreprise web.
   
 Go to [Set up the SharePoint Online Management Shell Windows PowerShell environment](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and perform Step 1 and Step 2 to install the SharePoint Online Management Shell.
   
 ## <a name="step-2-generate-a-list-of-users"></a>Étape 2 : Générer une liste d’utilisateurs
 
-Le script de l’étape 3 crée une recherche de contenu pour rechercher une liste d’utilisateurs dans les boîtes aux lettres et les comptes OneDrive. Vous pouvez simplement taper les adresses de messagerie dans un fichier texte ou exécuter une commande dans Windows PowerShell pour obtenir une liste d’adresses e-mail et les enregistrer dans un fichier (situé dans le dossier où vous enregistrerez le script à l’étape 3).
+Le script de l’étape 3 crée une recherche de contenu pour rechercher les boîtes aux lettres et OneDrive comptes pour une liste d’utilisateurs. Vous pouvez simplement taper les adresses de messagerie dans un fichier texte ou exécuter une commande dans Windows PowerShell pour obtenir une liste d’adresses e-mail et les enregistrer dans un fichier (situé dans le dossier où vous enregistrerez le script à l’étape 3).
   
-Voici une commande [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) que vous pouvez exécuter pour obtenir la liste des adresses de messagerie de tous les utilisateurs de votre organisation et l’enregistrer dans un fichier texte nommé `Users.txt` . 
+Voici une commande [PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) que vous pouvez exécuter pour obtenir la liste des adresses de messagerie de tous les utilisateurs de votre organisation et l’enregistrer dans un fichier texte nommé `Users.txt` . 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
@@ -70,7 +70,7 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
     
 - **Nom de la recherche de** contenu : nom de la recherche de contenu qui sera créée par le script. 
     
-- **Requête de recherche** : la requête de recherche qui sera utilisée avec la recherche de contenu est créée et exécuté. Pour plus d’informations sur les requêtes de recherche, voir Requêtes par mot clé et conditions de recherche [pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
+- **Requête de recherche** : la requête de recherche qui sera utilisée avec la recherche de contenu est créée et exécuté. Pour plus d’informations sur les requêtes de recherche, voir Requêtes par mot clé et [conditions de recherche pour la recherche de contenu.](keyword-queries-and-search-conditions.md)
 
 
 **Pour exécuter le script :**
@@ -187,4 +187,4 @@ Lorsque vous exécutez le script dans cette étape, il vous invite à fournir le
     
     - Requête de recherche (laissez ce vide pour renvoyer tous les éléments dans les emplacements de contenu).
     
-    Le script obtient les URL de chaque site OneDrive Entreprise, puis crée et démarre la recherche. Vous pouvez exécuter la cmdlet **Get-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell pour afficher les statistiques et les résultats de la recherche, ou vous pouvez aller à la **page** de recherche de contenu dans le Centre de sécurité & conformité pour afficher des informations sur la recherche.
+    Le script obtient les URL de chaque OneDrive Entreprise site, puis crée et démarre la recherche. Vous pouvez exécuter la cmdlet **Get-ComplianceSearch** dans le Centre de sécurité & conformité PowerShell pour afficher les statistiques et les résultats de la recherche, ou vous pouvez aller à la **page** de recherche de contenu dans le Centre de sécurité & conformité pour afficher des informations sur la recherche.

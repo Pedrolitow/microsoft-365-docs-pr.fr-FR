@@ -37,7 +37,7 @@ ms.locfileid: "52780176"
 
 1. Créez [un Stockage dans](/azure/storage/common/storage-account-overview) votre client.
 
-2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources > s’inscrire à **Microsoft.insights**.
+2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.insights**.
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
@@ -51,7 +51,7 @@ ms.locfileid: "52780176"
 
 5. Choose **Forward events to stockage Azure**.
 
-6. Tapez votre **ID Stockage de compte de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under Stockage account resource **ID:**
+6. Tapez votre **ID Stockage de ressource de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under Stockage account resource **ID:**
 
    ![Image de l’ID1 de ressource du hub d’événements](images/storage-account-resource-id.png)
 
@@ -102,6 +102,6 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
-- [API de diffusion en continu De Microsoft Defender pour les points de terminaison](raw-data-export.md)
+- [API de diffusion en continu microsoft Defender pour point de terminaison](raw-data-export.md)
 - [Diffuser des événements Microsoft Defender for Endpoint vers votre compte de stockage Azure](raw-data-export-storage.md)
 - [stockage Azure Documentation du compte](/azure/storage/common/storage-account-overview)

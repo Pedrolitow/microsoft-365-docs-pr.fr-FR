@@ -38,7 +38,7 @@ ms.locfileid: "52636265"
 
 Microsoft 365 Defender applique l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont Microsoft 365 Defender dispose dans toute la suite de produits. Cette vue donne à vos analystes de sécurité un niveau d’attaque plus large, qui les aide à mieux comprendre et traiter les menaces complexes au sein de votre organisation.
 
-La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur des appareils, des utilisateurs et des boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. 
+La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. 
 
 Vous pouvez vous rendre dans la file d’attente des incidents à partir **d’incidents & alertes** > Incidents lors du lancement rapide du centre de sécurité Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Voici un exemple.
 
@@ -52,7 +52,7 @@ La file d’attente des incidents possède des colonnes personnalisables (sélec
 
 Pour une visibilité supplémentaire en un coup d’œil, l’appellation automatique des incidents génère des noms d’incident basés sur des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 
-Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne seront pas modifiés.
@@ -71,7 +71,7 @@ Ce tableau répertorie les noms de filtres disponibles.
 |:-------|:-----|
 | Affectée à | Vous pouvez choisir d’afficher les alertes qui vous sont affectées ou celles gérées par l’automatisation. |
 | Catégories | Choisissez des catégories pour vous concentrer sur des tactiques, des techniques ou des composants d’attaque spécifiques. |
-| Classification | Filtrer les incidents en fonction des classifications définies des alertes associées. Les valeurs incluent des alertes vraies, des alertes fausses ou non définies. |
+| Classification | Filtrez les incidents en fonction des classifications définies des alertes associées. Les valeurs incluent des alertes vraies, des alertes fausses ou non définies. |
 | Confidentialité des données | Certaines attaques se concentrent sur le ciblage de données sensibles ou précieuses. En appliquant un filtre pour déterminer si des données confidentielles sont impliquées dans l’incident, vous pouvez rapidement déterminer si des informations sensibles ont été compromises et hiérarchiser les problèmes. <br><br> Applicable uniquement si la protection des informations Microsoft est activée.|
 | Groupe d’appareils | Filtrer par groupes d’appareils définis. |
 | État de l’examen | Filtrer les incidents selon l’état de l’examen automatisé.  |
@@ -83,7 +83,7 @@ Ce tableau répertorie les noms de filtres disponibles.
 | Statut | Vous pouvez choisir de limiter la liste des incidents affichés en fonction de leur état pour identifier ceux qui sont actifs ou résolus. |
 |||
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Une fois que vous avez déterminé quel incident nécessite la priorité la plus élevée, sélectionnez-le et :
 

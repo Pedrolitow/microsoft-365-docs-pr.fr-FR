@@ -43,14 +43,14 @@ Sur au moins deux appareils qui rencontrent le même problème, obtenez le fichi
 
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de commandes,** puis cliquez **sur Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis cliquez **sur Exécuter en tant qu’administrateur.**
 
     c. Entrez les informations d’identification de l’administrateur ou approuvez l’invite.
 
 2. Accédez au répertoire Microsoft Defender. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
 
 > [!NOTE]
-> Si vous exécutez une version mise à jour de [la plateforme Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
+> Si vous exécutez une version mise à jour de la plateforme [Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
 
 3. Tapez la commande suivante, puis appuyez sur **Entrée**  
 

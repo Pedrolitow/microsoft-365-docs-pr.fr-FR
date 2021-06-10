@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la découverte d’appareils
 description: Découvrez comment tirer parti de la découverte de points de terminaison dans Microsoft 365 Defender pour rechercher des appareils non utilisés dans votre réseau
-keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils non utilisés
+keywords: détection d’appareils, découverte, passif, proactif, réseau, visibilité, serveur, station de travail, intégration, appareils nonmanagés
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -66,7 +66,7 @@ Il existe deux modes de découverte :
 
 ### <a name="basic-discovery"></a>Découverte de base 
 
-Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et en extraient les informations de l’appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n’est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré. 
+Dans ce mode, les points de terminaison collectent passivement des événements dans votre réseau et extraient les informations de l’appareil. La découverte de base utilise SenseNDR.exe binaire pour la collecte de données réseau passives et aucun trafic réseau n’est initié. Les points de terminaison extraient simplement les données de chaque trafic réseau visible par un appareil intégré. 
 
 ### <a name="standard-discovery"></a>Découverte standard 
 
@@ -81,7 +81,7 @@ La découverte standard utilise divers scripts PowerShell pour sonder activement
 Vous pouvez modifier et personnaliser vos paramètres de découverte, pour plus d’informations, voir [Configurer la découverte d’appareils.](configure-device-discovery.md)
 
 > [!NOTE]
-> Le moteur de découverte fait la distinction entre les événements réseau reçus dans le réseau d’entreprise et en dehors du réseau d’entreprise. Les appareils qui ne sont pas connectés à des réseaux d’entreprise ne seront pas découverts ni répertoriés dans l’inventaire des appareils. 
+> Le moteur de découverte fait la distinction entre les événements réseau reçus dans le réseau d’entreprise et en dehors du réseau d’entreprise. Les appareils qui ne sont pas connectés à des réseaux d’entreprise ne seront pas découverts ou répertoriés dans l’inventaire des appareils. 
 
 
 
@@ -135,7 +135,7 @@ DeviceNetworkEvents
 ## <a name="changed-behavior"></a>Comportement modifié
 La section suivante répertorie les modifications que vous observerez dans Microsoft Defender pour le point de terminaison et/ou Microsoft 365 centre de sécurité lorsque cette fonctionnalité est activée. 
  
-1.  Les appareils qui ne sont pas intégrés à Microsoft Defender au point de terminaison sont censés apparaître dans les requêtes d’inventaire, de recherche avancée et d’API. Cela peut augmenter considérablement la taille des résultats de la requête. 
+1.  Les appareils qui ne sont pas intégrés à Microsoft Defender au point de terminaison sont censés apparaître dans l’inventaire des appareils, le recherche avancée et les requêtes API. Cela peut augmenter considérablement la taille des résultats de la requête. 
     1. Les tables « DeviceInfo » et « DeviceNetworkInfo » dans la recherche avancée vont maintenant contenir l’appareil détecté. Vous pouvez filtrer ces appareils à l’aide de l’attribut « OnboardingStatus ».
 
     2. Les appareils détectés sont censés apparaître dans les résultats de requête de l’API de diffusion en continu. Vous pouvez filtrer ces appareils à l’aide `OnboardingStatus` du filtre dans votre requête. 
@@ -145,6 +145,6 @@ La section suivante répertorie les modifications que vous observerez dans Micro
 
 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 - [Configurer la découverte d’appareils](configure-device-discovery.md)
 - [FAQ sur la découverte d’appareils](device-discovery-faq.md)

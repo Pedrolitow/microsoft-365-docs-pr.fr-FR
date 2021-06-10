@@ -56,7 +56,7 @@ GET /api/machines/find(timestamp={time},key={IP})
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 
 
 ## <a name="request-body"></a>Corps de la demande
@@ -64,7 +64,7 @@ Vide
 
 ## <a name="response"></a>Réponse
 En cas de réussite et si l’ordinateur existe : 200 - OK.
-Si aucun ordinateur n’a été trouvé - 404 - In trouvé.
+Si aucun ordinateur n’est trouvé - 404 - In trouvé.
 
 
 ## <a name="example"></a>Exemple
@@ -82,7 +82,7 @@ Content-type: application/json
 
 Voici un exemple de réponse.
 
-La réponse retourne la liste de tous les appareils qui ont signalé cette adresse IP dans les 16 minutes qui s’viennent avant et après l’timestamp. 
+La réponse retourne la liste de tous les appareils qui ont signalé cette adresse IP dans les 16 minutes qui s’viennent avant et après l’heure. 
 
 ```
 HTTP/1.1 200 OK

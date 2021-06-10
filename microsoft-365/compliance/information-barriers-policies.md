@@ -157,7 +157,7 @@ Vous pouvez également définir des segments à l’aide d’un paramètre « no
 
 | Syntaxe | Exemple |
 |:---------|:----------|
-| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut tout le monde qui n’est pas dans *sales*. La **partie -ne** de la cmdlet fait référence à « n’est pas égal à ». |
+| `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"` | Dans cet exemple, nous avons défini un segment appelé *NotSales* qui inclut toutes les personnes qui ne sont pas dans *sales*. La **partie -ne** de la cmdlet fait référence à « n’est pas égal à ». |
 
 En plus de définir des segments à l’aide de « equals » ou « not equals », vous pouvez définir un segment à l’aide des paramètres « equals » et « not equals ». Vous pouvez également définir des filtres de groupe complexes à l’aide d’opérateurs *logiques AND* *et OR.*
 
@@ -195,7 +195,7 @@ Par exemple, supposons que vous vouliez bloquer les communications entre le segm
 
     | Syntaxe | Exemple |
     |:--------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie appelée *Sales-Research* pour un segment appelé *Ventes*. Lorsqu’elle est active et appliquée, cette stratégie empêche les utilisateurs des ventes de communiquer avec des personnes dans un segment appelé *Recherche.*  |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsBlocked "segment2name"` | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie appelée *Sales-Research* pour un segment appelé *Ventes*. Lorsqu’elle est active et appliquée, cette stratégie empêche les utilisateurs des ventes de communiquer avec des personnes dans un segment appelé *Recherche*.  |
 
 2. Pour définir votre deuxième segment de blocage, utilisez de nouveau la cmdlet **New-InformationBarrierPolicy** avec le paramètre **SegmentsBlocked,** cette fois avec les segments inversés.
 
@@ -220,7 +220,7 @@ Par exemple, supposons que vous vouliez bloquer les communications entre le segm
 
     | Syntaxe | Exemple |
     |:---------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie qui  permet au segment *Recherche* de communiquer uniquement avec les ressources humaines *et la fabrication.* |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> Dans cet exemple, nous avons défini une stratégie qui  permet au *segment* Recherche de communiquer uniquement avec les ressources humaines et *la fabrication.* |
 
     Répétez cette étape pour chaque stratégie que vous souhaitez définir pour permettre à des segments spécifiques de communiquer uniquement avec certains autres segments spécifiques.
 
@@ -229,7 +229,7 @@ Par exemple, supposons que vous vouliez bloquer les communications entre le segm
    - (Si nécessaire) [Définir une stratégie pour bloquer les communications entre segments](#scenario-1-block-communications-between-segments) 
    - (Une fois toutes vos stratégies définies) [Appliquer des stratégies de obstacle à l’information](#part-3-apply-information-barrier-policies)
 
-## <a name="part-3-apply-information-barrier-policies"></a>Partie 3 : appliquer des stratégies de obstacle aux informations
+## <a name="part-3-apply-information-barrier-policies"></a>Partie 3 : appliquer des stratégies de obstacle à l’information
 
 Les stratégies d’obstacle à l’information ne sont pas en vigueur tant que vous ne les avez pas définies sur l’état actif, puis que vous n’avez pas appliqué les stratégies.
 
@@ -271,8 +271,8 @@ Des ressources sont disponibles pour vous aider à gérer vos stratégies de obs
 
 - En cas de problème avec les obstacles à l’information, voir [Résolution des problèmes d’obstacles aux informations.](information-barriers-troubleshooting.md)
 - Pour arrêter l’application des stratégies, voir [Arrêter une application de stratégie.](information-barriers-edit-segments-policies.md#stop-a-policy-application)
-- Pour supprimer une stratégie de obstacle à l’information, voir [Supprimer une stratégie.](information-barriers-edit-segments-policies.md#remove-a-policy)
-- Pour apporter des modifications à des segments ou des stratégies, voir [Modifier (ou supprimer) les stratégies d’obstacle à l’information.](information-barriers-edit-segments-policies.md)
+- Pour supprimer une stratégie d’obstacle à l’information, voir [Supprimer une stratégie.](information-barriers-edit-segments-policies.md#remove-a-policy)
+- Pour apporter des modifications à des segments ou des stratégies, voir [Modifier (ou supprimer) des stratégies d’obstacle aux informations.](information-barriers-edit-segments-policies.md)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Exemple : services, segments et stratégies de Contoso
 
@@ -290,7 +290,7 @@ Contoso compte cinq départements : Ressources Humaines, Ventes, Marketing, Rec
 | Recherche | RH, Marketing, Fabrication | Ventes |
 | Fabrication | RH, Marketing | Toute personne autre que rh ou marketing |
 
-Pour cette structure, le plan de Contoso inclut trois stratégies d’obstacle à l’information :
+Pour cette structure, le plan de Contoso inclut trois stratégies de obstacle à l’information :
 
 1. Une stratégie conçue pour empêcher les ventes de communiquer avec la recherche (et une autre stratégie pour empêcher la recherche de communiquer avec les ventes).
 

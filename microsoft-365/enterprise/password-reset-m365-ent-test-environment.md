@@ -27,11 +27,11 @@ ms.locfileid: "50921491"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 pour les entreprises.*
+*Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
 La réinitialisation de mot de passe en libre-service (SSPR) d’Azure Active Directory (Azure AD) permet aux utilisateurs de réinitialiser ou de déverrouiller leurs mots de passe ou leurs comptes.
 
-Cet article explique comment configurer et tester les réinitialisations de mot de passe dans votre environnement de test Microsoft 365.
+Cet article explique comment configurer et tester les réinitialisations de mot de passe dans Microsoft 365 environnement de test.
 
 La configuration de SSPR implique trois phases :
 - [Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -41,7 +41,7 @@ La configuration de SSPR implique trois phases :
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles de la pile du Guide de laboratoire de test Microsoft 365 pour entreprise, allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -65,12 +65,12 @@ La fonction de réécriture du mot de passe doit être activée pour qu’il soi
   
 ## <a name="phase-3-configure-and-test-password-reset"></a>Étape 3 : Configuration et test de la réinitialisation de mot de passe
 
-Dans cette phase, configurez la réinitialisation du mot de passe dans le client Azure AD par le biais de l’appartenance à un groupe, puis vérifiez qu’elle fonctionne.
+Dans cette phase, configurez la réinitialisation du mot de passe dans le client Azure AD via l’appartenance à un groupe, puis vérifiez qu’elle fonctionne.
 
 Tout d’abord, activez la réinitialisation de mot de passe pour les comptes d’un groupe Azure AD spécifique.
 
 1. Dans une instance privée de votre navigateur, ouvrez [https://portal.azure.com](https://portal.azure.com), puis connectez-vous avec les informations d’identification de votre compte Administrateur général.
-2. Dans le portail Azure, sélectionnez **Groupe Groupes Azure Active Directory**  >    >  **Nouveau.**
+2. Dans le portail Azure, **sélectionnez Azure Active Directory**  >    >  **Groupe Nouveau groupe.**
 3. Définissez le **Type de groupe** sur **Sécurité**, le **Nom du groupe** sur **PWReset** et le **Type d’appartenance** sur **Affecté**.
 4. Sélectionnez **Membres,** recherchez et **sélectionnez Utilisateur 3,** **sélectionnez Sélectionner,** puis **créez.**
 5. Fermez le volet **Groupes**.
@@ -100,6 +100,6 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

@@ -38,7 +38,7 @@ Le blocage de boucle de commentaires, également appelé [](/microsoft-365/secur
 
 ## <a name="how-feedback-loop-blocking-works"></a>Fonctionnement du blocage de la boucle de commentaires
 
-Lorsqu’un comportement ou un fichier suspect est détecté, par exemple par [Antivirus Microsoft Defender,](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)des informations sur cet artefact sont envoyées à plusieurs classifieurs. Le moteur de boucle de protection rapide inspecte et met en corrélation les informations avec d’autres signaux pour déterminer s’il faut bloquer un fichier. La vérification et la classification des artefacts se produisent rapidement. Cela se traduit par un blocage rapide des programmes malveillants confirmés et entraîne la protection dans l’ensemble de l’écosystème. 
+Lorsqu’un comportement ou un fichier suspect est détecté, par exemple par [Antivirus Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), les informations sur cet artefact sont envoyées à plusieurs classifieurs. Le moteur de boucle de protection rapide inspecte et met en corrélation les informations avec d’autres signaux pour déterminer s’il faut bloquer un fichier. La vérification et la classification des artefacts se produisent rapidement. Cela entraîne un blocage rapide des programmes malveillants confirmés et entraîne la protection dans l’ensemble de l’écosystème. 
 
 Grâce à une protection rapide, une attaque peut être arrêtée sur un appareil, d’autres appareils de l’organisation et des appareils d’autres organisations, à mesure qu’une attaque tente d’élargir sa position.
 

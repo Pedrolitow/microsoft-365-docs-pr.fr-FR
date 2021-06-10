@@ -95,10 +95,10 @@ Aucune modification apportée à ces zones :
 Consultez également la section **Informations connexes** au bas de cet article.
 
 > [!IMPORTANT]
-> Le Microsoft 365 sécurité de l’entreprise ( <https://security.microsoft.com> ) combine les fonctionnalités de sécurité dans <https://securitycenter.windows.com> , et <https://protection.office.com> . Toutefois, ce que vous voyez dépend de votre abonnement. Si vous n’avez que Microsoft Defender pour Office 365 (plan 1 ou 2), par exemple en tant qu’abonnements autonomes, vous ne pouvez pas afficher les fonctionnalités de sécurité pour les points de terminaison et les clients Defender pour Office Plan 1 ne peuvent pas afficher des éléments tels que Analyses de menaces.
+> Le portail Microsoft 365 sécurité ( <https://security.microsoft.com> ) combine les fonctionnalités de sécurité dans <https://securitycenter.windows.com> , et <https://protection.office.com> . Toutefois, ce que vous voyez dépend de votre abonnement. Si vous n’avez que Microsoft Defender pour Office 365 (plan 1 ou 2), par exemple en tant qu’abonnements autonomes, vous ne pouvez pas afficher les fonctionnalités de sécurité pour les points de terminaison et les clients Defender pour Office Plan 1 ne peuvent pas afficher des éléments tels que Analyses de menaces.
 
 > [!TIP]
-> Toutes les Exchange Online Protection (EOP) seront incluses dans Microsoft 365 Defender, car EOP est un élément principal de Defender pour Office 365.
+> Toutes Exchange Online Protection (EOP) seront incluses dans Microsoft 365 Defender, car EOP est un élément principal de Defender pour Office 365.
 
 ## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Page d’accueil de Defender
 
@@ -162,7 +162,7 @@ Suivez et examinez les menaces contre l’e-mail, le suivi des campagnes et autr
 
 Afficher des rapports, modifier vos paramètres, et modifier les rôles d’un utilisateur.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Menu de lancement rapide pour Microsoft 365 et de rapports Defender, sur le côté gauche du centre de sécurité.":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Menu de lancement rapide pour Microsoft 365 d’autorisations et de rapports Defender, sur le côté gauche du centre de sécurité.":::
 
 > [!NOTE]
 > Pour les utilisateurs de Defender pour  Office 365, vous pouvez désormais gérer et faire pivoter les clés DKIM (DomainKeys Identified Mail) via Microsoft 365 Defender : ou accéder aux règles de stratégie & stratégies de menace <https://security.microsoft.com/threatpolicy>  \>  \> **DKIM**.

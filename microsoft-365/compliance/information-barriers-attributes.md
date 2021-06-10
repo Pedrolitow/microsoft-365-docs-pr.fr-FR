@@ -1,6 +1,6 @@
 ---
 title: Attributs pour les stratégies d’obstacle aux informations
-description: Cet article est une référence pour les attributs de compte d’utilisateur Azure Active Directory que vous pouvez utiliser pour définir des segments d’obstacles à l’information.
+description: Cet article est une référence pour les Azure Active Directory de compte d’utilisateur que vous pouvez utiliser pour définir des segments d’obstacles à l’information.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -22,12 +22,12 @@ ms.locfileid: "50919730"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributs pour les stratégies d’obstacle aux informations
 
-Certains attributs dans Azure Active Directory peuvent être utilisés pour segmenter les utilisateurs. Une fois les segments définis, ces segments peuvent être utilisés comme filtres pour les stratégies d’obstacle à l’information. Par exemple, vous pouvez utiliser **Service** pour définir des segments d’utilisateurs par service au sein de votre organisation (en supposant qu’aucun employé ne travaille pour deux services en même temps).
+Certains attributs de Azure Active Directory peuvent être utilisés pour segmenter les utilisateurs. Une fois les segments définis, ces segments peuvent être utilisés comme filtres pour les stratégies d’obstacle à l’information. Par exemple, vous pouvez utiliser **Service** pour définir des segments d’utilisateurs par service au sein de votre organisation (en supposant qu’aucun employé ne travaille pour deux services en même temps).
 
 Cet article explique comment utiliser des attributs avec des obstacles à l’information et fournit une liste d’attributs qui peuvent être utilisés. Pour en savoir plus sur les obstacles aux informations, consultez les ressources suivantes :
 
 - [Obstacles aux informations](information-barriers.md)
-- [Définir des stratégies pour les obstacles aux informations dans Microsoft Teams](information-barriers-policies.md)
+- [Définir des stratégies pour les obstacles à l’information Microsoft Teams](information-barriers-policies.md)
 - [Modifier (ou supprimer) des stratégies de cloisonnement de l’information](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Comment utiliser des attributs dans les stratégies de obstacle à l’information
@@ -38,16 +38,16 @@ Les attributs répertoriés dans cet article peuvent être utilisés pour défin
 
 2. Assurez-vous que les comptes d’utilisateurs ont des valeurs remplies pour les attributs que vous avez sélectionnés à l’étape 1. Affichez les détails du compte d’utilisateur et, si nécessaire, modifiez les comptes d’utilisateur pour inclure des valeurs d’attribut. 
 
-    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir Configurer les propriétés du compte d’utilisateur avec [Office 365 PowerShell.](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
+    - Pour modifier plusieurs comptes (ou utiliser PowerShell pour modifier un seul compte), voir Configurer les propriétés du compte d’utilisateur [Office 365 PowerShell.](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-    - Pour modifier un compte unique, voir Ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide d’Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Pour modifier un compte unique, voir Ajouter ou mettre à jour les informations de profil d’un utilisateur à [l’aide Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 3. [Définissez des segments à l’aide de PowerShell,](information-barriers-policies.md#define-segments-using-powershell)comme dans les exemples suivants :
 
     |**Exemple**|**Cmdlet**|
     |:----------|:---------|
     | Définir un segment appelé Segment1 à l’aide de l’attribut Department | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
-    | Définissez un segment appelé SegmentA à l’aide de l’attribut MemberOf (supposons que cet attribut contient des noms de groupe, tels que « BlueGroup ») | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
+    | Définissez un segment appelé SegmentA à l’aide de l’attribut MemberOf (supposons que cet attribut contient des noms de groupe, tels que « BlueGroup »). | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
     | Définissez un segment appelé DayTraders à l’aide d’ExtensionAttribute1 (supposons que cet attribut contient des titres de poste, tels que « DayTrader ») | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
@@ -57,11 +57,11 @@ Les attributs répertoriés dans cet article peuvent être utilisés pour défin
 
 Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les obstacles aux informations.
 
-|**Nom de la propriété Azure Active Directory <br/> (nom complet LDAP)**|**Nom de la propriété Exchange**|
+|**Azure Active Directory de la propriété <br/> (nom complet LDAP)**|**Exchange de la propriété**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| Company | Company |
-| Département | Département |
+| Société | Société |
+| Service | Service |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |
 | ExtensionAttribute3 | CustomAttribute3 |
@@ -96,6 +96,6 @@ Le tableau suivant répertorie les attributs que vous pouvez utiliser avec les o
 
 ## <a name="resources"></a>Ressources
 
-- [Définir des stratégies pour les obstacles aux informations dans Microsoft Teams](information-barriers-policies.md)
+- [Définir des stratégies pour les obstacles à l’information Microsoft Teams](information-barriers-policies.md)
 - [Résolution des problèmes de cloisonnement de l’information](information-barriers-troubleshooting.md)
 - [Obstacles aux informations](information-barriers.md)

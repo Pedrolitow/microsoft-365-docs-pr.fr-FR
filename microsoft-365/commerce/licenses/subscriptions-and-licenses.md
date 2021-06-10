@@ -58,7 +58,7 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
 |Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne. <br/> Pour en savoir plus sur le SLA de cette tâche à accomplir, voir [« Configuration... » messages dans le centre Microsoft 365'administration.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne a accès aux fonctionnalités associées à la licence.  <br/> |
-|Microsoft 365 Apps for enterprise  <br/> |La personne peut télécharger Office applications sur cinq Mac ou PC, cinq tablettes et cinq smartphones au plus.  <br/> |
+|Applications Microsoft 365 for entreprise  <br/> |La personne peut télécharger Office applications sur cinq Mac ou PC, cinq tablettes et cinq smartphones.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Comprendre les licences pour les boîtes aux lettres non-utilisateur
 

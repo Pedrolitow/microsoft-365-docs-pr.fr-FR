@@ -52,7 +52,7 @@ ms.locfileid: "52780164"
 
 5. Choose **Forward events to Azure Event Hubs**.
 
-6. Tapez **le nom de vos Hubs d’événements** et votre ID de ressource Event **Hubs.**
+6. Tapez le **nom de vos Hubs d’événements** et votre ID de ressource Event **Hubs.**
 
    Pour obtenir votre ID de ressource **Event Hubs,** rendez-vous sur votre page d’espace de noms Azure Event Hubs sous l’onglet Propriétés [d’Azure](https://ms.portal.azure.com/) > > copiez le texte sous **L’ID** de ressource :
 
@@ -78,7 +78,7 @@ ms.locfileid: "52780164"
 
 - Chaque message de hub d’événements dans Azure Event Hubs contient la liste des enregistrements.
 
-- Chaque enregistrement contient le nom de l’événement, le moment où Microsoft Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
+- Chaque enregistrement contient le nom de l’événement, le moment où Microsoft Defender pour le point de terminaison a reçu l’événement, le client qu’il appartient (vous obtenez uniquement des événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
 
 - Pour plus d’informations sur le schéma des événements Microsoft Defender for Endpoint, consultez [la vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 

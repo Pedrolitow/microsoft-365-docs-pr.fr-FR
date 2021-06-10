@@ -1,5 +1,5 @@
 ---
-title: Déplacement de données principales vers de nouvelles géos de centres de données Microsoft 365
+title: Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: Découvrez les nouvelles géos de centres de données Office 365 et découvrez comment utiliser l’option de résidence des données pour demander un déplacement de vos données principales vers une nouvelle géo.
+description: Découvrez les nouvelles Office 365 de centres de données et comment utiliser l’option de résidence des données pour demander un déplacement de vos données principales vers une nouvelle géo.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f752956506df98ea71d0d02886d14dc719ed9413
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -22,15 +22,15 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50921605"
 ---
-# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Déplacement de données principales vers de nouvelles géos de centres de données Microsoft 365
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données
 
-Nous continuons à ouvrir de nouvelles géos de centres de données pour les services Microsoft 365. Ces nouvelles régions de centre de données permettent d'accroître la capacité et le nombre de ressources de calcul pour prendre en charge la demande continue des clients et l'augmentation de l'utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. 
+Nous continuons à ouvrir de nouvelles géos de centres de données pour Microsoft 365 services. Ces nouvelles régions de centre de données permettent d'accroître la capacité et le nombre de ressources de calcul pour prendre en charge la demande continue des clients et l'augmentation de l'utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. 
 
 Les données client essentielles sont un terme qui fait référence à un sous-ensemble de données client, notamment : 
-- Contenu de boîte aux lettres Exchange Online (corps du courrier électronique, entrées de calendrier et contenu des pièces jointes des e-mails)
-- Contenu du site SharePoint Online et fichiers stockés dans ce site
+- Exchange Online contenu de boîte aux lettres (corps du courrier électronique, entrées de calendrier et contenu des pièces jointes)
+- SharePoint Contenu du site en ligne et fichiers stockés dans ce site
 - Fichiers téléchargés vers OneDrive Entreprise
-- Messages de conversation Teams, y compris les messages privés, les messages de canal et les images utilisées dans les conversations
+- Teams messages de conversation, y compris les messages privés, les messages de canal et les images utilisées dans les conversations
   
 Les clients existants dont les données client essentielles sont stockées dans une région de centre de données existante ne sont pas concernés par le lancement de la nouvelle région de centre de données. Aucune fonction, fonctionnalité ou certification de conformité unique n'est fournie avec la nouvelle région de centre de données. En tant que client de l'une de ces deux régions, vous bénéficierez de la même qualité de service, ainsi que des mêmes performances et contrôles de sécurité qu'auparavant. Nous proposons aux clients existants répertoriés dans le tableau ci-dessous une option pour demander une migration anticipée des données client essentielles de leur organisation au repos vers leur nouvelle géodécenter de données.
   
@@ -43,14 +43,14 @@ Les clients existants dont les données client essentielles sont stockées dans 
 |**Royaume-Uni**| Union européenne | Royaume-Uni | Septembre 2016 |
 |**Corée du Sud**| Asie/Pacifique | Corée du Sud | Avril 2017 |
 |**France**| Union européenne | France | Mars 2018 |
-|**Émirats arabes unis**| Union européenne | Émirats arabes unis | Juin 2019 |
-|**Afrique du Sud**| Union européenne | Afrique du Sud | Juillet 2019 |
-|**Suisse, Liechtenstein**| Union européenne | Suisse | Décembre 2019 |
-|**Allemagne**| Union européenne | Allemagne | Décembre 2019 |
-|**Norvège**| Union européenne | Norvège | Avril 2020 |
-|**Brésil**| Amériques | Brésil | Novembre 2020 |
+|**Émirats arabes unis**| Union européenne | Émirats arabes unis | Juin 2019 |
+|**Afrique du Sud**| Union européenne | Afrique du Sud | Juillet 2019 |
+|**Suisse, Liechtenstein**| Union européenne | Suisse | Décembre 2019 |
+|**Allemagne**| Union européenne | Allemagne | Décembre 2019 |
+|**Norvège**| Union européenne | Norvège | Avril 2020 |
+|**Brésil**| Amériques | Brésil | Novembre 2020 |
 
-Depuis le 1er octobre 2020, les clients avec un abonnement Office 365 Éducation inclus dans le client ne sont pas éligibles pour la migration.
+Depuis le 1er octobre 2020, 2020 clients avec un abonnement Office 365 Éducation inclus dans le client ne sont pas éligibles pour la migration.
 
 La liste complète de l'ensemble des régions de centre de données, des centres de données et l'emplacement des données client au repos est disponible via les [cartes interactives de centre de données](https://office.com/datamaps). 
   
@@ -66,7 +66,7 @@ Les déplacements de données sont des opérations de service principales qui on
 
 Les déplacements de données vers la nouvelle géo de centres de données sont effectués sans frais supplémentaires pour le client.
     
-## <a name="related-topics"></a>Rubriques connexes 
+## <a name="related-topics"></a>Voir aussi 
  
 [Procédure de demande d’un déplacement de données](request-your-data-move.md)
     

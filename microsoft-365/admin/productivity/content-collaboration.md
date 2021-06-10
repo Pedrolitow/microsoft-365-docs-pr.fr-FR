@@ -48,7 +48,7 @@ Un aspect clé de la transformation numérique est la façon dont les personnes 
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Calcul du score de collaboration de contenu
 
-Nous fournissons un aperçu principal qui contient les mesures clés pour la collaboration de contenu dans votre organisation. Ensuite, une infrastructure de notation détaillée ci-dessous est utilisée pour calculer le score de votre organisation.
+Nous fournissons un aperçu principal qui contient les mesures clés pour la collaboration de contenu dans votre organisation. Ensuite, une infrastructure de notation détaillée ci-dessous est utilisée pour ces mesures afin de calculer le score de votre organisation.
 
 > [!NOTE]
 > Le 22 avril 2021, nous avons modifié le calcul de la mesure collaborateurs. Cela affecte l’aperçu [principal,](#primary-insight)l’aperçu [de la collaboration](#number-of-files-collaborated-on)sur les fichiers et la façon dont le score de collaboration de contenu est mesuré. Cette modification permet de réduire le bruit dans les données provenant d’agents non humains (ou bots) de Microsoft et d’autres applications tierces, ce qui permet d’obtenir un score plus précis et plus actionnable.
@@ -84,10 +84,10 @@ Les types pris en compte pour ces informations incluent les fichiers Word, Excel
         - Numérateur : nombre de personnes qui créent, modifient, téléchargent, synchronisent, archivent, copient ou déplacent des fichiers en ligne dans OneDrive ou SharePoint au cours des 28 derniers jours</br>
         - Dénominateur : nombre de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours. </br> 
       - **Collaborateurs :**</br>
-        - Numérateur : nombre de personnes qui ont travaillé sur des fichiers en ligne OneDrive ou SharePoint au cours des 28 derniers jours</br>
+        - Numérateur : nombre de personnes ayant travaillé sur des fichiers en ligne OneDrive ou SharePoint au cours des 28 derniers jours</br>
         - Dénominateur : nombre de personnes ayant eu accès à OneDrive ou SharePoint pendant au moins 1 des 28 derniers jours
 
-    - La valeur de référence homologue pour chacun des lecteurs, créateurs et collaborateurs est également affichée sous la mesure d’un pourcentage. En d’autres termes, la valeur du nombre de créateurs est affichée sous forme de pourcentage du nombre de personnes ayant accès à OneDrive ou SharePoint.
+    - La valeur de référence homologue pour chacun des lecteurs, créateurs et collaborateurs est également affichée sous la mesure d’un pourcentage. En d’autres termes, la valeur du nombre de créateurs s’affiche sous la forme d’un pourcentage du nombre de personnes ayant accès à des OneDrive ou SharePoint.
     
 1. **Lien vers des ressources :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
@@ -106,7 +106,7 @@ Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
 ## <a name="explore-how-your-organization-collaborates"></a>Découvrir comment votre organisation collabore
 
-Nous vous fournissons également des informations qui vous permettent de mieux comprendre la façon dont votre organisation collabore sur du contenu. Ces mesures supplémentaires ne contribuent pas directement à votre score de productivité, mais vous aident à créer un plan d’action dans le cadre de votre transformation numérique afin d’optimiser le mode de travail des personnes.
+Nous vous fournissons également des informations qui vous aident à gagner en visibilité sur la façon dont votre organisation collabore sur du contenu. Ces mesures supplémentaires ne contribuent pas directement à votre score de productivité, mais vous aident à créer un plan d’action dans le cadre de votre transformation numérique afin d’optimiser le mode de travail des personnes.
 
 ### <a name="creating-files-in-onedrive-or-sharepoint"></a>Création de fichiers dans OneDrive ou SharePoint
 
@@ -128,7 +128,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
 :::image type="content" source="../../media/emailattachments.png" alt-text="Utilisation de pièces jointes de courrier électronique.":::
 
-1. **En-tête : Temps forts** pourcentage de personnes qui utilisent des pièces jointes dans des e-mails qui n’ont pas été enregistrées dans OneDrive ou SharePoint.
+1. **En-tête** : Temps forts pourcentage de personnes qui utilisent des pièces jointes dans des e-mails qui n’ont pas été enregistrées dans OneDrive ou SharePoint.
 2. **Corps :** Fournit des informations sur la valeur du partage de liens vers des fichiers en ligne du point de vue de la collaboration et de la sécurité.
 3. **Visualisation :** La répartition de la visualisation est destinée à représenter la mesure dans laquelle les personnes qui attachent du contenu dans des e-mails utilisent différents modes (fichiers non sur OneDrive ou SharePoint, liens vers des fichiers en ligne et liens incorporés dans le courrier électronique) :
       - **Joindre des fichiers :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes utilisant des pièces jointes dans les e-mails.
@@ -149,10 +149,10 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 1. **En-tête : Temps forts** pourcentage de personnes qui ont accès à des OneDrive ou SharePoint partagent des fichiers en externe.
 2. **Corps :** Fournit des informations sur les administrateurs&#39; la possibilité de modifier les paramètres de partage de fichiers dans l’organisation afin d’activer le niveau de collaboration le mieux adapté à votre organisation.
 3. **Visualisation :** Représente la mesure dans laquelle les personnes qui ont accès OneDrive ou SharePoint partagent des fichiers en interne ou en externe :
-      - **En externe :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en externe.
+      - **En externe :** La partie bleue (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en externe.
         -  Numérateur : nombre de personnes avec qui des fichiers ont été partagés en externe au cours des 28 derniers jours
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
-      - **En interne uniquement :** La partie bleue (couleur) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes qui ont accès à OneDrive ou SharePoint et partagent des fichiers en interne uniquement.
+      - **En interne uniquement :** La partie bleue (colorée) de la barre et la fraction (numérateur/dénominateur) de la barre représentent le pourcentage de personnes ayant accès à OneDrive ou SharePoint et qui partagent des fichiers en interne uniquement.
         - Numérateur : nombre de personnes qui ont partagé des fichiers en interne uniquement au cours des 28 derniers jours
         - Dénominateur : nombre total de personnes ayant eu accès à OneDrive ou SharePoint au moins 1 des 28 derniers jours.
 4. **Lien vers des ressources :** Sélectionnez ce lien pour afficher le contenu de l’aide.
@@ -197,6 +197,6 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Communication – Expériences des personnes](communication.md) (article)\
 [Réunions : expériences de personnes](meetings.md) (article)\
-[Mobilité : expériences de](mobility.md) personnes (article)\
+[Mobilité : expériences utilisateur](mobility.md) (article)\
 [Contrôles de confidentialité pour le Score de productivité](privacy.md) (article)\
 [Travail d’équipe : expériences de](teamwork.md) personnes (article)

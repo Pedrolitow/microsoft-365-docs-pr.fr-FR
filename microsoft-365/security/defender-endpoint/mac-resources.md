@@ -105,7 +105,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Configuration|Activer/désactiver l’envoi automatique d’échantillons    |`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`       |
 |Configuration|Ajouter un nom de menace à la liste autorisée      |`mdatp threat allowed add --name [threat-name]`                                   |
 |Configuration|Supprimer un nom de menace de la liste autorisée |`mdatp threat allowed remove --name [threat-name]`                                |
-|Configuration|Liste de tous les noms de menace autorisés              |`mdatp threat allowed list`                                                       |
+|Configuration|Liste de tous les noms de menaces autorisés              |`mdatp threat allowed list`                                                       |
 |Configuration|Activer la protection PUA                     |`mdatp threat policy set --type potentially_unwanted_application -- action block` |
 |Configuration|Désactiver la protection PUA                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
 |Configuration|Activer le mode audit pour la protection PUA      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
@@ -118,7 +118,7 @@ Les tâches importantes, telles que le contrôle des paramètres du produit et l
 |Protection   |Faire une analyse rapide                            |`mdatp scan quick`                                                                |
 |Protection   |Faire une analyse complète                             |`mdatp scan full`                                                                 |
 |Protection   |Annuler une analyse à la demande en cours           |`mdatp scan cancel`                                                               |
-|Protection   |Demander une mise à jour de l’intelligence de la sécurité     |`mdatp definitions update`                                                        |
+|Protection   |Demander une mise à jour des informations de sécurité     |`mdatp definitions update`                                                        |
 |PEPT          |Ajouter une balise de groupe à l’appareil. PEPT balises sont utilisées pour gérer les groupes d’appareils. Pour plus d’informations, visitez /microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |PEPT          |Supprimer une balise de groupe de l’appareil               |`mdatp edr tag remove --tag-name [name]`                                          |
 |PEPT          |Ajouter un ID de groupe                               |`mdatp edr group-ids --group-id [group]`                                          |
@@ -160,4 +160,4 @@ Pour activer lacompletion automatique dans zsh :
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informations du portail Microsoft Defender pour les points de terminaison
 
-PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour endpoint, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans le Centre de sécurité Microsoft Defender pour Endpoint.
+PEPT fonctionnalités pour [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sont désormais arrivées, sur le blog Microsoft Defender pour point de terminaison, fournit des instructions détaillées sur ce à quoi vous devez vous attendre dans Microsoft Defender pour le Centre de sécurité des points de terminaison.

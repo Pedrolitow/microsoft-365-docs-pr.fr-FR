@@ -33,33 +33,33 @@ ms.locfileid: "51935796"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Le tableau du schéma de recherche avancée contient des informations sur les requêtes effectuées sur des objets Active Directory, tels que des utilisateurs, des groupes, des appareils et `IdentityQueryEvents` des domaines. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!TIP]
-> Pour plus d'informations sur les types d'événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
+> Pour plus d’informations sur les types d’événements (valeurs) pris en charge par une table, utilisez la référence de schéma intégrée disponible `ActionType` dans le centre de sécurité.
 
 Pour plus d’informations sur les autres tables du schéma de repérage avancé, [consultez la référence de repérage avancé](advanced-hunting-schema-tables.md).
 
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | DateHeure | Date et heure d’enregistrement de l’événement |
-| `ActionType` | string | Type d'activité qui a déclenché l'événement. Pour plus [d'informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
-| `Application` | string | Application qui a effectué l'action enregistrée |
+| `ActionType` | string | Type d’activité qui a déclenché l’événement. Pour plus [d’informations, voir](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) la référence du schéma dans le portail |
+| `Application` | string | Application qui a effectué l’action enregistrée |
 | `QueryType` | string | Type de requête, tel que QueryGroup, QueryUser ou EnumerateUsers |
-| `QueryTarget` | string | Nom de l'utilisateur, du groupe, de l'appareil, du domaine ou tout autre type d'entité interrogé |
+| `QueryTarget` | string | Nom de l’utilisateur, du groupe, de l’appareil, du domaine ou tout autre type d’entité interrogé |
 | `Query` | string | Chaîne utilisée pour exécuter la requête |
 | `Protocol` | string | Protocole utilisé pendant la communication |
-| `AccountName` | string | Nom d'utilisateur du compte |
+| `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountDomain` | string | Domaine du compte |
-| `AccountUpn` | string | Nom d'utilisateur principal (UPN) du compte |
+| `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
 | `AccountSid` | string | Identificateur de sécurité (SID) du compte |
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
-| `AccountDisplayName` | string | Nom de l'utilisateur du compte affiché dans le carnet d'adresses. En règle générale, une combinaison d'un prénom ou d'un prénom donné, d'une initiation intermédiaire et d'un nom ou d'un nom de famille. |
+| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
 | `DeviceName` | string | Nom de domaine complet (FQDN) du point de terminaison |
 | `IPAddress` | string | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées |
-| `Port` | string | Port TCP utilisé pendant la communication |
+| `Port` | string | Port TCP utilisé lors de la communication |
 | `DestinationDeviceName` | string | Nom de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
 | `DestinationIPAddress` | string | Adresse IP de l’appareil exécutant l’application serveur qui a traitée l’action enregistrée |
 | `DestinationPort` | string | Port de destination des communications réseau associées |

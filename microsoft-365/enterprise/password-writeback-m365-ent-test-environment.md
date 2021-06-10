@@ -27,7 +27,7 @@ ms.locfileid: "50921479"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Écriture différée de mot de passe pour votre environnement de test Microsoft 365
 
-*Ce guide de laboratoire de test ne peut être utilisé que pour les environnements de test Microsoft 365 pour les entreprises.*
+*Ce Guide de laboratoire de test ne peut être utilisé que pour Microsoft 365 pour les environnements de test d’entreprise.*
 
 Les utilisateurs peuvent utiliser l’écriture écriture par mot de passe pour mettre à jour leurs mots de passe via Azure Active Directory (Azure AD), qui est ensuite répliqué vers vos services de domaine Active Directory (AD DS) locaux. Avec l’écriture écriture par mot de passe, les utilisateurs n’ont pas besoin de mettre à jour leur mot de passe via les AD DS sur site où leurs comptes d’utilisateur d’origine sont stockés. Cela aide les utilisateurs itinérants ou distants qui n’ont pas de connexion d’accès à distance à leur réseau local.
 
@@ -40,7 +40,7 @@ La configuration de votre environnement de test pour l’écriture par mot de pa
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles de la pile du Guide de laboratoire de test Microsoft 365 pour entreprise, allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Étape 1 : Configuration de la synchronisation de hachage de mot de passe pour votre environnement de test Microsoft 365
 
@@ -72,9 +72,9 @@ Configurez ensuite le compte utilisateur 1 en lui attribuant les paramètres de 
 
 1. À partir du[Portail Azure](https://portal.azure.com), connectez-vous avec votre compte d’administrateur général, puis connectez-vous à APP1 avec le compte TESTLAB\Utilisateur1.
 
-2. À partir du bureau d’APP1, **sélectionnez Démarrer,** entrez **actif,** puis sélectionnez Utilisateurs et **ordinateurs Active Directory.**
+2. Sur le bureau d’APP1, **sélectionnez Démarrer,** entrez **actif,** puis sélectionnez Utilisateurs **et ordinateurs Active Directory.**
 
-3. Dans la barre de menus, sélectionnez **Afficher.** Si **les fonctionnalités** avancées ne sont pas activées, sélectionnez-la pour l’activer.
+3. Dans la barre de menus, sélectionnez **Afficher.** Si **les fonctionnalités avancées** ne sont pas activées, sélectionnez-la pour l’activer.
 
 4. Dans le volet d’arborescence, sélectionnez et maintenez (ou cliquez avec le bouton droit) votre domaine, sélectionnez Propriétés, puis sélectionnez **l’onglet** Sécurité.
 
@@ -107,11 +107,11 @@ Ensuite, configurez de la Connexion Azure AD Connect sur APP1 pour écriture d
 
 3. Dans la **page d’accueil,** **sélectionnez Configurer.**
 
-4. Dans la page **Tâches supplémentaires,** sélectionnez **Personnaliser les options de** synchronisation, puis sélectionnez **Suivant**.
+4. Dans la page **Tâches supplémentaires,** sélectionnez **Personnaliser les options** de synchronisation, puis sélectionnez **Suivant.**
 
-5. Dans la page **Se connecter à Azure AD,** entrez vos informations d’identification de compte d’administrateur général, puis sélectionnez **Suivant.**
+5. Sur la page **Connecter azure AD,** entrez vos informations d’identification de compte d’administrateur général, puis sélectionnez **Suivant.**
 
-6. Dans les **pages De connexion des répertoires** et de filtrage **domaine/ou,** sélectionnez **Suivant**.
+6. Dans les **Connecter et** les pages de filtrage **domaine/ou,** sélectionnez **Suivant**.
 
 7. Dans la page **Fonctionnalités facultatives,** sélectionnez **Écriture écriture par** mot de passe, puis sélectionnez **Suivant**.
 
@@ -127,7 +127,7 @@ La configuration qui en résulte ressemble à ceci :
 
 Cette configuration se compose des éléments suivants : 
 
-- Un abonnement d’essai ou payant Microsoft 365 E5 avec le domaine DNS TESTLAB.\<*your domain name*> Inscrit(e).
+- Un Microsoft 365 E5 d’essai ou payant avec le domaine DNS TESTLAB.\<*your domain name*> Inscrit(e).
 - Un intranet d’organisation simplifié connecté à Internet, constitué des machines virtuelles DC1, APP1 et CLIENT1 sur un sous-réseau d’un réseau virtuel Azure.
 - Azure AD Connect s’exécute sur APP1 pour synchroniser la liste des comptes et des groupes du client Azure AD de votre abonnement Microsoft 365 au domaine TESTLAB AD DS.
 - L’écriture différée de mot de passe est activée afin que les utilisateurs puissent modifier leur mot de passe via Azure AD sans avoir à se connecter à l’intranet simplifiée.
@@ -140,6 +140,6 @@ Explorez les autres fonctionnalités liées aux [identités](m365-enterprise-tes
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

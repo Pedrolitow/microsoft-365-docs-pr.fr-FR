@@ -39,7 +39,7 @@ ms.locfileid: "52842361"
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
+Le service Defender for Endpoint est constamment mis à jour pour inclure de nouvelles fonctionnalités et améliorations.
 
 Découvrez les nouvelles fonctionnalités de la version d’évaluation de Defender for Endpoint et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
@@ -56,7 +56,7 @@ Activez le paramètre d’expérience de préversion pour être parmi les premie
 
 1. Dans le volet de navigation, **sélectionnez** Paramètres  >  **fonctionnalités avancées d’aperçu.**  >  
 
-2. Basculez le paramètre entre **Sur** et **Hors et** sélectionnez Enregistrer **les préférences.**
+2. Basculez le paramètre entre **« Sur** » et « **Hors** » et sélectionnez Enregistrer **les préférences.**
 
 ## <a name="preview-features"></a>Fonctionnalités de préversion
 

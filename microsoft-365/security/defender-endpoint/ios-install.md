@@ -33,7 +33,7 @@ ms.locfileid: "52842291"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cette rubrique décrit le déploiement de Defender pour Endpoint sur iOS Portail d’entreprise Intune appareils inscrits. Pour plus d’informations sur l’inscription d’appareils Intune, voir Inscrire des appareils [iOS/iPadOS dans Intune.](/mem/intune/enrollment/ios-enroll)
 
@@ -78,12 +78,12 @@ Déployez Defender pour endpoint sur iOS via Portail d’entreprise Intune.
 
 ## <a name="auto-onboarding-of-vpn-profile-simplified-onboarding"></a>Intégration automatique du profil VPN (intégration simplifiée)
 
-Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection Web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
+Les administrateurs peuvent configurer la configuration automatique du profil VPN. Cela permet de configurer automatiquement le profil VPN Defender pour le point de terminaison sans que l’utilisateur le fait lors de l’intégration. Notez que le VPN est utilisé pour fournir la fonctionnalité de protection web. Il ne s’agit pas d’un VPN normal et d’un VPN local/en boucle autonome qui ne prend pas le trafic en dehors de l’appareil.
 
 1. Dans [le Centre d’administration Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)allez à   ->  **Profils de configuration des**  ->  **appareils.**
 1. Choisissez **Plateforme en** tant que **iOS/iPadOS** et type de profil en **tant** que **VPN**. Cliquez sur **Créer**.
 1. Tapez un nom pour le profil, puis cliquez sur **Suivant.**
-1. Sélectionnez **VPN personnalisé** pour le type de connexion et, dans la section VPN de **base,** entrez ce qui suit :
+1. Sélectionnez **VPN personnalisé** pour le type de connexion et, dans la section VPN **de base,** entrez ce qui suit :
     - Nom de connexion = Microsoft Defender pour le point de terminaison
     - Adresse du serveur VPN = 127.0.0.1
     - Méthode Auth = « Nom d’utilisateur et mot de passe »
@@ -100,7 +100,7 @@ Les administrateurs peuvent configurer la configuration automatique du profil VP
 
 ## <a name="complete-onboarding-and-check-status"></a>Terminer l’intégration et vérifier l’état
 
-1. Une fois Que Defender pour le point de terminaison sur iOS a été installé sur l’appareil, vous verrez l’icône de l’application.
+1. Une fois Defender pour le point de terminaison sur iOS installé sur l’appareil, vous verrez l’icône de l’application.
 
     ![Capture d’écran d’une description de smartphone générée automatiquement](images/41627a709700c324849bf7e13510c516.png)
 
@@ -160,7 +160,7 @@ Intune vous permet de configurer l’application Defender pour iOS via une strat
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager Centre d’administration 7](images/ios-deploy-7.png)
 
-    - Fournissez le nom du profil. Lorsque vous y invitez l’importation d’un fichier de profil de configuration, sélectionnez celui téléchargé ci-dessus.
+    - Fournissez le nom du profil. Lorsque vous avez été invité à importer un fichier de profil de configuration, sélectionnez celui téléchargé ci-dessus.
     - Dans la section **Affectation,** sélectionnez le groupe d’appareils auquel vous souhaitez appliquer ce profil. Il est préférable de l’appliquer à tous les appareils iOS gérés. Cliquez sur **Suivant**.
     - On the **Review + create** page, when you’re done, choose **Create**. Le nouveau profil s’affiche dans la liste des profils de configuration.
 

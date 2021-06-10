@@ -43,23 +43,23 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
   
   - Dernière version de Windows (32 bits ou 64 bits)
   
-  - Microsoft .NET Framework 4.7
+  - Microsoft .NET Framework 4.7.
   
 - Vous devez utiliser l’un des navigateurs pris en charge suivants pour exécuter l’outil d’exportation eDiscovery<sup>1</sup>:
 
   - Microsoft Edge <sup>2</sup>
   
-    OR
+    OU
 
-  - Microsoft Internet Explorer 10 versions ultérieures
+  - Microsoft Internet Explorer 10 et versions ultérieures
   
   > [!NOTE]
   > <sup>1</sup> Microsoft ne fabrique pas d’extensions ou d’extensions tierces pour ClickOnce applications. L’exportation des résultats de recherche à l’aide d’un navigateur non pris en charge avec des extensions ou extensions tierces n’est pas prise en charge.<br/>
   > <sup>2</sup> Suite aux modifications récentes apportées à Microsoft Edge, ClickOnce prise en charge de la recherche n’est plus activée par défaut. Pour obtenir des instructions sur l’activation ClickOnce prise en charge dans Edge, voir Utiliser l’outil d’exportation [eDiscovery dans Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- L’outil d’exportation eDiscovery que vous utilisez à l’étape 2 pour télécharger les résultats de la recherche ne prend pas en charge l’automatisation (à l’aide d’un script ou d’exécution d’cmdlets). Nous vous recommandons vivement de ne pas automatiser le processus de préparation à l’étape 1 ou le processus de téléchargement à l’étape 2. Si vous automatisez l’un de ces processus, le Support Microsoft ne fournira pas d’assistance si vous avez des problèmes.
+- L’outil d’exportation eDiscovery que vous utilisez à l’étape 2 pour télécharger les résultats de la recherche ne prend pas en charge l’automatisation (à l’aide d’un script ou d’exécution d’cmdlets). Nous vous recommandons vivement de ne pas automatiser le processus de préparation à l’étape 1 ou le processus de téléchargement à l’étape 2. Si vous automatisez l’un de ces processus, le Support Microsoft ne fournira pas d’assistance si vous êtes en situation de problème.
 
-- Nous vous recommandons de télécharger les résultats de recherche sur un ordinateur local. Pour éliminer les problèmes de pare-feu ou d’infrastructure proxy de votre entreprise lors du téléchargement des résultats de recherche, vous pouvez envisager de télécharger les résultats de la recherche sur un bureau virtuel en dehors de votre réseau. Cela peut réduire les délai d’out qui se produisent dans les connexions de données Azure lors de l’exportation d’un grand nombre de fichiers. Pour plus d’informations sur les bureaux virtuels, [voir Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
+- Nous vous recommandons de télécharger les résultats de recherche sur un ordinateur local. Pour éliminer les problèmes de pare-feu ou d’infrastructure proxy de votre entreprise lors du téléchargement des résultats de recherche, vous pouvez envisager de télécharger les résultats de la recherche sur un bureau virtuel en dehors de votre réseau. Cela peut réduire les délai d’utilisation des connexions de données Azure lors de l’exportation d’un grand nombre de fichiers. Pour plus d’informations sur les bureaux virtuels, [voir Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - Pour améliorer les performances lors du téléchargement des résultats de recherche, envisagez de diviser les recherches qui retournent un grand ensemble de résultats en recherches plus petites. Par exemple, vous pouvez utiliser des plages de dates dans les requêtes de recherche pour renvoyer un ensemble de résultats plus petit qui peut être téléchargé plus rapidement.
   
@@ -71,7 +71,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
   
   - **64 bits :**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
   
-    Ajoutez les lignes suivantes au  *fichiermachine.config*  quelque part entre les  `<configuration>` balises et les  `</configuration>` balises. N’oubliez pas  `ProxyServer` de remplacer et avec les  `Port` valeurs correctes pour votre organisation ; par exemple, `proxy01.contoso.com:80` . 
+    Ajoutez les lignes suivantes  *au fichiermachine.config*  quelque part entre les  `<configuration>` balises et les  `</configuration>` balises. N’oubliez pas  `ProxyServer` de remplacer et avec les  `Port` valeurs correctes pour votre organisation ; par exemple, `proxy01.contoso.com:80` . 
   
     ```xml
     <system.net>
@@ -84,7 +84,7 @@ L’exportation des résultats d’une recherche de contenu implique la prépara
     </system.net>
     ```
 
-- Si les résultats d’une recherche ont plus de 7 jours et que vous soumettez une tâche d’exportation, un message d’erreur s’affiche vous invite à réexécuter la recherche pour mettre à jour les résultats de la recherche. Si cela se produit, annulez l’exportation, réexécutez la recherche, puis recommencez l’exportation.
+- Si les résultats d’une recherche sont plus anciens que 7 jours et que vous soumettez une tâche d’exportation, un message d’erreur s’affiche vous invite à réexécuter la recherche pour mettre à jour les résultats de la recherche. Si cela se produit, annulez l’exportation, réexécutez la recherche, puis recommencez l’exportation.
 
 ## <a name="step-1-prepare-search-results-for-export"></a>Étape 1 : Préparer les résultats de recherche pour l’exportation
 
@@ -114,7 +114,7 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
   
    ![Exchange options](../media/ExchangeExportOptions.png)
 
-    - **Un fichier PST pour chaque boîte aux** lettres : exporte un fichier PST pour chaque boîte aux lettres utilisateur qui contient les résultats de la recherche. Tous les résultats de la boîte aux lettres d’archivage de l’utilisateur sont inclus dans le même fichier PST. Cette option reproduit la structure de dossiers de boîte aux lettres à partir de la boîte aux lettres source.
+    - **Un fichier PST pour chaque boîte** aux lettres : exporte un fichier PST pour chaque boîte aux lettres utilisateur qui contient les résultats de la recherche. Tous les résultats de la boîte aux lettres d’archivage de l’utilisateur sont inclus dans le même fichier PST. Cette option reproduit la structure de dossiers de boîte aux lettres à partir de la boîte aux lettres source.
   
     - **Un fichier PST** contenant tous les messages : exporte un fichier PST unique (nommé *Exchange.pst*) qui contient les résultats de recherche de toutes les boîtes aux lettres source incluses dans la recherche. Cette option reproduit la structure de dossiers de boîte aux lettres pour chaque message.
   
@@ -128,7 +128,7 @@ Vous devez préparer les résultats de recherche pour l’exportation. Lorsque v
 
    1. Activez la case à cocher Activer la **déplication Exchange contenu** pour exclure les messages en double.
   
-      Si vous sélectionnez cette option, une seule copie d’un message sera exportée, même si plusieurs copies du même message sont trouvées dans les boîtes aux lettres dans les recherches. Le rapport des résultats de l’exportation (qui est un fichier nommé Results.csv) contient une ligne pour chaque copie d’un message en double afin que vous pouvez identifier les boîtes aux lettres (ou dossiers publics) qui contiennent une copie du message en double. Pour plus d’informations sur la dédoplication et la façon dont les éléments dupliqués sont identifiés, voir Dédoplication dans les résultats de recherche [eDiscovery](de-duplication-in-ediscovery-search-results.md).
+      Si vous sélectionnez cette option, une seule copie d’un message sera exportée, même si plusieurs copies du même message sont trouvées dans les boîtes aux lettres dans les recherches. Le rapport des résultats de l’exportation (qui est un fichier nommé Results.csv) contient une ligne pour chaque copie d’un message en double afin que vous pouvez identifier les boîtes aux lettres (ou dossiers publics) qui contiennent une copie du message en double. Pour plus d’informations sur la dédoplication et la façon dont les éléments dupliqués sont identifiés, voir Dédoplication dans les résultats de recherche [eDiscovery.](de-duplication-in-ediscovery-search-results.md)
   
    2. Cochez **la case Inclure les versions SharePoint fichiers pour** exporter toutes les versions de SharePoint documents. Cette option s’affiche uniquement si les sources de contenu de la recherche incluent SharePoint ou OneDrive Entreprise sites.
   
@@ -142,7 +142,7 @@ Consultez la section suivante pour obtenir des instructions sur le téléchargem
 
 L’étape suivante consiste à télécharger les résultats de la recherche à partir stockage Azure’emplacement sur votre ordinateur local.
   
-1. Dans la page **recherche de** contenu dans le centre Microsoft 365 conformité, sélectionnez **l’onglet** Exportation
+1. Dans la page **Recherche de** contenu dans le centre Microsoft 365 conformité, sélectionnez **l’onglet** Exportation
   
    Vous de devez peut-être cliquer sur **Actualiser** pour mettre à jour la liste des tâches d’exportation afin qu’elle affiche la tâche d’exportation que vous avez créée. Les travaux d’exportation ont le même nom que la recherche correspondante avec **_Export** au nom de recherche.
   
@@ -173,9 +173,9 @@ L’étape suivante consiste à télécharger les résultats de la recherche à 
 
 7. Cliquez sur **Démarrer** pour télécharger les résultats de recherche sur votre ordinateur.
   
-    L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Une fois le processus d’exportation terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
+    L’**outil d’exportation de découverte électronique** affiche l’état du processus d’exportation, ainsi qu’une estimation du nombre (et de la taille) d’éléments qui doivent encore être téléchargés. Lorsque le processus d’exportation est terminé, vous pouvez accéder aux fichiers à l’emplacement où ils ont été téléchargés.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 Voici plus d’informations sur l’exportation des résultats de recherche.
   
@@ -183,7 +183,7 @@ Voici plus d’informations sur l’exportation des résultats de recherche.
   
 [Exporter des rapports](#export-reports)
   
-[Exportation d’éléments partiellement indexés](#exporting-partially-indexed-items)
+[Exportation d’éléments indexés partiellement](#exporting-partially-indexed-items)
 
 [Exportation de messages individuels ou de fichiers PST](#exporting-individual-messages-or-pst-files)
 
@@ -231,14 +231,14 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
 
   - **Erreurs et avertissements** Contient des erreurs et des avertissements pour les fichiers rencontrés lors de l’exportation. Consultez la colonne Détails de l’erreur pour obtenir des informations spécifiques à chaque erreur ou avertissement.
 
-  - **Éléments ignorés** Lorsque vous exportez des résultats de recherche à SharePoint et OneDrive Entreprise sites, l’exportation inclut généralement un rapport d’éléments ignorés (SkippedItems.csv). Les éléments mentionnés dans ce rapport sont généralement des éléments qui ne sont pas téléchargés, tels qu’un dossier ou un ensemble de documents. L’exportation de ces types d’éléments n’est pas une exportation par conception. Pour les autres éléments ignorés, les champs « Type d’erreur » et « Détails de l’erreur » dans le rapport d’éléments ignorés indiquent la raison pour laquelle l’élément a été ignoré et n’a pas été téléchargé avec les autres résultats de recherche.
+  - **Éléments ignorés** Lorsque vous exportez des résultats de recherche à SharePoint sites OneDrive Entreprise sites, l’exportation inclut généralement un rapport d’éléments ignorés (SkippedItems.csv). Les éléments mentionnés dans ce rapport sont généralement des éléments qui ne sont pas téléchargés, tels qu’un dossier ou un ensemble de documents. L’exportation de ces types d’éléments n’est pas une exportation par conception. Pour les autres éléments ignorés, les champs « Type d’erreur » et « Détails de l’erreur » dans le rapport d’éléments ignorés indiquent la raison pour laquelle l’élément a été ignoré et n’a pas été téléchargé avec les autres résultats de recherche.
 
-  - **Trace.log Contient des** informations de journalisation détaillées sur le processus d’exportation et peut vous aider à découvrir les problèmes pendant l’exportation. Si vous ouvrez un ticket avec le Support Microsoft à propos d’un problème lié à l’exportation des résultats de recherche, vous pouvez être invité à fournir ce journal de suivi.
+  - **Trace.log Contient des** informations de journalisation détaillées sur le processus d’exportation et peut vous aider à découvrir les problèmes lors de l’exportation. Si vous ouvrez un ticket avec le Support Microsoft à propos d’un problème lié à l’exportation des résultats de recherche, vous pouvez être invité à fournir ce journal de suivi.
   
     > [!NOTE]
     > Vous pouvez simplement exporter ces documents sans avoir à exporter les résultats de recherche réels. Voir [Exporter un rapport de recherche de contenu.](export-a-content-search-report.md)
   
-### <a name="exporting-partially-indexed-items"></a>Exportation d’éléments partiellement indexés
+### <a name="exporting-partially-indexed-items"></a>Exporter des éléments partiellement indexés
   
 - Si vous exportez des éléments de boîte aux lettres à partir d’une recherche de contenu qui renvoie tous les éléments de boîte aux lettres dans les résultats de la recherche (car aucun mot clé n’est inclus dans la requête de recherche), les éléments partiellement indexés ne seront pas copiés dans le fichier PST qui contient les éléments non indexés. En effet, tous les éléments, y compris les éléments partiellement indexés, sont automatiquement inclus dans les résultats de recherche ordinaires. Cela signifie que les éléments partiellement indexés seront inclus dans un fichier PST (ou sous forme de messages individuels) qui contient les autres éléments indexés.
 
@@ -270,7 +270,7 @@ Pour plus d’informations sur les limites lors de l’exportation des résultat
   
 - Si le nom du chemin d’accès d’un message dépasse la limite de caractères maximale Windows, le nom du chemin d’accès du fichier est tronqué. Toutefois, le nom du chemin d’accès du fichier d’origine sera répertorié dans le manifeste et resultsLog.
   
-- Comme indiqué précédemment, les résultats de la recherche de courrier électronique sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels réplique le chemin d’accès du dossier dans la boîte aux lettres de l’utilisateur. Par exemple, pour une recherche nommée « ContosoCase101 » messages dans la boîte de réception d’un utilisateur se trouve dans le chemin d’accès du dossier  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` .
+- Comme indiqué précédemment, les résultats de la recherche par courrier électronique sont exportés vers un dossier dans le système de fichiers. Le chemin d’accès du dossier pour les messages individuels réplique le chemin d’accès du dossier dans la boîte aux lettres de l’utilisateur. Par exemple, pour une recherche nommée « ContosoCase101 » messages dans la boîte de réception d’un utilisateur se trouve dans le chemin d’accès du dossier  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` .
 
 - Si vous choisissez d’exporter des messages électroniques dans un fichier  PST contenant tous les messages d’un même dossier, un dossier Éléments supprimés et un dossier **Dossiers** de recherche sont inclus dans le niveau supérieur du dossier PST. Ces dossiers sont vides.
 
@@ -282,7 +282,7 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
   
 - Comme indiqué précédemment, pour déchiffrer les messages protégés par RMS lorsque vous les exportez, vous devez exporter les résultats de la recherche en tant que messages individuels. Si vous exportez des résultats de recherche dans un fichier PST, les messages protégés par RMS restent chiffrés.
 
-- Les messages déchiffrés sont identifiés dans le **rapport ResultsLog.** Ce rapport contient une colonne nommée **État** du décodage et une valeur **décodée** dans cette colonne identifie les messages qui ont été déchiffrés.
+- Les messages déchiffrés sont identifiés dans le **rapport ResultsLog.** Ce rapport contient une colonne nommée **État** de décodage et une valeur **décodée** dans cette colonne identifie les messages qui ont été déchiffrés.
 
 - Outre le déchiffrement des pièces jointes lors de l’exportation des résultats de recherche, vous pouvez afficher un aperçu du fichier déchiffré lors de l’aperçu des résultats de recherche. Vous pouvez uniquement afficher le message électronique protégé par des droits après l’avoir exporté.
 
@@ -302,7 +302,7 @@ Tous les messages électroniques protégés par des droits (protégés par RMS) 
 
   - Si un nom de chemin d’accès complet tronqué existe déjà, un numéro de version est ajouté à la fin du nom de fichier ; par exemple, `statusmessage(2).msg` .
 
-    Pour atténuer ce problème, envisagez de télécharger les résultats de la recherche vers un emplacement avec un nom de chemin d’accès court . par exemple, le téléchargement des résultats de recherche dans un dossier nommé ajouterait moins de caractères aux noms de chemin d’accès des éléments exportés que de les télécharger dans un  `C:\Results` dossier nommé  `C:\Users\Admin\Desktop\Results` .
+    Pour atténuer ce problème, envisagez de télécharger les résultats de la recherche vers un emplacement avec un nom de chemin d’accès court . Par exemple, le téléchargement des résultats de recherche dans un dossier nommé ajouterait moins de caractères aux noms de chemin d’accès des éléments exportés que de les télécharger dans un  `C:\Results` dossier nommé  `C:\Users\Admin\Desktop\Results` .
 
 - Lorsque vous exportez des documents de site, il est également possible que le nom de fichier d’origine d’un document soit modifié. Cela se produit spécifiquement pour les documents qui ont été supprimés d’un site SharePoint ou OneDrive Entreprise qui a été mis en attente. Une fois qu’un document qui se trouve sur un site placé en conservation est supprimé, le document supprimé est automatiquement déplacé vers la bibliothèque de conservation et de préservation du site (qui a été créée lorsque le site a été placé en conservation). Lorsque le document supprimé est déplacé vers la bibliothèque de conservation et de préservation des documents, un ID unique et généré de manière aléatoire est ensuite intégré au nom de fichier d’origine du document. Par exemple, si le nom de fichier d’un document est et que ce document est ensuite supprimé et déplacé vers la bibliothèque de conservation et de préservation, le nom de fichier du document déplacé vers la bibliothèque de conservation et de préservation des documents est modifié comme . `FY2017Budget.xlsx` `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` Si un document de la bibliothèque de conservation et de préservation correspond à la requête d’une recherche de contenu et que vous exportez les résultats de cette recherche, le fichier exporté a le nom de fichier modifié . dans cet exemple, le nom de fichier du document exporté serait  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
 

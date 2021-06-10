@@ -1,5 +1,5 @@
 ---
-title: Classification des données pour votre environnement de test Microsoft 365 pour entreprise
+title: Classification des données pour votre environnement de test Microsoft 365 entreprise
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur des documents dans votre environnement de test Microsoft 365 pour entreprise.
+description: Utilisez ce guide de laboratoire de test pour créer et utiliser des étiquettes de rétention sur les documents de votre Microsoft 365 environnement de test d’entreprise.
 ms.openlocfilehash: 613aa3713b4d72eed1bc0b2d88f70a817d0e7cff
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,23 +21,23 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919187"
 ---
-# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 pour entreprise
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Classification des données pour votre environnement de test Microsoft 365 entreprise
 
-*Ce guide de laboratoire de test peut être utilisé pour les environnements de test Microsoft 365 entreprise et Office 365 Entreprise.*
+*Ce guide de laboratoire de test peut être utilisé à la fois pour Microsoft 365'entreprise et Office 365 Entreprise environnements de test.*
 
-Cet article explique comment configurer la classification des données à l’aide d’étiquettes de rétention dans votre environnement de test Microsoft 365 pour entreprise.
+Cet article explique comment configurer la classification des données à l’aide d’étiquettes de rétention dans votre Microsoft 365 environnement de test d’entreprise.
 
 La classification des données dans votre environnement de test implique trois phases :
-- [Phase 1 : Créer votre environnement de test Microsoft 365 pour entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [Phase 1 : Créer votre environnement de test Microsoft 365 entreprise](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2 : Création d’étiquettes de rétention](#phase-2-create-retention-labels)
 - [Phase 3 : Appliquer des étiquettes de rétention aux documents](#phase-3-apply-retention-labels-to-documents)
 
 ![Guides de laboratoire de test pour Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Pour obtenir une carte visuelle de tous les articles de la pile du Guide de laboratoire de test Microsoft 365 pour entreprise, allez à [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Pour obtenir une carte visuelle de tous les articles de la pile Microsoft 365 guide de laboratoire de test pour entreprise, Microsoft 365 pour la pile de guides de laboratoire de [test d’entreprise.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre environnement de test Microsoft 365 pour entreprise
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1 : Créer votre environnement de test Microsoft 365 entreprise
 
 Si vous souhaitez simplement configurer les étiquettes de rétention de manière légère avec la configuration minimale requise, suivez les instructions de la [configuration de base légère.](lightweight-base-configuration-microsoft-365-enterprise.md)
   
@@ -48,12 +48,12 @@ Si vous souhaitez configurer des étiquettes de rétention dans une entreprise s
 
 ## <a name="phase-2-create-retention-labels"></a>Phase 2 : Création d’étiquettes de rétention
 
-Dans cette phase, créez les étiquettes de rétention pour les différents niveaux de rétention pour les dossiers de documents SharePoint Online :
+Dans cette phase, créez les étiquettes de rétention pour les différents niveaux de rétention pour SharePoint dossiers de documents en ligne :
 
-1. Connectez-vous au Centre de sécurité [Microsoft 365](https://security.microsoft.com/homepage) avec votre compte d’administrateur global.
-1. Dans **l’onglet Accueil - Sécurité Microsoft 365** de votre navigateur, sélectionnez   >  **Étiquettes de rétention de classification.**
+1. Connectez-vous au [centre Microsoft 365 sécurité avec](https://security.microsoft.com/homepage) votre compte d’administrateur global.
+1. Dans **l’onglet Accueil - Microsoft 365 de** sécurité de votre navigateur, sélectionnez   >  **Étiquettes de rétention de classification.**
 1. Sélectionnez **Créer une étiquette**.
-1. Dans le **volet Nom de votre étiquette,** entrez Public **interne** dans **Nom de** votre étiquette, puis sélectionnez **Suivant**.
+1. Dans le **volet Nom de votre étiquette,** entrez Public **interne** dans Nom de votre **étiquette,** puis sélectionnez **Suivant**.
 1. Dans le **volet Descripteurs du plan de fichiers,** sélectionnez **Suivant.**
 1. Dans le **volet Paramètres de l’étiquette,** si nécessaire, définissez rétention **sur Sur,** puis sélectionnez **Suivant**. 
 1. Dans le **volet Examiner vos paramètres,** **sélectionnez Créer l’étiquette.**
@@ -78,21 +78,21 @@ Dans cette phase, vous découvrez le comportement des étiquettes de rétention 
 
 Tout d’abord, créez un site d’équipe SharePoint Online de niveau sensible :
   
-1. À l’aide d’une instance privée de votre navigateur, connectez-vous au Centre d’administration [Microsoft 365](https://admin.microsoft.com) à l’aide de votre compte d’administrateur global.
-1. Dans la liste des vignettes, **sélectionnez SharePoint.**
-1. Sous le nouvel **onglet SharePoint** de votre navigateur, sélectionnez **Créer un site.**
+1. À l’aide d’une instance privée de votre navigateur, connectez-vous [Microsoft 365 centre](https://admin.microsoft.com) d’administration à l’aide de votre compte d’administrateur global.
+1. Dans la liste des vignettes, **sélectionnez SharePoint**.
+1. Sous le nouvel **onglet SharePoint** dans votre navigateur, sélectionnez Créer **un site.**
 1. Sur la page **Créer un site**, sélectionnez **Site d’équipe**.
 1. Dans la **zone Nom du site d’équipe,** entrez **SensitiveFiles**.
-1. Dans la **zone de description du site d’équipe,** entrez le site **SharePoint pour les fichiers sensibles.**
+1. Dans la **zone de description du site** d’équipe, entrez SharePoint site pour les fichiers **sensibles.**
 1. Dans **les paramètres de confidentialité,** **sélectionnez Privé - seuls** les membres peuvent accéder à ce site, puis sélectionnez **Suivant**.
-1. Dans le **volet Qui voulez-vous ajouter ?** sélectionnez **Terminer.**
+1. Dans le **Qui voulez-vous ajouter ?** volet, sélectionnez **Terminer**.
     
 Ensuite, configurez le dossier Documents du site d’équipe SensitiveFiles pour l’étiquette de rétention Sensible.
   
 1. Dans **l’onglet SensitiveFiles** de votre navigateur, sélectionnez **Documents**.
-1. Sélectionnez **l’icône Paramètres,** puis sélectionnez **Paramètres de la bibliothèque.**
-1. Sous **Autorisations et gestion,** **sélectionnez Appliquer une étiquette aux éléments de cette liste ou bibliothèque.** Si cette option n’apparaît pas, vos étiquettes de rétention ne sont pas encore publiées. Essayez cette étape ultérieurement.
-1. Dans **Paramètres - Appliquer l’étiquette,** **sélectionnez Sensible** dans la zone de mise en question, puis **sélectionnez Enregistrer.**
+1. Sélectionnez **l Paramètres** icône, puis sélectionnez **Paramètres de la bibliothèque.**
+1. Sous **Autorisations et gestion,** sélectionnez Appliquer une **étiquette aux éléments de cette liste ou bibliothèque.** Si cette option n’apparaît pas, vos étiquettes de rétention ne sont pas encore publiées. Essayez cette étape ultérieurement.
+1. Dans **Paramètres-Appliquer une étiquette,** **sélectionnez Sensible** dans la zone de baisse, puis sélectionnez **Enregistrer.**
 
 Ensuite, créez un document dans le site SensitiveFiles et modifiez son étiquette de rétention.
     
@@ -112,6 +112,6 @@ Explorez [d’autres fonctionnalités de protection](m365-enterprise-test-lab-gu
 
 [Microsoft 365 pour les entreprises Guides de laboratoire d'essai](m365-enterprise-test-lab-guides.md)
 
-[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
+[Vue d’ensemble de Microsoft 365 pour entreprise](microsoft-365-overview.md)
 
-[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)
+[Documentation Microsoft 365 Entreprise](/microsoft-365-enterprise/)

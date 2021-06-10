@@ -49,13 +49,13 @@ Microsoft 365 Business Premium inclut Office 365 protection avancée contre les 
 
 Les fonctionnalités de protection des Microsoft 365 Business Premium permettent de s’assurer que les données importantes restent sécurisées et que seules les personnes autorisées y ont accès.
 
-Vous pouvez utiliser des stratégies de protection contre la perte de données [(DLP)](set-up-dlp.md) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin qu’elles ne sont pas partagées par erreur.
+Vous pouvez utiliser des stratégies de protection contre la perte de données [(DLP)](set-up-dlp.md) pour identifier et gérer des informations sensibles, telles que des numéros de sécurité sociale ou de carte de crédit, afin de ne pas les partager par erreur.
 
 [chiffrement de messages Office 365](/microsoft-365/compliance/ome) combine les fonctionnalités de chiffrement et de droits d’accès pour garantir que seuls les destinataires prévus peuvent afficher le contenu des messages. chiffrement de messages Office 365 fonctionne avec Outlook.com, Yahoo!, Gmail et d’autres services de messagerie.
 
 [Archivage Exchange Online](/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description) est une solution d’archivage informatique qui fonctionne avec Microsoft Exchange ou Exchange Online pour fournir des fonctionnalités d’archivage avancées, notamment des archives et la redondance des données. Vous pouvez utiliser des stratégies de rétention pour aider votre organisation à réduire les responsabilités associées à la messagerie électronique et à d’autres communications. Si votre entreprise est tenue de conserver les communications liées à un litige, vous pouvez utiliser les conservations In-Place et les conservations pour litige pour conserver les e-mails associés.
 
-## <a name="device-management"></a>Gestion des périphériques
+## <a name="device-management"></a>Gestion des appareils
 
 Microsoft 365 Business Premium fonctionnalités avancées de gestion des appareils vous permet de surveiller et de contrôler ce que les utilisateurs peuvent faire avec les appareils inscrits. Ces fonctionnalités incluent l’accès conditionnel, la gestion des périphériques mobiles [(MDM),](/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)BitLocker et les mises à jour automatiques.
 

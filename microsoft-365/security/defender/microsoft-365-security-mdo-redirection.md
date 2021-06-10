@@ -68,7 +68,7 @@ Si quelque chose ne fonctionne pas pour vous ou s’il y a quelque chose que vou
 
 Pour revenir à l’ancien portail :
 
-1. [Connectez-vous](https://security.microsoft.com/) à Microsoft 365 Defender en tant qu’administrateur général ou en utilisant et en utilisant des autorisations d’administrateur de sécurité dans Azure Active Directory.
+1. [Connectez-vous](https://security.microsoft.com/) à Microsoft 365 Defender en tant qu’administrateur général ou en utilisant et compte avec des autorisations d’administrateur de sécurité dans Azure Active Directory.
 
 2. Accédez à **Paramètres**  >  **courrier électronique &**  >  **redirection du portail de collaboration.**   
 

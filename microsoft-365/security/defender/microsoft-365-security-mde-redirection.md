@@ -81,7 +81,7 @@ Pour démarrer le routage des comptes vers Microsoft 365 Defender :
 
 3. Accédez à **Paramètres**  >  **redirection du** portail général des points de terminaison ou cliquez  >    >   [ici.](https://security.microsoft.com/preferences2/portal_redirection)  
 
-4. Basculez le paramètre de redirection automatique sur **Sur**.
+4. Basculez le paramètre de redirection automatique sur **Le**.
 
 5. Cliquez **sur Activer** pour appliquer la redirection automatique à Microsoft 365 Defender.
 
@@ -96,7 +96,7 @@ Si quelque chose ne fonctionne pas pour vous ou s’il y a quelque chose que vou
 
 Pour revenir à l’ancien portail Microsoft Defender pour points de terminaison :
 
-1. [Connectez-vous](https://security.microsoft.com/) à Microsoft 365 Defender en tant qu’administrateur général ou en utilisant et compte avec des autorisations d’administrateur de sécurité dans Azure Active Directory.
+1. [Connectez-vous](https://security.microsoft.com/) à Microsoft 365 Defender en tant qu’administrateur général ou en utilisant et en utilisant des autorisations d’administrateur de sécurité dans Azure Active Directory.
 
 2. Accédez à **Paramètres** redirection du portail général des points de terminaison  >    >    >   [ou ouvrez la page ici.](https://security.microsoft.com/preferences2/portal_redirection)  
 
@@ -113,6 +113,6 @@ Une fois désactivés, les comptes ne seront plus acheminés vers security.micro
 - [Microsoft Defender pour le point de terminaison dans Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft fournit un SIEM et XDR unifiés pour moderniser les opérations de sécurité](https://www.microsoft.com/security/blog/?p=91813) 
 - [Infographie XDR et SIEM](https://afrait.com/blog/xdr-versus-siem/) 
-- [Nouveau defender](https://afrait.com/blog/the-new-defender/) 
+- [Le nouveau defender](https://afrait.com/blog/the-new-defender/) 
 - [À propos Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender) 
 - [Portails de sécurité Microsoft et centres d’administration](portals.md)

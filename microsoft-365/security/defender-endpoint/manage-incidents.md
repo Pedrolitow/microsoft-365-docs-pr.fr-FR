@@ -49,7 +49,7 @@ Vous pouvez affecter des incidents à vous-même, modifier l’état et la class
 > [!TIP]
 > Pour une visibilité supplémentaire en un coup d’œil, les noms des incidents sont générés automatiquement en fonction des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 >
-> Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
+> Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 >
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents conserveront leurs noms.
 >

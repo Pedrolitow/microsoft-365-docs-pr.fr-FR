@@ -88,7 +88,7 @@ Pour plus d’informations Microsoft Endpoint Manager, consultez les ressources 
 Dans cette section, nous allons créer un groupe de test pour affecter vos configurations.
 
 >[!NOTE]
->Intune utilise Azure Active Directory groupes (Azure AD) pour gérer les appareils et les utilisateurs. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation.<br>
+>Intune utilise des Azure Active Directory (Azure AD) pour gérer les appareils et les utilisateurs. En tant qu’administrateur Intune, vous pouvez configurer des groupes en fonction des besoins de votre organisation.<br>
 Pour plus d’informations, voir [Ajouter des groupes pour organiser les utilisateurs et les appareils.](/mem/intune/fundamentals/groups-add)
 
 ### <a name="create-a-group"></a>Créer un groupe
@@ -154,7 +154,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!NOTE]
     > Dans cette instance, cela a été automatiquement rempli comme Defender pour point de terminaison a déjà été intégré à Intune. Pour plus d’informations sur l’intégration, voir [Activer Microsoft Defender pour le point de terminaison dans Intune.](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp)
     > 
-    > L’image suivante illustre ce que vous voyez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
+    > L’image suivante est un exemple de ce que vous verrez lorsque Microsoft Defender pour le point de terminaison n’est PAS intégré à Intune :
     >
     > ![Image de Microsoft Endpoint Manager portal7](images/2466460812371ffae2d19a10c347d6f4.png)
 
@@ -163,7 +163,7 @@ Ensuite, vous allez continuer en créant différents types de stratégies de sé
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal8](images/ef844f52ec2c0d737ce793f68b5e8408.png)
 
-7.  Ajoutez un groupe de test en cliquant sur **Sélectionner les groupes à inclure** et choisissez votre groupe, puis sélectionnez **Suivant.**
+7.  Ajoutez un groupe de test en cliquant sur **Sélectionner les groupes à inclure** et choisissez votre groupe, puis sélectionnez  **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Image de Microsoft Endpoint Manager portal9](images/fc3525e20752da026ec9f46ab4fec64f.png)
@@ -419,6 +419,6 @@ Pour vérifier que la stratégie de configuration a été appliquée à votre p�
 
 3.  Après avoir appliqué la stratégie, ouvrez un Windows PowerShell et tapez `(Get-MpPreference).EnableNetworkProtection` .
 
-4.  Cela doit répondre avec un 1, comme illustré ci-dessous.
+4.  Cela doit répondre avec un 1 comme illustré ci-dessous.
 
     ![Image de la ligne de commande 4](images/c06fa3bbc2f70d59dfe1e106cd9a4683.png)

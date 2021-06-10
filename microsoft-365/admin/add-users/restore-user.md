@@ -44,7 +44,7 @@ Voici quelques conseils :
 
 Vous devez être administrateur Microsoft 365 administrateur global ou administrateur de gestion des utilisateurs pour suivre ces étapes. 
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
 
 2. Dans la page **Utilisateurs** supprimés, sélectionnez les noms des utilisateurs que vous souhaitez restaurer, puis sélectionnez **Restaurer.**
     
@@ -60,7 +60,7 @@ Un conflit de noms d'utilisateur survient lorsque vous supprimez un compte d'uti
   
 Pour résoudre ce problème, vous pouvez soit remplacer le compte d'utilisateur actif par celui que vous restaurez, soit attribuer un autre nom au compte restauré, afin que les deux comptes ne se servent plus du même nom d'utilisateur. Voici comment procéder.
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
   
 2. Dans la page **Utilisateurs** supprimés, sélectionnez les noms des utilisateurs à restaurer, puis sélectionnez **Restaurer.**
     
@@ -83,11 +83,11 @@ Un conflit d'adresses proxy survient lorsque vous supprimez un compte d'utilisat
   
 Pour ce [faire,](about-admin-roles.md) vous devez Microsoft 365 administrateur. 
 
-1. Dans le Centre d’administration, allez à la page  \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Utilisateurs supprimés.</a>
+1. Dans le Centre d’administration, allez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">supprimés.</a>
 
 2. Sur la page **Utilisateurs supprimés**, sélectionnez l'utilisateur à restaurer, puis **Restaurer**. 
     
-3. Dans la page **Restaurer,** suivez les instructions pour définir le mot de passe et sélectionner **Restaurer.** Toutes les adresses proxy en conflit sont supprimées automatiquement de l'utilisateur que vous restaurez.
+3. Dans la page **Restaurer,** suivez les instructions pour définir le mot de passe et sélectionnez **Restaurer.** Toutes les adresses proxy en conflit sont supprimées automatiquement de l'utilisateur que vous restaurez.
     
 4. Examinez les résultats, puis sélectionnez **Fermer**.
 

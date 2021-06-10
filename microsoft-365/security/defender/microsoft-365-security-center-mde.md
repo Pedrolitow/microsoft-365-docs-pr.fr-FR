@@ -49,7 +49,7 @@ L’image et le tableau ci-dessous répertorient les modifications apportées à
 | Inventaire des appareils | Inventaire des appareils |
 | File d’attente des alertes | Incidents et & alertes |
 | Enquêtes automatisées | Centre de notifications |
-| Repérage avancé | Repérage |
+| Recherche avancée de menaces | Repérage |
 | Rapports | Rapports |
 | API & partenaires | API & partenaires |
 | Gestion des & des menaces | Gestion des vulnérabilités |
@@ -57,7 +57,7 @@ L’image et le tableau ci-dessous répertorient les modifications apportées à
 | Gestion de la configuration | Gestion de la configuration |
 | Paramètres | Paramètres | 
 
-L’amélioration de [Microsoft 365 Defender](overview-security-center.md) combine des fonctionnalités de sécurité qui protègent, détectent, examinent et répondent aux menaces de messagerie, de collaboration, d’identité et [https://security.microsoft.com](https://security.microsoft.com) d’appareil. Cette fonctionnalité regroupe les fonctionnalités des portails de sécurité Microsoft existants, notamment Centre de sécurité Microsoft Defender et le Centre de sécurité Office 365 & conformité.
+L’amélioration de [Microsoft 365 Defender](overview-security-center.md) combine des fonctionnalités de sécurité qui protègent, détectent, examinent et répondent aux menaces de courrier électronique, de collaboration, d’identité et [https://security.microsoft.com](https://security.microsoft.com) d’appareil. Cela réunit les fonctionnalités des portails de sécurité Microsoft existants, notamment Centre de sécurité Microsoft Defender et le centre de sécurité Office 365 & conformité.
 
 Si vous connaissez les Centre de sécurité Microsoft Defender, cet article vous aide à décrire certaines des modifications et améliorations apportées à Microsoft 365 Defender. Toutefois, certains éléments nouveaux et mis à jour doivent être pris en compte.
 
@@ -87,7 +87,7 @@ Ce tableau est une référence rapide des modifications apportées entre les Cen
 
 | Domaine | Description de la modification |
 |---------|---------|
-| [Incidents et & alertes](incidents-overview.md)  | Dans Microsoft 365 Defender, vous pouvez gérer les incidents et les alertes sur l’ensemble de vos points de terminaison, e-mail et identités. Nous avons convergé l’expérience pour vous aider à trouver plus facilement des événements connexes. Pour plus d’informations, voir [Vue d’ensemble des incidents.](incidents-overview.md)   |
+| [Incidents & alertes](incidents-overview.md)  | Dans Microsoft 365 Defender, vous pouvez gérer les incidents et les alertes sur l’ensemble de vos points de terminaison, e-mail et identités. Nous avons convergé l’expérience pour vous aider à trouver plus facilement des événements connexes. Pour plus d’informations, voir [Vue d’ensemble des incidents.](incidents-overview.md)   |
 | [Repérage](advanced-hunting-overview.md)  |  La modification des règles de détection personnalisées créées dans Microsoft Defender pour le point de terminaison afin d’inclure des tables d’identité et de messagerie les déplace automatiquement vers Microsoft 365 Defender. Leurs alertes correspondantes apparaissent également dans Microsoft 365 Defender. Pour plus d’informations sur ces modifications, voir [Migrer des règles de détection personnalisées.](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules) <br><br>Le `DeviceAlertEvents` tableau de recherche avancée n’est pas disponible dans Microsoft 365 Defender. Pour interroger des informations d’alerte spécifiques au périphérique dans Microsoft 365 Defender, vous pouvez utiliser les tables et les tableaux pour prendre en charge davantage d’informations provenant d’un ensemble de `AlertInfo` `AlertEvidence` sources variés. Créer votre prochaine requête liée à l’appareil en suivant les requêtes [d’écriture sans DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents).|
 |[Centre de notifications](m365d-action-center.md)    | Répertorie les actions en attente et terminées qui ont été effectuées à la suite d’examens automatisés et d’actions de correction. Auparavant, le centre de gestion des Centre de sécurité Microsoft Defender listait les actions en attente et terminées pour les actions de correction effectuées uniquement sur les appareils, tandis que les enquêtes automatisées listaient les alertes et l’état. Dans la Microsoft 365 Defender améliorée, le centre de mise en œuvre regroupe les actions de correction et les enquêtes sur le courrier électronique, les appareils et les utilisateurs, le tout dans un seul emplacement.  |
 | [Analyses de menaces](threat-analytics.md) |  Déplacé vers le haut de la barre de navigation pour faciliter la découverte et l’utilisation. Inclut désormais des informations sur les menaces pour les points de terminaison et la messagerie et la collaboration.    |
@@ -108,7 +108,7 @@ Ce tableau est une référence rapide des modifications apportées entre les Cen
 > **L’examen et la correction** automatiques font désormais partie des incidents. Vous pouvez voir les événements d’investigation et de correction automatisés dans **l’onglet Incident > Investigation.**
 
 > [!TIP]
-> La recherche d’appareil est effectuée à partir des points de terminaison > recherche.
+> La recherche d’appareil est effectuée à partir de points de terminaison > recherche.
 
 ### <a name="access-and-reporting"></a>Accès et rapports
 

@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Découvrez comment utiliser Power Automate créer votre flux pour traiter vos contrats à l’aide d’Microsoft 365 solution.
+description: Découvrez comment utiliser les Power Automate créer votre flux pour traiter vos contrats à l’aide d’Microsoft 365 solution.
 ms.openlocfilehash: 0ddcbeff6c8bd119850e3e4ea45db2513e774433
 ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2021
 ms.locfileid: "52636253"
 ---
-# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Étape 3. Utiliser Power Automate pour créer votre flux pour traiter vos contrats
+# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Étape 3. Utiliser Power Automate pour créer votre flux pour traiter vos contrats
 
 Vous avez créé votre canal de gestion des contrats et attaché votre SharePoint de documents. L’étape suivante consiste à créer un flux Power Automate pour traiter vos contrats que votre modèle syntex SharePoint identifie et classifie. Vous pouvez réaliser cette étape en [créant un flux Power Automate dans votre bibliothèque SharePoint documents.](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)
 
@@ -27,7 +27,7 @@ Pour votre solution de gestion des contrats, vous souhaitez créer un flux Power
 
 -  Une fois qu’un contrat a été classé par SharePoint modèle Syntex, modifiez l’état du contrat en **In review**.
 - Le contrat est ensuite examiné et approuvé ou rejeté.
-- Pour les contrats approuvés, les informations sur le contrat sont publiées dans un onglet pour le traitement des paiements.
+- Pour les contrats approuvés, les informations de contrat sont publiées dans un onglet pour le traitement des paiements.
 - Pour les contrats rejetés, l’équipe est avertie pour analyse approfondie. 
 
 Le diagramme suivant illustre le flux Power Automate pour la solution de gestion des contrats.
@@ -137,7 +137,7 @@ Dans votre flux, vous devez ensuite créer une condition dans laquelle votre con
 
 Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
-- Sous l’onglet **Contrats,** l’état de la carte de contrat passe à **Approuvé**.
+- Sous **l’onglet Contrats,** l’état de la carte de contrat passe à **Approuvé**.
 
    ![État de la carte approuvé.](../media/content-understanding/approved-contracts-tab.png)
 
@@ -242,7 +242,7 @@ Lorsqu’un contrat a été approuvé, les éléments suivants se produisent :
 
 ## <a name="if-the-contract-is-rejected"></a>Si le contrat est rejeté
 
-Lorsqu’un contrat a été rejeté, les choses suivantes se produisent :
+Lorsqu’un contrat a été rejeté, les éléments suivants se produisent :
 
 - Sous l’onglet **Contrats,** l’état de la carte de contrat passe à **Rejeté**.
 

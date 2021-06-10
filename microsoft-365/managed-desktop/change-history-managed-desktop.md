@@ -49,7 +49,7 @@ Article nouveau ou modifié | Description
 [Applications dans le Bureau géré Microsoft](get-ready/apps.md) | Article mis à jour
 [Valider les nouveaux appareils](get-started/validate-device.md) | Nouvel article
 [Configurer les appareils Bureau géré Microsoft](get-started/set-up-devices.md) | Article mis à jour
-[Bureau géré Microsoft cycle de vie du produit](service-description/device-lifecycle.md) | Article mis à jour
+[Bureau géré Microsoft vie du produit](service-description/device-lifecycle.md) | Article mis à jour
 [Bureau géré Microsoft appareils](service-description/device-list.md) |Article mis à jour
 
 ## <a name="march-2021"></a>9 mars 2021
@@ -162,7 +162,7 @@ Article nouveau ou modifié | Description
 [Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
 [Contrôle des applications](service-description/app-control.md) | Article mis à jour
 [Configuration du réseau pour Bureau géré Microsoft](get-ready/network.md) | Article mis à jour
-[Nouvelle Microsoft Edge application](get-started/edge-browser-app.md) | Article mis à jour
+[Nouvelle application Microsoft Edge’application](get-started/edge-browser-app.md) | Article mis à jour
 [Accéder au portail d’administration](get-started/access-admin-portal.md) | Nouvel article
 [Contrôle des applications](service-description/app-control.md) | Nouvel article
 [Installer Microsoft Project ou Microsoft Visio sur Bureau géré Microsoft appareils](get-started/project-visio.md) | Article mis à jour
@@ -170,7 +170,7 @@ Article nouveau ou modifié | Description
 ## <a name="june-2020"></a>Juin 2020
 Article nouveau ou modifié | Description
 --- | ---
-[Nouvelle Microsoft Edge application](get-started/edge-browser-app.md) | Nouvel article
+[Nouvelle application Microsoft Edge’application](get-started/edge-browser-app.md) | Nouvel article
 [Configuration des appareils](service-description/device-policies.md) | Article mis à jour
 
 
@@ -237,7 +237,7 @@ Article nouveau ou modifié | Description
 Utiliser les informations | Nouvel article
 Informations d’utilisation | Nouvel article
 Informations de fiabilité | Nouvel article
-[Bureau géré Microsoft appareils](service-description/device-list.md) | Article mis à jour
+[Bureau géré Microsoft périphériques](service-description/device-list.md) | Article mis à jour
 [Bureau géré Microsoft page principale](./index.yml) | Article mis à jour
 [Qu’est-ce que le bureau géré Microsoft ?](./intro/index.md) | Article mis à jour
 [Préparer vos utilisateurs à l’utilisation les appareils](get-started/get-started-devices.md) | Article mis à jour
@@ -263,7 +263,7 @@ Article nouveau ou modifié | Description
 --- | ---
 [Technologies associées de Bureau géré Microsoft](intro/technologies.md) | Article mis à jour
 [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md) | Article mis à jour
-[Bureau géré Microsoft appareils](service-description/device-list.md) | Article mis à jour
+[Bureau géré Microsoft périphériques](service-description/device-list.md) | Article mis à jour
 [Déployer et suivre les paramètres configurables : Bureau géré Microsoft](working-with-managed-desktop/config-setting-deploy.md) | Article mis à jour
 [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md) | Article mis à jour
 [Configuration requise pour le Bureau géré Microsoft](get-ready/prerequisites.md) | Article mis à jour
@@ -297,7 +297,7 @@ Article nouveau ou modifié | Description
 [Applications dans le Bureau géré Microsoft](get-ready/apps.md) | Article mis à jour
 [Utilisation de Microsoft Consulting Services](get-ready/apps-mcs.md) | Nouvel article
 [Rôles et responsabilités de Bureau géré Microsoft](intro/roles-and-responsibilities.md) | Article mis à jour
-[Bureau géré Microsoft cycle de vie du produit](service-description/device-lifecycle.md) | Nouvel article
+[Bureau géré Microsoft vie du produit](service-description/device-lifecycle.md) | Nouvel article
 
 
 
@@ -305,7 +305,7 @@ Article nouveau ou modifié | Description
 Article nouveau ou modifié | Description
 --- | ---
 [Bureau géré Microsoft régions et langues pris en charge](service-description/regions-languages.md) | Article mis à jour
-[Bureau géré Microsoft appareils](service-description/device-list.md) | Article mis à jour
+[Bureau géré Microsoft périphériques](service-description/device-list.md) | Article mis à jour
 [Bureau géré Microsoft archivés](service-description/archived-device-list.md) | Nouvel article
 [Préparer les lecteurs mappés pour le Bureau géré Microsoft](get-ready/mapped-drives.md) | Nouvel article
 [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](get-ready/certs-wifi-lan.md) | Nouvel article
@@ -356,4 +356,4 @@ Article nouveau ou modifié | Description
 [Prise en charge des Bureau géré Microsoft](service-description/support.md)<br />et [prise en charge des utilisateurs pour Bureau géré Microsoft](working-with-managed-desktop/end-user-support.md) | Mise à jour pour inclure l’Australie.
 
 ## <a name="october-30-2018"></a>30 octobre 2018
-Contenu réorganisé : section ajoutée pour la description [Bureau géré Microsoft service.](service-description/index.md)
+Content reorganized: added section for [Bureau géré Microsoft service description](service-description/index.md).

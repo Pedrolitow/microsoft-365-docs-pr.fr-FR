@@ -37,7 +37,7 @@ L’Outil Diagnostic de page pour SharePoint est une extension de navigateur pou
 >[!NOTE]
 >L’Outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
-Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de page pour SharePoint, vous pouvez voir des informations sur les extensions  personnalisées qui dépassent la mesure de référence dans les **Extensions** ont un impact sur le temps de chargement et/ou le résultat trop grand nombre **d’extensions** utilisées dans le volet Tests de diagnostic 
+Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de page pour SharePoint, vous pouvez voir des informations sur les extensions personnalisées  qui dépassent la mesure de référence dans les **Extensions** qui ont un impact sur le temps de chargement et/ou le nombre **d’extensions** utilisées trop élevé dans le volet Tests de diagnostic 
 
 Les résultats possibles sont les suivants :
 

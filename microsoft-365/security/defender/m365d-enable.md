@@ -41,7 +41,7 @@ Microsoft 365 Defender s’allume automatiquement lorsque les clients éligibles
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>Vérifier l’éligibilité aux licences et les autorisations requises
 
-Une licence pour un produit de sécurité Microsoft 365 vous permet généralement d’utiliser Microsoft 365 Defender dans Microsoft 365 centre de sécurité sans coût de licence supplémentaire. Nous vous recommandons d’obtenir une licence Microsoft 365 E5, E5 Security, A5 ou A5 Security ou une combinaison valide de licences qui donne accès à tous les services pris en charge.
+Une licence à un produit de sécurité Microsoft 365 vous permet généralement d’utiliser Microsoft 365 Defender dans Microsoft 365 centre de sécurité sans coût de licence supplémentaire. Nous vous recommandons d’obtenir une licence Microsoft 365 E5, E5 Security, A5 ou A5 Security ou une combinaison valide de licences qui donne accès à tous les services pris en charge.
 
 Pour obtenir des informations détaillées sur les licences, [lisez les exigences de licence.](prerequisites.md#licensing-requirements)
 
@@ -51,7 +51,7 @@ Vous devez être administrateur **général ou** **administrateur** de sécurit�
 
 ## <a name="supported-services"></a>Services pris en charge
 
-Microsoft 365 Defender regroupe les données des différents services pris en charge que vous avez déjà déployés. Il traitera et stockera les données de manière centralisée pour identifier les nouvelles informations et rendre les flux de travail de réponse centralisés possibles. Il le fait sans affecter les déploiements, paramètres ou données existants associés aux services intégrés.
+Microsoft 365 Defender regroupe les données des différents services pris en charge que vous avez déjà déployés. Il traitera et stockera les données de manière centralisée pour identifier les nouvelles informations et rendre possibles des flux de travail de réponse centralisés. Il le fait sans affecter les déploiements, paramètres ou données existants associés aux services intégrés.
 
 Pour obtenir la meilleure protection et optimiser Microsoft 365 Defender, nous vous recommandons de déployer tous les services pris en charge applicables sur votre réseau. Pour plus d’informations, [voir sur le déploiement des services pris en charge.](deploy-supported-services.md)
 

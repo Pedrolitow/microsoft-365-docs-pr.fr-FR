@@ -99,7 +99,7 @@ Pour configurer un domaine dans Microsoft 365, vous devez posséder un domaine e
 > [!CAUTION]
 > Certains bureaux d’enregistrement de domaines ou fournisseurs d’hébergement DNS n’autorisent pas la création de tous les enregistrements DNS requis par Microsoft 365. Les fournisseurs d'hébergement répertoriés ici prennent en charge tous les enregistrements nécessaires. Si vous envisagez d'utiliser un autre fournisseur d'hébergement, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de domaines), vous vous connectez à Microsoft 365 en tant qu’administrateur et vous définissez votre domaine afin de pouvoir l’utiliser avec votre adresse de messagerie et d’autres services.
+Après avoir inscrit votre domaine (auprès d’un bureau d’enregistrement de domaines), connectez-vous à Microsoft 365 en tant qu’administrateur et définissez votre domaine afin de pouvoir l’utiliser avec votre adresse de messagerie et d’autres services.
   
 > [!NOTE]
 > Les SharePoint site web public en ligne de cet article s’appliquent uniquement si votre organisation a acheté Microsoft 365 avant le 9 mars 2015. 

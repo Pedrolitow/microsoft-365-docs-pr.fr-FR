@@ -1,5 +1,5 @@
 ---
-title: Supprimer des comptes d’utilisateur Microsoft 365 avec PowerShell
+title: Supprimer Microsoft 365 comptes d’utilisateurs avec PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Découvrez comment utiliser différents modules dans PowerShell pour supprimer des comptes d’utilisateur Microsoft 365.
+description: Découvrez comment utiliser différents modules dans PowerShell pour supprimer Microsoft 365 comptes d’utilisateurs.
 ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,19 +27,19 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919139"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Supprimer des comptes d’utilisateur Microsoft 365 avec PowerShell
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Supprimer Microsoft 365 comptes d’utilisateurs avec PowerShell
 
-Vous pouvez utiliser PowerShell pour Microsoft 365 pour supprimer et restaurer des comptes d’utilisateur.
+Vous pouvez utiliser PowerShell pour Microsoft 365 pour supprimer et restaurer des comptes d’utilisateurs.
 
 >[!Note]
->Découvrez comment restaurer [un compte d’utilisateur à l’aide](../admin/add-users/restore-user.md) du Centre d’administration Microsoft 365.
+>Découvrez comment restaurer [un compte d’utilisateur à l’aide](../admin/add-users/restore-user.md) Microsoft 365'administration centrale.
 >
 >Pour obtenir la liste des ressources supplémentaires, voir [Gérer les utilisateurs et les groupes.](../admin/add-users/index.yml)
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Après vous être connecté, utilisez la syntaxe suivante pour supprimer un compte d’utilisateur individuel :
   
@@ -54,7 +54,7 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> Le *paramètre -ObjectID* dans la cmdlet **Remove-AzureADUser** accepte soit le nom de la signature du compte, également appelé nom d’utilisateur principal, soit l’ID d’objet du compte.
+> Le *paramètre -ObjectID* dans la cmdlet **Remove-AzureADUser** accepte le nom de la signature du compte, également appelé nom d’utilisateur principal ou ID d’objet du compte.
   
 Pour afficher le nom du compte à partir du nom de l’utilisateur, utilisez les commandes suivantes :
   
@@ -79,9 +79,9 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le Module Microsoft Azure Active Directory pour Windows PowerShell.
 
-Lorsque vous supprimez un compte d’utilisateur via le module Microsoft Azure Active Directory pour Windows PowerShell, le compte n’est pas supprimé définitivement. En effet, vous pouvez le restaurer dans les 30 jours.
+Lorsque vous supprimez un compte d’utilisateur via Microsoft Azure Active Directory module de Windows PowerShell, le compte n’est pas supprimé définitivement. En effet, vous pouvez le restaurer dans les 30 jours.
 
-Tout [d’abord, connectez-vous à votre client Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Tout [d’abord, connectez-vous à Microsoft 365 client.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Pour supprimer un compte d’utilisateur, utilisez la syntaxe suivante :
   
@@ -125,6 +125,6 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 
 [Gérer les comptes d’utilisateurs, les licences et les groupes Microsoft 365 avec PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
+[Gestion de Microsoft 365 à l’aide de PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Prise en main de PowerShell pour Microsoft 365](getting-started-with-microsoft-365-powershell.md)

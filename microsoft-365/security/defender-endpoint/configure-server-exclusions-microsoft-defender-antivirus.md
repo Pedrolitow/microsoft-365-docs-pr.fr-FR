@@ -31,7 +31,7 @@ ms.locfileid: "52274759"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Antivirus Microsoft Defender sur Windows Server 2016 et Windows Server 2019 vous inscrit automatiquement dans certaines exclusions, telles que définies par votre rôle serveur spécifié. Ces exclusions n’apparaissent pas dans les listes d’exclusions standard affichées dans [Sécurité Windows application.](microsoft-defender-security-center-antivirus.md)
+Antivirus Microsoft Defender sur Windows Server 2016 et Windows Server 2019 vous inscrit automatiquement dans certaines exclusions, telles que définies par votre rôle serveur spécifié. Ces exclusions n’apparaissent pas dans les listes d’exclusions standard affichées dans [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md)
 
 > [!NOTE]
 > Les exclusions automatiques s’appliquent uniquement à l’analyse de la protection en temps réel (RTP). Les exclusions automatiques ne sont pas honorées lors d’une analyse complète/rapide ou à la demande.
@@ -44,7 +44,7 @@ Outre les exclusions automatiques définies par le rôle serveur, vous pouvez aj
 
 Gardez les points importants suivants à l’esprit :
 
-- Les exclusions personnalisées prévalent sur les exclusions automatiques.
+- Les exclusions personnalisées sont prioritaires sur les exclusions automatiques.
 - Les exclusions automatiques s’appliquent uniquement à l’analyse de la protection en temps réel (RTP). Les exclusions automatiques ne sont pas honorées lors d’une analyse complète/rapide ou à la demande.
 - Les exclusions personnalisées et dupliquées ne sont pas en conflit avec les exclusions automatiques.
 - Antivirus Microsoft Defender utilise les outils gestion et maintenance des images de déploiement (DISM) pour déterminer les rôles installés sur votre ordinateur.
@@ -62,7 +62,7 @@ Vous pouvez désactiver les listes d’exclusion automatique avec la stratégie 
 
 ### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Utiliser la stratégie de groupe pour désactiver la liste d’exclusions automatiques sur Windows Server 2016 et Windows Server 2019
 
-1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)) Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la[Console de gestion des stratégies de groupe](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 2. Dans **l’Éditeur de gestion des stratégies** de groupe, allez à **Configuration** ordinateur, puis cliquez sur **Modèles d’administration.**
 3. Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **exclusions.**
 4. Double-cliquez **sur Désactiver les exclusions automatiques** et définissez l’option sur **Activé.** Cliquez ensuite sur **OK**. 
@@ -203,7 +203,7 @@ Le tableau suivant répertorie les exclusions de types de fichiers, les exclusio
 
 ### <a name="active-directory-exclusions"></a>Exclusions Active Directory
 
-Cette section répertorie les exclusions qui sont automatiquement livrées lorsque vous installez les services de domaine Active Directory.
+Cette section répertorie les exclusions qui sont livrées automatiquement lorsque vous installez les services de domaine Active Directory.
 
 #### <a name="ntds-database-files"></a>Fichiers de base de données NTDS
 
@@ -326,7 +326,7 @@ Excluez les fichiers suivants de ce dossier et de tous ses sous-dossiers :
 - `*.ins`
 - `Oscfilter.ini`
 
-### <a name="windows-server-update-services-exclusions"></a>Exclusions de Windows Server Update Services
+### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services exclusions
 
 Cette section répertorie les exclusions de dossiers qui sont automatiquement livrées lorsque vous installez le rôle Windows Server Update Services (WSUS). Le dossier WSUS est spécifié dans la clé de Registre `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
@@ -337,9 +337,9 @@ Cette section répertorie les exclusions de dossiers qui sont automatiquement li
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer et valider des exclusions pour les analyses de l’Antivirus Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configurer et valider des exclusions pour Antivirus Microsoft Defender analyses](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurer et valider des exclusions en fonction du nom de fichier, de l’extension et de l’emplacement du dossier](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurer et valider des exclusions pour les fichiers ouverts par des processus](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Erreurs courantes à éviter lors de la définition d’exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Personnaliser, lancer et passer en revue les résultats des analyses et des corrections de l’Antivirus Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Personnaliser, lancer et passer en revue les résultats des analyses et Antivirus Microsoft Defender correction](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

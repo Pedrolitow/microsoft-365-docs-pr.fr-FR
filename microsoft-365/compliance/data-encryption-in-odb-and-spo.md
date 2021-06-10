@@ -50,11 +50,11 @@ Dans OneDrive Entreprise et SharePoint Online, il existe deux scénarios dans le
 
 Le chiffrement lors du stockage comprend deux composants : le chiffrement au niveau du disque BitLocker et le chiffrement par fichier du contenu client.
   
-BitLocker est déployé pour OneDrive Entreprise et SharePoint Online sur l'ensemble du service. Le chiffrement par fichier se trouve également dans OneDrive Entreprise et SharePoint Online dans microsoft 365 multi-clients et dans de nouveaux environnements dédiés qui reposent sur la technologie multi-clients.
+BitLocker est déployé pour OneDrive Entreprise et SharePoint Online sur l'ensemble du service. Le chiffrement par fichier se trouve également dans OneDrive Entreprise et SharePoint Online dans Microsoft 365 environnements multi-locataires et nouveaux dédiés qui reposent sur une technologie multi-client.
   
 Alors que BitLocker chiffre toutes les données sur un disque, le chiffrement par fichier va plus loin en ajoutant une clé de chiffrement unique pour chaque fichier. En outre, chaque mise à jour de chaque fichier est chiffrée à l'aide de sa propre clé de chiffrement. Avant d'être stockées, les clés permettant d'accéder au contenu chiffré sont stockées dans un emplacement physiquement distinct du contenu. Chaque étape de ce chiffrement utilise la méthode AES (Advanced Encryption Standard) avec des clés 256 bits et est conforme à la norme FIPS (Federal Information Processing Standard) 140-2. Le contenu chiffré est réparti sur un certain nombre de conteneurs dans l'ensemble du centre de données, et chaque conteneur possède des informations d'identification uniques. Ces informations sont stockées dans un emplacement physique distinct du contenu ou des clés de contenu.
   
-Pour plus d’informations sur la conformité FIPS 140-2, voir [conformité FIPS 140-2](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).
+Pour plus d’informations sur la conformité FIPS 140-2, consultez la conformité [FIPS 140-2.](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))
   
 Le chiffrement au niveau du fichier lors du stockage tire profit du stockage d'objets blob pour fournir une croissance de stockage virtuellement illimitée et pour permettre une protection sans précédent. L'ensemble du contenu client dans OneDrive Entreprise et SharePoint Online sera migré vers le stockage d'objets blob. Voici la façon dont les données sont sécurisées :
   

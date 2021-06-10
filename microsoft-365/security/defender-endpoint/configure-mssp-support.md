@@ -29,7 +29,7 @@ ms.locfileid: "51165248"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
@@ -39,12 +39,12 @@ Vous devez suivre les étapes de configuration suivantes pour activer l’intég
 
 >[!NOTE]
 >Les termes suivants sont utilisés dans cet article pour faire la distinction entre le fournisseur de services et le consommateur de services :
-> - MSSP : organisations de sécurité qui offrent de surveiller et de gérer les appareils de sécurité d’une organisation.
+> - MSSP : organisations de sécurité qui offrent la surveillance et la gestion des périphériques de sécurité pour une organisation.
 > - Clients MSSP : organisations qui engagent les services des MSSP.
 
 L’intégration permettra aux MSSP d’agir comme suit :
 
-- Accéder au portail Centre de sécurité Microsoft Defender du client MSSP
+- Accéder au portail Centre de sécurité Microsoft Defender client MSSP
 - Obtenir des notifications par courrier électronique et 
 - Récupérer des alertes via les outils de gestion des événements et des informations de sécurité (SIEM)
 
@@ -57,14 +57,14 @@ En règle générale, les clients MSSP prennent les étapes de configuration ini
 En règle générale, les étapes de configuration suivantes doivent être prises :
 
 
-- **Accorder au MSSP l’accès au Centre de sécurité Microsoft Defender** <br>
+- **Accorder au MSSP l’accès Centre de sécurité Microsoft Defender** <br>
 Cette action doit être effectuée par le client MSSP. Il accorde au MSSP l’accès au client Defender for Endpoint du client MSSP.
  
 
 - **Configurer les notifications d’alerte envoyées aux MSSP** <br>
 Cette action peut être prise par le client MSSP ou MSSP. Cela permet aux MSSP de savoir quelles alertes ils doivent adresser pour le client MSSP.
 
-- **Récupérer des alertes du client MSSP client dans le système SIEM** <br> Cette action est prise par le MSSP. Il permet aux MSSP de récupérer des alertes dans les outils SIEM.
+- **Récupérer les alertes du client du client MSSP dans le système SIEM** <br> Cette action est prise par le MSSP. Il permet aux MSSP de récupérer des alertes dans les outils SIEM.
 
 - **Récupérer des alertes à partir du client MSSP client à l’aide des API** <br>
 Cette action est prise par le MSSP. Il permet aux MSSP de récupérer des alertes à l’aide d’API.
@@ -77,6 +77,6 @@ Pour plus d’informations sur l’implémenter un accès délégué à plusieur
 ## <a name="related-topics"></a>Voir aussi
 - [Accorder l’accès MSSP au portail](grant-mssp-access.md)
 - [Accéder au portail client MSSP](access-mssp-portal.md)
-- [Configurer les notifications d’alerte](configure-mssp-notifications.md)
-- [Récupérer des alertes à partir du client](fetch-alerts-mssp.md)
+- [Configurer des notifications d’alerte](configure-mssp-notifications.md)
+- [Récupérer les alertes d’un client](fetch-alerts-mssp.md)
 

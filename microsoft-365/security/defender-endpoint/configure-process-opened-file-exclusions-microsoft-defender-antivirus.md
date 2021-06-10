@@ -44,17 +44,17 @@ Cet article explique comment configurer des listes d’exclusions.
 |Tout fichier sur l’ordinateur ouvert par un processus spécifique dans un dossier spécifique | La spécification `c:\test\process.exe` exclurait les fichiers ouverts uniquement par `c:\test\process.exe` |
 
 
-Lorsque vous ajoutez un processus à la liste d’exclusions de processus, Antivirus Microsoft Defender pas analyser les fichiers ouverts par ce processus, quel que soit l’emplacement des fichiers. Toutefois, le processus proprement dit sera analysé, sauf s’il a également été ajouté à la liste [d’exclusions de fichiers.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+Lorsque vous ajoutez un processus à la liste d’exclusions de processus, Antivirus Microsoft Defender n’analyse pas les fichiers ouverts par ce processus, quel que soit l’emplacement des fichiers. Toutefois, le processus proprement dit sera analysé, sauf s’il a également été ajouté à la liste [d’exclusions de fichiers.](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
 Les exclusions s’appliquent uniquement à la protection et à la surveillance en temps [réel toujours en temps réel.](configure-real-time-protection-microsoft-defender-antivirus.md) Elles ne s’appliquent pas aux analyses programmées ou à la demande.
 
-Les modifications apportées avec  la stratégie de groupe aux listes d’exclusions s’afficheront dans les listes de [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md) Toutefois, les modifications apportées à l Sécurité Windows’application **ne s’afficheront pas** dans les listes de stratégie de groupe.
+Les modifications apportées avec la stratégie de groupe aux **listes** d’exclusions s’afficheront dans les listes de [l Sécurité Windows app.](microsoft-defender-security-center-antivirus.md) Toutefois, les modifications apportées à l Sécurité Windows’application **ne s’afficheront pas** dans les listes de stratégie de groupe.
 
 Vous pouvez ajouter, supprimer et examiner les listes pour les exclusions dans la stratégie de groupe, Microsoft Endpoint Configuration Manager, Microsoft Intune et avec l’application Sécurité Windows, et vous pouvez utiliser des caractères génériques pour personnaliser davantage les listes.
 
 Vous pouvez également utiliser les cmdlets PowerShell et WMI pour configurer les listes d’exclusions, y compris la révision de vos listes.
 
-Par défaut, les modifications locales apportées aux listes (par les utilisateurs ayant des privilèges d’administrateur, les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégies de groupe sont prioritaire en cas de conflit.
+Par défaut, les modifications locales apportées aux listes (par les utilisateurs ayant des privilèges d’administrateur , les modifications apportées avec PowerShell et WMI) sont fusionnées avec les listes telles que définies (et déployées) par la stratégie de groupe, Configuration Manager ou Intune. Les listes de stratégies de groupe sont prioritaire en cas de conflit.
 
 Vous pouvez [configurer la façon dont les listes d’exclusions définies](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) localement et globalement sont fusionnées pour permettre aux modifications locales de remplacer les paramètres de déploiement géré.
 
@@ -62,7 +62,7 @@ Vous pouvez [configurer la façon dont les listes d’exclusions définies](conf
 
 ### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser Microsoft Intune pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 
-Pour plus d’informations, voir Configurer les [paramètres](/intune/device-restrictions-configure) de restriction d’appareil Microsoft Intune et Antivirus Microsoft Defender paramètres de restriction d’appareil pour Windows 10 [dans Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Consultez [Configurer des paramètres de restriction d’appareils dans Microsoft Intune](/intune/device-restrictions-configure) et [Paramètres de restriction d’appareil de l’Antivirus Microsoft Defender pour Windows 10](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) pour obtenir des détails supplémentaires.
 
 ### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>Utiliser Microsoft Endpoint Manager pour exclure des analyses les fichiers qui ont été ouverts par des processus spécifiés
 
@@ -153,19 +153,19 @@ Si vous utilisez PowerShell, vous pouvez récupérer la liste de deux manières 
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Valider la liste d’exclusions à l’aide de MpCmdRun
 
-Pour vérifier les exclusions avec l’outil en ligne de commande [mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
+Pour vérifier les exclusions avec l’outil de ligne de commande [dédié mpcmdrun.exe, ](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)utilisez la commande suivante :
 
 ```DOS
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.1812.3 (publiée en décembre 2018) ou ultérieure.
+> La vérification des exclusions avec MpCmdRun nécessite Antivirus Microsoft Defender CAMP version 4.18.1812.3 (publiée en décembre 2018) ou version ultérieure.
 
 
 ### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Passer en revue la liste des exclusions avec toutes les autres préférences Antivirus Microsoft Defender à l’aide de PowerShell
 
-Utilisez l’cmdlet suivante :
+Utilisez la cmdlet suivante :
 
 ```PowerShell
 Get-MpPreference
@@ -191,4 +191,4 @@ Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Micr
 - [Configurer des exclusions Antivirus Microsoft Defender sur Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Erreurs courantes à éviter lors de la définition d’exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [Personnaliser, lancer et passer en revue les résultats des analyses et Antivirus Microsoft Defender correction](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

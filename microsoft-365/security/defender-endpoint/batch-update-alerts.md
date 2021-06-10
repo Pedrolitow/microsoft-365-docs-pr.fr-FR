@@ -39,7 +39,7 @@ ms.locfileid: "51166683"
 ## <a name="api-description"></a>Description de l’API
 Met à jour les propriétés d’un lot d’alertes [existantes.](alerts.md)
 <br>L’envoi **de commentaire** est disponible avec ou sans mise à jour des propriétés.
-<br>Les propriétés updatables `status` sont : , et `determination` `classification` `assignedTo` .
+<br>Les propriétés qui peuvent être mis à jour `status` sont : , et `determination` `classification` `assignedTo` .
 
 
 ## <a name="limitations"></a>Limites
@@ -58,7 +58,7 @@ Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et é
 >[!Note]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
 >- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
->- L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+>- L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 ```http
@@ -69,7 +69,7 @@ POST /api/alerts/batchUpdate
 
 Nom | Type | Description
 :---|:---|:---
-Autorisation | Chaîne | Porteur {token}. **Obligatoire**.
+Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | String | application/json. **Obligatoire**.
 
 
@@ -81,10 +81,10 @@ Dans le corps de la demande, fournissez les ID des alertes à mettre à jour et 
 Propriété | Type | Description
 :---|:---|:---
 alertIds | Chaîne de &lt; liste&gt;| Liste des ID des alertes à mettre à jour. **Obligatoire**
-status | Chaîne | Spécifie l’état mis à jour des alertes spécifiées. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
-assignedTo | Chaîne | Propriétaire des alertes spécifiées
+status | String | Spécifie l’état mis à jour des alertes spécifiées. Les valeurs des propriétés sont : « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
+assignedTo | String | Propriétaire des alertes spécifiées
 classification | String | Spécifie la spécification des alertes spécifiées. Les valeurs de propriété sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif). 
-détermination | Chaîne | Spécifie la détermination des alertes spécifiées. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+détermination | String | Spécifie la détermination des alertes spécifiées. Les valeurs de propriété sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Commentaire à ajouter aux alertes spécifiées.
 
 ## <a name="response"></a>Réponse

@@ -84,7 +84,7 @@ Microsoft 365 offre aux utilisateurs la flexibilité nécessaire pour s’adapte
 
 ### <a name="scoring-model"></a>Modèle d’score
 
-Le score de communication de votre organisation mesure au niveau de l’agrégation (organisation) si les utilisateurs communiquent de manière cohérente à l’aide de plusieurs modes entre les publications de messagerie, de conversation et de communauté sur une période de 28 jours.  
+Le score de communication de votre organisation mesure au niveau de l’agrégation (organisation) si les utilisateurs communiquent de manière cohérente à l’aide de plusieurs modes entre les publications de messagerie, de conversation et de communauté au cours d’une période de 28 jours.  
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
@@ -176,7 +176,7 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
    - **Questions :** La partie colorée de la barre et le nombre associé représentent le nombre total de publications marquées comme des questions au cours des 28 derniers jours.
    - **Questions avec réponses :** La partie colorée de la barre et le nombre associé représentent le nombre de publications marquées comme des questions et qui ont reçu des réponses au cours des 28 derniers jours.
-   - **Questions avec les meilleures réponses :** La partie colorée de la barre et le nombre associé représentent le nombre de billets marqués comme des questions et qui ont également reçu une meilleure réponse au cours des &quot; &quot; 28 derniers jours.
+   - **Questions avec les meilleures réponses :** La partie colorée de la barre et le numéro associé représentent le nombre de billets marqués comme des questions et qui ont également reçu une meilleure réponse au cours des &quot; &quot; 28 derniers jours.
       
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
@@ -185,6 +185,6 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 [Microsoft 365'état des applications : expériences technologiques](apps-health.md) (article)\
 [Collaboration de contenu : expériences de](content-collaboration.md) personnes (article)\
 [Réunions : expériences de personnes](meetings.md) (article)\
-[Mobilité : expériences de](mobility.md) personnes (article)\
+[Mobilité : expériences utilisateur](mobility.md) (article)\
 [Contrôles de confidentialité pour le Score de productivité](privacy.md) (article)\
 [Travail d’équipe : expériences de](teamwork.md) personnes (article)

@@ -1,6 +1,6 @@
 ---
 title: Table IdentityInfo dans le schéma de recherche avancé
-description: En savoir plus sur les informations de compte d'utilisateur dans la table IdentityInfo du schéma de recherche avancé
+description: En savoir plus sur les informations de compte d’utilisateur dans la table IdentityInfo du schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AccountInfo, IdentityInfo, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,9 +33,9 @@ ms.locfileid: "51935820"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
-Le tableau du schéma de recherche avancée contient des informations sur les comptes d'utilisateurs obtenus à partir de `IdentityInfo` différents services, y compris Azure Active [](advanced-hunting-overview.md) Directory. Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
+Le tableau du schéma de recherche avancée contient des informations sur les comptes d’utilisateurs obtenus à partir de différents services, notamment `IdentityInfo` Azure Active Directory. [](advanced-hunting-overview.md) Utilisez cette référence pour créer des requêtes qui renvoient des informations de cette table.
 
 >[!NOTE]
 >Cette table a été renommée à partir `AccountInfo` de . Pendant les changements de nom, toutes les requêtes enregistrées dans le portail sont automatiquement mises à jour. Vérifiez les requêtes que vous avez enregistrées ailleurs.
@@ -45,15 +45,15 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | Nom de colonne | Type de données | Description |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Identificateur unique du compte dans Azure AD |
-| `AccountUpn` | string | Nom d'utilisateur principal (UPN) du compte |
+| `AccountUpn` | string | Nom d’utilisateur principal (UPN) du compte |
 | `OnPremSid` | string | Identificateur de sécurité local (SID) du compte |
 | `CloudSid` | string | Identificateur de sécurité cloud du compte |
-| `GivenName` | string | Prénom ou nom de l'utilisateur du compte |
-| `Surname` | string | Nom de famille, nom de famille ou nom de l'utilisateur du compte |
-| `AccountDisplayName` | string | Nom de l'utilisateur du compte affiché dans le carnet d'adresses. En règle générale, une combinaison d'un prénom ou d'un prénom donné, d'une initiation intermédiaire et d'un nom ou d'un nom de famille. |
-| `Department` | string | Nom du service à qui appartient l'utilisateur du compte |
-| `JobTitle` | string | Fonction de l'utilisateur du compte |
-| `AccountName` | string | Nom d'utilisateur du compte |
+| `GivenName` | string | Prénom ou nom de l’utilisateur du compte |
+| `Surname` | string | Nom de famille, nom de famille ou nom de l’utilisateur du compte |
+| `AccountDisplayName` | string | Nom de l’utilisateur du compte affiché dans le carnet d’adresses. En règle générale, une combinaison d’un prénom ou d’un prénom donné, d’une initiation intermédiaire et d’un nom ou d’un nom de famille. |
+| `Department` | string | Nom du service à qui appartient l’utilisateur du compte |
+| `JobTitle` | string | Fonction de l’utilisateur du compte |
+| `AccountName` | string | Nom d’utilisateur du compte |
 | `AccountDomain` | string | Domaine du compte |
 | `EmailAddress` | string | Adresse SMTP du compte |
 | `SipProxyAddress` | string | Adresse SIP (Session Initiation Protocol) VOIP (Voice over IP) du compte |

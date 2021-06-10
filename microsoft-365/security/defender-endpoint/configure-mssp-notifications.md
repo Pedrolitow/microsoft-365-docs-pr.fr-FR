@@ -29,9 +29,9 @@ ms.locfileid: "51166052"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
 
 
 >[!NOTE]
@@ -51,4 +51,4 @@ Ces cases à cocher doivent être cochées :
 ## <a name="related-topics"></a>Voir aussi
 - [Accorder l’accès MSSP au portail](grant-mssp-access.md)
 - [Accéder au portail client MSSP](access-mssp-portal.md)
-- [Récupérer des alertes à partir du client](fetch-alerts-mssp.md)
+- [Récupérer les alertes d’un client](fetch-alerts-mssp.md)
