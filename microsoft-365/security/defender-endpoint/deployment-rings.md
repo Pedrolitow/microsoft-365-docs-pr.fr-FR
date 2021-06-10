@@ -31,11 +31,11 @@ ms.locfileid: "52297204"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Le déploiement de Microsoft Defender pour endpoint peut être effectué à l’aide d’une approche de déploiement basée sur l’anneau. 
+Le déploiement de Microsoft Defender pour Endpoint peut être effectué à l’aide d’une approche de déploiement basée sur l’anneau. 
 
 Les anneaux de déploiement peuvent être appliqués dans les scénarios suivants :
 - [Nouveaux déploiements](#new-deployments)
@@ -46,7 +46,7 @@ Les anneaux de déploiement peuvent être appliqués dans les scénarios suivant
 ![Image des anneaux de déploiement](images/deployment-rings.png)
 
 
-Une approche basée sur l’anneau permet d’identifier un ensemble de points de terminaison à intégrer et de vérifier que certains critères sont satisfaits avant de poursuivre le déploiement du service sur un plus grand nombre d’appareils. Vous pouvez définir les critères de sortie de chaque anneau et vous assurer qu’ils sont satisfaits avant de passer à l’anneau suivant.
+Une approche basée sur l’anneau est une méthode d’identification d’un ensemble de points de terminaison à intégrer et de vérifier que certains critères sont satisfaits avant de poursuivre le déploiement du service sur un plus grand ensemble d’appareils. Vous pouvez définir les critères de sortie de chaque anneau et vous assurer qu’ils sont satisfaits avant de passer à l’anneau suivant.
 
 L’adoption d’un déploiement basé sur l’anneau permet de réduire les problèmes potentiels qui peuvent survenir lors du déploiement du service. En pilotant d’abord un certain nombre d’appareils, vous pouvez identifier les problèmes potentiels et atténuer les risques potentiels qui peuvent survenir. 
 
@@ -108,7 +108,7 @@ Utilisez les documents suivants pour sélectionner l’architecture microsoft De
 ### <a name="windows-endpoints"></a>Windows de terminaison
 Pour Windows serveurs et/ou Windows, vous sélectionnez plusieurs ordinateurs à tester à l’avance (avant le correctif de mardi) à l’aide du programme DE VALIDATION de mise à jour de sécurité **(PROGRAMME).**
 
-Pour plus d’informations, voir :
+Pour plus d’informations, voir :
 - [Qu’est-ce que le programme de validation des mises à jour de sécurité ?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Programme de validation de mise à jour logicielle et établissement Centre de protection Microsoft contre les programmes malveillants - Chronologie interactive TwC partie 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 

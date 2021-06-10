@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à utiliser la stratégie d’intelligence contre l’usurpation d’adresse et l’information sur l’usurpation d’informations pour autoriser ou bloquer les expéditeurs usurpés détectés.
+description: Les administrateurs peuvent apprendre à utiliser la stratégie de veille contre l’usurpation d’informations et l’information sur l’usurpation d’informations pour autoriser ou bloquer les expéditeurs usurpés détectés.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -39,7 +39,7 @@ ms.locfileid: "52793207"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques entrants sont automatiquement protégés contre l’usurpation d’adresse par EOP à partir d’octobre 2018. EOP utilise **la veille contre** l’usurpation d’adresse dans le cadre de la protection globale de votre organisation contre le hameçonnage. Pour plus d’informations, voir [Protection contre l’usurpation d’adresse dans EOP.](anti-spoofing-protection.md)
 
-La stratégie de veille contre l’usurpation d’informations par défaut (et **uniquement)** permet de s’assurer que le courrier électronique usurpé envoyé par des expéditeurs légitimes n’est pas pris en compte dans les filtres de courrier indésirable EOP tout en protégeant vos utilisateurs contre les attaques de courrier indésirable ou de hameçonnage. Vous pouvez également  utiliser la veille contre l’usurpation d’identité pour déterminer rapidement les expéditeurs externes qui vous envoient légitimement des messages électroniques non authentifiés (messages provenant de domaines ne réussissant pas les vérifications SPF, DKIM ou DMARC).
+La stratégie de veille contre l’usurpation d’informations par défaut (et **uniquement)** permet de s’assurer que les messages électroniques usurpés envoyés par des expéditeurs légitimes ne sont pas pris en compte dans les filtres de courrier indésirable EOP tout en protégeant vos utilisateurs contre les attaques de courrier indésirable ou de hameçonnage. Vous pouvez également  utiliser la veille contre l’usurpation d’identité pour déterminer rapidement les expéditeurs externes qui vous envoient légitimement des messages électroniques non authentifiés (messages provenant de domaines ne réussissant pas les vérifications SPF, DKIM ou DMARC).
 
 Vous pouvez gérer la veille contre l’usurpation d’adresse dans le Centre de sécurité & conformité ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
 
@@ -53,7 +53,7 @@ Vous pouvez gérer la veille contre l’usurpation d’adresse dans le Centre de
 
 - Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
   - Pour modifier la stratégie de veille contre l’usurpation d’informations ou activer  ou  désactiver la veille contre l’usurpation d’informations, vous devez être membre des groupes de rôles Gestion de l’organisation ou Administrateur de la sécurité.
-  - Pour accéder en lecture seule à la stratégie d’intelligence contre  l’usurpation d’informations, vous devez être membre des groupes de rôles Lecteur global ou Lecteur **de** sécurité.
+  - Pour accéder en lecture seule à la stratégie d’intelligence contre  l’usurpation d’informations, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -82,7 +82,7 @@ Il existe deux façons d’autoriser et de bloquer les expéditeurs usurpés :
 
 1. Dans le Centre de sécurité et conformité, accédez à **Gestion des menaces** \> **Stratégie** \> **Anti-courrier indésirable**.
 
-2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur Développer l’icône pour développer la stratégie ![ de veille contre ](../../media/scc-expand-icon.png) **l’usurpation d’adresse .**
+2. Dans la page **Paramètres anti-courrier** indésirable, cliquez sur Développer l’icône pour développer la stratégie de ![ veille contre ](../../media/scc-expand-icon.png) **l’usurpation d’adresse .**
 
    ![Sélectionner la stratégie de veille contre l’usurpation d’informations](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
@@ -96,13 +96,13 @@ Il existe deux façons d’autoriser et de bloquer les expéditeurs usurpés :
    - **Vos domaines : expéditeurs** usurpant des utilisateurs dans vos domaines internes.
    - **Domaines externes : expéditeurs** usurpant des utilisateurs dans des domaines externes.
 
-5. Cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône dans **la colonne Usurpation d’usurpation d’accès.** Choisissez **Oui** pour autoriser l’expéditeur usurpé  ou non pour marquer le message comme usurpant l’usurpation. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message vers le dossier **Courrier indésirable).** Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
+5. Cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône dans **la colonne Usurpation d’usurpation d’accès.** Choisissez **Oui** pour autoriser l’expéditeur usurpé  ou non pour marquer le message comme usurpant l’usurpation. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message dans le dossier **Courrier indésirable).** Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#spoof-settings).
 
-   ![Capture d’écran montrant le volant des expéditeurs usurpés et indique si l’expéditeur est autorisé à usurper l’adresse](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+   ![Screenshot showing the spoofed senders flyout, and whether the sender is allowed to spoof](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    Les colonnes et les valeurs que vous voyez sont expliquées dans la liste suivante :
 
-   - **Utilisateur usurpé :** compte d’utilisateur usurpé. Il s’agit de l’expéditeur du message dans l’adresse de provenance (également appelée adresse) qui `5322.From` s’affiche dans les clients de messagerie. La validité de cette adresse n’est pas vérifiée par SPF.
+   - **Utilisateur usurpé :** compte d’utilisateur usurpé. Il s’agit de l’expéditeur du message dans l’adresse de provenance (également appelée adresse) qui est affichée dans les `5322.From` clients de messagerie. La validité de cette adresse n’est pas vérifiée par SPF.
      - Sous **l’onglet** Vos domaines, la valeur contient une seule adresse de messagerie, ou si le serveur de messagerie source usurpe plusieurs comptes d’utilisateur, il en contient **plusieurs.**
      - Sous **l’onglet Domaines externes,** la valeur contient le domaine de l’utilisateur usurpé, et non l’adresse de messagerie complète.
 
@@ -125,9 +125,9 @@ Il existe deux façons d’autoriser et de bloquer les expéditeurs usurpés :
 
    - **Dernière vue**: date de la dernière réception d’un message de l’infrastructure d’envoi contenant l’utilisateur usurpé.
 
-   - **Autorisé à usurper ? :** les valeurs que vous voyez ici sont :
+   - **Autorisé à usurper l’usurpation d’accès ?**: les valeurs que vous voyez ici sont les :
      - **Oui**: les messages provenant de la combinaison de l’utilisateur usurpé et de l’infrastructure d’envoi sont autorisés et ne sont pas traités comme des e-mails usurpés.
-     - **Non**: les messages provenant de la combinaison de l’utilisateur usurpé et de l’infrastructure d’envoi sont marqués comme usurpés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message vers le dossier **Courrier indésirable).** Pour plus d’informations, voir la section suivante.
+     - **Non**: les messages provenant de la combinaison de l’utilisateur usurpé et de l’infrastructure d’envoi sont marqués comme usurpés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message dans le dossier **Courrier indésirable).** Pour plus d’informations, voir la section suivante.
 
      - **Certains utilisateurs** (onglet Vos domaines uniquement) : une infrastructure d’envoi usurpe plusieurs **utilisateurs,** où certains utilisateurs usurpés sont autorisés et d’autres non. Utilisez **l’onglet Détails** pour voir les adresses spécifiques.
 
@@ -189,7 +189,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
    - **Domaines usurpés probables** au cours des sept derniers jours : cette information indique que la veille contre l’usurpation d’informations est activée (activée par défaut).
    - **Activer la protection contre** l’usurpation d’informations : cette information indique que la veille contre l’usurpation d’informations est désactivée, et le fait de cliquer sur l’information vous permet d’activer la veille contre l’usurpation d’informations.
 
-3. L’aperçu du tableau de bord vous présente des informations telles que les présentes :
+3. Les informations du tableau de bord vous montrent des informations telles que :
 
    ![Capture d’écran d’informations sur l’usurpation d’intelligence](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
 
@@ -198,7 +198,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
    - **Mode Insight**: si la veille contre l’usurpation d’informations est activée, elle vous montre le nombre de messages qui ont été touchés par nos fonctionnalités de veille contre l’usurpation d’informations au cours des sept derniers jours.
    - **Que** se passe-t-il si le mode : si la veille contre l’usurpation d’informations est désactivée, l’analyse vous montre le nombre de *messages* qui auraient été touchés par nos fonctionnalités de veille contre l’usurpation d’informations au cours des sept derniers jours.
 
-   Dans les deux cas, les domaines usurpés affichés dans l’insight sont séparés en deux **catégories** : domaines suspects et domaines **non suspects.**
+   Dans les deux cas, les domaines usurpés affichés dans l’aperçu sont séparés en deux **catégories** : domaines suspects et domaines **non suspects.**
 
    - **Domaines suspects**:
      - Usurpation d’un niveau de confiance élevé : en fonction des modèles d’envoi historiques et du score de réputation des domaines, nous sommes très certains que les domaines sont usurpés et que les messages provenant de ces domaines sont plus susceptibles d’être malveillants.
@@ -212,9 +212,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
    - **Domaine usurpé**: domaine de l’utilisateur usurpé qui s’affiche dans la zone De des clients de messagerie.  Cette adresse est également appelée `5322.From` adresse.
    - **Infrastructure**: également appelée infrastructure _d’envoi._ Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source. Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\> /24 (par exemple, 192.168.100.100/24).
    - **Nombre de** messages : nombre de messages de l’infrastructure d’envoi à votre organisation qui contiennent le domaine usurpé spécifié au cours des 7 derniers jours.
-   - **Dernière vue**: date de la dernière réception d’un message de l’infrastructure d’envoi qui contient le domaine usurpé.
+   - **Dernière vue**: date de la dernière réception d’un message de l’infrastructure d’envoi contenant le domaine usurpé.
    - **Type d’usurpation**: cette valeur est **Externe**.
-   - **Autorisé à usurper ? :** les valeurs que vous voyez ici sont :
+   - **Autorisé à usurper l’usurpation d’accès ?**: les valeurs que vous voyez ici sont les :
      - **Oui**: les messages provenant de la combinaison du domaine de l’utilisateur usurpé et de l’infrastructure d’envoi sont autorisés et ne sont pas traités comme des e-mails usurpés.
      - **Non**: les messages provenant de la combinaison du domaine de l’utilisateur usurpé et de l’infrastructure d’envoi sont marqués comme usurpés. L’action est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer le message dans le dossier **Courrier indésirable).**
 

@@ -19,18 +19,16 @@ ms.custom:
 search.appverid: MET150
 description: Découvrez comment activer et gérer des applications tierces dans Microsoft 365 centre d’administration.
 ms.date: 04/15/2021
-ms.openlocfilehash: 5a486dba03fbd34fe2e409bba8ba41c1f9873141
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: f061137270416d13db1f1cd32aa17f50f2f8c5d2
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331621"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866606"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gérer les abonnements d’applications tierces pour votre organisation
 
 Vous pouvez gérer les licences et la facturation des applications tierces dans le nouveau centre d Microsoft 365'administration. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
-
-Vous pouvez gérer les licences et la facturation pour les applications tierces dans Microsoft 365 centre d’administration avec le mode aperçu désactivé. Les fonctionnalités mises à jour incluent une gestion améliorée des abonnements, un accès amélioré aux informations de facturation et une plus grande flexibilité pour la gestion des factures. La gestion des abonnements est basée sur la plateforme commerciale mise à jour de Microsoft. Cela s’applique aux applications logicielles en tant que service que les clients achètent directement ou auprès d’un fournisseur tiers.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Comment obtenir des applications de logiciel en tant que service
 
@@ -44,12 +42,12 @@ Une fois que les clients achètent les applications et acceptent le contrat clie
 
 Les fournisseurs d’applications vendent leurs applications à un taux fixe ou en achetant des licences pour les utilisateurs.
 
-- **Taux fixe** : également appelé tarification basée sur le site, les applications sont payantes avec un prix mensuel ou annuel. Sur la page de l’application, la quantité de licences est répertoriée sur Unlimited.
+- **Taux fixe** : également appelé tarification basée sur le site, les applications sont payantes avec un prix mensuel ou annuel. Sur la page de l’application, le nombre de licences est répertorié sur Illimité.
 - **Licences :** les applications sont payantes par licence. Les clients attribuent des licences à chaque utilisateur de leur organisation
 
 ## <a name="supported-regions"></a>Régions prises en charge
 
-La prise en charge des applications tierces est disponible dans ces régions :
+La prise en charge des applications tierces est disponible dans les régions ci-après :
 
 - Argentine
 - Australie
@@ -80,7 +78,7 @@ Les administrateurs gèrent les applications tierces dans deux emplacements : Mi
 
 Voici ce que vous pouvez faire dans chaque portail.
 
-| Centre d’administration Microsoft 365 | Portail d’éditeur d’applications |
+| Centre d’administration Microsoft 365 | Portail d’éditeur d’applications |
 | --- | --- |
 | Modifier le nombre de licences <br> Gérer la façon dont vous payez votre facture <br> Gérer la façon dont vous payez votre facture <br> Modifier le mode de paiement (carte de crédit) <br> Afficher la facture <br> Annuler un abonnement d’application | Configurer l’application (une fois pour chaque application) <br> Attribuer des licences aux utilisateurs <br> Assistance technique |
 
@@ -104,7 +102,7 @@ Les administrateurs peuvent modifier le nombre de licences dont leur organisatio
 
 ## <a name="manage-payment-methods"></a>Gérer les méthodes de paiement
 
-Un profil de facturation est attribué aux applications de logiciel en tant que service. Les profils de facturation vous permet de personnaliser les produits inclus sur votre facture et la façon dont vous payez vos factures. Voici quelques éléments de communication :
+Un profil de facturation est attribué aux applications de logiciel en tant que service. Les profils de facturation vous permet de personnaliser les produits inclus sur votre facture et la façon dont vous payez vos factures. En voici la liste :
 
 - **Modes de paiement :** cartes de crédit ou virement bancaire
 - **Informations de contact** : adresse de facturation et nom du contact
@@ -116,7 +114,7 @@ Pour plus d’informations sur les profils de facturation, voir [Comprendre les 
 
 1. Dans le Centre d’administration, allez à la page **Facturation**  >  **de vos applications de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produits.</a>
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
-3. En plus **du profil de facturation,** sélectionnez **Modifier.**
+3. En de côté **du profil de facturation,** **sélectionnez Modifier.**
 
 Pour plus d’informations sur les factures, voir [Comprendre votre facture.](billing-and-payments/understand-your-invoice.md)
 
@@ -126,4 +124,4 @@ Vous pouvez annuler une application de service logiciel à partir de la page de 
 
 1. Dans le Centre d’administration, allez à la page **Facturation**  >  **de vos applications de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">produits.</a>
 2. Recherchez et sélectionnez l’application que vous souhaitez gérer.
-3. Sous **Paramètres & actions,** sélectionnez **Annuler l’abonnement.**
+3. Sous **Paramètres & actions,** **sélectionnez Annuler l’abonnement.**

@@ -24,12 +24,12 @@ ms.locfileid: "52536513"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-Veuillez payer en KRW uniquement et référencer les numéro(s) de facture sur votre paiement.
+Veuillez payer en KRW uniquement et référencer les numéro(s) de facture à votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
 **Banque :** Bank  
-**Branche :** 89-29 Contrôlemunro-2ka Chongro-guÖl, Corée 110-062  
+**Branche :** 89-29 Contrôlemunro-2ka Chongro-gu Korea, Corée 110-062  
 **Code SWIFT :** CITIKRSX  
 **Numéro de compte :** 5001296088  
 **Nom du compte :** MICROSOFT KOREA

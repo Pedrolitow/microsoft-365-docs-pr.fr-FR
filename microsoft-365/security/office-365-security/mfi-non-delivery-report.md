@@ -27,12 +27,12 @@ ms.locfileid: "51204545"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Le rapport d’absence [](mail-flow-insights-v2.md) de remise dans le tableau de bord de flux de messagerie du Centre de sécurité [&](https://protection.office.com) conformité affiche les codes d’erreur les plus rencontrés dans les rapports de **non-remise** (également appelés rapports de non-remise) pour les utilisateurs de votre organisation. Ce rapport présente les détails des rapports de non-remise pour vous aider à résoudre les problèmes de remise des e-mails.
+Le rapport d’absence [](mail-flow-insights-v2.md) de remise dans le tableau de bord de flux de messagerie dans le Centre de sécurité [&](https://protection.office.com) conformité affiche les codes d’erreur les plus rencontrés dans les rapports de **non-remise** (également appelés rapports de non-remise) pour les utilisateurs de votre organisation. Ce rapport présente les détails des rapports de non-remise pour vous aider à résoudre les problèmes de remise des e-mails.
 
-![Widget de rapport d’absence de remise dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-non-delivery-report-widget.png)
+![Widget de rapport de non-remise dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-non-delivery-report-widget.png)
 
 ## <a name="report-view-for-the-non-delivery-report"></a>Affichage du rapport de non-remise
 
@@ -40,7 +40,7 @@ Cliquez sur le widget de rapport de **non-remise** pour vous rendre dans la rapp
 
 Par défaut, l’activité de tous les codes d’erreur s’affiche. Si vous cliquez **sur Afficher les données pour**, vous pouvez sélectionner un code d’erreur spécifique dans ladown.
 
-Si vous pointez sur une couleur spécifique (code d’erreur) un jour spécifique dans le graphique, vous verrez le nombre total de messages pour l’erreur.
+Si vous pointez sur une couleur spécifique (code d’erreur) un jour spécifique du graphique, vous verrez le nombre total de messages pour l’erreur.
 
 ![Affichage du rapport dans le rapport de domaine non accepté](../../media/mfi-non-delivery-report-overview-view.png)
 
@@ -53,7 +53,7 @@ Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de ra
 - **Count**
 - **Exemples de messages**: ID de message d’un échantillon de messages affectés.
 
-Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
+Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
 Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez **sur Télécharger la demande.**
 
@@ -64,7 +64,7 @@ Lorsque vous sélectionnez une ligne dans le tableau, un flyout s’affiche avec
 - **Count**
 - **Exemples de messages**: vous pouvez cliquer sur Afficher les **exemples de messages** pour afficher les résultats du [suivi](message-trace-scc.md) des messages pour un échantillon des messages concernés.
 
-![Volant de détails après sélection d’une ligne dans l’affichage De la table Détails dans le rapport de non-remise](../../media/mfi-non-delivery-report-details-flyout.png)
+![Volant détails après sélection d’une ligne dans l’affichage Tableau Détails dans le rapport de non-remise](../../media/mfi-non-delivery-report-details-flyout.png)
 
 ## <a name="related-topics"></a>Voir aussi
 

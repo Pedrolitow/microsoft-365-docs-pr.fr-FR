@@ -50,17 +50,17 @@ Cet article décrit les aspects suivants :
 
 Cet article inclut également [les étapes suivantes](#next-steps)et des ressources pour en savoir plus.
 
-## <a name="the-overall-flow-of-air"></a>Flux global d’AIR
+## <a name="the-overall-flow-of-air"></a>Le flux global d’AIR
 
 Une alerte est déclenchée et un manuel de sécurité démarre une enquête automatisée, ce qui se traduit par des résultats et des actions recommandées. Voici le flux global d’AIR, étape par étape :
 
 1. Une enquête automatisée est lancée de l’une des manières suivantes :
    - Une [alerte est déclenchée par un](#which-alert-policies-trigger-automated-investigations) message électronique suspect (par exemple, un message, une pièce jointe, une URL ou un compte d’utilisateur compromis). Un incident est créé et un examen automatisé commence . ou
    - Un analyste de sécurité [démarre une enquête automatisée lors](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) de l’utilisation de [l’Explorateur de menaces.](threat-explorer.md)
-2. Pendant qu’une enquête automatisée s’exécute, elle collecte des données sur le courrier électronique en question et les entités associées à ce courrier électronique. Ces entités peuvent inclure des fichiers, des URL et des destinataires. L’étendue de l’enquête peut augmenter à mesure que de nouvelles alertes et des alertes associées sont déclenchées.
-3. Pendant et après un examen automatisé, des [détails et des résultats](air-view-investigation-results.md) sont disponibles. Les résultats [incluent des actions recommandées](air-remediation-actions.md) qui peuvent être prises pour répondre aux menaces trouvées et y remédier.
+2. Pendant qu’une enquête automatisée s’exécute, elle collecte des données sur le courrier électronique en question et les entités associées à ce courrier électronique. Ces entités peuvent inclure des fichiers, des URL et des destinataires. La portée de l’enquête peut augmenter à mesure que de nouvelles alertes et des alertes associées sont déclenchées.
+3. Pendant et après un examen automatisé, des [détails et des résultats](air-view-investigation-results.md) peuvent être consultables. Les résultats [incluent des actions recommandées](air-remediation-actions.md) qui peuvent être prises pour répondre aux menaces trouvées et y remédier.
 4. Votre équipe des opérations de sécurité examine les résultats et les [recommandations](air-view-investigation-results.md)de l’examen, et approuve ou rejette [les actions de correction.](air-review-approve-pending-completed-actions.md)
-5. Comme les actions de correction en attente sont approuvées (ou rejetées), l’examen automatisé se termine.
+5. Lorsque les actions de correction en attente sont approuvées (ou rejetées), l’examen automatisé se termine.
 
 Dans Microsoft Defender pour Office 365, aucune action de correction n’est prise automatiquement. Les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation. Les fonctionnalités AIR font gagner du temps à votre équipe des opérations de sécurité en identifiant les actions de correction et en fournissant les détails nécessaires pour prendre une décision éclairée.
 
@@ -83,7 +83,7 @@ Les fonctionnalités AIR sont incluses [dans Microsoft Defender pour Office 365,
 - [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Liens sécurisés et pièces jointes sécurisées](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Purge automatique d’heure zéro pour le courrier électronique](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
+- [Purge automatique zéro heure pour le courrier électronique](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 En outre, veillez à passer en revue les stratégies [d’alerte](../../compliance/alert-policies.md)de votre organisation, en particulier les stratégies par défaut dans la catégorie [de gestion des menaces.](../../compliance/alert-policies.md#default-alert-policies)
 
@@ -95,8 +95,8 @@ Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui perme
 |---|---|---|
 |Un clic d’URL potentiellement malveillant a été détecté|**High**|Cette alerte est générée lorsque l’une des alertes suivantes se produit : <ul><li>Un utilisateur protégé par des [liens sécurisés](safe-links.md) dans votre organisation clique sur un lien malveillant</li><li>Les modifications de verdict pour les URL sont identifiées par Microsoft Defender Office 365</li><li>Les utilisateurs remplacent les pages d’avertissement de liens sécurisés (en fonction de la stratégie de liens sécurisés de [votre organisation).](set-up-safe-links-policies.md)</li></ul> <p> Pour plus d’informations sur les événements qui déclenchent cette alerte, voir [Configurer des stratégies de liens sécurisés.](set-up-safe-links-policies.md)|
 |Un message électronique est signalé par un utilisateur comme programme malveillant ou hameçonnage|**Informatif**|Cette alerte est générée lorsque les utilisateurs de votre organisation signalent des messages en tant que courrier de hameçonnage à l’aide du module de signalement du [message](enable-the-report-message-add-in.md) ou du [module de signalement du hameçonnage.](enable-the-report-phish-add-in.md)|
-|Les messages électroniques contenant des programmes malveillants sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message électronique contenant un programme malveillant est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](zero-hour-auto-purge.md).|
-|Les messages électroniques contenant des URL de hameçonnage sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message contenant du hameçonnage est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide de la [purge automatique zéro heure](zero-hour-auto-purge.md).|
+|Les messages électroniques contenant des programmes malveillants sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message électronique contenant un programme malveillant est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide d’une [purge automatique sans heure.](zero-hour-auto-purge.md)|
+|Les messages électroniques contenant des URL de hameçonnage sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message contenant du hameçonnage est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide d’une [purge automatique sans heure.](zero-hour-auto-purge.md)|
 |Des modèles d’envoi de courrier suspects sont détectés|**Medium**|Cette alerte est générée lorsqu’une personne de votre organisation a envoyé des messages suspects et risque d’être limitée à l’envoi de courriers électroniques. L’alerte est un avertissement précoce pour un comportement qui peut indiquer que le compte est compromis, mais pas assez grave pour restreindre l’utilisateur. <p> Bien que cela soit rare, une alerte générée par cette stratégie peut être une anomalie. Toutefois, il est bon de vérifier si le compte [d’utilisateur est compromis.](responding-to-a-compromised-email-account.md)|
 |Un utilisateur est limité à l’envoi de courriers électroniques|**High**|Cette alerte est générée lorsqu’une personne de votre organisation est limitée à l’envoi de messages sortants. Cette alerte se produit généralement [lorsqu’un compte de messagerie est compromis.](responding-to-a-compromised-email-account.md) <p> Pour plus d’informations sur les utilisateurs restreints, voir Supprimer les utilisateurs bloqués du portail Utilisateurs restreints dans [Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 |
@@ -118,7 +118,7 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 [Les licences Microsoft Defender Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) doivent être affectées à :
 
 - Administrateurs de sécurité (y compris les administrateurs globaux)
-- L’équipe des opérations de sécurité de votre organisation (y compris les lecteurs de sécurité et ceux ayant le rôle **Recherche et purge)**
+- L’équipe des opérations de sécurité de votre organisation (y compris les lecteurs de sécurité et ceux avec le **rôle Recherche et purge)**
 - Utilisateurs finaux
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Des modifications seront bientôt apportées dans votre centre de sécurité
@@ -153,7 +153,7 @@ Le tableau suivant répertorie les modifications et améliorations apportées à
 |**Page Incidents**|La page **Incidents** met désormais en corrélation plusieurs enquêtes afin de fournir une meilleure vue consolidée des enquêtes. ([En savoir plus sur les incidents.)](../defender/incidents-overview.md)|
 |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 - [Voir les détails et les résultats d’une enquête automatisée](air-view-investigation-results.md#view-details-of-an-investigation)
 - [Examiner et approuver les actions en attente](air-remediation-actions.md)

@@ -29,10 +29,10 @@ ms.locfileid: "51204629"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online Protection (EOP) et Exchange Online peuvent tous deux assurer la validation entrante des messages[DKIM](https://www.rfc-editor.org/rfc/rfc6376.txt)(Domain Keys Identified Mail).
+Exchange Online Protection (EOP) et Exchange Online la validation entrante des messages[DKIM](https://www.rfc-editor.org/rfc/rfc6376.txt)(Domain Keys Identified Mail).
 
 DKIM confirme qu’un message  électronique n’a pas été usurpé par  une autre personne et qu’il a été envoyé à partir du domaine dont il indique qu’il est issu. Il lie un message électronique à l’organisation qui l’a envoyé. La vérification DKIM est utilisée automatiquement pour tous les messages envoyés avec IPv6. Microsoft 365 prend également en charge DKIM lorsque le courrier est envoyé sur IPv4. (Pour plus d'informations sur la prise en charge d'IPv6, voir [Prise en charge des messages entrants anonymes sur IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md).)
 
@@ -43,4 +43,4 @@ DKIM valide un message signé numériquement qui apparaît dans l'DKIM-Signature
 > [!NOTE]
 > Pour plus d’informations sur Authentication-Results'en-tête, voir RFC 7001 ([Message Header Field for Indicating Message Authentication Status](https://www.rfc-editor.org/rfc/rfc7001.txt). L’implémentation DKIM de Microsoft est conforme à cette RFC.
 
-Les administrateurs peuvent créer des règles de [flux](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de messagerie Exchange (également appelées règles de transport) sur les résultats de la validation DKIM. Ces règles de flux de messagerie permettront aux administrateurs de filtrer ou d’router les messages selon les besoins.
+Les administrateurs peuvent créer des Exchange [de flux](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) de messagerie (également appelées règles de transport) sur les résultats de la validation DKIM. Ces règles de flux de messagerie permettront aux administrateurs de filtrer ou d’router les messages selon les besoins.

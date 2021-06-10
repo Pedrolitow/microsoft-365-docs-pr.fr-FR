@@ -31,7 +31,7 @@ ms.locfileid: "52843973"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Cette section vous guide à travers toutes les étapes à suivre pour implémenter correctement l’accès conditionnel.
 
@@ -90,7 +90,7 @@ Pour activer l’accès conditionnel, prenez les mesures suivantes :
 5. Dans les paramètres **d’état** de l’appareil, définissez Exiger que l’appareil soit à ou sous le niveau de menace de l’appareil **à** votre niveau préféré :
 
    - **Sécurisé :** ce niveau est le plus sécurisé. L’appareil ne peut pas avoir de menaces existantes et accéder aux ressources de l’entreprise. Si des menaces sont trouvées, l’appareil est évalué comme non conforme.
-   - **Faible**: l’appareil est conforme si seules les menaces de bas niveau existent. Les appareils avec des niveaux de menace moyen ou élevé ne sont pas conformes.
+   - **Faible**: l’appareil est conforme si seules les menaces de bas niveau existent. Les appareils avec des niveaux de menace moyennes ou élevées ne sont pas conformes.
    - **Moyen**: l’appareil est conforme si les menaces trouvées sur l’appareil sont faibles ou moyennes. Si des menaces de haut niveau sont détectées, l’appareil est déterminé comme non conforme.
    - **Élevé**: ce niveau est le moins sécurisé et autorise tous les niveaux de menace. Ainsi, les appareils dont les niveaux de menace sont élevés, moyens ou faibles sont considérés comme conformes.
 
@@ -116,4 +116,4 @@ Pour activer l’accès conditionnel, prenez les mesures suivantes :
 
 Pour plus d’informations, voir [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](/intune/advanced-threat-protection).
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

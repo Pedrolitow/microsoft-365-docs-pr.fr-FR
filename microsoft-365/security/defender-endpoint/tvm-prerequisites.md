@@ -44,7 +44,7 @@ Assurez-vous que vos appareils :
 > Version | Numéro et lien de la mise à jour de sécurité de la KB
 > :---|:---
 > Windows 10 Version 1709 | [KB4493441 et](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-> Windows 10 Version 1803 | [KB4493464 et](https://support.microsoft.com/help/4493464) [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) et [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
 > Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
@@ -55,7 +55,7 @@ Assurez-vous que vos appareils :
 
 ## <a name="relevant-permission-options"></a>Options d’autorisation pertinentes
 
-1. Connectez-vous à Centre de sécurité Microsoft Defender à l’aide d’un compte attribué par un administrateur de sécurité ou un rôle d’administrateur général.
+1. Connectez-vous Centre de sécurité Microsoft Defender compte avec un rôle d’administrateur de sécurité ou d’administrateur général attribué.
 2. Dans le volet de navigation, sélectionnez **Paramètres > rôles.**
 
 Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles](user-roles.md)

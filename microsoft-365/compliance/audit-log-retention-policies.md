@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
+ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687357"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822140"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
-Vous pouvez créer et gérer des stratégies de rétention du journal d’audit dans le Centre de sécurité & conformité. Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation. Vous pouvez conserver des journaux d’audit pendant 10 ans. Vous pouvez créer des stratégies en fonction des critères suivants :
+Vous pouvez créer et gérer des stratégies de rétention du journal d’audit dans le Centre de sécurité & conformité. Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation. Vous pouvez conserver des journaux d’audit pendant 10 ans. Vous pouvez créer des stratégies en fonction des critères suivants :
 
-- L'ensemble des activités d’un ou plusieurs services Microsoft 365
+- L'ensemble des activités d’un ou plusieurs services Microsoft 365
 
 - Des activités spécifiques (dans un service Microsoft 365) effectuées par l'ensemble des utilisateurs ou par des utilisateurs spécifiques
 
@@ -36,18 +36,18 @@ Vous pouvez créer et gérer des stratégies de rétention du journal d’audit 
 
 ## <a name="default-audit-log-retention-policy"></a>Une stratégie de rétention de journal d'audit par défaut
 
-L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d’audit par défaut pour l'ensemble des organisations. Cette stratégie conserve tous les enregistrements d’audit Exchange Online, SharePoint Online, OneDrive Entreprise et Azure Active Directory pendant une durée d'un an. Cette stratégie par défaut conserve les enregistrements d’audit qui contenant la valeur **Exchange**, **SharePoint**, **OneDrive**, **AzureActiveDirectory** pour la propriété **Charge de travail** (service dans lequel l’activité s’est produite). La stratégie par défaut n'est pas modifiable. Pour obtenir la liste des types d’enregistrements par charge de travail qui sont inclus dans la stratégie par défaut, consultez la rubrique [Informations supplémentaires](#more-information) dans cet article.
+L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d’audit par défaut pour l'ensemble des organisations. Cette stratégie conserve tous les enregistrements d’audit Exchange Online, SharePoint Online, OneDrive Entreprise et Azure Active Directory pendant une durée d'un an. Cette stratégie par défaut conserve les enregistrements d’audit qui contenant la valeur **Exchange**, **SharePoint**, **OneDrive**, **AzureActiveDirectory** pour la propriété **Charge de travail** (service dans lequel l’activité s’est produite). La stratégie par défaut n'est pas modifiable. Pour obtenir la liste des types d’enregistrements par charge de travail qui sont inclus dans la stratégie par défaut, consultez la rubrique [Informations supplémentaires](#more-information) dans cet article.
 
 > [!NOTE]
-> La stratégie de rétention du journal d’audit par défaut s’applique uniquement aux enregistrements d’audit pour les activités effectuées par les utilisateurs auxquels une licence Office 365 ou Microsoft 365 E5 est attribuée ou qui disposent de la Conformité Microsoft 365 E5 ou E5 eDiscovery et d’une licence de complément d’audit. Si vous avez des utilisateurs non-E5 ou des utilisateurs invités dans votre organisation, leurs dossiers d'audit correspondants sont conservés pendant 90 jours.
+> La stratégie de rétention du journal d’audit par défaut s’applique uniquement aux enregistrements d’audit pour les activités effectuées par les utilisateurs auxquels une licence Office 365 ou Microsoft 365 E5 est attribuée ou qui disposent de la Conformité Microsoft 365 E5 ou E5 eDiscovery et d’une licence de complément d’audit. Si vous avez des utilisateurs non-E5 ou des utilisateurs invités dans votre organisation, leurs dossiers d'audit correspondants sont conservés pendant 90 jours.
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Avant de créer une stratégie de rétention de journal d’audit
 
 - Pour créer ou modifier une stratégie de rétention d’audit, vous devez être avoir un rôle de Configuration de l’organisation dans le Centre de sécurité & conformité.
 
-- Vous pouvez disposer de 50 stratégies de rétention du journal d’audit au maximum au sein de votre organisation.
+- Vous pouvez disposer de 50 stratégies de rétention du journal d’audit au maximum au sein de votre organisation.
 
-- Pour conserver un journal d’audit pendant plus de 90 jours (et jusqu’à 1 an), l’utilisateur l’ayant généré (en effectuez une activité d’audit) doit se voir attribuer une licence Office 365 E5 ou Microsoft 365 E5 ou disposer d’une licence de module complémentaire Microsoft 365 E5 Conformité ou E5 eDiscovery et audit. Pour conserver les journaux d'audit pendant 10 ans, l'utilisateur qui génère le journal d'audit doit également se voir attribuer une licence complémentaire de rétention des journaux d'audit de 10 ans en plus d'une licence E5.
+- Pour conserver un journal d’audit pendant plus de 90 jours (et jusqu’à 1 an), l’utilisateur l’ayant généré (en effectuez une activité d’audit) doit se voir attribuer une licence Office 365 E5 ou Microsoft 365 E5 ou disposer d’une licence de module complémentaire Microsoft 365 E5 Conformité ou E5 eDiscovery et audit. Pour conserver les journaux d'audit pendant 10 ans, l'utilisateur qui génère le journal d'audit doit également se voir attribuer une licence complémentaire de rétention des journaux d'audit de 10 ans en plus d'une licence E5.
 
 - Toutes les stratégies de rétention de journal d’audit personnalisées (créées par votre organisation) sont prioritaires sur la stratégie de rétention par défaut. Par exemple, si vous créez une stratégie de rétention de journal d’audit pour une activité de boîte aux lettres Exchange qui présente une période de rétention de moins d'un an, les enregistrements d’audit pour les activités de boîte aux lettres Exchange sont conservés pendant la durée plus courte spécifiée dans la stratégie personnalisée.
 
@@ -65,19 +65,19 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal 
 
    1. **Nom de la stratégie** Le nom de la stratégie de rétention du journal d’audit. Ce nom doit être unique dans votre organisation, et ne peut pas être modifié une fois la stratégie créée.
 
-   2. **Description :** facultatif, mais utile pour fournir des informations sur la stratégie, telles que le type d’enregistrement ou la charge de travail, les utilisateurs spécifiés dans la stratégie et la durée.
+   2. **Description :** facultatif, mais utile pour fournir des informations sur la stratégie, telles que le type d’enregistrement ou la charge de travail, les utilisateurs spécifiés dans la stratégie et la durée.
 
-   3. **Utilisateurs :** sélectionnez un ou plusieurs utilisateurs auxquels la stratégie doit être appliquée. Si vous laissez cette zone vierge, la stratégie s’applique à tous les utilisateurs. Si vous laissez le **Type d’enregistrement** vierge, vous devez alors sélectionner un utilisateur.
+   3. **Utilisateurs :** sélectionnez un ou plusieurs utilisateurs auxquels la stratégie doit être appliquée. Si vous laissez cette zone vierge, la stratégie s’applique à tous les utilisateurs. Si vous laissez le **Type d’enregistrement** vierge, vous devez alors sélectionner un utilisateur.
 
-   4. **Type d’enregistrement :** le type d’enregistrement d’audit auquel la stratégie s’applique. Si vous laissez cette propriété vierge, vous devez sélectionner un utilisateur dans la zone **Utilisateurs**. Vous pouvez sélectionner un seul type d’enregistrement ou plusieurs types d’enregistrements :
+   4. **Type d’enregistrement :** le type d’enregistrement d’audit auquel la stratégie s’applique. Si vous laissez cette propriété vierge, vous devez sélectionner un utilisateur dans la zone **Utilisateurs**. Vous pouvez sélectionner un seul type d’enregistrement ou plusieurs types d’enregistrements :
 
    - Si vous sélectionnez un seul type d’enregistrement, le champ **Activités** s’affiche de façon dynamique. Vous pouvez utiliser la liste déroulante pour sélectionner les activités du type d’enregistrement sélectionné auquel la stratégie doit être appliquée. Si vous ne choisissez pas d'activité spécifique, la stratégie s’applique à toutes les activités du type d’enregistrement sélectionné.
 
    - Si vous sélectionnez plusieurs types d’enregistrements, vous n’avez pas la possibilité de sélectionner des activités. La stratégie s’applique à toutes les activités des types d’enregistrement sélectionnés.
 
-   5. **Durée :** la durée de conservation des journaux d’audit qui correspondent aux critères de la stratégie.
+   5. **Durée :** la durée de conservation des journaux d’audit qui correspondent aux critères de la stratégie.
 
-   6. **Priorité :** cette valeur détermine l’ordre dans lequel les stratégies de rétention du journal d’audit sont traitées au sein de votre organisation. Une valeur plus haute implique une priorité élevée. Par exemple, une stratégie avec une valeur de priorité de **5** sera prioritaire sur une stratégie ayant une valeur de priorité de **0**. Comme indiqué précédemment, toute stratégie de rétention de journal d’audit personnalisée est prioritaire sur la stratégie par défaut de votre organisation.
+   6. **Priorité :** cette valeur détermine l’ordre dans lequel les stratégies de rétention du journal d’audit sont traitées au sein de votre organisation. Une valeur faible implique une priorité élevée. Les priorités valides sont les valeurs numériques comprises entre **1** et **10 000**. La valeur **1** est la priorité la plus élevée et la valeur **10 000** est la priorité la plus faible. Par exemple, une stratégie avec une valeur de **5** sera prioritaire sur une stratégie ayant une valeur de **10**. Comme indiqué précédemment, toute stratégie de rétention de journal d’audit personnalisée est prioritaire sur la stratégie par défaut de votre organisation.
 
 5. Cliquez sur **Enregistrer** pour créer le nouveau journal d'audit de la stratégie de rétention.
 
@@ -126,7 +126,7 @@ Pour créer une stratégie de rétention de journal d’audit dans PowerShell, s
    New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
-    Cet exemple crée une stratégie de rétention de journal d’audit nommée « Stratégie d’audit Microsoft Teams » ayant les paramètres suivants :
+    Cet exemple crée une stratégie de rétention de journal d’audit nommée « Stratégie d’audit Microsoft Teams » ayant les paramètres suivants :
 
    - Une description de la stratégie.
 
@@ -136,7 +136,7 @@ Pour créer une stratégie de rétention de journal d’audit dans PowerShell, s
 
    - Une priorité de 100.
 
-Voici un autre exemple de création d’une stratégie de rétention de journal d’audit. Cette stratégie conserve les journaux d’audit pour l’activité « Utilisateur connecté » pendant six mois pour l’utilisateur admin@contoso.onmicrosoft.com.
+Voici un autre exemple de création d’une stratégie de rétention de journal d’audit. Cette stratégie conserve les journaux d’audit pour l’activité « Utilisateur connecté » pendant six mois pour l’utilisateur admin@contoso.onmicrosoft.com.
 
 ```powershell
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
@@ -163,7 +163,7 @@ Pour modifier une stratégie de rétention de journal d’audit existante, utili
 
 ### <a name="delete-policies-in-powershell"></a>Supprimer des stratégies dans PowerShell
 
-Pour supprimer une stratégie de rétention de journal d’audit, utilisez la cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) dans le Centre de sécurité & conformité PowerShell. La suppression de la stratégie de votre organisation peut prendre jusqu’à 30 minutes.
+Pour supprimer une stratégie de rétention de journal d’audit, utilisez la cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) dans le Centre de sécurité & conformité PowerShell. La suppression de la stratégie de votre organisation peut prendre jusqu’à 30 minutes.
 
 ## <a name="more-information"></a>Plus d’informations
 

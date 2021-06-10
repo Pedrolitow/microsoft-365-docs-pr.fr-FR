@@ -27,8 +27,8 @@ ms.locfileid: "51204929"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Le plan de [](mail-flow-insights-v2.md) flux de **messagerie** dans le tableau de bord de flux de messagerie du Centre de sécurité & [conformité](https://protection.office.com) donne des informations sur la façon dont le courrier circule dans votre organisation. Vous pouvez utiliser ces informations pour apprendre des modèles, identifier des anomalies et résoudre les problèmes au moment où ils se produisent.
 
@@ -36,9 +36,9 @@ Le plan de [](mail-flow-insights-v2.md) flux de **messagerie** dans le tableau d
 
 Par défaut, le widget affiche le modèle de flux de messagerie du jour précédent dans un graphique appelé *diagramme Sankey.* Vous pouvez utiliser la flèche gauche et la flèche droite pour afficher les informations de ![ ](../../media/scc-left-arrow.png) différents ![ ](../../media/scc-right-arrow.png) jours. Chaque couleur représente le flux de messagerie sur un connecteur entrant ou sortant différent (ou sans utiliser de connecteurs). Si vous pointez sur une couleur spécifique, le nombre de messages s’affiche pour ce type de connecteur.
 
-## <a name="report-view-for-the-mail-flow-map"></a>Affichage de rapport pour le plan de flux de messagerie
+## <a name="report-view-for-the-mail-flow-map"></a>Affichage de rapport pour le map point de flux de messagerie
 
-Un clic sur le widget **de carte de flux** de messagerie vous permet d’accès au rapport de carte de flux **de** messagerie.
+En cliquant sur le widget de **carte de flux** de messagerie, vous allez dans le rapport de carte de flux **de** messagerie.
 
 Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
@@ -50,7 +50,7 @@ Les graphiques suivants sont disponibles dans l’affichage de rapport :
 
   ![Affichage détaillé dans le rapport de carte de flux de messagerie](../../media/mfi-mail-flow-map-report-detail.png)
 
-Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
+Si vous cliquez sur **Filtres** dans un affichage de rapport, vous pouvez spécifier une plage de dates avec la **date de** début et la date **de fin.**
 
 Pour envoyer par courrier électronique le rapport pour une plage de dates spécifique à un ou plusieurs destinataires, cliquez **sur Télécharger la demande.**
 
@@ -66,7 +66,7 @@ Si vous cliquez **sur Afficher le tableau des détails** dans un affichage de ra
 - **Domaine de l’expéditeur/du destinataire**
 - **Nombre de messages**
 
-Si vous cliquez sur **Filtres** dans une vue de table de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin**.
+Si vous cliquez sur **Filtres** dans une vue de tableau de détails, vous pouvez spécifier une plage de dates avec la **date** de début et la **date de fin.**
 
 Si vous sélectionnez une ligne, des détails similaires sont affichés dans un volant :
 

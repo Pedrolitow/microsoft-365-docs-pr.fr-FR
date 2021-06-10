@@ -39,9 +39,9 @@ ms.locfileid: "52789369"
 >
 Il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
-- [Exporter l’évaluation de **l’inventaire logiciel OData**](#1-export-software-inventory-assessment-odata)  L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
+- [Exporter l’évaluation de l’inventaire **logiciel OData**](#1-export-software-inventory-assessment-odata)  L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
-- [Exporter l’évaluation de l’inventaire **logiciel via des fichiers**](#2-export-software-inventory-assessment-via-files)  Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
+- [Exporter l’évaluation de l’inventaire **logiciel via des fichiers**](#2-export-software-inventory-assessment-via-files)  Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
 
   - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
 
@@ -100,7 +100,7 @@ Propriété (ID) | Type de données | Description | Exemple de valeur renvoyée
 :---|:---|:---|:---
 DeviceId | string | Identificateur unique de l’appareil dans le service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName | string | Nom de domaine complet (FQDN) de l’appareil. | johnlaptop.europe.contoso.com
-DiskPaths | Array[string]  | Preuve disque que le produit est installé sur l’appareil. | [ « C: \\ Program Files (x86) \\ Microsoft \\ Silverlight \\ Applicationsilverlight.exe \\ " ]
+DiskPaths | Array[string]  | Preuve disque que le produit est installé sur l’appareil. | [ « C: \\ Program Files (x86) \\ Microsoft \\ Silverlight \\ Application \\silverlight.exe » ]
 EndOfSupportDate | string | Date à laquelle la prise en charge de ce logiciel a ou va se terminer. | 2020-12-30
 EndOfSupportStatus | string | État de fin du support. Peut contenir les valeurs possibles : None, EOS Version, Future EOS Version, EOS Software, Upcoming EOS Software. | EOS à venir
 ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp !
@@ -227,7 +227,7 @@ Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels p
 
 ### <a name="22-permissions"></a>2.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 ---|---|---
@@ -242,7 +242,7 @@ GET /api/machines/SoftwareInventoryExport
 
 ### <a name="parameters"></a>Parameters
 
-- sasValidHours : nombre d’heures de validité des URL de téléchargement (maximum 24 heures)
+- sasValidHours : nombre d’heures pendant qui les URL de téléchargement seront valides (maximum 24 heures)
 
 ### <a name="25-properties"></a>2.5 Propriétés
 

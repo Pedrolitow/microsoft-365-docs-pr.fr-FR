@@ -1,6 +1,6 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
-description: Les règles de réduction de la surface d’attaque peuvent empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
+description: Les règles de réduction de la surface d’attaque peuvent aider à empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,16 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 55b06ca25047fe615bd0011528fbdbe5112a4533
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f157a03d9a56aa0bbca695a27be57391e6b92360
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844981"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866630"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
@@ -41,7 +39,7 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 - Lancement de fichiers exécutables et de scripts qui tentent de télécharger ou d’exécuter des fichiers ;
 - Exécution de scripts obscurcis ou suspects ; et
-- Comportement d’une application qui n’est généralement pas initiée pendant le travail quotidien normal.
+- Des comportements que les applications n’initient généralement pas pendant le travail quotidien normal.
 
 De tels comportements logiciels sont parfois observés dans les applications légitimes ; Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque et contribuer à la sécurité de votre organisation.
 
@@ -53,7 +51,7 @@ Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’a
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Contrôle de sécurité pour la règle de réduction de la surface d’attaque":::
 
-Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer le pourcentage de vos appareils qui peuvent accepter une nouvelle stratégie autorisant la règle en mode de blocage sans affecter la productivité.
+Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer quel pourcentage de vos appareils peuvent accepter une nouvelle stratégie permettant d’activer la règle en mode de blocage sans affecter la productivité.
 
 ## <a name="audit-mode-for-evaluation"></a>Mode audit pour l’évaluation
 
@@ -159,7 +157,7 @@ Si vous configurez des règles de réduction de la surface d’attaque à l’ai
 
 |Nom de la règle|GUID|Exclusions de & fichiers|Système d’exploitation minimal pris en charge|
 |---|:---:|---|---|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure) |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure) |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
@@ -179,7 +177,7 @@ Si vous configurez des règles de réduction de la surface d’attaque à l’ai
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquer l’utilisation abusive des pilotes signés vulnérables exploités
 
-Cette règle empêche une application d’écrire un pilote vulnérable signé sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à une compromission du système.
+Cette règle empêche une application d’écrire un pilote vulnérable signé sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à la compromission du système.
 
 Cette règle ne bloque pas le chargement d’un pilote déjà existant sur le système.
 
@@ -206,7 +204,7 @@ GUID :  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 Cette règle empêche les attaques en empêchant Adobe Reader de créer des processus.
 
-Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants peuvent télécharger et lancer des charges utiles, et sortir d’Adobe Reader. En empêchant les processus enfants d’être générés par Adobe Reader, les programmes malveillants qui tentent de l’utiliser comme vecteur sont empêchés de se propager.
+Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants peuvent télécharger et lancer des charges utiles, et sortir d’Adobe Reader. En bloquant la production de processus enfants par Adobe Reader, les programmes malveillants qui tentent de l’utiliser comme vecteur sont empêchés de se propager.
 
 Cette règle a été introduite dans :
 
@@ -282,7 +280,7 @@ Microsoft Endpoint Manager nom de l’Microsoft Endpoint Manager :`Block executa
 GUID : `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 > [!NOTE]
-> La règle Bloquer **le contenu exécutable** à partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
+> La règle Bloquer **le contenu exécutable à** partir du client de messagerie et de la messagerie web présente les descriptions alternatives suivantes, selon l’application que vous utilisez :
 >
 > - Intune (Profils de configuration) : exécution du contenu exécutable (exe, dll, ps, js, vbs, etc.) supprimé de la messagerie électronique (webmail/client de messagerie) (aucune exception).
 > - Endpoint Manager : bloquer le téléchargement de contenu exécutable à partir des clients de messagerie et de messagerie web.
@@ -400,7 +398,7 @@ GUID : `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 Cette règle empêche les Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
 
-Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les attaques par formulaires que les [attaquants](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
+Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les attaques par [formulaires](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) que les attaquants peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
 
 > [!NOTE]
 > Cette règle bloque les conseils de stratégie DLP et les infos-bulles dans Outlook. Cette règle s’applique Outlook et Outlook.com uniquement. 

@@ -73,7 +73,7 @@ Pour vous connecter au module PowerShell avec vos informations d’identificatio
 Connect-MSCommerce
 ```
 
-Cette commande connecte la session PowerShell actuelle à un Azure Active Directory client. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous souhaitez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
+Cette commande connecte la session PowerShell actuelle à un Azure Active Directory client. La commande vous invite à entrer un nom d’utilisateur et un mot de passe pour le client à qui vous voulez vous connecter. Si l’authentification multifacteur est activée pour vos informations d’identification, vous utilisez l’option interactive pour vous connecter.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Afficher les détails de AllowSelfServicePurchase
 
@@ -163,7 +163,7 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 Uninstall-Module -Name MSCommerce
 ```-->
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Gérer les achats en libre-service (administrateur)](manage-self-service-purchases-admins.md) (article)
 

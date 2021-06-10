@@ -27,8 +27,8 @@ ms.locfileid: "51204935"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **L’aperçu de** l’état [](mail-flow-insights-v2.md) du flux de messagerie de domaine supérieur dans le tableau de bord flux de messagerie dans le Centre de sécurité [&](https://protection.office.com) conformité vous donne l’état actuel du flux de messagerie pour votre organisation.
 
@@ -36,19 +36,19 @@ Cette information vous permet d’identifier et de dépanner les domaines qui re
 
 ![Widget d’état de flux de domaine supérieur dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-Lorsque vous cliquez sur Afficher les  **détails** dans le widget, un flyout d’état de domaine s’affiche pour vous fournir plus de détails sur l’état de chaque domaine :
+Lorsque vous cliquez sur Afficher les  **détails** dans le widget, un volant d’état de domaine s’affiche et vous indique plus de détails sur l’état de chaque domaine :
 
 - **Domaine**
 - **Enregistrement MX précédent**
 - **Enregistrement MX actuel**
 - **État de réception des messages électroniques**
-- **État du** domaine : une coche verte indique que l’enregistrement MX actuel (au moment où vous avez cliqué sur le widget) correspond à la valeur que nous avons sur l’enregistrement et que le domaine a reçu des messages électroniques au cours des deux dernières heures.
+- État **du** domaine : une coche verte indique que l’enregistrement MX actuel (au moment où vous avez cliqué sur le widget) correspond à la valeur que nous avons sur l’enregistrement et que le domaine a reçu des messages électroniques au cours des deux dernières heures.
 
   Un X rouge indique que l’enregistrement MX a été modifié et que le domaine n’a reçu aucun message électronique au cours des 6 dernières heures. Cela indique probablement que votre domaine a expiré ou que l’enregistrement MX a été mis à jour de manière incorrecte. Vérifiez auprès de votre bureau d’enregistrement de domaines ou service d’hébergement DNS si le domaine a expiré ou si l’enregistrement MX du domaine est incorrect.
 
 Vous pouvez cliquer **sur Afficher plus** pour afficher les mêmes informations pour d’autres domaines.
 
-![Volant d’informations dans l’aperçu de l’état du flux de messagerie du domaine Supérieur](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+![Flux de détails dans l’aperçu de l’état du flux de messagerie de domaine supérieur](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -28,7 +28,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297115"
 ---
-# <a name="learn-about-office-365-germany"></a>En savoir plus sur Office 365 Germany
+# <a name="learn-about-office-365-germany"></a>En savoir plus sur Office 365 Germany
 
 > [!NOTE]
 > Office 365 L’Allemagne n’accepte plus de nouveaux clients ni ne déploie de nouveaux services. Les nouvelles régions cloud en Allemagne, disponibles au premier trimestre 2020 pour Microsoft 365 et Office 365, fourniront à la fois la résidence des données client principales en Allemagne, ainsi que la connectivité complète au réseau cloud mondial de Microsoft.
@@ -47,7 +47,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
   
 - Applications Microsoft 365 pour les grandes entreprises, Office 2016 et Office 2013<sup>1</sup>. Notez que Office 2013 nécessite l’utilisation [Office 365'authentification](../../enterprise/modern-auth-for-office-2013-and-2016.md)moderne avec Office clients.
     
-- Exchange Online
+- Exchange Online
     
 - SharePoint Online
     
@@ -61,7 +61,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
     
 - Microsoft 365 Vidéo
     
-- Project pour le web
+- Project for the web
     
 - Visio pour le web
     
@@ -73,7 +73,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
     
 - Découverte électronique avancée
     
-- Microsoft Defender pour Office 365
+- Microsoft Defender pour Office 365
     
 - Veille contre les menaces sur Office 365
     
@@ -89,7 +89,7 @@ Les fonctionnalités et services suivants sont disponibles dans certaines [offre
   
 ## <a name="general-information"></a>Informations générales
 
-|Élément|Informations|
+|Item|Informations|
 |-----|-----|
 |Portail de connexion  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |Support technique, sur les abonnements et la facturation  <br/> |Support basé sur l’Allemagne disponible en allemand et en anglais Pour plus d’informations, voir contacter le support pour les produits [d’entreprise - Aide de l’administrateur](../../business-video/get-help-support.md).  <br/> |

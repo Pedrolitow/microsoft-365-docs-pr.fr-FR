@@ -36,7 +36,7 @@ Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,**
 **Numéro de compte :** 12207613  
 **Nom du compte :** MICROSOFT
 
-Si vous avez une facture facturée par **Microsoft Denmark ApS** pour les commandes et la consommation à partir du 1er mars 2021, utilisez les informations bancaires ci-après :
+Si vous avez une facture facturée par **Microsoft Denmark ApS** pour les commandes et la consommation à compter du 1er mars 2021, utilisez les informations bancaires ci-après :
 
 **Banque :** Bank Europe plc  
 **Code SWIFT :** CITIIE2X  

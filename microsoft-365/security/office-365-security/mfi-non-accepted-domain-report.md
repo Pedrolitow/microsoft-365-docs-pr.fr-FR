@@ -27,18 +27,18 @@ ms.locfileid: "51204554"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Le  rapport de domaine non [](mail-flow-insights-v2.md) accepté dans le tableau de bord de flux de messagerie du Centre de sécurité [&](https://protection.office.com) conformité affiche des informations sur les messages provenant de votre organisation de messagerie sur site où le domaine de l’expéditeur n’est pas configuré en tant que domaine accepté dans votre organisation Microsoft 365.
 
-Microsoft 365 peut limiter ces messages si nous avons des données pour prouver que l’intention de ces messages est malveillante. Par conséquent, il est important que vous compreniez ce qui se passe et que vous corrigez le problème.
+Microsoft 365 peuvent limiter ces messages si nous avons des données pour prouver que l’intention de ces messages est malveillante. Par conséquent, il est important que vous compreniez ce qui se passe et que vous corrigez le problème.
 
 ![Widget de domaine non accepté dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité](../../media/mfi-non-accepted-domain-report-widget.png)
 
-## <a name="report-view-for-the-non-accepted-domain-report"></a>Affichage de rapport pour le rapport de domaine non accepté
+## <a name="report-view-for-the-non-accepted-domain-report"></a>Affichage du rapport pour le rapport de domaine non accepté
 
-Cliquez sur le graphique sur le widget **de** domaine non accepté pour vous rendre dans le **rapport de domaine** non accepté.
+Le fait de cliquer sur le graphique sur le widget **de** domaine non accepté vous permet d’avoir accès au **rapport de domaine** non accepté.
 
 Par défaut, l’activité de tous les connecteurs affectés est affichée. Si vous cliquez **sur Afficher les données pour**, vous pouvez sélectionner un connecteur spécifique dans la dropdown.
 

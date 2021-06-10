@@ -86,7 +86,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 - pageSize \( par défaut = 50 000 : nombre de résultats en \) réponse
 
-- \$top : le nombre de résultats à renvoyer ne \( retourne pas odata.nextLink et par conséquent ne tire pas \@ toutes les données\)
+- \$top : le nombre de résultats à renvoyer \( ne retourne pas odata.nextLink et, par conséquent, ne tire pas \@ toutes les données\)
 
 ### <a name="15-properties"></a>1.5 Propriétés
 
@@ -220,7 +220,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 ## <a name="2-export-secure-configuration-assessment-via-files"></a>2. Exporter l’évaluation de la configuration sécurisée (via des fichiers)
 
-### <a name="21-api-method-description"></a>2.1 Description de la méthode API
+### <a name="21-api-method-description"></a>Description de la méthode api 2.1
 
 Cette réponse API contient l’évaluation de la configuration sécurisée sur vos appareils exposés et renvoie une entrée pour chaque combinaison unique de DeviceId, ConfigurationId.
 
@@ -230,7 +230,7 @@ Les limites de taux pour cette API sont de 5 appels par minute et de 20 appels p
 
 ### <a name="22-permissions"></a>2.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 ---|---|---
@@ -296,4 +296,4 @@ Autres associés
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)

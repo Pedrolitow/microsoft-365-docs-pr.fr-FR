@@ -1,7 +1,7 @@
 ---
 title: Exporter les méthodes et propriétés d’évaluation par appareil
 description: Fournit des informations sur les API qui tirent les données Gestion des menaces et des vulnérabilités données. Il existe différents appels d’API pour obtenir différents types de données. En règle générale, chaque appel d’API contient les données requises pour les appareils de votre organisation. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer.
-keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation des vulnérabilités d’appareils, rapport de vulnérabilité d’appareil, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
+keywords: api, api, évaluation d’exportation, évaluation par appareil, évaluation par ordinateur, rapport d’évaluation des vulnérabilités, évaluation de la vulnérabilité de l’appareil, rapport de vulnérabilité de périphérique, évaluation de la configuration sécurisée, rapport de configuration sécurisée, évaluation des vulnérabilités logicielles, rapport de vulnérabilité logicielle, rapport de vulnérabilité par ordinateur,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -54,7 +54,7 @@ Il existe trois méthodes API que vous pouvez utiliser pour récupérer (exporte
 
 Pour chaque méthode, il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
-- **OData**  L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
+- **OData**  L’API tire toutes les données de votre organisation en tant que réponses Json, en suivant le protocole OData. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
 - **via des fichiers** Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
 
@@ -109,7 +109,7 @@ Renvoie tous les logiciels installés et leurs détails sur chaque appareil.
 
 Méthode | Type de données | Description
 :---|:---|:---
-Exporter l’évaluation de l’inventaire **logiciel (OData)** | Inventaire logiciel par collection d’appareils. Voir : [2.2 Properties (OData)](#22-properties-odata) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour les petites organisations avec moins de 100 Ko d’appareils. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants.
+Exporter l’évaluation de l’inventaire **logiciel (OData)** | Inventaire logiciel par collection d’appareils. Voir : [2.2 Properties (OData)](#22-properties-odata) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. L’API tire toutes les données de votre organisation en tant que réponses Json, en suivant le protocole OData. Cette méthode est la meilleure pour les petites organisations avec moins de 100 Ko d’appareils. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants.
 Exporter l’évaluation de l’inventaire **logiciel (via des fichiers)** | Inventaire logiciel par fichiers d’appareil. Voir : [2.3 Properties (via files)](#23-properties-via-files) | Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit : 1.  Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation. 2.  Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
 
 ### <a name="22-properties-odata"></a>2.2 Propriétés (OData)
@@ -163,10 +163,10 @@ FirstSeenTimestamp | string | Première fois que la CVE de ce produit a été vu
 ID | string | Identificateur unique de l’enregistrement.
 LastSeenTimestamp | string | Dernière fois que la CVE a été vue sur l’appareil.
 OSPlatform | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm.
-RbacGroupName | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ».
+RbacGroupName | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ».
 RecommendationReference | string | Référence à l’ID de recommandation associé à ce logiciel.
 RecommendedSecurityUpdate | string | Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité.
-RecommendedSecurityUpdateId | string | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants
+RecommendedSecurityUpdateId | string | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou d’aide correspondants
 Chaîne de tableau des chemins \[ d’accès du Registre\] | Preuve dans le Registre que le produit est installé sur l’appareil.
 SoftwareName | string | Nom du produit logiciel.
 SoftwareVendor | string | Nom du fournisseur de logiciels.
@@ -192,4 +192,4 @@ Autres associés
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

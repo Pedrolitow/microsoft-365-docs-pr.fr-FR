@@ -1,5 +1,5 @@
 ---
-title: Informations de paiement pour La France
+title: Informations de paiement pour LaPétade
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,7 +20,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52536753"
 ---
-# <a name="payment-information-for-guadeloupe"></a>Informations de paiement pour La France
+# <a name="payment-information-for-guadeloupe"></a>Informations de paiement pour LaPétade
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 

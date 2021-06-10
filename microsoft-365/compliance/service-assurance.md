@@ -41,11 +41,11 @@ Vous pouvez également découvrir comment les Office 365 peuvent aider les clien
     
 - Programme FedRAMP (Federal Risk and Authorization Management Program)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>Qui pouvez accéder à l’assurance Office 365 service et comment ?
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>Qui pouvez accéder à Office 365'assurance service et comment ?
 
- **Les nouveaux clients et** les clients qui évaluent les services en ligne Microsoft peuvent accéder à l’assurance service incluse dans les plans Office 365 Entreprise E3 et E5 (abonnements d’évaluation et payants). Si vous n’avez pas l’un de ces plans et que vous souhaitez essayer l’assurance service, vous pouvez vous inscrire à une version d’essai [Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+ Les **nouveaux clients et** les clients qui évaluent les services en ligne Microsoft peuvent accéder à l’assurance service incluse dans les plans Office 365 Entreprise E3 et E5 (abonnements d’évaluation et payants). Si vous n’avez pas l’un de ces plans et que vous souhaitez essayer l’assurance service, vous pouvez vous inscrire à une version d’essai [Office 365 Entreprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
- **Les membres de l’abonnement O365** peuvent accéder à la section Assurance de service dans Office 365 Protection Center par défaut. L’assurance service fournit des rapports et des documents qui décrivent les pratiques de sécurité de Microsoft pour les données client stockées dans Office 365. Il fournit également des rapports d’audit tiers indépendants sur Office 365.
+ **Les membres de l’abonnement O365** peuvent accéder à la section Assurance de service dans Office 365 Protection Center par défaut. L’assurance de service fournit des rapports et des documents qui décrivent les pratiques de sécurité de Microsoft pour les données client stockées dans Office 365. Il fournit également des rapports d’audit tiers indépendants sur Office 365.
  
 ## <a name="choose-your-industry-and-regional-settings"></a>Choisir vos paramètres régionaux et du secteur
 <a name="Chooseyourindustryregional"> </a>
@@ -58,16 +58,16 @@ Lorsque vous accédez à l’assurance service pour la première fois, la premi�
   
 2. Dans la page **Paramètres,** sélectionnez la flèche vers le bas en regard de **Region** et vérifiez les régions appropriées pour votre organisation. 
     
-3. Sélectionnez la flèche vers le bas en regard **du** secteur d’activité et vérifiez les secteurs appropriés pour votre organisation. 
+3. Sélectionnez la flèche vers le bas en regard de **Secteur** et vérifiez les secteurs appropriés pour votre organisation. 
     
-4. Une fois que vous avez sélectionné des régions et des secteurs, **sélectionnez Enregistrer.**
+4. Une fois que vous avez sélectionné des régions et des secteurs, sélectionnez **Enregistrer.**
     
 ## <a name="find-review-and-download-compliance-and-trust-content"></a>Rechercher, examiner et télécharger du contenu de conformité et d’confiance
 <a name="Chooseyourindustryregional"> </a>
 
 Pour examiner et télécharger du contenu, sélectionnez une option dans le volet de navigation :
   
-- **Rapports de conformité pour** afficher les audits et évaluations indépendants de Office 365 et d’autres services cloud De Microsoft, comme illustré dans la capture d’écran suivante. 
+- **Rapports de conformité pour** afficher les audits indépendants et les évaluations de Office 365 et d’autres services cloud De Microsoft, comme illustré dans la capture d’écran suivante. 
     
     ![Affiche la page d’assurance de service : Rapports de conformité des services.](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
@@ -86,7 +86,7 @@ Sélectionnez le rapport à télécharger, puis sélectionnez **Enregistrer** po
   
 |**Page d’assurance de service**|**Contenu disponible**|**Description**|
 |:-----|:-----|:-----|
-|Rapports de conformité  <br/> | FedRamp  <br/>  Évaluation DE LA GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Utilisez les rapports de conformité des services pour passer en revue les évaluations d’audit effectuées par des auditeurs tiers indépendants Office 365 opérations de remise de service.  <br/> |
+|Rapports de conformité  <br/> | FedRamp  <br/>  Évaluation DE LA GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Utilisez les rapports de conformité des services pour passer en revue les évaluations d’audit effectuées par des auditeurs tiers indépendants Office 365 des opérations de remise de service.  <br/> |
 |Documents de référence  <br/> | FAQ et livres blancs  <br/>  Rapports de gestion des risques  <br/> |Utilisez des livres blancs, des FAQ, des rapports de fin d’année et d’autres ressources Confidentielles Microsoft qui sont mis à votre disposition dans le cadre d’un accord de non-divulgation pour vos évaluations de la révision/des risques.  <br/> |
 |Contrôles audités  <br/> |Normes et réglementations globales Office 365 ont été implémentées.  <br/> | Aide sur l’évaluation des risques lors de l’évaluation, de l’intégration ou de l’utilisation Office 365 services. Trouve:  <br/> <br/>- Comment les contrôles Office 365 respectent les exigences de sécurité, de conformité et de confidentialité.  <br/>- À propos du test des contrôles Office 365, des résultats de ces tests et de leur fin.  <br/> |
    

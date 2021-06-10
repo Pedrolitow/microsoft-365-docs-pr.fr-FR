@@ -35,7 +35,7 @@ ms.locfileid: "52843793"
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-L’automatisation des procédures de sécurité est une exigence standard pour chaque centre des opérations de sécurité moderne. L’absence de cyber-défenseurs professionnels force SOC à fonctionner de la manière la plus efficace et l’automatisation est une chose à faire. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela. Vous pouvez créer une automatisation de procédure de bout en bout en quelques minutes.
+L’automatisation des procédures de sécurité est une exigence standard pour chaque centre d’opérations de sécurité moderne. L’absence de cyber-défenseurs professionnels force SOC à fonctionner de la manière la plus efficace et l’automatisation est une chose à faire. Microsoft Power Automate prend en charge différents connecteurs qui ont été créés exactement pour cela. Vous pouvez créer une automatisation de procédure de bout en bout en quelques minutes.
 
 L’API Microsoft Defender dispose d’un connecteur Flow officiel avec de nombreuses fonctionnalités.
 

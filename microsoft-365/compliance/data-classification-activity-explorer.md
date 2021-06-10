@@ -27,7 +27,7 @@ ms.locfileid: "52114006"
 ---
 # <a name="get-started-with-activity-explorer"></a>Prise en main de l’explorateur d’activité
 
-La [vue d'ensemble](data-classification-overview.md) de la classification des données et les onglets de l'Explorateur de contenu vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, ainsi que sur l'endroit où il se trouve. [](data-classification-content-explorer.md) L’explorateur d’activité complète cette suite de fonctionnalités en vous permettant de contrôler les opérations effectuées avec votre contenu étiqueté. L'Explorateur d'activités fournit un affichage historique des activités sur votre contenu étiqueté. Les informations d'activité sont collectées à partir Microsoft 365 journaux d'audit unifiés, transformées et disponibles dans l'interface utilisateur de l'Explorateur d'activités. 
+La [vue d’ensemble](data-classification-overview.md) de la classification des données et les onglets de l’Explorateur de contenu vous donnent une visibilité sur le contenu qui a été découvert et étiqueté, ainsi que sur l’endroit où il se trouve. [](data-classification-content-explorer.md) L’explorateur d’activité complète cette suite de fonctionnalités en vous permettant de contrôler les opérations effectuées avec votre contenu étiqueté. L’Explorateur d’activités fournit un affichage historique des activités sur votre contenu étiqueté. Les informations d’activité sont collectées à partir Microsoft 365 journaux d’audit unifiés, transformées et disponibles dans l’interface utilisateur de l’Explorateur d’activités. 
 
 ![emplacement réservé pour la capture d’écran aperçu de l’explorateur d’activité](../media/data-classification-activity-explorer-1.png)
 
@@ -57,7 +57,7 @@ Chaque compte qui accède et utilise la classification de données doit posséde
 
 ### <a name="permissions"></a>Autorisations
 
- Pour accéder à l'onglet Explorateur d'activités, un compte doit être explicitement affecté à l'un de ces groupes de rôles ou avoir reçu explicitement le rôle.
+ Pour accéder à l’onglet Explorateur d’activités, un compte doit être explicitement affecté à l’un de ces groupes de rôles ou avoir reçu explicitement le rôle.
 
 <!--
 > [!IMPORTANT]
@@ -68,18 +68,18 @@ Chaque compte qui accède et utilise la classification de données doit posséde
 - Administrateur général
 - Administrateur de conformité
 - Administrateur de sécurité
-- Administrateur de conformité des données
+- Administrateur des données de conformité
 
 **Microsoft 365 rôles**
 
 - Administrateur de conformité
 - Administrateur de sécurité
 
-## <a name="activity-types"></a>Types d'activité
+## <a name="activity-types"></a>Types d’activité
 
-L'Explorateur d'activités collecte des informations d'activité à partir des journaux d'audit sur plusieurs sources d'activités. Pour plus d'informations sur l'activité d'étiquetage dans l'Explorateur d'activités, voir événements [d'étiquetage disponibles dans l'Explorateur d'activités.](data-classification-activity-explorer-available-events.md)
+L’Explorateur d’activités collecte des informations d’activité à partir des journaux d’audit sur plusieurs sources d’activités. Pour plus d’informations sur l’activité d’étiquetage dans l’Explorateur d’activités, voir événements [d’étiquetage disponibles dans l’Explorateur d’activités.](data-classification-activity-explorer-available-events.md)
 
- Activités des étiquettes  de niveau de sensibilité et activités d'étiquetage de rétention à partir d'applications natives Office, d'un add-in Azure Information Protection, de SharePoint Online, d'Exchange Online (étiquettes de sensibilité uniquement) et de OneDrive. En voici quelques exemples :
+ Activités des étiquettes  de niveau de sensibilité et activités d’étiquetage de rétention à partir d’applications natives Office, d’un add-in Azure Information Protection, de SharePoint Online, d’Exchange Online (étiquettes de sensibilité uniquement) et de OneDrive. En voici quelques exemples :
 
 - étiquette appliqué
 - étiquette modifiée (mise à niveau, rétrogradée ou supprimée)
@@ -93,7 +93,7 @@ L'Explorateur d'activités collecte des informations d'activité à partir des j
 - protection supprimée
 - fichiers découverts 
 
-L'Explorateur d'activités rassemble également la stratégie **DLP** qui correspond aux événements provenant de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via la protection contre la perte de données **(DLP)** de point de terminaison. Voici quelques exemples d'événements Windows 10 appareils mobiles :
+L’Explorateur d’activités rassemble également la stratégie **DLP** qui correspond aux événements provenant de Exchange Online, SharePoint Online, OneDrive, Teams Chat et Canal (prévisualisation), des dossiers et bibliothèques SharePoint locaux, des partages de fichiers locaux et des appareils Windows 10 via la protection contre la perte de données **(DLP)** de point de terminaison. Voici quelques exemples d’événements Windows 10 appareils mobiles :
 
 - suppressions
 - creations
@@ -105,7 +105,7 @@ L'Explorateur d'activités rassemble également la stratégie **DLP** qui corres
 - copié sur le partage réseau
 - accès par une application non autorisé 
 
-L'intérêt de comprendre quelles actions sont prises avec votre contenu étiqueté sensible est que vous [](dlp-learn-about-dlp.md) pouvez voir si les contrôles que vous avez déjà mis en place, tels que la protection contre la perte de données, sont efficaces ou non. Si ce n’est pas le cas ou si vous découvrez quelque chose d’inattendu tel qu’un grand nombre d’éléments qui sont étiquetés `highly confidential`et sont rétrogradés`general` vous pouvez gérer vos différentes stratégies et entreprendre de nouvelles actions pour limiter le comportement indésirable.
+L’intérêt de comprendre quelles actions sont prises avec votre contenu étiqueté sensible est que vous [](dlp-learn-about-dlp.md) pouvez voir si les contrôles que vous avez déjà mis en place, tels que la protection contre la perte de données, sont efficaces ou non. Si ce n’est pas le cas ou si vous découvrez quelque chose d’inattendu tel qu’un grand nombre d’éléments qui sont étiquetés `highly confidential`et sont rétrogradés`general` vous pouvez gérer vos différentes stratégies et entreprendre de nouvelles actions pour limiter le comportement indésirable.
 
 > [!NOTE]
 > L’explorateur d’activité ne suit pas actuellement les activités de rétention pour Exchange Online.

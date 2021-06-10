@@ -42,7 +42,7 @@ Les informations suivantes répertorient les mises à jour des API Microsoft Def
 
 ### <a name="05252021"></a>05.25.2021
 
-- Ajout de nouvelles méthodes et propriétés d’évaluation d’exportation [d’API par appareil.](get-assessment-methods-properties.md)
+- Ajout de nouvelles méthodes et propriétés d’évaluation d’exportation d’API [par appareil.](get-assessment-methods-properties.md)
 
 ### <a name="03052021"></a>03.05.2021
 
@@ -59,7 +59,7 @@ Les informations suivantes répertorient les mises à jour des API Microsoft Def
 ### <a name="21012021"></a>21.01.2021
 
 - Ajout d’une nouvelle API : [rechercher des appareils par balise.](machine-tags.md)
-- Ajout d’une nouvelle API : [indicateurs d’importation.](import-ti-indicators.md)
+- Ajout d’une nouvelle API : [importer des indicateurs.](import-ti-indicators.md)
 
 ### <a name="03012021"></a>03.01.2021
 

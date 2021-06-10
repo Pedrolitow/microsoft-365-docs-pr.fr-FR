@@ -26,8 +26,8 @@ ms.locfileid: "51204527"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les administrateurs peuvent utiliser le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité pour découvrir les tendances, les informations et prendre des mesures pour résoudre les problèmes liés au flux de messagerie dans leur organisation.
 
@@ -69,12 +69,12 @@ Le tableau de bord de flux de messagerie est disponible pour les membres des gro
 
 - **Gestion de l’organisation** dans le Centre de sécurité & conformité (administrateurs globaux).
 
-- **[Administrateur Exchange](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** dans Azure Active Directory.
+- **[Exchange administrateur dans](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Azure Active Directory.
 
 - **Administrateur de flux de** messagerie dans le Centre de sécurité & conformité. Si le compte n’est pas également membre des groupes de rôles Gestion de l’organisation ou Administrateur Exchange, prenons en compte les problèmes suivants :
   - L’utilisateur doit se connecter au Centre de sécurité & conformité directement sur <https://protection.office.com> .
   - L’utilisateur aura uniquement une autorisation en lecture seule sur le tableau de bord de flux de messagerie.
-  - L’utilisateur n’aura pas accès au Centre d’administration Microsoft 365.
+  - L’utilisateur n’aura pas accès au centre d Microsoft 365'administration.
 
 Pour plus d’informations sur les [autorisations,](permissions-in-the-security-and-compliance-center.md) voir Autorisations dans le Centre de sécurité & conformité et accorder aux utilisateurs l’accès au Centre de sécurité [& conformité.](grant-access-to-the-security-and-compliance-center.md)
 

@@ -45,13 +45,13 @@ Avant de commencer, assurez-vous que vous avez les conditions préalables néces
 
 Tous les locataires éligibles pour Office 365 DLP peuvent accéder au tableau de bord de gestion des alertes DLP. Pour commencer, vous devez être éligible à la Office 365 DLP pour Exchange Online, SharePoint Online et OneDrive Entreprise. Pour plus d’informations sur les conditions de licence requises pour Office 365 DLP, voir [quelles licences](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)fournissent les droits d’un utilisateur pour bénéficier du service ? .
 
-Les clients qui utilisent [endpoint DLP](endpoint-dlp-learn-about.md) et qui sont éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
+Les clients qui utilisent le point de terminaison [DLP](endpoint-dlp-learn-about.md) éligibles pour [Teams DLP](dlp-microsoft-teams.md) voient leurs alertes de stratégie DLP de point de terminaison et les alertes de stratégie Teams DLP dans le tableau de bord de gestion des alertes DLP.
 
 La **fonctionnalité d’aperçu** de contenu est disponible uniquement pour les licences ci-après :
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
-- Ajout de conformité avancée (E5)
+- Ajout de la conformité avancée (E5)
 - Microsoft 365 E5/A5 Information Protection and Governance
 - Conformité microsft 365 E5/A5
 
@@ -59,7 +59,7 @@ La **fonctionnalité d’aperçu** de contenu est disponible uniquement pour les
 
 **Configuration** d’alerte à événement unique : les organisations qui ont un abonnement E1, F1 ou G1 ou un abonnement E3 ou G3 peuvent créer des stratégies d’alerte uniquement lorsqu’une alerte est déclenchée chaque fois qu’une activité se produit.
 
-**Configuration d’alerte agrégée**: pour configurer des stratégies d’alerte agrégées basées sur un seuil, vous devez l’une de ces configurations de licence :
+**Configuration d’alerte agrégée**: pour configurer des stratégies d’alerte agrégées basées sur un seuil, vous devez avoir l’une de ces configurations de licence :
 
 - Un abonnement E5 ou G5
 - Un abonnement E1, F1 ou G1 ou E3 ou G3 qui inclut l’une des fonctionnalités suivantes :

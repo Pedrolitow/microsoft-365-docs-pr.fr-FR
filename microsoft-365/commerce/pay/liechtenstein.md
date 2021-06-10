@@ -24,7 +24,7 @@ ms.locfileid: "52536441"
 
 [Rechercher un autre pays ou une autre région](../billing-and-payments/pay-for-your-subscription.md).
 
-N’hésitez pas à payer en FONCTION DU MONTANT UNIQUEMENT et à référencer les numéro(s) de facture lors de votre paiement.
+N’hésitez pas à payer en FONCTION DU MONTANT UNIQUEMENT et à référencer les numéro(s) de facture(s) sur votre paiement.
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 

@@ -41,9 +41,9 @@ Renvoie toutes les vulnérabilités logicielles connues et leurs détails pour t
 
 Il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
-- [Exporter l’évaluation des vulnérabilités logicielles OData](#1-export-software-vulnerabilities-assessment-odata)  L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
+- [Exporter l’évaluation des vulnérabilités logicielles OData](#1-export-software-vulnerabilities-assessment-odata)  L’API tire toutes les données de votre organisation en tant que réponses Json, en suivant le protocole OData. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
-- [Exporter l’évaluation des vulnérabilités logicielles via des fichiers](#2-export-software-vulnerabilities-assessment-via-files) Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 Ko d’appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
+- [Exporter l’évaluation des vulnérabilités logicielles via des fichiers](#2-export-software-vulnerabilities-assessment-via-files) Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de stockage Azure. Cette API vous permet de télécharger toutes vos données à partir stockage Azure comme suit :
 
   - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
 
@@ -57,7 +57,7 @@ Les données collectées (à l’aide _d’OData_ ou _via_ des fichiers) sont l�
 
 ## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Exporter l’évaluation des vulnérabilités logicielles (OData)
 
-### <a name="11-api-method-description"></a>1.1 Description de la méthode d’API
+### <a name="11-api-method-description"></a>1.1 Description de la méthode API
 
 Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
@@ -69,7 +69,7 @@ Cette réponse API contient toutes les données des logiciels installés par app
 
 ### <a name="12-permissions"></a>1.2 Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison pour plus d’informations.](apis-intro.md)
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour plus d’informations, notamment sur le choix des autorisations, voir Utiliser Microsoft Defender pour les API de point de [terminaison pour plus d’informations.](apis-intro.md)
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 ---|---|---
@@ -84,7 +84,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 ### <a name="14-parameters"></a>1.4 Paramètres
 
-- pageSize (par défaut = 50 000) : nombre de résultats en réponse
+- pageSize (valeur par défaut = 50 000) : nombre de résultats en réponse
 - $top : nombre de résultats à renvoyer (ne retourne pas @odata.nextLink et, par conséquent, ne tire pas toutes les données)
 
 ### <a name="15-properties"></a>1.5 Propriétés
@@ -107,10 +107,10 @@ DeviceName | string | Nom de domaine complet (FQDN) de l’appareil. | johnlapto
 DiskPaths  | Chaîne de \[ tableau\] | Preuve disque que le produit est installé sur l’appareil. | [ « C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe » ]
 ExploitabilityLevel | string | Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
 FirstSeenTimestamp | string | Première fois que la CVE de ce produit a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880
-ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp !
+ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp!
 LastSeenTimestamp | string | Dernière fois que la CVE a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880
 OSPlatform | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10
-RbacGroupName  | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur est « None ». | Serveurs
+RbacGroupName  | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs
 RecommendationReference | string | Référence à l’ID de recommandation associé à ce logiciel. | va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (facultatif) | string | Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité. | Mises à jour de sécurité d’avril 2020
 RecommendedSecurityUpdateId (facultatif) | string | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants | 4550961
@@ -262,7 +262,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
 
 ## <a name="2-export-software-vulnerabilities-assessment-via-files"></a>2. Exporter l’évaluation des vulnérabilités logicielles (via des fichiers)
 
-### <a name="21-api-method-description"></a>Description de la méthode api 2.1
+### <a name="21-api-method-description"></a>2.1 Description de la méthode API
 
 Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
@@ -346,4 +346,4 @@ Autres associés
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)

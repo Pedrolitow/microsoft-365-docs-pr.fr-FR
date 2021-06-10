@@ -30,7 +30,7 @@ ms.locfileid: "52536069"
 
 ## <a name="what-are-self-service-sign-up-subscriptions"></a>Qu’est-ce que les abonnements en libre-service ?
 
-Un nombre limité d’abonnements d’inscription libre-service est disponible pour les utilisateurs de votre organisation. Un utilisateur peut uniquement s’inscrire et utiliser un abonnement d’inscription en libre-service pour lui-même. Vous gérez les abonnements d’inscription en libre-service en bloquant l’inscription des utilisateurs et en supprimant les abonnements gratuits pour les utilisateurs inscrits. Pour plus d’informations sur l’inscription en libre-service et les abonnements disponibles, voir l’utilisation de l’inscription en [libre-service dans votre organisation.](../../admin/misc/self-service-sign-up.md)
+Un nombre limité d’abonnements gratuits en libre-service sont disponibles pour les utilisateurs de votre organisation. Un utilisateur peut uniquement s’inscrire et utiliser un abonnement d’inscription en libre-service pour lui-même. Vous gérez les abonnements d’inscription en libre-service en bloquant l’inscription des utilisateurs et en supprimant les abonnements gratuits pour les utilisateurs inscrits. Pour plus d’informations sur l’inscription en libre-service et les abonnements disponibles, voir l’utilisation de l’inscription en [libre-service dans votre organisation.](../../admin/misc/self-service-sign-up.md)
 
 ## <a name="view-a-list-of-self-service-sign-up-subscriptions"></a>Afficher la liste des abonnements d’inscription en libre-service
 
@@ -48,7 +48,7 @@ Vous utilisez la cmdlet [**Set-MsolCompanySettings**](/powershell/module/msonlin
 ## <a name="delete-a-self-service-sign-up-subscription"></a>Supprimer un abonnement d’inscription en libre-service
 
 > [!IMPORTANT]
-> Lorsque vous supprimez un abonnement d’inscription en libre-service, vous bloquez l’accès de tous les utilisateurs à leurs données et messages électroniques et supprimez toutes les données et tous les messages électroniques.
+> Lorsque vous supprimez un abonnement d’inscription en libre-service, vous bloquez l’accès de tous les utilisateurs à leurs données et messages électroniques et supprimez toutes les données et tous les e-mails.
 
 1. Dans le centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous **l’onglet Produits,** sélectionnez l’icône de filtre, puis sélectionnez **Gratuit**.

@@ -27,8 +27,8 @@ ms.locfileid: "51204560"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les boucles de messagerie sont mauvaises car :
 
@@ -50,7 +50,7 @@ Lorsque vous cliquez **sur Afficher les détails** sur le widget, un flyout s’
 - **Enregistrement MX**: valeurs d’hôte (serveur **de messagerie)** et de priorité de l’enregistrement MX pour le domaine. 
 - **Raison de la** boucle et **comment corriger :** nous allons identifier les scénarios de boucle de messagerie les plus courants et fournir des actions recommandées pour corriger la boucle.
 
-![Flyout des détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu de la boucle de courrier de correction possible](../../media/mfi-fix-possible-mail-loop-details.png)
+![Volant de détails qui s’affiche après avoir cliqué sur Afficher les détails sur l’aperçu de la boucle de courrier possible de correction](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="see-also"></a>Voir aussi
 
