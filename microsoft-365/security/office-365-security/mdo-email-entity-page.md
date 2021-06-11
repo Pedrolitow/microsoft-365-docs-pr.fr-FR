@@ -14,7 +14,7 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque message électronique avec une page d’entité de messagerie.
+description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
 ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
@@ -39,7 +39,7 @@ L’un des centres de sécurité & conformité existants (protection.office.com)
 |Centre|URL|Navigation|
 |---|---|---|
 |Sécurité et conformité |protection.office.com|Explorateur de gestion des \> menaces|
-|Centre de sécurité Microsoft 365 |security.microsoft.com|E-mail & Collaboration \> Explorer|
+|Centre de sécurité Microsoft 365 |security.microsoft.com|E-mail & Collaboration \> Explorer|
 
 Dans l’Explorateur de menaces, sélectionnez l’objet d’un e-mail que vous examinez. Une barre d’or s’affiche en haut du volant du courrier électronique pour ce courrier. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d’entité de messagerie avec des données enrichies... ». Sélectionnez pour afficher la nouvelle page.
 
@@ -70,7 +70,7 @@ La structure est conçue pour être facile à lire et à parcourir en un coup d�
 
 Les onglets en haut de la page d’entité vous permettent d’examiner efficacement les messages électroniques.
 
-1. **Chronologie**: l’affichage de chronologie d’un e-mail (selon la chronologie de l’Explorateur de menaces) indique la remise d’origine aux événements de post-remise qui se produisent sur un e-mail. Pour les e-mails qui n’ont aucune action de post-remise, l’affichage affiche la ligne de remise d’origine dans l’affichage chronologique. Les événements tels que : la purge automatique heure zéro (ZAP), la correction, les clics d’URL et les événements provenant de sources telles que : système, administrateur et utilisateur, s’affichent ici, dans l’ordre dans lequel ils se sont produits.
+1. **Chronologie**: l’affichage de chronologie d’un e-mail (selon la chronologie de l’Explorateur de menaces) indique la remise d’origine aux événements post-remise qui se produisent sur un e-mail. Pour les e-mails qui n’ont aucune action de post-remise, l’affichage affiche la ligne de remise d’origine dans l’affichage chronologique. Les événements tels que : la purge automatique heure zéro (ZAP), la correction, les clics d’URL et les événements provenant de sources telles que : système, administrateur et utilisateur, s’affichent ici, dans l’ordre dans lequel ils se sont produits.
 2. **Analyse**: l’analyse montre les champs qui aident les administrateurs à analyser un courrier électronique en profondeur. Pour les cas où les administrateurs doivent mieux comprendre la détection, l’expéditeur/le destinataire et les détails de l’authentification de messagerie, ils doivent utiliser l’onglet Analyse. Des liens pour les pièces jointes et les URL sont également trouvés sur cette page, sous « Entités associées ». Les pièces jointes et les menaces identifiées sont numéroées ici et un clic vous permet d’accéder directement aux pages pièces jointes et URL. Cet onglet dispose également d’une option d’affichage d’en-tête pour *afficher l’en-tête de l’e-mail.* Les administrateurs peuvent comparer les détails des en-têtes de courrier électronique, côte à côte avec les informations du panneau principal, pour plus de clarté.
 3. **Pièces jointes**: examine les pièces jointes trouvées dans l’e-mail avec d’autres détails trouvés sur les pièces jointes. Le nombre de pièces jointes affichées est actuellement limité à 10. Notez que les détails de détonation pour les pièces jointes qui sont malveillantes sont également affichés ici.
 4. **URL : cet** onglet répertorie les URL trouvées dans l’e-mail avec d’autres détails sur les URL. Le nombre d’URL est limité à 10 pour l’instant, mais ces 10 url sont priorisées pour afficher d’abord les *URL malveillantes.* La hiér donc vous permet de gagner du temps et de deviner le travail. Les URL qui ont été trouvées comme malveillantes et détonées sont également affichées ici.
@@ -91,7 +91,7 @@ Les administrateurs peuvent afficher un aperçu des e-mails dans les boîtes aux
 
 Ces détails sont spécifiques aux pièces jointes et URL des e-mails.
 
-Les utilisateurs voient les détails de détonation enrichis pour les pièces jointes malveillantes connues ou les liens hypertexte trouvés dans leurs boîtes aux lettres, y compris la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonation.
+Les utilisateurs voient s’afficher les détails enrichis de la détonation pour les pièces jointes malveillantes connues ou les liens hypertexte trouvés dans leurs boîtes aux lettres, y compris la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonée.
 
 - *Chaîne de détonation :* une seule désaération de fichier ou d’URL peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL qui ont été impactés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.
 - *Résumé de la détonation*: Fournit des informations sur :
@@ -107,7 +107,7 @@ Les utilisateurs voient les détails de détonation enrichis pour les pièces jo
 
 *Balises*: ces balises sont appliquées aux utilisateurs. Si l’utilisateur est un destinataire, les administrateurs voient une *balise de* destinataire. De même, si l’utilisateur est un expéditeur, une *balise d’expéditeur.* Cela s’affiche dans le côté gauche de la page des  entités de messagerie (dans la partie décrite comme étant resserrante et, par conséquent, ancrée à la page).
 
-*Emplacement de remise le* plus récent : l’emplacement de remise le plus récent est l’emplacement où un courrier électronique a été envoyé après des actions système telles que ZAP, ou des actions d’administrateur telles que Déplacer vers les éléments supprimés, se terminent. L’emplacement de remise le plus récent n’est pas destiné à informer les administrateurs de l’emplacement *actuel du* message. Par exemple, si un utilisateur supprime un message ou le déplace vers l’archive, l’emplacement de remise ne sera pas mis à jour. Toutefois, si une action du système a eu lieu et mis à jour l’emplacement (par exemple, une zap qui entraîne le déplacement d’un e-mail en quarantaine), cela met à jour l’emplacement de remise le plus récent en quarantaine.
+*Emplacement de remise le* plus récent : l’emplacement de remise le plus récent est l’emplacement où un courrier électronique a été envoyé après des actions système telles que ZAP, ou des actions d’administrateur telles que Déplacer vers les éléments supprimés, se terminent. L’emplacement de remise le plus récent n’est pas destiné à informer les administrateurs de l’emplacement *actuel du* message. Par exemple, si un utilisateur supprime un message ou le déplace vers l’archive, l’emplacement de remise ne sera pas mis à jour. Toutefois, si une action du système a eu lieu et mis à jour l’emplacement (par exemple, une ZAP qui entraîne le déplacement d’un e-mail en quarantaine), cela met à jour l’emplacement de remise le plus récent en quarantaine.
 
 *Détails de l’e-mail*: détails requis pour une compréhension approfondie du courrier électronique disponible dans *l’onglet Analyse.*
 
@@ -136,10 +136,10 @@ Les utilisateurs voient les détails de détonation enrichis pour les pièces jo
 - Sender Policy Framework (**SPF)**: décrit les résultats de la vérification SPF du message. Les valeurs possibles peuvent être :
   - Pass (adresse IP) : vérification SPF du message passé et inclut l’adresse IP de l’expéditeur. Le client est autorisé à envoyer ou à relayer le courrier électronique avec le domaine de l’expéditeur.
   - Échec (adresse IP) : la vérification SPF du message a échoué et inclut l’adresse IP de l’expéditeur. Dans ce cas, on parle parfois d’échec sévère.
-  - Softfail (raison) : l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer mais est en transition.
+  - Softfail (raison) : l’enregistrement SPF a désigné l’hôte comme n’étant pas autorisé à envoyer, mais est en transition.
   - Neutre : l’enregistrement SPF indique explicitement qu’il n’indique pas si l’adresse IP est autorisée à envoyer des messages.
   - Aucun : le domaine n’a pas d’enregistrement SPF ou l’enregistrement SPF n’est pas évalué comme un résultat.
-  - Leror : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.
+  - Ordeur : une erreur temporaire s’est produite. Par exemple, une erreur DNS. Cette même vérification peut être effectuée ultérieurement.
   - Permerror : une erreur permanente s’est produite. Par exemple, un enregistrement SPF mal mis en forme dans le domaine.
 
 - DomainKeys Identified Mail (**DKIM**) :

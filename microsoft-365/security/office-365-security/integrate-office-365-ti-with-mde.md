@@ -19,21 +19,21 @@ description: Utilisez Microsoft Defender pour Office 365 avec Microsoft Defender
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6ad81102a9702a725f40fcdb5421a2b19b0086d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3f1d92d2433267b89398c7f7f582a8d1ee8cdba5
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934032"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878603"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Utiliser Microsoft Defender pour les Office 365 avec Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft Defender pour Office 365](defender-for-office-365.md) peut être configuré pour fonctionner avec [Microsoft Defender pour le point de terminaison.](/windows/security/threat-protection)
+[Microsoft Defender pour Office 365](defender-for-office-365.md) peut être configuré pour fonctionner avec [Microsoft Defender pour endpoint](/windows/security/threat-protection).
 
-L’intégration de Microsoft Defender pour Office 365 Microsoft Defender pour Endpoint peut aider votre équipe en matière d’opérations de sécurité à surveiller et à prendre des mesures rapidement si les appareils des utilisateurs sont exposés. Par exemple, une fois l’intégration activée, votre équipe des opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour Endpoint.
+L’intégration de Microsoft Defender pour Office 365 avec Microsoft Defender for Endpoint peut aider votre équipe des opérations de sécurité à surveiller et à prendre des mesures rapidement si les appareils des utilisateurs sont exposés. Par exemple, une fois l’intégration activée, votre équipe des opérations de sécurité pourra voir les appareils potentiellement affectés par un message électronique détecté, ainsi que le nombre d’alertes récentes générées pour ces appareils dans Microsoft Defender pour Endpoint.
 
 L’image suivante illustre l’apparence de l’onglet **Appareils** lorsque l’intégration de Microsoft Defender for Endpoint est activée :
 
@@ -48,13 +48,13 @@ Dans cet exemple, vous pouvez voir que les destinataires du message électroniqu
 
 - Votre organisation doit avoir Microsoft Defender pour Office 365 (ou Office 365 E5) et Microsoft Defender pour point de terminaison.
 
-- Vous devez être un administrateur général ou avoir un rôle d’administrateur de sécurité (par exemple, Administrateur de la sécurité) affecté dans le Centre de sécurité [& conformité.](https://protection.office.com) (Voir [Autorisations dans le Centre de sécurité & conformité)](permissions-in-the-security-and-compliance-center.md)
+- Vous devez être administrateur général ou avoir un rôle d’administrateur de sécurité (par exemple, Administrateur de la sécurité) affecté dans le Centre de sécurité [& conformité.](https://protection.office.com) (Voir [autorisations dans le Centre de sécurité & conformité)](permissions-in-the-security-and-compliance-center.md)
 
 - Vous devez avoir accès à [l’Explorateur (ou](threat-explorer.md) aux détections en temps réel) dans le Centre de sécurité & conformité et dans le Centre de sécurité Microsoft Defender.
 
 ## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>Pour intégrer Microsoft Defender for Office 365 avec Microsoft Defender for Endpoint
 
-L’intégration de Microsoft Defender pour Office 365 microsoft defender pour le point de terminaison est définie à l’aide du Centre de sécurité & conformité et du Centre de sécurité Microsoft Defender.
+L’intégration de Microsoft Defender pour Office 365 microsoft Defender pour le point de terminaison est définie à l’aide du Centre de sécurité & conformité et du Centre de sécurité Microsoft Defender.
 
 1. En tant qu’administrateur général ou administrateur de sécurité, <https://protection.office.com> connectez-vous. (Vous êtes alors Office 365 centre de sécurité & conformité.)
 

@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à appliquer des paramètres de stratégie standard et stricts aux fonctionnalités de protection d’Exchange Online Protection (EOP) et de Microsoft Defender pour Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822285"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879011"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Stratégies de sécurité prédéfini dans EOP et Microsoft Defender pour Office 365
 
@@ -105,7 +105,7 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le centre Microsoft 365 sécurité sur <https://security.microsoft.com> . Pour aller directement à la page Stratégies de **sécurité prédéfines,** utilisez <https://security.microsoft.com/presetSecurityPolicies> .
+- Vous ouvrez le portail Microsoft 365 Defender sur <https://security.microsoft.com> . Pour aller directement à la page Stratégies de **sécurité prédéfines,** utilisez <https://security.microsoft.com/presetSecurityPolicies> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -117,9 +117,9 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
   **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux _utilisateurs_ les autorisations et autorisations requises pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Utiliser le centre de sécurité pour affecter des stratégies de sécurité prédéfines aux utilisateurs
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Utiliser le portail Microsoft 365 Defender pour affecter des stratégies de sécurité prédéfines aux utilisateurs
 
-1. Dans le centre de sécurité, go to **Email & collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Templated policies** section \> **Preset Security Policies**.
+1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies & \> **Rules** Threat \> **Policies** \> **Templated policies** section \> **Preset Security Policies**.
 
 2. Sous **Protection standard ou** Protection **stricte,** cliquez sur **Modifier.**
 
@@ -144,9 +144,9 @@ En d’autres termes, les paramètres de la stratégie De **protection** stricte
 
 5. Dans la page **Vérifier et confirmer vos modifications,** vérifiez vos sélections, puis cliquez sur **Confirmer**.
 
-### <a name="use-the-security-center-to-modify-the-assignments-of-preset-security-policies"></a>Utiliser le centre de sécurité pour modifier les affectations de stratégies de sécurité prédéfines
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier les affectations de stratégies de sécurité prédéfines
 
-Les étapes de modification de l’attribution de la stratégie de **sécurité Protection standard** ou **Protection** stricte sont les mêmes que lorsque vous avez initialement affecté les stratégies de sécurité prédéfines [aux utilisateurs.](#use-the-security-center-to-assign-preset-security-policies-to-users)
+Les étapes de modification de l’attribution de la stratégie de **sécurité Protection standard** ou **Protection** stricte sont les mêmes que lorsque vous avez initialement affecté les stratégies de sécurité prédéfines [aux utilisateurs.](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)
 
 Pour désactiver les stratégies de sécurité **de protection standard** ou stricte tout en conservant  les conditions et les exceptions existantes, faites glisser le basculement vers  ![ Désactivé. ](../../media/scc-toggle-off.png) Pour activer les stratégies, faites  glisser le basculement sur ![ ](../../media/scc-toggle-on.png) Activé.
 

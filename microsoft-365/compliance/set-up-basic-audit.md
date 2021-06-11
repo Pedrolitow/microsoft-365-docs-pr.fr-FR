@@ -50,7 +50,7 @@ Pour obtenir la liste des conditions d’abonnement et de licence requises pour 
 
 Les administrateurs et les membres des équipes d’enquête doivent avoir le rôle Journaux d’audit View-Only ou Journaux d’audit dans Exchange Online pour effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux Office 365 et Microsoft 365 sont automatiquement ajoutés en tant que membres du groupe de rôles Gestion de l’organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
-La capture d’écran suivante montre les deux rôles liés à l’audit attribués au groupe de rôles Gestion de l’organisation dans Exchange d’administration.
+La capture d’écran suivante montre les deux rôles liés à l’audit attribués au groupe de rôles Gestion de l’organisation dans Exchange’administration centrale.
 
 ![Auditer les rôles attribués au groupe de rôles dans Exchange Online](../media/EACAuditRoles.png)
 
@@ -72,7 +72,7 @@ Vous êtes maintenant prêt à effectuer des recherches dans le journal d’audi
   
    3. **Utilisateurs**.  Cliquez dans cette zone et commencez à taper le nom des utilisateurs pour afficher les résultats de la recherche. Les entrées du journal d’audit pour les activités sélectionnées effectuées par les utilisateurs que vous sélectionnez dans cette zone sont affichées dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
   
-   4. **Fichier, dossier ou site.** Tapez tout ou partie d’un nom de fichier ou de dossier pour rechercher l’activité liée au fichier de dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez l’URL d’un fichier ou d’un dossier, assurez-vous que vous tapez le chemin d’accès à l’URL complète ou si vous tapez une partie de l’URL, n’incluez pas de caractères ou d’espaces spéciaux. Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation.
+   4. **Fichier, dossier ou site**. Tapez tout ou partie d’un nom de fichier ou de dossier pour rechercher l’activité liée au fichier de dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez l’URL d’un fichier ou d’un dossier, assurez-vous que vous tapez le chemin d’accès à l’URL complète ou si vous tapez une partie de l’URL, n’incluez pas de caractères ou d’espaces spéciaux. Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation.
 
 4. Cliquez **sur Rechercher** pour exécuter la recherche.
 

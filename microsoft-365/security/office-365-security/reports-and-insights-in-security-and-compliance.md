@@ -1,5 +1,5 @@
 ---
-title: Rapports intelligents, informations - Centre Microsoft 365 conformité & sécurité
+title: Rapports intelligents, informations - Centre Microsoft 365 conformité et sécurité & de sécurité
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -19,12 +19,12 @@ description: Découvrez les rapports intelligents et les informations disponible
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ece53bd0b857fb00e394982f6e3b4c8c81d8b83
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 25efdbfc6c292d8df2690f4c222366614329c70d
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530873"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879275"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
 
@@ -55,8 +55,8 @@ De nombreux rapports sont disponibles dans le Centre de sécurité & conformité
 
 |Type d’information|Comment y accéder|Où aller pour en savoir plus|
 |---|---|---|
-|**Rapports du Centre & conformité de sécurité** (tous) <p> Informations et recommandations les plus importantes, et liens vers des rapports de sécurité et de conformité &, notamment des rapports de protection contre la perte de données, des étiquettes, des rapports de sécurité du courrier électronique, des rapports Defender pour Office 365, et bien plus encore|Dans le Centre de sécurité & conformité, go to **Reports** \> **Dashboard**|[Surveiller et afficher des rapports dans le centre de Microsoft 365 de sécurité](../defender/overview-security-center.md)|
-|**Protection contre la perte de données** <p> Détection grâce aux politiques de prévention des pertes de données, faux positifs et dérogations, et liens pour créer ou modifier des politiques.|Dans le Centre de sécurité & conformité, allez à la stratégie **de protection contre la perte de** \> **données**|[Voir les rapports pour la prévention des pertes de données](../../compliance/view-the-dlp-reports.md)|
+|**Rapports du Centre & conformité et sécurité** (tous) <p> Informations et recommandations les plus importantes, et liens vers les rapports de sécurité et de conformité &, y compris les rapports de protection contre la perte de données, les étiquettes, les rapports de sécurité du courrier électronique, les rapports Defender pour Office 365, et bien plus encore|Dans le Centre de sécurité & conformité, go to **Reports** \> **Dashboard**||
+|**Protection contre la perte de données** <p> Détection grâce aux politiques de prévention des pertes de données, faux positifs et dérogations, et liens pour créer ou modifier des politiques.|Dans le Centre de sécurité & conformité, allez à Stratégie de protection contre la **perte de** \> **données**|[Voir les rapports pour la prévention des pertes de données](../../compliance/view-the-dlp-reports.md)|
 |**Gouvernance des données** <p> Informations sur l’application des étiquettes, les étiquettes considérées comme des enregistrements, les tendances d’étiquette et bien plus encore|Dans le Centre de sécurité & conformité, allez au Tableau **de bord de gouvernance des** \> **informations**|[Afficher les rapports de gouvernance des données](../../compliance/view-the-data-governance-reports.md)|
 |**Tableau de bord de gestion des** menaces (également appelé tableau de bord de sécurité) <p> Détections de menaces, tendances des programmes malveillants, utilisateurs les plus ciblés, détails sur les messages électroniques envoyés et reçus, et bien plus encore|Dans le Centre de sécurité & conformité, allez au Tableau de **bord de gestion des** \> **menaces**|[Afficher des rapports pour Defender pour Office 365](view-reports-for-mdo.md)|
 |**Explorateur de menaces** (également appelé Explorateur) ou **détections en temps réel** <p> Programmes malveillants suspects détectés dans les e-mails et les fichiers Microsoft 365|Dans le Centre de sécurité & conformité, allez à l’Explorateur de **gestion** des \>  menaces ou **aux détections en temps réel**<br> |[Threat Explorer (et détections en temps réel)](threat-explorer.md)|
@@ -69,6 +69,6 @@ De nombreux rapports sont disponibles dans le Centre de sécurité & conformité
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Surveiller et afficher des rapports dans le centre de Microsoft 365 de sécurité](../defender/overview-security-center.md)
+[Surveiller et afficher des rapports dans le portail Microsoft 365 Defender](../defender/overview-security-center.md)
 
 [Se protéger contre les menaces dans Office 365](protect-against-threats.md)

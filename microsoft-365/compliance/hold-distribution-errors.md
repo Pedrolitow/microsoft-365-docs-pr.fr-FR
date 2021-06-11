@@ -46,7 +46,7 @@ Pour réduire le nombre d’erreurs liées aux conserves eDiscovery, nous vous r
     }
    ```
 
-- Fusionnez vos mises à jour dans une mise en attente eDiscovery dans une seule demande en bloc au lieu de mettre à jour la stratégie de mise à jour à plusieurs reprises pour chaque transaction. Par exemple, pour ajouter plusieurs boîtes aux lettres utilisateur à une stratégie de blocage existante à l’aide de la cmdlet [Set-CaseHoldPolicy,](/powershell/module/exchange/set-caseholdpolicy) exécutez la commande (ou ajoutez-la en tant que bloc de code à un script) afin qu’elle ne s’exécute qu’une seule fois pour ajouter plusieurs utilisateurs.
+- Fusionnez vos mises à jour vers une mise en attente eDiscovery dans une seule demande en bloc au lieu de mettre à jour la stratégie de mise à jour à plusieurs reprises pour chaque transaction. Par exemple, pour ajouter plusieurs boîtes aux lettres utilisateur à une stratégie de blocage existante à l’aide de la cmdlet [Set-CaseHoldPolicy,](/powershell/module/exchange/set-caseholdpolicy) exécutez la commande (ou ajoutez-la en tant que bloc de code à un script) afin qu’elle ne s’exécute qu’une seule fois pour ajouter plusieurs utilisateurs.
 
   **Correct**
 
@@ -66,7 +66,7 @@ Pour réduire le nombre d’erreurs liées aux conserves eDiscovery, nous vous r
 
    Dans l’exemple incorrect précédent, la cmdlet est exécuté cinq fois distinctement pour effectuer la tâche. Pour plus d’informations sur les pratiques recommandées pour ajouter des utilisateurs à une stratégie de attente, consultez la section [Plus d’informations.](#more-information)
 
-- Avant de contacter le Support Microsoft concernant les problèmes de la découverte électronique, suivez les étapes de la section [Erreur/problème](#errorissue-holds-dont-sync) : Les attentes ne sont pas synchronisées pour réessayer la distribution de la attente. Ce processus résout souvent des problèmes temporaires, notamment des erreurs de serveur interne.
+- Avant de contacter le Support Microsoft à propos des problèmes de la découverte électronique, suivez les étapes de la section [Erreur/problème](#errorissue-holds-dont-sync) : Les attentes ne sont pas synchronisées pour réessayer la distribution de la attente. Ce processus résout souvent des problèmes temporaires, notamment des erreurs de serveur interne.
 
 ## <a name="errorissue-holds-dont-sync"></a>Erreur/problème : les holds ne sont pas synchronisés
 
@@ -104,7 +104,7 @@ Si vous voyez le message d’erreur suivant lors de la mise en attente des dépo
 
 ### <a name="resolution"></a>Résolution
 
-Déverrouillez le site (ou demandez à un administrateur de le déverrouiller) pour résoudre ce problème. Pour en savoir plus sur la modification de l’état de verrouillage d’un site, voir [Verrouiller et déverrouiller des sites.](/sharepoint/manage-lock-status)
+Déverrouillez le site (ou demandez à un administrateur de le déverrouiller) pour résoudre ce problème. Pour en savoir plus sur la façon de modifier l’état de verrouillage d’un site, voir [Verrouiller et déverrouiller des sites.](/sharepoint/manage-lock-status)
 
 ## <a name="error-the-mailbox-or-sharepoint-site-may-not-exist"></a>Erreur : la boîte aux lettres ou SharePoint site n’existe peut-être pas
 
@@ -124,7 +124,7 @@ Si vous voyez le message d’erreur suivant lors de la mise en attente des dépo
 
 Les instructions sur la mise à jour des stratégies de blocage pour plusieurs utilisateurs dans la section « Pratiques recommandées » résultent du fait que le système bloque les mises à jour simultanées d’une stratégie de blocage. Cela signifie que lorsqu’une stratégie de mise à jour de mise en attente est appliquée aux nouveaux emplacements de contenu et que la stratégie de mise en attente est dans un état en attente, des emplacements de contenu supplémentaires ne peuvent pas être ajoutés à la stratégie de mise en attente. Voici quelques éléments à garder à l’esprit pour vous aider à atténuer ce problème :
   
-- Chaque fois qu’une mise à jour de la mise à jour d’une mise en attente est mise à jour, elle passe immédiatement à l’état en attente. L’état d’état en attente signifie que la attente est appliquée aux emplacements de contenu.
+- Chaque fois qu’une mise à jour de la mise à jour d’une mise en attente est mise à jour, elle passe immédiatement dans un état en attente. L’état d’état en attente signifie que la attente est appliquée aux emplacements de contenu.
   
 - Si vous avez un script qui exécute une boucle et ajoute des emplacements à la stratégie un par un (semblable à l’exemple incorrect présenté dans la section « Pratiques recommandées », le premier emplacement de contenu (par exemple, une boîte aux lettres utilisateur) lance le processus de synchronisation qui déclenche l’état en attente. Cela signifie que les autres utilisateurs ajoutés à la stratégie dans les boucles suivantes entraînent une erreur.
   

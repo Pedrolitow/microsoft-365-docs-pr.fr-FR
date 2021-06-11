@@ -19,12 +19,12 @@ ms.collection:
 description: Découvrez les affichages campagne dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779450"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879131"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Affichages des campagnes dans Microsoft Defender pour Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52779450"
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
-Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations avec un module Office 365 Plan 2). Les affichages de campagne dans Microsoft 365 de sécurité identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
+Les affichages de campagne sont une fonctionnalité de Microsoft Defender pour Office 365 Plan 2 (par exemple, Microsoft 365 E5 ou les organisations avec un module Office 365 Plan 2). Les affichages de campagne dans Microsoft 365 Defender identifient et classent les attaques par hameçonnage dans le service. Campaign Views permet d’effectuer les opérations suivantes :
 
 - Examiner et répondre efficacement aux attaques par hameçonnage.
 - Mieux comprendre l’étendue de l’attaque.
@@ -45,7 +45,7 @@ Campaign Views vous permet de voir la présentation d’une attaque plus rapidem
 
 Une campagne est une attaque par e-mail coordonné contre une ou plusieurs organisations. Les attaques par courrier électronique qui volent des informations d’identification et des données d’entreprise sont un secteur d’activité important. À mesure que les technologies augmentent pour arrêter les attaques, les attaquants modifient leurs méthodes afin de garantir un succès continu.
 
-Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
+Microsoft exploite les grandes quantités de données anti-hameçonnage, anti-courrier indésirable et anti-programme malveillant dans l’ensemble du service pour vous aider à identifier les campagnes. Nous analysons et classons les informations d’attaque en fonction de plusieurs facteurs. Par exemple :
 
 - **Source de l’attaque**: adresses IP sources et domaines de messagerie de l’expéditeur.
 - **Propriétés du** message : le contenu, le style et le ton des messages.
@@ -54,11 +54,11 @@ Microsoft tire parti des grandes quantités de données anti-hameçonnage, anti-
 
 Une campagne peut avoir une durée de vie courte ou s’étendre sur plusieurs jours, semaines ou mois avec des périodes actives et inactives. Une campagne peut être lancée sur votre organisation spécifique, ou votre organisation peut faire partie d’une campagne plus importante au sein de plusieurs entreprises.
 
-## <a name="campaign-views-in-the-security-center"></a>Affichages des campagnes dans le centre de sécurité
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Affichages des campagnes dans le portail Microsoft 365 Defender
 
-Les affichages de campagne sont disponibles dans le [centre Microsoft 365 sécurité](https://security.microsoft.com) sur le site **e-mail &** campagnes de \> collaboration, ou directement à l’adresse <https://security.microsoft.com/campaigns> .
+Les affichages de campagne sont disponibles dans le portail Microsoft 365 Defender ( ) à <https://security.microsoft.com> l’adresse **e-mail & campagnes** de collaboration, ou \> directement à l’adresse <https://security.microsoft.com/campaigns> .
 
-![Vue d’ensemble des campagnes dans Microsoft 365 sécurité de l’équipe](../../media/campaigns-overview.png)
+![Vue d’ensemble des campagnes dans le portail Microsoft 365 Defender](../../media/campaigns-overview.png)
 
 Vous pouvez également obtenir les affichages campagne à partir des points de vue de campagne :
 
@@ -67,7 +67,7 @@ Vous pouvez également obtenir les affichages campagne à partir des points de v
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Hameçonnage** \> **Onglet Campagne**
 - **Collaboration par & messagerie** \> **Explorateur** \> **Affichage** \> **Programmes malveillants** \> **Onglet Campagne**
 
-Pour accéder aux affichages campagne, vous devez être membre  des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Lecteur Sécurité dans le centre de sécurité. Pour plus d’informations, voir Autorisations dans le centre de conformité Microsoft 365 et [le centre Microsoft 365 de sécurité.](permissions-microsoft-365-security-center.md)
+Pour accéder aux affichages campagne, vous devez être membre  des groupes de rôles Gestion de l’organisation, Administrateur de la sécurité ou Lecteur sécurité dans le portail Microsoft 365 Defender. Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 
 ## <a name="campaigns-overview"></a>Vue d’ensemble des campagnes
 
@@ -110,7 +110,7 @@ Le tableau sous le graphique de la page vue d’ensemble affiche les information
 
 ### <a name="filters-and-settings"></a>Filtres et paramètres
 
-En haut de la page **Campagne,** il existe plusieurs paramètres de filtre et de requête pour vous aider à rechercher et isoler des campagnes spécifiques.
+En haut de la page **Campagne,** plusieurs paramètres de filtre et de requête vous permettent de rechercher et d’isoler des campagnes spécifiques.
 
 ![Filtres de campagne](../../media/campaign-filters-and-settings.png)
 
@@ -252,12 +252,12 @@ Le diagramme contient les informations suivantes :
 
 Lorsqu’un message de hameçonnage est remis dans la boîte de réception ou le dossier Courrier indésirable d’un destinataire, il est toujours possible que l’utilisateur clique sur l’URL de la charge utile. Ne pas cliquer sur l’URL est une petite mesure de réussite, mais vous devez déterminer pourquoi le message de hameçonnage a même été remis à la boîte aux lettres.
 
-Si un utilisateur a cliqué sur l’URL de la charge utile dans le message de hameçonnage, les actions s’affichent dans la zone **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
+Si un utilisateur a cliqué sur l’URL de la charge utile dans le message d’hameçonnage, les actions s’affichent dans la zone de **clics de l’URL** du diagramme dans l’affichage Détails de la campagne.
 
 - **Autorisé**
 - **BlockPage**: le destinataire [a](safe-links.md) cliqué sur l’URL de la charge utile, mais son accès au site web malveillant a été bloqué par une stratégie de liens sécurisés dans votre organisation.
 - **BlockPageOverride**: le destinataire a cliqué sur l’URL de la charge utile dans le message, les liens sécurisés ont essayé de les arrêter, mais ils ont été autorisés à remplacer le bloc. Examinez vos [stratégies de liens](set-up-safe-links-policies.md) sécurisés pour voir pourquoi les utilisateurs sont autorisés à remplacer le verdict de liens sécurisés et à continuer vers le site web malveillant.
-- **PendingDetonationPage**: les pièces jointes sécurisées dans Microsoft Defender pour Office 365 sont en cours d’ouverture et d’examen de l’URL de la charge utile dans un environnement d’ordinateur virtuel.
+- **PendingDetonationPage**: pièces jointes sécurisées dans Microsoft Defender pour Office 365 est en cours d’ouverture et d’examen de l’URL de la charge utile dans un environnement d’ordinateur virtuel.
 - **PendingDetonationPageOverride**: le destinataire a été autorisé à remplacer le processus de détonation de la charge utile et à ouvrir l’URL sans attendre les résultats.
 
 ### <a name="tabs"></a>Onglets

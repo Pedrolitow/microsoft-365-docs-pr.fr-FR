@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 287bd9cd4dda6ccb152e93908a409e036eab9cc7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275083"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878879"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Comment signaler les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse
 
@@ -68,17 +68,21 @@ Dans la plupart des cas, si une action corrective a été prise sur un message �
 
 Avec l’Explorateur de menaces, votre équipe des opérations de sécurité peut rechercher un message électronique affecté par une action et éventuellement annuler l’action.
 
+<br>
+
+****
+
 |Scénario|Options d’annuler|En savoir plus|
 |---|---|---|
-|Un message électronique a été acheminé vers le dossier Courrier indésirable d’un utilisateur|- Déplacer le message vers le dossier Éléments supprimés de l’utilisateur<br/>- Déplacer le message vers la boîte de réception de l’utilisateur<br/>- Supprimer le message|[Rechercher et examiner les e-mails malveillants qui ont été remis dans Office 365](investigate-malicious-email-that-was-delivered.md)|
-|Un message électronique ou un fichier a été mis en quarantaine|- Libérer le courrier électronique ou le fichier<br/>- Supprimer le courrier électronique ou le fichier|[Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)|
+|Un message électronique a été acheminé vers le dossier Courrier indésirable d’un utilisateur|<ul><li>Déplacer le message vers le dossier Éléments supprimés de l’utilisateur</li><li>Déplacer le message vers la boîte de réception de l’utilisateur</li><li>Supprimer le message</li></ul>|[Rechercher et examiner les e-mails malveillants qui ont été remis dans Office 365](investigate-malicious-email-that-was-delivered.md)|
+|Un message électronique ou un fichier a été mis en quarantaine|<ul><li>Libérer le courrier électronique ou le fichier</li><li> Supprimer le courrier électronique ou le fichier</li></ul>|[Gérer les messages mis en quarantaine en tant qu’administrateur](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-in-the-action-center"></a>Annuler une action dans le centre de données
 
 Dans le centre de correction, vous pouvez voir les actions de correction qui ont été prises et éventuellement annuler l’action.
 
-1. Go to the Microsoft 365 security center ( <https://security.microsoft.com> ).
+1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ).
 2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
 3. Sélectionnez **l’onglet** Historique pour afficher la liste des actions terminées.
 4. Sélectionnez un élément. Son volet volant s’ouvre.

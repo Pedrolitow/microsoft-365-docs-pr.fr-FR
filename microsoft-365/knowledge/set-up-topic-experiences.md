@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment configurer les rubriques microsoft
-ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6997e5f5a6793468dfe3392ffc2037b319844ad
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930220"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893763"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurer Les rubriques microsoft
 
@@ -60,8 +60,10 @@ Une fois les licences attribuées, l’accès aux rubriques peut prendre jusqu�
 
 ## <a name="set-up-topics"></a>Configurer les rubriques
 
-Pour configurer des rubriques
+> [!Note]
+> La première fois que la découverte de rubrique est activée, l’affichage De toutes les rubriques suggérées dans l’affichage Gérer les rubriques peut prendre jusqu’à deux semaines. La découverte de rubriques se poursuit au cours de la mise à jour ou de la mise à jour du contenu. Il est normal d’avoir des variations dans le nombre de rubriques suggérées dans votre organisation, car Topics évalue de nouvelles informations.
 
+Pour configurer des rubriques
 1. Dans le [centre Microsoft 365' administration,](https://admin.microsoft.com)sélectionnez **Installation,** puis affichez la section Fichiers **et** contenu.
 2. Dans la section **Fichiers et contenu,** cliquez **Connecter personnes à connaître.**
 
@@ -143,8 +145,6 @@ Pour configurer des rubriques
 12. Vous serez renvoyé à votre page de **Connecter personnes à la** page de connaissances. Dans cette page, vous pouvez sélectionner **Gérer** pour modifier vos paramètres de configuration. 
 
     ![Paramètres appliqué](../media/ksetup7.png)    
-
-Notez que la première fois que la découverte de rubrique est activée, l’affichage Gérer les rubriques peut prendre jusqu’à deux semaines pour que toutes les rubriques suggérées apparaissent. La découverte de rubriques se poursuit au cours de la mise à jour ou de la mise à jour du contenu. Il est normal d’avoir des variations dans le nombre de rubriques suggérées dans votre organisation, car Topics évalue de nouvelles informations.
 
 ## <a name="manage-topic-experiences"></a>Gérer les expériences de rubrique
 

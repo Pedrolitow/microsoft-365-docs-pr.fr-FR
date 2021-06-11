@@ -10,20 +10,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Les administrateurs peuvent découvrir comment la formation sur la simulation d’attaques dans le centre de sécurité Microsoft 365 affecte les employés et peut obtenir des informations à partir des résultats de simulation et de formation.
+description: Les administrateurs peuvent découvrir comment la formation à la simulation d’attaques dans le portail Microsoft 365 Defender affecte les employés et peut obtenir des informations à partir des résultats de simulation et de formation.
 ms.technology: mdo
-ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: e189864a42d025bb5ce720a6edb6c1c2c8c84623
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51600006"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878375"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Découvrez les formations à la simulation d’attaque
 
+**S’applique** [à Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
+
 Dans le cadre d’une formation sur la simulation d’attaques, Microsoft vous fournit des informations sur les résultats des simulations et des formations que les employés ont réalisées. Ces informations vous aideront à vous tenir informé de la progression de la préparation aux menaces de vos employés, ainsi que les étapes suivantes pour mieux préparer vos employés et votre environnement aux attaques.
 
-Nous travaillons en permanence sur l’extension des informations disponibles. L’impact sur le comportement et les actions recommandées sont actuellement disponibles. Pour commencer, commencez par vous entraîner à la simulation d’attaques [dans Microsoft 365 de sécurité.](https://security.microsoft.com/attacksimulator?viewid=overview)
+Nous travaillons en permanence sur l’extension des informations disponibles. L’impact sur le comportement et les actions recommandées sont actuellement disponibles. Pour commencer, commencez par vous entraîner à la simulation d’attaques [dans le portail Microsoft 365 Defender.](https://security.microsoft.com/attacksimulator?viewid=overview)
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Impact du comportement sur le taux de compromission
 
@@ -45,7 +47,7 @@ Pour afficher un rapport plus détaillé, cliquez sur **Afficher les simulations
 
 Sous [ **l’onglet Simulations,**](https://security.microsoft.com/attacksimulator?viewid=simulations)la sélection d’une simulation vous permet d’obtenir les détails de la simulation, où se trouve la section **Actions recommandées.**
 
-La section actions recommandées détaille les recommandations telles que disponibles dans [Le Score de sécurisation Microsoft.](../defender/microsoft-secure-score.md) Ces recommandations sont basées sur la charge utile utilisée dans la simulation et vous aideront à protéger vos employés et votre environnement. Le fait de cliquer sur chaque action d’amélioration vous permet d’obtenir ses détails.
+La section Actions recommandées détaille les recommandations telles que disponibles dans [Le Score de sécurité Microsoft.](../defender/microsoft-secure-score.md) Ces recommandations sont basées sur la charge utile utilisée dans la simulation et vous aideront à protéger vos employés et votre environnement. Le fait de cliquer sur chaque action d’amélioration vous permet d’obtenir ses détails.
 
 > [!div class="mx-imgBorder"]
 > ![Section Actions de recommandation sur la formation à la simulation d’attaque](../../media/attack-sim-preview-recommended-actions.png)
@@ -56,4 +58,4 @@ La section actions recommandées détaille les recommandations telles que dispon
 
 [Créer une simulation d’attaque par hameçonnage](attack-simulation-training.md)
 
-[créer une charge utile pour former vos personnes](attack-simulation-training-payloads.md)
+[créer une charge utile pour former vos employés](attack-simulation-training-payloads.md)

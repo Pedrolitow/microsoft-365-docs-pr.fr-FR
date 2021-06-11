@@ -12,24 +12,26 @@ ms.collection:
 - m365initiative-defender-office365
 description: Les administrateurs peuvent apprendre à simuler des attaques par hameçonnage et à former leurs utilisateurs à la prévention du hameçonnage à l’aide d’une formation sur la simulation d’attaques dans Microsoft Defender Office 365.
 ms.technology: mdo
-ms.openlocfilehash: 27279f927a15ea94ae84112ffdc23d88ea42d2ff
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d82e7544e6795e4514cf1949645107c53fc69c61
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204502"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878363"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simuler une attaque par hameçonnage
+
+**S’applique** [à Microsoft Defender pour Office 365 plan 2](defender-for-office-365.md)
 
 La formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 vous permet d’exécuter des simulations de cyberattaque anodins sur votre organisation pour tester vos stratégies et pratiques de sécurité, ainsi que pour former vos employés afin qu’ils augmentent leur sensibilisation et diminuent leur tendance aux attaques. Cet article vous explique la création d’une attaque par hameçonnage simulée à l’aide d’une formation à la simulation d’attaques.
 
 Pour plus d’informations sur la formation à la simulation d’attaque, voir [Commencer à utiliser la formation sur la simulation d’attaque.](attack-simulation-training-get-started.md)
 
-Pour lancer une attaque par hameçonnage simulée, ouvrez le centre de sécurité [Microsoft 365,](https://security.microsoft.com/)passez à la formation sur la simulation d’attaques par & collaboration par **courrier** électronique et passez à l’onglet \>  [**Simulations.**](https://security.microsoft.com/attacksimulator?viewid=simulations)
+Pour lancer une attaque par hameçonnage simulée, ouvrez le portail Microsoft 365 Defender ( ), allez à la formation sur la simulation d’attaques par & collaboration et passez à l’onglet <https://security.microsoft.com/>  \>  **[Simulations.](https://security.microsoft.com/attacksimulator?viewid=simulations)**
 
 Sous **Simulations,** **sélectionnez + Lancer une simulation.**
 
-![Lancer un bouton de simulation dans Microsoft 365 de sécurité](../../media/attack-sim-preview-launch.png)
+![Lancer un bouton de simulation dans le portail Microsoft 365 Defender](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
 > À tout moment lors de la création de la simulation, vous pouvez enregistrer et fermer pour continuer à configurer la simulation ultérieurement.
@@ -47,7 +49,7 @@ Sélectionnez parmi 4 techniques différentes, organisées à partir de l’infr
 > [!TIP]
 > Le fait de cliquer sur **Afficher les détails** dans la description de chaque technique permet d’afficher des informations supplémentaires et les étapes de simulation de la technique.
 >
-> ![Étapes de simulation pour la recherche d’informations d’identification dans le cadre d’une formation sur la simulation d’attaques Microsoft 365 centre de sécurité](../../media/attack-sim-preview-sim-steps.png)
+> ![Étapes de simulation pour la recherche d’informations d’identification dans le cadre d’une formation sur la simulation d’attaques dans le portail Microsoft 365 Defender](../../media/attack-sim-preview-sim-steps.png)
 
 Une fois que vous avez sélectionné la technique et cliqué sur **Suivant,** donnez à votre simulation un nom et éventuellement une description.
 
@@ -63,7 +65,7 @@ Les charges utiles ont un certain nombre de points de données pour vous aider �
 - **La** complexité, disponible par le biais **de filtres,** est calculée en fonction du nombre d’indicateurs au sein de la charge utile ciblée par des indices en tant qu’attaque. Plus il y a d’indicateurs, plus la complexité est faible.
 - **La source,** disponible **via** des filtres, indique si la charge utile a été créée sur votre client ou fait partie du catalogue de charge utile pré-existant de Microsoft (global).
 
-![Charge utile sélectionnée dans la formation de simulation d’attaques Microsoft 365 centre de sécurité](../../media/attack-sim-preview-select-payload.png)
+![Charge utile sélectionnée dans l’entraînement de simulation d’attaques dans Microsoft 365 portail Defender](../../media/attack-sim-preview-select-payload.png)
 
 Sélectionnez une charge utile dans la liste pour afficher un aperçu de la charge utile avec des informations supplémentaires à son sujet.
 
@@ -76,7 +78,9 @@ Il est maintenant temps de sélectionner l’audience de cette simulation. Vous 
 Lorsque vous choisissez **d’inclure uniquement des utilisateurs et des groupes spécifiques,** vous pouvez :
 
 - Ajoutez des utilisateurs, ce qui vous permet de tirer parti de la recherche pour votre client, ainsi que des fonctionnalités avancées de recherche et de filtrage, telles que le ciblage d’utilisateurs qui n’ont pas été ciblés par une simulation au cours des 3 derniers mois.
-  ![Filtrage des utilisateurs lors d’une formation sur la simulation d’attaques Microsoft 365 centre de sécurité](../../media/attack-sim-preview-user-targeting.png)
+
+  ![Filtrage des utilisateurs lors d’une formation sur la simulation d’attaques sur le portail Microsoft 365 Defender](../../media/attack-sim-preview-user-targeting.png)
+
 - **L’importation à partir de CSV** vous permet d’importer un ensemble prédéféré d’utilisateurs pour cette simulation.
 
 ## <a name="assigning-training"></a>Affectation d’une formation
@@ -90,7 +94,7 @@ Sélectionnez la **date d’échéance de** la formation pour vous assurer que l
 > [!NOTE]
 > Si vous choisissez de sélectionner vous-même des cours et des modules, vous pourrez toujours voir le contenu recommandé ainsi que tous les cours et modules disponibles.
 >
-> ![Ajout d’une formation recommandée dans le cadre d’une formation sur la simulation d’attaques Microsoft 365 centre de sécurité](../../media/attack-sim-preview-add-training.png)
+> ![Ajout d’une formation recommandée dans le cadre d’une formation sur la simulation d’attaques sur le portail Microsoft 365 Defender](../../media/attack-sim-preview-add-training.png)
 
 Dans les étapes **suivantes,** vous devrez ajouter des formations si vous avez choisi de la sélectionner vous-même et de personnaliser votre page d’arrivée de formation. Vous pourrez afficher un aperçu de la page d’accueil de formation, ainsi que modifier l’en-tête et le corps de celui-ci.
 

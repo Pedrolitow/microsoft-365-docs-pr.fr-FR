@@ -37,7 +37,7 @@ Les ressources de cette page sont conçues pour vous aider à commencer à déco
 
 Les ressources de cette section vous aident à en savoir plus sur ce qu’est Topics Et comment elle peut vous aider.
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |En savoir plus sur Rubriques Viva|[Vue d’ensemble de Rubriques Microsoft Viva](topic-experiences-overview.md)|
 |Découvrir comment les sujets sont découverts et suggérés par l’intelligence artificielle|[Découverte de Rubriques Microsoft Viva](topic-experiences-discovery.md)|

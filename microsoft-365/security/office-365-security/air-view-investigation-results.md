@@ -19,12 +19,12 @@ description: Pendant et après un examen automatisé dans Microsoft 365, vous po
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fc7c61fae83f2d10f8b66cbfce86bcee6e3a5bd6
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275047"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878423"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Détails et résultats d’un examen automatisé dans Microsoft 365
 
@@ -32,22 +32,26 @@ ms.locfileid: "52275047"
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Lorsqu’une investigation automatisée](office-365-air.md) se produit dans [Microsoft Defender pour Office 365](defender-for-office-365.md), des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous avez les autorisations nécessaires, vous pouvez afficher ces détails dans le centre Microsoft 365 de sécurité. Les détails de l’examen vous fournissent l’état à jour et la possibilité d’approuver les actions en attente.
+[Lorsqu’une investigation automatisée](office-365-air.md) se produit dans [Microsoft Defender pour Office 365](defender-for-office-365.md), des détails sur cet examen sont disponibles pendant et après le processus d’examen automatisé. Si vous avez les autorisations nécessaires, vous pouvez afficher ces détails dans le portail Microsoft 365 Defender. Les détails de l’examen vous fournissent l’état à jour et la possibilité d’approuver les actions en attente.
 
 > [!TIP]
-> Consultez la nouvelle page d’examen unifié dans le centre Microsoft 365 sécurité. Pour en savoir plus, [voir (NOUVEAU!) Page d’examen unifié](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Consultez la nouvelle page d’examen unifié dans le portail Microsoft 365 Defender. Pour en savoir plus, [voir (NOUVEAU!) Page d’examen unifié](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## <a name="investigation-status"></a>État de l’examen
 
 L’état de l’examen indique la progression de l’analyse et des actions. Au cours de l’examen, l’état change pour indiquer si des menaces ont été trouvées et si des actions ont été approuvées.
 
+<br>
+
+****
+
 |Statut|Description|
-|:---|:---|
+|---|---|
 |**Démarrage**|L’enquête a été déclenchée et en attente de démarrage.|
 |**En cours d’exécution**|Le processus d’examen a démarré et est en cours. Cet état se produit également lorsque les [actions en attente sont](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) approuvées.|
-|**Aucune menace trouvée**|L’enquête est terminée et aucune menace (compte d’utilisateur, message électronique, URL ou fichier) n’a été identifiée. <p> **CONSEIL**: si vous pensez que quelque chose a été manqué (tel qu’un faux négatif), vous pouvez prendre des mesures à l’aide de [l’Explorateur de menaces.](threat-explorer.md)|
+|**Aucune menace trouvée**|L’enquête est terminée et aucune menace (compte d’utilisateur, message électronique, URL ou fichier) n’a été identifiée. <p> **CONSEIL**: si vous pensez que quelque chose a été manqué (par exemple, un faux négatif), vous pouvez prendre des mesures à l’aide de [l’Explorateur de menaces.](threat-explorer.md)|
 |**Menaces détectées**|L’examen automatisé a trouvé des problèmes, mais il n’existe aucune action de correction spécifique pour résoudre ces problèmes. <p> **L’état Menaces** trouvées peut se produire lorsqu’un type d’activité utilisateur a été identifié, mais qu’aucune action de nettoyage n’est disponible. Voici quelques exemples d’activités utilisateur : <br/>- Un événement [de protection contre la perte de](../../compliance/dlp-learn-about-dlp.md) données<br/>- Une anomalie d’envoi de courrier électronique<br/>- Programmes malveillants envoyés<br/>- Hameçonnage envoyé <p> L’examen n’a trouvé aucune URL, aucun fichier ou message électronique malveillant à corriger et aucune activité de boîte aux lettres à corriger, telle que la non-remise des règles de forwarding ou de la délégation. <p> **CONSEIL**: si vous pensez que quelque chose a été manqué (tel qu’un faux négatif), vous pouvez examiner et prendre des mesures à l’aide de [l’Explorateur de menaces.](threat-explorer.md)|
-|**Terminated By System**|L’examen a été arrêté. Une enquête peut s’arrêter pour plusieurs raisons : <br/>- Les actions en attente de l’examen ont expiré. Le délai d’attente des actions en attente d’approbation est de 1 semaine.<br/>- Il y a trop d’actions. Par exemple, s’il y a trop d’utilisateurs qui cliquent sur des URL malveillantes, cela peut aller au-delà de la capacité de l’examen à exécuter tous les analyseurs, de sorte que l’enquête s’arrête.<p> **CONSEIL :** si un examen s’arrête avant que des mesures ne sont prises, essayez d’utiliser l’Explorateur de menaces [pour](threat-explorer.md) rechercher et résoudre les menaces.|
+|**Terminated By System**|L’examen a été arrêté. Une enquête peut s’arrêter pour plusieurs raisons : <br/>- Les actions en attente de l’examen ont expiré. Le délai d’attente des actions en attente d’approbation est de 1 semaine.<br/>- Il y a trop d’actions. Par exemple, s’il y a trop d’utilisateurs qui cliquent sur des URL malveillantes, cela peut aller au-delà de la capacité de l’examen à exécuter tous les analyseurs, de sorte que l’enquête s’arrête.<p> **CONSEIL**: si un examen s’arrête avant que des actions ne sont prises, essayez d’utiliser l’Explorateur de menaces [pour](threat-explorer.md) rechercher et résoudre les menaces.|
 |**Action en attente**|L’enquête a trouvé une menace, telle qu’un e-mail malveillant, une URL malveillante ou un paramètre de boîte aux lettres à risque, et une action pour corriger cette menace est en attente [d’approbation.](air-review-approve-pending-completed-actions.md) <p> **L’état Action en attente** est déclenché lorsqu’une menace avec une action correspondante est trouvée. Toutefois, la liste des actions en attente peut augmenter au cours d’une enquête. Affichez les détails de l’examen pour voir si d’autres éléments sont en attente d’achèvement.|
 |**Corrigé**|L’examen s’est terminé et toutes les actions de correction ont été approuvées (notées comme étant entièrement corrigés). <p> **REMARQUE**: les actions de correction approuvées peuvent avoir des erreurs qui empêchent les actions d’être prises. Que les actions de correction soient effectuées avec succès ou non, l’état de l’examen ne change pas. Afficher les détails de l’examen.|
 |**Correction partielle**|L’examen a entraîné des actions de correction, dont certaines ont été approuvées et terminées. D’autres actions sont [toujours en attente.](air-review-approve-pending-completed-actions.md)|
@@ -58,7 +62,7 @@ L’état de l’examen indique la progression de l’analyse et des actions. Au
 
 ## <a name="view-details-of-an-investigation"></a>Afficher les détails d’une enquête
 
-1. Go to the Microsoft 365 security center ( <https://security.microsoft.com> ) and sign in.
+1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
 2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
 3. Sous les onglets **En attente** **ou** Historique, sélectionnez une action. Son volet volant s’ouvre.
 4. Dans le volet volant, sélectionnez **Ouvrir la page Enquête.** 
@@ -68,10 +72,10 @@ L’état de l’examen indique la progression de l’analyse et des actions. Au
 
 Certains types d’alertes déclenchent une enquête automatisée dans Microsoft 365. Pour en savoir plus, consultez les [stratégies d’alerte qui déclenchent des enquêtes automatisées.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
-1. Go to the Microsoft 365 security center ( <https://security.microsoft.com> ) and sign in.
+1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
 2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
 3. Sous les onglets **En attente** **ou** Historique, sélectionnez une action. Son volet volant s’ouvre.
-4. Dans le volet volant, sélectionnez **Ouvrir la page Enquête.** 
+4. Dans le volet volant, sélectionnez **Ouvrir la page Enquête.**
 5. Sélectionnez **l’onglet Alertes** pour afficher la liste de toutes les alertes associées à cet examen.
 6. Sélectionnez un élément dans la liste pour ouvrir son volet volant. Vous y pouvez afficher plus d’informations sur l’alerte.
 
@@ -95,6 +99,6 @@ Certains types d’alertes déclenchent une enquête automatisée dans Microsoft
 
 - L’approbation et/ou le rejet de toutes les actions permet à l’examen de se fermer complètement (l’état est corrigé), tout en laissant certaines actions incomplètes, l’état de l’examen passe à un état partiellement corrigé.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - [Examiner et approuver les actions en attente](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

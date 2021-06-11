@@ -33,13 +33,13 @@ Le tableau suivant décrit les services associés aux groupes et aux équipes, a
 
 |Service|Types de contenu|
 |:------|:---------------|
-|Équipes|Conversations de canal, fichiers dans les canaux|
+|Teams|Conversations de canal, fichiers dans les canaux|
 |Formulaires|Structure et résultats de l’enquête|
 |OneNote|Bloc-notes|
 |Outlook|Courrier et calendrier|
 |Planificateur|Project d’état et de tâche|
 |Power Automate|Flux de travail|
-|Power BI|Données, rapports et tableaux de bord|
+|Power BI|Données, rapports et tableaux de bord|
 |Project sur le web|Project plans|
 |Feuille de route|Feuilles de route|
 |SharePoint|Fichiers, listes, données wiki Teams canal|
@@ -72,13 +72,13 @@ Ces questions doivent être posées avant la suppression du groupe sous-jacent, 
 
 **Invités**
 
-Lorsque des invités sont invités à une équipe, un compte invité est créé dans le Azure Active Directory de l’organisation hôte avant de les ajouter à l’équipe. Lorsqu’une équipe est supprimée, les invités ne sont pas supprimés de Azure Active Directory. Bien que les invités ne peuvent pas accéder à des groupes, des sites, des équipes ou du contenu qui n’ont pas été partagés avec eux, ils peuvent toujours utiliser des fonctionnalités au sein de Microsoft Teams telles que le démarrage de conversations, les appels vocaux et vidéo et l’utilisation d’applications.
+Lorsque des invités sont invités à une équipe, un compte d’invité est créé dans le Azure Active Directory de l’organisation hôte avant de les ajouter à l’équipe. Lorsqu’une équipe est supprimée, les invités ne sont pas supprimés de Azure Active Directory. Bien que les invités ne peuvent pas accéder à des groupes, des sites, des équipes ou du contenu qui n’ont pas été partagés avec eux, ils peuvent toujours utiliser des fonctionnalités au sein de Microsoft Teams telles que le démarrage de conversations, les appels vocaux et vidéo et l’utilisation d’applications.
 
-Un propriétaire d’équipe ou de groupe peut inviter une personne extérieure à l’organisation à devenir Azure Active Directory en l’ajoutant à une équipe. Toutefois, un propriétaire d’équipe ne peut pas supprimer l’invité de Azure Active Directory. La suppression de comptes peut uniquement être effectuée par un administrateur global ou un administrateur utilisateur.
+Un propriétaire d’équipe ou de groupe peut inviter une personne extérieure à l’organisation à devenir Azure Active Directory en l’ajoutant à une équipe. Toutefois, un propriétaire d’équipe ne peut pas supprimer l’invité de Azure Active Directory. La suppression de comptes ne peut être effectuée que par un administrateur global ou un administrateur utilisateur.
 
 Il est important d’effectuer des révisions d’invités et de comprendre si les invités doivent être supprimés Azure Active Directory la suppression de l’équipe. Il peut y avoir un cas valide pour que les invités restent dans l’annuaire, par exemple être membre d’autres équipes ou utiliser d’autres services Microsoft 365 ou Azure.
 
-## <a name="teams"></a>Équipes
+## <a name="teams"></a>Teams
 
 Teams contenu spécifique se trouve principalement sous la forme de conversations.
 
@@ -129,7 +129,7 @@ Le OneNote-notes inclus dans un groupe est stocké dans la bibliothèque d’él
 
 **Déplacer des pages et des sections vers un autre bloc-notes**
 
-[Le déplacement individuel de pages](https://support.office.com/article/c3c8b098-7f9c-4c2a-a0dc-ebb83bc76364) ou de sections vers un autre bloc-notes permet aux propriétaires de nettoyer leurs données et de ne prendre que ce qui doit être conservé.
+[Le déplacement individuel de pages](https://support.office.com/article/c3c8b098-7f9c-4c2a-a0dc-ebb83bc76364) ou de sections vers un autre bloc-notes permet aux propriétaires de nettoyer leurs données et de prendre uniquement ce qui doit être conservé.
 
 **Exporter l’intégralité du bloc-notes en tant que package**
 
@@ -143,9 +143,9 @@ Dans les scénarios où une partie du contenu du bloc-notes doit uniquement êtr
 
 Il n’est pas rare que la boîte aux lettres associée au groupe soit utilisée, même si de nombreuses conversations ont pu être menées au sein de canaux d’équipe. La boîte aux lettres stocke uniquement les courriers électroniques qui lui ont été envoyés directement et n’inclut pas les e-mails envoyés directement aux canaux.
 
-Dans certains cas, les courriers électroniques stockés dans la boîte aux lettres peuvent être des notifications de réunions, de mises à jour de tâches du Planificateur et d’autres messages générés par l’application ou le système. il est important que le contenu de la boîte aux lettres soit révisé pour déterminer si le contenu doit être conservé ou supprimé.
+Dans certains cas, les courriers électroniques stockés dans la boîte aux lettres peuvent être des notifications de réunions, de mises à jour de tâches du Planificateur et d’autres messages générés par l’application ou le système. Il est important que le contenu de la boîte aux lettres soit révisé pour déterminer si le contenu doit être conservé ou supprimé.
 
-Si une stratégie de rétention est appliquée dans Exchange, les courriers électroniques et les éléments de calendrier sont conservés et disponibles par le biais de recherches de découverte électronique.
+Si une stratégie de rétention est appliquée dans Exchange, les messages électroniques et les éléments de calendrier sont conservés et disponibles par le biais de recherches de découverte électronique.
 
 **Exporter le courrier et le calendrier**
 
@@ -186,7 +186,7 @@ Si le flux doit continuer à fonctionner, tous les propriétaires peuvent ajoute
 
 Si le flux [n’a](https://flow.microsoft.com/blog/import-export-bap-packages/) pas besoin de continuer à fonctionner, mais qu’il doit être conservé pour une utilisation future potentielle, il peut être exporté en tant que fichier et importé à nouveau ultérieurement.
 
-## <a name="power-bi"></a>Power BI
+## <a name="power-bi"></a>Power BI
 
 Power BI données et espaces de travail peuvent fonctionner indépendamment des groupes et des équipes et, comme d’autres charges de travail, offrent différentes façons d’être hors groupe.
 
@@ -204,7 +204,7 @@ Les projets et les feuilles de route créés dans Project web sont associés à 
 
 **Affecter le projet à un autre groupe**
 
-Si le projet doit être conservé dans son état fonctionnel au-delà de la durée de vie du groupe ou de l’équipe, il peut être affecté à un autre [groupe Microsoft 365.](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) Pour ce faire, vous pouvez utiliser le Centre d’administration Dynamics 365.
+Si le projet doit être conservé dans son état fonctionnel au-delà de la durée de vie du groupe ou de l’équipe, il peut être affecté à un groupe [Microsoft 365 différent.](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) Pour ce faire, vous pouvez utiliser le Centre d’administration Dynamics 365.
 
 **Exporter des données à partir du projet ou de la feuille de route**
 
@@ -221,7 +221,7 @@ Les fichiers sont généralement stockés dans trois emplacements principaux au 
 - Fichiers dans les canaux – Bibliothèque de documents
 - Pages Wiki : Teams de données Wiki
 
-Si le site possède un ou plusieurs sous-sites, le processus de départ doit être répété pour chaque sous-site. Si l’équipe contient des canaux privés, il existe un site SharePoint pour chaque canal.
+Si le site possède un ou plusieurs sous-sites, le processus d’embarquement doit être répété pour chaque sous-site. Si l’équipe contient des canaux privés, il existe un site SharePoint pour chaque canal.
 
 Lors de la suppression de fichiers d’un groupe ou d’une équipe, il est important de considérer qu’ils peuvent être partagés avec des utilisateurs qui ne sont pas membres du groupe ou de l’équipe. Vous souhaitez peut-être leur communiquer les changements qui s’annoncent.
 
@@ -243,7 +243,7 @@ Vous pouvez également utiliser un outil tiers pour migrer la liste entre les si
 
 Les contenus Wiki dans les canaux d’équipe sont stockés dans un fichier au format HTML dans une bibliothèque dédiée du site SharePoint associé. Ils ne peuvent pas être facilement exportés et importés dans un autre wiki de canal, mais peuvent être convertis en fichier HTML et ouverts en tant que page web.
 
-## <a name="microsoft-stream"></a>Microsoft Stream
+## <a name="microsoft-stream"></a>Microsoft Stream
 
 Comme Power Automate, les vidéos dans Stream associées à un groupe ou à une équipe ne sont pas réellement détenus par le groupe et ne sont pas supprimées lorsque le groupe est supprimé. Les vidéos dans Stream sont la propriété de la personne qui a téléchargé ou créé la vidéo, même si elle ajoute des utilisateurs ou des groupes en tant que propriétaires. Les réunions enregistrées dans un canal Teams sont la propriété de la personne qui a démarré l’enregistrement.
 

@@ -13,12 +13,12 @@ ms.collection:
 description: Découvrez comment passer en revue les messages signalés et envoyer des commentaires à vos utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769124"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893727"
 ---
 # <a name="admin-review-for-reported-messages"></a>Révision par l’administrateur des messages signalés
 
@@ -39,19 +39,21 @@ Vous ne pourrez marquer et avertir les utilisateurs des résultats de la révisi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Pour modifier la configuration des soumissions d’utilisateurs, vous devez être membre de l’un des groupes de rôles suivants :
-  - Administrateur de la gestion de l’organisation ou de la sécurité [dans Microsoft 365 de sécurité.](permissions-microsoft-365-security-center.md)
-  - Gestion de [l’organisation Exchange Online](/Exchange/permissions-exo/permissions-exo).
+- Vous ouvrez le portail Microsoft 365 Defender sur <https://security.microsoft.com/> . Pour aller directement à la page **Soumissions,** utilisez <https://security.microsoft.com/reportsubmission> .
 
-- Vous aurez également besoin d’accéder à la Exchange Online PowerShell. Si le compte que vous essayez d’utiliser n’a pas accès à Exchange Online PowerShell, vous recevrez une erreur qui indique spécifier une adresse de messagerie dans *votre domaine.* Pour plus d’informations sur l’activation ou la désactivation de l’accès Exchange Online PowerShell, consultez les rubriques suivantes :
+- Pour modifier la configuration des soumissions d’utilisateurs, vous devez être membre de l’un des groupes de rôles suivants :
+  - Administrateur de la gestion de l’organisation ou de la sécurité [dans Microsoft 365 portail Defender](permissions-microsoft-365-security-center.md).
+  - Gestion de [l’organisation Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
+
+- Vous aurez également besoin d’accéder à Exchange Online PowerShell. Si le compte que vous essayez d’utiliser n’a pas accès à Exchange Online PowerShell, vous recevrez une erreur qui indique spécifier une adresse de messagerie dans *votre domaine.* Pour plus d’informations sur l’activation ou la désactivation de l’accès Exchange Online PowerShell, consultez les rubriques suivantes :
   - [Activer ou désactiver l’accès à Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Règles d’accès client Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>Configurer les messages utilisés pour avertir les utilisateurs
 
-1. Dans le centre [Microsoft 365 de sécurité,](../defender/overview-security-center.md)allez à **Stratégies &** Stratégies de menace \>  \> **Stratégies De l’utilisateur a signalé les paramètres de message**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Others** section User reported \> **message settings**.
 
-2. Si vous souhaitez spécifier le nom complet  de l’expéditeur, cochez la case Spécifier l’adresse de messagerie Office 365 à utiliser en tant qu’expéditeur dans la section **Notifications** par courrier électronique pour les résultats de l’avis de l’administrateur, puis entrez le nom que vous souhaitez utiliser. Il s’agit de l’adresse de messagerie qui sera visible dans Outlook et où les réponses seront envoyés.
+2. Dans la page Soumissions d’utilisateurs, si vous souhaitez  spécifier le nom complet de l’expéditeur, cochez la case Spécifier l’adresse de messagerie Office 365 à utiliser en tant qu’expéditeur dans la section **Notifications** par courrier électronique pour les résultats de l’avis de l’administrateur, puis entrez le nom que vous souhaitez utiliser.  Il s’agit de l’adresse de messagerie qui sera visible dans Outlook et où les réponses seront envoyés.
 
 3. Si vous souhaitez personnaliser l’un des modèles, cliquez sur **Personnaliser la notification par courrier électronique.** Dans ce flyout, vous serez en mesure de personnaliser uniquement les paramètres suivants :
     - Hameçonnage

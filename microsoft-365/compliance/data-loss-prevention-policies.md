@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: documents de référence sur la protection contre la perte de données
-ms.openlocfilehash: 7e8494c0199d62951e7b5f01bb1b65e90e8584f2
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878159"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572560"
 ---
 # <a name="data-loss-prevention-reference"></a>Référence de protection contre la perte de données
  
@@ -112,7 +112,7 @@ Si vous optez pour l’inclusion ou l’exclusion de sites SharePoint spécifiqu
 Si vous choisissez d’inclure ou d’exclure des comptes ou groupes OneDrive spécifiques, une stratégie DLP peut contenir au plus 100 comptes d’utilisateurs ou 50 groupes pour l’inclusion ou l’exclusion.
 
 > [!NOTE]
-> OneDrive’utilisation de comptes d’utilisateurs ou de groupes pour l’portée des stratégies d’entreprise est en prévisualisation publique. 
+> L’élaboration de l’étendue de la stratégie OneDrive Entreprise à l’aide de comptes ou de groupes est en préversion publique. Au cours de cette phase, vous pouvez inclure ou exclure des comptes d’utilisateurs et des groupes dans le cadre d’une stratégie DLP. Les inclusions et exclusions dans le cadre de la même stratégie ne sont pas prises en charge.
   
 ### <a name="rules"></a>Règles
 
@@ -520,7 +520,7 @@ Au fur et à mesure de l’ajout ou de la modification de documents dans ses sit
 La protection contre la perte de données évalue le contenu pouvant être indexé. Pour plus d’informations sur les types de fichiers analysés par défaut, consultez la rubrique [Extensions de nom de fichier et types de fichier analysés par défaut dans SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Pour empêcher le partage de documents avant que les stratégies DLP n’ont eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué tant que son contenu n’a pas été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default). 
+> Afin d’empêcher le partage de documents avant que les stratégies DLP n’ont eu la possibilité de les analyser, le partage de nouveaux fichiers dans SharePoint peut être bloqué jusqu’à ce que son contenu ait été indexé. Pour plus d’informations, consultez [Marquer les nouveaux fichiers comme sensibles par défaut](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Évaluation des stratégies dans Exchange Online, Outlook et Outlook sur le web
 
@@ -542,7 +542,7 @@ Lorsque vous créez une stratégie DLP qui inclut Microsoft Teams comme emplacem
  
 ## <a name="permissions"></a>Autorisations
 
-Par défaut, les administrateurs globaux, les administrateurs de sécurité et les administrateurs de conformité ont accès à la création et à l’application d’une stratégie DLP. Les autres membres de votre équipe de conformité qui créeront des stratégies DLP ont besoin d’autorisations pour le Centre de conformité &amp; de sécurité. Par défaut, votre administrateur client aura accès à cet emplacement et peut accorder aux responsables de la mise en conformité et aux autres personnes l’accès au Centre de conformité de sécurité, sans leur donner toutes les autorisations d’un administrateur &amp; client. Pour ce faire, nous vous recommandons de :
+Les membres de votre équipe de mise en conformité qui créeront des stratégies DLP ont besoin des autorisations d’accès au Centre de conformité et de sécurité. Par défaut, votre administrateur de client a accès à cet emplacement et peut autoriser des agents de conformité et d’autres personnes à accéder au Centre de sécurité et conformité, sans pour autant leur octroyer toutes les autorisations d’un administrateur de client. Pour cela, nous vous recommandons de :
   
 1. Créer un groupe dans Microsoft 365 et d’y ajouter des responsables de la mise en conformité.
     

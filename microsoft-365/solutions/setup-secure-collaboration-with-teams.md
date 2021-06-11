@@ -1,5 +1,5 @@
 ---
-title: Configurer la collaboration sécurisée avec Microsoft 365
+title: Configurer la collaboration sécurisée avec Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -55,7 +55,7 @@ Les informations telles que les brochures marketing sont destinées à un partag
 
 Ces mêmes brochures marketing, en cours de développement, peuvent uniquement être partagées au sein de l’organisation. Dans ce cas, les paramètres de partage par défaut Teams sont peut-être suffisants.
 
-Les informations sur un nouveau produit en cours de développement peuvent être considérées comme sensibles, même au sein de l’organisation. Un degré de protection plus élevé peut être approprié dans ce cas. Vous pouvez restreindre l’accès à ces informations aux membres d’une équipe spécifique, par exemple. Selon le projet, vous devrez peut-être collaborer avec des personnes extérieures à votre organisation, telles qu’un fournisseur ou une organisation partenaire.
+Les informations sur un nouveau produit en cours de développement peuvent être considérées comme sensibles, même au sein de l’organisation. Un niveau de protection plus élevé peut être approprié dans ce cas. Vous pouvez restreindre l’accès à ces informations aux membres d’une équipe spécifique, par exemple. Selon le projet, vous devrez peut-être collaborer avec des personnes extérieures à votre organisation, telles qu’un fournisseur ou une organisation partenaire.
 
 Les informations qui sont essentielles au succès de votre organisation ou qui ont des exigences strictes en matière de sécurité ou de conformité peuvent nécessiter des niveaux de protection encore plus élevés.
 
@@ -67,9 +67,9 @@ Pour configurer la collaboration sécurisée, vous utilisez ces fonctionnalités
 
 | Produit ou composant | Fonctionnalité | Licence |
 |:-------|:-----|:-------|
-| Microsoft Defender pour Office 365 | Pièces jointes sécurisées pour SPO, OneDrive et Teams ; Documents sécurisés ; Liens sécurisés pour Teams    | Microsoft 365 E1, E3 et E5 |
-| SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage invité de site | Microsoft 365 E1, E3 et E5 |
-| Microsoft Teams   | Accès invité, équipes privées, canaux privés | Microsoft 365 E1, E3 et E5 |
+| Microsoft Defender pour Office 365 | Pièces jointes sécurisées pour SPO, OneDrive et Teams ; Documents sécurisés ; Liens sécurisés pour Teams    | Microsoft 365 E1, E3 et E5 |
+| SharePoint    | Stratégies de partage de sites et de fichiers, autorisations de partage de site, liens de partage, demandes d’accès, paramètres de partage d’invités de site | Microsoft 365 E1, E3 et E5 |
+| Microsoft Teams   | Accès invité, équipes privées, canaux privés | Microsoft 365 E1, E3 et E5 |
 | Conformité Microsoft 365  | Étiquettes de confidentialité    | Microsoft 365 E3 et E5 |
 
 ### <a name="collaboration-governance"></a>Gouvernance de la collaboration
@@ -120,7 +120,7 @@ Ces ressources vous aideront à commencer à définir votre environnement pour c
 - [Collaborez sur un site pour](collaborate-in-site.md) collaborer avec des invités dans un site SharePoint site.
 - [Collaborez en équipe pour](collaborate-as-team.md) collaborer avec des invités d’une équipe.
 
-En fonction de la sensibilité des informations partagées, vous pouvez ajouter des dispositifs de protection pour empêcher le partage. Ces ressources vous aideront à configurer les protections dont vous avez besoin pour votre organisation :
+En fonction du niveau de sensibilité des informations partagées, vous pouvez ajouter des dispositifs de protection pour empêcher le partage. Ces ressources vous aideront à configurer les protections dont vous avez besoin pour votre organisation :
 
 - [Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés](best-practices-anonymous-sharing.md)
 - [Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation](share-limit-accidental-exposure.md)
@@ -134,20 +134,20 @@ Si vous avez un projet majeur avec une organisation partenaire, vous pouvez util
 
 Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les fonctionnalités de collaboration, de gouvernance et d’identité dans Teams et SharePoint.
 
-#### <a name="teams"></a>Équipes
+#### <a name="teams"></a>Teams
 
 |Formation :|Gérer la collaboration en équipe avec Microsoft Teams|
 |:---|:---|
-|![Teams de formation sur la collaboration](../media/manage-team-collaboration-with-microsoft-teams.svg)|Gérer la collaboration en équipe avec Microsoft Teams vous présente les fonctionnalités et possibilités de Microsoft Teams, le Hub central pour la collaboration en équipe dans Microsoft 365. Vous découvrirez comment utiliser Teams pour simplifier le travail en équipe et la communication au sein de votre organisation, à la fois en local et hors site, sur un large éventail d’appareils (des bureaux aux tablettes et téléphones), tout en tirant parti des fonctionnalités enrichies des applications Office 365. Vous pourrez ainsi comprendre comment Teams fournit un environnement complet et flexible pour la collaboration entre les applications et les appareils. Cette rubrique d’apprentissage peut vous aider à vous préparer à la certification Certification Microsoft 365 : Administrateur Teams associé.<br><br>2 h 17 min - Parcours d’apprentissage - 5 modules|
+|![Teams de formation sur la collaboration](../media/manage-team-collaboration-with-microsoft-teams.svg)|Gérer la collaboration en équipe avec Microsoft Teams vous présente les fonctionnalités et possibilités de Microsoft Teams, le Hub central pour la collaboration en équipe dans Microsoft 365. Vous découvrirez comment utiliser Teams pour simplifier le travail en équipe et la communication au sein de votre organisation, à la fois en local et hors site, sur un large éventail d’appareils (des bureaux aux tablettes et téléphones), tout en tirant parti des fonctionnalités enrichies des applications Office 365. Vous pourrez ainsi comprendre comment Teams fournit un environnement complet et flexible pour la collaboration entre les applications et les appareils. Cette rubrique d’apprentissage peut vous aider à vous préparer à la certification Certification Microsoft 365 : Administrateur Teams associé.<br><br>2 h 17 min - Parcours d’apprentissage - 5 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
 
 #### <a name="sharepoint"></a>SharePoint
 
-|Formation :|Collaborer avec SharePoint dans Microsoft 365|
+|Formation :|Collaborer avec SharePoint dans Microsoft 365|
 |:---|:---|
-|![SharePoint de formation](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Gérer le contenu partagé avec Microsoft SharePoint vous présente les fonctionnalités de SharePoint, ainsi que son fonctionnement avec Microsoft 365. Vous découvrirez les différents types de sites SharePoint, notamment les sites hub, ainsi que la protection des informations, la création de rapports et la surveillance. En outre, vous apprendrez à utiliser le partage de fichiers et de dossiers SharePoint pour optimiser la collaboration, à partager des fichiers en externe et à gérer des sites SharePoint dans le Centre d’administration SharePoint. Cette rubrique d’apprentissage peut vous aider à vous préparer à la certification Certification Microsoft 365 : Administrateur de travail d’équipe associé.<br><br>1 h 14 min - Parcours d’apprentissage - 4 modules|
+|![icône SharePoint formation](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Gérer le contenu partagé avec Microsoft SharePoint vous présente les fonctionnalités de SharePoint, ainsi que son fonctionnement avec Microsoft 365. Vous découvrirez les différents types de sites SharePoint, notamment les sites hub, ainsi que la protection des informations, la création de rapports et la surveillance. En outre, vous apprendrez à utiliser le partage de fichiers et de dossiers SharePoint pour optimiser la collaboration, à partager des fichiers en externe et à gérer des sites SharePoint dans le Centre d’administration SharePoint. Cette rubrique d’apprentissage peut vous aider à vous préparer à la certification Certification Microsoft 365 : Administrateur de travail d’équipe associé.<br><br>1 h 14 min - Parcours d’apprentissage - 4 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
@@ -165,16 +165,16 @@ Ces modules de formation de Microsoft Learn peuvent vous aider à découvrir les
 
 |Formation :|Protégez les identités et l’accès avec Azure Active Directory|
 |:---|:---|
-|![Icône De formation identité et accès](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>2 h 52 min - Parcours d’apprentissage - 6 modules|
+|![Icône de formation sur les identités et l’accès](../media/protect-identity-and-access-with-microsoft-365.svg)|Le parcours d’apprentissage Identité et accès aborde les dernières technologies de gestion des identités et accès, ainsi que les outils de renforcement de l’authentification, et donne des conseils sur la protection des identités au sein de votre organisation. Les technologies de gestion des identités et accès de Microsoft vous permettent de sécuriser l’identité de votre organisation (locale ou dans le cloud) et permettent à vos utilisateurs de travailler en toute sécurité où qu’ils se trouvent. Cette rubrique d’apprentissage peut vous aider à vous préparer aux certifications Certification Microsoft 365 : Administrateur de sécurité associé et Certification Microsoft 365 : Administration entreprise expert.<br><br>2 h 52 min - Parcours d’apprentissage - 6 modules|
 
 > [!div class="nextstepaction"]
 > [Démarrer >](/learn/modules/m365-identity-overview/introduction/)
 
 ## <a name="training-for-end-users"></a>Formation pour les utilisateurs finaux
 
-Ces modules de formation peuvent aider vos utilisateurs à utiliser Teams, des groupes et des SharePoint pour la collaboration Microsoft 365.
+Ces modules de formation peuvent aider vos utilisateurs à utiliser Teams, des groupes et des SharePoint pour la collaboration dans Microsoft 365.
 
-|Équipes|SharePoint|
+|Teams|SharePoint|
 |:---|:---|
 |![Configurer et personnaliser l’icône de formation de votre équipe](../media/set-up-customize-team-training.png)<br>**[Configurer et personnaliser votre équipe](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint de formation de partage et de synchronisation](../media/sharepoint-share-sync-training.png)<br>**[Partager et synchroniser](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
 |![Teams l’icône de formation télécharger et rechercher des fichiers](../media/smc-teams-upload-find-files-training.png)<br>**[Télécharger et rechercher des fichiers](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
@@ -206,8 +206,8 @@ Lorsque vous êtes prêt à déployer cette solution, poursuivez les étapes sui
 
 ## <a name="see-also"></a>Voir aussi
 
-[Documentation de sécurité Office 365](../security/index.yml)
+[Documentation de sécurité Office 365](../security/index.yml)
 
 [Documentation sur la conformité dans Microsoft 365](../compliance/index.yml)
 
-[Bienvenue dans Microsoft Teams](/MicrosoftTeams/Teams-overview)
+[Bienvenue dans Microsoft Teams](/MicrosoftTeams/Teams-overview)

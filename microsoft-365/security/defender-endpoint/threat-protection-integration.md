@@ -1,6 +1,6 @@
 ---
-title: Intégrer Microsoft Defender for Endpoint à d’autres solutions Microsoft
-description: Découvrez comment Microsoft Defender pour endpoint s’intègre à d’autres solutions Microsoft, notamment Microsoft Defender pour l’identité et Azure Defender.
+title: Intégrer Microsoft Defender pour point de terminaison à d’autres solutions Microsoft
+description: Découvrez comment Microsoft Defender pour le point de terminaison s’intègre à d’autres solutions Microsoft, notamment Microsoft Defender pour l’identité et Azure Defender.
 author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8973a78787345532055161507e2d30f75b3b2cf1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844969"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878567"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender pour le point de terminaison et d’autres solutions Microsoft
 
@@ -36,10 +36,10 @@ ms.locfileid: "52844969"
 
 ## <a name="integrate-with-other-microsoft-solutions"></a>Intégration à d’autres solutions Microsoft
 
-Microsoft Defender pour le point de terminaison s’intègre directement à différentes solutions Microsoft.
+Microsoft Defender pour point de terminaison s’intègre directement à différentes solutions Microsoft.
 
 ### <a name="azure-defender"></a>Azure Defender
-Microsoft Defender pour le point de terminaison fournit une solution de protection serveur complète, notamment des fonctionnalités protection évolutive des points de terminaison (PEPT) sur Windows serveurs.
+Microsoft Defender pour endpoint fournit une solution de protection serveur complète, notamment des fonctionnalités protection évolutive des points de terminaison (PEPT) sur Windows serveurs.
 
 ### <a name="azure-sentinel"></a>Azure Sentinel
 Le connecteur Microsoft Defender pour point de terminaison vous permet de diffuser des alertes à partir de Microsoft Defender pour Endpoint dans Azure Sentinel. Cela vous permettra d’analyser plus en détail les événements de sécurité au sein de votre organisation et de créer des manuels pour obtenir une réponse efficace et immédiate.
@@ -66,9 +66,9 @@ Les activités suspectes sont des processus en cours d’exécution dans un cont
 L’intégration Skype Entreprise’analyse permet aux analystes de communiquer avec un utilisateur ou un propriétaire d’appareil potentiellement compromis par le biais d’un bouton simple à partir du portail.
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-Avec Microsoft 365 Defender, Microsoft Defender pour point de terminaison et diverses solutions de sécurité Microsoft constituent une suite de défense d’entreprise unifiée avant et après la violation qui s’intègre en mode natif à travers le point de terminaison, l’identité, le courrier électronique et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées. 
+Avec Microsoft 365 Defender, Microsoft Defender pour le point de terminaison et diverses solutions de sécurité Microsoft constituent une suite de défense d’entreprise unifiée avant et après la violation qui s’intègre en mode natif à travers les points de terminaison, les identités, les e-mails et les applications pour détecter, empêcher, examiner et répondre automatiquement aux attaques sophistiquées. 
  
-[En savoir plus sur Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)
+[En savoir plus sur Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>Voir aussi

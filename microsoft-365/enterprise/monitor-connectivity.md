@@ -1,5 +1,5 @@
 ---
-title: Surveiller la connectivité Microsoft 365
+title: Surveiller la connectivité Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -27,7 +27,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52538806"
 ---
-# <a name="monitor-microsoft-365-connectivity"></a>Surveiller la connectivité Microsoft 365
+# <a name="monitor-microsoft-365-connectivity"></a>Surveiller la connectivité Microsoft 365
 
 Une fois que vous avez déployé Microsoft 365, vous pouvez maintenir Microsoft 365 à l’aide de certains des outils et techniques ci-dessous. Vous souhaiterez comprendre les [](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) instructions officielles relatives à l’état et à la continuité des services, ainsi que nos meilleures pratiques d’utilisation Microsoft 365 sur [un réseau lent.](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) Vous pouvez également récupérer l’application Microsoft 365 [admin](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/) et mettre en signet notre Microsoft 365 entreprise [- Aide de l’administrateur.](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791)
   
@@ -35,7 +35,7 @@ Une fois que vous avez déployé Microsoft 365, vous pouvez maintenir Microsoft 
 
 |||
 |:-----|:-----|
-|**Recevoir des notifications de nouveaux points Microsoft 365 de terminaison** <br/> |Si vous gérez des points de terminaison [Microsoft 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), vous souhaiterez recevoir des notifications lorsque nous publions de nouveaux points de terminaison, vous pouvez vous abonner à notre flux RSS à l’aide de votre lecteur RSS favori. Voici comment vous abonner [via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) ou vous pouvez recevoir les mises à jour de flux RSS par [courrier électronique.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
+|**Recevoir des notifications de nouveaux points Microsoft 365 de terminaison** <br/> |Si vous gérez des points de terminaison [Microsoft 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), vous souhaiterez recevoir des notifications lorsque nous publions de nouveaux points de terminaison, vous pouvez vous abonner à notre flux RSS à l’aide de votre lecteur RSS favori. Voici comment vous abonner [via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) ou les mises à jour de flux RSS peuvent vous [être envoyés par courrier électronique.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
 |**Utiliser System Center pour surveiller les Microsoft 365** <br/> |Si vous utilisez Microsoft System Center, vous pouvez télécharger le pack d’administration System Center pour [Office 365](https://www.microsoft.com/download/details.aspx?id=43708) commencer la surveillance Microsoft 365 aujourd’hui. Pour obtenir des instructions plus détaillées, consultez le guide des opérations du pack d’administration. <br/> |
 |**Surveiller l’état d’Azure ExpressRoute** <br/> |Si vous vous connectez à Microsoft 365 à l’aide d’Azure ExpressRoute pour Microsoft 365, vous devez vous assurer que vous utilisez à la fois le tableau de bord d’état du service Microsoft 365 et Azure Réduisant le temps de dépannage avec l’état des ressources [Azure](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
 |**Utiliser Azure AD Connect Health avec AD FS** <br/> |Si vous utilisez AD FS pour Sign-On unique avec Microsoft 365, vous pouvez commencer à utiliser Azure AD Connecter Health pour surveiller votre [infrastructure AD FS.](/azure/active-directory/hybrid/how-to-connect-health-adfs)  <br/> |
@@ -51,6 +51,6 @@ Voici un lien que vous pouvez utiliser pour revenir : [https://aka.ms/monitorco
   
 [Planification réseau et optimisation des performances pour Microsoft 365](network-planning-and-performance.md)
   
-[Microsoft 365'intégration aux environnements locaux](microsoft-365-integration.md)
+[Microsoft 365'intégration avec les environnements locaux](microsoft-365-integration.md)
   
 [Gestion Microsoft 365 de terminaison](managing-office-365-endpoints.md)

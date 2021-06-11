@@ -40,7 +40,7 @@ La gestion des licences pour core eDiscovery nécessite l’abonnement d’organ
 
   - Une licence Microsoft 365 E3 ou Office 365 E3 ou supérieure
 
-   OR
+   OU
 
   - Office 365 Licence E1 avec une licence Exchange Online Plan 2 ou Archivage Exchange Online licence de modules logiciels
 
@@ -58,7 +58,7 @@ Pour plus d’informations sur la gestion des licences :
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Étape 2 : Attribuer des autorisations eDiscovery
 
-Pour accéder à Core eDiscovery ou être ajouté en tant que membre d’un cas core eDiscovery, un utilisateur doit avoir les autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & conformité de Office 365. Les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery principaux. Ils peuvent ajouter et supprimer des membres, placer une mise en attente eDiscovery sur les utilisateurs, créer et modifier des recherches et exporter du contenu à partir d’un cas core eDiscovery.
+Pour accéder à Core eDiscovery ou être ajouté en tant que membre d’un cas core eDiscovery, un utilisateur doit avoir les autorisations appropriées. Plus précisément, un utilisateur doit être ajouté en tant que membre du groupe de rôles Gestionnaire eDiscovery dans le Centre de sécurité & conformité Office 365. Les membres de ce groupe de rôles peuvent créer et gérer des cas eDiscovery principaux. Ils peuvent ajouter et supprimer des membres, placer une mise en attente eDiscovery sur les utilisateurs, créer et modifier des recherches et exporter du contenu à partir d’un cas core eDiscovery.
 
 Pour ajouter des utilisateurs au groupe de rôles Gestionnaire eDiscovery, complétez les étapes suivantes :
 
@@ -80,9 +80,9 @@ Pour ajouter des utilisateurs au groupe de rôles Gestionnaire eDiscovery, compl
 
 Il existe deux sous-groupes dans le groupe de rôles Gestionnaire eDiscovery. Ces sous-groupes ont différents rôles.
 
-- **Gestionnaire eDiscovery :** peut afficher et gérer les cas eDiscovery principaux qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas un deuxième gestionnaire eDiscovery en tant que membre de ce cas, le deuxième gestionnaire eDiscovery ne sera pas en mesure d’afficher ou d’ouvrir le cas sur la page Principale eDiscovery dans le centre de conformité. En règle générale, la plupart des membres de votre organisation peuvent être ajoutés au sous-groupe gestionnaire eDiscovery.
+- **Gestionnaire eDiscovery :** peut afficher et gérer les cas eDiscovery principaux qu’ils créent ou dont ils sont membres. Si un autre gestionnaire eDiscovery crée un cas mais n’ajoute pas un deuxième gestionnaire eDiscovery en tant que membre de ce cas, le deuxième gestionnaire eDiscovery ne sera pas en mesure d’afficher ou d’ouvrir le cas sur la page eDiscovery principale dans le centre de conformité. En règle générale, la plupart des membres de votre organisation peuvent être ajoutés au sous-groupe gestionnaire eDiscovery.
 
-- **Administrateur eDiscovery**: peut effectuer toutes les tâches de gestion des cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
+- **Administrateur eDiscovery**: peut effectuer toutes les tâches de gestion des cas qu’un gestionnaire eDiscovery peut effectuer. De plus, un administrateur de découverte électronique peut :
 
   - Afficher tous les cas répertoriés sur la page eDiscovery principale.
   
@@ -104,7 +104,7 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser Core e
 
 3. Dans la page **Core eDiscovery,** cliquez **sur Créer un cas.**
 
-4. Dans la page **de volant Nouveau** cas, nommez le cas (obligatoire), puis tapez une description facultative. Le nom de cas doit être unique dans votre organisation.
+4. Dans la page **du nouveau volant de** cas, nommez le cas (obligatoire), puis tapez une description facultative. Le nom de cas doit être unique dans votre organisation.
 
 5. Cliquez **sur Enregistrer** pour créer le cas.
 
@@ -114,7 +114,7 @@ L’étape suivante consiste à créer un cas et à commencer à utiliser Core e
 
 Si vous créez un cas à l’étape 3 et que vous êtes la seule personne à utiliser le cas, vous n’avez pas besoin d’effectuer cette étape. Vous pouvez commencer à utiliser le cas pour créer des conserves eDiscovery, rechercher du contenu et exporter des résultats de recherche. Effectuez cette étape si vous souhaitez accorder à d’autres utilisateurs (ou groupes de rôles) l’accès au cas.
 
-1. Dans la page **Core eDiscovery** du centre de conformité Microsoft 365, cliquez sur le nom du cas à ajouter.
+1. Dans la page **Core eDiscovery** du centre Microsoft 365 conformité, cliquez sur le nom du cas à ajouter.
 
 2. Dans la page d’accueil du cas, sélectionnez **l’onglet Paramètres,** puis sélectionnez Autorisations & **accès.**
 
@@ -128,7 +128,7 @@ Si vous créez un cas à l’étape 3 et que vous êtes la seule personne à uti
 
 ## <a name="explore-the-core-ediscovery-workflow"></a>Explorer le flux de travail eDiscovery principal
 
-Pour commencer à utiliser la découverte électronique principale, voici un flux de travail simple qui vous permet de créer des holds eDiscovery pour les personnes qui vous intéressent, de rechercher du contenu pertinent pour votre enquête, puis d’exporter ces données pour une révision plus approfondie. Dans chacune de ces étapes, nous allons également mettre en évidence certaines fonctionnalités eDiscovery principales étendues que vous pouvez explorer.
+Pour commencer à utiliser la découverte électronique principale, voici un flux de travail simple qui vous permet de créer des holds eDiscovery pour les personnes qui vous intéressent, de rechercher du contenu pertinent pour votre examen, puis d’exporter ces données pour une révision plus approfondie. Dans chacune de ces étapes, nous allons également mettre en évidence certaines fonctionnalités eDiscovery principales étendues que vous pouvez explorer.
 
 ![Flux de travail eDiscovery principal](../media/CoreEdiscoveryWorkflow.png)
 

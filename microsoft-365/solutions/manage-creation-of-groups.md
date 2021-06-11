@@ -29,7 +29,7 @@ ms.locfileid: "52539178"
 
 Par défaut, tous les utilisateurs peuvent créer Microsoft 365 groupes. Il s’agit de l’approche recommandée, car elle permet aux utilisateurs de commencer à collaborer sans nécessiter l’assistance de l’équipe technique.
 
-Si votre entreprise exige que vous restreignez les personnes qui peuvent créer des groupes, vous pouvez limiter la création de groupes Microsoft 365 aux membres d’un groupe Microsoft 365 ou d’un groupe de sécurité particulier.
+Si votre entreprise exige que vous restreignez les personnes qui peuvent créer des groupes, vous pouvez limiter la création de groupes Microsoft 365 aux membres d’un groupe Microsoft 365 particulier ou d’un groupe de sécurité.
 
 Si vous êtes préoccupé par le fait que les utilisateurs créent des équipes ou des groupes qui ne sont pas conformes à vos normes professionnelles, envisagez de demander aux utilisateurs de terminer un cours de formation, puis de les ajouter au groupe d’utilisateurs autorisés.
 
@@ -38,8 +38,8 @@ Lorsque vous limitez les personnes autorisées à créer un groupe, cela affecte
 - Outlook
 - SharePoint
 - Yammer
-- Microsoft Teams
-- Microsoft Stream
+- Microsoft Teams
+- Microsoft Stream
 - Planificateur
 - Power BI (classique)
 - Project pour le web / Feuille de route
@@ -52,7 +52,7 @@ Les étapes de cet article n’empêchent pas les membres de certains rôles de 
 - Rédacteurs d’annuaire : Azure AD
 - SharePoint Administrateur : SharePoint admin center, Azure AD
 - Teams Administrateur de service : Teams admin center, Azure AD
-- Administrateur utilisateur : Microsoft 365 admin center, Azure AD
+- Administrateur utilisateur : centre Microsoft 365'administration, Azure AD
 
 Si vous êtes membre de l’un de ces rôles, vous pouvez créer des groupes Microsoft 365 pour les utilisateurs restreints, puis affecter l’utilisateur en tant que propriétaire du groupe.
 
@@ -98,7 +98,7 @@ Vous devez utiliser la version d’aperçu de [Azure Active Directory PowerShell
 
 Copiez le script ci-dessous dans un éditeur de texte, tel que Bloc-notes, ou le [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-Remplacez *\<GroupName\>* par le nom du groupe que vous avez créé. Par exemple :
+Remplacez *\<GroupName\>* par le nom du groupe que vous avez créé. Par exemple :
 
 `$GroupName = "Group Creators"`
 
@@ -152,7 +152,7 @@ Si vous souhaitez désactiver la restriction de création de groupe et autoriser
 
 ## <a name="step-3-verify-that-it-works"></a>Étape 3 : vérifier le bon fonctionnement
 
-L’application des modifications peut prendre trente minutes ou plus. Vous pouvez vérifier les nouveaux paramètres en suivant les règles suivantes :
+L’application des modifications peut prendre 30 minutes ou plus. Vous pouvez vérifier les nouveaux paramètres en suivant les règles suivantes :
 
 1. Connectez-vous Microsoft 365 avec un compte d’utilisateur d’une personne qui ne doit PAS avoir la possibilité de créer des groupes. Autrement dit, ils ne sont pas membres du groupe que vous avez créé ou administrateur.
 
@@ -162,7 +162,7 @@ L’application des modifications peut prendre trente minutes ou plus. Vous pouv
 
 4. Vous devez obtenir un message vous messageant que la création de groupe et de plan est désactivée.
 
-Recommencez la même procédure avec un membre du groupe.
+Essayez à nouveau la même procédure avec un membre du groupe.
 
 > [!NOTE]
 > Si les membres du groupe ne sont pas en mesure de créer des groupes, vérifiez qu’ils ne sont pas bloqués par le biais de [leur stratégie OWA boîte aux lettres.](/powershell/module/exchange/set-owamailboxpolicy)
