@@ -21,22 +21,22 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - commerce_billing
-description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
+description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: 3c41e52803c78cc687134c6c68899466236ceca3
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7e37e296f37583e1fc0b2fc3474609e11c5a5e1f
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331909"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888348"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
-Cet article s’adresse aux personnes disposant d’un abonnement Microsoft 365 pour les entreprises.
+Cet article s’adresse aux personnes disposant d’un abonnement Microsoft 365 pour les entreprises.
   
 Si vous avez besoin d’aide pour identifier les frais qui apparaissent sur votre facture, voir [Comprendre votre facture](understand-your-invoice2.md) pour bénéficier d’informations détaillées.
   
-**Vous rencontrez un problème avec votre facture ?** [Contacter le support technique pour les produits d’entreprise](../../business-video/get-help-support.md).
+**Vous rencontrez un problème avec votre facture ?** [Contacter le support technique pour les produits d’entreprise](../../business-video/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -77,13 +77,13 @@ Vous pouvez soumettre votre demande Fapiao à notre [système de gestion Fapiao]
 
 > [!NOTE]
 >
-> Un compte enregistré est nécessaire pour accéder au [système de gestion Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465). Si vous n’avez pas encore configuré de compte, consultez [Demander un fapiao pour Office 365 géré par 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
+> Un compte enregistré est nécessaire pour accéder au [système de gestion Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465). Si vous n’avez pas encore configuré de compte, consultez [Demander un fapiao pour Office 365 géré par 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>Recevoir une copie de votre relevé de facturation par courrier électronique
 
-Vous pouvez envoyer une copie de votre relevé de facturation par courrier électronique. Dans ce cas :
+Vous pouvez envoyer une copie de votre relevé de facturation par courrier électronique. Dans ce cas :
 
 - Un courrier électronique est envoyé aux adresses de courrier principale et secondaire de chaque personne mentionnée comme destinataire de la notification.
 - Vous recevez deux courriers distincts : un premier vous informant que votre facture est prête et contenant des instructions de connexion au Centre d'administration pour la consulter, et un deuxième incluant le relevé de facturation en pièce jointe.
@@ -91,9 +91,9 @@ Vous pouvez envoyer une copie de votre relevé de facturation par courrier élec
 ### <a name="to-receive-your-billing-statement-in-email"></a>Pour recevoir votre relevé de facturation par e-mail
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-    - Si vous utilisez Office 365 Allemagne, accédez à la page des <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifications de facturation</a>.
-    - Si vous utilisez Office 365 géré par 21Vianet, accédez à la page des <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifications de facturation</a>.
-1. Sous **Voulez-vous recevoir le relevé de facturation par courrier électronique ?**, positionnez le bouton bascule sur **Activer**.
+    - Si vous utilisez Office 365 Allemagne, accédez à la page des <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notifications de facturation</a>.
+    - Si vous utilisez Office 365 géré par 21Vianet, accédez à la page des <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notifications de facturation</a>.
+1. Sous **Voulez-vous recevoir le relevé de facturation par courrier électronique ?**, positionnez le bouton bascule sur **Activer**.
 
     Vous pouvez arrêter de recevoir les courriers électroniques incluant les relevés de facturation à tout moment en positionnant le bouton bascule sur **Désactiver**.
 
@@ -105,4 +105,5 @@ Si vous avez un solde et que vous souhaitez le payer, vous pouvez le faire en li
 
 [Payer sur facture, par carte de crédit ou par compte bancaire](pay-for-your-subscription.md) (article) \
 [Gestion des modes de paiement](manage-payment-methods.md) (article) \
+[Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
 [Options de paiement de Minecraft: Education Edition](/education/windows/school-get-minecraft) (article)
