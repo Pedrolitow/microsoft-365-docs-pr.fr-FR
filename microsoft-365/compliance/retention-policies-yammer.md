@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 1b99d0915cfb159f821818fb1425d7191a011351
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: a8d047845b986029d393816982e6bede3db71485
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710705"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861562"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Découvrir la rétention pour Yammer
 
@@ -55,6 +55,9 @@ Les messages Yammer ne sont pas affectés par les stratégies de rétention conf
 > Si un utilisateur est inclus dans une stratégie de rétention active qui conserve les données Yammer et que vous supprimez une boîte aux lettres d’un utilisateur inclus dans cette stratégie, la boîte aux lettres est convertie en [boîte aux lettres inactive](inactive-mailboxes-in-office-365.md) pour conserver les données Yammer. Si vous n’avez pas besoin de conserver ces données Yammer pour l’utilisateur, excluez son compte de la stratégie de rétention avant de supprimer sa boîte aux lettres.
 
 Une fois qu'une politique de rétention est configurée pour les messages Yammer, une tâche de temporisation du service Exchange évalue périodiquement les éléments du dossier caché où sont stockés ces messages Yammer. Le travail de chronométrage prend jusqu'à sept jours. Lorsque ces éléments ont expiré leur période de rétention, ils sont déplacés vers le dossier SubstrateHolds - un autre dossier caché qui se trouve dans la boîte aux lettres de chaque utilisateur ou groupe pour stocker les éléments « à suppression douce » avant qu'ils ne soient définitivement supprimés.
+
+> [!NOTE]
+> En raison du [premier principe de rétention](retention.md#the-principles-of-retention-or-what-takes-precedence), la suppression définitive est toujours suspendue si le même élément doit être retenu à cause d’une autre stratégie de rétention ou qu’il est bloqué pour des raisons juridiques ou d’enquête.
 
 Une fois qu'une politique de rétention est configurée pour les messages Yammer, les chemins que prend le contenu dépendent du fait que la politique de rétention doit conserver puis supprimer, conserver seulement ou supprimer seulement.
 

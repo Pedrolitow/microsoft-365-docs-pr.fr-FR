@@ -22,12 +22,12 @@ description: Utilisez les étiquettes de confidentialité de Microsoft Informati
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 42ac45fcea72d0ccdae69f6b7315cf31d38121d7
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 5c54b9c9b9046a1c410418a9ae5a922bdad9c442
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730245"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878075"
 ---
 # <a name="learn-about-sensitivity-labels"></a>En savoir plus sur les étiquettes de niveau de confidentialité
 
@@ -196,8 +196,7 @@ Lorsque vous configurez une stratégie d’étiquette, vous pouvez :
 
     ![Invite demandant à l’utilisateur Outlook d’appliquer l’étiquette requise](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
-    > [!NOTE]
-    > L’étiquetage obligatoire des documents et e-mails n’est pas disponible dans toutes les applications ou sur toutes les plateformes. Pour plus d’informations, consultez [Demander aux utilisateurs d'appliquer une étiquette à leurs e-mails et documents](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
+    Pour plus d’informations sur l’étiquetage obligatoire des documents et des e-mails, consultez [Demander aux utilisateurs d’appliquer une étiquette à leurs e-mails et documents](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents).
     
     Pour les conteneurs, une étiquette doit être attribuée au moment de la création du groupe ou du site.
     

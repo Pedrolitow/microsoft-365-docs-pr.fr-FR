@@ -31,7 +31,7 @@ ms.locfileid: "52346413"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -85,7 +85,7 @@ mdatp exclusion
 > [!TIP]
 > Lorsque vous configurez des exclusions avec des caractères génériques, insérez le paramètre entre guillemets doubles pour empêcher le globbing.
 
-Exemples :
+Exemples :
 
 - Ajoutez une exclusion pour une extension de fichier :
 
@@ -144,7 +144,7 @@ Exemples :
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d’exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide `curl` du téléchargement d’un fichier de test.
+Vous pouvez vérifier que vos listes d’exclusions fonctionnent en téléchargeant `curl` un fichier de test.
 
 Dans l’extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la commande dans ce chemin d’accès.
 
@@ -160,7 +160,7 @@ Si vous n’avez pas accès à Internet, vous pouvez créer votre propre fichier
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt
 ```
 
-Vous pouvez également copier la chaîne dans un fichier texte vierge et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
+Vous pouvez également copier la chaîne dans un fichier texte vide et essayer de l’enregistrer avec le nom de fichier ou dans le dossier que vous tentez d’exclure.
 
 ## <a name="allow-threats"></a>Autoriser les menaces
 

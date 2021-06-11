@@ -14,13 +14,13 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque courrier électronique avec une page d’entité de messagerie.
-ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Les clients Microsoft Defender pour Office 365 E5 et P1 et P2 peuvent désormais obtenir une vue à 360 degrés de chaque message électronique avec une page d’entité de messagerie.
+ms.openlocfilehash: c45b45101c27e92dd0fa8776ca5d8ee9eb3af5b7
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539094"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878459"
 ---
 # <a name="the-email-entity-page"></a>Page de l’entité d’e-mail
 
@@ -34,12 +34,17 @@ Les administrateurs de Microsoft Defender pour Office 365 (ou MDO) E5 et MDO P1 
 
 ## <a name="reach-the-email-entity-page"></a>Atteindre la page d’entité de messagerie
 
-L’un des centres de sécurité & conformité existants (protection.office.com) ou le nouveau centre de sécurité Microsoft 365 (security.microsoft.com) vous permet de voir et d’utiliser la page d’entité de messagerie.
+Le centre de sécurité et conformité & existant ou le nouveau portail Microsoft 365 Defender vous permet de voir et d’utiliser la page d’entité de messagerie.
+
+<br>
+
+****
 
 |Centre|URL|Navigation|
 |---|---|---|
-|Sécurité et conformité |protection.office.com|Explorateur de gestion des \> menaces|
-|Centre de sécurité Microsoft 365 |security.microsoft.com|E-mail & Collaboration \> Explorer|
+|Centre de sécurité et conformité|<https://protection.office.com>|Explorateur de gestion des \> menaces|
+|Microsoft 365 Portail Defender|<https://security.microsoft.com>|E-mail & Collaboration \> Explorer|
+|
 
 Dans l’Explorateur de menaces, sélectionnez l’objet d’un e-mail que vous examinez. Une barre d’or s’affiche en haut du volant du courrier électronique pour ce courrier. Cette invitation à la nouvelle page indique « Essayez notre nouvelle page d’entité de messagerie avec des données enrichies... ». Sélectionnez pour afficher la nouvelle page.
 
@@ -70,7 +75,7 @@ La structure est conçue pour être facile à lire et à parcourir en un coup d�
 
 Les onglets en haut de la page d’entité vous permettent d’examiner efficacement les messages électroniques.
 
-1. **Chronologie**: l’affichage de chronologie d’un e-mail (selon la chronologie de l’Explorateur de menaces) indique la remise d’origine aux événements post-remise qui se produisent sur un e-mail. Pour les e-mails qui n’ont aucune action de post-remise, l’affichage affiche la ligne de remise d’origine dans l’affichage chronologique. Les événements tels que : la purge automatique heure zéro (ZAP), la correction, les clics d’URL et les événements provenant de sources telles que : système, administrateur et utilisateur, s’affichent ici, dans l’ordre dans lequel ils se sont produits.
+1. **Chronologie**: l’affichage de chronologie d’un e-mail (selon la chronologie de l’Explorateur de menaces) indique la remise d’origine aux événements de post-remise qui se produisent sur un e-mail. Pour les e-mails qui n’ont aucune action de post-remise, l’affichage affiche la ligne de remise d’origine dans l’affichage chronologique. Les événements tels que : la purge automatique heure zéro (ZAP), la correction, les clics d’URL et les événements provenant de sources telles que : système, administrateur et utilisateur, s’affichent ici, dans l’ordre dans lequel ils se sont produits.
 2. **Analyse**: l’analyse montre les champs qui aident les administrateurs à analyser un courrier électronique en profondeur. Pour les cas où les administrateurs doivent mieux comprendre la détection, l’expéditeur/le destinataire et les détails de l’authentification de messagerie, ils doivent utiliser l’onglet Analyse. Des liens pour les pièces jointes et les URL sont également trouvés sur cette page, sous « Entités associées ». Les pièces jointes et les menaces identifiées sont numéroées ici et un clic vous permet d’accéder directement aux pages pièces jointes et URL. Cet onglet dispose également d’une option d’affichage d’en-tête pour *afficher l’en-tête de l’e-mail.* Les administrateurs peuvent comparer les détails des en-têtes de courrier électronique, côte à côte avec les informations du panneau principal, pour plus de clarté.
 3. **Pièces jointes**: examine les pièces jointes trouvées dans l’e-mail avec d’autres détails trouvés sur les pièces jointes. Le nombre de pièces jointes affichées est actuellement limité à 10. Notez que les détails de détonation pour les pièces jointes qui sont malveillantes sont également affichés ici.
 4. **URL : cet** onglet répertorie les URL trouvées dans l’e-mail avec d’autres détails sur les URL. Le nombre d’URL est limité à 10 pour l’instant, mais ces 10 url sont priorisées pour afficher d’abord les *URL malveillantes.* La hiér donc vous permet de gagner du temps et de deviner le travail. Les URL qui ont été trouvées comme malveillantes et détonées sont également affichées ici.
@@ -89,17 +94,20 @@ Les administrateurs peuvent afficher un aperçu des e-mails dans les boîtes aux
 
 ### <a name="detonation-details"></a>Détails de la détonation
 
-Ces détails sont spécifiques aux pièces jointes et URL des e-mails.
+Ces détails sont spécifiques aux pièces jointes et URL des e-mails. Les utilisateurs peuvent voir ces détails  en allant dans l’Explorateur et en appliquant le filtre de technologie de détection au détonation de fichier ou à la détonation d’URL. Les e-mails filtrés pour la détonation de fichiers contiennent un fichier malveillant avec des détails de détonation, et ceux filtrés pour les URL contiennent une URL malveillante et ses détails de détonation.
 
-Les utilisateurs voient s’afficher les détails enrichis de la détonation pour les pièces jointes malveillantes connues ou les liens hypertexte trouvés dans leurs boîtes aux lettres, y compris la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonée.
+Les utilisateurs voient des détails de détonation enrichis pour les pièces jointes ou URL malveillantes connues trouvées dans leurs e-mails, qui ont été détonées pour leur client spécifique. Il comprend la chaîne de détonation, le résumé de la détonation, la capture d’écran et les détails du comportement observé pour aider les clients à comprendre pourquoi la pièce jointe ou l’URL a été considérée comme malveillante et détonée.
 
-- *Chaîne de détonation :* une seule désaération de fichier ou d’URL peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL qui ont été impactés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.
-- *Résumé de la détonation*: Fournit des informations sur :
-  - Plage de temps de détonation.
-  - Verdict du fichier joint, ou URL.
-  - Informations connexes (numéro de fichier, URL, ADRESSES ou domaines), qui sont d’autres entités examinées lors de la détonation.
-- *Capture d’écran de détonation*: cette capture d’écran montre la ou les captures d’écran prises pendant le processus de détonation.
-- *Détails de la détonation*: voici les détails de comportement exacts de chaque processus qui a eu lieu pendant la détonation.
+1. *Chaîne de détonation*. Une détonation de fichier ou d’URL unique peut déclencher plusieurs détonations. La chaîne de détonation suit le chemin d’accès des détonations, y compris le fichier ou l’URL malveillant d’origine à l’origine du verdict, ainsi que tous les autres fichiers ou URL qui ont été impactés par la détonation. Ces URL ou fichiers joints peuvent ne pas être directement présents dans l’e-mail, mais il est important d’inclure cette analyse pour déterminer pourquoi le fichier ou l’URL a été trouvé comme malveillant.  
+    > [!NOTE]
+    > Cela peut uniquement afficher l’élément de niveau supérieur si aucune des entités liées à celui-ci n’a été trouvée problématique ou a été désaxée.
+
+1. Le résumé de la détonation fournit un résumé de base pour la détonation, tel que le temps d’analyse, l’heure à laquelle la *détonation* s’est produite, le système d’exploitation et l’application, le système d’exploitation et l’application dans lesquels la détonation s’est produite, la taille du fichier et la raison du verdict.
+1. *Screenshots* shows the screenshots captured during detonation. Il peut y avoir plusieurs captures d’écran pendant la détonation. Aucune capture d’écran n’est capturée pour
+    - Fichiers de type conteneur tels .zip ou .rar.
+    - Si une URL s’ouvre dans un lien qui télécharge directement un fichier. Toutefois, vous verrez le fichier téléchargé dans la chaîne de détonation.
+1. Les *détails* du comportement sont une exportation qui affiche des détails de comportement tels que des événements exacts qui ont eu lieu lors de la détonation et des éléments observables qui contiennent des URL, des adresses IP, des domaines et des fichiers qui ont été trouvés lors de la détonation (et qui peuvent être problématiques ou indésirables). Sachez qu’il n’y a peut-être pas de détails de comportement pour :
+    - Fichiers de conteneur tels .zip ou .rar contenant d’autres fichiers.
 
 :::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="Capture d’écran du résumé de la détonation montrant la chaîne, le résumé, les détails de la détonation et la capture d’écran sous le titre *Analyse approfondie*.":::
 
@@ -111,7 +119,7 @@ Les utilisateurs voient s’afficher les détails enrichis de la détonation pou
 
 *Détails de l’e-mail*: détails requis pour une compréhension approfondie du courrier électronique disponible dans *l’onglet Analyse.*
 
-- *Exchange transport (RÈGLES ETR* ou règles de flux de messagerie) : ces règles sont appliquées à un message au niveau de la couche de transport et prévalent sur les verdicts de hameçonnage et de courrier indésirable. Ils peuvent uniquement être créés et modifiés dans le Centre d’administration Exchange, mais si une etr s’applique à un message, le nom et le GUID ETR s’afficheront ici. Informations précieuses à des fins de suivi.
+- Exchange règles de transport *(ETR* ou règles de flux de messagerie) : ces règles sont appliquées à un message au niveau de la couche de transport et prévalent sur les verdicts de hameçonnage et de courrier indésirable. Ils peuvent uniquement être créés et modifiés dans le Centre d’administration Exchange, mais si une etr s’applique à un message, le nom et le GUID ETR s’afficheront ici. Informations précieuses à des fins de suivi.
 
 - *Remplacements système*: il s’agit d’un moyen d’effectuer des exceptions à l’emplacement de remise prévu pour un message en remplacement de l’emplacement de remise donné par le système (selon la technologie de détection et de menace).
 
