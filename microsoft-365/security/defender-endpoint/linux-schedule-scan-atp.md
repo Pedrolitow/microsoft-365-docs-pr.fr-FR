@@ -1,7 +1,7 @@
 ---
 title: Planifier des analyses avec Microsoft Defender pour Endpoint (Linux)
 description: Découvrez comment planifier un temps d’analyse automatique pour Microsoft Defender pour Endpoint (Linux) afin de mieux protéger les ressources de votre organisation.
-keywords: microsoft, defender, Microsoft Defender pour le point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
+keywords: microsoft, defender, Microsoft Defender pour point de terminaison, linux, analyses, antivirus, microsoft defender pour point de terminaison (linux)
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -71,7 +71,7 @@ CRON_TZ=Amérique/Los_Angeles
 0 2 * * sat /bin/mdatp scan quick > ~/mdatp_cron_job.log
 
 > [!NOTE]
->Dans cet exemple, nous l’avons définie sur 00 minutes, 2 heures du matin. (heure au format 24 heures), tous les jours du mois, tous les mois, le samedi. Cela signifie qu’il sera exécuté le samedi à 2 h 00. Pacifique (UTC –8).
+>Dans cet exemple, nous l’avons définie sur 00 minutes, 2 heures du matin. (heure au format 24 heures), tous les jours du mois, tous les mois, le samedi. Ce qui signifie qu’il sera exécuté le samedi à 2 h 00. Pacifique (UTC –8).
 
 Appuyez sur « Échap »
 

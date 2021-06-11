@@ -1,5 +1,5 @@
 ---
-title: Télécharger les clés de licence logicielle perpétuelle et de produit achetées via le programme Fournisseur de solutions Cloud (CSP)
+title: Télécharger les licences logicielles perpétuelles et les clés de licence de produit achetées via le programme fournisseur de solutions Cloud (CSP)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,7 +17,7 @@ search.appverid: MET150
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
-description: Découvrez comment télécharger les clés de licence logicielle et de produit pour les logiciels perpétuelles achetés via le programme Fournisseur de solutions Cloud (CSP).
+description: Découvrez comment télécharger les clés de licence logicielle et de produit pour les logiciels perpétuelles achetés via le programme fournisseur de solutions Cloud (CSP).
 ms.date: 01/27/2021
 ms.openlocfilehash: 85dfdb8952278b8c1c3dd23a2ceca7481a683989
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
@@ -28,7 +28,7 @@ ms.locfileid: "52332401"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>Télécharger les clés de licence de produit et de logiciel perpétuelle
 
-Cet article explique comment télécharger des clés de licence logicielle et de produit pour les logiciels perpétuelles achetés via le programme Fournisseur de solutions Cloud (CSP).
+Cet article explique comment télécharger des clés de licence logicielle et de produit pour les logiciels perpétuelles achetés via le programme fournisseur de solutions Cloud (CSP).
 
 ## <a name="before-you-begin"></a>Avant de commencer
 

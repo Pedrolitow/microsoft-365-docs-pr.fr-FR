@@ -65,7 +65,7 @@ Dans les cas où vous souhaitez déplacer des alertes d’un incident à un autr
 
 ## <a name="edit-the-incident-name"></a>Modifier le nom de l’incident
 
-Microsoft 365 Defender attribue automatiquement un nom basé sur des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
+Microsoft 365 Defender attribue automatiquement un nom basé sur des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident. Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
 
 Vous pouvez modifier le nom de l’incident à partir du **champ Nom de l’incident** dans le volet Gérer **l’incident.**
 
@@ -85,7 +85,7 @@ Pour affecter un incident, **sélectionnez Affecter à moi.** Cette action affec
 Vous pouvez obtenir la liste des incidents qui vous sont attribués en filtrant la file d’attente des incidents. 
 
 1. Dans la file d’attente des incidents, sélectionnez **Filtres.**
-2. dans la section **Affectation de l’incident,** effacer Sélectionner **tout** et sélectionner Affecté à **moi.**
+2. dans la section **Affectation de l’incident,** effacer Sélectionner **tout** et sélectionner Affecté à **moi**.
 3. **Sélectionnez** Appliquer, puis fermez le volet **Filtres.**
 
 Vous pouvez ensuite enregistrer l’URL résultante dans votre navigateur en tant que signet pour afficher rapidement la liste des incidents qui vous sont attribués.
@@ -104,7 +104,7 @@ S’il s’agissait d’une alerte réelle, vous devez également spécifier le 
 
 ## <a name="add-comments"></a>Ajouter des commentaires
 
-Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ** Commentaire. Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
+Vous pouvez ajouter plusieurs commentaires à un incident avec le **champ Commentaire.** Chaque commentaire est ajouté aux événements historiques de l’incident. Vous pouvez voir les commentaires et l’historique d’un incident à partir du lien Commentaires et historique dans la page **Résumé.** 
 
 ## <a name="next-steps"></a>Prochaines étapes
 

@@ -29,7 +29,7 @@ ms.locfileid: "52295914"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Allemand : Mon-Fri 9 h à 17 h
+Allemand : Mon-Fri 9h00 à 17h00
 
 Anglais : Lun.-ven. 9H-17h
 

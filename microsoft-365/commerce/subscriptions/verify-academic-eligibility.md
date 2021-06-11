@@ -18,7 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Découvrez comment vérifier l’éligibilité de votre établissement Microsoft 365 Éducation tarifs scolaires.
+description: Découvrez comment vérifier l’éligibilité de votre établissement scolaire Microsoft 365 Éducation tarifs scolaires.
 ms.date: 07/21/2020
 ms.openlocfilehash: 7da6fbc73ece51c5d9b845487e344bbbdec679cf
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
@@ -41,12 +41,12 @@ Vous devez déjà avoir un abonnement Microsoft 365 Éducation d’essai. Si vou
 
 Si vous ne savez pas si vous avez un abonnement Microsoft 365 Éducation d’essai, utilisez ces étapes pour vérifier que vous le faites.
 
-1. Dans le centre Microsoft 365'administration, allez sur la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
+1. Dans le centre Microsoft 365'administration, allez sur la page **Facturation** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">vos produits.</a>
 2. Recherchez les **Office 365 A1'essai pour** les enseignants **et les Office 365 A1'essai pour les étudiants.** Si vous ne trouvez pas ces abonnements, visitez cette [page web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) et sélectionnez **Commencer gratuitement.**
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Vérifier l’éligibilité scolaire de votre établissement scolaire
 
-Dans la plupart des cas, lorsque vous vous inscrivez à un essai gratuit et que vous terminez l’Assistant vérification de l’éligibilité pour fournir le domaine de votre établissement scolaire, vous recevez une approbation immédiate ou un refus d’éligibilité de votre établissement scolaire. Dans certains cas, nous avons besoin d’informations supplémentaires pour effectuer une révision manuelle de l’éligibilité et vous recevons un questionnaire à remplir. Cette révision peut prendre jusqu’à 10 jours ou moins. Après avoir passé en revue les informations d’éligibilité de votre établissement scolaire, nous envoyons un courrier électronique vous avertissant de l’état de votre établissement scolaire.
+Dans la plupart des cas, lorsque vous vous inscrivez à un essai gratuit et que vous terminez l’Assistant vérification de l’éligibilité pour fournir le domaine de votre établissement scolaire, vous recevez une approbation immédiate ou un refus d’éligibilité de votre établissement scolaire. Dans certains cas, nous avons besoin de plus d’informations pour effectuer une révision d’éligibilité manuelle et vous recevons un questionnaire à remplir. Cette révision peut prendre jusqu’à 10 jours ou moins. Après avoir passé en revue les informations d’éligibilité de votre établissement scolaire, nous envoyons un courrier électronique vous avertissant de l’état de votre établissement scolaire.
 
 Vous pouvez fermer l’Assistant Vérification scolaire avant d’entrer un domaine et commencer immédiatement à utiliser l’abonnement d’essai. Toutefois, vous n’êtes pas éligible aux prix scolaires tant que vous n’avez pas terminé le processus de vérification. Vous devez terminer le processus avant la fin de votre version d’évaluation gratuite pour convertir un abonnement payant et continuer à l’utiliser. Cela s’applique également lorsque vous convertissez en abonnement A1 gratuit.
 
@@ -70,7 +70,7 @@ Une fois que vous avez Microsoft 365 Éducation d’essai, vous pouvez vérifier
 
 Une fois l’éligibilité de votre établissement scolaire vérifiée, vous pouvez acheter des abonnements au prix scolaire. Vous pouvez également [convertir votre version d’essai gratuite en abonnement payant.](../try-or-buy-microsoft-365.md) Si vous souhaitez convertir votre abonnement d’essai, vous devez le faire avant la fin de la période d’essai.
 
-1. Dans le centre Microsoft 365'administration, allez sur la page **Des** services \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
+1. Dans le centre Microsoft 365'administration, allez à la page **Des** services \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">d’achat de facturation.</a>
 2. Pour afficher les offres éducation, sélectionnez **l’onglet** Éducation.
 
     > [!NOTE]
@@ -83,7 +83,7 @@ Une fois l’éligibilité de votre établissement scolaire vérifiée, vous pou
 
 Vous trouverez la date d’expiration de votre abonnement d’essai gratuit sur la page **De vos produits.** Vous pouvez également prolonger la version d’essai.
 
-1. Dans le centre Microsoft 365'administration, allez sur la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
+1. Dans le centre Microsoft 365'administration, allez sur la page **Facturation** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">vos produits.</a>
 2. Recherchez l’abonnement d’essai.
 3. Dans la section **Facturation,** sous **Abonnement d’essai gratuit,** la date d’expiration s’affiche.
 4. Si vous souhaitez prolonger la version d’essai, sélectionnez **Étendre la version d’essai.** Vous ne pouvez le faire qu’une seule fois par abonnement d’essai gratuit.
@@ -94,11 +94,11 @@ Si votre établissement scolaire n’est pas éligible en tant qu’établisseme
 
 Si vous avez des questions sur la décision d’éligibilité scolaire de votre établissement scolaire, [contactez le support technique.](../../business-video/get-help-support.md)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Pour découvrir comment déployer des Microsoft 365 pour votre établissement scolaire, consultez [Microsoft 365 Éducation documentation et ressources.](/microsoft-365/education/deploy/) Ensuite, vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps.](../../admin/add-users/add-users.md) Si nécessaire, vous pouvez également acheter [d’autres licences pour votre abonnement.](../licenses/buy-licenses.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 Éducation documentation pour les administrateurs informatiques](/education/itadmins) (liens d’article)\
 [Microsoft Teams Éducation](https://microsoft.com/education/products/teams/default.aspx) (page produit)\

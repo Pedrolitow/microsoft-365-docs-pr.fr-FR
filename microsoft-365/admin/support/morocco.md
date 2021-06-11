@@ -33,7 +33,7 @@ Entrer le code 7700
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Arabe : Sun-Thu 8 h à 16 h
+Arabe : Sun-Thu 8 h-16 h
 
 Français : Mon-Fri 8 h à 16 h
 
@@ -41,9 +41,9 @@ Anglais : Mon-Fri 8 h à 16 h
 
 ### <a name="technical-support"></a>Support technique :
 
-Arabe : Sun-Thu 8 h à 16 h
+Arabe : Sun-Thu 8 h-16 h
 
-Français : Mon-Fri 7 H 00 à 20 h 00
+Français : Mon-Fri 7h00 à 20h00
 
 Anglais : 24h/24, 7j/7
 

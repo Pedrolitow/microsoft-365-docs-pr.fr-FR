@@ -35,17 +35,17 @@ Vous pouvez également déléguer la gestion de vos allotments. Les propriétair
 
 ## <a name="prerequisites"></a>Configuration requise
 
-Vous devez respecter les exigences de licence pour les [licences basées sur des groupes.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)
+Vous devez respecter les exigences de licence pour [les licences basées sur des groupes.](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)
 
 Vous pouvez utiliser des allotments avec n’importe quel produit disponible pour les utilisateurs :
 
-- Suites Office et produits autonomes
-- Produits Enterprise et Mobility
+- Office suites et produits autonomes
+- Enterprise et produits de mobilité
 - Produits Dynamics 365
 
 Les produits suivants ne peuvent pas être utilisés avec des allotments :
 
-- Applications du Microsoft Store
+- Microsoft Store applications
 - Logiciels perpétuelles ou logiciels directement attribués à un utilisateur en l’absence de licence.
 - Ressources Azure
 

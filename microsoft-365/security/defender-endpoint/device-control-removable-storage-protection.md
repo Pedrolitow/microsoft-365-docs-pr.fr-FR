@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 55171429d3ea447de32eb7e2ec12b8b2c3542e95
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861706"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538386"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control Removable Stockage Protection
 
@@ -35,7 +35,7 @@ Microsoft Defender pour endpoint Device Control Removable Stockage Protection em
 
 **Fonctionnalités** : empêcher l’installation avec ou sans exclusion basée sur différentes propriétés d’appareil.
 
-**Windows 10 du support technique**
+**Description**
 - Appliqué au niveau de l’ordinateur : la même stratégie s’applique à tout utilisateur connecté.
 - Prend en charge mem et GPO.
 - Propriétés[d’appareil « pris](#device-properties)en charge » comme répertoriés.
@@ -43,7 +43,7 @@ Microsoft Defender pour endpoint Device Control Removable Stockage Protection em
 
 **Plateforme prise en charge** : Windows 10
 
-**Détails de la prise en charge de macOS**
+**Description**
 - Appliqué au niveau de l’ordinateur : la même stratégie s’applique à tout utilisateur connecté
 - Pour obtenir des informations spécifiques à macOS, voir [Contrôle d’appareil pour macOS.](mac-device-control-overview.md)
  
@@ -55,7 +55,7 @@ Microsoft Defender pour endpoint Device Control Removable Stockage Protection em
 - *Audit* Accès en lecture ou en écriture ou en exécution au stockage amovible en fonction de différentes propriétés d’appareil, avec ou sans exclusion.
 - *Empêcher* Accès en lecture ou en écriture ou exécution avec ou sans exclusion : autorisez un appareil spécifique en fonction de différentes propriétés de l’appareil.
 
-**Windows 10 du support technique**
+**Description**
 - Appliqué à l’ordinateur ou à l’utilisateur ou aux deux : autorise uniquement des personnes spécifiques qui effectuent un accès en lecture/écriture/exécution à un stockage amovible spécifique sur un ordinateur spécifique.
 - Prise en charge de MEM OMA-URI et GPO.
 - Propriétés[d’appareil « pris](#device-properties)en charge » comme répertoriés.
@@ -63,7 +63,7 @@ Microsoft Defender pour endpoint Device Control Removable Stockage Protection em
 
 **Plateforme prise en charge** : Windows 10
 
-**Détails de la prise en charge de macOS**
+**Description**
 - Appliqué au niveau de l’ordinateur : la même stratégie s’applique à tout utilisateur connecté.
 - Pour obtenir des informations spécifiques à macOS, voir [Contrôle d’appareil pour macOS.](mac-device-control-overview.md)
  

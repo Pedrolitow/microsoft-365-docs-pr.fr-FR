@@ -34,19 +34,19 @@ ms.locfileid: "52845629"
 
 >Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender pour le point de terminaison a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
+Defender for Endpoint a récemment mis à niveau le processus de support pour offrir une expérience de support plus moderne et avancée. 
 
 Le nouveau widget permet aux clients de :
 - Trouver des solutions aux problèmes courants
-- Soumettre un dossier de support à l’équipe de support Microsoft
+- Soumettre un dossier de support à l’équipe de support Technique Microsoft
 
 ## <a name="prerequisites"></a>Configuration requise
 Il est important de connaître les rôles spécifiques qui sont autorisés à ouvrir des cas de support.
 
-Au minimum, vous devez avoir un rôle d’administrateur du support technique **OU** d’administrateur du support technique.
+Au minimum, vous devez avoir un rôle d’administrateur du support technique **ou** d’administrateur du support technique.
 
 
-Pour plus d’informations sur les rôles qui ont des autorisations, voir les [autorisations d’administrateur de sécurité.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
+Pour plus d’informations sur les rôles qui ont des autorisations, consultez les [autorisations d’administrateur de sécurité.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator-permissions) Les rôles qui incluent l’action `microsoft.office365.supportTickets/allEntities/allTasks` peuvent soumettre un cas.
 
 Pour obtenir des informations générales sur les rôles d’administrateur, voir [à propos des rôles d’administrateur.](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)
 
@@ -77,7 +77,7 @@ Si les articles suggérés ne sont pas suffisants, vous pouvez ouvrir une demand
 
 ## <a name="open-a-service-request"></a>Ouvrir une demande de service
 
-Découvrez comment ouvrir des tickets de support en contactant Defender pour le support technique Endpoint. 
+Découvrez comment ouvrir des tickets de support en contactant le support de Defender pour Endpoint. 
 
 > [!Note]
 > Si vous avez un contrat de support permier avec Microsoft, vous verrez la balise premier sur le widget. Si ce n’est pas le cas, contactez votre gestionnaire de comptes Microsoft.

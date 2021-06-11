@@ -34,7 +34,7 @@ ms.locfileid: "52845329"
 
 > Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion shell distante. Vous avez ainsi la puissance d’un travail d’examen approfondi et d’actions de réponse immédiates pour contenir rapidement des menaces identifiées, en temps réel. 
+La réponse en direct permet aux équipes d’opérations de sécurité d’accéder instantanément à un appareil (également appelé ordinateur) à l’aide d’une connexion shell distante. Cela vous donne la puissance d’un travail d’examen approfondi et de prendre des mesures de réponse immédiates pour contenir rapidement des menaces identifiées, en temps réel. 
 
 La réponse dynamique est conçue pour améliorer les enquêtes en permettant à votre équipe des opérations de sécurité de collecter des données d’investigation, d’exécuter des scripts, d’envoyer des entités suspectes pour analyse, de corriger les menaces et de chercher de manière proactive les menaces émergentes.<br/><br/>
 
@@ -76,7 +76,7 @@ Vous devez activer la fonctionnalité de réponse en direct dans la page [Param�
     >[!NOTE]
     >Seuls les utilisateurs ayant des rôles d’administrateur global ou de sécurité peuvent modifier ces paramètres.
     
-- **Assurez-vous que le niveau de correction Automation** est affecté à l’appareil.<br>
+- **Assurez-vous qu’un niveau de correction Automation** est affecté à l’appareil.<br>
 Vous devez activer, au moins, le niveau de correction minimal pour un groupe d’appareils donné. Sinon, vous ne pourrez pas établir une session Live Response à un membre de ce groupe.
 
     Vous recevrez l’erreur suivante :
@@ -94,7 +94,7 @@ Vous devez activer, au moins, le niveau de correction minimal pour un groupe d�
     Seuls les utilisateurs qui ont été mis en service avec les autorisations appropriées peuvent lancer une session. Pour plus d’informations sur les attributions de rôles, voir [Créer et gérer des rôles.](user-roles.md) 
 
     > [!IMPORTANT]
-    > L’option de téléchargement d’un fichier dans la bibliothèque est disponible uniquement pour les personnes ayant les autorisations RBAC appropriées. Le bouton est grisé pour les utilisateurs qui n’ont que des autorisations déléguées.
+    > L’option de téléchargement d’un fichier dans la bibliothèque est disponible uniquement pour les personnes ayant les autorisations RBAC appropriées. Le bouton est grisé pour les utilisateurs ayant uniquement des autorisations déléguées.
 
     Selon le rôle qui vous a été accordé, vous pouvez exécuter des commandes de réponse en direct de base ou avancées. Les autorisations des utilisateurs sont contrôlées par le rôle personnalisé RBAC. 
 
@@ -118,7 +118,7 @@ Le tableau de bord vous donne également accès à :
 
 2. Accédez à la page de liste des appareils et sélectionnez un appareil à examiner. La page appareils s’ouvre.
 
-3. Lancez la session de réponse en direct en sélectionnant **Lancer une session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
+3. Lancez la session de réponse en direct en sélectionnant **Lancer la session de réponse en direct.** Une console de commande s’affiche. Patientez pendant que la session se connecte à l’appareil.
 
 4. Utilisez les commandes intégrées pour faire des enquêtes. Pour plus d’informations, voir [commandes de réponse en direct.](#live-response-commands)
 
@@ -294,7 +294,7 @@ Sélectionnez **l’onglet Journal** de commandes pour voir les commandes utilis
 ## <a name="limitations"></a>Limites
 
 - Les sessions de réponse en direct sont limitées à 25 sessions de réponse en direct à la fois.
-- La valeur du délai d’inactivité de la session de réponse active est de 30 minutes. 
+- Le délai d’inactivité de la session de réponse en direct est de 30 minutes. 
 - Un utilisateur peut démarrer jusqu’à 10 sessions simultanées.
 - Un appareil ne peut être connecté qu’à une seule session à la fois.
 - Les limites de taille de fichier suivantes s’appliquent :

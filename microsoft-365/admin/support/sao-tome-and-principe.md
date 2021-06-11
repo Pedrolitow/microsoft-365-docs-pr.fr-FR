@@ -33,7 +33,7 @@ Anglais : Lun.-ven. 9H-17h
 
 ### <a name="technical-support"></a>Support technique :
 
-Portugais : Mon-Fri 8 h à 21 h
+Portugais : Mon-Fri 8h00 à 21h00
 
 Anglais : 24h/24, 7j/7
 

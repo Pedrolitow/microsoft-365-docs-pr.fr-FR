@@ -35,7 +35,7 @@ Anglais : Mon-Fri 6 h-13 h
 
 ### <a name="technical-support"></a>Support technique :
 
-Français : Mon-Fri 6 h-13 h
+Français : Mon-Fri 18h00 à 13h00
 
 Anglais : 24h/24, 7j/7
 

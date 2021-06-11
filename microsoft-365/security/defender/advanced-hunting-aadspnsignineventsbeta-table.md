@@ -31,10 +31,10 @@ ms.locfileid: "52583543"
 
 **S’applique à :**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de chercher des événements de signature d’identité gérée et de principal de `AADSpnSignInEventsBeta` service Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
+> Le tableau est actuellement en version bêta et est proposé à court terme pour vous permettre de faire la recherche dans les événements de signature d’identité gérée et de principal de `AADSpnSignInEventsBeta` service Azure Active Directory (AAD). Nous finirons par déplacer toutes les informations de schéma de signature vers la `IdentityLogonEvents` table.
 
 
 
@@ -53,17 +53,17 @@ Pour plus d’informations sur les autres tables du schéma de repérage avancé
 | `Timestamp` | DateHeure      | Date et heure de génération de l’enregistrement                                                                                                     |
 | `Application`          | string        | Application qui a effectué l’action enregistrée                                                                                                   |
 | `ApplicationId`        | string        | Identificateur unique de l’application                                                                                                           |
-| `IsManagedIdentity`    | booléen       | Indique si la connectez-vous a été initiée par une identité gérée                                                                               |
+| `IsManagedIdentity`    | valeur booléenne       | Indique si la connectez-vous a été initiée par une identité gérée                                                                               |
 | `ErrorCode`            | entier        | Contient le code d’erreur si une erreur de se connecte se produit. Pour trouver une description d’un code d’erreur spécifique, visitez <https://aka.ms/AADsigninsErrorCodes> . |
 | `CorrelationId`        | string        | Identificateur unique de l’événement de signature                                                                                                          |
 | `ServicePrincipalName` | string        | Nom du principal de service à l’origine de la signature                                                                                        |
 | `ServicePrincipalId`   | string        | Identificateur unique du principal de service à l’origine de la signature                                                                           |
 | `ResourceDisplayName`  | string        | Nom d’affichage de la ressource accessible                                                                                                           |
-| `ResourceId`           | string        | Identificateur unique de la ressource à accès                                                                                                      |
+| `ResourceId`           | string        | Identificateur unique de la ressource accessible                                                                                                      |
 | `ResourceTenantId`     | string        | Identificateur unique du client de la ressource à accès                                                                                        |
 | `IPAddress`            | string        | Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées                                                              |
 | `Country`          | string        | Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé                                                                |
-| `State`                | string        | État où la se connecte s’est produite, si disponible                                                                                                  |
+| `State`                | string        | État où la connectez-vous s’est produite, si disponible                                                                                                  |
 | `City`                 | string        | Ville où se trouve l’utilisateur du compte                                                                                                          |
 | `Latitude`             | string        | Coordonnées nord à sud de l’emplacement de la signature                                                                                          |
 | `Longitude`            | string        | Coordonnées est à ouest de l’emplacement de la signature                                                                                            |

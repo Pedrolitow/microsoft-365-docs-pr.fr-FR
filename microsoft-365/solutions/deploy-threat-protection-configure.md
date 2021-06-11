@@ -29,7 +29,7 @@ Suivez ces étapes pour configurer la protection contre les menaces dans Microso
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Étape 1 : Configurer l’authentification multifacteur et les stratégies d’accès conditionnel
 
-[L’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) oblige les utilisateurs à vérifier leur identité par un appel téléphonique ou une application d’authentification. [Les stratégies d’accès](/azure/active-directory/conditional-access/overview) conditionnel définissent certaines exigences qui doivent être remplies pour que les utilisateurs accèdent aux applications et aux données dans Microsoft 365. Les stratégies mfa et d’accès conditionnel fonctionnent ensemble pour protéger votre organisation. Par exemple, si quelqu’un tente de se connecte à partir d’un appareil mobile à l’aide d’un compte qui n’est pas activé pour l' usage de l’mf et qu’une stratégie d’accès conditionnel exige que l' usage de l’mf soit en vigueur, l’utilisateur ne peut pas se connecter.  
+[L’authentification multifacteur](/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) exige que les utilisateurs vérifient leur identité avec un appel téléphonique ou une application d’authentification. [Les stratégies d’accès](/azure/active-directory/conditional-access/overview) conditionnel définissent certaines exigences qui doivent être remplies pour que les utilisateurs accèdent aux applications et aux données dans Microsoft 365. Les stratégies mfa et d’accès conditionnel fonctionnent ensemble pour protéger votre organisation. Par exemple, si quelqu’un tente de se connecte à partir d’un appareil mobile à l’aide d’un compte qui n’est pas activé pour l' usage de l’mf et qu’une stratégie d’accès conditionnel exige que l' usage de l’mf soit en vigueur, l’utilisateur ne peut pas se connecter.  
 
 Microsoft a testé et recommandé un ensemble spécifique d’accès conditionnel et de stratégies associées pour protéger l’accès à toutes vos applications SaaS, en particulier Microsoft 365. Les stratégies sont recommandées pour la protection de base, sensible et hautement réglementée. Commencez par implémenter les stratégies pour la protection de référence. 
 
@@ -42,7 +42,7 @@ Microsoft a testé et recommandé un ensemble spécifique d’accès conditionne
 ![Processus de déploiement de la protection de référence](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
 1. [Configurez les conditions préalables, y compris Azure AD Identity Protection.](../security/office-365-security/identity-access-prerequisites.md)
-2. [Configurez des stratégies communes d’accès aux identités](../security/office-365-security/identity-access-policies.md) et aux appareils pour la protection de référence.
+2. [Configurez des stratégies communes d’accès aux identités](../security/office-365-security/identity-access-policies.md) et appareils pour la protection de référence.
 3. Configurez des [stratégies](../security/office-365-security/identity-access-policies-guest-access.md)pour les utilisateurs invités, [Microsoft Teams,](../security/office-365-security/teams-access-policies.md) [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)et [SharePoint Online et OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
 
 ### <a name="more-information-about-protecting-identities"></a>Plus d’informations sur la protection des identités
@@ -90,12 +90,12 @@ Microsoft 365 Defender unifie les alertes, les incidents, l’examen et la répo
 
 ### <a name="more-information-about-microsoft-365-defender"></a>Plus d’informations sur Microsoft 365 Defender
 
-- [Qu’est-ce que Microsoft 365 Defender ?](../security/defender/microsoft-365-defender.md)
+- [Qu’est-ce que Microsoft 365 Defender ?](../security/defender/microsoft-365-defender.md)
 - [Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Étape 4 : Configurer Microsoft Defender pour Office 365
 
-[Microsoft Defender pour Office 365](../security/office-365-security/defender-for-office-365.md) protège votre organisation contre les menaces malveillantes dans les messages électroniques (pièces jointes et URL), les Office documents et les outils de collaboration. Le tableau suivant répertorie les fonctionnalités et fonctionnalités de Microsoft Defender Office 365 incluses dans Microsoft 365 E5 :
+[Microsoft Defender pour Office 365](../security/office-365-security/defender-for-office-365.md) protège votre organisation contre les menaces malveillantes dans les messages électroniques (pièces jointes et URL), Office documents et outils de collaboration. Le tableau suivant répertorie les fonctionnalités et fonctionnalités de Microsoft Defender Office 365 incluses dans Microsoft 365 E5 :
 
 |Fonctionnalités de configuration, de protection et de détection|Fonctionnalités d’automatisation, d’examen, de correction et d’éducation|
 |:---|:---|
@@ -138,27 +138,27 @@ Avec Microsoft Defender pour Office 365, les membres de votre organisation peuve
 
 ## <a name="step-6-configure-microsoft-cloud-app-security"></a>Étape 6 : Configurer Microsoft Cloud App Security
 
-[Microsoft Cloud App Security](/cloud-app-security) est un courtier de sécurité Cloud Access qui prend en charge la collecte de journaux, les connecteurs d’API et le proxy inverse. Microsoft Cloud App Security offre une visibilité enrichie, un contrôle sur les déplacements de données et des analyses sophistiquées pour identifier et lutter contre les cybermenaces dans tous vos services cloud. Grâce à Microsoft Cloud App Security, vos opérations de sécurité peuvent protéger les informations sensibles de votre organisation, se protéger contre les cybermenaces et les anomalies, découvrir et surveiller les applications qui accèdent aux données de votre organisation et s’assurer que les applications cloud de votre organisation répondent aux exigences de conformité.
+[Microsoft Cloud App Security](/cloud-app-security) est un courtier de sécurité d’accès cloud qui prend en charge la collecte de journaux, les connecteurs d’API et le proxy inverse. Microsoft Cloud App Security offre une visibilité enrichie, un contrôle sur les déplacements de données et des analyses sophistiquées pour identifier et lutter contre les cybermenaces dans tous vos services cloud. Grâce à Microsoft Cloud App Security, vos opérations de sécurité peuvent protéger les informations sensibles de votre organisation, se protéger contre les cybermenaces et les anomalies, découvrir et surveiller les applications qui accèdent aux données de votre organisation et s’assurer que les applications cloud de votre organisation répondent aux exigences de conformité.
 
 ### <a name="set-up-microsoft-cloud-app-security"></a>Configurer Microsoft Cloud App Security
 
 ![Processus de déploiement des Microsoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
-1. [Configurer le portail et d’autres exigences de base.](/cloud-app-security/general-setup)
+1. [Configurer le portail et d’autres conditions de base.](/cloud-app-security/general-setup)
 2. [Configurer la découverte cloud et](/cloud-app-security/set-up-cloud-discovery) connecter des [applications.](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 3. [Déployer le contrôle d’application d’accès conditionnel pour les applications disponibles.](/cloud-app-security/proxy-deployment-aad)
 4. [Utilisez les outils d’examen et les tableaux de bord.](/cloud-app-security/investigate)
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Rubrique relative aux informations supplémentaires concernant Microsoft Cloud App Security
 
-- [Passer en revue les nouvelles fonctionnalités et fonctionnalités.](/cloud-app-security/release-notes)
+- [Passer en revue les nouvelles fonctionnalités.](/cloud-app-security/release-notes)
 - [En savoir plus sur Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>Étape 7 : Surveiller l’état et prendre des mesures
 
 Une fois que vous avez installé et déployé vos services et fonctionnalités de protection contre les menaces, l’étape suivante consiste à surveiller les détections de menaces et à prendre les mesures appropriées. Votre meilleur point de départ est le centre de sécurité Microsoft 365 ( ), où vous pouvez surveiller et gérer la sécurité au sein de vos [https://security.microsoft.com](https://security.microsoft.com) identités, données, appareils, applications et infrastructure Microsoft. 
 
-![Centre de sécurité Microsoft 365](../media/solutions-architecture-center/m365-security-center.png)
+![Centre de sécurité Microsoft 365](../media/solutions-architecture-center/m365-security-center.png)
 
 Le centre Microsoft 365 sécurité est destiné aux administrateurs de sécurité et aux équipes en matière d’opérations de sécurité. Dans le Microsoft 365 de sécurité, vous pouvez :
 - Affichez l’état de sécurité global de votre organisation avec [le niveau de sécurisation.](/microsoft-365/security/defender/microsoft-secure-score)
@@ -185,8 +185,8 @@ Microsoft 365 fournit les ressources suivantes pour aider à informer les utilis
 
 |Concept  |Ressources  |
 |---------|---------|
-|Microsoft 365     |[Parcours d’apprentissage personnalisables](/office365/customlearning/) <p>Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs finaux de votre organisation.        |
-|Sécurité Microsoft 365 |[Module d’apprentissage : sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité. |
+|Microsoft 365     |[Parcours d’apprentissage personnalisables](/office365/customlearning/) <p>Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs finaux de votre organisation.        |
+|Sécurité Microsoft 365 |[Module d’apprentissage : sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité. |
 |Authentification multifacteur     | [Vérification en deux étapes : quelle est la page de vérification supplémentaire ?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Cet article aide les utilisateurs finaux à comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée au niveau de votre organisation.    |
 
 En plus de ces conseils, Microsoft recommande à vos utilisateurs d’prendre les mesures décrites dans cet article : Protéger votre compte et vos appareils contre les pirates [informatiques et les programmes malveillants.](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx) Ces actions incluent :

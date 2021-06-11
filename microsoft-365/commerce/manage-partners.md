@@ -32,7 +32,7 @@ Vous pouvez travailler avec des fournisseurs de solutions (partenaires) certifi�
 
 1. Les administrateurs recherchent et contactent un partenaire à l’aide du formulaire à <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> l’adresse .
 2. Les partenaires envoient une demande par courrier électronique aux clients pour établir une relation de partenaire.
-3. Les clients acceptent l’invitation dans le Centre d’administration Microsoft 365 et commencent à travailler avec le partenaire.
+3. Les clients acceptent l’invitation Microsoft 365 centre d’administration et commencent à travailler avec le partenaire.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -65,7 +65,7 @@ Le partenaire vous contacte et vous donne la possibilité d’en savoir plus à 
 
 Une fois que vous avez trouvé un partenaire et décidé de travailler avec lui, il vous envoie une invitation par courrier électronique.
 
-1. Dans le courrier électronique, sélectionnez le lien pour aller au Centre d’administration Microsoft 365.
+1. Dans l’e-mail, sélectionnez le lien vers le centre d Microsoft 365'administration.
 2. Dans la page **Accepter & autoriser** le partenaire, sélectionnez le lien du contrat client **Microsoft** et lisez le document.
 3. Cochez la case pour reconnaître que vous avez lu le contrat.
 4. Sélectionnez **Accepter & autoriser**.
@@ -75,13 +75,13 @@ Une fois que vous avez trouvé un partenaire et décidé de travailler avec lui,
 
 Si vous avez déjà un partenaire mais que vous n’avez pas encore signé de contrat client Microsoft, vous devez accepter le contrat avant qu’il puisse effectuer des achats ou gérer vos abonnements en votre nom.
 
-1. Si vous recevez un e-mail de votre partenaire, sélectionnez le lien pour aller au Centre d’administration Microsoft 365 ou sur la page Accepter <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">un contrat.</a>
+1. Si vous recevez un e-mail de votre partenaire, sélectionnez le lien pour vous rendre dans le Centre d’administration Microsoft 365 ou sur la page Accepter <a href="https://go.microsoft.com/fwlink/?linkid=2116573" target="_blank">un</a> contrat.
 2. Sélectionnez le lien du **contrat client Microsoft** et lisez le document.
 3. Cochez la case pour reconnaître que vous avez lu le contrat.
 4. Sélectionnez **Accepter**.
 5. La liste des partenaires avec qui vous travaillez s’affiche. Sélectionnez n’importe quel partenaire pour voir les détails.
 
-## <a name="remove-partner-admin-roles"></a>Supprimer les rôles d’administrateur partenaire
+## <a name="remove-partner-admin-roles"></a>Supprimer des rôles d’administrateur partenaire
 
 Selon la demande du partenaire, lorsque vous acceptez l’invitation, vous acceptez de lui donner des rôles d’administrateur global et d’administrateur du helpdesk. Lorsque vous accordez ces rôles d’administrateur à un partenaire, vous lui accordez automatiquement des privilèges d’administrateur délégués dans Azure AD. Pour plus d’informations, voir [Privilèges d’administrateur délégués dans Azure AD.](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)
 
@@ -89,7 +89,7 @@ Si vous ne souhaitez pas donner les rôles d’administrateur au partenaire, ann
 
 Vous pouvez supprimer des rôles d’administrateur d’un partenaire à tout moment. La suppression des rôles d’administrateur ne supprime pas la relation de partenaire. Ils peuvent toujours travailler avec vous à une autre capacité, par exemple un revendeur. Si vous décidez de ne plus travailler avec un partenaire, contactez-le pour mettre fin à la relation.
 
-1. Dans le Centre d’administration, allez à la page **Relations des partenaires paramètres.**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank"></a>
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">relations de partenaires.</a>
 2. Dans la page **Relations des** partenaires, sélectionnez la ligne qui contient le nom du partenaire à supprimer.
 3. Sélectionnez la ligne qui contient le nom du partenaire.
 4. Dans la page partenaire, sélectionnez **Supprimer des rôles.**

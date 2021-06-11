@@ -27,7 +27,7 @@ Dans Rubriques microsoft, le centre de rubriques est un site SharePoint moderne 
 
 Le centre de rubriques possède une page d’accueil par défaut avec le volet Web Rubriques dans laquelle tous les **utilisateurs** sous licence peuvent voir les rubriques à laquelle ils ont une connexion. 
 
-Bien que tous les utilisateurs titulaires d’une licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L’onglet Gérer les rubriques** s’affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques. 
+Bien que tous les utilisateurs sous licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L’onglet Gérer les rubriques** s’affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques. 
 
 ## <a name="where-is-my-topic-center"></a>Où se trouve mon centre de rubriques
 
@@ -37,7 +37,7 @@ Le centre de rubriques est créé lors de la configuration de Topics. Une fois l
 1. Dans le Microsoft 365 d’administration, sélectionnez **Paramètres,** puis sélectionnez **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** sélectionnez **Expériences des rubriques.**
 
-    ![Connecter connaissances](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 
 
 3. Sélectionnez **l’onglet Centre des** rubriques. Sous **Adresse du site** se trouve un lien vers votre centre de rubriques.
 

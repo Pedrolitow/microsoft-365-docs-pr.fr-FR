@@ -29,7 +29,7 @@ ms.locfileid: "52295090"
 ## <a name="hours"></a>Heures
 ### <a name="billing-support"></a>Support de facturation :
 
-Français : Mon-Fri 8H00 à 16h00
+Français : Mon-Fri 8 H 00 à 4 h 00
 
 Anglais : Mon-Fri 8H00 à 16h00
 

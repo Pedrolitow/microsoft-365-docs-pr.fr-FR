@@ -62,7 +62,7 @@ Une fois que vous avez exécuté une recherche et que vous l’avez affinée si 
 
 ## <a name="learn-more-about-content-search"></a>En savoir plus sur la recherche de contenu
 
-La recherche de contenu est facile à utiliser, mais il s’agit également d’un outil puissant. En arrière-plan, il se passe beaucoup de choses. Plus vous en sconnaissez et que vous comprenez son comportement et ses limitations, plus vous l’utiliserez pour répondre aux besoins de recherche et d’examen de votre organisation. Pour en savoir plus, approfondissez les sujets suivants :
+La recherche de contenu est facile à utiliser, mais il s’agit également d’un outil puissant. En arrière-plan, il se passe beaucoup de choses. Plus vous en sconnaissez et que vous comprenez son comportement et ses limitations, plus vous l’utiliserez pour répondre aux besoins de recherche et d’examen de votre organisation. Pour en savoir plus, approfondissez les sujets suivants :
   
 - [Éléments partiellement indexés](partially-indexed-items-in-content-search.md) dans Exchange et SharePoint et comment les inclure ou les exclure lorsque vous exportez et téléchargez des résultats de recherche
 

@@ -1,7 +1,7 @@
 ---
 title: Obtenir les ko manquants par ID d’appareil
 description: Récupère les mises à jour de sécurité manquantes par ID d’appareil
-keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d’appareil, api & gestion des vulnérabilités menace, Api tvm Microsoft Defender pour endpoint
+keywords: api, api de graphique, api pris en charge, obtenir, liste, fichier, informations, ID d’appareil, api & gestion des vulnérabilités menace, Api tvm microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

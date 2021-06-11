@@ -36,7 +36,7 @@ ms.locfileid: "52845461"
 - macOS
 - Linux
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
 Defender pour le point de terminaison offre une expérience centralisée des opérations de sécurité pour Windows et les plateformes non Windows réseau. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Centre de sécurité Microsoft Defender et mieux protéger le réseau de votre organisation. 
 
@@ -48,7 +48,7 @@ Vous devez connaître les versions exactes de Linux et macOS compatibles avec De
 Pour intégrer des appareils non Windows, vous devez suivre les étapes suivantes :
 1. Sélectionnez votre méthode d’intégration préférée :
 
-   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour Endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
    - Pour les autres appareils non Windows choisissez Intégrer des appareils non Windows par le biais **d’une intégration tierce.**   
     1. Dans le volet de navigation, sélectionnez **Partenaires d’interopérabilité.**  >   Assurez-vous que la solution tierce est répertoriée.
@@ -66,7 +66,7 @@ Pour intégrer des appareils non Windows, vous devez suivre les étapes suivante
 2. Supprimez les autorisations pour la solution tierce dans votre client Azure AD.
    1. Connectez-vous au [portail Azure](https://portal.azure.com).
    2. Sélectionnez **Azure Active Directory > Enterprise applications.**
-   3. Sélectionnez l’application que vous souhaitez hors-carte.
+   3. Sélectionnez l’application que vous souhaitez horsboard.
    4. Sélectionnez **le bouton** Supprimer.
 
 

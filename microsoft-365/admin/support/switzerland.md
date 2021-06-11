@@ -31,7 +31,7 @@ ms.locfileid: "52295126"
 
 Français : Lun.-ven. 9H-17h
 
-Allemand : Mon-Fri 9 h à 17 h
+Allemand : Mon-Fri 9h00 à 17h00
 
 Italien : Mon-Fri 9h00 à 17h00
 

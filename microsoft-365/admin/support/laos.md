@@ -1,5 +1,5 @@
 ---
-title: Informations de support pour la laos
+title: Informations de support pour Laos
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH

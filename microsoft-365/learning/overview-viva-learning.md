@@ -37,7 +37,7 @@ Les employés sont plus susceptibles de se déclarer satisfaits et de rester au 
 
 ### <a name="everyone"></a>Tout le monde
 
-Cette version d’apprentissage (prévisualisation) facilite l’intégration de l’apprentissage dans votre journée. Lorsque vous ouvrez La Version d’Microsoft Teams, vous voyez une vue personnalisée du contenu d’apprentissage de votre organisation et de vos partenaires, tels que LinkedIn Learning. Au cours de la recherche et de la formation, votre contenu recommandé sera mis à jour pour refléter vos intérêts.
+Cette version d’apprentissage facilite l’intégration de l’apprentissage dans votre journée. Lorsque vous ouvrez Learning (Prévisualisation) dans Microsoft Teams, vous voyez une vue personnalisée du contenu d’apprentissage de votre organisation et de vos partenaires, tels que LinkedIn Learning. Au cours de la recherche et de la formation, votre contenu recommandé sera mis à jour pour refléter vos intérêts.
 
 - Trouvez facilement les opportunités d’apprentissage fournies par votre organisation.
 - Parcourez les cours de LinkedIn Learning, Microsoft Learn, Microsoft 365 Training, Skillsoft, Coursera, edX, Pluralsight et d’autres partenaires d’apprentissage tiers.
@@ -70,7 +70,7 @@ L’administrateur du savoir doit être modérément technique et avoir des info
 Lorsque vous êtes prêt à installer et configurer Learning (Prévisualisation) dans votre environnement Microsoft 365 :
 
 - Utilisez le centre Microsoft Teams’administration pour [gérer Learning (Prévisualisation) au sein de votre organisation.](set-up-teams-admin-center.md)
-- Utilisez le centre d Microsoft 365 pour configurer des sources d’apprentissage [disponibles pour des groupes spécifiques.](content-sources-365-admin-center.md)
+- Utilisez le centre Microsoft 365'administration pour configurer des sources d’apprentissage [disponibles pour des groupes spécifiques.](content-sources-365-admin-center.md)
 - Utilisez le centre SharePoint’administration pour [gérer et stocker votre propre contenu d’apprentissage.](configure-sharepoint-content-source.md)
 
 

@@ -35,6 +35,6 @@ Anglais : Mon-Fri 9h00 à 18h00
 
 ### <a name="technical-support"></a>Support technique :
 
-Turc : Mon-Fri 8 h à 18 h
+Turc : Mon-Fri 8h00 à 18h00
 
 Anglais : 24h/24, 7j/7

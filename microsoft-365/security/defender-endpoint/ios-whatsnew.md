@@ -37,7 +37,7 @@ Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Ins
 
 ## <a name="1117240101"></a>1.1.17240101
 - La prise en charge de la gestion des applications mobiles (MAM) via Intune est généralement disponible avec cette version. Pour plus d’informations, voir Microsoft Defender pour les signaux de risque de point de terminaison [disponibles pour vos stratégies de protection des applications](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
-- **La détection d’jailbreak** est généralement disponible. Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
+- **La détection de jailbreak** est généralement disponible. Pour plus d’informations, voir [La stratégie d’accès conditionnel du programme d’installation basée sur les signaux de risque de l’appareil.](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - **La configuration automatique du profil VPN pour** les appareils inscrits via Microsoft Endpoint Manager (Intune) est généralement disponible. Pour plus d’informations, [voir profil VPN de configuration automatique pour les appareils iOS inscrits.](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding)
 - Corrections de bogues.
 

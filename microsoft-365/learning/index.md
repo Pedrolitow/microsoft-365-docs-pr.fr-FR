@@ -26,7 +26,7 @@ ms.locfileid: "52333505"
 > [!NOTE]
 > Les informations de cet article concernent un produit d’aperçu qui peut être considérablement modifié avant sa publication commerciale. 
 
-Microsoft Learning (prévisualisation) permet aux équipes et aux membres de votre organisation de faire de l’apprentissage une partie naturelle de leur journée. L’application crée un hub central dans Microsoft Teams où les employés peuvent partager, affecter et apprendre à partir de bibliothèques de contenu au sein de votre organisation.
+Microsoft Learning (Prévisualisation) permet aux équipes et aux membres de votre organisation de faire de l’apprentissage une partie naturelle de leur journée. L’application crée un hub central dans Microsoft Teams où les employés peuvent partager, affecter et apprendre à partir de bibliothèques de contenu au sein de votre organisation.
 
 Les ressources de cette page sont conçues pour vous permettre de découvrir et d’utiliser l’apprentissage Paréo (Prévisualisation) dans votre organisation.
 
@@ -34,21 +34,21 @@ Les ressources de cette page sont conçues pour vous permettre de découvrir et 
 
 Les ressources de cette section vous aident à en savoir plus sur ce qu’est Learning (Prévisualisation) et comment il peut aider votre organisation.
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |En savoir plus sur Learning (prévisualisation)|[Vue d’ensemble de Microsoft Learning (Prévisualisation)](overview-viva-learning.md)|
-|Trouver des ressources dans le Centre de ressources de la communauté technique Microsoft|[Communauté technique Microsoft Learning (prévisualisation)](https://resources.techcommunity.microsoft.com/viva-learning/)|
+|Trouver des ressources dans le Centre de ressources techniques Community Microsoft|[Microsoft Learning (Prévisualisation) Tech Community](https://resources.techcommunity.microsoft.com/viva-learning/)|
 |Rechercher des conseils à l’apprentissage (prévisualisation) pour les utilisateurs finaux|[Aide de Microsoft Learning (Prévisualisation)](https://support.microsoft.com/office/learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a)|
 
 ## <a name="set-up-and-administration"></a>Configuration et personnalisation
 
 Les ressources de cette section aident l’administrateur de votre organisation à configurer Etas Learning (Prévisualisation) dans votre environnement Microsoft 365.
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
 |Découvrez comment configurer Et installer Learning (prévisualisation)|[Configurer Microsoft Learning (prévisualisation)](set-up-teams-admin-center.md)|
 |Découvrez comment configurer des sources de contenu d’apprentissage|[Configurer les sources de contenu d’apprentissage](content-sources-365-admin-center.md)|
-|Découvrez comment ajouter votre propre contenu d’apprentissage|[Configurer SharePoint en tant que source de contenu](configure-sharepoint-content-source.md)|
+|Découvrez comment ajouter votre propre contenu d’apprentissage|[Configurer SharePoint comme source de contenu](configure-sharepoint-content-source.md)|
 
 
 

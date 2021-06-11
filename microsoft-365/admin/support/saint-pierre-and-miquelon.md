@@ -31,7 +31,7 @@ ms.locfileid: "52295462"
 
 Français : Mon-Fri 6 h-14 h
 
-Anglais : Mon-Fri 06:00-14:00
+Anglais : Mon-Fri 6 h à 14 h
 
 ### <a name="technical-support"></a>Support technique :
 

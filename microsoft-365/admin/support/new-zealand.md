@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295662"
 ---
-# <a name="contact-support-for-new-zealand"></a>Contacter le support technique pour la Nouvelle-Zélande
+# <a name="contact-support-for-new-zealand"></a>Contacter le support pour la Nouvelle-Zélande
 
 [Rechercher un autre pays ou une autre région](../../business-video/get-help-support.md).
 

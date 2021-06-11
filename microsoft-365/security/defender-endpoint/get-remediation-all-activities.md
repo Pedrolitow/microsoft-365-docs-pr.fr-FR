@@ -74,7 +74,7 @@ nameId | String | Nom du produit associé | Microsoft Silverlight
 priorité | String | Priorité définie par le créateur pour cette activité de correction (Haute\Moyenne\Faible) | Élevé
 productId | String | ID de produit associé | microsoft-_-silverlight
 productivityImpactRemediationType | String | Quelques modifications de configuration peuvent être demandées uniquement pour les appareils sans impact sur l’utilisateur. Cette valeur indique la sélection entre « tous les appareils exposés » ou « uniquement les appareils sans impact sur l’utilisateur ». | AllExposedAssets
-rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Serveurs », « Windows 10 » ]
+rbacGroupNames | String | Noms de groupes d’appareils associés | [ « Windows Servers », « Windows 10 » ]
 recommendedProgram | String | Programme recommandé pour la mise à niveau vers | null
 recommendedVendor | String | Fournisseur recommandé pour la mise à niveau vers | null
 recommendedVersion | String | Version recommandée pour la mise à jour/mise à niveau vers | null
@@ -85,7 +85,7 @@ requesterNotes | String | Notes (texte libre) ajoutées par le créateur pour ce
 scid | String | SCID de la recommandation de sécurité associée | null
 status | String | État de l’activité de correction (actif/terminé) | Actif
 statusLastModifiedOn | Date/heure | Date de mise à jour du champ d’état | 2021-01-12T18:54:11.5499487Z
-targetDevices | Entier long | Nombre d’appareils exposés à appliquer à cette correction | 43
+targetDevices | Entier long | Nombre d’appareils exposés pour qui cette correction s’applique | 43
 title | String | Titre de cette activité de correction | Mettre à jour Microsoft Silverlight
 type | String | Type de correction | Update
 vendorId | String | Nom du fournisseur associé | Microsoft
@@ -151,4 +151,4 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 
 - [Menaces basées sur les risques & gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 
-- [Vulnérabilités dans votre organisation](tvm-weaknesses.md)
+- [Vulnérabilités de votre organisation](tvm-weaknesses.md)
