@@ -10,18 +10,18 @@ ms.sitesec: library
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/07/2021
+ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 66b2e882a0f6de21e27dabb3a4bfe2fe113bcb32
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 505270d319a78de20bf6fed01b7ca79c9fc2b400
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296483"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903803"
 ---
 # <a name="turn-on-definition-retirement"></a>Activer le retrait des définitions
 
@@ -35,11 +35,11 @@ Vous pouvez configurer le retrait des définitions à l’aide de la stratégie 
 
 ## <a name="use-group-policy-to-configure-definition-retirement"></a>Utiliser la stratégie de groupe pour configurer le retrait des définitions
 
-1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
+1. Sur votre point de terminaison de gestion des stratégies de groupe, ouvrez la [console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
 2. Go to **Computer Configuration**  >  **Administrative Templates** Windows  >  **Components**  >  **Antivirus Microsoft Defender** Network  >  **Inspection System**. 
 
-3. Sélectionnez **Activer le retrait de définition.** Par défaut, cette stratégie est activée. Si la configuration **n’est pas configurée,** le retrait de définition est activé. 
+3. Sélectionnez **Activer le retrait de définition.** Par défaut, cette stratégie est activée. Si la définition **n’est pas configurée,** le retrait de définition est activé. 
 
 4. Pour modifier la stratégie, sélectionnez le lien **modifier le paramètre de stratégie.**
 
@@ -50,10 +50,3 @@ Vous pouvez configurer le retrait des définitions à l’aide de la stratégie 
 > [!TIP]
 > Utilisez-vous des objets de stratégie de groupe en local ? Découvrez comment ils traduisent dans le cloud. [Analysez vos objets de stratégie](/mem/intune/configuration/group-policy-analytics)de groupe en local à l’aide de l’analyse de stratégie de groupe dans Microsoft Endpoint Manager - Aperçu . 
   
-## <a name="related-articles"></a>Articles connexes
-
-- [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)
- 
-- [Protection fournie par le cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
-
-- [Comment créer et déployer des stratégies de logiciel anti-programme malveillant : service de protection cloud](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)

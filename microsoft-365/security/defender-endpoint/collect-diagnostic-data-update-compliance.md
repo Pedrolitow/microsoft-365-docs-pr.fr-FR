@@ -16,23 +16,21 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2aaf3d1c650713a7f6cfb7b9abb9f2232013d6db
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9fbe2b624bec6bbe17bcf6bc8d3f842ba1e43ad7
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274795"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903731"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a>Collecter les données de diagnostic de conformité des mises à jour pour l’évaluation de Microsoft Defender AV
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Collecter des données de diagnostic de conformité des mises à jour pour l Antivirus Microsoft Defender évaluation
 
 
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Cet article explique comment collecter des données de diagnostic qui peuvent être utilisées par le support microsoft et les équipes d’ingénierie pour vous aider à résoudre les problèmes que vous pouvez rencontrer lors de l’utilisation de la section Évaluation de l’Antivirus Microsoft Defender dans le module de conformité des mises à jour.
+Cet article explique comment collecter des données de diagnostic qui peuvent être utilisées par le support microsoft et les équipes d’ingénierie pour vous aider à résoudre les problèmes que vous pouvez rencontrer lors de l’utilisation de la section évaluation Antivirus Microsoft Defender dans le module de conformité des mises à jour.
 
 Avant d’essayer ce processus, assurez-vous que vous avez lu résolution des problèmes Antivirus Microsoft Defender [rapports,](troubleshoot-reporting.md)satisfait à toutes les conditions préalables requises et pris les autres suggestions de procédures de dépannage.
 
@@ -42,9 +40,9 @@ Sur au moins deux appareils qui ne sont pas signalés ou qui s’affichent dans 
         
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis cliquez **sur Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
 
-    c. Entrez les informations d’identification de l’administrateur ou approuvez l’invite.
+    c. Spécifiez les informations d’identification de l’administrateur ou approuvez l’invite.
         
 2. Accédez au répertoire Windows Defender de recherche. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
 
@@ -58,7 +56,7 @@ Sur au moins deux appareils qui ne sont pas signalés ou qui s’affichent dans 
 
 5. Copiez ces .cab vers un emplacement accessible par le support Microsoft. Par exemple, il peut s’agit d’un dossier OneDrive protégé par mot de passe que vous pouvez partager avec nous.
 
-6. Envoyez un courrier <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>électronique à l’aide du modèle de courrier électronique de prise en charge de la conformité des mises à jour et remplissez le modèle avec les informations suivantes :
+6. Envoyez un courrier <a href="mailto:ucsupport@microsoft.com?subject=MDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>électronique à l’aide du modèle de courrier électronique de prise en charge de la conformité des mises à jour et remplissez le modèle avec les informations suivantes :
   
     ```
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:

@@ -18,13 +18,13 @@ ms.collection:
 description: Découvrez les actions de correction dans les fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/29/2021
-ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.date: 06/10/2021
+ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878771"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904127"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
@@ -52,16 +52,16 @@ Ces mesures correctives ne sont prises que si votre équipe en charge des opéra
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
 
-## <a name="undo-one-remediation-action"></a>Annuler une action de correction
+## <a name="change-or-undo-one-remediation-action"></a>Modifier ou annuler une action de correction
 
 1. Go to the Action center ( <https://security.microsoft.com/action-center> ) and sign in.
-2. Sous **l’onglet** Historique, sélectionnez une action à annuler.
+2. Sous **l’onglet** Historique, sélectionnez une action que vous souhaitez modifier ou annuler.
 3. Dans le volet sur le côté droit de l’écran, sélectionnez **Annuler**.
 
-## <a name="undo-multiple-remediation-actions"></a>Annuler plusieurs actions de correction
+## <a name="change-or-undo-multiple-remediation-actions"></a>Modifier ou annuler plusieurs actions de correction
 
 1. Go to the Action center ( <https://security.microsoft.com/action-center> ) and sign in.
-2. Sous **l’onglet** Historique, sélectionnez les actions à annuler. Veillez à sélectionner les éléments qui ont le même type d’action. Un volet volant s’ouvre.
+2. Sous **l’onglet** Historique, sélectionnez les actions que vous souhaitez modifier ou annuler. Veillez à sélectionner les éléments qui ont le même type d’action. Un volet volant s’ouvre.
 3. Dans le volet volant, sélectionnez Annuler.
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Pour supprimer un fichier de la quarantaine sur plusieurs appareils

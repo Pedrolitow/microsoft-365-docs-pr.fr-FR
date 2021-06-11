@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c62f175fc8227f64b9f18de78a2a793b2201691c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782368"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903815"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements Azure
 
@@ -42,9 +42,12 @@ ms.locfileid: "52782368"
 3. Créez un espace de noms Hub d’événements, sélectionnez Hub d’événements **>** Ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique en fonction de la charge attendue. Pour plus d’informations, voir [Tarification - Hub d’événements | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
 ### <a name="add-contributor-permissions"></a>Ajouter des autorisations de collaborateur 
-Une fois l’espace de noms Hub d’événements créé, vous devez ajouter le principal du service d’inscription de l’application en tant que lecteur, récepteur de données Azure Event Hub et utilisateur qui se connectera à Microsoft 365 Defender en tant que collaborateur (cette opération peut également être effectuée au niveau du groupe de ressources ou de l’abonnement). 
+Une fois l’espace de noms Hub d’événements créé, vous devez :
+1. Définissez l’utilisateur qui se connectera à Microsoft 365 Defender en tant que collaborateur.
 
-Accédez à l’espace de noms **Hubs d’événements > contrôle d’accès (IAM) > ajouter** et vérifier sous **attributions de rôles.**
+2. Si vous vous connectez à une application, ajoutez le principal du service d’inscription de l’application en tant que lecteur, récepteur de données Azure Event Hub (cette procédure peut également être effectuée au niveau du groupe de ressources ou de l’abonnement). 
+
+    Accédez à l’espace de noms **Hubs d’événements > contrôle d’accès (IAM) > ajouter** et vérifier sous **attributions de rôles.**
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
@@ -68,9 +71,9 @@ Accédez à l’espace de noms **Hubs d’événements > contrôle d’accès (I
 
 8. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
 
-## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Schéma des événements dans Azure Event Hub
+## <a name="the-schema-of-the-events-in-azure-event-hub"></a>Schéma des événements dans Le Hub d’événements Azure
 
-```
+```JSON
 {
     "records": [
                     {
@@ -103,7 +106,7 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
 
 2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement :
  
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 

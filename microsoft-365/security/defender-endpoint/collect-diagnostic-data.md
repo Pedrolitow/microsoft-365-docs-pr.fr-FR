@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7686f28646135986a78b4c269e41e2fc3a70dff9
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274783"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904043"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Collecter les données de diagnostic de l’Antivirus Microsoft Defender
 
@@ -43,14 +43,14 @@ Sur au moins deux appareils qui rencontrent le même problème, obtenez le fichi
 
     a. Ouvrez **le** menu Démarrer.
 
-    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis cliquez **sur Exécuter en tant qu’administrateur.**
+    b. Tapez **cmd**. Cliquez avec le bouton droit sur **l’invite de** commandes, puis **sélectionnez Exécuter en tant qu’administrateur.**
 
-    c. Entrez les informations d’identification de l’administrateur ou approuvez l’invite.
+    c. Spécifiez les informations d’identification de l’administrateur ou approuvez l’invite.
 
 2. Accédez au répertoire Microsoft Defender. Par défaut, cette valeur est `C:\Program Files\Windows Defender`.
 
 > [!NOTE]
-> Si vous exécutez une version mise à jour de la plateforme [Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
+> Si vous exécutez une version mise à jour de [la plateforme Microsoft Defender,](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform)exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`
 
 3. Tapez la commande suivante, puis appuyez sur **Entrée**  
 
@@ -103,7 +103,7 @@ Lorsque le paramètre SupportLogLocation est utilisé, une structure de dossiers
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>Spécifier l’emplacement où les données de diagnostic sont créées
 
-Vous pouvez également spécifier l’endroit .cab de diagnostic sera créé à l’aide d’un objet de stratégie de groupe (GPO). 
+Vous pouvez également spécifier l'.cab de diagnostic à l’aide d’un objet de stratégie de groupe ( GPO). 
 
 1. Ouvrez l’Éditeur de stratégie de groupe locale et recherchez l’po GPO SupportLogLocation à l':: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
    
@@ -115,7 +115,7 @@ Vous pouvez également spécifier l’endroit .cab de diagnostic sera créé à 
 3. À l’intérieur de l’éditeur de stratégie, **sélectionnez Activé.**
        
 4. Spécifiez le chemin d’accès du répertoire où vous souhaitez copier les fichiers journaux de support dans le **champ Options.**
-     ![Capture d’écran du paramètre personnalisé du chemin d’accès au répertoire activé](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+     ![Capture d’écran du paramètre personnalisé de chemin d’accès au répertoire activé](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
 5. Sélectionnez **OK** ou **Appliquer.**
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,6 +1,6 @@
 ---
 title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
-description: Les règles de réduction de la surface d’attaque peuvent empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
+description: Les règles de réduction de la surface d’attaque peuvent aider à empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,16 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 55b06ca25047fe615bd0011528fbdbe5112a4533
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844981"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903851"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
@@ -41,7 +39,7 @@ Les règles de réduction de la surface d’attaque ciblent certains comportemen
 
 - Lancement de fichiers exécutables et de scripts qui tentent de télécharger ou d’exécuter des fichiers ;
 - Exécution de scripts obscurcis ou suspects ; et
-- Comportement d’une application qui n’est généralement pas initiée pendant le travail quotidien normal.
+- Des comportements que les applications n’initient généralement pas pendant le travail quotidien normal.
 
 De tels comportements logiciels sont parfois observés dans les applications légitimes ; Toutefois, ces comportements sont souvent considérés comme risqués, car ils sont couramment abusés par des personnes malveillantes par le biais de programmes malveillants. Les règles de réduction de la surface d’attaque peuvent limiter les comportements à risque et contribuer à la sécurité de votre organisation.
 
@@ -53,7 +51,7 @@ Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’a
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Contrôle de sécurité pour la règle de réduction de la surface d’attaque":::
 
-Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer le pourcentage de vos appareils qui peuvent accepter une nouvelle stratégie autorisant la règle en mode de blocage sans affecter la productivité.
+Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer quel pourcentage de vos appareils peuvent accepter une nouvelle stratégie permettant d’activer la règle en mode de blocage sans affecter la productivité.
 
 ## <a name="audit-mode-for-evaluation"></a>Mode audit pour l’évaluation
 
@@ -97,7 +95,7 @@ Chaque fois qu’une règle de réduction de la surface d’attaque est déclenc
 
 En outre, lorsque certaines règles de réduction de la surface d’attaque sont déclenchées, des alertes sont générées.
 
-Les notifications et les alertes générées peuvent être vues dans le Centre de sécurité Microsoft Defender ( ) et dans le centre de sécurité [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ).
+Les notifications et les alertes générées peuvent être vues dans le portail Microsoft 365 Defender ( ) (anciennement appelé Centre de sécurité Microsoft Defender [https://security.microsoft.com](https://security.microsoft.com) ). [](microsoft-defender-security-center.md)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Événements de réduction de la surface d’attaque et de recherche avancée
 
@@ -116,13 +114,13 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent [pas Windows licence E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender](microsoft-defender-endpoint.md)pour le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans le centre de sécurité [Microsoft 365](/microsoft-365/security/defender/overview-security-center). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professional ou Windows E3 ; toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas [Windows licence E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender](microsoft-defender-endpoint.md)pour le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professional ou Windows E3 ; toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Passer en revue les événements de réduction de la surface d’attaque dans le Centre de sécurité Microsoft Defender
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Passer en revue les événements de réduction de la surface d’attaque dans le Microsoft 365 Defender
 
 Defender pour le point de terminaison fournit des rapports détaillés pour les événements et les blocages dans le cadre de scénarios d’investigation d’alerte.
 
-Vous pouvez interroger Defender pour obtenir des données de point de terminaison à l’aide [d’une recherche avancée.](advanced-hunting-query-language.md) Si vous exécutez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour comprendre l’impact des règles de réduction de la surface d’attaque sur votre environnement.
+Vous pouvez interroger Defender pour obtenir des données de point de terminaison [dans Microsoft 365 Defender](microsoft-defender-security-center.md) à l’aide d’un recherche [avancée.](advanced-hunting-query-language.md) Si vous exécutez le [mode audit,](audit-windows-defender.md)vous pouvez utiliser la recherche avancée pour comprendre l’impact des règles de réduction de la surface d’attaque sur votre environnement.
 
 Voici un exemple de requête :
 
@@ -136,9 +134,13 @@ DeviceEvents
 Vous pouvez consulter le journal Windows événements pour afficher les événements générés par les règles de réduction de la surface d’attaque :
 
 1. Téléchargez le [package d’évaluation](https://aka.ms/mp7z2w) et *extrayez* le fichiercfa-events.xmlun emplacement facilement accessible sur l’appareil.
+
 2. Entrez les mots, *Observateur d’événements,* dans le menu Démarrer pour ouvrir l Windows’observateur d’événements.
+
 3. Sous **Actions,** **sélectionnez Importer un affichage personnalisé...**.
+
 4. Sélectionnez le fichier *cfa-events.xml'où* il a été extrait. Vous pouvez également [copier le XML directement.](event-views.md)
+
 5. Sélectionnez **OK**.
 
 Vous pouvez créer une vue personnalisée qui filtre les événements pour afficher uniquement les événements suivants, tous liés à l’accès contrôlé aux dossiers :
@@ -159,7 +161,7 @@ Si vous configurez des règles de réduction de la surface d’attaque à l’ai
 
 |Nom de la règle|GUID|Exclusions de & fichiers|Système d’exploitation minimal pris en charge|
 |---|:---:|---|---|
-|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure) |
+|[Bloquer l’utilisation abusive des pilotes signés vulnérables exploités](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Pris en charge|[Windows 10 version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure) |
 |[Empêcher Adobe Reader de créer des processus enfants](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Empêcher toutes les applications Office de créer des processus enfants](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
@@ -179,7 +181,7 @@ Si vous configurez des règles de réduction de la surface d’attaque à l’ai
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquer l’utilisation abusive des pilotes signés vulnérables exploités
 
-Cette règle empêche une application d’écrire un pilote vulnérable signé sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à une compromission du système.
+Cette règle empêche une application d’écrire un pilote vulnérable signé sur le disque. Les pilotes signés in-the-wild et vulnérables peuvent être exploités par des applications locales qui ont des \- _privilèges suffisants_ pour accéder \- au noyau. Les pilotes signés vulnérables permettent aux attaquants de désactiver ou de contourner les solutions de sécurité, ce qui peut conduire à la compromission du système.
 
 Cette règle ne bloque pas le chargement d’un pilote déjà existant sur le système.
 
@@ -206,7 +208,7 @@ GUID :  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 Cette règle empêche les attaques en empêchant Adobe Reader de créer des processus.
 
-Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants peuvent télécharger et lancer des charges utiles, et sortir d’Adobe Reader. En empêchant les processus enfants d’être générés par Adobe Reader, les programmes malveillants qui tentent de l’utiliser comme vecteur sont empêchés de se propager.
+Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants peuvent télécharger et lancer des charges utiles, et sortir d’Adobe Reader. En bloquant la production de processus enfants par Adobe Reader, les programmes malveillants qui tentent de l’utiliser comme vecteur sont empêchés de se propager.
 
 Cette règle a été introduite dans :
 
@@ -503,7 +505,7 @@ Cette règle fournit une couche supplémentaire de protection contre les ransomw
 La règle a tendance à faire preuve de prudence pour empêcher les ransomware.
 
 > [!NOTE]
-> Vous devez [activer la protection cloud pour](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) utiliser cette règle.
+> Vous devez [activer la protection cloud pour](enable-cloud-protection-microsoft-defender-antivirus.md) utiliser cette règle.
 
 Cette règle a été introduite dans :
 
@@ -518,9 +520,4 @@ Nom du Gestionnaire de configuration : `Use advanced protection against ransomwa
 
 GUID : `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>Voir aussi
 
-- [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.md)
-- [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
-- [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
-- [Compatibilité des Antivirus Microsoft Defender avec d’autres solutions antivirus/anti-programme malveillant](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

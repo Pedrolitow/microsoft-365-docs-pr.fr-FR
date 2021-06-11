@@ -17,130 +17,77 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemande.'
-ms.openlocfilehash: 27426a26befab85bf62a0a143861e447dd722724
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemands.'
+ms.openlocfilehash: cdb3278e1d96b2ebdced122ab53db716c3195d8c
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861302"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903881"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
-Les appareils joints à Azure AD et inscrits connectés à Microsoft Cloud Deutschland doivent être migrés après la phase 9 et avant la phase 10. La migration d’un appareil dépend du type d’appareil, du système d’exploitation et de la relation AAD. 
+Les appareils joints à Azure AD et inscrits connectés à Microsoft Cloud Deutschland doivent être migrés après la phase 9 et avant la phase 10. La migration d’un appareil dépend du type d’appareil, du système d’exploitation et de la relation Azure AD. 
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
-
-**Comment savoir si mon organisation est affectée ?**
-
-Les administrateurs doivent vérifier s’ils ont des appareils inscrits ou joints `https://portal.microsoftazure.de` à Azure AD. Si votre organisation dispose d’appareils inscrits, vous êtes affecté.
-
-**Quel est l’impact sur mes utilisateurs ?**
-
-Les utilisateurs d’un appareil enregistré ne pourront plus se connecter une fois la [phase de migration 10](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) terminée et les points de terminaison de Microsoft Cloud Deutschland désactivés.  
-
-Assurez-vous que tous vos appareils sont enregistrés auprès du point de terminaison mondial avant que votre organisation ne soit déconnectée de Microsoft Cloud Deutschland.
-  
-**Quand mes utilisateurs ré-inscrivent-ils leurs appareils ?**
-
-Il est essentiel pour votre réussite que vous désins inscrivez et réenregistrez vos appareils une fois la [phase 9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) terminée. Vous devez terminer la ré-inscription avant le démarrage de la phase 10, sinon vous risquez de perdre l’accès à votre appareil.
-
-**Comment restaurer l’état de mon appareil après la migration ?**
-
-Pour les appareils Windows d’entreprise enregistrés auprès d’Azure AD, les administrateurs pourront gérer la migration de ces appareils via des flux de travail déclenchés à distance qui désinsisteront les anciens états d’appareil.
-  
-Pour tous les autres appareils, y compris les appareils Windows personnels enregistrés dans Azure AD, l’utilisateur final doit effectuer ces étapes manuellement. Pour les appareils joints à Azure AD, les utilisateurs doivent avoir un compte d’administrateur local pour se désins inscrire, puis réenregistrer leurs appareils.
-
-Consultez les instructions détaillées pour savoir comment restaurer correctement les états de l’appareil ci-dessous. 
- 
-**Comment savoir que tous mes appareils sont inscrits dans le cloud public ?**
-
-Pour vérifier si vos appareils sont enregistrés dans le cloud public, vous devez exporter et télécharger la liste des appareils à partir du portail Azure AD vers une feuille de calcul Excel. Ensuite, filtrez les appareils inscrits (à l’aide de la colonne _registeredTime)_ après la phase de migration Distinct [de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
-
-## <a name="additional-considerations"></a>Considérations supplémentaires
-L’inscription de l’appareil est désactivée après la migration du client et ne peut pas être activée ou désactivée. 
-
-Si Intune n’est pas utilisé, connectez-vous à votre abonnement et exécutez cette commande pour réactiver l’option :
-
-```powershell
-Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
-```
-**IMPORTANT :** Le principal de service Intune sera activé après la migration commerciale, ce qui implique l’activation d’Azure AD Device Registration. Si vous avez bloqué l’inscription des appareils Azure AD avant la migration, vous devez désactiver le principal de service Intune avec PowerShell pour désactiver à nouveau l’inscription des appareils Azure AD avec le portail Azure AD. Vous pouvez désactiver le principal de service Intune avec cette commande dans la Azure Active Directory PowerShell pour Graph module.
-
-```powershell
-Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
-```
-
-
-## <a name="azure-ad-join"></a>Azure AD Join
-Cela s’applique Windows 10 appareils mobiles. 
-
-Si un appareil est joint à Azure AD, il doit être déconnecté d’Azure AD et être de nouveau connecté. 
+## <a name="azure-ad-joined-windows-10-devices"></a>Appareils joints à Azure AD Windows 10 appareils
+Si un Windows 10 est joint à Azure AD, il doit être déconnecté d’Azure AD et doit être connecté à nouveau. 
 
 [![Azure AD Device ](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png) Re-Join Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
 
-Si l’utilisateur est un administrateur sur l’appareil Windows 10, l’utilisateur peut désinsser l’appareil d’Azure AD et le rejoindre à nouveau. S’il n’a pas de privilèges d’administrateur, l’utilisateur a besoin des informations d’identification d’un compte d’administrateur local sur cet ordinateur. 
-
-
-Un administrateur peut créer un compte d’administrateur local sur l’appareil en suivant ce chemin de configuration :
-
-*Paramètres > comptes > autres comptes > informations d’identification inconnues > ajouter un utilisateur sans compte Microsoft*
+Si l’utilisateur est un administrateur sur l’appareil Windows 10, il peut désinsser l’appareil d’Azure AD et le rejoindre à nouveau en trois étapes. 
 
 ### <a name="step-1-determine-if-the-device-is-azure-id-joined"></a>Étape 1 : Déterminer si l’appareil est joint à Azure ID
-1.  Connectez-vous avec le courrier électronique et le mot de passe des utilisateurs.
-2.  Accédez à Paramètres > comptes > Access Work ou School. 
-3.  Rechercher un utilisateur dans la liste avec **connecté à... 's Azure AD**. 
-4.  Si un utilisateur connecté existe, procédez à l’étape 2. Si ce n’est pas le cas, aucune action supplémentaire n’est requise.
+1.  Connectez-vous avec votre compte professionnel.
+2.  Go to **Paramètres**  >  **Accounts**  >  **Access Work or School**. 
+3.  Rechercher un compte dans la liste avec **connecté à [...]' s Azure AD**. 
+4.  Si un compte connecté existe, procédez à l’étape 2. 
 ### <a name="step-2-disconnect-the-device-from-azure-ad"></a>Étape 2 : Déconnecter l’appareil d’Azure AD
-1.  Appuyez sur Déconnectez-vous sur le compte scolaire ou scolaire ou scolaire connecté.  
+1.  Cliquez **sur Déconnecter** sur le compte scolaire ou scolaire ou scolaire connecté. 
 2.  Confirmez la déconnexion deux fois. 
-3.  Entrez le nom d’utilisateur et le mot de passe de l’administrateur local. L’appareil est déconnecté.
+3.  Entrez un nom d’utilisateur et un mot de passe d’administrateur local. L’appareil est déconnecté.
 4.  Redémarrez l’appareil.
 ### <a name="step-3-join-the-device-to-azure-ad"></a>Étape 3 : Joindre l’appareil à Azure AD
-1.  l’utilisateur se connexion avec les informations d’identification de l’administrateur local
-2.  Accédez **à Paramètres** **puis Comptes,** **puis Accéder au travail ou à l’établissement scolaire**
-3.  Appuyez **sur Connecter**
-4.  **IMPORTANT**: **appuyez sur Rejoindre Azure AD**
-5.  Entrez l’adresse de messagerie et le mot de passe de l’utilisateur. L’appareil est connecté
-6.  Redémarrer l’appareil 
-7.  se signer avec votre adresse de messagerie et votre mot de passe
+1.  Connectez-vous avec les informations d’identification de l’administrateur local.
+2.  Go to **Paramètres**  >  **Accounts**  >  **Access Work or School**.
+3.  Cliquez sur **Connecter**.
+4.  **IMPORTANT**: cliquez **sur Rejoindre Azure AD.**
+5.  Entrez l’adresse de messagerie et le mot de passe de votre compte de travail. L’appareil est connecté.
+6.  Redémarrez l’appareil.
+7.  Connectez-vous avec l’adresse e-mail et le mot de passe de votre compte de travail.
 
-## <a name="azure-ad-registered-company-owned"></a>Azure AD Registered (propriété de l’entreprise)
+Si l’utilisateur n’est pas administrateur de l’appareil, un administrateur général Azure AD peut créer le compte d’administrateur local sur l’appareil en suivant ce chemin de configuration et l’un des deux :
 
-Pour déterminer si l’Windows 10 est inscrit à Azure AD, exécutez la commande suivante sur l’appareil :
+*Paramètres > comptes > autres comptes > informations d’identification > ajouter un utilisateur sans compte Microsoft*
 
-```console
-%SystemRoot%\system32\dsregcmd.exe /status
-```
+Pour re-rejoindre, les informations d’identification de n’importe quel compte de travail de votre organisation peuvent être utilisées dans cette étape. 
 
-Si l’appareil est enregistré dans Azure AD, vous verrez la sortie suivante :
+Sachez que le compte de travail utilisé pour joindre l’appareil sera automatiquement promu en tant qu’administrateur de l’appareil.
+Tout autre compte professionnel de l’organisation peut se connecter à l’appareil, mais ne dispose pas de privilèges d’administrateur.
 
-```console
-+----------------------------------------------------------------------+
-| User State                                                           |
-+----------------------------------------------------------------------+
-           WorkplaceJoined : YES
-          WamDefaultSet : NO
-          WamDefaultAuthority : organizations
-```
+## <a name="azure-ad-registered-workplace-joined-windows-10-devices"></a>Azure AD inscrit (joint à l’espace de travail) Windows 10 appareils
+Si un Windows 10 est inscrit à Azure AD, il doit être déconnecté d’Azure AD et de nouveau connecté.
 
-Pour supprimer le compte Azure AD existant sur l’appareil :
+[![Azure AD Device ](../media/ms-cloud-germany-migration-opt-in/AAD-ReRegistration-flow.png) Re-Registration Flow](../media/ms-cloud-germany-migration-opt-in/AAD-ReJoin-flow.png#lightbox)
 
-- Pour supprimer le compte Azure AD enregistré sur l’appareil, utilisez CleanupWPJ, un outil que vous pouvez télécharger à partir [ d’ici :CleanupWPJ.zip](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip).
+### <a name="step-1-determine-if-the-device-is-azure-id-registered"></a>Étape 1 : Déterminer si l’appareil est inscrit sur Azure ID
+1.  Connectez-vous avec votre utilisateur.
+2.  Go to **Paramètres**  >  **Accounts**  >  **Access Work or School**. 
+3.  Découvrez votre compte de travail dans la liste et vérifiez s’il **est connecté à [...]' s Azure AD**.
 
-- Extrayez le fichier ZIP et exécutez **WPJCleanup.cmd**. Cet outil lance le bon exécutable en fonction de la version de Windows sur l’appareil.
+    Si votre compte de travail figure dans la liste mais n’est pas connecté à Azure AD, procédez à l’étape 2.
 
-- À l’aide d’un mécanisme tel que la stratégie de groupe, l’administrateur peut exécuter la commande sur l’appareil dans le contexte de tout utilisateur connecté à l’appareil.
+    Dans le cas contraire, votre appareil est joint à Azure AD et vous devez faire référence à [Azure AD Joined Windows 10 appareils.](#azure-ad-joined-windows-10-devices)
 
-Pour désactiver les invites du Gestionnaire de comptes Web pour inscrire l’appareil dans Azure AD, ajoutez cette valeur de Registre : 
-
-- Emplacement : HKLM\SOFTWARE\Policies\Microsoft\Windows\WorkplaceJoin
-- Type : DWORD (32 bits)
-- Nom : BlockAADWorkplaceJoin
-- Données de valeur : 1
-
-La présence de cette valeur de Registre doit bloquer l’accès à l’espace de travail et empêcher les utilisateurs de voir des invites pour rejoindre l’appareil.
+### <a name="step-2-disconnect-the-device-from-azure-ad"></a>Étape 2 : Déconnecter l’appareil d’Azure AD
+1.  Cliquez sur votre compte de travail. Les boutons *Informations et* *Déconnexion* apparaissent.
+2.  Cliquez sur **Déconnecter.** 
+3.  Confirmez la suppression du compte de l’appareil en **cliquant** sur Oui .
+### <a name="step-3-connect-the-device-to-azure-ad"></a>Étape 3 : Connecter l’appareil vers Azure AD
+1.  Cliquez sur **Connecter**.
+2.  Entrez l’adresse e-mail de votre compte de travail, puis cliquez sur **Suivant.**
+3.  Entrez le mot de passe de votre compte de travail, puis cliquez **sur Se connectez.**
+4.  Confirmez en cliquant sur **Terminé**. Votre compte de travail est de nouveau répertorié.
 
 ## <a name="android"></a>Android
 
@@ -164,7 +111,7 @@ Pour désins inscrire et réenregistrer un appareil Android à l’Paramètres p
 1.  Ouvrez **Device Paramètres** et go to **Accounts**.
 2.  Sélectionnez le compte de travail que vous souhaitez ré-inscrire et **sélectionnez Supprimer le compte.**
 3.  Une fois le compte supprimé, dans la **page** Comptes, sélectionnez Ajouter un **compte > compte de travail.**
-4.  Pour **Workplace Join,** tapez votre adresse e-mail et **sélectionnez Rejoindre** pour terminer l’inscription de l’appareil.
+4.  For **Workplace Join**, type your email address and select **Join** to complete registering the device.
 
 Pour désins inscrire et réenregistrer l’appareil sur Android, Portail d’entreprise :
 
@@ -177,7 +124,7 @@ Pour plus d’informations sur les actions requises pendant la phase de migratio
 
 ## <a name="ios"></a>iOS
 
-Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les comptes mis en cache de l’Microsoft Authenticator, désins inscrire l’appareil et se dé dé connecter à partir de toutes les applications natives de l’appareil.
+Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les comptes mis en cache de l’Microsoft Authenticator, désinsister l’appareil et se dé dé connecter à partir de toutes les applications natives de l’appareil.
 
 ### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Étape 1 : si elle est présente, supprimez le compte de l’application Microsoft Authenticator client
 
@@ -195,6 +142,29 @@ Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les compt
 ### <a name="step-3-sign-out-from-individual-apps-if-necessary"></a>Étape 3 : Se sortir des applications individuelles si nécessaire
 
 Les utilisateurs peuvent se rendre sur des applications individuelles telles que Outlook, Teams et OneDrive, et supprimer des comptes de ces applications.
+
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+
+**Comment savoir si mon organisation est affectée ?**
+
+Les administrateurs doivent vérifier s’ils ont des appareils Azure AD inscrits ou joints `https://portal.microsoftazure.de` à Azure AD. Si votre organisation dispose d’appareils Azure AD inscrits ou joints à Azure AD, votre organisation doit suivre les instructions de cette page.
+
+**Quand mes utilisateurs ré-inscrivent-ils leurs appareils ?**
+
+Pour réussir, vous devez uniquement désins inscrire et réenregistrer vos appareils une fois la [phase 9](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) terminée. Vous devez terminer la ré-inscription avant le démarrage de la phase 10, sinon vous risquez de perdre l’accès à votre appareil.
+
+**Comment savoir que tous mes appareils sont inscrits dans le cloud public ?**
+
+Pour vérifier si vos appareils sont enregistrés dans le cloud public, vous devez exporter et télécharger la liste des appareils à partir du portail Azure AD vers une feuille de calcul Excel. Ensuite, filtrez les appareils inscrits (à l’aide de la colonne _registeredTime)_ après la date à laquelle votre organisation a passé la phase 9 du [processus de migration.](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)
+
+## <a name="additional-considerations"></a>Considérations supplémentaires
+
+> [!IMPORTANT]
+> Le principal de service Intune sera activé après la [phase 3](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer)du processus de migration, ce qui implique l’activation d’Azure AD Device Registration. Si vous avez bloqué l’inscription des appareils Azure AD avant la migration, vous devez désactiver le principal de service Intune avec PowerShell pour désactiver à nouveau l’inscription des appareils Azure AD avec le portail Azure AD. Vous pouvez désactiver le principal de service Intune avec cette commande dans la Azure Active Directory PowerShell pour Graph module.
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ## <a name="more-information"></a>Plus d’informations
 

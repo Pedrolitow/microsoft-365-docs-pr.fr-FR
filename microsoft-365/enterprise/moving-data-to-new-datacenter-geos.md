@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 description: Découvrez les nouvelles Office 365 de centres de données et comment utiliser l’option de résidence des données pour demander un déplacement de vos données principales vers une nouvelle géo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f752956506df98ea71d0d02886d14dc719ed9413
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60e04525843e8e7557eab2f804680d6d5dddd4d8
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921605"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904091"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données
 
 Nous continuons à ouvrir de nouvelles géos de centres de données pour Microsoft 365 services. Ces nouvelles régions de centre de données permettent d'accroître la capacité et le nombre de ressources de calcul pour prendre en charge la demande continue des clients et l'augmentation de l'utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles. 
 
 Les données client essentielles sont un terme qui fait référence à un sous-ensemble de données client, notamment : 
-- Exchange Online contenu de boîte aux lettres (corps du courrier électronique, entrées de calendrier et contenu des pièces jointes)
+- Exchange Online de boîte aux lettres (corps du courrier électronique, entrées de calendrier et contenu des pièces jointes)
 - SharePoint Contenu du site en ligne et fichiers stockés dans ce site
 - Fichiers téléchargés vers OneDrive Entreprise
 - Teams messages de conversation, y compris les messages privés, les messages de canal et les images utilisées dans les conversations
@@ -75,3 +75,5 @@ Les déplacements de données vers la nouvelle géo de centres de données sont 
 [Nouvelles régions de centres de données pour Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Services Azure par région](https://azure.microsoft.com/regions/)
+
+[Teams expérience utilisateur dans Microsoft 365 client multigéogé](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
