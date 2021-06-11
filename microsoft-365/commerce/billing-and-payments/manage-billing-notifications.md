@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les personnes qui reçoivent des e-mails de notification de facturation et des pièces jointes de facture.
 ms.date: 03/17/2021
-ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332137"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888360"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gérer les notifications de facturation et les pièces jointes de facture
 
@@ -76,7 +76,7 @@ Pour modifier l’adresse de messagerie principale et de remplacement d’autres
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
 2. Dans la section **Administrateurs recevant des notifications de facturation,** sélectionnez un nom.
-3. Dans le volet droit, ajoutez ou mettez à jour l’adresse de messagerie principale et de remplacement selon vos besoins, puis sélectionnez **Enregistrer.**
+3. Dans le volet droit, ajoutez ou mettez à jour l’adresse de messagerie principale et de remplacement si nécessaire, puis sélectionnez **Enregistrer**.
 
 ## <a name="change-your-organizations-contact-email"></a>Modifier le courrier électronique de contact de votre organisation
 
@@ -130,5 +130,6 @@ Pour recevoir vos factures en pièce jointe à vos notifications de facture, uti
 ## <a name="related-content"></a>Contenu associé
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
+[Informations de facturation pour Microsoft 365 entreprise au Mexique](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
 [Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md) (article)

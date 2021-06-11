@@ -39,10 +39,10 @@ ms.locfileid: "52844969"
 Microsoft Defender pour le point de terminaison s’intègre directement à différentes solutions Microsoft.
 
 ### <a name="azure-defender"></a>Azure Defender
-Microsoft Defender pour endpoint fournit une solution de protection serveur complète, notamment des fonctionnalités protection évolutive des points de terminaison (PEPT) sur Windows serveurs.
+Microsoft Defender pour le point de terminaison fournit une solution de protection serveur complète, notamment des fonctionnalités protection évolutive des points de terminaison (PEPT) sur Windows serveurs.
 
 ### <a name="azure-sentinel"></a>Azure Sentinel
-Le connecteur Microsoft Defender pour point de terminaison vous permet de diffuser des alertes de Microsoft Defender pour Endpoint dans Azure Sentinel. Cela vous permettra d’analyser plus en détail les événements de sécurité au sein de votre organisation et de créer des manuels pour obtenir une réponse efficace et immédiate.
+Le connecteur Microsoft Defender pour point de terminaison vous permet de diffuser des alertes à partir de Microsoft Defender pour Endpoint dans Azure Sentinel. Cela vous permettra d’analyser plus en détail les événements de sécurité au sein de votre organisation et de créer des manuels pour obtenir une réponse efficace et immédiate.
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
 Nous avons récemment supprimé l’intégration Azure Information Protection, car nos fonctionnalités DLP de point de terminaison intègrent une solution de découverte et de protection améliorée pour les données sensibles stockées sur les appareils de point de terminaison, ce qui facilite la visibilité et l’intégration entre les solutions. Cela a été annoncé dans le [blog suivant.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555) Nous recommandons aux clients de passer à l’utilisation du point de terminaison DLP.
@@ -60,7 +60,7 @@ Les activités suspectes sont des processus en cours d’exécution dans un cont
 [Defender for Office 365](/office365/securitycompliance/office-365-atp) permet de protéger votre organisation contre les programmes malveillants dans les messages électroniques ou les fichiers par le biais de liens sécurisés, de pièces jointes sécurisées, d’anti-hameçonnage avancé et de fonctionnalités d’intelligence contre l’usurpation d’adresses. L’intégration entre Microsoft Defender pour Office 365 et Microsoft Defender pour le point de terminaison permet aux analystes de sécurité de monter en amont pour examiner le point d’entrée d’une attaque. Grâce au partage des renseignements sur les menaces, les attaques peuvent être contenues et bloquées. 
 
 >[!NOTE]
-> Defender pour Office 365 données est affiché pour les événements des 30 derniers jours. Pour les alertes, defender pour Office 365 données s’affiche en fonction de la première activité. Ensuite, les données ne sont plus disponibles dans Defender pour les Office 365.
+> Defender pour Office 365 données de sécurité est affiché pour les événements des 30 derniers jours. Pour les alertes, defender pour Office 365 données s’affiche en fonction de la première activité. Ensuite, les données ne sont plus disponibles dans Defender pour les Office 365.
 
 ### <a name="skype-for-business"></a>Skype Entreprise
 L’intégration Skype Entreprise’analyse permet aux analystes de communiquer avec un utilisateur ou un propriétaire d’appareil potentiellement compromis par le biais d’un bouton simple à partir du portail.

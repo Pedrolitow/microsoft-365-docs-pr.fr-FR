@@ -23,12 +23,12 @@ ms.custom:
 description: Découvrez Microsoft Defender pour Office 365 fichiers dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc4157d9f3d2114375d4136fec694250e8fbeb64
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: a74a75f12a758b9b116a3f752624df38f338d0d1
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821354"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878219"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
@@ -66,7 +66,7 @@ Pour en savoir plus sur l’expérience utilisateur lorsqu’un fichier a été 
 
 Les fichiers identifiés comme malveillants par les pièces jointes fiables pour SharePoint, OneDrive et Microsoft Teams s’afficheront dans les rapports de [Microsoft Defender](view-reports-for-mdo.md) pour Office 365 et dans l’Explorateur [(et détections](threat-explorer.md)en temps réel).
 
-Depuis mai 2018, lorsqu’un fichier est identifié comme malveillant par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams, le fichier est également disponible en quarantaine. Pour plus d’informations, [voir Utiliser le centre de sécurité pour gérer](manage-quarantined-messages-and-files.md#use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365)les fichiers mis en quarantaine dans Defender Office 365 .
+Depuis mai 2018, lorsqu’un fichier est identifié comme malveillant par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams, le fichier est également disponible en quarantaine. Pour plus d’informations, voir [Utiliser le portail Microsoft 365 Defender](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)pour gérer les fichiers mis en quarantaine dans Defender pour Office 365 .
 
 ## <a name="keep-these-points-in-mind"></a>Gardez ces points à l’esprit
 

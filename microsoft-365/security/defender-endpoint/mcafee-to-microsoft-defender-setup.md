@@ -33,13 +33,13 @@ ms.locfileid: "52538014"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Phase 1 : préparation](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Phase 1 : préparation](mcafee-to-microsoft-defender-prepare.md) |![Phase 2 : configuration](images/phase-diagrams/setup.png)<br/>Phase 2 : configuration |[![Phase 3 : intégration](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Phase 3 : intégration](mcafee-to-microsoft-defender-onboard.md) |
+|[![Phase 1 : préparation](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Phase 1 : préparation](mcafee-to-microsoft-defender-prepare.md) |![Phase 2 : configuration](images/phase-diagrams/setup.png)<br/>Phase 2 : configuration |[![Phase 3 : intégration](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Phase 3 : intégration](mcafee-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*Vous êtes là !* | |
 
-**Bienvenue dans la phase d’installation de la migration de [Mc Antivirus Endpoint Security (Mc Antivirus) vers Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. Cette phase comprend les étapes suivantes :
+**Bienvenue dans la phase d’installation [de la migration de Mc Antivirus Endpoint Security (Mc Antivirus) vers Defender for Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)**. Cette phase comprend les étapes suivantes :
 
 1. [Réinstallez ou activez Antivirus Microsoft Defender sur vos points de terminaison.](#reinstall-or-enable-microsoft-defender-antivirus-on-your-endpoints)
 
@@ -72,11 +72,11 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
 
 1. Sur votre Windows server, ouvrez l’Éditeur du Registre.
 
-2. Accédez à la page `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
+2. Naviguer vers`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
 3. Dans ce dossier, recherchez une entrée DWORD appelée **DisableAntiSpyware**.
 
-   - Si vous ne voyez pas cette entrée, tout est prêt.
+   - Si vous ne voyez pas cette entrée, vous êtes prêt.
 
    - Si vous voyez **DisableAntiSpyware,** procédez à l’étape 4.
 
@@ -105,7 +105,7 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
 
    > [!NOTE]
    > Lorsque vous utilisez la commande DISM dans une séquence de tâches exécutant PS, le chemin d’accès cmd.exe est requis.
-   > Exemples :
+   > Exemples :
    >
    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
    >
@@ -115,7 +115,7 @@ La clé de Registre [DisableAntiSpyware](/windows-hardware/customize/desktop/una
    
    `Get-Service -Name windefend`
 
-   Recherchez l’état En cours *d’exécution.*
+   Recherchez l’état En *cours d’exécution.*
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Définir Antivirus Microsoft Defender en mode passif sur Windows Server
 
@@ -142,7 +142,7 @@ Pour plus d’informations, [voir Antivirus Microsoft Defender sur Windows Serve
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Définir Antivirus Microsoft Defender en mode passif sur Windows Server
 
-Étant donné que votre organisation utilise toujours Mc Antivirus, vous devez Antivirus Microsoft Defender le mode passif. De cette façon, Mc Antivirus et Antivirus Microsoft Defender peuvent s’exécuter côte à côte jusqu’à ce que vous avez terminé l’intégration à Defender pour Endpoint.
+Étant donné que votre organisation utilise toujours Mc Antivirus, vous devez définir Antivirus Microsoft Defender le mode passif. De cette façon, Mc Antivirus et Antivirus Microsoft Defender peuvent s’exécuter côte à côte jusqu’à ce que vous avez terminé l’intégration à Defender pour Endpoint.
 
 1. Ouvrez l’Éditeur du Registre, puis accédez à <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
@@ -164,9 +164,9 @@ Cette étape du processus de migration implique la configuration de Defender pou
 
 |Méthode  |Procédure  |
 |---------|---------|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p>**REMARQUE**: Intune fait désormais partie de Microsoft Endpoint Manager. |1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and sign in.<p>2. Sélectionnez les  >  **profils de configuration des** appareils, puis sélectionnez le type de profil que vous souhaitez configurer. <br/>Si vous n’avez pas encore créé de type de profil de **restrictions** d’appareil, ou si vous souhaitez en créer un nouveau, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .<p>3. Sélectionnez **propriétés,** puis sélectionnez **Paramètres de configuration : Modifier**.<p>4. **Développez Antivirus Microsoft Defender**. <p>5. Activez **la protection cloud.**<p>6. Dans la demande **d’utilisateurs** avant la soumission d’exemples, sélectionnez Envoyer tous **les exemples automatiquement.**<p>7. Dans la dropdown **Détecter les applications potentiellement indésirables,** sélectionnez **Activer** ou **Auditer.**<p>8. Sélectionnez **Révision + Enregistrer,** puis sélectionnez **Enregistrer.**<p>Pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, consultez la Microsoft Intune [profils d’appareil .](/intune/device-profiles)|
+|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p>**REMARQUE**: Intune fait désormais partie de Microsoft Endpoint Manager. |1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and sign in.<p>2. Sélectionnez les  >  **profils de configuration des** appareils, puis sélectionnez le type de profil que vous souhaitez configurer. <br/>Si vous n’avez pas encore créé de type de profil de **restrictions** d’appareil, ou si vous souhaitez en créer un nouveau, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .<p>3. Sélectionnez **propriétés,** puis sélectionnez **Paramètres de configuration : Modifier**.<p>4. **Développez Antivirus Microsoft Defender**. <p>5. Activez **la protection cloud.**<p>6. Dans la demande **d’utilisateurs** avant la soumission d’exemples, sélectionnez Envoyer tous **les exemples automatiquement.**<p>7. Dans la dropdown **Détecter les applications potentiellement indésirables,** **sélectionnez Activer** ou **Auditer.**<p>8. Sélectionnez **Révision + Enregistrer,** puis sélectionnez **Enregistrer.**<p>Pour plus d’informations sur les profils d’appareil Intune, notamment sur la création et la configuration de leurs paramètres, consultez la Microsoft Intune [profils d’appareil .](/intune/device-profiles)|
 |Panneau de Windows     |Suivez les instructions ci-après [: Antivirus Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows). <p>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows.         |
-|[Gestion avancée des stratégies de groupe](/microsoft-desktop-optimization-pack/agpm/) <br/>ou<br/>[Console de gestion des stratégies de groupe ](use-group-policy-microsoft-defender-antivirus.md)  |1. Allez à `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` . <p>2. Recherchez une stratégie appelée **Désactiver Antivirus Microsoft Defender**.<p>3. Choisissez **Modifier le paramètre de stratégie** et assurez-vous que la stratégie est désactivée. Cela permet d’Antivirus Microsoft Defender. <p>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows.  |
+|[Gestion avancée des stratégies de groupe](/microsoft-desktop-optimization-pack/agpm/) <br/>ou<br/>[Console de gestion des stratégies de groupe ](use-group-policy-microsoft-defender-antivirus.md)  |1. Go to `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` . <p>2. Recherchez une stratégie appelée **Désactiver Antivirus Microsoft Defender**.<p>3. Choisissez **Modifier le paramètre de stratégie** et assurez-vous que la stratégie est désactivée. Cela permet d’Antivirus Microsoft Defender. <p>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows.  |
 
 ## <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-mcafee"></a>Ajouter Microsoft Defender pour le point de terminaison à la liste d’exclusions pour Mc Antivirus
 
@@ -180,7 +180,7 @@ Les exclusions spécifiques à configurer dépendent de la version de Windows vo
 |SYSTÈME D’EXPLOITATION |Exclusions |
 |--|--|
 | Windows 10, [version 1803 ou](/windows/release-health/status-windows-10-1803) ultérieure (voir Windows 10 de [publication)](/windows/release-health/release-information)<p>Windows 10, version 1703 ou [1709](/windows/release-health/status-windows-10-1709) avec [KB4493441](https://support.microsoft.com/help/4493441) installé <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Serveur, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
-| [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**REMARQUE**: les fichiers temporaires de l’hôte de surveillance 6\45 peuvent être des sous-dossiers numérotés différents.<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
+| [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**REMARQUE**: les fichiers temporaires de l’hôte de surveillance 6\45 peuvent être des sous-dossiers numérotés différents.<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>Ajouter Mc Antivirus à la liste d’exclusions pour Antivirus Microsoft Defender
 
@@ -193,7 +193,7 @@ Vous pouvez choisir parmi plusieurs méthodes pour ajouter vos exclusions à Ant
 |Méthode | Procédure|
 |--|--|
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p>**REMARQUE**: Intune fait désormais partie de Microsoft Endpoint Manager. |1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and sign in.<p>2. Sélectionnez les  >  **profils de configuration des** appareils, puis sélectionnez le profil à configurer.<p>3. Sous **Gérer,** sélectionnez **Propriétés.** <p>4. Sélectionnez **les paramètres de configuration : Modifier.**<p>5. Développez **Antivirus Microsoft Defender,** puis développez **Antivirus Microsoft Defender exclusions.**<p>6. Spécifiez les fichiers et dossiers, extensions et processus à exclure de Antivirus Microsoft Defender analyses. Pour référence, voir [Antivirus Microsoft Defender exclusions.](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)<p>7. Choisissez **Révision + Enregistrer,** puis **Enregistrer.**  |
-|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) |1. À l’aide de la [console Configuration Manager,](/mem/configmgr/core/servers/manage/admin-console)go to **Assets and Compliance**  >  **Endpoint Protection**  >  **Antimalware Policies,** and then select the policy that you want to modify. <p>2. Spécifiez les paramètres d’exclusion pour les fichiers et dossiers, les extensions et les processus à exclure de Antivirus Microsoft Defender analyses. |
+|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) |1. À l’aide de la [console Configuration Manager,](/mem/configmgr/core/servers/manage/admin-console)go to **Assets and Compliance**  >  **Endpoint Protection**  >  **Antimalware Policies,** and then select the policy that you want to modify. <p>2. Spécifiez les paramètres d’exclusion pour les fichiers et les dossiers, les extensions et les processus à exclure de Antivirus Microsoft Defender analyses. |
 |[Objet de stratégie de groupe](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](https://technet.microsoft.com/library/cc731212.aspx)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**<p>2. Dans l’Éditeur de gestion des **stratégies** de groupe, allez à **Configuration** ordinateur et cliquez sur **Modèles d’administration.**<p>3. Développez l’arborescence **pour Windows composants > Antivirus Microsoft Defender > exclusions**.<br/>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows. <p>4. Double-cliquez sur le paramètre **Exclusions** de chemin d’accès et ajoutez les exclusions.<br/>- Définissez l’option **sur Activé.**<br/>- Sous la section **Options,** cliquez sur **Afficher...**.<br/>- Spécifiez chaque dossier sur sa propre ligne sous la **colonne Nom de** la valeur.<br/>- Si vous spécifiez un fichier, veillez à entrer un chemin d’accès complet au fichier, y compris la lettre de lecteur, le chemin d’accès au dossier, le nom de fichier et l’extension. Entrez **0 dans** la **colonne** Valeur.<p>5. Cliquez sur **OK.**<p>6. Double-cliquez sur le paramètre **Exclusions d’extensions** et ajoutez les exclusions.<br/>- Définissez l’option **sur Activé.**<br/>- Sous la section **Options,** cliquez sur **Afficher...**.<br/>- Entrez chaque extension de fichier sur sa propre ligne sous la **colonne Nom de** la valeur.  Entrez **0 dans** la **colonne** Valeur.<p>7. Cliquez sur **OK.** |
 |Objet de stratégie de groupe local |1. Sur le point de terminaison ou l’appareil, ouvrez l’Éditeur de stratégie de groupe local. <p>2. Go to **Computer Configuration**  >  **Administrative Templates** Windows  >  **Components**  >  **Antivirus Microsoft Defender**  >  **Exclusions**. <p>**REMARQUE**: vous pouvez voir *Antivirus Windows Defender* de Antivirus Microsoft Defender dans certaines versions de Windows. <p>3. Spécifiez votre chemin d’accès et les exclusions de processus. |
 |Clé du Registre |1. Exporte la clé de Registre suivante : `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` .<p>2. Importez la clé de Registre. Voici deux exemples :<br/>- Chemin d’accès local : `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- Partage réseau : `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |

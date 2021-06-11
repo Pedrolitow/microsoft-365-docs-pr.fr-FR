@@ -27,7 +27,7 @@ La page État de l’inscription est actuellement en prévisualisation publique.
 
 Pour fournir l’expérience ESP, vous devez inscrire des appareils dans le service Bureau géré Microsoft service. Pour plus d’informations sur l’inscription, voir [Inscrire de nouveaux appareils vous-même](../get-started/register-devices-self.md) ou [Étapes pour que les partenaires inscrivent des appareils.](../get-started/register-devices-partner.md)
 
-Une fois que vos appareils sont inscrits auprès du service, vous pouvez activer ESP pour vos appareils Bureau géré Microsoft en classant un ticket de support via le portail [d’administration.](https://portal.azure.com/) Nous allons initialement déployer la configuration ESP dans le groupe test lorsque vous déposez le ticket. Il est déployé dans les autres groupes de déploiement suivants (First, Fast et Broad) toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de conserver.
+Une fois que vos appareils sont inscrits auprès du service, vous pouvez activer ESP pour vos appareils Bureau géré Microsoft en classant un ticket de support via le portail [d’administration.](https://portal.azure.com/) Nous allons initialement déployer la configuration ESP dans le groupe test lorsque vous déposez le ticket. Il est déployé dans les autres groupes de déploiement suivants (First, Fast et Broad) toutes les 24 heures. Pour suspendre le déploiement, déposez un autre ticket demandant aux opérations de se tenir en attente.
 
 ## <a name="autopilot-profile-settings"></a>Paramètres de profil Autopilot
 
@@ -74,7 +74,7 @@ Bureau géré Microsoft utilise ces paramètres pour l’expérience Page d’é
 |Bloquer l’utilisation de l’appareil jusqu’à ce que ces applications requises soient installées si elles sont affectées à l’utilisateur/l’appareil|Espace de travail moderne - Correction du temps|
 |
 
-L’expérience Page d’état de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
+L’expérience page État de l’inscription se produit en trois phases. Pour plus d’informations, consultez les informations de suivi [de la page État de l’inscription.](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information)
 
 L’expérience se déroule comme suit :
 
@@ -99,7 +99,7 @@ L’expérience se déroule comme suit :
 - L’appareil doit avoir une connexion réseau câblé.
 - Si vous avez des appareils qui ont été inscrits à l’aide du portail Bureau géré Microsoft d’août 2020, désins inscrivez-les et inscrivez-les à nouveau.
 - Les appareils doivent avoir une image d’usine qui inclut la mise à jour cumulative [19H1/19H2 2020.11C](https://support.microsoft.com/topic/november-19-2020-kb4586819-os-builds-18362-1237-and-18363-1237-preview-25cbb849-74af-b8b8-29b8-68aa925e8cc3) ou [20H1 2020.11C de novembre 2020,](https://support.microsoft.com/topic/november-30-2020-kb4586853-os-builds-19041-662-and-19042-662-preview-8fb07fb8-a7dd-ea62-d65e-3305da09f92e) si nécessaire, installée ou doit être réinventée avec la dernière image Bureau géré Microsoft.
-- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise les Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement autopilot pré-mis en service dans Windows conditions requises pour la mise en réseau [Autopilot.](/mem/autopilot/networking-requirements#tpm)
+- Les appareils physiques doivent prendre en charge le TPM 2.0 et l’attestation d’appareil. Les machines virtuelles ne sont pas pris en charge. Le processus de pré-approvisionnement utilise Windows auto-déploiement Autopilot, le TPM 2.0 est donc requis. Le processus d’attestation de TPM nécessite également l’accès à un ensemble d’URL HTTPS uniques pour chaque fournisseur de TPM. Pour plus d’informations, voir l’entrée relative au mode auto-déploiement Autopilot et au déploiement autopilot pré-mis en service dans Windows conditions requises pour la mise en réseau [Autopilot.](/mem/autopilot/networking-requirements#tpm)
 
 ## <a name="sequence-of-events-in-autopilot-for-pre-provisioned-deployment"></a>Séquence d’événements dans Autopilot pour le déploiement pré-provisioné
 
@@ -119,7 +119,7 @@ Après le redémarrage, l’appareil affiche l’écran d’état vert, avec un 
 > - ESP ne s’exécute pas à nouveau après Autopilot pour la fonction de réapprovisionnement de déploiement pré-mise en service.
 > - L’appareil n’est pas renommé par Autopilot pour le déploiement pré-mis en service. L’appareil sera renommé uniquement après avoir passé par le flux utilisateur ESP.
 
-## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modifier les paramètres Autopilot et Page d’état de l’inscription
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>Modification des paramètres Autopilot et Page d’état de l’inscription
 
 Si la configuration utilisée par Bureau géré Microsoft ne correspond pas exactement à vos besoins, vous pouvez déposer un ticket de support via le [portail d’administration.](https://portal.azure.com/) Voici quelques exemples des types de configuration dont vous pourriez avoir besoin :
 
@@ -136,7 +136,7 @@ Vous pouvez demander un autre modèle de nom d’appareil. Toutefois, vous ne po
 ## <a name="required-applications"></a>Applications requises
 
 - Vous devez cibler des applications dans les groupes d’appareils Workplace modernes *Test,* First, Fast et Broad. Les applications doivent être installées dans le contexte « Système ». Veillez à effectuer le test avec ESP dans le groupe Test avant de les affecter à tous les groupes.
-- Aucune application ne doit exiger le redémarrage de l’appareil. Nous recommandons que les applications soient définies sur « Ne rien faire » lorsque vous créez le package d’application si elles nécessitent un redémarrage.
+- Aucune application ne doit nécessiter le redémarrage de l’appareil. Nous recommandons que les applications soient définies sur « Ne rien faire » lorsque vous créez le package d’application si elles nécessitent un redémarrage.
 - Limitez les applications requises aux applications principales dont un utilisateur a besoin immédiatement lorsqu’il se connecte à l’appareil.
 - Conservez la taille totale de toutes les applications collectivement sous 1 Go pour éviter les délai d’accès pendant la phase d’installation de l’application.
 - Dans l’idéal, les applications ne doivent pas avoir de dépendances. Si vous avez des applications qui *doivent* avoir des dépendances, assurez-vous de les configurer, de les tester et de les valider dans le cadre de votre évaluation ESP.

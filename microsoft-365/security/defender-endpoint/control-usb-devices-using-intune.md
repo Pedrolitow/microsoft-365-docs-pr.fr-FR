@@ -32,7 +32,7 @@ Microsoft recommande une approche en [couches](https://aka.ms/devicecontrolblog)
 
     2. [Empêchez les menaces de stockage amovible introduites](#prevent-threats-from-removable-storage) par les périphériques de stockage amovibles en activant :  
         - Antivirus Microsoft Defender protection en temps réel (RTP) pour analyser le stockage amovible à la recherche de programmes malveillants.  
-        - La règle USB réduction de la surface d’attaque (ASR) pour bloquer les processus non signés et non signés qui s’exécutent à partir de USB.  
+        - La règle USB réduction de la surface d’attaque (ASR) pour bloquer les processus non signés et non signés qui s’exécutent à partir du port USB.  
         - Les paramètres de protection DMA (Direct Memory Access) pour atténuer les attaques DMA, y compris la protection DMA du noyau pour Thunderbolt et le blocage de DMA jusqu’à ce qu’un utilisateur se signe.  
 
 3. [Créez des alertes personnalisées](#create-customized-alerts-and-response-actions) et des actions de réponse pour surveiller l’utilisation des appareils amovibles en fonction de ces événements plug-and-play ou de tout autre événement Microsoft Defender for Endpoint avec des règles de [détection personnalisées.](/microsoft-365/security/defender-endpoint/custom-detection-rules)
@@ -47,7 +47,7 @@ Microsoft recommande une approche en [couches](https://aka.ms/devicecontrolblog)
 Vous pouvez afficher les événements connectés plug-and-play dans Microsoft Defender for Endpoint advanced hunting pour identifier les activités d’utilisation suspectes ou effectuer des enquêtes internes.
 Pour obtenir des exemples de requêtes de recherche avancée Defender pour les points de terminaison, voir les requêtes de recherche avancée De Microsoft Defender pour les points de [terminaison GitHub de recherche.](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)
 
-Des Power BI de rapport sont disponibles pour Microsoft Defender for Endpoint que vous pouvez utiliser pour les requêtes de recherche avancée. Avec ces exemples de modèles, y compris un pour le contrôle d’appareil, vous pouvez intégrer la puissance de la recherche avancée dans Power BI. Pour plus d’informations, voir le GitHub de référence pour les [modèles PowerBI.](https://github.com/microsoft/MDATP-PowerBI-Templates) Voir [Créer des rapports personnalisés à l Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) pour en savoir plus sur Power BI’intégration.
+Des Power BI de rapport sont disponibles pour Microsoft Defender pour le point de terminaison que vous pouvez utiliser pour les requêtes de recherche avancée. Avec ces exemples de modèles, y compris un pour le contrôle d’appareil, vous pouvez intégrer la puissance de la recherche avancée dans Power BI. Pour plus d’informations, voir le GitHub de référence pour les [modèles PowerBI.](https://github.com/microsoft/MDATP-PowerBI-Templates) Voir [Créer des rapports personnalisés à l Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) pour en savoir plus sur Power BI’intégration.
 
 ## <a name="allow-or-block-removable-devices"></a>Autoriser ou bloquer les appareils amovibles
 Le tableau suivant décrit les façons dont Microsoft Defender pour point de terminaison peut autoriser ou bloquer les appareils amovibles en fonction d’une configuration granulaire.
@@ -72,7 +72,7 @@ Pour éviter les infections par des programmes malveillants ou la perte de donn�
 | [Autoriser l’installation et l’utilisation de lecteurs USB et d’autres périphériques](#allow-installation-and-usage-of-usb-drives-and-other-peripherals) | Autoriser les utilisateurs à installer uniquement les lecteurs USB et autres périphériques inclus dans une liste d’appareils ou de types d’appareils autorisés |
 | [Empêcher l’installation et l’utilisation de lecteurs USB et d’autres périphériques](#prevent-installation-and-usage-of-usb-drives-and-other-peripherals) | Empêcher les utilisateurs d’installer des lecteurs USB et d’autres périphériques inclus dans une liste d’appareils et de types d’appareils non autorisés |
 
-Tous les contrôles ci-dessus peuvent être définies par le biais des [modèles d’administration](/intune/administrative-templates-windows)Intune. Les stratégies pertinentes se trouvent ici dans les modèles d’administrateur Intune :
+Tous les contrôles ci-dessus peuvent être définies via les [modèles d’administration](/intune/administrative-templates-windows)Intune. Les stratégies pertinentes se trouvent ici dans les modèles d’administrateur Intune :
 
 ![Capture d’écran de la liste des modèles d’administration](images/admintemplates.png)
 
@@ -108,7 +108,7 @@ Si vous souhaitez limiter l’accès à certains appareils, supprimez la classe 
 
 Pour trouver les ID d’appareil, voir [Rechercher l’ID de l’appareil.](#look-up-device-id) 
 
-Par exemple :
+Par exemple :
 
 1. Supprimez la classe USBDevice de l’installation autoriser l’installation des appareils à l’aide de pilotes **qui correspondent à ces configurations d’appareil.**
 2. Ajoutez l’ID d’appareil à autoriser dans l’installation autoriser l’appareil qui correspond à l’un de **ces ID d’appareil.** 
@@ -229,7 +229,7 @@ Vous pouvez empêcher l’installation des périphériques interdits avec des ID
 À l’aide d’Intune, vous pouvez limiter les services qui peuvent utiliser les Bluetooth par le biais du « Bluetooth [services autorisés](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide)». L’état par défaut des paramètres « Bluetooth services autorisés » signifie que tout est autorisé.  Dès qu’un service est ajouté, il devient la liste autorisée. Si le client ajoute les valeurs Clavier et Souris et n’ajoute pas les GUID de transfert de fichiers, le transfert de fichiers doit être bloqué.
 
 > [!div class="mx-imgBorder"]
-> ![Capture d’écran de la page Bluetooth paramètres d’utilisation](images/bluetooth.png)
+> ![Capture d’écran de la page Bluetooth paramètres de mise en page](images/bluetooth.png)
 
 ### <a name="use-microsoft-defender-for-endpoint-baseline-settings"></a>Utiliser les paramètres de ligne de base de Microsoft Defender pour les points de terminaison
 
@@ -289,7 +289,7 @@ Ces paramètres nécessitent [l’activation de la protection en temps réel.](/
 
 1. Connectez-vous au [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
 
-2. Cliquez sur **Appareils**  >  **Windows**  >  **stratégies de configuration créer** un  >  **profil.** 
+2. Cliquez sur **Appareils**  >  **Windows**  >  **stratégies de configuration** créer un  >  **profil.** 
 
     ![Créer un profil de configuration d’appareil](images/create-device-configuration-profile.png)
 
@@ -302,7 +302,7 @@ Ces paramètres nécessitent [l’activation de la protection en temps réel.](/
 
 4. Cliquez sur **Créer**.  
 
-5. Pour **les processus non signés** et non signés qui s’exécutent à partir du port USB, choisissez **Bloquer**.
+5. Pour les processus non signés et non signés qui s’exécutent à **partir du port USB,** choisissez **Bloquer**.
 
    ![Bloquer les processus nontrus](images/block-untrusted-processes.png)
 

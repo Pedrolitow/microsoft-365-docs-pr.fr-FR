@@ -1,5 +1,5 @@
 ---
-title: Résoudre des problèmes de service avec Microsoft Defender pour point de terminaison
+title: Résoudre des problèmes de service avec Microsoft Defender pour point de terminaison
 description: Trouvez des solutions et des solutions de contournement aux problèmes connus, tels que les erreurs de serveur lors de la tentative d’accès au service.
 keywords: résoudre les problèmes de Microsoft Defender pour le point de terminaison, erreur de serveur, accès refusé, informations d’identification non valides, aucune donnée, portail de tableau de bord, autoriser, observateur d’événements
 search.product: eADQiWindows 10XVcnh
@@ -29,9 +29,9 @@ ms.locfileid: "52538350"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 Cette section traite des problèmes qui peuvent survenir lorsque vous utilisez le service Microsoft Defender for Endpoint.
@@ -74,7 +74,7 @@ Les formats de date et d’heure suivants ne sont actuellement pas pris en charg
 - Format de date avec yy. Affiche uniquement yyyy.
 - Le format d’heure HH:mm:ss n’est pas pris en charge (le format 12 heures AM/PM n’est pas pris en charge). Seul le format 24 heures est pris en charge.
 
-**Utilisation de la virgule pour indiquer un millier**<br>
+**Utilisation de virgule pour indiquer un millier**<br>
 La prise en charge de l’utilisation de la virgule comme séparateur dans les nombres n’est pas prise en charge. Les régions où un nombre est séparé par une virgule pour indiquer un millier ne voient que l’utilisation d’un point comme séparateur. Par exemple, 15 500 000 sont affichés en tant que 15,5 000.
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)

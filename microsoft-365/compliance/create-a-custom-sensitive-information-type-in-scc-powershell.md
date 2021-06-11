@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez la création et l’importation d’un type d’informations sensibles personnalisé des stratégies dans le centre de conformité.
-ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: deb29b768c136c9c952d2abe791b310f2fd1dbdd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538702"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878243"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Créer un type d’informations sensibles personnalisé à l’aide de PowerShell
 
@@ -38,6 +38,9 @@ Après avoir créé un fichier XML bien formé, vous pouvez le charger sur Micr
 Voir [Éventuels problèmes de validation à prendre en compte](#potential-validation-issues-to-be-aware-of) dans cette rubrique.
 
 Pour plus d’informations sur le moteur Boost.RegEx (anciennement RegEx ++) utilisé pour traiter le texte, consultez [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
+
+> [!NOTE]
+> Si vous utilisez un caractère & (&) dans le cadre d’un mot clé dans votre type d’informations sensibles personnalisé, notez qu’il existe un problème connu. Vous devez ajouter un terme supplémentaire avec des espaces autour du caractère pour vous assurer que le caractère est correctement identifié, par exemple, L & P _et_ non L&P.
 
 ## <a name="sample-xml-of-a-rule-package"></a>Exemple de code XML d’un package de règles
 

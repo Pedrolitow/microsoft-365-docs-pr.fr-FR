@@ -56,14 +56,14 @@ Vous pouvez contrôler les fonctionnalités disponibles pour les participants Te
 
 [Gérer les stratégies de réunion dans Teams](/microsoftteams/meeting-policies-in-teams)
 
-Vous pouvez contrôler la connexion anonyme pour Teams réunions, ce qui permet à toute personne ayant un lien vers la réunion de participer.
+Vous pouvez contrôler la rejoindre anonymement pour Teams réunions, ce qui permet à toute personne ayant un lien vers la réunion de participer.
 
 [Autoriser les utilisateurs anonymes à participer à des réunions](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
 ## <a name="communication-compliance"></a>Conformité des communications
 
-La conformité des communications Microsoft 365 vous permet d’examiner les communications en cas de langage choquant, d’informations sensibles et d’informations relatives aux normes internes et réglementaires. Les communications de conversation, les boîtes aux lettres et Yammer messages peuvent tous être surveillés, générant des alertes. Grâce aux outils d’administration, vous pouvez rapidement identifier et agir sur les messages avec des correspondances de stratégie.
+La conformité des communications Microsoft 365 vous permet d’examiner les communications en cas de langage choquant, d’informations sensibles et d’informations relatives aux normes internes et réglementaires. Les communications de conversation, les boîtes aux lettres et Yammer messages peuvent tous être surveillés, générant ainsi des alertes. Grâce aux outils d’administration, vous pouvez rapidement identifier et agir sur les messages avec des correspondances de stratégie.
 
 [Conformité des communications dans Microsoft 365](../compliance/communication-compliance.md)
 

@@ -33,10 +33,10 @@ ms.locfileid: "52538026"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-|[![Phase 1 : préparation](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Phase 1 : préparation](mcafee-to-microsoft-defender-prepare.md) |[![Phase 2 : configuration](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2 : configuration](mcafee-to-microsoft-defender-setup.md) |![Phase 3 : intégration](images/phase-diagrams/onboard.png)<br/>Phase 3 : intégration |
+|[![Phase 1 : préparation](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Phase 1 : préparation](mcafee-to-microsoft-defender-prepare.md) |[![Phase 2 : configuration](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Phase 2 : configuration](mcafee-to-microsoft-defender-setup.md) |![Phase 3 : intégration](images/phase-diagrams/onboard.png)<br/>Phase 3 : intégration |
 |--|--|--|
 || |*Vous êtes là !* |
 
@@ -70,11 +70,11 @@ Les méthodes de déploiement varient en fonction du système d’exploitation s
 
 | Système d’exploitation  |Méthode  |
 |---------|---------|
-| Windows 10     | [Stratégie de groupe](configure-endpoints-gp.md)<p>[Gestionnaire de configuration](configure-endpoints-sccm.md)<p>[Gestion des appareils mobiles (Intune)](configure-endpoints-mdm.md)<p>[Script local](configure-endpoints-script.md) <br/>**REMARQUE**: un script local est approprié pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.         |
+| Windows 10     | [Stratégie de groupe](configure-endpoints-gp.md)<p>[Gestionnaire de configuration](configure-endpoints-sccm.md)<p>[Gestion des appareils mobiles (Intune)](configure-endpoints-mdm.md)<p>[Script local](configure-endpoints-script.md) <br/>**REMARQUE**: un script local est approprié pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.         |
 | Windows 8.1 Entreprise <p>Windows 8.1 Professionnel <p>Windows 7 SP1 Enterprise<p>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<br/>**REMARQUE**: Microsoft Monitoring Agent est désormais l’agent Azure Log Analytics. Pour en savoir plus, consultez la vue [d’ensemble de l’agent Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)        |
 | Windows Server 2019 et ultérieur<p>Windows Server 2019 Core Edition<p>Windows Server version 1803 et ultérieures | [Script local](configure-endpoints-script.md)<p>[Stratégie de groupe](configure-endpoints-gp.md)<p>[Gestionnaire de configuration](configure-endpoints-sccm.md)<p>[System Center Configuration Manager](configure-endpoints-sccm.md)<p>[Scripts d’intégration VDI pour les appareils non persistants](configure-endpoints-vdi.md) <br/>**REMARQUE**: un script local est approprié pour une preuve de concept, mais ne doit pas être utilisé pour le déploiement de production. Pour un déploiement de production, nous vous recommandons d’utiliser la stratégie de groupe, Microsoft Endpoint Configuration Manager ou Intune.    |
-| Windows Server 2016 <p>Windows Server 2012 R2<p>Windows Server 2008 R2 SP1  | [Centre de sécurité Microsoft Defender](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
-|macOS :<p>11.3.1 (Big Sur)<p>10.15 (Îles)<p>10.14 (Mojave) |[Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
+| Windows Server 2016 <p>Windows Server 2012 R2<p>Windows Server 2008 R2 SP1  | [Centre de sécurité Microsoft Defender](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
+|macOS :<p>11.3.1 (Big Sur)<p>10.15 (Île)<p>10.14 (Mojave) |[Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
 |iOS |[Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
 |Linux :<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS ou un LTS supérieur<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |[Intégrer des appareils non Windows](configure-endpoints-non-windows.md)  |
 
@@ -84,8 +84,8 @@ Pour vérifier que vos appareils intégrés sont correctement connectés à Micr
 
 |Système d’exploitation  |Aide  |
 |---------|---------|
-| Windows 10<p>Windows Server 2019 <p>Windows Serveur, version 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     |Voir [Exécuter un test de détection.](run-detection-test.md) <p>Visitez le site des scénarios de démonstration Microsoft Defender for Endpoint () et essayez un ou [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) plusieurs des scénarios. Par exemple, essayez le scénario de démonstration **de la protection** livrée par le cloud.         |
-|macOS<p>11.3.1 (Big Sur)<p>10.15 (Îles)<p>10.14 (Mojave)     |Téléchargez et utilisez l’application CASER sur [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <p>Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](microsoft-defender-endpoint-mac.md)        |
+| Windows 10<p>Windows Server 2019 <p>Windows Serveur, version 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     |Voir [Exécuter un test de détection.](run-detection-test.md) <p>Visitez le site des scénarios de démonstration Microsoft Defender for Endpoint () et essayez un ou [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) plusieurs des scénarios. Par exemple, essayez le scénario de démonstration **de la protection** livrée par le cloud.         |
+|macOS<p>11.3.1 (Big Sur)<p>10.15 (Île)<p>10.14 (Mojave)     |Téléchargez et utilisez l’application CASER sur [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <p>Pour plus d’informations, [voir Microsoft Defender pour endpoint sur Mac.](microsoft-defender-endpoint-mac.md)        |
 |Linux :<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS ou un LTS supérieur<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |1. Exécutez la commande suivante et recherchez le résultat **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Ouvrez une fenêtre Terminal et exécutez la commande suivante : <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Exécutez la commande suivante pour lister les menaces détectées : <br/>`mdatp threat list`. <p>Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Linux.](microsoft-defender-endpoint-linux.md) |
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode"></a>Vérifier que Antivirus Microsoft Defender est en mode passif
@@ -123,7 +123,7 @@ Si vous utilisez Windows Server 2016, vous de devez démarrer Antivirus Microsof
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>Obtenir les mises à jour de Antivirus Microsoft Defender
 
-Le Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque, même si Antivirus Microsoft Defender s’exécute en mode passif.
+Maintenir Antivirus Microsoft Defender à jour est essentiel pour garantir que vos appareils disposent des dernières technologies et fonctionnalités nécessaires pour se protéger contre les nouveaux programmes malveillants et les nouvelles techniques d’attaque, même si Antivirus Microsoft Defender s’exécute en mode passif.
 
 Il existe deux types de mises à jour liées à la mise Antivirus Microsoft Defender jour :
 - Mises à jour de l’intelligence de la sécurité
@@ -148,7 +148,7 @@ Pour ce faire, visitez le site de démonstration de Microsoft Defender for Endpo
 > [!IMPORTANT]
 > Si vous utilisez Windows Server 2016, vous de devez démarrer Antivirus Microsoft Defender manuellement. Vous pouvez le faire à l’aide de l’cmdlet PowerShell `mpcmdrun.exe -wdenable` sur l’appareil.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 **Félicitations**! Vous avez terminé votre [migration de Mc Antivirus vers Microsoft Defender pour le point de terminaison](mcafee-to-microsoft-defender-migration.md#the-migration-process)! 
 

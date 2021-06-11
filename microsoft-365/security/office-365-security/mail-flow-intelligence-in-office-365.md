@@ -30,7 +30,7 @@ ms.locfileid: "52844669"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages depuis Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 pouvez pas remettre ces messages via le connecteur, ils sont mis en file d’attente Microsoft 365. Microsoft 365 continueront de réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
+Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous utilisez généralement un connecteur pour router les messages électroniques d’EOP vers votre environnement de messagerie local. Vous pouvez également utiliser un connecteur pour router des messages depuis Microsoft 365 vers une organisation partenaire. Lorsque Microsoft 365 ne peut pas remettre ces messages via le connecteur, ils sont mis en file d’attente Microsoft 365. Microsoft 365 continueront de réessayer de remise pour chaque message pendant 24 heures. Au bout de 24 heures, le message mis en file d’attente expire et le message est renvoyé à l’expéditeur d’origine dans une non-remise (également appelée rapport de non-remise).
 
 Microsoft 365 génère une erreur lorsqu’un message ne peut pas être remis à l’aide d’un connecteur. Les erreurs les plus courantes et leurs solutions sont décrites dans cet article. Collectivement, les erreurs de mise en file d’accès et de notification pour les messages non transmis envoyés via des connecteurs sont appelées informations de _flux de messagerie._
 
@@ -42,7 +42,7 @@ En règle générale, cette erreur signifie Microsoft 365 tentative de connexion
 
 - Votre domaine a expiré récemment, l'enregistrement MX ne peut donc pas être extrait.
 
-- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS ont toujours mis en cache les informations DNS de votre domaine.
+- L’enregistrement MX de votre domaine a récemment été modifié et les serveurs DNS ont encore mis en cache les informations DNS de votre domaine.
 
 ### <a name="how-do-i-fix-error-code-450-44312"></a>Comment corriger le code d’erreur 450 4.4.312 ?
 
@@ -66,7 +66,7 @@ En règle générale, cela signifie Microsoft 365 ne peut pas se connecter au se
 
 ## <a name="error-code-450-44316-connection-refused"></a>Code d’erreur : 450 4.4.316 Connexion refusée.
 
-En règle générale, cette erreur signifie Microsoft 365 une erreur de connexion lorsqu’elle a tenté de se connecter au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions à partir Microsoft 365 adresses IP. Ou bien, cette erreur peut se faire par conception si vous avez complètement migré votre système de messagerie local vers Microsoft 365 et arrêté votre environnement de messagerie local.
+En règle générale, cette erreur signifie Microsoft 365 une erreur de connexion lorsqu’elle a tenté de se connecter au serveur de messagerie de destination. Une cause probable de cette erreur est que votre pare-feu bloque les connexions à Microsoft 365 adresses IP. Ou bien, cette erreur peut se faire par conception si vous avez complètement migré votre système de messagerie local vers Microsoft 365 et arrêté votre environnement de messagerie local.
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Comment corriger le code d’erreur 450 4.4.316 ?
 
@@ -97,12 +97,12 @@ En règle générale, cette erreur signifie Microsoft 365 connecté au serveur d
 
 ### <a name="how-do-i-fix-error-code-450-44317"></a>Comment corriger le code d’erreur 450 4.4.317 ?
 
-- Vérifiez les paramètres et les certificats TLS sur vos serveurs de messagerie locaux, ainsi que les paramètres TLS sur le connecteur.
+- Vérifiez les paramètres et certificats TLS sur vos serveurs de messagerie locaux, ainsi que les paramètres TLS sur le connecteur.
 - Si votre organisation partenaire (par exemple, un fournisseur de services cloud tiers) est à l’origine de l’erreur, vous devez contacter votre partenaire afin de résoudre le problème.
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Code d’erreur : 450 4.4.318 La connexion a été interrompue brusquement
 
-En règle générale, cette erreur signifie Microsoft 365 a des difficultés à communiquer avec votre environnement de messagerie local, donc la connexion a été abandonnée. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
+En règle générale, cette erreur signifie Microsoft 365 a des difficultés à communiquer avec votre environnement de messagerie local, de sorte que la connexion a été abandonnée. Les causes pouvant être à l'origine de cette erreur sont les suivantes :
 
 - Votre pare-feu utilise des règles d'examen de paquet SMTP, lesquelles ne fonctionnent pas correctement.
 - Votre serveur de messagerie local ne fonctionne pas correctement (par exemple, les incidents de service ou les ressources système faibles), ce qui entraîne le délai d’accès du serveur et la fermeture de la connexion à Microsoft 365.

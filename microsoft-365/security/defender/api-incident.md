@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 0c0c2e280f63076687a0854e25c47577b050a8f7
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730929"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888432"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 API d’incidents Defender et type de ressource incidents
 
@@ -38,7 +38,7 @@ ms.locfileid: "52730929"
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Un [incident est](incidents-overview.md) un ensemble d’alertes associées qui permettent de décrire une attaque. Les événements de différentes entités de votre organisation sont automatiquement regroupés par Microsoft 365 Defender. Vous pouvez utiliser l’API d’incidents pour accéder par programmation aux incidents de votre organisation et aux alertes associées.
+Un [incident](incidents-overview.md) est un ensemble d’alertes associées qui permettent de décrire une attaque. Les événements de différentes entités de votre organisation sont regroupés automatiquement par Microsoft 365 Defender. Vous pouvez utiliser l’API d’incidents pour accéder par programmation aux incidents de votre organisation et aux alertes associées.
 
 ## <a name="quotas-and-resource-allocation"></a>Quotas et allocation de ressources
 
@@ -56,6 +56,7 @@ Méthode | Type renvoyé | Description
 -|-|-
 [Répertorier les incidents](api-list-incidents.md) | [Liste des incidents](api-incident.md) | Obtenir la liste des incidents.
 [Incident de mise à jour](api-update-incidents.md) | [Incident](api-incident.md) | Mettre à jour un incident spécifique.
+[Obtenir un incident](api-get-incident.md) | [Incident](api-incident.md) | Obtenez un incident unique.
 
 ## <a name="request-body-response-and-examples"></a>Corps de la demande, réponse et exemples
 

@@ -34,10 +34,10 @@ ms.locfileid: "52538338"
 
 **S’applique à**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
+Le *Hameçonnage* est une attaque par courrier électronique qui tente d’accéder à des informations sensibles par le biais de messages qui paraissent provenir d’expéditeurs légitimes ou approuvés. Il existe des catégories spécifiques de hameçonnage. Par exemple :
 
 - **Le harponnage** utilise du contenu ciblé et personnalisé qui est spécifiquement adapté aux destinataires ciblés (généralement, après la reconnaissance des destinataires par l’attaquant).
 
@@ -53,13 +53,13 @@ Avec la complexité croissante des attaques, il est même difficile pour les uti
 
 EOP (autrement dit, Microsoft 365 organisations sans Microsoft Defender pour Office 365) contient des fonctionnalités qui peuvent aider à protéger votre organisation contre les menaces de hameçonnage :
 
-- **Veille contre** l’usurpation d’adresse : utilisez la veille contre l’usurpation d’informations pour examiner les expéditeurs usurpés détectés dans les messages provenant de domaines externes et internes, et autoriser ou bloquer manuellement ces expéditeurs détectés. Pour plus d’informations, [voir informations sur l’intelligence contre l’usurpation d’adresse dans EOP.](learn-about-spoof-intelligence.md)
+- **Veille contre** l’usurpation d’adresse : utilisez la veille contre l’usurpation d’adresse pour examiner les expéditeurs usurpés détectés dans les messages provenant de domaines externes et internes, et autoriser ou bloquer manuellement ces expéditeurs détectés. Si vous souhaitez en savoir plus, consultez [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
 
 - Stratégies **anti-hameçonnage** dans EOP : activer ou désactiver la veille contre l’usurpation d’identité, activer ou désactiver l’identification des expéditeurs non authentifiés dans Outlook et spécifier l’action pour les expéditeurs usurpés bloqués. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans EOP.](configure-anti-phishing-policies-eop.md)
 
-- Autoriser ou bloquer les expéditeurs usurpés dans la liste d’adresses client **autoriser/bloquer**: lorsque vous remplacez le verdict dans l’aperçu  de l’usurpation d’intelligence, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés avant qu’ils ne soit détectés par la veille contre l’usurpation d’adresse. Pour plus d’informations, [voir Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
+- **Autoriser ou bloquer les expéditeurs usurpés dans la liste verte/rouge du client** : lorsque vous remplacez le obstacle dans les informations sur la veille contre l’usurpation d’identité, l’expéditeur usurpé devient une entrée manuelle d’autoriser ou de bloquer une entrée qui n’apparaît que dans l’onglet **Usurper une identité** dans la liste verte/rouge du client. Vous pouvez également créer manuellement des entrées d'autorisation ou de blocage pour les faux expéditeurs avant qu'ils ne soient détectés par la veille contre l’usurpation d’identité. Pour plus d’informations, voir [Gérer liste rouge/verte du client dans EOP](tenant-allow-block-list.md).
 
-- Authentification de messagerie implicite : EOP améliore les vérifications standard de l’authentification du courrier électronique pour le courrier entrant ([SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC)](use-dmarc-to-validate-email.md)avec la réputation de l’expéditeur, l’historique des expéditeurs, l’historique des destinataires, l’analyse comportementale et d’autres techniques avancées pour vous aider à identifier les expéditeurs falsifiés. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
+- Authentification de messagerie implicite : EOP améliore les vérifications standard de l’authentification du courrier électronique pour le courrier entrant ([SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC)](use-dmarc-to-validate-email.md)avec la réputation de l’expéditeur, l’historique des expéditeurs, l’historique des destinataires, l’analyse comportementale et d’autres techniques avancées pour vous aider à identifier les expéditeurs falsifiés. Si vous souhaitez en savoir plus, consultez la page [Authentification de messagerie électronique dans Microsoft 365](email-validation-and-authentication.md).
 
 ## <a name="additional-anti-phishing-protection-in-microsoft-defender-for-office-365"></a>Protection supplémentaire contre les attaques par phishing dans Microsoft Defender pour Office 365
 

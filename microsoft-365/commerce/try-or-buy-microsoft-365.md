@@ -39,20 +39,20 @@ Microsoft 365 entreprise est un service d’abonnement qui vous permet d’exéc
 > **Options de paiement pour Office 365 géré par 21Vianet en Chine** Les cartes de crédit internationales ne sont pas acceptées. Vous pouvez payer votre abonnement en :
 >
 > - Facture
-> - Le paiement en ligne à l’aide d’Alipay ou de China UnionPay Proof of payment sera fourni sous la forme de Fapiaos. Vous pouvez envoyer votre demande Fapiao à notre système [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) environ trois (3) jours après avoir payé. Pour plus d’informations, [voir Appliquer pour un fapiao Office 365 géré par 21Vianet.](../admin/services-in-china/apply-for-a-fapiao.md)
+> - Le paiement en ligne à l’aide d’Alipay ou de China UnionPay Proof of payment sera fourni sous la forme de Fapiaos. Vous pouvez envoyer votre demande Fapiao à notre système [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) environ trois (3) jours après avoir payé. Pour plus d’informations, [voir Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures de cet article, vous devez être un administrateur global ou un administrateur de facturation pour votre organisation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à un essai gratuit. Pour toutes les autres procédures de cet article, vous devez être un administrateur global ou un administrateur de facturation pour votre organisation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Essayer un abonnement d’essai gratuit
 
 Êtes-vous un nouveau client et vous n’avez pas encore de compte auprès de Microsoft ? Utilisez ces étapes pour créer un compte et vous inscrire à un abonnement d’essai gratuit de Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
-2. Sélectionnez l’plan pour qui vous souhaitez vous inscrire, par exemple **Microsoft 365 Business Standard,** faites défiler la page vers le bas, puis sélectionnez Essayer gratuitement **pendant 1 mois.**
+2. Sélectionnez l’plan pour qui vous souhaitez vous inscrire, par **exemple Microsoft 365 Business Standard,** faites défiler la page vers le bas, puis sélectionnez Essayer gratuitement **pendant 1 mois.**
 3. Sur la page suivante, suivez les étapes pour configurer votre compte.
 4. Le processus d’inscription peut prendre plusieurs minutes. Une fois \' l’installation terminée, vous êtes prêt à démarrer l’Assistant Configuration de votre abonnement. Pour plus d’informations sur la configuration de votre abonnement, voir [étapes suivantes.](#next-steps)
 
@@ -62,7 +62,7 @@ Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à 
 
 Si vous souhaitez acheter votre abonnement avant la fin de votre version d’essai, utilisez les étapes suivantes :
 
-1. Dans le centre Microsoft 365'administration, allez sur la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">de vos produits.</a>
+1. Dans le centre Microsoft 365'administration, allez sur la page **Facturation** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">vos produits.</a>
 2. Dans la page **Vos produits,** recherchez l’abonnement que vous souhaitez acheter.
 3. Dans la section **licences**, sélectionnez **Acheter un abonnement**.
 4. Choisissez un engagement mensuel ou annuel pour votre abonnement, puis sélectionnez **Validation de l'achat**.
@@ -74,7 +74,7 @@ Si vous souhaitez acheter votre abonnement avant la fin de votre version d’ess
 
 Avez-vous besoin de plus de temps pour tester les fonctionnalités de Microsoft 365 entreprise avant d’acheter ? Si votre abonnement d'évaluation expire dans les 15 jours et n'a jamais été prolongé, vous pouvez le prolonger de 30 jours. Cette possibilité n'est offerte qu'une fois.
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement d’essai que vous souhaitez étendre.
 3. Dans la page détails de l’abonnement, dans la section Abonnements et **paramètres de** paiement, sélectionnez **Étendre la date de fin.**
 4. Dans le **volet** Date de fin de l’extension, examinez les informations de poste et, si nécessaire, sélectionnez un mode de paiement. Lorsque vous avez terminé, sélectionnez **Étendre la version d’essai.**
@@ -101,7 +101,7 @@ Lorsque vous ajoutez un abonnement via le Centre d’administration Microsoft 36
 
 ## <a name="buy-a-different-subscription"></a>Acheter un autre abonnement
 
-Si vous avez déjà un abonnement Microsoft 365 entreprise, vous pouvez passer par le Centre d’administration Microsoft 365 pour acheter un autre abonnement pour votre organisation.
+Si vous avez déjà un abonnement Microsoft 365 entreprise, vous pouvez passer par le centre d’administration Microsoft 365 pour acheter un autre abonnement pour votre organisation.
 
 Lorsque vous achetez un autre abonnement via le Centre d’administration, le nouvel abonnement est associé à la même organisation (espace de nom de domaine) que votre abonnement existant. Cela facilite le déplacement des utilisateurs de votre organisation entre les abonnements ou leur attribuer une licence pour l’abonnement supplémentaire dont ils ont besoin.
 
@@ -124,7 +124,7 @@ Vous pouvez payer votre abonnement en :
 
 - Paiement en ligne à l’aide d’Alipay ou de China UnionPay
 
-La preuve de paiement sera fournie sous la forme de Fapiaos. Vous pouvez envoyer votre demande Fapiao à notre système [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) environ trois (3) jours après avoir payé. Pour plus d’informations, [voir Appliquer pour un fapiao Office 365 géré par 21Vianet.](../admin/services-in-china/apply-for-a-fapiao.md)
+La preuve de paiement sera fournie sous la forme de Fapiaos. Vous pouvez envoyer votre demande Fapiao à notre système [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) environ trois (3) jours après avoir payé. Pour plus d’informations, [voir Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
 
 > [!NOTE]
 > Les cartes de crédit internationales ne sont pas acceptées.
@@ -134,9 +134,9 @@ La preuve de paiement sera fournie sous la forme de Fapiaos. Vous pouvez envoyer
 
 Si vous avez un nouveau compte et que vous avez configuré votre premier abonnement, vous pouvez utiliser les articles de configuration guidés pour vous aider à commencer.
 
-- [Configurer Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)
+- [Configurer Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)
 - [Configurer Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)
-- [Configurer Microsoft 365 Business Premium](../business/set-up.md)
+- [Configurer Microsoft 365 Business Premium](../business/set-up.md)
 - [Configurer Microsoft 365 Apps for business](../admin/setup/setup-apps-for-business.md)
 
 Si vous avez déjà un abonnement et que vous ajoutez un nouvel abonnement, vous pouvez y déplacer des utilisateurs. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](subscriptions/move-users-different-subscription.md)

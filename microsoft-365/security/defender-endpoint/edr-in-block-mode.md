@@ -33,13 +33,13 @@ ms.locfileid: "52302039"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="what-is-edr-in-block-mode"></a>Qu’est-ce PEPT en mode bloc ?
 
-[La détection et la](overview-endpoint-detection-response.md) réponse des points de terminaison (PEPT) en mode blocage offrent une protection contre les artefacts malveillants, même lorsque Antivirus Microsoft Defender est en cours d’exécution en mode passif. Lorsqu’elle est PEPT, elle bloque les artefacts ou comportements malveillants détectés sur un appareil. PEPT en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation. 
+[La détection et](overview-endpoint-detection-response.md) la réponse des points de terminaison (PEPT) en mode blocage offrent une protection contre les artefacts malveillants, même lorsque Antivirus Microsoft Defender est en cours d’exécution en mode passif. Lorsqu’elle est PEPT, elle bloque les artefacts ou comportements malveillants détectés sur un appareil. PEPT en mode blocage fonctionne en arrière-plan pour corriger les artefacts malveillants détectés après une violation. 
 
 PEPT en mode bloc est également intégré aux [menaces](next-gen-threat-and-vuln-mgt.md)& gestion des vulnérabilités . L’équipe de sécurité de [](tvm-security-recommendation.md) votre organisation reçoit une recommandation de sécurité pour activer PEPT en mode blocage s’il n’est pas déjà activé. 
 
@@ -79,7 +79,7 @@ L’image suivante montre une instance des logiciels indésirables détectés et
 |Système d’exploitation     |L’une des versions suivantes : <br/>- Windows 10 (toutes les releases) <br/>- Windows Server, version 1803 ou plus récente <br/>- Windows Server 2019 <br/>- Windows Server 2016 (uniquement lorsque Antivirus Microsoft Defender est en mode actif)     |
 |Windows Inscription E5     |Windows E5 est inclus dans les abonnements suivants : <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 avec l’offre Protection contre les menaces & identité <br/><br/>Voir [Composants,](/microsoft-365/enterprise/microsoft-365-overview#components) [fonctionnalités et fonctionnalités pour chaque plan.](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)       |
 |Antivirus Microsoft Defender  |Antivirus Microsoft Defender doit être installé et s’exécute en mode actif ou passif. (Vous pouvez utiliser Antivirus Microsoft Defender’une solution antivirus non Microsoft.) [Confirmez Antivirus Microsoft Defender est en mode actif ou passif.](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode) |
-|Protection fournie par le cloud |Assurez-vous Antivirus Microsoft Defender est configuré de telle sorte que la protection livrée [par le cloud soit activée.](enable-cloud-protection-microsoft-defender-antivirus.md) |
+|Protection fournie par le cloud |Assurez-Antivirus Microsoft Defender est configuré de telle sorte que la protection cloud [soit activée.](enable-cloud-protection-microsoft-defender-antivirus.md) |
 |Antivirus Microsoft Defender logiciel anti-programme malveillant |Assurez-vous que votre client est à jour. À l’aide de PowerShell, exécutez la cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) en tant qu’administrateur. Dans la **ligne AMProductVersion,** vous devriez voir **4.18.2001.10** ou version supérieure. |
 |Antivirus Microsoft Defender de recherche |Assurez-vous que votre moteur est à jour. À l’aide de PowerShell, exécutez la cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) en tant qu’administrateur. Dans la **ligne AMEngineVersion,** vous devriez voir **1.1.16700.2** ou version supérieure. |
 
@@ -102,11 +102,11 @@ Comme Antivirus Microsoft Defender détecte et remédie aux éléments malveilla
 
 ### <a name="why-do-we-need-cloud-protection-on"></a>Pourquoi avons-nous besoin de la protection cloud ? 
 
-La protection cloud est nécessaire pour activer la fonctionnalité sur l’appareil. La protection cloud permet à [Defender for Endpoint](microsoft-defender-endpoint.md) de fournir la dernière et la plus grande protection en fonction de notre étendue et de notre profondeur d’intelligence de la sécurité, ainsi que des modèles d’apprentissage comportementaux et des appareils.
+La protection cloud est nécessaire pour activer la fonctionnalité sur l’appareil. La protection cloud permet à [Defender for Endpoint](microsoft-defender-endpoint.md) de fournir la dernière et la plus grande protection en fonction de notre étendue et de notre profondeur d’intelligence de la sécurité, ainsi que des modèles d’apprentissage du comportement et des appareils.
 
 ### <a name="how-do-i-set-microsoft-defender-antivirus-to-passive-mode"></a>Comment définir Antivirus Microsoft Defender en mode passif ?
 
-Selon les systèmes d’exploitation, lorsque les appareils exécutant une solution antivirus/anti-programme malveillant non Microsoft sont intégrés à Defender pour endpoint, Antivirus Microsoft Defender peut passer en mode passif automatiquement. Pour plus d’informations, [voir Comment Antivirus Microsoft Defender la fonctionnalité Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality). 
+Selon les systèmes d’exploitation, lorsque les appareils exécutant une solution antivirus/anti-programme malveillant non Microsoft sont intégrés à Defender pour le point de terminaison, Antivirus Microsoft Defender peut passer en mode passif automatiquement. Pour plus d’informations, [voir Comment Antivirus Microsoft Defender la fonctionnalité Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#how-microsoft-defender-antivirus-affects-defender-for-endpoint-functionality). 
 
 ### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>Comment puis-je confirmer Antivirus Microsoft Defender est en mode actif ou passif ?
 
@@ -130,7 +130,7 @@ Si Antivirus Microsoft Defender est en cours d’exécution en mode actif ou pas
 - Windows Serveur, version 1803 ou plus récente 
 - Windows Server 2019 
 
-Si Windows Server 2016 a Antivirus Microsoft Defender en mode actif et que le point de terminaison est intégré à Defender pour le point de terminaison, PEPT en mode bloc est techniquement pris en charge. Toutefois, PEPT en mode blocage est conçu pour être une protection supplémentaire lorsque Antivirus Microsoft Defender n’est pas la solution antivirus principale sur un point de terminaison. Dans ce cas, Antivirus Microsoft Defender s’exécute en mode passif. Actuellement, l’exécution Antivirus Microsoft Defender en mode passif n’est pas prise en charge sur Windows Server 2016. Pour plus d’informations, voir Antivirus Microsoft Defender solutions [antivirus/anti-programme malveillant non-Microsoft.](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)
+Si Windows Server 2016 a Antivirus Microsoft Defender en mode actif et que le point de terminaison est intégré à Defender pour le point de terminaison, PEPT en mode bloc est techniquement pris en charge. Toutefois, PEPT en mode blocage est conçu pour être une protection supplémentaire lorsque Antivirus Microsoft Defender n’est pas la solution antivirus principale sur un point de terminaison. Dans ce cas, Antivirus Microsoft Defender s’exécute en mode passif. Actuellement, l’exécution Antivirus Microsoft Defender en mode passif n’est pas prise en charge sur Windows Server 2016. Pour plus d’informations, voir Antivirus Microsoft Defender solutions [antivirus/anti-programme](microsoft-defender-antivirus-compatibility.md#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)malveillant non Microsoft.
 
 ## <a name="see-also"></a>Voir aussi
 

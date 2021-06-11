@@ -52,15 +52,15 @@ Les préfixes et les suffixes peuvent être des chaînes fixes ou des attributs 
 
 ### <a name="fixed-strings"></a>Chaînes fixes
 
-Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixe courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
+Vous pouvez utiliser des chaînes courtes qui peuvent vous aider à différencier les groupes dans la liste d’erreurs d’erreur et la navigation gauche des charges de travail de groupe. Certains des suffixes de préfixes courants sont des mots clés tels que « Grp Name » (nom grp), « Name » \_ (nom), « Name » \# \_ (nom)
 
 ### <a name="attributes"></a>Attributs
 
 Vous pouvez utiliser des attributs qui peuvent aider à identifier qui a créé le groupe comme [Service] et où il a été créé à partir de [Pays].
 
-Exemples :
+Exemples :
 
-- Stratégie = « GRP [GroupName] [Department] »
+- Policy = « GRP [GroupName] [Department] »
 - Service de l’utilisateur = Ingénierie
 - Nom du groupe créé = « GRP My Group Engineering »
 
@@ -109,7 +109,7 @@ Aucune recherche de sous-chaîne n’est effectuée ; plus précisément, une co
 
 Certains administrateurs sont exemptés de ces stratégies, sur toutes les charges de travail de groupe et points de terminaison, afin qu’ils peuvent créer des groupes avec ces mots bloqués et avec leurs conventions d’attribution de noms souhaitées. Voici la liste des rôles d’administrateur exemptés de la stratégie de noms de groupes.
 
-- Administrateur général
+- Administrateur global
 
 - Support partenaire de niveau 1
 

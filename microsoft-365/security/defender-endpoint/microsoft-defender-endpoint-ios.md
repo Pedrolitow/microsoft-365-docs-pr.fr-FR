@@ -36,7 +36,7 @@ ms.locfileid: "52844705"
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**Microsoft Defender pour le point de terminaison sur iOS** offre une protection contre le hameçonnage et les connexions réseau non sécurisées à partir de sites web, de courriers électroniques et d’applications. Toutes les alertes seront disponibles par le biais d’un seul volet de la Centre de sécurité Microsoft Defender. Le portail offre aux équipes de sécurité une vue centralisée des menaces sur les appareils iOS, ainsi que d’autres plateformes.
+**Microsoft Defender pour le point de terminaison sur iOS** offre une protection contre le hameçonnage et les connexions réseau non sécurisées à partir de sites web, de courriers électroniques et d’applications. Toutes les alertes sont disponibles via un seul volet de la Centre de sécurité Microsoft Defender. Le portail offre aux équipes de sécurité une vue centralisée des menaces sur les appareils iOS, ainsi que d’autres plateformes.
 
 > [!CAUTION]
 > L’exécution d’autres produits de protection des points de terminaison tiers avec Defender for Endpoint sur iOS est susceptible de provoquer des problèmes de performances et des erreurs système imprévisibles.
@@ -64,9 +64,9 @@ ms.locfileid: "52844705"
 
 **Configuration requise**
 
-- Appareils iOS exécutant iOS 11.0 et supérieurs. iPad appareils sont officiellement pris en charge à partir de la version 1.1.15010101 et versions antérieures.
+- Appareils iOS exécutant iOS 11.0 et supérieurs. iPad sont officiellement pris en charge à partir de la version 1.1.15010101 et versions antérieures.
 
-- L’appareil est inscrit avec [l’Portail d’entreprise Intune.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
+- L’appareil est inscrit avec [l’application Portail d’entreprise Intune.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
 
 ## <a name="installation-instructions"></a>Instructions d’installation
 

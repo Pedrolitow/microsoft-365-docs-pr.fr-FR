@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da3722294957593fc9cb89abfaec13e45106eefc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a3b017a9a05964c15411668787b035f1052c68cf
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187384"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878279"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
@@ -53,6 +53,9 @@ ms.locfileid: "51187384"
 | [Exécuter une analyse antivirus](run-av-scan.md)                              | [Action de l’ordinateur](machineaction.md) | Exécutez une analyse antivirus à l’Windows Defender (le cas échéant).    |
 | [Retirer un ordinateur](offboard-machine-api.md)                       | [Action de l’ordinateur](machineaction.md) | [Hors-carte de](machine.md) Microsoft Defender pour point de terminaison. |
 | [Arrêt et fichier mis en quarantaine](stop-and-quarantine-file.md)           | [Action de l’ordinateur](machineaction.md) | Arrêtez l’exécution d’un fichier sur un ordinateur et supprimez-le.        |
+| [Exécuter une réponse en direct](run-live-response.md)                     | [Action de l’ordinateur](machineaction.md)  | Exécute une séquence de commandes de réponse en direct sur un appareil                       |
+| [Obtenir un résultat de réponse en direct](get-live-response-result.md) | Entité d’URL      | Extrait le lien de téléchargement des résultats de la commande de réponse en direct spécifique par son index. |
+|[Annuler l’action de l’ordinateur](cancel-machine-action.md)                                | [Action de l’ordinateur](machineaction.md)  | Annuler une action de l’ordinateur actif.                                            |
 
 <br>
 
@@ -71,6 +74,7 @@ ms.locfileid: "51187384"
 | creationDateTimeUtc | DateTimeOffset | Date et heure de création de l’action.                                                                                                                                                                 |
 | lastUpdateTimeUtc   | DateTimeOffset | Date et heure de la dernière mise à jour de l’état de l’action.                                                                                                                                                     |
 | relatedFileInfo     | Classe          | Contient deux propriétés. chaîne ```fileIdentifier``` , Enum ```fileIdentifierType``` avec les valeurs possibles : « Sha1 », « Sha256 » et « Md5 ».                                                                         |
+
 
 
 ## <a name="json-representation"></a>Représentation Json

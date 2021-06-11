@@ -33,7 +33,7 @@ ms.locfileid: "52572764"
 
 
 **S’applique à :**
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Lisez les réponses aux questions les plus fréquemment posées sur l’Microsoft 365 [Defender,](microsoft-365-defender.md)y compris les licences et autorisations requises, le déploiement des services de support et les paramètres initiaux.
 
@@ -43,16 +43,16 @@ Pour obtenir des instructions sur la façon d’activer le service, lisez [Activ
 
 Les clients titulaires des licences non E5 suivantes peuvent utiliser Microsoft 365 Defender :
 
-- Microsoft Defender pour point de terminaison
-- Microsoft Defender pour l’identité
-- Microsoft Cloud App Security
-- Defender pour Office 365 (Plan 2)
+- Microsoft Defender pour point de terminaison
+- Microsoft Defender pour l’identité
+- Microsoft Cloud App Security
+- Defender pour Office 365 (Plan 2)
  
 Pour obtenir la liste complète des licences pris en charge, [lisez les conditions requises pour les licences.](prerequisites.md#licensing-requirements)
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>Dois-je installer ou déployer quoi que ce soit pour commencer à utiliser Microsoft 365 Defender ?
 
-Non, Microsoft 365 Defender consolide les données Microsoft 365 services de sécurité que vous avez déjà déployés. Une fois que vous l’avez mis en place, les expériences d’incident, d’automatisation et de recherche commenceront à fonctionner dans l’étendue des produits déployés. Si aucun de ces produits n’est correctement déployé, Microsoft 365 Defender n’affiche aucune donnée et n’est pas en mesure d’agir.
+Non, Microsoft 365 Defender consolide les données des services Microsoft 365 sécurité que vous avez déjà déployés. Une fois que vous l’avez mis en place, les expériences d’incident, d’automatisation et de recherche commenceront à fonctionner dans l’étendue des produits déployés. Si aucun de ces produits n’est correctement déployé, Microsoft 365 Defender n’affiche aucune donnée et n’est pas en mesure d’agir.
 
 Pour optimiser vos expériences Microsoft 365 Defender,  nous vous recommandons de déployer tous les produits et services de sécurité Microsoft 365 [pris en charge.](deploy-supported-services.md)
 
@@ -81,7 +81,7 @@ Les comptes affectés aux rôles Azure Active Directory (Azure AD) peuvent accé
 >[!NOTE]
 >Les paramètres de contrôle d’accès en fonction du rôle dans Microsoft Defender pour point de terminaison influencent l’accès aux données. Pour plus d’informations, voir la [gestion de l’accès Microsoft 365 Defender.](m365d-permissions.md)
 
-## <a name="what-time-zone-does-microsoft-365-defender-default-to"></a>De quel fuseau horaire Microsoft 365 Defender est-il par défaut ?
+## <a name="what-time-zone-does-microsoft-365-defender-default-to"></a>À quel fuseau horaire Microsoft 365 Defender est-il par défaut ?
 Par défaut, Microsoft 365 Defender affiche les informations d’heure dans le fuseau horaire UTC. Vous pouvez modifier ce paramètre pour utiliser votre fuseau horaire local. [En savoir plus sur la définition du fuseau horaire](m365d-time-zone.md)
 
 ## <a name="how-can-i-learn-about-new-microsoft-365-defender-feature-and-ui-updates"></a>Comment puis-je en savoir plus sur les nouvelles fonctionnalités Microsoft 365 Defender et les mises à jour de l’interface utilisateur ?

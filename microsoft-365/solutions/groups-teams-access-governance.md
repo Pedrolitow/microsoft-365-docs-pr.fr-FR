@@ -37,18 +37,18 @@ Le tableau suivant fournit une référence rapide pour les contrôles d’accès
 ||Contrôler qui peut partager des fichiers, des dossiers et des sites.|[Configurer et gérer les demandes d’accès](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Accès conditionnel|||
 ||Authentification multifacteur|[Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
-||Contrôler l’accès aux appareils en fonction de la sensibilité au groupe, à l’équipe ou au site.|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Contrôler l’accès aux appareils en fonction de la sensibilité au groupe, à l’équipe ou au site.|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Limiter l’accès au site pour les appareils non utilisés.|[Contrôler SharePoint’accès à partir d’appareils non utilisés](/sharepoint/control-access-from-unmanaged-devices)|
 ||Contrôler l’accès au site en fonction de l’emplacement|[Contrôler l’accès aux données SharePoint et OneDrive en fonction de l’emplacement réseau](/sharepoint/control-access-based-on-network-location)|
 |Accès invité|||
 ||Autoriser ou bloquer SharePoint partage à partir de domaines spécifiés.|[Restreindre le partage de contenu SharePoint et OneDrive par domaine](/sharepoint/restricted-domains-sharing)|
-||Autoriser ou bloquer l’appartenance à une équipe ou à un groupe à partir de domaines spécifiés.|[Autoriser ou bloquer les invitations à des utilisateurs B2B d’organisations spécifiques](/azure/active-directory/b2b/allow-deny-list)|
+||Autoriser ou bloquer l’appartenance à une équipe ou à un groupe à partir de domaines spécifiés.|[Autoriser ou bloquer des invitations à des utilisateurs B2B à partir d’organisations spécifiques](/azure/active-directory/b2b/allow-deny-list)|
 ||Empêcher le partage anonyme.|[Désactiver les liens Tout le monde](./share-limit-accidental-exposure.md#turn-off-anyone-links)|
 ||Contrôler les autorisations pour les liens d’accès anonyme.|[Définir des autorisations de lien pour les liens Tout le monde](./best-practices-anonymous-sharing.md#set-link-permissions)|
 ||Contrôler l’expiration des liens de partage anonyme.|[Définir une date d’expiration pour les liens Tout le monde](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)|
 ||Contrôler le type de lien de partage affiché aux utilisateurs par défaut.|[Modifier le type de lien par défaut d’un site](/sharepoint/change-default-sharing-link)|
 ||Limiter le partage externe à des personnes spécifiques.|[Limiter le partage externe aux groupes de sécurité spécifiés](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
-||Contrôler l’accès invité à un groupe, une équipe ou un site en fonction de la sensibilité des informations.|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||Contrôler l’accès invité à un groupe, une équipe ou un site en fonction de la sensibilité des informations.|[Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Désactiver les options de partage.|[Limiter le partage dans Microsoft 365](./microsoft-365-limit-sharing.md)|
 |Gestion des utilisateurs|||
 ||Passer régulièrement en revue l’appartenance aux équipes et aux groupes.|[Que sont les révisions d’accès Azure AD ?](/azure/active-directory/governance/access-reviews-overview)|
@@ -78,7 +78,7 @@ Avec Microsoft 365, vous pouvez exiger une authentification multifacteur pour le
 
 Si vous avez des informations sensibles dans certains de vos groupes et équipes, vous pouvez appliquer des stratégies de gestion des appareils en fonction de l’étiquette de confidentialité d’un groupe ou d’une équipe. Vous pouvez bloquer entièrement l’accès à partir d’appareils nonmanagés ou autoriser un accès limité au web uniquement :
 
-- [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 Dans SharePoint, vous pouvez restreindre l’accès aux sites à partir d’emplacements réseau spécifiés.
 
@@ -100,7 +100,7 @@ Vous pouvez restreindre les invités en fonction du domaine de leur adresse de m
 
 - [Restreindre le partage de contenu SharePoint et OneDrive par domaine](/sharepoint/restricted-domains-sharing)
 
-- [Autoriser ou bloquer les invitations à des utilisateurs B2B d’organisations spécifiques](/azure/active-directory/b2b/allow-deny-list)
+- [Autoriser ou bloquer des invitations à des utilisateurs B2B à partir d’organisations spécifiques](/azure/active-directory/b2b/allow-deny-list)
 
 Microsoft 365 permet le partage anonyme de fichiers et de dossiers à l’aide de liens de partage *Tout le* monde. *Tous les* liens peuvent être transmis et toute personne ayant le lien peut accéder à l’élément partagé. En fonction de la sensibilité de vos  données, envisagez de régir la façon dont les liens Tout le monde sont utilisés, y compris de les éteindre entièrement, de restreindre les autorisations de lien en lecture seule ou de définir un délai d’expiration pour eux :
 
@@ -110,7 +110,7 @@ Microsoft 365 permet le partage anonyme de fichiers et de dossiers à l’aide d
 
 - [Définir une date d’expiration pour les liens Tout le monde](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)
 
-Lors du partage de fichiers ou de dossiers, les utilisateurs peuvent choisir parmi plusieurs types de liens. Pour réduire le risque de partage inapproprié accidentel, vous pouvez modifier le type de lien par défaut présenté aux utilisateurs lorsqu’ils partagent. Par exemple, la modification de la valeur par  défaut des liens *Tout* le monde (qui autorisent l’accès anonyme) vers les liens des personnes de votre organisation peut réduire le risque de partage externe indésirable d’informations sensibles :
+Lorsque vous partagez des fichiers ou des dossiers, les utilisateurs peuvent choisir parmi plusieurs types de liens. Pour réduire le risque de partage inapproprié accidentel, vous pouvez modifier le type de lien par défaut présenté aux utilisateurs lorsqu’ils partagent. Par exemple, la modification de la valeur par  défaut des liens *Tout* le monde (qui autorisent l’accès anonyme) vers les liens des personnes de votre organisation peut réduire le risque de partage externe indésirable d’informations sensibles :
 
 - [Modifier le type de lien par défaut d’un site](/sharepoint/change-default-sharing-link)
 
@@ -120,13 +120,13 @@ Si votre organisation dispose de données sensibles que vous devez partager avec
 
 Les groupes et Teams ont des paramètres au niveau de l’organisation qui autorisent ou refusent l’accès invité. Bien que vous pouvez restreindre l’accès invité à des équipes ou des groupes spécifiques à l’aide de [Microsoft PowerShell,](per-group-guest-access.md)nous vous recommandons de le faire au moyen d’une étiquette de niveau de sensibilité. Avec les étiquettes de sensibilité, vous pouvez automatiquement autoriser ou refuser l’accès invité en fonction de l’étiquette appliquée :
 
-- [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
+- [Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 Dans un environnement où vous invitez fréquemment des invités à des groupes et des équipes, envisagez de mettre en place des révisions d’accès invité régulièrement programmées. Les propriétaires peuvent être invités à passer en revue les invités de leurs groupes et équipes, et à approuver ou refuser l’accès.
 
 - [Configurer les révisions d’accès invité](/microsoft-365/solutions/create-secure-guest-sharing-environment#set-up-guest-access-reviews)
 
-Microsoft 365 offre de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter la façon dont elles sont partagées, examinez les options de limitation du partage :
+Microsoft 365 propose de nombreuses méthodes de partage d’informations. Si vous avez des informations sensibles et que vous souhaitez limiter leur partage, examinez les options de limitation du partage :
 
 - [Limiter le partage dans Microsoft 365](./microsoft-365-limit-sharing.md)
 
@@ -168,7 +168,7 @@ Ressources supplémentaires :
 
 [Créer votre plan de gouvernance de collaboration](collaboration-governance-first.md)
 
-[Sécurité et de la conformité dans Microsoft Teams](/microsoftteams/security-compliance-overview)
+[Sécurité et conformité dans Microsoft Teams](/microsoftteams/security-compliance-overview)
 
 [Gérer les paramètres de partage dans SharePoint](/sharepoint/turn-external-sharing-on-or-off)
 

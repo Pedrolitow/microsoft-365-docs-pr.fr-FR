@@ -1,6 +1,6 @@
 ---
 title: Migrer de Mc Antivirus vers Microsoft Defender pour le point de terminaison
-description: Passez de Mc Antivirus à Microsoft Defender pour le point de terminaison. Lisez cet article pour obtenir une vue d’ensemble.
+description: Passez de Mc Antivirus à Microsoft Defender pour endpoint. Lisez cet article pour obtenir une vue d’ensemble.
 keywords: migration, Microsoft Defender pour point de terminaison, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,7 +33,7 @@ ms.locfileid: "52538050"
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Si vous envisagez de passer de Mc Antivirus Endpoint Security (Mc Antivirus) à [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Microsoft Defender for Endpoint), vous êtes au bon endroit. Utilisez cet article comme guide.
 
@@ -51,12 +51,12 @@ Lorsque vous passez de Mc Antivirus à Microsoft Defender pour le point de termi
 |Phase |Description |
 |--|--|
 |[Préparer votre migration](mcafee-to-microsoft-defender-prepare.md) |Pendant la phase [**de**](mcafee-to-microsoft-defender-prepare.md) préparation, vous mettez à jour les appareils de votre organisation, obtenez Microsoft Defender pour le point de terminaison, planifiez vos rôles et autorisations et accordez l’accès au Centre de sécurité Microsoft Defender. Vous configurez également les paramètres proxy et Internet de votre appareil pour permettre la communication entre les appareils de votre organisation et Microsoft Defender pour le point de terminaison. |
-|[Configurer Microsoft Defender pour le point de terminaison](mcafee-to-microsoft-defender-setup.md) |Pendant la phase [**d’installation,**](mcafee-to-microsoft-defender-setup.md) vous activez Antivirus Microsoft Defender et définissez-le en mode passif. Vous configurez également les paramètres & exclusions pour Antivirus Microsoft Defender et votre solution de protection de point de terminaison existante. Ensuite, vous créez vos groupes d’appareils, collections et unités d’organisation. Enfin, vous configurez vos stratégies de logiciel anti-programme malveillant et vos paramètres de protection en temps réel.|
+|[Configurer Microsoft Defender pour le point de terminaison](mcafee-to-microsoft-defender-setup.md) |Pendant la phase [**d’installation,**](mcafee-to-microsoft-defender-setup.md) vous activez Antivirus Microsoft Defender et définissez-le en mode passif. Vous configurez également les paramètres & exclusions pour Antivirus Microsoft Defender et votre solution de protection de point de terminaison existante. Ensuite, vous créez vos groupes d’appareils, collections et unités d’organisation. Enfin, vous configurez vos stratégies anti-programme malveillant et vos paramètres de protection en temps réel.|
 |[Intégration à Microsoft Defender pour le point de terminaison](mcafee-to-microsoft-defender-onboard.md) |Pendant la [**phase**](mcafee-to-microsoft-defender-onboard.md) d’intégration, vous intégrerez vos appareils à Microsoft Defender pour point de terminaison, vérifiez que Antivirus Microsoft Defender est en cours d’exécution en mode passif et vérifiez que vos points de terminaison communiquent avec Defender pour Endpoint. Ensuite, vous désinstallez Mc Antivirus et assurez-vous que Defender pour le point de terminaison fonctionne correctement. |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Qu’est-ce qui est inclus dans Microsoft Defender pour le point de terminaison ?
 
-Dans ce guide de migration, nous [](overview-endpoint-detection-response.md) nous concentrons sur les fonctionnalités de [protection](microsoft-defender-antivirus-in-windows-10.md) et de protection évolutive des points de terminaison nouvelle génération comme point de départ pour passer à Microsoft Defender pour endpoint. Toutefois, Microsoft Defender pour point de terminaison inclut bien plus que la protection antivirus et de point de terminaison. Microsoft Defender pour point de terminaison est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse. Le tableau suivant récapitule les fonctionnalités de Microsoft Defender pour Point de terminaison. 
+Dans ce guide de migration, nous [](overview-endpoint-detection-response.md) nous concentrons sur les fonctionnalités de [protection](microsoft-defender-antivirus-in-windows-10.md) et de protection évolutive des points de terminaison nouvelle génération comme point de départ pour passer à Microsoft Defender pour Endpoint. Toutefois, Microsoft Defender pour point de terminaison inclut bien plus que la protection antivirus et de point de terminaison. Microsoft Defender pour point de terminaison est une plateforme de sécurité unifiée pour la protection préventive, la détection après effraction, l’examen automatisé et la réponse. Le tableau suivant récapitule les fonctionnalités de Microsoft Defender pour point de terminaison. 
 
 | Fonctionnalité/fonctionnalité | Description |
 |---|---|

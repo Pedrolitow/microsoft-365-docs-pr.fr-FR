@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les paramètres de filtrage avancé du courrier indésirable (ASF) disponibles dans les stratégies anti-courrier indésirable dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12f193ef61205e8568341c774b957ce4a9dd7988
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779421"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878231"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Paramètres de filtrage avancé du courrier indésirable (ASF) dans EOP
 
@@ -47,7 +47,7 @@ Dans toutes Microsoft 365 organisations, les paramètres de filtrage avancé du 
 > - La présence de messages filtrés en quarantaine.
 > - Champs `X-CustomSpam:` d’en-tête X spécifiques ajoutés aux messages, comme décrit dans cet article.
 
-Les sections suivantes décrivent les paramètres et options ASF disponibles dans les stratégies anti-courrier indésirable dans le Centre de sécurité Microsoft 365 et dans Exchange Online PowerShell ou EOP PowerShell autonome ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) et [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
+Les sections suivantes décrivent les paramètres et options ASF disponibles dans les stratégies anti-courrier indésirable dans le portail Microsoft 365 Defender et dans Exchange Online PowerShell ou EOP PowerShell autonome ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) et [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Si vous souhaitez en savoir plus, consultez l’article [Configurer les stratégies anti-courrier indésirable dans EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Activer, désactiver ou tester les paramètres ASF
 
@@ -58,7 +58,7 @@ Pour chaque paramètre ASF, les options suivantes sont disponibles dans les stra
 - **Test**: ASF ajoute le champ d’en-tête X correspondant au message. Ce qui arrive au message est déterminé par la valeur **du mode Test** (*TestModeAction*) :
   - **Aucun**: la remise des messages n’est pas affectée par la détection ASF. Le message est toujours soumis à d’autres types de filtrage et de règles dans EOP.
   - **Ajouter le texte d’en-tête X par défaut (*AddXHeader*)**: la valeur d’en-tête X `X-CustomSpam: This message was filtered by the custom spam filter option` est ajoutée au message. Vous pouvez utiliser cette valeur dans les règles de boîte de réception ou les règles de flux de messagerie (également appelées règles de transport) pour affecter la remise du message.
-  - **Envoyer un message Cci (*BccMessage*)**: les adresses de messagerie spécifiées (la valeur du paramètre *TestModeBccToRecipients* dans PowerShell) sont ajoutées au champ Cci du message et le message est remis aux destinataires Cci supplémentaires. Dans le centre de sécurité, vous séparez plusieurs adresses de messagerie par des points-virgules (;). Dans PowerShell, vous séparez plusieurs adresses de messagerie par des virgules.
+  - **Envoyer un message Cci (*BccMessage*)**: les adresses de messagerie spécifiées (la valeur du paramètre *TestModeBccToRecipients* dans PowerShell) sont ajoutées au champ Cci du message, et le message est remis aux destinataires Cci supplémentaires. Dans le portail Microsoft 365 Defender, vous séparez plusieurs adresses de messagerie par des points-virgules (;). Dans PowerShell, vous séparez plusieurs adresses de messagerie par des virgules.
 
   **Remarques** :
 

@@ -26,7 +26,7 @@ ms.locfileid: "52537786"
 
 ## <a name="electronic-funds-transfer"></a>Transfert électronique de fonds
 
-**Veuillez payer en SEK et référencer les numéro(s) de facture sur votre paiement.**
+**Veuillez payer en SEK et référencer les numéro(s) de facture à votre paiement.**
 
 Si vous avez une facture facturée par **Microsoft Ireland Operations Limited,** utilisez les informations bancaires ci-après :
 

@@ -31,13 +31,13 @@ ms.locfileid: "52538302"
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Résumé**  Découvrez comment reconnaître et corriger les attaques par consentement illicite dans Office 365.
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Qu’est-ce que l’attaque par consentement illicite dans Office 365 ?
 
-Dans le cas d’une attaque par consentement illicite, l’attaquant crée une application enregistrée par Azure qui demande l’accès à des données telles que des informations de contact, des e-mails ou des documents. L’attaquant astuces ensuite un utilisateur final pour accorder à cette application l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site web approuvé. Une fois l’application illicite accordée, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte d’organisation. Les étapes de correction normales, telles que la réinitialisation des mots de passe pour les comptes en violation ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces externes à l’organisation.
+Dans le cas d’une attaque par consentement illicite, l’attaquant crée une application enregistrée par Azure qui demande l’accès à des données telles que des informations de contact, des e-mails ou des documents. L’attaquant astuce ensuite un utilisateur final pour accorder à cette application son consentement pour accéder à ses données via une attaque par hameçonnage ou en injectant du code illicite dans un site web approuvé. Une fois que l’application illicite a obtenu son consentement, elle dispose d’un accès au niveau du compte aux données sans avoir besoin d’un compte d’organisation. Les étapes de correction normales, telles que la réinitialisation des mots de passe pour les comptes en violation ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces externes à l’organisation.
 
 Ces attaques tirent parti d’un modèle d’interaction qui suppose que l’entité qui appelle les informations est une automatisation et non une personne.
 
@@ -66,7 +66,7 @@ Vous devez effectuer une recherche dans le journal **d’audit** pour trouver de
 >
 > La durée de rétention et de recherche d’un enregistrement d’audit dans le journal d’audit dépend de votre abonnement Microsoft 365 et plus précisément du type de licence attribuée à un utilisateur spécifique. Pour plus d’informations, consultez [le journal d’audit.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 >
-> Si cette valeur est true, elle indique qu’une personne ayant un accès Administrateur général a peut-être accordé un large accès aux données. S’il s’agit d’une attaque inattendue, prenez les mesures [nécessaires pour confirmer une attaque.](#how-to-confirm-an-attack)
+> Si cette valeur est vraie, elle indique qu’une personne ayant un accès Administrateur général a peut-être accordé un large accès aux données. S’il s’agit d’une attaque inattendue, prenez les mesures [nécessaires pour confirmer une attaque.](#how-to-confirm-an-attack)
 
 ## <a name="how-to-confirm-an-attack"></a>Comment confirmer une attaque
 
@@ -90,7 +90,7 @@ Vous pouvez rechercher les applications pour lesquelles un utilisateur individue
 
 2. Sélectionnez le Azure Active Directory de l’équipe.
 
-3. Sélectionner **Utilisateurs**.
+3. Sélectionnez **Utilisateurs**.
 
 4. Sélectionnez l’utilisateur à réviser.
 
@@ -100,7 +100,7 @@ Cela vous indique les applications qui sont affectées à l’utilisateur et les
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Étapes pour que vos utilisateurs émanent l’accès à leur application
 
-Demande à vos utilisateurs d’y accéder et de consulter https://myapps.microsoft.com leur propre accès aux applications. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
+Demande à vos utilisateurs https://myapps.microsoft.com d’y accéder et de consulter leur propre accès à l’application. Ils doivent être en mesure d’afficher toutes les applications ayant accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Étapes à suivre pour ce faire avec PowerShell
 
@@ -110,7 +110,7 @@ Le moyen le plus simple de vérifier l’attaque par consentement illicite consi
 
 - La bibliothèque Azure AD PowerShell est installée.
 
-- Droits d’administrateur général sur le client sur le client sur qui le script sera exécuté.
+- Droits d’administrateur général sur le client sur qui le script sera exécuté.
 
 - Administrateur local sur l’ordinateur à partir duquel exécuter les scripts.
 

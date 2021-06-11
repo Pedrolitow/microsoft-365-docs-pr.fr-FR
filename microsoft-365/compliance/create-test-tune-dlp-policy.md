@@ -64,7 +64,7 @@ Si DLP trouve des mots clés tels que « VISA » ou « AMEX », des valeurs proc
 
 En d’autres termes, la DLP est suffisamment intelligente pour reconnaître la différence entre ces deux chaînes de texte dans un e-mail :
 
-- « Pouvez-vous me commander un nouvel ordinateur portable ? Utilisez mon numéro VISA 1111-1111-1111-1111, arrivant à expiration le 22/11 et envoyez-moi la date de remise estimée lorsque vous l’avez. »
+- « Pouvez-vous me commander un nouvel ordinateur portable ? Utilisez mon numéro VISA 1111-1111-1111-1111, date d’expiration : 11/22, et envoyez-moi la date de remise estimée lorsque vous l’avez. »
 - « Le numéro de série de mon ordinateur portable est 2222-2222-2222-2222 et il a été acheté le 11/11/2010. En fait, mon visa de voyage est-il encore approuvé ? »
 
 Voir [les définitions d’entités](sensitive-information-type-entity-definitions.md) de type Informations sensibles qui expliquent comment chaque type d’informations est détecté.
@@ -73,7 +73,7 @@ Voir [les définitions d’entités](sensitive-information-type-entity-definitio
 
 Lorsque les risques de fuite de données ne sont pas entièrement évidents, il est difficile de savoir exactement où vous devez commencer avec l’implémentation de la protection contre la perte de données. Heureusement, les stratégies DLP peuvent être exécutés en « mode test », ce qui vous permet d’évaluer leur efficacité et leur précision avant de les activer.
 
-Les stratégies DLP pour Exchange Online peuvent être gérées par le biais Exchange centre d’administration. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le Centre de sécurité & conformité. C’est donc ce que je vais utiliser pour les démonstrations de cet article. Dans le Centre de sécurité & conformité, vous trouverez les stratégies DLP sous Stratégie de protection contre la perte **de**  >  **données**. Choisissez **Créer une stratégie à** démarrer.
+Les stratégies DLP pour Exchange Online peuvent être gérées via le centre d Exchange’administration. Toutefois, vous pouvez configurer des stratégies DLP pour toutes les charges de travail via le Centre de sécurité & conformité. C’est donc ce que je vais utiliser pour les démonstrations de cet article. Dans le Centre de sécurité & conformité, vous trouverez les stratégies DLP sous Stratégie de protection contre la perte **de**  >  **données.** Choisissez **Créer une stratégie** à démarrer.
 
 Microsoft 365 fournit une gamme de modèles de stratégie [DLP](what-the-dlp-policy-templates-include.md) que vous pouvez utiliser pour créer des stratégies. Supposons que vous êtes une entreprise australien. Vous pouvez filtrer les modèles sur l’Australie et choisir Financial, Medical and Health et Privacy.
 
@@ -121,11 +121,11 @@ Pour faire la démonstration de la détection du TFN de manière assez discrète
 
 ![Numéro de fichier fiscal australien ne réussissant pas la sommes de contrôle](../media/DLP-create-test-tune-email-test1.png)
 
-En comparaison, un e-mail avec les mots « Numéro de fichier fiscal » et un numéro TFN valide qui réussit la liste de contrôle déclenche la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été tiré d’un site web qui génère des TFN valides, mais pas authentiques. Ces sites sont utiles car l’une des erreurs les plus courantes lors du test d’une stratégie DLP consiste à utiliser un nombre factice qui n’est pas valide et qui ne réussira pas la sommes de contrôle (et par conséquent ne déclenchera pas la stratégie).
+En comparaison, un e-mail avec les mots « Numéro de fichier fiscal » et un numéro TFN valide qui passe la liste de contrôle déclenche la stratégie. Pour l’enregistrement ici, le TFN que j’utilise a été tiré d’un site web qui génère des TFN valides, mais pas authentiques. Ces sites sont utiles car l’une des erreurs les plus courantes lors du test d’une stratégie DLP consiste à utiliser un nombre factice qui n’est pas valide et qui ne réussira pas la sommes de contrôle (et par conséquent ne déclenchera pas la stratégie).
 
 ![Numéro de fichier fiscal australien qui passe le total de contrôle](../media/DLP-create-test-tune-email-test2.png)
 
-Le courrier électronique du rapport d’incident inclut le type d’informations sensibles qui ont été détectées, le nombre d’instances détectées et le niveau de confiance de la détection.
+Le courrier électronique du rapport d’incident inclut le type d’informations sensibles détectées, le nombre d’instances détectées et le niveau de confiance de la détection.
 
 ![Rapport d’incident montrant le numéro de fichier fiscal détecté](../media/DLP-create-test-tune-email-incident-report.png)
 
@@ -152,7 +152,7 @@ Lorsque vous modifiez une règle au sein d’une stratégie DLP, vous pouvez mod
 - Les conditions, y compris le type et le nombre d’instances de données sensibles qui déclenchent la règle.
 - Actions entreprises, telles que la restriction de l’accès au contenu.
 - Les notifications des utilisateurs, qui sont des conseils de stratégie qui s’affichent à l’utilisateur dans leur client de messagerie ou navigateur web.
-- Les substitutions utilisateur déterminent si les utilisateurs peuvent choisir de continuer à partager leurs messages électroniques ou fichiers.
+- Les substitutions utilisateur déterminent si les utilisateurs peuvent choisir de continuer à partager leurs e-mails ou fichiers.
 - Rapports d’incident, pour avertir les administrateurs.
 
 ![Options pour modifier des parties d’une règle](../media/DLP-create-test-tune-editing-options.png)
@@ -161,15 +161,15 @@ Pour cette démonstration, j’ai ajouté des notifications utilisateur à la st
 
 ![Options pour les notifications et remplacements utilisateur](../media/DLP-create-test-tune-user-notifications.png)
 
-La stratégie contient deux règles pour la gestion du volume élevé et du volume faible, donc n’oubliez pas de modifier les deux avec les actions que vous souhaitez. Il s’agit d’une opportunité de traiter les cas différemment en fonction de leurs caractéristiques. Par exemple, vous pouvez autoriser les remplacements pour les violations de volume faible, mais pas les remplacements pour les violations de volume élevées.
+La stratégie contient deux règles pour la gestion du volume élevé et du volume faible, donc n’oubliez pas de modifier les deux avec les actions que vous souhaitez. Il s’agit d’une opportunité de traiter les cas différemment en fonction de leurs caractéristiques. Par exemple, vous pouvez autoriser les remplacements pour les violations de volume faible, mais pas les remplacements pour les violations de volume élevé.
 
 ![Une règle pour un volume élevé et une règle pour un volume faible](../media/DLP-create-test-tune-two-rules.png)
 
-En outre, si vous souhaitez bloquer ou restreindre l’accès au contenu en violation de la stratégie, vous devez configurer une action sur la règle pour le faire.
+En outre, si vous souhaitez réellement bloquer ou restreindre l’accès au contenu en violation de la stratégie, vous devez configurer une action sur la règle pour le faire.
 
 ![Option pour restreindre l’accès au contenu](../media/DLP-create-test-tune-restrict-access-action.png)
 
-Après avoir enregistrer ces modifications dans les paramètres de stratégie, je dois également revenir à la page de paramètres principale de la stratégie et activer l’option permettant d’afficher des conseils de stratégie aux utilisateurs pendant que la stratégie est en mode test. Il s’agit d’un moyen efficace d’introduire des stratégies DLP à vos utilisateurs finaux et de former les utilisateurs à la sensibilisation, sans risque de trop de faux positifs qui ont une incidence sur leur productivité.
+Après avoir enregistrer ces modifications dans les paramètres de stratégie, je dois également revenir à la page de paramètres principale de la stratégie et activer l’option permettant d’afficher des conseils de stratégie aux utilisateurs pendant que la stratégie est en mode test. Il s’agit d’un moyen efficace d’introduire des stratégies DLP à vos utilisateurs finaux et de former les utilisateurs, sans risque de trop de faux positifs qui ont un impact sur leur productivité.
 
 ![Option d’afficher les conseils de stratégie en mode test](../media/DLP-create-test-tune-show-policy-tips.png)
 
@@ -181,9 +181,9 @@ Si vous avez activé les conseils de stratégie, l’utilisateur commence à voi
 
 ## <a name="investigate-false-positives"></a>Examiner les faux positifs
 
-Les modèles de stratégie DLP ne sont pas parfaits. Il est probable que certains faux positifs se produisent dans votre environnement, c’est pourquoi il est important de faciliter votre passage à un déploiement DLP, en prenant le temps de tester et d’affiner correctement vos stratégies.
+Les modèles de stratégie DLP ne sont pas parfaits. Il est probable que certains faux positifs se produisent dans votre environnement, c’est pourquoi il est si important de faciliter votre passage à un déploiement DLP, en prenant le temps de tester et d’affiner correctement vos stratégies.
 
-Voici un exemple de faux positif. Cet e-mail est relativement dangereux. L’utilisateur fournit son numéro de téléphone mobile à une personne, ainsi que sa signature électronique.
+Voici un exemple de faux positif. Cet e-mail est relativement dangereux. L’utilisateur fournit son numéro de téléphone mobile à une personne, y compris sa signature électronique.
 
 ![Courrier électronique affichant des informations fausses positives](../media/DLP-create-test-tune-false-positive-email.png)
  
@@ -222,11 +222,11 @@ Après avoir exécuté la stratégie DLP, vous devez effectuer vos propres tests
 
 Les stratégies qui autorisent les substitutions utilisateur présentent cette option à l’utilisateur dans le cadre du conseil de stratégie.
 
-![Conseil de stratégie permettant le remplacement par l’utilisateur](../media/DLP-create-test-tune-override-option.png)
+![Conseil de stratégie qui autorise le remplacement par l’utilisateur](../media/DLP-create-test-tune-override-option.png)
 
-Les stratégies qui restreignent le contenu présentent l’avertissement à l’utilisateur dans le cadre du conseil de stratégie et l’empêchent d’envoyer le courrier électronique.
+Les stratégies qui limitent le contenu présentent l’avertissement à l’utilisateur dans le cadre du conseil de stratégie et l’empêchent d’envoyer le courrier électronique.
 
-![Conseil de stratégie pour limiter le contenu](../media/DLP-create-test-tune-restrict-warning.png)
+![Conseil de stratégie selon le fait que le contenu est restreint](../media/DLP-create-test-tune-restrict-warning.png)
 
 ## <a name="summary"></a>Résumé
 

@@ -35,7 +35,7 @@ La collaboration avec des personnes extérieures à votre organisation comprend 
 - Activer **le** partage : configurez les contrôles de partage entre Azure Active Directory, Teams, Microsoft 365 Groupes et SharePoint pour autoriser le niveau de partage voulu pour votre organisation.
 -  Activer une sécurité supplémentaire : alors que les fonctionnalités de partage de base peuvent être configurées pour exiger l’authentification des personnes extérieures à votre organisation, Microsoft 365 fournit de nombreuses fonctionnalités de sécurité et de conformité supplémentaires pour vous aider à protéger vos données et à maintenir vos stratégies de gouvernance tout en partageant en externe.
 
-Lisez [Configurer la collaboration sécurisée](/microsoft-365/solutions/setup-secure-collaboration-with-teams) avec Microsoft 365 et Microsoft Teams pour découvrir comment le partage externe est lié aux recommandations globales Microsoft 365 collaboration.
+Lisez [Configurer la collaboration sécurisée avec Microsoft 365 et Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams) pour découvrir comment le partage externe est lié à l’ensemble des Microsoft 365 de collaboration.
 
 ## <a name="enable-sharing"></a>Activer le partage
 

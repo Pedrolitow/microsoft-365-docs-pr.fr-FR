@@ -32,7 +32,7 @@ ms.locfileid: "52572800"
 
 **S’applique à :**
 
-- Microsoft 365 Defender
+- Microsoft 365 Defender
 
 Une partie de votre enquête sur les incidents peut inclure des comptes d’utilisateur. Commencez par **l’onglet Utilisateurs** pour un incident à partir d’incidents **& alertes >** incident *>* **utilisateurs.** 
 
@@ -55,7 +55,7 @@ En outre, vous pouvez agir directement dans le Centre de sécurité Microsoft 36
 
 Vous pouvez également voir cette page en sélectionnant le nom du compte d’utilisateur dans la liste de la page **Utilisateurs.**
 
-La page utilisateur du centre de sécurité Microsoft 365 combine les informations de Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence). 
+La page utilisateur du centre de sécurité Microsoft 365 combine les informations de Microsoft Defender pour endpoint, Microsoft Defender pour identité et Microsoft Cloud App Security (en fonction des licences dont vous avez la licence). 
 
 Cette page affiche des informations spécifiques au risque de sécurité d’un compte d’utilisateur. Cela inclut un score qui permet d’évaluer les risques et les événements et alertes récents qui ont contribué au risque global de l’utilisateur.
 
@@ -64,7 +64,7 @@ Cette page affiche des informations spécifiques au risque de sécurité d’un 
 - Marquer le compte d’utilisateur comme compromis
 - Exiger que l’utilisateur se connecte à nouveau
 - Suspendre le compte d’utilisateur
-- Voir les Azure Active Directory de compte d’utilisateur (Azure AD)
+- Voir les paramètres Azure Active Directory compte d’utilisateur (Azure AD)
 - Afficher les fichiers du compte d’utilisateur
 - Afficher les fichiers partagés avec cet utilisateur. 
 

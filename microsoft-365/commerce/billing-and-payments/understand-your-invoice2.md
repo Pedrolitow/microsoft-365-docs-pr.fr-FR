@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Interpréter les frais, la facturation et les informations de paiement sur votre facture Microsoft 365 entreprise et comment modifier un numéro de bon de commande.
 ms.date: 05/04/2021
-ms.openlocfilehash: 63d532ddfb86eb80a1cdeb6001fff683c5999146
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635833"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888372"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -129,6 +129,7 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 ## <a name="related-content"></a>Contenu associé
 
 [Découvrez comment rechercher et afficher votre facture](view-your-bill-or-invoice.md) (article)\
+[Informations de facturation pour Microsoft 365 entreprise au Mexique](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
 [Modifier vos adresses de facturation](change-your-billing-addresses.md) (article)\
 [Modifier l’adresse de votre organisation, le courrier électronique du contact technique et d’autres informations](../../admin/manage/change-address-contact-and-more.md) (article)\
 [Payer votre abonnement Microsoft 365 entreprise](pay-for-your-subscription.md) (article)\

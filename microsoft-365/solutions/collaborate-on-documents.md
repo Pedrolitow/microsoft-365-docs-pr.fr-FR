@@ -62,7 +62,7 @@ Pour que les personnes extérieures à votre organisation ont accès à un docum
 
 Les paramètres au niveau de l’SharePoint déterminent les paramètres qui seront disponibles pour les sites SharePoint individuels. Les paramètres de site ne peuvent pas être plus permissifs que les paramètres au niveau de l’organisation. Le paramètre au niveau de l’OneDrive détermine le niveau de partage qui sera disponible dans les bibliothèques OneDrive utilisateurs.
 
-Pour SharePoint et OneDrive, si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifiés, choisissez Tout le **monde.** Si vous souhaitez vous assurer que les personnes extérieures à votre organisation doivent s’authentifier, choisissez Invités nouveaux **et existants.** *Tout* le monde est le moyen le plus simple de partager : les personnes extérieures à votre organisation peuvent ouvrir le lien sans authentification et sont libres de le transmettre à d’autres personnes.
+Pour SharePoint et OneDrive, si vous souhaitez autoriser le partage de fichiers et de dossiers non authentifiés, choisissez Tout le **monde.** Si vous souhaitez vous assurer que les personnes extérieures à votre organisation doivent s’authentifier, choisissez Invités nouveaux **et existants.** *Les* liens tout le monde sont le moyen le plus simple de partager : les personnes extérieures à votre organisation peuvent ouvrir le lien sans authentification et sont libres de le transmettre à d’autres personnes.
 
 Pour SharePoint, choisissez le paramètre le plus permissif qui sera nécessaire à n’importe quel site de votre organisation.
 
@@ -125,14 +125,14 @@ Pour définir les paramètres au niveau du site
 1. Dans le centre d’administration SharePoint, dans le volet de navigation de gauche, développez **Sites** et cliquez sur **Sites actifs**.
 2. Sélectionnez le site sur lequel vous souhaitez partager des fichiers et des dossiers avec des invités.
 3. Faites défiler vers la droite la ligne (dans laquelle le site sélectionné est présent) et cliquez n’importe où dans la **colonne de partage** externe.
-4. Dans la page qui s’apparaît, cliquez sur **l’onglet Stratégies.**
+4. Dans la page qui s’insérait, cliquez sur **l’onglet Stratégies.**
 5. Sous le **volet de partage** externe, cliquez sur **Modifier.**
 6. Assurez-vous que le partage est paramétré sur **Tout le monde** ou **Invités nouveaux et existants**.
 7. Si vous avez effectué des modifications, cliquez sur **Enregistrer**.
 
 ## <a name="invite-users"></a>Inviter des utilisateurs
 
-Les paramètres de partage d’invités sont désormais configurés ; afin que les utilisateurs peuvent désormais partager des fichiers et des dossiers avec des personnes extérieures à votre organisation. Pour [plus d OneDrive, voir](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) Partager des fichiers et des dossiers et Partager SharePoint fichiers ou [dossiers.](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)
+Les paramètres de partage d’invités sont désormais configurés ; afin que les utilisateurs peuvent désormais partager des fichiers et des dossiers avec des personnes extérieures à votre organisation. Pour [plus d OneDrive,](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) voir Partager des fichiers et des dossiers et Partager SharePoint fichiers ou [dossiers.](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)
 
 ## <a name="see-also"></a>Voir aussi
 
