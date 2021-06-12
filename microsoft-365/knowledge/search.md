@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Découvrez comment rechercher des rubriques dans Microsoft Microsoft Microsoft.
-ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844730"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908064"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utiliser Microsoft Search (recherche Microsoft) pour rechercher des rubriques dans les rubriques microsoft
 
@@ -23,9 +23,10 @@ Bien que les utilisateurs de rubriques Topics trouvent des rubriques par le biai
 
 ## <a name="topic-answer"></a>Réponse à la rubrique
 
-Lorsque vous recherchez une rubrique spécifique dans Recherche Microsoft (par exemple, « Saturne »), si une rubrique existe et est trouvée, elle affiche le résultat au format de suggestion de réponse à la rubrique.
+Lorsque vous recherchez une rubrique spécifique à partir de la page d’accueil SharePoint, sur Office.com ou à partir d’un site SharePoint qui a été étendue à votre organisation, si une rubrique existe et est trouvée, elle affiche le résultat dans le format de suggestion de réponse à la rubrique.
 
 La réponse à la rubrique s’affiche :
+
 - Nom de la rubrique
 - Autres noms : autres noms ou acronymes pour la rubrique.
 - Définition : description de la rubrique fournie par l’IA ou ajoutée manuellement par une personne.
@@ -38,10 +39,9 @@ La page de rubrique peut s’afficher dans les résultats de la recherche même 
 
 Les résultats de la recherche dans Word, PowerPoint, Outlook et Excel afficheront également la réponse à la rubrique lorsqu’une réponse est trouvée.
 
-
 ## <a name="acronyms"></a>Acronymes
 
-Dans Rubriques de Contrôle, vous pouvez modifier manuellement une rubrique afin d’y inclure un acronyme en tant <b>qu’autre nom.</b> Cela permet à un utilisateur qui recherche uniquement l’acronyme de la rubrique de trouver la réponse à la rubrique par le biais de Microsoft Search (recherche Microsoft).
+Dans Rubriques de Contrôle, vous pouvez modifier manuellement une rubrique afin d’y inclure un acronyme en tant *qu’autre nom.* Cela permet à un utilisateur qui recherche uniquement l’acronyme de la rubrique de trouver la réponse à la rubrique par le biais de Microsoft Search (recherche Microsoft).
 
 [Acronym Answers](/microsoftsearch/manage-acronyms) est une fonctionnalité fournie par Microsoft Search (recherche Microsoft) et est gérée séparément de Topics.
 
@@ -52,8 +52,13 @@ Les signets sont une fonctionnalité de Recherche Microsoft qui permet aux perso
 Pour les utilisateurs qui recherchent des informations sur la réservation d’un voyage pour le travail :
 
 - Si certains utilisateurs connaissent le nom de l’outil de voyage (par exemple, « Concur ») il est plus facile de créer un signet pour aller directement sur le site externe.
+
 - Pour les utilisateurs qui recherchent généralement « voyage », créez une rubrique sur « Voyage » avec les informations qu’ils s’attendent à voir. Envisagez d’ajouter un lien vers le site externe Concur dans la description de la rubrique. Si le lien est plutôt vers un site de réservation de voyage interne hébergé sur le client Microsoft 365, vous pouvez l’ajouter aux « ressources épinglées ».
  
 ### <a name="search-results-priority"></a>Priorité des résultats de recherche 
 
 Dans l’expérience de recherche de l’utilisateur, lorsqu’un utilisateur recherche un terme comme « voyage », un signet apparaît à la place d’une rubrique, si un signet est disponible.
+
+## <a name="see-also"></a>Voir aussi
+
+[Vue d’ensemble des rubriques](topic-experiences-overview.md)

@@ -10,22 +10,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ce200ca12bacc3ae8d9f7b48d36274ca54322586
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275251"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908028"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 
@@ -105,13 +102,13 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 Vous pouvez définir une tâche programmée de sorte qu’elle s’exécute une fois par jour de sorte que chaque fois que le package est téléchargé et décompressé, les VM reçoivent la nouvelle mise à jour. Nous vous suggérons de commencer une fois par jour, mais vous devez essayer d’augmenter ou de réduire la fréquence pour en comprendre l’impact. 
 
-Les packages d’informations de sécurité sont généralement publiés toutes les trois à quatre heures. Il n’est pas conseillé de définir une fréquence de moins de quatre heures, car cela augmente la surcharge réseau sur votre ordinateur de gestion sans aucun avantage.
+Les packages d’informations de sécurité sont généralement publiés toutes les trois à quatre heures. La définition d’une fréquence plus courte que quatre heures n’est pas recommandée, car elle augmente la surcharge réseau sur votre ordinateur de gestion sans aucun avantage.
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>Définir une tâche programmée pour exécuter le script PowerShell
 
 1. Sur l’ordinateur de gestion, ouvrez le menu Démarrer et tapez **Planification des tâches.** Ouvrez-le et **sélectionnez Créer une tâche...** sur le panneau latéral.
 
-2. Entrez le nom en **tant que décompresseur security intelligence**. Go to the **Trigger** tab. Sélectionnez **Nouveau...** > **Tous** les jours, puis sélectionnez **OK**.
+2. Entrez le nom en **tant que décompresseur security intelligence**. Go to the **Trigger** tab. Sélectionnez **Nouveau...** > **Tous les** jours, puis sélectionnez **OK.**
 
 3. Go to the **Actions** tab. Sélectionnez **Nouveau...** Entrez **PowerShell dans** le **champ Programme/Script.** Entrez `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` le champ Ajouter des **arguments.** Sélectionnez **OK**.
 
@@ -153,9 +150,9 @@ Voir [Analyses de planification pour](scheduled-catch-up-scans-microsoft-defende
 
 Vous pouvez spécifier le type d’analyse à effectuer lors d’une analyse programmée. Les analyses rapides sont l’approche préférée, car elles sont conçues pour rechercher tous les endroits où les programmes malveillants doivent résider pour être actifs. La procédure suivante décrit comment configurer des analyses rapides à l’aide de la stratégie de groupe.
 
-1. Dans votre Éditeur de stratégie de groupe, allez aux **modèles**  >  **d’administration Windows composants**  >    >  **Antivirus Microsoft Defender’analyse.**
+1. Dans votre Éditeur de stratégie de groupe, allez aux **modèles**  >  **d’administration Windows composants**  >  **Antivirus Microsoft Defender**  >  **Scan**.
 
-2. Sélectionnez **Spécifier le type d’analyse à utiliser pour** une analyse programmée, puis modifiez le paramètre de stratégie.
+2. Sélectionnez **Spécifier le type d’analyse à utiliser pour une analyse** programmée, puis modifiez le paramètre de stratégie.
 
 3. Définissez la stratégie **sur Activé,** puis sous **Options,** sélectionnez **Analyse rapide.**
 
@@ -175,7 +172,7 @@ Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à p
 
 4. Déployez votre objet de stratégie de groupe comme vous le faites habituellement.
 
-La suppression des notifications empêche les notifications d’Antivirus Microsoft Defender de s’afficher dans le centre de notifications sur Windows 10 lorsque des analyses sont réalisées ou que des actions de correction sont prises. Toutefois, votre équipe des opérations de sécurité verra les résultats de l’analyse dans le Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
+La suppression des notifications empêche les notifications d’Antivirus Microsoft Defender de s’afficher dans le centre de notifications sur Windows 10 lorsque des analyses sont réalisées ou que des actions de correction sont prises. Toutefois, votre équipe des opérations de sécurité verra les résultats de l’analyse dans [le portail Microsoft 365 Defender.](microsoft-defender-security-center.md)
 
 > [!TIP]
 > Pour ouvrir le Centre de Windows 10, prenez l’une des étapes suivantes :

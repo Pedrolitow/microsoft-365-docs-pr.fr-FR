@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841305"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908160"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -37,9 +37,9 @@ Vous pouvez ajouter ou mettre à jour un thème par défaut qui s’applique à 
   
 ## <a name="add-or-update-your-organizations-theme"></a>Ajouter ou mettre à jour le thème de votre organisation
 
-1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis sélectionnez l’onglet Profil de \>  **l’organisation.**
+1. Dans le Centre d’administration, sélectionnez la page Paramètres organisation  Paramètres, puis choisissez l’onglet Profil de \>  **l’organisation.**
 
-2. Sous **l’onglet Profil de** l’organisation, **sélectionnez Thèmes personnalisés.**
+2. Sous **l’onglet Profil de** l’organisation, sélectionnez **Thèmes personnalisés.**
 
 Tous les thèmes peuvent être personnalisés à l’aide des onglets suivants.
 
@@ -64,7 +64,7 @@ Le thème par défaut est le premier thème affiché.
 > [!IMPORTANT]
 > Le thème par défaut est unique, il ne peut pas être renommé et s’applique à tous les membres de votre organisation. Pour supprimer le thème par défaut, vous devez d’abord supprimer tous les autres thèmes.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Capture d’écran : onglet Général montrant le thème par défaut pour votre organisation":::
+:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
 ### <a name="create-a-group-theme"></a>Créer un thème de groupe
 
@@ -88,7 +88,10 @@ Dans la page **Logos,** vous pouvez ajouter vos logos et spécifier l’URL vers
 
 Sélectionnez **Enregistrer** pour enregistrer vos modifications.
 
-Vous pouvez supprimer vos logos à tout moment. Il vous suffit de **revenir à** la page Logos et de sélectionner **Supprimer.**
+Vous pouvez supprimer vos logos à tout moment. Revenons simplement à la page **Logos** et sélectionnez **Supprimer.**
+
+> [!NOTE]
+> Par défaut, nous montrons d’abord les sélections de logo que la plupart des organisations utilisent. L’option de téléchargement s’applique uniquement aux thèmes par défaut et non aux thèmes de groupe.
   
 ## <a name="colors-choose-theme-colors"></a>Couleurs : choisir les couleurs de thème
 
@@ -102,9 +105,9 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Capture d’écran : onglet Couleurs affichant les couleurs de thème par défaut pour votre organisation":::
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
-### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation a déjà un thème pour tous les employés. Comment cela va-t-il changer ?
+### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation possède déjà un thème pour tous les employés. Comment cela va-t-il changer ?
 
 Le thème par défaut continuera d’être affiché pour tous les employés.L’ajout d’un nouveau thème de groupe sera uniquement mis à la disposition Microsoft 365 groupes associés à ce thème.
 
@@ -143,11 +146,11 @@ Assurez-vous que le logo que vous utilisez est spécifié en tant qu’URL adres
 
 Le coefficient de contraste recommandé entre le texte, la couleur de l’icône ou du bouton et la couleur d’arrière-plan est de 4,5:1. Vous pouvez remplacer cette recommandation et tout de même enregistrer votre thème, car ce n’est pas obligatoire.
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si je définit un thème, quels sont les endroits Microsoft 365 sera-t-il utilisé ?
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si je définit un thème, quels sont les endroits Microsoft 365 seront-ils utilisés ?
 
 Tout thème apparaît dans la barre de navigation supérieure pour tous les membres de l’organisation dans le cadre de l’en-tête Microsoft 365 suite.  
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Ajouter des vignettes personnalisées à la page Mes applications et](../manage/customize-the-app-launcher.md) au lanceur d’applications (article)\
 [Vue d’ensemble Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)
