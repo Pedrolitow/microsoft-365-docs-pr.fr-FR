@@ -1,5 +1,5 @@
 ---
-title: Autorisations dans le Centre de sécurité Microsoft 365
+title: Autorisations dans le Portail Microsoft 365 Defender
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Les administrateurs peuvent apprendre comment gérer les autorisations dans le Centre de sécurité Microsoft 365 pour toutes les tâches liées à la sécurité.
+description: Les administrateurs peuvent apprendre comment gérer les autorisations dans le Portail Microsoft 365 Defender pour toutes les tâches liées à la sécurité.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c2d28510c25290921084e6a238fa8c781c35624
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e810b0146803d22246db6d4248d7d4a6a203834b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772523"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879023"
 ---
-# <a name="permissions-in-the-microsoft-365-security-center"></a>Autorisations dans le Centre de sécurité Microsoft 365
+# <a name="permissions-in-the-microsoft-365-defender-portal"></a>Autorisations dans le Portail Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,33 +37,36 @@ ms.locfileid: "52772523"
 
 Vous devez gérer des scénarios de sécurité qui couvrent tous les services de Microsoft 365. Et vous aurez besoin de la flexibilité requise pour accorder les autorisations d’administrateur aux bonnes personnes de votre organisation.
 
-Le Centre de sécurité Microsoft 365 de <https://security.microsoft.com> prend en charge la gestion directe des autorisations pour les utilisateurs qui effectuent des tâches de sécurité dans Microsoft 365. En utilisant le Centre de sécurité pour gérer les autorisations, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité.
+Le Portail Microsoft 365 Defender sur <https://security.microsoft.com> prend en charge la gestion directe des autorisations pour les utilisateurs qui effectuent des tâches de sécurité dans Microsoft 365. En utilisant le Portail Microsoft 365 Defender pour la gestion des autorisations, vous pouvez gérer les autorisations de façon centralisée pour toutes les tâches liées à la sécurité.
 
-Pour gérer les autorisations dans le centre de sécurité, accédez à **Autorisations et rôles** ou <https://security.microsoft.com/securitypermissions>. Vous devez être **administrateur général** ou membre du groupe de rôles **Gestion de l’organisation** dans le centre de sécurité. Plus précisément, le rôle **Gestion des rôles** permet aux utilisateurs d’afficher, de créer et de modifier des groupes de rôles dans le centre de sécurité. Par défaut, ce rôle est attribué uniquement au groupe de rôles **Gestion de l’organisation**.
+Pour gérer les autorisations dans le Portail Microsoft 365 Defender, accédez à **Autorisations et rôles** ou <https://security.microsoft.com/securitypermissions>. Vous devez être **administrateur général** ou membre du groupe de rôles **Gestion de l’organisation** dans le Portail Microsoft 365 Defender. Plus précisément, le rôle **Gestion des rôles** permet aux utilisateurs d’afficher, de créer et de modifier des groupes de rôles dans le Portail Microsoft 365 Defender. Par défaut, ce rôle est attribué uniquement au groupe de rôles **Gestion de l’organisation**.
+
+> [!NOTE]
+> Pour obtenir des informations sur le Centre de conformité Microsoft 365, voir [Autorisations dans le Centre de conformité Microsoft 365](../../compliance/microsoft-365-compliance-center-permissions.md).
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Relation entre les membres, les rôles et les groupes de rôles
 
-Les autorisations dans le centre de sécurité sont basées sur le modèle d’autorisations Contrôle d’accès en fonction du rôle (role-based access control ou RBAC). RBAC est le même modèle d’autorisations que celui utilisé par la plupart des services Microsoft 365. Par conséquent, si vous êtes familiarisé avec la structure d’autorisations dans ces services, l’octroi d’autorisations dans le centre de sécurité vous sera très familier.
+Les autorisations dans le Portail Microsoft 365 Defender sont basées sur le modèle d’autorisations du contrôle d’accès en fonction du rôle (RBAC). RBAC est le même modèle d’autorisations que celui utilisé par la plupart des services Microsoft 365. Par conséquent, si vous êtes familiarisé avec la structure d’autorisations dans ces services, l’octroi d’autorisations dans le Portail Microsoft 365 Defender vous sera très familier.
 
 Un **rôle** accorde les autorisations nécessaires pour effectuer un ensemble de tâches.
 
-Un **groupe de rôles** est un ensemble de rôles qui permet aux utilisateurs d’effectuer leurs tâches dans le centre de sécurité. Par exemple, le groupe de rôles Administrateurs du simulateur d’attaques inclut le rôle Administrateur du simulateur d’attaques pour créer et gérer tous les aspects de l’entraînement de simulation d’attaque.
+Un **groupe de rôles** est un ensemble de rôles qui permet aux utilisateurs d’effectuer leurs tâches dans le Portail Microsoft 365 Defender. Par exemple, le groupe de rôles Administrateurs du simulateur d’attaques inclut le rôle Administrateur du simulateur d’attaques pour créer et gérer tous les aspects de l’entraînement de simulation d’attaque.
 
-Le centre de sécurité inclut des groupes de rôles par défaut pour les tâches et fonctions les plus courantes que vous devez assigner. En règle générale, nous vous recommandons d’ajouter simplement des personnes comme **membres** aux groupes de rôles par défaut.
+Le Portail Microsoft 365 Defender inclut des groupes de rôles par défaut pour les tâches et fonctions les plus courantes que vous devez assigner. En règle générale, nous vous recommandons d’ajouter simplement des personnes comme **membres** aux groupes de rôles par défaut.
 
 ![Diagramme montrant la relation des groupes de rôles avec les rôles et les membres](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## <a name="roles-and-role-groups-in-the-security-center"></a>Rôles et groupes de rôles dans le centre de sécurité
+## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Rôles et groupes de rôles dans le Portail Microsoft 365 Defender
 
-Les types de rôles et de groupes de rôles suivants sont disponibles dans **Autorisations et rôles** dans le centre de sécurité :
+Les types de rôles et de groupes de rôles suivants sont disponibles dans **Autorisations et rôles** dans le Portail Microsoft 365 Defender :
 
-- **Rôles Azure AD**: vous pouvez afficher les rôles et les utilisateurs attribués, mais vous ne pouvez pas les gérer directement dans le centre de sécurité. Les rôles Azure AD sont des rôles centraux qui attribuent des autorisations pour **tous les services** Microsoft 365.
+- **Rôles Azure AD** : vous pouvez afficher les rôles et les utilisateurs attribués, mais vous ne pouvez pas les gérer directement dans le Portail Microsoft 365 Defender. Les rôles Azure AD sont des rôles centraux qui attribuent des autorisations pour **tous les services** Microsoft 365.
 
-- **Les rôles de messagerie et de collaboration**: il s’agit des mêmes groupes de rôles que ceux disponibles dans le Centre de sécurité et de conformité, mais vous pouvez les gérer directement dans le centre de sécurité. Les autorisations que vous attribuez ici sont spécifiques au Centre de sécurité Microsoft 365, au Centre de conformité Microsoft 365 et au Centre de sécurité et de conformité, et ne couvrent pas toutes les autorisations nécessaires dans d’autres charges de travail Microsoft 365.
+- **Les rôles de messagerie et de collaboration** : il s’agit des mêmes groupes de rôles que ceux disponibles dans le Centre de sécurité et de conformité, mais vous pouvez les gérer directement dans le Portail Microsoft 365 Defender. Les autorisations que vous attribuez ici sont spécifiques au Portail Microsoft 365 Defender, au Centre de conformité Microsoft 365 et au Centre de sécurité et de conformité, et ne couvrent pas toutes les autorisations nécessaires dans d’autres charges de travail Microsoft 365.
 
-![Page d’autorisations dans le Centre de sécurité Microsoft 365](../../media/m365-sc-permissions-and-roles-page.png)
+![Page d’autorisations et de rôles dans le Portail Microsoft 365 Defender](../../media/m365-sc-permissions-and-roles-page.png)
 
-### <a name="azure-ad-roles-in-the-security-center"></a>Les rôles Azure AD dans le Centre de sécurité
+### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Les rôles d'administration Azure AD dans le Portail Microsoft 365 Defender
 
 Lorsque vous accédez à **Rôles de messagerie et de collaboration** \> **Autorisations et rôles** \> **Rôles Azure AD** \> **Rôles** (ou directement à <https://security.microsoft.com/aadpermissions>), vous voyez les rôles Azure AD décrits dans cette section.
 
@@ -90,15 +93,15 @@ Pour plus d’informations, consultez [Affichage et attribution des rôles d’a
 |**Auteur de la charge utile d’attaque**|Créez des charges utiles d’attaque, mais ne les lancez pas ou ne planifiez pas réellement. Pour plus d’informations, consultez [Auteur de charge utile d’attaque](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 
-### <a name="email--collaboration-roles-in-the-security-center"></a>Rôles de messagerie et de collaboration dans le centre de sécurité
+### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>Rôles de collaboration et de messagerie dans le Portail Microsoft 365 Defender
 
 Lorsque vous accédez à **Rôles de messagerie et de collaboration** \> **Autorisations et rôles** \> **Rôles de messagerie et de collaboration** \> **Rôles** (ou directement à <https://security.microsoft.com/emailandcollabpermissions>), vous voyez les mêmes groupes de rôles disponibles dans le Centre de sécurité et de conformité.
 
 Pour plus d’informations sur ces groupes de rôles, consultez [Autorisations dans le Centre de Sécurité et de Conformité](permissions-in-the-security-and-compliance-center.md).
 
-#### <a name="modify-email--collaboration-role-membership-in-the-security-center"></a>Modifier l’appartenance au Rôle e-mail et collaboration dans le centre de sécurité
+#### <a name="modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal"></a>Modifier l’abonnement au rôle de collaboration et de messagerie dans le Portail Microsoft 365 Defender
 
-1. Dans le centre de sécurité, accédez à **Rôles d’e-mail et de collaboration** \> **Autorisations et rôles** \> **Rôles d’e-mail et rôles de collaboration** \> **Rôles**.
+1. Dans le Portail Microsoft 365 Defender, accédez à **Rôles d’e-mail et de collaboration** \> **Autorisations et rôles** \> **Rôles d’e-mail et rôles de collaboration** \> **Rôles**.
 
 2. Dans la page **Autorisations** qui s’ouvre, sélectionnez le groupe de rôles que vous souhaitez modifier dans la liste. Vous pouvez cliquer sur l’en-tête de colonne **Nom** pour trier la liste par nom, ou cliquer sur **Rechercher** ![Icône rechercher](../../media/m365-cc-sc-search-icon.png) pour rechercher le groupe de rôles.
 

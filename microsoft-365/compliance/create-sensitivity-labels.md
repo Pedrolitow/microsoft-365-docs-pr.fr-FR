@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
-ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 'Une exigence pour l’ensemble des solutions Microsoft Information Protection : créer, configurer et publier des étiquettes de confidentialité afin de classer et protéger les données de votre organisation.'
+ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244623"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878183"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Créer et configurer des étiquettes de confidentialité et leurs stratégies.
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-L'ensemble des solutions Microsoft Information Protection (parfois sous la forme abrégée MIP) sont mises en œuvre à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser l’ancien portail, le Centre de sécurité et conformité Office 365.
+L'ensemble des solutions Microsoft Information Protection (parfois sous la forme abrégée MIP) sont mises en œuvre à l’aide d’[étiquettes de confidentialité](sensitivity-labels.md). Pour créer et publier ces étiquettes, accédez au [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Vous pouvez également utiliser l’ancien portail, le Centre de sécurité et conformité Office 365.
 
 Commencez par créer et configurer les étiquettes de confidentialité que vous souhaitez rendre disponibles pour les applications et autres services. Par exemple, les étiquettes que vous voulez que les utilisateurs voient et appliquent à partir des applications Office. 
 
@@ -40,32 +40,32 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
 ## <a name="create-and-configure-sensitivity-labels"></a>Créer et configurer des étiquettes de confidentialité
 
-1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
+1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
     
-    - Centre de conformité Microsoft 365 : 
+    - Centre de conformité Microsoft 365 : 
         - **Solutions** > **Information protection**
         
         Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
     
-    - Centre de sécurité et conformité :
+    - Centre de sécurité et conformité :
         - **Classification** > **des étiquettes de confidentialité**
 
 2. Sous la page **Étiquettes**, sélectionnez **+ Créer une étiquette** pour démarrer l’assistant Nouvelle étiquette de confidentialité. 
     
-    Par exemple, dans le Centre de conformité Microsoft 365 :
+    Par exemple, dans le Centre de conformité Microsoft 365 :
     
     ![Créer une étiquette de confidentialité](../media/create-sensitivity-label-full.png)
     
     > [!NOTE]
     > Par défaut, les clients n’ont pas d’étiquettes. Vous devez alors en créer. Les étiquettes de l’exemple d’image montrent les étiquettes par défaut qui ont été [déplacées à partir d’Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
-3. Sur la page **Définir l’étendue de cette étiquette**, les options sélectionnées déterminent l’étendue de l’étiquette pour les paramètres que vous pouvez configurer et l’emplacement où ils seront visibles lors de la publication :
+3. Sur la page **Définir l’étendue de cette étiquette**, les options sélectionnées déterminent l’étendue de l’étiquette pour les paramètres que vous pouvez configurer et l’emplacement où ils seront visibles lors de la publication :
     
     ![Étendues des étiquettes de confidentialité](../media/sensitivity-labels-scopes.png)
     
     - Si **Fichiers et e-mails** est sélectionné, vous pouvez configurer dans cet Assistant les paramètres qui s’appliquent aux applications qui prennent en charge les étiquettes de confidentialité, telles qu’Office Word et Outlook. Si cette option n’est pas sélectionnée, l’Assistant affiche la première page de ces paramètres, mais vous ne pouvez pas les configurer et les étiquettes ne sont pas disponibles à la sélection pour les utilisateurs dans ces applications.
     
-    - Si **Groupes et sites** est sélectionné, vous pouvez configurer dans cet Assistant les paramètres qui s’appliquent aux groupes Microsoft 365 et aux sites pour Teams et SharePoint. Si vous n’avez pas sélectionné cette option, l’Assistant affiche la première page de ces paramètres, mais vous ne pouvez pas les configurer et les utilisateurs ne pourront pas sélectionner étiquettes pour les groupes et le site.
+    - Si **Groupes et sites** est sélectionné, vous pouvez configurer dans cet Assistant les paramètres qui s’appliquent aux groupes Microsoft 365 et aux sites pour Teams et SharePoint. Si vous n’avez pas sélectionné cette option, l’Assistant affiche la première page de ces paramètres, mais vous ne pouvez pas les configurer et les utilisateurs ne pourront pas sélectionner étiquettes pour les groupes et le site.
     
     Si vous souhaitez en savoir plus sur l’étendue d’**Azure Purview (préversion)**, veuillez consulter la rubrique [Étiqueter automatiquement votre contenu dans Azure Purview](/azure/purview/create-sensitivity-label).
 
@@ -77,16 +77,16 @@ L’administrateur général de votre organisation dispose des autorisations tot
 
 6. Lorsque vous avez créé les étiquettes dont vous avez besoin, vérifiez leur ordre et déplacez-les vers le haut ou vers le bas si nécessaire. Pour modifier l’ordre d’une étiquette, sélectionnez **...** pour **Plus d’actions**, puis choisissez **Déplacer vers le haut** ou **Déplacer vers le bas**. Pour plus d’informations, voir [Priorité d'étiquette (trier les thèmes)](sensitivity-labels.md#label-priority-order-matters) dans les informations générales.
 
-Pour modifier une étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier l'étiquette** :
+Pour modifier une étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier l'étiquette** :
 
 ![Bouton « Modifier l’étiquette » pour modifier une étiquette de confidentialité](../media/edit-sensitivity-label-full.png)
 
-Ce bouton démarre l’Assistant **Modifier l'étiquette de confidentialité**, vous permettant de modifier les paramètres d’étiquette à l’étape 4.
+Ce bouton démarre l’Assistant **Modifier l'étiquette de confidentialité**, vous permettant de modifier les paramètres d’étiquette à l’étape 4.
 
 Ne supprimez pas une étiquette, sauf si vous comprenez l’impact pour les utilisateurs. Pour plus d’informations, consultez la section [Retrait et suppression d’étiquettes](#removing-and-deleting-labels). 
 
 > [!NOTE]
-> Si vous modifiez une étiquette, qui est déjà publiée, à l'aide d'une stratégie d'étiquette, aucune autre étape n'est nécessaire à la fin de l'Assistant. Par exemple, vous n’avez pas besoin de l’ajouter à une nouvelle stratégie d’étiquette pour que les modifications soient mises à disposition desdits utilisateurs. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
+> Si vous modifiez une étiquette, qui est déjà publiée, à l'aide d'une stratégie d'étiquette, aucune autre étape n'est nécessaire à la fin de l'Assistant. Par exemple, vous n’avez pas besoin de l’ajouter à une nouvelle stratégie d’étiquette pour que les modifications soient mises à disposition desdits utilisateurs. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
 
 Les étiquettes sont disponibles dans des applications ou des services après les avoir publiées. Les étiquettes doivent être [ajoutées à une stratégie d'étiquette](#publish-sensitivity-labels-by-creating-a-label-policy) pour être publiées.
 
@@ -97,7 +97,7 @@ Les étiquettes sont disponibles dans des applications ou des services après le
 
 D’autres paramètres d’étiquette sont disponibles dans l’applet de commande [Set-Label](/powershell/module/exchange/set-label) depuis le [Centre de sécurité et conformité PowerShell](/powershell/exchange/scc-powershell).
 
-Par exemple :
+Par exemple :
 
 - Utilisez le paramètre *LocaleSettings* pour des déploiements internationaux pour que les utilisateurs voient le nom de l’étiquette et l’info-bulle dans leur langue locale. La [section suivante](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) présente un exemple de configuration qui spécifie le nom de l’étiquette et le texte d’info-bulle pour le français, l’italien et l’allemand.
 
@@ -105,7 +105,7 @@ Par exemple :
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>Exemple de configuration d'une étiquette de confidentialité dans différentes langues
 
-L’exemple suivant illustre la configuration PowerShell pour une étiquette intitulée « Public » avec un espace réservé au texte pour l’info-bulle. Dans cet exemple, le nom de l’étiquette et le texte d’info-bulle sont configurés pour le français, l'italien et l'allemand.
+L’exemple suivant illustre la configuration PowerShell pour une étiquette intitulée « Public » avec un espace réservé au texte pour l’info-bulle. Dans cet exemple, le nom de l’étiquette et le texte d’info-bulle sont configurés pour le français, l'italien et l'allemand.
 
 Suite à cette configuration, les utilisateurs disposant d'applications Office qui utilisent ces langues d’affichage voient leur nom d’étiquette et les info-bulles dans la même langue. De même, si votre client de l'étiquetage unifié Azure Information Protection est installé pour étiqueter des fichiers à partir de l’Explorateur de fichiers, les utilisateurs qui ont accès à ces versions linguistiques de Windows peuvent voir leurs noms d’étiquette et info-bulle dans leur langue locale lorsqu’ils effectuent des clics avec le bouton droit pour l’étiquetage.
 
@@ -134,19 +134,19 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>Publier des étiquettes de confidentialité en créant une stratégie d’étiquette
 
-1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
+1. Dans le centre d’administration pour les étiquettes, accédez aux étiquettes de confidentialité :
     
-    - Centre de conformité Microsoft 365 : 
+    - Centre de conformité Microsoft 365 : 
         - **Solutions** > **Information protection**
         
         Si vous ne voyez pas immédiatement cette option, sélectionnez tout d’abord **Tout afficher**. 
     
-    - Centre de sécurité et conformité :
+    - Centre de sécurité et conformité :
         - **Classification** > **des étiquettes de confidentialité**
 
-2. Sélectionnez l’onglet **Stratégies d’étiquette**, puis **Publier des étiquettes** pour démarrer l’Assistant Créer une stratégie :
+2. Sélectionnez l’onglet **Stratégies d’étiquette**, puis **Publier des étiquettes** pour démarrer l’Assistant Créer une stratégie :
     
-    Par exemple, dans le Centre de conformité Microsoft 365 :
+    Par exemple, dans le Centre de conformité Microsoft 365 :
         
     ![Publier des étiquettes](../media/publish-sensitivity-labels-full.png)
     
@@ -166,7 +166,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     
     Si vous souhaitez en savoir plus sur ces paramètres, veuillez consulter la rubrique [Fonction des stratégies d’étiquette](sensitivity-labels.md#what-label-policies-can-do) depuis les informations générales, puis utiliser l’aide de l’Assistant pour les paramètres individuels.
     
-    Pour les étiquettes configurées pour les **actifs Azure Purview (préversion)**  : ces étiquettes n’ont pas de paramètres de stratégie associés.
+    Pour les étiquettes configurées pour les **actifs Azure Purview (préversion)** : ces étiquettes n’ont pas de paramètres de stratégie associés.
 
 7. Répétez ces étapes si vous avez besoin d'autres paramètres de stratégie pour des utilisateurs ou des étendues différents. Par exemple, vous souhaitez employer d’autres étiquettes pour un groupe d’utilisateurs, ou une étiquette par défaut différente pour un sous-ensemble d’utilisateurs. Ou, si vous avez configuré des étiquettes avec des étendues différentes.
 
@@ -174,13 +174,16 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 La stratégie d’étiquette est publiée automatiquement dès la fin de l'Assistant. Pour apporter des modifications à une stratégie publiée, il vous suffit la modifier. Vous ne devez sélectionner aucune action de publication ou de republication spécifique.
 
-Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier la stratégie** : 
+Pour modifier une stratégie d'étiquette existante, sélectionnez-la, puis choisissez le bouton **Modifier la stratégie** : 
 
 ![Modifier une étiquette de confidentialité](../media/edit-sensitivity-label-policy-full.png)
 
 Ce bouton démarre l’Assistant **Créer une stratégie** qui vous permet de modifier les étiquettes incluses et leurs paramètres. Une fois l’exécution de l’Assistant terminée, toutes les modifications sont automatiquement répliquées vers les services et les utilisateurs sélectionnés.
 
-Lorsque vous utilisez l’étiquette intégrée pour les applications Office sur Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans un délai de quatre heures et dans un délai d’une heure pour Word, Excel et PowerPoint sur le web lorsque vous actualisez le navigateur. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
+Lorsque vous utilisez l’étiquette intégrée pour les applications Office sur Windows, macOS, iOS et Android, les utilisateurs voient de nouvelles étiquettes dans un délai de quatre heures et dans un délai d’une heure pour Word, Excel et PowerPoint sur le web lorsque vous actualisez le navigateur. Veuillez toutefois patienter jusqu'à 24 heures pour que les modifications s’appliquent aux applications et aux services.
+
+> [!NOTE]
+> La mise à jour d’autres applications et services prenant en charge les étiquettes de confidentialité peut intervenir plus souvent que 24 heures avec leurs propres calendriers et déclencheurs de mise à jour pour les mises à jour de stratégie. Consultez leur documentation pour plus de détails. Par exemple, pour le client de l’étiquetage unifié d’Azure Information Protection, consultez la ligne **Mise à jour de stratégie** dans le tableau des [Comparaisons détaillées pour les clients Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Paramètres de stratégie d’étiquette supplémentaires dans le Centre de sécurité et conformité PowerShell
 
@@ -192,7 +195,7 @@ Le client de l’étiquetage unifié d’Azure Information Protection prend en c
 
 Vous pouvez désormais utiliser l’[Interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/scc-powershell) pour créer et configurer tous les paramètres que vous pouvez voir dans le centre d’administration pour les étiquettes. Cela signifie qu’outre l’utilisation de PowerShell pour les paramètres qui ne sont pas disponibles dans les centres d’administration pour les étiquettes, vous pouvez désormais créer des scripts pour la création et la maintenance des étiquettes de confidentialité et des stratégies d’étiquette de confidentialité. 
 
-Consultez la documentation ci-après relative aux paramètres et valeurs pris en charge :
+Consultez la documentation ci-après relative aux paramètres et valeurs pris en charge :
 
 - [New-Label](/powershell/module/exchange/new-label)
 - [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy)
@@ -205,25 +208,25 @@ Vous pouvez également utiliser [Remove-Label](/powershell/module/exchange/remov
 
 Dans un environnement de production, il est peu probable que vous deviez supprimer des étiquettes de confidentialité d’une stratégie d’étiquette ou supprimer des étiquettes de confidentialité. Il est possible que vous deviez effectuer l’une ou l’autre de ces actions pendant une phase de test initiale. Assurez-vous de comprendre ce qui se passe lorsque vous effectuez l’une ou l’autre de ces actions.
 
-La retrait d’une étiquette d’une stratégie d’étiquette est moins risquée que sa suppression, et vous pouvez toujours l’ajouter à une stratégie d’étiquette ultérieurement si nécessaire :
+La retrait d’une étiquette d’une stratégie d’étiquette est moins risquée que sa suppression, et vous pouvez toujours l’ajouter à une stratégie d’étiquette ultérieurement si nécessaire :
 
 - Lorsque vous retirez une étiquette d’une stratégie d’étiquette afin que l’étiquette ne soit plus publiée aux utilisateurs spécifiés à l’origine, la prochaine fois que la stratégie d’étiquette est actualisée, les utilisateurs ne verront plus cette étiquette pour les sélectionner dans leur application Office. En revanche, si l’étiquette a été appliquée aux documents ou aux courriers électroniques, elle n’est pas retirée de ce contenu. Tout chiffrement appliqué par l’étiquette est conservé et le modèle de protection sous-jacent reste publié. 
 
 - Pour les étiquettes retirées mais qui ont été précédemment appliquées au contenu, les utilisateurs qui utilisent l’étiquetage prédéfini pour Word, Excel et PowerPoint affichent tout de même le nom d’étiquette appliqué dans la barre d’État. De même, les étiquettes qui ont été retirées et qui ont été appliquées aux sites SharePoint affichent encore le nom de l’étiquette dans la colonne **Sensibilité**.
 
-Par comparaison, lorsque vous supprimez une étiquette :
+Par comparaison, lorsque vous supprimez une étiquette :
 
 - Si l’étiquette a appliqué le chiffrement, le modèle de protection sous-jacent est archivé de sorte que le contenu précédemment protégé puisse rester ouvert. En raison de ce modèle de protection archivé, vous ne pouvez pas créer de nouvelle étiquette portant le même nom. Bien qu’il soit possible de supprimer un modèle de protection à l’aide de [PowerShell](/powershell/module/aipservice/remove-aipservicetemplate), ne procédez pas de la sorte, sauf si vous êtes sûr que vous n’avez pas besoin d’ouvrir le contenu chiffré avec le modèle archivé.
 
-- Pour les applications de bureau : les informations d’étiquette sont conservées dans les métadonnées, mais étant donné qu’un ID d’étiquette vers un mappage de nom n’est plus possible, les utilisateurs ne voient pas le nom d’étiquette appliqué affiché (par exemple, dans la barre d’État) de sorte que le contenu ne soit pas étiqueté. Si l’étiquette a appliqué le chiffrement, le chiffrement reste et une fois le contenu ouvert, les utilisateurs voient toujours le nom et la description du modèle de protection désormais archivé.
+- Pour les applications de bureau : les informations d’étiquette sont conservées dans les métadonnées, mais étant donné qu’un ID d’étiquette vers un mappage de nom n’est plus possible, les utilisateurs ne voient pas le nom d’étiquette appliqué affiché (par exemple, dans la barre d’État) de sorte que le contenu ne soit pas étiqueté. Si l’étiquette a appliqué le chiffrement, le chiffrement reste et une fois le contenu ouvert, les utilisateurs voient toujours le nom et la description du modèle de protection désormais archivé.
 
-- Pour Office sur le Web : les utilisateurs ne voient pas le nom de l’étiquette sur la barre d’état ni dans la colonne **Sensibilité**. Les informations d’étiquette dans les métadonnées restent uniquement si l’étiquette n’applique pas le chiffrement. Si l’étiquette a appliqué le chiffrement et que vous avez activé des [étiquettes de confidentialité pour SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), les informations d’étiquette dans les métadonnées sont supprimées et le chiffrement est supprimé. 
+- Pour Office sur le Web : les utilisateurs ne voient pas le nom de l’étiquette sur la barre d’état ni dans la colonne **Sensibilité**. Les informations d’étiquette dans les métadonnées restent uniquement si l’étiquette n’applique pas le chiffrement. Si l’étiquette a appliqué le chiffrement et que vous avez activé des [étiquettes de confidentialité pour SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), les informations d’étiquette dans les métadonnées sont supprimées et le chiffrement est supprimé. 
 
 Lorsque vous supprimez une étiquette de confidentialité d’une stratégie d’étiquette, ou supprimez une étiquette de confidentialité, la réplication de ces modifications peut prendre jusqu’à 24 heures pour tous les utilisateurs et services.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour configurer et utiliser vos étiquettes de confidentialité pour des scénarios déterminés, servez-vous des articles suivants :
+Pour configurer et utiliser vos étiquettes de confidentialité pour des scénarios déterminés, servez-vous des articles suivants :
 
 - [Restreindre l’accès au contenu à l’aide du chiffrement dans les étiquettes de niveau de confidentialité](encryption-sensitivity-labels.md)
 

@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809034"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908052"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
-L’abonnement Microsoft 365 ou Office 365 inclut un ensemble de rôles d’administrateur que vous pouvez attribuer aux utilisateurs de votre organisation à l’aide du Centre d’administration Microsoft 365. Chaque rôle d’administrateur correspond à des fonctions d’entreprise courantes et donne aux personnes concernées dans votre organisation des autorisations pour effectuer des tâches spécifiques dans les centres d’administration.
+L’abonnement Microsoft 365 ou Office 365 inclut un ensemble de rôles d'administrateur que vous pouvez attribuer à des utilisateurs de votre organisation à l’aide du Centre d’administration Microsoft 365. Chaque rôle d'administrateur correspond à des fonctions d'entreprise courantes et donne aux personnes de votre organisation des autorisations pour effectuer des tâches spécifiques dans les Centres d'administration.
 
 Le Centre d’administration Microsoft 365 vous permet de gérer les rôles Azure AD et Microsoft Intune. Toutefois, ces rôles sont un sous-ensemble des rôles disponibles sur le Portail Azure AD et le Centre d’administration Intune.
 
@@ -86,7 +86,7 @@ Vous devrez probablement attribuer les rôles suivants au sein de votre organisa
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Administration déléguée pour les partenaires Microsoft
 
-Si vous travaillez avec un partenaire Microsoft, vous pouvez lui attribuer un rôle d’administrateur. Il peut à son tour attribuer des rôles d'administrateur aux utilisateurs de votre entreprise ou de la sienne. Par exemple, vous souhaiterez peut-être qu’il le fasse s’il est chargé de configurer et de gérer votre organisation en ligne pour vous.
+Si vous travaillez avec un partenaire Microsoft, vous pouvez lui attribuer des rôles d'administrateur. Il peut à son tour attribuer des rôles d'administrateur aux utilisateurs de votre entreprise ou de la sienne. Par exemple, vous souhaiterez peut-être qu'il le fasse s'il est chargé de configurer et gérer votre organisation en ligne pour vous.
   
 Un partenaire peut attribuer ces rôles : 
   
@@ -100,4 +100,5 @@ Pour que le partenaire puisse attribuer ces rôles à des utilisateurs, vous dev
 
 [Attribuer des rôles administrateur](assign-admin-roles.md) (article)\
 [Les rôles Azure AD dans le Centre d’administration Microsoft 365](azure-ad-roles-in-the-mac.md) (article)\
-[Rôle d 'administrateur Exchange Online](about-exchange-online-admin-role.md) (article)\ [Rapports d activité dans le Centre d’administration Microsoft 365](../activity-reports/activity-reports.md) (article)
+[Rapports d’activité dans le Centre d’administration Microsoft 365](../activity-reports/activity-reports.md) (article)\
+[Rôle d’administrateur Exchange Online](about-exchange-online-admin-role.md) (article)

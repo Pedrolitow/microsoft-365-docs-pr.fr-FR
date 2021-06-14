@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Les membres du groupe Microsoft 365 disposent d'une messagerie de groupe et d'un espace de travail partagé pour les conversations, les fichiers et les événements du calendrier, du flux et du planificateur.
-ms.openlocfilehash: 3e4fa36520247179b653f799f7b2a061b9d9f4a9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635593"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903839"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
@@ -89,7 +89,7 @@ Les boîtes aux lettres partagées incluent un calendrier qui peut être utilis�
 
 Les utilisateurs disposant d’autorisations sur la boîte aux lettres du groupe peuvent Envoyer en tant que ou Envoyer de la part pour le compte de l’adresse de messagerie de la boîte aux lettres si l’administrateur leur a accordé cette autorisation. Cette fonctionnalité est particulièrement utile pour les boîtes aux lettres d’aide et de support, car les utilisateurs peuvent envoyer des e-mails à partir du « Support technique de Contoso » ou du « Bureau d'accueil du bâtiment A ».
 
-Pour le moment, il n'est pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. Est-ce une fonction que vous souhaitez avoir ? Faites-le nous savoir. **[Votez ici](https://go.microsoft.com/fwlink/?linkid=871518)**.
+Il n'est pas possible de migrer une boîte aux lettres partagée vers un groupe Microsoft 365. 
 
 ## <a name="related-content"></a>Contenu associé
 

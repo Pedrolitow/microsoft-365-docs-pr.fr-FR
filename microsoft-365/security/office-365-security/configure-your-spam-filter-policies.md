@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a272e78e05f86a8f9f918c873e9fb1a85f863bfc
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793099"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879095"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -37,14 +37,14 @@ Dans les organisations Microsoft 365 ayant des boîtes aux lettres dans Exchange
 
 Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie anti-courrier indésirable par défaut. Pour une précision accrue, vous pouvez également créer des stratégies de filtrage de courrier indésirable qui s’appliquent à des utilisateurs, à des groupes ou à des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
 
-Vous pouvez configurer des stratégies anti-courrier indésirable dans le Centre de sécurité Microsoft 365 ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 sans boîtes aux lettres dans Exchange Online ; Exchange Online Protection PowerShell autonome pour les organisations sans boîtes aux lettres dans Exchange Online).
+Vous pouvez configurer des stratégies anti-courrier indésirable dans le Portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 sans boîtes aux lettres dans Exchange Online ; Exchange Online Protection PowerShell autonome pour les organisations sans boîtes aux lettres dans Exchange Online).
 
 Les éléments de base d’une stratégie anti-courrier indésirable sont les suivants :
 
 - **La stratégie de filtrage du courrier indésirable**: spécifie les actions de filtrage du courrier indésirable et les options de notification.
 - **Une règle de filtrage de courrier indésirable**: spécifie la priorité et les filtres de destinataire (auxquels s’applique la stratégie) pour une stratégie de filtrage de courrier indésirable.
 
-La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies contre le courrier indésirable dans le Centre de sécurité :
+La différence entre ces deux éléments n’est pas évidente lorsque vous gérez des stratégies contre le courrier indésirable dans le Portail Microsoft 365 Defender :
 
 - Lorsque vous créez une stratégie contre le courrier indésirable, vous créez une règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable associée en utilisant le même nom pour les deux.
 - Lorsque vous modifiez une stratégie contre le courrier indésirable, les paramètres associés au nom, à la priorité, activée ou désactivée, et aux filtres de destinataire modifient réellement la règle de filtrage de courrier indésirable. Tous les autres paramètres modifient la stratégie associée de filtrage de courrier indésirable.
@@ -62,7 +62,7 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le centre de sécurité à <https://security.microsoft.com/>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour accéder directement à la page **Stratégies anti-courrier indésirable**, utilisez <https://security.microsoft.com/antispam>.
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Pour vous connecter à un service Exchange Online Protection PowerShell autonome, voir [Se connecter à Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -79,11 +79,11 @@ Pour améliorer l’efficacité du filtrage du courrier indésirable, vous pouve
 
 - Si vous souhaitez connaître les paramètres recommandés pour l’utilisation des stratégies anti-courrier indésirable, veuillez consulter la section [Paramètres de stratégie anti-courrier indésirable EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-## <a name="use-the-security-center-to-create-anti-spam-policies"></a>Utiliser le Centre de sécurité pour créer des stratégies anti-courrier indésirable
+## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour créer des stratégies anti-courrier indésirable
 
-En créant une stratégie contre le courrier indésirable dans le Centre de sécurité, cela créé une règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable associée en utilisant le même nom pour les deux.
+En créant une stratégie contre le courrier indésirable dans le Portail Microsoft 365 Defender, cela créé une règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable associée en utilisant le même nom pour les deux.
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, cliquez sur l’![icône Créer](../../media/m365-cc-sc-create-icon.png) **Créer une stratégie**, puis sélectionnez **Entrant** dans la liste déroulante.
 
@@ -240,9 +240,9 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
 9. Dans la page de confirmation qui s’affiche, cliquez sur **Terminé**.
 
-## <a name="use-the-security-center-to-view-anti-spam-policies"></a>Utiliser le Centre de sécurité pour afficher des stratégies anti-courrier indésirable
+## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour afficher des stratégies anti-courrier indésirable
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, recherchez l’une des valeurs suivantes :
    - La valeur **Type** est **Stratégie anti-courrier indésirable personnalisée**
@@ -257,15 +257,15 @@ En créant une stratégie contre le courrier indésirable dans le Centre de séc
 
 3. Lorsque vous sélectionnez une stratégie anti-courrier indésirable en cliquant sur le nom, les paramètres de stratégie s’affichent dans un menu volant.
 
-## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>Utiliser le Centre de sécurité pour modifier des stratégies anti-courrier indésirable
+## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour modifier des stratégies anti-courrier indésirable
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, sélectionnez une stratégie anti-courrier indésirable dans la liste en cliquant sur le nom :
    - Une stratégie personnalisée que vous avez créée où la valeur du **Type de** colonne est **stratégie anti-courrier indésirable personnalisée**.
    - La stratégie par défaut nommée **Stratégie de trafic entrant anti-courrier indésirable (par défaut)**.
 
-3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, consultez la section [Utiliser le Centre de sécurité pour créer des stratégies anti-courrier indésirable](#use-the-security-center-to-create-anti-spam-policies) précédente de cet article.
+3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, consultez la section précédente [Utiliser le Portail Microsoft 365 Defender pour créer des stratégies anti-courrier indésirable](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) de cet article.
 
    Pour la stratégie anti-courrier indésirable par défaut, la section **Appliqué à** n’est pas disponible (la stratégie s’applique à tout le monde) et vous ne pouvez pas renommer la stratégie.
 
@@ -275,7 +275,7 @@ Pour activer ou désactiver une stratégie, définir l’ordre de priorité de l
 
 Vous ne pouvez pas désactiver la stratégie anti-courrier indésirable par défaut.
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
@@ -293,14 +293,14 @@ De retour sur la page principale de la stratégie, la valeur **État** de la str
 
 Par défaut, les stratégies anti-courrier indésirable reçoivent une priorité qui dépend de l'ordre dans lequel elles ont été créées (les stratégies plus récentes sont moins prioritaires que les stratégies plus anciennes). Un numéro de priorité peu élevé indique une plus grande priorité (0 est le plus élevé), et les stratégies sont traitées par ordre de priorité (les stratégies à haute priorité sont traitées avant les stratégies de moindre priorité). Deux stratégies ne peuvent pas avoir la même priorité et le traitement de la stratégie s’arrête après l’application de la première stratégie.
 
-Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro **Priorité** dans le centre de sécurité).politique La modification de la priorité d’une stratégie n’a de sens que si vous avez plusieurs stratégies.
+Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro **Priorité** dans le Portail Microsoft 365 Defender). La modification de la priorité d’une stratégie n’a de sens que si vous avez plusieurs stratégies.
 
  **Remarques** :
 
-- Dans le Centre de sécurité, vous pouvez uniquement modifier la priorité de la stratégie de logiciel anti-courrier indésirable après l'avoir créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de filtrage de courrier indésirable (ceci peut modifier la priorité de règles existantes).
+- Dans le Portail Microsoft 365 Defender, vous pouvez uniquement modifier la priorité de la stratégie de logiciel anti-courrier indésirable après l'avoir créée. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de filtrage de courrier indésirable (ceci peut modifier la priorité de règles existantes).
 - Les stratégies anti-courrier indésirable sont traitées dans l’ordre dans lequel elles sont affichées (la première stratégie possède la valeur **Priorité** 0). La stratégie anti-courrier indésirable par défaut contient la valeur priorité **la plus faible**, et vous ne pouvez pas la modifier.
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom.
 
@@ -317,7 +317,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 
 Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quarantaine, vous pouvez configurer les notifications de courrier indésirable de l’utilisateur final pour informer les destinataires de qu’il est advenu des messages qui leur ont été envoyés. Pour plus d’informations sur ces notifications, voir [Notifications de courrier indésirable à l’utilisateur final dans Exchange Online PowerShell](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, sélectionnez une stratégie anti-courrier indésirable dans la liste en cliquant sur le nom :
    - Une stratégie personnalisée que vous avez créée où la valeur du **Type de** colonne est **stratégie anti-courrier indésirable personnalisée**.
@@ -340,11 +340,11 @@ Lorsqu’un verdict de filtre anti-courrier indésirable met un message en quara
 
 4. Dans le menu volant des détails de la stratégie, cliquez sur **Fermer**.
 
-## <a name="use-the-security-center-to-remove-custom-anti-spam-policies"></a>Utiliser le Centre de sécurité pour supprimer les stratégies anti-courrier indésirable personnalisées
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>Utiliser le Portail Microsoft 365 Defender pour supprimer des stratégies anti-courrier indésirable personnalisées
 
-Lorsque vous utilisez le centre de sécurité pour supprimer une stratégie anti-courrier indésirable personnalisée, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie anti-courrier indésirable par défaut.
+Lorsque vous utilisez le Portail Microsoft 365 Defender pour supprimer une stratégie anti-courrier indésirable personnalisée, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie anti-courrier indésirable par défaut.
 
-1. Dans le Centre de sécurité, accédez à **Courrier électronique et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> Section **Stratégies** \> **Anti-courrier indésirable**.
+1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
 
 2. Dans la page **stratégies anti-courrier indésirable**, sélectionnez une stratégie avec la **Valeur de type** de **Stratégie anti-courrier indésirable personnalisée** dans la liste en cliquant sur le nom. En haut du menu volant Détails de la stratégie qui s’affiche, cliquez sur l’![Icône Autres actions](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** \> ![Icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png) **Supprimer la stratégie**.
 
@@ -362,7 +362,7 @@ Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell autonom
 
 Les paramètres de stratégie anti-courrier indésirable suivants sont disponibles uniquement dans PowerShell :
 
-- Le paramètre _MarkAsSpamBulkMail_ est `On` par défaut. Les effets de ce paramètre ont été expliqués dans la section [Utiliser le Centre de sécurité pour créer des stratégies anti-courrier indésirable](#use-the-security-center-to-create-anti-spam-policies) plus haut dans cet article.
+- Le paramètre _MarkAsSpamBulkMail_ est `On` par défaut. Les effets de ce paramètre ont été expliqués dans la section [Utiliser le Portail Microsoft 365 Defender pour créer des stratégies anti-courrier indésirable](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) plus haut dans cet article.
 
 - Les paramètres suivants pour les notifications de quarantaine de courrier indésirable de l’utilisateur final :
   - Le paramètre _DownloadLink_ qui affiche ou masque le lien vers l’Outil de création de rapports de Courrier indésirable pour Outlook.
@@ -378,11 +378,11 @@ La création d’une stratégie anti-courrier indésirable dans PowerShell est u
  **Remarques** :
 
 - Vous pouvez créer une règle de filtrage de courrier indésirable et lui affecter une stratégie de filtrage de courrier indésirable existante, non associée. Une règle de filtrage anti-courrier indésirable ne peut pas être associée à plusieurs stratégies de filtrage de courrier indésirable.
-- Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage anti-courrier indésirable dans PowerShell qui ne sont pas disponibles dans le Centre de sécurité tant que vous n’avez pas créé la stratégie :
+- Vous pouvez configurer les paramètres suivants sur les nouvelles stratégies de filtrage anti-courrier indésirable dans PowerShell qui ne sont pas disponibles dans le Portail Microsoft 365 Defender tant que vous n’avez pas créé la stratégie :
   - Créez la nouvelle stratégie en tant que désactivée (_Activé_ `$false` sur l’applet de commande **New-HostedContentFilterRule**).
   - Définissez la priorité de la stratégie lors de la création (_Priorité_ _\<Number\>_) sur l’applet de commande **New-HostedContentFilterRule**).
 
-- Une nouvelle stratégie de filtrage de courrier indésirable que vous créez dans PowerShell n’est pas visible dans le Centre de conformité tant que vous n’avez pas affecté la stratégie à une règle de filtrage de courrier indésirable.
+- Une nouvelle stratégie de filtrage de courrier indésirable que vous créez dans PowerShell n’est pas visible dans le Portail Microsoft 365 Defender tant que vous n’avez pas affecté la stratégie à une règle de filtrage de courrier indésirable.
 
 #### <a name="step-1-use-powershell-to-create-a-spam-filter-policy"></a>Étape 1 : utiliser PowerShell pour créer une stratégie de filtrage du courrier indésirable
 
@@ -487,7 +487,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 Outre les éléments suivants, les mêmes paramètres sont disponibles lorsque vous modifiez une stratégie de filtrage du courrier indésirable dans PowerShell que lorsque vous créez une stratégie comme décrit dans la section [Étape 1 : utiliser PowerShell pour créer une stratégie de filtrage du courrier indésirable](#step-1-use-powershell-to-create-a-spam-filter-policy) plus haut dans cet article.
 
 - Le commutateur _MakeDefault_ qui convertit la stratégie spécifiée en stratégie par défaut (appliquée à tout le monde, toujours priorité **La moins élevée**, et vous ne pouvez pas le supprimer) est disponible uniquement lorsque vous modifiez une stratégie de filtrage de courrier indésirable dans PowerShell.
-- Vous ne pouvez pas renommer une stratégie de filtrage de courrier indésirable (l’applet de commande **Set-HostedContentFilterPolicy** ne possède pas de _Nom_). Lorsque vous renommez une stratégie anti-courrier indésirable dans le Centre de sécurité, vous renommez uniquement la _règle_ de filtre anti-courrier indésirable.
+- Vous ne pouvez pas renommer une stratégie de filtrage de courrier indésirable (l’applet de commande **Set-HostedContentFilterPolicy** ne possède pas de _Nom_). Lorsque vous renommez une stratégie anti-courrier indésirable dans le Portail Microsoft 365 Defender, vous renommez uniquement la _règle_ de filtre anti-courrier indésirable.
 
 Pour modifier une stratégie de filtrage du courrier indésirable, utilisez la syntaxe suivante :
 

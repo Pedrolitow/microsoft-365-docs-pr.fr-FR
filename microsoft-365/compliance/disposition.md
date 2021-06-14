@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Surveillez et gérez la destruction de contenu lorsque vous utilisez une révision avant destruction ou que des éléments marqués comme enregistrement sont automatiquement supprimés selon les paramètres que vous avez configurés.
-ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594072"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878123"
 ---
 # <a name="disposition-of-content"></a>Destruction de contenu
 
@@ -38,7 +38,7 @@ Utilisez la page **Destruction** de **Gestion des enregistrements** dans le Cent
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Conditions préalables pour l’affichage des suppressions de contenu
 
-Pour gérer les révisions de destruction et vérifier que les enregistrements ont été supprimés, vous devez disposer d’autorisations suffisantes et l’audit doit être activé.
+Pour gérer les révisions de destruction et vérifier que les enregistrements ont été supprimés, vous devez disposer d’autorisations suffisantes et l’audit doit être activé. Tenez également compte des [limites](retention-limits.md#maximum-number-of-items-for-disposition)pour la destruction.
 
 ### <a name="permissions-for-disposition"></a>Autorisations pour la destruction
 
@@ -215,8 +215,6 @@ Utilisez l’onglet **Destruction** à partir de la page **Gestion des enregistr
 Ces éléments affichent **Enregistrements supprimés** dans la colonne **Type**. Par exemple :
 
 ![Éléments supprimés sans révision avant destruction](../media/records-disposed2.png)
-
-Les éléments qui s’affichent dans l’onglet **Éléments supprimés** sont conservés pendant sept ans après la suppression de l’élément, avec une limite d’un million d’éléments par enregistrement pour cette période. Si vous voyez le nombre de **Count** approcher cette limite d'un million, et que vous avez besoin d'une preuve de destruction pour vos enregistrements, contactez le [Support Microsoft](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Cette fonctionnalité est basée sur les informations du [Journal d’audit unifié](search-the-audit-log-in-security-and-compliance.md) et nécessite par conséquent que l’audit soit [Activé et accessible à la recherche](turn-audit-log-search-on-or-off.md) pour la capture des événements correspondants.
