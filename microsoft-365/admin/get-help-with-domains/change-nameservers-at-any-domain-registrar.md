@@ -25,18 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: Découvrez comment ajouter et configurer votre domaine dans Microsoft 365 afin que vos services tels que la messagerie électronique et Skype Entreprise Online utilisent votre propre nom de domaine.
-ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9c26f9afcf17857c4b3b8f05b89253272cf20e56
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683126"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924502"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Modifier les serveurs de noms pour configurer Microsoft 365 auprès d’un bureau d’enregistrement de domaines
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-Suivez ces instructions pour ajouter et configurer votre domaine dans Microsoft 365 afin que vos services tels que le courrier électronique et Teams utilisent votre propre nom de domaine. Pour ce faire, vous devez vérifier votre domaine, puis modifier les serveurs de noms de votre domaine en Microsoft 365 afin que les enregistrements DNS corrects soient mis en place pour vous. Suivez ces étapes si les instructions suivantes décrivent votre situation :
+Suivez ces instructions pour ajouter et configurer votre domaine dans Microsoft 365 afin que vos services tels que la messagerie Teams utilisent votre propre nom de domaine. Pour ce faire, vous devez vérifier votre domaine, puis modifier les serveurs de noms de votre domaine en Microsoft 365 afin que les enregistrements DNS corrects soient mis en place pour vous. Suivez ces étapes si les instructions suivantes décrivent votre situation :
   
 - Vous avez votre propre domaine et souhaitez le configurer pour qu’il fonctionne avec Microsoft 365.
     
@@ -66,18 +66,17 @@ Selon que vous créez un enregistrement TXT ou un enregistrement MX, effectuez
   
 **Si vous créez un enregistrement TXT, utilisez les valeurs suivantes :**
     
-|||||
+
+|Type d’enregistrement<br/> |Alias ou nom d’hôte <br/> |Valeur <br/> |Durée de vie<br/> |
 |:-----|:-----|:-----|:-----|
-|**Type d’enregistrement** <br/> |**Alias** ou **nom d’hôte** <br/> |**Valeur** <br/> |**TTL** <br/> |
 |TXT  <br/> |Effectuez l'une des opérations suivantes : Tapez **@**, laissez le champ vide ou entrez le nom de votre domaine.  <br/> > [!NOTE]> Les conditions requises pour ce champ ne sont pas identiques pour tous les hôtes DNS.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc.  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**Remarque :** il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc.  <br/> |
    
 **Si vous créez un enregistrement MX, utilisez les valeurs suivantes :**
     
-||||||
+|Type d’enregistrement|Alias ou nom d’hôte|Valeur|Priority (Priorité)|TTL (Durée de vie)|
 |:-----|:-----|:-----|:-----|:-----|
-|**Type d’enregistrement**|**Alias** ou **nom d’hôte**|**Valeur**|**Priorité**|**TTL**|
-|MX|Entrez soit **@**, soit votre nom de domaine. |MS=ms *XXXXXXXX* > [!NOTE]> Il s'agit d'un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Pour **Priorité**, afin d’éviter les conflits avec l’enregistrement MX utilisé pour le flux de courrier électronique, utilisez une priorité plus basse que la priorité des enregistrements MX existants. Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc. |
+|MX|Entrez soit **@**, soit votre nom de domaine. |MS=ms *XXXXXXXX* **Note : Il** s’agit d’un exemple. Utilisez votre valeur **Adresse de destination ou de pointage** spécifique ici, à partir du tableau dans Microsoft 365.           [Comment trouver cette valeur ?](../get-help-with-domains/information-for-dns-records.md)          |Pour **Priorité**, afin d’éviter les conflits avec l’enregistrement MX utilisé pour le flux de courrier électronique, utilisez une priorité plus basse que la priorité des enregistrements MX existants. Pour plus d'informations sur la priorité, voir [Qu'est-ce que la priorité MX ?](../setup/domains-faq.yml). |Définissez cette valeur sur **1 heure** ou sur l'équivalent en minutes ( **60** ), en secondes ( **3600** ), etc. |
    
 ### <a name="save-the-record"></a>Enregistrer l’enregistrement
 
@@ -110,13 +109,12 @@ Pour changer vous-même les serveurs de noms de votre domaine sur le site web de
 1. Recherchez la zone sur le site web du bureau d’enregistrement de domaines où vous pouvez modifier les serveurs de noms de votre domaine ou une zone dans laquelle vous pouvez utiliser des serveurs de noms personnalisés.
     
 2. Créez des enregistrements de nameserver ou modifiez les enregistrements de nameserver existants pour qu’ils correspondent aux valeurs suivantes :
-    
-|||
-|:-----|:-----|
-|Premier serveur de noms  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|Deuxième serveur de noms  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Troisième serveur de noms  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|Quatrième serveur de noms  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - Premier nameserver : ns1.bdm.microsoftonline.com
+    - Second nameserver: ns2.bdm.microsoftonline.com
+    - Troisième nameserver : ns3.bdm.microsoftonline.com
+    - Quatrième nameserver : ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > Il est préférable d’ajouter les quatre enregistrements, mais si votre bureau d’enregistrement ne prend en charge que deux enregistrements, **ajoutez ns1.bdm.microsoftonline.com** et **ns2.bdm.microsoftonline.com**. 
@@ -124,7 +122,7 @@ Pour changer vous-même les serveurs de noms de votre domaine sur le site web de
 3. Enregistrez vos modifications.
     
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements NS de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft 365, tous les services actuellement associés à votre domaine sont affectés. Si vous avez ignoré des étapes de l’Assistant, telles que l’ajout d’adresses de messagerie, ou si vous utilisez votre domaine pour des blogs, des paniers ou d’autres services, des étapes supplémentaires sont requises. Dans le cas contraire, cette modification risque d’entraîner un temps d’arrêt du service, par exemple l’absence d’accès à la messagerie ou l’in inaccessible de votre site web actuel. 
+> Lorsque vous modifiez les enregistrements NS de votre domaine pour qu’ils pointent vers les serveurs de noms Microsoft 365, tous les services actuellement associés à votre domaine sont affectés. Si vous avez ignoré des étapes de l’Assistant, telles que l’ajout d’adresses de messagerie, ou si vous utilisez votre domaine pour des blogs, des paniers ou d’autres services, d’autres étapes sont nécessaires. Dans le cas contraire, cette modification risque d’entraîner un temps d’arrêt du service, par exemple l’absence d’accès à la messagerie ou l’in inaccessible de votre site web actuel. 
 
 ::: moniker-end
 
@@ -133,19 +131,17 @@ Pour changer vous-même les serveurs de noms de votre domaine sur le site web de
 1. Identifiez la zone sur le site web du bureau d'enregistrement de domaines dans laquelle vous pouvez modifier les serveurs de noms pour votre domaine.
     
 2. Créez deux enregistrements de serveur de noms, ou modifiez les enregistrements existants pour qu'ils correspondent aux valeurs suivantes :
+
+   - Premier nameserver : ns1.dns.partner.microsoftonline.cn
+   - Second nameserver: ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|Premier serveur de noms  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|Deuxième serveur de noms  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > Vous devez utiliser au moins deux enregistrements de nameserver. Si d’autres serveurs de noms sont répertoriés, vous pouvez les supprimer ou les remplacer par **ns3.dns.partner.microsoftonline.cn** et **ns4.dns.partner.microsoftonline.cn**. 
   
 3. Enregistrez vos modifications.
     
 > [!CAUTION]
-> Lorsque vous modifiez les enregistrements NS de votre domaine pour qu’ils pointent vers le Office 365 géré par les serveurs de noms 21Vianet, tous les services actuellement associés à votre domaine sont affectés. Si vous avez ignoré des étapes de l’Assistant, telles que l’ajout d’adresses de messagerie, ou si vous utilisez votre domaine pour des blogs, des paniers ou d’autres services, des étapes supplémentaires sont requises. Dans le cas contraire, cette modification risque d’entraîner un temps d’arrêt du service, par exemple l’absence d’accès à la messagerie ou l’in inaccessible de votre site web actuel. 
+> Lorsque vous modifiez les enregistrements NS de votre domaine pour qu’ils pointent vers le Office 365 géré par les serveurs de noms 21Vianet, tous les services actuellement associés à votre domaine sont affectés. Si vous avez ignoré des étapes de l’Assistant, telles que l’ajout d’adresses de messagerie, ou si vous utilisez votre domaine pour des blogs, des paniers ou d’autres services, d’autres étapes sont nécessaires. Dans le cas contraire, cette modification risque d’entraîner un temps d’arrêt du service, par exemple l’absence d’accès à la messagerie ou l’in inaccessible de votre site web actuel. 
 
 ::: moniker-end
   

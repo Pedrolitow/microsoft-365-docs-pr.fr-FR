@@ -5,19 +5,21 @@ keywords: Bureau géré Microsoft, Microsoft 365, service, documentation, ITISM
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e545b64670bb92c40465f1c50b2cb46b9fd7a8d8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: f51c99ed39e9f647f3e069c22eb3e37441f57be5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841434"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924478"
 ---
 # <a name="microsoft-managed-desktop-and-itil"></a>Bureau géré Microsoft et ITIL
 
 De nombreuses organisations trouvent utile de structurer leurs services itaux sur les lignes d’un modèle de service itatérisé (ITSM), tel [qu’ITIL](https://www.axelos.com/best-practice-solutions/itil). 
 
-Bureau géré Microsoft permet à votre organisation de se conformer à de nombreux aspects clés de ces modèles ITSM formalisés. À l’aide de l’exemple ITIL, cet article vous aide à voir les connexions entre les phases et processus ITIL courants et les fonctionnalités d’Bureau géré Microsoft, le cas échéant. Ces informations s’appliquent uniquement à Bureau géré Microsoft partie de votre organisation.
+Bureau géré Microsoft permet à votre organisation de se conformer à de nombreux aspects clés de ces modèles ITSM formalisés. En utilisant ITIL comme exemple, cet article vous aide à voir les connexions entre les phases et processus ITIL courants et les fonctionnalités de Bureau géré Microsoft, le cas échéant. Ces informations s’appliquent uniquement à Bureau géré Microsoft partie de votre organisation.
 
 Pour plus d’informations sur ITIL et ses phases et processus, consultez leur [documentation.](https://www.axelos.com/best-practice-solutions/itil)
 
@@ -30,7 +32,7 @@ Ce tableau présente les phases et processus ITIL clés pour Bureau géré Micro
 
 |Processus ITIL |Description  |Documentation |
 |---------|---------|---------|
-|Gestion au niveau du service     | Les délais de réponse sont définis pour les demandes de support et les incidents de l’administrateur.  |  [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md)  |
+|Gestion au niveau du service     | Les temps de réponse sont définis pour les demandes de support et les incidents de l’administrateur.  |  [Aide administrateur pour le Bureau géré Microsoft](working-with-managed-desktop/admin-support.md)  |
 |Gestion du catalogue de services     | La description du service détaillant les composants du service reste vraie selon l’état du service, disponible pour tous les clients actuels et intéressés.<br><br>Conditions préalables détaillées pour comprendre ce qui est nécessaire au fonctionnement du service.  | - [Bureau géré Microsoft de service](service-description/index.md)<br><br>- [Préparez-vous à l’inscription dans Bureau géré Microsoft](get-ready/index.md)  |
 |Gestion de la sécurité des informations     | Informations de sécurité, y compris la sécurité des informations pour le service.<br><br> Stratégies de sécurité et autres informations sur la configuration des appareils.   | - [Sécurité dans Bureau géré Microsoft](service-description/security.md)<br><br>- [Configuration de l’appareil](service-description/device-policies.md)  |
 |Gestion de la disponibilité     |  Bureau géré Microsoft équilibre la responsabilité avec votre organisation pour garantir la disponibilité du service.<br><br>Les administrateurs et les utilisateurs ont des itinéraires vers le support respectif en cas de problèmes de service ou de disponibilité. | - [Bureau géré Microsoft et surveillance](service-description/operations-and-monitoring.md)<br><br>- [Prise en charge des administrateurs pour Bureau géré Microsoft](working-with-managed-desktop/admin-support.md)<br>- [Obtenir de l’aide pour les utilisateurs](working-with-managed-desktop/end-user-support.md)  |

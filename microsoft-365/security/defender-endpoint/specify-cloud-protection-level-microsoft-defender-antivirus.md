@@ -7,7 +7,8 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.date: 10/26/2020
@@ -15,13 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: f441b1bd444cd70fb5b00dfcb5ebcddadf62b220
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fb4dd3114c411385f1a38cf7b0fd391a1b159b99
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274903"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924470"
 ---
 # <a name="specify-the-cloud-delivered-protection-level"></a>Spécifier le niveau de protection pour le cloud
 
@@ -32,7 +32,7 @@ ms.locfileid: "52274903"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez spécifier votre niveau de protection offerte par le cloud Antivirus Microsoft Defender à l’aide de Microsoft Endpoint Manager (recommandé) ou d’une stratégie de groupe.
+Vous pouvez spécifier votre niveau de protection cloud offerte par les Antivirus Microsoft Defender à l’aide de Microsoft Endpoint Manager (recommandé) ou d’une stratégie de groupe.
 
 > [!TIP]
 > La protection cloud n’est pas simplement une protection pour les fichiers stockés dans le cloud. Le service Antivirus Microsoft Defender cloud est un mécanisme permettant de fournir une protection mise à jour à votre réseau et à vos appareils (également appelés points de terminaison). La protection cloud avec Antivirus Microsoft Defender utilise des ressources distribuées et l’apprentissage automatique pour fournir une protection à vos points de terminaison à un taux beaucoup plus rapide que les mises à jour d’intelligence de sécurité traditionnelles. Microsoft Intune et Microsoft Endpoint Manager font désormais partie de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). 
@@ -46,11 +46,11 @@ Vous pouvez spécifier votre niveau de protection offerte par le cloud Antivirus
 
 3. Sélectionnez un profil antivirus. (Si vous n’en avez pas encore, ou si vous souhaitez créer un profil, voir Configurer les [paramètres](/intune/device-restrictions-configure)de restriction d’appareil dans Microsoft Intune .
 
-4. Sélectionnez **les propriétés.** Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
+4. Sélectionnez **propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
 5. Développez **la protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
 
-    1. **Élevé**: applique un niveau de détection élevé.
+    1. **Élevé**: applique un niveau élevé de détection.
     2. **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut avoir un impact sur les performances du client).
     3. **Tolérance zéro :** bloque tous les exécutables inconnus.
 
@@ -66,9 +66,9 @@ Vous pouvez spécifier votre niveau de protection offerte par le cloud Antivirus
 
 1.  Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console de gestion des stratégies de groupe.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))
 
-2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
+2. Cliquez avec le bouton droit sur l’objet de stratégie de groupe que vous souhaitez configurer, puis cliquez sur **Modifier.**
 
-3.  Dans **l’Éditeur de gestion des stratégies de** groupe, allez aux   >  **modèles d’administration de configuration ordinateur.**
+3.  Dans **l’Éditeur de gestion des stratégies de** groupe, allez **aux**  >  **modèles d’administration de configuration ordinateur.**
 
 4.  Développez l’arborescence **Windows composants**  >  **Antivirus Microsoft Defender**  >  **MpEngine**.
 

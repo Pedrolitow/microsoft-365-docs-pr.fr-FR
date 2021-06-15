@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Choisissez les fonctionnalités Office à afficher ou masquer lorsqu’un utilisateur choisit Aide > Nouveautés de son application Office sur Windows à l’aide de la fonctionnalité « Nouveautés de Office » dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: b9d20e3df4a2de540316dce0e6a6905c07e65176
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915026"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924834"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gérer les fonctionnalités Office’affiche dans Nouveautés
 
@@ -38,7 +38,7 @@ Vous pouvez contrôler les messages de fonctionnalité affichés par vos utilisa
 
 ## <a name="show-or-hide-new-features"></a>Afficher ou masquer les nouvelles fonctionnalités 
 
-1. Dans le centre Microsoft 365' administration, **sous Paramètres**, choisissez **les paramètres de l’organisation.**
+1. Dans le centre Microsoft 365' administration, **sous Paramètres**, choisissez **paramètres de l’organisation.**
 2. Sous **l’onglet Services,** choisissez **Nouveautés de Office**.
 3. Lorsque vous cliquez sur le nom de la fonctionnalité, un panneau volant apparaît avec les informations suivantes :
      - Brève description de la fonctionnalité.
@@ -60,9 +60,8 @@ Vous pouvez filtrer les fonctionnalités qui apparaissent dans la page Gérer le
 
 De nouvelles fonctionnalités apparaissent sur la page en fonction de la planification suivante :
 
-||||
+|Canal|Date|Prendre action|
 |:-----|:-----|:-----|
-|**Canal** <br/> |**Date** <br/> |**Prendre action** <br/> |
 |**Current** <br/> |15 du mois  <br/> |1 à 3 semaines avant la publication mensuelle <br/> |
 |**Entreprise mensuelle** <br/> |Premier du mois  <br/> |Deux semaines avant la publication majeure qui apporte de nouvelles fonctionnalités |
 |**Semi-annuel Enterprise (prévisualisation)** <br/> |1er septembre et 1er mars <br/> | 2 semaines avant la publication majeure qui apporte de nouvelles fonctionnalités|

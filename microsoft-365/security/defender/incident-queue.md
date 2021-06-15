@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636265"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925886"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "52636265"
 **S’applique à :**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender applique l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont Microsoft 365 Defender dispose dans toute la suite de produits. Cette vue donne à vos analystes de sécurité un niveau d’attaque plus large, qui les aide à mieux comprendre et traiter les menaces complexes au sein de votre organisation.
+Microsoft 365 Defender applique l’analyse de corrélation et regroupe les alertes associées et les enquêtes automatisées de différents produits dans un incident. Microsoft 365 Defender déclenche également des alertes uniques sur les activités qui peuvent uniquement être identifiées comme malveillantes en raison de la visibilité de bout en bout dont dispose Microsoft 365 Defender sur l’ensemble de la suite de produits. Cette vue donne à vos analystes de sécurité un niveau d’attaque plus large, qui les aide à mieux comprendre et traiter les menaces complexes au sein de votre organisation.
 
 La **file d’attente Incident** affiche un ensemble d’incidents qui ont été créés sur plusieurs appareils, utilisateurs et boîtes aux lettres. Elle vous aide à trier les incidents afin de hiérarchiser et de créer une décision de réponse cyber-sécurité. 
 
@@ -52,7 +52,7 @@ La file d’attente des incidents possède des colonnes personnalisables (sélec
 
 Pour une visibilité supplémentaire en un coup d’œil, l’appellation automatique des incidents génère des noms d’incident basés sur des attributs d’alerte tels que le nombre de points de terminaison affectés, les utilisateurs affectés, les sources de détection ou les catégories. Cela vous permet de comprendre rapidement l’étendue de l’incident.
 
-Par exemple : *incident en plusieurs étapes sur plusieurs points de terminaison signalés par plusieurs sources.*
+Par exemple : incident en plusieurs étapes sur plusieurs points de *terminaison signalés par plusieurs sources.*
 
 > [!NOTE]
 > Les incidents qui existaient avant le déploiement de la dénomination automatique des incidents ne seront pas modifiés.
@@ -63,7 +63,7 @@ La file d’attente des incidents expose également plusieurs options de filtrag
 
 Dans la file d’attente des incidents par défaut, vous pouvez sélectionner **Filtres** pour afficher un volet Filtres, à partir duquel vous pouvez afficher un ensemble filtré d’incidents. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet Filtres de la file d’attente des incidents":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d’attente des incidents":::
 
 Ce tableau répertorie les noms de filtres disponibles.
 
@@ -83,7 +83,24 @@ Ce tableau répertorie les noms de filtres disponibles.
 | Statut | Vous pouvez choisir de limiter la liste des incidents affichés en fonction de leur état pour identifier ceux qui sont actifs ou résolus. |
 |||
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="save-defined-filters-as-urls"></a>Enregistrer les filtres définis en tant qu’URL
+
+Une fois que vous avez configuré un filtre utile dans la file d’attente des incidents, vous pouvez mettre en signet l’URL de l’onglet du navigateur ou l’enregistrer en tant que lien sur une page Web, un document Word ou un lieu de votre choix. Cela vous permettra d’accéder en un seul clic aux vues clés de la file d’attente des incidents, telles que :
+
+- Nouveaux incidents
+- Incidents de gravité élevée
+- Incidents non signés
+- Incidents non signés de gravité élevée
+- Incidents qui m’ont été attribués
+- Incidents qui m’ont été attribués et pour Microsoft Defender pour le point de terminaison
+- Incidents avec une ou plusieurs balises spécifiques
+- Incidents avec une catégorie de menace spécifique
+- Incidents avec une menace associée spécifique
+- Incidents avec un acteur spécifique
+
+Une fois que vous avez compilé et stocké votre liste d’affichages de filtre utiles en tant [](manage-incidents.md) qu’URL, vous pouvez l’utiliser rapidement pour traiter et hiérarchiser les incidents dans votre file d’attente et les gérer pour analyse ultérieure.
+
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que vous avez déterminé quel incident nécessite la priorité la plus élevée, sélectionnez-le et :
 

@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,13 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 089a16bb76956cfb0441f8c3eeb5e70d80059845
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 4be9116b83c2ee4eec410f3d8d68c289f3c8b9a5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275179"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925826"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Déployer, gérer et signaler les Antivirus Microsoft Defender
 
@@ -32,7 +32,7 @@ ms.locfileid: "52275179"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez déployer, gérer et signaler les Antivirus Microsoft Defender de plusieurs façons.
+Vous pouvez déployer, gérer et signaler des Antivirus Microsoft Defender de plusieurs façons.
 
 Étant donné que Antivirus Microsoft Defender client est installé en tant que partie intégrante de Windows 10, le déploiement traditionnel d’un client sur vos points de terminaison ne s’applique pas.
 
@@ -53,7 +53,7 @@ Microsoft Endpoint Manager ([1](#fn1))|Utiliser le [rôle Endpoint Protection de
 Stratégie de groupe et Active Directory (joint au domaine)|Utilisez un objet de stratégie de groupe pour déployer les modifications de configuration et Antivirus Microsoft Defender est activé.|Utiliser les objets de stratégie de groupe (G OBJETS) pour configurer les [options][] de mise à jour Antivirus Microsoft Defender et configurer [les Windows Defender de groupe][]|Les rapports de point de terminaison ne sont pas disponibles avec la stratégie de groupe. Vous pouvez générer une liste de stratégies de groupe pour déterminer si des [paramètres ou des stratégies ne sont pas appliqués.][]
 PowerShell|Déployer avec une stratégie de groupe, Microsoft Endpoint Configuration Manager ou manuellement sur des points de terminaison individuels.|Utilisez les cmdlets [Set-MpPreference] et [Update-MpSignature] disponibles dans le module Defender.|Utiliser les [cmdlets Get- appropriées disponibles dans le module Defender][]
 Windows Infrastructure de gestion|Déployer avec une stratégie de groupe, Microsoft Endpoint Configuration Manager ou manuellement sur des points de terminaison individuels.|Utiliser la [méthode Set de la classe MSFT_MpPreference et][] la méthode Update de la MSFT_MpSignature [classe][]|Utiliser la [MSFT_MpComputerStatus][] et la méthode get des classes associées dans le [Windows Defender WMIv2 Provider][]
-Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, à l’aide Visual Studio configuration de machine virtuelle ou à l’aide [Azure PowerShell cmdlets.](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios) Vous pouvez également [installer endpoint protection dans Azure Defender*](/azure/security-center/security-center-install-endpoint-protection)|Configurer des Microsoft Antimalware pour les machines virtuelles et les services cloud avec [Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) ou utiliser [des exemples de code](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Utilisez Microsoft Antimalware pour les machines virtuelles et les services cloud avec [Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) pour activer la surveillance. Vous pouvez également consulter les rapports d’utilisation dans [][] Azure Active Directory pour déterminer une activité suspecte, y compris le rapport des appareils potentiellement infectés, et configurer un outil SIEM pour signaler les événements [Antivirus Microsoft Defender][] et ajouter cet outil en tant qu’application dans AAD.
+Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, à l’aide Visual Studio configuration de machine virtuelle ou à l’aide [Azure PowerShell cmdlets.](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios) Vous pouvez également [installer endpoint protection dans Azure Defender*](/azure/security-center/security-center-install-endpoint-protection)|Configurer des Microsoft Antimalware pour les machines virtuelles et les services cloud avec [Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) ou utiliser [des exemples de code](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|Utilisez Microsoft Antimalware pour les machines virtuelles et les services cloud avec [Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) pour activer la surveillance. Vous pouvez également consulter les rapports d’utilisation dans [][] Azure Active Directory pour déterminer les activités suspectes, notamment le rapport sur les appareils potentiellement infectés et configurer un outil SIEM pour signaler les événements [Antivirus Microsoft Defender][] et ajouter cet outil en tant qu’application dans AAD.
 
 1. <span id="fn1" />La disponibilité de certaines fonctions et fonctionnalités, en particulier liées à la protection cloud, diffère entre Microsoft Endpoint Manager (Current Branch) et System Center 2012 Configuration Manager. Dans cette bibliothèque, nous nous sommes concentrés sur Windows 10, Windows Server 2016 et Microsoft Endpoint Manager (Current Branch). Voir [Utiliser la protection microsoft fournie](cloud-protection-microsoft-defender-antivirus.md) par le cloud Antivirus Microsoft Defender pour un tableau qui décrit les principales différences. [(Revenir au tableau)](#ref2)
   
@@ -61,7 +61,7 @@ Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, à
 
 3. <span id="fn3" />La configuration des fonctionnalités et de la protection, y compris la configuration des mises à jour du produit et de la protection, est décrite plus en détail dans la section Configurer [Antivirus Microsoft Defender fonctionnalités](configure-notifications-microsoft-defender-antivirus.md) de cette bibliothèque. [(Revenir au tableau)](#ref2)
 
-[Endpoint Protection système de site point]: /configmgr/protect/deploy-use/endpoint-protection-site-role
+[Endpoint Protection système de site de point]: /configmgr/protect/deploy-use/endpoint-protection-site-role
 [stratégies de logiciel anti-programme malveillant par défaut et personnalisées]:  /configmgr/protect/deploy-use/endpoint-antimalware-policies
 [gestion des clients]:  /configmgr/core/clients/manage/manage-clients
 [activer Endpoint Protection avec les paramètres client personnalisés]:  /configmgr/protect/deploy-use/endpoint-protection-configure-client
@@ -72,8 +72,8 @@ Microsoft Azure|Déployez Microsoft Antimalware azure dans le portail Azure, à
  [custom Intune policy]:  /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#configure-microsoft-intune-endpoint-protection 
 [manage tasks]: /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#choose-management-tasks-for-endpoint-protection
 [Monitor endpoint protection in the Microsoft Intune administration console]: /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#monitor-endpoint-protection
-[Méthode Set de la classe MSFT_MpPreference classe]:  /previous-versions/windows/desktop/defender/set-msft-mppreference
-[Méthode update de la classe MSFT_MpSignature de mise à jour]:  /previous-versions/windows/desktop/defender/set-msft-mppreference
+[Définir la méthode de la classe MSFT_MpPreference classe]:  /previous-versions/windows/desktop/defender/set-msft-mppreference
+[Méthode Update de la classe MSFT_MpSignature de mise à jour]:  /previous-versions/windows/desktop/defender/set-msft-mppreference
 [MSFT_MpComputerStatus]:  /previous-versions/windows/desktop/defender/msft-mpcomputerstatus
 [Windows Defender Fournisseur WMIv2]: /previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal
 [Set-MpPreference]:  https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference.md

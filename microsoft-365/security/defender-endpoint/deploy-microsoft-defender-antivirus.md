@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,13 +16,12 @@ ms.date: 01/06/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 88a5401818c3d6f2b35675830a38b266db9627e4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a847e65adb0402d4c5f98e19424677ccdc1011da
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274495"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925742"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Déployer et activer l’antivirus Microsoft Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "52274495"
 
 En fonction de l’outil de gestion que vous utilisez, vous devrez peut-être activer ou configurer spécifiquement Antivirus Microsoft Defender protection. 
 
-Consultez le tableau dans [Déployer,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) gérer et signaler Antivirus Microsoft Defender pour obtenir des instructions sur la façon d’activer la protection avec Microsoft Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe, Active Directory, Microsoft Azure, cmdlets PowerShell et WMI (Windows Management Instruction).
+Consultez le tableau dans [Déployer,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) gérer et signaler Antivirus Microsoft Defender pour obtenir des instructions sur la façon d’activer la protection avec Microsoft Intune, Microsoft Endpoint Configuration Manager, stratégie de groupe, Active Directory, Microsoft Azure, cmdlets PowerShell et Windows Management Instruction (WMI).
 
 Certains scénarios nécessitent davantage d’instructions sur la façon de déployer ou de configurer Antivirus Microsoft Defender protection, telles que les environnements VDI (Virtual Desktop Infrastructure).
 

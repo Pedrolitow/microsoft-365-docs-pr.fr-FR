@@ -23,14 +23,15 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Découvrez comment mettre à niveau Microsoft Office vers la dernière Office client pour les utilisateurs de votre organisation.
-ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.topic: article
+ms.openlocfilehash: 877659e420079ed607adc13e5bbe44bdc979f5ac
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860570"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924694"
 ---
-# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau votre Microsoft 365 pour les utilisateurs professionnels vers le dernier client Office client
+# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Mettre à niveau Microsoft 365 pour les utilisateurs professionnels vers le dernier client Office client
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 atteint la fin de la prise en charge
 
@@ -46,7 +47,7 @@ Pour [plus d’informations, voir Office 2010 end of support roadmap.](/deployof
 
  **S’agit-il de la rubrique la plus à votre place ?**
   
- Si vous êtes l’administrateur responsable de l’abonnement Microsoft 365 entreprise dans votre organisation, vous êtes au bon endroit. Les administrateurs sont généralement responsables de tâches telles que la gestion des utilisateurs, la réinitialisation des mots de passe, la gestion des Office et l’ajout ou la suppression de licences.
+ Si vous êtes l’administrateur responsable de l’abonnement Microsoft 365 entreprise dans votre organisation, vous êtes au bon endroit. Les administrateurs sont généralement responsables des tâches telles que la gestion des utilisateurs, la réinitialisation des mots de passe, la gestion des Office et l’ajout ou la suppression de licences.
 
  Si vous n’êtes pas un administrateur et que vous avez un produit [Microsoft 365 Famille,](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) voir Comment mettre à niveau [les Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) pour plus d’informations sur la mise à niveau de votre ancienne version d’utilisation à domicile de Office.
 
@@ -122,7 +123,7 @@ Si vous avez des produits tiers, contactez le fabricant pour savoir s’il exist
 
 Si vous préférez installer votre ancienne version de Office côte à côte avec la dernière version, vous pouvez voir une liste des versions dans laquelle cela est pris en charge, Installer et utiliser différentes versions de Office sur le même [PC.](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf) Une installation côte à côte peut être le bon choix pour vous, si, par exemple, vous avez installé des applications tierces que vous utilisez avec votre ancienne version de Office et que vous n’êtes pas encore sûr qu’elles soient compatibles avec la dernière version.
 
-## <a name="step-4---assign-office-licenses-to-users"></a>Étape 4 : attribuer des licences Office aux utilisateurs
+## <a name="step-4---assign-office-licenses-to-users"></a>Étape 4 : Attribuer des licences Office aux utilisateurs
 
 Si vous ne l’avez pas déjà fait, attribuez des licences à tous les utilisateurs de votre organisation qui doivent installer Office, voir Attribuer des licences aux utilisateurs dans [Microsoft 365 entreprise.](../manage/assign-licenses-to-users.md)
   

@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ab987089c20d0a1d0baed152e7ddcfdd2878cc65
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 405955de63de9f84a783ca1b8c0348c3935440cd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843457"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926174"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Résoudre des problèmes de rapports antivirus Microsoft Defender dans Conformité de la mise à jour
 
@@ -32,7 +32,7 @@ ms.locfileid: "52843457"
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Le 31 mars 2020, la fonctionnalité de Antivirus Microsoft Defender mise à jour de conformité sera supprimée. Vous pouvez continuer à définir et à passer en revue les stratégies de conformité de sécurité à l’aide de [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), ce qui permet un contrôle plus fin des fonctionnalités de sécurité et des mises à jour.
+> Le 31 mars 2020, la fonctionnalité de Antivirus Microsoft Defender mise à jour de conformité sera supprimée. Vous pouvez continuer à définir et à passer en revue les stratégies de conformité de sécurité à l’Microsoft Endpoint Manager [,](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)ce qui permet un contrôle plus fin des fonctionnalités de sécurité et des mises à jour.
 
 Vous pouvez utiliser Antivirus Microsoft Defender conformité des mises à jour. Vous verrez l’état des licences E3, B, F1, VL et Pro licences. Toutefois, pour les licences E5, vous devez utiliser le [portail Microsoft Defender pour points de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) Pour en savoir plus sur les options de licence, [voir Windows 10 options de licence de produit.](https://www.microsoft.com/licensing/product-licensing/windows10.aspx)
 

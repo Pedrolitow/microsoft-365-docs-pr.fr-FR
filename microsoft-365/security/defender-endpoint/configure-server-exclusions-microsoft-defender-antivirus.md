@@ -6,26 +6,25 @@ description: Windows Le serveur inclut des exclusions automatiques, basées sur 
 keywords: exclusions, serveur, exclusions automatiques, automatiques, personnalisées, analyses, Antivirus Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
-ms.technology: mde
-ms.date: 02/10/2021
 ms.topic: article
-ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.custom: nextgen
+ms.date: 02/10/2021
+ms.openlocfilehash: 31d5c22d11a28c9604b2be3145ebd46715a6e5b3
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274759"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925514"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurer des exclusions Antivirus Microsoft Defender sur Windows Server
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
 
@@ -51,7 +50,7 @@ Gardez les points importants suivants à l’esprit :
 
 ## <a name="opt-out-of-automatic-exclusions"></a>Refuser les exclusions automatiques
 
-Dans Windows Server 2016 et Windows Server 2019, les exclusions prédéfines délivrées par les mises à jour de l’intelligence de sécurité excluent uniquement les chemins d’accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d’accès personnalisé, ou si vous souhaitez contrôler manuellement l’ensemble des exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour de l’intelligence de sécurité. Toutefois, gardez à l’esprit que les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016 2019. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
+Dans Windows Server 2016 et Windows Server 2019, les exclusions prédéfines délivrées par les mises à jour de l’intelligence de sécurité excluent uniquement les chemins d’accès par défaut pour un rôle ou une fonctionnalité. Si vous avez installé un rôle ou une fonctionnalité dans un chemin d’accès personnalisé, ou si vous souhaitez contrôler manuellement l’ensemble d’exclusions, veillez à refuser les exclusions automatiques délivrées dans les mises à jour d’informations de sécurité. Toutefois, gardez à l’esprit que les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016 2019. Voir [Recommandations pour définir des exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) avant de définir vos listes d’exclusions.
 
 > [!WARNING]
 > Le fait de refuser les exclusions automatiques peut avoir un impact négatif sur les performances ou entraîner une altération des données. Les exclusions qui sont livrées automatiquement sont optimisées pour les rôles Windows Server 2016 et Windows Server 2019.
@@ -75,7 +74,7 @@ Utilisez les cmdlets suivantes :
 Set-MpPreference -DisableAutoExclusions $true
 ```
 
-Pour en savoir plus, consultez les ressources suivantes :
+Pour en savoir plus, consultez les ressources suivantes :
 
 - [Utilisez les cmdlets PowerShell pour configurer et exécuter Antivirus Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 - [Utilisez PowerShell avec Antivirus Microsoft Defender](/powershell/module/defender/).

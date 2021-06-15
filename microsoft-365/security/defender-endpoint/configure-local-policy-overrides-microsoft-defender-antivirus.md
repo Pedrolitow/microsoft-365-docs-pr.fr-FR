@@ -4,28 +4,26 @@ description: Activez ou désactivez les utilisateurs pour qu’ils ne modifient 
 keywords: remplacement local, stratégie locale, stratégie de groupe, gpo, verrouillage, fusion, listes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 02/13/2020
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 4a35c6717fd7a1834364df32cf5570c83a5b776e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 2d23ca6d98d86666d72b75723a2205fcd83b08d7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274519"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924242"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>Empêcher ou autoriser les utilisateurs à modifier localement les paramètres Antivirus Microsoft Defender stratégie
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
@@ -69,7 +67,7 @@ Correction | Configurer le remplacement de paramètre local pour l’heure de la
 Analyser | Configurer le remplacement de paramètre local pour le pourcentage maximal d’utilisation du processeur | [Configurer et exécuter des analyses](run-scan-microsoft-defender-antivirus.md)
 Analyser | Configurer le remplacement de paramètre local pour le jour de l’analyse de planification | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 Analyser | Configurer le remplacement de paramètre local pour le temps d’analyse rapide programmé | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Analyser | Configurer le remplacement de paramètre local pour l’heure d’analyse prévue | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+Analyser | Configurer le remplacement de paramètre local pour l’heure d’analyse programmée | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 Analyser | Configurer le remplacement de paramètre local pour le type d’analyse à utiliser pour une analyse programmée | [Configurer des analyses programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 
 <a id="merge-lists"></a>

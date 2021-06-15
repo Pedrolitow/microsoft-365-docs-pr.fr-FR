@@ -1,6 +1,6 @@
 ---
 title: Préparer Microsoft Defender pour le déploiement de point de terminaison
-description: Préparer l’approbation des parties prenantes, les chronologies, les considérations sur l’environnement et l’ordre d’adoption lors du déploiement de Microsoft Defender pour endpoint
+description: Préparer l’approbation des parties prenantes, les chronologies, les considérations sur l’environnement et l’ordre d’adoption pour le déploiement de Microsoft Defender pour endpoint
 keywords: déployer, préparer, partie prenante, chronologie, environnement, point de terminaison, serveur, gestion, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 13748662f6e53db86352b903828978729f78e6a8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842433"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925650"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -60,7 +60,7 @@ Ajoutez des parties prenantes au tableau ci-dessous, le cas échéant, pour votr
 
 -   I = Informé de ce projet
 
-| Nom                 | Role                                                                                                                                                                                                          | Action |
+| Nom                 | Rôle                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Entrer un nom et un e-mail | Responsable de la sécurité des informations **(CISO)** Représentant exécutif qui sert de sponsor au sein de l’organisation *pour le déploiement de nouvelles technologies.*                                                  | SO     |
 | Entrer un nom et un e-mail | Responsable du Centre des opérations de cybersécurité **(CDOC)** Représentant de l’équipe CDOC responsable de la définition de la façon dont cette modification est alignée sur les processus de l’équipe des opérations de sécurité des *clients.*       | SO     |
@@ -97,15 +97,15 @@ Microsoft recommande d’utiliser le concept de privilèges minimum. Defender fo
 
 Microsoft recommande [d’utiliser Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) pour gérer vos rôles afin de fournir un audit, un contrôle et une révision d’accès supplémentaires pour les utilisateurs ayant des autorisations d’annuaire.
 
-Defender pour le point de terminaison prend en charge deux méthodes de gestion des autorisations :
+Defender pour le point de terminaison prend en charge deux façons de gérer les autorisations :
 
 -   **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule. Dans le cas de la gestion des autorisations de base, les utilisateurs ayant le rôle Administrateur général ou Administrateur de sécurité dans Azure Active Directory disposent d’un accès total alors que le rôle lecteur Sécurité dispose d’un accès en lecture seule.
 
 -   Contrôle d’accès basé sur les rôles **:** définissez des autorisations granulaires en définissant des rôles, en attribuant des groupes d’utilisateurs Azure AD aux rôles et en accordant aux groupes d’utilisateurs l’accès aux groupes d’appareils. Pour plus d’informations. voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur un rôle.](rbac.md)
 
-Microsoft recommande d’utiliser le RBAC pour s’assurer que seuls les utilisateurs qui ont une justification professionnelle peuvent accéder à Defender for Endpoint.
+Microsoft recommande de tirer parti du RBAC pour s’assurer que seuls les utilisateurs qui ont une justification professionnelle peuvent accéder à Defender for Endpoint.
 
-Vous trouverez des détails sur les instructions [d’autorisation ici.](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+Vous trouverez plus d’informations sur les instructions d’autorisation ici : Créez des rôles et attribuez le rôle à [un Azure Active Directory groupe.](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 
 Le tableau d’exemple suivant sert à identifier la structure du Centre des opérations de cybersécurité dans votre environnement qui vous aidera à déterminer la structure RBAC requise pour votre environnement.
 
@@ -113,7 +113,7 @@ Le tableau d’exemple suivant sert à identifier la structure du Centre des op�
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | Niveau 1 | **Équipe locale des opérations de sécurité/équipe informatique**<br>Cette équipe trie et examine généralement les alertes contenues dans leur géolocalisation et atteint le niveau 2 dans les cas où une correction active est nécessaire.                                              |                     |
 | Niveau 2 | **Équipe des opérations de sécurité régionale**<br>Cette équipe peut voir tous les appareils de leur région et effectuer des actions de correction.                                                                                                                        |        Afficher les données               |
-| Niveau 3 | **Équipe des opérations de sécurité globale**<br>Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail. | Afficher les données <br>  Alertes examen Actions de correction actives <br> Alertes examen Actions de correction actives <br> Gérer les paramètres système du portail <br> Gérer les paramètres de sécurité |
+| Niveau 3 | **Équipe des opérations de sécurité globale**<br>Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail. | Afficher les données <br>  Examen des alertes Actions de correction actives <br> Examen des alertes Actions de correction actives <br> Gérer les paramètres système du portail <br> Gérer les paramètres de sécurité |
 
 
 
@@ -127,7 +127,7 @@ Choisissez le composant de Defender for Endpoint à utiliser et supprimez ceux q
 | Composant                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classement des commandes d’adoption |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | Endpoint Detection & Response (PEPT)     | Les fonctionnalités de protection évolutive des points de terminaison de Defender for Endpoint fournissent des détections d’attaques avancées quasiment en temps réel et actionnables. Les analystes de la sécurité peuvent hiérarchiser efficacement les alertes, avoir une meilleure visibilité de l’étendue d’une faille et prendre des mesures correctives pour remédier aux menaces. <br> [Pour en savoir plus.](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
-|Gestion & des menaces et des vulnérabilités (TVM)|Threat & Vulnerability Management est un composant de Microsoft Defender pour endpoint et fournit aux administrateurs de sécurité et aux équipes d’opérations de sécurité une valeur unique, notamment : <br> - Informations en temps protection évolutive des points de terminaison (PEPT) corrélées avec les vulnérabilités des points de terminaison <br> - Contexte de vulnérabilité d’appareil précieux pendant les examens d’incident <br> - Processus de correction intégrés via Microsoft Intune et Microsoft System Center Configuration Manager <br> [En savoir plus](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
+|Gestion & des menaces et des vulnérabilités (TVM)|Threat & Vulnerability Management est un composant de Microsoft Defender pour endpoint et fournit aux administrateurs de sécurité et aux équipes d’opérations de sécurité une valeur unique, notamment : <br> - Informations en temps réel protection évolutive des points de terminaison (PEPT) corrélées avec les vulnérabilités des points de terminaison <br> - Contexte de vulnérabilité d’appareil précieux pendant les examens d’incident <br> - Processus de correction intégrés via Microsoft Intune et Microsoft System Center Configuration Manager <br> [En savoir plus](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
 | Protection de nouvelle génération (NGP)        | Antivirus Microsoft Defender est une solution anti-programme malveillant intégrée qui fournit une protection nouvelle génération pour les ordinateurs de bureau, les ordinateurs portables et les serveurs. L’antivirus Microsoft Defender inclut les éléments suivants : <br> -Protection cloud pour la détection et le blocage quasi instantanés des menaces nouvelles et émergentes. Tout comme l’apprentissage automatique et le système Intelligent Security Graph, la protection fournie par le cloud fait partie des technologies nouvelle génération intégrées à l’antivirus Microsoft Defender.   <br> - Analyse toujours continue à l’aide de la surveillance avancée du comportement des fichiers et des processus et d’autres heuristiques (également appelée « protection en temps réel »). <br> - Mises à jour de protection dédiées basées sur l’apprentissage automatique, l’analyse humaine et automatisée du Big Data, ainsi que des recherches approfondies sur la résistance aux menaces. <br> [En savoir plus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 | Réduction de la surface d’attaque (ASR)          | Les fonctionnalités de réduction de la surface d’attaque dans Microsoft Defender pour point de terminaison aident à protéger les appareils et les applications de l’organisation contre les menaces nouvelles et émergentes. <br> [Pour en savoir plus.](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                    |
 | Auto Investigation & Remediation (AIR)  | Microsoft Defender pour le point de terminaison utilise des examens automatisés pour réduire considérablement le volume d’alertes qui doivent être examinées individuellement. La fonctionnalité d’investigation automatisée exploite divers algorithmes d’inspection et processus utilisés par les analystes (tels que les playbooks) pour examiner les alertes et prendre des mesures correctives immédiates pour résoudre les violations. Cela réduit considérablement les volumes d’alertes, ce qui permet aux experts en matière de sécurité de se concentrer sur des menaces plus sophistiquées et d’autres initiatives de grande valeur. <br>[Pour en savoir plus.](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | Non applicable      |
@@ -135,5 +135,6 @@ Choisissez le composant de Defender for Endpoint à utiliser et supprimez ceux q
 
 ## <a name="next-step"></a>Étape suivante
 
-![Phase 2 : configuration](images/setup.png) <br>[Phase 2 : Configuration |](production-deployment.md) Configurer Microsoft Defender pour le déploiement de point de terminaison
-
+|||
+|:-------|:-----|
+|![Phase 2 : configuration](images/setup.png) <br>[Phase 2 : configuration](production-deployment.md) | Configurer Microsoft Defender pour le déploiement de point de terminaison |

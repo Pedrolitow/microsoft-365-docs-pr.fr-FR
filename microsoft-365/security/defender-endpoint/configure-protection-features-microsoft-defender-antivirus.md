@@ -4,27 +4,25 @@ description: Activez la protection en temps réel, heuristique et basée sur le 
 keywords: heuristique, machine learning, moniteur de comportement, protection en temps réel, toujours en Antivirus Microsoft Defender, logiciel anti-programme malveillant, sécurité, defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 53b1e1474e0870388ec1cfaf214190eb0bdf7beb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: d8ce2ded8fd3270bcb095022c714f07d8030e1f7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274602"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925562"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Configurer la protection comportementale, heuristique et en temps réel.
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
@@ -41,7 +39,7 @@ Vous pouvez configurer la façon dont Antivirus Microsoft Defender utilise ces m
 
 Cette section couvre la configuration de l’analyse toujours en ligne, notamment la détection et le blocage des applications qui sont considérées comme non sûres, mais qui peuvent ne pas être détectées comme des programmes malveillants.
 
-Voir [Utiliser des technologies de Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) nouvelle génération via la protection cloud pour savoir comment activer et configurer Antivirus Microsoft Defender protection cloud.
+Voir [Utiliser les technologies de Antivirus Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) nouvelle génération via la protection cloud pour savoir comment activer et configurer Antivirus Microsoft Defender protection cloud.
 
 ## <a name="in-this-section"></a>Dans cette section
 

@@ -1,7 +1,7 @@
 ---
 title: Suivre les menaces émergentes et y répondre avec Microsoft Defender pour l’analyse des menaces de point de terminaison
 ms.reviewer: ''
-description: Découvrez les menaces émergentes et les techniques d’attaque et comment les arrêter. Évaluez leur impact sur votre organisation et évaluez la résilience de votre organisation.
+description: Comprendre les menaces émergentes et les techniques d’attaque et comment les arrêter. Évaluez leur impact sur votre organisation et évaluez la résilience de votre organisation.
 keywords: analyse des menaces, évaluation des risques, atténuation du système d’exploitation, atténuation des microcodes, état de l’atténuation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 61b6b0c19730045468c77e5f24bf18470aa5dbd5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 63303f9eacd25a8de1c7154ac66c73578bfd495a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688260"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924454"
 ---
-# <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Suivre les menaces émergentes et y répondre avec l’analyse des menaces 
+# <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>Suivre les menaces émergentes et y répondre par le biais de l’analyse des menaces
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,7 +50,7 @@ L’analyse des menaces est un ensemble de rapports d’experts en matière de s
 - Surfaces d’attaque courantes
 - Programmes malveillants répandus
 
-Chaque rapport fournit une analyse détaillée d’une menace et des instructions complètes sur la façon de se défendre contre cette menace. Il intègre également des données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
+Chaque rapport fournit une analyse détaillée d’une menace et des instructions complètes sur la façon de se défendre contre cette menace. Il incorpore également les données de votre réseau, ce qui indique si la menace est active et si vous avez des protections applicables en place.
 
 Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analyse des menaces peut vous aider à suivre les dernières menaces et à les arrêter.
 <p></p>
@@ -61,7 +61,7 @@ Regardez cette courte vidéo pour en savoir plus sur la façon dont l’analyse 
 
 Le tableau de bord d’analyse des menaces constitue un excellent point de départ pour obtenir les rapports les plus pertinents pour votre organisation. Il récapitule les menaces dans les sections suivantes :
 
-- **Menaces les** plus récentes : répertorie les derniers rapports publiés sur les menaces, ainsi que le nombre d’appareils avec des alertes actives et résolues.
+- **Menaces les** plus récentes : répertorie les derniers rapports sur les menaces publiés, ainsi que le nombre d’appareils avec des alertes actives et résolues.
 - **Menaces à fort impact**: répertorie les menaces qui ont eu l’impact le plus élevé sur l’organisation. Cette section classe les menaces selon le nombre d’appareils qui ont des alertes actives.
 - **Résumé des menaces**: affiche l’impact global du suivi des menaces en affichant le nombre de menaces avec des alertes actives et résolues.
 
@@ -105,7 +105,7 @@ Dans la section **Atténuations,** examinez la liste des recommandations actionn
   - Protection des applications potentiellement indésirables (PUA)
   - Protection en temps réel
  
-Les informations d’atténuation de cette section intègrent des données de [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md), qui fournit également des informations détaillées sur l’analyse à partir de différents liens du rapport.
+Les informations d’atténuation de cette section intègrent des données de [Gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md), qui fournissent également des informations détaillées d’analyse à partir de différents liens dans le rapport.
 
 ![Image de la section Préventions d’un rapport d’analyse des menaces Section ](images/ta-mitigations.png)
  _Atténuations d’un rapport d’analyse des menaces_

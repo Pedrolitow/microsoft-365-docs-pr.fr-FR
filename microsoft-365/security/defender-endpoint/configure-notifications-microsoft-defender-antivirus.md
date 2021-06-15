@@ -4,24 +4,24 @@ description: Découvrez comment configurer et personnaliser des notifications st
 keywords: notifications, defender, antivirus, point de terminaison, gestion, administrateur
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
+ms.topic: article
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 05/17/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: f885b6d7991e4175cd14be5bbe9e0a7c96b1580f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1e9f733b20b62af7e73a923932057920ff1dc155
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572344"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926237"
 ---
 # <a name="configure-the-notifications-that-appear-on-endpoints"></a>Configurer les notifications qui s’affichent sur les points de terminaison
 
@@ -37,10 +37,10 @@ Vous pouvez également configurer l’apparition des notifications standard sur 
 
 ## <a name="configure-the-additional-notifications-that-appear-on-endpoints"></a>Configurer les notifications supplémentaires qui apparaissent sur les points de terminaison
 
-Vous pouvez configurer l’affichage de notifications supplémentaires, telles que des résumés récents de la détection des menaces, dans [l’application Sécurité Windows et](microsoft-defender-security-center-antivirus.md) avec la stratégie de groupe.
+Vous pouvez configurer l’affichage de notifications supplémentaires, telles que des résumés récents de détection des menaces, dans [l’application Sécurité Windows et](microsoft-defender-security-center-antivirus.md) avec la stratégie de groupe.
 
 > [!NOTE]
-> Dans Windows 10 version 1607, la fonctionnalité était appelée **notifications améliorées** et pouvait être configurée sous Windows Paramètres mise à jour &   >  **sécurité**  >  **Windows Defender**. Dans les paramètres de stratégie de groupe dans toutes les versions de Windows 10, il s’agit des **notifications améliorées.**
+> Dans Windows 10 version 1607, la fonctionnalité était appelée **notifications améliorées** et pouvait être configurée sous Windows Paramètres mise à jour &   >  **sécurité**  >  **Windows Defender**. Dans les paramètres de stratégie de groupe dans toutes les versions Windows 10, il s’agit des **notifications améliorées.**
 
 > [!IMPORTANT]
 > La désactivation de notifications supplémentaires ne désactive pas les notifications critiques, telles que les alertes de détection et de correction des menaces.
@@ -102,7 +102,7 @@ Pour obtenir des instructions sur l’ajout [d’informations](/windows/security
 
 4. Développez l’arborescence **Windows composants > Antivirus Microsoft Defender >'interface client.**
 
-5. Double-cliquez sur Supprimer les notifications de **redémarrage** et définir l’option **sur Activé.** Cliquez sur **OK**. Cela empêche l’apparition de notifications supplémentaires.
+5. Double-cliquez **sur Supprimer les notifications** de redémarrage et définir l’option **sur Activé.** Cliquez sur **OK**. Cela empêche l’apparition de notifications supplémentaires.
 
 ## <a name="related-topics"></a>Voir aussi
 

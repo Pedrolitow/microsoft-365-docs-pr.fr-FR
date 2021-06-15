@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,13 +16,12 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 624e32bfebfce02021f1dcb1dbdde9446472239a
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 82aff7adedc9e490520851ad8c8e87fad60abf0a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274699"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926078"
 ---
 # <a name="manage-event-based-forced-updates"></a>Gérer les mises à jour forcées en fonction des événements
 
@@ -32,7 +32,7 @@ ms.locfileid: "52274699"
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Antivirus Microsoft Defender vous permet de déterminer si des mises à jour doivent (ou ne doivent pas) se produire après certains événements, par exemple au démarrage ou après la réception de rapports spécifiques du service de protection livré par le cloud.
+Antivirus Microsoft Defender vous permet de déterminer si des mises à jour doivent (ou ne doivent pas) se produire après certains événements, par exemple au démarrage ou après la réception de rapports spécifiques du service de protection cloud.
 
 ## <a name="check-for-protection-updates-before-running-a-scan"></a>Vérifier les mises à jour de la protection avant d’exécution d’une analyse
 
@@ -104,7 +104,7 @@ Vous pouvez également utiliser une stratégie de groupe, PowerShell ou WMI pour
 
 1. Sur votre ordinateur de gestion des stratégies de groupe, ouvrez la [Console](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal)de gestion des stratégies de groupe, cliquez avec le bouton droit sur l’objet de stratégie de groupe à configurer, puis cliquez sur **Modifier.**
 
-2. À l’aide **de l’Éditeur de gestion des stratégies de** groupe, go to **Computer configuration**.
+2. À l’aide **de l’Éditeur de gestion des stratégies** de groupe, go to **Computer configuration**.
 
 3. Cliquez **sur Stratégies** **puis Modèles d’administration.**
 
@@ -163,7 +163,7 @@ Si vous avez activé la protection cloud, l’Antivirus Microsoft Defender envoi
 
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Gérer le moment où les mises à jour de la protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-- [Gérer les mises à jour des points de terminaison qui ne sont plus à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+- [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+- [Gérer les mises à jour des points de terminaison qui ne sont pas à jour](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

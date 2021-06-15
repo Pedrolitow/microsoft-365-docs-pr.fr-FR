@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,13 +15,12 @@ ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ce200ca12bacc3ae8d9f7b48d36274ca54322586
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 83e37b6d59d7356b53e5024204e39473764cea72
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908028"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924914"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Guide de déploiement de l’antivirus Microsoft Defender dans un environnement VDI (Virtual Desktop Infrastructure)
 
@@ -53,7 +53,7 @@ Vous pouvez également télécharger le Antivirus Microsoft Defender de livre bl
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Configurer un partage de fichiers VDI dédié
 
-Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d’intelligence de sécurité partagée, qui décharge le déballage des mises à jour d’informations de sécurité téléchargées sur un ordinateur hôte, ce qui permet d’enregistrer les ressources précédentes de l’UC, du disque et de la mémoire sur des ordinateurs individuels. Cette fonctionnalité a été backportée et fonctionne désormais dans Windows 10 version 1703 et versions supérieures. Vous pouvez définir cette fonctionnalité avec une stratégie de groupe ou PowerShell.
+Dans Windows 10, version 1903, nous avons introduit la fonctionnalité d’intelligence de sécurité partagée, qui décharge le déballage des mises à jour d’informations de sécurité téléchargées sur un ordinateur hôte, ce qui permet d’enregistrer les ressources précédentes de l’UC, du disque et de la mémoire sur des ordinateurs individuels. Cette fonctionnalité a été backportée et fonctionne désormais dans Windows 10 version 1703 et supérieures. Vous pouvez définir cette fonctionnalité avec une stratégie de groupe ou PowerShell.
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Utilisez la stratégie de groupe pour activer la fonctionnalité d’intelligence de sécurité partagée :
 
@@ -162,7 +162,7 @@ Vous pouvez spécifier le type d’analyse à effectuer lors d’une analyse pro
 
 ## <a name="prevent-notifications"></a>Empêcher les notifications
 
-Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à plusieurs sessions ou être persistantes. Pour minimiser ce problème, vous pouvez verrouiller l’interface Antivirus Microsoft Defender utilisateur. La procédure suivante décrit comment supprimer les notifications avec la stratégie de groupe.
+Parfois, Antivirus Microsoft Defender notifications peuvent être envoyées à plusieurs sessions ou être persistantes. Pour minimiser ce problème, vous pouvez verrouiller l’interface Antivirus Microsoft Defender’utilisateur. La procédure suivante décrit comment supprimer les notifications avec la stratégie de groupe.
 
 1. Dans votre Éditeur de stratégie de groupe, Windows **composants**  >  **Antivirus Microsoft Defender**  >  **interface client.**
 
@@ -176,7 +176,7 @@ La suppression des notifications empêche les notifications d’Antivirus Micros
 
 > [!TIP]
 > Pour ouvrir le Centre de Windows 10, prenez l’une des étapes suivantes :
-> - À l’extrémité droite de la barre des tâches, sélectionnez l’icône centre de travail.
+> - À l’extrémité droite de la barre des tâches, sélectionnez l’icône Centre de tâches.
 > - Appuyez sur Windows touche de logo + A.
 > - Sur un appareil tactile, effectuez un balayage à partir du bord droit de l’écran.
 
@@ -185,7 +185,7 @@ La suppression des notifications empêche les notifications d’Antivirus Micros
 La désactivation d’une analyse après une mise à jour empêche l’analyse de se produire après la réception d’une mise à jour. Vous pouvez appliquer ce paramètre lors de la création de l’image de base si vous avez également exécuté une analyse rapide. De cette façon, vous pouvez empêcher la nouvelle mise à jour de la VM d’effectuer à nouveau une analyse (comme vous l’avez déjà analysé lors de la création de l’image de base).
 
 > [!IMPORTANT]
-> L’exécution d’analyses après une mise à jour permet de s’assurer que vos VM sont protégées avec les dernières mises à jour d’intelligence de sécurité. La désactivation de cette option réduit le niveau de protection de vos VM et ne doit être utilisée que lors de la création ou du déploiement de l’image de base.
+> L’exécution d’analyses après une mise à jour permet de s’assurer que vos VM sont protégées avec les dernières mises à jour d’informations de sécurité. La désactivation de cette option réduit le niveau de protection de vos VM et ne doit être utilisée que lors de la création ou du déploiement de l’image de base.
 
 1. Dans votre Éditeur de stratégie de groupe, Windows **composants** Antivirus Microsoft Defender mises à jour  >    >  **security intelligence**.
 

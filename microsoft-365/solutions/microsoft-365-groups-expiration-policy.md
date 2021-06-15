@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Découvrez les stratégies d Microsoft 365 d’expiration des groupes.
-ms.openlocfilehash: 90807d6c178061804e64db4440af42050a1d8e77
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a5a57591e1659cf04b46f419bda3d3bca672729c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530849"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925922"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 d’expiration de groupe
 
@@ -30,7 +30,7 @@ Avec l’augmentation de l’utilisation des groupes Microsoft 365 et des Micros
 
 Lorsqu’un groupe expire, tous ses services associés (boîte aux lettres, planificateur, SharePoint site, équipe, etc.) sont également supprimés.
 
-Lorsqu’un groupe arrive à expiration, il est « supprimé (récupérez) », ce qui signifie qu’il peut toujours être récupéré pendant 30 jours.
+Lorsqu’un groupe expire, il est « supprimé (récupérez) », ce qui signifie qu’il peut toujours être récupéré pendant 30 jours.
 
 Les administrateurs peuvent spécifier une période d’expiration et tout groupe inactif qui arrive à la fin de cette période et qui n’est pas renouvelé est supprimé. (Cela inclut les équipes archivées.) La période d’expiration commence lors de la création du groupe ou à la date de son dernier renouvellement. Les propriétaires de groupe sont automatiquement envoyés un e-mail avant l’expiration qui leur permet de renouveler le groupe pour un autre intervalle d’expiration. Teams utilisateurs voient les notifications persistantes dans Teams.
 
@@ -47,11 +47,11 @@ Notez que la seule activité Yammer qui déclenchera le renouvellement automatiq
 Il est important de savoir que l’expiration est désactivée par défaut. Les administrateurs doivent l’activer pour leur organisation s’ils souhaitent l’utiliser.
 
 > [!NOTE]
-> La configuration et l’utilisation de la stratégie d’expiration pour les groupes Microsoft 365 vous obligent à posséder, mais pas nécessairement attribuer des licences Azure AD Premium pour les membres de tous les groupes auquel la stratégie d’expiration est appliquée. Pour plus d’informations, [voir La mise en Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
+> La configuration et l’utilisation de la stratégie d’expiration pour les groupes Microsoft 365 vous obligent à posséder, mais pas nécessairement attribuer des licences Azure AD Premium pour les membres de tous les groupes auquel la stratégie d’expiration est appliquée. Pour plus d’informations, [voir Mise en Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Qui pouvez configurer et utiliser la stratégie d’expiration Microsoft 365 groupes de sécurité ?
 
-|Role|Ce qu’ils peuvent faire|
+|Rôle|Ce qu’ils peuvent faire|
 |---------|---------|
 |Office 365 administrateur général (dans Azure, administrateur d’entreprise), administrateur utilisateur|Créez, lisez, mettez à jour ou supprimez les paramètres de stratégie d Microsoft 365 d’expiration des groupes.|
 |Utilisateur|Renouveler [ou restaurer](/azure/active-directory/users-groups-roles/groups-restore-deleted) un groupe Microsoft 365 dont il est propriétaire|
@@ -70,13 +70,13 @@ Vous pouvez définir la stratégie pour tous vos groupes, uniquement les groupes
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Fonctionnement de l’expiration avec la stratégie de rétention
 
-Si vous avez mis en place une stratégie de rétention pour les groupes dans le Centre de sécurité et conformité, la stratégie d’expiration fonctionne en toute transparence avec la stratégie de rétention. Lorsqu’un groupe expire, les conversations et les fichiers de boîte aux lettres du groupe dans le site de groupe sont conservés dans le conteneur de rétention pendant le nombre de jours défini dans la stratégie de rétention. Toutefois, les utilisateurs ne voient pas le groupe, ni son contenu, après expiration.
+Si vous avez mis en place une stratégie de rétention pour les groupes dans le Centre de sécurité et conformité, la stratégie d’expiration fonctionne de manière transparente avec la stratégie de rétention. Lorsqu’un groupe expire, les conversations et les fichiers de boîte aux lettres du groupe dans le site de groupe sont conservés dans le conteneur de rétention pendant le nombre de jours défini dans la stratégie de rétention. Toutefois, les utilisateurs ne voient pas le groupe, ni son contenu, après expiration.
 
 ## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Comment et quand un propriétaire de groupe apprend si ses groupes vont expirer
 
 Les propriétaires de groupe ne seront avertis que par courrier électronique. Si le groupe a été créé via le Planificateur, SharePoint ou toute autre application, les notifications d’expiration sont toujours envoyés par courrier électronique. Si le groupe a été créé via Teams, le propriétaire du groupe reçoit une notification de renouvellement via la section activité. Il n’est pas recommandé d’activer l’expiration sur un groupe si le propriétaire de votre groupe n’a pas d’adresse de messagerie valide.
 
-Trente jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) recevront un courrier électronique leur permettant de renouveler facilement le groupe. S’il ne le renouvelle pas, il reçoit un autre e-mail de renouvellement 15 jours avant l’expiration. S’ils ne l’ont toujours pas renouvelé, ils recevront une notification par courrier électronique le jour avant l’expiration.
+Trente jours avant l’expiration du groupe, les propriétaires du groupe (ou les adresses de messagerie que vous avez spécifiées pour les groupes qui n’ont pas de propriétaire) recevront un e-mail leur permettant de renouveler facilement le groupe. S’il ne le renouvelle pas, il reçoit un autre e-mail de renouvellement 15 jours avant l’expiration. S’ils ne l’ont toujours pas renouvelé, ils recevront une notification par courrier électronique le jour avant l’expiration.
 
 Si, pour une raison quelconque, aucun des propriétaires ou administrateurs ne renouvelle le groupe avant son expiration, l’administrateur peut toujours restaurer le groupe jusqu’à 30 jours après l’expiration. Pour plus d’informations, [voir : Restaurer un groupe Microsoft 365 supprimé.](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)
 

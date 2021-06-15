@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Découvrez le programme Business Assist et comment il peut aider votre organisation à améliorer l’aide et l’utilisation Microsoft 365 entreprise.
-ms.openlocfilehash: ee0884ec1c95795a6a7847dfeaffdfcb2fac4beb
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768980"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924586"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Aide pour les entreprises pour Microsoft 365
 
@@ -33,7 +33,7 @@ Obtenez le meilleur de votre abonnement avec les conseils d’experts des petite
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|**Rapidement opérationnel** <br> Travaillez avec un spécialiste en petite entreprise pour configurer des fonctionnalités Microsoft 365 qui protègent votre entreprise et lui donnent une apparence professionnelle. |**Donner les moyens à tous les employés de votre entreprise** <br> Tous vos employés, et pas seulement la personne responsable de l’informatique, peuvent passer directement aux experts Microsoft pour obtenir un support continu plus rapide. |**Déverrouiller le potentiel commercial** <br> En savoir plus sur les fonctionnalités sous-utilisées et obtenir des conseils sur les façons d’obtenir plus de valeur de votre abonnement. |
+|Travaillez en équipe avec un spécialiste en petite entreprise pour configurer Microsoft 365 fonctionnalités qui protègent votre entreprise et lui donnent une apparence professionnelle. |Tous vos employés, et pas seulement la personne responsable de l’informatique, peuvent passer directement aux experts Microsoft pour obtenir un support continu plus rapide. |Découvrez les fonctionnalités sous-utilisées et obtenez des conseils sur les façons d’obtenir plus de valeur de votre abonnement. |
 |**Accélérer votre migration dans le cloud** <br> Obtenez une aide personnalisée pour déplacer tous vos fichiers actuels (e-mail, stockage, documents et communication) vers Microsoft 365. |**Spécialistes d’accès en toute simplicité** <br> Notre équipe reprendra la conversation là où vous l’avez laissée en dernier. Pas de tickets à suivre, pas de robots, pas de longs temps d’attente. |**Restez à jour** <br> Des vérifications régulières qui vous aident à rester à jour à mesure que de nouvelles fonctionnalités de service sont ajoutées et que les besoins de votre entreprise évoluent. |
 | | | |
 

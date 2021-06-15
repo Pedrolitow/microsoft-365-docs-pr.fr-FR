@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Découvrez comment utiliser OneDrive et un site d’équipe pour le stockage et le partage de fichiers dans Microsoft 365.
-ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3ededbf2899ffd45915ad25370d5e5c93906c862
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635641"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924610"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurer le partage et le stockage de fichiers dans Microsoft 365
 
@@ -56,12 +56,12 @@ Tant OneDrive que les sites d'équipe vous offrent ainsi qu'à vos employés un 
   
 ![Diagramme montrant comment les produits Microsoft 365 peuvent utiliser OneDrive ou des sites d’équipe](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
-Voici quelques recommandations relatives aux éléments à stocker dans les divers emplacements lorsque vous utilisez à la fois OneDrive et des sites d'équipe :
+Voici quelques recommandations relatives aux éléments à stocker dans les divers emplacements lorsque vous utilisez à la fois OneDrive et des sites d'équipe :<br/>
+
   
-||||
+|Emplacement de stockage|Qu’est-ce que c’est ?|Éléments à stocker ici|
 |:-----|:-----|:-----|
-|**Emplacement de stockage** <br/> |**Objet** <br/> |**Éléments à stocker ici** <br/> |
-|**OneDrive** <br/> |Le stockage de contenu sur OneDrive est similaire au stockage de fichiers sur votre ordinateur. Nul autre que vous ne peut y accéder aisément.  <br/> Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Qu’est-ce que OneDrive Entreprise ?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Fichiers professionnels n’impliquant pas la collaboration des autres membres de votre équipe ou ne nécessitant pas leur accès régulier.  <br/> |
+|**OneDrive** |Le stockage de contenu sur OneDrive est similaire au stockage de fichiers sur votre ordinateur. Nul autre que vous ne peut y accéder aisément.<br/> Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Qu’est-ce que OneDrive Entreprise ?](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |Fichiers professionnels n’impliquant pas la collaboration des autres membres de votre équipe ou ne nécessitant pas leur accès régulier.<br/> |
 |**Sites d’équipe SharePoint** <br/> |Collaboration. Lorsque vous créez un groupe Microsoft 365 (par exemple dans le Centre d'administration de Microsoft 365, dans Outlook ou en créant une équipe dans Microsoft Teams), le programme crée un site d’équipe SharePoint. De même, lorsque vous créez un site d’équipe SharePoint depuis la page d’accueil de SharePoint ou depuis le nouveau Centre d’administration SharePoint, le programme crée un également groupe Microsoft 365. Si vous souhaitez en savoir plus, veuillez consulter les rubriques [Qu’est-ce qu’un site d’équipe SharePoint ?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) et [Créer un site d’équipe dans SharePoint Online](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d).  <br/> |Fichiers à propriété partagée. Nous vous recommandons de séparer les sites d’équipe de chaque unité de travail de votre organisation. Par exemple, pour rendre les documents personnels et financiers consultables uniquement pour une petite équipe, créez un site d’équipe séparé.  <br/> |
 
 > [!NOTE]

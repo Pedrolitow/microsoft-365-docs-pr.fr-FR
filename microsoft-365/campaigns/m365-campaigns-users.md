@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment ces recommandations de sécurité pour Microsoft 365 Business Premium vos utilisateurs et protège vos données.
-ms.openlocfilehash: b8464396887daa408e94cfb6c151d998dd8b1ae2
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: ce64189d721bc3eb356a39f431af01e67973516a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398228"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924254"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>Impact de ces recommandations de sécurité sur vos utilisateurs
 
@@ -39,7 +39,7 @@ Les recommandations de sécurité pour Microsoft 365 dans cette solution compliq
 
 ## <a name="use-secure-email-practices"></a>Utiliser des pratiques de messagerie sécurisée
 
-Tous les utilisateurs doivent connaître ces pratiques de messagerie et les utiliser pour sécuriser leur messagerie :
+Tous les utilisateurs doivent connaître et utiliser ces pratiques de messagerie pour sécuriser leur messagerie :
 
 - Configurer le courrier électronique pour utiliser l’authentification multifacteur avec l’application d’authentification.
 - Vérifiez les e-mails légitimes et recherchez les conseils de sécurité du hameçonnage avancé dans Defender pour Office 365 Protection.
@@ -51,7 +51,7 @@ Téléchargez [une infographie](m365-campaigns-protect-campaign-infographic.md) 
 
 ## <a name="set-up-iphones-and-android-devices"></a>Configurer des appareils iPhone et Android
 
-Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [iPhone et](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) les appareils Android pour qu’ils fonctionnent en toute sécurité :
+Tous les utilisateurs que vous ajoutez à votre environnement devront prendre quelques minutes pour configurer les [appareils iPhone](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) et Android pour qu’ils fonctionnent en toute sécurité :
 
 - Configurer des appareils pour utiliser l’authentification multifacteur avec l’application d’authentification.
 - Utilisez les applications mobiles Microsoft, notamment Outlook Mobile, Word, OneDrive et d’autres applications Microsoft de l’App Store. Les applications de messagerie natives incluses sur les appareils iPhone et Android ne sont pas pris en charge. 
@@ -70,9 +70,9 @@ Pour [les appareils Windows 10 mac](m365-campaigns-protect-pcs-macs.md)non Windo
 
 **Activer les fonctionnalités de sécurité de base sur les appareils BYOD Windows 10 et Mac**
 
-| |**Windows 10**|**Mac**|
-|:-----|:-----|:------|
-|Fonctionnalités de sécurité|Activer la protection BitLocker appareil<p><p> S’assurer Windows Defender reste sur <p>Activer le pare-feu Windows de sécurité| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection contre le pare-feu|
+|**Windows 10**|**Mac**|
+|:-----|:------|
+|Activer la protection BitLocker appareil<p><p> S’assurer Windows Defender reste sur <p>Activer le pare-feu Windows de sécurité| Utiliser FileVault pour chiffrer le disque Mac <p><p>Utiliser un logiciel antivirus fiable <p>Activer la protection contre le pare-feu|
 
 Pour en savoir plus sur ces recommandations, voir Protéger votre compte et vos appareils contre les [pirates informatiques et les programmes malveillants.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 

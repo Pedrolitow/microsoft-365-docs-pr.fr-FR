@@ -7,6 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: normal
+ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
@@ -14,12 +15,12 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3fcc79e767edb533a20402a2f92ba4abc7d8386a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 3eb4d01957383efc8df47e9fee6eb6394c80015a
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764590"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924382"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>Résoudre des problèmes de l’antivirus Microsoft Defender lors de la migration à partir d’une solution tierce
 
@@ -125,7 +126,7 @@ Votre administrateur imaginant peut avoir définie la stratégie de **[sécurit�
 Antivirus Microsoft Defender s’active automatiquement si aucun autre antivirus n’est actif. Vous devez désactiver complètement l’antivirus tiers pour vous assurer Antivirus Microsoft Defender’exécuter avec toutes les fonctionnalités.
 
 > [!WARNING]
-> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv*, *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
+> Les solutions qui vous suggèrent de modifier les valeurs de début *Windows Defender* pour *wdboot,* *wdfilter,* *wdnisdrv,* *wdnissvc* et *windefend* dans HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services ne sont pas pris en compte et peuvent vous obliger à ré-imager votre système.
 
 Le mode passif est disponible si vous commencez à utiliser Microsoft Defender pour endpoint et un antivirus tiers avec Antivirus Microsoft Defender. Le mode passif permet à Microsoft Defender d’analyser les fichiers et de se mettre à jour lui-même, mais il ne remédie pas aux menaces. En outre, la surveillance du comportement via [la Protection](configure-real-time-protection-microsoft-defender-antivirus.md) en temps réel n’est pas disponible en mode passif, sauf si la protection contre la perte de données de point de terminaison [(DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) est déployée.
 

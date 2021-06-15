@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,13 +16,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 4199f55488ef0dc5989af88e8be83a3d51190d1f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: b141c9b745e560b3c2236a9d073a7b2f3500623c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275059"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926042"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Gérer les mises à jour de l'antivirus Microsoft Defender et les analyses des points de terminaison qui ne sont pas à jour
 
@@ -44,7 +44,7 @@ Si Antivirus Microsoft Defender n’a pas téléchargé les mises à jour de pro
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Utiliser Configuration Manager pour configurer des mises à jour de protection de rattrapage
 
-1.  Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
+1.  Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation à gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
 
 2.  Go to the **Security intelligence updates** section and configure the following settings:
 
@@ -139,7 +139,7 @@ Cette fonctionnalité peut être activée pour les analyses complètes et rapide
 5.  Développez l’arborescence **Windows composants > Antivirus Microsoft Defender > scan et** configurez les paramètres suivants :
 
     1.  Si vous avez installé des analyses rapides programmées, **double-cliquez** sur le paramètre Activer l’analyse rapide de rattrapage et définissez l’option **sur Activé.** 
-    2. Si vous avez installé des analyses complètes programmées, **double-cliquez** sur le paramètre Activer l’analyse complète de rattrapage et définissez l’option **sur Activé.** Cliquez sur **OK**.
+    2. Si vous avez installé des analyses complètes  programmées, double-cliquez sur le paramètre Activer l’analyse complète de rattrapage et définissez l’option **sur Activé.** Cliquez sur **OK**.
     3. Double-cliquez sur **Définir le nombre** de jours après lequel une analyse de rattrapage est forcée et définissez l’option sur **Activé.** 
     4. Entrez le nombre d’analyses qui peuvent être manquées avant qu’une analyse soit automatiquement exécuté lorsque l’utilisateur se connecte ensuite au PC. Le type d’analyse qui est exécuté est déterminé par la spécification du **type** d’analyse à utiliser pour une analyse programmée (voir la rubrique Planification [des analyses).](scheduled-catch-up-scans-microsoft-defender-antivirus.md) Cliquez sur **OK**.
 
@@ -173,7 +173,7 @@ Pour plus d’informations et les paramètres autorisés, voir les informations 
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Utiliser Configuration Manager pour configurer des analyses de rattrapage
 
-1.  Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation sur la gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
+1.  Sur votre console Microsoft Endpoint Manager, ouvrez la stratégie anti-programme malveillant à modifier (cliquez sur Ressources et conformité dans le volet de navigation à gauche, puis développez l’arborescence Vue d’ensemble Endpoint Protection **Stratégies**  >    >  **anti-programme** malveillant)
 
 2.  Go to the **Scheduled scans** section and **Force a scan of the selected scan type if client computer is offline...** to **Yes**. 
 
@@ -185,7 +185,7 @@ Pour plus d’informations et les paramètres autorisés, voir les informations 
 
 - [Déployer Antivirus Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Gérer les mises Antivirus Microsoft Defender jour et appliquer les lignes de base](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Gérer le moment où les mises à jour de protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+- [Gérer le moment où les mises à jour de la protection doivent être téléchargées et appliquées](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour forcées en fonction des événements](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Gérer les mises à jour pour les appareils mobiles et les machines virtuelles](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: Découvrez comment installer automatiquement les applications Office 32 bits sur Windows 10 ordinateurs et les maintenir à jour.
-ms.openlocfilehash: 868d06fadfef0f55b41131b7fdfbb368b9128405
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 843be426d817da1173769b3b66dc4c054179f0fd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580051"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924224"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Préparer le déploiement Office client par Microsoft 365 entreprise
 
@@ -59,14 +59,15 @@ L'utilisateur final dont le PC :
     
 - **ne comprend** aucune application autonome Windows Installer 2016 (MSI) (par exemple Visio ou Project). Microsoft 365 mises à niveau pour les entreprises Office vers la version « En un clic » de Office 2016 et qui ne fonctionne pas avec les applications autonomes MSI Office 2016. 
     
-Le tableau suivant indique l’action que les utilisateurs finaux/administrateurs peuvent avoir besoin d’exécuter, en fonction de leur état de départ, pour obtenir une version 32 bits réussie du déploiement « En un clic » de Office à partir de la console d’administration Microsoft 365 pour les entreprises.
-  
-|**Situation de départ à l'installation d'Office**|**Action à prendre avant Microsoft 365'installation Office entreprise**|**État final**|
+Le tableau suivant indique l’action que les utilisateurs finaux/administrateurs peuvent avoir besoin d’exécuter, en fonction de leur état de départ, pour obtenir une version 32 bits en un clic réussie du déploiement Office à partir de la console d’administration Microsoft 365 pour les entreprises.<br/>
+
+
+|Situation de départ à l'installation d'Office|Action à prendre avant Microsoft 365'installation Office entreprise|État final|
 |:-----|:-----|:-----|
-|Aucune suite Office installée  <br/> |Aucune  <br/> |Office 2016 32 bits est installé à l’aide de Click-to-Run  <br/> |
+|Aucune suite Office installée  <br/> |Aucune  <br/> |Office 2016 32 bits est installé à l’aide de « Click-to-Run  <br/> |
 |Version 32 bits « Démarrer en un clic » d'Office présente (2016 ou versions antérieures) et aucune application autonome  <br/> |Aucune  <br/> |Mise à niveau vers la dernière version 32 bits « Démarrer en un clic » d'Office 2016, le cas échéant **\*** <br/> |
-|Version 32 bits « Exécuter en un clic » de Office et applications Office autonomes « Click-to-Run » 32 bits ou 64 bits existantes (par exemple, Visio, Project)  <br/> |Aucun  <br/> |Les applications autonomes ne sont pas affectées. Mise à niveau de la suite vers la version 32 bits « Démarrer en un clic » d'Office 2016  <br/> |
-|Version 32 bits « Démarrer en un clic » d'Office présente et applications autonomes 32 ou 64 bits MSI (à l'exception de 2016) présentes  <br/> |Aucune  <br/> |Les applications autonomes ne sont pas affectées. Mise à niveau de la suite vers la version 32 bits « Démarrer en un clic » d'Office 2016  <br/> ||||
+|Version 32 bits « Click-to-Run » existante de Office et applications Office autonomes 32 bits ou 64 bits « Click-to-Run » (par exemple, Visio, Project)  <br/> |Aucun  <br/> |Les applications autonomes ne sont pas affectées. Mise à niveau de la suite vers la version 32 bits « Démarrer en un clic » d'Office 2016  <br/> |
+|Version 32 bits « Démarrer en un clic » d'Office présente et applications autonomes 32 ou 64 bits MSI (à l'exception de 2016) présentes  <br/> |Aucune  <br/> |Les applications autonomes ne sont pas affectées. Mise à niveau de la suite vers la version 32 bits « Démarrer en un clic » d'Office 2016  <br/> |
 |Version 64 bits « Démarrer en un clic » d'Office présente  <br/> |Désinstallez les applications Office 64 bits, s’il est acceptable de les remplacer par des applications Office 32 bits  <br/> |Si les applications 64 bits d'Office sont supprimées, la version 32 bits « Démarrer en un clic » d'Office 2016 est installée  <br/> |
 |Installation MSI d'Office 2016 existante, avec ou sans applications autonomes  <br/> |Désinstaller la version MSI d'Office 2016.  <br/> |La version 32 bits « Démarrer en un clic » d'Office 2016 est installée. Aucune modification apportée aux applications autonomes.  <br/> |
 |Installation MSI d'Office 2013 (ou version antérieure) présente et/ou des applications Office autonomes présentes  <br/> |Aucune  <br/> |Coexistence de la version 32 bits « Démarrer en un clic » d'Office 2016 avec l'installation MSI d'Office préexistante (et les applications autonomes)  <br/> |

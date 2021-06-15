@@ -7,14 +7,16 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5961ac4eb16928754849f5f32ecd06d4d2e4650d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d93bf492f7cfea5a1ff863205085d853c4bbadb
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917715"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925430"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Comment les mises à jour sont gérées dans Bureau géré Microsoft
 
@@ -25,20 +27,20 @@ ms.locfileid: "50917715"
 
 Bureau géré Microsoft connecte tous les appareils à une infrastructure cloud moderne. Maintenir Windows, Office, pilotes, microprogrammes et applications Microsoft Store pour Entreprises à jour constitue un équilibre entre vitesse et stabilité. Les groupes de déploiement seront utilisés pour s’assurer que les mises à jour et les stratégies du système d’exploitation sont déployées en toute sécurité. Pour plus d’informations, voir la vidéo [Bureau géré Microsoft processus de modification et de publication.](https://www.microsoft.com/videoplayer/embed/RE4mWqP)
 
-Les mises à jour publiées par Microsoft sont cumulatives et sont classées en tant que mises à jour qualité ou fonctionnalités.
+Les mises à jour publiées par Microsoft sont cumulatives et sont classées en tant que mises à jour de qualité ou de fonctionnalités.
 Pour plus d’informations, [voir Windows Update for Business: Update types](/windows/deployment/update/waas-manage-updates-wufb#update-types). 
 
 ## <a name="update-groups"></a>Mettre à jour un groupe
 
 Bureau géré Microsoft utilise quatre groupes Azure AD pour gérer les mises à jour :
 
-- **Test**: permet de valider les Bureau géré Microsoft de stratégie, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications apportées au client. Aucun utilisateur ne doit être placé dans le groupe de test. Le groupe de test est exempté de tout contrat de niveau de service établi et du support utilisateur. Ce groupe peut être utilisé pour valider la compatibilité des applications avec de nouvelles stratégies ou modifications de système d’exploitation.  
-- **Tout d’abord**: contient les premiers utilisateurs et périphériques logiciels qui peuvent faire l’objet de mises à jour pré-publiées. Les appareils de ce groupe peuvent être en panne s’il existe des scénarios qui n’ont pas été couverts lors des tests dans l’anneau de test.
+- **Test**: permet de valider les Bureau géré Microsoft de stratégie, les mises à jour du système d’exploitation, les mises à jour des fonctionnalités et d’autres modifications apportées au client. Aucun utilisateur ne doit être placé dans le groupe de test. Le groupe de test est exempté de tout contrat de niveau de service établi et du support utilisateur. Ce groupe est disponible pour la validation de la compatibilité des applications avec de nouvelles stratégies ou modifications de système d’exploitation.  
+- **Tout d’abord**: contient les premiers utilisateurs de logiciels et les appareils qui peuvent être soumis à des mises à jour de pré-publication. Les appareils de ce groupe peuvent être en panne s’il existe des scénarios qui n’ont pas été couverts lors des tests dans l’anneau de test.
 - **Rapide**: hiérarchise la vitesse sur la stabilité. Utile pour détecter les problèmes de qualité avant qu’ils ne soient proposés au groupe Large. Ce groupe fait office de couche de validation suivante, mais il est généralement plus stable que les groupes Test et First. 
 - **Large**: dernier groupe à avoir des mises à jour de fonctionnalités et de qualité disponibles. Ce groupe contient la plupart des utilisateurs du client et privilégie donc la stabilité par rapport à la vitesse de déploiement. Le test des applications doit être effectué ici, car l’environnement est le plus stable. 
 
 ### <a name="moving-devices-between-update-groups"></a>Déplacement d’appareils entre des groupes de mise à jour
-Vous souhaiterez peut-être que certains appareils reçoivent les mises à jour en dernier et d’autres que vous souhaitez passer en premier. Pour déplacer ces appareils dans le groupe de mise à jour approprié, envoyez une demande de [support](../working-with-managed-desktop/admin-support.md?view=o365-worldwide) administrateur et nous déplacerons les appareils pour vous. 
+Vous souhaiterez peut-être que certains appareils reçoivent les mises à jour en dernier et d’autres que vous souhaitez passer en premier. Pour déplacer ces appareils dans le groupe de mise à jour approprié, envoyez une demande de [support](../working-with-managed-desktop/admin-support.md) administrateur et nous déplacerons les appareils pour vous. 
 
 > [!NOTE]
 > Si vous devez déplacer un utilisateur vers un autre groupe de mise à jour, envoyez une demande de support. Ne déplacez pas vous-même les appareils entre les groupes de mise à jour. Les conséquences sont graves si un appareil est déplacé de manière incorrecte. L’appareil peut se mettre à jour de manière inattendue et les stratégies peuvent être en conflit, ce qui modifie la configuration de l’appareil.
@@ -82,7 +84,7 @@ Ce processus de déploiement s’applique aux mises à jour des fonctionnalités
 
 Bureau géré Microsoft ne prend pas en charge les appareils qui font partie du programme Windows Insider. Le Windows Insider est utilisé pour valider les logiciels Windows pré-version et est destiné aux appareils qui ne sont pas essentiels. Bien qu’il s’agit d’une initiative Microsoft importante, elle n’est pas destinée à un déploiement à grande échelle dans des environnements de production. 
 
-Tous les appareils trouvés avec les builds Insider Windows peuvent être placés dans le groupe test et seront exemptés des contrats de niveau de service de mise à jour et de la prise en charge des utilisateurs Bureau géré Microsoft.
+Tous les appareils trouvés avec les builds Insider Windows peuvent être placés dans le groupe test et ne seront pas pris en charge par les utilisateurs et les contrats de niveau de service de mise à jour Bureau géré Microsoft.
 
 ## <a name="bandwidth-management"></a>Gestion de la bande passante
 

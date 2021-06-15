@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Découvrez comment utiliser les rendus et les sprites pour améliorer les performances des images sur vos sites de publication classiques SharePoint Online.
-ms.openlocfilehash: 0f0dd078ce28b86fc998b2f83ac19d04b1a3ab02
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15885f1d8803332e24e2656a48b796dab28c665f
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907479"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924574"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Optimisation des images pour SharePoint sites de publication classiques en ligne
 
@@ -35,9 +35,14 @@ La vitesse de chargement d’une page web dépend de la taille combinée de tous
   
 ## <a name="using-sprites-to-speed-up-image-loading"></a>Utilisation de sprites pour accélérer le chargement de l’image
 
-|||
-|:-----|:-----|
-| Un sprite d’image contient de nombreuses images plus petites. À l’aide de CSS, vous sélectionnez une partie de l’image composite à afficher sur une partie particulière de la page avec un positionnement absolu. En fait, vous déplacez une seule image autour de la page au lieu de charger plusieurs images et rendez visible une petite partie de cette image par le biais d’une petite fenêtre où la partie requise de l’image de sprite est affichée à l’utilisateur final. SharePoint Online utilise des sprites pour afficher ses différentes icônes dans le spcommon.png.  <br/>  Ce qui est abordé ici :  <br/>  Compression d’image  <br/>  Optimisation des images  <br/>  SharePoint rendus d’image  <br/> |![Capture d’écran de spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)|
+![Capture d’écran de spcommon](../media/cc5cdee1-8e54-4537-9a8a-8854f4ee849f.png)
+
+Un sprite d’image contient de nombreuses images plus petites. À l’aide de CSS, vous sélectionnez une partie de l’image composite à afficher sur une partie particulière de la page avec un positionnement absolu. En fait, vous déplacez une seule image autour de la page au lieu de charger plusieurs images et rendez visible une petite partie de cette image par le biais d’une petite fenêtre où la partie requise de l’image de sprite est affichée à l’utilisateur final. SharePoint Online utilise des sprites pour afficher ses différentes icônes dans le fichier spcommon.png sprite.
+
+Ce qui est abordé ici :
+- Compression d’image
+- Optimisation des images
+- SharePoint rendus d’image
    
 Cela peut améliorer les performances, car vous ne téléchargez qu’une seule image au lieu de plusieurs, puis cachez et réutilisez cette image. Même si l’image ne reste pas mise en cache, en ayant une seule image au lieu de plusieurs images, cette méthode réduit le nombre total de demandes HTTP au serveur, ce qui réduit les temps de chargement des pages. Il s’agit en fait d’une forme de regroupement d’images. Il s’agit d’une technique très utile si les images ne changent pas très souvent, par exemple, les icônes, comme illustré dans l’exemple SharePoint fourni ci-dessus. Vous pouvez utiliser [Web Essentials,](https://vswebessentials.com/)un projet communautaire open source tiers pour y parvenir facilement dans Microsoft Visual Studio. Pour plus d’informations, [voir Minification et regroupement dans SharePoint Online.](./minification-and-bundling-in-sharepoint-online.md)
   
@@ -54,9 +59,9 @@ Les rendus d’image sont une fonctionnalité de SharePoint Online qui vous perm
 > [!NOTE]
 > Les rendus ne sont disponibles que pour SharePoint lorsque la publication est activée. Vous pouvez activer la publication sous Paramètres Site Paramètres Gérer les fonctionnalités de \> \> site SharePoint Server \> Publishing. L’option n’apparaîtra pas autrement.
   
-Le re dimensionnement du rendu d’image fonctionne en prenant la plus petite dimension que vous définissez, largeur ou hauteur, puis en re dimensionnant l’image de sorte que l’autre dimension soit automatiquement re dimensionné en fonction des proportions verrouillées. Par défaut, elle rognait l’image du centre par les dimensions restantes. Par exemple, si vous définissez un rendu de 100 px de large et de 50 px de haut et que votre image d’origine a une largeur de 1 000 px et une hauteur de 800 px, elle sera re dimensionné de sorte que la dimension 800px soit maintenant de 50 px et que la dimension 1 000 px (désormais 62,5 px) soit rogné du centre de l’image.
+Le re dimensionnement du rendu d’image fonctionne en prenant la plus petite dimension que vous définissez, largeur ou hauteur, puis en re dimensionnant l’image de sorte que l’autre dimension soit automatiquement re dimensionné en fonction des proportions verrouillées. Par défaut, elle rognait l’image du centre par les dimensions restantes. Par exemple, si vous définissez un rendu de 100 px de large et de 50 px de hauteur et que votre image d’origine a une largeur de 1 000 px et une hauteur de 800 px, il sera re dimensionné de sorte que la dimension de 800 px soit maintenant de 50 px et que la dimension 1 000 px (désormais 62,5 px) soit rogné du centre de l’image.
   
-Les étapes sont relativement simples, mais pour que les images utilisent les rendus, les rendus doivent être sur le site SharePoint avant d’ajouter les images. En outre, les fonctionnalités infrastructure de publication de serveur SharePoint (niveau collection de sites) et SharePoint Server Publishing (niveau site) doivent également être allumées.
+Les étapes sont relativement simples, mais pour que les images utilisent les rendus, les rendus doivent être sur le site SharePoint avant d’ajouter les images. En outre, les fonctionnalités infrastructure de publication de serveur SharePoint (niveau collection de sites) et SharePoint Server Publishing (niveau site) doivent également être désactivées.
   
 ### <a name="add-an-image-rendition-to-speed-up-page-loading"></a>Ajouter un rendu d’image pour accélérer le chargement de la page
   

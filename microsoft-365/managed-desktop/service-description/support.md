@@ -1,18 +1,20 @@
 ---
 title: Prise en charge des Bureau géré Microsoft
-description: ''
+description: Décrit la gestion proactive et réactive des incidents Bureau géré Microsoft.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 52bbbad5acac3b0407ffbf0cd78888d74cfb05d3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 90787ec28aa2c421df50757fc29bf20b2b5d55f7
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846191"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925502"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Prise en charge des Bureau géré Microsoft
 

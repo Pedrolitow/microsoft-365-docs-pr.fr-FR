@@ -1,5 +1,5 @@
 ---
-title: Rapports Microsoft 365 dans le Centre d’administration - Activité des utilisateurs Microsoft Teams
+title: Microsoft 365 centre d’administration - Activité Microsoft Teams utilisateur
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
 description: Découvrez comment obtenir le rapport d Microsoft Teams’activité de l’utilisateur et obtenir des informations sur l Teams de votre organisation.
-ms.openlocfilehash: 1f45cd380813a843ad54e6552578941a9741138e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c824a0ce285a085c9ae8b7326647ad4bcdf5f013
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579601"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924266"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Rapports Microsoft 365 dans le Centre d’administration - Activité des utilisateurs Microsoft Teams
+# <a name="microsoft-365-admin-center-reports---microsoft-teams-user-activity"></a>Microsoft 365 centre d’administration - Activité Microsoft Teams utilisateur
 
-Le tableau Microsoft 365 **de rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Activité de l'utilisateur sur Microsoft Teams, vous pouvez obtenir des informations sur l'activité dans Microsoft Teams au sein de votre organisation.
+Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez la rubrique [Présentation des rapports](activity-reports.md). Dans le rapport Activité de l'utilisateur sur Microsoft Teams, vous pouvez obtenir des informations sur l'activité dans Microsoft Teams au sein de votre organisation.
   
 > [!NOTE]
 > Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
@@ -38,7 +38,7 @@ Le tableau Microsoft 365 **de rapports de** gestion des données vous présente 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>.
 
     
-2. Dans la **drop-down Sélectionner un** rapport, sélectionnez Microsoft Teams activité de  \> **l’utilisateur.**
+2. Dans la **drop-down Sélectionner un** rapport, sélectionnez **Microsoft Teams** activité \> **de l’utilisateur.**
   
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpréter le rapport Activité de l'utilisateur sur Microsoft Teams
 

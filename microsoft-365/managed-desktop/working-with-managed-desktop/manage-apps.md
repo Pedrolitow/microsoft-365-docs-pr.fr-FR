@@ -7,15 +7,17 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1a6b91ab5b4523f4b980dab0c25af41a9d614189
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b016d8458b4b4cc9f6b684d3b8a3c0a1e1322fef
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600681"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925406"
 ---
 # <a name="manage-line-of-business-apps-in-microsoft-managed-desktop"></a>Gérer les applications métier dans le bureau géré Microsoft
 
@@ -68,5 +70,5 @@ Si une erreur est trouvée lors du déploiement d’une nouvelle version d’une
     - Pour Windows applications **métier MSI,** sélectionnez Informations sur l’application, puis sous Ignorer la **version** de l’application, sélectionnez **Oui**.
     - For **Windows app (Win 32) - preview** apps, select App **information,** select **Detection rules,** and then select **Add**. 
     S’il existe une règle MSI, vérifiez que la vérification de la version du produit **MSI** est définie sur **Non**.
-5. [Télécharger une version précédente du fichier source](../get-started/deploy-apps.md) de l’application pour Bureau géré Microsoft portail d’administration.  
+5. [Télécharger une version précédente du fichier source](../get-started/deploy-apps.md) de l’application sur Bureau géré Microsoft portail d’administration.  
 

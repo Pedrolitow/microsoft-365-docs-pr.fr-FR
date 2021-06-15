@@ -5,21 +5,23 @@ keywords: Bureau géré Microsoft, Microsoft 365, Microsoft Project, Microsoft V
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c04bcdf846bafaa7838ef5932c8de595f5035992
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 9fd46410877012d92e847ba7ff8b60cd5acceb1e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950531"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925538"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installer Microsoft Project ou Microsoft Visio sur Bureau géré Microsoft appareils
 
 Microsoft Project et Microsoft Visio des étapes spécifiques doivent être installées sur Bureau géré Microsoft appareils. Cette rubrique documente les conditions préalables et le processus d’installation de ces applications.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables
 
 Les administrateurs doivent vérifier qu’ils répondent aux conditions préalables ci-après :
 - **Quantités de licences** : le nombre correct de licences Microsoft Project et microsoft Visio licences doit être disponible pour vos utilisateurs. Bureau géré Microsoft ne prend actuellement en charge que les versions 64 bits de ces applications. 

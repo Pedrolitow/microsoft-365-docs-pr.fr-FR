@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Découvrez comment gérer les points Office 365 afin qu’ils fonctionnent avec l’architecture réseau de votre organisation d’entreprise.
-ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905115"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925862"
 ---
 # <a name="managing-office-365-endpoints"></a>Gestion des points de terminaison Office 365
 
@@ -90,7 +90,7 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 Lorsque les fichiers PAC ne sont pas utilisés pour le trafic sortant direct, vous devez ignorer le traitement sur votre périmètre réseau en configurant votre serveur proxy. Certains fournisseurs de serveur proxy ont activé la configuration automatisée, ce qui est décrit dans le [Programme de partenariat réseau Office 365](microsoft-365-networking-partner-program.md).
 
-Si vous le faites manuellement, vous devrez obtenir les données de catégorie Optimiser et Autoriser les points de terminaison à partir de l’adresse IP Office 365 et du service Web URL et configurer votre serveur proxy pour contourner le traitement de ces derniers. Il est important d’éviter l’arrêt et l’inspection de SSL et l’authentification proxy pour les points de terminaison Optimiser et Autoriser.
+Si vous le faites manuellement, vous devez obtenir les données de catégorie Optimiser et Autoriser les points de terminaison à partir du service Web URL et adresse IP Office 365 et configurer votre serveur proxy pour contourner le traitement de ces derniers. Il est important d’éviter l’arrêt et l’inspection de SSL et l’authentification proxy pour les points de terminaison Optimiser et Autoriser.
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Gestion des modifications pour Office 365 adresses IP et URL
@@ -161,7 +161,7 @@ Ces redirections CNAME constituent une partie normale du DNS et sont transparent
 
 Un serveur proxy valide l’URL initiale, qui dans l’exemple ci-dessus est serviceA.office.com, et cette URL serait incluse dans Office 365 publication. Le serveur proxy demande la résolution DNS de cette URL à une adresse IP et recevra IP_1. Il ne valide pas les enregistrements de redirection intermédiaires CNAME.
 
-Les configurations codées en dur ou la liste blanche basée sur des Office 365 FQDN indirects ne sont pas recommandés, ne sont pas pris en charge par Microsoft et sont connus pour provoquer des problèmes de connectivité client. Les solutions DNS qui bloquent la redirection CNAME ou qui résolvent de manière incorrecte les entrées DNS Office 365 peuvent être résolues via des redirecteurs DNS avec la récursion DNS activée ou à l’aide d’indications racine DNS. De nombreux produits de périmètre de réseau tiers intègrent en natif les points de terminaison Office 365 recommandés dans leur configuration à l’aide de l’adresse IP Office 365 et du [service Web d’URL.](microsoft-365-ip-web-service.md)
+Les configurations codées en dur ou l’utilisation d’une liste d’attente basée sur des FQDN indirects Office 365 ne sont pas recommandées, ne sont pas pris en charge par Microsoft et sont connues pour provoquer des problèmes de connectivité client. Les solutions DNS qui bloquent la redirection CNAME ou qui résolvent de manière incorrecte les entrées DNS Office 365 peuvent être résolues via des redirecteurs DNS avec la récursion DNS activée ou à l’aide d’indications racine DNS. De nombreux produits de périmètre de réseau tiers intègrent en natif le point de terminaison Office 365 recommandé pour inclure une liste d’adresses ip dans leur configuration à l’aide de l’adresse IP Office 365 et du [service Web d’URL.](microsoft-365-ip-web-service.md)
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Pourquoi des noms tels que nsatc.net ou akadns.net figurent-ils parmi les noms de domaine de Microsoft ?
@@ -214,7 +214,7 @@ N’oubliez pas que le blocage de l’accès aux services grand public de Micros
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Mon pare-feu nécessite des adresses IP et ne peut pas traiter les URL. Comment puis-je le configurer pour Office 365 ?
 
-Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web . l’utilisateur ne fournit pas non plus d’adresse IP. Les Office 365 de catégorie par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
+Office 365 ne fournit aucune adresse IP de tous les points de terminaison réseau requis. Certaines sont proposées sous forme d’URL uniquement et sont classées par défaut. Les URL de la catégorie par défaut qui sont requises doivent être autorisées via un serveur proxy. Si vous n’avez pas de serveur proxy, regardez comment vous avez configuré les demandes web pour les URL que les utilisateurs tapent dans la barre d’adresses d’un navigateur web ; l’utilisateur ne fournit pas non plus d’adresse IP. Les Office 365 url de catégorie par défaut qui ne fournissent pas d’adresses IP doivent être configurées de la même manière.
 
 ## <a name="related-topics"></a>Voir aussi
 

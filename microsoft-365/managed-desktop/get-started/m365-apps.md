@@ -8,14 +8,15 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: f8dd666c41863192d866693c6860a64064f846e6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c3928b5814332f2585adc613e1e84cbe5cc883a0
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904851"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925610"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
@@ -28,7 +29,7 @@ Bureau géré Microsoft garantit que Applications Microsoft 365 pour les grandes
 - PowerPoint
 - Outlook
 - Éditeur
-- Accès
+- Access
 - Skype Entreprise
 - OneNote
 
@@ -47,9 +48,9 @@ Bureau géré Microsoft ne prend pas en charge le déploiement de la version 32 
 
 ## <a name="updates-to-microsoft-365-apps"></a>Mises à jour de Microsoft 365 Apps
 
-Microsoft 365 Apps sont définies pour être mises à jour sur le [canal Enterprise mensuel.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Cette pratique fournit à vos utilisateurs de nouvelles fonctionnalités Office chaque mois, mais ils ne reçoivent qu’une seule mise à jour par mois selon un calendrier de publication prévisible. Les mises à jour sont publiées le deuxième mardi du mois . Ces mises à jour peuvent inclure des mises à jour de fonctionnalité, de sécurité et de qualité. Ces mises à jour se produisent automatiquement et sont directement tirées du Office CDN pour ce canal spécifique.
+Microsoft 365 Apps sont définies pour être mises à jour sur le [canal Enterprise mensuel.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Cette pratique fournit à vos utilisateurs de nouvelles fonctionnalités de Office chaque mois, mais ils ne reçoivent qu’une seule mise à jour par mois selon un calendrier de publication prévisible. Les mises à jour sont publiées le deuxième mardi du mois . Ces mises à jour peuvent inclure des mises à jour de fonctionnalité, de sécurité et de qualité. Ces mises à jour se produisent automatiquement et sont directement tirées du Office CDN pour ce canal spécifique.
 
-Bureau géré Microsoft chaque version pour identifier les problèmes potentiels dans votre environnement. Nous avons terminé le déploiement 28 jours après la publication du groupe de produits Microsoft 365 App. Bureau géré Microsoft les mises à jour de différents groupes afin de laisser le temps à la validation et aux tests de la manière suivante : 
+Bureau géré Microsoft chaque version afin d’identifier les problèmes potentiels dans votre environnement. Nous avons terminé le déploiement 28 jours après la publication du groupe de produits Microsoft 365 App. Bureau géré Microsoft planifier les mises à jour publiées pour différents groupes pour laisser le temps à la validation et aux tests comme suit : 
 
 - Test : zéro jour
 - First: zero days
@@ -66,7 +67,7 @@ Lors d’une publication, Bureau géré Microsoft les taux d’erreur de tous le
 
 ### <a name="delivery-optimization"></a>Optimisation de la distribution
 
-L’optimisation de la distribution est une technologie de distribution pair à pair disponible dans Windows 10. Il permet aux appareils de partager du contenu, tel que des mises à jour, que les appareils ont téléchargés à partir de Microsoft sur Internet. Son utilisation peut aider à réduire la bande passante réseau, car un appareil peut obtenir des parties de la mise à jour à partir d’un autre appareil sur son réseau local au lieu de devoir télécharger entièrement la mise à jour à partir de Microsoft.
+L’optimisation de la distribution est une technologie de distribution pair à pair disponible dans Windows 10. Il permet aux appareils de partager du contenu, tel que des mises à jour, que les appareils ont téléchargés à partir de Microsoft sur Internet. Son utilisation permet de réduire la bande passante réseau, car un appareil peut obtenir des parties de la mise à jour à partir d’un autre appareil sur son réseau local au lieu de devoir télécharger entièrement la mise à jour à partir de Microsoft.
 
 [L’optimisation de](/deployoffice/delivery-optimization) la distribution est activée par défaut sur les appareils exécutant Windows 10 Entreprise ou Windows 10 Éducation éditions. 
 
@@ -146,7 +147,7 @@ Il existe d’Microsoft 365 de l’application que Bureau géré Microsoft pouve
 
 **Valeur par défaut**: Disabled
 
-Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l’équipe Bureau géré Microsoft Operations qui demande l’activer. 
+Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l Bureau géré Microsoft des opérations de l’utilisateur afin que ce paramètre soit activé. 
 
 ## <a name="settings-you-manage"></a>Paramètres vous gérez
 

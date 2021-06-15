@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: Découvrez les paramètres disponibles dans Microsoft 365 entreprise pour protéger les fichiers de travail en cas de perte ou de vol de l’appareil d’un utilisateur.
-ms.openlocfilehash: 6b10ce73d3ebe936d3878724783d6076455a3552
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b640642d7f6ed9c83376f4cb2a0cdaa610e8159b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578244"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925296"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Protéger les fichiers professionnels en cas de perte ou de vol de l'appareil mobile
 
@@ -40,10 +40,10 @@ ms.locfileid: "51578244"
 ## <a name="settings-that-protect-work-files"></a>Paramètres de protection des fichiers professionnels
 
 Les paramètres suivants sont disponibles pour protéger les fichiers professionnels si l'appareil d'un utilisateur est perdu ou volé :
-  
-|||
-|:-----|:-----|
+
+
 |Paramètre  <br/> |Description  <br/> |
+|:-----|:-----|
 |Supprimer les fichiers professionnels d'un appareil inactif après tant de jours  <br/> |Si un appareil n’est pas utilisé pendant le nombre de jours que vous spécifiez ici, tous les fichiers de travail stockés sur l’appareil sont automatiquement supprimés.  <br/> |
 |Obliger les utilisateurs à enregistrer tous les fichiers de travail dans OneDrive Entreprise  <br/> |Si ce paramètre est **sur ,** le seul emplacement d’enregistrer disponible pour les fichiers de travail est OneDrive Entreprise.  <br/> |
 |Chiffrer les fichiers professionnels  <br/> |Laissez ce paramètre **activé** afin que les fichiers professionnels soient protégés par chiffrement. Même si l’appareil est perdu ou volé, personne ne peut lire les données de votre entreprise.  <br/> |

@@ -4,28 +4,26 @@ description: Configurer ce que Antivirus Microsoft Defender doit faire lorsqu’
 keywords: correction, correction, suppression, menaces, mise en quarantaine, analyse, restauration
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 45886b94ec5ea11f01bfe23092eef4bd72691554
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9b765d14e31d6c4890aeace41e4fe79bafdd889e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274507"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925574"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Configurer la correction pour la détection d’antivirus Microsoft Defender
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
@@ -66,7 +64,7 @@ Vous pouvez également utiliser [ `Set-MpPreference` l’cmdlet PowerShell](/pow
 > 
 > Pour éviter ce problème à l’avenir, vous pouvez exclure des fichiers des analyses. Voir [Configurer et valider les exclusions pour Antivirus Microsoft Defender analyses.](configure-exclusions-microsoft-defender-antivirus.md)
 
-Voir également Configurer des analyses complètes Antivirus Microsoft Defender des [corrections requises](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pour la correction.
+Consultez également Configurer des analyses complètes Antivirus Microsoft Defender de correction [requises](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) pour plus de paramètres liés à la correction.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Les rôles d’administrateur correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Les rôles d’administrateur sont map faits avec les fonctions métiers et fournissent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
+ms.openlocfilehash: 4e2b1db207a2a590855f7fb2d0bf2019d4b57ea5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706201"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924562"
 ---
 # <a name="get-started-with-the-roles-page"></a>Mise en place de la page rôles
 
@@ -41,11 +41,12 @@ Vous pouvez exporter la liste des administrateurs, ainsi que rechercher et filtr
 
 ![Filtrer ou importer des rôles d’administrateur](../../media/admin-role-page-options.png)
 
-|||
-|:-----|:-----|
-|  <br/> |Utilisez **la liste d’administration Exportation** pour obtenir la liste complète de tous les utilisateurs administrateurs de votre organisation. La liste est stockée dans un Excel .csv de données.   <br/> |
-|  <br/> |Utilisez **la recherche** pour rechercher un rôle d’administrateur et voir vos utilisateurs qui sont affectés à ce rôle.   <br/> |
-|  <br/> |Utilisez **Filter pour** modifier votre affichage des rôles d’administrateur affichés.   <br/> |
+- Utilisez la liste d’administration Exportation pour obtenir la liste complète de tous les utilisateurs administrateurs de votre organisation. La liste est stockée dans un Excel .csv de données.
+
+- Utilisez la recherche pour rechercher un rôle d’administrateur et voir vos utilisateurs qui sont affectés à ce rôle.
+
+- Utilisez Filter pour modifier votre affichage des rôles d’administrateur affichés.
+
 
 ## <a name="get-the-most-out-of-the-roles"></a>Obtenir le meilleur des rôles
 
@@ -80,7 +81,7 @@ Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automa
 
 ### <a name="teams-service-admin"></a>Administrateur du service Teams
 
-Attribuez le Teams administrateur principal aux utilisateurs qui souhaitent accéder au centre d’administration Teams & Skype et les gérer. Les utilisateurs ayant Teams rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de service via le support Microsoft. [En savoir plus](/MicrosoftTeams/using-admin-roles)
+Attribuez le Teams administrateur principal aux utilisateurs qui vous souhaitez accéder au centre d’administration Teams & Skype et les gérer. Les utilisateurs ayant Teams rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de service via le support Microsoft. [En savoir plus](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Administrateur d’utilisateurs
 

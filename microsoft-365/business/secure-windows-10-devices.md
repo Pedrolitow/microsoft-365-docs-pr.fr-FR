@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Découvrez comment configurer les paramètres de la stratégie d’appareil par défaut que tout appareil Windows 10 recevra lors de la signature de son compte scolaire ou scolaire.
-ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3f85549e722c9aa4196cf50fc02bee2e89506017
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579971"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925236"
 ---
 # <a name="secure-windows-10-devices"></a>Sécuriser les appareils Windows 10
 
@@ -44,9 +44,10 @@ Cet article s’applique aux Microsoft 365 Business Premium.
 
 Par défaut, tous les paramètres sont **activés**. Les paramètres suivants sont disponibles :
   
-|||
-|:-----|:-----|
+
+
 |Paramètre  <br/> |Description  <br/> |
+|:-----|:-----|
 |Protéger les ordinateurs des virus et d'autres menaces à l'aide de l'antivirus Windows Defender  <br/> |L'antivirus Windows Defender doit être activé pour protéger les ordinateurs contre les risques liés à la connexion à internet.  <br/> |
 |Protéger les ordinateurs contre les menaces web dans Microsoft Edge  <br/> |Active les paramètres Microsoft Edge qui protègent les utilisateurs contre les sites et téléchargements malveillants.  <br/> |
 |Protéger les fichiers et dossiers sur PC contre un accès non autorisé avec BitLocker  <br/> |Bitlocker protège les données en chiffrant les disques durs de l'ordinateur, et protège contre l'exposition des données en cas de perte ou de vol. Pour plus d’informations, consultez la FAQ [sur Bitlocker.](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)  <br/> |
