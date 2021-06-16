@@ -19,18 +19,21 @@ ms.custom:
 search.appverid: MET150
 description: Si vous avez moins de 25 licences d'utilisateur, vous pouvez annuler votre version d'essai ou votre abonnement payant de Microsoft 365 pour entreprise dans le centre d'administration.
 ms.date: 04/08/2021
-ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536117"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929454"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
-*Conditions :* Si vous disposez de moins de 25 licences attribuées à vos utilisateurs, vous pouvez à tout moment annuler votre abonnement payant ou version d’évaluation de Microsoft 365 dans le centre d’administration Microsoft 365. Si vous disposez de plus de 25 licences attribuées à vos utilisateurs, réduisez ce nombre à moins de 25 ou bien [appelez le service clientèle pour annuler votre abonnement](../../business-video/get-help-support.md).
+> [!IMPORTANT]
+> Cet article s'applique uniquement aux abonnements Microsoft 365 pour entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/fr-FR/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b) .
 
-*Remboursement :* Tout crédit calculé au prorata vous sera remboursé au cours du cycle de facturation suivant.
+*Conditions :* Si vous disposez de moins de 25 licences attribuées à vos utilisateurs, vous pouvez à tout moment annuler votre abonnement payant ou version d’évaluation de Microsoft 365 dans le centre d’administration Microsoft 365. Si vous disposez de plus de 25 licences attribuées à vos utilisateurs, réduisez ce nombre à moins de 25 ou bien [appelez le service clientèle pour annuler votre abonnement](../../business-video/get-help-support.md).
+
+*Remboursement :* Tout crédit calculé au prorata vous sera remboursé au cours du cycle de facturation suivant.
 
 > [!NOTE]
 > Si vous disposez de plusieurs abonnements pour un même produit tel que Microsoft 365 Business Premium, l’annulation d’un de ces abonnements n’impacte pas les licences ou les services relatifs aux autres abonnements.
@@ -47,10 +50,10 @@ Si vous avez ajouté votre propre nom de domaine pour l’utiliser avec votre ab
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
-3. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
+3. Dans le volet **Annuler l'abonnement**, choisissez la raison pour laquelle vous annulez. Si vous le souhaitez, vous pouvez fournir des commentaires.
 4. Sélectionnez **Enregistrer**.
 
-Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md)
+Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md)
 
 > [!NOTE]
 > Si vous supprimez explicitement un abonnement, cela ignore les étapes Expiré et Désactivé, et les données et le contenu SharePoint Online, dont OneDrive, sont supprimés immédiatement.
@@ -70,16 +73,16 @@ Votre abonnement présente désormais l’état **Désactivé** et propose des f
 
 2. Sélectionnez l’onglet **Produits**.
 3. Recherchez l’abonnement que vous souhaitez annuler. Sélectionnez les trois points (autres actions), puis sélectionnez **Annuler l'abonnement**.
-4. Dans le volet **Annuler l’abonnement** , choisissez la raison pour laquelle vous annulez l’abonnement. Vous pouvez également fournir des commentaires.
+4. Dans le volet **Annuler l'abonnement**, choisissez la raison pour laquelle vous annulez. Si vous le souhaitez, vous pouvez fournir des commentaires.
 5. Sélectionnez **Enregistrer**.
 
-Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md).
+Votre abonnement présente désormais l’état **Désactivé** et propose des fonctionnalités réduites jusqu’à sa suppression. Pour plus d'informations sur les conséquences de l'annulation d'un abonnement payant pour Microsoft 365 for business, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement Microsoft 365 for business ?](what-if-my-subscription-expires.md).
 
-## <a name="what-happens-when-you-cancel-a-subscription"></a>Que se passe-t-il lorsqu’un abonnement est annulé ?
+## <a name="what-happens-when-you-cancel-a-subscription"></a>Que se passe-t-il lorsqu’un abonnement est annulé ?
 
-Si vous annulez un abonnement avant son expiration, son statut passe directement à l'état « Désactivé ». Pour la plupart des abonnements et dans la plupart des pays et régions, l'état désactivé dure 90 jours. Quand un abonnement est en état désactivé, les administrateurs peuvent toujours consulter et sauvegarder les données pour leur organisation, mais nous recommandons que les administrateurs [sauvegardent les données](back-up-data-before-switching-plans.md) d'un abonnement avant l'annulation de celui-ci, en particulier s'il s'agit de leur seul abonnement. Les administrateurs peuvent également réactiver l’abonnement tant qu’il est à l’état « Désactivé ».
+Si vous annulez un abonnement avant son expiration, son statut passe directement à l'état « Désactivé ». Pour la plupart des abonnements et dans la plupart des pays et régions, l'état désactivé dure 90 jours. Quand un abonnement est en état désactivé, les administrateurs peuvent toujours consulter et sauvegarder les données pour leur organisation, mais nous recommandons que les administrateurs [sauvegardent les données](back-up-data-before-switching-plans.md) d'un abonnement avant l'annulation de celui-ci, en particulier s'il s'agit de leur seul abonnement. Les administrateurs peuvent également réactiver l’abonnement tant qu’il est à l’état « Désactivé ».
 
-Après 90 jours, l’abonnement passe à l’état « Supprimé ». Toutes les données dépendantes de cet abonnement seront supprimées pas plus tard que 90 jours après le passage à cet état. Vous ne pouvez retirer un mode de paiement d’un abonnement annulé qu’une fois cet état « Supprimé » atteint.
+Après 90 jours, l’abonnement passe à l’état « Supprimé ». Toutes les données dépendantes de cet abonnement seront supprimées pas plus tard que 90 jours après le passage à cet état. Vous ne pouvez retirer un mode de paiement d’un abonnement annulé qu’une fois cet état « Supprimé » atteint.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Voici ce à quoi vous et vos utilisateurs devez vous attendre si vous annulez un abonnement.
   
@@ -87,7 +90,7 @@ Après 90 jours, l’abonnement passe à l’état « Supprimé ». Toutes les
 
 - **Accès des utilisateurs** Vos utilisateurs ne peuvent plus utiliser les services tels que OneDrive Entreprise ou accéder aux données client (par exemple, des courriers électroniques ou des documents sur des sites d'équipe). Les applications Office, telles que Word et Excel, finissent par passer en mode d'utilisation en lecture seule avec fonctionnalités réduites, et affichent des [notifications Produit sans licence](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
 
-Pour en savoir plus, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement for business ?](what-if-my-subscription-expires.md)
+Pour en savoir plus, consultez la rubrique [Qu'arrive-t-il à mes données et à mon accès à la fin de mon abonnement for business ?](what-if-my-subscription-expires.md)
 
 > [!IMPORTANT]
 > Si vous voulez que les données de votre abonnement soient supprimées avant la fin établie de l’étape de désactivation, vous pouvez [clôturer votre compte](../close-your-account.md).
@@ -96,11 +99,11 @@ Pour en savoir plus, consultez la rubrique [Qu'arrive-t-il à mes données et à
 
 ### <a name="change-custom-domain-settings"></a>Modifiez les paramètres de domaine personnalisé
 
-Si vous utilisez un domaine personnalisé avec votre abonnement, vous devez effectuer un certain nombre d’étapes supplémentaires pour pouvoir annuler votre abonnement. Si vous n’avez pas de domaine personnalisé, vous pouvez passer à l’étape [Enregistrer vos données](#save-your-data).
+Si vous utilisez un domaine personnalisé avec votre abonnement, vous devez effectuer un certain nombre d’étapes supplémentaires pour pouvoir annuler votre abonnement. Si vous n’avez pas de domaine personnalisé, vous pouvez passer à l’étape [Enregistrer vos données](#save-your-data).
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>Modifiez les enregistrements du serveur de noms de votre domaine (si applicable)
 
-Si vous avez configuré un domaine personnalisé, vous avez ajouté des enregistrements DNS afin que le domaine fonctionne avec les services Microsoft 365. Avant de supprimer votre domaine, veillez à mettre à jour les enregistrements DNS, tels que de l'enregistrement MX de votre domaine, auprès de votre hôte DNS.
+Si vous avez configuré un domaine personnalisé, vous avez ajouté des enregistrements DNS afin que le domaine fonctionne avec les services Microsoft 365. Avant de supprimer votre domaine, veillez à mettre à jour les enregistrements DNS, tels que de l'enregistrement MX de votre domaine, auprès de votre hôte DNS.
 
 Par exemple, modifiez l'enregistrement MX auprès de votre hôte DNS. Le courrier électronique envoyé à votre domaine n'arrive plus à votre adresse Microsoft, mais parvienne plutôt à votre nouveau fournisseur de courrier. (Un enregistrement MX détermine où le courrier destiné à votre domaine est envoyé).
 
