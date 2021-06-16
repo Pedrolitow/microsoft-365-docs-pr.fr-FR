@@ -1,7 +1,7 @@
 ---
 title: Recherchez les menaces sur les appareils, les e-mails, les applications et les identités avec le chasse avancée
 description: Étudiez les scénarios de chasse courants et les exemples de requêtes qui couvrent les appareils, les e-mails, les applications et les identités.
-keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, apps, identities, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
+keywords: recherche avancée, données Office365, appareils Windows, normalisation des e-mails Office365, courriers électroniques, applications, identités, recherche de menace, recherche, requête, télémétrie, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aacd0745ff507356035f8f460ed2b4307e9da6ed
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932964"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964872"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Repérer des menaces sur les appareils, les e-mails, les applications, et les identités
 
@@ -50,7 +50,7 @@ Utilisez ces requêtes pour savoir comment obtenir rapidement des informations s
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Obtenir des comptes d’utilisateur des adresses de messagerie électronique :
 Lorsque vous construisez des requêtes sur des [tableaux qui traitent des appareils et des e-mail](advanced-hunting-schema-tables.md), vous devez peut-être obtenir des noms de compte d’utilisateur à partir des adresses e-mail d’expéditeur ou de destinataire. Vous pouvez généralement le faire pour l’adresse du destinataire ou de l’expéditeur à l’aide de l’hôte local à partir de l’adresse *e-mail.*
 
-Dans l’extrait de code ci-dessous, nous utilisons la [fonction tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto pour extraire l’hôte local juste avant les adresses de messagerie du destinataire dans `@` la `RecipientEmailAddress` colonne.
+Dans l’extrait de code ci-dessous, nous utilisons la fonction [tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto pour extraire l’hôte local juste avant les adresses de messagerie du destinataire dans `@` la `RecipientEmailAddress` colonne.
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -66,7 +66,7 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>Fusionner la table IdentityInfo
 
-Vous pouvez obtenir des noms de compte et d’autres informations de compte en fusionnant ou en rejoignant la [table IdentityInfo](advanced-hunting-identityinfo-table.md). La requête ci-dessous obtient la liste des détections de hameçonnage et de programmes malveillants à partir de la [table EmailEvents,](advanced-hunting-emailevents-table.md) puis joint ces informations au tableau pour obtenir des informations détaillées sur chaque `IdentityInfo` destinataire. 
+Vous pouvez obtenir des noms de compte et d’autres informations de compte en fusionnant ou en rejoignant la [table IdentityInfo.](advanced-hunting-identityinfo-table.md) La requête ci-dessous obtient la liste des détections de hameçonnage et de programmes malveillants à partir de la [table EmailEvents,](advanced-hunting-emailevents-table.md) puis joint ces informations au tableau pour obtenir des informations détaillées sur chaque `IdentityInfo` destinataire. 
 
 ```kusto
 EmailEvents
@@ -100,6 +100,90 @@ DeviceInfo
 | join AlertInfo on AlertId
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
+
+
+### <a name="get-file-event-information"></a>Obtenir des informations sur les événements de fichier
+
+Utilisez la requête suivante pour obtenir des informations sur les événements liés au fichier. 
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceFileEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="get-network-event-information"></a>Obtenir des informations sur les événements réseau
+
+Utilisez la requête suivante pour obtenir des informations sur les événements liés au réseau.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-agent-version-information"></a>Obtenir les informations de version de l’agent d’appareil
+
+Utilisez la requête suivante pour obtenir la version de l’agent en cours d’exécution sur un appareil.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="example-query-for-macos-devices"></a>Exemple de requête pour les appareils macOS
+
+Utilisez l’exemple de requête suivant pour voir tous les appareils exécutant macOS avec une version antérieure à Celle-ci.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OSPlatform == "macOS" and  OSVersion !contains "10.15" and OSVersion !contains "11."
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-status-info"></a>Obtenir les informations d’état de l’appareil
+
+Utilisez la requête suivante pour obtenir l’état d’un appareil. Dans l’exemple suivant, la requête vérifie si l’appareil est intégré.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OnboardingStatus != "Onboarded"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
 
 ## <a name="hunting-scenarios"></a>Scénarios de repérage
 

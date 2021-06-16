@@ -21,35 +21,35 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accélérer la planification et la configuration des Microsoft 365 ou Office 365 à l’aide des guides d’installation.
-ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d2e4f29a3f6d484c8586194258c3157bc73fb9e1
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454146"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964619"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guides de configuration pour les services Microsoft 365 et Office 365
 
-Microsoft 365 guides Office 365 d’installation vous donnent des conseils et des ressources personnalisés pour la planification et le déploiement de votre client, de vos applications et de vos services. Ces guides sont créés à l’aide des mêmes pratiques que Microsoft 365 les spécialistes de l’intégration [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) partagent des interactions individuelles et ils sont disponibles pour tous les administrateurs dans le Centre d’administration Microsoft 365. Ils fournissent des informations sur la configuration du produit, l’activation des fonctionnalités de sécurité, le déploiement d’outils de collaboration et la mise à disposition de scripts pour accélérer les déploiements avancés.
+Microsoft 365 guides Office 365 d’installation vous donnent des conseils et des ressources personnalisés pour la planification et le déploiement de votre client, de vos applications et de vos services. Ces guides sont créés à l’aide des mêmes meilleures pratiques que les spécialistes de l’intégration [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) partagent avec des interactions individuelles et sont disponibles pour tous les administrateurs au sein du Centre d’administration Microsoft 365. Ils fournissent des informations sur la configuration du produit, l’activation des fonctionnalités de sécurité, le déploiement d’outils de collaboration et la mise à disposition de scripts pour accélérer les déploiements avancés.
 
-## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Comment accéder aux guides d’installation dans le centre d Microsoft 365'administration
+## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Comment accéder aux guides d’installation dans le Centre d’administration Microsoft 365
 
-Les guides d’installation sont accessibles à partir de [la](https://aka.ms/setupguidance) page d’aide au programme d’installation Microsoft 365 centre d’administration. Vous pouvez effectuer le suivi de l’état de votre progression et vous avez la possibilité de revenir à tout moment pour effectuer un guide. Pour accéder à la page **de conseils d’installation** :
+Les guides d’installation sont accessibles à partir [de](https://aka.ms/setupguidance) la page d’aide à l’installation du Centre d’administration Microsoft 365. Vous pouvez effectuer le suivi de l’état de votre progression et vous avez la possibilité de revenir à tout moment pour effectuer un guide. Pour accéder à la page **de conseils d’installation** :
 
-1. Dans le [Microsoft 365 d’administration,](https://admin.microsoft.com/)allez sur la page **d’accueil.**
+1. Dans la [Centre d’administration Microsoft 365,](https://admin.microsoft.com/)allez à la page **d’accueil.**
 
 2. Recherchez la **carte de & de formation.** 
 
-   ![Fiche & guides de formation dans le centre d’administration Microsoft 365 de formation](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
+   ![Fiche & guides de formation dans la Centre d’administration Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. Sélectionnez **des instructions de configuration personnalisées.**
+3. Sélectionnez **des instructions d’installation personnalisées.**
 
-   ![Capture d’écran de la page de conseils d’installation dans Microsoft 365'administration centrale](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
+   ![Capture d’écran de la page de conseils d’installation dans la Centre d’administration Microsoft 365](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
 >[!NOTE]
->Les autorisations d’administrateur client sont requises pour accéder Microsoft 365 centre d’administration.
+>Des autorisations d’administrateur client sont requises pour accéder au Centre d’administration Microsoft 365.
 
-## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Comment fonctionnent les guides d’installation dans Microsoft 365'administration centrale ?
+## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Comment fonctionnent les guides d’installation dans le Centre d’administration Microsoft 365 ?
 
 Chaque guide vous fournit des instructions pas à pas, des ressources, des articles et, si nécessaire, des scripts que vous pouvez utiliser pour apporter des modifications de configuration. Ces guides vous offrent des choix qui reflètent les besoins spécifiques des petites et grandes organisations. En outre, les conseils incluent une assistance pour les nouveaux administrateurs et les administrateurs plus expérimentés.
 
@@ -61,7 +61,7 @@ Vous pouvez utiliser les guides pour en savoir plus sur des fonctionnalités Mic
 
 ### <a name="prepare-your-environment"></a>Préparer votre environnement
 
-Le [guide Préparer votre environnement](https://aka.ms/prepareyourenvironment) vous aide à préparer l’environnement de votre organisation pour Microsoft 365 et Office 365 services. Quels que soient vos objectifs, il existe des tâches que vous devez effectuer pour garantir un déploiement réussi. Pour éviter les erreurs lors de la préparation de votre environnement, des instructions détaillées vous permettent de connecter votre domaine, d’ajouter des utilisateurs, d’attribuer des licences, de configurer le courrier électronique avec Exchange Online et d’installer ou de déployer des applications Office. 
+Le [guide Préparer votre environnement](https://aka.ms/prepareyourenvironment) vous aide à préparer l’environnement de votre organisation pour Microsoft 365 et Office 365 services. Quels que soient vos objectifs, il existe des tâches que vous devrez effectuer pour garantir un déploiement réussi. Pour éviter toute erreur lors de la préparation de votre environnement, des instructions détaillées vous permettent de connecter votre domaine, d’ajouter des utilisateurs, d’attribuer des licences, de configurer le courrier électronique avec Exchange Online et d’installer ou de déployer des applications Office. 
 
 ### <a name="email-setup-advisor"></a>Conseiller d’installation de messagerie
 
@@ -73,7 +73,7 @@ Lorsque vous migrez la boîte aux lettres d’un utilisateur Gmail vers Microsof
 
 ### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 de déploiement
 
-Le [conseiller Microsoft 365 déploiement](https://aka.ms/microsoft365setupguide) vous fournit des conseils lors de la configuration des outils de productivité, des stratégies de sécurité et des fonctionnalités de gestion des appareils. Avec un Microsoft 365 Business Premium ou Microsoft 365 abonnement entreprise, vous pouvez utiliser ce conseiller pour configurer et configurer les appareils de votre organisation. 
+Le [conseiller Microsoft 365 déploiement](https://aka.ms/microsoft365setupguide) vous fournit des conseils lors de la configuration des outils de productivité, des stratégies de sécurité et des fonctionnalités de gestion des appareils. Avec une Microsoft 365 Business Premium ou Microsoft 365 abonnement entreprise, vous pouvez utiliser ce conseiller pour configurer et configurer les appareils de votre organisation. 
 
 Vous recevrez des conseils et un accès aux ressources pour activer vos services cloud, mettre à jour les appareils vers la dernière version prise en charge de Windows 10 et joindre des appareils à Azure Active Directory (Azure AD), le tout dans un emplacement central.
 
@@ -96,11 +96,11 @@ Microsoft Edge a été entièrement reconstruit pour vous apporter des performan
 
 Le guide d’installation de [Microsoft Edge](https://aka.ms/edgeadvisor) vous aidera à configurer la découverte de sites Enterprise pour voir quels sites accédés dans votre organisation devront peut-être utiliser le mode IE, examiner et configurer des fonctionnalités de sécurité importantes, configurer des stratégies de confidentialité et des stratégies supplémentaires pour répondre aux besoins de votre organisation et gérer l’accès web sur vos appareils. Vous pouvez télécharger Microsoft Edge sur des appareils individuels, ou nous allons vous montrer comment déployer plusieurs utilisateurs dans votre organisation avec Configuration Manager ou Microsoft Intune. 
 
-### <a name="microsoft-search-setup-guide"></a>Guide de configuration de Microsoft Search (recherche Microsoft)
+### <a name="microsoft-search-setup-guide"></a>Recherche Microsoft de configuration
 
-Recherche Microsoft permet à votre organisation de trouver ce dont elle a besoin pour effectuer ce sur quoi elle travaille. Qu’il s’agit de rechercher des personnes, des fichiers, des organigrammes, des sites ou des réponses à des questions courantes, votre organisation peut utiliser Recherche Microsoft tout au long de leur journée de travail pour obtenir des réponses.
+Recherche Microsoft aide votre organisation à trouver ce dont elle a besoin pour effectuer ce sur quoi elle travaille. Qu’elle recherche des personnes, des fichiers, des organigrammes, des sites ou des réponses à des questions courantes, votre organisation peut utiliser Recherche Microsoft tout au long de leur journée de travail pour obtenir des réponses.
 
-Le guide de configuration de Microsoft Search (recherche [Microsoft)](https://aka.ms/MicrosoftSearchSetup) vous aide à configurer Microsoft Search (recherche Microsoft) si vous souhaitez piloter un groupe d’utilisateurs ou le déployer à tous les membres de votre organisation. Vous allez affecter des administrateurs de recherche et des éditeurs de recherche, puis personnaliser l’expérience de recherche pour vos utilisateurs avec des réponses et des options supplémentaires, comme l’ajout de l’extension Bing à Chrome ou la définition de Bing comme moteur de recherche par défaut.
+Le [guide Recherche Microsoft](https://aka.ms/MicrosoftSearchSetup) configuration vous permet de configurer Recherche Microsoft si vous souhaitez le piloter pour un groupe d’utilisateurs ou le déployer à tous les membres de votre organisation. Vous allez affecter des administrateurs de recherche et des éditeurs de recherche, puis personnaliser l’expérience de recherche pour vos utilisateurs avec des réponses et des options supplémentaires, comme l’ajout de l’extension Bing à Chrome ou la définition de Bing comme moteur de recherche par défaut.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guide de configuration de la cogestion d’Intune Configuration Manager
 
@@ -157,13 +157,13 @@ Le [conseiller Microsoft Defender pour points](https://aka.ms/mdatpsetup) de ter
 
 Microsoft Exchange Online Protection (EOP) est un service de filtrage de courrier électronique basé sur le cloud pour la protection contre le courrier indésirable et les programmes malveillants, avec des fonctionnalités pour protéger votre organisation contre les violations de stratégie de messagerie. 
 
-Utilisez le [guide](https://aka.ms/EOPguidance) de configuration Exchange Online Protection pour configurer EOP en sélectionnant lequel des trois scénarios de déploiement de boîtes aux lettres sur &mdash; site, hybrides (mélange de boîtes aux lettres sur site et cloud) ou toutes les boîtes aux lettres cloud adaptées à votre &mdash; organisation. Le guide fournit des informations et des ressources pour configurer et examiner les licences de vos utilisateurs, attribuer des autorisations dans le Centre d’administration Microsoft 365 et configurer les stratégies anti-programme malveillant et de courrier indésirable de votre organisation dans le Centre de sécurité et conformité &. 
+Utilisez le [guide](https://aka.ms/EOPguidance) de configuration Exchange Online Protection pour configurer EOP en sélectionnant lequel des trois scénarios de déploiement de boîtes aux lettres sur &mdash; site, hybrides (mélange de boîtes aux lettres sur site et cloud) ou toutes les boîtes aux lettres cloud adaptées à votre &mdash; organisation. Le guide fournit des informations et des ressources pour configurer et examiner les licences de vos utilisateurs, attribuer des autorisations dans le Centre d’administration Microsoft 365 et configurer les stratégies anti-programme malveillant et de courrier indésirable de votre organisation dans le Centre de sécurité & conformité. 
 
 ### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender pour Office 365 advisor
 
 Le [conseiller Microsoft Defender pour Office 365](https://aka.ms/oatpsetup) protège votre organisation contre les menaces malveillantes que votre environnement peut rencontrer par le biais de messages électroniques, de liens et d’outils de collaboration tiers. Ce guide vous fournit les ressources et les informations nécessaires pour vous aider à préparer et identifier defender pour Office 365 pour répondre aux besoins de votre organisation. 
 
-### <a name="microsoft-information-protection-setup-guide"></a>Guide de configuration de la protection des informations Microsoft
+### <a name="microsoft-information-protection-setup-guide"></a>Protection des données Microsoft de configuration
 
 Obtenez une vue d’ensemble des fonctionnalités que vous pouvez appliquer à votre stratégie de protection des informations afin de vous assurer que vos informations sensibles sont protégées. Utilisez une approche de cycle de vie à quatre étapes consistant à découvrir, à classer, à protéger, puis à contrôler les informations sensibles. Le guide de [Configuration de la protection des données Microsoft](https://aka.ms/mipsetupguide) fournit des conseils sur l’exécution de chacune de ces étapes.
 
@@ -183,7 +183,7 @@ Le [guide de](https://aka.ms/officeappguidance) configuration des applications m
 
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams de configuration
 
-Le [guide](https://aka.ms/teamsguidance) de configuration Microsoft Teams fournit à votre organisation des conseils pour configurer des espaces de travail d’équipe qui hébergent des conversations en temps réel par messagerie, appels et réunions audio ou vidéo pour les communications d’équipe et privées. Vous recevrez les instructions pour déterminer les exigences réseau de votre organisation à l’aide de l’outil Planificateur de réseau et du conseiller Teams au sein du Centre d’administration Teams. Une fois le déploiement terminé, le guide contient des ressources utiles pour commencer à utiliser Teams.
+Le guide de configuration de [Microsoft Teams](https://aka.ms/teamsguidance) fournit à votre organisation des conseils pour configurer des espaces de travail d’équipe qui hébergent des conversations en temps réel par messagerie, appels et réunions audio ou vidéo pour les communications d’équipe et privées. Vous recevrez les instructions pour déterminer les exigences réseau de votre organisation à l’aide de l’outil Planificateur de réseau et du conseiller Teams au sein du Centre d’administration Teams. Une fois le déploiement terminé, le guide contient des ressources utiles pour commencer à utiliser Teams.
 
 ### <a name="sharepoint-setup-guide"></a>SharePoint de configuration
 
@@ -195,7 +195,7 @@ Utilisez le [guide OneDrive de configuration](https://aka.ms/ODfBquickstartguide
 
 ### <a name="yammer-deployment-advisor"></a>Yammer de déploiement
 
-Connecter et impliquer au sein de votre organisation avec Yammer. Le [Yammer de déploiement](https://aka.ms/yammerdeploymentguide) local prépare votre réseau Yammer en ajoutant des domaines, en définissant des administrateurs et en combinant Yammer réseaux. Vous recevrez des conseils pour déployer Yammer, personnaliser l’apparence, configurer la sécurité et la conformité, et affiner les paramètres.
+Connecter et impliquer au sein de votre organisation avec Yammer. Le [conseiller Yammer de](https://aka.ms/yammerdeploymentguide) déploiement prépare votre réseau Yammer en ajoutant des domaines, en définissant des administrateurs et en combinant Yammer réseaux. Vous recevrez des conseils pour déployer Yammer, personnaliser l’apparence, configurer la sécurité et la conformité, et affiner les paramètres.
 
 ## <a name="advanced-wizards"></a>Assistants avancés
 
@@ -217,8 +217,3 @@ Utilisez le guide déployer [Office](https://aka.ms/officeremoteinstall) pour le
 
 Pour les organisations qui utilisent Configuration Manager, vous pouvez utiliser la Microsoft 365 Apps Déployer et mettre à jour avec [Configuration Manager Advisor](https://aka.ms/oppinstall) pour générer un script qui configurera automatiquement votre déploiement Microsoft 365 Apps à l’aide des meilleures pratiques recommandées par les ingénieurs FastTrack. Utilisez ce guide pour créer vos groupes de déploiement, personnaliser vos applications et fonctionnalités Office, configurer des installations dynamiques ou légères, puis exécuter le script pour créer les applications, les règles de déploiement automatique et les collections d’appareils dont vous avez besoin pour cibler votre déploiement. 
 
-### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Intégrer une application cloud tierce à Azure AD
-
-Améliorez l’expérience utilisateur et fournissez une couche de sécurité supplémentaire en intégrant votre application tierce à Azure Active Directory (Azure AD). Avec cette expérience de bout en bout, vous pouvez faire la majeure partie de la configuration directement à partir de cet Assistant. Le cas échéant, nous vous redirigeons vers la page de configuration correspondante.
-
-Utilisez [l’Assistant](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) Intégrer une application cloud tierce pour intégrer une application cloud tierce à Azure AD.

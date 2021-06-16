@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Présentation de Rubriques Viva.
-ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908320"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950022"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
-Rubriques utilise la technologie Microsoft AI, les Microsoft 365, Microsoft Graph, la recherche et d’autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par les pages modernes SharePoint, Recherche Microsoft et recherche dans Word, PowerPoint, Outlook et Excel.
+Rubriques utilise la technologie Microsoft AI, Microsoft 365, Microsoft Graph, recherche et autres composants et services pour apporter des connaissances à vos utilisateurs dans les applications Microsoft 365 qu’ils utilisent quotidiennement, en commençant par SharePoint pages modernes, Recherche Microsoft et recherche dans Word, PowerPoint, Outlook et Excel.
 
 <br/>
 
@@ -103,7 +103,7 @@ Lorsque vous utilisez Rubriques Viva dans votre environnement Microsoft 365, vo
 
 - Gestionnaires d’informations : utilisateurs qui guident les rubriques tout au long du cycle de vie des rubriques. Les gestionnaires de connaissances utilisent la page Gérer les **rubriques** dans le centre de rubriques pour confirmer les rubriques suggérées par l’IA, supprimer les rubriques qui ne sont plus pertinentes, ainsi que modifier des rubriques existantes ou en créer de nouvelles, et sont les seuls utilisateurs qui y ont accès. Les administrateurs d’informations attribuent des autorisations de gestionnaire d’informations aux utilisateurs via les paramètres administrateur de Rubriques Viva du Centre d’administration Microsoft 365. 
 
-- Administrateurs du savoir : les administrateurs peuvent configurer Rubriques Et les gérer via les contrôles d’administration Microsoft 365 centre d’administration. Actuellement, un administrateur général de Microsoft 365 ou SharePoint peut faire office d'administrateur d'informations.
+- Administrateurs du savoir : les administrateurs définissent Topics et les gèrent via les contrôles d’administration dans le Centre d’administration Microsoft 365. Actuellement, un administrateur général de Microsoft 365 ou SharePoint peut faire office d'administrateur d'informations.
 
 Pour plus d’informations, voir [Rôles Rubriques.](topic-experiences-roles.md)
 
@@ -123,7 +123,7 @@ Pour plus d’informations, [voir Gérer les rubriques dans le centre de rubriqu
 
 ## <a name="admin-controls"></a>Contrôles d’administration
 
-Les contrôles d’administration Microsoft 365 centre d’administration vous permettent de gérer Des rubriques. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
+Les contrôles d’administration Centre d’administration Microsoft 365 vous permettent de gérer Des rubriques. Ils permettent à un administrateur général Microsoft 365 ou SharePoint de :
 
 - Contrôler quels utilisateurs de votre organisation sont autorisés à consulter les rubriques dans les pages modernes de SharePoint ou dans les résultats de recherche SharePoint.
 - Contrôler les sites SharePoint qui seront analyser pour identifier les rubriques.
@@ -142,10 +142,8 @@ Les utilisateurs ayant des autorisations de modification ou de création de rubr
 
 Les utilisateurs que vous autorisez à consulter les rubriques dans le cadre de leur travail quotidien peuvent se voir demander si la rubrique leur a été utile. Le système examine ces réponses et les utilise pour améliorer la mise en évidence de la rubrique, et vous aider à déterminer ce qui est affiché sur les résumés de rubrique et les détails des rubriques.
 
-En outre, les utilisateurs ayant les autorisations appropriées peuvent identifier les éléments, tels que les conversations Yammer, qui sont pertinents pour un sujet, et les ajouter à une rubrique spécifique. 
-
 Pour plus d’informations, voir [Découverte et curation des rubriques.](./topic-experiences-discovery-curation.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utiliser Microsoft Search (recherche Microsoft) pour rechercher des rubriques dans Rubriques](./search.md)
+[Utiliser Recherche Microsoft pour rechercher des rubriques dans Rubriques](./search.md)

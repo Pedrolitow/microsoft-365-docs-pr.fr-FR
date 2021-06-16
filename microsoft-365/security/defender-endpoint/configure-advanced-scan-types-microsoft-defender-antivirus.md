@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 34f423222068236271afdda13afb95cffa58b709
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 96e4dab96f8ceb149916c908991079bb2dfa866f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683810"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964896"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurer les options d’analyse de l’antivirus Microsoft Defender
 
@@ -31,14 +31,11 @@ ms.locfileid: "52683810"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Utiliser Microsoft Intune pour configurer les options d’analyse
 
-Consultez les ressources suivantes : 
-
-- [Configurer les paramètres de restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure) 
-- [Antivirus Microsoft Defender de restriction d’appareil pour Windows 10 dans Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Pour plus d’informations, voir Configurer les [paramètres](/intune/device-restrictions-configure) de restriction d’appareil Microsoft Intune et Antivirus Microsoft Defender paramètres de restriction d’appareil pour Windows 10 [dans Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) 
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Utiliser Microsoft Endpoint Manager pour configurer les options d’analyse
 
-Découvrez [comment créer et déployer des stratégies de logiciel anti-programme malveillant : analyser les paramètres.](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)
+Pour plus d’informations sur la configuration Microsoft Endpoint Manager (branche actuelle), voir Comment créer et déployer des stratégies de logiciel [anti-programme](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings)malveillant : Analyser les paramètres .
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Utiliser la stratégie de groupe pour configurer les options d’analyse
 
@@ -49,6 +46,7 @@ Découvrez [comment créer et déployer des stratégies de logiciel anti-program
 3. Dans **l’Éditeur de gestion des stratégies de** groupe, cliquez sur **Configuration** ordinateur et cliquez **sur Modèles d’administration.**
 
 4. Développez **l’arborescence Windows composants** Antivirus Microsoft Defender, puis sélectionnez un emplacement (voir Paramètres et emplacements  >  dans cet [](#settings-and-locations) article).
+
 
 5. Modifiez l’objet de stratégie. 
 
@@ -66,23 +64,25 @@ Découvrez [comment créer et déployer des stratégies de logiciel anti-program
 | Analyser les exécutables packés <p> **Analyse**  >  **Analyser les exécutables packés** | Activé | Non disponible |
 | Analyser les lecteurs amovibles uniquement pendant les analyses complètes <p> **Analyse**  >  **Analyser les lecteurs amovibles** | Désactivé | `-DisableRemovableDriveScanning` |
 | Spécifier le niveau de sous-dossiers dans un dossier d’archivage à analyser <p>**Analyse**  >  **Spécifier la profondeur maximale pour analyser les fichiers d’archivage** | 0 | Non disponible |
-| Spécifiez la charge processeur maximale (en pourcentage) au cours d’une analyse. <p> **Analyse**  >  **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse** | 50 |  `-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur. |
+| Spécifiez la charge processeur maximale (en pourcentage) pendant une analyse. <p> **Analyse**  >  **Spécifier le pourcentage maximal d’utilisation du processeur pendant une analyse** | 50 |  `-ScanAvgCPULoadFactor` <p>**REMARQUE**: la charge processeur maximale n’est pas une limite difficile, mais est une recommandation pour que le moteur d’analyse ne dépasse pas le maximum en moyenne. L’exécuter manuellement ignore ce paramètre et s’exécute sans limites de processeur. |
 | Spécifiez la taille maximale (en kilo-octets) des fichiers d’archivage qui doivent être analysés. <p> **Analyse**  >  **Spécifier la taille maximale des fichiers d’archivage à scanner** | Sans limite | Non disponible <p>La valeur par défaut de 0 ne s’applique pas à la limite |
 | Configurer une faible priorité du processeur pour les analyses programmées <p> **Analyse**  >  **Configurer une faible priorité du processeur pour les analyses programmées** | Désactivé | Non disponible |
+
  
 > [!NOTE]
 > Si la protection en temps réel est désactivée, les fichiers sont analysés avant d’être accessibles et exécutés. L’étendue d’analyse inclut tous les fichiers, y compris les fichiers sur les supports amovibles montés, tels que les lecteurs USB. Si l’appareil qui effectue l’analyse dispose d’une protection en temps réel ou d’une protection à l’accès, l’analyse inclut également les partages réseau.
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Utiliser PowerShell pour configurer les options d’analyse
 
-Consultez les ressources suivantes :
+
+Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir
 
 - [Gérer Antivirus Microsoft Defender avec les cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Cmdlets Defender](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Utiliser WMI pour configurer les options d’analyse
 
-Voir [Windows Defender API WMIv2.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Voir [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 ## <a name="email-scanning-limitations"></a>Limitations de l’analyse du courrier électronique
 
@@ -99,9 +99,15 @@ Si Antivirus Microsoft Defender une menace à l’intérieur d’un message éle
 - Sujet de l’e-mail
 - Nom de la pièce jointe
 
+
+## <a name="scanning-mapped-network-drives"></a>Analyse des lecteurs réseau mappés
+
+Sur n’importe quel système d’exploitation, seuls les lecteurs réseau qui sont mappés au niveau du système sont analysés. Les lecteurs réseau mappés au niveau de l’utilisateur ne sont pas analysés. Les lecteurs réseau mappés au niveau de l’utilisateur sont ceux qu’un utilisateur mase dans sa session manuellement et à l’aide de ses propres informations d’identification.
+
 ## <a name="see-also"></a>Voir aussi
 
+
 - [Personnaliser, lancer et passer en revue les résultats des analyses et Antivirus Microsoft Defender correction](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender](run-scan-microsoft-defender-antivirus.md).
+- [Configurer et exécuter des analyses à la demande avec l’antivirus Microsoft Defender](run-scan-microsoft-defender-antivirus.md)
 - [Configurer des analyses de Antivirus Microsoft Defender programmées](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Antivirus Microsoft Defender dans Windows 10](microsoft-defender-antivirus-in-windows-10.md)

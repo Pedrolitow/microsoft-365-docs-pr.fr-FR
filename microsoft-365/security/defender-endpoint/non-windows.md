@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4714ad9a4388654cbf865ed54afe260a67d724f
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: dc5710a73685c67eff17c0f281bd14e48707e60f
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957502"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964787"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender pour point de terminaison pour les plateformes non Windows
 
@@ -47,11 +47,26 @@ Microsoft Defender pour le point de terminaison sur macOS offre des fonctionnali
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-mac.md)de Defender for Endpoint sur macOS.
 
+>[!NOTE]
+>Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison macOS :
+>- Protection contre la perte de données
+>- Réponse en direct
+>- SIEM
+
+
 ## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender pour point de terminaison Linux
 
 Microsoft Defender pour point de terminaison sur Linux offre des fonctionnalités préventives (AV) pour les serveurs Linux. Cela inclut une expérience de ligne de commande complète pour configurer et gérer l’agent, lancer des analyses et gérer les menaces. Nous groupons les versions récentes des six distributions linux server les plus courantes : RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS ou version ultérieure LTS, SLES 12+, Debian 9+ et Oracle Linux 7.2. Microsoft Defender pour point de terminaison sur Linux peut être déployé et configuré à l’aide de l’outil de gestion de la configuration Linux existant, Enfiché, Ansible ou. Pour plus d’informations sur les principales fonctionnalités et avantages, lisez [nos annonces.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)
 
 Pour plus d’informations sur la mise en place, consultez la [documentation](microsoft-defender-endpoint-linux.md)de Microsoft Defender pour Endpoint sur Linux.
+
+>[!NOTE]
+>Les fonctionnalités suivantes ne sont actuellement pas pris en charge sur les points de terminaison Linux :
+>- Protection contre la perte de données
+>- Réponse en direct
+>- SIEM
+
+
 
 ## <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender pour point de terminaison Android
 
@@ -73,6 +88,6 @@ Les clients peuvent obtenir Microsoft Defender pour le point de terminaison sur 
 
 Les fonctionnalités récemment annoncées de Microsoft Defender pour Endpoint sur Android et iOS sont incluses dans les offres mentionnées ci-dessus dans le cadre des cinq appareils qualifiés pour les utilisateurs sous licence éligibles.
 
-Defender pour le point de terminaison sur Linux est disponible via la référence SKU Defender pour Endpoint Server disponible pour les clients commerciaux et éducation.
+Defender pour le point de terminaison sur Linux est disponible via la référence SKU de Defender for Endpoint Server disponible pour les clients commerciaux et éducation.
 
 Veuillez contacter votre équipe de compte ou votre CSP pour obtenir des tarifs et des conditions d’éligibilité supplémentaires.

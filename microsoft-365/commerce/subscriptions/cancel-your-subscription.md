@@ -19,17 +19,17 @@ ms.custom:
 search.appverid: MET150
 description: Si vous avez moins de 25 licences d'utilisateur, vous pouvez annuler votre version d'essai ou votre abonnement payant de Microsoft 365 pour entreprise dans le centre d'administration.
 ms.date: 04/08/2021
-ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 18e7ca5cec91e1614808f2087ce0394f33a45c7a
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929454"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950082"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
 > [!IMPORTANT]
-> Cet article s'applique uniquement aux abonnements Microsoft 365 pour entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/fr-FR/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b) .
+> Cet article s'applique uniquement aux abonnements Microsoft 365 pour entreprises. Si vous avez Microsoft 365 Famille ou Personnel, voir Annuler un [abonnement Microsoft 365](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link) .
 
 *Conditions :* Si vous disposez de moins de 25 licences attribuées à vos utilisateurs, vous pouvez à tout moment annuler votre abonnement payant ou version d’évaluation de Microsoft 365 dans le centre d’administration Microsoft 365. Si vous disposez de plus de 25 licences attribuées à vos utilisateurs, réduisez ce nombre à moins de 25 ou bien [appelez le service clientèle pour annuler votre abonnement](../../business-video/get-help-support.md).
 

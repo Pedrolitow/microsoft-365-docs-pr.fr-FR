@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7841197594941354b21bd2104cd27ef37a1a25c9
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925650"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964595"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Préparer Microsoft Defender pour le déploiement de point de terminaison
 
@@ -97,7 +97,7 @@ Microsoft recommande d’utiliser le concept de privilèges minimum. Defender fo
 
 Microsoft recommande [d’utiliser Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) pour gérer vos rôles afin de fournir un audit, un contrôle et une révision d’accès supplémentaires pour les utilisateurs ayant des autorisations d’annuaire.
 
-Defender pour le point de terminaison prend en charge deux façons de gérer les autorisations :
+Defender pour le point de terminaison prend en charge deux méthodes de gestion des autorisations :
 
 -   **Gestion des autorisations de base**: définissez les autorisations en accès total ou en lecture seule. Dans le cas de la gestion des autorisations de base, les utilisateurs ayant le rôle Administrateur général ou Administrateur de sécurité dans Azure Active Directory disposent d’un accès total alors que le rôle lecteur Sécurité dispose d’un accès en lecture seule.
 
@@ -112,7 +112,7 @@ Le tableau d’exemple suivant sert à identifier la structure du Centre des op�
 | Niveau   | Description                                                                                                                                                                                                 | Autorisation requise |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | Niveau 1 | **Équipe locale des opérations de sécurité/équipe informatique**<br>Cette équipe trie et examine généralement les alertes contenues dans leur géolocalisation et atteint le niveau 2 dans les cas où une correction active est nécessaire.                                              |                     |
-| Niveau 2 | **Équipe des opérations de sécurité régionale**<br>Cette équipe peut voir tous les appareils de leur région et effectuer des actions de correction.                                                                                                                        |        Afficher les données               |
+| Niveau 2 | **Équipe des opérations de sécurité régionale**<br>Cette équipe peut voir tous les appareils pour leur région et effectuer des actions de correction.                                                                                                                        |        Afficher les données               |
 | Niveau 3 | **Équipe des opérations de sécurité globale**<br>Cette équipe est constituée d’experts en sécurité et est autorisée à voir et à effectuer toutes les actions à partir du portail. | Afficher les données <br>  Examen des alertes Actions de correction actives <br> Examen des alertes Actions de correction actives <br> Gérer les paramètres système du portail <br> Gérer les paramètres de sécurité |
 
 
@@ -135,6 +135,7 @@ Choisissez le composant de Defender for Endpoint à utiliser et supprimez ceux q
 
 ## <a name="next-step"></a>Étape suivante
 
-|||
-|:-------|:-----|
-|![Phase 2 : configuration](images/setup.png) <br>[Phase 2 : configuration](production-deployment.md) | Configurer Microsoft Defender pour le déploiement de point de terminaison |
+
+![Phase 2 : configuration](images/setup.png) <br>[Phase 2 : configuration](production-deployment.md) 
+ 
+Configurer Microsoft Defender pour le déploiement de point de terminaison 
