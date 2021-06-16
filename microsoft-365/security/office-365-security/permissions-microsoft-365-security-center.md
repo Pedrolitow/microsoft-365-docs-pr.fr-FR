@@ -19,12 +19,12 @@ description: Les administrateurs peuvent apprendre comment gérer les autorisati
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e810b0146803d22246db6d4248d7d4a6a203834b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 4ed1d90bdc6e222d44179a77e9617d05909a4258
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879023"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926462"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>Autorisations dans le Portail Microsoft 365 Defender
 
@@ -58,7 +58,7 @@ Le Portail Microsoft 365 Defender inclut des groupes de rôles par défaut pour 
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Rôles et groupes de rôles dans le Portail Microsoft 365 Defender
 
-Les types de rôles et de groupes de rôles suivants sont disponibles dans **Autorisations et rôles** dans le Portail Microsoft 365 Defender :
+Les types de rôles et de groupes de rôles suivants sont disponibles dans **Permissions et rôles** du portail Microsoft 365 Defender :
 
 - **Rôles Azure AD** : vous pouvez afficher les rôles et les utilisateurs attribués, mais vous ne pouvez pas les gérer directement dans le Portail Microsoft 365 Defender. Les rôles Azure AD sont des rôles centraux qui attribuent des autorisations pour **tous les services** Microsoft 365.
 

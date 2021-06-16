@@ -20,12 +20,12 @@ description: Les administrateurs peuvent apprendre à activer les pièces jointe
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 374e67626eab07cc8ab89a52554658a31e661eec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929946"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933010"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
@@ -53,9 +53,13 @@ Cet article contient les étapes d’activation et de configuration des pièces 
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Étape 1 : utiliser le portail Microsoft 365 Defender pour activer les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat policies** Safe \> **attachments,** and click Global **settings**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat policies** section Safe \>  \> **Attachments**.
 
-2. Dans le volant des **paramètres** globaux qui s’affiche, rendez-vous sur Activer Defender pour Office 365 pour **SharePoint, OneDrive** et Microsoft Teams paramètre. Déplacez le basculement vers la droite pour activer les pièces jointes sécurisées pour SharePoint, OneDrive ![ ](../../media/scc-toggle-on.png) et Microsoft Teams.
+2. Dans la page **Pièces jointes sécurisées,** cliquez **sur Paramètres globaux.**
+
+3. Dans la **section Paramètres globaux** qui **s’affiche,** rendez-vous dans la section Protéger SharePoint, OneDrive et Microsoft Teams protection.
+
+   Déplacez le basculement Activer Defender pour Office 365 pour **SharePoint, OneDrive** et Microsoft Teams sur le basculement droit pour activer les pièces jointes sécurisées pour SharePoint, OneDrive et ![ ](../../media/scc-toggle-on.png) Microsoft Teams.
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
@@ -71,7 +75,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Étape 2 : (recommandé) Utilisez SharePoint Online PowerShell pour empêcher les utilisateurs de télécharger des fichiers malveillants
 
-Par défaut, les utilisateurs ne peuvent pas ouvrir, déplacer, copier ou partager des fichiers malveillants détectés par la atp. Toutefois, ils peuvent supprimer et télécharger des fichiers malveillants.
+Par défaut, les utilisateurs ne peuvent pas ouvrir, déplacer, copier ou partager des fichiers malveillants détectés par des pièces jointes sécurisées pour SharePoint, OneDrive et <sup>\*</sup> Microsoft Teams. Toutefois, ils peuvent supprimer et télécharger des fichiers malveillants.
+
+<sup>\*</sup> Si les utilisateurs **accèdent à Gérer l’accès,** l’option **Partager** est toujours disponible.
 
 Pour empêcher les utilisateurs de télécharger des fichiers malveillants, connectez-vous [à SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) et exécutez la commande suivante :
 
@@ -86,38 +92,35 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
-## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Étape 3 (recommandé) Utilisez le portail Microsoft 365 Defender pour créer une stratégie d’alerte pour les fichiers détectés
+## <a name="step-3-recommended-use-the-microsoft-365-defender-portal-to-create-an-alert-policy-for-detected-files"></a>Étape 3 (recommandé) Utiliser le portail Microsoft 365 Defender pour créer une stratégie d’alerte pour les fichiers détectés
 
-Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d’autres administrateurs, lorsque des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams détectent un fichier malveillant. Pour en savoir plus sur les alertes, voir Créer des [alertes d’activité](../../compliance/create-activity-alerts.md)dans le portail Microsoft 365 Defender.
+Vous pouvez créer une stratégie d’alerte qui vous avertit, ainsi qu’à d’autres administrateurs, lorsque des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams détectent un fichier malveillant. Pour en savoir plus sur les alertes, voir Créer des alertes d’activité dans [le portail Microsoft 365 Defender.](../../compliance/create-activity-alerts.md)
 
-1. Dans le [portail Microsoft 365 Defender,](https://security.microsoft.com)go to **Policies & Rules** Alert \> **policy** or open <https://security.microsoft.com/alertpolicies> .
+1. Dans le portail Microsoft 365 Defender, allez à **Stratégies &** \> **Stratégies d’alerte** ou ouvrez <https://security.microsoft.com/alertpolicies> .
 
 2. Dans la page **Stratégie d’alerte,** cliquez **sur Nouvelle stratégie d’alerte.**
 
 3. **L’Assistant Nouvelle stratégie** d’alerte s’ouvre dans un volant. Dans la page **Nom de votre** alerte, configurez les paramètres suivants :
-
    - **Nom**: tapez un nom unique et descriptif. Par exemple, fichiers malveillants dans les bibliothèques.
    - **Description**: tapez une description facultative. Par exemple, avertit les administrateurs lorsque des fichiers malveillants sont détectés dans SharePoint Online, OneDrive ou Microsoft Teams.
-   - **Gravité :** laissez la valeur par défaut **Faible** sélectionnée, ou sélectionnez **Moyenne** ou **Élevée**.
-   - **Catégorie :** sélectionnez **Gestion des menaces.**
+   - **Gravité :** sélectionnez **Faible,** **Moyen** ou **Élevé** dans la liste de listes.
+   - **Catégorie :** sélectionnez **La gestion des menaces** dans la liste liste.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 4. Dans la page **Créer des paramètres d’alerte,** configurez les paramètres suivants :
-
-   - **Sur quoi voulez-vous alerter ? : l’activité** consiste à sélectionner **les programmes malveillants détectés dans le fichier.**
-   - **Comment voulez-vous que l’alerte** soit déclenchée ? : laissez la valeur par défaut chaque fois qu’une activité correspond à **la règle** sélectionnée.
+   - **Sur quoi voulez-vous alerter ?** \> **l’activité de section** consiste à sélectionner les programmes \> **malveillants détectés dans le fichier** dans la liste de listes.
+   - **Comment voulez-vous que l’alerte soit déclenchée ?** section : laissez la valeur par défaut **chaque fois qu’une activité correspond à la règle** sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 5. Dans la page **Définir vos destinataires,** configurez les paramètres suivants :
-
-   - **Envoyer des notifications par courrier** électronique : vérifiez que ce paramètre est sélectionné. Dans la zone **Destinataires du courrier** électronique, sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
+   - Vérifiez **que les notifications d’envoi** par courrier électronique sont sélectionnées. Dans la zone **Destinataires de** l’e-mail, sélectionnez un ou plusieurs administrateurs globaux, administrateurs de sécurité ou lecteurs de sécurité qui doivent recevoir une notification lorsqu’un fichier malveillant est détecté.
    - **Limite de notification quotidienne**: laissez la valeur par défaut **Aucune** limite sélectionnée.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-6. Dans la page **Examiner vos paramètres,** examinez les paramètres, puis cliquez sur Modifier dans l’une des sections pour apporter des modifications. 
+6. Dans la page **Passer en revue vos paramètres,** examinez vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
 
    Dans la section **Voulez-vous activer** la stratégie immédiatement ? Laissez la valeur par défaut Oui, l’activer **immédiatement** sélectionnée.
 
@@ -133,13 +136,13 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 **Remarque**: la valeur _gravité par défaut_ est Faible. Pour spécifier Medium ou High, incluez le paramètre _Severity_ et la valeur dans la commande.
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir New-ActivityAlert.](/powershell/module/exchange/new-activityalert)
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-ActivityAlert](/powershell/module/exchange/new-activityalert).
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
 - Pour vérifier que vous avez bien désactivé les pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams, utilisez l’une des étapes suivantes :
 
-  - Dans le [portail Microsoft 365 Defender,](https://security.microsoft.com)go to **Policies & rules** Threat \> **Policies** \> **Safe attachments,** select Global **settings**, and verify the value of the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting.
+  - Dans le portail Microsoft 365 Defender, go to **Policies & rules** Threat Policies section Threat \> **Policies** section \>  Safe \> **Attachments,** select Global **settings**, and verify the value of the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** setting.
 
   - Dans Exchange Online PowerShell, exécutez la commande suivante pour vérifier le paramètre de propriété :
 
@@ -158,10 +161,8 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [v
   Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant).
 
 - Pour vérifier que vous avez correctement configuré une stratégie d’alerte pour les fichiers détectés, utilisez l’une des étapes suivantes :
-
-  - Dans le portail Microsoft 365 Defender, sélectionnez Stratégies **&** Stratégie d’alerte Sélectionnez la stratégie d’alerte et vérifiez \>  \> les paramètres.
-
-  - Dans Microsoft 365 Du portail Defender PowerShell, remplacez par le nom de la stratégie d’alerte, exécutez la commande suivante et vérifiez les valeurs \<AlertPolicyName\> des propriétés :
+  - Dans le portail Microsoft 365 Defender, sélectionnez **Stratégies &** Stratégie d’alerte Sélectionnez la stratégie d’alerte et vérifiez \>  \> les paramètres.
+  - Dans Microsoft 365 Defender PowerShell, remplacez-le par le nom de la stratégie d’alerte, exécutez la commande suivante et vérifiez les valeurs \<AlertPolicyName\> des propriétés :
 
     ```powershell
     Get-ActivityAlert -Identity "<AlertPolicyName>"

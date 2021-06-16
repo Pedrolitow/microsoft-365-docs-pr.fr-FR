@@ -17,21 +17,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 8df2e240440ad33ac82d926b63cc495d1aaef692
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822140"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925150"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
 Vous pouvez créer et gérer des stratégies de rétention du journal d’audit dans le Centre de sécurité & conformité. Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation. Vous pouvez conserver des journaux d’audit pendant 10 ans. Vous pouvez créer des stratégies en fonction des critères suivants :
 
 - L'ensemble des activités d’un ou plusieurs services Microsoft 365
-
 - Des activités spécifiques (dans un service Microsoft 365) effectuées par l'ensemble des utilisateurs ou par des utilisateurs spécifiques
-
 - Un niveau de priorité indiquant la stratégie prioritaire si vous disposez de plusieurs stratégies au sein de votre organisation
 
 ## <a name="default-audit-log-retention-policy"></a>Une stratégie de rétention de journal d'audit par défaut
@@ -53,7 +51,7 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d
 
 ## <a name="create-an-audit-log-retention-policy"></a>Créer une stratégie de rétention de journal d’audit
 
-1. Accédez à [https://compliance.microsoft.com](https://compliance.microsoft.com) et connectez-vous avec le compte d’utilisateur ayant le rôle Configuration de l’organisation sur la page des autorisations dans le centre de sécurité & conformité.
+1. Accédez à <https://compliance.microsoft.com> et connectez-vous avec le compte d’utilisateur ayant le rôle Configuration de l’organisation sur la page des autorisations dans le centre de sécurité & conformité.
 
 2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Tout afficher**, puis cliquez sur **Audit**.
 
@@ -61,7 +59,7 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d
 
 4. Cliquez sur **Créer une stratégie de rétention d'audit**, puis complétez les champs suivants dans la page de menu volant:
 
-    ![Page de menu volant de la stratégie de rétention d'audit](../media/CreateAuditLogRetentionPolicy.png)
+   ![Page de menu volant de la stratégie de rétention d'audit](../media/CreateAuditLogRetentionPolicy.png)
 
    1. **Nom de la stratégie** Le nom de la stratégie de rétention du journal d’audit. Ce nom doit être unique dans votre organisation, et ne peut pas être modifié une fois la stratégie créée.
 
@@ -70,10 +68,8 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d
    3. **Utilisateurs :** sélectionnez un ou plusieurs utilisateurs auxquels la stratégie doit être appliquée. Si vous laissez cette zone vierge, la stratégie s’applique à tous les utilisateurs. Si vous laissez le **Type d’enregistrement** vierge, vous devez alors sélectionner un utilisateur.
 
    4. **Type d’enregistrement :** le type d’enregistrement d’audit auquel la stratégie s’applique. Si vous laissez cette propriété vierge, vous devez sélectionner un utilisateur dans la zone **Utilisateurs**. Vous pouvez sélectionner un seul type d’enregistrement ou plusieurs types d’enregistrements :
-
-   - Si vous sélectionnez un seul type d’enregistrement, le champ **Activités** s’affiche de façon dynamique. Vous pouvez utiliser la liste déroulante pour sélectionner les activités du type d’enregistrement sélectionné auquel la stratégie doit être appliquée. Si vous ne choisissez pas d'activité spécifique, la stratégie s’applique à toutes les activités du type d’enregistrement sélectionné.
-
-   - Si vous sélectionnez plusieurs types d’enregistrements, vous n’avez pas la possibilité de sélectionner des activités. La stratégie s’applique à toutes les activités des types d’enregistrement sélectionnés.
+      - Si vous sélectionnez un seul type d’enregistrement, le champ **Activités** s’affiche de façon dynamique. Vous pouvez utiliser la liste déroulante pour sélectionner les activités du type d’enregistrement sélectionné auquel la stratégie doit être appliquée. Si vous ne choisissez pas d'activité spécifique, la stratégie s’applique à toutes les activités du type d’enregistrement sélectionné.
+      - Si vous sélectionnez plusieurs types d’enregistrements, vous n’avez pas la possibilité de sélectionner des activités. La stratégie s’applique à toutes les activités des types d’enregistrement sélectionnés.
 
    5. **Durée :** la durée de conservation des journaux d’audit qui correspondent aux critères de la stratégie.
 
@@ -81,9 +77,9 @@ L'audit avancé de Microsoft 365 offre une stratégie de rétention du journal d
 
 5. Cliquez sur **Enregistrer** pour créer le nouveau journal d'audit de la stratégie de rétention.
 
-   La nouvelle stratégie s’affiche dans la liste sur l’onglet **Stratégies de rétention de l’audit**.
+La nouvelle stratégie s’affiche dans la liste sur l’onglet **Stratégies de rétention de l’audit**.
 
-## <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
+## <a name="manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center"></a>Gérer les stratégies de conservation des journaux d'audit dans le centre de conformité Microsoft 365
 
 Les stratégies de rétention du journal d’audit sont répertoriées sur l’onglet **Stratégies de rétention d’audit** (également appelé *tableau de bord*). Vous pouvez utiliser le tableau de bord pour afficher, modifier, et supprimer des stratégies de rétention d’audit.
 
@@ -102,9 +98,11 @@ Vous pouvez également sélectionner une stratégie pour afficher ses paramètre
 
 Pour modifier une stratégie, sélectionnez-la pour afficher la page de menu volant. Vous pouvez modifier un ou plusieurs paramètres, puis enregistrer vos modifications.
 
-
 > [!IMPORTANT]
-> Si vous utilisez la cmdlet **New-UnifiedAuditLogRetentionPolicy** , il est possible de créer une stratégie de rétention de journal d’audit des types d’enregistrements ou des activités qui ne sont pas disponibles dans l’outil **Créer une stratégie de rétention d’audit** dans le tableau de bord. Dans ce cas, vous ne pouvez pas modifier la stratégie (par exemple, modifier la durée de rétention ou ajouter et supprimer des activités) du tableau de bord **Stratégies de rétention d’audit**. Vous pouvez uniquement afficher et supprimer la stratégie dans le centre de conformité. Pour modifier la stratégie, utilisez l’applet de commande [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) dans le Centre de Sécurité et de Conformité PowerShell.<br/><br/>**Conseil :** Un message affiche en haut de la page de menu volant les stratégies qui doivent être modifiées à l’aide de PowerShell.
+>
+> Si vous utilisez la cmdlet **New-UnifiedAuditLogRetentionPolicy** , il est possible de créer une stratégie de rétention de journal d’audit des types d’enregistrements ou des activités qui ne sont pas disponibles dans l’outil **Créer une stratégie de rétention d’audit** dans le tableau de bord. Dans ce cas, vous ne pouvez pas modifier la stratégie (par exemple, modifier la durée de rétention ou ajouter et supprimer des activités) du tableau de bord **Stratégies de rétention d’audit**. Vous pouvez uniquement afficher et supprimer la stratégie dans le centre de conformité. Pour modifier la stratégie, vous devez utiliser la cmdlet [Set-UnifiedAuditLogRetentionPolicy dans le PowerShell du ](/powershell/module/exchange/set-unifiedauditlogretentionpolicy)Centre de sécurité et de conformité.
+>
+> **Conseil :** Un message affiche en haut de la page de menu volant les stratégies qui doivent être modifiées à l’aide de PowerShell.
 
 ### <a name="delete-policies-in-the-dashboard"></a>Supprimer des stratégies dans le tableau de bord
 
@@ -120,20 +118,17 @@ Pour créer une stratégie de rétention de journal d’audit dans PowerShell, s
 
 1. [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-2. Pour créer une stratégie de rétention, exécutez la commande suivante.
+2. Exécutez la commande suivante pour créer une stratégie de conservation des journaux d'audit :
 
    ```powershell
    New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
-    Cet exemple crée une stratégie de rétention de journal d’audit nommée « Stratégie d’audit Microsoft Teams » ayant les paramètres suivants :
+   Cet exemple crée une stratégie de rétention de journal d’audit nommée « Stratégie d’audit Microsoft Teams » ayant les paramètres suivants :
 
    - Une description de la stratégie.
-
    - Conserve toutes les activités Microsoft Teams (telles que définies par le paramètre *RecordType*).
-
    - Conserve les journaux d'audit Microsoft Teams pendant 10 ans.
-
    - Une priorité de 100.
 
 Voici un autre exemple de création d’une stratégie de rétention de journal d’audit. Cette stratégie conserve les journaux d’audit pour l’activité « Utilisateur connecté » pendant six mois pour l’utilisateur admin@contoso.onmicrosoft.com.
@@ -169,8 +164,12 @@ Pour supprimer une stratégie de rétention de journal d’audit, utilisez la cm
 
 Comme indiqué précédemment, les enregistrements d’audit pour des opérations dans Azure Active Directory, Exchange Online, SharePoint Online et OneDrive Entreprise sont par défaut conservés pendant un an. Le tableau suivant répertorie tous les types d’enregistrements (pour chaque service) inclus dans la stratégie de rétention par défaut du journal d’audit. Cela signifie que les journaux d’audit pour toute opération ayant ce type d’enregistrement sont conservés pendant un an, sauf si une stratégie de rétention de journal d’audit personnalisée est prioritaire pour un type d’enregistrement, une opération ou un utilisateur spécifique. La valeur Enum (affichée comme valeur de la propriété RecordType dans un enregistrement d’audit) pour chaque type d’enregistrement est affichée entre parenthèses.
 
-|AzureActiveDirectory |Exchange  |SharePoint ou OneDrive|
-|:---------|:---------|:---------|
+<br>
+
+****
+
+|AzureActiveDirectory|Exchange |SharePoint ou OneDrive|
+|---|---|---|
 |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
 |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
 |AzureActiveDirectoryStsLogon (15)|Campaign (62)|Project (35)|

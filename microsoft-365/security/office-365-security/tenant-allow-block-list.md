@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des autoriser et des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929730"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933154"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -92,44 +92,36 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées d’URL de blocage dans la liste d’adresses client autoriser/bloquer
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** Tenant \> **Allow/Block Lists**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. Dans la page **Liste d’adresses** client autoriser/bloquer, vérifiez que l’onglet **URL** est sélectionné, puis cliquez sur **Bloquer**
+2. Dans la page Liste d’adresses  client **autoriser/bloquer,** vérifiez que l’onglet URL est sélectionné, puis cliquez sur Bloquer l’icône ![ ](../../media/m365-cc-sc-create-icon.png) **Bloquer.**
 
 3. Dans le **volant Bloquer les URL** qui s’affiche, configurez les paramètres suivants :
-
-   - **Ajouter des URL à bloquer :** entrez une URL par ligne, jusqu’à un maximum de 20. Pour plus d’informations sur la syntaxe des entrées d’URL, voir la [syntaxe d’URL](#url-syntax-for-the-tenant-allowblock-list) pour la section Tenant Allow/Block List plus loin dans cet article.
-
+   - **Ajouter des URL avec des caractères génériques**: entrez une URL par ligne, jusqu’à un maximum de 20. Pour plus d’informations sur la syntaxe des entrées d’URL, voir la [syntaxe d’URL](#url-syntax-for-the-tenant-allowblock-list) pour la section Tenant Allow/Block List plus loin dans cet article.
    - **N’expirez jamais**: faites l’une des étapes suivantes :
-
-     - Vérifiez que le paramètre est désactivé (basculement désactivé) et utilisez la case Expires on pour spécifier la ![ ](../../media/scc-toggle-off.png) date d’expiration des entrées. 
+     - Vérifiez que le paramètre est désactivé (basculement désactivé) et utilisez la zone Supprimer sur pour spécifier la ![ date d’expiration ](../../media/scc-toggle-off.png) des entrées. 
 
        ou
 
      - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Activer](../../media/scc-toggle-on.png).
-
    - **Remarque facultative**: entrez un texte descriptif pour les entrées.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées de fichiers bloqués dans la liste des locataires autoriser/bloquer
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées de fichiers bloqués dans la liste d’attente des locataires
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat policies** Tenant \> **Allow/Block Lists**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. Dans la page **Client Autoriser/Bloquer la liste,** sélectionnez l’onglet **Fichiers,** puis cliquez sur **Bloquer.**
+2. Dans la page Liste des clients **autoriser/bloquer,** sélectionnez l’onglet **Fichiers,** puis cliquez sur Bloquer l’icône ![ ](../../media/m365-cc-sc-create-icon.png) **Bloquer.**
 
-3. Dans la **zone Ajouter des fichiers pour bloquer** le flyout qui s’affiche, configurez les paramètres suivants :
-
+3. Dans le **volant Bloquer les fichiers** qui s’affiche, configurez les paramètres suivants :
    - **Ajouter des hachages de fichier**: entrez une valeur de hachage SHA256 par ligne, jusqu’à un maximum de 20.
-
    - **N’expirez jamais**: faites l’une des étapes suivantes :
-
-     - Vérifiez que le paramètre est désactivé (basculement désactivé) et utilisez la case Expires on pour spécifier la ![ ](../../media/scc-toggle-off.png) date d’expiration des entrées. 
+     - Vérifiez que le paramètre est désactivé (basculement désactivé) et utilisez la zone Supprimer sur pour spécifier la ![ date d’expiration ](../../media/scc-toggle-off.png) des entrées. 
 
      ou
 
      - Déplacez le basculement vers la droite pour configurer les entrées pour qu’ils n’expirent jamais : ![Activer](../../media/scc-toggle-on.png).
-
    - **Remarque facultative**: entrez un texte descriptif pour les entrées.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
@@ -142,42 +134,37 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 - Lorsque vous configurez une entrée d’autoriser ou de bloquer une paire de domaines, les messages provenant de cette paire de domaines n’apparaissent plus dans l’aperçu de l’usurpation d’intelligence.
 - Les entrées des expéditeurs usurpés n’expirent jamais.
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat policies** Tenant \> **Allow/Block Lists**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. Dans la page **Client autoriser/Bloquer la liste,** sélectionnez l’onglet **Usurpation** d’informations, puis cliquez sur **Ajouter**.
+2. Dans la page **Client autoriser/Bloquer la liste,** sélectionnez l’onglet **Usurpation** d’informations, puis cliquez sur Bloquer ![ l’icône ](../../media/m365-cc-sc-create-icon.png) **Ajouter.**
 
 3. Dans le **volant Ajouter de nouvelles paires de domaines** qui s’affiche, configurez les paramètres suivants :
-
    - **Ajoutez de nouvelles paires de domaines avec des caractères génériques**: entrez une paire de domaines par ligne, jusqu’à un maximum de 20. Pour plus d’informations sur la syntaxe des entrées d’expéditeur usurpées, voir la syntaxe de paire domaine pour les entrées d’expéditeur usurpées dans la section Client [Autoriser/Bloquer](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) la liste plus loin dans cet article.
-
    - **Type d’usurpation**: sélectionnez l’une des valeurs suivantes :
      - **Interne**: l’expéditeur usurpé se trouve dans un domaine appartenant à votre organisation [(un domaine accepté).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Externe**: l’expéditeur usurpé se trouve dans un domaine externe.
-
    - **Action**: **sélectionnez Autoriser** ou **Bloquer**.
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour afficher les entrées dans la liste d’attente des locataires
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat policies** Tenant \> **Allow/Block Lists**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. Sélectionnez l’onglet de votre choix. Les colonnes disponibles dépendent de l’onglet que vous avez sélectionné :
 
    - **URL**:
      - **Valeur**: URL.
      - **Action**: La valeur **Bloquer**.
-     - **Date de la dernière mise à jour**
-     - **Date d’expiration**
-     - **Remarque**
-
+     - **Dernière mise à jour**
+     - **Supprimer le**
+     - **Notes**
    - **Files**
      - **Valeur**: hachage du fichier.
      - **Action**: La valeur **Bloquer**.
-     - **Date de la dernière mise à jour**
-     - **Date d’expiration**
-     - **Remarque**
-
+     - **Dernière mise à jour**
+     - **Supprimer le**
+     - **Notes**
    - **Usurpation**
      - **Utilisateur usurpé**
      - **Infrastructure d’envoi**
@@ -190,10 +177,9 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
    - **URL : vous** pouvez grouper les résultats par **action.**
    - **Fichiers**: vous pouvez grouper les résultats par **action.**
-   - **Domaines des expéditeurs pour le contournement BCL :** **le groupe** n’est pas disponible sous cet onglet.
    - **Usurpation :** vous pouvez grouper les résultats par **action** ou **type d’usurpation.**
 
-   Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur **Effacer l’icône** ![ de recherche Effacer la ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) recherche.
+   Cliquez **sur** Rechercher, entrez une partie ou l’ensemble d’une valeur, puis appuyez sur Entrée pour trouver une valeur spécifique. Lorsque vous avez terminé, cliquez sur ![ Effacer l’icône de recherche ](../../media/m365-cc-sc-close-icon.png) **Effacer la recherche.**
 
    Cliquez **sur Filtrer** pour filtrer les résultats. Les valeurs disponibles dans le flyout **Filter** qui s’affiche dépendent de l’onglet que vous avez sélectionné :
 
@@ -201,19 +187,12 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
      - **Action**
      - **Ne jamais expirer**
      - **Date de la dernière mise à jour**
-     - **Date d’expiration**
-
+     - **Supprimer le**
    - **Files**
      - **Action**
      - **Ne jamais expirer**
-     - **Date de la dernière mise à jour**
-     - **Date d’expiration**
-
-   - **Domaines des expéditeurs pour le contournement BCL**
-     - **Ne jamais expirer**
-     - **Date de la dernière mise à jour**
-     - **Date d’expiration**
-
+     - **Dernière mise à jour**
+     - **Supprimer le**
    - **Usurpation**
      - **Action**
      - **Type d’usurpation**
@@ -222,43 +201,34 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour modifier des entrées dans la liste d’attente des locataires
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat policies** Tenant \> **Allow/Block Lists**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. Sélectionnez l’onglet qui contient le type d’entrée à modifier :
    - **URL**
    - **Files**
-   - **Domaines des expéditeurs pour le contournement BCL**
    - **Usurpation**
 
-3. Sélectionnez l’entrée à modifier, puis cliquez **sur** Modifier ![ l’icône ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) Modifier. Les valeurs que vous pouvez modifier dans le volant qui s’affiche dépendent de l’onglet que vous avez sélectionné à l’étape précédente :
-
+3. Sélectionnez l’entrée à modifier, puis cliquez sur ![ Modifier ](../../media/m365-cc-sc-edit-icon.png) **l’icône Modifier.** Les valeurs que vous pouvez modifier dans le volant qui s’affiche dépendent de l’onglet que vous avez sélectionné à l’étape précédente :
    - **URL**
      - **Ne jamais expirer** et/ou date d’expiration.
      - **Note facultative**
-
    - **Files**
      - **Ne jamais expirer** et/ou date d’expiration.
      - **Note facultative**
-
-   - **Domaines des expéditeurs pour le contournement BCL**
-     - **Ne jamais expirer** et/ou date d’expiration.
-
    - **Usurpation**
      - **Action**: vous pouvez modifier la valeur sur **Autoriser** ou **Bloquer**.
-
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour supprimer des entrées de la liste des locataires autoriser/bloquer
 
-1. Dans le portail Microsoft 365 Defender, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
 2. Sélectionnez l’onglet qui contient le type d’entrée à supprimer :
    - **URL**
    - **Files**
-   - **Domaines des expéditeurs pour le contournement BCL**
    - **Usurpation**
 
-3. Sélectionnez l’entrée à supprimer, puis cliquez **sur** Supprimer ![ l’icône ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) Supprimer.
+3. Sélectionnez l’entrée à supprimer, puis cliquez sur ![ Supprimer ](../../media/m365-cc-sc-delete-icon.png) **l’icône Supprimer.**
 
 4. Dans la boîte de dialogue d’avertissement qui s’affiche, cliquez sur **Supprimer.**
 
@@ -614,7 +584,7 @@ Les entrées suivantes ne sont pas valides :
   - \*.com
   - \*.pdf
 
-- **Caractère générique sur du texte ou sans espacement :**
+- **Caractère générique sur du texte ou sans espacement**:
 
   - \*contoso.com
   - contoso.com\*
@@ -662,7 +632,7 @@ Voici quelques exemples de paires de domaines valides pour identifier les expéd
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-Le nombre maximal d’entrées d’expéditeur usurpées est de 1 000. 
+Le nombre maximal d’entrées d’expéditeur usurpées est de 1 000.
 
 L’ajout d’une paire de domaines autorise ou bloque uniquement la *combinaison* de l’utilisateur usurpé *et* de l’infrastructure d’envoi. Il n’autorise pas le courrier électronique provenant de l’utilisateur usurpé d’aucune source, ni le courrier provenant de la source d’infrastructure d’envoi pour tout utilisateur usurpé. 
 
@@ -671,4 +641,4 @@ Par exemple, vous ajoutez une entrée d’accès pour la paire de domaines suiva
 - **Domaine**: gmail.com
 - **Infrastructure**: tms.mx.com
 
-Seuls les messages provenant *de* ce domaine et de cette paire d’infrastructure d’envoi sont autorisés à usurper l’usurpation. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont vérifiés par la veille contre l’usurpation d’adresse.
+Seuls les messages provenant de ce domaine et *de* cette paire d’infrastructure d’envoi sont autorisés à usurper l’usurpation. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont vérifiés par la veille contre l’usurpation d’adresse.

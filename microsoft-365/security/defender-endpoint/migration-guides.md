@@ -17,14 +17,14 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 4d10de35358d528f004ee11e931fc6f41ce20482
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a0b1f82ae26ba1103ed4cc7eb0be7e9c376b5f52
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930498"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933034"
 ---
-# <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Effectuer le basculement vers Microsoft Defender pour les points de terminaison et les Antivirus Microsoft Defender
+# <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Passer à Microsoft Defender pour le point de terminaison
 
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -34,19 +34,19 @@ ms.locfileid: "52930498"
 
 ## <a name="migration-guides"></a>Guides de migration
 
-Si vous envisagez de passer d’une solution Non-Microsoft 365 Defender à Microsoft Defender pour endpoint avec Antivirus Microsoft Defender, consultez nos conseils de migration. Sélectionnez le scénario qui représente le mieux l’endroit où vous vous trouvez dans votre processus de déploiement et consultez les instructions.
+Si vous envisagez de passer à Defender pour Endpoint, nous vous aiderons. Dans le tableau suivant, examinez les scénarios. Sélectionnez le scénario qui représente le mieux votre situation et consultez les instructions recommandées.
 
-|Scénario |Aide |
-|:--|:--|
-|Vous n’avez pas encore de solution de protection de point de terminaison et vous souhaitez en savoir plus sur le fonctionnement de Microsoft Defender & Antivirus Microsoft Defender endpoint.  |[Laboratoire d’évaluation de Microsoft Defender for Endpoint](evaluation-lab.md)   |
-|Vous avez microsoft Defender pour point de terminaison & Antivirus Microsoft Defender besoin d’aide pour tout configurer et configurer.  |[Guide de déploiement de Microsoft Defender for Endpoint](deployment-phases.md)  |
-|Vous envisagez de migrer d’une solution de protection de point de terminaison non Microsoft vers Microsoft Defender pour endpoint & Antivirus Microsoft Defender. |[Passer à Microsoft Defender pour le point de terminaison](switch-to-microsoft-defender-migration.md)   |
-|Vous avez migré vers Microsoft Defender pour endpoint & Antivirus Microsoft Defender et vous avez besoin d’aide pour les étapes suivantes, telles que la configuration de fonctionnalités supplémentaires ou l’ajustement de vos paramètres de sécurité. | [Gérer Microsoft Defender pour le point de terminaison, après la migration](manage-atp-post-migration.md) |
+| Scénario | Aide |
+|:----|:----|
+| Vous n’avez pas encore de solution de protection de point de terminaison en place et vous souhaitez en savoir plus sur Defender for Endpoint. <p> Vous souhaitez voir comment Fonctionne Defender pour Endpoint avant de le déployer dans votre environnement.  | [Laboratoire d’évaluation de Microsoft Defender for Endpoint](evaluation-lab.md)   |
+| Vous avez déjà Defender pour point de terminaison et vous souhaitez obtenir de l’aide pour tout configurer et configurer.  | [Guide de déploiement de Microsoft Defender for Endpoint](deployment-phases.md)  |
+| Vous envisagez de passer d’une solution de protection de point de terminaison non-Microsoft à Defender for Endpoint et Antivirus Microsoft Defender. <p> Vous souhaitez obtenir une vue d’ensemble du processus de migration et comment effectuer le changement. |[Passer à Microsoft Defender pour le point de terminaison](switch-to-microsoft-defender-migration.md)   |
+| Vous avez déjà migré ou intégré à Defender for Endpoint. Vous souhaitez de l’aide sur les étapes suivantes, telles que la gestion de vos paramètres de sécurité, la configuration d’autres fonctionnalités ou l’ajustement de vos stratégies de sécurité. | [Gérer Microsoft Defender pour le point de terminaison, après la migration](manage-atp-post-migration.md) |
 
 
 ## <a name="do-you-have-feedback-for-us"></a>Avez-vous des commentaires à notre place ?
 
-Dites-nous ce que vous en pensez ! Envoyez vos commentaires au bas de la page. Nous prenons vos commentaires en compte à mesure que nous continuerons d’améliorer et d’ajouter nos conseils de migration.
+Dites-nous ce que vous en pensez ! Envoyez vos commentaires en bas de la page. Nous prenons vos commentaires en compte à mesure que nous continuerons d’améliorer et d’ajouter à nos conseils de migration.
 
 ## <a name="see-also"></a>Voir aussi
 

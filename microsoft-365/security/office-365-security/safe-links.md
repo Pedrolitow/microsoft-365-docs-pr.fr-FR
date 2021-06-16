@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: Dans cet article, les administrateurs peuvent en savoir plus sur la protection contre les liens sécurisés dans Defender for Office 365 pour protéger leur organisation contre le hameçonnage et d’autres attaques qui utilisent des URL malveillantes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9775c67a35d45595f68cd364dc4d70e9985b7e9e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 240056565d88977aa7019f5a14e2db98a8dbb6db
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930522"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933190"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Liens sécurisés dans Microsoft Defender pour Office 365
 
@@ -49,7 +49,7 @@ La fonctionnalité Liens sécurisés de Defender pour [Office 365](defender-for-
 
 La protection des liens sécurisés est disponible aux emplacements suivants :
 
-- **Messages électroniques**: la protection contre les liens dans les messages électroniques est contrôlée par les stratégies de liens sécurisés. Il n’existe aucune stratégie de liens sécurisés par défaut, donc pour obtenir la protection des liens sûrs dans les messages électroniques, vous devez créer une ou plusieurs stratégies **de liens sécurisés.** Pour obtenir des instructions, voir [Configurer des stratégies de liens sécurisés dans Microsoft Defender Office 365](set-up-safe-links-policies.md).
+- **Messages électroniques**: la protection des liens dans les messages électroniques est contrôlée par les stratégies de liens sécurisés. Il n’existe aucune stratégie de liens sécurisés par défaut, donc pour obtenir la protection des liens sûrs dans les messages électroniques, vous devez créer une ou plusieurs stratégies **de liens sécurisés.** Pour obtenir des instructions, voir [Configurer des stratégies de liens sécurisés dans Microsoft Defender Office 365](set-up-safe-links-policies.md).
 
   Pour plus d’informations sur la protection des liens sécurisés pour les messages électroniques, consultez la section Paramètres de liens [sécurisés](#safe-links-settings-for-email-messages) pour les messages électroniques plus loin dans cet article.
   
@@ -60,7 +60,7 @@ La protection des liens sécurisés est disponible aux emplacements suivants :
 
   Pour plus d’informations sur la protection des liens Teams, voir les [paramètres](#safe-links-settings-for-microsoft-teams) de liens Microsoft Teams la section plus loin dans cet article.
 
-- **Office 365 :** la protection des liens sécurisés pour Office 365 applications est disponible dans les applications de bureau, mobiles et web pris en charge. Vous **configurez la** protection des liens Office 365 les applications dans le paramètre global qui ne sont pas des **stratégies** de liens sécurisés. Pour obtenir des instructions, voir [Configurer les paramètres globaux](configure-global-settings-for-safe-links.md)des paramètres de liens sécurisés dans Microsoft Defender pour Office 365 .
+- **Office 365 applications :** la protection des liens sécurisés pour Office 365 applications est disponible dans les applications de bureau, mobiles et web pris en charge. Vous **configurez la** protection des liens Office 365 les applications dans le paramètre global qui ne sont pas des **stratégies** de liens sécurisés. Pour obtenir des instructions, voir [Configurer les paramètres globaux](configure-global-settings-for-safe-links.md)des paramètres de liens sécurisés dans Microsoft Defender pour Office 365 .
 
   La protection des liens sécurisés pour les applications Office 365 est appliquée à tous les utilisateurs de l’organisation qui sont titulaires d’une licence Defender pour Office 365, que les utilisateurs soient inclus ou non dans les stratégies de liens sécurisés actives.
 
@@ -87,11 +87,11 @@ Le tableau suivant décrit les scénarios pour les liens sécurisés dans les or
 
 |Scénario|Résultat|
 |---|---|
-|Jean est membre du service marketing. La protection des liens Office 365 les applications est mise en place dans les paramètres globaux des liens sécurisés, et il existe une stratégie de liens sécurisés qui s’applique aux membres du service marketing. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par des liens sécurisés. <p> Jean est inclus dans une stratégie de liens sécurisés et la protection contre les liens sécurisés pour Office 365 applications est désactivée. <p> Pour plus d’informations sur la configuration requise pour la protection des liens sécurisés dans les applications Office 365, consultez la section des paramètres de liens Office 365 [applications sécurisées](#safe-links-settings-for-office-365-apps) plus loin dans cet article.|
-|Aucune stratégie de liens Microsoft 365 E5 configurée n’est configurée pour l’organisation de Chris. Chris reçoit un courrier électronique d’un expéditeur externe qui contient une URL vers un site web malveillant sur qui il clique.|Chris n’est pas protégé par les liens sécurisés. <p> Un administrateur doit créer au moins une stratégie de liens sécurisés pour que tout le monde puisse obtenir la protection des liens sécurisés dans les messages électroniques entrants. Chris doit être inclus dans les conditions de la stratégie pour obtenir la protection contre les liens sécurisés.|
-|Dans l’organisation de Pat, aucun administrateur n’a créé de stratégies de liens sécurisés, mais la protection des liens Office 365 applications sécurisées est désactivée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par les liens sécurisés. <p> Bien que la protection des liens Office 365 applications sécurisées soit désactivée globalement, Pat n’est pas inclus dans les stratégies de liens sécurisés actives, de sorte que la protection ne peut pas être appliquée.|
+|Jean est membre du service marketing. La protection des liens Office 365 les applications est mise en place dans les paramètres globaux des liens sécurisés, et il existe une stratégie de liens sécurisés qui s’applique aux membres du service marketing. Jean ouvre une présentation PowerPoint dans un message électronique, puis clique sur une URL dans la présentation.|Jean est protégé par des liens sécurisés. <p> Jean est inclus dans une stratégie de liens sécurisés et la protection contre les liens sécurisés pour Office 365 applications est désactivée. <p> Pour plus d’informations sur les conditions requises pour la protection des liens sécurisés dans les applications Office 365, consultez la section Paramètres de liens [sécurisés](#safe-links-settings-for-office-365-apps) pour les applications Office 365 plus loin dans cet article.|
+|Aucune stratégie de liens Microsoft 365 E5 n’est configurée pour l’organisation de Chris. Chris reçoit un courrier électronique d’un expéditeur externe qui contient une URL vers un site web malveillant sur qui il clique.|Chris n’est pas protégé par les liens sécurisés. <p> Un administrateur doit créer au moins une stratégie de liens sécurisés pour que tout le monde puisse obtenir la protection des liens sécurisés dans les messages électroniques entrants. Chris doit être inclus dans les conditions de la stratégie pour obtenir la protection contre les liens sécurisés.|
+|Dans l’organisation de Pat, aucun administrateur n’a créé de stratégies de liens sécurisés, mais la protection contre les liens Office 365 applications est désactivée. Pat ouvre un document Word et clique sur une URL dans le fichier.|Pat n’est pas protégé par les liens sécurisés. <p> Bien que la protection des liens Office 365 applications sécurisées soit désactivée globalement, Pat n’est pas inclus dans les stratégies de liens sécurisés actives, de sorte que la protection ne peut pas être appliquée.|
 |Dans l’organisation de Lee, est configuré dans la liste Bloquer les URL suivantes dans les `https://tailspintoys.com` **paramètres** globaux des liens sécurisés. Une stratégie de liens sécurisés qui inclut Lee existe déjà. Lee reçoit un message électronique qui contient `https://tailspintoys.com/aboutus/trythispage` l’URL. Lee clique sur l’URL.|L’URL peut être automatiquement bloquée pour Lee ; Cela dépend de l’entrée d’URL dans la liste et du client de messagerie Lee utilisé. Pour plus d’informations, voir la section « Bloquer les URL suivantes » pour la section Liens [sécurisés](#block-the-following-urls-list-for-safe-links) plus loin dans cet article.|
-|Elle et Julia travaillent toutes les deux pour contoso.com. Il y a longtemps, les administrateurs ont configuré des stratégies de liens sécurisés qui s’appliquent à Laso et Julia. Il envoie un e-mail à Julia, sans savoir que le message contient une URL malveillante.|Julia est protégée par  des liens sécurisés si la stratégie de liens sécurisés qui s’applique à elle est configurée pour s’appliquer aux messages entre des destinataires internes. Pour plus d’informations, consultez la section Paramètres de liens [sécurisés](#safe-links-settings-for-email-messages) pour les messages électroniques plus loin dans cet article.|
+|Elle et Julia travaillent toutes les deux pour contoso.com. Il y a longtemps, les administrateurs configuraient des stratégies de liens sécurisés qui s’appliquaient à la fois à Celle-ci et à Julia. Il envoie un e-mail à Julia, sans savoir que le message contient une URL malveillante.|Julia est protégée par  la stratégie de liens sécurisés si la stratégie de liens sécurisés qui s’applique à elle est configurée pour s’appliquer aux messages entre des destinataires internes. Pour plus d’informations, consultez la section Paramètres de liens [sécurisés](#safe-links-settings-for-email-messages) pour les messages électroniques plus loin dans cet article.|
 |
 
 ## <a name="safe-links-settings-for-email-messages"></a>Paramètres de liens sécurisés pour les messages électroniques
@@ -106,7 +106,7 @@ Les paramètres des stratégies de liens sécurisés qui s’appliquent aux mess
 
   - L’analyse des liens sécurisés est activée Outlook (C2R) sur Windows.
   - Les URL sont réécrites et les utilisateurs sont acheminés via la protection de liens sécurisés lorsqu’ils cliquent sur les URL des messages.
-  - Lorsque l’utilisateur clique dessus, les URL sont vérifiées par rapport à la liste des URL malveillantes connues et à la liste « Bloquer les URL [suivantes](#block-the-following-urls-list-for-safe-links)».
+  - Lorsque vous cliquez dessus, les URL sont vérifiées par rapport à la liste des URL malveillantes connues et à la liste « Bloquer les URL [suivantes](#block-the-following-urls-list-for-safe-links)».
   - Les URL qui n’ont pas de réputation valide sont détonées de manière asynchrone en arrière-plan.
 
 - Appliquer **l’analyse d’URL** en temps réel pour les liens suspects et les liens pointant vers des fichiers : active l’analyse en temps réel des liens, y compris les liens dans les messages électroniques qui pointent vers du contenu téléchargeable. La valeur recommandée est activée.
@@ -114,7 +114,7 @@ Les paramètres des stratégies de liens sécurisés qui s’appliquent aux mess
     - Activé : les messages qui contiennent des URL sont maintenus jusqu’à la fin de l’analyse. Les messages ne sont remis qu’une fois que les URL sont confirmées comme sûres. Il s’agit de la valeur recommandée.
     - Désactivé : si l’analyse d’URL ne peut pas se terminer, remettre le message quand même.
 
-- **Appliquer** des liens sûrs aux messages électroniques envoyés au sein de l’organisation : active ou désactive l’analyse des liens sécurisés sur les messages envoyés entre des expéditeurs internes et des destinataires internes au sein de la même Exchange Online organisation. La valeur recommandée est activée.
+- Appliquer des liens sûrs aux **messages** électroniques envoyés au sein de l’organisation : active ou désactive l’analyse des liens sécurisés sur les messages envoyés entre des expéditeurs internes et des destinataires internes au sein de la même Exchange Online organisation. La valeur recommandée est activée.
 
 - **Ne pas suivre les clics** de l’utilisateur : active ou désactive le stockage des données de clic de liens sécurisés pour les URL sur les messages électroniques. La valeur recommandée consiste à laisser ce paramètre non sélectionné (pour suivre les clics de l’utilisateur).
 
@@ -122,7 +122,7 @@ Les paramètres des stratégies de liens sécurisés qui s’appliquent aux mess
 
 - **N’autorisez pas les utilisateurs** à cliquer sur l’URL d’origine : autorise ou empêche les utilisateurs de cliquer sur la [page](#warning-pages-from-safe-links) d’avertissement vers l’URL d’origine. La valeur recommandée est activée.
 
-- **Afficher la marque de l’organisation sur les pages de notification** et d’avertissement : cette option affiche la marque de votre organisation sur les pages d’avertissement. La branding permet aux utilisateurs d’identifier les avertissements légitimes, car les pages d’avertissement Microsoft par défaut sont souvent utilisées par les attaquants. Pour plus d’informations sur la personnalisation, voir [Personnaliser le thème Microsoft 365 pour votre organisation.](../../admin/setup/customize-your-organization-theme.md)
+- **Afficher la marque de l’organisation sur les pages de notification** et d’avertissement : cette option affiche la marque de votre organisation sur les pages d’avertissement. La branding permet aux utilisateurs d’identifier les avertissements légitimes, car les pages d’avertissement Microsoft par défaut sont souvent utilisées par les attaquants. Pour plus d’informations sur la personnalisation, voir [Personnaliser Microsoft 365 thème pour votre organisation.](../../admin/setup/customize-your-organization-theme.md)
 
 - **Ne réécrivez pas les URL suivantes :** Laisse les URL telles qu’elles sont. Conserve une liste personnalisée d’URL sécurisées qui n’ont pas besoin d’analyse. La liste est unique pour chaque stratégie de liens sécurisés. Pour plus d’informations sur la liste Ne pas réécrire les URL **suivantes,** voir les listes « Ne pas réécrire les URL suivantes » dans la section Stratégies de liens [sécurisés](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) plus loin dans cet article.
 
@@ -151,7 +151,7 @@ Les paramètres des stratégies de liens sécurisés qui s’appliquent aux mess
 
    - Si l’URL est incluse dans la liste Bloquer les URL **suivantes,** un avertissement [d’URL bloquée](#blocked-url-warning) s’ouvre.
 
-   - Si l’URL pointe vers un site web qui [a](#malicious-website-warning) été déterminé comme malveillant, une page d’avertissement de site web malveillant (ou une autre page d’avertissement) s’ouvre.
+   - Si l’URL pointe vers un site web qui a été déterminé comme malveillant, une page d’avertissement de site [web](#malicious-website-warning) malveillant (ou une autre page d’avertissement) s’ouvre.
 
    - Si l’URL pointe vers un fichier téléchargeable et que l’analyse des **URL** en temps réel à la recherche de liens suspects et de liens pointant vers le paramètre de fichiers est activée dans la stratégie qui s’applique à l’utilisateur, le fichier téléchargeable est vérifié.
 
@@ -176,7 +176,7 @@ Une fois que vous avez activer la protection contre les liens sécurisés pour l
 
 - Si vous avez cliqué sur le lien dans une conversation Teams, une conversation de groupe ou à partir de canaux, la page d’avertissement, comme illustré dans la capture d’écran ci-dessous, s’affiche dans le navigateur web par défaut.
 - Si vous avez cliqué sur le lien à partir d’un onglet épinglé, la page d’avertissement s’affiche dans l’interface Teams dans cet onglet. L’option d’ouverture du lien dans un navigateur web est désactivée pour des raisons de sécurité.
-- Selon la configuration du paramètre Ne pas autoriser les utilisateurs à accéder à **l’URL** d’origine de la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine (continuer quand même **(non recommandé)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre Ne pas autoriser les utilisateurs à accéder au paramètre **d’URL** d’origine afin que les utilisateurs ne peuvent pas accéder à l’URL d’origine.
+- Selon la configuration du paramètre Ne pas autoriser les utilisateurs à accéder à **l’URL** d’origine de la stratégie, l’utilisateur est autorisé ou non à accéder à l’URL d’origine (continuer quand même **(non recommandé)** dans la capture d’écran). Nous vous recommandons d’activer le paramètre Ne pas autoriser les utilisateurs à cliquer sur le paramètre **d’URL** d’origine afin que les utilisateurs ne peuvent pas accéder à l’URL d’origine.
 
 Si l’utilisateur qui a envoyé le lien n’est pas inclus dans une stratégie de liens sécurisés dans laquelle la protection Teams est activée, l’utilisateur est libre de cliquer sur l’URL d’origine sur son ordinateur ou son appareil.
 
@@ -196,7 +196,7 @@ Cliquer sur le **bouton Revenir en** arrière dans la page d’avertissement per
 
 ## <a name="safe-links-settings-for-office-365-apps"></a>Paramètres de liens sécurisés pour Office 365 applications
 
-La protection des liens sécurisés pour les applications Office 365 vérifie les liens dans les documents Office, et non dans les messages électroniques (mais elle peut vérifier les liens dans les documents Office joints dans les messages électroniques après l’ouverture du document).
+La protection des liens sécurisés pour les applications Office 365 vérifie les liens dans les documents Office, et non dans les messages électroniques (mais elle peut vérifier les liens dans les documents Office joints dans les messages électroniques une fois le document ouvert).
 
 La protection des liens sécurisés pour Office 365 applications a les exigences client suivantes :
 
@@ -236,7 +236,7 @@ Pour plus d’informations sur les valeurs recommandées pour les paramètres de
 
    - Si l’URL est incluse dans la liste qui ignore l’analyse des liens sécurisés (la liste Bloquer les URL **suivantes),** une page d’avertissement [d’URL](#blocked-url-warning) bloquée s’ouvre.
 
-   - Si l’URL pointe vers un site web qui [a](#malicious-website-warning) été déterminé comme malveillant, une page d’avertissement de site web malveillant (ou une autre page d’avertissement) s’ouvre.
+   - Si l’URL pointe vers un site web qui a été déterminé comme malveillant, une page d’avertissement de site [web](#malicious-website-warning) malveillant (ou une autre page d’avertissement) s’ouvre.
 
    - Si l’URL pointe vers un fichier téléchargeable et que la stratégie de liens sécurisés qui s’applique à l’utilisateur est configurée pour analyser les liens vers le contenu téléchargeable (appliquer l’analyse **d’URL** en temps réel pour les liens suspects et les liens pointant vers des fichiers), le fichier téléchargeable est vérifié.
 
@@ -294,7 +294,7 @@ Le tableau suivant décrit des exemples de valeurs que vous pouvez entrer et leu
 
 Chaque stratégie de liens sécurisés contient une liste Ne pas réécrire les URL **suivantes** que vous pouvez utiliser pour spécifier les URL qui ne sont pas réécrites par l’analyse des liens sécurisés. En d’autres termes, la liste permet aux utilisateurs qui sont inclus dans la stratégie d’accéder aux URL spécifiées qui seraient autrement bloquées par des liens sécurisés. Vous pouvez configurer différentes listes dans différentes stratégies de liens sécurisés. Le traitement des stratégies s’arrête après l’application de la première stratégie (probablement la plus haute priorité) à l’utilisateur. Ainsi, une seule ne réécriture pas la liste d’URL suivante est appliquée à un utilisateur qui est inclus dans plusieurs **stratégies** de liens sécurisés actives.
 
-Pour ajouter des entrées à la liste dans les stratégies de liens sécurisés nouvelles ou existantes, voir Utiliser le portail [Microsoft 365 Defender](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) pour créer des stratégies de liens sécurisés ou utiliser le portail [Microsoft 365 Defender](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)pour modifier les stratégies de liens sécurisés.
+Pour ajouter des entrées à la liste dans les stratégies de liens sécurisés nouvelles ou existantes, voir [Créer](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) des stratégies de liens sécurisés ou [Modifier des stratégies de liens sécurisés.](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies)
 
 **Remarques** :
 

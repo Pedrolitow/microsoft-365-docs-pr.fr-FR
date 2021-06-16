@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les notifications de courrier indésirable pour les messages mis en quarantaine dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30f82abc245a2f6022bd1a75b57e9d20e3e32a32
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 71f2a33ad83f94895c396f92c18753bfca7f2905
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929886"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933166"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Utiliser les notifications de courrier indésirable de l’utilisateur pour libérer et signaler les messages mis en quarantaine
 
@@ -41,26 +41,21 @@ Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange 
 
 Par défaut, les notifications de courrier indésirable de l’utilisateur final sont désactivées dans les stratégies anti-courrier indésirable. Lorsqu’un administrateur active les notifications de courrier indésirable pour l’utilisateur final, les [destinataires](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)(y compris les boîtes aux lettres partagées avec le mappage automatique activé) reçoivent des notifications périodiques concernant leurs messages mis en quarantaine en tant que courrier indésirable, courrier en masse ou hameçonnage (depuis avril 2020).
 
-Pour les boîtes aux lettres partagées, les notifications de courrier indésirable pour l’utilisateur final sont uniquement pris en charge pour les utilisateurs qui ont reçu l’autorisation Autorisation totale sur la boîte aux lettres partagée. Pour plus d’informations, voir [Utiliser le EAC pour modifier la délégation de boîte aux lettres partagée.](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)
+Pour les boîtes aux lettres partagées, les notifications de courrier indésirable à l’utilisateur final sont uniquement pris en charge pour les utilisateurs qui ont reçu l’autorisation Autorisation totale sur la boîte aux lettres partagée. Pour plus d’informations, voir [Utiliser le EAC pour modifier la délégation de boîte aux lettres partagée.](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)
 
 La notification de courrier indésirable de l’utilisateur final n’est pas prise en charge pour les groupes.
 
 > [!NOTE]
-> Les messages mis en quarantaine en tant que hameçonnage à haut niveau de confiance, programmes malveillants ou par des règles de flux de messagerie (également appelées règles de transport) ne sont disponibles que pour les administrateurs. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
+> Les messages qui ont été mis en quarantaine en tant que hameçonnage à haut niveau de confiance, programmes malveillants ou par des règles de flux de messagerie (également appelées règles de transport) ne sont disponibles que pour les administrateurs. Si vous souhaitez en savoir plus, voir [Gérer les messages et les fichiers mis en quarantaine en tant qu'administrateur dans EOP](manage-quarantined-messages-and-files.md).
 
 Une notification de courrier indésirable à l’utilisateur final contient les informations suivantes pour chaque message mis en quarantaine :
 
 - **Expéditeur :** nom d’envoi et adresse e-mail du message mis en quarantaine.
-
 - **Objet**: texte de la ligne d’objet du message mis en quarantaine.
-
 - **Date**: date et heure (au UTC) de mise en quarantaine du message.
-
 - **Bloquer l’expéditeur**: cliquez sur ce lien pour ajouter l’expéditeur à la liste des expéditeurs bloqués sur votre boîte aux lettres. Pour plus d'informations, consultez [Bloquer un expéditeur du courrier](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
-
-- **Release**: pour les messages de courrier indésirable (et non de hameçonnage), vous pouvez libérer le message ici sans mettre en quarantaine le Microsoft 365 Defender.
-
-- **Révision**: cliquez sur ce lien pour passer en quarantaine dans le portail Microsoft 365 Defender, où vous pouvez (selon la raison de la mise en quarantaine du message) afficher, libérer, supprimer ou signaler vos messages mis en quarantaine. Pour plus d’informations, voir Rechercher et libérer les messages mis en quarantaine en tant [qu’utilisateur dans EOP.](find-and-release-quarantined-messages-as-a-user.md)
+- **Release**: pour les messages de courrier indésirable (et non  de hameçonnage), vous pouvez libérer le message ici sans mettre en quarantaine le Microsoft 365 Defender.
+- **Révision**: cliquez sur  ce lien pour passer en quarantaine dans le portail Microsoft 365 Defender, où vous pouvez (selon la raison de la mise en quarantaine du message) afficher, libérer, supprimer ou signaler vos messages mis en quarantaine. Pour plus d’informations, voir Rechercher et libérer les messages mis en quarantaine en tant [qu’utilisateur dans EOP.](find-and-release-quarantined-messages-as-a-user.md)
 
 ![Exemple de notification de courrier indésirable pour l’utilisateur final](../../media/end-user-spam-notification.png)
 

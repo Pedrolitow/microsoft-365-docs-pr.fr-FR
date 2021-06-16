@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4827ce149632d0e37dbe9c3dc5fc8325dbfa8afa
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a39c6a3b287933ff79f94b00e364d7a45378bd1f
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929874"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933082"
 ---
 # <a name="user-submissions-policy"></a>Stratégie de soumissions d’utilisateurs
 
@@ -36,9 +36,7 @@ ms.locfileid: "52929874"
 Dans Microsoft 365 organisations avec des boîtes aux lettres Exchange Online, vous pouvez spécifier une boîte aux lettres pour recevoir des messages que les utilisateurs signalent comme malveillants ou non malveillants. Lorsque les utilisateurs envoient des messages à l’aide des différentes options de création de rapports, vous pouvez utiliser cette boîte aux lettres pour intercepter des messages (envoyer à la boîte aux lettres personnalisée uniquement) ou recevoir des copies de messages (envoyer à la boîte aux lettres personnalisée et Microsoft). Cette fonctionnalité fonctionne avec les options de rapport de message suivantes :
 
 - [Le add-in Message de rapport](enable-the-report-message-add-in.md)
-
 - [Le module de signalement du hameçonnage](enable-the-report-phish-add-in.md)
-
 - [Outils de rapports tiers](#third-party-reporting-tools)
 
 La livraison des messages signalés par l’utilisateur à une boîte aux lettres personnalisée au lieu de directement à Microsoft permet à vos administrateurs de signaler de manière sélective et manuelle des messages à Microsoft à l’aide de la soumission [d’administrateur.](admin-submission.md)
@@ -52,17 +50,17 @@ Utilisez les articles suivants pour configurer les conditions préalables requis
 
 - Ignorez le filtrage du courrier indésirable sur la boîte aux lettres personnalisée en créant une règle de flux de messagerie Exchange pour définir le niveau de confiance du courrier indésirable. Voir [Utiliser le EAC](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) pour créer une règle de flux de messagerie qui définit le SCL d’un message pour définir le SCL pour contourner le filtrage du courrier **indésirable.**
 
-- Désactiver l’analyse des pièces jointes pour les programmes malveillants dans la boîte aux lettres personnalisée. Utilisez configurer des stratégies de pièces [jointes sécurisées](set-up-safe-attachments-policies.md) dans Defender pour Office 365 pour créer une stratégie de pièces jointes sécurisées avec le paramètre **Off** pour les pièces **jointes sécurisées réponse anti-programme** malveillant inconnue.
+- [Créez une stratégie de pièces jointes sécurisées](set-up-safe-attachments-policies.md) qui inclut la boîte aux lettres personnalisée dans laquelle l’analyse des pièces jointes sécurisées est désactivée (section Réponse anti-programme malveillant inconnue des pièces **jointes** \> **sécurisées désactivée).**
 
-- Désactiver l’analyse des URL sur les messages dans la boîte aux lettres personnalisée. Utilisez [configurer des](set-up-safe-links-policies.md) stratégies de liens sécurisés dans Defender pour Office 365 pour créer une stratégie de liens sécurisés avec le paramètre **« Sélectionner** l’action pour les URL potentiellement malveillantes **inconnues** dans les messages ».
+- [Créez une stratégie de](set-up-safe-links-policies.md) liens sécurisés qui inclut la boîte aux lettres personnalisée dans laquelle l’analyse des liens sécurisés est désactivée ( Sélectionnez l’action pour les URL potentiellement malveillantes **inconnues** dans la section Messages \> **désactivée).**
 
-- Créez une stratégie anti-programme malveillant pour désactiver la purge automatique sans heure de programmes malveillants. Consultez le portail Microsoft 365 Defender pour créer des stratégies [anti-courrier](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) indésirable afin de définir la **purge** automatique sans heure de programmes **malveillants sur « Off**».
+- Créez une stratégie [anti-programme](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) malveillant qui inclut la boîte aux lettres personnalisée dans laquelle la purge automatique d’heure zéro (ZAP) pour les programmes malveillants est désactivée (la section Paramètres de protection Activez la purge automatique heure zéro pour les programmes **malveillants** n’est pas \>  sélectionnée).
 
-- Créez une stratégie de filtrage du courrier indésirable pour désactiver la purge automatique d’heure zéro (ZAP) pour le courrier indésirable et le hameçonnage dans la boîte aux lettres personnalisée. Voir Utiliser le portail Microsoft 365 Defender pour créer des  stratégies [anti-courrier](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) indésirable et effacer les case à cocher Sur pour spam **ZAP** et **PHISH ZAP**.
+- Créez une stratégie [anti-courrier](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) indésirable qui inclut la boîte aux lettres personnalisée dans laquelle ZAP pour le courrier indésirable et ZAP pour le hameçonnage sont désactivés **(la** section Purge automatique heure zéro activée pour la purge automatique \> **(ZAP)** n’est pas sélectionnée).
 
-- Désactivez la règle de courrier indésirable dans la boîte aux lettres personnalisée. Utilisez [configurer les paramètres du courrier indésirable sur Exchange Online boîtes aux](configure-junk-email-settings-on-exo-mailboxes.md) lettres pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées sur la boîte aux lettres.
+- Désactivez la règle de courrier indésirable dans la boîte aux lettres personnalisée. Utilisez [configurer les paramètres du courrier indésirable sur Exchange Online boîtes aux](configure-junk-email-settings-on-exo-mailboxes.md) lettres pour désactiver la règle de courrier indésirable. Une fois désactivé, EOP ne peut pas déplacer les messages vers le dossier Courrier indésirable en fonction de l’action de verdict de filtrage du courrier indésirable Déplacer le **message** vers le dossier Courrier indésirable ou la collection de listes sécurisées de la boîte aux lettres.
 
-Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes les conditions préalables applicables, implémentez la procédure spécifiée dans le portail Microsoft 365 Defender pour configurer la boîte aux lettres de [soumissions d’utilisateurs.](#use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox)
+Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes les conditions préalables applicables, vous pouvez utiliser les procédures de cet article pour configurer la boîte aux lettres d’envoi des utilisateurs.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -84,58 +82,45 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Utiliser le portail Microsoft 365 Defender pour configurer la boîte aux lettres de soumissions d’utilisateurs
 
-1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat policies** User reported message \> **settings** User \> **submissions**.
+1. Dans le portail Microsoft 365 Defender, go to **Policies &** Threat \> **policies** \> **Others** section \> **User reported message** \> **settings User submissions**.
 
-2. Dans la page **Soumissions d’utilisateurs** qui s’affiche, sélectionnez l’une des options suivantes :
+2. Dans la page **Soumissions d’utilisateurs,** ce que vous voyez est déterminé par le paramètre du bouton Message de rapport **Microsoft Outlook** est **Éteint** ou **Sur**:
 
-      1. Activez la fonctionnalité Message de rapport pour **Outlook (recommandé)**: sélectionnez cette option si vous utilisez le module de notification de message, le module de signalement du hameçonnage ou la création de rapports intégrée dans Outlook sur le web, puis configurez les paramètres suivants :
+   - **Bouton Signaler Outlook** \> Microsoft **On** ![ Bascule : sélectionnez cette option si vous utilisez le module de notification de message, le module de signalement du hameçonnage ou la création de rapports intégrée dans Outlook sur le web, puis configurez les ](../../media/scc-toggle-on.png) paramètres suivants :
+     - **Envoyez les messages signalés à**: Sélectionnez l’une des options suivantes :
+       - **Microsoft**: la boîte aux lettres d’envoi utilisateur n’est pas utilisée (tous les messages signalés sont envoyés à Microsoft).
+       - **Microsoft et la boîte aux lettres** de mon organisation : dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les envois d’utilisateurs sont ensuite soumis à Microsoft pour analyse et à la boîte aux lettres personnalisée que votre équipe d’administration ou d’opérations de sécurité doit analyser.
+       - **Boîte aux lettres de mon** organisation : dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Utilisez cette option si vous souhaitez que le message ne soit envoyé qu’à un administrateur ou à l’équipe des opérations de sécurité pour analyse en premier. Les messages ne sont pas envoyés à Microsoft, sauf si l’administrateur les a transmis eux-mêmes.
 
-    - **Personnalisez le message de confirmation de l’utilisateur final**: cliquez sur ce lien. Dans le **flyout personnaliser le message** de confirmation qui s’affiche, configurez les paramètres suivants :
+          > [!IMPORTANT]
+          >
+          > Les organisations gouvernementales américaines (Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD) peuvent uniquement configurer la boîte aux lettres **de mon organisation.** Les deux autres options sont désactivées.
+          >
+          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour la rescanée et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
 
-        - **Avant** l’envoi  : dans les zones de message Titre et **Confirmation,** entrez le texte descriptif que les utilisateurs voient avant de signaler un message à l’aide du module de signalement du message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi (courrier indésirable, non indésirable, hameçonnage, etc.).
+       Quelle que soit la valeur que vous avez sélectionnée pour Envoyer les **messages** signalés, les paramètres suivants sont disponibles :
 
-          Comme indiqué, si vous sélectionnez une option qui envoie les messages signalés à Microsoft, le texte suivant est également ajouté à la notification :
+       - **Laisser les utilisateurs choisir s’ils souhaitent signaler leur message à Microsoft**
+       - **Sélectionnez la section Options de rapport disponibles** pour les utilisateurs : sélectionnez au moins une des options suivantes :
+         - **Demandez-moi avant d’envoyer le message**
+         - **Toujours signaler le message**
+         - **Ne jamais signaler le message**
+
+          > [!CAUTION]
+          > Si vous avez désactivé la création de rapports de courrier indésirable dans Outlook sur le [web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) à l’aide de stratégies de boîte aux lettres Outlook sur le web, mais que vous avez configuré l’un des paramètres précédents pour signaler des messages à Microsoft, les utilisateurs pourront signaler des messages à Microsoft dans Outlook sur le web à l’aide du module de signalement des messages ou du module de signalement du hameçonnage.
+
+     - **Section Expérience de rapport utilisateur**
+       - **Avant** de signaler  l’onglet : dans les zones Titre et corps du **message,** entrez le texte descriptif que les utilisateurs voient avant de signaler un message à l’aide du add-in Signaler un message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi (courrier indésirable, non indésirable, hameçonnage, etc.).
+       - **Onglet** Après rapport  :  dans les zones Titre et Confirmation, entrez le texte descriptif que les utilisateurs voient après qu’ils ont signalé un message à l’aide du add-in Report Message ou du add-in Report Phishing. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
+
+       Comme indiqué sur la page, si vous sélectionnez une option qui envoie les messages signalés à Microsoft, le texte suivant est également ajouté à la notification :
 
           > Votre courrier électronique sera envoyé tel qu’il est à Microsoft pour analyse. Certains e-mails peuvent contenir des informations personnelles ou sensibles.
 
-        - **Après l’envoi**: cliquez ![ sur Développer ](../../media/scc-expand-icon.png) l’icône . Dans  les zones De titre et de **confirmation,** entrez le texte descriptif que les utilisateurs voient après qu’ils ont publié un message à l’aide du add-in Signaler un message ou du module de signalement du hameçonnage. Vous pouvez utiliser la variable %type% pour inclure le type d’envoi.
+   - **Bouton Signaler Outlook** \> Microsoft **Off** ![ Bascule : sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du module de rapport de message, du service de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les ](../../media/scc-toggle-off.png) paramètres suivants :
+     - Sélectionnez **Utiliser cette boîte aux lettres personnalisée pour recevoir les soumissions signalées par l’utilisateur.** Dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres Exchange Online existante qui peut recevoir du courrier électronique.
 
-      Lorsque vous avez terminé, cliquez sur **Enregistrer**. Pour effacer ces valeurs, cliquez sur **Restaurer** sur la page **Soumissions de l’utilisateur.**
-    
-    - **Personnalisez les options de rapport de l’utilisateur final**: cliquez sur ce lien. Dans le volant **Personnaliser les options de rapport** de l’utilisateur final qui s’affiche, entrez le texte descriptif des options de signalement du courrier indésirable. 
-    
-      Sous **Options pour afficher le moment où les messages sont** signalés, sélectionnez au moins une des options suivantes :
-        - **Demandez-moi avant d’envoyer un rapport**
-        - **Envoyer automatiquement des rapports**
-        - **Ne jamais envoyer de rapports**
-       
-      Lorsque vous avez terminé, cliquez sur **Enregistrer**.
-
-        - **Envoyez les messages signalés à**: Effectuer l’une des sélections suivantes :
-
-        - **Microsoft (recommandé)**: la boîte aux lettres d’envoi de l’utilisateur n’est pas utilisée (tous les messages signalés sont envoyés à Microsoft).
-
-        - **Microsoft et une boîte aux lettres** personnalisée : dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Les envois d’utilisateurs sont ensuite soumis à Microsoft pour analyse et à la boîte aux lettres personnalisée que votre équipe d’administration ou d’opérations de sécurité doit analyser.
-
-        - **Boîte aux lettres personnalisée uniquement**: dans la zone qui s’affiche, entrez l’adresse de messagerie d’une boîte aux lettres Exchange Online existante. Les groupes de distribution ne sont pas autorisés. Utilisez cette option si vous souhaitez que le message ne soit envoyé qu’à un administrateur ou à l’équipe des opérations de sécurité pour analyse en premier. Les messages ne sont pas envoyés à Microsoft, sauf si l’administrateur les a transmis eux-mêmes.
-
-          > [!NOTE]
-          > Les organisations gouvernementales américaines (Cloud de la communauté du secteur public, Cloud de la communauté du secteur public-H et DoD) peuvent uniquement configurer une boîte **aux lettres personnalisée.** Les deux autres options sont désactivées.
-
-          > [!NOTE]
-          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour la rescanée et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
-
-      Lorsque vous avez terminé, cliquez sur **Confirmer.**
-
-      > [!CAUTION]
-      > Si vous avez désactivé la création de rapports de courrier indésirable dans Outlook sur le [web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) à l’aide de stratégies de boîte aux lettres Outlook sur le web, mais que vous configurez l’un des paramètres précédents pour signaler des messages à Microsoft, les utilisateurs pourront signaler des messages à Microsoft dans Outlook sur le web à l’aide du module de signalement des messages ou du module de signalement du hameçonnage.
-
-
-    2. Désactivez la fonctionnalité Message de rapport pour **Outlook**: sélectionnez cette option si vous utilisez des outils de création de rapports tiers à la place du add-in Message de rapport, du module de signalement du hameçonnage ou de la création de rapports intégrée dans Outlook sur le web, puis configurez les paramètres suivants :
-
-       Sélectionnez **Utiliser cette boîte aux lettres personnalisée pour recevoir les soumissions signalées par l’utilisateur.** Dans la zone qui s’affiche, entrez l’adresse e-mail d’une boîte aux lettres existante déjà Office 365. Il doit s’agit d’une boîte aux lettres existante dans Exchange Online qui peut recevoir des messages électroniques.
-
-       Lorsque vous avez terminé, cliquez sur **Confirmer.**
+   Lorsque vous avez terminé, cliquez sur **Confirmer.** Pour effacer ces valeurs, cliquez sur **Restaurer**
 
 ## <a name="third-party-reporting-tools"></a>Outils de rapports tiers
 
