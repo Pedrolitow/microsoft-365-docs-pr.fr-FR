@@ -17,33 +17,31 @@ ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
 - m365solution-overview
+- m365solution-mcafeemigrate
+- m365solution-symantecmigrate
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/20/2021
+ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 2953103cb3812103740f98a6db5b8f4d369731e3
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593500"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930306"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Passer de la protection de point de terminaison non-Microsoft à Microsoft Defender pour le point de terminaison
 
-Si vous envisagez de passer de votre protection de point de terminaison non-Microsoft à [Microsoft Defender pour le](microsoft-defender-endpoint.md) point de terminaison (Defender pour point de terminaison), vous êtes au bon endroit. Utilisez cet article comme guide.
+Si vous envisagez de passer d’une solution de protection de point de terminaison non-Microsoft à [Microsoft Defender pour point](microsoft-defender-endpoint.md) de terminaison (Defender pour point de terminaison), vous êtes au bon endroit. Utilisez cet article comme guide.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Vue d’ensemble de la migration vers Defender pour le point de terminaison":::
 
-Lorsque vous basculez vers Defender pour point de terminaison, vous commencez par votre solution non-Microsoft fonctionnant en mode actif, configurez Defender pour Endpoint en mode passif, intégré à Defender pour point de terminaison, définissez Defender pour Point de terminaison en mode actif, puis supprimez la solution non Microsoft.
-
-> [!TIP]
-> - Si vous utilisez actuellement Mc Antivirus Endpoint Security (Mc Antivirus), voir [Migrer de Mc Antivirus vers Defender pour Endpoint](mcafee-to-microsoft-defender-migration.md).
-> - Si vous utilisez actuellement Symantec Endpoint Protection (Symantec), voir [Migrer de Symantec vers Defender pour Endpoint](symantec-to-microsoft-defender-endpoint-migration.md).
+Lorsque vous basculez vers Defender pour le point de terminaison, vous commencez par votre solution non-Microsoft fonctionnant en mode actif. Ensuite, vous configurez Defender pour Endpoint en mode passif et vous intégrerez vos appareils à Defender for Endpoint. Ensuite, vous définissez Defender pour le point de terminaison sur le mode actif. Enfin, vous supprimez la solution non-Microsoft.
 
 ## <a name="the-migration-process"></a>Processus de migration
 
-Le processus de migration vers Defender pour Endpoint peut être divisé en trois phases, comme décrit dans le tableau suivant :
+Le processus de migration vers Defender pour Point de terminaison peut être divisé en trois phases, comme décrit dans le tableau suivant :
 
 ![Phases de migration : préparer, configurer, intégrer](images/phase-diagrams/migration-phases.png)
 

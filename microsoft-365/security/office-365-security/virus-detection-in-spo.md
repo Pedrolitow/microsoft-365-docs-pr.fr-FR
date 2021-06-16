@@ -20,12 +20,12 @@ description: Découvrez comment SharePoint Online détecte des virus dans les fi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dd38b196c106a36fb1a1bfc0a441620b1c5b8ba5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ab11d4c1e2a064ad0717e6619f72a38b0cbc831
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204157"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932829"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protection antivirus intégrée dans SharePoint Online, OneDrive et Microsoft Teams
 
@@ -38,11 +38,11 @@ ms.locfileid: "51204157"
 Microsoft 365 utilise un moteur de détection de virus courant pour analyser les fichiers que les utilisateurs téléchargent sur SharePoint Online, OneDrive et Microsoft Teams. Cette protection est incluse dans tous les abonnements qui incluent SharePoint Online, OneDrive et Microsoft Teams.
 
 > [!IMPORTANT]
-> Les fonctionnalités anti-virus intégrées permettent de contenir des virus. Elles ne sont pas conçues comme un seul point de défense contre les programmes malveillants pour votre environnement. Nous encourageons tous les clients à examiner et à implémenter la protection contre les programmes malveillants à différents niveaux et à appliquer les meilleures pratiques pour sécuriser leur infrastructure d’entreprise. Pour plus d’informations sur les stratégies et les meilleures pratiques, consultez [la feuille de route de sécurité.](security-roadmap.md)
+> Les fonctionnalités anti-virus intégrées permettent de contenir des virus. Elles ne sont pas destinées à être un point de défense unique contre les programmes malveillants pour votre environnement. Nous encourageons tous les clients à examiner et à implémenter la protection contre les programmes malveillants à différents niveaux et à appliquer les meilleures pratiques pour sécuriser leur infrastructure d’entreprise. Pour plus d’informations sur les stratégies et les meilleures pratiques, consultez [la feuille de route de sécurité.](security-roadmap.md)
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>Que se passe-t-il si un fichier infecté est téléchargé vers SharePoint Online ?
 
-Le moteur Microsoft 365 détection de virus s’exécute de manière asynchrone (indépendamment des téléchargements de fichiers) dans SharePoint Online. **Tous les fichiers ne sont pas analysés automatiquement.** Les heuristiques déterminent les fichiers à analyser. Lorsqu’un fichier contient un virus, le fichier est signalé. En avril 2018, nous avons supprimé la limite de 25 Mo pour les fichiers analysés.
+Le moteur Microsoft 365 détection de virus s’exécute de manière asynchrone (indépendamment des chargements de fichiers) dans SharePoint Online. **Tous les fichiers ne sont pas analysés automatiquement.** Les heuristiques déterminent les fichiers à analyser. Lorsqu’un fichier contient un virus, le fichier est signalé. En avril 2018, nous avons supprimé la limite de 25 Mo pour les fichiers analysés.
 
 Voici ce qui se produit :
 
@@ -68,7 +68,7 @@ Voici ce qui se produit :
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>Que se passe-t-il lorsque le client OneDrive de synchronisation tente de synchroniser un fichier infecté ?
 
-OneDrive clients de synchronisation ne téléchargeront pas les fichiers contenant des virus. Le client de synchronisation affiche une notification vous avertissant que le fichier ne peut pas être synchronisé.
+Lorsqu’un fichier malveillant est téléchargé vers OneDrive, il est synchronisé avec l’ordinateur local avant d’être marqué comme programme malveillant. Une fois qu’il a été marqué comme programme malveillant, l’utilisateur ne peut plus ouvrir le fichier synchronisé à partir de son ordinateur local.
 
 ## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>Fonctionnalités étendues avec Microsoft Defender pour Office 365
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: danbrown
 author: DHB-MSFT
-manager: scotv
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Choisissez les fonctionnalités Office à afficher ou masquer lorsqu’un utilisateur choisit Aide > Nouveautés de son application Office sur Windows à l’aide de la fonctionnalité « Nouveautés de Office » dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 395038bebda407771802a61ba5aefc350c7c5cd1
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924834"
+ms.locfileid: "52929478"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gérer les fonctionnalités Office’affiche dans Nouveautés
 
@@ -38,12 +38,12 @@ Vous pouvez contrôler les messages de fonctionnalité affichés par vos utilisa
 
 ## <a name="show-or-hide-new-features"></a>Afficher ou masquer les nouvelles fonctionnalités 
 
-1. Dans le centre Microsoft 365' administration, **sous Paramètres**, choisissez **paramètres de l’organisation.**
+1. Dans le centre Microsoft 365' administration, **sous Paramètres**, choisissez **les paramètres de l’organisation.**
 2. Sous **l’onglet Services,** choisissez **Nouveautés de Office**.
 3. Lorsque vous cliquez sur le nom de la fonctionnalité, un panneau volant apparaît avec les informations suivantes :
      - Brève description de la fonctionnalité.
      - Lien vers un article pour en savoir plus sur la fonctionnalité.
-     - Les Office applications dans qui la fonctionnalité apparaît.
+     - Le Office applications dans qui la fonctionnalité apparaît.
      - La première version (publication) dans qui la fonctionnalité est disponible pour ce canal.
 4. Choose **Hide from users**. Ou, si vous avez précédemment caché la fonctionnalité, choisissez **Afficher aux utilisateurs.**
 

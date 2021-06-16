@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Découvrez comment configurer la synchronisation d’annuaires entre Microsoft 365 et votre active Directory local.
-ms.openlocfilehash: 51cf52bd81004157606c884fd4f0b5d3604b877a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14b44523c0a560a71ed8dc9182f677f2ebc0b865
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924903"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926525"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurer la synchronisation d’annuaires pour Microsoft 365
 
@@ -47,7 +47,7 @@ Azure AD Connecter s’exécute sur un serveur local et synchronise vos AD DS av
 
 - Authentification directe (PTA)
 
-  Azure AD permet aux AD DS d’effectuer l’authentification.
+  Azure AD dispose d’AD DS qui effectue l’authentification.
 
 - Authentification fédérée
 
@@ -55,7 +55,7 @@ Azure AD Connecter s’exécute sur un serveur local et synchronise vos AD DS av
 
 Pour plus [d’informations, voir Identités](plan-for-directory-synchronization.md) hybrides.
   
-## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Examiner les conditions préalables requises pour les Connecter Azure AD
+## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Passer en revue les conditions préalables pour les Connecter Azure AD
 
 Vous obtenez un abonnement Azure AD gratuit avec votre abonnement Microsoft 365 abonnement. Lorsque vous configurerez la synchronisation d’annuaires, vous installez Azure AD Connecter sur l’un de vos serveurs locaux.
   
@@ -87,15 +87,15 @@ Avant de commencer, assurez-vous que vous avez :
 
 Procédez comme suit :
 
-1. Connectez-vous au [Microsoft 365 admin center](https://admin.microsoft.com) https://admin.microsoft.com) (et choisissez **Utilisateurs** \> **actifs utilisateurs** sur le navigation de gauche.
+1. Connectez-vous au [Microsoft 365 d’administration](https://admin.microsoft.com) ( et choisissez Utilisateurs https://admin.microsoft.com) actifs  \> **sur** le navigation de gauche.
 2. Dans la page **Utilisateurs** actifs, sélectionnez **Plus** (trois points) \> **Synchronisation d’annuaires.**
   
-3. Dans la page **Azure Active Directory** de préparation, sélectionnez Le Centre de téléchargement pour obtenir le lien de l’outil Connecter **Azure AD** pour commencer. 
-4. Suivez les étapes de [la feuille de route d’installation d’Azure AD Connecter et Azure AD Connecter Health.](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
+3. Dans la page **Azure Active Directory de** préparation, sélectionnez Le Centre de téléchargement pour obtenir le lien **d’outils Connecter Azure AD** pour commencer. 
+4. Suivez les étapes de la feuille [de route d’installation d’Azure AD Connecter et Azure AD Connecter Health.](/azure/active-directory/hybrid/how-to-connect-install-roadmap)
 
 ## <a name="3-finish-setting-up-domains"></a>3. Terminer la configuration des domaines
 
-Suivez les étapes de [création d’enregistrements DNS Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) lorsque vous gérez vos enregistrements DNS pour terminer la configuration de vos domaines.
+Suivez les étapes de la procédure de création d’enregistrements [DNS Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) lorsque vous gérez vos enregistrements DNS pour terminer la configuration de vos domaines.
 
 ## <a name="next-step"></a>Étape suivante
 

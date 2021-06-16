@@ -4,28 +4,25 @@ description: Activer et configurer des fonctionnalités Antivirus Microsoft Defe
 keywords: antivirus, protection en temps réel, rtp, apprentissage automatique, surveillance du comportement, heuristique
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.date: 12/16/2019
-ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1e39e42b79a2a767473c4473434da249a0d07228
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 313646c69417082583b27bcfbab540131043ce76
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275131"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926666"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>Activer et configurer la protection antivirus Microsoft Defender pour qu’il soit toujours activé dans les stratégies de groupe
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **S’applique à :**
@@ -58,8 +55,8 @@ Pour activer et configurer la protection toujours active :
 
        | Paramètre | Description | Valeur par défaut |
        |-----------------------------|------------------------|-------------------------------|
-       | Autoriser le démarrage du service anti-programme malveillant avec une priorité normale | Vous pouvez réduire la priorité du moteur Antivirus Microsoft Defender, ce qui peut être utile dans les déploiements légers dans lesquels vous souhaitez avoir un processus de démarrage aussi léger que possible. Cela peut avoir un impact sur la protection sur le point de terminaison. | Activé
-       | Autoriser le service anti-programme malveillant à rester en cours d’exécution | Si les mises à jour de la protection ont été désactivées, vous pouvez configurer Antivirus Microsoft Defender pour qu’elles s’exécutent toujours. Cela réduit la protection sur le point de terminaison. | Désactivé |
+       | Autoriser le démarrage du service anti-programme malveillant avec une priorité normale | Vous pouvez réduire la priorité du moteur Antivirus Microsoft Defender, ce qui peut être utile dans les déploiements légers où vous souhaitez avoir un processus de démarrage aussi léger que possible. Cela peut avoir un impact sur la protection sur le point de terminaison. | Activé
+       | Autoriser le service anti-programme malveillant à rester toujours en cours d’exécution | Si les mises à jour de la protection ont été désactivées, vous pouvez configurer Antivirus Microsoft Defender pour qu’elles s’exécutent toujours. Cela réduit la protection sur le point de terminaison. | Désactivé |
     
     1. Configurez le paramètre selon le cas, puis cliquez sur **OK.**
     
@@ -79,18 +76,18 @@ Pour activer et configurer la protection toujours active :
        | Activer les notifications d’écriture de volume brut | Les informations sur les écritures de volume brutes seront analysées par la surveillance du comportement. | Activé |
        | Activer l’analyse des processus chaque fois que la protection en temps réel est activée | Vous pouvez activer indépendamment le moteur de Antivirus Microsoft Defender pour analyser les processus en cours d’exécution pour y trouver des modifications ou des comportements suspects. Cela est utile si vous avez temporairement désactivé la protection en temps réel et que vous souhaitez analyser automatiquement les processus démarrés alors qu’il était désactivé. | Activé |
        | Définir la taille maximale des fichiers et pièces jointes téléchargés à scanner | Vous pouvez définir la taille en kilo-octets. | Activé |
-       | Configurer le remplacement de paramètre local pour activer l’analyse du comportement | Configurez une substitution locale pour la configuration de la surveillance du comportement. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.| Activé |
-       | Configurer le remplacement de paramètre local pour l’analyse de tous les fichiers et pièces jointes téléchargés | Configurez une substitution locale pour la configuration de l’analyse de tous les fichiers et pièces jointes téléchargés. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.| Activé |
-       | Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur | Configurez une substitution locale pour la configuration de la surveillance de l’activité des fichiers et des programmes sur votre ordinateur. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.| Activé |
-       | Configurer le remplacement de paramètre local pour activer la protection en temps réel | Configurez une substitution locale pour la configuration afin d’activer la protection en temps réel. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale.| Activé |
-       | Configurer le remplacement de paramètre local pour la surveillance de l’activité des fichiers entrants et sortants | Configurez une substitution locale pour la configuration de la surveillance de l’activité des fichiers entrants et sortants. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence locale. | Activé |
-       | Configurer la surveillance de l’activité des fichiers et des programmes entrants et sortants | Spécifiez si la surveillance doit se produire sur les directions entrantes, sortantes, à la fois ou non. Cela est pertinent pour les installations Windows Server où vous avez défini des serveurs ou des rôles serveur spécifiques qui voient de grandes quantités de modifications de fichiers dans un seul sens et que vous souhaitez améliorer les performances du réseau. Les points de terminaison (et serveurs) entièrement mis à jour sur un réseau ne voient que peu d’impact sur les performances, quel que soit le nombre ou la direction des modifications apportées aux fichiers. | Activé (dans les deux directions) |
+       | Configurer le remplacement de paramètre local pour activer l’analyse du comportement | Configurez une substitution locale pour la configuration de la surveillance du comportement. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.| Activé |
+       | Configurer le remplacement de paramètre local pour l’analyse de tous les fichiers et pièces jointes téléchargés | Configurez une substitution locale pour la configuration de l’analyse de tous les fichiers et pièces jointes téléchargés. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.| Activé |
+       | Configurer le remplacement des paramètres locaux pour surveiller l’activité des fichiers et des programmes sur votre ordinateur | Configurez une substitution locale pour la configuration de la surveillance de l’activité des fichiers et des programmes sur votre ordinateur. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.| Activé |
+       | Configurer le remplacement de paramètre local pour activer la protection en temps réel | Configurez une substitution locale pour la configuration afin d’activer la protection en temps réel. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local.| Activé |
+       | Configurer le remplacement de paramètre local pour la surveillance de l’activité des fichiers entrants et sortants | Configurez une substitution locale pour la configuration de la surveillance de l’activité des fichiers entrants et sortants. Ce paramètre ne peut être définie que par la stratégie de groupe. Si vous activez ce paramètre, le paramètre de préférence local sera prioritaire sur la stratégie de groupe. Si vous désactivez ou ne configurez pas ce paramètre, la stratégie de groupe sera prioritaire sur le paramètre de préférence local. | Activé |
+       | Configurer la surveillance pour l’activité des fichiers et des programmes entrants et sortants | Spécifiez si la surveillance doit se produire sur les directions entrantes, sortantes, à la fois ou non. Cela est pertinent pour les installations Windows Server où vous avez défini des serveurs ou des rôles serveur spécifiques qui voient de grandes quantités de modifications de fichiers dans un seul sens et que vous souhaitez améliorer les performances du réseau. Les points de terminaison (et serveurs) entièrement mis à jour sur un réseau n’auront que peu d’impact sur les performances, quel que soit le nombre ou la direction des modifications de fichier. | Activé (dans les deux directions) |
 
     1. Configurez le paramètre selon le cas, puis cliquez sur **OK.**
     
     1. Répétez les étapes précédentes pour chaque paramètre du tableau.
 
-5. Configurez le paramètre de Antivirus Microsoft Defender’analyse. Pour ce faire :  
+5. Configurez le paramètre Antivirus Microsoft Defender’analyse de l’analyse. Pour ce faire :  
 
     1. Dans **l’Antivirus Microsoft Defender’arborescence** du volet gauche, cliquez sur **Analyser.**
     
@@ -100,7 +97,7 @@ Pour activer et configurer la protection toujours active :
 
        | Paramètre | Description | Valeur par défaut |
        |-----------------------------|------------------------|-------------------------------|    
-       | Activer l’heuristique | La protection heuristique désactive ou bloque les activités suspectes immédiatement avant que Antivirus Microsoft Defender moteur de recherche soit invité à détecter l’activité. | Activé |
+       | Activer l’heuristique | La protection heuristique désactive ou bloque les activités suspectes immédiatement avant que le moteur Antivirus Microsoft Defender à détecter l’activité. | Activé |
 
     1. Configurez le paramètre selon le cas, puis cliquez sur **OK.**
     

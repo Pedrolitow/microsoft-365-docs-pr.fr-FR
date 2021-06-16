@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Activités post-migration après le passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: ee8dedf7ffaf6bfc4246b1a8cc2522c15d763cd1
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: 3659ce8ffa3424c3521c8f8954be88c7d53d0a51
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899363"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930414"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Activités post-migration pour la migration à partir de Microsoft Cloud Deutschland
 
-Les sections suivantes fournissent des activités post-migration pour plusieurs services après le déplacement de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemande.
+Les sections suivantes fournissent des activités post-migration pour plusieurs services après le passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) vers Office 365 services dans la nouvelle région de centres de données allemands.
 
 ## <a name="azure-ad"></a>Azure AD
 <!-- This AAD Endpoints comparison table could be added to the documentation, not finally decided.
@@ -53,7 +53,7 @@ The following table provides an overview about which endpoints will replace the 
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Supprimez les confiances de partie de confiance de Microsoft Cloud Deutschland AD FS. | Une fois le cut-over vers Azure AD terminé, l’organisation utilise entièrement les services Office 365 et n’est plus connectée à Microsoft Cloud Deutschland. À ce stade, le client doit supprimer l’confiance de la partie de confiance vers les points de terminaison Microsoft Cloud Deutschland. Cette action ne peut être effectuée que lorsqu’aucune des applications du client ne pointe vers les points de terminaison Microsoft Cloud Deutschland lorsque Azure AD est mis à profit en tant que fournisseur d’identité (IdP). | Organisations d’authentification fédérée | Aucun. |
+| Supprimez les confiances de partie de confiance de Microsoft Cloud Deutschland AD FS. | Une fois le cut-over vers Azure AD terminé, l’organisation utilise entièrement les services Office 365 et n’est plus connectée à Microsoft Cloud Deutschland. À ce stade, le client doit supprimer l’confiance de la partie de confiance vers les points de terminaison Microsoft Cloud Deutschland. Cette action ne peut être effectuée que lorsqu’aucune des applications du client ne pointe vers les points de terminaison Microsoft Cloud Deutschland lorsque Azure AD est mis à profit en tant que fournisseur d’identité (IdP). | Organisations d’authentification fédérée | 
 ||||
 
 <!--
@@ -68,16 +68,12 @@ The following table provides an overview about which endpoints will replace the 
 | Les demandes de joindre un groupe Azure AD au cours des 30 derniers jours avant la migration doivent être demandées à nouveau si la demande d’origine n’a pas été approuvée. | Les clients d’utilisateur final devront utiliser le panneau d’accès pour soumettre une demande de rejoindre à nouveau un groupe Azure AD si ces demandes n’ont pas été approuvées au cours des 30 derniers jours avant la migration. |  En tant qu’utilisateur final : <ol><li>Accédez au [panneau d’accès.](https://account.activedirectory.windowsazure.com/r#/joinGroups)</li><li>Recherchez un groupe Azure AD pour lequel l’approbation de l’appartenance était en attente pendant les 30 jours avant la migration.</li><li>Demandez à rejoindre à nouveau le groupe Azure AD.</li></ol> Les demandes de participation à un groupe actif moins de 30 jours avant la migration ne peuvent pas être approuvées, sauf si elles sont demandées à nouveau après la migration. |
 ||||
 
-<!--
-    Question from ckinder
-    The following paragraph is not clear
--->
 ## <a name="custom-dns-updates"></a>Mises à jour DNS personnalisées
 **S’applique à :**  Tous les clients gérant leurs propres zones DNS
 
 | Étapes | Description | Impact |
 |:------|:-------|:-------|
-| Mettez à jour les services DNS locaux pour les points Office 365 services locaux. | Les entrées DNS gérées par le client qui pointent vers Microsoft Cloud Deutschland doivent être mises à jour pour pointer vers les points de terminaison Office 365 services globaux. | Si vous ne le faites pas, le service ou les clients logiciels risquent d’échouer. |
+| Mettez à jour les services DNS locaux pour les points Office 365 services locaux. | Les entrées DNS gérées par le client qui pointent vers Microsoft Cloud Deutschland doivent être mises à jour pour pointer vers les points de terminaison Office 365 services globaux. Reportez-vous aux domaines dans [le centre d Microsoft 365'administration](https://admin.microsoft.com/Adminportal/Home#/Domains) et appliquez les modifications dans votre configuration DNS. | Si vous ne le faites pas, le service ou les clients logiciels risquent d’échouer. |
 ||||
 
 ## <a name="third-party-services"></a>Services tiers
@@ -85,21 +81,5 @@ The following table provides an overview about which endpoints will replace the 
 
 | Étapes | Description | Impact |
 |:-------|:-------|:-------|
-| Mettez à jour les partenaires et les services tiers pour les points Office 365 services. | <ul><li>Les services tiers et les partenaires qui pointent vers Office 365 Germany doivent être mis à jour pour pointer vers les points de terminaison Office 365 services de sécurité. Exemple : ré-inscrire, en alignement avec vos fournisseurs et partenaires, la version d’application de la galerie d’applications, si disponible. </li><li>Pointez toutes les applications personnalisées qui utilisent Graph API à `graph.microsoft.de` partir de `graph.microsoft.com` . Les autres API avec des points de terminaison modifiés doivent également être mises à jour, si elles sont mises à profit. </li><li>Modifiez toutes les applications d’entreprise tierces pour les rediriger vers les points de terminaison internationaux. </li></ul>| Action requise. Si vous ne le faites pas, le service ou les clients logiciels risquent d’échouer. |
+| Mettez à jour les partenaires et les services tiers pour les points Office 365 services. | <ul><li>Les services tiers et les partenaires qui pointent vers Office 365 Germany doivent être mis à jour pour pointer vers les points de terminaison Office 365 services. Exemple : ré-inscrire, en alignement avec vos fournisseurs et partenaires, la version d’application de la galerie d’applications, si disponible. </li><li>Pointez toutes les applications personnalisées qui utilisent Graph API à `graph.microsoft.de` partir de `graph.microsoft.com` . Les autres API avec des points de terminaison modifiés doivent également être mises à jour, si elles sont mises à profit. </li><li>Modifiez toutes les applications d’entreprise tierces pour les rediriger vers les points de terminaison internationaux. </li></ul>| Action requise. Si vous ne le faites pas, le service ou les clients logiciels risquent d’échouer. |
 ||||
-
-## <a name="sharepoint-online"></a>SharePoint Online
-**S’applique** à : Customers using SharePoint 2013 Workflows
-
-| Étapes | Description | Impact |
-|:-------|:-------|:-------|
-| Republier SharePoint flux de travail 2013. | Dans le travail préalable à la migration, nous avons réduit le nombre de flux SharePoint 2013. Une fois la migration terminée, le client peut republier les flux de travail. | Il s’agit d’une action obligatoire. Si vous ne le faites pas, les utilisateurs risquent de semer la confusion et d’appeler le service d’aide. |
-| Partager des éléments via Outlook | Le partage d’éléments SharePoint Online et OneDrive Entreprise via Outlook ne fonctionne plus après le passage à la version client. |<ul><li>Dans SharePoint Online et OneDrive Entreprise, vous pouvez partager des éléments via Outlook. Après avoir enfoncé le Outlook, un lien partageable est créé et envoyé dans un nouveau message dans Outlook Web App.</li><li>Après le passage à la location, cette méthode de partage ne fonctionne pas. Nous savons qu’il s’agit d’un problème connu. Toutefois, étant donné que Outlook fonctionnalité est dans le chemin de l’annulation, la résolution du problème n’est pas planifiée tant que l’annulation n’est pas déployée. </li></ul>|
-||||
-
-## <a name="exchange-online"></a>Exchange Online
-**S’applique à**: Clients utilisant une configuration Exchange hybride
-
-| Étapes | Description | Impact |
-|:-------|:-------|:-------|
-| Réexécutez l’Assistant Configuration hybride (HCW) sur Office 365 services. | La configuration HCW existante est destinée à prendre en charge Microsoft Cloud Deutschland. Une fois la migration des services Exchange terminée, nous dissocions la configuration sur site de Microsoft Cloud Deutschland. |<ul><li>Action requise. Si vous ne le faites pas, le service ou les clients logiciels risquent d’échouer. Avant Exchange migration de boîtes aux lettres commence (avec au moins 5 jours de préavis), informez les clients qu’ils doivent arrêter et supprimer les déplacements d’intégration ou de suppression de leurs boîtes aux lettres.  S’ils ne le font pas, ils voient des erreurs dans leurs demandes de déplacement. </li><li>Une Exchange la migration des boîtes aux lettres est terminée, informez les clients qu’ils peuvent reprendre les déplacements d’intégration et de hors-intégration. <br> L’exécution de **Test-MigrationServerAvailabiilty**, une cmdlet PowerShell, pendant la migration de Exchange de Microsoft Cloud Deutschland vers Office 365 services peuvent ne pas fonctionner. Toutefois, elle fonctionne correctement une fois la migration terminée. </li><li>Si des clients ont des problèmes avec les informations d’identification ou l’autorisation après la migration des boîtes aux lettres, les utilisateurs peuvent entrer à nouveau leurs informations d’identification d’administrateur local dans le point de terminaison de migration en exécutant ou en le déliérant à l’aide du Panneau de configuration `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` Exchange (ECP). </li></ul>|

@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Résumé : Comprendre ce qui a changé pour passer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centre de données allemande.'
-ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+description: 'Résumé : Comprendre ce qui a changé pour passer de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemands.'
+ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591779"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930402"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Ce qui va changer après la migration vers Office 365 services dans les nouvelles régions de centres de données allemandes
 
@@ -48,7 +48,7 @@ Ce qui ne change pas :
 
 - Le domaine initial du client (par exemple) avec un ID de client (GUID) et des domaines `contoso.onmicrosoft.de` personnalisés est persistant après la migration. 
 
-- Les demandes d’authentification pour les ressources migrées vers des services Office 365 sont accordées par le service d’authentification Azure Office 365 services d’authentification ( `login.microsoftonline.com` ). Pendant la migration, les ressources qui restent en Office 365 Allemagne sont authentifiées par le service Azure Allemagne existant ( `login.microsoftonline.de` ).
+- Les demandes d’authentification pour les ressources migrées vers des services Office 365 sont accordées par le service d’authentification Azure Office 365 services d’authentification Azure ( `login.microsoftonline.com` ). Pendant la migration, les ressources qui restent en Office 365 Allemagne sont authentifiées par le service Azure Allemagne existant ( `login.microsoftonline.de` ).
 
 Remarques à prendre en compte :
 
@@ -64,17 +64,23 @@ Remarques à prendre en compte :
 
 - Office 365 abonnements Dynamics de Microsoft Cloud Deutschland sont transitionés vers la région allemande avec le déplacement d’Azure AD. L’organisation est ensuite mise à jour pour refléter les nouveaux abonnements Office 365 services. Pendant le bref processus de transfert d’abonnement, les modifications apportées aux abonnements sont bloquées.
 
-- À mesure que le client passe aux services Office 365, ses abonnements et licences propres à l’Allemagne sont normalisés avec les nouvelles offres Office 365 services. Les abonnements Office 365 services sont achetés pour les abonnements transférés en Allemagne. Les utilisateurs qui ont des licences en Allemagne se Office 365 licences de services. À la fin de l’exécution, les abonnements Germany hérités sont annulés et supprimés du client Office 365 services en cours.
+- À mesure que le client passe aux services Office 365, ses abonnements et licences propres à l’Allemagne sont normalisés avec les nouvelles offres de services Office 365 client. Les abonnements Office 365 services sont achetés pour les abonnements transférés en Allemagne. Les utilisateurs qui ont des licences en Allemagne se Office 365 licences de services. À la fin de l’exécution, les abonnements Germany hérités sont annulés et supprimés du client Office 365 services en cours.
 
 - Après la migration des charges de travail individuelles, des fonctionnalités supplémentaires sont disponibles via les services Office 365 (tels que Le Planificateur Microsoft et Microsoft Flow) en raison des nouveaux abonnements aux services Office 365. Si cela est approprié pour votre organisation, le client ou l’administrateur de licences peut désactiver les nouveaux plans de service lorsque vous planifiez la gestion des changements afin d’introduire les nouveaux services. Pour obtenir des instructions sur la désactivation des plans de service attribués aux licences des utilisateurs, voir Désactiver l’accès aux services Microsoft 365 tout en attribuant des [licences utilisateur.](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses)
 
 ## <a name="exchange-online"></a>Exchange Online
 
-- Exchange URL de ressources sont transitionnables du point de terminaison hérité germany vers le point de terminaison Office 365 services après `outlook.office.de` la `outlook.office365.com` migration. Vos utilisateurs peuvent accéder à leur boîte aux lettres migrée à l’aide de l’URL héritée jusqu’à la fin de la migration. Les clients doivent migrer les utilisateurs vers la nouvelle URL dès que possible après Exchange migration commence pour éviter d’affecter le retrait de l’environnement allemand. Les URL Office 365 services de gestion pour Outlook services deviennent disponibles uniquement après le début Exchange migration.
+- Exchange URL de ressources sont transitionnables du point de terminaison hérité germany vers `outlook.office.de` le point de terminaison Office 365 services après `outlook.office365.com` la migration. Vos utilisateurs peuvent accéder à leur boîte aux lettres migrée à l’aide de l’URL héritée jusqu’à la fin de la migration. Les clients doivent migrer les utilisateurs vers la nouvelle URL dès que possible après Exchange migration commence pour éviter d’affecter le retrait de l’environnement allemand. Les URL Office 365 services de gestion pour Outlook services deviennent disponibles uniquement après le début Exchange migration.
 
 - Les boîtes aux lettres sont migrées en tant que processus back-end. Les utilisateurs de votre organisation peuvent se voir dans Microsoft Cloud Deutschland ou dans la région allemande pendant la transition et faire partie de la même organisation Exchange (dans la même liste d’adresses globale).
 
 - Les utilisateurs de Outlook Web App qui accèdent au service à l’aide d’une URL dans laquelle leur boîte aux lettres ne réside pas voient une invite d’authentification supplémentaire. Par exemple, si la boîte aux lettres de l’utilisateur se trouve dans les services Office 365 et que la connexion Outlook Web App de l’utilisateur utilise le point de terminaison hérité, l’utilisateur s’authentifiera d’abord sur , puis sur `outlook.office.de` `login.microsoftonline.de` `login.microsoftonline.com` . Une fois la migration terminée, l’utilisateur peut accéder à la nouvelle URL ( ), et il voit uniquement la demande de signature `https://outlook.office365.com` unique attendue. 
+
+## <a name="sharepoint-online"></a>SharePoint Online
+
+Dans SharePoint Online et OneDrive Entreprise, vous pouvez partager des éléments via Outlook. Après avoir enfoncé le Outlook, un lien partageable est créé et envoyé dans un nouveau message dans Outlook Web App.
+
+Le partage d’éléments SharePoint Online et OneDrive Entreprise via Outlook ne fonctionne plus une fois la migration de SharePoint Online terminée. Nous savons qu’il s’agit d’un problème connu. Toutefois, étant donné que Outlook fonctionnalité se trouve dans le chemin de l’annulation, la résolution du problème n’est pas planifiée tant que l’annulation n’est pas déployée.
 
 ## <a name="office-services"></a>Office Services
 
@@ -93,7 +99,7 @@ Les clients Skype Entreprise Online existants sont transférés vers Microsoft T
 
 ## <a name="office-365-video"></a>Office 365 Video
 
-Office 365 La vidéo a été retirée le 1er mars 2021 et Office 365 Video ne sera pas pris en charge une fois la migration de SharePoint Online vers les nouvelles régions de centres de données allemandes terminée. Le contenu Office 365 Vidéo sera migré dans le cadre de la migration de SharePoint Online. Toutefois, les vidéos Office 365 Vidéo ne seront pas lues dans l’interface utilisateur Office 365 Vidéo après la migration SharePoint migration. En savoir plus sur la chronologie de la migration Office 365 la transition vidéo vers [Microsoft Stream (classique).](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
+Office 365 La vidéo a été retirée le 1er mars 2021 et Office 365 Video ne sera pas pris en charge une fois la migration de SharePoint Online vers les nouvelles régions de centres de données allemandes terminée. Le contenu Office 365 Vidéo sera migré dans le cadre de la migration de SharePoint Online. Toutefois, les vidéos de Office 365 vidéo ne seront pas lues dans l’interface utilisateur Office 365 vidéo après la migration SharePoint migration. En savoir plus sur la chronologie de la migration Office 365 la transition vidéo vers [Microsoft Stream (classique).](/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="next-step"></a>Étape suivante
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3219b329c53c32e02cd29acdd41a48cd93b2e8bb
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934428"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930510"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>Exécuter votre projet pilote Microsoft 365 Defender 
 
@@ -37,12 +37,12 @@ ms.locfileid: "51934428"
 - Microsoft 365 Defender
 
 
-Ce guide vous aide à exécuter un projet pilote en fournissant des pointeurs pour vous assurer que vous disposez d’un plan bien structuré, en vous guidant tout au long de l’utilisation de la fonctionnalité de simulation d’attaque et en terminant le projet pilote avec des éléments clés pour que vous réfléchissiez et documentiez les résultats.
+Ce guide vous aide à exécuter un projet pilote en fournissant des pointeurs pour vous assurer que vous disposez d’un plan bien structuré, en vous guidant à l’aide de la fonctionnalité de simulation d’attaque et en terminant le projet pilote avec des éléments clés à prendre en compte et documenter les résultats.
 
 ![Phases d’exécution d’un pilote Microsoft 365 Defender](../../media/pilotphases.png)
 
 
-L’exécution d’un pilote vous permet de déterminer efficacement les avantages de l’adoption de Microsoft 365 Defender. Avant d’activer Microsoft 365 Defender dans votre environnement de production et de commencer vos cas d’utilisation, il est préférable de planifier les tâches à accomplir pour votre projet pilote et de définir les critères de réussite. 
+L’exécution d’un projet pilote vous permet de déterminer efficacement les avantages de l’adoption Microsoft 365 Defender. Avant d’activer Microsoft 365 Defender dans votre environnement de production et de commencer vos cas d’utilisation, il est préférable de planifier les tâches à accomplir pour votre projet pilote et de définir les critères de réussite. 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>Utilisation de ce manuel pilote
@@ -63,13 +63,13 @@ Avec la solution Microsoft 365 Defender intégrée, les professionnels de la sé
 
 L’exemple de chronologie suivant varie selon que vous disposez des ressources appropriées dans votre environnement. Certaines détections et flux de travail peuvent avoir besoin de plus de temps d’apprentissage que les autres.
 
-![Exemple de chronologie lors de l’exécution d’Microsoft 365 Defender](../../media/phase-diagrams/pilot-phases.png)
+![Exemple de chronologie lors de l’exécution d Microsoft 365 Pilote Defender](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
 >Pour obtenir des résultats optimaux, suivez les instructions pilotes aussi étroitement que possible.
 
 
-### <a name="pilot-playbook-phases"></a>Phases de lecture pilotes 
+### <a name="pilot-playbook-phases"></a>Phases de lecture pilote 
 
 L’exécution d’un pilote Microsoft 365 Defender se fait en quatre phases :
 

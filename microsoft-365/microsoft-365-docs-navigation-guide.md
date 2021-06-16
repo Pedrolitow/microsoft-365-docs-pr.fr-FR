@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 navigation dans la documentation
+title: Microsoft 365 conseils de navigation dans la documentation
 description: 'Astuces et astuces pour naviguer dans la documentation technique Microsoft 365 : explique des éléments tels que la page hub, la table des matières, l’en-tête, ainsi que l’utilisation des chemins de navigation et l’utilisation du filtre de version.'
 ms.date: 08/12/2020
 ms.prod: sql
@@ -9,16 +9,17 @@ ms.custom: ''
 ms.topic: conceptual
 author: samanro
 ms.author: samanro
-ms.openlocfilehash: 07f406a0470c1cdf64ed4dd2b4acee3b793a8a15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+manager: pamgreen
+ms.openlocfilehash: 99f4018a0fe5fdd7d3d6acdad0fa19c443412023
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922423"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926678"
 ---
 # <a name="microsoft-365-docs-navigation-guide"></a>Microsoft 365 de navigation de documents
 
-Cette rubrique fournit des conseils et des astuces pour naviguer dans l’espace Microsoft 365 documentation technique.  
+Cette rubrique fournit quelques conseils et astuces pour naviguer dans l’espace Microsoft 365 documentation technique.  
 
 ## <a name="hub-page"></a>Page hub
 
@@ -30,7 +31,7 @@ Vous pouvez toujours revenir à cette page en sélectionnant **Microsoft 365** d
 
 ## <a name="offline-documentation"></a>Documentation hors connexion
 
-Si vous souhaitez afficher la documentation Microsoft 365 sur un système hors connexion, vous pouvez créer un fichier PDF où que vous vous trouveriez dans la documentation Microsoft 365 technique.
+Si vous souhaitez afficher la documentation Microsoft 365 sur un système hors connexion, vous pouvez créer un pdf où que vous se trouvez dans la documentation Microsoft 365 technique.
 
 Si vous souhaitez créer un fichier PDF, sélectionnez le lien Télécharger **pdf** en bas de chaque table des matières.
 
@@ -72,6 +73,6 @@ Savez-vous que vous pouvez modifier le contenu sur docs.microsoft.com vous-même
 
 - [Guide de collaborateur Microsoft Docs](/contribute/)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - Mise en place de la [Microsoft 365 documentation technique.](index.yml)

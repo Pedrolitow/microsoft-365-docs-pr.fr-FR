@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: de24856e8ea7555a96de18cabca5ccadfe71b431
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932880"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930270"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Codes d’Microsoft 365 l’API REST Defender courants
 
@@ -53,7 +53,7 @@ InvalidDomainName | BadRequest (400) | Le nom de \<the invalid domain\> domaine 
 InvalidIpAddress | BadRequest (400) | L’adresse IP \<the invalid IP\> n’est pas valide.
 InvalidUrl | BadRequest (400) | \<the invalid URL\>L’URL n’est pas valide.
 MaximumBatchSizeExceeded | BadRequest (400) | La taille maximale du lot est dépassée. Reçu : \<batch size received\> , autorisé : {taille de lot autorisée}.
-MissingRequiredParameter | BadRequest (400) | Paramètre \<the missing parameter\> manquant.
+MissingRequiredParameter | BadRequest (400) | Le \<the missing parameter\> paramètre est manquant.
 OsPlatformNotSupported | BadRequest (400) | La plateforme du \<the client OS Platform\> système d’exploitation n’est pas prise en charge pour cette action.
 ClientVersionNotSupported | BadRequest (400) | \<The requested action\> est pris en charge sur la version du client \<supported client version\> et versions supérieures.
 Non autorisé (Unauthorized) | Non autorisé (401) | Non autorisé (Unauthorized) <br /><br />*Remarque : généralement causée par un en-tête d’autorisation non valide ou expiré.*
@@ -62,7 +62,7 @@ DisabledFeature | Interdit (403) | La fonctionnalité client n’est pas activé
 DisallowedOperation | Interdit (403) | \<the disallowed operation and the reason\>.
 NotFound | In found (404) | Message d’erreur Général in trouvé.
 ResourceNotFound | In found (404) | Ressource \<the requested resource\> in trouvée.
-InternalServerError | Erreur interne du serveur (500) | *Remarque : aucun message d’erreur, retenter l’opération ou contacter Microsoft si elle n’est pas résolue*
+InternalServerError | Erreur interne du serveur (500) | *Remarque : aucun message d’erreur, retenter l’opération ou [contacter Microsoft](/microsoft-365/business-video/get-help-support) si elle n’est pas résolue*
 
 ## <a name="examples"></a>Exemples
 
@@ -100,6 +100,6 @@ Chaque réponse d’erreur contient un paramètre d’ID unique pour le suivi. L
 ## <a name="related-articles"></a>Articles connexes
 
 - [Microsoft 365 Vue d’ensemble des API Defender](api-overview.md)
-- [API Microsoft 365 Defender prises en charge](api-supported.md)
+- [API Microsoft 365 Defender prises en charge](api-supported.md)
 - [Accéder aux API Microsoft 365 Defender](api-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)

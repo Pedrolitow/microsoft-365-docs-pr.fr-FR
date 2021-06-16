@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ccb0d4cf168bbb4d3c1575c1e6611829909d0817
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275407"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926534"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
 
@@ -46,7 +46,7 @@ Consultez [l’article Sécurité Windows pour](/windows/threat-protection/windo
 
 L Sécurité Windows’application est une interface client Windows 10 version 1703 et ultérieures. Il ne s’agit pas du Centre de sécurité Microsoft Defender web utilisé pour examiner et gérer [Microsoft Defender for Endpoint.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Passer en revue les paramètres de protection contre les virus et menaces dans l Sécurité Windows appl
+## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Passer en revue les paramètres de protection contre les virus et les menaces dans l Sécurité Windows appl
 
 ![Capture d’écran de l’étiquette des paramètres de protection contre les virus et les menaces dans l’application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
 
@@ -99,7 +99,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sous les **paramètres Gérer,** sélectionnez Paramètres de protection contre & virus et **menaces.**
+3. Sous les **paramètres Gérer,** sélectionnez **Paramètres de protection contre & virus.**
 
 4. Sous le **paramètre Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.** 
 
@@ -114,7 +114,7 @@ Le tableau suivant récapitule les types d’exclusion et ce qui se produit :
 |**Type de fichier**   |Extension de fichier <br/>Exemple : `.test` |Tous les fichiers avec `.test` l’extension n’importe où sur votre appareil sont ignorés par Antivirus Microsoft Defender.         |
 |**Processus**     |Chemin d’accès au fichier exécutable <br>Exemple : `c:\test\process.exe`         |Le processus spécifique et tous les fichiers ouverts par ce processus sont ignorés par Antivirus Microsoft Defender.         |
 
-Pour en savoir plus, consultez les ressources suivantes :
+Pour en savoir plus, consultez les ressources suivantes :
 - [Configurer et valider des exclusions en fonction de l’extension de fichier et de l’emplacement du dossier](./configure-extension-file-exclusions-microsoft-defender-antivirus.md) 
 - [Configurer des exclusions pour les fichiers ouverts par des processus](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 

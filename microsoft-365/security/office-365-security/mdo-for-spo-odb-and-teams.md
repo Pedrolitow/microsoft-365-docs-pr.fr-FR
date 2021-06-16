@@ -23,19 +23,19 @@ ms.custom:
 description: Découvrez Microsoft Defender pour Office 365 fichiers dans SharePoint Online, OneDrive Entreprise et Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a74a75f12a758b9b116a3f752624df38f338d0d1
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 7aa375020ce05ca1d484bb7ed18b8cf7a6e7d04e
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878219"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932841"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Les pièces jointes fiables pour SharePoint, OneDrive et Microsoft Teams dans [Microsoft Defender pour Office 365](whats-new-in-defender-for-office-365.md) offrent une couche de protection supplémentaire pour les fichiers qui ont déjà été analysés au moment du chargement par le moteur de détection de virus courant dans [Microsoft 365](virus-detection-in-spo.md). Les pièces jointes SharePoint, OneDrive et Microsoft Teams permettent de détecter et de bloquer les fichiers existants identifiés comme malveillants dans les sites d’équipe et les bibliothèques de documents.
@@ -66,7 +66,7 @@ Pour en savoir plus sur l’expérience utilisateur lorsqu’un fichier a été 
 
 Les fichiers identifiés comme malveillants par les pièces jointes fiables pour SharePoint, OneDrive et Microsoft Teams s’afficheront dans les rapports de [Microsoft Defender](view-reports-for-mdo.md) pour Office 365 et dans l’Explorateur [(et détections](threat-explorer.md)en temps réel).
 
-Depuis mai 2018, lorsqu’un fichier est identifié comme malveillant par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams, le fichier est également disponible en quarantaine. Pour plus d’informations, voir [Utiliser le portail Microsoft 365 Defender](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)pour gérer les fichiers mis en quarantaine dans Defender pour Office 365 .
+Depuis mai 2018, lorsqu’un fichier est identifié comme malveillant par des pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams, le fichier est également disponible en quarantaine. Pour plus d’informations, [voir Gérer les fichiers mis en quarantaine dans Defender pour Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
 ## <a name="keep-these-points-in-mind"></a>Gardez ces points à l’esprit
 
