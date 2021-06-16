@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710717"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932865"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -263,9 +263,16 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 |Révisions avant élimination | Non| Oui |
 |Preuve de la destruction pendant 7 ans | Non |Oui, lorsque vous utilisez la révision avant destruction ou que l’élément est marqué comme enregistrement|
 |Audit des activités administratives| Oui | Oui|
+|Auditer les actions de rétention| Non | Oui <sup>\*</sup> |
 |Identification des éléments soumis à une stratégie de rétention : <br /> - Recherche de contenu <br /> - Page classification des données, explorateur de contenu, explorateur d’activité | <br /> Non <br /> Non | <br /> Oui <br /> Oui|
 
-Notez que vous pouvez utiliser les stratégies de rétention et les étiquettes de rétention comme méthodes de rétention complémentaires. Par exemple :
+**Note de bas de page :**
+
+<sup>\*</sup> Pour les étiquettes de rétention qui ne marquent pas le contenu comme enregistrement ou enregistrement réglementaire, les événements d’audit sont limités à ceux dans lequel un élément dans SharePoint dispose d’une étiquette appliquée, modifiée ou supprimée. Pour obtenir les détails d’audit pour les étiquettes de rétention, voir la section [Audit des actions de rétention](#auditing-retention-actions) sur cette page.
+
+### <a name="combining-retention-policies-and-retention-labels"></a>Combinaison de stratégies de rétention et d’étiquettes de rétention
+
+Vous ne devez pas choisir entre les stratégies de rétention uniquement et les étiquettes de rétention uniquement. Les deux méthodes peuvent être utilisées ensemble et se complètent en fait l’une l’autre pour une solution plus complète. Par exemple :
 
 1. Vous créez et configurez une stratégie de rétention qui supprime automatiquement le contenu cinq ans après sa dernière modification, et l’appliquez à tous les comptes OneDrive.
 
@@ -374,9 +381,31 @@ Pour plus d’informations sur la bibliothèque de conservation et de préservat
 
 En raison du comportement pendant la période de grâce, si vous rétablissez la stratégie ou rétablissez l’état de l’emplacement dans un délai de 30 jours, la stratégie reprend sans perte de données permanente pendant cette période.
 
-## <a name="auditing-retention-configuration"></a>Audit de la configuration de rétention
+## <a name="auditing-retention-configuration-and-actions"></a>Audit de la configuration et des actions de rétention
 
-Les actions de l'administrateur concernant les politiques de rétention et les étiquettes de rétention sont enregistrées dans le journal d'audit lorsque [l'audit est activé](turn-audit-log-search-on-or-off.md). Par exemple, un événement d’audit est créé lors de la création, la configuration ou la suppression d’une politique de rétention ou d’une étiquette. Pour obtenir la liste complète, voir [Politiques de rétention et activités d’étiquette de rétention](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+Lorsque [l’audit est activé](turn-audit-log-search-on-or-off.md), les événements d’audit pour la rétention sont pris en charge pour la configuration d’administration (stratégies de rétention et étiquettes de rétention) et les actions de rétention (étiquettes de rétention uniquement).
+
+### <a name="auditing-retention-configuration"></a>Audit de la configuration de rétention
+
+La configuration de l’administrateur pour les stratégies de rétention et les étiquettes de rétention est journalisée comme événement d’audit lorsqu’une stratégie ou étiquette de rétention est créée, reconfigurée ou supprimée.
+
+Pour obtenir la liste complète des événements d’audit, voir [Politiques de rétention et activités d’étiquette de rétention](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+
+### <a name="auditing-retention-actions"></a>Audit des actions de rétention
+
+Les actions de rétention qui sont journalisées comme événements d’audit sont disponibles uniquement pour les étiquettes de rétention et non pour les stratégies de rétention :
+
+- Lorsqu’une étiquette de rétention est appliquée, modifiée ou supprimée d’un élément dans SharePoint :
+    - Dans **Activités sur les fichiers et les pages**, sélectionnez **Changement d’une étiquette de rétention pour un fichier** 
+
+- Lorsqu’un élément étiqueté dans SharePoint est marqué comme enregistrement et qu’il est débloqué ou bloqué par un utilisateur :
+    - Dans **Activités de fichier et de page**, sélectionnez **Modification de l’état de l’enregistrement à « déverrouillé »,** et **Modification de l’état de l’enregistrement à « verrouillé »**
+
+- Lorsqu’une étiquette de rétention qui marque le contenu comme enregistrement ou enregistrement réglementaire est appliquée à un élément dans Exchange :
+    - Dans **Activités sur la boîte aux lettres Exchange**, sélectionnez **Message étiqueté comme enregistrement**
+
+- Lorsqu’un élément étiqueté dans SharePoint ou Exchange est marqué comme enregistrement ou enregistrement réglementaire et qu’il définitivement supprimé :
+    - Dans **Activités sur les fichiers et les pages**, sélectionnez **Fichier supprimé marqué comme enregistrement**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention
 

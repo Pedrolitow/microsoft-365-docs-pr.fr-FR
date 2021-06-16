@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Comprendre le nombre maximal de stratégies et d’éléments par stratégie pour les stratégies de rétention et les stratégies d’étiquette de rétention
-ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698963"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908100"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Limites des stratégies de rétention et stratégies d’étiquettes de rétention
 
@@ -37,7 +37,7 @@ Un client unique peut avoir un maximum de 10 000 stratégies (n’importe quelle
 
 Dans cette limite de 10 000 stratégies, il existe également des limites sur le nombre maximal de stratégies de rétention par charge de travail :
 
-- Exchange Online (n’importe quelle configuration) : 1 800
+- Exchange (n’importe quelle configuration) : 1 800
 - SharePoint ou OneDrive : (tous les sites sont inclus automatiquement) : 13
 - SharePoint ou OneDrive (emplacements spécifiques inclus ou exclus) : 2 600
 
@@ -49,10 +49,16 @@ Si vous utilisez la configuration optionnelle pour étendre vos paramètres de r
 
 Nombre maximal d’éléments par stratégie pour la rétention :
 
-  - 1 000 boîtes aux lettres (boîtes aux lettres des utilisateurs ou boîtes aux lettres de groupe)
-  - 1 000 groupes Microsoft 365
-  - 1 000 utilisateurs pour conversations privées Teams
-  - 100 sites (OneDrive et SharePoint)
+- Les boîtes aux lettres Exchange : 1 000
+- Groupes Microsoft 365 : 1 000
+- Messages du canal Teams : 1 000
+- Conversations Teams : 1 000
+- Messages communautaires Yammer : 1 000
+- Messages utilisateur de Yammer : 1 000
+- Sites SharePoint : 100
+- Comptes OneDrive : 100
+
+Skype Entreprise doit être étendu à des utilisateurs spécifiques et le nombre maximal pris en charge par stratégie est de 1 000.
 
 Ces limitations s'appliquent à chaque police, donc si vous devez utiliser des inclusions ou des exclusions spécifiques qui entraînent un dépassement de ces chiffres, vous pouvez créer des politiques de rétention supplémentaires qui ont les mêmes paramètres de rétention. Voir la section suivante pour quelques[exemples de scénarios et de solutions](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers) qui utilisent plusieurs politiques de rétention pour cette raison.
 
@@ -82,3 +88,13 @@ Exemple de SharePoint :
 - **Solution**:Créer 20 politiques de conservation pour SharePoint avec une période de conservation de 10 ans qui inclut 100 sites spécifiques, et créer 80 politiques de conservation pour SharePoint avec une période de conservation de 4 ans qui inclut 100 sites spécifiques.
     
     Comme il n'est pas nécessaire de conserver tous les sites SharePoint, vous devez créer des politiques de conservation qui spécifient les sites spécifiques. Comme une stratégie de conservation ne prend pas en charge plus de 100 sites spécifiques, vous devez créer plusieurs stratégies pour les deux périodes de conservation. Ces stratégies de rétention ont le nombre maximum de sites inclus, de sorte que le prochain nouveau site à conserver nécessiterait une nouvelle stratégie de rétention, quelle que soit la période de rétention.
+
+## <a name="maximum-number-of-items-for-disposition"></a>Nombre maximal d’éléments pour la destruction
+
+Pour la [destruction de contenu](disposition.md), il existe des limites à prendre en compte :
+
+- 1 000 000 éléments en attente de destruction par phase pour chaque étiquette de rétention
+
+- Preuve de la destruction pendant un délai maximal de 7 ans après destruction de l’élément, avec une limite de 1 000 000 éléments par étiquette de rétention pour cette période. 
+    
+Si vous avez besoin d’une preuve de destruction supérieure à cette limite de 1 000 000 pour des éléments entrant comme enregistrements, contactez le [Support Microsoft](../business-video/get-help-support.md).

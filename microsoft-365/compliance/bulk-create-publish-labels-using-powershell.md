@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 ms.date: ''
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,25 +18,25 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment utiliser PowerShell pour la création et la publication d’étiquettes de rétention à partir de la ligne de commande, indépendamment du Centre de conformité Microsoft 365.
-ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Découvrez comment utiliser PowerShell pour la création et la publication d’étiquettes de rétention à partir de la ligne de commande, indépendamment du Centre de conformité Microsoft 365.
+ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918220"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924962"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Créer et publier des étiquettes de rétention à l’aide de PowerShell
 
->*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Guide de sécurité et conformité pour les licences Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Après avoir décidé d’utiliser les [étiquettes de rétention](retention.md) pour vous permettre de conserver ou de supprimer des documents et messages électroniques dans Microsoft 365, vous vous êtes peut-être rendu compte que vous avez de nombreuses étiquettes de rétention, voire des centaines, à créer et à publier. Pour créer des étiquettes de rétention à l’échelle, nous vous conseillons d’utiliser [plan de fichiers](file-plan-manager.md) depuis le Centre de conformité Microsoft 365. Cependant, vous pouvez également utiliser les applets de commande [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
+Après avoir décidé d’utiliser les [étiquettes de rétention](retention.md) pour vous permettre de conserver ou de supprimer des documents et messages électroniques dans Microsoft 365, vous vous êtes peut-être rendu compte que vous avez de nombreuses étiquettes de rétention, voire des centaines, à créer et à publier. Pour créer des étiquettes de rétention à l’échelle, nous vous conseillons d’utiliser [plan de fichiers](file-plan-manager.md) depuis le Centre de conformité Microsoft 365. Cependant, vous pouvez également utiliser les applets de commande [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
 Utilisez les informations, les fichiers de modèles et les exemples, ainsi que les scripts inclus dans cet article pour vous permettre de créer des étiquettes de rétention en bloc et les publier dans des stratégies d’étiquette de rétention. Les étiquettes de rétention peuvent ensuite être [appliquées par les administrateurs et les utilisateurs](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
 Les instructions fournies ne prennent pas en charge les étiquettes de rétention qui sont automatiquement appliquées.
 
-Vue d’ensemble : 
+Vue d’ensemble : 
 
 1. Dans Excel, créez une liste de vos étiquettes de rétention et une liste de leurs stratégies d’étiquette de rétention.
 
@@ -43,20 +44,20 @@ Vue d’ensemble :
   
 ## <a name="disclaimer"></a>Clause d’exclusion de responsabilité
 
-Les exemples de scripts fournis dans cet article ne sont pas pris en charge par les services ou programmes d’assistance standard de Microsoft. Les exemples de scripts sont fournis tels quels, sans garantie d’aucune sorte. Microsoft Corporation décline aussi toute garantie implicite, y compris et sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. La totalité des risques découlant de l’utilisation ou de la performance des exemples de scripts et de la documentation repose sur vous. En aucun cas Microsoft, ses auteurs ou quiconque impliqué dans la création, la production ou la livraison des scripts ne sera responsable de tous dommages quels qu’ils soient (y compris, sans limitation, les dommages pour perte de profits, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
+Les exemples de script fournis dans cet article ne sont pris en charge dans aucun programme de support ou service standard de Microsoft. Les exemples de scripts sont fournis en l’état, sans garantie d’aucune sorte. Microsoft exclut toute garantie implicite, y compris, sans limitation, les garanties implicites de qualité marchande ou d’adéquation à un usage particulier. Vous assumez tous les risques liés à l’utilisation ou à l’exécution des exemples de scripts et de la documentation. En aucun cas, Microsoft, ses auteurs ou toute personne impliquée dans la création, la production ou la livraison des scripts ne sont responsables de dommages quelconques (y compris, sans limitation, pertes de bénéfices, interruption d’activité, perte d’informations commerciales ou toute autre perte pécuniaire) découlant de l’utilisation ou de l’impossibilité d’utiliser les exemples de scripts ou la documentation, même si Microsoft a été informé de la possibilité de tels dommages.
   
-## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Étape 1 : créer un fichier .csv pour les étiquettes de rétention
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Étape 1 : créer un fichier .csv pour les étiquettes de rétention
 
 1. Copiez l’exemple de fichier .csv suivant pour un modèle et les entrées d’exemple pour quatre étiquettes de rétention, puis collez-les dans Excel. 
 
-2. Convertissez le texte en colonnes : onglet **Données** \> **Texte en colonnes** \> **Délimité** \> **Virgule** \> **Général**
+2. Convertissez le texte en colonnes : onglet **Données** \> **Texte en colonnes** \> **Délimité** \> **Virgule** \> **Général**
 
 2. Remplacez les exemples par des entrées pour vos propres étiquettes et paramètres de rétention. Si vous souhaitez en savoir plus sur les valeurs de paramètre, consultez l’article [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
-3. Enregistrez la feuille de calcul en tant que fichier .csv dans un emplacement facile à trouver pour une étape ultérieure. Par exemple : C :\>Scripts\Labels.csv
+3. Enregistrez la feuille de calcul en tant que fichier .csv dans un emplacement facile à trouver pour une étape ultérieure. Par exemple : C :\>Scripts\Labels.csv
 
   
-Remarques :
+Remarques :
 
 - Si le fichier .csv contient une étiquette de rétention portant le même nom qu’une étiquette de rétention existante, le script ignore la création de cette étiquette de rétention. Aucune étiquette de rétention en double n’est créée.
     
@@ -72,18 +73,18 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Étape 2 : créer un fichier .csv pour les stratégies des étiquettes de rétention
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>Étape 2 : créer un fichier .csv pour les stratégies des étiquettes de rétention
 
 1. Copiez l’exemple de fichier .csv suivant pour un modèle et les entrées d’exemple pour trois différentes stratégies d’étiquettes de rétention, puis collez-les dans Excel. 
 
-2. Convertissez le texte en colonnes : onglet **Données** \> **Texte en colonnes** \> **Délimité** \> **Virgule** \> **Général**
+2. Convertissez le texte en colonnes : onglet **Données** \> **Texte en colonnes** \> **Délimité** \> **Virgule** \> **Général**
 
 2. Remplacez les exemples par des entrées pour vos propres stratégies d’étiquettes et paramètres de rétention. Pour en savoir plus sur les valeurs de paramètre pour cette applet de commande, consultez l’article [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
 
-3. Enregistrez la feuille de calcul en tant que fichier .csv dans un emplacement facile à trouver pour une étape ultérieure. Par exemple : `<path>Policies.csv`
+3. Enregistrez la feuille de calcul en tant que fichier .csv dans un emplacement facile à trouver pour une étape ultérieure. Par exemple : `<path>Policies.csv`
 
 
-Remarques :
+Remarques :
   
 - Si le fichier .csv contient une stratégie d’étiquette de rétention portant le même nom qu’une stratégie existante, le script ignore la création de cette stratégie d’étiquette de rétention. Aucune stratégie d’étiquette de rétention en double n’est créée.
     
@@ -98,15 +99,15 @@ Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
 Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
-## <a name="step-3-create-the-powershell-script"></a>Étape 3 : créer le script PowerShell
+## <a name="step-3-create-the-powershell-script"></a>Étape 3 : créer le script PowerShell
 
 1. Copiez et collez le script PowerShell suivant dans le bloc-notes.
 
-2. Enregistrez le fichier à l’aide d’une extension de nom de fichier **.ps1** dans un emplacement facile à trouver. Par exemple : `<path>CreateRetentionSchedule.ps1`
+2. Enregistrez le fichier à l’aide d’une extension de nom de fichier **.ps1** dans un emplacement facile à trouver. Par exemple : `<path>CreateRetentionSchedule.ps1`
 
-Remarques :
+Remarques :
 
-- Le script vous invite à fournir les deux fichiers sources créés au cours des deux étapes précédentes :
+- Le script vous invite à fournir les deux fichiers sources créés au cours des deux étapes précédentes :
     - Si vous ne spécifiez pas le fichier source pour la création des étiquettes de rétention, le script continue pour créer les stratégies d’étiquette de rétention. 
     - Si vous ne spécifiez pas le fichier source pour créer les stratégies d’étiquette de rétention, le script crée uniquement les étiquettes de rétention.
 
@@ -734,25 +735,25 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-run-the-powershell-script"></a>Étape 4 : exécution du script PowerShell
+## <a name="step-4-run-the-powershell-script"></a>Étape 4 : exécution du script PowerShell
 
 Tout d’abord, [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell).
 
-Puis exécutez le script qui permet de créer et de publier les étiquettes de rétention :
+Puis exécutez le script qui permet de créer et de publier les étiquettes de rétention :
   
-1. Dans votre session dans le Centre de sécurité et conformité PowerShell, saisissez le chemin d’accès suivi des caractères `.\` et le nom de fichier du script, puis appuyez sur ENTRÉE pour exécuter le script. Par exemple :
+1. Dans votre session dans le Centre de sécurité et conformité PowerShell, saisissez le chemin d’accès suivi des caractères `.\` et le nom de fichier du script, puis appuyez sur ENTRÉE pour exécuter le script. Par exemple :
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
     ```
 
-2. Le script vous invite à saisir les emplacements des fichiers .csv que vous avez créés au cours des étapes précédentes. Saisissez le chemin d’accès suivi des caractères `.\` et le nom de fichier du script, puis appuyez sur ENTRÉE. Par exemple, pour la première invite :
+2. Le script vous invite à saisir les emplacements des fichiers .csv que vous avez créés au cours des étapes précédentes. Saisissez le chemin d’accès suivi des caractères `.\` et le nom de fichier du script, puis appuyez sur ENTRÉE. Par exemple, pour la première invite :
     
     ```powershell
     <path>.\Labels.csv
     ```
 
-## <a name="step-5-view-the-log-file-with-the-results"></a>Étape 5 : afficher le fichier journal avec les résultats
+## <a name="step-5-view-the-log-file-with-the-results"></a>Étape 5 : afficher le fichier journal avec les résultats
 
 Utilisez le fichier journal créé par le script pour vérifier les résultats et identifier les échecs devant être résolus.
 
