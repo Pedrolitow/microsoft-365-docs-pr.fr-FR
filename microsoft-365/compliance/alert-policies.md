@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: Créez des stratégies d’alerte dans le centre de sécurité et de conformité Office 365 et Microsoft 365 pour surveiller les menaces potentielles, la perte de données et les problèmes d’autorisations.
-ms.openlocfilehash: 2fe23f3e6d6889c3fc80b94be6a07095e06d3d68
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 4bca7bb15900dbdd7caadb74ce7938b9483be03e
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950118"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964727"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Stratégies d’alerte dans le Centre de sécurité et de conformité
 
@@ -285,11 +285,11 @@ Une fois les alertes générées et affichées sur la page Afficher les **alerte
 
   - Nombre de fois que l’activité suivi par l’alerte a été effectuée. Ce nombre peut ne pas correspondre au nombre réel d’alertes associées répertoriées dans la page Afficher les alertes, car d’autres alertes peuvent avoir été déclenchées.
 
-  - Lien vers une liste d’activités qui inclut un élément pour chaque activité qui a déclenché l’alerte. Chaque entrée de cette liste identifie le moment où l’activité s’est produite, le nom de l’opération réelle (telle que « FileDeleted ») et l’utilisateur qui a effectué l’activité, l’objet (par exemple, un fichier, un cas eDiscovery ou une boîte aux lettres) sur qui l’activité a été effectuée et l’adresse IP de l’ordinateur de l’utilisateur. Pour les alertes liées aux programmes malveillants, il s’agit d’un lien vers une liste de messages.
+  - Lien vers une liste d’activités qui inclut un élément pour chaque activité qui a déclenché l’alerte. Chaque entrée de cette liste identifie le moment où l’activité s’est produite, le nom de l’opération réelle (telle que « FileDeleted »), l’utilisateur qui a effectué l’activité, l’objet (par exemple, un fichier, un cas eDiscovery ou une boîte aux lettres) sur qui l’activité a été effectuée et l’adresse IP de l’ordinateur de l’utilisateur. Pour les alertes liées aux programmes malveillants, il s’agit d’un lien vers une liste de messages.
 
   - Nom (et lien) de la stratégie d’alerte correspondante.
 
-- **Supprimer les notifications par courrier électronique.** Vous pouvez désactiver (ou supprimer) les notifications par courrier électronique à partir de la page volante pour une alerte. Lorsque vous supprimez des notifications par courrier électronique, Microsoft n’envoie pas de notifications lorsque des activités ou des événements qui correspondent aux conditions de la stratégie d’alerte. Toutefois, les alertes sont déclenchées lorsque les activités effectuées par les utilisateurs correspondent aux conditions de la stratégie d’alerte. Vous pouvez également désactiver les notifications par courrier électronique en éditant la stratégie d’alerte.
+- **Supprimer les notifications par courrier électronique.** Vous pouvez désactiver (ou supprimer) les notifications par courrier électronique à partir de la page volante pour une alerte. Lorsque vous supprimez des notifications par courrier électronique, Microsoft n’envoie pas de notifications lorsque des activités ou des événements qui correspondent aux conditions de la stratégie d’alerte se produisent. Toutefois, les alertes sont déclenchées lorsque les activités effectuées par les utilisateurs correspondent aux conditions de la stratégie d’alerte. Vous pouvez également désactiver les notifications par courrier électronique en éditant la stratégie d’alerte.
 
 - **Résoudre les alertes.** Vous pouvez marquer une alerte comme résolue dans la page volante d’une alerte (qui définit l’état de l’alerte **sur Résolu).** Sauf si vous modifiez le filtre, les alertes résolues ne sont pas affichées dans la page Afficher **les alertes.**
 
