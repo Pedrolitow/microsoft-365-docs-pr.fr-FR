@@ -1,5 +1,5 @@
 ---
-title: API prises en charge Microsoft Defender pour point de terminaison.
+title: API prises en charge Microsoft Defender pour point de terminaison
 ms.reviewer: ''
 description: Découvrez les entités Microsoft Defender for Endpoint spécifiques pris en charge dans laquelle vous pouvez créer des appels d’API.
 keywords: api, api pris en charge, acteur, alertes, appareil, utilisateur, domaine, ip, fichier, requêtes avancées, recherche avancée
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788834"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984999"
 ---
-# <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison.
+# <a name="supported-microsoft-defender-for-endpoint-apis"></a>API prises en charge Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "52788834"
 >
 > La version actuelle **est V1.0**.
 >
-> Pour utiliser une version spécifique, utilisez ce format : `https://api.securitycenter.microsoft.com/api/{Version}` . Par exemple : `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
+> Pour utiliser une version spécifique, utilisez ce format : `https://api.securitycenter.microsoft.com/api/{Version}` . Par exemple : `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
 > Si vous ne spécifiez aucune version (par exemple), vous allez obtenir `https://api.securitycenter.microsoft.com/api/alerts` la dernière version.
 
@@ -62,16 +62,16 @@ Rubrique | Description
 :---|:---
 [Repérage avancé](run-advanced-query-api.md) | Exécuter des requêtes à partir de l’API.
 [Méthodes et propriétés de l’alerte](alerts.md) | Exécutez des appels d’API tels \- que obtenir des alertes, créer une alerte, mettre à jour une alerte, etc.
-[Exporter les méthodes et propriétés d’évaluation par appareil](get-assessment-methods-properties.md) | Exécutez des appels d’API tels que l’exportation de l’évaluation de la configuration sécurisée, l’évaluation de l’inventaire logiciel et l’évaluation des vulnérabilités \- logicielles.
+[Exporter les méthodes et propriétés d’évaluation par appareil](get-assessment-methods-properties.md) | Exécutez des appels d’API pour collecter des évaluations des vulnérabilités par appareil, telles que : exporter l’évaluation de la configuration sécurisée, exporter l’évaluation de l’inventaire logiciel, exporter l’évaluation des vulnérabilités logicielles et exporter delta l’évaluation des vulnérabilités \- logicielles.
 [Méthodes et propriétés d’investigation automatisée](investigation.md) | Exécutez des appels d’API tels \- que obtenir la collection d’examens.
 [Obtenir des alertes liées au domaine](get-domain-related-alerts.md) | Exécutez des appels d’API tels \- que l’get domain-related devices, domain statistics and more.
-[Soumettre des méthodes et propriétés](files.md) | Exécutez des appels d’API tels que obtenir des informations sur les fichiers, des alertes liées aux fichiers, des \- périphériques liés aux fichiers et des statistiques sur les fichiers.
+[Soumettre des méthodes et propriétés](files.md) | Exécutez des appels d’API tels que obtenir des informations sur les fichiers, des alertes liées aux fichiers, des périphériques liés \- aux fichiers et des statistiques sur les fichiers.
 [Méthodes et propriétés des indicateurs](ti-indicator.md) | Exécutez un appel d’API tel que obtenir des indicateurs, créer un \- indicateur et supprimer des indicateurs.
 [Obtenir des alertes liées à l’IP](get-ip-related-alerts.md) | Exécutez des appels d’API tels \- que l’get IP-related alerts and get IP statistics.
 [Méthodes et propriétés de l’ordinateur](machine.md) | Exécutez des appels d’API tels que obtenir des appareils, obtenir des appareils par ID, des informations sur les utilisateurs connectés, modifier des \- balises, etc.
 [Méthodes et propriétés de l’action de l’ordinateur](machineaction.md) | Exécutez un appel d’API tel \- que Isolation, Exécuter une analyse antivirus et bien plus encore.
 [Méthodes et propriétés de l’action d'amélioration](recommendation.md) | Exécutez des appels d’API tels \- que obtenir une recommandation par ID.
-[Méthodes et propriétés des activités de correction](get-remediation-methods-properties.md) | Exécutez un appel d’API comme obtenir toutes les tâches de correction, obtenir la tâche de correction des appareils exposés et obtenir une tâche de correction \- par ID.
+[Méthodes et propriétés des activités de correction](get-remediation-methods-properties.md) | Exécutez un appel d’API comme obtenir toutes les tâches de correction, obtenir une tâche de correction des appareils exposés et obtenir une tâche de correction \- par ID.
 [Méthodes et propriétés du score](score.md) | Exécutez des appels d’API tels \- que obtenir le score d’exposition ou obtenir le score de sécurité de l’appareil.
 [Méthodes et propriétés du logiciel](software.md) | Exécutez des appels d’API tels que \- des vulnérabilités de liste par logiciel.
 [Méthodes de l’utilisateur](user.md) | Exécutez des appels d’API tels que l’accès à des \- alertes liées à l’utilisateur et à des appareils liés à l’utilisateur.

@@ -14,18 +14,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769316"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985455"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Afficher les événements de la réduction de la surface d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +39,7 @@ La révision des événements est pratique lorsque vous évaluez les fonctionnal
 
 Cet article répertorie tous les événements, leurs fonctionnalités ou paramètres associés, et explique comment créer des affichages personnalisés pour filtrer des événements spécifiques.
 
-Obtenez des rapports détaillés sur les événements et les blocs dans le cadre Sécurité Windows si vous avez un abonnement E5 et utilisez [Microsoft Defender pour endpoint](microsoft-defender-endpoint.md).
+Obtenez des rapports détaillés sur les événements, les blocs et les avertissements dans le cadre de Sécurité Windows si vous avez un abonnement E5 et que vous utilisez [Microsoft Defender pour endpoint](microsoft-defender-endpoint.md).
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Utiliser des affichages personnalisés pour examiner les fonctionnalités de réduction de la surface d’attaque
 
@@ -48,17 +49,18 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importer une vue personnalisée XML existante
 
-1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt en .xml) :
+1. Créez un fichier .txt vide et copiez le fichier XML de l’affichage personnalisé que vous souhaitez utiliser dans .txt fichier. Faites-le pour chacun des affichages personnalisés que vous souhaitez utiliser. Renommez les fichiers comme suit (assurez-vous de modifier le type de .txt à .xml) :
     - Affichage personnalisé des événements d’accès contrôlé aux *dossiers :cfa-events.xml*
     - Vue personnalisée des événements Exploit Protection *:ep-events.xml*
     - Vue personnalisée des événements de réduction de la surface *d’attaque :asr-events.xml*
     - Affichage personnalisé des événements réseau/protection *:np-events.xml*
 
-2. Tapez **l’Observateur** d’événements dans le menu Démarrer et ouvrez **l’Observateur d’événements.**
+2. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez **l’Observateur d’événements.**
 
 3. Sélectionner **l’affichage**  >  **personnalisé d’importation d’action...**
 
-    ![Animation mettant en surbrillance l’importation d’une vue personnalisée à gauche de la fenêtre visionneuse even](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![Animation mettant en surbrillance l’importation d’une vue personnalisée à gauche de la fenêtre visionneuse even](images/events-import.gif)
 
 4. Accédez à l’endroit où vous avez extrait le fichier XML pour l’affichage personnalisé que vous souhaitez, puis sélectionnez-le.
 
@@ -68,19 +70,18 @@ Vous pouvez également accéder manuellement à la zone d’événement correspo
 
 ### <a name="copy-the-xml-directly"></a>Copier directement le XML
 
-1. Tapez **l’Observateur** d’événements dans le menu Démarrer et ouvrez **l Windows’observateur d’événements.**
+1. Tapez **l’Observateur** d’événements menu Démarrer et ouvrez l’observateur Windows **événements.**
 
 2. Dans le panneau gauche, sous **Actions,** **sélectionnez Créer un affichage personnalisé...**
 
-    ![Animation mettant en surbrillance l’option créer un affichage personnalisé dans la fenêtre de l’Observateur d’événements](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![Animation mettant en surbrillance l’option créer un affichage personnalisé dans la fenêtre de l’Observateur d’événements](images/events-create.gif)
 
 3. Go to the XML tab and select **Edit query manually**. Vous verrez un avertissement vous signalant que vous  ne pouvez pas modifier la requête à l’aide de l’onglet Filtre si vous utilisez l’option XML. Sélectionnez **Oui**.
 
 4. Collez le code XML de la fonctionnalité dont vous souhaitez filtrer les événements dans la section XML.
 
-5. Sélectionnez **OK**. Spécifiez un nom pour votre filtre.
-
-6. Il crée un affichage personnalisé qui filtre pour afficher uniquement les événements liés à cette fonctionnalité.
+5. Sélectionnez **OK**. Spécifiez un nom pour votre filtre. Cela crée un affichage personnalisé qui filtre pour afficher uniquement les événements liés à cette fonctionnalité.
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>XML pour les événements de règle de réduction de la surface d’attaque
 
@@ -145,7 +146,7 @@ Vous pouvez accéder à ces événements dans l Windows’observateur d’évén
 2. Développez **Journaux** des applications et des services > Microsoft > Windows puis allez dans le dossier répertorié sous **Fournisseur/source** dans le tableau ci-dessous.
 3. Double-cliquez sur le sous-élément pour voir les événements. Faites défiler les événements pour trouver celui que vous recherchez.
 
-   ![Animation montrant l’utilisation de l’Observateur d’événements](/windows/security/threat-protection/images/event-viewer)
+   ![Animation montrant l’utilisation de l’Observateur d’événements](images/event-viewer.gif)
 
 Fonctionnalité | Fournisseur/source | ID de l'événement | Description
 :-|:-|:-:|:-

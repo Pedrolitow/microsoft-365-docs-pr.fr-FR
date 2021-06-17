@@ -1,6 +1,6 @@
 ---
-title: API Microsoft 365 Defender prises en charge
-description: API Microsoft 365 Defender prises en charge
+title: API Microsoft 365 Defender prises en charge
+description: API Microsoft 365 Defender prises en charge
 keywords: Microsoft 365 Defender, API, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730941"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985083"
 ---
-# <a name="supported-microsoft-365-defender-apis"></a>API Microsoft 365 Defender prises en charge 
+# <a name="supported-microsoft-365-defender-apis"></a>API Microsoft 365 Defender prises en charge 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ Article | Description
 -|-
 [API de recherche avancée de menaces](api-advanced-hunting.md) | Exécutez des requêtes de recherche avancée.
 [API d’incident](api-incident.md) | Liste et mise à jour des incidents, ainsi que d’autres tâches pratiques.
-[API de diffusion en](../defender-endpoint/raw-data-export.md) continu (prévisualisation) | Expédiez des alertes et des événements en temps réel à mesure qu’ils se produisent dans un flux de données unique.
+[API de diffusion en](streaming-api.md) continu (prévisualisation) | Expédiez des alertes et des événements en temps réel à mesure qu’ils se produisent dans un flux de données unique.
 
 ### <a name="endpoint-uris"></a>URL de point de terminaison
 
@@ -53,14 +53,14 @@ L’URI de base pour les deux API principales est : https://api.security.microso
 - Europe : api-eu.security.microsoft.com
 - Royaume-Uni : api-uk.security.microsoft.com
 
-Les jetons peuvent être acquis en accédant à https://api.security.microsoft.com .
+Les jetons peuvent être acquis en accédant https://api.security.microsoft.com à .
 
-Toutes les API le long du `/api` chemin d’accès utilisent [le protocole OData](/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
+Toutes les API le long du `/api` chemin d’accès utilisent le [protocole OData](/odata/overview) ; par exemple, https://api.security.microsoft.com/api/incidents .
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Microsoft 365 Vue d’ensemble des API Defender](api-overview.md)
-- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Microsoft 365 Defender Vue d’ensemble des API](api-overview.md)
+- [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [API de diffusion en continu](../defender-endpoint/raw-data-export.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)

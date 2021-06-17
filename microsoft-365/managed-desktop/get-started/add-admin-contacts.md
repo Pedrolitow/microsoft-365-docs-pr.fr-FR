@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18823db8ca8d4bfa82b8ab6265ee8a0902a13e79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65d7647e9000152d2eeb8d6bf36e8d45a0d4fa90
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925891"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984699"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>Ajouter et vérifier des contacts d’administrateur dans le portail d’administration
 
@@ -51,15 +51,11 @@ Les contacts d’administrateur sont requis lorsque vous [envoyez une demande de
 
 **Pour ajouter des contacts d’administrateur**
 
-1.  Connectez-vous [Bureau géré Microsoft portail d’administration.](https://aka.ms/mwaasportal) 
+1.  Connectez-vous [à Microsoft Endpoint Manager](https://endpoint.microsoft.com). 
 
-2.  Sous **Support,** sélectionnez **Contacts d’administration.** 
-
-    ![Menu Support, Contacts d’administration dans la partie supérieure sélectionnée](../../media/admincontacts.png)
+2.  Sous **Administration du client,** recherchez la section **Bureau géré Microsoft** puis sélectionnez **Contacts d’administration.** 
 
 3. Sélectionnez **Ajouter**.
-
-    ![Portail d’administration, bouton Ajouter, à gauche de l’exportation et de l’actualisation](../../media/adminadd.png)
 
 4.  Sélectionnez **une zone de focus** et entrez les informations du contact. 
 

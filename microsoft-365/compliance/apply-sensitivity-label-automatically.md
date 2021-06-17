@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: ad095db005421a58806d2775d4958cf3be5f474e
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866738"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984807"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -74,7 +74,7 @@ Deux méthodes s’offrent à vous pour appliquer automatiquement une étiquette
     - Si vous disposez de règles de flux de messagerie Exchange ou de stratégies de protection contre la perte de données (DLP) qui appliquent le chiffrement IRM : l’étiquette est appliquée lorsque le contenu est identifié par ces règles ou ces stratégies et par une stratégie d’étiquetage automatique. Si cette étiquette applique le chiffrement, les paramètres IRM des règles de flux de messagerie Exchange ou des stratégies de protection contre la perte de données sont ignorés. Toutefois, si cette étiquette n’applique pas le chiffrement, les paramètres IRM des règles de flux de messagerie ou des stratégies de protection contre la perte de données sont appliqués en plus de l’étiquette.
     - Les e-mails dont le chiffrement IRM n’inclut aucune étiquette sont remplacés par une étiquette avec des paramètres de chiffrement lorsqu’il existe une correspondance à l’aide de l’étiquetage automatique.
     - Les e-mails entrant sont étiquetés lorsqu’il existe une correspondance avec vos conditions d’étiquetage automatique :
-        - Si l’étiquette est configurée pour le [chiffrement](encryption-sensitivity-labels.md), celui-ci est appliqué. Toutefois, cette configuration n’est actuellement pas prise en charge.
+        - Déploiement : si l’étiquette est configurée pour le [chiffrement](encryption-sensitivity-labels.md), celui-ci n’est pas appliqué.
         - Si l’étiquette est configurée pour appliquer des [marquages dynamiques](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), sachez que cela peut donner lieu à des noms de personnes hors de votre organisation.
     - Lorsque l’étiquette applique le chiffrement, [l’émetteur des droits de gestion et le propriétaire de la gestion des droits](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) correspond à la personne qui envoie le courrier électronique. Il n’existe actuellement aucun moyen de définir le propriétaire du gestionnaire des droits pour tous les e-mails entrants qui sont automatiquement chiffrés.
     

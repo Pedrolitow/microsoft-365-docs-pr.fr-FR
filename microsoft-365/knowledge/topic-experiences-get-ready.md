@@ -1,6 +1,6 @@
 ---
-title: Préparer votre environnement pour les rubriques microsoft
-description: Préparez votre environnement afin de pouvoir fournir autant de contenu que possible à vos utilisateurs à l’aide de Rubriques Microsoft.
+title: Préparer votre environnement à la Sujets Microsoft Viva
+description: Préparez votre environnement afin de pouvoir fournir autant de contenu que possible à vos utilisateurs avec Sujets Microsoft Viva.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,26 +10,26 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2db8654bf7bb1bc5ef4759c1617a84ae2153553a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8e1da50c120d333812014f6720f1168d4afb9741
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917391"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984879"
 ---
-# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Préparer votre environnement pour les rubriques microsoft
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Préparer votre environnement à la Sujets Microsoft Viva
 
 Pour utiliser au mieux ces rubriques, vous souhaitez inclure autant de contenu que possible pour la découverte de rubriques, afin de pouvoir avoir un ensemble enrichi de rubriques pour vos utilisateurs. Mais quel contenu doit être utilisé pour la découverte de rubriques ? Comment optimiser le contenu indexé tout en restant en contrôle ? Plus le contenu est dans l’étendue, plus les informations que l’intelligence artificielle peut découvrir sont meilleures. Cet article vous explique les étapes de planification pour vous assurer que vous avez inclus le contenu approprié et que vous disposez des bonnes personnes et ressources pour faire une bonne expérience pour vos utilisateurs.
 
 Pour planifier des rubriques De Rubriques, vous devez :
 
-![Migrer, connecter, moderniser, sécuriser et identifier les étapes d’intégration à la gestion des connaissances](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![Migrer, connecter, moderniser, sécuriser et identifier les étapes d’intégration à Rubriques.](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Migrer le contenu vers SharePoint](#1-migrate-content-to-microsoft-365)
-    - L’indexation de rubriques inclut uniquement le contenu SharePoint sites web.
+    - L’indexation de rubrique inclut uniquement le contenu SharePoint sites web.
       - Dans la mesure du possible, migrez du contenu précieux vers SharePoint Online à partir de sources externes.
-      - Hiérarchisez les sources de contenu avec un potentiel élevé de connaissances en matière d’informations.
-      - Mettez en évidence les avantages de la gestion des connaissances pour encourager les utilisateurs à déplacer du contenu OneDrive vers SharePoint sites.
+      - Hiérarchisez les sources de contenu avec un haut potentiel de connaissances en matière de savoir-faire.
+      - Mettez en évidence les avantages de Rubriques Desy pour encourager les utilisateurs à déplacer du contenu de OneDrive vers SharePoint sites.
 
 2. [Connecter à Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - À l’avenir, le contenu externe peut être introduit dans le graphique de connaissances et devenir disponible.
@@ -73,7 +73,7 @@ Ez le meilleur de votre migration :
 
 Si vous ne pouvez pas migrer du contenu, connectez-le au microsoft Graph :
 
-- Envisagez [d’implémenter Graph connecteurs de contenu.](/microsoftsearch/connectors-overview) À l’aide de connecteurs, le contenu externe peut être indexé dans le Graph Microsoft, où les utilisateurs peuvent ensuite le découvrir via Microsoft Search (recherche Microsoft).
+- Envisagez [d’implémenter Graph connecteurs de contenu.](/microsoftsearch/connectors-overview) À l’aide de connecteurs, le contenu externe peut être indexé dans le Graph Microsoft, où les utilisateurs peuvent ensuite le découvrir par le biais Recherche Microsoft.
 - Les développements futurs apporteront des données externes dans Rubriques Topics.
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. Moderniser SharePoint pages
@@ -104,7 +104,7 @@ Une bonne gestion des autorisations est essentielle ici. Et une bonne gestion de
 
 Outre les autorisations, vous pouvez également contrôler l’étendue de ce qui est découvrable par le biais de rubriques. Vous contrôlez toujours ce qui est indexé.
 
-Les administrateurs peuvent configurer l’indexation dans Microsoft 365 Admin Center. Lorsque vous définissez la gestion [des connaissances,](set-up-topic-experiences.md)vous pouvez :
+Les administrateurs peuvent configurer l’indexation dans Administration Microsoft 365 centre de gestion. Lorsque vous définissez [Topics,](set-up-topic-experiences.md)vous pouvez :
 
 - Autoriser la découverte sur tous les sites SharePoint ou spécifier des sites à inclure ou à exclure en tant que sources de rubrique.
 - Lorsque vous avez des termes sensibles, vous pouvez également exclure des rubriques par leur nom. Par exemple, si vous avez le nom d’un projet sensible, dans lequel vous ne voulez pas qu’un surlignage ou une carte apparaisse, quelles que soient les autorisations de l’utilisateur, vous pouvez exclure ce nom de projet.
@@ -128,9 +128,9 @@ Selon votre organisation, vous pouvez avoir peu ou plusieurs personnes qui jouen
 | Sets up Viva Topics | Possède la gestion et la qualité des rubriques | Contribue à des rubriques en fonction de leur expertise. |
 | Garantit que les normes de sécurité et de conformité sont appliquées et qu’elles comprennent le contrat de licence.| Effectue des tâches de gestion de rubriques telles que créer, modifier, supprimer et rejeter des rubriques. Prend en charge les collaborateurs de rubrique avec leurs tâches. | Organise les informations et le contenu des pages de rubrique, y compris les personnes et les ressources épinglées à cette rubrique. |
 
-Temps forts et cartes apparaissent aux utilisateurs dans le contexte de leur travail, par exemple quand ils parcourent des pages modernes dans SharePoint. Vous contrôlez l’expérience utilisateur final pour les rubriques.
+Les sur-points et les cartes apparaissent pour les utilisateurs dans le contexte de leur travail, par exemple quand ils parcourent des pages modernes dans SharePoint. Vous contrôlez l’expérience utilisateur final pour les rubriques.
 
-- Qui pouvez-vous voir Rubriques ? La visibilité des rubriques est configurée dans Microsoft 365'administration centrale. Choisissez les groupes à autoriser à consulter les rubriques :
+- Qui pouvez-vous voir Rubriques ? La visibilité des rubriques est configurée dans le centre Administration Microsoft 365 données. Choisissez les groupes à autoriser à consulter les rubriques :
   - Tous les membres de mon organisation. « Tout le monde » n’inclut pas les invités, il s’agit de tous les utilisateurs internes dans votre annuaire
   - Uniquement les personnes sélectionnées ou les groupes de sécurité (cette option est intéressante lorsque vous continuez à déployer Rubriques Topics, afin que vous pouvez tester avec un sous-ensemble d’utilisateurs). Si vous souhaitez que les invités visualisent les rubriques, vous devez utiliser l’option « Personnes ou groupes de sécurité sélectionnés » et leur octroyer une licence.
   - Personne.

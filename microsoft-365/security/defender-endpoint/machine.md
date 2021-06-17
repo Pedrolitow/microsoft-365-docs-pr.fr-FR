@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7b95fc487a8ee3e82e0f215b34aa564e063534af
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5ca147c9e69168b2f15aa69bba8728567b782fa9
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772076"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984459"
 ---
 # <a name="machine-resource-type"></a>Type de ressource Machine
 
@@ -43,7 +43,7 @@ ms.locfileid: "52772076"
 
 Méthode|Type renvoyé |Description
 :---|:---|:---
-[Répertorier les ordinateurs](get-machines.md) | [collection d’ordinateurs](machine.md) | Liste des [ensembles d’entités](machine.md) d’ordinateur dans l’organisation.
+[Répertorier les ordinateurs](get-machines.md) | [collection d’ordinateurs](machine.md) | Liste des [ensembles d’entités](machine.md) d’ordinateurs dans l’organisation.
 [Obtenir un ordinateur](get-machine-by-id.md) | [ordinateur](machine.md) | Obtenez un [ordinateur par](machine.md) son identité.
 [Obtenir des utilisateurs connectés](get-machine-log-on-users.md) | Collection d’[utilisateurs](user.md) | Obtenez l’ensemble [de l’utilisateur](user.md) qui s’est connecté à l’ordinateur. [](machine.md)
 [Obtenir les alertes associées](get-machine-related-alerts.md) | collection[alert](alerts.md) | Obtenir [l’ensemble](alerts.md) des entités d’alerte qui ont été élevés sur l’ordinateur . [](machine.md)
@@ -55,6 +55,7 @@ Méthode|Type renvoyé |Description
 [Rechercher des ordinateurs par balise](find-machines-by-tag.md) | [collection d’ordinateurs](machine.md) | Rechercher des ordinateurs par [balise](machine-tags.md).
 [Obtenir des Ko manquants](get-missing-kbs-machine.md) | Collection KB | Obtenir la liste des ko manquants associés à l’ID de l’ordinateur
 [Définir la valeur de l’appareil](set-device-value.md)| [collection d’ordinateurs](machine.md) | Définissez [la valeur d’un appareil.](tvm-assign-device-value.md)
+[Mettre à jour l’ordinateur](update-machine-method.md) |[collection d’ordinateurs](machine.md) | Obtenir l’état de mise à jour d’un ordinateur.
 
 ## <a name="properties"></a>Propriétés
 

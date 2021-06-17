@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4843894638ccf119c0cadcf003e159e793c18368
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a0191a52c64b32b314d4b2f2f36c85b060226ad6
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843733"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984651"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Notes de publication de l’API Microsoft Defender for Endpoint
 
@@ -39,6 +39,10 @@ Les informations suivantes répertorient les mises à jour des API Microsoft Def
 > ```
 
 ## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>Notes de publication - du plus récent au plus ancien (dd.mm.yyyy)
+
+### <a name="06102021"></a>06.10.2021
+
+- Ajout d’une nouvelle méthode d’API d’évaluation de l’exportation - _Delta Export software vulnerabilities assessment (OData)_ Export assessment [methods and properties per device](get-assessment-methods-properties.md).
 
 ### <a name="05252021"></a>05.25.2021
 
@@ -59,7 +63,7 @@ Les informations suivantes répertorient les mises à jour des API Microsoft Def
 ### <a name="21012021"></a>21.01.2021
 
 - Ajout d’une nouvelle API : [rechercher des appareils par balise.](machine-tags.md)
-- Ajout d’une nouvelle API : [importer des indicateurs.](import-ti-indicators.md)
+- Ajout d’une nouvelle API : [indicateurs d’importation.](import-ti-indicators.md)
 
 ### <a name="03012021"></a>03.01.2021
 

@@ -14,16 +14,17 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 6b9814180df2cad2553c4565ebb65891b5cf9bf5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782872"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985419"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personnaliser les règles de réduction de la surface d’attaque
 
 **S’applique à :**
+
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,6 +38,7 @@ ms.locfileid: "52782872"
 Découvrez comment personnaliser les règles de réduction de la surface d’attaque en excluant des fichiers et des [dossiers](#exclude-files-and-folders) ou en ajoutant du texte personnalisé à l’alerte de [notification](#customize-the-notification) qui apparaît sur l’ordinateur d’un utilisateur.
 
 Vous pouvez définir des règles de réduction de la surface d’attaque pour les appareils exécutant l’une des éditions et versions suivantes de Windows :
+
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
@@ -44,11 +46,11 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 
 ## <a name="exclude-files-and-folders"></a>Exclure des fichiers et des dossiers
 
-Vous pouvez choisir d’exclure les fichiers et dossiers de l’évaluation par les règles de réduction de la surface d’attaque. Une fois exclu, l’exécution du fichier ne sera pas bloquée même si une règle de réduction de la surface d’attaque détecte que le fichier contient un comportement malveillant.
+Vous pouvez choisir d’exclure les fichiers et dossiers de l’évaluation par les règles de réduction de la surface d’attaque. Lorsqu’il est exclu, l’exécution du fichier n’est pas bloquée même si une règle de réduction de la surface d’attaque détecte que le fichier contient un comportement malveillant.
 
 Par exemple, prenons la règle de ransomware :
 
-La règle de ransomware est conçue pour aider les clients d’entreprise à réduire les risques d’attaques par ransomware tout en assurant la continuité de l’activité. Par défaut, la règle de ransomware va faire l’erreur du côté de la prudence et se protéger contre les fichiers qui n’ont pas encore atteint une réputation et une confiance suffisantes. Pour reéphaser, la règle de ransomware se déclenche uniquement sur les fichiers qui n’ont pas acquis une réputation et une prévalence positives suffisantes, en fonction des mesures d’utilisation de millions de nos clients. En règle générale, les blocs sont auto-résolus, car les valeurs « réputation et confiance » de chaque fichier sont mises à niveau de manière incrémentielle à mesure que l’utilisation non problématique augmente.
+La règle de ransomware est conçue pour aider les clients d’entreprise à réduire les risques d’attaques par ransomware tout en assurant la continuité de l’activité. Par défaut, les erreurs de règle de ransomware sont du côté de la précaution et protègent contre les fichiers qui n’ont pas encore atteint une réputation et une confiance suffisantes. Pour reéphaser, la règle de ransomware se déclenche uniquement sur les fichiers qui n’ont pas acquis une réputation et une prévalence positives suffisantes, en fonction des mesures d’utilisation de millions de nos clients. En règle générale, les blocs sont auto-résolus, car les valeurs « réputation et confiance » de chaque fichier sont mises à niveau de manière incrémentielle à mesure que l’utilisation non problématique augmente.
 
 Dans les cas où les blocs ne sont pas résolus en temps voulu, les clients peuvent, à leurs propres risques, utiliser le mécanisme en libre-service ou une fonctionnalité de « liste d’autoriser » basée sur l’indicateur de compromis (IOC) pour débloquer les fichiers eux-mêmes.   
 
@@ -97,7 +99,7 @@ Consultez la rubrique [réduction de la surface](attack-surface-reduction.md) d�
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>Utiliser PowerShell pour exclure des fichiers et des dossiers
 
-1. Tapez **powershell** dans le menu Démarrer, cliquez avec le **bouton droit sur Windows PowerShell** puis **sélectionnez Exécuter en tant qu’administrateur**
+1. Tapez **powershell** dans la menu Démarrer, cliquez avec le bouton **droit** sur Windows PowerShell puis **sélectionnez Exécuter en tant qu’administrateur**
 2. Entrez l’cmdlet suivante :
 
     ```PowerShell
@@ -119,7 +121,7 @@ Vous pouvez personnaliser la notification pour le déclenchement d’une règle 
 
 ## <a name="related-topics"></a>Voir aussi
 
-* [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
-* [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
-* [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
-* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)
+- [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
+- [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
+- [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
+- [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)

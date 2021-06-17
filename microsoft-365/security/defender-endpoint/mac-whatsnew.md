@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6348d688103c51176fbed36c923a660c77a2258d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a6415ec7d39bceeb4b68de164bbdcf6ef34755ff
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842781"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984771"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -38,6 +38,10 @@ ms.locfileid: "52842781"
 > [!IMPORTANT]
 > Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur [cette page.](mac-sysext-policies.md)
 
+## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0)
+
+- Nous avons résolu un problème dans lequel l’accès simultané auchain à partir de Microsoft Defender pour endpoint et d’autres applications peut entraîner une altération duchain.
+
 ## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
 
 - À partir de cette version, les menaces détectées lors des analyses antivirus à la demande déclenchées via le client de ligne de commande sont automatiquement corrigés. Les menaces détectées lors des analyses déclenchées via l’interface utilisateur nécessitent toujours une action manuelle.
@@ -48,7 +52,7 @@ ms.locfileid: "52842781"
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
 
-- Correctif à prendre en compte pour l’expiration du certificat Apple pour macOS 2013 et les version antérieures. Ce correctif restaure la fonctionnalité gestion & menaces et vulnérabilités (TVM).
+- Correctif à prendre en compte pour l’expiration du certificat Apple pour macOS Fixz et les version antérieures. Ce correctif restaure la fonctionnalité gestion & menaces et vulnérabilités (TVM).
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
@@ -133,7 +137,7 @@ ms.locfileid: "52842781"
 
 ## <a name="1010663"></a>101.06.63
 
-- Nous avons résolu une régression des performances introduite dans la `101.05.17` version. La régression a été introduite avec le correctif pour éliminer les noyaux observés par certains clients lors de l’accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d’examiner d’autres façons d’éliminer les noyaux.
+- Nous avons résolu une régression des performances introduite dans la `101.05.17` version. La régression a été introduite avec le correctif pour éliminer les noyaux que certains clients ont observés lors de l’accès aux partages SMB. Nous avons revenir à ce changement de code et nous sommes en train d’examiner d’autres façons d’éliminer les noyaux.
 
 ## <a name="1010517"></a>101.05.17
 
@@ -165,7 +169,7 @@ ms.locfileid: "52842781"
 
 - Amélioration de [l’expérience d’intégration de produit pour les utilisateurs d’Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Les [exclusions antivirus désormais prise en charge les caractères génériques](mac-exclusions.md#supported-exclusion-types)
-- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner Analyser **avec Microsoft Defender pour le point de terminaison**
+- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner **Analyser avec Microsoft Defender pour le point de terminaison**
 - Les rétrogradations de produits sur place sont désormais explicitement interdits par le programme d’installation. Si vous devez rétrograder, désinstallez d’abord la version existante et reconfigurez votre appareil.
 - Autres améliorations en matière de performances & résolutions de bogues
 
@@ -186,7 +190,7 @@ ms.locfileid: "52842781"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Pour garantir la protection la plus complète pour vos appareils macOS et en adéquation avec l’arrêt par Apple des mises à jour de sécurité natives macOS vers les versions de système d’exploitation antérieures à [actuel – 2], le déploiement et les mises à jour de MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. MDATP mises à jour et améliorations apportées pour Mac seront apportées aux appareils exécutant les versions Deline [10.15], Mojave [10.14] et High Sierra [10.13]. 
+> Pour garantir la protection la plus complète pour vos appareils macOS et en adéquation avec l’arrêt par Apple de la distribution de mises à jour de sécurité natives macOS aux versions de système d’exploitation antérieures à [actuel – 2], le déploiement et les mises à jour MDATP pour Mac ne seront plus pris en charge sur macOS Sierra [10.12]. Les mises à jour et améliorations de MDATP pour Mac seront apportées aux appareils exécutant les versions Derline [10.15], Mojave [10.14] et High Sierra [10.13]. 
 >
 > Si vous avez déjà déployé MDATP pour Mac sur vos appareils Sierra [10.12], veuillez mettre à niveau vers la dernière version de macOS afin d’éliminer les risques de perte de protection.
 
@@ -239,6 +243,6 @@ ms.locfileid: "52842781"
   > Le mécanisme d’octroi de ce consentement dépend de la façon dont vous avez déployé Microsoft Defender pour endpoint :
   >
   > - Pour les déploiements manuels, consultez les instructions mises à jour dans la [rubrique Déploiement](mac-install-manually.md#how-to-allow-full-disk-access) manuel.
-  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques sur le déploiement basé sur [JAMF](mac-install-with-jamf.md) [et Microsoft Intune](mac-install-with-intune.md#create-system-configuration-profiles) de déploiement basé sur jamf.
+  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques de déploiement basé sur [JAMF](mac-install-with-jamf.md) [Microsoft Intune de déploiement](mac-install-with-intune.md#create-system-configuration-profiles) basé sur les logiciels.
 
 - Améliorations des performances & résolutions de bogues

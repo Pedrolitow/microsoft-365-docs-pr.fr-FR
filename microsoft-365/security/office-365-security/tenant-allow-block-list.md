@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des autoriser et des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 1548eda760b7b6b19214cb834d7fc43357dc0357
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933154"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985491"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -34,7 +34,7 @@ ms.locfileid: "52933154"
 
 > [!NOTE]
 >
-> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et ne sont pas disponibles dans toutes les organisations.  Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresses chez [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+> Les fonctionnalités décrites dans cet article sont en prévisualisation, peuvent faire l’objet de changements et ne sont pas disponibles dans toutes les organisations.  Si votre organisation ne dispose pas des fonctionnalités d’usurpation d’informations décrites dans cet article, consultez l’ancienne expérience de gestion de l’usurpation d’adresse chez [Manage spoofof senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 >
 > Vous ne pouvez pas **configurer d’URL** ou d’éléments de fichier autorisés dans la liste d’adresses client autorisées/bloqués pour le moment.
 
@@ -44,7 +44,7 @@ La liste des locataires autoriser/bloquer dans le portail Microsoft 365 Defender
 
 - URL à bloquer.
 - Fichiers à bloquer.
-- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’adresses ou de verdicts d’usurpation d’adresse, l’expéditeur usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer.  Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresses.
+- Expéditeurs usurpés à autoriser ou bloquer. Si vous remplacez le verdict [](learn-about-spoof-intelligence.md)d’usurpation d’informations sur l’usurpation d’adresse, l’expéditeur  usurpé devient une entrée d’accès ou de blocage manuelle qui apparaît uniquement sous l’onglet Usurpation d’adresse dans la liste d’adresses client autoriser/bloquer. Vous pouvez également créer manuellement des entrées d’autoriser ou de bloquer des expéditeurs usurpés ici avant qu’ils ne sont détectés par la veille contre l’usurpation d’adresses.
 
 Cet article explique comment configurer des entrées dans la liste d’adresses client autoriser/bloquer dans le portail Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
 
@@ -77,10 +77,10 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 - Des autorisations doivent vous avoir été attribuées dans Exchange Online pour que vous puissiez effectuer les procédures décrites dans cet article :
   - **URL et fichiers**:
     - Pour ajouter et supprimer des valeurs de la liste d’attente des locataires, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité. 
-    - Pour un accès en lecture seule à la liste des locataires  autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
+    - Pour un accès en lecture seule à la liste d’accès  au  client autorisé/bloqué, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
   - **Usurpation :** l’une des combinaisons suivantes :
     - **Gestion de l'organisation**
-    - **Administrateur de la** <u>sécurité et</u> **configuration en affichage seul** ou gestion **de l’organisation en affichage seul.**
+    - **Administrateur de sécurité** <u>et</u> **configuration en affichage seul** ou gestion de **l’organisation en affichage seul.**
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -108,7 +108,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
 4. Lorsque vous avez terminé, cliquez sur **Ajouter**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées de fichiers bloqués dans la liste d’attente des locataires
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour créer des entrées de fichiers bloqués dans la liste des locataires autoriser/bloquer
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
@@ -173,7 +173,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
    Vous pouvez cliquer sur un en-tête de colonne pour trier par ordre croissant ou décroit.
 
-   Vous pouvez cliquer sur **Groupe** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
+   Vous pouvez cliquer sur **Grouper** pour grouper les résultats. Les valeurs disponibles dépendent de l’onglet que vous avez sélectionné :
 
    - **URL : vous** pouvez grouper les résultats par **action.**
    - **Fichiers**: vous pouvez grouper les résultats par **action.**
@@ -197,9 +197,9 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
      - **Action**
      - **Type d’usurpation**
 
-   Lorsque vous avez terminé, cliquez sur **Appliquer.** Pour effacer les filtres existants,  cliquez sur **Filtrer** et, dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
+   Lorsque vous avez terminé, cliquez sur **Appliquer.** Pour effacer les filtres existants,  cliquez sur **Filtrer** et dans le volant de filtre qui s’affiche, cliquez **sur Effacer les filtres.**
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour modifier des entrées dans la liste d’attente des locataires
+## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour modifier des entrées dans la liste d’inscriptions du client
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
@@ -219,7 +219,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
      - **Action**: vous pouvez modifier la valeur sur **Autoriser** ou **Bloquer**.
 4. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour supprimer des entrées de la liste des locataires autoriser/bloquer
+## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Utiliser le portail Microsoft 365 Defender pour supprimer des entrées de la liste d’attente des locataires
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
@@ -245,7 +245,7 @@ New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1
 Cet exemple ajoute une entrée de fichier de blocage pour les fichiers spécifiés qui n’expire jamais.
 
 ```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 Cet exemple ajoute une entrée d’URL de bloc pour contoso.com et tous les sous-contoso.com (par exemple, contoso.com, www.contoso.com et xyz.abc.contoso.com). Étant donné que nous n’avons pas utilisé les paramètres ExpirationDate ou NoExpiration, l’entrée expire au bout de 30 jours.
@@ -266,7 +266,7 @@ New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -Sen
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
 
-### <a name="use-powershell-to-view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées de fichier ou d’URL bloqués dans la liste d’adresses client autoriser/bloquer
+### <a name="use-powershell-to-view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher les entrées de bloc de fichiers ou d’URL dans la liste d’adresses client autoriser/bloquer
 
 Pour afficher les entrées de fichier ou d’URL bloqués dans la liste d’adresses client autoriser/bloquer, utilisez la syntaxe suivante :
 
@@ -286,7 +286,7 @@ Cet exemple renvoie toutes les URL bloquées.
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-TenantAllowBlockListItems.](/powershell/module/exchange/get-tenantallowblocklistitems)
 
 ### <a name="use-powershell-to-view-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Utiliser PowerShell pour afficher ou bloquer les entrées d’expéditeur usurpées dans la liste d’adresses client autoriser/bloquer
 
@@ -340,7 +340,7 @@ Pour modifier les entrées d’expéditeurs usurpées dans la liste d’adresses
 Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
 ```
 
-Cet exemple modifie l’entrée de l’expéditeur usurpé de l’adresse « allow » à « block ».
+Cet exemple modifie l’entrée de l’expéditeur usurpé de l’autoriser à la bloquer.
 
 ```powershell
 Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
@@ -641,4 +641,4 @@ Par exemple, vous ajoutez une entrée d’accès pour la paire de domaines suiva
 - **Domaine**: gmail.com
 - **Infrastructure**: tms.mx.com
 
-Seuls les messages provenant de ce domaine et *de* cette paire d’infrastructure d’envoi sont autorisés à usurper l’usurpation. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont vérifiés par la veille contre l’usurpation d’adresse.
+Seuls les messages provenant *de* ce domaine et de cette paire d’infrastructure d’envoi sont autorisés à usurper l’usurpation. Les autres expéditeurs qui tentent d’usurper gmail.com ne sont pas autorisés. Les messages provenant d’expéditeurs d’autres domaines tms.mx.com sont vérifiés par la veille contre l’usurpation d’adresse.

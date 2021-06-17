@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Présentation de Rubriques Viva.
-ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 785fddb7c951bb6f7c170971f0af4eb7ac8f9a83
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950022"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984903"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Vue d’ensemble des rubriques de Microsoft Viva 
 
@@ -39,14 +39,14 @@ Rubriques Viva utilise l’IA pour rechercher et identifier automatiquement *rub
 
 Les rubriques sont affichées pour les utilisateurs via :
 
-- [Points forts de la](topic-experiences-overview.md#topic-highlights) rubrique SharePoint pages
+- [Rubriques mises en surbrill SharePoint](topic-experiences-overview.md#sharepoint-highlights) pages
 - Réponses de rubrique dans les [résultats de recherche](topic-experiences-overview.md#search-results)
 - Recherche dans les [applications Office](topic-experiences-overview.md#office-application-search)
 - [Page d’accueil du centre](topic-experiences-overview.md#topic-center) des rubriques
 
-### <a name="topic-highlights"></a>Points forts de la rubrique
+### <a name="sharepoint-highlights"></a>SharePoint points forts
 
-Lorsqu’une rubrique est mentionnée dans du contenu sur des actualités et pages SharePoint, elle est mise en évidence. Vous pouvez ouvrir le résumé du sujet à partir de la mise en évidence. Ouvrez les détails de la rubrique à partir du titre du résumé pour afficher la page complète de la rubrique. La rubrique mentionnée peut être identifiée automatiquement ou ajoutée à la page avec une référence directe à la rubrique par l’auteur de la page. 
+Lorsqu’une rubrique est mentionnée dans du contenu sur des actualités et pages SharePoint, elle est mise en évidence. Vous pouvez ouvrir le résumé du sujet à partir de la mise en évidence. Ouvrez les détails de la rubrique à partir du titre du résumé pour afficher la page complète de la rubrique. La rubrique mentionnée peut être identifiée automatiquement ou a pu être référencé directement par l’auteur de la page. 
 
    ![Capture d’écran montrant les points forts de la rubrique.](../media/knowledge-management/saturn.png) 
 

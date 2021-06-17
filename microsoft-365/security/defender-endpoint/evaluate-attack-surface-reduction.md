@@ -14,17 +14,16 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a5fa8e46de0a6561d3377ce77e38bd59aa97f3c4
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861216"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984723"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Évaluer les règles de réduction de la surface d’attaque
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 
@@ -33,7 +32,7 @@ ms.locfileid: "52861216"
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Les règles de réduction de la surface d’attaque permettent d’empêcher les actions généralement utilisées par les programmes malveillants pour compromettre les appareils ou les réseaux. Les règles de réduction de la surface d’attaque permettent de fermer la plupart des points d’entrée courants utilisés par les programmes malveillants et les ransomware. 
+Les règles de réduction de la surface d’attaque permettent d’empêcher les actions généralement utilisées par les programmes malveillants pour compromettre les appareils ou les réseaux. Les règles de réduction de la surface d’attaque permettent de fermer la plupart des points d’entrée courants utilisés par les programmes malveillants et les ransomware.
 
 Définissez des règles de réduction de la surface d’attaque pour les appareils exécutant l’une des éditions et versions de Windows :
 
@@ -43,9 +42,9 @@ Définissez des règles de réduction de la surface d’attaque pour les apparei
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 > [!WARNING]
-> L’activation des règles de réduction du service d’Windows Server 2016 risque d’entraîner des résultats inattendus et un impact sur les performances du serveur. Nous vous déconseillons d’activer ou de déployer des règles de réduction de la surface d’attaque sur des plateformes non pris en charge.
+> L’activation des règles de réduction du service d’Windows Server 2016 risque d’entraîner des résultats inattendus et d’avoir un impact sur les performances du serveur. Nous vous déconseillons d’activer ou de déployer des règles de réduction de la surface d’attaque sur des plateformes non pris en charge.
 
-Découvrez comment évaluer les règles de réduction de la surface d’attaque en activant le mode audit pour tester la fonctionnalité directement dans votre organisation.
+Découvrez comment évaluer les règles de réduction de la surface d’attaque en [activant](audit-windows-defender.md) le mode audit pour tester la fonctionnalité directement dans votre organisation.
 
 > [!TIP]
 > Vous pouvez également consulter le site web du scénario de démonstration microsoft Defender pour point de terminaison [sur demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) pour vérifier que la fonctionnalité fonctionne et voir comment elle fonctionne.
@@ -69,7 +68,7 @@ Pour activer toutes les règles de réduction de la surface d’attaque ajoutée
 ```
 
 > [!TIP]
-> Si vous souhaitez auditer entièrement le fonctionnement des règles de réduction de la surface d’attaque dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
+> Si vous souhaitez auditer complètement le fonctionnement des règles de réduction de la surface d’attaque dans votre organisation, vous devez utiliser un outil de gestion pour déployer ce paramètre sur les appareils de votre réseau.
 
 Vous pouvez également utiliser une stratégie de groupe, Intune ou des fournisseurs de services de configuration (CSP) de gestion des périphériques mobiles (CSP) pour configurer et déployer le paramètre. En savoir plus dans l’article principal des règles de [réduction de la surface d’attaque.](attack-surface-reduction.md)
 
@@ -87,10 +86,10 @@ ID de l'événement | Description
 
 Au cours de votre évaluation, vous pouvez configurer chaque règle individuellement ou exclure certains fichiers et processus de l’évaluation par la fonctionnalité.
 
-Voir [Personnaliser les règles de réduction de la surface](customize-attack-surface-reduction.md) d’attaque pour plus d’informations sur la configuration de la fonctionnalité à l’aide des outils de gestion, y compris la stratégie de groupe et les stratégies CSP mdM.
+Voir [Personnaliser les règles de réduction de la surface](customize-attack-surface-reduction.md) d’attaque pour plus d’informations sur la configuration de la fonctionnalité avec les outils de gestion, y compris la stratégie de groupe et les stratégies CSP mdM.
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
-* [Utiliser le mode audit pour évaluer les Windows Defender](audit-windows-defender.md)
-* [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)
+- [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
+- [Utiliser le mode audit pour évaluer les Windows Defender](audit-windows-defender.md)
+- [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction.md)
