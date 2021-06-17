@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908160"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998799"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -82,16 +82,13 @@ Vous pouvez créer jusqu’à quatre thèmes de groupe supplémentaires.
 
 Dans la page **Logos,** vous pouvez ajouter vos logos et spécifier l’URL vers laquelle les utilisateurs navigueront lorsqu’ils sélectionnent le logo.
 
-- **Logo par défaut**: ajoutez un emplacement d’URL qui pointe vers votre logo. Assurez-vous que l’URL utilise le protocole HTTPS. Si vous téléchargez un logo, assurez-vous qu’il est inférieur à 10 000 livres. Votre logo par défaut peut être au format JPG, PNG, GIF ou SVG. Pour les images SVG, elles seront resa taille pour s’ajuster à 24 pixels verticalement. Les images JPG, PNG et GIF seront adaptées à une taille de 200 x 48 pixels.
+- **Logo par défaut**: ajoutez un emplacement d’URL qui pointe vers votre logo. Assurez-vous que l’URL utilise le protocole HTTPS. Ajoutez une URL d’image HTTPS qui autorise l’accès anonyme et ne nécessite pas d’authentification. Pour le thème par défaut, vous avez également la possibilité de télécharger une image de logo inférieure à 10 000 livres. Votre logo par défaut peut être au format JPG, PNG, GIF ou SVG. Pour les images SVG, elles seront resa taille pour s’ajuster à 24 pixels verticalement. Les images JPG, PNG et GIF seront adaptées à une taille de 200 x 48 pixels. Les proportions de logo seront toujours conservées.
 - **Autre logo**: ajoutez un emplacement d’URL qui pointe vers votre logo. Votre autre logo doit être optimisé pour une utilisation dans Office thèmes foncés. Mêmes exigences que le logo par défaut.
 - **Lien sur clic :** ajoutez un emplacement d’URL qui pointe vers votre logo. Vous pouvez utiliser votre logo comme lien vers n’importe quelle ressource d’entreprise, par exemple le site web de votre entreprise.
 
 Sélectionnez **Enregistrer** pour enregistrer vos modifications.
 
 Vous pouvez supprimer vos logos à tout moment. Revenons simplement à la page **Logos** et sélectionnez **Supprimer.**
-
-> [!NOTE]
-> Par défaut, nous montrons d’abord les sélections de logo que la plupart des organisations utilisent. L’option de téléchargement s’applique uniquement aux thèmes par défaut et non aux thèmes de groupe.
   
 ## <a name="colors-choose-theme-colors"></a>Couleurs : choisir les couleurs de thème
 
@@ -140,7 +137,7 @@ Le thème par défaut ne peut être supprimé qu’une fois tous les thèmes de 
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Pourquoi reçois-je un message d’erreur chaque fois que je télécharge une URL de logo?  
 
-Assurez-vous que le logo que vous utilisez est spécifié en tant qu’URL adressaçable publiquement. Suivez ces [étapes pour télécharger des logos](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) vers Azure Blob Stockage ou le Office 365 réseau de distribution de contenu [avec SharePoint Online.](../../enterprise/use-microsoft-365-cdn-with-spo.md)
+Assurez-vous que le logo que vous utilisez est spécifié en tant qu’URL adressaçable publiquement. Suivez ces [étapes pour télécharger des logos](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) vers Azure Blob Storage ou le Office 365 réseau de distribution de contenu [avec SharePoint Online.](../../enterprise/use-microsoft-365-cdn-with-spo.md)
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>Pourquoi reçois-je le message « Ne répond pas au coefficient de contraste de couleur minimal de 4,5:1 » ?
 
@@ -150,7 +147,7 @@ Le coefficient de contraste recommandé entre le texte, la couleur de l’icône
 
 Tout thème apparaît dans la barre de navigation supérieure pour tous les membres de l’organisation dans le cadre de l’en-tête Microsoft 365 suite.  
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Ajouter des vignettes personnalisées à la page Mes applications et](../manage/customize-the-app-launcher.md) au lanceur d’applications (article)\
 [Vue d’ensemble Microsoft 365 groupes de gestion pour les administrateurs](../create-groups/office-365-groups.md) (article)

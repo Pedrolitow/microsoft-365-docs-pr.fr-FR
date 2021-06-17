@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les statistiques sur les fichiers
-description: Découvrez comment utiliser l’API Obtenir des statistiques de fichier pour récupérer les statistiques du fichier donné dans Microsoft Defender pour le point de terminaison.
+description: Découvrez comment utiliser l’API Obtenir des statistiques de fichier pour récupérer les statistiques pour le fichier donné dans Microsoft Defender for Endpoint.
 keywords: api, api de graphique, api pris en charge, obtenir, fichier, statistiques
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6063d29562be40aed3060e241b52b1a2936aa36d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 826b2ff25363f1d9a6276e1a42a10c1cf4995904
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770204"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998811"
 ---
 # <a name="get-file-statistics-api"></a>API Obtenir les statistiques sur les fichiers
 
@@ -79,7 +79,7 @@ lookBackHours | Int32 | Définit les heures pendant les recherches pour obtenir 
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite et si le fichier existe : 200 - OK avec des données statistiques dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
+En cas de réussite et si le fichier existe - 200 OK avec des données statistiques dans le corps. Si le fichier n’existe pas - 404 - In trouvé.
 
 
 ## <a name="example"></a>Exemple
@@ -101,10 +101,10 @@ Voici un exemple de réponse.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
     "sha1": "0991a395da64e1c5fbe8732ed11e6be064081d9f",
-    "orgPrevalence": "14850",
+    "organizationPrevalence": 14850,
     "orgFirstSeen": "2019-12-07T13:44:16Z",
     "orgLastSeen": "2020-01-06T13:39:36Z",
-    "globalPrevalence": "705012",
+    "globallyPrevalence": 705012,
     "globalFirstObserved": "2015-03-19T12:20:07.3432441Z",
     "globalLastObserved": "2020-01-06T13:39:36Z",
     "topFileNames": [

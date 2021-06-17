@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les personnes qui reçoivent des e-mails de notification de facturation et des pièces jointes de facture.
 ms.date: 03/17/2021
-ms.openlocfilehash: 75c75175930434619a01886b1096757bf04111c5
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888360"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998763"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gérer les notifications de facturation et les pièces jointes de facture
 
@@ -43,7 +43,7 @@ Vous devez être un administrateur global pour suivre les étapes décrites dans
 
 Les e-mails de notification de facturation sont envoyés dans la langue par défaut de votre organisation. Pour modifier la langue préférée, utilisez les étapes suivantes.
 
-1. Dans le centre Microsoft 365'administration, allez à **la**  >  page <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation.</a>
+1. Dans la Centre d’administration Microsoft 365, allez à **la** page Notifications de  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">facturation.</a>
 2. Dans la **section Paramètres de notification de facturation,** **sélectionnez Modifier les paramètres de notification.**
 3. Dans le **volet Paramètres de notification de facturation,** sous Langue par défaut, sélectionnez la langue que vous souhaitez utiliser, puis  **sélectionnez Enregistrer.**
 
@@ -88,9 +88,6 @@ En plus de vos administrateurs globaux et de facturation, nous envoyons des noti
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Recevoir les factures de votre organisation en tant que pièces jointes
 
-> [!NOTE]
-> Les administrateurs de facturation peuvent également suivre les étapes de cette section.
-
 Vous pouvez avoir une copie de la facture de votre organisation attachée sous forme de fichier PDF aux courriers électroniques de notification de facture lorsqu’une nouvelle facture est prête. Utilisez les étapes suivantes pour recevoir des factures en pièce jointe.
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
@@ -130,6 +127,6 @@ Pour recevoir vos factures en pièce jointe à vos notifications de facture, uti
 ## <a name="related-content"></a>Contenu associé
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
-[Informations de facturation pour Microsoft 365 entreprise au Mexique](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
+[Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
 [Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md) (article)
