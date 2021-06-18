@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932865"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007500"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -268,7 +268,7 @@ Utilisez le tableau suivant pour savoir si vous devez utiliser une stratégie ou
 
 **Note de bas de page :**
 
-<sup>\*</sup> Pour les étiquettes de rétention qui ne marquent pas le contenu comme enregistrement ou enregistrement réglementaire, les événements d’audit sont limités à ceux dans lequel un élément dans SharePoint dispose d’une étiquette appliquée, modifiée ou supprimée. Pour obtenir les détails d’audit pour les étiquettes de rétention, voir la section [Audit des actions de rétention](#auditing-retention-actions) sur cette page.
+<sup>\*</sup> Pour les étiquettes de rétention qui ne marquent pas le contenu comme enregistrement ou enregistrement réglementaire, les événements d’audit sont limités à ceux dans lequel un élément dans SharePoint ou OneDrive dispose d’une étiquette appliquée, modifiée ou supprimée. Pour obtenir les détails d’audit pour les étiquettes de rétention, voir la section [Audit des actions de rétention](#auditing-retention-actions) sur cette page.
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Combinaison de stratégies de rétention et d’étiquettes de rétention
 
@@ -373,9 +373,11 @@ Vous devez appliquer un verrou de conservation une fois la stratégie de rétent
 
 ## <a name="releasing-a-policy-for-retention"></a>Publication d’une stratégie de rétention
 
-Mettre en place des stratégies de rétention n’octroie pas de verrouillage de conservation, vous pouvez supprimer vos stratégies à tout moment, ce qui a pour effet de désactiver les paramètres de rétention appliqués précédemment. Vous pouvez également conserver la politique, mais supprimer un site pour SharePoint ou un compte pour OneDrive, ou modifier le statut de l'emplacement en le désactivant, ou encore désactiver la stratégie.
+Mettre en place des stratégies de rétention n’octroie pas de verrouillage de conservation, vous pouvez supprimer vos stratégies à tout moment, ce qui a pour effet de désactiver les paramètres de rétention appliqués précédemment. Vous pouvez également conserver la stratégie, mais modifier l’état d’emplacement comme désactivé, ou désactiver la stratégie. Si votre stratégie est configurée pour inclure des sites spécifiques pour SharePoint ou des comptes pour OneDrive, vous pouvez également modifier la stratégie pour supprimer une ou plusieurs de ces entrées afin de publier la stratégie pour ces sites ou comptes.
  
 Lorsque vous effectuez l'une de ces actions, tout contenu SharePoint ou OneDrive soumis à la conservation en vertu de la stratégie est conservé pendant 30 jours afin d'éviter toute perte de données par inadvertance. Pendant cette période de grâce de 30 jours, les fichiers supprimés sont toujours conservés (les fichiers continuent d’être ajoutés à la bibliothèque de conservation et de préservation des documents), mais la tâche de la minuterie qui nettoie périodiquement la bibliothèque de conservation et de préservation des documents est suspendue pour ces fichiers de sorte que vous pouvez les restaurer si nécessaire.
+
+Une exception à cette période de grâce de 30 jours est effective lorsque vous mettez à jour la stratégie pour exclure un ou plusieurs sites pour SharePoint ou des comptes pour OneDrive. Dans ce cas, le travail du minuteur supprime les fichiers de ces emplacements dans la bibliothèque de conservation et de préservation des documents sans le délai de 30 jours.
 
 Pour plus d’informations sur la bibliothèque de conservation et de préservation des documents, consultez [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
@@ -395,7 +397,7 @@ Pour obtenir la liste complète des événements d’audit, voir [Politiques de 
 
 Les actions de rétention qui sont journalisées comme événements d’audit sont disponibles uniquement pour les étiquettes de rétention et non pour les stratégies de rétention :
 
-- Lorsqu’une étiquette de rétention est appliquée, modifiée ou supprimée d’un élément dans SharePoint :
+- Lorsqu’une étiquette de rétention est appliquée, modifiée ou supprimée d’un élément dans SharePoint ou OneDrive :
     - Dans **Activités sur les fichiers et les pages**, sélectionnez **Changement d’une étiquette de rétention pour un fichier** 
 
 - Lorsqu’un élément étiqueté dans SharePoint est marqué comme enregistrement et qu’il est débloqué ou bloqué par un utilisateur :
@@ -404,7 +406,7 @@ Les actions de rétention qui sont journalisées comme événements d’audit so
 - Lorsqu’une étiquette de rétention qui marque le contenu comme enregistrement ou enregistrement réglementaire est appliquée à un élément dans Exchange :
     - Dans **Activités sur la boîte aux lettres Exchange**, sélectionnez **Message étiqueté comme enregistrement**
 
-- Lorsqu’un élément étiqueté dans SharePoint ou Exchange est marqué comme enregistrement ou enregistrement réglementaire et qu’il définitivement supprimé :
+- Lorsqu’un élément étiqueté dans SharePoint, OneDrive ou Exchange est marqué comme enregistrement ou enregistrement réglementaire et qu’il définitivement supprimé :
     - Dans **Activités sur les fichiers et les pages**, sélectionnez **Fichier supprimé marqué comme enregistrement**
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Applets de commande pour les stratégies et étiquettes de rétention

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 06ee2f1cb68df0a957818e1fccb45628487c39fd
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ff0e134d38288b12cbc46dc3ca5f103fbf8c7ad9
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274915"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007665"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>Empêcher les utilisateurs de voir ou d’interagir avec l Antivirus Microsoft Defender’interface utilisateur
 
@@ -36,22 +36,22 @@ Vous pouvez utiliser la stratégie de groupe pour empêcher les utilisateurs sur
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Masquer l’interface Antivirus Microsoft Defender de données
 
-Dans Windows 10 versions 1703, le masquage de l’interface masquera les notifications Antivirus Microsoft Defender et empêchera l’apparition de la vignette de protection contre les menaces & virus dans l’application Sécurité Windows.
+Dans Windows 10 versions 1703, le masquage de l’interface masquera les notifications Antivirus Microsoft Defender et empêchera l’apparition de la vignette de protection contre les menaces virus & dans l’application Sécurité Windows.
 
 Avec le paramètre activé **:**
 
-![Capture d’écran Sécurité Windows sans l’icône de bouclier et la section protection contre les virus et menaces](images/defender/wdav-headless-mode-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Sécurité Windows sans l’icône de bouclier et la section protection contre les virus et menaces":::
 
 Avec le paramètre désactivé **ou** non configuré :
 
-![Capture d’écran Sécurité Windows l’icône de bouclier et la section protection contre les virus et menaces](images/defender/wdav-headless-mode-off-1703.png)
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="Capture d’écran de Sécurité Windows avec l’icône de bouclier et les sections de protection contre les menaces":::
 
 >[!NOTE]
 >Le masquage de l’interface empêchera Antivirus Microsoft Defender notifications d’apparaître sur le point de terminaison. Les notifications de Microsoft Defender pour point de terminaison s’affichent toujours. Vous pouvez également configurer individuellement [les notifications qui apparaissent sur les points de terminaison](configure-notifications-microsoft-defender-antivirus.md)
 
 Dans les versions antérieures de Windows 10, le paramètre masque l’interface Windows Defender client. Si l’utilisateur tente de l’ouvrir, il reçoit un avertissement signalant que l’administrateur système a un accès restreint à cette application.
 
-![Message d’avertissement lorsque le mode sans Windows 10, versions antérieures à 1703](images/defender/wdav-headless-mode-1607.png)
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="Message d’avertissement lorsque le mode sans Windows 10, versions antérieures à 1703":::
 
 ## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>Utiliser une stratégie de groupe pour masquer l’interface de Microsoft Defender AV aux utilisateurs
 

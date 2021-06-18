@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte Microsoft 365 services pour communiquer et collaborer.
-ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635389"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007164"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -46,7 +46,7 @@ Le résumé exécutif est une vue d’un coup d’œil de haut niveau de l’ado
 
 Ce résumé vous permet de comprendre rapidement les modèles d’utilisation Office et comment et où vos employés collaborent.
 
-![Image du résumé exécutif Microsoft 365 l’utilisation.](../../media/office365usage-exec-summary.png)
+![Image du résumé de Microsoft 365 l’utilisation.](../../media/office365usage-exec-summary.png)
 
 ## <a name="overview"></a>Vue d’ensemble
 
@@ -60,7 +60,7 @@ Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous p
 
 - **Collaboration** &ndash; Découvrez comment les membres de votre organisation utilisent OneDrive et SharePoint pour stocker des documents et collaborer les uns avec les autres, et comment ces tendances évoluent mois après mois. Vous pouvez également voir combien de documents sont partagés en interne ou en externe et combien de sites SharePoint ou de comptes OneDrive sont activement utilisés, décomposés par les propriétaires et d’autres collaborateurs.
 
-- **Stockage** &ndash; Utilisez ce rapport pour suivre le stockage cloud pour les boîtes aux lettres, OneDrive et SharePoint sites.
+- **Storage** &ndash; Utilisez ce rapport pour suivre le stockage cloud pour les boîtes aux lettres, OneDrive et SharePoint sites.
 
 - **Mobilité** &ndash; Suivre les clients et appareils que les personnes utilisent pour se connecter à la messagerie, Teams, Skype ou Yammer.
 
@@ -68,7 +68,7 @@ Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous p
 
 La page d’activation et de licence propose des rapports sur Microsoft 365'activation ; autrement dit, le nombre d’utilisateurs qui ont téléchargé et activé Office applications et le nombre de licences attribuées par votre organisation. La valeur du mois vers le haut fait référence au mois en cours et les mesures reflètent les valeurs agrégées du début du mois à la date actuelle.
 
-- **Activation** &ndash; Suivre les activations de plan de service (Applications Microsoft 365 pour les grandes entreprises, Project et Visio service) dans votre organisation. Chaque personne disposant d'une licence Office peut installer les applications sur jusqu'à cinq appareils. Vous pouvez également utiliser les rapports de cette section pour voir les appareils sur lesquels les personnes ont installé Office applications. Notez que pour activer un plan, un utilisateur doit installer l’application et se connecter avec son compte.
+- **Activation** &ndash; Suivre les activations de plan de service (applications Microsoft 365 pour les entreprises, Project et Visio service) dans votre organisation. Chaque personne disposant d'une licence Office peut installer les applications sur jusqu'à cinq appareils. Vous pouvez également utiliser les rapports de cette section pour voir les appareils sur lesquels les personnes ont installé Office applications. Notez que pour activer un plan, un utilisateur doit installer l’application et se connecter avec son compte.
 
 - **Licences** &ndash; Ce rapport contient une vue d’ensemble des types de licences, le nombre d’utilisateurs affectés à chaque type de licence et la distribution de l’attribution de licence pour chaque mois. La valeur du mois vers le haut fait référence au mois en cours et les mesures reflètent les valeurs agrégées du début du mois à la date actuelle.
 
@@ -105,7 +105,7 @@ En plus de personnaliser les rapports à partir de l’interface web Power BI, l
 
 ### <a name="how-can-i-get-the-pbit-file-that-this-dashboard-is-associated-with"></a>Comment obtenir le fichier pbit auquel ce tableau de bord est associé ?
 
-Vous pouvez accéder au fichier pbit à partir du Centre [de téléchargement Microsoft.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)
+Vous pouvez accéder au fichier pbit à partir du Centre [de téléchargement Microsoft.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) 
 
 ### <a name="who-can-view-the-dashboards-and-reports"></a>Qui pouvez-vous afficher les tableaux de bord et les rapports ?
 
@@ -121,7 +121,7 @@ Oui. Pour permettre à un groupe d’administrateurs de travailler ensemble sur 
 
 ### <a name="for-which-timeframe-is-data-available"></a>Pour quelle période des données sont-elles disponibles ?
 
-La majorité des rapports affichent des données pour les 12 mois précédents. Toutefois, certains graphiques peuvent afficher moins d’historique, car la collecte de données pour différents produits et rapports a été démarrée à différents moments et les données pour les 12 mois complets risquent de ne pas être disponibles. Tous les rapports finiront par créer jusqu’à 12 mois d’historique. Les rapports qui indiquent les détails au niveau de l’utilisateur indiquent les données du mois complet précédent.
+La majorité des rapports affichent des données pour les 12 mois précédents. Toutefois, certains graphiques peuvent afficher moins d’historique car la collecte de données pour différents produits et rapports a été démarrée à différents moments et par conséquent, les données pour les 12 mois complets risquent de ne pas être disponibles. Tous les rapports finiront par créer jusqu’à 12 mois d’historique. Les rapports qui indiquent les détails au niveau de l’utilisateur indiquent les données du mois complet précédent.
 
 ### <a name="what-data-is-included-in-the-template-app"></a>Quelles données sont incluses dans l’application de modèle ?
 
@@ -129,7 +129,7 @@ Les données de l’application de modèle couvrent actuellement le même ensemb
 
 ### <a name="how-does-the-data-in-the-template-app-differ-from-the-data-in-the-usage-reports"></a>En quoi les données de l’application modèle diffèrent-elles des données des rapports d’utilisation ?
 
-Les données sous-jacentes que vous voyez dans l’application modèle sont en correspondance avec les données que vous voyez dans les rapports d’activité du Centre d Microsoft 365 appuyments. Les principales différences sont que les données du Centre d’administration sont disponibles pour les 7/30/90/180 derniers jours, tandis que l’application modèle présente les données sur une base mensuelle pendant 12 mois au plus.
+Les données sous-jacentes que vous voyez dans l’application de modèle sont en correspondance avec les données que vous voyez dans les rapports d’activité du Centre d’administration Microsoft 365. Les principales différences sont que les données du Centre d’administration sont disponibles pour les 7/30/90/180 derniers jours, tandis que l’application modèle présente les données sur une base mensuelle pendant 12 mois au plus.
 
 En outre, les détails au niveau de l’utilisateur dans l’application de modèle sont disponibles uniquement pour le dernier mois complet pour les utilisateurs qui se sont vus attribuer une licence de produit et qui ont effectué une activité.
 
@@ -151,11 +151,11 @@ La définition de l’utilisateur actif est identique à la définition de [l’
 
 ### <a name="what-sharepoint-site-collections-are-included-in-the-sharepoint-reports"></a>Quelles collections de sites SharePoint sont incluses dans les rapports SharePoint ?
 
-La version actuelle de l’application de modèle inclut l’activité de SharePoint sites d’équipe et SharePoint sites de groupe.
+La version actuelle de l’application de modèle inclut l’activité de fichier à partir SharePoint sites d’équipe et SharePoint sites de groupe.
 
 ### <a name="which-groups-are-included-in-the-microsoft-365-groups-usage-report"></a>Quels groupes sont inclus dans le rapport d’utilisation Microsoft 365 Groupes de ressources ?
 
-La version actuelle de l’application de modèle inclut l’utilisation de groupes Outlook, de groupes Yammer et de groupes SharePoint de données. Il n’inclut pas les groupes liés à Microsoft Teams ou planner.
+La version actuelle de l’application de modèle inclut l’utilisation de Outlook groupes, Yammer groupes et SharePoint groupes. Il n’inclut pas les groupes liés à Microsoft Teams ou planner.
 
 ### <a name="when-will-an-updated-version-of-the-template-app-become-available"></a>Quand une version mise à jour de l’application de modèle sera-t-elle disponible ?
 
@@ -177,7 +177,7 @@ Les informations d’entreprise sont incluses dans l’un des champs Active Dire
 
 Une personnalisation supplémentaire de ces données est possible en vous connectant aux API de création de rapports [Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=848843) pour tirer des champs supplémentaires de Azure Active Directory et les joindre au jeu de données. 
 
-### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>Est-il possible d’agréger les informations dans l’application modèle dans plusieurs abonnements ?
+### <a name="is-it-possible-to-aggregate-the-information-in-the-template-app-across-multiple-subscriptions"></a>Est-il possible d’agréger les informations de l’application modèle dans plusieurs abonnements ?
 
 Pour l’instant, l’application de modèle est pour un abonnement unique, car elle est associée aux informations d’identification qui ont été utilisées pour se connecter initialement à celle-ci.
 
@@ -205,7 +205,7 @@ Vous pouvez utiliser le bouton commentaires dans la page de [](../../business-vi
 
 ### <a name="how-can-partners-access-the-data"></a>Comment des partenaires peuvent-ils accéder aux données ?
 
-Si un partenaire dispose de droits d’administrateur délégués, il peut se connecter à l’application modèle au nom de son client.
+Si un partenaire dispose de droits d’administrateur délégués, il peut se connecter à l’application modèle pour le compte de son client.
 
 ### <a name="can-i-hide-identifiable-information-such-as-user-group-and-site-names-in-reports"></a>Puis-je masquer des informations d'identification personnelle telles que l'utilisateur, les groupes et les noms de site dans des rapports ?
 

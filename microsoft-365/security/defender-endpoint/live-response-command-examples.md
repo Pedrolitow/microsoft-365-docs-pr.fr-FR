@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 389d9ad4a3e5fc876e7bded89389202e95bfda45
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879119"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007068"
 ---
 # <a name="live-response-command-examples"></a>Exemples de commande Live response
 
@@ -32,7 +32,7 @@ ms.locfileid: "52879119"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Découvrez les commandes courantes utilisées dans la réponse en direct et consultez des exemples sur la façon dont elles sont généralement utilisées.
 
@@ -118,6 +118,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 > Ces types de **fichiers sont pris** en charge par [PowerShell.](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)
 >
 > Utilisez PowerShell comme alternative si vous avez des problèmes à l’aide de cette commande à partir de Live Response.
+
+## <a name="library"></a>library
+
+```console
+# List files in the library
+library
+```
+
+```console
+# Delete a file from the library
+library delete script.ps1
+```
 
 ## <a name="processes"></a>Processus
 ```console
@@ -221,7 +233,7 @@ scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Eva
 ```
 
 
-## <a name="undo"></a>undo
+## <a name="undo"></a>annuler
 
 ```console
 # Restore remediated registry
@@ -238,15 +250,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 undo file c:\Users\user\Desktop\malware.exe
 ```
 
-
-## <a name="library"></a>library
-
-```console
-# List files in the library
-library
-```
-
-```console
-# Delete a file from the library
-library delete script.ps1
-```

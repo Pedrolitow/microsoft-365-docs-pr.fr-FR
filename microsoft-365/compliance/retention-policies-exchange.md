@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861130"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985431"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
@@ -34,7 +34,7 @@ Les informations contenues dans cet article complètent l’article [Découvrir 
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
-Ces éléments Exchange peuvent être conservés et supprimés à l’aide de stratégies de rétention et d’étiquettes de rétention: les courriers électroniques (y compris les brouillons) avec toutes les pièces jointes, les tâches lorsqu’elles ont une date de fin et des notes. 
+Les éléments Exchange suivants des boîtes aux lettres utilisateur et des boîtes aux lettres partagées peuvent être conservés et supprimés à l’aide de stratégies de rétention et d’étiquettes de rétention : messages électroniques (messages reçus, brouillons, messages envoyés) avec des pièces jointes, des tâches lorsqu’ils ont une date de fin et des notes. 
 
 Les éléments de calendrier qui ont une date de fin sont prises en charge pour les stratégies de rétention, mais ne sont pas pris en charge pour les étiquettes de rétention.
 

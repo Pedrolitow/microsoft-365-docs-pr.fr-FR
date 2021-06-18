@@ -10,17 +10,17 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/18/2021
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: e7b7a0ba5c301829633c27f3add8f7f7daa70dfd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924706"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007180"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Activer la protection par le cloud
 
@@ -57,7 +57,7 @@ Pour plus d’informations sur les exigences de connectivité réseau spécifiqu
 
 2. Dans le **volet Accueil,** sélectionnez Configuration de l'> **profils.**
 
-3. Sélectionnez le type **de profil restrictions d’appareil** que vous souhaitez configurer. Si vous devez créer un type de profil de restrictions [d’appareil,](/intune/device-restrictions-configure)voir Configurer les **paramètres** de restriction d’appareil dans Microsoft Intune .
+3. Sélectionnez le type **de profil restrictions d’appareil** que vous souhaitez configurer. Si vous devez créer un type de profil **de restrictions** d’appareil, voir Configurer les paramètres de [restriction d’appareil dans Microsoft Intune](/intune/device-restrictions-configure).
 
 4. Sélectionnez **les**  >  **paramètres de configuration des propriétés :**  >  **Antivirus Microsoft Defender**.
 
@@ -77,8 +77,8 @@ Pour plus d’informations sur les profils d’appareil Intune, notamment sur la
 
 4. Sélectionnez **propriétés**. Ensuite, en de côté **des paramètres de configuration,** choisissez **Modifier.**
 
-5. Développez **la protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
-   - **Élevé**: applique un niveau élevé de détection.
+5. Développez **La protection** cloud, puis dans la liste des niveaux de **protection** cloud, sélectionnez l’une des listes suivantes :
+   - **Élevé**: applique un niveau de détection élevé.
    - **Plus élevé**: utilise le **niveau élevé** et applique des mesures de protection supplémentaires (peut avoir un impact sur les performances du client).
    - **Tolérance zéro :** bloque tous les exécutables inconnus.
 
@@ -105,7 +105,7 @@ Pour plus d’informations sur la configuration Microsoft Endpoint Configuration
 
         >[!NOTE]
         > **L’option Envoyer des échantillons sûrs** (1) signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles seront toujours invités et nécessitent une confirmation supplémentaire.
-        > La définition de **l’option sur Always Prompt** (0) réduit l’état de protection de l’appareil. Le fait de la définir sur [](configure-block-at-first-sight-microsoft-defender-antivirus.md) **Ne** jamais envoyer (2) signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de terminaison ne fonctionne pas.
+        > Définir l’option **sur Always Prompt** (0) réduit l’état de protection de l’appareil. Le fait de la définir sur [](configure-block-at-first-sight-microsoft-defender-antivirus.md) **Ne** jamais envoyer (2) signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de terminaison ne fonctionne pas.
 
 7. Sélectionnez **OK**.
 
@@ -124,7 +124,7 @@ Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Micr
 > Vous pouvez également définir **-SubmitSamplesConsent** sur (paramètre par `SendSafeSamples` défaut), `NeverSend` ou `AlwaysPrompt` . Le `SendSafeSamples` paramètre signifie que la plupart des échantillons seront envoyés automatiquement. Les fichiers susceptibles de contenir des informations personnelles seront toujours invités et nécessitent une confirmation supplémentaire.
 
 >[!WARNING]
-> Setting **-SubmitSamplesConsent** to `NeverSend` or will lower the protection level of the `AlwaysPrompt` device. En outre, sa définition signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de `NeverSend` terminaison ne fonctionne pas. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+> Paramètre **-SubmitSamplesConsent** pour `NeverSend` ou réduit le niveau de protection de `AlwaysPrompt` l’appareil. En outre, sa définition signifie que la fonctionnalité Bloquer à la première vue de Microsoft Defender pour le point de `NeverSend` terminaison ne fonctionne pas. [](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 ## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-delivered-protection"></a>Utiliser Windows Management Instruction (WMI) pour activer la protection cloud
 
@@ -146,7 +146,7 @@ Pour plus d’informations sur les paramètres autorisés, [voir Windows Defende
 
 2. Sélectionnez la **vignette & protection** contre les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche), puis l’étiquette des **paramètres** de protection contre & virus :
 
-    ![Capture d’écran de l’étiquette des paramètres de protection contre les virus et les menaces dans l’application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Capture d’écran des paramètres de protection contre & virus":::
 
 3. Confirmez que **la protection basée sur le cloud** et **l’envoi automatique** d’échantillons sont **activés.**
 

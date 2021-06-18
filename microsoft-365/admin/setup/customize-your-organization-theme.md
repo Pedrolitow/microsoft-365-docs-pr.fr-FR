@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998799"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006912"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -70,7 +70,7 @@ Le thème par défaut est le premier thème affiché.
 
 Vous pouvez créer jusqu’à quatre thèmes de groupe supplémentaires.
 
-1. Dans la page **Général,** entrez un nom pour votre thème.
+1. Dans la page **Général,** entrez un nom pour votre nouveau thème.
 
 2. Sous **Groupes,** vous pouvez sélectionner jusqu’à 5 groupes Microsoft 365 qui peuvent voir votre thème de groupe, au lieu d’utiliser le thème par défaut. Vous pouvez également empêcher les utilisateurs de remplacement de leur thème et d’afficher le nom complet de l’utilisateur.
 

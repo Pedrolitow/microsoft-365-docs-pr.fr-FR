@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/28/2020
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ec3dd2edc09d504af0ed76b17577130b1cdce1b7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: bc7c84e089b08c440512f8a8bf7583f41394f2ca
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275371"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007629"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Passer en Antivirus Microsoft Defender résultats d’analyse
 
@@ -37,7 +37,7 @@ Une fois Antivirus Microsoft Defender analyse complète, qu’il s’agit d’un
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>Utiliser Configuration Manager pour passer en revue les résultats de l’analyse
 
-Découvrez [comment surveiller l’état Endpoint Protection des ordinateurs.](/configmgr/protect/deploy-use/monitor-endpoint-protection)
+Découvrez [comment surveiller l’état Endpoint Protection de l’ordinateur.](/configmgr/protect/deploy-use/monitor-endpoint-protection)
 
 ## <a name="use-powershell-cmdlets-to-review-scan-results"></a>Utiliser les cmdlets PowerShell pour passer en revue les résultats de l’analyse
 
@@ -47,7 +47,7 @@ L’cmdlet suivante retourne chaque détection sur le point de terminaison. S’
 Get-MpThreatDetection
 ```
 
-![Capture d’écran des cmdlets et sorties PowerShell](images/defender/wdav-get-mpthreatdetection.png)
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Capture d’écran des cmdlets et sorties PowerShell":::
 
 Vous pouvez `-ThreatID` spécifier de limiter la sortie pour afficher uniquement les détections d’une menace spécifique.
 
@@ -57,7 +57,7 @@ Si vous souhaitez lister les détections de menaces, mais combiner les détectio
 Get-MpThreat
 ```
 
-![Capture d’écran de PowerShell](images/defender/wdav-get-mpthreat.png)
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="Code PowerShell":::
 
 Pour plus d’informations sur l’utilisation de PowerShell avec Antivirus Microsoft Defender, voir Utiliser les [cmdlets PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) pour configurer et exécuter des [cmdlets](/powershell/module/defender/) Antivirus Microsoft Defender et Defender.
 

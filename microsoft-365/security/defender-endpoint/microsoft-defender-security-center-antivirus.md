@@ -15,17 +15,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926534"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007444"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Antivirus Microsoft Defender dans l’application Sécurité Windows de messagerie
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **S’applique à :**
 
@@ -36,9 +33,9 @@ Dans Windows 10 version 1703 et ultérieures, l’application Windows Defender f
 Paramètres qui faisaient auparavant partie du client Windows Defender et du Windows Paramètres principal ont été combinés et déplacés vers la nouvelle application, qui est installée par défaut dans le cadre de Windows 10, version 1703.
 
 > [!IMPORTANT]
-> La désactivation du service Sécurité Windows ne désactive pas Antivirus Microsoft Defender ou [Pare-feu Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Ceux-ci sont désactivés automatiquement lorsqu’un antivirus tiers ou un produit de pare-feu est installé et maintenu à jour.
+> La désactivation du service centre Sécurité Windows ne désactive pas le pare-feu Antivirus Microsoft Defender [ou Windows Defender’accès.](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) Ceux-ci sont désactivés automatiquement lorsqu’un antivirus tiers ou un produit de pare-feu est installé et maintenu à jour.
 >
-> Si vous désactivez le service centre Sécurité Windows ou configurez ses paramètres de stratégie de groupe associés pour empêcher son démarrage ou son exécution, l’application Sécurité Windows peut afficher des informations obsolètes ou inexactes sur les produits antivirus ou pare-feu que vous avez installés sur l’appareil.
+> Si vous désactivez le service centre Sécurité Windows ou configurez ses paramètres de stratégie de groupe associés pour l’empêcher de démarrer ou de s’exécute, l’application Sécurité Windows peut afficher des informations obsolètes ou inexactes sur les produits antivirus ou pare-feu que vous avez installés sur l’appareil.
 > Cela peut également empêcher les Antivirus Microsoft Defender de s’activer si vous avez un antivirus tiers ancien ou obsolète, ou si vous désinstallez des produits antivirus tiers que vous avez peut-être précédemment installés.
 > Cela réduit considérablement la protection de votre appareil et peut entraîner une infection par des programmes malveillants.
 
@@ -48,7 +45,7 @@ L Sécurité Windows’application est une interface client Windows 10 version 1
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Passer en revue les paramètres de protection contre les virus et les menaces dans l Sécurité Windows appl
 
-![Capture d’écran de l’étiquette des paramètres de protection contre les virus et les menaces dans l’application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Paramètres de protection contre les virus et menaces dans Sécurité Windows application":::
 
 1. Ouvrez l Sécurité Windows application en cliquant sur l’icône de bouclier dans la barre des tâches ou en recherchant Defender dans le menu **Démarrer.**
 
@@ -69,7 +66,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>Passer en revue la version de mise à jour des informations de sécurité et télécharger les dernières mises à jour dans l’Sécurité Windows de sécurité
 
-![Informations sur le numéro de version de l’intelligence de la sécurité](images/defender/wdav-wdsc-defs.png)
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Numéro de version de l’intelligence de la sécurité":::
 
 1. Ouvrez l’Sécurité Windows en recherchant sécurité dans le menu *Démarrer,* puis en **sélectionnant Sécurité Windows**.
 
@@ -99,7 +96,7 @@ Les sections suivantes décrivent comment effectuer certaines des tâches les pl
 
 2. Sélectionnez la **vignette & protection contre** les virus contre les menaces (ou l’icône de bouclier dans la barre de menus de gauche).
 
-3. Sous les **paramètres Gérer,** sélectionnez **Paramètres de protection contre & virus.**
+3. Sous les **paramètres Gérer,** sélectionnez Paramètres de protection contre & virus et **menaces.**
 
 4. Sous le **paramètre Exclusions,** **sélectionnez Ajouter ou supprimer des exclusions.** 
 
