@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964698"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007396"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Activer Bloquer à la première consultation
 
@@ -82,7 +82,7 @@ L’Antivirus Microsoft Defender utilise plusieurs technologies de prévention e
    - **Extension de temps pour l’analyse des fichiers dans le cloud** : 50
    - **Demander aux utilisateurs avant la soumission d’échantillons** : Envoyer tous les données sans demande
 
-   ![Configuration Intune](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Bloc de configuration Intune à la première consultation":::
 
 4. Enregistrez vos paramètres.
 
@@ -136,7 +136,7 @@ Vous pouvez confirmer que Bloquer à la première consultation est activé sur d
 
 2. Sélectionnez **Protection contre les virus et les menaces**, puis sous **Paramètres de protection contre les virus et les menaces**, sélectionnez **Gérer les paramètres**.
 
-   ![Capture d’écran de l’étiquette des paramètres de protection contre les virus et les menaces dans l’application Sécurité Windows](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Capture d’écran de l’étiquette des paramètres de protection contre les virus et les menaces dans l’application Sécurité Windows":::
 
 3. Confirmez que les options **Protection assurée par le cloud** et **Envoi automatique d’un échantillon** sont activées.
 
