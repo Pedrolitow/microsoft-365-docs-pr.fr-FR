@@ -14,16 +14,16 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Découvrez comment reconnaître et corriger les attaques par consentement illicite dans Microsoft Office 365.
+description: Découvrez comment reconnaître et corriger les attaques par consentement illicite dans Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c3c3c06974feb2dab3985a60938fe7d543543c3
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028918"
+ms.locfileid: "53029860"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 
@@ -33,9 +33,9 @@ ms.locfileid: "53028918"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-**Résumé**  Découvrez comment reconnaître et corriger les attaques par consentement illicite dans Office 365.
+**Résumé**  Découvrez comment reconnaître et corriger les attaques par consentement illicite dans Microsoft 365.
 
-## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Qu’est-ce que l’attaque par consentement illicite dans Office 365 ?
+## <a name="what-is-the-illicit-consent-grant-attack-in-microsoft-365"></a>Qu’est-ce que l’attaque par consentement illicite Microsoft 365 ?
 
 Dans le cas d’une attaque par consentement illicite, l’attaquant crée une application enregistrée par Azure qui demande l’accès à des données telles que des informations de contact, des e-mails ou des documents. L’attaquant astuces ensuite un utilisateur final pour accorder à cette application l’autorisation d’accéder à ses données par le biais d’une attaque par hameçonnage ou en injectant du code illicite dans un site web approuvé. Une fois l’application illicite accordée, elle dispose d’un accès aux données au niveau du compte sans avoir besoin d’un compte d’organisation. Les étapes de correction normales, telles que la réinitialisation des mots de passe pour les comptes en violation ou la nécessité d’une authentification multifacteur (MFA) sur les comptes, ne sont pas efficaces contre ce type d’attaque, car il s’agit d’applications tierces externes à l’organisation.
 
@@ -44,21 +44,23 @@ Ces attaques tirent parti d’un modèle d’interaction qui suppose que l’ent
 > [!IMPORTANT]
 > Pensez-vous que vous rencontrez des problèmes avec l’octroi illégal de consentement à partir d’une application, pour le moment ? Microsoft Cloud App Security (MCAS) dispose d’outils pour détecter, examiner et corriger vos applications OAuth. Cet article MCAS présente un didacticiel qui explique comment examiner les applications [OAuth](/cloud-app-security/investigate-risky-oauth)à risque. Vous pouvez également définir des stratégies d’application [OAuth](/cloud-app-security/app-permission-policy) pour examiner les autorisations demandées par l’application, les utilisateurs qui autorisent ces applications, et largement approuver ou interdire ces demandes d’autorisations.
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>À quoi ressemble une attaque d’octroi de consentement illicite dans Office 365 ?
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>À quoi ressemble une attaque d’octroi de consentement illicite dans Microsoft 365 ?
 
 Vous devez effectuer une recherche dans le journal **d’audit** pour trouver des signes, également appelés indicateurs de compromission (IOC) de cette attaque. Pour les organisations avec de nombreuses applications inscrites dans Azure et une base d’utilisateurs importante, la meilleure pratique consiste à examiner les octrois de consentement de votre organisation une fois par semaine.
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Étapes de recherche des signes de cette attaque
 
-1. Ouvrez **le portail Microsoft 365 Defender** sur <https://security.microsoft.com> .
+1. Ouvrez le **Microsoft 365 Defender,** <https://security.microsoft.com> puis sélectionnez **Audit.**
 
-2. Accédez à **Recherche et** sélectionnez Recherche dans le **journal d’audit.**
+2. Dans la page **Audit** qui s’ouvre, vérifiez que l’onglet Recherche est sélectionné, puis configurez les paramètres suivants : 
+   - **Plage de dates et d’heure**
+   - **Activités :** vérifiez que les **résultats de toutes les activités** sont sélectionnés.
 
-3. Recherchez (toutes les activités et tous les utilisateurs), entrez la date de début et la date de fin si nécessaire, puis cliquez sur **Rechercher.**
+   Lorsque vous avez terminé, cliquez sur **Rechercher.**
 
-4. Cliquez **sur Filtrer les résultats** et entrez Consentement à l’application dans le **champ** Activité.
+3. Cliquez sur la **colonne** Activité pour trier les résultats et rechercher **consentement à l’application.**
 
-5. Cliquez sur le résultat pour voir les détails de l’activité. Cliquez **sur Plus d’informations** pour obtenir des détails sur l’activité. Vérifiez si IsAdminContent est définie sur True.
+4. Sélectionnez une entrée dans la liste pour voir les détails de l’activité. Vérifiez si IsAdminContent est définie sur True.
 
 > [!NOTE]
 >
@@ -73,9 +75,7 @@ Vous devez effectuer une recherche dans le journal **d’audit** pour trouver de
 Si vous avez une ou plusieurs instances des CCI répertoriées ci-dessus, vous devez poursuivre l’examen pour confirmer que l’attaque s’est produite. Vous pouvez utiliser l’une de ces trois méthodes pour confirmer l’attaque :
 
 - Inventorier les applications et leurs autorisations à l’aide Azure Active Directory portail. Cette méthode est minutieuse, mais vous ne pouvez vérifier qu’un seul utilisateur à la fois, ce qui peut prendre beaucoup de temps si vous avez de nombreux utilisateurs à vérifier.
-
 - Inventorier les applications et leurs autorisations à l’aide de PowerShell. Il s’agit de la méthode la plus rapide et la plus minutieuse, avec la charge de traitement la moins importante.
-
 - Demander à vos utilisateurs de vérifier individuellement leurs applications et autorisations et de signaler les résultats aux administrateurs pour correction.
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>Inventaire des applications avec accès dans votre organisation
@@ -84,23 +84,19 @@ Vous pouvez le faire pour vos utilisateurs avec le portail Azure Active Director
 
 ### <a name="steps-for-using-the-azure-active-directory-portal"></a>Étapes d’utilisation du portail Azure Active Directory web
 
-Vous pouvez rechercher les applications pour lesquelles un utilisateur individuel a accordé des autorisations à l’aide [du portail Azure Active Directory.](https://portal.azure.com/)
+Vous pouvez rechercher les applications pour lesquelles un utilisateur individuel a accordé des autorisations à l’aide du portail Azure Active Directory à <https://portal.azure.com> l’Azure Active Directory.
 
 1. Connectez-vous au portail Azure avec des droits d’administration.
-
 2. Sélectionnez le Azure Active Directory de l’équipe.
-
 3. Sélectionnez **Utilisateurs**.
-
 4. Sélectionnez l’utilisateur à réviser.
-
 5. Sélectionnez **Applications**.
 
 Cela vous indique les applications qui sont affectées à l’utilisateur et les autorisations dont elles ont.
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Étapes pour que vos utilisateurs émanent l’accès à leur application
 
-Demande à vos utilisateurs d’y accéder et de consulter https://myapps.microsoft.com leur propre accès aux applications. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
+Demande à vos utilisateurs d’y accéder et de consulter <https://myapps.microsoft.com> leur propre accès aux applications. Ils doivent être en mesure d’afficher toutes les applications avec accès, d’afficher les détails les concernant (y compris l’étendue de l’accès) et de révoquer des privilèges pour des applications suspectes ou illicites.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Étapes à suivre pour ce faire avec PowerShell
 
@@ -109,9 +105,7 @@ Le moyen le plus simple de vérifier l’attaque par consentement illicite consi
 #### <a name="pre-requisites"></a>Conditions préalables
 
 - La bibliothèque Azure AD PowerShell est installée.
-
 - Droits d’administrateur général sur le client sur le client sur qui le script sera exécuté.
-
 - Administrateur local sur l’ordinateur à partir duquel exécuter les scripts.
 
 > [!IMPORTANT]
@@ -121,7 +115,7 @@ Le moyen le plus simple de vérifier l’attaque par consentement illicite consi
 
 2. Téléchargez ou copiez [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script de GitHub vers un dossier à partir duquel vous exécuterez le script. Ce sera le même dossier dans lequel le fichier « permissions.csv » de sortie sera écrit.
 
-3. Ouvrez une instance PowerShell en tant qu’administrateur et ouvrez le dossier dans qui vous avez enregistré le script.
+3. Ouvrez une session PowerShell en tant qu’administrateur et ouvrez le dossier dans lequel vous avez enregistré le script.
 
 4. Connecter votre répertoire à l’aide de [l Connecter-AzureAD.](/powershell/module/azuread/connect-azuread)
 
@@ -153,14 +147,10 @@ Une fois que vous avez terminé l’inventaire de l’accès aux applications, e
 Une fois que vous avez identifié une application avec des autorisations illicites, vous avez plusieurs façons de supprimer cet accès.
 
 - Vous pouvez révoquer l’autorisation de l’application dans le portail Azure Active Directory en :
-
-  - Accédez à l’utilisateur affecté dans le **Azure Active Directory’utilisateur.**
-
-  - Sélectionnez **Applications**.
-
-  - Sélectionnez l’application illicite.
-
-  - Cliquez **sur Supprimer** dans l’exercice vers le bas.
+  1. Accédez à l’utilisateur affecté dans le **Azure Active Directory’utilisateur.**
+  2. Sélectionnez **Applications**.
+  3. Sélectionnez l’application illicite.
+  4. Cliquez **sur Supprimer** dans l’exercice vers le bas.
 
 - Vous pouvez révoquer l’octroi de consentement OAuth avec PowerShell en suivant les étapes de [Remove-AzureADOAuth2PermissionGrant](/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant).
 
@@ -175,19 +165,13 @@ Une fois que vous avez identifié une application avec des autorisations illicit
 Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités de sécurité que vous pouvez utiliser pour protéger vos données et vos utilisateurs. Utilisez la [Feuille de route du Centre de sécurité Microsoft 365 : principales priorités pour les 30 premiers jours, 90 premiers jours et au-delà](security-roadmap.md), pour implémenter les meilleures pratiques recommandées par Microsoft pour sécuriser votre client Microsoft 365.
 
 - Tâches à effectuer lors des 30 premiers jours. Elle ont un effet immédiat et n’ont qu’un faible impact négatif sur vos utilisateurs.
-
 - Tâches à accomplir dans les 90 premiers jours. Ces tâches prennent un peu plus de temps à planifier et à implémenter, mais augmentent considérablement votre sécurité.
-
 - Au-delà de 90 jours. Ces améliorations sont à mettre en place pendant les 90 premiers jours.
 
-## <a name="see-also"></a>Voir aussi :
+## <a name="see-also"></a>Voir aussi
 
 - [Une application inattendue dans la](/azure/active-directory/application-access-unexpected-application) liste des applications permet aux administrateurs d’accéder aux différentes actions qu’ils souhaitent peut-être réaliser après avoir réalisé qu’il existe des applications inattendues ayant accès aux données.
-
 - [L’intégration d’applications Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) est une vue d’ensemble générale du consentement et des autorisations.
-
 - [Les problèmes liés au développement de mon application](/azure/active-directory/active-directory-application-dev-development-content-map) fournissent des liens vers différents articles relatifs au consentement.
-
 - Les objets principaux d’application et de service dans [Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) offrent une vue d’ensemble des objets principaux d’application et de service qui sont essentiels au modèle d’application.
-
 - [Gérer l’accès aux applications](/azure/active-directory/active-directory-managing-access-to-apps) est une vue d’ensemble des fonctionnalités dont les administrateurs ont besoin pour gérer l’accès des utilisateurs aux applications.

@@ -19,19 +19,19 @@ description: Les administrateurs peuvent apprendre à utiliser la stratégie de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: a683ed93e4e483e63fe01281b32661f0b803d1ce
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793207"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029296"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Gérer les expéditeurs usurpés à l’aide de la stratégie de veille contre l’usurpation d’informations et des informations sur l’usurpation d’informations dans EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Vous pouvez gérer la veille contre l’usurpation d’adresse dans le Centre de
 
 - Des autorisations doivent vous avoir été attribuées dans **Exchange Online** pour que vous puissiez effectuer les procédures décrites dans cet article :
   - Pour modifier la stratégie de veille contre l’usurpation d’informations ou activer  ou  désactiver la veille contre l’usurpation d’informations, vous devez être membre des groupes de rôles Gestion de l’organisation ou Administrateur de la sécurité.
-  - Pour accéder en lecture seule à la stratégie d’intelligence contre  l’usurpation d’informations, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
+  - Pour accéder en lecture seule à la stratégie d’intelligence contre  l’usurpation d’informations, vous devez être membre des groupes de rôles Lecteur global ou Lecteur **de** sécurité.
 
   Pour plus d'informations, voir [Permissions en échange en ligne](/exchange/permissions-exo/permissions-exo).
 
@@ -67,7 +67,7 @@ Vous pouvez gérer la veille contre l’usurpation d’adresse dans le Centre de
 - Vous pouvez activer, désactiver et configurer les paramètres de veille contre l’usurpation d’informations dans les stratégies anti-hameçonnage. Pour obtenir des instructions basées sur votre abonnement, consultez l’une des rubriques suivantes :
 
   - [Configurer des stratégies anti-hameçonnage dans EOP.](configure-anti-phishing-policies-eop.md)
-  - [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md).
+  - [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 - Pour obtenir nos paramètres recommandés pour la veille contre l’usurpation d’adresse, consultez les paramètres de stratégie [anti-hameçonnage EOP.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
 
@@ -159,7 +159,7 @@ Pour configurer les expéditeurs autorisés et bloqués dans la veille contre l�
 
 2. Modifiez le fichier CSV pour ajouter ou modifier les valeurs suivantes :
    - **Expéditeur** (domaine dans l’enregistrement PTR ou l’adresse IP/24 du serveur source)
-   - **SpoofedUser**: l’une des valeurs suivantes :
+   - **SpoofedUser :** l’une des valeurs suivantes :
      - Adresse de messagerie de l’utilisateur interne.
      - Domaine de messagerie de l’utilisateur externe.
      - Valeur vide qui indique que vous souhaitez bloquer ou autoriser tous les messages usurpés de l’expéditeur **spécifié,** quelle que soit l’adresse e-mail usurpée.
@@ -184,7 +184,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 1. Dans le Centre de sécurité & conformité, allez au Tableau de **bord de gestion des** \> **menaces.**
 
-2. Dans la **ligne Insights,** recherchez l’un des éléments suivants :
+2. Dans la **Informations,** recherchez l’un des éléments suivants :
 
    - **Domaines usurpés probables** au cours des sept derniers jours : cette information indique que la veille contre l’usurpation d’informations est activée (activée par défaut).
    - **Activer la protection contre** l’usurpation d’informations : cette information indique que la veille contre l’usurpation d’informations est désactivée, et le fait de cliquer sur l’information vous permet d’activer la veille contre l’usurpation d’informations.
@@ -205,9 +205,9 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
      - Usurpation de confiance modérée : en fonction des modèles d’envoi historiques et du score de réputation des domaines, nous sommes modérément certains que les domaines sont usurpés et que les messages envoyés à partir de ces domaines sont légitimes. Les faux positifs sont plus probables dans cette catégorie que l’usurpation d’identité à haut niveau de confiance.
    - **Domaines non suspects**: le domaine a échoué aux vérifications explicites de l’authentification de courrier électronique [SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md). Toutefois, le domaine a réussi nos vérifications d’authentification de messagerie implicites[(authentification composite).](email-validation-and-authentication.md#composite-authentication) Par conséquent, aucune action anti-usurpation n’a été prise sur le message.
 
-#### <a name="view-detailed-information-about-suspicious-and-nonsuspicious-domains"></a>Afficher des informations détaillées sur les domaines suspects et nonuspicieux
+#### <a name="view-detailed-information-about-suspicious-and-nonsuspicious-domains"></a>Afficher des informations détaillées sur les domaines suspects et non utiles
 
-1. Dans la veille contre l’usurpation d’informations, cliquez sur **Domaines suspects** ou **Domaines non suspects** pour aller à la page Informations sur l’usurpation **d’intelligence.** La page **Informations sur l’usurpation d’intelligence** contient les informations suivantes :
+1. Dans la veille contre l’usurpation d’informations, cliquez sur **Domaines suspects** ou **Domaines non suspects** pour aller à la page Informations sur l’usurpation **d’informations sur l’usurpation d’informations.** La page **Informations sur l’usurpation d’intelligence** contient les informations suivantes :
 
    - **Domaine usurpé**: domaine de l’utilisateur usurpé qui s’affiche dans la zone De des clients de messagerie.  Cette adresse est également appelée `5322.From` adresse.
    - **Infrastructure**: également appelée infrastructure _d’envoi._ Domaine trouvé dans une recherche DNS inversée (enregistrement PTR) de l’adresse IP du serveur de messagerie source. Si l’adresse IP source n’a pas d’enregistrement PTR, l’infrastructure d’envoi est identifiée comme \<source IP\> /24 (par exemple, 192.168.100.100/24).

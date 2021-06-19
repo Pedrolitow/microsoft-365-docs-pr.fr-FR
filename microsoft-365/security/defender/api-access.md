@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 03fd82cd5dc24653b6d67fa47cc225d355bfac45
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 3cbd329c63d7cf1868083c66919773e14ed51156
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028798"
+ms.locfileid: "53029596"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Accéder aux API Microsoft 365 Defender de données
 
@@ -59,7 +59,7 @@ Utilisez ce contexte pour les applications qui s’exécutent sans utilisateur i
 2. Attribuez les autorisations souhaitées à l’application.
 3. Créez une clé pour l’application.
 4. Obtenez un jeton de sécurité à l’aide de l’application et de sa clé.
-5. Utilisez le jeton pour accéder à Microsoft 365 Defender API.
+5. Utilisez le jeton pour accéder à l Microsoft 365 Defender API.
 
 Pour plus d’informations, voir **[Créer une application pour accéder Microsoft 365 Defender sans utilisateur.](api-create-app-web.md)**
 
@@ -70,7 +70,7 @@ Utilisez ce contexte pour effectuer des actions au nom d’un seul utilisateur.
 1. Créez une Azure Active Directory application native.
 2. Attribuez l’autorisation souhaitée à l’application.
 3. Obtenez un jeton de sécurité à l’aide des informations d’identification de l’utilisateur pour l’application.
-4. Utilisez le jeton pour accéder à Microsoft 365 Defender API.
+4. Utilisez le jeton pour accéder à l Microsoft 365 Defender API.
 
 Pour plus d’informations, voir **[Créer une application pour accéder Microsoft 365 Defender API au nom d’un utilisateur.](api-create-app-user-context.md)**
 
@@ -82,7 +82,7 @@ Utilisez ce contexte lorsque vous devez fournir une application à de nombreux u
 2. Attribuez l’autorisation souhaitée à l’application.
 3. Obtenir [le consentement de l’administrateur](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) pour l’application auprès de chaque client.
 4. Obtenez un jeton de sécurité à l’aide des informations d’identification de l’utilisateur en fonction de l’ID de locataire d’un client.
-5. Utilisez le jeton pour accéder à Microsoft 365 Defender API.
+5. Utilisez le jeton pour accéder à l Microsoft 365 Defender API.
 
 Pour plus d’informations, voir Créer une application avec un accès partenaire **[à Microsoft 365 Defender API.](api-partner-access.md)**
 

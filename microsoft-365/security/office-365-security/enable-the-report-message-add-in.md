@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment activer le message de rapport ou les add-ins Signaler le hameçonnage pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7e5136e6d1a118df2e0e91f09a79a9a63e88052
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8949322b0b691d59e59e5f7b80d2b9650e4115d5
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028582"
+ms.locfileid: "53029908"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Activer le message de rapport ou les modules de signalement du hameçonnage
 
@@ -34,17 +34,17 @@ ms.locfileid: "53028582"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si vous êtes un administrateur d’une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail Soumissions dans Microsoft 365 Defender. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
+> Si vous êtes un administrateur d’une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail Soumissions dans le portail Microsoft 365 Defender. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-Les add-ins Signaler le message et Signaler le hameçonnage pour Outlook et Outlook sur le web (anciennement Outlook Web App) permettent aux utilisateurs de signaler facilement les faux positifs (messages électroniques de qualité marqués comme faux) ou les faux négatifs (courrier électronique non autorisé) à Microsoft et à ses affiliés pour analyse. 
+Les add-ins Signaler le message et Signaler le hameçonnage pour Outlook et Outlook sur le web (anciennement Outlook Web App) permettent aux utilisateurs de signaler facilement les faux positifs (messages électroniques de qualité marqués comme faux) ou les faux négatifs (courrier électronique non autorisé) à Microsoft et à ses affiliés pour analyse.
 
-Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie. Par exemple, supposons que des personnes signalent de nombreux messages à l’aide du module de signalement du hameçonnage. Ces informations sont disponibles dans le Tableau de bord de sécurité et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies anti-hameçonnage peuvent avoir besoin d’être mises à jour. 
+Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie. Par exemple, supposons que des personnes signalent de nombreux messages à l’aide du module de signalement du hameçonnage. Ces informations sont disponibles dans le Tableau de bord de sécurité et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies anti-hameçonnage peuvent avoir besoin d’être mises à jour.
 
-Vous pouvez installer le module de rapport de message ou de signalement du hameçonnage. Si vous souhaitez que vos utilisateurs signalent à la fois le courrier indésirable et les messages de hameçonnage, déployez le add-in Signaler un message dans votre organisation. Pour plus d’informations, voir Enable the Report Message add-in. 
+Vous pouvez installer le module de rapport de message ou de signalement du hameçonnage. Si vous souhaitez que vos utilisateurs signalent à la fois le courrier indésirable et les messages de hameçonnage, déployez le add-in Signaler un message dans votre organisation. Pour plus d’informations, voir Enable the Report Message add-in.
 
-Le add-in Report Message offre la possibilité de signaler les messages de courrier indésirable et de hameçonnage. Les administrateurs peuvent activer le add-in Message de rapport pour l’organisation, et les utilisateurs individuels peuvent l’installer eux-mêmes. 
+Le add-in Report Message offre la possibilité de signaler les messages de courrier indésirable et de hameçonnage. Les administrateurs peuvent activer le add-in Message de rapport pour l’organisation, et les utilisateurs individuels peuvent l’installer eux-mêmes.
 
-Le module de signalement du hameçonnage offre la possibilité de signaler uniquement les messages de hameçonnage. Les administrateurs peuvent activer le module de signalement du hameçonnage pour l’organisation, et les utilisateurs individuels peuvent l’installer eux-mêmes. 
+Le module de signalement du hameçonnage offre la possibilité de signaler uniquement les messages de hameçonnage. Les administrateurs peuvent activer le module de signalement du hameçonnage pour l’organisation, et les utilisateurs individuels peuvent l’installer eux-mêmes.
 
 Si vous êtes un utilisateur individuel, vous pouvez activer les deux modules pour vous-même.
 
@@ -65,7 +65,7 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
 
 - Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Les administrateurs doivent être membres du groupe de rôles Administrateurs globaux. Pour plus d’informations, [voir Autorisations dans Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
+- Les administrateurs doivent être membres du groupe de rôles Administrateurs globaux. Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
 
 - Pour plus d’informations sur la façon de signaler un message à l’aide de la fonctionnalité Signaler un message, voir Signaler les faux positifs et les [faux négatifs dans Outlook.](report-false-positives-and-false-negatives.md)
 
@@ -74,7 +74,7 @@ Si vous êtes un administrateur général ou un administrateur Exchange Online e
 
 ## <a name="get-the-report-message-add-in"></a>Obtenir le add-in Message de rapport
 
-### <a name="get-the-add-in-for-yourself"></a>Obtenir le add-in pour vous-même
+### <a name="get-the-report-message-add-in-for-yourself"></a>Obtenir le add-in Message de rapport pour vous-même
 
 1. Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in. To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180> .
 
@@ -98,7 +98,7 @@ Une fois que le module est installé et activé, les icônes suivantes s’offre
   > [!div class="mx-imgBorder"]
   > ![Icône du add-in Message de rapport Outlook sur le web](../../media/owa-report-message-icon.png)
 
-### <a name="get-the-add-in-for-your-organization"></a>Obtenir le add-in pour votre organisation
+### <a name="get-the-report-message-add-in-for-your-organization"></a>Obtenir le add-in Message de rapport pour votre organisation
 
 > [!NOTE]
 > L’apparition du module dans votre organisation peut prendre jusqu’à 12 heures.
@@ -124,13 +124,11 @@ Une fois que le module est installé et activé, les icônes suivantes s’offre
 7. Dans la page **Configurer le module de** configuration qui s’affiche, configurez les paramètres suivants :
 
    - **Utilisateurs affectés**: sélectionnez l’une des valeurs suivantes :
-
      - **Tout le monde** (par défaut)
      - **Utilisateurs/groupes spécifiques**
      - **Juste moi**
 
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
-
      - **Fixe (par défaut)**: le add-in est automatiquement déployé sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
      - **Disponible**: les utilisateurs peuvent installer le add-in sur **home** \> **get add-ins** \> **admin-managed**.
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.
@@ -161,7 +159,7 @@ Une fois que le module est installé et activé, les icônes suivantes s’offre
 
 ## <a name="get-the-report-phishing-add-in"></a>Obtenir le module de signalement du hameçonnage
 
-### <a name="get-the-add-in-for-yourself"></a>Obtenir le add-in pour vous-même
+### <a name="get-the-report-phishing-add-in-for-yourself"></a>Obtenir le module de signalement du hameçonnage par vous-même
 
 1. Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Phishing add-in.
 
@@ -182,7 +180,7 @@ Une fois que le module est installé et activé, les icônes suivantes s’offre
   > [!div class="mx-imgBorder"]
   > ![Icône de l’application De hameçonnage de rapport Outlook sur le web](../../media/OWA-ReportPhishing.png)
 
-### <a name="get-the-add-in-for-your-organization"></a>Obtenir le add-in pour votre organisation
+### <a name="get-the-report-phishing-add-in-for-your-organization"></a>Obtenir le module de signalement du hameçonnage pour votre organisation
 
 > [!NOTE]
 > L’apparition du module dans votre organisation peut prendre jusqu’à 12 heures.
@@ -206,13 +204,11 @@ Une fois que le module est installé et activé, les icônes suivantes s’offre
 7. Dans la page **Configurer le module de** configuration qui s’affiche, configurez les paramètres suivants :
 
    - **Utilisateurs affectés**: sélectionnez l’une des valeurs suivantes :
-
      - **Tout le monde** (par défaut)
      - **Utilisateurs/groupes spécifiques**
      - **Juste moi**
 
    - **Méthode de déploiement**: sélectionnez l’une des valeurs suivantes :
-
      - **Fixe (par défaut)**: le add-in est automatiquement déployé sur les utilisateurs spécifiés et ils ne peuvent pas le supprimer.
      - **Disponible**: les utilisateurs peuvent installer le add-in sur **home** \> **get add-ins** \> **admin-managed**.
      - **Facultatif**: le add-in est automatiquement déployé pour les utilisateurs spécifiés, mais ils peuvent choisir de le supprimer.

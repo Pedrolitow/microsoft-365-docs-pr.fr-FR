@@ -16,12 +16,12 @@ description: Afficher et examiner les tentatives de hameçonnage de programmes m
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 917ad3caf96a982df8b88058ff1c394b3d21dd75
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: eb62961bb26b079c508cbd5bc559a95d172cff86
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028543"
+ms.locfileid: "53029884"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Sécurité du courrier électronique avec l’Explorateur de menaces dans Microsoft Defender Office 365
 
@@ -32,11 +32,11 @@ Contenu de cet article :
 - [Démarrer un examen et une réponse automatisés](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les bases de détection **en** temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont le repérage de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) de menaces et l’Explorateur de menaces et les informations de base sur les [détections en temps réel.](real-time-detections.md) 
+> Cela fait partie d’une série de **3** articles sur l’Explorateur de menaces **,** la sécurité du courrier électronique et les bases de détection **en** temps réel et de l’Explorateur (telles que les différences entre les outils et les autorisations nécessaires pour les exploiter). Les deux autres articles de cette série sont le repérage de menaces dans [l’Explorateur](threat-hunting-in-threat-explorer.md) de menaces et l’Explorateur de menaces et les informations de base sur les [détections en temps réel.](real-time-detections.md)
 
-Cet article explique comment afficher et examiner les programmes malveillants et les tentatives de hameçonnage détectés dans le courrier électronique par Microsoft 365 fonctionnalités de sécurité. 
+Cet article explique comment afficher et examiner les programmes malveillants et les tentatives de hameçonnage détectés dans le courrier électronique par Microsoft 365 fonctionnalités de sécurité.
 
-**S’applique à**
+**S’applique à :**
 
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
@@ -45,49 +45,46 @@ Cet article explique comment afficher et examiner les programmes malveillants et
 
 Pour voir les programmes malveillants détectés dans les e-mails triés par Microsoft 365 technologie, utilisez la vue Courrier [> Programmes](threat-explorer-views.md#email--malware) malveillants de l’Explorateur (ou détections en temps réel). Les programmes malveillants étant l’affichage par défaut, ils peuvent être sélectionnés dès que vous ouvrez l’Explorateur.
 
-1. In the Microsoft 365 Defender portal ( <https://security.microsoft.com> ), choose Email & **collaboration** \> **Explorer** (or **Real-time detections**). (Cet exemple utilise l’Explorateur.) Si vous êtes dans le portail d’Microsoft 365 Defender convergé (faites défiler vers l’Explorateur de collaboration & https://security.microsoft.com/)   >  **courrier électronique.**
+1. In the Microsoft 365 Defender portal ( <https://security.microsoft.com> ), choose Email & **collaboration** \> **Explorer** (or **Real-time detections**; Cet exemple utilise l’Explorateur).
 
    À partir de là, commencez à l’affichage, choisissez une période particulière pour [](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through)examiner (si nécessaire) et concentrez vos filtres, comme le décrit l’Explorateur.
 
-2. Dans le menu **Affichage,** sélectionnez **Programmes malveillants** sous **Courrier électronique.**
+2. Dans la **liste de** listes listes d’affichage, vérifiez **que** les programmes malveillants de messagerie électronique \>  sont sélectionnés.
 
-3. Cliquez **sur Expéditeur,** puis choisissez **Technologie de** détection de \> **base.**
+3. Cliquez **sur Expéditeur,** puis choisissez Technologie **de** détection \> **de base** dans la liste liste.
 
-   
    :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="technologie de détection des programmes malveillants":::
 
    Vos technologies de détection sont désormais disponibles en tant que filtres pour le rapport.
 
-4. Choisissez une option. Sélectionnez ensuite **le bouton Actualiser** pour appliquer ce filtre.
+4. Choisissez une option, puis cliquez sur **Actualiser** pour appliquer ce filtre (n’actualisez pas la fenêtre de votre navigateur).
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="technologie de détection sélectionnée"::: 
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="technologie de détection sélectionnée":::
 
-   Le rapport est actualisé pour afficher les résultats détectés par les programmes malveillants détectés dans le courrier électronique, à l’aide de l’option technologique que vous avez sélectionnée. À partir de là, vous pouvez effectuer une analyse plus approfondie. 
+   Le rapport est actualisé pour afficher les résultats détectés par les programmes malveillants détectés dans le courrier électronique, à l’aide de l’option technologique que vous avez sélectionnée. À partir de là, vous pouvez effectuer une analyse plus approfondie.
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Afficher l’URL de hameçonnage et cliquer sur les données de verdict
 
 Vous pouvez afficher les tentatives de hameçonnage par le biais d’URL dans le courrier électronique, y compris une liste d’URL qui ont été autorisées, bloquées et bloquées. Pour identifier les URL sur qui vous avez cliqué, [Safe liens](safe-links.md) doivent être configurés. Veillez à configurer [](set-up-safe-links-policies.md) des stratégies Safe liens pour la protection au moment du clic et la journalisation des verdicts de clic en Safe liens.
 
-Pour passer en revue les URL de hameçonnage dans les [   >   ](threat-explorer-views.md#email--phish) messages et cliquer sur les URL des messages d’hameçonnage, utilisez l’affichage Hameçonnage de l’Explorateur ou les détections en temps réel.
+1. In the Microsoft 365 Defender portal ( <https://security.microsoft.com> ), choose Email & **collaboration** \> **Explorer** (or **Real-time detections**; Cet exemple utilise l’Explorateur).
 
-1. In the Microsoft 365 Defender portal ( <https://security.microsoft.com> ), choose Email & **collaboration** \> **Explorer** (or **Real-time detections**). (Cet exemple utilise l’Explorateur.)
-
-2. Dans le menu **Affichage,** sélectionnez  \> **Hameçonnage de messagerie.**
+2. In the **View** drop down list, choose **Email** \> **Phish**.
 
    > [!div class="mx-imgBorder"]
    > ![Afficher le menu de l’Explorateur dans le contexte de hameçonnage](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. Cliquez **sur Expéditeur,** puis choisissez **URL Verdict** de \> **clic.**
+3. Cliquez **sur Expéditeur,** puis choisissez **URL** Cliquez \> **sur verdict** dans la liste de liste.
 
-4. Sélectionnez une ou plusieurs  options, telles que Blocked  et **Block overridden,** puis sélectionnez le bouton Actualiser sur la même ligne que les options à appliquer à ce filtre. (N’actualisez pas la fenêtre de votre navigateur.)
+4. Dans les options qui s’affichent,  sélectionnez une ou plusieurs options, telles que Blocage et Blocage, puis cliquez sur Actualiser **(ne** pas actualiser la fenêtre de votre navigateur).
 
     :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="URL et verdicts de clic":::
 
-   Le rapport est actualisé pour afficher deux tables d’URL différentes sous l’onglet URL sous le rapport :
+   Le rapport est actualisé pour afficher deux tables d’URL différentes sous **l’onglet URL** sous le rapport :
 
    - **Les URL principales sont** les URL des messages que vous avez filtrés vers le bas et le nombre d’actions de remise de courrier pour chaque URL. Dans l’affichage de courrier d’hameçonnage, cette liste contient généralement des URL légitimes. Les attaquants incluent un mélange d’URL bonnes et mauvaises dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants. Le tableau des URL est trié par nombre total de messages électroniques, mais cette colonne est masquée pour simplifier l’affichage.
 
-   - **Les clics principaux** sont Safe URL enveloppées par des liens qui ont été cliquées, triées par nombre total de clics. Cette colonne n’est pas non plus affichée, pour simplifier l’affichage. Le nombre total par colonne indique le nombre Safe nombre de verdicts de clics de liens pour chaque URL cliquée. Dans l’affichage courrier d’hameçonnage, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, l’affichage peut inclure des URL qui ne sont pas des menaces mais qui figurent dans des messages d’hameçonnage. Les clics d’URL sur les liens déballés ne s’affiche pas ici.
+   - **Les clics principaux** sont Safe URL enveloppées par des liens qui ont été cliquées, triées par nombre total de clics. Cette colonne n’est pas non plus affichée, pour simplifier l’affichage. Le nombre total par colonne indique le nombre Safe nombre de verdicts de clics de liens pour chaque URL cliquée. Dans l’affichage courrier d’hameçonnage, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, l’affichage peut inclure des URL qui ne sont pas des menaces mais qui figurent dans des messages d’hameçonnage. Les clics d’URL sur les liens non ballés ne s’affiche pas ici.
 
    Les deux tableaux d’URL indiquent les PRINCIPALES URL des messages électroniques de hameçonnage par action de remise et emplacement. Les tableaux indiquent les clics d’URL qui ont été bloqués ou visités malgré un avertissement, afin que vous pouvez voir les liens potentiellement malveillants présentés aux utilisateurs et que les utilisateurs ont cliqué. À partir de là, vous pouvez effectuer une analyse plus approfondie. Par exemple, sous le graphique, vous pouvez voir les URL les plus fréquentes dans les messages électroniques bloqués dans l’environnement de votre organisation.
 

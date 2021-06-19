@@ -19,12 +19,12 @@ description: Les administrateurs peuvent découvrir le fonctionnement de l’ape
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6aab20cc9050152b7ba9f86baed887969ad4da0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029014"
+ms.locfileid: "53029668"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Aperçu de l’emprunt d’identité dans Defender pour Office 365
 
@@ -53,7 +53,6 @@ Vous pouvez utiliser l’aperçu de l’emprunt d’identité dans le portail Mi
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à l’aperçu de l’emprunt d’identité sur la page **Anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> . Pour aller directement à la page d’informations **sur l’emprunt d’identité,** utilisez <https://security.microsoft.com/impersonationinsight> .
 
 - Des autorisations doivent vous être attribuées dans le portail Microsoft 365 Defender avant de pouvoir suivre les procédures de cet article :
-
   - **Gestion de l'organisation**
   - **Administrateur de sécurité**
   - **Lecteur sécurité**
@@ -63,7 +62,7 @@ Vous pouvez utiliser l’aperçu de l’emprunt d’identité dans le portail Mi
 
   **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-- Vous activez et configurez la protection contre l’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365. La protection contre l’emprunt d’identité n’est pas activée par défaut. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md).
+- Vous activez et configurez la protection contre l’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365. La protection contre l’emprunt d’identité n’est pas activée par défaut. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’aperçu de l’emprunt d’identité dans Microsoft 365 Defender web
 

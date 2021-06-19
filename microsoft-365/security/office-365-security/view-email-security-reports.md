@@ -19,12 +19,12 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022910"
+ms.locfileid: "53029546"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de sécurité du courrier électronique dans le portail Microsoft 365 Defender
 
@@ -157,7 +157,9 @@ Pour afficher le rapport dans le portail Microsoft  365 Defender, consultez La b
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Affichage des types pour le rapport d’état du flux de messagerie
 
-Lorsque vous ouvrez l’état, **l’onglet Type** est sélectionné par défaut. Par défaut, cet affichage contient un graphique et un tableau de détails configurés avec les filtres suivants :
+![Affichage des types dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-type-view.png)
+
+Dans la page **Rapport d’état du** flux de messagerie, l’onglet **Type** est sélectionné par défaut. Par défaut, cet affichage contient un graphique et un tableau de détails configurés avec les filtres suivants :
 
 - **Date (UTC)** 7 derniers jours.
 - **Direction du courrier**:
@@ -175,7 +177,7 @@ Lorsque vous ouvrez l’état, **l’onglet Type** est sélectionné par défaut
 
 Le graphique est organisé par les valeurs **Type.**
 
-Vous pouvez modifier ces filtres en cliquant sur **Filtre** ou en cliquant sur une valeur dans la légende du graphique.
+Vous pouvez modifier ces filtres en cliquant sur **Filtre.**
 
 Les informations suivantes sont affichées dans le tableau de détails sous le graphique :
 
@@ -200,9 +202,9 @@ Pour l’affichage détaillé, vous ne pouvez exporter les données que pour une
 
 Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de ce jour contiennent plus de 150 000 lignes, plusieurs fichiers .csv seront créés.
 
-![Affichage des types dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-type-view.png)
-
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Affichage direction pour le rapport d’état du flux de messagerie
+
+![Affichage direction dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-direction-view.png)
 
 Si vous cliquez sur **l’onglet Direction,** les mêmes filtres par défaut de **l’affichage Type** sont utilisés.
 
@@ -220,11 +222,11 @@ Pour l’affichage détaillé, vous ne pouvez exporter les données que pour une
 
 Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données de ce jour contiennent plus de 150 000 lignes, plusieurs fichiers .csv seront créés.
 
-![Affichage direction dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-direction-view.png)
-
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Affichage en entonnoir pour le rapport d’état du flux de messagerie
 
 La **vue Entonnoir** vous montre comment les fonctionnalités de protection contre les menaces de courrier électronique de Microsoft filtrent le courrier électronique entrant et sortant dans votre organisation. Il fournit des détails sur le nombre total de messages électroniques et sur la façon dont les fonctionnalités de protection contre les menaces configurées, y compris la protection edge, la protection contre les programmes malveillants, l’anti-hameçonnage, le courrier indésirable et la détection d’usurpation d’accès affectent ce nombre.
+
+![Affichage en entonnoir dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-funnel-view.png)
 
 Si vous  cliquez sur l’onglet Entonnoir, par défaut, cet affichage contient un graphique et un tableau de détails configuré avec les filtres suivants :
 
@@ -289,8 +291,6 @@ Après avoir cliqué **sur Exporter** sous **Options,** vous pouvez sélectionne
 Sous **Date**, choisissez une plage, puis cliquez sur **Appliquer**. Les données des filtres actuels sont exportées vers un .csv de données.
 
 Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données contiennent plus de 150 000 lignes, plusieurs .csv fichiers seront créés.
-
-![Affichage en entonnoir dans le rapport d’état du flux de messagerie](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Affichage technique pour le rapport d’état du flux de messagerie
 
@@ -460,14 +460,23 @@ Le graphique présente les informations suivantes :
 Dans la page **Soumissions,** vous pouvez filtrer le graphique  et le tableau de détails en cliquant sur Filtrer et en sélectionnant une ou plusieurs des valeurs suivantes :
 
 - **Date signalée :** **heure de début** et heure de **fin**
-- **Type de soumission**: **e-mail,** **URL** ou **fichier**
+- **Type de soumission**:
+  - **E-mail**
+  - **URL**
+  - **Fichier**
 - **ID de soumission**
 - **ID de message réseau**
 - **Sender**
 - **Name**
 - **Soumis par**
-- **Raison de l’envoi :** courrier non **indésirable,** **hameçonnage,** **programme malveillant** ou **courrier indésirable**
-- **État de la rescan**: **En attente** ou **terminé**
+- **Raison de l’envoi**:
+  - **Non indésirable**
+  - **Hameçonnage**
+  - **Programme malveillant**
+  - **Courrier indésirable**
+- **État de rescan :**
+  - **Pending**
+  - **Terminée**
 
 Le tableau de détails sous le graphique  présente les mêmes informations  et possède les  mêmes **options** de colonnes De groupe ou de personnalisation que sous l’onglet Soumis pour analyse dans envois de collaboration & courrier \> **électronique.** Pour plus d’informations, voir [Afficher les soumissions d’administrateur à Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
 
@@ -477,7 +486,7 @@ Le tableau de détails sous le graphique  présente les mêmes informations  et 
 
 Le **rapport d’état de la protection** contre les menaces est disponible dans EOP et Defender pour Office 365 ; toutefois, les rapports contiennent des données différentes. Par exemple, les clients EOP peuvent afficher des informations sur les programmes malveillants détectés dans le courrier électronique, mais pas sur les fichiers [malveillants détectés](mdo-for-spo-odb-and-teams.md)par les pièces jointes Safe pour SharePoint, OneDrive et Microsoft Teams .
 
-Le rapport fournit le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses de site web (URL) qui ont été bloqués par le moteur anti-programme malveillant, la purge automatique d’heure zéro [(ZAP)](zero-hour-auto-purge.md)et Defender pour des fonctionnalités de Office 365 telles que les liens [Safe,](safe-links.md)les pièces [jointes Safe](safe-attachments.md)et les fonctionnalités de protection contre l’emprunt d’identité dans les stratégies [anti-hameçonnage.](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si des stratégies d’organisation doivent être ajuster.
+Le rapport fournit le nombre de messages électroniques avec du contenu malveillant, tels que des fichiers ou des adresses de site web (URL) qui ont été bloqués par le moteur anti-programme malveillant, la purge automatique d’heure zéro [(ZAP)](zero-hour-auto-purge.md)et Defender pour des fonctionnalités de Office 365 telles que les liens [Safe,](safe-links.md)les pièces [jointes Safe](safe-attachments.md)et les fonctionnalités de protection contre l’emprunt d’identité dans les stratégies [anti-hameçonnage.](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Vous pouvez utiliser ces informations pour identifier les tendances ou déterminer si les stratégies d’organisation doivent être ajuster.
 
 **Remarque**: il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme cinq messages différents et pas un seul message.
 
@@ -772,7 +781,7 @@ Si vous cliquez **sur Filtre,** vous pouvez spécifier une plage de dates avec l
 
 ## <a name="url-threat-protection-report"></a>Rapport sur la protection contre les menaces d’URL
 
-Le **rapport sur la protection contre les menaces d’URL** est disponible dans Microsoft Defender Office 365. Pour plus d’informations, voir le rapport sur la [protection contre les menaces d’URL.](view-reports-for-mdo.md#url-threat-protection-report)
+Le **rapport sur la protection contre les menaces d’URL** est disponible uniquement dans Microsoft Defender Office 365. Pour plus d’informations, voir le rapport sur la [protection contre les menaces d’URL.](view-reports-for-mdo.md#url-threat-protection-report)
 
 ## <a name="user-reported-messages-report"></a>Rapport des messages signalés par l’utilisateur
 

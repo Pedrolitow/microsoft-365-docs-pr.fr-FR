@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les stratégies anti-hameçonnage disponibles dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 846043be72be741e60c09c85fba14dbf291612a1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964884"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029368"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Stratégies anti-hameçonnage dans Microsoft 365
 
@@ -62,7 +62,7 @@ Pour configurer des stratégies anti-hameçonnage, consultez les articles suivan
 
 - [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
 
-- [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md)
+- [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
 
 Le reste de cet article décrit les paramètres disponibles dans les stratégies anti-hameçonnage dans EOP et Defender pour Office 365.
 
@@ -131,9 +131,6 @@ Les paramètres d’expéditeur non authentifié font partie des paramètres d�
 - Activez le symbole de point d’interrogation de l’expéditeur non authentifié **(?)**: lorsque ce paramètre est activé, un point d’interrogation  est ajouté à la photo de l’expéditeur dans la zone De si le message ne passe pas les vérifications SPF ou DKIM et si le message ne passe pas l’authentification DMARC ou [composite.](email-validation-and-authentication.md#composite-authentication) Lorsque ce paramètre est désactivé, le point d’interrogation n’est pas ajouté à la photo de l’expéditeur.
 
 - Activez la balise « **via**» : lorsque ce paramètre est activé, la balise via (chris@contoso.com via fabrikam.com) est ajoutée dans la zone De si le domaine dans l’adresse De (l’expéditeur du message affiché dans les clients de messagerie) est différent du domaine dans la signature DKIM ou <sup>\*</sup> l’adresse **MAIL FROM.** <u></u> Pour plus d’informations sur ces adresses, voir [une vue d’ensemble des normes de message électronique.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
-
-> [!NOTE]
-> Actuellement, le **paramètre Activer « via » n’est** pas disponible dans toutes les organisations. Si vous n’avez pas le paramètre Activer «  **via** » ? le point d’interrogation et la balise via sont tous deux contrôlés par le paramètre Activer le point d’interrogation de l’expéditeur non authentifié **(?)** dans votre organisation.
 
 Pour empêcher l’ajout du point d’interrogation ou d’une balise à des messages provenant d’expéditeurs spécifiques, vous avez les options suivantes :
 

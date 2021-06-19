@@ -19,12 +19,12 @@ ms.collection:
 description: Quelles sont les meilleures pratiques pour Exchange Online Protection (EOP) et Defender pour Office 365 de sécurité ? Quelles sont les recommandations actuelles pour la protection standard ? Qu’est-ce qui doit être utilisé si vous voulez être plus strict ? Quels sont les extras que vous obtenez si vous utilisez également Defender pour Office 365 ?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c126a777d50fae93efdc618a8ac474dcee7ed75
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 031dd6ffe05c700b65fb56da90a49ed194c17321
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878987"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029512"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité
 
@@ -44,7 +44,7 @@ Pour appliquer automatiquement les paramètres Standard ou Strict aux utilisateu
 > [!NOTE]
 > La règle de courrier indésirable doit être activée sur les boîtes aux lettres pour que le filtrage fonctionne correctement. Il est activé par défaut, mais vous devez le vérifier si le filtrage ne semble pas fonctionner. Pour plus d’informations, voir [Configurer les paramètres du courrier indésirable sur les boîtes aux lettres Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
 
-Cet article décrit les paramètres par défaut, ainsi que les paramètres standard et strict recommandés pour protéger vos utilisateurs. Les tableaux contiennent les paramètres du portail Microsoft 365 Defender et de PowerShell (Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome pour les organisations Exchange Online boîtes aux lettres).
+Cet article décrit les paramètres par défaut, ainsi que les paramètres standard et strict recommandés pour protéger vos utilisateurs. Les tableaux contiennent les paramètres dans le portail Microsoft 365 Defender et PowerShell (Exchange Online PowerShell ou Exchange Online Protection PowerShell autonome pour les organisations Exchange Online boîtes aux lettres).
 
 > [!TIP]
 > Le Office 365 module ORCA (Advanced Threat Protection Recommended Configuration Analyzer) pour PowerShell peut vous aider (administrateurs) à trouver les valeurs actuelles de ces paramètres. Plus précisément, la cmdlet **Get-ORCAReport** génère une évaluation des paramètres d’hygiène des messages anti-courrier indésirable, anti-hameçonnage et autres. Vous pouvez télécharger le module ORCA sur <https://www.powershellgallery.com/packages/ORCA/> .
@@ -61,7 +61,7 @@ Pour créer et configurer des stratégies anti-courrier indésirable, voir Confi
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Action de** détection du courrier indésirable <p> _SpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`||
 |**Action de détection du courrier indésirable** à niveau de confiance élevé <p> _HighConfidenceSpamAction_|**Déplacer le message dans le dossier Courrier indésirable** <p> `MoveToJmf`|**Mettre en quarantaine le message** <p> `Quarantine`|**Mettre en quarantaine le message** <p> `Quarantine`||
@@ -119,7 +119,7 @@ Pour plus d’informations sur les limites d’envoi par défaut dans le service
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Définir une limite de messages externes** <p> _RecipientLimitExternalPerHour_|0|500|400|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
 |**Définir une limite de message interne** <p> _RecipientLimitInternalPerHour_|0|1000|800|La valeur par défaut 0 signifie utiliser les valeurs par défaut du service.|
@@ -136,7 +136,7 @@ Pour créer et configurer des stratégies anti-programme malveillant, voir Confi
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Avertir les destinataires lorsque les messages sont mis en quarantaine en tant que programmes malveillants** <p> _Action_|Non <p> _DeleteMessage_|Non <p> _DeleteMessage_|Non <p> _DeleteMessage_|Si un programme malveillant est détecté dans une pièce jointe, le message est mis en quarantaine et ne peut être libéré que par un administrateur.|
 |**Activer le filtre des pièces jointes courantes** <p> _EnableFileFilter_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`|Ce paramètre met en quarantaine les messages qui contiennent des pièces jointes exécutables en fonction du type de fichier, quel que soit le contenu de la pièce jointe.|
@@ -153,12 +153,12 @@ Pour plus d’informations sur ces paramètres, voir [Paramètres d’usurpation
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Activer la veille contre l’usurpation d’informations** <p> _EnableSpoofIntelligence_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |**Si le courrier électronique est détecté comme usurpant une adresse** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont [](learn-about-spoof-intelligence.md) été automatiquement bloqués comme indiqué dans l’aperçu de l’usurpation d’intelligence ou qui ont été bloqués manuellement dans la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)|
 |**Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’adresse** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook des expéditeurs usurpés non identifiés. Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
-|**Afficher la balise « via »** <p> _EnableViaTag_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM.** <p> Si ce paramètre n’est pas disponible, le point d’interrogation et la balise via sont tous deux contrôlés par l’afficheur **(?)** pour les expéditeurs non authentifiés pour le paramètre d’usurpation d’adresse dans votre organisation. |
+|**Afficher la balise « via »** <p> _EnableViaTag_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM.** <p> Si ce paramètre n’est pas disponible, le point d’interrogation et la balise via sont tous deux contrôlés par la balise **Show (?)** pour les expéditeurs non authentifiés pour le paramètre d’usurpation d’adresse dans votre organisation. |
 |
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender pour la Office 365 sécurité
@@ -169,25 +169,25 @@ Des avantages supplémentaires en matière de sécurité s’offrent à vous ave
 >
 > - La stratégie anti-hameçonnage par défaut dans Microsoft [](set-up-anti-phishing-policies.md#spoof-settings) Defender pour Office 365 protection contre l’usurpation d’adresses et l’intelligence des boîtes aux lettres pour tous les destinataires. Toutefois, les autres fonctionnalités disponibles de [protection](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) contre l’emprunt d’identité et les paramètres avancés ne sont pas [configurés](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ou activés dans la stratégie par défaut. Pour activer toutes les fonctionnalités de protection, modifiez la stratégie anti-hameçonnage par défaut ou créez des stratégies anti-hameçonnage supplémentaires.
 >
-> - Il n’existe aucune stratégie de liens sécurisés ou de pièces jointes sécurisées par défaut qui protège automatiquement tous les destinataires de l’organisation. Pour obtenir les protections, vous devez créer au moins une stratégie de liens sécurisés et une stratégie de pièces jointes sécurisées.
+> - Il n’existe aucune stratégie Safe liens ou Safe pièces jointes par défaut qui protègent automatiquement tous les destinataires de l’organisation. Pour obtenir les protections, vous devez créer au moins une stratégie Safe liens et Safe pièces jointes.
 >
-> - [Les pièces jointes SharePoint, OneDrive,](mdo-for-spo-odb-and-teams.md) la protection Microsoft Teams et la protection des [documents](safe-docs.md) sécurisés n’ont aucune dépendance vis-à-vis des stratégies de liens sécurisés.
+> - Safe pièces jointes pour [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md) et la protection Microsoft Teams et [la](safe-docs.md) protection Safe Documents ne sont pas dépendantes des stratégies Safe liens.
 
 Si votre abonnement inclut Microsoft Defender pour Office 365 ou si vous avez acheté Defender pour Office 365 en tant que modules, définissez les configurations Standard ou Strict suivantes.
 
 ### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Paramètres de stratégie anti-hameçonnage dans Microsoft Defender pour les Office 365
 
-Les clients EOP obtiennent un anti-hameçonnage de base comme décrit précédemment, mais Microsoft Defender pour Office 365 inclut davantage de fonctionnalités et de contrôle pour vous aider à prévenir, détecter et corriger les attaques. Pour créer et configurer ces stratégies, voir Configurer des stratégies [anti-hameçonnage](configure-atp-anti-phishing-policies.md)dans Defender pour Office 365 .
+Les clients EOP obtiennent un anti-hameçonnage de base comme décrit précédemment, mais Microsoft Defender pour Office 365 inclut davantage de fonctionnalités et de contrôle pour vous aider à prévenir, détecter et corriger les attaques. Pour créer et configurer ces stratégies, voir Configurer des stratégies [anti-hameçonnage](configure-mdo-anti-phishing-policies.md)dans Defender pour Office 365 .
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres d’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
-Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d’identité dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 . Pour configurer ces paramètres, voir Configurer des stratégies [anti-hameçonnage](configure-atp-anti-phishing-policies.md)dans Defender pour Office 365 .
+Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d’identité dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 . Pour configurer ces paramètres, voir Configurer des stratégies [anti-hameçonnage](configure-mdo-anti-phishing-policies.md)dans Defender pour Office 365 .
 
 <br>
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |Utilisateurs protégés (expéditeurs) : **activer la protection des utilisateurs** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Désactivé <p> `$false` <p> aucune|Activé <p> `$true` <p> \<list of users\>|Activé <p> `$true` <p> \<list of users\>|En fonction de votre organisation, nous vous recommandons d’ajouter des utilisateurs (expéditeurs de messages) dans les rôles clés. En interne, les expéditeurs protégés peuvent être votre PDG, votre directeur financier et d’autres cadres supérieurs. En externe, les expéditeurs protégés peuvent inclure des membres du conseil ou votre conseil d’administration.|
 |Utilisateurs protégés : si le message est détecté comme un utilisateur dont **l’identité est usurpée** <p> _TargetedUserProtectionAction_|**Ne pas appliquer d’action** <p> `NoAction`|**Mettre le message en quarantaine** <p> `Quarantine`|**Mettre le message en quarantaine** <p> `Quarantine`||
@@ -211,34 +211,34 @@ Notez que ces paramètres sont les mêmes que ceux disponibles dans les paramèt
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Activer la veille contre l’usurpation d’informations** <p> _EnableSpoofIntelligence_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |**Si le courrier électronique est détecté comme usurpant une adresse** <p> _AuthenticationFailAction_|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Déplacer le message vers les dossiers Courrier indésirable des destinataires** <p> `MoveToJmf`|**Mettre le message en quarantaine** <p> `Quarantine`|Ce paramètre s’applique aux expéditeurs usurpés qui ont [](learn-about-spoof-intelligence.md) été automatiquement bloqués comme indiqué dans l’aperçu de l’usurpation d’intelligence ou qui ont été bloqués manuellement dans la liste d’adresses client [autoriser/bloquer.](tenant-allow-block-list.md)|
 |**Afficher (?) pour les expéditeurs non authentifiés pour l’usurpation d’adresse** <p> _EnableUnauthenticatedSender_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute un point d’interrogation (?) à la photo de l’expéditeur dans Outlook des expéditeurs usurpés non identifiés. Si vous souhaitez en savoir plus, consultez l’article [Paramètres d’usurpation dans les stratégies anti-hameçonnage](set-up-anti-phishing-policies.md).|
-|**Afficher la balise « via »** <p> _EnableViaTag_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM.** <p> Si ce paramètre n’est pas disponible, le point d’interrogation et la balise via sont tous deux contrôlés par l’afficheur **(?)** pour les expéditeurs non authentifiés pour le paramètre d’usurpation d’adresse dans votre organisation. |
+|**Afficher la balise « via »** <p> _EnableViaTag_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM.** <p> Si ce paramètre n’est pas disponible, le point d’interrogation et la balise via sont tous deux contrôlés par la balise **Show (?)** pour les expéditeurs non authentifiés pour le paramètre d’usurpation d’adresse dans votre organisation. |
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Paramètres avancés dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
-Pour plus d’informations sur ce paramètre, voir Seuils d’hameçonnage avancés dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 . Pour configurer ce paramètre, voir Configurer des [stratégies anti-hameçonnage dans Defender pour Office 365](configure-atp-anti-phishing-policies.md).
+Pour plus d’informations sur ce paramètre, voir Seuils d’hameçonnage avancés dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 . Pour configurer ce paramètre, voir Configurer des stratégies [anti-hameçonnage dans Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 <br>
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Seuil de courrier d’hameçonnage** <p> _PhishThresholdLevel_|**1 - Standard** <p> `1`|**2 - Agressif** <p> `2`|**3 - Plus agressif** <p> `3`||
 |
 
-### <a name="safe-links-settings"></a>Paramètres de liens sécurisés
+### <a name="safe-links-settings"></a>Safe Paramètres des liens
 
-La stratégie Liens sécurisés dans Defender pour Office 365 inclut des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies de liens sécurisés actifs, ainsi que des paramètres spécifiques à chaque stratégie de liens sécurisés. Pour plus d’informations, [voir Liens sécurisés dans Defender pour Office 365](safe-links.md).
+Safe Les liens dans Defender pour Office 365 incluent des paramètres globaux qui s’appliquent à tous les utilisateurs inclus dans les stratégies actives de liens Safe, ainsi que des paramètres spécifiques à chaque stratégie de liens Safe. Pour plus d’informations, [voir Safe liens dans Defender pour Office 365](safe-links.md).
 
-#### <a name="global-settings-for-safe-links"></a>Paramètres globaux des liens sécurisés
+#### <a name="global-settings-for-safe-links"></a>Paramètres globaux des liens Safe web
 
-Pour configurer ces paramètres, voir Configurer les paramètres globaux des liens [sécurisés dans Defender pour Office 365](configure-global-settings-for-safe-links.md).
+Pour configurer ces paramètres, voir Configurer les [paramètres](configure-global-settings-for-safe-links.md)globaux pour les Safe dans Defender pour Office 365 .
 
 Dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
@@ -246,44 +246,44 @@ Dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](/powershell/modu
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Utiliser des liens sécurisés dans : Office 365 applications** <p> _EnableSafeLinksForO365Clients_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Utilisez des liens sécurisés dans les applications Office 365 de bureau et mobiles (iOS et Android). Pour plus d’informations, voir paramètres de liens [sécurisés pour Office 365 applications.](safe-links.md#safe-links-settings-for-office-365-apps)|
+|**Utiliser Safe liens vers : Office 365 applications** <p> _EnableSafeLinksForO365Clients_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`|Utilisez Safe dans les applications de bureau et mobiles (iOS et Android) Office 365 pris en charge. Pour plus d’informations, [voir Safe liens pour les Office 365 applications.](safe-links.md#safe-links-settings-for-office-365-apps)|
 |**Ne pas suivre le moment où les utilisateurs cliquent sur les liens protégés Office 365 applications** <p> _TrackClicks_|Activé <p> `$false`|Désactivé <p> `$true`|Désactivé <p> `$true`|La définition de ce paramètre (paramètre _TrackClicks_ sur ) suit les clics de l’utilisateur `$true` dans les applications Office 365 pris en charge.|
 |**Ne pas laisser les utilisateurs accéder à l’URL d’origine dans Office 365 applications** <p> _AllowClickThrough_|Activé <p> `$false`|Activé <p> `$false`|Activé <p> `$false`|L’turning on this setting (setting _AllowClickThrough_ to `$false` ) prevents click through to the original URL in supported Office 365 apps.|
 |
 
-#### <a name="safe-links-policy-settings"></a>Paramètres de stratégie de liens sécurisés
+#### <a name="safe-links-policy-settings"></a>Safe Paramètres de stratégie de liens
 
-Pour configurer ces paramètres, voir [Configurer des stratégies](set-up-safe-links-policies.md)de liens sécurisés dans Microsoft Defender pour Office 365 .
+Pour configurer ces paramètres, voir Configurer les stratégies Safe [liens dans Microsoft Defender pour Office 365](set-up-safe-links-policies.md).
 
 Dans PowerShell, vous utilisez les cmdlets [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) et [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
 > [!NOTE]
-> Comme décrit précédemment, il n’existe aucune stratégie de liens sécurisés par défaut. Les valeurs de la colonne Par défaut sont les valeurs par défaut des nouvelles stratégies de liens sécurisés que vous créez.
+> Comme décrit précédemment, il n’existe aucune stratégie de liens Safe par défaut. Les valeurs de la colonne Par défaut sont les valeurs par défaut des nouvelles stratégies Safe liens que vous créez.
 
 <br>
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages** <p> _IsEnabled_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Sélectionnez l’action pour les URL inconnues ou potentiellement malveillantes dans Microsoft Teams** <p> _EnableSafeLinksForTeams_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers** <p> _ScanUrls_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Attendre la fin de l’analyse de l’URL avant de remettre le message** <p> _DeliverMessageAfterScan_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
-|**Appliquer des liens sûrs aux messages électroniques envoyés au sein de l’organisation** <p> _EnableForInternalSenders_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
+|**Appliquer Safe liens vers les messages électroniques envoyés au sein de l’organisation** <p> _EnableForInternalSenders_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`||
 |**Ne pas suivre les clics de l’utilisateur** <p> _DoNotTrackUserClicks_|Désactivé <p> `$false`|Désactivé <p> `$false`|Désactivé <p> `$false`|La dés off off this setting (setting _DoNotTrackUserClicks_ to `$false` ) suit les clics des utilisateurs.|
 |**Ne pas autoriser les utilisateurs à accéder à l’URL d’origine** <p> _DoNotAllowClickThrough_|Désactivé <p> `$false`|Activé <p> `$true`|Activé <p> `$true`|L’turning on this setting (setting _DoNotAllowClickThrough_ to `$true` ) prevents click through to the original URL.|
 |
 
-### <a name="safe-attachments-settings"></a>Paramètres des pièces jointes sécurisées
+### <a name="safe-attachments-settings"></a>Safe Paramètres des pièces jointes
 
-Les pièces jointes sécurisées dans Microsoft Defender pour Office 365 incluent les paramètres globaux qui n’ont aucune relation avec les stratégies de pièces jointes sécurisées et les paramètres spécifiques à chaque stratégie de liens sécurisés. Pour plus d’informations, [voir Pièces jointes sécurisées dans Defender pour Office 365](safe-attachments.md).
+Safe Les pièces jointes dans Microsoft Defender pour Office 365 comprennent les paramètres globaux qui n’ont aucune relation avec les stratégies de pièces jointes Safe et les paramètres spécifiques à chaque stratégie de liens Safe. Pour plus d’informations, [voir Safe pièces jointes dans Defender pour Office 365](safe-attachments.md).
 
-#### <a name="global-settings-for-safe-attachments"></a>Paramètres globaux des pièces jointes sécurisées
+#### <a name="global-settings-for-safe-attachments"></a>Paramètres globaux pour Safe pièces jointes
 
-Pour configurer ces paramètres, voir Activer les pièces [jointes sécurisées pour SharePoint, OneDrive et](turn-on-mdo-for-spo-odb-and-teams.md) Microsoft Teams et documents sécurisés dans [Microsoft 365 E5](safe-docs.md).
+Pour configurer ces paramètres, voir Activer les pièces [jointes Safe](turn-on-mdo-for-spo-odb-and-teams.md) pour les documents SharePoint, OneDrive et Microsoft Teams et [Safe dans Microsoft 365 E5](safe-docs.md).
 
 Dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) pour ces paramètres.
 
@@ -291,29 +291,29 @@ Dans PowerShell, vous utilisez la cmdlet [Set-AtpPolicyForO365](/powershell/modu
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
 |**Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|Activé <p> `$true`|Activé <p> `$true`||
-|**Activer les documents sécurisés pour Office clients** <p> _EnableSafeDocs_|Activé <p> `$true`|Activé <p> `$true`|Ce paramètre n’est disponible qu’avec Microsoft 365 E5 ou Microsoft 365 E5 Sécurité licences. Pour plus d’informations, [voir Documents sécurisés dans Microsoft Defender pour Office 365](safe-docs.md).|
-|**Autoriser les utilisateurs à cliquer dans le affichage protégé même si les documents sécurisés ont identifié le fichier comme malveillant** <p> _AllowSafeDocsOpen_|Désactivé <p> `$false`|Désactivé <p> `$false`|Ce paramètre est lié aux documents sécurisés.|
+|**Activer les Safe documents pour Office clients** <p> _EnableSafeDocs_|Activé <p> `$true`|Activé <p> `$true`|Ce paramètre n’est disponible qu’avec Microsoft 365 E5 ou Microsoft 365 E5 Sécurité licences. Pour plus d’informations, [Safe documents dans Microsoft Defender pour Office 365](safe-docs.md).|
+|**Autoriser les utilisateurs à cliquer dans le affichage protégé même si Safe documents ont identifié le fichier comme malveillant** <p> _AllowSafeDocsOpen_|Désactivé <p> `$false`|Désactivé <p> `$false`|Ce paramètre est lié à Safe Documents.|
 |
 
-#### <a name="safe-attachments-policy-settings"></a>Paramètres de stratégie de pièces jointes sécurisées
+#### <a name="safe-attachments-policy-settings"></a>Safe Paramètres de stratégie de pièces jointes
 
-Pour configurer ces paramètres, voir Configurer des stratégies de pièces [jointes sécurisées dans Defender pour Office 365](set-up-safe-attachments-policies.md).
+Pour configurer ces paramètres, voir Configurer les [stratégies Safe pièces jointes dans Defender pour Office 365](set-up-safe-attachments-policies.md).
 
 Dans PowerShell, vous utilisez les cmdlets [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy) et [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safelinkspolicy) pour ces paramètres.
 
 > [!NOTE]
-> Comme décrit précédemment, il n’existe aucune stratégie de pièces jointes sécurisées par défaut. Les valeurs de la colonne Par défaut sont les valeurs par défaut des nouvelles stratégies de pièces jointes sécurisées que vous créez.
+> Comme décrit précédemment, il n’existe aucune stratégie Safe pièces jointes par défaut. Les valeurs de la colonne Par défaut sont les valeurs par défaut des nouvelles stratégies Safe pièces jointes que vous créez.
 
 <br>
 
 ****
 
-|Nom de la fonctionnalité de sécurité|Défaut|Standard|Strict|Commentaire|
+|Nom de la fonctionnalité de sécurité|Par défaut|Standard|Strict|Commentaire|
 |---|:---:|:---:|:---:|---|
-|**Réponse aux programmes malveillants inconnus pour les pièces jointes sécurisées** <p> _Action_|Bloquer <p> `Block`|Bloquer <p> `Block`|Bloquer <p> `Block`||
+|**Safe Réponse aux programmes malveillants inconnus pour les pièces jointes** <p> _Action_|Bloquer <p> `Block`|Bloquer <p> `Block`|Bloquer <p> `Block`||
 |**Rediriger la pièce jointe lors de la détection** : activer la **redirection** <p> _Redirect_ <p> _RedirectAddress_|Hors service et aucune adresse de messagerie n’est spécifiée. <p> `$true` <p> aucune|On, and specify an email address. <p> `$true` <p> une adresse e-mail|On, and specify an email address. <p> `$true` <p> une adresse e-mail|Rediriger les messages vers un administrateur de sécurité pour révision.|
 |**Appliquez la sélection ci-dessus si l’analyse des programmes malveillants pour les pièces jointes arrive à son moment ou si une erreur se produit.** <p> _ActionOnError_|Activé <p> `$true`|Activé <p> `$true`|Activé <p> `$true`||
 |

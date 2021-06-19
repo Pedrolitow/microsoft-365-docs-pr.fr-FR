@@ -19,12 +19,12 @@ description: Les administrateurs peuvent en savoir plus sur les rapports de flux
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985503"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029450"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Afficher les rapports de flux de messagerie dans le tableau de bord Rapports du Centre de sécurité & conformité
 
@@ -34,6 +34,9 @@ ms.locfileid: "52985503"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> La majorité des rapports décrits dans cette rubrique sont disponibles dans le Centre d’administration Exchange (EAC). Pour plus d’informations, voir [Rapports de flux de messagerie dans le nouveau Centre d’administration Exchange.](/exchange/monitoring/mail-flow-reports/mail-flow-reports) Le [rapport des règles de transport Exchange](view-email-security-reports.md#exchange-transport-rule-report) est disponible dans le portail Microsoft 365 Defender.
 
 Outre les rapports de flux de [](mail-flow-insights-v2.md) messagerie disponibles dans le tableau de bord de flux de messagerie dans le Centre de sécurité & conformité, plusieurs rapports de flux de messagerie supplémentaires sont disponibles dans le tableau de bord Rapports pour vous aider à surveiller votre organisation Microsoft 365.
 
@@ -166,7 +169,7 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 
 ## <a name="forwarding-report"></a>Rapport de forwarding
 
-Le **rapport de forwarding** affiche les messages automatiquement transmis par votre organisation à des domaines externes à partir de boîtes aux lettres Exchange Online. Les messages transmis peuvent présenter un risque de sécurité ou de conformité, et peuvent indiquer un compte compromis.
+Le **rapport de forwarding** affiche les messages automatiquement transmis par votre organisation à des domaines externes à partir Exchange Online boîtes aux lettres. Les messages transmis peuvent présenter un risque de sécurité ou de conformité, et peuvent indiquer un compte compromis.
 
 Pour afficher le rapport, ouvrez le Centre de  sécurité [& conformité,](https://protection.office.com)allez au Tableau de bord des rapports \>  et sélectionnez Rapport **de report.** Pour aller directement dans le rapport, ouvrez <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -246,7 +249,7 @@ Vous pouvez modifier ces filtres en cliquant sur **Filtre** ou en cliquant sur u
 La table de données contient les informations suivantes :
 
 - **Direction**
-- **Type**
+- **Type (Type)**
 - **24 heures**
 - **3 jours**
 - **7 jours**
@@ -421,7 +424,9 @@ Chaque fichier .csv exporté est limité à 150 000 lignes. Si les données cont
 
 ## <a name="sent-and-received-email-report"></a>Rapport de courrier électronique envoyé et reçu
 
-Le **rapport de** courrier électronique envoyé et reçu est un rapport intelligent qui affiche des informations sur le courrier électronique entrant et sortant, y compris les détections de courrier indésirable, les programmes malveillants et les messages électroniques identifiés comme « bons ». La différence entre ce [](#mailflow-status-report) rapport et le rapport d’état du flux de messagerie est la suivante : ce rapport n’inclut pas de données sur les messages bloqués par la protection Edge. Il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme un seul message.
+Le **rapport de** courrier électronique envoyé et reçu est un rapport intelligent qui affiche des informations sur le courrier électronique entrant et sortant, y compris les détections de courrier indésirable, les programmes malveillants et les messages électroniques identifiés comme « bons ». La différence entre ce [](#mailflow-status-report) rapport et le rapport d’état du flux de messagerie est la suivante : ce rapport n’inclut pas de données sur les messages bloqués par la protection Edge.
+
+**Remarque**: il est important de comprendre que si un message est envoyé à cinq destinataires, nous le compterons comme un seul message.
 
 L’affichage agrégé et l’affichage détaillé du rapport autorisent 90 jours de filtrage.
 
@@ -467,7 +472,7 @@ Pour revenir à l’affichage du rapport, cliquez **sur Afficher le rapport.**
 Si vous cliquez **sur Afficher les détails dans** le tableau Décomposer par : **Direction** ou Descendre en mode **Direction,** les informations suivantes sont affichées :
 
 - **Date (UTC)**
-- **Type**
+- **Type (Type)**
 - **Direction**
 - **Nombre de messages**
 

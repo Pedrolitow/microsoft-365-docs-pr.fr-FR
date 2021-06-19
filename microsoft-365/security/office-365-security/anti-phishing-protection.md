@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538338"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029236"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
@@ -53,7 +53,7 @@ Avec la complexité croissante des attaques, il est même difficile pour les uti
 
 EOP (autrement dit, Microsoft 365 organisations sans Microsoft Defender pour Office 365) contient des fonctionnalités qui peuvent aider à protéger votre organisation contre les menaces de hameçonnage :
 
-- **Veille contre** l’usurpation d’adresse : utilisez la veille contre l’usurpation d’adresse pour examiner les expéditeurs usurpés détectés dans les messages provenant de domaines externes et internes, et autoriser ou bloquer manuellement ces expéditeurs détectés. Si vous souhaitez en savoir plus, consultez [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
+- **Veille contre** l’usurpation d’adresse : utilisez la veille contre l’usurpation d’informations pour examiner les expéditeurs usurpés détectés dans les messages provenant de domaines externes et internes, et autoriser ou bloquer manuellement ces expéditeurs détectés. Si vous souhaitez en savoir plus, consultez [Informations sur la veille contre l’usurpation d’identité dans EOP](learn-about-spoof-intelligence.md).
 
 - Stratégies **anti-hameçonnage** dans EOP : activer ou désactiver la veille contre l’usurpation d’identité, activer ou désactiver l’identification des expéditeurs non authentifiés dans Outlook et spécifier l’action pour les expéditeurs usurpés bloqués. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans EOP.](configure-anti-phishing-policies-eop.md)
 
@@ -65,7 +65,7 @@ EOP (autrement dit, Microsoft 365 organisations sans Microsoft Defender pour Off
 
 Microsoft Defender pour Office 365 contient des fonctionnalités supplémentaires et plus avancées de protection contre le phishing :
 
-- Stratégies **anti-hameçonnage** dans Microsoft Defender pour Office 365 : configurer les paramètres de protection contre l’emprunt d’identité pour des expéditeurs et domaines d’expéditeur de messages spécifiques, des paramètres d’intelligence de boîte aux lettres et des seuils d’hameçonnage avancés réglables. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md). Pour plus d’informations sur les différences entre les stratégies anti-hameçonnage dans EOP et les stratégies anti-hameçonnage dans Defender pour Office 365, voir stratégies [anti-hameçonnage](set-up-anti-phishing-policies.md)dans Microsoft 365 .
+- Stratégies **anti-hameçonnage** dans Microsoft Defender pour Office 365 : configurer les paramètres de protection contre l’emprunt d’identité pour des expéditeurs et domaines d’expéditeur de messages spécifiques, des paramètres d’intelligence de boîte aux lettres et des seuils d’hameçonnage avancés réglables. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md). Pour plus d’informations sur les différences entre les stratégies anti-hameçonnage dans EOP et les stratégies anti-hameçonnage dans Defender pour Office 365, voir stratégies [anti-hameçonnage](set-up-anti-phishing-policies.md)dans Microsoft 365 .
 
 - **Affichages campagne**: l’apprentissage automatique et d’autres heuristiques identifient et analysent les messages impliqués dans des attaques par hameçonnage coordonnées contre l’ensemble du service et de votre organisation. Pour plus d’informations, [voir Affichages des campagnes dans Microsoft Defender pour Office 365](campaigns.md).
 

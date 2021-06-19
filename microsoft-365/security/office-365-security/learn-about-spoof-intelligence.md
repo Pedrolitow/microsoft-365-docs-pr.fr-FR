@@ -20,12 +20,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les informations sur l’usurpation d’Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94dc1e438f913c1103154afb8803ef4cf89f64af
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 08b9586edf565c4f69c51f732511d3a0956ae500
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028810"
+ms.locfileid: "53029248"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Informations sur l’usurpation d’intelligence dans EOP
 
@@ -53,16 +53,13 @@ Lorsqu’un expéditeur usurpe une adresse de messagerie, il semble qu’il s’
   - L’expéditeur figure sur une liste de diffusion (également appelée liste de discussion) et la liste de diffusion relaie le courrier électronique de l’expéditeur d’origine à tous les participants de la liste de diffusion.
   - Une société externe envoie du courrier électronique pour le compte d’une autre société (par exemple, un rapport automatisé ou une société de logiciels en tant que service).
 
-
 Vous pouvez  utiliser la veille contre l’usurpation d’identité dans le portail Microsoft 365 Defender pour identifier rapidement les expéditeurs usurpés qui vous envoient légitimement des messages électroniques non authentifiés (messages provenant de domaines ne réussissant pas les vérifications SPF, DKIM ou DMARC) et autoriser manuellement ces expéditeurs.
-
 
 En permettant aux expéditeurs connus d’envoyer des messages usurpés à partir d’emplacements connus, vous pouvez réduire les faux positifs (e-mail de qualité marqué comme faux). En surveillant les expéditeurs usurpés autorisés, vous fournissez une couche de sécurité supplémentaire pour empêcher les messages non sécurisés d’arriver dans votre organisation.
 
 De même, vous pouvez examiner les expéditeurs usurpés qui ont été autorisés par la veille contre l’usurpation d’informations et bloquer manuellement ces expéditeurs à partir de la veille contre l’usurpation d’informations.
 
 Le reste de cet article explique comment utiliser la veille contre l’usurpation d’informations dans le portail Microsoft 365 Defender et dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 avec des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
-
 
 > [!NOTE]
 >
@@ -89,7 +86,7 @@ Le reste de cet article explique comment utiliser la veille contre l’usurpatio
   - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
-- Vous activez et désactivez la veille contre l’usurpation d’Office 365. La veille contre l’usurpation d’informations est activée par défaut. Pour plus d’informations, voir [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) or [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+- Vous activez et désactivez la veille contre l’usurpation d’Office 365. La veille contre l’usurpation d’informations est activée par défaut. Pour plus d’informations, voir [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) or [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 - Pour obtenir nos paramètres recommandés pour la veille contre l’usurpation d’adresse, consultez les paramètres de stratégie [anti-hameçonnage EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)
 
@@ -126,7 +123,7 @@ Dans la page **Informations** sur l’usurpation d’informations sur l’usurpa
   - **Externe**: l’expéditeur usurpé se trouve dans un domaine externe.
 - **Action**: cette valeur est **autorisée ou** **bloquée**:
   - **Autorisé**: le domaine a échoué aux vérifications explicites de l’authentification de courrier [électronique SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)et [DMARC](use-dmarc-to-validate-email.md). Toutefois, le domaine a réussi nos vérifications d’authentification de messagerie implicites[(authentification composite).](email-validation-and-authentication.md#composite-authentication) Par conséquent, aucune action anti-usurpation n’a été prise sur le message.
-  - **Bloqué**: les messages provenant de la  combinaison du domaine usurpé et de l’infrastructure d’envoi sont marqués comme étant mauvais par la veille contre l’usurpation d’informations. L’action entreprise sur les messages usurpés est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer **le message** vers le dossier Courrier indésirable). Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md).
+  - **Bloqué**: les messages provenant de la  combinaison du domaine usurpé et de l’infrastructure d’envoi sont marqués comme étant mauvais par la veille contre l’usurpation d’informations. L’action entreprise sur les messages usurpés est contrôlée par la stratégie anti-hameçonnage par défaut ou les stratégies anti-hameçonnage personnalisées (la valeur par défaut est Déplacer **le message** vers le dossier Courrier indésirable). Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 Vous pouvez cliquer sur les en-tête de colonne sélectionnés pour trier les résultats.
 
