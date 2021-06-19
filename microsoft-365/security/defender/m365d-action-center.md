@@ -20,19 +20,19 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: df3ea2d4df0b7a5bedbbabf19e97d4fddc4c2646
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: ee075f34087d28fc9326d408622d05f363bba768
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782980"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022586"
 ---
 # <a name="the-action-center"></a>Le Centre de notifications
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Le centre de sécurité fournit une expérience de « volet unique » pour les tâches d’incident et d’alerte telles que :
@@ -41,7 +41,7 @@ Le centre de sécurité fournit une expérience de « volet unique » pour les t
 - Affichage d’un journal d’audit des actions de correction déjà approuvées.
 - Évaluation des actions de correction terminées.
 
-Étant donné que le centre de sécurité offre une vue complète de Microsoft 365 Defender au travail, votre équipe des opérations de sécurité peut fonctionner plus efficacement.
+Étant donné que le centre de gestion des actions offre une vue complète Microsoft 365 Defender au travail, votre équipe des opérations de sécurité peut fonctionner plus efficacement.
 
 ## <a name="the-unified-action-center"></a>Centre de l’action unifiée
 
@@ -51,9 +51,9 @@ Le centre de actions unifié répertorie les actions de correction en attente et
 
 Par exemple : 
 
-- Si vous utilisiez précédemment le Centre Office 365 sécurité & conformité ( ), essayez le centre de sécurité unifié dans le centre de sécurité [https://protection.office.com](https://protection.office.com) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Si vous utilisiez le centre de Centre de sécurité Microsoft Defender ( ), essayez le centre de sécurité unifié du centre de sécurité [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Si vous utilisiez déjà le centre de sécurité Microsoft 365 ( ), vous verrez plusieurs améliorations dans le centre [https://security.microsoft.com](https://security.microsoft.com) de l’action ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Si vous utilisiez précédemment le Centre Office 365 sécurité & conformité ( ), essayez le centre de actions unifié dans le [https://protection.office.com](https://protection.office.com) portail Microsoft 365 Defender ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Si vous utilisiez le centre de actions dans le Centre de sécurité Microsoft Defender ( ), essayez le centre de actions unifié dans [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) le portail Microsoft 365 Defender ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Si vous utilisiez déjà le portail Microsoft 365 Defender ( ), vous verrez plusieurs améliorations dans le centre de actions [https://security.microsoft.com](https://security.microsoft.com) ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 
 Le centre de mise en œuvre unifié regroupe les actions de correction dans Defender pour Endpoint et Defender pour Office 365. Il définit un langage commun pour toutes les actions de correction et fournit une expérience d’examen unifiée. Votre équipe des opérations de sécurité dispose d’une expérience de « volet unique » pour afficher et gérer les actions de correction.  
 
@@ -126,8 +126,8 @@ Pour effectuer des tâches, telles que l’approbation ou le rejet des actions e
 
 |Action de correction |Rôles et des autorisations requis |
 |--|----|
-|Correction de Microsoft Defender pour les points de terminaison (appareils) |**Rôle d’administrateur** de sécurité attribué dans Azure Active Directory (Azure AD) ( ) ou dans [https://portal.azure.com](https://portal.azure.com) le centre d Microsoft 365'administration ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- ou ---<br/>**Rôle des actions de** correction actives attribué dans Microsoft Defender pour le point de terminaison <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations de rôle d’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle (Microsoft Defender pour point de terminaison)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender pour la correction Office 365 (contenu Office courrier électronique)  |**Rôle d’administrateur** de la sécurité attribué dans Azure AD () ou dans [https://portal.azure.com](https://portal.azure.com) le centre d’administration Microsoft 365 de sécurité ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- et --- <br/>**Rôle de recherche et** de purge attribué dans le Centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANT :** si  le rôle Administrateur de la sécurité est attribué uniquement dans le Centre de sécurité & conformité Office 365 ( ), vous ne pourrez pas accéder aux fonctionnalités du centre de sécurité ou de [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. Le rôle Administrateur **de** la sécurité doit être attribué dans Azure AD ou le centre d’administration Microsoft 365 de sécurité. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations de rôle d’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Correction de Microsoft Defender pour les points de terminaison (appareils) |**Rôle d’administrateur** de sécurité attribué dans Azure Active Directory (Azure AD) ( ) ou dans le [https://portal.azure.com](https://portal.azure.com) Centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- ou ---<br/>**Rôle des actions de** correction actives attribué dans Microsoft Defender pour le point de terminaison <br/> <br/> Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations de rôle d’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Créer et gérer des rôles pour le contrôle d’accès basé sur un rôle (Microsoft Defender pour point de terminaison)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender pour la correction Office 365 (contenu Office courrier électronique)  |**Rôle d’administrateur** de la sécurité attribué dans Azure AD ( ) ou dans [https://portal.azure.com](https://portal.azure.com) le Centre d’administration Microsoft 365 ( [https://admin.microsoft.com](https://admin.microsoft.com) )<br/>--- et --- <br/>**Rôle de recherche et** de purge attribué dans le Centre de sécurité & conformité ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANT :** si  le rôle Administrateur de la sécurité est attribué uniquement dans le Centre de sécurité & conformité Office 365 ( ), vous ne serez pas en mesure d’accéder aux fonctionnalités du centre de Microsoft 365 Defender de [https://protection.office.com](https://protection.office.com) sécurité. Le rôle Administrateur de la sécurité **doit** être attribué dans Azure AD ou le Centre d’administration Microsoft 365. <br/><br/>Pour en savoir plus, consultez les ressources suivantes : <br/>- [Autorisations de rôle d’administrateur dans Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorisations dans le Centre de sécurité & conformité](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Les utilisateurs qui ont le **rôle Administrateur général** attribué dans Azure AD peuvent approuver ou rejeter toute action en attente dans le centre de gestion des actions. Toutefois, en tant que meilleure pratique, votre organisation  doit limiter le nombre de personnes à qui le rôle Administrateur général est attribué. Nous vous recommandons d’utiliser les **rôles Administrateur** de la sécurité, **Actions** de correction actives et Recherche et **Purge** répertoriés dans le tableau précédent pour les autorisations du Centre de sécurité.

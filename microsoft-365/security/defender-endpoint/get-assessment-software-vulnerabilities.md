@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea05d37ebcd0953dd109f524775a55cf8d6b3683
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984963"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022869"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exporter l’évaluation des vulnérabilités logicielles par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -39,16 +39,16 @@ Renvoie toutes les vulnérabilités logicielles connues et leurs détails pour t
 
 Il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être très importante, il existe deux façons de les récupérer :
 
-1. [Exporter l’évaluation des vulnérabilités logicielles OData](#1-export-software-vulnerabilities-assessment-odata)  L’API pulls all data in your organization as Json responses, following the OData protocol. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 K appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
+1. [Exporter la réponse JSON de l’évaluation **des vulnérabilités logicielles**](#1-export-software-vulnerabilities-assessment-json-response)  L’API tire toutes les données de votre organisation en tant que réponses Json. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 K appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
-2. [Exporter l’évaluation des vulnérabilités logicielles via des fichiers](#2-export-software-vulnerabilities-assessment-via-files) Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Les fichiers via les fichiers sont recommandés pour les grandes organisations, avec plus de 100 Périphériques K. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de Azure Storage. Cette API vous permet de télécharger toutes vos données à partir Azure Storage comme suit :
+2. [Exporter l’évaluation des vulnérabilités **logicielles via des fichiers**](#2-export-software-vulnerabilities-assessment-via-files) Cette solution d’API permet d’tirer plus rapidement et de manière plus fiable des données plus volumineuses. Les fichiers via les fichiers sont recommandés pour les grandes organisations, avec plus de 100 Périphériques K. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de Azure Storage. Cette API vous permet de télécharger toutes vos données à partir Azure Storage comme suit :
 
    - Appelez l’API pour obtenir la liste des URL de téléchargement avec toutes les données de votre organisation.
 
    - Téléchargez tous les fichiers à l’aide des URL de téléchargement et traiter les données comme vous le souhaitez.
 
-3. [Évaluation des vulnérabilités logicielles d’exportation delta OData](#3-delta-export-software-vulnerabilities-assessment-odata)  Renvoie un tableau avec une entrée pour chaque combinaison unique de : DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId et EventTimestamp.
-L’API pulls data in your organization as Json responses, following the OData protocol. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants. <br><br> Contrairement à l’évaluation complète des vulnérabilités logicielles (OData), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par périphérique, l’appel de l’API OData d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel de l’API OData d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées ? » ou « combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? » <br><br> Étant donné que l’appel de l’API OData d’exportation delta pour les vulnérabilités logicielles renvoie des données uniquement pour une plage de dates ciblée, il n’est pas considéré comme _une exportation complète._
+3. [Réponse JSON de l’évaluation des vulnérabilités **logicielles d’exportation delta**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Renvoie un tableau avec une entrée pour chaque combinaison unique de : DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId et EventTimestamp.
+L’API tire les données de votre organisation en tant que réponses Json. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants. <br><br> Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par appareil, l’appel de l’API OData d’exportation delta est utilisé pour extraire uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel de l’API de réponse JSON d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées ? » ou « combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? » <br><br> Étant donné que l’appel de l’API de réponse JSON d’exportation delta pour les vulnérabilités logicielles renvoie des données uniquement pour une plage de dates ciblée, il n’est pas considéré comme _une exportation complète._
 
 Les données collectées (à l’aide _d’OData_ ou _via_ des fichiers) sont l’instantané actuel de l’état actuel et ne contiennent pas de données historiques. Pour collecter des données historiques, les clients doivent les enregistrer dans leurs propres stockages de données.
 
@@ -56,17 +56,17 @@ Les données collectées (à l’aide _d’OData_ ou _via_ des fichiers) sont l�
 >
 > Sauf indication contraire, toutes les méthodes **** d’évaluation d’exportation répertoriées sont l’exportation complète et par appareil **_(également_** appelé **_par appareil)._**
 
-## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Exporter l’évaluation des vulnérabilités logicielles (OData)
+## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. Exporter l’évaluation des vulnérabilités logicielles (réponse JSON)
 
 ### <a name="11-api-method-description"></a>1.1 Description de la méthode API
 
 Cette réponse API contient toutes les données des logiciels installés par appareil. Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID.
 
-#### <a name="limitations"></a>Limites
+#### <a name="111-limitations"></a>1.1.1 Limitations
 
->- La taille maximale de page est de 200 000.
->
->- Les limites de taux pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
+- La taille maximale de page est de 200 000.
+
+- Les limites de taux pour cette API sont de 30 appels par minute et de 1 000 appels par heure.
 
 ### <a name="12-permissions"></a>1.2 Autorisations
 
@@ -89,37 +89,38 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 - $top : nombre de résultats à renvoyer (ne retourne pas @odata.nextLink et, par conséquent, ne tire pas toutes les données)
 
 ### <a name="15-properties"></a>1.5 Propriétés
->
+
 >[!Note]
 >
->- Chaque enregistrement représente environ 1 To de données. Vous devez prendre cela en compte lors du choix du paramètre pageSize approprié pour vous.
+>- Chaque enregistrement représente environ 1 Ko de données. Vous devez prendre cela en compte lors du choix du paramètre pageSize approprié pour vous.
 >
 >- Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez uniquement les colonnes documentées.
 >
 >- Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété.  Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
->
+
+<br/>
 
 Propriété (ID) | Type de données | Description | Exemple de valeur renvoyée
 :---|:---|:---|:---
-CveId | chaîne | Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures). | CVE-2020-15992
-CvssScore | chaîne | Score CVSS de la CVE. | 6.2
-DeviceId | chaîne | Identificateur unique de l’appareil dans le service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | chaîne | Nom de domaine complet (FQDN) de l’appareil. | johnlaptop.europe.contoso.com
+CveId | string | Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures). | CVE-2020-15992
+CvssScore | string | Score CVSS de la CVE. | 6.2
+DeviceId | string | Identificateur unique de l’appareil dans le service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | string | Nom de domaine complet (FQDN) de l’appareil. | johnlaptop.europe.contoso.com
 DiskPaths  | Chaîne de \[ tableau\] | Preuve disque que le produit est installé sur l’appareil. | [ « C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe » ]
-ExploitabilityLevel | chaîne | Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
-FirstSeenTimestamp | chaîne | Première fois que la CVE de ce produit a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880
+ExploitabilityLevel | string | Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
+FirstSeenTimestamp | string | Première fois que la CVE de ce produit a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880
 ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp!
-LastSeenTimestamp | chaîne | Dernière fois que la CVE a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880
-OSPlatform | chaîne | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette propriété indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10
-RbacGroupName  | chaîne | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs
-RecommendationReference | chaîne | Référence à l’ID de recommandation associé à ce logiciel. | va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (facultatif) | chaîne | Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité. | Mises à jour de sécurité d’avril 2020
-RecommendedSecurityUpdateId (facultatif) | chaîne | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants | 4550961
+LastSeenTimestamp | string | Dernière fois que la CVE a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880
+OSPlatform | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cette propriété indique des systèmes d’exploitation spécifiques, y compris des variantes au sein de la même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10
+RbacGroupName  | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs
+RecommendationReference | string | Référence à l’ID de recommandation associé à ce logiciel. | va-_-microsoft-_-silverlight
+RecommendedSecurityUpdate (facultatif) | string | Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité. | Mises à jour de sécurité d’avril 2020
+RecommendedSecurityUpdateId (facultatif) | string | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants | 4550961
 RegistryPaths  | Chaîne de \[ tableau\] | Preuve dans le Registre que le produit est installé sur l’appareil. | [ « HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight » ]
-SoftwareName | chaîne | Nom du produit logiciel. | chrome
-SoftwareVendor | chaîne | Nom du fournisseur de logiciels. | google
-SoftwareVersion | chaîne | Numéro de version du produit logiciel. | 81.0.4044.138
-VulnerabilitySeverityLevel  | chaîne | Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces. | Moyenne
+SoftwareName | string | Nom du produit logiciel. | chrome
+SoftwareVendor | string | Nom du fournisseur de logiciels. | google
+SoftwareVersion | string | Numéro de version du produit logiciel. | 81.0.4044.138
+VulnerabilitySeverityLevel  | string | Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces. | Moyenne
 
 ### <a name="16-examples"></a>1.6 Exemples
 
@@ -311,7 +312,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 Propriété (ID) | Type de données | Description | Exemple de valeur renvoyée
 :---|:---|:---|:---
 Exporter des fichiers | chaîne de \[ tableau\]  | Liste des URL de téléchargement pour les fichiers qui contiennent la capture instantanée actuelle de l’organisation. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
-GeneratedTime | chaîne | Heure de la générer. | 2021-05-20T08:00:00Z
+GeneratedTime | string | Heure de la générer. | 2021-05-20T08:00:00Z
 
 ### <a name="26-examples"></a>2.6 Exemples
 
@@ -335,17 +336,17 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="3-delta-export-software-vulnerabilities-assessment-odata"></a>3. Évaluation des vulnérabilités logicielles d’exportation delta (OData)
+## <a name="3-delta-export-software-vulnerabilities-assessment-json-response"></a>3. Évaluation des vulnérabilités logicielles d’exportation delta (réponse JSON)
 
 ### <a name="31-api-method-description"></a>3.1 Description de la méthode d’API
 
-Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L’API pulls data in your organization as Json responses, following the OData protocol. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants. Contrairement à l’évaluation complète des vulnérabilités logicielles (OData), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par périphérique, l’appel de l’API OData d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel de l’API OData d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées ? » ou « combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? »
+Renvoie un tableau avec une entrée pour chaque combinaison unique de DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. L’API tire les données de votre organisation en tant que réponses Json. La réponse est paginée, afin que vous pouvez utiliser le champ @odata.nextLink de la réponse pour récupérer les résultats suivants. Contrairement à l’évaluation complète des vulnérabilités logicielles (réponse JSON), qui permet d’obtenir un instantané complet de l’évaluation des vulnérabilités logicielles de votre organisation par périphérique, l’appel de l’API de réponse JSON d’exportation delta est utilisé pour récupérer uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »). Au lieu d’obtenir une exportation complète avec une grande quantité de données à chaque fois, vous obtenez uniquement des informations spécifiques sur les vulnérabilités nouvelles, fixes et mises à jour. L’appel de l’API de réponse JSON d’exportation delta peut également être utilisé pour calculer différents KPI, tels que « combien de vulnérabilités ont été corrigées ? » ou « combien de nouvelles vulnérabilités ont été ajoutées à mon organisation ? »
 
 >[!NOTE]
 >
->Il est vivement recommandé d’utiliser l’évaluation complète des vulnérabilités logicielles d’exportation par appel d’API d’appareil au moins une fois par semaine, et cette exportation supplémentaire de vulnérabilités logicielles change par l’API d’appareil (delta) tous les autres jours de la semaine.  Contrairement aux autres API OData d’évaluations, l'« exportation delta » n’est pas une exportation complète. L’exportation delta inclut uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »).
+>Il est vivement recommandé d’utiliser l’évaluation complète des vulnérabilités logicielles d’exportation par appel d’API d’appareil au moins une fois par semaine, et cette exportation supplémentaire de vulnérabilités logicielles change par l’API d’appareil (delta) tous les autres jours de la semaine.  Contrairement aux autres API de réponse JSON d’évaluations, l'« exportation delta » n’est pas une exportation complète. L’exportation delta inclut uniquement les modifications qui se sont produites entre une date sélectionnée et la date actuelle (l’appel d’API « delta »).
 
-#### <a name="limitations"></a>Limites
+#### <a name="311-limitations"></a>3.1.1 Limitations
 
 - La taille maximale de page est de 200 000.
 
@@ -379,44 +380,44 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 Chaque enregistrement renvoyé contient toutes les données de l’évaluation complète des vulnérabilités logicielles d’exportation par l’API OData de l’appareil, ainsi que deux champs supplémentaires :  _**EventTimestamp**_ et _**Status**_.
 
 >[!NOTE]
->-Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez donc uniquement les colonnes documentées.
+>- Certaines colonnes supplémentaires peuvent être renvoyées dans la réponse. Ces colonnes sont temporaires et peuvent être supprimées. Utilisez donc uniquement les colonnes documentées.
 >
->-Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété.  Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
-<br>
+>- Les propriétés définies dans le tableau suivant sont répertoriées par ordre alphabétique, par ID de propriété.  Lors de l’exécution de cette API, la sortie résultante ne sera pas nécessairement renvoyée dans le même ordre que celui répertorié dans ce tableau.
+<br><br/>
 
 Propriété (ID) | Type de données | Description | Exemple de valeur renvoyée
 :---|:---|:---|:---
-CveId | chaîne | Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures). | CVE-2020-15992  
-CvssScore | chaîne | Score CVSS de la CVE. | 6.2  
-DeviceId | chaîne | Identificateur unique de l’appareil dans le service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName | chaîne | Nom de domaine complet (FQDN) de l’appareil. | johnlaptop.europe.contoso.com  
+CveId | string | Identificateur unique affecté à la vulnérabilité de sécurité sous le système CVE (Common Vulnerabilities and Exposures). | CVE-2020-15992  
+CvssScore | string | Score CVSS de la CVE. | 6.2  
+DeviceId | string | Identificateur unique de l’appareil dans le service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName | string | Nom de domaine complet (FQDN) de l’appareil. | johnlaptop.europe.contoso.com  
 DiskPaths | Array[string] | Preuve disque que le produit est installé sur l’appareil. | [ « C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe » ]  
 EventTimestamp | String | Heure de la découverte de cet événement delta. | 2021-01-11T11:06:08.291Z
-ExploitabilityLevel | chaîne | Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit  
-FirstSeenTimestamp | chaîne | Première fois que la CVE de ce produit a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880  
+ExploitabilityLevel | string | Le niveau d’exploitabilité de cette vulnérabilité (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit  
+FirstSeenTimestamp | string | Première fois que la CVE de ce produit a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880  
 ID | string | Identificateur unique de l’enregistrement. | 123ABG55_573AG&mnp!  
-LastSeenTimestamp | chaîne | Dernière fois que la CVE a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880  
-OSPlatform | chaîne | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10  
-RbacGroupName | chaîne | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs  
-RecommendationReference | chaîne | Référence à l’ID de recommandation associé à ce logiciel. | va--microsoft--silverlight  
-RecommendedSecurityUpdate  | chaîne | Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité. | Mises à jour de sécurité d’avril 2020  
-RecommendedSecurityUpdateId  | chaîne | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants | 4550961  
+LastSeenTimestamp | string | Dernière fois que la CVE a été vue sur l’appareil. | 2020-11-03 10:13:34.8476880  
+OSPlatform | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10  
+RbacGroupName | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs  
+RecommendationReference | string | Référence à l’ID de recommandation associé à ce logiciel. | va--microsoft--silverlight  
+RecommendedSecurityUpdate  | string | Nom ou description de la mise à jour de sécurité fournie par le fournisseur de logiciels pour résoudre la vulnérabilité. | Mises à jour de sécurité d’avril 2020  
+RecommendedSecurityUpdateId  | string | Identificateur des mises à jour de sécurité applicables ou identificateur pour les articles de base de connaissances ou de conseils correspondants | 4550961  
 RegistryPaths  | Array[string] | Preuve dans le Registre que le produit est installé sur l’appareil. | [ « HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome » ]  
-SoftwareName | chaîne | Nom du produit logiciel. | chrome  
-SoftwareVendor | chaîne | Nom du fournisseur de logiciels. | google  
-SoftwareVersion | chaîne | Numéro de version du produit logiciel. | 81.0.4044.138  
+SoftwareName | string | Nom du produit logiciel. | chrome  
+SoftwareVendor | string | Nom du fournisseur de logiciels. | google  
+SoftwareVersion | string | Numéro de version du produit logiciel. | 81.0.4044.138  
 Statut | String | **Nouveau**   (pour une nouvelle vulnérabilité introduite sur un appareil)  (1) **Corrigé**(si cette vulnérabilité n’existe plus sur l’appareil, ce qui signifie   qu’elle a été corrigée). (2)  **Mise à jour**   (si une vulnérabilité sur un appareil a changé. Les modifications possibles sont les suivants : score CVSS, niveau d’exploitabilité, niveau de gravité, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). | Fixed
-VulnerabilitySeverityLevel | chaîne | Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces. | Moyenne  
+VulnerabilitySeverityLevel | string | Niveau de gravité affecté à la vulnérabilité de sécurité en fonction du score CVSS et des facteurs dynamiques influencés par le paysage des menaces. | Moyenne  
 
 #### <a name="clarifications"></a>Clarifications
 
 - Si le logiciel a été mis à jour de la version 1.0 à la version 2.0 et que les deux versions sont exposées à CVE-A, vous recevrez 2 événements distincts :  
-   a. Fixe : CVE-A sur la version 1.0 a été corrigé  
-   b. Nouveau : CVE-A sur la version 2.0 a été ajouté
+   1. Fixe : CVE-A sur la version 1.0 a été corrigé  
+   1. Nouveau : CVE-A sur la version 2.0 a été ajouté
 
 - Si une vulnérabilité spécifique (par exemple, CVE-A) a été vue pour la première fois à un moment spécifique (par exemple, le 10 janvier) sur un logiciel avec la version 1.0, et quelques jours plus tard, ce logiciel a été mis à jour vers la version 2.0 qui a également été exposée au même CVE-A, vous recevrez ces deux événements séparés :  
-   a. Fixed – CVE-X, FirstSeenTimestamp 10 janvier, version 1,0.  
-   b. Nouveauté : CVE-X, FirstSeenTimestamp 10 janvier, version 2.0.
+   1. Fixed – CVE-X, FirstSeenTimestamp 10 janvier, version 1,0.  
+   1. Nouveauté : CVE-X, FirstSeenTimestamp 10 janvier, version 2.0.
 
 ### <a name="36-examples"></a>3.6 Exemples
 

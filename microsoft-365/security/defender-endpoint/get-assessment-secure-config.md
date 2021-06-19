@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984855"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022389"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exporter l’évaluation de la configuration sécurisée par appareil
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -39,7 +39,7 @@ Renvoie toutes les configurations et leur état, par appareil.
 
 Il existe différents appels d’API pour obtenir différents types de données. Étant donné que la quantité de données peut être importante, il existe deux façons de les récupérer :
 
-- Exporter l’évaluation de la configuration sécurisée [ **OData**](#1-export-secure-configuration-assessment-odata): l’API tire toutes les données de votre organisation sous forme de réponses Json, en suivant le protocole OData. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
+- [Exporter la réponse **JSON**](#1-export-secure-configuration-assessment-json-response)d’évaluation de la configuration sécurisée : l’API tire toutes les données de votre organisation en tant que réponses Json. Cette méthode est la meilleure pour _les petites organisations avec moins de 100 Ko d’appareils._ La réponse est paginée, afin que vous pouvez utiliser le champ odata.nextLink de la réponse \@ pour récupérer les résultats suivants.
 
 - [Exporter l’évaluation de la configuration **sécurisée via des fichiers**](#2-export-secure-configuration-assessment-via-files): cette solution API permet d’obtenir plus de données plus rapidement et de manière plus fiable. Par conséquent, il est recommandé pour les grandes organisations, avec plus de 100 K appareils. Cette API tire toutes les données de votre organisation en tant que fichiers de téléchargement. La réponse contient des URL pour télécharger toutes les données à partir de Azure Storage. Cette API vous permet de télécharger toutes vos données à partir Azure Storage comme suit :
 
@@ -53,7 +53,7 @@ Les données collectées (à l’aide _d’OData_ ou _via_ des fichiers) sont l�
 >
 > Sauf indication contraire, toutes les méthodes **** d’évaluation d’exportation répertoriées sont l’exportation complète et par appareil **_(également_** appelé **_par appareil)._**
 
-## <a name="1-export-secure-configuration-assessment-odata"></a>1. Exporter l’évaluation de la configuration sécurisée (OData)
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Exporter l’évaluation de la configuration sécurisée (réponse JSON)
 
 ### <a name="11-api-method-description"></a>1.1 Description de la méthode API
 
@@ -102,15 +102,15 @@ ConfigurationId | string | Identificateur unique pour une configuration spécifi
 ConfigurationImpact | string | Impact nominal de la configuration sur la note de configuration globale (1-10) | 9 
 ConfigurationName | string | Nom d’affichage de la configuration | Intégrer des appareils à Microsoft Defender pour point de terminaison
 ConfigurationSubcategory | string | Sous-catégorie ou sous-groupement auquel appartient la configuration. Dans de nombreux cas, cela décrit des capacités ou des fonctionnalités spécifiques. | Appareils intégrés
-DeviceId | chaîne | Identificateur unique de l’appareil dans le service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | chaîne | Nom de domaine complet (FQDN) de l’appareil. | johnlaptop.europe.contoso.com
+DeviceId | string | Identificateur unique de l’appareil dans le service. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | string | Nom de domaine complet (FQDN) de l’appareil. | johnlaptop.europe.contoso.com
 IsApplicable | bool | Indique si la configuration ou la stratégie est applicable | true
 IsCompliant | bool | Indique si la configuration ou la stratégie est correctement configurée. | false
 IsExpectedUserImpact | bool | Indique s’il y aura un impact sur l’utilisateur si la configuration est appliquée | true
-OSPlatform | chaîne | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10
-RbacGroupName | chaîne | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs
-RecommendationReference | chaîne | Référence à l’ID de recommandation associé à ce logiciel. | sca-_-scid-20000
-Timestamp | chaîne | Dernière fois que la configuration a été vue sur l’appareil | 2020-11-03 10:13:34.8476880
+OSPlatform | string | Plateforme du système d’exploitation en cours d’exécution sur l’appareil. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7. Pour plus d’informations, voir les systèmes d’exploitation et les plateformes pris en charge par tvm. | Windows 10
+RbacGroupName | string | Groupe de contrôle d’accès basé sur un rôle (RBAC). Si cet appareil n’est affecté à aucun groupe RBAC, la valeur sera « Unassigned ». Si l’organisation ne contient aucun groupe RBAC, la valeur sera « None ». | Serveurs
+RecommendationReference | string | Référence à l’ID de recommandation associé à ce logiciel. | sca-_-scid-20000
+Timestamp | string | Dernière fois que la configuration a été vue sur l’appareil | 2020-11-03 10:13:34.8476880
 
 ### <a name="16-examples"></a>1.6 Exemples
 
@@ -258,7 +258,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 Propriété (ID) | Type de données | Description | Exemple de valeur renvoyée
 :---|:---|:---|:---
 Exporter des fichiers | chaîne de \[ tableau\] | Liste des URL de téléchargement pour les fichiers qui contiennent la capture instantanée actuelle de l’organisation | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | chaîne | Heure de la générer. | 2021-05-20T08:00:00Z ]
+GeneratedTime | string | Heure de la générer. | 2021-05-20T08:00:00Z ]
 
 ### <a name="26-examples"></a>2.6 Exemples
 

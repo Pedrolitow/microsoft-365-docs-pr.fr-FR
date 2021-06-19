@@ -1,6 +1,6 @@
 ---
 title: Corriger les faux positifs ou les faux négatifs dans Microsoft 365 Defender
-description: Un problème a-t-il été manqué ou détecté à tort par AIR dans Microsoft 365 Defender ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
+description: Un problème a-t-il été manqué ou détecté à tort par AIR Microsoft 365 Defender ? Découvrez comment soumettre des faux positifs ou des faux négatifs à Microsoft pour analyse.
 keywords: automatisé, examen, alerte, correction, faux positif, faux négatif
 search.appverid: met150
 ms.prod: m365-security
@@ -21,21 +21,21 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 3cffa97d26b2b28de8d9e45d7030e0931a7ba072
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f60208b06e66c1e9803e05ee1fc41376824e9b56
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269576"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022533"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Corriger les faux positifs ou les faux négatifs dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-Les faux positifs ou négatifs peuvent parfois se produire avec n’importe quelle solution de protection contre les menaces. Si [des fonctionnalités](m365d-autoir.md) d’investigation et de réponse automatisées dans Microsoft 365 Defender ont manqué ou détecté un problème, votre équipe des opérations de sécurité peut suivre les étapes suivantes :
+Les faux positifs ou négatifs peuvent parfois se produire avec n’importe quelle solution de protection contre les menaces. Si [des fonctionnalités](m365d-autoir.md) d’investigation et de réponse automatisées Microsoft 365 Defender manquées ou détectées à tort, votre équipe en matière d’opérations de sécurité peut suivre les étapes suivantes :
 
 - [Signaler un faux positif/négatif à Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Ajuster vos alertes](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si nécessaire)
@@ -55,7 +55,7 @@ Les sections suivantes décrivent comment effectuer ces tâches.
 |Scénario |Service |Procédure |
 |--------|--------|--------|
 |- Une alerte est déclenchée par un usage légitime <br/>- Une alerte est inexacte    |[Microsoft Cloud App Security](/cloud-app-security)<br/> ou <br/>[Protection Azure contre les menaces](/azure/security/fundamentals/threat-detection)         |[Gérer les alertes dans le portail Sécurité des applications cloud web](/cloud-app-security/managing-alerts)         |
-|Un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sécurisé|[Microsoft Defender pour point de terminaison](/windows/security/threat-protection) |[Créer un indicateur personnalisé avec une action « Autoriser »](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|Un fichier, une adresse IP, une URL ou un domaine est traité comme un programme malveillant sur un appareil, même s’il est sûr|[Microsoft Defender pour point de terminaison](/windows/security/threat-protection) |[Créer un indicateur personnalisé avec une action « Autoriser »](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annuler une action de correction qui a été prise sur un appareil
 
@@ -72,5 +72,4 @@ Si une action de correction a été entreprise sur une entité (par exemple, un 
 ## <a name="see-also"></a>Voir aussi
 
 - [Consulter les détails et les résultats d'un examen automatisé](m365d-autoir-results.md)
-- [Recherche proactive des menaces avec le recherche avancée dans Microsoft 365 Defender](advanced-hunting-overview.md)
-- [Résoudre des faux négatifs/positifs dans Microsoft Defender pour point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [Recherchez de manière proactive les menaces avec le recherche avancée dans Microsoft 365 Defender](advanced-hunting-overview.md)

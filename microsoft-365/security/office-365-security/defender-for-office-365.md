@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eab7cdbed592975739fdcfa1089e6f7d2c25d880
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 00dcd5d8f5d18b59de67318049cc1e5807451f14
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904115"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022353"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -122,13 +122,7 @@ Microsoft Defender pour Office 365 inclut un [tableau de bord de rapports](view-
 Les rapports sont mis à jour en temps réel, ce qui vous fournit les informations les plus récentes. Ces rapports fournissent également des recommandations et vous informent contre les menaces imminentes. Les rapports prédéfinis incluent les données suivantes :
 
 - [Threat Explorer (et détections en temps réel)](threat-explorer.md)
-
 - [Rapport sur l’état de la protection contre les menaces](view-reports-for-mdo.md#threat-protection-status-report)
-
-- [Rapport sur les types de fichiers de Defender pour Office 365](view-reports-for-mdo.md#defender-for-office-365-file-types-report)
-
-- [Rapport d’actions sur les messages de Defender pour Office 365](view-reports-for-mdo.md#defender-for-office-365-message-disposition-report)
-
 - ... et bien plus encore.
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>Utilisation de l’examen des menaces et des fonctionnalités de réponse
