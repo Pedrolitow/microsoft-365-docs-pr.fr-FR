@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble Microsoft 365 API Defender
+title: Vue d’ensemble Microsoft 365 Defender API
 description: En savoir plus sur les API disponibles dans Microsoft 365 Defender
 keywords: api, api, vue d’ensemble, incident, incidents, recherche de menace, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b19a6072be5f97b90c117f053ccae4593587c43d
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 1ddb6da49e5e9f23aacf73caaeb91302ac9c19c9
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730893"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028966"
 ---
-# <a name="overview-of--microsoft-365-defender-apis"></a>Vue d’ensemble Microsoft 365 API Defender
+# <a name="overview-of-microsoft-365-defender-apis"></a>Vue d’ensemble Microsoft 365 Defender API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Microsoft 365 Defender repose sur une plateforme prête pour l’intégration.
+Microsoft 365 Defender repose sur une plateforme prête à l’intégration.
 
 Utilisez les API Microsoft 365 Defender pour automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées.
 
@@ -49,7 +49,7 @@ Utilisez les API Microsoft 365 Defender pour automatiser les flux de travail en 
 Utilisez [l’API de diffusion en](../defender-endpoint/raw-data-export.md) continu pour expédier des événements et des alertes en temps réel à partir d’instances telles qu’elles se produisent dans un flux de données unique.
 
 
-Parallèlement à ces MICROSOFT 365 spécifiques à Defender, chacun de [](api-articles.md) nos autres produits de sécurité expose des API supplémentaires pour vous aider à tirer parti de leurs fonctionnalités uniques.
+Parallèlement à ces MICROSOFT 365 DEFENDER spécifiques, chacun de nos [](api-articles.md) autres produits de sécurité expose des API supplémentaires pour vous aider à tirer parti de leurs fonctionnalités uniques.
 
 
 > [!NOTE]
@@ -61,12 +61,12 @@ Parallèlement à ces MICROSOFT 365 spécifiques à Defender, chacun de [](api-a
 | **Comprendre comment accéder aux API** |
 |-|
 | [En savoir plus sur les quotas d’API et les licences](api-terms.md) |
-| [Accéder aux API Microsoft 365 Defender](api-access.md) |
+| [Accéder aux API Microsoft 365 Defender de données](api-access.md) |
 | **Créer des applications** |
 | [Créer une application « Hello World »](api-hello-world.md) |
-| [Créer une application pour accéder Microsoft 365 API Defender au nom d’un utilisateur](api-create-app-user-context.md) |
+| [Créer une application pour accéder Microsoft 365 Defender API au nom d’un utilisateur](api-create-app-user-context.md) |
 | [Créer une application pour accéder à Microsoft 365 Defender sans utilisateur](api-create-app-web.md) |
-| [Créer une application avec un accès partenaire multi-locataire aux API Microsoft 365 Defender](api-partner-access.md) |
+| [Créer une application avec un accès partenaire multi-locataire aux API Microsoft 365 Defender client](api-partner-access.md) |
 | **Résoudre les problèmes et gérer vos applications** |
 | [Comprendre les codes d’erreur de l’API](api-error-codes.md) |
 | [Gérer les secrets dans vos applications avec Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/) |

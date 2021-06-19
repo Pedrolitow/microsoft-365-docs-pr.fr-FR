@@ -16,19 +16,18 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984987"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028786"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Pourquoi les règles de réduction de la surface d’attaque sont-elles importantes ?
@@ -91,7 +90,7 @@ En outre, le mode avertissement n’est pas pris en charge sur les appareils ex�
 
 ## <a name="notifications-and-alerts"></a>Notifications et alertes
 
-Chaque fois qu’une règle de réduction de la surface d’attaque est déclenchée, une notification s’affiche sur l’appareil. Vous pouvez [personnaliser la notification avec](customize-attack-surface-reduction.md#customize-the-notification) les détails et les coordonnées de votre entreprise.
+Chaque fois qu’une règle de réduction de la surface d’attaque est déclenchée, une notification s’affiche sur l’appareil. Vous pouvez [personnaliser la notification](customize-attack-surface-reduction.md#customize-the-notification) avec les informations et les coordonnées de l’entreprise.
 
 En outre, lorsque certaines règles de réduction de la surface d’attaque sont déclenchées, des alertes sont générées.
 
@@ -150,7 +149,7 @@ Vous pouvez consulter le journal Windows événements pour afficher les événem
 
 Vous pouvez créer une vue personnalisée qui filtre les événements pour afficher uniquement les événements suivants, tous liés à l’accès contrôlé aux dossiers :
 
-|ID de l'événement|Description|
+|ID d’événement|Description|
 |---|---|
 |5007|Événement lorsque les paramètres sont modifiés|
 |1121|Événement lorsque la règle se déclenche en mode blocage|
@@ -160,7 +159,7 @@ La « version du moteur » répertoriée pour les événements de réduction de 
 
 ## <a name="attack-surface-reduction-rules"></a>Règles de réduction des surfaces d'attaque
 
-Le tableau et les sous-sections suivants décrivent chacune des 15 règles de réduction de la surface d’attaque. Les règles de réduction de la surface d’attaque sont répertoriées par ordre alphabétique, par nom de règle.
+Le tableau et les sous-sections suivants décrivent chacune des 16 règles de réduction de la surface d’attaque. Les règles de réduction de la surface d’attaque sont répertoriées par ordre alphabétique, par nom de règle.
 
 Si vous configurez des règles de réduction de la surface d’attaque à l’aide de la stratégie de groupe ou de PowerShell, vous aurez besoin des GUID. En revanche, si vous utilisez Microsoft Endpoint Manager ou Microsoft Intune, vous n’avez pas besoin des GUID.
 

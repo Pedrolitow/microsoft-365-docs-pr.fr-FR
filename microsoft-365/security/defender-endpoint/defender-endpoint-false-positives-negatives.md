@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 1cd29c3a631334ee3a2791cca3c7ac1c83a1692f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b8060952960f89e274361bb6382f03d482346e0d
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903827"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028858"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Résoudre des faux négatifs/positifs dans Microsoft Defender pour point de terminaison
 
@@ -97,7 +97,7 @@ Les alertes peuvent être classées en tant que faux positifs ou vrais positifs 
 
 ### <a name="suppress-an-alert"></a>Supprimer une alerte
 
-Si vous avez des alertes qui sont de faux positifs ou qui sont de vrais positifs, mais pour des événements non importants, vous pouvez supprimer ces alertes dans le Microsoft 365 Defender. La suppression d’alertes permet de réduire le bruit dans votre tableau de bord des opérations de sécurité. 
+Si vous avez des alertes qui sont des faux positifs ou qui sont de vrais positifs, mais pour des événements non importants, vous pouvez supprimer ces alertes dans Microsoft 365 Defender. La suppression d’alertes permet de réduire le bruit dans votre tableau de bord des opérations de sécurité. 
 
 1. Go to the Microsoft 365 Defender portal ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
@@ -276,7 +276,7 @@ Avant de créer des indicateurs pour des adresses IP, des URL ou des domaines, a
 - La version du client anti-programme malveillant est 4.18.1906.x ou version ultérieure 
 - Les appareils s’exécutent Windows 10 version 1709 ou ultérieure 
 
-Les indicateurs réseau personnalisés sont allumés dans le [Microsoft 365 Defender.](microsoft-defender-security-center.md) Pour plus d’informations, voir [Fonctionnalités avancées.](/microsoft-365/security/defender-endpoint/advanced-features)
+Les indicateurs réseau personnalisés sont allumés dans le [Microsoft 365 Defender](microsoft-defender-security-center.md). Pour plus d’informations, voir [Fonctionnalités avancées.](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### <a name="indicators-for-application-certificates"></a>Indicateurs pour les certificats d’application 
 
@@ -438,11 +438,11 @@ Selon le niveau [d’automatisation](/microsoft-365/security/defender-endpoint/a
 > [!IMPORTANT]
 > Nous vous recommandons *d’utiliser l’automatisation complète* pour l’examen et la correction automatisés. Ne pas désactiver ces fonctionnalités en raison d’un faux positif. Au lieu de cela, utilisez des indicateurs « autoriser » pour définir des [exceptions](#indicators-for-microsoft-defender-for-endpoint)et conservez l’investigation et la correction automatisées pour prendre les mesures appropriées automatiquement. Le [suivi de ces conseils](automation-levels.md#levels-of-automation) permet de réduire le nombre d’alertes que votre équipe des opérations de sécurité doit gérer. 
 
-## <a name="still-need-help"></a>Vous avez encore besoin d’aide ?
+## <a name="still-need-help"></a>Encore besoin d’aide ?
 
 Si vous avez passé en revue toutes les étapes de cet article et que vous avez toujours besoin d’aide, contactez le support technique.
 
-1. Go to the Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
+1. Go to Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ) and sign in.
 
 2. Dans le coin supérieur droit, sélectionnez le point d’interrogation (**?**), puis sélectionnez **support Microsoft.**
 
@@ -452,4 +452,4 @@ Si vous avez passé en revue toutes les étapes de cet article et que vous avez 
 
 [Gérer Microsoft Defender pour le point de terminaison](manage-atp-post-migration.md)
 
-[Vue d’Microsoft 365 portail Defender](/microsoft-365/security/defender-endpoint/use) 
+[Vue d’ensemble Microsoft 365 Defender portail](/microsoft-365/security/defender-endpoint/use) 

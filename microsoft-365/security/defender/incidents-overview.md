@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022780"
+ms.locfileid: "53028522"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidents dans Microsoft 365 Defender
 
@@ -144,9 +144,11 @@ Identifiez régulièrement les incidents les plus prioritaires pour l’analyse 
 
 Si vous débutez dans l’analyse de la sécurité, consultez [l’introduction](incidents-overview.md) à la réponse à votre premier incident pour plus d’informations et pour passer au travers d’un exemple d’incident.
 
+Pour plus d’informations sur la réponse aux incidents dans les produits Microsoft, consultez [cet article.](/security/compass/incident-response-overview)
+
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>Exemples d’opérations de sécurité pour Microsoft 365 Defender
 
-Voici un exemple d’opérations de sécurité pour Microsoft 365 Defender.
+Voici un exemple d’opérations de sécurité (SecOps) pour Microsoft 365 Defender.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Exemple d’opérations de sécurité pour Microsoft 365 Defender":::
 
@@ -168,6 +170,14 @@ Les tâches trimestrielles peuvent inclure un rapport et un briefing des résult
 Les tâches annuelles peuvent inclure la conduite d’un incident majeur ou d’un exercice de violation pour tester votre personnel, vos systèmes et vos processus. 
 
 Les tâches quotidiennes, mensuelles, trimestrielles et annuelles peuvent être utilisées pour mettre à jour ou affiner des processus, des stratégies et des configurations de sécurité.
+
+### <a name="secops-resources-across-microsoft-products"></a>Ressources SecOps sur les produits Microsoft
+
+Pour plus d’informations sur SecOps dans les produits Microsoft, consultez les ressources ci-après :
+
+- [Capabilities](/security/compass/security-operations-capabilities)
+- [Meilleures pratiques](/security/compass/security-operations)
+- [Vidéos et diapositives](/security/compass/security-operations-videos-and-decks)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

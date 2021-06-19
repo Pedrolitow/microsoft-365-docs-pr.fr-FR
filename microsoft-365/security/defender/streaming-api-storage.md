@@ -1,6 +1,6 @@
 ---
-title: Diffuser Microsoft 365 événements Defender à votre compte Stockage client
-description: Découvrez comment configurer Microsoft 365 Defender pour diffuser en continu des événements de recherche avancée sur Stockage compte.
+title: Diffuser Microsoft 365 Defender événements sur votre compte Storage client
+description: Découvrez comment configurer des Microsoft 365 Defender pour diffuser des événements de recherche avancée vers Storage compte.
 keywords: exportation de données brutes, API de diffusion en continu, API, Hubs d’événements, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4e706bbb2246bd0629db721373ffcd4164d123d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fa61e2fd0591d375a17bad6e166a76c1ca40862e
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772504"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028894"
 ---
-# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers Stockage compte
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurer Microsoft 365 Defender pour diffuser en continu des événements de recherche avancée sur votre compte Storage client
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,15 +34,15 @@ ms.locfileid: "52772504"
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 
-## <a name="before-you-begin"></a>Avant de commencer :
+## <a name="before-you-begin"></a>Avant de commencer :
 
-1. Créez [un Stockage dans](/azure/storage/common/storage-account-overview) votre client.
+1. Créez [un Storage dans](/azure/storage/common/storage-account-overview) votre client.
 
-2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.Insights**.
+2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> inscrivez-vous à Microsoft.Informations**.
 
 ## <a name="enable-raw-data-streaming"></a>Activez la diffusion en continu des données brutes :
 
-1. Connectez-vous [Microsoft 365 centre de sécurité Defender](https://security.microsoft.com) en tant qu’administrateur général * ou _*_administrateur_ de sécurité **.
+1. Connectez-vous [Microsoft 365 Defender centre de sécurité](https://security.microsoft.com) en tant qu’administrateur général * ou _*_Administrateur_ de sécurité **.
 
 2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Centre de sécurité Microsoft Defender.
 
@@ -50,15 +50,15 @@ ms.locfileid: "52772504"
 
 4. Choisissez un nom pour vos nouveaux paramètres.
 
-5. Choose **Forward events to stockage Azure**.
+5. Choose **Forward events to Azure Storage**.
 
-6. Tapez votre **ID Stockage de ressource de compte.** Pour obtenir votre ID de ressource de compte **Stockage,** go to your Stockage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under Stockage Account Resource **ID:**
+6. Tapez votre **ID Storage de compte de compte.** Pour obtenir votre ID de ressource de compte **Storage,** go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under Storage Account Resource **ID:**
 
    ![Image de l’ID1 de ressource du hub d’événements](../defender-endpoint/images/storage-account-resource-id.png)
 
 7. Choisissez les événements que vous souhaitez diffuser en continu, puis cliquez sur **Enregistrer.**
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>Schéma des événements dans le compte Stockage :
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>Schéma des événements dans le compte Storage:
 
 - Un conteneur d’objets blob est créé pour chaque type d’événement : 
 
@@ -102,6 +102,6 @@ Pour obtenir les types de données pour nos propriétés d’événements, vous 
 
 ## <a name="related-topics"></a>Voir aussi
 - [Vue d’ensemble du chasse avancée](../defender/advanced-hunting-overview.md)
-- [Microsoft 365 API de diffusion en continu defender](streaming-api.md)
-- [Diffuser Microsoft 365 événements Defender sur votre compte de stockage Azure](streaming-api-storage.md)
-- [stockage Azure Documentation du compte](/azure/storage/common/storage-account-overview)
+- [Microsoft 365 Defender API de diffusion en continu](streaming-api.md)
+- [Diffuser Microsoft 365 Defender événements sur votre compte de stockage Azure](streaming-api-storage.md)
+- [Azure Storage Documentation du compte](/azure/storage/common/storage-account-overview)

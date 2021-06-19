@@ -19,19 +19,19 @@ description: Les administrateurs peuvent découvrir le fonctionnement de l’ape
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1b99590d7ae96ad8371eb2a2fab5fb7e8f94d07
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: b6aab20cc9050152b7ba9f86baed887969ad4da0
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879035"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029014"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Aperçu de l’emprunt d’identité dans Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -50,21 +50,22 @@ Vous pouvez utiliser l’aperçu de l’emprunt d’identité dans le portail Mi
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le portail Microsoft 365 Defender sur <https://security.microsoft.com> . Pour aller directement à l’aperçu de l’emprunt d’identité sur la page **Anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> . Pour aller directement à la page d’informations **sur l’emprunt d’identité,** utilisez <https://security.microsoft.com/impersonationinsight> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à l’aperçu de l’emprunt d’identité sur la page **Anti-hameçonnage,** utilisez <https://security.microsoft.com/antiphishing> . Pour aller directement à la page d’informations **sur l’emprunt d’identité,** utilisez <https://security.microsoft.com/impersonationinsight> .
 
 - Des autorisations doivent vous être attribuées dans le portail Microsoft 365 Defender avant de pouvoir suivre les procédures de cet article :
+
   - **Gestion de l'organisation**
   - **Administrateur de sécurité**
-  - **Lecteur de sécurité**
-  - **Lecteur général**
+  - **Lecteur sécurité**
+  - **Lecteur global**
 
   Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender.](permissions-in-the-security-and-compliance-center.md)
 
-  Remarque : l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne  aux utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  **Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 - Vous activez et configurez la protection contre l’emprunt d’identité dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365. La protection contre l’emprunt d’identité n’est pas activée par défaut. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md).
 
-## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’aperçu de l’emprunt d’identité dans le Microsoft 365 Defender
+## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’aperçu de l’emprunt d’identité dans Microsoft 365 Defender web
 
 1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \>  \> **policies** section \> **Anti-phishing**.
 

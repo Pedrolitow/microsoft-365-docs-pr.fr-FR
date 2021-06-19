@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4d793d49d669510b722a72160ae396ee73ab9699
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022743"
+ms.locfileid: "53028510"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Hiérarchiser les incidents dans Microsoft 365 Defender
 
@@ -63,7 +63,7 @@ La file d’attente des incidents expose également plusieurs options de filtrag
 
 Dans la file d’attente des incidents par défaut, vous pouvez sélectionner **Filtres** pour afficher un volet Filtres, à partir duquel vous pouvez afficher un ensemble filtré d’incidents. Voici un exemple.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet Filtres de la file d’attente des incidents":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Exemple du volet filtres de la file d’attente des incidents":::
 
 Ce tableau répertorie les noms de filtres disponibles.
 
@@ -98,7 +98,7 @@ Une fois que vous avez configuré un filtre utile dans la file d’attente des i
 - Incidents avec une menace associée spécifique
 - Incidents avec un acteur spécifique
 
-Une fois que vous avez compilé et stocké votre liste d’affichages de filtre utiles en tant [](manage-incidents.md) qu’URL, vous pouvez l’utiliser rapidement pour traiter et hiérarchiser les incidents dans votre file d’attente et les gérer pour analyse ultérieure.
+Une fois que vous avez compilé et stocké votre liste d’affichages de filtre utiles en tant [](manage-incidents.md) qu’URL, vous pouvez l’utiliser pour traiter et hiérarchiser rapidement les incidents dans votre file d’attente et les gérer pour une affectation et une analyse ultérieures.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

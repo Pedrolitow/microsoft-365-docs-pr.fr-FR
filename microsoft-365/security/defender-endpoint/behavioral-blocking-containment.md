@@ -19,16 +19,16 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: f2de1f6bf35f4454ed6ab286c0bc8004a0d6301b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: c480bb83465e6057cd1cf29f1f5077f2a0e165e8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904067"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028822"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Blocage et confinement comportementaux
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,13 +58,13 @@ L’image suivante montre un exemple d’alerte déclenchée par des fonctionnal
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Composants de blocage et de blocage du comportement
 
-- **Règles de réduction de [](attack-surface-reduction.md) la surface d’attaque** sur client et pilotée par la stratégie L’exécution des comportements d’attaque courants prédéfini est empêchée, conformément à vos règles de réduction de la surface d’attaque. Lorsque de tels comportements tentent de s’exécuter, ils peuvent être vus dans le Microsoft 365 Defender ( ) comme des [https://security.microsoft.com](https://security.microsoft.com) alertes d’information. Les règles de réduction de la surface d’attaque ne sont pas activées par défaut . vous configurez vos stratégies dans le [Microsoft 365 Defender](microsoft-defender-security-center.md).
+- **Règles de réduction de [](attack-surface-reduction.md) la surface d’attaque** sur client et pilotée par la stratégie L’exécution des comportements d’attaque courants prédéfini est empêchée, conformément à vos règles de réduction de la surface d’attaque. Lorsque de tels comportements tentent de s’exécuter, ils peuvent être vus dans Microsoft 365 Defender ( ) comme des [https://security.microsoft.com](https://security.microsoft.com) alertes d’information. Les règles de réduction de la surface d’attaque ne sont pas activées par défaut . vous configurez vos stratégies dans le [Microsoft 365 Defender](microsoft-defender-security-center.md).
 
 - **[Blocage du comportement client](client-behavioral-blocking.md)** Les menaces sur les points de terminaison sont détectées par le biais de l’apprentissage automatique, puis sont bloquées et corrigés automatiquement. (Le blocage du comportement client est activé par défaut.) 
 
 - **[Le blocage de boucle de commentaires](feedback-loop-blocking.md)** (également appelé protection rapide) les détections de menaces sont observées par le biais de l’intelligence comportementale. Les menaces sont arrêtées et empêchées de s’exécutent sur d’autres points de terminaison. (Le blocage de la boucle de commentaires est activé par défaut.) 
 
-- Détection et réponse des points de **[terminaison (PEPT) en mode bloc](edr-in-block-mode.md)** Les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. PEPT en mode bloc fonctionne même si Antivirus Microsoft Defender n’est pas la solution antivirus principale. (PEPT mode bloc n’est pas activé par défaut ; vous l’activez dans Microsoft 365 Defender.) 
+- Détection et réponse des points de **[terminaison (PEPT) en mode bloc](edr-in-block-mode.md)** Les artefacts ou comportements malveillants observés par le biais de la protection post-violation sont bloqués et contenus. PEPT en mode bloc fonctionne même si Antivirus Microsoft Defender n’est pas la solution antivirus principale. (PEPT mode bloc n’est pas activé par défaut ; vous l’activez en Microsoft 365 Defender.) 
 
 Attendez-vous à en savoir plus sur le blocage et le blocage du comportement, car Microsoft continue d’améliorer les fonctionnalités et fonctionnalités de protection contre les menaces. Pour voir ce qui est planifié et déployer maintenant, consultez la [feuille de route Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
 
@@ -95,9 +95,9 @@ Les modèles d’apprentissage des appareils basés sur le comportement dans Def
 - La première couche de protection a détecté le comportement d’exploitation. Les classifieurs d’apprentissage des appareils dans le cloud ont correctement identifié la menace et ont immédiatement demandé à l’appareil client de bloquer l’attaque.
 - La deuxième couche de protection, qui a permis d’arrêter les cas où l’attaque est passée au-delà de la première couche, a détecté un processus en train de s’arrêter et a supprimé les fichiers correspondants (par exemple, Lokibot). 
 
-Pendant que l’attaque a été détectée et arrêtée, des alertes, telles qu’une « alerte d’accès initial », ont été déclenchées et sont apparus dans le portail [Microsoft 365 Defender](microsoft-defender-security-center.md) (anciennement le Centre de sécurité Microsoft Defender) :
+Lorsque l’attaque a été détectée et arrêtée, des alertes, telles qu’une « alerte d’accès initial », ont été déclenchées et sont apparues dans le portail [Microsoft 365 Defender](microsoft-defender-security-center.md) (anciennement le Centre de sécurité Microsoft Defender) :
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerte d’accès initial dans le portail Microsoft 365 Defender":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Alerte d’accès initial dans le portail Microsoft 365 Defender client":::
 
 Cet exemple montre comment les modèles d’apprentissage des appareils basés sur le comportement dans le cloud ajoutent de nouvelles couches de protection contre les attaques, même après leur exécution.
 
@@ -127,4 +127,4 @@ Cet exemple montre qu’avec les fonctionnalités de blocage du comportement et 
 
 - [Voir l’activité récente des menaces globales](https://www.microsoft.com/wdsi/threats)
 
-- [Obtenir une vue d’ensemble de Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+- [Obtenir une vue d’ensemble des Microsoft 365 Defender](../defender/microsoft-365-defender.md)

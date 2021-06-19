@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: decc991ef1d4a1b92f4e843fd39d595b9a1f7107
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 15b1b152966c9c09bf77bea15b9b651f739c3566
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964826"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028954"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender pour Office 365 dans Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "52964826"
 
 ## <a name="quick-reference"></a>Référence rapide
 
-Le tableau ci-dessous répertorie les modifications apportées à la navigation entre le Centre Office 365 sécurité et conformité & et le Microsoft 365 Defender.
+Le tableau ci-dessous répertorie les modifications apportées à la navigation entre le Centre de sécurité Office 365 conformité & et Microsoft 365 Defender.
 
 <br>
 
@@ -51,7 +51,7 @@ Le tableau ci-dessous répertorie les modifications apportées à la navigation 
 |Autorisations|[Autorisations & rôles](https://security.microsoft.com/emailandcollabpermissions)|Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Flux de messagerie|||Voir [Exchange admin center](https://admin.exchange.microsoft.com/#/)|
 |Confidentialité des données||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
-|Recherche|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Recherche (recherche de contenu)||
+|Rechercher|[Audit](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|Recherche (recherche de contenu)||
 |Rapports|[Rapport](https://security.microsoft.com/emailandcollabreport)|||
 |Certification de service||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||
 |Surveillance||Voir [Centre de conformité Microsoft 365](https://compliance.microsoft.com/homepage)||

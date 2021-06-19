@@ -17,57 +17,57 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
-description: 'Résumé : Décrit la prise en charge d’IPv6 dans Microsoft Office 365 composants et dans Office 365 offres gouvernementales.'
-ms.openlocfilehash: 7f06ed6f8df2c6552ee0a331ad958bca289d0a09
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Résumé : Décrit la prise en charge d’IPv6 dans Microsoft Office 365 et dans les offres Office 365 pour le gouvernement.'
+ms.openlocfilehash: a509b19711092bddf153a677c41860e7a4e5277a
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909681"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028906"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Prise en charge du protocole IPv6 dans les services Office 365
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Office 365 prend en charge IPv6 et IPv4 ; toutefois, toutes Office 365 fonctionnalités sont entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Office 365. Si vous filtrez votre trafic sortant vers Office 365, la liste complète des adresses IPv6 qui sont pris en charge par Office 365 se trouve dans l’article Office 365 URL et [plages d’adresses IP.](urls-and-ip-address-ranges.md) Une fois votre réseau configuré et les adresses IPv6 appropriées autorisées, vous pouvez télécharger le plan de [test Office 365 IPv6](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du Centre de téléchargement Microsoft.
+Office 365 prend en charge IPv6 et IPv4 ; Toutefois, toutes les fonctionnalités Office 365 ne sont pas entièrement activées avec IPv6. Cela signifie que vous devez utiliser IPv4 et IPv6 pour vous connecter à Office 365. Si vous filtrez votre trafic sortant vers Office 365, vous pouvez trouver la liste complète des adresses IPv6 pris en charge par Office 365 dans l’article URL et [plages d’adresses IP Office 365.](urls-and-ip-address-ranges.md) Une fois votre réseau configuré et les adresses IPv6 appropriées autorisées, vous pouvez télécharger le plan de [test Office 365 IPv6](https://go.microsoft.com/fwlink/?LinkId=293447) à partir du Centre de téléchargement Microsoft.
   
-## <a name="ipv6-support-in-office-365-subscription-service"></a>Prise en charge d’IPv6 dans Office 365 service d’abonnement
+## <a name="ipv6-support-in-office-365-subscription-service"></a>Prise en charge d’IPv6 dans le service d’abonnement Office 365
 
 ### <a name="exchange-online-and-ipv6"></a>Exchange Online et IPv6
 
-Si le programme que vous utilisez pour vous connecter à Exchange Online prend en charge IPv6, il utilisera IPv6 par défaut sur les réseaux câblés et sans fil. Si vous souhaitez contrôler les communications à Exchange Online, utilisez les plages d’adresses IP dans Office 365 URL et les [plages d’adresses IP.](urls-and-ip-address-ranges.md)
+Si le programme que vous utilisez pour vous connecter à Exchange Online prend en charge IPv6, il utilisera IPv6 par défaut sur les réseaux câblés et sans fil. Si vous souhaitez contrôler les communications vers Exchange Online, utilisez les plages d’adresses IP dans les URL Office 365 et les [plages d’adresses IP.](urls-and-ip-address-ranges.md)
   
-### <a name="sharepoint-online-and-ipv6"></a>SharePoint En ligne et IPv6
+### <a name="sharepoint-online-and-ipv6"></a>SharePoint Online et IPv6
 
- **Office 365 Secteur Public G1/G3/G4/K1** Si le programme que vous utilisez pour vous connecter à SharePoint Online prend en charge IPv6, il tentera d’utiliser IPv6 par défaut.
+ **Office 365 Pour le gouvernement G1/G3/G4/K1** Si le programme que vous utilisez pour vous connecter à SharePoint Online prend en charge IPv6, il tentera d’utiliser IPv6 par défaut.
   
  **Cloud public multi-locataire** Microsoft active SharePoint Online IPv6 à votre demande. Vous devez fournir les adresses IP notées CIDR pour l’infrastructure DNS de votre organisation. N’oubliez pas que cette infrastructure DNS ne peut pas être partagée par d’autres organisations pour qu’IPv6 soit activé pour votre client. Une fois IPv6 activé, si le programme que vous utilisez pour vous connecter à SharePoint Online prend en charge IPv6, il utilise IPv6 par défaut.
   
-Si le programme que vous utilisez pour vous connecter à SharePoint Online prend en charge IPv6, il utilisera IPv6 par défaut sur les réseaux câblés et sans fil. Si vous souhaitez contrôler les communications vers SharePoint Online, utilisez les plages d’adresses IP Office 365 [url et les plages d’adresses IP.](urls-and-ip-address-ranges.md)
+Si le programme que vous utilisez pour vous connecter à SharePoint Online prend en charge IPv6, il utilisera IPv6 par défaut sur les réseaux câblés et sans fil. Si vous souhaitez contrôler les communications vers SharePoint Online, utilisez les plages d’adresses IP dans les URL Office 365 et les [plages d’adresses IP.](urls-and-ip-address-ranges.md)
   
- **Office 365 Secteur Public G1/G3/G4/K1** Si le programme que vous utilisez pour vous connecter à SharePoint Online prend en charge IPv6, il tentera d’utiliser IPv6 par défaut.
+ 
   
 ### <a name="skype-for-business-and-ipv6"></a>Skype Entreprise et IPv6
 
-Sachez qu’IPv6 n’est pas pris en Skype Entreprise et ne peut plus être activé.
+Sachez qu’IPv6 n’est pas pris en charge dans Skype Entreprise et ne peut plus être activé.
 
 ### <a name="microsoft-teams-and-ipv6"></a>Microsoft Teams et IPV6
 
-Microsoft Teams Le routage direct prend uniquement en charge IPv4. Le service Microsoft Teams et le client sont tous deux en charge IPv4 et IPv6. Si vous souhaitez contrôler les communications à Microsoft Teams, utilisez les plages d’adresses IP dans Office 365 [URL et les plages d’adresses IP.](urls-and-ip-address-ranges.md)
+Le routage direct De Microsoft Teams prend uniquement en charge IPv4. Le service et le client Microsoft Teams supportent IPv4 et IPv6. Si vous souhaitez contrôler les communications vers Microsoft Teams, utilisez les plages d’adresses IP dans les URL Office 365 et les [plages d’adresses IP.](urls-and-ip-address-ranges.md)
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection et IPv6
 
-Exchange Online Protection (EOP) prend en charge IPv6 si la transmission se produit par le protocole transport Layer Security. Pour la plage EOP, utilisez [Office 365 URL et plages d’adresses IP.](urls-and-ip-address-ranges.md)
+Exchange Online Protection (EOP) prend en charge IPv6 si la transmission se produit par le protocole transport Layer Security. Pour la plage EOP, utilisez les URL [Office 365 et les plages d’adresses IP.](urls-and-ip-address-ranges.md)
   
-### <a name="ipv6-support-for-office-365-government-offerings"></a>Prise en charge d’IPv6 pour Office 365 offres gouvernementales
+### <a name="ipv6-support-for-office-365-government-offerings"></a>Prise en charge d’IPv6 pour les offres Office 365 pour le gouvernement
 
-Office 365 La prise en charge d’IPv6 pour les offres gouvernementales est conforme à la Office de gestion et budget (OMB) Premier responsable des responsables de l’information des services et agences exécutifs, ainsi qu’au programme d’adoption du protocole IPv6 (Internet Protocol Version 6) par le gouvernement fédéral. [Microsoft Office 365 pour le gouvernement](https://go.microsoft.com/fwlink/p/?LinkId=325414) est un service multi-clients qui stocke les données du gouvernement américain dans un cloud communautaire séparé. Comme d’autres Office 365, il fournit des services de productivité et de collaboration, notamment Exchange Online, Skype Entreprise, SharePoint Online et Applications Microsoft 365 pour les grandes entreprises. 
+La prise en charge d’Office 365 IPv6 pour les offres gouvernementales est conforme à la loi OMB (Office of Management and Budget) Premier responsable de l’information des services et agences, ainsi qu’à l’adoption par le gouvernement fédéral du protocole IPv6 (Internet Protocol Version 6). [Microsoft Office 365](https://go.microsoft.com/fwlink/p/?LinkId=325414) pour le gouvernement est un service multi-clients qui stocke les données du gouvernement américain dans un cloud communautaire séparé. Comme d’autres offres Office 365, il fournit des services de productivité et de collaboration, notamment Exchange Online, Skype Entreprise, SharePoint Online et Microsoft 365 Apps for enterprise. 
 
-Les Microsoft Office 365 du gouvernement ne s’appliquent qu’en 2013 et les ultérieures. Pour plus d’informations sur les offres Office 365 pour le gouvernement, voir [Annonces](https://go.microsoft.com/fwlink/p/?LinkId=325414)Office 365 pour le gouvernement : une Cloud de la communauté du secteur public . La réglementation ITAR (International Traffic in Arms Regulations) est un ensemble de réglementations gouvernementales américaines qui contrôlent l’exportation et l’importation d’articles et de services relatifs à la défense sur la liste de munitions des États-Unis [(USML).](https://go.microsoft.com/fwlink/p/?LinkId=325415) 
+Les Microsoft Office 365 pour le gouvernement s’appliquent uniquement pour 2013 et les ultérieures. Pour plus d’informations sur les offres Office 365 pour le gouvernement, voir [Annonce d’Office 365](https://go.microsoft.com/fwlink/p/?LinkId=325414)pour le gouvernement : un cloud communautaire pour le gouvernement des États-Unis. La réglementation ITAR (International Traffic in Arms Regulations) est un ensemble de réglementations gouvernementales américaines qui contrôlent l’exportation et l’importation d’articles et de services relatifs à la défense sur la liste de munitions des États-Unis [(USML).](https://go.microsoft.com/fwlink/p/?LinkId=325415) 
 
-Microsoft Office 365 entreprise fournit des services d’hébergement dédiés pour les solutions de productivité Microsoft qui permettent de prendre en charge les exigences de sécurité, de confidentialité et de conformité réglementaire pour les agences fédérales américaines nécessitant la certification FISMA (Federal Information Security Management) et les entités commerciales soumises à ITAR.
+Microsoft Office 365 pour les entreprises fournit des services d’hébergement dédiés pour les solutions de productivité Microsoft qui assurent la sécurité, la confidentialité et la conformité réglementaire pour les agences fédérales américaines nécessitant la certification FISMA (Federal Information Security Management) et les entités commerciales soumises à ITAR.
   
-## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>Éléments à prendre en compte lors de l’utilisation d’IPv6 Office 365
+## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>Éléments à prendre en compte lors de l’utilisation d’IPv6 et d’Office 365
 
 Nous vous recommandons de ne pas désactiver IPv6. Pour plus d’informations, consultez cet [article d’aide.](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users) Pour déterminer les versions IP utilisées sur votre réseau, prenons en compte les considérations suivantes :
   
@@ -77,13 +77,13 @@ Nous vous recommandons de ne pas désactiver IPv6. Pour plus d’informations, c
 
 Ces considérations peuvent s’appliquer à votre réseau :
   
-- Le service d’abonnement public ne prend pas en charge l’achat par carte de crédit sur IPv6. Cela ne s’applique pas au Cloud de la communauté du secteur public (Cloud de la communauté du secteur public), car les gouvernements ont Accord Entreprise (EA).
+- Le service d’abonnement public ne prend pas en charge l’achat par carte de crédit sur IPv6. Cela ne s’applique pas au cloud communautaire du gouvernement (GCC), car les gouvernements disposent de licences d’accord Entreprise (EA).
 
 - IPv6 ne prend pas en charge certains scénarios RMS (Rights Management Services).
 
 - IPv6 ne prend pas en charge BlackBerry® Enterprise Server (BES), car BlackBerry ne prend pas en charge IPv6.
 
-- Si vous utilisez les services AD FS (Active Directory Federation Services) avec Office 365, la publicité de votre point de terminaison réseau AD FS pour Office 365 l’utilisation d’IPv6 n’est pas prise en charge. Vous ne devez pas inclure d’enregistrements AAAA dans l’entrée DNS AD FS lors de l’utilisation Exchange Online. 
+- Si vous utilisez les services AD FS (Active Directory Federation Services) avec Office 365, la publicité de votre point de terminaison réseau AD FS vers Office 365 à l’aide d’IPv6 n’est pas prise en charge. Vous ne devez pas inclure d’enregistrements AAAA dans l’entrée DNS AD FS lors de l’utilisation d’Exchange Online. 
 
 Voici un bref lien que vous pouvez utiliser pour revenir : [https://aka.ms/o365ip6]()
   

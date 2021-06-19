@@ -19,60 +19,86 @@ description: Découvrez les actions de correction dans les fonctionnalités d’
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 8fc01ab0dd5178032ea7b101f5361c25bb10bbea
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904127"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028930"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Examiner et gérer les actions de correction dans Office 365
 
 **S’applique à**
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Comme des enquêtes automatisées sur & de collaboration  entraînent des verdicts, tels que malveillants ou suspects, certaines actions de correction sont créées. Dans Microsoft Defender pour Office 365, les actions de correction peuvent inclure :
 
-- Blocage d’une URL (heure de clic)
 - Suppression de messages électroniques ou de clusters de suppression (soft)
-- Mise en quarantaine des pièces jointes ou des e-mails
 - Turning off external mail forwarding
 
-Ces mesures correctives ne sont prises que si votre équipe en charge des opérations de sécurité ne les approuve pas. Nous vous recommandons d’examiner et d’approuver les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu. Dans certains cas, vous pouvez annuler une action de correction.
+Ces mesures correctives ne sont prises que si votre équipe en charge des opérations de sécurité ne les approuve pas. Nous vous recommandons d’examiner et d’approuver les actions en attente dès que possible afin que vos enquêtes automatisées se terminent en temps voulu. Dans certains cas, vous pouvez reconsidérer les actions envoyées.  Vous devez faire partie du rôle De recherche & purge avant d’effectuer des actions.
+
 
 ## <a name="approve-or-reject-pending-actions"></a>Approuver (ou rejeter) les actions en attente
+Il existe quatre façons de rechercher et d’agir sur des enquêtes automatiques :
 
-1. Go to the Microsoft 365 Defender portal ( <https://security.microsoft.com> ) and sign in.
+- [File d’attente des incidents](https://security.microsoft.com/incidents)
+- [Centre de notifications](https://security.microsoft.com/action-center/pending)
+- Examen proprement dit (accessible via incident ou à partir d’une alerte)
+- [File d’attente des examens d’investigation et de correction](https://security.microsoft.com/airinvestigation)
+
+## <a name="incident-queue"></a>File d’attente des incidents
+1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
+2. Dans le volet de navigation, sélectionnez **Incidents & alertes > Incidents**.
+3. Sélectionnez un nom d’incident pour ouvrir sa page récapitulatif.
+4. Sélectionnez **l’onglet Preuve et** réponse.
+5. Sélectionnez un élément dans la liste. Son volet latéral s’ouvre.
+6. Dans le volet latéral, prenez des mesures d’approbation ou de rejet.
+
+## <a name="investigation-queue"></a>File d’attente d’examen 
+1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
+2. Naviguez à partir de la page alertes/incident. 
+3. Dans la page Examen, allez dans **l’onglet Actions en** attente. 
+4. Sélectionnez un élément dans la liste. Son volet latéral s’ouvre.  
+5. Dans le volet latéral, prenez des mesures d’approbation ou de rejet.
+
+## <a name="action-center"></a>Centre de notifications
+1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
 2. Dans le volet de navigation, sélectionnez **Centre de l’action.**
 3. Sous **l’onglet En** attente, examinez la liste des actions en attente d’approbation.
-4. Sélectionnez un élément dans la liste. Son volet volant s’ouvre. 
-5. Examinez les informations dans le volet volant, puis prenez l’une des étapes suivantes :
    - Sélectionnez **Ouvrir la page Examen** pour afficher plus de détails sur l’enquête.
    - Sélectionnez **Approuver** pour lancer une action en attente.
    - Sélectionnez **Rejeter** pour empêcher une action en attente d’être prise.
 
+## <a name="investigation-and-remediation-investigations-queue"></a>File d’attente des examens d’investigation et de correction
+1. Go to the [Microsoft 365 security center](https://security.microsoft.com) and sign in.
+2. Ouvrir les enquêtes en attente. 
+3. Dans la page Examen, allez dans **l’onglet Actions en** attente.
+4. Sélectionnez un élément dans la liste. Son volet latéral s’ouvre.  
+5. Dans le volet latéral, prenez des mesures d’approbation ou de rejet.
+
 ## <a name="change-or-undo-one-remediation-action"></a>Modifier ou annuler une action de correction
 
-1. Go to the Action center ( <https://security.microsoft.com/action-center> ) and sign in.
+Il existe deux façons de reconsidérer les actions envoyées :
+   - Via le centre [de l’action unifiée.](https://security.microsoft.com/action-center)
+   - Bien que le [centre Office actions .](https://security.microsoft.com/threatincidents)
+   
+## <a name="change-or-undo-through-the-unified-action-center"></a>Modifier ou annuler via le centre de l’action unifiée
+1. Go to the [unified action center](https://security.microsoft.com/action-center) and sign in.
 2. Sous **l’onglet** Historique, sélectionnez une action que vous souhaitez modifier ou annuler.
-3. Dans le volet sur le côté droit de l’écran, sélectionnez **Annuler**.
+3. Dans le volet sur le côté droit de l’écran, sélectionnez l’action appropriée **(** déplacer vers la boîte de **réception,** déplacer vers le courrier **indésirable,** déplacer vers les éléments supprimés , **suppression (suppression souple) ou suppression (supprimer **définitivement).**
 
-## <a name="change-or-undo-multiple-remediation-actions"></a>Modifier ou annuler plusieurs actions de correction
-
-1. Go to the Action center ( <https://security.microsoft.com/action-center> ) and sign in.
-2. Sous **l’onglet** Historique, sélectionnez les actions que vous souhaitez modifier ou annuler. Veillez à sélectionner les éléments qui ont le même type d’action. Un volet volant s’ouvre.
-3. Dans le volet volant, sélectionnez Annuler.
-
-## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Pour supprimer un fichier de la quarantaine sur plusieurs appareils
-
-1. Go to the Action center ( <https://security.microsoft.com/action-center> ) and sign in.
-2. Sous **l’onglet** Historique, sélectionnez un fichier dont le fichier de mise en quarantaine du type d’action **est sélectionné.**
-3. Dans le volet sur le côté droit de l’écran, sélectionnez Appliquer à **X plus d’instances** de ce fichier, puis **sélectionnez Annuler**.
+ ## <a name="change-or-undo-through-the-office-action-center"></a>Modifier ou annuler via le centre de Office actions 
+1. Go to the [Office action center](https://security.microsoft.com/threatincidents) and sign in.
+2. Sélectionnez la correction appropriée.
+3. Dans le volet latéral, cliquez sur l’entrée des envois de courrier et attendez le chargement de la liste. 
+4. Attendez que le bouton Action en haut s’active et sélectionnez le bouton Action pour modifier le type d’action. 
+5. Cela crée les actions appropriées.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Utiliser l’Explorateur de menaces](threat-explorer.md)
+- [Utiliser l’Explorateur de menaces](threat-explorer.md) 
+- [Actions d’administration /manuelles](remediate-malicious-email-delivered-office-365.md)
 - [Comment signaler les faux positifs/négatifs dans les fonctionnalités automatisées d’examen et de réponse](air-report-false-positives-negatives.md)
 
 ## <a name="see-also"></a>Voir aussi
