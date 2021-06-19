@@ -20,12 +20,12 @@ ms.custom:
 description: Les utilisateurs peuvent découvrir comment afficher et gérer les messages mis en quarantaine dans Exchange Online Protection (EOP) qui auraient dû leur être remis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 02119130df847da48f0c25ba13cbb321c83f59dd
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: c0f95561977c453d7040d84ba0c779c3d33e07f0
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028390"
+ms.locfileid: "53029824"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Rechercher et publier des messages mis en quarantaine en tant qu’utilisateur dans EOP
 
@@ -38,6 +38,18 @@ ms.locfileid: "53028390"
 
 Dans les organisations Microsoft 365 avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection (EOP) autonomes sans boîtes aux lettres Exchange Online, la quarantaine contient des messages potentiellement dangereux ou indésirables. Si vous souhaitez en savoir plus, consultez l’article [La quarantaine dans EOP](quarantine-email-messages.md).
 
+En tant que destinataire d’un message mis en quarantaine, ce que vous pouvez effectuer avec le message en tant qu’utilisateur non administrateur est décrit dans le tableau suivant :
+
+<br>
+
+****
+
+|Raison de la mise en quarantaine :|Afficher|Débloquer|Supprimer|
+|---|:---:|:---:|:---:|
+|En nombre|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|Courrier indésirable|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|![Coche](../../media/checkmark.png)|
+|Hameçonnage (à confiance peu élevée)|![Coche](../../media/checkmark.png)||![Coche](../../media/checkmark.png)|
+|
 
 Vous pouvez afficher et gérer vos messages mis en quarantaine dans le Portail Microsoft 365 Defender ou (si un administrateur a utilisé cette configuration) dans les [notifications de courrier indésirable de l’utilisateur final](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
