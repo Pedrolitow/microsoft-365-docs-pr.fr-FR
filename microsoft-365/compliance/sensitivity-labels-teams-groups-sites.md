@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694400"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028978"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -163,20 +163,6 @@ Toutes les applications ne prennent pas en charge les contextes d'authentificati
     - Android : pas encore pris en charge
 
 Restrictions connues pour cette version préliminaire :
-
-- Cette fonctionnalité est en cours de déploiement pour certains clients. Si la stratégie d'accès conditionnel avec le contexte d'authentification sélectionné ne prend pas effet lorsqu'un utilisateur accède au site, vous pouvez utiliser PowerShell pour confirmer que votre configuration est correcte et que toutes les conditions préalables sont remplies. Vous devez supprimer l’étiquette de confidentialité du site, puis configurer le site pour le contexte d’authentification à l’aide de l’applet de commande [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) à partir de l'actuel [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online). Si cette méthode fonctionne, patientez quelques jours avant de réessayer d’appliquer l’étiquette de confidentialité.
-    
-    Pour tester le contexte d’authentification à l’aide de PowerShell :
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
-    ```
-    
-    Pour supprimer le contexte d’authentification afin de pouvoir réessayer d’appliquer l’étiquette de confidentialité :
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
-    ```
 
 - Pour l'application de synchronisation OneDrive, prise en charge pour OneDrive uniquement et non pour les autres sites.
 
@@ -429,13 +415,19 @@ Pour vous aider à gérer la coexistence des étiquettes de confidentialité et 
 
 Si un utilisateur télécharge un document sur un site protégé par une étiquette de confidentialité et son document comporte une étiquette de confidentialité [plus élevée](sensitivity-labels.md#label-priority-order-matters) que celle du site, cette action n’est pas bloquée. Par exemple, vous avez appliqué l’étiquette **Général** à un site SharePoint, et une personne télécharge un document étiqueté comme **Confidentiel**. Une étiquette de confidentialité ayant une priorité plus élevée identifie un contenu plus sensible qu’un contenu présentant un ordre de priorité plus faible, cette situation peut devenir un problème de sécurité.
 
-Bien que l’action ne soit pas bloquée, elle est auditée et génère automatiquement un courrier électronique à la personne qui a chargé le document et à l’administrateur du site. Par conséquent, l’utilisateur et les administrateurs peuvent identifier les documents comportant un mauvais alignement de la priorité d’étiquette et prendre des mesures, le cas échéant. Par exemple, supprimer ou déplacer le document téléchargé à partir du site.
+Bien que l’action ne soit pas bloquée, elle est auditée et par défaut, génère automatiquement un courrier électronique à la personne qui a chargé le document et à l’administrateur du site. Par conséquent, l’utilisateur et les administrateurs peuvent identifier les documents comportant un mauvais alignement de la priorité d’étiquette et prendre des mesures, le cas échéant. Par exemple, supprimer ou déplacer le document téléchargé à partir du site.
 
 Il ne s’agit pas d’un problème de sécurité si le document comprend une étiquette de confidentialité de priorité inférieure à celle appliquée sur le site. Par exemple, un document marqué **Général** est téléchargé sur un site intitulé **Confidentiel**. Dans ce scénario, l’événement d’audit et l’e-mail ne sont pas générés.
 
 Pour rechercher le journal d’audit pour cet événement, recherchez **Correspondance incorrecte des documents détectés** dans la catégorie **Activités de fichiers et de pages**.
 
 Le message électronique généré automatiquement a l’objet **Étiquette de confidentialité incompatible détectée** et que le courrier électronique décrit l’incompatibilité entre les étiquettes avec un lien vers le document et le site téléchargés. Il contient également un lien vers la documentation expliquant comment les utilisateurs peuvent modifier l’étiquette de confidentialité. Pour le moment, ces messages automatisés ne peuvent pas être désactivés ou personnalisés.
+
+Pour empêcher ce message généré automatiquement, utilisez la commande PowerShell suivante à partir de [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) :
+
+```PowerShell
+Set-SPOTenant -BlockSendLabelMismatchEmail $True
+```
 
 Lorsque quelqu’une personne ajoute ou supprime une étiquette de sensibilité sur ou à partir d’un site ou d’un groupe, ces activités sont également auditées, mais l’e-mail n’est pas généré automatiquement.
 

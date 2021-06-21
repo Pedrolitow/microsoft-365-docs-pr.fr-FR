@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Attribuez des licences selon que vous voulez attribuer des licences de produits à des utilisateurs spécifiques ou attribuer des licences d'utilisateurs à un produit spécifique.
 ms.date: 04/26/2021
-ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c8e5c6a648f08aaba97fe05e19a5cfa0cada2174
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537534"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007008"
 ---
 # <a name="assign-licenses-to-users"></a>Attribuer des licences aux utilisateurs
 
@@ -41,8 +41,8 @@ Vous pouvez attribuer des licences à des utilisateurs à partir de la page des 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../add-users/about-admin-roles.md).
-- Vous pouvez [attribuer des licences Microsoft 365 à des comptes utilisateurs avec PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- Vous devez être un administrateur général, une licence ou un administrateur d’utilisateur pour attribuer des licences. Si vous souhaitez en savoir plus, consultez l’article [À propos des rôles d’administrateur Microsoft 365](../add-users/about-admin-roles.md).
+- Vous pouvez [attribuer des licences Microsoft 365 à des comptes utilisateurs avec PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - Pour utiliser la gestion des licences basée sur les groupes, voir [Attribuer des licences aux utilisateurs par appartenance aux groupes dans Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Certains services, tels que Sway, sont automatiquement attribués aux utilisateurs et n’ont donc pas besoin d’être attribués individuellement.
 
@@ -59,7 +59,7 @@ Lorsque vous utilisez la page **Licences** pour l'attribution de licences, vous 
 
 ::: moniker range="o365-germany"
 
- 1. Dans le centre **d'administration**, allez\> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">à la page Licences</a> de facturation.
+ 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ S’il existe un conflit, un message s’affiche, vous indiquant la nature du pr
 
 ::: moniker range="o365-germany"
 
- 1. Dans le centre **d'administration**, allez\> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">à la page Licences</a> de facturation.
+ 1. Dans le Centre d’administration, choisissez la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licences</a>.
 
 ::: moniker-end
 
@@ -117,7 +117,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 
 ::: moniker range="o365-germany"
 
- 1. Dans le centre d'administration, **allez** à la\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">page Utilisateurs</a> actifs.
+ 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -129,11 +129,12 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 
 
 2. Sélectionnez les cercles en regard des noms d'utilisateurs auxquels vous voulez attribuer des licences.
-3. En haut, sélectionnez les trois points (autres actions), puis sélectionnez **Gérer les licences de produits**.
-4. Dans le volet **Attribuer des licences de produits**, sélectionnez **Ajouter aux attributions de licence de produit existantes** \> **Suivant**.
-5. Dans le volet **Ajouter aux produits existants**, positionnez le bouton bascule sur **Actif** correspondant à la licence que vous voulez attribuer aux utilisateurs sélectionnés.\
-    Par défaut, tous les services associés à ces licences sont automatiquement attribués aux utilisateurs. Vous pouvez limiter les services mis à disposition des utilisateurs. Positionnez le bouton bascule sur **Inactif** pour les services que vous ne souhaitez pas attribuer aux utilisateurs.
-6. Dans la partie inférieure du volet, sélectionnez **Ajouter** \> **Fermer**.  
+3. Dans la partie supérieure, sélectionnez **Gérer des licences de produits**.
+4. Dans le volet **Gérer les licences de produits**, sélectionnez **Affecter plus : conserver les licences existantes et en affecter d’autres** \> **Suivant**.
+5. Sous **Licences**, sélectionnez la case pour la ou les licences que vous souhaitez attribuer aux utilisateurs sélectionnés.
+    Par défaut, tous les services associés à ces licences sont automatiquement attribués aux utilisateurs. Pour limiter les services auxquels peuvent accéder les utilisateurs, désactivez les cases correspondant aux services concernés.
+6. Dans la partie inférieure du volet, sélectionnez **Enregistrer les modifications**.  
+    Vous devrez peut-être acheter d’autres licences si leur nombre est insuffisant pour tout le monde.
 
 
 > [!NOTE]
@@ -149,7 +150,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 
 ::: moniker range="o365-germany"
 
- 1. Dans le centre d'administration, **allez** à la\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">page Utilisateurs</a> actifs.
+ 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utilisateurs actifs</a>.
 
 ::: moniker-end
 
@@ -166,7 +167,7 @@ Lorsque vous utilisez la page **Utilisateurs actifs** pour attribuer des licence
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Attribuer une licence à un utilisateur invité
 
-Vous pouvez inviter des utilisateurs invités à collaborer avec votre organisation dans le Centre d’administration Azure Active Directory. Pour en savoir plus sur l’estimation des utilisateurs, consultez[Qu’est-ce que l’accès utilisateur invité dans Azure Active Directory B2B ?](/azure/active-directory/external-identities/what-is-b2b). Si vous n’avez pas d’utilisateurs invités, consultez [Démarrage rapide : ajouter des utilisateurs invités à votre annuaire dans le portail Azure](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+Vous pouvez inviter des utilisateurs invités à collaborer avec votre organisation dans le Centre d’administration Azure Active Directory. Pour en savoir plus sur l’estimation des utilisateurs, consultez[Qu’est-ce que l’accès utilisateur invité dans Azure Active Directory B2B ?](/azure/active-directory/external-identities/what-is-b2b). Si vous n’avez pas d’utilisateurs invités, consultez [Démarrage rapide : ajouter des utilisateurs invités à votre annuaire dans le portail Azure](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > Vous devez être un administrateur général pour effectuer ces étapes.

@@ -1,5 +1,5 @@
 ---
-title: 'Création de sites d’équipe : environnement de développement dans le cadre d’une campagne électorale'
+title: 'Création de sites d’équipe : environnement de développement dans le cadre d’une campagne électorale'
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -16,15 +16,15 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
-description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
+description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f680cfb30de5b6904e5fa489cca368550195b4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204414"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028774"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
@@ -32,21 +32,21 @@ ms.locfileid: "51204414"
 
 **S’applique à**
 
-- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
-- 
- **Résumé :** Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale. 
+- [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
+
+ **Résumé :** Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale. 
    
 Utilisez les instructions fournies dans cet article pour créer un environnement de développement/test qui inclut les quatre différents types de sites d’équipe SharePoint Online pour la solution des [conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et autres organisations souples](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md). Ces sites sont décrits en détail dans la Rubrique 10 intitulée **SharePoint et OneDrive Entreprise**.
 
-## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test dans le cadre d’une campagne électorale
+## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test dans le cadre d’une campagne électorale
 
 Tout d’abord, suivez les instructions de [Configurer de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) pour créer vos abonnements, utilisateurs et groupes.
 
-## <a name="phase-2-create-labels"></a>Phase 2 : Création d’étiquettes
+## <a name="phase-2-create-labels"></a>Phase 2 : Création d’étiquettes
 
-Dans cette phase, vous allez créer les étiquettes correspondant aux différents niveaux de sécurité pour les dossiers de document du site d’équipe SharePoint Online.
+Dans cette phase, vous allez créer les étiquettes correspondant aux différents niveaux de sécurité pour les dossiers de document du site d’équipe SharePoint Online.
 
-1. Si nécessaire, connectez-vous au centre d’administration avec les identifiants du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au centre d'administration avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Sous l’onglet **Accueil Microsoft Office**, cliquez sur la vignette **Administration**.
 
@@ -62,7 +62,7 @@ Dans cette phase, vous allez créer les étiquettes correspondant aux différent
 
 8. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer cette étiquette**, puis cliquez sur **Fermer**.
 
-9. Répétez les étapes 5 à 8 pour les autres étiquettes suivantes :
+9. Répétez les étapes 5 à 8 pour les autres étiquettes suivantes :
 
    - Privé
    - Sensible
@@ -84,9 +84,9 @@ Dans cette phase, vous allez créer les étiquettes correspondant aux différent
 
 17. Dans le volet **Vérifier vos paramètres**, cliquez sur **Publier les étiquettes**, puis cliquez sur **Fermer**.
 
-## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Phase 3 : Créer vos sites d’équipe SharePoint Online
+## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Phase 3 : Créer vos sites d’équipe SharePoint Online
 
-Lors de cette phase, vous allez créer et configurer des sites d’équipe SharePoint Online pour votre campagne électorale correspondant aux quatre types de sites d’équipe SharePoint Online.
+Lors de cette phase, vous allez créer et configurer des sites d’équipe SharePoint Online pour votre campagne électorale correspondant aux quatre types de sites d’équipe SharePoint Online.
 
 ### <a name="campaign-wide-team-site"></a>Site d’équipe de la campagne
 
@@ -118,9 +118,9 @@ Ensuite, configurez le dossier de documents du site d’équipe de la campagne p
 
 4. Dans **Paramètres - Appliquer l’étiquette**, sélectionnez **Interne**, puis cliquez sur **Enregistrer**.
 
-### <a name="campaign-project-1-team-site"></a>Site d’équipe 1 du projet Campagne
+### <a name="campaign-project-1-team-site"></a>Site d’équipe 1 du projet Campagne
 
-Pour créer un site d’équipe SharePoint Online privé de référence pour un projet dans la campagne, procédez comme suit :
+Pour créer un site d’équipe SharePoint Online privé de référence pour un projet dans la campagne, procédez comme suit :
 
 1. Si nécessaire, utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration (<https://admin.microsoft.com>) à l’aide de votre compte d’administrateur général.
 
@@ -130,17 +130,17 @@ Pour créer un site d’équipe SharePoint Online privé de référence pour u
 
 4. Dans la page **Créer un site**, cliquez sur **Site d’équipe**.
 
-5. Dans **Nom du site**, saisissez **Projet de campagne 1**.
+5. Dans **Nom du site**, saisissez **Projet de campagne 1**.
 
-6. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour le projet de campagne 1**.
+6. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour le projet de campagne 1**.
 
 7. Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
 
 8. Dans le volet **Qui voulez-vous ajouter ?**, cliquez sur **Terminer**.
 
-Ensuite, configurez le dossier de documents du site d’équipe Projet Campagne 1 pour l’étiquette Privé.
+Ensuite, configurez le dossier de documents du site d’équipe Projet Campagne 1 pour l’étiquette Privé.
 
-1. Dans l’onglet **Projet Campagne 1 - Accueil** de votre navigateur, cliquez sur **Documents**.
+1. Dans l’onglet **Projet Campagne 1 - Accueil** de votre navigateur, cliquez sur **Documents**.
 
 2. Cliquez sur l’icône des paramètres, puis cliquez sur **Paramètres de la bibliothèque**.
 
@@ -150,7 +150,7 @@ Ensuite, configurez le dossier de documents du site d’équipe Projet Campagne
 
 ### <a name="campaign-marketing-team-site"></a>Site d’équipe marketing de campagne
 
-Pour créer un site d’équipe SharePoint Online isolé pour les données sensibles des ressources marketing de la campagne, procédez comme suit :
+Pour créer un site d’équipe SharePoint Online isolé pour les données sensibles des ressources marketing de la campagne, procédez comme suit :
 
 1. Utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration (<https://admin.microsoft.com>) à l’aide de votre compte d’administrateur général.
 
@@ -162,7 +162,7 @@ Pour créer un site d’équipe SharePoint Online isolé pour les données sen
 
 5. Dans **Nom du site d’équipe**, saisissez **Ressources marketing de la campagne**.
 
-6. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour les ressources marketing de la campagne (données sensibles)**.
+6. Dans **Description du site d’équipe**, saisissez **Site SharePoint pour les ressources marketing de la campagne (données sensibles)**.
 
 7. Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
 
@@ -182,7 +182,7 @@ Pour créer un site d’équipe SharePoint Online isolé pour les données sen
 
 15. Dans la boîte de dialogue **Partager**, saisissez **Personnel senior et stratégique**, sélectionnez-le, puis cliquez sur **Partager**.
 
-16. Répétez les étapes 14 et 15 pour le groupe **Analytics staff** et le compte d’utilisateur **Standard1**.
+16. Répétez les étapes 14 et 15 pour le groupe **Analytics staff** et le compte d’utilisateur **Standard1**.
 
 17. Cliquez sur le bouton de retour de votre navigateur.
 
@@ -196,19 +196,19 @@ Pour créer un site d’équipe SharePoint Online isolé pour les données sen
 
 22. Fermez l’onglet **Personnes et groupes** de votre navigateur, cliquez sur l’onglet **Marketing campagne - Accueil** de votre navigateur, puis fermez le volet **Autorisations du site**.
 
-Voici les résultats de la configuration des autorisations :
+Voici les résultats de la configuration des autorisations :
 
-- Le groupe SharePoint **Marketing campagne - Membres** contient uniquement le groupe **Senior and strategic staff** (qui contient les comptes d’utilisateurs Candidate, ChiefOfStaff et Strategic1), le groupe **Marketing campagne** (qui contient le compte d’administrateur général), le groupe **Analytics staff** (qui contient le compte d’utilisateur DataScientist1) et le compte d’utilisateur **Regular1**.
+- Le groupe SharePoint **Marketing campagne - Membres** contient uniquement le groupe **Senior and strategic staff** (qui contient les comptes d’utilisateurs Candidate, ChiefOfStaff et Strategic1), le groupe **Marketing campagne** (qui contient le compte d’administrateur général), le groupe **Analytics staff** (qui contient le compte d’utilisateur DataScientist1) et le compte d’utilisateur **Regular1**.
 
-- Le groupe SharePoint **Marketing campagne - Propriétaires** contient uniquement le groupe **Équipe informatique** (qui contient uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
+- Le groupe SharePoint **Marketing campagne - Propriétaires** contient uniquement le groupe **Équipe informatique** (qui contient uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
 
-- Le groupe SharePoint **Marketing campagne - Visiteurs** ne contient aucun groupe ou compte d’utilisateur.
+- Le groupe SharePoint **Marketing campagne - Visiteurs** ne contient aucun groupe ou compte d’utilisateur.
 
 - Les membres ne peuvent pas modifier les autorisations au niveau du site (cette opération peut être uniquement effectuée par les membres du groupe **Marketing campagne - Propriétaires**).
 
-- Les autres comptes d’utilisateurs ne peuvent pas accéder au site ni à ses ressources, mais peuvent demander d’avoir accès au site. Un courrier électronique sera envoyé à la boîte aux lettres du compte d’utilisateur ITAdmin1.
+- Les autres comptes d’utilisateurs ne peuvent pas accéder au site ni à ses ressources, mais peuvent demander d’avoir accès au site. Un courrier électronique sera envoyé à la boîte aux lettres du compte d’utilisateur ITAdmin1.
 
-Ensuite, configurez le dossier de documents du site d’équipe Marketing campagne pour l’étiquette Sensible.
+Ensuite, configurez le dossier de documents du site d’équipe Marketing campagne pour l’étiquette Sensible.
 
 1. Dans l’onglet **Marketing campagne - Accueil** de votre navigateur, cliquez sur **Documents**.
 
@@ -232,7 +232,7 @@ Ensuite, configurez une stratégie de protection contre la perte de données qui
 
 6. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
 
-7. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
+7. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
 
 8. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
 
@@ -254,15 +254,15 @@ Ensuite, configurez une stratégie de protection contre la perte de données qui
 
 16. Cliquez sur **OK**.
 
-17. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, désélectionnez la case **Empêcher les utilisateurs de partager un fichier et restreindre l’accès au contenu partagé**, puis cliquez sur **Suivant**.
+17. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, désélectionnez la case **Empêcher les utilisateurs de partager un fichier et restreindre l’accès au contenu partagé**, puis cliquez sur **Suivant**.
 
-18. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
+18. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
 
 19. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer**, puis cliquez sur **Fermer**.
 
 ### <a name="campaign-strategy-team-site"></a>Site d’équipe Stratégie de campagne
 
-Pour créer un site d’équipe SharePoint Online isolé hautement confidentiel pour les ressources de stratégie de campagne, procédez comme suit :
+Pour créer un site d’équipe SharePoint Online isolé hautement confidentiel pour les ressources de stratégie de campagne, procédez comme suit :
 
 1. Si nécessaire, utilisez un navigateur de votre ordinateur local et connectez-vous au centre d’administration (<https://admin.microsoft.com>) à l’aide de votre compte d’administrateur général.
 
@@ -274,7 +274,7 @@ Pour créer un site d’équipe SharePoint Online isolé hautement confidentie
 
 5. Dans **Nom du site d’équipe**, saisissez **Stratégie de campagne**.
 
-6. Dans **Description du site d’équipe** saisissez **Site SharePoint pour la stratégie de campagne (hautement confidentiel)**.
+6. Dans **Description du site d’équipe** saisissez **Site SharePoint pour la stratégie de campagne (hautement confidentiel)**.
 
 7. Dans **Paramètres de confidentialité**, sélectionnez **Privé - Seuls les membres peuvent accéder à ce site**, puis cliquez sur **Suivant**.
 
@@ -304,14 +304,14 @@ Pour créer un site d’équipe SharePoint Online isolé hautement confidentie
 
 20. Fermez l’onglet **Personnes et groupes** de votre navigateur, cliquez sur l’onglet **Stratégie de campagne - Accueil** de votre navigateur, puis fermez le volet **Autorisations du site**.
 
-Voici les résultats de la configuration des autorisations :
+Voici les résultats de la configuration des autorisations :
 
-- Le groupe SharePoint **Stratégie de campagne - Membres** contient uniquement le groupe **Senior and strategic staff** (qui contient uniquement les comptes d’utilisateurs Candidate, ChiefOfStaff et Strategic1) et le groupe **Stratégie de campagne** (qui contient uniquement le compte d’administrateur général).
+- Le groupe SharePoint **Stratégie de campagne - Membres** contient uniquement le groupe **Senior and strategic staff** (qui contient uniquement les comptes d’utilisateurs Candidate, ChiefOfStaff et Strategic1) et le groupe **Stratégie de campagne** (qui contient uniquement le compte d’administrateur général).
 
 
-- Le groupe SharePoint **Stratégie de campagne - Propriétaires** contient uniquement le groupe **Équipe informatique** (qui contient uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
+- Le groupe SharePoint **Stratégie de campagne - Propriétaires** contient uniquement le groupe **Équipe informatique** (qui contient uniquement les comptes d’utilisateurs ITAdmin1 et ITAdmin2).
 
-- Le groupe SharePoint **Stratégie de campagne - Visiteurs** ne contient aucun groupe ou compte d’utilisateur.
+- Le groupe SharePoint **Stratégie de campagne - Visiteurs** ne contient aucun groupe ou compte d’utilisateur.
 
 - Les membres ne peuvent pas modifier les autorisations au niveau du site (cette opération peut être uniquement effectuée par les membres du groupe **Stratégie de campagne - Propriétaires**).
 
@@ -325,7 +325,7 @@ Ensuite, configurez le dossier de documents du site d’équipe Stratégie de ca
 
 3. Sous **Autorisations et gestion**, cliquez sur **Appliquer l’étiquette aux éléments de cette bibliothèque**.
 
-4. Dans **Paramètres - Appliquer une étiquette**, sélectionnez **Hautement confidentiel**, puis cliquez sur **Enregistrer**.
+4. Dans **Paramètres - Appliquer une étiquette**, sélectionnez **Hautement confidentiel**, puis cliquez sur **Enregistrer**.
 
 Ensuite, configurez une stratégie DLP qui bloque les utilisateurs quand ils partagent un document à l’extérieur de l’organisation sur un site d’équipe SharePoint Online avec l’étiquette Hautement confidentiel. Cette stratégie DLP s’applique aux ressources du site Stratégie de campagne.
 
@@ -343,7 +343,7 @@ Ensuite, configurez une stratégie DLP qui bloque les utilisateurs quand ils par
 
 7. Dans le volet **Choisir des emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**, puis cliquez sur **Suivant**.
 
-8. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
+8. Dans la liste des emplacements, désactivez les emplacements **Messagerie Exchange** et **Comptes OneDrive**, puis cliquez sur **Suivant**.
 
 9. Dans le volet **Personnaliser les types d’informations sensibles que vous voulez protéger**, cliquez sur **Modifier**.
 
@@ -365,21 +365,21 @@ Ensuite, configurez une stratégie DLP qui bloque les utilisateurs quand ils par
 
 17. Cliquez sur **OK**.
 
-18. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, sélectionnez **Exiger une justification professionnelle pour le remplacement**, puis cliquez sur **Suivant**.
+18. Dans le volet **Que faire en cas de détection d’informations sensibles ?**, sélectionnez **Exiger une justification professionnelle pour le remplacement**, puis cliquez sur **Suivant**.
 
-19. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
+19. Dans le volet **Voulez-vous activer la stratégie ou d’abord effectuer des tests ?**, cliquez sur **Oui, l’activer maintenant**, puis cliquez sur **Suivant**.
 
 20. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer**, puis sur **Fermer**.
 
-Utilisez les instructions de [Comment activer Azure Rights Management à partir du Centre d’administration Microsoft 365](/information-protection/deploy-use/activate-office365).
+Utilisez les instructions de [Comment activer Azure Rights Management à partir du Centre d’administration Microsoft 365](/information-protection/deploy-use/activate-office365).
 
-Ensuite, configurez Azure Information Protection avec une nouvelle stratégie délimitée et une sous-étiquette pour la protection et les autorisations en suivant ces étapes :
+Ensuite, configurez Azure Information Protection avec une nouvelle stratégie délimitée et une sous-étiquette pour la protection et les autorisations en suivant ces étapes :
 
-1. Connectez-vous au centre d’administration avec un compte disposant du rôle Administrateur de la sécurité ou Administrateur de la société. Pour obtenir de l’aide, consultez [Où se connecter à Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Connectez-vous au centre d'administration avec un compte disposant du rôle Administrateur de sécurité ou Administrateur d’entreprise. Pour obtenir de l’aide, consultez la rubrique [Se connecter à Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Dans un nouvel onglet de votre navigateur, accédez au portail Azure (<https://portal.azure.com>).
 
-3. Dans le volet Rechercher, tapez **information**, puis cliquez **Azure Information Protection**.
+3. Dans le volet Rechercher, tapez **information**, puis cliquez **Azure Information Protection**.
 
 4. Cliquez sur **Étiquettes**.
 
@@ -409,22 +409,22 @@ Ensuite, configurez Azure Information Protection avec une nouvelle stratégie d�
 
 17. Cliquez sur **Sélectionner les utilisateurs ou groupes devant recevoir cette stratégie > Utilisateurs/Groupes**, puis sélectionnez **Personnel senior et stratégique**.
 
-18. Cliquez sur **Sélectionner \> OK**.
+18. Cliquez sur **Sélectionner \> OK**.
 
-19. Cliquez sur **Ajouter ou supprimer des étiquettes**. Dans le volet **Stratégie : Ajouter ou supprimer des étiquettes**, cliquez sur **CampaignStrategy**, puis sur **OK**.
+19. Cliquez sur **Ajouter ou supprimer des étiquettes**. Dans le volet **Stratégie : Ajouter ou supprimer des étiquettes**, cliquez sur **CampaignStrategy**, puis sur **OK**.
 
 20. Cliquez sur **Enregistrer**, puis sur **OK**.
 
-Vous êtes désormais prêt à créer des documents dans ces quatre sites et à tester l’accès à ces sites avec divers comptes d’utilisateurs.
+Vous êtes désormais prêt à créer des documents dans ces quatre sites et à tester l’accès à ces sites avec divers comptes d’utilisateurs.
 
 Pour protéger un document avec Azure Information Protection et cette nouvelle étiquette, vous devez [installer le client Azure Information Protection](/information-protection/rms-client/install-client-app) sur une machine de test, installer Office à partir du centre d’administration, puis vous connecter à partir de Microsoft Word avec un compte du groupe **Personnel senior et stratégique** de votre abonnement d’essai.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et d’autres organisations flexibles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 
 [Configuration de groupes et d’utilisateurs pour un environnement de développement/test pour une campagne électorale](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 
 [Guides de laboratoire de test d’adoption cloud](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Centre de solutions et d'architecture Microsoft 365](../../solutions/index.yml)
+[Centre de solutions et d'architecture Microsoft 365](../../solutions/index.yml)

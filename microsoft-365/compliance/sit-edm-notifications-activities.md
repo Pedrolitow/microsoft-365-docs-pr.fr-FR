@@ -1,5 +1,5 @@
 ---
-title: Créer des notifications pour les activités de correspondance de données exactes (aperçu)
+title: Créer des notifications pour les activités de correspondance de données exactes
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: En savoir plus sur la création des notifications pour les activités de correspondance de données exactes.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919360"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007560"
 ---
-# <a name="create-notifications-for-exact-data-match-activities-preview"></a>Créer des notifications pour les activités de correspondance de données exactes (aperçu)
+# <a name="create-notifications-for-exact-data-match-activities"></a>Créer des notifications pour les activités de correspondance de données exactes
 
-Lorsque vous [Créer des types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) le [journal d’audit](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)crée un certain nombre d'activités. Vous pouvez utiliser la cmdlet PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) pour créer des notifications qui vous avertiront de l’événement :
+Lorsque vous [Créer des types d’informations sensibles personnalisés à l’aide de la correspondance de données exacte (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) le [journal d’audit](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)crée un certain nombre d'activités. Vous pouvez utiliser la cmdlet PowerShell [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) pour créer des notifications qui vous avertiront de l’événement :
 
 - CreateSchema
 - EditSchema
@@ -34,12 +34,9 @@ Lorsque vous [Créer des types d’informations sensibles personnalisés à l’
 - UploadDataFailed
 - UploadDataCompleted
 
-> [!NOTE]
-> La possibilité de créer des notifications pour les activités de EDM n'est disponible que pour les clouds mondiaux et cloud de la communauté du secteur public.
-
 ## <a name="pre-requisites"></a>Conditions préalables
 
-Le compte que vous utilisez doit être l’un des suivants :
+Le compte que vous utilisez doit être l’un des suivants :
 
 - un administrateur général
 - administrateur de conformité
@@ -49,12 +46,12 @@ Pour en avoir plus sur les autorisations DLP, consultez la section[Autorisations
 
 La classification EDM est incluse dans ces abonnements
 
-- Office 365 E5
-- Microsoft 365 E5
-- Microsoft 365 E5 Conformité
+- Office 365 E5
+- Microsoft 365 E5
+- Microsoft 365 E5 Conformité
 - Microsoft E5/A5 Information Protection et gouvernance
 
-Si vous souhaitez en savoir plus les licences DLP, consultez la rubrique [Instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Si vous souhaitez en savoir plus les licences DLP, consultez la rubrique [Instructions relatives aux licences Microsoft 365 pour la sécurité et la conformité](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 ## <a name="configure-notifications-for-edm-activities"></a>Configurer les notifications pour les activités EDM
 

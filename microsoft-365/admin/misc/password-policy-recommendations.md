@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635973"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006924"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -112,7 +112,7 @@ En revanche, voici quelques recommandations favorisant une variété des mots de
   
 ### <a name="ban-common-passwords"></a>Interdire les mots de passe courants
 
-L’exigence de mot de passe la plus importante à imposer à vos utilisateurs lors de la création de mots de passe consiste à interdire l’utilisation de mots de passe communs afin de limiter la vulnérabilité de votre organisation aux attaques de mot de passe par force brute. Les mots de passe utilisateur courants incluent **abcdefg**, **motdepasse** et **singe**.
+L’exigence de mot de passe la plus importante à imposer à vos utilisateurs lors de la création de mots de passe consiste à interdire l’utilisation de mots de passe communs afin de limiter la vulnérabilité de votre organisation aux attaques de mot de passe par force brute. Les mots de passe utilisateur courants incluent : **abcdefg**, **motdepasse** et **singe**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Apprenez à vos utilisateurs à ne pas réutiliser ailleurs les mots de passe d’organisation
 
@@ -131,6 +131,8 @@ L’authentification multifacteur basée sur le risque s'assure que, lorsque not
 ## <a name="next-steps"></a>Étapes suivantes
 
 Vous voulez en savoir plus sur la gestion des mots de passe ? Voici quelques recommandations de lecture :
+
+- [Conseils sur les mots de passe Microsoft](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Les mots de passe web sont-ils performants ?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
