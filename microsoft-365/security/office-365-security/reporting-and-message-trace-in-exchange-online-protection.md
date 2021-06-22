@@ -15,12 +15,12 @@ ms.custom:
 description: Dans cet article, vous allez découvrir les rapports et les outils de dépannage disponibles pour les administrateurs Microsoft Exchange Online Protection des données (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 079e2b359f28b0b6bc3d7eac86e69060c65ea250
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cc49a92d5fb1fb0368b14eef7524638542f38deb
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841437"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054372"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Rapports et suivi des messages dans EOP
 
@@ -35,34 +35,21 @@ Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online
 
 ## <a name="usage-reports"></a>Rapports d’utilisation
 
-**Microsoft 365 groupes :** afficher des informations sur le nombre de groupes Microsoft 365 créés et utilisés.
+- **Microsoft 365 groupes :** afficher des informations sur le nombre de groupes Microsoft 365 créés et utilisés. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Microsoft 365 groupes.](../../admin/activity-reports/office-365-groups.md)
+- **Activité de** messagerie : afficher des informations sur le nombre de messages envoyés, reçus et lus dans toute votre organisation et par des utilisateurs spécifiques. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Activité de messagerie.](../../admin/activity-reports/email-activity.md)
+- **Utilisation de l’application de messagerie**: afficher des informations sur les applications de messagerie utilisées. Cela inclut le nombre total de connexions pour chaque application et les versions des Outlook qui se connectent. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Utilisation des applications de messagerie.](../../admin/activity-reports/email-apps-usage.md)
+- **Utilisation des boîtes aux** lettres : afficher les informations sur le stockage utilisé, la consommation de quota, le nombre d’éléments et la dernière activité (activité d’envoi ou de lecture) pour les boîtes aux lettres. Pour plus d’informations, [voir Microsoft 365 rapports dans le Centre d’administration - Utilisation des boîtes aux lettres.](../../admin/activity-reports/mailbox-usage.md)
 
-**Activité de messagerie**: afficher des informations sur le nombre de messages envoyés, reçus et lus dans toute votre organisation, et par des utilisateurs spécifiques.
-
-**Utilisation de l’application de messagerie**: afficher des informations sur les applications de messagerie utilisées. Ceci inclut le nombre total de connexions pour chaque application et les versions de Outlook qui se connectent.
-
-**Utilisation des boîtes aux** lettres : afficher les informations sur le stockage utilisé, la consommation de quota, le nombre d’éléments et la dernière activité (activité d’envoi ou de lecture) pour les boîtes aux lettres.
-
-Pour plus d'informations, consultez les ressources suivantes :
-
-- [Microsoft 365 Rapports dans le Centre d’administration : Microsoft 365 groupes](../../admin/activity-reports/office-365-groups.md)
-- [Microsoft 365 Rapports dans le Centre d’administration - Activité de messagerie](../../admin/activity-reports/email-activity.md)
-- [Microsoft 365 Rapports dans le Centre d’administration - Utilisation des applications de messagerie](../../admin/activity-reports/email-apps-usage.md)
-- [Microsoft 365 Rapports dans le Centre d’administration - Utilisation des boîtes aux lettres](../../admin/activity-reports/mailbox-usage.md)
-
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Rapports de conformité & sécurité dans le Centre d’administration Microsoft 365 de sécurité
+## <a name="security-reports-in-the-microsoft-365-defender-portal"></a>Rapports de sécurité dans le portail Microsoft 365 Defender
 
 Ces rapports améliorés offrent une expérience de rapport interactive pour les administrateurs EOP, qui inclut des informations récapitulatifs et la possibilité d’obtenir plus de détails.
 
-**Defender for Office 365**: afficher des informations sur les liens sécurisés et les pièces jointes sécurisées qui font partie de Microsoft Defender pour Office 365.
-
-**EOP**: afficher des informations sur les détections de programmes malveillants, les messages usurpés, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation.
-
-[Afficher des rapports pour Defender pour Office 365](view-reports-for-mdo.md)
+- **Defender pour Office 365**: afficher des informations sur les liens Coffre et les pièces jointes Coffre qui font partie de Microsoft Defender pour Office 365. Pour plus d’informations, [voir View Defender pour Office 365 rapports dans le portail Microsoft 365 Defender.](view-reports-for-mdo.md)
+- **EOP**: afficher des informations sur les détections de programmes malveillants, la messagerie usurpée, les détections de courrier indésirable et le flux de messagerie vers et depuis votre organisation. Pour plus d’informations, voir Afficher les rapports de sécurité de messagerie [dans le portail Microsoft 365 Defender.](view-email-security-reports.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Rapports personnalisés à l’aide de Microsoft Graph
 
-Créez par programme des rapports disponibles dans le Centre d’administration à l’aide de Microsoft Graph. Pour plus d’informations, voir [Vue d’ensemble](/graph/overview) de Microsoft Graph et utilisation des rapports [Office 365'utilisation dans Microsoft Graph](/graph/api/resources/report).
+Créez par programme des rapports disponibles dans le Centre d’administration à l’aide de Microsoft Graph. Pour plus d’informations, voir [Vue d’ensemble](/graph/overview) de Microsoft Graph et de l’utilisation Office 365 rapports d’utilisation [dans Microsoft Graph](/graph/api/resources/report).
 
 ## <a name="message-trace"></a>Suivi des messages
 
@@ -70,7 +57,7 @@ Suit les messages électroniques pendant qu'ils circulent dans EOP. Vous pouvez 
 
 Vous pouvez ainsi répondre efficacement aux questions de vos utilisateurs, résoudre les problèmes de flux de messagerie et valider les modifications de stratégie, tout en réduisant la nécessité de demander de l'aide à l'assistance technique.
 
-Voir [suivi des messages dans le Centre de sécurité & conformité.](message-trace-scc.md)
+Voir [suivi des messages dans le portail Microsoft 365 Defender.](message-trace-scc.md)
 
 ## <a name="audit-logging"></a>Journalisation d'audit
 
@@ -80,11 +67,13 @@ Effectue le suivi des modifications spécifiques apportées par les administrate
 
 Le tableau suivant présente la disponibilité des rapports et des données de suivi des messages EOP, ainsi que leur latence.
 
+<br>
+
 ****
 
 |Type de rapport|Données disponibles pendant (période rétrospective)|Latence|
 |---|---|---|
-|Rapports récapitulatifs sur la protection du courrier électronique|90 jours|L'agrégation quasi-complète des données des messages dure entre 24 et 48 heures. Des modifications agrégées incrémentielles mineures peuvent se produire jusqu'à 5 jours.|
+|Rapports récapitulatifs de la protection du courrier électronique|90 jours|L'agrégation quasi-complète des données des messages dure entre 24 et 48 heures. Des modifications agrégées incrémentielles mineures peuvent se produire jusqu'à 5 jours.|
 |Rapports détaillés sur la protection du courrier électronique|90 jours|Pour les messages de moins de 7 jours, les données détaillées apparaissent normalement dans les 24 heures, mais leur génération peut durer jusqu'à 48 heures. Il est possible que des modifications incrémentielles mineures soient apportées pendant 5 jours. <p> Pour les messages remontant à plus de sept jours, la génération des résultats détaillés peut prendre plusieurs heures.|
 |Données de suivi des messages|90 jours|Lorsque vous effectuez un suivi de messages remontant à moins de 7 jours, ces derniers apparaissent normalement dans les 5 à 30 minutes.<p> Lorsque vous effectuez un suivi de messages remontant à plus de 7 jours, la génération des résultats peut prendre plusieurs heures.|
 |

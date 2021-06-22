@@ -12,19 +12,19 @@ ms.collection: m365solution-managecontracts m365solution-overview
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint syntex, SharePoint listes, Microsoft Teams et Power Automate.
-ms.openlocfilehash: 352ebd1b9170aaf7829c414e87f7a79c4f17a1df
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint Syntex, SharePoint listes, Microsoft Teams et Power Automate.
+ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843769"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054758"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer des contrats en utilisant la solution Microsoft 365
 
-Cet article explique comment créer une solution de gestion des contrats pour votre organisation à l’aide SharePoint Syntex et des composants de Microsoft 365. Il vous fournit une infrastructure pour vous aider à planifier et à créer une solution qui répond aux besoins uniques de votre entreprise. Même si cette solution ne convient pas à l’ensemble de votre entreprise, une partie de celle-ci peut être adoptée dans votre planification de création d’une solution de gestion de contrat personnalisée.
+Cet article explique comment créer une solution de gestion des contrats pour votre organisation à l’aide de SharePoint Syntex et de composants de Microsoft 365. Il vous fournit une infrastructure pour vous aider à planifier et à créer une solution qui répond aux besoins uniques de votre entreprise. Même si cette solution ne convient pas à l’ensemble de votre entreprise, une partie de celle-ci peut être adoptée dans votre planification de création d’une solution de gestion de contrat personnalisée.
 
-*Cet ensemble de contenu documente une solution Microsoft 365 développée par Tom Mol design avec l’équipe Stratégie de solution de travail moderne chez Microsoft.*
+*Cet ensemble de contenu documente une solution Microsoft 365 développée par Tom Mol design avec l’équipe de stratégie de solution de travail moderne chez Microsoft.*
 
 ## <a name="identify-the-business-problem"></a>Identifier le problème d’entreprise
 
@@ -40,11 +40,11 @@ La première étape de la planification de votre système de gestion des contrat
 
 ## <a name="overview-of-the-solution"></a>Vue d’ensemble de la solution
 
-  ![Diagramme de la solution utilisant SharePoint Syntex, SharePoint listes, Teams et Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
+  ![Diagramme de la solution à l’aide SharePoint Syntex, SharePoint listes, Teams et Power Automate.](../media/content-understanding/syntex-solution-manage-contracts-setup-steps.png)
 
 Cette solution de gestion des contrats comprend quatre composants de Microsoft 365 :
 
-- **Microsoft SharePoint Syntex :** créez des modèles pour identifier et classer vos fichiers de contrat, puis extrayez les données appropriées à partir de ces derniers.
+- **Microsoft SharePoint Syntex**: créez des modèles pour identifier et classer vos fichiers de contrat, puis extrayez-y les données appropriées.
 
 - **Listes SharePoint Microsoft**: utilisez la mise en forme disponible dans les listes SharePoint modernes pour présenter les contrats dans un format commercial convivial.
 
@@ -56,9 +56,9 @@ Cette solution de gestion des contrats comprend quatre composants de Microsoft 3
 
   ![Diagramme de la solution montrant le flux de travail pour télécharger des documents, extraire des données, avertir les parties prenantes et approuver ou rejeter le contrat.](../media/content-understanding/syntex-solution-manage-contracts-overview.png)
 
-1. Les documents sont téléchargés vers une bibliothèque SharePoint documents. Un SharePoint de compréhension de document Syntex a été appliqué à la bibliothèque de documents. Il vérifie chaque fichier pour voir s’il y a une correspondance avec un type de contenu « contrat » qu’il est entraîné à rechercher. S’il trouve une correspondance, il classifie le fichier en tant que « contrat » et met à jour le type de contenu pour le document.
+1. Les documents sont téléchargés vers une bibliothèque SharePoint documents. Un SharePoint Syntex de compréhension de document a été appliqué à la bibliothèque de documents. Il vérifie chaque fichier pour voir s’il y a une correspondance avec un type de contenu « contrat » qu’il est entraîné à rechercher. S’il trouve une correspondance, il classifie le fichier en tant que « contrat » et met à jour le type de contenu pour le document.
 
-2. Le modèle tire également des données spécifiques de chaque fichier de contrat que les parties prenantes souhaitent voir, telles que le *client,* le coût et le montant *des frais.*
+2. Le modèle retire également des données spécifiques à partir de chaque fichier de contrat que les parties prenantes sont intéressées à voir, telles que le *client,* *le* coût et le montant *des frais.*
 
     La page suivante est un exemple de contrat que le modèle est formé pour identifier.
 

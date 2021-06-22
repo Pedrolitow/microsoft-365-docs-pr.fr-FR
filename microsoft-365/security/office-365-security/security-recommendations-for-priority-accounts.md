@@ -20,12 +20,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à élever les paramètres de sécurité et à utiliser des rapports, des alertes et des enquêtes pour les comptes prioritaires dans Microsoft 365 organisations.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: e7617dd5af6a7e3b66fb33818208f01c8d8a338e
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632220"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53055249"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Recommandations en matière de sécurité pour les comptes prioritaires dans Microsoft 365
 
@@ -36,6 +36,8 @@ Pour les attaquants, les attaques par hameçonnage ordinaires qui castent un ré
 Microsoft 365 et Microsoft Defender pour Office 365 contiennent plusieurs fonctionnalités clés qui fournissent des couches de sécurité supplémentaires pour vos comptes prioritaires. Cet article décrit ces fonctionnalités et leur utilisation.
 
 ![Résumé des recommandations de sécurité sous forme d’icône](../../media/security-recommendations-for-priority-users.png)
+
+<br>
 
 ****
 
@@ -61,9 +63,9 @@ Pour obtenir des instructions, [consultez l’étape 1. Renforcer la sécurité 
 
 - Vous pouvez [](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) utiliser [](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) des stratégies d’authentification et des règles d’accès client dans Exchange Online pour bloquer ou autoriser l’authentification de base et les protocoles d’authentification hérités tels que POP3, IMAP4 et SMTP authentifié pour des utilisateurs spécifiques.
 
-- Vous pouvez désactiver l’accès POP3 et IMAP4 sur des boîtes aux lettres individuelles. Vous pouvez désactiver smTP authentifié au niveau de l’organisation et l’activer sur des boîtes aux lettres spécifiques qui en ont encore besoin. Pour obtenir des instructions, consultez les rubriques suivantes :
+- Vous pouvez désactiver l’accès POP3 et IMAP4 sur des boîtes aux lettres individuelles. Vous pouvez désactiver smTP authentifié au niveau de l’organisation et l’activer sur des boîtes aux lettres spécifiques qui en ont encore besoin. Pour obtenir des instructions, consultez les articles suivants :
   - [Activer ou désactiver l’accès POP3 ou IMAP4 pour un utilisateur](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
-  - [Activer ou désactiver l’envoi SMTP de client authentifié (SMTP AUTH)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
+  - [Activer ou désactiver l’envoi SMTP client authentifié (SMTP AUTH)](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
 Il est également intéressant de noter que l’authentification de base est en cours d’utilisation dans Exchange Online pour les services web Exchange (EWS), Exchange ActiveSync, POP3, IMAP4 et PowerShell à distance. Pour plus d’informations, voir ce [billet de blog.](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)
 
@@ -77,7 +79,7 @@ Vous pouvez implémenter cette approche rigoureuse pour les comptes prioritaires
 
 Les stratégies de sécurité prédéfinées sont un emplacement pratique et central pour appliquer nos paramètres de stratégie stricts recommandés pour toutes les protections dans EOP et Defender pour Office 365. Pour plus d’informations, voir [Stratégies de sécurité prédéfini dans EOP](preset-security-policies.md)et Microsoft Defender pour Office 365 .
 
-Pour plus d’informations sur la différence entre les paramètres de stratégie Strict et les paramètres de stratégie standard et par défaut, voir [Paramètres recommandés](recommended-settings-for-eop-and-office365.md)pour EOP et Microsoft Defender pour la sécurité Office 365.
+Pour plus d’informations sur la différence entre les paramètres de stratégie Strict et les paramètres de stratégie standard et par défaut, voir [Paramètres recommandés](recommended-settings-for-eop-and-office365.md)pour EOP et Microsoft Defender pour Office 365 sécurité.
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>Appliquer des balises utilisateur à des comptes prioritaires
 
@@ -85,7 +87,7 @@ Les balises utilisateur dans Microsoft Defender pour Office 365 Plan 2 (dans le 
 
 **Les comptes de priorité** sont un type de balise utilisateur intégrée (appelée balise _système)_ que vous pouvez utiliser pour identifier les incidents et les alertes impliquant des comptes prioritaires. Pour plus d’informations **sur les comptes prioritaires,** voir [Gérer et surveiller les comptes de priorité.](../../admin/setup/priority-accounts.md)
 
-Vous pouvez également créer des balises personnalisées pour identifier et classer vos comptes prioritaires. Pour plus d’informations, voir [Balises utilisateur.](user-tags.md) Notez que vous pouvez gérer les **comptes de priorité (balises** système) dans la même interface que les balises utilisateur personnalisées.
+Vous pouvez également créer des balises personnalisées pour identifier et classer vos comptes prioritaires. Pour plus d’informations, voir [Balises utilisateur.](user-tags.md) Vous pouvez gérer les **comptes prioritaires (balises** système) dans la même interface que les balises utilisateur personnalisées.
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>Surveiller les comptes prioritaires dans les alertes, les rapports et les détections
 
@@ -97,11 +99,11 @@ Après avoir sécurisé et identifié vos utilisateurs prioritaires, vous pouvez
 
 |Fonctionnalité|Description|
 |---|---|
-|Alertes|Les balises utilisateur des utilisateurs affectés sont visibles et disponibles en tant que filtres dans la page Afficher les **alertes** dans le Centre de sécurité & conformité. Pour plus d’informations, voir [Affichage des alertes.](../../compliance/alert-policies.md#viewing-alerts)|
-|Threat Explorer <p> Détections en temps réel|Dans l’Explorateur de menaces **(Microsoft** Defender pour Office 365 Plan 2) ou les détections en temps réel (Microsoft Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans l’affichage Grille de messagerie et le volant détails de l’e-mail.  Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, [voir Balises dans l’Explorateur de menaces.](threat-explorer.md#tags-in-threat-explorer)|
+|Alertes|Les balises utilisateur des utilisateurs concernés sont visibles et disponibles en tant que filtres dans la page **Alertes** du portail Microsoft 365 Defender web. Pour plus d’informations, voir [Affichage des alertes.](../../compliance/alert-policies.md#viewing-alerts)|
+|Explorer <p> Détections en temps réel|Dans **l’Explorateur** (Defender pour Office 365 Plan 2) ou les détections en temps réel (Defender pour Office 365 Plan 1), les balises utilisateur sont visibles dans l’affichage Grille de messagerie et le volant Détails de l’e-mail.  Les balises utilisateur sont également disponibles en tant que propriété filtrable. Pour plus d’informations, [voir Balises dans l’Explorateur.](threat-explorer.md#tags-in-threat-explorer)|
 |Vues de campagne|Les balises utilisateur sont l’une des nombreuses propriétés filtrables des affichages campagne dans Microsoft Defender Office 365 Plan 2. Pour plus d’informations, voir [Affichages de campagne.](campaigns.md)|
-|Rapport sur l’état de la protection contre les menaces|Dans la quasi-ensemble des vues et des tableaux détaillés du rapport d’état de la **protection** contre les **menaces,** vous pouvez filtrer les résultats par compte de priorité. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)|
-|Rapport sur les problèmes de messagerie pour le rapport des comptes prioritaires|Le **rapport** Problèmes de messagerie pour les comptes de priorité dans le Centre d’administration Exchange (EAC) contient des informations sur les messages non reçus et différés pour les comptes **prioritaires.** Pour plus d’informations, [consultez le rapport Problèmes de messagerie pour le rapport des comptes prioritaires.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
+|Rapport sur l’état de la protection contre les menaces|Dans la quasi-ensemble des vues et des tableaux détaillés du rapport d’état de **la protection** contre les **menaces,** vous pouvez filtrer les résultats par compte de priorité. Pour plus d’informations, consultez [le rapport d’état de la protection contre les menaces.](view-email-security-reports.md#threat-protection-status-report)|
+|Problèmes de messagerie pour le rapport des comptes prioritaires|Le **rapport** Problèmes de messagerie pour les comptes de priorité dans le Centre d’administration Exchange (EAC) contient des informations sur les messages non reçus et **différés** pour les comptes prioritaires. Pour plus d’informations, [consultez le rapport Problèmes de messagerie pour le rapport des comptes prioritaires.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
 |
 
 ## <a name="train-users"></a>Former les utilisateurs
@@ -119,11 +121,11 @@ Microsoft 365 fournit les ressources suivantes pour aider à informer les utilis
 |Concept|Ressources|Description|
 |---|---|---|
 |Microsoft 365|[Parcours d’apprentissage personnalisables](/office365/customlearning/)|Ces ressources peuvent vous aider à mettre en place une formation pour les utilisateurs de votre organisation.|
-|Sécurité Microsoft 365|[Module d’apprentissage : sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365)|Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
+|Sécurité Microsoft 365|[Learning module : sécuriser votre organisation avec une sécurité intégrée et intelligente à partir de Microsoft 365](/learn/modules/security-with-microsoft-365)|Ce module vous permet de décrire comment les fonctionnalités de sécurité Microsoft 365 fonctionnent ensemble et d’articuler les avantages de ces fonctionnalités de sécurité.|
 |Authentification multifacteur|[Vérification en deux étapes : quelle est la page de vérification supplémentaire ?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|Cet article aide les utilisateurs finaux à comprendre ce qu’est l’authentification multifacteur et pourquoi elle est utilisée au niveau de votre organisation.|
-|Formation à la simulation d’attaques|[Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)|La formation à la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2 permet aux administrateurs de configurer, de lancer et de suivre les attaques par hameçonnage simulées contre des groupes d’utilisateurs spécifiques.|
+|Formation à la simulation d’attaques|[Commencer à utiliser la formation à la simulation d’attaque](attack-simulation-training-get-started.md)|La formation sur la simulation d’attaques dans Microsoft Defender pour Office 365 Plan 2 permet aux administrateurs de configurer, de lancer et de suivre les attaques par hameçonnage simulées contre des groupes d’utilisateurs spécifiques.|
 
-En outre, Microsoft recommande aux utilisateurs d’prendre les mesures décrites dans cet article : Protéger votre compte et vos appareils contre les pirates [informatiques et les programmes malveillants.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Ces actions incluent :
+En outre, Microsoft recommande aux utilisateurs d’agir comme décrit dans cet article : Protéger votre compte et vos appareils contre les pirates [informatiques et les programmes malveillants.](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6) Ces actions incluent :
 
 - Utilisation de mots de passe forts
 - Protection des appareils

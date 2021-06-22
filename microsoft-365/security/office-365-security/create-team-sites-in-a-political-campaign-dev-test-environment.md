@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Résumé : Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: fcba6e2f3939115d6dfbaae80d322246bdeadee9
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028774"
+ms.locfileid: "53029896"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Création de sites d’équipe dans un environnement de développement/test dans le cadre d’une campagne électorale
 
@@ -34,8 +34,8 @@ ms.locfileid: "53028774"
 
 - [Microsoft Defender pour Office 365 Plan 2](defender-for-office-365.md)
 
- **Résumé :** Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale. 
-   
+ **Résumé :** Créez des sites d’équipe SharePoint Online publics, privés, sensibles et hautement confidentiels dans votre environnement de développement/test dans le cadre d’une campagne électorale.
+
 Utilisez les instructions fournies dans cet article pour créer un environnement de développement/test qui inclut les quatre différents types de sites d’équipe SharePoint Online pour la solution des [conseils de sécurité Microsoft pour les campagnes électorales, les organisations à but non lucratif et autres organisations souples](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md). Ces sites sont décrits en détail dans la Rubrique 10 intitulée **SharePoint et OneDrive Entreprise**.
 
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Phase 1 : Création d’un environnement de développement/test dans le cadre d’une campagne électorale
@@ -46,43 +46,46 @@ Tout d’abord, suivez les instructions de [Configurer de groupes et d’utilisa
 
 Dans cette phase, vous allez créer les étiquettes correspondant aux différents niveaux de sécurité pour les dossiers de document du site d’équipe SharePoint Online.
 
-1. Si nécessaire, connectez-vous au centre d'administration avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si nécessaire, connectez-vous au centre d'administration Microsoft 365 (<https://admin.microsoft.com>) avec les informations d’identification du compte d’administrateur général de votre abonnement d’essai. Pour obtenir de l’aide, consultez [Où se connecter à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Sous l’onglet **Accueil Microsoft Office**, cliquez sur la vignette **Administration**.
+2. Dans la page d’**Accueil** où vous commencez, cliquez sur **Afficher tous**. Dans la section **Centres d’administration** qui s’affiche, cliquez sur **Conformité**.
 
-3. Sous le nouvel onglet **Centre d’administration Microsoft** 365 de votre navigateur, cliquez sur **Centres d’administration > Sécurité et conformité**.
+3. Dans la page d’**Accueil** du Centre de conformité Microsoft 365, accédez à la section **Solutions**\> **Protection des informations**. Pour accéder directement à la page **Information Protection**, utilisez <https://compliance.microsoft.com//informationprotection>.
 
-4. Sous le nouvel onglet **Accueil - Sécurité et conformité** de votre navigateur, cliquez sur **Classifications > Étiquettes**.
+4. Dans la page **Protection des informations**, vérifiez que la balise **Étiquette est sélectionnée**, puis cliquez sur ![Créer une icône d’étiquette](../../media/m365-cc-sc-create-icon.png) **Créer une étiquette**.
 
-5. Dans le volet **Accueil > Étiquettes**, cliquez sur **Créer une étiquette**.
+5. L’Assistant **nouvelle étiquette de confidentialité** s’ouvre. À l’étape **Nom et description**, entrez les valeurs suivantes :
+   - **Nom** : tapez **Interne**.
+   - **Nom d’affichage**
+   - **Description pour les utilisateurs**
 
-6. Dans le volet **Nom de l’étiquette**, saisissez **Interne** et cliquez sur **Suivant**.
+   Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-7. Dans le volet **Paramètres de l’étiquette**, cliquez sur **Suivant**.
+6. Dans le volet **Paramètres de l’étiquette**, cliquez sur **Suivant**.
 
-8. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer cette étiquette**, puis cliquez sur **Fermer**.
+7. Dans le volet **Vérifier vos paramètres**, cliquez sur **Créer cette étiquette**, puis cliquez sur **Fermer**.
 
-9. Répétez les étapes 5 à 8 pour les autres étiquettes suivantes :
+8. Répétez les étapes 5 à 8 pour les autres étiquettes suivantes :
 
    - Privé
    - Sensible
    - Hautement confidentiel
 
-10. Dans le volet **Accueil > Étiquettes**, cliquez sur **Publier des étiquettes**.
+9. Dans le volet **Accueil > Étiquettes**, cliquez sur **Publier des étiquettes**.
 
-11. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Choisir les étiquettes à publier**.
+10. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Choisir les étiquettes à publier**.
 
-12. Dans le volet **Choisir des étiquettes**, cliquez sur **Ajouter** et sélectionnez les quatre étiquettes.
+11. Dans le volet **Choisir des étiquettes**, cliquez sur **Ajouter** et sélectionnez les quatre étiquettes.
 
-13. Cliquez sur **Terminé**.
+12. Cliquez sur **Terminé**.
 
-14. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Suivant**.
+13. Dans le volet **Choisir les étiquettes à publier**, cliquez sur **Suivant**.
 
-15. Dans le volet **Choisir les emplacements**, cliquez sur **Suivant**.
+14. Dans le volet **Choisir les emplacements**, cliquez sur **Suivant**.
 
-16. Dans le volet **Nom de votre stratégie**, saisissez **Campagne** dans **Nom**, puis cliquez sur **Suivant**.
+15. Dans le volet **Nom de votre stratégie**, saisissez **Campagne** dans **Nom**, puis cliquez sur **Suivant**.
 
-17. Dans le volet **Vérifier vos paramètres**, cliquez sur **Publier les étiquettes**, puis cliquez sur **Fermer**.
+16. Dans le volet **Vérifier vos paramètres**, cliquez sur **Publier les étiquettes**, puis cliquez sur **Fermer**.
 
 ## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Phase 3 : Créer vos sites d’équipe SharePoint Online
 

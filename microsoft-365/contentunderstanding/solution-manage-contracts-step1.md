@@ -11,13 +11,13 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Découvrez comment utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données à l’aide d’Microsoft 365 solution.
-ms.openlocfilehash: b4b11b1bdb980b0ee7629af0cbecbb126a5ae5e5
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Découvrez comment utiliser les SharePoint Syntex pour identifier les fichiers de contrat et extraire des données à l’aide d’Microsoft 365 solution.
+ms.openlocfilehash: c66e46aaaacd5000f1e0d18aa07df527ca8ab7dd
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636205"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054492"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Étape 1. Utiliser SharePoint Syntex pour identifier les fichiers de contrat et extraire des données
 
@@ -29,7 +29,7 @@ Votre organisation a besoin d’un moyen d’identifier et de classer tous les d
 
 1. Tout d’abord, vous devez trouver au moins cinq exemples de fichiers que vous pouvez utiliser pour « former » le modèle afin de rechercher des caractéristiques spécifiques au type de contenu que vous essayez d’identifier (contrat). 
 
-2. À l SharePoint Syntex, créez un modèle de compréhension de document. À l’aide de vos exemples de fichiers, vous devez [créer un classificateur](create-a-classifier.md). En formeant le classifieur avec vos exemples de fichiers, vous lui apprenez à rechercher des caractéristiques spécifiques à ce que vous verrez dans les contrats de votre entreprise. Par exemple, [créez une «](create-a-classifier.md#create-an-explanation) explication » qui recherche des chaînes spécifiques dans vos contrats, telles que contrat de *service,* Conditions d’contrat *et* *Rémunération.* Vous pouvez même former votre explication pour rechercher ces chaînes dans des sections spécifiques du document ou en regard d’autres chaînes. Lorsque vous pensez avoir formé votre classificateur avec les informations dont il a besoin, vous pouvez tester votre modèle sur un exemple de fichiers d’exemples pour voir son efficacité. Après le test, si nécessaire, vous pouvez choisir d’apporter des modifications à vos explications pour les rendre plus efficaces. 
+2. À l SharePoint Syntex, créez un modèle de compréhension de document. À l’aide de vos exemples de fichiers, vous devez [créer un classificateur](create-a-classifier.md). En formeant le classifieur avec vos exemples de fichiers, vous lui apprenez à rechercher des caractéristiques spécifiques à ce que vous verrez dans les contrats de votre entreprise. Par exemple, [créez une «](create-a-classifier.md#create-an-explanation) explication » qui recherche des chaînes spécifiques dans vos contrats, telles que contrat de *service,* Conditions d’contrat *et* *Rémunération.* Vous pouvez même former votre explication pour rechercher ces chaînes dans des sections spécifiques du document ou en regard d’autres chaînes. Lorsque vous pensez avoir formé votre classificateur avec les informations dont il a besoin, vous pouvez tester votre modèle sur un exemple d’exemple de fichiers pour voir son efficacité. Après le test, si nécessaire, vous pouvez choisir d’apporter des modifications à vos explications pour les rendre plus efficaces. 
 
 3. Dans votre modèle, vous pouvez créer [un extracteur](create-an-extractor.md) pour extraire des éléments de données spécifiques de chaque contrat. Par exemple, pour chaque contrat, les informations qui vous intéressent le plus sont qui est le client, le nom de l’prestataire et le coût total.
 
@@ -37,7 +37,7 @@ Votre organisation a besoin d’un moyen d’identifier et de classer tous les d
 
    ![Contrats dans la bibliothèque de documents](../media/content-understanding/doc-lib-solution.png)
 
-5. Si vous avez des exigences de rétention pour [](apply-a-retention-label-to-a-model.md) vos contrats, vous pouvez également utiliser votre modèle pour appliquer une étiquette de rétention qui empêchera la suppression de vos contrats pour une période spécifiée.
+5. Si vous avez des exigences de rétention ou de sécurité [](apply-a-retention-label-to-a-model.md) pour vos [](apply-a-sensitivity-label-to-a-model.md) contrats, vous pouvez également utiliser votre modèle pour appliquer une étiquette de rétention ou une étiquette de niveau de sensibilité qui empêchera la suppression de vos contrats pendant une période spécifiée ou pour restreindre l’accès aux contrats.
 
 ## <a name="steps-to-create-and-train-your-model"></a>Étapes de création et de formation de votre modèle
 
@@ -182,7 +182,7 @@ Pour appliquer votre modèle à une bibliothèque SharePoint de documents :
 
 1. Dans la page **Modèles > contrat,** sous **Actions** clés Appliquer le modèle aux  >  bibliothèques, sélectionnez **Appliquer le modèle**.
 
-   ![Capture d’écran montrant la page Contrats avec l’option Appliquer le modèle aux bibliothèques mise en évidence.](../media/content-understanding/key-actions-apply-model.png)
+   ![Screenshot showing the Contracts page with Apply model to libraries option highlighted.](../media/content-understanding/key-actions-apply-model.png)
 
 2. Dans le **panneau Ajouter un** contrat, sélectionnez le site SharePoint qui contient la bibliothèque de documents à appliquer au modèle. Si le site n’apparaît pas dans la liste, utilisez la zone de recherche pour le trouver. Sélectionnez **Ajouter**.
 
@@ -198,6 +198,11 @@ Pour appliquer votre modèle à une bibliothèque SharePoint de documents :
 6. Dans la page **Modèles > contrat,** dans la **section** Bibliothèques avec ce modèle, vous verrez l’URL du site SharePoint répertorié.
 
     ![Capture d’écran de la page d’accueil Contrat affichant les bibliothèques avec cette section de modèle.](../media/content-understanding/contract-libraries-with-this-model.png)
+
+7. Sous **Paramètres**  >  **de la bibliothèque**:
+
+   - Ajoutez une colonne nommée **Status** et **sélectionnez Choice** comme type de colonne.
+   - Appliquez les valeurs **En** **révision,** Approuvé et **Rejeté.**
 
 Après avoir appliqué le modèle à la bibliothèque de documents, vous pouvez commencer à télécharger des documents sur le site et voir les résultats.
 

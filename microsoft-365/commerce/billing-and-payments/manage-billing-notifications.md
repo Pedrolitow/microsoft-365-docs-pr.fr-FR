@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les personnes qui reçoivent des e-mails de notification de facturation et des pièces jointes de facture.
 ms.date: 03/17/2021
-ms.openlocfilehash: a0c7de8638a227d432ff2c5a0d4839fa8f66582c
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
+ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998763"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53054582"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gérer les notifications de facturation et les pièces jointes de facture
 
@@ -37,9 +37,6 @@ La **page Notifications de facturation** vous permet de gérer les personnes qui
 Vous devez être un administrateur global pour suivre les étapes décrites dans cet article. Les administrateurs de facturation peuvent apporter certaines de ces modifications, comme indiqué dans les sections ci-dessous. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Modifier la langue de réception du courrier électronique
-
-> [!NOTE]
-> Les administrateurs de facturation peuvent également suivre les étapes de cette section.
 
 Les e-mails de notification de facturation sont envoyés dans la langue par défaut de votre organisation. Pour modifier la langue préférée, utilisez les étapes suivantes.
 
@@ -87,6 +84,9 @@ En plus de vos administrateurs globaux et de facturation, nous envoyons des noti
 3. Dans le volet droit, tapez l’adresse de messagerie que vous souhaitez utiliser, puis sélectionnez **Enregistrer.**
 
 ## <a name="receive-your-organizations-invoices-as-email-attachments"></a>Recevoir les factures de votre organisation en tant que pièces jointes
+
+> [!NOTE]
+> Les administrateurs de facturation peuvent également suivre les étapes de cette section.
 
 Vous pouvez avoir une copie de la facture de votre organisation attachée sous forme de fichier PDF aux courriers électroniques de notification de facture lorsqu’une nouvelle facture est prête. Utilisez les étapes suivantes pour recevoir des factures en pièce jointe.
 
