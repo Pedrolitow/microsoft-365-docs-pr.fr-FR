@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028498"
+ms.locfileid: "53029620"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Test le plus élevé parmi les tests du secteur d’activité
 
@@ -79,7 +79,7 @@ Le Test de sécurité d’entreprise se compose de trois parties : le Test de pr
 
 - Test utilisateur d’entreprise 2020 (mars – juin) : [Taux de protection dans le monde réel de 99,7 %](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
 
-- Test utilisateur d’entreprise 2019 (août – novembre) : [Taux de protection dans le monde réel de 99,6 %](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- Test utilisateur d’entreprise 2019 (août – novembre) : [Taux de protection dans le monde réel de 99,6 %](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
 
 - Test utilisateur d’entreprise 2019 (mars – juin) : [Taux de protection dans le monde réel de 99,9 %](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Analyse](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 

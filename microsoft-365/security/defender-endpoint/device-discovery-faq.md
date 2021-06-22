@@ -20,18 +20,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b2c0b986ef6dbb54cd34e9b4413711cd3e5f9c6d
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245959"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053154"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Questions fréquemment posées sur la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -46,13 +46,13 @@ Ce mode permet à chaque appareil intégré à Microsoft Defender for Endpoint d
 Vous avez la possibilité de désactiver la découverte d’appareils via la page [Fonctionnalités avancées.](advanced-features.md) Toutefois, vous perdrez la visibilité sur les appareils non utilisés dans votre réseau. 
 
 ## <a name="what-is-standard-discovery-mode"></a>Qu’est-ce que le mode de découverte standard ?
- Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour point de terminaison peuvent sonder activement les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Ce mode est vivement recommandé pour créer un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous n’aurez probablement qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
+ Dans ce mode, les points de terminaison intégrés à Microsoft Defender pour le point de terminaison peuvent sonder activement les appareils observés dans le réseau pour enrichir les données collectées (avec une quantité négligeable de trafic réseau). Ce mode est vivement recommandé pour créer un inventaire fiable et cohérent des appareils. Si vous choisissez de désactiver ce mode et de sélectionner le mode de découverte de base, vous n’aurez probablement qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Puis-je contrôler quels appareils effectuent la découverte standard ?
- Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (appareils actuellement Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
+ Vous pouvez personnaliser la liste des appareils utilisés pour effectuer la découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (appareils actuellement Windows 10 uniquement) ou sélectionner un sous-ensemble ou sous-ensemble de vos appareils en spécifiant leurs balises d’appareil. Dans ce cas, tous les autres appareils sont configurés pour exécuter la découverte de base uniquement. La configuration est disponible dans la page des paramètres de découverte d’appareils.
 
 ## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>Puis-je exclure des appareils non utilisés de la liste d’inventaire des appareils ?
-Oui, vous pouvez appliquer des filtres pour exclure les appareils non utilisés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés. 
+Oui, vous pouvez appliquer des filtres pour exclure les appareils nonmanagés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés. 
 
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>Quels appareils intégrés peuvent effectuer la découverte ?
@@ -65,7 +65,7 @@ Oui, vous pouvez appliquer des filtres pour exclure les appareils non utilisés 
  Par défaut, tous les appareils intégrés s’exécutant sur Windows 10 version 1809 ou ultérieure capturent et analysent les protocoles suivants : ARP, CDP, DHCP, DHCPv6, IP (en-têtes), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (en-têtes), UDP (en-têtes), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Quels protocoles utilisez-vous pour l’analyse active dans la découverte standard ?
- Lorsqu’un appareil est configuré pour exécuter la découverte standard, les services exposés sont sondés à l’aide des protocoles suivants : ARP, FTP, HTTP, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL
+ Lorsqu’un appareil est configuré pour exécuter la découverte standard, les services exposés sont sondés à l’aide des protocoles suivants : ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, TC, CrestonCIP, IphoneSnc
 
 ## <a name="how-can-i-exclude-targets-from-being-probed-with-standard-discovery"></a>Comment puis-je exclure les cibles de l’analyse de la découverte standard ?
  S’il existe des appareils sur votre réseau qui ne doivent pas être activement analysés, vous pouvez également définir une liste d’exclusions pour empêcher leur analyse. La configuration est disponible dans la page des paramètres de découverte d’appareils.
@@ -84,11 +84,12 @@ Oui, vous pouvez appliquer des filtres pour exclure les appareils non utilisés 
  L’analyse active peut générer jusqu’à 5K de trafic entre l’appareil intégré et l’appareil sondé, chaque tentative d’analyse
 
 ## <a name="why-is-there-a-discrepancy-between-can-be-onboarded-devices-in-the-device-inventory-and-the-number-of-devices-to-onboard-in-the-dashboard-tile"></a>Pourquoi existe-t-il une différence entre les appareils « peuvent être intégrés » dans l’inventaire des appareils et le nombre d’appareils à intégrer dans la vignette du tableau de bord ?
-Vous remarquerez peut-être des différences entre le nombre d’appareils répertoriés sous « peut être intégré » dans l’inventaire des appareils, la recommandation de sécurité « intégration à Microsoft Defender pour point de terminaison » et le widget de tableau de bord « appareils à intégrer ».
+Vous remarquerez peut-être des différences entre le nombre d’appareils répertoriés sous « Peut être intégré » dans l’inventaire des appareils, la recommandation de sécurité « intégration à Microsoft Defender pour point de terminaison » et le widget de tableau de bord « appareils à intégrer ».
 
  La recommandation de sécurité et le widget de tableau de bord sont pour les appareils stables dans le réseau ; à l’exclusion des appareils éphémères, des appareils invités et d’autres. L’idée est de recommander sur les appareils persistants, ce qui implique également le score de sécurité global de l’organisation.
 
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>Puis-je intégrer des appareils non utilisés qui ont été trouvés ?
  Oui. Les points de terminaison non pris en compte dans votre réseau introduisent des vulnérabilités et des risques pour votre réseau. Leur intégration au service peut accroître leur visibilité sur la sécurité. 
 
-
+## <a name="ive-noticed-that-unmanaged-device-health-state-is-always-active-why-is-that"></a>J’ai remarqué que l’état d’état d’état de l’appareil non pris en compte est toujours « Actif », pourquoi ?
+Temporairement, l’état d’état d’état de l’appareil non gestion sera « Actif » pendant la période de rétention standard de l’inventaire des appareils, quel que soit leur état réel.

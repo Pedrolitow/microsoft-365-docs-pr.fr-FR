@@ -12,20 +12,20 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: Intégrer Microsoft Teams classes dans votre système de gestion de l’apprentissage
-ms.openlocfilehash: 287b9f1cadfdcf3adafdca91f4a351865bbcf3bc
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+description: Intégrer Microsoft Teams classes de gestion dans votre système Learning gestion des données
+ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821270"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053250"
 ---
 # <a name="use-microsoft-teams-classes-with-blackboard"></a>Utiliser Microsoft Teams classes avec tableau noir
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
 
-Microsoft Teams classes est une application d’interopérabilité des outils d’apprentissage (LTI) qui permet aux enseignants et aux étudiants de naviguer facilement entre leur système de gestion de l’apprentissage (LMS) et Teams. Les utilisateurs peuvent accéder à leurs équipes de cours associées à leur cours directement à partir de leur LMS.
+Microsoft Teams classes est une application Learning Tools Interoperability (LTI) qui permet aux enseignants et aux étudiants de naviguer facilement entre leur système de gestion Learning (LMS) et leur Teams. Les utilisateurs peuvent accéder à leurs équipes de cours associées à leur cours directement à partir de leur LMS.
 
 ## <a name="approve-the-app-in-the-microsoft-azure-tenant"></a>Approuver l’application dans le Microsoft Azure client
 
@@ -37,7 +37,7 @@ Avant de gérer l’intégration dans Blackboard Learn Ultra, l’administrateur
 
 2. Redirigez le point de terminaison de consentement de l’administrateur de la plateforme d’identités Microsoft en fonction de l’exemple suivant :
 
-   `https://login.microsoftonline.com/{tenant}/adminconsent?client\_id=2d94989f-457a-47c1-a637-e75acdb11568`
+   `https://login.microsoftonline.com/{tenant}/adminconsent?client_id=2d94989f-457a-47c1-a637-e75acdb11568`
 
    > [!NOTE]
    > Remplacez {tenant} par l’ID de client Microsoft de votre organisation.
@@ -68,7 +68,7 @@ En tant qu’administrateur Blackboard Learn Ultra, vous devez inscrire 2 applic
 
 5. Examinez les paramètres pré-remplis et assurez-vous que l’état de l’outil est marqué comme approuvé.
 
-6. Faites défiler vers le bas, puis sélectionnez **Envoyer.**
+6. Faites défiler jusqu’au bas, puis sélectionnez **Envoyer.**
 
 7. Répétez les étapes précédentes pour inscrire la deuxième application LTI dans votre environnement.
 

@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender pour Office 365 inclut des pièces jointes sécurisées, des liens fiables, des outils anti-hameçonnage avancés, des outils de création de rapports et des fonctionnalités Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bdb1e16c20b623934bb4fb994fcb8c6ef5f5ff0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 81a45f6839538118c5413c1f5fc09e0cd19903a0
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028467"
+ms.locfileid: "53029872"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender pour Office 365
 
@@ -96,9 +96,9 @@ Le tableau suivant récapitule les actions incluent dans chaque plan.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurer les stratégies de Microsoft Defender pour Office 365
 
-Avec Microsoft Defender pour Office 365, l’équipe de sécurité de votre organisation peut configurer la protection en définissant des stratégies dans Microsoft 365 Defender (accédez à <https://security.microsoft.com> \> **Courrier et collaboration** \> **Stratégies et règles**.)
+Avec Microsoft Defender pour Office 365, l’équipe de sécurité de votre organisation peut configurer la protection en définissant des stratégies dans le portail Microsoft 365 Defender (accédez à <https://security.microsoft.com> \> **Courrier et collaboration** \> **Stratégies et règles**.)
 
-Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
+Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
 > [!TIP]
 > Consultez [Se protéger contre les menaces](protect-against-threats.md) pour définir une brève liste de stratégies.
@@ -113,11 +113,11 @@ Les stratégies définies pour votre organisation déterminent le comportement e
 
 - **[Pièces jointes fiables pour SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)** : protègent votre organisation lorsque les utilisateurs collaborent et partagent des fichiers, en identifiant, puis en bloquant les fichiers malveillants dans les sites d’équipe et les bibliothèques de documents. Pour obtenir plus d’informations, consultez l’article [Activer Defender pour Office 365 pour SharePoint, OneDrive et Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
-- **[Protection anti-hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)** : détecte les tentatives d’usurpation d’identité entre vos utilisateurs et les domaines internes ou personnalisés. Cela permet d’appliquer des modèles de machine learning et des algorithmes avancés de détection de l’emprunt d’identité pour contrer des attaques par hameçonnage. Pour plus d’informations, voir [Configurer les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-atp-anti-phishing-policies.md).
+- **[Protection anti-hameçonnage dans Defender pour Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)** : détecte les tentatives d’usurpation d’identité entre vos utilisateurs et les domaines internes ou personnalisés. Cela permet d’appliquer des modèles de machine learning et des algorithmes avancés de détection de l’emprunt d’identité pour contrer des attaques par hameçonnage. Pour plus d’informations, voir [Configurer les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>Afficher les rapports de Microsoft Defender pour Office 365
 
-Microsoft Defender pour Office 365 inclut un [tableau de bord de rapports](view-reports-for-mdo.md) avancé pour surveiller les performances de votre Defender pour Office 365. Vous pouvez y accéder sur **Rapports** \> **Tableau de bord** dans le portail Microsoft 365 Defender.
+Microsoft Defender pour Office 365 inclut des [rapports](view-reports-for-mdo.md) pour surveiller les performances de votre Defender pour Office 365. Vous pouvez accéder aux rapports dans le portail Microsoft 365 Defender en accédant à **Rapports** \> **Courrier électronique et collaboration** \> **Rapports d’e-mails et rapports de collaboration** ou directement à <https://security.microsoft.com/securityreports>.
 
 Les rapports sont mis à jour en temps réel, ce qui vous fournit les informations les plus récentes. Ces rapports fournissent également des recommandations et vous informent contre les menaces imminentes. Les rapports prédéfinis incluent les données suivantes :
 
@@ -141,16 +141,19 @@ Microsoft Defender pour Office 365 Plan 2 inclut les meilleurs [outils d’exame
 
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>Autorisations requises pour utiliser les fonctionnalités de Microsoft Defender pour Office 365
 
-Pour accéder aux fonctionnalités de Microsoft Defender pour Office 365 dans le Microsoft 365 Defender, vous devez disposer d’un rôle approprié. Le tableau suivant inclut quelques exemples :
+Pour accéder aux fonctionnalités de Microsoft Defender pour Office 365, vous devez disposer d’un rôle approprié. Le tableau suivant inclut quelques exemples :
+
+<br>
+
+****
 
 |Rôle ou groupe de rôles|Ressources pour en savoir plus|
 |---|---|
-|Administrateur général (peut être affecté dans Azure Active Directory ou dans Microsoft 365 Defender)|[À propos des rôles d’administrateur Microsoft 365](../../admin/add-users/about-admin-roles.md)|
-|Administrateur de sécurité (cela peut être attribué dans Azure Active Directory ou Microsoft 365 Defender)|[Autorisations des rôles d’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Autorisations dans Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
-|Gestion de l’organisation Exchange Online (elle est affectée à Exchange Online)|[Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Rechercher et vider (cette opération est attribuée uniquement dans Microsoft 365 Defender)|[Autorisations dans Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md)|
-
-Pour plus d’informations, consultez [Autorisations dans Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+|administrateur général (Gestion de l’organisation)|Vous pouvez attribuer ce rôle dans Azure Active Directory ou dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
+|Administrateur de sécurité|Vous pouvez attribuer ce rôle dans Azure Active Directory ou dans le portail Microsoft 365 Defender. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
+|Gestion de l’organisation dans Exchange Online.|[Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
+|Rechercher et vider|Ce rôle est disponible uniquement dans le portail Microsoft 365 Defender ou dans le Centre de conformité Microsoft 365. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md) et [Autorisations dans le Centre de conformité Microsoft 365](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>Obtenir Microsoft Defender pour Office 365
 
@@ -177,4 +180,3 @@ De nouvelles fonctionnalités sont ajoutées à Microsoft Defender pour Office 3
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 - [Enquêtes et réponses automatisées (AIR) dans Microsoft 365 Defender](../defender/m365d-autoir.md)
-
