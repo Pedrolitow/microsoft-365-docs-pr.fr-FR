@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 461911a1e14241112f4ff0e8efb0135b4e1a5a25
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028786"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096731"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
 
@@ -296,9 +296,11 @@ GUID : `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à un critère de prévalence, d’âge ou de liste de confiance
 
-Cette règle empêche le lancement des types de fichiers suivants, sauf s’ils répondent à des critères de prévalence ou d’âge, ou s’ils se retrouvent dans une liste de confiance ou d’exclusion :
+Cette règle empêche le lancement des fichiers exécutables, tels que .exe, .dll ou .scr, sauf si l’une des conditions suivantes est remplie :
 
-- Fichiers exécutables (tels que .exe, .dll ou .scr)
+- Prévalence : les fichiers exécutables sont trouvés sur plus de 1 000 points de terminaison
+- Âge : les fichiers exécutables ont été publiés il y a plus de 24 heures
+- Emplacement : les fichiers exécutables sont inclus dans une liste de confiance ou une liste d’exclusions
 
 Le lancement de fichiers exécutables nontrus ou inconnus peut être risqué, car il peut ne pas être évident initialement si les fichiers sont malveillants.
 
@@ -404,17 +406,17 @@ GUID : `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Empêcher Office application de communication de créer des processus enfants
 
-Cette règle empêche Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
+Cette règle empêche les Outlook de créer des processus enfants, tout en permettant des fonctions Outlook légitimes.
 
-Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les attaques par formulaire et les règles Outlook que les [attaquants](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
+Cette règle protège contre les attaques d’ingénierie sociale et empêche l’exploitation du code d’exploiter les vulnérabilités dans Outlook. Il protège également contre les Outlook et les attaques par formulaires que les [attaquants](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) peuvent utiliser lorsque les informations d’identification d’un utilisateur sont compromises.
 
 > [!NOTE]
-> Cette règle bloque les conseils et les infos-bulles de stratégie DLP dans Outlook. Cette règle s’applique à Outlook et Outlook.com uniquement.
+> Cette règle bloque les conseils de stratégie DLP et les infos-bulles dans Outlook. Cette règle s’applique Outlook et Outlook.com uniquement.
 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nom Intune : `Process creation from Office communication products (beta)`
@@ -448,12 +450,12 @@ GUID : `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 Cette règle empêche l’exécution des processus créés via [PsExec](/sysinternals/downloads/psexec) [et WMI.](/windows/win32/wmisdk/about-wmi) PsExec et WMI peuvent exécuter du code à distance. Il existe donc un risque que des programmes malveillants abusent de cette fonctionnalité à des fins de commande et de contrôle, ou qu’ils propagent une infection dans le réseau d’une organisation.
 
 > [!WARNING]
-> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution MDM. Cette règle n’est pas compatible avec la gestion via [Microsoft Endpoint Configuration Manager,](/configmgr) car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
+> Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution MDM. Cette règle n’est [](/configmgr) pas compatible avec la gestion Microsoft Endpoint Configuration Manager car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 Nom Intune : `Process creation from PSExec and WMI commands`
@@ -469,7 +471,7 @@ Avec cette règle, les administrateurs peuvent empêcher l’exécution de fichi
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 
@@ -479,7 +481,7 @@ Nom du Gestionnaire de configuration : `Block untrusted and unsigned processes t
 
 GUID : `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à partir de macros Office
+### <a name="block-win32-api-calls-from-office-macros"></a>Bloquer les appels d’API Win32 à partir Office macros
 
 Cette règle empêche les macros VBA d’appeler les API Win32.
 
@@ -488,7 +490,7 @@ Office VBA active les appels d’API Win32. Les programmes malveillants peuvent 
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 
@@ -514,7 +516,7 @@ La règle a tendance à faire preuve de prudence pour empêcher les ransomware.
 Cette règle a été introduite dans :
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
-- [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
+- [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 

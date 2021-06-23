@@ -22,77 +22,141 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents vers Microsoft 365 boîtes aux lettres.
-ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: de4c3c6454809cc1b7f78c0e5790fcbe8b3887c0
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061723"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096167"
 ---
-# <a name="archive-third-party-data"></a>Archiver des données tierces
+# <a name="archive-third-party-data-in-microsoft-365"></a>Archiver des données tierces dans Microsoft 365
 
 Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Microsoft 365. L’un des principaux avantages de l’utilisation de connecteurs de données pour importer et archiver des données tierces dans Microsoft 365 est que vous pouvez y appliquer diverses solutions de conformité Microsoft 365 après leur importation. Cela vous permet de vous assurer que les données non Microsoft de votre organisation sont conformes aux réglementations et normes qui affectent votre organisation.
 
 ## <a name="third-party-data-connectors"></a>Connecteurs de données tiers
 
-Le tableau suivant répertorie les connecteurs de données tiers disponibles dans le Centre de conformité Microsoft 365. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après l’importation et l’archivage dans Microsoft 365. Consultez [la section suivante](#overview-of-compliance-solutions-that-support-third-party-data) pour obtenir une description plus détaillée de chaque solution de conformité et de la façon dont elle peut bénéficier de données tierces.
+Le Centre de conformité Microsoft 365 fournit des connecteurs de données tiers natifs de Microsoft pour importer des données à partir de différentes sources de données, telles que LinkedIn, Instant Bloomberg et Twitter, ainsi que des connecteurs de données qui assurent la prise en charge de la solution de gestion des risques internes. En plus de ces connecteurs de données, Microsoft collabore avec les partenaires suivants pour fournir de nombreux autres connecteurs de données tiers dans le Centre de conformité Microsoft 365. Votre organisation collabore avec ces partenaires pour configurer son service d’archivage avant de créer un connecteur de données correspondant dans le Centre de conformité Microsoft 365.
 
-> [!TIP]
-> Cliquez sur le lien dans la colonne **de** données tierces pour suivre les instructions détaillées de création d’un connecteur pour ce type de données.
+- [Veritas](#veritas-data-connectors)
+
+- [TeleMessage](#telemessage-data-connectors)
+
+- [17a-4 LLC](#17a-4-data-connectors)
+
+- [CellTrust](#celltrust-data-connectors)
+
+Les données tierces répertoriées dans les sections suivantes (à l’exception des données RH et des données de mauvaise gestion physiques utilisées pour la solution de gestion des risques internes Microsoft 365) sont importées dans les boîtes aux lettres des utilisateurs. Les Microsoft 365 de conformité qui permettent de prendre en charge des données tierces sont appliquées à la boîte aux lettres de l’utilisateur dans laquelle les données sont stockées.
+
+### <a name="microsoft-data-connectors"></a>Connecteurs de données Microsoft
+
+Le tableau suivant répertorie les connecteurs de données tiers natifs disponibles dans le Centre de conformité Microsoft 365. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer après avoir importé et archivé des données tierces dans Microsoft 365. Consultez la section Vue d’ensemble des [solutions](#overview-of-compliance-solutions-that-support-third-party-data) de conformité qui prend en charge les données tierces pour obtenir une description plus détaillée de chaque solution de conformité et de la façon dont elle prend en charge les données tierces.
+
+Cliquez sur le lien dans la colonne **de** données tierces pour suivre les instructions détaillées de création d’un connecteur pour ce type de données.
 
 |Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Android <sup>1</sup>](archive-android-archiver-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[AT&T Network <sup>1</sup>](archive-att-network-archiver-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Réseau Bell <sup>1</sup>](archive-bell-network-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Message Bloomberg](archive-bloomberg-message-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Cisco Jabber sur MS SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Cisco Jabber sur Oracle <sup>2</sup>](archive-ciscojabberonoracle-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Cisco Jabber sur PostgreSQL <sup>2</sup>](archive-ciscojabberonpostgresql-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[EML <sup>2</sup>](archive-eml-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[Enterprise Numéro <sup>1</sup>](archive-enterprise-number-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[FX Connecter <sup>2</sup>](archive-fxconnect-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Ressources humaines (RH)](import-hr-data.md) ||||||![Coche](../media/checkmark.png)
 |[Conversation ICE](archive-icechat-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Jive <sup>2</sup>](archive-jive-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[MS SQL Database <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[O2 Network <sup>1</sup>](archive-o2-network-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 |[Badging physique](import-physical-badging-data.md) ||||||![Coche](../media/checkmark.png)|
-|[Pivot <sup>2</sup>](archive-pivot-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Redtail Speak <sup>2</sup>](archive-redtailspeak-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Reuters Dealing <sup>2</sup>](archive-reutersdealing-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Reuters Eikon <sup>2</sup>](archive-reuterseikon-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Reuters FX <sup>2</sup>](archive-reutersfx-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[SalesforceForceForce <sup>2</sup>](archive-salesforcechatter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[ServiceNow <sup>2</sup>](archive-servicenow-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[Signal <sup>1</sup>](archive-signal-archiver-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Skype Entreprise <sup>2</sup>](archive-skypeforbusiness-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Slack eDiscovery <sup>2</sup>](archive-slack-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Édition <sup>2</sup>](archive-symphony-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Ée <sup>1</sup>](archive-telegram-archiver-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[RÉSEAU DE DISTRIBUTION <sup>1</sup>](archive-telus-network-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Délimité par du texte <sup>2</sup>](archive-text-delimited-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[Verizon Network <sup>1</sup>](archive-verizon-network-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Pages Web <sup>2</sup>](archive-webpagecapture-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[WeChat <sup>1</sup>](archive-wechat-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Espace de travail à partir de Facebook <sup>2</sup>](archive-workplacefromfacebook-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[XIP <sup>2</sup>](archive-xip-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[XSLT/XML <sup>2</sup>](archive-xslt-xml-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
-|[Yieldbroker <sup>2</sup>](archive-yieldbroker-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
-|[Zoomer les réunions <sup>2</sup>](archive-zoommeetings-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
 ||||||||
 
-> [!NOTE]
-> <sup>1 Connecteur</sup> de données fourni par TeleMessage. Avant de pouvoir archiver des données dans Microsoft 365, vous devez utiliser TeleMessage pour configurer son service d’archivage pour votre organisation. Pour plus d’informations, consultez la section des conditions préalables dans les instructions pas à pas pour ce type de données. Les connecteurs de données TeleMessage sont également disponibles dans Cloud de la communauté du secteur public environnements dans Microsoft 365 cloud du gouvernement américain. Pour plus d’informations, voir les connecteurs de données dans la section cloud du gouvernement des [États-Unis](#data-connectors-in-the-us-government-cloud) dans cet article. <br/><br/><sup>2 Connecteur</sup> de données fourni par Veritas. Avant de pouvoir archiver des données dans Microsoft 365, vous devez travailler avec Veritas pour configurer leur service d’archivage pour votre organisation. Pour plus d’informations, consultez la section des conditions préalables dans les instructions pas à pas pour ce type de données.
+### <a name="veritas-data-connectors"></a>Connecteurs de données Veritas
 
-Les données tierces répertoriées dans le tableau précédent (à l’exception des données RH et des données de mauvaise gestion physique) sont importées dans les boîtes aux lettres des utilisateurs. Les solutions de conformité correspondantes qui permettent de prendre en charge des données tierces sont appliquées à la boîte aux lettres de l’utilisateur dans laquelle les données sont stockées.
+Le tableau de cette section répertorie les connecteurs de données tiers disponibles en partenariat avec Veritas. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après les avoir importées et archivées dans Microsoft 365. Consultez la section Vue d’ensemble des [solutions](#overview-of-compliance-solutions-that-support-third-party-data) de conformité qui prend en charge les données tierces pour obtenir une description plus détaillée de chaque solution de conformité et de la façon dont elle prend en charge les données tierces.
+
+Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez utiliser Veritas pour configurer son service d’archivage (appelé *Merge1)* pour votre organisation. Pour plus d’informations,  cliquez sur le lien dans la colonne de données tierces pour suivre les instructions détaillées de création d’un connecteur pour ce type de données.
+
+|Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust](archive-celltrust-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Cisco Jabber sur MS SQL](archive-ciscojabberonmssql-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Cisco Jabber sur Oracle](archive-ciscojabberonoracle-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Cisco Jabber sur PostgreSQL](archive-ciscojabberonpostgresql-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[EML](archive-eml-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[FX Connect](archive-fxconnect-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Jive](archive-jive-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Base de données MS SQL](archive-mssqldatabaseimporter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Tableau croisé dynamique](archive-pivot-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Redtail Speak](archive-redtailspeak-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Gestion de Reuters](archive-reutersdealing-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Reuters Eikon](archive-reuterseikon-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Reuters FX](archive-reutersfx-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Salesforce Chatter](archive-salesforcechatter-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[ServiceNow](archive-servicenow-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Découverte électronique de marge](archive-slack-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Symphony](archive-symphony-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Délimité par le texte](archive-text-delimited-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Webex Teams](archive-webexteams-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Pages web](archive-webpagecapture-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Espace de travail sur Facebook](archive-workplacefromfacebook-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[XIP](archive-xip-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[XSLT/XML](archive-xslt-xml-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|||
+|[Yieldbroker](archive-yieldbroker-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Réunions Zoom](archive-zoommeetings-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+||||||||
+
+### <a name="telemessage-data-connectors"></a>Connecteurs de données de TeleMessage
+
+Le tableau de cette section répertorie les connecteurs de données tiers disponibles en partenariat avec TeleMessage. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après les avoir importées et archivées dans Microsoft 365. Consultez la section Vue d’ensemble des [solutions](#overview-of-compliance-solutions-that-support-third-party-data) de conformité qui prend en charge les données tierces pour obtenir une description plus détaillée de chaque solution de conformité et de la façon dont elle prend en charge les données tierces.
+
+Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez utiliser TeleMessage pour configurer son service d’archivage pour votre organisation. Pour plus d’informations,  cliquez sur le lien dans la colonne de données tierces pour suivre les instructions détaillées de création d’un connecteur pour ce type de données.
+
+Les connecteurs de données TeleMessage sont également disponibles dans Cloud de la communauté du secteur public environnements dans Microsoft 365 cloud du gouvernement américain. Pour plus d’informations, voir les connecteurs de données dans la section cloud du gouvernement des États-Unis dans cet article.
+
+|Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Android ](archive-android-archiver-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[AT&T Network ](archive-att-network-archiver-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Réseau Bell ](archive-bell-network-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Enterprise Number](archive-enterprise-number-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Réseau O2 ](archive-o2-network-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[RÉSEAU DE DISTRIBUTION ](archive-telus-network-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Réseau Verizon ](archive-verizon-network-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[WeChat ](archive-wechat-data.md)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[WhatsApp ](archive-whatsapp-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+||||||||
+
+### <a name="17a-4-data-connectors"></a>Connecteurs de données 17a-4
+
+Le tableau de cette section répertorie les connecteurs de données tiers disponibles en partenariat avec 17a-4 LLC. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après les avoir importées et archivées dans Microsoft 365. Consultez la section Vue d’ensemble des [solutions](#overview-of-compliance-solutions-that-support-third-party-data) de conformité qui prend en charge les données tierces pour obtenir une description plus détaillée de chaque solution de conformité et de la façon dont elle prend en charge les données tierces.
+
+Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez utiliser Veritas pour configurer son service d’archivage (appelé *DataParser)* pour votre organisation. Pour plus d’informations,  cliquez sur le lien dans la colonne de données tierces pour suivre les instructions détaillées de création d’un connecteur pour ce type de données.
+
+|Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[BlackBerry](archive-17a-4-blackberry-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Bloomberg ](archive-17a-4-bloomberg-data.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Cisco Jabber ](archive-17a-4-cisco-jabber-data.md)   |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Cisco Webex ](archive-17a-4-webex-teams-data.md)   |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[FactSet ](archive-17a-4-factset-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Fuze ](archive-17a-4-fuze-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Fx Connecter](archive-17a-4-fxconnect-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Conversation ICE](archive-17a-4-ice-im-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[InvestEdge ](archive-17a-4-investedge-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[LivePerson Conversational Cloud ](archive-17a-4-liveperson-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Quip ](archive-17a-4-quip-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Refinitiv Eikon Messenger](archive-17a-4-refinitiv-messenger-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[ServiceNow ](archive-17a-4-servicenow-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Slack ](archive-17a-4-slack-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Toy ](archive-17a-4-symphony-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+|[Zoom ](archive-17a-4-zoom-data.md)    |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+||||||||
+
+### <a name="celltrust-data-connectors"></a>Connecteurs de données CellTrust
+
+Le tableau de cette section répertorie le connecteur de données tiers disponible en partenariat avec CellTrust. Le tableau récapitule également les solutions de conformité que vous pouvez appliquer aux données tierces après les avoir importées et archivées dans Microsoft 365. Consultez la section Vue d’ensemble des [solutions](#overview-of-compliance-solutions-that-support-third-party-data) de conformité qui prend en charge les données tierces pour obtenir une description plus détaillée de chaque solution de conformité et de la façon dont elle prend en charge les données tierces.
+
+Avant de pouvoir archiver des données tierces dans Microsoft 365, vous devez utiliser CellTrust pour configurer son service d’archivage (appelé *CellTrust SL2)* pour votre organisation. Pour plus d’informations,  cliquez sur le lien dans la colonne de données tierces pour suivre les instructions détaillées de création d’un connecteur CellTrust SL2.
+
+|Données tierces  |Attente pour litige|eDiscovery  |Paramètres de rétention  |Gestion des enregistrements  |Conformité des communications  |Gestion des risques internes  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[CellTrust SL2](archive-data-from-celltrustsl2.md)     |![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)|![Coche](../media/checkmark.png)||
+||||||||
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Vue d’ensemble des solutions de conformité qui permettent la prise en charge des données tierces
 

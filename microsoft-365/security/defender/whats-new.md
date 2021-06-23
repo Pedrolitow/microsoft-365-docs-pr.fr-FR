@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 582116047900fc5f28d5580398cf5c065e6a3e23
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053022"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096815"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -38,6 +38,8 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## <a name="june-2021"></a>Juin 2021
+- Balises de menace dans [Microsoft 365 Defender rapport d’analyse des menaces](threat-analytics.md) <br> Les balises de menace vous aident à vous concentrer sur des catégories de menaces spécifiques et à examiner les rapports les plus pertinents. 
 
 ## <a name="april-2021"></a>Avril 2021
 - Microsoft 365 Defender<br> Le portail [d’Microsoft 365 Defender](https://security.microsoft.com) amélioré est désormais disponible. Cette nouvelle expérience regroupe Defender pour point de terminaison, Defender pour Office 365, Defender pour identité et bien plus encore dans un portail unique. Il s’agit du nouvel accueil pour gérer vos contrôles de sécurité. [Découvrir les nouveautés](./overview-security-center.md).

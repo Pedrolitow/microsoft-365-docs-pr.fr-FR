@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer une boîte aux lettres pour collecter le courrier indésirable et le hameçonnage signalés par les utilisateurs.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f59548a1f36e067d8b649f7fe22149362d6fe9c6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 2dded27d87ee5db0d1e71b643fe8244408ef1a24
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083535"
+ms.locfileid: "53096155"
 ---
 # <a name="user-reported-message-settings"></a>Paramètres des messages signalés par l’utilisateur
 
@@ -96,13 +96,13 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
           >
           > Les organisations gouvernementales américaines (Cloud de la communauté du secteur public, Cloud de la communauté du secteur public High et DoD) peuvent uniquement configurer la boîte aux lettres **de mon organisation.** Les deux autres options sont désactivées.
           >
-          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour la rescanée et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
+          > Si les organisations sont configurées pour envoyer des messages à une boîte aux lettres personnalisée uniquement, les messages signalés ne seront pas envoyés pour réascaner et les résultats dans le portail Des messages signalés par l’utilisateur seront toujours vides.
 
        Quelle que soit la valeur que vous avez sélectionnée pour Envoyer les **messages** signalés, les paramètres suivants sont disponibles :
 
        - **Laisser les utilisateurs choisir s’ils souhaitent signaler leur message à Microsoft**
-       - **Sélectionnez la section Options de rapport disponibles** pour les utilisateurs : sélectionnez au moins une des options suivantes :
-         - **Demandez-moi avant d’envoyer le message**
+       - **Sélectionnez la section Options de rapport disponibles pour** les utilisateurs : sélectionnez au moins une des options suivantes :
+         - **Demandez-moi avant d’envoyer le message.**
          - **Toujours signaler le message**
          - **Ne jamais signaler le message**
 
@@ -124,7 +124,7 @@ Une fois que vous avez vérifié que votre boîte aux lettres répond à toutes 
 
 ## <a name="third-party-reporting-tools"></a>Outils de rapports tiers
 
-Vous pouvez configurer des outils de création de rapports de messages tiers pour envoyer des messages signalés à la boîte aux lettres personnalisée. Pour ce faire, vous devez définir le paramètre  du bouton  Message de rapport **Microsoft Outlook** sur « Off » et définir la boîte aux lettres de mon organisation sur une boîte aux lettres Office 365 de votre choix.
+Vous pouvez configurer des outils de création de rapports de messages tiers pour envoyer des messages signalés à la boîte aux lettres personnalisée. Pour ce faire, vous devez définir le paramètre  du bouton  Message de rapport **Microsoft Outlook** sur Off et définir la boîte aux lettres de mon organisation sur une boîte aux lettres Office 365 de votre choix.
 
 La seule condition est que le message d’origine soit inclus en tant que . EML ou . Pièce jointe MSG (non compressée) dans le message envoyé à la boîte aux lettres personnalisée (ne pas simplement transmettre le message d’origine à la boîte aux lettres personnalisée).
 
@@ -134,24 +134,19 @@ Les exigences de mise en forme des messages sont décrites dans la section suiva
 
 Pour identifier correctement les messages joints d’origine, les messages envoyés à la boîte aux lettres personnalisée nécessitent une mise en forme spécifique. Si les messages n’utilisent pas ce format, les messages joints d’origine sont toujours identifiés comme des envois de hameçonnage.
 
-Pour identifier correctement les messages joints d’origine, les messages envoyés à la boîte aux lettres personnalisée doivent utiliser la syntaxe suivante pour l’objet (titre de l’enveloppe) :
+Si vous souhaitez spécifier la raison signalée des messages joints d’origine, les messages envoyés à la boîte aux lettres personnalisée (ne modifiez pas la pièce jointe) doivent commencer par l’un des préfixes suivants dans l’objet (titre de l’enveloppe) :
 
-`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
+- 1| ou courrier indésirable :
+- 2| ou non indésirable
+- 3| ou hameçonnage
 
-où SafetyAPIAction est l’une des valeurs d’un nombre integer suivantes :
+Par exemple :
 
-- 1 : Courrier indésirable
-- 2 : ne pas être indésirable
-- 3 : Hameçonnage
+`3|This part is ignored by the system` <br>
+`Not Junk:This part of the subject is ignored as well`
 
-Cet exemple utilise les valeurs suivantes :
+- Ces deux messages sont signalés comme non indésirables en fonction de l’objet.
+- Le reste est ignoré.
 
-- Le message est signalé comme hameçonnage.
-- L’ID de message réseau est 49871234-6dc6-43e8-abcd-08d797f20abe.
-- L’adresse IP de l’expéditeur est 167.220.232.101.
-- L’adresse de l’test@contoso.com.
-- La ligne d’objet du message est « tester l’envoi de hameçonnage »
-
-`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Les messages qui ne suivent pas ce format ne s’afficheront pas correctement dans le portail soumissions.
