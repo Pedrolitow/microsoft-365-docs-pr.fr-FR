@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Découvrez comment créer une stratégie d’archivage et de suppression dans Microsoft 365 qui déplace automatiquement des éléments vers la boîte aux lettres d’archivage d’un utilisateur.
-ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16a9191268cb83b5377e8f55d3d4d20522c223cb
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919530"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062173"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurer une stratégie d’archivage et de suppression pour les boîtes aux lettres de votre organisation
 
@@ -158,7 +158,7 @@ La dernière balise de rétention que vous allez créer est une balise de strat�
 
 2. Dans la balise Nouveau appliquée automatiquement à une page **de dossiers** par défaut, complétez les champs suivants :
 
-    ![Paramètres créer une balise de stratégie de rétention pour le dossier Éléments supprimés](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![Paramètres de création d’une balise de stratégie de rétention pour le dossier Éléments supprimés](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
    1. **Nom** Tapez un nom pour la nouvelle balise de rétention. 
 
@@ -199,13 +199,13 @@ Après avoir créé les balises de rétention personnalisées, l’étape suivan
 
 7. Dans la page **Nouvelle stratégie de rétention,** cliquez sur **Enregistrer** pour créer la nouvelle stratégie.
 
-    La nouvelle stratégie de rétention s’affiche dans la liste. Sélectionnez-le pour afficher les balises de rétention qui lui sont liées dans le volet d’informations.
+    La nouvelle stratégie de rétention s’affiche dans la liste. Sélectionnez-la pour afficher les balises de rétention qui lui sont liées dans le volet d’informations.
 
     ![La nouvelle stratégie de rétention et la liste des balises de rétention liées](../media/63bc45e6-110b-4dc9-a85f-8eb1961a8258.png)
   
 ## <a name="step-4-assign-the-new-retention-policy-to-user-mailboxes"></a>Étape 4 : Attribuer la nouvelle stratégie de rétention aux boîtes aux lettres des utilisateurs
 
-Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétention nommée Stratégie MRM par défaut lui est affectée par défaut. Dans cette étape, vous allez remplacer cette stratégie de rétention (car une boîte aux lettres ne peut être affectée qu’à une seule stratégie de rétention) en attribuant la nouvelle stratégie de rétention que vous avez créée à l’étape 3 aux boîtes aux lettres utilisateur de votre organisation. Cette étape suppose que vous allez affecter la nouvelle stratégie à toutes les boîtes aux lettres de votre organisation.
+Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétention nommée Stratégie MRM par défaut lui est affectée par défaut. Dans cette étape, vous allez remplacer cette stratégie de rétention (car une boîte aux lettres ne peut être affectée qu’à une seule stratégie de rétention) en attribuant la nouvelle stratégie de rétention que vous avez créée à l’étape 3 aux boîtes aux lettres des utilisateurs de votre organisation. Cette étape suppose que vous allez affecter la nouvelle stratégie à toutes les boîtes aux lettres de votre organisation.
   
 1. Dans le EAC, allez à **Boîtes aux lettres** de  >  **destinataires.**
 
@@ -231,11 +231,11 @@ Lorsqu’une nouvelle boîte aux lettres est créée, une stratégie de rétenti
 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Facultatif) Étape 5 : Exécuter l’Assistant Dossier géré pour appliquer les nouveaux paramètres
 
-Après avoir appliqué la nouvelle stratégie de rétention aux boîtes aux lettres à l’étape 4, l’application des nouveaux paramètres de rétention aux boîtes aux lettres peut prendre jusqu’à 7 jours en Exchange Online. Cela est dû au fait qu’un processus appelé *Assistant Dossier* géré traite les boîtes aux lettres au moins une fois tous les 7 jours. Au lieu d’attendre l’exécution de l’Assistant Dossier géré, vous pouvez forcer cette exécution en exécutant la cmdlet **Start-ManagedFolderAssistant** dans Exchange Online PowerShell.
+Après avoir appliqué la nouvelle stratégie de rétention aux boîtes aux lettres à l’étape 4, l’application des nouveaux paramètres de rétention aux boîtes aux lettres dans Exchange Online peut prendre jusqu’à 7 jours. Cela est dû au fait qu’un processus appelé *Assistant Dossier* géré traite les boîtes aux lettres au moins une fois tous les 7 jours. Au lieu d’attendre l’exécution de l’Assistant Dossier géré, vous pouvez forcer cette exécution en exécutant la cmdlet **Start-ManagedFolderAssistant** dans Exchange Online PowerShell.
 
  **Que se passe-t-il lorsque vous exécutez l’Assistant Dossier géré ?** Il applique les paramètres de la stratégie de rétention en inspectant les éléments de la boîte aux lettres et en déterminant s’ils sont soumis à la rétention. Il marque ensuite les éléments soumis à la rétention avec la balise de rétention appropriée, puis prend l’action de rétention spécifiée sur les éléments qui ont passé leur âge de rétention.
   
-Voici les étapes à suivre pour vous connecter Exchange Online PowerShell, puis exécuter l’Assistant Dossier géré sur chaque boîte aux lettres de votre organisation.
+Voici les étapes à suivre pour vous connecter à Exchange Online PowerShell, puis exécuter l’Assistant Dossier géré sur chaque boîte aux lettres de votre organisation.
 
 1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
   
@@ -276,7 +276,7 @@ Voilà ! Vous avez mis en place une stratégie d’archivage et de suppression 
 
 4. Vous pouvez réexécuter la commande à l’étape 2 pour vérifier que la stratégie de rétention affectée au plan de boîte aux lettres par défaut a été modifiée.
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Comment l’âge de rétention est-il calculé ? L’âge de rétention des éléments de boîte aux lettres est calculé à partir de la date de remise ou de création des éléments tels que les brouillons qui ne sont pas envoyés mais créés par l’utilisateur. Quand l'Assistant Dossier géré traite les éléments d'une boîte aux lettres, il appose une date de début et une date d'expiration pour tous les éléments présentant des balises de rétention avec l'action de rétention Supprimer et autoriser la récupération ou Supprimer définitivement. Les éléments qui ont une balise d’archivage sont marqués avec une date de déplacement. 
 
@@ -294,6 +294,6 @@ Voilà ! Vous avez mis en place une stratégie d’archivage et de suppression 
     |Ne jamais supprimer  <br/> |Cette balise empêche la suppression d’éléments par une stratégie de rétention.  <br/> |Intégré  <br/> |Personnel ; Cette balise peut être appliquée par les utilisateurs.  <br/> |
     |Déplacement vers l’archive après 1 ans - Personnel  <br/> |Déplace les éléments vers la boîte aux lettres d’archivage après 1 an.  <br/> |Intégré  <br/> |Personnel ; Cette balise peut être appliquée par les utilisateurs.  <br/> |
 
-    > <sup>\*</sup>Les utilisateurs peuvent utiliser l’outil Récupérer les éléments supprimés dans Outlook et Outlook sur le web (anciennement Outlook Web App) pour récupérer un élément supprimé au cours de la période de rétention des éléments supprimés, qui est par défaut de 14 jours dans Exchange Online. Un administrateur peut utiliser Windows PowerShell pour augmenter la période de rétention des éléments supprimés à un maximum de 30 jours. Pour plus d’informations, voir : Récupérer des éléments supprimés dans Outlook pour [Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) et modifier la période de rétention des éléments supprimés pour une boîte aux lettres [dans Exchange Online](https://www.microsoft.com/?ref=go)
+    > <sup>\*</sup>Les utilisateurs peuvent utiliser l’outil Récupérer les éléments supprimés dans Outlook et Outlook sur le web (anciennement Outlook Web App) pour récupérer un élément supprimé au cours de la période de rétention des éléments supprimés, qui est par défaut de 14 jours dans Exchange Online. Un administrateur peut utiliser Windows PowerShell pour augmenter la période de rétention des éléments supprimés à un maximum de 30 jours. Pour plus d’informations, voir : Récupérer des éléments supprimés dans Outlook pour [Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) et modifier la période de rétention des éléments supprimés pour une boîte aux lettres [dans Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)
   
 - L’utilisation de la balise de rétention Déplacer vers l’archive des éléments **récupérables de 14** jours permet de libérer de l’espace de stockage dans le dossier Éléments récupérables de la boîte aux lettres principale de l’utilisateur. Cela est utile lorsque la boîte aux lettres d’un utilisateur est placée en attente, ce qui signifie que rien n’est jamais supprimé définitivement de la boîte aux lettres de l’utilisateur. Sans déplacer d’éléments vers la boîte aux lettres d’archivage, il est possible que le quota de stockage du dossier Éléments récupérables de la boîte aux lettres principale soit atteint. Pour plus d’informations à ce sujet et pour savoir comment l’éviter, voir Augmenter le quota d’éléments [récupérables](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)pour les boîtes aux lettres en attente.

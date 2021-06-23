@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées qui sont disponibles dans les organisations avec Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbf90f52127e96e08f1c176a23d5f5ab1d6d86c4
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: dd69e00b0e8929752341bf3d2b0abde88921066b
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054542"
+ms.locfileid: "53061884"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -230,7 +230,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
        - **Mettre le message en quarantaine**
 
    - **Conseils de sécurité & indicateurs de sécurité**: configurez les paramètres suivants :
-     - Afficher le premier conseil de sécurité de **contact**: cette conseil de sécurité remplace la nécessité de créer des règles de flux de messagerie (également appelées règles de transport) qui ajoutent l’en-tête nommé **X-MS-Exchange-EnableFirstContactSafetyTip** par la valeur **Activer** pour les messages.
+     - **Afficher le premier contact conseil de sécurité**: pour plus d’informations, voir First contact [conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **Afficher l’emprunt d’conseil de sécurité**: ce paramètre est disponible uniquement si vous avez sélectionné Activer la protection des utilisateurs **sur** la page précédente.
      - **Afficher l’emprunt** d conseil de sécurité : ce paramètre est disponible  uniquement si vous avez sélectionné Activer les domaines à protéger sur la page précédente.
      - **Afficher les caractères inhabituels d’emprunt d’identité conseil de sécurité** Ce paramètre est disponible uniquement si vous avez sélectionné Activer les **utilisateurs** **pour protéger** ou Activer les domaines à protéger sur la page précédente.
@@ -456,7 +456,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [v
 
 Outre les éléments suivants, les mêmes paramètres sont disponibles lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell que lorsque vous créez la stratégie comme décrit à l’étape 1 : Utiliser PowerShell pour créer une section de stratégie [anti-hameçonnage](#step-1-use-powershell-to-create-an-anti-phish-policy) plus tôt dans cet article.
 
-- Le _commutateur MakeDefault_ qui transforme la stratégie spécifiée en  stratégie par défaut (appliquée à tout le monde, toujours la priorité la plus faible et que vous ne pouvez pas supprimer) est disponible uniquement lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell.
+- Le _commutateur MakeDefault_ qui transforme la stratégie spécifiée en  stratégie par défaut (appliquée à tout le monde, toujours la plus faible priorité et que vous ne pouvez pas supprimer) est disponible uniquement lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell.
 
 - Vous ne pouvez pas renommer une stratégie anti-hameçonnage (la cmdlet **Set-AntiPhishPolicy** n’a pas de _paramètre Name)._ Lorsque vous renommez une stratégie anti-hameçonnage dans le portail Microsoft 365 Defender, vous renommez uniquement la règle _anti-hameçonnage._
 

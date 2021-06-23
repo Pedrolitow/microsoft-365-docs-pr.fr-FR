@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents vers Microsoft 365 boîtes aux lettres.
-ms.openlocfilehash: a0c4505d3fbd593f5703f4abfb5cba1870c037c5
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 5e1eab67019184e337b7e5404bf96bdf26d0446d
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054774"
+ms.locfileid: "53061723"
 ---
 # <a name="archive-third-party-data"></a>Archiver des données tierces
 
@@ -143,7 +143,6 @@ Comme mentionné précédemment, les connecteurs de données fournis par TeleMes
 |O2 SMS et Voice Network Archiver | Oui         | Non | Non |
 |ARCHIVEur réseau SMS SMS | Oui | Non | Non |
 |Verizon SMS/MMS Network Archiver | Oui | Non | Non |
-|Archiveur WeChat | Oui | Non | Non |
 |Archiveur WhatsApp | Oui | Non | Non |
 |||||
 

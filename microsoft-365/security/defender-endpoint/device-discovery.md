@@ -20,26 +20,25 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 16baaa6fd9865140d42c0ca3a566427f761a28c2
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636241"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062219"
 ---
 # <a name="device-discovery-overview"></a>Vue d’ensemble de la découverte d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 La protection de votre environnement nécessite d’inventorier les appareils qui se sont connectés à votre réseau. Toutefois, le mappage d’appareils dans un réseau peut souvent être coûteux, difficile et chronophage. 
 
-Microsoft Defender pour point de terminaison fournit une fonctionnalité de découverte d’appareils qui vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses.
+Microsoft Defender pour endpoint fournit une fonctionnalité de découverte d’appareils qui vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses.
 
 
 La fonctionnalité de découverte d’appareils vous permet de :
@@ -76,7 +75,7 @@ Lorsque le mode Standard est activé, une activité réseau minime et négligeab
 
  Si vous choisissez de ne pas activer ce mode, vous n’aurez qu’une visibilité limitée des points de terminaison nonmanagés dans votre réseau.
 
-La découverte standard utilise divers scripts PowerShell pour sonder activement des périphériques dans le réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l’emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
+La découverte standard utilise divers scripts PowerShell pour sonder activement les périphériques du réseau. Ces scripts PowerShell sont signés par Microsoft et sont exécutés à partir de l’emplacement suivant `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps` : Par exemple, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
 Vous pouvez modifier et personnaliser vos paramètres de découverte, pour plus d’informations, voir [Configurer la découverte d’appareils.](configure-device-discovery.md)
 
@@ -100,7 +99,7 @@ Les appareils qui ont été découverts mais qui n’ont pas encore été intég
 > Vous pouvez toujours appliquer des filtres pour exclure les appareils nonmanagés de la liste d’inventaire des appareils. Vous pouvez également utiliser la colonne d’état d’intégration sur les requêtes API pour filtrer les appareils nonmanagés. 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Évaluation de la vulnérabilité sur les appareils détectés
-Les vulnérabilités et les risques sur vos appareils, ainsi que d’autres périphériques non utilisés détectés dans le réseau font partie des flux TVM actuels sous « Recommandations de sécurité » et représentés dans les pages d’entité sur le portail. Recherchez les recommandations de sécurité « SSH » pour rechercher les vulnérabilités SSH liées aux appareils non gérés et gérés. 
+Les vulnérabilités et les risques sur vos appareils, ainsi que d’autres périphériques non utilisés détectés dans le réseau font partie des flux TVM actuels sous « Security Recommandations » et représentés dans les pages d’entité sur le portail. Recherchez les recommandations de sécurité « SSH » pour rechercher les vulnérabilités SSH liées aux appareils non gérés et gérés. 
 
 ![Image du tableau de bord recommandations en matière de sécurité](images/1156c82ffadd356ce329d1cf551e806c.png)  
 
@@ -145,6 +144,6 @@ La section suivante répertorie les modifications que vous observerez dans Micro
 
 
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 - [Configurer la découverte d’appareils](configure-device-discovery.md)
 - [FAQ sur la découverte d’appareils](device-discovery-faq.md)

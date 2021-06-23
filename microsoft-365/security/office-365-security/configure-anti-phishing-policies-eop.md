@@ -15,12 +15,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage disponibles dans les organisations Exchange Online Protection (EOP) avec ou sans boîtes aux lettres Exchange Online utilisateur.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8633644ab0380cf2adcf30c006a7d6d141a6040a
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 1dcfba32a5c76915c8c905d55b69712162efac48
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054564"
+ms.locfileid: "53062225"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Configurer des stratégies anti-hameçonnage dans EOP
 
@@ -126,11 +126,14 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
      - **Déplacer le message vers les dossiers Courrier indésirable des destinataires**
      - **Mettre le message en quarantaine**
 
-   - **Conseils de & des indicateurs**: ce paramètre est  disponible uniquement si vous avez sélectionné Activer la veille contre l’usurpation d’informations sur la page précédente :
-     - Afficher **(?)** pour les expéditeurs non authentifiés pour l’usurpation d’identité : ajoute un point d’interrogation à la photo  de l’expéditeur dans la zone De de la Outlook si le message ne passe pas les vérifications SPF ou DKIM et si le message ne passe pas l’authentification DMARC ou [composite](email-validation-and-authentication.md#composite-authentication).
-     - **Afficher la balise « via**» : ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse MAIL **FROM.**
+   - **Conseils de sécurité & indicateurs :**
+     - **Afficher le premier contact conseil de sécurité**: pour plus d’informations, voir First contact [conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - Afficher **(?)** pour les expéditeurs non authentifiés pour l’usurpation d’identité : ajoute un point d’interrogation à la photo de l’expéditeur dans la zone De de Outlook si le message ne passe pas les vérifications SPF ou DKIM et si le message ne passe pas <sup>\*</sup>  l’authentification DMARC ou [composite](email-validation-and-authentication.md#composite-authentication).
+     - **Afficher la balise « via**» : ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou <sup>\*</sup> l’adresse **MAIL FROM.**
 
      Pour activer un paramètre, cochez la case. Pour la désactiver, cochez la case.
+
+     <sup>\*</sup> Ce paramètre est disponible uniquement si vous avez sélectionné Activer la veille contre l’usurpation **d’informations** sur la page précédente. Pour plus d’informations, [voir Expéditeur non authentifié.](set-up-anti-phishing-policies.md#unauthenticated-sender)
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
@@ -347,7 +350,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [v
 
 Outre les éléments suivants, les mêmes paramètres sont disponibles lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell que lorsque vous créez une stratégie comme décrit à l’étape 1 : Utiliser PowerShell pour créer une stratégie [anti-hameçonnage](#step-1-use-powershell-to-create-an-anti-phish-policy) plus tôt dans cet article.
 
-- Le _commutateur MakeDefault_ qui transforme la stratégie spécifiée en  stratégie par défaut (appliquée à tout le monde, toujours la priorité la plus faible et que vous ne pouvez pas supprimer) est disponible uniquement lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell.
+- Le _commutateur MakeDefault_ qui transforme la stratégie spécifiée en  stratégie par défaut (appliquée à tout le monde, toujours la plus faible priorité et que vous ne pouvez pas supprimer) est disponible uniquement lorsque vous modifiez une stratégie anti-hameçonnage dans PowerShell.
 - Vous ne pouvez pas renommer une stratégie anti-hameçonnage (la cmdlet **Set-AntiPhishPolicy** n’a pas de _paramètre Name)._ Lorsque vous renommez une stratégie anti-hameçonnage dans le portail Microsoft 365 Defender, vous renommez uniquement la règle _anti-hameçonnage._
 
 Pour modifier une stratégie anti-hameçonnage, utilisez la syntaxe suivante :

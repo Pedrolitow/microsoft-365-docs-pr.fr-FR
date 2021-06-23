@@ -1,7 +1,7 @@
 ---
 title: Découverte et découverte de périphériques réseau gestion des vulnérabilités
 description: Les recommandations de sécurité et la détection des vulnérabilités sont désormais disponibles pour les systèmes d’exploitation des commutateurs, routeurs, contrôleurs WLAN et pare-feu.
-keywords: périphériques réseau, détection des vulnérabilités des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
+keywords: périphériques réseau, détection de vulnérabilité des périphériques réseau, systèmes d’exploitation de commutateurs, routeurs, contrôleurs WLAN et pare-feu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,27 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 86b8a37fd6b2d6f9906321b5d74de0e21c45fca3
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862066"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062141"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Découverte et découverte de périphériques réseau gestion des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
-> [!IMPORTANT]
-> **L’analyse et la gestion des périphériques réseau sont actuellement en prévisualisation publique**<br>
-> Cette version d’aperçu est fournie sans contrat de niveau de service et n’est pas recommandée pour les charges de travail de production. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
-> Pour plus d’informations, [voir Microsoft Defender pour les fonctionnalités d’aperçu de point de terminaison.](preview.md)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
@@ -101,11 +96,11 @@ La première étape consiste à sélectionner un appareil qui effectuera les ana
     - *.blob.core.windows.net/networkscannerstable/ *
 
     > [!NOTE]
-    > Toutes les URL ne sont pas spécifiées dans la liste documentée defender pour point de terminaison de collecte de données autorisées.
+    > Toutes les URL ne sont pas spécifiées dans la liste de collecte de données autorisées de Defender for Endpoint.
 
 ## <a name="permissions"></a>Autorisations
 
-Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l’autorisation en allant à **Paramètres**  >  **rôles**. Pour plus d’informations, voir [Créer et gérer des rôles pour le contrôle d’accès basé sur les rôles.](user-roles.md)
+Pour configurer les travaux d’évaluation, l’option d’autorisation utilisateur suivante est requise : Gérer les **paramètres de sécurité dans le Centre de sécurité.** Vous pouvez trouver l’autorisation en allant à **Paramètres**  >  **rôles**. Pour plus d’informations, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](user-roles.md)
 
 ## <a name="install-the-network-scanner"></a>Installer le scanneur réseau
 
@@ -130,7 +125,7 @@ Pour terminer le processus d’inscription du scanneur réseau :
 
 2. Entrez le code et connectez-vous à l’aide d’un compte Microsoft qui dispose de l’autorisation Defender pour le point de terminaison appelée « Gérer les paramètres de sécurité dans le Centre de sécurité ».
 
-3. Lorsque vous avez terminé, vous devriez voir un message vous confirmant que vous vous êtes déjà inscrit.
+3. Lorsque vous avez terminé, vous devez voir un message vous confirmant que vous êtes bien inscrit.
 
 ## <a name="configure-a-new-assessment-job"></a>Configurer un nouveau travail d’évaluation  
 

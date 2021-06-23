@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fd7c6a217c1bc1ce3b278afb911988b94a6951e0
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933780"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062156"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migration d’un hips tiers vers des règles asr
 
@@ -135,19 +135,19 @@ Cet article vous aide à ma cartographier des règles communes à Microsoft Defe
 - **Operation**- Process Execution
 - **Exemples de fichiers/dossiers, clés/valeurs de Registre, processus, services**- tor.exe, bittorrent.exe, cmd.exe, powershell.exe, et bien plus encore
 - **Règles de réduction de la surface d’attaque**: globalement, les règles de réduction de la surface d’attaque ne sont pas conçues pour fonctionner en tant que gestionnaire d’applications.
-- **Autres fonctionnalités recommandées**: pour empêcher les utilisateurs de lancer des processus ou des programmes spécifiques, il est recommandé d’utiliser Windows Defender Contrôle d’application. Les indicateurs Microsoft Defender for Endpoint File et Cert peuvent être utilisés dans un scénario de réponse aux incidents (ne doit pas être considéré comme un mécanisme de contrôle d’application).
+- **Autres fonctionnalités recommandées**: pour empêcher les utilisateurs de lancer des processus ou des programmes spécifiques, il est recommandé d’utiliser Windows Defender Contrôle d’application. Les indicateurs Microsoft Defender for Endpoint File et Cert peuvent être utilisés dans un scénario de réponse aux incidents (ne doivent pas être considérés comme un mécanisme de contrôle d’application).
     
 ### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>Bloquer les modifications non autorisées apportées Antivirus Microsoft Defender configurations
 
 - **S’applique** à - Tous les processus
 - **Processus**- *
 - **Opération**: modifications du Registre
-- Exemples de **fichiers/dossiers, clés de Registre/valeurs, processus, services**- HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring, etc.
+- Exemples de **fichiers/dossiers, clés/valeurs de Registre, processus, services**- HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\DisableAntiSpyware, HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\AllowRealTimeMonitoring, etc.
 - **Règles de réduction de** la surface d’attaque : les règles de réduction de la surface d’attaque ne couvrent pas ces scénarios, car elles font partie de la protection intégrée de Microsoft Defender for Endpoint.
 - Autres fonctionnalités recommandées : la protection contre la falsification (opt-in, géré à partir d’Intune) empêche les modifications non autorisées apportées aux clés de Registre DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring et DisableIOAVProtection (et bien plus encore).
 
 Voir aussi
 
-- [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.md)
+- [FAQ sur la réduction de la surface d’attaque](attack-surface-reduction-faq.yml)
 - [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
 - [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)

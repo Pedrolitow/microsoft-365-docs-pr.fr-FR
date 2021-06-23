@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à utiliser le portail Soumissions dans le portail Microsoft 365 Defender pour soumettre à Microsoft des messages suspects, des messages de hameçonnage suspects, du courrier indésirable et d’autres messages potentiellement dangereux, des URL et des pièces jointes de courrier électronique à Microsoft pour la réessuration.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b671ce5a44c7be61331a121b49e96658cf14bab1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: ab25757c79b7978400e98fa36d48163e1681e7c1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964800"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061999"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Utilisez la soumission de l’administrateur pour soumettre des courriers indésirables, l’hameçonnage, des URL et des fichiers à Microsoft
 
@@ -91,7 +91,8 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 5. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
-   ![Exemple de soumission d’URL](../../media/submission-flyout-email.PNG)
+> [!div class="mx-imgBorder"]
+> ![Exemple de soumission d’URL](../../media/submission-flyout-email.png)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Envoyer une URL suspecte à Microsoft
 
@@ -105,7 +106,8 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
-   ![Exemple d’envoi de nouveaux e-mails](../../media/submission-url-flyout.png)
+> [!div class="mx-imgBorder"]
+> ![Exemple d’envoi de nouveaux e-mails](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>Envoyer une pièce jointe suspecte à Microsoft
 
@@ -119,7 +121,8 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 4. Lorsque vous avez terminé, cliquez sur le **bouton** Envoyer.
 
-   ![Exemple d’envoi de nouvelles pièces jointes](../../media/submission-file-flyout.PNG)
+> [!div class="mx-imgBorder"]
+> ![Exemple d’envoi de nouvelles pièces jointes](../../media/submission-file-flyout.png)
 
 ## <a name="view-admin-submissions-to-microsoft"></a>Afficher les soumissions d’administrateur à Microsoft
 
@@ -157,7 +160,8 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
      Lorsque vous avez terminé, cliquez sur **Appliquer.**
 
-     ![Nouvelles options de filtre pour les soumissions d’administrateur](../../media/admin-submission-email-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Nouvelles options de filtre pour les soumissions d’administrateur](../../media/admin-submission-filters.png)
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
@@ -170,7 +174,7 @@ Pour d’autres façons de soumettre des messages électroniques, des URL et des
 
 ### <a name="admin-submission-rescan-details"></a>Détails de la rescan de soumission de l’administrateur
 
-Les messages envoyés dans les soumissions d’administrateur sont réassurés et les résultats sont affichés dans le flyout détaillé des soumissions :
+Les messages envoyés dans les soumissions d’administrateur sont examinés et les résultats sont affichés dans le flyout détaillé des soumissions :
 
 - En cas d’échec de l’authentification des e-mails de l’expéditeur au moment de la livraison.
 - Informations sur les accès à la stratégie qui auraient pu affecter ou écraser le verdict d’un message.
@@ -214,7 +218,8 @@ Si vous avez déployé le [add-in](enable-the-report-message-add-in.md) [](enabl
 
      Lorsque vous avez terminé, cliquez sur **Appliquer.**
 
-    ![Nouvelles options de filtre pour les soumissions d’utilisateurs](../../media/user-submissions-filter-options.png)
+     > [!div class="mx-imgBorder"]
+     > ![Nouvelles options de filtre pour les soumissions d’utilisateurs](../../media/admin-submission-reported-messages.png)
 
    - Pour grouper les entrées, cliquez sur **Grouper** et sélectionnez l’une des valeurs suivantes dans la liste suivante :
      - **Aucune**
@@ -245,4 +250,5 @@ Sous **l’onglet Messages** signalés par l’utilisateur, sélectionnez un mes
 - **Signaler le courrier indésirable**
 - **Déclencher l’examen**
 
-![Nouvelles options sur le bouton Action](../../media/user-submission-custom-mailbox-action-button.png)
+> [!div class="mx-imgBorder"]
+> ![Nouvelles options sur le bouton Action](../../media/admin-submission-main-action-button.png)

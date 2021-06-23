@@ -17,22 +17,22 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ceca8ac76f63ef7da34f4222312e9e03a3b0e23a
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844189"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062246"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Nouveautés dans Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
 Les fonctionnalités suivantes sont généralement disponibles dans la dernière version de Microsoft Defender pour Endpoint, ainsi que les fonctionnalités de sécurité dans Windows 10 et Windows Server.
 
@@ -46,7 +46,17 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
-## <a name="march-2021"></a>9 mars 2021
+## <a name="june-2021"></a>Juin 2021
+
+- [Découverte d’appareils](device-discovery.md) <br> Vous permet de trouver des appareils non utilisés connectés à votre réseau d’entreprise sans avoir besoin d’appliances supplémentaires ou de modifications de processus fastidieuses. À l’aide d’appareils intégrés, vous pouvez rechercher des appareils non utilisés dans votre réseau et évaluer les vulnérabilités et les risques. Vous pouvez ensuite intégrer des appareils découverts afin de réduire les risques associés à l’affichage de points de terminaison non pris en compte dans votre réseau.
+
+   > [!IMPORTANT]
+   > La découverte standard sera le mode par défaut pour tous les clients à partir du 19 juillet 2021. Vous pouvez choisir de conserver le mode de base via la page paramètres. 
+
+
+- [Les définitions de groupe d’appareils](/microsoft-365/security/defender-endpoint/machine-groups) peuvent désormais inclure plusieurs valeurs pour chaque condition. Vous pouvez définir plusieurs balises, noms d’appareils et domaines sur la définition d’un seul groupe d’appareils.
+
+## <a name="march-2021"></a>Mars 2021
 - [Gérer la protection contre les falsifications à l’aide Centre de sécurité Microsoft Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Vous pouvez gérer les paramètres de protection contre les falsifications sur Windows 10, Windows Server 2016 et Windows Server 2019 à l’aide d’une méthode appelée attachement *client.* 
 
 ## <a name="january-2021"></a>Janvier 2021
@@ -82,7 +92,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
 
 - [Microsoft Defender pour point de terminaison macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender pour le point de terminaison sur macOS apporte la protection nouvelle génération aux appareils Mac. Les principaux composants de la plateforme de sécurité de point de terminaison unifiée seront désormais disponibles pour les appareils Mac, y compris [protection évolutive des points de terminaison](microsoft-defender-endpoint-mac.md).
  
-- [Informations de fin de vie & l’application de gestion des vulnérabilités et de la version de l’application](tvm-security-recommendation.md) <BR>Les applications et les versions d’applications qui ont atteint leur fin de vie sont marquées ou étiquetées en tant que telles, afin que vous sachez qu’elles ne seront plus prises en charge et qu’elles peuvent prendre des mesures pour désinstaller ou remplacer. Cela permet de réduire les risques liés à diverses expositions de vulnérabilités dues à des applications non associées.
+- [Informations de fin de vie & l’application de gestion des vulnérabilités et de la version de l’application](tvm-security-recommendation.md) <BR>Les applications et les versions d’applications qui ont atteint leur fin de vie sont marquées ou étiquetées en tant que telles. Vous savez donc qu’elles ne seront plus prises en charge et qu’elles peuvent prendre des mesures pour désinstaller ou remplacer. Cela permet de réduire les risques liés à diverses expositions de vulnérabilités dues à des applications non associées.
 
 - [Schémas de & de recherche avancée de gestion des menaces et des vulnérabilités](advanced-hunting-schema-reference.md) <BR>Utilisez les tables gestion des menaces & des vulnérabilités dans le schéma de recherche avancé pour interroger sur l’inventaire logiciel, la base de connaissances des vulnérabilités, l’évaluation de la configuration de la sécurité et la base de connaissances sur la configuration de la sécurité. 
  
@@ -99,7 +109,7 @@ Pour plus d’informations sur les fonctionnalités d’aperçu, voir [fonctionn
  
 - [Applications Azure AD connectées](connected-applications.md)<br> La page Applications connectées fournit des informations sur les applications Azure AD connectées à Microsoft Defender pour endpoint dans votre organisation. 
 
-- [Explorateur d’API](api-explorer.md)<br> L’Explorateur d’API facilite la construction et l’application de requêtes API, teste et envoie des demandes pour tout point de terminaison de l’API Microsoft Defender pour endpoint disponible.
+- [Explorateur d’API](api-explorer.md)<br> L’Explorateur d’API facilite la construction et l’application de requêtes API, teste et envoie des demandes pour tout point de terminaison de l’API Microsoft Defender pour Endpoint disponible.
 
 
 ## <a name="september-2019"></a>Septembre 2019
@@ -191,7 +201,7 @@ Interroger des données à l’aide d’une recherche avancée dans Microsoft De
     >[!NOTE]
     >Disponible à partir Windows 10 version 1803 ou ultérieure.
 
-- [Accès conditionnel](conditional-access.md) <br> Activer l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données.
+- [Accès conditionnel](conditional-access.md) <br> Activez l’accès conditionnel pour mieux protéger les utilisateurs, les appareils et les données.
 
 - [Centre de Community Microsoft Defender pour Community terminaison](community.md)<BR> 
     Le Centre d’administration Microsoft Defender pour Community est un endroit où les membres de la communauté peuvent découvrir, collaborer et partager des expériences sur le produit. 
@@ -207,7 +217,7 @@ Vous pouvez désormais empêcher les processus nontrus d’écrire dans les sect
 
 
 - [Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)<BR>
-Antivirus Microsoft Defender partage désormais l’état de détection entre Microsoft 365 services et interaérette avec Microsoft Defender pour Endpoint. Pour plus d’informations, voir Utiliser des technologies de nouvelle génération dans Antivirus Microsoft Defender via la [protection cloud.](cloud-protection-microsoft-defender-antivirus.md)
+Antivirus Microsoft Defender partage désormais l’état de détection entre Microsoft 365 services et interaérette avec Microsoft Defender pour Endpoint. Pour plus d’informations, voir Utiliser les technologies de nouvelle génération dans Antivirus Microsoft Defender via la [protection cloud.](cloud-protection-microsoft-defender-antivirus.md)
 
     Bloquer à la première vue peut désormais bloquer les fichiers exécutables non portables (tels que JS, VBS ou macros) ainsi que les fichiers exécutables. Pour plus d’informations, voir [Activer bloquer à la première vue.](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 

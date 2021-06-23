@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services.
-ms.openlocfilehash: cdba6dcaf239e94cf33f3bf88e7f217b4793bfd6
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840849"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061818"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Étape 1 : empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services
 
@@ -41,12 +41,12 @@ Si vous devez empêcher immédiatement l’accès à la signature d’un utilisa
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez la case à côté du nom de l’utilisateur, puis sélectionnez **Réinitialiser le mot de passe.**
 3. Entrez un nouveau mot de passe, puis sélectionnez **Réinitialiser.** (Ne leur envoyez pas de message.)
-4. Sélectionnez le nom de l’utilisateur pour aller  dans le volet de propriétés, puis sous l’onglet Compte, sélectionnez Lancer **la signature.**
+4. Sélectionnez le nom de l’utilisateur pour aller  dans le volet de propriétés, puis sous l’onglet Compte, sélectionnez Se sortir **de toutes les sessions.**
 
-Dans l’heure qui s’affiche( ou après avoir quitté la page de Microsoft 365 en cours), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont ils sortent de leur page web actuelle.
+Dans l’heure qui s’affiche( ou après avoir quitté la page de Microsoft 365 en cours), ils sont invités à se ré-inscrire. Un jeton d’accès est bon pendant une heure, donc la chronologie dépend du temps qui reste sur ce jeton et de la façon dont il quitte la page web actuelle.
   
 > [!IMPORTANT]
-> Si l’utilisateur est Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de l’application en cliquant dans sa boîte aux lettres. Dès qu’ils sélectionnent une autre vignette, OneDrive, ou actualisent leur navigateur, la signature est lancée.
+> Si l’utilisateur est Outlook sur le web, il se peut qu’il ne soit pas immédiatement mis hors de la boîte aux lettres en cliquant dessus. Dès qu’ils sélectionnent une autre vignette, telle que OneDrive, ou actualisent leur navigateur, la signature est lancée.
   
 Pour utiliser PowerShell pour décrémenter un utilisateur immédiatement, consultez l’cmdlet [Revoke-AzureADUserAllRefreshToken.](/powershell/module/azuread/revoke-azureaduserallrefreshtoken)
   
@@ -55,7 +55,7 @@ Pour plus d'informations sur le temps nécessaire pour supprimer l'accès d'un u
 ## <a name="block-a-former-employees-access-to-microsoft-365-services"></a>Bloquer l’accès d’un ancien employé Microsoft 365 services
 
 > [!IMPORTANT]
- > Le blocage d’un compte peut prendre jusqu’à 24 heures pour prendre effet. Si vous devez empêcher immédiatement l’accès à la signature d’un utilisateur, suivez les étapes ci-dessus et réinitialisez son mot de passe.
+ > Le blocage d’un compte peut prendre jusqu’à 24 heures. Si vous devez empêcher immédiatement l’accès à la signature d’un utilisateur, suivez les étapes ci-dessus et réinitialisez son mot de passe.
 
 1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
 2. Sélectionnez le nom de l’employé que vous souhaitez bloquer, puis sous le nom de l’utilisateur, sélectionnez le symbole bloquer **cet utilisateur.**

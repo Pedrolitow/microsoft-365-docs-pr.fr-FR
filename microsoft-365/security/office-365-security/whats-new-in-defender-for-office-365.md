@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932817"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53062202"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -42,6 +42,14 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 > [!TIP]
 > Vous n’avez pas encore Microsoft Defender Office 365 ? [Contactez les ventes pour démarrer une version d’essai.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
+## <a name="june-2021"></a>Juin 2021
+
+- Le nouveau premier contact conseil de sécurité dans les stratégies anti-hameçonnage. Cette conseil de sécurité s’affiche lorsque les destinataires reçoivent pour la première fois un message électronique d’un expéditeur ou ne reçoivent pas souvent de courriers électroniques d’un expéditeur. Pour plus d’informations sur ce paramètre et comment le configurer, consultez les articles suivants :
+
+- [Premier contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- [Configurer des stratégies anti-hameçonnage dans EOP](configure-anti-phishing-policies-eop.md)
+- [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)
+
 ## <a name="aprilmay-2021"></a>Avril/mai 2021
 
 - [](mdo-email-entity-page.md)Page Entité de messagerie : vue unifiée à 360 degrés d’un e-mail avec des informations enrichies sur les menaces, l’authentification et les détections, les détails de détonation et une toute nouvelle expérience d’aperçu du courrier électronique.
@@ -54,6 +62,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 - Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de chasse](threat-explorer.md)
 - Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 (limite précédente) à 30 jours dans les expériences de [repérage](threat-explorer.md)
 - Nouveaux pivots  de repérage appelés domaine emprunt d’identité et utilisateur dont l’identité est usurpée dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés.  Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
+- Nouveau premier contact conseil de sécurité le moment où les destinataires reçoivent pour la première fois un message électronique d’un expéditeur ou ne reçoivent pas souvent de courriers électroniques d’un expéditeur. Pour plus d’informations sur ce paramètre et comment le configurer à l’aide Exchange règles de flux de messagerie (également appelées règles de transport), voir [First contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
 
 ## <a name="december-2020"></a>Décembre 2020
 
@@ -91,7 +100,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 
 - Le widget **Incidents** est désormais le widget **Centre de l’action.** (Pour afficher vos widgets de sécurité dans le Centre de sécurité & conformité, consultez La gestion **des menaces** \> **Review**.) (Microsoft Defender pour Office 365 Plan 2)
 
-- [Documents sécurisés dans Microsoft 365](safe-docs.md) **(prévisualisation)**
+- [Coffre documents dans Microsoft 365](safe-docs.md) **(prévisualisation)**
 
 ## <a name="december-2019"></a>Décembre 2019
 

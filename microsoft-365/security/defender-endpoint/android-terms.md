@@ -1,5 +1,5 @@
 ---
-title: Termes du contrat de licence De l’application Microsoft Defender pour Endpoint sur Android
+title: Termes du contrat de licence de l’application Microsoft Defender pour Endpoint sur Android
 ms.reviewer: ''
 description: Décrit les termes du contrat de licence De Microsoft Defender pour Point de terminaison sur Android
 keywords: microsoft, defender, Microsoft Defender for Endpoint, android, license, terms, application, use, installation, service, feedback, scope,
@@ -18,18 +18,18 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 7a5aa5e049159761c46e2103f7b1ecdd1499f3cd
+ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934620"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53061641"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Termes du contrat de licence de l’application Microsoft Defender pour Endpoint sur Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,17 +52,17 @@ pour cette application, sauf si d’autres termes accompagnent ces éléments. S
 
 **À L’AIDE DE L’APPLICATION, VOUS ACCEPTEZ CES TERMES. SI VOUS NE LES ACCEPTEZ PAS, N’UTILISEZ PAS L’APPLICATION.**
 
-**Si vous respectez ces Conditions, vous avez les droits perpétuelles ci-dessous.**
+**Si vous vous conformez aux conditions suivantes, vous avez les droits perpétuelles ci-dessous.**
 
 1.  **INSTALLATION AND USE RIGHTS.**
 
-    1.  **Installation et utilisation.** Vous pouvez installer et utiliser n’importe quel nombre de copies de cette application sur les appareils android que vous possédez ou contrôlez. Vous pouvez utiliser cette application avec l’abonnement valide microsoft Defender pour le point de terminaison de votre entreprise ou un service en ligne qui inclut les fonctionnalités de Microsoft Defender pour les points de terminaison.
+    1.  **Installation et utilisation.** Vous pouvez installer et utiliser n’importe quel nombre de copies de cette application sur les appareils android que vous possédez ou contrôlez. 
 
     2.  **Mises à jour.** Des mises à jour ou des mises à niveau vers Microsoft Defender pour le point de terminaison peuvent être nécessaires pour une fonctionnalité complète. Certaines fonctionnalités peuvent ne pas être disponibles dans tous les pays.
 
     3.  **Programmes tiers.** L’application peut inclure des programmes tiers que Microsoft, et non le tiers, vous a sous licence dans le cadre du contrat. Les notifications, le cas cas, pour le programme tiers sont incluses pour vos informations uniquement.
 
-2.  **L’ACCÈS À INTERNET PEUT ÊTRE REQUIS.** Vous pouvez engager des frais liés à l’accès à Internet, au transfert de données et à d’autres services selon les conditions du plan de service de données et tout autre contrat que vous avez conclu avec votre opérateur réseau en raison de l’utilisation de l’application. Vous êtes le seul responsable des frais d’opérateur réseau.
+2.  **L’ACCÈS À INTERNET PEUT ÊTRE REQUIS.** Vous pouvez facturer des frais liés à l’accès à Internet, au transfert de données et à d’autres services en respectant les conditions du plan de service de données et tout autre contrat que vous avez conclu avec votre opérateur réseau en raison de l’utilisation de l’application. Vous êtes le seul responsable des frais d’opérateur réseau.
 
 3.  **SERVICES INTERNET.** Microsoft fournit des services Internet avec l’application. Il peut les modifier ou les annuler à tout moment.
 
@@ -95,7 +95,7 @@ pour cette application, sauf si d’autres termes accompagnent ces éléments. S
 
     voir [www.microsoft.com/exporting](https://www.microsoft.com/exporting).
 
-7.  **SUPPORT SERVICES.** Étant donné que cette application est « telle qu’elle est », il est possible que nous ne fournissions pas de services de support pour celle-ci. Si vous avez des problèmes ou des questions concernant votre utilisation de cette application, y compris des questions sur la politique de confidentialité de votre entreprise, contactez l’administrateur de votre entreprise. Ne contactez pas le magasin d’applications, votre opérateur réseau, le fabricant de l’appareil ou Microsoft.
+7.  **SUPPORT SERVICES.** Étant donné que cette application est « telle qu’elle est », il est possible que nous ne fournissions pas de services de support pour celle-ci. Si vous avez des problèmes ou des questions sur votre utilisation de cette application, y compris des questions sur la politique de confidentialité de votre entreprise, contactez l’administrateur de votre entreprise. Ne contactez pas le magasin d’applications, votre opérateur réseau, le fabricant de l’appareil ou Microsoft.
     Le fournisseur du magasin d’applications n’a aucune obligation de fournir une assistance ou une maintenance par rapport à l’application.
 
 8.  **MAGASIN D’APPLICATIONS.**
@@ -127,7 +127,7 @@ Cette limitation s’applique à :
 
 -   tout ce qui est lié à l’application, aux services, au contenu (y compris le code) sur des sites Internet tiers ou des programmes tiers ; et
 
--   réclamations pour violation de contrat, de garantie, de garantie ou de condition ; protection des consommateurs ; ; concurrence inalt; responsabilité stricte, négligence, mauvaise représentation, omission, infraction ou autre délit ; violation de lois ou de réglementations ; ou enrichissement enrichi ; dans la mesure autorisée par la loi applicable.
+-   réclamations pour violation de contrat, de garantie, de garantie ou de condition ; protection des consommateurs ; ; concurrence de l’autorité de concurrence ; responsabilité stricte, négligence, mauvaise représentation, omission, infraction ou autre délit ; violation de lois ou de réglementations ; ou enrichissement enrichi ; dans la mesure autorisée par la loi applicable.
 
 Elle s’applique également même si :
 
