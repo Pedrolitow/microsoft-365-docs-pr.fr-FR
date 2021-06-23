@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Découvrez comment activer le module de signalement du hameçonnage pour Outlook et Outlook sur le web, pour des utilisateurs individuels ou pour l’ensemble de votre organisation.
-ms.openlocfilehash: 44fa55a82462de336982d3af2e3996c14699fd7c
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 44113237274d37aabeda954354182fe4da5aa970
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625388"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083415"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>Activez le complément Signaler un message de hameçonnage
 
@@ -29,9 +29,9 @@ ms.locfileid: "52625388"
 
 
 > [!NOTE]
-> Si vous êtes un administrateur d’une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail Soumissions dans le Centre de sécurité & conformité. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
+> Si vous êtes un administrateur d’une organisation Microsoft 365 avec des boîtes aux lettres Exchange Online, nous vous recommandons d’utiliser le portail Soumissions dans le portail Microsoft 365 Defender. Pour plus d’informations, voir Utiliser la soumission d’administrateur pour soumettre des messages suspects de courrier indésirable, d’hameçonnage, d’URL et [de fichiers à Microsoft.](admin-submission.md)
 
-Les add-ins Signaler les messages et signaler le hameçonnage pour Outlook et Outlook sur le web (anciennement appelés Outlook Web App) permettent aux utilisateurs de signaler facilement les faux positifs (messages électroniques de qualité marqués comme faux) ou les faux négatifs (courriers électroniques erronés autorisés) à Microsoft et à ses affiliés pour analyse.
+Les modules de signalement des messages et du hameçonnage pour Outlook et Outlook sur le web (anciennement appelés Outlook Web App) permettent aux utilisateurs de signaler facilement les faux positifs (messages électroniques de qualité marqués comme faux) ou les faux négatifs (courriers électroniques erronés autorisés) à Microsoft et à ses affiliés pour analyse.
 
 Microsoft utilise ces soumissions pour améliorer l’efficacité des technologies de protection de la messagerie. Par exemple, supposons que des personnes signalent de nombreux messages à l’aide du module de signalement du hameçonnage. Ces informations sont disponibles dans le Tableau [de bord de](security-dashboard.md) sécurité et d’autres rapports. L’équipe de sécurité de votre organisation peut utiliser ces informations pour indiquer que les stratégies anti-hameçonnage peuvent avoir besoin d’être mises à jour.
 
@@ -61,7 +61,7 @@ Si vous êtes administrateur général ou administrateur Exchange Online et que 
 
 - Pour les installation organisationnelles, l’organisation doit être configurée pour utiliser l’authentification OAuth. Pour plus d’informations, [voir Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Les administrateurs doivent être membres du groupe de rôles Administrateurs globaux. Pour en savoir plus, consultez [Autorisations dans le Centre de sécurité et de conformité](permissions-in-the-security-and-compliance-center.md).
+- Les administrateurs doivent être membres du groupe de rôles Administrateurs globaux. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
 ## <a name="get-the-report-phishing-add-in-for-yourself"></a>Obtenir le module de signalement du hameçonnage par vous-même
 
@@ -73,7 +73,7 @@ Si vous êtes administrateur général ou administrateur Exchange Online et que 
 
 4. Connectez-vous à l’aide de votre compte scolaire ou scolaire (pour une utilisation professionnelle) ou de votre compte Microsoft (pour un usage personnel).
 
-Une fois le add-in installé et activé, les icônes suivantes s’offrent à vous :
+Une fois que le module est installé et activé, les icônes suivantes s’offrent à vous :
 
 - Dans Outlook, l’icône ressemble à ceci :
 
@@ -81,18 +81,18 @@ Une fois le add-in installé et activé, les icônes suivantes s’offrent à vo
 
 - Dans Outlook sur le web, l’icône ressemble à ceci :
 
-  ![Outlook sur l’icône du add-in Rapport de hameçonnage sur le web](../../media/OWA-ReportPhishing.png)
+  ![Outlook sur le web Icône Signaler le hameçonnage du add-in](../../media/OWA-ReportPhishing.png)
 
 ## <a name="get-and-enable-the-report-phishing-add-in-for-your-organization"></a>Obtenir et activer le module de signalement du hameçonnage pour votre organisation
 
 > [!NOTE]
 > L’apparition du module dans votre organisation peut prendre jusqu’à 12 heures.
 
-1. Dans le Centre d’administration Microsoft 365,  \> **rendez-vous** sur la page Des applications Paramètres à l’adresse suivante : Si vous ne voyez pas la page Des applications intégrées, consultez le lien Paramètres Applications intégrées en haut de la page Applications <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \> **intégrées.** 
+1. Dans la Centre d’administration Microsoft 365, rendez-vous sur la page Des applications **Paramètres** à l’Paramètres Si la page des applications \> **intégrées** n’est pas consultez, consultez le lien Applications <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> intégrées **Paramètres**  en haut de la page Applications \>  \> **intégrées.** 
 
 2. Sélectionnez **Déployer le add-in** en haut de la page, puis sélectionnez **Suivant**.
 
-   ![Page Services et add-ins dans le centre d’administration Microsoft 365'administration](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Page Services et add-ins dans la Centre d’administration Microsoft 365](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. Dans le **volant Déployer un** nouveau module complémentaire qui s’affiche, examinez les informations, puis cliquez sur **Suivant**.
 
@@ -138,11 +138,11 @@ Les personnes à qui le add-in est affecté voient les icônes suivantes :
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Examiner ou modifier les paramètres du module de signalement du hameçonnage
 
-1. Dans le Centre d’administration Microsoft 365,  \> **rendez-vous** sur la page Des applications Paramètres à l’adresse suivante : Si vous ne voyez pas la page Des applications intégrées, consultez le lien Paramètres Applications intégrées en haut de la page Applications <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>   \>  \> **intégrées.** 
+1. Dans la Centre d’administration Microsoft 365, rendez-vous sur la page Des applications **Paramètres** à l’Paramètres Si la page des applications \> **intégrées** n’est pas consultez, consultez le lien Applications <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> intégrées **Paramètres**  en haut de la page Applications \>  \> **intégrées.** 
 
 2. Recherchez et sélectionnez **le** module de signalement du hameçonnage.
 
-3. Dans le volant **Modifier le hameçonnage** du rapport qui s’affiche, examinez et modifiez les paramètres selon les cas de votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
+3. Dans le flyout **Modifier le hameçonnage** du rapport qui s’affiche, examinez et modifiez les paramètres selon le cas pour votre organisation. Lorsque vous avez terminé, cliquez sur **Enregistrer**.
 
 ## <a name="view-and-review-reported-messages"></a>Afficher et examiner les messages signalés
 

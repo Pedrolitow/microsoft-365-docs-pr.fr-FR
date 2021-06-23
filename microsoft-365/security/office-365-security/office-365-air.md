@@ -22,19 +22,19 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 08e69013c0108d0caaf76c6a227684f5f1b68355
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877883"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083691"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Examen et réponse automatisés (AIR) dans Microsoft Defender pour Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **S’applique à**
-- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
+- [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [Microsoft Defender pour Office 365](defender-for-office-365.md) inclut de puissantes fonctionnalités d’investigation et de réponse automatisées (AIR) qui peuvent faire gagner du temps et des efforts à votre équipe en matière d’opérations de sécurité. À mesure que les alertes sont déclenchées, c’est à votre équipe des opérations de sécurité de passer en revue, de hiérarchiser et de répondre à ces alertes. Suivre le volume d’alertes entrantes peut être difficile à suivre. L’automatisation de certaines de ces tâches peut vous aider.
@@ -46,7 +46,7 @@ Cet article décrit les aspects suivants :
 - Le [flux global d’AIR](#the-overall-flow-of-air);
 - [Comment obtenir AIR](#how-to-get-air); et
 - Autorisations [requises pour](#required-permissions-to-use-air-capabilities) configurer ou utiliser les fonctionnalités AIR.
-- Modifications bientôt apportées à votre portail Microsoft 365 Defender
+- Modifications bientôt apportées à votre portail Microsoft 365 Defender web
 
 Cet article inclut également [les étapes suivantes](#next-steps)et des ressources pour en savoir plus.
 
@@ -56,13 +56,13 @@ Une alerte est déclenchée et un manuel de sécurité démarre une enquête aut
 
 1. Une enquête automatisée est lancée de l’une des manières suivantes :
    - Une [alerte est déclenchée par un](#which-alert-policies-trigger-automated-investigations) message électronique suspect (par exemple, un message, une pièce jointe, une URL ou un compte d’utilisateur compromis). Un incident est créé et un examen automatisé commence . ou
-   - Un analyste de sécurité [démarre une enquête automatisée lors](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) de l’utilisation de [l’Explorateur de menaces.](threat-explorer.md)
+   - Un analyste de [sécurité démarre une enquête automatisée lors](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) de l’utilisation de [l’Explorateur.](threat-explorer.md)
 2. Pendant qu’une enquête automatisée s’exécute, elle collecte des données sur le courrier électronique en question et les entités associées à ce courrier électronique. Ces entités peuvent inclure des fichiers, des URL et des destinataires. La portée de l’enquête peut augmenter à mesure que de nouvelles alertes et des alertes associées sont déclenchées.
 3. Pendant et après un examen automatisé, des [détails et des résultats](air-view-investigation-results.md) peuvent être consultables. Les résultats [incluent des actions recommandées](air-remediation-actions.md) qui peuvent être prises pour répondre aux menaces trouvées et y remédier.
 4. Votre équipe des opérations de sécurité examine les résultats et les [recommandations](air-view-investigation-results.md)de l’examen, et approuve ou rejette [les actions de correction.](air-review-approve-pending-completed-actions.md)
-5. Lorsque les actions de correction en attente sont approuvées (ou rejetées), l’examen automatisé se termine.
+5. Comme les actions de correction en attente sont approuvées (ou rejetées), l’examen automatisé se termine.
 
-Dans Microsoft Defender pour Office 365, aucune action de correction n’est prise automatiquement. Les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation. Les fonctionnalités AIR font gagner du temps à votre équipe des opérations de sécurité en identifiant les actions de correction et en fournissant les détails nécessaires pour prendre une décision éclairée.
+Dans Microsoft Defender pour Office 365, aucune action de correction n’est prise automatiquement. Les actions correctives sont mises en œuvre uniquement après approbation par l’équipe de sécurité de votre organisation. Les fonctionnalités AIR font gagner du temps à votre équipe en matière d’opérations de sécurité en identifiant les actions de correction et en fournissant les détails nécessaires pour prendre une décision éclairée.
 
 Pendant et après chaque examen automatisé, votre équipe des opérations de sécurité peut :
 
@@ -81,9 +81,7 @@ Les fonctionnalités AIR sont incluses [dans Microsoft Defender pour Office 365,
 - [Protection contre les programmes malveillants](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [Protection anti-hameçonnage](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [Liens sécurisés et pièces jointes sécurisées](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Pièces jointes sécurisées pour SharePoint, OneDrive et Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Purge automatique zéro heure pour le courrier électronique](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
+- [Coffre Liens et Coffre pièces jointes](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 En outre, veillez à passer en revue les stratégies [d’alerte](../../compliance/alert-policies.md)de votre organisation, en particulier les stratégies par défaut dans la catégorie [de gestion des menaces.](../../compliance/alert-policies.md#default-alert-policies)
 
@@ -97,7 +95,7 @@ Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui perme
 
 |Alerte|Severity|Comment l’alerte est générée|
 |---|---|---|
-|Un clic d’URL potentiellement malveillant a été détecté|**High**|Cette alerte est générée lorsque l’une des alertes suivantes se produit : <ul><li>Un utilisateur protégé par des [liens sécurisés](safe-links.md) dans votre organisation clique sur un lien malveillant</li><li>Les modifications de verdict pour les URL sont identifiées par Microsoft Defender Office 365</li><li>Les utilisateurs remplacent les pages d’avertissement de liens sécurisés (en fonction de la stratégie de liens sécurisés de [votre organisation).](set-up-safe-links-policies.md)</li></ul> <p> Pour plus d’informations sur les événements qui déclenchent cette alerte, voir [Configurer des stratégies de liens sécurisés.](set-up-safe-links-policies.md)|
+|Un clic d’URL potentiellement malveillant a été détecté|**High**|Cette alerte est générée lorsque l’une des alertes suivantes se produit : <ul><li>Un utilisateur protégé par des liens [Coffre de](safe-links.md) votre organisation clique sur un lien malveillant</li><li>Les modifications de verdict pour les URL sont identifiées par Microsoft Defender Office 365</li><li>Les utilisateurs remplacent Coffre pages d’avertissement de liens (en fonction de la stratégie de liens Coffre [de votre organisation).](set-up-safe-links-policies.md)</li></ul> <p> Pour plus d’informations sur les événements qui déclenchent cette alerte, voir [Configurer Coffre de liens.](set-up-safe-links-policies.md)|
 |Un message électronique est signalé par un utilisateur comme programme malveillant ou hameçonnage|**Informatif**|Cette alerte est générée lorsque les utilisateurs de votre organisation signalent des messages en tant que courrier de hameçonnage à l’aide du module de signalement du [message](enable-the-report-message-add-in.md) ou du [module de signalement du hameçonnage.](enable-the-report-phish-add-in.md)|
 |Les messages électroniques contenant des programmes malveillants sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message électronique contenant un programme malveillant est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide d’une [purge automatique sans heure.](zero-hour-auto-purge.md)|
 |Les messages électroniques contenant des URL de hameçonnage sont supprimés après la remise|**Informatif**|Cette alerte est générée lorsqu’un message contenant du hameçonnage est remis aux boîtes aux lettres de votre organisation. Si cet événement se produit, Microsoft supprime les messages infectés de Exchange Online boîtes aux lettres à l’aide d’une [purge automatique sans heure.](zero-hour-auto-purge.md)|
@@ -106,7 +104,7 @@ Microsoft 365 fournit de nombreuses stratégies d’alerte intégrées qui perme
 |
 
 > [!TIP]
-> Pour en savoir plus sur les stratégies d’alerte ou modifier les paramètres par défaut, consultez stratégies d’alerte dans [le centre Microsoft 365 conformité.](../../compliance/alert-policies.md)
+> Pour en savoir plus sur les stratégies d’alerte ou modifier les paramètres par [défaut,](../../compliance/alert-policies.md)consultez stratégies d’alerte dans la Centre de conformité Microsoft 365 .
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Autorisations requises pour utiliser les fonctionnalités AIR
 
@@ -118,30 +116,29 @@ Les autorisations sont accordées par le biais de certains rôles, tels que ceux
 
 |Tâche|Rôle(s) requis(s)|
 |---|---|
-|Configurer les fonctionnalités AIR|L’un des rôles suivants : <ul><li>Administrateur général</li><li>Administrateur de sécurité</li></ul> <p> Ces rôles peuvent être attribués [dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le Centre de sécurité [& conformité.](permissions-in-the-security-and-compliance-center.md)|
-|Démarrer un examen automatisé <p> --- ou --- <p> Approuver ou rejeter les actions recommandées|L’un des rôles suivants, [attribués dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le Centre de sécurité [& conformité](permissions-in-the-security-and-compliance-center.md): <ul><li>Administrateur général</li><li>Administrateur de sécurité</li><li>Opérateur de sécurité</li><li>Lecteur de sécurité <br> --- et --- </li><li>Recherche et purge (ce rôle est attribué uniquement dans le Centre de sécurité [& conformité](permissions-in-the-security-and-compliance-center.md). Vous de devez peut-être y créer un nouveau groupe de rôles et ajouter le rôle Recherche et purge à ce nouveau groupe de rôles.</li></ul>|
-|
+|Configurer les fonctionnalités AIR|L’un des rôles suivants : <ul><li>Administrateur général</li><li>Administrateur de sécurité</li></ul> <p> Ces rôles peuvent être attribués [dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)|
+|Démarrer un examen automatisé <p> --- ou --- <p> Approuver ou rejeter les actions recommandées|L’un des rôles suivants, [attribués dans Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) ou dans le [portail Microsoft 365 Defender :](permissions-microsoft-365-security-center.md) <ul><li>Administrateur général</li><li>Administrateur de sécurité</li><li>Opérateur de sécurité</li><li>Lecteur de sécurité <br> --- et --- </li><li>Recherche et purge (ce rôle est attribué uniquement dans le [portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md) Vous devrez peut-être créer un groupe de rôles de **collaboration** & messagerie et ajouter le rôle Recherche et purge à ce nouveau groupe de rôles.</li></ul>|
 
 ## <a name="required-licenses"></a>Licences requises
 
 [Les licences Microsoft Defender Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) doivent être affectées à :
 
 - Administrateurs de sécurité (y compris les administrateurs globaux)
-- L’équipe des opérations de sécurité de votre organisation (y compris les lecteurs de sécurité et ceux avec le **rôle Recherche et purge)**
+- L’équipe des opérations de sécurité de votre organisation (y compris les lecteurs de sécurité et ceux ayant le rôle **Recherche et purge)**
 - Utilisateurs finaux
 
-## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Des modifications seront bientôt apportées à votre portail Microsoft 365 Defender
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Des modifications seront bientôt apportées à votre portail Microsoft 365 Defender web
 
-Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous êtes sur le point de voir certaines modifications dans le portail [Microsoft 365 Defender amélioré.](../defender/overview-security-center.md)
+Si vous utilisez déjà les fonctionnalités AIR dans Microsoft Defender pour Office 365, vous êtes sur le point de voir des modifications dans le portail Microsoft 365 Defender [amélioré.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centre de l’action unifiée":::
 
-Le nouveau portail Defender Microsoft 365 amélioré regroupe les fonctionnalités AIR dans [Microsoft Defender pour Office 365](defender-for-office-365.md) et dans Microsoft Defender pour le point de [terminaison.](../defender-endpoint/automated-investigations.md) Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.
+Le portail d’Microsoft 365 Defender nouveau et amélioré regroupe les fonctionnalités AIR dans [Microsoft Defender pour Office 365](defender-for-office-365.md) et dans Microsoft Defender pour point de [terminaison.](../defender-endpoint/automated-investigations.md) Avec ces mises à jour et améliorations, votre équipe des opérations de sécurité sera en mesure d’afficher des détails sur les enquêtes automatisées et les actions de correction d’e-mail, le contenu de collaboration, les comptes d’utilisateurs, et les appareils, le tout au même endroit.
 
 > [!TIP]
 > Le nouveau Microsoft 365 Microsoft 365 Defender ( <https://security.microsoft.com> ) remplace les centres suivants :
 >
-> - Office 365 Centre de sécurité & conformité ( <https://protection.office.com> )
+> - Centre de sécurité & conformité ( <https://protection.office.com> )
 > - Centre de sécurité Microsoft Defender ( <https://securitycenter.windows.com> )
 >
 > En plus de la modification de l’URL, il existe une nouvelle apparence, conçue pour donner à votre équipe de sécurité une expérience plus rationalisée, avec une visibilité à un plus grand nombre de détections de menaces au même endroit.
@@ -154,15 +151,15 @@ Le tableau suivant répertorie les modifications et améliorations apportées à
 
 ****
 
-|Item|Qu’est-ce qui change ?|
+|Élément|Qu’est-ce qui change ?|
 |---|---|
 |**Page Enquêtes**|La page **Enquêtes** mise à jour est plus cohérente avec ce que vous voyez [dans Microsoft Defender pour point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Vous verrez des modifications générales de mise en forme et de style qui s’alignent sur le nouvel affichage **Examens** unifié. Par exemple, le graphique d’investigation a un format plus unifié.|
 |**Onglet Utilisateurs**|**L’onglet** Utilisateurs est désormais **l’onglet Boîtes aux** lettres. Les détails sur les utilisateurs sont répertoriés sous **l’onglet Boîte aux** lettres.|
 |**Onglet Courrier** électronique|**L’onglet** Courrier a été supprimé . consultez **l’onglet Entités** pour voir la liste des éléments de cluster de messagerie et de messagerie.|
-|**Onglet Entités**|**L’onglet Entités** possède un style onglet dans l’onglet qui inclut un affichage récapitulatif et la possibilité de filtrer par type d’entité. **L’onglet Entités** inclut désormais une option de **recherche** de go en plus de l’option Ouvrir **dans l’Explorateur.** Vous pouvez désormais utiliser l’Explorateur [de](threat-explorer.md) menaces ou le [recherche avancée pour](../defender-endpoint/advanced-hunting-overview.md) rechercher des entités et des menaces, et filtrer les résultats.|
+|**Onglet Entités**|**L’onglet Entités** possède un style onglet dans l’onglet qui inclut un affichage récapitulatif et la possibilité de filtrer par type d’entité. **L’onglet Entités** inclut désormais une option de **recherche** de go en plus de l’option Ouvrir **dans l’Explorateur.** Vous pouvez désormais utiliser [l’Explorateur](threat-explorer.md) ou la [recherche avancée pour](../defender-endpoint/advanced-hunting-overview.md) rechercher des entités et des menaces, et filtrer les résultats.|
 |**Onglet Actions**|L’onglet **Actions mis** à jour inclut désormais un onglet Actions en **attente** et un onglet Historique **des actions.** Les actions peuvent être approuvées (ou rejetées) dans un volet latéral qui s’ouvre lorsque vous sélectionnez une action en attente.|
 |**Onglet Preuve**|Un nouvel **onglet Preuves** affiche les principales conclusions d’entité liées aux actions. Les actions liées à chaque élément de preuve peuvent être approuvées (ou rejetées) dans un volet latéral qui s’ouvre lorsque vous sélectionnez une action en attente.|
-|**Centre de notifications**|Le centre **de actions** mis à jour regroupe les actions en attente et terminées sur le courrier [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) électronique, les appareils et les identités. Pour en savoir plus, consultez le Centre de l’action. (Pour en savoir plus, [consultez le centre de l’action.)](../defender/m365d-action-center.md)|
+|**Centre de notifications**|Le centre **de actions** mis à jour regroupe les actions en attente et terminées sur le courrier <https://security.microsoft.com/action-center> électronique, les appareils et les identités. Pour en savoir plus, consultez le Centre de l’action. (Pour en savoir plus, [consultez le centre de l’action.)](../defender/m365d-action-center.md)|
 |**Page Incidents**|La page **Incidents** met désormais en corrélation plusieurs enquêtes afin de fournir une meilleure vue consolidée des enquêtes. ([En savoir plus sur les incidents.)](../defender/incidents-overview.md)|
 |
 

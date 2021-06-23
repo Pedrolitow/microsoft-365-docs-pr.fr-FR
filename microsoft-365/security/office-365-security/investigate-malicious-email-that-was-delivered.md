@@ -20,12 +20,12 @@ description: Découvrez comment utiliser les fonctionnalités d’examen et de r
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e99cda906e97db72a440c3daf509a767181e5342
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: e49963d1ffaeb7bce20f21f82f37fd3675b9cdd3
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029796"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083355"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Examiner les e-mails malveillants qui ont été remis dans Microsoft 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "53029796"
 [Microsoft Defender pour Office 365](defender-for-office-365.md) vous permet d’examiner les activités qui mettent les personnes de votre organisation en danger et de prendre des mesures pour protéger votre organisation. Par exemple, si vous faites partie de l’équipe de sécurité de votre organisation, vous pouvez rechercher et examiner les messages électroniques suspects qui ont été remis. Vous pouvez le faire à l’aide de [l’Explorateur de menaces (ou des détections en temps réel).](threat-explorer.md)
 
 > [!NOTE]
-> Retentez l’article de [correction ici.](remediate-malicious-email-delivered-office-365.md)
+> Cliquez ici pour passer à l’article [de correction.](remediate-malicious-email-delivered-office-365.md)
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -51,7 +51,7 @@ Assurez-vous que les conditions suivantes sont remplies :
 
 - Votre organisation a des stratégies définies pour la protection contre le courrier indésirable, les programmes malveillants, l’anti-hameçonnage, etc. Voir [Protéger contre les menaces dans Office 365](protect-against-threats.md).
 
-- Vous êtes un administrateur général ou le rôle Administrateur de sécurité ou Recherche et purge est attribué dans le portail Microsoft 365 Defender web. Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md) Pour certaines actions, le rôle Aperçu doit également vous être attribué.
+- Vous êtes un administrateur général ou vous avez le rôle Administrateur de la sécurité ou Recherche et purge affecté dans le portail Microsoft 365 Defender web. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md). Pour certaines actions, le rôle Aperçu doit également vous être attribué.
 
 ### <a name="preview-role-permissions"></a>Autorisations de rôle d’aperçu
 
@@ -73,14 +73,14 @@ Pour effectuer certaines actions, telles que l’affichage des en-têtes de mess
 >
 > Le rôle Administrateur général se voit attribuer Centre d’administration Microsoft 365 ( ), et les rôles Administrateur de la sécurité et Lecteur sécurité sont attribués <https://admin.microsoft.com> dans Microsoft 365 Defender ( <https://security.microsoft.com> ). Pour en savoir plus sur les rôles et les [autorisations,](permissions-microsoft-365-security-center.md)consultez Autorisations dans le portail Microsoft 365 Defender.
 
-Nous comprenons que la prévisualisation et le téléchargement des e-mails soient des activités sensibles, et donc l’audit est activé pour ces activités. Une fois qu’un administrateur effectue ces activités sur les e-mails, les journaux d’audit sont générés pour le même et sont visibles dans le Centre de sécurité & conformité Office 365 ( <https://protection.office.com> ). Go to **Search**  >  **Audit log search** and filter on the admin name in Search section. Les résultats filtrés afficheront **l’activité AdminMailAccess**. Sélectionnez une ligne pour afficher les détails dans **la** section Plus d’informations sur les e-mails prévisualés ou téléchargés.
+Nous comprenons que la prévisualisation et le téléchargement des e-mails soient des activités sensibles, et donc l’audit est activé pour ces activités. Une fois qu’un administrateur effectue ces activités sur les e-mails, les journaux d’audit sont générés pour le même et sont visibles dans le portail Microsoft 365 Defender ( <https://security.microsoft.com> ). Go to **Audit** \> **Search** tab, and filter on the admin name in **Users** box. Les résultats filtrés afficheront **l’activité AdminMailAccess**. Sélectionnez une ligne pour afficher les détails dans **la** section Plus d’informations sur les e-mails prévisualés ou téléchargés.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Rechercher les messages suspects qui ont été remis
 
-L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs fins, telles que la recherche et la suppression de messages, l’identification de l’adresse IP d’un expéditeur de courrier malveillant ou le démarrage d’un incident pour un examen plus approfondie. La procédure suivante se concentre sur l’utilisation de l’Explorateur pour rechercher et supprimer des messages malveillants des boîtes aux lettres du destinataire.
+L’Explorateur de menaces est un rapport puissant qui peut servir à plusieurs fins, telles que la recherche et la suppression de messages, l’identification de l’adresse IP d’un expéditeur de courrier malveillant ou le démarrage d’un incident pour un examen plus approfondie. La procédure suivante se concentre sur l’utilisation de l’Explorateur pour rechercher et supprimer des messages malveillants des boîtes aux lettres des destinataires.
 
 > [!NOTE]
-> Les recherches par défaut dans l’Explorateur n’incluent pas actuellement les éléments remis qui ont été supprimés de la boîte aux lettres cloud par la protection automatique sans heure (ZAP). Cette limitation s’applique à tous les affichages (par exemple, les affichages **Email \> Malware** ou **Email \> Phish).** Pour inclure les éléments supprimés par ZAP, vous devez ajouter un jeu **d’actions** de remise pour inclure **Supprimé par ZAP**. Si vous incluez toutes les options, vous verrez tous les résultats de l’action de remise, y compris les éléments supprimés par ZAP.
+> Les recherches par défaut dans l’Explorateur n’incluent pas actuellement les éléments remis qui ont été supprimés de la boîte aux lettres cloud par la protection automatique sans heure (ZAP). Cette limitation s’applique à tous les affichages (par exemple, les affichages **Programme \>** malveillant ou **Hameçonnage \>** du courrier électronique). Pour inclure les éléments supprimés par ZAP, vous devez ajouter un jeu **d’actions** de remise pour inclure **Supprimé par ZAP**. Si vous incluez toutes les options, vous verrez tous les résultats de l’action de remise, y compris les éléments supprimés par ZAP.
 
 1. Ouvrez le Microsoft 365 Defender et connectez-vous à l’aide de votre compte scolaire ou <https://security.microsoft.com> Office 365.
 

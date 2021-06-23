@@ -1,5 +1,5 @@
 ---
-title: Utiliser Microsoft Teams classes avec tableau noir
+title: Utiliser Microsoft Teams classes avec Le Tableau noir
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -13,14 +13,14 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Intégrer Microsoft Teams classes de gestion dans votre système Learning gestion des données
-ms.openlocfilehash: 047f640befa967b78597c5eba93f9c64f22ec1c2
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 940c5c695d602ddce6ea49b1f914f2345fbeb7e5
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053250"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083242"
 ---
-# <a name="use-microsoft-teams-classes-with-blackboard"></a>Utiliser Microsoft Teams classes avec tableau noir
+# <a name="use-microsoft-teams-classes-with-blackboard"></a>Utiliser Microsoft Teams classes avec Le Tableau noir
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
@@ -64,11 +64,9 @@ En tant qu’administrateur Blackboard Learn Ultra, vous devez inscrire 2 applic
 
 4. Entrez le premier des ID clients fournis (tableau noir ou Microsoft), puis sélectionnez **Envoyer.**
 
-   ![l’outil d’inscription LTI avec un champ pour entrer l’ID client](../media/lti-media/register-tool.png)
-
 5. Examinez les paramètres pré-remplis et assurez-vous que l’état de l’outil est marqué comme approuvé.
 
-6. Faites défiler jusqu’au bas, puis sélectionnez **Envoyer.**
+6. Faites défiler vers le bas, puis sélectionnez **Envoyer.**
 
 7. Répétez les étapes précédentes pour inscrire la deuxième application LTI dans votre environnement.
 
@@ -82,7 +80,7 @@ Complétez les procédures suivantes pour configurer l’application REST
 
 2. Sélectionnez **Créer des intégrations** et entrez le même ID d’application/client que celui que vous avez entré pour l’outil Blackboard Learn Class Teams Integration LTI.
 
-3. Entrez l’utilisateur Learn (il peut s’y trouver à votre propre nom d’utilisateur d’administrateur Learn) ou **sélectionnez Parcourir** pour le localiser.
+3. Entrez l’utilisateur Learn (il peut s’y trouver à votre propre nom d’utilisateur d’administrateur learn) ou **sélectionnez Parcourir** pour le localiser.
 
 4. Sélectionnez **Oui** pour **l’accès des utilisateurs finux.**
 
@@ -110,7 +108,7 @@ Une fois que vous avez activé les outils LTI, l’étape suivante consiste à c
 
 1. In **Learn Admin** Tools and  >  **Utilities,** select Microsoft Teams Integration **Admin**.
 
-   ![boîte de dialogue outils et utilitaires avec une liste des outils disponibles](../media/lti-media/tools-utilities.png)
+   ![boîte de dialogue Outils et utilitaires avec une liste des outils disponibles](../media/lti-media/tools-utilities.png)
 
 2. Activez la case à cocher **Microsoft Teams**.
 

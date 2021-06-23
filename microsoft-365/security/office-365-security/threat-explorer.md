@@ -19,12 +19,12 @@ description: Utilisez les détections De l’Explorateur et en temps réel dans 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 4a9a364f82b7f7836c2f0177dfbde80171b9c36f
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029584"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083223"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Détections en temps réel et de l’Explorateur de menaces
 
@@ -186,7 +186,7 @@ Actuellement, nous faisons surface de l’emplacement de remise dans la grille d
 
 ### <a name="system-overrides"></a>Remplacements système
 
-*Les substitutions système* vous permettent d’effectuer des exceptions à l’emplacement de remise prévu d’un message. Vous remplacez l’emplacement de remise fourni par le système, en fonction des menaces et autres détections identifiées par la pile de filtrage. Les substitutions système peuvent être définies par le biais d’une stratégie de client ou d’utilisateur pour remettre le message comme suggéré par la stratégie. Les remplacements peuvent identifier la remise involontaire de messages malveillants en raison de lacunes de configuration, telles qu’une stratégie d’expéditeur de Safe trop large définie par un utilisateur. Ces valeurs de substitution peuvent être :
+*Les substitutions système* vous permettent d’effectuer des exceptions à l’emplacement de remise prévu d’un message. Vous remplacez l’emplacement de remise fourni par le système, en fonction des menaces et autres détections identifiées par la pile de filtrage. Les substitutions système peuvent être définies par le biais d’une stratégie de client ou d’utilisateur pour remettre le message comme suggéré par la stratégie. Les remplacements peuvent identifier la remise involontaire de messages malveillants en raison de lacunes de configuration, telles qu’une stratégie d’expéditeur de Coffre trop large définie par un utilisateur. Ces valeurs de remplacement peuvent être :
 
 - Autorisé par la stratégie utilisateur : un utilisateur crée des stratégies au niveau de la boîte aux lettres pour autoriser les domaines ou les expéditeurs.
 
@@ -203,7 +203,7 @@ Actuellement, nous faisons surface de l’emplacement de remise dans la grille d
 > [!div class="mx-imgBorder"]
 > ![System Overrides Grid in Explorer](../../media/System_Overrides_Grid.png)
 
-### <a name="improvements-for-the-url-and-clicks-experience"></a>Améliorations apportées à l’URL et aux clics
+### <a name="improvements-for-the-url-and-clicks-experience"></a>Améliorations de l’URL et expérience de clics
 
 Les améliorations sont les suivantes :
 
@@ -233,7 +233,7 @@ Pour améliorer le processus de repérage, nous avons mis à jour l’Explorateu
 
 ### <a name="filter-by-user-tags"></a>Filtrer par balises utilisateur
 
-Vous pouvez désormais trier et filtrer des balises utilisateur système ou personnalisées pour saisir rapidement l’étendue des menaces. Pour plus d’informations, voir [Balises utilisateur.](user-tags.md)
+Vous pouvez désormais trier et filtrer des balises utilisateur système ou personnalisées pour saisir rapidement l’étendue des menaces. Pour en savoir plus, consultez [balises utilisateur.](user-tags.md)
 
 > [!IMPORTANT]
 > Le filtrage et le tri par balises utilisateur sont actuellement en prévisualisation publique. Cette fonctionnalité peut être considérablement modifiée avant sa publication commerciale. Microsoft n’offre aucune garantie, expressément ou implicite, en ce qui concerne les informations fournies à son sujet.
@@ -243,7 +243,7 @@ Vous pouvez désormais trier et filtrer des balises utilisateur système ou pers
 
 ### <a name="timezone-improvements"></a>Améliorations apportées au fuseau horaire
 
-Vous verrez le fuseau horaire pour les enregistrements de courrier dans le portail, ainsi que pour les données exportées. Il sera visible dans toutes les expériences telles que la grille de courrier électronique, le flyout détails, la chronologie des e-mails et les e-mails similaires, afin que le fuseau horaire du jeu de résultats soit clair.
+Vous verrez le fuseau horaire pour les enregistrements de courrier dans le portail, ainsi que pour les données exportées. Il sera visible entre les expériences telles que la grille de courrier électronique, le flyout détails, la chronologie des e-mails et les e-mails similaires, afin que le fuseau horaire du jeu de résultats soit clair.
 
 > [!div class="mx-imgBorder"]
 > ![Afficher le fuseau horaire dans l’Explorateur](../../media/TimezoneImprovements.png)
@@ -448,7 +448,7 @@ Le rapport est actualisé pour afficher les résultats détectés par les progra
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Afficher l’URL de hameçonnage et cliquer sur les données de verdict
 
-Supposons que vous vouliez voir les tentatives de hameçonnage par le biais d’URL dans le courrier électronique, y compris une liste d’URL qui ont été autorisées, bloquées et bloquées. Pour identifier les URL sur qui vous avez cliqué, [Safe liens](safe-links.md) doivent être configurés. Veillez à configurer [](set-up-safe-links-policies.md) des stratégies Safe liens pour la protection au moment du clic et la journalisation des verdicts de clic en Safe liens.
+Supposons que vous vouliez voir les tentatives de hameçonnage par le biais d’URL dans le courrier électronique, y compris une liste d’URL qui ont été autorisées, bloquées et bloquées. Pour identifier les URL sur qui vous avez cliqué, [Coffre liens](safe-links.md) doivent être configurés. Veillez à configurer [](set-up-safe-links-policies.md) des stratégies Coffre liens pour la protection au moment du clic et la journalisation des verdicts de clic en Coffre liens.
 
 Pour passer en revue les URL de hameçonnage dans les [   >   ](threat-explorer-views.md#email--phish) messages et cliquer sur les URL des messages d’hameçonnage, utilisez l’affichage Hameçonnage de l’Explorateur ou les détections en temps réel.
 
@@ -470,7 +470,7 @@ Pour passer en revue les URL de hameçonnage dans les [   >   ](threat-explorer-
 
    - **Les URL principales sont** les URL des messages que vous avez filtrés vers le bas et le nombre d’actions de remise de courrier pour chaque URL. Dans l’affichage de courrier d’hameçonnage, cette liste contient généralement des URL légitimes. Les attaquants incluent un mélange d’URL bonnes et mauvaises dans leurs messages pour essayer de les remettre, mais ils rendent les liens malveillants plus intéressants. Le tableau des URL est trié par nombre total de messages électroniques, mais cette colonne est masquée pour simplifier l’affichage.
 
-   - **Les clics principaux** sont Safe URL enveloppées par des liens qui ont été cliquées, triées par nombre total de clics. Cette colonne n’est pas non plus affichée, pour simplifier l’affichage. Le nombre total par colonne indique le nombre Safe nombre de verdicts de clics de liens pour chaque URL cliquée. Dans l’affichage courrier d’hameçonnage, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, l’affichage peut inclure des URL qui ne sont pas des menaces mais qui figurent dans des messages d’hameçonnage. Les clics d’URL sur les liens déballés ne s’affiche pas ici.
+   - **Les clics les** plus fréquents Coffre URL wrapped links qui ont été cliquées, triées par nombre total de clics. Cette colonne n’est pas non plus affichée, pour simplifier l’affichage. Le nombre total par colonne indique le nombre Coffre nombre de verdicts de clics de liens pour chaque URL cliquée. Dans l’affichage courrier d’hameçonnage, il s’agit généralement d’URL suspectes ou malveillantes. Toutefois, l’affichage peut inclure des URL qui ne sont pas des menaces mais qui figurent dans des messages d’hameçonnage. Les clics d’URL sur les liens déballés ne s’affiche pas ici.
 
    Les deux tableaux d’URL indiquent les PRINCIPALES URL des messages électroniques de hameçonnage par action de remise et emplacement. Les tableaux indiquent les clics d’URL qui ont été bloqués ou visités malgré un avertissement, afin que vous pouvez voir quels liens de mauvaises adresses ont été présentés aux utilisateurs et que l’utilisateur a cliqué. À partir de là, vous pouvez effectuer une analyse plus approfondie. Par exemple, sous le graphique, vous pouvez voir les URL les plus fréquentes dans les messages électroniques bloqués dans l’environnement de votre organisation.
 
@@ -534,21 +534,21 @@ Outre les scénarios décrits dans cet article, de nombreuses autres options de 
 
 ## <a name="required-licenses-and-permissions"></a>Licences et autorisations requises
 
-Vous devez avoir [Microsoft Defender pour Office 365](defender-for-office-365.md) pour utiliser l’Explorateur ou les détections en temps réel.
+Vous devez avoir [Microsoft Defender pour que Office 365](defender-for-office-365.md) utiliser les détections en temps réel ou l’Explorateur.
 
-- Explorer est inclus dans Defender pour Office 365 Plan 2.
+- L’Explorateur est inclus dans Defender pour Office 365 Plan 2.
 - Le rapport détections en temps réel est inclus dans Defender pour Office 365 Plan 1.
-- Prévoyez d’attribuer des licences à tous les utilisateurs qui doivent être protégés par Defender pour Office 365. Les détections d’explorateur et en temps réel montrent les données de détection pour les utilisateurs sous licence.
+- Prévoyez d’attribuer des licences à tous les utilisateurs qui doivent être protégés par Defender Office 365. Les détections d’explorateur et en temps réel montrent les données de détection pour les utilisateurs sous licence.
 
 Pour afficher et utiliser les détections de l’Explorateur ou en temps réel, vous devez avoir les autorisations appropriées, telles que celles accordées à un administrateur de sécurité ou à un lecteur de sécurité.
 
 - Pour le Centre de sécurité & conformité, l’un des rôles suivants doit vous être attribué :
 
   - Gestion de l’organisation
-  - Administrateur de sécurité (peut être affecté dans le Centre d’administration Azure Active Directory ( <https://aad.portal.azure.com> )
+  - Administrateur de sécurité (peut être affecté dans le centre d’administration Azure Active Directory de sécurité ( <https://aad.portal.azure.com> )
   - Lecteur de sécurité
 
-- Pour Exchange Online, vous devez avoir l’un des rôles suivants attribués dans le Centre d’administration Exchange () ou <https://admin.protection.outlook.com/ecp/> Dans Exchange Online [PowerShell](/powershell/exchange/exchange-online-powershell):
+- Pour Exchange Online, vous devez avoir l’un des rôles suivants attribués dans le Centre d’administration Exchange () ou <https://admin.protection.outlook.com/ecp/> [dans Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Gestion de l’organisation
   - Afficher uniquement la gestion de l’organisation
@@ -557,15 +557,15 @@ Pour afficher et utiliser les détections de l’Explorateur ou en temps réel, 
 
 Pour en savoir plus sur les rôles et les autorisations, consultez les ressources suivantes :
 
-- [Autorisations dans le centre de conformité et de sécurité](permissions-in-the-security-and-compliance-center.md)
+- [Autorisations dans le Portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md)
 - [Autorisations des fonctionnalités dans Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Différences entre l’Explorateur de menaces et les détections en temps réel
 
-- Le *rapport détections en* temps réel est disponible dans Defender pour Office 365 Plan 1. *L’Explorateur* de menaces est disponible dans Defender pour Office 365 Plan 2.
+- Le *rapport détections en* temps réel est disponible dans Defender pour Office 365 Plan 1. *L’Explorateur de* menaces est disponible dans Defender pour Office 365 Plan 2.
 - Le rapport de détections en temps réel vous permet d’afficher les détections en temps réel. L’Explorateur de menaces le fait également, mais fournit également des détails supplémentaires pour une attaque donnée.
 - Un *affichage de courrier tout* est disponible dans l’Explorateur de menaces, mais pas dans le rapport de détections en temps réel.
-- D’autres fonctionnalités de filtrage et actions disponibles sont incluses dans l’Explorateur de menaces. Pour plus d’informations, voir [Microsoft Defender pour office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- D’autres fonctionnalités de filtrage et actions disponibles sont incluses dans l’Explorateur de menaces. Pour plus d’informations, voir Microsoft Defender pour la description Office 365 service : disponibilité des fonctionnalités dans [Defender pour Office 365 plans.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
 
 ## <a name="other-articles"></a>Autres articles
 

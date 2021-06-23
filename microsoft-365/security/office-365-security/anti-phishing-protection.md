@@ -21,12 +21,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur les fonctionnalités de protection anti-hameçonnage dans Exchange Online Protection (EOP) et Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 2a28e2ecc45be941dbd6e346f9918e1692357840
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029236"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083103"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protection anti-hameçonnage dans Microsoft 365
 
@@ -65,14 +65,12 @@ EOP (autrement dit, Microsoft 365 organisations sans Microsoft Defender pour Off
 
 Microsoft Defender pour Office 365 contient des fonctionnalités supplémentaires et plus avancées de protection contre le phishing :
 
-- Stratégies **anti-hameçonnage** dans Microsoft Defender pour Office 365 : configurer les paramètres de protection contre l’emprunt d’identité pour des expéditeurs et domaines d’expéditeur de messages spécifiques, des paramètres d’intelligence de boîte aux lettres et des seuils d’hameçonnage avancés réglables. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md). Pour plus d’informations sur les différences entre les stratégies anti-hameçonnage dans EOP et les stratégies anti-hameçonnage dans Defender pour Office 365, voir stratégies [anti-hameçonnage](set-up-anti-phishing-policies.md)dans Microsoft 365 .
-
+- Stratégies **anti-hameçonnage** dans Microsoft Defender pour Office 365 : configurez les paramètres de protection contre l’emprunt d’identité pour des expéditeurs et domaines d’expéditeur de messages spécifiques, des paramètres d’intelligence de boîte aux lettres et des seuils de hameçonnage avancés réglables. Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md). Pour plus d’informations sur les différences entre les stratégies anti-hameçonnage dans EOP et les stratégies anti-hameçonnage dans Defender pour Office 365, voir stratégies [anti-hameçonnage](set-up-anti-phishing-policies.md)dans Microsoft 365 .
 - **Affichages campagne**: l’apprentissage automatique et d’autres heuristiques identifient et analysent les messages impliqués dans des attaques par hameçonnage coordonnées contre l’ensemble du service et de votre organisation. Pour plus d’informations, [voir Affichages des campagnes dans Microsoft Defender pour Office 365](campaigns.md).
-
-- **Simulateur d’attaques**: les administrateurs peuvent créer des messages de hameçonnage factices et les envoyer à des utilisateurs internes en tant qu’outil d’éducation. Pour plus d’informations, [voir Simulateur d’attaques](attack-simulator.md)dans Microsoft Defender pour Office 365 .
+- **Formation à la simulation d’attaques**: les administrateurs peuvent créer des messages de hameçonnage factices et les envoyer à des utilisateurs internes en tant qu’outil d’éducation. Pour plus d’informations, voir [Simuler une attaque par hameçonnage.](attack-simulation-training.md)
 
 ## <a name="other-anti-phishing-resources"></a>Autres ressources anti-hameçonnage
 
 - Pour les utilisateurs finaux : [protégez-vous contre les schémas de hameçonnage et d’autres formes de fraude en ligne.](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)
 
-- [Comment Microsoft 365 valide l’adresse De pour empêcher le hameçonnage](how-office-365-validates-the-from-address.md).
+- [Comment Microsoft 365 valide l’adresse De pour empêcher le hameçonnage.](how-office-365-validates-the-from-address.md)

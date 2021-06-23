@@ -18,12 +18,12 @@ description: Découvrez comment reconnaître et corriger les attaques par consen
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c0041c473f196dace893122c5c0543a06c1e6ff8
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: cb3ccfbb921c106b671c4409bb95bd200f0efb55
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029860"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53083007"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Détecter et corriger les octrois de consentement illicites
 
@@ -50,9 +50,9 @@ Vous devez effectuer une recherche dans le journal **d’audit** pour trouver de
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Étapes de recherche des signes de cette attaque
 
-1. Ouvrez le **Microsoft 365 Defender,** <https://security.microsoft.com> puis sélectionnez **Audit.**
+1. Ouvrez le **portail Microsoft 365 Defender,** <https://security.microsoft.com> puis sélectionnez **Audit.** Ou, pour aller directement à la page **Audit,** utilisez <https://security.microsoft.com/auditlogsearch> .
 
-2. Dans la page **Audit** qui s’ouvre, vérifiez que l’onglet Recherche est sélectionné, puis configurez les paramètres suivants : 
+2. Dans la page **Audit,** vérifiez que **l’onglet** Recherche est sélectionné, puis configurez les paramètres suivants :
    - **Plage de dates et d’heure**
    - **Activités :** vérifiez que les **résultats de toutes les activités** sont sélectionnés.
 
@@ -137,7 +137,7 @@ Le script produit un fichier nommé Permissions.csv. Pour rechercher des autoris
 
 ## <a name="determine-the-scope-of-the-attack"></a>Déterminer l’étendue de l’attaque
 
-Une fois que vous avez terminé l’inventaire de l’accès aux applications, examinez le journal **d’audit** pour déterminer l’étendue complète de la violation. Recherchez les utilisateurs concernés, les délais d’accès de l’application illicite à votre organisation et les autorisations de l’application. Vous pouvez effectuer une recherche **dans le journal d’audit** [dans le Microsoft 365 Defender](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+Une fois que vous avez terminé l’inventaire de l’accès aux applications, examinez le journal **d’audit** pour déterminer l’étendue complète de la violation. Recherchez les utilisateurs concernés, les délais d’accès de l’application illicite à votre organisation et les autorisations de l’application. Vous pouvez effectuer une recherche **dans le journal d’audit** [dans Microsoft 365 Defender portail.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
 > [L’audit de boîte](../../compliance/enable-mailbox-auditing.md) aux lettres et l’audit d’activité pour les administrateurs et les utilisateurs doivent avoir été [activés](../../compliance/turn-audit-log-search-on-or-off.md) avant l’attaque pour que vous receviez ces informations.
@@ -170,7 +170,7 @@ Votre abonnement Microsoft 365 inclut un ensemble puissant de fonctionnalités d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Une application inattendue dans la](/azure/active-directory/application-access-unexpected-application) liste des applications permet aux administrateurs d’accéder aux différentes actions qu’ils souhaitent peut-être réaliser après avoir réalisé qu’il existe des applications inattendues ayant accès aux données.
+- Une application inattendue dans ma liste [d’applications](/azure/active-directory/application-access-unexpected-application) permet aux administrateurs d’accéder aux différentes actions qu’ils souhaitent peut-être réaliser après avoir réalisé qu’il existe des applications inattendues ayant accès aux données.
 - [L’intégration d’applications Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) est une vue d’ensemble générale du consentement et des autorisations.
 - [Les problèmes liés au développement de mon application](/azure/active-directory/active-directory-application-dev-development-content-map) fournissent des liens vers différents articles relatifs au consentement.
 - Les objets principaux d’application et de service dans [Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) offrent une vue d’ensemble des objets principaux d’application et de service qui sont essentiels au modèle d’application.
