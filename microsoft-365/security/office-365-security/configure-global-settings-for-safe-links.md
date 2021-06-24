@@ -155,7 +155,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Comment savoir si ces procédures ont fonctionné ?
 
-Pour vérifier que vous avez correctement configuré les paramètres globaux des liens Coffre (la liste Bloquer les URL suivantes et les **paramètres** de protection des applications Office 365), vous devez suivre l’une des étapes suivantes :
+Pour vérifier que vous avez correctement configuré les paramètres globaux des liens Coffre (la liste Bloquer les URL suivantes et les paramètres de protection des applications Office 365), vous devez suivre l’une des **étapes** suivantes :
 
 - Dans le portail Microsoft 365 Defender, consultez la section Stratégies de stratégies de menace des règles de messagerie **&** Règles & Stratégies de menace Coffre Les liens cliquent sur paramètres globaux et vérifient les paramètres dans le volant qui \>  \>  \>  s’affiche. \>  \> 
 

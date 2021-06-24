@@ -49,14 +49,14 @@ Les éléments de base d’une stratégie Coffre pièces jointes sont :
 
 La différence entre ces deux éléments n’est pas évidente lorsque vous gérez les stratégies Coffre pièces jointes dans le portail Microsoft 365 Defender:
 
-- Lorsque vous créez une stratégie de pièces jointes Coffre, vous créez en fait une règle de pièces jointes sécurisées et la stratégie de pièces jointes sécurisée associée en utilisant le même nom pour les deux.
+- Lorsque vous créez une stratégie de pièces jointes Coffre, vous créez en fait une règle de pièces jointes sécurisées et la stratégie de pièces jointes sécurisées associée en utilisant le même nom pour les deux.
 - Lorsque vous modifiez une stratégie Coffre pièces jointes, les paramètres liés au nom, à la priorité, activé ou désactivé, et aux filtres de destinataire modifient la règle de pièce jointe sécurisée. Tous les autres paramètres modifient la stratégie de pièce jointe sécurisée associée.
 - Lorsque vous supprimez une stratégie Coffre pièces jointes, la règle de pièces jointes sécurisées et la stratégie de pièces jointes sécurisées associée sont supprimées.
 
 Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la stratégie et la règle séparément. Pour plus d’informations, voir la section Utiliser Exchange Online PowerShell ou [EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) autonome pour configurer des stratégies Coffre pièces jointes plus loin dans cet article.
 
 > [!NOTE]
-> Dans la zone paramètres globaux des paramètres Coffre pièces jointes, vous configurez des fonctionnalités qui ne dépendent pas des stratégies Coffre pièces jointes. Pour obtenir des instructions, voir Activer Coffre pièces jointes pour [SharePoint, OneDrive et](turn-on-mdo-for-spo-odb-and-teams.md) Microsoft Teams et Coffre documents dans [Microsoft 365 E5](safe-docs.md).
+> Dans la zone paramètres globaux des paramètres Coffre pièces jointes, vous configurez les fonctionnalités qui ne dépendent pas des stratégies Coffre pièces jointes. Pour obtenir des instructions, voir Activer Coffre pièces jointes pour [SharePoint, OneDrive et](turn-on-mdo-for-spo-odb-and-teams.md) Microsoft Teams et Coffre documents dans [Microsoft 365 E5](safe-docs.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
@@ -110,7 +110,7 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
 5. Sur la **Paramètres** page, configurez les paramètres suivants :
 
-   - **Coffre de programmes malveillants inconnus des** pièces jointes : sélectionnez l’une des valeurs suivantes :
+   - **Coffre de programmes malveillants inconnus attachments**: sélectionnez l’une des valeurs suivantes :
      - **Off**: En règle générale, nous ne recommandons pas cette valeur.
      - **Moniteur**
      - **Bloc**: il s’agit de la valeur par défaut et de la valeur recommandée dans les stratégies de sécurité standard [et](preset-security-policies.md)stricte.
@@ -123,13 +123,13 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
      La recommandation pour les paramètres de stratégie Standard et Strict consiste à activer la redirection. Pour plus d’informations, [voir Coffre Paramètres des pièces jointes.](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)
 
-   - Appliquez la réponse de détection des pièces jointes Coffre si l’analyse ne peut pas se terminer **(délai d’Coffre** ou erreurs) : l’action spécifiée par Coffre La réponse de programmes **malveillants inconnus** pièces jointes est appliquée aux messages même lorsque l’analyse des pièces jointes Coffre ne peut pas se terminer. Si vous avez sélectionné cette option, sélectionnez toujours Activer la **redirection** et spécifiez une adresse de messagerie pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants. Dans le cas contraire, les messages peuvent être perdus.
+   - Appliquez la réponse de détection des pièces jointes Coffre si l’analyse ne peut pas se terminer (délai ou **erreurs) : l’action** spécifiée par Coffre La réponse anti-programme malveillant inconnue pièces **jointes** est appliquée aux messages même lorsque l’analyse des pièces jointes Coffre ne peut pas se terminer. Si vous avez sélectionné cette option, sélectionnez toujours Activer la **redirection** et spécifiez une adresse de messagerie pour envoyer des messages contenant des pièces jointes contenant des programmes malveillants. Dans le cas contraire, les messages peuvent être perdus.
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
 6. Dans la page **Révision** qui s’affiche, passez en revue vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
 
-   Lorsque vous avez terminé, cliquez sur **Envoyer.**
+   Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
 7. Dans la page de confirmation qui s’affiche, cliquez sur **Terminé**.
 
@@ -150,7 +150,7 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
-3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, consultez la section Utiliser le portail Microsoft 365 Defender pour créer des stratégies Coffre [pièces jointes](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) plus tôt dans cet article.  
+3. Dans le menu volant des détails de stratégie qui s’affiche, sélectionnez **Modifier** dans chaque section pour modifier les paramètres de la section. Pour plus d’informations sur les paramètres, voir la section Utiliser le portail Microsoft 365 Defender pour créer des stratégies Coffre [pièces jointes](#use-the-microsoft-365-defender-portal-to-create-safe-attachments-policies) plus tôt dans cet article.  
 
 Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de la stratégie, consultez les sections suivantes.
 

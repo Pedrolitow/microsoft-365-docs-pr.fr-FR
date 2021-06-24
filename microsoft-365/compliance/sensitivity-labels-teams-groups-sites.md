@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028978"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096755"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -421,9 +421,7 @@ Il ne s’agit pas d’un problème de sécurité si le document comprend une é
 
 Pour rechercher le journal d’audit pour cet événement, recherchez **Correspondance incorrecte des documents détectés** dans la catégorie **Activités de fichiers et de pages**.
 
-Le message électronique généré automatiquement a l’objet **Étiquette de confidentialité incompatible détectée** et que le courrier électronique décrit l’incompatibilité entre les étiquettes avec un lien vers le document et le site téléchargés. Il contient également un lien vers la documentation expliquant comment les utilisateurs peuvent modifier l’étiquette de confidentialité. Pour le moment, ces messages automatisés ne peuvent pas être désactivés ou personnalisés.
-
-Pour empêcher ce message généré automatiquement, utilisez la commande PowerShell suivante à partir de [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) :
+Le message électronique généré automatiquement a l’objet **Étiquette de confidentialité incompatible détectée** et que le courrier électronique décrit l’incompatibilité entre les étiquettes avec un lien vers le document et le site téléchargés. Il contient également un lien vers la documentation expliquant comment les utilisateurs peuvent modifier l’étiquette de confidentialité. Ces e-mails automatisés ne peuvent pas être personnalisés, mais vous pouvez les empêcher d’être envoyés lorsque vous utilisez la commande PowerShell suivante à partir de [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) :
 
 ```PowerShell
 Set-SPOTenant -BlockSendLabelMismatchEmail $True
