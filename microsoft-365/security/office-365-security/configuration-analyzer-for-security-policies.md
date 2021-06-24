@@ -18,12 +18,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à utiliser l’analyseur de configuration pour rechercher et corriger les stratégies de sécurité qui se trouvent en dessous des stratégies de sécurité prédéfines Protection standard et Protection stricte.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 01a9b3a2b01a3cfc95a3911f75907cbe0ef9d58f
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878663"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108426"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analyseur de configuration des stratégies de protection dans EOP et Microsoft Defender pour Office 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "52878663"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-L’analyseur de configuration dans le portail Microsoft 365 Defender fournit un emplacement central pour rechercher et corriger les [](preset-security-policies.md)stratégies de sécurité où les paramètres sont inférieurs aux paramètres de profil de protection standard et strict dans les stratégies de sécurité prédéfines.
+L’analyseur de configuration dans le portail Microsoft 365 Defender fournit un emplacement central pour rechercher et corriger les stratégies de sécurité où les paramètres se trouvent en dessous des paramètres de profil de protection standard et strict dans les stratégies de sécurité prédéfines. [](preset-security-policies.md)
 
 Les types de stratégies suivants sont analysés par l’analyseur de configuration :
 
@@ -50,14 +50,14 @@ Les types de stratégies suivants sont analysés par l’analyseur de configurat
     - Paramètres [d’usurpation disponibles](set-up-anti-phishing-policies.md#spoof-settings) dans les stratégies anti-hameçonnage EOP.
     - [Paramètres d’emprunt d’identité](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Seuils de hameçonnage avancés](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [Stratégies de liens sécurisés](set-up-safe-links-policies.md).
-  - [Stratégies de pièces jointes sécurisées](set-up-safe-attachments-policies.md).
+  - [Coffre de liens .](set-up-safe-links-policies.md)
+  - [Coffre de pièces jointes](set-up-safe-attachments-policies.md).
 
 Les **valeurs de** paramètre de stratégie Standard et **Strict** utilisées comme lignes de base sont décrites dans les [paramètres recommandés](recommended-settings-for-eop-and-office365.md)pour EOP et Microsoft Defender pour Office 365 sécurité.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Ce qu'il faut savoir avant de commencer
 
-- Vous ouvrez le portail Microsoft 365 Defender sur <https://security.microsoft.com> . Pour aller directement à la page de **l’analyseur de configuration,** utilisez <https://security.microsoft.com/configurationAnalyzer> .
+- Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page de **l’analyseur de configuration,** utilisez <https://security.microsoft.com/configurationAnalyzer> .
 
 - Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -65,17 +65,17 @@ Les **valeurs de** paramètre de stratégie Standard et **Strict** utilisées co
   - Pour utiliser l’analyseur de configuration et mettre à jour les  stratégies de sécurité, vous devez être membre des groupes de rôles Gestion de l’organisation ou **Administrateur** de la sécurité. 
   - Pour un accès en lecture seule à l’analyseur  de configuration, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité. 
 
-  Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender.](permissions-microsoft-365-security-center.md)
+  Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
   > [!NOTE]
   >  
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant donne aux utilisateurs  les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory leur donne les autorisations  requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
-## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Utiliser l’analyseur de configuration dans le portail Microsoft 365 Defender
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Utiliser l’analyseur de configuration dans le portail Microsoft 365 Defender client
 
-In the Microsoft 365 Defender portal, go to **Email & collaboration** Policies & \> **rules** Threat \> **policies** \> **Templated policies section** Configuration \> **analyzer**.
+In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Templated policies** section Configuration \> **analyzer**.
 
 La page **De l’analyseur de** configuration possède deux onglets principaux :
 
@@ -88,15 +88,15 @@ Par défaut, l’onglet s’ouvre dans la comparaison au profil de protection st
 
 ![Paramètres et recommandations dans l’analyseur de configuration](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-Par défaut, la colonne Nom de **groupe/paramètre** de stratégie contient une vue d’ensemble des différents types de stratégies de sécurité et du nombre de paramètres qui doivent être améliorés (le cas nécessaire). Les types de stratégies sont :
+Par défaut, la colonne Groupe **de stratégie/nom** de paramètre contient une vue d’ensemble des différents types de stratégies de sécurité et du nombre de paramètres qui doivent être améliorés (le cas nécessaire). Les types de stratégies sont :
 
 - **Anti-courrier indésirable**
 - **Anti-hameçonnage**
 - **Anti-programme malveillant**
-- **Pièces jointes sécurisées** (si votre abonnement inclut Microsoft Defender pour Office 365)
-- **Liens sécurisés** (si votre abonnement inclut Microsoft Defender pour Office 365)
+- **Coffre pièces jointes** (si votre abonnement inclut Microsoft Defender pour Office 365)
+- **Coffre liens** (si votre abonnement inclut Microsoft Defender pour Office 365)
 
-Dans l’affichage par défaut, tout est réduire. En regard de chaque stratégie, il existe un résumé des résultats de comparaison de vos stratégies (que vous pouvez modifier) et des paramètres dans les stratégies correspondantes pour les profils de protection Standard ou Strict (que vous ne pouvez pas modifier). Vous verrez les informations suivantes pour le profil de protection que vous comparez :
+Dans l’affichage par défaut, tout est réduire. En regard de chaque stratégie, il existe un résumé des résultats de comparaison de vos stratégies (que vous pouvez modifier) et des paramètres dans les stratégies correspondantes pour les profils de protection standard ou strict (que vous ne pouvez pas modifier). Vous verrez les informations suivantes pour le profil de protection que vous comparez à :
 
 - **Vert**: tous les paramètres de toutes les stratégies existantes sont au moins aussi sécurisés que le profil de protection.
 - **Orange**: un petit nombre de paramètres dans les stratégies existantes ne sont pas aussi sécurisés que le profil de protection.
@@ -113,7 +113,7 @@ Si la comparaison n’a aucune recommandation d’amélioration (vert), l’exte
 - **Appliqué à**: nombre d’utilisateurs à qui les stratégies affectées sont appliquées.
 - **Configuration actuelle**: valeur actuelle du paramètre. Pour la stratégie par défaut de ce type qui s’applique à tous les destinataires, cette valeur est vide.
 - **Dernière modification**: date de la dernière modification de la stratégie.
-- **Recommandations**: valeur du paramètre dans le profil de protection Standard ou Strict. Pour modifier la valeur du paramètre dans votre stratégie afin qu’elle corresponde à la valeur recommandée dans le profil de protection, cliquez sur **Adopter**. Si la modification réussit, le message suivant s’Recommandations **correctement adopté.** Cliquez **sur Actualiser** pour voir le nombre réduit de recommandations et la suppression de la ligne de paramètre/stratégie spécifique des résultats.
+- **Recommandations**: valeur du paramètre dans le profil de protection Standard ou Strict. Pour modifier la valeur du paramètre dans votre stratégie afin qu’elle corresponde à la valeur recommandée dans le profil de protection, cliquez sur **Adopter**. Si la modification réussit, le message suivant s’Recommandations **correctement adopté.** Cliquez **sur** Actualiser pour voir le nombre réduit de recommandations et la suppression de la ligne de paramètre/stratégie spécifique des résultats.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Analyse de dérive de configuration et onglet Historique dans l’analyseur de configuration
 
@@ -123,11 +123,11 @@ Cet onglet vous permet de suivre les modifications que vous avez apportées à v
 - **Modifié par**
 - **Nom du paramètre**
 - **Stratégie**
-- **Type (Type)**
+- **Type**
 - **Modification de configuration**
 - **Dérive de configuration**: la valeur **Augmente ou** **Diminue**.
 
-Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le volant **Filtres** qui s’affiche, vous pouvez sélectionner parmi les filtres suivants :
+Pour filtrer les résultats, cliquez sur **Filtrer**. Dans le volant **Filtres** qui s’affiche, vous pouvez choisir parmi les filtres suivants :
 
 - **Heure de début** **et heure de fin** (date)
 - **Protection standard** ou **protection stricte**

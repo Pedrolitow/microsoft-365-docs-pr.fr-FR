@@ -1,5 +1,5 @@
 ---
-title: Alertes dans le Centre de sécurité & conformité
+title: Alertes dans le portail Microsoft 365 Defender web
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,18 +17,18 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Découvrez comment utiliser les fonctionnalités d’alertes dans le Centre de sécurité et conformité Office 365 & pour afficher et gérer les alertes, y compris la gestion des alertes avancées.
+description: Découvrez comment utiliser les fonctionnalités d’alertes dans le portail Microsoft 365 Defender pour afficher et gérer les alertes, y compris la gestion des alertes avancées.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbc1bfbd1fc1f21035edf34ad743755b0f51018b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44009ac90dddf9a8f901fdcc5d46496e4bc78338
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204262"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108282"
 ---
-# <a name="alerts-in-the-security--compliance-center"></a>Alertes dans le Centre de sécurité & conformité
+# <a name="alerts-in-the-microsoft-365-defender-portal"></a>Alertes dans le portail Microsoft 365 Defender web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,33 +36,19 @@ ms.locfileid: "51204262"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 
-Utilisez les fonctionnalités des alertes dans le Centre de sécurité & conformité pour afficher et gérer les alertes pour votre organisation, y compris la gestion des alertes avancées dans le cadre de Microsoft Cloud App Security [vue d’ensemble.](/cloud-app-security/what-is-cloud-app-security)
+Utilisez les fonctionnalités d’alertes dans le portail Microsoft 365 Defender pour afficher et gérer les alertes pour votre organisation, y compris la gestion des alertes avancées dans le cadre de Microsoft Cloud App Security [vue d’ensemble.](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="how-to-get-to-the-alerts-features"></a>Comment obtenir les fonctionnalités d’alertes
 
-Les alertes sont dans le Centre de sécurité & conformité. Voici comment obtenir la page.
+Les alertes sont dans le portail Microsoft 365 Defender ( <https://security.microsoft.com> ). Voici comment obtenir la page :
 
-### <a name="to-go-directly-to-the-security--compliance-center"></a>Pour aller directement au Centre de sécurité & conformité
-
-1. Accédez à <https://protection.office.com>.
-
-2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
-
-3. Dans le volet gauche, cliquez sur **Alertes** pour voir les fonctionnalités des alertes.
-
-### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>Pour aller au Centre de sécurité & conformité à l’aide du lanceur d’applications
-
-1. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
-
-2. Cliquez sur le lanceur d’applications dans le coin supérieur gauche, puis cliquez sur Sécurité **& conformité**.
-
-   Vous ne trouvez pas l’application que vous cherchez ? Dans le Lanceur d’applications, sélectionnez **Toutes les applications** pour afficher une liste alphabétique des applications Office 365 disponibles. À partir de là, vous pouvez rechercher une application spécifique.
-
-3. Dans le volet gauche, cliquez sur **Alertes** pour voir les fonctionnalités des alertes.
+Dans le **portail Microsoft 365 Defender,** allez aux **alertes.** Ou, pour aller directement à la page **Alertes,** utilisez <https://security.microsoft.com/alerts> .
 
 ## <a name="alerts-features"></a>Fonctionnalités des alertes
 
-Le tableau suivant décrit les outils disponibles sous **Alertes** dans le Centre de sécurité & conformité.
+Le tableau suivant décrit les outils disponibles sous **Alertes** dans le portail Microsoft 365 Defender web.
+
+<br>
 
 ****
 

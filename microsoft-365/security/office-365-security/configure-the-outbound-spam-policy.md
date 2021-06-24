@@ -19,12 +19,12 @@ ms.custom:
 description: Les administrateurs peuvent apprendre à afficher, créer, modifier et supprimer des stratégies de courrier indésirable sortant dans Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9dadea740267225ff2df316b96ba7ccef92fe01e
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 97b429584371dbe49778163a7f1bbe6f36aea54c
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52933130"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108414"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurer le filtrage du courrier indésirable sortant dans EOP
 
@@ -35,13 +35,13 @@ ms.locfileid: "52933130"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Dans Microsoft 365 organisations avec des boîtes aux lettres en Exchange Online ou des organisations autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques sortants envoyés via EOP sont automatiquement vérifiés pour les activités de courrier indésirable et d’envoi inhabituel.
+Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations autonomes Exchange Online Protection (EOP) sans boîtes aux lettres Exchange Online, les messages électroniques sortants envoyés via EOP sont automatiquement vérifiés pour les activités de courrier indésirable et d’envoi inhabituel.
 
-Le courrier indésirable sortant provenant d’un utilisateur de votre organisation indique généralement un compte compromis. Les messages sortants suspects sont marqués comme courrier indésirable (quel que soit le niveau de confiance du courrier indésirable ou le SCL) et sont acheminés via le pool de remise à risque élevé pour protéger la réputation du service [(c’est-à-dire,](high-risk-delivery-pool-for-outbound-messages.md) empêcher les serveurs de messagerie source Microsoft 365 des listes d’adresses IP bloqués). Les administrateurs sont automatiquement avertis de l’activité de courrier sortant suspect et des utilisateurs bloqués via les stratégies [d’alerte.](../../compliance/alert-policies.md)
+Le courrier indésirable sortant provenant d’un utilisateur de votre organisation indique généralement un compte compromis. Les messages sortants suspects sont marqués comme courrier indésirable (quel que soit le niveau de confiance du courrier indésirable ou le SCL) et sont acheminés via le pool de remise à risque élevé pour protéger la réputation du service [(c’est-à-dire,](high-risk-delivery-pool-for-outbound-messages.md) empêcher les serveurs de messagerie source Microsoft 365 des listes d’adresses IP bloqués). Les administrateurs sont automatiquement avertis de l’activité de courrier sortant suspecte et des utilisateurs bloqués via les stratégies [d’alerte.](../../compliance/alert-policies.md)
 
 EOP utilise des stratégies de courrier indésirable sortant dans le cadre de la protection globale de votre organisation contre le courrier indésirable. Pour plus d’informations, voir [Protection contre le courrier indésirable](anti-spam-protection.md).
 
-Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie de courrier indésirable sortant par défaut. Pour plus de granularité, vous pouvez également créer des stratégies de courrier indésirable sortant personnalisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques de votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
+Les administrateurs peuvent afficher, modifier et configurer (mais pas supprimer) la stratégie de courrier indésirable sortant par défaut. Pour plus de granularité, vous pouvez également créer des stratégies de courrier indésirable sortant personnalisées qui s’appliquent à des utilisateurs, des groupes ou des domaines spécifiques dans votre organisation. Les stratégies personnalisées priment toujours sur la stratégie par défaut. Vous pouvez cependant modifier la priorité (l'ordre d'exécution) de vos stratégies personnalisées.
 
 Vous pouvez configurer des stratégies de courrier indésirable sortant dans le portail Microsoft 365 Microsoft 365 Defender ou dans PowerShell (Exchange Online PowerShell pour les organisations Microsoft 365 ayant des boîtes aux lettres en Exchange Online ; EOP PowerShell autonome pour les organisations sans boîtes aux lettres Exchange Online).
 
@@ -50,10 +50,10 @@ Les éléments de base d’une stratégie de courrier indésirable sortant dans 
 - **La stratégie de filtrage du** courrier indésirable sortant : spécifie les actions pour les verdicts de filtrage du courrier indésirable sortant et les options de notification.
 - **La règle de filtrage du** courrier indésirable sortant : spécifie la priorité et les filtres de destinataires (à qui la stratégie s’applique) pour une stratégie de filtrage du courrier indésirable sortant.
 
-La différence entre ces deux éléments n’est pas évidente lorsque vous gérez les politiques de courrier indésirable sortant dans le portail Microsoft 365 Defender :
+La différence entre ces deux éléments n’est pas évidente lorsque vous gérez les politiques de courrier indésirable sortant dans le portail Microsoft 365 Defender:
 
 - Lorsque vous créez une stratégie, vous créez en fait une règle de filtrage du courrier indésirable sortant et la stratégie de filtrage du courrier indésirable sortant associée en utilisant le même nom pour les deux.
-- Lorsque vous modifiez une stratégie, les paramètres liés au nom, à la priorité, activé ou désactivé et aux filtres de destinataire modifient la règle de filtrage du courrier indésirable sortant. Tous les autres paramètres modifient la stratégie de filtrage du courrier indésirable sortant associée.
+- Lorsque vous modifiez une stratégie, les paramètres liés au nom, à la priorité, activés ou désactivés, et aux filtres de destinataire modifient la règle de filtrage du courrier indésirable sortant. Tous les autres paramètres modifient la stratégie de filtrage du courrier indésirable sortant associée.
 - Lorsque vous supprimez une stratégie, la règle de filtrage du courrier indésirable sortant et la stratégie de filtrage du courrier indésirable sortant associée sont supprimées.
 
 Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la stratégie et la règle séparément. Pour plus d’informations, voir la section Utiliser Exchange Online PowerShell ou [EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) autonome pour configurer les stratégies de courrier indésirable sortant plus loin dans cet article.
@@ -91,7 +91,7 @@ Pour accroître l’efficacité du filtrage du courrier indésirable sortant, vo
 
 La création d’une stratégie de courrier indésirable sortant personnalisée dans le portail Microsoft 365 Defender crée la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable associée en utilisant le même nom pour les deux.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, cliquez sur Créer une icône Créer une stratégie, puis sélectionnez Sortant ![ dans la liste de ](../../media/m365-cc-sc-create-icon.png)   liste.
 
@@ -134,7 +134,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
        - L’alerte d’activité nommée **Utilisateur limité à l’envoi** de courriers électroniques avertit les administrateurs (par courrier électronique et sur la page Afficher **les alertes).**
        - Tous les destinataires spécifiés dans la stratégie **Notifier** des personnes spécifiques si un expéditeur est bloqué en raison de l’envoi de courrier indésirable sortant dans la stratégie sont également avertis.
        - L’utilisateur ne pourra plus envoyer de messages avant le jour suivant, en fonction de l’heure UTC. Il n’existe aucun moyen pour l’administrateur de remplacer ce bloc.
-     - Empêcher l’utilisateur d’envoyer des messages électroniques : les  notifications par courrier électronique sont envoyées, l’utilisateur est ajouté aux utilisateurs restreints dans le portail Microsoft 365 Defender et l’utilisateur ne peut pas envoyer de courrier tant <https://security.microsoft.com/restrictedusers> qu’il n’a pas été supprimé des utilisateurs restreints par un administrateur.  Une fois qu’un administrateur a supprimé l’utilisateur de la liste, il ne sera plus restreint pour ce jour. Pour obtenir des instructions, consultez La suppression d’un utilisateur du portail Utilisateurs restreints [après l’envoi de courrier indésirable.](removing-user-from-restricted-users-portal-after-spam.md)
+     - Empêcher  <https://security.microsoft.com/restrictedusers> l’utilisateur d’envoyer des messages électroniques : les notifications par courrier électronique sont envoyées, l’utilisateur est ajouté aux  utilisateurs restreints dans le portail Microsoft 365 Defender et l’utilisateur ne peut pas envoyer de courrier tant qu’un administrateur ne l’a pas supprimé des utilisateurs restreints. Une fois qu’un administrateur a supprimé l’utilisateur de la liste, il ne sera plus restreint pour ce jour. Pour obtenir des instructions, consultez La suppression d’un utilisateur du portail Utilisateurs restreints [après l’envoi de courrier indésirable.](removing-user-from-restricted-users-portal-after-spam.md)
      - **Aucune action, alerte uniquement :** les notifications par courrier électronique sont envoyées.
 
    - **Règles de transmission**: utilisez les paramètres de cette section pour contrôler le forwarding automatique du courrier électronique par **Exchange Online boîtes** aux lettres à des expéditeurs externes. Pour plus d’informations, voir [Control automatic external email forwarding in Microsoft 365](external-email-forwarding.md).
@@ -177,7 +177,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-outbound-spam-policies"></a>Utiliser le portail Microsoft 365 Defender pour afficher les stratégies de courrier indésirable sortant
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Anti-spam**.
 
 2. Dans la page **Stratégies anti-courrier indésirable**, recherchez l’une des valeurs suivantes :
    - La **valeur Type** est stratégie personnalisée de courrier indésirable **sortant**
@@ -194,7 +194,7 @@ La création d’une stratégie de courrier indésirable sortant personnalisée 
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier les stratégies de courrier indésirable sortant
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Anti-spam**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez une stratégie de courrier indésirable sortant dans la liste en cliquant sur le nom :
    - Une stratégie personnalisée que vous avez créée lorsque la valeur dans la colonne **Type** est **Stratégie personnalisée de** courrier indésirable sortant .
@@ -210,7 +210,7 @@ Pour activer ou désactiver une stratégie, définir l’ordre de priorité de l
 
 Vous ne pouvez pas désactiver la stratégie de courrier indésirable sortant par défaut.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Anti-spam**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable,  sélectionnez une stratégie avec la valeur **Type** de stratégie personnalisée de courrier indésirable sortant dans la liste en cliquant sur le nom.
 
@@ -232,10 +232,10 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 
  **Remarques** :
 
-- Dans le Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie de courrier indésirable sortant qu’une fois que vous l’avez créé. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de filtrage de courrier indésirable (ceci peut modifier la priorité de règles existantes).
+- Dans le portail Microsoft 365 Defender, vous ne pouvez modifier la priorité de la stratégie de courrier indésirable sortant qu’une fois que vous l’avez créé. Dans PowerShell, vous pouvez remplacer la priorité par défaut lors de la création de la règle de filtrage de courrier indésirable (ceci peut modifier la priorité de règles existantes).
 - Les stratégies de courrier indésirable sortant sont traitées dans l’ordre d’affichage (la première stratégie a la valeur Priorité 0).  La stratégie de courrier indésirable sortant par défaut a la valeur de priorité **La** plus faible et vous ne pouvez pas la modifier.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Anti-spam**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable, sélectionnez  une stratégie avec la valeur **Type** de stratégie personnalisée de courrier indésirable sortant dans la liste en cliquant sur le nom.
 
@@ -250,9 +250,9 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies"></a>Utiliser le portail Microsoft 365 Defender pour supprimer des stratégies de courrier indésirable sortant personnalisées
 
-Lorsque vous utilisez le portail Microsoft 365 Defender pour supprimer une stratégie de courrier indésirable sortant personnalisée, la règle de filtrage du courrier indésirable et la stratégie de filtrage du courrier indésirable correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie de courrier indésirable sortant par défaut.
+Lorsque vous utilisez le portail Microsoft 365 Defender pour supprimer une stratégie de courrier indésirable sortant personnalisée, la règle de filtrage du courrier indésirable et la stratégie de filtrage de courrier indésirable correspondante sont toutes deux supprimées. Vous ne pouvez pas supprimer la stratégie de courrier indésirable sortant par défaut.
 
-1. Dans le Portail Microsoft 365 Defender, accédez à la section **Messagerie et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Stratégies** \> **Anti-courrier indésirable**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Anti-spam**.
 
 2. Dans la page **Stratégies anti-courrier** indésirable,  sélectionnez une stratégie avec la valeur **Type** de stratégie personnalisée de courrier indésirable sortant dans la liste en cliquant sur le nom. En haut du menu volant Détails de la stratégie qui s’affiche, cliquez sur l’![Icône Autres actions](../../media/m365-cc-sc-more-actions-icon.png) **Autres actions** \> ![Icône Supprimer la stratégie](../../media/m365-cc-sc-delete-icon.png) **Supprimer la stratégie**.
 
@@ -453,7 +453,7 @@ Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 
 **Remarques** :
 
-- Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez plutôt le paramètre _Priority_ sur la cmdlet **New-HostedOutboundSpamFilterRule.**
+- Pour définir la priorité d’une nouvelle règle lorsque vous la créez, utilisez le paramètre _Priority_ sur la cmdlet **New-HostedOutboundSpamFilterRule** à la place.
 - La stratégie de filtrage du courrier indésirable par défaut sortante n’a pas de règle de filtrage de courrier indésirable correspondante et elle a toujours la valeur de priorité nonmodifiable La plus **faible**.
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a>Utiliser PowerShell pour supprimer des stratégies de filtrage du courrier indésirable sortant

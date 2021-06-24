@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Sécuriser votre organisation contre les attaques par mot de passe, et interdire les mots de passe courants et activer l’authentification multifacteur basée sur les risques.
-ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 6f79116b1188eaab1b843b2e3fa612c4ed01c488
+ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006924"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096623"
 ---
 # <a name="password-policy-recommendations"></a>Recommandations en matière de stratégie de mot de passe
 
@@ -58,7 +58,7 @@ Les pratiques pour mot de passe recommandées sont classées en plusieurs catég
 
 La diversité des mots de passe représente l’objectif principal d’un système de mot de passe sécurisé. Votre stratégie de mot de doit contenir de nombreux mots de passe différents qui sont de plus difficiles à deviner. Voici quelques recommandations pour garantir la sécurité de votre organisation.
   
-- Conserver une exigence de longueur minimale de 8 caractères (une longueur supérieure n'est pas forcément recommandable)
+- Appliquer une exigence de longueur minimale de 8 caractères
 
 - N'exigez pas de composition de caractères. For exemple, \*&amp;(^%$
 
@@ -131,6 +131,8 @@ L’authentification multifacteur basée sur le risque s'assure que, lorsque not
 ## <a name="next-steps"></a>Étapes suivantes
 
 Vous voulez en savoir plus sur la gestion des mots de passe ? Voici quelques recommandations de lecture :
+
+- [Oubliez les mots de passe, passez au sans mot de passe](https://www.microsoft.com/security/business/identity-access-management/passwordless-authentication)
 
 - [Conseils sur les mots de passe Microsoft](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 

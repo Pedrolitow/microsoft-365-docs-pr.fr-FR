@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent découvrir le fonctionnement de l’aperçu de l’emprunt d’identité. Ils peuvent rapidement déterminer les expéditeurs qui envoient légitimement des messages électroniques à leurs organisations à partir de domaines qui ne passent pas les vérifications d’authentification du courrier électronique (SPF, DKIM ou DMARC).
+description: Les administrateurs peuvent découvrir le fonctionnement de l’aperçu de l’emprunt d’identité. Ils peuvent rapidement déterminer quels expéditeurs envoient légitimement des messages électroniques à leur organisation à partir de domaines qui ne passent pas les vérifications d’authentification du courrier électronique (SPF, DKIM ou DMARC).
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cebccf09c30264d1b7c94185eb4ad28a1b1cf75e
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: b7254dce40f72ecc01dc532f1b6c51f252a2b3ac
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083403"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108630"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Aperçu de l’emprunt d’identité dans Defender pour Office 365
 
@@ -42,7 +42,7 @@ L’emprunt d’identité est l’endroit où l’expéditeur d’un message él
 - **Emprunt d’identité** de domaine : au lieu de lila@contoso.com, l’adresse e-mail de l’expéditeur dont l’identité a été usurpée est lila@ćóntoso.com.
 - **Emprunt d’identité** d’utilisateur : au lieu michelle@contoso.com, l’adresse e-mail de l’expéditeur dont l’identité est usurpée est rnichell@contoso.com.
 
-L’emprunt d’identité de domaine est différent de l’usurpation d’identité de [domaine,](anti-spoofing-protection.md)car le domaine usurpé d’identité est généralement un domaine réel enregistré. Les messages provenant d’expéditeurs dans le domaine dont l’identité est emprunt d’identité peuvent et souvent passer des vérifications d’authentification de courrier électronique régulières qui identifieraient autrement les tentatives d’usurpation d’identité (SPF, DKIM et DMARC).
+L’emprunt d’identité de domaine est différent de l’usurpation d’identité de [domaine,](anti-spoofing-protection.md)car le domaine usurpé d’identité est généralement un domaine réel enregistré. Les messages provenant d’expéditeurs dans le domaine dont l’identité est usurpée peuvent et souvent réussir des vérifications d’authentification de courrier électronique régulières qui identifieraient autrement les tentatives d’usurpation d’identité (SPF, DKIM et DMARC).
 
 La protection contre l’emprunt d’identité fait partie des paramètres de stratégie anti-hameçonnage qui sont exclusifs à Microsoft Defender Office 365. Pour plus d’informations sur ces paramètres, voir paramètres d’emprunt d’identité dans les [stratégies anti-hameçonnage](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)dans Microsoft Defender pour Office 365 .
 
@@ -66,7 +66,7 @@ Vous pouvez utiliser l’aperçu de l’emprunt d’identité dans le portail Mi
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Ouvrez l’aperçu de l’emprunt d’identité dans Microsoft 365 Defender web
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & Collaboration** Policies & \> **Rules** Threat \>  \> **policies** section \> **Anti-phishing**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** \> **Threat policies** page \> **Policies** section \> **Anti-phishing**.
 
 2. Dans la page **Anti-hameçonnage,** l’aperçu de l’emprunt d’identité ressemble à ceci :
 
@@ -74,13 +74,13 @@ Vous pouvez utiliser l’aperçu de l’emprunt d’identité dans le portail Mi
 
    L’aperçu a deux modes :
 
-    - **Mode** Insight : si la protection contre l’emprunt d’identité est activée et configurée dans les stratégies anti-hameçonnage, l’aperçu affiche le nombre de messages détectés provenant de domaines dont l’identité a été usurpée et d’utilisateurs (expéditeurs) au cours des sept derniers jours. Il s’agit du total de tous les expéditeurs dont l’identité a été détectée dans toutes les stratégies anti-hameçonnage.
+    - **Mode** Insight : si la protection contre l’emprunt d’identité est activée et configurée dans les stratégies anti-hameçonnage, l’aperçu indique le nombre de messages détectés provenant de domaines dont l’identité a été usurpée et d’utilisateurs (expéditeurs) au cours des sept derniers jours. Il s’agit du total de tous les expéditeurs dont l’identité a été détectée dans toutes les stratégies anti-hameçonnage.
     - Que se passe-t-il si le **mode**: si la protection contre l’emprunt d’identité n’est pas activée et configurée dans les stratégies anti-hameçonnage actives, l’information vous indique le nombre de *messages* détectés par nos fonctionnalités de protection contre l’emprunt d’identité au cours des sept derniers jours.
 
 Pour afficher des informations sur les détections d’emprunt d’identité, cliquez sur Afficher les **emprunts** d’identité dans l’aperçu de l’emprunt d’identité.
 
    > [!NOTE]
-   > Pour plus d’informations sur les informations sur l’usurpation d’informations sur l’intelligence, voir La veille contre l’usurpation [d’informations dans EOP.](learn-about-spoof-intelligence.md)
+   > Pour plus d’informations sur les informations sur l’usurpation d’informations sur l’intelligence, voir [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
 ## <a name="view-information-about-messages-from-senders-in-impersonated-domains"></a>Afficher des informations sur les messages provenant d’expéditeurs dans des domaines dont l’identité est usurpée
 
@@ -100,13 +100,13 @@ Vous pouvez cliquer sur les en-tête de colonne sélectionnés pour trier les r�
 
 Pour filtrer les résultats, vous pouvez utiliser la zone De recherche icône de recherche pour entrer une liste de valeurs séparées par des virgules ![ ](../../media/m365-cc-sc-search-icon.png)  pour filtrer les résultats.
 
-### <a name="view-details-about-messages-from-senders-in-impersonated-domains"></a>Afficher des détails sur les messages provenant d’expéditeurs dans des domaines dont l’identité est usurpée
+### <a name="view-details-about-messages-from-senders-in-impersonated-domains"></a>Afficher les détails sur les messages provenant d’expéditeurs dans des domaines dont l’identité est usurpée
 
 Sous **l’onglet Domaines** de **la** page Informations sur l’emprunt d’identité, sélectionnez l’une des détections d’emprunt d’identité disponibles. Le volant de détails qui s’affiche contient les informations et fonctionnalités suivantes :
 
 - **Stratégie d’emprunt d’identité** de sélection à modifier : sélectionnez la stratégie anti-hameçonnage concernée que vous souhaitez modifier. Seules les stratégies où le domaine dont l’identité est définie dans la stratégie sont disponibles. Reportez-vous à la page précédente pour voir quelle stratégie était réellement responsable de la détection du domaine dont l’identité a été usurpée (probablement en fonction du destinataire et de la priorité de la stratégie).
-- Ajoutez à la liste des expéditeurs autorisés à usurper l’identité : utilisez ce basculement pour ajouter ou supprimer l’expéditeur des domaines et des expéditeurs de confiance **(exceptions** d’emprunt d’identité) pour la stratégie anti-hameçonnage que vous avez sélectionnée :
-  - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Non,** le basculement est éteint. Pour exempter tous les expéditeurs de ce domaine de l’évaluation par la protection contre l’emprunt d’identité, faites glisser le curseur sur : ![ Basculez sur ](../../media/scc-toggle-on.png) . Le domaine est ajouté à la liste des domaines de confiance dans les **paramètres** de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
+- Ajoutez à la liste des expéditeurs autorisés à usurper l’identité : utilisez ce basculement pour ajouter ou supprimer l’expéditeur des domaines et expéditeurs de confiance **(exceptions** d’emprunt d’identité) pour la stratégie anti-hameçonnage que vous avez sélectionnée :
+  - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Non,** le basculement est éteint. Pour exempter tous les expéditeurs de ce domaine de l’évaluation par la protection contre l’emprunt d’identité, faites glisser le basculement sur : ![ Basculez sur ](../../media/scc-toggle-on.png) . Le domaine est ajouté à la liste des domaines de confiance dans les **paramètres** de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
   - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Oui,** le basculement est sur. Pour renvoyer tous les expéditeurs de ce domaine à l’évaluation par la protection contre l’emprunt d’identité, faites glisser le curseur sur : ![ Basculez vers le ](../../media/scc-toggle-off.png) large. Le domaine est supprimé de la liste des domaines de confiance dans les **paramètres** de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
 - Pourquoi nous l’avons capturé.
 - Ce que vous devez faire.
@@ -117,7 +117,7 @@ Sous **l’onglet Domaines** de **la** page Informations sur l’emprunt d’ide
 
 ## <a name="view-information-about-messages-from-impersonated-senders"></a>Afficher des informations sur les messages provenant d’expéditeurs dont l’identité a été usurpée
 
-Dans la page **Informations sur l’emprunt** d’identité qui s’affiche après avoir cliqué sur Afficher les **emprunts** d’identité dans l’aperçu de l’emprunt d’identité, cliquez sur **l’onglet** Utilisateurs. **L’onglet** Utilisateurs contient les informations suivantes :
+Dans la page **Informations sur** l’emprunt d’identité qui s’affiche après avoir cliqué sur Afficher les **emprunts** d’identité dans l’aperçu de l’emprunt d’identité, cliquez sur **l’onglet** Utilisateurs. **L’onglet** Utilisateurs contient les informations suivantes :
 
 - **Expéditeur :** adresse de messagerie de l’expéditeur qui a envoyé le message électronique.
 - **Nombre de** messages : nombre de messages provenant de l’expéditeur qui usurpe l’identité au cours des 7 derniers jours.
@@ -131,14 +131,14 @@ Dans la page **Informations sur l’emprunt** d’identité qui s’affiche apr�
 
 Vous pouvez cliquer sur les en-tête de colonne sélectionnés pour trier les résultats.
 
-Pour filtrer les résultats,  vous pouvez utiliser la zone Filtrer l’expéditeur pour entrer une liste de valeurs séparées par des virgules pour filtrer les résultats.
+Pour filtrer les résultats,  vous pouvez utiliser la zone Expéditeur du filtre pour entrer une liste de valeurs séparées par des virgules pour filtrer les résultats.
 
 ### <a name="view-details-about-messages-from-impersonated-senders"></a>Afficher les détails des messages provenant d’expéditeurs dont l’identité a été usurpée
 
 Sous **l’onglet** Utilisateurs de **la** page Informations sur l’emprunt d’identité, sélectionnez l’une des détections d’emprunt d’identité disponibles. Le volant de détails qui s’affiche contient les informations et fonctionnalités suivantes :
 
-- **Stratégie d’emprunt d’identité** de sélection à modifier : sélectionnez la stratégie anti-hameçonnage concernée que vous souhaitez modifier. Seules les stratégies dans laquelle l’expéditeur dont l’identité est usurpée sont définies dans la stratégie sont disponibles. Reportez-vous à la page précédente pour voir quelle stratégie était réellement responsable de la détection de l’expéditeur usurpé d’identité (probablement en fonction du destinataire et de la priorité de la stratégie).
-- Ajoutez à la liste des expéditeurs autorisés à usurper l’identité : utilisez ce basculement pour ajouter ou supprimer l’expéditeur des domaines et des expéditeurs de confiance **(exceptions** d’emprunt d’identité) pour la stratégie anti-hameçonnage que vous avez sélectionnée :
+- **Stratégie d’emprunt d’identité** de sélection à modifier : sélectionnez la stratégie anti-hameçonnage concernée que vous souhaitez modifier. Seules les stratégies dans laquelle l’expéditeur dont l’identité est usurpée sont définies dans la stratégie sont disponibles. Reportez-vous à la page précédente pour voir quelle stratégie était réellement responsable de la détection de l’expéditeur dont l’identité est usurpée (probablement en fonction du destinataire et de la priorité de la stratégie).
+- Ajoutez à la liste des expéditeurs autorisés à usurper l’identité : utilisez ce basculement pour ajouter ou supprimer l’expéditeur des domaines et expéditeurs de confiance **(exceptions** d’emprunt d’identité) pour la stratégie anti-hameçonnage que vous avez sélectionnée :
   - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Non,** le basculement est éteint. Pour exempter l’expéditeur de l’évaluation par la protection contre l’emprunt d’identité, faites glisser le curseur sur : ![ Basculez sur ](../../media/scc-toggle-on.png) . L’expéditeur est ajouté  à la liste des utilisateurs de confiance dans les paramètres de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
   - Si la **valeur Autorisée à usurper l’identité** de cette entrée est **Oui,** le basculement est sur. Pour renvoyer l’expéditeur à l’évaluation par la protection contre l’emprunt d’identité, faites glisser le curseur sur : ![ Basculez vers le ](../../media/scc-toggle-off.png) large. L’expéditeur est supprimé  de la liste des utilisateurs de confiance dans les paramètres de protection contre l’emprunt d’identité de la stratégie anti-hameçonnage.
 - Pourquoi nous l’avons capturé.

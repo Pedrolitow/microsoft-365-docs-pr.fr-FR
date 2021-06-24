@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89562a5fd7c2d869f8a060e7ceda1c32a093c175
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 0cf2d19b06dc1cce154785d8c42742fdc12d3259
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083667"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108330"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Évaluer Microsoft Defender pour Office 365
 
@@ -40,7 +40,7 @@ L’expérience d’évaluation de [Microsoft Defender](defender-for-office-365.
 Si vous n’avez pas encore de licence qui prend en charge Microsoft Defender pour Office 365, vous pouvez démarrer une évaluation gratuite de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) jours et tester les fonctionnalités dans le portail Microsoft 365 Defender sur <https://security.microsoft.com> . Vous pourrez profiter de la mise en place rapide et la désactiver facilement si nécessaire.
 
 > [!NOTE]
-> Si vous êtes dans le portail Microsoft 365 Defender ( ), vous pouvez démarrer une évaluation Defender pour Office 365 ici : Email <https://security.microsoft.com> **& Collaboration** Policies \> **& Rules** Threat \> **Policies** \> **Others** section \> **Evaluation mode**.
+> Si vous êtes dans le portail Microsoft 365 Defender ( ), vous pouvez démarrer une évaluation defender pour Office 365 ici : Email <https://security.microsoft.com> **& Collaboration** Policies \> **& Rules** Threat \> **policies** page \> **Others** section \> **Evaluation mode**.
 
 ## <a name="how-the-evaluation-works"></a>Fonctionnement de l’évaluation
 
@@ -121,7 +121,7 @@ Les scénarios de routage de courrier pris en charge sont les suivants :
 - Partenaire tiers **et/ou** fournisseur de services local : le connecteur entrant que vous souhaitez évaluer utilise un fournisseur tiers et/ou vous utilisez une solution pour la sécurité du courrier électronique en local.
 - **Microsoft Exchange Online protection** uniquement : le client que vous souhaitez évaluer utilise Office 365 pour la sécurité du courrier électronique et l’enregistrement MX (Mail Exchange) pointe vers Microsoft.
 
-### <a name="email-security-gateway"></a>Passerelle de sécurité du courrier électronique
+### <a name="email-security-gateway"></a>Passerelle de sécurité de messagerie
 
 Si vous utilisez une passerelle de sécurité de messagerie (ESG) tierce, vous devez connaître le nom du fournisseur. Si vous utilisez un fournisseur ESG local ou non pris en charge, vous devez connaître les adresses IP publiques des appareils.
 

@@ -18,12 +18,12 @@ description: Découvrez comment définir des stratégies Coffre pièces jointes 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7220140c25ecf457b42514356e41aabdf5481bb
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: e516a16ff28c762e154fd908312df65ea48699bc
+ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054325"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53108222"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies Coffre pièces jointes dans Microsoft Defender pour Office 365
 
@@ -83,7 +83,7 @@ Dans Exchange Online PowerShell ou EOP PowerShell autonome, vous gérez la strat
 
 La création d’une stratégie Coffre pièces jointes personnalisée dans le portail Microsoft 365 Defender crée la règle de pièces jointes sécurisées et la stratégie de pièces jointes sécurisées associée en utilisant le même nom pour les deux.
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies \> **&** rules \> **Threat policies** section Coffre \>  \> **Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
 
 2. Dans la page **Coffre pièces jointes,** cliquez sur ![ Créer une icône ](../../media/m365-cc-sc-create-icon.png) **Créer.**
 
@@ -135,7 +135,7 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-attachments-policies"></a>Utiliser le portail Microsoft 365 Defender pour afficher les stratégies Coffre pièces jointes
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies \> **&** rules \> **Threat policies** section Coffre \>  \> **Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
 
 2. Dans la page **Coffre pièces jointes, les propriétés suivantes** sont affichées dans la liste des stratégies :
    - **Name**
@@ -146,7 +146,7 @@ La création d’une stratégie Coffre pièces jointes personnalisée dans le po
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-attachments-policies"></a>Utiliser le portail Microsoft 365 Defender pour modifier les stratégies Coffre pièces jointes
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies \> **&** rules \> **Threat policies** section Coffre \>  \> **Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
@@ -156,7 +156,7 @@ Pour activer ou désactiver une stratégie ou définir l’ordre de priorité de
 
 ### <a name="enable-or-disable-safe-attachments-policies"></a>Activer ou désactiver les stratégies Coffre pièces jointes
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies \> **&** rules \> **Threat policies** section Coffre \>  \> **Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
@@ -182,7 +182,7 @@ Coffre Les stratégies de pièces jointes sont affichées dans l’ordre de trai
 
 Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priorité** ou **Diminuer la priorité** dans les propriétés de la stratégie (vous ne pouvez pas modifier directement le numéro **Priorité** dans le Portail Microsoft 365 Defender). La modification de la priorité d’une stratégie n’a de sens que si vous avez plusieurs stratégies.
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies \> **&** rules \> **Threat policies** section Coffre \>  \> **Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie dans la liste en cliquant sur le nom.
 
@@ -197,7 +197,7 @@ Pour modifier la priorité d’une stratégie, cliquez sur **Augmenter la priori
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-attachments-policies"></a>Utiliser le portail Microsoft 365 Defender pour supprimer les stratégies Coffre pièces jointes
 
-1. Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies \> **&** rules \> **Threat policies** section Coffre \>  \> **Attachments**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**.
 
 2. Dans la page **Coffre pièces jointes,** sélectionnez une stratégie personnalisée dans la liste en cliquant sur le nom de la stratégie.
 
@@ -439,7 +439,7 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, vo
 
 Pour vérifier que vous avez correctement créé, modifié ou supprimé des stratégies Coffre pièces jointes, faites l’une des étapes suivantes :
 
-- Dans le portail Microsoft 365 Defender, go to **Email & collaboration** Policies \> **&** rules \> **Threat policies** section Coffre \>  \> **Attachments**. Vérifiez la liste des stratégies, leurs **valeurs d’état** et leurs **valeurs de** priorité. Pour afficher plus de détails, sélectionnez la stratégie dans la liste en cliquant sur le nom, puis affichez les détails dans le volant.
+- In the Microsoft 365 Defender portal, go to **Email & Collaboration** Policies & \> **Rules** Threat \> **policies** page \> **Policies** section \> **Coffre Attachments**. Vérifiez la liste des stratégies, leurs **valeurs d’état** et leurs **valeurs de** priorité. Pour afficher plus de détails, sélectionnez la stratégie dans la liste en cliquant sur le nom, puis affichez les détails dans le volant.
 
 - Dans Exchange Online PowerShell ou Exchange Online Protection PowerShell, remplacez par le nom de la stratégie ou de la règle, exécutez la commande suivante et vérifiez les \<Name\> paramètres :
 
