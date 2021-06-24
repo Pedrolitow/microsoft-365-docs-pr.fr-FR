@@ -17,18 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: f607e36cef85f30fa1d6e073da871ac1c140684c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 80794a9d5e4da0d2da74fc714ffd1e0ceab34c8f
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841833"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105685"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Intégrer des Windows 10 à l’aide de la stratégie de groupe 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Stratégie de groupe
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -52,7 +52,7 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
  
-    1. Dans le volet de navigation, sélectionnez  >  **Paramètres’intégration.**
+    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration.**
 
     1. Sélectionnez Windows 10 comme système d’exploitation.
     
@@ -119,7 +119,7 @@ Après avoir configuré le script d’intégration, continuez à modifier la mê
 
 Toutes les stratégies se trouvent sous `Computer Configuration\Policies\Administrative Templates` .
 
-**Emplacement de la stratégie** : \Windows\Windows Defender SmartScreen*
+**Emplacement de la stratégie** : \Windows\Windows Defender ATP
 
 Stratégie | Paramètre 
 :---|:---
@@ -155,7 +155,7 @@ Surveiller l’activité des fichiers et des programmes sur votre ordinateur|Act
 
 <br/>
 
-**Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender
+**Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Scan
 
 Ces paramètres configurent des analyses périodiques du point de terminaison. Nous vous recommandons d’effectuer une analyse rapide hebdomadaire, autorisant les performances.
 
@@ -186,7 +186,7 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
 Stratégie | Paramètre 
 :---|:---
-Configurer l’accès contrôlé aux dossiers| Activé, mode audit
+Configurer l’accès contrôlé aux dossiers| Activé, mode Audit
 
 
 
@@ -227,18 +227,18 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
-Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
+Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 1. Go to [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/).
-2. Cliquez **sur La liste Appareils.**
+2. Cliquez **sur Liste des appareils.**
 3. Vérifiez que les appareils apparaissent.
 
 > [!NOTE]
 > L’affichage des appareils dans la liste Appareils peut prendre plusieurs **jours.** Cela inclut le temps qu’il faut pour que les stratégies soient distribuées à l’appareil, le temps qu’il faut avant que l’utilisateur se connecte et le temps qu’il faut au point de terminaison pour commencer à créer des rapports.
 
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 - [Intégrer Windows 10 appareils à l’aide Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Intégrer les appareils Windows 10 à l’aide des outils de gestion des appareils mobiles](configure-endpoints-mdm.md)
 - [Intégrer les appareils Windows 10 utilisant un script local](configure-endpoints-script.md)

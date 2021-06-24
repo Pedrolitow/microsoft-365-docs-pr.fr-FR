@@ -25,18 +25,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dcfc3bd0e06e0bdca6c834e947d7d136af47fde3
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: fdfc065aea3549e99de72c968c0fa19412f9e246
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782824"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105355"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Examiner les incidents dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - Microsoft 365 Defender
 
@@ -52,11 +52,11 @@ Vous pouvez commencer par sélectionner l’incident dans la colonne de coche. V
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Exemple de sélection d’un incident dans la colonne de coche":::
 
-Lorsque vous le faites, un volet récapitulatif s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
+Lorsque vous le faites, un volet de synthèse s’ouvre avec des informations clés sur l’incident, telles que la gravité, à qui il est affecté, et les catégories [MITRE ATT &trade;&CK](https://attack.mitre.org/) pour l’incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Exemple de volet récapitulatif pour un incident":::
 
-À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l’incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les appareils, les utilisateurs, les enquêtes et les preuves.
+À partir de là, vous pouvez sélectionner **Ouvrir la page Incident.** Cela ouvre la page principale de l’incident où vous trouverez des informations récapitulatifs et des onglets pour les alertes, les périphériques, les utilisateurs, les enquêtes et les preuves.
 
 Vous pouvez également ouvrir la page principale d’un incident en sélectionnant le nom de l’incident dans la file d’attente des incidents.
 
@@ -103,7 +103,7 @@ Cette page d’alerte d’incident se compose des sections suivantes :
 - Événements et alertes connexes
 - Détails récapitulatifs
 
-Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte pour [examiner les alertes.](investigate-alerts.md)
+Découvrez comment utiliser la file d’attente d’alertes et les pages d’alerte dans [examiner les alertes.](investigate-alerts.md)
 
 ## <a name="devices"></a>Appareils
 
@@ -122,7 +122,7 @@ Dans la page appareil, vous pouvez collecter des informations supplémentaires s
 
 ## <a name="users"></a>Utilisateurs
 
-**L’onglet** Utilisateurs répertorie tous les utilisateurs identifiés comme faisant partie ou associés à l’incident. Voici un exemple.
+**L’onglet** Utilisateurs répertorie tous les utilisateurs qui ont été identifiés comme faisant partie ou associés à l’incident. Voici un exemple.
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Exemple de page Utilisateurs pour un incident":::
 
@@ -145,9 +145,17 @@ Vous pouvez cocher la coche d’une boîte aux lettres pour voir la liste des al
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Exemple de page Investigations pour un incident":::
 
-Sélectionnez un examen pour accéder à la page Détails de l’examen pour obtenir des informations complètes sur l’état l’examen et de la correction. Si des actions sont en attente d’approbation dans le cadre de l’examen, elles apparaissent dans l’onglet Actions en attente. Prendre des mesures dans le cadre de la correction des incidents.
+Sélectionnez un examen pour accéder à sa page de détails pour obtenir des informations complètes sur l’état de l’examen et de la correction. Si des actions sont en attente d’approbation dans le cadre de l’examen, elles apparaissent dans l’onglet Historique des **actions en** attente. Prendre des mesures dans le cadre de la correction des incidents.
 
-Pour plus d’informations, voir [Examen automatisé et réponse dans Microsoft 365 Defender](m365d-autoir.md).
+Il existe également un onglet **Graphique d’enquête** qui indique :
+
+- La connexion des alertes aux biens touchés dans votre organisation.
+- Les entités liées aux alertes et à la façon dont elles font partie de l’article de l’attaque.
+- Alertes pour l’incident.
+
+Le graphique d’enquête vous permet de comprendre rapidement l’étendue complète de l’attaque en connectant les différentes entités suspectes faisant partie de l’attaque avec leurs biens connexes tels que les utilisateurs, les périphériques et les boîtes aux lettres. 
+
+Pour plus d’informations, voir [Examen et réponse automatisés dans Microsoft 365 Defender](m365d-autoir.md).
 
 ## <a name="evidence-and-response"></a>Preuve et réponse
 
@@ -159,23 +167,7 @@ Microsoft 365 Defender examine automatiquement tous les événements pris en cha
 
 Chacune des entités analysées est marquée avec un verdict (malveillant, suspect, propre) et un état de correction. Cela vous permet de comprendre l’état de correction de l’intégralité de l’incident et les étapes suivantes qui peuvent être prises.
 
-## <a name="graph-in-preview"></a>Graph (en prévisualisation)
-
-Avec le nouvel **onglet Graph** (en prévisualisation), vous pouvez voir :
-
-- La connexion des alertes aux biens touchés dans votre organisation.
-- Les entités liées aux alertes et à la façon dont elles font partie de l’article de l’attaque.
-- Alertes pour l’incident.
-
-Voici un exemple.
-
-:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Exemple de page de Graph pour un incident":::
-
-Le graphique d’incident vous permet de comprendre rapidement l’étendue complète de l’attaque en connectant les différentes entités suspectes faisant partie de l’attaque avec leurs biens connexes tels que les utilisateurs, les périphériques et les boîtes aux lettres. 
-
-Vous pouvez maintenant comprendre comment l’attaque s’est propagée sur votre réseau au fil du temps, où elle a commencé et jusqu’où l’attaque s’est étendue.
-
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Selon les besoins :
 

@@ -20,12 +20,12 @@ description: Les administrateurs peuvent en savoir plus sur la protection contre
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 31ca7c27e3be20e20c16004490bd2ecd5ca4ae05
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: 7e37b67dbed75e3283070ba94321fcb03979a5a6
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083679"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105391"
 ---
 # <a name="protect-against-threats"></a>Protéger contre les menaces
 
@@ -36,14 +36,14 @@ ms.locfileid: "53083679"
 - [Microsoft Defender pour Office 365 : offre 1 et offre 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Voici un guide de démarrage rapide qui décompose la configuration de Defender Office 365 en blocs. Si vous débutez avec les fonctionnalités de protection contre les menaces dans Office 365, que vous ne savez pas par où commencer, ou si vous apprenez mieux en faisant *cela,* utilisez ces instructions comme liste de contrôle et point de départ.
+Voici un guide de démarrage rapide qui décompose la configuration de Defender Office 365 en blocs. Si vous débutez avec les fonctionnalités de protection contre les menaces dans Office 365, si vous ne savez pas par où commencer, ou si vous apprenez mieux en faisant *cela,* utilisez ces instructions comme liste de contrôle et point de départ.
 
 > [!IMPORTANT]
 > **Les paramètres recommandés** initiaux sont inclus pour chaque type de stratégie ; toutefois, de nombreuses options sont disponibles et vous pouvez ajuster vos paramètres pour répondre aux besoins spécifiques de votre organisation. Laissez environ 30 minutes à vos stratégies ou modifications pour qu’elles fonctionnent dans votre centre de données.
 >
 > Pour ignorer la configuration manuelle de la plupart des stratégies dans Defender pour Office 365, vous pouvez utiliser des stratégies de sécurité prédéfines au niveau Standard ou Strict. Pour plus d’informations, voir [Stratégies de sécurité prédéfini dans EOP](preset-security-policies.md)et Microsoft Defender pour Office 365 .
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 ### <a name="subscriptions"></a>Abonnements
 
@@ -66,7 +66,7 @@ Les fonctionnalités de protection contre les menaces sont *incluses* dans tous 
 
 ### <a name="roles-and-permissions"></a>Rôles et autorisations
 
-Pour configurer Defender pour les stratégies Office 365, vous devez avoir un rôle approprié. Jetez un coup d’œil au tableau ci-dessous pour les rôles qui peuvent faire ces actions.
+Pour configurer Defender pour les stratégies Office 365, vous devez avoir un rôle approprié. Voir le tableau ci-dessous pour les rôles qui peuvent faire ces actions.
 
 <br>
 
@@ -83,7 +83,7 @@ Pour en savoir plus, [consultez Autorisations dans le portail Microsoft 365 Defe
 
 ### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Activer la journalisation d’audit pour la rapport et l’examen
 
-- Démarrez votre journalisation d’audit tôt. Pour certaines des étapes  suivantes, l’audit doit être en cours. La journalisation d’audit est disponible dans les abonnements qui [incluent Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Pour afficher les données dans [](view-email-security-reports.md)les rapports de protection contre les menaces, les rapports de sécurité du courrier électronique et [l’Explorateur,](threat-explorer.md)la journalisation d’audit doit être *en cours.* Pour en savoir plus, voir Activer ou désactiver la [recherche dans le journal d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Démarrez votre journalisation d’audit tôt. L’audit doit être **en cours pour** certaines des étapes suivantes. La journalisation d’audit est disponible dans les abonnements qui [incluent Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description). Pour afficher les données dans [](view-email-security-reports.md)les rapports de protection contre les menaces, les rapports de sécurité du courrier électronique et [l’Explorateur,](threat-explorer.md)la journalisation d’audit doit être *en cours.* Pour en savoir plus, voir Activer ou désactiver la [recherche dans le journal d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="part-1---anti-malware-protection-in-eop"></a>Partie 1 : protection contre les programmes malveillants dans EOP
 
@@ -95,8 +95,8 @@ Pour plus d’informations sur les paramètres recommandés pour la protection c
 
 3. Dans le volant de détails de stratégie qui s’ouvre, cliquez sur Modifier les paramètres de **protection,** puis configurez les paramètres suivants :
    - **Section Paramètres de** protection :
-     - Sélectionnez **Activer le filtre des pièces jointes courantes** pour activer le filtre de pièces jointes communes. Cliquez **sur Personnaliser les types de fichiers** pour ajouter d’autres types de fichiers.
-     - **Activer la purge automatique d’heure zéro pour les programmes malveillants**: vérifiez que ce paramètre est sélectionné. Pour plus d’informations sur ZAP pour les programmes malveillants, voir purge automatique heure zéro [(ZAP) pour les programmes malveillants.](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)
+     - **Activez le filtre des pièces jointes courantes**: Sélectionner (activer). Cliquez **sur Personnaliser les types de fichiers** pour ajouter d’autres types de fichiers.
+     - Activer la purge automatique zéro heure **pour les programmes malveillants**: vérifiez que ce paramètre est sélectionné. Pour plus d’informations sur ZAP pour les programmes malveillants, voir purge automatique heure zéro [(ZAP) pour les programmes malveillants.](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware)
    - **Section Notification** : vérifiez qu’aucun des paramètres de notification n’est sélectionné.
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**.
@@ -251,8 +251,8 @@ Pour plus d’informations sur les paramètres recommandés pour les liens Coffr
 2. Dans la page **Coffre** liens, cliquez sur **Paramètres** globaux, puis configurez les paramètres suivants dans le volant qui s’affiche :
    - **Paramètres qui s’appliquent au contenu de la** section Office 365 applications suivantes :
      - **Utilisez Coffre liens dans Office 365 applications :** vérifiez que ce paramètre est allumé ![ ](../../media/scc-toggle-on.png) (bascule).
-     - **Ne pas savoir quand les utilisateurs** cliquent sur les liens protégés dans Office 365 applications : désactiver ce paramètre ( ![ ](../../media/scc-toggle-off.png) Désactiver)
-     - **Ne laissez pas les utilisateurs** cliquer jusqu’à l’URL d’origine dans Office 365 applications : vérifiez que ce paramètre est allumé ( ![ ](../../media/scc-toggle-on.png) Basculez sur ).
+     - **Ne pas suivre le moment où les** utilisateurs cliquent sur les liens protégés dans Office 365 applications : désactiver ce paramètre ![ ](../../media/scc-toggle-off.png) (désactiver).
+     - **Ne laissez pas les utilisateurs** accéder à l’URL d’origine dans Office 365 applications : vérifiez que ce paramètre est allumé ![ (basculement). ](../../media/scc-toggle-on.png)
 
    Lorsque vous avez terminé, cliquez sur **Enregistrer**
 
@@ -265,7 +265,7 @@ Pour plus d’informations sur les paramètres recommandés pour les liens Coffr
    - **Page Utilisateurs** et domaines : comme il s’agit de votre première stratégie et que vous souhaitez probablement optimiser la couverture, envisagez d’entrer vos domaines [acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) dans la zone **Domaines.** Dans le cas contraire, vous pouvez utiliser les zones **Utilisateurs** et groupes pour un contrôle plus granulaire.  Vous pouvez spécifier des exceptions en sélectionnant **Exclure ces utilisateurs,** groupes et domaines et en entrant des valeurs.
    - **Page Paramètres de** protection :
      - **Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans** les messages : Activer ce **paramètre.**
-     - **Sélectionnez l’action pour les URL inconnues** ou potentiellement malveillantes dans Microsoft Teams : activer ce **paramètre.** À partir de mars 2020, ce paramètre est en prévisualisation et n’est disponible ou fonctionnel que pour les membres du Microsoft Teams Technology Adoption Program (TAP).
+     - **Sélectionnez l’action pour les URL inconnues** ou potentiellement malveillantes dans Microsoft Teams : activer ce **paramètre.** À partir de mars 2020, ce paramètre est en prévisualisation et est disponible ou fonctionnel uniquement pour les membres du Microsoft Teams Technology Adoption Program (TAP).
      - **Appliquez l’analyse d’URL en** temps réel pour les liens suspects et les liens qui pointent vers des fichiers : sélectionnez ce paramètre (activer).
        - **Attendez que l’analyse de l’URL se termine avant de remettre le message**: sélectionnez ce paramètre (activer).
      - **Appliquer Coffre liens vers les messages électroniques envoyés** au sein de l’organisation : sélectionnez ce paramètre (activer).

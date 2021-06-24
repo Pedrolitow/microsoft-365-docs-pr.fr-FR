@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d07a7210b8426349f18a2305069c4ed0a08ce660
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: a6de0cb646eb8c12e4863facdb42c1f9494120f9
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096833"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105655"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Suivre les menaces émergentes et y répondre avec l’analyse des menaces 
 
@@ -116,24 +116,6 @@ Chaque rapport inclut des graphiques qui fournissent une vue d’ensemble de la 
 - **État de configuration** sécurisé : indique le nombre d’appareils avec des paramètres de sécurité mal configurés. Appliquez les paramètres de sécurité recommandés pour atténuer la menace. Les appareils sont considérés **comme sécurisés** s’ils ont _appliqué tous_ les paramètres suivis.
 - **État de correction des vulnérabilités**: indique le nombre d’appareils vulnérables. Appliquer des mises à jour de sécurité ou des correctifs pour résoudre les vulnérabilités exploitées par la menace.
 
-#### <a name="view-reports-per-threat-tags"></a>Afficher les rapports par balise de menace
-Vous pouvez filtrer la liste des rapports sur les menaces et afficher les rapports les plus pertinents en fonction d’une balise de menace spécifique (catégorie) ou d’un type de rapport. 
-- **Balises de menace**: vous aident à afficher les rapports les plus pertinents en fonction d’une catégorie de menace spécifique. Par exemple, tous les rapports liés aux ransomware.
-- **Types de rapports**: vous aident à afficher les rapports les plus pertinents en fonction d’un type de rapport spécifique. Par exemple, tous les rapports qui couvrent les outils et les techniques. 
-- **Filtres**: vous aident à passer en revue efficacement la liste des rapports sur les menaces et à filtrer l’affichage en fonction d’une balise de menace ou d’un type de rapport spécifique. Par exemple, examinez tous les rapports sur les menaces liés à la catégorie de ransomware ou les rapports sur les menaces qui couvrent les vulnérabilités.
-
-##### <a name="how-does-it-work"></a>Comment cela fonctionne-t-il ?
-L’équipe Microsoft Threat Intelligence a ajouté des balises de menace à chaque rapport sur les menaces :
-- Quatre balises de menace sont désormais disponibles :
-  - Ransomware
-  - Hameçonnage
-  - Vulnérabilité
-  - Groupe d’activités
-- Les balises de menace sont présentées en haut de la page d’analyse des menaces, avec des compteurs pour le nombre de rapports disponibles sous chaque balise.
-    ![balises de menace](../../media/threat-analytics/ta-threattags-mtp.png)
-- La liste peut également être triée par balises de menace :   ![ listes](../../media/threat-analytics//ta-taglist-mtp.png)
-- Les filtres sont disponibles par balise de menace et type de rapport :   ![ filtres](../../media/threat-analytics/ta-threattag-filters-mtp.png)
-
 ### <a name="analyst-report-get-expert-insight-from-microsoft-security-researchers"></a>Rapport d’analyste : obtenir des informations d’expert de la part de chercheurs en sécurité Microsoft
 Dans la section **Rapport d’analyste,** lisez l’écriture détaillée de l’expert. La plupart des rapports fournissent des descriptions détaillées des chaînes d’attaques, notamment des tactiques et des [](advanced-hunting-overview.md) techniques mappées à l’infrastructure CK MITRE ATT&, des listes exhaustives de recommandations et de puissants conseils de recherche de menaces.
 
@@ -173,7 +155,7 @@ Dans la section **Atténuations,** examinez la liste des recommandations actionn
   - Protection des applications potentiellement indésirables (PUA)
   - Protection en temps réel
  
-Les informations d’atténuation de cette section intègrent des données de [Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), qui fournissent également des informations détaillées d’analyse à partir de différents liens dans le rapport.
+Les informations d’atténuation de cette section intègrent des données de [Gestion des menaces et des vulnérabilités](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), qui fournit également des informations détaillées sur l’analyse à partir de différents liens du rapport.
 
 ![Image de la section atténuations d’un rapport d’analyse des menaces affichant les détails de la configuration sécurisée Image de la section atténuations d’un rapport d’analyse des menaces affichant les détails de ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ la vulnérabilité](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -182,7 +164,7 @@ _Section Atténuations d’un rapport d’analyse des menaces_
 
 ## <a name="additional-report-details-and-limitations"></a>Détails et limitations supplémentaires du rapport
 >[!NOTE]
->Dans le cadre de l’expérience de sécurité unifiée, l’analyse des menaces est désormais disponible non seulement pour Microsoft Defender pour le point de terminaison, mais également pour Microsoft Defender pour les titulaires de licence Office E5.
+>Dans le cadre de l’expérience de sécurité unifiée, l’analyse des menaces est désormais disponible non seulement pour Microsoft Defender pour le point de terminaison, mais également pour les titulaires de licences Microsoft Defender Office E5.
 >Si vous n’utilisez pas le portail de sécurité Microsoft 365 (Microsoft 365 Defender), vous pouvez également voir les détails du rapport (sans les données De Microsoft Defender pour Office) dans le portail Centre de sécurité Microsoft Defender (Microsoft Defender pour point de terminaison). 
 
 Pour accéder au rapport d’analyse des menaces, vous avez besoin de certains rôles et autorisations. Pour [plus d’informations,](custom-roles.md) voir Rôles personnalisés dans le contrôle d’accès basé sur Microsoft 365 Defender rôle.

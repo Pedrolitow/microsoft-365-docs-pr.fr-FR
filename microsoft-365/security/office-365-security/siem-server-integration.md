@@ -18,12 +18,12 @@ ms.custom:
 description: Obtenir une vue d’ensemble de l’intégration du serveur SIEM (Security Information and Event Management) à vos applications et services cloud Microsoft 365 de sécurité
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: ea4d844595aaab8d8148666430187edef463b92e
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929790"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105595"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Intégration de serveurs SIEM (Security Information and Event Management) avec Microsoft 365 services et applications
 
@@ -46,12 +46,13 @@ Votre organisation utilise-t-elle ou prévoit-elle d’obtenir un serveur SIEM (
 La nécessité d’un serveur SIEM dépend de nombreux facteurs, tels que les exigences de sécurité de votre organisation et l’emplacement où résident vos données. Microsoft 365 inclut un large éventail de fonctionnalités de sécurité qui répondent aux besoins de sécurité de nombreuses organisations sans serveurs supplémentaires, tels qu’un serveur SIEM. Certaines organisations ont des circonstances particulières qui nécessitent l’utilisation d’un serveur SIEM. Voici quelques exemples :
 
 - *Fabrikam possède* du contenu et des applications sur site, et d’autres dans le cloud (ils disposent d’un déploiement cloud hybride). Pour obtenir des rapports de sécurité sur l’ensemble de son contenu et de ses applications, Fabrikam a implémenté un serveur SIEM.
-
 - *Contoso est* une organisation de services financiers qui a des exigences de sécurité particulièrement strictes. Ils ont ajouté un serveur SIEM à leur environnement pour tirer parti de la protection de sécurité supplémentaire dont ils ont besoin.
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>Intégration de serveur SIEM à Microsoft 365
 
 Un serveur SIEM peut recevoir des données à partir d’un large éventail Microsoft 365 services et applications. Le tableau suivant répertorie Microsoft 365 services et applications, ainsi que des ressources et des entrées serveur SIEM pour en savoir plus.
+
+<br>
 
 ****
 
@@ -69,8 +70,7 @@ Un serveur SIEM peut recevoir des données à partir d’un large éventail Micr
 
 Assurez-vous que la journalisation d’audit est allumée avant de configurer l’intégration de serveur SIEM.
 
-- Pour SharePoint Online, OneDrive Entreprise et Azure Active Directory, la journalisation d’audit est Microsoft 365 [le portail Defender.](../../compliance/turn-audit-log-search-on-or-off.md)
-
+- Pour SharePoint online, OneDrive Entreprise et Azure Active Directory, voir Activer [ou désactiver l’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
 - Pour plus Exchange Online, voir [Gérer l’audit de boîte aux lettres.](../../compliance/enable-mailbox-auditing.md)
 
 ## <a name="more-resources"></a>Plus de ressources

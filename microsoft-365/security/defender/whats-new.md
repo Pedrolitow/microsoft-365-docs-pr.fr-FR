@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 21f6947074f6a14e6ed1af3968ee94e403f0d0cd
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 0068d5aeef1289d8775dcefd0b4f60cb8f8ed0de
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096815"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105403"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -38,8 +38,12 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>Juin 2021
-- Balises de menace dans [Microsoft 365 Defender rapport d’analyse des menaces](threat-analytics.md) <br> Les balises de menace vous aident à vous concentrer sur des catégories de menaces spécifiques et à examiner les rapports les plus pertinents. 
+
+## <a name="may-2021"></a>Mai 2021
+
+- [Nouvelle page d’alerte dans le portail Microsoft 365 Defender web](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243) <br> Fournit des informations améliorées pour le contexte d’une attaque. Vous pouvez voir quelle autre alerte déclenchée a provoqué l’alerte actuelle, ainsi que toutes les entités et activités concernées par l’attaque, y compris les fichiers, les utilisateurs et les boîtes aux lettres. Pour [plus d’informations, voir](/microsoft-365/security/defender/investigate-alerts) Examiner les alertes.
+- [Graphique de tendance pour les incidents et les alertes dans le portail Microsoft 365 Defender web](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425) <br> Déterminez s’il existe plusieurs alertes pour un incident unique ou si votre organisation fait l’objet d’attaques avec plusieurs incidents différents. Pour plus [d’informations, voir](/microsoft-365/security/defender/incident-queue) Hiérarchiser les incidents.
+
 
 ## <a name="april-2021"></a>Avril 2021
 - Microsoft 365 Defender<br> Le portail [d’Microsoft 365 Defender](https://security.microsoft.com) amélioré est désormais disponible. Cette nouvelle expérience regroupe Defender pour point de terminaison, Defender pour Office 365, Defender pour identité et bien plus encore dans un portail unique. Il s’agit du nouvel accueil pour gérer vos contrôles de sécurité. [Découvrir les nouveautés](./overview-security-center.md).
@@ -50,7 +54,7 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 ## <a name="march-2021"></a>Mars 2021
 - [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Trouvez des informations sur les événements dans différents services et applications cloud couverts par Microsoft Cloud App Security. Ce tableau inclut également des informations précédemment disponibles dans `AppFileEvents` .
 ## <a name="february-2021"></a>Février 2021
-- (Aperçu) Le centre [de sécurité Microsoft 365 https://security.microsoft.com) amélioré (est](https://security.microsoft.com) désormais disponible en prévisualisation publique). Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
+- (Aperçu) Le centre [de sécurité Microsoft 365 https://security.microsoft.com) amélioré (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
 
 ## <a name="september-2020"></a>Septembre 2020
 - [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancé couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
@@ -62,9 +66,9 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 - [Accédez à la recherche](advanced-hunting-go-hunt.md)<br> Faites rapidement pivoter de l’investigation d’un incident à l’inspection d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entités sur le chasse avancée.
 
 ## <a name="june-2020"></a>Juin 2020
-- Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc., directement dans le tableau de bord.
+- Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc. directement dans le tableau de bord.
 - [Table de schéma EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporez des informations sur les actions de post-remise prises sur les messages électroniques dans vos requêtes de recherche avancées.
-- [Inspecter les enregistrements dans le recherche avancée](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
+- [Inspecter les enregistrements dans le hunting avancé](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
 
 ## <a name="may-2020"></a>Mai 2020
 - [Détections personnalisées](custom-detections-overview.md) <br> Utilisez des requêtes de repérage avancé pour créer des règles de détection personnalisées qui surveillent automatiquement les événements de sécurité et les états système et y répondent.

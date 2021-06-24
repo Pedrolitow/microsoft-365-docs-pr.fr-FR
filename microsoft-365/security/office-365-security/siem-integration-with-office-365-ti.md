@@ -19,12 +19,12 @@ description: Intégrez le serveur SIEM de votre organisation à Microsoft Defend
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3d6bbacb4a64060ecd03cbb28eee3256f41827e
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e11d1e64b7c8c3b9d5b93516fe05aed3d5937290
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929778"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105631"
 ---
 # <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Intégration DE SIEM à Microsoft Defender pour Office 365
 
@@ -41,12 +41,11 @@ Si votre organisation utilise un serveur SIEM (Security Information and Event Ma
 L’intégration SIEM vous permet d’afficher des informations, telles que des programmes malveillants ou des hameçonnages détectés par Microsoft Defender pour Office 365, dans vos rapports de serveur SIEM.
 
 - Pour voir un exemple d’intégration SIEM avec Microsoft Defender pour Office 365, consultez le blog Tech Community : Améliorer l’efficacité de votre SOC avec Defender pour Office 365 et l’API de gestion [O365.](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)
-
 - Pour en savoir plus sur les API Office 365 gestion des Office 365, consultez la vue [d’ensemble des API de gestion des Office 365.](/office/office-365-management-api/office-365-management-apis-overview)
 
 ## <a name="how-siem-integration-works"></a>Fonctionnement de l’intégration SIEM
 
-L’API Office 365 gestion des activités récupère des informations sur les actions et événements des utilisateurs, des administrateurs, du système et des stratégies à partir des journaux d’activité Microsoft 365 et Azure Active Directory de votre organisation. Si votre organisation dispose de Microsoft Defender pour Office 365 Plan 1 ou 2, ou Office 365 E5, vous pouvez utiliser le [schéma Microsoft Defender pour Office 365.](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)
+L’API Office 365 gestion des activités récupère des informations sur les actions et événements des utilisateurs, des administrateurs, du système et des stratégies à partir des journaux d’activité Microsoft 365 et Azure Active Directory de votre organisation. Si votre organisation dispose de Microsoft Defender pour Office 365 Plan 1 ou 2, ou Office 365 E5, vous pouvez utiliser [microsoft Defender pour Office 365 schéma](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema).
 
 Récemment, des événements provenant de fonctionnalités d’investigation et de réponse automatisées dans Microsoft Defender pour [Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) ont été ajoutés à l’API activité Office 365 gestion automatisée. En plus d’inclure des données sur les détails d’investigation principaux tels que l’ID, le nom et l’état, l’API contient également des informations de haut niveau sur les actions d’investigation et les entités.
 
@@ -58,16 +57,20 @@ Le serveur SIEM ou un autre système similaire sonde la charge de travail **audi
 
 Le tableau suivant récapitule les valeurs **d’AuditLogRecordType** qui sont pertinentes pour Microsoft Defender pour Office 365 événements :
 
+<br>
+
+****
+
 |Valeur|Nom du membre|Description|
 |---|---|---|
 |28|ThreatIntelligence|Événements de hameçonnage et de programmes malveillants depuis Exchange Online Protection et Microsoft Defender pour Office 365.|
-|41|ThreatIntelligenceUrl|Événements de remplacement de la durée de blocage et du blocage des liens sécurisés à partir de Microsoft Defender Office 365.|
+|41|ThreatIntelligenceUrl|Coffre Lie les événements de remplacement d’heure de bloc et de bloc à partir de Microsoft Defender Office 365.|
 |47|ThreatIntelligenceAtpContent|Événements de hameçonnage et de programmes malveillants pour les fichiers dans SharePoint Online, OneDrive Entreprise et Microsoft Teams, à partir de Microsoft Defender pour Office 365.|
 |64|AirInvestigation|Événements d’investigation et de réponse automatisés, tels que les détails de l’enquête et les artefacts pertinents, de Microsoft Defender pour Office 365 Plan 2.|
 |
 
 > [!IMPORTANT]
-> Vous devez être administrateur général ou avoir le rôle d’administrateur de sécurité attribué au portail Microsoft 365 Defender pour configurer l’intégration SIEM avec Microsoft Defender pour Office 365.
+> Vous devez être administrateur général ou avoir le rôle Administrateur de la sécurité attribué dans le portail Microsoft 365 Defender pour configurer l’intégration SIEM avec Microsoft Defender pour Office 365. Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 >
 > La journalisation d’audit doit être désactivée pour Microsoft 365 environnement de travail. Pour obtenir de l’aide, voir Activer ou désactiver la recherche dans le journal [d’audit.](../../compliance/turn-audit-log-search-on-or-off.md)
 

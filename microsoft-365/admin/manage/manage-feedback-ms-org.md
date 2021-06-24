@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Gérez les commentaires que vos utilisateurs peuvent envoyer à Microsoft concernant les produits Microsoft.
-ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 990ae811145d9586307cd3181724866198063a1b
+ms.sourcegitcommit: ccbdf2638fc6646bfb89450169953f4c3ce4b9b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52840669"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105295"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Gérer les commentaires de Microsoft pour votre organisation
 
-En tant qu’administrateur d’une organisation Microsoft 365, il existe désormais plusieurs stratégies pour vous aider à gérer la collecte de commentaires et l’expérience d’engagement client de vos utilisateurs lors de l’utilisation d Microsoft 365 applications. Vous pouvez créer et utiliser des groupes Azure Active Directory existants dans votre organisation pour chacune de ces stratégies. Grâce à ces politiques, vous pouvez contrôler la façon dont les différents services de votre organisation peuvent envoyer des commentaires à Microsoft. Microsoft examine tous les commentaires envoyés par les clients et utilise ces commentaires pour améliorer le produit. La conservation des expériences **de** commentaires vous permet de voir ce que vos utilisateurs pensent des produits Microsoft qu’ils utilisent. Les commentaires que nous collectons auprès de vos utilisateurs seront bientôt disponibles dans Microsoft 365'administration centrale.
+En tant qu’administrateur d’une organisation Microsoft 365, il existe désormais plusieurs stratégies pour vous aider à gérer la collecte de commentaires et l’expérience d’engagement client de vos utilisateurs lors de l’utilisation d Microsoft 365 applications. Vous pouvez créer et utiliser des groupes Azure Active Directory existants dans votre organisation pour chacune de ces stratégies. Grâce à ces politiques, vous pouvez contrôler la façon dont les différents services de votre organisation peuvent envoyer des commentaires à Microsoft. Microsoft examine tous les commentaires envoyés par les clients et utilise ces commentaires pour améliorer le produit. La conservation des  expériences de commentaires vous permet de voir ce que vos utilisateurs pensent des produits Microsoft qu’ils utilisent. Les commentaires que nous collectons auprès de vos utilisateurs seront bientôt disponibles dans le Centre d’administration Microsoft 365.
 
 Pour en savoir plus sur les types de commentaires et sur la façon dont Microsoft utilise les commentaires des utilisateurs, voir En savoir plus sur les commentaires [de Microsoft pour votre organisation.](../misc/feedback-user-control.md)
 
@@ -70,7 +70,7 @@ Vos appareils doivent avoir un numéro de build minimal pour utiliser ces strat�
 |Commentaires sur le produit|Au moins 16.0.13328|Au moins 2,42|Au moins 16.0.13328|Au moins 16,42|Disponible publiquement|
 |Enquêtes sur le produit|Au moins 16.0.13328|Au moins 2,42|Au moins 16.0.13426|Au moins 16,42|Déploiement en attente|
 |Collection de métadonnées|Au moins 16.0.13328|Au moins 2,42|Au moins 16.0.13328|Au moins 16,42|Disponible publiquement|
-|Engagement du client|Au moins 16.0.13328|Au moins 2,42|Au moins 16.0.13426|Au moins 16,42|Déploiement en attente|
+|Implication des clients|Au moins 16.0.13328|Au moins 2,42|Au moins 16.0.13426|Au moins 16,42|Déploiement en attente|
 
 ## <a name="specific-policies-you-can-configure"></a>Stratégies spécifiques que vous pouvez configurer
 
@@ -79,14 +79,14 @@ Vos appareils doivent avoir un numéro de build minimal pour utiliser ces strat�
 |**Nom de la stratégie**|**État par défaut**|**Résumé des contrôles**|
 |:-----|:-----|:-----|
 |Autoriser les utilisateurs à envoyer des commentaires à Microsoft|Activé|Contrôle les points d’entrée de commentaires entre les applications|
-|Autoriser les utilisateurs à recevoir et à répondre aux enquêtes dans le produit de Microsoft|Activé|Contrôle les invites d’enquête au sein du produit|
+|Autoriser les utilisateurs à recevoir et à répondre aux enquêtes in-product de Microsoft|Activé|Contrôle les invites d’enquête au sein du produit|
 |Autoriser les utilisateurs à inclure des captures d’écran et des pièces jointes lorsqu’ils envoient des commentaires à Microsoft|Désactivé|Détermine les métadonnées que l’utilisateur peut décider d’envoyer avec des commentaires/enquêtes|
 |Autoriser Microsoft à suivre les commentaires envoyés par les utilisateurs|Désactivé|Détermine si l’utilisateur peut partager des informations de contact avec des commentaires/enquêtes|
 |Autoriser les utilisateurs à inclure des fichiers journaux et des exemples de contenu lorsque les commentaires sont envoyés à Microsoft|Désactivé|Détermine les métadonnées que l’utilisateur peut décider d’envoyer avec des commentaires/enquêtes|
 
 ## <a name="configure-policies"></a>Configurer des stratégies
 
-1. Go to [https://config.office.com](https://config.office.com) and login as a user with global admin permissions.
+1. Allez à [https://config.office.com](https://config.office.com) et connectez-vous.
 1. Sélectionnez **Personnalisation,** puis **Gestion des stratégies.**
 1. Sélectionnez **Créer**.
 1. Entrez **le nom** et la **description.**
