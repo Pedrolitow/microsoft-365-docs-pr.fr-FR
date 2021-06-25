@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12c7609635d9140f2e8efda3f6f1397619ce4790
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e9aa3a72a36a146d121c9302a4b6cb126e765671
+ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929900"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53082779"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -40,21 +40,14 @@ ms.locfileid: "52929900"
 
 Contenu de cet article :
 
-- [Pourquoi DKIM est plus efficace que SPF seul pour empêcher l’usurpation d’identité malveillante](use-dkim-to-validate-outbound-email.md#HowDKIMWorks)
-
-- [Procédure de mise à niveau manuelle de vos clés 1024 bits vers les clés de chiffrement DKIM 2048 bits](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
-
-- [Étapes de la configuration manuelle de DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
-
-- [Étapes de configuration de DKIM pour plusieurs domaines personnalisés](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
-
-- [Désactivation de la stratégie de signature DKIM pour un domaine personnalisé](use-dkim-to-validate-outbound-email.md#DisableDKIMSigningPolicy)
-
-- [Comportement par défaut pour DKIM et Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)
-
+- [Pourquoi DKIM est plus efficace que SPF seul pour empêcher l’usurpation d’identité malveillante](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
+- [Procédure de mise à niveau manuelle de vos clés 1024 bits vers les clés de chiffrement DKIM 2048 bits](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
+- [Étapes de la configuration manuelle de DKIM](#steps-to-manually-set-up-dkim)
+- [Étapes de configuration de DKIM pour plusieurs domaines personnalisés](#to-configure-dkim-for-more-than-one-custom-domain)
+- [Désactivation de la stratégie de signature DKIM pour un domaine personnalisé](#disabling-the-dkim-signing-policy-for-a-custom-domain)
+- [Comportement par défaut pour DKIM et Microsoft 365](#default-behavior-for-dkim-and-microsoft-365)
 - Configuration de DKIM permettant à un service tiers d’envoyer des courriers électroniques au nom de votre domaine personnalisé, ou d’usurper ce dernier
-
-- [Étapes suivantes : après avoir configuré DKIM pour Microsoft 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
+- [Étapes suivantes : après avoir configuré DKIM pour Microsoft 365](#next-steps-after-you-set-up-dkim-for-microsoft-365)
 
 > [!NOTE]
 > Microsoft 365 configure automatiquement DKIM pour les domaines initiaux 'onmicrosoft.com'. Cela signifie que vous n’avez rien à faire pour configurer DKIM pour les noms de domaine initial (par exemple, litware.onmicrosoft.com). Pour plus d'informations sur les domaines, consultez l'article [Forum aux questions sur les domaines](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
@@ -71,15 +64,10 @@ DKIM vous permet d'ajouter une signature numérique aux e-mails sortants dans l'
  La configuration DKIM intégrée de Microsoft 365 est une couverture suffisante pour la plupart des clients. Cependant, vous devez configurer manuellement DKIM pour votre domaine personnalisé dans ces circonstances :
 
 - Vous avez plusieurs domaines personnalisés dans Microsoft 365
-
 - Vous allez également configurer DMARC (**recommandé**)
-
 - Vous souhaitez contrôler votre clé privée
-
 - Vous souhaitez personnaliser vos enregistrements CNAME
-
 - Vous souhaitez configurer des clés DKIM pour les e-mails provenant d’un domaine tiers, par exemple, si vous utilisez un programme d’envoi de courrier en nombre tiers.
-
 
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>Pourquoi DKIM est plus efficace que SPF seul pour empêcher l’usurpation d’identité malveillante
 <a name="HowDKIMWorks"> </a>
@@ -135,7 +123,6 @@ Pour obtenir des informations détaillées sur la syntaxe et les paramètres, co
 Pour configurer DKIM, suivez les étapes ci-dessous :
 
 - [Publication de deux enregistrements CNAME pour votre domaine personnalisé dans le système DNS](use-dkim-to-validate-outbound-email.md#Publish2CNAME)
-
 - [Activation de la signature DKIM pour votre domaine personnalisé](use-dkim-to-validate-outbound-email.md#EnableDKIMinO365)
 
 ### <a name="publish-two-cname-records-for-your-custom-domain-in-dns"></a>Publication de deux enregistrements CNAME pour votre domaine dans le système DNS
@@ -173,7 +160,6 @@ TTL:                3600
 Où :
 
 - Pour Microsoft 365, les sélecteurs seront toujours « selector1 » ou « selector2 ».
-
 - _domainGUID_ est identique à _domainGUID_ dans l'enregistrement MX personnalisé pour votre domaine personnalisé qui se trouve avant mail.protection.outlook.com. Par exemple, dans cet enregistrement MX pour le domaine contoso.com, l'élément  _domainGUID_ est contoso-com :
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
@@ -203,39 +189,42 @@ TTL:                3600
 > [!NOTE]
 > Il est important de créer le deuxième enregistrement, mais il est possible qu’un seul sélecteur soit disponible au moment de la création. Par essence, le deuxième sélecteur peut pointer vers une adresse qui n’a pas encore été créée. Nous vous recommandons de créer le deuxième enregistrement CNAME, car la rotation de votre clé sera transparente.
 
-
 ### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>Étapes d’activation de la signature DKIM pour votre domaine personnalisé
 <a name="EnableDKIMinO365"> </a>
 
 Une fois que vous avez publié les enregistrements CNAME dans le système DNS, vous pouvez activer la signature DKIM par l'intermédiaire de Microsoft 365. Vous pouvez effectuer cette action par le biais du centre d'administration Microsoft 365 ou à l'aide de PowerShell.
 
-#### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>Activation de la signature DKIM pour votre domaine personnalisé par l’intermédiaire du Centre d’administration
+#### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Pour activer la signature DKIM pour votre domaine personnalisé dans le portail Microsoft 365 Defender
 
-1. [Connectez-vous à Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) à l’aide de votre compte professionnel ou scolaire.
+1. Ouvrez le portail Microsoft 365 Defender [à l’aide de votre compte professionnel ou scolaire](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Allez [sur security.microsoft.com ](https://security.microsoft.com)et suivez le chemin ci-dessous..
+2. Accédez à la section **E-mail et collaboration** \> **Stratégies et règles** \> **Stratégies de menace** \> **Règles** \> **DKIM**. Ou, pour accéder directement à la page DKIM, utilisez <https://security.microsoft.com/dkimv2>.
 
-3. Sélectionnez **Email & Collaboration > Stratégies et règles > Stratégies de lutte contre les menaces > DKIM**.
+3. Dans la page **DKIM**, sélectionnez le domaine en cliquant sur le nom.
 
-4. Sélectionnez le domaine pour lequel vous souhaitez activer DKIM, puis pour **Signer les messages pour ce domaine avec des signatures DKIM**, choisissez **Activer**. Répétez cette étape pour chaque domaine personnalisé.
+4. Dans le menu volant des détails qui s’affiche, changez le paramètre **Signer les messages pour ce domaine avec des signatures DKIM** à **Activé** (![Basculer sur](../../media/scc-toggle-on.png))
+
+   Lorsque vous avez terminé, cliquez sur **Rotation des clés DKIM**.
+
+5. Répétez ces étapes pour chaque domaine personnalisé.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Activation de la signature DKIM pour votre domaine personnalisé à l’aide de PowerShell
 
 > [!IMPORTANT]
->:::image type="content" source="../../media/dkim.png" alt-text="Erreur « Aucune touche DKIM enregistrée pour ce domaine ».":::
-> Si vous configurez DKIM pour la première fois et que vous voyez l’erreur « Aucune clé DKIM enregistrée pour ce domaine ». effectuez la commande de l’étape 2, ci-dessous (par exemple, *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*) pour voir la clé.
+> :::image type="content" source="../../media/dkim.png" alt-text="Erreur « Aucune touche DKIM enregistrée pour ce domaine ».":::
+> Si vous configurez DKIM pour la première fois et que vous voyez l’erreur « Aucune clé DKIM enregistrée pour ce domaine », exécutez la commande à l’étape 2 ci-dessous (par exemple, `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`) pour afficher la clé.
 
 1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Exécutez la commande suivante :
+2. Utilisez la syntaxe suivante :
 
    ```powershell
-   Set-DkimSigningConfig -Identity <domain> -Enabled $true
+   Set-DkimSigningConfig -Identity <Domain> -Enabled $true
    ```
 
-   Où _domain_ est le nom du domaine personnalisé pour lequel vous souhaitez activer la signature DKIM.
+   \<Domain\> est le nom du domaine personnalisé pour lequel vous souhaitez activer la signature DKIM.
 
-   Par exemple, pour le domaine contoso.com :
+   Cet exemple permet d’activer la signature DKIM pour le domaine contoso.com :
 
    ```powershell
    Set-DkimSigningConfig -Identity contoso.com -Enabled $true
@@ -246,9 +235,7 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, v
 Patientez quelques minutes avant de suivre ces étapes permettant de confirmer que vous avez correctement configuré DKIM. Cela donne le temps aux informations DKIM relatives au domaine de se propager dans l’ensemble du réseau.
 
 - Envoyez un message à partir d’un compte au sein de votre domaine Microsoft 365 compatible avec DKIM à un autre compte de messagerie, tel qu’outlook.com ou Hotmail.com.
-
 - N’utilisez pas un compte aol.com à des fins de test. Il est possible qu’AOL ignore la vérification DKIM si la vérification SPF aboutit. Cela annule votre test.
-
 - Ouvrez le message et examinez l’en-tête. Les instructions pour afficher l’en-tête du message varient en fonction de votre client de messagerie. Pour obtenir des instructions sur l’affichage des en-têtes de messages dans Outlook, consultez l’article [Afficher des en-têtes de messages Internet dans Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
   Le message signé par DKIM contient le domaine et le nom d’hôte que vous avez définis lorsque vous avez publié les entrées CNAME. Le message se présente un peu comme cet exemple :
@@ -281,7 +268,7 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
 2. Exécutez l’une des commandes suivantes pour chaque domaine pour lequel vous souhaitez désactiver la signature DKIM.
 
    ```powershell
-   $p = Get-DkimSigningConfig -Identity <domain>
+   $p = Get-DkimSigningConfig -Identity <Domain>
    $p[0] | Set-DkimSigningConfig -Enabled $false
    ```
 
