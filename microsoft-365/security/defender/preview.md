@@ -20,32 +20,32 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8ad5ffe2b175a8f7a42b2fad353fcde13a60cfec
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b852071c3fbfe12aac62e1d309fa130a4cd81e9c
+ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730521"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53125397"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Fonctionnalités d’aperçu de Defender
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender fonctionnalités d’aperçu
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 > [!IMPORTANT]
 > Les versions d’aperçu sont fournies sans contrat de niveau de service et ne sont pas recommandées pour les charges de travail de production. Certaines fonctionnalités peuvent ne pas être pris en charge ou avoir des fonctionnalités contraintes.
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 Le service Microsoft 365 Defender est constamment mis à jour pour inclure de nouvelles améliorations et fonctionnalités.
 
-Découvrez les nouvelles fonctionnalités de la version Microsoft 365 La version préliminaire de Defender et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013 en 2013.
+Découvrez les nouvelles fonctionnalités de la Microsoft 365 Defender prévisualisation et soyez parmi les premiers à essayer les fonctionnalités à venir en 2013.
 
-Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir Nouveautés de [Microsoft 365 Defender.](whats-new.md)
+Pour plus d’informations sur les nouvelles fonctionnalités généralement disponibles, voir [Nouveautés](whats-new.md)de Microsoft 365 Defender .
 
 ## <a name="required-permissions"></a>Autorisations requises
 
-Les comptes affectés aux rôles Azure Active Directory (Azure AD) peuvent activer les fonctionnalités Microsoft 365 Defender Preview :
+Les comptes affectés aux rôles Azure Active Directory (Azure AD) peuvent activer Microsoft 365 Defender fonctionnalités d’aperçu :
 
 - Administrateur général
 - Administrateur de sécurité
@@ -58,7 +58,7 @@ Vous aurez accès aux fonctionnalités à venir sur qui vous pourrez nous faire 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
 1. Dans le volet de navigation, sélectionnez **Paramètres**.
-2. Sélectionnez **Microsoft 365 Defender.**
+2. Sélectionnez **Microsoft 365 Defender**.
 3. Sélectionnez **Fonctionnalités d’aperçu** > **Activer les fonctionnalités d’aperçu**. 
 4. Sélectionnez **Enregistrer**.
 
@@ -68,8 +68,9 @@ Vous savez que vous avez activé les fonctionnalités d’aperçu lorsque la cas
 
 Les fonctionnalités et améliorations suivantes sont actuellement disponibles en mode aperçu :
 
-- **[API de diffusion](../defender-endpoint/raw-data-export.md)** en continu : Microsoft 365 Defender prend en charge la diffusion en continu de tous les événements disponibles via la recherche avancée vers un hub d’événements et/ou un compte de stockage Azure.
-- **[Microsoft 365 API Defender](api-overview.md)** : les API Microsoft 365 Defender de niveau supérieur vous permettent d’automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées. 
-- **[Prendre des mesures dans le hunting avancé](advanced-hunting-take-action.md)** - Contenir rapidement des menaces ou traiter les ressources compromises que vous trouvez dans le hunting [avancé](advanced-hunting-overview.md).
-- **[Référence de schéma dans](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** le portail : obtenez des informations sur les tableaux de schéma de recherche avancés directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
+- **[Afficher les rapports par balise de menace](threat-analytics.md#view-reports-per-threat-tags)** : les balises de menace vous aident à vous concentrer sur des catégories de menaces spécifiques et à examiner les rapports les plus pertinents.
+- **[API de diffusion](../defender-endpoint/raw-data-export.md)** en continu : Microsoft 365 Defender prend en charge la diffusion en continu de tous les événements disponibles via le service de recherche avancée vers un hub d’événements et/ou un compte de stockage Azure.
+- **[Microsoft 365 Defender API](api-overview.md)** : les API de Microsoft 365 Defender de niveau supérieur vous permettent d’automatiser les flux de travail en fonction de l’incident partagé et des tables de recherche avancées. 
+- **[Prendre des mesures dans le hunting avancé](advanced-hunting-take-action.md)** : contenir rapidement des menaces ou traiter les ressources compromises que vous trouvez dans le hunting [avancé](advanced-hunting-overview.md).
+- **[Référence de schéma dans](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** le portail : obtenez des informations sur les tables de schéma de recherche avancée directement dans le centre de sécurité. Outre les descriptions de tableau et de colonne, cette référence inclut les types d’événements pris en charge (valeurs) et `ActionType` les exemples de requêtes.
 - **[Fonction DeviceFromIP()](advanced-hunting-devicefromip-function.md)** : obtenir des informations sur les appareils qui ont été affectés à une ou plusieurs adresses IP spécifiques à une plage de temps donnée.
