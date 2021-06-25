@@ -17,12 +17,12 @@ ms.collection:
 description: Découvrez comment les pools de remise sont utilisés pour protéger la réputation des serveurs de messagerie dans Microsoft 365 centres de données.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 85f200cf226a050762db4ea37255f71241d1f98c
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599910"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137717"
 ---
 # <a name="outbound-delivery-pools"></a>Pools de livraison sortante
 
@@ -47,7 +47,7 @@ La possibilité très réelle que les adresses IP du pool de remise à risque é
 Pour plus d’informations, voir [Contrôler le courrier indésirable sortant.](outbound-spam-controls.md)
 
 > [!NOTE]
-> Les messages pour lequel le domaine de messagerie source n’a pas d’enregistrement A et aucun enregistrement MX défini dans le DNS public sont toujours acheminés via le pool de remise à risque élevé, quel que soit leur courrier indésirable ou leur disposition de limite d’envoi.
+> Les messages dans lequel le domaine de messagerie source n’a pas d’enregistrement A et aucun enregistrement MX défini dans le DNS public sont toujours acheminés via le pool de remise à risque élevé, quel que soit leur courrier indésirable ou leur disposition de limite d’envoi.
 
 ### <a name="bounce-messages"></a>Messages de non-rebond
 
@@ -61,3 +61,24 @@ Les causes possibles d’une augmentation des NDR sont les suivantes :
 - Un serveur de messagerie non fiable.
 
 Tous ces problèmes peuvent entraîner une augmentation soudaine du nombre de NDR traitées par le service. De nombreuses fois, ces NDR semblent être du courrier indésirable pour d’autres serveurs et services de messagerie (également appelé _[backscatter).](backscatter-messages-and-eop.md)_
+
+
+### <a name="relay-pool"></a>Pool de relais
+
+Les messages qui sont transmis ou relayés via Microsoft 365 dans certains scénarios sont envoyés à l’aide d’un pool de relais spécial, car la destination ne doit pas considérer Microsoft 365 comme l’expéditeur réel. Il est important pour nous d’isoler ce trafic de messagerie, car il existe des scénarios légitimes et non valides pour le transport automatique ou le relais de messages électroniques en dehors de Microsoft 365. Comme pour le pool de remise à risque élevé, un pool d’adresses IP distinct est utilisé pour le courrier relayé. Ce pool d’adresses n’est pas publié car il peut changer souvent et ne fait pas partie de l’enregistrement SPF publié pour Microsoft 365.
+
+Microsoft 365 doit vérifier que l’expéditeur d’origine est légitime afin de pouvoir remettre en toute confiance le message transmis.
+
+Le message transmis/relayé doit répondre à l’un des critères suivants pour éviter d’utiliser le pool de relais :
+
+- L’expéditeur sortant se trouve dans [un domaine accepté.](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+- SPF passe lorsque le message s’Microsoft 365.
+- DKIM sur le domaine de l’expéditeur est passé lorsque le message arrive Microsoft 365.
+ 
+Vous pouvez savoir qu’un message a été envoyé via le pool de relais en regardant l’adresse IP du serveur sortant (le pool de relais sera compris dans la plage 40.95.0.0/16) ou en regardant le nom du serveur sortant (le nom du pool de relais sera « rly »).
+
+Dans les cas où nous pouvons authentifier l’expéditeur, nous utilisons le schéma de réécriture de l’expéditeur (SRS) pour aider le système de messagerie du destinataire à savoir que le message transmis est issu d’une source fiable. Vous pouvez en savoir plus sur le fonctionnement et ce que vous pouvez faire pour vous assurer que le domaine d’envoi passe l’authentification dans le schéma de réécriture d’expéditeurs [(SRS) dans Office 365](/office365/troubleshoot/antispam/sender-rewriting-scheme).
+
+Pour que DKIM fonctionne, veillez à activer DKIM pour l’envoi du domaine. Par exemple, fabrikam.com fait partie de contoso.com et est défini dans les domaines acceptés de l’organisation. Si l’expéditeur du message sender@fabrikam.com, DKIM doit être activé pour fabrikam.com. vous pouvez découvrir comment activer l’utilisation de DKIM pour valider les messages sortants [envoyés à partir de votre domaine personnalisé.](use-dkim-to-validate-outbound-email.md)
+
+Pour ajouter un domaine personnalisé, suivez les étapes de [l’étape Ajouter un](../../admin/setup/add-domain.md)domaine à Microsoft 365 .

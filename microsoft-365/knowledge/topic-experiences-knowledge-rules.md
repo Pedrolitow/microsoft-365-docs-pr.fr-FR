@@ -10,20 +10,20 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment administrer la visibilité des rubriques dans les rubriques microsoft.
-ms.openlocfilehash: cd6a712687a63c3d131ee678c6c408f516c7b529
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 07679b2de668ba5e0c9fdf206310233ce7af84a4
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107666"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137750"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>Gérer la visibilité des rubriques dans les rubriques microsoft
 
-Vous pouvez gérer l’ensemble des utilisateurs qui peuvent voir les points forts de la rubrique, les cartes de rubrique et le centre de rubriques [dans le centre d Microsoft 365'administration.](https://admin.microsoft.com) Vous devez être administrateur général ou administrateur SharePoint pour effectuer ces tâches.
+Vous pouvez gérer les personnes qui peuvent voir les points forts des rubriques, les cartes de rubrique et le centre de rubriques [dans le Centre d’administration Microsoft 365](https://admin.microsoft.com). Vous devez être administrateur général ou administrateur SharePoint et administrateur de groupes pour effectuer ces tâches.
 
 ## <a name="to-access-topics-management-settings"></a>Pour accéder aux paramètres de gestion des rubriques :
 
-1. Dans le Microsoft 365 d’administration, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
+1. Dans la Centre d’administration Microsoft 365, cliquez **sur Paramètres,** puis sur **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** cliquez sur **Expériences de rubrique.**
 
     ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 

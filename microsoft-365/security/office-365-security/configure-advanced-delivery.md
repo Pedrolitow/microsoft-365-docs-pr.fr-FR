@@ -17,12 +17,12 @@ ms.custom: ''
 description: Les administrateurs peuvent apprendre à utiliser la stratégie de remise avancée dans Exchange Online Protection (EOP) pour identifier les messages qui ne doivent pas être filtrés dans des scénarios pris en charge spécifiques (simulations de hameçonnage tiers et messages remis à des boîtes aux lettres d’opérations de sécurité (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 819f78883aa75fbbdded2e47c1bb85945f080233
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 01d35c1f0c7abc7b6ce34fc9c2ec4d5fd5b228ae
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108402"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137738"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurer la remise de simulations de hameçonnage tiers aux utilisateurs et de messages non filtrés dans des boîtes aux lettres SecOps
 
@@ -64,8 +64,10 @@ Les messages identifiés par la stratégie de remise avancée ne sont pas des me
 
 - Vous ouvrez le Portail Microsoft 365 Defender sur <https://security.microsoft.com>. Pour aller directement à la page **de remise avancée,** ouvrez <https://security.microsoft.com/advanceddelivery> .
 
+- Pour vous connecter à Exchange Online PowerShell, voir [Connexion à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+
 - Des autorisations doivent vous être attribuées avant de pouvoir suivre les procédures de cet article :
-  - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie  de remise avancée, vous devez être membre du  groupe de rôles Administrateur de la sécurité dans le portail **Microsoft 365 Defender** et membre du groupe de rôles Gestion de l’organisation **dans Exchange Online**.  
+  - Pour créer, modifier ou supprimer des paramètres configurés dans la stratégie  de remise avancée, vous devez être membre du  groupe de rôles Administrateur de la sécurité dans le portail **Microsoft 365 Defender** et membre du groupe de rôles Gestion de l’organisation **dans Exchange Online**.
   - Pour un accès en lecture seule à la stratégie de  remise  avancée, vous devez être membre des groupes de rôles Lecteur global ou Lecteur de sécurité.
 
   Pour plus d’informations, [voir Autorisations dans le portail Microsoft 365 Defender et](permissions-microsoft-365-security-center.md) [autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo).
@@ -122,8 +124,286 @@ Les entrées de simulation de hameçonnage tierces que vous avez configurées so
 
 Outre les deux scénarios que la stratégie de remise avancée peut vous aider, il existe d’autres scénarios qui peuvent nécessiter que vous contourniez le filtrage :
 
-- **Filtres tiers**: si l’enregistrement MX de votre domaine ne pointe pas vers Office 365 (les messages sont d’abord acheminés [ailleurs),](secure-by-default.md) la sécurité par défaut *n’est* *pas disponible.*
-
-  Pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers, utilisez des règles de flux de messagerie (également appelées règles de transport). Pour plus d’informations, voir [Utiliser des règles de flux de messagerie pour définir le SCL dans les messages.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
+- **Filtres tiers**: si l’enregistrement MX de votre domaine ne pointe pas vers Office 365 (les messages sont d’abord acheminés [ailleurs),](secure-by-default.md) la sécurité par défaut *n’est* *pas disponible.* Si vous souhaitez ajouter une protection, vous devez activer le filtrage amélioré pour les connecteurs (également appelé ignorer la *liste).* Pour plus d’informations, voir [Gérer le flux de messagerie](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud)à l’aide d’un service cloud tiers Exchange Online . Si vous ne souhaitez pas que le filtrage amélioré pour les connecteurs soit utilisé, utilisez des règles de flux de messagerie (également appelées règles de transport) pour contourner le filtrage Microsoft pour les messages qui ont déjà été évalués par un filtrage tiers. Pour plus d’informations, voir [Utiliser des règles de flux de messagerie pour définir le SCL dans les messages.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 
 - **Faux positifs** en cours d’examen : vous souhaitez peut-être autoriser temporairement certains messages en cours d’analyse par Microsoft via des [envois](admin-submission.md) d’administrateur à signaler les messages de bonne qualité connus qui sont marqués à tort comme incorrects pour Microsoft (faux positifs). Comme pour toutes les substitutions, il est **_vivement_** recommandé que ces allocations soient temporaires.
+
+## <a name="exchange-online-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>Exchange Online Procédures PowerShell pour les boîtes aux lettres SecOps dans la stratégie de remise avancée
+
+Dans Exchange Online PowerShell, les éléments de base des boîtes aux lettres SecOps dans la stratégie de remise avancée sont :
+
+- Stratégie de remplacement **SecOps**: contrôlée par les cmdlets **\* -SecOpsOverridePolicy.**
+- **Règle de remplacement SecOps**: contrôlée par les cmdlets **\* -SecOpsOverrideRule.**
+
+Ce comportement a les résultats suivants :
+
+- Vous créez d’abord la stratégie, puis la règle qui identifie la stratégie à qui la règle s’applique.
+- Lorsque vous supprimez une stratégie de PowerShell, la règle correspondante est également supprimée.
+- Lorsque vous supprimez une règle de PowerShell, la stratégie correspondante n’est pas supprimée. Vous devez supprimer manuellement la stratégie correspondante.
+
+### <a name="use-powershell-to-configure-secops-mailboxes"></a>Utiliser PowerShell pour configurer des boîtes aux lettres SecOps
+
+La configuration d’une boîte aux lettres SecOps dans la stratégie de remise avancée dans PowerShell est un processus en deux étapes :
+
+1. Créez la stratégie de remplacement SecOps.
+2. Créez la règle de remplacement SecOps qui spécifie la stratégie à qui la règle s’applique.
+
+#### <a name="step-1-use-powershell-to-create-the-secops-override-policy"></a>Étape 1 : Utiliser PowerShell pour créer la stratégie de remplacement SecOps
+
+Pour créer la stratégie de remplacement SecOps, utilisez la syntaxe suivante :
+
+```powershell
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
+```
+
+**Remarque**: quelle que soit la valeur de nom que vous spécifiez, le nom de la stratégie sera SecOpsOverridePolicy. Vous pouvez donc également utiliser cette valeur.
+
+Cet exemple crée la stratégie de boîte aux lettres SecOps.
+
+```powershell
+New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SendTo secops@contoso.com
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-SecOpsOverridePolicy](/powershell/module/exchange/new-secopsoverridepolicy).
+
+#### <a name="step-2-use-powershell-to-create-the-secops-override-rule"></a>Étape 2 : Utiliser PowerShell pour créer la règle de remplacement SecOps
+
+Cet exemple crée la règle de boîte aux lettres SecOps avec les paramètres spécifiés.
+
+```powershell
+New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
+```
+
+**Remarque**: **Quelle que soit la valeur de nom que vous spécifiez, le nom de la règle sera SecOpsOverrideRule, où est une valeur \<GUID\> GUID unique \<GUID\> (par exemple, 6fed4b63-3563-495d-a481-b24a311f8329).
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-SecOpsOverrideRule](/powershell/module/exchange/new-secopsoverriderule).
+
+### <a name="use-powershell-to-view-the-secops-override-policy"></a>Utiliser PowerShell pour afficher la stratégie de remplacement SecOps
+
+Cet exemple renvoie des informations détaillées sur la seule stratégie de boîte aux lettres SecOps.
+
+```powershell
+Get-SecOpsOverridePolicy
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SecOpsOverridePolicy](/powershell/module/exchange/get-secopsoverridepolicy).
+
+### <a name="use-powershell-to-view-secops-override-rules"></a>Utiliser PowerShell pour afficher les règles de remplacement SecOps
+
+Cet exemple renvoie des informations détaillées sur les règles de remplacement SecOps.
+
+```powershell
+Get-SecOpsOverrideRule
+```
+
+Bien que la commande précédente ne retourne qu’une seule règle, toutes les règles en attente de suppression peuvent également être incluses dans les résultats.
+
+Cet exemple identifie la règle valide (une) et toutes les règles non valides.
+
+```powershell
+Get-SecOpsOverrideRule | Format-Table Name,Mode
+```
+
+Après avoir identifié les règles non valides, vous pouvez les supprimer à l’aide de l’cmdlet **Remove-SecOpsOverrideRule,** comme décrit plus loin [dans cet article.](#use-powershell-to-remove-secops-override-rules)
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, [voir Get-SecOpsOverrideRule](/powershell/module/exchange/get-secopsoverriderule)
+
+### <a name="use-powershell-to-modify-the-secops-override-policy"></a>Utiliser PowerShell pour modifier la stratégie de remplacement SecOps
+
+Pour modifier la stratégie de remplacement SecOps, utilisez la syntaxe suivante :
+
+```powershell
+Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
+```
+
+Cet exemple ajoute secops2@contoso.com la stratégie de remplacement SecOps.
+
+```powershell
+Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@contoso.com
+```
+
+**Remarque**: s’il existe une règle de remplacement SecOps associée valide, les adresses de messagerie de la règle sont également mises à jour.
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-SecOpsOverridePolicy](/powershell/module/exchange/set-secopsoverridepolicy).
+
+### <a name="use-powershell-to-modify-a-secops-override-rule"></a>Utiliser PowerShell pour modifier une règle de remplacement SecOps
+
+La cmdlet **Set-SecOpsOverrideRule** ne modifie pas les adresses de messagerie dans la règle de remplacement SecOps. Pour modifier les adresses de messagerie dans la règle de remplacement SecOps, utilisez l’cmdlet **Set-SecOpsOverridePolicy.**
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-SecOpsOverrideRule](/powershell/module/exchange/set-secopsoverriderule).
+
+### <a name="use-powershell-to-remove-the-secops-override-policy"></a>Utiliser PowerShell pour supprimer la stratégie de remplacement SecOps
+
+Cet exemple supprime la stratégie de boîte aux lettres SecOps et la règle correspondante.
+
+```powershell
+Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-SecOpsOverridePolicy](/powershell/module/exchange/remove-secopsoverridepolicy).
+
+### <a name="use-powershell-to-remove-secops-override-rules"></a>Utiliser PowerShell pour supprimer des règles de remplacement SecOps
+
+Pour supprimer une règle de remplacement SecOps, utilisez la syntaxe suivante :
+
+```powershell
+Remove-SecOpsOverrideRule -Identity <RuleIdentity>
+```
+
+Cet exemple supprime la règle de remplacement SecOps spécifiée.
+
+```powershell
+Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b24a311f8329
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
+
+## <a name="exchange-online-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Exchange Online Procédures PowerShell pour les simulations de hameçonnage tiers dans la stratégie de remise avancée
+
+Dans Exchange Online PowerShell, les éléments de base des simulations de hameçonnage tiers dans la stratégie de remise avancée sont les éléments ci-après :
+
+- **Stratégie de remplacement de simulation de** hameçonnage : contrôlée par les cmdlets **\* -PhishSimOverridePolicy.**
+- **Règle de remplacement de simulation d’hameçonnage**: contrôlée par les cmdlets **\* -PhishSimOverrideRule.**
+
+Ce comportement a les résultats suivants :
+
+- Vous créez d’abord la stratégie, puis la règle qui identifie la stratégie à qui la règle s’applique.
+- Vous modifiez séparément les paramètres de la stratégie et de la règle.
+- Lorsque vous supprimez une stratégie de PowerShell, la règle correspondante est également supprimée.
+- Lorsque vous supprimez une règle de PowerShell, la stratégie correspondante n’est pas supprimée. Vous devez supprimer manuellement la stratégie correspondante.
+
+### <a name="use-powershell-to-configure-third-party-phishing-simulations"></a>Utiliser PowerShell pour configurer des simulations de hameçonnage tierces
+
+La configuration d’une simulation de hameçonnage tierce dans la stratégie de remise avancée dans PowerShell est un processus en deux étapes :
+
+1. Créez la stratégie de remplacement de simulation d’hameçonnage.
+2. Créez la règle de remplacement de simulation de hameçonnage qui spécifie la stratégie à appliquer à la règle.
+
+#### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>Étape 1 : Utiliser PowerShell pour créer la stratégie de remplacement de simulation de hameçonnage
+
+Cet exemple crée la stratégie de remplacement de simulation de hameçonnage.
+
+```powershell
+New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
+```
+
+**Remarque**: quelle que soit la valeur de nom que vous spécifiez, le nom de la stratégie sera PhishSimOverridePolicy. Vous pouvez donc également utiliser cette valeur.
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-PhishSimOverridePolicy](/powershell/module/exchange/new-phishsimoverridepolicy).
+
+#### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>Étape 2 : Utiliser PowerShell pour créer la règle de remplacement de simulation de hameçonnage
+
+Utilisez la syntaxe suivante :
+
+```powershell
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
+```
+
+Quelle que soit la valeur name que vous spécifiez, le nom de la règle sera PhishSimOverrideRule, où est une valeur \<GUID\> \<GUID\> GUID unique (par exemple, a0eae53e-d755-4a42-9320-b9c6b55c5011).
+
+Une entrée d’adresse IP valide est l’une des valeurs suivantes :
+
+- Adresse IP unique : par exemple, 192.168.1.1.
+- Plage d’adresses IP : par exemple, 192.168.0.1-192.168.0.254.
+- ADRESSE IP CIDR : par exemple, 192.168.0.1/25.
+
+Cet exemple crée la règle de remplacement de simulation de hameçonnage avec les paramètres spécifiés.
+
+```powershell
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule).
+
+### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>Utiliser PowerShell pour afficher la stratégie de remplacement de simulation de hameçonnage
+
+Cet exemple renvoie des informations détaillées sur la seule stratégie de remplacement de simulation de hameçonnage.
+
+```powershell
+Get-PhishSimOverridePolicy
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-PhishSimOverridePolicy](/powershell/module/exchange/get-phishsimoverridepolicy).
+
+### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>Utiliser PowerShell pour afficher les règles de remplacement de simulation de hameçonnage
+
+Cet exemple renvoie des informations détaillées sur les règles de remplacement de simulation de hameçonnage.
+
+```powershell
+Get-PhishSimOverrideRule
+```
+
+Bien que la commande précédente ne retourne qu’une seule règle, toutes les règles en attente de suppression peuvent également être incluses dans les résultats.
+
+Cet exemple identifie la règle valide (une) et toutes les règles non valides.
+
+```powershell
+Get-PhishSimOverrideRule | Format-Table Name,Mode
+```
+
+Après avoir identifié les règles non valides, vous pouvez les supprimer à l’aide de l’cmdlet **Remove-PhisSimOverrideRule,** comme décrit plus loin [dans cet article.](#use-powershell-to-remove-phishing-simulation-override-rules)
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Get-PhishSimOverrideRule](/powershell/module/exchange/get-phishsimoverriderule).
+
+### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>Utiliser PowerShell pour modifier la stratégie de remplacement de simulation de hameçonnage
+
+Pour modifier la stratégie de remplacement de simulation de hameçonnage, utilisez la syntaxe suivante :
+
+```powershell
+Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
+```
+
+Cet exemple désactive la stratégie de remplacement de simulation de hameçonnage.
+
+```powershell
+Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-PhishSimOverridePolicy](/powershell/module/exchange/set-phishsimoverridepolicy).
+
+### <a name="use-powershell-to-modify-a-phishing-simulation-override-rule"></a>Utiliser PowerShell pour modifier une règle de remplacement de simulation de hameçonnage
+
+Pour modifier la règle de remplacement de simulation de hameçonnage, utilisez la syntaxe suivante :
+
+```powershell
+Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
+```
+
+Cet exemple modifie la règle de remplacement de simulation de hameçonnage spécifiée avec les paramètres suivants :
+
+- Ajoutez l’entrée de domaine blueyonderairlines.com.
+- Supprimez l’entrée d’adresse IP 192.168.1.55.
+
+Notez que ces modifications n’affectent pas les entrées existantes.
+
+```powershell
+Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 -AddSenderDomainIs blueyonderairlines.com -RemoveSenderIpRanges 192.168.1.55
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Set-PhishSimOverrideRule](/powershell/module/exchange/set-phishsimoverriderule).
+
+### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>Utiliser PowerShell pour supprimer une stratégie de remplacement de simulation de hameçonnage
+
+Cet exemple supprime la stratégie de remplacement de simulation de hameçonnage et la règle correspondante.
+
+```powershell
+Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-PhishSimOverridePolicy](/powershell/module/exchange/remove-phishsimoverridepolicy).
+
+### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>Utiliser PowerShell pour supprimer les règles de remplacement de simulation de hameçonnage
+
+Pour supprimer une règle de remplacement de simulation de hameçonnage, utilisez la syntaxe suivante :
+
+```powershell
+Remove-PhishSimOverrideRule -Identity <RuleIdentity>
+```
+
+Cet exemple supprime la règle de remplacement de simulation de hameçonnage spécifiée.
+
+```powershell
+Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011
+```
+
+Pour obtenir des informations détaillées sur la syntaxe et les paramètres, voir [Remove-PhishSimOverrideRule](/powershell/module/exchange/remove-phishsimoverriderule).
