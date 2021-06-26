@@ -17,12 +17,12 @@ ms.collection:
 description: Les administrateurs peuvent découvrir comment afficher, créer, modifier et supprimer des stratégies anti-courrier indésirable dans Exchange Online Protection (EOP) autonome.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afcb82789168999f5f061ca0f86ad3c07b54846d
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 81fcfde3442abcb63e04d67df5e6c66a56e3e498
+ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108234"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53137762"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection
 
@@ -203,7 +203,7 @@ En créant une stratégie contre le courrier indésirable dans le Portail Micros
    >
    > Réfléchissez soigneusement avant d’ajouter des domaines à la liste des domaines autorisés. Si vous souhaitez en savoir plus, consultez la page [Créer des listes d’expéditeurs approuvés dans Exchange Online PowerShell](create-safe-sender-lists-in-office-365.md)
    >
-   > N’ajoutez jamais vos propres [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) ou des domaines communs (par exemple, microsoft.com ou office.com) à la liste des domaines autorisés. Si ces domaines sont autorisés à contourner le filtrage du courrier indésirable, autorisez les attaquants à envoyer facilement des messages électroniques à votre organisation.
+   > N’ajoutez jamais vos propres [domaines acceptés](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) ou des domaines communs (par exemple, microsoft.com ou office.com) à la liste des domaines autorisés. Si ces domaines sont autorisés à contourner le filtrage du courrier indésirable, les attaquants peuvent facilement envoyer des messages usurpant ces domaines approuvés dans votre organisation.
    >
    > Le blocage manuel des domaines en ajoutant les domaines à la liste des domaines bloqués n’est pas dangereux, mais il peut augmenter votre charge de travail administratif. Pour plus d’informations, voir [Créer des listes d’expéditeurs bloqués dans Exchange Online PowerShell](create-block-sender-lists-in-office-365.md).
    >
