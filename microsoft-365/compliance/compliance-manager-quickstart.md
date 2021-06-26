@@ -2,8 +2,8 @@
 title: Guide de démarrage rapide du Gestionnaire de conformité Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez le guide de démarrage rapide du Gestionnaire de conformité pour vous aider tout au long de votre parcours de compréhension, de mise en place et d’utilisation du Gestionnaire de conformité.
-ms.openlocfilehash: bb40fe0ace2f4b751e24d77f46dc1fc509eb42f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8ac4245da95192516c57d51d740531fd4af10647
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906026"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149045"
 ---
 # <a name="compliance-manager-quickstart"></a>Gestionnaire de conformité Quickstart
 
@@ -31,7 +31,7 @@ Que vous soyez en déplacement vers le Gestionnaire de conformité pour la premi
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>Première visite : connaître le Gestionnaire de conformité
 
-Le Gestionnaire de conformité se trouve dans le centre Microsoft 365 conformité à l’emplacement https://compliance.microsoft.com . L’administrateur général de votre organisation devra configurer des autorisations utilisateur et attribuer des [rôles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) avant de commencer à utiliser le Gestionnaire de conformité.
+Le Gestionnaire de conformité se trouve dans le Centre de conformité Microsoft 365 à https://compliance.microsoft.com l’emplacement . L’administrateur général de votre organisation devra configurer des autorisations utilisateur et attribuer des [rôles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) avant de commencer à utiliser le Gestionnaire de conformité.
 
 La première fois que vous visitez le Gestionnaire de conformité, vous voyez un score de conformité pour votre organisation. Le Gestionnaire de conformité évalue déjà votre environnement Microsoft 365 actuel par rapport à la ligne de base de protection des données. La meilleure façon de commencer à vous familiariser avec le Gestionnaire de conformité consiste à comprendre ce qu’il vous montre, ses éléments clés et comment personnaliser votre tableau de bord.
 
@@ -63,8 +63,8 @@ Lorsque vous êtes à l’aise avec la gestion des évaluations dans le Gestionn
 
 Vous pouvez également configurer des tests automatisés de l’ensemble ou d’un sous-ensemble d’actions d’amélioration. Consultez les liens ci-dessous pour comprendre les fonctionnalités plus avancées dans le Gestionnaire de conformité :
 
-- [Étendre une évaluation du Gestionnaire de conformité en ajoutant vos propres contrôles et actions d’amélioration](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [Créer votre propre évaluation personnalisée](compliance-manager-assessments.md#create-your-own-custom-assessment)
+- [Étendre un modèle gestionnaire de conformité en ajoutant vos propres contrôles et actions d’amélioration](compliance-manager-templates.md#extend-an-assessment-template)
+- [Créer votre propre modèle personnalisé](compliance-manager-templates.md#create-an-assessment-template)
 - [Modifier un modèle existant pour ajouter ou supprimer des contrôles et des actions](compliance-manager-templates.md#modify-a-template)
 - [Configurer des tests automatisés des actions d’amélioration](compliance-manager-setup.md#set-up-automated-testing)
 - [Réaffecter des actions d’amélioration à un autre utilisateur](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

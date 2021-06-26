@@ -2,8 +2,8 @@
 title: Gestionnaire de conformité Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Le Gestionnaire de conformité Microsoft permet aux organisations de simplifier et d’automatiser les évaluations des risques, et suggère des actions recommandées pour résoudre les risques.
-ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc1919f63716dfa79274a5cf7016ef07f2f36f92
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244394"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53148949"
 ---
 # <a name="microsoft-compliance-manager"></a>Gestionnaire de conformité Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "52244394"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Nouveautés : la version GA du Gestionnaire de conformité
 
-Le Gestionnaire de conformité est désormais généralement disponible (GA) en tant que solution de gestion de la conformité de bout en bout dans le centre [Microsoft 365 conformité.](microsoft-365-compliance-center.md) Avec cette version, le Gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’confiance des services Microsoft. Le Gestionnaire de conformité est également disponible pour les clients modérés, Cloud de la communauté du secteur public et du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
+Le Gestionnaire de conformité est désormais généralement disponible en tant que solution de gestion de la conformité de bout en bout dans le [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md). Avec cette version, le Gestionnaire de conformité termine la transition à partir de son emplacement précédent dans le portail d’confiance des services Microsoft. Le Gestionnaire de conformité est également disponible pour les clients modérés, Cloud de la communauté du secteur public élevés et du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
 
 Ce qui a commencé par la prévisualisation publique du Score de conformité est devenu un outil centralisé avec des fonctionnalités de gestion de la conformité améliorées et une plus grande facilité d’utilisation.  La version GA apporte une collection plus importante d’évaluations pré-conçues pour vous aider à mettre à l’échelle vos activités de conformité.
 
@@ -45,7 +45,7 @@ Regardez la vidéo ci-dessous pour découvrir comment le Gestionnaire de conform
 
 ## <a name="what-is-compliance-manager"></a>Qu’est-ce que le Gestionnaire de conformité ?
 
-[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du Centre [de](microsoft-365-compliance-center.md) conformité Microsoft 365 qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire de vos risques de protection des données à la gestion des complexités de l’implémentation des contrôles, à la mise à jour des réglementations et des certifications et à la gestion des rapports aux auditeurs.
+[Le Gestionnaire de conformité Microsoft](https://compliance.microsoft.com/compliancemanager) est une fonctionnalité du [Centre de conformité Microsoft 365](microsoft-365-compliance-center.md) qui vous permet de gérer les exigences de conformité de votre organisation avec plus de simplicité et de commodité. Le Gestionnaire de conformité peut vous aider tout au long de votre parcours de conformité, de l’inventaire de vos risques de protection des données à la gestion des complexités de l’implémentation des contrôles, au fait de rester à jour avec les réglementations et les certifications, et de faire des rapports aux auditeurs.
 
 Le Gestionnaire de conformité simplifie la conformité et réduit les risques en fournissant :
 
@@ -53,13 +53,13 @@ Le Gestionnaire de conformité simplifie la conformité et réduit les risques e
 
 - Fonctionnalités de flux de travail pour vous aider à effectuer efficacement vos évaluations des risques à l’aide d’un seul outil.
 
-- Recommandations détaillées détaillées sur les suggestions d’actions d’amélioration pour vous aider à vous conformer aux normes et réglementations les plus pertinentes pour votre organisation. Pour les actions gérées par Microsoft, vous verrez les détails de l’implémentation et les résultats de l’audit.
+- Recommandations détaillées détaillées sur les suggestions d’actions d’amélioration pour vous aider à vous conformer aux normes et réglementations les plus pertinentes pour votre organisation. Pour les actions gérées par Microsoft, vous verrez les détails de l’implémentation et les résultats d’audit.
 
 - Un score de conformité basé sur les risques pour vous aider à comprendre votre posture de conformité en mesurant votre progression dans l’exécution des actions d’amélioration.
 
 Votre tableau de bord du Gestionnaire de conformité affiche votre score de conformité actuel, vous aide à voir ce qui nécessite une attention particulière et vous guide vers les actions d’amélioration clés. Voici un exemple de ce à quoi ressemblera votre tableau de bord du Gestionnaire de conformité :
 
-![Gestionnaire de conformité - Tableau de bord](../media/compliance-manager-dashboard.png "Tableau de bord du Gestionnaire de conformité")
+![Gestionnaire de conformité - tableau de bord](../media/compliance-manager-dashboard.png "Tableau de bord du Gestionnaire de conformité")
 
 ## <a name="understanding-your-compliance-score"></a>Comprendre votre score de conformité
 
@@ -79,7 +79,7 @@ Le Gestionnaire de conformité utilise plusieurs éléments de données pour vou
 
 ### <a name="controls"></a>Contrôles
 
-Un contrôle est une exigence d’une réglementation, d’une norme ou d’une stratégie. Il définit la façon dont vous évaluez et gérez la configuration du système, le processus organisationnel et les personnes responsables de répondre à une exigence spécifique d’une réglementation, d’une norme ou d’une stratégie.
+Un contrôle est une exigence d’une réglementation, d’une norme ou d’une stratégie. Il définit la façon dont vous évaluez et gérez la configuration système, le processus organisationnel et les personnes responsables de répondre à une exigence spécifique d’une réglementation, d’une norme ou d’une stratégie.
 
 Le Gestionnaire de conformité suit les types de contrôles suivants :
 
@@ -113,7 +113,7 @@ Lorsque vous créez des évaluations, vous les affectez à un groupe. Vous pouve
 
 ### <a name="templates"></a>Modèles
 
-Le Gestionnaire de conformité fournit des modèles pour vous aider à créer rapidement des évaluations. Vous pouvez modifier ces modèles pour créer une évaluation optimisée pour vos besoins. Vous pouvez également créer une évaluation personnalisée en créant un modèle avec vos propres contrôles et actions. Par exemple, vous souhaitez peut-être qu’un modèle couvre un contrôle de processus d’entreprise interne ou une norme de protection des données régionale qui n’est pas couverte par l’un de nos modèles d’évaluation pré-créés 325+.
+Le Gestionnaire de conformité fournit des modèles pour vous aider à créer rapidement des évaluations. Vous pouvez modifier ces modèles pour créer une évaluation optimisée pour vos besoins. Vous pouvez également créer une évaluation personnalisée en créant un modèle avec vos propres contrôles et actions. Par exemple, vous souhaitez peut-être qu’un modèle couvre un contrôle de processus d’entreprise interne ou une norme de protection des données régionale qui n’est pas couverte par l’un de nos modèles d’évaluation pré-créés plus de 325.
 
 ##### <a name="learn-more"></a>En savoir plus
 

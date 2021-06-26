@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Découvrez comment utiliser des stratégies dlp pour les applications cloud non Microsoft.
-ms.openlocfilehash: d4c5170cab01b1ca22701b13c7afbf4f2e0ba7da
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ca522b5accbd2c08e80b0ce63871179ff64bbcc8
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114132"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149153"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Utiliser des stratégies de protection contre la perte de données pour les applications cloud non-Microsoft (aperçu)
 
@@ -80,6 +80,8 @@ Vous pouvez choisir différentes actions pour chaque application cloud non-Micro
 Lorsque vous créez une règle dans la stratégie DLP, vous pouvez sélectionner une action pour les applications cloud autres que Microsoft. Pour restreindre les applications tierces, **sélectionnez Restreindre les applications tierces.**
 
 ![Restreindre les applications tierces](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+
+>[REMARQUE] Les stratégies DLP appliquées aux applications non-Microsoft utilisent Microsoft Cloud App Security. Lorsque la stratégie DLP pour une application non-Microsoft est créée, la même stratégie est automatiquement créée dans Microsoft Cloud App Security.
 
 Pour plus d’informations sur la création et la configuration des stratégies DLP, voir Créer un test et [régler une stratégie DLP.](./create-test-tune-dlp-policy.md?view=o365-worldwide)
 

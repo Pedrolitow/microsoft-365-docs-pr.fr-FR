@@ -2,8 +2,8 @@
 title: Calcul du score de conformité
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprendre comment le Gestionnaire de conformité Microsoft calcule un score personnalisé en fonction des actions prises pour résoudre les risques et améliorer votre posture de conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4e1e3f4b90b0a5e83a1e068cd30f76b3a8c7bb22
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052112"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149165"
 ---
 # <a name="compliance-score-calculation"></a>Calcul du score de conformité
 
@@ -47,7 +47,7 @@ Le score de conformité global est calculé à l’aide de scores d’action, o�
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Score initial basé sur la ligne de base Microsoft 365 protection des données
   
-Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés pour la protection des données et la gouvernance générale des données. Cette ligne de base tire principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
+Le Gestionnaire de conformité vous donne un score initial basé sur la ligne de base Microsoft 365 protection des données. Cette ligne de base est un ensemble de contrôles qui inclut des réglementations et des normes clés en matière de protection des données et de gouvernance générale des données. Cette ligne de base tire principalement des éléments du NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) et de l’ISO (International Organization for Standardization), ainsi que du FedRAMP (Federal Risk and Authorization Management Program) et du R GDPR (Règlement général sur la protection des données de l’Union européenne).
 
 Votre score initial est calculé en fonction de l’évaluation de base de la protection des données par défaut fournie à toutes les organisations. Lors de votre première visite, le Gestionnaire de conformité collecte déjà des signaux à partir de Microsoft 365 solutions. Vous verrez d’un coup d’œil les résultats de votre organisation par rapport aux principales normes et réglementations en matière de protection des données, ainsi que les suggestions d’actions d’amélioration à prendre.
 
@@ -104,7 +104,7 @@ Une valeur de score est attribuée aux actions selon qu’elles sont obligatoire
   
  - **Les actions préventives** s’adressent à des risques spécifiques. Par exemple, la protection des informations au repos à l’aide du chiffrement est une action préventive contre les attaques et les violations. La séparation des tâches est une action préventive pour gérer les conflits d’intérêts et se prémunir contre la fraude.
   
- - **Les actions de détection** surveillent activement les systèmes pour identifier les conditions ou comportements insérez des conditions ou des comportements qui représentent un risque, ou qui peuvent être utilisés pour détecter les intrusions ou les violations. Les exemples incluent l’audit de l’accès au système et les actions administratives privilégiées. Les audits de conformité réglementaire sont un type d’action de inspecteur utilisée pour rechercher les problèmes de processus.
+ - **Les actions de détection** surveillent activement les systèmes pour identifier les conditions ou comportements insérez des conditions ou des comportements qui représentent un risque, ou qui peuvent être utilisés pour détecter les intrusions ou les violations. Les exemples incluent l’audit de l’accès au système et les actions administratives privilégiées. Les audits de conformité réglementaire sont un type d’action de recherche utilisé pour rechercher les problèmes de processus.
   
 - **Les actions correctives** tentent de limiter au minimum les effets négatifs d’un incident de sécurité, de prendre des mesures correctives pour réduire l’effet immédiat et d’annuler les dommages si possible. La réponse aux incidents de confidentialité est une action corrective pour limiter les dommages et restaurer les systèmes à un état opérationnel après une violation.
   
@@ -113,10 +113,10 @@ Chaque action a une valeur attribuée dans le Gestionnaire de conformité en fon
 |**Type (Type)**|**Score attribué**|
 |:-----|:-----|
 | Obligatoire préventive | 27 |
-| Discrétionnaire préventive | 9  |
-| Inspecteur obligatoire | 3 |
-| Discrétionnaire de l’inspecteur | 1 |
-| Correctif obligatoire | 3 |
-| Correction discrétionnaire | 1 |
+| Discrétionnaire préventive | 9  |
+| Inspecteur obligatoire | 3  |
+| Discrétionnaire de l’inspecteur | 1  |
+| Correctif obligatoire | 3  |
+| Correction discrétionnaire | 1  |
   
 ![Valeurs de point d’action du Gestionnaire de conformité](../media/compliance-score-action-scoring.png "Valeurs de point d’action du Gestionnaire de conformité")

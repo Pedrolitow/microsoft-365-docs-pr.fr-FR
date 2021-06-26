@@ -15,16 +15,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Découvrez la stratégie de protection contre la perte de données par défaut dans Microsoft Teams
-ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c6b7413fdd4017fe1211e804c00a2e9c0684468d
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114142"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149117"
 ---
 # <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>En savoir plus sur la stratégie de protection par défaut contre la perte de données dans Microsoft Teams (préviersion)
 
-[Les fonctionnalités de protection](dlp-learn-about-dlp.md) contre la perte de données ont été étendues pour inclure Microsoft Teams messages de conversation et de canal, y compris les messages de canal privé. Dans le cadre de cette version, nous avons créé une stratégie DLP par défaut pour les nouveaux clients dans le Centre de conformité.
+[Les fonctionnalités de protection](dlp-learn-about-dlp.md) contre la perte de données ont été étendues pour inclure Microsoft Teams messages de conversation et de canal, y compris les messages de canal privé. Dans le cadre de cette version, nous avons créé une stratégie DLP par défaut pour Microsoft Teams clients pour la première fois dans le Centre de conformité.
 
 ## <a name="applies-to"></a>S’applique à
 
@@ -41,7 +41,7 @@ Tout client titulaire d’une licence avec une ou plusieurs des licences ci-dess
 
 ## <a name="what-does-the-default-policy-do"></a>Que fait la stratégie par défaut ?
 
-La stratégie DLP par défaut suit tous les numéros de carte de crédit partagés en interne et en externe dans l’organisation. Cette stratégie est en cours d’utilisation par défaut pour tous les utilisateurs du client. Il ne génère aucun conseil de stratégie pour les utilisateurs finaux, mais génère un événement d’alerte et déclenche également un e-mail de faible gravité à l’administrateur (ajouté dans la stratégie). L’administrateur peut afficher les activités et modifier les détails des stratégies en se connectant au Centre de conformité.
+La stratégie DLP par défaut pour Teams tous les numéros de carte de crédit partagés en interne et en externe dans l’organisation. Cette stratégie est en cours d’utilisation par défaut pour tous les utilisateurs du client. Il ne génère aucun conseil de stratégie pour les utilisateurs finaux, mais génère un événement d’alerte et déclenche également un e-mail de faible gravité à l’administrateur (ajouté dans la stratégie). L’administrateur peut afficher les activités et modifier les détails des stratégies en se connectant au Centre de conformité.
 
 Les administrateurs peuvent afficher [](https://compliance.microsoft.com/compliancesettings) cette stratégie dans le Centre de conformité et > stratégies de protection contre la perte de données.
 

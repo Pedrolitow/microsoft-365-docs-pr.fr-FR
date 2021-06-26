@@ -2,8 +2,8 @@
 title: Affecter et effectuer des actions d’amélioration dans le Gestionnaire de conformité Microsoft
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,26 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment effectuer l’implémentation et les tests sur les contrôles dans le Gestionnaire de conformité Microsoft. Affecter des rapports de travail, stocker de la documentation et exporter des rapports.
-ms.openlocfilehash: e761d8d4410f1c52bb79d4a225eec407f1fd6a6e
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: f2674e24ed38362c5c7563a574e0dba9c81f2584
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570383"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149033"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>Affecter et effectuer des actions d’amélioration dans le Gestionnaire de conformité
 
-**Dans cet article :** Cet article explique comment gérer votre flux **de travail** de conformité avec des actions d’amélioration. Découvrez comment affecter des **actions d’amélioration pour** l’implémentation et le test, gérer les **mises à jour** et exporter des **rapports.**
+**Dans cet article :** Cet article explique comment gérer votre flux **de travail de conformité** avec des actions d’amélioration. Découvrez comment affecter des **actions d’amélioration pour** l’implémentation et le test, gérer les **mises à jour** et exporter des **rapports.**
 
 ## <a name="manage-compliance-workflows-with-improvement-actions"></a>Gérer les flux de travail de conformité avec des actions d’amélioration
 
-Les actions d’amélioration centralisent vos activités de conformité. Chaque action d’amélioration fournit des instructions d’implémentation détaillées pour vous aider à vous aligner sur les réglementations et normes en matière de protection des données. Des actions peuvent être affectées aux utilisateurs de votre organisation pour effectuer des tâches d’implémentation et de test. Vous pouvez également stocker de la documentation, des notes et enregistrer des mises à jour d’état au sein de l’action.
+Les actions d’amélioration centralisent vos activités de conformité. Chaque action d’amélioration fournit des instructions de mise en œuvre détaillées pour vous aider à vous aligner sur les réglementations et normes en matière de protection des données. Des actions peuvent être affectées aux utilisateurs de votre organisation pour effectuer des tâches d’implémentation et de test. Vous pouvez également stocker de la documentation, des notes et enregistrer des mises à jour d’état au sein de l’action.
 
 Toutes vos actions d’amélioration sont répertoriées sur la page Actions d’amélioration. En savoir plus sur [l’affichage de vos actions d’amélioration.](compliance-manager-setup.md#improvement-actions-page)
 
 ## <a name="improvement-actions-details-page"></a>Page détails des actions d’amélioration
 
-Chaque action d’amélioration possède une page de détails indiquant son état actuel, les normes et exigences réglementaires associées, ainsi que des recommandations d’implémentation. [Les actions techniques](compliance-score-calculation.md#technical-and-non-technical-actions) incluent **un lien Lancer maintenant** qui vous permet d’obtenir la solution appropriée pour l’implémentation. Vous pouvez joindre la documentation d’implémentation et de test directement dans la page de détails d’une action d’amélioration.
+Chaque action d’amélioration possède une page de détails indiquant son état actuel, les normes et exigences réglementaires associées, ainsi que les recommandations d’implémentation recommandées. [Les actions techniques](compliance-score-calculation.md#technical-and-non-technical-actions) incluent un **lien Lancer maintenant** qui vous permet d’obtenir la solution appropriée pour l’implémentation. Vous pouvez joindre la documentation d’implémentation et de test directement dans la page de détails d’une action d’amélioration.
 
 Pour afficher la page de détails d’une action d’amélioration :
 
@@ -75,7 +75,7 @@ Vous pouvez affecter plusieurs actions d’amélioration à un utilisateur en su
 
 ## <a name="perform-work-and-store-documentation"></a>Effectuer des travaux et stocker de la documentation
 
-Vous pouvez télécharger des fichiers et des notes relatifs à l’implémentation et au test de travail directement dans la section **Notes et documentation.** Cet environnement est un référentiel sécurisé et centralisé pour vous aider à démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur ayant un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs ayant des droits d’édition peuvent télécharger des fichiers et entrer ou modifier des notes.
+Vous pouvez charger des fichiers et des notes relatifs à l’implémentation et au test de travail directement dans la section **Notes et documentation.** Cet environnement est un référentiel sécurisé et centralisé pour vous aider à démontrer la satisfaction des contrôles pour répondre aux normes et réglementations de conformité. Tout utilisateur ayant un accès en lecture seule peut lire le contenu de cette section. Seuls les utilisateurs ayant des droits d’édition peuvent télécharger des fichiers et entrer ou modifier des notes.
 
 La section **Notes et documentation** contient des champs pour les documents téléchargés, les notes d’implémentation, les notes de test et les notes supplémentaires.
 
@@ -92,9 +92,9 @@ La section **Notes et documentation** contient des champs pour les documents té
 
 #### <a name="implementation-notes-test-notes-and-additional-notes"></a>Notes d’implémentation, notes de test et notes supplémentaires
 
-- Pour ajouter des notes dans l’un de ces trois champs, sélectionnez Modifier les **notes** d’implémentation sous l’un de ces champs.
+- Pour ajouter des notes dans l’un de ces trois champs, sélectionnez Modifier les **notes d’implémentation** sous l’un de ces champs.
 - Lorsque le volet volant s’ouvre, entrez des notes dans le champ de texte, puis **sélectionnez Enregistrer et fermer.**
-- Pour modifier des notes, **sélectionnez Modifier les notes** d’implémentation, a apporter vos modifications, puis **sélectionnez Enregistrer et fermer.**
+- Pour modifier des notes, **sélectionnez Modifier les notes d’implémentation,** a apporter vos modifications, puis **sélectionnez Enregistrer et fermer.**
 
 Il n’existe aucune limite de caractères dans les champs de notes. Nous vous recommandons de garder les notes brèves afin de pouvoir facilement les afficher et les modifier à partir de la page de détails des actions d’amélioration.
 
