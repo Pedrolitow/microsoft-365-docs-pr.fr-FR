@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: f882a9a215f331930de7473d6bf057a3d45bc50e
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 9337bddd87dd24d42b4d06fe77225901701cbdee
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137690"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149177"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -298,7 +298,7 @@ Utilisez ce flux pour comprendre les résultats de la rétention et de la suppre
   
 Explication des quatre principes différents :
   
-1. **La rétention prend le pas sur la suppression.** Le contenu n’est pas supprimé définitivement lorsqu’il dispose également de paramètres de rétention pour conserver celui-ci. Bien que ce principe garantisse que le contenu est conservé pour des raisons de conformité, le processus de suppression est toujours lancé et peut supprimer le contenu de l’affichage utilisateur. Par exemple, un document dans SharePoint passe du dossier d’origine au dossier Conservation des préservations. Toutefois, la suppression permanente est suspendue. Pour plus d’informations sur la façon dont et où le contenu est conservé, utilisez les liens suivants pour chaque charge de travail :
+1. **La rétention prend le pas sur la suppression.** Le contenu n’est pas supprimé définitivement lorsqu’il dispose également de paramètres de rétention pour conserver celui-ci. Bien que ce principe garantisse que le contenu est conservé pour des raisons de conformité, le processus de suppression est toujours lancé et peut supprimer le contenu de la vue et des recherches utilisateur. Pour SharePoint, par exemple, un document passe du dossier d’origine au dossier Conservation des préservations. Toutefois, la suppression permanente est suspendue. Pour plus d’informations sur la façon dont et où le contenu est conservé, utilisez les liens suivants pour chaque charge de travail :
     
     - [Fonctionnement de la rétention pour SharePoint et OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
     - [Fonctionnement de la rétention avec Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
@@ -307,7 +307,7 @@ Explication des quatre principes différents :
     
     Exemple : un e-mail est soumis à une stratégie de rétention pour Exchange configurée pour supprimer les éléments après trois ans et dispose d’une étiquette de rétention également appliquée et configurée de manière à conserver les éléments pendant 5 ans.
     
-    L’e-mail est conservé pendant cinq ans, car cette action de rétention a la priorité sur la suppression. Le message électronique est ensuite supprimé définitivement à la fin des cinq ans en raison de l’action de suppression.
+    L’e-mail est conservé pendant cinq ans, car cette action de rétention a la priorité sur la suppression. Le message électronique est définitivement supprimé à la fin des cinq ans en raison de l’action de suppression qui a été suspendue pendant que l’action de rétention était en vigueur.
 
 2. **La période de rétention la plus longue l’emporte.** Si du contenu est soumis à plusieurs paramètres de rétention pour différentes périodes, il est conservé jusqu’à la fin de la période de rétention la plus longue.
     
