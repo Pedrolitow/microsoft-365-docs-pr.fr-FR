@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770672"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169567"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows 10 et Office 365
 
-Le kit de laboratoire de déploiement Windows 10 et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et votre gestion des ordinateurs de bureau exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
+Le kit de laboratoire de déploiement Windows 10 et Office 365 est conçu pour vous aider à planifier, tester et valider votre déploiement et la gestion des ordinateurs de bureau exécutant Windows 10 Entreprise et Applications Microsoft 365 pour les grandes entreprises. Les ateliers du kit utilisent Microsoft Endpoint Configuration Manager, Desktop Analytics, l’outil de personnalisation Office, OneDrive, Windows Autopilot, etc.
 
-Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester l’automatisation liée au déploiement.
+Ce kit est vivement recommandé pour les organisations qui se préparent Windows 8.1 mises à niveau vers Windows 10. Elle s’applique également si vous utilisez actuellement Windows 10, Applications Microsoft 365 pour les grandes entreprises (anciennement Office 365 ProPlus) ou Office 2019. En tant qu’environnement isolé, l’atelier qui en résulte est idéal pour explorer les mises à jour des outils de déploiement et tester votre automatisation liée au déploiement.
 
 [Téléchargez le kit Windows 10 et Office 365 de déploiement.](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
@@ -47,7 +47,7 @@ Le kit vous fournit un environnement de laboratoire virtuel configuré automatiq
 L’atelier qui en résulte est conçu pour être connecté aux essais pour : 
 
   - Microsoft 365 E5
-  - Applications Microsoft 365 for entreprise
+  - Microsoft 365 Apps for enterprise
   - Office 365 E5 avec Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Laboratoires détaillés
@@ -55,9 +55,11 @@ L’atelier qui en résulte est conçu pour être connecté aux essais pour :
 Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion. Les laboratoires ont été mis à jour pour les dernières versions d’Intune et de Configuration Manager. 
 
 ### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
+
 - Analyses du bureau 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Attachement du client, cogestion et changement de charges de travail 
+- NOUVEAUTÉ ! Attachement client et cogestion
+- NOUVEAUTÉ ! Analyse des points de terminaison 
 - Accès à distance (VPN) 
 
 ### <a name="prepare-configuration"></a>Préparer la configuration   
@@ -91,6 +93,7 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 - Enterprise gestion à l’aide de Microsoft Intune  
 - Déploiement et gestion des objets LOB avec Microsoft Intune
 - Déployer Microsoft Teams
+- NOUVEAUTÉ ! Filtres d’affectation  
 
 ### <a name="deploy-windows-virtual-desktop"></a>Déployer Windows Virtual Desktop  
 
