@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez les étiquettes de confidentialité pour protéger le contenu des sites SharePoint et Microsoft Teams, ainsi que des Groupes Microsoft 365.
-ms.openlocfilehash: 2ffc0350dd61a0064ce2e9891b18a6769a437d2e
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 844391ee20d2c8e8b94261659b18de0690dee119
+ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096755"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "53149189"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Utiliser les étiquettes de confidentialité pour protéger le contenu dans Microsoft Teams, les Groupes Microsoft 365 et les sites SharePoint
 
@@ -141,6 +141,8 @@ Pour s'afficher dans la liste déroulante de sélection, les contextes d'authent
 Toutes les applications ne prennent pas en charge les contextes d'authentification. Si un utilisateur avec une application non prise en charge se connecte au site qui est configuré pour un contexte d'authentification, un message de refus d'accès s'affiche ou bien il est invité à s'authentifier mais sa demande est rejetée. Les applications qui prennent actuellement en charge les contextes d'authentification :
 
 - Office pour le web, qui inclut Outlook pour le web
+
+- Microsoft Teams pour Windows et macOS (exclut l’application web Teams)
 
 - Microsoft Planner
 
