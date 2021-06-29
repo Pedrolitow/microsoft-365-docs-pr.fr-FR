@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 2ddc95b5e614fb321ccc5472bc6031f570218528
-ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
+ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53053070"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169591"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -116,7 +116,7 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 ### <a name="retention-policy-for-yammer-locations"></a>Stratégie de rétention pour les emplacements Yammer
 
 > [!NOTE]
-> Les stratégies de rétention pour Yammer sont en version préliminaire.
+> Les stratégies de rétention pour Yammer sont en préversion et n’avertissent actuellement pas les utilisateurs de la suppression de messages en raison d’une stratégie de rétention.
 >
 > Pour utiliser cette fonctionnalité, votre réseau Yammer doit être [Mode Natif](/yammer/configure-your-yammer-network/overview-native-mode), et non Mode Hybride.
 
