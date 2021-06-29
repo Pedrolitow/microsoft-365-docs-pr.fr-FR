@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Lorsque vous créez une étiquette de confidentialité, vous pouvez attribuer automatiquement une étiquette aux fichiers et aux courriers électroniques, ou vous pouvez inviter les utilisateurs à sélectionner l’étiquette que vous recommandez.
-ms.openlocfilehash: dbfe9e1eaeff7968328eefd24caeec35e2d72558
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 5fdb3bd963468fb7fdb4de307df8ccda0c69bbb4
+ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137774"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "53169615"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Appliquer automatiquement une étiquette de confidentialité au contenu
 
@@ -89,6 +89,7 @@ Utilisez le tableau suivant pour vous aider à déterminer les différences de c
 |Limiter par emplacement|Non |Oui |
 |Conditions : classifieurs formés|Oui |Non |
 |Conditions : options de partage et options supplémentaires pour le courrier électronique|Non |Oui |
+|Conditions : exceptions|Non |Oui (e-mail uniquement) |
 |Recommandations, info-bulle de stratégie et remplacements de l’utilisateur|Oui |Non |
 |Mode simulation|Non |Oui |
 |Pièces jointes Exchange vérifiées pour les conditions|Non | Oui|
@@ -297,7 +298,17 @@ Enfin, vous pouvez utiliser le mode simulation pour fournir une approximation du
     - La pièce jointe est protégée par mot de passe
     - Le contenu de la pièce jointe n’a pas pu être analysé
     - L’analyse du contenu de la pièce jointe n’a pas été terminée
-
+    - L’en-tête correspond aux modèles
+    - L’objet correspond aux modèles
+    - L'adresse du destinataire contient les mots
+    - L’adresse du destinataire correspond aux modèles
+    - L’adresse de l’expéditeur correspond aux modèles
+    - Le domaine de l’expéditeur est
+    - Le destinataire est membre de
+    - L’expéditeur est
+    
+    Pour chacune de ces conditions, vous pouvez ensuite spécifier des exceptions.
+    
 8. Selon vos choix précédents, vous aurez maintenant la possibilité de créer des règles à l’aide de conditions et d’exceptions.
     
     Les options de configuration pour les types d’informations sensibles sont identiques à celles que vous sélectionnez pour l’étiquetage automatique pour les applications Office. Si vous souhaitez en savoir plus, consultez l’article [Configuration des types d’informations sensibles pour une étiquette](#configuring-sensitive-info-types-for-a-label).

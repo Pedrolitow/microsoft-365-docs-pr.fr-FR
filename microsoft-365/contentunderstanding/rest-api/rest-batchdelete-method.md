@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Utilisez l’API REST pour supprimer un modèle appliqué de compréhension de document à partir d’une ou plusieurs bibliothèques.
-ms.openlocfilehash: 8c7aeb449da161fe49050631643c63c93268a13f
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904209"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177236"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -44,18 +44,43 @@ Aucun
 
 | Nom | Obligatoire | Type | Description |
 |--------|-------|--------|------------|
+|Publications|oui|MachineLearningPublicationEntityData[]|La collection de chaque MachineLearningPublicationEntityData qui spécifie le modèle et la bibliothèque de documents cible.|
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Nom | Obligatoire | Type | Description |
+|--------|-------|--------|------------|
 |ModelUniqueId|oui|chaîne|L'ID unique du fichier modèle.|
-TargetSiteUrl|oui|chaîne|L’URL complète du site cible de bibliothèque.|
-TargetWebServerRelativeUrl|oui|chaîne|L’URL du web relative au serveur pour la bibliothèque cible.|
-TargetLibraryServerRelativeUrl|oui|chaîne|L’URL relative au serveur pour la bibliothèque cible.|
-ViewOption|Non|string|Spécifie s’il faut définir l’affichage du nouveau modèle comme bibliothèque par défaut.|
+|TargetSiteUrl|oui|chaîne|L’URL complète du site cible de bibliothèque.|
+|TargetWebServerRelativeUrl|oui|chaîne|L’URL du web relative au serveur pour la bibliothèque cible.|
+|TargetLibraryServerRelativeUrl|oui|chaîne|L’URL relative au serveur pour la bibliothèque cible.|
 
 ## <a name="response"></a>Réponse
 
 | Nom   | Type  | Description|
 |--------|-------|------------|
-|200 OK| |Opération réussie|
+|200 OK||Il s’agit d’une API personnalisée pour prendre en charge la suppression d’un modèle de plusieurs bibliothèques de documents. Dans le cas d’une réussite partielle, 200 OK créé peut encore être renvoyé et l’appelant doit inspecter le corps de la réponse pour savoir si le modèle a été correctement supprimé d’une bibliothèque de documents.|
 
+## <a name="response-body"></a>Corps de la réponse
+| Nom   | Type  | Description|
+|--------|-------|------------|
+|TotalSuccesses|int|Le nombre total de suppressions réussies d’un modèle dans une bibliothèque de documents.|
+|TotalFailures|int|Le nombre total de suppressions défaillantes d’un modèle dans une bibliothèque de documents.|
+|Détails|MachineLearningPublicationResult[]|La collection de chaque MachineLearningPublicationResult qui spécifie le résultat détaillé de la suppression du modèle dans une bibliothèque de documents.|
+
+### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+| Nom   | Type  | Description|
+|--------|-------|------------|
+|StatusCode (lecture seule)|int|Le code d’état HTTP.|
+|ErrorMessage|chaîne|Le message d’erreur indiquant le problème lors de l’application du modèle à la bibliothèque de documents.|
+|Publication|MachineLearningPublicationEntityData|Il s’agit des informations sur le modèle et la bibliothèque de documents cible.| 
+
+### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+| Nom | Type | Description |
+|--------|--------|------------|
+|ModelUniqueId|chaîne|L'ID unique du fichier modèle.|
+|TargetSiteUrl|chaîne|L’URL complète du site cible de bibliothèque.|
+|TargetWebServerRelativeUrl|chaîne|L’URL du web relative au serveur pour la bibliothèque cible.|
+|TargetLibraryServerRelativeUrl|chaîne|L’URL relative au serveur pour la bibliothèque cible.|
 
 ## <a name="examples"></a>Exemples
 
@@ -66,28 +91,22 @@ Dans cet exemple, l’ID du modèle de compréhension de document du Contrat Con
 #### <a name="sample-request"></a>Exemple de demande
 
 ```HTTP
-{
-    "__metadata": {
-        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningPublicationsEntityData"
-    },
-    "Publications": {
-        "results": [
-            {
-                "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc",
-                "TargetSiteUrl": "https://contoso.sharepoint.com/sites/repository/",
-                "TargetWebServerRelativeUrl": "/sites/repository",
-                "TargetLibraryServerRelativeUrl": "/sites/repository/contracts",
-                "ViewOption": "NewViewAsDefault"
-            }
-        ]
-    }
-}
+{ 
+    "publications": [ 
+        { 
+            "ModelUniqueId": "7645e69d-21fb-4a24-a17a-9bdfa7cb63dc", 
+            "TargetSiteUrl": "https://constco.sharepoint-df.com/sites/docsite", 
+            "TargetWebServerRelativeUrl": "/sites/docsite ", 
+            "TargetLibraryServerRelativeUrl": "/sites/dcocsite/joedcos" 
+        } 
+    ] 
+} 
 ```
 
 
 #### <a name="sample-response"></a>Exemple de réponse
 
-Dans la réponse, TotalFailures et TotalSuccesses font référence au nombre d’échecs et de réussite du modèle qui s’applique aux bibliothèques spécifiées.
+Dans la réponse, TotalFailures et TotalSuccesses font référence au nombre d’échecs et de réussites de la suppression du modèle dans les bibliothèques spécifiées.
 
 **Code d’état :** 200
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Les rôles d’administrateur , tels que l’administrateur de service, correspondent à des fonctions professionnelles et accordent l'autorisation d'effectuer des tâches spécifiques dans le centre d’administration.
-ms.openlocfilehash: 801a5a85479e431b46883c69e75b1ea909892ca1
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 073e82971906ea817da9971ba737874711dc43d3
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964571"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177452"
 ---
 # <a name="about-admin-roles"></a>À propos des rôles d’administrateur
 
@@ -76,8 +76,8 @@ Vous devrez probablement attribuer les rôles suivants au sein de votre organisa
 |Administrateur de licences    |   Affectez le rôle d’administrateur de licences aux utilisateurs qui doivent attribuer et supprimer des licences d’utilisateurs et modifier leur localisation d’utilisation. <br/><br/> Les administrateurs de licences peuvent également : <br> – Retraiter les affectations de licences pour les licences basées sur des groupes <br> – Affecter des licences produit aux groupes pour les licences basées sur des groupes  |
 |Administrateur d'applications Office    |   Attribuez le rôle d’administrateur d'applications Office aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Utiliser le service de stratégie cloud Office pour créer et gérer des stratégies basées sur le cloud pour Office <br> – Créer et gérer des demandes de service <br> – Gérer le contenu des nouveautés que les utilisateurs peuvent afficher dans les applications Office   <br> – Surveiller l’état d’intégrité des services  |
 |Administrateur de mots de passe  |   Affectez le rôle d'administrateur de mots de passe à un utilisateur qui doit réinitialiser des mots de passe pour les non administrateurs et les administrateurs de mots de passe.   |
-|Lecteur du Centre de messages |   Attribuez le rôle de Lecteur de rapports aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Surveiller les notifications du Centre de Messages <br> – Recevoir les résumés hebdomadaires de courrier sur les mises à jour et des publications du Centre de messages <br> – Partager des billets du Centre de messages <br> – Avoir un accès en lecture seule aux services Azure AD, tels que des utilisateurs et des groupes|
-|Administrateur Power Platform |   Attribuez le rôle de Lecteur de rapports aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Gérer toutes les fonctionnalités d’administrateur des applications Power, Power Automate, et la protection contre la perte de données <br> – Créer et gérer des demandes de service <br> – Surveiller l’état d’intégrité des services  |
+|Lecteur du Centre de messages |   Attribuez le rôle de Lecteur de Centre de messages aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Surveiller les notifications du Centre de Messages <br> – Recevoir les résumés hebdomadaires de courrier sur les mises à jour et des publications du Centre de messages <br> – Partager des billets du Centre de messages <br> – Avoir un accès en lecture seule aux services Azure AD, tels que des utilisateurs et des groupes|
+|Administrateur Power Platform |   Attribuez le rôle d’administrateur de Power Platform aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Gérer toutes les fonctionnalités d’administrateur des applications Power, Power Automate, et la protection contre la perte de données <br> – Créer et gérer des demandes de service <br> – Surveiller l’état d’intégrité des services  |
 |Lecteur de rapports |   Attribuez le rôle de Lecteur de rapports aux utilisateurs qui doivent effectuer les opérations suivantes : <br> – Afficher les données d’utilisation et les rapports d’activité dans le Centre d’administration Microsoft 365 <br> – Avoir accès au pack de contenu d’adoption de Power BI <br> – Avoir accès au rapports de connexion et d’activité dans Azure AD <br> – Afficher les données renvoyées par l’API de compte-rendu Microsoft Graph|
 |Administrateur de support de service   |   Affectez le rôle d’administrateur de support de service en tant que rôle supplémentaire aux administrateurs ou aux utilisateurs qui doivent effectuer ce qui suit en complément de leur rôle d’administrateur habituel : <br> – Ouvrir et gérer des demandes de service <br> – Afficher et partager des billets du centre de messages <br> – Surveiller l’état d’intégrité des services   |
 |Administrateur SharePoint    |   Attribuez le rôle d’administrateur SharePoint aux utilisateurs qui doivent accéder et gérer le centre d’administration SharePoint Online. <br><br>Les administrateurs SharePoint peuvent également : <br> – Créer et supprimer des sites <br> – Gérer les collections de sites et les paramètres globaux de SharePoint   |

@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Découvrez les paramètres de partage d’invités disponibles dans Microsoft 365 qui peuvent affecter le partage avec les personnes extérieures à votre organisation.
-ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 622e3ac0c44ec763cffff51773edbe6c64515a11
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625443"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177439"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Informations de référence sur les paramètres de partage d’invités de Microsoft 365
 
@@ -165,8 +165,10 @@ Ces paramètres affectent tous les sites au sein de l’organisation. Ils n’af
 | Paramètre | Par défaut | Description |
 |:-----|:-----|:-----|
 |Limiter le partage externe par domaine|Désactivé|Ce paramètre vous permet de spécifier une liste de domaines dont le partage est autorisé ou bloqué. Lorsque des domaines autorisés sont spécifiés, des invitations de partage ne peuvent être envoyées qu’à ces domaines. Lorsque des domaines refusés sont spécifiés, des invitations de partage ne peuvent pas être envoyées à ces domaines.<br><br> Ce paramètre affecte tous les sites SharePoint et OneDrive au sein de l’organisation.|
+|Autoriser les utilisateurs de groupes de sécurité spécifiques à partager en externe|Désactivé|Si vous souhaitez limiter le nombre de personnes pouvant partager avec des invités dans SharePoint et OneDrive, vous le pouvez en limitant le partage aux personnes appartenant à des groupes de sécurité spécifiés. Ces paramètres n’affectent pas le partage via Groupes Microsoft 365 et Teams. Des invités invités via un groupe ou une équipe auraient également accès au site associé, même si le partage de documents et de dossiers ne pourrait être effectué que par des personnes appartenant aux groupes de sécurité spécifiés.<br><br>Pour chaque groupe spécifié, vous pouvez spécifier les utilisateurs qui peuvent partager avec des liens Tout le monde.|
 |Les invités doivent se connecter à l’aide du compte auquel les invitations de partage ont été envoyées|Désactivé|Empêche les invités d’utiliser des invitations de partage de sites à l’aide d’une envoyer un e-mail différente de celle à laquelle l’invitation a été envoyée.<br><br>L’[intégration de SharePoint et de OneDrive avec Azure AD B2B (préversion)](/sharepoint/sharepoint-azureb2b-integration-preview) n’utilise pas ce paramètre parce que tous les invités sont ajoutés à l’annuaire en fonction de l’adresse e-mail à laquelle l’invitation a été envoyée. D’autres adresses e-mail ne peuvent pas être utilisées pour accéder au site.|
 |Autoriser les invités à partager des éléments qui ne leur appartiennent pas|Activé|Lorsque ce paramètre est **Activé**, les invités peuvent partager des éléments dont ils ne sont pas propriétaires avec d’autres utilisateurs ou invités. Quand il est **Désactivé**, ils ne le peuvent pas. Les invités peuvent toujours partager des éléments sur lesquels ils disposent d’un contrôle total.|
+|Les personnes qui utilisent un code de vérification doivent se s’authentifier à nouveau après ce nombre de jours|Désactivé|Ce paramètre vous permet d’exiger que les utilisateurs s’authentifiant avec un code secret à usage unique doivent s’authentifier à nouveau après un certain nombre de jours.|
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Paramètres de lien de fichier et de dossier SharePoint et OneDrive
 
@@ -182,21 +184,6 @@ Lorsque des fichiers et dossiers sont partagés sur SharePoint et OneDrive, les 
 |Ces liens doivent expirer dans le nombre de jours suivant|Désactivé (pas d’expiration)|Spécifie le nombre de jours à l’issue desquels un lien *Tout le monde* expire après sa création. Il n’est pas possible de renouveler des liens qui ont expiré. Si vous devez continuer à partager après l’expiration du lien, créez un nouveau lien.|
 |Autorisations d’accès aux fichiers|Afficher et modifier|Spécifie les niveaux d’autorisation d’accès au fichier disponibles pour les utilisateurs lors de la création d’un lien accessible à *Tout le monde*. Si **Affichage** est sélectionné, les utilisateurs ne peuvent créer des liens de fichiers accessibles à *Tout le monde* qu’avec des autorisations d’affichage. Si l’option **Afficher et modifier** est activée, les utilisateurs ont le choix entre les autorisations Afficher et Afficher et modifier quand ils créent le lien.|
 |Autorisations d’accès aux dossiers|Afficher, modifier et charger|Spécifie les niveaux d’autorisation d’accès au dossier disponibles pour les utilisateurs lors de la création d’un lien accessible à *Tout le monde*. Si **Affichage** est sélectionné, les utilisateurs ne peuvent créer des liens de dossiers accessibles à *Tout le monde* qu’avec des autorisations d’affichage. Si l’option **Afficher, modifier et charger** est activée, les utilisateurs ont le choix entre les autorisations Afficher, Modifier et Charger quand ils créent le lien.|
-
-### <a name="sharepoint-and-onedrive-security-group-settings"></a>Paramètres de groupe de sécurité dans SharePoint et OneDrive
-
-Si vous souhaitez limiter le nombre de personnes pouvant partager avec des invités dans SharePoint et OneDrive, vous le pouvez en limitant le partage aux personnes appartenant à des groupes de sécurité spécifiés. Ces paramètres n’affectent pas le partage via Groupes Microsoft 365 et Teams. Des invités invités via un groupe ou une équipe auraient également accès au site associé, même si le partage de documents et de dossiers ne pourrait être effectué que par des personnes appartenant aux groupes de sécurité spécifiés.
-
-**Navigation :** Centre d’administration SharePoint > Partage > Limiter le partage externe avec des groupes de sécurité spécifiques
-
-![Capture d’écran des paramètres de groupe de sécurité pour le partage SharePoint au niveau de l’organisation](../media/sharepoint-organization-external-sharing-security-groups.png)
-
-| Paramètre | Par défaut | Description |
-|:-----|:-----|:-----|
-|Autoriser uniquement les membres des groupes de sécurité sélectionnés à partager du contenu avec des utilisateurs externes authentifiés|Désactivé|Lorsque le paramètre est **activé**, seules les personnes appartenant aux groupes de sécurité spécifiés peuvent partager avec des personnes extérieures à l’organisation. Seuls des liens *Personnes spécifiques* sont disponibles. Le partage avec *Tout le monde* est désactivé sauf si le paramètre **Autoriser uniquement les membres des groupes de sécurité sélectionnés à partager du contenu avec des utilisateurs externes authentifiés ou disposant de liens anonymes** est également **Activé**.|
-|Autoriser uniquement les membres des groupes de sécurité sélectionnés à partager du contenu avec des utilisateurs externes authentifiés ou disposant de liens anonymes|Désactivé|Lorsque le paramètre est **Activé**, seules les personnes appartenant aux groupes de sécurité spécifiés peuvent partager avec des invités. Les liens *Tout le monde* et *Personnes spécifiques* sont disponibles.|
-
-Ces deux paramètres peuvent être utilisés en même temps. Si un utilisateur appartient à des groupes de sécurité spécifiés pour les deux paramètres, le niveau d’autorisation le plus élevé prévaut (*Tout le monde* plus *Utilisateur spécifique*). Les groupes de sécurité imbriqués sont pris en charge.
 
 ## <a name="sharepoint-site-level"></a>SharePoint (au niveau du site)
 
