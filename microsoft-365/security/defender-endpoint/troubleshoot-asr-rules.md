@@ -1,6 +1,6 @@
 ---
 title: Signaler et résoudre les problèmes de Règles asr de Microsoft Defender pour les points de terminaison
-description: Cette rubrique décrit comment signaler et dépanner les règles asr de Microsoft Defender for Endpoint
+description: Cette rubrique décrit comment signaler et dépanner les règles de résolution des problèmes de Microsoft Defender pour endpoint ASR
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, microsoft defender pour le point de terminaison
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,23 +16,23 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c043e97d6c02e4f41d000e9ce8cfea4a0950252a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 65e3e8d1baef7ca4440824c9a262f0b5f696b657
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246144"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194744"
 ---
 # <a name="report-and-troubleshoot-microsoft-defender-for-atp-asr-rules"></a>Signaler et résoudre les problèmes de Microsoft Defender pour les règles DE LAR ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Le centre Microsoft 365 de sécurité est la nouvelle interface pour la surveillance et la gestion de la sécurité au sein de vos identités, données, appareils, applications et infrastructure Microsoft. Vous pouvez ici consulter facilement l’état de la sécurité de votre organisation, agir pour configurer les appareils, les utilisateurs et les applications ainsi que recevoir des alertes relatives aux activités suspectes. Le Centre de sécurité Microsoft 365 est destiné aux administrateurs de la sécurité et aux équipes d’exploitation de la sécurité pour améliorer la gestion et la protection de leur organisation. Visitez le centre Microsoft 365 sécurité sur https://security.microsoft.com .
+Le centre Microsoft 365 de sécurité est la nouvelle interface de surveillance et de gestion de la sécurité au sein de vos identités, données, appareils, applications et infrastructure Microsoft. Vous pouvez ici consulter facilement l’état de la sécurité de votre organisation, agir pour configurer les appareils, les utilisateurs et les applications ainsi que recevoir des alertes relatives aux activités suspectes. Le Centre de sécurité Microsoft 365 est destiné aux administrateurs de la sécurité et aux équipes d’exploitation de la sécurité pour améliorer la gestion et la protection de leur organisation. Visitez le centre Microsoft 365 sécurité sur https://security.microsoft.com .
 Dans Microsoft 365 de sécurité, nous vous proposons un coup d’œil complet sur la configuration et les événements actuels des règles asr dans votre patrimoine. Notez que vos appareils doivent être intégrés au service Microsoft Defender for Endpoint pour que ces rapports soient remplis.
 Voici une capture d’écran du centre de sécurité Microsoft 365 (sous **Réduction** de la surface d’attaque des appareils  >    >  **de rapports).** Au niveau de l’appareil, **sélectionnez Configuration** dans le volet Règles de réduction de **la surface d’attaque.** L’écran suivant s’affiche, dans lequel vous pouvez sélectionner un appareil spécifique et vérifier sa configuration de règle asr individuelle.
 
@@ -42,7 +42,7 @@ Voici une capture d’écran du centre de sécurité Microsoft 365 (sous **Rédu
 
 L’une des fonctionnalités les plus puissantes de Microsoft Defender pour point de terminaison est le recherche avancée. Si vous ne connaissez pas le hunting avancé, recherchez de manière proactive les menaces [avec le chasse avancée.](advanced-hunting-overview.md)
 
-Le repérage avancé est un outil de repérage de menaces basé sur une requête (Kusto Query Language) qui vous permet d’explorer jusqu’à 30 jours des données capturées (brutes) que le point de terminaison MDE détection et réponse (PEPT) collecte à partir de tous vos ordinateurs. Grâce à la recherche avancée, vous pouvez inspecter de manière proactive les événements afin de localiser des indicateurs et des entités intéressants. L’accès flexible aux données permet un recherche sans contraintes pour les menaces connues et potentielles.
+Le hunting avancé est un outil de recherche de menace basé sur une requête (Kusto Query Language) qui vous permet d’explorer jusqu’à 30 jours des données capturées (brutes) collectées par Defender for Endpoint à partir de vos appareils. Grâce à la recherche avancée, vous pouvez inspecter de manière proactive les événements pour rechercher des indicateurs et des entités intéressants. L’accès flexible aux données permet un recherche sans contraintes pour les menaces connues et potentielles.
 
 Grâce à la recherche avancée, il est possible d’extraire des informations sur les règles de la asr, de créer des rapports et d’obtenir des informations détaillées sur le contexte d’un événement d’audit ou de blocage de règle asr donné.
 
@@ -56,9 +56,9 @@ Avec le repérage avancé, vous pouvez mettre en forme les requêtes à votre co
 
 ## <a name="microsoft-defender-for-endpoint-machine-timeline"></a>Chronologie de l’ordinateur Microsoft Defender for Endpoint
 
-Une alternative à la recherche avancée, mais avec une étendue plus étroite, est la chronologie de l’ordinateur Microsoft Defender for Endpoint. Vous pouvez afficher tous les événements collectés d’un appareil, au cours des six derniers mois, dans le Centre de sécurité Microsoft Defender, en allant dans la liste Ordinateurs, sélectionnez un ordinateur donné, puis cliquez sur l’onglet Chronologie.
+Une alternative à la recherche avancée, mais avec une étendue plus étroite, est la chronologie de l’ordinateur Microsoft Defender for Endpoint. Vous pouvez afficher tous les événements collectés d’un appareil, au cours des six derniers mois, dans la Centre de sécurité Microsoft Defender, en allant dans la liste Ordinateurs, sélectionnez un ordinateur donné, puis cliquez sur l’onglet Chronologie.
 
-L’image ci-dessous montre une capture d’écran de l’affichage Chronologie de ces événements sur un point de terminaison donné.  À partir de cet affichage, vous pouvez filtrer la liste des événements en fonction de n’importe quel groupe d’événements le long du volet droit. Vous pouvez également activer ou désactiver les événements marqués et verbose lors de l’affichage des alertes et du défilement dans la chronologie historique.
+Voici une capture d’écran de l’affichage Chronologie de ces événements sur un point de terminaison donné.  À partir de cet affichage, vous pouvez filtrer la liste des événements en fonction de n’importe quel groupe d’événements le long du volet droit. Vous pouvez également activer ou désactiver les événements marqués et verbose lors de l’affichage des alertes et du défilement dans la chronologie historique.
 
 :::image type="content" source="images/mic-sec-def-timelinenew.png" alt-text="Chronologie du centre de sécurité microsoft Defender":::
 
@@ -84,7 +84,7 @@ Exemple :
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="obtenir un exemple de mpreference":::
 
-L’exemple ci-dessus montre tous les ID pour les règles de asr dont le paramètre est différent de 0 (non configuré).
+L’exemple ci-dessus montre tous les ID pour les règles de asr qui ont un paramètre différent de 0 (non configuré).
 
 L’étape suivante consiste ensuite à lister les actions réelles (Bloquer ou Auditer) avec qui chaque règle est configurée. 
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Découvrez ce qui se produit lorsqu’un examen ou un dossier juridique pris en charge par un Advanced eDiscovery est fermé ou supprimé.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: efbcbe34e6d7d8b564bcfa0cf9bbd8a1fbb59709
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657638"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194627"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Fermer ou supprimer un cas Advanced eDiscovery dossier
 
@@ -36,7 +36,7 @@ Voici ce qui se produit lorsque vous fermez Advanced eDiscovery cas :
 
 - La fermeture d’un cas désactive uniquement les conservations associées à ce cas. Si d’autres sont conservées sur un emplacement de contenu (par exemple, une attente pour litige, une découverte électronique principale ou une attente d’un autre cas de Advanced eDiscovery), celles-ci sont conservées.
 
-- Le cas est toujours répertorié sur la page eDiscovery dans le centre Microsoft 365 conformité. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés.
+- Le cas est toujours répertorié sur la page eDiscovery dans la Centre de conformité Microsoft 365. Les détails, les conservations, les recherches et les membres d’un cas fermé sont conservés.
 
 - Vous pouvez modifier un cas après sa fermeture. Par exemple, vous pouvez ajouter ou supprimer des membres, créer des recherches, exporter des résultats de recherche et préparer des résultats de recherche pour analyse dans Advanced eDiscovery. La principale différence entre les cas actifs et fermés est que les conservations sont désactivées lorsqu’un cas est fermé.
 
@@ -46,9 +46,9 @@ Pour fermer un cas :
 
 2. Sous l’onglet **Paramètres**, sous **Informations de cas**, cliquez sur **Sélectionner**.
 
-3. En bas de la page volant **Informations** sur la cas, cliquez sur (**...**) **Plus d’options,** puis cliquez sur **Fermer le cas**.
+   ![Accéder à la page de flyout des informations de cas dans Advanced eDiscovery cas](..\media\AeDSelectCaseInformation.png) 
 
-   ![Option du menu Plus d’options pour fermer Advanced eDiscovery cas](..\Media\CloseAdvancedeDiscoveryCase.png)
+3. En bas de la page volant **Informations** sur la cas, cliquez sur **Actions,** puis cliquez sur **Fermer le cas.**
 
    L’exécution du processus de clôture peut prendre jusqu’à 60 minutes.
 
@@ -62,20 +62,18 @@ Pour rouvrir un cas fermé :
 
 2. Sous l’onglet **Paramètres**, sous **Informations de cas**, cliquez sur **Sélectionner**.
 
-3. En bas de la page volant **Informations** sur la cas, cliquez sur (**...**) **Plus d’options,** puis cliquez sur **Rouvrir le cas.**
-
-   ![Option du menu Plus d’options pour rouvrir un cas Advanced eDiscovery dossier](..\Media\ReopenAdvancedeDiscoveryCase.png)
+3. Au bas de la page volant **Informations** sur la cas, cliquez sur **Actions,** puis cliquez sur **Rouvrir le cas.**
 
    Le processus de réouverture peut prendre jusqu’à 60 minutes.
 
 ## <a name="delete-a-case"></a>Supprimer un cas
 
-Vous pouvez supprimer les cas d’Advanced eDiscovery actifs et fermés. Lorsque vous supprimez un cas, tous les composants associés au cas, tels que la liste des consignataires, communications, recherches, ensembles de révision et tâche d’exportation sont supprimés. Le cas est supprimé de la liste des cas sur la page **Advanced eDiscovery** dans le centre Microsoft 365 conformité. Vous ne pouvez pas récupérer ou rouvrir un cas supprimé.
+Vous pouvez supprimer les cas d’Advanced eDiscovery actifs et fermés. Lorsque vous supprimez un cas, tous les composants associés au cas, tels que la liste des consignataires, communications, recherches, ensembles de révision et tâche d’exportation sont supprimés. Le cas est supprimé de la liste des cas sur la page **Advanced eDiscovery** dans la Centre de conformité Microsoft 365. Vous ne pouvez pas récupérer ou rouvrir un cas supprimé.
 
 > [!NOTE]
 > Dans les scénarios de débordement de données, la seule façon de supprimer des éléments d’un jeu à réviser consiste à supprimer Advanced eDiscovery cas. Les autres méthodes de « recherche et purge » ne suppriment pas les éléments d’un jeu à réviser.
 
-Avant de pouvoir supprimer un cas (qu’il soit actif ou fermé), vous devez d’abord supprimer toutes les *réserves* associées au cas. Cela inclut la suppression des maintiens avec l’état **« Off**».
+Avant de pouvoir supprimer un cas (qu’il soit  actif ou fermé), vous devez d’abord supprimer toutes les ententes associées au cas. Cela inclut la suppression des maintiens avec l’état **« Off**».
 
 Pour supprimer les cas associés à un cas :
 
@@ -83,7 +81,7 @@ Pour supprimer les cas associés à un cas :
 
 2. Cliquez sur la attente à supprimer.
 
-3. Dans la page volante, cliquez sur **Supprimer la attente.**
+3. Dans la page volante, cliquez **sur Supprimer la attente.**
 
 Pour supprimer un cas :
 
@@ -91,6 +89,5 @@ Pour supprimer un cas :
 
 2. Sous l’onglet **Paramètres**, sous **Informations de cas**, cliquez sur **Sélectionner**.
 
-3. En bas de la page volant **Informations** sur la cas, cliquez sur (**...**) **Plus d’options,** puis cliquez sur **Supprimer le cas**.
+3. En bas de la page volant **Informations** sur la cas, cliquez sur **Actions,** puis cliquez **sur Supprimer le cas.**
 
-   ![Option du menu Plus d’options pour supprimer Advanced eDiscovery cas](..\Media\DeleteAdvancedeDiscoveryCase.png)

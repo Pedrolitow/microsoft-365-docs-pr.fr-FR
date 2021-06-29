@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 7ebb37e80cae0e9dd70d01600c47bd1459c122c3
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730869"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194900"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Planifier une mise à jour de Microsoft Defender pour point de terminaison (Linux)
 
@@ -98,7 +98,7 @@ Tapez « :wq » avec les guillemets doubles.
 
 Pour afficher vos travaux cron, tapez `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="mettre à jour MDE linux":::
+:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="mettre à jour Defender pour le point de terminaison sur Linux":::
 
 Pour inspecter les séries de travail de recherche : `sudo grep mdatp /var/log/cron`
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 077411e5af5825efcf81d19ce8cb72ef850ae17b
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 7243e8f6fad225e6c4570184736e8d6588466d0a
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054319"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194960"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Déploiement basé sur Intune pour Microsoft Defender pour Endpoint sur macOS
 
@@ -45,7 +45,7 @@ Cette rubrique décrit comment déployer Microsoft Defender pour endpoint sur ma
 
 Avant de commencer, consultez la page principale de Microsoft Defender pour point de terminaison sur [macOS](microsoft-defender-endpoint-mac.md) pour obtenir une description des conditions préalables et de la requise pour la version logicielle actuelle.
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Le tableau suivant récapitule les étapes à suivre pour déployer et gérer Microsoft Defender pour endpoint sur Mac, via Intune. Des étapes plus détaillées sont disponibles ci-dessous.
 
@@ -101,12 +101,12 @@ Ce profil contient des informations de licence pour Microsoft Defender pour le p
     > [!div class="mx-imgBorder"]
     > ![Création d’un profil de configuration personnalisé](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. Choisissez un nom pour le profil, par exemple, « Intégration MDE pour macOS ». Cliquez sur **Suivant**.
+1. Choisissez un nom pour le profil, par exemple, « Intégration de Defender ou de point de terminaison pour macOS ». Cliquez sur **Suivant**.
 
     > [!div class="mx-imgBorder"]
     > ![Profil de configuration personnalisé - nom](images/mdatp-6-systemconfigurationprofiles-2.png)
 
-1. Choisissez un nom pour le nom du profil de configuration, par exemple, « Intégration MDE pour macOS ».
+1. Choisissez un nom pour le nom du profil de configuration, par exemple« Defender pour l’intégration de point de terminaison pour macOS ».
 1. Sélectionnez intune/WindowsDefenderATPOnboarding.xml que vous avez extrait du package d’intégration ci-dessus en tant que fichier de profil de configuration.
 
     > [!div class="mx-imgBorder"]
@@ -172,7 +172,7 @@ Ce profil est nécessaire pour macOS 10.15 (Genre) ou une ancienne. Il sera igno
 
 Téléchargez [**fulldisk.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) partir de [notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Suivez les instructions d’intégration du [blob](#onboarding-blob) ci-dessus, en utilisant « MDE Full Disk Access » comme nom de profil et téléchargé **fulldisk.mobileconfig** comme nom de profil de configuration.
+Suivez les instructions d’intégration du [blob](#onboarding-blob) ci-dessus, en utilisant « Defender for Endpoint Full Disk Access » comme nom de profil et **téléchargé fulldisk.mobileconfig** comme nom de profil de configuration.
 
 ### <a name="network-filter"></a>Filtre réseau
 
@@ -180,7 +180,7 @@ Dans le cadre des fonctionnalités de détection et de réponse des points de te
 
 Téléchargez [**netfilter.mobileconfig à**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) partir de [notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « Filtre réseau MDE » comme nom de profil et téléchargé **netfilter.mobileconfig** comme nom de profil de configuration.
+Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « Defender for Endpoint Network Filter » comme nom de profil et le fichier **netfilter.mobileconfig** téléchargé en tant que nom de profil de configuration.
 
 ### <a name="notifications"></a>Notifications
 
@@ -188,7 +188,7 @@ Ce profil permet à Microsoft Defender pour point de terminaison sur macOS et Mi
 
 Téléchargez [**notif.mobileconfig à partir**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) [de notre GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
-Suivez les instructions d’intégration du [blob](#onboarding-blob) ci-dessus, en utilisant « Notifications MDE » comme nom de profil et téléchargé **notif.mobileconfig** comme nom de profil de configuration.
+Suivez les instructions d’intégration de [blob](#onboarding-blob) ci-dessus, en utilisant « Defender pour les notifications de point de terminaison » comme nom de profil et téléchargé **notif.mobileconfig** comme nom de profil de configuration.
 
 ### <a name="view-status"></a>Afficher l’état
 

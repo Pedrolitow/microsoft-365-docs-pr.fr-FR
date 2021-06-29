@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Cet article contient un résumé de la façon dont Microsoft applique l’isolation des clients dans les services cloud tels que Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c5be65186b75f6056a64b776e4f0d25bcd55eb1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b52d936bb00ac0adef0baf428cbc5f9a8f8aba49
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923075"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194648"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Isolation du client dans Microsoft 365
 
@@ -31,15 +31,15 @@ Sur la base des investissements et [](https://www.microsoft.com/trust-center) de
 
 Les deux principaux objectifs de la maintenance de l’isolation des locataires dans un environnement à plusieurs locataires sont les autres :
 
-1.    prévention de la fuite de contenu client ou d’un accès non autorisé au contenu client entre les clients ; et
+1.    prévention de la fuite ou de l’accès non autorisé au contenu client entre les clients ; et
 2.    Empêcher les actions d’un client d’affecter le service pour un autre client
 
-Plusieurs formes de protection ont été implémentées dans l’ensemble des Microsoft 365 pour empêcher les clients de compromettre les services ou applications Microsoft 365 ou d’obtenir un accès non autorisé aux informations d’autres clients ou du système Microsoft 365 lui-même, notamment :
+Plusieurs formes de protection ont été implémentées dans Microsoft 365 pour empêcher les clients de compromettre les services ou applications Microsoft 365 ou d’obtenir un accès non autorisé aux informations d’autres clients ou au système Microsoft 365 lui-même, notamment :
 
 - L’isolation logique du contenu client au sein de chaque client pour Microsoft 365 services est obtenue par le biais Azure Active Directory’autorisation et du contrôle d’accès basé sur les rôles.
 - SharePoint Online fournit des mécanismes d’isolation des données au niveau du stockage.
-- Microsoft utilise une sécurité physique rigoureuse, un filtrage des antécédents et une stratégie de chiffrement à plusieurs couches pour protéger la confidentialité et l’intégrité du contenu des clients. Tous les Microsoft 365 de données ont des contrôles d’accès biométrique, la plupart nécessitant des impressions de paume pour obtenir un accès physique. En outre, tous les employés de Microsoft basés aux États-Unis doivent réussir une vérification des antécédents standard dans le cadre du processus d’embauche. Pour plus d’informations sur les contrôles utilisés pour l’accès administratif dans Microsoft 365, voir Microsoft 365 [Contrôles d’accès administratifs.](/compliance/assurance/assurance-administrative-access-controls-overview)
-- Microsoft 365 utilise des technologies côté service qui chiffrent le contenu client au repos et en transit, notamment BitLocker, chiffrement par fichier, TLS (Transport Layer Security) et IPsec (Internet Protocol Security). Pour plus d’informations sur le chiffrement dans Microsoft 365, voir Technologies de chiffrement de [données dans Microsoft 365](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
+- Microsoft utilise une sécurité physique rigoureuse, un filtrage des antécédents et une stratégie de chiffrement à plusieurs couches pour protéger la confidentialité et l’intégrité du contenu des clients. Tous les Microsoft 365 de données ont des contrôles d’accès biométrique, la plupart nécessitant des empreintes de paume pour obtenir un accès physique. En outre, tous les employés de Microsoft basés aux États-Unis doivent réussir une vérification des antécédents standard dans le cadre du processus d’embauche. Pour plus d’informations sur les contrôles utilisés pour l’accès administratif dans Microsoft 365, voir Microsoft 365 [Contrôles d’accès administratifs.](/compliance/assurance/assurance-administrative-access-controls-overview)
+- Microsoft 365 utilise des technologies côté service qui chiffrent le contenu client au repos et en transit, notamment BitLocker, le chiffrement par fichier, TLS (Transport Layer Security) et IPsec (Internet Protocol Security). Pour plus d’informations sur le chiffrement dans Microsoft 365, voir Technologies de chiffrement de [données dans Microsoft 365](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
 
 Ensemble, les protections répertoriées ci-dessus fournissent des contrôles d’isolation logique robustes qui fournissent une protection contre les menaces et une atténuation équivalentes à celle fournie par l’isolation physique seule.
 
@@ -48,7 +48,6 @@ Ensemble, les protections répertoriées ci-dessus fournissent des contrôles d�
 - [Isolation et contrôle d’accès dans Azure Active Directory](microsoft-365-isolation-in-azure-active-directory.md)
 - [Isolation du client dans Office Graph et Delve](microsoft-365-isolation-in-graph-and-delve.md)
 - [Isolation du client dans Microsoft 365 Search](microsoft-365-isolation-in-microsoft-365-search.md)
-- [Isolation du client dans Office 365 Video](microsoft-365-isolation-in-microsoft-365-video.md)
 - [Limites de ressources](/compliance/assurance/assurance-resource-limits)
 - [Surveillance et test des limites du client](/compliance/assurance/assurance-monitoring-and-testing)
 - [Isolation et contrôle d’accès dans Microsoft 365](microsoft-365-isolation-in-microsoft-365.md)

@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Suivez le chemin d’accès d’un message entrant via la pile de filtrage des menaces dans Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 1113d04cabdabe2925242cb18dde78daf9ef6e2c
+ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683294"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53194804"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Protection contre les menaces étape par étape dans Microsoft Defender pour Office 365
 
@@ -37,13 +37,13 @@ Les blocs Edge sont conçus pour être automatiques. Dans le cas d’un faux pos
 
 1. **La limitation du** réseau protège l’infrastructure Office 365 et les clients contre les attaques par déni de service (DOS) en limitant le nombre de messages qui peuvent être envoyés par un ensemble spécifique d’infrastructure.
 
-2. **La réputation et la limitation d’IP** bloquent l’envoi de messages provenant d’adresses IP de connexion connues et non bonnes. Si une adresse IP spécifique envoie de nombreux messages sur une courte période, ils seront limitées.
+2. **La réputation et la limitation d’IP** bloquent l’envoi de messages provenant d’adresses IP de connexion connues et non bonnes. Si une adresse IP spécifique envoie de nombreux messages sur une courte période de temps, ils seront limitées.
 
-3. **La réputation du** domaine bloque l’envoi de messages provenant d’un domaine connu comme étant mauvais.
+3. **La réputation du** domaine bloque l’envoi de messages à partir d’un domaine connu comme étant mauvais.
 
 4. **Le filtrage Edge basé sur l’annuaire** bloque les tentatives de recherche des informations d’annuaire d’une organisation via SMTP.
 
-5. **La détection de la backscatter** empêche une organisation d’être attaquer par le biais de rapports de non-remise non valides.
+5. **La détection de la backscatter** empêche une organisation d’être attaquer par le biais de rapports de non-remise (NDR) non valides.
 
 6. **Le filtrage amélioré pour les connecteurs conserve** les informations d’authentification même lorsque le trafic passe par un autre appareil avant d’atteindre Office 365. Cela améliore la précision de la pile de filtrage, y compris le clustering heuristique, la protection contre l’usurpation d’informations et les modèles d’apprentissage automatique anti-hameçonnage, même dans des scénarios de routage complexes ou hybrides.
 
@@ -51,7 +51,7 @@ Les blocs Edge sont conçus pour être automatiques. Dans le cas d’un faux pos
 
 Les fonctionnalités d’intelligence de l’expéditeur sont essentielles pour l’hameçonnage, l’usurpation d’identité et le courrier indésirable, ainsi que pour la détection du hameçonnage. La plupart de ces fonctionnalités sont configurables individuellement.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La phase 2 du filtrage dans MDO est l’intelligence de l’expéditeur.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="La phase 2 du filtrage dans Defender pour Office 365 est l’intelligence de l’expéditeur.":::
 
 1. **Les déclencheurs et** alertes de détection de compromission de compte sont déclenchés lorsqu’un compte présente un comportement anormal, cohérent avec la compromission. Dans certains cas, le compte d’utilisateur est bloqué et empêché d’envoyer d’autres messages électroniques jusqu’à ce que le problème soit résolu par l’équipe des opérations de sécurité d’une organisation.
 
@@ -65,7 +65,7 @@ Les fonctionnalités d’intelligence de l’expéditeur sont essentielles pour 
 
     **La veille contre l’usurpation d’informations intra-organisationnelle** détecte et bloque les tentatives d’usurpation d’informations à partir d’un domaine au sein de l’organisation.
 
-4. **La veille contre** l’usurpation d’usurpation d’un domaine détecte et bloque les tentatives d’usurpation d’informations provenant d’un domaine extérieur à l’organisation.
+4. **La veille contre** l’usurpation d’usurpation d’un domaine à un autre domaine détecte et bloque les tentatives d’usurpation d’informations à partir d’un domaine extérieur à l’organisation.
 
 5. **Le filtrage en bloc** permet aux administrateurs de configurer un niveau de confiance en bloc (BCL) indiquant si le message a été envoyé à partir d’un expéditeur en bloc. Les administrateurs peuvent utiliser le curseur en bloc dans la stratégie anti-courrier indésirable pour déterminer le niveau de courrier en nombre à traiter comme courrier indésirable.
 
@@ -89,7 +89,7 @@ Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique 
 
 3. Les moteurs antivirus sont également utilisés pour taper toutes les pièces  jointes de sorte que le blocage des types puisse bloquer toutes les pièces jointes de types spécifiés par l’administrateur.
 
-4. Chaque fois que Microsoft Defender pour Office 365 détecte une pièce jointe malveillante, le hachage du fichier et un hachage de son contenu actif sont ajoutés à la réputation Exchange Online Protection (EOP). **Le blocage de la** réputation des pièces jointes bloque ce fichier sur tous les Office 365 et sur les points de terminaison, par le biais d’appels cloud MSAV.
+4. Chaque fois que Microsoft Defender pour Office 365 détecte une pièce jointe malveillante, le hachage du fichier et un hachage de son contenu actif sont ajoutés à la réputation Exchange Online Protection (EOP). **Le blocage de la** réputation des pièces jointes bloque ce fichier sur tous les Office 365 et sur les points de terminaison, via les appels cloud MSAV.
 
 5. **Le clustering heuristique** peut déterminer qu’un fichier est suspect en fonction de l’heuristique de remise. Lorsqu’une pièce jointe suspecte est trouvée, l’intégralité de la campagne est suspendue et le fichier est en bac à sable. Si le fichier est jugé malveillant, toute la campagne est bloquée.
 
@@ -99,7 +99,7 @@ Dans cette phase, la pile de filtrage commence à gérer le contenu spécifique 
 
 8. **Les heuristiques de contenu** peuvent détecter des messages suspects en fonction de la structure et de la fréquence des mots dans le corps du message, à l’aide de modèles d’apprentissage automatique.
 
-9. **Les sandboxs de pièces jointes sécurisées** sont toutes les pièces jointes de Defender pour Office 365 clients, à l’aide de l’analyse dynamique pour détecter les menaces jamais vues.
+9. **Coffre pièces jointes** toutes les pièces jointes de Defender pour Office 365 clients, à l’aide de l’analyse dynamique pour détecter les menaces jamais vues.
 
 10. **La détonation de** contenu lié traite chaque URL liée à un fichier dans un e-mail comme une pièce jointe, en bac à sable (sandbox) asynchrone au moment de la remise.
 
@@ -111,9 +111,9 @@ La dernière étape a lieu après la remise du courrier ou du fichier, agissant 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="La phase 4 du filtrage dans Defender pour Office 365 est la protection post-remise.":::
 
-1. **La sécurité des** liens est Defender Office 365 protection en temps de clic de l’utilisateur. Chaque URL de chaque message est enveloppée pour pointer vers les serveurs de liens sécurisés Microsoft. Lorsqu’un utilisateur clique sur une URL, elle est vérifiée par rapport à la dernière réputation, avant que l’utilisateur soit redirigé vers le site cible. L’URL est en bac à sable asynchrone pour mettre à jour sa réputation.
+1. **Coffre liens est** Defender pour Office 365 protection au moment du clic. Chaque URL de chaque message est enveloppée pour pointer vers les serveurs de liens Coffre Microsoft. Lorsqu’un utilisateur clique sur une URL, elle est vérifiée par rapport à la dernière réputation, avant que l’utilisateur soit redirigé vers le site cible. L’URL est en bac à sable asynchrone pour mettre à jour sa réputation.
 
-2. La purge automatique heure zéro **(ZAP)** pour hameçonnage détecte et attaque de manière inf rement les messages de hameçonnage malveillants qui ont déjà été remis à Exchange Online boîtes aux lettres.
+2. La purge automatique heure zéro **(ZAP)** pour hameçonnage détecte et s’attaque de manière indisticable aux messages de hameçonnage malveillants qui ont déjà été remis à Exchange Online boîtes aux lettres.
 
 3. **ZaP pour les programmes malveillants** détecte et détecte de manière malveillante les messages de programmes malveillants qui ont déjà été remis à Exchange Online boîtes aux lettres.
 
@@ -123,17 +123,17 @@ La dernière étape a lieu après la remise du courrier ou du fichier, agissant 
 
 6. **Les add-ins** Report Message permettent aux utilisateurs de signaler facilement les faux positifs (bon e-mail, marqués par erreur comme faux *)* ou les faux négatifs (courriers électroniques erronés marqués comme étant *bons)* à Microsoft pour une analyse plus approfondie.
 
-7. Les liens sécurisés pour **les clients Office offrent** la même protection de liens sécurisés en temps de clic, en natif, à l’intérieur des clients Office tels que Word, PowerPoint et Excel.
+7. **Coffre** Links pour les clients Office offre la même protection Coffre Links en temps de clic, en natif, à l’intérieur des clients Office tels que Word, PowerPoint et Excel.
 
-8. **La protection OneDrive, SharePoint** et Teams offre la même protection contre les pièces jointes sécurisées contre les fichiers malveillants, en natif, à l’intérieur de OneDrive, SharePoint et Microsoft Teams.
+8. **La protection OneDrive, SharePoint** et Teams offre la même protection de pièces jointes Coffre contre les fichiers malveillants, en natif, à l’intérieur de OneDrive, SharePoint et Microsoft Teams.
 
-9. Lorsqu’une URL qui pointe vers un fichier est sélectionnée après la remise, le **détonation** de contenu lié affiche une page d’avertissement jusqu’à ce que le bac à sable du fichier soit terminé et que l’URL soit sûre.
+9. Lorsqu’une URL qui pointe vers un fichier est sélectionnée après la remise, la **détonation** de contenu lié affiche une page d’avertissement jusqu’à ce que le bac à sable du fichier soit terminé et que l’URL soit sûre.
 
 ## <a name="the-filtering-stack-diagram"></a>Diagramme de pile de filtrage
 
-Le diagramme final (comme pour toutes les parties du diagramme qui le compose) est sujet à modification à mesure que le produit *croît et se développe.* Signetz cette page  et utilisez l’option de commentaires que vous trouverez en bas si vous devez demander après les mises à jour. Pour vos enregistrements, il s’agit de la pile avec toutes les phases dans l’ordre :
+Le diagramme final (comme pour toutes les parties du diagramme qui le compose) peut être changé à mesure que le produit croît *et se développe.* Signetz cette page  et utilisez l’option de commentaires que vous trouverez en bas si vous devez demander après les mises à jour. Pour vos enregistrements, il s’agit de la pile avec toutes les phases dans l’ordre :
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Toutes les phases de filtrage dans MDO dans l’ordre, 1 à 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Toutes les phases de filtrage dans Defender Office 365 dans l’ordre, 1 à 4.":::
 
 ## <a name="more-information"></a>Plus d’informations
 
