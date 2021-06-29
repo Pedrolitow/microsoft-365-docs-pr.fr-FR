@@ -25,20 +25,19 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Recommandations en matière de sécurité et de collaboration Microsoft 365 Business Premium pour les plus petites affaires, y compris les plus petites entreprises, les pratiques, et les campagnes politiques.
-ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 34f36a86167ebba2ad80cc0046184b3c1997f845
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245027"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177464"
 ---
-<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 pour les petites entreprises et les campagnes
-===========================
+# <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 pour les petites entreprises et les campagnes
 
 Si vous avez Microsoft 365 Business Premium, les conseils de cette bibliothèque sont le moyen le plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité. Dans notre monde actuel, le maintien de la sécurité des données et des communications est une priorité, notamment pour les pratiques médicales et juridiques, les campagnes politiques, ainsi que de nombreuses autres entreprises plus petites. Cette solution fournit un ensemble de recommandations conçues pour contribuer à vous protéger, vous et vos données. Cette bibliothèque inclut une aide à la configuration et à l’utilisation de cet environnement recommandé, quel que soit votre type d'entreprise.
 
 
-![Microsoft 365 Business Premium protège vos outils de productivité, vos outils de collaboration, le stockage de fichiers, l’e-mail, les appareils et l’identité](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium protège vos outils de productivité, vos outils de collaboration, le stockage de fichiers, l’e-mail, les appareils et l’identité](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
 
 Cette configuration inclut les conseils suivants sur la productivité, la collaboration, le stockage de fichiers, l’e-mail, les appareils et l’identité pour protéger votre entreprise :
 
@@ -46,14 +45,13 @@ Cette configuration inclut les conseils suivants sur la productivité, la collab
 | ----- | ----- | ----- | ----- |
 |E-mail | Utilisez l’authentification multifacteur, la protection avancée contre le hameçonnage ATP, les liens fiables ATP et les pièces jointes fiables ATP, puis l’e-mail chiffré pour les informations sensibles.| [Configurer l’authentification multifacteur](m365-campaigns-multifactor-authenication.md), [Protéger contre les attaques par hameçonnage](m365-campaigns-phishing-and-attacks.md), [Chiffrer ou étiqueter vos e-mails sensibles](send-encrypted-email.md) |
 |iPhones et appareils Android |Utiliser l’authentification multifacteur, configurer les applications mobiles Microsoft, puis exiger un code PIN | [Configurer l’authentification multifacteur](m365-campaigns-multifactor-authenication.md), [Configurer des appareils mobiles](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
-|Mac BYOD (Apportez votre propre appareil) et PC Windows 10 |Tenez Office à jour, mettez à jour les systèmes d’exploitation, puis activez les fonctionnalités de sécurité. | [Protéger les PC Windows 10 et les Mac non gérés](m365-campaigns-protect-pcs-macs.md) |
+|Mac BYOD (Apportez votre propre appareil) et PC Windows 10 |Tenez Office à jour, mettez à jour les systèmes d’exploitation, puis activez les fonctionnalités de sécurité. | [Protéger les PC Windows 10 et les Mac non gérés](m365-campaigns-protect-pcs-macs.md) |
 |Stockage et partage de fichiers en toute sécurité | Partagez des fichiers et des vidéos de Microsoft Teams, OneDrive, SharePoint et Microsoft Stream, puis protégez les données sensibles.| [Partager des fichiers et des vidéos](share-files-and-videos.md) |
-|Appareils Windows 10 gérés |Utilisez des appareils gérés pour le personnel clé, puis sécurisez ces appareils. | [Configurer les appareils gérés](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+|Appareils Windows 10 gérés |Utilisez des appareils gérés pour le personnel clé, puis sécurisez ces appareils. | [Configurer les appareils gérés](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Configuration de sécurité recommandée pour Microsoft 365 Business Premium
-------------------------------------
+## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Configuration de sécurité recommandée pour Microsoft 365 Business Premium
 
-La configuration de sécurité recommandée pour Microsoft 365 Business Premium vous permet de :
+La configuration de sécurité recommandée pour Microsoft 365 Business Premium vous permet de :
 
 - Utiliser les outils de productivité et de collaboration professionnels approuvés, tels que Outlook, Word, Excel et d’autres produits Office.
 - Protéger vos fichiers professionnels sur tous vos appareils iOS, Android et Windows 10 grâce à une sécurité de qualité professionnelle facile à gérer.
@@ -61,29 +59,27 @@ La configuration de sécurité recommandée pour Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
-Les campagnes électorales fédérales et dans certains États aux États-Unis sont éligibles à un [tarif spécial](get-microsoft-365-campaigns.md) pour l’offre Microsoft 365 pour les campagnes de Microsoft 365 Business Premium. Pendant ce temps, toutes les organisations bénéficiant de l’offre Business Premium peuvent tirer profit de ces instructions pour configurer une sécurité accrue et découvrir comment collaborer en toute sécurité.
+Les campagnes électorales fédérales et dans certains États aux États-Unis sont éligibles à un [tarif spécial](get-microsoft-365-campaigns.md) pour l’offre Microsoft 365 pour les campagnes de Microsoft 365 Business Premium. Pendant ce temps, toutes les organisations bénéficiant de l’offre Business Premium peuvent tirer profit de ces instructions pour configurer une sécurité accrue et découvrir comment collaborer en toute sécurité.
 
-Cette bibliothèque comprend les éléments suivants :
+Cette bibliothèque comprend les éléments suivants :
 
 - Instructions de configuration pour renforcer la sécurité.
 - Aide pour les utilisateurs à configurer des appareils pour un accès sécurisé.
 - Des conseils sur la collaboration et le partage sécurisés.
 
-Pour plus d’informations sur les fonctionnalités incluses, consultez [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
+Pour plus d’informations sur les fonctionnalités incluses, consultez [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
 
-<a name="get-started"></a>Prise en main
---------------------------
+## <a name="get-started"></a>Prise en main
 
-Pour commencer, procédez comme suit :
+Pour commencer, procédez comme suit :
 
-- Pour les campagnes : [Obtenir les campagnes Microsoft 365](get-microsoft-365-campaigns.md)
-- Pour toute entreprise : [Découvrez comment vos utilisateurs peuvent utiliser Microsoft 365](m365-campaigns-users.md)
-- Pour toute entreprise : [Configurer Microsoft 365](microsoft-365-campaigns-setup-overview.md)
+- Pour les campagnes : [Obtenir les campagnes Microsoft 365](get-microsoft-365-campaigns.md)
+- Pour toute entreprise : [Découvrez comment vos utilisateurs peuvent utiliser Microsoft 365](m365-campaigns-users.md)
+- Pour toute entreprise : [Configurer Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
-<a name="solutions-for-your-business"></a>Solutions pour votre entreprise
---------------------------
+## <a name="solutions-for-your-business"></a>Solutions pour votre entreprise
 
-Une fois que vous avez configuré votre environnement Microsoft 365 sécurisé, vous pouvez utiliser les solutions suivantes pour commencer à travailler :
+Une fois que vous avez configuré votre environnement Microsoft 365 sécurisé, vous pouvez utiliser les solutions suivantes pour commencer à travailler :
 
 | Créer Teams pour la collaboration | Configurer des réunions en ligne |
 | ------------- | ------------- |
@@ -97,5 +93,5 @@ Une fois que vous avez configuré votre environnement Microsoft 365 sécurisé,
 
 | Partager des fichiers et des vidéos |
 | ------------- |
-| ![partage d’un fichier dans Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) |
+| ![partage d’un fichier dans Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) |
 | Enregistrez vos fichiers et vidéos dans le cloud pour qu’ils soient accessibles <br>à toutes les personnes concernées.<br>[Démarrer le partage](share-files-and-videos.md) |
