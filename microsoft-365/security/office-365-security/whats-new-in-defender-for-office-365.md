@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0eaf34e6950e265514b14ff1fd0aa1c7bb9ab6b1
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 0a9eb63ed4508ff875324cf6fb0b4a8ad59cb29f
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062202"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177548"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Nouveautés de Microsoft Defender pour Office 365
 
@@ -59,10 +59,9 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 ## <a name="februarymarch-2021"></a>Février/mars 2021
 
 - Intégration de l’ID d’alerte (recherche à l’aide de l’ID d’alerte et Alert-Explorer navigation) dans les expériences [de recherche](threat-explorer.md)
-- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de chasse](threat-explorer.md)
+- Augmentation des limites d’exportation des enregistrements de 9990 à 200 000 dans les expériences [de recherche](threat-explorer.md)
 - Extension de la limite de rétention et de recherche des données de l’Explorateur (et des détections en temps réel) pour les clients d’essai de 7 (limite précédente) à 30 jours dans les expériences de [repérage](threat-explorer.md)
-- Nouveaux pivots  de repérage appelés domaine emprunt d’identité et utilisateur dont l’identité est usurpée dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés.  Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
-- Nouveau premier contact conseil de sécurité le moment où les destinataires reçoivent pour la première fois un message électronique d’un expéditeur ou ne reçoivent pas souvent de courriers électroniques d’un expéditeur. Pour plus d’informations sur ce paramètre et comment le configurer à l’aide Exchange règles de flux de messagerie (également appelées règles de transport), voir [First contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+- Nouveaux tableaux  croisés dynamiques  de repérage appelés domaine dont l’identité a été usurpée et utilisateur usurpé d’identité dans l’Explorateur (et détections en temps réel) pour rechercher des attaques d’emprunt d’identité contre des utilisateurs ou des domaines protégés. Pour plus d’informations, voir [les détails.](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains) (Microsoft Defender pour Office 365 Plan 1 ou Plan 2)
 
 ## <a name="december-2020"></a>Décembre 2020
 
@@ -75,6 +74,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 
 ## <a name="septemberoctober-2020"></a>Septembre/Octobre 2020
 
+- Nouveau premier contact conseil de sécurité le moment où les destinataires reçoivent pour la première fois un message électronique d’un expéditeur ou ne reçoivent pas souvent de courriers électroniques d’un expéditeur. Pour plus d’informations sur ce paramètre et comment le configurer à l’aide Exchange règles de flux de messagerie (également appelées règles de transport), voir [First contact conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
 - [Vérifier vos stratégies à l’aide de l’Analyseur de configuration](configuration-analyzer-for-security-policies.md)
 - Fonctionnalités étendues dans l’Explorateur de [menaces,](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) y compris les utilisateurs les plus ciblés, les règles de transport et les connecteurs (defender pour les informations de Office 365 dans l’Explorateur de menaces [(le](threat-explorer.md) courrier électronique a été autorisé/bloqué par la stratégie client/utilisateur) (Defender pour Office 365 Plan 2)
 - Surfacing URL threats in [Threat Explorer](threat-explorer.md#threats-in-urls) (malware, phish, spam, or none) (Defender for Office 365 Plan 2)
@@ -92,7 +92,7 @@ Pour en savoir plus, regardez [cette vidéo](https://www.youtube.com/watch?v=Tdz
 ## <a name="januaryfebruary-2020"></a>Janvier/février 2020
 
 - [Disponibilité générale des affichages campagne](campaigns.md) dans Microsoft Defender pour Office 365 (Microsoft Defender pour Office 365 Plan 2)
-- Améliorations apportées à [l’Explorateur](threat-explorer.md) de menaces pour [](investigate-malicious-email-that-was-delivered.md)permettre aux équipes d’opérations de sécurité de rechercher et de filtrer sur plusieurs champs lors de l’étude de la messagerie électronique : (Microsoft Defender pour Office 365 Plan 2)
+- Améliorations apportées à l’Explorateur de menaces pour [](investigate-malicious-email-that-was-delivered.md)permettre aux équipes d’opérations de sécurité de rechercher et de filtrer sur plusieurs champs lors de l’étude de la messagerie électronique : (Microsoft Defender pour Office 365 Plan 2) [](threat-explorer.md)
   - Emplacement de remise et actions spéciales
   - Direction (entrant, sortant ou intra-organisationnel)
   - Filtres NOT avancés (il s’agit d’options de filtrage avancées qui incluent ne contient pas, n’inclut pas, etc.)

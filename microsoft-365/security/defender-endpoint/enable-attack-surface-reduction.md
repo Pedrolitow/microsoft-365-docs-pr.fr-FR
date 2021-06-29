@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: eb4819a1dfad5ce94722d3cb283471a52808a4a7
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169603"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177620"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -37,6 +37,8 @@ ms.locfileid: "53169603"
 
 ## <a name="requirements"></a>Conditions requises
 
+Fonctionnalités de réduction de la surface d’attaque Windows versions
+
 Vous pouvez définir des règles de réduction de la surface d’attaque pour les appareils qui exécutent l’une des éditions et versions suivantes de Windows :
 
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
@@ -44,7 +46,13 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Bien que les règles de réduction de la surface d’attaque ne nécessitent pas [Windows licence E5,](/windows/deployment/deploy-enterprise-licenses)si vous avez Windows E5, vous obtenez des fonctionnalités de gestion avancées. Ces fonctionnalités disponibles uniquement dans Windows E5 incluent la surveillance, l’analyse et les flux de travail disponibles dans [Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)pour le point de terminaison, ainsi que les fonctionnalités de rapport et de configuration dans le centre de sécurité [Microsoft 365](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true). Ces fonctionnalités avancées ne sont pas disponibles avec une licence Windows Professional ou Windows E3 ; toutefois, si vous avez ces licences, vous pouvez utiliser l’Observateur d’événements et les journaux Antivirus Microsoft Defender pour passer en revue vos événements de règle de réduction de la surface d’attaque.
+Pour utiliser l’ensemble des fonctionnalités des règles de réduction de la surface d’attaque, vous devez :
+
+- Antivirus Windows Defender comme antivirus principal (protection en temps réel)
+- [Protection de la distribution cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) sur (certaines règles l’exigent)
+- Windows 10 Entreprise Licence E5 ou E3 ou licence Microsoft 365 entreprise
+
+Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)avec une licence Windows E5, vous disposez de fonctionnalités de gestion avancées, y compris la surveillance, l’analyse et les flux de travail disponibles dans Defender pour Endpoint, ainsi que des fonctionnalités de rapports et de configuration dans le centre de sécurité Microsoft 365. Ces fonctionnalités avancées ne sont pas disponibles avec une licence E3, mais vous pouvez toujours utiliser l’Observateur d’événements pour passer en revue les événements de règle de réduction de la surface d’attaque.
 
 Chaque règle asr contient l’un des quatre paramètres ci-après :
 

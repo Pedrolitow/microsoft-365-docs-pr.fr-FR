@@ -1,5 +1,5 @@
 ---
-title: Gérer les liens sécurisés
+title: Gérer Coffre liens
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,15 +20,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Découvrez comment gérer les liens sécurisés pour protéger votre entreprise contre les sites malveillants.
-ms.openlocfilehash: ce0c1ba6e4099b6eaf4ec974938170020b8a5892
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Découvrez comment gérer les liens Coffre pour protéger votre entreprise contre les sites malveillants.
+ms.openlocfilehash: 7e6b4507cd363a448812b48e3eafc7f4c077be3c
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580629"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177512"
 ---
-# <a name="manage-safe-links"></a>Gérer les liens sécurisés
+# <a name="manage-safe-links"></a>Gérer Coffre liens
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
@@ -37,14 +37,10 @@ Microsoft Defender pour Office 365 , anciennement appelé protection avancée co
 ## <a name="try-it"></a>Essayez !
 
 1. Go to the [admin center](https://admin.microsoft.com), and select **Setup**.
-1. Faites défiler vers le bas **pour renforcer la protection contre les menaces avancées.** Sélectionnez **Afficher,** **Gérer,** puis **Liens sécurisés ATP.**
-1. Sous **Stratégies qui s’appliquent à l’ensemble de l’organisation,** choisissez la stratégie par défaut, puis sélectionnez **l’icône** Modifier. 
-1. Entrez une URL que vous souhaitez bloquer.
-1. Sélectionnez **Utiliser des liens sécurisés dans Office applications, Office pour iOS et Android**; select **Do not track when users click safe links**; et **sélectionnez Ne pas laisser les utilisateurs cliquer sur les liens sécurisés vers l’URL d’origine.** Elles peuvent déjà être sélectionnées si vous définissez la stratégie par défaut. Sélectionnez **Enregistrer**.
-1. Sous **Stratégies qui s’appliquent à des destinataires spécifiques,** **sélectionnez** Règle de liens sécurisés recommandée, puis sélectionnez **l’icône** Modifier.
-1. Sélectionnez **les paramètres,** faites défiler vers le bas, entrez l’URL que vous ne souhaitez pas vérifier, puis sélectionnez l’icône Ajouter. 
-1. Sélectionnez **Appliqué** à, puis sélectionnez votre nom de domaine. Sélectionnez les domaines supplémentaires à appliquer à la règle. Sélectionnez **Ajouter,** **OK,** puis **Enregistrer.**
+2. Faites défiler vers le bas **pour renforcer la protection contre les menaces avancées.** Sélectionnez **Gérer,** puis **Coffre liens.**
+3. Sélectionnez **Global Paramètres** et dans Bloquer les URL **suivantes,** entrez l’URL que vous souhaitez bloquer.
+4. Sélectionnez Utiliser des liens Coffre dans **l’application Office 365,** sélectionnez Ne pas suivre quand les utilisateurs cliquent sur les liens protégés dans les applications **Office 365** et sélectionnez Ne pas laisser les utilisateurs accéder à l’URL d’origine **dans Office 365 applications.** Elles peuvent déjà être sélectionnées si vous définissez la stratégie par défaut. Sélectionnez **Enregistrer**.
 
-Les liens sécurisés ATP sont désormais configurés. Laissez jusqu’à 30 minutes pour que vos modifications prennent effet.
+Coffre Les liens sont maintenant configurés. Laissez jusqu’à 30 minutes pour que vos modifications prennent effet.
 
 Lorsqu’un utilisateur reçoit un e-mail avec des liens, les liens sont analysés. Si les liens sont considérés comme sûrs, ils peuvent être cliqués. Toutefois, si le lien figure dans la liste des blocages, les utilisateurs voient un message s’ils l’ont bloqué.

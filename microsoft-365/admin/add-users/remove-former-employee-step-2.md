@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment enregistrer le contenu de la boîte aux lettres d’un ancien employé.
-ms.openlocfilehash: d73d7005d2ccea429f66c5b2564220424665439f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd24145b6b5162a03dee0338cc0820e5af271ddd
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244189"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177488"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>Étape 2 : enregistrer le contenu de la boîte aux lettres d’un ancien employé
 
@@ -45,4 +45,4 @@ Une fois que vous avez empêché un utilisateur de se connecter à votre organis
 
     **OR**
 
-2. Ajoutez l’adresse e-mail de l’ancien employé à votre version de Outlook application web, puis exportez les données dans un fichier .pst. Si nécessaire, vous pouvez importer les données dans un autre compte de courrier. Check out [Step 6 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-6.md).
+2. Ajoutez l’adresse e-mail de l’ancien employé à votre version de Outlook sur bureau, puis exportez les données dans un fichier .pst. Si nécessaire, vous pouvez importer les données dans un autre compte de courrier. Check out [Step 6 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-6.md).

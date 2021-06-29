@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: eadca063d50bf1f969f1bb247b6e56d8ec46a6e0
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169579"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177632"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
 
@@ -52,7 +52,7 @@ Vous pouvez évaluer l’impact d’une règle de réduction de la surface d’a
 
 Dans le volet d’informations de recommandation, vérifiez l’impact sur l’utilisateur pour déterminer quel pourcentage de vos appareils peuvent accepter une nouvelle stratégie permettant d’activer la règle en mode de blocage sans affecter la productivité.
 
-Pour plus [d’informations](enable-attack-surface-reduction.md#requirements) sur les systèmes d’exploitation pris en charge, voir Requirements dans l’article « Activer les règles de réduction de la surface d’attaque ».
+Consultez [la procédure requise](enable-attack-surface-reduction.md#requirements) dans l’article « Activer les règles de réduction de la surface d’attaque » pour plus d’informations sur les systèmes d’exploitation pris en charge et des informations supplémentaires sur les conditions requises.
 
 ## <a name="audit-mode-for-evaluation"></a>Mode audit pour l’évaluation
 

@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0705ba096c2aefc6bd089bd5fba80b055fd881dc
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 6d2770dec270e2d1c1b9750387a0f07f82b357f9
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53055245"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177092"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Personnaliser les règles de réduction de la surface d’attaque
 
@@ -42,7 +42,11 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 - Windows 10 Professionnel, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows 10 Entreprise, [version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - Windows Serveur, [version 1803 (canal semi-annuel)](/windows-server/get-started/whats-new-in-windows-server-1803) ou version ultérieure
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19) Vous pouvez utiliser la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) de gestion des périphériques mobiles (CSP) pour configurer ces paramètres.
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+Vous pouvez utiliser la stratégie de groupe, PowerShell et les fournisseurs de services de configuration (CSP) de gestion des périphériques mobiles (CSP) pour configurer ces paramètres.
+
+Consultez [la procédure requise](enable-attack-surface-reduction.md#requirements) dans l’article « Activer les règles de réduction de la surface d’attaque » pour plus d’informations sur les systèmes d’exploitation pris en charge et des informations supplémentaires sur les conditions requises.
 
 ## <a name="exclude-files-and-folders"></a>Exclure des fichiers et des dossiers
 
@@ -66,21 +70,22 @@ Si vous rencontrez des problèmes avec des règles détectant des fichiers qui, 
 
 | Description de la règle | GUID |
 |:----|:----|
+| Bloquer l’utilisation abusive des pilotes signés vulnérables exploités | `56a863a9-875e-4185-98a7-b882c64b5ce5` |
+| Empêcher Adobe Reader de créer des processus enfants | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
 | Empêcher toutes les applications Office de créer des processus enfants | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
-| Bloquer l’exécution de scripts potentiellement obscurcis | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
-| Bloquer les appels d’API Win32 à partir Office macro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
-| Empêcher Office applications de créer du contenu exécutable | `3B576869-A4EC-4529-8536-B80A7769E899` |
-| Empêcher Office applications d’injecter du code dans d’autres processus | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
-| Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
 | Bloquer le contenu exécutable du client de messagerie et de la messagerie web | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
 | Empêcher l’exécution des fichiers exécutables, sauf s’ils répondent à des critères de prévalence, d’âge ou de listes fiables | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
-| Utiliser la protection avancée contre les ransomware | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
-| Bloquer le vol d’informations d’identification Windows sous-système d’autorité de sécurité locale (lsass.exe) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
+| Bloquer l’exécution de scripts potentiellement obscurcis | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
+| Empêcher JavaScript ou VBScript de lancer du contenu exécutable téléchargé | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| Empêcher Office applications de créer du contenu exécutable | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| Empêcher Office applications d’injecter du code dans d’autres processus | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
+| Empêcher Office applications de communication de créer des processus enfants | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
+| Bloquer la persistance via un abonnement à des événements WMI | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 | Bloquer les créations de processus provenant de commandes PSExec et WMI | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
 | Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
-| Empêcher Office applications de communication de créer des processus enfants | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
-| Empêcher Adobe Reader de créer des processus enfants | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
-| Bloquer la persistance via un abonnement à des événements WMI | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
+| Bloquer les appels d’API Win32 à partir Office macro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| Utiliser la protection avancée contre les ransomware | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
 
 Consultez la rubrique [réduction de la surface](attack-surface-reduction.md) d’attaque pour plus d’informations sur chaque règle.
 
@@ -119,7 +124,7 @@ Utilisez le fournisseur de services de configuration [./Vendor/MSFT/Policy/Confi
 
 Vous pouvez personnaliser la notification pour le déclenchement d’une règle et bloquer une application ou un fichier. Consultez [l’article](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) Sécurité Windows’article.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Sujets connexes
 
 - [Réduire les surfaces d’attaque avec des règles de réduction de la surface d’attaque](attack-surface-reduction.md)
 - [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)

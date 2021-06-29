@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Utilisez l’API REST pour recevoir ou mettre à jour les informations sur un modèle de compréhension de document SharePoint Syntex à l’aide du titre du modèle.
-ms.openlocfilehash: a6fbe9ba9d3f5240c7b775613f97b83bfa2caa50
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b50849d0dc1c9deefa55a5c92303d18f251e2f8b
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52904248"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177128"
 ---
 # <a name="getbytitle"></a>GetByTitle
 
@@ -25,13 +25,13 @@ Reçoit ou met à jour les informations sur un modèle de compréhension de docu
 ## <a name="http-request"></a>Requête HTTP
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 Vous pouvez également utiliser la même méthode pour supprimer un modèle.
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{modelFileName') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('{modelFileName}') HTTP/1.1
 ```
 
 ## <a name="uri-parameters"></a>Paramètres d’URI
@@ -65,12 +65,12 @@ Dans cet exemple, le nom du modèle de compréhension de document Syntex est `Co
 #### <a name="sample-request"></a>Exemple de demande
 
 ```HTTP
-GET /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+GET /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 #### <a name="sample-response"></a>Exemple de réponse
 
-**Code d’état :** 204
+**Code d’état :** 200
 
 ```HTTP
 {
@@ -109,7 +109,7 @@ Dans cet exemple, le nom du modèle de compréhension de document du Contrat Con
 ##### <a name="sample-request"></a>Exemple de demande
 
 ```HTTP
-DELETE /_api/machinelearning/models/getbytitle('{Contoso Contract') HTTP/1.1
+DELETE /_api/machinelearning/models/getbytitle('Contoso Contract') HTTP/1.1
 ```
 
 ## <a name="see-also"></a>Voir aussi

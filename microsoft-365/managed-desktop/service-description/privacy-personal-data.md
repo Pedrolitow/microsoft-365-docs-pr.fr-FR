@@ -12,140 +12,75 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 3de39e8d10f949856862095ebd204fac1a4d694e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861682"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177476"
 ---
-# <a name="privacy-and-personal-data"></a>Confidentialité et données personnelles
+# <a name="overview"></a>Présentation
 
-Les utilisateurs peuvent recevoir, transmettre et stocker des données sur des appareils gérés par Bureau géré Microsoft. Ils font confiance au fait que la confidentialité des données est protégée et utilisée uniquement d’une manière cohérente avec leurs attentes. Cet article explique comment Bureau géré Microsoft, stocke, conserve, traite, sécurisation, partage, audite et exporte des données personnelles. Vous découvrirez également comment un administrateur peut afficher, corriger et supprimer des données personnelles.
+Microsoft Manged Desktop est un service ITaaS (IT-as-a-Service) pour les clients cloud d’entreprise conçu pour maintenir les appareils Windows employés déployés et mis à jour. Il assure également la gestion et les opérations des services informatiques, surveille la sécurité et la réponse aux incidents, ainsi que la prise en charge des utilisateurs. Cette documentation fournit des détails supplémentaires sur la plateforme de données et la conformité de la confidentialité pour Microsoft Manged Desktop.
 
-Bureau géré Microsoft n’utilise pas les données personnelles collectées dans le cadre de la fourniture du service à des fins de profilage, de publicité ou de marketing.
+## <a name="microsoft-managed-desktop-data-sources-and-purpose"></a>Microsoft Manged Desktop sources de données et objectif
 
-## <a name="data-collection-of-microsoft-managed-desktop"></a>Collecte de données de Bureau géré Microsoft
+Microsoft Manged Desktop fournit son service aux clients d’entreprise et gère correctement les appareils inscrits des clients à l’aide de données provenant de différentes sources. Ces sources, notamment Azure Active Directory, Microsoft Intune, Microsoft Windows 10 et Microsoft Defender pour le point de terminaison, fournissent une vue complète des appareils que Microsoft Manged Desktop gère. Le service utilise également ces services Microsoft pour permettre aux Microsoft Manged Desktop de fournir des fonctionnalités ITaaS :
 
-Lorsque les utilisateurs inscrivent des appareils d’entreprise dans Bureau géré Microsoft, la collecte de données est gérée (sur la couche technique) à l’aide de Windows et Microsoft Intune. Ces sources collectent des données personnelles sur les appareils des utilisateurs, telles que les noms des appareils pour Bureau géré Microsoft afin de pouvoir identifier l’appareil à gérer et à fournir avec les expériences Bureau géré Microsoft utilisateurs.
+- [Microsoft Windows 10 Entreprise](/windows/windows-10/) - pour la gestion de l’expérience de configuration des appareils, la gestion des connexions à d’autres services et la prise en charge opérationnelle pour les professionnels de l’informatique.
+- [Windows mise à jour](/windows/deployment/update/waas-manage-updates-wufb) pour entreprise : utilise Windows 10 Entreprise données de diagnostic pour fournir des informations supplémentaires sur Windows 10 mise à jour. 
+- [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) : pour la gestion des appareils et la sécurisation de vos données.
+  - [Microsoft Azure Active Directory](/azure/active-directory/) - pour l’authentification et l’identification de tous les comptes d’utilisateurs. 
+  - [Microsoft Intune](/mem/intune/) : pour distribuer les configurations des appareils, la gestion des appareils et la gestion des applications.
+  - [Analyse des points de](/mem/analytics/overview) terminaison : pour obtenir des informations analytiques sur l’utilisation des appareils et des applications.
+  - [Windows Autopilot](/microsoft-365/windows/windows-autopilot) : pour la mise en service et le déploiement d’appareils.
+  - [Microsoft Defender pour point de terminaison :](/microsoft-365/security/defender-endpoint/) fournit des services de sécurité tels que la surveillance de la sécurité des appareils et les données d’intelligence de sécurité.
+- [Microsoft Manged Desktop](https://endpoint.microsoft.com/#home) : données fournies par le client ou générées par le service lors de l’exécution du service.
+- [Microsoft 365 applications pour entreprise :](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1) pour la gestion des Microsoft 365 Apps.
 
-Bureau géré Microsoft ne collecte pas de données seule pour fournir son service (à l’exception des informations [de contact de l’administrateur informatique).](#it-admin-contact-information) Au lieu de cela, Bureau géré Microsoft réutilise les données que d’autres sources, telles que Windows et Microsoft Intune, ont déjà collectées. Bureau géré Microsoft les données collectées par ces services à partir d’appareils inscrits :
+## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Microsoft Manged Desktop de données et stockage
 
-- Windows données de diagnostic des appareils gérés par Bureau géré Microsoft données sont envoyées aux magasins de données de diagnostic Windows Microsoft.
-- Bureau géré Microsoft gestion [moderne pour la](/learn/modules/introduction-to-modern-management-in-microsoft-365/) gestion des appareils inscrits. Dans le cadre de la « gestion moderne », les appareils doivent être inscrits dans l’Azure Active Directory du client.
-- Pour distribuer sa configuration hautement optimisée et sécurisée aux appareils inscrits, Bureau géré Microsoft utilise Microsoft Intune.
-- Bureau géré Microsoft utilise les données d’intelligence de sécurité de Microsoft Defender Advanced Thread Protection pour les clients qui utilisent ce service.
-
-## <a name="data-storage-and-sources-in-microsoft-managed-desktop"></a>Stockage de données et sources dans Bureau géré Microsoft
-
-Une Bureau géré Microsoft les données, elle doit fournir son service, son stockage et son traitement comme suit :
-
-### <a name="storing-data-storage-location-and-data-retention"></a>Stockage des données, emplacement de stockage et rétention des données
-
-Bureau géré Microsoft stocke ses données dans un ou plusieurs des services de stockage Microsoft suivants :
-
-- Azure SQL
-- Stockage Azure
-- Dynamics 365
-
-Bureau géré Microsoft stocke ses données aux États-Unis. Les données personnelles sont conservées par Bureau géré Microsoft pendant un maximum de 30 jours, à l’exception des données d’alerte pour Bureau géré Microsoft appareils collectés par Microsoft Defender pour Endpoint. Les données d’alerte réelles (qui peuvent inclure des données personnelles) sont stockées pendant 180 jours. Les données d’alerte avec des données personnelles supprimées sont stockées pendant deux ans au maximum. Conformément au Règlement général sur la protection des données (R GDPR) et au CCPA (California Consumer Privacy Act), Bureau géré Microsoft honore les droits des personnes ayant des données pour toutes les données personnelles stockées dans les données d’alerte.
-
-### <a name="staff-location"></a>Emplacement du personnel
-
-Les Bureau géré Microsoft des opérations de sécurité et des opérations de sécurité se trouvent aux États-Unis et en Inde.
-
-## <a name="data-usage-of-microsoft-managed-desktop"></a>Utilisation des données de Bureau géré Microsoft
-
-Bureau géré Microsoft utilise ces données :
+Microsoft Manged Desktop s’appuie sur les données de plusieurs produits et services Microsoft pour fournir son service aux clients d’entreprise. Pour atteindre l’objectif de protection et de maintenance des appareils inscrits, nous allons traiter et copier les données de ces services vers Microsoft Manged Desktop. Lorsque nous traiterons des données, nous suivons les instructions documentées que vous fournissez, comme indiqué dans les conditions d’accès aux services en ligne et la Déclaration de confidentialité Microsoft. Lorsque nous traiterons des données, nous suivons les instructions documentées que vous fournissez, comme indiqué dans les conditions d’accès aux [services](https://www.microsoft.com/licensing/product-licensing/products) en ligne et la déclaration [de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement). Microsoft Manged Desktop de processeur inclut la garantie d’une confidentialité, d’une sécurité et d’une résilience appropriées. Microsoft Manged Desktop utilise des mesures de confidentialité et de sécurité supplémentaires pour garantir une gestion appropriée des données d’identification personnelles. 
 
 
-| Sources de données |À utiliser avec Bureau géré Microsoft  |
-|---------|---------|
-|Azure Active Directory données     | Utilisé dans les rapports créés pour les administrateurs des locataires, qui sont disponibles dans le portail Bureau géré Microsoft’administration.        |
-|Données Intune     | Utilisé dans les rapports créés pour les administrateurs des locataires, qui sont disponibles dans le portail Bureau géré Microsoft’administration.        |
-|Microsoft Defender pour point de terminaison     |  Utilisé pour traiter les menaces de sécurité détectées sur les appareils inscrits par Bureau géré Microsoft centre des opérations de sécurité (SOC).  |
-|Windows de diagnostic     |Permet de déterminer l’état de mise à jour des appareils gérés et de fournir et d’améliorer Bureau géré Microsoft’offre ITaaS (IT-as-a-Service) de l’Bureau géré Microsoft.         |
-|Données de contact de l’administrateur     | Utilisé par les Bureau géré Microsoft pour communiquer avec les administrateurs client.        |
+## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>Microsoft Manged Desktop stockage des données et emplacement du personnel
 
+Microsoft Manged Desktop stocke ses données dans les centres de données Azure aux États-Unis. Les données personnelles obtenues par Microsoft Manged Desktop et d’autres services sont requises pour maintenir le service opérationnel. Si un appareil est supprimé de Microsoft Manged Desktop, nous conserveons les données personnelles pendant un maximum de 30 jours, à l’exception des données d’alerte collectées par Microsoft Defender pour endpoint, qui sont stockées pendant 180 jours à des fins de sécurité. Pour plus d’informations sur la rétention des données, voir [Rétention, suppression](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview)et destruction des données dans Microsoft 365 .
 
-### <a name="entities-processed-by-microsoft-managed-desktop"></a>Entités traitées par Bureau géré Microsoft
+Microsoft Manged Desktop Les équipes des opérations d’ingénierie et des opérations de sécurité sont situées aux États-Unis et en Inde. 
 
-Bureau géré Microsoft traite ces entités pour fournir le service :
+## <a name="microsoft-windows-10-diagnostic-data"></a>Données de diagnostic Windows 10 Microsoft
 
-- Données d’appareil
-- Paramètres de sécurité de l’appareil
-- Système d’exploitation et matériel de l’appareil
-- Informations agrégées sur l’état de l’appareil
-- Informations de diagnostic d’appareil
-- Données client
-- Azure Active Directory ressources
-- Données de stratégie et de configuration
-- Métadonnées et données d’alerte de Microsoft Defender for Endpoint
-- Windows de diagnostic
-- Données d’utilisation des produits et services
+Microsoft Manged Desktop utilise [Windows 10](/windows/privacy/windows-diagnostic-data) données de diagnostic améliorées pour maintenir Windows sécurité, à jour, résoudre les problèmes et améliorer les produits. Le paramètre de données de diagnostic améliorées inclut des informations plus détaillées sur les appareils inscrits dans Microsoft Manged Desktop et leurs paramètres, fonctionnalités et état de l’appareil. Lorsque des données de diagnostic améliorées sont sélectionnées, les données, y compris les données de diagnostic requises, sont collectées. Pour [plus d’informations sur Windows la collecte](/windows/privacy/changes-to-windows-diagnostic-data-collection) de données de diagnostic, voir Windows 10 données de diagnostic et la collecte de données.
 
-### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+La terminologie des données de diagnostic va changer dans les futures versions de Windows. Microsoft Manged Desktop s’engage à traiter uniquement les données dont le service a besoin. Bien que cela signifie que le niveau de diagnostic sera changé en **Facultatif,** Microsoft Manged Desktop implémente les stratégies de diagnostic limitées pour affiner la collecte des données de diagnostic requises pour le service. Pour plus d’informations, voir [Modifications apportées à Windows de diagnostic.](/windows/privacy/changes-to-windows-diagnostic-data-collection)
 
-Les données d’identité utilisées par Bureau géré Microsoft sont stockées par Azure Active Directory dans un emplacement géographique basé sur l’adresse fournie par l’organisation lors de l’abonnement à un service en ligne Microsoft tel que Office 365 ou Azure. Voir [Microsoft Azure —Où sont mes](http://azuredatacentermap.azurewebsites.net/) données client ? pour obtenir une carte montrant les centres de données pour Azure Active Directory.
+Microsoft Manged Desktop traite et stocke uniquement les données au niveau du système à partir de Windows 10 données de diagnostic facultatives provenant d’appareils inscrits tels que les informations de fiabilité et de performances des applications et des appareils. Microsoft Manged Desktop ne permet pas de traiter et de stocker les données personnelles des clients, telles que l’historique de conversation et de navigateur, les données vocales, textuelles ou vocales. 
 
-Pour plus d’informations sur les régions qu’Azure utilise pour le stockage de données, voir [Azure Active Directory–Où se](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)trouvent vos données .
+Pour plus d’informations sur la collecte de données de diagnostic de Microsoft Windows 10, voir la [section](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) Où stocker et traiter les données personnelles de la déclaration de confidentialité Microsoft.
 
-### <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-windows-update-for-business"></a>Microsoft Windows Update for Business
+Microsoft Windows Update for Business utilise les données de Windows diagnostics pour analyser l’état et les échecs de la mise à jour. Microsoft Manged Desktop utilise ces données pour atténuer et résoudre les problèmes afin de s’assurer que tous les appareils inscrits sont à jour en fonction d’une cadence de mise à jour prédéfinie.
 
-Les données Intune peuvent être stockées dans différentes régions, telles que l’Europe du Nord (Irlande) et l’Europe de l’Ouest (Pays-Bas). Votre administrateur informatique crée un compte client et choisit le pays où les données seront stockées lorsqu’ils s’inscrivent initialement dans les services Intune. Pour obtenir la liste des emplacements de centres de données utilisés par Intune, voir Microsoft Intune : [Où sont mes données client ?](http://intunedatacentermap.azurewebsites.net/). Pour plus d’informations sur le stockage et l’utilisation des données par Intune, voir [Collecte de données dans Intune.](/intune/privacy-data-collect)
+## <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
+L’identification des données utilisées par Microsoft Manged Desktop est stockée par Azure Active Directory (Azure AD) dans un emplacement géographique basé sur l’emplacement fourni par l’organisation lors de l’abonnement aux services en ligne Microsoft, tels que Microsoft Apps pour entreprise et Azure. L’identification des données utilisées par Microsoft Manged Desktop est stockée par Azure AD dans un emplacement géographique basé sur l’emplacement fourni par l’organisation lors de l’abonnement à des services en ligne Microsoft tels que Microsoft Apps pour entreprise et Azure. Pour plus d’informations sur l’emplacement de vos données Azure AD, voir [Azure Active Directory - Où se](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9) trouvent vos données ?
 
-### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
+## <a name="microsoft-intune"></a>Microsoft Intune
+Microsoft Intune collecte, traite et partage des données à Microsoft Manged Desktop pour prendre en charge les opérations et les services de l’entreprise. Pour [plus d’informations](/mem/intune/protect/privacy-data-collect) sur les données collectées dans Intune, voir Collecte de données dans Intune. 
 
-Les données de Microsoft Defender pour point de terminaison peuvent être stockées dans plusieurs régions différentes. Pour cette raison, Defender pour point de terminaison fonctionne dans les centres de données Microsoft Azure dans l’Union européenne, au Royaume-Uni et aux États-Unis, comme indiqué dans [Microsoft Defender pour le](http://intunedatacentermap.azurewebsites.net/)point de terminaison — Emplacements de stockage de données . Pour plus d’informations sur le stockage et l’utilisation des données par Defender pour le point de terminaison, voir quelles données [Microsoft Defender for Endpoint collecte-t-il ?](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Pour plus d’informations Microsoft Intune des emplacements de données, consultez [l’emplacement Microsoft 365 données client sont stockées.](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide) Intune respecte les sélections d’emplacements de stockage réalisées par l’administrateur pour les données client.
 
-### <a name="windows-10"></a>Windows 10
+## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
+Microsoft Defender pour le point de terminaison collecte et stocke des informations pour les appareils inscrits Microsoft Manged Desktop à des fins d’administration, de suivi et de rapport. Les informations collectées comprennent les données de fichier (telles que les noms de fichiers, la taille et les hésages), les données de processus (processus en cours d’exécution, hèses), les données de Registre, les données de connexion réseau et les détails des périphériques (tels que les identificateurs de périphérique, les noms de périphérique et la version du système d’exploitation). Consultez [Microsoft Defender pour le stockage et](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) la confidentialité des données des points de terminaison pour plus d’informations sur Microsoft Defender pour la collecte de données et les emplacements de stockage des points de terminaison. 
 
-Comme indiqué dans la Déclaration de confidentialité [Microsoft,](https://privacy.microsoft.com/privacystatement)« les données personnelles collectées par Microsoft peuvent être stockées et traitées dans votre région, aux États-Unis et dans tout autre pays où Microsoft ou ses filiales, filiales ou fournisseurs de services exploitent des installations. [...] En règle générale, l’emplacement de stockage principal se trouve dans la région du client ou aux États-Unis, souvent avec une sauvegarde vers un centre de données dans une autre région. Les emplacements de stockage sont choisis pour fonctionner efficacement, améliorer les performances et créer des redondances afin de protéger les données en cas de panne ou d’un autre problème. Nous prenons des mesures pour nous assurer que les données que nous collectons dans le cadre de cette déclaration de confidentialité sont traitées conformément aux dispositions de cette déclaration et aux exigences de la loi applicable où que se trouvent les données. »
+## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise 
+Applications Microsoft 365 pour les grandes entreprises collecte et partage des données avec Microsoft Manged Desktop pour s’assurer que ces applications sont à jour avec la dernière version en fonction des canaux de mise à jour prédéfincis gérés par Microsoft Manged Desktop. Consultez [Microsoft Defender pour le stockage et](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) la confidentialité des données des points de terminaison pour plus d’informations Microsoft 365 Apps’emplacements de stockage et de collecte de données de l’utilisateur.
 
-Pour plus d’informations sur la collecte de données de diagnostic Windows 10, voir la [section](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) « Où stocker et traiter les données personnelles » de la déclaration de confidentialité Microsoft.
+## <a name="major-data-change-notification"></a>Notification de modification majeure des données
+Microsoft Manged Desktop suit un processus de contrôle des changements décrit dans notre infrastructure de communication de service. Nous informons les clients via Microsoft 365 centre de messages et Microsoft Manged Desktop portail d’administration des incidents de sécurité et des modifications majeures apportées au service. Les modifications apportées aux types de données recueillies et à l’endroit où elles sont stockées sont considérées comme des modifications importantes. Nous fournirons un minimum de 30 jours de notification avancée de cette modification, comme c’est la pratique standard pour Microsoft 365 produits et services. Pour plus d’informations, [voir Changements de service et communication.](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide)
 
-## <a name="data-access-protection"></a>Protection de l’accès aux données
+## <a name="compliance"></a>Conformité
+Microsoft Manged Desktop a subi des audits externes et obtenu un ensemble complet d’offres de conformité. Vous trouverez plus d’informations dans Microsoft Manged Desktop [conformité.](/microsoft-365/managed-desktop/intro/compliance) Les rapports d’audit peuvent [](https://aka.ms/stp)être téléchargés sur le portail d’confiance des services Microsoft, qui sert de référentiel central pour Microsoft Enterprise Online Services. (Microsoft Manged Desktop est répertorié dans ces documents sous la catégorie « Surveillance et gestion ».) 
 
-L’accès direct Bureau géré Microsoft magasins de données internes de l’utilisateur est restreint de plusieurs manières :
-
-- Elle nécessite une approbation de niveau de tête d’ingénierie.
-- Elle est liée au temps et auditée.
-- Toutes les données sont chiffrées pendant qu’elles sont stockées.
-- L’accès Bureau géré Microsoft portail de gestion interne nécessite une station de travail hautement sécurisée et restreinte.
-
-## <a name="processing-personal-data-in-a-compliant-manner"></a>Traitement des données personnelles de manière conforme
-Bureau géré Microsoft des données personnelles avec des systèmes certifiés ISO. Pour plus d’informations, voir [Conformité.](../intro/compliance.md)
-
-## <a name="profiling-and-marketing"></a>Profilage et marketing
-
-Bureau géré Microsoft n’utilise pas les données personnelles collectées dans le cadre de la fourniture du service à des fins de profilage, de publicité ou de marketing.
-
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Demandes des personnes concernées pour le RGPD et le CCPA
-
-Le Règlement général sur la protection des données [(R GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de l’Union européenne accorde des droits aux personnes (connues dans la réglementation sous le nom de personnes responsables des données) pour gérer les données personnelles collectées par un employeur ou tout autre type d’agence ou d’organisation (appelé contrôleur de données ou contrôleur uniquement). Dans le RGPD, les données personnelles sont définies de façon générale comme toute donnée relative à une personne physique identifiée ou identifiable. Le RGPD confère aux personnes concernées des droits précis sur leurs données personnelles ; ces droits vous donnent la possibilité d’obtenir des copies de ces données personnelles, de les modifier, d’en limiter le traitement, de les supprimer ou de les recevoir dans un format électronique afin de pouvoir les transférer à un autre responsable du traitement. Une demande officielle d’une personne concernée à un responsable du traitement pour effectuer une action sur ses données personnelles est appelée demande de droits de la personne concernée ou DPC dans le présent document.
-
-De même, le CCPA fournit des droits de confidentialité et des obligations aux consommateurs de la Californie, y compris des droits similaires aux droits des personnes morales du R GDPR, tels que le droit de supprimer, d’accéder et de recevoir (portabilité) leurs informations personnelles. Le CCPA prévoit également certaines divulgations, des protections contre la discrimination lors du choix de l’exercice des droits, et des exigences de « dés opt-out/opt-in » pour certains transferts de données classés comme « ventes ». Les ventes sont largement définies pour inclure le partage de données à des fins importantes. Pour plus d’informations sur le CCPA, voir le [California Consumer Privacy Act](/compliance/regulatory/offering-ccpa?view=o365-worldwide) et le [Forum aux questions California Consumer Privacy Act](/compliance/regulatory/ccpa-faq?view=o365-worldwide).
-
-La section suivante explique comment Bureau géré Microsoft les contrôleurs peuvent rechercher, consulter et agir sur des données personnelles ou des informations personnelles utilisées par les Bureau géré Microsoft.
-
-> [!NOTE]
-> Si vous recherchez des informations générales sur le R GDPR, consultez la [section R GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) du portail d’confiance des services.
-
-### <a name="it-admin-contact-information"></a>Informations de contact de l’administrateur informatique
-
-Un administrateur client peut afficher, corriger et supprimer ses propres données personnelles (telles que ses propres informations de contact) directement dans la section Contact d’administration du portail Bureau géré Microsoft.
-
-## <a name="microsoft-defender-for-endpoint-alert-data"></a>Données d’alerte microsoft Defender pour point de terminaison
-
-Les administrateurs de sécurité peuvent demander l’extraction ou la suppression de données personnelles liées aux alertes de Microsoft Defender for Endpoint sur un Bureau géré Microsoft géré dans leur environnement. L’administrateur de la sécurité doit se Bureau géré Microsoft [le portail d’administration](https://aka.ms/memadmin) et envoyer une demande de support. Sélectionnez  le **type** de  demande de support de demande de **modification,** catégorie de sécurité **et** sous-catégorie d’autres **,** puis indiquez les noms d’appareils pertinents dans la description, ainsi que votre demande d’extraction ou de suppression de données.
-
-### <a name="user-related-personal-data"></a>Données personnelles liées à l’utilisateur
-
-En dehors de cela, Bureau géré Microsoft ne collecte pas de données personnelles. Au lieu de cela, il s’appuie sur les données personnelles collectées par d’autres microsoft Enterprise Online Services et utilise ces données. Les administrateurs informatiques qui cherchent à répondre aux demandes de leurs utilisateurs pour afficher, corriger et supprimer leurs données personnelles peuvent utiliser les fonctionnalités respectives des services sous-jacents dont Bureau géré Microsoft dépend. Si vous êtes intéressé par l’affichage ou la suppression des données personnelles utilisées par ces services, consultez d’abord les demandes des personnes soumises aux données pour Azure concernant l’article [R GDPR.](/compliance/regulatory/gdpr-dsr-Azure)
-
-En outre, utilisez les instructions suivantes pour exercer des DSR pour les services dont Bureau géré Microsoft dépend de la collecte de données personnelles :
-
-- [Azure Active Directory](/compliance/regulatory/gdpr-dsr-Azure?view=o365-worldwide)
-- [Microsoft Intune](/compliance/regulatory/gdpr-dsr-Intune?view=o365-worldwide)
-- [Microsoft Defender pour le point de terminaison](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Windows 10](/windows/privacy/windows-10-and-privacy-compliance)
+## <a name="legal"></a>Informations juridiques
+Déclaration de confidentialité microsoft aux utilisateurs finaux des produits fournis par les clients de l’organisation : la déclaration de confidentialité [Microsoft](https://privacy.microsoft.com/privacystatement) informe les utilisateurs finaux que lorsqu’ils se connectent aux produits Microsoft avec un compte de travail, a) leur organisation peut contrôler et administrer leur compte (y compris le contrôle des paramètres de confidentialité), accéder et traiter leurs données, et b) Microsoft peut collecter et traiter les données pour fournir le service à **l’organisation** et aux utilisateurs finaux.

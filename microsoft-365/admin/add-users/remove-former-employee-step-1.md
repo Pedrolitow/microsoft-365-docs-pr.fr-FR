@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services.
-ms.openlocfilehash: f2258b165c3d61f809288003f4a536ffe160ea59
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 58b65a0a886460e8be01635c857433773cfc9059
+ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061818"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53177116"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Étape 1 : empêcher un ancien employé de se connecter et bloquer l’accès Microsoft 365 services
 
@@ -65,7 +65,7 @@ Pour plus d'informations sur le temps nécessaire pour supprimer l'accès d'un u
 
 Si vous avez des messages électroniques dans le cadre de votre abonnement Microsoft 365, connectez-vous au Centre d’administration Exchange et suivez ces étapes pour empêcher votre ancien employé d’accéder à son courrier électronique.
   
-1. Accédez au <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centre d’administration Exchange</a>.
+1. Accédez au <a href="https://admin.exchange.microsoft.com/" target="_blank">Centre d’administration Exchange</a>.
 2. Dans le Centre d'administration Exchange, accédez à **Destinataires** \> **Boîtes aux lettres**.
-3. Double-cliquez sur l’utilisateur et consultez la page **Fonctionnalités de boîte aux lettres.** Sous **Appareils mobiles,** sélectionnez Désactiver Exchange ActiveSync et Désactiver OWA pour les   **appareils,** puis répondez Oui aux deux lorsque vous y répondrez.
-4. Sous **Connectivité de messagerie,** **sélectionnez Désactiver et** **répondez Oui** à l’invite.
+3. Double-cliquez sur l’utilisateur et cliquez sur **Gérer les paramètres des applications de messagerie sous** Applications de **messagerie.** Désactiver **le** curseur pour toutes les options ; **Mobile (Exchange ActiveSync)**, **Outlook sur le web**, **Outlook bureau (MAPI)**, **Exchange services web,** **POP3** et **IMAP**.
+4. Sélectionnez **Enregistrer**.
