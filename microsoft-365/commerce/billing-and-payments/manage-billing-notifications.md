@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Découvrez comment gérer les personnes qui reçoivent des e-mails de notification de facturation et des pièces jointes de facture.
 ms.date: 03/17/2021
-ms.openlocfilehash: f41d93835fed1715803052f1cf79b46f43a1d200
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a49598cd1b361a85af8455b0aff19e11fcf96526
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054582"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203243"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Gérer les notifications de facturation et les pièces jointes de facture
 
@@ -36,7 +36,7 @@ La **page Notifications de facturation** vous permet de gérer les personnes qui
 
 Vous devez être un administrateur global pour suivre les étapes décrites dans cet article. Les administrateurs de facturation peuvent apporter certaines de ces modifications, comme indiqué dans les sections ci-dessous. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
-## <a name="change-the-language-you-receive-email-in"></a>Modifier la langue de réception du courrier électronique
+## <a name="change-the-language-you-receive-email-in"></a>Modifier la langue dans qui vous recevez le courrier électronique
 
 Les e-mails de notification de facturation sont envoyés dans la langue par défaut de votre organisation. Pour modifier la langue préférée, utilisez les étapes suivantes.
 
@@ -88,13 +88,13 @@ En plus de vos administrateurs globaux et de facturation, nous envoyons des noti
 > [!NOTE]
 > Les administrateurs de facturation peuvent également suivre les étapes de cette section.
 
-Vous pouvez avoir une copie de la facture de votre organisation attachée sous forme de fichier PDF aux courriers électroniques de notification de facture lorsqu’une nouvelle facture est prête. Utilisez les étapes suivantes pour recevoir des factures en pièce jointe.
+Vous pouvez avoir une copie de la facture de votre organisation attachée sous forme de fichier PDF aux courriers électroniques de notification de facture lorsqu’une nouvelle facture est prête. Utilisez les étapes suivantes pour recevoir des factures en tant que pièces jointes.
 
 1. Dans le Centre d’administration, accédez à la page **Facturation** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notifications de facturation</a>.
-2. Sous **Paramètres de notification de facturation,** sélectionnez **Modifier les paramètres de notification.**
+2. Sous **Paramètres de notification de facturation,** **sélectionnez Modifier les paramètres de notification.**
 3. Dans le **volet Paramètres de notification de** facturation, sous Joindre un **PDF** à vos e-mails de facture, cochez la case, puis sélectionnez **Enregistrer.**
 
-Pour arrêter de recevoir la pièce jointe de la facture à tout moment, suivez les étapes ci-dessus et cochez la case Joindre un **PDF** à vos e-mails de facture à l’étape 3.
+Pour arrêter de recevoir la pièce jointe de la facture à tout moment, suivez les étapes ci-dessus et clear the **Attach a PDF to your invoice emails** checkbox in step 3.
 
 ## <a name="what-if-i-have-a-billing-profile"></a>Que se passe-t-il si j’ai un profil de facturation ?
 
@@ -127,6 +127,6 @@ Pour recevoir vos factures en pièce jointe à vos notifications de facture, uti
 ## <a name="related-content"></a>Contenu associé
 
 [Consulter votre facture](view-your-bill-or-invoice.md) (article)\
-[Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
+[Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](mexico-billing-info.md) (article) \
 [Comprendre votre facture pour Microsoft 365 entreprise](understand-your-invoice2.md) (article)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../../admin/add-users/add-users.md) (article)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5eca3b7e712b1fc5bdb876630c47bd24e73c7c76
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 81b0594044e238f5855c627b2ce80baf8d8cb9c2
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194684"
+ms.locfileid: "53203183"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
@@ -61,6 +61,7 @@ Red Hat Enterprise Linux 7.2 ou supérieur \* (voir l’avis « Important » ci-
 CentOS 7.2 ou supérieur | Oui | Oui | Oui | Oui | Oui
 Ubuntu 16.04 LTS ou une LTS supérieure | Oui | Oui | Oui | Oui | Oui
 Oracle Linux 7.2 ou supérieur | Oui | Oui | Oui | Oui | Oui
+SUSE Linux Enterprise Server 12 ou supérieur | Oui | Oui | Oui | Oui | Oui
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux : « Les données de vulnérabilité fournies et affichées dans le cadre de vos services Microsoft Defender for Endpoint sont disponibles sous sa forme brute, « EN L’ÉTAT », à partir de Red Hat, Inc., et peuvent ne pas être à jour. Les données accessibles dans l’API de données de sécurité Red Hat sont sous licence dans le cadre de la licence internationale Creative Commons Attribution 4.0. Vous assumez les risques associés à l’utilisation de ces données. Microsoft et ses fournisseurs tiers se dé déchargent de toute responsabilité pour les dommages indirects et indirects et les garanties implicites, y compris les garanties implicites de non-contrefaçon, la qualité de marché et l’aptitude à un usage particulier. © 2020 Red Hat. Tous droits réservés. © 2020 Microsoft. Tous droits réservés. »

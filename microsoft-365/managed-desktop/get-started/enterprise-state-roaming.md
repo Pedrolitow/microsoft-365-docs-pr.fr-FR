@@ -9,22 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 61b84b3c7b6550a8ce426a3e41630a0d3e269c41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f9d478412d2a1aac6f3e701aca59fcf74ceacce6
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921953"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203207"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Activer Enterprise State Roaming
 
-Pour une expérience de Bureau géré Microsoft, activez [Enterprise Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview)d’état, qui permet aux utilisateurs de synchroniser en toute sécurité les données des paramètres utilisateur et d’application sur le cloud. Cela signifie qu’ils auront la même expérience, quel que soit Windows appareil auquel ils se connectent. Par exemple, si vous remplacez l’un de leurs appareils Bureau géré Microsoft par un nouvel appareil, il se comportera exactement comme le dernier.
+[Enterprise’itinérance d’état](/azure/active-directory/devices/enterprise-state-roaming-overview) permet aux utilisateurs de synchroniser en toute sécurité les données des paramètres utilisateur et d’application sur le cloud. Cela signifie qu’ils auront la même expérience, quel que soit Windows appareil auquel ils se connectent. Par exemple, si vous remplacez l’un de leurs appareils Microsoft Manged Desktop par un nouvel appareil, il se comportera exactement comme le dernier. Enterprise L’itinérance de l’état est une fonctionnalité facultative pour le service Microsoft Manged Desktop que vous pouvez configurer pour vos utilisateurs et qui n’est pas incluse ou gérée dans le cadre de Microsoft Manged Desktop.
 
-Pour activer Enterprise’itinérance d’état, suivez les étapes de l’Enterprise [l’itinérance](/azure/active-directory/devices/enterprise-state-roaming-enable)d’état Azure Active Directory, puis revenir à cette documentation.
+Pour activer Enterprise roaming d’état, suivez les étapes de l’Enterprise [l’itinérance de l’état Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable).
 
-Si vous avez des difficultés avec l’itinérance Enterprise’état, contactez le [support de l’administrateur.](../working-with-managed-desktop/admin-support.md)
-
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Bureau géré Microsoft
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Étapes de mise en Microsoft Manged Desktop
 
 1. [Ajouter et vérifier des contacts d’administrateur dans le portail d’administration](add-admin-contacts.md)
 2. [Ajuster l’accès conditionnel](conditional-access.md)

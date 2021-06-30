@@ -23,12 +23,12 @@ ms.custom:
 - commerce_billing
 description: Recherchez votre facture ou relevé de facturation dans le Centre d’administration Microsoft 365. Vous pouvez également enregistrer et imprimer une copie de votre facture.
 ms.date: 07/31/2020
-ms.openlocfilehash: a4909a1ff56fb2a3d7fefca1af008abf93015a03
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 948634cd5c9db96bf399689c2c191597e60ec30b
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950070"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203111"
 ---
 # <a name="view-your-bill-or-invoice"></a>Consulter votre facture
 
@@ -105,5 +105,5 @@ Si vous avez un solde et que vous souhaitez le payer, vous pouvez le faire en li
 
 [Payer sur facture, par carte de crédit ou par compte bancaire](pay-for-your-subscription.md) (article) \
 [Gestion des modes de paiement](manage-payment-methods.md) (article) \
-[Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
+[Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](mexico-billing-info.md) (article) \
 [Options de paiement de Minecraft: Education Edition](/education/windows/school-get-minecraft) (article)

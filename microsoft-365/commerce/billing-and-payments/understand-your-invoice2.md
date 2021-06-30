@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Interpréter les frais, la facturation et les informations de paiement sur votre facture Microsoft 365 entreprise et comment modifier un numéro de bon de commande.
 ms.date: 05/04/2021
-ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 07d8b9fe88849b693388adf4d98813073764676d
+ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888372"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "53203147"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Consulter votre facture Microsoft 365 pour les entreprises
 
@@ -110,13 +110,13 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ Si vous payez par facture, vous pouvez ajouter ou modifier le numéro de bon de 
 ## <a name="related-content"></a>Contenu associé
 
 [Découvrez comment rechercher et afficher votre facture](view-your-bill-or-invoice.md) (article)\
-[Informations de facturation pour Microsoft 365 entreprise au Mexique](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
+[Informations de facturation pour Microsoft 365 pour les entreprises au Mexique](mexico-billing-info.md) (article) \
 [Modifier vos adresses de facturation](change-your-billing-addresses.md) (article)\
 [Modifier l’adresse de votre organisation, le courrier électronique du contact technique et d’autres informations](../../admin/manage/change-address-contact-and-more.md) (article)\
 [Payer votre abonnement Microsoft 365 entreprise](pay-for-your-subscription.md) (article)\
