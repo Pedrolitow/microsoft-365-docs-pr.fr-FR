@@ -12,14 +12,14 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: 453c26afd176a1282e466a73992ae4abe1542d68
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 0ee214cf7ff5d5998a7fa35688574a23f8b082f0
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177476"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229598"
 ---
-# <a name="overview"></a>Présentation
+# <a name="overview"></a>Vue d’ensemble
 
 Microsoft Manged Desktop est un service ITaaS (IT-as-a-Service) pour les clients cloud d’entreprise conçu pour maintenir les appareils Windows employés déployés et mis à jour. Il assure également la gestion et les opérations des services informatiques, surveille la sécurité et la réponse aux incidents, ainsi que la prise en charge des utilisateurs. Cette documentation fournit des détails supplémentaires sur la plateforme de données et la conformité de la confidentialité pour Microsoft Manged Desktop.
 
@@ -68,16 +68,16 @@ L’identification des données utilisées par Microsoft Manged Desktop est stoc
 ## <a name="microsoft-intune"></a>Microsoft Intune
 Microsoft Intune collecte, traite et partage des données à Microsoft Manged Desktop pour prendre en charge les opérations et les services de l’entreprise. Pour [plus d’informations](/mem/intune/protect/privacy-data-collect) sur les données collectées dans Intune, voir Collecte de données dans Intune. 
 
-Pour plus d’informations Microsoft Intune des emplacements de données, consultez [l’emplacement Microsoft 365 données client sont stockées.](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide) Intune respecte les sélections d’emplacements de stockage réalisées par l’administrateur pour les données client.
+Pour plus d’informations Microsoft Intune des emplacements de données, consultez [l’emplacement Microsoft 365 données client sont stockées.](/microsoft-365/enterprise/o365-data-locations) Intune respecte les sélections d’emplacements de stockage réalisées par l’administrateur pour les données client.
 
-## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
-Microsoft Defender pour le point de terminaison collecte et stocke des informations pour les appareils inscrits Microsoft Manged Desktop à des fins d’administration, de suivi et de rapport. Les informations collectées comprennent les données de fichier (telles que les noms de fichiers, la taille et les hésages), les données de processus (processus en cours d’exécution, hèses), les données de Registre, les données de connexion réseau et les détails des périphériques (tels que les identificateurs de périphérique, les noms de périphérique et la version du système d’exploitation). Consultez [Microsoft Defender pour le stockage et](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) la confidentialité des données des points de terminaison pour plus d’informations sur Microsoft Defender pour la collecte de données et les emplacements de stockage des points de terminaison. 
+## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour Point de terminaison
+Microsoft Defender pour le point de terminaison collecte et stocke des informations pour les appareils inscrits Microsoft Manged Desktop à des fins d’administration, de suivi et de rapport. Les informations collectées comprennent les données de fichier (telles que les noms de fichiers, la taille et les hésages), les données de processus (processus en cours d’exécution, hèses), les données de Registre, les données de connexion réseau et les détails des périphériques (tels que les identificateurs de périphérique, les noms de périphérique et la version du système d’exploitation). Consultez [Microsoft Defender pour le stockage et](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) la confidentialité des données des points de terminaison pour plus d’informations sur Microsoft Defender pour la collecte de données et les emplacements de stockage des points de terminaison. 
 
-## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise 
-Applications Microsoft 365 pour les grandes entreprises collecte et partage des données avec Microsoft Manged Desktop pour s’assurer que ces applications sont à jour avec la dernière version en fonction des canaux de mise à jour prédéfincis gérés par Microsoft Manged Desktop. Consultez [Microsoft Defender pour le stockage et](/microsoft-365/security/defender-endpoint/data-storage-privacy?view=o365-worldwide#what-data-does-microsoft-defender-atp-collect) la confidentialité des données des points de terminaison pour plus d’informations Microsoft 365 Apps’emplacements de stockage et de collecte de données de l’utilisateur.
+## <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 pour les grandes entreprises 
+Applications Microsoft 365 pour les grandes entreprises collecte et partage des données avec Microsoft Manged Desktop pour s’assurer que ces applications sont à jour avec la dernière version en fonction des canaux de mise à jour prédéfincis gérés par Microsoft Manged Desktop. Consultez [Microsoft Defender pour le stockage et](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) la confidentialité des données des points de terminaison pour plus d’informations Microsoft 365 Apps’emplacements de stockage et de collecte de données de l’utilisateur.
 
 ## <a name="major-data-change-notification"></a>Notification de modification majeure des données
-Microsoft Manged Desktop suit un processus de contrôle des changements décrit dans notre infrastructure de communication de service. Nous informons les clients via Microsoft 365 centre de messages et Microsoft Manged Desktop portail d’administration des incidents de sécurité et des modifications majeures apportées au service. Les modifications apportées aux types de données recueillies et à l’endroit où elles sont stockées sont considérées comme des modifications importantes. Nous fournirons un minimum de 30 jours de notification avancée de cette modification, comme c’est la pratique standard pour Microsoft 365 produits et services. Pour plus d’informations, [voir Changements de service et communication.](/microsoft-365/managed-desktop/service-description/servicechanges?view=o365-worldwide)
+Microsoft Manged Desktop suit un processus de contrôle des changements décrit dans notre infrastructure de communication de service. Nous informons les clients via Microsoft 365 centre de messages et Microsoft Manged Desktop portail d’administration des incidents de sécurité et des modifications majeures apportées au service. Les modifications apportées aux types de données recueillies et à l’endroit où elles sont stockées sont considérées comme des modifications importantes. Nous fournirons un minimum de 30 jours de notification avancée de cette modification, comme c’est la pratique standard pour Microsoft 365 produits et services. Pour plus d’informations, [voir Changements de service et communication.](/microsoft-365/managed-desktop/service-description/servicechanges)
 
 ## <a name="compliance"></a>Conformité
 Microsoft Manged Desktop a subi des audits externes et obtenu un ensemble complet d’offres de conformité. Vous trouverez plus d’informations dans Microsoft Manged Desktop [conformité.](/microsoft-365/managed-desktop/intro/compliance) Les rapports d’audit peuvent [](https://aka.ms/stp)être téléchargés sur le portail d’confiance des services Microsoft, qui sert de référentiel central pour Microsoft Enterprise Online Services. (Microsoft Manged Desktop est répertorié dans ces documents sous la catégorie « Surveillance et gestion ».) 

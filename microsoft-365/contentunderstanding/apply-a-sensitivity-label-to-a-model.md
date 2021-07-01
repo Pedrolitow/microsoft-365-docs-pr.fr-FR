@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Découvrez comment appliquer une étiquette de confidentialité à un modèle dans SharePoint Syntex.
-ms.openlocfilehash: ebcd398799e7c8addd96d5941427628d3db5ad43
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: c7d6c17dc4d41bf2dab663618e740318d88dd723
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028942"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228746"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Appliquer une étiquette de confidentialité à un modèle dans Microsoft SharePoint Syntex
 
 Vous pouvez facilement appliquer une [étiquette de confidentialité](../compliance/sensitivity-labels.md) à un modèle de compréhension de document dans Microsoft SharePoint Syntex. Cette fonctionnalité n’est pas encore disponible pour les modèles de traitement de formulaire.
 
-Les étiquettes de confidentialité vous permettent d’appliquer des stratégies de chiffrement, de partage et d’accès conditionnel aux documents que vos modèles identifient. Par exemple, vous souhaitez que votre modèle identifie non seulement les documents financiers qui contiennent des numéros de compte bancaire ou des numéros de carte de crédit chargés dans votre bibliothèque de documents, mais également qu’il leur applique une étiquette de confidentialité *Chiffrement* afin de restreindre l’accès à ce contenu et la façon dont il peut être utilisé. Les modèles SharePoint Syntex respectent les règles [d'ordre des étiquettes](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) et n'écrasent pas non plus une étiquette existante qui a été appliquée manuellement par un utilisateur au fichier. 
+Les étiquettes de confidentialité vous permettent d’appliquer des stratégies de chiffrement, de partage et d’accès conditionnel aux documents que vos modèles identifient. Par exemple, vous souhaitez que votre modèle identifie non seulement les documents financiers qui contiennent des numéros de compte bancaire ou des numéros de carte de crédit chargés dans votre bibliothèque de documents, mais également qu’il leur applique une étiquette de confidentialité *Chiffrement* afin de restreindre l’accès à ce contenu et la façon dont il peut être utilisé. Les modèles SharePoint Syntex respectent les règles [d'ordre des étiquettes](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) et n'écrasent pas non plus une étiquette existante qui a été appliquée manuellement par un utilisateur au fichier. 
 
 Vous pouvez appliquer une étiquette de confidentialité préexistante à votre modèle via les paramètres du modèle sur la page d’accueil de celui-ci. L’étiquette doit déjà être publiée pour pouvoir être sélectionnée dans les paramètres du modèle.
 

@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Découvrez les fonctionnalités multigé géographiques dans Exchange Online, telles que les limitations de fonctionnalités et l’emplacement des boîtes aux lettres.
-ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: c7c7699906b92e09f88f59bb9d34d1c3b2c36135
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694304"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229802"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Fonctionnalités multigéographiques d’Exchange Online
 
@@ -59,4 +59,4 @@ Exchange Online synchronise la propriété **MailboxRegion** du service d’ann
 
 - Les dossiers publics sont pris en charge dans les organisations multigéographiques. Toutefois, ils doivent rester dans l’emplacement géographique central. Vous ne pouvez pas déplacer des dossiers publics vers des emplacements géographiques satellites.
 
-- Dans un environnement multi-géographique, l’audit de boîte aux lettres inter-géographique n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer les autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas enregistrées dans le journal d’audit de la boîte aux lettres partagée. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](../compliance/enable-mailbox-auditing.md?view=o365-worldwide).
+- Dans un environnement multi-géographique, l’audit de boîte aux lettres inter-géographique n’est pas pris en charge. Par exemple, si un utilisateur se voit attribuer les autorisations d’accès à une boîte aux lettres partagée dans un autre emplacement géographique, les actions de boîte aux lettres effectuées par cet utilisateur ne sont pas enregistrées dans le journal d’audit de la boîte aux lettres partagée. Pour plus d’informations, voir [Gérer l’audit de boîte aux lettres](../compliance/enable-mailbox-auditing.md).

@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 06/02/2021
-ms.openlocfilehash: cb56872be3cef2e094583e59a702707f79355743
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 65215d15e79ab03611bbf28c153d6882fd1c355d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177620"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229142"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Activer les règles de réduction de la surface d’attaque
 
@@ -49,7 +49,7 @@ Vous pouvez définir des règles de réduction de la surface d’attaque pour le
 Pour utiliser l’ensemble des fonctionnalités des règles de réduction de la surface d’attaque, vous devez :
 
 - Antivirus Windows Defender comme antivirus principal (protection en temps réel)
-- [Protection de la distribution cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) sur (certaines règles l’exigent)
+- [Protection de la distribution cloud](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) sur (certaines règles l’exigent)
 - Windows 10 Entreprise Licence E5 ou E3 ou licence Microsoft 365 entreprise
 
 Bien que les règles de réduction de la surface d’attaque ne nécessitent pas de licence [Windows E5,](/windows/deployment/deploy-enterprise-licenses)avec une licence Windows E5, vous disposez de fonctionnalités de gestion avancées, y compris la surveillance, l’analyse et les flux de travail disponibles dans Defender pour Endpoint, ainsi que des fonctionnalités de rapports et de configuration dans le centre de sécurité Microsoft 365. Ces fonctionnalités avancées ne sont pas disponibles avec une licence E3, mais vous pouvez toujours utiliser l’Observateur d’événements pour passer en revue les événements de règle de réduction de la surface d’attaque.
@@ -99,7 +99,7 @@ Les procédures suivantes pour l’activation des règles de la asr. contiennent
 
 1. Sélectionnez **Profils de configuration**  >  **d’appareil.** Choisissez un profil de protection de point de terminaison existant ou créez-en un. Pour en créer un, sélectionnez Créer un **profil** et entrez des informations pour ce profil. Pour **le type de profil,** **sélectionnez Endpoint Protection**. Si vous avez choisi un profil existant, sélectionnez **Propriétés,** puis **sélectionnez Paramètres**.
 
-2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez Réduction **de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
+2. Dans le **volet de protection des points** de terminaison, **sélectionnez Windows Defender Exploit Guard,** puis sélectionnez **Réduction de la surface d’attaque.** Sélectionnez le paramètre souhaité pour chaque règle de asr.
 
 3. Sous **Exceptions de réduction de la surface d’attaque,** entrez des fichiers et dossiers individuels. Vous pouvez également sélectionner **Importer** pour importer un fichier CSV qui contient des fichiers et des dossiers à exclure des règles asr. Chaque ligne du fichier CSV doit être mise en forme comme suit :
 
@@ -225,7 +225,7 @@ Exemple :
 
 4. Choisissez les règles qui bloqueront ou auditeront les actions et sélectionnez **Suivant.**
 
-5. Examinez les paramètres et sélectionnez **Suivant** pour créer la stratégie.
+5. Examinez les paramètres et **sélectionnez Suivant** pour créer la stratégie.
 
 6. Une fois la stratégie créée, **fermez**.
 

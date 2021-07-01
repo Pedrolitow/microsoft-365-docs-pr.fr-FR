@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Choisissez la façon dont vous affichez le contenu Advanced eDiscovery, tel que le texte, l’annoter, la conversion ou l’affichage natif.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 7c2adf5a1b06761832b96a06a85f72c471e5dd1c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471067"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228518"
 ---
 # <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Afficher des documents dans un jeu à réviser dans Advanced eDiscovery
 
@@ -49,44 +49,31 @@ La visionneuse native affiche la vue la plus riche d’un document. Elle prend e
 
 La visionneuse de texte donne un aperçu du texte extrait d’un fichier. Elle ignore toute image et mise en forme incorporées, mais elle est très efficace si vous essayez de comprendre le contenu rapidement. L’affichage de texte inclut également les fonctionnalités suivantes :
 
-  - Le compteur de ligne permet de référencer plus facilement des parties spécifiques d’un document
+- Le compteur de ligne permet de référencer plus facilement des parties spécifiques d’un document
+- Mise en surbrillance des résultats de recherche qui met en surbrillance les termes dans le document ainsi que la barre de défilement
+- L’affichage diff fournit un affichage de comparaison qui met en évidence les différences textuelles lors de l’affichage de documents quasi-dupliqués
 
-  - Mise en surbrillance des résultats de recherche qui met en surbrillance les termes dans le document ainsi que la barre de défilement
+![Affichage de texte](../media/Reviewimage4.png)
 
-  - L’affichage diff fournit un affichage de comparaison qui met en évidence les différences textuelles lors de l’affichage de documents en double proche
-
-![Affichage de texte
-](../media/Reviewimage4.png)
-
-![Affichage diff
-](../media/Reviewimage5.png)
+![Affichage diff](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Vue Annoter
 
 L’affichage Annotate fournit des fonctionnalités qui permettent aux utilisateurs d’appliquer des marques de contrôle sur un document, notamment :
 
-  - Actions de zone : les utilisateurs peuvent dessiner une zone sur le document afin de masquer le contenu sensible
+- Actions de zone : les utilisateurs peuvent dessiner une zone sur le document afin de masquer le contenu sensible
+- Crayon : les utilisateurs peuvent dessiner librement sur un document afin d’attirer l’attention sur certaines parties d’un document
+- Sélectionner des annotations : les utilisateurs peuvent sélectionner des annotations sur un document afin de les supprimer
+- Transparence des annotations bascule : rend les annotations semi-transparentes afin d’afficher le contenu derrière l’annotation
+- Page précédente : accéde à la page précédente
+- Page suivante : accéde à la page suivante
+- Accéder à la page : l’utilisateur peut entrer un numéro de page spécifique pour y accéder
+- Zoom : définir le niveau de zoom pour la vue annotée
+- Rotation : l’utilisateur peut faire pivoter le document dans le sens des aiguilles d’une montre
+- Recherche : l’utilisateur peut effectuer une recherche dans un document et accéder aux différentes occurrences dans le document
 
-  - Crayon : les utilisateurs peuvent dessiner librement sur un document afin d’attirer l’attention sur certaines parties d’un document
+  ![Vue Annoter](../media/Reviewimage1.png)
 
-  - Sélectionner des annotations : les utilisateurs peuvent sélectionner des annotations sur un document afin de les supprimer
+## <a name="dashboard-view"></a>Affichage Tableau de bord
 
-  - Transparence des annotations bascule : rend les annotations semi-transparentes afin d’afficher le contenu derrière l’annotation
-
-  - Page précédente : accéde à la page précédente
-
-  - Page suivante : accéde à la page suivante
-
-  - Accéder à la page : l’utilisateur peut entrer un numéro de page spécifique pour y accéder
-
-  - Zoom : définir le niveau de zoom pour la vue annotée
-
-  - Rotation : l’utilisateur peut faire pivoter le document dans le sens des aiguilles d’une montre
-
-  - Recherche : l’utilisateur peut effectuer une recherche dans un document et accéder aux différentes occurrences dans le document
-    
-    ![Vue Annoter
-    ](../media/Reviewimage1.png)
-
-## <a name="dashboard-view"></a>Affichage Tableau de bord 
-L’affichage tableau de bord vous permet de visualiser et de résumer les données de votre grille de résultats de recherche. Dans cette vue, vous pouvez créer des widgets personnalisés pour faciliter l’analyse et la création de rapports sur votre jeu à réviser. Une fois que vous avez créé vos widgets, vous pouvez interagir avec eux pour obtenir le nombre d’éléments ou pour créer une recherche. 
+L’affichage tableau de bord vous permet de visualiser et de résumer les données de votre grille de résultats de recherche. Dans cette vue, vous pouvez créer des widgets personnalisés pour faciliter l’analyse et la création de rapports sur votre jeu à réviser. Une fois que vous avez créé vos widgets, vous pouvez interagir avec eux pour obtenir le nombre d’éléments ou pour créer une recherche.

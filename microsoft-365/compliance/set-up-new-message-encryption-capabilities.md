@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Découvrez les nouvelles fonctionnalités de chiffrement de messages Office 365 qui permettent une communication de messagerie protégée avec des personnes internes ou externes à votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 9b738c0f93b8958e441b34b458942c2b34c16661
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876303"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228578"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurer les nouvelles fonctionnalités de chiffrement de messages
 
@@ -39,13 +39,13 @@ La seule condition préalable à l’utilisation des nouvelles fonctionnalités 
 
 Azure RMS est également activé automatiquement pour la plupart des offres éligibles, de sorte que vous n’avez probablement pas besoin d’effectuer quoi que ce soit à cet égard. Pour plus d’informations, reportez-vous à [Activation d’Azure Rights Management](/azure/information-protection/activate-service).
 
->[!IMPORTANT]
->Si vous utilisez Active Directory Rights Management Services (AD RMS) avec Exchange Online, vous devez [migrer vers Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) avant de pouvoir utiliser les nouvelles fonctionnalités OME. OME n’est pas compatible avec AD RMS.  
+> [!IMPORTANT]
+> Si vous utilisez Active Directory Rights Management Services (AD RMS) avec Exchange Online, vous devez [migrer vers Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) avant de pouvoir utiliser les nouvelles fonctionnalités OME. OME n’est pas compatible avec AD RMS.
 
 Pour plus d’informations, voir :
 
 - [De quels abonnements ai-je besoin pour utiliser les nouvelles fonctionnalités OME ?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) pour vérifier si votre plan d’abonnement inclut Azure Information Protection (qui inclut les fonctionnalités Azure RMS).
-- [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) pour plus d’informations sur l’achat d’un abonnement éligible.  
+- [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) pour plus d’informations sur l’achat d’un abonnement éligible.
 
 ### <a name="manually-activating-azure-rights-management"></a>Activation manuelle d’Azure Rights Management
 
@@ -63,7 +63,7 @@ Il existe de nombreuses raisons, par exemple des exigences de conformité, qui p
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Vérifier la nouvelle configuration OME dans Exchange Online PowerShell
 
 Vous pouvez vérifier que votre client Microsoft 365 est correctement configuré pour utiliser les nouvelles fonctionnalités OME dans [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
-  
+
 1. [Connectez-vous à Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) à l’aide d’un compte disposant des autorisations d’administrateur général dans votre client Microsoft 365.
 
 2. Exécutez la cmdlet Get-IRMConfiguration.
@@ -74,7 +74,7 @@ Vous pouvez vérifier que votre client Microsoft 365 est correctement configur�
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
-     ```  
+     ```
 
    **Exemple** :
 
@@ -114,11 +114,11 @@ Vous pouvez vérifier que votre client Microsoft 365 est correctement configur�
 
 S’il existe des règles de flux de messagerie précédemment configurées permettant de chiffrer le courrier électronique dans votre organisation, vous devez mettre à jour les règles existantes pour utiliser les nouvelles fonctionnalités OME. Pour les nouveaux déploiements, vous devez créer des règles de flux de messagerie.
 
->[!IMPORTANT]
->Si vous ne mettez pas à jour les règles de flux de messagerie existantes, vos utilisateurs continueront à recevoir des e-mails chiffrés qui utilisent le format de pièces jointes HTML précédent, au lieu de la nouvelle expérience OME transparente.
+> [!IMPORTANT]
+> Si vous ne mettez pas à jour les règles de flux de messagerie existantes, vos utilisateurs continueront à recevoir des e-mails chiffrés qui utilisent le format de pièces jointes HTML précédent, au lieu de la nouvelle expérience OME transparente.
 
 Les règles de flux de messagerie déterminent les conditions dans lesquelles les e-mails doivent être chiffrés, ainsi que les conditions pour supprimer ce chiffrement. Lorsque vous configurez une action pour une règle, tous les messages correspondant aux conditions de la règle sont chiffrés lorsqu’elles sont envoyées.
-  
+
 Pour plus d’informations sur la création de règles de flux de messagerie pour OME, reportez-vous à [Définir des règles de flux de courrier pour le chiffrement du courrier dans Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
 Pour mettre à jour les règles existantes afin d’utiliser les nouvelles fonctionnalités OME :

@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées disponibles dans les organisations avec Microsoft Defender pour Office 365.
+description: Les administrateurs peuvent apprendre à créer, modifier et supprimer les stratégies anti-hameçonnage avancées qui sont disponibles dans les organisations avec Microsoft Defender pour Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a948604f11064f2c1fefcc441adc4a9792ac918
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: 71baf947c5834e2eb4b8ef62af69da77ea5bd090
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108438"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230042"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365
 
@@ -111,7 +111,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
    Lorsque vous avez terminé, cliquez sur **Suivant**.
 
-5. Dans la page de protection **&** seuil de hameçonnage qui s’affiche, configurez les paramètres suivants :
+5. Dans la page **de protection &** seuil de hameçonnage qui s’affiche, configurez les paramètres suivants :
 
    - **Seuil de courrier d’hameçonnage**: utilisez le curseur pour sélectionner l’une des valeurs suivantes :
      - **1 - Standard** (il s’agit de la valeur par défaut.)
@@ -125,8 +125,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
      > [!NOTE]
      >
-     > - Dans chaque stratégie anti-hameçonnage, vous pouvez spécifier un maximum de 60 utilisateurs protégés (adresses e-mail de l’expéditeur). Vous ne pouvez pas spécifier le même utilisateur protégé dans plusieurs stratégies.
-     >
+     > - Dans chaque stratégie anti-hameçonnage, vous pouvez spécifier un maximum de 350 utilisateurs protégés (adresses e-mail de l’expéditeur). Vous ne pouvez pas spécifier le même utilisateur protégé dans plusieurs stratégies.
      > - La protection contre l’emprunt d’identité d’utilisateur ne fonctionne pas si l’expéditeur et le destinataire ont précédemment communiqué par courrier électronique. Si l’expéditeur et le destinataire n’ont jamais communiqué par courrier électronique, le message est identifié comme une tentative d’emprunt d’identité.
 
      - **Activer la protection des utilisateurs**: la valeur par défaut est off (non sélectionnée). Pour l’activer, cochez la case, puis cliquez sur **le(s) lien Gérer (nn)** des expéditeurs qui s’affiche.
@@ -139,7 +138,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
          Lorsque vous avez terminé, cliquez sur **Ajouter**
 
-       - **Expéditeurs externes :** cliquez ![ sur Ajouter une icône externe Sélectionner ](../../media/m365-cc-sc-create-icon.png) **externe.** Dans  le volant Ajouter des expéditeurs externes qui  s’affiche, entrez un nom d’affichage dans la zone Ajouter un nom et une adresse e-mail dans la zone Ajouter un e-mail de **vaild,** puis cliquez sur **Ajouter**.
+       - **Expéditeurs externes :** cliquez ![ sur Ajouter une icône externe Sélectionner ](../../media/m365-cc-sc-create-icon.png) **externe.** Dans le volant Ajouter des expéditeurs externes qui  s’affiche, entrez un  nom d’affichage dans la zone Ajouter un nom et une adresse de messagerie dans la zone Ajouter un message électronique, puis cliquez sur Ajouter **.** 
 
          Répétez cette étape autant de fois que nécessaire. Pour supprimer une valeur existante, cliquez sur Supprimer ![Icône Suppression](../../media/m365-cc-sc-remove-selection-icon.png) en regard de la valeur.
 
@@ -162,7 +161,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
          > [!NOTE]
          > Vous pouvez avoir un maximum de 50 domaines dans toutes les stratégies anti-hameçonnage.
 
-       De retour sur le volant Gérer les domaines **personnalisés** pour l’emprunt d’identité, vous pouvez supprimer des entrées en sélectionnant une ou plusieurs entrées dans la liste. Vous pouvez rechercher des entrées à l’aide de la zone De recherche ![ de ](../../media/m365-cc-sc-create-icon.png) **l’icône Rechercher.**
+       De retour sur le volant Gérer les domaines **personnalisés pour** l’emprunt d’identité, vous pouvez supprimer des entrées en sélectionnant une ou plusieurs entrées dans la liste. Vous pouvez rechercher des entrées à l’aide de la zone De recherche ![ de ](../../media/m365-cc-sc-create-icon.png) **l’icône Rechercher.**
 
        Une fois que vous avez sélectionné au moins une entrée, l’icône Supprimer des domaines s’affiche, que vous pouvez utiliser pour supprimer ![ ](../../media/m365-cc-sc-delete-icon.png)  les entrées sélectionnées.
 
@@ -209,7 +208,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
        - **Remettre le message et ajouter d’autres adresses à la ligne Bcc**
        - **Supprimer le message avant sa livraison**
 
-     - **Si le message est détecté** comme un domaine dont l’identité  est usurpée : ce paramètre n’est disponible que si vous avez sélectionné Activer les domaines à protéger sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste suivante pour les messages dont l’adresse de messagerie de l’expéditeur se trouve dans l’un des domaines protégés que vous avez spécifiés sur la page précédente :
+     - **Si le message est détecté** comme un domaine dont l’identité  est usurpée : ce paramètre est disponible uniquement si vous avez sélectionné Activer les domaines à protéger sur la page précédente. Sélectionnez l’une des actions suivantes dans la liste suivante pour les messages dont l’adresse de messagerie de l’expéditeur se trouve dans l’un des domaines protégés que vous avez spécifiés sur la page précédente :
        - **Ne pas appliquer d’action**
        - **Rediriger le message vers d’autres adresses de messagerie**
        - **Déplacer le message vers les dossiers Courrier indésirable des destinataires**
@@ -232,7 +231,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
    - **Conseils de sécurité & indicateurs de sécurité**: configurez les paramètres suivants :
      - **Afficher le premier contact conseil de sécurité**: pour plus d’informations, voir First contact [conseil de sécurité](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **Afficher l’emprunt d’conseil de sécurité**: ce paramètre est disponible uniquement si vous avez sélectionné Activer la protection des utilisateurs **sur** la page précédente.
-     - **Afficher l’emprunt** d conseil de sécurité : ce paramètre est disponible uniquement si vous avez sélectionné Activer les domaines à protéger **sur** la page précédente.
+     - **Afficher l’emprunt** d conseil de sécurité : ce paramètre est disponible  uniquement si vous avez sélectionné Activer les domaines à protéger sur la page précédente.
      - **Afficher les caractères inhabituels d’emprunt d’identité conseil de sécurité** Ce paramètre est disponible uniquement si vous avez sélectionné Activer les **utilisateurs** **pour protéger** ou Activer les domaines à protéger sur la page précédente.
      - **Afficher (?)** pour les expéditeurs non authentifiés pour l’usurpation d’adresse : ce paramètre est disponible uniquement si vous avez sélectionné Activer la veille contre l’usurpation d’informations sur la page précédente.  Ajoute un point d’interrogation à la photo de l’expéditeur dans la zone De de Outlook  si le message ne passe pas les vérifications SPF ou DKIM et s’il ne passe pas l’authentification DMARC ou [composite.](email-validation-and-authentication.md#composite-authentication)
      - **Afficher la balise « via »**: ce paramètre est disponible uniquement si vous avez sélectionné Activer la veille contre l’usurpation d’informations sur la page précédente.  Ajoute une balise via (chris@contoso.com via fabrikam.com) à l’adresse De si elle est différente du domaine dans la signature DKIM ou l’adresse **MAIL FROM.** La valeur par défaut est sur (sélectionné). Pour la désactiver, cochez la case.
@@ -246,7 +245,7 @@ La création d’une stratégie anti-hameçonnage personnalisée dans le portail
 
 7. Dans la page **Révision** qui s’affiche, passez en revue vos paramètres. Vous pouvez sélectionner **Modifier** dans chaque section pour modifier les paramètres de la section. Vous pouvez également cliquer sur **Précédent** ou sélectionner la page spécifique dans l’Assistant.
 
-   Lorsque vous avez terminé, cliquez sur **Envoyer.**
+   Lorsque vous avez terminé, cliquez sur **Envoyer**.
 
 8. Dans la page de confirmation qui s’affiche, cliquez sur **Terminé**.
 

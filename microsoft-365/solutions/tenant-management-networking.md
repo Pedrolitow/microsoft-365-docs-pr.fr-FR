@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Optimisez l’accès réseau à vos Microsoft 365 client.
-ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cf9591d2ec027c42f5ef9e7abac6dc9b06744a81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407191"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229178"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Étape 2. Mise en réseau optimale pour votre Microsoft 365 pour les locataires d’entreprise
 
@@ -31,13 +31,13 @@ Pour optimiser l’accès réseau pour votre client, vous devez :
 
 - Optimisez le chemin d’accès entre vos utilisateurs locaux et l’emplacement le plus proche du réseau global Microsoft.
 - Optimisez l’accès au réseau global Microsoft pour vos utilisateurs distants qui utilisent une solution VPN d’accès à distance.
-- Utilisez Network Insights pour concevoir le périmètre réseau de vos bureaux.
+- Utilisez network Informations pour concevoir le périmètre réseau de vos bureaux.
 - Optimisez l’accès à des ressources spécifiques hébergées sur SharePoint sites avec le Office 365 CDN.
 - Configurez les périphériques de périphérie réseau et proxy pour contourner le traitement du trafic Microsoft 365 approuvé avec la liste des points de terminaison et automatisez la mise à jour de la liste au fil des modifications.
 
 ## <a name="enterprise-on-premises-workers"></a>Enterprise des employés locaux
 
-Pour les réseaux d’entreprise, vous devez optimiser l’expérience utilisateur final en activant l’accès réseau le plus performant entre les clients et les points de terminaison Microsoft 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application que l’utilisateur utilise. Par exemple, Microsoft Teams sur une faible latence afin que les appels téléphoniques des utilisateurs, les conférences et les collaborations à l’écran partagé ne rencontrent aucun problème.
+Pour les réseaux d’entreprise, vous devez optimiser l’expérience utilisateur final en activant l’accès réseau le plus performant entre les clients et les points de terminaison Microsoft 365 les plus proches. La qualité de l’expérience de l’utilisateur final est directement liée aux performances et à la réactivité de l’application que l’utilisateur utilise. Par exemple, Microsoft Teams sur une faible latence afin que les appels téléphoniques des utilisateurs, les conférences et les collaborations à l’écran partagé soient sans problème.
 
 L’objectif principal dans la conception du réseau doit être de réduire la latence en réduisant le temps d’aller-retour (RTT) entre les appareils clients et le réseau mondial Microsoft, la dorsale principale du réseau public de Microsoft qui interconnecte tous les centres de données Microsoft avec une faible latence et des points d’entrée d’application cloud haute disponibilité, appelés « portes d’entrée » dans le monde entier.
 
@@ -64,7 +64,7 @@ Si vous implémentez ces principes, vous obtenez un réseau d’entreprise optim
 
 ![Un réseau d’entreprise optimisé pour Microsoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
-Dans cette illustration, les succursales ont leur propre connexion Internet via un périphérique wan (SDWAN) défini par logiciel, qui envoie le trafic Microsoft 365 approuvé vers la porte frontale la plus proche au niveau régional. Au siège social, le trafic Microsoft 365 de confiance contourne le périphérique de sécurité ou de proxy et les périphériques intermédiaires ne sont plus utilisés.
+Dans cette illustration, les succursales ont leur propre connexion Internet via un périphérique wan (SDWAN) défini par logiciel, qui envoie le trafic Microsoft 365 approuvé vers la porte d’entrée la plus proche au niveau régional. Au siège social, le trafic Microsoft 365 de confiance contourne le périphérique de sécurité ou de proxy et les périphériques intermédiaires ne sont plus utilisés.
 
 Voici comment la configuration optimisée résout les problèmes de latence d’un réseau d’entreprise traditionnel :
 
@@ -94,7 +94,7 @@ Dans cette illustration, le client VPN envoie et reçoit un trafic de service cl
 
 Pour plus d’informations et de conseils, voir [Optimiser la connectivité d’Office 365 pour les utilisateurs à distance à l’aide de la segmentation de tunnel de VPN](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-## <a name="using-network-insights-preview"></a>Utilisation de Network Insights (aperçu)
+## <a name="using-network-insights-preview"></a>Utilisation de la Informations réseau (prévisualisation)
 
 Les informations réseau sont des mesures de performances collectées à partir de votre client Microsoft 365 qui vous aident à concevoir des périmètres réseau pour vos emplacements de bureau. Chaque insight fournit des détails en direct sur les caractéristiques de performances d’un problème spécifié pour chaque emplacement géographique où les utilisateurs locaux accèdent à votre client.
 
@@ -105,17 +105,17 @@ Il existe deux informations réseau au niveau du client qui peuvent être affich
 
 Voici les informations réseau spécifiques pour chaque emplacement de bureau :
 
-- [Sortie du réseau backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
+- [Sortie réseau backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
 - [Meilleures performances détectées pour les clients proches de chez vous](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
 - [Utilisation d’une porte d’Exchange Online service non optimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Utilisation d’une porte d’entrée du service SharePoint Online non optimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [Faible vitesse de téléchargement à partir SharePoint première ligne](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [Sortie réseau optimale de l’utilisateur chinois](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
->[!IMPORTANT]
->Les informations réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation. Il est uniquement disponible pour les Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
+> [!IMPORTANT]
+> Les informations réseau, les recommandations en matière de performances et les évaluations dans le centre Administration Microsoft 365 sont actuellement en état d’aperçu. Il est uniquement disponible pour les Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
-Pour plus d’informations, [voir Microsoft 365 Network Insights.](../enterprise/office-365-network-mac-perf-insights.md)
+Pour plus d’informations, [voir Microsoft 365 Network Informations](../enterprise/office-365-network-mac-perf-insights.md).
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>SharePoint performances avec le Office 365 CDN
 
@@ -123,7 +123,7 @@ Un système informatique réseau de distribution de contenu (CDN) vous permet de
 
 Le réseau de distribution de contenu Office 365 est composé de plusieurs réseaux de distribution de contenu qui vous permettent d’héberger des ressources statiques à différents emplacements (ou _origines_) et de les servir à partir de réseaux à haut débit mondiaux. Selon le type de contenu que vous souhaitez héberger  dans le Office 365 CDN, vous pouvez ajouter des origines publiques,  des origines privées ou les deux.
 
-Lorsqu’elle est déployée et configurée, la Office 365 CDN télécharge les ressources à partir d’origines publiques et privées et les rend disponibles pour un accès rapide aux utilisateurs situés sur Internet.
+Lorsqu’elle est déployée et configurée, la Office 365 CDN charge les ressources à partir d’origines publiques et privées et les rend disponibles pour un accès rapide aux utilisateurs situés sur Internet.
 
 ![Office 365 CDN pour les utilisateurs](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN pour les utilisateurs")
 
@@ -139,7 +139,7 @@ Vous pouvez utiliser PowerShell, Python ou d’autres langages pour déterminer 
 
 Le processus de base est :
 
-1. Utilisez le service web Office 365 ADRESSE IP et URL et le mécanisme de configuration de votre choix pour configurer vos fichiers PAC et périphériques réseau avec l’ensemble actuel de points de terminaison Microsoft 365 réseau.
+1. Utilisez le service web Office 365 d’URL et d’adresse IP et le mécanisme de configuration de votre choix pour configurer vos fichiers PAC et périphériques réseau avec l’ensemble actuel Microsoft 365 points de terminaison.
 2. Exécutez une activité périodique quotidienne pour vérifier les modifications apportées aux points de terminaison ou utilisez une méthode de notification.
 3. Lorsque des modifications sont détectées, régénérez et redistribuez le fichier PAC pour les ordinateurs clients et a apporter les modifications à vos périphériques réseau.
 
@@ -152,7 +152,7 @@ Pour votre client Microsoft 365 avec une mise en réseau optimale, vous avez dé
 - Comment optimiser les performances du réseau pour les utilisateurs locaux en ajoutant des connexions Internet à tous les succursales et en éliminant les épingles de réseau.
 - Comment implémenter la liste des points de terminaison fiables automatisés pour vos fichiers PAC basés sur le client et vos périphériques et services réseau, y compris les mises à jour en cours (les plus adaptées aux réseaux d’entreprise).
 - Comment prendre en charge l’accès des travailleurs à distance aux ressources sur site.
-- Utilisation de Network Insights
+- Utilisation des réseaux Informations
 - Comment déployer le Office 365 CDN.
 
 Voici un exemple d’organisation d’entreprise et de son client avec une mise en réseau optimale.

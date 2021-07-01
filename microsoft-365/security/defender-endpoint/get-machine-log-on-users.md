@@ -1,6 +1,6 @@
 ---
 title: API Obtenir les utilisateurs de connexion de l’ordinateur
-description: Découvrez comment utiliser l’API Obtenir une connexion des utilisateurs de l’ordinateur pour récupérer une collection d’utilisateurs connectés sur un appareil dans Microsoft Defender pour endpoint.
+description: Découvrez comment utiliser l’API Obtenir les utilisateurs de connexion de l’ordinateur pour récupérer une collection d’utilisateurs connectés sur un appareil dans Microsoft Defender pour le point de terminaison.
 keywords: api, api de graphique, api pris en charge, obtenir, appareil, se connecter, utilisateurs
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c81d2978677b751a8085f88b5c4732fd4a5a247
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 634a381ca862dc7580d82168a4b9540acc0cd394
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770048"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229022"
 ---
 # <a name="get-machine-logon-users-api"></a>API Obtenir les utilisateurs de connexion de l’ordinateur
 
@@ -30,7 +30,7 @@ ms.locfileid: "52770048"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,26 +40,26 @@ ms.locfileid: "52770048"
 ## <a name="api-description"></a>Description de l’API
 Récupère une collection d’utilisateurs connectés sur un appareil spécifique.
 
-
 ## <a name="limitations"></a>Limites
 1. Vous pouvez interroger la dernière mise à jour des alertes en fonction de votre période de rétention configurée.
 2. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
-
 ## <a name="permissions"></a>Autorisations
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation |Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   User.Read.All | « Lire les profils utilisateur »
+Application |User.Read.All |« Lire les profils utilisateur »
 Déléguée (compte professionnel ou scolaire) | User.Read.All | « Lire les profils utilisateur »
 
->[!Note]
+> [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
->- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données ». Pour plus d’informations, voir [Créer et gérer des rôles](user-roles.md) )
->- La réponse inclut les utilisateurs uniquement si l’appareil est visible par l’utilisateur, en fonction des paramètres de groupe d’appareils. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+>
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données ». Pour plus d’informations, voir [Créer et gérer des rôles.](user-roles.md)
+> - La réponse inclut les utilisateurs uniquement si l’appareil est visible par l’utilisateur, en fonction des paramètres de groupe d’appareils. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
+
 ```http
 GET /api/machines/{id}/logonusers
 ```
@@ -70,17 +70,17 @@ Nom | Type | Description
 :---|:---|:---
 Autorisation | String | Porteur {token}. **Obligatoire**.
 
-
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite et si l’appareil existe : 200 - OK avec la liste [des](user.md) entités utilisateur dans le corps. If device was not found - 404 Not Found.
 
+En cas de réussite et si l’appareil existe : 200 - OK avec la liste [des](user.md) entités utilisateur dans le corps. If device was not found - 404 Not Found.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 
@@ -88,10 +88,9 @@ Voici un exemple de demande.
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
 ```
 
-**Réponse**
+### <a name="response"></a>Réponse
 
 Voici un exemple de réponse.
-
 
 ```http
 HTTP/1.1 200 OK

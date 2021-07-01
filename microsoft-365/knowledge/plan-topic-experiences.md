@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Découvrez comment planifier le plan des rubriques microsoft
-ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583111"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229538"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planifier les rubriques microsoft
 
@@ -23,8 +23,8 @@ Vous contrôlez la façon dont les sujets sont abordés dans votre organisation.
 
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
-- Quels SharePoint sites que vous souhaitez analyser pour les rubriques
-- Rubriques, le cas caser, que vous souhaitez exclure des expériences de rubrique
+- Les SharePoint sites que vous souhaitez analyser pour les rubriques
+- Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
 - Utilisateurs que vous souhaitez autoriser à créer ou modifier des rubriques dans le centre de rubriques
@@ -32,17 +32,19 @@ Dans cet article, nous examinerons les décisions de planification ci-après :
 
 La sécurité et la confidentialité de vos données sont respectées, et les expériences de rubrique n’octroient pas aux utilisateurs un accès supplémentaire aux fichiers dont ils n’ont pas le droit. Nous vous recommandons également de lire les [rubriques microsoft sur](topic-experiences-security-privacy.md) la sécurité et la confidentialité dans le cadre de votre processus de planification.
 
-Pour en savoir plus sur la technologie d’IA derrière Rubriques, lisez Les rubriques de Cette rubrique : du [big data au big knowledge.](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
+Pour en savoir plus sur la technologie de l’IA derrière Rubriques, lisez La rubrique Sur le big data et le big knowledge dans [Microsoft Contrôles.](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
 
 ## <a name="requirements"></a>Conditions requises
 
-Vous devez être abonné à [Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder au Centre d’administration Microsoft 365 et configurer Rubriques.
+Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d’administration Microsoft 365 et configurer Rubriques.
 
-Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [dans La rubrique](set-up-topic-experiences.md)Configurer Microsoft .
+Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [par la rubrique Configurer Microsoft Topics.](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>Découverte de rubrique
 
-Les paramètres de découverte des rubriques spécifient les sites SharePoint utilisés comme sources pour les rubriques. Vous pouvez choisir d'inclure tous les sites SharePoint, une liste spécifique de sites ou aucun site. Nous vous recommandons de choisir tous les sites afin que les expériences de rubriques puisse découvrir un grand nombre de bonnes rubriques pour vos utilisateurs.
+Les paramètres de découverte des rubriques spécifient les sites SharePoint utilisés comme sources pour les rubriques. Cela inclut les sites classiques et modernes, ainsi que les sites associés à Microsoft Teams et Microsoft 365 groupes. OneDrive sites ne sont pas inclus.
+
+Vous pouvez choisir d'inclure tous les sites SharePoint, une liste spécifique de sites ou aucun site. Nous vous recommandons de choisir tous les sites afin que les expériences de rubriques puisse découvrir un grand nombre de bonnes rubriques pour vos utilisateurs.
 
 Lorsque vous définissez Rubriques, vous pouvez choisir l’une des options suivantes :
 
@@ -65,7 +67,7 @@ Nous vous recommandons de créer un processus pour que les utilisateurs ou les g
 
 ### <a name="multi-geo"></a>Multi-Géo
 
-Si votre organisation a déployé [Microsoft 365 Multi-Géo,](/microsoft-365/enterprise/microsoft-365-multi-geo)le centre de rubriques est mis en service dans l’emplacement central et seuls les sites SharePoint de l’emplacement central peuvent être utilisés comme sources pour les rubriques. (Si vous sélectionnez **Tous les sites,** Topics utilise tout le site dans l’emplacement central.)
+Si votre organisation a déployé [Microsoft 365 Multi-Géo,](/microsoft-365/enterprise/microsoft-365-multi-geo)le centre de rubriques est mis en service dans l’emplacement central et seuls les sites SharePoint de l’emplacement central peuvent être utilisés comme sources pour les rubriques. (Si vous sélectionnez **Tous les sites,** Rubriques Topics utilisera tous les sites dans l’emplacement central.)
 
 Tout le traitement et le stockage du contenu sont effectués à l’emplacement central.
 
@@ -102,7 +104,7 @@ Lors de la configuration des visionneuses de rubriques, vous pouvez choisir parm
 - **Personnes ou groupes de sécurité sélectionnés uniquement**
 - **Personne**
 
-Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les utilisateurs à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
+Nous vous **recommandons tout le monde** dans mon organisation, mais si vous faites un projet pilote, vous pouvez choisir uniquement des personnes ou des groupes de sécurité sélectionnés. Vous pouvez également choisir **Personne** si vous souhaitez configurer Des rubriques, mais ne pas autoriser les personnes à voir les rubriques pour le moment. (Les gestionnaires de connaissances auront toujours accès pour leur permettre d’afficher les rubriques et d’aider à prendre la décision de rendre les rubriques largement disponibles.)
 
 ## <a name="knowledge-rules"></a>Règles de connaissance
 
@@ -113,7 +115,7 @@ Si vous souhaitez exclure des rubriques au niveau de l’administrateur, vous de
 Le .csv doit contenir les paramètres suivants :
 
 - **Nom** : tapez le nom de la rubrique à exclure. Il existe deux méthodes pour y parvenir :
-- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exacte* *ou* partielle.
+- **MatchType-Exact/Partial**: tapez si le nom que vous avez entré était un type de correspondance *exact* *ou* partiel.
     - Correspondance exacte : vous pouvez inclure le nom exact ou l’acronyme (par exemple, *Contoso* ou *ATL*).
     - Correspondance partielle : vous pouvez exclure toutes les rubriques qui ont un mot spécifique.  Par exemple, *arc exclura* toutes les rubriques avec le mot *arc* dans celui-ci, telles que le cercle *d’arc,* *l’arc de Pierre ou* *l’arc de formation*. Notez qu’il n’exclura pas les rubriques dans lesquelles le texte est inclus dans le cadre d’un mot, comme *Architecture*.
 - **Signifie (facultatif)**: (également appelé *expansion)* Si vous souhaitez exclure un acronyme, tapez les mots qu’il signifie.
@@ -128,7 +130,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administration
 
-Lorsque vous définissez Rubriques, dans le cadre du processus d’installation, un centre de rubriques est automatiquement créé. Réfléchissez à ce que vous souhaitez nommer le centre de rubriques et à ce que doit être l’URL. Vous pouvez définir le nom et l’URL dans le cadre du processus d’installation, et vous pouvez modifier le nom (mais pas l’URL) plus loin dans le Centre d’administration Microsoft 365'administration. Vous ne pouvez avoir qu’un seul centre de rubriques.
+Lorsque vous définissez Rubriques, dans le cadre du processus d’installation, un centre de rubriques est automatiquement créé. Réfléchissez à ce que vous souhaitez nommer le centre de rubriques et à ce que doit être l’URL. Vous pouvez définir le nom et l’URL dans le cadre du processus d’installation, et vous pouvez modifier le nom (mais pas l’URL) plus loin dans la Centre d’administration Microsoft 365. Vous ne pouvez avoir qu’un seul centre de rubriques.
 
 ## <a name="setup-checklist"></a>Liste de vérification du programme d’installation
 

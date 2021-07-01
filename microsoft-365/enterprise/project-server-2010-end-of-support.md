@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Le support prend fin Project Server 2010 se termine le 13 avril 2021. Utilisez cet article comme guide pour mettre à niveau vers Project Online ou une version plus récente de Project Server local.
-ms.openlocfilehash: f57fa15da3cabc4b326a52359a29c652fcbe9e7f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 0ca37d00ee670a8a3f7c83d75864b5af19587951
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842229"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229754"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Feuille de route pour la fin de la prise en charge de Project Server 2010
 
@@ -106,7 +106,7 @@ Prenons les considérations suivantes lorsque vous prévoyez de migrer Project S
 
 Si vous choisissez de migrer de Project Server 2010 vers Project Online, vous pouvez suivre les étapes suivantes pour migrer manuellement les données de votre plan de projet :
 
-1. Enregistrez vos plans de Project Server 2010 au format .mpp.
+1. Enregistrez vos plans de projet Project Server 2010 au format .mpp.
 
 2. En utilisant Project Professionnel 2016, Project Professionnel 2019 ou le client de bureau Project Online, ouvrez chaque fichier .mpp, puis enregistrez-le et publiez-le sur Project Online.
 
@@ -157,11 +157,11 @@ Ressources clés :
 
 - [Les nouveautés de la mise à Project Server 2013](/project/what-s-new-in-project-server-2013-upgrade) couvrent les modifications importantes apportées à cette version, notamment :
 
-   - Il n’existe aucune mise à niveau sur place vers Project Server 2013. La méthode d’attachement de base de données est le seul moyen pris en charge de mettre à niveau Project Server 2010 vers Project Server 2013.
+  - Il n’existe aucune mise à niveau sur place vers Project Server 2013. La méthode d’attachement de base de données est le seul moyen pris en charge de mettre à niveau Project Server 2010 vers Project Server 2013.
 
-   - Le processus de mise à niveau convertira non seulement vos données Project Server 2010 au format Project Server 2013, mais consolidera également les quatre bases de données Project Server 2010 en une seule base de données Project Web App.
+  - Le processus de mise à niveau convertira non seulement vos données Project Server 2010 au format Project Server 2013, mais consolidera également les quatre bases de données Project Server 2010 en une seule base de données Project Web App.
 
-   - Les SharePoint Server 2013 et Project Server 2013 sont passées à l’authentification basée sur les revendications par rapport à la version précédente. Si vous utilisez l’authentification classique, vous devez tenir compte de cela lors de la mise à niveau. Pour plus d'informations, voir [Migrer de l'authentification en mode classique vers l'authentification basée sur les revendications dans SharePoint 2013]( /sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
+  - Les SharePoint Server 2013 et Project Server 2013 sont passées à l’authentification basée sur les revendications par rapport à la version précédente. Si vous utilisez l’authentification classique, vous devez tenir compte de cela lors de la mise à niveau. Pour plus d'informations, voir [Migrer de l'authentification en mode classique vers l'authentification basée sur les revendications dans SharePoint 2013](/sharepoint/upgrade-and-update/migrate-from-classic-mode-to-claims-based-authentication-in-sharepoint-2013).
 
 Ressources clés :
 
@@ -213,9 +213,9 @@ Ressources clés :
 
 - [Ce que vous devez savoir sur la mise Project Server 2019](/project/plan-for-upgrade-to-project-server-2016)<br/><br/>Découvrez les modifications importantes pour la mise à niveau vers cette version, notamment :
 
-   - Le processus de mise à niveau migre vos données de votre base de données Project Server 2016 vers la base de données SharePoint Server 2019 de contenu.  Project Server 2019 ne créera plus sa propre base de données Project server dans la batterie SharePoint Server.
+  - Le processus de mise à niveau migre vos données de votre base de données Project Server 2016 vers la base de données SharePoint Server 2019 de contenu.  Project Server 2019 ne créera plus sa propre base de données Project server dans la batterie SharePoint Server.
 
-   - Après la mise à niveau, sachez que plusieurs modifications ont été apportées Project Web App.  Pour plus [d’informations, voir Nouveautés de Project Server 2019.](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)
+  - Après la mise à niveau, sachez que plusieurs modifications ont été apportées Project Web App.  Pour plus [d’informations, voir Nouveautés de Project Server 2019.](/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges)
 
 **Autres ressources**:
 
@@ -223,7 +223,7 @@ Ressources clés :
 
 - [Microsoft Office Project de migration Portfolio Server 2010](https://go.microsoft.com/fwlink/p/?linkid=841279)
 
-## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour Office client et serveurs 2010 et Windows 7
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Résumé des options pour le client Office 2010 et les serveurs et Windows 7
 
 Pour consulter une synthèse visuelle des options de mise à jour, de migration et de déplacement vers le Cloud pour les produits serveur et client Office 2010 et Windows 7, voir l’[affiche de fin de prise en charge](../downloads/Office2010Windows7EndOfSupport.pdf).
 

@@ -1,7 +1,7 @@
 ---
 title: Profil d’appareil dans Microsoft 365 de sécurité
 description: Afficher les niveaux de risque et d’exposition d’un appareil de votre organisation. Analysez les menaces passées et présentes et protégez l’appareil avec les dernières mises à jour.
-keywords: sécurité, programmes malveillants, Microsoft 365, M365, Microsoft 365 Defender, centre de sécurité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour l’identité, page appareil, profil d’appareil, page ordinateur, profil de l’ordinateur
+keywords: sécurité, programmes malveillants, Microsoft 365, M365, Microsoft 365 Defender, centre de sécurité, Microsoft Defender pour le point de terminaison, Microsoft Defender pour Office 365, Microsoft Defender pour identité, page appareil, profil d’appareil, page ordinateur, profil de l’ordinateur
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 8e2788fd9163a27b41bd3788facf5fc9623b0543
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 47b25ba541264d79216748753e9f41fb7435fc10
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935664"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229478"
 ---
 # <a name="device-profile-page"></a>Page de profil d’appareil
 
@@ -52,7 +52,7 @@ Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison
 
 La barre latérale répertorie le nom complet et le niveau d’exposition de l’appareil. Il fournit également des informations de base importantes dans les petites sous-sections qui peuvent être ouvertes ou fermées, telles que :
 
-* **Balises** : tout Microsoft Defender pour le point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
+* **Balises** : tout Microsoft Defender pour point de terminaison, Microsoft Defender pour l’identité ou les balises personnalisées associées à l’appareil. Les balises de Microsoft Defender for Identity ne sont pas modifiables.
 * **Informations de sécurité** : ouvrir les incidents et les alertes actives. Les appareils inscrits dans Microsoft Defender pour le point de terminaison affichent également le niveau d’exposition et le niveau de risque.
 
 > [!TIP]
@@ -81,7 +81,7 @@ Les actions disponibles sur la page de profil d’appareil sont les suivantes :
 * **Exécuter une analyse antivirus** : met à jour Antivirus Windows Defender définitions et exécute immédiatement une analyse antivirus. Choisissez entre l’analyse rapide ou l’analyse complète.
 * **Collecter un package d’examen** : collecte des informations sur l’appareil. Une fois l’examen terminé, vous pouvez le télécharger.
 * **Lancer une session De réponse en** direct : charge un shell distant sur l’appareil pour des [enquêtes de sécurité approfondies.](/microsoft-365/security/defender-endpoint/live-response)
-* **Lancer une enquête automatisée** : examine et [remédie automatiquement aux menaces.](../office-365-security/office-365-air.md) Bien que vous pouvez déclencher manuellement des enquêtes automatisées à partir de cette [page,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) certaines stratégies d’alerte déclenchent elles-mêmes des enquêtes automatiques.
+* **Lancer une enquête automatisée** : examine et [remédie automatiquement aux menaces.](../office-365-security/office-365-air.md) Bien que vous pouvez déclencher manuellement des enquêtes automatisées à partir de cette [page,](../../compliance/alert-policies.md#default-alert-policies) certaines stratégies d’alerte déclenchent elles-mêmes des enquêtes automatiques.
 * **Centre de gestion** des actions : affiche des informations sur les actions de réponse en cours d’exécution.
 
 ## <a name="tabs-section"></a>Section Onglets
@@ -98,7 +98,7 @@ L’onglet par défaut est **Vue d’ensemble.** Il fournit un aperçu rapide de
 
 Ici, vous pouvez obtenir un aperçu rapide des alertes actives de l’appareil et de tous les utilisateurs actuellement connectés.
 
-Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et toutes les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations en matière de sécurité et indiquent les logiciels concernés et les vulnérabilités découvertes.
+Si l’appareil est inscrit dans Microsoft Defender pour le point de terminaison, vous verrez également le niveau de risque de l’appareil et toutes les données disponibles sur les évaluations de sécurité. Les évaluations de sécurité décrivent le niveau d’exposition de l’appareil, fournissent des recommandations de sécurité et indiquent les logiciels concernés et les vulnérabilités découvertes.
 
 ### <a name="alerts-tab"></a>Onglet Alertes
 
@@ -110,7 +110,7 @@ Vous pouvez personnaliser le nombre d’éléments affichés, ainsi que les colo
 
 Les colonnes de cet onglet incluent des informations sur la gravité de la menace ayant déclenché l’alerte, ainsi que sur l’état, l’état de l’enquête et la personne à qui l’alerte a été affectée.
 
-La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau affectés.
+La *colonne Entités* concernées fait référence à l’appareil (entité) dont vous affichez actuellement le profil, ainsi qu’à tous les autres appareils de votre réseau concernés.
 
 La sélection d’un élément dans cette liste ouvre un volant contenant encore plus d’informations sur l’alerte sélectionnée.
 
@@ -180,7 +180,7 @@ La sélection d’un élément ouvre un volant qui relie la mise à jour.
 
 ## <a name="related-topics"></a>Voir aussi
 
-* [Microsoft 365 Vue d’ensemble de Defender](microsoft-365-defender.md)
-* [Activer Microsoft 365 Defender](m365d-enable.md)
+* [Microsoft 365 Defender vue d’ensemble](microsoft-365-defender.md)
+* [Activer Microsoft 365 Defender](m365d-enable.md)
 * [Examiner les entités sur les appareils, à l’aide d’une réponse en direct](../defender-endpoint/live-response.md)
 * [Examen et réponse automatisés (AIR) dans Office 365](../office-365-security/office-365-air.md)

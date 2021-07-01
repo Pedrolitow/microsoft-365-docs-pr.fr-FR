@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 0ebf0571da101884728400be15cd2ddfcfac8e8e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 6dec1f5c2827018f920a71f8b4e7c8cb111c87cd
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274855"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230078"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Configuration du réseau pour Bureau géré Microsoft
 
@@ -26,21 +26,21 @@ ms.locfileid: "52274855"
 
 ## <a name="proxy-configuration"></a>Configuration du proxy
 
-Bureau géré Microsoft est un service géré dans le cloud. Il existe un ensemble de points de terminaison que les services Bureau géré Microsoft doivent pouvoir atteindre. Cette section répertorie les points de terminaison qui doivent être autorisés pour les différents aspects du service Bureau géré Microsoft service. 
+Microsoft Manged Desktop est un service géré dans le cloud. Il existe un ensemble de points de terminaison que les services Microsoft Manged Desktop doivent pouvoir atteindre. Cette section répertorie les points de terminaison qui doivent être autorisés pour les différents aspects du service Microsoft Manged Desktop service. 
 
 Les clients peuvent optimiser leur réseau en envoyant toutes les demandes réseau Microsoft 365 de confiance directement via leur pare-feu ou proxy, en contournant l’authentification et tout traitement ou inspection supplémentaire au niveau des paquets. Cela réduit ainsi la latence et les exigences relatives à la capacité du périmètre. 
 
-En outre, pour optimiser les performances Bureau géré Microsoft services informatiques, ces points de terminaison doivent être particulièrement utilisés par les navigateurs clients client et les appareils de leur réseau edge. Ces appareils incluent les pare-feu, les SSL Break and Inspect, les périphériques d’inspection des paquets et les systèmes de protection contre la perte de données.
+En outre, pour optimiser les performances pour Microsoft Manged Desktop services informatiques, ces points de terminaison ont besoin d’une gestion spéciale par les navigateurs clients clients et les appareils de leur réseau edge. Ces appareils incluent les pare-feu, les SSL Break and Inspect, les appareils d’inspection des paquets et les systèmes de protection contre la perte de données.
 
 ### <a name="proxy-requirement"></a>Conditions requises pour le proxy
 
 Le proxy ou le pare-feu doit prendre en charge TLS 1.2. Dans le cas contraire, il se peut que vous deiez désactiver la détection de protocole.
 
-### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>Points de terminaison autorisés nécessaires pour les Bureau géré Microsoft
+### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>Points de terminaison autorisés nécessaires pour les Microsoft Manged Desktop
 
-Bureau géré Microsoft utilise le portail Azure pour héberger sa console web. Les URL suivantes doivent se trouver dans la liste autorisée de votre proxy et de votre pare-feu pour que Bureau géré Microsoft puisse communiquer avec les services Microsoft.  
+Microsoft Manged Desktop utilise le portail Azure pour héberger sa console web. Les URL suivantes doivent se trouver dans la liste autorisée de votre proxy et de votre pare-feu pour que les Microsoft Manged Desktop puisse communiquer avec les services Microsoft.  
 
-L Bureau géré Microsoft URL est utilisée pour tout ce que notre service exécute sur l’API client. Vous devez vous assurer que cette URL est toujours accessible sur votre réseau d’entreprise.
+L Microsoft Manged Desktop URL est utilisée pour tout ce que notre service exécute sur l’API client. Vous devez vous assurer que cette URL est toujours accessible sur votre réseau d’entreprise.
 
 Service Microsoft  | URL requises sur la liste d’adresses 
 --- | ---
@@ -52,16 +52,16 @@ Microsoft Assistant Support et récupération | \*.apibasic.diagnostics.office.c
 
 ### <a name="endpoints-allowed-used-by-other-microsoft-products"></a>Points de terminaison autorisés utilisés par d’autres produits Microsoft
 
-Il existe des URL de plusieurs produits Microsoft qui doivent se trouver dans la liste autorisée afin que les Bureau géré Microsoft peuvent communiquer avec ces services Microsoft. Utilisez les liens pour voir la liste complète de chaque produit. 
+Il existe des URL de plusieurs produits Microsoft qui doivent se trouver dans la liste autorisée afin que les Microsoft Manged Desktop peuvent communiquer avec ces services Microsoft. Utilisez les liens pour voir la liste complète de chaque produit. 
 
 Service Microsoft | Documentation
 --- | ---
-Windows 10 Entreprise y compris Windows mise à jour pour les entreprises | [Gérer les points de terminaison de connexion Windows 10, version 1803](/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion Windows 10, version 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion Windows 10, version 1903](/windows/privacy/manage-windows-1903-endpoints)<br><br>[Gérer les points de terminaison de connexion Windows 10, version 2004](/windows/privacy/manage-windows-2004-endpoints)
+Windows 10 Entreprise y compris Windows mise à jour pour les entreprises | [Gérer les points de terminaison de connexion pour Windows 10, version 1803](/windows/privacy/manage-windows-1803-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1809](/windows/privacy/manage-windows-1809-endpoints)<br><br>[Gérer les points de terminaison de connexion pour Windows 10, version 1903](/windows/privacy/manage-windows-1903-endpoints)<br><br>[Gérer les points de terminaison de connexion Windows 10, version 2004](/windows/privacy/manage-windows-2004-endpoints)
 Optimisation de la distribution | [Configurer l’optimisation de la distribution pour Windows 10 mises à jour](/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 URL et plages d’adresses IP](../../enterprise/urls-and-ip-address-ranges.md)
 Azure Active Directory | [Ports et protocoles](/azure/active-directory/hybrid/reference-connect-ports) requis pour l’identité hybride et conditions requises pour les ports Active Directory et Services de [domaine Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772723(v=ws.10)) 
 Microsoft Intune | [Configuration réseau requise pour Intune](/intune/network-bandwidth-use)<br>[Points de terminaison réseau pour Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
-Microsoft Defender pour point de terminaison | [Conditions requises pour Microsoft Defender pour les points de terminaison](/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Microsoft Defender pour Point de terminaison | [Conditions requises pour Microsoft Defender pour les points de terminaison](/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [Windows Conditions requises pour la mise en réseau Autopilot](/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 Service Microsoft  | URL requises sur la liste d’adresses | Source de documentation
@@ -76,18 +76,18 @@ OneDrive Entreprise | onedrive.com <br> <br>\*.onedrive.com <br>onedrive.live.co
 Microsoft Defender – Protection avancée contre les menaces (ATP) | \ *.oms.opinsights.azure.com <br>\*.blob.core.windows.net <br>\*.azure-automation.net <br>\*.ods.opinsights.azure.com <br>winatp-gw-cus.microsoft.com <br>winatp-gw-eus.microsoft.com <br>winatp-gw-neu.microsoft.com <br>winatp-gw-weu.microsoft.com <br>winatp-gw-uks.microsoft.com <br>winatp-gw-ukw.microsoft.com <br>winatp-gw-aus.microsoft.com <br>winatp-gw-aue.microsoft.com | [Windows Defender Points de terminaison ATP](/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection)
 Aide | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com <br>rave.office.net | 
 Assistance rapide | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com | 
-SharePoint Online  | \*.sharepoint.com <br>\ *.svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*.sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [URL et plages d’adresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-OneDrive Entreprise | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*.log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [URL et plages d’adresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
-Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.microsoft.com <br>\*.asm.skype.com <br>\ *.cc.skype.com  <br>\*.conv.skype.com  <br>\*.dc.trouter.io  <br>\*.msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*.broker.skype.com <br>\*.config.skype.com  <br>\*.pipe.skype.com  <br>\*.pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*.msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*.secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*.mstea.ms | [URL et plages d’adresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+SharePoint Online  | \*.sharepoint.com <br>\ *.svc.ms  <br>\<tenant\>.sharepoint.com  <br>\<tenant\>-my.sharepoint.com  <br>\<tenant\>-files.sharepoint.com  <br>\<tenant\>-myfiles.sharepoint.com <br>\*.sharepointonline.com  <br>cdn.sharepointonline.com  <br>static.sharepointonline.com  <br>spoprod-a.akamaihd.net  <br>publiccdn.sharepointonline.com  <br>privatecdn.sharepointonline.com | [URL et plages dʼadresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+OneDrive Entreprise | admin.onedrive.com  <br>officeclient.microsoft.com <br>odc.officeapps.live.com  <br>skydrive.wns.windows.com <br>g.live.com <br>oneclient.sfx.ms <br>\*.log.optimizely.com  <br>click.email.microsoftonline.com  <br>ssw.live.com  <br>storage.live.com |  [URL et plages dʼadresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.microsoft.com <br>\*.asm.skype.com <br>\ *.cc.skype.com  <br>\*.conv.skype.com  <br>\*.dc.trouter.io  <br>\*.msg.skype.com  <br>prod.registrar.skype.com  <br>prod.tpc.skype.com <br>\*.broker.skype.com <br>\*.config.skype.com  <br>\*.pipe.skype.com  <br>\*.pipe.aria.microsoft.com  <br>config.edge.skype.com  <br>pipe.skype.com  <br>s-0001.s-msedge.net  <br>s-0004.s-msedge.net  <br>scsinstrument-ss-us.trafficmanager.net  <br>scsquery-ss- <br>us.trafficmanager.net  <br>scsquery-ss-eu.trafficmanager.net  <br>scsquery-ss-asia.trafficmanager.net <br>\*.msedge.net <br>compass-ssl.microsoft.com  <br>feedback.skype.com <br>\*.secure.skypeassets.com  <br>mlccdnprod.azureedge.net  <br>videoplayercdn.osi.office.net <br>\*.mstea.ms | [URL et plages dʼadresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI & Express](/power-bi/service-admin-power-bi-expressroute) 
-OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [URL et plages d’adresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [URL et plages dʼadresses IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
 ## <a name="steps-to-get-ready"></a>Étapes de préparation
 
-1. Examiner [les conditions préalables pour Bureau géré Microsoft](prerequisites.md).
+1. Examiner [les conditions préalables pour Microsoft Manged Desktop](prerequisites.md).
 2. Utiliser [les outils d’évaluation de la préparation.](readiness-assessment-tool.md)
 3. [Conditions préalables pour les comptes invité](guest-accounts.md)
-4. [Configuration réseau pour Bureau géré Microsoft](network.md) (Cet article)
+4. [Configuration réseau pour Microsoft Manged Desktop](network.md) (Cet article)
 5. [Préparer les certificats et les profils réseau pour le Bureau géré Microsoft](certs-wifi-lan.md)
 6. [Préparer l’accès aux ressources locales pour le Bureau géré Microsoft](authentication.md)
 7. [Applications dans le Bureau géré Microsoft](apps.md)

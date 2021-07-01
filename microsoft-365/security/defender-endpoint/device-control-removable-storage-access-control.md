@@ -1,5 +1,5 @@
 ---
-title: Contrôle d’appareil amovible Microsoft Defender for Endpoint Storage Access Control
+title: Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 description: Une présentation de Microsoft Defender pour point de terminaison
 keywords: support de stockage amovible
 search.product: eADQiWindows 10XVcnh
@@ -16,23 +16,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb23987600a5f87a99449510f7651c4fdcd45f66
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8b32ab5162e0022d9500f7ddba2fe5bbca1017e7
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028402"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229574"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Storage Access Control
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Contrôle d’appareil amovible Microsoft Defender for Endpoint Stockage Access Control
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control vous permet d’accomplir la tâche suivante :
+Microsoft Defender for Endpoint Device Control Removable Stockage Access Control vous permet d’accomplir la tâche suivante :
 - audit, autoriser ou empêcher l’accès en lecture, écriture ou exécution au stockage amovible avec ou sans exclusion
 
 |Privilège |Autorisation  |
 |---------|---------|
-|Access    |  Lecture, Écriture, Exécution       |
+|Accès    |  Lecture, Écriture, Exécution       |
 |Action Mode    |    Auditer, autoriser, empêcher     |
 |Prise en charge du programme CSP   |   Oui      |
 |Prise en charge des GPO    |   Oui      |
@@ -41,7 +41,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 ## <a name="prepare-your-endpoints"></a>Préparer vos points de terminaison
 
-Déployez le contrôle d’Storage amovible sur Windows 10 qui ont un client anti-programme malveillant version **4.18.2103.3** ou ultérieure.
+Déployez le contrôle d Stockage’accès amovible sur Windows 10 qui ont un client anti-programme malveillant version **4.18.2103.3** ou ultérieure.
 
 - **4.18.2104** ou version ultérieure : Ajouter SerialNumberId, VID_PID, prise en charge des GPO basés sur filepath, ComputerSid
 
@@ -50,7 +50,7 @@ Déployez le contrôle d’Storage amovible sur Windows 10 qui ont un client ant
 :::image type="content" source="images/powershell.png" alt-text="Interface PowerShell":::
 
 > [!NOTE]
-> Aucun des Sécurité Windows ne doit être actif, vous pouvez exécuter le contrôle d’accès Storage amovible indépendamment de l’état Sécurité Windows’utilisateur.
+> Aucun des Sécurité Windows n’a besoin d’être actif, vous pouvez exécuter le contrôle d’accès Stockage amovible indépendamment de l’état Sécurité Windows’utilisateur.
 
 ## <a name="policy-properties"></a>Propriétés de stratégie
 
@@ -172,15 +172,15 @@ Options 1 à 7 :
   - 6 : Écriture et exécution
   - 7 : Lecture et écriture et exécution
 
-## <a name="common-removable-storage-access-control-scenarios"></a>Scénarios courants Storage contrôle d’accès des périphériques amovibles
+## <a name="common-removable-storage-access-control-scenarios"></a>Scénarios courants Stockage contrôle d’accès des périphériques amovibles
 
-Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Removable Storage Access Control, nous avons mis en place des scénarios courants que vous pouvez suivre.
+Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Removable Stockage Access Control, nous avons mis en place des scénarios courants que vous pouvez suivre.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>Scénario 1 : empêcher l’accès en écriture et en exécution à tous les utilisateurs approuvés spécifiques, mais autoriser
 
 1. Créer des groupes
 
-    1. Groupe 1 : Tout stockage amovible et CD/DVD. Un exemple de stockage amovible et de CD/DVD est le groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Storage amovible et [de CD-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. Groupe 1 : Tout stockage amovible et CD/DVD. Un exemple de stockage amovible et cd/DVD est le groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Stockage amovible et [cd-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
     
     2. Groupe 2 : approbations de base de données basées sur les propriétés de l’appareil. Voici un exemple de ce cas d’utilisation : ID d’instance – Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichier Group.xmlde base de données approuvé. [](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
 
@@ -197,7 +197,7 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 
 1. Créer des groupes
 
-    1. Groupe 1 : Tout stockage amovible et CD/DVD. Voici un exemple de ce cas d’utilisation : Group **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Storage amovible et [de CD-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
+    1. Groupe 1 : Tout stockage amovible et CD/DVD. Voici un exemple de ce cas d’utilisation : Groupe **9b28fae8-72f7-4267-a1a5-685f747a7146** dans l’exemple de fichier de Stockage amovible et de [CD-DVD Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
     
     2. Groupe 2 : listes de contrôle d’appareil non désapprouvées en fonction des propriétés de l’appareil, par exemple, ID fournisseur/ID de produit, Nom convivial – Groupe **65fa649a-a111-4912-9294-fb6337a25038** dans l’exemple de fichier Group.xmlde base de données des [états-Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) non accepté. 
 
@@ -212,11 +212,11 @@ Pour vous aider à vous familiariser avec Microsoft Defender pour endpoint Remov
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>Déploiement et gestion d’une stratégie via une stratégie de groupe
 
-La fonctionnalité de contrôle d Storage’accès amovible vous permet d’appliquer une stratégie via la stratégie de groupe à l’utilisateur ou à l’appareil, ou aux deux.
+La fonctionnalité De Stockage contrôle d’accès amovible vous permet d’appliquer une stratégie via la stratégie de groupe à l’utilisateur ou à l’appareil, ou aux deux.
 
 ### <a name="licensing"></a>Licences
 
-Avant de commencer avec le contrôle d’accès Storage amovible, vous devez confirmer [votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Storage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
+Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
 
 ### <a name="deploying-policy-via-group-policy"></a>Déploiement d’une stratégie via une stratégie de groupe
 
@@ -242,11 +242,11 @@ Avant de commencer avec le contrôle d’accès Storage amovible, vous devez con
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Déploiement et gestion d’une stratégie via Intune OMA-URI
 
-La fonctionnalité Storage contrôle d’accès amovible vous permet d’appliquer une stratégie via OMA-URI à l’utilisateur ou à l’appareil, ou aux deux.
+La fonctionnalité Stockage contrôle d’accès amovible vous permet d’appliquer une stratégie via OMA-URI à l’utilisateur ou à l’appareil, ou aux deux.
 
 ### <a name="licensing"></a>Licences
 
-Avant de commencer avec le contrôle d’accès Storage amovible, vous devez confirmer [votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Storage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
+Avant de commencer avec le contrôle d’accès Stockage amovible, vous devez confirmer [votre abonnement Microsoft 365.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Pour accéder au contrôle d’accès Stockage et l’utiliser, vous devez Microsoft 365 E3 ou Microsoft 365 E5.
 
 ### <a name="permission"></a>Autorisation
 
@@ -291,9 +291,9 @@ Pour le déploiement de stratégie dans Intune, le compte doit être autorisé �
 
 Cette fonctionnalité (dans le Centre d’administration Microsoft Endpoint Manager ( profils de configuration > Périphériques > > Créer un profil https://endpoint.microsoft.com/) > Platform: Windows 10 and later & Profile: Device Control) n’est pas encore disponible. 
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Afficher les données du contrôle d’Storage d’accès amovible dans Microsoft Defender pour le point de terminaison
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Afficher les données de contrôle d’Stockage d’accès amovible dans Microsoft Defender pour le point de terminaison
 
-Le portail Microsoft 365 sécurité affiche le stockage amovible bloqué par le contrôle d’Storage’accès. Pour accéder à la sécurité Microsoft 365, vous devez avoir l’abonnement suivant :
+Le portail Microsoft 365 de sécurité affiche le stockage amovible bloqué par le contrôle d’Stockage d’accès. Pour accéder à la sécurité Microsoft 365, vous devez avoir l’abonnement suivant :
 
 - Microsoft 365 de rapports E5
 
@@ -328,7 +328,7 @@ Nous avons validé un groupe USB avec 100 000 supports , jusqu’à 7 Mo. La str
 
 **Pourquoi la stratégie ne fonctionne-t-elle pas ?**
 
-La raison la plus courante est qu’il n’existe pas de [version de client anti-programme malveillant requise.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-worldwide#prepare-your-endpoints)
+La raison la plus courante est qu’il n’existe pas de [version de client anti-programme malveillant requise.](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints)
 
 Une autre raison peut être que le fichier XML n’est pas correctement formaté, par exemple, si vous n’utilisez pas la mise en forme markdown correcte pour le caractère « & » dans le fichier XML, ou que l’éditeur de texte peut ajouter une 0xEF 0xBB 0xBF de marque d’ordre d’byte au début des fichiers, ce qui provoque le non-bon travail de l’examen XML. Une solution simple consiste à télécharger [l’exemple de fichier](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (sélectionnez **Raw,** puis **Enregistrer sous),** puis à mettre à jour.
 

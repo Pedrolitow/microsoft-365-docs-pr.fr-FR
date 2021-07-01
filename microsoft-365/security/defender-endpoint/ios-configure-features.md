@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 07905cc3f1b3bd4445199d7bddcdf3b45500bd5f
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.openlocfilehash: 749e03cb9d14476245baea82c21d322d4d726aad
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194948"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230006"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurer Microsoft Defender pour endpoint sur les fonctionnalités iOS
 
@@ -78,7 +78,7 @@ Les étapes de configuration des stratégies de protection des applications avec
 1. Dans **les conditions de lancement**  >  **conditionnel de** l’appareil, vous trouverez le paramètre Niveau de menace maximum autorisé de **l’appareil.** Il devra être configuré sur Faible, Moyen, Élevé ou Sécurisé. Les actions à votre disposition seront **Bloquer** l’accès ou Effacer **les données.** Vous pouvez voir une boîte de dialogue d’information pour vous assurer que votre connecteur est bien installé avant que ce paramètre prenne effet. Si votre connecteur est déjà installé, vous pouvez ignorer cette boîte de dialogue.
 1. Terminez avec Affectations et enregistrez votre stratégie.
 
-Pour plus d’informations sur la stratégie de protection des applications ou de gestion des applications, voir les paramètres de stratégie de protection des [applications iOS.](https://docs.microsoft.com/mem/intune/apps/app-protection-policy-settings-ios)
+Pour plus d’informations sur la stratégie de protection des applications ou de gestion des applications, voir les paramètres de stratégie de protection des [applications iOS.](/mem/intune/apps/app-protection-policy-settings-ios)
 
 ### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>Déploiement de Microsoft Defender pour le point de terminaison pour MAM ou sur des appareils non inscrits
 

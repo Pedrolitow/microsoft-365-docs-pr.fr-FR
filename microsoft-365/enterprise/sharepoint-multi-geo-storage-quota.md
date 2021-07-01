@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: En savoir plus SharePoint quotas de stockage dans les environnements multigé géographiques et comment les quotas peuvent être gérés par l’administrateur SharePoint Online.
-ms.openlocfilehash: ec736a6bd6061f8b028fca7a1c34d5278a84db89
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0843407e7926027e28cdd1f5893c4aafec4e1cd5
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690238"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230090"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Quotas de stockage SharePoint dans des environnements multigéographiques
 
@@ -32,22 +32,30 @@ L’administrateur SharePoint Online peut allouer le quota de stockage SharePoin
 
 ## <a name="configure-a-storage-quota-for-a-geo-location"></a>Configurer un quota de stockage pour un emplacement géographique
 
-Utilisez le [Module Microsoft Office SharePoint Online](https://www.microsoft.com/download/details.aspx?id=35588 ) pour vous connecter à l’emplacement central afin d’allouer le quota de stockage d’un emplacement géographique. 
+Utilisez le [Module Microsoft Office SharePoint Online](https://www.microsoft.com/download/details.aspx?id=35588) pour vous connecter à l’emplacement central afin d’allouer le quota de stockage d’un emplacement géographique.
 
 Pour allouer un quota de stockage à un emplacement, exécutez la cmdlet suivante :
 
-`Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>`
+```powershell
+Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB <value>
+```
 
 Pour afficher le quota de stockage de l’emplacement géographique actuel, exécutez la cmdlet suivante :
 
-`Get-SPOGeoStorageQuota`
+```powershell
+Get-SPOGeoStorageQuota
+```
 
 ![Capture d’écran d’une fenêtre de PowerShell affichant la cmdlet Get-SPOGeoStorageQuota](../media/multi-geo-storage-quota.png)
 
 Pour afficher le quota de stockage de tous les emplacements géographiques, exécutez la cmdlet suivante :
 
-`Get-SPOGeoStorageQuota -AllLocations`
+```powershell
+Get-SPOGeoStorageQuota -AllLocations
+```
 
 Pour supprimer le quota de stockage alloué à un emplacement géographique, définissez `StorageQuota value = 0` :
 
-`Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0`
+```powershell
+Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0
+```

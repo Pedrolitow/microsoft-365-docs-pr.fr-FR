@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Décrit comment préparer la mise en service des utilisateurs Microsoft 365 l’aide de la synchronisation d’annuaires et les avantages à long terme de l’utilisation de cette méthode.
-ms.openlocfilehash: 7f701bf0a8b165323f7fd61b50b41fb5e18268a6
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: ee6cfe9adfe029e620d2465f08a3fbe1e9290503
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259558"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229766"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Préparer la synchronisation d'annuaires pour Microsoft 365
 
@@ -64,7 +64,7 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
 
 3. Si possible, assurez-vous d’une valeur valide et unique pour l’attribut **userPrincipalName** dans l’objet utilisateur de **l’utilisateur.** Pour une meilleure expérience de synchronisation, assurez-vous que l’UPN AD DS correspond à l’UPN Azure AD. Si un utilisateur n’a pas de valeur pour l’attribut **userPrincipalName,** l’objet utilisateur doit contenir une valeur valide et unique pour l’attribut **sAMAccountName.**  Supprimez les valeurs dupliquées dans **l’attribut userPrincipalName.**
 
-4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations dans les attributs suivants du compte d’utilisateur AD DS sont correctes :
+4. Pour une utilisation optimale de la liste d’adresses globale(LAL), assurez-vous que les informations des attributs suivants du compte d’utilisateur AD DS sont correctes :
 
    - givenName
    - surname
@@ -81,7 +81,7 @@ Dans vos AD DS, effectuer les tâches de nettoyage suivantes pour chaque compte 
    - Code postal
    - Pays ou région
 
-## <a name="2-directory-object-and-attribute-preparation"></a>2. Préparation de l’objet et de l’attribut d’annuaire
+## <a name="2-directory-object-and-attribute-preparation"></a>2. Préparation de l’objet directory et des attributs
 
 Une synchronisation d’annuaires réussie entre vos services AD DS et Microsoft 365 exige que vos attributs AD DS soient correctement préparés. Par exemple, vous devez vous assurer que des caractères spécifiques ne sont pas utilisés dans certains attributs synchronisés avec l’environnement Microsoft 365 de sécurité. Les caractères inattendus n’entraînent pas l’échec de la synchronisation d’annuaires, mais peuvent renvoyer un avertissement. Les caractères non valides entraînent l’échec de la synchronisation d’annuaires.
 
@@ -91,7 +91,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
 
 - **displayName**
 
-  - Si l’attribut existe dans l’objet utilisateur, il est synchronisé avec Microsoft 365.
+  - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Microsoft 365.
   - Si cet attribut existe dans l’objet utilisateur, il doit y avoir une valeur pour celui-ci. Autrement dit, l’attribut ne doit pas être vide.
   - Nombre maximal de caractères : 256
 
@@ -100,7 +100,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Si l’attribut existe dans l’objet utilisateur, il sera synchronisé avec Microsoft 365, mais Microsoft 365 ne l’exige pas ou ne l’utilise pas.
   - Nombre maximal de caractères : 64
 
-- **messagerie**
+- **mail**
 
   - La valeur d’attribut doit être unique dans le répertoire.
 
@@ -162,7 +162,7 @@ Les attributs que vous devez préparer sont répertoriés ici :
   - Les lettres avec des marques diacritiques, telles que les umlauts, les accents et les tildes, sont des caractères non valides.
   - Le caractère @ est requis dans chaque **valeur userPrincipalName.**
   - Le caractère @ ne peut pas être le premier caractère dans chaque valeur **userPrincipalName**.
-  - Le nom d’utilisateur ne peut pas se terminer par un point (.), une eterr e ( ), un espace ou &amp; un signe at (@).
+  - Le nom d’utilisateur ne peut pas se terminer par un point (.), une eterr e ( ), un espace ou un &amp; signe at (@).
   - Le nom d’utilisateur ne peut pas contenir d’espaces.
   - Les domaines routables doivent être utilisés ; par exemple, les domaines locaux ou internes ne peuvent pas être utilisés.
   - Unicode est converti en caractères de trait de soulignement.
@@ -180,7 +180,7 @@ Il est préférable d’aligner ces attributs pour réduire la confusion. Pour r
 
 Vous devrez peut-être ajouter un autre suffixe UPN pour associer les informations d’identification d’entreprise de l’utilisateur à Microsoft 365'environnement. Un suffixe UPN est la partie d’un UPN située à droite du caractère @. Les UPN qui sont utilisés pour l’authentification unique peuvent contenir des lettres, des chiffres, des points, des traits d’unions et des traits de soulignement, mais aucun autre type de caractère.
 
-Pour plus d’informations sur l’ajout d’un autre suffixe UPN à Active Directory, voir Préparer la synchronisation [d’annuaires.]( https://go.microsoft.com/fwlink/p/?LinkId=525430)
+Pour plus d’informations sur l’ajout d’un autre suffixe UPN à Active Directory, voir Préparer la synchronisation [d’annuaires.](https://go.microsoft.com/fwlink/p/?LinkId=525430)
 
 ## <a name="5-match-the-ad-ds-upn-with-the-microsoft-365-upn"></a>5. Faire correspondre l’UPN AD DS avec le Microsoft 365 UPN
 
@@ -188,6 +188,6 @@ Si vous avez déjà défini la synchronisation d’annuaires, il se peut que l�
 
 Voir également comment préparer un domaine non routable (tel que le domaine [.local) pour la synchronisation d’annuaires.](prepare-a-non-routable-domain-for-directory-synchronization.md)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous avez effectué les étapes 1 à 5 ci-dessus, voir [Configurer la synchronisation d’annuaires.](set-up-directory-synchronization.md)

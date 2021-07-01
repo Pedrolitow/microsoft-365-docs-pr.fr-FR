@@ -1,6 +1,6 @@
 ---
-title: Bureau géré Microsoft périphériques
-description: Cet article répertorie les spécifications des appareils approuvés pour Bureau géré Microsoft.
+title: Microsoft Manged Desktop périphériques
+description: Cet article répertorie les spécifications des appareils approuvés pour Microsoft Manged Desktop.
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -8,35 +8,35 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245935"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53230054"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Bureau géré Microsoft périphériques
+# <a name="microsoft-managed-desktop-devices"></a>Microsoft Manged Desktop périphériques
 
 > [!NOTE]
-> Bureau géré Microsoft ne nécessite plus que les modèles d’appareil soient issus de cette liste. Depuis le 3 mai 2021, tous les appareils d’un fabricant approuvé doivent répondre à nos exigences matérielles et logicielles publiées. Vous pouvez continuer à utiliser les appareils de cette liste en toute confiance. Vous trouverez d’autres appareils recommandés pour Bureau géré Microsoft sur le site [Windows 10 Professionnel’entreprise.](https://www.microsoft.com/windowsforbusiness/view-all-devices) Sur ce site, affichez les  appareils recommandés en développez les fonctionnalités dans la zone Filtrer par zone, puis en **sélectionnant Bureau géré Microsoft**.  Chaque fois que vous prévoyez d’inscrire un modèle d’appareil particulier dans le service pour la première fois, vous devez tester un exemple pour vous assurer qu’il offre l’expérience utilisateur que vous attendez. Pour plus d’informations, voir [Valider les nouveaux appareils.](../get-started/validate-device.md)
+> Microsoft Manged Desktop ne nécessite plus que les modèles d’appareil soient issus de cette liste. Depuis le 3 mai 2021, tous les appareils d’un fabricant approuvé doivent répondre à nos exigences matérielles et logicielles publiées. Vous pouvez continuer à utiliser les appareils de cette liste en toute confiance. Vous trouverez plus d’appareils recommandés pour Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise.](https://www.microsoft.com/windowsforbusiness/view-all-devices) Sur ce site, affichez les  appareils recommandés en développez les fonctionnalités dans la zone Filtrer par **zone,** puis sélectionnez Microsoft Manged Desktop .  Chaque fois que vous prévoyez d’inscrire un modèle d’appareil particulier dans le service pour la première fois, vous devez tester un exemple pour vous assurer qu’il offre l’expérience utilisateur que vous attendez. Pour plus d’informations, voir [Valider les nouveaux appareils.](../get-started/validate-device.md)
 
-Bureau géré Microsoft évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des exigences relatives aux appareils, consultez [La demande d’appareil.](device-requirements.md)
+Microsoft Manged Desktop évalue régulièrement les appareils à inclure dans le service. Cet article répertorie les appareils spécifiques actuellement pris en charge. Pour obtenir une déclaration plus générale des conditions requises pour l’appareil, [consultez La demande de l’appareil.](device-requirements.md)
 
-Pour plus d’informations sur Bureau géré Microsoft, voir [Bureau géré Microsoft documentation et ressources.](../index.yml) 
+Pour plus d’informations sur Microsoft Manged Desktop, voir [Microsoft Manged Desktop documentation et ressources.](../index.yml)
 
 [Sélectionner et valider de nouveaux appareils](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Pour être inscrit à Bureau géré Microsoft, un appareil doit être l’un des modèles suivants et respecter ou dépasser les spécifications répertoriées pour la MÉMOIRE RAM, la famille de processeurs et l’espace disque. 
+Pour être inscrit à Microsoft Manged Desktop, un appareil doit être l’un des modèles suivants et respecter ou dépasser les spécifications répertoriées pour la MÉMOIRE RAM, la famille de processeurs et l’espace disque.
 
-Les liens vers les appareils ici sont uniquement pour votre référence. Si vous souhaitez commander des appareils, travaillez avec vos contacts de canal commercial pour vous assurer que vous choisissez les configurations correctes. Dans ce tableau, la *date d’archivage* est la date à laquelle ces modèles seront soumis à une durée de vie Bureau géré Microsoft service plus courte ; Les appareils de ce type intégrés après cette date ne bénéficieront pas d’une période complète de trois ans de support de la Bureau géré Microsoft. Les appareils archivés sont également répertoriés dans [Bureau géré Microsoft les appareils archivés.](archived-device-list.md) *La date de* retrait est la date à laquelle ce modèle ne sera plus pris en charge Bureau géré Microsoft du tout. À cette date, tous les appareils inscrits de ce modèle seront supprimés de Bureau géré Microsoft, quel que soit le moment où ils ont été inscrits.
+Les liens vers les appareils ici sont uniquement pour votre référence. Si vous souhaitez commander des appareils, travaillez avec vos contacts de canal commercial pour vous assurer que vous choisissez les configurations correctes. Dans ce tableau, la *date d’archivage* est la date à laquelle ces modèles seront soumis à une durée de vie Microsoft Manged Desktop service plus courte ; Tous ces appareils intégrés après cette date ne bénéficieront pas d’une période complète de trois ans de support de la part Microsoft Manged Desktop. Les appareils archivés sont également répertoriés dans [Microsoft Manged Desktop les appareils archivés.](archived-device-list.md) *La date de* retrait est la date à laquelle ce modèle ne sera plus pris en charge Microsoft Manged Desktop du tout. À cette date, tous les appareils inscrits de ce modèle seront supprimés de Microsoft Manged Desktop, quel que soit le moment où ils ont été inscrits.
 
 >[!NOTE]
 >Les appareils peuvent être ajoutés à ce tableau à tout moment, mais nous fournirons un préavis de 90 jours pour toute modification affectant la date d’archivage ou de retrait. Les appareils récemment ajoutés sont marqués par **\*** .
 
 
-## <a name="microsoft-managed-desktop-devices"></a>Bureau géré Microsoft Appareils
+## <a name="microsoft-managed-desktop-devices"></a>Microsoft Manged Desktop Appareils
 
 ### <a name="dell"></a>Dell
 
@@ -58,12 +58,12 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [ORDINATEUR portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
+| [PC portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [PC portable HP EliteBook x360 830 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV | 31 juillet 2021 | 31 juillet 2024 |
 | [PC portable HP EliteBook x360 1030 / 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8XW08AV | 31 août 2021 | 31 août 2024 |
 | [HP EliteFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 31 mars 2021 | 31 mars 2024 |
-| **\*[PC tout en un HP EliteOne 800 G6 24/27](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
+| **\*[PC tout-en-un HP EliteOne 800 G6 24/27](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
 | **\*[HP EliteDesk 800 G6 Desktop Mini PC](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9XM14AV | 30 juin 2022 | 30 juin 2025 |
 | [Station de travail HP Z2 Mini G5](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8QR48AV| 31 décembre 2021 | 31 décembre 2024 |
 | **\*[Station de travail mobile HP ZBook Firefly 14/15 G7](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ22AV, caméra IR requise | 30 novembre 2021 | 30 novembre 2024 |
@@ -79,11 +79,11 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 15 janvier 2022 | 15 janvier 2025 |
 
-En outre, l’appareil doit également répondre aux critères suivants :     
+En outre, l’appareil doit également répondre aux critères suivants :
 
-- Si une référence SKU spécifique est répertoriée dans la demande d’appareil, veillez à l’utiliser lors de la commande. Cela garantit que les appareils sont conformes aux Bureau géré Microsoft logiciels requis. 
+- Si une référence SKU spécifique est répertoriée dans la demande d’appareil, veillez à l’utiliser lors de la commande. Cela garantit que les appareils sont conformes aux Microsoft Manged Desktop logiciels requis.
 - Vous n’avez pas Windows l’expérience de première expérience d’utilisateur.
-- Être inscrit auprès d’Bureau géré Microsoft à l’aide de la fonctionnalité [d’inscription de l’appareil](../get-started/register-devices-self.md)
+- Être inscrit auprès d’Microsoft Manged Desktop à l’aide de la fonctionnalité [d’inscription de l’appareil](../get-started/register-devices-self.md)
 
 >[!NOTE]
 >Les appareils avec un processeur 2,0 GHz ou plus rapide offrent une bien meilleure expérience aux utilisateurs impliqués dans ces activités :

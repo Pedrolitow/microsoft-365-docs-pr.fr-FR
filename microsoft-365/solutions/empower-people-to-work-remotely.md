@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-jun2020
 keywords: travail à domicile, travail domicile-travail, travail hybride, travail à distance, travail hybride, employés à distance, connectivité hybride, accès à distance, télécommunications, télétravail, télétravail, travail mobile, travail à distance, travail à distance, travail en tout lieu, travail flexible
 description: Traversez les couches d’infrastructure pour que vos travailleurs hybrides accèdent aux ressources locales et Microsoft 365 en toute sécurité.
-ms.openlocfilehash: 55f1cf5c922166e1fe3932b6fe89fbdfcbfba466
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: fed23a4607cfb47049a6540dfb592d9a8baf9d21
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788883"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229370"
 ---
 # <a name="set-up-your-infrastructure-for-hybrid-work-with-microsoft-365"></a>Configurez votre infrastructure pour le travail hybride avec Microsoft 365
 
@@ -40,9 +40,8 @@ Microsoft 365 offre les fonctionnalités permettant à vos travailleurs hybrides
 
 ![Confier des responsabilités aux travailleurs hybrides avec Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
->[!Note]
->Si vous découvrez Microsoft 365 pour la première fois, consultez [ces ressources](https://www.microsoft.com/microsoft-365).
->
+> [!NOTE]
+> Si vous découvrez Microsoft 365 pour la première fois, consultez [ces ressources](https://www.microsoft.com/microsoft-365).
 
 Regardez cette vidéo de présentation du processus de déploiement.
 <br>
@@ -53,9 +52,9 @@ Pour les professionnels de l’informatique qui gèrent une infrastructure sur s
 
 - Connecté
 
-  Où que vous soyez et à tout moment, vos employés peuvent accéder aux éléments suivants : 
+  Où que vous soyez et à tout moment, vos employés peuvent accéder aux éléments suivants :
 
-  - Services et données dans le cloud de votre abonnement Microsoft 365. 
+  - Services et données dans le cloud de votre abonnement Microsoft 365.
 
   - Ressources d’organisation, telles celles proposées par les centres de données d’application locaux.
 
@@ -71,11 +70,11 @@ Pour les professionnels de l’informatique qui gèrent une infrastructure sur s
 
   Vos travailleurs hybrides peuvent être aussi productifs que localement de manière hautement collaborative avec :
 
-  - Réunions en ligne et sessions de conversation avec Teams. 
+  - Réunions en ligne et sessions de conversation avec Teams.
 
   - Les espaces de travail partagés pour le stockage de fichiers dans le Cloud avec une accessibilité globale et une collaboration en temps réel avec SharePoint et OneDrive.
 
-  - Les tâches partagées et flux de travail pour répartir le travail et accomplir les tâches. 
+  - Les tâches partagées et flux de travail pour répartir le travail et accomplir les tâches.
 
 Pour une expérience de connexion transparente, vos comptes d’utilisateur Services de domaine Active Directory (AD DS) locaux doivent être synchronisés avec Azure Active Directory (Azure AD). Pour protéger vos appareils Windows 10, ils doivent être inscrits dans Intune. Voici un aperçu général de l’infrastructure.
 
@@ -86,15 +85,15 @@ Pour activer les fonctionnalités de Microsoft 365 pour vos travailleurs hybride
 | Fonctionnalité | Description | Licence |
 |:-------|:-----|:-------|
 | Authentification multifacteur appliquée avec paramètres de sécurité par défaut   | Protégez-vous contre les identités compromises et les appareils en imposant une deuxième forme d’authentification pour les connexions. La sécurité par défaut nécessite l’authentification multifacteur pour tous les comptes d’utilisateurs.   | Microsoft 365 E3 ou E5 |
-| Authentification multifacteur appliquée avec accès conditionnel| Requiert une authentification multifacteur sur la base des propriétés de la connexion avec les stratégies d’accès conditionnel.    | Microsoft 365 E3 ou E5 | 
-| Authentification multifacteur appliquée avec accès conditionnel basé sur les risques   | Requiert une authentification multifacteur basée sur le risque de connexion de l’utilisateur avec Microsoft Defender pour identité. | Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2 | 
+| Authentification multifacteur appliquée avec accès conditionnel| Requiert une authentification multifacteur sur la base des propriétés de la connexion avec les stratégies d’accès conditionnel.    | Microsoft 365 E3 ou E5 |
+| Authentification multifacteur appliquée avec accès conditionnel basé sur les risques   | Requiert une authentification multifacteur basée sur le risque de connexion de l’utilisateur avec Microsoft Defender pour identité. | Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2 |
 | Réinitialisation du mot de passe libre-service (SSPR)    | Autoriser vos utilisateurs à réinitialiser ou déverrouiller leur mot de passe ou leur compte.  | Microsoft 365 E3 ou E5 |
 | Proxy d’application Azure AD    | Fournir un accès à distance sécurisé pour les applications web hébergées sur les serveurs intranet.   | Nécessite un abonnement Azure payé séparément |
 | VPN point à site Azure   | Créer une connexion sécurisée à partir de l’appareil d’un employé distant sur votre intranet via un réseau virtuel Azure.   | Nécessite un abonnement Azure payé séparément |
 | Windows Virtual Desktop   | Prise en charge de travailleurs distants qui peuvent uniquement utiliser leurs appareils personnels et non gérés avec des bureaux virtuels exécutés dans Azure. | Nécessite un abonnement Azure payé séparément |
-| Services Bureau à distance (RDS) | Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet. | Microsoft 365 E3 ou E5 | 
+| Services Bureau à distance (RDS) | Autoriser les employés à se connecter à des ordinateurs Windows sur votre intranet. | Microsoft 365 E3 ou E5 |
 | Passerelle des services Bureau à distance   | Chiffrer les communications et empêcher les hôtes RDS d’être directement exposés à Internet. | Nécessite des licences Windows Server distinctes |
-| Microsoft Intune | Gérer les appareils et les applications.   | Microsoft 365 E3 ou E5 | 
+| Microsoft Intune | Gérer les appareils et les applications.   | Microsoft 365 E3 ou E5 |
 | Configuration Manager | Gérer les installations, mises à jour et paramètres logiciels de vos appareils | Nécessite des licences de gestionnaire de configuration distinctes |
 | Analyses du bureau | Déterminer la disponibilité des mises à jour de vos clients Windows.   | Nécessite des licences de gestionnaire de configuration distinctes |
 | Windows Autopilot | Installer et configurer de nouveaux appareils Windows 10 à des fins productives.   | Microsoft 365 E3 ou E5 |
