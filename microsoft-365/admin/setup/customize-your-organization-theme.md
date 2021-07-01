@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: b042090cf2cac9ac3bed705637bd03d721f76ad5
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53006912"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227782"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -41,12 +41,12 @@ Vous pouvez ajouter ou mettre à jour un thème par défaut qui s’applique à 
 
 2. Sous **l’onglet Profil de** l’organisation, sélectionnez **Thèmes personnalisés.**
 
-Tous les thèmes peuvent être personnalisés à l’aide des onglets suivants.
+Tous les thèmes d’organisation peuvent être personnalisés à l’aide des onglets suivants.
 
 |**Tab**|**What can you do?**|
 |:-----|:-----|
 |[Général](#general-modify-a-theme) <br/> |Modifiez un nom de thème et affectez jusqu’à cinq groupes (le cas échéant).  <br/> |
-|[Logos](#logos-specify-your-theme-logos) <br/> |Ajoutez votre logo de thème, y compris Office thème foncé et les options mobiles.  <br/> |
+|[Logos](#logos-specify-your-theme-logos) <br/> |Ajoutez le logo de votre organisation, y compris le logo de remplacement pour le thème foncé.  <br/> |
 |[Colors](#colors-choose-theme-colors) <br/> |Personnalisez un modèle de couleurs en spécifiant les couleurs de barre de navigation, d’accentuation, de texte et d’icône. <br/> |
 
 ## <a name="general-modify-a-theme"></a>Général : modifier un thème
@@ -64,7 +64,7 @@ Le thème par défaut est le premier thème affiché.
 > [!IMPORTANT]
 > Le thème par défaut est unique, il ne peut pas être renommé et s’applique à tous les membres de votre organisation. Pour supprimer le thème par défaut, vous devez d’abord supprimer tous les autres thèmes.
 
-:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
+:::image type="content" source="../../media/Default_Theme_Panel1.png" alt-text="Screenshot: General tab showing the default theme for your organization":::
 
 ### <a name="create-a-group-theme"></a>Créer un thème de groupe
 
@@ -76,7 +76,7 @@ Vous pouvez créer jusqu’à quatre thèmes de groupe supplémentaires.
 
 3. Sélectionnez **Enregistrer**.
 
-:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
+:::image type="content" source="../../media/default-theme-general-users1.png" alt-text="Screenshot: General tab showing the default theme for a group of users in your organization":::
 
 ## <a name="logos-specify-your-theme-logos"></a>Logos : spécifier vos logos de thème
 
@@ -84,9 +84,11 @@ Dans la page **Logos,** vous pouvez ajouter vos logos et spécifier l’URL vers
 
 - **Logo par défaut**: ajoutez un emplacement d’URL qui pointe vers votre logo. Assurez-vous que l’URL utilise le protocole HTTPS. Ajoutez une URL d’image HTTPS qui autorise l’accès anonyme et ne nécessite pas d’authentification. Pour le thème par défaut, vous avez également la possibilité de télécharger une image de logo inférieure à 10 000 livres. Votre logo par défaut peut être au format JPG, PNG, GIF ou SVG. Pour les images SVG, elles seront resa taille pour s’ajuster à 24 pixels verticalement. Les images JPG, PNG et GIF seront adaptées à une taille de 200 x 48 pixels. Les proportions de logo seront toujours conservées.
 - **Autre logo**: ajoutez un emplacement d’URL qui pointe vers votre logo. Votre autre logo doit être optimisé pour une utilisation dans Office thèmes foncés. Mêmes exigences que le logo par défaut.
-- **Lien sur clic :** ajoutez un emplacement d’URL qui pointe vers votre logo. Vous pouvez utiliser votre logo comme lien vers n’importe quelle ressource d’entreprise, par exemple le site web de votre entreprise.
+- **Lien sur clic :** ajoutez un emplacement d’URL qui pointe vers votre logo. Vous pouvez utiliser votre logo comme lien vers n’importe quelle ressource d’entreprise, par exemple le site web de votre entreprise. Si vous ne sélectionnez pas d’emplacement d’URL pour votre logo, la page d’Office par défaut.
 
 Sélectionnez **Enregistrer** pour enregistrer vos modifications.
+
+:::image type="content" source="../../media/Logos_Tab.png" alt-text="Capture d’écran : onglet Logos affichant les options de logo":::
 
 Vous pouvez supprimer vos logos à tout moment. Revenons simplement à la page **Logos** et sélectionnez **Supprimer.**
   
@@ -98,11 +100,10 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 - **Couleur du texte et de l’icône**: sélectionnez une couleur à utiliser pour le texte et les icônes dans la barre de navigation supérieure.
 - **Couleur d’accentuage**: choisissez une couleur qui s’affiche bien sur un arrière-plan blanc ou clair. La couleur d’accentuage est utilisée pour colorier certains liens et boutons qui s’affiche sur un arrière-plan blanc ou clair. Par exemple, la couleur d’accentuage est utilisée pour colorier les éléments de la boîte de réception d’un utilisateur et sur sa page Office.com.
 - **Réinitialiser la couleur**: sélectionnez ce lien pour rétablir les couleurs par défaut.
-- **Quel logo doit être utilisé ? :** sélectionnez les logos par défaut ou tout autre logo que vous avez créé vous-même.
 
-:::image type="content" source="../../media/default-theme-colors.png" alt-text="Capture d’écran : onglet Couleurs affichant les couleurs de thème par défaut pour votre organisation":::
+:::image type="content" source="../../media/default-theme-colors1.png" alt-text="Capture d’écran : onglet Couleurs affichant les couleurs de thème par défaut pour votre organisation":::
 
-## <a name="frequently-asked-questions"></a>Questions fréquemment posées
+## <a name="frequently-asked-questions"></a>Foire aux questions
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation possède déjà un thème pour tous les employés. Comment cela va-t-il changer ?
 
@@ -137,7 +138,7 @@ Le thème par défaut ne peut être supprimé qu’une fois tous les thèmes de 
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Pourquoi reçois-je un message d’erreur chaque fois que je télécharge une URL de logo?  
 
-Assurez-vous que le logo que vous utilisez est spécifié en tant qu’URL adressaçable publiquement. Suivez ces [étapes pour télécharger des logos](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) vers Azure Blob Storage ou le Office 365 réseau de distribution de contenu [avec SharePoint Online.](../../enterprise/use-microsoft-365-cdn-with-spo.md)
+Assurez-vous que le logo que vous utilisez est spécifié en tant qu’URL adressaçable publiquement. Suivez ces [étapes pour télécharger des logos](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) vers Azure Blob Stockage ou le Office 365 réseau de distribution de contenu [avec SharePoint Online.](../../enterprise/use-microsoft-365-cdn-with-spo.md)
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>Pourquoi reçois-je le message « Ne répond pas au coefficient de contraste de couleur minimal de 4,5:1 » ?
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Utilisez la mobilité et la sécurité de base intégrées pour supprimer des informations des appareils inscrits.
-ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: c3cc547ce5e135ccdabf9a09b0d572f1b2530f47
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706141"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228146"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Effacement d’un appareil mobile dans Basic Mobility and Security
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser la mobilité et la sécurité de base intégrées pour Micr
 
 Les appareils mobiles peuvent stocker des informations organisationnelles sensibles et fournir l’accès aux ressources Microsoft 365 de votre organisation. Pour protéger les informations de votre organisation, vous pouvez réinitialiser ou supprimer des données d’entreprise aux usine :
 
-- **Réinitialisation** aux usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
+- **Réinitialisation** d’usine : supprime toutes les données sur l’appareil mobile d’un utilisateur, y compris les applications installées, les photos et les informations personnelles. Une fois l’effacement terminé, l’appareil est rétabli à ses paramètres d’usine.
 
 - **Supprimer des données d’entreprise**: supprime uniquement les données de l’organisation et laisse les applications installées, les photos et les informations personnelles sur l’appareil mobile d’un utilisateur.
 
@@ -45,9 +45,9 @@ Les appareils mobiles peuvent stocker des informations organisationnelles sensib
 
 ## <a name="wipe-a-mobile-device"></a>Effacer un appareil mobile
 
-1. Go to the [Microsoft 365 admin center](../../admin/admin-overview/about-the-admin-center.md).
+1. Go to the [Centre d’administration Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
 
-2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** appareils mobiles dans la liste des résultats.
+2. Tapez Gestion des appareils mobiles dans le champ de recherche, puis sélectionnez **Gestion des** périphériques mobiles dans la liste des résultats.
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Option de gestion des appareils mobiles Basic Mobility and Secruity":::
 
@@ -86,5 +86,6 @@ La effacement est envoyée immédiatement à l’appareil mobile et l’appareil
 |Microsoft 365 données d’application sont effacées si l’appareil est protégé par les stratégies Intune App Protection. Les applications ne sont pas supprimées. Pour les appareils non protégés par les stratégies de gestion des applications mobiles (MAM), Outlook et OneDrive ne suppriment pas les données mises en cache.<br/>**Remarque** Pour appliquer des stratégies intune App Protection, vous devez avoir une licence Intune.|Oui|Oui|
 |Les paramètres de stratégie appliqués par Basic Mobility and Security aux appareils ne sont plus appliqués ; les utilisateurs peuvent modifier les paramètres.|Oui|Oui|
 |Les profils de messagerie créés par Basic Mobility and Security sont supprimés et les messages électroniques mis en cache sur l’appareil sont supprimés.|Oui|N/D|
->[!NOTE]
->Portail d’entreprise’application est disponible dans l’App Store pour iOS et le Play Store pour les appareils Android.
+
+> [!NOTE]
+> Portail d’entreprise’application est disponible dans l’App Store pour iOS et le Play Store pour les appareils Android.

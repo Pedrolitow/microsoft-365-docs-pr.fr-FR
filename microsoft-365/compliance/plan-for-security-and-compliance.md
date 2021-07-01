@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Cette page d’accueil fournit des liens et des informations de planification pour la sécurité et la conformité dans Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6300d254e67cad466dc25a902fc70f43ec0b776a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198057"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226250"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planifier la conformité de &amp; la sécurité
 
@@ -32,7 +32,7 @@ La gestion de la sécurité et de la conformité est un partenariat. Vous êtes 
 
 Orientez-vous vers les fonctionnalités de protection des informations dans l’affiche Protection Office 365 informations. 
   
-[Déployer la protection des informations pour les réglementations en matière de confidentialité des Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[Déployer la protection des informations pour les réglementations en matière de confidentialité des Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## <a name="step-2-check-your-secure-score"></a>Étape 2 : Vérifier votre score de sécurité
 

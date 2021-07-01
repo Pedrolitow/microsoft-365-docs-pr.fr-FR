@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: bda9633ab37fd21fd66b3a8a53d4dd522e48ced1
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b7eb225f04f531c3b6de71bf72df0f8062a8c93d
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820272"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226502"
 ---
 # <a name="insider-risk-management-audit-log"></a>Journal d’audit de la gestion des risques internes
 
@@ -38,8 +38,8 @@ Les domaines inclus dans l’analyse des activités sont les suivants :
 
 Pour afficher et exporter des données à partir du journal d’audit, les utilisateurs doivent être affectés aux groupes de rôles Insider *Risk Management* ou Insider Risk *Management Auditors.* Pour en savoir plus sur les groupes de rôles de gestion des risques internes, voir Prise en charge de la gestion des risques internes Étape 1 : [Activation des autorisations.](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)
 
->[!NOTE]
->Le journal d’audit de la gestion des risques internes n’est pas associé au journal d’audit Microsoft 365, il s’agit de systèmes d’audit indépendants et de capture d’informations sur des activités distinctes. La désactivation Microsoft 365'audit n’a pas d’impact sur l’audit des activités au sein de la gestion des risques internes.
+> [!NOTE]
+> Le journal d’audit de la gestion des risques internes n’est pas associé au journal d’audit Microsoft 365, il s’agit de systèmes d’audit indépendants et de capture d’informations sur des activités distinctes. La désactivation Microsoft 365'audit n’a pas d’impact sur l’audit des activités au sein de la gestion des risques internes.
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Afficher l’activité dans le journal d’audit des risques internes
 
@@ -60,7 +60,7 @@ Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente d’
 
 ## <a name="audit-log-export"></a>Exportation du journal d’audit
 
-Les *utilisateurs affectés* aux groupes de rôles Insider *Risk Management* ou Insider Risk Management Auditors peuvent exporter toute l’activité du journal d’audit vers un fichier .csv (valeurs séparées par des virgules) en sélectionnant **Exporter** dans la page journal **d’audit** des risques internes. Selon l’activité, certains champs d’une activité peuvent ne pas être applicables à l’activité et ces champs apparaîtront comme vides dans le fichier exporté.
+Les *utilisateurs affectés* aux groupes de rôles Insider *Risk Management* ou Insider Risk Management Auditors peuvent exporter toute l’activité du journal d’audit vers un fichier .csv (valeurs séparées par des virgules) en sélectionnant **Exporter** dans la page du journal **d’audit** des risques internes. Selon l’activité, certains champs d’une activité peuvent ne pas être applicables à l’activité et ces champs apparaîtront comme vides dans le fichier exporté.
 
 Le fichier contient des informations d’activité pour les champs suivants :
 
@@ -74,7 +74,7 @@ Le fichier contient des informations d’activité pour les champs suivants :
 - **Date :** Date et heure, répertoriées dans la date et l’heure locales de votre organisation.
 - **Description**: entrée de description par l’utilisateur pour l’objet en cours d’action (par exemple, une stratégie ou un groupe d’utilisateurs prioritaire).
 - **Stratégie DLP :** stratégie de protection contre la perte de données (DLP) sélectionnée pour déclencher l’inclusion dans une stratégie de gestion des risques internes.
-- **Indicateur**: indicateur dans les paramètres de risque internes sur l’activité (par exemple, ajout ou suppression d’un indicateur).
+- **Indicateur**: indicateur dans les paramètres de risque internes sur qui l’activité a été effectuée (par exemple, ajout ou suppression d’un indicateur).
 - **Modèle de notification**: modèle d’avis sur qui l’activité a été effectuée.
 - **Nombre de jours :** fenêtre d’activation de stratégie définie dans les paramètres de risque interne.
 - **Nombre de fichiers**: limite de volume de fichiers définie dans les paramètres de gestion des risques internes.

@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans Advanced eDiscovery qui peuvent empêcher un traitement correct du contenu.
+description: Découvrez comment utiliser la correction des erreurs pour corriger les problèmes de données dans Advanced eDiscovery qui pourraient empêcher un traitement correct du contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f2067831a85e3b3a506917fac5b93acfa0b174db
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 891e8292fca629669a48684e95f522c08838d3aa
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906982"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226658"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correction d’erreur lors du traitement des données
 
@@ -32,8 +32,8 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 ## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Créer une session de correction des erreurs pour corriger les fichiers avec des erreurs de traitement
 
->[!NOTE]
->Si l’Assistant Correction des erreurs est fermé à tout moment au cours  de la procédure suivante,  vous pouvez revenir à la session de correction d’erreur à partir de l’onglet Traitement en sélectionnant **Corrections** dans le menu déroulant Affichage.
+> [!NOTE]
+> Si l’Assistant Correction des erreurs est fermé à tout moment au cours  de la procédure suivante,  vous pouvez revenir à la session de correction d’erreur à partir de l’onglet Traitement en sélectionnant **Corrections** dans le menu déroulant Affichage.
 
 1. Sous **l’onglet** Traitement du cas Advanced eDiscovery, sélectionnez Erreurs dans le menu déroulant Affichage, puis  sélectionnez un jeu à réviser ou l’intégralité du cas dans le menu déroulant Étendue.   Cette section affiche toutes les erreurs provenant du cas ou de l’erreur d’un jeu à réviser spécifique.
 
@@ -51,13 +51,13 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     ![Télécharger des fichiers](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Pour télécharger des fichiers, spécifiez le **Chemin d’accès destination pour le téléchargement**. Il s'agit d'un chemin d'accès au dossier parent sur votre ordinateur local où le fichier sera téléchargé.  Le chemin d’accès par défaut, %USERPROFILE%\Downloads\errors, pointe vers le dossier de téléchargements de l’utilisateur connecté. Vous pouvez modifier ce chemin d’accès si vous le souhaitez. Si vous le modifiez, nous vous recommandons d’utiliser un chemin d’accès au fichier local pour de meilleures performances. N’utilisez pas de chemin d’accès réseau distant. Par exemple, vous pouvez utiliser le chemin **d’accès C:\Remediation**. 
+5. Pour télécharger des fichiers, spécifiez le **Chemin d’accès destination pour le téléchargement**. Il s'agit d'un chemin d'accès au dossier parent sur votre ordinateur local où le fichier sera téléchargé.  Le chemin d’accès par défaut, %USERPROFILE%\Downloads\errors, pointe vers le dossier de téléchargements de l’utilisateur connecté. Vous pouvez modifier ce chemin d’accès si vous le souhaitez. Si vous le modifiez, nous vous recommandons d’utiliser un chemin d’accès au fichier local pour de meilleures performances. N’utilisez pas de chemin d’accès réseau distant. Par exemple, vous pouvez utiliser le chemin **d’accès C:\Remediation**.
 
    Le chemin d’accès au dossier parent est automatiquement ajouté à la commande AzCopy (en tant que valeur du **paramètre /Dest).**
 
-6. Copiez la commande prédéfinie en cliquant sur **Copier dans le presse-papiers**. Ouvrez une invite Windows commande, collez la commande AzCopy, puis appuyez sur **Entrée**.  
+6. Copiez la commande prédéfinie en cliquant sur **Copier dans le presse-papiers**. Ouvrez une invite Windows commande, collez la commande AzCopy, puis appuyez sur **Entrée**.
 
-    ![Préparer la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![Préparer la correction des erreurs](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
     > [!NOTE]
     > Vous devez utiliser AzCopy v8.1 pour utiliser correctement la commande fournie dans la page Télécharger **les fichiers.** Vous devez également utiliser AzCopy v8.1 pour télécharger les fichiers à l’étape 10. Pour installer cette version d’AzCopy, voir Transférer des données avec [AzCopy v8.1 sur Windows](/previous-versions/azure/storage/storage-use-azcopy). Si la commande AzCopy fournie échoue, consultez Résoudre les problèmes [d’AzCopy dans Advanced eDiscovery](troubleshooting-azcopy.md).
@@ -76,7 +76,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     `C:\Remediation\232f8b7e-089c-4781-88c6-210da0615d32\d1459499146268a096ea20202cd029857d64087706e6d6ca2a224970ae3b8938\d1459499146268a096ea20202cd029857d64087706e6d6ca2a224970ae3b8938.docx`
 
-    Si plusieurs fichiers sont téléchargés, chacun d’eux est téléchargé dans un sous-dossier nommé avec l’ID de fichier.
+    Si plusieurs fichiers sont téléchargés, chacun d’eux est téléchargé vers un sous-dossier nommé avec l’ID de fichier.
 
     > [!IMPORTANT]
     > Lorsque vous chargez des fichiers aux étapes 9 et 10, les fichiers corrigés doivent avoir le même nom de fichier et se trouver dans la même structure de sous-dossiers. Les noms de sous-dossier et de fichier sont utilisés pour associer le fichier corrigé au fichier d’erreur d’origine. Si la structure de dossiers ou les noms de fichiers sont modifiés, vous recevrez l’erreur suivante `Cannot apply Error Remediation to the current Workingset` : Pour éviter tout problème, nous vous recommandons de conserver les fichiers corrigés dans la même structure de sous-dossiers et de dossiers parents.
@@ -87,7 +87,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
     ![Télécharger Fichiers](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Spécifiez le dossier parent où se trouvent les fichiers corrigés dans la zone de texte **Chemin d’accès à l’emplacement des fichiers**. Là encore, le dossier parent doit avoir la même structure de sous-dossiers que celle créée lorsque vous avez téléchargé les fichiers.
+9. Spécifiez le dossier parent où se trouvent les fichiers corrigés dans la zone de texte **Chemin d’accès à l’emplacement des fichiers**. Là encore, le dossier parent doit avoir la même structure de sous-dossiers que celle créée lors du téléchargement des fichiers.
 
     Le chemin d’accès au dossier parent est automatiquement ajouté à la commande AzCopy (en tant que valeur du **paramètre /Source).**
 
@@ -97,7 +97,7 @@ Utilisez le flux de travail suivant pour corriger les fichiers avec des erreurs 
 
 11. Après avoir exécuté la commande AzCopy, cliquez sur **Suivant : Traiter les fichiers**.
 
-    Une fois le traitement terminé, vous pouvez passer au jeu à réviser et afficher les fichiers corrigés. 
+    Une fois le traitement terminé, vous pouvez passer au jeu à réviser et afficher les fichiers corrigés.
 
 ## <a name="remediating-errors-in-container-files"></a>Correction des erreurs dans les fichiers conteneur
 
@@ -109,7 +109,7 @@ Parfois, il n’est pas possible de corriger un fichier au format natif que vous
 
 ## <a name="what-happens-when-files-are-remediated"></a>Que se passe-t-il lorsque des fichiers sont corrigés ?
 
-Lorsque des fichiers corrigés sont chargés, les métadonnées d’origine sont conservées à l’exception des champs suivants : 
+Lorsque des fichiers corrigés sont chargés, les métadonnées d’origine sont conservées à l’exception des champs suivants :
 
 - ExtractedTextSize
 - HasText

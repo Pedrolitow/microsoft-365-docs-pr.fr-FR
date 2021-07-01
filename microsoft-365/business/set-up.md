@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Découvrez les étapes de configuration Microsoft 365 Business Premium, notamment l’ajout d’un domaine et d’utilisateurs, la configuration de stratégies de sécurité, etc.
-ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 74a98e915577cf86ec32a706bd3b8f558f49db95
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624386"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227636"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurer des Microsoft 365 Business Premium dans l’Assistant Installation
 
@@ -69,7 +69,7 @@ Lorsque vous achetez Microsoft 365 Business Premium, vous avez la possibilité d
     ![Capture d’écran de la page Personnaliser votre connectez-vous.](../media/adddomain.png)
 
     
-4. Suivez les étapes de l’Assistant pour créer des enregistrements DNS chez un fournisseur d’hébergement [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Microsoft 365 qui vérifie que vous êtes propriétaire du domaine. Si vous savez qu’il s’agit de votre hôte de domaine, consultez également les [Instructions propres à l’hôte](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions).
+4. Suivez les étapes de l’Assistant pour créer des enregistrements DNS chez un fournisseur d’hébergement [DNS](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Microsoft 365 qui vérifie que vous êtes propriétaire du domaine. Si vous connaissez votre hôte de domaine, voir aussi Ajouter un domaine [à Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     Si votre fournisseur d’hébergement est GoDaddy ou si un autre hôte est activé avec [connexion de domaine](/office365/admin/get-help-with-domains/domain-connect), le processus est simple et vous êtes automatiquement invité à vous connecter et à laisser Microsoft s’authentifier en votre nom.
 
@@ -131,8 +131,8 @@ Si vous avez choisi d’installer automatiquement des applications Office lors d
 
 Pour installer Office sur des appareils mobiles iOS ou Android, voir Configurer des appareils [mobiles pour Microsoft 365 Business Premium utilisateurs.](set-up-mobile-devices.md)
 
-Vous pouvez également installer Office individuellement. Pour [plus d’Office, voir](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) l’installation sur un PC ou Mac.
+Vous pouvez également installer Office individuellement. Pour [obtenir des instructions, voir Office’installation](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) sur un PC ou Mac.
 
 ## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365 vidéos de formation pour les entreprises](../business-video/index.yml) (page de liens)
+[Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml) (page de liens)

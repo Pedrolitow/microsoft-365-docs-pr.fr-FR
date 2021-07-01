@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5b59fb57ebd17050624ce36805558dcd1eef0503
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 7712ce1ee4c28352861df17c0637a94d99fa2c8a
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939252"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226526"
 ---
 # <a name="insider-risk-management-cases"></a>Cas de gestion des risques internes
 
@@ -37,7 +37,7 @@ Consultez la vidéo [Examen](https://www.youtube.com/watch?v=UONUSmkRC8s) et esc
 Le tableau de bord Cas **de** gestion des risques internes vous permet d’afficher les cas et d’agir sur ces cas. Chaque widget de rapport du tableau de bord affiche des informations pour les 30 derniers jours.
 
 - **Cas actifs**: nombre total de cas actifs en cours d’examen.
-- **Cas au cours des 30 derniers** jours : nombre total de cas créés, triés par *état Actif* *et* Fermé.
+- **Cas au cours des 30 derniers** jours : nombre total de cas créés, triés par *état actif* *et* fermé.
 - **Statistiques**: durée moyenne des cas actifs, répertoriée en heures, jours ou mois.
 
 La file d’attente répertorie tous les cas actifs et fermés pour votre organisation, en plus de l’état actuel des attributs de cas suivants :
@@ -98,7 +98,7 @@ La sélection d’un cas ouvre les outils de gestion des cas et permet aux analy
 **L’onglet** Alertes récapitule les alertes actuelles incluses dans le cas. De nouvelles alertes peuvent être ajoutées à un cas  existant et elles sont ajoutées à la file d’attente des alertes à mesure qu’elles sont affectées. Les attributs d’alerte suivants sont répertoriés dans la file d’attente :
 
 - Statut
-- Severity
+- Gravité
 - Heure détectée
 
 Sélectionnez une alerte dans la file d’attente pour afficher la page **détails de l’alerte.**
@@ -106,7 +106,7 @@ Sélectionnez une alerte dans la file d’attente pour afficher la page **détai
 Utilisez le contrôle de recherche pour rechercher des noms d’alerte pour un texte spécifique et utilisez le filtre d’alerte pour trier les cas selon les attributs suivants :
 
 - Statut
-- Severity
+- Gravité
 - Heure détectée, la date de début et la date de fin
 
 Utilisez le contrôle de filtre pour filtrer les alertes par plusieurs attributs, notamment :
@@ -122,7 +122,7 @@ L’onglet **Activité des utilisateurs** est l’un des outils les plus perform
 
 ![Activité des utilisateurs de gestion des risques internes](../media/insider-risk-user-activities.png)
 
-1. **Filtres d’heure**: par défaut, les six derniers mois d’alertes confirmées dans le cas sont affichés dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique en sélectionnant les onglets *6 mois,* *3* mois ou *1* mois sur le graphique en bulles.
+1. **Filtres de** temps : par défaut, les six derniers mois d’alertes confirmées dans le cas sont affichés dans le graphique d’activité de l’utilisateur. Vous pouvez facilement filtrer l’affichage graphique en sélectionnant les onglets *6 mois,* *3* mois ou *1* mois sur le graphique en bulles.
 2. **Activité et détails** des alertes de risque : les activités de risque sont affichées visuellement sous forme de bulles de couleur dans le graphique d’activité de l’utilisateur. Les bulles sont créées pour différentes catégories de risque et la taille des bulles est proportionnelle au nombre d’activités de risque pour la catégorie. Sélectionnez une bulle pour afficher les détails de chaque activité de risque. Les détails sont les suivants :
     - **Date** de l’activité de risque.
     - Catégorie **d’activité de risque.** Par exemple, *e-mail(s) avec* des pièces jointes envoyées à l’extérieur de l’organisation ou fichiers *téléchargés* à partir de SharePoint Online .
@@ -142,8 +142,8 @@ L’onglet **Activité des utilisateurs** est l’un des outils les plus perform
 
 ### <a name="activity-explorer-preview"></a>Explorateur d’activités (aperçu)
 
->[!IMPORTANT]
->L’onglet Explorateur d’activités est disponible dans la zone de gestion des cas pour les utilisateurs ayant déclenché des événements une fois que cette fonctionnalité est disponible dans votre organisation.
+> [!IMPORTANT]
+> L’onglet Explorateur d’activités est disponible dans la zone de gestion des cas pour les utilisateurs ayant déclenché des événements une fois que cette fonctionnalité est disponible dans votre organisation.
 
 **L’onglet Explorateur d’activités** permet aux analystes et aux enquêteurs de risques d’examiner les détails de l’activité associés aux alertes de risque. Par exemple, dans le cadre des actions de gestion des cas, les enquêteurs et les analystes peuvent avoir besoin de passer en revue toutes les activités de risque associées au cas pour plus de détails. Avec **l’Explorateur d’activités,** les réviseurs peuvent rapidement passer en revue une chronologie des activités à risque détectées et identifier et filtrer toutes les activités à risque associées aux alertes.
 
@@ -165,7 +165,7 @@ Le tableau de bord des notes de cas affiche les notes de l’utilisateur qui a c
 
 Pour ajouter une note à un cas :
 
-1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Notes** de cas.
 3. Sélectionnez **Ajouter une note de cas.**
 4. Dans la **boîte de dialogue Ajouter une note** de cas, tapez votre note pour le cas. Sélectionnez **Enregistrer** pour ajouter la note au cas ou sélectionnez **Annuler** fermer sans enregistrer la note dans le cas.
@@ -182,7 +182,7 @@ L’accès temporaire à un cas peut être accordé en ajoutant un utilisateur e
 
 Pour ajouter un collaborateur à un cas :
 
-1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis **l’onglet Collaborateurs.**
 3. Sélectionnez **Ajouter un collaborateur.**
 4. Dans la **boîte de** dialogue Ajouter un collaborateur, commencez à taper le nom de l’utilisateur que vous souhaitez ajouter, puis sélectionnez l’utilisateur dans la liste d’utilisateurs suggérée. Cette liste est générée à partir de la Azure Active Directory de votre abonnement client.
@@ -190,7 +190,7 @@ Pour ajouter un collaborateur à un cas :
 
 ## <a name="case-actions"></a>Actions de cas
 
-Les analystes et enquêteurs de risque peuvent prendre des mesures sur un cas dans l’une des méthodes suivantes, en fonction de la gravité du cas, de l’historique des risques de l’utilisateur et des recommandations en matière de risques de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider à gérer la résolution de bout en bout.
+Les analystes et enquêteurs de risque peuvent prendre des mesures sur un cas dans l’une des méthodes suivantes, en fonction de la gravité du cas, de l’historique des risques de l’utilisateur et des recommandations en matière de risques de votre organisation. Dans certains cas, vous devrez peut-être transformer un cas en examen d’utilisateur ou de données pour collaborer avec d’autres zones de votre organisation et approfondir les activités à risque. La gestion des risques internes est étroitement intégrée aux autres solutions de conformité Microsoft 365 pour vous aider avec la gestion de la résolution de bout en bout.
 
 ### <a name="send-email-notice"></a>Envoyer une notification par courrier électronique
 
@@ -200,25 +200,25 @@ Il est important de se souvenir que l’envoi d’une notification par courrier 
 
 Pour envoyer une notification à l’utilisateur affecté à un cas :
 
-1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis sélectionnez le bouton Envoyer une notification par **courrier** électronique dans la barre d’outils d’action de cas.
 3. Dans la boîte de dialogue Envoyer  un **avis** par courrier électronique, sélectionnez le contrôle de liste de listes des modèles d’avis pour sélectionner le modèle d’avis pour l’avis. Cette sélection pré-remplit les autres champs de l’avis.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
 5. Sélectionnez **Envoyer** pour envoyer l’avis à l’utilisateur ou **sélectionnez Annuler** fermer la boîte de dialogue sans l’envoyer à l’utilisateur. Toutes les notifications envoyées sont ajoutées à la file d’attente des notes de cas dans le tableau **de bord des notes de** cas.
 
-### <a name="escalate-for-investigation"></a>Réaffecter pour examen
+### <a name="escalate-for-investigation"></a>Faire remonter le dossier pour enquête
 
-Faire passer le cas pour l’examen de l’utilisateur dans les situations où un examen juridique supplémentaire est nécessaire pour l’activité de risque de l’utilisateur. Cette réaffectation ouvre un nouveau cas Advanced eDiscovery dans votre organisation Microsoft 365. Advanced eDiscovery offre un flux de travail de bout en bout pour conserver, collecter, réviser, analyser et exporter du contenu réactif aux examens juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les conservateurs impliqués dans un cas. L’affectation d’un réviseur en tant que consignataire dans un cas Advanced eDiscovery créé à partir d’un cas de gestion des risques internes permet à votre équipe juridique de prendre les mesures appropriées et de gérer la conservation du contenu. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
+Faire passer le cas pour l’examen de l’utilisateur dans les situations où un examen juridique supplémentaire est nécessaire pour l’activité de risque de l’utilisateur. Cette remontée ouvre un nouveau dossier Advanced eDiscovery dans votre organisation Microsoft 365. Advanced eDiscovery offre un flux de travail de bout en bout pour conserver, collecter, réviser, analyser et exporter du contenu réactif aux examens juridiques internes et externes de votre organisation. Il permet également à votre équipe juridique de gérer l’ensemble du flux de travail de notification de conservation légale pour communiquer avec les conservateurs impliqués dans un cas. L’affectation d’un réviseur en tant que consignataire dans un cas Advanced eDiscovery créé à partir d’un cas de gestion des risques internes permet à votre équipe juridique de prendre les mesures appropriées et de gérer la conservation du contenu. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
 
 Pour faire recaler un cas à un examen par un utilisateur :
 
-1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
-2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils d’action de cas.
-3. Dans la boîte **de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
+2. Sélectionnez un cas, puis sélectionnez le bouton Escalader pour **l’examen** dans la barre d’outils de l’action de cas.
+3. Dans la **boîte de dialogue Escalader pour l’examen,** entrez un nom pour le nouvel examen utilisateur. Si nécessaire, entrez des notes sur le cas et sélectionnez **Escalate**.
 4. Examinez les champs d’avis et mettez à jour le cas échéant. Les valeurs entrées ici remplacent les valeurs du modèle.
 5. Sélectionnez **Confirmer** pour créer le cas d’enquête de l’utilisateur ou **sélectionnez Annuler** pour fermer la boîte de dialogue sans créer de nouveau cas d’enquête utilisateur.
 
-Une fois que le cas de gestion des risques internes a été réamorcer vers un nouveau cas d’examen utilisateur, vous pouvez passer en revue le nouveau cas dans la zone **eDiscovery** avancée du centre de conformité  >   Microsoft 365.
+Une fois que le cas de gestion des risques internes est passé à un nouveau cas d’examen utilisateur, vous pouvez passer en revue le nouveau cas dans la zone **eDiscovery** Avancée de la  >   Centre de conformité Microsoft 365.
 
 ### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Exécuter des tâches automatisées avec Power Automate flux pour le cas
 
@@ -232,7 +232,7 @@ Une fois que le cas de gestion des risques internes a été réamorcer vers un n
 Pour exécuter, gérer ou créer des flux Power Automate pour un cas de gestion des risques internes :
 
 1. Sélectionnez **Automatiser dans la** barre d’outils de l’action de cas. 
-2. Choisissez le flux Power Automate’exécuter, puis sélectionnez **Exécuter le flux.** 
+2. Choisissez le flux Power Automate à exécuter, puis sélectionnez **Exécuter le flux.** 
 3. Une fois le flux terminé, sélectionnez **Terminé.**
 
 Pour en savoir plus sur les Power Automate pour la gestion des risques internes, voir Prise en charge des paramètres de [gestion des risques internes.](insider-risk-management-settings.md#power-automate-flows-preview)
@@ -247,7 +247,7 @@ Lorsqu’un cas est résolu, l’équipe Microsoft associée est automatiquement
 
 Pour en savoir plus sur les Microsoft Teams gestion des risques internes, voir Prise en charge des paramètres de [gestion des risques internes.](insider-risk-management-settings.md#microsoft-teams-preview)
 
-### <a name="resolve-the-case"></a>Résoudre le cas
+### <a name="resolve-the-case"></a>Résoudre le dossier
 
 Une fois que les analystes et enquêteurs de risque ont terminé leur examen et leur examen, un cas peut être résolu pour agir sur toutes les alertes actuellement incluses dans le cas. La résolution d’un cas ajoute une classification de résolution, modifie l’état du cas sur *Fermé* et les raisons de l’action de résolution sont automatiquement ajoutées à la file d’attente des notes de cas dans le tableau de bord des **notes** de cas. Les cas sont résolus comme suit :
 
@@ -256,7 +256,7 @@ Une fois que les analystes et enquêteurs de risque ont terminé leur examen et 
 
 Pour résoudre un cas :
 
-1. Dans le centre [Microsoft 365 conformité,](https://compliance.microsoft.com)allez à **La** gestion des risques internes et sélectionnez **l’onglet Cas.**
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)allez à **La** Gestion des risques internes et sélectionnez **l’onglet Cas.**
 2. Sélectionnez un cas, puis sélectionnez le **bouton Résoudre** le cas dans la barre d’outils d’action de cas.
 3. Dans la **boîte de dialogue Résoudre le cas,** sélectionnez le contrôle **Résoudre** en tant que la boîte de dialogue pour sélectionner la classification de résolution pour le cas. Les options possibles sont une violation **de** la stratégie anodin **ou confirmée.**
 4. Dans la **boîte de dialogue Résoudre le cas,** entrez les raisons de la classification de résolution dans le champ de texte **Action** prise.

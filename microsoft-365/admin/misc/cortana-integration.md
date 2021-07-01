@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Les utilisateurs ayant des comptes professionnels ou scolaires valides peuvent Cortana des expériences Microsoft 365 qui répondent Office 365 promesses de sécurité au niveau de l’entreprise.
-ms.openlocfilehash: 45e6f46fa753096c535add9daf486ef6a9f1bff0
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054595"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227894"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
@@ -39,7 +39,7 @@ Lorsqu’ils sont signés avec des comptes professionnels ou scolaires valides, 
 
 - Conformément aux autres services Office 365, les services Cortana entreprise respectent les mêmes promesses de confidentialité, de sécurité et de conformité au niveau de l’entreprise que dans les conditions d’ost des [services](https://www.microsoft.com/licensing/product-licensing/products)en ligne .
 
-- Les Microsoft 365 nouvelles expériences, telles que les e-mails Briefing et Lire mes e-mails, seront activées à l’aide des services Cortana entreprise et seront entièrement conformes à ces promesses. Ces fonctionnalités sont actuellement disponibles dans le monde entier (client multi-locataire standard). Pour plus d’informations sur la recherche de l’emplacement d’utilisation, consultez [afficher des valeurs de](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts)propriétés supplémentaires pour les comptes.
+- Les Microsoft 365 nouvelles expériences, telles que les e-mails Briefing et Lire mes e-mails, seront activées à l’aide des services Cortana entreprise et seront entièrement conformes à ces promesses. Ces fonctionnalités sont actuellement disponibles dans le monde entier (client multi-locataire standard). Pour plus d’informations sur la recherche de l’emplacement d’utilisation, consultez [afficher des valeurs de](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md#view-additional-property-values-for-accounts)propriétés supplémentaires pour les comptes.
 
 - Les expériences utilisateur existantes, y compris les Cortana dans Windows 10 (version 1909 et antérieures), sont régies par le contrat de [services Microsoft](https://www.microsoft.com/licensing/product-licensing/products) et la déclaration de confidentialité [Microsoft](https://privacy.microsoft.com/privacystatement) (voir la section « Services existants pour les consommateurs » ci-dessous). Ces conditions régiront également Cortana services d’entreprise fournis à l’utilisateur lors de la connexion avec ses informations d’identification de consommateur.
 

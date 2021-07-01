@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05d5889ba690bdf61fd51044b3c059f1476342af
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: e8f6c075d706da46d7163705f6aa9d0ca6cad1a2
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964655"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227126"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Créez des types d’informations sensibles personnalisés à l’aide d’une classification Exact Data Match.
 
@@ -66,9 +66,9 @@ Pour effectuer les tâches décrites dans cet article, vous devez être un admin
 
 La classification EDM est incluse dans ces abonnements
 
-- Office 365 E5
-- Microsoft 365 E5
-- Microsoft 365 E5 Conformité
+- Office 365 E5
+- Microsoft 365 E5
+- Microsoft 365 E5 Conformité
 - Microsoft E5/A5 Information Protection et gouvernance
 
 ## <a name="portal-links-for-your-subscription"></a>Liens vers les portails de votre abonnement
@@ -385,15 +385,15 @@ Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte cl
 - Un compte professionnel ou scolaire pour Microsoft 365 qui sera ajouté au groupe de sécurité **EDM\_DataUploaders**
 - Un ordinateur Windows 10 ou Windows Server 2016 avec .NET version 4.6.2 pour l’exécution d’EDMUploadAgent
 - Un répertoire sur votre ordinateur de téléchargement pour :
-    -  EDMUploadAgent
-    - votre fichier d’élément sensible au format .csv .tsv ou .tsv, **PatientRecords.csv** dans nos exemples
-    -  Les fichiers de hachage et salt générés
-    - Le nom du magasin de données provenant du fichier **edm.xml**, ici `PatientRecords`
+  - EDMUploadAgent
+  - votre fichier d’élément sensible au format .csv .tsv ou .tsv, **PatientRecords.csv** dans nos exemples
+  - fichiers de hachage et salt de sortie
+  - Le nom du magasin de données provenant du fichier **edm.xml**, ici `PatientRecords`
 - Si vous avez utilisé l’[Assistant de schéma de correspondance exacte des données et de type d’informations sensibles](sit-edm-wizard.md), vous ***devez*** le télécharger.
 
 #### <a name="set-up-the-security-group-and-user-account"></a>Configurer les groupe de sécurité personnalisé et compte d’utilisateur
 
-1. En tant qu’administrateur général, accédez au centre d’administration à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription) et [créez un groupe de sécurité](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) nommé **EDM\_DataUploaders**.
+1. En tant qu’administrateur général, accédez au centre d’administration à l’aide du [lien approprié pour votre abonnement](#portal-links-for-your-subscription) et [créez un groupe de sécurité](/office365/admin/email/create-edit-or-delete-a-security-group) nommé **EDM\_DataUploaders**.
 
 2. Ajoutez un ou plusieurs utilisateurs au groupe de sécurité **EDM\_DataUploaders**. (ces utilisateurs peuvent gérer la base de données d’informations sensibles).
 
@@ -401,18 +401,17 @@ Si vous ne souhaitez pas exposer votre fichier de données sensibles en texte cl
 
 Cet ordinateur doit avoir accès directement à votre client Microsoft 365.
 
->[!NOTE]
+> [!NOTE]
+>
 > Avant de commencer cette procédure, assurez-vous que vous êtes membre du groupe de sécurité **EDM\_DataUploaders**.
-
-> [!TIP]
+>
 > Si vous le souhaitez, vous pouvez exécuter une validation sur votre fichier .csv .tsv ou .tsv avant de télécharger en exécutant :
 >
->`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+> `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
->Pour plus d’informations sur tous les paramètres pris en charge par EdmUploadAgent.exe
+> Pour plus d’informations sur tous les paramètres pris en charge par EdmUploadAgent.exe
 >
 > `EdmUploadAgent.exe /?`
-
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>Liens vers l’agent de chargement EDM par type d’abonnement
 

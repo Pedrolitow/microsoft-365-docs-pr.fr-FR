@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Supprimez des groupes ou des stratégies pour désactiver la mobilité et la sécurité de base.
-ms.openlocfilehash: 1d81aed01193fb2ba821ebc055958ac6cd8ac382
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 7ec4ec0d47668c21824d8e01e3845d637b9b0922
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023868"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53228134"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>Désactiver l’option Mobility et Security de base
 
@@ -29,16 +29,16 @@ Pour désactiver efficacement la mobilité et la sécurité de base, vous suppri
 
 - Désactivez la mobilité et la sécurité de base pour tout le monde en supprimant toutes les stratégies d’appareil de mobilité et de sécurité de base.
 
-Ces options suppriment l’application de la mobilité et de la sécurité de base pour les appareils de votre organisation. Malheureusement, vous ne pouvez pas simplement « mettre en service » Basic Mobility and Security après l’avoir installé. 
+Ces options suppriment l’application de la mobilité et de la sécurité de base pour les appareils de votre organisation. Malheureusement, vous ne pouvez pas simplement « mettre en service » Basic Mobility and Security après l’avoir installé.
 
->[!IMPORTANT]
->N’ignorez pas l’impact sur les appareils des utilisateurs lorsque vous supprimez des groupes de sécurité d’utilisateurs des stratégies ou supprimez les stratégies elles-mêmes. Par exemple, les profils de messagerie et les e-mails mis en cache peuvent être supprimés, en fonction de l’appareil. Pour plus d’informations,  [voir que se passe-t-il lorsque](../../admin/basic-mobility-security/create-device-security-policies.md) vous supprimez une stratégie ou supprimez un utilisateur de la stratégie ?
+> [!IMPORTANT]
+> N’ignorez pas l’impact sur les appareils des utilisateurs lorsque vous supprimez des groupes de sécurité utilisateur des stratégies ou supprimez les stratégies elles-mêmes. Par exemple, les profils de messagerie et les e-mails mis en cache peuvent être supprimés, en fonction de l’appareil. Pour plus d’informations,  [voir que se passe-t-il lorsque](../../admin/basic-mobility-security/create-device-security-policies.md) vous supprimez une stratégie ou supprimez un utilisateur de la stratégie ?
 
 ## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>Supprimer des groupes de sécurité utilisateur des stratégies d’appareil de mobilité et de sécurité de base
 
 1. Dans votre type de navigateur :  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2. Sélectionnez une stratégie d’appareil, puis **sélectionnez Modifier la stratégie.** 
+2. Sélectionnez une stratégie d’appareil, puis **sélectionnez Modifier la stratégie.**
 
 3. Dans la page  **Déploiement,**   sélectionnez **Supprimer.**
 
@@ -48,11 +48,11 @@ Ces options suppriment l’application de la mobilité et de la sécurité de ba
 
 ## <a name="remove-basic-mobility-and-security-device-policies"></a>Supprimer des stratégies d’appareil de mobilité et de sécurité de base
 
-1.  Dans votre type de navigateur :  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) . 
+1. Dans votre type de navigateur :  [https://protection.office.com/devicev2](https://protection.office.com/devicev2) .
 
-2.  Sélectionnez une stratégie d’appareil, puis  **sélectionnez Supprimer la stratégie.**
-    
-3.  Dans la boîte de dialogue Avertissement, sélectionnez **Oui.**
+2. Sélectionnez une stratégie d’appareil, puis  **sélectionnez Supprimer la stratégie.**
 
->[!NOTE]
->Pour plus d’informations sur la procédure de déblocage des appareils si les appareils de votre organisation sont toujours dans un état [bloqué,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)consultez le billet de blog sur la suppression du contrôle d’accès Gestion des périphériques mobiles pour Office 365 .
+3. Dans la boîte de dialogue Avertissement, sélectionnez **Oui.**
+
+> [!NOTE]
+> Pour plus d’informations sur la procédure de déblocage des appareils si les appareils de votre organisation sont toujours dans un état [bloqué,](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)consultez le billet de blog sur la suppression du contrôle d’accès Gestion des périphériques mobiles pour Office 365 .

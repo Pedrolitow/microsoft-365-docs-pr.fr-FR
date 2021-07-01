@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Affichez la liste complète des certificats racine et des autorités de certification dans Microsoft 365.
-ms.openlocfilehash: c5b00a3a663c2ae4862cfa3d11f92015c0331e59
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bb48bf82f3f00223d3a913280e34fe4f0686426
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907718"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226754"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 chaînes de chiffrement
 
@@ -30,8 +30,8 @@ Microsoft 365 utilise un certain nombre de fournisseurs de certificats différen
 
 Last updated: **16/10/2020**
 
->[!NOTE]
->Pour plus d’informations sur les certificats qui s’appliquent aux clients **DOD** Cloud de la communauté du secteur public high, voir Microsoft 365 chaînes de chiffrement [- DOD](encryption-office-365-certificate-chains-itar.md)et Cloud de la communauté du secteur public High .
+> [!NOTE]
+> Pour plus d’informations sur les certificats qui s’appliquent aux clients **DOD** Cloud de la communauté du secteur public high, voir Microsoft 365 chaînes de chiffrement [- DOD](encryption-office-365-certificate-chains-itar.md)et Cloud de la communauté du secteur public High .
 
 | **Type de certificat** | **Téléchargement P7b** | **Points de terminaison de la CRL** | **Points de terminaison OCSP** | **Points de terminaison AIA** |
 | --- | --- | --- | --- | --- |
@@ -56,9 +56,9 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Thumbprint (SHA-256)** | 16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB |
 | **Broche (SHA-256)** | Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o= |
 
-### <a name="cnnic-root"></a>**RACINES TORSIQUE**
+### <a name="cnnic-root"></a>**RACINE TORSIQUE**
 
-| **Subject** | CN=RACINE DE LA RECHERCHE<br>O=MAGASINSIC<br>C=CN |
+| **Subject** | CN=RACINE ERIC<br>O=MAGASINSIC<br>C=CN |
 | --- | --- |
 | **Numéro de série** | 49:33:00:01 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -73,7 +73,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="digicert-global-root-ca"></a>**DigiCert Global Root CA**
 
-| **Subject** | CN=CA racine globale DigiCert<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Subject** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Numéro de série** | 08:3B:E0:56:90:42:46:B1:A1:75:6A:C9:59:91:C7:4A |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -162,7 +162,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Autorité de certification racine de la resserrement - G2**
 
-| **Subject** | CN=Autorité de certification racine de l’attestation d’autorité de certification - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
+| **Subject** | CN=Autorité de certification racine de la resserrement - G2<br>OU= &quot; (c) 2009 Entrust, Inc. : pour une utilisation autorisée uniquement&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Numéro de série** | 4A:53:8C:28 |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
@@ -737,7 +737,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 | **Algorithme de signature** | sha256RSA |
 | **Validité pas avant** | 20 mai 12:53:03 UTC |
 | **Validity Not After** | 20 mai 12:53:03 2024 UTC |
-| **Identificateur de clé de l’objet** | 08:fe:25:9f:74:ea:87:04:c2:bc:8e:a8:38:5f:33:c6:d1:6c:65 |
+| **Identificateur de clé de l’objet** | 08:fe:25:9f:74:ea:87:04:c2:bc:bb:8e:a8:38:5f:33:c6:d1:6c:65 |
 | **Identificateur de clé d’autorité** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Thumbprint (SHA-1)** | AD898AC73DF333EB60AC1F5FC6C4B2219DDB79B7 |
 | **Thumbprint (SHA-256)** | F0EE5914ED94C7252D058B4E39808AEE6FA8F62CF0974FB7D6D2A9DF16E3A87F |
@@ -840,7 +840,7 @@ Développez les sections racine et intermédiaire ci-dessous pour voir des déta
 
 | **Subject** | CN=Verizon Akamai SureServer CA G14-SHA2<br>OU=Cybertrust<br>O=Verizon Enterprise Solutions<br>L=Amsterdam<br>C=NL |
 | --- | --- |
-| **Issuer** | CN=Racine CyberTrust de CyberTrust<br>OU=CyberTrust<br>O=Cast<br>C=IE |
+| **Issuer** | CN=CyberTrust Root<br>OU=CyberTrust<br>O=Cast<br>C=IE |
 | **Numéro de série** | 07:27:A4:6B |
 | **Longueur de clé publique** | RSA 2048 bits (e 65537) |
 | **Algorithme de signature** | sha256RSA |

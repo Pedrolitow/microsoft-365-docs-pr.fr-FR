@@ -1,5 +1,5 @@
 ---
-title: Tables de données dans le schéma Microsoft 365 de recherche avancée Defender
+title: Tables de données dans le schéma Microsoft 365 Defender de recherche avancée
 description: Découvrez les tableaux du schéma de repérage avancé pour comprendre les données sur lesquelles vous pouvez exécuter des requêtes de repérage de menace
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 50a221a65c8264d816de958ec74fa99e9e6db762
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470579"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53225990"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Comprendre le schéma de repérage avancé
 
@@ -48,9 +48,9 @@ Lors de la construction de requêtes, utilisez la référence de schéma intégr
 - **Exemple de requête**: exemples de requêtes qui présentent la façon dont la table peut être utilisée.
 
 ### <a name="access-the-schema-reference"></a>Accéder à la référence de schéma
-Pour accéder rapidement à la  référence de schéma, sélectionnez l’action de référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.   
+Pour accéder rapidement à la  référence de schéma, sélectionnez l’action de référence Afficher en regard du nom de la table dans la représentation de schéma. Vous pouvez également sélectionner une **référence de schéma** pour rechercher une table.
 
-![Image montrant comment accéder à la référence de schéma dans le portail ](../../media/mtp-ah/ah-reference.png) 
+![Image montrant comment accéder à la référence de schéma dans le portail](../../media/mtp-ah/ah-reference.png)
 
 ## <a name="learn-the-schema-tables"></a>Découvrir les tableaux de schéma
 La référence suivante répertorie les tableaux du schéma. Chaque nom de tableau renvoie à une page décrivant les noms des colonnes de ce tableau. Les noms de table et de colonne sont également répertoriés dans le centre de sécurité dans le cadre de la représentation de schéma sur l’écran de recherche avancée.

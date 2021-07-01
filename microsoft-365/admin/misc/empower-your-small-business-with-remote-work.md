@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Trouvez les derniers conseils, conseils, ressources et conseils sur le travail à distance pour les entreprises utilisant Microsoft 365.
-ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: fb261fbb5b52e81861fde16f6effc12b0a232e80
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023736"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53227918"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Permettre à votre petite entreprise de travailler à distance 
 
 À mesure que les entreprises s’adaptent au besoin accru de faire travailler des personnes à distance et de se connecter virtuellement à leurs clients, ce site est mis à jour avec les dernières informations, conseils, ressources et conseils sur le travail à distance pour les entreprises utilisant Microsoft 365.
 
->[!TIP]
->Vous n’avez pas Microsoft_Teams ? Obtenez 6 mois de Microsoft Teams dans Office gratuitement (lorsque vous vous inscrivez pour 1 an). Obtenez les technologies décrites dans cet article dans le cadre de l’offre. Pour plus d’informations, [voir Try 1 month free](https://aka.ms/SMBTeamsOffer).
+> [!TIP]
+> Vous n’avez pas Microsoft_Teams ? Obtenez 6 mois de Microsoft Teams dans Office gratuitement (lorsque vous vous inscrivez pour 1 an). Obtenez les technologies décrites dans cet article dans le cadre de l’offre. Pour plus d’informations, [voir Try 1 month free](https://aka.ms/SMBTeamsOffer).
 
 ## <a name="remote-work-for-your-small-business-video"></a>Travail à distance pour votre petite entreprise (vidéo)
 
@@ -43,7 +43,7 @@ Vous avez déjà un abonnement, mais vous devez vous y installer ? Consultez [Mi
 
 ## <a name="connect-with-employees-and-customers"></a>Connecter avec les employés et les clients
 
-Vous pouvez toujours vous connecter avec des employés, des clients, des clients et des partenaires, même si vous ne pouvez pas vous rencontrer en face à face. Utilisez Microsoft Teams pour continuer à faire des affaires et à vous connecter avec vos clients. 
+Vous pouvez toujours vous connecter avec des employés, des clients, des clients et des partenaires, même si vous ne pouvez pas vous rencontrer en face à face. Utilisez Microsoft Teams pour continuer à faire des affaires et à vous connecter avec vos clients.
 
 ### <a name="meet-up-in-teams"></a>Se réunir dans Teams
 
@@ -75,19 +75,19 @@ Pour plus d’informations, voir [Activer l’authentification multifacteur.](..
 
 ### <a name="secure-your-devices"></a>Sécuriser vos appareils
 
-Gérez à distance les PC et les téléphones et assurez-vous qu’ils sont protégés et à jour. Nécessite une Microsoft 365 Business.
+Gérez à distance les PC et les téléphones et assurez-vous qu’ils sont protégés et à jour. Nécessite Microsoft 365 Business.
 
 Pour plus d’informations, voir [Gérer les appareils.](../../business-video/secure-win-10-pro-devices.md)
 
 ### <a name="more-for-admins-and-partners"></a>En savoir plus pour les administrateurs et les partenaires
 
-Le hub de documentation technique pour Microsoft 365 Business est mis à jour avec de nouvelles instructions de travail à distance sécurisé.
+Le concentrateur de documentation technique Microsoft 365 Business est mis à jour avec de nouvelles instructions de travail à distance sécurisé.
 
-Pour plus d’informations, [voir Microsoft 365 Business ressources.](https://docs.microsoft.com/microsoft-365/business)
+Pour plus d’informations, [voir Microsoft 365 Ressources métiers.](/microsoft-365/business)
 
-## <a name="need-to-ask-a-question"></a>Vous avez besoin de poser une question ? 
+## <a name="need-to-ask-a-question"></a>Vous avez besoin de poser une question ?
 
 Demandez dans le [forum Teams ou](https://answers.microsoft.com/msteams/forum) le forum Office [admins](https://answers.microsoft.com).
 
 > [!NOTE]
-> La plupart des tâches de cet article et de cette vidéo peuvent être accomplies avec un abonnement à Microsoft 365 Business Basic (anciennement Office 365 Business Essentials), mais certaines nécessitent un abonnement Premium. 
+> La plupart des tâches de cet article et de cette vidéo peuvent être accomplies avec un abonnement à Microsoft 365 Business Basic (anciennement Office 365 Business Essentials), mais certaines nécessitent un abonnement Premium.

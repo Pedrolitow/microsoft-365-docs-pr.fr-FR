@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 44a17471f1e2ba92d0099f62b95dec8d0e56a224
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 3ff3c652d5446167ac3c2bf78a2405c21929ea11
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957491"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226466"
 ---
 # <a name="insider-risk-management-content-explorer"></a>Explorateur de contenu de gestion des risques internes
 
-L’Explorateur  de contenu de gestion des risques internes permet aux utilisateurs affectés au rôle *Enquêteurs* de gestion des risques internes d’examiner le contexte et les détails du contenu associé à l’activité dans les alertes. Les données de cas dans l’Explorateur de contenu sont actualisées quotidiennement pour inclure de nouvelles activités. Pour toutes les alertes confirmées dans un cas, les copies des données et des fichiers de messages sont archivées sous forme de capture instantanée dans le temps des éléments, tout en conservant les fichiers et messages d’origine dans les sources de stockage. Si nécessaire, les fichiers de données de cas peuvent être exportés en tant que fichier de document portable (PDF) ou au format de fichier d’origine.
+L’Explorateur  de contenu de gestion des risques internes permet aux utilisateurs affectés du rôle *Enquêteurs* de gestion des risques internes d’examiner le contexte et les détails du contenu associé à l’activité dans les alertes. Les données de cas dans l’Explorateur de contenu sont actualisées quotidiennement pour inclure de nouvelles activités. Pour toutes les alertes confirmées dans un cas, les copies des données et des fichiers de messages sont archivées sous forme de capture instantanée dans le temps des éléments, tout en conservant les fichiers et messages d’origine dans les sources de stockage. Si nécessaire, les fichiers de données de cas peuvent être exportés en tant que fichier de document portable (PDF) ou au format de fichier d’origine.
 
 La copie des données et des messages est transparente pour l’utilisateur associé à l’alerte et pour le propriétaire du contenu. Dans les nouveaux cas, le contenu à remplir dans l’Explorateur de contenu prend généralement environ une heure. Pour les cas avec de grandes quantités de contenu, la création d’une capture instantanée peut prendre plus de temps. Si le contenu est toujours en cours de chargement dans l’Explorateur de contenu, vous verrez un indicateur de progression qui affiche le pourcentage d’achèvement.
 
@@ -29,14 +29,14 @@ Dans certains cas, les données associées à un cas peuvent ne pas être dispon
 
 Si le contenu inclut des autorisations de gestion des droits de l’information, ces autorisations sont conservées pour le contenu copié et les *utilisateurs affectés* au rôle Enquêteurs de gestion des risques internes auront besoin de ces autorisations et droits s’ils ont besoin d’ouvrir et d’afficher les fichiers. Un ID de fichier unique est automatiquement attribué à chaque fichier et message dans le cas de gestion des risques internes à des fins de gestion. Les documents associés aux activités des indicateurs de périphérique ne sont pas inclus dans l’Explorateur de contenu.
 
->[!Note]
->L’Explorateur de contenu inclut les activités liées Microsoft Office fichiers. Les activités au niveau du site, par exemple lorsqu’un site SharePoint est supprimé ou si les autorisations de site sont modifiées, ne sont pas incluses dans l’Explorateur de contenu.
+> [!NOTE]
+> L’Explorateur de contenu inclut les activités liées Microsoft Office fichiers. Les activités au niveau du site, par exemple lorsqu’un site SharePoint est supprimé ou si les autorisations de site sont modifiées, ne sont pas incluses dans l’Explorateur de contenu.
 
 ## <a name="column-options"></a>Options de colonne
 
-Pour faciliter l’examen des données et des messages capturés et le contexte du cas par les analystes et enquêteurs de risque, plusieurs outils de filtrage et de tri sont inclus dans l’Explorateur de contenu. Pour le tri de base, les colonnes **date** et classe **de** fichier la prise en charge du tri à l’aide des titres des colonnes dans le volet de file d’attente de contenu. D’autres colonnes de file d’attente peuvent être ajoutés à l’affichage pour fournir différents tableaux croisés dynamiques sur les fichiers et les messages.
+Pour faciliter l’examen des données et des messages capturés par les analystes et enquêteurs de risque et le contexte du cas, plusieurs outils de filtrage et de tri sont inclus dans l’Explorateur de contenu. Pour le tri de base, les colonnes **date** et classe **de** fichier la prise en charge du tri à l’aide des titres des colonnes dans le volet de file d’attente de contenu. D’autres colonnes de file d’attente peuvent être ajoutés à l’affichage pour fournir différents tableaux croisés dynamiques sur les fichiers et les messages.
 
-Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente de contenu, utilisez le contrôle Modifier les colonnes et sélectionnez l’une des options de colonne suivantes. Ces colonnes sont m mapées aux conditions communes, de messagerie et de propriété de document pris en charge dans l’Explorateur de contenu et répertoriées plus loin dans cet article.
+Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente de contenu, utilisez le contrôle Modifier les colonnes et sélectionnez l’une des options de colonne suivantes. Ces colonnes s’appuient sur les conditions communes, de messagerie et de propriété de document pris en charge dans l’Explorateur de contenu et répertoriées plus loin dans cet article.
 
 | **Option de colonne** | **Description** |
 |:------------------|:----------------|
@@ -70,7 +70,7 @@ Pour ajouter ou supprimer des en-tête  de colonne pour la file d’attente de c
 | **Types d’informations sensibles** | Types d’informations sensibles identifiés dans le contenu. |
 | **Étiquettes de confidentialité** | Étiquettes de niveau de sensibilité appliquées au contenu. |
 | **Sent** | Date à laquelle un message électronique a été envoyé par l’expéditeur. Ce champ est la même propriété que la propriété de messagerie envoyé. |
-| **Taille** | Pour la messagerie électronique et les documents, taille de l’élément (en octets). |
+| **Size** | Pour la messagerie électronique et les documents, taille de l’élément (en octets). |
 | **Subject** | Texte de la ligne d’objet d’un message électronique. |
 | **Objet/Titre** | Pour la messagerie électronique, texte de la ligne d’objet d’un message. Pour les documents, titre du document. Comme indiqué précédemment, la propriété Title est une métadonnées spécifiée dans Microsoft Office documents. Vous pouvez taper le nom de plusieurs sujet/titre, séparés par des virgules. Deux ou plusieurs valeurs sont connectées logiquement par l’opérateur OR. |
 | **Liste des thèmes** | Liste des thèmes telle que calculée pour l’analyse. |

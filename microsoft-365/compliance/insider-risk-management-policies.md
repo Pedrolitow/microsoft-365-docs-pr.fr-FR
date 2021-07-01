@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
-ms.translationtype: HT
+ms.openlocfilehash: f64fcf4908f119e261b07bbc4feaed2151e30187
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445684"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226430"
 ---
 # <a name="insider-risk-management-policies"></a>Stratégies de gestion des risques internes
 
@@ -52,8 +52,8 @@ Les modèles de gestion des risques internes sont des conditions de stratégie p
 
 Lorsque des utilisateurs quittent votre organisation, il existe des indicateurs de risque spécifiques généralement associés au vol de données par des employés sortants. Cet modèle de stratégie utilise des indicateurs d’exfiltration pour l’attribution du scores de risque et se concentre sur la détection et les alertes dans cette zone à risque. Le vol de données par des employés quittant votre organisation peut inclure le téléchargement de fichiers à partir de SharePoint Online, l’impression de fichiers et la copie de données vers des services de stockage et de messagerie cloud personnels à l’approche de leur démission et de leur date de départ. En utilisant le connecteur Microsoft 365 RH ou l’option pour surveiller automatiquement la suppression de compte utilisateur dans Azure Active Directory pour votre organisation, ce modèle commence l’attribution de scores pour les indicateurs de risque liés à ces activités et la façon dont elles se mettent en corrélation avec le statut professionnel de l’utilisateur.
 
->[!IMPORTANT]
->Lors de l’utilisation de ce modèle, vous pouvez configurer un connecteur Microsoft 365 RH pour importer périodiquement les informations sur la date de démission et la date de licenciement des utilisateurs dans votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation. Si vous décidez de ne pas utiliser le connecteur RH, vous devez sélectionner le compte utilisateur supprimé à partir de l’option Azure AD lors de la configuration des événements déclencheurs dans l’Assistant stratégie.
+> [!IMPORTANT]
+> Lors de l’utilisation de ce modèle, vous pouvez configurer un connecteur Microsoft 365 RH pour importer périodiquement les informations sur la date de démission et la date de licenciement des utilisateurs dans votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation. Si vous décidez de ne pas utiliser le connecteur RH, vous devez sélectionner le compte utilisateur supprimé à partir de l’option Azure AD lors de la configuration des événements déclencheurs dans l’Assistant stratégie.
 
 ### <a name="general-data-leaks"></a>Fuites de données générales
 
@@ -74,8 +74,8 @@ Lors de la création ou la modification de stratégies DLP pour les utiliser ave
 
     ![Paramètre d’alerte d’une stratégie DLP](../media/insider-risk-DLP-policy-high-severity.png)
 
-     >[!NOTE]
-     >Lorsque vous créez une stratégie DLP à l’aide de modèles intégrés, vous devez sélectionner l’option **Créer ou personnaliser des règles DLP avancées** pour configurer le paramètre **Rapports d’incident** pour le niveau de gravité *Élevé*.
+     > [!NOTE]
+     > Lorsque vous créez une stratégie DLP à l’aide de modèles intégrés, vous devez sélectionner l’option **Créer ou personnaliser des règles DLP avancées** pour configurer le paramètre **Rapports d’incident** pour le niveau de gravité *Élevé*.
 
 Les stratégies de gestion des risques internes créées à partir du modèle **Fuites de données** ne peuvent avoir qu’une seule stratégie DLP assignée. Envisagez de créer une stratégie DLP dédiée qui associe les différentes activités que vous souhaitez détecter et qui agissent en tant qu’événements déclencheurs pour les stratégies de risque interne qui utilisent le modèle **Fuites de données**.
 
@@ -164,8 +164,8 @@ Ces stratégies de gestion des risques internes peuvent utiliser des indicateurs
 - **Dissimulation** : ces signaux de catégorie se concentrent sur le masquage des activités à risque par des utilisateurs de stratégie dans l’étendue. Renommer des fichiers sur un appareil est un exemple d’activité dans cette catégorie.
 - **Nettoyage** : ces signaux de catégorie se concentrent sur la suppression des activités par des utilisateurs de stratégie dans l’étendue. La suppression des fichiers d’un appareil est un exemple d’activité dans cette catégorie.
 
->[!NOTE]
->La détection de séquence utilise des indicateurs activés dans les paramètres généraux pour la gestion des risques internes et les indicateurs sélectionnés dans une stratégie. Si les indicateurs appropriés ne sont pas sélectionnés, la détection de séquence ne fonctionne pas.
+> [!NOTE]
+> La détection de séquence utilise des indicateurs activés dans les paramètres généraux pour la gestion des risques internes et les indicateurs sélectionnés dans une stratégie. Si les indicateurs appropriés ne sont pas sélectionnés, la détection de séquence ne fonctionne pas.
 
 Vous pouvez personnaliser les paramètres de seuil individuel pour chaque type de détection de séquence lorsqu’ils sont configurés dans la stratégie. Ces paramètres de seuil ajustent les alertes en fonction du volume de fichiers associés à la séquence.
 
@@ -182,8 +182,8 @@ La détection d’exfiltration cumulée est activée par défaut lors de l’uti
 - Fuites de données par des utilisateurs prioritaires
 - Fuites de données provoquées par un utilisateur mécontent
 
->[!NOTE]
->La détection d’exfiltration cumulée utilise des indicateurs d’exfiltration activés dans les paramètres généraux pour la gestion des risques internes et les indicateurs d’exfiltration sélectionnés dans une stratégie. À ce titre, la détection d’exfiltration cumulée est uniquement évaluée pour les indicateurs d’exfiltration nécessaires sélectionnés.
+> [!NOTE]
+> La détection d’exfiltration cumulée utilise des indicateurs d’exfiltration activés dans les paramètres généraux pour la gestion des risques internes et les indicateurs d’exfiltration sélectionnés dans une stratégie. À ce titre, la détection d’exfiltration cumulée est uniquement évaluée pour les indicateurs d’exfiltration nécessaires sélectionnés.
 
 Quand une détection d’exfiltration cumulée est activée pour des stratégies de vol de données ou de fuite de données, les informations des activités d’exfiltration cumulée s’affichent dans l’onglet **Activité utilisateur** dans le cas de gestion des risques internes.
 
@@ -260,8 +260,8 @@ Achevez les étapes suivantes pour créer une stratégie :
 2. Sélectionnez **Créer une stratégie** pour ouvrir l’Assistant stratégie.
 3. Sur la page **Modèle de stratégie**, choisissez une catégorie de stratégie, puis sélectionnez le modèle pour la nouvelle stratégie. Ces modèles sont constitués d'indicateurs et de conditions définissant les activités à risque que vous voulez détecter et examiner. Examinez les conditions préalables du modèle, les événements déclencheurs et les activités détectées pour confirmer que ce modèle de stratégie correspond à vos besoins.
 
-    >[!IMPORTANT]
-    >Certains modèles de stratégie ont des conditions préalables devant être configurées pour que la stratégie génère des alertes pertinentes. Si vous n’avez pas configuré les conditions préalables applicables de la stratégie, consultez **Étape 4** ci-dessus.
+    > [!IMPORTANT]
+    > Certains modèles de stratégie ont des conditions préalables devant être configurées pour que la stratégie génère des alertes pertinentes. Si vous n’avez pas configuré les conditions préalables applicables de la stratégie, consultez **Étape 4** ci-dessus.
 
 4. Sélectionnez **Suivant** pour continuer.
 5. Dans la page **Nom et description**, complétez les champs suivants :
@@ -287,8 +287,8 @@ Achevez les étapes suivantes pour créer une stratégie :
 12. Sélectionnez **Suivant** pour continuer.
 13. Sur la page **Indicateurs et événements déclencheurs**, les [indicateurs](insider-risk-management-settings.md#indicators) définis s’affichent comme disponibles sur la page **Paramètres de risque interne** > **Indicateurs**. Si vous avez sélectionné le modèle *Fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP à partir de la liste déroulante **Stratégie DLP** pour activer les indicateurs déclencheurs pour la stratégie ou sélectionner l’événement déclencheur intégré.
 
-    >[!IMPORTANT]
-    >Si les indicateurs sur cette page ne peuvent pas être sélectionnés, vous sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies. Vous pouvez utiliser le bouton **Activer les indicateurs** dans l’Assistant ou sélectionner des indicateurs sur la page **Gestion des risques internes** > **Paramètres** > **Indicateurs de stratégie**.
+    > [!IMPORTANT]
+    > Si les indicateurs sur cette page ne peuvent pas être sélectionnés, vous sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies. Vous pouvez utiliser le bouton **Activer les indicateurs** dans l’Assistant ou sélectionner des indicateurs sur la page **Gestion des risques internes** > **Paramètres** > **Indicateurs de stratégie**.
 
     Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie. Si vous préférez ne pas utiliser les paramètres de seuil de stratégie par défaut pour ces indicateurs, désactivez **Utiliser les seuils par défaut recommandés par Microsoft**, puis entrez les valeurs de seuil pour chaque indicateur sélectionné.
 
@@ -332,8 +332,8 @@ Finalisez les étapes suivantes pour gérer une stratégie existante :
 12. Sélectionnez **Suivant** pour continuer.
 13. Sur la page **Indicateurs et événements déclencheurs**, les [indicateurs](insider-risk-management-settings.md#indicators) définis s’affichent comme disponibles sur la page **Paramètres de risque interne** > **Indicateurs**. Si vous avez sélectionné le modèle *Fuites de données* au début de l’Assistant, vous devez sélectionner une stratégie DLP à partir de la liste déroulante **Stratégie DLP** pour activer les indicateurs déclencheurs pour la stratégie ou sélectionner l’événement déclencheur intégré.
 
-    >[!IMPORTANT]
-    >Si les indicateurs sur cette page ne peuvent pas être sélectionnés, vous sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies. Vous pouvez utiliser le bouton **Activer les indicateurs** dans l’Assistant ou sélectionner des indicateurs sur la page **Gestion des risques internes** > **Paramètres** > **Indicateurs de stratégie**.
+    > [!IMPORTANT]
+    > Si les indicateurs sur cette page ne peuvent pas être sélectionnés, vous sélectionner les indicateurs que vous souhaitez activer pour toutes les stratégies. Vous pouvez utiliser le bouton **Activer les indicateurs** dans l’Assistant ou sélectionner des indicateurs sur la page **Gestion des risques internes** > **Paramètres** > **Indicateurs de stratégie**.
 
     Sélectionnez les indicateurs que vous souhaitez appliquer à la stratégie. Si vous préférez ne pas utiliser les paramètres de seuil de stratégie par défaut pour ces indicateurs, désactivez **Utiliser les seuils par défaut recommandés par Microsoft**, puis entrez les valeurs de seuil pour chaque indicateur sélectionné.
 
@@ -366,8 +366,8 @@ Certains scénarios dans lesquels vous souhaitez commencer immédiatement à att
 - Lorsqu’il existe un incident qui peut vous obliger à attribuer immédiatement des scores de risque à l’activité des utilisateurs concernés pour une ou plusieurs de vos stratégies
 - Lorsque vous n’avez pas encore configuré votre connecteur RH, mais vous souhaitez commencer à attribuer des scores aux activités des utilisateurs pour les événements RH en chargeant un fichier. csv pour les utilisateurs
 
->[!NOTE]
->L’affichage des utilisateurs ajoutés manuellement dans le tableau de bord **Utilisateurs** peut prendre plusieurs heures. L’affichage des activités des 90 jours précédents de ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher des activités pour les utilisateurs manuellement ajoutés, naviguez vers l’onglet **Utilisateurs**, puis sélectionnez l’utilisateur sur le tableau de bord **Utilisateurs**, enfin ouvrez l’onglet **Activité utilisateur** sur le volet d’informations.
+> [!NOTE]
+> L’affichage des utilisateurs ajoutés manuellement dans le tableau de bord **Utilisateurs** peut prendre plusieurs heures. L’affichage des activités des 90 jours précédents de ces utilisateurs peut prendre jusqu’à 24 heures. Pour afficher des activités pour les utilisateurs manuellement ajoutés, naviguez vers l’onglet **Utilisateurs**, puis sélectionnez l’utilisateur sur le tableau de bord **Utilisateurs**, enfin ouvrez l’onglet **Activité utilisateur** sur le volet d’informations.
 
 Pour commencer manuellement l’activité d’attribution de scores pour les utilisateur dans au moins une stratégie de gestion des risques internes, finalisez les étapes suivantes :
 
@@ -393,8 +393,8 @@ Pour arrêter l’attribution de score aux utilisateurs dans une stratégie, voi
 
 ## <a name="delete-a-policy"></a>Suppression d’une stratégie
 
->[!NOTE]
->La suppression d’une stratégie ne supprime pas les alertes actives ou archivées générées à partir de la stratégie.
+> [!NOTE]
+> La suppression d’une stratégie ne supprime pas les alertes actives ou archivées générées à partir de la stratégie.
 
 Pour supprimer une stratégie de gestion des risques internes existante, finalisez les étapes suivantes :
 
