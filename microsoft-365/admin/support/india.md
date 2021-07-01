@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Découvrez comment contacter le support technique pour votre pays ou région.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f9f5665345733abafc6e4f2e777958feb4e11b6
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8240b9f4c4402e0e372a5e242d8b200f26f28717
+ms.sourcegitcommit: 5d3086da935d4ddc8caf79ff19e3afda812fd061
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298634"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53243970"
 ---
 # <a name="contact-support-for-india"></a>Contacter le support pour l’Inde
 
@@ -33,10 +33,6 @@ Numéro gratuit local
 
 Anglais : Mon-Fri 9h00 à 18h00
 
-### <a name="technical-support"></a>Support technique :
+### <a name="technical-support"></a>Support technique :
 
-Anglais : 24h/24, 7j/7
-
-Autre Téléphone numéro : 1800 200 2052
-
-Numéro gratuit local
+Anglais : 24h/24, 7j/7
