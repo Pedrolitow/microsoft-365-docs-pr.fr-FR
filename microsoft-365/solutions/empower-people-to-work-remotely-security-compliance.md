@@ -17,22 +17,22 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Utilisez les services de sécurité et de conformité Microsoft 365 pour protéger vos applications, données et appareils destinés aux travailleurs hybrides.
-ms.openlocfilehash: fc5a83bfc6c8ec2dcb801e6063514c0a90c83de8
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 3de458f99ce1c83132d193cae523a49353b6956c
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788927"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53229394"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-hybrid-workers"></a>Étape 3 : déployer la sécurité et la conformité pour les travailleurs hybrides
 
-Pour les travailleurs hybrides, dont certains ne sont jamais ou que très rarement au bureau, la sécurité et la conformité constituent un élément important de la solution globale. Toutes leurs communications se produisent sur Internet au lieu d’être limitées à un intranet d’organisation. 
+Pour les travailleurs hybrides, dont certains ne sont jamais ou que très rarement au bureau, la sécurité et la conformité constituent un élément important de la solution globale. Toutes leurs communications se produisent sur Internet au lieu d’être limitées à un intranet d’organisation.
 
 Vos employés et vous-même pouvez accomplir différentes tâches pour rester productifs tout en réduisant les risques en matière de cyber-sécurité et en respectant les réglementations internes ainsi que les réglementations relatives aux données.
 
 Le travail à distance nécessite les éléments suivants en matière de sécurité et de conformité :
 
-- Accès contrôlé aux applications de productivité utilisées par les travailleurs hybrides, par exemple Microsoft Teams 
+- Accès contrôlé aux applications de productivité utilisées par les travailleurs hybrides, par exemple Microsoft Teams
 - Accès contrôlé et protection des données que les travailleurs hybrides créent et utilisent, telles que les conversations ou les fichiers partagés
 - Protection des appareils Windows 10 contre les programmes malveillants et les autres types de cyberattaques
 - Protection des courriers électroniques, des fichiers et des sites avec un étiquetage cohérent pour les niveaux de confidentialité et de protection
@@ -49,14 +49,14 @@ Protégez vos applications et données grâce aux fonctionnalités de sécurité
 
 | Fonctionnalité | Pourquoi en ai-je besoin ? | Licence |
 |:-------|:-----|:-------|
-| Microsoft Defender pour Office 365 | Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. <br><br> Microsoft Defender pour Office 365 collecte et analyse les signaux de vos applications pour la détection, l’investigation et la correction des risques de sécurité, et protège votre organisation contre les menaces malveillantes posées par les courriers électroniques, les liens (URL) et les outils de collaboration. Il fournit également des outils automatisés d’évaluation et de configuration de la configuration des locataires pour des postures de sécurité standard et strictes. | Microsoft 365 E3 ou E5 | 
+| Microsoft Defender pour Office 365 | Protégez vos applications et données Microsoft 365 (par exemple, messages électroniques, documents Office et outils de collaboration) contre les attaques. <br><br> Microsoft Defender pour Office 365 collecte et analyse les signaux de vos applications pour la détection, l’investigation et la correction des risques de sécurité, et protège votre organisation contre les menaces malveillantes posées par les courriers électroniques, les liens (URL) et les outils de collaboration. Il fournit également des outils automatisés d’évaluation et de configuration de la configuration des locataires pour des postures de sécurité standard et strictes. | Microsoft 365 E3 ou E5 |
 | Protection contre les programmes malveillants | ‎L’antivirus Microsoft Defender et Device Guard fournissent une protection contre les programmes malveillants basée sur l’appareil. <br><br> SharePoint Online analyse automatiquement les chargements de fichiers à la recherche de programmes malveillants connus. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) sécurise les boîtes aux lettres cloud. | Microsoft 365 E3 ou E5 |
 | Microsoft Defender pour point de terminaison | Protégez les appareils de votre organisation contre les cyber-menaces et les violations de données. Détectez, examinez et répondez aux menaces avancées. | Microsoft 365 E5 |
 | Cloud App Security | Protégez vos services cloud (Microsoft 365 et autres applications SaaS) contre les attaques. | Microsoft 365 E5 ou licences de sécurité d’application cloud individuelles |
 | Azure AD Identity Protection  | Automatisez la détection et la correction des risques basés sur l’identité. <br><br>Créez des stratégies d’accès conditionnel basées sur le risque qui requièrent l’authentification multifacteur (MFA) pour les connexions à risque. | Microsoft 365 E5 ou E3 avec les licences Azure AD Premium P2 |
 ||||
 
-Vous devez d’abord découvrir et utiliser [Niveau de sécurité Microsoft ](/microsoft-365/security/defender/microsoft-secure-score).
+La première étape consiste à apprendre à connaître et à utiliser [Niveau de sécurité Microsoft](/microsoft-365/security/defender/microsoft-secure-score).
 
 Si vous souhaitez en savoir plus, consultez la rubrique [12 premières tâches pour les équipes de sécurité qui prennent en charge le télétravail](../security/top-security-tasks-for-remote-work.md).
 
@@ -69,7 +69,7 @@ Respectez les stratégies internes ou les exigences réglementaires avec ces fon
 | Fonctionnalité | Pourquoi en ai-je besoin ? | Licence |
 |:-------|:-----|:-------|
 | Étiquettes de confidentialité | Classifiez et protégez les données de votre organisation sans entraver la productivité des utilisateurs ni leur capacité à collaborer en plaçant des étiquettes avec différents niveaux de protection sur les messages électroniques, les fichiers et les sites. | Microsoft 365 E3 ou E5 |
-| Protection contre la perte de données (DLP) | Détectez, signalez et bloquez le partage risqué, accidentel ou inapproprié, tel que le partage de données contenant des informations personnelles, à la fois en interne et en externe. | Microsoft 365 E3 ou E5 | 
+| Protection contre la perte de données (DLP) | Détectez, signalez et bloquez le partage risqué, accidentel ou inapproprié, tel que le partage de données contenant des informations personnelles, à la fois en interne et en externe. | Microsoft 365 E3 ou E5 |
 | Contrôle d’application d’accès conditionnel | Empêchez le téléchargement de données sensibles sur les appareils personnels des utilisateurs. | Microsoft 365 E3 ou E5 |
 | Étiquettes et stratégies de rétention des données | Mettez en place des contrôles de gouvernance des informations, tels que la durée de conservation des données ainsi que des exigences sur le stockage de données personnelles sur les clients, pour vous conformer aux stratégies de votre organisation ou aux réglementations relatives aux données. | Microsoft 365 E3 ou E5 |
 | Chiffrement des messages Office (OME) | Envoyez et recevez entre des personnes à l’intérieur et à l’extérieur de votre organisation des messages électroniques chiffrés qui contiennent des données réglementées, telles que des données personnelles relatives aux clients. | Microsoft 365 E3 ou E5 |
@@ -87,7 +87,7 @@ Pour vos travailleurs hybrides, vous avez implémenté :
 
 - Sécurité
   - Accès contrôlé aux applications et aux données utilisés par les travailleurs hybrides pour communiquer et collaborer
-  - Protection contre les programmes malveillants pour les données de services cloud, les courriers électroniques et les appareils Windows 10 
+  - Protection contre les programmes malveillants pour les données de services cloud, les courriers électroniques et les appareils Windows 10
 - Conformité
   - Étiquetage cohérent pour les niveaux de confidentialité et de protection
   - Stratégies de prévention des fuites d’informations

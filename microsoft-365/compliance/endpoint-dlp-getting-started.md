@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurez la protection contre la perte de données de point de terminaison Microsoft 365 pour surveiller les activités des fichiers, puis implémenter des actions de protection de ces fichiers aux points de terminaison.
-ms.openlocfilehash: 134c5426e428372670a50c76301a9e9e0c10b343
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 8dc57bfe395ad76e6b8aef336aaadb2cb7e42f81
+ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53061664"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53226670"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Prise en main de la protection contre la perte de données de point de terminaison
 
@@ -44,7 +44,6 @@ Avant de commencer à utiliser point de terminaison DLP, vous devez confirmer vo
 - Microsoft 365 A5 Conformité
 - Microsoft 365 E5, Protection des informations et gouvernance
 - Microsoft 365 A5, Protection des informations et gouvernance
-
 
 ### <a name="permissions"></a>Autorisations
 
@@ -84,25 +83,26 @@ Assurez-vous que les appareils Windows 10 pour lesquels vous envisagez de déplo
 
 1. Vous devez exécuter Windows 10 x64 Build 1809 ou version ultérieure.
 
-2. La version du client anti-programme malveillant est 4.18.2009.7 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application Sécurité Windows, sélectionnez l’icône Paramètres, puis À propos de. Le numéro de version est répertorié sous version du client anti-programme malveillant. Effectuez une mise à jour vers la dernière version du client anti-programme malveillant en installant Windows Update KB4052623. 
+2. La version du client anti-programme malveillant est 4.18.2009.7 ou ultérieure. Vérifiez votre version actuelle à l’aide de l’application Sécurité Windows, sélectionnez l’icône Paramètres, puis À propos de. Le numéro de version est répertorié sous version du client anti-programme malveillant. Effectuez une mise à jour vers la dernière version du client anti-programme malveillant en installant Windows Update KB4052623.
 
    > [!NOTE]
    > Aucune des composants de sécurité Windows ne doit être actif, vous pouvez exécuter la protection contre la perte de données de point de terminaison indépendamment de l’état de Sécurité Windows mais la [protection en temps réel et le moniteur de comportement](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) doivent être activés.
- 
-3. Les mises à jour Windows suivantes sont installées. 
- 
+
+3. Les mises à jour Windows suivantes sont installées.
+
    > [!NOTE]
    > Remarque : ces mises à jour ne sont pas des conditions préalables à l’intégration d’un appareil au DLP de point de terminaison , mais contiennent des correctifs pour les problèmes importants qui doivent donc être installés avant d’utiliser le produit.
 
-    - Pour Windows 10 version 1809 : KB4559003, KB4577069, KB4580390
-    - Pour Windows 10 version 1903 ou 1909 : KB4559004, KB4577062, KB4580386
-    - Pour Windows 10 version 2004 : KB4568831, KB4577063
-    - Pour les appareils exécutant Office 2016 (et non aucune autre version d’Office) : KB4577063 
+   - Pour Windows 10 version 1809 : KB4559003, KB4577069, KB4580390
+   - Pour Windows 10 version 1903 ou 1909 : KB4559004, KB4577062, KB4580386
+   - Pour Windows 10 version 2004 : KB4568831, KB4577063
+   - Pour les appareils exécutant Office 2016 (et non aucune autre version d’Office) : KB4577063
 
 4. Tous les appareils doivent être l’un de ceux-ci :
-- [Jointure Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
-- [Jonction Azure AD Hybride](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- [Inscrit à AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
+
+   - [Jointure Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
+   - [Jonction Azure AD Hybride](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+   - [Inscrit à AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Installez le navigateur Microsoft Chromium Edge sur l’appareil de point de terminaison afin d’appliquer des actions de stratégie pour l’activité de téléchargement vers le Cloud. [Télécharger le nouveau Microsoft Edge sur la base de chrome](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -124,7 +124,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 
 1. Ouvrez le [Centre de conformité Microsoft](https://compliance.microsoft.com).
 
-2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**. 
+2. Ouvrez la page Paramètres du centre de conformité et sélectionnez **Appareils intégrés**.
 
    > [!div class="mx-imgBorder"]
    > ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -140,7 +140,7 @@ Dans ce scénario de déploiement, vous allez intégrer des appareils qui n’on
 
    > [!div class="mx-imgBorder"]
    > ![méthode de déploiement](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-   
+
 6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
 
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
@@ -166,13 +166,12 @@ Dans ce scénario, Microsoft Defender pour point de terminaison est déjà dépl
 
    > [!div class="mx-imgBorder"]
    > ![Gestion des appareils](../media/endpoint-dlp-getting-started-2-device-management.png)
-   
+
 4. Sélectionnez **Intégration** si vous avez besoin d’intégrer d’autres appareils.
 
 5. Choisissez la manière dont vous voulez déployer ces autres appareils à partir de la liste **Méthode de déploiement**, puis **Télécharger le package**.
 
 6. Suivez les procédures appropriées dans [Outils et méthodes d’intégration pour les ordinateurs Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Ce lien vous dirige vers une page d’accueil dans laquelle vous pouvez accéder aux procédures Microsoft Defender pour point de terminaison qui correspondent au package de déploiement que vous avez sélectionné à l’étape 5 :
-
     - Intégrer les ordinateurs Windows 10 utilisant une stratégie de groupe
     - Intégrer les ordinateurs Windows à l’aide du gestionnaire de configuration de point de terminaison Microsoft
     - Intégrer les ordinateurs Windows 10 à l’aide des outils de gestion des appareils mobiles
@@ -190,7 +189,6 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
 
 2. Reportez-vous aux procédures décrites dans [Comment configurer et afficher les alertes pour les stratégies DLP](dlp-configure-view-alerts-policies.md) pour afficher les alertes relatives à vos stratégies DLP de point de terminaison.
 
-
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Affichage de données DLP de point de terminaison dans l’Explorateur d’activités
 
 1. Ouvrez la [Page classification des données](https://compliance.microsoft.com/dataclassification?viewid=overview) pour votre domaine dans le centre de conformité Microsoft 365, puis sélectionnez Explorateur d’activités.
@@ -201,14 +199,15 @@ Une fois l’opération effectuée et le point de terminaison intégré, celui-c
    > ![filtre de l’Explorateur d’activités pour les appareils de point de terminaison](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 Maintenant que vous disposez d’appareils intégrés et que vous pouvez afficher les données d’activité dans l’Explorateur d’activités, vous êtes prêt à passer à l’étape suivante dans laquelle vous créez des stratégies DLP qui protègent vos éléments sensibles.
 
 - [Utilisation des points de terminaison protection contre la perte de données](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [En savoir plus sur les points de terminaison de protection contre la perte de données (Preview)](endpoint-dlp-learn-about.md)
-- [Utilisation des points de terminaison de protection contre la perte de données (aperçu)](endpoint-dlp-using.md)
+- [Découvrir la protection contre la perte de données de point de terminaison](endpoint-dlp-learn-about.md)
+- [Utilisation de la prévention des pertes de données sur les points de terminaison](endpoint-dlp-using.md)
 - [En savoir plus sur la prévention des pertes de données](dlp-learn-about-dlp.md)
 - [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md)
 - [Prise en main de l’explorateur d’activités](data-classification-activity-explorer.md)
