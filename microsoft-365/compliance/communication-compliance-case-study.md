@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd3904b480f757c1cf684e15afaae9c19559e1ea
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b44977252b18c29a5f05a67f4ffbdb7dc85a8188
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227398"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256782"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Étude de cas : Contoso configure rapidement une stratégie de langage choquant pour Microsoft Teams, Exchange et Yammer communications
 
@@ -48,7 +48,7 @@ Les administrateurs informatiques et les spécialistes de la conformité de Cont
 - Les spécialistes de la conformité et d’autres collègues dans d’autres services (ressources humaines, juridiques, etc.) qui doivent examiner et corriger les alertes de conformité des communications.
 - Utilisateurs qui seront dans l’étendue de la stratégie de langage choquant de conformité des communications.
 
-### <a name="licensing"></a>Licences
+### <a name="licensing"></a>Licence
 
 La première étape consiste à vérifier que la gestion des licences Microsoft 365 contoso inclut la prise en charge de la solution de conformité des communications. Pour accéder à la conformité des communications et l’utiliser, les administrateurs informatiques de Contoso doivent vérifier que Contoso dispose de l’une des conditions suivantes :
 
@@ -91,7 +91,7 @@ Contoso décide d’utiliser le groupe de rôles Conformité des communications 
 | **Enquêteur de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui agira en tant qu’enquêteurs de conformité des communications. Les utilisateurs affectés à ce groupe de rôles peuvent afficher les métadonnées et le contenu des messages, passer à des réviseurs supplémentaires, passer à un cas Advanced eDiscovery, envoyer des notifications aux utilisateurs et résoudre l’alerte. |
 | **Visionneuse de conformité des communications** | Utilisez ce groupe pour attribuer des autorisations aux utilisateurs qui gèreront les rapports de communication. Les utilisateurs affectés à ce groupe de rôles peuvent accéder à tous les widgets de rapports sur la page d’accueil de conformité des communications et peuvent afficher tous les rapports de conformité des communications. |
 
-1. Les administrateurs informatiques de Contoso se connectent à la page d’autorisations du Centre de sécurité & conformité **Office 365** [(à https://protection.office.com/permissions)](https://protection.office.com/permissions) l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
+1. Les administrateurs informatiques de Contoso se connectent à la page d’autorisations du Centre de sécurité & conformité **Office 365** [(à https://compliance.microsoft.com/permissions)](https://compliance.microsoft.com/permissions) l’aide des informations d’identification d’un compte d’administrateur général et sélectionnent le lien pour afficher et gérer les rôles dans Microsoft 365.
 2. Dans le **Centre de sécurité & conformité,** ils ont accès aux autorisations et sélectionnent le lien pour afficher et gérer les **rôles** dans Office 365.
 3. Les administrateurs sélectionnent le *groupe de rôles Conformité* des communications, puis **sélectionnent Modifier le groupe de rôles.**
 4. Les administrateurs **sélectionnent Choisir des membres** dans le volet de navigation de gauche, puis **sélectionnent Modifier.**

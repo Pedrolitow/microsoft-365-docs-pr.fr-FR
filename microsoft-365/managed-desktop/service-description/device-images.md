@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: c8c83724d17acff52d588331b3b854e180d5466c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841281"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276928"
 ---
 # <a name="device-images"></a>Images d’un appareil
 
@@ -25,13 +25,13 @@ ms.locfileid: "52841281"
 Que vous order [new devices](#new-devices) or reuse [existing](#existing-devices) ones, you have several options to ensure the image on the device meets our [device requirements](device-requirements.md#check-hardware-requirements).
 
 ## <a name="new-devices"></a>les nouveaux périphériques et
-Lorsque vous commandez un nouvel appareil auprès d’un fabricant [approuvé,](device-requirements.md#minimum-requirements)suivez ces étapes pour vous assurer qu’ils expédient des appareils avec la configuration Bureau géré Microsoft image et logicielle appropriées.
+Lorsque vous commandez un nouvel appareil auprès d’un fabricant [approuvé,](device-requirements.md#minimum-requirements)suivez ces étapes pour vous assurer qu’ils expédient des appareils avec la configuration Microsoft Manged Desktop image et logicielle appropriées. Chaque fois que vous prévoyez d’inscrire un modèle d’appareil particulier dans le service pour la première fois, vous devez tester un exemple pour vous assurer qu’il offre l’expérience utilisateur que vous attendez. Pour plus d’informations, voir [Valider les nouveaux appareils.](/microsoft-365/managed-desktop/get-started/validate-device)
 
 ### <a name="dell"></a>Dell
-Travaillez directement avec le représentant commercial Dell, qui s’assure que l’image approuvée par Bureau géré Microsoft est appliquée aux appareils pour votre commande. Pour plus de questions sur les appareils Dell, l’image et le processus de commande, contactez MMD_at_dell@dell.com.
+Travaillez directement avec le représentant commercial Dell, qui s’assure que l’image approuvée par Microsoft Manged Desktop est appliquée aux appareils pour votre commande. Pour plus de questions sur les appareils Dell, l’image et le processus de commande, contactez MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-Lorsque vous commandez de nouveaux appareils auprès de HP, n’oubliez pas d’utiliser la référence SKU spécifique répertoriée dans la section Exigences supplémentaires pour chaque modèle trouvé sur le site d’appareils [métiers Shop Windows 10 Professionnel](https://www.microsoft.com/windowsforbusiness/view-all-devices) (filtrez l’affichage pour afficher les appareils Bureau géré Microsoft).
+Lorsque vous commandez de nouveaux appareils auprès de HP, n’oubliez pas d’utiliser la référence SKU spécifique répertoriée dans la section Exigences supplémentaires pour chaque modèle trouvé sur le site d’appareils [métiers Shop Windows 10 Professionnel](https://www.microsoft.com/windowsforbusiness/view-all-devices) (filtrez l’affichage pour afficher les appareils Microsoft Manged Desktop).
 
 Si vous commandez un appareil à partir de HP qui a été approuvé comme [exception](customizing.md) mais qui n’est pas répertorié dans la page Liste des appareils, n’oubliez pas de demander la référence SKU à utiliser pour votre modèle. Nous allons travailler avec HP pour vous obtenir ces informations à l’aide de votre demande d’exception. Vous pouvez également contacter HP directement pour toute question sur les appareils et les instructions de commande des appareils à l’aide des adresses suivantes :
  
@@ -41,9 +41,9 @@ Si vous commandez un appareil à partir de HP qui a été approuvé comme [excep
 - Global : mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Bureau géré Microsoft, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Bureau géré Microsoft, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MMD Enablement*».
+Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Microsoft Manged Desktop, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Microsoft Manged Desktop, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MmD Enablement*».
 
-Les produits suivants sont actuellement activés pour Bureau géré Microsoft prise en charge :
+Les produits suivants sont actuellement activés pour Microsoft Manged Desktop prise en charge :
 
 - L13 Génération 1
 - L13 Gen 1
@@ -52,7 +52,7 @@ Les produits suivants sont actuellement activés pour Bureau géré Microsoft pr
 - L15 Gen 1 (Intel)
 - L15 Gen 1 (AMD)
 - X1 Génération carbone 8
-- X1 Gen 5
+- X1 Monde, génération 5
 - T14 Gen 1 (Intel)
 - T14 Gen 1 (AMD)
 - T15 Génération 1
@@ -60,7 +60,7 @@ Les produits suivants sont actuellement activés pour Bureau géré Microsoft pr
 
 
 ### <a name="microsoft"></a>Microsoft
-Tous les appareils Microsoft qui répondent aux exigences de l’appareil sont avec une image qui fonctionne avec Bureau géré Microsoft. Aucune autre étape n’est requise.
+Tous les appareils Microsoft qui répondent aux exigences de l’appareil sont avec une image qui fonctionne avec Microsoft Manged Desktop. Aucune autre étape n’est requise.
 
 Pour obtenir la dernière image disponible dans l’usine sur un appareil Microsoft, faites appel à votre spécialiste Surface pour utiliser le processus « Po à basculement » surface.
 
@@ -68,7 +68,7 @@ Pour obtenir la dernière image disponible dans l’usine sur un appareil Micros
 
 Vous pouvez réutiliser des appareils existants [](device-requirements.md#minimum-requirements) tant qu’ils répondent à la fois aux exigences de l’appareil et aux [logiciels.](device-requirements.md#installed-software) Suivez les étapes pertinentes pour votre fabricant.
 
-Vous pouvez réimager des appareils à l’aide d’une image du fabricant ou en utilisant Bureau géré Microsoft « image universelle ». Pour obtenir une image de fabricant appropriée, vous pouvez commander au moins un nouvel [appareil](#new-devices) du modèle que vous reutilisez. Vous pouvez ensuite obtenir l’image à partir de cet appareil et l’appliquer à d’autres appareils du même modèle.
+Vous pouvez réimager des appareils avec une image du fabricant ou à l’aide Microsoft Manged Desktop « image universelle ». Pour obtenir une image de fabricant appropriée, vous pouvez commander au moins un nouvel [appareil](#new-devices) du modèle que vous reutilisez. Vous pouvez ensuite obtenir l’image à partir de cet appareil et l’appliquer à d’autres appareils du même modèle.
 
 > [!NOTE]
 > Il vous incombe de créer, tester et déployer des images. Nous vous recommandons également d’utiliser les images appropriées fournies par le fabricant autant que possible au lieu d’images personnalisées, y compris l'« image universelle ».
@@ -99,7 +99,7 @@ Ces images utilisent l Windows de récupération (WinRE) et il s’agit d’un p
 
 
 ### <a name="universal-image"></a>Image universelle
-Bureau géré Microsoft a créé une image contenant des Windows 10 Professionnel et des Microsoft 365 Apps pour Enterprise que vous pouvez utiliser avec Bureau géré Microsoft. Toutefois, il est préférable d’utiliser des images adaptées aux Bureau géré Microsoft fournies par le fabricant autant que possible, même si cela signifie une version Windows plus ancienne qui doit ensuite être mise à jour une fois que l’utilisateur s’est signé. L’utilisation Bureau géré Microsoft’image universelle doit être une option finale.
+Microsoft Manged Desktop a créé une image contenant des Windows 10 Professionnel et des Microsoft 365 Apps pour Enterprise que vous pouvez utiliser avec Microsoft Manged Desktop. Toutefois, il est préférable d’utiliser des images adaptées aux Microsoft Manged Desktop fournies par le fabricant autant que possible, même si cela signifie une version Windows plus ancienne qui doit ensuite être mise à jour une fois que l’utilisateur s’est signé. L’utilisation Microsoft Manged Desktop’image universelle doit être une option finale.
 
 - Nous mettez à jour l’image avec les dernières mises Windows qualité mensuelles tous les 30 à 60 jours et Microsoft 365 Apps pour Enterprise mises à jour au moins deux fois par an.
 - L’image contient un package d’approvisionnement de récupération pour s’assurer que Microsoft 365 Apps pour Enterprise est restaurée après Windows scénarios de récupération.
@@ -108,7 +108,7 @@ Bureau géré Microsoft a créé une image contenant des Windows 10 Professionne
 - Les pilotes et les mises à jour qualité sont ajoutés à Windows lors du déploiement à partir du lecteur USB.
 
 > [!NOTE]
-> Il est de votre responsabilité d’ajouter tous les pilotes nécessaires, d’effectuer tous les tests et de vous assurer qu’il n’y a aucun problème avec l’image finale déployée. Nous fournissons l’image universelle « telle qu’elle est », mais fournissons des conseils techniques et des réponses aux questions. Contactez MMDImage@microsoft.com.
+> Il est de votre responsabilité d’ajouter tous les pilotes nécessaires, d’effectuer tous les tests et de vous assurer qu’il n’y a aucun problème avec l’image finale déployée. Nous fournissons l’image universelle « telle qu’elle est », mais fournirons des conseils techniques et des réponses aux questions. Contactez MMDImage@microsoft.com.
 
 Envoyez des demandes pour le contenu et la documentation de l’image universelle en créant une demande de modification sur le [portail d’administration.](../get-started/access-admin-portal.md)
 

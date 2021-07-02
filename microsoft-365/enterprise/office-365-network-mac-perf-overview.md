@@ -1,5 +1,5 @@
 ---
-title: Connectivité réseau dans le centre d’administration Microsoft 365 de gestion
+title: Connectivité réseau dans le centre Administration Microsoft 365 de connexion
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,22 +14,22 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: Vue d’ensemble de la connectivité réseau dans Microsoft 365 Admin Center
-ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+description: Vue d’ensemble de la connectivité réseau dans le centre Administration Microsoft 365 de connexion
+ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470643"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53277000"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre d’administration Microsoft 365 de gestion
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre Administration Microsoft 365 de connexion
 
-Le Microsoft 365 Admin Center inclut désormais des mesures de connectivité réseau agrégées collectées à partir de votre client Microsoft 365 et disponibles uniquement pour les utilisateurs administratifs de votre client.
+Le centre Administration Microsoft 365 inclut désormais des mesures de connectivité réseau agrégées collectées à partir de votre client Microsoft 365 et disponibles uniquement pour les utilisateurs administratifs de votre client.
 
 > [!div class="mx-imgBorder"]
 > ![Outil de test de connectivité réseau](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**Les évaluations réseau** et les informations réseau sont **affichées** dans le Centre d’administration Microsoft 365 sous **Informations d'| Connectivité réseau**.
+**Les évaluations réseau** et les informations réseau sont **affichées** dans le Centre de Administration Microsoft 365 sous **Informations sur la | Connectivité réseau**.
 
 > [!div class="mx-imgBorder"]
 > ![Page Performances du réseau](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
@@ -37,11 +37,11 @@ Le Microsoft 365 Admin Center inclut désormais des mesures de connectivité ré
 >[!NOTE]
 >La connectivité réseau dans le Centre d’administration prend en charge les locataires de WW Commercial et d’Allemagne, mais Cloud de la communauté du secteur public modéré, Cloud de la communauté du secteur public Élevé, DoD ou Chine.
 
-Lorsque vous accédez à la page de performances réseau pour la première fois, vous devez configurer vos emplacements pour voir la carte des performances globales du réseau, une évaluation réseau étendue à l’ensemble du client, le pourcentage de vos utilisateurs travaillant à distance par rapport au site, ainsi qu’une liste des problèmes actuels pour prendre des mesures et/ou pour poursuivre la recherche. À partir du volet Vue d’ensemble, vous pouvez descendre dans le volet pour afficher des mesures et des problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, [voir Vue d’ensemble des](#network-connectivity-overview-in-the-microsoft-365-admin-center)performances du réseau dans Microsoft 365 Admin Center.
+Lorsque vous accédez à la page de performances réseau pour la première fois, vous devez configurer vos emplacements pour voir la carte des performances globales du réseau, une évaluation réseau étendue à l’ensemble du client, le pourcentage de vos utilisateurs travaillant à distance par rapport au site, ainsi qu’une liste des problèmes actuels pour prendre des mesures et/ou pour poursuivre la recherche. Dans le volet vue d’ensemble, vous pouvez consulter les mesures et problèmes de performances réseau spécifiques par emplacement. Pour plus d’informations, [voir Vue d’ensemble des performances](#network-connectivity-overview-in-the-microsoft-365-admin-center)réseau dans le Administration Microsoft 365.
 
 Vous pouvez être invité à participer à la prévisualisation publique pour cette fonctionnalité au nom de votre organisation. L’acceptation se produit généralement immédiatement, après quoi vous voyez la page de connectivité réseau.
 
-Pour accéder à la page de connectivité réseau, vous devez être administrateur de l’organisation au sein Microsoft 365. Le rôle d’administration lecteur de rapports aura un accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit faire partie d’un rôle d’administrateur de serveur, tel que le rôle d’administrateur de prise en charge du service.
+Pour accéder à la page de connectivité réseau, vous devez être administrateur de l’organisation au sein Microsoft 365. Le rôle d’administration lecteur de rapports aura un accès en lecture à ces informations. Pour configurer des emplacements et d’autres éléments de connectivité réseau, un administrateur doit faire partie d’un rôle d’administrateur de serveur tel que le rôle d’administrateur de support technique du service.
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Conditions préalables à l’apparition des évaluations de la connectivité réseau
 
@@ -71,11 +71,14 @@ Toutes les mesures de test des ordinateurs clients incluent les informations du 
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Collecte manuelle des rapports de test avec l Microsoft 365 de test de connectivité réseau
 
-Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-leur d’Microsoft 365 [test](https://connectivity.office.com) de connectivité réseau sur un ordinateur Windows sur lequel ils ont des autorisations d’administration. Sur le site web, ils doivent se Office 365 compte de la même organisation que celle dont vous souhaitez voir les résultats. Ensuite, ils doivent cliquer **sur Exécuter le test.** Pendant le test, il existe un exE de test de connectivité téléchargé. Ils doivent ouvrir et exécuter cette opération. Une fois les tests terminés, les résultats du test sont téléchargés vers le Centre d’administration.
+Pour cette option, vous devez identifier une personne à chaque emplacement. Demandez-leur d’Microsoft 365 [test](https://connectivity.office.com) de connectivité réseau sur un ordinateur Windows sur lequel ils ont des autorisations administratives. Sur le site web, ils doivent se Office 365 compte de la même organisation que celle dont vous souhaitez voir les résultats. Ensuite, ils doivent cliquer **sur Exécuter le test.** Pendant le test, il existe un exE de test de connectivité téléchargé. Ils doivent ouvrir et exécuter cette opération. Une fois les tests terminés, les résultats du test sont téléchargés vers le Centre d’administration.
 
 Les rapports de test sont liés à un emplacement s’il a été ajouté avec des informations de sous-réseau laN, sinon ils sont affichés uniquement à l’emplacement de la ville.
 
-Les échantillons de mesure et les emplacements de bureau doivent commencer à apparaître 2 à 3 minutes après la fin d’un rapport de test. Pour plus d’informations, [voir Microsoft 365 test de connectivité réseau (prévisualisation).](office-365-network-mac-perf-onboarding-tool.md)
+Les échantillons de mesure et les emplacements de bureau doivent commencer à apparaître 2 à 3 minutes après la fin d’un rapport de test. Pour plus d’informations, [voir Microsoft 365 test de connectivité réseau.](office-365-network-mac-perf-onboarding-tool.md)
+
+> [!NOTE]
+> Lorsque vous ajoutez vos emplacements de bureau à Microsoft 365 connectivité réseau dans le Centre d’administration Microsoft 365, vous pouvez fournir des adresses IPv4 ou IPv6 pour vos sous-réseaux lan. Egress Les adresses IP doivent utiliser IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>Comment utiliser ces informations ?
 
@@ -86,26 +89,26 @@ Les échantillons de mesure et les emplacements de bureau doivent commencer à a
 Les entreprises complexes avec plusieurs bureaux et des architectures de périmètre réseau non triviales peuvent tirer parti de ces informations lors de leur intégration initiale à Microsoft 365 ou pour résoudre les problèmes de performances réseau détectés avec la croissance de l’utilisation. Cela n’est généralement pas nécessaire pour les petites entreprises utilisant Microsoft 365 ou les entreprises qui ont déjà une connectivité réseau simple et directe. Les entreprises de plus de 500 utilisateurs et de plusieurs bureaux devraient en tirer le meilleur parti.
 
 >[!IMPORTANT]
->Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre d’administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
+>Les informations sur le réseau, les recommandations en matière de performances et les évaluations dans le Centre Administration Microsoft 365 sont actuellement en état de prévisualisation et sont uniquement disponibles pour les locataires Microsoft 365 qui ont été inscrits au programme d’aperçu des fonctionnalités.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Enterprise de connectivité réseau
 
 > [!div class="mx-imgBorder"]
 > ![Réseau client vers le cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-De nombreuses entreprises ont des configurations de périmètre réseau qui ont évolué au fil du temps et sont principalement conçues pour prendre en charge l’accès au site web Internet des employés, où la plupart des sites web ne sont pas connus à l’avance et ne sont pas sécurisés. Le principal objectif est d’éviter les programmes malveillants et les attaques par hameçonnage à partir de ces sites web inconnus. Cette stratégie de configuration réseau, bien qu’utile à des fins de sécurité, peut entraîner une dégradation des performances Microsoft 365 et de l’expérience utilisateur.
+De nombreuses entreprises ont des configurations de périmètre réseau qui ont évolué au fil du temps et sont principalement conçues pour prendre en charge l’accès au site web Internet des employés, où la plupart des sites web ne sont pas connus à l’avance et ne sont pas sécurisés. L’objectif le plus indispensable est d’éviter les programmes malveillants et les attaques par hameçonnage à partir de ces sites web inconnus. Cette stratégie de configuration réseau, bien qu’utile à des fins de sécurité, peut entraîner une dégradation des performances Microsoft 365 et de l’expérience utilisateur.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Comment pouvons-nous résoudre ces défis ?
 
-Les entreprises peuvent améliorer l’expérience utilisateur générale et sécuriser leur environnement en suivant [Office 365](./microsoft-365-network-connectivity-principles.md) principes de connectivité et en utilisant la fonctionnalité de connectivité réseau Microsoft 365 Centre d’administration Microsoft 365. Dans la plupart des cas, le fait de suivre ces principes généraux aura un impact positif significatif sur la latence des utilisateurs finaux, la fiabilité du service et les performances globales des Microsoft 365.
+Les entreprises peuvent améliorer l’expérience utilisateur générale et sécuriser leur environnement en suivant [Office 365](./microsoft-365-network-connectivity-principles.md) principes de connectivité et en utilisant la fonctionnalité de connectivité réseau Administration Microsoft 365 Center. Dans la plupart des cas, le fait de suivre ces principes généraux aura un impact positif significatif sur la latence des utilisateurs finaux, la fiabilité du service et les performances globales des Microsoft 365.
 
 Microsoft est parfois invité à examiner les problèmes de performances réseau liés aux Microsoft 365 pour les clients de grandes entreprises, et ceux-ci ont souvent une cause première liée à l’infrastructure de périmètre du réseau du client. Lorsqu’une cause première courante d’un problème de périmètre de réseau client est trouvée, nous cherchons à identifier des mesures de test simples qui l’identifient. Un test avec un seuil de mesure qui identifie un problème spécifique est utile, car nous pouvons tester la même mesure à n’importe quel emplacement, déterminer si cette cause première est présente et la partager en tant qu’informations réseau avec l’administrateur.
 
-Certaines informations sur le réseau indiquent simplement un problème qui doit faire l’objet d’un examen plus approfondie. Une information réseau dans laquelle nous avons suffisamment de tests pour afficher une action de correction spécifique pour corriger la cause première est répertoriée comme **une action recommandée.** Ces recommandations, basées sur des mesures dynamiques qui révèlent des valeurs qui tombent en dehors d’un seuil prédéterminé, sont beaucoup plus utiles que les conseils généraux des meilleures pratiques, car elles sont propres à votre environnement et montrent l’amélioration réelle une fois que les modifications recommandées ont été apportées.
+Certaines informations réseau indiquent simplement un problème qui doit faire l’objet d’un examen plus approfondie. Une information réseau dans laquelle nous avons suffisamment de tests pour afficher une action de correction spécifique pour corriger la cause première est répertoriée comme **une action recommandée.** Ces recommandations, basées sur des mesures dynamiques qui révèlent des valeurs qui tombent en dehors d’un seuil prédéterminé, sont beaucoup plus utiles que les conseils généraux des meilleures pratiques, car elles sont propres à votre environnement et montrent l’amélioration réelle une fois que les modifications recommandées ont été apportées.
 
-## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Vue d’ensemble de la connectivité réseau dans Microsoft 365 Admin Center
+## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Vue d’ensemble de la connectivité réseau dans le centre Administration Microsoft 365 réseau
 
-Microsoft dispose de mesures réseau existantes à partir de plusieurs clients Office bureau et web qui prendre en charge le fonctionnement de Microsoft 365. Ces mesures sont désormais utilisées pour fournir des informations sur la conception de l’architecture réseau et une évaluation du réseau qui sont affichées dans la **page** Connectivité réseau du Centre d’administration Microsoft 365.
+Microsoft dispose de mesures réseau existantes à partir de plusieurs clients Office bureau et web qui prendre en charge le fonctionnement de Microsoft 365. Ces mesures sont désormais utilisées pour fournir des informations sur la conception de l’architecture réseau et une évaluation du réseau qui sont affichées dans la **page** Connectivité réseau du Centre Administration Microsoft 365.
 
 Par défaut, les informations d’emplacement approximatives associées aux mesures réseau identifient la ville où se trouvent les appareils clients. L’évaluation réseau à chaque emplacement est affichée avec la couleur et le nombre relatif d’utilisateurs à chaque emplacement est représenté par la taille du cercle.
 
@@ -124,7 +127,7 @@ Vous pouvez afficher un affichage tableau des emplacements où ils peuvent être
 
 ## <a name="remote-worker-assessment-and-user-connection-metrics"></a>Mesures de l’évaluation du travail à distance et de la connexion utilisateur
 
-Nous classons les journaux de trafic réseau en tant qu’utilisateurs distants ou sur site et afficheons leurs pourcentages dans la section mesures de connexion utilisateur du volet vue d’ensemble. Pour les villes où vous avez des utilisateurs distants, vous trouverez le score d’évaluation du réseau distant spécifique à l’emplacement lorsque vous ouvrez la page de cet emplacement. La liste des emplacements aura à la fois des bureaux et des villes de travail à distance, qui peuvent être filtrés et triés. Nous fournissons le score d’évaluation des travailleurs à distance, avec répartition des points pour Exchange, SharePoint et Teams.
+Nous classons les journaux de trafic réseau en tant qu’utilisateurs distants ou sur site et afficheons leurs pourcentages dans la section mesures de connexion utilisateur du volet vue d’ensemble. Pour les villes où vous avez des utilisateurs distants, vous trouverez le score d’évaluation du réseau distant spécifique à l’emplacement lorsque vous ouvrez la page de cet emplacement. La liste des emplacements aura à la fois des bureaux et des villes de travail à distance, qui peuvent être filtrés et triés. Nous fournissons le score d’évaluation des travailleurs à distance, avec répartition des points pour les Exchange, SharePoint et Teams.
 
 Les informations sur la mise en réseau des particuliers sont regroupées et signalées au niveau de la ville et limitées aux villes avec un minimum de 5 employés distants. Nous n’identifions pas les employés individuels travaillant à domicile.
 
@@ -141,8 +144,8 @@ Une carte du réseau de périmètre pour les utilisateurs de votre organisation 
 
 - **Office-** Emplacement du bureau de la page que vous regardez
 - **Périmètre réseau** : emplacement de l’adresse IP source pour les connexions à partir de l’emplacement du bureau. Cela dépend de la précision des bases de données d’emplacements ip géographiques
-- **Exchange service** frontal optimal : l’une des portes d’Exchange de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
-- **Exchange frontale sous-optimale** : une porte d’Exchange service à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
+- **Exchange service** frontal optimal : l’une des Exchange de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
+- **Exchange frontale sous-optimale** : une porte d’Exchange service frontale à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
 - **SharePoint service** frontal optimal : l’une des SharePoint de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
 - SharePoint service frontal **sous-optimal** : une porte d’SharePoint service à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
 - Serveur de résolution récursive **DNS** : emplacement à partir d’une base de données IP géographique du résolveur récursif DNS détecté utilisé pour Exchange Online (si disponible)
@@ -150,11 +153,11 @@ Une carte du réseau de périmètre pour les utilisateurs de votre organisation 
 
 La page récapitulatif de l’emplacement du bureau affiche également l’évaluation réseau de l’emplacement, l’historique de l’évaluation du réseau, une comparaison de l’évaluation de cet emplacement avec d’autres clients de la même ville, ainsi qu’une liste d’informations et de recommandations spécifiques que vous pouvez entreprendre pour améliorer les performances et la fiabilité du réseau.
 
-Les comparaisons entre les clients d’une même ville sont basées sur l’attente que tous les clients ont un accès égal aux fournisseurs de services réseau, à l’infrastructure de télécommunications et aux points de présence réseau Microsoft à proximité.
+Les comparaisons entre les clients de la même ville sont basées sur l’attente que tous les clients ont un accès égal aux fournisseurs de services réseau, à l’infrastructure de télécommunications et aux points de présence réseau Microsoft à proximité.
 
 Les noms d’emplacement peuvent être personnalisés lors de l’ajout d’un nouvel emplacement ou de la modification d’un emplacement existant dans le flyout d’emplacement. Cela vous offre la possibilité de personnaliser vos noms d’emplacement à tout moment. En outre, lorsque vous ajoutez des sous-réseaux LAN directement dans le volant d’emplacements, nous vous montrons une liste de listes de sous-réseaux LAN de correspondances soft que vous pouvez sélectionner. Les noms de circuits pour des adresses IP de sortie d’office spécifiques peuvent également être ajoutés et modifiés.
 
-L’onglet Détails de la page d’emplacement du bureau affiche les résultats de mesure spécifiques qui ont été utilisés pour obtenir des informations, des recommandations et l’évaluation du réseau. Cela permet aux ingénieurs réseau de valider les recommandations et de prendre en compte les contraintes ou les spécificités de leur environnement. Vous trouverez également le nombre estimé d’utilisateurs pour les échantillons collectés dans ces bureaux ainsi que les travailleurs à distance dans cette ville.
+L’onglet Détails de la page d’emplacement du bureau affiche les résultats de mesure spécifiques qui ont été utilisés pour obtenir des informations, des recommandations et l’évaluation du réseau. Cela permet aux ingénieurs réseau de valider les recommandations et de prendre en compte les contraintes ou les spécificités de leur environnement. Vous trouverez également le nombre estimé d’utilisateurs pour les échantillons collectés dans ces bureaux, ainsi que les travailleurs à distance dans cette ville.
 
 > [!div class="mx-imgBorder"]
 > ![Détails spécifiques à l’emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
@@ -172,7 +175,7 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
 
 1. Dans la fenêtre _principale Connectivité à Microsoft 365,_ cliquez sur **l’onglet** Emplacements.
 
-1. Cliquez sur le **bouton Importer** juste au-dessus de la liste des emplacements. Le **volant Importer les emplacements** des bureaux s’affiche.
+1. Cliquez sur le **bouton Importer** juste au-dessus de la liste des emplacements. Le **volant Importer des emplacements** des bureaux s’affiche.
 
    > [!div class="mx-imgBorder"]
    > ![Message d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
@@ -184,14 +187,14 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    1. **userEntered** (obligatoire) : doit être 1 pour un nouvel emplacement de bureau de sous-réseau local en cours d’ajout
    1. **Nom** (obligatoire) : nom de l’emplacement du bureau
    1. **Adresse** (obligatoire) : adresse physique du bureau
-   1. **Latitude** (facultative) : rempli à partir de Bing recherche de l’adresse si vide
+   1. **Latitude** (facultative) : rempli à partir Bing recherche de cartes de l’adresse si vide
    1. **Longitude** (facultative) : remplie à partir Bing recherche de cartes de l’adresse si vide
    1. **Egress plages d’adresses IP 1 à 5** (facultatives) : pour chaque plage, entrez le nom du circuit suivi d’une liste séparée par des espaces d’adresses CIDR IPv4 ou IPv6 valides. Ces valeurs sont utilisées pour différencier plusieurs emplacements de bureau où vous utilisez les mêmes adresses IP de sous-réseau local. Egress Les plages d’adresses IP doivent toutes être de /24 taille réseau et /24 n’est pas inclus dans l’entrée.
    1. **LanIps** (obligatoire) : rép.des plages de sous-réseaux LAN en cours d’utilisation à cet emplacement de bureau. Les ID de sous-réseau local doivent avoir une taille de réseau CIDR incluse, où la taille du réseau peut être comprise entre /8 et /29. Plusieurs plages de sous-réseaux LAN peuvent être séparées par une virgule ou un point-virgule.
    
 1. Lorsque vous avez ajouté vos emplacements de  bureau et enregistré  le fichier, cliquez sur le bouton Parcourir en Télécharger le champ terminé et sélectionnez le fichier CSV enregistré.
 
-1. Le fichier est automatiquement validé. S’il existe des erreurs de validation, vous verrez le message d’erreur : Il existe certaines _erreurs dans le fichier d’importation. Examinez les erreurs, corrigez le fichier d’importation, puis réessayez._ Cliquez sur le lien **Ouvrir les détails de l’erreur** pour obtenir la liste des erreurs de validation de champ spécifiques.
+1. Le fichier est automatiquement validé. S’il existe des erreurs de validation, vous verrez le message d’erreur : Il y a des erreurs _dans le fichier d’importation. Examinez les erreurs, corrigez le fichier d’importation, puis réessayez._ Cliquez sur le lien **Ouvrir les détails de l’erreur** pour obtenir la liste des erreurs de validation de champ spécifiques.
 
    > [!div class="mx-imgBorder"]
    > ![Message d’erreur d’importation CSV](../media/m365-mac-perf/m365-mac-perf-import-error.png)
@@ -216,11 +219,11 @@ Une porte Microsoft 365 service frontal optimale est celle qui est la plus proch
 
 ### <a name="what-is-an-internet-egress-location"></a>Qu’est-ce qu’un emplacement de sortie Internet ?
 
-L’emplacement de sortie Internet est l’emplacement où votre trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Il s’agit également de l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement où vous vous connectez à un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement de sortie Internet, cela peut indiquer un retour de réseau wan important.
+L’emplacement de sortie Internet est l’emplacement où le trafic réseau quitte votre réseau d’entreprise et se connecte à Internet. Il s’agit également de l’emplacement où vous avez un périphérique de traduction d’adresses réseau (NAT) et généralement où vous vous connectez à un fournisseur de services Internet (ISP). Si vous voyez une longue distance entre votre emplacement et votre emplacement de sortie Internet, cela peut indiquer un retour arrière wan important.
 
 ### <a name="what-license-is-needed-for-this-capability"></a>Quelle licence est nécessaire pour cette fonctionnalité ?
 
-Vous avez besoin d’une licence qui donne accès au centre d Microsoft 365'administration.
+Vous avez besoin d’une licence qui donne accès au Centre d’administration Microsoft 365.
 
 ## <a name="related-topics"></a>Voir aussi
 

@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a6415ec7d39bceeb4b68de164bbdcf6ef34755ff
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: fc162939e12f0bd55da5847c6bc1bda4b3761fd7
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984771"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276904"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -37,6 +37,11 @@ ms.locfileid: "52984771"
 
 > [!IMPORTANT]
 > Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur [cette page.](mac-sysext-policies.md)
+
+## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
+
+- Nous avons résolu un problème dans lequel une analyse rapide n’a pas pu être démarrée à partir du menu d’état sur macOS 11 (Big Sur)
+- Autres correctifs de bogue
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0)
 

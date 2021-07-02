@@ -1,7 +1,7 @@
 ---
 title: Créer des indicateurs pour les fichiers
 ms.reviewer: ''
-description: Créez des indicateurs pour un hachage de fichier qui définit la détection, la prévention et l’exclusion des entités.
+description: Créez des indicateurs pour un hachage de fichier qui définissent la détection, la prévention et l’exclusion des entités.
 keywords: fichier, hachage, gérer, autorisé, bloqué, bloquer, nettoyer, malveillant, hachage de fichier, adresse IP, url, domaine
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,18 +17,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730533"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256914"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -80,10 +80,13 @@ Les fichiers automatiquement bloqués par un indicateur ne s’afficheront pas d
 
 >[!IMPORTANT]
 >- En règle générale, les blocs de fichiers sont appliqués et supprimés en quelques minutes, mais peuvent prendre plus de 30 minutes.
->- S’il existe des stratégies d’indicateur de fichier en conflit, la stratégie d’application de la stratégie la plus sécurisée est appliquée. Par exemple, une stratégie d’indicateur de hachage de fichier SHA-256 est prioritaire sur une stratégie d’indicateur de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
->- Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, l’activation de EnableFileHashComputation peut avoir un impact sur les performances de l’appareil.
->    - Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
->    - Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender](/windows/client-management/mdm/defender-csp)
+> 
+>- S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé est appliquée. Une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier SHA-1, qui l’emporte sur une stratégie IoC de hachage de fichier MD5 si les types de hachage définissent le même fichier. Cela est toujours vrai quel que soit le groupe d’appareils. 
+>   Dans tous les autres cas, si des stratégies IoC de fichier en conflit avec la même cible d’application sont appliquées à tous les appareils et au groupe de l’appareil, pour un appareil, la stratégie dans le groupe d’appareils l’emporte. 
+>   
+>- Si la stratégie de groupe EnableFileHashComputation est désactivée, la précision de blocage du fichier IoC est réduite. Toutefois, `EnableFileHashComputation` l’activation peut avoir un impact sur les performances de l’appareil. Par exemple, la copie de fichiers de grande taille à partir d’un partage réseau sur votre appareil local, en particulier sur une connexion VPN, peut avoir un impact sur les performances de l’appareil.
+>
+>   Pour plus d’informations sur la stratégie de groupe EnableFileHashComputation, voir [CSP Defender](/windows/client-management/mdm/defender-csp)
 
 ## <a name="policy-conflict-handling"></a>Gestion des conflits de stratégie  
 
@@ -97,15 +100,15 @@ Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-d
 
 - Sinon, si le fichier est autorisé par une stratégie IoC de fichier autorisé, **autorisez**
 
-- Sinon, si le fichier est bloqué par les règles de la asr, LFA, AV, SmartScreen, puis **Bloquer**  
+- Sinon si le fichier est bloqué par les règles de la asr, cfa, av, SmartScreen, puis **bloquer**  
 
-- Else **Allow** (passe Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
+- Else **Allow** (passe Windows Defender Application Control & AppLocker, aucune règle IoC ne s’applique à elle)
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 
-Notez que Gestion des menaces et des vulnérabilités’application de blocage vulnérable utilise les IOC de fichier pour l’application et suit l’ordre de gestion des conflits ci-dessus.
+Les fonctionnalités gestion des vulnérabilités d’application vulnérables aux menaces et aux menaces utilisent les IOC de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
 
-### <a name="examples"></a>Exemples
+### <a name="examples"></a>範例
 
 |Composant |Application des composants |Action de l’indicateur de fichier |Résultat
 |--|--|--|--|

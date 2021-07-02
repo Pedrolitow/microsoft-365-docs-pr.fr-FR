@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: Exportez des documents dans un jeu à réviser sur un compte stockage Azure puis utilisez Explorateur Stockage Azure pour les télécharger sur un ordinateur local.
-ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b7638e33a40a2ac46f4bb69b869e4c2cf6d48f65
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574708"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256506"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Exporter des documents dans un jeu à réviser vers un compte stockage Azure client
 
-Lorsque vous exportez des documents à partir d’un groupe de révision dans un cas Advanced eDiscovery, vous avez la possibilité de les exporter vers un compte stockage Azure géré par votre organisation. Si vous avez utilisé cette option, les documents sont téléchargés vers votre stockage Azure emplacement. Une fois exportés, vous pouvez accéder aux documents (et les télécharger sur un ordinateur local ou un autre emplacement) à l’aide de la Explorateur Stockage Azure. Cet article fournit des instructions sur la façon d’exporter des documents vers votre compte stockage Azure et l’utilisation du Explorateur Stockage Azure pour se connecter à un emplacement stockage Azure pour télécharger les documents exportés. Pour plus d’informations sur Explorateur Stockage Azure, voir [Utiliser Explorateur Stockage Azure](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
+Lorsque vous exportez des documents à partir d’un groupe de révision dans un cas Advanced eDiscovery, vous avez la possibilité de les exporter vers un compte stockage Azure géré par votre organisation. Si vous utilisez cette option, les documents sont téléchargés vers stockage Azure emplacement. Une fois exportés, vous pouvez accéder aux documents (et les télécharger sur un ordinateur local ou un autre emplacement) à l’aide de la Explorateur Stockage Azure. Cet article fournit des instructions sur la façon d’exporter des documents vers votre compte stockage Azure et l’utilisation du Explorateur Stockage Azure pour se connecter à un emplacement stockage Azure pour télécharger les documents exportés. Pour plus d’informations sur Explorateur Stockage Azure, voir [Utiliser Explorateur Stockage Azure](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
 ## <a name="before-you-export-documents-from-a-review-set"></a>Avant d’exporter des documents à partir d’un jeu à réviser
 
@@ -41,7 +41,7 @@ Lorsque vous exportez des documents à partir d’un groupe de révision dans un
 
 La première étape consiste à créer une tâche d’exportation pour exporter des documents hors d’un groupe de révision. Pour obtenir des instructions plus détaillées sur toutes les options d’exportation, voir [Exporter des documents à partir d’un jeu à réviser.](export-documents-from-review-set.md) La procédure suivante met en évidence les paramètres pour exporter des documents vers le compte stockage Azure de votre organisation.
 
-1. Dans le centre Microsoft 365 conformité, ouvrez le cas  Advanced eDiscovery, sélectionnez l’onglet Ensembles de révision, puis sélectionnez le jeu à réviser à exporter.
+1. Dans la Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery,  sélectionnez l’onglet Ensembles de révision, puis sélectionnez le jeu à réviser à exporter.
 
 2. Dans le jeu à réviser, cliquez sur **Exporter l’action.**  >  
 
@@ -74,9 +74,9 @@ L’étape suivante consiste à obtenir l’URL SAS générée après la créati
 
 ## <a name="step-3-connect-to-the-azure-storage-container"></a>Étape 3 : Connecter au conteneur stockage Azure’accès
 
-La dernière étape consiste à utiliser le Explorateur Stockage Azure et l’URL SAS pour se connecter au conteneur dans votre compte stockage Azure et télécharger les documents exportés sur un ordinateur local.
+La dernière étape consiste à utiliser les Explorateur Stockage Azure et l’URL SAS pour se connecter au conteneur dans votre compte stockage Azure et télécharger les documents exportés sur un ordinateur local.
 
-1. Démarrez le Explorateur Stockage Azure que vous avez téléchargé et installé.
+1. Démarrez la Explorateur Stockage Azure que vous avez téléchargée et installée.
 
 2. Cliquez sur **l’icône ouvrir Connecter dialogue.**
 
@@ -90,7 +90,7 @@ La dernière étape consiste à utiliser le Explorateur Stockage Azure et l’UR
 
     ![Coller l’URL SAS dans la zone URI](../media/AzureStorageConnect3.png)
 
-    Notez que le nom du conteneur s’affiche dans la **zone Nom complet.** Vous pouvez modifier ce nom.
+    Notez que le nom du conteneur s’affiche dans la zone Nom **complet.** Vous pouvez modifier ce nom.
 
 6. Cliquez **sur Suivant** pour afficher la page **récapitulatif,** puis cliquez **sur Connecter**.
 
@@ -98,7 +98,7 @@ La dernière étape consiste à utiliser le Explorateur Stockage Azure et l’UR
 
     ![Exporter des travaux dans le nœud conteneurs Blobs](../media/AzureStorageConnect5.png)
 
-    Il contient un conteneur nommé avec le nom complet de l’étape 5. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez téléchargée vers le conteneur dans votre stockage Azure client. Ces dossiers sont nommés avec un ID qui correspond à l’ID de la tâche d’exportation. Vous pouvez trouver ces ID d’exportation (et  le nom de l’exportation) sous les informations  de support sur la page volante pour chaque tâche de préparation de l’exportation répertoriée sous l’onglet Travaux dans le cas Advanced eDiscovery. 
+    Il contient un conteneur nommé avec le nom complet de l’étape 5. Ce conteneur contient un dossier pour chaque tâche d’exportation que vous avez téléchargée vers le conteneur dans stockage Azure compte. Ces dossiers sont nommés avec un ID qui correspond à l’ID de la tâche d’exportation. Vous pouvez trouver ces ID d’exportation (et  le nom de l’exportation) sous les informations  de support sur la page volante pour chaque tâche de préparation de l’exportation répertoriée sous l’onglet Travaux dans le cas Advanced eDiscovery. 
 
 7. Double-cliquez sur le dossier du travail d’exportation pour l’ouvrir.
 
@@ -125,7 +125,7 @@ La dernière étape consiste à utiliser le Explorateur Stockage Azure et l’UR
 
   - Extracted_text_files : ce dossier contient une version de fichier texte de chaque document exporté.
 
-  - NativeFiles : ce dossier contient une version de fichier native de chaque document exporté.
+  - NativeFiles : ce dossier contient une version native de chaque document exporté.
 
   - Error_files : ce dossier inclut les éléments suivants lorsque la tâche d’exportation contient des fichiers d’erreur :
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 451b5b222b06ba1ec9770a5e49cc66c5c0f68719
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227150"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256722"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -182,10 +182,16 @@ Voici des définitions et des exemples pour les contrôles supplémentaires disp
 
 
 > [!NOTE]
-> Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
+> Microsoft 365 La Protection des informations prend en charge les langues de jeu de caractères à doubles caractères pour :
 > - Chinois (simplifié)
 > - Chinois (traditionnel)
 > - Korean
 > - Japanese
 >
 >Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
+
+> [!TIP]
+> Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’un seul caractère d’byte ou pour détecter les modèles contenant chinois/japonais et anglais, définissez deux variantes du mot clé ou regex. Par exemple, pour détecter un mot clé tel que « 机密 'document », utilisez deux variantes du mot clé ; un avec un espace entre le texte japonais et anglais et un autre sans espace entre le texte japonais et le texte anglais. Ainsi, les mots clés à ajouter dans la sit doivent être « 机密 ' document » et « 机密socument ». De la même façon, pour détecter une expression « « 2020 » « « 2020 » doit être utilisée ; « « « 2020 » et « 2020 » et « 2020 » et « 20200 » et « 2020 »
+> Lors de la création d’une regex à l’aide d’un tiret d’un double byte ou d’une période d’un double byte, veillez à éviter les deux caractères comme un tiret ou un point dans un regex. Voici un exemple de regex pour référence :
+    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.

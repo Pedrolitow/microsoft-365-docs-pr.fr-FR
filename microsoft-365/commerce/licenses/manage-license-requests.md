@@ -19,18 +19,18 @@ ms.custom:
 - commerce_licensing
 search.appverid: MET150
 description: Découvrez comment examiner et approuver ou refuser les demandes de licence des utilisateurs pour votre abonnement Microsoft 365 entreprise.
-ms.date: 08/07/2020
-ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/07/2021
+ms.openlocfilehash: 23258d21ebb413c56323aa4dab25cee60baf2be0
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535673"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256806"
 ---
 # <a name="manage-license-requests"></a>Gérer les demandes de licence
 
 > [!NOTE]
-> Les informations de cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez [le FAQ sur l’achat en libre-service.](../subscriptions/self-service-purchase-faq.yml)
+> Les informations de cet article s’appliquent uniquement aux produits achetés en libre-service. Pour en savoir plus, consultez [la faq sur l’achat en libre-service.](../subscriptions/self-service-purchase-faq.yml)
 
 Si vous désactivez les achats en libre-service dans votre organisation, vous pouvez utiliser les demandes de licences pour gérer le processus de demande de licence pour vos utilisateurs. Lorsqu’un utilisateur tente d’effectuer un achat en libre-service pour un produit que vous avez bloqué, il peut soumettre une demande de licence à vous, l’administrateur. Lorsqu’ils font une demande, ils peuvent ajouter les noms d’autres utilisateurs qui ont également besoin de licences pour le produit.
 

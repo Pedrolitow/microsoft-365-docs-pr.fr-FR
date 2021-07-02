@@ -16,20 +16,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Après avoir créé et itérer sur un brouillon de collection, vous pouvez la valider dans un jeu à réviser. Lorsque vous valider un brouillon de collection, les éléments collectés sont ajoutés au jeu à réviser dans le cas. Une fois que les éléments collectés sont dans l’ensemble de révision, vous pouvez les analyser, les examiner et les exporter.
-ms.openlocfilehash: e28592e7aac289bfc0cc29d312963fa21d9f8fd4
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: dceb661d9586e324482dc4f56bce12fafaf9b251
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838856"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276976"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Valider un brouillon de collection dans un jeu à réviser dans Advanced eDiscovery
 
-Lorsque vous êtes satisfait des éléments que vous avez collectés dans un brouillon de collection et que vous êtes prêt à les analyser, les baliser et les examiner, vous pouvez ajouter une collection à un jeu à réviser dans le cas. Lorsque vous valider un brouillon de collection dans un jeu à réviser, les éléments collectés sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 dans un jeu à réviser. Un groupe de révision est un emplacement sécurisé fourni par Microsoft stockage Azure dans le cloud Microsoft.
+Lorsque vous êtes satisfait des éléments que vous avez collectés dans un brouillon de collection et que vous êtes prêt à les analyser, les baliser et les passer en revue, vous pouvez ajouter une collection à un jeu à réviser dans le cas. Lorsque vous valider un brouillon de collection dans un jeu à réviser, les éléments collectés sont copiés à partir de leur emplacement de contenu d’origine dans Microsoft 365 dans un ensemble de révision. Un groupe de révision est un emplacement sécurisé fourni par Microsoft stockage Azure dans le cloud Microsoft.
 
 ## <a name="commit-a-draft-collection-to-a-review-set"></a>Valider une collection au brouillon vers un ensemble de révisions
 
-1. Dans le Microsoft 365 conformité, ouvrez le cas Advanced eDiscovery, puis sélectionnez l’onglet **Collections** pour afficher la liste des collections dans le cas.
+1. Dans la Centre de conformité Microsoft 365, ouvrez le cas Advanced eDiscovery, puis sélectionnez l’onglet **Collections** pour afficher la liste des collections dans le cas.
 
    ![Liste des collections dans un cas](../media/CommitDraftCollections1.png)
 
@@ -46,7 +46,7 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 
    1. Sélectionnez **Collecter les éléments et ajoutez-les au jeu à réviser.**
 
-   2. Décidez s’il faut ajouter la collection à un nouvel ensemble de révision (qui est créé après l’avoir soumis) ou à un groupe de révision existant. Complétez cette section en fonction de votre décision.
+   2. Décidez s’il faut ajouter la collection à un nouvel ensemble de révision (qui est créé après l’avoir soumis) ou l’ajouter à un groupe de révision existant. Complétez cette section en fonction de votre décision.
 
    3. Configurez les paramètres de collection supplémentaires :
 
@@ -73,6 +73,8 @@ Lorsque vous êtes satisfait des éléments que vous avez collectés dans un bro
 ## <a name="what-happens-after-you-commit-a-draft-collection"></a>Que se passe-t-il après la validation d’un brouillon de collection ?
 
 Lorsque vous valider un brouillon de collection dans un groupe de révision, les choses suivantes se produisent :
+
+- Si vous avez créé un nouveau jeu à réviser pour valider la  collection, le jeu à réviser est créé et affiché sous l’onglet Ensembles de révision dans le cas. L’état du nouvel ensemble de révision est **prêt.** Cette valeur d’état signifie que le jeu à réviser a été créé ; Cela ne signifie pas que la collection a été ajoutée au jeu à réviser. L’état de l’ajout d’éléments dans la collection au jeu à réviser s’affiche sous **l’onglet Collections.**
 
 - La requête de recherche de collection est à nouveau exécuté. Cela signifie que les résultats de recherche réels copiés dans le jeu à réviser peuvent être différents des résultats estimés qui ont été renvoyés lors de la dernière utilisation de la recherche de collection.
 

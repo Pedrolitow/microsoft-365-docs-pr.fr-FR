@@ -1,5 +1,5 @@
 ---
-title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
+title: Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 description: Les règles de réduction de la surface d’attaque peuvent aider à empêcher les attaques d’utiliser des applications et des scripts pour infecter les appareils à l’aide de programmes malveillants.
 keywords: Règles de réduction de la surface d’attaque, asr, hips, système de prévention des intrusions hôtes, règles de protection, anti-attaque, attaque, prévention des infections, Microsoft Defender pour point de terminaison
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 59f116e3fe2b617803efd9625f399235b79a1142
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: ed6dc9956c3e78f8ed39dca9cd6bf0421dd28456
+ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177632"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53276988"
 ---
-# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection par des programmes malveillants
+# <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Utiliser des règles de réduction de la surface d’attaque pour empêcher l’infection des programmes malveillants
 
 **S’applique à :**
 
@@ -183,7 +183,6 @@ Si vous configurez des règles de réduction de la surface d’attaque à l’ai
 |[Bloquer les processus non signés et non signés qui s’exécutent à partir du port USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Bloquer les appels d’API Win32 à partir Office macros](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
 |[Utiliser la protection avancée contre les ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Pris en charge|[Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) (RS3, build 16299) ou version supérieure|
-|
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Bloquer l’utilisation abusive des pilotes signés vulnérables exploités
 
@@ -199,7 +198,7 @@ La règle bloquer l’utilisation abusive des pilotes **signés vulnérables exp
 >
 > Pour examiner un pilote, utilisez ce site Web pour soumettre [un pilote pour analyse.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
-Cette règle est prise en charge dans toutes les versions dans lesquelles la RSA est prise en charge ; qui est :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10 Professionnel, version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
 - [Windows 10 Entreprise, version 1709 ou](/windows/whats-new/whats-new-windows-10-version-1709) ultérieure
@@ -216,7 +215,7 @@ Cette règle empêche les attaques en empêchant Adobe Reader de créer des proc
 
 Grâce à l’ingénierie sociale ou aux attaques, les programmes malveillants peuvent télécharger et lancer des charges utiles, et sortir d’Adobe Reader. En empêchant les processus enfants d’être générés par Adobe Reader, les programmes malveillants qui tentent de l’utiliser comme vecteur sont empêchés de se propager.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -234,7 +233,7 @@ Cette règle empêche Office applications de créer des processus enfants. Offic
 
 La création de processus enfants malveillants est une stratégie anti-programme malveillant courante. Les programmes malveillants qui utilisent Office comme vecteur exécutent souvent des macros VBA et exploitent du code pour télécharger et essayer d’exécuter davantage de charges utiles. Toutefois, certaines applications métier légitimes peuvent également générer des processus enfants à des fins non médicales ; par exemple, la création d’une invite de commandes ou l’utilisation de PowerShell pour configurer les paramètres de Registre.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -256,7 +255,7 @@ LSASS authentifier les utilisateurs qui se connectent sur Windows ordinateur. Mi
 > [!NOTE]
 > Dans certaines applications, le code éumène tous les processus en cours d’exécution et tente de les ouvrir avec des autorisations exhaustives. Cette règle refuse l’action d’ouverture du processus de l’application et enregistre les détails dans le journal des événements de sécurité. Cette règle peut générer beaucoup de bruit. Si vous disposez d’une application qui é énumére simplement LSASS, mais qui n’a aucun impact réel sur les fonctionnalités, il n’est pas nécessaire de l’ajouter à la liste d’exclusions. En soi, cette entrée du journal des événements n’indique pas nécessairement une menace malveillante.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -276,7 +275,7 @@ Cette règle empêche le lancement des types de fichiers suivants à partir du c
 - Fichiers exécutables (tels que .exe, .dll ou .scr)
 - Fichiers de script (tels qu’un fichier .ps PowerShell, Visual Basic .vbs ou javascript .js fichier)
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -313,7 +312,7 @@ Le lancement de fichiers exécutables nontrus ou inconnus peut être risqué, ca
 >
 > Vous pouvez spécifier des fichiers ou des dossiers individuels (à l’aide de chemins d’accès aux dossiers ou de noms de ressources complets), mais vous ne pouvez pas spécifier à quelles règles ou exclusions s’appliquent.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -332,7 +331,7 @@ Cette règle détecte les propriétés suspectes dans un script obscurci.
 
 L’obfuscation de script est une technique courante que les auteurs de programmes malveillants et les applications légitimes utilisent pour masquer la propriété intellectuelle ou réduire les temps de chargement des scripts. Les auteurs de programmes malveillants utilisent également l’obscurcissement pour rendre le code malveillant plus difficile à lire, ce qui empêche l’examen approfondi par les humains et les logiciels de sécurité.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -351,7 +350,7 @@ Cette règle empêche les scripts de lancer du contenu téléchargé potentielle
 
 Bien que cela ne soit pas courant, les applications métier utilisent parfois des scripts pour télécharger et lancer des programme d’installation.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -370,7 +369,7 @@ Cette règle empêche Office applications, notamment Word, Excel et PowerPoint, 
 
 Les programmes malveillants qui utilisent Office comme vecteur peuvent tenter de sortir de Office et d’enregistrer des composants malveillants sur le disque. Ces composants malveillants survivraient au redémarrage d’un ordinateur et persisteraient sur le système. Par conséquent, cette règle se défendre contre une technique de persistance courante.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -393,7 +392,7 @@ Il n’existe pas d’objectifs commerciaux légitimes connus pour l’utilisati
 
 Cette règle s’applique à Word, Excel et PowerPoint.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -415,7 +414,7 @@ Cette règle protège contre les attaques d’ingénierie sociale et empêche l�
 > [!NOTE]
 > Cette règle bloque les conseils de stratégie DLP et les infos-bulles dans Outlook. Cette règle s’applique Outlook et Outlook.com uniquement.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1809](/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -436,7 +435,7 @@ Cette règle empêche les programmes malveillants d’utiliser WMI pour atteindr
 
 Les menaces sans fichier utilisent différentes tactiques pour rester masquées, pour éviter d’être vues dans le système de fichiers et pour obtenir un contrôle d’exécution périodique. Certaines menaces peuvent utiliser le référentiel WMI et le modèle d’événement pour rester masqués.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1903](/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
@@ -454,7 +453,7 @@ Cette règle empêche l’exécution des processus créés via [PsExec](/sysinte
 > [!WARNING]
 > Utilisez cette règle uniquement si vous gérez vos appareils avec [Intune](/intune) ou une autre solution MDM. Cette règle n’est [](/configmgr) pas compatible avec la gestion Microsoft Endpoint Configuration Manager car elle bloque les commandes WMI que le client Configuration Manager utilise pour fonctionner correctement.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -470,7 +469,7 @@ GUID : `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 Avec cette règle, les administrateurs peuvent empêcher l’exécution de fichiers exécutables non signés ou non signés à partir de lecteurs amovibles USB, y compris les cartes SD. Les types de fichiers bloqués incluent les fichiers exécutables (tels que .exe, .dll ou .scr)
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -489,7 +488,7 @@ Cette règle empêche les macros VBA d’appeler les API Win32.
 
 Office VBA active les appels d’API Win32. Les programmes malveillants peuvent utiliser cette fonctionnalité de manière abusive, par exemple appeler des API Win32 pour lancer des [shellcodes](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) malveillants sans écrire quoi que ce soit directement sur le disque. La plupart des organisations ne s’appuient pas sur la possibilité d’appeler des API Win32 dans leur fonctionnement quotidien, même si elles utilisent des macros d’autres manières.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
@@ -515,7 +514,7 @@ La règle a tendance à faire preuve de prudence pour empêcher les ransomware.
 > [!NOTE]
 > Vous devez [activer la protection cloud pour](enable-cloud-protection-microsoft-defender-antivirus.md) utiliser cette règle.
 
-Cette règle a été introduite dans :
+Systèmes d’exploitation pris en charge :          
 
 - [Windows 10, version 1803](/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Serveur, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
