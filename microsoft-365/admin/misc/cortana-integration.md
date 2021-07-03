@@ -19,19 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Les utilisateurs ayant des comptes professionnels ou scolaires valides peuvent Cortana des expériences Microsoft 365 qui répondent Office 365 promesses de sécurité au niveau de l’entreprise.
-ms.openlocfilehash: a740c4ce2b89244cc84494349e962fb665fa2d73
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6887032e62d397659dc73475418f52b0c1246a2f
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227894"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286692"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana dans Microsoft 365
 
 Cortana, votre assistant de productivité personnel, offre des expériences optimisées par l’IA pour gagner du temps et attirer l’attention sur ce qui est le plus important. Cortana est conçu pour fournir des fonctionnalités qui peuvent traiter et raisonner en toute sécurité sur des données Office 365 telles que des e-mails, des fichiers, des conversations, etc., pour gagner du temps, accroître l’efficacité et améliorer la productivité de vos utilisateurs.
 
-Lorsqu’ils sont signés avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans des expériences Microsoft 365 qui répondent aux promesses de confidentialité, de sécurité et de conformité au niveau de l’entreprise de Office 365 ( «**Cortana services** d’entreprise »). 
-
+Lorsqu’ils sont signés avec des comptes professionnels ou scolaires valides, les utilisateurs peuvent obtenir des services d’assistance en nuage avec Cortana dans des expériences Microsoft 365 qui répondent aux promesses de confidentialité, de sécurité et de conformité au niveau de l’entreprise de Office 365 ( «**Cortana services** d’entreprise »).
 
 - **Cortana services** d’entreprise incluent Cortana dans Windows 10 (version 2004 et ultérieures), Outlook pour iOS et Android, Microsoft Teams applications mobiles pour iOS et Android et [Microsoft Teams affiche](/microsoftteams/devices/teams-displays).
 
@@ -88,19 +87,18 @@ Le fait de ne pas Cortana dans Windows 10 ne désintésse pas les autres expéri
 
 Cortana’assistance vocale dans l’application mobile Teams et sur les appareils d’affichage Microsoft Teams permet aux utilisateurs Microsoft 365 Entreprise de rationaliser les tâches de communication, de collaboration et de réunion en utilisant un langage naturel parlé. Les utilisateurs peuvent parler à Cortana en sélectionnant le bouton microphone situé dans le coin supérieur droit de l’application mobile Teams ou en &#8220;Cortana&#8221; dans l’Microsoft Teams affiché. Pour se connecter rapidement aux mains libres de leur équipe et pendant leur travail, les utilisateurs peuvent dire que des requêtes telles que &#8220;appeler Megan&#8221; ou &#8220;envoient un message à mon prochain&#8221; de réunion. Les utilisateurs peuvent également participer à des réunions en &#8220;rejoindre mon prochain&#8221; et utiliser l’assistance vocale pour partager des fichiers, consulter leur calendrier, etc. Ces expériences d’assistance vocale sont livrées à l’aide de services de niveau entreprise Cortana qui respectent entièrement les promesses de confidentialité, de sécurité et de conformité de Office 365, comme le reflètent les conditions d’utilisation des services en ligne [(OST).](https://www.microsoft.com/licensing/product-licensing/products)
 
-**Contrôle d’administration**
+#### <a name="admin-control"></a>Contrôle d’administration
 
 Cortana’assistance vocale sera activée par défaut pour les locataires. Les administrateurs peuvent contrôler qui, dans leur client, peut utiliser Cortana’assistance vocale Teams via une stratégie (TeamsCortanaPolicy). Cette stratégie peut être définie au niveau du compte d’utilisateur ou du client. Les administrateurs peuvent également utiliser le champ CortanaVoiceInvocationMode au sein de ce contrôle de stratégie pour déterminer si Cortana est désactivé, activé avec l’appel de bouton push uniquement ou activé avec l’appel de mot de veille également (applicable aux périphériques qui le supportent, comme l’affichage Microsoft Teams). 
 
-**Contrôle utilisateur**
+#### <a name="user-control"></a>Contrôle utilisateur
 
 Les utilisateurs individuels peuvent essayer Cortana’assistance vocale dans Teams’application mobile en cliquant sur le bouton de micro. Ils peuvent essayer Cortana’assistance vocale sur les périphériques d’affichage Microsoft Teams en disant simplement &#8220;Cortana.&#8221; Ils peuvent également contrôler si Cortana répond à l’appel du mot de veille. 
 
-1.  Ouvrez Teams mobile
-2.  Go to Paramètres
-3.  Sélectionnez Cortana
-4.  Basculer le bouton bascule d’activation vocale
-
+1. Ouvrez Teams mobile
+2. Go to Paramètres
+3. Sélectionnez Cortana
+4. Basculer le bouton bascule d’activation vocale
 
 [En savoir plus sur Cortana’assistance vocale dans Teams](/microsoftteams/cortana-in-teams)
 
@@ -123,7 +121,6 @@ Les utilisateurs individuels sont invités à opter pour l’expérience d’IA 
 Lire mes e-mails (comme connecté via Outlook mobile) est une expérience vocale et mains libres qui permet aux utilisateurs d’écouter de nouveaux messages dans leur boîte de réception Focused et d’apporter des modifications à leur journée via les haut-parleurs de leur téléphone, casque ou périphérique audio connecté. Les utilisateurs peuvent demander Cortana lire leurs e-mails récents à haute voix et demander à Cortana d’agir sur des actions telles que l’indicateur, l’archivage, la suppression et l’ignorer des messages. Cette fonctionnalité est particulièrement utile pour le rattrapage de vos e-mails lors de vos déplacements, multitâches ou en déplacement. Lorsque l’utilisateur parle Cortana dans Lire mes e-mails, la demande audio vocale est directement Cortana services d’entreprise. Une lecture de texte par reconnaissance vocale de l’e-mail de l’utilisateur est traitée dans Office 365 cloud. Au cours de ce processus, aucune Office 365 données de messagerie n’est traitée sur l’appareil mobile de l’utilisateur et aucune donnée de messagerie n’est enregistrée. Une transcription des commandes vocales (c’est-à-dire « marquer comme lu », « suivant », « indicateur », etc.) peut être conservée conformément aux conditions de protection des données dans les conditions d’utilisation de Microsoft [Online Services](https://www.microsoft.com/licensing/product-licensing/products).
 
 Cortana un message électronique est protégé et brièvement suspendu avant de lire le message pour donner aux utilisateurs suffisamment de temps pour suspendre la lecture ou passer au message suivant. Comme pour un appel téléphonique privé, les utilisateurs doivent faire preuve de prudence lors du début de la lecture dans des emplacements où les informations confidentielles peuvent potentiellement être écoutées. Dans ces cas-là, il est recommandé que les employés de votre organisation portent un casque dans les environnements appropriés lors de l’utilisation de Play My Emails dans Outlook mobile.
-
 
 ### <a name="how-to-opt-out-of-play-my-emails"></a>Comment refuser lire mes e-mails
 
@@ -183,10 +180,8 @@ Désactiver l Cortana accès aux données hébergées par Microsoft de votre org
 
 Pour les services régis par le contrat [de services Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174) et la Déclaration de confidentialité [Microsoft,](https://privacy.microsoft.com/privacystatement)Microsoft est le contrôleur des données. En tant que contrôleur de données, Microsoft utilise les données pour améliorer les produits et services conformément à la déclaration de confidentialité [de Microsoft.](https://privacy.microsoft.com/privacystatement)
 
-
 ## <a name="related-content"></a>Contenu associé
 
 [Cortana’assistance vocale dans Teams](/microsoftteams/cortana-in-teams) (article)\
 [Configurer les Cortana dans Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)\
 [Que pouvez-vous faire avec Lire mes e-mails à partir Cortana ?](https://support.microsoft.com/help/4558256)
-

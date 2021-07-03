@@ -15,21 +15,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Découvrez comment utiliser un code QR pour vous authentifier et télécharger Outlook mobile.
-ms.openlocfilehash: 2c1853a6ea1dd1a5d2ad30b975d1dbd23b942040
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a403fbbed90229300e707653062c552104c47d97
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635997"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286704"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Utiliser un code QR pour vous Outlook applications mobiles
 
 > [!IMPORTANT]
-> Cette fonctionnalité est uniquement disponible pour les organisations qui ont mis en place la publication ciblée dans Microsoft 365'administration centrale. Pour activer la version ciblée et en savoir plus sur son fonctionnement, voir Configurer les options de publication [standard ou ciblée.](release-options-in-office-365.md) Nous allons développer davantage d’organisations au cours des prochaines semaines jusqu’à la prévisualisation publique. La prévisualisation publique permet d’accéder en avant-première Microsoft 365 fonctionnalités.
+> Cette fonctionnalité est uniquement disponible pour les organisations qui ont désactivé la publication ciblée dans le Centre d’administration Microsoft 365. Pour activer la version ciblée et en savoir plus sur son fonctionnement, voir Configurer les options de publication [standard ou ciblée.](release-options-in-office-365.md) Nous allons développer davantage d’organisations au cours des prochaines semaines jusqu’à la prévisualisation publique. La prévisualisation publique permet d’accéder en avant-première Microsoft 365 fonctionnalités.
 
 En tant qu’administrateur Microsoft 365, vous pouvez permettre à vos utilisateurs de se connectez à Outlook pour Android ou l’application iOS sur leurs appareils mobiles sans avoir à entrer leur nom d’utilisateur et leur mot de passe. En analysant un code QR, les utilisateurs peuvent s’authentifier en toute sécurité et se Outlook mobile.
 
-Dans Outlook web ou d’autres applications de bureau Outlook, les utilisateurs peuvent voir des notifications les informant qu’ils peuvent utiliser Outlook sur leur appareil mobile. Ces notifications peuvent être gérées par l’administrateur à l’aide Exchange PowerShell. Si les utilisateurs choisissent de s’envoyer SMS message texte pour télécharger l’application sur leur appareil mobile, un code QR s’affiche sur leur ordinateur. Ils pourront analyser le code QR pour se connecter Outlook téléphone ou tablette. Ce code QR est un jeton à durée de vie courte qui ne peut être échangé qu’une seule fois.
+Dans Outlook sur le web applications de bureau ou d’autres applications Outlook bureau, les utilisateurs peuvent voir des notifications les informant qu’ils peuvent utiliser Outlook sur leur appareil mobile. Ces notifications peuvent être gérées par l’administrateur à l’aide Exchange PowerShell. Si les utilisateurs choisissent de s’envoyer eux-mêmes un SMS pour télécharger l’application sur leur appareil mobile, un code QR s’affiche sur leur ordinateur. Ils pourront analyser le code QR pour se connecter Outlook téléphone ou tablette. Ce code QR est un jeton à durée de vie courte qui ne peut être échangé qu’une seule fois.
 
 > [!NOTE]
 > Dans certains cas, vos utilisateurs doivent s’authentifier à nouveau sur leur ordinateur pour générer le code QR.
@@ -38,7 +38,7 @@ Dans Outlook web ou d’autres applications de bureau Outlook, les utilisateurs 
 
 Cette fonctionnalité est activée par défaut. Pour désactiver cette fonctionnalité, suivez les étapes ci-dessous.
 
-1. [Connecter à Exchange PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Connecter à Exchange PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 2. À l’aide de PowerShell, vous pouvez désactiver les notifications informant vos utilisateurs des Outlook applications mobiles. Cela empêche également l’affichage du flux de la signature du code QR.
 
 ```powershell
@@ -48,4 +48,4 @@ Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ## <a name="related-content"></a>Contenu associé
 
 [Configurer les options de publication standard](release-options-in-office-365.md) ou ciblée (article)\
-[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps) (article)
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) (article)

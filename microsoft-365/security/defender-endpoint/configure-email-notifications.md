@@ -16,22 +16,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c60bed1fb2cc17c9f5dfbd1289ae5f5b5e13faec
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9a7ad1241ce73bb9b68e173faa9433c7326e14e5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933948"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286932"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurer les notifications d’alerte dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 Vous pouvez configurer Defender pour le point de terminaison pour envoyer des notifications par courrier électronique aux destinataires spécifiés pour les nouvelles alertes. Cette fonctionnalité vous permet d’identifier un groupe de personnes qui seront immédiatement informées et qui pourront agir sur les alertes en fonction de leur gravité.
 
@@ -46,7 +46,6 @@ Seuls les utilisateurs affectés au rôle d’administrateur général peuvent g
 
 La notification par courrier électronique inclut des informations de base sur l’alerte et un lien vers le portail où vous pouvez faire des recherches plus approfondies.
 
-
 ## <a name="create-rules-for-alert-notifications"></a>Créer des règles pour les notifications d’alerte
 Vous pouvez créer des règles qui déterminent les appareils et les gravités des alertes pour envoyer des notifications par courrier électronique pour les destinataires de la notification.
 
@@ -60,15 +59,15 @@ Vous pouvez créer des règles qui déterminent les appareils et les gravités d
     - **Inclure le nom de l’organisation** : spécifiez le nom du client qui apparaît dans la notification par courrier électronique.
     - **Inclure un lien portail propre au client** : ajoute un lien avec l’ID de client pour autoriser l’accès à un client spécifique.
     - **Inclure des informations sur l’appareil** : inclut le nom de l’appareil dans le corps de l’alerte par courrier électronique.
-    
-        >[!NOTE]
+
+        > [!NOTE]
         > Ces informations peuvent être traitées par des serveurs de messagerie destinataire qui ne se trouve pas dans l’emplacement géographique que vous avez sélectionné pour vos données Defender pour le point de terminaison.
 
-    - **Appareils** : choisissez d’avertir les destinataires pour les alertes sur tous les appareils (rôle d’administrateur général uniquement) ou sur des groupes d’appareils sélectionnés. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
+    - **Appareils** : choisissez d’avertir les destinataires pour les alertes sur tous les appareils (rôle d’administrateur général uniquement) ou sur les groupes d’appareils sélectionnés. Pour plus d’informations, voir [Créer et gérer des groupes d’appareils.](machine-groups.md)
     - **Gravité de l’alerte** : choisissez le niveau de gravité de l’alerte.
 
 4. Cliquez sur **Suivant**.
-    
+
 5. Entrez l’adresse e-mail du destinataire, puis cliquez **sur Ajouter un destinataire.** Vous pouvez ajouter plusieurs adresses e-mail.
 
 6. Vérifiez que les destinataires du courrier électronique peuvent recevoir les notifications par courrier électronique en sélectionnant **Envoyer un message électronique de test.**
@@ -76,12 +75,12 @@ Vous pouvez créer des règles qui déterminent les appareils et les gravités d
 7. Cliquez **sur Enregistrer la règle de notification.**
 
 ## <a name="edit-a-notification-rule"></a>Modifier une règle de notification
+
 1. Sélectionnez la règle de notification que vous souhaitez modifier.
 
 2. Mettez à jour les informations des onglets Général et Destinataire.
 
 3. Cliquez **sur Enregistrer la règle de notification.**
-
 
 ## <a name="delete-notification-rule"></a>Supprimer une règle de notification
 
@@ -89,8 +88,8 @@ Vous pouvez créer des règles qui déterminent les appareils et les gravités d
 
 2. Cliquez sur **Supprimer**.
 
-
 ## <a name="troubleshoot-email-notifications-for-alerts"></a>Résoudre les problèmes de notifications par courrier électronique pour les alertes
+
 Cette section répertorie les différents problèmes que vous pouvez rencontrer lors de l’utilisation de notifications par courrier électronique pour les alertes.
 
 **Problème :** Les destinataires prévus signalent qu’ils n’ont pas reçu les notifications.
@@ -102,5 +101,6 @@ Cette section répertorie les différents problèmes que vous pouvez rencontrer 
 3. Vérifiez les règles de votre application de messagerie qui peuvent être en train d’capturer et de déplacer vos notifications par courrier électronique Defender for Endpoint.
 
 ## <a name="related-topics"></a>Voir aussi
+
 - [Mettre à jour les paramètres de rétention des données](data-retention-settings.md)
 - [Configurer des fonctionnalités avancées](advanced-features.md)

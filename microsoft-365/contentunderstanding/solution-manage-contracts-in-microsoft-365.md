@@ -13,16 +13,16 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Découvrez comment gérer les contrats à l’aide Microsoft 365 solution SharePoint Syntex, SharePoint listes, Microsoft Teams et Power Automate.
-ms.openlocfilehash: d3be12dbddabbcddc41f7c9d882db5473350266e
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bc2570b08add2fa93637b9f64931c5903795a079
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054758"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287316"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Gérer des contrats en utilisant la solution Microsoft 365
 
-Cet article explique comment créer une solution de gestion des contrats pour votre organisation à l’aide de SharePoint Syntex et de composants de Microsoft 365. Il vous fournit une infrastructure pour vous aider à planifier et à créer une solution qui répond aux besoins uniques de votre entreprise. Même si cette solution ne convient pas à l’ensemble de votre entreprise, une partie de celle-ci peut être adoptée dans votre planification de création d’une solution de gestion de contrat personnalisée.
+Cet article explique comment créer une solution de gestion des contrats pour votre organisation à l’aide de SharePoint Syntex et de composants de Microsoft 365. Il vous fournit une infrastructure pour vous aider à planifier et à créer une solution qui répond aux besoins uniques de votre entreprise. Même si cette solution parle de gestion des contrats, vous pouvez l’adapter pour créer d’autres solutions de gestion de documents, telles que des déclarations de travail ou des factures.
 
 *Cet ensemble de contenu documente une solution Microsoft 365 développée par Tom Mol design avec l’équipe de stratégie de solution de travail moderne chez Microsoft.*
 
@@ -34,7 +34,7 @@ La première étape de la planification de votre système de gestion des contrat
 
 - **Suivi de l’historique des approbations de contrat.** Votre organisation a besoin d’un moyen fiable pour déterminer si les contrats ont été approuvés ou rejetés, et si le paiement a été effectué. 
 
-- **Site pour gérer les approbations de contrat.** Votre organisation doit configurer un site de collaboration dans lequel toutes les parties prenantes requises peuvent facilement examiner les contrats. Les parties prenantes doivent pouvoir examiner l’intégralité du contrat si nécessaire, mais se soucient principalement de voir plusieurs champs clés de chaque contrat (par exemple, le nom du client, le numéro de bon de service et le coût total). Les parties prenantes doivent pouvoir facilement approuver ou rejeter les contrats entrants.
+- **Site pour gérer les approbations de contrat.** Votre organisation doit configurer un site de collaboration dans lequel toutes les parties prenantes requises peuvent facilement examiner les contrats. Les parties prenantes doivent pouvoir examiner l’ensemble du contrat si nécessaire, mais se soucient principalement de voir plusieurs champs clés de chaque contrat (par exemple, le nom du client, le numéro de bon de service et le coût total). Les parties prenantes doivent pouvoir facilement approuver ou rejeter les contrats entrants.
 
 - **Contrats révisés d’itinéraire.** Les contrats approuvés et rejetés doivent être acheminés via un flux de travail spécifique. Les contrats approuvés doivent être acheminés vers une application tierce pour le traitement des paiements. Les contrats rejetés doivent être acheminés pour une révision supplémentaire.
 
@@ -58,17 +58,17 @@ Cette solution de gestion des contrats comprend quatre composants de Microsoft 3
 
 1. Les documents sont téléchargés vers une bibliothèque SharePoint documents. Un SharePoint Syntex de compréhension de document a été appliqué à la bibliothèque de documents. Il vérifie chaque fichier pour voir s’il y a une correspondance avec un type de contenu « contrat » qu’il est entraîné à rechercher. S’il trouve une correspondance, il classifie le fichier en tant que « contrat » et met à jour le type de contenu pour le document.
 
-2. Le modèle retire également des données spécifiques à partir de chaque fichier de contrat que les parties prenantes sont intéressées à voir, telles que le *client,* *le* coût et le montant *des frais.*
+2. Le modèle tire également des données spécifiques de chaque fichier de contrat que les parties prenantes souhaitent voir, telles que le *client,* le coût et le montant *des frais.*
 
     La page suivante est un exemple de contrat que le modèle est formé pour identifier.
 
       ![Exemple de contrat.](../media/content-understanding/contract.png)
 
-3. Dans Microsoft Teams, toutes les parties prenantes sont membres d’un canal Teams sécurisé dans lequel tous les contrats de la bibliothèque de documents sont visibles pour approbation ou rejet. À l’Teams, toutes les parties prenantes sont averties lorsque de nouveaux contrats doivent être révisés.
- 
-4. À l’Power Automate, les contrats sont déplacés via le processus d’approbation dans Teams canal. Lorsqu’un membre approuve un contrat, l’état du contrat est modifié pour approuver, tous les membres sont avertis par le biais d’un billet Teams et un élément de ligne est créé pour montrer que le contrat est prêt pour le paiement. Ce processus peut être étendu pour écrire directement dans une application financière tierce pour paiement.
+3. Dans Microsoft Teams, toutes les parties prenantes sont membres d’un canal Teams sécurisé dans lequel tous les contrats dans la bibliothèque de documents sont visibles pour approbation ou rejet. À l’Teams, toutes les parties prenantes sont averties lorsque de nouveaux contrats doivent être révisés.
 
-5.  Lorsqu’un membre rejette un contrat, l’état est rejeté et tous les membres sont avertis par le biais d’Teams billet.
+4. À l’Power Automate, les contrats sont déplacés via le processus d’approbation dans Teams canal. Lorsqu’un membre approuve un contrat, l’état du contrat passe à approuvé, tous les membres sont avertis par le biais d’un billet de Teams et un élément de ligne est créé pour montrer que le contrat est prêt pour le paiement. Ce processus peut être étendu pour écrire directement dans une application financière tierce pour paiement.
+
+5. Lorsqu’un membre rejette un contrat, l’état est rejeté et tous les membres sont avertis par le biais d’Teams billet.
 
 6. Le résultat final de cette solution est un processus d’entreprise automatisé pour votre organisation. Les employés peuvent facilement utiliser la vue de vignette personnalisée dans Teams pour lancer et surveiller le flux de travail d’approbation de vos documents. 
 
@@ -78,9 +78,9 @@ Cette solution de gestion des contrats comprend quatre composants de Microsoft 3
 
 Cette solution s’appuie sur les fonctionnalités suivantes, disponibles dans le cadre d’une licence Microsoft 365 Entreprise (E1, E3, E5, F3) ou Business (De base, Standard ou Premium) :
 
--   Microsoft SharePoint Syntex
--   Microsoft Teams
--   Power Automate
+- Microsoft SharePoint Syntex
+- Microsoft Teams
+- Power Automate
 
 ## <a name="create-the-solution"></a>Créer la solution
 

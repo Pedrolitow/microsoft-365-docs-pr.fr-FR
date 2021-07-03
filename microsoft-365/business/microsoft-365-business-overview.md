@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: En savoir plus sur Microsoft 365 Business Premium, un service d’abonnement qui inclut des applications Office et une protection avancée contre les cybermenaces.
-ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b7b71032ffc19c582f9658b93dae7dd9f89e02eb
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705519"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287624"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Vue d’ensemble de la sécurité de Microsoft 365 Business Premium
 
@@ -44,14 +44,14 @@ Microsoft 365 Business Premium (anciennement Microsoft 365 Business) est un se
 
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>Regarder : Qu’est-ce que Microsoft 365 Business Premium ?
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
-  
-Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml). 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA]
+
+Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
 
 Microsoft 365 Business Premium est prévu pour un maximum de 300 licences. Si vous avez besoin de licences supplémentaires, consultez la documentation de [Microsoft 365 Entreprise](../enterprise/index.yml) pour obtenir plus d’informations.
 
 Pour découvrir la liste complète des fonctionnalités, consultez la [description du service Microsoft 365 Business Premium](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
-  
+
 ## <a name="small-business-security-needs"></a>Exigences en matière de sécurité pour les petites entreprises
 
 Vos données professionnelles peuvent être compromises de plusieurs manières. Vous et vos utilisateurs pouvez compromettre la sécurité de votre organisation lorsque vous vous connectez avec des informations d’identification compromises ou lorsque vous affichez des données de l’organisation sur différents appareils et applications. Plus précisément, votre organisation est exposée aux risques liés :
@@ -71,19 +71,19 @@ Microsoft 365 Business Premium vous permet de protéger vos données dans chacu
 
 Microsoft 365 Business Premium permet de vous **défendre contre les menaces** :
 
-- Analyse des liens dans les e-mails et les documents en temps réel pour bloquer les sites web non sécurisés (liens sécurisés).
+- Analyse des liens dans les e-mails et les documents en temps réel pour bloquer les sites web non sécurisés (Coffre Liens).
 
-- Effectuer une analyse avancée des pièces jointes dans un environnement bac à sable (sandbox) pour détecter les programmes malveillants récemment développés (pièces jointes sécurisées). 
+- Effectuer une analyse avancée des pièces jointes dans un environnement bac à sable (sandbox) pour détecter les programmes malveillants récemment développés (Coffre pièces jointes).
 
-- Activation de stratégies anti-hameçonnage qui utilisent des modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour fournir une protection contre les attaques avancées (anti-hameçonnage dans Defender pour Office 365 intelligence). 
+- Activation de stratégies anti-hameçonnage qui utilisent des modèles d’apprentissage automatique et la détection de l’emprunt d’identité pour fournir une protection contre les attaques avancées (anti-hameçonnage dans Defender pour Office 365 intelligence).
 
-- En configurant des stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou qui ignorent l’authentification multifacteur à partir d’emplacements approuvés, comme votre réseau Office (authentification multifacteur Azure, y compris les adresses IP approuvées et l’accès conditionnel). 
+- En configurant des stratégies avancées qui désactivent l’accès à partir d’emplacements non approuvés ou qui ignorent l’authentification multifacteur à partir d’emplacements approuvés, comme votre réseau Office (authentification multifacteur Azure, y compris les adresses IP approuvées et l’accès conditionnel).
 
 - En appliquant la protection contre les programmes malveillants sur tous les appareils Windows 10 de votre organisation et en protégeant les fichiers dans les dossiers système principaux contre les modifications apportées par les rançongiciels (Windows Defender)
 
 Vos **données professionnelles sont protégées** :
 
-- Par l’utilisation de la détection automatique permettant d’empêcher les informations sensibles, comme les numéros de sécurité sociale ou les cartes de crédit, d’être divulguées en dehors de votre entreprise (protection contre la perte de données). 
+- Par l’utilisation de la détection automatique permettant d’empêcher les informations sensibles, comme les numéros de sécurité sociale ou les cartes de crédit, d’être divulguées en dehors de votre entreprise (protection contre la perte de données).
 
 - Par le chiffrement des messages sensibles afin que vous puissiez communiquer en toute sécurité avec vos clients ou avec d’autres personnes externes à votre organisation. Cette procédure permet de s’assurer que seul le destinataire visé peut lire le message (chiffrement de messages Office 365).
 
@@ -105,7 +105,7 @@ Vos **appareils sont sécurisés** :
 
 Pour découvrir la liste complète des fonctionnalités de sécurité, consultez la page [Fonctionnalités de sécurité de Microsoft 365 Business Premium](security-features.md). Une fois que vous avez [configuré Microsoft 365 Business Premium](set-up.md), consultez les pages [Renforcer la protection contre les menaces](increase-threat-protection.md) et [Configurer les fonctionnalités de conformité](set-up-compliance.md) pour commencer à utiliser les fonctionnalités de sécurité qui ne sont pas incluses dans le cadre de la configuration guidée. Pour en savoir plus sur la configuration de la protection contre les cybercriminels et les pirates informatiques, consultez également la page [10 façons de sécuriser les offres Office 365 et Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data).
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - Si vous faites appel à un partenaire, il recevra Microsoft 365 Business Premium : [Obtenir Microsoft 365 Business Premium auprès de l’Espace partenaires Microsoft](get-microsoft-365-business.md).
 

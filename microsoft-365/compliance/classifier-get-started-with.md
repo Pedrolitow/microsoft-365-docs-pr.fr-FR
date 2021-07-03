@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un Microsoft 365 classifieur est un outil que vous pouvez former pour reconnaître différents types de contenu en lui donnant des exemples à examiner. Cet article vous montre comment créer et former un classifieur personnalisé et comment les former à nouveau pour améliorer la précision.
-ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3053e5154fb4e1ff39ce7db366ce4679bbb8911d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918178"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286632"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Prise en main des classifieurs avec capacité d’apprentissage
 
@@ -64,7 +64,7 @@ Vous aurez besoin de comptes avec ces autorisations pour utiliser des classifieu
 
 ## <a name="prepare-for-a-custom-trainable-classifier"></a>Préparer un classifieur entraisable personnalisé 
 
-Il est utile de comprendre ce qui est impliqué dans la création d’un classifieur entraisable personnalisé avant de vous plonger. 
+Il est utile de comprendre ce qui est impliqué dans la création d’un classifieur entraidable personnalisé avant de vous plonger. 
 
 ### <a name="timeline"></a>Chronologie
 
@@ -81,7 +81,7 @@ Pour en savoir plus sur le flux de travail global de création de classifieurs e
 
 ### <a name="seed-content"></a>Contenu d’amorçage
 
-Lorsque vous souhaitez qu’un classificateur entraisable identifie de manière indépendante et précise un élément comme étant dans une catégorie particulière de contenu, vous devez d’abord le présenter avec de nombreux exemples du type de contenu qui se trouverait dans la catégorie. Cet amorçage d’échantillons au classifieur entraçable est appelé *amorçage.* Le contenu de amorçage est sélectionné par un humain et est jugé pour représenter la catégorie de contenu.
+Lorsque vous souhaitez qu’un classifieur entraisable identifie de manière indépendante et précise un élément comme étant dans une catégorie particulière de contenu, vous devez d’abord le présenter avec de nombreux exemples du type de contenu de la catégorie. Cet amorçage d’échantillons au classifieur entraçable est appelé *amorçage.* Le contenu de amorçage est sélectionné par un humain et est jugé pour représenter la catégorie de contenu.
 
 > [!TIP]
 > Vous devez avoir au moins 50 échantillons positifs et jusqu’à 500. Le classificateur entraçable traitera jusqu’aux 500 exemples créés les plus récents (par horodateur de date/heure de création de fichier). Plus vous fournissez d’exemples, plus les prédictions du classifieur seront précises.
@@ -93,7 +93,7 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 > [!TIP]
 > Pour obtenir de meilleurs résultats, vous devez avoir au moins 200 éléments dans votre exemple de test avec une distribution équitable de correspondances positives et négatives.
 
-## <a name="how-to-create-a-trainable-classifier"></a>Comment créer un classifieur entraisable
+## <a name="how-to-create-a-trainable-classifier"></a>Comment créer un classifieur entra nementable
 
 1. Collectez entre 50 et 500 éléments de contenu d’amorçage. Il doit s’agit uniquement d’exemples qui représentent fortement le type de contenu que le classifieur entraçable doit identifier comme étant dans la catégorie de classification. Reportez-vous [aux extensions de](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) nom de fichier et aux types de fichiers analyse par défaut dans SharePoint Server pour les types de fichiers pris en charge.
 
@@ -101,14 +101,14 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
    > Les exemples d’amorçage et de test ne doivent pas être chiffrés et doivent être en anglais.
 
    > [!IMPORTANT]
-   > Assurez-vous que les éléments de votre ensemble de valeurs de amorçage **sont de forts** exemples de la catégorie. Le classifieur entraçable crée initialement son modèle en fonction de ce avec quoi vous l’amorçez. Le classificateur suppose que tous les échantillons de amorçage sont des positifs forts et n’a aucun moyen de savoir si un échantillon est une correspondance faible ou négative avec la catégorie.
+   > Assurez-vous que les éléments de votre jeu de valeurs sont **des exemples** forts de la catégorie. Le classifieur entraçable crée initialement son modèle en fonction de ce avec quoi vous l’amorçez. Le classificateur suppose que tous les échantillons de amorçage sont des positifs forts et n’a aucun moyen de savoir si un échantillon est une correspondance faible ou négative avec la catégorie.
 
 2. Placez le contenu d’amorçage dans un SharePoint Online dédié à la mise en place du *contenu d’amorçage uniquement.* Notez l’URL du site, de la bibliothèque et du dossier.
 
    > [!TIP]
    > Si vous créez un site et un dossier pour vos données d’amorçage, autorisez l’indexation d’au moins une heure de cet emplacement avant de créer le classifieur entraisable qui utilisera ces données d’amorçage.
 
-3. Connectez-vous au centre Microsoft 365 conformité avec l’accès  au rôle d’administrateur de conformité ou d’administrateur de sécurité et ouvrez Microsoft 365 centre de conformité ou **Microsoft 365** classification des données du centre  >  **de sécurité.**
+3. Connectez-vous Centre de conformité Microsoft 365 avec l’accès au rôle d’administrateur de conformité ou d’administrateur de sécurité et ouvrez **Centre de conformité Microsoft 365** ou Microsoft 365 classification des données du **centre**  >  **de sécurité.**
 
 4. Sélectionnez **l’onglet Classifieurs avec formation.**
 
@@ -120,7 +120,7 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 
 8. Examinez les paramètres et choisissez `Create trainable classifier` .
 
-9. Dans un délai de 24 heures, le classifieur entraçable traitera les données d’amorçage et créera un modèle de prédiction. L’état du classificateur est `In progress` pendant qu’il traite les données d’amorçage. Lorsque le classificateur a terminé le traitement des données de amorçage, l’état change en `Need test items` .
+9. Dans un délai de 24 heures, le classifieur entraçable traitera les données d’amorçage et créera un modèle de prédiction. L’état du classifieur `In progress` est pendant qu’il traite les données d’amorçage. Lorsque le classificateur a terminé le traitement des données de amorçage, l’état change en `Need test items` .
 
 10. Vous pouvez désormais afficher la page de détails en choisissant le classificateur.
 
@@ -150,16 +150,16 @@ Une fois que le classifieur entraisable a traitée suffisamment d’échantillon
 
 17. Choisissez `Tested items to review` l’onglet pour passer en revue les éléments.
 
-18. Microsoft 365 présente 30 éléments à la fois. Examinez-les et dans la `We predict this item is "Relevant". Do you agree?` zone choisissez `Yes` l’une ou `No` l’autre ou `Not sure, skip to next item` . La précision du modèle est automatiquement mise à jour après 30 éléments.
+18. Microsoft 365 présente 30 éléments à la fois. Examinez-les et dans la `We predict this item is "Relevant". Do you agree?` zone choisissez soit ou `Yes` `No` `Not sure, skip to next item` . La précision du modèle est automatiquement mise à jour après 30 éléments.
 
     > [!div class="mx-imgBorder"]
     > ![zone d’avis sur les éléments](../media/classifier-trainable-review-detail.png)
 
-19. Passer *en revue au moins* 200 éléments. Une fois que le score de précision s’est stabilisé, l’option **de** publication devient disponible et l’état du classificateur le dit `Ready to use` .
+19. Passer *en revue au moins* 200 éléments. Une fois que le score  de précision s’est stabilisé, l’option de publication devient disponible et l’état du classificateur le dit `Ready to use` .
 
     > [!div class="mx-imgBorder"]
     > ![score de précision et prêt à être publié](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. Publiez le classifieur.
 
-21. Une fois publié, votre classifieur sera disponible en tant que condition dans [l’étiquetage](apply-sensitivity-label-automatically.md)automatique Office avec des étiquettes de confidentialité , appliquer automatiquement une stratégie d’étiquette de rétention basée sur une [condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et dans la conformité des [communications.](communication-compliance.md)
+21. Une fois publié, votre classifieur sera disponible en tant que condition dans [Office](apply-sensitivity-label-automatically.md)l’étiquetage automatique avec des étiquettes de confidentialité , appliquer automatiquement une stratégie d’étiquette de rétention basée sur une [condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) et dans la conformité des [communications](communication-compliance.md).

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, recherchez des détails sur Microsoft 365 prise en charge de l’application cliente pour l’authentification basée sur les certificats.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5ebef7c10aa61ba28c8fb841468be244f6e8542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bef1a684ba1ebe2eaba90677cd726cc190e342db
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904988"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286572"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 Prise en charge des applications clientes : authentification basée sur les certificats
 
@@ -40,18 +40,17 @@ En savoir plus sur [l’authentification basée sur les certificats.](/azure/act
 
 ## <a name="supported-clients--platforms"></a>Clients pris en charge & plateformes
 
-Les dernières versions des plateformes et des clients suivants prendre en charge l’authentification basée sur les certificats lors de la signature de comptes Azure Active Directory au sein du client (par exemple, lors de l’ajout d’un compte à l’application). Pour plus d’informations sur la prise en charge des plateformes dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
+Les dernières versions des plateformes et des clients suivants prendre en charge l’authentification basée sur les certificats lors de la signature de comptes Azure Active Directory au sein du client (par exemple, lors de l’ajout d’un compte à l’application). Pour plus d’informations sur la prise en charge de la plateforme dans Microsoft 365, voir [La Microsoft 365](/microsoft-365/microsoft-365-and-office-resources).
 <br>
 <br>
 
 [!INCLUDE [Certificate-based authentication services support table](../includes/microsoft-365-client-support-certificate-based-authentication-include.md)]
 
->[!NOTE]
->Edge pour iOS et Android prend en charge l’authentification basée sur les certificats lors de l’ajout de flux de compte. Edge pour iOS et Android ne prend pas en charge l’authentification basée sur les certificats lors de l’authentification sur des sites web, qui sont généralement des sites intranet. <br><br>  Dans ce scénario, un utilisateur navigue vers un site web (généralement sur l’intranet) où il doit s’authentifier via un certificat. Cela n’implique pas du tout l’authentification moderne et ne tire pas parti d’une bibliothèque d’authentification Microsoft. Cela est dû à une limitation avec iOS : iOS empêche les applications tierces d’accéder auchain système dans lequel les certificats sont stockés (seules les applications Apple et le contrôleur [Safari WebView](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) peuvent accéder auchain système). <br><br> Comme Edge s’appuie sur l’infrastructure [WebKit](https://developer.apple.com/documentation/webkit) pour le rendu des sites web, Edge ne peut pas accéder au trousseaux système et présenter à l’utilisateur un choix de certificat. Malheureusement, cela est dû à l’architecture d’Apple.
+> [!NOTE]
+> Edge pour iOS et Android prend en charge l’authentification basée sur les certificats lors de l’ajout de flux de compte. Edge pour iOS et Android ne prend pas en charge l’authentification basée sur les certificats lors de l’authentification sur des sites web, qui sont généralement des sites intranet. <br><br>  Dans ce scénario, un utilisateur navigue vers un site web (généralement sur l’intranet) où il doit s’authentifier via un certificat. Cela n’implique pas du tout l’authentification moderne et ne tire pas parti d’une bibliothèque d’authentification Microsoft. Cela est dû à une limitation avec iOS : iOS empêche les applications tierces d’accéder auchain système dans lequel les certificats sont stockés (seules les applications Apple et le contrôleur [Safari WebView](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) peuvent accéder auchain du système). <br><br> Comme Edge s’appuie sur l’infrastructure [WebKit](https://developer.apple.com/documentation/webkit) pour le rendu des sites web, Edge ne peut pas accéder au trousseaux système et présenter à l’utilisateur un choix de certificat. Malheureusement, cela est dû à l’architecture d’Apple.
 
 ## <a name="supported-powershell-modules"></a>Modules PowerShell pris en charge
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-

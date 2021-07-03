@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e067bc502267e918bd355d9bf8a1982795255846
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256722"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287538"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -128,12 +128,14 @@ Vous pouvez également créer des types d’informations sensibles personnalisé
 ### <a name="checksum-validator"></a>Validateur checksum
 
 Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la csum.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
- 
+
 Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide si mod valeur != chiffre 8 numéro de compte n’est pas valide
 
 1. Définissez l’élément principal avec cette expression régulière :
 
-`\d{8}`
+   ```console
+   \d{8}
+   ```
 
 2. Ajoutez ensuite le validateur de la checksum.
 3. Ajoutez les valeurs de poids séparées par des virgules, la position du chiffre de contrôle et la valeur Mod. Pour plus d’informations sur l’opération Mod sous, consultez [l’opération Mod mode.](https://en.wikipedia.org/wiki/Modulo_operation)
@@ -145,11 +147,13 @@ Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffr
 
 ### <a name="date-validator"></a>Validateur de date
 
-Si une valeur de date incorporée dans une expression régulière fait partie d’un nouveau modèle que vous créez, vous pouvez utiliser le *validateur* de date pour tester qu’elle répond à vos critères. Par exemple, dites que vous souhaitez créer un sit pour un numéro d’identification d’employé à neuf chiffres. Les six premiers chiffres sont la date d’embauche au format DDMMYY et les trois derniers sont des numéros générés de manière aléatoire. Pour vérifier que les six premiers chiffres sont au format correct. 
+Si une valeur de date incorporée dans une expression régulière fait partie d’un nouveau modèle que vous créez, vous pouvez utiliser le *validateur* de date pour tester qu’elle répond à vos critères. Par exemple, dites que vous souhaitez créer un sit pour un numéro d’identification d’employé à neuf chiffres. Les six premiers chiffres sont la date d’embauche au format DDMMYY et les trois derniers sont des numéros générés de manière aléatoire. Pour vérifier que les six premiers chiffres sont au format correct.
 
 1. Définissez l’élément principal avec cette expression régulière :
 
-`\d{9}`
+   ```console
+   \d{9}
+   ```
 
 2. Ajoutez ensuite le validateur de date.
 3. Sélectionnez le format de date et le décalage de début. Étant donné que la chaîne de date est les six premiers chiffres, le décalage est `0` .

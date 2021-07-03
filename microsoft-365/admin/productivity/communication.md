@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Détails de la communication : score de productivité de l’expérience utilisateur.'
-ms.openlocfilehash: b744f9631deabb9c7bc97ab6a0cf1ba8fc61c5dd
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 3ea17bb859fc02343a97033fa65e830f305b69cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779745"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286128"
 ---
 # <a name="communication--people-experiences"></a>Communication : expériences de personnes
 
@@ -42,7 +42,7 @@ Pour plus d’informations, voir [attribuer des licences aux utilisateurs.](../m
 
 Une fois que les utilisateurs ont été actifs dans les produits ci-dessus au moins une fois au cours des 28 derniers jours, vous commencez à voir les informations.
 
-## <a name="why-your-organizations-communication-score-matters"></a>Importance du score de communication de votre organisation 
+## <a name="why-your-organizations-communication-score-matters"></a>Importance du score de communication de votre organisation
 
 Microsoft comprend que les personnes ont des besoins de communication différents. Pour obtenir une réponse rapide à une question, vous pouvez choisir d’envoyer un message instantané. Si vous souhaitez envoyer des mises à jour d’état à votre direction, vous pouvez choisir un message électronique. Pour atteindre un public plus large, vous pouvez choisir de publier un message de la communauté. Microsoft 365 cette flexibilité dans les modes de communication pour répondre aux besoins de tous. La recherche montre que l’utilisation d’outils de communication en temps réel crée une organisation plus unifiée et renforce le morale, quel que soit l’emplacement.
 
@@ -62,14 +62,14 @@ Microsoft 365 offre aux utilisateurs la flexibilité nécessaire pour s’adapte
    - Envoi de messages par Teams
    - Publication sur des communautés dans Yammer
 
-   Cette mesure clé est représentée par un pourcentage de toutes les personnes qui utilisent au moins deux Exchange, Teams ou Yammer. 
+   Cette mesure clé est représentée par un pourcentage de toutes les personnes qui utilisent au moins deux Exchange, Teams ou Yammer.
 
 2. **Corps :** Fournit plus d’informations sur la flexibilité des modes de communication pour les membres de votre organisation.
 
 3. **Visualisation de l’état actuel :**
 
    - Barre horizontale où la partie bleue représente le pourcentage exprimé dans l’en-tête
-   - Temps forts le (numérateur/dénominateur) utilisé pour calculer le pourcentage exprimé dans l’en-tête :
+   - Met en évidence le (numérateur/dénominateur) utilisé pour calculer le pourcentage exprimé dans l’en-tête :
      - **Numérateur**: nombre de personnes utilisant plusieurs modes de communication au cours des 28 derniers jours
      - **Dénominateur :**# des personnes marquées comme activées pour plusieurs produits de communication au cours des 28 derniers jours
    - **La valeur de référence** homologue de la mesure clé est également affichée sous la mesure d’un pourcentage
@@ -82,9 +82,9 @@ Microsoft 365 offre aux utilisateurs la flexibilité nécessaire pour s’adapte
 
 :::image type="content" source="../../media/trend-communication.png" alt-text="Graphique shows number of people who use more than one mode to communicate vs. time.":::
 
-### <a name="scoring-model"></a>Modèle d’score
+### <a name="scoring-model"></a>Modèle d’notation
 
-Le score de communication de votre organisation mesure au niveau de l’agrégation (organisation) si les utilisateurs communiquent de manière cohérente à l’aide de plusieurs modes entre les publications de messagerie, de conversation et de communauté au cours d’une période de 28 jours.  
+Le score de communication de votre organisation mesure au niveau de l’agrégation (organisation) si les utilisateurs communiquent de manière cohérente à l’aide de plusieurs modes entre les publications de messagerie, de conversation et de communauté sur une période de 28 jours.
 
 Les scores ne sont pas fournis au niveau de l’utilisateur individuel.
 
@@ -96,49 +96,49 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Répartition des modes de communication.]":::
 
-1. **En-tête : Temps forts** l’objectif de l’aperçu de fournir une répartition détaillée des différents modes de communication pris en compte dans communication.
+1. **En-tête :** Met en évidence l’objectif de l’analyse pour fournir une répartition détaillée des différents modes de communication pris en compte dans communication.
 
 2. **Corps :** Fournit des informations sur la valeur de l’utilisation de différents modes pour partager des connaissances.
 
-3. **Visualisation :** La répartition représente l’utilisation pour chaque mode. La partie colorée et la fraction sur chaque barre représentent le nombre de personnes envoyant des messages électroniques, des messages ou des publications de la communauté sous la mesure d’un pourcentage du nombre de personnes activées pour ce mode :
+3. **Visualisation :** La répartition représente l’utilisation pour chaque mode. La partie colorée et la fraction de chaque barre représentent le nombre de personnes envoyant des messages électroniques, des messages ou des publications de la communauté sous la mesure d’un pourcentage du nombre de personnes activées pour ce mode :
 
    - **Personnes envoyant des courriers électroniques :** La partie couleur et la fraction représentent le pourcentage d’utilisateurs activés pour Exchange qui envoient des messages électroniques. Cette fraction est construite à partir de :
-   
+
      - **Numérateur**: personnes envoyant des courriers électroniques au cours des 28 derniers jours.
      - **Dénominateur : les** personnes activées pour Exchange au cours des 28 derniers jours.
-     
-   - **Les personnes qui envoient des messages Microsoft Teams :** La partie couleur et la fraction représentent le pourcentage d’utilisateurs activés pour Microsoft Teams qui envoient des messages. Cette fraction est construite à partir de :
-   
+
+   - **Les personnes qui envoient des messages Microsoft Teams :** La partie colorée et la fraction représentent le pourcentage d’utilisateurs activés pour Microsoft Teams qui envoient des messages. Cette fraction est construite à partir de :
+
      - **Numérateur**: personnes envoyant des messages Microsoft Teams au cours des 28 derniers jours.
      - **Dénominateur :** les personnes activées pour Microsoft Teams au cours des 28 derniers jours.
-     
+
    - **Personnes publiant dans des communautés :** La partie couleur et la fraction représentent le pourcentage d’utilisateurs activés pour les Yammer qui sont publiés dans des communautés. Cette fraction est construite à partir de :
-   
+
      - **Numérateur :** Les personnes qui publient Yammer des communautés au cours des 28 derniers jours.
      - **Dénominateur :** Les personnes activées pour Yammer au cours des 28 derniers jours.
-          
+
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
 ### <a name="mentions-in-emails"></a>@mentions messages électroniques
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="! [E-mails avec mentions.]":::
 
-1. **En-tête** : Temps forts l’augmentation du taux de réponse pour les nouveaux threads de messagerie démarrés au cours des 28 derniers jours lorsqu’ils contiennent des @mentions.
+1. **En-tête :** Met en évidence l’augmentation du taux de réponse pour les nouveaux threads de messagerie démarrés au cours des 28 derniers jours lorsqu’ils contiennent des @mentions.
 
-2. **Corps :** Fournit des informations sur la valeur de l’utilisation @mentions messages électroniques. En outre, les utilisateurs @mentions sont exprimés sous la mesure d’un pourcentage de tous les utilisateurs ayant envoyé un courrier électronique au cours des 28 derniers jours.
+2. **Corps :** Fournit des informations sur la valeur de l’utilisation @mentions dans les e-mails. En outre, les utilisateurs @mentions sont exprimés sous la mesure d’un pourcentage de tous les utilisateurs ayant envoyé un courrier électronique au cours des 28 derniers jours.
 
 3. **Visualisation :** Décompose le taux de réponse pour les nouveaux threads de messagerie en fonction de leur @mentions ou non :
 
    - **Réponses aux e-mails avec \@ mentions** : la partie colorée et la fraction représentent le taux de réponse pour les nouveaux threads de messagerie contenant des @mentions. Cette fraction est construite à partir de :
-   
+
      - **Numérateur :** Nouveaux threads de messagerie contenant @mentions qui ont été démarrés et qui ont reçu une réponse au cours des 28 derniers jours.
      - **Dénominateur :** Nouveaux threads de messagerie contenant @mentions qui ont été démarrés au cours des 28 derniers jours.
-     
+
    - **Réponses aux e-mails sans \@ mention :** la partie colorée et la fraction représentent le taux de réponse pour les nouveaux threads de messagerie contenant des @mentions. Cette fraction est construite à partir de :
-   
+
      - **Numérateur :** Nouveaux threads de messagerie qui ne contiennent pas de @mentions, qui ont été démarrés et ont également reçu une réponse au cours des 28 derniers jours.
      - **Dénominateur :** Les nouveaux threads de messagerie ne contenant pas @mentions ont été démarrés au cours des 28 derniers jours.
-     
+
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
 
@@ -146,38 +146,38 @@ Nous vous fournissons également des informations qui vous permettent de mieux c
 
 :::image type="content" source="../../media/teamsmessages.png" alt-text="! [Teams types de messages.]":::
 
-1. **En-tête** : Temps forts les personnes qui ont envoyé des messages de canal sous forme de pourcentage de personnes ayant envoyé n’importe quel type de message (y compris les messages de conversation et de canal) au cours des 28 derniers jours.
+1. **En-tête :** Met en évidence les personnes qui ont envoyé des messages de canal sous forme de pourcentage de personnes ayant envoyé n’importe quel type de message (y compris les messages de conversation et de canal) au cours des 28 derniers jours.
 
 2. **Corps :** Fournit des informations sur la valeur de l’utilisation des messages de canal Microsoft Teams.
 
 3. **Visualisation :** Décompose l’utilisation des messages de conversation et de canal :
 
       - **Personnes envoyant des messages de conversation :** La partie colorée et la fraction représentent l’utilisation de messages de conversation au sein des personnes qui ont envoyé des messages Microsoft Teams. La fraction est construite à partir de :
-      
+
         - **Numérateur :** Les personnes qui ont envoyé des messages de Microsoft Teams au cours des 28 derniers jours.
         - **Dénominateur :** Les personnes qui ont envoyé des messages Microsoft Teams au cours des 28 derniers jours.
-        
+
       - **Personnes envoyant des messages de canal :** La partie colorée et la fraction représentent l’utilisation de messages de canal au sein de personnes envoyant des messages Microsoft Teams. La fraction est construite à partir de :
-      
+
         - **Numérateur :** Les personnes qui ont envoyé des messages de canal Microsoft Teams au cours des 28 derniers jours.
         - **Dénominateur :** Les personnes qui ont envoyé des messages Microsoft Teams au cours des 28 derniers jours.
-        
+
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
 ### <a name="questions-and-answers-in-yammer"></a>Questions et réponses en Yammer
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions et réponses dans Yammer]"::: 
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions et réponses dans Yammer]":::
 
-1. **En-tête** : Temps forts billets marqués comme des questions sur Yammer qui ont reçu une réponse marquée comme la meilleure réponse en tant que pourcentage de tous les billets marqués comme des questions sur Yammer au cours des 28 derniers &quot; &quot; jours.
+1. **En-tête :** Met en évidence les billets marqués comme des questions sur les Yammer qui ont reçu une réponse marquée comme meilleure réponse en tant que pourcentage de tous les billets marqués comme des questions sur Yammer au cours des 28 derniers &quot; &quot; jours.
 
 2. **Corps :** Fournit des informations sur la valeur de l’utilisation de questions et de réponses dans Yammer partager des connaissances.
 
 3. **Visualisation :** Décompose l’utilisation des fonctionnalités de questions et réponses dans votre organisation :
 
    - **Questions :** La partie colorée de la barre et le nombre associé représentent le nombre total de publications marquées comme des questions au cours des 28 derniers jours.
-   - **Questions avec réponses :** La partie colorée de la barre et le nombre associé représentent le nombre de publications marquées comme des questions et qui ont reçu des réponses au cours des 28 derniers jours.
+   - **Questions avec réponses :** La partie colorée de la barre et le numéro associé représentent le nombre de publications marquées comme des questions et qui ont reçu des réponses au cours des 28 derniers jours.
    - **Questions avec les meilleures réponses :** La partie colorée de la barre et le numéro associé représentent le nombre de billets marqués comme des questions et qui ont également reçu une meilleure réponse au cours des &quot; &quot; 28 derniers jours.
-      
+
 4. **Afficher le contenu connexe :** Sélectionnez ce lien pour afficher des vidéos compilées et d’autres contenus d’aide connexes.
 
 ## <a name="related-content"></a>Contenu associé

@@ -1,7 +1,7 @@
 ---
-title: Utiliser Microsoft Search (recherche Microsoft) pour rechercher des rubriques dans les rubriques microsoft
-ms.author: chuckedmonson
-author: chucked
+title: Utiliser Recherche Microsoft pour rechercher des rubriques dans les rubriques microsoft
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Découvrez comment rechercher des rubriques dans Microsoft Microsoft Microsoft.
-ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: a60d1e04c67eb42573bb566a5667f35227def2ad
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908064"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287256"
 ---
-# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utiliser Microsoft Search (recherche Microsoft) pour rechercher des rubriques dans les rubriques microsoft
+# <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Utiliser Recherche Microsoft pour rechercher des rubriques dans les rubriques microsoft
 
-Bien que les utilisateurs de rubriques Topics trouvent des rubriques par le biais des points forts de ces rubriques dans leurs sites SharePoint, ils peuvent également les trouver par le biais de Microsoft Search (recherche Microsoft). 
+Bien que les utilisateurs de rubriques Topics trouvent des rubriques par le biais des points forts de ces rubriques dans leurs sites SharePoint, ils peuvent également les trouver par le biais de Recherche Microsoft. 
 
 ## <a name="topic-answer"></a>Réponse à la rubrique
 
@@ -28,8 +28,8 @@ Lorsque vous recherchez une rubrique spécifique à partir de la page d’accuei
 La réponse à la rubrique s’affiche :
 
 - Nom de la rubrique
-- Autres noms : autres noms ou acronymes pour la rubrique.
-- Définition : description de la rubrique fournie par l’IA ou ajoutée manuellement par une personne.
+- Autres noms : autres noms ou acronymes pour la rubrique.
+- Définition : description de la rubrique fournie par l’IA ou ajoutée manuellement par une personne.
 - Personnes suggérées ou épinglées : personnes suggérées par l’IA ou épinglées à la rubrique par une personne
 - Ressources suggérées ou épinglées : fichiers, pages ou sites suggérés par l’IA ou épinglés à la rubrique par une personne. 
 
@@ -41,13 +41,13 @@ Les résultats de la recherche dans Word, PowerPoint, Outlook et Excel affichero
 
 ## <a name="acronyms"></a>Acronymes
 
-Dans Rubriques de Contrôle, vous pouvez modifier manuellement une rubrique afin d’y inclure un acronyme en tant *qu’autre nom.* Cela permet à un utilisateur qui recherche uniquement l’acronyme de la rubrique de trouver la réponse à la rubrique par le biais de Microsoft Search (recherche Microsoft).
+Dans Rubriques de Contrôle, vous pouvez modifier manuellement une rubrique afin d’y inclure un acronyme en tant *qu’autre nom.* Cela permet à un utilisateur qui recherche uniquement l’acronyme de la rubrique de trouver la réponse à la rubrique Recherche Microsoft.
 
-[Acronym Answers](/microsoftsearch/manage-acronyms) est une fonctionnalité fournie par Microsoft Search (recherche Microsoft) et est gérée séparément de Topics.
+[Acronym Answers](/microsoftsearch/manage-acronyms) est une fonctionnalité fournie par Recherche Microsoft et gérée séparément de Rubriques.
 
 ## <a name="bookmarks-and-topics"></a>Signets et rubriques
 
-Les signets sont une fonctionnalité de Recherche Microsoft qui permet aux personnes de trouver rapidement des sites et des [outils](/microsoftsearch/manage-bookmarks) importants à l’aide d’une simple recherche (par exemple, un outil de réservation de voyage sur un site externe en dehors de leur client Microsoft 365). Ils sont créés par les administrateurs de recherche dans Microsoft 365'administration centrale. 
+[Les signets](/microsoftsearch/manage-bookmarks) sont une fonctionnalité Recherche Microsoft qui permet aux personnes de trouver rapidement des sites et des outils importants à l’aide d’une simple recherche (par exemple, un outil de réservation de voyage sur un site externe en dehors de leur client Microsoft 365). Ils sont créés par les administrateurs de recherche dans le Centre d’administration Microsoft 365. 
 
 Pour les utilisateurs qui recherchent des informations sur la réservation d’un voyage pour le travail :
 

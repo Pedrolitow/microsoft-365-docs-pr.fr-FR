@@ -24,17 +24,17 @@ search.appverid:
 - BCS160
 - MET150
 description: Découvrez comment activer les Microsoft 365 pour protéger les appareils joints à Active Directory Windows 10 en quelques étapes seulement.
-ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: eb95c437030ae13a44f5e8043b3544d5846001c2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636083"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287692"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Activer les appareils joints Windows 10 domaine à gérer par les Microsoft 365 Business Premium
 
 Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 Business Premium pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale.
-Pour configurer cette protection, vous pouvez implémenter des appareils **joints à Azure AD hybride.** Ces appareils sont joints à votre annuaire Active Directory local et à votre Azure Active Directory.
+Pour configurer cette protection, vous pouvez implémenter des appareils **joints à Azure AD hybride.** Ces appareils sont joints à votre active directory local et à votre Azure Active Directory.
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>Regardez : Configurer la joint Azure Active Directory hybride
 
@@ -54,7 +54,7 @@ Pour obtenir la procédure [à suivre, consultez](manage-domain-users.md) Synchr
 
 Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) and on the Microsoft Intune page, select **Device enrollment**, then on the **Overview** page, make sure **MDM authority** is **Intune**.
 
-- Si **l’autorité MDM** est **Aucune,** cliquez sur l’autorité **DE GESTION** pour la définir sur **Intune**.
+- Si **l’autorité MDM est** **Aucune,** cliquez sur l’autorité **DE GESTION** pour la définir sur **Intune**.
 - Si  l’autorité de gestion des périphériques mobiles est **Microsoft Office 365**,go to **Devices**  >  **Enroll devices** and use the **Add MDM authority** dialog on the right to add **Intune MDM** authority (the **Add MDM Authority** dialog is only available if the **MDM Authority** is set to Microsoft Office 365).
 
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Vérifiez qu’Azure AD est activé pour joindre des ordinateurs
@@ -71,7 +71,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 
 - Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and select select **Endpoint Managemen** t (select **Show all** **if Endpoint Manager** is not visible)
 - Dans le centre **Microsoft Endpoint Manager' administration,** allez sur **Appareils**  >  **Windows**  >  **Windows inscription**  >  **automatique**.
-- Vérifiez que l’étendue utilisateur DE LAM est activée.
+- Vérifiez que l’étendue de l’utilisateur mdm est activée.
 
     1. Pour inscrire tous les  ordinateurs, définissez-le sur Tous pour inscrire automatiquement tous les ordinateurs utilisateur qui sont joints à Azure AD et les nouveaux ordinateurs lorsque les utilisateurs ajoutent un compte de travail à Windows.
     2. Définir sur **Some pour** inscrire les ordinateurs d’un groupe spécifique d’utilisateurs.
@@ -109,13 +109,13 @@ La première commande établit une connexion avec le cloud Microsoft et, lorsque
 
 Si vous ne voyez pas la stratégie Activer l’inscription mdm automatique à l’aide des informations d’identification **Azure AD** par défaut, c’est peut-être parce que vous n’avez pas installé ADMX pour Windows 10, version 1803 ou ultérieure. Pour résoudre le problème, suivez les étapes suivantes (Remarque : la dernière version de MDM.admx est à compatibilité avec l’arrière) :
 
-1.  Téléchargement : [Modèles d’administration (.admx) pour Windows 10 mise à jour d’octobre 2020 (20H2)](https://www.microsoft.com/download/102157).
-2.  Installez le package sur un contrôleur de domaine.
-3.  Accédez, en fonction de la version des modèles d’administration, au dossier **: C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
-4.  Renommons le **dossier Définitions de stratégie dans** le chemin d’accès ci-dessus à **PolicyDefinitions**.
-5.  Copiez le **dossier PolicyDefinitions** dans votre partage SYSVOL, par défaut situé dans **C:\Windows\SYSVOL\domain\Policies**. 
-    -   Si vous envisagez d’utiliser un magasin central de stratégies pour l’ensemble de votre domaine, ajoutez-y le contenu de PolicyDefinitions.
-6.  Si vous avez plusieurs contrôleurs de domaine, attendez que SYSVOL réplique pour que les stratégies soient disponibles. Cette procédure fonctionne également pour toute version ultérieure des modèles d’administration.
+1. Téléchargement : [Modèles d’administration (.admx) pour Windows 10 mise à jour d’octobre 2020 (20H2)](https://www.microsoft.com/download/102157).
+2. Installez le package sur un contrôleur de domaine.
+3. Accédez, en fonction de la version des modèles d’administration, au dossier **: C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
+4. Renommons le **dossier Définitions de stratégie dans** le chemin d’accès ci-dessus à **PolicyDefinitions**.
+5. Copiez le **dossier PolicyDefinitions** dans votre partage SYSVOL, par défaut situé dans **C:\Windows\SYSVOL\domain\Policies**.
+   - Si vous envisagez d’utiliser un magasin central de stratégies pour l’ensemble de votre domaine, ajoutez-y le contenu de PolicyDefinitions.
+6. Si vous avez plusieurs contrôleurs de domaine, attendez que SYSVOL réplique pour que les stratégies soient disponibles. Cette procédure fonctionne également pour n’importe quelle version future des modèles d’administration.
 
 À ce stade, vous devriez être en mesure de voir la stratégie Activer l’inscription mdm automatique à l’aide des informations d’identification **Azure AD par défaut** disponibles.
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui peuvent Access pour Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 763380429b8643c5dd01971117fccb040a9a0210
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904961"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286560"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 Prise en charge des applications clientes : accès conditionnel
 
@@ -41,6 +41,6 @@ Les dernières versions des plateformes et des clients suivants offrent une pris
 
 ## <a name="supported-powershell-modules"></a>Modules PowerShell pris en charge
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

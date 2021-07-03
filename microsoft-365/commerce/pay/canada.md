@@ -13,12 +13,12 @@ ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Découvrez où envoyer le paiement pour votre abonnement.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8a7152a8bfae62a4dda7b9b291b98528c788c8b7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b553c543989798f46e3e0301c36cfe6b5de80546
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537005"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287562"
 ---
 # <a name="payment-information-for-canada"></a>Informations de paiement pour le Canada
 
@@ -30,20 +30,10 @@ ms.locfileid: "52537005"
 
 Si vous avez une facture facturée par **Microsoft Corporation,** utilisez les informations bancaires ci-après :
 
-**Banque :** Bank of America, Toronto  
-**Code SWIFT :** BOFACATT  
-**Numéro de compte :** 45571239  
-**Nom du compte :** MICROSOFT  
-**ID bancaire :** 241  
-**Branche :** 56792  
-**Nom du compte :** MICROSOFT
+**Banque :** Bank of America, Toronto **SWIFT Code:** BOFACATT **Account Number:** 45571239 **Account Name:** MICROSOFT **Bank ID:** 241 **Branch:** 56792 **Account Name:** MICROSOFT
 
 Si vous avez une facture facturée par **Microsoft Canada Inc.** pour les commandes et la consommation à compter du 1er mars 2021, utilisez les informations bancaires ci-après :
 
-**Banque :** BankBank N.A., Succursale canadienne  
-**Numéro de routage :** 032820012  
-**Code BIC/SWIFT :** CITICATTBCH  
-**Numéro de compte :** 3003600001  
-**Nom du compte :** MICROSOFT
+**Banque :** Bank N.A., numéro de **routage** de la succursale canadienne : 032820012 **CODE BIC/SWIFT** : Numéro de compte CITICATTBCH  : 3003600001  Nom du compte : MICROSOFT
 
 Les factures émises à partir d’une filiale Microsoft locale sont émises avec le taux standard TVA/Taxe de vente/TAXE sur les produits et services et considérées comme une fourniture nationale de services à des fins de TVA/Taxe de vente/TAXE SUR LES PRODUITS.

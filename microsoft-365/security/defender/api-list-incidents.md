@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730881"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287830"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API de liste des incidents dans Microsoft 365 Defender
 
@@ -38,7 +38,6 @@ ms.locfileid: "52730881"
 
 > [!IMPORTANT]
 > Certaines informations ont trait à un produit préalablement publié, qui peut être modifié de manière significative avant sa publication commerciale. Microsoft n’offre aucune garantie, explicite ou implicite, concernant les informations fournies ici.
-
 
 ## <a name="api-description"></a>Description de l’API
 
@@ -109,9 +108,9 @@ classification | Spécification de l’incident. Les valeurs de propriété *son
 détermination | Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
 status | Catégoriser les incidents *(en tant qu’incidents actifs* *ou résolus).* Il peut vous aider à organiser et à gérer votre réponse aux incidents. | Actif
 Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br /><br />Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*. | Moyenne
-étiquettes | Tableau de balises personnalisées associées à un incident, par exemple pour baliser un groupe d’incidents avec une caractéristique commune. | \[\]
+balises | Tableau de balises personnalisées associées à un incident, par exemple pour baliser un groupe d’incidents avec une caractéristique commune. | \[\]
 commentaires | Tableau de commentaires créés par des secops lors de la gestion de l’incident, par exemple des informations supplémentaires sur la sélection de classification. | \[\]
-alerts | Tableau contenant toutes les alertes liées à l’incident, ainsi que d’autres informations, telles que la gravité, les entités impliquées dans l’alerte et la source des alertes. | \[\] (voir les détails sur les champs d’alerte ci-dessous)
+alertes | Tableau contenant toutes les alertes liées à l’incident, ainsi que d’autres informations, telles que la gravité, les entités impliquées dans l’alerte et la source des alertes. | \[\] (voir les détails sur les champs d’alerte ci-dessous)
 
 ### <a name="alerts-metadata"></a>Métadonnées des alertes
 
@@ -124,15 +123,15 @@ creationTime | Heure à partir de la première création de l’alerte. | 2020-0
 lastUpdatedTime | Heure de la dernière mise à jour de l’alerte sur le système arrière. | 2020-09-06T14:46:57.2433333Z
 resolvedTime | Heure de résolution de l’alerte. | 2020-09-10T05:22:59Z
 firstActivity | Heure à partir de la première alerte signalé que l’activité a été mise à jour sur le système back-end.| 2020-09-04T05:22:59Z
-titre | Brève identification de la valeur de chaîne disponible pour chaque alerte. | Activité de rançongiciel
+title | Brève identification de la valeur de chaîne disponible pour chaque alerte. | Activité de rançongiciel
 description | Valeur de chaîne décrivant chaque alerte. | L’utilisateur Test User2 (testUser2@contoso.com) a manipulé 99 fichiers avec plusieurs extensions se terminant par l’extension *rare herunterladen*. Il s’agit d’un nombre inhabituel de manipulations de fichiers et qui indique une attaque potentielle par ransomware.
 category | Affichage visuel et numérique de la progression de l’attaque tout au long de la chaîne d’attaque. Aligné sur l’infrastructure [CK&ATT MITRE™.](https://attack.mitre.org/) | Impact
 status | Catégoriser les alertes *(en tant* que Nouveau, *Actif* *ou Résolu).* Il peut vous aider à organiser et à gérer votre réponse aux alertes. | Nouveau
 Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br>Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*. | Moyenne
 investigationId | ID d’examen automatisé déclenché par cette alerte. | 1234
-investigationState | Informations sur l’état actuel de l’enquête. L’une des valeurs suivantes : *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Suppressed*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyMediaigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
+investigationState | Informations sur l’état actuel de l’enquête. Une des valeurs suivantes : *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Suppressed*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyMediaigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
 classification | Spécification de l’incident. Les valeurs de propriété *sont : Unknown*, *FalsePositive*, *TruePositive* ou *null* | Inconnu
-détermination | Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, SecurityPersonnel , *SecurityTesting*, *UnwantedSoftware*, *Other* ou *null*  | Apt
+détermination | Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* ou  *null* | Apt
 assignedTo | Propriétaire de l’incident ou *null* si aucun propriétaire n’est affecté. | secop2@contoso.com
 actorName | Le groupe d’activités, le caser, l’associé à cette alerte. | BORON
 threatFamilyName | Famille de menaces associée à cette alerte. | null
@@ -168,8 +167,8 @@ processCommandLine | Disponible si entityType est *Process*. | « Votre fichier 
 processCreationTime | Disponible si entityType est *Process*. | 2020-07-18T03:25:38.5269993Z
 parentProcessId | Disponible si entityType est *Process*. | 16840
 parentProcessCreationTime | Disponible si entityType est *Process*. | 2020-07-18T02:12:32.8616797Z
-ipAddress | Disponible si entityType est *Ip*. <br>Adresse IP des alertes associées aux événements réseau, telles que la communication vers *une destination réseau malveillante.* | 62.216.203.204
-url | Disponible si entityType est *l’URL*. <br>URL des alertes associées aux événements réseau, telles que la communication avec *une destination réseau malveillante.* | down.esales360.cn
+ipAddress | Disponible si entityType est *Ip*. <br>Adresse IP des alertes associées aux événements réseau, telles que la *communication vers une destination réseau malveillante.* | 62.216.203.204
+url | Disponible si entityType est *l’URL*. <br>URL des alertes associées aux événements réseau, telles que la communication vers *une destination réseau malveillante.* | down.esales360.cn
 accountName | Disponible si entityType est *User*. | testUser2
 domainName | Disponible si entityType est *User*. | europe.corp.contoso
 userSid | Disponible si entityType est *User*. | S-1-5-21-1721254763-462695806-1538882281-4156657
@@ -192,13 +191,13 @@ deviceId | ID, le caser, de l’appareil lié à l’entité. | 986e5df8b73dacd4
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 ```HTTP
 GET https://api.security.microsoft.com/api/incidents
 ```
 
-**Réponse**
+### <a name="response"></a>Réponse
 
 ```json
 {
@@ -724,7 +723,7 @@ GET https://api.security.microsoft.com/api/incidents
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)
 - [Vue d’ensemble des incidents](incidents-overview.md)

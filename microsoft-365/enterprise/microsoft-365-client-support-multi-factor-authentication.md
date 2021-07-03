@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Dans cet article, découvrez les plateformes, les clients et les modules PowerShell qui la prise en charge de l’authentification multifacteur pour Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80ee370526d17d472cd048cd4d89b862e158b631
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8749c05e3f7ce5dacf7d3ed1eaa46a46a20482d5
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927559"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286452"
 ---
 # <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Prise en charge des applications clientes : authentification multifacteur
 
@@ -44,6 +44,6 @@ Les dernières versions des plateformes et des clients suivants prisent en charg
 
 ## <a name="supported-powershell-modules"></a>Modules PowerShell pris en charge
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

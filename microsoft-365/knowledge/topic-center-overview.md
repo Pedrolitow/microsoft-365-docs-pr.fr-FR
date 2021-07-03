@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du centre de rubriques dans Sujets Microsoft Viva
+title: Vue d’ensemble du centre de rubriques dans les rubriques microsoft
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
@@ -13,21 +13,21 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-description: Découvrez le centre de rubriques dans Sujets Microsoft Viva.
-ms.openlocfilehash: f782be90e6cd6fa12e57df87ebb1057e58bdca19
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+description: Découvrez le centre de rubriques des rubriques microsoft.
+ms.openlocfilehash: bd3bdbc368ca95b1c795043c5c083aaebfcf5742
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984927"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287280"
 ---
-# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Vue d’ensemble du centre de rubriques dans Sujets Microsoft Viva
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Vue d’ensemble du centre de rubriques dans les rubriques microsoft
 
-Dans Sujets Microsoft Viva, le centre de rubriques est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de la [configuration de Topics](set-up-topic-experiences.md) dans le Centre d’administration Microsoft 365.
+Dans Rubriques microsoft, le centre de rubriques est un site SharePoint moderne qui sert de centre de connaissances pour votre organisation. Il est créé lors de la [configuration de Topics](set-up-topic-experiences.md) dans le Centre d’administration Microsoft 365.
 
-Le centre de rubriques possède une page d’accueil par défaut avec le volet Web Rubriques dans laquelle tous les **utilisateurs** sous licence peuvent voir les rubriques à laquelle ils ont une connexion. 
+Le centre de rubriques possède une page d’accueil par défaut avec le volet Web Rubriques dans laquelle tous les **utilisateurs** sous licence peuvent voir les rubriques à laquelle ils ont une connexion.
 
-Bien que tous les utilisateurs sous licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L’onglet Gérer les rubriques** s’affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques. 
+Bien que tous les utilisateurs sous licence qui peuvent afficher des rubriques ont accès au centre de rubriques, les gestionnaires de connaissances peuvent également gérer les rubriques via la page **Gérer les rubriques.** **L’onglet Gérer les rubriques** s’affiche uniquement pour les utilisateurs qui ont les autorisations Gérer les rubriques.
 
 ## <a name="where-is-my-topic-center"></a>Où se trouve mon centre de rubriques
 
@@ -37,35 +37,31 @@ Le centre de rubriques est créé lors de la configuration de Topics. Une fois l
 1. Dans la Centre d’administration Microsoft 365, **sélectionnez Paramètres,** puis sélectionnez **Paramètres de l’organisation.**
 2. Sous **l’onglet Services,** sélectionnez **Expériences des rubriques.**
 
-    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png) 
+    ![Connecter personnes à connaître](../media/admin-org-knowledge-options-completed.png)
 
 3. Sélectionnez **l’onglet Centre des** rubriques. Sous **Adresse du site** se trouve un lien vers votre centre de rubriques.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
-
-
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png)
 
 ## <a name="home-page"></a>Page d’accueil
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]
 
 </br>
-
 
 Dans la page d’accueil du centre de rubriques, vous pouvez voir les rubriques de votre organisation avec lesquelles vous êtes en relation.
 
 - Connexions suggérées : vous verrez les rubriques répertoriées sous Nous vous avons **répertoriés dans ces rubriques. L’avons-nous fait ?** Voici des rubriques dans lesquelles votre connexion à la rubrique a été suggérée par le biais de l’IA. Par exemple, vous pouvez être l’auteur d’un fichier ou d’un site associé. Vous êtes invité à confirmer que vous devez rester répertorié en tant que personne associée pour la rubrique.
 
-   ![Connexions suggérées](../media/knowledge-management/my-topics.png) 
- 
+   ![Connexions suggérées](../media/knowledge-management/my-topics.png)
+
 - Connexions confirmées : il s’agit des rubriques dans lesquelles vous êtes épinglé sur la page de rubrique ou vous avez confirmé une connexion suggérée à la rubrique. Les rubriques passeront de la section suggérée à la section confirmée lorsque vous confirmez une connexion suggérée.
- 
-   ![Rubriques confirmées.](../media/knowledge-management/my-topics-confirmed.png) 
+
+   ![Rubriques confirmées.](../media/knowledge-management/my-topics-confirmed.png)
 
 Une fois qu’un utilisateur a confirmé sa connexion à une rubrique, il peut apporter des modifications à la page de rubrique pour organiser sa connexion. Par exemple, ils peuvent fournir plus d’informations sur leur connexion à la rubrique.
-
 
 ## <a name="manage-topics-page"></a>Page Gérer les rubriques
 
@@ -76,8 +72,8 @@ Dans la page **Gérer les rubriques,** le tableau de bord de rubrique affiche to
 - Confirmez la rubrique : indique aux utilisateurs qu’une rubrique suggérée par l’IA a été validée par un organisateur humain.
 
 - Publiez la rubrique : modifiez les informations de la rubrique pour améliorer la qualité de la rubrique initialement identifiée et présente la rubrique à tous les utilisateurs qui ont accès aux rubriques.
- 
-- Supprimez la rubrique : rend la rubrique introuvable pour les utilisateurs finaux. La rubrique est déplacée vers **l’onglet Supprimé** et peut être confirmée ultérieurement si nécessaire. 
+
+- Supprimez la rubrique : rend la rubrique introuvable pour les utilisateurs finaux. La rubrique est déplacée vers **l’onglet Supprimé** et peut être confirmée ultérieurement si nécessaire.
 
 Pour plus d’informations sur la gestion des rubriques dans la page Gérer **les rubriques,** voir [Gérer les rubriques.](manage-topics.md)
 
@@ -89,8 +85,6 @@ Si vous avez des autorisations créer et modifier des rubriques, vous pouvez :
 
 - [Créez de nouvelles rubriques](create-a-topic.md): vous pouvez créer de nouvelles rubriques pour les rubriques qui n’ont pas été trouvées lors de la découverte, ou si les outils d’IA n’ont pas trouvé suffisamment de preuves pour créer une rubrique.
 
-
 ## <a name="see-also"></a>Voir aussi
 
-[Gérer les sujets dans le centre de rubriques](manage-topics.md)
-
+[Gérer les rubriques dans le centre de rubriques](manage-topics.md)

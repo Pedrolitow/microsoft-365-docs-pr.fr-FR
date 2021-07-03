@@ -1,6 +1,6 @@
 ---
 title: API de mise à jour de l’incident
-description: Découvrez comment mettre à jour les incidents à l’aide Microsoft 365 API Defender
+description: Découvrez comment mettre à jour les incidents à l’aide Microsoft 365 Defender API
 keywords: mise à jour, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 60f1209331862eb21d3b1949265f0873dcf2e5a7
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861502"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287818"
 ---
 # <a name="update-incidents-api"></a>API mettre à jour les incidents
 
@@ -45,13 +45,13 @@ Met à jour les propriétés d’un incident existant. Les propriétés updatabl
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Quotas, allocation de ressources et autres contraintes
 
 1. Vous pouvez effectuer jusqu’à 50 appels par minute ou 1 500 appels par heure avant d’atteindre le seuil de limitation.
-2. Vous ne pouvez définir `determination` la propriété que si elle est définie sur `classification` TruePositive.
+2. Vous ne pouvez définir la propriété que si elle est `determination` `classification` définie sur TruePositive.
 
 Si votre demande est limitée, elle retourne un `429` code de réponse. Le corps de la réponse indique le moment où vous pouvez commencer à effectuer de nouveaux appels.
 
 ## <a name="permissions"></a>Autorisations
 
-L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir [Access the Microsoft 365 Defender APIs](api-access.md).
+L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur la façon de choisir les autorisations, voir [Access the Microsoft 365 Defender API](api-access.md).
 
 Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 -|-|-
@@ -84,12 +84,12 @@ statut | Énum | Spécifie l’état actuel de l’incident. Les valeurs possibl
 assignedTo | string | Propriétaire de l’incident.
 classification | Énum | Spécification de l’incident. Les valeurs possibles sont les suivantes : ```Unknown```, ```FalsePositive``` et ```TruePositive```.
 détermination | Énum | Spécifie la détermination de l’incident. Les valeurs possibles sont les suivantes : ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware``` et ```Other```.
-étiquettes | liste de chaînes | Liste des balises d’incident.
+balises | liste de chaînes | Liste des balises d’incident.
 comment | string | Commentaire à ajouter à l’incident.
 
 ## <a name="response"></a>Réponse
 
-Si elle réussit, cette méthode renvoie `200 OK` . Le corps de la réponse contient l’entité d’incident avec les propriétés mises à jour. Si un incident avec l’ID spécifié n’a pas été trouvé, la méthode renvoie `404 Not Found` .
+Si elle réussit, cette méthode renvoie `200 OK` . Le corps de la réponse contiendra l’entité d’incident avec les propriétés mises à jour. Si un incident avec l’ID spécifié n’a pas été trouvé, la méthode renvoie `404 Not Found` .
 
 ## <a name="example"></a>Exemple
 
@@ -127,7 +127,7 @@ Voici un exemple de la demande.
 
 ## <a name="related-articles"></a>Articles connexes
 
-- [Accéder aux API Microsoft 365 Defender](api-access.md)
+- [Accéder aux API Microsoft 365 Defender de données](api-access.md)
 - [En savoir plus sur les limites d’API et les licences](api-terms.md)
 - [Comprendre les codes d’erreur](api-error-codes.md)
 - [API d’incident](api-incident.md)

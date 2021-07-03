@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Suivez ces étapes pour supprimer le compte d’utilisateur d’un ancien employé.
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e2e1b234eaee3818321761af8f737bad8d131b62
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782380"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286320"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Étape 7 : supprimer le compte d’utilisateur d’un ancien employé
 
@@ -61,28 +61,36 @@ Si vous utilisez Azure Active Directory, voir l’cmdlet [Remove-MsolUser](/powe
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>Ce que vous devez savoir sur la clôture d'une session de messagerie d'un employé
 
 Voici les informations sur la suppression de l'accès d'un employé au courrier électronique (Exchange).
-  
-|||
+
+<br>
+
+****
+
+|Ce que vous pouvez faire|Procédure à suivre|
 |:-----|:-----|
-|**Ce que vous pouvez faire** <br/> |**Procédure à suivre** <br/> |
-|Clôturer une session (par exemple, Outlook sur le web, Outlook, Exchange Active Sync, etc.) et forcer à ouvrir une nouvelle session  <br/> |Réinitialiser le mot de passe  <br/> |
-|Clôturer une session et bloquer les sessions suivantes (pour tous les protocoles)  <br/> |Désactivez le compte. Par exemple, (dans le centre d’administration Exchange ou à l’aide de PowerShell) :  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|Clôturer la session pour un protocole particulier (par exemple, ActiveSync)  <br/> |Désactivez le protocole. Par exemple, (dans le centre d’administration Exchange ou à l’aide de PowerShell) :  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|Clôturer une session (par exemple, Outlook sur le web, Outlook, Exchange Active Sync, etc.) et forcer à ouvrir une nouvelle session|Réinitialiser le mot de passe|
+|Clôturer une session et bloquer les sessions suivantes (pour tous les protocoles)|Désactivez le compte. Par exemple, (dans le centre d’administration Exchange ou à l’aide de PowerShell) : <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Clôturer la session pour un protocole particulier (par exemple, ActiveSync)|Désactivez le protocole. Par exemple, (dans le centre d’administration Exchange ou à l’aide de PowerShell) : <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|
 
 Les opérations ci-dessus peuvent être réalisées à trois endroits :
   
-|||
-|:-----|:-----|
-|**Si vous clôturez la session ici** <br/> |**Temps nécessaire** <br/> |
-|Dans le centre d'administration Exchange ou à l'aide de PowerShell  <br/> |Le délai prévu est de moins de 30 minutes  <br/> |
-|Dans le centre d'administration Azure Active Directory  <br/> |Le délai prévu est de 60 minutes  <br/> |
-|Dans un environnement local  <br/> |Le délai prévu est de 3 heures ou plus  <br/> |
+<br>
+
+****
+
+|Si vous clôturez la session ici|Temps nécessaire|
+|---|---|
+|Dans le centre d'administration Exchange ou à l'aide de PowerShell|Le délai prévu est de moins de 30 minutes|
+|Dans le centre d'administration Azure Active Directory|Le délai prévu est de 60 minutes|
+|Dans un environnement local|Le délai prévu est de 3 heures ou plus|
+|
 
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>Comment obtenir une réponse plus rapide à une demande de clôture de compte
 
- **Plus rapide**: utilisez le centre d'administration Exchange (avec PowerShell) ou le centre d'administration Azure Active Directory. Dans un environnement local, la synchronisation de la modification via DirSync peut prendre plusieurs heures.
+**Plus rapide**: utilisez le centre d'administration Exchange (avec PowerShell) ou le centre d'administration Azure Active Directory. Dans un environnement local, la synchronisation de la modification via DirSync peut prendre plusieurs heures.
   
- **Plus rapide pour un utilisateur ayant une présence locale et dans le centre de données Exchange**: clôturez la session via le centre d'administration Azure Active Directory/Exchange ET apportez la modification aussi dans l'environnement local. À défaut, la modification dans le centre d'administration Azure Active Directory/Exchange est remplacée par DirSync.
+**Plus rapide pour un utilisateur ayant une présence locale et dans le centre de données Exchange**: clôturez la session via le centre d'administration Azure Active Directory/Exchange ET apportez la modification aussi dans l'environnement local. À défaut, la modification dans le centre d'administration Azure Active Directory/Exchange est remplacée par DirSync.
   
 ## <a name="related-content"></a>Contenu associé
 

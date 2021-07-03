@@ -19,49 +19,33 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809142"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287502"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
 Vous avez besoin de déterminer si un utilisateur a consulté un document spécifique ou supprimé définitivement un élément de sa boîte aux lettres ? Vous pouvez utiliser le Centre de conformité Microsoft 365  pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation. Qu’est-ce qu’un journal d’audit unifié ? Un tel journal permet de rechercher les types suivants d’[activité des utilisateurs et administrateurs](#audited-activities) dans Microsoft 365 :
 
 - Activité utilisateur dans SharePoint Online et OneDrive Entreprise
-
 - Activité utilisateur dans Exchange Online (enregistrement d’audit de boîte aux lettres Exchange) 
-
 - Activité des administrateurs dans SharePoint Online
-
 - Activité des administrateurs dans Azure Active Directory (service d’annuaire pour Microsoft 365)
-
 - Activité des administrateurs dans Exchange Online (journalisation d’audit de l’administrateur Exchange)
-
 - Activités eDiscovery dans le Centre de conformité et sécurité
-
 - Activités utilisateur et administrateur dans Power BI
-
 - Activités utilisateur et administrateur dans Microsoft Teams
-
 - Activités utilisateur et administrateur dans Dynamics 365
-
 - Activités utilisateur et administrateur dans Yammer
-
 - Activités utilisateur et administrateur dans Microsoft Power Automate
-
 - Activités utilisateur et administrateur dans Microsoft Stream
-
 - Activité d’analystes et d’administrateurs dans Microsoft Workplace Analytics
-
 - Activités utilisateur et administrateur dans Microsoft Power Apps
-
 - Activités utilisateur et administrateur dans Microsoft Forms
-
 - Activité des utilisateurs et des administrateurs relative aux étiquettes de confidentialité pour les sites qui utilisent SharePoint Online ou Microsoft Teams
-
 - Activité des administrateurs dans les messages de réunion et MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Configuration requise pour effectuer une recherche dans le journal d’audit
@@ -73,6 +57,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
+
   La valeur `True` de la propriété *UnifiedAuditLogIn élémentsenabled* indique que vous avez activé la recherche dans le journal d’audit. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
 - Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Notez que les administrateurs généraux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l’organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
@@ -114,8 +99,12 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 - Après la survenue d’un événement, le renvoi de l'enregistrement de journal d’audit correspondant dans les résultats de la recherche d'un journal peut prendre jusqu’à 30 minutes, voir 24 heures. Le tableau suivant répertorie les délais en fonction des services dans Office 365.
 
+  <br>
+
+  ****
+
   |Service ou fonctionnalité Microsoft 365|30 minutes|24 heures|
-  |:-----|:-----:|:-----:|
+  |---|:---:|:---:|
   |Defender pour Office 365 et veille contre les menaces|![Coche](../media/checkmark.png)||
   |Azure Active Directory (événements de connexion utilisateur)||![Coche](../media/checkmark.png)|
   |Azure Active Directory (événements administrateur)||![Coche](../media/checkmark.png)|
@@ -133,9 +122,9 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   |Étiquettes de confidentialité||![Coche](../media/checkmark.png)|
   |Sharepoint Online et OneDrive Entreprise|![Coche](../media/checkmark.png)||
   |Workplace Analytics|![Coche](../media/checkmark.png)||
-  |Yammer||![Coche](../media/checkmark.png)||
-  |Microsoft Forms|![Coche](../media/checkmark.png)|
-  ||||
+  |Yammer||![Coche](../media/checkmark.png)|
+  |Microsoft Forms|![Coche](../media/checkmark.png)||
+  |
 
 - Azure Active Directory (Azure AD) est le service d’annuaire pour Office 365. Le journal d’audit unifié contient les activités des utilisateurs, des groupes, des applications, des domaines et des annuaires effectuées dans le centre d’administration Microsoft 365 ou le portail de gestion Azure. Pour consulter la liste complète des événements Azure AD, voir [Événements de rapport d’audit d’Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
