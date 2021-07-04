@@ -1,7 +1,7 @@
 ---
 title: Évaluer votre posture de sécurité via le Score de sécurité Microsoft
-description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le centre Microsoft 365 sécurité microsoft.
-keywords: score de sécurité Microsoft, score de sécurité, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
+description: Décrit comment prendre des mesures pour améliorer votre score de sécurité Microsoft dans le centre Microsoft 365 sécurité.
+keywords: score de sécurité Microsoft, score sécurisé, score de sécurité Office 365, score de sécurité Microsoft, centre de sécurité Microsoft 365, actions d’amélioration
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -11,8 +11,7 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid:
 - MOE150
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c4d4958c03bee7301465c16fef2cd4ff8adb1722
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246395"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288454"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Évaluer votre posture de sécurité avec le Niveau de sécurité Microsoft
 
@@ -36,9 +35,9 @@ Le Niveau de sécurité Microsoft est une mesure de la posture de sécurité d'u
 
 Pour vous aider à trouver les informations dont vous avez besoin plus rapidement, les actions d’amélioration de Microsoft sont organisées en groupes :
 
-* Identité (Azure Active Directory comptes & rôles)
-* Appareil (Microsoft Defender pour point de terminaison, appelé [Score de sécurité Microsoft pour les appareils)](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)
-* Applications (applications de messagerie et cloud, y compris Office 365 et Microsoft Cloud App Security)
+- Identité (Azure Active Directory comptes & rôles)
+- Appareil (Microsoft Defender pour point de terminaison, appelé [Score de sécurité Microsoft pour les appareils)](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)
+- Applications (applications de messagerie et cloud, y compris Office 365 et Microsoft Cloud App Security)
 
 >[!NOTE]
 >Dans la version récente de Microsoft Secure Score, un modèle de score amélioré a été publié, ce qui a rendu le Score de sécurisation Microsoft temporairement incompatible avec identity secure score et l’API Graph. [Afficher les détails](microsoft-secure-score-whats-new.md)
@@ -55,7 +54,7 @@ En outre, si vous sélectionnez le bouton **Inclure** en regard de votre score, 
 
 Voici les scores que vous pouvez ajouter à votre vue de votre score global pour vous donner une image plus complète de votre score global :
 
-- **Score planifié**: afficher le score projeté lorsque les actions planifiées sont terminées
+- **Score planifié :** afficher le score projeté lorsque les actions planifiées sont terminées
 - **Score de licence actuel**: afficher le score qui peut être obtenu avec votre licence Microsoft actuelle
 - **Score réalisable :** afficher le score qui peut être obtenu avec vos licences Microsoft et l’acceptation actuelle des risques
 
@@ -106,13 +105,13 @@ Les actions d’amélioration ont un état « terminé » une fois que tous les 
 
 La section appelée **En un coup d’œil** vous indique la catégorie, les attaques contre qui elle peut être protégée et le produit.
 
-**L’impact** sur les utilisateurs est ce que  les utilisateurs vont faire si l’action d’amélioration est adoptée et que les utilisateurs affectés sont les personnes qui seront affectées.
+**L’impact** sur les utilisateurs est ce que les  utilisateurs vont faire si l’action d’amélioration est adoptée et que les utilisateurs affectés sont les personnes qui seront affectées.
 
 ### <a name="implement-the-improvement-action"></a>Implémenter l’action d’amélioration
 
-La  section Implémentation présente les conditions préalables, les étapes suivantes pas à pas pour effectuer l’action d’amélioration, l’état d’implémentation actuel de l’action d’amélioration et d’autres liens.
+La  section Implémentation présente les conditions préalables, les étapes suivantes pas à pas pour effectuer l’action d’amélioration, l’état d’implémentation actuel de l’action d’amélioration et les liens supplémentaires.
 
-Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration ne soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
+Les conditions préalables incluent les licences nécessaires ou les actions à prendre avant que l’action d’amélioration soit traitée. Assurez-vous que vous avez suffisamment de sièges dans votre licence pour effectuer l’action d’amélioration et que ces licences sont appliquées aux utilisateurs nécessaires.  
 
 ## <a name="we-want-to-hear-from-you"></a>Votre avis nous intéresse
 

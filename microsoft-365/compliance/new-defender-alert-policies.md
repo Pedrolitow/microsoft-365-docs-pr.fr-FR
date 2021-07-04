@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Nous publions de nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365. Nous mettons également remplacé deux stratégies d’alerte existantes qui ont été mises hors service.
-ms.openlocfilehash: 4a433a5357a524f396935151e2c5895213c6524c
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 5791c909cc9cb94abab5d0dd013d250939fae160
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583315"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289186"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nouvelles stratégies d’alerte dans Microsoft Defender pour Office 365
 
@@ -56,7 +56,7 @@ Le tableau suivant identifie les stratégies d’alerte par défaut dont les cla
 | **Augmentation inhabituelle des e-mails signalés en tant que hameçonnage** | A00D8C62-9320-4EEA-A7E5-966B9AC09558 | Élevé| Moyen |
 | **Résultat de soumission administrateur terminé** | AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41 | Faible| Informatif |
 | **Création de règle de redirection/transfert** | D59A8FD4-1272-41EE-9408-86F7BCF72479 | Faible| Informatif |
-| **Recherche eDiscovery démarrée ou exportée**| 6FDC5710-3998-47F0-AFBB-57CEFD7378AE | Moyenne| Informatif |
+| **Recherche eDiscovery démarrée ou exportée** | 6FDC5710-3998-47F0-AFBB-57CEFD7378A | Meduim | Informatif |
 |||||
 
 ## <a name="when-will-these-changes-happen"></a>À quelle période se produiront ces modifications

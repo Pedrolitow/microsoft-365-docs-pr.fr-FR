@@ -1,6 +1,6 @@
 ---
-title: Diffuser des Microsoft 365 Defender dans Azure Event Hub
-description: Découvrez comment configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements.
+title: Diffuser Microsoft 365 Defender événements dans Azure Event Hub
+description: Découvrez comment configurer les Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements.
 keywords: exportation de données brutes, API de diffusion en continu, API, Hub d’événements Azure, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f5d04d35c8c4fec18e1a689c51ecbc32d416adf
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 2e43b75e49d01a05fdacae0adf63ea3337631dfd
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903815"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289235"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>Configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers votre Hub d’événements Azure
 
@@ -37,12 +37,14 @@ ms.locfileid: "52903815"
 
 1. Créez [un hub d’événements](/azure/event-hubs/) dans votre client.
 
-2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> s’inscrire à Microsoft.Insights**.
+2. Connectez-vous à votre client [Azure,](https://ms.portal.azure.com/)allez à Abonnements > Votre abonnement > fournisseurs de ressources **> inscrivez-vous à Microsoft.Informations**.
 
 3. Créez un espace de noms Hub d’événements, sélectionnez Hub d’événements **>** Ajoutez et sélectionnez le niveau de tarification, les unités de débit et la capacité de resserrement automatique en fonction de la charge attendue. Pour plus d’informations, voir [Tarification - Hub d’événements | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
-### <a name="add-contributor-permissions"></a>Ajouter des autorisations de collaborateur 
+### <a name="add-contributor-permissions"></a>Ajouter des autorisations de collaborateur
+
 Une fois l’espace de noms Hub d’événements créé, vous devez :
+
 1. Définissez l’utilisateur qui se connectera à Microsoft 365 Defender en tant que collaborateur.
 
 2. Si vous vous connectez à une application, ajoutez le principal du service d’inscription de l’application en tant que lecteur, récepteur de données Azure Event Hub (cette procédure peut également être effectuée au niveau du groupe de ressources ou de l’abonnement). 
@@ -51,7 +53,7 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 ## <a name="enable-raw-data-streaming"></a>Activer la diffusion en continu des données brutes
 
-1. Connectez-vous au [centre de sécurité Microsoft 365 Defender](https://security.microsoft.com) en tant qu’administrateur général * ou _*_administrateur_ de sécurité **.
+1. Connectez-vous au [centre Microsoft 365 Defender sécurité](https://security.microsoft.com) en tant qu’administrateur général * ou _*_administrateur_ de sécurité **.
 
 2. Go to the [Streaming API settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
 
@@ -75,28 +77,25 @@ Une fois l’espace de noms Hub d’événements créé, vous devez :
 
 ```JSON
 {
-    "records": [
-                    {
-                        "time": "<The time Microsoft 365 Defender received the event>"
-                        "tenantId": "<The Id of the tenant that the event belongs to>"
-                        "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
-                    }
-                    ...
-                ]
+   "records": [
+               {
+                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "tenantId": "<The Id of the tenant that the event belongs to>"
+                  "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+               }
+               ...
+            ]
 }
 ```
 
 - Chaque message Event Hub dans Azure Event Hub contient la liste des enregistrements.
 
-- Chaque enregistrement contient le nom de l’événement, l’heure à Microsoft 365 Defender a reçu l’événement, le client qu’il appartient (vous recevez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
+- Chaque enregistrement contient le nom de l’événement, l’heure à Microsoft 365 Defender reçu l’événement, le client qu’il appartient (vous obtenez uniquement les événements de votre client) et l’événement au format JSON dans une propriété appelée **«** properties ».
 
 - Pour plus d’informations sur le schéma des événements Microsoft 365 Defender, voir [vue d’ensemble de la recherche avancée.](advanced-hunting-overview.md)
 
 - Dans la recherche avancée, la table **DeviceInfo** comporte une colonne nommée **MachineGroup** qui contient le groupe de l’appareil. Ici, chaque événement est également décorée avec cette colonne. 
-
-
-
 
 ## <a name="data-types-mapping"></a>Mappage des types de données
 
@@ -105,7 +104,7 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
 1. Connectez-vous [Microsoft 365 centre de sécurité et](https://security.microsoft.com) allez à la page Recherche [avancée.](https://security.microsoft.com/hunting-package)
 
 2. Exécutez la requête suivante pour obtenir le mappage des types de données pour chaque événement :
- 
+
    ```kusto
    {EventType}
    | getschema
@@ -117,8 +116,9 @@ Pour obtenir les types de données pour les propriétés d’événement, faites
   ![Image de l’ID2 de la ressource Hub d’événements](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Voir aussi
+
 - [Vue d’ensemble du chasse avancée](advanced-hunting-overview.md)
-- [Microsoft 365 API de diffusion en continu Defender](streaming-api.md)
-- [Diffuser Microsoft 365 événements Defender sur votre compte de stockage Azure](streaming-api-storage.md)
+- [API Microsoft 365 Defender diffusion en continu](streaming-api.md)
+- [Diffuser Microsoft 365 Defender événements sur votre compte de stockage Azure](streaming-api-storage.md)
 - [Documentation Du Hub d’événements Azure](/azure/event-hubs/)
 - [Résoudre les problèmes de connectivité - Hub d’événements Azure](/azure/event-hubs/troubleshooting-guide)

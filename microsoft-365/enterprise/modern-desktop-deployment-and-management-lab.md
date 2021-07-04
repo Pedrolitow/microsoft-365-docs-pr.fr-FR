@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: En savoir plus sur le point et où pour accéder au Kit laboratoire de déploiement Windows et Office.
-ms.openlocfilehash: 3f9899726838caca678542e17206dae038c39a3d
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: 33db334ecf977b351ac963107c647c7eff414cc0
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169567"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288886"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Kit laboratoire de déploiement Windows 10 et Office 365
 
@@ -34,71 +34,71 @@ Ce kit est vivement recommandé pour les organisations qui se préparent Windows
 
 Le kit vous fournit un environnement de laboratoire virtuel configuré automatiquement, y compris les clients de bureau joints au domaine, un contrôleur de domaine, une passerelle Internet et une instance configuration manager entièrement configurée. Le kit contient les dernières versions d’évaluation des produits suivants :
 
-  - NOUVEAUTÉ ! Windows 10 Entreprise, version 21H1
-  - Windows 7 Entreprise
-  - NOUVEAUTÉ ! Microsoft Endpoint Configuration Manager, version 2103
-  - Kit de déploiement et d’évaluation Windows pour Windows 10
-  - Microsoft Deployment Toolkit
-  - Microsoft Application Virtualization (App-V)
-  - Gestion et administration de Microsoft BitLocker 
-  - Windows Server 
-  - Microsoft SQL Server 
+- NOUVEAUTÉ ! Windows 10 Entreprise, version 21H1
+- Windows 7 Entreprise
+- NOUVEAUTÉ ! Microsoft Endpoint Configuration Manager, version 2103
+- Kit de déploiement et d’évaluation Windows pour Windows 10
+- Microsoft Deployment Toolkit
+- Microsoft Application Virtualization (App-V)
+- Gestion et administration de Microsoft BitLocker
+- Windows Server
+- Microsoft SQL Server
 
-L’atelier qui en résulte est conçu pour être connecté aux essais pour : 
+L’atelier qui en résulte est conçu pour être connecté aux essais pour :
 
-  - Microsoft 365 E5
-  - Microsoft 365 Apps for enterprise
-  - Office 365 E5 avec Enterprise Mobility + Security (EMS)
+- Microsoft 365 E5
+- Applications Microsoft 365 for entreprise
+- Office 365 E5 avec Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Laboratoires détaillés
 
-Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion. Les laboratoires ont été mis à jour pour les dernières versions d’Intune et de Configuration Manager. 
+Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de déploiement et de gestion. Les laboratoires ont été mis à jour pour les dernières versions d’Intune et de Configuration Manager.
 
-### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure 
+### <a name="plan-and-prepare-infrastructure"></a>Planifier et préparer l’infrastructure
 
-- Analyses du bureau 
-- Cloud Management Gateway & Cloud Distribution Point 
+- Analyses du bureau
+- Cloud Management Gateway & Cloud Distribution Point
 - NOUVEAUTÉ ! Attachement client et cogestion
-- NOUVEAUTÉ ! Analyse des points de terminaison 
-- Accès à distance (VPN) 
+- NOUVEAUTÉ ! Analyse des points de terminaison
+- Accès à distance (VPN)
 
-### <a name="prepare-configuration"></a>Préparer la configuration   
+### <a name="prepare-configuration"></a>Préparer la configuration
 
-- Optimiser la Windows 10 des mises à jour   
+- Optimiser la Windows 10 des mises à jour
 - Maintenance Windows 10'aide de la stratégie de groupe
-- Maintenance Windows 10 l’Microsoft Intune   
-- Maintenance Windows 10 avec Configuration Manager   
-- Maintenance Applications Microsoft 365 pour les grandes entreprises l’aide de Configuration Manager   
-- Maintenance Applications Microsoft 365 pour les grandes entreprises à l’aide d’Intune  
-- Sécurité et conformité   
+- Maintenance Windows 10 l’Microsoft Intune
+- Maintenance Windows 10 avec Configuration Manager
+- Maintenance Applications Microsoft 365 pour les grandes entreprises l’aide de Configuration Manager
+- Maintenance Applications Microsoft 365 pour les grandes entreprises à l’aide d’Intune
+- Sécurité et conformité
 
-### <a name="prepare-applications"></a>Préparer les applications    
+### <a name="prepare-applications"></a>Préparer les applications
 
-- Préparation Shared Computer Toolkit pour Office  
-- Empaquetage MSIX et conversion d’applications Win32   
+- Préparation Shared Computer Toolkit pour Office
+- Empaquetage MSIX et conversion d’applications Win32
 
-### <a name="deploy-windows-10"></a>Déployer Windows 10   
+### <a name="deploy-windows-10"></a>Déployer Windows 10
 
 - Séquences de tâches de déploiement du système d’exploitation dans Configuration Manager
 - Séquences de tâches de déploiement du système d’exploitation dans microsoft Deployment Shared Computer Toolkit (MDT)
 - Windows Autopilot
-- Déployer et gérer la nouvelle Microsoft Edge  
+- Déployer et gérer la nouvelle Microsoft Edge
 
-### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Déployer les Applications Microsoft 365 pour les grandes entreprises    
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Déployer les Applications Microsoft 365 pour les grandes entreprises
 
-- Déploiement géré dans le cloud  
-- Déploiement géré localement    
-- Applications Microsoft 365 pour les grandes entreprises Déploiement sur des appareils non joints à AD 
+- Déploiement géré dans le cloud
+- Déploiement géré localement
+- Applications Microsoft 365 pour les grandes entreprises Déploiement sur des appareils non joints à AD
 - Enterprise géré à l’aide de Configuration Manager
-- Enterprise gestion à l’aide de Microsoft Intune  
+- Enterprise gestion à l’aide de Microsoft Intune
 - Déploiement et gestion des objets LOB avec Microsoft Intune
 - Déployer Microsoft Teams
-- NOUVEAUTÉ ! Filtres d’affectation  
+- NOUVEAUTÉ ! Filtres d’affectation
 
-### <a name="deploy-windows-virtual-desktop"></a>Déployer Windows Virtual Desktop  
+### <a name="deploy-windows-virtual-desktop"></a>Déployer Windows Virtual Desktop
 
 - Préparer, déployer, optimiser
- 
+
 ## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>Où trouver le kit de laboratoire de déploiement Windows 10 et Office 365 de déploiement
 
 [Télécharger le Kit laboratoire de déploiement Windows et Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
@@ -108,16 +108,16 @@ Des guides de laboratoire détaillés vous guident dans plusieurs scénarios de 
 
 ## <a name="additional-guidance"></a>Conseils supplémentaires
 
-  - [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](https://www.aka.ms/watchhowtoshift)
-  - [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-  - [Plan de déploiement de Windows 10](/windows/deployment/planning/index)
-  - [Guide de déploiement des Applications Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
-  - [Mise en route d’Intune](/intune/get-started-evaluation)
+- [Série de vidéos de Microsoft Mechanics consacrées au déploiement des ordinateurs de bureau](https://www.aka.ms/watchhowtoshift)
+- [Déploiement du système d’exploitation Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+- [Plan de déploiement de Windows 10](/windows/deployment/planning/index)
+- [Guide de déploiement des Applications Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Mise en route d’Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Ressources connexes
 
-  - [Présentation de Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
-  - [Office 365 pour les entreprises](https://products.office.com/business/office)
-  - [Présentation de la suite Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-  - [Windows 10 Entreprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-  - [Windows 10 pour les petites et moyennes entreprises](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+- [Présentation de Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
+- [Office 365 pour les entreprises](https://products.office.com/business/office)
+- [Présentation de la suite Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+- [Windows 10 Entreprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+- [Windows 10 pour les petites et moyennes entreprises](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Si vous avez moins de 25 licences d'utilisateur, vous pouvez annuler votre version d'essai ou votre abonnement payant de Microsoft 365 pour entreprise dans le centre d'administration.
 ms.date: 04/08/2021
-ms.openlocfilehash: 18e7ca5cec91e1614808f2087ce0394f33a45c7a
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: d327a09eba06e9a2bbc92959b6048649b41b72fe
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950082"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256794"
 ---
 # <a name="cancel-your-subscription"></a>Annuler un abonnement
 
@@ -82,7 +82,7 @@ Votre abonnement présente désormais l’état **Désactivé** et propose des f
 
 Si vous annulez un abonnement avant son expiration, son statut passe directement à l'état « Désactivé ». Pour la plupart des abonnements et dans la plupart des pays et régions, l'état désactivé dure 90 jours. Quand un abonnement est en état désactivé, les administrateurs peuvent toujours consulter et sauvegarder les données pour leur organisation, mais nous recommandons que les administrateurs [sauvegardent les données](back-up-data-before-switching-plans.md) d'un abonnement avant l'annulation de celui-ci, en particulier s'il s'agit de leur seul abonnement. Les administrateurs peuvent également réactiver l’abonnement tant qu’il est à l’état « Désactivé ».
 
-Après 90 jours, l’abonnement passe à l’état « Supprimé ». Toutes les données dépendantes de cet abonnement seront supprimées pas plus tard que 90 jours après le passage à cet état. Vous ne pouvez retirer un mode de paiement d’un abonnement annulé qu’une fois cet état « Supprimé » atteint.
+L’abonnement passe à l’état supprimé après 90 jours. Toutes les données dépendantes de cet abonnement seront supprimées pas plus tard que 90 jours après le passage à cet état. Vous ne pouvez retirer un mode de paiement d’un abonnement annulé qu’une fois cet état « Supprimé » atteint.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Voici ce à quoi vous et vos utilisateurs devez vous attendre si vous annulez un abonnement.
   

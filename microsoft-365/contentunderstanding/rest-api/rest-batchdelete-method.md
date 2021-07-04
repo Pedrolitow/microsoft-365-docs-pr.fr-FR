@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Utilisez l’API REST pour supprimer un modèle appliqué de compréhension de document à partir d’une ou plusieurs bibliothèques.
-ms.openlocfilehash: e95c0583b1b0e2f5de08228afbf161c339544047
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: bbd3e496b50d3fddb31342fbc07d30984544e744
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177236"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287452"
 ---
 # <a name="batchdelete"></a>BatchDelete
 
@@ -47,6 +47,7 @@ Aucun
 |Publications|oui|MachineLearningPublicationEntityData[]|La collection de chaque MachineLearningPublicationEntityData qui spécifie le modèle et la bibliothèque de documents cible.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nom | Obligatoire | Type | Description |
 |--------|-------|--------|------------|
 |ModelUniqueId|oui|chaîne|L'ID unique du fichier modèle.|
@@ -61,6 +62,7 @@ Aucun
 |200 OK||Il s’agit d’une API personnalisée pour prendre en charge la suppression d’un modèle de plusieurs bibliothèques de documents. Dans le cas d’une réussite partielle, 200 OK créé peut encore être renvoyé et l’appelant doit inspecter le corps de la réponse pour savoir si le modèle a été correctement supprimé d’une bibliothèque de documents.|
 
 ## <a name="response-body"></a>Corps de la réponse
+
 | Nom   | Type  | Description|
 |--------|-------|------------|
 |TotalSuccesses|int|Le nombre total de suppressions réussies d’un modèle dans une bibliothèque de documents.|
@@ -68,13 +70,15 @@ Aucun
 |Détails|MachineLearningPublicationResult[]|La collection de chaque MachineLearningPublicationResult qui spécifie le résultat détaillé de la suppression du modèle dans une bibliothèque de documents.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Nom   | Type  | Description|
 |--------|-------|------------|
-|StatusCode (lecture seule)|int|Le code d’état HTTP.|
+|StatusCode|int|Le code d’état HTTP.|
 |ErrorMessage|chaîne|Le message d’erreur indiquant le problème lors de l’application du modèle à la bibliothèque de documents.|
 |Publication|MachineLearningPublicationEntityData|Il s’agit des informations sur le modèle et la bibliothèque de documents cible.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nom | Type | Description |
 |--------|--------|------------|
 |ModelUniqueId|chaîne|L'ID unique du fichier modèle.|
@@ -102,7 +106,6 @@ Dans cet exemple, l’ID du modèle de compréhension de document du Contrat Con
     ] 
 } 
 ```
-
 
 #### <a name="sample-response"></a>Exemple de réponse
 

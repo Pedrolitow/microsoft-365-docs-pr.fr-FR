@@ -11,12 +11,12 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 734edbb462193291b6bd2fb4a8e6afc3a0b709cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8a1b61088d0a1594bf1a71542158ade389cce2ab
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928247"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288514"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importer un ensemble de termes avec un format SKOS
 
@@ -29,16 +29,16 @@ Nous vous recommandons d’inclure moins de 20 000 termes dans vos fichiers d�
 2. Sélectionnez le groupe de termes où vous souhaitez importer l’ensemble de termes.
 
 3. Dans la barre de commandes, cliquez sur **Importer l’ensemble de termes**.
- 
-4.  Si vous voulez télécharger un fichier échantillon à utiliser en tant que modèle, cliquez sur **sample-metadata.ttl** pour obtenir un exemple de fichier qui utilise le format SKOS.
- 
-5.  Créez le fichier d’importation contenant les ensembles de termes et les termes à importer.
 
-6.  Sous **Format de fichier**, sélectionnez **SKOS (*.ttl)**.
+4. Si vous voulez télécharger un fichier échantillon à utiliser en tant que modèle, cliquez sur **sample-metadata.ttl** pour obtenir un exemple de fichier qui utilise le format SKOS.
 
-7.  Cliquez sur **Parcourir**, puis ajoutez votre fichier d’importation.
+5. Créez le fichier d’importation contenant les ensembles de termes et les termes à importer.
 
-8.  Cliquez sur **Importer**. Ne fermez le panneau qu’une fois l’importation terminée.
+6. Sous **Format de fichier**, sélectionnez **SKOS (*.ttl)**.
+
+7. Cliquez sur **Parcourir**, puis ajoutez votre fichier d’importation.
+
+8. Cliquez sur **Importer**. Ne fermez le panneau qu’une fois l’importation terminée.
 
 Une fois le fichier correctement importé, un message de réussite s’affiche, puis le magasin de termes est actualisé. Vous pouvez alors accéder aux nouveaux ensembles de termes récemment créés.
 

@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 7f8d3b10cee0b3c4a561dfd1f7567fa9818e7686
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772388"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289462"
 ---
 # <a name="create-alert-api"></a>CRÉER une API d’alerte
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,35 +39,37 @@ ms.locfileid: "52772388"
 
 
 ## <a name="api-description"></a>Description de l’API
-Crée une [alerte en](alerts.md) haut de **l’événement.**
-<br>**L’événement Microsoft Defender for Endpoint est** requis pour la création de l’alerte.
-<br>Vous devez fournir 3 paramètres à partir de l’événement dans la demande : l’heure de l’événement, **l’ID** de l’ordinateur et **l’ID de rapport.** Voir l’exemple ci-dessous.
-<br>Vous pouvez utiliser un événement trouvé dans l’API de recherche avancée ou le portail.
-<br>S’il existe une alerte ouverte sur le même appareil avec le même titre, la nouvelle alerte créée est fusionnée avec elle.
-<br>Un examen automatique démarre automatiquement sur les alertes créées via l’API.
 
+Crée une [alerte en](alerts.md) haut de **l’événement.**
+
+- **Microsoft Defender for Endpoint Event est** requis pour la création de l’alerte.
+- Vous devez fournir 3 paramètres à partir de l’événement dans la demande : l’heure de l’événement, **l’ID** de l’ordinateur et **l’ID de rapport.** Voir l’exemple ci-dessous.
+- Vous pouvez utiliser un événement trouvé dans l’API de recherche avancée ou le portail.
+- S’il existe une alerte ouverte sur le même appareil avec le même titre, la nouvelle alerte créée est fusionnée avec elle.
+- Un examen automatique démarre automatiquement sur les alertes créées via l’API.
 
 ## <a name="limitations"></a>Limites
-1. Les limites de taux pour cette API sont de 15 appels par minute.
 
+1. Les limites de taux pour cette API sont de 15 appels par minute.
 
 ## <a name="permissions"></a>Autorisations
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Alerts.ReadWrite.All |  « Lire et écrire toutes les alertes »
+Application | Alerts.ReadWrite.All | « Lire et écrire toutes les alertes »
 Déléguée (compte professionnel ou scolaire) | Alert.ReadWrite | « Lire et écrire des alertes »
 
->[!Note]
+> [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
->- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
->- L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
+>
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Enquête sur les alertes » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil associé à l’alerte, en fonction des paramètres de groupe d’appareils (pour plus d’informations, voir Créer et gérer des groupes d’appareils) [](machine-groups.md)
 
 ## <a name="http-request"></a>Requête HTTP
 
-```
+```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
 ```
 
@@ -99,7 +101,7 @@ Si elle réussit, cette méthode renvoie 200 OK et un nouvel objet [d’alerte](
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 

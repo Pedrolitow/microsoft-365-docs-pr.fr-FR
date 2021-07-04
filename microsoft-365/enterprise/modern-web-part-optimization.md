@@ -21,26 +21,26 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Découvrez comment utiliser les diagnostics de page pour optimiser les performances des composants Web SharePoint pages de sites modernes en ligne.
-ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fab5b0bc9d0b04ede0815856af7366e277dbf909
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929059"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288898"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimiser les performances des composants WebPart dans les pages de sites modernes SharePoint Online
 
 Les pages de sites modernes SharePoint Online contiennent des composants WebPart qui peuvent augmenter le temps de chargement général de la page. Cet article vous permet de comprendre comment déterminer la façon dont les composants WebPart présents dans vos pages affectent la latence perçue par l’utilisateur et comment résoudre les problèmes courants.
 
->[!NOTE]
->Pour plus d’informations sur les performances dans les portails modernes SharePoint Online, consultez [Performances offertes par l’expérience moderne de SharePoint](/sharepoint/modern-experience-performance).
+> [!NOTE]
+> Pour plus d’informations sur les performances dans les portails modernes SharePoint Online, consultez [Performances offertes par l’expérience moderne de SharePoint](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Utiliser l’outil Diagnostic de page pour SharePoint pour analyser les composants WebPart
 
 L’outil Diagnostic de page pour SharePoint est une extension de navigateur pour le nouveau Microsoft Edge (les navigateurs https://www.microsoft.com/edge) et Chrome que vous pouvez utiliser pour analyser les pages de sites de publication SharePoint classiques et les portails modernes. L’outil fournit un rapport pour chaque page analysée montrant comment la page se comporte par rapport à un ensemble défini de critères de performance. Pour installer et découvrir l’outil Diagnostic de page pour SharePoint, consultez [Utiliser l’outil Diagnostic de page pour SharePoint Online](page-diagnostics-for-spo.md).
 
->[!NOTE]
->L’outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
+> [!NOTE]
+> L’outil Diagnostic de page fonctionne uniquement pour SharePoint Online et ne peut pas être utilisé sur une page système SharePoint.
 
 Lorsque vous analysez une page de site SharePoint avec l’outil Diagnostic de page pour SharePoint, vous pouvez voir des informations sur les composants WebPart qui dépassent la métrique de référence dans le résultat _Les composants WebPart ont un impact sur le temps de chargement de la page_ dans le volet **Tests de diagnostic**.
 
@@ -56,16 +56,19 @@ Si le résultat **Les composants WebPart ont un impact sur le temps de chargemen
 
 Les informations disponibles dans les résultats incluent les éléments suivants :
 
-- **L’élément** « Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
+- **L’élément «** Made by » indique si le partie Web Est personnalisé ou Microsoft OOTB.
 - **Le nom et l’ID** indiquent les informations d’identification qui peuvent vous aider à trouver le partie Web Sur la page.
 - **Total** indique la durée totale du chargement, de l’initialisation et du rendu du module par le partie Web. Il s’agit du temps relatif total pris par le partie Web Pour restituer sur la page, du début à la fin.
-- **Le chargement du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
+- **La charge du** module indique le temps de téléchargement, d’évaluation et de chargement des fichiers JavaScript et CSS des extensions. Il démarre ensuite le processus Init.
 - **La charge différée** indique le temps de chargement différé des composants Web Parts qui ne sont pas visibles dans la section principale de la page. Dans certaines conditions, il y a trop de composants Web Parts à restituer, et ils sont mis en file d’attente pour être restituer afin de réduire le temps de chargement de la page.
 - **Init indique** le temps qu’a pris le partie Web Pour initialiser les données.
-    Il s’agit d’un appel asynchrone et le temps d’init est le calcul du temps pour la fonction onInit lorsque la promesse renvoyée est résolue.
+
+  Il s’agit d’un appel asynchrone et le temps d’init est le calcul du temps pour la fonction onInit lorsque la promesse renvoyée est résolue.
+
 - **Le** rendu indique le temps de rendu de l’interface utilisateur (interface utilisateur) une fois le chargement du module et Init terminés.
-    Il est temps d’exécution JavaScript pour monter le DOM dans le document (page).
-    Le rendu des ressources asynchrones, par exemple les images, peut prendre plus de temps.
+
+  Il est temps d’exécution JavaScript pour monter le DOM dans le document (page).
+  Le rendu des ressources asynchrones, par exemple les images, peut prendre plus de temps.
 
 Ces informations sont fournies pour aider les concepteurs et les développeurs à résoudre les problèmes. Ces informations doivent être fournies à votre équipe de conception et de développement.
 

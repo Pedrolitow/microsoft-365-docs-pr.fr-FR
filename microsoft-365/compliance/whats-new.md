@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que ce soit l’ajout de nouvelles solutions au centre de conformité, la mise à jour des fonctionnalités existantes en fonction de vos commentaires ou le déploiement d’une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6cd82e66a0b01f4cd329d846cf43581759dec0b6
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228458"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288130"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -201,7 +201,7 @@ Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 - [En savoir plus sur Microsoft 365 protection contre la perte de données sur site](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
 - [Mise en place du scanneur local de protection contre la perte de données](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
 - [Créer une stratégie DLP pour protéger les documents avec l’ICF ou d’autres propriétés](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Utilisation des points de terminaison protection contre la perte de données](/microsoft-365/compliance/endpoint-dlp-using)
+- [Utilisation de la prévention des pertes de données sur les points de terminaison](/microsoft-365/compliance/endpoint-dlp-using)
 - [Prise en main de la protection contre la perte de données de point de terminaison](/microsoft-365/compliance/endpoint-dlp-getting-started)
 
 ### <a name="ediscovery"></a>eDiscovery
@@ -242,7 +242,7 @@ Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 - [En savoir plus sur les types d’informations confidentielles](/microsoft-365/compliance/sensitive-information-type-learn-about).
 - [Créer un type d’informations sensibles personnalisé à l’aide de PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [Créer des types d’informations sensibles personnalisés avec une classification exacte basée sur la correspondance de données](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Définitions des entités de type information sensible](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [Définitions d’entités des types d’informations sensibles](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 

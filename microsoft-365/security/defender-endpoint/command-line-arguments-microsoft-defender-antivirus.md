@@ -15,23 +15,23 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 25f038846f9dd9855823382d4e1babcf0547fed6
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: efeb49b2741bdc45f7924032c2deb8a27458ca29
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636169"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289414"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurer et gérer les Antivirus Microsoft Defender l’outil mpcmdrun.exe ligne de commande
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](/microsoft-365/security/defender-endpoint/)
 
-Vous pouvez effectuer différentes fonctions dans Antivirus Microsoft Defender à l’aide de l’outil en ligne de commande **dédiémpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Antivirus Microsoft Defender tâches. Vous trouverez l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Exécutez-le à partir d’une invite de commandes.
+Vous pouvez effectuer différentes fonctions dans Antivirus Microsoft Defender à l’aide de l’outil en ligne de commande **dédiémpcmdrun.exe**. Cet utilitaire est utile lorsque vous souhaitez automatiser Antivirus Microsoft Defender tâches. Vous pouvez trouver l’utilitaire dans `%ProgramFiles%\Windows Defender\MpCmdRun.exe` . Exécutez-le à partir d’une invite de commandes.
 
 > [!TIP]
-> Vous devrez peut-être ouvrir une version de niveau administrateur de l’invite de commandes. Lorsque vous recherchez **l’invite de commandes** dans le menu Démarrer, choisissez **Exécuter en tant qu’administrateur.** Si vous exécutez une version mise à jour de la plateforme Microsoft Defender, exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` Pour plus d’informations sur la plateforme anti-programme malveillant, voir Antivirus Microsoft Defender mises à jour [et les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md)
+> Vous devrez peut-être ouvrir une version de niveau administrateur de l’invite de commandes. Lorsque vous recherchez **l’invite de** commandes sur le menu Démarrer, choisissez **Exécuter en tant qu’administrateur.** Si vous exécutez une version mise à jour de la plateforme Microsoft Defender, exécutez-la à `MpCmdRun` partir de l’emplacement suivant : `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` Pour plus d’informations sur la plateforme anti-programme malveillant, voir Antivirus Microsoft Defender mises à jour [et les lignes de base.](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 L’utilitaire MpCmdRun utilise la syntaxe suivante :
 
@@ -51,7 +51,7 @@ Dans notre exemple, l’utilitaire MpCmdRun démarre une analyse antivirus compl
 
 | Command  | Description   |
 |:----|:----|
-| `-?`**ou**`-h`   | Affiche toutes les options disponibles pour l’outil MpCmdRun |
+| `-?` **ou** `-h`   | Affiche toutes les options disponibles pour l’outil MpCmdRun |
 | `-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Recherche les logiciels malveillants. Les valeurs **de ScanType** sont :<p>**0 Par** défaut, en fonction de votre configuration<p>**1 Analyse** rapide<p>**2 Analyse** complète<p>**3 Analyse** personnalisée de fichier et d’annuaire.<p>CpuThrottling s’exécute en fonction des configurations de stratégie |
 | `-Trace [-Grouping #] [-Level #]` | Démarre le suivi des diagnostics |
 | `-GetFiles [-SupportLogLocation <path>]` | Collecte des informations de support. Voir «[Collecte des données de diagnostic](collect-diagnostic-data.md)»  |
@@ -73,7 +73,7 @@ Le tableau suivant répertorie les erreurs courantes qui peuvent se produire lor
 
 |Message d’erreur | Raison possible |
 |:----|:----|
-| **ValidateMapsConnection a échoué (800106BA)** **ou 0x800106BA** | Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. Si vous avez besoin d’aide pour réactiver Antivirus Microsoft Defender, voir [Réinstaller/activer Antivirus Microsoft Defender sur vos points de terminaison.](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p>   **CONSEIL**  Dans Windows 10 1909 ou plus, et Windows Server 2019 ou plus ancien, le service était auparavant appelé *Antivirus Windows Defender*. |
+| **ValidateMapsConnection a échoué (800106BA)** **ou 0x800106BA** | Le service Antivirus Microsoft Defender est désactivé. Activez le service et essayez à nouveau. Si vous avez besoin d’aide pour réactiver Antivirus Microsoft Defender, voir [Réinstaller/activer Antivirus Microsoft Defender sur vos points de terminaison.](switch-to-microsoft-defender-setup.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints)<p> **CONSEIL**: dans Windows 10 1909 ou plus, et Windows Server 2019 ou plus ancien, le service était auparavant appelé *Antivirus Windows Defender*. |
 | **0x80070667** | Vous exécutez la commande à partir d’un ordinateur qui Windows 10 version 1607 ou antérieure, ou qui `-ValidateMapsConnection` Windows Server 2016 ou une version antérieure. Exécutez la commande à partir d’un ordinateur Windows 10 version 1703 ou plus récente, ou Windows Server 2019 ou version plus récente.|
 | **MpCmdRun n’est pas reconnu comme une commande interne ou externe, un programme opérable ou un fichier de commandes.** | L’outil doit être exécuté à partir de l’un ou de l’autre (où il peut être différent puisque les mises à jour de plateforme `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` sont `2012.4-0` mensuelles à l’exception de mars)|
 | **ValidateMapsConnection n’a pas pu établir de connexion à MAPS (hr=80070005 httpcode=450)** | La commande a été tentée à l’aide de privilèges insuffisants. Utilisez l’invite de commandes (cmd.exe) en tant qu’administrateur.|

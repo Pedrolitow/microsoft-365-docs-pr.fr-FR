@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Utilisez l’Éditeur de communications pour modifier le texte et fusionner des variables de champ lors de la mise en forme de votre contenu.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 26076ff82ba226c2993c7c40e36bca2e08cbf683
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769159"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288118"
 ---
 # <a name="use-the-communications-editor"></a>Utiliser l’éditeur de communications
 
@@ -40,11 +40,15 @@ Vous pouvez utiliser des champs  de fusion et de fusion en sélectionnant les ic
 
 ### <a name="list-of-merge-field-variables"></a>Liste des variables de champ de fusion
 
-| Nom du champ                  | Détails du champ |
-| :------------------- | :------------------- |
-| Nom d’affichage  | Prénom et nom du dépositaire. | 
-| Lien d’accusé de réception | Lien personnalisé pour enregistrer l’accusé de réception de chaque dépositaire.|                 |
-| Lien portail     | Lien personnalisé pour le portail de conformité du dépositaire.|                |
-| Responsable de l’émission                   | Adresse de messagerie du responsable de l’émission spécifié.|                   |
-| Date d’émission                   | Date à laquelle l’avis a été émis (UTC).              |
-|||
+<br>
+
+****
+
+|Nom du champ|Détails du champ|
+|---|---|
+|Nom d’affichage|Prénom et nom du dépositaire.|
+|Lien d’accusé de réception|Lien personnalisé pour enregistrer l’accusé de réception de chaque dépositaire.|
+|Lien portail|Lien personnalisé pour le portail de conformité du dépositaire.|
+|Responsable de l’émission|Adresse de messagerie du responsable de l’émission spécifié.|
+|Date d’émission|Date à laquelle l’avis a été émis (UTC).|
+|

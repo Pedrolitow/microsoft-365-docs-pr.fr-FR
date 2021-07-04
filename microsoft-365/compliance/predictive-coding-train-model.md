@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 84bb34f8ec1b935dc30072e16f57b5f5665c3546
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 84ec1ad42f2cec2487debe7160a3f24e09bdd830
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226214"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288190"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>Former un modèle de codage prédictif (prévisualisation)
 
@@ -67,11 +67,15 @@ Une fois que vous avez effectué la première série de formations, un travail e
 
 - Le modèle affecte un score de prédiction aux 10 éléments du jeu de contrôles que vous avez étiquetés pendant la série d’entraînement. Le modèle compare le score de prédiction de ces 10 éléments à l’étiquette réelle que vous avez affectée à l’élément pendant la série de formation. Sur la base de cette comparaison, le modèle identifie la classification suivante (appelée matrice de *confusion* du jeu de contrôles) pour évaluer les performances de prévision du modèle :
 
-  |          |L’élément de prévision de modèle est pertinent |L’élément de prévision de modèle n’est pas pertinent |
-  |:---------|:---------|:---------|
-  |**Élément d’étiquettes de relecteur pertinent**| Vrai positif| Faux positif |
-  |**Élément d’étiquettes de relecteur non pertinent**| Faux négatif |Vrai négatif |
-  ||||
+  <br>
+
+  ****
+
+  |Étiquette|L’élément de prévision de modèle est pertinent|L’élément de prévision de modèle n’est pas pertinent|
+  |---|---|---|
+  |**Élément d’étiquettes de relecteur pertinent**|Vrai positif|Faux positif|
+  |**Élément d’étiquettes de relecteur non pertinent**|Faux négatif|Vrai négatif|
+  |
 
   Sur la base de ces comparaisons, le modèle dérive des valeurs pour les mesures F-score, precision et recall et de la marge d’erreur pour chacune d’elles. Les scores pour ces mesures de performances de modèle sont affichés sur une page volante pour la série de formation. Pour obtenir une description de ces mesures, voir la référence [de codage prédictif.](predictive-coding-reference.md)
 

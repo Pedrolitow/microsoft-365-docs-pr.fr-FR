@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c578a353501ac7b38ac541b0200ffaad1d6743e1
-ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
+ms.openlocfilehash: 2e051803a4cd228e3b455ec08b30e5c2197ca9a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52888447"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289606"
 ---
 # <a name="get-incident-information-api"></a>API Obtenir des informations sur l’incident
 
@@ -38,27 +38,31 @@ ms.locfileid: "52888447"
 
 
 ## <a name="api-description"></a>Description de l’API
+
 Récupère un incident spécifique par son ID
 
-
 ## <a name="limitations"></a>Limites
+
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. 
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Incident.Read.All | « Lire tous les incidents »
-Application |   Incident.ReadWrite.All |    « Lire et écrire tous les incidents »
+Application | Incident.Read.All | « Lire tous les incidents »
+Application | Incident.ReadWrite.All | « Lire et écrire tous les incidents »
 Déléguée (compte professionnel ou scolaire) | Incident.Read | ' Read Incidents'
 Déléguée (compte professionnel ou scolaire) | Incident.ReadWrite | « Lire et écrire des incidents »
 
->[!Note]
+> [!NOTE]
+>
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
->- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données »
->- La réponse inclut uniquement les incidents que l’utilisateur est exposé à
+>
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Afficher les données »
+> - La réponse inclut uniquement les incidents que l’utilisateur est exposé à
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -72,8 +76,8 @@ Nom | Type | Description
 :---|:---|:---
 Autorisation | String | Porteur {token}. **Obligatoire**.
 
-
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse

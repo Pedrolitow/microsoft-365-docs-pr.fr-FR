@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5546b69fa924025491e1762d199678fa549a9c7c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 695dfbec007b259b7daec2346201737d57c4ad30
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842145"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289774"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Accès des partenaires via les API microsoft Defender pour les points de terminaison
 
@@ -52,7 +52,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 ## <a name="create-the-multi-tenant-app"></a>Créer l’application multi-client
 
-1. Connectez-vous à votre [client Azure avec](https://portal.azure.com) un utilisateur qui a le rôle **Administrateur** général.
+1. Connectez-vous à votre [client Azure avec](https://portal.azure.com) un utilisateur ayant le rôle **Administrateur** général.
 
 2. Accédez à **Azure Active Directory**  >  **Inscription de l’application Nouvelle**  >  **inscription.** 
 
@@ -60,13 +60,13 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 3. Dans le formulaire d’inscription :
 
-    - Choisissez un nom pour votre application.
+   - Choisissez un nom pour votre application.
 
-    - Types de comptes pris en charge : comptes dans n’importe quel annuaire d’organisation.
+   - Types de comptes pris en charge : comptes dans n’importe quel annuaire d’organisation.
 
-    - URI de redirection - type : Web, URI : https://portal.azure.com
+   - URI de redirection - type : Web, URI : https://portal.azure.com
 
-    ![Image de l’Microsoft Azure d’application partenaire](images/atp-api-new-app-partner.png)
+   ![Image de l’Microsoft Azure d’application partenaire](images/atp-api-new-app-partner.png)
 
 
 4. Autorisez votre application à accéder à Microsoft Defender pour le point de terminaison et à l’affecter avec le jeu minimal d’autorisations requis pour terminer l’intégration.
@@ -83,7 +83,7 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
    - Pour [exécuter des requêtes avancées,](run-advanced-query-api.md)sélectionnez l’autorisation « Exécuter des requêtes avancées »
    
-   - Pour [isoler un appareil, sélectionnez](isolate-machine.md)l’autorisation « Isoler l’ordinateur »
+   - Pour [isoler un appareil,](isolate-machine.md)sélectionnez l’autorisation « Isoler l’ordinateur »
 
    Dans l’exemple suivant, nous allons utiliser **l’autorisation** « Lire toutes les alertes » :
 
@@ -92,15 +92,15 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
    ![autorisations des apps](images/application-permissions.png)
 
 
-5. Sélectionner **Accorder le consentement**
+5. Sélectionnez **Accorder le consentement**
 
-    - **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner l’autorisation **Accorder le consentement** pour que la nouvelle autorisation prenne effet.
+   - **Remarque**: chaque fois que vous ajoutez une autorisation, vous devez sélectionner accordez **l’autorisation** pour que la nouvelle autorisation prenne effet.
 
-    ![Image de l’octroi d’autorisations](images/grant-consent.png)
+   ![Image de l’octroi d’autorisations](images/grant-consent.png)
 
-6. Ajoutez une secret à l’application.
+6. Ajoutez un secret à l’application.
 
-    - Select **Certificates & secrets,** add description to the secret and select **Add**.
+   - Select **Certificates & secrets,** add description to the secret and select **Add**.
 
     **Important**: après avoir cliqué sur Ajouter, **copiez la valeur de secret générée.** Vous ne pourrez plus récupérer une fois que vous êtes parti !
 
@@ -114,36 +114,36 @@ Les étapes suivantes vous guident pour créer une application Azure AD, obtenir
 
 8. Ajoutez l’application au client de votre client.
 
-    Votre application doit être approuvée dans chaque client où vous avez l’intention de l’utiliser. En effet, votre application interagit avec Microsoft Defender pour l’application Endpoint pour le compte de votre client.
+   Votre application doit être approuvée dans chaque client où vous avez l’intention de l’utiliser. En effet, votre application interagit avec Microsoft Defender pour l’application Endpoint pour le compte de votre client.
 
-    Un utilisateur dont **l’administrateur général** est issu du client de votre client doit sélectionner le lien de consentement et approuver votre application.
+   Un utilisateur dont **l’administrateur général** est issu du client de votre client doit sélectionner le lien de consentement et approuver votre application.
 
-    Le lien de consentement est de la forme :
+   Le lien de consentement est de la forme :
 
-    ```
-    https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
-    ```
+   ```http
+   https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
+   ```
 
-    Où 000000000-0000-0000-0000-000000000000 doit être remplacé par votre ID d’application
+   Où 000000000-0000-0000-0000-000000000000 doit être remplacé par votre ID d’application
 
-    Après avoir cliqué sur le lien de consentement, connectez-vous avec l’administrateur général du client du client et consentez à l’application.
+   Après avoir cliqué sur le lien de consentement, connectez-vous avec l’administrateur général du client du client et consentez à l’application.
 
-    ![Image de consentement](images/app-consent-partner.png)
+   ![Image de consentement](images/app-consent-partner.png)
 
-    En outre, vous devrez demander à votre client son ID de locataire et l’enregistrer pour une utilisation ultérieure lors de l’acquisition du jeton.
+   En outre, vous devrez demander à votre client son ID de locataire et l’enregistrer pour une utilisation ultérieure lors de l’acquisition du jeton.
 
-- **Terminé !** Vous avez réussi à inscrire une application ! 
+- **Terminé !** Vous avez réussi à inscrire une application !
 - Voir les exemples ci-dessous pour l’acquisition et la validation des jetons.
 
-## <a name="get-an-access-token-example"></a>Obtenir un exemple de jeton d’accès :
+## <a name="get-an-access-token-example"></a>Obtenir un exemple de jeton d’accès
 
 **Remarque :** Pour obtenir un jeton d’accès au nom de votre client, utilisez l’ID de locataire du client sur les acquisitions de jeton suivantes.
 
-<br>Pour plus d’informations sur le jeton AAD, voir [le didacticiel AAD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Pour plus d’informations sur le jeton AAD, voir [le didacticiel AAD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-powershell"></a>Utiliser PowerShell
 
-```
+```powershell
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
 # Paste below your Tenant ID, App ID and App Secret (App key).
 
@@ -165,21 +165,21 @@ Out-File -FilePath "./Latest-token.txt" -InputObject $token
 return $token
 ```
 
-### <a name="using-c"></a>À l’C# :
+### <a name="using-c"></a>Utilisation de C #
 
->Le code ci-dessous a été testé avec Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
+> Le code ci-dessous a été testé avec Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
 
 - Créer une application console
 - Installer NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - Ajouter les valeurs ci-dessous à l’aide
 
-    ```
+    ```console
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
-- Copiez/collez le code ci-dessous dans votre application (n’oubliez pas de mettre à jour les trois variables : ```tenantId, appId, appSecret``` )
+- Copiez/collez le code ci-dessous dans votre application (n’oubliez pas de mettre à jour les trois variables : `tenantId` `appId` , et `appSecret` )
 
-    ```
+    ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
@@ -192,7 +192,6 @@ return $token
     AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
     string token = authenticationResult.AccessToken;
     ```
-
 
 ### <a name="using-python"></a>Utilisation de Python
 
@@ -209,19 +208,20 @@ Voir Obtenir [un jeton à l’aide de Python](run-advanced-query-sample-python.m
 - Définissez TENANT_ID sur l’ID de client Azure du client qui souhaite utiliser votre application pour accéder à Microsoft Defender pour l’application Endpoint
 - Exécutez la commande ci-dessous :
 
-```
+```curl
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 Vous recevez une réponse du formulaire :
 
-```
+```console
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
 ```
 
 ## <a name="validate-the-token"></a>Valider le jeton
 
 Vérifiez que vous avez reçu un jeton correct :
+
 - Copier/coller dans [JWT](https://jwt.ms) le jeton que vous obtenez à l’étape précédente afin de le décoder
 - Valider que vous obtenez une revendication « rôles » avec les autorisations souhaitées
 - Dans la capture d’écran ci-dessous, vous pouvez voir un jeton décodé acquis à partir d’une application avec plusieurs autorisations pour Microsoft Defender pour le point de terminaison :
@@ -231,12 +231,13 @@ Vérifiez que vous avez reçu un jeton correct :
 
 ## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>Utiliser le jeton pour accéder à l’API Microsoft Defender for Endpoint
 
-- Choisissez l’API que vous souhaitez utiliser, pour plus d’informations, voir API De Microsoft Defender pris en charge pour [les points de terminaison](exposed-apis-list.md)
-- Définissez l’en-tête Authorization dans la requête Http que vous envoyez à « Bearer {token} » (le porteur est le schéma d’autorisation)
+- Choisissez l’API que vous souhaitez utiliser, pour plus d’informations, voir API De Microsoft Defender pris en [charge pour les points de terminaison](exposed-apis-list.md)
+- Définissez l’en-tête d’autorisation dans la requête Http que vous envoyez à « Bearer {token} » (le porteur est le schéma d’autorisation)
 - Le délai d’expiration du jeton est de 1 heure (vous pouvez envoyer plusieurs demandes avec le même jeton)
 
-- Exemple d’envoi d’une demande pour obtenir une liste d’alertes à **l’aide C#** 
-    ```
+- Exemple d’envoi d’une demande pour obtenir une liste d’alertes à **l’aide C#**
+
+    ```csharp
     var httpClient = new HttpClient();
 
     var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
@@ -249,5 +250,6 @@ Vérifiez que vous avez reçu un jeton correct :
     ```
 
 ## <a name="see-also"></a>Voir aussi
-- [API prises en charge Microsoft Defender pour point de terminaison](exposed-apis-list.md).
+
+- [API prises en charge Microsoft Defender pour point de terminaison](exposed-apis-list.md)
 - [Accéder à Microsoft Defender pour le point de terminaison au nom d’un utilisateur](exposed-apis-create-app-nativeapp.md)

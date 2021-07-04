@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e5e6b87f17fd4b13945b155bd7e521881242345
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: fd378e6aba9ac9bf10dcd9633da503406ab7410a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53230054"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287890"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft Manged Desktop périphériques
 
@@ -28,13 +28,12 @@ Pour plus d’informations sur Microsoft Manged Desktop, voir [Microsoft Manged 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Pour être inscrit à Microsoft Manged Desktop, un appareil doit être l’un des modèles suivants et respecter ou dépasser les spécifications répertoriées pour la MÉMOIRE RAM, la famille de processeurs et l’espace disque.
+Pour être inscrit à Microsoft Manged Desktop, un appareil doit être l’un des modèles suivants et respecter ou dépasser les spécifications répertoriées pour la RAM, la famille de processeurs et l’espace disque.
 
 Les liens vers les appareils ici sont uniquement pour votre référence. Si vous souhaitez commander des appareils, travaillez avec vos contacts de canal commercial pour vous assurer que vous choisissez les configurations correctes. Dans ce tableau, la *date d’archivage* est la date à laquelle ces modèles seront soumis à une durée de vie Microsoft Manged Desktop service plus courte ; Tous ces appareils intégrés après cette date ne bénéficieront pas d’une période complète de trois ans de support de la part Microsoft Manged Desktop. Les appareils archivés sont également répertoriés dans [Microsoft Manged Desktop les appareils archivés.](archived-device-list.md) *La date de* retrait est la date à laquelle ce modèle ne sera plus pris en charge Microsoft Manged Desktop du tout. À cette date, tous les appareils inscrits de ce modèle seront supprimés de Microsoft Manged Desktop, quel que soit le moment où ils ont été inscrits.
 
->[!NOTE]
->Les appareils peuvent être ajoutés à ce tableau à tout moment, mais nous fournirons un préavis de 90 jours pour toute modification affectant la date d’archivage ou de retrait. Les appareils récemment ajoutés sont marqués par **\*** .
-
+> [!NOTE]
+> Les appareils peuvent être ajoutés à ce tableau à tout moment, mais nous fournirons un préavis de 90 jours pour toute modification affectant la date d’archivage ou de retrait. Les appareils récemment ajoutés sont marqués par **\*** .
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft Manged Desktop Appareils
 
@@ -50,15 +49,15 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 | **\*[Dell Latitude 7420 / 7420 2-en-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-7420-business-laptop-or-2-in-1/spd/latitude-14-7420-2-in-1-laptop)** | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 22 mars 2023  | 22 mars 2026  |
 | **\*[Dell Latitude 9420 2-en-1](https://www.dell.com/en-us/work/shop/scc/sr/laptops/latitude-laptops?~ck=mn)** | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | Avr 2023  | Avr 2026  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Appareil photo ir requis | 5 mai 2022  | 5 mai 2025  |
-| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 Go / Intel i3 / 8 Go de RAM | Aucun | 27 mai 2022  | 27 mai 2025  |
-| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 Go / Intel i3 / 8 Go de RAM | Aucun | 15 mai 2022  | 15 mai 2025  |
-| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Aucun | 27 mai 2022  | 27 mai 2025  |
+| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 Go / Intel i3 / 8 Go de RAM | Aucune | 27 mai 2022  | 27 mai 2025  |
+| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 Go / Intel i3 / 8 Go de RAM | Aucune | 15 mai 2022  | 15 mai 2025  |
+| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 Go / Intel i5 / 8 Go de RAM | Aucune | 27 mai 2022  | 27 mai 2025  |
 
 ### <a name="hp"></a>HP
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [PC portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
+| [ORDINATEUR portable HP EliteBook 830 / 840 / 850 G7](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [PC portable HP EliteBook x360 830 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 9MZ21AV | 30 novembre 2021 | 30 novembre 2024 |
 | [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 5VS03AV | 31 juillet 2021 | 31 juillet 2024 |
 | [PC portable HP EliteBook x360 1030 / 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 Go / Intel i5 / 8 Go de RAM | Référence (SKU) avec 8XW08AV | 31 août 2021 | 31 août 2024 |
@@ -72,12 +71,12 @@ Les liens vers les appareils ici sont uniquement pour votre référence. Si vous
 
 | Modèle    | Spécifications minimales  | Autres conditions requises    | Date d’archivage   | Date de retrait   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 Go / Intel i5 / 8 Go de RAM | Aucun | 21 mai 2022 | 21 mai 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 Go / Intel Core M3 / 8 Go de RAM | Aucun | 21 mai 2022 | 21 mai 2027 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 12 octobre 2022 | 12 octobre 2025 |
-| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 22 octobre 2021 | 22 octobre 2024 |
-| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 Go / Intel i5 / 8 Go de RAM | Aucun | 15 janvier 2022 | 15 janvier 2025 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 Go / Intel i5 / 8 Go de RAM | Aucune | 21 mai 2022 | 21 mai 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 Go / Intel Core M3 / 8 Go de RAM | Aucune | 21 mai 2022 | 21 mai 2027 |
+| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 12 octobre 2022 | 12 octobre 2025 |
+| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 22 octobre 2021 | 22 octobre 2024 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 22 octobre 2021 | 22 octobre 2024 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 Go / Intel i5 / 8 Go de RAM | Aucune | 15 janvier 2022 | 15 janvier 2025 |
 
 En outre, l’appareil doit également répondre aux critères suivants :
 
@@ -85,13 +84,14 @@ En outre, l’appareil doit également répondre aux critères suivants :
 - Vous n’avez pas Windows l’expérience de première expérience d’utilisateur.
 - Être inscrit auprès d’Microsoft Manged Desktop à l’aide de la fonctionnalité [d’inscription de l’appareil](../get-started/register-devices-self.md)
 
->[!NOTE]
->Les appareils avec un processeur 2,0 GHz ou plus rapide offrent une bien meilleure expérience aux utilisateurs impliqués dans ces activités :
->- Utilisation de la vidéoconférence avec Teams. Pour [plus d’informations, voir](/microsoftteams/hardware-requirements-for-the-teams-app) configuration matérielle requise Microsoft Teams’informations.
->-  Utilisation d’un seul appareil pour plusieurs charges de travail différentes.
->- Utilisation de plusieurs moniteurs.
+> [!NOTE]
+> Les appareils avec un processeur 2,0 GHz ou plus rapide offrent une bien meilleure expérience aux utilisateurs impliqués dans ces activités :
+>
+> - Utilisation de la vidéoconférence avec Teams. Pour [plus d’informations, voir](/microsoftteams/hardware-requirements-for-the-teams-app) configuration matérielle requise Microsoft Teams’informations.
+> - Utilisation d’un seul appareil pour plusieurs charges de travail différentes.
+> - Utilisation de plusieurs moniteurs.
 
-**Plus d’aide**
+## <a name="more-help"></a>Plus d’aide
 
 Ces ressources peuvent vous aider à répondre aux questions que vous pourriez avoir sur des appareils spécifiques :
 

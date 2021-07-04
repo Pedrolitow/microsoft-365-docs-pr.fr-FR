@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: En savoir plus sur Microsoft 365 catalogue de solutions, y compris ce qu’il contient, comment l’obtenir et les étapes suivantes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 22110290f3d025a3e4c30b460a2381757fd481ca
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5118cf6ef80513f5c276f5635ab380bdc979db46
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114422"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288298"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catalogue de solutions Microsoft 365
 
@@ -24,7 +24,7 @@ Vous recherchez un moyen de commencer rapidement les tâches de conformité dans
 
 Les solutions de conformité Microsoft 365 sont des ensembles de fonctionnalités intégrées que vous pouvez utiliser pour vous aider à gérer des scénarios de conformité de bout en bout. Les fonctionnalités et outils d’une solution peuvent inclure une combinaison de stratégies, d’alertes, de rapports, et bien plus encore.
 
-Lisez cet article pour vous familiariser avec le nouveau catalogue de solutions dans le centre de conformité [Microsoft 365,](#how-do-i-get-this)comment l’obtenir, les [questions](#frequently-asked-questions)fréquemment posées et les étapes [suivantes.](#next-steps)
+Lisez cet article pour vous familiariser avec le nouveau catalogue de solutions dans le [Centre de conformité Microsoft 365,](#how-do-i-get-this)comment l’obtenir, les [questions](#frequently-asked-questions)fréquemment posées et les [étapes suivantes.](#next-steps)
 
 ## <a name="catalog-organization"></a>Organisation de catalogue
 
@@ -40,7 +40,7 @@ Lorsque vous **sélectionnez Afficher** pour une carte de solution, vous verrez 
 
 La section **Sur la &** protection des informations vous montre d’un coup d’œil comment utiliser des solutions de conformité Microsoft 365 pour protéger et régir les données de votre organisation.
 
-![Microsoft 365 section protection et gouvernance des informations du catalogue de solutions](../media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 section sur la protection et la gouvernance des informations du catalogue de solutions](../media/m365-solution-catalog-information-protection-governance.png)
 
 À partir de là, vous verrez des cartes pour les solutions suivantes :
 
@@ -84,13 +84,13 @@ Pour visiter le catalogue Microsoft 365 solutions, connectez-vous en tant qu’a
 
 Tout d’abord, assurez-vous que vous avez les licences et autorisations appropriées. Ensuite, connectez-vous en tant qu’administrateur général, administrateur de conformité ou administrateur de données [https://compliance.microsoft.com](https://compliance.microsoft.com) de conformité.
 
-**Certaines des fonctionnalités de conformité répertoriées dans la page du catalogue de solutions ne sont pas disponibles dans le centre Microsoft 365 conformité. Que dois-je faire ?**
+**Certaines des fonctionnalités de conformité répertoriées dans la page du catalogue de solutions ne sont pas disponibles dans le Centre de conformité Microsoft 365. Que dois-je faire ?**
 
-Nous travaillons toujours pour ajouter de nouvelles fonctionnalités au centre Microsoft 365 conformité et au catalogue de solutions. Si vous ne trouvez pas de solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
+Nous travaillons toujours pour ajouter de nouvelles fonctionnalités au Centre de conformité Microsoft 365 catalogue de solutions. Si vous ne trouvez pas de solution spécifique dans la zone de navigation, elle sera accessible lorsque la solution sera disponible dans votre abonnement.
 
-Si vous recherchez une solution de conformité existante et qu’elle n’est pas encore disponible dans le centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le Centre de conformité de sécurité existant en accédant à &amp; [https://protection.office.com](https://protection.office.com) . Vous pouvez également cliquer  sur l’onglet Plus de ressources dans le navigation de gauche du Centre de conformité Microsoft 365 et sélectionner la carte du Centre de sécurité et conformité Office 365.  
+Si vous recherchez une solution de conformité existante et qu’elle n’est pas encore disponible dans le Centre de conformité Microsoft 365, vous pouvez toujours accéder aux solutions dans le Centre de conformité de sécurité existant en accédant &amp; à [https://protection.office.com](https://protection.office.com) . Vous pouvez également cliquer  sur l’onglet Plus de ressources dans le navigation de gauche du Centre de conformité Microsoft 365 et sélectionner la carte du Centre de sécurité et conformité Office 365 l’utilisateur.  
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 - **Visitez le Gestionnaire de conformité Microsoft,** qui vous aide à comprendre l’état de conformité de votre organisation avec les principales normes et réglementations. Il fournit des actions recommandées que vous pouvez effectuer pour renforcer votre posture de conformité globale et fournit des fonctionnalités de flux de travail pour vous aider à effectuer efficacement ces actions. Pour en savoir plus, [consultez le Gestionnaire de conformité.](compliance-manager.md)
 
@@ -98,7 +98,7 @@ Si vous recherchez une solution de conformité existante et qu’elle n’est pa
 
 - **Découvrez et créez des stratégies de conformité des** communications pour identifier et corriger rapidement les violations de stratégie de code de conduite d’entreprise. Voir [Conformité des communications.](communication-compliance.md)
 
-- **Microsoft Information Protection**, découvrez comment les solutions Microsoft 365 vous aident à découvrir, classer et protéger les informations sensibles où qu’elles se déplacent ou qu’elles se déplacent.
+- **Protection des données Microsoft**, découvrez comment les solutions Microsoft 365 vous aident à découvrir, classer et protéger les informations sensibles où qu’elles se déplacent ou qu’elles se déplacent.
     - **Familiarisez-vous avec les** Microsoft Cloud App Security . Voir [Démarrage rapide : prendre en Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
     - **Commencer avec les classifieurs.** La classification du contenu, puis son étiquetage afin qu’il puisse être protégé et géré correctement est le point de départ de la protection des informations. Voir [En savoir plus sur les classifieurs entraisables (prévisualisation).](classifier-learn-about.md)
 

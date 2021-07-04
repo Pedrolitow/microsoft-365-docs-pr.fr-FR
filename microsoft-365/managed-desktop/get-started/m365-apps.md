@@ -11,18 +11,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: c3928b5814332f2585adc613e1e84cbe5cc883a0
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7b1178312178865face58748a37228f60643d5fc
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925610"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53287974"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Applications Microsoft 365 for entreprise
 
 ## <a name="initial-deployment"></a>Déploiement initial
 
-Bureau géré Microsoft garantit que Applications Microsoft 365 pour les grandes entreprises (64 bits) sont installés dans le cadre de l’image sur tous les [appareils du programme.](../service-description/device-list.md) Toutes les applications suivantes doivent être présentes sur l’appareil lorsqu’il est remis :
+Microsoft Manged Desktop garantit que Applications Microsoft 365 pour les grandes entreprises (64 bits) sont installés dans le cadre de l’image sur tous les [appareils du programme.](../service-description/device-list.md) Toutes les applications suivantes doivent être présentes sur l’appareil lorsqu’il est remis :
 
 - Word
 - Excel
@@ -44,40 +44,40 @@ Si un utilisateur n’a Microsoft 365 Apps sur son appareil pour une raison quel
 
 ### <a name="microsoft-365-apps-for-enterprise-32-bit"></a>Applications Microsoft 365 pour les grandes entreprises (32 bits)
 
-Bureau géré Microsoft ne prend pas en charge le déploiement de la version 32 bits de M365 Apps for enterprise.
+Microsoft Manged Desktop ne prend pas en charge le déploiement de la version 32 bits de M365 Apps for enterprise.
 
 ## <a name="updates-to-microsoft-365-apps"></a>Mises à jour de Microsoft 365 Apps
 
 Microsoft 365 Apps sont définies pour être mises à jour sur le [canal Enterprise mensuel.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Cette pratique fournit à vos utilisateurs de nouvelles fonctionnalités de Office chaque mois, mais ils ne reçoivent qu’une seule mise à jour par mois selon un calendrier de publication prévisible. Les mises à jour sont publiées le deuxième mardi du mois . Ces mises à jour peuvent inclure des mises à jour de fonctionnalité, de sécurité et de qualité. Ces mises à jour se produisent automatiquement et sont directement tirées du Office CDN pour ce canal spécifique.
 
-Bureau géré Microsoft chaque version afin d’identifier les problèmes potentiels dans votre environnement. Nous avons terminé le déploiement 28 jours après la publication du groupe de produits Microsoft 365 App. Bureau géré Microsoft planifier les mises à jour publiées pour différents groupes pour laisser le temps à la validation et aux tests comme suit : 
+Microsoft Manged Desktop chaque version afin d’identifier les problèmes potentiels dans votre environnement. Nous avons terminé le déploiement 28 jours après la publication du groupe de produits Microsoft 365 App. Microsoft Manged Desktop les mises à jour de différents groupes afin de laisser le temps à la validation et aux tests de la manière suivante : 
 
 - Test : zéro jour
 - First: zero days
 - Rapide : 3 jours
 - Étendue : 7 jours
 
-Bureau géré Microsoft définit une échéance de mise à jour de sept [jours](/deployoffice/configure-update-settings-microsoft-365-apps) pour les appareils. Une fois la mise à jour disponible, elle doit être installée dans un délai de sept jours. Les [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) utilisateurs sont avertis que des mises à jour sont requises à plusieurs emplacements : l’application, dans la bac système 12 heures avant l’échéance, et ils reçoivent un avertissement de 15 minutes avant l’échéance. Toutes les Microsoft 365 Apps doivent être fermées pour que la mise à jour soit terminée.
+Microsoft Manged Desktop définit une échéance de mise à jour de sept [jours](/deployoffice/configure-update-settings-microsoft-365-apps) pour les appareils. Une fois la mise à jour disponible, elle doit être installée dans un délai de sept jours. Les [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) utilisateurs sont avertis que des mises à jour sont requises à plusieurs emplacements : l’application, dans la bac système 12 heures avant l’échéance, et ils reçoivent un avertissement de 15 minutes avant l’échéance. Toutes les Microsoft 365 Apps doivent être fermées pour que la mise à jour soit terminée.
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Interruption ou interruption d’une mise à jour
 
-Si vous devez suspendre ou Microsoft 365 mise à jour de [](../working-with-managed-desktop/admin-support.md) l’application pour une raison quelconque, déposez une demande de support administrateur par le biais Bureau géré Microsoft portail.
+Si vous devez suspendre ou Microsoft 365 mise à jour de [](../working-with-managed-desktop/admin-support.md) l’application pour une raison quelconque, déposez une demande de support administrateur par le biais Microsoft Manged Desktop portail.
 
-Lors d’une publication, Bureau géré Microsoft les taux d’erreur de tous les Microsoft 365 Apps. Si nous notons une différence significative de qualité entre la nouvelle version et son prédécesseur, nous pouvons vous contacter via Bureau géré Microsoft portail d’administration. En fonction de la gravité, nous vous demandons si vous souhaitez suspendre la publication ou nous vous informons que nous avons pris des mesures pour atténuer un problème. 
+Au cours d’une publication, Microsoft Manged Desktop les taux d’erreur de tous les Microsoft 365 Apps. Si nous notons une différence significative de qualité entre la nouvelle version et son prédécesseur, nous pouvons vous contacter via Microsoft Manged Desktop portail d’administration. En fonction de la gravité, nous vous demandons si vous souhaitez suspendre la publication ou nous vous informons que nous avons pris des mesures pour atténuer un problème. 
 
 ### <a name="delivery-optimization"></a>Optimisation de la distribution
 
-L’optimisation de la distribution est une technologie de distribution pair à pair disponible dans Windows 10. Il permet aux appareils de partager du contenu, tel que des mises à jour, que les appareils ont téléchargés à partir de Microsoft sur Internet. Son utilisation permet de réduire la bande passante réseau, car un appareil peut obtenir des parties de la mise à jour à partir d’un autre appareil sur son réseau local au lieu de devoir télécharger entièrement la mise à jour à partir de Microsoft.
+L’optimisation de la distribution est une technologie de distribution pair à pair disponible dans Windows 10. Il permet aux appareils de partager du contenu, tel que des mises à jour, que les appareils ont téléchargés à partir de Microsoft sur Internet. Son utilisation peut aider à réduire la bande passante réseau, car un appareil peut obtenir des parties de la mise à jour à partir d’un autre appareil sur son réseau local au lieu de devoir télécharger entièrement la mise à jour à partir de Microsoft.
 
 [L’optimisation de](/deployoffice/delivery-optimization) la distribution est activée par défaut sur les appareils exécutant Windows 10 Entreprise ou Windows 10 Éducation éditions. 
 
-## <a name="settings-managed-by-microsoft-managed-desktop"></a>Paramètres géré par Bureau géré Microsoft
+## <a name="settings-managed-by-microsoft-managed-desktop"></a>Paramètres géré par Microsoft Manged Desktop
 
-Microsoft gère certains paramètres dans le cadre du service. Bureau géré Microsoft ne gère pas une ligne de base de sécurité Office, mais vous pouvez en définir une vous-même en suivant les instructions de la section Paramètres vous [gérez.](#settings-you-manage)
+Microsoft gère certains paramètres dans le cadre du service. Microsoft Manged Desktop ne gère pas une ligne de base de sécurité Office, mais vous pouvez en définir une vous-même en suivant les instructions de la section Paramètres vous [gérez.](#settings-you-manage)
 
 ### <a name="update-settings"></a>Définir les paramètres de mise à jour
 
-Bureau géré Microsoft tous les [paramètres de mise à jour](/deployoffice/configure-update-settings-microsoft-365-apps) des appareils gérés et vous devez modifier ces paramètres.
+Microsoft Manged Desktop tous les paramètres de mise à jour des appareils [gérés](/deployoffice/configure-update-settings-microsoft-365-apps) et vous devez modifier ces paramètres.
 
 ### <a name="set-updates-to-occur-automatically"></a>Définir des mises à jour automatiques
 
@@ -93,7 +93,7 @@ La **stratégie UpdateDeadline** permet de configurer la période de grâce dont
 
 ### <a name="defer-updates-on-a-device-for-a-period"></a>Différer les mises à jour d’un appareil pendant un certain temps
 
-Cette stratégie est configurée différemment pour chaque groupe d’appareils de gestion des mises à jour et est requise pour Bureau géré Microsoft pour atteindre ses objectifs de mise à jour :  
+Cette stratégie est configurée différemment pour chaque groupe d’appareils de gestion des mises à jour et est requise pour Microsoft Manged Desktop pour atteindre ses objectifs de mise à jour :  
 
 - Test : zéro jour
 - First: zero days
@@ -104,7 +104,7 @@ Cette stratégie est configurée différemment pour chaque groupe d’appareils 
 
 **Valeur par défaut**: False
 
-Le paramètre « Masquer les notifications de mise à jour » est définie [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) sur **False** sur les appareils Bureau géré Microsoft pour offrir la meilleure expérience de mise à jour aux utilisateurs en les avertissant lorsque des mises à jour sont requises.
+Le paramètre « Masquer les notifications de mise à jour » est définie [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) sur **False** sur les appareils Microsoft Manged Desktop pour offrir la meilleure expérience de mise à jour aux utilisateurs en les avertissant lorsque des mises à jour sont requises.
 
 ### <a name="specify-a-location-to-look-for-updates"></a>Indiquer un emplacement dans lequel rechercher des mises à jour
 
@@ -114,54 +114,54 @@ Une combinaison des **stratégies UpdatePath** et **UpdateChannel** est utilisé
 
 ### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Spécifier la version cible de Microsoft 365 Apps
 
-La stratégie de version cible est parfois utilisée par les Bureau géré Microsoft afin de revenir en arrière ou épingler une version spécifique d Office. 
+La stratégie de version cible est parfois utilisée par les Microsoft Manged Desktop pour revenir en arrière ou épingler une version spécifique d Office. 
 
 
 ### <a name="hide-the-option-to-enable-or-disable-office-automatic-updates"></a>Masquer l’option permettant d’activer ou de désactiver Office mises à jour automatiques
 
 **Valeur par défaut**: Activé
 
-Ce paramètre est requis pour que Bureau géré Microsoft atteindre ses objectifs de mise à jour pour Microsoft 365 Applications. 
+Ce paramètre est requis pour que Microsoft Manged Desktop atteindre ses objectifs de mise à jour pour Microsoft 365 Applications. 
 
 ### <a name="first-run-settings"></a>Paramètres de première run 
 
-Plusieurs paramètres affectent le comportement lors de la première Office’est exécuté.
+Plusieurs paramètres affectent le comportement lors de la première Office’exécuter.
 
 ### <a name="accept-the-license-terms-on-behalf-of-the-end-user"></a>Accepter les termes du contrat de licence pour le compte de l’utilisateur final
 
 **Valeur par défaut**: Disabled
 
-La première fois qu’un utilisateur ouvre une application Microsoft 365, il est invité à accepter les termes du contrat de licence. Si vous souhaitez accepter les termes du contrat de licence pour le compte de vos utilisateurs, déposez une demande de service auprès de l’équipe des opérations Bureau géré Microsoft demandant que ce paramètre soit activé. 
+La première fois qu’un utilisateur ouvre une application Microsoft 365, il est invité à accepter les termes du contrat de licence. Si vous souhaitez accepter les termes du contrat de licence pour le compte de vos utilisateurs, déposez une demande de service auprès de l’équipe des opérations Microsoft Manged Desktop demandant que ce paramètre soit activé. 
 
 ### <a name="suppress-outlook-mobile-check-box"></a>Supprimer Outlook case à cocher mobile
 
 **Valeur par défaut**: Disabled
 
-La première fois qu’un utilisateur ouvre Outlook il est invité à installer Outlook Mobile. Si vous ne souhaitez pas que vos utilisateurs voient cette case à cocher, déposez une demande de service auprès de l’équipe des opérations Bureau géré Microsoft demandant que ce paramètre soit activé pour vos appareils. 
+La première fois qu’un utilisateur ouvre Outlook il est invité à installer Outlook Mobile. Si vous ne souhaitez pas que vos utilisateurs voient cette case à cocher, déposez une demande de service auprès de l’équipe des opérations Microsoft Manged Desktop demandant que ce paramètre soit activé pour vos appareils. 
 
 ## <a name="other-settings"></a>Autres paramètres
 
-Il existe d’Microsoft 365 de l’application que Bureau géré Microsoft pouvez éventuellement configurer en votre nom. 
+Il existe d’Microsoft 365 de l’application que vous Microsoft Manged Desktop éventuellement configurer en votre nom. 
 
 ### <a name="disable-personal-onedrive"></a>Désactiver les OneDrive
 
 **Valeur par défaut**: Disabled
 
-Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l Bureau géré Microsoft des opérations de l’utilisateur afin que ce paramètre soit activé. 
+Certaines organisations sont préoccupés par le fait que les utilisateurs ont accès aux fichiers d’entreprise et personnels sur leurs appareils. Vous pouvez déposer une demande de service auprès de l Microsoft Manged Desktop des opérations de l’utilisateur afin que ce paramètre soit activé. 
 
 ## <a name="settings-you-manage"></a>Paramètres vous gérez
 
-Il existe de nombreuses autres stratégies que Bureau géré Microsoft n’a pas encore définies dans le cadre de notre service. Vous pouvez configurer ces stratégies à l’aide Microsoft Intune, qui utilise le service [Office stratégie cloud.](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Pour définir ces stratégies, suivez les étapes suivantes :
+Il existe de nombreuses autres stratégies que Microsoft Manged Desktop n’a pas encore définies dans le cadre de notre service. Vous pouvez configurer ces stratégies à l’aide Microsoft Intune, qui utilise le service [Office stratégie cloud.](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Pour définir ces stratégies, suivez les étapes suivantes :
 
-1.  Connectez-vous au centre Microsoft Endpoint Manager’administration.
-2.  Sélectionner **des stratégies > applications pour Office applications > créer**
-3.  Dans la page **Créer une** configuration de stratégie, faites les choses suivantes :
+1. Connectez-vous au centre Microsoft Endpoint Manager’administration.
+2. Sélectionner **des stratégies > applications pour Office applications > créer**
+3. Dans la page **Créer une** configuration de stratégie, faites les choses suivantes :
     - Entrez un nom.
     - Fournissez une description (facultative).
     - Dans **les affectations,** choisissez si cette stratégie s’applique à tous les utilisateurs de Applications Microsoft 365 pour les grandes entreprises ou uniquement aux utilisateurs qui accèdent anonymement aux documents à l’aide de Office sur le Web.
     - Sélectionnez le groupe de sécurité basé sur AAD affecté à la configuration de la stratégie. Chaque configuration de stratégie ne peut être affectée qu’à un seul groupe, et chaque groupe ne peut être affecté qu’à une seule configuration de stratégie.
-    - Configurez les paramètres de stratégie à inclure dans la configuration de stratégie. Vous pouvez effectuer une recherche sur le nom du paramètre de stratégie pour trouver le paramètre de stratégie que vous souhaitez configurer. Vous pouvez également filtrer l’application, si la stratégie est une ligne de base de sécurité recommandée et si la stratégie a été configurée. La colonne de plateforme indique si la stratégie est appliquée à Applications Microsoft 365 pour les grandes entreprises pour Windows appareils, Office sur le Web ou tous.
-4.  Une fois que vous avez effectué vos sélections, choisissez **Créer.**
+    - Configurez les paramètres de stratégie à inclure dans la configuration de la stratégie. Vous pouvez effectuer une recherche sur le nom du paramètre de stratégie pour trouver le paramètre de stratégie que vous souhaitez configurer. Vous pouvez également filtrer l’application, si la stratégie est une ligne de base de sécurité recommandée et si la stratégie a été configurée. La colonne de plateforme indique si la stratégie est appliquée à Applications Microsoft 365 pour les grandes entreprises pour Windows appareils, Office sur le Web ou tous.
+4. Une fois que vous avez effectué vos sélections, choisissez **Créer.**
 
 > [!NOTE]
 > Office Les stratégies de configuration ne prisent en charge que le déploiement basé sur l’utilisateur

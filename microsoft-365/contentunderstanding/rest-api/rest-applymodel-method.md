@@ -11,12 +11,12 @@ search.appverid: ''
 ms.collection: m365initiative-syntex
 localization_priority: Priority
 description: Utilisez l’API REST pour appliquer un modèle de compréhension de document à une ou plusieurs bibliothèques.
-ms.openlocfilehash: 24ea9a480bc3ce5a7745857de17a6fab6ed97685
-ms.sourcegitcommit: cfd7644570831ceb7f57c61401df6a0001ef0a6a
+ms.openlocfilehash: 04f1dfdb0c16110c9ba7de12f5f0735d498d50cf
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53177260"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53286536"
 ---
 # <a name="batch-apply-model"></a>Appliquer un modèle par lots
 
@@ -48,6 +48,7 @@ Aucun
 |Publications|oui|MachineLearningPublicationEntityData[]|La collection de chaque MachineLearningPublicationEntityData qui spécifie le modèle et la bibliothèque de documents cible.|
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nom | Obligatoire | Type | Description |
 |--------|-------|--------|------------|
 |ModelUniqueId|oui|chaîne|L'ID unique du fichier modèle.|
@@ -60,9 +61,10 @@ Aucun
 
 | Nom   | Type  | Description|
 |--------|-------|------------|
-|201 est créé||Il s’agit d’une API personnalisée pour prendre en charge l’application d’un modèle à plusieurs bibliothèques de documents. Dans le cas d’une réussite partielle, 201 créé peut encore être renvoyé et l’appelant doit inspecter le corps de la réponse pour savoir si le modèle a été correctement appliqué à une bibliothèque de documents.|
+|201 est créé||Il s’agit d’une API personnalisée pour prendre en charge l’application d’un modèle à plusieurs bibliothèques de documents. En cas de réussite partielle, 201 créé peut toujours être retourné et l’appelant doit inspecter le corps de la réponse pour déterminer si le modèle a été correctement appliqué à une bibliothèque de documents.|
 
 ## <a name="response-body"></a>Corps de la réponse
+
 | Nom   | Type  | Description|
 |--------|-------|------------|
 |TotalSuccesses|int|Le nombre total d’applications réussies d’un modèle à une bibliothèque de documents.|
@@ -70,6 +72,7 @@ Aucun
 |Détails|MachineLearningPublicationResult[]|La collection de chaque MachineLearningPublicationResult qui spécifie le résultat détaillé de l’application du modèle à la bibliothèque de documents.|
 
 ### <a name="machinelearningpublicationresult"></a>MachineLearningPublicationResult
+
 | Nom   | Type  | Description|
 |--------|-------|------------|
 |StatusCode|int|Le code d’état HTTP.|
@@ -77,6 +80,7 @@ Aucun
 |Publication|MachineLearningPublicationEntityData|Il s’agit des informations sur le modèle et la bibliothèque de documents cible.| 
 
 ### <a name="machinelearningpublicationentitydata"></a>MachineLearningPublicationEntityData
+
 | Nom | Type | Description |
 |--------|--------|------------|
 |ModelUniqueId|chaîne|L'ID unique du fichier modèle.|

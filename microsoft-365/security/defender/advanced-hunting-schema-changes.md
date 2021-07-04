@@ -1,6 +1,6 @@
 ---
-title: Changements de nom dans le schéma de Microsoft 365 de recherche avancée Defender
-description: Suivre et passer en revue les tables et les colonnes des modifications d’attribution de noms dans le schéma de recherche avancé
+title: Changements d’appellation dans le Microsoft 365 Defender de recherche avancée
+description: Suivre et passer en revue les tables et colonnes de modifications d’attribution de noms dans le schéma de recherche avancé
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 9406653a2d16c83f974e2a0ce7597b5c4f833252
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470495"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289492"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schéma de recherche avancé : modifications d’attribution de noms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
@@ -55,22 +55,22 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
 
 | Nom de colonne | Nom de la valeur d’origine | Nouveau nom de valeur | Raison du changement
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | Changement de nom |
-| `DetectionSource` | WindowsDefenderAtp|   PEPT| Changement de nom |
+| `DetectionSource` | MCAS | Microsoft Cloud App Security | Changement de nom |
+| `DetectionSource` | WindowsDefenderAtp| PEPT| Changement de nom |
 | `DetectionSource` | WindowsDefenderAv | Antivirus | Changement de nom |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Changement de nom |
-| `DetectionSource` | CustomerTI |  Ti personnalisée | Changement de nom |
+| `DetectionSource` | CustomerTI | Ti personnalisée | Changement de nom |
 | `DetectionSource` | OfficeATP | Microsoft Defender pour Office 365 | Changement de nom |
-| `DetectionSource` | MTP   | Microsoft 365 Defender | Changement de nom |
-| `DetectionSource` | AzureATP |    Microsoft Defender pour l’identité | Changement de nom |
-| `DetectionSource` | CustomDetection   | Détection personnalisée | Changement de nom |
+| `DetectionSource` | MTP | Microsoft 365 Defender | Changement de nom |
+| `DetectionSource` | AzureATP | Microsoft Defender pour l’identité | Changement de nom |
+| `DetectionSource` | CustomDetection | Détection personnalisée | Changement de nom |
 | `DetectionSource` | AutomatedIgoigation |Examen automatisé | Changement de nom |
 | `DetectionSource` | ThreatExperts | Spécialistes des menaces Microsoft | Changement de nom |
 | `DetectionSource` | Ti tiers | Capteurs tiers | Changement de nom |
 | `ServiceSource` | Microsoft Defender ATP| Microsoft Defender pour point de terminaison | Changement de nom |
-|`ServiceSource` |Protection Microsoft contre les menaces   | Microsoft 365 Defender | Changement de nom |
-| `ServiceSource` | Office 365 – Protection avancée contre les menaces  |Microsoft Defender pour Office 365 | Changement de nom |
-| `ServiceSource` |Azure ATP    |Microsoft Defender pour l’identité | Changement de nom |
+|`ServiceSource` |Protection Microsoft contre les menaces | Microsoft 365 Defender | Changement de nom |
+| `ServiceSource` | Office 365 – Protection avancée contre les menaces |Microsoft Defender pour Office 365 | Changement de nom |
+| `ServiceSource` |Azure ATP |Microsoft Defender pour l’identité | Changement de nom |
 
 `DetectionSource`est disponible dans la table [AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`est disponible dans les tables [AlertEvidence](advanced-hunting-alertevidence-table.md) et [AlertInfo.](advanced-hunting-alertinfo-table.md) 
 
@@ -86,7 +86,7 @@ Les modifications d’attribution de noms sont automatiquement appliquées aux r
     | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Inclure d’autres types de menaces |
 
 
-2. Dans les `EmailAttachmentInfo` `EmailEvents` tableaux et les tableaux, la colonne a été ajoutée pour fournir plus `ThreatNames` d’informations sur la menace de messagerie. Cette colonne contient des valeurs telles que courrier indésirable ou hameçonnage.
+2. Dans les `EmailAttachmentInfo` `EmailEvents` tableaux et les tableaux, la colonne a été ajoutée pour fournir plus `ThreatNames` d’informations sur la menace de courrier électronique. Cette colonne contient des valeurs telles que le courrier indésirable ou le hameçonnage.
 
 3. Dans la table [DeviceInfo,](advanced-hunting-deviceinfo-table.md) la colonne a été remplacée par la colonne en fonction `DeviceObjectId` des commentaires des `AadDeviceId` clients.
 

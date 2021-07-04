@@ -1,6 +1,6 @@
 ---
-title: 'Adoption de Microsoft SharePoint Syntex : commencer'
-description: Découvrez comment utiliser et implémenter SharePoint Syntex dans votre organisation pour vous aider à résoudre vos problèmes d’entreprise.
+title: 'Adoption SharePoint Syntex Microsoft : commencer'
+description: Découvrez comment utiliser et implémenter des SharePoint Syntex votre organisation pour vous aider à résoudre vos problèmes d’entreprise.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -14,26 +14,26 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 62e65f9be25e2c482cca78577048d504ee93097a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 8a5442fcf8dd50cdee6be97ba7c9bbf5e21408a3
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698975"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53288154"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adoption de Microsoft SharePoint Syntex : commencer
+# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Adoption SharePoint Syntex Microsoft : commencer
 
 Pensez aux services de contenu intelligents disponibles dans SharePoint Syntex comme ayant trois parties :
 
 - **Compréhension du contenu :** Créez des modèles d’IA sans code pour classifier et extraire des informations du contenu afin d’appliquer automatiquement les métadonnées pour la découverte et la réutilisation des connaissances. En savoir plus sur [la compréhension du contenu.](document-understanding-overview.md)
 - **Traitement de contenu :** Automatisez la capture, l’ingestion et la catégorisation du contenu et simplifiez les processus centrées sur le contenu à l’aide Power Automate. En savoir plus sur [le traitement du contenu.](form-processing-overview.md)
-- **Conformité du contenu :** Contrôler et gérer le contenu pour améliorer la sécurité et la gouvernance avec l’intégration à Microsoft Information Protection.
+- **Conformité du contenu :** Contrôler et gérer le contenu pour améliorer la sécurité et la gouvernance avec l’intégration Protection des données Microsoft.
 
-Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification de contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
+Grâce aux nouvelles fonctionnalités et services d’IA, vous pouvez créer des applications de compréhension et de classification du contenu directement dans le flux de gestion de contenu à l’aide SharePoint Syntex. Il existe deux façons de comprendre votre contenu. Le type de modèle que vous utilisez est basé sur le format de fichier et le cas d’utilisation :
 
 | Traitement des formulaires | Compréhension de document |
 |:-------|:-------|
-| Créé à partir d’une bibliothèque de documents. | Créé dans le centre de contenu, partie de SharePoint Syntex. |
+| Créé à partir d’une bibliothèque de documents. | Créé dans le centre de contenu, faisant partie SharePoint Syntex. |
 | Modèle créé dans le Générateur d’IA. | Modèle créé dans l’interface native. |
 | Utilisé pour les formats de fichiers semi-structurés. | Utilisé pour les formats de fichiers non structurés. |
 | Classifieur settable. | Classifieur entraisable avec des extracteurs facultatifs. |
@@ -49,9 +49,9 @@ Pour vous préparer à l’utilisation SharePoint Syntex dans votre organisation
 - **Traitement de contenu :** Traiter des contrats, des instructions de travail et d’autres documents de type formulaire. Admission des formulaires, formation du modèle à comprendre et maque les champs, puis exécutez vos formulaires pour collecter automatiquement les données. Pour plus d’informations, voir [Vue d’ensemble du traitement des formulaires.](form-processing-overview.md)
 - **Analyse des factures :** Retirez les détails pertinents de vos factures et assurez-vous qu’elles sont conformes à la stratégie ou qu’elles sont traitées correctement.
 
-Réfléchissez aux façons SharePoint Syntex peut aider votre organisation :
+Réfléchissez aux façons dont SharePoint Syntex peut aider votre organisation :
 
-- Automatiser les processus d’entreprise
+- Automatiser les processus métier
 - Améliorer la précision de la recherche
 - Gérer les risques de conformité
 
@@ -62,9 +62,9 @@ Lorsque vous réfléchissez aux scénarios d’entreprise à prendre en compte, 
 - Est-il possible de l’obtenir ?
 - Pouvez-vous mesurer la réussite ?
 
-Hiérarchiser les scénarios en fonction de l’impact et de la facilité d’implémentation. Faites en sorte que vos scénarios d’impact initiaux soient plus faciles à implémenter. Ne pas hiérarchiser les scénarios à faible impact qui sont difficiles à implémenter.
+Hiérarchiser les scénarios en fonction de l’impact et de la facilité d’implémentation. Faites en sorte que vos scénarios d’impact initial sur le domaine de travail soient plus faciles à implémenter. Ne pas hiérarchiser les scénarios à faible impact qui sont difficiles à implémenter.
 
-Utilisez les [exemples de scénarios](adoption-scenarios.md) et les cas d’utilisation pour vous faire des idées sur la façon d’utiliser SharePoint Syntex dans votre organisation.
+Utilisez les [exemples de scénarios](adoption-scenarios.md) et les cas d’utilisation pour vous faire des idées sur la façon dont vous pouvez SharePoint Syntex dans votre organisation.
 
 ## <a name="identify-roles--responsibilities"></a>Identifier les rôles & responsabilités
 
@@ -72,7 +72,7 @@ Déterminer qui dans votre organisation créera et gérera les modèles ? Les r�
 
 | SharePoint/Administrateur de connaissances | Administrateur Power Platform | Gestionnaire des connaissances | Propriétaire du modèle |
 |:-------|:-------|:-------|:-------|
-| Rôle AAD| Rôle AAD | Rôle AAD | Champions  |
+| Rôle AAD| Rôle AAD | Rôle AAD | Champions |
 | Configurer le traitement des formulaires | Configurer l’environnement de service de données courant pour le traitement des formulaires | Recueillir des cas d’utilisation | Recueillir des cas d’utilisation professionnelle |
 | Gérer les centres de contenu et les autorisations| Acheter et allouer des crédits AIB | Établir les meilleures pratiques et examiner l’analyse du modèle | Créer et appliquer des modèles |
 
@@ -86,7 +86,7 @@ Où créeront-ils et appliqueront-ils les modèles ? Existe-t-il des processus o
 
 ## <a name="strategic-positioning"></a>Positionnement stratégique
 
-Travaillez avec les parties prenantes pour vous assurer qu’elles sont alignées sur la stratégie d’utilisation SharePoint Syntex. Recherchez et fournissez les ressources suivantes pour vous aider à ce positionnement :
+Travaillez avec les parties prenantes pour vous assurer qu’elles sont alignées sur la stratégie d’utilisation des SharePoint Syntex. Recherchez et fournissez les ressources suivantes pour vous aider à ce positionnement :
 
 - Résultats de l’entreprise :
   - Résultats fiscaux potentiels
@@ -131,8 +131,8 @@ Pour vous préparer à l’SharePoint Syntex, vous devez :
     - Comprendre l’utilisation existante de l’architecture des informations et de la fonctionnalité de gestion de contenu.
     - Les types de contenu existants sont-ils de bons candidats pour les modèles ?
     - Quels processus existants seraient améliorés par les métadonnées ?
-3. Création
-    - Concevoir votre approche de l’architecture des informations, des métadonnées gérées et des types de contenu
+3. Conception
+    - Concevez votre approche de l’architecture des informations, des métadonnées gérées et des types de contenu.
     - Concevez le processus de définition, de création, de gestion.
 
 ## <a name="engage-your-organization"></a>Impliquer votre organisation

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies de rétention qui s’appliquent à Microsoft Teams.
-ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: b459665d9b92705bd575a7a79a4d4d6adc2a3f68
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908268"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256314"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>En savoir plus sur la rétention dans Microsoft Teams
 
@@ -44,8 +44,10 @@ Pour les autres charges de travail, consultez:
 ## <a name="whats-included-for-retention-and-deletion"></a>Éléments composant la rétention et la suppression
 
 Les messages de conversation et de canal Teams peuvent être supprimés à l’aide de stratégies de rétention pour Teams. En plus du texte contenu dans les messages, les éléments suivants peuvent être conservés pour des raisons de conformité : images incorporées, tableaux, liens hypertexte et liens vers d’autres messages et fichiers Teams, et [contenu de carte](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Les messages de conversation incluent tous les noms des personnes dans la conversation, et les messages de canal incluent le nom de l’équipe et le titre du message (le cas indiqué). 
+> [!NOTE]
+> La prise en charge des messages dans les canaux privés est en cours de déploiement en préversion.
 
-Actuellement, nous ne prenons pas en charge les messages Teams dans les canaux privés pour les stratégies de rétention. L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams, les miniatures, les images d’annonce, et les réactions des autres utilisateurs sous la forme d’émoticônes.
+L’utilisation de stratégies de rétention pour Teams n’inclut pas les extraits de code, les mémos vocaux enregistrés depuis le client mobile Teams, les miniatures, les images d’annonce, et les réactions des autres utilisateurs sous la forme d’émoticônes.
 
 Les messages électroniques et les fichiers que vous utilisez avec Teams ne sont pas inclus dans les stratégies de rétention pour Teams. Ces éléments ont leurs propres stratégies de rétention.
 
@@ -59,7 +61,7 @@ Ces boîtes aux lettres apparaissent dans la liste en fonction de leur attribut 
 
 - **UserMailbox** : ces boîtes aux lettres stockent des données de messages des utilisateurs de Teams basé sur le cloud.
 - **MailUser** : ces boîtes aux lettres stockent des données pour [des utilisateurs de Teams locale](search-cloud-based-mailboxes-for-on-premises-users.md).
-- **GroupMailbox** : ces boîtes aux lettres stockent des données de canaux Teams.
+- **GroupMailbox** : ces boîtes aux lettres stockent des données de canaux standard Teams.
 
 Nous ne prenons pas en charge les autres types de boîtes aux lettres, tels que la boîte aux lettre RoomMailbox utilisée pour les salles de conférence Teams, dans le cadre des stratégies de rétention Teams.
 
