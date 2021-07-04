@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0083d806f3e52307e6dce30f74e255073a09c16a
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4cf60ea73ea907be9c10b2dd9562a0ea60127f2d
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770492"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289894"
 ---
 # <a name="collect-investigation-package-api"></a>API collecter un package d’examen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,28 +40,31 @@ ms.locfileid: "52770492"
 
 
 ## <a name="api-description"></a>Description de l’API
+
 Collecter un package d’examen à partir d’un appareil.
 
-
 ## <a name="limitations"></a>Limites
+
 1. Les limites de taux pour cette API sont de 100 appels par minute et de 1 500 appels par heure.
 
-
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   Machine.CollectForensics |  « Collecter les enquêtes légales »
-Déléguée (compte professionnel ou scolaire) |    Machine.CollectForensics |  « Collecter les enquêtes légales »
+Application | Machine.CollectForensics | « Collecter les enquêtes légales »
+Déléguée (compte professionnel ou scolaire) | Machine.CollectForensics | « Collecter les enquêtes légales »
 
->[!Note]
+> [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
->- L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Alerts Investigation » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
->- L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+>
+> - L’utilisateur doit avoir au moins l’autorisation de rôle suivante : « Alerts Investigation » (voir Créer et gérer des rôles [pour](user-roles.md) plus d’informations)
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestigationPackage
 ```
 
@@ -73,19 +76,20 @@ Autorisation | String | Porteur {token}. **Obligatoire**.
 Content-Type | string | application/json. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
+
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Paramètre | Type    | Description
+Paramètre | Type | Description
 :---|:---|:---
-Commentaire |   Chaîne |    Commentaire à associer à l’action. **Obligatoire**.
+Commentaire | Chaîne | Commentaire à associer à l’action. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
-Si elle réussit, cette méthode renvoie 201 - Code de réponse créé et Action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
+Si elle réussit, cette méthode renvoie 201 : code de réponse créé et action de [l’ordinateur](machineaction.md) dans le corps de la réponse.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request"></a>Demande
 
 Voici un exemple de demande.
 

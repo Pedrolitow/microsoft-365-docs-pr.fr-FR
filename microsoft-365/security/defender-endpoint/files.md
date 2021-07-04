@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 83a011e649a7289f62acd6a8d985f020b27b1e10
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771188"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290014"
 ---
 # <a name="file-resource-type"></a>Type de ressource Fichier
 
@@ -36,10 +36,10 @@ ms.locfileid: "52771188"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
 Représente une entité de fichier dans Defender pour le point de terminaison.
 
 ## <a name="methods"></a>Méthodes
+
 Méthode|Type renvoyé |Description
 :---|:---|:---
 [Obtenir un fichier](get-file-information.md) | [fichier](files.md) | Obtenir un fichier unique 
@@ -49,14 +49,15 @@ Méthode|Type renvoyé |Description
 
 
 ## <a name="properties"></a>Propriétés
-|Propriété | Type    |   Description |
+
+|Propriété | Type | Description |
 |:---|:---|:---|
 |sha1 | String | Hachage Sha1 du contenu du fichier |
 |sha256 | String | Hachage Sha256 du contenu du fichier |
 |globalPrevalence | Nullable long | Prévalence des fichiers au sein de l’organisation |
 |globalFirstObserved | DateTimeOffset | Première observation du fichier |
 |globalLastObserved | DateTimeOffset | Dernière observation du fichier |
-|size | Nullable long | Taille du fichier |
+|taille | Nullable long | Taille du fichier |
 |fileType | String | Type du fichier |
 |isPeFile | Booléen | true si le fichier est portable exécutable (par exemple, « DLL », « EXE », etc.) |
 |filePublisher | String | Éditeur de fichiers |
@@ -67,7 +68,6 @@ Méthode|Type renvoyé |Description
 |isValidCertificate | Booléen | Le certificat de signature a été vérifié avec succès par l’agent Microsoft Defender for Endpoint |
 |determinationType | String | Type de détermination du fichier |
 |determinationValue | String | Valeur de détermination |
-
 
 ## <a name="json-representation"></a>Représentation Json
 

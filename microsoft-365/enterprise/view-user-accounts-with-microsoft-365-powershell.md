@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: Découvrez comment afficher, lister ou afficher Microsoft 365 comptes d’utilisateur de différentes manières avec PowerShell.
-ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 77219fb89430ed257ef2a68a7b24bf9ebac715b2
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924647"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290170"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>Afficher Microsoft 365 comptes d’utilisateurs avec PowerShell
 
 *Cet article est valable pour Microsoft 365 Entreprise et Office 365 Entreprise.*
 
-Vous pouvez utiliser le centre Microsoft 365'administration pour afficher les comptes de votre client Microsoft 365 client. PowerShell pour Microsoft 365 active cette fonctionnalité, mais fournit également des fonctionnalités supplémentaires.
+Vous pouvez utiliser le Centre d’administration Microsoft 365 pour afficher les comptes de votre client Microsoft 365 client. PowerShell pour Microsoft 365 active cette fonctionnalité, mais fournit également des fonctionnalités supplémentaires.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Utilisation du module Azure Active Directory PowerShell pour Graph
 
@@ -148,8 +148,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  La syntaxe de **l’cmdlet Where** dans ces exemples est **Where {$ \_ .** [nom de la propriété du compte d’utilisateur] [opérateur de comparaison] [valeur] **}**.> [opérateur de comparaison] est **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] est généralement une chaîne (une séquence de lettres, de nombres et d’autres caractères), une valeur numérique ou **une $Null** pour non spécifié. Pour plus d’informations, voir [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
-  
+> La syntaxe de **l’cmdlet Where** dans ces exemples est **Where {$ \_ .** [nom de la propriété du compte d’utilisateur] [opérateur de comparaison] [valeur] **}**.> [opérateur de comparaison] est **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] est généralement une chaîne (une séquence de lettres, de nombres et d’autres caractères), une valeur numérique ou **une $Null** pour non spécifié. Pour plus d’informations, voir [Where](/powershell/module/microsoft.powershell.core/where-object).
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Utilisez le module Microsoft Azure Active Directory pour Windows PowerShell.
 
@@ -234,14 +233,14 @@ La propriété *UsageLocation* n’est que l’une des nombreuses propriétés a
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-Par exemple, *Ville* est le nom d’une propriété de compte d’utilisateur. Vous pouvez utiliser la commande suivante pour lister tous les comptes d’utilisateur des utilisateurs qui habitent à Londres :
+Par exemple, *Ville* est le nom d’une propriété de compte d’utilisateur. Vous pouvez utiliser la commande suivante pour lister tous les comptes d’utilisateur pour les utilisateurs qui habitent à Londres :
   
 ```powershell
 Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  La syntaxe de **l’cmdlet Where** dans ces exemples est **Where {$ \_ .** [nom de la propriété du compte d’utilisateur] [opérateur de comparaison] [valeur] **}**.  [opérateur de comparaison] est **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] est généralement une chaîne (une séquence de lettres, de nombres et d’autres caractères), une valeur numérique ou **une $Null** pour non spécifié. Pour plus d’informations, voir [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7).
+> La syntaxe de **l’cmdlet Where** dans ces exemples est **Where {$ \_ .** [nom de la propriété du compte d’utilisateur] [opérateur de comparaison] [valeur] **}**.  [opérateur de comparaison] est **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] est généralement une chaîne (une séquence de lettres, de nombres et d’autres caractères), une valeur numérique ou **une $Null** pour non spécifié. Pour plus d’informations, voir [Where](/powershell/module/microsoft.powershell.core/where-object).
   
 Pour vérifier l’état bloqué d’un compte d’utilisateur, utilisez la commande suivante :
   
@@ -254,11 +253,11 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 Par défaut, la cmdlet **Get-MsolUser** affiche les trois propriétés des comptes d’utilisateurs :
   
 - UserPrincipalName
-    
+
 - DisplayName
-    
+
 - isLicensed
-    
+
 Si vous avez besoin de propriétés supplémentaires, telles que le service où travaille l’utilisateur et le pays/la région où il utilise les services Microsoft 365, vous pouvez exécuter **Get-MsolUser** en combinaison avec la cmdlet **Select** pour spécifier la liste des propriétés du compte d’utilisateur. Voici un exemple :
   
 ```powershell

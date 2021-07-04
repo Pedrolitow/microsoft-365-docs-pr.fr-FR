@@ -1,7 +1,7 @@
 ---
 title: Requêtes OData avec Microsoft Defender pour le point de terminaison
 ms.reviewer: ''
-description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour endpoint.
+description: Utilisez ces exemples de requêtes Open Data Protocol (OData) pour vous aider avec les protocoles d’accès aux données dans Microsoft Defender pour Endpoint.
 keywords: api, api pris en charge, odata, requête
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,18 +17,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ff13a382f7c59083c217f937b996e63abc2ff52a
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771044"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290002"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Requêtes OData avec Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 - Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -41,13 +41,13 @@ Si vous n’êtes pas familiarisé avec les requêtes OData, voir : [requêtes O
 
 Toutes les propriétés ne sont pas filtrables.
 
-## <a name="properties-that-support-filter"></a>Propriétés qui la prise en charge $filter :
-```
-- [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
-- [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
-- [MachineAction](machineaction.md): ```Status```, ```MachineId```, ```Type```, ```Requestor``` and ```CreationDateTimeUtc```.
-- [Indicator](ti-indicator.md): ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```severity ``` and ```action ```.
-```
+## <a name="properties-that-support-filter"></a>Propriétés qui la prise en charge $filter
+
+- [Alerte](alerts.md): `alertCreationTime` , , , et `lastUpdateTime` `incidentId` `InvestigationId` `status` `severity` `category` .
+- [Ordinateur](machine.md): `ComputerDnsName` , , et `LastSeen` `HealthStatus` `OsPlatform` `RiskScore` `RbacGroupId` .
+- [MachineAction](machineaction.md): `Status` , `MachineId` et `Type` `Requestor` `CreationDateTimeUtc` .
+- [Indicateur](ti-indicator.md): `indicatorValue` , , et `indicatorType` `creationTimeDateTimeUtc` `createdBy` `severity` `action` .
+
 ### <a name="example-1"></a>Exemple 1
 
 Obtenez 10 alertes les plus récentes avec des preuves connexes :
@@ -56,7 +56,7 @@ Obtenez 10 alertes les plus récentes avec des preuves connexes :
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-**Réponse :**
+#### <a name="response"></a>Réponse
 
 ```json
 {
@@ -201,7 +201,7 @@ Obtenez toutes les alertes de la dernière mise à jour après 2019-11-22 00:00:
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-**Réponse :**
+#### <a name="response"></a>Réponse
 
 ```json
 {
@@ -263,7 +263,7 @@ Obtenez tous les appareils avec « High » « RiskScore » :
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-**Réponse :**
+#### <a name="response"></a>Réponse
 
 ```json
 {
@@ -316,7 +316,7 @@ Obtenir les 100 premiers appareils avec « HealthStatus » n’est pas égal à 
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-**Réponse :**
+#### <a name="response"></a>Réponse
 
 ```json
 {
@@ -369,7 +369,7 @@ Obtenez tous les appareils qui ont été vus pour la dernière fois après 2018-
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-**Réponse :**
+#### <a name="response"></a>Réponse
 
 ```json
 {
@@ -422,7 +422,7 @@ Obtenez toutes les analyses antivirus que l’utilisateur a Analyst@examples.onm
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-**Réponse :**
+#### <a name="response"></a>Réponse
 
 ```json
 json{
@@ -454,7 +454,7 @@ Obtenir le nombre d’alertes ouvertes pour un appareil spécifique :
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-**Réponse :**
+#### <a name="response"></a>Réponse
 
 ```json
 4
@@ -468,7 +468,7 @@ Obtenez tous les appareils avec « computerDnsName » en commençant par « myma
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-**Réponse :**
+#### <a name="response"></a>Réponse
 
 ```json
 json{
@@ -514,4 +514,5 @@ json{
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [API Microsoft Defender pour point de terminaison](apis-intro.md)
+
+[API Microsoft Defender pour point de terminaison](apis-intro.md)

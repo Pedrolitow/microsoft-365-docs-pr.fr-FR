@@ -19,22 +19,22 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b85c0c63cc7c72ad555d80bd8ce6c07c95b4b97b
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 83f269a13a54ee38b7e7a464d794d87ddbd7b520
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908076"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53289930"
 ---
 # <a name="client-behavioral-blocking"></a>Blocage comportemental du client
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Présentation
 
 Le blocage du comportement client est un composant [des](behavioral-blocking-containment.md) fonctionnalités de blocage et de blocage du comportement dans Defender pour point de terminaison. Lorsque des comportements suspects sont détectés sur des appareils (également appelés clients ou points de terminaison), les artefacts (tels que les fichiers ou applications) sont bloqués, vérifiés et corrigés automatiquement. 
 
@@ -54,26 +54,24 @@ Le blocage du comportement client est efficace, car il permet non seulement d’
 
 Les détections basées sur le comportement sont nommées en fonction de la matrice [MITRE ATT&CK pour Enterprise](https://attack.mitre.org/matrices/enterprise). La convention d’attribution de noms permet d’identifier la phase d’attaque où le comportement malveillant a été observé :
 
-
-|Tactique |   Nom de la menace de détection |
+|Tactique | Nom de la menace de détection |
 |----|----|
 |Accès initial | `Behavior:Win32/InitialAccess.*!ml` |
-|Exécution  | `Behavior:Win32/Execution.*!ml` |
-|Persistance    | `Behavior:Win32/Persistence.*!ml` |
-|Escalade de privilèges   | `Behavior:Win32/PrivilegeEscalation.*!ml` |
-|Défense    | `Behavior:Win32/DefenseEvasion.*!ml` |
-|Accès aux informations d’identification  | `Behavior:Win32/CredentialAccess.*!ml` |
-|Discovery  | `Behavior:Win32/Discovery.*!ml` |
+|Exécution | `Behavior:Win32/Execution.*!ml` |
+|Persistance | `Behavior:Win32/Persistence.*!ml` |
+|Escalade de privilèges | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|Défense | `Behavior:Win32/DefenseEvasion.*!ml` |
+|Accès aux informations d’identification | `Behavior:Win32/CredentialAccess.*!ml` |
+|Découverte | `Behavior:Win32/Discovery.*!ml` |
 |Mouvement latéral | `Behavior:Win32/LateralMovement.*!ml` |
-|Collection |   `Behavior:Win32/Collection.*!ml` |
+|Collection | `Behavior:Win32/Collection.*!ml` |
 |Commande et contrôle | `Behavior:Win32/CommandAndControl.*!ml` |
-|Exfiltration   | `Behavior:Win32/Exfiltration.*!ml` |
+|Exfiltration | `Behavior:Win32/Exfiltration.*!ml` |
 |Impact | `Behavior:Win32/Impact.*!ml` |
-|Non catégorisé  | `Behavior:Win32/Generic.*!ml` |
+|Non catégorisé | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
 > Pour en savoir plus sur les menaces spécifiques, consultez **[l’activité récente des menaces globales.](https://www.microsoft.com/wdsi/threats)**
-
 
 ## <a name="configuring-client-behavioral-blocking"></a>Configuration du blocage du comportement client
 
@@ -88,4 +86,3 @@ Si votre organisation utilise Defender pour endpoint, le blocage du comportement
 - [Réduction de la surface d’attaque](attack-surface-reduction.md)
 
 - [Protection nouvelle génération](configure-microsoft-defender-antivirus-features.md) (antivirus, logiciel anti-programme malveillant et autres fonctionnalités de protection contre les menaces)
-

@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d022e903111c498d6f3b7411857748fcb637b64
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e7c208998e436245c53b90905858b7cf7ebe91d6
+ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844657"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "53290194"
 ---
 # <a name="use-basic-permissions-to-access-the-portal"></a>Utiliser des autorisations de base pour accéder au portail
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - Azure Active Directory
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -54,7 +54,7 @@ Vous pouvez affecter des utilisateurs avec l’un des niveaux d’autorisation s
     > [!NOTE]
     > Vous devez exécuter les cmdlets PowerShell dans une ligne de commande avec élévation de élévation de niveaux.
 
-- Connecter à votre Azure Active Directory. Pour plus d’informations, [voir Connecter-MsolService](/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
+- Connecter à votre Azure Active Directory. Pour plus d’informations, [voir Connecter-MsolService](/powershell/module/msonline/connect-msolservice).
 
 **Accès total** <br>
 Les utilisateurs ayant un accès total peuvent se connecter, afficher toutes les informations système et résoudre les alertes, soumettre des fichiers pour une analyse approfondie et télécharger le package d’intégration.
