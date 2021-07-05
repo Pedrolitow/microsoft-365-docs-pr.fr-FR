@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: 3e5fec9117a0ce63b80b700c8771cf092b44a69e
-ms.sourcegitcommit: 5866e45a6a4e90c661e8f90c91550a9872b68e03
+ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "53169591"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256530"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -70,13 +70,14 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
 
 2. Sélectionnez **Nouvelle stratégie de rétention** pour démarrer l’assistant de création de stratégie de rétention, puis nommez votre nouvelle stratégie de rétention.
 
-3. Pour la page **Sélectionnez les emplacements où appliquer la stratégie**, sélectionnez l’un des deux emplacements suivants sur Teams : **Message du canal Teams** ou **Conversations Teams**.
-
-   Pour **Messages de canal Teams**, les messages provenant des canaux standard sont inclus, contrairement à ceux des [canaux privés](/microsoftteams/private-channels). Les canaux privés ne sont actuellement pas pris en charge par les stratégies de rétention.
-
+3. Pour la page **Choisir les emplacements auxquels appliquer la stratégie**, sélectionnez l’un ou l’ensemble des emplacements pour Teams :
+    - **Message de canal Teams** : messages provenant de conversations de canal standard et de réunions de canal standard, mais pas de [canaux privés](/microsoftteams/private-channels) qui ont leur propre emplacement de stratégie.
+    - **Conversations Teams** : messages provenant de conversations privées individuelles, de conversations de groupe et de conversations de réunion.
+    - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé. Cette option est actuellement déployée en préversion et si vous ne la voyez pas s'afficher, réessayez dans quelques jours.
+    
    Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](#a-policy-that-applies-to-entire-locations). Vous pouvez toutefois affiner cette sélection grâce aux [options **Choisir** et **Exclure**](#a-policy-with-specific-inclusions-or-exclusions). Toutefois, avant de modifier la valeur par défaut, n’ignorez pas les conséquences suivantes pour une stratégie de rétention qui supprime des messages lorsqu’elle est configurée pour inclut ou exclut :
     
-    - Pour les conversations de groupe, étant donné qu'une copie des messages est enregistrée dans la boîte aux lettres de chaque utilisateur participant à la conversation, des copies de messages continueront d'être renvoyées dans les résultats d'eDiscovery pour les utilisateurs auxquels la politique n'a pas été attribuée.
+    - Pour les messages de conversation de groupe et les messages de canal privé, étant donné qu'une copie des messages est enregistrée dans la boîte aux lettres de chaque utilisateur participant à la conversation, des copies de messages continueront d'être renvoyées dans les résultats d'eDiscovery pour les utilisateurs auxquels la politique n'a pas été attribuée.
     - Pour les utilisateurs qui n’ont pas reçu la stratégie, les messages supprimés sont renvoyés dans les résultats de recherche de leur Teams, mais n’affichent pas le contenu du message suite à la suppression définitive de la stratégie affectée aux utilisateurs.
 
 4. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu.
@@ -182,11 +183,15 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Informations de configuration pour la messagerie Exchange et les dossiers publics Exchange
 
-L’emplacement **Courrier Exchange** prend en charge la rétention du courrier électronique, du calendrier et d’autres éléments de boîte aux lettres des utilisateurs en appliquant des paramètres de rétention au niveau d’une boîte aux lettres.
+L’emplacement **Courrier Exchange** prend en charge la rétention du courrier électronique, du calendrier et d’autres éléments de boîte aux lettres des utilisateurs en appliquant des paramètres de rétention au niveau d’une boîte aux lettres. Les boîtes aux lettres partagées sont également prises en charge.
 
-Si vous souhaitez en savoir plus sur les éléments inclus et exclus lors de la configuration des paramètres de rétention d’Exchange, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
+Lorsque vous appliquez les paramètres de rétention à **Tous les destinataires**, toutes les [Boîtes aux lettres inactives](create-and-manage-inactive-mailboxes.md) sont incluses. Toutefois, si vous modifiez cette valeur par défaut et configurez [inclusions ou exclusions spécifiques](#a-policy-with-specific-inclusions-or-exclusions), les boîtes aux lettres inactives ne sont pas prises en charge et les paramètres de rétention ne sont pas appliqués ou exclus pour ces boîtes aux lettres.
 
-Notez que même si un groupe Microsoft 365 possède une boîte aux lettres Exchange, une stratégie de rétention qui inclut l’ensemble de l’emplacement **Courrier Exchange** n’inclut pas le contenu des boîtes aux lettres du groupe Microsoft 365. Pour conserver le contenu de ces boîtes aux lettres, sélectionnez l’emplacement **Groupes Microsoft 365**.
+En outre, les boîtes aux lettres de ressources et les boîtes aux lettres de groupe Microsoft 365 ne sont pas prises en charge pour la valeur par défaut **Tous les destinataires**, ou pour des inclusions ou exclusions spécifiques. Pour boîtes aux lettres de groupe Microsoft 365, sélectionnez plutôt l’emplacement **Groupes Microsoft 365** .
+
+Si vous choisissez des destinataires à inclure ou exclure, vous pouvez sélectionner des groupes de distribution et des groupes de sécurité à extension messagerie. En arrière-plan, ces groupes sont automatiquement développés au moment de la configuration pour sélectionner les boîtes aux lettres des utilisateurs du groupe. Si l’appartenance de ces groupes change ultérieurement, une stratégie de rétention existante n’est pas automatiquement mise à jour.
+
+Si vous souhaitez en savoir plus sur les éléments de boîte aux lettres inclus et exclus lors de la configuration des paramètres de rétention d’Exchange, veuillez consulter la rubrique [Éléments composant la rétention et la suppression](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
 L’emplacement **Dossiers publics Exchange** applique les paramètres de rétention à tous les dossiers publics et ne peut pas être appliqué au niveau d’un dossier ou d’une boîte aux lettres.
 

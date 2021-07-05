@@ -17,21 +17,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
-ms.openlocfilehash: 1e1aa45c3bf4d31e4c969b0bc0949109fa716467
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+description: Découvrez les étapes principales de la création d’un dictionnaire de mots clés dans le Centre de sécurité et conformité Office 365.
+ms.openlocfilehash: 661ca9e227e8583bb6b601792e178c1c366132cb
+ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841161"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53256710"
 ---
 # <a name="create-a-keyword-dictionary"></a>Créer un dictionnaire de mots clés
 
-La protection contre la perte de données (DLP) peut identifier, surveiller et protéger vos éléments sensibles. L’identification des éléments sensibles nécessite parfois la recherche de mots clés, en particulier lors de l’identification d’un contenu générique (comme une communication liée à la santé) ou d’un langage inapproprié ou explicite. Bien que vous puissiez créer des listes de mots clés dans des types d’informations sensibles, ces listes sont de taille limitée et nécessitent la modification du XML pour les créer ou les modifier. Les dictionnaires de mots clés facilitent la gestion des mots clés à une échelle beaucoup plus grande, en prenant en charge jusqu’à 1 Mo de termes (après compression) dans le dictionnaire. De plus, toutes les langues sont prises en charge. La limite du client est également de 1 Mo après compression. 1 Mo de limite après compression signifie que tous les dictionnaires combinés dans un client peuvent avoir près de 1 million de caractères.
+La protection contre la perte de données (DLP) peut identifier, surveiller et protéger vos éléments sensibles. L’identification des éléments sensibles nécessite parfois la recherche de mots clés, en particulier lors de l’identification d’un contenu générique (comme une communication liée à la santé) ou d’un langage inapproprié ou explicite. Bien que vous puissiez créer des listes de mots clés dans des types d’informations sensibles, ces listes sont de taille limitée et nécessitent la modification du XML pour les créer ou les modifier. Les dictionnaires de mots clés facilitent la gestion des mots clés à une échelle beaucoup plus grande, en prenant en charge jusqu’à 1 Mo de termes (après compression) dans le dictionnaire. De plus, toutes les langues sont prises en charge. La limite du client est également de 1 Mo après compression. 1 Mo de limite après compression signifie que tous les dictionnaires combinés dans un client peuvent avoir près de 1 million de caractères.
 
 ## <a name="keyword-dictionary-limits"></a>Limites du dictionnaire de mots clés
 
-Il existe une limite de 50 types d’informations sensibles basés sur un dictionnaire de mots clés que vous pouvez créer par client. Pour connaître le nombre de dictionnaires de mots clés de votre client, connectez-vous à l’aide des procédures de la section [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell) pour vous connecter à votre client et exécutez ce script PowerShell.
+Il existe une limite de 50 types d’informations sensibles basés sur un dictionnaire de mots clés que vous pouvez créer par client. Pour connaître le nombre de dictionnaires de mots clés de votre client, connectez-vous à l’aide des procédures de la section [Se connecter à l’interface PowerShell du Centre de sécurité et conformité](/powershell/exchange/connect-to-scc-powershell) pour vous connecter à votre client et exécutez ce script PowerShell.
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -71,7 +71,7 @@ Remove-Item $rawFile
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Étapes de base de la création d’un dictionnaire de mots clés
 
-Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le plus souvent d’un fichier (par exemple, une liste .csv ou .txt) importé dans le service ou par cmdlet PowerShell, depuis une liste à laquelle vous accédez directement dans la cmdlet PowerShell ou depuis un dictionnaire existant. Lorsque vous créez un dictionnaire de mots clés, vous suivez les mêmes étapes fondamentales :
+Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le plus souvent d’un fichier (par exemple, une liste .csv ou .txt) importé dans le service ou par cmdlet PowerShell, depuis une liste à laquelle vous accédez directement dans la cmdlet PowerShell ou depuis un dictionnaire existant. Lorsque vous créez un dictionnaire de mots clés, vous suivez les mêmes étapes fondamentales :
   
 1. Utilisez le **Centre de sécurité et de conformité** ([https://protection.office.com](https://protection.office.com)) ou connectez-vous au **Centre de sécurité &amp; de conformité PowerShell**.
     
@@ -81,7 +81,7 @@ Les mots clés de votre dictionnaire peuvent provenir de diverses sources, le pl
 
 ## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>Créer un dictionnaire de mots clés avec le Centre de sécurité et de conformité
 
-Procédez comme suit pour créer et importer des mots clés pour un dictionnaire personnalisé :
+Procédez comme suit pour créer et importer des mots clés pour un dictionnaire personnalisé :
 
 1. Connectez-vous au Centre de sécurité et de conformité([https://protection.office.com](https://protection.office.com)).
 
@@ -115,13 +115,13 @@ Lorsque vous devez créer un dictionnaire volumineux, c’est souvent pour utili
     
 2. Enregistrez le fichier texte avec le codage Unicode. Dans le Bloc-notes \> **Enregistrer sous** \> **Codage** \> **Unicode**.
     
-3. Lisez le fichier dans une variable en exécutant la cmdlet suivante :
+3. Lisez le fichier dans une variable en exécutant la cmdlet suivante :
     
     ```powershell
     $fileData = Get-Content <filename> -Encoding Byte -ReadCount 0
     ```
 
-4. Créez le dictionnaire en exécutant la cmdlet suivante :
+4. Créez le dictionnaire en exécutant la cmdlet suivante :
     
     ```powershell
     New-DlpKeywordDictionary -Name <name> -Description <description> -FileData $fileData
@@ -139,13 +139,13 @@ Les dictionnaires de mots clés peuvent être utilisés dans le cadre des exigen
 </Entity>
 ```
 
-Pour obtenir l’identité de votre dictionnaire, exécutez la commande suivante et copiez la valeur de la propriété **Identité** : 
+Pour obtenir l’identité de votre dictionnaire, exécutez la commande suivante et copiez la valeur de la propriété **Identité** : 
   
 ```powershell
 Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-Le résultat de la commande ressemble à ceci :
+Le résultat de la commande ressemble à ceci :
   
 `RunspaceId        : 138e55e7-ea1e-4f7a-b824-79f2c4252255`
 `Identity          : 8d2d44b0-91f4-41f2-94e0-21c1c5b5fc9f`
@@ -157,7 +157,7 @@ Le résultat de la commande ressemble à ceci :
 `ObjectState       : Unchanged`
 
 
-Collez l’identité dans le code XML de votre type personnalisé d’informations sensibles et chargez-le. Votre dictionnaire s’affiche désormais dans votre liste de types d’informations sensibles et vous pouvez l’utiliser directement dans votre stratégie en indiquant le nombre de mots clés qui doivent correspondre.
+Collez l’identité dans le code XML de votre type personnalisé d’informations sensibles et chargez-le. Votre dictionnaire s’affiche désormais dans votre liste de types d’informations sensibles et vous pouvez l’utiliser directement dans votre stratégie en indiquant le nombre de mots clés qui doivent correspondre.
   
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
@@ -174,10 +174,16 @@ Collez l’identité dans le code XML de votre type personnalisé d’informati
 ```
 
 > [!NOTE]
-> Microsoft 365 Information Protection prend désormais en charge, en préversion, les langues de jeu de caractères à double octets pour :
+> Microsoft 365 Information Protection prend désormais en charge, les langues de jeu de caractères à double octets pour :
 > - Chinois (simplifié)
 > - Chinois (traditionnel)
 > - Korean
 > - Japanese
 >
 >Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
+
+> [!TIP]
+> Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’octet unique ou pour détecter les modèles contenant du chinois/le japonais et l’anglais, définissez deux variantes du mot clé ou de regex. Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
+> Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple de regex pour référence :
+    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+> Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.
