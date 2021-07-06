@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 7e99198e0713a1940f094c3875293b2590f31e3f
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256854"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300380"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -50,7 +50,7 @@ Chaque entité de type d’informations sensibles est définie par les champs ci
 - description : décrit ce que le type d’informations sensibles recherche
 - modèle : un modèle définit ce qu’un type d’informations sensibles détecte. Il se compose des composants suivants :
     - Élément principal : élément principal que le type d’informations sensibles recherche. Il peut s’agit **d’une expression** régulière avec ou sans validation de la liste de contrôle, d’une liste de mots **clés,** d’un dictionnaire de mots clés **ou** d’une **fonction.**
-    - Élément de prise en charge : éléments qui agissent comme des preuves qui contribuent à augmenter la confiance de la correspondance. Par exemple, le mot clé « SSN » à proximité d’un numéro SSN. Il peut s’agit d’une expression régulière avec ou sans validation de la liste de contrôle, d’une liste de mots clés, d’un dictionnaire de mots clés.
+    - Élément de prise en charge : éléments qui agissent en tant que preuves justificatives qui contribuent à augmenter la confiance de la correspondance. Par exemple, le mot clé « SSN » à proximité d’un numéro SSN. Il peut s’agit d’une expression régulière avec ou sans validation de la liste de contrôle, d’une liste de mots clés, d’un dictionnaire de mots clés.
     - Niveau de confiance : les niveaux de confiance (élevé, moyen, faible) reflètent la quantité de preuves justificatives détectées avec l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez.
     - Proximité : nombre de caractères entre l’élément principal et l’élément de prise en charge
 
@@ -115,7 +115,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 
 ### <a name="more-on-confidence-levels"></a>Plus d’informations sur les niveaux de confiance
 
-Dans une définition d’entité  de type d’informations sensibles, le niveau de confiance reflète la quantité de preuves justificatives détectées en plus de l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez. Par exemple, les correspondances avec un niveau de confiance élevé contiennent davantage de preuves justificatives à proximité immédiate de l’élément principal, tandis que les correspondances avec un niveau de confiance faible contiennent peu ou pas de preuves justificatives à proximité immédiate. 
+Dans une définition d’entité  de type d’informations sensibles, le niveau de confiance reflète la quantité de preuves justificatives détectées en plus de l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez. Par exemple, les correspondances avec un niveau de confiance élevé contiennent davantage de preuves justificatives à proximité immédiate de l’élément principal, tandis que les correspondances avec un niveau de confiance faible contiennent peu ou pas de preuves à proximité. 
 
 Un niveau de confiance élevé renvoie le moins de faux positifs, mais peut entraîner davantage de faux négatifs. Les niveaux de confiance faibles ou moyens renvoient plus de faux positifs, mais peu à zéro faux négatifs.
 
@@ -123,7 +123,7 @@ Un niveau de confiance élevé renvoie le moins de faux positifs, mais peut entr
 - **confiance moyenne**: valeur de 75, les éléments qui correspondent contiennent une quantité moyenne de faux positifs et de faux négatifs. Une confiance moyenne renvoie toutes les correspondances de confiance moyenne et élevée.  
 - **niveau de confiance** élevé : valeur 85, les éléments qui correspondent contiennent le moins de faux positifs, mais le plus de faux négatifs. Un niveau de confiance élevé renvoie uniquement des correspondances à haut niveau de confiance.  
 
-Vous devez utiliser des modèles de niveau de confiance élevé avec de faibles nombres, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
+Vous devez utiliser des modèles de niveau de confiance élevé avec un nombre faible, par ex. 5 à 10, et des modèles de confiance faible avec des nombres plus élevés, par ex. 20 ou plus.
 
 > [!NOTE]
 > Si vous avez des stratégies existantes ou des types d’informations sensibles personnalisés (SIT) définis à l’aide de niveaux de confiance basés sur le nombre (également défini comme précision), ils seront automatiquement mappés aux trois niveaux de confiance discrets ; confiance faible, confiance moyenne et confiance élevée, dans l’interface utilisateur du Centre de sécurité @ conformité.
@@ -154,10 +154,12 @@ Pour créer des types d’informations sensibles personnalisés dans le Centre d
 > Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’un seul caractère d’byte ou pour détecter les modèles contenant chinois/japonais et anglais, définissez deux variantes du mot clé ou regex. Par exemple, pour détecter un mot clé tel que « 机密 'document », utilisez deux variantes du mot clé ; un avec un espace entre le texte japonais et anglais et un autre sans espace entre le texte japonais et le texte anglais. Ainsi, les mots clés à ajouter dans la sit doivent être « 机密 ' document » et « 机密socument ». De la même façon, pour détecter une expression « « 2020 » « « 2020 » doit être utilisée ; « « « 2020 » et « 2020 » et « 2020 » et « 20200 » et « 2020 »
+> Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’octet unique ou pour détecter les modèles contenant du chinois/le japonais et l’anglais, définissez deux variantes du mot clé ou de regex.
 > 
-> Lors de la création d’une regex à l’aide d’un tiret d’un double byte ou d’une période d’un double byte, veillez à éviter les deux caractères comme un tiret ou un point dans un regex. Voici un exemple de regex pour référence :
->    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
+> 
+> Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple de regex pour référence :
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.
 

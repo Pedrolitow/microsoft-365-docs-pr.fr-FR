@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Découvrez comment créer, modifier, supprimer et tester des types d’informations sensibles personnalisés pour DLP dans le Centre de sécurité & conformité.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f346a32da6f47cadc0ded6d7d045a833bb3b60b0
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 0f65ba38c75cc1d9886cb4c3013d7f707912f72a
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287538"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300392"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Commencer à travailler avec des types d’informations sensibles personnalisées
 
@@ -127,9 +127,9 @@ Vous pouvez également créer des types d’informations sensibles personnalisé
 
 ### <a name="checksum-validator"></a>Validateur checksum
 
-Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la csum.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
+Si vous devez exécuter une base de contrôle sur un chiffre dans une expression régulière, vous pouvez utiliser le *validateur de la base de contrôle.* Par exemple, par exemple, vous devez créer une sit pour un numéro de licence à huit chiffres où le dernier chiffre est un chiffre de sommes de contrôle qui est validé à l’aide d’un calcul mod 9. Vous avez installé l’algorithme de sommes de contrôle comme ceci :
 
-Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide si mod valeur != chiffre 8 numéro de compte n’est pas valide
+Somme = chiffre 1 * Poids 1 + chiffre 2 * poids 2 + chiffre 3 * poids 3 + chiffre 4 * poids 4 + chiffre 5 * poids 5 + chiffre 6 * poids 6 + chiffre 7 * poids 7 + chiffre 8 * poids 8 valeur mo = Somme % 9 Si valeur mod == chiffre 8 Le numéro de compte est valide Si mod valeur != chiffre 8 le numéro de compte n’est pas valide
 
 1. Définissez l’élément principal avec cette expression régulière :
 
@@ -186,7 +186,7 @@ Voici des définitions et des exemples pour les contrôles supplémentaires disp
 
 
 > [!NOTE]
-> Microsoft 365 La Protection des informations prend en charge les langues de jeu de caractères à doubles caractères pour :
+> Microsoft 365 Information Protection prend désormais en charge, les langues de jeu de caractères à double octets pour :
 > - Chinois (simplifié)
 > - Chinois (traditionnel)
 > - Korean
@@ -195,7 +195,12 @@ Voici des définitions et des exemples pour les contrôles supplémentaires disp
 >Cette prise en charge est disponible pour les types d’informations sensibles. Si vous souhaitez en savoir plus, consultez l’article [Prise en charge de la protection des informations pour les jeux de caractères à double octets (préversion)](mip-dbcs-relnotes.md).
 
 > [!TIP]
-> Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’un seul caractère d’byte ou pour détecter les modèles contenant chinois/japonais et anglais, définissez deux variantes du mot clé ou regex. Par exemple, pour détecter un mot clé tel que « 机密 'document », utilisez deux variantes du mot clé ; un avec un espace entre le texte japonais et anglais et un autre sans espace entre le texte japonais et le texte anglais. Ainsi, les mots clés à ajouter dans la sit doivent être « 机密 ' document » et « 机密socument ». De la même façon, pour détecter une expression « « 2020 » « « 2020 » doit être utilisée ; « « « 2020 » et « 2020 » et « 2020 » et « 20200 » et « 2020 »
-> Lors de la création d’une regex à l’aide d’un tiret d’un double byte ou d’une période d’un double byte, veillez à éviter les deux caractères comme un tiret ou un point dans un regex. Voici un exemple de regex pour référence :
-    - (?<!\d) ([4][0-9] {3} [ \- ?\-\t]*[0-9]{4}
+> Pour détecter les modèles contenant des caractères chinois/japonais et des caractères d’octet unique ou pour détecter les modèles contenant du chinois/le japonais et l’anglais, définissez deux variantes du mot clé ou de regex. 
+>
+> Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
+>
+> Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple de regex pour référence :
+>
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
 > Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.

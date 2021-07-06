@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3d0b0f1adac589b910b5fabf2c22d08cbd65f142
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276928"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300103"
 ---
 # <a name="device-images"></a>Images d’un appareil
 
@@ -31,7 +31,7 @@ Lorsque vous commandez un nouvel appareil auprès d’un fabricant [approuvé,](
 Travaillez directement avec le représentant commercial Dell, qui s’assure que l’image approuvée par Microsoft Manged Desktop est appliquée aux appareils pour votre commande. Pour plus de questions sur les appareils Dell, l’image et le processus de commande, contactez MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-Lorsque vous commandez de nouveaux appareils auprès de HP, n’oubliez pas d’utiliser la référence SKU spécifique répertoriée dans la section Exigences supplémentaires pour chaque modèle trouvé sur le site d’appareils [métiers Shop Windows 10 Professionnel](https://www.microsoft.com/windowsforbusiness/view-all-devices) (filtrez l’affichage pour afficher les appareils Microsoft Manged Desktop).
+Lorsque vous commandez de nouveaux appareils auprès de HP, n’oubliez pas d’utiliser la référence SKU spécifique répertoriée dans la section Exigences supplémentaires pour chaque modèle trouvé sur le site d’appareils [métiers Shop Windows 10 Professionnel](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) (filtrez l’affichage pour afficher les appareils Microsoft Manged Desktop).
 
 Si vous commandez un appareil à partir de HP qui a été approuvé comme [exception](customizing.md) mais qui n’est pas répertorié dans la page Liste des appareils, n’oubliez pas de demander la référence SKU à utiliser pour votre modèle. Nous allons travailler avec HP pour vous obtenir ces informations à l’aide de votre demande d’exception. Vous pouvez également contacter HP directement pour toute question sur les appareils et les instructions de commande des appareils à l’aide des adresses suivantes :
  
