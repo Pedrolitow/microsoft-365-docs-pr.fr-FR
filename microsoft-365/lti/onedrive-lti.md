@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: Créez et classez des devoirs, créez et organisez du contenu de cours et collaborez sur des fichiers en temps réel avec la nouvelle application d’interopérabilité Microsoft OneDrive Learning Tools.
-ms.openlocfilehash: 985a316bac689b9bc6c53ab65782d548fcad0db8
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: bcb374ed1666f23fa5f3d4692f43a4369670e891
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53257019"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322220"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Intégrer Microsoft OneDrive LTI à Canvas
 
@@ -40,7 +40,11 @@ L’intégration Microsoft OneDrive LTI à Canvas est un processus en deux étap
 
 1. Connectez-vous <a href="https://onedrivelti.microsoft.com/admin" target="_blank">au Microsoft OneDrive d’inscription LTI</a>
 1. Sélectionnez le **bouton Consentement de l’administrateur** et acceptez les autorisations.
-1. Sélectionnez **le bouton Créer un client LTI.** Dans la page Inscription LTI, sélectionnez **Canvas** dans la liste et entrez l’URL de base de votre instance de canvas.
+
+> [!CAUTION]
+> Si cette étape n’est pas effectuée, l’étape suivante vous donnera une erreur et vous ne pourrez pas effectuer cette étape pendant une heure une fois que vous aurez obtenu l’erreur.
+
+3. Sélectionnez **le bouton Créer un client LTI.** Dans la page Inscription LTI, sélectionnez **Canvas** dans la liste et entrez l’URL de base de votre instance de canvas.
 
 > [!NOTE]
 > Si votre instance de canvas est, par exemple, https://contoso.test.instructure.com ]( https://contoso.test.instructure.com) , l’URL complète doit être entrée.
@@ -74,7 +78,7 @@ Un administrateur canvas peut activer Microsoft OneDrive LTI pour tous les cours
 1. Connectez-vous en tant qu’administrateur et Paramètres **section.**
 2. Go to the **Apps** section and select the **View App Configurations** button.
 3. Sélectionnez le **bouton Ajouter une** application.
-4. Dans la **liste finale Type de configuration,** choisissez l’option Par **ID** client.
+4. Dans la **liste finale Type de** configuration, choisissez l’option Par **ID** client.
 5. Collez la valeur de la clé de développeur générée précédemment dans le champ **ID client,** puis sélectionnez **le bouton** Envoyer.
 
 :::image type="content" source="media/OneDrive-LTI-31.png" alt-text="Page Ajouter une application, affichant l’option Par ID client sous le menu déroulant Type de configuration.":::

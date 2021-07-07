@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2bf40f5b1d89b7a232f86c1e186ca660db9f8bbc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 470b33ca3201151fb164640eeb93c50daf7bb458
+ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227282"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53322364"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>En savoir plus sur la conformité des communications dans Microsoft 365
 
@@ -79,7 +79,7 @@ La conformité des communications Microsoft 365 offre plusieurs fonctionnalités
 Les modèles personnalisables intelligents en matière de conformité des communications vous permettent d’appliquer l’apprentissage automatique pour détecter de manière intelligente les violations de communication dans votre organisation.
 
 - **Modèles pré-configurés personnalisables**: les nouveaux modèles de stratégie permettent de résoudre les risques de communication les plus courants. La création initiale de la stratégie et la mise à jour de suivi sont désormais plus rapides avec un langage anti-harcèlement et choquant prédéfinie, des informations sensibles, des conflits d’intérêts et des modèles de conformité réglementaire.
-- La nouvelle prise en charge de l’apprentissage automatique : les menaces intégrées, le harcèlement, la blasphémation et les [classifieurs](classifier-get-started-with.md) d’image permettent de réduire les faux positifs dans les messages analysés, ce qui permet aux réviseurs de gagner du temps pendant le processus d’examen et de correction.
+- La nouvelle prise en charge de l’apprentissage automatique : la discrimination intégrée, les menaces, le harcèlement, la blasphémité et les classifieurs d’image permettent de réduire les contenus mal [classés](classifier-get-started-with.md) dans les messages analysés, ce qui permet aux réviseurs de gagner du temps pendant le processus d’examen et de correction.
 - **Générateur de conditions** amélioré : la configuration des conditions de stratégie est désormais simplifiée en une expérience unique et intégrée dans l’Assistant Stratégie, ce qui réduit la confusion dans la façon dont les conditions sont appliquées aux stratégies.
 
 ### <a name="flexible-remediation-workflows"></a>Flux de travail de correction flexibles
@@ -154,11 +154,11 @@ Dans cette étape, vous étudiez plus en détail les problèmes détectés comme
 
 L’étape suivante consiste à résoudre les problèmes de conformité des communications que vous avez examinés à l’aide des options suivantes :
 
-- **Résoudre** : une fois que vous avez révisé un problème, vous pouvez résoudre le problème en résolvant l’alerte. La résolution d'une alerte la supprime de la file d'attente des alertes en cours, et l'action est conservée en tant qu'entrée dans la file d'attente Résolue pour la stratégie de correspondante. Les alertes sont automatiquement résolues après le marquage de l’alerte comme faux positif, l’envoi d’une notification à un utilisateur concernant l’alerte ou l’ouverture d’un nouveau cas pour l’alerte.
+- **Résoudre** : une fois que vous avez révisé un problème, vous pouvez résoudre le problème en résolvant l’alerte. La résolution d’une alerte la supprime de la file d’attente d’alertes en attente et l’action est conservée en tant qu’entrée dans la file d’attente résolue pour la stratégie correspondante.  Les alertes sont automatiquement résolues après le marquage de l’alerte comme étant mal classé, l’envoi d’une notification à un utilisateur concernant l’alerte ou l’ouverture d’un nouveau cas pour l’alerte.
 - **Marquer un message** : dans le cadre de la résolution d’un problème, vous pouvez baliser le message détecté comme étant conforme ou non conforme, ou comme il est lié aux stratégies et normes de votre organisation. La balise peut vous aider à microfiltrer des alertes de stratégie pour les réaffectations ou dans le cadre d’autres processus de révision interne.
 - **Avertir l’utilisateur :** souvent, les utilisateurs violent accidentellement ou par inadvertance une stratégie de conformité des communications. Vous pouvez utiliser la fonctionnalité Notification pour avertir l’utilisateur et résoudre le problème.
 - **Réaffecter à un autre réviseur** : parfois, le réviseur initial d’un problème doit être saisi par d’autres réviseurs pour résoudre l’incident. Vous pouvez facilement transmettre les problèmes de message aux réviseurs d’autres zones de votre organisation dans le cadre du processus de résolution.
-- **Marquer comme un faux positif** : les messages détectés de façon incorrecte comme correspondances pour les stratégies de conformité peuvent arriver dans le processus de révision. Vous pouvez marquer ces types d’alertes comme faux positifs et résoudre automatiquement le problème.
+- **Signaler une erreur de classification**: les messages détectés de manière incorrecte comme des correspondances de stratégies de conformité peuvent parfois passer au processus de révision. Vous pouvez marquer ces types d’alertes comme étant mal classés, envoyer des commentaires à Microsoft sur l’erreur de classification afin d’améliorer les classifieurs globaux et résoudre automatiquement le problème.
 - **Supprimer un message dans Teams (aperçu)**: les messages inappropriés peuvent être supprimés de l’affichage dans les canaux Microsoft Teams ou les messages de conversation personnels et de groupe. Les messages inappropriés supprimés sont remplacés par une notification de suppression du message en cas de violation de stratégie.
 - **Réamorcer pour examen**: dans les situations les plus graves, vous devrez peut-être partager des informations de conformité des communications avec d’autres réviseurs de votre organisation. La conformité des communications est étroitement intégrée aux autres fonctionnalités de conformité Microsoft 365 pour vous aider à résoudre les problèmes de bout en bout. L’escalade d’un cas d’enquête vous permet de transférer des données et la gestion du cas Advanced eDiscovery dans Microsoft 365. Advanced eDiscovery fournit un flux de travail intégral pour préserver, collecter, examiner, analyser et exporter du contenu adapté aux examens internes et externes de votre organisation. Il permet aux équipes juridiques de gérer l’ensemble du flux de travail de notification de conservation légale. Pour en savoir plus sur les cas Advanced eDiscovery, consultez [Présentation de Advanced eDiscovery dans Microsoft 365](overview-ediscovery-20.md).
 

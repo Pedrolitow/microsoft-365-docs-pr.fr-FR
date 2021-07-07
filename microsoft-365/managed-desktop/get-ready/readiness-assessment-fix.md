@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9d2f9a95b3d5d90b79122d55477284083ea8332e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 866d1a2de820fca4c66537583dc5f55098149931
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286884"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327010"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Résoudre les problèmes détectés par l’outil de préparation et d’évaluation
 
@@ -36,9 +36,9 @@ Pour chaque vérification, l’outil signalera l’un des quatre résultats poss
 
 Vous pouvez accéder aux paramètres Intune à l’Microsoft Endpoint Manager [d’administration.](https://endpoint.microsoft.com)
 
-### <a name="autopilot-deployment-profile"></a>Profil autopilot deployment
+### <a name="autopilot-deployment-profile"></a>Profil Autopilot Deployment
 
-Vous ne devez pas avoir de profils Autopilot existants qui ciblent des groupes affectés ou dynamiques Microsoft Manged Desktop appareils mobiles. Microsoft Manged Desktop utilise Autopilot pour mettre en service de nouveaux appareils.
+Vous ne devez pas avoir de profils Autopilot existants qui ciblent des groupes affectés ou dynamiques Microsoft Manged Desktop appareils. Microsoft Manged Desktop utilise Autopilot pour mettre en service de nouveaux appareils.
 
 **Non prêt**
 
@@ -55,20 +55,20 @@ Si vous avez des connecteurs de certificat qui seront utilisés par les appareil
 
 **Avertissement**
 
-Aucun connecteur de certificat n’est présent. Il est possible que vous n’avez pas besoin de connecteurs, mais vous devez évaluer si vous en avez besoin pour la connectivité réseau sur Microsoft Manged Desktop appareils. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Aucun connecteur de certificat n’est présent. Il est possible que vous n’avez pas besoin de connecteurs, mais vous devez évaluer si vous en avez besoin pour la connectivité réseau sur Microsoft Manged Desktop appareils. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 **Avertissement**
 
-Au moins un connecteur de certificat présente une erreur. Si vous avez besoin de ce connecteur pour fournir des certificats aux Microsoft Manged Desktop, vous devez résoudre l’erreur. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Au moins un connecteur de certificat présente une erreur. Si vous avez besoin de ce connecteur pour fournir des certificats aux Microsoft Manged Desktop, vous devez résoudre l’erreur. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 
 **Avertissement**
 
-Vous avez au moins un connecteur de certificat et aucune erreur n’est signalée. Toutefois, en vue du déploiement, vous devrez peut-être créer un profil pour réutiliser le connecteur pour Microsoft Manged Desktop périphériques. Pour plus d’informations, voir [Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
+Vous avez au moins un connecteur de certificat et aucune erreur n’est signalée. Toutefois, en vue du déploiement, vous devrez peut-être créer un profil pour réutiliser le connecteur pour Microsoft Manged Desktop périphériques. Pour plus d’informations, [voir Préparer les certificats et les profils réseau pour Microsoft Manged Desktop](certs-wifi-lan.md).
 
 ### <a name="company-portal"></a>Portail d'entreprise
 
-Microsoft Manged Desktop nécessite que les administrateurs informatiques installent les Portail d’entreprise Intune pour leurs utilisateurs avec Microsoft Manged Desktop appareils. 
+Microsoft Manged Desktop nécessite que les administrateurs informatiques installent Portail d’entreprise Intune pour leurs utilisateurs avec Microsoft Manged Desktop appareils. 
 
 **Non prêt**
 
@@ -104,11 +104,11 @@ Les stratégies de conformité des appareils Intune dans votre organisation Azur
 
 **Non prêt**
 
-Vous avez au moins une stratégie de conformité qui cible tous les utilisateurs. Microsoft Manged Desktop des stratégies de conformité qui cibleront vos appareils Microsoft Manged Desktop de sécurité.  Modifiez la stratégie pour cibler un groupe Azure AD spécifique qui n’inclut pas d’Microsoft Manged Desktop utilisateurs ou d’appareils. Pour obtenir la procédure à suivre, voir [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+Vous avez au moins une stratégie de conformité qui cible tous les utilisateurs. Microsoft Manged Desktop des stratégies de conformité qui cibleront vos appareils Microsoft Manged Desktop de sécurité.  Modifiez la stratégie pour cibler un groupe Azure AD spécifique qui n’inclut aucun Microsoft Manged Desktop utilisateurs ou appareils. Pour obtenir la procédure à [suivre,](/mem/intune/protect/create-compliance-policy)voir Créer une stratégie de conformité dans Microsoft Intune .
 
 **Avertissement**
 
-Assurez-vous que les stratégies de conformité dont vous avez besoin ne ciblent pas Microsoft Manged Desktop utilisateurs. Pour obtenir la procédure à suivre, voir [Créer une stratégie de conformité dans Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+Assurez-vous que les stratégies de conformité dont vous avez besoin ne ciblent aucune stratégie Microsoft Manged Desktop utilisateurs. Pour obtenir la procédure à [suivre,](/mem/intune/protect/create-compliance-policy)voir Créer une stratégie de conformité dans Microsoft Intune .
 
 
 
@@ -137,7 +137,7 @@ Vous disposez actuellement d’au moins une stratégie de restriction d’inscri
 
 ### <a name="enrollment-status-page"></a>Page État de l’inscription
 
-La page d’état d’inscription (ESP) est actuellement activée. Si vous avez l’intention de participer à la Microsoft Manged Desktop prévisualisation publique de cette fonctionnalité, vous pouvez ignorer cet élément. Pour plus d’informations, voir l’expérience de première expérience avec [Autopilot et la page État de l’inscription.](../get-started/esp-first-run.md)
+La page Statut de l’inscription (ESP) est actuellement activée. Si vous avez l’intention de participer à la Microsoft Manged Desktop prévisualisation publique de cette fonctionnalité, vous pouvez ignorer cet élément. Pour plus d’informations, voir l’expérience de première expérience avec [Autopilot et la page État de l’inscription.](../get-started/esp-first-run.md)
 
 **Non prêt**
 
@@ -181,7 +181,7 @@ Le rôle d’administrateur Intune n’a pas les autorisations suffisantes pour 
 
 ### <a name="powershell-scripts"></a>Scripts PowerShell
 
-Windows PowerShell scripts ne peuvent pas être affectés de manière à cibler Microsoft Manged Desktop périphériques.  
+Windows PowerShell scripts ne peuvent pas être affectés d’une manière qui ciblerait Microsoft Manged Desktop périphériques.  
 
 **Avertissement**
 
@@ -212,6 +212,13 @@ Vous avez un profil de base de sécurité qui cible tous les utilisateurs, tous 
 
 Assurez-vous que les stratégies de base de sécurité que vous avez exclues Microsoft Manged Desktop appareils. Pour obtenir la procédure à suivre, voir Utiliser les lignes de base de sécurité [pour configurer Windows 10 appareils mobiles dans Intune.](/mem/intune/protect/security-baselines) Lors de l’inscription, nous appliquons une nouvelle ligne de base de sécurité à tous Microsoft Manged Desktop appareils. Le groupe Modern **Workplace Devices -All** Azure AD est un groupe dynamique que nous créons lorsque vous vous inscrivez à Microsoft Manged Desktop. Vous devez donc revenir pour exclure ce groupe après l’inscription. 
 
+### <a name="unlicensed-admins"></a>Administrateurs sans permis
+
+Ce paramètre doit être activé pour éviter une erreur « manque d’autorisations » lorsque nous interagissons avec votre organisation Azure AD. 
+
+**Non prêt**
+
+**Autoriser l’accès aux administrateurs sans** permis doit être activé. Pour obtenir la procédure à suivre, [voir Conditions préalables pour les comptes invités.](/microsoft-365/managed-desktop/get-ready/guest-accounts)
 
 ### <a name="windows-apps"></a>Windows applications
 
@@ -321,7 +328,7 @@ Les paramètres de sécurité par défaut sont désactivés. Désactiver les par
 
 ### <a name="self-service-password-reset"></a>Réinitialisation du mot de passe en libre-service
 
-La réinitialisation du mot de passe en libre-service (SSPR) peut être activée pour tous les utilisateurs Microsoft Manged Desktop à l’exception Microsoft Manged Desktop comptes de service. Pour plus d’informations, voir Didacticiel : Permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser leurs mots de passe à l’aide Azure Active Directory réinitialisation du mot de [passe en libre-service.](/azure/active-directory/authentication/tutorial-enable-sspr)
+La réinitialisation du mot de passe en libre-service (SSPR) peut être activée pour tous les utilisateurs Microsoft Manged Desktop à l’exception Microsoft Manged Desktop comptes de service. Pour plus d’informations, voir didacticiel : permettre aux utilisateurs de déverrouiller leur compte ou de réinitialiser leurs mots de passe à l’aide Azure Active Directory réinitialisation du mot de passe [en libre-service.](/azure/active-directory/authentication/tutorial-enable-sspr)
 
 **Avertissement**
 
