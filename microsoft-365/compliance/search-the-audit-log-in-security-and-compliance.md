@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6989d8f57123a35e64b89cfe9148cae33c5758e
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
+ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287502"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53300135"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -914,11 +914,11 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Nom facile à retenir|Opération|Description|
 |:-----|:-----|:-----|
 |Commentaire créé|CreateComment|Le propriétaire du formulaire ajoute un commentaire ou une note à un questionnaire.|
-|Formulaire créé|CreateForm|Le propriétaire du formulaire crée un nouveau formulaire.|
+|Formulaire créé|CreateForm|Le propriétaire du formulaire crée un nouveau formulaire. <br><br>La propriété DataMode:string indique que le formulaire actuel est défini pour synchroniser avec un classeur Excel existant ou nouveau si la valeur de propriété est égal à DataSync. La propriété ExcelWorkbookLink:string indique l’ID du classeur Excel associé du formulaire actuel.|
 |Formulaire modifié|EditForm|Le propriétaire du formulaire modifie un formulaire tel que la création, la suppression ou la modification d’une question. La propriété *EditOperation:string* indique le nom de l’opération de modification. Voici les opérations possibles :<br/>– CreateQuestion<br/>– CreateQuestionChoice <br/>– DeleteQuestion <br/>– DeleteQuestionChoice <br/>– DeleteFormImage <br/>– DeleteQuestionImage <br/>– UpdateQuestion <br/>– UpdateQuestionChoice <br/>– UploadFormImage/Bing/Onedrive <br/>– UploadQuestionImage <br/>– ChangeTheme <br><br>FormImage inclut tout emplacement au sein duquel l’utilisateur peut charger une image, par exemple dans une requête ou en tant que thème d’arrière-plan.|
-|Formulaire déplacé|MoveForm|Le propriétaire du formulaire déplace un formulaire. <br><br>La propriété DestinationUserId:string indique l'ID d'utilisateur de la personne qui a déplacé le formulaire. La propriété NewFormId:String est le nouvel ID du formulaire nouvellement copié.|
+|Formulaire déplacé|MoveForm|Le propriétaire du formulaire déplace un formulaire. <br><br>La propriété DestinationUserId:string indique l'ID d'utilisateur de la personne qui a déplacé le formulaire. La propriété NewFormId:String est le nouvel ID du formulaire nouvellement copié. La propriété IsDelegateAccess:boolean indique que l’action de déplacement du formulaire actuel est effectuée via la page de délégué administrateur.|
 |Formulaire supprimé|DeleteForm|Un propriétaire d’un formulaire supprime une équipe. Cela inclut SoftDelete (option de suppression utilisée et formulaire déplacé vers la corbeille) et HardDelete (corbeille vidée).|
-|Formulaire consulté (moment de la création)|ViewForm|Le propriétaire du formulaire ouvre un formulaire existant pour modification.|
+|Formulaire consulté (moment de la création)|ViewForm|Le propriétaire du formulaire ouvre un formulaire existant pour modification. <br><br>La propriété AccessDenied:boolean indique que l’accès du formulaire actuel est refusé en raison de la vérification d’autorisation. La propriété FromSummaryLink:boolean indique que la demande actuelle provient de la page de lien du résumé.|
 |Formulaire prévisualisé|PreviewForm|Propriétaire du formulaire affiche un aperçu d’un formulaire à l’aide de la fonction d’aperçu.|
 |Données exportées|ExportForm|Le propriétaire du formulaire exporte les résultats vers Excel. <br><br>La propriété ExportFormat:string indique si le fichier Excel est téléchargé ou en ligne.|
 |Formulaire de partage autorisé pour la copie|AllowShareFormForCopy|Le propriétaire du formulaire crée un lien modèle pour partager le formulaire avec d'autres utilisateurs. Cet événement est consigné lorsque le propriétaire du formulaire clique sur pour générer l’URL du modèle.|
@@ -937,10 +937,21 @@ Dans les descriptions ci-dessous, certaines opérations contiennent d’autres p
 |Formulaire mis à jour état d’hameçonnage|UpdatePhishingStatus|Cet événement est enregistré chaque fois que la valeur détaillée de l’état de sécurité interne est modifiée, que cela modifie l’état de sécurité final ou non (par exemple, le formulaire est désormais Fermé ou Ouvert). Cela signifie que vous pouvez rencontrer des événements en double même si l’état de sécurité final n’a pas été modifié. Voici les valeurs d’état possibles pour cet événement :<br/>– Retirer <br/>– Retirer par l’administrateur <br/>– Admin débloqué <br/>– Bloqué automatiquement <br/>– Débloqué automatiquement <br/>– Utilisateur signalé <br/>– Réinitialiser l’utilisateur signalé|
 |État de l’hameçonnage de l’utilisateur mis à jour|UpdateUserPhishingStatus|Cet événement est enregistré chaque fois que la valeur de l’état de sécurité de l’utilisateur est modifiée. La valeur de l’état de l’utilisateur dans l’enregistrement d’audit est définie sur **Confirmé comme hameçonnage** lorsque l’utilisateur créé un formulaire d’hameçonnage qui est supprimé par l’équipe de sécurité de Microsoft Online. Si un administrateur débloque l’utilisateur, la valeur de l’état de l’utilisateur est définie sur **Réinitialiser en tant qu’utilisateur normal**.|
 |Invitation Forms Pro envoyée|ProInvitation|L’utilisateur clique pour activer une version d’évaluation Pro.|
-|Paramètres de formulaire mis à jour|UpdateFormSetting|Le propriétaire du formulaire met à jour un paramètre de formulaire. <br><br>La propriété FormSettingName:string indique le nom du paramètre et la nouvelle valeur.|
+|Paramètres de formulaire mis à jour|UpdateFormSetting|Le propriétaire du formulaire met à jour un ou plusieurs paramètres de formulaire. <br><br>La propriété FormSettingName:string indique le nom des paramètres sensibles mis à jour. La propriété NewFormSettings:string indique la nouvelle valeur et le nom des paramètres mis à jour. La propriété thankYouMessageContainsLink:boolean indique que le message de remerciement mis à jour contient un lien d’URL.|
 |Paramètres d’utilisateur mis à jour|UpdateUserSetting|Le propriétaire du formulaire met à jour un paramètre d’utilisateur. <br><br>La propriété UserSettingName:string indique le nom et la nouvelle valeur du paramètre|
 |Formulaires répertoriés|ListForms|Le propriétaire du formulaire affiche une liste de formulaires. <br><br>La propriété ViewType:string indique l'affichage que le propriétaire du formulaire consulte : Tous les formulaires, Partagés avec moi ou les Formulaires de groupe|
 |Réponse envoyée|SubmitResponse|Un utilisateur envoie une réponse à un formulaire. <br><br>La propriété IsInternalForm:boolean indique si le répondant fait partie de la même organisation que le propriétaire du formulaire.|
+|Paramètre activé : tout le monde peut répondre|AllowAnonymousResponse|Le propriétaire du formulaire active le paramètre autorisant tout le monde à répondre au formulaire.|
+|Paramètre désactivé : tout le monde peut répondre|DisallowAnonymousResponse|Le propriétaire du formulaire désactive le paramètre autorisant tout le monde à répondre au formulaire.|
+|Paramètre activé : des personnes spécifiques peuvent répondre au paramètre|EnableSpecificResponse|Le propriétaire du formulaire active le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à répondre au formulaire.|
+|Paramètre désactivé : des personnes spécifiques peuvent répondre|DisableSpecificResponse|Le propriétaire du formulaire désactive le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à répondre au formulaire.|
+|Ajout d'un répondeur spécifique|AddSpecificResponder|Le propriétaire du formulaire ajoute un nouvel utilisateur ou un nouveau groupe à la liste des répondeurs spécifiques.|
+|Suppression du répondeur spécifique|RemoveSpecificResponder|Le propriétaire du formulaire supprime un utilisateur ou un groupe à la liste des répondeurs spécifiques.|
+|Collaboration désactivée|DisableCollaboration|Le propriétaire de formulaire désactive le paramètre de collaboration sur le formulaire.|
+|Activation de la collaboration d’un compte professionnel ou scolaire Office 365|EnableWorkOrSchoolCollaboration|Le propriétaire du formulaire active le paramètre autorisant les utilisateurs ayant un compte professionnel ou scolaire Office 365 à afficher et modifier le formulaire.|
+|Collaboration activée des personnes de mon organisation|EnableSameOrgCollaboration|Le propriétaire du formulaire active le paramètre autorisant les utilisateurs de l’organisation actuelle à afficher et modifier le formulaire.|
+|Collaboration activée de personnes spécifiques|EnableSpecificCollaboaration|Le propriétaire du formulaire active le paramètre autorisant uniquement des personnes ou des groupes spécifiques de l’organisation actuelle à afficher et modifier le formulaire.|
+|Connecté à un classeur Excel|ConnectToExcelWorkbook|Formulaire connecté à un classeur Excel. <br><br>La propriété ExcelWorkbookLink:string indique l’ID du classeur Excel associé du formulaire actuel.|
 ||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>Activités Forms réalisées par des co-auteurs et des répondants anonymes
