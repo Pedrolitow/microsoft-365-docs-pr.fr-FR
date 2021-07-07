@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Microsoft 365 entreprise. '
-ms.openlocfilehash: ec5bc69a42c5183413f11649b7d7ec6baaf40b01
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e6eac45c3ade3fd737f93c88c29b56ccd497212e
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572104"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314355"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
   
@@ -53,7 +53,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
 3. Sélectionnez **+ Ajoutez un alias** et entrez un nouvel alias pour l’utilisateur.   
     
     > [!Important] 
-    > Si le message d’erreur « Un paramètre qui correspond au nom de paramètre «**EmailAddresses**» s’ajoute, cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
+    > Si vous obtenez le message d’erreur « Impossible de trouver un paramètre qui correspond au nom du paramètre **« EmailAddresses**», cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
     
   
     > [!IMPORTANT]
@@ -70,7 +70,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
     L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et à son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
     
   
-7. **Lorsque l’utilisateur répond, l’adresse *de* l’utilisateur dépend de Outlook client. Outlook sur le web utilise l’alias auquel le courrier électronique a été reçu (nous appellerons cela le principe ping-rons). Outlook bureau utilise son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Lorsque Eliza répond au message à l’aide Outlook bureau, son adresse de messagerie principale s’affiche sous la Eliza@NodPublishers.com, et non Sales@NodPublishers.com.
+7. **Lorsque l’utilisateur répond, l’adresse *de* l’utilisateur dépend de Outlook client. Outlook sur le web utilisera l’alias auquel l’e-mail a été reçu (nous appellerons cela le principe ping- domaine). Outlook bureau utilise son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Lorsque Eliza répond au message à l’aide Outlook bureau, son adresse de messagerie principale s’affiche sous la Eliza@NodPublishers.com, et non Sales@NodPublishers.com.
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>Avez-vous reçu « Un paramètre indessable qui correspond au nom de paramètre EmailAddresses » ?
 
@@ -83,9 +83,9 @@ Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vo
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Envoi aisément d’e-mails à partir de l’adresse proxy
 
-Une nouvelle fonctionnalité est en cours de déploiement en avril 2021 qui permet aux utilisateurs d’envoyer facilement des messages à partir de leurs alias lors de l’utilisation de Outlook sur le web. Lorsque la fonctionnalité est mise en place dans une location où l’administrateur client utilise la cmdlet, les utilisateurs au sein de la location ont accès à une liste de case à cocher où chaque entrée correspond à un alias dans leurs `Set-OrganizationConfig -SendFromAliasEnabled $true` paramètres Outlook. La sélection d’un alias l’affiche dans ladown From du formulaire de composition.
+Une nouvelle fonctionnalité est en cours de déploiement en juillet 2021 qui permet aux utilisateurs d’envoyer facilement des messages à partir de leurs alias lors de l’utilisation Outlook sur le web. Lorsque la fonctionnalité est mise en place dans une location où l’administrateur client utilise la cmdlet, les utilisateurs au sein de la location ont accès à une liste de case à cocher où chaque entrée correspond à un alias dans leurs `Set-OrganizationConfig -SendFromAliasEnabled $true` paramètres Outlook. La sélection d’un alias l’affiche dans ladown From du formulaire Composer.
   
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Envoyer des messages électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)
 

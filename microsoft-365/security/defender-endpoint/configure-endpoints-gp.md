@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 24b24c634eac7ee125810d96587c9c1e209b6491
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: b4418cca035710c6b938dad31a2b55423d2ab458
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286956"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314403"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Intégrer des Windows 10 à l’aide de la stratégie de groupe 
 
@@ -49,7 +49,7 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
 
-    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration.**
+    1. Dans le volet de navigation, sélectionnez  >  **Paramètres’intégration.**
 
     1. Sélectionnez Windows 10 comme système d’exploitation.
 
@@ -63,11 +63,11 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 4. Dans **l’Éditeur de gestion des stratégies** de groupe, allez à **Configuration** ordinateur, puis **Préférences,** puis **paramètres du panneau de configuration.**
 
-5. Cliquez avec le bouton droit **sur Tâches programmées,** pointez sur **Nouveau,** puis cliquez sur **Tâche immédiate (au moins Windows 7).**
+5. Cliquez avec le bouton droit **sur Tâches programmées,** pointez sur **Nouveau,** puis cliquez sur Tâche immédiate (au moins **Windows 7).**
 
-6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou** le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier les **noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
+6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** **cliquez sur Modifier** l’utilisateur ou le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier **les noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
+7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
 
 8. Go to the **Actions** tab and click **New...** **Assurez-vous que démarrer un programme** est sélectionné dans le champ **Action.** Entrez le nom de fichier et l’emplacement du fichier *WindowsDefenderATPOnboardingScript.cmd* partagé.
 
@@ -164,7 +164,7 @@ Recherchez les dernières informations sur la sécurité des virus et logiciels 
 
 **Emplacement de la stratégie** : \Windows\Antivirus Microsoft Defender\Protection contre les attaques Microsoft Defender\Réduction de la surface d’attaque
 
-Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à partir des règles de personnalisation des règles de [réduction de la surface d’attaque](customize-attack-surface-reduction.md)
+Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à partir des règles de personnalisation de la [réduction de la surface d’attaque](customize-attack-surface-reduction.md)
 
 1. Ouvrez la **stratégie Configurer la Réduction de la surface d’attaque.**
 
@@ -180,16 +180,16 @@ Obtenir la liste actuelle des GUID de réduction de la surface d’attaque à pa
 
 Stratégie | Paramètre
 :---|:---
-Configurer l’accès contrôlé aux dossiers| Activé, mode audit
+Configurer l’accès contrôlé aux dossiers| Activé, mode Audit
 
 ## <a name="offboard-devices-using-group-policy"></a>Appareils de tableau de bord à l’aide de la stratégie de groupe
 
-Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages deboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
+Pour des raisons de sécurité, le package utilisé pour la sortie des appareils expirera 30 jours après la date de téléchargement. Les packages de offboarding expirés envoyés à un appareil seront rejetés. Lorsque vous téléchargez un package de déclassage, vous êtes informé de la date d’expiration des packages et il est également inclus dans le nom du package.
 
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenez le package deboarding à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
+1. Obtenez le package deboarding à partir [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
 
     1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **de l’appareil.**
 
@@ -209,9 +209,9 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Choisissez le compte d’utilisateur SYSTÈME local (BUILTIN\SYSTEM) sous **Options de sécurité.**
 
-7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les privilèges les plus **élevés.**
+7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec les privilèges les plus **élevés.**
 
-8. Go to the **Actions** tab and click **New...**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ **Action.** Entrez le nom de fichier et l’emplacement du fichier *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd.*
+8. Go to the **Actions** tab and click **New...**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ **Action.** Entrez le chemin NetBIOS du fichier *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* partagé.
 
 9. Cliquez **sur OK** et fermez toutes les fenêtres GPMC ouvertes.
 
@@ -220,12 +220,12 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 ## <a name="monitor-device-configuration"></a>Surveiller la configuration de l’appareil
 
-Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
+Avec la stratégie de groupe, il n’existe pas d’option pour surveiller le déploiement des stratégies sur les appareils. La surveillance peut être effectuée directement sur le portail ou à l’aide des différents outils de déploiement.
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 
 1. Go to [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/).
-2. Cliquez **sur La liste Appareils.**
+2. Cliquez **sur Liste des appareils.**
 3. Vérifiez que les appareils apparaissent.
 
 > [!NOTE]
