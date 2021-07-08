@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Découvrez comment rechercher des ressources pour Rubriques Microsoft Viva.
-ms.openlocfilehash: 4596f703f86465e4d2d37e2744493bcaef440b7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7d8a95e924c269660e50355078f4fc9eee9bd333
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538914"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326842"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Présentation de Rubriques Microsoft Viva
 
@@ -35,15 +35,15 @@ Les ressources de cette page sont conçues pour vous aider à commencer à déco
 
 ## <a name="get-started"></a>Prise en main
 
-Les ressources de cette section vous aident à en savoir plus sur ce qu’est Topics Et comment elle peut vous aider.
+Les ressources de cette section vous aident à en savoir plus sur ce qu’est Topics et comment elle peut vous aider.
 
 | Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|En savoir plus sur Rubriques Viva|[Vue d’ensemble de Rubriques Microsoft Viva](topic-experiences-overview.md)|
+|En savoir plus sur Rubriques Viva|[Vue d’ensemble des rubriques](topic-experiences-overview.md)|
 |Découvrir comment les sujets sont découverts et suggérés par l’intelligence artificielle|[Découverte de Rubriques Microsoft Viva](topic-experiences-discovery.md)|
-|En savoir plus sur la sécurité des rubriques|[Sécurité et confidentialité de Microsoft Viva](topic-experiences-security-privacy.md)|
-|Découvrez comment obtenir Rubriques Viva|[Page de produit Rubriques Microsoft Viva](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
-|Voir les ressources dans le centre de ressources Microsoft Tech Community|[Communauté technique Rubriques Microsoft Viva](https://resources.techcommunity.microsoft.com/viva-topics/)|
+|En savoir plus sur la sécurité des rubriques|[Rubriques sur la sécurité et la confidentialité](topic-experiences-security-privacy.md)|
+|Découvrez comment obtenir Rubriques Viva|[Page Des rubriques sur le produit](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Voir les ressources dans le centre de ressources Microsoft Tech Community|[Rubriques tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
 
@@ -51,17 +51,18 @@ Les ressources de cette section vous aident à en savoir plus sur ce qu’est To
 
 Découvrez comment utiliser et mettre en œuvre Rubriques Viva au sein de votre organisation pour vous aider à résoudre les problèmes de votre entreprise : 
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|Découvrez comment commencer à planifier l’utilisation de Microsoft Viva. |[Prise en main](topics-adoption-getstarted.md)<br><br>|  
+|Découvrez comment commencer à planifier l’utilisation de Rubriques |[Prise en main](topics-adoption-getstarted.md)|  
+|Configurer et exécuter un programme pilote d’essai pour Rubriques |[Exécuter une version d’essai](trial-topics.md)|
 
 ## <a name="set-up-and-administration"></a>Configuration et personnalisation
 
 Les ressources de cette section aideront votre administrateur au sein de votre organisation à installer et à configurer Rubriques Viva dans votre environnement Microsoft 365.
 
-| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
+| Si vous recherchez les informations suivantes : | Accédez à cette ressource : |
 |:-----|:-----|
-|Découvrez comment configurer Microsoft Viva|[Configuration de Microsoft Viva](set-up-topic-experiences.md)|
+|Découvrez comment configurer et configurer Topics|[Configurer des rubriques](set-up-topic-experiences.md)|
 |Découvrez comment configurer les autorisations des utilisateurs|[Gérer les autorisations d’une rubrique](topic-experiences-user-permissions.md)|
 |Découvrez comment gérer les personnes qui peuvent consulter des rubriques|[Gérer la visibilité d’une rubrique](topic-experiences-knowledge-rules.md)|
 |Découvrez comment gérer les paramètres de découverte de rubrique|[Gérer la découverte de rubriques](topic-experiences-discovery.md)|

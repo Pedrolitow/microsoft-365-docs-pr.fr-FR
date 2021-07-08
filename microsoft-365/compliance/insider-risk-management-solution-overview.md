@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 0cca5c517bf72601b469411bf83bedbbd8e50cdc
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 3e057677b7d8ef4e74abe705bc3b23e8ea539853
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819746"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326758"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Gestion des risques internes dans Microsoft 365
 
@@ -38,11 +38,11 @@ Pour configurer la gestion des risques internes pour votre organisation, utilise
 1. En savoir plus [sur la gestion des risques internes](insider-risk-management.md) dans Microsoft 365
 2. Planifier la gestion [des risques internes et vérifier les licences](insider-risk-management-plan.md)
 3. Configurer les [paramètres de gestion des risques internes](insider-risk-management-settings.md)
-4. Configurer les [autorisations et](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) les conditions [préalables de stratégie & connecteurs](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)
+4. Configurer les [autorisations et](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) les conditions préalables de stratégie [& connecteurs](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)
 5. Créer et configurer des stratégies [de gestion des risques internes](insider-risk-management-configure.md#step-6-create-an-insider-risk-management-policy)
 
 ## <a name="more-information-about-insider-risk-management"></a>Plus d’informations sur la gestion des risques internes
 
 - [Gérer les stratégies de risques internes](insider-risk-management-policies.md)
-- [Identifier les alertes de risques internes](insider-risk-management-alerts.md)
+- [Examiner les activités de risques internes](insider-risk-management-activities.md)
 - [Agir sur les cas de risques internes](insider-risk-management-cases.md)

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6884ec3b2bc7c24e4f7f6e62d9b24add3aeee2c0
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007344"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326782"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
@@ -36,15 +36,15 @@ Identifiez les parties prenantes appropriées dans votre organisation pour colla
 
 ## <a name="determine-any-regional-compliance-requirements"></a>Déterminer les exigences de conformité régionale
 
-Différentes zones géographiques et organisationnelles peuvent avoir des exigences de conformité et de confidentialité différentes des autres zones de votre organisation. Travaillez en équipe avec les parties prenantes dans ces domaines pour vous assurer qu’elles comprennent les contrôles de conformité et de confidentialité dans la gestion des risques internes et comment elles doivent être utilisées dans différents domaines de votre organisation. Dans certains scénarios, les exigences de conformité et de confidentialité peuvent nécessiter des stratégies qui désignent ou limitent certaines parties prenantes à des enquêtes et des cas basés sur le cas d’un utilisateur ou des exigences réglementaires ou de stratégie pour la zone.
+Différentes zones géographiques et organisationnelles peuvent avoir des exigences de conformité et de confidentialité différentes des autres zones de votre organisation. Travaillez en équipe avec les parties prenantes dans ces domaines pour vous assurer qu’elles comprennent les contrôles de conformité et de confidentialité dans la gestion des risques internes et comment elles doivent être utilisées dans différents domaines de votre organisation. Dans certains scénarios, les exigences de conformité et de confidentialité peuvent nécessiter des stratégies qui désignent ou limitent certaines parties prenantes à des enquêtes et des cas basés sur le cas d’un utilisateur, d’exigences réglementaires ou de stratégies pour la zone.
 
 Si vous avez besoin que des parties prenantes spécifiques soient impliquées dans des enquêtes de cas qui [](insider-risk-management-policies.md) impliquent des utilisateurs de certaines régions, rôles ou divisions, vous pouvez implémenter des stratégies de gestion des risques internes distinctes (même identiques) ciblant les différentes régions et population. Cette configuration permettra aux parties prenantes de trier et de gérer plus facilement les cas pertinents pour leurs rôles et régions. En outre, vous pouvez envisager de créer des processus et des stratégies pour les régions où les enquêteurs et les réviseurs parlent la même langue que les utilisateurs pour simplifier le processus d’escalade pour les alertes et les cas de gestion des risques internes.
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>Planifier le flux de travail de révision et d’examen
 
-Sélectionnez des parties prenantes dédiées pour surveiller et examiner les alertes et les cas à une cadence régulière dans le Centre de conformité [Microsoft 365.](https://compliance.microsoft.com/) Assurez-vous de bien comprendre comment vous allez affecter différentes parties prenantes aux différents groupes de rôles disponibles dans la gestion des risques internes.
+Sélectionnez des parties prenantes dédiées pour surveiller et examiner les alertes et les cas à une cadence régulière dans le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/). Assurez-vous de bien comprendre comment vous allez affecter différentes parties prenantes aux différents groupes de rôles disponibles dans la gestion des risques internes.
 
-Selon la structure de votre équipe de gestion de la conformité, vous avez la choix d’affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de gestion des risques internes. Pour afficher l’onglet Autorisations dans le Centre de sécurité & conformité Office 365  et gérer les groupes de  **rôles,** vous devez être affecté au groupe de rôles Gestion de l’organisation ou avoir le rôle Gestion des rôles. Choisissez parmi ces options de groupe de rôles lors de la configuration de la gestion des risques internes :
+Selon la structure de votre équipe de gestion de la conformité, vous avez la choix d’affecter des utilisateurs à des groupes de rôles spécifiques pour gérer différents ensembles de fonctionnalités de gestion des risques internes. Pour afficher l’onglet Autorisations dans le Centre de sécurité & conformité Office 365 et gérer  les groupes de **rôles,**  vous devez être affecté au groupe de rôles Gestion de l’organisation ou avoir le rôle Gestion des rôles. Choisissez parmi ces options de groupe de rôles lors de la configuration de la gestion des risques internes :
 
 | **Groupe de rôles** | **Autorisations de rôle** |
 | :------------- | :------------------- |
@@ -58,16 +58,16 @@ Selon la structure de votre équipe de gestion de la conformité, vous avez la c
 
 Selon la façon dont vous prévoyez d’implémenter des stratégies de gestion des risques internes, vous devez avoir les abonnements aux licences Microsoft 365 appropriés et comprendre et planifier certaines conditions préalables de solution.
 
-**Licences :** La gestion des risques internes est disponible dans le cadre d’un large éventail d’abonnements aux licences Microsoft 365. Pour plus d’informations, consultez l’article Prise en charge de la gestion des [risques internes.](insider-risk-management-configure.md#subscriptions-and-licensing)
+**Licences :** La gestion des risques internes est disponible dans le cadre d’un large éventail d’abonnements Microsoft 365 licences. Pour plus d’informations, consultez l’article Prise en charge de la gestion [des risques internes.](insider-risk-management-configure.md#subscriptions-and-licensing)
 
-Si vous n’avez pas d’offre Microsoft 365 Entreprise E5 existante et que vous souhaitez essayer la [](https://www.microsoft.com/microsoft-365/enterprise) gestion des risques internes, vous pouvez ajouter [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’évaluation de Microsoft 365 Entreprise E5.
+Si vous n’avez pas de plan Microsoft 365 Entreprise E5 et que vous souhaitez essayer la gestion des risques [](https://www.microsoft.com/microsoft-365/enterprise) internes, vous pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’évaluation de Microsoft 365 Entreprise E5.
 
 **Conditions requises pour les modèles de stratégie :** Selon le modèle de stratégie que vous choisissez, il existe des exigences que vous devez comprendre et planifier avant de configurer la gestion des risques internes dans votre organisation :
 
-- Lorsque vous  utilisez le modèle de vol de données par des utilisateurs qui quittent le modèle, vous devez configurer un connecteur Microsoft 365 HR pour importer régulièrement les informations de date de résiliation et de résiliation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
+- Lorsque vous  utilisez le modèle de vol de données par des utilisateurs qui quittent le modèle, vous devez configurer un connecteur RH Microsoft 365 pour importer régulièrement les informations de date de résiliation et de renvoi pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
 - Lorsque vous utilisez des modèles de **fuites** de données, vous devez configurer au moins une stratégie de protection contre la perte de données (DLP) pour définir des informations sensibles dans votre organisation et recevoir des alertes de risques internes pour les alertes de stratégie DLP de gravité élevée. Pour obtenir des conseils détaillés sur la configuration de stratégies DLP pour votre organisation, consultez l’article [Création, test et réglage d’une stratégie DLP](create-test-tune-dlp-policy.md).
 - Lorsque vous utilisez **des modèles** de violation de stratégie de sécurité, vous devez activer Microsoft Defender pour Endpoint pour l’intégration de la gestion des risques internes dans le Centre de sécurité Defender pour importer les alertes de violation de sécurité. Consultez [l’article](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) Configurer les fonctionnalités avancées dans Microsoft Defender pour obtenir des instructions pas à pas pour activer Defender pour l’intégration de Point de terminaison avec la gestion des risques internes.
-- Lorsque vous utilisez des modèles d’utilisateurs non **régrunts,** vous devez configurer un connecteur Microsoft 365 HR pour importer régulièrement des informations sur les performances ou l’état de rétrogradation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
+- Lorsque vous utilisez des modèles utilisateur **disgruntled,** vous devez configurer un connecteur RH Microsoft 365 pour importer régulièrement des informations sur les performances ou l’état de rétrogradation pour les utilisateurs de votre organisation. Consultez l’article [Importer des données avec le connecteur RH](import-hr-data.md) pour obtenir des conseils détaillés pour configurer le connecteur Microsoft 365 RH au sein de votre organisation.
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Tester avec un petit groupe d’utilisateurs dans un environnement de production
 
@@ -82,7 +82,7 @@ Si vous ne voyez aucune alerte immédiatement après la configuration d’une st
 Partagez la documentation de gestion des risques internes avec les parties prenantes de votre organisation qui sont incluses dans votre flux de travail de gestion et de correction :
 
 - [Créer et gérer les stratégies de risques internes](insider-risk-management-policies.md)
-- [Identifier les alertes de risques internes](insider-risk-management-alerts.md)
+- [Examiner les activités de risques internes](insider-risk-management-activities.md)
 - [Agir sur les cas de risques internes](insider-risk-management-cases.md)
 - [Examiner les données de cas avec l’Explorateur de contenu à risque interne](insider-risk-management-content-explorer.md)
 - [Créer des modèles d’avertissement sur les risques internes](insider-risk-management-notices.md)
@@ -92,4 +92,4 @@ Partagez la documentation de gestion des risques internes avec les parties prena
 Vous êtes prêt à configurer la gestion des risques internes pour votre organisation ? Lisez les articles suivants :
 
 - [Prise en charge des paramètres de gestion des](insider-risk-management-settings.md) risques internes pour configurer les paramètres de stratégie globale.
-- [Prise en charge de la gestion des risques](insider-risk-management-configure.md) internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.
+- [Prise en charge de la gestion des](insider-risk-management-configure.md) risques internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.
