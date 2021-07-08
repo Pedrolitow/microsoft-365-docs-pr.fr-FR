@@ -1,5 +1,5 @@
 ---
-title: Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365
+title: Découvrir la protection contre la perte de données des point de terminaison de Microsoft 365
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,18 +19,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: 39474f54440ba33c8d7140981c1495a5c46bf0fc
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: c97368dd48515dc787dbac66aa93844889efbdbc
+ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226682"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53314415"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
 Vous pouvez utiliser la protection contre la perte de données (DLP) de Microsoft 365 pour contrôler les actions effectuées sur les éléments que vous avez jugés confidentiels et contribuer à empêcher le partage involontaire de ces éléments. Si vous souhaitez en savoir plus sur DLP, veuillez consulter la rubrique [En savoir plus sur la protection contre la perte de données](dlp-learn-about-dlp.md).
 
-**Les points de terminaison contre la protection contre la perte de données** (Endpoint DLP) étend les fonctionnalités de surveillance et de protection des activités de DLP aux éléments sensibles sur les appareils Windows 10. Une fois que les appareils sont intégrés aux solutions de conformité Microsoft 365, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via [stratégies DLP](create-test-tune-dlp-policy.md).
+**Les points de terminaison contre la protection contre la perte de données** (Endpoint DLP) étend les fonctionnalités de surveillance et de protection des activités de DLP aux éléments sensibles sur les appareils Windows 10. Une fois que les appareils sont intégrés aux solutions de conformité Microsoft 365, les informations relatives à ce que les utilisateurs font avec les éléments sensibles sont rendues visibles dans [l’Explorateur d’activités](data-classification-activity-explorer.md) et vous pouvez appliquer des actions de protection à ces éléments via [stratégies DLP](create-test-tune-dlp-policy.md).
+
+> [!TIP]
+> Si vous recherchez le contrôle d’appareil pour le stockage amovible, consultez [Contrôle d’accès Stockage amovible Contrôle d’appareil Microsoft Defender pour Point de terminaison ](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Activités de point de terminaison que vous pouvez surveiller et sur lesquels vous pouvez agir
 
@@ -56,8 +59,8 @@ La DLP de point du terminaison prend en charge la surveillance de ces types de f
 - Fichiers PowerPoint
 - Fichiers Excel
 - Fichiers .pdf
-- Fichiers .csv
-- Fichiers .tsv
+- Fichiers .csv
+- Fichiers .tsv
 - fichiers .txt
 - Fichiers RTF
 - fichiers c
@@ -82,11 +85,11 @@ La gestion des appareils est une fonctionnalité qui permet d’assembler la té
 > [!div class="mx-imgBorder"]
 > ![activer la gestion des appareils](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-L’intégration et déclassement sont gérés à l’aide de scripts téléchargés à partir du centre de gestion des appareils. Le centre inclut des scripts personnalisés pour chacune de ces méthodes de déploiement :
+L’intégration et déclassement sont gérés à l’aide de scripts téléchargés à partir du centre de gestion des appareils. Le centre inclut des scripts personnalisés pour chacune de ces méthodes de déploiement :
 
 - script local (jusqu’à 10 ordinateurs)
 - Stratégie de groupe
-- System Center Configuration Manager, Version 1610 ou ultérieure
+- System Center Configuration Manager, Version 1610 ou ultérieure
 - Gestion des périphériques mobiles/Microsoft Intune
 - Scripts d’intégration VDI pour les machines non persistantes
 
@@ -119,7 +122,7 @@ Une fois qu’un appareil est intégré, les informations relatives aux activit�
 
 Point de terminaison DLP recueille de nombreuses informations sur l’activité auditée.
 
-Par exemple, si un fichier est copié sur un support USB amovible, les attributs suivants apparaissent dans les détails de l’activité :
+Par exemple, si un fichier est copié sur un support USB amovible, les attributs suivants apparaissent dans les détails de l’activité :
 
 - type d’activité
 - IP Client
@@ -151,7 +154,7 @@ Par exemple, si un fichier est copié sur un support USB amovible, les attributs
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochaines étapes sont les suivantes :
+Maintenant que vous en savez plus sur les points de terminaison DLP, vos prochaines étapes sont les suivantes :
 
 1. [Prise en main des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-getting-started.md)
 2. [Utilisation des points de terminaison de protection contre la perte de données Microsoft (préversion)](endpoint-dlp-using.md)
