@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer une nouvelle adresse de messagerie professionnelle.
-ms.openlocfilehash: df984cbee8bdd1bdd40ca8d9b87c71222db0f69d
-ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
+ms.openlocfilehash: 004cdd3abf9b8f8dec34dbfe9739102af081c769
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52065154"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341543"
 ---
 # <a name="set-up-a-new-business-email-address"></a>Configurer une nouvelle adresse professionnelle
 
@@ -46,7 +46,7 @@ Achetez un nouveau nom de domaine pour votre adresse e-mail et définissez les a
  
 1. Achetez un nouveau nom de domaine pour votre adresse de messagerie en fournissant vos informations de contact pour le nouveau nom de domaine, en choisissant votre mode de paiement, puis en plaçant votre commande.
 1. Modifiez la première partie de l’adresse (avant le signe @) ou laissez-la telle qu’elle est. 
-1. Sign out of Microsoft 365, and then sign back in with your new email address. Les adresses de messagerie des employés sont mises à jour avec le nouveau domaine. 
+1. Sign out of Microsoft 365, and then sign back in with your new email address. Les adresses e-mail de vos employés sont mises à jour avec le nouveau domaine. 
 1. Partagez les nouvelles adresses de messagerie avec vos employés en exportant la liste. 
 
 ## <a name="set-up-business-email-with-an-existing-domain"></a>Configurer la messagerie professionnelle avec un domaine existant
@@ -55,10 +55,10 @@ Achetez un nouveau nom de domaine pour votre adresse e-mail et définissez les a
 
 Utilisez un nom de domaine que vous possédez déjà, que vous l’utilisiez pour une adresse de site web ou une adresse de messagerie d’un autre fournisseur. 
 
-## <a name="try-it"></a>Essayez !
+## <a name="give-it-a-try"></a>Essayez !
  
 1. Connectez-vous au site web qui héberge votre domaine. Cliquez sur un bouton pour vérifier automatiquement ou mettre à jour le domaine manuellement. 
 1. Personnalisez l’adresse e-mail ou laissez-la telle qu’elle est. 
-1. Sign out of Microsoft 365, and then sign back in with your new email address. Les adresses de messagerie des employés sont mises à jour avec le nouveau domaine. 
+1. Sign out of Microsoft 365, and then sign back in with your new email address. Les adresses e-mail de vos employés sont mises à jour avec le nouveau domaine. 
 1. Partagez les nouvelles adresses de messagerie avec vos employés en exportant la liste.
-1. Connecter domaine à Microsoft 365 en répétant l’étape 1 ci-dessus. 
+1. Connecter votre domaine à Microsoft 365 en répétant l’étape 1 ci-dessus. 

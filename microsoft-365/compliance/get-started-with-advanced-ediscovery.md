@@ -19,20 +19,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Cet article explique comment configurer des Advanced eDiscovery vous permet de commencer à créer et gérer des cas. Il décrit également les abonnements et les licences Microsoft requis. Après quelques étapes rapides, l’outil Advanced eDiscovery est prêt à être utilisé.
-ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be5e5aea03950d28889590004bd796455a71c5be
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919743"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341447"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>Configurer Microsoft 365 Advanced eDiscovery
 
-Advanced eDiscovery dans Microsoft 365 fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter des données qui répondent aux enquêtes internes et externes de votre organisation. Rien n’est nécessaire pour déployer Advanced eDiscovery, mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à créer et utiliser des cas Advanced eDiscovery pour gérer vos enquêtes.
+Advanced eDiscovery dans Microsoft 365 fournit un flux de travail de bout en bout pour conserver, collecter, examiner, analyser et exporter des données qui répondent aux enquêtes internes et externes de votre organisation. Rien n’est nécessaire pour déployer des Advanced eDiscovery, mais un administrateur informatique et un responsable eDiscovery doivent effectuer certaines tâches préalables avant que votre organisation puisse commencer à créer et utiliser des cas Advanced eDiscovery pour gérer vos enquêtes.
 
 Cet article décrit les étapes suivantes nécessaires à la Advanced eDiscovery.
 
-![Étapes de la mise en Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
+![Étapes de la Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
 
 Cela inclut la garantie de la licence appropriée requise pour accéder aux Advanced eDiscovery et ajouter des dépositaires aux cas, et l’attribution d’autorisations à votre équipe juridique et d’enquête afin qu’elle puisse accéder aux cas et les gérer.
 
@@ -46,7 +46,7 @@ Pour accéder Advanced eDiscovery ou ajouté en tant que membre d’un Advanced 
 
 Pour ajouter des utilisateurs au groupe de rôles Gestionnaire eDiscovery, complétez les étapes suivantes :
 
-1. Go to <https://protection.office.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 organization.
+1. Go to <https://compliance.microsoft.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 organization.
 
 2. Dans la page **Autorisations,** sélectionnez le groupe de rôles **Gestionnaire eDiscovery.**
 
@@ -76,17 +76,17 @@ Il existe deux sous-groupes dans le groupe de rôles Gestionnaire eDiscovery. Ce
 
   En raison de l’étendue de l’accès, une organisation ne doit avoir que quelques administrateurs membres du sous-groupe administrateurs eDiscovery.
 
-Pour plus d’informations sur les autorisations eDiscovery et une description de chaque rôle affecté au groupe de rôles Gestionnaire eDiscovery, voir Attribuer des [autorisations eDiscovery.](assign-ediscovery-permissions.md)
+Pour plus d’informations sur les autorisations eDiscovery et une description de chaque rôle attribué au groupe de rôles Gestionnaire eDiscovery, voir Attribuer des [autorisations eDiscovery.](assign-ediscovery-permissions.md)
 
 ## <a name="step-3-configure-global-settings-for-advanced-ediscovery"></a>Étape 3 : Configurer les paramètres globaux pour Advanced eDiscovery
 
 La dernière étape à effectuer avant que les membres de votre organisation commencent à créer et à utiliser des cas consiste à configurer des paramètres globaux qui s’appliquent à tous les cas de votre organisation. Pour l’instant, le seul paramètre global est la détection des privilèges *client-avocat* (d’autres paramètres globaux seront disponibles à l’avenir). Ce paramètre permet au modèle de privilège client-avocat de s’exécuter lorsque vous analysez des données dans un jeu à réviser. Le modèle utilise l’apprentissage automatique pour déterminer la probabilité qu’un document contienne du contenu de nature juridique. Il compare également les participants des documents à une liste d’avocats (que vous soumettez lors de la configuration du modèle) pour déterminer si un document a au moins un participant qui est avocat.
 
-Pour plus d’informations sur la configuration et l’utilisation du modèle de détection des privilèges [client-avocat,](attorney-privilege-detection.md)voir Configurer la détection des privilèges client-avocat dans Advanced eDiscovery .
+Pour plus d’informations sur la configuration et l’utilisation du modèle de détection des privilèges client-avocat, voir Configurer la détection des privilèges [client-avocat dans Advanced eDiscovery](attorney-privilege-detection.md).
 
 > [!NOTE]
 > Il s’agit d’une étape facultative que vous pouvez effectuer à tout moment. Le fait de ne pas implémenter le modèle de détection des privilèges client-avocat ne vous empêche pas de créer et d’utiliser Advanced eDiscovery cas.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Une fois que vous avez Advanced eDiscovery, vous êtes prêt à [créer un cas.](create-and-manage-advanced-ediscoveryv2-case.md)

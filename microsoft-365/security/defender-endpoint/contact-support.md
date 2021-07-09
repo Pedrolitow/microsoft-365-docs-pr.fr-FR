@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3272ef182c4b08142490e8a1ac21c208023c50f5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 6d4845163996dcc00ccfcc6c87eb27aff87268fc
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228722"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339189"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contacter le support Microsoft Defender pour point de terminaison
 
@@ -58,9 +58,9 @@ L’accès au nouveau widget de support peut être effectué de deux manières :
 
     ![Image du widget lorsque le point d’interrogation est sélectionné](images/support-widget.png)
 
-2. Vous avez besoin **d’aide en cliquant sur ?**  dans le coin inférieur droit de la Centre de sécurité Microsoft Defender :
+2. Vous avez besoin **d’aide en cliquant sur ?**  dans le coin inférieur droit du portail Microsoft 365 Defender:
 
-    ![Image du bouton d’aide nécessaire](images/need-help.png)
+    ![Image du bouton d’aide nécessaire](images/need-help-option.png)
 
 Deux options s’offrent à vous dans le widget :
 
@@ -70,7 +70,7 @@ Deux options s’offrent à vous dans le widget :
 ## <a name="find-solutions-to-common-problems"></a>Trouver des solutions aux problèmes courants
 Cette option inclut des articles qui peuvent être liés à la question que vous pouvez poser. Commencez simplement à taper la question dans la zone de recherche et les articles relatifs à votre recherche seront mis en avant.
 
-![Image du widget d’aide nécessaire](images/Support3.png)
+![Image du widget d’aide nécessaire](images/information-on-help-screen.png)
 
 Si les articles suggérés ne sont pas suffisants, vous pouvez ouvrir une demande de service.
 
@@ -85,7 +85,7 @@ Découvrez comment ouvrir des tickets de support en contactant le support de Def
 
 Cette option est disponible en cliquant sur l’icône qui ressemble à un casque. Vous recevez ensuite la page suivante pour soumettre votre dossier de support :
 
-![Image du widget ouvrir une demande de service](images/Support4.png)
+![Image du widget ouvrir une demande de service](images/contact-support-screen.png)
 
 1. Remplissez un titre et une description du problème auquel vous êtes confronté, ainsi qu’un numéro de téléphone et une adresse de messagerie où nous pouvons vous joindre.
 

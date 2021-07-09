@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Découvrez comment Microsoft 365 pour les entreprises, comment le configurer et comment préparer les appareils et pc de vos utilisateurs afin qu’ils sont protégés par Microsoft 365 entreprise.
-ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ab0079da7a8f30d481cdb3d3dc6d165b4a19e99
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706455"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339287"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Prendre en Microsoft 365 entreprise
 
@@ -51,13 +51,13 @@ Microsoft 365 entreprise est destiné à 300 licences au plus. Si vous avez beso
 
 - Si vous avez un partenaire, il Microsoft 365 pour les entreprises : obtenir Microsoft 365 pour les entreprises à partir de [l’Centre partenaires Microsoft.](get-microsoft-365-business.md)
     
-- Si vous n’avez pas de partenaire et que vous souhaitez Microsoft 365 entreprise, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
+- Si vous n’avez pas de partenaire et que vous souhaitez obtenir Microsoft 365 pour les entreprises, vous pouvez [l’acheter ici.](https://www.microsoft.com/microsoft-365/business)
     
 ## <a name="set-up-microsoft-365-for-business"></a>Configurer Microsoft 365 Entreprises
 
  **Vue d’ensemble Microsoft 365 la suite pour les entreprises**
   
-Le diagramme suivant décrit la façon dont les administrateurs Microsoft 365 pour les entreprises. Il décrit également les étapes à suivre pour préparer Windows PC pour Microsoft 365 entreprise. Vous pouvez également ajouter de nouveaux appareils dans le centre Microsoft 365'administration avec [Windows AutoPilot](add-autopilot-devices-and-profile.md). Vous pouvez utiliser AutoPilot pour configurer et pré-configurer de nouveaux appareils afin qu’ils sont prêts à être utilisés de façon productive dès qu’un utilisateur se connecté avec ses informations d’identification Microsoft 365 entreprise.
+Le diagramme suivant décrit la façon dont les administrateurs Microsoft 365 pour les entreprises. Il décrit également les étapes à suivre pour préparer Windows PC pour Microsoft 365 entreprise. Vous pouvez également ajouter de nouveaux appareils dans le Centre d’administration Microsoft 365 avec [Windows AutoPilot](add-autopilot-devices-and-profile.md). Vous pouvez utiliser AutoPilot pour configurer et pré-configurer de nouveaux appareils afin qu’ils sont prêts à être utilisés de façon productive dès qu’un utilisateur se connecté avec ses informations d’identification Microsoft 365 entreprise.
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
@@ -70,7 +70,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1 : configurer Microsoft 365 entreprise (administrateur)
 
-Connectez-vous [Microsoft 365 centre](https://portal.office.com/adminportal/home) d’administration avec vos informations d’identification d’administrateur global et complétez les étapes suivantes pour configurer Microsoft 365 entreprise. 
+Connectez-vous [Centre d’administration Microsoft 365](https://admin.microsoft.com/adminportal/home) avec vos informations d’identification d’administrateur global et effectuer les étapes suivantes pour configurer Microsoft 365 entreprise. 
   
 1. [Conditions préalables à la protection des données sur les appareils avec Microsoft 365 entreprise](pre-requisites-for-data-protection.md)
     
@@ -78,7 +78,7 @@ Connectez-vous [Microsoft 365 centre](https://portal.office.com/adminportal/home
     
 2. [Utiliser l’Assistant Installation pour configurer Microsoft 365 entreprise](set-up.md)
     
-    Si vous êtes en train de passer définitivement d’un annuaire **Active Directory local** au cloud, vous pouvez vous rendre dans le Centre d’administration Microsoft 365 et utiliser l’Assistant Installation pour ajouter manuellement vos utilisateurs, ou vous pouvez synchroniser vos utilisateurs de manière permanente avec Azure AD Connecter. Il existe deux méthodes pour y parvenir : 
+    Si vous êtes en train de passer définitivement d’un annuaire **Active Directory local** au cloud, vous pouvez passer à l’Centre d’administration Microsoft 365 et utiliser l’Assistant Installation pour ajouter manuellement vos utilisateurs, ou vous pouvez synchroniser vos utilisateurs à une seule fois avec Azure AD Connecter. Il existe deux méthodes pour y parvenir : 
     
     - Si vous avez également un serveur Exchange 2010, Exchange 2013 ou Exchange 2016, vous pouvez utiliser un serveur hybride minimal pour migrer rapidement des boîtes aux lettres Exchange vers [Microsoft 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate). Les étapes hybrides minimales incluent une synchronisation à temps seul des utilisateurs avec Azure AD et la migration du courrier électronique de l’local vers le cloud. Une fois la migration de messagerie terminée, la synchronisation d’annuaires est automatiquement désactivée lorsque vous utilisez cette méthode.
     
@@ -94,12 +94,12 @@ Suivez les étapes de la procédure De configurer des appareils mobiles pour [Mi
 
 Les administrateurs peuvent pré-sélectionner les paramètres des nouveaux PC Windows 10 à l’aide Windows [AutoPilot](add-autopilot-devices-and-profile.md). Les utilisateurs peuvent configurer leurs appareils Windows 10 existants ou nouveaux en suivant les étapes de cette rubrique : Configurer des PC Windows pour Microsoft 365 pour les utilisateurs [professionnels.](set-up-windows-devices.md) Pour les appareils existants, les utilisateurs peuvent **éventuellement** [déplacer des fichiers vers OneDrive Entreprise](move-files-to-onedrive.md). Ils peuvent également utiliser des outils tiers pour déplacer des fichiers associés Windows profil vers OneDrive.
   
-Si votre organisation utilise Windows Server Active Directory en local, vous pouvez configurer Microsoft 365 pour les entreprises afin de protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de [l’étape](manage-windows-devices.md) Activer les appareils joints Windows 10 domaine à gérer par Microsoft 365 entreprise pour configurer cette procédure. Cette méthode est préférée et les appareils dans cet état sont appelés appareils joints **à Azure AD hybride.** 
+Si votre organisation utilise Windows Server Active Directory localement, vous pouvez configurer Microsoft 365 entreprise pour protéger vos appareils Windows 10, tout en conservant l’accès aux ressources locales qui nécessitent une authentification locale. Suivez les étapes de [l’étape](manage-windows-devices.md) Activer les appareils joints Windows 10 domaine à gérer par Microsoft 365 entreprise pour configurer cette procédure. Cette méthode est préférée et les appareils dans cet état sont appelés appareils joints **à Azure AD hybride.** 
   
 Si vous conservez un Active Directory local qui contient certaines ressources locales (telles que des partages de fichiers et des imprimantes), vous pouvez donner à vos appareils joints à Azure AD l’accès à ces ressources en suivant les étapes **ci-après** : Accéder aux ressources locales à partir d’un appareil joint à [Azure AD](access-resources.md)dans Microsoft 365 pour les entreprises.
   
   
-## <a name="contact-support"></a>Contacter l’assistance
+## <a name="contact-support"></a>Contacter le support technique
 
  **Si vous devez contacter le support technique :**
   
@@ -107,9 +107,9 @@ Si vous conservez un Active Directory local qui contient certaines ressources lo
     
 - En tant qu Microsoft 365 pour les entreprises, vous avez accès à notre équipe de support client : Contacter le support technique pour les produits d’entreprise - Aide **[de l’administrateur](../business-video/get-help-support.md)**
     
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 [Microsoft 365 documentation et ressources pour les](./index.yml) entreprises (page de liens)\
 [Gérer Microsoft 365 entreprise](manage.md) (article)\
 [Migrer vers Microsoft 365 entreprise](migrate-to-microsoft-365-business.md) (article)\
-[Microsoft 365 vidéos de formation pour les entreprises](../business-video/index.yml) (page de liens)
+[Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml) (page de liens)

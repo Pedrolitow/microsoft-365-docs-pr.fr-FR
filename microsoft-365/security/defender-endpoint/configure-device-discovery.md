@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ee56ed2949ea72771d8f08570d4352dbe7548d52
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7125a6953b9be46af9073b50c9268ce65dc0cd30
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286944"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339525"
 ---
 # <a name="configure-device-discovery"></a>Configurer la découverte d’appareils
 
@@ -43,8 +43,8 @@ La découverte peut être configurée pour être en mode standard ou de base. Ut
 Vous pouvez personnaliser la liste des appareils utilisés pour effectuer une découverte standard. Vous pouvez activer la découverte standard sur tous les appareils intégrés qui également prendre en charge cette fonctionnalité (actuellement - appareils Windows 10 uniquement) ou sélectionner un sous-ensemble ou des sous-ensembles de vos appareils en spécifiant leurs balises d’appareil.
 
 > [!IMPORTANT]
-> Pour la prévisualisation, vous devez d’abord activer les fonctionnalités d’aperçu dans Centre de sécurité Microsoft Defender.
-> Vous pouvez ensuite accéder à la configuration de découverte d’appareils Microsoft 365 centre de sécurité. La liste des appareils non utilisés et des recommandations de sécurité sera disponible dans le centre de sécurité Centre de sécurité Microsoft Defender et Microsoft 365, tandis que les vignettes de tableau de bord ne seront disponibles que dans Microsoft 365 centre de sécurité.
+> Pour la prévisualisation, vous devez d’abord activer les fonctionnalités d’aperçu dans Microsoft 365 Defender.
+> Vous pouvez ensuite accéder à la configuration de découverte d’appareils Microsoft 365 centre de sécurité. La liste des appareils non utilisés et les recommandations de sécurité seront disponibles dans le centre de sécurité Microsoft 365 Defender et Microsoft 365, tandis que les vignettes de tableau de bord ne seront disponibles que dans Microsoft 365 centre de sécurité.
 
 Prenez les étapes de configuration suivantes dans Microsoft 365 de sécurité :
 
@@ -55,7 +55,7 @@ Prenez les étapes de configuration suivantes dans Microsoft 365 de sécurité :
 
 ## <a name="exclude-devices-from-being-actively-probed-in-standard-discovery"></a>Exclure les appareils d’être activement sondés dans la découverte standard
 
-S’il existe des appareils sur votre réseau qui ne doivent pas être analysés activement (par exemple, les appareils utilisés comme des honeypots pour un autre outil de sécurité), vous pouvez également définir une liste d’exclusions pour les empêcher d’être analysés. Notez que les appareils peuvent toujours être découverts en mode de découverte de base. Ces appareils seront découverts passivement, mais ne seront pas activement sondés. 
+S’il existe des appareils sur votre réseau qui ne doivent pas être analysés activement (par exemple, les appareils utilisés comme des honeypots pour un autre outil de sécurité), vous pouvez également définir une liste d’exclusions pour empêcher leur analyse. Notez que les appareils peuvent toujours être découverts en mode de découverte de base. Ces appareils seront découverts passivement, mais ne seront pas activement sondés. 
 
 ## <a name="select-networks-to-monitor"></a>Sélectionner les réseaux à surveiller
 
@@ -63,7 +63,7 @@ S’il existe des appareils sur votre réseau qui ne doivent pas être analysés
 
 Vous pouvez configurer l’endroit où la découverte d’appareils peut être effectuée en spécifiant les réseaux à surveiller. Lorsqu’un réseau est surveillé, la découverte d’appareils peut être effectuée sur ce réseau. 
 
-La liste des réseaux sur lequel la découverte d’appareils peut être effectuée s’affiche dans la page **Réseaux surveillés.** 
+La liste des réseaux sur lequel la découverte d’appareils peut être effectuée est affichée dans la page **Réseaux surveillés.** 
 
 > [!NOTE]
 > Seuls les 50 premiers réseaux (en fonction du nombre d’appareils associés) seront disponibles dans la liste réseau. 
@@ -78,7 +78,7 @@ Vous pouvez appliquer un filtre pour afficher l’un des états de découverte r
 
 ### <a name="configure-the-network-monitor-state"></a>Configurer l’état du moniteur réseau
 
-Vous contrôlez l’endroit où la découverte d’appareils a lieu. Les réseaux surveillés sont l’endroit où la découverte des appareils est effectuée et qui sont généralement des réseaux d’entreprise. Vous pouvez également choisir d’ignorer les réseaux ou de sélectionner la classification de découverte initiale après avoir modifié un état.
+Vous contrôlez l’endroit où la découverte d’appareils a lieu. Les réseaux surveillés sont l’endroit où la découverte d’appareils est effectuée et qui sont généralement des réseaux d’entreprise. Vous pouvez également choisir d’ignorer les réseaux ou de sélectionner la classification de découverte initiale après avoir modifié un état.
 
 Le choix de la classification de découverte initiale implique l’application de l’état du moniteur réseau par défaut. Si vous sélectionnez l’état du moniteur réseau par défaut, les réseaux identifiés comme étant des réseaux d’entreprise seront surveillés et ceux identifiés comme non professionnels seront ignorés automatiquement.
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: af50e3c2a6db1a09d546bfa06b26c80dcf4481e5
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 6a3bbc46bb5859743d5170451b0d1c68793f93bf
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53290086"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338714"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy du dispositif et de connectivité Internet
 
@@ -63,7 +63,7 @@ Le paramètre de configuration WinHTTP est indépendant des paramètres de proxy
 Configurez un proxy statique basé sur le Registre pour autoriser uniquement le capteur Defender for Endpoint à signaler les données de diagnostic et à communiquer avec Defender pour les services Endpoint si un ordinateur n’est pas autorisé à se connecter à Internet.
 
 > [!NOTE]
-> Lorsque vous utilisez cette option sur Windows 10 ou Windows Server 2019, il est recommandé d’avoir la version suivante (ou ultérieure) et le cumul des mises à jour cumulatives :
+> Lors de l’utilisation de cette option sur Windows 10 ou Windows Server 2019, il est recommandé d’avoir la build (ou version ultérieure) suivante et le cumul des mises à jour cumulatives :
 >
 > - Windows 10, version 1809 ou Windows Server 2019 -https://support.microsoft.com/kb/5001384
 > - Windows 10, version 1909 -https://support.microsoft.com/kb/4601380
@@ -166,11 +166,11 @@ Les informations ci-dessous répentent les informations de configuration du prox
 
 ## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Confirmer la Microsoft Monitoring Agent’URL du service (MMA) 
 
-Consultez les instructions suivantes pour éliminer les caractères génériques (*) requis pour votre environnement spécifique lors de l’utilisation de la Microsoft Monitoring Agent (MMA) pour les versions précédentes de Windows.
+Consultez les instructions suivantes pour éliminer les caractères génériques (*) requis pour votre environnement spécifique lors de l’utilisation du Microsoft Monitoring Agent (MMA) pour les versions précédentes de Windows.
 
-1. Intégrer un système d’exploitation précédent avec le Microsoft Monitoring Agent (MMA) dans Defender pour endpoint (pour plus d’informations, voir Intégrer les versions précédentes de Windows sur les serveurs [Defender pour endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) et [Onboard Windows).](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
+1. Intégrer un système d’exploitation précédent avec l’Microsoft Monitoring Agent (MMA) dans Defender pour endpoint (pour plus d’informations, voir Intégrer les versions précédentes de Windows sur les serveurs [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) et [Onboard Windows.](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
 
-2. Assurez-vous que l’ordinateur est correctement signalé dans le Centre de sécurité Microsoft Defender web.
+2. Assurez-vous que l’ordinateur est correctement signalé dans Microsoft 365 Defender portail.
 
 3. Exécutez l’outil TestCloudConnection.exe à partir de « C:\Program Files\Microsoft Monitoring Agent\Agent » pour valider la connectivité et voir les URL requises pour votre espace de travail spécifique.
 
@@ -178,7 +178,7 @@ Consultez les instructions suivantes pour éliminer les caractères génériques
 
     ![Image de l’administrateur dans Windows PowerShell](images/admin-powershell.png)
 
-Les caractères génériques ( ) utilisés dans les points de terminaison \* \* d’URL .ods.opinsights.azure.com, .oms.opinsights.azure.com et .agentsvc.azure-automation.net peuvent être remplacés par votre ID d’espace de travail \* \* spécifique. L’ID d’espace de travail est spécifique à votre environnement et à votre espace de travail et se trouve dans la section Intégration de votre client dans le portail Centre de sécurité Microsoft Defender.
+Les caractères génériques ( ) utilisés dans les points de terminaison \* \* d’URL .ods.opinsights.azure.com, .oms.opinsights.azure.com et .agentsvc.azure-automation.net peuvent être remplacés par votre ID d’espace de travail \* \* spécifique. L’ID d’espace de travail est spécifique à votre environnement et espace de travail et se trouve dans la section Intégration de votre client dans Microsoft 365 Defender portail.
 
 Le point de terminaison de l’URL .blob.core.windows.net peut être remplacé par les URL affichées dans la section « Règle de pare-feu : .blob.core.windows.net » des résultats \* \* du test.
 

@@ -15,18 +15,18 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 9114a825ad011f0b2a17cea4929ab2a09bfa2172
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861178"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339477"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Intégrer des appareils Windows 10 à sessions multiples dans Windows Virtual Desktop 
 6 minutes de lecture 
 
 S’applique à : 
-- Windows 10 sessions multiples s’exécutant sur Windows Virtual Desktop (WVD) 
+- Windows 10 sessions multiples s’exécutant Windows Virtual Desktop (WVD) 
 
 Microsoft Defender pour le point de terminaison prend en charge la surveillance des sessions VDI et Windows Virtual Desktop. En fonction des besoins de votre organisation, vous devrez peut-être implémenter des sessions VDI ou Windows Virtual Desktop pour aider vos employés à accéder aux données et applications d’entreprise à partir d’un appareil nonmanaté, d’un emplacement distant ou d’un scénario similaire. Avec Microsoft Defender pour le point de terminaison, vous pouvez surveiller ces machines virtuelles afin de vérifier les activités anormales.
 
@@ -38,9 +38,9 @@ Familiarisez-vous avec les considérations pour [les VDI non persistants.](/micr
 > - Entrée unique pour chaque bureau virtuel 
 > - Plusieurs entrées pour chaque bureau virtuel 
 
-Microsoft recommande l’intégration Windows Virtual Desktop en tant qu’entrée unique par bureau virtuel. Cela garantit que l’expérience d’examen dans le portail Microsoft Defender Endpoint est dans le contexte d’un appareil basé sur le nom de l’ordinateur. Les organisations qui suppriment et redéploient fréquemment des hôtes WVD doivent envisager fortement d’utiliser cette méthode, car elle empêche la création de plusieurs objets pour le même ordinateur dans le portail Microsoft Defender for Endpoint. Cela peut semer la confusion lors de l’enquête sur les incidents. Pour les environnements de test ou non volatiles, vous pouvez choisir différemment. 
+Microsoft recommande l’intégration Windows Virtual Desktop en tant qu’entrée unique par bureau virtuel. Cela garantit que l’expérience d’examen dans le portail Microsoft Defender Endpoint se trouve dans le contexte d’un appareil basé sur le nom de l’ordinateur. Les organisations qui suppriment et redéploient fréquemment des hôtes WVD doivent envisager fortement d’utiliser cette méthode, car elle empêche la création de plusieurs objets pour le même ordinateur dans le portail Microsoft Defender pour Endpoint. Cela peut semer la confusion lors de l’enquête sur les incidents. Pour les environnements de test ou non volatiles, vous pouvez choisir différemment. 
 
-Microsoft recommande d’ajouter le script d’intégration De Microsoft Defender pour point de terminaison à l’image wvd de l’or. De cette façon, vous pouvez vous assurer que ce script d’intégration s’exécute immédiatement au premier démarrage. Il est exécuté en tant que script de démarrage lors du premier démarrage sur tous les ordinateurs WVD qui sont mis en service à partir de l’image de premier niveau WVD. Toutefois, si vous utilisez l’une des images de la galerie sans modification, placez le script dans un emplacement partagé et appelez-le à partir d’une stratégie de groupe locale ou de domaine. 
+Microsoft recommande d’ajouter le script d’intégration Microsoft Defender for Endpoint à l’image de qualité WVD. De cette façon, vous pouvez vous assurer que ce script d’intégration s’exécute immédiatement au premier démarrage. Il est exécuté en tant que script de démarrage au premier démarrage sur tous les ordinateurs WVD qui sont mis en service à partir de l’image WVD de premier niveau. Toutefois, si vous utilisez l’une des images de la galerie sans modification, placez le script dans un emplacement partagé et appelez-le à partir d’une stratégie de groupe locale ou de domaine. 
 
 > [!NOTE]
 > Le placement et la configuration du script de démarrage d’intégration VDI sur l’image de base WVD le configurent en tant que script de démarrage qui s’exécute au démarrage du WVD. Il n’est PAS recommandé d’intégrer l’image de qualité WVD réelle. Une autre considération est la méthode utilisée pour exécuter le script. Il doit s’exécuter aussi tôt que possible dans le processus de démarrage/approvisionnement pour réduire le temps entre la mise à disposition de l’ordinateur pour la réception des sessions et l’intégration de l’appareil au service. Les scénarios ci-dessous 1 & 2 prennent cela en compte.
@@ -54,7 +54,7 @@ Il existe plusieurs façons d’intégrer un ordinateur hôte WVD :
 #### <a name="scenario-1-using-local-group-policy"></a>*Scénario 1 : utilisation d’une stratégie de groupe locale*
 Ce scénario nécessite de placer le script dans une image de base et utilise la stratégie de groupe locale pour s’exécuter au début du processus de démarrage.
 
-Utilisez les instructions des périphériques VDI d’infrastructure de bureau virtuel [non persistants intégrés.](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)
+Utilisez les instructions de l’outil Intégrer les périphériques [VDI (Virtual Desktop Infrastructure) non persistants.](configure-endpoints-vdi.md#onboard-the-non-persistent-virtual-desktop-infrastructure-vdi-devices)
 
 Suivez les instructions pour une entrée unique pour chaque appareil.
 
@@ -146,7 +146,7 @@ En outre, si vous utilisez des profils utilisateur FSlogix, nous vous recommando
 
 #### <a name="licensing-requirements"></a>Conditions d'octroi de licence 
 
-Remarque sur la gestion des licences : lors de l’utilisation de Windows 10 Entreprise multisessexe, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence via Microsoft Defender pour le point de terminaison (par utilisateur), Windows Enterprise E5, Microsoft 365 Security ou Microsoft 365 E5, ou avoir la VM sous licence via Azure Defender.
+Remarque sur la gestion des licences : lors de l’utilisation de Windows 10 Entreprise multisesse session, en fonction de vos besoins, vous pouvez choisir d’avoir tous les utilisateurs sous licence via Microsoft Defender pour le point de terminaison (par utilisateur), Windows Enterprise E5, Microsoft 365 Security ou Microsoft 365 E5, ou avoir la VM sous licence via Azure Defender.
 Les conditions de licence pour Microsoft Defender pour le point de terminaison se trouvent dans : [Exigences de licence.](minimum-requirements.md#licensing-requirements)
 
 #### <a name="related-links"></a>Liens connexes

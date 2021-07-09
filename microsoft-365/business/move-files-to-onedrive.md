@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Découvrez comment déplacer vos fichiers de travail personnels et vos fichiers d’entreprise sensibles vers OneDrive Entreprise en quelques étapes simples.
-ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6def1c733093417162ca37906c1d55c0eab23e7d
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245101"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339307"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Déplacer des fichiers vers OneDrive Entreprise
 
@@ -44,7 +44,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 
 Si un utilisateur possède un ordinateur sur lequel sont enregistrés de nombreux fichiers personnels, il est conseillé de d'abord déplacer ces fichiers vers OneDrive Entreprise :
   
-1. Go to portal.office.com and sign in with the user’s Microsoft 365 for business credentials.
+1. Go to admin.microsoft.com and sign in with the user’s Microsoft 365 for business credentials.
 
 2. Cliquez sur le lanceur d'applications ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , puis accédez à OneDrive. 
     

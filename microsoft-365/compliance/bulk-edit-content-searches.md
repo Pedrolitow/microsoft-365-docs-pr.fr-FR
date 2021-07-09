@@ -17,12 +17,12 @@ ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 ms.custom:
 - seo-marvel-apr2020
 description: Utilisez l’Éditeur de recherche en bloc dans le centre de sécurité et conformité pour modifier rapidement les emplacements de requête et de contenu pour une ou plusieurs recherches de contenu.
-ms.openlocfilehash: f6331bad19e95fd1d7039d5da72349906d3614b8
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: be7e37ec22966e16dfa3c6d1f37a34e6441e632a
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227386"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341031"
 ---
 # <a name="bulk-edit-content-searches"></a>Modification en bloc des recherches de contenu
 
@@ -32,7 +32,7 @@ Pour plus d’informations sur l’utilisation de l’outil Statistiques de rech
 
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Utiliser l’Éditeur de recherche en bloc pour modifier les requêtes
 
-1. Go <https://protection.office.com> to, and then select **Search** \> **Content search**.
+1. Go <https://compliance.microsoft.com> to, and then select **Content search**.
 
 2. Dans la liste des recherches, sélectionnez une ou  plusieurs recherches, puis sélectionnez le bouton Éditeur de recherche en bloc Éditeur de ![ recherche en ](../media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png) bloc.
 
@@ -92,11 +92,11 @@ Voici quelques conseils pour modifier des requêtes à l’aide de l’Éditeur 
 
 Voici quelques conseils pour modifier les emplacements de contenu à l’aide de l’Éditeur de recherche en bloc :
 
-- Vous pouvez modifier les recherches de contenu pour effectuer des  recherches dans toutes  les boîtes aux lettres ou tous les sites de l’organisation en tapant Tout sur une ligne vide dans les boîtes aux lettres pour rechercher ou **SharePoint sites** à rechercher, puis en élecant la case à cocher.
+- Vous pouvez modifier les recherches de contenu pour effectuer des  recherches dans toutes  les boîtes aux lettres ou tous les sites de l’organisation en tapant Tout sur une ligne vide dans les boîtes aux lettres pour rechercher ou **SharePoint sites** à rechercher, puis en cocher la case.
 
 - Vous pouvez ajouter plusieurs emplacements de contenu à une ou plusieurs recherches en copiant plusieurs lignes à partir d’un fichier texte ou d’un fichier Excel, puis en les coller dans une section de la page **Emplacements.** Après avoir ajouté de nouveaux emplacements, n’oubliez pas de cocher la case pour chaque recherche à ajouter à l’emplacement.
 
     > [!TIP]
-    > Pour générer une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation, exécutez la commande PowerShell à l’étape 2 de l’étape 2 : Générer une liste [d’utilisateurs.](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users) Vous pouvez également suivre les étapes de la procédure Obtenir la liste de toutes les URL OneDrive [utilisateurs](/onedrive/list-onedrive-urls) de votre organisation pour générer une liste de tous les sites OneDrive Entreprise de votre organisation. Notez que vous devez y appender l’URL du domaine Mon site de votre organisation (par exemple, aux sites OneDrive Entreprise créés par https://contoso-my.sharepoint.com) le script. Une fois que vous avez une liste d’adresses e-mail ou OneDrive Entreprise sites, vous pouvez les copier et les coller dans la **page** Emplacements dans l’Éditeur de recherche en bloc.
+    > Pour générer une liste d’adresses de messagerie pour tous les utilisateurs de votre organisation, exécutez la commande PowerShell à l’étape 2 de l’étape 2 : Générer une liste [d’utilisateurs.](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users) Vous pouvez également suivre les étapes de la procédure Obtenir la liste de toutes les URL OneDrive [utilisateurs](/onedrive/list-onedrive-urls) de votre organisation pour générer une liste de tous les sites OneDrive Entreprise de votre organisation. Notez que vous devez appender l’URL du domaine Mon site de votre organisation (par exemple, aux sites OneDrive Entreprise créés par https://contoso-my.sharepoint.com) le script. Une fois que vous avez une liste d’adresses de messagerie ou OneDrive Entreprise sites, vous pouvez les copier et les coller dans la **page** Emplacements dans l’Éditeur de recherche en bloc.
 
 - Une fois que vous avez sélectionné **Enregistrer** pour enregistrer les modifications dans l’Éditeur de recherche en bloc, l’adresse de messagerie des boîtes aux lettres que vous avez ajoutées à une recherche est validée. Si l’adresse de messagerie n’existe pas, un message d’erreur s’affiche pour dire que la boîte aux lettres ne peut pas être localisée. Les URL des sites ne sont pas validées.

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d423c5051634334f9dbb19b236446cdb579aef69
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 2b638742e29d5ca0a8b74adfa6796380114d24a3
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327034"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339501"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurer les notifications d’alerte dans Microsoft Defender pour le point de terminaison
 
@@ -50,7 +50,7 @@ La notification par courrier électronique inclut des informations de base sur l
 Vous pouvez créer des règles qui déterminent les appareils et les gravités des alertes pour envoyer des notifications par courrier électronique pour les destinataires de la notification.
 
 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **notifications par courrier électronique.**
+1. Dans le volet de navigation, **sélectionnez** Paramètres points de terminaison des  >  **notifications** par  >    >  **courrier électronique générales.**
 
 2. Cliquez **sur Ajouter un élément.**
 

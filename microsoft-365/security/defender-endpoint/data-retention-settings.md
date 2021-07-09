@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b83e6682ce0c11d076e0bbef60fdef365c9be564
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: eb9e4b905112d3d144b10d68418695df3cda29cb
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471100"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339249"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Vérifier l’emplacement de stockage des données et mettre à jour les paramètres de rétention des données pour Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -42,13 +42,13 @@ Une fois l’intégration terminé, vous pouvez vérifier votre sélection dans 
 ## <a name="verify-data-storage-location"></a>Vérifier l’emplacement de stockage des données
 Pendant la [phase de mise en place,](production-deployment.md)vous avez sélectionné l’emplacement où stocker vos données. 
 
-Vous pouvez vérifier l’emplacement des données en naviguant vers **Paramètres**  >  **rétention des données.**
+Vous pouvez vérifier l’emplacement des données en naviguant vers **Paramètres** rétention des données des points de  >    >  **terminaison.**
 
 ## <a name="update-data-retention-settings"></a>Mettre à jour les paramètres de rétention des données
 
 Vous pouvez mettre à jour les paramètres de rétention des données. Par défaut, la période de rétention est de 180 jours. 
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres  >  **rétention des données.**
+1. Dans le volet de navigation, sélectionnez **Paramètres** rétention des données de  >  **points**  >  **de terminaison.**
 
 2. Sélectionnez la durée de rétention des données dans la liste liste.
 

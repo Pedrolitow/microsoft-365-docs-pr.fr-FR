@@ -21,12 +21,12 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: L’administrateur peut apprendre à utiliser le partage d’audit dans Microsoft 365 journal d’audit pour identifier les ressources partagées avec des utilisateurs en dehors de leur organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 302ad7665c83ee9061b2e1965ef03ec25d0aab58
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819294"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341507"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>Utiliser le partage d’audit dans le journal d’audit
 
@@ -34,9 +34,9 @@ Le partage est une activité clé dans SharePoint Online et OneDrive Entreprise,
   
 ## <a name="the-sharepoint-sharing-schema"></a>Schéma SharePoint partage de données
 
-Les événements de partage (sans les événements liés à la stratégie de partage et aux liens de partage) sont différents des événements liés aux fichiers et aux dossiers d’une manière principale : un utilisateur effectue une action qui a un effet sur un autre utilisateur. Par exemple, lorsqu’un utilisateur de ressource A donne à l’utilisateur B un accès à un fichier. Dans cet exemple, l’utilisateur A est *l’utilisateur agissant* et l’utilisateur B *l’utilisateur cible.* Dans le schéma SharePoint fichier, l’action de l’utilisateur agissant affecte uniquement le fichier lui-même. Lorsque l’utilisateur A ouvre un fichier, les seules informations nécessaires dans l’événement **FileAccessed** sont l’utilisateur agissant. Pour résoudre cette différence, il existe un schéma distinct, appelé schéma de partage *SharePoint,* qui capture plus d’informations sur les événements de partage. Cela garantit que les administrateurs ont une visibilité sur les personnes qui ont partagé une ressource et sur l’utilisateur avec qui la ressource a été partagée. 
+Les événements de partage (sans les événements liés à la stratégie de partage et aux liens de partage) sont différents des événements liés aux fichiers et aux dossiers d’une manière principale : un utilisateur effectue une action qui a un effet sur un autre utilisateur. Par exemple, lorsqu’un utilisateur de ressource A donne à l’utilisateur B accès à un fichier. Dans cet exemple, l’utilisateur A est *l’utilisateur agissant* et l’utilisateur B *l’utilisateur cible.* Dans le schéma SharePoint fichier, l’action de l’utilisateur agissant affecte uniquement le fichier lui-même. Lorsque l’utilisateur A ouvre un fichier, les seules informations nécessaires dans **l’événement FileAccessed** sont l’utilisateur agissant. Pour résoudre cette différence, il existe un schéma distinct, appelé schéma de partage *SharePoint,* qui capture plus d’informations sur les événements de partage. Cela garantit que les administrateurs ont une visibilité sur les personnes qui ont partagé une ressource et sur l’utilisateur avec qui la ressource a été partagée. 
   
-Le schéma de partage fournit deux champs supplémentaires dans un enregistrement d’audit lié au partage d’événements : 
+Le schéma de partage fournit deux champs supplémentaires dans un enregistrement d’audit relatif au partage d’événements : 
   
 - **TargetUserOrGroupType :** Indique si l’utilisateur ou le groupe cible est membre, invité, sharepointgroup, groupe de sécurité ou partenaire.
 
@@ -44,7 +44,7 @@ Le schéma de partage fournit deux champs supplémentaires dans un enregistremen
 
 Ces deux champs, en plus des autres propriétés du schéma du journal d’audit, telles que  User, Operation et Date, peuvent indiquer l’utilisateur qui a partagé la ressource avec qui et quand *.*   
   
-Il existe une autre propriété de schéma qui est importante pour l’article de partage. Lorsque vous exportez les résultats de recherche du journal d’audit, la colonne **AuditData** dans le fichier CSV exporté stocke des informations sur les événements de partage. Par exemple, lorsqu’un utilisateur partage un site avec un autre utilisateur, cette action est réalisée en ajoutant l’utilisateur cible à un SharePoint groupe. La **colonne AuditData** capture ces informations pour fournir du contexte aux administrateurs. Consultez [l’étape 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) pour obtenir des instructions sur l’examen des informations dans la **colonne AuditData.**
+Il existe une autre propriété de schéma qui est importante pour l’article de partage. Lorsque vous exportez les résultats de recherche du journal d’audit, la colonne **AuditData** dans le fichier CSV exporté stocke des informations sur les événements de partage. Par exemple, lorsqu’un utilisateur partage un site avec un autre utilisateur, cette action est réalisée en ajoutant l’utilisateur cible à un SharePoint groupe. La **colonne AuditData** capture ces informations pour fournir du contexte aux administrateurs. Pour obtenir des instructions sur l’examen des informations dans la colonne **AuditData,** consultez l’étape [2.](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log)
 
 ## <a name="sharepoint-sharing-events"></a>SharePoint événements de partage
 
@@ -52,7 +52,7 @@ Le partage est défini par lorsqu’un utilisateur (l’utilisateur *agissant)* 
 
 - **SharingInvitationCreated :** Un utilisateur de votre organisation a tenté de partager une ressource (probablement un site) avec un utilisateur externe. Cela entraîne l’envoi d’une invitation de partage externe à l’utilisateur cible. Aucun accès à la ressource n’est accordé à ce stade.
 
-- **SharingInvitationAccepted :** L’utilisateur externe a accepté l’invitation de partage envoyée par l’utilisateur agissant et a désormais accès à la ressource.
+- **SharingInvitationAccepted :** L’utilisateur externe a accepté l’invitation de partage envoyée par l’utilisateur en action et a désormais accès à la ressource.
 
 - **AnonymousLinkCreated :** Un lien anonyme (également appelé lien « Tout le monde » ) est créé pour une ressource. Étant donné qu’un lien anonyme peut être créé, puis copié, il est raisonnable de supposer que tout document ayant un lien anonyme a été partagé avec un utilisateur cible.
 
@@ -90,37 +90,37 @@ Des informations supplémentaires sur l’utilisateur cible sont également enre
 
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Comment identifier les ressources partagées avec des utilisateurs externes
 
-Une exigence courante pour les administrateurs consiste à créer une liste de toutes les ressources qui ont été partagées avec des utilisateurs en dehors de l’organisation. En utilisant le partage d’audit Office 365, les administrateurs peuvent générer cette liste. Voici comment procéder.
+Une exigence courante pour les administrateurs est la création d’une liste de toutes les ressources qui ont été partagées avec des utilisateurs en dehors de l’organisation. En utilisant le partage d’audit Office 365, les administrateurs peuvent générer cette liste. Voici comment procéder.
   
-### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Étape 1 : rechercher des événements de partage et exporter les résultats dans un fichier CSV
+### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Étape 1 : Rechercher des événements de partage et exporter les résultats dans un fichier CSV
 
 La première étape consiste à rechercher des événements de partage dans le journal d’audit. Pour plus d’informations (y compris les autorisations requises) sur la recherche dans le journal d’audit, voir Rechercher dans le journal d’audit dans le Centre de sécurité [& conformité.](search-the-audit-log-in-security-and-compliance.md)
   
-1. Accédez à [https://protection.office.com](https://protection.office.com).
-    
+1. Accédez à <https://compliance.microsoft.com>.
+
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
-    
-3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherche**  > **Recherche dans le journal d’audit**.
-    
-    La page **Recherche dans le journal d’audit** s’affiche. 
-    
+
+3. Dans le volet gauche de la Centre de conformité Microsoft 365, cliquez sur **Audit.**
+
+    La page **Audit** s’affiche.
+
 4. Sous **Activités,** cliquez sur **Activités de partage** et d’accès aux activités de demande pour rechercher des événements liés au partage. 
-    
+
     ![Sous Activités, sélectionnez Activités de partage et demande d’accès](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  Sélectionnez une plage de dates et d’heures pour rechercher les événements de partage qui se sont produits au cours de cette période. 
-    
+5. Sélectionnez une plage de dates et d’heures pour rechercher les événements de partage qui se sont produits au cours de cette période. 
+
 6. Cliquez **sur Rechercher** pour exécuter la recherche. 
-    
+
 7. Lorsque la recherche est terminée et que les résultats sont affichés, cliquez sur **Exporter les** résultats Télécharger tous \> **les résultats.**
-    
+
     Après avoir sélectionné l’option d’exportation, un message en bas de la fenêtre vous invite à ouvrir ou à enregistrer le fichier CSV.
-    
+
 8. Cliquez **sur** Enregistrer \> **sous** et enregistrez le fichier CSV dans un dossier de votre ordinateur local. 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>Étape 2 : Utiliser l’éditeur PowerQuery pour mettre en forme le journal d’audit exporté
 
-L’étape suivante consiste à utiliser la fonctionnalité de transformation JSON dans Power Query Editor dans Excel pour fractionner chaque propriété dans la colonne **AuditData** (qui se compose d’un objet JSON à plusieurs propriétés) dans sa propre colonne. Cela vous permet de filtrer les colonnes pour afficher les enregistrements liés au partage
+L’étape suivante consiste à utiliser la fonctionnalité de transformation JSON dans Power Query Editor dans Excel pour fractionner chaque propriété dans la colonne **AuditData** (qui se compose d’un objet JSON à propriétés multiples) dans sa propre colonne. Cela vous permet de filtrer les colonnes pour afficher les enregistrements liés au partage
 
 Pour obtenir des instructions détaillées, consultez « Étape 2 : mise en forme du journal d’audit exporté à l’aide de l’Éditeur Power Query » dans [Exporter, configurer et afficher des enregistrements du journal d’audit](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
 

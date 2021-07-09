@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Résumé : Configurez et testez la réinitialisation de mot de passe pour votre environnement de test Microsoft 365.'
-ms.openlocfilehash: efcaaf9ed1873c0908bb0e64644b8e10de280a01
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13169824866e91c1a09d412a875d2f4ce4391fa8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921491"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339381"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Réinitialisation de mot de passe pour votre environnement de test Microsoft 365
 
@@ -70,13 +70,13 @@ Dans cette phase, configurez la réinitialisation du mot de passe dans le client
 Tout d’abord, activez la réinitialisation de mot de passe pour les comptes d’un groupe Azure AD spécifique.
 
 1. Dans une instance privée de votre navigateur, ouvrez [https://portal.azure.com](https://portal.azure.com), puis connectez-vous avec les informations d’identification de votre compte Administrateur général.
-2. Dans le portail Azure, **sélectionnez Azure Active Directory**  >    >  **Groupe Nouveau groupe.**
+2. Dans le portail Azure, sélectionnez **Azure Active Directory**  >  **Groupe Nouveau**  >  **groupe.**
 3. Définissez le **Type de groupe** sur **Sécurité**, le **Nom du groupe** sur **PWReset** et le **Type d’appartenance** sur **Affecté**.
 4. Sélectionnez **Membres,** recherchez et **sélectionnez Utilisateur 3,** **sélectionnez Sélectionner,** puis **créez.**
 5. Fermez le volet **Groupes**.
-6. Dans le volet Azure Active Directory, sélectionnez Réinitialiser le mot de **passe** dans le volet de navigation gauche.
+6. Dans le volet Azure Active Directory, sélectionnez **Réinitialiser** le mot de passe dans le volet de navigation gauche.
 7. Sur la page **Propriétés–Réinitialiser le mot de passe**, sous l’option **Réinitialisation du mot de passe en libre-service activée**, choisissez **Sélectionné**.
-8. Sélectionnez **Sélectionner** un groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
+8. Sélectionnez **Sélectionner un** groupe, sélectionnez le groupe **PWReset,** puis **sélectionnez**  >  **Enregistrer.**
 9. Fermez l’instance privée du navigateur.
 
 Ensuite, testez la réinitialisation du mot de passe pour le compte Utilisateur 3.
@@ -90,7 +90,7 @@ Ensuite, testez la réinitialisation du mot de passe pour le compte Utilisateur 
 1. Entrez le nom du compte Utilisateur 3, entrez les caractères de la CAPTCHA, puis sélectionnez **Suivant**.
 1. Pour **l’étape de vérification 1,** **sélectionnez Envoyer un e-mail** à mon courrier de remplacement, puis sélectionnez **Courrier électronique.** Lorsque vous recevez l’e-mail, entrez le code de vérification, puis sélectionnez **Suivant**.
 1. Dans **Revenir à votre compte,** entrez un nouveau mot de passe pour le compte Utilisateur 3, puis sélectionnez **Terminer.** Notez le mot de passe modifié du compte d’utilisateur 3 et stockez-le dans un endroit sûr.
-1. Dans un onglet distinct du même navigateur, accédez à [https://portal.office.com](https://portal.office.com), puis connectez-vous avec le nom de compte Utilisateur 3 et son nouveau mot de passe. Vous devez voir la **page d’accueil Microsoft Office**.
+1. Dans un onglet distinct du même navigateur, accédez à [https://admin.microsoft.com](https://admin.microsoft.com), puis connectez-vous avec le nom de compte Utilisateur 3 et son nouveau mot de passe. Vous devez voir la **page d’accueil Microsoft Office**.
 
 ## <a name="next-step"></a>Étape suivante
 

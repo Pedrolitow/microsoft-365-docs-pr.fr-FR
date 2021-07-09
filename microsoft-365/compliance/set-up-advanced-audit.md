@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cet article explique comment configurer l’audit avancé afin de pouvoir effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
-ms.openlocfilehash: d1752ee7714056254a6c0e5c009aa9aa79ddff3b
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: Cet article explique comment configurer l’audit avancé afin que vous pouvez effectuer des enquêtes d’investigation lorsque des comptes d’utilisateur sont compromis ou pour enquêter sur d’autres incidents liés à la sécurité.
+ms.openlocfilehash: 825dadee5260a263d005eb3a37f280381f9425a2
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314359"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339225"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>Configurer l’audit avancé dans Microsoft 365
 
@@ -32,7 +32,7 @@ Si votre organisation dispose d’un abonnement et d’une licence d’utilisate
 
 ![Flux de travail pour configurer l’Audit avancé](../media/AdvancedAuditWorkflow.png)
 
-## <a name="step1-set-up-advanced-audit-for-users"></a>Étape 1 : Configurer l’audit avancé pour les utilisateurs
+## <a name="step-1-set-up-advanced-audit-for-users"></a>Étape 1 : Configurer l’audit avancé pour les utilisateurs
 
 Les fonctionnalités d’audit avancées telles que la possibilité d’enregistrer des événements importants tels que MailItemsAccessed et envoyer nécessitent une licence E5 appropriée attribuée aux utilisateurs. De plus, l’application/plan de service d’audit avancé doit être activé pour ces utilisateurs. Pour vérifier que l’application d’audit avancée est attribuée aux utilisateurs, procédez comme suit pour chaque utilisateur :
 

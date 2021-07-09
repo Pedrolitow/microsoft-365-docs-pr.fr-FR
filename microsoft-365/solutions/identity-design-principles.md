@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 planification des ressources d’entreprise - Architecture de sécurité
+title: Microsoft 365 de ressources d’entreprise - Architecture de sécurité
 description: Découvrez les principales stratégies de conception pour l’architecture Enterprise Microsoft d’Alex Shteynberg, architecte principal technique chez Microsoft.
 ms.author: bcarter
 author: brendacarter
@@ -14,14 +14,14 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b22a3b8fc73ca1825f07dda5b84c85e2d2a68805
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: a3be13624c3b3cc9d7be667e28e435c76c513fc3
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289738"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341723"
 ---
-# <a name="to-identity-and-beyondone-architects-viewpoint"></a>Vers l’identité et au-delà : l’identité d’un architecte
+# <a name="to-identity-and-beyondone-architects-viewpoint"></a>À l’identité et au-delà : l’identité d’un architecte
 
 Dans cet article, [Alex Shteynberg,](https://www.linkedin.com/in/alex-shteynberg/)architecte technique principal chez Microsoft, décrit les principales stratégies de conception pour les entreprises qui adoptent Microsoft 365 et d’autres services cloud De Microsoft.
 
@@ -54,12 +54,12 @@ La langue n’est pas un outil précis. Nous utilisons assez souvent le même mo
 
 <br>
 
-Lorsque vous apprenez à se sentir mieux, il est préférable de commencer dans le pool et non au milieu de l’océan. Je n’essaie pas d’être techniquement précis avec ce diagramme. Il s’agit d’un modèle pour aborder certains concepts de base.
+Lorsque vous apprenez à vous sentir mieux, il est préférable de commencer dans le pool et non au milieu de l’océan. Je n’essaie pas d’être techniquement précis avec ce diagramme. Il s’agit d’un modèle pour discuter de certains concepts de base.
 
 Dans le schéma :
 
 - Client = une instance d’Azure AD. Il se trouve en « haut » d’une hiérarchie ou au niveau 1 dans le diagramme. Nous pouvons considérer qu’il s’agit de la «[limite](/azure/active-directory/users-groups-roles/licensing-directory-independence)» où tout le reste se produit[(Azure AD B2B](/azure/active-directory/b2b/what-is-b2b) mis à part). Tous les services cloud d’entreprise Microsoft font partie de l’un de ces clients. Les services grand public sont distincts. « Client » apparaît dans la documentation sous la forme Office 365 client Azure, client Azure, client WVD, etc. Je trouve souvent que ces variantes sont source de confusion pour les clients.
-- Les services/abonnements, niveau 2 dans le diagramme, appartiennent à un seul client. La plupart des services SaaS sont en 1:1 et ne peuvent pas se déplacer sans migration. Azure est différent, vous pouvez déplacer [la facturation](/azure/cost-management-billing/manage/billing-subscription-transfer) et/ou un [abonnement](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) vers un autre client. De nombreux clients doivent déplacer des abonnements Azure. Cela a différentes implications. Les objets qui existent en dehors de l’abonnement ne se déplacent pas (par exemple, le contrôle d’accès basé sur un rôle ou les objets Azure RBAC et Azure AD, y compris les groupes, les applications, les stratégies, et ainsi de suite). En outre, certains services (par exemple, Azure Key Vault, Data Bricks, et ainsi de suite). Ne migrez pas les services sans un bon besoin commercial. Certains scripts qui peuvent être utiles pour la migration sont [partagés sur GitHub](https://github.com/lwajswaj/azure-tenant-migration).
+- Les services/abonnements, niveau 2 dans le diagramme, appartiennent à un seul client. La plupart des services SaaS sont en 1:1 et ne peuvent pas se déplacer sans migration. Azure est différent, vous pouvez déplacer [la facturation](/azure/cost-management-billing/manage/billing-subscription-transfer) et/ou un [abonnement](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) vers un autre client. De nombreux clients doivent déplacer des abonnements Azure. Cela a différentes implications. Les objets qui existent en dehors de l’abonnement ne se déplacent pas (par exemple, le contrôle d’accès basé sur un rôle ou les objets Azure RBAC et Azure AD, y compris les groupes, les applications, les stratégies, et ainsi de suite). En outre, certains services (tels que Azure Key Vault, Data Bricks, et ainsi de suite). Ne migrez pas les services sans un bon besoin commercial. Certains scripts qui peuvent être utiles pour la migration sont [partagés sur GitHub](https://github.com/lwajswaj/azure-tenant-migration).
 - Un service donné a généralement une sorte de limite de « sous-niveau » ou de niveau 3 (L3). Cela est utile pour comprendre la répartition de la sécurité, des stratégies, de la gouvernance, etc. Malheureusement, il n’existe aucun nom uniforme que je connaisse. Voici quelques exemples de noms pour L3 : Azure Subscription = [ressource](/azure/azure-resource-manager/management/manage-resources-portal); Dynamics 365 CE = [instance](/dynamics365/admin/new-instance-management); Power BI = [espace de travail](/power-bi/service-create-the-new-workspaces); Power Apps = [environnement](/power-platform/admin/environments-overview); et ainsi de suite.
 - Le niveau 4 est l’endroit où se trouve les données réelles. Ce « plan de données » est un sujet complexe. Certains services utilisent Azure AD pour RBAC, d’autres non. Je vais aborder ce sujet un peu plus en détail lorsque nous aborderons les sujets de délégation.
 
@@ -68,10 +68,10 @@ Voici quelques concepts supplémentaires que de nombreux clients (et employés d
 - Tout le monde [peut créer](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant) de nombreux locataires [sans frais.](https://azure.microsoft.com/pricing/details/active-directory/) Vous n’avez pas besoin d’un service en son sein. J’en ai des dizaines. Chaque nom de client est unique dans le service cloud mondial de Microsoft (en d’autres termes, aucun client ne peut avoir le même nom). Elles sont toutes au format TenantName.onmicrosoft.com. Il existe également des processus qui créent automatiquement des locataires (locataires[nonmanagés).](/azure/active-directory/users-groups-roles/directory-self-service-signup) Par exemple, cela peut se produire lorsqu’un utilisateur s’ad commune à un service d’entreprise avec un domaine de messagerie qui n’existe dans aucun autre client.
 - Dans un client géré, de nombreux [domaines DNS](/azure/active-directory/fundamentals/add-custom-domain) peuvent y être inscrits. Cela ne modifie pas le nom du client d’origine. Il n’existe actuellement aucun moyen simple de renommer un client (autre que la migration). Bien que le nom du client ne soit techniquement pas critique ces jours-ci, certains peuvent trouver cela limité.
 - Vous devez réserver un nom de client pour votre organisation même si vous ne prévoyez pas encore de déployer de services. Sinon, quelqu’un peut vous le prendre et il n’existe aucun processus simple pour le reprendre (même problème que les noms DNS). J’entends cela trop souvent de la part des clients. Le nom de votre client doit également faire l’objet d’un thème.
-- Si vous possédez des espaces de noms DNS, vous devez les ajouter à vos locataires. Dans le cas contraire, [il est possible de](/azure/active-directory/users-groups-roles/directory-self-service-signup) créer un client non géré avec ce nom, ce qui entraîne une perturbation de sa [gestion.](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+- Si vous possédez des espaces de noms DNS, vous devez les ajouter à vos locataires. Sinon, il est possible de créer [un](/azure/active-directory/users-groups-roles/directory-self-service-signup) client non géré avec ce nom, ce qui entraîne une perturbation [de sa gestion.](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 - L’espace de noms DNS (tel que contoso.com) peut appartenir à un seul client. Cela a des conséquences sur différents scénarios (par exemple, le partage d’un domaine de messagerie lors d’une fusion ou d’une acquisition, et ainsi de suite). Il existe un moyen d’inscrire un sous-DNS (tel que div.contoso.com) dans un autre client, mais cela doit être évité. En enregistrant un nom de domaine de niveau supérieur, tous les sous-domaines sont supposés appartenir au même client. Dans les scénarios multi-locataires (voir ci-dessous), je recommande normalement d’utiliser un autre nom de domaine de niveau supérieur (par exemple, contoso.ch ou ch-contoso.com).
 - Qui devez-vous « posséder » un client ? Je vois souvent des clients qui ne savent pas qui est actuellement propriétaire de leur client. Il s’agit d’un grand indicateur rouge. Appelez le support Microsoft DÈS QUE POSSIBLE. Tout aussi problématique est lorsqu’un propriétaire de service (souvent un administrateur Exchange) est désigné pour gérer un client. Le client contiendra tous les services que vous souhaitez peut-être à l’avenir. Le propriétaire du client doit être un groupe qui peut prendre une décision d’activer tous les services cloud d’une organisation. Un autre problème se pose lorsqu’un groupe de propriétaires de client est invité à gérer tous les services. Cela n’est pas à l’échelle pour les grandes organisations.
-- Il n’existe pas de concept de sous/super client. Pour une raison quelconque, cette répétition se répète. Cela [s’applique également aux locataires Azure AD B2C.](/azure/active-directory-b2c/) J’entends trop souvent « Mon environnement B2C se trouve dans mon client XYZ » ou « Comment déplacer mon client Azure vers mon client Office 365 client ? »
+- Il n’existe pas de concept de sous/super client. Pour une raison quelconque, cette répétition se répète toujours. Cela [s’applique également aux locataires Azure AD B2C.](/azure/active-directory-b2c/) J’entends trop souvent « Mon environnement B2C se trouve dans mon client XYZ » ou « Comment déplacer mon client Azure vers mon client Office 365 client ? »
 - Ce document se concentre principalement sur le cloud commercial international, car c’est ce que la plupart des clients utilisent. Il est parfois utile de connaître les [clouds souverains.](/azure/active-directory/develop/authentication-national-cloud) Les clouds souverains ont des implications supplémentaires pour discuter des sujets hors de portée de cette discussion.
 
 ## <a name="baseline-identity-topics"></a>Rubriques sur l’identité de base
@@ -82,7 +82,7 @@ Il existe une documentation complète sur la plateforme d’identités de Micros
 
 Azure AD ne résout pas l’absence de gouvernance dans votre monde de l’identité ! [La gouvernance des identités](/azure/active-directory/governance/identity-governance-overview) doit être un élément critique indépendant des décisions cloud. Les exigences de gouvernance changent au fil du temps, c’est pourquoi il s’agit d’un programme et non d’un outil.
 
-[Azure AD Connecter](/azure/active-directory/hybrid/whatis-azure-ad-connect) par [Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) (MIM) et quelque chose d’autre (tiers ou personnalisé) ? Économisez-vous beaucoup de difficultés maintenant et à l’avenir et allez avec Azure AD Connecter. Il existe toutes sortes d’intelligences dans cet outil pour répondre aux configurations client et aux innovations en cours.
+[Azure AD Connecter](/azure/active-directory/hybrid/whatis-azure-ad-connect) et [Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) (MIM) et quelque chose d’autre (tiers ou personnalisé) ? Économisez-vous beaucoup de difficultés maintenant et à l’avenir et allez avec Azure AD Connecter. Il existe toutes sortes d’intelligences dans cet outil pour répondre aux configurations client et aux innovations en cours.
 
 Certains cas de périphérie qui peuvent conduire à une architecture plus complexe :
 
@@ -106,7 +106,7 @@ Certains clients activent la fédération + PHS principalement pour :
 - Fonctionnalités supplémentaires (par exemple : [Azure AD DS)](/azure/active-directory-domain-services/tutorial-configure-password-hash-sync)et services de sécurité (ex.: informations d’identification [divulguées)](/azure/active-directory/reports-monitoring/concept-risk-events#leaked-credentials)
 - Prise en charge des services dans Azure qui ne comprennent pas l’authentification fédérée (par exemple, [Fichiers Azure](/azure/storage/files/storage-files-active-directory-overview)).
 
-Je pars souvent à travers le flux d’authentification des clients pour clarifier certains détails. Le résultat ressemble à l’image ci-dessous, ce qui n’est pas aussi bon que le processus interactif d’y arriver.
+J’insé passons souvent les clients à travers le flux d’authentification client pour clarifier certains détails. Le résultat ressemble à l’image ci-dessous, ce qui n’est pas aussi bon que le processus interactif d’y arriver.
 
 ![Exemple de conversation de tableau blanc](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
 
@@ -272,8 +272,6 @@ Comme indiqué précédemment, de nombreux clients cherchent à obtenir un modè
 - **Microsoft Cloud App Security** - (/cloud-app-security/manage-admins)
 - **Stream** - (/stream/assign-administrator-user-role)
 - **Obstacles à l’information** - (.. /compliance/information-barriers.md)
-
-Pour le reste, la recherche dans docs a été très bonne dernièrement - <https://docs.microsoft.com/> .
 
 ### <a name="activity-logs"></a>Journaux d’activité
 

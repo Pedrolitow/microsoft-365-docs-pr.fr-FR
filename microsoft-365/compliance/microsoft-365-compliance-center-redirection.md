@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Découvrez comment rediriger automatiquement Office 365 utilisateurs du Centre de sécurité et conformité vers le Centre de conformité Microsoft 365.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 83d6a08d5c189c08c8f7d25daa3af39f28cbf8f1
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 62fc302f9f065ac7bb0475a6e72dc240a56a1fe1
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226274"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339405"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Rediriger les utilisateurs du centre Office 365 sécurité et conformité vers le Centre de conformité Microsoft 365
 
@@ -35,7 +35,7 @@ La redirection automatique est activée par défaut pour tous les utilisateurs a
 Les utilisateurs sont automatiquement acheminés vers les mêmes solutions de conformité dans le Centre de conformité Microsoft 365 (compliance.microsoft.com).
 
 > [!NOTE]
-> Pour les autres solutions de conformité incluses dans le Centre de sécurité et conformité Office 365, les utilisateurs continueront à gérer ces solutions dans le centre de sécurité et conformité Centre de conformité Microsoft 365 ou Office 365. La redirection automatique pour ces solutions de conformité sera bientôt disponible.*
+> Pour les autres solutions de conformité incluses dans le Centre de sécurité et conformité Office 365, les utilisateurs continueront à gérer ces solutions dans le centre de sécurité et conformité Centre de conformité Microsoft 365 ou Office 365. La redirection automatique pour ces solutions de conformité sera bientôt disponible.
 
 Cette fonctionnalité et les contrôles associés n’activent pas la redirection automatique des fonctionnalités de sécurité pour Microsoft Defender pour Office 365. Pour activer la redirection pour les [fonctionnalités](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) de sécurité, consultez La redirection des comptes de Microsoft Defender Office 365 vers le centre de sécurité Microsoft 365 pour plus d’informations.
 
@@ -44,7 +44,7 @@ Cette fonctionnalité et les contrôles associés n’activent pas la redirectio
 Si quelque chose ne fonctionne pas pour vous ou s’il y a quelque chose que vous ne parvenez pas à effectuer via le portail Centre de conformité Microsoft 365, vous pouvez désactiver temporairement la redirection automatique pour tous les utilisateurs.
 
 > [!IMPORTANT]
-> Le Centre de conformité Microsoft 365 est le portail de gestion de remplacement pour les solutions de conformité actuellement gérées dans le Centre Office 365 sécurité et conformité. Toutes Microsoft 365 solutions de conformité seront gérées uniquement dans le Centre de conformité Microsoft 365. La désactivation de la redirection vers le Centre de conformité Microsoft 365 doit être une solution à court terme.*
+> Le Centre de conformité Microsoft 365 est le portail de gestion de remplacement pour les solutions de conformité actuellement gérées dans le Centre Office 365 sécurité et conformité. Toutes Microsoft 365 solutions de conformité seront gérées uniquement dans le Centre de conformité Microsoft 365. La désactivation de la redirection vers le Centre de conformité Microsoft 365 doit être une solution à court terme.
 
 Pour revenir au Centre Office 365 sécurité et conformité (protection.microsoft.com) pour tous les utilisateurs, passez aux étapes suivantes :
 

@@ -12,24 +12,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Les administrateurs peuvent configurer un connecteur TeleMessage pour importer et archiver les données de communications de signal dans Microsoft 365. Cela vous permet d’archiver des données provenant de sources de données tierces dans Microsoft 365 afin de pouvoir utiliser des fonctionnalités de conformité telles que la conservation légale, la recherche de contenu et les stratégies de rétention pour gérer les données tierces de votre organisation.
-ms.openlocfilehash: a779cb312e20fdf5fac0987a33734e7e81ba9c74
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: bce1788f2ce08ca8678c5ba29c01e1bec2d1c834
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054854"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339465"
 ---
-# <a name="set-up-a-connector-to-archive-signal-communications-data-preview"></a>Configurer un connecteur pour archiver les données de communications de signal (aperçu)
+# <a name="set-up-a-connector-to-archive-signal-communications-data"></a>Configurer un connecteur pour archiver les données de communications de signal
 
 Utilisez le connecteur TeleMessage dans le Centre de conformité Microsoft 365 pour importer et archiver des conversations de signal, des pièces jointes, des fichiers et des messages et appels supprimés. Une fois que vous avez configuré et configuré un connecteur, il se connecte au compte TeleMessage de votre organisation et importe la communication mobile des employés à l’aide de l’archiveur de signal de télémessage dans les boîtes aux lettres Microsoft 365.
 
-Une fois que les données du connecteur de l’archiveur de signal sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 pour signaler les données de communication. Par exemple, vous pouvez rechercher la communication signal à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur de l’archiveur de signal à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur d’archivage de signal pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations de gouvernance d’entreprise et aux stratégies réglementaires.
+Une fois que les données du connecteur de l’archiveur de signal sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, la recherche de contenu et les stratégies de rétention Microsoft 365 pour signaler les données de communication. Par exemple, vous pouvez rechercher la communication signal à l’aide de la recherche de contenu ou associer la boîte aux lettres qui contient les données du connecteur de l’archiveur de signal à un dépositaire dans Advanced eDiscovery cas. L’utilisation d’un connecteur d’archivage du signal pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux réglementations de gouvernance d’entreprise et aux stratégies réglementaires.
 
 ## <a name="overview-of-archiving-signal-communications-data"></a>Vue d’ensemble des données de communications de signal d’archivage
 
 La vue d’ensemble suivante explique le processus d’utilisation d’un connecteur pour archiver les données de communication de signal Microsoft 365.
 
-![Flux de travail d’archivage des communications de signalisation](../media/SignalConnectorWorkflow.png)
+![Flux de travail d’archivage des communications de signal](../media/SignalConnectorWorkflow.png)
 
 1. Votre organisation travaille avec TeleMessage pour configurer un connecteur d’archivage du signal. Pour plus d’informations, voir [Activating the TeleMessage Signal Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-signal-archiver/).
 
@@ -39,11 +39,11 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 4. Le connecteur importe les éléments de communication mobile dans la boîte aux lettres d’un utilisateur spécifique. Un nouveau dossier nommé Archiveur de signal sera créé dans la boîte aux lettres de l’utilisateur spécifique et les éléments y seront importés. Le connecteur fait le mappage à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur. Chaque message électronique contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant du message électronique.
 
-> Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur, vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage doit contenir le numéro mobile de l’utilisateur et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de courrier électronique, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas un utilisateur Microsoft 365 valide qui correspond au numéro de téléphone mobile d’un utilisateur, le connecteur utilise la propriété d’adresse de messagerie de l’utilisateur de l’élément de courrier. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse de messagerie de *l’utilisateur* de l’élément de courrier, l’élément n’est pas importé.
+> Outre le mappage automatique des utilisateurs à l’aide de la valeur de la propriété *d’adresse* de messagerie de l’utilisateur, vous pouvez également définir un mappage personnalisé en chargeant un fichier de mappage CSV. Ce fichier de mappage doit contenir le numéro mobile de l’utilisateur et l’adresse Microsoft 365 boîte aux lettres correspondante pour chaque utilisateur. Si vous activez le mappage utilisateur automatique et fournissez un mappage personnalisé, pour chaque élément de courrier électronique, le connecteur examinera d’abord le fichier de mappage personnalisé. S’il ne trouve pas d’utilisateur Microsoft 365 valide correspondant au numéro de téléphone mobile d’un utilisateur, le connecteur utilise la propriété d’adresse de messagerie de l’utilisateur de l’élément de courrier. Si le connecteur ne trouve pas d’utilisateur Microsoft 365 valide dans le fichier de mappage personnalisé ou dans la propriété d’adresse de messagerie de *l’utilisateur* de l’élément de courrier, l’élément n’est pas importé.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
-- Commandez le [service d’archivage du signal à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous connectez à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
+- Commandez le [service d’archivage du signal à partir de TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) et obtenez un compte d’administration valide pour votre organisation. Vous devrez vous inscrire à ce compte lorsque vous créerez le connecteur dans le centre de conformité.
 
 - Enregistrez tous les utilisateurs qui nécessitent l’archivage du signal dans le compte TeleMessage. Lors de l’inscription des utilisateurs, n’oubliez pas d’utiliser la même adresse de messagerie que celle utilisée pour Microsoft 365 compte.
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Ajouter et gérer des alertes d’activité dans le Centre de sécurité & conformité afin que Microsoft 365 vous envoie des notifications par courrier électronique lorsque les utilisateurs effectuent des activités spécifiques
-ms.openlocfilehash: d0daa9249a8ea69c376ef7bbc8b7a90253e411db
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: b48093de66fdefa9a298b6cdc0f0324ee720fbbf
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227162"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341603"
 ---
 # <a name="create-activity-alerts"></a>Créer des alertes d’activité
 
@@ -46,7 +46,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
 ## <a name="create-an-activity-alert"></a>Créer une alerte d’activité
 
-1. Accédez à [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
+1. Accédez à <https://compliance.microsoft.com/managealerts>.
 
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
@@ -85,7 +85,7 @@ Vous pouvez créer une alerte d’activité qui vous enverra une notification pa
 
 Vous pouvez désactiver une alerte d’activité afin qu’aucune notification par courrier électronique ne soit envoyée. Une fois que vous avez éteint l’alerte d’activité, elle s’affiche toujours dans la liste des alertes d’activité pour votre organisation, et vous pouvez toujours afficher ses propriétés.
 
-1. Go to Go to [https://protection.office.com/managealerts](https://protection.office.com/managealerts) .
+1. Accédez à <https://compliance.microsoft.com/managealerts>.
 
 2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
 
@@ -97,7 +97,7 @@ Vous pouvez désactiver une alerte d’activité afin qu’aucune notification p
 
 Pour ré-activer une alerte d’activité,  répétez simplement ces étapes et cliquez sur le bouton bascule Désactiver pour modifier l’état sur **Activer**.
 
-## <a name="more-information"></a>Informations supplémentaires
+## <a name="more-information"></a>Plus d’informations
 
 - Voici un exemple de notification par courrier électronique envoyée aux utilisateurs spécifiés dans le champ Envoyé à cette alerte (et répertorié sous **Destinataires** sur la page **Alertes** d’activité) dans le Centre de sécurité & conformité.
 

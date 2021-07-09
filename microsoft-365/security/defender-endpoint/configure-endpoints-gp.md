@@ -1,6 +1,6 @@
 ---
 title: Intégrer Windows 10 appareils à Microsoft Defender pour le point de terminaison via la stratégie de groupe
-description: Utilisez la stratégie de groupe pour déployer le package de configuration sur Windows 10 afin qu’ils soient intégrés au service.
+description: Utilisez la stratégie de groupe pour déployer le package de configuration sur les Windows 10 afin qu’ils soient intégrés au service.
 keywords: configurer des appareils à l’aide de la stratégie de groupe, de la gestion des appareils, configurer Microsoft Defender pour les appareils endpoint, intégrer Microsoft Defender pour les appareils endpoint, stratégie de groupe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 454e60b26f84aca26a0f8f317105ec5457b55ca2
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 26bdb0fbdb417d9e7fb01e4c3a863c44e57b7fb7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326962"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339621"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Intégrer des Windows 10 à l’aide de la stratégie de groupe 
+# <a name="onboard-the-windows-10-devices-using-group-policy"></a>Intégrer les appareils Windows 10 à l’aide de la stratégie de groupe 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -47,9 +47,9 @@ ms.locfileid: "53326962"
 
 Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [ou Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) pour voir les différents chemins d’accès dans le déploiement de Defender for Endpoint.
 
-1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
+1. Ouvrez le fichier de package de configuration de .zip de groupe (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
 
-    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration.**
+    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**   >  **Onboarding**.
 
     1. Sélectionnez Windows 10 comme système d’exploitation.
 
@@ -63,13 +63,13 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 4. Dans **l’Éditeur de gestion des stratégies** de groupe, allez à **Configuration** ordinateur, puis **Préférences,** puis **paramètres du panneau de configuration.**
 
-5. Cliquez avec le bouton droit **sur Tâches programmées,** pointez sur **Nouveau,** puis cliquez sur **Tâche immédiate (au moins Windows 7).**
+5. Cliquez avec le bouton droit **sur Tâches programmées,** pointez sur **Nouveau,** puis cliquez sur Tâche immédiate (au moins **Windows 7).**
 
-6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** cliquez **sur Modifier l’utilisateur ou** le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier les **noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
+6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Sous **Options de sécurité,** **cliquez sur Modifier** l’utilisateur ou le groupe, puis tapez SYSTEM, puis cliquez sur Vérifier **les noms,** **puis OK.** NT AUTHORITY\SYSTEM apparaît en tant que compte d’utilisateur que la tâche exécutera.
 
-7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les **privilèges les plus élevés.**
+7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec **les privilèges les plus élevés.**
 
-8. Go to the **Actions** tab and click **New...** **Assurez-vous que démarrer un programme** est sélectionné dans le champ **Action.** Entrez le nom de fichier et l’emplacement du fichier *WindowsDefenderATPOnboardingScript.cmd* partagé.
+8. Go to the **Actions** tab and click **New...** **Assurez-vous que démarrer un programme** est sélectionné dans le champ **Action.** Entrez le chemin NetBIOS du fichier  *WindowsDefenderATPOnboardingScript.cmd* partagé.
 
 9. Cliquez **sur OK** et fermez toutes les fenêtres GPMC ouvertes.
 
@@ -77,7 +77,7 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier que l’appareil est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un appareil [Defender for Endpoint nouvellement intégré.](run-detection-test.md)
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Paramètres de configuration defender supplémentaires pour les points de terminaison
-Pour chaque appareil, vous pouvez déterminer si des échantillons peuvent être collectés à partir de l’appareil lorsqu’une demande est faite via Centre de sécurité Microsoft Defender pour soumettre un fichier pour analyse approfondie.
+Pour chaque appareil, vous pouvez déterminer si des échantillons peuvent être collectés à partir de l’appareil lorsqu’une demande est faite via Microsoft 365 Defender pour soumettre un fichier pour analyse approfondie.
 
 Vous pouvez utiliser la stratégie de groupe (GP) pour configurer des paramètres, tels que les paramètres de l’exemple de partage utilisé dans la fonctionnalité d’analyse approfondie.
 
@@ -189,9 +189,9 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 > [!NOTE]
 > Les stratégies d’intégration et deboarding ne doivent pas être déployées sur le même appareil en même temps, sinon cela provoquera des collisions imprévisibles.
 
-1. Obtenez le package deboarding à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
+1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
 
-    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **de l’appareil.**
+    1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils  >  **endpoints.**  >    >  
 
     1. Sélectionnez Windows 10 comme système d’exploitation.
 
@@ -209,7 +209,7 @@ Pour des raisons de sécurité, le package utilisé pour la sortie des appareils
 
 6. Dans la **fenêtre** Tâche qui s’ouvre, allez dans **l’onglet** Général. Choisissez le compte d’utilisateur SYSTÈME local (BUILTIN\SYSTEM) sous **Options de sécurité.**
 
-7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non, puis cochez la case Exécuter avec les privilèges les plus **élevés.**
+7. Sélectionnez **Exécuter, que l’utilisateur soit** connecté ou non et cochez la case Exécuter avec les privilèges les plus **élevés.**
 
 8. Go to the **Actions** tab and click **New...**. **Assurez-vous que démarrer un programme** est sélectionné dans le champ **Action.** Entrez le chemin NetBIOS du fichier *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* partagé.
 
@@ -224,8 +224,8 @@ Avec la stratégie de groupe, il n’est pas possible de surveiller le déploiem
 
 ## <a name="monitor-devices-using-the-portal"></a>Surveiller les appareils à l’aide du portail
 
-1. Go to [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/).
-2. Cliquez **sur La liste Appareils.**
+1. Go to [Microsoft 365 Defender portal](https://security.microsoft.com/).
+2. Cliquez sur **Inventaire des appareils.**
 3. Vérifiez que les appareils apparaissent.
 
 > [!NOTE]

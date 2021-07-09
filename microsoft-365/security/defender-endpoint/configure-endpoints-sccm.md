@@ -1,6 +1,6 @@
 ---
 title: Appareils Windows 10 intégrés utilisant Configuration Manager
-description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin qu’ils soient intégrés au service.
+description: Utilisez Configuration Manager pour déployer le package de configuration sur les appareils afin que les appareils soient intégrés au service.
 keywords: intégrer des appareils à l’aide de sccm, gestion des appareils, configurer Microsoft Defender pour les appareils endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,25 +17,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: d827fb89a082286b1b7b77ea0a14e588ce171161
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: d7c319e37fb804ee4dac3b6bff402942bbc2fa79
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842193"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339657"
 ---
-# <a name="onboard-windows-10-devices-using-configuration-manager"></a>Appareils Windows 10 intégrés utilisant Configuration Manager
+# <a name="onboard-the-windows-10-devices-using-configuration-manager"></a>Intégrer les appareils Windows 10 à l’aide de Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager branche actuelle
 - Gestionnaire de configuration de System Center 2012 R2
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 ## <a name="supported-client-operating-systems"></a>Systèmes d’exploitation clients pris en charge
 
@@ -54,7 +54,7 @@ En fonction de la version de Configuration Manager que vous exécutez, les syst�
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server 2016, version 1803 ou ultérieure
-- Windows Server 2019
+- Windows Server 2019
 
 >[!NOTE]
 >Pour plus d’informations sur la façon d’intégrer Windows Server 2012 R2, Windows Server 2016 et Windows Server 2019, consultez la Windows [serveurs intégrés.](configure-server-endpoints.md)
@@ -71,9 +71,9 @@ Consultez le [fichier PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/r
 
 
 
-1. Ouvrez le fichier de package de configuration Configuration Manager .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [de Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
+1. Ouvrez le fichier de package de configuration Configuration Manager .zip (*WindowsDefenderATPOnboardingPackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service. Vous pouvez également obtenir le package à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
 
-    1. Dans le volet de navigation, sélectionnez  >  **Paramètres’intégration.**
+    1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
     
     1. Sélectionnez Windows 10 comme système d’exploitation.
 
@@ -102,14 +102,14 @@ Pour plus d’informations, [voir Configure Detection Methods in System Center 2
 
 ### <a name="configure-sample-collection-settings"></a>Configurer des paramètres de collection d’exemples
 
-Pour chaque appareil, vous pouvez définir une valeur de configuration pour déterminer si des échantillons peuvent être collectés à partir de l’appareil lorsqu’une demande est faite via Centre de sécurité Microsoft Defender pour soumettre un fichier pour analyse approfondie.
+Pour chaque appareil, vous pouvez définir une valeur de configuration pour déterminer si des échantillons peuvent être collectés à partir de l’appareil lorsqu’une demande est faite via Microsoft 365 Defender pour soumettre un fichier pour analyse approfondie.
 
 >[!NOTE]
->Ces paramètres de configuration sont généralement effectués via Configuration Manager. 
+>Ces paramètres de configuration sont généralement effectués via Configuration Manager.
 
 Vous pouvez définir une règle de conformité pour l’élément de configuration dans Configuration Manager afin de modifier le paramètre de partage d’exemples sur un appareil.
 
-Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés pour s’assurer qu’ils sont conformes.
+Cette règle doit  être un élément de configuration de règle de conformité de correction qui définit la valeur d’une clé de Registre sur les appareils ciblés afin de s’assurer qu’ils sont conformes.
 
 La configuration est définie par le biais de l’entrée de clé de Registre suivante :
 
@@ -119,7 +119,7 @@ Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-Où :<br>
+Où :<br>
 Le type de clé est un D-WORD. <br>
 Les valeurs possibles sont les suivantes :
 - 0 : n’autorise pas le partage d’exemples à partir de cet appareil
@@ -179,9 +179,9 @@ Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fic
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Appareils de déboardage System Center 2012 R2 Configuration Manager
 
-1. Obtenez le package deboarding à partir [Centre de sécurité Microsoft Defender](https://securitycenter.windows.com/):
+1. Obtenez le package deboarding à partir [Microsoft 365 Defender portail :](https://security.microsoft.com/)
 
-    1. Dans le volet de navigation, sélectionnez **Paramètres**  >   **de l’appareil.**
+    1. Dans le volet de navigation, sélectionnez **le Paramètres** de gestion des appareils  >  **endpoints.**  >    >   
 
     1. Sélectionnez Windows 10 comme système d’exploitation.
 
@@ -203,9 +203,9 @@ Si vous utilisez Microsoft Endpoint Manager branche actuelle, voir Créer un fic
 
 Si vous utilisez la Microsoft Endpoint Manager actuelle, utilisez le tableau de bord Defender for Endpoint intégré dans la console Configuration Manager. Pour plus d’informations, [voir Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Si vous utilisez System Center 2012 R2 Configuration Manager, la surveillance se compose de deux parties :
+Si vous utilisez System Center Configuration Manager 2012 R2, la surveillance se compose de deux parties :
 
-1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou qu’il s’est correctement exécuté) sur les appareils de votre réseau.
+1. Confirmation que le package de configuration a été correctement déployé et qu’il est en cours d’exécution (ou s’est exécuté correctement) sur les appareils de votre réseau.
 
 2. Vérification de la conformité des appareils avec le service Defender for Endpoint (cela garantit que l’appareil peut terminer le processus d’intégration et continuer à signaler des données au service).
 

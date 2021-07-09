@@ -1,7 +1,7 @@
 ---
-title: File d’attente des alertes dans Centre de sécurité Microsoft Defender
+title: File d’attente des alertes dans Microsoft 365 Defender
 ms.reviewer: ''
-description: Afficher et gérer les alertes sur le Centre de sécurité Microsoft Defender
+description: Afficher et gérer les alertes surface dans Microsoft 365 Defender
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,21 +18,21 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/03/2018
 ms.technology: mde
-ms.openlocfilehash: d40fc887f26dfe62e05f7ee6ac7bbbb8ac45a402
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ed65c836e74d5394d3b291ca3ebb5e781e37afa8
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067401"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339561"
 ---
-# <a name="alerts-queue-in-microsoft-defender-security-center"></a>File d’attente des alertes dans Centre de sécurité Microsoft Defender
+# <a name="alerts-queue-in-microsoft-365-defender"></a>File d’attente des alertes dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Découvrez comment afficher et gérer la file d’attente afin de pouvoir enquêter efficacement sur les menaces visibles sur des entités telles que des appareils, des fichiers ou des comptes d’utilisateur.
 

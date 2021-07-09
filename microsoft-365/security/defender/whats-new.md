@@ -1,6 +1,6 @@
 ---
 title: Nouveautés de Microsoft 365 Defender
-description: Répertorie les nouvelles fonctionnalités dans Microsoft 365 Defender
+description: Répertorie les nouvelles fonctionnalités de Microsoft 365 Defender
 keywords: nouveautés de Microsoft 365 Defender, ga, généralement disponibles, fonctionnalités, disponibles, nouvelles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 78783ab98c50252115c28008680197256bfd7aa5
-ms.sourcegitcommit: 8b79d276f71f22bcaeb150e78e35101cb1ae0375
+ms.openlocfilehash: af5efb669b1f73b4008ac2c3fae251a4d08511dd
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114736"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53340983"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Nouveautés de Microsoft 365 Defender
 
@@ -38,8 +38,10 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 ```http
 /api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
-## <a name="june-2021"></a>Juin 2021
-- Balises de menace dans [Microsoft 365 Defender rapport d’analyse des menaces](threat-analytics.md) <br> Les balises de menace vous aident à vous concentrer sur des catégories de menaces spécifiques et à examiner les rapports les plus pertinents. 
+
+## <a name="july-2021"></a>Juillet 2021
+- [catalogue Professional services de transport](https://sip.security.microsoft.com/interoperability/professional_services)<br>Améliorer les fonctionnalités de détection, d’examen et d’intelligence contre les menaces de la plateforme avec les connexions partenaires pris en charge.
+    
 
 ## <a name="may-2021"></a>Mai 2021
 
@@ -53,13 +55,13 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 - [Microsoft 365 Defender d’analyse des menaces](threat-analytics.md)<br>
  L’analyse des menaces vous permet de répondre et de minimiser l’impact des attaques actives. Vous pouvez également en savoir plus sur les tentatives d’attaques bloquées par Microsoft 365 Defender solutions et prendre des mesures préventives qui atténuent les risques d’exposition supplémentaire et augmentent la résilience. Dans le cadre de l’expérience de sécurité unifiée, l’analyse des menaces est désormais disponible pour Microsoft Defender pour Endpoint et Microsoft Defender pour les titulaires Office licence E5.
 
-## <a name="march-2021"></a>Mars 2021
+## <a name="march-2021"></a>9 mars 2021
 - [Table CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Trouvez des informations sur les événements dans différents services et applications cloud couverts par Microsoft Cloud App Security. Ce tableau inclut également des informations précédemment disponibles dans `AppFileEvents` .
 ## <a name="february-2021"></a>Février 2021
-- (Aperçu) Le centre [de sécurité Microsoft 365 https://security.microsoft.com) amélioré (est](https://security.microsoft.com) désormais disponible en prévisualisation publique). Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
+- (Aperçu) Le centre [de sécurité Microsoft 365 https://security.microsoft.com) amélioré (](https://security.microsoft.com) est désormais disponible en prévisualisation publique. Cette nouvelle expérience place Defender pour Point de terminaison et Defender pour Office 365 au centre. [Découvrez les modifications](./overview-security-center.md).
 
 ## <a name="september-2020"></a>Septembre 2020
-- [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancé couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
+- [Table IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Rechercher les événements impliquant un contrôleur de domaine local exécutant Active Directory (AD). Ce [tableau de schéma de](advanced-hunting-overview.md) recherche avancée couvre une plage d’événements liés à l’identité et d’événements système sur le contrôleur de domaine.
 - [Fonction AssignedIPAddresses()](advanced-hunting-assignedipaddresses-function.md) <br> Utilisez cette fonction dans vos requêtes de recherche avancées pour obtenir rapidement les dernières adresses IP attribuées à un appareil ou les adresses IP les plus récentes à partir d’une heure spécifique.
 
 ## <a name="july-2020"></a>Juillet 2020
@@ -68,9 +70,9 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 - [Accédez à la recherche](advanced-hunting-go-hunt.md)<br> Faites rapidement pivoter de l’investigation d’un incident à l’inspection d’un événement spécifique, d’un utilisateur, d’un appareil ou d’autres types d’entités sur le chasse avancée.
 
 ## <a name="june-2020"></a>Juin 2020
-- Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc., directement dans le tableau de bord.
+- Flux Twitter <br> Obtenez les dernières recherches sur la sécurité, l’intelligence des menaces, les actualités sur les produits, etc. directement dans le tableau de bord.
 - [Table de schéma EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporez des informations sur les actions de post-remise prises sur les messages électroniques dans vos requêtes de recherche avancées.
-- [Inspecter les enregistrements dans le recherche avancée](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
+- [Inspecter les enregistrements dans le hunting avancé](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Examinez rapidement les enregistrements dans les résultats de votre requête avec le nouveau panneau d’informations.
 
 ## <a name="may-2020"></a>Mai 2020
 - [Détections personnalisées](custom-detections-overview.md) <br> Utilisez des requêtes de repérage avancé pour créer des règles de détection personnalisées qui surveillent automatiquement les événements de sécurité et les états système et y répondent.
@@ -81,6 +83,6 @@ Flux RSS : recevez une notification lorsque cette page est mise à jour en copia
 - [Améliorations avancées du chasse](advanced-hunting-overview.md) <br> Recherchez de manière proactive les menaces dans l’espace de travail moderne avec kusto query Language et un schéma optimisé pour la sécurité.
 
 ## <a name="march-2019"></a>Mars 2019
-- Repérage avancé <br> Page d’accueil de différentes fonctionnalités de recherche qui vous permet de rechercher de manière proactive les menaces qui affectent le courrier électronique, les données, les appareils et les identités.
+- Recherche avancée de menaces <br> Page d’accueil de différentes fonctionnalités de recherche qui vous permet de rechercher de manière proactive les menaces qui affectent le courrier électronique, les données, les appareils et les identités.
 - [Niveau de sécurité Microsoft](microsoft-secure-score.md) <br> Mesure de la posture de sécurité d’une organisation, avec un nombre plus élevé indiquant d’autres actions d’amélioration prises. En suivant les recommandations du Score de sécurité, vous pouvez protéger votre organisation contre les menaces. 
 - [Rapports](overview-security-center.md) <br>  Propose une série de cartes couvrant différents domaines que les analystes et les administrateurs de sécurité s’en sentent dans le cadre de leurs opérations quotidiennes.

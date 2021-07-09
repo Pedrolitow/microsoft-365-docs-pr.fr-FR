@@ -18,16 +18,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Dans cet article, vous allez découvrir les meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés.
-ms.openlocfilehash: 7198e2d343f73299bb62ea73863cecd359d90ba2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2c89ca319ba79d6f0463cc6d244c8d91928d6e42
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538230"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53327022"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Meilleures pratiques relatives au partage de fichiers et de dossiers avec des utilisateurs non authentifiés
 
-Le partage non authentifié (liens *Tout le monde*) est pratique et utile dans différents scénarios. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les personnes peuvent ouvrir le lien sans authentification et sont libres de le transmettre à d’autres personnes.
+Le partage non authentifié (liens *Tout le monde*) est pratique et utile dans différents scénarios. Les liens *Tout le monde* sont la méthode la plus simple pour partager : les personnes peuvent ouvrir le lien sans authentification et sont libres de le transmettre à d’autres personnes.
 
 Généralement, tout le contenu d’une organisation n’est pas approprié pour un partage sans identification. Cet article décrit les options possibles pour vous aider à créer un environnement dans lequel vos utilisateurs peuvent partager des fichiers et des dossiers de manière non authentifiée, mais où des éléments de protection sont mis en place pour protéger le contenu de votre organisation.
 
@@ -43,7 +43,7 @@ Une fois qu' un lien *Tout le monde* arrive à expiration, il ne peut plus être
 Pour définir une date d’expiration pour les liens Tout le monde dans l’organisation
 
 1. Ouvrez le [Centre d’administration SharePoint](https://admin.microsoft.com/sharepoint).
-2. Dans la barre de navigation de gauche, cliquez sur **Partage**.
+2. Dans le volet de navigation de gauche, développez **Stratégies**, puis cliquez sur **Partage**.
 3. Sous **Sélectionnez les options d’expiration et d’autorisations pour tous les liens**, sélectionnez la case à cocher **Ces liens doivent expirer dans ce nombre de jours**.</br>
    ![Capture d’écran des paramètres d’expiration du lien Tout le monde au niveau de l’organisation dans SharePoint](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Tapez un nombre de jours dans la zone, puis cliquez sur **Enregistrer**.
@@ -107,7 +107,7 @@ Pour définir le lien de partage de fichier et de dossier par défaut pour un si
 Vous pouvez utiliser la [protection contre la perte de données (DLP)](../compliance/dlp-learn-about-dlp.md) pour empêcher le partage non authentifié de contenu sensible. La protection contre la perte de données peut prendre des mesures basées sur l’étiquette de confidentialité, l’étiquette de rétention ou les informations sensibles d’un fichier proprement dit.
 
 Création d’une stratégie DLP
-1. Dans le Centre de conformité Microsoft 365, accédez à la [page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
+1. Dans le Centre de conformité Microsoft 365, accédez à la [page de protection contre la perte de données](https://compliance.microsoft.com/datalossprevention).
 2. Cliquez sur la stratégie **Créer**.
 3. Sélectionnez **Personnaliser**, puis cliquez sur **Suivant**.
 4. Tapez un nom pour la stratégie, puis cliquez sur **Suivant**.
@@ -119,8 +119,8 @@ Création d’une stratégie DLP
 
    ![Capture d’écran des options de conditions, types d’informations sensibles, étiquettes de confidentialité et étiquettes de rétention.](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. Sous **Actions** cliquez sur **Ajouter une action**, puis sélectionnez **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365**.
-11. Activez la case à cocher **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365** , puis sélectionnez l’option **Uniquement les personnes autorisées à accéder au contenu via les options « Tout le monde avec lien »**.
+10. Sous **Actions** cliquez sur **Ajouter une action**, puis sélectionnez **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365**.
+11. Activez la case à cocher **Restreindre l’accès ou chiffrer le contenu dans des emplacements Microsoft 365** , puis sélectionnez l’option **Uniquement les personnes autorisées à accéder au contenu via les options « Tout le monde avec lien »**.
 
       ![Capture d’écran des options d’action de règle de protection contre la perte de données](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
@@ -130,18 +130,18 @@ Création d’une stratégie DLP
 
 ## <a name="protect-against-malicious-files"></a>Se protéger contre les fichiers malveillants
 
-Lorsque vous autorisez des utilisateurs anonymes à télécharger des fichiers, vous accroissez le risque de charger un fichier malveillant. Dans Microsoft 365, vous pouvez utiliser la fonctionnalité *Pièces jointes fiables* de Defender pour Office 365 pour analyser automatiquement les fichiers chargés et mettre en quarantaine les fichiers jugés dangereux.
+Lorsque vous autorisez des utilisateurs anonymes à télécharger des fichiers, vous accroissez le risque de charger un fichier malveillant. Dans Microsoft 365, vous pouvez utiliser la fonctionnalité *Pièces jointes fiables* de Defender pour Office 365 pour analyser automatiquement les fichiers chargés et mettre en quarantaine les fichiers jugés dangereux.
 
 Activer les pièces jointes fiables
 1. Ouvrez la [page des Pièces jointes fiables ATP](https://protection.office.com/safeattachmentv2) dans le Centre d’administration de la sécurité et de la conformité.
 2. Cliquez sur **Paramètres globaux**.
-3. Activer ATP pour SharePoint, OneDrive et Microsoft Teams.
+3. Activer ATP pour SharePoint, OneDrive et Microsoft Teams.
 
    ![Capture d’écran du paramètre pièces jointes fiables dans le Centre de sécurité et conformité](../media/safe-attachments-setting.png)
 
 4. Vous pouvez également activer les Documents sécurisés, puis cliquer sur **Enregistrer**
 
-Pour obtenir plus d’informations, voir [ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) et [Activer ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) .
+Pour obtenir plus d’informations, voir [ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) et [Activer ATP pour SharePoint, OneDrive et Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) .
 
 ## <a name="add-copyright-information-to-your-files"></a>Ajouter des informations de copyright à vos fichiers
 

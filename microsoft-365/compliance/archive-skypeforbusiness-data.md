@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur dans le Centre de conformité Microsoft 365 pour importer et archiver des données de Skype Entreprise à Microsoft 365.
-ms.openlocfilehash: 93128af0c7f305cb2bef55efd5520de77555a222
-ms.sourcegitcommit: fa9efab24a84f71fec7d001f2ad8949125fa8eee
+ms.openlocfilehash: 4a66ee19530860bd482168297a8c935153442fee
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53054834"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339453"
 ---
-# <a name="set-up-a-connector-to-archive-skype-for-business-data-preview"></a>Configurer un connecteur pour archiver les Skype Entreprise données (aperçu)
+# <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>Configurer un connecteur pour archiver les Skype Entreprise données
 
 Utilisez un connecteur Veritas dans le Centre de conformité Microsoft 365 pour importer et archiver des données à partir de la plateforme Skype Entreprise vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. Veritas fournit un connecteur [Skype Entreprise](https://www.veritas.com/en/au/insights/merge1/skype-for-business) qui est configuré pour capturer des éléments à partir de la source de données tierce (régulièrement) et importer ces éléments dans Microsoft 365. Le connecteur convertit le contenu tel que les messages entre les utilisateurs, les conversations permanentes et les messages de conférence de Skype Entreprise au format de message électronique, puis importe ces éléments dans la boîte aux lettres de l’utilisateur dans Microsoft 365.
 
@@ -35,7 +35,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 2. Toutes les 24 heures, les Skype Entreprise sont copiés sur le site Veritas Merge1. Le connecteur convertit également les Skype Entreprise au format de message électronique.
 
-3. Le connecteur Skype Entreprise que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère le contenu Skype Entreprise vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
+3. Le connecteur Skype Entreprise que vous créez dans le Centre de conformité Microsoft 365, se connecte au site Veritas Merge1 tous les jours et transfère le contenu Skype Entreprise à un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
 4. Le connecteur importe les éléments convertis dans les boîtes aux lettres d’utilisateurs spécifiques à l’aide de la valeur de la propriété *Email* du mappage automatique des utilisateurs, comme décrit à l’étape [3.](#step-3-map-users-and-complete-the-connector-setup) Un sous-dossier du dossier Boîte de réception nommé **Skype Entreprise** est créé dans les boîtes aux lettres utilisateur et les éléments sont importés dans ce dossier. Pour ce faire, le connecteur utilise la valeur de la *propriété Email.* Chaque Skype Entreprise contient cette propriété, qui est remplie avec l’adresse e-mail de chaque participant de l’élément.
 
@@ -79,7 +79,7 @@ Après avoir créé le connecteur Skype Entreprise, vous pouvez afficher l’ét
 
 1. Go to <https://compliance.microsoft.com/> and click **Data connectors** in the left nav.
 
-2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le **connecteur Skype Entreprise** pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
+2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez **le connecteur Skype Entreprise** pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 

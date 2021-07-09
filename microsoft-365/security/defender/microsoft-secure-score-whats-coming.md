@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8babc8c5e7464637e29ddacef50c92f252033d26
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 910eb16ad33555ca61875a346b50cea7e63b2220
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314367"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53338552"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Qu’arrive-t-il à Microsoft Secure Score ?
 
@@ -44,6 +44,33 @@ Nous apporterons prochainement des modifications pour faire de [Microsoft Secure
 - Empêcher les utilisateurs anonymes de commencer Teams réunions.
 - Exiger la mise en place de halls d’Teams réunions.
 - Configurez les utilisateurs autorisés à être présents dans Teams réunions.
+
+#### <a name="add-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Ajouter une action d’amélioration liée à Microsoft Defender pour le point de terminaison
+- Corriger la collecte de données du capteur Microsoft Defender pour les points de terminaison pour macOS
+- Résoudre les problèmes de communications de Microsoft Defender pour les points de terminaison pour macOS
+- Définir la longueur minimale du mot de passe sur 15 caractères ou plus dans macOS
+- Définir « Appliquer l’historique des mots de passe » sur « 24 mots de passe ou plus » dans macOS
+- Définir « Âge maximal du mot de passe » sur « 90 jours ou moins, mais pas 0 » dans macOS
+- Définir le seuil de verrouillage du compte sur 5 ou moins dans macOS
+- Activer le pare-feu sur macOS
+- Activer Gatekeeper
+- Activer la Protection de l’intégrité du système (SIP)
+- Activer le chiffrement de disque FileVault
+- Définir l’écran pour le verrouillage lorsque le sériaver démarre dans macOS
+- S’assurer que le écran de veille est prêt à démarrer dans 20 minutes ou moins dans macOS
+- Dossiers d’accueil sécurisés
+- Activer la Antivirus Microsoft Defender protection en temps réel pour macOS
+- Activer Antivirus Microsoft Defender protection PUA en mode bloc pour macOS
+- Activer Antivirus Microsoft Defender protection cloud pour macOS
+- Mettre à jour Antivirus Microsoft Defender définitions de données pour macOS
+- Corriger la collecte de données du capteur Microsoft Defender pour les points de terminaison pour Linux
+- Résoudre les problèmes de communications de Microsoft Defender pour les points de terminaison pour Linux
+- Comptes d’accès non restreint
+- Activer Antivirus Microsoft Defender protection en temps réel pour Linux
+- Activer Antivirus Microsoft Defender protection PUA en mode bloc pour Linux
+- Activer Antivirus Microsoft Defender protection cloud pour Linux
+- Mettre à jour Antivirus Microsoft Defender définitions d’utilisateurs pour Linux
+
 
 
 ## <a name="related-resources"></a>Ressources connexes

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: edc9a1e40275631752ca1252a16071f4b07f07f9
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 7fc5e0a37f57928b2ee1318d01e2a10b95a36108
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286332"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341663"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -68,7 +68,7 @@ Utilisez cette référence pour créer des requêtes qui renvoient des informati
 |`OSPlatform`|string|Plateforme du système d’exploitation client s’exécutant sur la machine. Cela indique des systèmes d’exploitation spécifiques, y compris des variantes au sein d’une même famille, telles que Windows 10 et Windows 7.|
 |`DeviceTrustType`|string|Indique le type d’confiance de l’appareil qui s’est connecté. Pour les scénarios d’appareil géré uniquement. Les valeurs possibles sont Workplace, AzureAd et ServerAd.|
 |`IsManaged`|int|Indique si l’appareil à l’origine de la connectez-vous est un appareil géré (1) ou non un appareil géré (0)|
-|`IsCompliant`|int|Indique si l’appareil à l’origine de la signature est conforme (1) ou non (0)|
+|`IsCompliant`|int|Indique si l’appareil à l’origine de la signature est conforme (1) ou non conforme (0)|
 |`AuthenticationProcessingDetails`|string|Détails sur le processeur d’authentification|
 |`AuthenticationRequirement`|string|Type d’authentification requis pour la signature. Valeurs possibles : multiFactorAuthentication (l’authentification multifacteur était requise) et singleFactorAuthentication (aucune authentification multifacteur n’était requise).|
 |`TokenIssuerType`|int|Indique si l’émetteur de jeton est Azure Active Directory (0) ou les services de fédération Active Directory (1)|
@@ -82,14 +82,13 @@ Utilisez cette référence pour créer des requêtes qui renvoient des informati
 |`ConditionalAccessStatus`|int|État des stratégies d’accès conditionnel appliquées à la signature. Les valeurs possibles sont 0 (stratégies appliquées), 1 (échec de tentative d’application des stratégies) ou 2 (stratégies non appliquées).|
 |`IPAddress`|string|Adresse IP attribuée au point de terminaison et utilisée lors des communications réseau associées|
 |`Country`|string|Code à deux lettres indiquant le pays où l’adresse IP du client est géolocalisé|
-|`State`|string|État où la connectez-vous s’est produite, si disponible|
+|`State`|string|État où la se connecte s’est produite, si disponible|
 |`City`|string|Ville où se trouve l’utilisateur du compte|
 |`Latitude`|string|Coordonnées nord à sud de l’emplacement de la signature|
 |`Longitude`|string|Coordonnées est à ouest de l’emplacement de la signature|
 |`NetworkLocationDetails`|string|Détails de l’emplacement réseau du processeur d’authentification de l’événement de authentification|
 |`RequestId`|string|Identificateur unique de la demande|
 |`ReportId`|string|Identificateur unique de l’événement|
-|
 
 ## <a name="related-articles"></a>Articles connexes
 

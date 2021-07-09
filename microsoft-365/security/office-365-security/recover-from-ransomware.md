@@ -15,12 +15,12 @@ ms.collection:
 description: Microsoft 365 administrateurs peuvent apprendre à récupérer d’une attaque par ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 473591a02b78043153d505dda6dd7ef5ac6e3961
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 6c3664cb2a60a7173e345de4abaddefefea6e2b1
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789050"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341435"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Récupérer d’une attaque par ransomware dans Microsoft 365
 
@@ -49,13 +49,13 @@ Si vous avez des sauvegardes hors connexion,  vous pouvez probablement restaurer
 
 Si vous n’avez pas de sauvegardes ou si vos sauvegardes ont également été affectées par le ransomware, vous pouvez ignorer cette étape.
 
-## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Étape 2 : Désactiver la synchronisation Exchange ActiveSync et OneDrive de données
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>Étape 2 : Désactiver les Exchange ActiveSync et Synchronisation OneDrive
 
 Le point clé ici est d’arrêter la propagation du chiffrement des données par le ransomware.
 
 Si vous pensez que le courrier électronique est une cible du chiffrement de ransomware, désactivez temporairement l’accès des utilisateurs aux boîtes aux lettres. Exchange ActiveSync synchronise les données entre les appareils et Exchange Online boîtes aux lettres.
 
-Pour désactiver la Exchange ActiveSync d’une boîte aux lettres, voir Comment désactiver la Exchange ActiveSync pour les utilisateurs [dans Exchange Online](https://support.microsoft.com/help/2795303).
+Pour désactiver la Exchange ActiveSync d’une boîte aux lettres, voir Comment désactiver les Exchange ActiveSync pour les utilisateurs [dans Exchange Online](https://support.microsoft.com/help/2795303).
 
 Pour désactiver d’autres types d’accès à une boîte aux lettres, voir :
 
@@ -63,7 +63,7 @@ Pour désactiver d’autres types d’accès à une boîte aux lettres, voir :
 
 - [Activer ou désactiver l’accès POP3 ou IMAP4 pour un utilisateur](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-L’interruption OneDrive synchronisation permet de protéger vos données cloud contre la mise à jour par des appareils potentiellement infectés. Pour plus d’informations, [voir Comment suspendre et reprendre la synchronisation dans OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
+L’interruption Synchronisation OneDrive permet de protéger vos données cloud contre la mise à jour par des appareils potentiellement infectés. Pour plus d’informations, [voir Comment suspendre](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)et reprendre la synchronisation dans OneDrive .
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Étape 3 : Supprimer les programmes malveillants des appareils concernés
 
@@ -73,13 +73,13 @@ N’oubliez pas d’analyser les appareils qui synchronisent des données ou les
 
 Vous pouvez utiliser [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) ou (pour les clients [plus anciens) Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201).
 
-Une alternative qui vous aidera également à supprimer un ransomware ou un programme malveillant est l’outil de suppression de logiciels malveillants [(MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
+Une alternative qui vous aidera également à supprimer des ransomware ou des programmes malveillants est l’outil de suppression de logiciels malveillants [(MSRT).](https://www.microsoft.com/download/details.aspx?id=9905)
 
-Si ces options ne fonctionnent pas, vous pouvez essayer Windows Defender [hors](https://support.microsoft.com/help/17466) connexion ou résoudre les problèmes liés à la détection et à la suppression [de programmes malveillants.](https://support.microsoft.com/help/4466982)
+Si ces options ne fonctionnent pas, vous pouvez essayer Windows Defender [hors](https://support.microsoft.com/help/17466) connexion ou résoudre les problèmes de détection et de suppression de programmes [malveillants.](https://support.microsoft.com/help/4466982)
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Étape 4 : Récupérer des fichiers sur un ordinateur ou un appareil nettoyé
 
-Une fois que vous avez terminé l’étape précédente pour supprimer la charge utile de ransomware de [](https://support.microsoft.com/help/17128) votre environnement (ce qui empêche le ransomware de chiffrer ou de supprimer vos fichiers), vous pouvez utiliser l’historique des fichiers dans Windows 10 et Windows 8.1 ou protection système dans Windows 7 pour essayer de récupérer vos fichiers et dossiers locaux.
+Une fois que vous avez terminé l’étape précédente pour supprimer la charge utile du ransomware de [](https://support.microsoft.com/help/17128) votre environnement (ce qui empêchera le ransomware de chiffrer ou de supprimer vos fichiers), vous pouvez utiliser l’historique des fichiers dans Windows 10 et Windows 8.1 ou protection système dans Windows 7 pour tenter de récupérer vos fichiers et dossiers locaux.
 
 **Remarques** :
 
@@ -93,29 +93,29 @@ La restauration de fichiers OneDrive Entreprise vous permet de restaurer l’int
 
 ## <a name="step-6-recover-deleted-email"></a>Étape 6 : Récupérer les messages supprimés
 
-Dans les rares cas où le ransomware a supprimé tous vos messages électroniques, vous pouvez probablement récupérer les éléments supprimés. Pour plus d’informations, voir :
+Dans les rares cas où le ransomware a supprimé tous vos messages électroniques, vous pouvez probablement récupérer les éléments supprimés. Pour plus d'informations, voir :
 
 - [Récupérer des messages supprimés dans la boîte aux lettres d’un utilisateur](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
 - [Récupérer des éléments supprimés dans Outlook pour Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Étape 7 : Ré-activer Exchange ActiveSync et OneDrive synchronisation
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>Étape 7 : Ré-activer Exchange ActiveSync et Synchronisation OneDrive
 
-Après avoir nettoyé vos ordinateurs et appareils et récupéré vos données, vous pouvez réactiver la synchronisation Exchange ActiveSync et OneDrive que vous avez précédemment désactivée à [l’étape 2.](#step-2-disable-exchange-activesync-and-onedrive-sync)
+Après avoir nettoyé vos ordinateurs et appareils et récupéré vos données, vous pouvez réactiver Exchange ActiveSync et Synchronisation OneDrive que vous avez précédemment désactivés à l’étape [2.](#step-2-disable-exchange-activesync-and-onedrive-sync)
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Étape 8 (facultative) : bloquer la synchronisation OneDrive pour des extensions de fichier spécifiques
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>Étape 8 (facultative) : bloquer les Synchronisation OneDrive pour des extensions de fichier spécifiques
 
 Une fois que vous avez récupéré, vous pouvez empêcher les clients OneDrive Entreprise de synchroniser les types de fichiers qui ont été affectés par ce ransomware. Pour plus d’informations, [voir Set-SPOTenantSyncClientRestriction](/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## <a name="report-the-attack"></a>Signaler l’attaque
 
-### <a name="contact-law-enforcement"></a>Application de la loi des contacts
+### <a name="contact-law-enforcement"></a>Contacter l’application de la loi
 
-Vous devez contacter vos autorités judiciaires locales ou fédérales. Par exemple, si vous êtes aux États-Unis, vous pouvez contacter le [bureau local DE LASV](https://www.fbi.gov/contact-us/field), [IC3](http://www.ic3.gov/complaint/default.aspx) ou [le service secret](http://www.secretservice.gov/).
+Vous devez contacter vos autorités judiciaires locales ou fédérales. Par exemple, si vous êtes aux États-Unis, vous pouvez contacter le [bureau local DUTN](https://www.fbi.gov/contact-us/field), [IC3](http://www.ic3.gov/complaint/default.aspx) ou [le service secret](http://www.secretservice.gov/).
 
 ### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>Envoyer un rapport sur le site web de signalement des fraudes de votre pays
 
-Les sites web de signalement des fraudes fournissent des informations sur la prévention et la prévention des fraudes. Ils fournissent également des mécanismes permettant de signaler si vous avez été victime d’une fraude.
+Les sites web de signalement des fraudes fournissent des informations sur la prévention et l’évitement des fraudes. Ils fournissent également des mécanismes permettant de signaler si vous avez été victime d’une fraude.
 
 - Australie : [SCAMwatch](http://www.scamwatch.gov.au/)
 
@@ -141,30 +141,30 @@ Si votre pays n’est pas répertorié, demandez à vos autorités judiciaires l
 
 Vous pouvez signaler des messages de hameçonnage qui contiennent un ransomware à l’aide de l’une des méthodes. Pour plus d’informations, voir [Signaler des messages et des fichiers à Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="additional-ransomware-resources"></a>Ressources supplémentaires sur les ransomware
 
-- [Ransomware](/windows/security/threat-protection/intelligence/ransomware-malware)
+[Vue d’ensemble des ransomware gérés par l’humain](/security/compass/human-operated-ransomware)
 
-- [Réponse ransomware : payer ou ne pas payer ?](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+[Se protéger rapidement contre les ransomware et les attaques](/security/compass/protect-against-ransomware)
 
-- [NorskQue répond aux attaques par ransomware avec transparence](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+[Dernier rapport Renseignement de sécurité Microsoft PDF)](https://www.microsoft.com/securityinsights/) (recherchez « ransomware »)
+
+**Ransomware : rapport sur les menaces** courantes et les menaces dans le nœud **d’analyse** des menaces du Microsoft 365 Defender web
+
+Microsoft 365 protection :
 
 - [Détection de ransomware et récupération de vos fichiers dans OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
-
-- [Renseignement de sécurité Microsoft Rapport](https://www.microsoft.com/securityinsights/)
-
 - [Activer ou désactiver des macros dans Office fichiers](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
-
 - [Paramètres recommandés pour EOP et Microsoft Defender pour Office 365 sécurité](recommended-settings-for-eop-and-office365.md)
 
-- [Une mise à niveau fiable : la sécurité de nouvelle génération sur Windows 10 s’avère résiliente contre les attaques de ransomware en 2017](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+Billets de blog de l’équipe de sécurité Microsoft :
 
-- [No mas, Samas: What’s in this ransomware’s modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
+- [Devenir résilient en comprenant les risques de cybersécurité : partie 4 : navigation avec les menaces actuelles (mai 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
-- [Programmes malveillants verrouillés, afin de les éviter](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+  Consultez la section **Ransomware.**
 
-- [MSRT juillet 2016 : ransomware Cerber](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
+- [Attaques par ransomware gérées par l’homme : un sinistre qui peut être évité (mars 2020)](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+- [Réponse de ransomware : payer ou ne pas payer ? (Décembre 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [NorskQue répond aux attaques par ransomware avec transparence (décembre 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [Une mise à niveau fiable : la sécurité de nouvelle génération sur Windows 10 s’avère résiliente contre les attaques de ransomware en 2017 (janvier 2018)](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
-- [Les trois têtes du ransomware Cerber de type Cerber](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
-
-- [Ransomware troldesh influencé par (le) code Da Postal](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

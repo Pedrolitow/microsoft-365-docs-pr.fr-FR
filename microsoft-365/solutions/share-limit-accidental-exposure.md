@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: Découvrez comment limiter l’exposition accidentelle des informations lorsque vous partagez des fichiers avec des personnes extérieures à votre organisation.
-ms.openlocfilehash: aed567e503fb2c615b183c6769c69248c149742a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1dffa40a0c21f5f611492d5a098a98f8aaa726a5
+ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539046"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53326986"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limiter l’exposition accidentelle de fichiers lors de partages avec des personnes extérieures à votre organisation
 
-Lorsque vous partagez des fichiers et des dossiers avec des personnes extérieures à votre organisation, plusieurs options permettent de réduire les risques de partager accidentellement des informations sensibles. Vous pouvez choisir l’une des options de cet article pour répondre au mieux aux besoins de votre organisation.
+Lorsque vous partagez des fichiers et des dossiers avec des personnes extérieures à votre organisation, il existe différentes options pour réduire les risques de partage accidentel d’informations sensibles. Vous pouvez choisir l’une des options de cet article pour répondre au mieux aux besoins de votre organisation.
 
 ## <a name="use-best-practices-for-anyone-links"></a>Utiliser les pratiques recommandées pour les liens Tout le monde
 
@@ -64,7 +64,7 @@ Pour désactiver les liens *Tout le monde* d’un site
 
 Vous pouvez utiliser des listes d’autorisation ou de refus de domaine pour spécifier les domaines que vos utilisateurs peuvent utiliser lors d’un partage avec des personnes extérieures à votre organisation.
 
-Avec une liste d’autorisation, vous pouvez spécifier une liste de domaines sur lesquels les utilisateurs de votre organisation peuvent partager avec des personnes extérieures à votre organisation. Le partage sur d’autres domaines est bloqué. Si votre organisation collabore avec des personnes uniquement à partir d’une liste de domaines spécifiques, vous pouvez utiliser cette fonctionnalité pour empêcher le partage avec d’autres domaines.
+Avec une liste d’autorisation, vous pouvez spécifier une liste de domaines sur lesquels les utilisateurs de votre organisation peuvent partager avec des personnes extérieures à votre organisation. Le partage avec d’autres domaines est bloqué. Si votre organisation collabore avec des personnes uniquement à partir d’une liste de domaines spécifiques, vous pouvez utiliser cette fonctionnalité pour empêcher le partage avec d’autres domaines.
 
 Avec une liste d’exclusion, vous pouvez spécifier une liste de domaines à partir desquels les utilisateurs de votre organisation ne peuvent pas partager avec des personnes extérieures à votre organisation. Le partage avec ces domaines listés est bloqué. Cela peut s’avérer utile si vous avez des concurrents, par exemple, à qui vous souhaitez empêcher d’accéder à du contenu au sein de votre organisation.
 
@@ -96,7 +96,7 @@ Limiter le partage externe aux membres d’un groupe de sécurité
 
 4. Dans la zone **Ajouter un groupe de sécurité** , entrez un nom pour un groupe de sécurité. La boîte de dialogue du groupe de sécurité s’affiche.
 
-5. En regard du nom du groupe de sécurité, dans le menu déroulant **Peut partager avec**, sélectionnez l’une des options suivantes :
+5. En regard du nom du groupe de sécurité, dans le menu déroulant **Peut partager avec**, sélectionnez l’une des options suivantes :
 
     - **Invités authentifiés uniquement** (par défaut)
     - **Tout le monde**

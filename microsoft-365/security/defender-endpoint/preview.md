@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ed494cc29eb990430be590e62db5f0365ace494
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
+ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322424"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53339489"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -54,7 +54,7 @@ Lorsque vous travaillez avec des fonctionnalités en prévisualisation publique,
 - Sont entièrement pris en charge par Microsoft.
 - Peut être disponible uniquement dans les régions géographiques ou les environnements cloud sélectionnés. Par exemple, la fonctionnalité n’existe peut-être pas dans le cloud du gouvernement.
 - Les fonctionnalités individuelles en prévisualisation peuvent avoir davantage de restrictions d’utilisation et de prise en charge. Si tel est le cas, ces informations sont généralement notées dans la documentation des fonctionnalités.
-- Les versions d’aperçu sont fournies avec un niveau de prise en charge standard et il est recommandé pour les charges de travail de production. 
+- Les versions d’aperçu sont fournies avec un niveau de prise en charge standard et peuvent être utilisées pour les environnements de production. 
 
 
 

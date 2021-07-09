@@ -1,5 +1,5 @@
 ---
-title: Outils et méthodes d’intégration pour les appareils Windows 10.
+title: Méthodes et outils d’intégration pour Windows 10 appareils
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,19 +14,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Intégrer Windows 10 des appareils afin qu’ils peuvent envoyer des données de capteur aux solutions Microsoft 365 conformité
-ms.openlocfilehash: 7cbadc343c5cee1aa7704bcb9da8be2a152726ab
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 676fb3a7ffcae8d108fd9b7fabe61bb78b7e1744
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917850"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341699"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Outils et méthodes d’intégration pour les appareils Windows 10.
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
 
-Les appareils de votre organisation doivent être configurés pour que le service Microsoft 365 protection contre la perte de données du point de terminaison puisse obtenir des données de capteur à partir de ces derniers. Il existe différentes méthodes et outils de déploiement que vous pouvez utiliser pour configurer les appareils de votre organisation.
+Les appareils de votre organisation doivent être configurés pour que le service Microsoft 365 de protection contre la perte de données de point de terminaison puisse obtenir des données de capteur à partir de ces derniers. Il existe différentes méthodes et outils de déploiement que vous pouvez utiliser pour configurer les appareils de votre organisation.
 
 Les méthodes et outils de déploiement suivants sont pris en charge :
 
