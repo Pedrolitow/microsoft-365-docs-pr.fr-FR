@@ -1,5 +1,5 @@
 ---
-title: 'Effectuer des recherches dans le journal d’audit depuis le Centre de sécurité et conformité '
+title: Rechercher dans le journal d’audit dans le Centre de conformité Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 007881220c3bdf862e75464521733e64f0d6c5c0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: 46f223953df65b75c0ecfe0d2c9fe92514b797ff
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300135"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341651"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -48,11 +48,11 @@ Vous avez besoin de déterminer si un utilisateur a consulté un document spéci
 - Activité des utilisateurs et des administrateurs relative aux étiquettes de confidentialité pour les sites qui utilisent SharePoint Online ou Microsoft Teams
 - Activité des administrateurs dans les messages de réunion et MyAnalytics
 
-## <a name="requirements-to-search-the-audit-log"></a>Configuration requise pour effectuer une recherche dans le journal d’audit
+## <a name="before-you-search-the-audit-log"></a>Avant de rechercher dans le journal d’audit
 
 Avant de commencer à effectuer une recherche dans le journal d’audit, veillez à lire ce qui suit.
 
-- Nous activons par défaut la recherche dans le journal d’audit pour les organisations d’entreprise Microsoft 365 et Office 365. Cela inclut les organisations disposant d’abonnements E3/G3 ou E5/G5. Pour vérifier que vous avez activé la recherche dans le journal d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
+- Nous activons par défaut la recherche dans le journal d’audit pour les organisations d’entreprise Microsoft 365 et Office 365. Pour vérifier que vous avez activé la recherche dans le journal d’audit, vous pouvez exécuter la commande suivante dans Exchange Online PowerShell :
 
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
@@ -60,10 +60,10 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   La valeur `True` de la propriété *UnifiedAuditLogIn élémentsenabled* indique que vous avez activé la recherche dans le journal d’audit. Si vous souhaitez en savoir plus, veuillez consulter la rubrique [Activer ou désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Notez que les administrateurs généraux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l’organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
+- Vous devez avoir le rôle Journaux d’audit en affichage seul ou Journaux d’audit dans Exchange Online pour pouvoir effectuer des recherches dans le journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** dans le Centre d’administration Exchange. Les administrateurs globaux dans votre client Office 365 et Microsoft 365 sont automatiquement des membres du groupe de rôle Gestion de l'organisation dans Exchange Online. Pour permettre à un utilisateur d’effectuer des recherches dans le journal d’audit avec le niveau minimal de privilèges, vous pouvez créer un groupe de rôles personnalisé dans Exchange Online, ajouter le rôle Journaux d’audit en affichage seul ou Journaux d’audit, puis ajouter l’utilisateur en tant que membre du nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
-  > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page **Autorisations** dans le Centre de sécurité et conformité, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
+  > Si vous affectez le rôle Journaux d’audit en affichage seul ou Journaux d’audit à un utilisateur dans la page **Autorisations** dans le Centre de conformité Microsoft 365, celui-ci ne pourra pas effectuer de recherches dans le journal d’audit. Vous devez affecter les autorisations dans Exchange Online. En effet, la cmdlet sous-jacente utilisée pour les recherches dans le journal d’audit est une cmdlet Exchange Online.
 
 - Lorsqu’une activité auditée est effectuée par un utilisateur ou un administrateur, un enregistrement d’audit est généré et stocké dans le journal d’audit pour votre organisation. La durée pendant laquelle un enregistrement d'audit est conservé (et consultable dans le journal d'audit) dépend de votre abonnement Office 365 ou Microsoft 365 Entreprise, et en particulier du type de licence attribuée à des utilisateurs spécifiques.
 
@@ -75,7 +75,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   - Pour les utilisateurs auxquels toute autre licence Office 365 ou Microsoft 365 (non E5) est attribuée, les enregistrements d’audit sont conservés pendant 90 jours. Pour obtenir la liste des abonnements Office 365 et Microsoft 365 prenant en charge la journalisation d’audit unifiée, voir [la description de service du Centre de sécurité et conformité](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
     > [!NOTE]
-    > Même lorsque l’audit de boîtes aux lettres est activé par défaut, vous remarquerez peut-être que les événements d’audit de boîtes aux lettres de certains utilisateurs sont introuvables dans les recherches du journal d’audit dans le Centre de sécurité et de conformité ou via l’API Activité de gestion Office 365. Pour plus d’informations, consultez la rubrique [Plus d’informations sur la journalisation d’audit de boîtes aux lettres](enable-mailbox-auditing.md#more-information).
+    > Même lorsque l’audit de boîtes aux lettres est activé par défaut, vous remarquerez peut-être que les événements d’audit de boîtes aux lettres de certains utilisateurs sont introuvables dans les recherches du journal d’audit dans le Centre de conformité Microsoft 365 ou via l’API Activité de gestion Office 365. Pour plus d’informations, consultez la rubrique [Plus d’informations sur la journalisation d’audit de boîtes aux lettres](enable-mailbox-auditing.md#more-information).
 
 - Si vous souhaitez désactiver la recherche dans le journal d’audit pour votre organisation, vous pouvez exécuter la commande suivante dans une session PowerShell distante connectée à votre organisation Exchange Online :
 
@@ -91,7 +91,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
   Pour plus d’informations, consultez l’article [Désactiver la recherche dans le journal d’audit](turn-audit-log-search-on-or-off.md).
 
-- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer une recherche dans le journal d’audit est une cmdlet Exchange Online, à savoir **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette cmdlet pour effectuer une recherche dans le journal d’audit au lieu d’utiliser la page **Recherche dans le journal d’audit** du Centre de sécurité et conformité. Vous devez exécuter cette cmdlet dans PowerShell distant connecté à votre organisation Exchange Online. Pour plus d’informations, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
+- Comme indiqué précédemment, la cmdlet sous-jacente utilisée pour effectuer une recherche dans le journal d’audit est une cmdlet Exchange Online, à savoir **Search-UnifiedAuditLog**. Cela signifie que vous pouvez utiliser cette cmdlet pour effectuer une recherche dans le journal d’audit au lieu d’utiliser la page **Recherche dans le journal d’audit** du Centre de conformité Microsoft 365. Vous devez exécuter cette cmdlet dans PowerShell distant connecté à votre organisation Exchange Online. Pour plus d’informations, voir [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
   Pour plus d’informations sur l’exportation des résultats de recherche renvoyés par l’applet de commande **Search-UnifiedAuditLog** vers un fichier CSV, voir la section «conseils pour l'exportation et l’affichage du journal d’audit» dans [exporter, configurer et afficher les enregistrements du journal d’audit.](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
@@ -118,7 +118,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
   |Microsoft Teams|![Coche](../media/checkmark.png)||
   |Power Apps||![Coche](../media/checkmark.png)|
   |Power BI|![Coche](../media/checkmark.png)||
-  |Centre de sécurité et conformité|![Coche](../media/checkmark.png)||
+  |Centre de conformité Microsoft 365|![Coche](../media/checkmark.png)||
   |Étiquettes de confidentialité||![Coche](../media/checkmark.png)|
   |Sharepoint Online et OneDrive Entreprise|![Coche](../media/checkmark.png)||
   |Workplace Analytics|![Coche](../media/checkmark.png)||
@@ -132,7 +132,7 @@ Avant de commencer à effectuer une recherche dans le journal d’audit, veillez
 
 ## <a name="search-the-audit-log"></a>Effectuer une recherche dans le journal d’audit
 
-Pour effectuer une recherche dans le journal d’audit dans Office 365, vous devez procéder comme suit. 
+Pour effectuer une recherche dans le journal d’audit dans Microsoft 365, vous devez procéder comme suit. 
 
 [Étape 1 : effectuer une recherche dans le journal d’audit](#step-1-run-an-audit-log-search)
 
@@ -144,48 +144,42 @@ Pour effectuer une recherche dans le journal d’audit dans Office 365, vous dev
 
 ### <a name="step-1-run-an-audit-log-search"></a>Étape 1 : effectuer une recherche dans le journal d’audit
 
-1. Accédez à [https://protection.office.com](https://protection.office.com).
+1. Accédez à <https://compliance.microsoft.com> et connectez-vous.
 
     > [!TIP]
-    > Utilisez une session de navigation privée (pas une session normale) pour accéder au Centre de sécurité et de conformité, car cela empêchera l'utilisation des informations d'identification avec lesquelles vous êtes actuellement connecté. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL+MAJ+P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre de navigation privée), appuyez sur CTRL+MAJ+N.
+    > Utilisez une session de navigation privée (pas une session normale) pour accéder au Centre de conformité Microsoft 365, car cela empêchera l'utilisation des informations d'identification avec lesquelles vous êtes actuellement connecté. Pour ouvrir une session de navigation InPrivate dans Internet Explorer ou Microsoft Edge, appuyez simplement sur CTRL+MAJ+P. Pour ouvrir une session de navigation privée dans Google Chrome (appelée fenêtre de navigation privée), appuyez sur CTRL+MAJ+N.
 
-2. Connectez-vous à l’aide de votre compte scolaire ou professionnel.
+2. Dans le volet de navigation gauche du centre de conformité Microsoft 365, cliquez sur **Audit**.
 
-3. Dans le volet gauche du Centre de sécurité et de conformité, cliquez sur **Recherche** puis sur **Recherche du journal d’audit**.
+    La page **Audit** s’affiche.
 
-    La page **Recherche dans le journal d’audit** s’affiche.
-
-    ![Configurez des critères, puis cliquez sur Rechercher pour générer un rapport](../media/8639d09c-2843-44e4-8b4b-9f45974ff7f1.png)
+    ![Configurez les critères, puis cliquez sur Rechercher pour générer un rapport](../media/AuditLogSearchPage1.png)
 
     > [!NOTE]
-    > Vous devez activer la journalisation d’audit avant d’effectuer une recherche dans le journal d’audit. Si le lien **Commencer à enregistrer les activités des utilisateurs et des administrateurs** apparaît, cliquez dessus pour activer l’audit. Si ce lien n’apparaît pas, l’audit est déjà été activé pour votre organisation.
+    > Si le lien **Commencer à enregistrer les activités des utilisateurs et des administrateurs** apparaît, cliquez dessus pour activer l’audit. Si ce lien n’apparaît pas, l’audit est déjà été activé pour votre organisation.
 
-4. Configurez les critères de recherche suivants : 
-
-   1. **Activités** : Cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Les activités des utilisateurs et des administrateurs sont organisées au sein de groupes d’activités liées. Vous pouvez sélectionner des activités spécifiques ou cliquer sur le nom d’un groupe d’activités pour sélectionner toutes les activités du groupe. Vous pouvez également cliquer sur une activité sélectionnée pour effacer la sélection. Une fois la recherche terminée, seules les entrées du journal d’audit correspondant aux activités sélectionnées apparaissent. La sélection de l’option **Afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités effectuées par l’utilisateur ou le groupe d’utilisateurs sélectionné.
-
-      Plus de 100 activités utilisateur et administrateur sont enregistrées dans le journal d’audit. Cliquez sur l’onglet **Activités auditées** pour consulter les descriptions de chaque activité pour les différents services.
+3. Sur l’onglet **Recherche**, configurez les critères de recherche suivants : 
 
    1. **Date de début** et **Date de fin** : Les sept derniers jours sont sélectionnés par défaut. Sélectionnez une plage de dates et d’heures pour afficher les événements survenus pendant cette période. La date et l’heure sont présentées dans l’heure locale. La plage de dates maximale que vous pouvez spécifier est de 90 jours. Une erreur s’affiche si la plage de dates sélectionnée est supérieure à 90 jours.
 
-      > [!TIP]
-      > Si vous utilisez la plage de dates maximale de 90 jours, sélectionnez l’heure actuelle pour l’option **Date de début**. Dans le cas contraire, un message d’erreur indiquant que la date de début est antérieure à la date de fin apparaît. Si vous avez activé l’audit au cours des 90 derniers jours, la plage de dates maximale ne peut pas commencer avant la date à laquelle l’audit a été activé.
+    > [!TIP]
+    > Si vous utilisez la plage de dates maximale de 90 jours, sélectionnez l’heure actuelle pour l’option **Date de début**. Dans le cas contraire, un message d’erreur indiquant que la date de début est antérieure à la date de fin apparaît. Si vous avez activé l’audit au cours des 90 derniers jours, la plage de dates maximale ne peut pas commencer avant la date à laquelle l’audit a été activé.
 
-   1. **Utilisateurs** : Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels afficher les résultats. Les entrées du journal d’audit pour l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone apparaissent dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
+   2. **Activités** : Cliquez sur la liste déroulante pour afficher les activités que vous pouvez rechercher. Les activités des utilisateurs et des administrateurs sont organisées au sein de groupes d’activités liées. Vous pouvez sélectionner des activités spécifiques ou cliquer sur le nom d’un groupe d’activités pour sélectionner toutes les activités du groupe. Vous pouvez également cliquer sur une activité sélectionnée pour effacer la sélection. Une fois la recherche terminée, seules les entrées du journal d’audit correspondant aux activités sélectionnées apparaissent. La sélection de l’option **Afficher les résultats pour toutes les activités** affiche les résultats de toutes les activités effectuées par l’utilisateur ou le groupe d’utilisateurs sélectionné.<br/><br/>Plus de 100 activités utilisateur et administrateur sont enregistrées dans le journal d’audit. Cliquez sur l’onglet **Activités auditées** pour consulter les descriptions de chaque activité pour les différents services.
 
-   1. **Fichier, dossier ou site** : Tapez l’entièreté ou une partie du nom d’un fichier ou d’un dossier pour rechercher les activités liées au fichier ou au dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, veillez à entre l’URL complète. Si vous ne tapez qu’une partie de l’URL, n’incluez aucun caractère spécial ou espace.
+   3. **Utilisateurs** : Cliquez dans cette zone, puis sélectionnez un ou plusieurs utilisateurs pour lesquels afficher les résultats. Les entrées du journal d’audit pour l’activité sélectionnée effectuée par les utilisateurs que vous sélectionnez dans cette zone apparaissent dans la liste des résultats. Laissez cette zone vide pour renvoyer les entrées pour tous les utilisateurs (et les comptes de service) dans votre organisation.
 
-      Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation.
+   4. **Fichier, dossier ou site** : Tapez l’entièreté ou une partie du nom d’un fichier ou d’un dossier pour rechercher les activités liées au fichier ou au dossier qui contient le mot clé spécifié. Vous pouvez également spécifier l’URL d’un fichier ou d’un dossier. Si vous utilisez une URL, veillez à entre l’URL complète. Si vous ne tapez qu’une partie de l’URL, n’incluez aucun caractère spécial ou espace.<br/><br/>Laissez cette zone vide pour renvoyer les entrées correspondant à tous les fichiers et dossiers dans votre organisation.
 
-      > [!TIP]
-      >
-      > - Si vous recherchez toutes les activités concernant un **site**, ajoutez le symbole générique (\*) après l’URL pour renvoyer toutes les entrées de ce site ; par exemple, `"https://contoso-my.sharepoint.com/personal*"`
-      >
-      > - Si vous recherchez toutes les activités associées à **un fichier**, ajoutez le symbole générique (\*) avant le nom de fichier pour renvoyer toutes les entrées de ce fichier, par exemple, `"*Customer_Profitability_Sample.csv"`.
+    > [!TIP]
+    >
+    > - Si vous recherchez toutes les activités concernant un **site**, ajoutez le symbole générique (\*) après l’URL pour renvoyer toutes les entrées de ce site ; par exemple, `"https://contoso-my.sharepoint.com/personal*"`
+    >
+    > - Si vous recherchez toutes les activités associées à **un fichier**, ajoutez le symbole générique (\*) avant le nom de fichier pour renvoyer toutes les entrées de ce fichier, par exemple, `"*Customer_Profitability_Sample.csv"`.
 
-5. Cliquez sur **Rechercher** pour effectuer la recherche à l’aide de vos critères de recherche. 
+4. Cliquez sur **Rechercher** pour effectuer la recherche à l’aide de vos critères de recherche. 
 
-   Les résultats de recherche sont chargés, puis affichés sous **Résultats** après un moment. Une fois la recherche terminée, le nombre de résultats détectés est affiché. Un maximum de 5 000 événements s’affichent dans le volet **résultats** par incréments de 150 événements. Si plus de 5 000 événements correspondent aux critères de recherche, les 5 000 événements les plus récents sont affichés.
+   Les résultats de recherche sont chargés, puis affichés sur une nouvelle page. Une fois la recherche terminée, le nombre de résultats détectés est affiché. Un maximum de 5 000 événements s’affichent par incréments de 150 événements. Si plus de 5 000 événements correspondent aux critères de recherche, les 5 000 événements les plus récents sont affichés.
 
    ![Le nombre de résultats affichés une fois la recherche terminée](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -437,8 +431,8 @@ Le tableau suivant décrit les activités des fichiers et pages dans SharePoint 
 |État de l’enregistrement modifié sur verrouillé|LockRecord|État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement verrouillé. Cela signifie que le document ne peut pas être modifié ou supprimé. Seuls les utilisateurs ayant au moins l’autorisation de collaborateur pour un site peuvent changer le statut d’enregistrement d’un document.|
 |Modifier l’état de l’enregistrement sur verrouillé|UnlockRecord|État de l’enregistrement d’une étiquette de rétention qui classifie un document en tant qu’enregistrement déverrouillé. Cela signifie que le document peut être modifié ou supprimé. Seuls les utilisateurs ayant au moins l’autorisation de collaborateur pour un site peuvent changer le statut d’enregistrement d’un document.|
 |Fichier archivé|FileCheckedIn|Un utilisateur archive un document qu’il a extrait d’une bibliothèque de documents.|
-|Fichier extrait|FileCheckedOut|L’utilisateur extrait un document situé dans une bibliothèque de documents. Les utilisateurs peuvent extraire et apporter des modifications aux documents partagés avec eux.|
-|Fichier copié|FileCopied|L’utilisateur copie un document à partir d’un site. Le fichier copié peut être enregistré dans un autre dossier sur le site.|
+|Fichier extrait|FileCheckedOut|Un utilisateur extrait un document d’une bibliothèque de documents. Les utilisateurs peuvent extraire et modifier les documents partagés avec eux.|
+|Fichier copié|FileCopied|Un utilisateur copie un document à partir d’un site. Le fichier copié peut être enregistré dans un autre dossier sur le site.|
 |Fichier supprimé|FileDeleted|Un utilisateur supprime un document d’un site.|
 |Fichier supprimé de la Corbeille|FileDeletedFirstStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille d’un site.|
 |Fichier supprimé de la Corbeille second niveau|FileDeletedSecondStageRecycleBin|Un utilisateur supprime un fichier de la Corbeille second niveau d’un site.|
@@ -870,7 +864,7 @@ Le tableau suivant répertorie les activités des utilisateurs et des administra
 
 ### <a name="microsoft-power-automate-activities"></a>Activités Microsoft Power Automate
 
-Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de Power Automate, voir le blog [événements d’audit de Microsoft Flow désormais disponible dans le centre de sécurité & conformité](https://flow.microsoft.com/blog/security-and-compliance-center).
+Vous pouvez effectuer une recherche dans le journal d’audit des activités dans Power Automate (précédemment appelé Microsoft Flow). Ces activités incluent la création, la modification et la suppression de flux, et la modification des autorisations de flux. Pour plus d’informations sur l’audit des activités de Power Automate, voir le blog [événements d’audit de Microsoft Flow désormais disponible dans le Centre de conformité Microsoft 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-power-apps-activities"></a>Activités Microsoft Power Apps
 
@@ -1073,7 +1067,7 @@ Consultez la section [Activités auditées](#audited-activities) dans cet articl
 
 **Combien de temps faut-il pour que l’enregistrement d’audit soit disponible une fois qu’un événement s’est produit ?**
 
-Après la survenue d’un événement, l’apparition de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre entre 30 minutes et 24 heures. Pour plus d’informations sur la disponibilité des événements dans les différents services, consultez le tableau dans la section [Configuration requise pour la recherche dans le journal d’audit](#requirements-to-search-the-audit-log) de cet article.
+Après la survenue d’un événement, l’apparition de l’entrée de journal d’audit correspondante dans les résultats de la recherche peut prendre entre 30 minutes et 24 heures. Pour plus d’informations sur la disponibilité des événements dans les différents services, consultez le tableau dans la section [Avant d’effectuer la recherche dans le journal d’audit](#before-you-search-the-audit-log) de cet article.
 
 **Pendant combien de temps les enregistrements d’audit sont-ils conservés ?**
 
@@ -1089,7 +1083,7 @@ Non. Ce sont les deux seuls moyens d'obtenir les données du service d'audit.
 
 **Est-ce que je dois activer l’audit de chaque service pour lequel je souhaite capturer les journaux d’audit ?**
 
-Dans la plupart des services, l’audit est activé par défaut une fois que vous avez activé l’audit pour votre organisation, comme décrit dans la section [Configuration requise pour la recherche dans le journal d’audit](#requirements-to-search-the-audit-log) dans cet article.
+Dans la plupart des services, l’audit est activé par défaut une fois que vous avez activé l’audit pour votre organisation, comme décrit dans la section [Avant d’effectuer la recherche dans le journal d’audit](#before-you-search-the-audit-log) dans cet article.
 
 **Le service d’audit prend-il en charge la suppression des doublons d’enregistrements ?**
 
