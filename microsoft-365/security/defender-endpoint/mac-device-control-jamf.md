@@ -18,30 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9ce161a472366d11b267824c9bd08ceccf285aa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 21e44090cf21ac8bba29885a2f97242faf3e2164
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933456"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363966"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Exemples de stratégies de contrôle d’appareil pour JAMF
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 Ce document contient des exemples de stratégies de contrôle d’appareil que vous pouvez personnaliser pour votre propre organisation. Ces exemples s’appliquent si vous utilisez JAMF pour gérer les appareils de votre entreprise.
 
 ## <a name="restrict-access-to-all-removable-media"></a>Restreindre l’accès à tous les médias amovibles
 
-L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations sur `none` les fichiers seront interdites.
+L’exemple suivant limite l’accès à tous les médias amovibles. Notez l’autorisation qui est appliquée au niveau supérieur de la stratégie, ce qui signifie que toutes les opérations `none` sur les fichiers seront interdites.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -161,7 +159,7 @@ L’exemple suivant limite tous les appareils de fournisseurs spécifiques (dans
 
 ## <a name="restrict-specific-devices-identified-by-vendor-id-product-id-and-serial-number"></a>Restreindre des appareils spécifiques identifiés par l’ID du fournisseur, l’ID de produit et le numéro de série
 
-L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID du `fff0` fournisseur, l’ID de produit `1000` et les numéros de série et `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
+L’exemple suivant limite deux appareils spécifiques, identifiés par l’ID du fournisseur, l’ID de produit `fff0` et les numéros de série et `1000` `04ZSSMHI2O7WBVOA` `04ZSSMHI2O7WBVOB` . À tous les autres niveaux de la stratégie, les autorisations incluent toutes les valeurs possibles (lecture, écriture et exécution), ce qui signifie que tous les autres appareils seront illimités.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> 

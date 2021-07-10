@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e70a67f9472dff155b8554d5d6ae26c79d49a67a
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841365"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362616"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Qu’est-ce que le bureau géré Microsoft ?
 
@@ -25,7 +25,6 @@ Microsoft Managed Desktop est un service basé sur le cloud qui réunit [Microso
 - Déploiement de l’appareil d’un utilisateur
 - Gestion et exploitation des services informatiques
 - Surveillance de la sécurité et réponse
-- Support des utilisateurs
 
 Bureau géré Microsoft offre une solution à plusieurs des défis auxquels les entreprises et leurs employés sont confrontés aujourd'hui :
 - La transition vers le monde agile d'un logiciel en tant que service est un défi de taille.
@@ -33,7 +32,7 @@ Bureau géré Microsoft offre une solution à plusieurs des défis auxquels les 
 - De nombreux processus actuels de gestion et de sécurité informatiques sont obsolètes, chronophages et coûteux.
 - Les entreprises souhaitent se concentrer sur ce qui les rend plus performantes plutôt que de maintenir une infrastructure numérique.
 
-Vos utilisateurs apprécieront les versions les plus récentes des applications Windows 10 et Microsoft 365 pour entreprise (et bien plus encore), en utilisant des appareils et des logiciels organisés et rigoureusement testés pour une performance et une fiabilité optimales. De plus, vous n'avez pas à vous soucier de la mise à jour de ces logiciels car cela se fait automatiquement, selon une séquence de déploiement minutieuse qui est contrôlée à chaque étape. Les appareils enregistrés sont surveillés 24 heures sur 24 et 7 jours sur 7 pour des questions techniques et de sécurité, de sorte que si un problème survient, de l'aide est immédiatement disponible.
+Vos utilisateurs apprécieront les versions les plus récentes des applications Windows 10 et Microsoft 365 pour entreprise (et bien plus encore), en utilisant des appareils et des logiciels organisés et rigoureusement testés pour une performance et une fiabilité optimales. De plus, vous n'avez pas à vous soucier de la mise à jour de ces logiciels car cela se fait automatiquement, selon une séquence de déploiement minutieuse qui est contrôlée à chaque étape. Les appareils inscrits sont surveillés 24 heures sur 24, sept jours sur sept pour les problèmes techniques et de sécurité. Par conséquent, en cas de problème, l’aide sera disponible.
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Caractéristiques uniques au Bureau géré Microsoft

@@ -18,24 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 682f59729e06c63818491ad7540528d574380c8b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5cb819daa11a50ef54c758a6aa696a5fc645029c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877835"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363978"
 ---
 # <a name="device-control-for-macos"></a>Contrôle d’appareil pour macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="requirements"></a>Conditions requises
 
@@ -43,30 +41,8 @@ Le contrôle d’appareil pour macOS présente les conditions préalables suivan
 
 >[!div class="checklist"]
 > - Droit au point de terminaison Microsoft Defender (peut être une version d’évaluation)
-> - Version minimale du système d’exploitation : macOS 10.15.4 ou version supérieure
-> - Version minimale du produit : 101.24.59
-> - Votre appareil doit être en cours d’exécution avec des extensions système (il s’agit de la valeur par défaut sur macOS 11 Big Sur). 
-> 
->   Vous pouvez vérifier si votre appareil est en cours d’exécution sur les extensions système en exécutant la commande suivante et vérifier qu’il est en cours d’impression `endpoint_security_extension` sur la console : 
-> 
->   ```bash
->   mdatp health --field real_time_protection_subsystem 
->   ```
-> - Votre appareil doit se trouver dans (précédemment appelé) canal de mise à jour de mise à jour `Beta` `InsiderFast` automatique Microsoft AutoUpdate. Pour plus d’informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint sur Mac.](mac-updates.md)
-> 
->   Vous pouvez vérifier le canal de mise à jour à l’aide de la commande suivante : 
-> 
->    ```bash
->    mdatp health --field release_ring 
->    ```
->
->    Si la commande ci-dessus n’imprime pas l’une ou l’autre des commandes, exécutez `Beta` la commande suivante à partir du `InsiderFast` Terminal. La mise à jour du canal prend effet lors du prochain démarrage du produit (lors de l’installation de la prochaine mise à jour du produit ou du redémarrage de l’appareil). 
-> 
->    ```bash
->    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
->    ```
->
->    Par ailleurs, si vous êtes dans un environnement géré (JAMF ou Intune), vous pouvez configurer le canal de mise à jour à distance. Pour plus d’informations, voir [Déployer les mises à jour de Microsoft Defender pour Endpoint sur Mac.](mac-updates.md) 
+> - Version minimale du système d’exploitation : macOS 11 ou version supérieure
+> - Version minimale du produit : 101.34.20
 
 ## <a name="device-control-policy"></a>Stratégie de contrôle d’appareil
 
@@ -79,7 +55,7 @@ Dans le profil de configuration, la stratégie de contrôle d’appareil est dé
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | deviceControl |
+| **Key** | deviceControl |
 | **Type de données** | Dictionnaire (préférence imbriée) |
 | **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
@@ -99,13 +75,13 @@ Lorsque les utilisateurs finaux cliquent sur cette notification, une page web s�
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | navigationTarget |
+| **Key** | navigationTarget |
 | **Type de données** | String |
 | **Comments** | S’il n’est pas défini, le produit utilise une URL par défaut pointant vers une page générique expliquant l’action entreprise par le produit. |
 
 ### <a name="allow-or-block-removable-devices"></a>Autoriser ou bloquer les appareils amovibles
 
-La section multimédia amovible de la stratégie de contrôle d’appareil est utilisée pour restreindre l’accès aux médias amovibles. 
+La section média amovible de la stratégie de contrôle d’appareil est utilisée pour restreindre l’accès aux médias amovibles. 
 
 > [!NOTE]
 > Les types de média amovible suivants sont actuellement pris en charge et peuvent être inclus dans la stratégie : les périphériques de stockage USB.
@@ -113,7 +89,7 @@ La section multimédia amovible de la stratégie de contrôle d’appareil est u
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **Type de données** | Dictionnaire (préférence imbriée) |
 | **Comments** | Consultez les sections suivantes pour obtenir une description du contenu du dictionnaire. |
 
@@ -143,16 +119,19 @@ Sous la section Média amovible, il existe une option pour définir le niveau d�
 - `audit` - Sous ce niveau d’application, si l’accès à un appareil est restreint, une notification s’affiche pour l’utilisateur, mais l’appareil peut toujours être utilisé. Ce niveau d’application peut être utile pour évaluer l’efficacité d’une stratégie.
 - `block` - Sous ce niveau d’application, les opérations que l’utilisateur peut effectuer sur l’appareil sont limitées à ce qui est défini dans la stratégie. En outre, une notification est alors avertie à l’utilisateur. 
 
+> [!NOTE] 
+> Par défaut, le niveau d’application est définie sur `audit` . 
+
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **Type de données** | Chaîne |
 | **Valeurs possibles** | audit (par défaut) <br/> block |
 
 #### <a name="default-permission-level"></a>Niveau d’autorisation par défaut
 
-Au niveau supérieur de la section média amovible, vous pouvez configurer le niveau d’autorisation par défaut pour les appareils qui ne correspondent à rien d’autre dans la stratégie.
+Au niveau supérieur de la section Média amovible, vous pouvez configurer le niveau d’autorisation par défaut pour les appareils qui ne correspondent à rien d’autre dans la stratégie.
 
 Ce paramètre peut être définie sur :
 
@@ -171,7 +150,7 @@ Ce paramètre peut être définie sur :
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | autorisation |
+| **Key** | autorisation |
 | **Type de données** | Tableau de chaînes |
 | **Valeurs possibles** | aucune <br/> read <br/> write <br/> execute |
 
@@ -186,7 +165,7 @@ Le `vendors` dictionnaire contient une ou plusieurs entrées, chaque entrée ét
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | fournisseurs |
+| **Key** | fournisseurs |
 | **Type de données** | Dictionnaire (préférence imbriée) |
 
 Pour chaque fournisseur, vous pouvez spécifier le niveau d’autorisation souhaité pour les appareils de ce fournisseur.
@@ -194,16 +173,16 @@ Pour chaque fournisseur, vous pouvez spécifier le niveau d’autorisation souha
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | autorisation |
+| **Key** | autorisation |
 | **Type de données** | Tableau de chaînes |
 | **Valeurs possibles** | Identique au [niveau d’autorisation Par défaut](#default-permission-level) |
 
-En outre, vous pouvez éventuellement spécifier l’ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus précises sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par `products` l’ID de produit. 
+En outre, vous pouvez éventuellement spécifier l’ensemble des produits appartenant à ce fournisseur pour lesquels des autorisations plus granulaires sont définies. Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant identifiée par `products` l’ID de produit. 
 
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | produits |
+| **Key** | produits |
 | **Type de données** | Dictionnaire (préférence imbriée) |
 
 Pour chaque produit, vous pouvez spécifier le niveau d’autorisation souhaité pour ce produit.
@@ -211,7 +190,7 @@ Pour chaque produit, vous pouvez spécifier le niveau d’autorisation souhaité
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | autorisation |
+| **Key** | autorisation |
 | **Type de données** | Tableau de chaînes |
 | **Valeurs possibles** | Identique au [niveau d’autorisation Par défaut](#default-permission-level) |
 
@@ -222,7 +201,7 @@ Le dictionnaire contient une ou plusieurs entrées, chaque entrée étant `seria
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | serialNumbers |
+| **Key** | serialNumbers |
 | **Type de données** | Dictionnaire (préférence imbriée) |
 
 Pour chaque numéro de série, vous pouvez spécifier le niveau d’autorisation souhaité.
@@ -230,7 +209,7 @@ Pour chaque numéro de série, vous pouvez spécifier le niveau d’autorisation
 |Section|Valeur|
 |:---|:---|
 | **Domaine** | `com.microsoft.wdav` |
-| **Clé** | autorisation |
+| **Key** | autorisation |
 | **Type de données** | Tableau de chaînes |
 | **Valeurs possibles** | Identique au [niveau d’autorisation Par défaut](#default-permission-level) |
 
@@ -322,7 +301,7 @@ Pour rechercher l’ID du fournisseur, l’ID de produit et le numéro de série
 
     ![Détails d’un périphérique USB](images/mac-device-control-lookup-4.png)
 
-1. L’ID du fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l’image ci-dessous, l’ID du fournisseur `1000` est et l’ID de produit est `090c` .
+1. L’ID de fournisseur, l’ID de produit et le numéro de série sont affichés. Lorsque vous ajoutez l’ID fournisseur et l’ID de produit à la stratégie de média amovible, vous devez uniquement ajouter la partie après `0x` . Par exemple, dans l’image ci-dessous, l’ID du fournisseur `1000` est et l’ID de produit est `090c` .
 
 #### <a name="discover-usb-devices-in-your-organization"></a>Découvrir les périphériques USB de votre organisation
 

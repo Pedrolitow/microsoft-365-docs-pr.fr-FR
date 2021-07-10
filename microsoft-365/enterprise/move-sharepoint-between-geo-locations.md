@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment déplacer un site SharePoint vers un autre emplacement géographique au sein de votre environnement multigéogé et communiquer les attentes des modifications à vos utilisateurs.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5a49098045dbce94ef1c474497b8da1b397ac0b0
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910929"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362353"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Déplacer un site SharePoint vers un autre emplacement géographique
 
@@ -28,7 +28,7 @@ La fonctionnalité de déplacement géographique de site de SharePoint vous perm
 
 Les types de sites pouvant être déplacés entre emplacements géographiques sont les suivants :
 
-- Sites connectés à un groupe Microsoft 365
+- Microsoft 365 Sites connectés à un groupe, y compris ceux associés à Microsoft Teams
 - Sites modernes non associés à un groupe Microsoft 365
 - Sites SharePoint classiques
 - Sites de communication
@@ -177,11 +177,11 @@ Durant le déplacement, le site est en lecture seule. Une fois le déplacement t
 
 Les utilisateurs disposant d’autorisations d’accès au site continuent de pouvoir y accéder durant et après le déplacement.
 
-### <a name="sync-client"></a>Client de synchronisation
+### <a name="sync-app"></a>Application de synchronisation
 
-Le client de synchronisation détecte et transfère automatiquement la synchronisation vers le nouvel emplacement du site une fois celui-ci déplacé. L’utilisateur n’a pas besoin de se reconnecter ou d’effectuer un autre action (version 17.3.6943.0625 ou une version ultérieure du client de synchronisation requise).
+L’application de synchronisation détecte et transfère automatiquement la synchronisation vers le nouvel emplacement du site une fois le déplacement du site terminé. L’utilisateur n’a pas besoin de se reconnecter ou d’effectuer un autre action. (Version 17.3.6943.0625 ou ultérieure de l’application de synchronisation requise.)
 
-Si un utilisateur met à jour un fichier pendant le déplacement, le client de synchronisation l’informe que les chargements de fichiers sont mis en attente pendant le déplacement.
+Si un utilisateur met à jour un fichier pendant le déplacement, l’application de synchronisation l’informe que les téléchargements de fichiers sont en attente pendant le déplacement.
 
 ### <a name="sharing-links"></a>Partage des liens
 

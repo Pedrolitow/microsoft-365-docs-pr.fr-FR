@@ -123,7 +123,7 @@ ID | Catégorie | ER | Adresses | Ports
 148 | Par défaut<BR>Obligatoire | Non | `cdnprod.myanalytics.microsoft.com, myanalytics.microsoft.com, myanalytics-gcc.microsoft.com` | **TCP :** 443, 80
 149 | Par défaut<BR>Obligatoire | Non | `workplaceanalytics.cdn.office.net` | **TCP :** 443, 80
 150 | Par défaut<BR>Facultatif<BR>**Remarques :** le blocage de ces points de terminaison affectera la possibilité d’accéder aux fonctionnalités de gestion et de déploiement de Office 365 ProPlus via le portail. | Non | `*.officeconfig.msocdn.com` | **TCP :** 443
-152 | Par défaut<BR>Facultatif<BR>**Remarques :** ces points de terminaison activent la fonctionnalité de scripts Office dans les clients Office accessibles via l’onglet automatiser.  Cette fonctionnalité peut également être désactivée via le portail d’administration Office 365. | Non | `*.microsoftusercontent.com` | **TCP :** 443
+152 | Par défaut<BR>Facultatif<BR>**Remarques :** Ces points de terminaison activent la fonctionnalité Scripts Office dans les clients Office disponible sous l’onglet Automatiser.  Cette fonctionnalité peut également être désactivée via le Centre d’administration Microsoft 365. | Non | `*.microsoftusercontent.com` | **TCP :** 443
 153 | Par défaut<BR>Obligatoire | Non | `*.azure-apim.net, *.flow.microsoft.com, *.powerapps.com` | **TCP :** 443
 156 | Par défaut<BR>Obligatoire | Non | `activity.windows.com` | **TCP :** 443
 157 | Par défaut<BR>Obligatoire | Non | `ocsp.int-x3.letsencrypt.org` | **TCP :** 80

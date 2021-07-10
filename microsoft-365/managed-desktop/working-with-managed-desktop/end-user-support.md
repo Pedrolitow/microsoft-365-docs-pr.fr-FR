@@ -1,5 +1,5 @@
 ---
-title: Obtenir la prise en charge des utilisateurs pour Bureau géré Microsoft
+title: Obtenir la prise en charge des utilisateurs pour Microsoft Manged Desktop
 description: Comment les utilisateurs peuvent obtenir de l’aide sur le service et les appareils
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,69 +9,67 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 2eea02b0a891f65ccd7e4e993ca719b0f3aa1b8b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841362"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362605"
 ---
 # <a name="getting-help-for-users"></a>Obtenir de l’aide pour les utilisateurs
 
-Il existe deux façons pour les utilisateurs de votre organisation d’obtenir de l’aide sur leurs appareils Bureau géré Microsoft réseau **:** Aide application ou le support téléphonique. Ces deux options de support sont disponibles pour les utilisateurs 24 heures sur 24, 7 jours sur 7.
+Si vous avez atteint le [](../service-description/user-support.md) point dans le flux de travail où vous devez demander l’accès ou l’escalade d’appareil élevé à Microsoft, suivez les étapes suivantes :
  
 >[!NOTE]
 >Ces options de prise en charge ne sont pas disponibles pour les appareils du groupe Test.
 
-## <a name="get-help-app"></a>Aide application
+## <a name="elevation-requests"></a>Demandes d’élévation
 
-La méthode préférée pour assurer la prise en charge de vos utilisateurs **est Aide,** une interface facile à utiliser intégrée à l’appareil utilisateur.  
+Avant de demander un accès élevé à un appareil, il est préférable de passer en revue les actions les mieux adaptées.
 
-![Aide’application](../../media/get-help.png)
+- **Ce processus** est généralement destiné à des actions qui seraient effectuées régulièrement lors de la résolution des problèmes liés Microsoft Manged Desktop appareils mobiles. Les exemples incluent :
+    - Élévation des niveaux des dépannages du système intégrés, de l’invite de commandes ou des Windows PowerShell
+    - Résolution des problèmes des applications métier
+    - Utilisation d’une solution de contournement pour corriger quelque chose qui doit fonctionner par conception (par exemple, l’activation de BitLocker ou le temps système non mis à jour)
+    - Élévation de la fonction Gestionnaire de périphériques pour faire des opérations telles que les pilotes de mise à jour, désinstaller un appareil ou analyser les nouvelles modifications
 
-Aide est une application installée sur tous les appareils Bureau géré Microsoft et épinglée à la barre des tâches. 
+- **Les actions qui ne sont pas recommandées sont** les suivantes :
+    - Installation de logiciels ou de navigateurs
+    - Installation de pilotes en dehors des paramètres Windows, y compris ceux des périphériques
+    - Installation de .msi ou de .exe fichiers
+    - Installation de Windows fonctionnalités
 
-- Les utilisateurs peuvent demander un rappel à un numéro de téléphone fourni ou discuter en ligne avec un représentant du service.
-- Les demandes qui ne font pas partie de Bureau géré Microsoft prise en charge sont redirigées vers le support technique local via un appel téléphonique.
+- **Les actions qui ne sont pas prises en charge sont** les suivantes :
+    - Installation de logiciels ou de fonctionnalités en conflit avec Microsoft Manged Desktop de sécurité ou de gestion ou des opérations
+    - Désactivation d’une Windows requise pour les Microsoft Manged Desktop, telle que BitLocker
+    - Modification des paramètres gérés par votre organisation
+
+### <a name="to-request-elevation"></a>Pour demander une élévation
+
+1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
+2. Sélectionnez **Nouvelle demande d’élévation.**
+3. Fournissez les détails ci-après :
+    - **ID de ticket de support** à partir de votre propre système de tickets de support.
+    - **Nom de l’appareil**: entrez le numéro de série de l’appareil, puis sélectionnez l’appareil dans le menu.
+    - **Catégorie**: sélectionnez la catégorie qui correspond le mieux à votre problème. Si aucune option ne semble proche, sélectionnez **Autre** et fournissez plus d’informations dans les **champs** Titre et Plan **d’action.** Il est préférable de sélectionner une catégorie si possible.
+    - **Sous-catégorie :** sélectionnez celle qui répond le mieux au problème. Si aucune option ne semble proche, sélectionnez **Autre** et fournissez une brève description dans **titre**. Dans **le plan d’action,** fournissez les étapes de résolution des problèmes que vous prévoyez d’suivre une fois l’élévation accordée.
+4. Sélectionnez **Envoyer**.
+
+
+## <a name="escalation-requests"></a>Demandes d’escalade
+
+
+Si vous devez faire [une escalade d’un](../service-description/user-support.md#escalation-portal) problème à Microsoft, suivez les étapes suivantes :
+
+1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
+2. Sélectionnez **Demandes d’escalade,** puis Nouvelle **demande d’escalade.**
+3. Fournissez les détails ci-après :
+    - **Catégorie**: sélectionnez la catégorie qui correspond le mieux à votre problème.
+    - **Titre**: fournissez une brève description.
+    - **Description**: ajoutez tous les détails supplémentaires qui pourraient aider notre équipe à comprendre le problème. Si vous devez joindre des fichiers, vous pouvez le faire en revenir à la demande après l’avoir soumis.
+    - **Informations de contact principales**: fournissez des informations sur la façon de contacter la personne principale responsable de l’collaboration avec notre équipe.
+4. Sélectionnez **Envoyer**.
+5. Revenir sur le ticket dans le même portail pour interagir avec notre équipe.
 
 > [!NOTE]
-> La langue d’affichage de l’application Aide est l’anglais uniquement, même si un utilisateur a sélectionné une autre langue lors de la configuration de son appareil ou dans les paramètres de l’appareil. 
-
-### <a name="prerequisites"></a>Configuration requise
-Pour que vos utilisateurs puissent obtenir de l’aide via l’application, assurez-vous que ces conditions préalables sont remplies :
-
-- L’appareil doit être inscrit auprès Bureau géré Microsoft l’aide de l’une des méthodes de l’outil [Bureau géré Microsoft,](../get-started/set-up-devices.md)telles que Inscrire de nouveaux [appareils vous-même.](../get-started/register-devices-self.md)
-- La langue d’affichage de l’appareil doit être définie sur l’un de ces paramètres régionaux en anglais : en-us, en-gb, en-au, en-nz ou en-ca.
-- L Aide de l’application doit être à jour. Pour confirmer son état, recherchez les mises à jour d’application dans le Microsoft Store.
-- Certains [points de terminaison](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) doivent être accessibles à partir de l’appareil.
-
-> [!NOTE]
-> L Aide’application peut prendre jusqu’à une heure après le déploiement d’un appareil pour fonctionner entièrement.
-
-Si vous avez vérifié ces conditions préalables et que l’application Aide ne fonctionne toujours pas, en tant qu’administrateur informatique, vous devez déposer une demande [de support.](admin-support.md)
-
-## <a name="phone-support"></a>Support téléphonique
-
-Les utilisateurs Bureau géré Microsoft appareils mobiles ont également accès aux numéros de téléphone gratuits qu’ils peuvent appeler. Les numéros sont destinés à être utilisés lorsque Aide n’est pas disponible. Par exemple, s’ils ne peuvent pas se connectent à l’appareil ou si l’appareil est rompu. Voici les numéros de téléphone du support téléphonique :
-
-- États-Unis : +1 855 425 0216
-- Canada (à l’exception de Région) : +1 855 425 0216
-- Royaume-Uni : +44 800 026 0698
-- Belgique : +32 800 58533
-- Luxembourg : +352 800 40119
-- Australie : +61 180 037 0619
-- Nouvelle-Zélande : +64 988 44380
-- Suède : +46 20 120 3554
-- Norvège : +47 800 62584
-- Islande : +354 800 9006
-- Irlande : +353 1 800 832272
-- Danemark : +45 80 40 04 01
-- Finlande : +358 800 525088
-
->[!NOTE]
->Vous devez avoir votre adresse de messagerie d’organisation prête lorsque vous appelez pour vérifier votre identité. 
-
-## <a name="more-resources"></a>Plus de ressources
-- [Prise en charge par l’administrateur Bureau géré Microsoft](admin-support.md). 
-- [Prise en charge Bureau géré Microsoft](../service-description/support.md).
-- Si vous vous abonnez déjà à Bureau géré Microsoft, vous trouverez des procédures détaillées, des flux de processus,  des instructions de travail et des FAQ dans le Guide d’administration Bureau géré Microsoft dans les ressources en ligne sous la section Bureau géré Microsoft du menu **d’administration** des locataires dans [Microsoft Endpoint Manager](https://endpoint.microsoft.com/).
+> Seuls les problèmes de gravité C peuvent être escalades via ce chemin d’accès. Pour d’autres problèmes, contactez votre administrateur informatique pour déposer la demande via le portail d’administration.

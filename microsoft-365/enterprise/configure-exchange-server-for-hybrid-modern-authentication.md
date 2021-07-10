@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Découvrez comment configurer un environnement Exchange Server local pour utiliser l’authentification moderne hybride (HMA), ce qui vous offre une authentification et une autorisation utilisateur plus sécurisées.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d30d1b2b14efd66d973e9bf6d45b970d7af681bc
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 21ffec620ac3e262679fc0e2385f6f0f1b31933b
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841629"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362257"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Comment configurer Exchange Server en local pour utiliser l’authentification moderne hybride
 
@@ -71,7 +71,7 @@ L’ment HMA signifie :
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Ajouter des URL de service web local en tant que SSN dans Azure AD
 
-Exécutez les commandes qui affectent vos URL de service web local en tant que SSN Azure AD. Les SSN sont utilisés par les ordinateurs clients et les appareils lors de l’authentification et de l’autorisation. Toutes les URL qui peuvent être utilisées pour se connecter de l’environnement local à Azure Active Directory (Azure AD) doivent être enregistrées dans Azure AD (cela inclut les espaces de noms internes et externes).
+Exécutez les commandes qui affectent vos URL de service web local en tant que SSN Azure AD. Les SSN sont utilisés par les appareils et les ordinateurs clients lors de l’authentification et de l’autorisation. Toutes les URL qui peuvent être utilisées pour se connecter de l’environnement local à Azure Active Directory (Azure AD) doivent être enregistrées dans Azure AD (cela inclut les espaces de noms internes et externes).
 
 Tout d’abord, rassemblez toutes les URL que vous devez ajouter dans AAD. Exécutez les commandes ci-après en local :
 
@@ -96,7 +96,7 @@ Assurez-vous que les url à qui les clients peuvent se connecter sont répertori
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Prenez note (et capture d’écran pour comparaison ultérieure) de la sortie de cette commande, qui doit inclure un  *autodiscover.yourdomain.com*  https:// et une URL  *https:// mail.yourdomain.com,* mais principalement des SSN qui commencent par 00000002-0000-0ff1-ce00-0000000000000/. Si des URL https:// de votre site local sont manquantes, nous devons ajouter ces enregistrements spécifiques à cette liste.
+   Prenez note (et capture d’écran pour une comparaison ultérieure) de la sortie de cette commande, qui doit inclure un  *autodiscover.yourdomain.com*  https:// et une URL  *https:// mail.yourdomain.com,* mais principalement composée de SNS qui commencent par 00000002-0000-0ff1-ce00-000000000000/. Si des URL https:// de votre site local sont manquantes, nous devons ajouter ces enregistrements spécifiques à cette liste.
 
 3. Si vous ne voyez pas vos enregistrements MAPI/HTTP, EWS, ActiveSync, OAB et Autodiscover internes et externes dans cette liste, vous devez les ajouter à l’aide de la commande ci-dessous (les exemples d’URL sont « ' » et « ' , mais vous devez remplacer les `mail.corp.contoso.com` `owa.contoso.com` **exemples d’URL** par les vôtres ) :
 
@@ -107,7 +107,7 @@ Assurez-vous que les url à qui les clients peuvent se connecter sont répertori
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant la commande Get-MsolServicePrincipal l’étape 2 et en regardant la sortie. Comparez la liste /capture d’écran d’avant à la nouvelle liste de SSN. Vous pouvez également prendre une capture d’écran de la nouvelle liste pour vos enregistrements. Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. En suivant notre exemple, la liste des SNS inclut désormais les URL spécifiques  `https://mail.corp.contoso.com`  et  `https://owa.contoso.com` .
+4. Vérifiez que vos nouveaux enregistrements ont été ajoutés en exécutant à nouveau Get-MsolServicePrincipal commande de l’étape 2 et en regardant la sortie. Comparez la liste /capture d’écran d’avant à la nouvelle liste de SSN. Vous pouvez également prendre une capture d’écran de la nouvelle liste pour vos enregistrements. Si vous avez réussi, vous verrez les deux nouvelles URL dans la liste. En suivant notre exemple, la liste des SNS inclut désormais les URL spécifiques  `https://mail.corp.contoso.com`  et  `https://owa.contoso.com` .
 
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Vérifier que les répertoires virtuels sont correctement configurés
 
@@ -143,7 +143,7 @@ Revenir à l’Exchange Management Shell local pour cette dernière commande. Vo
 Get-AuthServer | where {$_.Name -like "EvoSts"}
 ```
 
-Votre sortie doit afficher un AuthServer du nom EvoSts et l’état « Enabled » doit être True. Si ce n’est pas le cas, vous devez télécharger et exécuter la version la plus récente de l’Assistant Configuration hybride.
+Votre sortie doit afficher un authServer nommé EvoSts et l’état « Activé » doit être True. Si ce n’est pas le cas, vous devez télécharger et exécuter la version la plus récente de l’Assistant Configuration hybride.
 
 > [!NOTE]
 > Dans le cas où EXCH est dans un scénario hybride avec plusieurs **locataires,** votre sortie doit afficher un AuthServer du nom EvoSts - {GUID} pour chaque client hybride avec EXCH et l’état « Activé » doit être True pour tous ces objets AuthServer.
@@ -159,7 +159,7 @@ Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
-Si la version EXCH est Exchange 2016 (CU18 ou version supérieure) ou Exchange 2019 (CU7 ou version supérieure) et que l’hybride a été configuré avec HCW téléchargé après septembre 2020, exécutez la commande suivante dans l’Exchange Management Shell local :
+Si la version EXCH est Exchange 2016 (CU18 ou version supérieure) ou Exchange 2019 (CU7 ou version supérieure) et que l’hybride a été configuré avec HCW téléchargé après septembre 2020, exécutez la commande suivante dans l’Exchange Management Shell, en local :
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - {GUID}" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
@@ -171,9 +171,9 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## <a name="verify"></a>Vérifier
 
-Une fois que vous avez activé HMA, la connexion suivante d’un client utilise le nouveau flux d’authentification. Notez que le simple fait d’allumer HMA ne déclenche pas de réauthentication pour un client. Les clients se réauthentent en fonction de la durée de vie des jetons d’th et/ou des jetons dont ils ont.
+Une fois que vous avez activé HMA, la connexion suivante d’un client utilise le nouveau flux d’authentification. Notez que le simple fait d’allumer HMA ne déclenche pas de réauthentication pour un client et que la sélection des nouveaux paramètres par Exchange peut prendre un certain temps.
 
-Vous devez également maintenir la touche CTRL en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type « Authn » de « Bearer » qui représente le jeton du porteur utilisé dans \* OAuth.
+Vous devez également maintenir la touche Ctrl en même temps que vous cliquez avec le bouton droit sur l’icône du client Outlook (également dans le bac Windows Notifications) et cliquez sur « État de la connexion ». Recherchez l’adresse SMTP du client par rapport à un type « Authn » de « Bearer » qui représente le jeton du porteur utilisé dans \* OAuth.
 
 > [!NOTE]
 > Vous devez configurer Skype Entreprise avec HMA ? Vous aurez besoin de deux articles : un qui répertorie les [topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)pris en charge et un qui vous montre comment [faire la configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
@@ -192,4 +192,4 @@ L’application Outlook pour iOS et Android est conçue comme la meilleure faço
 
 ## <a name="related-topics"></a>Voir aussi
 
-[Configuration requise pour l’authentification moderne pour la transition de Office 365/ITAR vers vNext](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)
+[Configuration requise pour l’authentification moderne pour la transition de Office 365 dédié/ITAR vers vNext](/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fc162939e12f0bd55da5847c6bc1bda4b3761fd7
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 841f22421ac81ba447dad70a68c4c7bc95605b16
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53276904"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363894"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -40,6 +40,7 @@ ms.locfileid: "53276904"
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
 
+- [Le contrôle d’appareil pour macOS](mac-device-control-overview.md) est désormais disponible en général
 - Nous avons résolu un problème dans lequel une analyse rapide n’a pas pu être démarrée à partir du menu d’état sur macOS 11 (Big Sur)
 - Autres correctifs de bogue
 
@@ -92,13 +93,13 @@ ms.locfileid: "53276904"
 ## <a name="1011526-20120102115260"></a>101.15.26 (20.120102.11526.0)
 
 - Amélioration de la fiabilité de l’agent lors de l’exécution sur macOS 11 Big Sur
-- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions antivirus lors des `--ignore-exclusions` analyses personnalisées ( `mdatp scan custom` )
+- Ajout d’un nouveau commutateur de ligne de commande ( ) pour ignorer les exclusions av lors `--ignore-exclusions` des analyses personnalisées ( `mdatp scan custom` )
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
 
 - Conditions supprimées lorsque Microsoft Defender pour le point de terminaison déclenchant un bogue macOS 11 (Big Sur) qui se manifeste en noyau
-- Correction d’une fuite de mémoire dans l’extension du système de sécurité des points de terminaison lors de l’exécution sur mac 11 (Big Sur)
+- Correction d’une fuite de mémoire dans l’extension système de sécurité des points de terminaison lors de l’exécution sur mac 11 (Big Sur)
 - Résolutions de bogues
 
 ## <a name="1011072"></a>101.10.72
@@ -137,7 +138,7 @@ ms.locfileid: "53276904"
   > `mdatp --health` sera remplacé par `mdatp health` dans une prochaine mise à jour du produit.
 
 - Correction d’un bogue dans lequel l’envoi automatique d’échantillons n’a pas été marqué comme géré dans l’interface utilisateur
-- Ajout de nouveaux paramètres pour contrôler la rétention des éléments dans l’historique d’analyse antivirus. Vous pouvez désormais [spécifier le nombre](mac-preferences.md#antivirus-scan-history-retention-in-days) de jours de rétention des éléments dans l’historique d’analyse et spécifier le nombre maximal d’éléments [dans l’historique d’analyse.](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
+- Ajout de nouveaux paramètres pour contrôler la rétention des éléments dans l’historique d’analyse antivirus. Vous pouvez maintenant [spécifier le nombre](mac-preferences.md#antivirus-scan-history-retention-in-days) de jours de rétention des éléments dans l’historique d’analyse et spécifier le nombre maximal d’éléments [dans l’historique d’analyse.](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)
 - Résolutions de bogues
 
 ## <a name="1010663"></a>101.06.63
@@ -174,7 +175,7 @@ ms.locfileid: "53276904"
 
 - Amélioration de [l’expérience d’intégration de produit pour les utilisateurs d’Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - Les [exclusions antivirus désormais prise en charge les caractères génériques](mac-exclusions.md#supported-exclusion-types)
-- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner **Analyser avec Microsoft Defender pour le point de terminaison**
+- Ajout de la possibilité de déclencher des analyses antivirus à partir du menu contextuel macOS. Vous pouvez maintenant cliquer avec le bouton droit sur un fichier ou un dossier dans finder et sélectionner Analyser **avec Microsoft Defender pour le point de terminaison**
 - Les rétrogradations de produits sur place sont désormais explicitement interdits par le programme d’installation. Si vous devez rétrograder, désinstallez d’abord la version existante et reconfigurez votre appareil.
 - Autres améliorations en matière de performances & résolutions de bogues
 
@@ -231,11 +232,11 @@ ms.locfileid: "53276904"
 
 ## <a name="1007099"></a>100.70.99
 
-- Nous avons résolu un problème qui a un impact sur la capacité de certains utilisateurs à mettre à niveau vers macOS Ils sont activés lorsque la protection en temps réel est activée. Ce problème ponctuel a été provoqué par microsoft Defender pour le verrouillage des fichiers de point de terminaison dans le package de mise à niveau De base lors de l’analyse des menaces, ce qui a entraîné des échecs dans la séquence de mise à niveau.
+- Nous avons résolu un problème qui a une incidence sur la capacité de certains utilisateurs à mettre à niveau vers macOS Ils sont activés lorsque la protection en temps réel est activée. Ce problème ponctuel a été provoqué par microsoft Defender pour le verrouillage des fichiers de point de terminaison dans le package de mise à niveau De base lors de l’analyse des menaces, ce qui a entraîné des échecs dans la séquence de mise à niveau.
 
 ## <a name="1006899"></a>100.68.99
 
-- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu’elle s’exécute en [mode passif](mac-preferences.md#enable--disable-passive-mode)
+- Ajout de la possibilité de configurer la fonctionnalité antivirus pour qu’elle s’exécute [en mode passif](mac-preferences.md#enable--disable-passive-mode)
 - Améliorations des performances & résolutions de bogues
 
 ## <a name="1006528"></a>100.65.28
@@ -248,6 +249,6 @@ ms.locfileid: "53276904"
   > Le mécanisme d’octroi de ce consentement dépend de la façon dont vous avez déployé Microsoft Defender pour endpoint :
   >
   > - Pour les déploiements manuels, consultez les instructions mises à jour dans la [rubrique Déploiement](mac-install-manually.md#how-to-allow-full-disk-access) manuel.
-  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques de déploiement basé sur [JAMF](mac-install-with-jamf.md) [Microsoft Intune de déploiement](mac-install-with-intune.md#create-system-configuration-profiles) basé sur les logiciels.
+  > - Pour les déploiements gérés, consultez les instructions mises à jour dans les rubriques sur le déploiement basé sur [JAMF](mac-install-with-jamf.md) [et Microsoft Intune](mac-install-with-intune.md#create-system-configuration-profiles) de déploiement basé sur jamf.
 
 - Améliorations des performances & résolutions de bogues

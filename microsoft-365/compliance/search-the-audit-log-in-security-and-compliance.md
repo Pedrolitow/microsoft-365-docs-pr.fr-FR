@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Utilisez le Centre de conformité Microsoft 365 pour rechercher le journal d’audit unifié pour afficher les activités des utilisateurs et des administrateurs de votre organisation.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46f223953df65b75c0ecfe0d2c9fe92514b797ff
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: a3c7f88441b05d6c64470f6632b9c63ac67b295c
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341651"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363954"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Recherchez le journal d’audit dans le centre de conformité
 
@@ -622,7 +622,7 @@ Le tableau suivant répertorie les événements qui résultent de tâches d’ad
 |Ajout d’un administrateur d’emplacement géographique|GeoAdminAdded|Un administrateur SharePoint ou général a ajouté un utilisateur en tant qu’administrateur géo d’un emplacement.|
 |Utilisateur autorisé à créer des groupes|AllowGroupCreationSet|Un administrateur ou propriétaire de site ajoute un niveau d’autorisation à un site qui permet à un utilisateur auquel cette autorisation est octroyée de créer un groupe pour ce site.|
 |Annulation du géodéplacement d’un site|SiteGeoMoveCancelled|Un administrateur SharePoint ou global annule correctement un déplacement géospatial de site SharePoint ou OneDrive. La fonctionnalité Multigéographie permet à une organisation de couvrir plusieurs géographies de centre de données Microsoft (appelées géos). Pour plus d’informations, voir [Fonctionnalités multigéographiques de OneDrive et SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
-|Modification d’une stratégie de partage|SharingPolicyChanged|Un administrateur SharePoint ou général a modifié une stratégie de partage SharePoint à l’aide du portail d’administration de Microsoft 365, du portail d’administration SharePoint ou de SharePoint Online Management Shell. Les modifications apportées aux paramètres de la stratégie de partage de votre organisation sont enregistrées. La stratégie modifiée est identifiée dans le champ **ModifiedProperties** des propriétés détaillées de l’enregistrement d’événement.|
+|Modification d’une stratégie de partage|SharingPolicyChanged|Un administrateur SharePoint ou général a modifié une stratégie de partage SharePoint à l’aide du Centre d’administration Microsoft 365, du Centre d’administration SharePoint ou de SharePoint Online Management Shell. Les modifications apportées aux paramètres de la stratégie de partage de votre organisation sont enregistrées. La stratégie modifiée est identifiée dans le champ **ModifiedProperties** des propriétés détaillées de l’enregistrement d’événement.|
 |Modification de la stratégie d’accès aux appareils|DeviceAccessPolicyChanged|Un administrateur SharePoint ou général a modifié la stratégie relative aux appareils non gérés de votre organisation. Cette stratégie contrôle l’accès à SharePoint, OneDrive et Microsoft 365 sur les appareils qui ne sont pas associés à votre organisation. La configuration de cette stratégie nécessite un abonnement Enterprise Mobility + Security. Pour plus d’informations, voir [Contrôler l’accès à partir des appareils non gérés](/sharepoint/control-access-from-unmanaged-devices).|
 |Agents utilisateurs exemptés modifiés|CustomizeExemptUsers|Un administrateur SharePoint ou général a personnalisé la liste des agents utilisateurs exemptés dans le Centre d'administration SharePoint. Vous pouvez spécifier les agents utilisateurs qui ne recevront pas de page web entière à indexer. Cela signifie que lorsqu'un agent utilisateur que vous avez spécifié comme exclus rencontre un formulaire InfoPath, le formulaire est renvoyé sous forme de fichier XML, au lieu d'une page web entière. Cela accélère l'indexation des formulaires InfoPath.|
 |Modification de la stratégie d’accès au réseau|NetworkAccessPolicyChanged|Un administrateur SharePoint ou général a modifié la stratégie d’accès basée sur l’emplacement (également appelée limite réseau approuvée) dans le Centre d’administration SharePoint ou à l’aide de SharePoint Online PowerShell. Ce type de stratégie détermine qui peut accéder aux ressources SharePoint et OneDrive de votre organisation en fonction des plages d’adresses IP autorisées que vous spécifiez. Pour plus d’informations, voir [Contrôler l’accès aux données SharePoint Online et OneDrive en fonction d’emplacements réseau définis](/sharepoint/control-access-based-on-network-location).|

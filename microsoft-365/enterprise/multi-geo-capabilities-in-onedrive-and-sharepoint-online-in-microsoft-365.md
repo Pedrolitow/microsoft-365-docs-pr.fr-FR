@@ -18,16 +18,16 @@ ms.collection:
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Étendez votre présence Microsoft 365 à plusieurs régions géographiques grâce aux fonctionnalités multi-géographiques dans OneDrive Online.
-ms.openlocfilehash: 8f42b071abef0602304f1a468190c33700fe3e82
-ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
+ms.openlocfilehash: 405f876317a6cec6defdf3f1a49b0dc32ac0add2
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48995908"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362281"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Fonctionnalités multi-géographiques OneDrive et SharePoint Online
 
-Les fonctionnalités Multi-Géo dans OneDrive et SharePoint Online permettent de contrôler les ressources partagées telles que les sites d’équipe SharePoint et les boîtes aux lettres de groupe Microsoft 365 stockées au repos dans un pays ou une région.
+Les fonctionnalités Multi-Géo dans OneDrive et SharePoint Online permettent de contrôler les ressources partagées telles que les sites d’équipe SharePoint et les boîtes aux lettres de groupe Microsoft 365 stockées au repos dans un emplacement géographique spécifié.
 
 Chaque utilisateur, une boîte aux lettres de groupe et un site SharePoint ont un emplacement recommandé de données (PDL) qui indique l’emplacement géographique où les données connexes sont stockées. Les donnée personnelle des utilisateurs (boîte aux lettres Exchange et OneDrive), ainsi que les sites de Groupes Microsoft 365 ou SharePoint qu’ils créent peuvent être stockées dans l’emplacement spécifié géographique pour répondre aux exigences de résidence de données. Vous pouvez[spécifier des différents administrateurs pour chaque emplacement géo](add-a-sharepoint-geo-admin.md).
 
@@ -43,7 +43,7 @@ La gestion de la fonctionnalité géo multiple est disponible via le Centre d’
 
 Lorsqu’un utilisateur crée un site connecté à un groupe SharePoint dans un environnement multigéographique, leur PDL permet de déterminer l’emplacement géo où le site et sa boîte aux lettres de groupe associés sont créés. (Si une valeur PDL de l’utilisateur n’a pas été définie ou a été définie sur l’emplacement géo qui n’a pas été configuré comme un emplacement satellite, puis le site et la boîte aux lettres sont créés dans l’emplacement central.)
 
-Les services Microsoft 365 autre qu’ Exchange, OneDrive et SharePoint ne sont pas multi-géographiques. Toutefois, les Groupes Microsoft 365 créés par ces services sont marqués avec PDL de l’application de création et leur boîte aux lettres de groupe Exchange et le Site de groupe O365 SharePoint fournis dans le géo correspondant. 
+Microsoft 365 autres services que Exchange, OneDrive, SharePoint et Teams ne sont pas multigéo géographiques. Toutefois, les groupes Microsoft 365 créés par ces services seront configurés avec la PDL du créateur et leur boîte aux lettres de groupe Exchange, le site SharePoint est configuré dans la géo correspondante. 
 
 ## <a name="managing-the-multi-geo-environment"></a>Gestion de l’environnement multi-Géo
 

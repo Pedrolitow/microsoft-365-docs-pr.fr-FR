@@ -1,6 +1,6 @@
 ---
 title: Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business
-description: Découvrez comment faire passer un abonnement Microsoft 365 Business CSP de la prévisualisation à la disponibilité générale.
+description: Découvrez comment faire passer un abonnement CSP Microsoft 365 Entreprise de la prévisualisation à la disponibilité générale.
 author: jasongroce
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ localization_priority: Normal
 audience: microsoft-business
 keywords: Microsoft 365 Business, Microsoft 365, SMB, transition d’un abonnement Fournisseur de solutions Cloud
 ms.date: 11/01/2017
-ms.openlocfilehash: 3f6c71edb50cc3c5509e61a83efb64185c10648d
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 47b65b2de9db0fd27e29272937bab2041eb67300
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925000"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363816"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Transition d’un abonnement Fournisseur de solutions Cloud Microsoft365Business
 
@@ -36,28 +36,28 @@ Si vous avez un abonnement Fournisseur de solutions Cloud Microsoft365Business v
     ![Abonnements du client dans l’Espace partenaires](../../media/pc_customer_subscriptions_1.png)
     
 3. Dans la page **Abonnements** de l’entreprise, sélectionnez **Ajouter un abonnement.**
-4. Dans la page **Nouvel abonnement,** **sélectionnez** Petite entreprise, puis **sélectionnez Microsoft 365 Business** dans la liste.
+4. Dans la page **Nouvel abonnement,** **sélectionnez** Petite entreprise, puis Microsoft 365 **Entreprise dans** la liste.
 5. Ajoutez le nombre de licences, puis sélectionnez **Suivant: révision** pour passer en revue l’abonnement, puis sélectionnez **Soumettre**.
 
     ![Passez en revue le nouvel abonnement à Microsoft 365Business](../../media/pc_customer_reviewnewsubscription.png)
 
-    Les **abonnements basés sur les licences** afficheront **Microsoft 365Business Preview** et **Microsoft 365Business**. Vous allez ensuite suspendre l’abonnement à la version d’aperçu.
+    Les **abonnements basés sur les licences** afficheront **Microsoft 365Business Preview** et **Microsoft 365Business**. Vous allez ensuite suspendre l’abonnement Preview.
 
 6. Sélectionnez **Microsoft 365 Business Preview**.
-7. Dans la page **Microsoft 365 Business aperçu,** sélectionnez **Suspendu** pour suspendre l’abonnement d’aperçu.
+7. Dans la page **Microsoft 365 aperçu commercial,** sélectionnez **Suspendu** pour suspendre l’abonnement d’aperçu.
 
     ![Suspendre l’abonnement à la version d’évaluation Microsoft 365Business](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Sélectionnez **Soumettre** pour confirmer.
 
-    Dans la page **Abonnements,** confirmez que **l’état Microsoft 365 Business aperçu** affiche **Suspendu.**
+    Dans la page **Abonnements,** confirmez que **l’état Microsoft 365 l’aperçu** professionnel affiche **Suspendu.**
 
     ![Vérifier que l’état de l’abonnement à la version d’évaluation est suspendu](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Si vous le souhaitez, vous pouvez également valider le contrat de licence. Pour cela, procédez comme suit:
     1. Sélectionnez **Utilisateurs et licences** dans la page **Abonnements** de la société.
     2. Dans la page **Utilisateurs et licences,** sélectionnez un utilisateur.
-    3. Dans la page de l’utilisateur, consultez la section Attribuer **des licences** et vérifiez qu’elle affiche **Microsoft 365 Business**.
+    3. Sur la page de l’utilisateur, consultez la section Attribuer des **licences** et vérifiez qu’elle affiche **Microsoft 365 Business**.
 
         ![Vérifier que la licence Microsoft 365Business est attribuée à l’utilisateur](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -73,7 +73,7 @@ Le tableau suivant récapitule l’impact sur les clients qui ne font pas la tra
 |-------|-----------------|--------------|---------------|---------------|
 | **État** | En période de grâce | Expiré      | Désactivé      | Supprimé |
 | **Impact sur les services**                                                        |
-| **Portail d’administration Microsoft365 Business** | Aucun impact sur les fonctionnalités | Aucun impact sur les fonctionnalités | Possibilité d'ajouter/de supprimer des utilisateurs, d’acheter des abonnements.</br> Ne peut pas attribuer/révoquer des licences. | L’abonnement du client et toutes les données sont supprimés. L’administrateur peut gérer d’autres abonnements payants. |
+| **Centre d’administration Microsoft 365** | Aucun impact sur les fonctionnalités | Aucun impact sur les fonctionnalités | Possibilité d'ajouter/de supprimer des utilisateurs, d’acheter des abonnements.</br> Ne peut pas attribuer/révoquer des licences. | L’abonnement du client et toutes les données sont supprimés. L’administrateur peut gérer d’autres abonnements payants. |
 | **Applications Office**                         | Aucun impact sur les utilisateurs finaux | Aucun impact sur les utilisateurs finaux | Office passe en mode de fonctionnalités réduites.</br> Les utilisateurs peuvent afficher uniquement les fichiers. | Office passe en mode de fonctionnalités réduites.</br> Les utilisateurs peuvent afficher uniquement les fichiers. |
 | **Services cloud (SharePoint Online, Exchange Online, Skype, Teams, etc.)** | Aucun impact sur les utilisateurs finaux | Aucun impact sur les utilisateurs finaux | Les utilisateurs finaux et les administrateurs n’ont aucun accès aux données dans le cloud. | L’abonnement du client et toutes les données sont supprimés. |
 | **Composants EM+S** | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | Aucun impact sur les administrateurs</br> Aucun impact sur les utilisateurs finaux | La fonctionnalité n’est plus appliquée.</br> Voir [Impacts sur les appareils mobiles à l’expiration de l’abonnement](#mobile-device-impacts-upon-subscription-expiration) et [Impact sur les PC Windows10à l’expiration de l’abonnement](#windows-10-pc-impacts-upon-subscription-expiration) pour plus d’informations. | La fonctionnalité n’est plus appliquée.</br> Voir [Impacts sur les appareils mobiles à l’expiration de l’abonnement](#mobile-device-impacts-upon-subscription-expiration) et [Impact sur les PC Windows10 à l’expiration de l’abonnement](#windows-10-pc-impacts-upon-subscription-expiration) pour plus d’informations. |
