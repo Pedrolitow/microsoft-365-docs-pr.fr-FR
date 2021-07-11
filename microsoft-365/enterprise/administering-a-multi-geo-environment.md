@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Les administrateurs peuvent découvrir comment administrer SharePoint et OneDrive services dans un environnement multigéogé.
-ms.openlocfilehash: 4c5215b855b8ca1840035b39fcfbddde419c13d8
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 9ef22a34881ef5c9c2ed72835bc88c1dbfe835b5
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362317"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363942"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administration d’un environnement multigéographique
 
@@ -40,7 +40,7 @@ BCS, le service Banque d’informations sécurisé et les applications ont des i
 
 ## <a name="compliance-admin-center"></a>Centre d’administration de la conformité
 
-Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365 d’administration de la conformité.](https://compliance.microsoft.com/)
+Il existe un centre central de conformité pour un client multigéogé : [Microsoft 365'administration de la conformité.](https://compliance.microsoft.com/)
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -72,15 +72,15 @@ Par défaut, tous les emplacements géographiques d’un environnement multigéo
 
 ## <a name="sharing"></a>Partage
 
-Les administrateurs peuvent définir et gérer des stratégies de partage pour chacun de leurs emplacements. Les sites OneDrive et SharePoint dans chaque emplacement géographique ne respectent que les paramètres de partage spécifiques de la zone géographique correspondante (par exemple, vous pouvez autoriser le [partage externe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) pour votre emplacement central, mais pas pour votre emplacement satellite, et inversement). Notez que les paramètres de partage ne vous permettent pas de configurer des limites de partage entre emplacements géographiques.
+Les administrateurs peuvent définir et gérer des stratégies de partage pour chacun de leurs emplacements. Les OneDrive et SharePoint sites dans chaque emplacement géographique respectent uniquement les paramètres de partage spécifiques à la région correspondants. (par exemple, vous pouvez autoriser le [partage externe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) pour votre emplacement central, mais pas pour votre emplacement satellite, et inversement). Notez que les paramètres de partage ne vous permettent pas de configurer des limites de partage entre emplacements géographiques.
 
 ## <a name="stream"></a>Stream
 
-Les vidéos téléchargées dans Stream sont stockées dans la OneDrive de la personne qui a téléchargé. Les enregistrements de réunion sont stockés dans le OneDrive de chaque participant qui enregistre la réunion.
+Les vidéos téléchargées sur Stream dans une conversation 1:1 sont stockées dans la OneDrive de la personne qui a téléchargé. Les enregistrements de réunion sont stockés dans le OneDrive de chaque participant qui enregistre la réunion.
 
 ## <a name="taxonomy"></a>Taxonomie
 
-Nous prenons en charge une [taxonomie](/sharepoint/managed-metadata) unifiée pour gérer les métadonnées dans l’entreprise à différents emplacements géographiques, les données de référence étant hébergées dans l’emplacement central de votre entreprise. Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
+Nous 2016 2013 2016 et 2016, et les métadonnées gérées par l’entreprise sont gérées par l’entreprise sur plusieurs emplacements géographiques, le master étant hébergé dans l’emplacement central de votre entreprise. [](/sharepoint/managed-metadata) Nous vous recommandons de gérer votre taxonomie globale à partir de l’emplacement central et d’ajouter uniquement des termes spécifiques à la taxonomie de l’emplacement satellite. Les termes de la taxonomie globale sont synchronisés avec les emplacements satellites.
 
 Pour plus de détails et pour obtenir des instructions de développement, voir [Gérer les métadonnées dans un client multigéographique](/sharepoint/dev/solution-guidance/multigeo-managedmetadata).
 

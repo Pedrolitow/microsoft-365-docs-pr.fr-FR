@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8cb1b30da84ece597235d8eef674a12208ab6456
-ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
+ms.openlocfilehash: 8063e1b0e76241df946a29ef2c5115bc0dc39aad
+ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53362658"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363766"
 ---
 # <a name="user-support"></a>Support pour les utilisateurs
 
@@ -83,7 +83,7 @@ Si un problème d’utilisateur doit être Microsoft Manged Desktop, il est util
 
 ### <a name="elevation-portal"></a>Portail d’élévation 
 
-Étant donné Microsoft Manged Desktop’appareils s’exécutent sur l’utilisateur standard par défaut, certaines tâches nécessitent l’élévation de privilèges. (Pour plus d’informations sur le contrôle de compte d’utilisateur, voir [Contrôle de compte d’utilisateur)](/windows/security/identity-protection/user-account-control/user-account-control-overview) Pour permettre au personnel de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) support technique d’effectuer des tâches tout en dépannage des problèmes pour les utilisateurs, nous fournissons un accès « juste-à-temps » à un compte d’administrateur. Ce mot de passe est accessible en toute sécurité uniquement par ceux que vous désignez et pivote toutes les deux heures.  
+Étant donné Microsoft Manged Desktop’appareils s’exécutent sur l’utilisateur standard par défaut, certaines tâches nécessitent l’élévation de privilèges. Pour plus d’informations sur le contrôle de compte d’utilisateur, voir [Contrôle de compte d’utilisateur.](/windows/security/identity-protection/user-account-control/user-account-control-overview) Afin que le personnel de [](../working-with-managed-desktop/end-user-support.md#elevation-requests) support puisse effectuer des tâches tout en dépannage des problèmes pour les utilisateurs, nous fournissons un accès « juste-à-temps » à un compte d’administrateur. Ce mot de passe est accessible en toute sécurité uniquement par ceux que vous désignez et pivote toutes les deux heures.  
 
 Pour savoir comment configurer les utilisateurs pour l’accès à ce portail, voir Activer les fonctionnalités [de support utilisateur.](../get-started/enable-support.md)
 
