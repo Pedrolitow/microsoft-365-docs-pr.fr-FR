@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Apprenez comment un administrateur global Microsoft 365 peut modifier l'adresse électronique et le nom d'affichage d'un utilisateur lorsque son nom change. "
-ms.openlocfilehash: fdba2191449bc3ea5aae5b5bde73fe5294b1f9d3
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3215044f94d3b4e77860434ab28eed8a36754f12
+ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228362"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53341019"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Modifier un nom d’utilisateur et une adresse de messagerie
 
@@ -40,7 +40,7 @@ Vous devrez peut-être modifier l’adresse de messagerie et le nom complet d’
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../../business-video/index.yml).
 
-Vous devez être un [administrateur général](about-admin-roles.md) pour effectuer ces étapes.
+Vous devez être un[administrateur général](about-admin-roles.md) pour effectuer ces étapes.
 
 ## <a name="change-a-users-email-address"></a>Modifier l’adresse de courrier d’un utilisateur
 
@@ -64,7 +64,7 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 1. Sélectionnez le nom de l’utilisateur, puis sous l’onglet **Compte**, sélectionnez **Gérer le nom d’utilisateur**.
 
-1. Dans la première case, tapez la première partie de la nouvelle adresse e-mail. Si vous avez ajouté votre propre domaine à Microsoft 365, choisissez le domaine pour le nouvel alias de messagerie en utilisant la liste déroulante.
+1. Dans la première zone, tapez la première partie de la nouvelle adresse de courrier. Si vous avez ajouté votre domaine à Microsoft 365, vous pouvez choisir le domaine du nouvel alias de messagerie dans la liste déroulante. [Découvrez comment ajouter un domaine](../setup/add-domain.md).
 
 1. Sélectionnez **Enregistrer les modifications**.
 
@@ -118,7 +118,7 @@ Vous devez être un [administrateur général](about-admin-roles.md) pour effect
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>.
+1. Dans le Centre d’administration, accédez à la page **Utilisateurs** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utilisateurs actifs</a>. 
 
 ::: moniker-end
 
@@ -177,6 +177,7 @@ Pour découvrir comment modifier le nom d'utilisateur de quelqu'un dans Active D
 
 ## <a name="related-content"></a>Contenu associé
 
-[Administrateurs : Réinitialiser un mot de passe pour un ou plusieurs utilisateurs](reset-passwords.md) (article)\
-[Ajouter une autre adresse email à un utilisateur](../email/add-another-email-alias-for-a-user.md) (article)\
-[Créer une boîte aux lettres ](../email/create-a-shared-mailbox.md)partagée (article)
+[Ajouter un domaine](../setup/add-domain.md)
+[Admins : réinitialiser un mot de passe pour un ou plusieurs utilisateurs](reset-passwords.md)
+[Ajouter une autre adresse e-mail à un utilisateur](../email/add-another-email-alias-for-a-user.md)
+[Créer une boîte aux lettres partagée](../email/create-a-shared-mailbox.md)

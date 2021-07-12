@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilisez une stratégie de rétention pour garder un contrôle efficace sur le contenu que les utilisateurs génèrent par courriers électroniques, documents et conversations. Conservez ce que vous voulez et supprimez le reste.
-ms.openlocfilehash: a9b348d51f147d5f228e6dbb643b7bedd2eb8c8e
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: 97b90cc84e2b14e5c63779ea8b941a5ffe64bcd7
+ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256530"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53362329"
 ---
 # <a name="create-and-configure-retention-policies"></a>Créer et configurer des stratégies de rétention
 
@@ -75,7 +75,7 @@ Lorsque vous avez plusieurs stratégies de rétention et que vous utilisez égal
     - **Conversations Teams** : messages provenant de conversations privées individuelles, de conversations de groupe et de conversations de réunion.
     - **Messages de canal privé Teams** : messages provenant de conversations de canal privé et de réunions de canal privé. Cette option est actuellement déployée en préversion et si vous ne la voyez pas s'afficher, réessayez dans quelques jours.
     
-   Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](#a-policy-that-applies-to-entire-locations). Vous pouvez toutefois affiner cette sélection grâce aux [options **Choisir** et **Exclure**](#a-policy-with-specific-inclusions-or-exclusions). Toutefois, avant de modifier la valeur par défaut, n’ignorez pas les conséquences suivantes pour une stratégie de rétention qui supprime des messages lorsqu’elle est configurée pour inclut ou exclut :
+   Par défaut, [toutes les équipes et tous les utilisateurs sont sélectionnés](#a-policy-that-applies-to-entire-locations), mais vous pouvez affiner cela en sélectionnant les options **Modifier** pour configurer une stratégie de rétention pour [inclusions ou exclusions spécifiques](#a-policy-with-specific-inclusions-or-exclusions). Toutefois, avant de modifier la valeur par défaut, n’ignorez pas les conséquences suivantes pour une stratégie de rétention qui supprime des messages lorsqu’elle est configurée pour inclut ou exclut :
     
     - Pour les messages de conversation de groupe et les messages de canal privé, étant donné qu'une copie des messages est enregistrée dans la boîte aux lettres de chaque utilisateur participant à la conversation, des copies de messages continueront d'être renvoyées dans les résultats d'eDiscovery pour les utilisateurs auxquels la politique n'a pas été attribuée.
     - Pour les utilisateurs qui n’ont pas reçu la stratégie, les messages supprimés sont renvoyés dans les résultats de recherche de leur Teams, mais n’affichent pas le contenu du message suite à la suppression définitive de la stratégie affectée aux utilisateurs.
@@ -94,9 +94,9 @@ Pour obtenir des détails techniques sur le fonctionnement de la rétention pour
 
 - Bien que vous puissiez sélectionner l’option pour démarrer la période de rétention lorsque les éléments ont été modifiés pour la dernière fois, la valeur **Lorsque les éléments ont été créés** est toujours utilisée. Pour les messages qui sont modifiés, une copie du message d’origine est enregistrée avec son timestamp d’origine pour identifier les cas où ce message avant modification a été créé, et le message après modification dispose d’un timestamp plus nouveau.
 
-- Lorsque vous sélectionnez **Choisir les équipes** pour l’emplacement des **messages de canal d’équipes**, les groupes Microsoft 365, qui ne sont pas des équipes, peuvent s’afficher. Ne sélectionnez pas ces groupes.
+- Lorsque vous sélectionnez **Modifier** pour **l’emplacement du canal de messages Teams,** vous devriez voir les groupes Microsoft 365 qui ne sont également pas des équipes. Ne sélectionnez pas ces groupes.
 
-- Lorsque vous sélectionnez **Choisir les utilisateurs pour l’emplacement des conversations Teams**, les invités et les utilisateurs qui n’utilisent pas de boîte aux lettres peuvent s’afficher. Les stratégies de rétention ne sont pas conçues pour ces utilisateurs. Ne les sélectionnez pas.
+- Lorsque vous sélectionnez **Modifier** pour l’emplacement des conversations Teams, vous devriez voir les invités et utilisateurs qui n’utilisent pas de boîte aux lettres. Les stratégies de rétention ne sont pas conçues pour ces utilisateurs. Ne les sélectionnez pas.
 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Stratégie de rétention supplémentaire requise pour la prise en charge de Teams
@@ -125,17 +125,22 @@ Il est possible qu’une stratégie de conservation appliquée aux groupes Micro
 
 2. Sélectionnez **Nouvelle stratégie de rétention** pour créer une stratégie de rétention.
 
-3. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu. 
+3. Pour **Choisissez les emplacements pour appliquer la page de stratégie** basculez vers l’un ou les deux emplacements pour Yammer:**messages de la communauté Yammer** et **les utilisateurs de messages Yammer**.
     
-    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
-
-4. Sur la page **Choisir les emplacements**, cliquez sur **Me laisser choisir des emplacements spécifiques**. Basculez ensuite sur l’un ou les deux emplacements de Yammer: **message de communauté Yammer** et **messages utilisateur Yammer**.
+    > [!IMPORTANT]
+    > Bien que vous puissiez créer une stratégie de rétention uniquement pour l’utilisateur de messages Yammer, une stratégie de rétention pour cet emplacement peut supprimer des messages de la communauté de l’application Yammer pour tous les membres de la communauté.
+    > 
+    > Si vous choisissez cette option et que la stratégie de rétention sera configurée pour supprimer les messages utilisateur, assurez-vous de bien comprendre cette implication. Pour plus d’informations, consultez [Fonctionnement de la rétention avec Yammer](retention-policies-yammer.md#how-retention-works-with-yammer).
     
     Par défaut, tous les utilisateurs et communautés sont sélectionnés, mais vous pouvez les affiner en spécifiant les groupes et les utilisateurs à inclure ou à exclure.
     
     Pour les messages privés Yammer : 
     - Si vous conservez la valeur par défaut à **Tous**, les utilisateurs invités B2B Azure ne sont pas inclus. 
-    - Vous pouvez appliquer une stratégie de rétention à des utilisateurs externes si vous sélectionnez **Choisir Utilisateur**.
+    - Si vous sélectionnez **Modifier** pour la colonne **Inclus**, vous pouvez appliquer une stratégie de rétention pour les utilisateurs externes si vous connaissez leur compte.
+
+4. Sur la page **Indiquez si vous souhaitez conserver le contenu et/ou le supprimer** de l’assistant, spécifiez les options de configuration pour la conservation et la suppression du contenu. 
+    
+    Vous pouvez créer une stratégie de rétention qui conserve uniquement le contenu sans le supprimer, conserve puis supprime le contenu après une période donnée, ou supprime simplement le contenu après une période donnée. Si vous souhaitez en savoir plus, voir [Paramètres pour la conservation et la suppression du contenu](#settings-for-retaining-and-deleting-content) sur cette page.
 
 5. Terminez l’assistant pour enregistrer vos paramètres.
 
@@ -167,7 +172,7 @@ Utilisez les instructions suivantes pour les stratégies de rétention qui s’a
 
 2. Sélectionnez **Nouvelle stratégie de rétention** pour démarrer l’assistant de création de stratégie de rétention, puis nommez votre nouvelle stratégie de rétention.
 
-3. Pour la page **Choisir les emplacements**, activez ou désactivez les emplacements, à l’exception des emplacements de Teams. Vous pouvez laisser pour chaque emplacement la valeur par défaut [Appliquer la stratégie à l’intégralité de l’emplacement](#a-policy-that-applies-to-entire-locations) ou [Spécifier des inclusions et des exclusions](#a-policy-with-specific-inclusions-or-exclusions).
+3. Pour la page **Choisir les emplacements pour appliquer la stratégie**, activez ou désactivez les emplacements, à l’exception des emplacements de Teams. Vous pouvez laisser pour chaque emplacement la valeur par défaut [Appliquer la stratégie à l’intégralité de l’emplacement](#a-policy-that-applies-to-entire-locations) ou [Spécifier des inclusions et des exclusions](#a-policy-with-specific-inclusions-or-exclusions).
 
     Informations spécifiques aux emplacements :
     - [Messagerie Exchange et dossiers publics Exchange](#configuration-information-for-exchange-email-and-exchange-public-folders)
