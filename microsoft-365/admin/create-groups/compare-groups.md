@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Les membres du groupe Microsoft 365 disposent d'une messagerie de groupe et d'un espace de travail partagé pour les conversations, les fichiers et les événements du calendrier, du flux et du planificateur.
-ms.openlocfilehash: 038c4b9f6d9d28e62c0fb9b8f117db96ac42ddfb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903839"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377180"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
@@ -61,6 +61,8 @@ Les groupes de distribution peuvent être [mis à niveau vers des groupes Micros
 
 Des groupes de distribution peuvent être ajoutés à une équipe dans Microsoft Teams.
 
+Les groupes Microsoft 365 ne peuvent pas être membres des groupes de distribution.
+
 ## <a name="security-groups"></a>Groupes de sécurité
 
 Les [Groupes de sécurité](../email/create-edit-or-delete-a-security-group.md) sont utilisés pour accorder l’accès aux ressources Microsoft 365 telles que SharePoint. Ils peuvent simplifier l’administration, car vous n’avez qu'à gérer le groupe qu’au lieu d’ajouter de manière individuelle des utilisateurs dans chaque ressource.
@@ -70,6 +72,8 @@ Les groupes de sécurité peuvent contenir des utilisateurs ou des appareils. La
 Les groupes de sécurité peuvent être [configurés pour l’appartenance dynamique à Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), ce qui permet aux membres d’un groupe ou à des appareils d’être ajoutés ou supprimés automatiquement en fonction de leurs attributs, tels que le service, le lieu ou le titre, ou les attributs d'appareils comme la version du système d'exploitation.
 
 Les groupes de sécurité peuvent être ajoutés à une équipe.
+
+Les groupes Microsoft 365 ne peuvent pas être membres des groupes de sécurité.
 
 ## <a name="mail-enabled-security-groups"></a>Groupes de sécurité à extension messagerie
 

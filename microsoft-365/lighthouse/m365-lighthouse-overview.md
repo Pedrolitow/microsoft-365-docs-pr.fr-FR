@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés( MSP), découvrez comment les Microsoft 365 Lighthouse peuvent vous aider à sécuriser et gérer les clients dans un seul emplacement.
-ms.openlocfilehash: a8af12e2fecade0b78f95f1d38bda34f7934ccd6
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: af03495f7bf47fe3c72ebb7487b8709d2e2b0736
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395190"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409031"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>Vue d’ensemble Microsoft 365 Lighthouse
 
@@ -42,7 +42,7 @@ Notez que les fournisseurs indirects CSP ne sont actuellement pas pris en charge
 Pour plus d’informations sur le programme CSP, voir la vue [d fournisseur de solutions Cloud du programme.](/partner-center/csp-overview)
 
 > [!NOTE]  
-> Une offre similaire, Azure Azure Azure, aide les fournisseurs de services à fournir des services gérés pour les services Azure à l’aide d’outils de gestion complets et robustes intégrés à la plateforme Azure. Pour en savoir plus, consultez [l’azure Azure Azure ?](/azure/lighthouse/overview)   
+> Une offre similaire, Azure Azure Azure, aide les fournisseurs de services à fournir des services gérés pour les services Azure à l’aide d’outils de gestion complets et robustes intégrés à la plateforme Azure. Pour plus d’informations, voir [Qu’est-ce qu’Azure Azure ?](/azure/lighthouse/overview)   
 
 ## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 Lighthouse avantages
 

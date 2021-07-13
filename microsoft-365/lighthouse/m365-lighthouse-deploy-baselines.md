@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés (MSP) utilisant Microsoft 365 Lighthouse, découvrez comment déployer des Microsoft 365 Lighthouse de référence.
-ms.openlocfilehash: 0bda7edec2a200e51e734db64e2b703a027e57bb
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: f329993443b4bd3003a3e8460d77f9b73ac10fc6
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53395195"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409103"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Déployer les Microsoft 365 Lighthouse base de référence 
 
@@ -61,5 +61,5 @@ Sélectionnez **Lignes de base** dans le volet de navigation gauche pour ouvrir 
 
 ## <a name="related-content"></a>Contenu associé
 
-[Vue d’ensemble de l’utilisation des lignes de base pour déployer](m365-lighthouse-deploying-standard-tenant-configurations-overview.md) des configurations client standard (article)\
+[Vue d’ensemble de l’utilisation des lignes de base pour déployer](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) des configurations client standard (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
