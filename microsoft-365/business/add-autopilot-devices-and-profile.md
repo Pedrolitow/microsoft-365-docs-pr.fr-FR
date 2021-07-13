@@ -19,18 +19,19 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Découvrez comment utiliser Windows AutoPilot pour configurer de nouveaux appareils Windows 10 pour votre entreprise afin qu’ils sont prêts à être utilisés par les employés.
-ms.openlocfilehash: e178e7df220e89605502d9ed400265bcd963e57e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f160ddcd1e41bd44c908ecc8bbd30a9819f76902
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636103"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393436"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Utiliser le guide étape par étape pour ajouter des appareils et un profil Autopilot
 
@@ -71,7 +72,7 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     Pour plus d'informations, voir [Fichier CSV de liste d'appareils](../admin/misc/device-list.md). Vous pouvez également télécharger un exemple de fichier sur la page **Charger un fichier .csv avec la liste des appareils**. 
     
 > [!NOTE]
-> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit (PKID) Windows, car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID null dans le fichier CSV de sortie est totalement correct. Seuls le numéro de série et le hachage matériel seront remplis.
+> Ce script utilise WMI pour récupérer les propriétés nécessaires pour qu’un client enregistre un appareil Windows Autopilot. Notez qu’il est normal que le fichier CSV résultant ne collecte pas de valeur d’ID de produit (PKID) Windows car cela n’est pas obligatoire pour inscrire un appareil et la valeur PKID étant NULL dans le fichier CSV de sortie est totalement correct. Seuls le numéro de série et le hachage matériel seront remplis.
     
 4. Dans la page **Attribuer un profil,** vous pouvez choisir un profil existant ou en créer un nouveau. Si vous n’en avez pas encore, vous serez invité à en créer un. 
     
@@ -79,7 +80,7 @@ Si vous n’avez pas encore créé de groupes d’appareils ou de profils, la me
     
     Les fonctionnalités par défaut sont requises et sont définies automatiquement. Les fonctionnalités par défaut sont :
     
-    - Ignorez l’inscription de Cortana, OneDrive et OEM.
+    - Ignorez Cortana, OneDrive et l’inscription OEM.
     
     - Créez une expérience de connexion avec l'identité de votre entreprise.
     

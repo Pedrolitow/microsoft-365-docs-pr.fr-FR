@@ -15,16 +15,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Fournissez à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation.
-ms.openlocfilehash: 4282cb71bd5b2847528d651e0ab94b5fe966cedf
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: dedc39d9c82f66d64660f66be8e77ba954246e09
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650031"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392838"
 ---
 # <a name="manage-industry-news"></a>Gérer les actualités du secteur
 
-Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil Bing et de la page Microsoft Edge nouvel onglet (à partir de la publication de Edge 87). 
+Pour fournir à vos utilisateurs des titres d’actualités à jour sur votre secteur d’activité et les informations de votre organisation, utilisez le service Actualités pour activer un flux d’actualités personnalisé pour votre organisation. Vous pouvez également activer un e-mail de mises à jour du secteur quotidien et gérer les paramètres de la page d’accueil Bing et Microsoft Edge page nouvel onglet. 
 
 ## <a name="what-your-users-will-see"></a>Ce que vos utilisateurs voient
 
@@ -44,7 +44,7 @@ Ils peuvent également consulter les actualités de l’entreprise, du secteur e
 
 En tant qu’administrateur, vous contrôlez les paramètres de flux d’actualités de votre organisation, y compris l’industrie sélectionnée et la page d’accueil Bing, la page du nouvel onglet Microsoft Edge (à partir de la publication de Edge 87) et les expériences de messagerie. 
 
-1. Dans le Microsoft 365 d’administration, Paramètres Les actualités des services des  >  **paramètres**  >    >  [**de l’organisation.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
+1. In the Centre d’administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. Dans le **panneau Actualités,** cliquez sur **l’onglet** Général.
 
@@ -60,7 +60,7 @@ En tant qu’administrateur, vous contrôlez les paramètres de flux d’actuali
 
 Vous pouvez envoyer une mise à jour quotidienne par courrier électronique avec les actualités du secteur pertinentes dans la boîte de réception de vos utilisateurs. Pour définir des mises à jour quotidiennes du courrier électronique pour les utilisateurs : 
 
-1. Dans le Microsoft 365 d’administration, Paramètres Les actualités des services des  >  **paramètres**  >    >  [**de l’organisation.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
+1. In the Centre d’administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. Dans le **panneau Actualités,** cliquez sur **l’onglet Mises à jour du secteur.** 
 
@@ -72,7 +72,7 @@ Vous pouvez envoyer une mise à jour quotidienne par courrier électronique avec
 
 Vous pouvez personnaliser la page Bing page d’accueil pour inclure des actualités sur votre secteur d’activité. 
 
-1. Dans le Microsoft 365 d’administration, Paramètres Les actualités des services des  >  **paramètres**  >    >  [**de l’organisation.**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 
+1. In the Centre d’administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [**News**](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews). 
 
 1. Dans le **panneau Actualités,** cliquez sur **l’onglet Bing page** d’accueil, puis sélectionnez Inclure Bing page **d’accueil.** 
 
@@ -81,9 +81,9 @@ Vous pouvez personnaliser la page Bing page d’accueil pour inclure des actuali
 ## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge page nouvel onglet 
 Lorsque vos utilisateurs se connectent à Microsoft Edge (version 87 ou supérieure) avec un compte scolaire ou scolaire valide, ils peuvent voir des actualités adaptées à votre organisation.
 
-1. Dans le Microsoft 365 d’administration, Paramètres Les actualités des services des  >  **paramètres**  >    >  [de l’organisation.](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)
+1. In the Centre d’administration Microsoft 365, go to **Paramètres**  >  **Org settings**  >  **Services**  >  [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. Dans le **panneau Actualités,** cliquez **sur Microsoft Edge page nouvel onglet.**
-3. Sélectionnez **Autoriser Office 365 contenu sur la page nouvel onglet.** Lorsque ce paramètre est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher des informations provenant de Office 365, notamment des fichiers recommandés et récents, ainsi que des sites SharePoint fréquemment utilisés et d’autres informations.
+3. Sélectionnez **Autoriser Office 365 contenu sur la page nouvel onglet.** Lorsqu’il est activé, les utilisateurs peuvent personnaliser leur nouvel onglet pour afficher des informations provenant de Office 365, notamment des fichiers recommandés et récents, ainsi que des sites SharePoint fréquemment utilisés et d’autres informations.
 4. Sélectionnez **Afficher les informations de l’entreprise et les actualités du secteur sur la page nouvel onglet.** Des articles d’actualités sur votre organisation et votre secteur d’activité s’affichent pour les utilisateurs qui choisissent de consulter les articles sous leur nouvel onglet.
 
 ## <a name="related-articles"></a>Articles connexes

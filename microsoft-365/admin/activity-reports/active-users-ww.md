@@ -11,29 +11,31 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Découvrez comment obtenir un rapport Utilisateurs actifs à l’aide du tableau de bord rapports Microsoft 365 dans le Centre d’administration Microsoft 365 et connaître le nombre de licences de produit utilisées.
-ms.openlocfilehash: 8ea9feeb18cb1885023ec14f1ffb4d77b2775877
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: Découvrez comment obtenir un rapport Utilisateurs actifs à l’aide du tableau de bord rapports Microsoft 365 dans le Centre d’administration Microsoft 365 et découvrez le nombre de licences de produits utilisées.
+ms.openlocfilehash: d127ddccd4944279052c628cbee9cc37dd3c8358
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924370"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391362"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>Évaluer le rapport Microsoft 365 utilisateurs actifs
 
-Le tableau Microsoft 365 **de rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
+Le tableau de bord Microsoft 365 **rapports de** gestion des données vous présente la vue d’ensemble de l’activité sur les produits de votre organisation. Il vous permet d'explorer les rapports au niveau de chaque produit afin d'offrir des informations plus précises sur les activités pour chaque produit. Consultez [la rubrique Présentation des rapports](activity-reports.md).
   
 Par exemple, vous pouvez utiliser le rapport **Utilisateurs actifs** pour déterminer le nombre des licences de produit utilisées par les membres de votre organisation, et approfondir votre recherche pour obtenir des informations sur les utilisateurs et les produits utilisés. Ce rapport peut aider les administrateurs à identifier les produits sous-utilisés ou les utilisateurs nécessitant une formation ou des informations supplémentaires. 
   
 > [!NOTE]
-> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour voir les rapports.  
+> Vous devez être administrateur général, lecteur général ou lecteur de rapports dans Microsoft 365 ou administrateur Exchange, SharePoint, service Teams, Teams Communications ou administrateur Skype Entreprise pour consulter les rapports.  
 
 ## <a name="how-to-get-to-the-active-users-report"></a>Accéder au rapport Utilisateurs actifs
 
@@ -65,4 +67,4 @@ Si votre abonnement est géré par 21Vianet, les Yammer.
 
 
 
-Si la politique de votre organisation vous empêche de consulter les rapports sur lesquels figurent des informations propres aux utilisateurs, vous pouvez modifier les paramètres de confidentialité de tous ces rapports. Consultez la section **Comment puis-je masquer les détails** au niveau de l’utilisateur ? dans rapports d’activité [dans Microsoft 365 centre d’administration.](activity-reports.md)  
+Si la politique de votre organisation vous empêche de consulter les rapports sur lesquels figurent des informations propres aux utilisateurs, vous pouvez modifier les paramètres de confidentialité de tous ces rapports. Consultez la section **Comment puis-je masquer les détails** au niveau de l’utilisateur ? dans rapports d’activité [dans le Centre d’administration Microsoft 365](activity-reports.md).  

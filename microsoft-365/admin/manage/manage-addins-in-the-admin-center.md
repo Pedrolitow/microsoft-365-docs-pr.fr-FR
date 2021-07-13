@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: ed9086c77cdf10435bae09f76493af6058d2d758
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: aad68d37fb23c26ef1a1ca1ba7dfc5d4e2a40bfe
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314386"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392862"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -37,7 +39,7 @@ Pour plus d’informations sur l’installation des modules complémentaires à 
   
 ## <a name="add-in-states"></a>États de complément
 
-Un add-in peut être à **l’état « On** » ou « **Off** ».
+Un add-in peut être à **l’état On** ou **Off.**
   
 | État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
@@ -51,14 +53,14 @@ Envisagez de supprimer un add-in si personne ne l’utilise plus. Par exemple, l
 
 Vous pouvez également supprimer un module qui a été déployé.
 
-1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & les autres.**
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
 
     > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en **Paramètres**  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
 2. Sélectionnez le add-in déployé.
 
-3. Cliquez sur **Supprimer le add-in.** Supprimez le bouton de la fonction De ment dans le coin inférieur droit.
+3. Cliquez sur **Supprimer le add-in.** Supprimez le bouton de la fonction de la fonction dans le coin inférieur droit.
 
 4. Validez vos sélections, puis sélectionnez **Supprimer le complément**.
 
@@ -66,7 +68,7 @@ Vous pouvez également supprimer un module qui a été déployé.
 
 Après le déploiement, les administrateurs peuvent également gérer l’accès des utilisateurs aux add-ins.
 
-1. Dans le Centre d’administration, allez sur la page **Paramètres**  >  **Services & les autres.**
+1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
 
     > [!NOTE]
     > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en **Paramètres**  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
@@ -77,7 +79,7 @@ Après le déploiement, les administrateurs peuvent également gérer l’accès
 
 4. Enregistrez les modifications.
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de add-ins en Office store sur tous les clients (sauf Outlook)
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>Empêcher les téléchargements de Office sur tous les clients (sauf Outlook)
 
 > [!NOTE]
 > Outlook’installation du module est gérée par [un processus différent.](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)
@@ -132,13 +134,13 @@ Pour empêcher un utilisateur de se signer avec un compte Microsoft, vous pouvez
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>En savoir plus sur l’expérience de l’utilisateur final avec les add-ins
 
-Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office.](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
+Une fois que vous avez déployé un application, vos utilisateurs finaux peuvent commencer à l’utiliser dans leurs applications Office (voir Démarrer à l’aide de [votre Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Le add-in apparaît sur toutes les plateformes qu’il prend en charge.
   
 Si le complément prend en charge les commandes de complément, celles-ci apparaissent sur le ruban Office. Dans l'exemple suivant, la commande **Search Citation** (Rechercher une citation) apparaît pour le complément **Citations**. 
 
 ![Office ruban avec citations de recherche](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
-Si le add-in déployé ne prend pas en charge les commandes de add-in ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
+Si le add-in déployé ne prend pas en charge les commandes de ce dernier ou si vous souhaitez afficher tous les modules, vous pouvez les afficher via Mes **modules.** 
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>Dans Word 2016, Excel 2016 ou PowerPoint 2016
 
@@ -158,7 +160,7 @@ Si le add-in déployé ne prend pas en charge les commandes de add-in ou si vous
   
 2. Sélectionnez **Géré par l’administrateur** dans le volet de navigation gauche. 
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Déployer des add-ins dans le Centre d’administration](./manage-deployment-of-add-ins.md) (article)\
 En savoir plus sur la création et la [création de Office de développement](/office/dev/add-ins/overview/office-add-ins) (article)\

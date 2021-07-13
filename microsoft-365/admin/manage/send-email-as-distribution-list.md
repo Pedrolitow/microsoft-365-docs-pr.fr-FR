@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Envoyez un courrier électronique en tant que liste de distribution Microsoft 365 de sorte que lorsqu’un membre répond à un message, il semble qu’il soit issu de la liste de distribution.
-ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c77455b5b990a9c35fc7e47ee81cc9ddef4d0a23
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635713"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53392514"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Envoyer un courrier électronique en tant que liste de distribution
 
@@ -36,7 +37,7 @@ Dans Microsoft 365, vous pouvez envoyer des messages électroniques en tant que 
 
 Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une liste de distribution Microsoft 365 et que vous avez reçu l’autorisation Envoyer en tant que.
   
- Administrateurs : assurez-vous que vous avez suivi les **étapes** de la rubrique Ajouter un utilisateur ou un [contact Microsoft 365](../email/add-user-or-contact-to-distribution-list.md) à une liste et autoriser les membres à envoyer des courriers électroniques en tant que rubriques de groupe [Microsoft 365,](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) et que vous avez ajouté les personnes appropriées à la liste de distribution.
+ Administrateurs : assurez-vous que vous avez suivi les **étapes** de la rubrique Ajouter un utilisateur ou un [contact Microsoft 365](../email/add-user-or-contact-to-distribution-list.md) à une liste et autoriser les membres à envoyer des courriers électroniques en tant que rubriques de groupe [Microsoft 365,](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) puis ajoutez les personnes appropriées à la liste de distribution.
   
 ## <a name="outlook-on-the-web"></a>Outlook sur le web
 
@@ -48,9 +49,9 @@ Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une
     
 4. At the bottom of the message, select **More** \> **Show from**.<br/> ![Sélectionnez Plus, puis choisissez Afficher à partir de](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Cliquez avec le bouton droit sur l’adresse de l’utilisateur de provenance, par `Ina@weewalter.me` exemple, et choisissez **Supprimer.**<br/> ![Supprimer l’alias FROM](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Cliquez avec le bouton droit sur l’adresse de l’utilisateur de l’utilisateur , par `Ina@weewalter.me` exemple, et choisissez **Supprimer.**<br/> ![Supprimer l’alias FROM](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. Tapez ensuite l’adresse de la liste de distribution telle support@contoso.com, puis envoyez le message. La prochaine fois que vous répondrez à partir de la liste de distribution, son adresse apparaîtra en tant qu’option dans la **liste De.**<br/>![L’alias de la boîte aux lettres partagée s’affiche](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. Tapez ensuite l’adresse de la liste de distribution telle que support@contoso.com et envoyez le message. La prochaine fois que vous répondrez à partir de la liste de distribution, son adresse apparaîtra en tant qu’option dans la **liste De.**<br/>![L’alias de la boîte aux lettres partagée s’affiche](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
 
 ## <a name="outlook"></a>Outlook
 
@@ -64,6 +65,6 @@ Avant d’effectuer ces étapes, assurez-vous que vous avez été ajouté à une
 
 ## <a name="related-content"></a>Contenu associé
 
-[Créer, modifier ou supprimer un groupe de](../email/create-edit-or-delete-a-security-group.md) sécurité dans le Centre d’administration Microsoft 365 (article)\
+[Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d’administration Microsoft 365 (article)\
 [Collaboration par courrier](../email/email-collaboration.md) électronique (article)\
 [Ajouter un utilisateur ou un contact à un groupe de distribution](../email/add-user-or-contact-to-distribution-list.md) (article)

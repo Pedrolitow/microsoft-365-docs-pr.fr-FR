@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
 description: Obtenez le rapport SharePoint’utilisation du site pour connaître le nombre de fichiers stockés par les utilisateurs dans les sites SharePoint, le nombre d’utilisateurs activement utilisés et le stockage total utilisé.
-ms.openlocfilehash: 62bf01c867b7e9217d25e655af6633a72773caa1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d2c549dbb5ab456dddedf0422cd8aebafab1987d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241867"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393330"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-site-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation SharePoint site
 
@@ -48,11 +50,11 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
   
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |URL du site  <br/> |URL complète du site. <br/> |
-|Supprimé  <br/> |État de suppression du site. La suppression effective des sites prend au minimum 7 jours.  <br/> |
+|Deleted  <br/> |État de suppression du site. La suppression effective des sites prend au minimum 7 jours.  <br/> |
 |Propriétaire du site  <br/> |Nom d’utilisateur du propriétaire principal du site.   <br/> |
 |Nom principal du propriétaire du site  <br/> |Adresse de messagerie du propriétaire du site. <br/> |
 |Date de la dernière activité (UTC)  <br/> | Date de la dernière détection de l’activité de fichier ou de l’affichage d’une page sur le site.  <br/> |
@@ -64,7 +66,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 |Fichiers actifs  <br/> | Nombre de fichiers actifs sur le site.<br/> REMARQUE : si des fichiers ont été supprimés pendant la période spécifiée pour le rapport, le nombre de fichiers actifs affichés dans le rapport peut être supérieur au nombre actuel de fichiers sur le site.  <br/> |
 |Stockage utilisé (Mo)  <br/> |Quantité de stockage actuellement utilisée sur le site.  <br/>|
 |Stockage alloués (Mo)  <br/> |Quantité maximale de stockage allouée au site.  <br/>|
-|Vues de page  <br/> |Nombre de fois où des pages ont été vues sur le site.  <br/>|
+|Vues de page  <br/> |Nombre de fois que des pages ont été vues sur le site.  <br/>|
 |Pages visitées  <br/> |Nombre de pages uniques visitées sur le site.  <br/>|
 |Nombre de liens anonymes  <br/> |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « Tout le monde avec le lien » sur le site.  <br/>|
 |Nombre de liens d’entreprise  <br/> |Nombre de fois que des documents ou des dossiers sont partagés à l’aide de « Personnes de l’organisation avec le lien » sur le site.  <br/>|

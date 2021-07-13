@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Apprenez à modifier le thème par défaut pour le haut de la barre de navigation dans Microsoft 365 et personnalisez-le pour qu’il corresponde au logo ou à la couleur de votre entreprise.
-ms.openlocfilehash: 03d62af47e750f9ca8eacc4391d134c48216e691
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 62a658929faaf130e85df5a2eb9637bf6a6c8a0a
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227782"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393534"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personnaliser le thème Microsoft 365 pour votre organisation
 
@@ -103,7 +104,7 @@ Dans la page **Couleurs,** vous pouvez définir les couleurs par défaut et choi
 
 :::image type="content" source="../../media/default-theme-colors1.png" alt-text="Capture d’écran : onglet Couleurs affichant les couleurs de thème par défaut pour votre organisation":::
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mon organisation possède déjà un thème pour tous les employés. Comment cela va-t-il changer ?
 

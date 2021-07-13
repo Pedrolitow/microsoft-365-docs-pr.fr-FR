@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Découvrez comment obtenir un rapport d’utilisation du navigateur Microsoft à l’aide du tableau de bord Microsoft 365 rapports microsoft dans le Centre d’administration Microsoft 365.
-ms.openlocfilehash: f2d8d8347e7b71375958c56f6649fbb911155d46
-ms.sourcegitcommit: b42dd3e706ebf9638cd893b35f75eaa56dd8fd7e
+ms.openlocfilehash: 2f6f287e5a8642d94c9581fc73525b7bfaafb41b
+ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53125410"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53377204"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>Microsoft 365 Rapports dans le Centre d’administration - Utilisation du navigateur Microsoft
 
@@ -36,16 +36,6 @@ Le tableau de bord Microsoft 365 **rapports d’entreprise** vous présente une 
 
 1. Dans le centre d’administration, accédez à la page **Rapports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilisation</a>. 
 2. Dans la page d’accueil du tableau de bord, cliquez sur le bouton Afficher **plus** sur la carte d’utilisation du navigateur Microsoft.
-
-## <a name="how-to-notify-users-to-upgrade-their-browser"></a>Comment avertir les utilisateurs de la mise à niveau de leur navigateur
-
-![Flux d’action du rapport d’utilisation du navigateur Microsoft](../../media/1ef4eb08-18b8-4dda-aa15-1aad013ecd70.png)
-
-Les administrateurs globaux peuvent choisir d’envoyer des messages aux utilisateurs à l’aide des services Microsoft 365 sur Edge Legacy (non pris en compte) et Internet Explorer (bientôt non pris en compte). Ce message ciblé informe les utilisateurs que la prise en charge de ces navigateurs prendra fin prochainement, et il est lié à un article de support avec des informations sur Microsoft Edge et des étapes simples à suivre pour changer de navigateur. 
-
-Vous pouvez trouver cette fonctionnalité sur la page de rapport. Une fois le message créé, les utilisateurs sont avertis à la fréquence spécifiée jusqu’au 17 août 2021. Vous pouvez désactiver cette fonctionnalité à tout moment pour arrêter d’envoyer des notifications aux utilisateurs. Pour recommencer à envoyer des notifications, turn the feature back on.
-
-Pour plus d’informations, [voir Microsoft Edge’aide & l’apprentissage.](https://support.microsoft.com/microsoft-edge)
 
 ## <a name="interpret-the-microsoft-browser-usage-report"></a>Interpréter le rapport d’utilisation du navigateur Microsoft
 

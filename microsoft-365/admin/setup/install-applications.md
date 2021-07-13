@@ -21,13 +21,14 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 description: Maintenant que vous avez Microsoft 365, découvrez comment installer des applications Office individuelles sur votre Mac, PC ou appareils mobiles.
-ms.openlocfilehash: 47f6a04e8fe42f03de0cd2008f15fd1f6f5617f3
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: dc32009bd42027890457bee97e19cdd94f49c6b7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593816"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393522"
 ---
 # <a name="install-office-applications"></a>Installer les applications Office
 
@@ -37,7 +38,7 @@ Suivez ces liens pour plus d’informations sur la façon de :
   
 - Installer Office applications : [installer Office sur votre PC ou Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
-- Installer d’autres [applications : Project,](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281) [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)ou [Skype Entreprise](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
+- Installez d’autres [applications : Project,](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281) [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)ou [Skype Entreprise](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 
 - Configurer des appareils mobiles : configuration [Microsoft 365 mobile - Aide](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 

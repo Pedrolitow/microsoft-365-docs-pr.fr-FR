@@ -22,19 +22,20 @@ description: Découvrez ce qu’est un domaine et comment vous pouvez acheter un
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b69881d72b91bd2cd36255d87444588166458c8c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 949bce3c287c9b7764562586e28bc031fd0d56b6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571876"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393114"
 ---
 # <a name="what-is-a-domain"></a>Qu’est-ce qu’un domaine ?
 
  **[Consultez les Forums aux questions sur les domaines](../setup/domains-faq.yml)** si vous ne trouvez pas ce que vous recherchez. 
   
-[] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Il prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que *votre entreprise. <span> com* ou *stateuniversity. <span> edu*. 
+[] Un domaine est un nom unique qui apparaît après le signe **@** dans les adresses de messagerie et après **www.** dans les adresses web. Elle prend généralement la forme du nom de votre organisation et d’un suffixe Internet standard, tel que *votre entreprise. <span> com* ou *stateuniversity. <span> edu*. 
   
 Utilisation d’un domaine personnalisé comme *rob@contoso. <span> com* with Microsoft 365 peut contribuer à renforcer la créativité et la reconnaissance de votre marque. 
   

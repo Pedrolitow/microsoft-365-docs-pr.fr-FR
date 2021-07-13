@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: Installez Office sur un téléphone iPhone ou Android, et vos fichiers de travail dans Office applications seront protégés par Microsoft 365 entreprise.
-ms.openlocfilehash: 7b411b6ae1223963b8583e1e3cd0ee00e13ff958
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 477f0ee63b045ca8fd6d3cfc3023f4122661a3b6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244793"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393396"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurer des appareils mobiles pour les Microsoft 365 pour les utilisateurs professionnels
 
@@ -81,11 +81,11 @@ Regardez une vidéo sur l’installation Outlook et Office sur les appareils And
 
 Si vous avez trouvé cette vidéo utile, consultez les [séries de formations complètes pour les petites entreprises et les nouveaux utilisateurs de Microsoft 365](../business-video/index.yml).
 
-Pour commencer l’installation sur votre téléphone Android, allez dans le Play Store.
+Pour commencer l’installation sur votre téléphone Android, go to the Play Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Entrez Microsoft Outlook dans la zone de recherche Google Play, puis appuyez sur **Installer.** Une fois Outlook l’installation, appuyez sur **Ouvrir.**
+Entrez Microsoft Outlook dans la zone de recherche Google Play, puis appuyez sur **Installer.** Une Outlook l’installation, appuyez sur **Ouvrir.**
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
@@ -105,7 +105,7 @@ Ouvrez Outlook à nouveau, et entrez et confirmez un code confidentiel. Vous pou
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="related-content"></a>Contenu associé
 
 [Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml)
 

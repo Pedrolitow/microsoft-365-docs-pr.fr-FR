@@ -9,18 +9,20 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: Découvrez les nouveaux noms d Microsoft 365'abonnement.
-ms.openlocfilehash: 930214e644cec060b6b6060af1e4da327d5bb940
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 64923611ec6571f9008b7f7fc5ec5e00e87bb400
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706357"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391314"
 ---
 # <a name="office-365-is-now-microsoft-365"></a>Office 365 est désormais Microsoft 365
 
@@ -36,7 +38,7 @@ Nous avons modifié certains de nos noms d’abonnement Office 365 et Microsoft
 
 ## <a name="related-content"></a>Contenu associé
 
-[Abonnements et facturation](../commerce/index.yml) (liens)\
+[Abonnements et facturation](../commerce/index.yml) (page de lien)\
 [Consulter votre facture](../commerce/billing-and-payments/view-your-bill-or-invoice.md) (article)\
 [Paiement de votre abonnement](../commerce/billing-and-payments/pay-for-your-subscription.md) (article)\
 [Modifier vos adresses de facturation](../commerce/billing-and-payments/change-your-billing-addresses.md) (article)

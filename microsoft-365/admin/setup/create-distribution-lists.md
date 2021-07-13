@@ -22,15 +22,16 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Créez des groupes de distribution ou des listes dans Microsoft 365 centre d’administration pour pouvoir envoyer des courriers électroniques à un groupe sans taper le nom de chaque destinataire.
-ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+- AdminTemplateSet
+description: Créez des groupes de distribution ou des listes dans le Centre d’administration Microsoft 365 de sorte que vous pouvez envoyer des courriers électroniques à un groupe sans taper le nom de chaque destinataire.
+ms.openlocfilehash: 87b3f375f5e90ec7fc97332abb801d814bf4939b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635665"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393570"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre Microsoft 365'administration
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Créer des groupes de distribution dans le Centre d’administration Microsoft 365
   
 Utilisé lorsque vous souhaitez envoyer un courrier électronique à un groupe de personnes sans avoir à taper le nom de chaque destinataire, les groupes de distribution (listes de distribution) sont organisés par sujet de discussion particulier (par exemple, « Marketing ») ou par des utilisateurs qui partagent un travail commun qui les oblige à communiquer fréquemment. Elles vous permettent également de transférer automatiquement le message à plusieurs adresses e-mail.
 
@@ -77,5 +78,5 @@ Consultez les [problèmes de groupe de](/office365/troubleshoot/groups/distribut
 ## <a name="related-content"></a>Contenu associé
 
 [Paramètres de messagerie de l’utilisateur](../email/office-365-user-email-settings.md) (article)\
-[Créer, modifier ou supprimer un groupe de](../email/create-edit-or-delete-a-security-group.md) sécurité dans le Centre d’administration Microsoft 365 (article)\
+[Créer, modifier ou supprimer un groupe de sécurité dans](../email/create-edit-or-delete-a-security-group.md) le Centre d’administration Microsoft 365 (article)\
 [Créer une boîte aux lettres ](../email/create-a-shared-mailbox.md)partagée (article)

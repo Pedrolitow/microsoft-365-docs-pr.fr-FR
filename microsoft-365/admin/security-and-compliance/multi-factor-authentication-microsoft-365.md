@@ -1,5 +1,5 @@
 ---
-title: Multi-Factor Authentication pour Microsoft 365
+title: Authentification multifacteur pour Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -23,14 +24,14 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: L’authentification multifacteur (MFA) utilise à la fois un mot de passe, qui doit être fort, et une méthode de vérification supplémentaire.
-ms.openlocfilehash: d9af486cf5e53609557b519612f185a20729cf76
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 9b3347f1a8e7b1f62c9bbfe77a7f14c221ef28b5
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924730"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393642"
 ---
-# <a name="multi-factor-authentication-for-microsoft-365"></a>Multi-Factor Authentication pour Microsoft 365
+# <a name="multifactor-authentication-for-microsoft-365"></a>Authentification multifacteur pour Microsoft 365
 
 Les mots de passe sont la méthode la plus courante d’authentification d’une connectez-vous à un ordinateur ou un service en ligne, mais ils sont également les plus vulnérables. Les utilisateurs peuvent choisir des mots de passe simples et utiliser les mêmes mots de passe pour plusieurs connecteurs à différents ordinateurs et services.
 
@@ -49,10 +50,10 @@ Par défaut, les deux Microsoft 365 et Office 365 l’famf pour les comptes d’
 - Appel téléphonique.
 - Application Microsoft Authenticator smartphone.
 
-Dans les deux cas, la sign-in mfa utilise la méthode « Quelque chose que vous avez avec vous qui n’est pas facilement dupliqué » pour la vérification supplémentaire. Il existe plusieurs façons d’activer l' multi-facteur pour Microsoft 365 et Office 365 :
+Dans les deux cas, la sign-in MFA utilise la méthode « Quelque chose que vous avez avec vous qui n’est pas facilement dupliqué » pour la vérification supplémentaire. Il existe plusieurs façons d’activer l' multi-facteur pour Microsoft 365 et Office 365 :
 
 - Avec les paramètres de sécurité par défaut
-- Avec des stratégies d’accès conditionnel
+- Avec les stratégies d’accès conditionnel
 - Pour chaque compte d’utilisateur individuel (non recommandé)
 
 Ces méthodes sont basées sur Microsoft 365 plan.
@@ -61,7 +62,7 @@ Ces méthodes sont basées sur Microsoft 365 plan.
 |---|---|---|
 |Toutes les Microsoft 365 plan|Utilisez les paramètres de sécurité par défaut, qui requièrent l’famf pour tous les comptes d’utilisateurs. <p> Vous pouvez également configurer l’mf par utilisateur sur des comptes d’utilisateur individuels, mais cela n’est pas recommandé.|Petite entreprise|
 |Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium licences P1|Utilisez des stratégies d’accès conditionnel pour exiger une mf pour les comptes d’utilisateur en fonction de l’appartenance à un groupe, des applications ou d’autres critères.|Petite entreprise à entreprise|
-|Microsoft 365 E5 <p> Licences Azure AD Premium P2|Utilisez Azure AD Identity Protection pour exiger une mffa en fonction des critères de risque de la signature.|Entreprise|
+|Microsoft 365 E5 <p> Azure AD Premium P2 licences|Utilisez Azure AD Identity Protection pour exiger une mffa en fonction des critères de risque de la signature.|Entreprise|
 ||||
 
 ### <a name="security-defaults"></a>Paramètres de sécurité par défaut
@@ -91,7 +92,7 @@ Les stratégies d’accès conditionnel sont un groupe de règles qui spécifien
 
 Cette stratégie vous permet de demander une authentification multifacteur basée sur l’appartenance au groupe, plutôt que d’essayer de configurer des comptes d’utilisateur individuels pour l’authentification multifacteur lorsqu’ils sont attribués ou non à des rôles d’administrateur.
 
-Vous pouvez également utiliser des stratégies d’accès conditionnel pour des fonctionnalités plus avancées, telles que l’obligation d’une mf pour des applications spécifiques ou la nécessité de se connecter à partir d’un appareil conforme, tel que votre ordinateur portable exécutant Windows 10.
+Vous pouvez également utiliser des stratégies d’accès conditionnel pour des fonctionnalités plus avancées, telles que l’obligation d’une mf pour des applications spécifiques ou l’exécution de la connectez-vous à partir d’un appareil conforme, tel que votre ordinateur portable exécutant Windows 10.
 
 Vous configurez les stratégies d’accès conditionnel à partir du **volet** Sécurité d’Azure AD dans le portail Azure.
 
@@ -101,7 +102,7 @@ Vous pouvez utiliser des stratégies d’accès conditionnel avec :
 
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 et E5
-- Licences Azure AD Premium P1 et Azure AD Premium P2
+- Azure AD Premium P1 et Azure AD Premium P2 licences
 
 Pour les petites entreprises avec Microsoft 365 Business Premium, vous pouvez facilement utiliser les stratégies d’accès conditionnel en suivant les étapes suivantes :
 
@@ -113,7 +114,7 @@ Pour les petites entreprises avec Microsoft 365 Business Premium, vous pouvez fa
     - Les contrôles d’accès > accorder > accorder l’accès > nécessite une authentification multifacteur.
 4. Activez la stratégie.
 5. Ajoutez un compte d’utilisateur au groupe créé à l’étape 1 ci-dessus et testez.
-6. Pour exiger l’mf pour des comptes d’utilisateurs supplémentaires, ajoutez-les au groupe créé à l’étape 1.
+6. Pour exiger une mf pour des comptes d’utilisateurs supplémentaires, ajoutez-les au groupe créé à l’étape 1.
 
 Cette stratégie d’accès conditionnel vous permet de déployer l’exigence de l’mfmf à vos utilisateurs à votre propre rythme.
 
@@ -132,7 +133,7 @@ Avec Azure AD Identity Protection, vous pouvez créer une stratégie d’accès 
 Vous pouvez utiliser Azure AD Identity Protection et les stratégies d’accès conditionnel basées sur les risques avec :
 
 - Microsoft 365 E5
-- Licences Azure AD Premium P2
+- Azure AD Premium P2 licences
 
 Si vous souhaitez en savoir plus, consultez la page [Présentation de Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
@@ -140,7 +141,7 @@ Si vous souhaitez en savoir plus, consultez la page [Présentation de Azure AD I
 
 Vous devez utiliser les paramètres de sécurité par défaut ou les stratégies d’accès conditionnel pour exiger l' approbation de compte d’utilisateur pour les connecteurs de votre compte d’utilisateur. Toutefois, si l’un de ces éléments ne peut pas être utilisé, Microsoft recommande vivement l’mfmf pour les comptes d’utilisateurs qui ont des rôles d’administrateur, en particulier le rôle d’administrateur général, pour tout abonnement de taille.
 
-Vous activez l’mf pour  les comptes d’utilisateur individuels à partir du volet Utilisateur actif du centre d Microsoft 365'administration.
+Vous activez l’mf pour  les comptes d’utilisateur individuels à partir du volet Utilisateur actif du Centre d’administration Microsoft 365.
 
 ![Image de l’option d’authentification multifacteur sur la page Utilisateurs actifs](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -168,13 +169,13 @@ Dans le portail Azure, vous pouvez :
 - Activer et désactiver les paramètres de sécurité par défaut
 - Configurer des stratégies d’accès conditionnel
 
-Dans le Microsoft 365 d’administration, vous pouvez configurer les paramètres mFA par utilisateur et service.
+Dans le Centre d’administration Microsoft 365, vous pouvez configurer les paramètres MFA par utilisateur et service.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Configurer l’ment MFA pour Microsoft 365](set-up-multi-factor-authentication.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Activer l’authentification multifacteur](../../business-video/turn-on-mfa.md) (vidéo)\
-[Activer l’authentification multifacteur sur votre téléphone](../../business-video/set-up-mfa.md) (vidéo)
+[Activer l’authentification multifacteur pour votre téléphone](../../business-video/set-up-mfa.md) (vidéo)

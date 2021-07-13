@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - GEU150
@@ -22,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: En savoir plus sur Office 365 21Vianet conçu pour répondre aux besoins de services cloud sécurisés, fiables et évolutifs en Chine.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 75bf7c7a4d7e453fa2be711c7332878b8a8f1150
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c8d43c385f44434e9ed4832a094ea4909bf505a4
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924718"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393606"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 géré par 21Vianet
 
@@ -40,7 +42,7 @@ Microsoft n’utilise pas le service lui-même. 21Vianet fonctionne, fournit et 
   
  **Suivez-nous sur WeChat**
   
-Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les dernières mises à jour pour Office 365 géré par 21Vianet. 
+Scannez ce QR code pour suivre les discussions sur WeChat et obtenir les dernières mises à jour pour Office 365 géré par 21Vianet. 
   
 ![Analysez ce code QR pour nous suivre sur WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
@@ -85,7 +87,7 @@ Si vous souhaitez découvrir comment commencer avec les services d’Office 365 
 |Applications auto-hosted  <br/> |Vous pouvez déployer une application hébergée par un fournisseur qui utilise SharePoint et SQL Azure. Pour plus d’informations, voir [Créer une application hébergée](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins)par un fournisseur de base pour SharePoint . La possibilité pour les développeurs de déployer une application qui utilise un site web auto-happé sera bientôt disponible.  <br/> |
 |InfoPath  <br/> |Non disponible.  <br/> |
 |SharePoint Store  <br/> |Les Office et SharePoint App Store sont des services facultatifs gérés par Microsoft Corporation ou ses affiliés de l’une des installations mondiales de Microsoft. Les applications disponibles dans le Windows Store sont fournies par différents éditeurs d’applications et sont soumises aux conditions générales et à la déclaration de confidentialité de l’éditeur de l’application. Votre utilisation de l’une de ces applications peut entraîner le transfert, le stockage ou le traitement de vos données dans n’importe quel pays où l’éditeur d’application, ses affiliés ou ses fournisseurs de services conservent des installations. Veuillez lire attentivement les conditions d'utilisation et les déclarations de confidentialité fournies par l'éditeur des applications avant de télécharger et d'utiliser ces dernières.  <br/> |
-|Office 365 Site du développeur : publier dans SharePoint Store à l’aide du tableau de bord vendeur\*  <br/> |Découvrez les conditions [requises pour](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china) la soumission d’applications pour SharePoint distribution aux utilisateurs de Office 365 gérés par 21Vianet.  <br/> |
+|Office 365 Site du développeur : publier dans SharePoint Store à l’aide du tableau de bord vendeur\*  <br/> |Découvrez les conditions [requises pour la](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china) soumission d’applications pour SharePoint distribution aux utilisateurs de Office 365 gérés par 21Vianet.  <br/> |
    
 \*Services facultatifs fournis directement par Microsoft et soumis aux conditions d’utilisation et déclarations de confidentialité de Microsoft.
   
@@ -123,10 +125,10 @@ Pour les organisations exécutant des versions plus anciennes ou mixtes de Excha
 
 |**Version Exchange local**|**Exchange Version du serveur hybride**|**Assistant Configuration hybride pris en charge ?**|**Fonctionnalités hybrides prise en charge**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | N/D  <br/> | Oui  <br/> | Tous  <br/> |
-| CU5 2013  <br/> | N/D  <br/> | Oui  <br/> | Tous  <br/> |
-| 2013 SP1  <br/> | CU5 2013  <br/> | Oui  <br/> | Tous  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | Tous  <br/> |
+| 2016  <br/> | N/D  <br/> | Oui  <br/> | tous  <br/> |
+| CU5 2013  <br/> | N/D  <br/> | Oui  <br/> | tous  <br/> |
+| 2013 SP1  <br/> | CU5 2013  <br/> | Oui  <br/> | tous  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | Oui  <br/> | tous  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | CU5 2013  <br/> | Oui  <br/> | Tous, à l’exception de la découverte électronique/archivage sur place, OWA’accès (voir le tableau ci-dessous)  <br/> |
 | Mixed 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | Oui  <br/> | Uniquement configuré manuellement la libre/occupé(s)  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | Non  <br/> | Aucun  <br/> |
@@ -148,7 +150,7 @@ Pour les organisations exécutant des versions plus anciennes ou mixtes de Excha
 - [Audit de boîte aux lettres](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)
 - Accès aux archives en ligne [avec Outlook Web App (OWA)](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web) 
 
-Utilisez le tableau suivant pour en savoir plus sur la prise en charge des fonctionnalités dans différents Exchange de déploiement : 
+Utilisez le tableau suivant pour en savoir plus sur la prise en charge des fonctionnalités dans différents scénarios Exchange déploiement : 
 
 |**Version Exchange local**|**MRM (archivage fractioné)**|**OWA’accès (archive fractionner)**|**Découverte électronique locale**|**Audit de boîte aux lettres**|**Archive/archive sur place**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -181,7 +183,7 @@ Partage Exchange données de contact sur les appareils mobiles Apple sur Apple i
 |:-----|:-----|
 |Ouvrez une application Office à partir de **l’ouverture** \> **de fichier dans**... Bouton  <br/> |Disponible. La possibilité de le faire lors de l’itinérance sera bientôt disponible.  <br/> |
 |Enregistrer dans OneDrive Entreprise lors de la signature avec un compte Microsoft  <br/> |Pour conserver vos données dans votre pays, vous ne pouvez pas enregistrer un document sur le site de votre organisation (OneDrive Entreprise) lorsque vous êtes Office avec un compte Microsoft.  <br/> |
-|Possibilité de traduire du texte ou des pages  <br/> |Cette fonctionnalité est disponible, mais est éteinte par défaut. Les administrateurs ont la possibilité de l’activer, mais obtiennent un message d’avertissement indiquant qu’il peut rendre les données accessibles à l’extérieur de votre pays.  <br/> |
+|Possibilité de traduire du texte ou des pages  <br/> |Cette fonctionnalité est disponible, mais est éteinte par défaut. Les administrateurs ont la possibilité de l’activer, mais obtiennent un message d’avertissement indiquant qu’il pourrait rendre les données accessibles à l’extérieur de votre pays.  <br/> |
    
 ## <a name="office-client"></a>Client Office
 

@@ -16,17 +16,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Découvrez comment accéder à des ressources locales telles que des applications métier, des partages de fichiers et des imprimantes à partir d’un Azure Active Directory joint Windows 10 appareil.
-ms.openlocfilehash: 72b3c5ae538cad24fc12e25717dedccb2fdc9017
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 71d60e0187c917dffb7390afcedf22dc73f44008
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843319"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393456"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accéder aux ressources sur site à partir d’un appareil joint à Azure AD dans Microsoft 365 Business Premium
 
@@ -37,7 +38,7 @@ Tout appareil Windows 10 joint Azure Active Directory a accès à toutes les res
 Pour plus d’informations, voir [Introduction à la gestion des appareils dans Azure Active Directory](/azure/active-directory/device-management-introduction).
 Les étapes sont également résumées dans les sections suivantes.
 
-## <a name="run-azure-ad-connect"></a>Exécuter Azure AD Connecter
+## <a name="run-azure-ad-connect"></a>Exécuter azure AD Connecter
 
 Pour permettre aux appareils joints à Azure AD de votre organisation d’accéder aux ressources sur site, complétez les étapes suivantes.
 
@@ -49,7 +50,7 @@ Pour permettre aux appareils joints à Azure AD de votre organisation d’accéd
 
 Aucune étape supplémentaire n’est requise pour accéder aux ressources sur site pour les appareils joints à Azure AD. Cette fonctionnalité est intégrée à Windows 10.
 
-Si vous avez l’intention de vous connecter à l’appareil AADJ autre que la méthode de mot de passe comme le code confidentiel/la mesure Bio via la connexion d’informations d’identification WHFB, puis accéder aux ressources locales (partages, imprimantes, etc.), suivez cet [article.](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)
+Si vous envisagez de vous connecter à l’appareil AADJ autre que la méthode de mot de passe comme le code confidentiel/la mesure bio via la connexion d’informations d’identification WHFB, puis accéder aux ressources locales (partages, imprimantes, etc.), suivez cet [article.](/windows/security/identity-protection/hello-for-business/hello-hybrid-aadj-sso-base)
 
 Si votre organisation n’est pas prête à déployer dans la configuration d’appareil joint à Azure AD décrite ci-dessus, envisagez de définir la configuration de l’appareil joint à [Azure AD hybride.](manage-windows-devices.md)
 
@@ -57,7 +58,7 @@ Si votre organisation n’est pas prête à déployer dans la configuration d’
 
 Si le Windows que vous avez joint à Azure-AD était précédemment joint au domaine ou dans un groupe de travail, prenons en compte les limitations suivantes :
 
-- Lorsqu’un appareil Joint Azure AD, il crée un utilisateur sans référencer un profil existant. Les profils doivent être migrés manuellement. Un profil utilisateur contient des informations telles que les favoris, les fichiers locaux, les paramètres du navigateur et les paramètres du menu Démarrer. Une meilleure approche consiste à trouver un outil tiers pour ma map les fichiers et paramètres existants au nouveau profil.
+- Lorsqu’un appareil Joint Azure AD, il crée un utilisateur sans référencer un profil existant. Les profils doivent être migrés manuellement. Un profil utilisateur contient des informations telles que les favoris, les fichiers locaux, les paramètres de navigateur et menu Démarrer paramètres. Une meilleure approche consiste à trouver un outil tiers pour ma map les fichiers et paramètres existants au nouveau profil.
 
 - Si l’appareil utilise des objets de stratégie de groupe (GPO), certains objets de stratégie de groupe peuvent ne pas avoir de fournisseur de services de [configuration](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) (CSP) comparable dans Intune. Exécutez [l’outil MMAT](https://www.microsoft.com/download/details.aspx?id=45520) pour rechercher des CSP comparables pour les GME existants.
 

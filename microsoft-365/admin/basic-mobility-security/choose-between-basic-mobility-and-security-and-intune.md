@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: La mobilité et la sécurité de base font partie des plans Microsoft 365 de sécurité.
-ms.openlocfilehash: 869968fa46e09fbc7a983957a83a9ad308c9f40c
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: 3404d2aeecd047fecec573bf1d60407ad3659efe
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53228266"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393294"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>Choisir entre Basic Mobility and Security ou Intune
 
@@ -35,7 +36,7 @@ Basic Mobility and Security et Intune sont inclus dans une variété de plans, d
 
 | Planification | Mobility + Security de Base | Microsoft Intune |
 |:-----|:-----|:-----|
-|Microsoft 365 Apps|Oui|Non|
+|Microsoft 365 Apps|Oui|Non|
 |Microsoft 365 Business Basic|Oui|Non|
 |Microsoft 365 Business Standard|Oui|Non|
 |Office 365 E1 |Oui|Non|
@@ -50,7 +51,7 @@ Basic Mobility and Security et Intune sont inclus dans une variété de plans, d
 |Microsoft 365 Éducation A5 |Oui|Oui|
 |Microsoft Intune |Non|Oui|
 |Enterprise Mobility & Security E3 |Non|Oui|
-|Enterprise Mobility & Security E5 |Non|Oui|
+|Enterprise Mobility & Security E5 |Non|Oui|
 
 > [!NOTE]
 > Vous ne pouvez pas commencer à utiliser Basic Mobility and Security si vous utilisez déjà Microsoft Intune.

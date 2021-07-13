@@ -16,18 +16,19 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Comment protéger votre messagerie et vos données professionnelles contre les cybermenaces, y compris les ransomware, le hameçonnage et les pièces jointes malveillantes.
-ms.openlocfilehash: a5d87c907d47be2d8edc12642ad4e93afb0eb142
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 8ee8e34ef984cb466f472e5503ad7cc14c181030
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924622"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393630"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 principales méthodes de sécurisation des Microsoft 365 pour les plans d’entreprise
 
@@ -41,12 +42,12 @@ Microsoft recommande d’effectuer les tâches répertoriées dans le tableau su
 |2|[Former vos utilisateurs](secure-your-business-data.md#train)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Utiliser des comptes d’administrateur dédiés](secure-your-business-data.md#admin)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Augmenter le niveau de protection contre les programmes malveillants dans le courrier électronique](secure-your-business-data.md#malware)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Se protéger contre les rançongiciels](secure-your-business-data.md#ransomware)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6 |[Arrêter le forwarding automatique pour le courrier électronique](secure-your-business-data.md#forwarding)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7 |[Utiliser Office chiffrement de messages](secure-your-business-data.md#encryption)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8 |[Protéger votre courrier électronique contre les attaques par hameçonnage](secure-your-business-data.md#phishing)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[Se protéger contre les pièces jointes et les fichiers malveillants avec pièces jointes sécurisées](secure-your-business-data.md#atp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[Se protéger contre les attaques par hameçonnage avec des liens sécurisés](secure-your-business-data.md#phishingatp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Se protéger contre les rançongiciels](secure-your-business-data.md#ransomware)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6 |[Arrêter le forwarding automatique pour le courrier électronique](secure-your-business-data.md#forwarding)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7 |[Utiliser Office chiffrement de messages](secure-your-business-data.md#encryption)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8 |[Protéger votre courrier électronique contre les attaques par hameçonnage](secure-your-business-data.md#phishing)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[Se protéger contre les pièces jointes et les fichiers malveillants Coffre pièces jointes](secure-your-business-data.md#atp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[Se protéger contre les attaques par hameçonnage à l’Coffre liens](secure-your-business-data.md#phishingatp)||![Inclus](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 Si vous avez Microsoft Business Premium, la façon la plus rapide de configurer la sécurité et de commencer à collaborer en toute sécurité consiste à suivre les instructions de cette bibliothèque : [Microsoft 365 pour les petites entreprises et les campagnes](../../campaigns/index.md). Ces conseils ont été développés en partenariat avec l’équipe Microsoft Microsoft Defending Democracy pour protéger tous les clients de PME contre les menaces informatiques lancées par des pirates informatiques sophistiqués.
 
@@ -57,7 +58,7 @@ Avant de commencer, vérifiez votre score [de Microsoft 365 dans](../../security
 ## <a name="1-set-up-multi-factor-authentication"></a>1 : configurer l’authentification multifacteur
 <a name="setup"> </a>
 
-L’utilisation de l’authentification multifacteur est l’une des méthodes les plus simples et les plus efficaces pour renforcer la sécurité de votre organisation. Il est plus facile que cela n’y paraît : lorsque vous vous connectez, l’authentification multifacteur signifie que vous tapez un code à partir de votre téléphone pour accéder à Microsoft 365. Cela peut empêcher les pirates informatiques de prendre le contrôle s’ils connaissent votre mot de passe. L’authentification multifacteur est également appelée vérification en deux étapes. Les utilisateurs peuvent facilement ajouter la vérification en deux étapes à la plupart des comptes, par exemple, à leurs comptes Google ou Microsoft. Voici comment ajouter la vérification en [deux étapes à votre compte Microsoft personnel.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
+L’utilisation de l’authentification multifacteur est l’un des moyens les plus simples et les plus efficaces d’augmenter la sécurité de votre organisation. Il est plus facile que cela n’y paraît : lorsque vous vous connectez, l’authentification multifacteur signifie que vous tapez un code à partir de votre téléphone pour accéder à Microsoft 365. Cela peut empêcher les pirates informatiques de prendre le contrôle s’ils connaissent votre mot de passe. L’authentification multifacteur est également appelée vérification en deux étapes. Les utilisateurs peuvent facilement ajouter la vérification en deux étapes à la plupart des comptes, par exemple, à leurs comptes Google ou Microsoft. Voici comment ajouter la vérification en [deux étapes à votre compte Microsoft personnel.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
 
 Pour les entreprises utilisant Microsoft 365, ajoutez un paramètre qui exige que vos utilisateurs se connectent à l’aide de l’authentification multifacteur. Lorsque vous a effectuer cette modification, les utilisateurs sont invités à configurer leur téléphone pour l’authentification à deux facteurs la prochaine fois qu’ils se connectent.
 Pour voir une vidéo de formation sur la façon de configurer l’famf et la façon dont les utilisateurs terminent la mise en place, voir [configurer](../../business-video/turn-on-mfa.md) l’mf et configurer [l’utilisateur.](../../business-video/set-up-mfa.md)
@@ -154,7 +155,7 @@ Pour créer une règle de transport de courrier, regardez une courte vidéo de [
 
 6. Sélectionnez **Enregistrer**.
     
-| Paramètre | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
+| Setting | Avertir les utilisateurs avant d’ouvrir les pièces jointes Office fichiers | Bloquer les types de fichiers qui peuvent contenir un ransomware ou un autre code malveillant |
 |:-----|:-----|:-----|
 |Nom  <br/> |Règle anti-ransomware : avertir les utilisateurs  <br/> |Règle anti-ransomware : bloquer les types de fichiers  <br/> |
 |Appliquez cette règle si . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |N’importe quelle pièce jointe . . . l’extension de fichier correspond à . . .  <br/> |
@@ -190,7 +191,7 @@ Pour créer une règle de transport de messagerie :
 
 6. Sélectionnez **Enregistrer**.
 
-|Paramètre|Rejeter les e-mails de forward automatique vers des domaines externes|
+|Setting|Rejeter les e-mails de forward automatique vers des domaines externes|
 |---|---|
 |Nom|Empêcher le forwarding automatique du courrier électronique vers des domaines externes|
 |Appliquez cette règle si...|L’expéditeur . . . est externe/interne . . . À l’intérieur de l’organisation|
@@ -257,7 +258,7 @@ Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, rega
 |---|---|
 |Nom|Domaine et personnel de campagne le plus précieux|
 |Description|Assurez-vous que le personnel le plus important et notre domaine ne sont pas usurpés.|
-|Ajouter des utilisateurs à protéger|Sélectionnez **+ Ajoutez une condition, le destinataire est**. Tapez les noms des utilisateurs ou entrez l’adresse e-mail du candidat, du responsable de campagne et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
+|Ajouter des utilisateurs à protéger|Select **+ Add a condition, The recipient is**. Tapez les noms des utilisateurs ou entrez l’adresse e-mail du candidat, du responsable de campagne et d’autres membres importants du personnel. Vous pouvez ajouter jusqu’à 20 adresses internes et externes que vous souhaitez protéger contre l’emprunt d’identité.|
 |Ajouter des domaines à protéger|Sélectionnez **+ Ajoutez une condition, le domaine du destinataire est**. Entrez le domaine personnalisé associé à votre abonnement Microsoft 365, si vous en avez défini un. Vous pouvez entrer plusieurs domaines.|
 |Choisir des actions|Si un message électronique est envoyé par un utilisateur dont l’identité est usurpée : sélectionnez **Rediriger le message** vers une autre adresse e-mail, puis tapez l’adresse de messagerie de l’administrateur de la sécurité . par exemple, securityadmin@contoso.com. <br/> Si le courrier électronique est envoyé par un domaine dont l’identité est usurpée : sélectionnez **le message de mise en quarantaine.**|
 |Veille des boîtes aux lettres|Par défaut, la veille des boîtes aux lettres est activée lorsque vous créez une stratégie anti-hameçonnage. Laissez ce paramètre **activé** pour obtenir de meilleurs résultats.|
@@ -267,20 +268,20 @@ Pour créer une stratégie anti-hameçonnage dans Defender pour Office 365, rega
 
 Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9 : Se protéger contre les pièces jointes malveillantes et les fichiers avec pièces jointes sécurisées
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9 : Se protéger contre les pièces jointes et les fichiers malveillants Coffre pièces jointes
 <a name="atp"> </a>
 
-Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en regardant un message électronique. Microsoft Defender pour Office 365 inclut la protection contre les pièces jointes sécurisées, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
+Les personnes envoient, reçoivent et partagent régulièrement des pièces jointes, telles que des documents, des présentations, des feuilles de calcul, etc. Il n’est pas toujours facile de savoir si une pièce jointe est sûre ou malveillante simplement en regardant un message électronique. Microsoft Defender pour Office 365 inclut Coffre protection contre les pièces jointes, mais cette protection n’est pas désactivée par défaut. Nous vous recommandons de créer une règle pour commencer à utiliser cette protection. Cette protection s’étend aux fichiers SharePoint, OneDrive et Microsoft Teams.
 
-Pour créer une stratégie de pièce jointe sécurisée, regardez une courte vidéo de [formation](../../business-video/safe-attachments.md)ou complétez les étapes suivantes :
+Pour créer une stratégie Coffre pièces jointes, regardez une courte vidéo de [formation](../../business-video/safe-attachments.md)ou complétez les étapes suivantes :
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
 2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, sélectionnez **Stratégie**.
 
-3. Dans la page Stratégie, sélectionnez **Pièces jointes sécurisées.**
+3. Dans la page Stratégie, **sélectionnez Coffre pièces jointes.**
 
-4. Dans la page Pièces jointes sécurisées, appliquez cette protection à grande étendue en cochez la case Activer la protection atp pour **SharePoint, OneDrive** et Microsoft Teams protection.
+4. Sur la page Coffre pièces jointes, appliquez cette protection à grande étendue en selecting the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box.
 
 5. Sélectionnez **+** pour créer une stratégie.
 
@@ -299,10 +300,10 @@ Pour créer une stratégie de pièce jointe sécurisée, regardez une courte vid
 
 Pour plus d’informations, voir [Configurer des stratégies anti-hameçonnage dans Defender pour Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10 : Se protéger contre les attaques par hameçonnage avec des liens sécurisés
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10 : Se protéger contre les attaques par hameçonnage à l’Coffre liens
 <a name="phishingatp"> </a>
 
-Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Les liens sécurisés, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les messages électroniques et les documents Office documents. La protection est définie par le biais de stratégies de liens sécurisés.
+Les pirates informatiques masquent parfois des sites web malveillants dans des liens dans des e-mails ou d’autres fichiers. Coffre Les liens, qui font partie de Microsoft Defender pour Office 365, peuvent aider à protéger votre organisation en fournissant la vérification au moment du clic des adresses web (URL) dans les messages électroniques et les documents Office documents. La protection est définie par le biais Coffre de liens.
 
 Nous vous recommandons d’y faire les choses suivantes :
 
@@ -310,17 +311,17 @@ Nous vous recommandons d’y faire les choses suivantes :
 
 - Ajoutez une nouvelle stratégie destinée à tous les destinataires de votre domaine.
 
-Pour obtenir des liens sécurisés, regardez une courte vidéo de [formation](../../business-video/safe-links.md)ou complétez les étapes suivantes :
+Pour obtenir des Coffre, regardez une courte vidéo de [formation](../../business-video/safe-links.md)ou complétez les étapes suivantes :
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
 2. Dans le Centre de sécurité & conformité, dans le volet de navigation de gauche, sous Gestion des menaces, sélectionnez **Stratégie**.
 
-3. Dans la page Stratégie, sélectionnez **Liens sécurisés.**
+3. Dans la page Stratégie, sélectionnez **Coffre liens.**
 
 Pour modifier la stratégie par défaut :
 
-1. Dans la page Liens sécurisés, sous **Stratégies** qui s’appliquent à l’ensemble de l’organisation, double-cliquez sur la **stratégie par** défaut.
+1. Dans la page Coffre liens, sous **Stratégies** qui s’appliquent à l’ensemble de l’organisation, double-cliquez sur la **stratégie par** défaut.
 
 2. Sous Paramètres qui s’appliquent au contenu dans **Office 365,** entrez une URL à bloquer, telle que _example.com,_ puis sélectionnez **+** .
 
@@ -330,7 +331,7 @@ Pour modifier la stratégie par défaut :
 
 Pour créer une stratégie destinée à tous les destinataires de votre domaine :
 
-1. Dans la page Liens sécurisés, sous Stratégies qui s’appliquent à des **destinataires spécifiques,** sélectionnez **+** pour créer une stratégie.
+1. Dans la page Coffre liens, sous Stratégies qui s’appliquent à des **destinataires spécifiques,** sélectionnez **+** pour créer une stratégie.
 
 2. Appliquez les paramètres répertoriés dans le tableau suivant.
 
@@ -338,13 +339,13 @@ Pour créer une stratégie destinée à tous les destinataires de votre domaine 
 
 |Paramètre ou option|Valeur recommandée|
 |---|---|
-|Nom|Stratégie de liens sécurisés pour tous les destinataires du domaine|
+|Nom|Coffre de liens pour tous les destinataires du domaine|
 |Sélectionnez l’action pour les URL potentiellement malveillantes inconnues dans les messages|Sélectionnez Sur : les URL seront réécrites et vérifiées par rapport à une liste de liens malveillants connus lorsque l’utilisateur **clique sur le lien.**|
 |Appliquer l’analyse d’URL en temps réel pour les liens suspects et les liens qui pointent vers des fichiers|Sélectionnez cette case.|
 |Appliqué à|Le domaine du destinataire est . . . sélectionnez votre domaine.|
 |
 
-Pour plus d’informations, [voir Liens sécurisés dans Microsoft Defender pour Office 365](../../security/office-365-security/atp-safe-links.md).
+Pour plus d’informations, [Coffre liens vers Microsoft Defender pour Office 365](../../security/office-365-security/atp-safe-links.md).
 
 ## <a name="related-content"></a>Contenu associé
 

@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Mettez à jour votre numéro de téléphone et votre adresse de messagerie d’administrateur dans le Centre d’administration si vous souhaitez réinitialiser votre propre mot de passe d’administrateur.
-ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 1335f5ff7a39fab53e6f45f47bec293db5650336
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624512"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53391302"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Mettre à jour votre numéro de téléphone et votre adresse e-mail d’administrateur
 
@@ -39,7 +41,7 @@ Pour plus d’informations sur la modification des informations de contact de l�
 
 Utilisez la page **Informations de sécurité** pour modifier votre numéro de téléphone mobile et votre adresse e-mail de remplacement. L’adresse de messagerie de remplacement est utilisée pour les notifications importantes, telles que la réinitialisation de votre mot de passe d’administrateur (et non le mot de passe d’administrateur de votre ordinateur). 
   
-1. Accédez au centre Microsoft 365'administration.
+1. Accédez au Centre d’administration Microsoft 365.
 
 2. Dans l’en-tête, sélectionnez votre icône de profil \> **Mes informations de** \> **sécurité de compte.**
 

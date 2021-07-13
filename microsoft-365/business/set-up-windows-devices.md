@@ -22,17 +22,18 @@ ms.custom:
 - seo-marvel-mar
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Configurer des Windows en cours d Windows 10 Professionnel pour Microsoft 365 Business Premium utilisateurs, ce qui permet de centraliser la gestion et les contrôles de sécurité.
-ms.openlocfilehash: 7a9c75f6ec14605225d40c103c18e62937e773bf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a911414b1a7abef259f4c5fffbdd48e07f9ebfdd
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635871"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393356"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurer des Windows pour les utilisateurs Microsoft 365 Business Premium utilisateurs
 
@@ -46,7 +47,7 @@ Pour plus d'informations sur la mise à niveau des appareils Windows vers Window
   
 Vérifiez [que l’appareil est connecté à Azure AD](#verify-the-device-is-connected-to-azure-ad) pour vérifier que vous avez bien mis à niveau ou pour vous assurer que la mise à niveau a fonctionné.
 
-## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>Regardez : Connecter pc à Microsoft 365 Business
+## <a name="watch-connect-your-pc-to-microsoft-365-business"></a>Regardez : Connecter votre PC pour Microsoft 365 Entreprise
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
@@ -100,7 +101,7 @@ Suivez ces étapes pour un nouvel appareil exécutant Windows 10 Professionnel C
   
    Sur le **you’re all set!** page, chosse **done**.
   
-   ![Dans l’écran Assurez-vous qu’il s’agit de l’écran de votre organisation, sélectionnez Rejoindre](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![Dans l’écran Assurez-vous qu’il s’agit de votre organisation, sélectionnez Rejoindre](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 Si vous avez chargé des fichiers vers OneDrive Entreprise, synchronisez-les vers votre ordinateur. Si vous avez utilisé un outil tiers pour migrer des profils et des fichiers, synchronisez-les également avec le nouveau profil.
   
@@ -124,10 +125,10 @@ Vérifiez que vos appareils joints à Azure AD Windows 10 sont mis à niveau ver
     
     ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Pour configurer vos appareils mobiles, voir Configurer des appareils mobiles pour les utilisateurs [Microsoft 365 Business Premium](set-up-mobile-devices.md), Pour définir des stratégies de protection des appareils ou d’application, voir Gérer Microsoft 365 [entreprise.](manage.md)
+Pour configurer vos appareils mobiles, voir Configurer des appareils mobiles pour les utilisateurs [Microsoft 365 Business Premium](set-up-mobile-devices.md), Pour définir des stratégies de protection des appareils ou des applications, voir Gérer Microsoft 365 [entreprise.](manage.md)
   
 ## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365 vidéos de formation pour les entreprises](../business-video/index.yml) (page de liens)
+[Vidéos de formation Microsoft 365 Entreprise](../business-video/index.yml) (page de liens)

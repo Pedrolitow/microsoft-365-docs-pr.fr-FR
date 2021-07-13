@@ -1,5 +1,5 @@
 ---
-title: Configurer la sign-in multi-facteur sur votre téléphone
+title: Configurer la connectez-vous multifacteur sur votre téléphone
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Découvrez comment configurer l’authentification multifacteur, parfois appelée authentification à deux facteurs, sur votre téléphone.
-ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 7709585c21b22ee3fece6daec4660cf87faa6819
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705653"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393474"
 ---
-# <a name="set-up-multi-factor-authentication-on-your-phone"></a>Configurer l’authentification multifacteur sur votre téléphone
+# <a name="set-up-multifactor-authentication-on-your-phone"></a>Configurer l’authentification multifacteur sur votre téléphone
 
-## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>Regarder : Configurer l’authentification multifacteur avec un appareil mobile
+## <a name="watch-set-up-multifactor-authentication-with-a-mobile-device"></a>Regarder : Configurer l’authentification multifacteur avec un appareil mobile
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 

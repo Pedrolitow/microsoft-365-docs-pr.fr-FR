@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Personnalisez la Microsoft 365 page de Azure Active Directory. Vous pouvez ajouter une illustration, un logo et du texte à la page de signature.
-ms.openlocfilehash: 6c873409a06d824c7b63f5ea02e178e22337a345
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1c805e8f37081b2d09e821b24ce2f83816b23e3d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635937"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393546"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Ajouter la marque de votre entreprise à la page de signature
 
@@ -49,7 +50,7 @@ La figure suivante montre les parties de la page de connexion que vous pouvez mo
     
 En plus de la page de connexion, vous pouvez personnaliser la page du Panneau d'accès dans Azure.
   
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous êtes prêt à ajouter une personnalisation, explorez les options disponibles dans le contenu Azure : [Ajout d'une marque de société aux pages de connexion et du volet d'accès](/azure/active-directory/fundamentals/customize-branding).
 

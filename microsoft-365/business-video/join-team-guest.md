@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment rejoindre une équipe en tant qu’invité dans Microsoft Teams.
-ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: b551a681680f38f9f6c540cf5ea2b5f8a45fab5b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706237"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393486"
 ---
 # <a name="join-a-team-as-a-guest"></a>Rejoindre une équipe en tant qu’invité
 
@@ -38,9 +39,9 @@ ms.locfileid: "52706237"
 Si vous recevez une invitation Microsoft Teams rejoindre une équipe, vous devez suivre deux étapes pour accepter l’invitation.
 
 1. Ouvrez l’invitation par courrier électronique, puis sélectionnez **Ouvrir Microsoft Teams**. Si vous ne voyez pas l’invitation, vérifiez votre dossier de courrier indésirable ou de courrier indésirable.
-  1. Si votre adresse de messagerie n’a pas été utilisée précédemment pour créer un compte Microsoft, vous devez en créer un.
+  1. Si votre adresse de messagerie n’a pas été précédemment utilisée pour créer un compte Microsoft, vous devez en créer un.
 
-     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis sélectionnez **Suivant.**
+     Dans la **boîte de dialogue** Créer un compte, **sélectionnez Suivant,** créez un mot de passe, puis **sélectionnez Suivant.**
   1. Pour vérifier votre adresse e-mail, ouvrez l’e-mail de vérification et copiez le code de sécurité.
   1. Entrez votre code  de sécurité dans la boîte de dialogue  Vérifier l’e-mail, sélectionnez **Suivant,** entrez la CAPTCHA dans la ligne Entrez les caractères que vous voyez, sélectionnez **Suivant,** puis **Acceptez**.
 1. Si vous ne souhaitez pas télécharger l’application Microsoft Teams, sélectionnez Utiliser **l’application web à la place.**

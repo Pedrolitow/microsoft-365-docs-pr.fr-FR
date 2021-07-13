@@ -19,18 +19,19 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Gérez les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
-ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Gérer les signatures électroniques, y compris les clauses d’exclusion de responsabilité juridiques ou les déclarations de divulgation pour tous les messages électroniques entrants ou qui quittent votre organisation.
+ms.openlocfilehash: ba96d0d5782fc675a044980db0a0ac1d4ce6caaf
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635653"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393558"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Créer des signatures et des clauses d’exclusion de responsabilité à l’échelle de l’organisation
 
@@ -45,7 +46,7 @@ Si vous avez trouvé cette vidéo utile, consultez les [séries de formations co
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Créer une signature qui s'applique à tous les messages
 
 > [!TIP]
-> Les signatures à l’échelle de l’organisation sont appelées « clauses d’exclusion de responsabilité », indépendamment de ce qu’elles incluent. Par exemple, il peut s’agir simplement d’une signature ou inclure votre adresse, une clause d’exclusion de responsabilité juridique ou d’autres informations de votre part.
+> Les signatures à l’échelle de l’organisation sont appelées « clauses d’exclusion de responsabilité », indépendamment de ce qu’elles incluent. Par exemple, il peut s’agir simplement d’une signature, ou inclure votre adresse, votre clause d’exclusion de responsabilité juridique ou d’autres informations que vous souhaitez.
     
 ::: moniker range="o365-worldwide"
 
@@ -103,7 +104,7 @@ Accédez au Centre d’administration à l’adresse <a href="https://go.microso
 
 Vous ne pouvez pas faire les choses suivantes lors de la gestion des signatures électroniques dans Microsoft 365 :
   
-- Insérer la signature directement sous la dernière réponse ou envoi d’e-mail
+- Insérez la signature directement sous la dernière réponse ou envoi d’e-mail
     
 - Afficher les signatures de courrier côté serveur dans les dossiers Éléments envoyés des utilisateurs
     
@@ -115,7 +116,7 @@ Pour obtenir ces fonctionnalités et d’autres fonctionnalités de gestion des 
   
 ## <a name="more-resources"></a>Plus de ressources
 
-Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes de message à l’échelle de l’Exchange Online .
+Pour plus d’informations sur l’utilisation de PowerShell, voir les clauses d’exclusion de [responsabilité, les signatures,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)les pieds de bas de gamme ou les en-têtes des messages à l’échelle de l’Exchange Online .
 
 ## <a name="related-content"></a>Contenu associé
 
