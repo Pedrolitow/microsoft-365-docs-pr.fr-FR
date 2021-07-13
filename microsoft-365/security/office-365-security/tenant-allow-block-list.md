@@ -16,12 +16,12 @@ ms.collection:
 description: Les administrateurs peuvent apprendre à configurer des autoriser et des blocs dans la liste d’adresses client autoriser/bloquer dans le portail de sécurité.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1548eda760b7b6b19214cb834d7fc43357dc0357
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: dbd4694a7442b3898d24304dc78fc95c28c9a905
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985491"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394952"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gérer la liste Autoriser/Bloquer du client
 
@@ -40,7 +40,7 @@ ms.locfileid: "52985491"
 
 Dans Microsoft 365 organisations avec des boîtes aux lettres dans Exchange Online ou des organisations Exchange Online Protection autonomes (EOP) sans boîtes aux lettres Exchange Online, vous pouvez ne pas être d’accord avec le verdict de filtrage EOP. Par exemple, un bon message peut être marqué comme mauvais (faux positif) ou un message erroné peut être autorisé (faux négatif).
 
-La liste des locataires autoriser/bloquer dans le portail Microsoft 365 Defender vous permet de remplacer manuellement les verdicts de filtrage Microsoft 365 client. La liste d’adresses client autoriser/bloquer est utilisée pendant le flux de messagerie et au moment des clics de l’utilisateur. Vous pouvez spécifier les types de substitutions suivants :
+La liste des locataires autoriser/bloquer dans le portail Microsoft 365 Defender vous permet de remplacer manuellement les verdicts de filtrage Microsoft 365 client. La liste d’adresses client autoriser/bloquer est utilisée pendant le flux de messagerie pour les messages entrants (ne s’applique pas aux messages intra-organisationaux) et au moment des clics de l’utilisateur. Vous pouvez spécifier les types de substitutions suivants :
 
 - URL à bloquer.
 - Fichiers à bloquer.
@@ -86,7 +86,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 
   > [!NOTE]
   >
-  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+  > - L’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux utilisateurs les autorisations requises _et_ les autorisations pour les autres fonctionnalités de Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
   >
   > - Le groupe de rôles **Gestion de l’organisation en affichage seul** dans [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) permet également d’accéder en lecture seule à la fonctionnalité.
 
@@ -131,7 +131,7 @@ Cet article explique comment configurer des entrées dans la liste d’adresses 
 **Remarques** :
 
 - Seule la _combinaison_ de l’utilisateur usurpé et de l’infrastructure d’envoi, telle que définie dans la paire de domaines, est spécifiquement autorisée ou bloquée à l’usurpation. 
-- Lorsque vous configurez une entrée d’autoriser ou de bloquer une paire de domaines, les messages provenant de cette paire de domaines n’apparaissent plus dans l’aperçu de l’usurpation d’intelligence.
+- Lorsque vous configurez une entrée d’autoriser ou de bloquer une paire de domaines, les messages de cette paire de domaines n’apparaissent plus dans l’aperçu de l’usurpation d’intelligence.
 - Les entrées des expéditeurs usurpés n’expirent jamais.
 
 1. Dans le portail Microsoft 365 Defender, go to **Policies &** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.

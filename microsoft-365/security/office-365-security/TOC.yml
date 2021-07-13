@@ -34,6 +34,8 @@
           href: office-365-air.md
         - name: Fonctionnement de l’analyse et de la réponse automatisées
           href: automated-investigation-response-office.md
+        - name: Analyse des e-mails dans les enquêtes
+          href: email-analysis-investigations.md
         - name: Actions de correction
           href: air-remediation-actions.md
         - name: Protection anti-programme malveillant

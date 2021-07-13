@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81b0594044e238f5855c627b2ce80baf8d8cb9c2
-ms.sourcegitcommit: 99e67bfe1d677c2f51712b05dcc54908b343cf6f
+ms.openlocfilehash: cb6e12e9b8ae32c13095239fe67012a520eb6e07
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53203183"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408971"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Systèmes d’exploitation, plateformes et fonctionnalités pris en charge pour Gestion des menaces et des vulnérabilités
 
@@ -32,7 +32,7 @@ ms.locfileid: "53203183"
 **S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
+- [La gestion des menaces et des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -62,6 +62,9 @@ CentOS 7.2 ou supérieur | Oui | Oui | Oui | Oui | Oui
 Ubuntu 16.04 LTS ou une LTS supérieure | Oui | Oui | Oui | Oui | Oui
 Oracle Linux 7.2 ou supérieur | Oui | Oui | Oui | Oui | Oui
 SUSE Linux Enterprise Server 12 ou supérieur | Oui | Oui | Oui | Oui | Oui
+
+>[!NOTE]
+> Certaines fonctionnalités ne sont pas disponibles pour le système d’exploitation de bas niveau, consultez le portail Microsoft 365 Defender pour plus d’informations sur le système d’exploitation pris en charge.
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux : « Les données de vulnérabilité fournies et affichées dans le cadre de vos services Microsoft Defender for Endpoint sont disponibles sous sa forme brute, « EN L’ÉTAT », à partir de Red Hat, Inc., et peuvent ne pas être à jour. Les données accessibles dans l’API de données de sécurité Red Hat sont sous licence dans le cadre de la licence internationale Creative Commons Attribution 4.0. Vous assumez les risques associés à l’utilisation de ces données. Microsoft et ses fournisseurs tiers se dé déchargent de toute responsabilité pour les dommages indirects et indirects et les garanties implicites, y compris les garanties implicites de non-contrefaçon, la qualité de marché et l’aptitude à un usage particulier. © 2020 Red Hat. Tous droits réservés. © 2020 Microsoft. Tous droits réservés. »

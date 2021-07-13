@@ -18,15 +18,16 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Les administrateurs peuvent réactiver un abonnement lorsqu’il expire, est désactivé ou annulé, ou si vous avez annulé l’abonnement au milieu d’une période d’abonnement.
 ms.date: 04/07/2021
-ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1637e1db74e1b22de3739282f08e70e08b842fb9
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572512"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394916"
 ---
 # <a name="reactivate-your-subscription"></a>Réactiver votre abonnement
 
@@ -34,7 +35,7 @@ Vous pouvez réactiver votre abonnement dans le Centre d’administration si : l
   
 ## <a name="before-you-begin"></a>Avant de commencer
 
-Vous devez être un administrateur global ou un administrateur de facturation pour réactiver un abonnement. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+Vous devez être un administrateur global ou un administrateur de facturation pour réactiver un abonnement. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 **Vous n’êtes pas administrateur ?** Contactez votre administration pour réactiver votre abonnement.
 
@@ -42,13 +43,13 @@ Vous devez être un administrateur global ou un administrateur de facturation po
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 

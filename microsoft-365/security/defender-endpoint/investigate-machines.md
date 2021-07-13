@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c89de5fbf5d5b4d5d5e53074109bc8884a271eea
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843577"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394892"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Examinez les détails d’une alerte sur un appareil spécifique pour identifier d’autres comportements ou événements qui peuvent être liés à l’alerte ou à l’étendue potentielle de la violation.
 
@@ -58,6 +58,10 @@ Lorsque vous examinez un appareil spécifique, vous voyez :
 - Cartes (alertes actives, utilisateurs connectés, évaluation de la sécurité)
 
 ![Image de l’affichage de l’appareil](images/specific-device.png)
+
+> [!NOTE]
+> En raison des contraintes de produit, le profil d’appareil ne prend pas en compte toutes les cybermenaces lors de la détermination de la période « Dernière vue » (comme indiqué sur la page de l’appareil également).
+> Par exemple, la valeur « Dernière vue » dans la page Appareil peut afficher une période plus ancienne, même si des alertes ou des données plus récentes sont disponibles dans la chronologie de l’ordinateur.
 
 ## <a name="device-details"></a>Détails de l’appareil
 
@@ -106,7 +110,7 @@ Pour afficher une vue de page complète d’une alerte, y compris le graphique d
 
 **L’onglet** Chronologie fournit une vue chronologique des événements et des alertes associées qui ont été observés sur l’appareil. Cela peut vous aider à corréler tous les événements, fichiers et adresses IP par rapport à l’appareil.
 
-La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil sur une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
+La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil pendant une période sélectionnée. Pour mieux contrôler votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
 
 >[!NOTE]
 > Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit.](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
@@ -136,7 +140,7 @@ Des informations supplémentaires sur certains événements sont fournies dans l
 - Correction réussie : la menace détectée a été arrêtée et nettoyée
 - Avertissement contourné par l’utilisateur : l’avertissement Windows Defender SmartScreen a été rejeté et contourné par un utilisateur
 - Script suspect détecté : un script potentiellement malveillant a été détecté en cours d’exécution
-- Catégorie d’alerte : si l’événement a entraîné la génération d’une alerte, la catégorie d’alerte ( « Mouvement latéral », par exemple) est fournie.
+- Catégorie d’alerte : si l’événement a conduit à la génération d’une alerte, la catégorie d’alerte ( « Mouvement latéral », par exemple) est fournie.
 
 #### <a name="event-details"></a>Détails de l'événement
 Sélectionnez un événement pour afficher les détails pertinents sur cet événement. Un panneau s’affiche pour afficher des informations générales sur les événements. Le cas échéant et si des données sont disponibles, un graphique montrant les entités associées et leurs relations est également affiché.
@@ -184,6 +188,8 @@ La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des a
 La **carte Utilisateurs** connectés indique le nombre d’utilisateurs connectés au cours des 30 derniers jours, ainsi que les utilisateurs les plus fréquents et les moins fréquents. La sélection du lien « Afficher tous les utilisateurs » ouvre le volet d’informations, qui affiche des informations telles que le type d’utilisateur, le type de connexion et le moment où l’utilisateur a été vu pour la première fois et pour la dernière fois. Pour plus d’informations, voir [Examiner les entités utilisateur.](investigate-user.md)
 
 ![Image du volet d’informations de l’utilisateur](images/logged-on-users.png)
+> [!NOTE]
+> La valeur utilisateur « la plus fréquente » est calculée uniquement en fonction des preuves des utilisateurs qui ont ouvert une session interactive. Toutefois, le volet latéral « Tous les utilisateurs » calcule toutes sortes d’utilisateurs qui se connectent afin de voir des utilisateurs plus fréquents dans le volet latéral, étant donné que ces utilisateurs peuvent ne pas être interactifs.
 
 ### <a name="security-assessments"></a>Tests d’évaluation de la sécurité
 
@@ -191,9 +197,9 @@ La **carte d’évaluation de** la sécurité indique le niveau d’exposition g
 
 ![Image de la carte d’évaluation de la sécurité](images/security-assessments.png)
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 
-- [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner un fichier associé à une alerte Defender for Endpoint](investigate-files.md)

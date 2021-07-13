@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Que ce soit l’ajout de nouvelles solutions au centre de conformité, la mise à jour des fonctionnalités existantes en fonction de vos commentaires ou le déploiement d’une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aec9135a00b53f504d19a80e428d52f21b92cf9c
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53288130"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394940"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -40,6 +40,28 @@ Que vous ajoutiez de nouvelles solutions au [Centre de conformité Microsoft 365
 > - [Nouveautés de Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > Consultez la [feuille de route Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) pour en savoir plus sur les fonctionnalités Microsoft 365 qui ont été lancées, sont en cours de déploiement, sont en cours de développement, ont été annulées ou publiées précédemment.
+
+## <a name="june-2021"></a>Juin 2021
+
+### <a name="customer-key"></a>Clé client
+
+- [Chiffrement de service avec clé](customer-key-overview.md) client (les DEP de niveau client de clé client chiffrent désormais la configuration des étiquettes de Protection des données Microsoft.)
+
+### <a name="ediscovery"></a>eDiscovery
+
+- [Interroger et filtrer le contenu](review-set-search.md) d’un jeu à réviser (nouvelle fonctionnalité de requête et de filtrage dans un nouveau format d’UX pour filtrer et rechercher du contenu dans un jeu à réviser)
+- Baliser des documents dans un jeu à réviser dans [Advanced eDiscovery](tagging-documents.md) (nouvelle fonctionnalité de balise et expérience UX pour accélérer et faciliter le marquage des documents dans un jeu à réviser ; inclut une nouvelle fonctionnalité de marquage des documents à l’aide d’une requête et à l’aide de filtres pour rechercher ou exclure rapidement des éléments de jeu à réviser en fonction de la façon dont un élément est balisé)
+- Configurer des limites de conformité pour les enquêtes [eDiscovery](set-up-compliance-boundaries.md) (Microsoft a supprimé l’obligation de contacter le support MS pour demander qu’un attribut de conformité soit synchronisé avec les comptes OneDrive ; désormais, un filtre d’autorisations de recherche de boîte aux lettres est utilisé pour appliquer les limites de conformité pour OneDrive)
+
+### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
+
+- L’Assistant Stratégie d’étiquette de confidentialité prend désormais en charge [Outlook options](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) spécifiques pour l’étiquette par défaut et l’étiquetage obligatoire en tant que configuration plus facile que les paramètres avancés (toujours pris en charge) de PowerShell.
+- La prise [en charge des marquages dynamiques avec des variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) est désormais en cours de déploiement pour Word, Excel et PowerPoint sur le web
+- Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, pour Exchange d’étiquetage automatique, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre de ; l’expéditeur est.
+- Lorsque vous utilisez des étiquettes de niveau de sensibilité avec des équipes, des groupes et des sites, vous pouvez utiliser Set-SPOTenant avec le paramètre BlockSendLabelMismatchEmail pour empêcher le courrier électronique généré automatiquement lorsque l’événement d’audit a détecté une inaltérable sensibilité du **document.**  Pour plus d’informations, voir [Auditer les activités des étiquettes de sensibilité.](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )
+- Le paramètre [de contexte d’authentification](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) est désormais entièrement déployé en prévisualisation pour les étiquettes de sensibilité. En outre, cette configuration est désormais prise en charge par Microsoft Teams.
+- Les fichiers étiquetés et chiffrés par un nom principal de service (tel que Microsoft Cloud App Security), puis téléchargés sur SharePoint et OneDrive peuvent désormais être ouverts en Office sur le Web lorsque vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans [SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+- La [co-création](sensitivity-labels-coauthoring.md) et l’auto-ave ne sont plus limités aux locataires de test et sont désormais pris en charge en production lorsque vous utilisez la version 2105 : 18 juin pour Windows et version 16.50+ pour macOS. Notez que cette fonctionnalité n’est toujours pas prise en charge par iOS et Android et reste en prévisualisation.
 
 ## <a name="may-2021"></a>Mai 2021
 
@@ -189,7 +211,7 @@ Voici quelques-unes des modifications apportées aux solutions Microsoft 365 con
 
 Le contenu a été ajouté ou mis à jour dans les rubriques suivantes :
 
-- [Prise en main de l’explorateur de contenu](/microsoft-365/compliance/data-classification-content-explorer)
+- [Prise en main de l’Explorateur de contenu](/microsoft-365/compliance/data-classification-content-explorer)
 - [Notes de publication pour la classification des données](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>Protection contre la perte de données
@@ -269,49 +291,3 @@ Les solutions de conformité Microsoft 365 suivantes [](/microsoftteams/platform
 
 - Les étiquettes de sensibilité sont désormais pris en charge pour les locataires du gouvernement américain (Cloud de la communauté du secteur public et Cloud de la communauté du secteur public-H).
 - Nouvelle [prise en charge de l’étiquetage](sensitivity-labels-office-apps.md) automatique pour macOS.
-
-## <a name="december-2020"></a>Décembre 2020
-
-### <a name="spotlight-new-content-for-insider-risk-solutions"></a>À la une : nouveau contenu pour les solutions à risque internes
-
-L Microsoft 365 de contenu de conformité est au travail pour créer des documents sur la « solution de contenu » afin de promouvoir la façon dont les fonctionnalités de conformité peuvent être utilisées ensemble pour vous aider à atteindre vos objectifs de conformité.
-
-Tout d’abord, le contenu qui relie nos solutions à risque internes : conformité des communications, gestion des risques internes, obstacles à l’information et gestion des accès privilégiés. Voici un aperçu de ce que vous trouverez :
-
-- [Nouvelle page d’accueil pour les solutions de risques internes.](insider-risk-solution-overview.md) Inclut des détails sur les risques que les solutions peuvent atténuer, les exigences de licence, la séquence de déploiement, les illustrations d’architecture, les ressources de formation, etc.
-- Nouveaux articles de présentation pour chaque solution à risque interne. Conseils et liens vers des articles qui vous aident à en savoir plus sur, planifier, déployer et gérer chaque solution :
-  - [Conformité des communications](communication-compliance-solution-overview.md)
-  - [Gestion des risques internes](insider-risk-management-solution-overview.md)
-  - [Obstacles aux informations](information-barriers-solution-overview.md)
-  - [Gestion des accès privilégiés](privileged-access-management-solution-overview.md)
-
-D’autres documents sur les solutions de contenu seront bientôt disponible !
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-Amélioration du flux de travail et des fonctionnalités pour l’ajout de dépositaires et [de sources](non-custodial-data-sources.md) de données non privatives à Advanced eDiscovery cas. [](add-custodians-to-case.md)
-
-### <a name="data-connectors"></a>Connecteurs de données
-
-[Quatre nouveaux connecteurs Veritas publiés](archiving-third-party-data.md#third-party-data-connectors): Redtail Speak, Salesforce Queue, ServiceNow et Yieldbroker.
-
-### <a name="encryption"></a>Chiffrement
-
-Présentation de [la clé client pour Microsoft 365 au niveau du client.](customer-key-tenant-level.md) À l’aide des clés que vous fournissez, vous pouvez créer une stratégie de chiffrement de données (DEP) et l’affecter au client. Le PD DEP chiffre les données sur le client pour ces charges de travail :
-
-- Teams messages de conversation (conversations 1:1, conversations de groupe, conversations de réunion et conversations de canal)
-- Teams messages multimédias (images, extraits de code, vidéos, images wiki)
-- Teams enregistrements d’appels et de réunions stockés dans Teams stockage
-- Teams notifications de conversation
-- Teams suggestions de conversation par Cortana
-- Teams messages d’état
-- Informations sur l’utilisateur et le signal Exchange Online
-
-### <a name="records-management"></a>Gestion des enregistrements
-
-Le groupe [de rôles d’administrateur](get-started-with-records-management.md#permissions-required-for-records-management) Gestion des enregistrements accorde désormais des autorisations pour toutes les fonctionnalités de gestion des enregistrements, y compris la révision de la disposition.
-
-### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
-
-- [Étiqueter automatiquement les données dans Azure Purview (aperçu)](/azure/purview/create-sensitivity-label). Vous pouvez désormais créer et appliquer automatiquement des étiquettes de niveau de sensibilité à des ressources dans Azure Purview, telles que des fichiers dans le stockage Blob Azure et des colonnes de base de données dans SQL Server.
-- [Exiger que les utilisateurs appliquent une étiquette aux éléments.](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) Également appelée « étiquetage obligatoire » , cette nouvelle option exige que les utilisateurs choisissent et appliquent une étiquette de niveau de sensibilité dans les scénarios spécifiques.

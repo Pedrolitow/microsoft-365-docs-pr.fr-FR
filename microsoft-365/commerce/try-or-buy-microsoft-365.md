@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: GEA150
-description: Inscrivez-vous à un essai gratuit de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou applications professionnelles Microsoft 365.
+description: Inscrivez-vous à un essai gratuit de 30 jours pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 ms.date: 08/07/2020
-ms.openlocfilehash: c53f9eb64463eeb7c647bc63123aaac02598fd4c
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 1ef3ceffb795a25ebad0bac1e37dd12df6f62d90
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950046"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394868"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Essayer ou acheter un abonnement Microsoft 365 entreprise
 
-Microsoft 365 entreprise est un service d’abonnement qui vous permet d’exécuter votre organisation dans le cloud tandis que Microsoft s’occupe de l’informatique pour vous. Microsoft gère les appareils, protège contre les menaces réelles et fournit à votre organisation les logiciels les plus récents de l’entreprise. Vous pouvez vous inscrire à un abonnement d’essai gratuit pour Microsoft 365 Business Standard, Microsoft 365 Business Premium ou applications professionnelles Microsoft 365 et l’essayer pendant 30 jours.
+Microsoft 365 entreprise est un service d’abonnement qui vous permet d’exécuter votre organisation dans le cloud tandis que Microsoft s’occupe de l’informatique pour vous. Microsoft gère les appareils, protège contre les menaces réelles et fournit à votre organisation les logiciels les plus récents de l’entreprise. Vous pouvez vous inscrire à un abonnement d’essai gratuit Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME et l’essayer pendant 30 jours.
 
 > [!NOTE]
 > Vous devez utiliser une carte de crédit lorsque vous vous inscrivez à un essai gratuit. À la fin de votre période d’essai gratuite, votre abonnement d’essai est automatiquement converti en abonnement payant. Votre carte de crédit n’est pas facturée avant la fin de la période d’essai.
@@ -49,7 +50,7 @@ Vous n’avez pas besoin d’un compte Microsoft existant pour vous inscrire à 
 
 ## <a name="try-a-free-trial-subscription"></a>Essayer un abonnement d’essai gratuit
 
-Êtes-vous un nouveau client et vous n’avez pas encore de compte auprès de Microsoft ? Utilisez ces étapes pour créer un compte et vous inscrire à un abonnement d’essai gratuit de Microsoft 365 Business Standard, Microsoft 365 Business Premium ou applications professionnelles Microsoft 365.
+Êtes-vous un nouveau client et vous n’avez pas encore de compte auprès de Microsoft ? Utilisez ces étapes pour créer un compte et vous inscrire à un abonnement d’essai gratuit de Microsoft 365 Business Standard, Microsoft 365 Business Premium ou Applications Microsoft 365 pour les PME.
 
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
 2. Sélectionnez l’plan pour qui vous souhaitez vous inscrire, par exemple **Microsoft 365 Business Standard,** faites défiler la page vers le bas, puis sélectionnez Essayer gratuitement **pendant 1 mois.**
@@ -141,7 +142,7 @@ Si vous avez un nouveau compte et que vous avez configuré votre premier abonnem
 
 Si vous avez déjà un abonnement et que vous ajoutez un nouvel abonnement, vous pouvez y déplacer des utilisateurs. Pour savoir comment faire, voir [Déplacer des utilisateurs vers un autre abonnement.](subscriptions/move-users-different-subscription.md)
 
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Microsoft 365 vidéos de formation pour les entreprises](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vidéo)\
 [Ajouter des utilisateurs et attribuer des licences en même temps](../admin/add-users/add-users.md) (article)\

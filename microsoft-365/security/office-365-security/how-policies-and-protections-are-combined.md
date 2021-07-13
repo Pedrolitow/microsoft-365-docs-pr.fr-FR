@@ -17,12 +17,12 @@ ms.custom:
 description: Les administrateurs peuvent en savoir plus sur l’ordre d’application des protections dans Exchange Online Protection (EOP) et comment la valeur de priorité dans les stratégies de protection détermine quelle stratégie est appliquée.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
-ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
+ms.openlocfilehash: 9dea01324e37a56fbff049e4e46cd5882f1fabad
+ms.sourcegitcommit: 8c698d1a0c41baf5f35d07b0d765b4a5ead593d0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029284"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53409127"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordre et priorité de la protection de la messagerie
 
@@ -53,15 +53,16 @@ Deux facteurs majeurs déterminent la stratégie appliquée à un message :
   |4 |Usurpation|CAT:SPOOF|[Informations sur l’usurpation d’intelligence dans EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Emprunt d’identité d’utilisateur (utilisateurs protégés)|UIMP|[Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Emprunt d’identité de domaine (domaines protégés)|DIMP|[Configurer des stratégies anti-hameçonnage dans Microsoft Defender pour Office 365](configure-mdo-anti-phishing-policies.md)|
-  |7 |Courrier indésirable|CAT:SPM|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
-  |8 |Courrier en nombre|CAT:BULK|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
+  |7 |Courrier indésirable|CAT:SPM|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
+  |8 |Courrier en nombre|CAT:BULK|[Configuration de stratégies de blocage du courrier indésirable dans Exchange Online Protection](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup>Ces fonctionnalités sont disponibles uniquement dans les stratégies anti-hameçonnage dans Microsoft Defender pour Office 365.
 
 - Priorité de la stratégie : pour chaque type de stratégie (anti-courrier indésirable, anti-programme malveillant, anti-hameçonnage, etc.), il existe une stratégie par défaut qui s’applique à tout le monde, mais vous pouvez créer des stratégies personnalisées qui s’appliquent à des utilisateurs spécifiques. Chaque stratégie personnalisée a une valeur de priorité qui détermine l’ordre d’application des stratégies. La stratégie par défaut est toujours appliquée en dernier.
 
-  Si un utilisateur est défini dans plusieurs stratégies du même type, seule la stratégie ayant la priorité la plus élevée lui est appliquée. Les stratégies restantes de ce type ne sont pas évaluées pour l’utilisateur (y compris la stratégie par défaut).
+  > [!IMPORTANT]
+  > Si un utilisateur est défini dans plusieurs stratégies du même type, seule la stratégie ayant la priorité la plus élevée lui est appliquée. Les stratégies restantes de ce type ne sont pas évaluées pour l’utilisateur (y compris la stratégie par défaut).
 
 Par exemple, prenons les stratégies anti-hameçonnage suivantes dans Microsoft Defender pour les Office 365 qui s’appliquent aux mêmes utilisateurs **et** un message identifié comme usurpant l’identité et l’usurpation d’identité d’utilisateur :
 
