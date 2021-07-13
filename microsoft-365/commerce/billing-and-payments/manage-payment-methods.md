@@ -18,15 +18,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Achetez des produits ou services professionnels auprès de Microsoft en utilisant une méthode de paiement existante ou en ajoutant une nouvelle dans le centre d'administration de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e944547e69ea8774690852d1b3123578d40bd3c0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537318"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394616"
 ---
 # <a name="manage-payment-methods"></a>Gérer les modes de paiement
 

@@ -17,19 +17,20 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
+- AdminTemplateSet
 search.appverid: MET150
 description: Le moyen le plus simple de mettre à niveau les plans consiste à utiliser l’onglet Mise à niveau dans le Centre d’administration. Toutefois, l’onglet Mise à niveau n’est pas toujours pris en charge.
 ms.date: 04/21/2021
-ms.openlocfilehash: da0b0a826087ea7e963dde85f9b4612acf0eaf99
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a4db0934767beb7913939475d8615f2a0184d0a3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624312"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394760"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Opter pour un abonnement différent
 
-Lorsque votre entreprise change ou que vous avez besoin de fonctionnalités supplémentaires, vous pouvez mettre à niveau les plans. Le moyen le plus simple de le faire consiste à utiliser l’onglet **Mise** à niveau dans le Centre d’administration. Toutefois, l’utilisation **de l’onglet** Mise à niveau n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
+Lorsque votre entreprise change ou que vous avez besoin de fonctionnalités supplémentaires, vous pouvez mettre à niveau les plans. Le moyen le plus simple de  le faire consiste à utiliser l’onglet Mise à niveau dans le Centre d’administration. Toutefois, l’utilisation **de l’onglet** Mise à niveau n’est pas prise en charge dans toutes les situations. Dans certains cas, vous pouvez modifier les plans manuellement.
 
 ## <a name="use-the-upgrade-tab"></a>Utiliser l’onglet Mise à niveau
 
@@ -39,9 +40,9 @@ Lorsque vous  utilisez l’onglet Mise à niveau, vous êtes dirigé tout au lon
 2. Sélectionnez l’abonnement à mettre à niveau.
 3. Dans la page des détails de l’abonnement, sélectionnez **Mettre à niveau.**
 4. Recherchez le plan vers lequel vous souhaitez mettre à niveau, puis sélectionnez le bouton **Mettre à** niveau.
-5. Entrez le nombre de licences dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’année entière, puis sélectionnez **Accéder à l’checkout.**
+5. Entrez le nombre de licences dont vous avez besoin, choisissez s’il faut payer chaque mois ou pour l’année entière, puis **sélectionnez Accéder à l’checkout**.
     > [!NOTE]
-    > Assurez-vous d’acheter suffisamment de licences pour couvrir tous vos utilisateurs.
+    > Veillez à acheter suffisamment de licences pour couvrir tous vos utilisateurs.
 6. Sur la page suivante, vérifiez l’adresse de **l’acheteur** et les informations de **facturation** ainsi que **les articles de cette commande**. Vous pouvez modifier le mode de paiement par défaut à cette étape. Si vous souhaitez modifier des informations, sélectionnez **modifier** en regard de la section applicable.
 7. Lorsque vous avez terminé, sélectionnez **Ordre des commandes.**
 
@@ -49,7 +50,7 @@ Lorsque vous avez terminé l’enregistrement, la finalisation de la mise à niv
 
 ## <a name="the-upgrade-tab-is-empty"></a>L’onglet Mise à niveau est vide
 
-Si **l’onglet** Mise à niveau est vide, vous verrez une explication sur la raison pour laquelle vous ne pouvez pas mettre à niveau pour le moment. Vous pouvez essayer de [modifier les plans manuellement.](change-plans-manually.md) Pour plus d’informations, [voir Pourquoi ne puis-je pas mettre à niveau les plans ?](#why-cant-i-upgrade-plans)
+Si **l’onglet** Mise à niveau est vide, vous verrez une explication sur la raison pour laquelle vous ne pouvez pas mettre à niveau pour le moment. Vous pouvez essayer de [modifier les plans manuellement.](change-plans-manually.md) Pour plus d’informations, [voir Pourquoi ne puis-je pas mettre à niveau les plans ?](#why-cant-i-upgrade-plans).
 
 ## <a name="i-dont-see-the-plan-i-want"></a>L'offre à laquelle je veux souscrire n'apparaît pas
 
@@ -119,7 +120,7 @@ Vous ne verrez peut-être aucun plan sous **l’onglet** Mise à niveau, car le 
 
 Lorsque vous planifiez une mise à niveau, les plans disponibles pour la mise à niveau s’affichent en fonction des services de votre plan actuel. Vous pouvez uniquement mettre à niveau vers un plan qui possède les mêmes services liés aux données, tels que Exchange Online ou SharePoint Online, ou vers une version supérieure de ces services. Cela garantit que les utilisateurs ne perdent pas les données \' liées à ces services pendant la mise à niveau.
 
-Si votre plan n’est pas éligible à la mise à niveau automatique, vous pouvez peut-être modifier les [plans](change-plans-manually.md)manuellement, à la place. Vous pouvez également appeler [le support technique](../../business-video/get-help-support.md) pour obtenir de l’aide.
+Si votre plan n’est pas éligible à la mise à niveau automatique des plans, vous pouvez peut-être modifier les [plans](change-plans-manually.md)manuellement, à la place. Vous pouvez également appeler [le support technique](../../business-video/get-help-support.md) pour obtenir de l’aide.
 
 #### <a name="your-subscription-has-an-add-on"></a>Votre abonnement dispose d’un module add-on
 

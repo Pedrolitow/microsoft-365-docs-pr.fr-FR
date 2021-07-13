@@ -16,21 +16,22 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Découvrez les comptes de facturation et leur utilisation pour gérer les paramètres de compte, les factures, les modes de paiement et les achats.
 ms.date: 03/17/2021
-ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7b19c30a8a11a816d5cd8906cdb96da36688573c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535637"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394398"
 ---
 # <a name="understand-billing-accounts"></a>Comprendre les comptes de facturation
 
 Un compte de facturation est créé lorsque vous vous inscrivez pour essayer ou acheter des produits Microsoft. Vous utilisez votre compte de facturation pour gérer vos paramètres de compte, factures, modes de paiement et achats. Vous pouvez avoir accès à plusieurs comptes de facturation. Par exemple, vous vous êtes inscrit à Microsoft 365 directement, ou vous avez accès au contrat de Accord Entreprise de votre organisation, au contrat de services Microsoft Product & ou au contrat client Microsoft. Pour chacun de ces scénarios, vous avez un compte de facturation distinct.
 
-Le centre Microsoft 365'administration centrale prend actuellement en charge le type de compte de facturation suivant :
+Le Centre d’administration Microsoft 365 prend actuellement en charge le type de compte de facturation suivant :
 
 - Microsoft Online Services programme : ce compte de facturation est créé lorsque vous vous inscrivez à un abonnement Microsoft 365 directement.
 - Programme MPSA (Contrat de service de gestion des produits & Microsoft) : ce compte de facturation est créé lorsque votre organisation signe un contrat de licence en volume MPSA pour acheter des logiciels et des services en ligne.
@@ -50,11 +51,11 @@ Le tableau suivant répertorie les termes importants que vous voyez dans la page
 | Segment | Champ en lecture seule qui identifie le segment commercial de votre organisation (commercial, éducation, secteur public ou à but non lucratif). |
 | État du compte | Champ en lecture seule qui spécifie l’état de votre compte commercial auprès de Microsoft. |
 | ID de taxe | Si vous êtes en dehors des États-Unis, vous devez fournir une TVA ou un équivalent local. Si vous souhaitez en savoir plus, consultez l’article [Information sur les taxes](billing-and-payments/tax-information.md). |
-| Contrat | Lorsqu’un compte de facturation est créé, par le biais d’un achat direct ou d’un accord de licence en volume, une entreprise accepte, ou signe, un contrat qui décrit les conditions d'& du compte. Le cas échéant, cet affichage répertorie un historique des contrats. Si vous devez accepter les termes mis à jour, un lien pour **approuver** le contrat s’affiche. |
+| Contrat | Lorsqu’un compte de facturation est créé, soit par le biais d’un achat direct, soit d’un accord de licence en volume, une entreprise accepte, ou signe, un contrat qui décrit les conditions d'& du compte. Le cas échéant, cet affichage répertorie un historique des contrats. Si vous devez accepter les termes mis à jour, un lien pour **approuver** le contrat s’affiche. |
 | Profils de facturation | Un profil de facturation définit les propriétés de votre facture, telles que la personne qui reçoit la facture, la manière dont la facture est livrée, les conditions de paiement et un numéro de bon de réception. Pour distribuer la facturation au sein de votre organisation, vous pouvez créer plusieurs profils de facturation et identifier le profil de facturation approprié au moment de l’achat. Pour plus d’informations sur les profils de facturation et sur la façon dont vous pouvez les utiliser pour créer des options de facturation plus flexibles pour votre organisation, [comprenez les profils de facturation.](billing-and-payments/manage-billing-profiles.md) |
 
 > [!NOTE]
-> Si vous devez  modifier le nom ou l’adresse de  vente, mais que vous ne voyez pas de lien Modifier, vous devez contacter le [support](../business-video/get-help-support.md) technique pour le modifier. Les demandes de modification **de nom de** vente nécessiteront une vérification de solvabilité. Remplissez [ce formulaire](https://www.microsoft.com/download/details.aspx?id=102732)et êtes prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique :
+> Si vous devez modifier le nom ou l’adresse «  Vendu à [](../business-video/get-help-support.md) » mais que vous ne voyez pas de lien Modifier, vous devez contacter le support technique pour le modifier.  Les demandes de modification **de nom** « Vendu à » nécessitent une vérification de solvabilité. Remplissez [ce formulaire](https://www.microsoft.com/download/details.aspx?id=102732)et êtes prêt à partager l’un des documents suivants avec Microsoft lorsque vous contactez le support technique :
 >
 > - Document émis par le gouvernement ou lettre d’inscription
 > - Imprimer à partir du Registre de la société locale
@@ -67,14 +68,14 @@ Cette section répertorie les adresses d’expédition associées à votre compt
 
 ## <a name="understand-access-to-billing-accounts"></a>Comprendre l’accès aux comptes de facturation
 
-Vous pouvez fournir à d’autres utilisateurs l’accès au compte de facturation dans Microsoft 365 centre d’administration via des rôles et des autorisations. Seul un propriétaire de compte de facturation peut accorder l’accès à un compte de facturation. Vous pouvez attribuer l’un des rôles suivants aux utilisateurs :
+Vous pouvez fournir à d’autres utilisateurs l’accès au compte de facturation dans le Centre d’administration Microsoft 365 par le biais de rôles et d’autorisations. Seul un propriétaire de compte de facturation peut accorder l’accès à un compte de facturation. Vous pouvez attribuer l’un des rôles suivants aux utilisateurs :
 
 - **Propriétaire du compte de facturation** &mdash; Peut attribuer des autorisations, modifier des comptes, signer des contrats et afficher des comptes.
 - **Collaborateur de compte de facturation** &mdash; Peut modifier des comptes, signer des contrats et afficher des comptes.
 - **Lecteur de compte de facturation** &mdash; Peut afficher les comptes.
 
 > [!Note]
-> Les rôles de compte de facturation s’appliquent uniquement aux comptes de facturation et ne s’appliquent pas aux autres Microsoft 365 du Centre d’administration.
+> Les rôles de compte de facturation s’appliquent uniquement aux comptes de facturation et ne s’appliquent pas aux autres Centre d’administration Microsoft 365 de facturation.
 
 ## <a name="related-content"></a>Contenu associé
 

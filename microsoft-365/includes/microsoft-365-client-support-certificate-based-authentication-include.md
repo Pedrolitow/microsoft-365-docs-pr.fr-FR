@@ -1,5 +1,5 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clients|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Applications modernes|
+|Clients|Android|iOS|Mac|Windows 10<br>Bureau|Windows 10<br>Applications modernes|
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/A|N/A|N/A|✔|S/O|
 |ADMINISTRATEUR AZURE ACTIVE DIRECTORY|N/A|N/A|N/A|✔|S/O|
@@ -36,7 +36,7 @@
 |TEAMS|✔|✔|✔|✔|S/O|
 |TO-DO|✔|✔|✔|S/O|✔|
 |VISIO|S/O|✔|S/O|✔|S/O|
-|TABLEAU BLANC|✔|Planifié|N/A|N/A|✔|
+|TABLEAU BLANC|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |ANALYSE DU TEMPS DE TRAVAIL|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|✔|✔|Planifié|Planifié|S/O|

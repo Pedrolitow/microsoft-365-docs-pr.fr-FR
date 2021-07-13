@@ -17,15 +17,16 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
+- AdminTemplateSet
 search.appverid: MET150
 description: Lorsque vous fermez votre compte avec Microsoft, toutes les informations relatives à votre compte sont supprimées, y compris les licences, les utilisateurs et les données utilisateur.
 ms.date: 04/02/2021
-ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f46a35ca9a8b4ca0a68a3260f1a79bbf3717b552
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624324"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394460"
 ---
 # <a name="close-your-account"></a>Fermer votre compte
 
@@ -35,11 +36,11 @@ Lorsque vous fermez votre compte auprès de Microsoft, toutes les informations r
 
 Avant de commencer ce processus, veillez à sauvegarder les données que vous voulez conserver.
 
-Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
+Pour suivre les étapes décrites dans cet article, vous devez être administrateur général ou de facturation. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../admin/add-users/about-admin-roles.md).
 
 ## <a name="step-1-delete-users"></a>Étape 1 : Supprimer des utilisateurs
 
-Supprimez tous les utilisateurs à l’exception d’un administrateur général. L’administrateur général termine la procédure de fermeture du compte. Avant de pouvoir supprimer l’annuaire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
+Supprimez tous les utilisateurs à l’exception d’un administrateur général. L’administrateur général termine les étapes de fermeture du compte. Avant de pouvoir supprimer l’annuaire à la fin de ce processus, vous devez supprimer tous les autres utilisateurs.
 
 Si les utilisateurs sont synchronisés en local, désynchronisé, supprimez-les dans l’annuaire cloud à l’aide du portail Azure ou Azure PowerShell cmdlets.
 

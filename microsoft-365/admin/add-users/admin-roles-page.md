@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Les rôles d’administrateur sont map faits avec les fonctions métiers et fournissent des autorisations pour effectuer des tâches spécifiques dans le Centre d’administration. Par exemple, l’administrateur du service ouvre les tickets de support avec Microsoft.
-ms.openlocfilehash: 4e2b1db207a2a590855f7fb2d0bf2019d4b57ea5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 20ba46c94f94267df7117d4baf020bbdc21cad7c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924562"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394386"
 ---
 # <a name="get-started-with-the-roles-page"></a>Mise en place de la page rôles
 
@@ -59,7 +61,7 @@ Il ne s’agit pas d’une liste exhaustive de toutes les autorisations dont ces
 
 Attribuez le Exchange administrateur principal aux utilisateurs qui ont besoin d’afficher et de gérer les boîtes aux lettres de messagerie, les groupes Microsoft 365 utilisateurs et les Exchange Online. Ils peuvent également ouvrir et gérer les demandes de service au support Microsoft. [En savoir plus](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
-### <a name="global-admin"></a>Administrateur global
+### <a name="global-admin"></a>Administrateur général
 
 Attribuez le rôle d’administrateur global aux utilisateurs qui ont besoin d’un accès global à la plupart des fonctionnalités et données de gestion dans les services en ligne Microsoft. Le fait de donner un accès global à un grand nombre d’utilisateurs représente un risque pour la sécurité et nous vous recommandons de n’avoir que 2 à 4 administrateurs généraux. Seuls les administrateurs globaux peuvent réinitialiser les mots de passe de tous les utilisateurs et ajouter et gérer des domaines. Ils peuvent également ouvrir et gérer les demandes de service au support Microsoft. La personne qui s’est inscrite aux services en ligne Microsoft devient automatiquement un administrateur global. En [savoir plus](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
@@ -77,7 +79,7 @@ Attribuez le rôle d’administrateur de service aux utilisateurs qui doivent cr
 
 ### <a name="sharepoint-admin"></a>Administrateur SharePoint
 
-Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automatiquement créé et l’administrateur général est définie comme administrateur principal de la collection de sites. Attribuez le SharePoint administrateur principal aux utilisateurs qui souhaitent accéder au centre d SharePoint’administration. Les utilisateurs qui SharePoint rôle d’administrateur principal peuvent créer et gérer des collections de sites, désigner des administrateurs de collections de sites et gérer des profils utilisateur. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de service via le support Microsoft. [En savoir plus](/sharepoint/sharepoint-admin-role)
+Lorsque vous achetez un abonnement Microsoft 365, un site d’équipe est automatiquement créé et l’administrateur général est définie comme administrateur principal de la collection de sites. Attribuez le SharePoint administrateur principal aux utilisateurs qui souhaitent accéder au centre d SharePoint’administration. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent créer et gérer des collections de sites, désigner des administrateurs de collections de sites et gérer des profils utilisateur. Les utilisateurs ayant SharePoint rôle d’administrateur principal peuvent également gérer Microsoft 365 groupes et ouvrir des demandes de service via le support Microsoft. [En savoir plus](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Administrateur du service Teams
 

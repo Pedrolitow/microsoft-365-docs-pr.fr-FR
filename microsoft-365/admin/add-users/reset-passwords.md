@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Connectez-vous avec votre compte Microsoft 365 pour réinitialiser les mots de passe des utilisateurs Microsoft 365 abonnement pour les entreprises.
-ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 64382d94ae92373d8d814eae0e9f6aa7c6e0043b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635569"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394278"
 ---
 # <a name="reset-passwords"></a>Réinitialiser les mots de passe
 
@@ -126,4 +127,4 @@ Essayez cet article : [J'ai oublié le nom d'utilisateur ou le mot de passe du c
 [Réinitialiser les mots de passe](../add-users/reset-passwords.md) (article)\
 [Définir le mot de passe d’un utilisateur de façon à ce qu’il n’expire jamais](set-password-to-never-expire.md) (article)\
 [Définir la stratégie d’expiration des mots de passe pour votre organisation](../manage/set-password-expiration-policy.md) (article)\
-[Microsoft 365 vidéos de formation pour les entreprises](../../business-video/index.yml) (page de liens)
+[Vidéos de formation Microsoft 365 Entreprise](../../business-video/index.yml) (page de liens)

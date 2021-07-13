@@ -19,17 +19,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Suivez les étapes de cette solution pour supprimer un ancien employé de Microsoft 365 et sécuriser les données de votre organisation.
-ms.openlocfilehash: 36441e51a7f9fe89434f633ee98fe2015d72827d
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: dcc206cc0b088749c3936dcf1c548cc83b6fa595
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286344"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394290"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Vue d’ensemble : supprimer un ancien employé et sécuriser les données
 

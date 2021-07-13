@@ -1,5 +1,5 @@
 ---
-title: Attribuer des rôles d’administrateur au Microsoft 365'administration centrale
+title: Attribuer les rôles d’administrateur Centre d’administration Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -27,18 +28,18 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Découvrez comment attribuer des rôles d’administrateur à un ou plusieurs utilisateurs de votre entreprise afin qu’ils peuvent effectuer des tâches spécifiques dans le Centre d’administration.
-ms.openlocfilehash: e53d1a414d081ddb74a1c4784adcd982b6194691
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 575d1d8c6b0ffce40877fb41d28df82c24e84d04
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683210"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393774"
 ---
 # <a name="assign-admin-roles"></a>Attribuer des rôles d’administrateur
 
 Si vous êtes la personne qui a acheté votre abonnement Microsoft Business, vous êtes l’administrateur global. Cela signifie que vous avez un contrôle illimité sur les produits de vos abonnements et que vous pouvez accéder à la plupart des données.
 
-Pour plus d’informations, consultez [À propos des rôles d’administrateur](about-admin-roles.md).
+Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](about-admin-roles.md).
 
 Lorsque vous ajoutez de nouveaux utilisateurs, si vous ne  leur attribuez pas de rôle d’administrateur, ils sont dans le rôle d’utilisateur et n’ont pas de privilèges d’administrateur sur les centres d’administration Microsoft. Toutefois, si vous avez besoin d’aide pour ce faire, vous pouvez attribuer un rôle d’administrateur à un utilisateur. Par exemple, si vous avez besoin d’une personne pour réinitialiser les mots de passe, vous ne devez pas lui attribuer le rôle d’administrateur global, vous devez lui attribuer le rôle d’administrateur de mot de passe. Le fait d’avoir un trop grand nombre d’administrateurs généraux, avec un accès illimité à vos données et à votre entreprise en ligne, constitue un risque pour la sécurité.
 

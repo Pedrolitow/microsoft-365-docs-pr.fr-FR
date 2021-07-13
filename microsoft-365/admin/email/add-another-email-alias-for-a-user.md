@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Découvrez comment vous pouvez avoir plusieurs adresses de messagerie, appelées alias de messagerie, associées à votre compte Microsoft 365 entreprise. '
-ms.openlocfilehash: e6eac45c3ade3fd737f93c88c29b56ccd497212e
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: ab1a7b846bb35cce4656a3a5edf941961f5398c2
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314355"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394026"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Ajouter un autre alias de courrier pour un utilisateur
   
@@ -35,12 +36,12 @@ Cet article s’Microsoft 365 administrateurs qui ont des abonnements d’entrep
   
 Une adresse de messagerie principale dans Microsoft 365 est généralement l’adresse de messagerie attribuée à un utilisateur lors de la création de son compte. Lorsque l'utilisateur envoie du courrier à une autre personne, son adresse de courrier principale est celle qui apparaît généralement dans le champ  *De*  dans les applications de courrier. Ils peuvent également avoir plusieurs adresses de messagerie associées à leur compte Microsoft 365 entreprise. Les adresses supplémentaires sont appelées alias. 
   
-Par exemple, supposons que Son adresse de messagerie soit jenna@contosoco.com, mais qu’elle souhaite également recevoir des messages électroniques sur jen@contosoco.com car certaines personnes lui font référence par ce nom. Vous pouvez créer des alias pour elle afin que les deux adresses de messagerie se placent dans la boîte de réception de Celle-là.
+Par exemple, supposons que Son adresse de messagerie soit jenna@contosoco.com, mais qu’elle souhaite également recevoir des messages électroniques sur jen@contosoco.com car certaines personnes lui font référence par ce nom. Vous pouvez créer des alias pour elle afin que les deux adresses de messagerie se placent dans la boîte de réception de Son prénom.
   
 Vous pouvez créer jusqu'à 400 alias par utilisateur. Vous ne devez pas acquérir de licence supplémentaire et cela n'occasionne aucun frais.
   
 > [!Tip]
-> Si vous souhaitez que plusieurs personnes gèrent les messages électroniques envoyés à une seule adresse de messagerie telle que info@NodPublishers.com ou sales@NodPublishers.com, créez une boîte aux lettres partagée. Pour plus d’informations, voir [Créer une boîte aux lettres partagée.](create-a-shared-mailbox.md)
+> Si vous souhaitez que plusieurs personnes gèrent les messages électroniques envoyés à une seule adresse de messagerie, comme info@NodPublishers.com ou sales@NodPublishers.com, créez une boîte aux lettres partagée. Pour plus d’informations, voir [Créer une boîte aux lettres partagée.](create-a-shared-mailbox.md)
   
 ## <a name="add-email-aliases-to-a-user"></a>Ajouter des alias de courrier à un utilisateur
 
@@ -53,7 +54,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
 3. Sélectionnez **+ Ajoutez un alias** et entrez un nouvel alias pour l’utilisateur.   
     
     > [!Important] 
-    > Si vous obtenez le message d’erreur « Impossible de trouver un paramètre qui correspond au nom du paramètre **« EmailAddresses**», cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
+    > Si le message d’erreur « Un paramètre qui correspond au nom de paramètre «**EmailAddresses**» s’ajoute, cela signifie qu’il faut un peu plus de temps pour terminer la configuration de votre client ou de votre domaine personnalisé si vous en avez récemment ajouté un. Le processus de configuration peut prendre jusqu'à 4 heures. Patientez le temps que le processus de configuration ait le temps de terminer, puis réessayez. Si le problème persiste, appelez le support technique qui se chargera d'effectuer une synchronisation complète pour vous.
     
   
     > [!IMPORTANT]
@@ -70,7 +71,7 @@ Vous devez avoir [des autorisations d’administrateur](../add-users/about-admin
     L’utilisateur aura désormais une adresse principale et un alias. Par exemple, tous les messages envoyés à l’adresse principale d’Eliza Eliza@NodPublishers.com et à son alias, Sales@NodPublishers.com, seront acheminés vers la boîte de réception d’Eliza.
     
   
-7. **Lorsque l’utilisateur répond, l’adresse *de* l’utilisateur dépend de Outlook client. Outlook sur le web utilisera l’alias auquel l’e-mail a été reçu (nous appellerons cela le principe ping- domaine). Outlook bureau utilise son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Lorsque Eliza répond au message à l’aide Outlook bureau, son adresse de messagerie principale s’affiche sous la Eliza@NodPublishers.com, et non Sales@NodPublishers.com.
+7. **Lorsque l’utilisateur répond, l’adresse *De* dépend de son client Outlook client. Outlook sur le web utilisera l’alias auquel l’e-mail a été reçu (nous appellerons cela le principe ping- domaine). Outlook bureau utilise son alias de messagerie principal.** Par exemple, supposons qu’un message est envoyé à Sales@NodPublishers.com et qu’il arrive dans la boîte de réception d’Eliza. Lorsque Eliza répond au message à l’aide Outlook bureau, son adresse de messagerie principale s’affiche sous la Eliza@NodPublishers.com, et non Sales@NodPublishers.com.
     
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>Avez-vous reçu « Un paramètre indessable qui correspond au nom de paramètre EmailAddresses » ?
 
@@ -83,9 +84,9 @@ Si vous achetez votre abonnement auprès de GoDaddy ou d'un autre partenaire, vo
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Envoi aisément d’e-mails à partir de l’adresse proxy
 
-Une nouvelle fonctionnalité est en cours de déploiement en juillet 2021 qui permet aux utilisateurs d’envoyer facilement des messages à partir de leurs alias lors de l’utilisation Outlook sur le web. Lorsque la fonctionnalité est mise en place dans une location où l’administrateur client utilise la cmdlet, les utilisateurs au sein de la location ont accès à une liste de case à cocher où chaque entrée correspond à un alias dans leurs `Set-OrganizationConfig -SendFromAliasEnabled $true` paramètres Outlook. La sélection d’un alias l’affiche dans ladown From du formulaire Composer.
+Une nouvelle fonctionnalité est en cours de déploiement en juillet 2021 qui permet aux utilisateurs d’envoyer facilement des messages à partir de leurs alias lors de l’utilisation Outlook sur le web. Lorsque la fonctionnalité est mise en place dans une location où l’administrateur client utilise la cmdlet, les utilisateurs au sein de la location ont accès à une liste de case à cocher où chaque entrée correspond à un alias dans leurs `Set-OrganizationConfig -SendFromAliasEnabled $true` paramètres Outlook. La sélection d’un alias l’affiche dans ladown From du formulaire de composition.
   
-## <a name="related-content"></a>Contenu connexe
+## <a name="related-content"></a>Contenu associé
 
 [Envoyer des messages électroniques à partir d’une adresse différente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)
 

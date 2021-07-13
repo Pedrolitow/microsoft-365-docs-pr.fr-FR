@@ -18,16 +18,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment lire et comprendre votre facture pour les produits de productivité Microsoft.
 keywords: comptes de facturation, informations sur l’organisation, factures
 ms.date: 05/04/2021
-ms.openlocfilehash: 64ccf82549bb85ba803693eb3e7c15939940d45c
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: b780b2f0379e9e1f1866c22139a7ac3504a23b53
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635845"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394508"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Comprendre votre facture
 

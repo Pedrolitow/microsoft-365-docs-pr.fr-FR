@@ -1,5 +1,5 @@
 ---
-title: Acheter ou supprimer des licences
+title: Acheter ou supprimer des licences d’abonnement
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,23 +18,24 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
 description: Utilisez ces étapes pour acheter davantage de licences ou réduire le nombre de licences pour votre abonnement Microsoft 365 entreprise.
 ms.date: 04/07/2021
-ms.openlocfilehash: 144adbd9c21253bd0a8e47205c72e09062fe6552
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 4fa1b08a7a4304d13fb25ec53c5f034eae77ccec
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582703"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394436"
 ---
-# <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences
+# <a name="buy-or-remove-licenses"></a>Acheter ou supprimer des licences d’abonnement
 
 Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour vos abonnements en suivant les étapes ci-après.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+- Vous devez être administrateur global ou administrateur de facturation pour effectuer les tâches décrites dans cet article. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 - Vous pouvez [ajouter des utilisateurs et attribuer des licences en même temps.](../../admin/add-users/add-users.md)
 - Si vous avez acheté votre offre Microsoft 365 entreprise ou Office 365 Entreprise par le biais d’un partenaire tiers, vous devez acheter des licences supplémentaires par le biais de ce partenaire.
 
@@ -42,7 +43,7 @@ Vous pouvez acheter davantage de licences ou réduire le nombre de licences pour
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
-Si les personnes pour qui vous achetez des licences ne sont pas encore des utilisateurs actifs de votre organisation, l’étape suivante consiste à ajouter des utilisateurs et à attribuer des [licences en même temps.](../../admin/add-users/add-users.md)
+Si les personnes pour qui vous achetez des licences ne sont pas encore des utilisateurs actifs de votre organisation, la prochaine chose à faire est d’ajouter des utilisateurs et d’attribuer des [licences en même temps.](../../admin/add-users/add-users.md)
 
 ## <a name="watch-remove-existing-licenses"></a>Regarder : Supprimer des licences existantes
 
@@ -54,18 +55,18 @@ Si vous avez supprimé des licences d’un abonnement, la prochaine chose à fai
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 2. Sous **l’onglet** Produits, recherchez l’abonnement pour lequel vous souhaitez acheter ou supprimer des licences. Sélectionnez les trois points (plus d’actions), puis **sélectionnez Acheter des licences.** [Que se passe-t-il si je ne vois pas les boutons Acheter des licences ou Supprimer des licences ?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -98,7 +99,7 @@ Si vous avez prépayé votre abonnement avec une clé de produit, vous pouvez aj
 - Les licences ajoutées au milieu de votre période de facturation apparaissent sur votre prochaine facture. Si vous payez annuellement, vous êtes facturé dans un mois pour ces modifications.
 - Sur votre relevé de facturation suivant, les frais précédents pour le nombre de licences d’origine sont déduits. Nous ajoutons un frais au prorat pour la période avec le nombre de licences d’origine et un frais pour le nouveau nombre de licences. Il existe également un frais pour le nombre de licences actuel pour le restant de votre période de facturation.
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous avez acheté plus de licences pour votre abonnement, vous devez ensuite attribuer ces licences aux [utilisateurs de votre organisation.](../../admin/manage/assign-licenses-to-users.md)
 

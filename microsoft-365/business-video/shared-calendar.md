@@ -15,17 +15,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Découvrez comment créer un calendrier partagé.
-ms.openlocfilehash: cbc84523b52b7a38e25a35670abf6758a73d0a70
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 87b73b9b1bff2d56926c70e812515df3882edcf3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705641"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394206"
 ---
 # <a name="create-a-shared-calendar"></a>Créer un calendrier partagé
 
@@ -47,4 +48,4 @@ Un calendrier partagé peut vous aider à voir rapidement quand des personnes so
 
 [Gérer votre calendrier et vos contacts dans Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (article)\
 [Collaboration par courrier](../admin/email/email-collaboration.md) électronique (article)\
-[Vue d’ensemble du centre Microsoft 365'administration centrale](admin-center-overview.md) (article)
+[Vue d’ensemble du Centre d’administration Microsoft 365](admin-center-overview.md) (article)

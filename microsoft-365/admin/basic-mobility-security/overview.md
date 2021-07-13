@@ -15,15 +15,16 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: Utilisez Basic Mobility and Security pour définir des stratégies de sécurité des appareils et des règles d’accès.
-ms.openlocfilehash: 37be420a4b9499da3d1290b8b6a898b9fcb09c5b
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 1d1376ec39f7249dfffb94c666b2fdcfa07641a0
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706309"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394074"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Vue d’ensemble de la mobilité et de la sécurité de base pour Microsoft 365
 
@@ -53,7 +54,7 @@ Voici un résumé des étapes :
 
 ## <a name="device-management-tasks"></a>Tâches de gestion des appareils
 
-Une fois que vous avez installé Basic Mobility and Security et que vos utilisateurs ont inscrit leurs appareils, vous pouvez gérer les appareils, bloquer l’accès ou effacer un appareil, si nécessaire. Pour en savoir plus sur certaines tâches courantes de gestion des [appareils,](manage-enrolled-devices.md)notamment sur l’endroit où effectuer les tâches, voir Gérer les appareils inscrits dans Gestion des appareils mobiles pour Microsoft 365 .
+Une fois que vous avez installé basic Mobility and Security et que vos utilisateurs ont inscrit leurs appareils, vous pouvez gérer les appareils, bloquer l’accès ou effacer un appareil, si nécessaire. Pour en savoir plus sur certaines tâches courantes de gestion des [appareils,](manage-enrolled-devices.md)notamment sur l’endroit où effectuer les tâches, voir Gérer les appareils inscrits dans Gestion des appareils mobiles pour Microsoft 365 .
 
 ## <a name="other-ways-to-manage-devices-and-apps"></a>Autres façons de gérer les appareils et les applications
 

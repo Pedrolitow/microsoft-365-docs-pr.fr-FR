@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Créez une boîte aux lettres partagée et configurez certains paramètres pour ses utilisateurs, tels que le forwarding de courrier électronique et les réponses automatiques.
-ms.openlocfilehash: c1d8007a2fcc45fbdd1a6943ee464e5aae8917b9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: e69d1bbde5784339f3973bf456eca1ded72840af
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635509"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393990"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Configurer les paramètres de boîte aux lettres partagée
 
@@ -48,7 +49,7 @@ Il n’est pas nécessaire d’attribuer une licence à la boîte aux lettres pa
 
 1. Dans le Centre d’administration, accédez à la page **Groupes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Boîtes aux lettres partagées</a>.
 
-2. Sélectionnez la boîte aux lettres partagée à modifier, puis sélectionnez **Modifier le courrier** \> **électronique.**
+2. Sélectionnez la boîte aux lettres partagée que vous souhaitez modifier, puis sélectionnez **Modifier le courrier** \> **électronique.**
     
 3. Définissez le basculement sur **Sur,** puis entrez une adresse de messagerie à qui les messages sont transmis. Il peut s’y trouver n’importe quelle adresse de messagerie valide. Pour le faire, vous devez créer un groupe de [distribution](/office365/admin/setup/create-distribution-lists) pour les adresses, puis entrer le nom du groupe dans cette zone.
     
@@ -96,7 +97,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 3. Définissez le basculement sur **Sur**. 
 
-4. Vous pourz éventuellement entrer une durée, une note sur la attente et une URL avec plus d’informations.  
+4. Éventuellement, entrez une durée, une note sur la attente et une URL avec plus d’informations.  
 
 5. Sélectionnez **Enregistrer**.
 
@@ -107,7 +108,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 2. Sélectionnez la boîte aux lettres  partagée à modifier, puis sélectionnez \> **Modifier les membres.**
 
-3. Effectuez l'une des opérations suivantes :
+3. Effectuez l’une des opérations suivantes :
    - Pour ajouter des membres, **sélectionnez Ajouter des** membres, recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
    - Pour supprimer des membres, utilisez la zone de recherche pour rechercher le membre si nécessaire, sélectionnez **le X** à côté du nom du membre, puis sélectionnez **Enregistrer**. 
 
@@ -121,7 +122,7 @@ Pour en savoir plus sur la attente pour litige, voir [Créer une attente pour li
 
 3. Sélectionnez **Modifier** en plus de l’autorisation que vous souhaitez modifier pour un membre. 
 
-4. Effectuez l'une des opérations suivantes :
+4. Effectuez l’une des opérations suivantes :
    - Pour accorder cette autorisation à un membre supplémentaire, sélectionnez Ajouter des **autorisations,** recherchez ou sélectionnez un membre à ajouter, puis sélectionnez **Enregistrer.**
    - Pour supprimer l’autorisation d’un membre, utilisez la zone De recherche pour rechercher le membre si nécessaire, sélectionnez **le X** en de côté du nom du membre, puis sélectionnez **Enregistrer**. 
 

@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Déterminez si votre client et vos utilisateurs répondent aux exigences, afin que vous pouvez utiliser le déploiement centralisé pour déployer Office des modules.
-ms.openlocfilehash: 5d6f225acb56d1ec092046297d708444bb8d93d2
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: cb1cc019cfd87ee05112ea0ac1f0f1675316c6d3
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227955"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393702"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Déterminer si le déploiement centralisé des add-ins fonctionne pour votre organisation
 
@@ -90,7 +92,7 @@ Pour connaître la configuration utilisée, consultez l'administrateur Exchange 
 
 1. Démarrez une fenêtre PowerShell.exe avec élévation de PowerShell.exe.
 
-2. Exécutez la commande suivante :
+2. Exécutez la commande suivante :
 
    ```powershell
    Import-Module O365CompatibilityChecker
@@ -155,7 +157,7 @@ Si vous ou vos utilisateurs rencontrez des problèmes lors du chargement du add-
 
 |**Plateforme**|**Informations de débogage**|
 |:-----|:-----|
-|Bureau  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Journaux Charles/Fiddler  <br/>  ID de client ([découvrez comment](/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Affichez la source de l’une des pages Office et recherchez la valeur de l’ID de corrélation et envoyez-la pour prendre en charge :  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clients riches (Windows, Mac)  <br/> | Journaux Charles/Fiddler  <br/>  Numéros de build de l’application cliente (de préférence en tant que capture d’écran de **Fichier/Compte)**  <br/> |
 
 ## <a name="related-content"></a>Contenu associé

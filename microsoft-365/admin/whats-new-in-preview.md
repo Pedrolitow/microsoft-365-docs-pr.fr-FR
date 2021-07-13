@@ -1,5 +1,5 @@
 ---
-title: Quelles sont les nouveautés du Centre d’administration Microsoft 365?
+title: Nouveautés du Centre d’administration Microsoft 365 ?
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: 'Le Microsoft 365 d’administration : découvrez les fonctionnalités qui ont été ajoutées ce mois-ci.'
+description: The Centre d’administration Microsoft 365 - learn about the features that were added this month.
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 5bb8377dd45714dcdf25533055159f8964acc558
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 497d1f78b2d0c17cfcaa23571838c4dc363b7017
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841965"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394704"
 ---
-# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d’administration Microsoft 365 de gestion
+# <a name="whats-new-in-the-microsoft-365-admin-center"></a>Nouveautés du Centre d’administration Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
@@ -37,30 +37,56 @@ ms.locfileid: "52841965"
 
 ::: moniker-end
 
-Nous ajoutons en permanence de nouvelles fonctionnalités au Centre [d’administration Microsoft 365,](../business-video/admin-center-overview.md)corrigeons les problèmes que nous avons appris et apportant des modifications en fonction de vos commentaires. Consultez la vidéo ci-dessous pour voir ce qui est disponible pour vous aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous [ajouter à la version ciblée.](manage/release-options-in-office-365.md)
+Nous ajoutons continuellement de nouvelles fonctionnalités au [Centre d’administration Microsoft 365,](../business-video/admin-center-overview.md)corrigeons les problèmes que nous avons appris et apportant des modifications en fonction de vos commentaires. Consultez la vidéo ci-dessous pour voir ce qui est disponible pour vous aujourd’hui. Certaines fonctionnalités sont déployées à des vitesses différentes pour nos clients. Si vous ne voyez pas encore de fonctionnalité, essayez de vous [ajouter à la version ciblée.](manage/release-options-in-office-365.md)
 
 Et si vous souhaitez savoir quelles sont les nouveautés des autres services cloud de Microsoft :
 
 - [Nouveautés de la Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
 - [Nouveautés du Centre d’administration Exchange de gestion](/Exchange/whats-new)
 - [Nouveautés de Microsoft Intune](/mem/intune/fundamentals/whats-new)
-- [Nouveautés du centre de conformité Microsoft 365 de l’application](/Office365/SecurityCompliance/whats-new)
-- [Nouveautés de Microsoft 365 Defender](../security/mtp/whats-new.md)
+- [Nouveautés du Centre de conformité Microsoft 365](/Office365/SecurityCompliance/whats-new)
+- [Nouveautés de Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Nouveautés du Centre d’administration SharePoint de gestion](/sharepoint/what-s-new-in-admin-center)
 - [Mises à jour Office](/OfficeUpdates/)
 - [Comment vérifier l’état Windows de publication](/windows/deployment/update/check-release-health)
 
+## <a name="july-2021"></a>Juillet 2021
+
+### <a name="microsoft-365-admin-center-search"></a>Centre d’administration Microsoft 365 recherche
+
+Vous pouvez désormais rechercher des ID d’incident dans le Centre d’administration Microsoft 365. Vous pouvez découvrir les incidents actuels via les réseaux sociaux, les publications du secteur ou d’autres administrateurs. Vous pouvez désormais vous rendre dans le Centre d’administration pour rechercher plus de détails sur l’incident et comprendre l’impact sur votre organisation. Recherchez simplement l’ID d’incident dans le centre d’administration.
+
+:::image type="content" source="../media/incident-id.png" alt-text="Capture d’écran : recherche de l’ID d’incident dans le Centre d’administration":::
+
+### <a name="support-ticket-insight-for-premier-organizations"></a>Informations sur les tickets de support pour les organisations Premier
+
+Nous avons ajouté 2 graphiques appelés tendance de **volume** et tendance de volume par produit pour vous fournir des informations visuelles sur votre volume de support. 
+
+Le graphique graphique sous **l’onglet Tendance des** volumes met en évidence la tendance si les cas de support augmentent ou diminuent pour votre organisation mois après mois. Vous pouvez pointer sur le graphique pour vérifier le nombre de cas de support créés au cours de chaque mois.
+
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Screenshot: Graph that highlights the trend if support cases are increasing or decreasing for your organization month over month":::
+
+La **tendance de volume par graphique de** produit affiche les 3 premiers produits de chaque mois avec les cas de support les plus élevés. Nous avons activé le filtrage dans le tableau et vous pouvez désormais filtrer les résultats par **produit,** **gravité** et **date**.
+
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Screenshot: Graph shows the top 3 products of each month with the highest support cases":::
+
+Nous avons également ajouté 2 nouveaux **champs,** Gravité et **Date** de fermeture dans la table Afficher la demande de **service** pour vous donner plus d’informations sur vos tickets.
+
+:::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="Screenshot: Table that shows support ticket sorting by severity and date.":::
+
+Pour consulter ces mises à jour dans Centre d’administration Microsoft 365, rendez-vous sur Support  >  **View Service requests** in left navigation pane.
+
 ## <a name="june-2021"></a>Juin 2021
 
-### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 centre d’administration
+### <a name="microsoft-365-admin-center-search"></a>Centre d’administration Microsoft 365 recherche
 
 Nous avons ajouté quelques nouvelles catégories à la fonctionnalité de recherche.
 
-- Vous pouvez désormais rechercher des rôles Microsoft 365 administrateur dans la recherche globale et afficher et gérer rapidement les attributions de rôles à partir de n’importe quelle page. Par exemple, recherchez **l’administrateur Intune.**
+- Vous pouvez désormais rechercher des rôles d Microsoft 365 dans la recherche globale et afficher et gérer rapidement les attributions de rôles à partir de n’importe quelle page. Par exemple, recherchez **l’administrateur Intune.**
 
 - Vous pouvez désormais trouver des expériences de configuration simplifiées par le biais de la recherche globale. Cela peut vous aider, ainsi que votre équipe, à commencer rapidement à utiliser les nouvelles fonctionnalités. Par exemple, recherchez un **mot de passe de définir pour qu’il n’expire jamais.**
 
-Pour en savoir plus sur la recherche dans le Centre d’administration, consultez La recherche dans [Microsoft 365 centre d’administration.](manage/search-in-the-mac.md)
+Pour en savoir plus sur la recherche dans le Centre d’administration, voir [Recherche dans le Centre d’administration Microsoft 365](manage/search-in-the-mac.md).
 
 ## <a name="may-2021"></a>Mai 2021
 
@@ -80,7 +106,7 @@ Pour toutes les demandes de service créées dans votre client, vous pouvez dés
 
 :::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Capture d’écran : suivre les principales mises à jour et fonctionnalités":::
 
-## <a name="april-2021"></a>Avril 2021
+## <a name="april-2021"></a>Avril 2021
 
 ### <a name="admin-mobile-app"></a>Application mobile Admin
 
@@ -109,7 +135,7 @@ Bienvenue dans Microsoft Ignite. Nous espérons que vous avez pu participer à c
 
 ### <a name="message-center"></a>Centre de messages
 
-Nous avons repensé le centre de messages pour vous aider à découvrir les messages pertinents et ajouté une expérience de lecture plus flexible. Nous avons ajouté une nouvelle colonne **Service** pour vous aider à analyser le service auquel s’applique un message et à filtrer les messages par service et d’autres métadonnées. Vous pouvez mettre un message en favori pour le marquer pour le suivi, choisir les colonnes qui apparaissent dans la liste des messages et naviguer entre les messages avec les boutons Retour et Suivant. Nous avons également amélioré le processus pour faciliter l’avis sur les publications du centre de messages.
+Nous avons repensé le centre de messages pour vous aider à découvrir les messages pertinents et ajouté une expérience de lecture plus flexible. Nous avons ajouté une nouvelle colonne **Service** pour vous aider à analyser le service auquel s’applique un message et à filtrer les messages par service et d’autres métadonnées. Vous pouvez mettre un message en favori pour le marquer pour le suivi, choisir les colonnes qui apparaissent dans la liste des messages et naviguer entre les messages avec les boutons Retour et Suivant. Nous avons également amélioré le processus pour faciliter les commentaires sur les billets du centre de messages.
 
 :::image type="content" source="../media/message-center.png" alt-text="Capture d’écran : page d’accueil du centre de messages affichant la boîte de réception et les messages":::
 
@@ -133,16 +159,16 @@ Nous avons développé un ensemble de fonctionnalités pour les administrateurs 
 
 - **Vos locataires :** basculez rapidement entre les locataires que vous gérez.
 - **Tous** les clients : nouvelle page où vous pouvez voir rapidement l’état de tous les services de vos clients, les demandes de service ouvertes, vos produits et facturation, les tâches de configuration recommandées et le nombre d’utilisateurs dans ce client.
-- **Programme d’installation**: la page d’installation multi-client vous donne un affichage liste de la page d’installation, mais elle est organisée pour de nombreux locataires. Vous pouvez voir quelles fonctionnalités ne sont pas désactivées, quelles tâches sont terminées pour tous les locataires, tâches que les locataires doivent encore effectuer. Cette vue vous aidera à effectuer le suivi de l’adoption des fonctionnalités et à vous assurer que les tâches de configuration de sécurité recommandées sont toujours réalisées.
+- **Programme d’installation**: la page d’installation multi-locataires vous donne un affichage liste de la page d’installation, mais organisée pour de nombreux locataires. Vous pouvez voir quelles fonctionnalités ne sont pas désactivées, quelles tâches sont terminées pour tous les locataires, tâches que les locataires doivent encore effectuer. Cette vue vous aidera à effectuer le suivi de l’adoption des fonctionnalités et à vous assurer que les tâches de configuration de sécurité recommandées sont toujours réalisées.
 - **État du** service : l’affichage d’état du service vous indique si des incidents ou des avis affectent les clients. Il vous indiquera même combien de vos locataires gérés sont affectés. Sélectionnez simplement un incident pour obtenir plus d’informations sous l’onglet Vue d’ensemble, puis basculez vers l’onglet Locataires affectés pour descendre et prendre en charge ce client.
 - **Les migrations** de boîtes aux lettres entre clients sont un nouveau service, désormais en prévisualisation publique, qui vous permet de déplacer des boîtes aux lettres entre des clients sans avoir à retenter les boîtes aux lettres, puis à les intégrer. 
 - **Partage de domaine entre** locataires : bientôt, vous pouvez rejoindre un aperçu privé pour les fonctionnalités qui vous permettent de partager un domaine entre plusieurs locataires. Par exemple, si Contoso acquiert Wingtip Toys, Contoso peut partager le domaine avec Wingtip Toys afin que les personnes des deux locataires peuvent utiliser « contoso.com » comme adresses de messagerie.
 
-![Page État du service pour plusieurs clients avec un incident sélectionné et l’onglet Clients affectés ouvert. Le menu de navigation présente l’état de tous les clients, du programme d’installation et du service comme seules options.](../media/MAC-WN-MTinServiceHealth.png)
+![Page État du service pour plusieurs locataires avec un incident sélectionné et onglet Clients affectés ouvert. Le menu de navigation présente l’état de tous les clients, du programme d’installation et du service comme seules options.](../media/MAC-WN-MTinServiceHealth.png)
 
 ### <a name="monitor-your-most-important-accounts"></a>Surveiller vos comptes les plus importants
 
-Vous pouvez surveiller et suivre les messages électroniques ayant échoué ou différés envoyés à vos utilisateurs ayant un impact important sur l’entreprise, comme votre PDG. Vous pouvez suivre les comptes prioritaires en ajoutant des utilisateurs à votre liste de comptes prioritaires dans Microsoft 365'administration centrale. Ajoutez des cadres, des responsables, des responsables ou d’autres utilisateurs ayant accès à des informations sensibles ou prioritaires.
+Vous pouvez surveiller et suivre les messages électroniques ayant échoué ou différés envoyés à vos utilisateurs qui ont un impact important sur l’entreprise, comme votre PDG. Vous pouvez suivre les comptes prioritaires en ajoutant des utilisateurs à votre liste de comptes prioritaires dans la Centre d’administration Microsoft 365. Ajoutez des cadres, des responsables, des responsables ou d’autres utilisateurs ayant accès à des informations sensibles ou prioritaires.
 
 Les comptes de priorité sont disponibles uniquement pour les organisations qui répondent aux deux exigences suivantes :
 
@@ -162,7 +188,7 @@ Pour plus d’informations sur les comptes prioritaires, consultez [La surveilla
 
 Nous avons commencé à déployer une nouvelle expérience de recherche pour le Centre d’administration et nous ne pouvons pas attendre que vous l’essayiez. ![La zone de recherche a été déplacée vers la zone bannière. Alt+S pour effectuer une recherche à partir d’une page quelconque.](../media/MAC-WN-GlobalSearch.png)
 
-- La zone de recherche a été déplacée vers la zone d’en-tête dans laquelle il est indiqué « centre d’administration Microsoft 365 » pour que vous recherchez maintenant à partir de n’importe quelle page, et pas seulement de la page d’accueil. Nous avons même un raccourci : **Alt+S**.
+- La zone de recherche a été déplacée vers la zone d’en-tête dans laquelle elle indique « Centre d’administration Microsoft 365 » pour que vous recherchez maintenant à partir de n’importe quelle page, et pas seulement de la page d’accueil. Nous avons même un raccourci : **Alt+S**.
 - La recherche est plus intelligente et vous donne de meilleurs résultats, encore plus rapidement. Essayez de taper « 2fa » pour commencer.
 - Les résultats de la recherche sont organisés selon le type d’élément ou d’action que vous pouvez effectuer.
   - **Utilisateurs**: sélectionnez le nom de l’utilisateur et vous pouvez le modifier directement ici. Si vous sélectionnez le menu à trois points (plus d’actions) à côté de leur nom, vous pouvez réinitialiser leur mot de passe. Vous pouvez effectuer une recherche par nom d’affichage, nom, prénom, nom d’utilisateur ou adresse de messagerie principale et alias de messagerie. Toutefois, pour obtenir une correspondance exacte, recherchez par adresse de messagerie principale ou nom d’utilisateur.
@@ -176,7 +202,7 @@ Nous avons commencé à déployer une nouvelle expérience de recherche pour le 
 
 ### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 application mobile admin
 
-[L’application mobile admin Microsoft 365,](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)incluse dans votre abonnement, vous permet de gérer les Microsoft 365 à partir de votre appareil mobile afin de pouvoir vous absent de votre bureau pour effectuer des tâches quotidiennes. En fait, l’application comporte plus de 90 fonctionnalités et nous venons d’en ajouter quelques-unes :
+[L’application mobile d’administration](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)Microsoft 365, incluse dans votre abonnement, vous permet de gérer les Microsoft 365 à partir de votre appareil mobile afin de pouvoir vous absent de votre bureau pour effectuer des tâches quotidiennes. En fait, l’application comporte plus de 90 fonctionnalités et nous venons d’en ajouter quelques-unes :
 
 - Prise en charge des stratégies de gestion des applications mobiles et **d’accès** conditionnel de Microsoft Intune : vous pouvez désormais utiliser votre appareil personnel pour gérer les Microsoft 365 même si votre organisation a désactivé les stratégies de gestion des applications mobiles et d’accès conditionnel d’Intune.
 - **Notifications du centre de messages**: activer les notifications du centre de messages **Paramètres** notifications si vous souhaitez être averti des nouvelles publications du centre  >   de messages. Par le biais de notifications, nous voulons vous assurer que vous restez informé des informations et des événements importants au sein de votre client.
@@ -207,7 +233,7 @@ Nous recherchons en permanence et mettons à jour le contenu et les outils pour 
 - Résoudre les problèmes d’installation de DKIM
 - Diagnostiquer les erreurs d’inscription des utilisateurs Intune
 
-Nous allons également déployer l’expérience de support nouvelle et améliorée que vous voyez déjà dans le centre d’administration Microsoft 365 à certains des autres centres d’administration. Teams Le Centre d’administration et les centres d’administration de sécurité et conformité ont déjà cette nouvelle expérience. Et bientôt, **Exchange** centre d’administration, **SharePoint d’administration** et **Office.com** seront mis à jour avec cette nouvelle expérience d’aide pour les administrateurs.
+Nous allons également déployer l’expérience de support nouvelle et améliorée que vous voyez déjà dans le Centre d’administration Microsoft 365 dans certains autres centres d’administration. Teams Le Centre d’administration et les centres d’administration de sécurité et conformité ont déjà cette nouvelle expérience. Et bientôt, **Exchange** centre d’administration, **SharePoint d’administration** et **Office.com** seront mis à jour avec cette nouvelle expérience d’aide pour les administrateurs.
 
 ### <a name="manage-changes-with-microsoft-planner"></a>Gérer les modifications avec le Planificateur Microsoft
 
@@ -269,7 +295,7 @@ Il y a quelques mois, nous avons ajouté un paramètre qui vous permet de gérer
 
 Le 12 mai, nous avons annoncé la disponibilité d’un nouveau canal de mise à jour pour Office : Canal Enterprise mensuel. Ce canal de mise à jour fournit à vos utilisateurs de Office fonctionnalités de mise à jour une fois par mois, le deuxième mardi du mois.
 
-Si vous autorisez vos utilisateurs à installer Office à partir du portail, vous pouvez sélectionner canal Enterprise mensuel pour eux. Pour ce faire, connectez-vous au Centre d’administration Microsoft 365 et allez à Afficher tous les paramètres de l’organisation Paramètres Services Office téléchargement de  >   >    >    >  **logiciels.** Si vous sélectionnez Une fois par mois (Canal Enterprise **mensuel),** toutes les nouvelles installation autonomes de Office seront configurées pour utiliser le Canal Enterprise mensuel.
+Si vous autorisez vos utilisateurs à installer Office à partir du portail, vous pouvez sélectionner canal Enterprise mensuel pour eux. Pour ce faire, connectez-vous au Centre d’administration Microsoft 365 et allez à Afficher tous les paramètres de l’organisation Paramètres Services Office  >   >    >    >  **téléchargement de logiciels.** Si vous sélectionnez Une fois par mois (Canal Enterprise **mensuel),** toutes les nouvelles installation autonomes de Office seront configurées pour utiliser le Canal Enterprise mensuel.
 
 Conjointement avec la publication du Canal Enterprise mensuel, nous révise également les noms des canaux de mise à jour existants. Par exemple, le canal mensuel est renommé Canal actuel. Les nouveaux noms prennent effet le 9 juin 2020.
 
@@ -277,10 +303,10 @@ Si vous souhaitez en savoir plus, consultez [Modifications apportées aux canaux
 
 ### <a name="new-admin-roles"></a>Nouveaux rôles d’administrateur
 
-Nous avons ajouté de nouveaux rôles d’Azure Active Directory au centre d’administration Microsoft 365 de gestion.
+Nous avons ajouté de nouveaux rôles Azure Active Directory administrateur au Centre d’administration Microsoft 365.
 
 - Le rôle d’administrateur d’identité hybride donne aux utilisateurs l’autorisation de gérer les services d’approvisionnement et d’authentification cloud.
-- Le rôle d’administrateur réseau permet aux utilisateurs de gérer les emplacements réseau et d’examiner les informations réseau pour Microsoft 365 applications Software as a Service.
+- Le rôle d’administrateur réseau permet aux utilisateurs de gérer les emplacements réseau et de passer en revue les informations réseau Microsoft 365 applications Software as a Service.
 - Le rôle d’administrateur d’imprimante accorde l’autorisation de gérer tous les aspects des imprimantes et des connexions d’imprimante.
 - Le technicien d’imprimante est un sous-ensemble du rôle d’administrateur imprimante dans lequel ces utilisateurs peuvent inscrire et désins inscrire des imprimantes, et mettre à jour l’état de l’imprimante.
 Pour en savoir plus sur ces rôles, voir [à propos des rôles d’administrateur.](./add-users/about-admin-roles.md)
@@ -293,7 +319,7 @@ De nombreux administrateurs nous ont dit qu’ils ont besoin de partager des inf
 
 Ce mois-ci, nous avons publié un nouveau site sur docs.microsoft.com appelé centre d’architecture et de [solution Microsoft 365,](../solutions/index.yml)qui regroupe les conseils techniques dont vous avez besoin pour comprendre, planifier et implémenter des solutions Microsoft 365 intégrées pour une collaboration sécurisée et conforme. Dans ce centre, vous trouverez :
 
-- Conseils sur les solutions de base
+- Recommandations sur les solutions de base
 - Solutions de charge de travail et conseils sur les scénarios
 - Illustrations de solution et d’architecture (affiches!!!)
 - Conseils spécifiques au secteur
@@ -302,7 +328,7 @@ Ce mois-ci, nous avons publié un nouveau site sur docs.microsoft.com appelé ce
 ### <a name="docs-training-and-videos-may"></a>Documentation, formation et vidéos (mai)
 
 - Nouveautés de la série de vidéos Microsoft 365 : ce mois-ci, nous allons découvrir la nouvelle expérience de support dans les centres d’administration et de sécurité et de conformité Teams, **l’intégration** du Planificateur au Centre de messages et la nouvelle disposition vidéo 3x3 dans Microsoft Teams. 
-- La page [Microsoft 365'aide](./index.yml) du Centre d’administration a été mise à jour pour vous aider à trouver ce dont vous avez besoin plus rapidement. Et si vous regardez cette page maintenant, nous avons ajouté une carte pour vous informer des mises à jour et modifications importantes.
+- La [page Centre d’administration Microsoft 365'aide](./index.yml) a été mise à jour pour vous aider à trouver ce dont vous avez besoin plus rapidement. Et si vous regardez cette page maintenant, nous avons ajouté une carte pour vous informer des mises à jour et modifications importantes.
 
 ## <a name="april-2020"></a>Avril 2020
 
@@ -310,7 +336,7 @@ Ce mois-ci, nous avons publié un nouveau site sur docs.microsoft.com appelé ce
 
 [Avril 2020](#april-2020)
 
-Nous l’avons fait ! Nous avons pris la deuxième étape vers une expérience de rôles unifiés et vous pouvez désormais gérer les rôles Intune dans le centre d’administration Microsoft 365 de gestion. Vous pouvez également tirer parti de fonctionnalités telles que la possibilité de rechercher des rôles et d’afficher les autorisations de rôle. Cela signifie que vous n’avez pas besoin de deux outils distincts pour gérer les rôles pour Microsoft 365 et Intune. Lorsque vous vous connectez au Centre d’administration Microsoft 365, vous voyez qu’il existe deux tableaux croisés dynamiques sur la page Rôles, un pour Azure AD et un pour Intune.
+Nous l’avons fait ! Nous avons pris la deuxième étape vers une expérience de rôles unifiés et vous pouvez désormais gérer les rôles Intune dans le Centre d’administration Microsoft 365. Vous pouvez également tirer parti de fonctionnalités telles que la possibilité de rechercher des rôles et d’afficher les autorisations de rôle. Cela signifie que vous n’avez pas besoin de deux outils distincts pour gérer les rôles pour Microsoft 365 et Intune. Lorsque vous vous connectez à l’Centre d’administration Microsoft 365, vous voyez qu’il existe deux tableaux croisés dynamiques sur la page Rôles, un pour Azure AD et un pour Intune.
 
 ![Page Rôles avec le tableau croisé dynamique Intune sélectionné](../media/MAC-WN-IntuneRoles.png)
 
@@ -320,13 +346,13 @@ Nous l’avons fait ! Nous avons pris la deuxième étape vers une expérience d
 
 [Rejoignez la publication ciblée](manage/release-options-in-office-365.md) pour commencer !
 
-### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>« Vous avez besoin d’aide ? » lancé dans le centre d Teams d’administration & de sécurité et conformité
+### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>« Vous avez besoin d’aide ? » lancé dans le Centre d Teams’administration & centre de sécurité et conformité
 
-Le Teams d’administration, le Centre de sécurité et le Centre de conformité utilisent désormais le même « Besoin d’aide ? » que le centre d Microsoft 365'administration utilise pour trouver de l’aide et contacter le support technique. Nous avons reçu de nombreux commentaires d’administrateurs qui vous ont fait part de votre souhait d’obtenir le même niveau d’aide et de support, et nous sommes heureux de vous en faire part. Essayez et faites-nous part de vos commentaires !
+Le Teams d’administration, le Centre de sécurité et le Centre de conformité utilisent désormais le même « Besoin d’aide ? » que l’Centre d’administration Microsoft 365 utilise pour trouver de l’aide et contacter le support technique. Nous avons reçu de nombreux commentaires d’administrateurs qui vous ont fait part de votre souhait d’obtenir le même niveau d’aide et de support, et nous sommes heureux de vous en faire part. Essayez et faites-nous part de vos commentaires !
 
 #### <a name="need-chat"></a>Vous avez besoin d’une conversation ?
 
-Nos agents de support technique travaillent à domicile tout en prenant en charge les cas clients et les limitations de bande passante Internet pendant qu’ils travaillent à domicile peuvent avoir un impact sur la qualité des appels des clients. Pour continuer à vous prendre en charge, nous avons lancé l’option de support de conversation en direct pour les clients commerciaux dans Microsoft 365 d’administration.
+Nos agents de support technique travaillent à domicile tout en prenant des cas clients et des limitations sur la bande passante Internet tout en travaillant à domicile peuvent avoir un impact sur la qualité des appels des clients. Pour continuer à vous prendre en charge, nous avons lancé l’option de prise en charge de la conversation en direct pour les clients commerciaux dans le Centre d’administration Microsoft 365.
 
 Lors de la création d’une demande de service, vous verrez désormais la conversation en tant qu’option, en plus du téléphone et de la messagerie. Sélectionnez la conversation comme canal de communication préféré et créez la demande. Une fois que vous avez créé la demande, vous pouvez démarrer la conversation lorsque vous êtes prêt à discuter avec des agents Microsoft.
 
@@ -336,7 +362,7 @@ Avec l’utilisation accrue des Teams, nous avons ajouté quelques fonctionnalit
 
 - Une nouvelle carte de recommandation sur la page d’accueil du Centre d’administration indique quels utilisateurs n’ont pas utilisé activement Teams pendant 30 jours. Vous pouvez envoyer à ces utilisateurs un e-mail de formation pour les aider à commencer à utiliser Teams.
 - Rassembler des personnes avec  des équipes : accédez au programme d’installation pour voir une nouvelle page pour vous aider à activer Teams pour les utilisateurs sous licence et autoriser l’accès invité, afin de pouvoir travailler avec des clients externes dans Teams.
-- Une Microsoft Teams est désormais épinglée par défaut à votre page d’accueil. Il indique si Teams est désactivé et si l’accès invité est autorisé. Il vous permet également de vérifier l’état de configuration des utilisateurs Teams nouvellement titulaires d’une licence et de vérifier si des problèmes réseau peuvent avoir un impact sur Teams utilisateurs.
+- Une Microsoft Teams est désormais épinglée par défaut à votre page d’accueil. Il indique si Teams est désactivé et si l’accès invité est autorisé. Il vous permet également de vérifier l’état d’installation des utilisateurs Teams nouvellement titulaires d’une licence et de vérifier si des problèmes réseau peuvent avoir un impact sur Teams utilisateurs.
 - Enfin, Teams est désormais une étape du flux de mise en place initial si vous avez acheté une licence qui inclut Teams.
 
 ### <a name="productivity-score"></a>Score de productivité
@@ -354,7 +380,7 @@ Si vous souhaitez en savoir plus, consultez le blog : Mesurer et améliorer l’
 
 Nous avons deux mises à jour pour les groupes ce mois-ci :
 
-- Vous pouvez désormais modifier les adresses e-mail Office 365 groupes de messagerie (également appelés groupes dans Outlook, et bientôt appelés groupes Microsoft 365 de messagerie).
+- Vous pouvez désormais modifier les adresses e-mail Office 365 groupes de messagerie (également appelés groupes dans Outlook et bientôt appelés groupes Microsoft 365 de messagerie).
 - Nous avons entendu vos commentaires et ajouté une messagerie d’erreur plus claire pour savoir pourquoi vous ne pouvez pas convertir un groupe en Équipe Microsoft.
 
 ### <a name="docs-videos-and-training-april"></a>Documents, vidéos et formation (avril)
@@ -393,13 +419,13 @@ Avec la mise à jour de Teams, certaines organisation obtiennent une carte de ta
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>Personnaliser le thème d’application SharePoint mobile de votre organisation
 
-À l’aide Microsoft 365 centre d’administration, vous pouvez désormais personnaliser le thème de votre organisation dans SharePoint application mobile pour iOS et SharePoint application mobile pour Android. Cette fonctionnalité offre une expérience d’application intranet mobile qui peut correspondre à votre SharePoint Online pour les employés en cours d’utilisation. La personnalisation de thème inclut l’image de votre logo, la couleur de la barre de navigation, les couleurs de texte et d’icône, ainsi que les couleurs d’accentuation, ce qui vous aide à faciliter la reconnaissance.
+À l’Centre d’administration Microsoft 365, vous pouvez désormais personnaliser le thème de votre organisation dans SharePoint application mobile pour iOS et SharePoint application mobile pour Android. Cette fonctionnalité fournit facilement une expérience d’application intranet mobile qui peut correspondre à votre SharePoint Online pour les employés en cours d’utilisation. La personnalisation de thème inclut l’image de votre logo, la couleur de la barre de navigation, les couleurs de texte et d’icône, ainsi que les couleurs d’accentuation, ce qui vous aide à faciliter la reconnaissance.
 
 ![Diagramme mappant les paramètres du Centre d’administration à l’application mobile.](../media/MAC-WN-CustThemeSP.png)
 
 ### <a name="improvements-to-the-add-a-group-wizard"></a>Améliorations apportées à l’Assistant « Ajouter un groupe »
 
-Lorsque les administrateurs ont créé un nouveau groupe et en ont fait une équipe en même temps, ils peuvent affecter des propriétaires qui ne sont pas titulaires d’une licence Teams. Et cela a créé des difficultés. Nous avons mis à jour le flux de l’Assistant pour vérifier que les propriétaires ont une licence Teams et si l’option de transformer le groupe en équipe n’est pas désactivée.
+Lorsque les administrateurs ont créé un groupe et en ont fait une équipe en même temps, ils peuvent affecter des propriétaires qui ne sont pas titulaires d’une licence Teams. Et cela a créé des difficultés. Nous avons mis à jour le flux de l’Assistant pour vérifier que les propriétaires ont une licence Teams et si l’option de transformer le groupe en équipe n’est pas désactivée.
 
 ### <a name="microsoft-365-offerings-for-small-and-medium-businesses"></a>Microsoft 365 pour les petites et moyennes entreprises
 
@@ -429,7 +455,7 @@ Nous avons reçu de nombreux commentaires de partenaires et d’administrateurs 
 > [!TIP]
 > Vous n’avez rien à faire pour faire apparaître le commutateur d’organisation tant que vous êtes le partenaire de registre d’au moins une organisation.
 
-1. Dans le centre Microsoft 365'administration, sélectionnez le nom de l’organisation.
+1. Dans la Centre d’administration Microsoft 365, sélectionnez le nom de l’organisation.
 ![Capture d’écran : en haut de la page d’accueil affichant le nom du profil de l’organisation avec l’icône du commutateur.](../media/MAC-Organization-switcher.png)
 
 2. Dans le sélecateur d’organisation, sélectionnez l’organisation que vous souhaitez gérer.
@@ -442,7 +468,7 @@ C’est littéralement cela!!!
 Quelques modifications dans la zone des groupes ce mois-ci :
 
 - **Trier par nom de groupe**: vous pouvez trier la liste des groupes par ordre alphabétique, en sélectionnant la colonne Nom **du** groupe.
-- **Restaurer les groupes Microsoft 365** supprimés : vous n’avez plus besoin d’aller au Centre d’administration Exchange pour restaurer les groupes Microsoft 365 supprimés. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. Il rétablit le groupe  dans la liste Groupes et restaure le courrier électronique, les conversations, le bloc-notes, les fichiers et le calendrier du groupe.
+- **Restaurer les groupes Microsoft 365** supprimés : vous n’avez plus besoin d’aller au Centre d’administration Exchange pour restaurer les groupes Microsoft 365 supprimés. Go to **Centre d’administration Microsoft 365** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. Il rétablit le groupe  dans la liste Groupes et restaure le courrier électronique, les conversations, le bloc-notes, les fichiers et le calendrier du groupe.
 
 ### <a name="videos-training-and-docs-february"></a>Vidéos, formation et documents (février)
 

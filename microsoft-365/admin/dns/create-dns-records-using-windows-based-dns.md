@@ -14,19 +14,21 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Découvrez comment vérifier votre domaine et configurer les enregistrements DNS pour la messagerie, Skype Entreprise Online et d’autres services sur Windows DNS basé sur Windows microsoft.
-ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 86deaac256c0d657ad9604be91349b113e9c0ded
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706110"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393726"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Créer des enregistrements DNS pour Microsoft à l’Windows DNS
 
@@ -49,7 +51,7 @@ Ajoutez un enregistrement MX afin que le courrier électronique de votre domaine
 - À partir de la ligne MX de la section Exchange Online de la page Ajouter des enregistrements DNS dans Microsoft, copiez la valeur répertoriée sous Adresse points. Vous utiliserez cette valeur dans l’enregistrement que vous créez dans cette tâche. 
 - On the DNS Manager page for the domain, go to **Action**  >  **Mail Exchanger (MX)**. Pour trouver cette page pour le domaine, voir Rechercher vos enregistrements [DNS dans Windows DNS basé sur le domaine.](#find-your-dns-records-in-windows-based-dns)  
 - Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes : 
-    - Nom de l’hôte :  
+    - Nom d’hôte : 
     - @Address : collez la valeur d’adresse points que vous avez copiée ici à partir de Microsoft.  
     - Préf : 
 - Sélectionnez **Enregistrer les modifications.**
@@ -138,9 +140,9 @@ Ajoutez l'enregistrement SRV SIP pour les conférences web Skype Entreprise Onli
 -   Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
     -  Service : _sip
     -  Protocole : _tls
-    -  Priorité : 100
-    -  Poids : 1
-    -  Port : 443
+    -  Priorité : 100
+    -  Poids : 1
+    -  Port : 443
     -  Cible (nom d’hôte) : sipdir.online.lync.com
 -  Sélectionnez **OK**. 
 
@@ -151,9 +153,9 @@ Ajoutez l'enregistrement SRV SIP pour la fédération Skype Entreprise Online.
 -   Dans la **boîte de dialogue Nouvel enregistrement de** ressource, assurez-vous que les champs sont précisément les valeurs suivantes :  
     -  Service : _sipfederationtls
     -  Protocole : _tcp
-    -  Priorité : 100
-    -  Poids : 1
-    -  Port : 5061
+    -  Priorité : 100
+    -  Poids : 1
+    -  Port : 5061
     -  Cible (nom d’hôte) : sipfed.online.lync.com
 -  Sélectionnez **OK**. 
    
@@ -176,7 +178,7 @@ Avant d’ajouter les enregistrements DNS pour configurer votre services Microso
 Ajoutez un enregistrement TXT. 
 -  Dans la page Gestionnaire DNS de votre domaine, sélectionnez **Texte de l’action** \> **(TXT).** 
 -   Dans la **boîte de dialogue Nouvel enregistrement de** ressource, sélectionnez **Modifier.**  
--  Dans la zone Noms  **d’hôte** personnalisés de la boîte de dialogue Nouvel enregistrement de ressource, assurez-vous que les champs sont définies sur les valeurs suivantes. 
+-  Dans la zone Noms  **d’hôte** personnalisés de la boîte de dialogue Nouvel enregistrement de ressource, assurez-vous que les champs sont correctement définies sur les valeurs suivantes. 
 
 > [!IMPORTANT] 
 > Dans certaines versions du Gestionnaire DNS Windows, le domaine a peut-être été mis en place de sorte que lorsque vous créez un enregistrement txt, le nom d’accueil se définisse par défaut sur le domaine parent. Dans cette situation, lors de l'ajout d'un enregistrement TXT, définissez le nom d'hôte sur vide (sans valeur) au lieu de le définir sur @ ou sur le nom de domaine. 
@@ -184,7 +186,7 @@ Ajoutez un enregistrement TXT.
 - Nom d’hôte : @
 - Type : TXT
 - Adresse : collez la valeur Destination ou Pointe vers l’adresse que vous avez copiée ici à partir de Microsoft.  
-- Sélectionnez **OK**  >  **Terminé.**
+- Sélectionnez **OK**  >  **Terminé**.
 
 Vérifiez votre domaine dans Microsoft.  
 > [!IMPORTANT]
@@ -209,5 +211,5 @@ Si vous envisagez de synchroniser votre annuaire Active Directory local avec Mic
 ## <a name="related-content"></a>Contenu associé
 
 [Transférer un domaine de Microsoft 365 vers un autre hôte](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (article)\
-[Pilote Microsoft 365 à partir de mon domaine personnalisé](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)\
+[Pilot Microsoft 365 from my custom domain](../misc/pilot-microsoft-365-from-my-custom-domain.md) (article)\
 [FAQ sur les domaines](../setup/domains-faq.yml) (article)

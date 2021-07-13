@@ -18,19 +18,20 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_licensing
+- AdminTemplateSet
 search.appverid: MET150
-description: Les applications et les services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple, Applications Microsoft 365 pour les PME.
+description: Les applications et les services que vous recevez dépendent du produit Microsoft 365 que vous avez acheté, par exemple Applications Microsoft 365 pour les PME.
 ms.date: 07/01/2020
-ms.openlocfilehash: 817ea454bf471fdc2f175658af9030925d29189a
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 69996a97b582ec3323a31efbe4cb70fe4a61e19d
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779878"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394424"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprendre les abonnements et les licences dans Microsoft 365 entreprise
 
-Lorsque vous achetez un abonnement à Microsoft 365 entreprise, vous vous inscrivez pour un ensemble d’applications et de services que vous payez sur une base mensuelle ou annuelle. Les applications et services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Applications Microsoft 365 pour les PME ou Microsoft 365 Business Standard. Vous pouvez voir ce qui est livré avec chaque produit sur la Microsoft 365 page pour les petites et moyennes [entreprises.](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)
+Lorsque vous achetez un abonnement à Microsoft 365 entreprise, vous vous inscrivez pour un ensemble d’applications et de services que vous payez sur une base mensuelle ou annuelle. Les applications et les services que vous recevez dans le cadre de votre abonnement dépendent du produit que vous avez acheté, tel que Applications Microsoft 365 pour les PME ou Microsoft 365 Business Standard. Vous pouvez voir ce qui est livré avec chaque produit sur la Microsoft 365 page pour les petites et moyennes [entreprises.](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)
 
 Lorsque vous achetez un abonnement, vous spécifiez le nombre de licences dont vous avez besoin, en fonction du nombre de personnes de votre organisation. Après avoir acheté un abonnement, vous créez des comptes pour les membres de votre organisation, puis attribuez une licence à chaque personne. À mesure que les besoins de votre organisation changent, vous pouvez acheter d’autres licences pour prendre en charge de nouvelles personnes ou réaffecter des licences à d’autres utilisateurs lorsqu’une personne quitte votre organisation.
 
@@ -55,7 +56,7 @@ Le tableau suivant indique ce qui se produit automatiquement lorsque vous attrib
   
 |**Si l'abonnement inclut ce service**|**Cet événement se produit automatiquement**|
 |:-----|:-----|
-|Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne. <br/> Pour en savoir plus sur le SLA de cette tâche à accomplir, voir [« Configuration... » messages dans le centre Microsoft 365'administration.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
+|Exchange Online  <br/> |Une boîte aux lettres est créée pour cette personne. <br/> Pour en savoir plus sur le SLA de cette tâche à accomplir, voir [« Configuration... » messages dans le Centre d’administration Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Les autorisations de modification du site d'équipe SharePoint Online par défaut sont attribuées à cette personne.  <br/> |
 |Skype Entreprise Online  <br/> |La personne a accès aux fonctionnalités associées à la licence.  <br/> |
 |Applications Microsoft 365 for entreprise  <br/> |La personne peut télécharger Office applications sur cinq Mac ou PC, cinq tablettes et cinq smartphones.  <br/> |

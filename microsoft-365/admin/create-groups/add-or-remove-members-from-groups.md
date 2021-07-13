@@ -13,17 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans Microsoft 365'administration.
-ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Découvrez comment ajouter un membre à un groupe, supprimer un membre du groupe et gérer l’état du propriétaire du groupe dans le Centre d’administration Microsoft 365.
+ms.openlocfilehash: 7eaa74a53ac5f27d801d1cf16c9af035c63c68b1
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635605"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393762"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Ajouter ou supprimer des membres de groupes Microsoft 365 à l’aide du Centre d’administration
 
@@ -81,7 +83,7 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 2. Cliquez sur un nom de groupe.
 
-3. Dans le volet d’informations, sous l’onglet **Membres,** **sélectionnez Afficher tout et gérer les propriétaires.**
+3. Dans le volet d’informations, sous l’onglet **Membres,** sélectionnez **Afficher tout et gérer les propriétaires.**
 
 4. Sélectionnez **Ajouter des propriétaires.**
 
@@ -95,7 +97,7 @@ Par défaut, la personne qui a créé le groupe en est le propriétaire. Un grou
 
 2. Cliquez sur un nom de groupe.
 
-3. Dans le volet d’informations, sous l’onglet **Membres,** **sélectionnez Afficher tout et gérer les propriétaires.**
+3. Dans le volet d’informations, sous l’onglet **Membres,** sélectionnez **Afficher tout et gérer les propriétaires.**
 
 4. Sélectionnez le X à côté du nom du propriétaire.
 

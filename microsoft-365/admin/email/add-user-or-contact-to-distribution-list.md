@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: Découvrez comment ajouter un utilisateur ou Microsoft 365 contact tel qu’un employé, un partenaire ou un fournisseur à un groupe de distribution de courrier électronique.
-ms.openlocfilehash: c512e1da805fca5e46d7978620f34b825d0289a0
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 4c6bfc5dc8e19d84fd9a0e6bd16f87a413fb2b3c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635545"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394014"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Ajouter un utilisateur ou un contact à un groupe de distribution
 
@@ -49,9 +51,9 @@ En tant qu’administrateur d’une organisation, vous devrez peut-être ajouter
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
-Apprenez à [envoyer du courrier électronique en tant que groupe de distribution dans Microsoft 365](../manage/send-email-as-distribution-list.md).
+Apprenez à [envoyer des courriers électroniques en tant que groupe de distribution dans Microsoft 365](../manage/send-email-as-distribution-list.md).
 
 ## <a name="related-content"></a>Contenu associé
 

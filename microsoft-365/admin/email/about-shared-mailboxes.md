@@ -17,17 +17,18 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Les boîtes aux lettres partagées sont utilisées lorsque plusieurs personnes ont besoin d’accéder à la même boîte aux lettres. Découvrez ce que vous devez savoir avant de créer une boîte aux lettres partagée.
-ms.openlocfilehash: 601636f03bee93224025d286b7a74fa0f24782fb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: a251967670e19d8f387e3fc4f724a06ef674a2b4
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635533"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394038"
 ---
 # <a name="about-shared-mailboxes"></a>À propos des boîtes aux lettres partagées
 
@@ -43,9 +44,9 @@ Avant de [créer une boîte aux lettres partagée,](create-a-shared-mailbox.md)v
 
 - **Autorisations utilisateur :** Vous devez accorder aux utilisateurs des autorisations (appartenance) pour utiliser la boîte aux lettres partagée. Seules les personnes internes à votre organisation peuvent utiliser une boîte aux lettres partagée.
 
-- **Utilisateurs externes :** Vous ne pouvez pas accorder à des personnes extérieures à votre entreprise (par exemple, des personnes ayant un compte Gmail) l’accès à votre boîte aux lettres partagée. Si vous voulez effectuer cette action, envisagez plutôt de créer un groupe pour Outlook. Pour plus d’informations, [voir Créer un Microsoft 365 dans le Centre d’administration.](../create-groups/create-groups.md)
+- **Utilisateurs externes :** Vous ne pouvez pas accorder à des personnes extérieures à votre entreprise (par exemple, des personnes ayant un compte Gmail) l’accès à votre boîte aux lettres partagée. Si vous voulez effectuer cette action, envisagez plutôt de créer un groupe pour Outlook. Pour plus d’informations, voir [Créer un Microsoft 365 dans le Centre d’administration.](../create-groups/create-groups.md)
 
-- **À utiliser avec Outlook :** En plus d’utiliser Outlook sur le web à partir de votre navigateur pour accéder aux boîtes aux lettres partagées, vous pouvez également utiliser l’application Outlook pour iOS ou l’application Outlook pour Android. Pour plus d’informations, voir [Ajouter une boîte aux lettres partagée à Outlook mobile.](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) Une autre option consiste à créer un groupe pour votre boîte aux lettres partagée. Pour plus d'informations, voir [Comparer les groupes](../create-groups/compare-groups.md).
+- **À utiliser avec Outlook :** Outre l’Outlook sur le web à partir de votre navigateur pour accéder aux boîtes aux lettres partagées, vous pouvez également utiliser l’application Outlook pour iOS ou l’application Outlook pour Android. Pour plus d’informations, voir [Ajouter une boîte aux lettres partagée à Outlook mobile.](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f) Une autre option consiste à créer un groupe pour votre boîte aux lettres partagée. Pour plus d'informations, voir [Comparer les groupes](../create-groups/compare-groups.md).
 
 - **Chiffrement :** Vous ne pouvez pas chiffrer les messages électroniques envoyés à partir d’une boîte aux lettres partagée. Cela est dû au fait qu’une boîte aux lettres partagée ne possède pas son propre contexte de sécurité (nom d’utilisateur/mot de passe) et ne peut donc pas être affectée à une clé. Si plusieurs personnes sont membres et qu’elles envoient/reçoivent des e-mails qu’elles ont chiffrés avec leurs propres clés, d’autres membres peuvent être en mesure de lire le courrier électronique et d’autres non, selon la clé publique avec laquelle le message a été chiffré.
 
@@ -59,7 +60,7 @@ Avant de [créer une boîte aux lettres partagée,](create-a-shared-mailbox.md)v
 
 - **Trop d’utilisateurs :** Lorsqu’un trop grand nombre d’utilisateurs désignés accèdent simultanément à une boîte aux lettres partagée, il se peut qu’ils ne parviennent pas à se connecter à cette boîte aux lettres par intermittence. Dans ce cas, vous pouvez envisager de réduire le nombre d’utilisateurs ou d’utiliser une charge de travail différente, telle qu’un Microsoft 365 ou un dossier public.
 
-- **Suppression de message :** Malheureusement, vous ne pouvez pas empêcher les utilisateurs de supprimer des messages dans une boîte aux lettres partagée. La seule solution consiste à créer un groupe Microsoft 365 plutôt qu’une boîte aux lettres partagée. Un groupe dans Outlook est comme une boîte aux lettres partagée. Pour une comparaison des deux, voir [Comparer les groupes.](../create-groups/compare-groups.md) Pour en savoir plus sur les groupes, voir [En savoir plus sur les groupes.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+- **Suppression de message :** Malheureusement, vous ne pouvez pas empêcher des personnes de supprimer des messages dans une boîte aux lettres partagée. La seule solution consiste à créer un groupe Microsoft 365 au lieu d’une boîte aux lettres partagée. Un groupe dans Outlook est comme une boîte aux lettres partagée. Pour une comparaison des deux, voir [Comparer les groupes.](../create-groups/compare-groups.md) Pour en savoir plus sur les groupes, voir [En savoir plus sur les groupes.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 
 > [!NOTE]

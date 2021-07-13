@@ -19,14 +19,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 description: Si vous avez acheté Microsoft 365 Business Standard dans un magasin, découvrez comment échanger la clé de produit et activer votre abonnement.
 ms.date: 11/13/2020
-ms.openlocfilehash: e075a9d06b45f823540a3a99a1943caa9d116954
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c3807a6e4ce5a49b1552fee7320c03c6b329a8c6
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636121"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394448"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Entrez votre clé de produit pour Microsoft 365 Business Standard
 
@@ -57,7 +58,7 @@ Si vous avez acheté Microsoft 365 Business Standard dans un magasin, cet articl
 
 Pour prolonger la date d’expiration ou ajouter une licence à votre abonnement Microsoft 365 Business Standard existant, utilisez une nouvelle clé inutilisée pour le même plan Microsoft 365 de licence. La saisie de votre clé Microsoft 365 produit d’origine ne fonctionne pas, car une clé qui a déjà été échangée ne peut pas être utilisée à nouveau. Voir [Ajouter des licences ou étendre un abonnement payé pour l’utilisation d’une clé de produit.](licenses/add-licenses-using-product-key.md)
 
-## <a name="next-steps"></a>Prochaines étapes
+## <a name="next-steps"></a>Étapes suivantes
 
 Si vous êtes nouveau dans Microsoft 365 entreprise, découvrez comment [configurer Microsoft 365](../admin/setup/setup.md).
 

@@ -18,18 +18,19 @@ ms.custom:
 - OKR_SMB_Videos
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Connectez-vous avec des autorisations d’administrateur au Centre d’administration Microsoft 365 pour configurer votre organisation dans le cloud et gérer les utilisateurs et les abonnements.
-ms.openlocfilehash: 451d23afd56cb3ae7099c661f99265efe59d6f85
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 786392b84564d9f8cf9ce3cdf870c52cc93b15f2
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53286236"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394242"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>À propos du Centre d’administration Microsoft 365
 

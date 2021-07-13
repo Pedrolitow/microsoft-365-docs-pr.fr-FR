@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Découvrez comment vérifier la propriété de votre courrier électronique et de votre domaine pour prendre le contrôle d’un client non pris en charge créé par une inscription utilisateur en libre-service dans Microsoft 365.
-ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f6378c708e0533c2da2d38bfe5eb8009515423c7
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635985"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393846"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Effectuer une prise de contrôle d’administrateur interne
 
@@ -45,7 +47,7 @@ Si vous êtes un administrateur et que vous souhaitez prendre le contrôle d’u
 
 2. Inscrivez-vous avec un compte d’utilisateur qui utilise le nom de domaine de votre organisation (comme `powerbiadmin@contoso.com` ). Si votre compte est déjà utilisé, connectez-vous à l’aide de votre mot de passe actuel.
 
-3. Recherchez le **code de vérification dans votre** courrier électronique et entrez-le pour valider votre adresse de messagerie.
+3. Recherchez le **code de vérification dans votre** courrier électronique et entrez le code pour valider votre adresse de messagerie.
     
 ## <a name="step-2-create-a-new-account"></a>Étape 2 : Créer un compte
 

@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Ajoutez un partenaire de registre au moment de l Microsoft 365, modifiez-le ou supprimez un partenaire d’un abonnement.
-ms.openlocfilehash: 4cebbce41cbd2a500cc502b808734f6056271d12
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 78419dd6d1370475c0565c0ad072a7b54639ce43
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683342"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393858"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Ajouter, modifier ou supprimer un partenaire conseiller en abonnement
 
@@ -101,7 +103,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou obtenir une corres
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement à modifier.
 3. Dans la page des détails de l’abonnement, sous **Informations sur le partenaire,** tapez l’ID **du réseau partenaire.** Vous pouvez obtenir l’ID Microsoft Partner Network du partenaire en le demandant au partenaire.
 4. Sélectionnez **Ajouter**.
@@ -112,7 +114,7 @@ Suivez les étapes de la page fournisseurs pour rechercher ou obtenir une corres
 
 1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 2. Si vous avez plusieurs abonnements, sélectionnez l’abonnement à modifier.
-3. À droite, sous le coût d’abonnement, sélectionnez les trois points (plus d’actions) > **ajouter un partenaire de l’enregistrement.**
+3. À droite, sous le coût de l’abonnement, sélectionnez les trois points (autres actions) > ajouter un **partenaire de l’enregistrement**.
 4. Tapez l'ID partenaire Microsoft du partenaire que vous ajoutez, puis sélectionnez **Vérifier l'ID** et **Envoyer**. Vous pouvez obtenir cet ID auprès du partenaire.
 5. L'ID de partenaire apparaît sur la page **Abonnements**.
 
@@ -135,18 +137,18 @@ Pour accepter cette offre
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 2. Dans la page détails des abonnements, sous **Informations sur le partenaire,** sélectionnez **Supprimer.**
 3. Tapez **l’ID Microsoft Partner Network** du nouveau partenaire. Vous pouvez obtenir l’ID partenaire Microsoft du partenaire auprès du partenaire.
@@ -162,18 +164,18 @@ Pour accepter cette offre
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 ::: moniker-end
 2. Sous **l’onglet** Produits, sélectionnez l’abonnement à modifier.
 3. Dans la page détails de l’abonnement, sous **Informations sur le partenaire,** sélectionnez **Supprimer.**

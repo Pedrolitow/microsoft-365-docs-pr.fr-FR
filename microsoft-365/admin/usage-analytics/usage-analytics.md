@@ -13,18 +13,20 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenez une vue d’ensemble de la façon dont votre organisation adopte Microsoft 365 services pour communiquer et collaborer.
-ms.openlocfilehash: da2ac5f68bedd064e426531a9cd3c6cbc33f8277
-ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
+ms.openlocfilehash: 77c1d8a2d2fe0288e7fbe8534ef76760baeac0aa
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2021
-ms.locfileid: "53007164"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394676"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analyse de l'utilisation de Microsoft 365
 
@@ -60,7 +62,7 @@ Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous p
 
 - **Collaboration** &ndash; Découvrez comment les membres de votre organisation utilisent OneDrive et SharePoint pour stocker des documents et collaborer les uns avec les autres, et comment ces tendances évoluent mois après mois. Vous pouvez également voir combien de documents sont partagés en interne ou en externe et combien de sites SharePoint ou de comptes OneDrive sont activement utilisés, décomposés par les propriétaires et d’autres collaborateurs.
 
-- **Storage** &ndash; Utilisez ce rapport pour suivre le stockage cloud pour les boîtes aux lettres, OneDrive et SharePoint sites.
+- **Stockage** &ndash; Utilisez ce rapport pour suivre le stockage cloud pour les boîtes aux lettres, OneDrive et SharePoint sites.
 
 - **Mobilité** &ndash; Suivre les clients et appareils que les personnes utilisent pour se connecter à la messagerie, Teams, Skype ou Yammer.
 
@@ -68,7 +70,7 @@ Le rapport Microsoft 365 vue d’ensemble contient les rapports suivants. Vous p
 
 La page d’activation et de licence propose des rapports sur Microsoft 365'activation ; autrement dit, le nombre d’utilisateurs qui ont téléchargé et activé Office applications et le nombre de licences attribuées par votre organisation. La valeur du mois vers le haut fait référence au mois en cours et les mesures reflètent les valeurs agrégées du début du mois à la date actuelle.
 
-- **Activation** &ndash; Suivre les activations de plan de service (applications Microsoft 365 pour les entreprises, Project et Visio service) dans votre organisation. Chaque personne disposant d'une licence Office peut installer les applications sur jusqu'à cinq appareils. Vous pouvez également utiliser les rapports de cette section pour voir les appareils sur lesquels les personnes ont installé Office applications. Notez que pour activer un plan, un utilisateur doit installer l’application et se connecter avec son compte.
+- **Activation** &ndash; Suivre les activations de plan de service (Applications Microsoft 365 pour les grandes entreprises, Project et Visio service) dans votre organisation. Chaque personne disposant d'une licence Office peut installer les applications sur jusqu'à cinq appareils. Vous pouvez également utiliser les rapports de cette section pour voir les appareils sur lesquels les personnes ont installé Office applications. Notez que pour activer un plan, un utilisateur doit installer l’application et se connecter avec son compte.
 
 - **Licences** &ndash; Ce rapport contient une vue d’ensemble des types de licences, le nombre d’utilisateurs affectés à chaque type de licence et la distribution de l’attribution de licence pour chaque mois. La valeur du mois vers le haut fait référence au mois en cours et les mesures reflètent les valeurs agrégées du début du mois à la date actuelle.
 

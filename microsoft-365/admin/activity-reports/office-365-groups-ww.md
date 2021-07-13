@@ -11,7 +11,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenez un rapport Microsoft 365 groupes de recherche pour connaître les groupes et leurs activités.
-ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: ed598633205aab83920abef79e766ef16e248f43
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939229"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394134"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 Rapports dans le Centre d’administration : Microsoft 365 groupes
 
@@ -46,11 +48,11 @@ Sélectionnez **Choisir des colonnes** pour ajouter ou supprimer des colonnes da
 
 Vous pouvez également exporter les données du rapport dans un Excel .csv en sélectionnant **le** lien Exporter. Cela a pour effet d'exporter les données de tous les utilisateurs afin d'effectuer un tri et un filtrage simples à des fins d'analyse approfondie. Si vous avez moins de 2000 utilisateurs, vous pouvez trier et filtrer dans le tableau, au sein du rapport proprement dit. Si vous avez plus de 2000 utilisateurs, pour filtrer et trier les données, vous devez préalablement les exporter. 
 
-|Item|Description|
+|Élément|Description|
 |:-----|:-----|
 |**Métrique**|**Définition**|
 |Nom du groupe  <br/> |Nom du groupe.  <br/> |
-|Supprimé  <br/> |Nombre de groupes supprimés. Si le groupe est supprimé, mais qu'il a connu une activité dans la période du rapport, il apparaît dans la grille avec cet indicateur défini sur true.  <br/> |
+|Deleted  <br/> |Nombre de groupes supprimés. Si le groupe est supprimé, mais qu'il a connu une activité dans la période du rapport, il apparaît dans la grille avec cet indicateur défini sur true.  <br/> |
 |Propriétaire du groupe  <br/> |Nom du propriétaire du groupe.  <br/> |
 |Date de la dernière activité (UTC)  <br/> |Date à laquelle un message a été reçu au plus tard par le groupe. Il s'agit de la date la plus récente à laquelle une activité a eu lieu dans une conversation par courrier, dans Yammer ou sur le site.  <br/> |
 |Type  <br/> |Type de groupe. Il peut être privé ou public.  <br/> |
@@ -69,5 +71,7 @@ Vous pouvez également exporter les données du rapport dans un Excel .csv en s�
 
 ## <a name="related-content"></a>Contenu associé
 
-[Microsoft 365 rapports](activity-reports.md) dans le Centre d’administration (article) Rapports dans le Centre de sécurité [&](../../compliance/reports-in-security-and-compliance.md) conformité (article) Microsoft 365 rapports dans le Centre d’administration [-](../../admin/activity-reports/active-users-ww.md) Utilisateurs actifs (article)
+[Microsoft 365 rapports dans le Centre d’administration](activity-reports.md) (article)\
+[Rapports dans le Centre de sécurité & conformité](../../compliance/reports-in-security-and-compliance.md) (article)\
+[Microsoft 365 rapports dans le Centre d’administration - Utilisateurs actifs](../../admin/activity-reports/active-users-ww.md) (article)
 

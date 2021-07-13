@@ -20,12 +20,13 @@ description: Connectez un domaine d’un fournisseur d’hébergement DNS à Mic
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 62b6793dd97e146b703c82e0ba23f4d7414025b6
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+- AdminTemplateSet
+ms.openlocfilehash: 4b4c09ce6a4161c713490daef46157b5555e124b
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623976"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53393918"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Ajouter des enregistrements DNS pour connecter votre domaine
 
@@ -137,7 +138,7 @@ Sur le site Web de votre fournisseur d’hébergement, ajoutez les enregistremen
 Dans le nouvel enregistrement, vérifiez que chacun des champs sont définis par les valeurs suivantes :
 
 - Type d’enregistrement : `SRV (Service)`
-- Nom : `@`
+- Nom : `@`
 - Cible : copiez la valeur à partir du centre d’administration et collez-la ici.
 - Protocole : copiez la valeur à partir du centre d’administration et collez-la ici.
 - Service : copiez la valeur à partir du centre d’administration et collez-la ici.

@@ -17,15 +17,16 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: Découvrez comment mettre à jour vos adresses de facturation ou l’adresse de messagerie utilisée pour recevoir des notifications de facturation Microsoft 365 entreprise.
 ms.date: 04/07/2021
-ms.openlocfilehash: afc23134f85995a5e8d7db0fb956635ceb6ea629
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 383e8febffa2a65e01c1ae0c543d7b984a96eb26
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683606"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394640"
 ---
 # <a name="change-your-billing-addresses"></a>Modifier vos adresses de facturation
 
@@ -39,25 +40,25 @@ Votre facture contient trois adresses :
 
 Dans la plupart des cas, ces adresses sont identiques. Si vous le souhaitez, vous pouvez modifier une ou plusieurs de ces adresses. Vous pouvez également fournir une adresse de messagerie de remplacement pour recevoir des notifications de facturation et modifier l’adresse de messagerie de remplacement pour d’autres administrateurs.
 
-Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoice.md) votre facture et [Comprendre votre facture.](understand-your-invoice2.md)
+Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoice.md) votre facture et Comprendre [votre facture.](understand-your-invoice2.md)
 
 ## <a name="change-your-sold-to-address"></a>Modifier votre adresse de vente
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le Centre d’administration, allez à la page **Comptes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**de facturation.**</a>
+1. Dans le centre d’administration, allez à la page **Comptes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**de facturation.**</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">d’administration,</a>allez à la page  > **Comptes de facturation.**
+1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">d’administration,</a>allez à la page **Comptes** > **de facturation.**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">d’administration,</a>allez à la page  > **Comptes de facturation.**
+1. Dans le Centre <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">d’administration,</a>allez à la page **Comptes** > **de facturation.**
 
 ::: moniker-end
 
@@ -89,25 +90,25 @@ Pour en savoir plus sur votre facture, voir [Consulter](view-your-bill-or-invoic
 
 3. Dans la page **Détails du mode de paiement,** sélectionnez **Modifier.**
 
-4. Mettez à jour votre adresse de facturation, puis **sélectionnez Enregistrer** \> **terminé.**
+4. Mettez à jour votre adresse de facturation, puis sélectionnez **Enregistrer** \> **terminé.**
 
 ## <a name="change-your-service-usage-address"></a>Modifier votre adresse d'utilisation du service
 
 ::: moniker range="o365-worldwide"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Vos produits</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Produits</a>.
+1. Dans le centre d’administration, accédez à la page **Facturation** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Vos produits</a>.
 
     Si vous utilisez Office 365 géré par 21Vianet en Chine, voir Afficher votre facture ou obtenir des Fapiaos pour Office 365 géré par [21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
