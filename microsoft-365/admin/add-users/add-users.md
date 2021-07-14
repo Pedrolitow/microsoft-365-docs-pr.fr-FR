@@ -15,20 +15,21 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
-description: Chaque membre de l'équipe a besoin d'un compte utilisateur avant de pouvoir se connecter et accéder à Microsoft 365 pour entreprise. Apprenez à ajouter des utilisateurs et à attribuer des licences.
+description: Chaque membre de l’équipe a besoin d’un compte d’utilisateur avant de pouvoir se connecter et accéder à Microsoft 365 pour les entreprises. Apprenez comment ajouter des utilisateurs et attribuer des licences.
 ms.date: 07/01/2020
-ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aaba152e73fc7284f54a9f307783a66fb055a55c
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535997"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53394098"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Ajouter des utilisateurs et attribuer des licences simultanément
 
-Les membres de votre équipe ont besoin d'un compte d'utilisateur pour se connecter et accéder à [Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/business). La façon la plus simple d'ajouter des comptes d'utilisateurs consiste à les ajouter individuellement dans le Centre d'administration Microsoft 365. Après avoir effectué cette étape, vos utilisateurs disposent de licences Microsoft 365, d'informations d'identification de connexion et de boîtes aux lettres Microsoft 365.
+Les membres de votre équipe ont besoin d'un compte d'utilisateur pour se connecter et accéder à [Microsoft 365 pour les entreprises](https://www.microsoft.com/microsoft-365/business). La façon la plus simple d'ajouter des comptes d'utilisateurs consiste à les ajouter individuellement dans le Centre d'administration Microsoft 365. Après avoir effectué cette étape, vos utilisateurs disposent de licences Microsoft 365, d'informations d'identification de connexion et de boîtes aux lettres Microsoft 365.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
@@ -38,7 +39,7 @@ Vous devez être un administrateur général, de licences ou d’utilisateurs po
 
 Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **mode simplifié administrateur**. Suivez les étapes ci-dessous permettant d’ajouter un utilisateur.
 
-:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Capture d’écran : mode simplifié du Centre d'administration":::
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Capture d’écran : mode simplifié du Centre d'administration":::
 
 ::: moniker range="o365-worldwide"
 
@@ -60,10 +61,10 @@ Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **m
 
 2. Sélectionnez **Créer un compte pour une autre personne**.
 3. Sur la page **Ajouter un compte utilisateur**, remplissez le prénom et le nom, le nom d'affichage et le nom d'utilisateur qu’il utilisera pour se connecter.
-4. Ajoutez l’adresse e-mail de l’utilisateur dans la zone de texte **Jusqu’à 5 adresses e-mail...**. Ceci permettra de s’assurer que le nouvel utilisateur reçoive les informations dont il a besoin pour se connecter aux services Microsoft 365.
+4. Ajoutez l’adresse e-mail de l’utilisateur dans la zone de texte **Jusqu’à 5 adresses e-mail...**. Ceci permettra de s’assurer que le nouvel utilisateur reçoive les informations dont il a besoin pour se connecter aux services Microsoft 365.
 5. Sélectionnez **Ajouter un utilisateur**, puis **Télécharger les informations de connexion** si vous souhaitez les enregistrer.
 
-## <a name="watch-add-users-in-the-dashboard-view"></a>Vidéo : Ajouter des utilisateurs dans l’affichage du tableau de bord
+## <a name="watch-add-users-in-the-dashboard-view"></a>Vidéo : Ajouter des utilisateurs dans l’affichage du tableau de bord
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
@@ -72,7 +73,7 @@ Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **m
 
 ## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>Ajouter un utilisateur à la fois dans l’affichage du tableau de bord
 
-:::image type="content" source="../../media/classic-admin-center.png" alt-text="Capture d’écran : affichage du tableau de bord du Centre d'administration":::
+:::image type="content" source="../../media/classic-admin-center.png" alt-text="Capture d’écran : affichage du tableau de bord du Centre d'administration":::
 
 ::: moniker range="o365-worldwide"
 
@@ -105,12 +106,12 @@ Si vous voyez cette page dans le Centre d'administration, vous êtes dans le **m
 
 ## <a name="add-multiple-users-at-the-same-time"></a>Ajouter plusieurs utilisateurs simultanément
 
-Toutes les méthodes suivantes permettent d’ajouter de multiples utilisateurs simultanément :
+Toutes les méthodes suivantes permettent d’ajouter de multiples utilisateurs simultanément :
 
 - **Utiliser une feuille de calcul pour ajouter des utilisateurs en bloc.** Consultez la rubrique [Ajouter plusieurs utilisateurs simultanément](../../enterprise/add-several-users-at-the-same-time.md).
-- **Automatiser l'ajouter de comptes et l'affectation de licences.** Voir [Créer des comptes d’utilisateur avec Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Choisissez cette méthode si vous êtes déjà familiarisé avec l'utilisation des applets de commande Windows PowerShell.
-- **Vous utilisez ActiveDirectory ?**[Configurer la synchronisation de d’annuaire pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md). Utilisez l'outil Azure Active Directory Connect . Utilisez l'outil Azure AD Connect pour répliquer les comptes d'utilisateur Active Directory (et autres objets Active Directory) dans Microsoft 365. La synchronisation ajoute uniquement les comptes d'utilisateurs. Vous devez attribuer des licences aux utilisateurs synchronisés pour qu'ils puissent utiliser le courrier et les autres applications Office.
-- **Si vous effectuez une migration depuis Exchange** Consultez la rubrique [Méthodes de migration de comptes de messagerie multiples vers Office 365](/Exchange/mailbox-migration/mailbox-migration). Lorsque vous migrez plusieurs boîtes aux lettres vers Microsoft 365 en utilisant une méthode de migration à basculement, intermédiaire ou Exchange hybride, vous ajoutez automatiquement des utilisateurs dans le cadre de la migration. La migration ajoute uniquement les comptes d'utilisateurs. Vous devrez attribuer des licences aux utilisateurs pour qu'ils puissent utiliser le courrier et les autres applications Office. Si vous n’attribuez pas de licence à un utilisateur, sa boîte aux lettres est désactivée à la fin de la période de grâce de 30 jours. Découvrez comment [attribuer des licences à des utilisateurs](../manage/assign-licenses-to-users.md) dans le centre d'administration Microsoft 365.
+- **Automatiser l'ajouter de comptes et l'affectation de licences.** Voir [Créer des comptes d’utilisateur avec Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Choisissez cette méthode si vous êtes déjà familiarisé avec l'utilisation des applets de commande Windows PowerShell.
+- **Vous utilisez ActiveDirectory ?**[Configurer la synchronisation de d’annuaire pour Microsoft 365](../../enterprise/set-up-directory-synchronization.md). Utilisez l'outil Azure Active Directory Connect . Utilisez l'outil Azure AD Connect pour répliquer les comptes d'utilisateur Active Directory (et autres objets Active Directory) dans Microsoft 365. La synchronisation ajoute uniquement les comptes d'utilisateurs. Vous devez attribuer des licences aux utilisateurs synchronisés pour qu'ils puissent utiliser le courrier et les autres applications Office.
+- **Si vous effectuez une migration depuis Exchange** Consultez la rubrique [Méthodes de migration de comptes de messagerie multiples vers Office 365](/Exchange/mailbox-migration/mailbox-migration). Lorsque vous migrez plusieurs boîtes aux lettres vers Microsoft 365 en utilisant une méthode de migration à basculement, intermédiaire ou Exchange hybride, vous ajoutez automatiquement des utilisateurs dans le cadre de la migration. La migration ajoute uniquement les comptes d'utilisateurs. Vous devrez attribuer des licences aux utilisateurs pour qu'ils puissent utiliser le courrier et les autres applications Office. Si vous n’attribuez pas de licence à un utilisateur, sa boîte aux lettres est désactivée à la fin de la période de grâce de 30 jours. Découvrez comment [attribuer des licences à des utilisateurs](../manage/assign-licenses-to-users.md) dans le centre d'administration Microsoft 365.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

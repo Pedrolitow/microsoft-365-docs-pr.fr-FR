@@ -15,7 +15,7 @@ f1.keywords:
 description: Dans cet article, découvrez comment développer votre présence Microsoft 365 dans plusieurs régions géographiques avec Microsoft 365 Multigéographie.
 ms.openlocfilehash: 17fc2645f69a0d91c71c91718f321e5932d31bd2
 ms.sourcegitcommit: f7fbf45af64c5c0727fd5eaab309d20ad097a483
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/09/2021
 ms.locfileid: "53362761"
@@ -58,7 +58,7 @@ Microsoft 365 Multigéographie est disponible sous la forme d’un composant add
 - OneDrive entreprise (plan 1 ou plan 2)
 - SharePoint Online Plan 1 ou Plan 2
 
-Si une licence est attribuée à un utilisateur et supprimée ultérieurement, Teams données de conversation de l’utilisateur sont mis en file d’attente pour être déplacées vers l’emplacement central. SharePoint et Exchange données ne sont pas déplacées.
+Si une licence est attribuée à un utilisateur et supprimée ultérieurement, les données de conversation utilisateur Teams sont mises en file d’attente pour être déplacées vers la position centrale. Les données SharePoint et Exchange ne sont pas déplacées.
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Disponibilité de Microsoft 365 Multi-Geo
 
