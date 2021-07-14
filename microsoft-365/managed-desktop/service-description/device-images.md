@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 211e26035ad8bdf73defde85c33a631af3a193d0
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+ms.openlocfilehash: fb3646e2ff339115d3fe6043ed45ea8f2140105a
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300103"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419510"
 ---
 # <a name="device-images"></a>Images d’un appareil
 
@@ -41,23 +41,7 @@ Si vous commandez un appareil à partir de HP qui a été approuvé comme [excep
 - Global : mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Microsoft Manged Desktop, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Microsoft Manged Desktop, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MmD Enablement*».
-
-Les produits suivants sont actuellement activés pour Microsoft Manged Desktop prise en charge :
-
-- L13 Génération 1
-- L13 Gen 1
-- L14 Gen 1 (Intel)
-- L14 Gen 1 (AMD)
-- L15 Gen 1 (Intel)
-- L15 Gen 1 (AMD)
-- X1 Génération carbone 8
-- X1 Monde, génération 5
-- T14 Gen 1 (Intel)
-- T14 Gen 1 (AMD)
-- T15 Génération 1
-- X13 Génération 1 (Intel)
-
+Lorsque vous commandez des appareils à partir de Lenovo pour les utiliser dans Microsoft Manged Desktop, vous devez indiquer un numéro de partie spécifique inclus dans la commande. Contactez votre représentant commercial Lenovo ou votre partenairede canal Lenovo et demandez-lui de créer un « modèle d’offre spéciale » avec un système qui répond à nos besoins [en matière d’appareils.](device-requirements.md#minimum-requirements) Pour inclure une image pré-chargée compatible avec Microsoft Manged Desktop, demandez au représentant commercial de référencer « Numéro de la partie de bloc de construction système *SBB0Q94938 – MmD Enablement*». Travaillez avec votre représentant commercial Lenovo ou votre partenaire de canal Lenovo pour les services recommandés, le support et les services d’imagerie.
 
 ### <a name="microsoft"></a>Microsoft
 Tous les appareils Microsoft qui répondent aux exigences de l’appareil sont avec une image qui fonctionne avec Microsoft Manged Desktop. Aucune autre étape n’est requise.

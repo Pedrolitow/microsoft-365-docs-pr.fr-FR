@@ -3,7 +3,7 @@ title: Utiliser Office 365 réseau de distribution de contenu (CDN) avec SharePo
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/19/2020
+ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Découvrez comment utiliser le Office 365 réseau de distribution de contenu (CDN) pour accélérer la livraison de vos ressources SharePoint Online.
-ms.openlocfilehash: 5e9ed00462b7073c7e03f62a5de6bf26f1e586af
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 24b86f059e5a59d3b6dadf989bef0ab38ad8e010
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289450"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419546"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Utilisation du réseau de distribution de contenu Office 365 avec SharePoint Online
 
@@ -37,7 +37,7 @@ Vous pouvez utiliser le réseau de distribution de contenu Office 365 intégré
 
 Le réseau de distribution de contenu Office 365 est composé de plusieurs réseaux de distribution de contenu qui vous permettent d’héberger des ressources statiques à différents emplacements (ou _origines_) et de les servir à partir de réseaux à haut débit mondiaux. Selon le type de contenu que vous souhaitez héberger sur le réseau de distribution de contenu Office 365, vous pouvez ajouter des origines **publiques**, **privées** ou les deux. Pour [plus d’informations](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) sur la différence entre les origines publique et privée, voir Choisir si chaque origine doit être publique ou privée.
 
-![Office 365 CDN diagramme conceptuel](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN diagramme conceptuel")
+![Office 365 CDN diagramme conceptuel](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN diagramme conceptuel")
 
 Si vous connaissez déjà le mode de travail des CDN, vous ne devez effectuer que quelques étapes pour activer le Office 365 CDN pour votre client. Cette rubrique décrit comment. Lisez la suite pour savoir comment commencer à héberger vos ressources statiques.
 
@@ -920,7 +920,7 @@ Voici un aperçu des liens qui sont réécrits automatiquement par la fonctionna
 
 Le diagramme suivant illustre le flux de travail lorsque SharePoint reçoit une demande de page contenant des biens d’une origine publique.
 
-![Diagramme de flux de travail : récupération de ressources Office 365 CDN d’une origine publique](../media/O365-CDN/o365-cdn-public-steps-transparent.svg "Flux de travail : récupération de ressources Office 365 CDN d’une origine publique")
+![Diagramme de flux de travail : récupération de ressources Office 365 CDN d’une origine publique](../media/O365-CDN/o365-cdn-public-steps-transparent.png "Flux de travail : récupération de ressources Office 365 CDN d’une origine publique")
 
 > [!TIP]
 > Si vous souhaitez désactiver la réécriture automatique pour des URL spécifiques sur une page, vous pouvez consulter la page et ajouter le paramètre de chaîne de requête **? NoAutoReWrites=true** à la fin de chaque lien à désactiver.
@@ -956,7 +956,7 @@ L’accès aux biens dans les origines privées est protégé par des jetons gé
 
 Le diagramme suivant illustre le flux de travail lorsque SharePoint reçoit une demande pour une page contenant des biens d’une origine privée.
 
-![Diagramme de flux de travail : récupération de ressources Office 365 CDN d’une origine privée](../media/O365-CDN/o365-cdn-private-steps-transparent.svg "Flux de travail : récupération de ressources Office 365 CDN d’une origine privée")
+![Diagramme de flux de travail : récupération de ressources Office 365 CDN d’une origine privée](../media/O365-CDN/o365-cdn-private-steps-transparent.png "Flux de travail : récupération de ressources Office 365 CDN d’une origine privée")
 
 #### <a name="token-based-authorization-in-private-origins"></a>Autorisation basée sur un jeton dans les origines privées
 

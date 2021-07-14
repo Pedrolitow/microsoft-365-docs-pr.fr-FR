@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 841f22421ac81ba447dad70a68c4c7bc95605b16
-ms.sourcegitcommit: 7dc3b4dec05299abb4290a6e3d1ebe0fdc622ed7
+ms.openlocfilehash: 6ef594d4ccb25f688be21b4e8fe6aac2f024eb1d
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2021
-ms.locfileid: "53363894"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419750"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Nouveautés de Microsoft Defender pour Point de terminaison sur Mac
 
@@ -37,6 +37,10 @@ ms.locfileid: "53363894"
 
 > [!IMPORTANT]
 > Sur macOS 11 (Big Sur), Microsoft Defender for Endpoint nécessite des profils de configuration supplémentaires. Si vous êtes un client existant en cours de mise à niveau à partir de versions antérieures de macOS, veillez à déployer les profils de configuration supplémentaires répertoriés sur [cette page.](mac-sysext-policies.md)
+
+## <a name="1013427-20121052134270"></a>101.34.27 (20.121052.13427.0)
+
+- Résolutions de bogues
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
 

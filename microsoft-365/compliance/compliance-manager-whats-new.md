@@ -14,16 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez les nouveautés du Gestionnaire de conformité et les nouveautés à venir. Découvrez les évaluations mises à jour, les nouveaux modèles d’évaluation, les nouvelles actions, etc.
-ms.openlocfilehash: 72390f167e0f573223210a02a4b08e1b0efdf3dd
-ms.sourcegitcommit: 46b77a41dfcc0ee80e2b89a7aa49e9bbe5deae5a
+ms.openlocfilehash: 823df0ac274dad0ae278ce981a0dca0f0ad8a9ed
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "53149021"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419522"
 ---
 # <a name="whats-new-in-microsoft-compliance-manager"></a>Nouveautés du Gestionnaire de conformité Microsoft
 
 **Dans cet article :** Découvrez les mises à jour récentes dans le Gestionnaire de conformité.
+
+## <a name="july-2021"></a>Juillet 2021
+
+Nous avons ajouté la possibilité de créer des évaluations pour des produits autres que Microsoft 365, en fonction des nouvelles versions universelles de nos modèles. Pour en savoir plus, commencez [par utiliser les modèles d’évaluation.](compliance-manager-templates.md)
 
 ## <a name="may-2021"></a>Mai 2021
 
@@ -31,7 +35,7 @@ ms.locfileid: "53149021"
 
 Nous avons publié 75 nouveaux modèles d’évaluation, notamment :
 - Australia Privacy Act
-- CIS Microsoft 365 Niveaux de base 1 et 2
+- CIS Microsoft 365 Foundation Levels 1 et 2
 - Allemagne : exigences de surveillance pour les services it dans les institutions financières (CASER)
 - Sarbanes-Oxley Act
 - Afrique du Sud - Promotion de la loi sur l’accès à l’information
@@ -44,7 +48,7 @@ Consultez la liste complète des [modèles d’évaluation.](compliance-manager-
 
 Le Gestionnaire de conformité est désormais disponible pour les clients doD du gouvernement américain, en plus des clients modérés et Cloud de la communauté du secteur public du gouvernement américain Community (Cloud de la communauté du secteur public).
 
-## <a name="march-2021"></a>Mars 2021
+## <a name="march-2021"></a>9 mars 2021
 
 ### <a name="active-and-inactive-templates"></a>Modèles actifs et inactifs
 

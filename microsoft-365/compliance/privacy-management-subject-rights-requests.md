@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La solution de demande de droits de l’objet dans la gestion de la confidentialité Microsoft vous permet de rechercher des données personnelles et de collaborer sur la révision de contenu et la création de rapports.
-ms.openlocfilehash: b1f92aa7b5e6f8117d8e3a4af758f13d6c91fe99
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: b266708c97ee4b81af6ba61dfa6716c57ff6026e
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378495"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419774"
 ---
 # <a name="manage-subject-rights-requests-in-privacy-management-preview"></a>Gérer les demandes de droits de l’objet dans la gestion de la confidentialité (aperçu)
 
@@ -47,7 +47,7 @@ Pour ouvrir une nouvelle demande, voir [Créer une demande.](#create-a-request)
 
 ## <a name="create-a-request"></a>Créer une demande
 
-Les administrateurs de la gestion des droits de l’objet peuvent utiliser l’Assistant de gestion de la confidentialité pour créer des demandes. Cet Assistant vous guide tout au long du processus de recherche de données personnelles sur une objet de données et de traitement de leur demande.
+Les administrateurs de la gestion des droits de l’objet peuvent utiliser l’Assistant de gestion de la confidentialité pour créer des demandes. L’Assistant vous guide tout au long du processus de recherche de données personnelles sur une objet de données et de traitement de leur demande.
 
 Les quatre étapes principales sont les suivantes:
 
@@ -127,7 +127,7 @@ Vous aurez la possibilité  ici d’afficher un aperçu des résultats de recher
 
 Lorsque vous avez terminé de modifier votre requête de recherche, une nouvelle recherche s’exécute pour remplacer vos résultats de recherche précédents. Cela réinitialise votre état dans la section Progression à la première étape, **l’estimation des données.** La nouvelle recherche peut prendre jusqu’à 60 minutes. Une fois l’analyse effectuée, vous verrez les résultats mis à jour sur la page de détails de la demande.
 
-### <a name="data-retention"></a>Rétention des données
+### <a name="data-retention"></a>Rétention de données
 
 Les rapports générés par le biais de cet outil et les données associées, telles que les fichiers annotés enregistrés dans Azure, sont stockés pendant une durée spécifiée. Cette durée est définie au niveau global **jusqu’Paramètres** dans la section **Périodes** de rétention des données, qui vous permet de choisir entre 30 et 90 jours. Pour en savoir plus, [consultez La prise en charge de la gestion de la confidentialité.](privacy-management-setup.md)
 

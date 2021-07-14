@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Vue d’ensemble de la connectivité réseau dans le centre Administration Microsoft 365 de connexion
-ms.openlocfilehash: 8ad589ede747975ca9dcd3c81e661a2147fc1b88
-ms.sourcegitcommit: 8c6a5db0dab99a82a69dd8a0a7c56af1cb825931
+ms.openlocfilehash: 05247c73bec3a11905890d26db84f8fe1a288a99
+ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53277000"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53419798"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Connectivité réseau dans le centre Administration Microsoft 365 de connexion
 
@@ -78,7 +78,7 @@ Les rapports de test sont liés à un emplacement s’il a été ajouté avec de
 Les échantillons de mesure et les emplacements de bureau doivent commencer à apparaître 2 à 3 minutes après la fin d’un rapport de test. Pour plus d’informations, [voir Microsoft 365 test de connectivité réseau.](office-365-network-mac-perf-onboarding-tool.md)
 
 > [!NOTE]
-> Lorsque vous ajoutez vos emplacements de bureau à Microsoft 365 connectivité réseau dans le Centre d’administration Microsoft 365, vous pouvez fournir des adresses IPv4 ou IPv6 pour vos sous-réseaux lan. Egress Les adresses IP doivent utiliser IPv4.
+> Actuellement, si vous ajoutez vos emplacements de bureau à Microsoft 365 connectivité réseau dans le Centre d’administration Microsoft 365, vous ne pouvez fournir que des adresses IPv4 pour vos sous-réseaux lan. Egress Les adresses IP doivent utiliser IPv4.
 
 ## <a name="how-do-i-use-this-information"></a>Comment utiliser ces informations ?
 
@@ -149,7 +149,7 @@ Une carte du réseau de périmètre pour les utilisateurs de votre organisation 
 - **SharePoint service** frontal optimal : l’une des SharePoint de service recommandées à qui les utilisateurs de cet emplacement de bureau doivent se connecter
 - SharePoint service frontal **sous-optimal** : une porte d’SharePoint service à qui les utilisateurs sont connectés, mais qui n’est pas recommandée
 - Serveur de résolution récursive **DNS** : emplacement à partir d’une base de données IP géographique du résolveur récursif DNS détecté utilisé pour Exchange Online (si disponible)
-- **Votre serveur proxy** : emplacement à partir d’une base de données IP géographique du serveur proxy détecté (si disponible) 
+- **Votre serveur proxy** : emplacement à partir d’une base de données IP géographique du serveur proxy détecté (si disponible)
 
 La page récapitulatif de l’emplacement du bureau affiche également l’évaluation réseau de l’emplacement, l’historique de l’évaluation du réseau, une comparaison de l’évaluation de cet emplacement avec d’autres clients de la même ville, ainsi qu’une liste d’informations et de recommandations spécifiques que vous pouvez entreprendre pour améliorer les performances et la fiabilité du réseau.
 
@@ -161,7 +161,6 @@ L’onglet Détails de la page d’emplacement du bureau affiche les résultats 
 
 > [!div class="mx-imgBorder"]
 > ![Détails spécifiques à l’emplacement](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
-
 
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>Partage des données d’évaluation du réseau avec Microsoft
 
@@ -189,9 +188,9 @@ Dans le fichier CSV, un emplacement de ville découvert apparaît dans la colonn
    1. **Adresse** (obligatoire) : adresse physique du bureau
    1. **Latitude** (facultative) : rempli à partir Bing recherche de cartes de l’adresse si vide
    1. **Longitude** (facultative) : remplie à partir Bing recherche de cartes de l’adresse si vide
-   1. **Egress plages d’adresses IP 1 à 5** (facultatives) : pour chaque plage, entrez le nom du circuit suivi d’une liste séparée par des espaces d’adresses CIDR IPv4 ou IPv6 valides. Ces valeurs sont utilisées pour différencier plusieurs emplacements de bureau où vous utilisez les mêmes adresses IP de sous-réseau local. Egress Les plages d’adresses IP doivent toutes être de /24 taille réseau et /24 n’est pas inclus dans l’entrée.
+   1. **Egress plages d’adresses IP 1 à 5** (facultatives) : pour chaque plage, entrez le nom du circuit suivi d’une liste séparée par des espaces d’adresses CIDR IPv4 valides. Ces valeurs sont utilisées pour différencier plusieurs emplacements de bureau où vous utilisez les mêmes adresses IP de sous-réseau local. Egress Les plages d’adresses IP doivent toutes être de /24 taille réseau et /24 n’est pas inclus dans l’entrée.
    1. **LanIps** (obligatoire) : rép.des plages de sous-réseaux LAN en cours d’utilisation à cet emplacement de bureau. Les ID de sous-réseau local doivent avoir une taille de réseau CIDR incluse, où la taille du réseau peut être comprise entre /8 et /29. Plusieurs plages de sous-réseaux LAN peuvent être séparées par une virgule ou un point-virgule.
-   
+
 1. Lorsque vous avez ajouté vos emplacements de  bureau et enregistré  le fichier, cliquez sur le bouton Parcourir en Télécharger le champ terminé et sélectionnez le fichier CSV enregistré.
 
 1. Le fichier est automatiquement validé. S’il existe des erreurs de validation, vous verrez le message d’erreur : Il y a des erreurs _dans le fichier d’importation. Examinez les erreurs, corrigez le fichier d’importation, puis réessayez._ Cliquez sur le lien **Ouvrir les détails de l’erreur** pour obtenir la liste des erreurs de validation de champ spécifiques.
@@ -225,7 +224,7 @@ L’emplacement de sortie Internet est l’emplacement où le trafic réseau qui
 
 Vous avez besoin d’une licence qui donne accès au Centre d’administration Microsoft 365.
 
-## <a name="related-topics"></a>Voir aussi
+## <a name="related-topics"></a>Rubriques associées
 
 [Microsoft 365 informations sur le réseau (aperçu)](office-365-network-mac-perf-insights.md)
 
