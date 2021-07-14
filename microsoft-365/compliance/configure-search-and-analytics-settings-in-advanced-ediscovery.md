@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurez Advanced eDiscovery paramètres qui s’appliquent à tous les ensembles de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
-ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751301"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430551"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurer les paramètres de recherche et d’analyse dans Advanced eDiscovery
 
@@ -80,13 +80,13 @@ Cette requête filtre essentiellement les éléments en double du jeu à révise
 
 ## <a name="ignore-text"></a>Ignorer le texte
 
-Il existe des situations dans lesquelles certains textes diminuent la qualité de l’analyse, telles que les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques quel que soit le contenu de l’e-mail. Si vous souhaitez ignorer un texte donné, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (Quasi-doublons, Thread de courrier, Thèmes et Pertinence) pour laquelle le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) en tant que texte ignoré est également prise en charge. 
+Dans certains cas, certains textes diminuent la qualité de l’analyse, par exemple les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques, quel que soit le contenu de l’e-mail. Si vous souhaitez ignorer un texte donné, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (Quasi-doublons, Thread de courrier, Thèmes et Pertinence) pour laquelle le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) en tant que texte ignoré est également prise en charge. 
 
 ## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique des caractères
 
 Lorsque ce paramètre est désactivé, le traitement ocr est exécuté sur les fichiers image. Le traitement ocr est exécuté dans les situations suivantes :
 
-- Lorsque des dépositaires et des sources de [données non privatives](non-custodial-data-sources.md) sont ajoutés à un cas. Le traitement ocr est effectué pendant le processus d’indexation avancée. Cela signifie que le texte des fichiers image qui correspond aux critères de recherche est renvoyé dans une recherche de collection.
+- Lorsque des dépositaires et des sources de [données non privatives](non-custodial-data-sources.md) sont ajoutés à un cas. Le traitement ocr est effectué pendant le [processus d’indexation](indexing-custodian-data.md) avancée. L’ocr est uniquement exécuté sur les éléments qui sont traitées pendant l’indexation avancée. Par exemple, si un fichier PDF de grande taille partiellement indexé ou avec d’autres erreurs d’indexation est traitée pendant l’indexation avancée, l’ocr est également appliqué au fichier. En d’autres termes, le traitement ocr se produit uniquement sur les fichiers qui sont ré-indexés pendant le processus d’indexation avancée. Cela signifie que lorsque des dépositaires sont ajoutés à un cas, certaines pièces jointes ne sont pas traitées pour l’ocr, car ces fichiers ne sont pas traitées pendant l’indexation avancée. Lorsque des fichiers image ocr sont appliqués, le texte de ces fichiers image peut faire l’être au cours d’une collection.
 
 - Lorsque du contenu provenant d’autres sources de données (qui ne sont pas associés à un dépositaire et ajoutés au cas dans une source de données non liée à la conservation) est ajouté à un groupe de révision.
 

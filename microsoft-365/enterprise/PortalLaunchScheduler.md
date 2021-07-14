@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: Cet article décrit comment lancer votre portail à l’aide du programme de lancement du portail
-ms.openlocfilehash: a0ba40849b47af93f45bcc9c77f2ba6d8f715dc5
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.openlocfilehash: dd2b6bdabae5f4d24882912709d6f16a637a9721
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229550"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430419"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Lancer votre portail à l’aide du SharePoint de lancement du portail
 
@@ -117,9 +117,8 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
     > [!NOTE]
     > Vous pouvez utiliser jusqu’à 50 utilisateurs ou groupes de sécurité distincts maximum pour l’ensemble du lancement. Chaque lancement est indépendant l’un de l’autre. Ainsi, si vous programmez un lancement sur un autre portail, vous pouvez utiliser jusqu’à 50 utilisateurs/groupes de sécurité pour ce lancement. En outre, vous pouvez utiliser jusqu’à 20 utilisateurs ou groupes de sécurité distincts par vague. 
-
->Le programme de lancement du portail prend en charge les groupes de sécurité et les groupes de sécurité à messagerie. 
-
+    >
+    > Le programme de lancement du portail prend en charge les groupes de sécurité et les groupes de sécurité à messagerie. 
 
 8. Confirmez les détails du lancement du portail et sélectionnez **Planifier.** Une fois le lancement programmé, les modifications apportées à la page d’accueil du portail SharePoint doivent recevoir un résultat de diagnostic sain avant que le lancement du portail reprenne.
 
@@ -127,19 +126,26 @@ Auparavant, les lancements de portail pouvaient uniquement être programmés Sha
 
 Si vous envisagez de lancer un portail avec plus de 100 000 utilisateurs, envoyez une demande de support en suivant les étapes répertoriées ci-dessous. Veillez à inclure toutes les informations demandées.
 
-**Procédez comme suit :**
+> [!NOTE]
+>
+> - Ce processus ne doit être suivi que si vous répondez aux exigences suivantes :
+> - La page de lancement est terminée.
+> - [Les conseils en matière d’état](https://aka.ms/portalhealth) du portail ont été suivis.
+> - La date de lancement est de 14 jours.
+
+**Procédez comme suit :**
 
 1. Accédez à <https://admin.microsoft.com>.
 2. Vérifier que vous utilisez la nouvelle prévisualisation du Centre d’administration
 3. Dans le volet de navigation de gauche, sélectionnez **Support,** puis **sélectionnez Nouvelle demande de service**
 
-   Cette opération active le volet **Besoin d'aide ?** sur le côté droit de l’écran.
+   Cette opération active le volet **Besoin d'aide ?** sur le côté droit de l’écran.
 
 4. Pour **décrire brièvement votre problème,** entrez « Lancer SharePoint portail avec 100 000 utilisateurs »</br>
 5. Ensuite, sélectionnez **Contacter le support technique**
 6. Sous **Description,** entrez « Lancer SharePoint portail avec 100 000 utilisateurs »
 7. Remplissez les informations restantes, puis sélectionnez **Me contacter**
-8. Une fois le ticket créé, veillez à fournir à l’agent de support les informations suivantes :
+8. Une fois le ticket créé, veillez à fournir à l’agent de support les informations suivantes :
    - URL du portail
    - Nombre d’utilisateurs attendus
    - Planification de lancement estimée
@@ -160,7 +166,7 @@ Les lancements programmés à l’aide de l’outil de planification de lancemen
 
 2. Ensuite, **sélectionnez Supprimer,** puis, lorsque vous voyez le message ci-dessous, **sélectionnez Supprimer** à nouveau.
 
-   ![Image de l’outil de planification de lancement du portail](../media/portal-launch-delete-2.png)
+   ![Image de l’invite qui vous demande si vous souhaitez supprimer ou conserver un lancement programmé](../media/portal-launch-delete-2.png)
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>Utiliser le programme de lancement du portail PowerShell
 

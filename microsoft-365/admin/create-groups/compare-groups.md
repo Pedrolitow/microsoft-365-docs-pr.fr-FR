@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Les membres du groupe Microsoft 365 disposent d'une messagerie de groupe et d'un espace de travail partagé pour les conversations, les fichiers et les événements du calendrier, du flux et du planificateur.
-ms.openlocfilehash: 37bead3ab878aac087c5ec16016dc2c8ddce410c
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: 12da954beb4d019b7652ef4df2e18cb30ff542ed
+ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "53377180"
+ms.locfileid: "53393258"
 ---
 # <a name="compare-groups"></a>Comparer des groupes
 
@@ -50,6 +51,8 @@ Les groupes Microsoft 365 peuvent être [configurés pour l’appartenance dynam
 Les groupes Microsoft 365 sont accessibles via des applications mobiles comme Outlook pour iOS et Android.
 
 Les membres du groupe peuvent Envoyer en tant que ou Envoyer de la part de l’adresse e-mail du groupe si cette fonction a été [activée par l'administrateur](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
+
+Les groupes Microsoft 365 ne prennent pas en charge l’imbrication avec d’autres groupes Microsoft 365 ou avec les groupes de distribution ou de sécurité.
 
 ## <a name="distribution-groups"></a>Groupes de distribution
 
@@ -97,5 +100,8 @@ Il n'est pas possible de migrer une boîte aux lettres partagée vers un groupe 
 
 ## <a name="related-content"></a>Contenu associé
 
-[En savoir plus sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
-[Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)
+[Apprendre sur les groupes Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Améliorer les listes de distribution vers les groupes Microsoft 365 dans Outlook](/microsoft-365/admin/manage/upgrade-distribution-lists)
+
+[Pourquoi vous devriez mettre à niveau vos listes de distribution vers des groupes dans Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

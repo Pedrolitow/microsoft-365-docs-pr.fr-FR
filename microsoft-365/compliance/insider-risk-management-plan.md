@@ -12,16 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a6a0ebb6ef15a6d4746d72a73feb16e53f89354e
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 19149c7f53cee537450ac12ce5a346a12d43bd91
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53326782"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430512"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planifier la gestion des risques Insider
 
 Avant de commencer à [gérer](insider-risk-management.md) les risques internes dans votre organisation, il existe d’importantes activités de planification et des considérations qui doivent être examinées par vos équipes de gestion des technologies de l’information et de la conformité. Une compréhension approfondie et la planification du déploiement dans les domaines suivants vous aideront à vous assurer que votre implémentation et votre utilisation des fonctionnalités de gestion des risques internes se déroulent sans problème et sont conformes aux meilleures pratiques pour la solution.
+
+Regardez la vidéo ci-dessous pour découvrir comment le flux de travail de gestion des risques internes peut aider votre organisation à prévenir, détecter et contenir des risques tout en hiérbant les valeurs, la culture et l’expérience utilisateur de votre organisation :
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>Travailler avec les parties prenantes de votre organisation
 
@@ -36,7 +42,7 @@ Identifiez les parties prenantes appropriées dans votre organisation pour colla
 
 ## <a name="determine-any-regional-compliance-requirements"></a>Déterminer les exigences de conformité régionale
 
-Différentes zones géographiques et organisationnelles peuvent avoir des exigences de conformité et de confidentialité différentes des autres zones de votre organisation. Travaillez en équipe avec les parties prenantes dans ces domaines pour vous assurer qu’elles comprennent les contrôles de conformité et de confidentialité dans la gestion des risques internes et comment elles doivent être utilisées dans différents domaines de votre organisation. Dans certains scénarios, les exigences de conformité et de confidentialité peuvent nécessiter des stratégies qui désignent ou limitent certaines parties prenantes à des enquêtes et des cas basés sur le cas d’un utilisateur, d’exigences réglementaires ou de stratégies pour la zone.
+Différentes zones géographiques et organisationnelles peuvent avoir des exigences de conformité et de confidentialité différentes des autres zones de votre organisation. Travaillez en équipe avec les parties prenantes dans ces domaines pour vous assurer qu’elles comprennent les contrôles de conformité et de confidentialité dans la gestion des risques internes et comment elles doivent être utilisées dans différents domaines de votre organisation. Dans certains scénarios, les exigences de conformité et de confidentialité peuvent nécessiter des stratégies qui désignent ou limitent certaines parties prenantes à des enquêtes et des cas basés sur le cas d’un utilisateur ou des exigences réglementaires ou de stratégie pour la zone.
 
 Si vous avez besoin que des parties prenantes spécifiques soient impliquées dans des enquêtes de cas qui [](insider-risk-management-policies.md) impliquent des utilisateurs de certaines régions, rôles ou divisions, vous pouvez implémenter des stratégies de gestion des risques internes distinctes (même identiques) ciblant les différentes régions et population. Cette configuration permettra aux parties prenantes de trier et de gérer plus facilement les cas pertinents pour leurs rôles et régions. En outre, vous pouvez envisager de créer des processus et des stratégies pour les régions où les enquêteurs et les réviseurs parlent la même langue que les utilisateurs pour simplifier le processus d’escalade pour les alertes et les cas de gestion des risques internes.
 
@@ -58,7 +64,7 @@ Selon la structure de votre équipe de gestion de la conformité, vous avez la c
 
 Selon la façon dont vous prévoyez d’implémenter des stratégies de gestion des risques internes, vous devez avoir les abonnements aux licences Microsoft 365 appropriés et comprendre et planifier certaines conditions préalables de solution.
 
-**Licences :** La gestion des risques internes est disponible dans le cadre d’un large éventail d’abonnements Microsoft 365 licences. Pour plus d’informations, consultez l’article Prise en charge de la gestion [des risques internes.](insider-risk-management-configure.md#subscriptions-and-licensing)
+**Licences :** La gestion des risques internes est disponible dans le cadre d’un large éventail d’abonnements Microsoft 365 licences. Pour plus d’informations, consultez l’article Prise en charge de la gestion des [risques internes.](insider-risk-management-configure.md#subscriptions-and-licensing)
 
 Si vous n’avez pas de plan Microsoft 365 Entreprise E5 et que vous souhaitez essayer la gestion des risques [](https://www.microsoft.com/microsoft-365/enterprise) internes, vous pouvez ajouter des [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) à votre abonnement existant ou vous inscrire à une version d’évaluation de Microsoft 365 Entreprise E5.
 
@@ -82,7 +88,7 @@ Si vous ne voyez aucune alerte immédiatement après la configuration d’une st
 Partagez la documentation de gestion des risques internes avec les parties prenantes de votre organisation qui sont incluses dans votre flux de travail de gestion et de correction :
 
 - [Créer et gérer les stratégies de risques internes](insider-risk-management-policies.md)
-- [Examiner les activités de risques internes](insider-risk-management-activities.md)
+- [Identifier les activités de risques internes](insider-risk-management-activities.md)
 - [Agir sur les cas de risques internes](insider-risk-management-cases.md)
 - [Examiner les données de cas avec l’Explorateur de contenu à risque interne](insider-risk-management-content-explorer.md)
 - [Créer des modèles d’avertissement sur les risques internes](insider-risk-management-notices.md)
@@ -92,4 +98,4 @@ Partagez la documentation de gestion des risques internes avec les parties prena
 Vous êtes prêt à configurer la gestion des risques internes pour votre organisation ? Lisez les articles suivants :
 
 - [Prise en charge des paramètres de gestion des](insider-risk-management-settings.md) risques internes pour configurer les paramètres de stratégie globale.
-- [Prise en charge de la gestion des](insider-risk-management-configure.md) risques internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.
+- [Prise en charge de la gestion des risques](insider-risk-management-configure.md) internes pour configurer les conditions préalables, créer des stratégies et commencer à recevoir des alertes.

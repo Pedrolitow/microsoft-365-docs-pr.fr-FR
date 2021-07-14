@@ -932,6 +932,18 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Sécurité et conformité pour le secteur de l’énergie
           href: ../solutions/energy-secure-collaboration.md
+- name: Gérer les risques liés à la confidentialité
+  items:
+    - name: En savoir plus sur la gestion de la confidentialité
+      href: privacy-management.md
+    - name: Prise en main de la gestion des enregistrements
+      href: privacy-management-setup.md
+    - name: Rechercher et visualiser des données personnelles dans la gestion de la confidentialité
+      href: privacy-management-data-profile.md
+    - name: Créer et gérer des stratégies dans la gestion de la confidentialité
+      href: privacy-management-policies.md
+    - name: Gérer les demandes de droits d’objet dans la gestion de la confidentialité
+      href: privacy-management-subject-rights-requests.md
 - name: Fonctionnalités de conformité hybrides
   items:
     - name: Chiffrement du courrier Exchange Online avec AD RMS

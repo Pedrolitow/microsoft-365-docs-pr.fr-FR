@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé est réprocessé pour le rendre entièrement utilisable dans la recherche.
-ms.openlocfilehash: 904c8fe626ce8ece8f4b48bd5504e4011e9f4fb2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé est réprocessé pour le rendre entièrement utilisable dans une recherche.
+ms.openlocfilehash: f510b7e9c0fa2c5c181709c96907610066a4b1cf
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911208"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53430506"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Indexation avancée des données des consignataires
 
-Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé est réprocessé pour le rendre entièrement utilisable dans la recherche.  Ce processus est appelé *indexation avancée.* Le contenu peut être partiellement indexé pour plusieurs raisons, notamment l’existence d’images, de types de fichiers non pris en compte ou lorsque des limites de taille de fichier d’indexation sont rencontrées.
+Lorsqu’un dépositaire est ajouté à un cas Advanced eDiscovery, tout contenu considéré comme partiellement indexé ou ayant des erreurs d’indexation est réindexé pour le rendre entièrement utilisable dans la recherche.  Ce processus de réindexation est appelé *indexation avancée.* Il existe plusieurs raisons pour lesquelles le contenu est partiellement indexé ou présente des erreurs d’indexation. Cela inclut les fichiers image ou la présence d’images dans un fichier, les types de fichiers non pris en compte ou les limites d’indexation de taille de fichier. Pour SharePoint fichiers, l’indexation avancée s’exécute uniquement sur les éléments qui sont marqués comme partiellement indexés ou qui ont des erreurs d’indexation. Dans Exchange, les messages électroniques qui ont des pièces jointes d’image ne sont pas marqués comme partiellement indexés ou avec des erreurs d’indexation. Cela signifie que ces fichiers ne seront pas réindexés par le processus d’indexation avancée.
 
 Pour en savoir plus sur le traitement de la prise en charge et des éléments partiellement indexés, voir :
 
