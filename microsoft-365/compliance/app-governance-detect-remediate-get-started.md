@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec la détection et la correction des menaces d’application.
-ms.openlocfilehash: 6229d2cf94ec1ba892929f399fe49cf88da608d1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 77de3676a9a486bbed572a4a16bf62ad4d038406
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420177"
+ms.locfileid: "53430719"
 ---
 # <a name="get-started-with-app-threat-detection-and-remediation"></a>Démarrage avec la détection et la correction des menaces d’application
 
@@ -27,7 +27,7 @@ ms.locfileid: "53420177"
 
 La gouvernance des applications Microsoft collecte les alertes de menace générées par des méthodes intégrées de détection de gouvernance des applications basées sur des activités d’application malveillantes et des alertes basées sur des stratégies générées par des stratégies d’application actives que vous créez.
 
-Le premier emplacement pour afficher les alertes d’application est le tableau de bord de gouvernance des applications à [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance).
+Le premier emplacement pour afficher les alertes d’application est le tableau de bord de gouvernance des applications à [https://aka.ms/appgovernance](https://aka.ms/appgovernance).
 
 ![Page vue d’ensemble de la gouvernance des applications dans le Centre de conformité Microsoft 365 avec la section Détection et alertes de stratégie mise en évidence](..\media\manage-app-protection-governance\mapg-cc-overview-alerts.png)
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés,découvrez comment s’inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: f0e67dc6cab0ac135a8ff752e1d2b97aff846cf2
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: 41482a97a7e940fab61b5b4884431ca7b385c3c0
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415634"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53437999"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -53,7 +53,7 @@ ms.locfileid: "53415634"
 
     Pour vérifier que Microsoft 365 Lighthouse ajouté à votre client, recherchez les Microsoft 365 Lighthouse sous **Facturation > Vos** produits dans le Centre d’administration Microsoft 365.
 
-1. Si vous n’êtes pas redirigé vers le portail Microsoft 365 Lighthouse, allez sur <a href="https://lighthouse.microsoft.com" target="_blank">https://lighthouse.microsoft.com</a> .
+1. Si vous n’êtes pas redirigé vers le portail Microsoft 365 Lighthouse, allez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> .
 
 1. Sélectionnez **Accepter & continuer à** terminer la modification de l’accord de partenaire.
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Le plan de gestion de fichiers offre des fonctionnalités de gestion avancées pour les étiquettes de rétention.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 920a613cdc3a32267415d42cebe962e62ff6831a
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 6aa47048d9654c46694e8a8eb0626b18b8b52f69
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53419762"
+ms.locfileid: "53430637"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Utiliser le plan de gestion de fichiers pour gérer les étiquettes de rétention
 
@@ -39,8 +39,6 @@ Bien que vous puissiez créer et gérer les étiquettes de rétention à partir 
 - Les descripteurs de plan de gestion de fichiers prennent en charge des informations supplémentaires et facultatives pour chaque étiquette.
 
 Le plan de gestion de fichiers peut être utilisé pour toutes les étiquettes de rétention, même s’ils ne marquent pas le contenu comme un enregistrement.
-
-![Page de plan de gestion de fichiers](../media/compliance-file-plan.png)
 
 Pour plus d’informations sur les étiquettes de rétention et leur utilisation, voir [Découvrir les stratégies et les étiquettes de rétention](retention.md).
 
@@ -111,9 +109,9 @@ Exemple de descripteurs de plan de gestion de fichiers lorsque vous créez ou mo
 
 ![Descripteurs de plan de gestion de fichiers lorsque vous créez ou modifiez une étiquette de rétention](../media/file-plan-descriptors.png)
 
-Exemple de vue des colonnes des descripteurs de plan de gestion de fichiers :
+Lorsque vous sélectionnez **Choisir** pour chacun de ces descripteurs facultatifs, vous pouvez sélectionner l’une des valeurs out-of-box, ou créer les vôtres, puis les sélectionner. Par exemple : 
 
-![Colonnes des descripteurs de plan de gestion de fichiers](../media/file-plan-descriptors-on-labels-tab.png)
+![Créer un descripteur de plan de fichier pour l’approvisionnement/citation](../media/file-plan-descriptors-create.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>Exporter toutes les étiquettes de rétention pour analyse ou activer les révisions en mode hors connexion
 
@@ -129,9 +127,7 @@ Un fichier *.csv contenant toutes les étiquettes de rétention existantes s’o
 
 ## <a name="import-retention-labels-into-your-file-plan"></a>Import d’étiquettes de rétention dans votre plan de gestion de fichiers
 
-Dans le plan de gestion de fichiers, vous pouvez importer en bloc de nouvelles étiquettes de rétention à l’aide d’un fichier .csv avec un format spécifique. Une fois les étiquettes importées, vous pouvez apporter des modifications dans le fichier .csv et réimporter le fichier pour faciliter la modification en bloc des étiquettes de rétention existantes.
-
-Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes de rétention existantes : 
+Dans le plan de gestion de fichiers, vous pouvez importer en bloc de nouvelles étiquettes de rétention à l’aide d’un fichier .csv avec un format spécifique : 
 
 1. Sur la page **Plan de gestion de fichiers**, cliquez sur **Importer** pour utiliser la page **Remplir et importer votre plan de gestion de fichiers** :
 
@@ -188,7 +184,7 @@ Pour importer de nouvelles étiquettes de rétention et modifier des étiquettes
     
     - Si la validation réussit : vous pouvez sélectionner **Mettre en ligne** pour rendre les étiquettes de rétention disponibles dans votre locataire. Vous pouvez également sélectionner l’icône Fermer pour la page et **Oui** pour confirmer que vous souhaitez fermer l’Assistant sans rendre les étiquettes de rétention disponibles dans votre locataire pour l’instant.
 
-Lorsque les étiquettes importées sont ajoutées à votre client, vous pouvez désormais les ajouter à une nouvelle stratégie d’étiquette de rétention ou les appliquer automatiquement. Vous pouvez faire cela directement à partir de la page **Plan de gestion de fichiers** en sélectionnant la liste déroulante dans **+ Créer une étiquette**, puis **Stratégie de publication des étiquettes** ou **Stratégie d’application automatique d’une étiquette**.
+Lorsque les étiquettes importées sont ajoutées à votre locataire, vous pouvez désormais les mettre à la disposition des utilisateurs en les publiant ou en les appliquant automatiquement. Vous pouvez effectuer les deux opérations à partir de l’onglet **Stratégies d’étiquette**, puis sélectionner **Publier des étiquettes**, ou **Appliquer automatiquement une étiquette**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

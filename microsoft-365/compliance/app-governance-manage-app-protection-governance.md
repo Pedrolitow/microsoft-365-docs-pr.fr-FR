@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Implémentez les fonctionnalités de gouvernance des applications Microsoft pour régir vos applications.
-ms.openlocfilehash: bc8c739132de52abb69c15479cd851462e9f6ce7
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 63bd6684bc041c3c82ba6b8ddcc28c2600182b26
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420162"
+ms.locfileid: "53430695"
 ---
 # <a name="app-governance-add-on-to-microsoft-cloud-app-security-in-preview"></a>Module complémentaire de gouvernance des applications pour Microsoft Cloud App Security (en préversion)
 
@@ -53,7 +53,7 @@ Microsoft allows developers to build cloud applications using Azure Active Direc
 
 ## <a name="a-first-glimpse-at-app-governance"></a>Un premier aperçu de la gouvernance des applications
 
-Pour afficher le tableau de bord de gouvernance des applications, accédez à [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Notez que votre compte de connexion doit avoir l’un des [rôles d’administrateur](app-governance-get-started.md#administrator-roles) pour afficher les données de gouvernance des applications.
+Pour afficher le tableau de bord de gouvernance des applications, accédez à [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Notez que votre compte de connexion doit avoir l’un des [rôles d’administrateur](app-governance-get-started.md#administrator-roles) pour afficher les données de gouvernance des applications.
 
 ## <a name="app-governance-integration-with-azure-ad-and-microsoft-cloud-app-security"></a>Intégration de la gouvernance des applications à Azure AD et Microsoft Cloud App Security
 

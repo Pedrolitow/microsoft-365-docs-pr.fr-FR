@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec visibilité et insights.
-ms.openlocfilehash: 12c1a01667b1bda545b619e931d99132e6611e35
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 93be3557c32345e81c7126b669ead8edf8ebac21
+ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420134"
+ms.locfileid: "53430479"
 ---
 # <a name="get-started-with-visibility-and-insights"></a>Démarrage avec visibilité et insights
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Le premier endroit pour commencer est le tableau de bord de gouvernance des applications à [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Notez que votre compte de connexion doit avoir l’un des [ces rôles d’administrateur de gouvernance des applications](app-governance-get-started.md#administrator-roles) pour afficher les données de gouvernance des applications.
+Le premier endroit pour commencer est le tableau de bord de gouvernance des applications à [https://aka.ms/appgovernance](https://aka.ms/appgovernance). Notez que votre compte de connexion doit avoir l’un des [ces rôles d’administrateur de gouvernance des applications](app-governance-get-started.md#administrator-roles) pour afficher les données de gouvernance des applications.
 
 ![Page vue d’ensemble de la gouvernance des applications dans le Centre de conformité Microsoft 365](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur la détection et la correction des menaces d’application.
-ms.openlocfilehash: 26cd8501fdd8bd828357f8adb7d4e90f96e70114
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 574688e67b7562c8df6aec7d2242e68485239479
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420171"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438047"
 ---
 # <a name="learn-about-app-threat-detection-and-remediation"></a>En savoir plus sur la détection et la correction des menaces d’application
 
@@ -42,11 +42,11 @@ Consultez les [rôles d’administrateur](app-governance-get-started.md#administ
 
 La gouvernance des applications, Azure Active Directory (Azure AD) et Microsoft Cloud App Security peuvent collecter et fournir différents jeux de données :
 
-- Azure AD fournit des métadonnées d’application de base et des informations détaillées sur les connexions aux applications.
 - La gouvernance des applications fournit des informations détaillées sur l’activité d’une application au niveau de l’API.
+- Azure AD fournit des métadonnées d’application de base et des informations détaillées sur les connexions aux applications.
 - Microsoft Cloud App Security fournit des informations sur les risques liés aux applications.
 
-En partageant des informations sur la gouvernance des applications, Azure AD et Microsoft Cloud App Security, vous pouvez afficher des informations agrégées dans un portail et lier facilement à un autre portail pour plus d’informations. Voici quelques exemples :
+En partageant des informations sur la gouvernance des applications, les Azure AD et les Microsoft Cloud App Security, vous pouvez afficher des informations agrégées dans un portail et lier facilement à un autre portail pour plus d’informations. Voici quelques exemples :
 
 - Informations de connexion d’application dans la gouvernance des applications :
 

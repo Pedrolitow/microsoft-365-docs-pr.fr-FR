@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Déterminez la posture de conformité de votre application.
-ms.openlocfilehash: 2fde19e385d4797e04c8f991efa673d33cea3b58
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 152f68e8fe0e7d7340d2e048bc73684bc079386f
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430671"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438023"
 ---
 # <a name="determine-your-app-compliance-posture"></a>Déterminer la posture de conformité de votre application
 
@@ -54,7 +54,7 @@ Dans cette page, vous pouvez voir :
 
 - Pour l’accès aux données et aux ressources :
 
-  - Accès aux données de l’API d’application au cours des 90 derniers jours
-  - Utilisation des principales ressources au cours des 90 derniers jours
+  - Nombre total de données consultées par les applications dans le locataire via API Graph au cours des trois mois calendaires actuels et précédents. (Inclut uniquement l’utilisation du chargement et du téléchargement de courriers et de fichiers)
+  - Consommation des données sur les trois mois calendaires actuels et précédents, divisés par type de ressource. (Inclut uniquement l’utilisation du chargement et du téléchargement de courriers et de fichiers)
 
   À partir de ces informations, vous pouvez déterminer s’il existe des pics anormaux d’accès aux données dans votre client Microsoft 365.

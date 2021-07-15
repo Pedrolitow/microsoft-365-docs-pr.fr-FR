@@ -1,6 +1,6 @@
 ---
 title: Configuration requise de l’appareil
-description: Résumé de la configuration matérielle et logicielle minimale requise pour que les appareils fonctionnent Bureau géré Microsoft
+description: Résumé de la configuration matérielle et logicielle minimale requise pour que les appareils fonctionnent Microsoft Manged Desktop
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b17585f7449f1151c7a5f5cd75d06b8e723fbe4b
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245791"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438011"
 ---
 # <a name="device-requirements"></a>Configuration requise de l’appareil
 
-Bureau géré Microsoft évalue régulièrement les besoins des appareils à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise par un appareil pour fonctionner avec Bureau géré Microsoft. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtre des Bureau géré Microsoft sur le site [Windows 10 Professionnel d’entreprise](https://www.microsoft.com/windowsforbusiness/view-all-devices)
+Microsoft Manged Desktop évalue régulièrement les besoins de l’appareil à inclure dans le service. Cet article décrit la configuration matérielle et logicielle requise pour qu’un appareil fonctionne avec Microsoft Manged Desktop. Vous pouvez consulter la liste des appareils spécifiques déjà approuvés pour une utilisation avec le service en fonction de ces exigences. Filtrer les Microsoft Manged Desktop sur le site [Windows 10 Professionnel d’entreprise](https://www.microsoft.com/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > Ces exigences peuvent changer à tout moment, mais nous vous fournirons un préavis de 30 jours pour toute modification de la configuration matérielle requise. Les exigences les plus récemment modifiées sont marquées par **\*** . 
@@ -29,7 +29,7 @@ Outre l’examen des spécifications de l’appareil, vous pouvez également uti
 
 ## <a name="minimum-requirements"></a>Configuration minimale requise
 
-Pour être inscrit à Bureau géré Microsoft, un appareil doit satisfaire ou dépasser toutes ces exigences.
+Pour être inscrit à Microsoft Manged Desktop, un appareil doit satisfaire ou dépasser toutes ces exigences.
 
 ### <a name="manufacturer"></a>Fabricant
 
@@ -49,7 +49,9 @@ Ce logiciel doit être préinstallé sur l’appareil :
 - la version 64 bits de Applications Microsoft 365 pour les grandes entreprises 
 - Tous les pilotes de périphérique applicables
 
-
+> [!NOTE]
+> Windows 11 sera une option supplémentaire pour les logiciels préinstallés une fois qu’il aura atteint la disponibilité générale.
+>
 ### <a name="physical-features"></a>Fonctionnalités physiques
 
 Les appareils doivent avoir les fonctionnalités ci-après :
@@ -59,10 +61,11 @@ Les appareils doivent avoir les fonctionnalités ci-après :
 - Capable de la sécurité basée sur la virtualisation 
 - [Intégrité du code protégée par l’hyperviseur](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) prise en charge par le BIOS
 
-Pour plus d’informations sur ces fonctionnalités et les technologies qui y sont associées que le service utilise, voir [Bureau géré Microsoft technologies](../intro/technologies.md).
+Pour plus d’informations sur ces fonctionnalités et les technologies qui y sont associées que le service utilise, voir [Microsoft Manged Desktop technologies.](../intro/technologies.md)
 
 > [!NOTE]
-> ARM processeurs ne sont pas pris en charge.
+>- ARM processeurs ne sont pas pris en charge.
+>- Windows 11 présente une configuration [matérielle supplémentaire requise.](/windows/whats-new/windows-11-requirements)
 
 Les appareils doivent respecter ou dépasser les limites suivantes pour le stockage et la mémoire :
 
@@ -70,11 +73,11 @@ Les appareils doivent respecter ou dépasser les limites suivantes pour le stock
 - Le lecteur de démarrage doit avoir une capacité d’au moins 128 Go.
 - La mémoire ram interne de l’appareil doit être égale ou supérieure à 8 Go.
 
-Si l’appareil a été effectué après le 1er juillet 2020, il doit également avoir un appareil photo ir, un lecteur d’empreintes digitales ou les deux, afin de prendre en charge [Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
+Si l’appareil a été effectué après le 1er juillet 2020, il doit également avoir un appareil photo ir, un lecteur d’empreintes digitales ou les deux, afin de prendre en [charge Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
 
 ## <a name="recommended-features"></a>Fonctionnalités recommandées
 
-Vos utilisateurs auront une bien meilleure expérience si vous choisissez des appareils dotés de ces fonctionnalités :
+Vos utilisateurs auront une bien meilleure expérience si vous choisissez les appareils qui disposent de ces fonctionnalités :
 
 - Soit un processeur intel vPro-platform, soit un processeur de Pro AMD Ryzen
 - Lecteur de démarrage du type SSD avec une capacité d’au moins 256 Go
