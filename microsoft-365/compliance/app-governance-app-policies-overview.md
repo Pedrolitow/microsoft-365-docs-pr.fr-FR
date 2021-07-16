@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir les stratégies d’application.
-ms.openlocfilehash: 6d4ff23ca0e09f5e410d32d6ced144afc0c4bb15
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: b5d36d6597de54d7936bc542d37d91d0fac0ba45
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420186"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53437963"
 ---
 # <a name="learn-about-app-policies"></a>Découvrir les stratégies d’application
 
@@ -27,20 +27,9 @@ ms.locfileid: "53420186"
 
 La gouvernance des applications Microsoft détecte le comportement anormal des applications dans votre client Microsoft 365 et génère des alertes que vous pouvez voir, examiner et résoudre. Au-delà de cette fonctionnalité de détection intégrée, vous pouvez utiliser un ensemble de modèles par défaut pour créer vos propres stratégies d’application qui génèrent d’autres alertes.
 
-Ces stratégies pour les modèles et comportements des applications et des utilisateurs, et protégez vos utilisateurs contre l’utilisation d’applications non conformes ou malveillantes et limite l’accès des applications à risque à vos données client.
+Ces stratégies relatives aux modèles et aux comportements des applications et des utilisateurs peuvent protéger vos utilisateurs contre l'utilisation d'applications non conformes ou malveillantes et limiter l'accès des applications à risque aux données de vos locataires.
 
-Voici une revue rapide des rôles d'administrateur requis pour la gestion des stratégies d'applications.
-
-| Rôle | Lire les stratégies | Créer, mettre à jour ou supprimer des stratégies |
-|:-------|:-----|:-------|
-| Administrateur de conformité | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |
-| Lecteur de conformité | ![Coche](..\media\checkmark.png) |  |
-| Administrateur général | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |
-| Lecteur général  | ![Coche](..\media\checkmark.png) |  |
-| Administrateur de sécurité | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |
-| Lecteur de sécurité  | ![Coche](..\media\checkmark.png) |  |
-| Opérateur de sécurité | ![Coche](..\media\checkmark.png) | ![Coche](..\media\checkmark.png) |
-||||
+Voir [Rôles d'administrateur](app-governance-get-started.md#administrator-roles) pour plus d'informations sur les rôles qui peuvent modifier les stratégies.
 
 <!--
 How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 

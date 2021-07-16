@@ -6,7 +6,7 @@ metadata:
   ms.author: krowley
   author: kccross
   manager: laurawi
-  ms.date: 05/22/2020
+  ms.date: 07/14/2021
   audience: ITPro
   ms.topic: overview
   ms.service: O365-seccomp
@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 386f37e2e6ebff820f4f6385281783daf41243b2
-  ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+  ms.openlocfilehash: 809f31682fbcb690aaaf2483ec8b72c766282cf5
+  ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/14/2021
-  ms.locfileid: "53430443"
+  ms.lasthandoff: 07/15/2021
+  ms.locfileid: "53453824"
 title: FAQ sur le chiffrement des messages
 summary: >
   Vous avez une question sur le fonctionnement des nouvelles fonctionnalités de protection des messages ? Recherchez une réponse ici. En outre, jetez un œil aux questions fréquemment posées sur la protection des données dans [Azure Information Protection](/information-protection/get-started/faqs-rms) pour obtenir des réponses aux questions sur le service de protection des données, Azure Rights Management, dans Azure Information Protection.
@@ -35,13 +35,13 @@ sections:
     answer: "Vous pouvez utiliser les nouvelles fonctionnalités pour OME dans les conditions suivantes :\n  \n- Si vous n’avez jamais installé OME ou IRM pour Exchange Online dans Office 365.\n\n- Si vous avez installé OME et IRM, vous pouvez suivre ces étapes si vous utilisez le service Azure Rights Management à partir d’Azure Information Protection.\n\n- Si vous utilisez Exchange Online services AD RMS (Active Directory Rights Management Service), vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [d’abord migrer AD RMS vers Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Une fois la migration terminée, vous pouvez configurer OME.\n\n  Si vous choisissez de continuer à utiliser AD RMS local avec Exchange Online au lieu de migrer vers Azure Information Protection, vous ne pourrez pas utiliser ces nouvelles fonctionnalités.\n"
   - question: >
       De quels abonnements ai-je besoin pour utiliser les nouvelles fonctionnalités OME ?
-    answer: "Pour utiliser les nouvelles fonctionnalités OME, vous avez besoin de l’un des plans suivants :\n  \n- chiffrement de messages Office 365 est proposé dans le cadre de Office 365 Entreprise E3 et E5, Microsoft Enterprise E3 et E5, Microsoft 365 Business Premium, Office 365 A1, A3 et A5, ainsi que Office 365 Secteur public G3 et G5. Les clients n'ont pas besoin de licences supplémentaires pour bénéficier des nouvelles capacités de protection offertes par Azure Information Protection.\n\n- Vous pouvez également ajouter Azure Information Protection Plan 1 aux plans suivants pour recevoir les nouvelles fonctionnalités de chiffrement de messages Office 365 : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Office 365 Entreprise E1.\n\n- Chaque utilisateur bénéficiant de chiffrement de messages Office 365 doit être titulaire d’une licence pour être couvert par la fonctionnalité.\n\n- Pour obtenir la liste complète, [consultez les descriptions Exchange Online service d’chiffrement de messages Office 365.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)\n"
+    answer: "Pour utiliser les nouvelles fonctionnalités OME, vous avez besoin de l’un des plans suivants :\n  \n- chiffrement de messages Office 365 est proposé dans le cadre de Office 365 Entreprise E3 et E5, Microsoft Enterprise E3 et E5, Microsoft 365 Business Premium, Office 365 A1, A3 et A5, ainsi que Office 365 Secteur public G3 et G5. Vous n’avez pas besoin de licences supplémentaires pour recevoir les nouvelles fonctionnalités de protection optimisées par Azure Information Protection.\n\n- Vous pouvez également ajouter Azure Information Protection Plan 1 aux plans suivants pour recevoir les nouvelles fonctionnalités de chiffrement de messages Office 365 : Exchange Online Plan 1, Exchange Online Plan 2, Office 365 F1, Microsoft 365 Business Basic, Microsoft 365 Business Standard ou Office 365 Entreprise E1.\n\n- Chaque utilisateur bénéficiant de chiffrement de messages Office 365 doit être titulaire d’une licence pour être couvert par la fonctionnalité.\n\n- Pour obtenir la liste complète, [consultez les descriptions Exchange Online service d’chiffrement de messages Office 365.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)\n"
   - question: >
       Puis-je utiliser Exchange Online avec votre propre clé (BYOK) dans Azure Information Protection ?
-    answer: "Oui. Microsoft vous recommande d’effectuer les étapes de la mise en place de BYOK avant de configurer OME.\n  \nPour plus d’informations sur BYOK, voir Planification et mise en œuvre de votre clé de [client Azure Information Protection.](/information-protection/plan-design/plan-implement-tenant-key)\n  \n"
+    answer: "Oui. Microsoft vous recommande d’effectuer les étapes de la mise en place de BYOK avant de configurer OME.\n  \nPour plus d’informations sur BYOK, voir Planification et mise en œuvre de votre clé [de client Azure Information Protection.](/information-protection/plan-design/plan-implement-tenant-key)\n  \n"
   - question: >
       OME et BYOK avec Azure Information Protection modifient-ils l’approche de Microsoft pour les demandes de données tierces, telles que les demandes d’accès ?
-    answer: "Non. OME et l’option de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure Information Protection n’ont pas été conçues pour répondre aux forces de l’ordre. OME, avec BYOK pour Azure Information Protection, a été conçu pour les clients axés sur la conformité. Microsoft prend au sérieux les demandes tierces pour les données client. En tant que fournisseur de services cloud, nous prônons toujours la confidentialité des données client. Dans le cas où nous obtenons une information, nous essayons toujours de rediriger le tiers vers le client pour obtenir les informations. (Lisez le blog de Brad Smith : Protection des données client contre les espions du [gouvernement).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) demandes de données tierces, voir Répondre aux demandes gouvernementales et d’application de la loi pour accéder aux données client sur le Centre de gestion de la confiance Microsoft. Voir également « Divulgation des données client » dans les [conditions d’utilisation des services en ligne (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
+    answer: "Non. OME et l’option de fournir et de contrôler vos propres clés de chiffrement, appelées BYOK, à partir d’Azure Information Protection n’ont pas été conçues pour répondre aux forces de l’ordre. OME, avec BYOK pour Azure Information Protection, a été conçu pour les organisations axées sur la conformité. Microsoft prend au sérieux les demandes tierces pour les données client. En tant que fournisseur de services cloud, nous prônons toujours la confidentialité de vos données. Dans le cas où nous obtenons une autorisation, nous essayons toujours de rediriger directement le tiers vers vous pour obtenir les informations. (Lisez le blog de Brad Smith : Protection des données client contre [les espions du gouvernement).](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) Nous publions régulièrement des informations détaillées sur la demande que nous recevons. Pour plus d’informations sur les [](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) demandes de données tierces, voir Répondre aux demandes gouvernementales et d’application de la loi pour accéder aux données client sur le Centre de gestion de la confiance Microsoft. Voir également « Divulgation des données client » dans les [conditions d’utilisation des services en ligne (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)\n  \n"
   - question: >
       En quoi cette fonctionnalité est-elle liée aux fonctionnalités chiffrement de messages Office 365 héritées (OME) et gestion des droits relatifs à l’information (IRM) ?
     answer: "Les nouvelles fonctionnalités pour chiffrement de messages Office 365 sont une évolution des solutions IRM et OME héritées existantes. Le tableau suivant fournit plus de détails.\n  \n**Comparaison des fonctionnalités OME, IRM et nouvelles fonctionnalités OME héritées**\n\n| Fonctionnalité | Versions précédentes d’OME | IRM | Nouvelles fonctionnalités OME |\n|:-----|:-----|:-----|:-----|\n|**Envoi d’un e-mail chiffré**|Uniquement par le biais Exchange règles de flux de messagerie|l’utilisateur final initié à partir Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou par le biais Exchange règles de flux de messagerie|l’utilisateur final initié à partir Outlook pour Windows, Outlook pour Mac ou Outlook sur le web ; ou via des règles de flux de messagerie|\n|**Gestion des droits**|-|Option Ne pas forwarder et modèles personnalisés|Option Ne pas forwarder, option chiffrer uniquement, modèles par défaut et personnalisés|\n|**Type de destinataire pris en charge**|Destinataires externes uniquement|Destinataires internes uniquement|Destinataires internes et externes|\n|**Expérience du destinataire**|Les destinataires externes ont reçu un message HTML qu’ils ont téléchargé et ouvert dans un navigateur ou une application mobile téléchargée.|Les destinataires internes n’ont reçu que des messages chiffrés Outlook pour Windows, Outlook pour Mac et Outlook sur le web.|Les destinataires internes et externes reçoivent des messages électroniques dans Outlook pour Windows, Outlook pour Mac, Outlook sur le web, Outlook pour Android et Outlook pour iOS, ou via un portail web, qu’ils soient ou non dans la même organisation ou dans n’importe quelle organisation. Le portail OME ne nécessite aucun téléchargement distinct.|\n|**Prise en charge de l’apportez votre propre clé**|Non disponible|Non disponible| BYOK pris en charge|\n"
@@ -51,7 +51,7 @@ sections:
   - question: >
       La version précédente d’OME sera-t-elle dépréciée ?
     answer: >
-      Vous pouvez toujours utiliser la version précédente d’OME, elle ne sera pas dépréciée pour le moment. Toutefois, nous encourageons vivement les organisations à utiliser la nouvelle solution OME améliorée. Les clients qui n’ont pas encore déployé OME ne peuvent pas configurer un nouveau déploiement de la version précédente d’OME.
+      Vous pouvez toujours utiliser la version précédente d’OME, elle ne sera pas dépréciée pour le moment. Toutefois, nous encourageons vivement les organisations à utiliser la nouvelle solution OME améliorée. Si vous n’avez pas encore déployé OME, vous ne pouvez pas configurer un nouveau déploiement de la version précédente d’OME.
   - question: >
       Mon organisation utilise la Gestion des droits Active Directory, puis-je utiliser cette fonctionnalité ?
     answer: "Non. Si vous utilisez Exchange Online services AD RMS (Active Directory Rights Management Service), vous ne pouvez pas activer ces nouvelles fonctionnalités immédiatement. Au lieu de cela, vous devez [d’abord migrer AD RMS vers Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)\n  \n"
@@ -135,7 +135,7 @@ sections:
   - question: >
       Puis-je utiliser le chiffrement des messages avec des fonctionnalités de conformité telles qu’eDiscovery ?
     answer: >
-      Oui. Tous les messages électroniques chiffrés sont découvrables Microsoft 365 fonctionnalités de conformité.
+      Oui. Microsoft 365 de conformité peuvent découvrir tous les messages électroniques chiffrés. Pour plus d’informations, voir les activités [eDiscovery](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) qui la prise en charge des éléments chiffrés.
   - question: >
       Puis-je supprimer le chiffrement du courrier électronique ?
     answer: >
@@ -151,7 +151,7 @@ sections:
   - question: >
       Puis-je ouvrir des messages chiffrés envoyés à une boîte aux lettres partagée ?
     answer: >
-      Oui. Les messages chiffrés sont pris en charge pour une boîte aux lettres partagée.
+      Oui. Vous pouvez ouvrir des messages chiffrés pour une boîte aux lettres partagée lorsque vous êtes connecté à un client Outlook pris en charge.
 
 
       - Les utilisateurs peuvent ouvrir des messages protégés dans une boîte aux lettres partagée dans laquelle la boîte aux lettres partagée a reçu un courrier protégé dans le cadre d’un groupe de distribution.
@@ -203,7 +203,7 @@ sections:
   - question: >
       Puis-je ouvrir des messages chiffrés envoyés à la boîte aux lettres d’un autre utilisateur avec Fullaccess ?
     answer: >
-      Les utilisateurs peuvent ouvrir des messages chiffrés tant qu’ils ont un accès direct et que le mappage automatique est allumé. L’accès n’est pas autorisé si l’accès est accordé via un groupe de sécurité à messagerie.
+      Non. Vous pouvez uniquement ouvrir des messages chiffrés dans une boîte aux lettres partagée.
   - question: >
       Que faire si je ne reçois pas le code de passe à temps partiel après l’avoir demandé ?
     answer: >-

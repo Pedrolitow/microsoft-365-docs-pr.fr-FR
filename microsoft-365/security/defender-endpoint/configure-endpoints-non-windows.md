@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 777f5f63c4739f277ec24f826bc8a61a226fb65f
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 4aff505f9f35b6144360eed5992ac36cf0847617
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339669"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454708"
 ---
 # <a name="onboard-non-windows-devices"></a>Intégrer des appareils non Windows
 
@@ -38,9 +38,9 @@ ms.locfileid: "53339669"
 
 >Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-Defender pour le point de terminaison offre une expérience d’opérations de sécurité centralisée pour les Windows et les plateformes non Windows réseau. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Microsoft 365 Defender et mieux protéger le réseau de votre organisation. 
+Defender pour le point de terminaison offre une expérience centralisée des opérations de sécurité pour Windows et les plateformes non Windows réseau. Vous pourrez voir les alertes de différents systèmes d’exploitation pris en charge dans Microsoft 365 Defender et mieux protéger le réseau de votre organisation. 
 
-Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d'informations, voir :
+Vous devez connaître les versions exactes de Linux et macOS compatibles avec Defender for Endpoint pour que l’intégration fonctionne. Pour plus d’informations, voir :
 - [Microsoft Defender pour point de terminaison sur la demande système Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
 - [Microsoft Defender pour point de terminaison sur macOS system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
 
@@ -48,9 +48,9 @@ Vous devez connaître les versions exactes de Linux et macOS compatibles avec De
 Pour intégrer des appareils non Windows, vous devez suivre les étapes suivantes :
 1. Sélectionnez votre méthode d’intégration préférée :
 
-   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour Endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - Pour les appareils macOS, vous pouvez choisir d’intégrer via Microsoft Defender pour endpoint ou via une solution tierce. Pour plus d’informations, [voir Microsoft Defender pour Endpoint sur Mac.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
-   - Pour les autres appareils non Windows choisissez Intégrer des appareils non Windows par le biais **d’une intégration tierce.**   
+   - Pour les autres appareils non Windows, choisissez Intégrer des appareils non Windows par le biais **d’une intégration tierce.**   
     1. Dans le volet de navigation, sélectionnez **Partenaires d’interopérabilité.**  >   Assurez-vous que la solution tierce est répertoriée.
     2. Dans **l’onglet Applications** partenaires, sélectionnez le partenaire qui prend en charge vos appareils Windows non connectés.
     3. Sélectionnez **Ouvrir la page du partenaire** pour ouvrir la page du partenaire. Suivez les instructions fournies sur la page.

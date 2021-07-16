@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Cisco Webex DataParser 17a-4 pour importer et archiver des données Cisco Webex dans Microsoft 365.
-ms.openlocfilehash: 055152f2d566f7cfc32dac132a70bbaf63ceb503
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: ca17ffb9313c6c59884d2c7a55d1bc81816acda7
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097040"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453956"
 ---
-# <a name="set-up-a-connector-to-archive-cisco-webex-data-preview"></a>Configurer un connecteur pour archiver des données Cisco Webex (aperçu)
+# <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>Configurer un connecteur pour archiver des données Cisco Webex
 
 Utilisez [Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/) de 17a-4 LLC pour importer et archiver des données à partir de la plateforme Cisco Webex vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur Cisco Webex configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Cisco Webex DataParser convertit les données Cisco Webex au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
-Une fois les données Cisco Webex stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur Cisco Webex pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois les données Cisco Webex stockées dans les boîtes aux lettres utilisateur, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur Cisco Webex pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-cisco-webex-data"></a>Vue d’ensemble de l’archivage des données Webex Cisco
 
@@ -65,7 +65,7 @@ Travaillez avec la prise en charge 17a-4 pour configurer le connecteur Cisco Web
 
 ## <a name="step-3-map-users"></a>Étape 3 : Ma cartographier les utilisateurs
 
-Le connecteur Cisco Webex DataParser masique automatiquement les utilisateurs à leurs adresses Microsoft 365 courrier avant d’importer des données dans Microsoft 365.
+Le connecteur Cisco Webex DataParser masage automatiquement les utilisateurs à leurs adresses de messagerie Microsoft 365 avant d’importer des données dans Microsoft 365.
 
 ## <a name="step-4-monitor-the-cisco-webex-dataparser-connector"></a>Étape 4 : Surveiller le connecteur Cisco Webex DataParser
 

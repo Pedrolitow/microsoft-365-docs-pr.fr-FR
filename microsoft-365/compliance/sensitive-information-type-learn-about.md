@@ -15,13 +15,13 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-description: ''
-ms.openlocfilehash: 3f64b981b60db9f9089af0555e4bf734864913b9
-ms.sourcegitcommit: 17d82e5617f0466eb825e15ab88594afcdaf4437
+description: Cet article donne une vue d’ensemble des types d’informations sensibles et de la façon dont ils détectent les informations sensibles telles que la sécurité sociale, la carte bancaire ou les numéros de compte bancaire pour identifier les éléments sensibles
+ms.openlocfilehash: dee4ec59ce5fe6140c4aef33d147e89e11facd59
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "53300380"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453620"
 ---
 # <a name="learn-about-sensitive-information-types"></a>En savoir plus sur les types d’informations sensibles
 
@@ -35,12 +35,13 @@ Les types d’informations sensibles sont des classifieurs basés sur des modèl
 
 ## <a name="sensitive-information-types-are-used-in"></a>Les types d’informations sensibles sont utilisés dans
 
-- [Stratégies de protection contre la perte de données](dlp-learn-about-dlp.md) 
+- [Stratégies de protection contre la perte de données](dlp-learn-about-dlp.md)
 - [Étiquettes de confidentialité](sensitivity-labels.md)
 - [Étiquettes de rétention](retention.md)
 - [Gestion des risques internes](insider-risk-management.md)
 - [Conformité des communications](communication-compliance.md)
 - [Stratégies de étiquetage automatique](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Gestion de la confidentialité (aperçu)](privacy-management.md)
 
 ## <a name="fundamental-parts-of-a-sensitive-information-type"></a>Parties fondamentales d’un type d’informations sensibles
 
@@ -50,7 +51,7 @@ Chaque entité de type d’informations sensibles est définie par les champs ci
 - description : décrit ce que le type d’informations sensibles recherche
 - modèle : un modèle définit ce qu’un type d’informations sensibles détecte. Il se compose des composants suivants :
     - Élément principal : élément principal que le type d’informations sensibles recherche. Il peut s’agit **d’une expression** régulière avec ou sans validation de la liste de contrôle, d’une liste de mots **clés,** d’un dictionnaire de mots clés **ou** d’une **fonction.**
-    - Élément de prise en charge : éléments qui agissent en tant que preuves justificatives qui contribuent à augmenter la confiance de la correspondance. Par exemple, le mot clé « SSN » à proximité d’un numéro SSN. Il peut s’agit d’une expression régulière avec ou sans validation de la liste de contrôle, d’une liste de mots clés, d’un dictionnaire de mots clés.
+    - Élément de prise en charge : éléments qui agissent comme des preuves qui contribuent à augmenter la confiance de la correspondance. Par exemple, le mot clé « SSN » à proximité d’un numéro SSN. Il peut s’agit d’une expression régulière avec ou sans validation de la liste de contrôle, d’une liste de mots clés, d’un dictionnaire de mots clés.
     - Niveau de confiance : les niveaux de confiance (élevé, moyen, faible) reflètent la quantité de preuves justificatives détectées avec l’élément principal. Plus la preuve justificative qu’un élément contient est importante, plus la confiance qu’un élément correspond contient les informations sensibles que vous recherchez.
     - Proximité : nombre de caractères entre l’élément principal et l’élément de prise en charge
 
@@ -99,7 +100,7 @@ Une stratégie DLP a un niveau de confiance moyen qu’elle a détecté ce type 
 </Entity>
 ```
 
-### <a name="keywords"></a>Mots clés
+### <a name="keywords"></a>Mots-clés
 
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
@@ -158,7 +159,7 @@ Pour créer des types d’informations sensibles personnalisés dans le Centre d
 > 
 > Par exemple, pour détecter un mot clé tel que « 机密的document », utilisez deux variantes du mot clé ; l’un avec un espace entre le texte japonais et anglais et l’autre sans espace entre le texte japonais et l’anglais. Par conséquent, les mots clés à ajouter dans le SIT doivent être « 机密的 document » et « 机密的document ». De la même façon, pour détecter une expression « 東京オリンピック2020 », deux variantes doivent être utilisées : « 東京オリンピック 2020 » et « 東京オリンピック2020 ».
 > 
-> Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple de regex pour référence :
+> Lorsque vous créez une regex en utilisant un trait d'union à double octet ou un point à double octet, assurez-vous d'échapper les deux caractères comme on le ferait pour un trait d'union ou un point dans une regex. Voici un exemple regex pour référence :
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > Nous vous recommandons d’utiliser une correspondance de chaîne au lieu d’une correspondance de mot dans une liste de mots clés.

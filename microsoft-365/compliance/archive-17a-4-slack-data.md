@@ -1,5 +1,5 @@
 ---
-title: Configurer un connecteur pour archiver les données Slack dans Microsoft 365
+title: Configurer un connecteur pour archiver des données Slack dans Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur Slack DataParser 17a-4 pour importer et archiver des données Slack dans Microsoft 365.
-ms.openlocfilehash: 0eb9564ac5a6e8a3fa76cf1a336f266a456b272a
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 66c1db3f37512ec6988fc9385f50b2df1dc6d8ed
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097035"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454408"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>Configurer un connecteur pour archiver les données Slack (aperçu)
+# <a name="set-up-a-connector-to-archive-slack-data"></a>Configurer un connecteur pour archiver les données Slack
 
 Utilisez [DataParser de 17a-4 LLC](https://www.17a-4.com/slack-dataparser/) pour importer et archiver des données à partir de la plateforme Slack vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur Slack configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Slack DataParser convertit les données Slack au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
-Une fois les données Slack stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention et la conformité des communications. L’utilisation d’un connecteur Slack pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
+Une fois que les données Slack sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Slack pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à respecter les stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-slack-data"></a>Vue d’ensemble de l’archivage des données Slack
 

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur LivePerson Conversational Cloud DataParser 17a-4 pour importer et archiver des données LivePerson Conversational Cloud dans Microsoft 365.
-ms.openlocfilehash: 3a4156d817e1b7471f769a2365c5af9d58ade991
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 70b8e8bd1c8c411894a90e0f919581b3faf58cae
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097126"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454456"
 ---
-# <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data-preview"></a>Configurer un connecteur pour archiver les données LivePerson Conversational Cloud (aperçu)
+# <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>Configurer un connecteur pour archiver les données LivePerson Conversational Cloud
 
 Utilisez [LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) de 17a-4 LLC pour importer et archiver des données de LivePerson Conversational Cloud vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur LivePerson Conversational Cloud configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur LivePerson Conversational Cloud DataParser convertit les données au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
@@ -73,7 +73,7 @@ Après avoir créé un connecteur LivePerson Conversational Cloud DataParser, vo
 
 1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
 
-2. Cliquez sur l’onglet **Connecteurs,** puis sélectionnez le connecteur LivePerson Conversational Cloud DataParser que vous avez créé pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
+2. Cliquez sur **l’onglet Connecteurs,** puis sélectionnez le connecteur LivePerson Conversational Cloud DataParser que vous avez créé pour afficher la page de présentation, qui contient les propriétés et les informations sur le connecteur.
 
 3. Sous **État du connecteur avec source,** cliquez sur le lien Télécharger le journal pour ouvrir (ou enregistrer) le journal d’état du connecteur.  Ce journal contient des données qui ont été importées dans le cloud Microsoft.
 

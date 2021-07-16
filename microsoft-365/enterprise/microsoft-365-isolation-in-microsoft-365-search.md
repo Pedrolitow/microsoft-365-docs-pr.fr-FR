@@ -17,11 +17,11 @@ f1.keywords:
 description: Dans cet article, trouvez une explication du fonctionnement de l’isolation des clients pour séparer les données client dans Microsoft 365 recherche.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 3416afdeceaa7000b516ec89b4a2a1e59d8708d0
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332399"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464083"
 ---
 # <a name="tenant-isolation-in-microsoft-365-search"></a>Isolation du client dans Microsoft 365 Search
 
@@ -30,7 +30,7 @@ SharePoint La recherche en ligne utilise un modèle de séparation des clients q
 - Renvoi des résultats de requête qui contiennent des documents provenant d’autres locataires
 - Exposition d’informations suffisantes dans les résultats de requête qu’un utilisateur compétent peut déduire des informations sur d’autres locataires
 - Affichage du schéma ou des paramètres d’un autre client
-- La combinaison d’informations de traitement de l’analyse entre les clients ou le magasin entraîne la mauvaise relation client
+- La combinaison des informations de traitement de l’analyse entre les clients ou le magasin entraîne la mauvaise relation client
 - Utilisation d’entrées de dictionnaire d’un autre client
 
 Pour chaque type de données client, nous utilisons une ou plusieurs couches de protection dans le code pour éviter toute fuite accidentelle d’informations. Les données les plus critiques disposent du plus grand nombre de couches de protection pour s’assurer qu’un seul défaut ne se produit pas de fuite d’informations réelle ou perçue.
@@ -41,7 +41,7 @@ L’index de recherche est stocké sur disque sur les serveurs hébergeant les c
 
 - Filtrage des ID de client
 - Préfixe de terme d’ID de client
-- Vérifications ACL
+- Vérifications de la contrôle d’accès
 
 Les trois mécanismes doivent échouer pour que la recherche retourne des documents au mauvais client.
 
@@ -59,6 +59,6 @@ La recherche contrôle l’accès aux documents via des ACA enregistrées dans l
 
 Par exemple, une requête telle que « <*guid*>. *foo AND tenantID*:<*guid*> » devient : « <*guid*>. *foo AND tenantID*:<*guid* >  *AND* (*docACL:* < *ace1* >  *OR docACL*:<*ace2* >  *OR docACL*:<*ace3* >  *...*) »
 
-Étant donné que les identificateurs d’utilisateur et de groupe et donc les entrées de contrôle d’accès sont uniques, cela offre un niveau de sécurité supplémentaire entre les clients pour les documents qui ne sont visibles que par certains utilisateurs. Il en va de même pour l’ace spéciale « Tout le monde sauf les utilisateurs externes » qui accorde l’accès aux utilisateurs réguliers dans le client. Toutefois, étant donné que les ace pour « Tout le monde » sont identiques pour tous les locataires, la séparation des locataires pour les documents publics dépend du filtrage des ID de client. Les aces de refus sont également pris en charge. L’augmentation de requête ajoute une clause qui supprime un document du résultat lorsqu’il existe une correspondance avec une ace de refus.
+Étant donné que les identificateurs d’utilisateurs et de groupes et donc les entrées de contrôle d’accès sont uniques, cela offre un niveau de sécurité supplémentaire entre les clients pour les documents qui ne sont visibles que par certains utilisateurs. Il en va de même pour l’ace spéciale « Tout le monde sauf les utilisateurs externes » qui accorde l’accès aux utilisateurs réguliers dans le client. Toutefois, étant donné que les ace pour « Tout le monde » sont identiques pour tous les locataires, la séparation des locataires pour les documents publics dépend du filtrage des ID de client. Les aces de refus sont également pris en charge. L’augmentation de requête ajoute une clause qui supprime un document du résultat lorsqu’il existe une correspondance avec une ace de refus.
 
-Dans Exchange Online recherche, l’index est partitionn sur l’ID de boîte aux lettres des boîtes aux lettres d’un utilisateur individuel au lieu de l’ID de client (ID d’abonnement) comme dans SharePoint Online. Le mécanisme de partitionnement est identique à SharePoint Online, mais il n’existe pas de filtrage ACL.
+Dans Exchange Online recherche, l’index est partitioné sur l’ID de boîte aux lettres des boîtes aux lettres d’un utilisateur individuel au lieu de l’ID de locataire (ID d’abonnement) comme dans SharePoint Online. Le mécanisme de partitionnement est identique à SharePoint Online, mais il n’existe aucun filtrage ACL.

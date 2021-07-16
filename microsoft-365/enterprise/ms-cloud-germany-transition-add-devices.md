@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Résumé : Informations supplémentaires sur les appareils sur les services lors du passage de Microsoft Cloud Germany (Microsoft Cloud Deutschland) à Office 365 services dans la nouvelle région de centres de données allemands.'
-ms.openlocfilehash: 684af01b2d90f44b2cda1cf050d1e4db70f92915
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 1eb7b18360cefeeb2d5770c3d77e564d5a757a5e
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289438"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453566"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Informations supplémentaires sur l’appareil pour la migration à partir de Microsoft Cloud Deutschland
 
@@ -63,7 +63,7 @@ Si l’utilisateur est un administrateur sur l’appareil Windows 10, il peut d�
 
 Si l’utilisateur n’est pas administrateur de l’appareil, un administrateur général Azure AD peut créer le compte d’administrateur local sur l’appareil en suivant ce chemin de configuration et l’un des deux :
 
-*Paramètres > comptes > autres comptes > informations d’identification > ajouter un utilisateur sans compte Microsoft*
+*Paramètres > comptes > autres comptes > informations d’identification inconnues > ajouter un utilisateur sans compte Microsoft*
 
 Pour re-rejoindre, les informations d’identification de n’importe quel compte de travail de votre organisation peuvent être utilisées dans cette étape.
 
@@ -95,7 +95,7 @@ Si un Windows 10 est inscrit à Azure AD, il doit être déconnecté d’Azure A
 ### <a name="step-3-connect-the-device-to-azure-ad"></a>Étape 3 : Connecter l’appareil vers Azure AD
 
 1. Cliquez sur **Connecter**.
-2. Entrez l’adresse e-mail de votre compte de travail, puis cliquez sur **Suivant**.
+2. Entrez l’adresse e-mail de votre compte de travail, puis cliquez sur **Suivant.**
 3. Entrez le mot de passe de votre compte de travail, puis cliquez **sur Se connectez.**
 4. Confirmez en cliquant sur **Terminé**. Votre compte de travail est de nouveau répertorié.
 
@@ -109,9 +109,9 @@ Pour Android, les utilisateurs doivent désins inscrire et réenregistrer leurs 
 
 - Les utilisateurs peuvent également se désins inscrire et s’inscrire à la nouvelle inscription en supprimant le compte de la page des paramètres du compte, puis en ajoutant à nouveaux le compte de travail.
 
-Pour désins inscrire et réenregistrer l’appareil sur Android à l’aide Microsoft Authenticator application :
+Pour désins inscrire et réenregistrer l’appareil sur Android à l’aide de l Microsoft Authenticator appel :
 
-1. Ouvrez l Microsoft Authenticator appappl; et Paramètres **.**
+1. Ouvrez l Microsoft Authenticator appl; et Paramètres **.**
 2. Sélectionnez **Inscription de l’appareil.**
 3. Désinsinser l’appareil en sélectionnant **Désinsinsion**.
 4. Pour **l’inscription de** l’appareil, ré-inscrivez l’appareil en tapant votre adresse e-mail, puis sélectionnez **Enregistrer.**
@@ -127,7 +127,7 @@ Pour désins inscrire et réenregistrer l’appareil sur Android, Portail d’en
 
 1. Lancez Portail d’entreprise et allez sur **l’onglet** Appareils.
 2. Sélectionnez l’appareil pour voir les détails de l’appareil.
-3. Dans le menu des points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
+3. Dans le menu points de sélection (trois points), sélectionnez Supprimer l’appareil **et** terminez la suppression en confirmant dans la boîte de dialogue.
 4. Vous devez maintenant être déconnecté de l’application Portail d’entreprise’application. Sélectionnez **Se connectez** pour ré-inscrire l’appareil.
 
 Pour plus d’informations sur les actions requises pendant la phase de migration de cette charge de travail, ou sur l’impact sur l’administration ou l’utilisation, examinez les informations sur Azure Active Directory (Azure AD) dans Des informations [Azure AD](ms-cloud-germany-transition-azure-ad.md)supplémentaires pour la migration à partir de Microsoft Cloud Deutschland .
@@ -153,7 +153,7 @@ Sur les appareils iOS, un utilisateur doit supprimer manuellement tous les compt
 
 Les utilisateurs peuvent se rendre sur des applications individuelles telles que Outlook, Teams et OneDrive, et supprimer des comptes de ces applications.
 
-## <a name="frequently-asked-questions"></a>Foire aux questions
+## <a name="frequently-asked-questions"></a>Questions fréquemment posées
 
 **Comment savoir si mon organisation est affectée ?**
 
@@ -167,6 +167,10 @@ Pour réussir, vous devez uniquement désins inscrire et réenregistrer vos appa
 
 Pour vérifier si vos appareils sont enregistrés dans le cloud public, vous devez exporter et télécharger la liste des appareils à partir du portail Azure AD vers une feuille de calcul Excel. Ensuite, filtrez les appareils inscrits (à l’aide de la colonne _registeredTime)_ après la date à laquelle votre organisation a passé la phase 9 du [processus de migration.](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization)
 
+**Dois-je toujours ajouter le nom DNS comme indiqué dans Créer des enregistrements DNS pour Microsoft à l’aide [Windows DNS ?](/microsoft-365/admin/dns/create-dns-records-using-windows-based-dns?view=o365-worldwide#add-two-cname-records-for-mobile-device-management-mdm-for-microsoft)**
+
+Cette entrée DNS n’est plus nécessaire pour réen inscrire à nouveau votre appareil. 
+
 ## <a name="additional-considerations"></a>Considérations supplémentaires
 
 > [!IMPORTANT]
@@ -176,7 +180,7 @@ Pour vérifier si vos appareils sont enregistrés dans le cloud public, vous dev
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="more-information"></a>Plus d’informations
+## <a name="more-information"></a>Informations supplémentaires
 
 Mise en place :
 

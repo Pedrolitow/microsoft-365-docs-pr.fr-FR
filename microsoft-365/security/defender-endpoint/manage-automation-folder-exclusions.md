@@ -16,23 +16,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 37a251acd3b7631cffffaf2eb76bf0f2b4954ee6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 05c103cba051c7d5e7f45e5dd3feb288013ee367
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185836"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454816"
 ---
 # <a name="manage-automation-folder-exclusions"></a>Gérer les exclusions du dossier d’automatisation 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 Les exclusions de dossiers Automation vous permettent de spécifier les dossiers que l’examen automatisé ignorera. 
 
@@ -59,7 +59,7 @@ Vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un r
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>Ajouter une exclusion de dossier d’automatisation
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **exclusions de dossier Automation.**  
+1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.**  
 
 2. Cliquez **sur Exclusion de nouveau dossier.**  
 
@@ -69,7 +69,6 @@ Vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un r
     - Extensions
     - Noms de fichiers
     - Description
-    
 
 4. Cliquez sur **Enregistrer**.
 
@@ -77,14 +76,14 @@ Vous pouvez spécifier les noms de fichiers que vous souhaitez exclure dans un r
 > Les commandes Live Response pour collecter ou examiner les fichiers exclus échouent avec l’erreur : « Le fichier est exclu ». En outre, les examens automatisés ignorent les éléments exclus.
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Modifier une exclusion de dossier d’automatisation 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **exclusions de dossier Automation.** 
+1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.** 
 
 2. Cliquez **sur Modifier** sur l’exclusion de dossier.  
 
 3. Mettez à jour les détails de la règle et cliquez sur **Enregistrer.**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Supprimer une exclusion de dossier d’automatisation 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **exclusions de dossier Automation.**  
+1. Dans le volet de navigation, sélectionnez **Paramètres** des exclusions de  >  **dossiers Endpoints**  >  **Rules**  >  **Automation.**  
 2. Cliquez sur **Supprimer l’exclusion.** 
 
 

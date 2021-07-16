@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Que ce soit l’ajout de nouvelles solutions au centre de conformité, la mise à jour des fonctionnalités existantes en fonction de vos commentaires ou le déploiement d’une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
+description: Que vous ajoutiez de nouvelles solutions au centre de conformité, mettiez à jour les fonctionnalités existantes en fonction de vos commentaires ou mettiez en place une documentation actualisée et mise à jour, Microsoft 365 vous permet de rester au-dessus du paysage de conformité en constante évolution. Découvrez ce que nous avons fait ce mois-ci.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4e298a9dc8b23e3977db51d5a3b96f7b0723a0d1
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: acbad7a1c5fa541ee83da668768cc42af7a5afda
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394940"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464008"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Nouveautés dans la conformité Microsoft 365
 
@@ -45,7 +45,11 @@ Que vous ajoutiez de nouvelles solutions au [Centre de conformité Microsoft 365
 
 ### <a name="customer-key"></a>Clé client
 
-- [Chiffrement de service avec clé](customer-key-overview.md) client (les DEP de niveau client de clé client chiffrent désormais la configuration des étiquettes de Protection des données Microsoft.)
+- [Chiffrement de service avec clé](customer-key-overview.md) client (les DEP de niveau client chiffrent désormais la configuration des étiquettes de Protection des données Microsoft.)
+
+### <a name="data-connectors"></a>Connecteurs de données
+
+- Nous avons publié 17 nouveaux connecteurs de données en partenariat avec [17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) et un nouveau connecteur en partenariat avec [CellTrust](archiving-third-party-data.md#celltrust-data-connectors). Nous avons également publié des connecteurs de données supplémentaires en partenariat avec [Veritas](archiving-third-party-data.md#veritas-data-connectors) et [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors). À ce jour, 65 connecteurs de données sont disponibles pour importer et archiver des données tierces vers des Microsoft 365.
 
 ### <a name="ediscovery"></a>eDiscovery
 
@@ -57,7 +61,7 @@ Que vous ajoutiez de nouvelles solutions au [Centre de conformité Microsoft 365
 
 - L’Assistant Stratégie d’étiquette de confidentialité prend désormais en charge [Outlook options](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) spécifiques pour l’étiquette par défaut et l’étiquetage obligatoire en tant que configuration plus facile que les paramètres avancés (toujours pris en charge) de PowerShell.
 - La prise [en charge des marquages dynamiques avec des variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) est désormais en cours de déploiement pour Word, Excel et PowerPoint sur le web
-- Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, pour Exchange d’étiquetage automatique, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre de ; l’expéditeur est.
+- Pour [les stratégies d’étiquetage](apply-sensitivity-label-automatically.md) Exchange, si l’étiquette est configurée pour le chiffrement, ce chiffrement n’est pas appliqué. En outre, Exchange stratégies d’étiquetage automatique, vous pouvez désormais configurer des exceptions et les nouvelles conditions suivantes : l’objet, l’adresse du destinataire ou l’adresse de l’expéditeur correspond aux modèles ; l’adresse du destinataire contient des mots ; le domaine de l’expéditeur est, le destinataire est membre de ; l’expéditeur est.
 - Lorsque vous utilisez des étiquettes de niveau de sensibilité avec des équipes, des groupes et des sites, vous pouvez utiliser Set-SPOTenant avec le paramètre BlockSendLabelMismatchEmail pour empêcher le courrier électronique généré automatiquement lorsque l’événement d’audit a détecté une inaltérable sensibilité du **document.**  Pour plus d’informations, voir [Auditer les activités des étiquettes de sensibilité.](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities )
 - Le paramètre [de contexte d’authentification](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) est désormais entièrement déployé en prévisualisation pour les étiquettes de sensibilité. En outre, cette configuration est désormais prise en charge par Microsoft Teams.
 - Les fichiers étiquetés et chiffrés par un nom principal de service (tel que Microsoft Cloud App Security), puis téléchargés sur SharePoint et OneDrive peuvent désormais être ouverts en Office sur le Web lorsque vous avez activé les étiquettes de niveau de sensibilité pour les fichiers Office dans [SharePoint et OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -81,14 +85,14 @@ Que vous ajoutiez de nouvelles solutions au [Centre de conformité Microsoft 365
 ### <a name="sensitivity-labels"></a>Étiquettes de confidentialité
 
 - En prévisualisation,  un nouveau paramètre pour le contexte d’authentification est désormais disponible lorsque vous configurez une étiquette de niveau de sensibilité pour les [groupes et les sites.](sensitivity-labels-teams-groups-sites.md) Cette option fonctionne conjointement avec les stratégies d’accès conditionnel Azure AD pour appliquer des conditions plus strictes lorsque les utilisateurs accèdent aux sites SharePoint qui ont l’étiquette appliquée. Veillez à lire les [dépendances et limitations](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) avant de configurer ce paramètre.
-- [](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) Les stratégies d’étiquetage automatique qui sont configurées uniquement pour Exchange désormais la prise en charge des étiquettes de confidentialité qui appliquent le chiffrement avec Autoriser les utilisateurs à attribuer des **autorisations** pour les options Ne pas Encrypt-Only pas de données.
+- [](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) Les stratégies d’étiquetage automatique qui sont configurées uniquement pour Exchange désormais la prise en charge des étiquettes de confidentialité qui appliquent le chiffrement avec Autoriser les utilisateurs à attribuer des **autorisations** pour les options Ne pas Encrypt-Only de données.
 - [L’étiquetage obligatoire est](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) désormais généralement disponible pour toutes les applications Office, sur toutes les plateformes.
 
 ## <a name="april-2021"></a>Avril 2021
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- [Limites dans Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Les organisations peuvent désormais exporter jusqu’à 5 millions d’éléments ou 500 Mo, selon la taille la plus petite, dans une seule exportation d’éléments d’un groupe de révision.
+- [Limites dans Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Les organisations peuvent désormais exporter jusqu’à 5 millions d’éléments ou 500 Mo, selon la taille la plus petite, dans une seule exportation d’éléments à partir d’un ensemble de révision.
 
 ### <a name="data-classification"></a>Classification des données
 
@@ -118,7 +122,7 @@ Outlook et mises à jour :
 - [L’étiquetage obligatoire](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) est en cours de déploiement sur les plateformes restantes.
 - [Les marquages dynamiques avec toutes les variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) sont pris en charge dans tous Outlook clients.
 
-## <a name="march-2021"></a>9 mars 2021
+## <a name="march-2021"></a>Mars 2021
 
 Voici quelques-unes des modifications apportées aux solutions Microsoft 365 conformité et au contenu pour le mois de mars.
 
@@ -178,7 +182,7 @@ Les rubriques suivantes ont été mises à jour ou ajoutées pour prendre en cha
 ### <a name="records-management"></a>Gestion des enregistrements
 
 - **Améliorations apportées au plan de fichiers.** Une mise à [jour du plan](file-plan-manager.md) de fichiers supprime ou améliore les restrictions de longueur précédentes pour l’importation.
-- **Supprimer des étiquettes de rétention pour les enregistrements.** Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme des enregistrements.
+- **Supprimer des étiquettes de rétention pour les enregistrements**. Une version d’aperçu prend en charge la possibilité de [supprimer les étiquettes de](create-apply-retention-labels.md#deleting-retention-labels) rétention qui marquent les éléments comme enregistrements.
 
 ### <a name="sensitive-information-types"></a>Types d’informations sensibles
 

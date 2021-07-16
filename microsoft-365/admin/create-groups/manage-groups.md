@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: Apprenez à gérer les Microsoft 365, notamment en ajoutant supprimer des membres du groupe, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
-ms.openlocfilehash: 3ba3dd36ed3929e956ce6359e678d6b684f64bb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Apprenez à gérer les Microsoft 365, notamment en ajoutant des membres de groupe supprimés, en éditant l’adresse e-mail, le nom du groupe ou la description, et en personnalisant le fonctionnement du groupe.
+ms.openlocfilehash: 2ec8198b7e28b47bcbbf40818fbe624b2744f0ee
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908709"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454576"
 ---
-# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le centre d’administration Microsoft 365 de gestion
+# <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Gérer un groupe dans le Centre d’administration Microsoft 365
 
 Après avoir créé [un groupe Microsoft 365 et](create-groups.md) ajouté des membres du groupe, vous pouvez configurer votre groupe. Vous pouvez modifier le nom ou la description du groupe, gérer les propriétaires ou les membres, et spécifier si les expéditeurs externes peuvent envoyer des messages électroniques au groupe et s’il faut envoyer des copies des conversations de groupe aux membres.
 
-Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com) .
+Go to the Centre d’administration Microsoft 365 at [https://admin.microsoft.com](https://admin.microsoft.com) .
 
 ## <a name="edit-the-group-name-or-description"></a>Modifier le nom ou la description du groupe
 
@@ -52,9 +52,9 @@ Go to the Microsoft 365 admin center at [https://admin.microsoft.com](https://ad
 
 5. Cliquez sur **Fermer**.
 
-## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Envoyer des copies des conversations aux boîtes de réception des membres du groupe
+## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>Envoyer des copies des conversations dans les boîtes de réception des membres du groupe
   
-Lorsque vous utilisez le Centre d’administration pour créer un groupe, par défaut, les utilisateurs n’obtiennent pas de copies des messages électroniques de groupe et des invitations aux réunions envoyées à leur boîte de réception. Ils doivent aller au groupe pour voir les conversations et les réunions. Vous pouvez modifier ce paramètre dans le Centre d’administration.
+Lorsque vous utilisez le Centre d’administration pour créer un groupe, par défaut, les utilisateurs n’obtiennent pas de copies des messages électroniques de groupe envoyés à leur boîte de réception, même si les utilisateurs obtiennent des copies des invitations aux réunions de groupe envoyées à leur boîte de réception. Ils doivent se rendre dans le groupe pour voir les conversations. Vous pouvez modifier ce paramètre dans le Centre d’administration.
 
 Lorsque vous activer ce paramètre, les membres du groupe obtiennent une copie des e-mails de groupe et des invitations aux réunions envoyés à leur boîte Outlook réception. Ces derniers peuvent le lire et supprimer cette copie du courrier sans affecter d'autres personnes. Une copie du courrier est conservée dans la boîte aux lettres du groupe.
 
@@ -68,7 +68,7 @@ Les membres du groupe peuvent refuser de recevoir ces e-mails en choisissant d�
 
 4. Sélectionnez **Enregistrer**.
 
-## <a name="let-people-outside-the-organization-email-the-group"></a>Laisser les personnes extérieures à l’organisation envoyer un e-mail au groupe
+## <a name="let-people-outside-the-organization-email-the-group"></a>Laisser des personnes extérieures à l’organisation envoyer un e-mail au groupe
 
 Cette option est idéale si vous souhaitez avoir une adresse de messagerie d’entreprise telle que info@contoso.com.
  
@@ -103,7 +103,7 @@ Pour vérifier que le groupe a été supprimé définitivement, réexécutez l'a
   
 ## <a name="related-articles"></a>Articles connexes
 
-[Créer un groupe Microsoft 365 de groupe](create-groups.md)
+[Créer un groupe Microsoft 365 ](create-groups.md)
 
 [Gérer l’accès de groupe aux groupes Microsoft 365](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

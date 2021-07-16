@@ -555,6 +555,44 @@
           href: record-versioning.md
         - name: Ressources pour les exigences réglementaires
           href: retention-regulatory-requirements.md
+- name: Gestion de la gouvernance des applications
+  items:
+    - name: Protéger et gouverner vos applications
+      href: app-governance-manage-app-protection-governance.md
+    - name: Démarrer avec la gouvernance des applications
+      href: app-governance-get-started.md
+    - name: Envoyer des commentaires sur la gouvernance des applications
+      href: app-governance-feedback.md
+    - name: Obtenir une visibilité et des informations
+      items:
+        - name: En savoir plus sur la visibilité et les informations
+          href: app-governance-visibility-insights-overview.md
+        - name: Prise en main
+          href: app-governance-visibility-insights-get-started.md
+        - name: Afficher vos applications
+          href: app-governance-visibility-insights-view-apps.md
+        - name: Déterminer la posture de conformité
+          href: app-governance-visibility-insights-compliance-posture.md
+    - name: Implémenter des stratégies d’application
+      items:
+        - name: Découvrir les stratégies d’application
+          href: app-governance-app-policies-overview.md
+        - name: Prise en main
+          href: app-governance-app-policies-get-started.md
+        - name: Créer des stratégies d’application
+          href: app-governance-app-policies-create.md
+        - name: Gérer des stratégies d’application
+          href: app-governance-app-policies-manage.md
+    - name: Détecter et corriger les menaces liées aux applications
+      items:
+        - name: En savoir plus sur la détection et la correction
+          href: app-governance-detect-remediate-overview.md
+        - name: Prise en main
+          href: app-governance-detect-remediate-get-started.md
+        - name: Examiner les alertes de détection d’anomalie
+          href: app-governance-anomaly-detection-alerts.md
+        - name: Corriger les menaces liées aux applications
+          href: app-governance-detect-remediate-detect-threats.md
 - name: Gestion de l’eDiscovery
   items:
     - name: Solutions eDiscovery Microsoft 365

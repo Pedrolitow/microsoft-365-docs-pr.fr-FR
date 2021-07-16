@@ -1,7 +1,7 @@
 ---
 title: Créer et gérer des groupes d’appareils dans Microsoft Defender pour le point de terminaison
-description: Créer des groupes d’appareils et définir des niveaux de correction automatisés sur ces derniers en confirmant les règles qui s’appliquent au groupe
-keywords: groupes d’appareils, groupes, correction, niveau, règles, groupe aad, rôle, attribuer, classement
+description: Créer des groupes d’appareils et définir des niveaux de correction automatisés en confirmant les règles qui s’appliquent au groupe
+keywords: groupes d’appareils, groupes, correction, niveau, règles, groupe aad, rôle, attribuer, rang
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d4f62acde4e7d790c7a7c8635f51c99f0823687d
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 49bd90d8a082f55622e54976cc8fc78229d8c646
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842769"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453536"
 ---
 # <a name="create-and-manage-device-groups"></a>Créer et gérer des groupes d’appareils
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Azure Active Directory
 - Office 365
 
@@ -41,7 +41,7 @@ Dans Microsoft Defender for Endpoint, vous pouvez créer des groupes d’apparei
 - Limiter l’accès aux alertes et données associées à des groupes d’utilisateurs Azure AD spécifiques avec [des rôles RBAC attribués](rbac.md) 
 - Configurer différents paramètres de correction automatique pour différents ensembles d’appareils
 - Affecter des niveaux de correction spécifiques à appliquer lors d’examens automatisés
-- Dans un examen, filtrez la liste **Appareils** sur des groupes d’appareils spécifiques à l’aide du **filtre** Groupe.
+- Dans un examen, filtrez la liste **Appareils** sur des groupes d’appareils spécifiques à l’aide du **filtre** de groupe.
 
 Vous pouvez créer des groupes d’appareils dans le contexte de l’accès basé sur les rôles (RBAC) pour contrôler qui peut prendre des mesures spécifiques ou voir les informations en attribuant le ou les groupes d’appareils à un groupe d’utilisateurs. Pour plus d’informations, voir [Gérer l’accès au portail à l’aide du contrôle d’accès basé sur les rôles.](rbac.md)
 
@@ -50,7 +50,7 @@ Vous pouvez créer des groupes d’appareils dans le contexte de l’accès bas�
 
 Dans le cadre du processus de création d’un groupe d’appareils, vous devez :
 - Définissez le niveau de correction automatisé pour ce groupe. Pour plus d’informations sur les niveaux de correction, voir [Utiliser l’examen automatisé pour examiner et corriger les menaces.](automated-investigations.md)
-- Spécifiez la règle correspondante qui détermine quel groupe d’appareils appartient au groupe en fonction du nom de l’appareil, du domaine, des balises et de la plateforme du système d’exploitation. Si un appareil est également en correspondance avec d’autres groupes, il est ajouté uniquement au groupe d’appareils le plus élevé.
+- Spécifiez la règle correspondante qui détermine quel groupe d’appareils appartient au groupe en fonction du nom de l’appareil, du domaine, des balises et de la plateforme du système d’exploitation. Si un appareil est également en correspondance avec d’autres groupes, il est ajouté uniquement au groupe d’appareils le mieux classé.
 - Sélectionnez le groupe d’utilisateurs Azure AD qui doit avoir accès au groupe d’appareils.
 - Classer le groupe d’appareils par rapport aux autres groupes après sa création.
 
@@ -59,7 +59,7 @@ Dans le cadre du processus de création d’un groupe d’appareils, vous devez 
 
 ## <a name="create-a-device-group"></a>Créer un groupe d’appareils
 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **groupes d’appareils.**
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **groupes d’appareils**  >  **Endpoints Permissions.**  >  
 
 2. Cliquez **sur Ajouter un groupe d’appareils.**
 
@@ -79,7 +79,7 @@ Dans le cadre du processus de création d’un groupe d’appareils, vous devez 
 
 ## <a name="manage-device-groups"></a>Gérer les groupes d’appareils
 
-Vous pouvez promouvoir ou rétrograder le rang d’un groupe d’appareils afin qu’il soit plus ou moins prioritaire lors de la mise en correspondance. Lorsqu’un appareil est en correspondance avec plusieurs groupes, il est ajouté uniquement au groupe le plus élevé. Vous pouvez également modifier et supprimer des groupes.
+Vous pouvez promouvoir ou rétrograder le rang d’un groupe d’appareils afin qu’il soit plus ou moins prioritaire lors de la mise en correspondance. Lorsqu’un appareil correspond à plusieurs groupes, il est ajouté uniquement au groupe le plus élevé. Vous pouvez également modifier et supprimer des groupes.
 
 
 
@@ -88,7 +88,7 @@ Vous pouvez promouvoir ou rétrograder le rang d’un groupe d’appareils afin 
 
 Par défaut, les groupes d’appareils sont accessibles à tous les utilisateurs ayant accès au portail. Vous pouvez modifier le comportement par défaut en attribuant des groupes d’utilisateurs Azure AD au groupe d’appareils.
 
-Les appareils qui ne correspondent à aucun groupe sont ajoutés au groupe Appareils non regroupés (par défaut). Vous ne pouvez pas modifier le rang de ce groupe ni le supprimer. Toutefois, vous pouvez modifier le niveau de correction de ce groupe et définir les groupes d’utilisateurs Azure AD qui peuvent accéder à ce groupe.
+Les appareils qui ne correspondent à aucun groupe sont ajoutés au groupe Appareils non regroupés (par défaut). Vous ne pouvez pas modifier le rang de ce groupe ou le supprimer. Toutefois, vous pouvez modifier le niveau de correction de ce groupe et définir les groupes d’utilisateurs Azure AD qui peuvent accéder à ce groupe.
 
 >[!NOTE]
 > L’application de modifications à la configuration du groupe d’appareils peut prendre jusqu’à plusieurs minutes.

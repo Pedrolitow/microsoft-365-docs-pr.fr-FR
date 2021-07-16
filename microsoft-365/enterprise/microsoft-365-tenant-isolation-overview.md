@@ -17,21 +17,21 @@ f1.keywords:
 description: Cet article contient un résumé de la façon dont Microsoft applique l’isolation des clients dans les services cloud tels que Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: b52d936bb00ac0adef0baf428cbc5f9a8f8aba49
-ms.sourcegitcommit: 6749455c52b0f98a92f6fffbc2bb86caf3538bd8
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53194648"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464091"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Isolation du client dans Microsoft 365
 
-L’un des principaux avantages du cloud computing est le concept d’une infrastructure commune partagée simultanément à de nombreux clients, ce qui conduit à une échelle. Ce concept est appelé *« location multiple*». Microsoft travaille continuellement pour s’assurer que les architectures mutualisées de nos services Cloud prennent en charge les normes de sécurité, de confidentialité, de respect de la vie privée, d'intégrité et de disponibilité au niveau de l'entreprise.
+L’un des principaux avantages du cloud computing est le concept d’une infrastructure commune partagée à de nombreux clients simultanément, ce qui conduit à une échelle. Ce concept est appelé *« location multiple*». Microsoft travaille continuellement pour s’assurer que les architectures mutualisées de nos services Cloud prennent en charge les normes de sécurité, de confidentialité, de respect de la vie privée, d'intégrité et de disponibilité au niveau de l'entreprise.
 
-Sur la base des investissements et [](https://www.microsoft.com/trust-center) de l’expérience importants collectés par l’informatique de confiance et le cycle de vie du développement de la [sécurité,](https://www.microsoft.com/securityengineering/sdl/)les services cloud de Microsoft ont été conçus en présupposant que tous les clients sont potentiellement présomptionux pour tous les autres clients, et nous avons implémenté des mesures de sécurité pour empêcher les actions d’un client d’affecter la sécurité ou le service d’un autre client, ou d’accéder au contenu d’un autre client.
+Sur la base des investissements et [](https://www.microsoft.com/trust-center) de l’expérience importants collectés par l’informatique de confiance et le cycle de vie du développement de la [sécurité,](https://www.microsoft.com/securityengineering/sdl/)les services cloud de Microsoft ont été conçus en présupposant que tous les clients sont potentiellement présomptioneux pour tous les autres clients, et nous avons implémenté des mesures de sécurité pour empêcher les actions d’un client d’affecter la sécurité ou le service d’un autre client, ou d’accéder au contenu d’un autre client.
 
 Les deux principaux objectifs de la maintenance de l’isolation des locataires dans un environnement à plusieurs locataires sont les autres :
 
-1.    prévention de la fuite ou de l’accès non autorisé au contenu client entre les clients ; et
+1.    prévention de la fuite de contenu client ou d’un accès non autorisé au contenu client entre les clients ; et
 2.    Empêcher les actions d’un client d’affecter le service pour un autre client
 
 Plusieurs formes de protection ont été implémentées dans Microsoft 365 pour empêcher les clients de compromettre les services ou applications Microsoft 365 ou d’obtenir un accès non autorisé aux informations d’autres clients ou au système Microsoft 365 lui-même, notamment :

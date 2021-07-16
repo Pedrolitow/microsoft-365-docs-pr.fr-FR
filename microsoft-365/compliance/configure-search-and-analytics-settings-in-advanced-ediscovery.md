@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: Configurez Advanced eDiscovery paramètres qui s’appliquent à tous les ensembles de révision dans un cas. Cela inclut les paramètres d’analyse et de reconnaissance optique de caractères.
-ms.openlocfilehash: e0ad41354b265016ba67632162a8ead62f11068b
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 2b9c438e28b8d9b84ec8cc29bf85911e5bdc3c8d
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430551"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453896"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>Configurer les paramètres de recherche et d’analyse dans Advanced eDiscovery
 
@@ -50,9 +50,9 @@ Pour configurer les paramètres de recherche et d’analyse d’un cas :
 
 ## <a name="near-duplicates-and-email-threading"></a>Quasi-doublons et thread de courrier
 
-Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des quasi-doublons et le thread de messagerie. Pour plus d’informations, voir Détection des [quasi-doublons et](near-duplicate-detection-in-advanced-ediscovery.md) [thread de messagerie.](email-threading-in-advanced-ediscovery.md)
+Dans cette section, vous pouvez définir des paramètres pour la détection des doublons, la détection des quasi-doublons et le thread de messagerie. Pour plus d’informations, voir [Détection des quasi-doublons et](near-duplicate-detection-in-advanced-ediscovery.md) thread de [messagerie.](email-threading-in-advanced-ediscovery.md)
 
-- **Quasi-doublons/thread de courrier électronique :** Lorsqu’il est allumé, la détection des doublons, la détection des quasi-doublons et le thread de messagerie électronique sont inclus dans le flux de travail lorsque vous exécutez des analyses sur les données dans un jeu à réviser.
+- **Quasi-doublons/thread de messagerie électronique :** Lorsqu’il est allumé, la détection des doublons, la détection des quasi-doublons et le thread de messagerie électronique sont inclus dans le flux de travail lorsque vous exécutez des analyses sur les données dans un jeu à réviser.
 
 - **Seuil de similarité des documents et des e-mails :** Si le niveau de similarité de deux documents est supérieur au seuil, les deux documents sont placés dans le même jeu de quasi-doublons.
 
@@ -80,13 +80,13 @@ Cette requête filtre essentiellement les éléments en double du jeu à révise
 
 ## <a name="ignore-text"></a>Ignorer le texte
 
-Dans certains cas, certains textes diminuent la qualité de l’analyse, par exemple les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques, quel que soit le contenu de l’e-mail. Si vous souhaitez ignorer un texte donné, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (Quasi-doublons, Thread de courrier, Thèmes et Pertinence) pour laquelle le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) en tant que texte ignoré est également prise en charge. 
+Dans certains cas, certains textes diminuent la qualité de l’analyse, par exemple les clauses d’exclusion de responsabilité longues qui sont ajoutées aux messages électroniques, quel que soit le contenu de l’e-mail. Si vous souhaitez ignorer un texte donné, vous pouvez l’exclure de l’analyse en spécifiant la chaîne de texte et la fonctionnalité d’analyse (Quasi-doublons, Thread de courrier, Thèmes et Pertinence) pour laquelle le texte doit être exclu. L’utilisation d’expressions régulières (RegEx) en tant que texte ignoré est également prise en charge.
 
 ## <a name="optical-character-recognition-ocr"></a>Reconnaissance optique des caractères
 
 Lorsque ce paramètre est désactivé, le traitement ocr est exécuté sur les fichiers image. Le traitement ocr est exécuté dans les situations suivantes :
 
-- Lorsque des dépositaires et des sources de [données non privatives](non-custodial-data-sources.md) sont ajoutés à un cas. Le traitement ocr est effectué pendant le [processus d’indexation](indexing-custodian-data.md) avancée. L’ocr est uniquement exécuté sur les éléments qui sont traitées pendant l’indexation avancée. Par exemple, si un fichier PDF de grande taille partiellement indexé ou avec d’autres erreurs d’indexation est traitée pendant l’indexation avancée, l’ocr est également appliqué au fichier. En d’autres termes, le traitement ocr se produit uniquement sur les fichiers qui sont ré-indexés pendant le processus d’indexation avancée. Cela signifie que lorsque des dépositaires sont ajoutés à un cas, certaines pièces jointes ne sont pas traitées pour l’ocr, car ces fichiers ne sont pas traitées pendant l’indexation avancée. Lorsque des fichiers image ocr sont appliqués, le texte de ces fichiers image peut faire l’être au cours d’une collection.
+- Lorsque des dépositaires et des sources de [données non privatives](non-custodial-data-sources.md) sont ajoutés à un cas. Lorsque l’ocr est appliqué aux fichiers image, le texte de ces fichiers est utilisable dans une recherche au cours d’une collection. Le traitement ocr est effectué pendant le [processus d’indexation](indexing-custodian-data.md) avancée. L’ocr est uniquement exécuté sur les éléments qui sont traitées pendant l’indexation avancée. Par exemple, si un fichier PDF de grande taille partiellement indexé ou avec d’autres erreurs d’indexation est traitée pendant l’indexation avancée, l’ocr est également appliqué au fichier. En d’autres termes, le traitement ocr se produit uniquement sur les fichiers qui sont ré-indexés pendant le processus d’indexation avancée. Cela signifie qu’il peut y avoir des situations dans lesquelles des dépositaires sont ajoutés à un cas, mais que certaines pièces jointes de courrier ne sont pas traitées pour l’ocr, car ces fichiers ne sont pas traitées pendant l’indexation avancée.
 
 - Lorsque du contenu provenant d’autres sources de données (qui ne sont pas associés à un dépositaire et ajoutés au cas dans une source de données non liée à la conservation) est ajouté à un groupe de révision.
 

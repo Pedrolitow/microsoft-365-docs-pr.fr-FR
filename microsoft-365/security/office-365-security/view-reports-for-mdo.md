@@ -20,14 +20,14 @@ description: Les administrateurs peuvent découvrir comment rechercher et utilis
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7eab856f22ac1c2282e83897db6e3f93d4d97e6
-ms.sourcegitcommit: cd55fe6abe25b1e4f5fbe8295d3a99aebd97ce66
+ms.openlocfilehash: e8bb03202139137adf55c4c10230b1c4e99253ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53083511"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454720"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports defender pour Office 365 dans le portail Microsoft 365 Defender web
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Afficher les rapports de Office 365 Defender dans le portail Microsoft 365 Defender web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,14 +41,14 @@ Les organisations Microsoft Defender pour Office 365 (par exemple, les abonnemen
 
 > [!NOTE]
 >
-> Les rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365 sont décrits dans l’affichage des rapports de sécurité de messagerie dans [le portail Microsoft 365 Defender messagerie.](view-email-security-reports.md)
+> Les rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365 sont décrits dans l’affichage des rapports de sécurité de messagerie dans [le portail Microsoft 365 Defender.](view-email-security-reports.md)
 >
-> Les rapports liés au flux de messagerie sont désormais dans le Centre d’administration Exchange(EAC). Pour plus d’informations sur ces rapports, voir Rapports de flux de messagerie dans le nouveau [centre d Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> Les rapports liés au flux de messagerie sont désormais dans le Centre d’administration Exchange(EAC). Pour plus d’informations sur ces rapports, voir Rapports de flux de messagerie dans [le nouveau centre Exchange’administration.](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 ## <a name="safe-attachments-file-types-report"></a>Coffre Rapport sur les types de fichiers de pièces jointes
 
 > [!NOTE]
-> Le **rapport Coffre types de fichiers pièces jointes** sera finalement absent. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
+> Le Coffre types de fichiers **pièces jointes** sera finalement absent. Les mêmes informations sont disponibles dans le rapport d’état [de la protection contre les menaces.](#threat-protection-status-report)
 
 ## <a name="safe-attachments-message-disposition-report"></a>Coffre Rapport de disposition des messages de pièces jointes
 
@@ -125,7 +125,7 @@ Les vues disponibles sur la page du rapport sur la protection contre les menaces
 - **Bloqué et cliqué :** l’utilisateur a choisi de continuer à accéder à l’URL.
 - **Clicked through during scan**: The user has clicked on the link before the scan was complete.
 
-Un clic indique que l’utilisateur a cliqué sur la page d’accès au site web malveillant (les administrateurs peuvent désactiver le clic dans les stratégies de liens Coffre web).
+Un clic indique que l’utilisateur a cliqué sur la page de blocage vers le site web malveillant (les administrateurs peuvent désactiver le clic dans les stratégies de liens Coffre web).
 
 Si vous cliquez sur **Filtres,** vous pouvez modifier le rapport et le tableau des détails en sélectionnant une ou plusieurs des valeurs suivantes dans le volant qui s’affiche :
 
@@ -190,12 +190,25 @@ Outre les rapports décrits dans cet article, plusieurs autres rapports sont dis
 
 |Rapport|Rubrique|
 |---|---|
-|**Explorateur** (Microsoft Defender pour Office 365 Plan 2) ou **détections** en temps réel (Microsoft Defender pour Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
-|**Rapports de sécurité du** courrier électronique, tels que le rapport Sur les principaux expéditeurs et destinataires, le rapport sur les courriers électroniques usurpés et le rapport sur les détections de courrier indésirable.|[Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md)|
-|**Les rapports de flux de** messagerie, tels que le rapport de forwarding, le rapport d’état du flux de messagerie et le rapport des principaux expéditeurs et destinataires.|[Rapports de flux de messagerie dans le nouveau centre d Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|**Suivi d’URL Coffre liens (PowerShell** uniquement). Le résultat de cette cmdlet affiche les résultats des actions Coffre liens au cours des sept derniers jours.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
-|**Résultats du trafic de messagerie pour EOP et Microsoft Defender pour Office 365** (PowerShell uniquement). La sortie de cette cmdlet contient des informations sur le domaine, la date, le type d’événement, la direction, l’action et le nombre de messages.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**Rapports de détails de courrier pour EOP et Defender pour Office 365 détections de** courrier indésirable (PowerShell uniquement). La sortie de cette cmdlet contient des détails sur les fichiers ou URL malveillants, les tentatives d’hameçonnage, l’emprunt d’identité et d’autres menaces potentielles dans les e-mails ou les fichiers.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|**Détections** de l’Explorateur (Microsoft Defender  Office 365 Plan 2) ou en temps réel (Microsoft Defender Office 365 Plan 1)|[Explorateur de menaces (et détections en temps réel)](threat-explorer.md)|
+|Rapports de sécurité de messagerie qui ne nécessitent pas Defender pour Office 365|[Afficher les rapports de sécurité de messagerie dans le portail Microsoft 365 Defender messagerie](view-email-security-reports.md)|
+|Rapports de flux de messagerie dans le Centre Exchange’administration Centrale (EAC)|[Rapports de flux de messagerie dans le nouveau centre d Exchange’administration](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
+|
+
+Cmdlets de rapports PowerShell :
+
+<br>
+
+****
+
+|Rapport|Rubrique|
+|---|---|
+|Principaux expéditeurs et destinataires|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Principaux programmes malveillants|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|Trafic de messagerie|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|Liens sûrs|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
+|Utilisateurs compromis|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
+|État du flux de messagerie|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Quelles autorisations sont nécessaires pour afficher les rapports Defender for Office 365 ?
@@ -203,13 +216,13 @@ Outre les rapports décrits dans cet article, plusieurs autres rapports sont dis
 Pour afficher et utiliser les rapports décrits dans cet article, vous devez être membre de l’un des groupes de rôles suivants dans le portail Microsoft 365 Defender:
 
 - **Gestion de l'organisation**
-- **Administrateur de sécurité**
-- **Lecteur sécurité**
-- **Lecteur global**
+- **Administrateur de la sécurité**
+- **Lecteur de sécurité**
+- **Lecteur général**
 
 Pour plus d’informations, consultez [Autorisations dans le portail Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
+**Remarque**: l’ajout d’utilisateurs au rôle Azure Active Directory correspondant dans le Centre d’administration Microsoft 365 donne aux  utilisateurs les autorisations requises dans le portail Microsoft 365 Defender et les autorisations pour d’autres fonctionnalités dans Microsoft 365. Pour plus d’informations, consultez la rubrique [À propos des rôles d’administrateur](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Que se passe-t-il si les rapports n’affichent pas de données ?
 

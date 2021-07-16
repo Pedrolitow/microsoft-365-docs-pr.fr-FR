@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur DataParser 17a-4 SQL pour importer et archiver SQL données dans Microsoft 365.
-ms.openlocfilehash: 51fd433ad072ba5afe0b314d7b61041728337240
-ms.sourcegitcommit: 410f6e1c6cf53c3d9013b89d6e0b40a050ee9cad
+ms.openlocfilehash: 67ad3332a05356702df7b0624ee05519ff30bcac
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53137666"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454028"
 ---
-# <a name="set-up-a-connector-to-archive-sql-data-preview"></a>Configurer un connecteur pour archiver les SQL données (aperçu)
+# <a name="set-up-a-connector-to-archive-sql-data"></a>Configurer un connecteur pour archiver les SQL données
 
 Utilisez la [SQL DataParser](https://www.17a-4.com/sql-dataparser/) de 17a-4 LLC pour importer et archiver des données à partir d’une base de données SQL vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur SQL configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le SQL DataParser convertit les données SQL au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
-Une fois SQL données stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d SQL pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
+Une fois que SQL données sont stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d SQL pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
 ## <a name="overview-of-archiving-sql-data"></a>Vue d’ensemble de l’archivage SQL données
 
@@ -31,7 +31,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 ![Flux de travail d’archivage pour SQL données 17a-4](../media/SQLDatabaseDataParserConnectorWorkflow.png)
 
-1. Votre organisation travaille en 17a-4 pour configurer l’analyseur de SQL données.
+1. Votre organisation fonctionne avec 17a-4 pour configurer l’analyseur de SQL données.
 
 2. Régulièrement, les SQL sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
 

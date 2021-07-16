@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Feuille de route pour configurer vos locataires pour Microsoft 365.
-ms.openlocfilehash: fb3b6eecd893a5ab9b71bfa7bdfaea53af43470d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b94540293b86bd922ce4b29f970e52eb1245a01
+ms.sourcegitcommit: 84e70051bb61b1171cebfbabe500b4904dfac04f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909453"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464032"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Feuille de route du client pour Microsoft 365
 
@@ -29,9 +29,9 @@ Lorsque vous créez un Microsoft 365 client, vous l’affectez à un emplacement
 
 Pour préparer votre client pour les utilisateurs, les groupes, les licences et les applications cloud, il est essentiel de planifier et d’exécuter avec soin la configuration de votre client.
 
-## <a name="set-up-your-microsoft-365-tenant"></a>Configurer votre client Microsoft 365
+## <a name="set-up-your-microsoft-365-tenant"></a>Configurer votre client Microsoft 365
 
-Après vous être assuré que votre réseau est optimisé pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos prochaines tâches importantes sont la planification et la configuration de votre client Microsoft 365 pour les noms de domaine DNS, les services communs et pour cette infrastructure d’identités qui prend en charge la connectez-vous utilisateur sécurisée.
+Après vous être assuré que votre réseau est optimisé pour l’accès à Microsoft 365 pour les travailleurs locaux et distants, vos tâches importantes suivantes sont la planification et la configuration de votre client Microsoft 365 pour les noms de domaine DNS, les services communs et pour cette infrastructure d’identité qui prend en charge la connectez-vous utilisateur sécurisée.
 
 ### <a name="plan"></a>Prévision
 
@@ -43,21 +43,21 @@ Pour planifier l’implémentation de votre client :
 - [Planifier la prise en charge des applications clientes](microsoft-365-client-support-certificate-based-authentication.md)
 - [Déterminer comment utiliser l’authentification moderne hybride](hybrid-modern-auth-overview.md)
 - [Planifier les mises Office 2007 et Office 2010](plan-upgrade-previous-versions-office.md)
-- [Comprendre l’isolation du client](microsoft-365-tenant-isolation-overview.md)
+- [Comprendre l’isolation du client](/compliance/assurance/microsoft-365-isolation-controls)
 
 ### <a name="deploy"></a>Déployer
 
 Pour déployer votre client : 
 
 - Ajoutez [les domaines DNS](../admin/setup/add-domain.md) pour votre organisation.
-- Utilisez les [guides de configuration dans le centre d Microsoft 365'administration.](setup-guides-for-microsoft-365.md)
+- Utilisez les [guides d’installation du Centre d’administration Microsoft 365](setup-guides-for-microsoft-365.md).
 - Créez votre [infrastructure d’identité](identity-roadmap-microsoft-365.md) [et sécurisation de vos utilisateurs.](microsoft-365-secure-sign-in.md)
 
 ### <a name="move-a-tenants-geographic-locations"></a>Déplacer les emplacements géographiques d’un client
 
-Microsoft continue d’ouvrir de nouveaux emplacements géographiques de centre de données (Microsoft 365 services). Ces nouvelles géos de centres de données ajoutent de la capacité et des ressources de calcul pour prendre en charge la demande des clients et la croissance de l’utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
+Microsoft continue d’ouvrir de nouveaux emplacements géographiques de centres de données (Microsoft 365 services). Ces nouvelles géos de centres de données ajoutent de la capacité et des ressources de calcul pour prendre en charge la demande des clients et la croissance de l’utilisation. En outre, les nouvelles régions de centre de données permettent d'héberger des données dans la région pour les données client essentielles.
 
-Pour plus d’informations, voir [Déplacement de données principales vers de nouvelles Microsoft 365 de centres de données.](moving-data-to-new-datacenter-geos.md)
+Pour plus d’informations, voir Déplacement de données principales vers [de nouvelles Microsoft 365 de centres de données.](moving-data-to-new-datacenter-geos.md)
 
 
 ## <a name="deploy-microsoft-365-multi-geo"></a>Déployer Microsoft 365 multigéogé

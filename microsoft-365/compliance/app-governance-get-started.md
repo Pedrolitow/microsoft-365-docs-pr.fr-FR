@@ -14,23 +14,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Démarrage avec des fonctionnalités de gouvernance des applications pour régir vos applications.
-ms.openlocfilehash: 58f3bab9f8c5e28ce921ab244b23c49682394795
-ms.sourcegitcommit: 997a21b83795789cda0a6b4a77f9985a3233d0c0
+ms.openlocfilehash: 80487298f2c3c3a93f0083337ddb223bd68e2611
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53430707"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438035"
 ---
 # <a name="get-started-with-app-governance-in-preview"></a>Démarrage avec la gouvernance des applications (en préversion)
 
-Pour commencer à utiliser le module complémentaire de gouvernance des applications pour Microsoft Cloud App Security :
+Pour commencer à utiliser le module complémentaire de gouvernance des applications de Microsoft Cloud App Security :
 
-1. Vérifiez que votre compte dispose du niveau de licence approprié. La gouvernance des applications est une fonctionnalité complémentaire pour Microsoft Cloud App Security (MCAS). Par conséquent, MCAS doit être présent dans votre compte en tant que produit autonome ou dans le cadre des différents packages de licences répertoriés ci-dessous.
+1. Vérifiez que votre compte dispose du niveau de licence approprié. La gouvernance des applications est une fonctionnalité complémentaire de Microsoft Cloud App Security (MCAS), et MCAS doit donc être présent dans votre compte en tant que produit autonome ou dans le cadre des différents packs de licences énumérés ci-dessous.
 1. Vous devez avoir l’un des rôles d’administrateur répertoriés ci-dessous pour accéder aux pages de gouvernance des applications dans le portail.
 
 ## <a name="licensing-for-app-governance"></a>Licences pour la gouvernance des applications
 
-Avant de commencer à utiliser la gouvernance des applications, vous devez confirmer votre [abonnement Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) et tous les modules complémentaires. Pour accéder à la gouvernance des applications et l’utiliser, votre organisation doit disposer de l’un des abonnements ou modules complémentaires suivants :
+Avant de vous lancer dans la gouvernance des applications, vous devez confirmer votre centre d'administration [Microsoft 365 – les abonnements](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) et les éventuels modules complémentaires. Pour accéder à la gouvernance des applications et l’utiliser, votre organisation doit disposer de l’un des abonnements ou modules complémentaires suivants :
 
 - Microsoft Cloud App Security
 - Microsoft 365 E5
@@ -57,7 +57,7 @@ Avant de commencer à utiliser la gouvernance des applications, vous devez confi
 
 ## <a name="administrator-roles"></a>Rôles d'administrateur
 
-L’un des rôles d’administrateur suivants est nécessaire pour afficher les pages de gouvernance des applications ou gérer les stratégies et les paramètres :
+L'un des rôles d'administrateur suivants est requis pour voir les pages de gouvernance des applications ou gérer les stratégies et les paramètres :
 
 - Administrateur de l'application
 - Administrateur de l'application cloud
@@ -69,6 +69,9 @@ L’un des rôles d’administrateur suivants est nécessaire pour afficher les 
 - Administrateur de sécurité
 - Opérateur de sécurité
 - Lecteur sécurité (en lecture seule)
+
+> [!NOTE]
+> Seul un administrateur global peut activer l'essai gratuit de la gouvernance de l'application.
 
 Voici les fonctionnalités de chaque rôle.
 

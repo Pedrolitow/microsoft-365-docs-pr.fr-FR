@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Découvrez comment configurer et utiliser un connecteur 17a-4 Fuze DataParser pour importer et archiver des données de fuze dans Microsoft 365.
-ms.openlocfilehash: eb7e66bf3a8d00431ad7e393471110b36efa8e65
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+description: Découvrez comment configurer et utiliser un connecteur 17a-4 Fuze DataParser pour importer et archiver des données De fuze dans Microsoft 365.
+ms.openlocfilehash: 9f3c7590a033c2c19d9b588167d67c24f917ec5f
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096429"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454504"
 ---
-# <a name="set-up-a-connector-to-archive-fuze-data-preview"></a>Configurer un connecteur pour archiver les données de la fusion (prévisualisation)
+# <a name="set-up-a-connector-to-archive-fuze-data"></a>Configurer un connecteur pour archiver les données de la fusion
 
-Utilisez [Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) de 17a-4 LLC pour importer et archiver des données de Fuze vers les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur Fuze configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Fuze DataParser convertit les données Fuze au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
+Utilisez [Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) de 17a-4 LLC pour importer et archiver des données à partir de Fuze dans les boîtes aux lettres des utilisateurs de Microsoft 365 organisation. DataParser inclut un connecteur Fuze configuré pour capturer des éléments à partir d’une source de données tierce et importer ces éléments dans Microsoft 365. Le connecteur Fuze DataParser convertit les données Fuze au format de message électronique, puis importe ces éléments dans les boîtes aux lettres des utilisateurs Microsoft 365.
 
 Une fois les données de l’événement stockées dans les boîtes aux lettres des utilisateurs, vous pouvez appliquer des fonctionnalités de conformité Microsoft 365 telles que la conservation pour litige, eDiscovery, les stratégies et étiquettes de rétention, ainsi que la conformité des communications. L’utilisation d’un connecteur Fuze pour importer et archiver des données dans Microsoft 365 peut aider votre organisation à rester conforme aux stratégies gouvernementales et réglementaires.
 
@@ -33,7 +33,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 1. Votre organisation travaille avec 17a-4 pour configurer l’analyseur de données En cours.
 
-2. Régulièrement, les éléments Fuze sont collectés par DataParser. DataParser convertit également le contenu d’un message au format de message électronique.
+2. Régulièrement, les éléments de l’analyseur de données sont collectés par l’analyseur de données. DataParser convertit également le contenu d’un message au format de message électronique.
 
 3. Le connecteur DataParser que vous créez dans le Centre de conformité Microsoft 365 se connecte à DataParser et transfère les messages vers un emplacement stockage Azure sécurisé dans le cloud Microsoft.
 
@@ -43,7 +43,7 @@ La vue d’ensemble suivante explique le processus d’utilisation d’un connec
 
 - Créez un compte DataParser pour les connecteurs Microsoft. Pour ce faire, contactez [17a-4 LLC.](https://www.17a-4.com/contact/) Vous devez vous inscrire à ce compte lorsque vous créez le connecteur à l’étape 1.
 
-- L’utilisateur qui crée le connecteur Fuze DataParser à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans la Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
+- L’utilisateur qui crée le connecteur Fuze DataParser à l’étape 1 (et le termine à l’étape 3) doit être affecté au rôle Importation/Exportation de boîte aux lettres dans Exchange Online. Ce rôle est requis pour ajouter des connecteurs sur la page **Connecteurs de données** dans le Centre de conformité Microsoft 365. Par défaut, ce rôle n’est pas attribué à un groupe de rôles dans Exchange Online. Vous pouvez ajouter le rôle Importation/Exportation de boîte aux lettres au groupe de rôles Gestion de l’organisation dans Exchange Online. Vous pouvez également créer un groupe de rôles, attribuer le rôle Importation/Exportation de boîte aux lettres, puis ajouter les utilisateurs appropriés en tant que membres. Pour plus d’informations, voir les [sections](/Exchange/permissions-exo/role-groups#modify-role-groups) Créer des groupes de rôles ou Modifier des groupes de rôles dans l’article « Gérer les groupes de rôles dans Exchange Online ». [](/Exchange/permissions-exo/role-groups#create-role-groups)
 
 ## <a name="step-1-set-up-a-fuze-dataparser-connector"></a>Étape 1 : Configurer un connecteur Fuze DataParser
 
@@ -65,7 +65,7 @@ Travaillez avec la prise en charge 17a-4 pour configurer le connecteur Fuze Data
 
 ## <a name="step-3-map-users"></a>Étape 3 : Ma cartographier les utilisateurs
 
-Le connecteur Fuze DataParser maie automatiquement les utilisateurs à leurs adresses Microsoft 365 courrier avant d’importer des données dans Microsoft 365.
+Le connecteur Fuze DataParser maie automatiquement les utilisateurs à leurs adresses de messagerie Microsoft 365 avant d’importer des données dans Microsoft 365.
 
 ## <a name="step-4-monitor-the-fuze-dataparser-connector"></a>Étape 4 : Surveiller le connecteur Fuze DataParser
 

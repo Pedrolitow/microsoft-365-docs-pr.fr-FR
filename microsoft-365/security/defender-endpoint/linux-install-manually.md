@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3579e9dab975d8776a53d400121d98fe119fe6cc
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: 4c4ed845a31f044e17c97e0b43adfc86dd3f68ba
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/15/2021
-ms.locfileid: "53438071"
+ms.locfileid: "53454804"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Déployer Microsoft Defender pour le point de terminaison sur Linux manuellement
 
@@ -266,13 +266,13 @@ Afin d’afficher un aperçu des nouvelles fonctionnalités et de fournir des co
 
 ## <a name="download-the-onboarding-package"></a>Télécharger le package d’intégration
 
-Téléchargez le package d’intégration à partir Centre de sécurité Microsoft Defender :
+Téléchargez le package d’intégration à partir Microsoft 365 Defender portail :
 
-1. In Centre de sécurité Microsoft Defender, go to **Paramètres > Device Management > Onboarding**.
-2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez **Script local (pour 10** appareils au plus) comme méthode de déploiement.
+1. Dans le portail Microsoft 365 Defender, go to **Paramètres > Endpoints > Device management > Onboarding**.
+2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez **Script local** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Centre de sécurité Microsoft Defender capture d’écran](images/atp-portal-onboarding-linux.png)
+    ![capture d Microsoft 365 Defender portail d’entreprise](images/atp-portal-onboarding-linux.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier.
     Extrayons le contenu de l’archive :
@@ -333,7 +333,7 @@ Téléchargez le package d’intégration à partir Centre de sécurité Microso
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
+    > Notez que vous devrez peut-être également configurer un proxy après avoir terminé l’installation initiale. Voir Configurer Defender pour endpoint sur Linux pour [la découverte de proxy statique : configuration post-installation.](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
 5. Exécutez un test de détection pour vérifier que l’appareil est correctement intégré et signaler au service. Effectuez les étapes suivantes sur l’appareil nouvellement intégré :
 
@@ -349,7 +349,7 @@ Téléchargez le package d’intégration à partir Centre de sécurité Microso
         curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Le fichier doit avoir été mis en quarantaine par Defender pour point de terminaison sur Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
+    - Le fichier doit avoir été mis en quarantaine par Defender for Endpoint sur Linux. Utilisez la commande suivante pour lister toutes les menaces détectées :
 
         ```bash
         mdatp threat list
@@ -359,11 +359,11 @@ Téléchargez le package d’intégration à partir Centre de sécurité Microso
 
 Pour tester les fonctionnalités de PEPT linux, suivez les étapes ci-dessous pour simuler une détection sur votre serveur Linux et examiner le cas. 
 
-1.  Vérifiez que le serveur Linux intégré apparaît dans Centre de sécurité Microsoft Defender. S’il s’agit de la première intégration de l’ordinateur, son apparition peut prendre jusqu’à 20 minutes. 
+1.  Vérifiez que le serveur Linux intégré apparaît dans Microsoft 365 Defender. S’il s’agit de la première intégration de l’ordinateur, son apparition peut prendre jusqu’à 20 minutes. 
 
 2.  Téléchargez et extrayez [le fichier de script](https://aka.ms/LinuxDIY) sur un serveur Linux intégré et exécutez la commande suivante : `./mde_linux_edr_diy.sh`
 
-3.  Après quelques minutes, une détection doit être détectée dans Centre de sécurité Microsoft Defender.
+3.  Après quelques minutes, une détection doit être détectée dans Microsoft 365 Defender.
 
 4.  Regardez les détails de l’alerte, la chronologie de l’ordinateur et effectuez vos étapes d’examen classiques.
 
@@ -372,7 +372,7 @@ Pour tester les fonctionnalités de PEPT linux, suivez les étapes ci-dessous po
 
 ## <a name="installer-script"></a>Script du programme d’installation
 
-Vous pouvez également utiliser un script bash de [programme](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) d’installation automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
+Vous pouvez également utiliser un script de programme d’installation [bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatisé fourni dans notre référentiel [GitHub public.](https://github.com/microsoft/mdatp-xplat/)
 Le script identifie la distribution et la version, et définit l’appareil pour qu’il tire le dernier package et l’installe.
 Vous pouvez également intégrer un script fourni.
 

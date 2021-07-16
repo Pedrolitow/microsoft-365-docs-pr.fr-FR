@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La prévention des pertes de données du Point de terminaison Microsoft 365 étend la surveillance des activités des fichiers et des actions de protection de ces aux points de terminaison. Les fichiers sont rendus visibles dans les solutions de conformité Microsoft 365 '
-ms.openlocfilehash: c97368dd48515dc787dbac66aa93844889efbdbc
-ms.sourcegitcommit: 8b0718f5607ab509092cb80bda854010d885c54f
+ms.openlocfilehash: 3da15f1ac35ca448a76638c31f047c6a2132ad7a
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53314415"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454004"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>En savoir plus sur la protection contre la perte de données de point de terminaison Microsoft 365
 
@@ -53,7 +53,7 @@ Les points de terminaison Microsoft DLP vous permet d’auditer et de gérer les
 
 ## <a name="monitored-files"></a>Fichiers analysées
 
-La DLP de point du terminaison prend en charge la surveillance de ces types de fichiers :
+La DLP de point du terminaison prend en charge la surveillance de ces types de fichiers. La DLP procède à un audit des activités de ces types de fichiers, même s’il n’existe pas de correspondance de stratégie. 
 
 - Fichiers Word
 - Fichiers PowerPoint
@@ -69,8 +69,11 @@ La DLP de point du terminaison prend en charge la surveillance de ces types de f
 - fichiers cs
 - fichiers h
 - fichiers Java
+ 
+Si vous souhaitez surveiller les données des correspondances de stratégie uniquement, vous pouvez désactiver l'option **Toujours auditer l’activité du fichier pour les appareils** dans les paramètres globaux DLP du point de terminaison.
 
-Par défaut, la DLP du point de terminaison audite les activités de ces types de fichiers, même s’il n’existe pas de correspondance de stratégie. Si vous souhaitez surveiller les données des correspondances de stratégie uniquement, vous pouvez désactiver l'option **Toujours auditer l’activité du fichier pour les appareils** dans les paramètres globaux DLP du point de terminaison. Si ce paramètre est utilisé, les activités sur les fichiers Word, PowerPoint, Excel, PDF, et .csv sont toujours auditées, même si l’appareil n’est ciblé par aucune stratégie.
+> [!NOTE]
+> Si le paramètre **Toujours auditer l’activité du fichier pour les appareils** est activé, les activités sur les fichiers Word, PowerPoint, Excel, PDF, et .csv sont toujours auditées, même si l’appareil n’est ciblé par aucune stratégie.
 
 Le DLP du point de terminaison contrôle l’activité basée sur le type MIME, de sorte que les activités sont capturées même si l’extension de fichier est modifiée.
 

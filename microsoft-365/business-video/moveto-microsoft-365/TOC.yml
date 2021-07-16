@@ -1,10 +1,10 @@
 - name: Passer de Google Workspace à Microsoft 365
   items:
-    - name: Vue d’ensemble
+    - name: Présentation
       href: move-from-google-workspace-overview.md
-    - name: "Inscrivez-vous à Microsoft\_365"
+    - name: Inscrivez-vous à Microsoft 365
       href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: Configurer la migration de Microsoft 365 pour Google
+    - name: Configurer Microsoft 365 pour la migration Google
       href: set-up-microsoft-365-forgoogle.md
     - name: Configurer des stratégies de sécurité pour les appareils Windows
       href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
@@ -14,9 +14,9 @@
       href: ../install-office.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
     - name: 'Migrer le courrier électronique, le calendrier et les contacts vers Microsoft 365'
       href: migrate-email.md
-    - name: "Connecter votre domaine à Microsoft\_365"
+    - name: Connecter votre domaine à Microsoft 365
       href: connect-domain-tom365.md
-    - name: Utiliser Mover pour déplacer les données de tout le monde
-      href: mover-migrate-files.md
+    - name: Utiliser le Gestionnaire de migration pour déplacer les données de tout le monde
+      href: 'https://docs.microsoft.com/sharepointmigration/mm-google-overview'
     - name: Annuler l’espace de travail Google
       href: cancel-google.md

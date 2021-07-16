@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Découvrez comment configurer et utiliser un connecteur de données CellTrust SL2 pour importer et archiver des données de communications mobiles.
-ms.openlocfilehash: 0929a92978f9b48d40153b3cc7328e5e05b54fd0
-ms.sourcegitcommit: 778103d20a2b4c43e524aa436775764d8d8d4c33
+ms.openlocfilehash: 191160921c9e949aa7b82520d72dc7a18bfb26ef
+ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53097072"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53453971"
 ---
-# <a name="archive-data-from-celltrust-sl2-to-microsoft-365-preview"></a>Archiver les données de CellTrust SL2 vers Microsoft 365 (aperçu)
+# <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>Archiver les données de CellTrust SL2 vers Microsoft 365
 
 CellTrust SL2 capture les données de communications mobiles et s’intègre aux technologies d’archivage de pointe pour répondre aux exigences de découverte électronique pour les réglementations telles que FINRA, HIPAA, LOIA et TCPA. Le connecteur de données SL2 importe des éléments de communication mobiles dans Microsoft 365. Cet article décrit le processus d’intégration de SL2 à Microsoft 365 à l’aide du connecteur de données CellTrust SL2 pour l’archivage. L’exécution de ce processus suppose que vous êtes abonné au service CellTrust SL2 et que vous connaissez l’architecture SL2. Pour plus d’informations sur SL2, voir <www.celltrust.com>.
 
@@ -37,7 +37,7 @@ La plateforme SL2 de CellTrust capture les données de communication à partir d
 
 3. Après avoir créé le connecteur de données Sl2 CellTrust, votre domaine et vos E/S (quel que soit votre plan SL2), commencez à envoyer des données Microsoft 365. Le flux de données est structuré pour prendre en charge les rapports basés sur des sources de données, des OUS ou le domaine par lui-même. Par conséquent, votre organisation n’a besoin que d’un connecteur pour alimenter toutes vos sources de données Microsoft 365.
 
-4. Le connecteur crée un dossier sous chaque utilisateur mappé avec une licence Office 365 appropriée intitulée **CellTrust SL2**. Ce mappage connecte un utilisateur CellTrust SL2 à une boîte aux lettres Office 365 à l’aide d’une adresse e-mail. Si un ID d’utilisateur dans CellTrust SL2 n’a aucune correspondance dans Office 365, les données de l’utilisateur ne seront pas archivées.
+4. Le connecteur crée un dossier sous chaque utilisateur mappé avec une licence Office 365 appropriée intitulée **CellTrust SL2**. Ce mappage connecte un utilisateur CellTrust SL2 à une boîte aux lettres Office 365 à l’aide d’une adresse de messagerie. Si un ID d’utilisateur dans CellTrust SL2 n’a aucune correspondance dans Office 365, les données de l’utilisateur ne seront pas archivées.
 
 ## <a name="before-you-set-up-a-connector"></a>Avant de configurer un connecteur
 
@@ -63,7 +63,7 @@ La première étape consiste à créer un connecteur de données dans le Centre 
 
 5. Dans la page **Conditions d’utilisation,** cliquez sur **Accepter.**
 
-6. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**. Le nom que vous entrez identifiera le connecteur sur la page **Connecteurs de données** après sa création.
+6. Entrez un nom unique qui identifie le connecteur, puis cliquez sur **Suivant**. Le nom que vous entrez identifie le connecteur sur la page **Connecteurs de données** après sa création.
 
 7. Dans la page **Se connectez à votre compte CellTrust,** cliquez sur **Se connectez à CellTrust**. Vous serez redirigé vers le **portail CellTrust** pour Microsoft 365 dans une nouvelle fenêtre de navigateur.
 
@@ -77,7 +77,7 @@ L’étape suivante consiste à se connecter à un compte d’administrateur pou
 
 2. Connectez-vous avec vos informations d’identification de compte d’administrateur de domaine ou d’utilisateur.
 
-   Si vous vous connectez en tant qu’administrateur de domaine SL2, vous verrez le nom de votre domaine et les O dans ce domaine. Si vous n’avez pas d’O, vous voyez uniquement le nom de votre domaine. Si vous vous connectez en tant qu’administrateur d’ou, vous ne voyez que le nom de votre ou.
+   Si vous vous connectez en tant qu’administrateur de domaine SL2, vous verrez le nom de votre domaine et les utilisations dans ce domaine. Si vous n’avez pas d’O, vous voyez uniquement le nom de votre domaine. Si vous vous connectez en tant qu’administrateur d’ou, vous ne voyez que le nom de votre ou.
 
 3. Activez les unités métier que vous souhaitez archiver. La sélection du domaine ne sélectionne pas automatiquement les O. Vous devez activer chaque ouo séparément pour l’archiver.
 
@@ -99,7 +99,7 @@ La dernière étape consiste à ma cartographier les utilisateurs et à terminer
 
 Consultez la page Du support client [CellTrust](https://www.celltrust.com/contact-us/#support) pour plus d’informations sur le contact de CellTrust pour obtenir de l’aide sur la configuration d’un connecteur de données CellTrust SL2.
 
-## <a name="more-information"></a>Plus d'informations
+## <a name="more-information"></a>Informations supplémentaires
 
 - Un administrateur de domaine peut configurer un connecteur pour le domaine ou n’importe quelle OUS de ce domaine. Si vous utilisez le compte Administrateur d’ou, vous ne pouvez configurer un connecteur que pour cette ou cette même ou plusieurs.
 
@@ -109,4 +109,4 @@ Consultez la page Du support client [CellTrust](https://www.celltrust.com/contac
 
 - De nombreuses lois et réglementations exigent que la communication électronique soit conservée de telle sorte que, lorsqu’elle est demandée, elle puisse être produite en tant que preuve. La découverte électronique (eDiscovery) est utilisée pour se conformer à la production de communications électroniques. Enterprise Les solutions d’archivage des informations (EIA) sont conçues pour effectuer la découverte électronique et fournissent des fonctionnalités telles que la gestion des stratégies de rétention, la classification des données et la surveillance du contenu. Microsoft 365 offre une solution de rétention à long terme pour se conformer aux réglementations et normes qui affectent votre organisation.
 
-- Le terme *archivage* tel qu’utilisé dans ce document fait référence à l’archivage dans le contexte d’une utilisation au sein d’une solution eIA (Enterprise Information Archiving). Les solutions EIA disposent de fonctionnalités eDiscovery qui produisent des documents pour des procédures juridiques, des litiges, des audits et des enquêtes. L’archivage dans le contexte de la sauvegarde et de la restauration utilisées pour la récupération d’urgence et la continuité d’activité n’est pas l’utilisation prévue du terme dans ce document.
+- Le terme *archivage* tel qu’utilisé dans ce document fait référence à l’archivage dans le contexte d’une utilisation dans une solution eIA (Enterprise Information Archiving). Les solutions EIA disposent de fonctionnalités eDiscovery qui produisent des documents pour des procédures juridiques, des litiges, des audits et des enquêtes. L’archivage dans le contexte de la sauvegarde et de la restauration utilisés pour la récupération d’urgence et la continuité d’activité n’est pas l’utilisation prévue du terme dans ce document.

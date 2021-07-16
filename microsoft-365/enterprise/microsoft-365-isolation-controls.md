@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 d’isolation
+title: Contrôles d'isolation Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,13 +17,13 @@ f1.keywords:
 description: Découvrez comment fonctionnent les contrôles d’isolation Microsoft 365, ce qui permet aux services d’inter-fonctionner ou de rester autonomes selon les besoins.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 514b12e44d9e81a18b691ebf3196a3d21157e71b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.sourcegitcommit: 27addd4dac07926528b788215d2dcd0e46301eb1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918941"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53464098"
 ---
-# <a name="microsoft-365-isolation-controls"></a>Microsoft 365 d’isolation 
+# <a name="microsoft-365-isolation-controls"></a>Contrôles d'isolation Microsoft 365 
 
 Microsoft s’assure en permanence que l’architecture multi-clients de Microsoft 365 prend en charge la sécurité, la confidentialité, la confidentialité, l’intégrité, les normes locales, internationales et de disponibilité au niveau de [l’entreprise.](https://www.microsoft.com/TrustCenter/Compliance?service=Office#Icons) L’échelle et l’étendue des services fournis par Microsoft rendent difficile et non économique la gestion des Microsoft 365 avec une interaction humaine significative. Microsoft 365 services sont fournis via plusieurs centres de données distribués globalement, chacun hautement automatisé avec peu d’opérations nécessitant une intervention humaine ou tout accès au contenu client. Notre personnel prend en charge ces services et centres de données à l’aide d’outils automatisés et d’un accès à distance hautement sécurisé. 
 
