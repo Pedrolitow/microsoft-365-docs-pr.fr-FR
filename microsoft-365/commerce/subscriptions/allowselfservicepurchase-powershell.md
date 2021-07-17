@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: Découvrez comment utiliser l’cmdlet AllowSelfServicePurchase PowerShell pour activer ou désactiver l’achat en libre-service.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 03/18/2021
-ms.openlocfilehash: fbba7f4385684a8a34f9feebc28a27e8e867bacb
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+ms.date: 07/16/2021
+ms.openlocfilehash: 77cb1c753db22929ea2c3d14226a3927e6406b89
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53227474"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461362"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Utiliser AllowSelfServicePurchase pour le module PowerShell MSCommerce
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser le module **PowerShell MSCommerce** pour :
 - Afficher la liste des produits applicables et si l’achat en libre-service est activé ou désactivé
 - Afficher ou modifier le paramètre actuel d’un produit spécifique pour l’activer ou le désactiver
 
-## <a name="requirements"></a>Conditions requises
+## <a name="requirements"></a>Configuration requise
 
 Pour utiliser le module **PowerShell MSCommerce,** vous devez :
 
@@ -103,8 +103,10 @@ Le tableau suivant répertorie les produits disponibles et leur **ProductId**.
 | Project (plan 1) | CFQ7TTC0KXND |
 | Project (plan 3) | CFQ7TTC0KXNC |
 | Visio (plan 1) | CFQ7TTC0KXN9 |
-| Visio (plan 2) | CFQ7TTC0KXN8 |
-
+| Visio (plan 2) | CFQ7TTC0KXN8 |
+| Windows 365 Enterprise | CFQ7TTC0HHS9 |
+| Windows 365 Business | CFQ7TTC0J203 |
+| Windows 365 Business avec Windows Hybrid Benefit | CFQ7TTC0HX99 |
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Afficher ou définir l’état de AllowSelfServicePurchase
 
 Une fois que vous avez vu la liste des produits disponibles pour l’achat en libre-service, vous pouvez afficher ou modifier le paramètre d’un produit spécifique.
