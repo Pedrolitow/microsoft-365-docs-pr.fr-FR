@@ -9,12 +9,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3ee0ca72f0eb3623755c9b342966915f520c485d
-ms.sourcegitcommit: 2abc6bf9939b14a427647e88f319dbb70de49ca6
+ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/16/2021
-ms.locfileid: "53458486"
+ms.locfileid: "53461386"
 ---
 # <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Prévisualiser et tester Windows 11 avec Microsoft Manged Desktop
 
@@ -24,7 +24,7 @@ ms.locfileid: "53458486"
 
 À ce jour, plus de 95 % des appareils Microsoft Manged Desktop répondent aux critères [d’éligibilité Windows 11](/windows/whats-new/windows-11-requirements). Vous pouvez demander des détails sur l’état d’éligibilité de vos appareils Microsoft Manged Desktop. Pour déposer la demande, suivez les étapes suivantes :
 
-1. Ouvrez une nouvelle demande de service avec l Microsoft Manged Desktop d’ingénierie de service. Si vous avez besoin d’informations supplémentaires sur la façon de fichierr la demande, consultez le [support de l’administrateur.](admin-support.md)
+1. Ouvrez une nouvelle demande de service avec l Microsoft Manged Desktop d’ingénierie de service. Si vous avez besoin d’informations supplémentaires sur la façon de déposer la demande, consultez le [support de l’administrateur.](admin-support.md)
 2. Utilisez ces valeurs pour les champs :
     - Titre : éligibilité Windows appareil 11
     - Type de demande : demande d’informations
@@ -52,7 +52,7 @@ Pour inscrire vos appareils dans le groupe de test pré-version :
 
 Les applications critiques pour l’entreprise sont les meilleures candidats pour une validation plus importante dans un environnement Windows 11. Nous pouvons vous aider à hiérarchiser les applications pour Windows 11 en fonction des données d’utilisation et de fiabilité. Pour demander nos recommandations, suivez les étapes suivantes :
 
-1. Ouvrez une nouvelle demande de service avec l Microsoft Manged Desktop d’ingénierie de service. Si vous avez besoin d’informations supplémentaires sur la façon de fichierr la demande, consultez le [support de l’administrateur.](admin-support.md)
+1. Ouvrez une nouvelle demande de service avec l Microsoft Manged Desktop d’ingénierie de service. Si vous avez besoin d’informations supplémentaires sur la façon de déposer la demande, consultez le [support de l’administrateur.](admin-support.md)
 2. Utilisez ces valeurs pour les champs :
     - Titre : Windows 11 candidats à la base de test
     - Type de demande : demande d’informations
