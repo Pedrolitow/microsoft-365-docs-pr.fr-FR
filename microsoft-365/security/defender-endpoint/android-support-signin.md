@@ -17,22 +17,22 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d57d1ac48a5be491e934831b54ad32ff319b1258
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246355"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590734"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Résolution des problèmes sur Microsoft Defender pour point de terminaison sur Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Lors de l’intégration d’un appareil, vous pouvez voir des problèmes de connectez-vous après l’installation de l’application.
 
@@ -61,13 +61,13 @@ Installer la dernière version et [les](https://play.google.com/store/apps/detai
 
 **Échec de la signature : licence** non *valide, contactez l’administrateur*
 
-![Image de l’échec de la signature: contactez l’administrateur](images/920e433f440fa1d3d298e6a2a43d4811.png)
+![Image de l’échec de la connectez-vous. Contactez l’administrateur](images/920e433f440fa1d3d298e6a2a43d4811.png)
 
 **Message : licence** *non valide, contactez l’administrateur*
 
 **Cause :**
 
-Vous n’avez pas Microsoft 365 licence attribuée ou votre organisation n’a pas de licence pour Microsoft 365 Entreprise abonnement.
+Vous n’avez pas Microsoft 365 licence attribuée ou votre organisation n’en a pas pour Microsoft 365 Entreprise abonnement.
 
 **Solution :**
 
@@ -83,7 +83,7 @@ Les sites web de hameçonnage usurpent l’identité de sites web dignes de conf
 
 -   **Érmi**
 
-L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils Android. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
+L’hameçonnage et les menaces web dangereuses détectées par Defender pour Endpoint pour Android ne sont pas bloqués sur certains appareils. Les fonctionnalités suivantes ne fonctionnent pas sur ces appareils.
 
 ![Image du site signalé comme dangereux](images/0c04975c74746a5cdb085e1d9386e713.png)
 

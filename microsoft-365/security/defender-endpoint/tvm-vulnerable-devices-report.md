@@ -1,7 +1,7 @@
 ---
 title: 'Rapport sur les appareils vulnérables : Gestion des menaces et des vulnérabilités'
 description: Rapport présentant les tendances des appareils vulnérables et les statistiques actuelles. L’objectif est que vous compreniez le bruit et l’étendue de l’exposition de votre appareil.
-keywords: Microsoft Defender pour les appareils vulnérables endpoint-tvm, Microsoft Defender pour le point de terminaison, tvm, réduire les menaces & exposition aux vulnérabilités, réduire les menaces et les vulnérabilités, surveiller la configuration de la sécurité
+keywords: Microsoft Defender pour les appareils vulnérables endpoint-tvm, Microsoft Defender pour point de terminaison, tvm, réduire les menaces & exposition aux vulnérabilités, réduire les menaces et vulnérabilités, surveiller la configuration de la sécurité
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,33 +18,33 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 355561936642b1fa38228bfa07ad59269c48d817
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 139b1ae75ff7fe98591f0053a526e8aec5266a5f
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245479"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567111"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Rapport sur les appareils vulnérables : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Le rapport présente des graphiques et des graphiques à barres avec des tendances d’appareils vulnérables et des statistiques actuelles. L’objectif est que vous compreniez le bruit et l’étendue de l’exposition de votre appareil.
 
-Accédez au rapport dans le Centre de sécurité Microsoft Defender en accédant à **Rapports > appareils vulnérables**
+Accédez au rapport dans le portail Microsoft 365 Defender en accédant à **Rapports > les appareils vulnérables**
 
 Il existe deux colonnes :
 
 - Tendances (au fil du temps). Peut afficher les 30 derniers jours, 3 mois, 6 mois ou une plage de dates personnalisée.
-- Aujourd’hui (informations actuelles)
+- État (informations actuelles)
 
 **Filtre :** vous pouvez filtrer les données par niveaux de gravité de vulnérabilité, disponibilité d’exploit, âge de vulnérabilité, plateforme du système d’exploitation, version Windows 10 ou groupe d’appareils.
 
@@ -54,31 +54,31 @@ Il existe deux colonnes :
 
 Chaque appareil est compté une seule fois en fonction de la vulnérabilité la plus grave trouvée sur cet appareil.
 
-![Graphique des niveaux de gravité de vulnérabilité actuels de l’appareil et graphique montrant les niveaux au fil du temps.](images/tvm-report-severity.png)
+:::image type="content" alt-text="Graphique des niveaux de gravité de vulnérabilité actuels de l’appareil et graphique montrant les niveaux au fil du temps." source="images/tvm-report-severity.png" lightbox="images/tvm-report-severity.png":::
 
 ## <a name="exploit-availability-graphs"></a>Exploiter les graphiques de disponibilité
 
 Chaque appareil est compté une seule fois en fonction du niveau d’exploitation connu le plus élevé.
 
-![Un graphique de la disponibilité actuelle de l’exploitation des appareils et un graphique montrant la disponibilité au fil du temps.](images/tvm-report-exploit-availability.png)
+:::image type="content" alt-text="Un graphique de la disponibilité actuelle de l’exploitation des appareils et un graphique montrant la disponibilité au fil du temps." source="images/tvm-report-exploit-availability.png" lightbox="images/tvm-report-exploit-availability.png":::
 
 ## <a name="vulnerability-age-graphs"></a>Graphiques de l’âge de vulnérabilité
 
 Chaque appareil est compté une seule fois sous la date de publication de la vulnérabilité la plus ancienne. Les vulnérabilités plus anciennes ont plus de chances d’être exploitées.
 
-![Graphique de l’âge actuel de vulnérabilité de l’appareil et graphique montrant l’âge au fil du temps.](images/tvm-report-age.png)
+:::image type="content" alt-text="Graphique de l’âge actuel de vulnérabilité de l’appareil et graphique montrant l’âge au fil du temps." source="images/tvm-report-age.png" lightbox="images/tvm-report-age.png":::
 
 ## <a name="vulnerable-devices-by-operating-system-platform-graphs"></a>Appareils vulnérables par graphiques de plateforme de système d’exploitation
 
 Nombre d’appareils sur chaque système d’exploitation exposés en raison de vulnérabilités logicielles.
 
-![Un graphique des appareils vulnérables actuels par plateforme de système d’exploitation et un graphique montrant les appareils vulnérables par les plateformes de système d’exploitation au fil du temps.](images/tvm-report-os.png)
+:::image type="content" alt-text="Un graphique des appareils vulnérables actuels par plateforme de système d’exploitation et un graphique montrant les appareils vulnérables par les plateformes de système d’exploitation au fil du temps." source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
 
 ## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Appareils vulnérables en Windows 10 graphiques de version
 
 Nombre d’appareils sur chaque version Windows 10 qui sont exposés en raison d’applications ou de système d’exploitation vulnérables.
 
-![Un graphique des appareils vulnérables actuels par version Windows 10 et un graphique montrant les appareils vulnérables par Windows 10 version au fil du temps.](images/tvm-report-version.png)
+![Un graphique des appareils vulnérables actuels par version Windows 10 et un graphique montrant les appareils vulnérables par Windows 10 version au fil du temps.](images/tvm-report-version.png)lightbox="images/tvm-report-version.png »:::
 
 ## <a name="related-topics"></a>Voir aussi
 

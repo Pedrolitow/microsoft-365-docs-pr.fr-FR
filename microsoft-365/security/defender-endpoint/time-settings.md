@@ -1,6 +1,6 @@
 ---
-title: Centre de sécurité Microsoft Defender de fuseau horaire
-description: Utilisez les informations contenues ici pour configurer les paramètres de fuseau Centre de sécurité Microsoft Defender et afficher les informations de licence.
+title: Microsoft 365 Defender de fuseau horaire
+description: Utilisez les informations contenues ici pour configurer les paramètres Microsoft 365 Defender fuseau horaire et afficher les informations de licence.
 keywords: paramètres, Microsoft Defender, veille contre les menaces de cybersécurité, Microsoft Defender pour le point de terminaison, fuseau horaire, utc, heure locale, licence
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,22 +16,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: df55a1b0e92c24b5f52032330ef95bf19aeb8cb3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d57d8f8aa361448ccc6c3b39703128a37352111c
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932630"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53568171"
 ---
-# <a name="microsoft-defender-security-center-time-zone-settings"></a>Centre de sécurité Microsoft Defender de fuseau horaire
+# <a name="microsoft-365-defender-time-zone-settings"></a>Microsoft 365 Defender de fuseau horaire
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-settings-abovefoldlink)
 
 Utilisez **l’icône 1** des paramètres de fuseau horaire du menu Fuseau horaire pour configurer le fuseau horaire et ![ afficher les informations de ](images/atp-time-zone.png) licence.
 
@@ -54,7 +54,7 @@ La définition du fuseau horaire De Microsoft Defender pour le point de terminai
 ### <a name="local-time-zone"></a>Fuseau horaire local
 Vous pouvez choisir que Microsoft Defender pour le point de terminaison utilise les paramètres de fuseau horaire local. Toutes les alertes et événements s’affichent à l’aide de votre fuseau horaire local.
 
-Le fuseau horaire local est pris à partir des paramètres régionaux de votre appareil. Si vous modifiez vos paramètres régionaux, le fuseau horaire de Microsoft Defender for Endpoint change également. Le choix de ce paramètre signifie que les timestamps affichés dans Microsoft Defender pour Endpoint seront alignés sur l’heure locale pour tous les utilisateurs de Microsoft Defender pour Endpoint. Les analystes situés dans différents emplacements globaux voient désormais les alertes De Microsoft Defender pour point de terminaison en fonction de leurs paramètres régionaux.
+Le fuseau horaire local est pris à partir des paramètres régionaux de votre appareil. Si vous modifiez vos paramètres régionaux, le fuseau horaire de Microsoft Defender for Endpoint change également. Le choix de ce paramètre signifie que les timestamps affichés dans Microsoft Defender pour Endpoint seront alignés sur l’heure locale pour tous les utilisateurs de Microsoft Defender pour endpoint. Les analystes situés dans différents emplacements globaux voient désormais les alertes De Microsoft Defender pour point de terminaison en fonction de leurs paramètres régionaux.
 
 Choisir d’utiliser l’heure locale peut être utile si les analystes se trouvent dans un emplacement unique. Dans ce cas, il peut être plus facile de mettre en corrélation les événements avec l’heure locale, par exemple, lorsqu’un utilisateur local clique sur un lien de courrier suspect.
 
@@ -83,7 +83,7 @@ Il existe des problèmes connus avec les formats d’heure et de date. Si vous c
 
 Les formats de date et d’heure suivants sont pris en charge :
 - Format de date MM/j j/aaie
-- Date format jd/MM/aaa
+- Date format jd/MM/a
 - Format d’heure hh:mm:ss (format 12 heures)
 
 Les formats de date et d’heure suivants ne sont actuellement pas pris en charge :

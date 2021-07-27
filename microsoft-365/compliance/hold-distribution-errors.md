@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Résoudre les erreurs liées aux conservations légales appliquées aux dépositaires et aux sources de données qui ne sont pas en conservation dans core eDiscovery.
-ms.openlocfilehash: b101bf92c6a304262b3886a4ce0280f427a4a847
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3e5cc6351d5026feda560bee646a1e6a03475ee2
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538470"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578516"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>Résoudre les erreurs de mise en suspens de la découverte électronique
 
@@ -36,7 +36,7 @@ Pour réduire le nombre d’erreurs liées aux conserves eDiscovery, nous vous r
 - Vérifiez si une stratégie de mise en attente est en attente avant d’y apporter d’autres mises à jour. Exécutez les commandes suivantes ou enregistrez-les dans un script PowerShell.
 
     ```powershell
-    $status = Get-CaseHoldPolicy -Identity <policyname> 
+    $status = Get-CaseHoldPolicy -Identity <policyname> -DistributionDetail
     if($status.DistributionStatus -ne "Pending"){
         # policy no longer pending
         Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user1
@@ -46,7 +46,7 @@ Pour réduire le nombre d’erreurs liées aux conserves eDiscovery, nous vous r
     }
    ```
 
-- Fusionnez vos mises à jour vers une mise en attente eDiscovery dans une seule demande en bloc au lieu de mettre à jour la stratégie de mise à jour à plusieurs reprises pour chaque transaction. Par exemple, pour ajouter plusieurs boîtes aux lettres utilisateur à une stratégie de blocage existante à l’aide de la cmdlet [Set-CaseHoldPolicy,](/powershell/module/exchange/set-caseholdpolicy) exécutez la commande (ou ajoutez-la en tant que bloc de code à un script) afin qu’elle ne s’exécute qu’une seule fois pour ajouter plusieurs utilisateurs.
+- Fusionnez vos mises à jour dans une mise en attente eDiscovery dans une seule demande en bloc au lieu de mettre à jour la stratégie de mise à jour à plusieurs reprises pour chaque transaction. Par exemple, pour ajouter plusieurs boîtes aux lettres utilisateur à une stratégie de blocage existante à l’aide de la cmdlet [Set-CaseHoldPolicy,](/powershell/module/exchange/set-caseholdpolicy) exécutez la commande (ou ajoutez-la en tant que bloc de code à un script) afin qu’elle ne s’exécute qu’une seule fois pour ajouter plusieurs utilisateurs.
 
   **Correct**
 
@@ -72,7 +72,7 @@ Pour réduire le nombre d’erreurs liées aux conserves eDiscovery, nous vous r
 
 Si vous voyez l’un des messages d’erreur suivants lors de la mise en attente des dépositaires et des sources de données, utilisez les étapes de résolution pour résoudre le problème.
 
-> Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez-le dans quelques heures.
+> Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez donc dans quelques heures.
 
 > La stratégie ne peut pas être déployée sur la source de contenu en raison d’un problème Office 365 de centre de données temporaire. La stratégie actuelle n’est appliquée à aucun contenu de la source, donc le déploiement bloqué n’a aucun impact. Pour résoudre ce problème, essayez de redéployer la stratégie.
 
@@ -88,7 +88,7 @@ Si vous voyez l’un des messages d’erreur suivants lors de la mise en attente
 
 2. Examinez la valeur dans le *paramètre DistributionDetail.* Recherchez les erreurs suivantes :
 
-   > Erreur : Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez-le dans quelques heures.
+   > Erreur : Ressources : le déploiement de la stratégie prend plus de temps que prévu. La mise à jour de l’état de déploiement final peut prendre 2 heures supplémentaires. Vérifiez donc dans quelques heures.
 
 3. Essayez d’exécution de la commande **Set-CaseHoldPolicy -RetryDistribution** sur la stratégie de mise en attente en question ; par exemple :
 
@@ -124,7 +124,7 @@ Si vous voyez le message d’erreur suivant lors de la mise en attente des dépo
 
 Les instructions sur la mise à jour des stratégies de blocage pour plusieurs utilisateurs dans la section « Pratiques recommandées » résultent du fait que le système bloque les mises à jour simultanées d’une stratégie de blocage. Cela signifie que lorsqu’une stratégie de mise à jour de mise en attente est appliquée aux nouveaux emplacements de contenu et que la stratégie de mise en attente est dans un état en attente, des emplacements de contenu supplémentaires ne peuvent pas être ajoutés à la stratégie de mise en attente. Voici quelques éléments à garder à l’esprit pour vous aider à atténuer ce problème :
   
-- Chaque fois qu’une mise à jour de la mise à jour d’une mise en attente est mise à jour, elle passe immédiatement dans un état en attente. L’état d’état en attente signifie que la attente est appliquée aux emplacements de contenu.
+- Chaque fois qu’une mise à jour de la mise à jour d’une mise en attente est mise à jour, elle passe immédiatement à l’état en attente. L’état d’état en attente signifie que la attente est appliquée aux emplacements de contenu.
   
 - Si vous avez un script qui exécute une boucle et ajoute des emplacements à la stratégie un par un (semblable à l’exemple incorrect présenté dans la section « Pratiques recommandées », le premier emplacement de contenu (par exemple, une boîte aux lettres utilisateur) lance le processus de synchronisation qui déclenche l’état en attente. Cela signifie que les autres utilisateurs ajoutés à la stratégie dans les boucles suivantes entraînent une erreur.
   

@@ -1,8 +1,9 @@
 ---
-title: Utiliser la taxonomie du magasin de termes lors de la création d’un extracteur
-ms.author: efrene
-author: efrene
+title: Tirez parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Utilisez la taxonomie du magasin de termes lors de la création d’un extracteur dans votre modèle de compréhension de document via Microsoft SharePoint Syntex.
-ms.openlocfilehash: b8dfc028e0a18f3345fec466ec5e0079ed2d11ce
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ccc6b7d268a91d1febcbd760e8be560304c0e0d7
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925343"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578576"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Utiliser la taxonomie du magasin de termes lors de la création d’un extracteur
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor-in-microsoft-sharepoint-syntex"></a>Tirez parti de la taxonomie du magasin de termes lors de la création d’un extracteur dans Microsoft SharePoint Syntex
 
 </br>
 
@@ -44,7 +45,6 @@ Plusieurs raisons peuvent expliquer le désir d’utiliser un synonyme de votre 
 Pour pouvoir sélectionner le champ de métadonnées gérées lorsque vous créez l’extracteur dans votre modèle, vous devez [l’ajouter en tant que colonne de site de métadonnées gérées](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f). Après avoir ajouté la colonne de site, vous pouvez la sélectionner lorsque vous créez l’extracteur pour votre modèle.
 
    ![Service de contrat](../media/content-understanding/contract-services.png)</br>
-
 
 Une fois votre modèle appliqué à la bibliothèque de documents, lors du chargement des documents dans la bibliothèque, la colonne *Services de création* affiche le terme recommandé (*Créatif*) quand l’extracteur trouve l’une des valeurs synonymes (*Conception*, *Graphiques* et *Topographie*).
 

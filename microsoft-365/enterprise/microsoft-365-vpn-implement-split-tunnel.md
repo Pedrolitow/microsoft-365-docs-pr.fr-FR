@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Comment implémenter un tunnel VPN partagé pour Office 365
-ms.openlocfilehash: c2195eb9e3af3c591ff59d0b0f87583455b9b119
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 2ec4cd8b3730c93a6de30e59087beaff788992dd
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843649"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578588"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implémentation d'un tunnel VPN partagé pour Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52843649"
 
 Depuis de nombreuses années, les entreprises utilisent des VPN pour prendre en charge les expériences à distance pour leurs utilisateurs. Bien que les charges de travail principales soient restées en local, un réseau privé virtuel (VPN) du client distant routé via un centre de données sur le réseau d’entreprise constituait la méthode principale permettant aux utilisateurs distants d’accéder aux ressources de l’entreprise. Pour protéger ces connexions, les entreprises construisent des couches de solutions de sécurité réseau sur les chemins VPN. Cette sécurité a été conçue pour protéger l’infrastructure interne et pour protéger la navigation mobile des sites web externes en réroutant le trafic vers le VPN, puis via le périmètre Internet local. Les VPN, les périmètres réseau et l’infrastructure de sécurité associée ont souvent été conçus et mis à l’échelle pour un volume défini de trafic, généralement avec la plupart de la connectivité initiée à partir du réseau d’entreprise et la plupart d’entre elles restant dans les limites du réseau interne.
 
-Pendant un certain temps, les modèles VPN où toutes les connexions à partir de l’appareil utilisateur distant sont routés vers le réseau local (appelées **tunnel imposé**) étaient très durables tant que l’échelle simultanée des utilisateurs distants était modeste et que les volumes de trafic qui traversent le réseau privé (VPN) étaient faibles.  Certains clients ont continué à utiliser le tunnel de force VPN comme état de fait, même après que leurs applications soient déplacées de l'intérieur du périmètre de l'entreprise vers des clouds SaaS publics, Office 365 étant un excellent exemple.
+Pendant un certain temps, les modèles VPN où toutes les connexions à partir de l’appareil utilisateur distant sont routés vers le réseau local (appelées _tunnel imposé_) étaient très durables tant que l’échelle simultanée des utilisateurs distants était modeste et que les volumes de trafic qui traversent le réseau privé (VPN) étaient faibles.  Certains clients ont continué à utiliser le tunnel de force VPN comme état de fait, même après que leurs applications soient déplacées de l'intérieur du périmètre de l'entreprise vers des clouds SaaS publics, Office 365 étant un excellent exemple.
 
 L’utilisation de VPN tunnelés forcés pour la connexion à des applications cloud distribuées et sensibles aux performances est sous-optimale, mais l’effet négatif de cette opération a peut-être été accepté par certaines entreprises afin de maintenir le quo du point de vue de la sécurité. Un exemple de diagramme de ce scénario est illustré ci-dessous :
 
@@ -41,7 +41,7 @@ L’utilisation de VPN tunnelés forcés pour la connexion à des applications c
 
 This problem has been growing for many years, with many customers reporting a significant shift of network traffic patterns. Le trafic qui était utilisé pour rester sur site se connecte désormais aux points de terminaison cloud externes. De nombreux clients Microsoft signalaient qu’auparavant, environ 80% du trafic réseau était une source interne (représentée par une ligne pointillée dans le diagramme ci-dessus). En 2020, ce nombre est à présent environ 20% ou plus, car les charges de travail majeures ont été déplacées vers le cloud, mais ces tendances ne sont pas rares pour les autres entreprises. Au fil du temps, au fur et à mesure de l’avancement du projet, le modèle ci-dessus devient de plus en plus encombrant et peu viable, empêchant une organisation d'être flexible au fur et à mesure de son déplacement dans un premier monde de cloud.
 
-La crise mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien positionnée pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume important de trafic Office 365 qui, s’il est acheminé via un tunnel forcé VPN et des périmètres réseau locaux, entraîne une saturation rapide et exécute l’infrastructure VPN hors capacité. Dans cette nouvelle réalité, l’utilisation du VPN pour accéder à Office 365 n’est plus seulement un obstacle aux performances, mais un mur dur qui non seulement a un impact sur les Office 365 mais également sur les opérations d’entreprise critiques qui doivent encore s’appuyer sur le VPN pour fonctionner.
+La crise mondiale de grippe COVID-19 a aggravé ce problème et exige des mesures correctives immédiates. La nécessité d'assurer la sécurité des employés a généré des demandes sans précédent en matière de technologies de l'information pour prendre en charge la productivité du travail à domicile à une échelle massive. Microsoft Office 365 est bien positionnée pour aider les clients à répondre à cette demande, mais la forte concurrence des utilisateurs travaillant à domicile génère un volume important de trafic Office 365 qui, s’il est acheminé via un tunnel forcé VPN et des périmètres réseau locaux, entraîne une saturation rapide et exécute l’infrastructure VPN hors capacité. Dans cette nouvelle réalité, l’utilisation du VPN pour accéder à Office 365 n’est plus seulement un obstacle aux performances, mais un mur dur qui non seulement a un impact sur Office 365 mais également sur les opérations d’entreprise critiques qui doivent encore s’appuyer sur le VPN pour fonctionner.
 
 Microsoft travaille en étroite collaboration avec des clients et une grande industrie depuis de nombreuses années afin d’offrir des solutions efficaces et modernes à ces problèmes à partir de nos propres services et de s’adapter aux meilleures pratiques industrielles. Les [principes de connectivité](./microsoft-365-network-connectivity-principles.md) du service Office 365 ont été conçus pour fonctionner de manière efficace pour les utilisateurs distants tout en permettant à une organisation de maintenir la sécurité et le contrôle de leur connectivité. Ces solutions peuvent également être implémentées rapidement avec un travail limité tout en ayant un impact positif significatif sur les problèmes décrits ci-dessus.
 
@@ -110,7 +110,7 @@ Les URL dans cette catégorie présentent les caractéristiques suivantes :
 - Sont-ils en mesure d'avoir les éléments de sécurité requis fournis dans le service plutôt qu'en ligne sur le réseau
 - Représente environ 70 à 80% du volume de trafic vers le service Office 365
 
-Pour plus d’informations sur les points de terminaison Office 365 et la manière dont ils sont classés et gérés, voir l’article [Gestion des points de terminaison Office 365](managing-office-365-endpoints.md).
+Pour plus d’informations Office 365 points de terminaison et comment ils sont catégorisés et [gérés, voir Managing Office 365 endpoints](managing-office-365-endpoints.md).
 
 #### <a name="optimize-urls"></a>Optimiser les URL
 
@@ -120,7 +120,7 @@ Les URL optimisées actuelles sont accessibles dans le tableau ci-dessous. Dans 
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | Il s’agit de l’une des principales URL qu’Outlook utilise pour se connecter à son serveur Exchange Online et qui présente un volume élevé d’utilisation de la bande passante et de nombre de connexions. Une latence de réseau faible est requise pour les fonctionnalités en ligne telles que la recherche instantanée, les autres calendriers de boîte aux lettres, la recherche de disponibilités, la gestion des règles et alertes, l’archivage Exchange Online, les courriers électroniques faisant partie de la boîte d’envoi. |
 | <https://outlook.office.com> | TCP 443 | Cette URL est utilisée par Outlook Online Web Access pour se connecter au serveur Exchange Online, et est sensible à la latence du réseau. La connectivité est particulièrement nécessaire pour le chargement et le téléchargement de fichiers volumineux avec SharePoint Online. |
-| https:// \<tenant\> .sharepoint.com | TCP 443 | Il s’agit de l’URL principale de SharePoint Online avec une utilisation à bande passante élevée. |
+| https:// \<tenant\> .sharepoint.com | TCP 443 | Il s’agit de l’URL principale pour SharePoint Online avec une utilisation à bande passante élevée. |
 | https:// \<tenant\> -my.sharepoint.com | TCP 443 | Il s’agit de l’URL principale de OneDrive Entreprise et de l’utilisation de la bande passante élevée et éventuellement d’un nombre élevé de connexions à partir de l’outil de synchronisation OneDrive Entreprise. |
 | Adresses IP des médias Teams (aucune URL) | UDP 3478, 3479, 3480, et 3481 | Allocation de découverte de relais et trafic en temps réel (3478), audio (3479), vidéo (3480) et partage d’écran vidéo (3481). Voici les points de terminaison utilisés pour Skype Entreprise et Microsoft Teams trafic multimédia (appels, réunions, etc.). La plupart des points de terminaison sont fournis lorsque le client Microsoft Teams établit un appel (et est inclus dans les adresses IP requises répertoriées pour le service). L’utilisation du protocole UDP est nécessaire pour optimiser la qualité des médias.   |
 
@@ -128,7 +128,7 @@ Dans les exemples ci-dessus, **locataire** doit être remplacé par le nom de vo
 
 #### <a name="optimize-ip-address-ranges"></a>Optimiser les plages d’adresses IP
 
-Au moment de l’écriture, les plages d’adresses IP correspondant à ces points de terminaison sont les suivantes. Il  est vivement recommandé d’utiliser un [script](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) tel que cet exemple, le [service web OFFICE 365 IP](microsoft-365-ip-web-service.md) et URL ou la [page URL/IP](urls-and-ip-address-ranges.md) pour vérifier les mises à jour lors de l’application de la configuration et mettre en place une stratégie pour le faire régulièrement.
+Au moment d’écrire les plages d’adresses IP correspondant à ces points de terminaison sont les suivantes. Il  est vivement recommandé d’utiliser un [script](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) tel que cet exemple, le [service web OFFICE 365 IP](microsoft-365-ip-web-service.md) et URL ou la [page URL/IP](urls-and-ip-address-ranges.md) pour vérifier les mises à jour lors de l’application de la configuration et mettre en place une stratégie pour le faire régulièrement.
 
 ```
 104.146.128.0/17
@@ -141,7 +141,6 @@ Au moment de l’écriture, les plages d’adresses IP correspondant à ces poin
 132.245.0.0/16
 150.171.32.0/22
 150.171.40.0/22
-191.234.140.0/22
 204.79.197.215/32
 23.103.160.0/20
 40.104.0.0/15
@@ -175,7 +174,7 @@ Une fois que vous avez ajouté les itinéraires, vous pouvez vérifier que la ta
 
 ![Sortie d’impression d’itinéraire](../media/vpn-split-tunneling/vpn-route-print.png)
 
-Pour ajouter des itinéraires pour **tous** les plages d’adresses IP actuelles dans la catégorie Optimiser, vous pouvez utiliser la variante de script suivante pour interroger le [Service web Office 365 IP et URL](microsoft-365-ip-web-service.md) pour l’ensemble actuel de sous-réseaux IP et les ajouter à la table d’itinéraires.
+Pour ajouter des itinéraires pour _tous_ les plages d’adresses IP actuelles dans la catégorie Optimiser, vous pouvez utiliser la variante de script suivante pour interroger le [Service web Office 365 IP et URL](microsoft-365-ip-web-service.md) pour l’ensemble actuel de sous-réseaux IP et les ajouter à la table d’itinéraires.
 
 #### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>Exemple : ajouter des sous-réseaux Optimiser dans la table des itinéraires
 
@@ -248,7 +247,7 @@ Une fois la stratégie en place, vous devez vérifier qu’elle fonctionne comme
 
 - Exécutez le [test Microsoft 365 de](https://aka.ms/netonboard) connectivité qui exécutera pour vous des tests de connectivité, y compris des itinéraires de suivi comme ci-dessus. Nous ajoutons également dans cet outil des tests VPN qui doivent également fournir des informations supplémentaires.
 
-- Un traceur simple à un point de terminaison dans la portée du tunnel partagé doit afficher la trajectoire prise, par exemple :
+- Un simple **tracert vers un** point de terminaison dans l’étendue du tunnel partagé doit afficher le chemin d’accès pris, par exemple :
 
   ```powershell
   tracert worldaz.tr.teams.microsoft.com
@@ -276,13 +275,13 @@ Cette section fournit des liens vers des guides détaillés pour l’implémenta
 
 ## <a name="faq"></a>FAQ
 
-L’équipe de sécurité Microsoft a publié un [article](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) qui décrit les principales façons pour les professionnels de la sécurité et les services informatiques peuvent obtenir des contrôles de sécurité modernes dans les scénarios de travail à distance uniques d’aujourd’hui. De plus, vous trouverez ci-dessous quelques-unes des questions et réponses les plus fréquemment posées à ce sujet.
+L’équipe de sécurité Microsoft a publié d’autres méthodes pour les professionnels de la sécurité et les services informatiques afin d’obtenir des contrôles de sécurité modernes dans les scénarios de travail à distance uniques [d’aujourd’hui,](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)un billet de blog qui décrit les principales façons pour les professionnels de la sécurité et les services informatiques d’obtenir des contrôles de sécurité modernes dans les scénarios de travail à distance uniques d’aujourd’hui. De plus, vous trouverez ci-dessous quelques-unes des questions et réponses les plus fréquemment posées à ce sujet.
 
 ### <a name="how-do-i-stop-users-accessing-other-tenants-i-do-not-trust-where-they-could-exfiltrate-data"></a>Comment empêcher les utilisateurs d'accéder à d'autres locataires en qui je n'ai pas confiance et où ils pourraient exfiltrer des données ?
 
 La réponse est une [fonctionnalité de appelée restrictions de locataire](/azure/active-directory/manage-apps/tenant-restrictions). Le trafic d'authentification n'est pas très volumineux ni particulièrement sensible à la latence. Il peut donc être envoyé par la solution VPN au proxy sur site où la fonction est appliquée. Une liste d’autorisation des clients de confiance est conservée ici et si le client tente d’obtenir un jeton à un client qui n’est pas approuvé, le proxy refuse simplement la demande. Si le locataire est digne de confiance, un jeton est accessible si l'utilisateur a les informations d'identification et les droits appropriés.
 
-Ainsi, même si un utilisateur peut établir une connexion TCP/UDP aux points de terminaison marqués Optimiser ci-dessus, sans jeton valide pour accéder au client en question, il ne peut simplement pas se connecter et accéder à des données ou les déplacer.
+Ainsi, même si un utilisateur peut établir une connexion TCP/UDP aux points de terminaison marqués Optimiser ci-dessus, sans jeton valide pour accéder au client en question, il ne peut simplement pas se connecter et accéder/déplacer des données.
 
 ### <a name="does-this-model-allow-access-to-consumer-services-such-as-personal-onedrive-accounts"></a>Ce modèle autorise-t-il l’accès aux services grand public tels que les comptes OneDrive personnels ?
 
@@ -316,7 +315,7 @@ Plusieurs fournisseurs proposent également des solutions de proxy/sécurité ba
 
 Cependant, même avec ces solutions en place, Microsoft recommande fortement que le trafic Office 365 marqué Optimiser soit envoyé directement au service.
 
-Pour obtenir des instructions sur l’autorisation d’accès direct à un réseau virtuel Azure, consultez l’article [Travail à distance à l'aide du point à site de la passerelle VPN Azure](/azure/vpn-gateway/work-remotely-support).
+Pour obtenir des instructions sur l’accès direct à un réseau virtuel Azure, voir Travail à distance à l’aide de la passerelle [VPN Azure point à site.](/azure/vpn-gateway/work-remotely-support)
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>Pourquoi le port 80 est-il obligatoire ? Le trafic est-il envoyé en clair ?
 

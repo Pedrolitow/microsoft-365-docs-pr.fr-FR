@@ -16,24 +16,24 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: 1db046d4001c2e8573b1e8bfb2274f9a58aaf3a3
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998787"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590778"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Répondez rapidement aux attaques détectées en arrêtant et en bloquant des fichiers ou en bloquant un fichier. Après avoir pris des mesures sur les fichiers, vous pouvez vérifier les détails de l’activité dans le centre de l’action.
 
@@ -144,9 +144,31 @@ Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez détermi
 
 La sélection **du fichier de téléchargement** dans les actions de réponse vous permet de télécharger une archive locale .zip par mot de passe contenant votre fichier. Un flyout s’affiche où vous pouvez enregistrer une raison pour télécharger le fichier et définir un mot de passe.
 
-Par défaut, vous ne pourrez pas télécharger les fichiers en quarantaine.
+Par défaut, vous devez être en mesure de télécharger les fichiers en quarantaine.
 
 ![Image de l’action de téléchargement de fichier](images/atp-download-file-action.png)
+
+### <a name="download-quarantined-files"></a>Télécharger les fichiers mis en quarantaine
+
+Les fichiers qui ont été mis en quarantaine par Antivirus Microsoft Defender ou votre équipe de sécurité seront enregistrés conformément à vos [exemples de configurations d’envoi.](enable-cloud-protection-microsoft-defender-antivirus.md) Votre équipe de sécurité peut télécharger les fichiers directement à partir de la page de détails du fichier via le bouton « Télécharger le fichier ». **Cette fonctionnalité d’aperçu est « allumée » par défaut.**
+
+L’emplacement dépend des paramètres géographiques de votre organisation (UE, Royaume-Uni ou États-Unis). Un fichier mis en quarantaine ne sera collecté qu’une seule fois par organisation. En savoir plus sur la protection des données de Microsoft à partir du portail d’confiance des services sur https://aka.ms/STP .
+
+Si ce paramètre est allumé, les équipes de sécurité peuvent examiner les fichiers potentiellement dangereux et examiner les incidents rapidement et de manière moins risquée. Toutefois, si vous devez désactiver ce paramètre, Paramètres les fonctionnalités avancées des points de terminaison téléchargent les fichiers mis en quarantaine pour  >    >    >   ajuster le paramètre. [En savoir plus sur les fonctionnalités avancées](advanced-features.md)
+
+#### <a name="backing-up-quarantined-files"></a>Backing up quarantined files
+
+Les utilisateurs peuvent être invités à fournir un consentement explicite avant de la backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
+
+Cette fonctionnalité ne fonctionne pas si l’envoi d’exemples est désactivé. Si la soumission automatique d’échantillons est définie pour demander l’autorisation à l’utilisateur, seuls les exemples que l’utilisateur accepte d’envoyer seront collectés.
+
+>[!IMPORTANT]
+>Télécharger les conditions requises pour les fichiers mis en quarantaine :
+>- Votre organisation utilise Antivirus Microsoft Defender en mode actif 
+>- La version du moteur antivirus est la version 1.1.17300.4 ou ultérieure. Voir [les versions mensuelles de la plateforme et du moteur](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+>- La protection basée sur le cloud est activée. Voir [Activer la protection cloud](enable-cloud-protection-microsoft-defender-antivirus.md)
+>- L’envoi d’exemples est allumé
+>- Les appareils Windows 10 version 1703 ou ultérieure, ou Windows server 2016 ou 2019
 
 ### <a name="collect-files"></a>Collecter des fichiers
 
@@ -189,7 +211,7 @@ Vous pouvez également modifier les indicateurs à partir de la page **Paramètr
 
 ## <a name="consult-a-threat-expert"></a>Consulter un spécialiste des menaces
 
-Consultez un expert microsoft en matière de menaces pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft sont en action directement à partir du Centre de sécurité Microsoft Defender pour une réponse précise et opportune. Les experts fournissent des informations sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblée. Ils peuvent également fournir des informations sur les alertes ou un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
+Consultez un expert microsoft en matière de menaces pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft sont en action directement à partir du portail Microsoft 365 Defender pour une réponse précise et opportune. Les experts fournissent des informations sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblée. Ils peuvent également fournir des informations sur les alertes ou un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
 
 Pour [plus d’informations, consultez un expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) microsoft en matière de menaces.
 

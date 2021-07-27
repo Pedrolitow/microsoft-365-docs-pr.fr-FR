@@ -13,15 +13,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Déployez le package de configuration sur un appareil vDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service de protection contre la perte de données Microsoft 365 point de terminaison.
-ms.openlocfilehash: 64d9bfed3d1d5600b5843c697e894577f83527fe
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Déployez le package de configuration sur un appareil VDI (Virtual Desktop Infrastructure) afin qu’il soit intégré au service de protection contre la perte de données Microsoft 365 point de terminaison.
+ms.openlocfilehash: 1e4987ba2d261c715395ed1869f597da91b5cfed
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53226874"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567319"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Intégrer les ordinateurs virtuels d’infrastructure de bureau virtuel (VDI) non persistants.
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>Intégrer des périphériques d’infrastructure de bureau virtuel non persistants
 
 **S’applique à :**
 - [Microsoft 365 Protection contre la perte de données (DLP) de point de terminaison](./endpoint-dlp-learn-about.md)
@@ -33,7 +33,7 @@ ms.locfileid: "53226874"
 
 ## <a name="onboard-vdi-devices"></a>Appareils VDI intégrés
 
-Microsoft 365 La protection contre la perte de données de point de terminaison prend en charge l’intégration de session VDI non persistante.
+Microsoft 365 La protection contre la perte de données de point de terminaison prend en charge l’intégration de session VDI (Virtual Desktop Infrastructure) non persistante.
 
 > [!NOTE]
 > Pour intégrer des sessions VDI non persistantes, les appareils VDI doivent être sur Windows 10 1809 ou supérieure.
@@ -56,7 +56,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 1. Ouvrez le fichier de package de configuration VDI .zip (*DeviceCompliancePackage.zip*) que vous avez téléchargé à partir de l’Assistant d’intégration de service.
 
-2. Dans le volet de navigation, sélectionnez **Paramètres** intégration de  >    >  **l’appareil.**
+2. Dans le volet de navigation, sélectionnez **Paramètres**  >  **intégration de**  >  **l’appareil.**
 
 3. Dans le **champ Méthode de** déploiement, sélectionnez les **scripts d’intégration VDI pour les** points de terminaison non persistants.
 
@@ -96,7 +96,7 @@ Les étapes suivantes vous guident tout au long de l’intégration des appareil
 
 11. Cliquez **sur La liste Appareils** dans le volet de navigation.
 
-12. Utilisez la fonction de recherche en entrant le nom de l’appareil et **sélectionnez Appareil** comme type de recherche.
+12. Utilisez la fonction de recherche en entrant le nom de l’appareil et sélectionnez **Appareil** comme type de recherche.
 
 ## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Mise à jour d’images VDI (Virtual Desktop Infrastructure) non persistantes
 

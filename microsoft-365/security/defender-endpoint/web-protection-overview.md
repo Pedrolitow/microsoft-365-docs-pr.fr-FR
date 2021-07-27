@@ -1,5 +1,5 @@
 ---
-title: Protection web
+title: Protection Web
 description: En savoir plus sur la protection web dans Microsoft Defender pour point de terminaison et sur la façon dont elle peut protéger votre organisation
 keywords: protection web, protection contre les menaces web, navigation web, sécurité, hameçonnage, programmes malveillants, attaque, sites web, protection réseau, Edge, Internet Explorer, Chrome, Firefox, navigateur web, sites web malveillants
 search.product: eADQiWindows 10XVcnh
@@ -16,27 +16,27 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eed208da92f7e196cc71dab4e9d32e5666f3f6a4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5f65712fb3d1148d53361b97c75817792bedc198
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844201"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567055"
 ---
-# <a name="web-protection"></a>Protection web
+# <a name="web-protection"></a>Protection Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protection web dans Microsoft Defender pour le point de terminaison est une fonctionnalité de [protection contre](web-threat-protection.md) les menaces Web et de filtrage de [contenu Web.](web-content-filtering.md) La protection Web vous permet de sécuriser vos appareils contre les menaces web et de contrôler le contenu indésirable. Vous pouvez trouver des rapports de protection Web dans le Centre de sécurité Microsoft Defender en allant à **Rapports > protection Web**.
+La protection web dans Microsoft Defender pour le point de terminaison est une fonctionnalité de [protection contre](web-threat-protection.md) les menaces Web et de filtrage de [contenu Web.](web-content-filtering.md) La protection Web vous permet de sécuriser vos appareils contre les menaces web et de contrôler le contenu indésirable. Vous pouvez trouver des rapports de protection Web dans le portail Microsoft 365 Defender en allant à **Rapports > protection Web.**
 
-![Image de toutes les cartes de protection web](images/web-protection.png)
+:::image type="content" alt-text="Image de toutes les cartes de protection web" source="images/web-protection.png" lightbox="images/web-protection.png":::
 
 ## <a name="web-threat-protection"></a>Protection contre les menaces web
 
@@ -49,7 +49,7 @@ La protection contre les menaces web inclut :
 
 ## <a name="web-content-filtering"></a>Filtrage du contenu web
 
-Les cartes qui composent le filtrage de contenu web sont l’activité **Web** par catégorie, le résumé du filtrage de contenu **Web** et le résumé des **activités Web.**
+Les cartes qui comprennent le filtrage de contenu web sont l’activité **Web** par catégorie, le résumé du filtrage de contenu **Web** et le résumé des **activités Web.**
 
 Le filtrage de contenu Web inclut :
 - Les utilisateurs ne peuvent pas accéder aux sites web dans les catégories bloquées, qu’ils naviguent en local ou en de suite

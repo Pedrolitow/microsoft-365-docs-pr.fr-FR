@@ -1,8 +1,9 @@
 ---
-title: Analyse de l’utilisation du modèle de compréhension de document
-ms.author: efrene
-author: efrene
+title: Analyse de l’utilisation du modèle de compréhension de document dans Microsoft SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,15 +12,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Découvrez comment appliquer une étiquette de rétention à un modèle de compréhension de document
-ms.openlocfilehash: 92115d8b1985fa84cd72671442aca18f255355de
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+description: Découvrez comment rechercher et utiliser l’analyse de l’utilisation pour un modèle de compréhension de document.
+ms.openlocfilehash: 5eca389519dbab7038ef774d8f096e61017d0155
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080422"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578540"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>Analyse de l’utilisation du modèle de compréhension de document
+# <a name="document-understanding-model-usage-analytics-in-microsoft-sharepoint-syntex"></a>Analyse de l’utilisation du modèle de compréhension de document dans Microsoft SharePoint Syntex
 
 </br>
 
@@ -28,7 +29,7 @@ ms.locfileid: "50080422"
 </br>
 
 
-Votre centre de contenu Microsoft SharePoint Syntex procède à une analyse de l’utilisation du modèle. Vous bénéficiez ainsi d’informations supplémentaires sur l’utilisation des modèles publiés depuis le centre de contenu. La section <b>Fonctionnement de vos modèles au cours des 30 derniers jours</b> du centre de contenu inclut un regroupement de 30 jours des données d’analyse de l’utilisation fournies dans les graphiques et listes suivants :
+Votre centre de contenu SharePoint Syntex procède à une analyse de l’utilisation du modèle. Vous bénéficiez ainsi d’informations supplémentaires sur l’utilisation des modèles publiés depuis le centre de contenu. La section <b>Fonctionnement de vos modèles au cours des 30 derniers jours</b> du centre de contenu inclut un regroupement de 30 jours des données d’analyse de l’utilisation fournies dans les graphiques et listes suivants :
 
 - Classification par modèle
 - Classification par bibliothèque
@@ -40,7 +41,7 @@ Votre centre de contenu Microsoft SharePoint Syntex procède à une analyse de l
 
 Dans SharePoint Syntex, le programme crée le centre de contenu par défaut pendant l’installation. Vous pouvez également créer des centres de contenu supplémentaires selon vos besoins. Par exemple, les services peuvent créer leurs propres centres de contenu pour créer et gérer leurs modèles. 
 
-En ce qui concerne les données d’analyse de l’utilisation du modèle, notez les points suivants :
+En ce qui concerne les données d’analyse de l’utilisation du modèle, notez les points suivants :
 
 - Votre centre de contenu par défaut affiche les données d’analyse de l’utilisation des modèles pour l’ensemble des centres de contenu et modèles de votre organisation, y compris ceux créés dans d’autres centres de contenu. Les responsables de contenu et les autres parties prenantes bénéficient ainsi d’un portail centralisé pour gérer et superviser les centres de contenu et les modèles dans toute l’entreprise.  
 - Les autres centres de contenu affichent uniquement les données d’analyse de l’utilisation des modèles pour les modèles qui y ont été créés. Les gestionnaires de contenu disposent ainsi des données d’utilisation des seuls modèles qui les intéressent.
@@ -68,11 +69,11 @@ La liste Utilisation des modèles affiche l’analyse de l’utilisation des mod
 > [!NOTE]
 > Si vous êtes dans le centre de contenu par défaut et que vous disposez de centres de contenu supplémentaires dans votre organisation, le programme regroupe la liste d’utilisation des modèles par centre de contenu.
 
-Chaque modèle dans la liste d’utilisation des modèles affiche les données d’utilisation :
+Chaque modèle dans la liste d’utilisation des modèles affiche les données d’utilisation :
 
-- Nombre d’éléments classés : nombre de fichiers traités par le modèle.
-- Score de confiance moyen : score de précision moyenne du modèle lors de l’exécution du programme sur des fichiers.
-- URL de liste cible : bibliothèque de documents SharePoint à laquelle le modèle s’applique.
+- Nombre d’éléments classés : nombre de fichiers traités par le modèle.
+- Score de confiance moyen : score de précision moyenne du modèle lors de l’exécution du programme sur des fichiers.
+- URL de liste cible : bibliothèque de documents SharePoint à laquelle le modèle s’applique.
 
 
 

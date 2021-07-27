@@ -1,7 +1,7 @@
 ---
 title: 'Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités'
 description: Découvrez comment rechercher et atténuer les vulnérabilités « zero-day » dans votre environnement à l’Gestion des menaces et des vulnérabilités.
-keywords: Vulnérabilités microsoft Defender pour endpoint tvm zero day, tvm, threat & gestion des vulnérabilités, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
+keywords: Vulnérabilités microsoft Defender pour endpoint tvm zero day, tvm, menaces & gestion des vulnérabilités, jour zéro, 0 jour, atténuer les vulnérabilités de 0 jour, vulnérabilités CVE vulnérables
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,24 +18,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec8dd97a563edc487008d028a7cdc9f6ef3d17c1
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: b4ed79359d8d535ec47a287292cedf1d0520711e
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689084"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567187"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Atténuer les vulnérabilités du jour zéro : Gestion des menaces et des vulnérabilités
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Une vulnérabilité « zero-day » est une vulnérabilité publiquement divulguée pour laquelle aucune mise à jour de sécurité ou correctifs officiels n’a été publié. Les vulnérabilités du jour zéro ont souvent des niveaux de gravité élevés et sont activement exploitées.
 
@@ -43,7 +43,7 @@ Les menaces et gestion des vulnérabilités afficheront uniquement les vulnérab
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>Trouver des informations sur les vulnérabilités du jour zéro
 
-Une fois qu’une vulnérabilité zéro jour a été trouvée, les informations à ce sujet sont transmises via les expériences suivantes dans le Centre de sécurité Microsoft Defender.
+Une fois qu’une vulnérabilité zéro jour a été trouvée, les informations à ce sujet sont transmises via les expériences suivantes dans le portail Microsoft 365 Defender web.
 
 >[!NOTE]
 > La fonctionnalité de vulnérabilité de 0 jour est actuellement disponible uniquement pour Windows produits.
@@ -66,27 +66,27 @@ Recherchez la vulnérabilité nommée « zero-day » ainsi qu’une description 
 
 - Si aucun ID CVE n’est affecté à cette vulnérabilité, vous la trouverez sous un nom interne temporaire qui ressemble à « TVM-XXXX-XXXX ». Le nom sera mis à jour une fois qu’un ID CVE officiel a été affecté, mais le nom interne précédent peut toujours être recherché et trouvé dans le panneau latéral.
 
-![Exemple de jour zéro pour CVE-2020-17087 dans la page faiblesses.](images/tvm-zero-day-weakness-name.png)
+:::image type="content" alt-text="Exemple de jour zéro pour CVE-2020-17087 dans la page faiblesses." source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### <a name="software-inventory-page"></a>Page Inventaire logiciel
 
-Recherchez des logiciels avec la balise « zero-day ». Filtrez par la balise « zero day » pour voir uniquement les logiciels avec des vulnérabilités zero-day.
+Recherchez les logiciels avec la balise « zero-day ». Filtrez par la balise « zero day » pour voir uniquement les logiciels avec des vulnérabilités zero-day.
 
-![Exemple de jour zéro Windows Server 2016 dans la page d’inventaire logiciel.](images/tvm-zero-day-software-inventory.png)
+:::image type="content" alt-text="Exemple de jour zéro Windows Server 2016 dans la page d’inventaire logiciel." source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>Page de logiciels
 
 Recherchez une balise zero-day pour chaque logiciel affecté par la vulnérabilité zero-day.
 
-![Exemple de jour zéro pour Windows Server 2016 page de logiciels.](images/tvm-zero-day-software-page.png)
+:::image type="content" alt-text="Exemple de jour zéro pour Windows Server 2016 page de logiciels." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### <a name="security-recommendations-page"></a>Page Recommandations en matière de sécurité
 
-Affichez des suggestions claires sur les options de correction et d’atténuation, y compris les solutions de contournement si elles existent. Filtrez par balise « zero day » pour voir uniquement les recommandations de sécurité concernant les vulnérabilités « zero-day ».
+Affichez des suggestions claires sur les options de correction et d’atténuation, y compris les solutions de contournement si elles existent. Filtrez par balise « zero day » pour voir uniquement les recommandations de sécurité concernant les vulnérabilités zero-day.
 
 S’il existe un logiciel avec une vulnérabilité zéro jour et des vulnérabilités supplémentaires à résoudre, vous recevrez une recommandation sur toutes les vulnérabilités.
 
-![Exemple de jour zéro de Windows Server 2016 dans la page recommandations de sécurité.](images/tvm-zero-day-security-recommendation.png)
+:::image type="content" alt-text="Exemple de jour zéro de Windows Server 2016 dans la page recommandations de sécurité." source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>Résoudre les vulnérabilités du jour zéro
 
@@ -100,7 +100,7 @@ Ouvrez les options de correction et choisissez le type d’attention. Une option
 
 ## <a name="track-zero-day-remediation-activities"></a>Suivre les activités de correction du jour zéro
 
-Go to the Gestion des menaces et des vulnérabilités [Remediation](tvm-remediation.md) page to view the remediation activity item. Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller. Vous pouvez filtrer par type de correction, par exemple « mise à jour logicielle » ou « attention requise », pour voir tous les éléments d’activité dans la même catégorie.
+Go to the Gestion des menaces et des vulnérabilités [Remediation](tvm-remediation.md) page to view the remediation activity item. Si vous avez choisi l’option de correction « Attention requise », il n’y aura aucune barre de progression, état du ticket ou date d’échéance, car il n’existe aucune action réelle que nous pouvons surveiller. Vous pouvez filtrer par type de correction, tel que « mise à jour logicielle » ou « attention requise », pour voir tous les éléments d’activité dans la même catégorie.
 
 ## <a name="patching-zero-day-vulnerabilities"></a>Correction des vulnérabilités du jour zéro
 

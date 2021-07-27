@@ -16,32 +16,32 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ee6388c779d2c5bc09a82f5e9064d1b981e885cb
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 19ce05acaf4e06a97014cea3ff57d7c3d8cabfe7
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687422"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567067"
 ---
 # <a name="monitor-web-browsing-security"></a>Surveiller la sécurité de navigation web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-La protection Web vous permet de surveiller la sécurité de navigation web de votre organisation via des rapports sous **Rapports > protection Web** dans le Centre de sécurité Microsoft Defender. Le rapport contient des cartes qui fournissent des statistiques sur la détection des menaces web.
+La protection Web vous permet de surveiller la sécurité de navigation web de votre organisation via des rapports sous Rapports **> protection Web** dans le portail Microsoft 365 Defender web. Le rapport contient des cartes qui fournissent des statistiques sur la détection des menaces web.
 
 - Détections de protection contre les **menaces web** au fil du temps : cette carte tendance affiche le nombre de menaces web détectées par type au cours de la période sélectionnée (30 derniers jours, 3 derniers mois, 6 derniers mois)
  
-    ![Image de la carte montrant les détections de protection contre les menaces web au fil du temps](images/wtp-blocks-over-time.png)
+  :::image type="content" alt-text="Image de la carte montrant les détections de protection contre les menaces web au fil du temps" source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
 
 - **Résumé de la protection** contre les menaces web : cette carte affiche le nombre total de détections de menaces web au cours des 30 derniers jours, montrant la répartition entre les différents types de menaces web. La sélection d’une tranche ouvre la liste des domaines qui ont été trouvés avec des sites web malveillants ou indésirables.
 
-    ![Image de la carte montrant le résumé de la protection contre les menaces web](images/wtp-summary.png)
+  :::image type="content" alt-text="Image de la carte montrant le résumé de la protection contre les menaces web" source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
 
 >[!Note]
 >La réflexion d’un bloc dans les cartes ou la liste de domaines peut prendre jusqu’à 12 heures.

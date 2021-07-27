@@ -1,6 +1,6 @@
 ---
 title: Présentation
-description: Comprendre la base TEst
+description: Comprendre la base de test
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2c8909215fd0cac0b262199d45eec343074de2e6
-ms.sourcegitcommit: b0f464b6300e2977ed51395473a6b2e02b18fc9e
+ms.openlocfilehash: 00399cbfaea79b3e1658988272c1bfb1ecbc2b5e
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53322742"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567007"
 ---
 # <a name="what-is-test-base-for-microsoft-365"></a>Qu’est-ce que la Base de Microsoft 365 ? 
 
@@ -32,13 +32,13 @@ Avec la base de test, les SV offrent une meilleure visibilité sur les problème
 
 Ce nouveau service permettra aux SV de simplifier et d’améliorer l’efficacité des tests. Enterprise clients bénéficieront des tests sv et Microsoft dans un environnement de collaboration et seront plus certain que leurs applications fonctionneront comme prévu. 
 
-### <a name="advantages-test-base-offers-eenterprises-and-their-sv-partners-include"></a>Avantages de la base de test offre Eenterprises et ses partenaires sv : 
+### <a name="advantages-test-base-offers-enterprises-and-their-sv-partners-include"></a>Avantages De la base de test, les entreprises et leurs partenaires sv incluent : 
  
   * Un déploiement plus rapide des mises à jour de sécurité pour sécuriser vos appareils ; 
  
   * réduction des coûts de validation des mises à jour en hébergeant les modifications du système d’exploitation et l’application dans le même environnement ; 
   
-  * Rapport d’aide à la world intelligence de Microsoft sur vos applications (couverture de code, analyse d’impact sur les API, etc.) ; 
+  * Rapport d’aide à la world intelligence de Microsoft sur vos applications (couverture de code, analyse d’impact sur les API, et ainsi de suite) ; 
   
   * L’expertise de Microsoft en matière de transfert de contenu de test et d’exploitation vers Azure. 
 
@@ -49,7 +49,7 @@ Ce guide est divisé en quatre (4) parties pour garantir une expérience sans ac
 
 1. Vue **d’ensemble** qui fournit des instructions détaillées et détaillées sur la façon de télécharger votre application via notre portail d’intégration libre-service. 
 
-2. La section **Démarrage rapide** qui fournit des informations sur le format de la structure de dossiers zippped et ce que vous devez savoir lors de la préparation de vos scripts de test.
+2. La section **Démarrage rapide,** qui fournit des informations sur le format de la structure de dossiers compressés et ce que vous devez savoir lors de la préparation de vos scripts de test.
 
 3. Guide **de la how-to** qui fournit un plan détaillé sur l’utilisation de Test Base pour déduire les résultats des tests.
 
@@ -63,7 +63,7 @@ Cela signifie que toute personne ayant un compte Azure d’entreprise valide peu
 
 ### <a name="who-should-onboard"></a>Qui devez-vous intégrer ?
 
-Nous encourageons tous les éditeurs de logiciels, les intégrateurs de systèmes (SIS) à intégrer leurs applications, leurs binaires et leurs scripts de test sur le service.
+Nous encourageons tous les éditeurs de logiciels, les intégrateurs de système (SIS) à intégrer leurs applications, leurs binaires et leurs scripts de test sur le service.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -19,30 +19,30 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 820edf268a3062754a4994b6ce6c60c40b9a4312
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932738"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587776"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nouveaux profils de configuration pour macOS Et les versions plus récentes de macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-En adéquation avec l’évolution de macOS, nous préparons un Microsoft Defender pour endpoint sur la mise à jour macOS qui tire parti des extensions système au lieu des extensions de noyau. Cette mise à jour s’applique uniquement à macOS Fonctionnalité (10.15.4) et aux versions plus récentes de macOS.
+En adéquation avec l’évolution de macOS, nous préparons une mise à jour Microsoft Defender pour Endpoint sur macOS qui tire parti des extensions système au lieu des extensions de noyau. Cette mise à jour s’applique uniquement à macOS Fonctionnalité (10.15.4) et aux versions plus récentes de macOS.
 
-Si vous avez déployé Microsoft Defender pour endpoint sur macOS dans un environnement géré (via JAMF, Intune ou une autre solution MDM), vous devez déployer de nouveaux profils de configuration. Si vous n’exécutez pas ces étapes, les utilisateurs auront accès à des invites d’approbation pour exécuter ces nouveaux composants.
+Si vous avez déployé Microsoft Defender pour Endpoint sur macOS dans un environnement géré (via JAMF, Intune ou une autre solution MDM), vous devez déployer de nouveaux profils de configuration. Si vous n’exécutez pas ces étapes, les utilisateurs auront accès à des invites d’approbation pour exécuter ces nouveaux composants.
 
 ## <a name="jamf"></a>JAMF
 
-### <a name="system-extensions-policy"></a>Stratégie d’extensions système
+### <a name="jamf-system-extensions-policy"></a>Stratégie d’extensions système JAMF
 
 Pour approuver les extensions système, créez la charge utile suivante :
 
@@ -69,7 +69,7 @@ Ajoutez la charge utile JAMF suivante pour accorder un accès disque total à l�
 
 ### <a name="network-extension-policy"></a>Stratégie d’extension réseau
 
-Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail Centre de sécurité Microsoft Defender. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
+Dans le cadre des fonctionnalités de détection et de réponse des points de terminaison, Microsoft Defender for Endpoint sur macOS inspecte le trafic de socket et signale ces informations au portail Microsoft 365 Defender. La stratégie suivante permet à l’extension réseau d’effectuer cette fonctionnalité.
 
 >[!NOTE]
 >JAMF ne prend pas en charge les stratégies de filtrage de contenu, ce qui est une condition préalable à l’activation des extensions réseau installées par Microsoft Defender pour Endpoint sur macOS sur l’appareil. De plus, JAMF modifie parfois le contenu des stratégies déployées.
@@ -149,13 +149,13 @@ Dans le cadre des fonctionnalités de détection et de réponse des points de te
     ```bash
     $ plutil -lint ~/Documents/com.microsoft.network-extension.mobileconfig
     ```
-    
+
     Vérifiez que la commande est en `OK` sortie.
-        
+
     ```bash
     <PathToFile>/com.microsoft.network-extension.mobileconfig: OK
     ```
-    
+
 3. Suivez les instructions de cette [page](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) pour créer un certificat de signature à l’aide de l’autorité de certification intégrée de JAMF.
 
 4. Une fois le certificat créé et installé sur votre appareil, exécutez la commande suivante à partir du Terminal pour signer le fichier :
@@ -163,18 +163,18 @@ Dans le cadre des fonctionnalités de détection et de réponse des points de te
     ```bash
     $ security cms -S -N "<CertificateName>" -i <PathToFile>/com.microsoft.network-extension.mobileconfig -o <PathToSignedFile>/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
+
     Par exemple, si le nom du certificat est **SigningCertificate** et que le fichier signé va être stocké dans documents :
-    
+
     ```bash
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
-    
-5. À partir du portail JAMF, accédez aux **profils** de configuration et cliquez sur **Télécharger** bouton. Sélectionnez `com.microsoft.network-extension.signed.mobileconfig` le fichier lorsque vous y avez été invité.
+
+5. À partir du portail JAMF, accédez à **Profils** de configuration et cliquez sur **Télécharger** bouton. Sélectionnez `com.microsoft.network-extension.signed.mobileconfig` le fichier lorsque vous y avez été invité.
 
 ## <a name="intune"></a>Intune
 
-### <a name="system-extensions-policy"></a>Stratégie d’extensions système
+### <a name="intune-system-extensions-policy"></a>Stratégie d’extensions système Intune
 
 Pour approuver les extensions système :
 
@@ -195,7 +195,7 @@ Pour approuver les extensions système :
 
 ### <a name="create-and-deploy-the-custom-configuration-profile"></a>Créer et déployer le profil de configuration personnalisé
 
-Le profil de configuration suivant active l’extension réseau et accorde un accès disque total à l’extension système de sécurité des points de terminaison. 
+Le profil de configuration suivant active l’extension réseau et accorde un accès disque total à l’extension système de sécurité des points de terminaison.
 
 Enregistrez le contenu suivant dans un fichier nommé **sysext.xml**:
 
@@ -305,10 +305,10 @@ sysext.xml: OK
 
 Pour déployer ce profil de configuration personnalisé :
 
-1.  Dans Intune, ouvrez **Gérer la** configuration  >  **de l’appareil.** Sélectionnez **Gérer**  >  **les profils**  >  **Créer un profil.**
+1. Dans Intune, ouvrez **Gérer la** configuration  >  **de l’appareil.** Sélectionnez **Gérer**  >  **les profils**  >  **Créer un profil.**
 2. Choisissez un nom pour le profil. Change **Platform=macOS** and **Profile type=Custom**. Sélectionnez **Configurer**.
-3.  Ouvrez le profil de configuration et **téléchargezsysext.xml**. Ce fichier a été créé à l’étape précédente.
-4.  Sélectionnez **OK**.
+3. Ouvrez le profil de configuration et **téléchargezsysext.xml**. Ce fichier a été créé à l’étape précédente.
+4. Sélectionnez **OK**.
 
     ![Capture d’écran de l’extension système dans Intune](images/mac-system-extension-intune.png)
 

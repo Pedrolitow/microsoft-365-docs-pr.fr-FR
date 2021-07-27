@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: df1a032ffab0490c41edc7d282f0f2cc60608870
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 830a744ff2552cda2e974867920bceab77763e91
+ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289678"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53590706"
 ---
 # <a name="alert-resource-type"></a>Type de ressource Alerte
 
@@ -30,7 +30,7 @@ ms.locfileid: "53289678"
 **S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -49,7 +49,7 @@ Méthode |Type renvoyé |Description
 [Liste des domaines associés](get-alert-related-domain-info.md)|Collection de domaines| Ré lister les URL associées à l’alerte.
 [Liste des fichiers associés](get-alert-related-files-info.md) | [Collection de](files.md) fichiers |  Liste des [entités](files.md) de fichier associées à [l’alerte.](alerts.md)
 [Liste des IP associées](get-alert-related-ip-info.md) | Collection d’adresses IP | List IPs that are associated with the alert.
-[Obtenir des ordinateurs associés](get-alert-related-machine-info.md) | [Ordinateur](machine.md) | [L’ordinateur](machine.md) associé à [l’alerte](alerts.md).
+[Obtenir les ordinateurs associés](get-alert-related-machine-info.md) | [Ordinateur](machine.md) | [L’ordinateur](machine.md) associé à [l’alerte](alerts.md).
 [Obtenir des utilisateurs associés](get-alert-related-user-info.md) | [Utilisateur](user.md) | Utilisateur [associé](user.md) à [l’alerte.](alerts.md)
 
 ## <a name="properties"></a>Propriétés
@@ -69,7 +69,7 @@ investigationId | Nullable Long | ID [d’investigation](automated-investigation
 investigationState | Nullable, enum | L’état actuel de [l’examen](automated-investigations.md). Les valeurs possibles sont : « Unknown » (inconnu), « Terminated » (terminé), « SuccessfullyRemediated », 'Suppress', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyExploigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
 assignedTo | String | Propriétaire de l’alerte.
 Sévérité  | Énum | Gravité de l’alerte. Les valeurs possibles sont : « UnSpecified » (non spécifié), « Informational » (informations), « Low » (faible), « Medium » (moyen) et « High » (élevé).
-status | Énum | Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (inprogress) et « Resolved » (résolu).
+statut | Énum | Spécifie l’état actuel de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « New » (nouveau), « InProgress » (InProgress) et « Resolved » (résolu).
 classification | Nullable, enum | Spécification de l’alerte. Les valeurs possibles sont : « Unknown » (inconnu), « FalsePositive » (fauxpositif), « TruePositive » (vraipositif).
 détermination | Nullable, enum | Spécifie la détermination de l’alerte. Les valeurs possibles sont : 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
 category| String | Catégorie de l’alerte.
@@ -123,7 +123,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_136
     ],
     "relatedUser": {
         "userName": "temp123",
-        "domainName": "MIDDLEEAST"
+        "domainName": "DOMAIN"
     },
     "comments": [
         {
@@ -153,8 +153,8 @@ GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_136
             "registryHive": null,
             "registryValueType": null,
             "registryValue": null,
-            "accountName": "eranb",
-            "domainName": "MIDDLEEAST",
+            "accountName": "name",
+            "domainName": "DOMAIN",
             "userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
             "aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
             "userPrincipalName": "temp123@microsoft.com",

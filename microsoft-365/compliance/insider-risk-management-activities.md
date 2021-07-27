@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b4b770733b9e62b39a07c8699619ac5f7d692ec5
-ms.sourcegitcommit: 53aebd492a4b998805c70c8e06a2cfa5d453905c
+ms.openlocfilehash: 0c94f0559a86eed8975f80b96ec3f0ff66a9d8e1
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "53327096"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587764"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>Examiner les activités de gestion des risques internes
 
@@ -44,8 +44,8 @@ Les nouveaux rapports prennent généralement jusqu’à 10 heures avant d’êt
 
 Le **rapport d’activité de** l’utilisateur sélectionné contient les onglets Activité de l’utilisateur et Explorateur  **d’activités** :
 
-- **Activité utilisateur**: utilisez cet affichage graphique pour examiner les activités et afficher les activités potentielles qui se produisent par séquences. Cet onglet est structuré pour permettre un examen rapide d’un cas, y compris une chronologie historique de toutes les activités, les détails de l’activité, le score de risque actuel pour l’utilisateur dans le cas, la séquence d’événements de risque et les contrôles de filtrage pour faciliter les recherches.
-- **Explorateur d’activités**: l’onglet **Explorateur** d’activités fournit aux enquêteurs des risques un outil analytique complet qui fournit des informations détaillées sur les activités. Avec l’Explorateur d’activités, les réviseurs peuvent rapidement passer en revue une chronologie des activités à risque détectées et identifier et filtrer toutes les activités à risque associées aux alertes. Pour en savoir plus sur l’utilisation de l’Explorateur d’activités, consultez la *section* Explorateur d’activités plus loin dans cet article.
+- **Activité utilisateur**: utilisez cette vue de graphique pour examiner les activités et afficher les activités potentielles qui se produisent par séquences. Cet onglet est structuré pour permettre un examen rapide d’un cas, y compris une chronologie historique de toutes les activités, les détails de l’activité, le score de risque actuel pour l’utilisateur dans le cas, la séquence d’événements de risque et les contrôles de filtrage pour faciliter les recherches.
+- **Explorateur d’activités**: **l’onglet Explorateur** d’activités fournit aux enquêteurs des risques un outil analytique complet qui fournit des informations détaillées sur les activités. Avec l’Explorateur d’activités, les réviseurs peuvent rapidement passer en revue une chronologie des activités à risque détectées et identifier et filtrer toutes les activités à risque associées aux alertes. Pour en savoir plus sur l’utilisation de l’Explorateur d’activités, consultez la *section* Explorateur d’activités plus loin dans cet article.
 
 ## <a name="alert-dashboard"></a>Tableau de bord d’alerte
 
@@ -97,6 +97,18 @@ Selon le nombre et le type de stratégies de gestion des risques internes actif 
 
 Pour rechercher le nom d’une alerte pour un mot spécifique, sélectionnez la commande **Recherche** et tapez le mot à rechercher. Les résultats de la recherche affichent une alerte de stratégie contenant le mot défini dans la recherche.
 
+## <a name="dismiss-multiple-alerts-preview"></a>Ignorer plusieurs alertes (aperçu)
+
+Cela peut permettre aux analystes et aux enquêteurs de faire disparaître immédiatement plusieurs alertes à la fois. L’option Ignorer la barre de commandes **alertes** vous  permet de sélectionner une ou plusieurs alertes avec l’état Révision des besoins dans le tableau de bord et de faire disparaître rapidement ces alertes comme étant anodins selon le cas dans votre processus de tri. Vous pouvez sélectionner jusqu’à 400 alertes à ignorer en même temps.
+
+Pour ignorer une alerte de risque interne, complétez les étapes suivantes :
+
+1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez  l’onglet **Alertes** pour la gestion des risques internes.
+2. Dans le tableau **de bord Alertes,** sélectionnez  l’alerte (ou les alertes) avec l’état De révision des besoins que vous souhaitez ignorer.
+3. Dans la barre de commandes Alertes, sélectionnez **Ignorer les alertes.**
+4. Dans le volet Détails Ignorer les **alertes,** vous pouvez passer en revue les détails de l’utilisateur et de la stratégie associés aux alertes sélectionnées.
+5. Sélectionnez **Ignorer les alertes** pour résoudre les alertes comme étant anodins ou sélectionnez **Annuler** pour fermer le volet d’informations sans ignorer les alertes.
+
 ## <a name="triage-alerts"></a>Alertes de triage
 
 Pour trier une alerte de risque interne, effectuer les étapes suivantes :
@@ -104,10 +116,10 @@ Pour trier une alerte de risque interne, effectuer les étapes suivantes :
 1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez  l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le tableau **de bord Alertes,** sélectionnez l’alerte que vous souhaitez trier.
 3. Dans le **volet d’informations Alertes,** vous pouvez passer en revue les onglets suivants et trier l’alerte :
-    - **Résumé :** Cet onglet contient des informations générales sur l’alerte et vous permet de confirmer l’alerte et de créer un cas ou de l’ignorer. Il inclut l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme *élevé,* *moyen* ou *faible*. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
+    - **Résumé :** Cet onglet contient des informations générales sur l’alerte et vous permet de confirmer l’alerte et de créer un nouveau cas ou vous permet d’ignorer l’alerte. Il inclut l’état actuel de l’alerte et le niveau de gravité du risque d’alerte, répertorié comme *élevé,* *moyen* ou *faible*. Le niveau de gravité peut augmenter ou diminuer au fil du temps si l’alerte n’est pas triée.
         - **Ce qui s’est passé (aperçu)**: affiche les trois principales activités de risque et les correspondances de stratégie pendant la période d’évaluation de l’activité, y compris le type de violation associé à l’activité et le nombre d’occurrences.
         - **Détails utilisateur :** affiche des informations générales sur l’utilisateur affecté à l’alerte. Si l’anonymisation est activée, le nom d’utilisateur, l’adresse e-mail, l’alias et les champs de l’organisation sont rendus anonymes.
-        - **Détails** de l’alerte : inclut la durée depuis que l’alerte a été générée, les stratégies qui ont généré l’alerte sont répertoriées et le cas généré à partir de l’alerte est répertorié. Pour les nouvelles alertes, le **champ Case** affiche Aucune.
+        - **Détails de** l’alerte : inclut la durée depuis que l’alerte a été générée, les stratégies qui ont généré l’alerte sont répertoriées et le cas généré à partir de l’alerte est répertorié. Pour les nouvelles alertes, le **champ Case** affiche Aucune.
         - **Contenu détecté (aperçu)**: inclut le contenu associé aux activités à risque pour l’alerte et récapitule les événements d’activité par zones clés. La sélection d’un lien d’activité ouvre l’Explorateur d’activités et affiche des détails supplémentaires sur l’activité.
     - **Activité de l’utilisateur**: cet onglet affiche l’historique des activités de l’utilisateur associé à l’alerte. Cet historique inclut d’autres alertes et activités liées aux indicateurs de risque définis dans le modèle affecté à la stratégie pour cette alerte. Cet historique permet aux analystes et enquêteurs de risques de prendre en compte tout comportement à risque passé pour l’employé dans le cadre du processus de triage.
     - **Actions**: les actions suivantes sont disponibles pour chaque alerte :
@@ -137,7 +149,7 @@ Lors de l’examen des activités dans l’Explorateur d’activités, les enqu�
 
 ## <a name="create-a-case-for-an-alert"></a>Créer un cas pour une alerte
 
-À mesure que l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
+Lorsque l’alerte est examinée et triée, vous pouvez créer un cas pour examiner plus en détail l’activité de risque. Pour créer un cas pour une alerte, suivez les étapes suivantes :
 
 1. Dans la [Centre de conformité Microsoft 365,](https://compliance.microsoft.com)sélectionnez  l’onglet **Alertes** pour la gestion des risques internes.
 2. Dans le **tableau de bord Alertes,** sélectionnez l’alerte pour qui vous souhaitez confirmer et créer un cas.
