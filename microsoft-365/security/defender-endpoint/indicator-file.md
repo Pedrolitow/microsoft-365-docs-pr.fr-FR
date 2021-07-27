@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b56a18e1b35b65629318ab29f2189ef1f73373f5
-ms.sourcegitcommit: a4c93a4c7d7db08fe3b032b58d5c7dbbb9476e90
+ms.openlocfilehash: e119898a457be2ceb6dd78ca7831e26dc93ee85f
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53256914"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542680"
 ---
 # <a name="create-indicators-for-files"></a>Créer des indicateurs pour les fichiers
 
@@ -53,15 +53,16 @@ Il est important de comprendre les conditions préalables suivantes avant de cr�
 
 - Pris en charge sur les appareils Windows 10, version 1703 ou ultérieure, Windows Server 2016 et 2019.
 
-- Pour commencer à bloquer les fichiers, vous devez d’abord [activer](advanced-features.md) la fonctionnalité « bloquer ou autoriser » dans Paramètres.
+- Pour commencer à bloquer des fichiers, vous devez d’abord activer la fonctionnalité « bloquer ou autoriser » [dans](advanced-features.md) Paramètres.
 
 Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables(PE), notamment les fichiers .exe et .dll portables. La couverture sera étendue au fil du temps.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Créer un indicateur pour les fichiers à partir de la page paramètres
 
-1. Dans le volet de navigation, sélectionnez **Paramètres > indicateurs.**
+1. Dans le volet de navigation, sélectionnez  **Paramètres**  >  **indicateurs de points** de  > 
+ **terminaison** (sous **Règles).**
 
-2. Sélectionnez **l’onglet De hachage de**   fichier.
+2. Sélectionnez **l’onglet Haits**   fichier.
 
 3. Sélectionnez **Ajouter un indicateur**.
 
@@ -102,13 +103,13 @@ Le conflit de gestion des stratégies Cert et IoC de fichier suit l’ordre ci-d
 
 - Sinon si le fichier est bloqué par les règles de la asr, cfa, av, SmartScreen, puis **bloquer**  
 
-- Else **Allow** (passe Windows Defender Application Control & AppLocker, aucune règle IoC ne s’applique à elle)
+- Else **Allow** (passe Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
 S’il existe des stratégies IoC de fichier en conflit avec le même type d’application et la même cible, la stratégie de hachage le plus sécurisé (c’est-à-dire plus long) est appliquée. Par exemple, une stratégie IoC de hachage de fichier SHA-256 l’emporte sur une stratégie IoC de hachage de fichier MD5 si les deux types de hachage définissent le même fichier.
 
 Les fonctionnalités gestion des vulnérabilités d’application vulnérables aux menaces et aux menaces utilisent les IOC de fichier pour l’application et suivent l’ordre de gestion des conflits ci-dessus.
 
-### <a name="examples"></a>範例
+### <a name="examples"></a>Exemples
 
 |Composant |Application des composants |Action de l’indicateur de fichier |Résultat
 |--|--|--|--|

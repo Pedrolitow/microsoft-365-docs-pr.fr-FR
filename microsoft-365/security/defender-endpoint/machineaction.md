@@ -15,22 +15,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a3b017a9a05964c15411668787b035f1052c68cf
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: b72454bd345df31485759c5978f34eb11db5feca
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878279"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542272"
 ---
 # <a name="machineaction-resource-type"></a>Type de ressource MachineAction
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -38,44 +38,42 @@ ms.locfileid: "52878279"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-- Pour plus d’informations, voir [Actions de réponse.](respond-machine-alerts.md) 
+- Pour plus d’informations, voir [Actions de réponse.](respond-machine-alerts.md)
 
-| Méthode                                                            | Type renvoyé                        | Description                                                 |
-|:------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------|
-| [List MachineActions](get-machineactions-collection.md)           | [Action de l’ordinateur](machineaction.md) | Liste des [entités d’action](machineaction.md) de l’ordinateur.           |
-| [Obtenir MachineAction](get-machineaction-object.md)                  | [Action de l’ordinateur](machineaction.md) | Obtenir une seule [entité d’action](machineaction.md) de l’ordinateur.     |
-| [Collecter un package d’examen](collect-investigation-package.md) | [Action de l’ordinateur](machineaction.md) | Collecter un package d’examen à partir d’un [ordinateur.](machine.md) |
-| [Obtenir SAS de l’URI du package d’examen](get-package-sas-uri.md)       | [Action de l’ordinateur](machineaction.md) | Obtenez l’URI pour télécharger le package d’enquête.          |
-| [Isoler l’ordinateur](isolate-machine.md)                             | [Action de l’ordinateur](machineaction.md) | Isoler [l’ordinateur](machine.md) du réseau.                 |
-| [Libérer la machine de l’isolation](unisolate-machine.md)            | [Action de l’ordinateur](machineaction.md) | Libérer [l’ordinateur](machine.md) de l’isolation.               |
-| [Restreindre l’exécution des applications](restrict-code-execution.md)              | [Action de l’ordinateur](machineaction.md) | Restreindre l’exécution de l’application.                             |
-| [Supprimer la restriction des applications](unrestrict-code-execution.md)            | [Action de l’ordinateur](machineaction.md) | Supprimer la restriction d’exécution de l’application.                   |
-| [Exécuter une analyse antivirus](run-av-scan.md)                              | [Action de l’ordinateur](machineaction.md) | Exécutez une analyse antivirus à l’Windows Defender (le cas échéant).    |
-| [Retirer un ordinateur](offboard-machine-api.md)                       | [Action de l’ordinateur](machineaction.md) | [Hors-carte de](machine.md) Microsoft Defender pour point de terminaison. |
-| [Arrêt et fichier mis en quarantaine](stop-and-quarantine-file.md)           | [Action de l’ordinateur](machineaction.md) | Arrêtez l’exécution d’un fichier sur un ordinateur et supprimez-le.        |
-| [Exécuter une réponse en direct](run-live-response.md)                     | [Action de l’ordinateur](machineaction.md)  | Exécute une séquence de commandes de réponse en direct sur un appareil                       |
-| [Obtenir un résultat de réponse en direct](get-live-response-result.md) | Entité d’URL      | Extrait le lien de téléchargement des résultats de la commande de réponse en direct spécifique par son index. |
-|[Annuler l’action de l’ordinateur](cancel-machine-action.md)                                | [Action de l’ordinateur](machineaction.md)  | Annuler une action de l’ordinateur actif.                                            |
+|Méthode|Type renvoyé|Description|
+|---|---|---|
+|[List MachineActions](get-machineactions-collection.md)|[Action de l’ordinateur](machineaction.md)|Liste des [entités d’action](machineaction.md) de l’ordinateur.|
+|[Obtenir MachineAction](get-machineaction-object.md)|[Action de l’ordinateur](machineaction.md)|Obtenir une seule [entité d’action](machineaction.md) de l’ordinateur.|
+|[Collecter un package d’examen](collect-investigation-package.md)|[Action de l’ordinateur](machineaction.md)|Collecter un package d’examen à partir [d’un ordinateur.](machine.md)|
+|[Obtenir SAS de l’URI du package d’examen](get-package-sas-uri.md)|[Action de l’ordinateur](machineaction.md)|Obtenez l’URI pour télécharger le package d’enquête.|
+|[Isoler l’ordinateur](isolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Isoler [l’ordinateur](machine.md) du réseau.|
+|[Libérer la machine de l’isolation](unisolate-machine.md)|[Action de l’ordinateur](machineaction.md)|Libérer [l’ordinateur](machine.md) de l’isolation.|
+|[Restreindre l’exécution des applications](restrict-code-execution.md)|[Action de l’ordinateur](machineaction.md)|Restreindre l’exécution de l’application.|
+|[Supprimer la restriction des applications](unrestrict-code-execution.md)|[Action de l’ordinateur](machineaction.md)|Supprimer la restriction d’exécution de l’application.|
+|[Exécuter une analyse antivirus](run-av-scan.md)|[Action de l’ordinateur](machineaction.md)|Exécutez une analyse antivirus à l’Windows Defender (le cas échéant).|
+|[Retirer un ordinateur](offboard-machine-api.md)|[Action de l’ordinateur](machineaction.md)|[Hors-carte de](machine.md) Microsoft Defender pour point de terminaison.|
+|[Arrêt et fichier mis en quarantaine](stop-and-quarantine-file.md)|[Action de l’ordinateur](machineaction.md)|Arrêtez l’exécution d’un fichier sur un ordinateur et supprimez-le.|
+|[Exécuter la réponse en direct](run-live-response.md)|[Action de l’ordinateur](machineaction.md)|Exécute une séquence de commandes de réponse en direct sur un appareil|
+|[Obtenir le résultat de la réponse en direct](get-live-response-result.md)|Entité d’URL|Extrait le lien de téléchargement des résultats de la commande de réponse en direct spécifique par son index.|
+|[Annuler l’action de l’ordinateur](cancel-machine-action.md)|[Action de l’ordinateur](machineaction.md)|Annuler une action de l’ordinateur actif.|
 
 <br>
 
 ## <a name="properties"></a>Propriétés
 
-| Propriété            | Type           | Description                                                                                                                                                                                                    |
-|:--------------------|:---------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ID                  | Guid           | Identité de [l’entité Action](machineaction.md) de l’ordinateur.                                                                                                                                                     |
-| type                | Énum           | Type de l’action. Les valeurs possibles sont : « RunAntiVirusScan », « Offboard », « CollectRandigationPackage », « Isolate », « Unisolate », « StopAndQuarantineFile », « RestrictCodeExecution » et « IsolaterictCodeExecution » |
-| étendue               | string         | Étendue de l’action. « Complète » ou « Sélective » pour l’isolation, « Rapide » ou « Complète » pour l’analyse antivirus.                                                                                                   |
-| demandeur           | String         | Identité de la personne qui a exécuté l’action.                                                                                                                                                               |
-| requestorComment    | String         | Commentaire écrit lors de l’émission de l’action.                                                                                                                                                              |
-| status              | Énum           | État actuel de la commande. Les valeurs possibles sont : « Pending », « InProgress », « Succeeded », « Failed », « TimeOut » et « Canceled ».                                                                                 |
-| machineId           | String         | ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.                                                                                                                                              |
-| machineId           | String         | Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.                                                                                                                                            |
-| creationDateTimeUtc | DateTimeOffset | Date et heure de création de l’action.                                                                                                                                                                 |
-| lastUpdateTimeUtc   | DateTimeOffset | Date et heure de la dernière mise à jour de l’état de l’action.                                                                                                                                                     |
-| relatedFileInfo     | Classe          | Contient deux propriétés. chaîne ```fileIdentifier``` , Enum ```fileIdentifierType``` avec les valeurs possibles : « Sha1 », « Sha256 » et « Md5 ».                                                                         |
-
-
+|Propriété|Type|Description|
+|---|---|---|
+|ID|Guid|Identité de [l’entité Action](machineaction.md) de l’ordinateur.|
+|type|Énum|Type de l’action. Les valeurs possibles sont : « RunAntiVirusScan », « Offboard », « CollectRandigationPackage », « Isolate », « Unisolate », « StopAndQuarantineFile », « RestrictCodeExecution » et « IsolaterictCodeExecution »|
+|étendue|string|Étendue de l’action. « Complète » ou « Sélective » pour l’isolation, « Rapide » ou « Complète » pour l’analyse antivirus.|
+|demandeur|String|Identité de la personne qui a exécuté l’action.|
+|requestorComment|String|Commentaire écrit lors de l’émission de l’action.|
+|statut|Énum|État actuel de la commande. Les valeurs possibles sont : « Pending », « InProgress », « Succeeded », « Failed », « TimeOut » et « Canceled ».|
+|machineId|String|ID de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|machineId|String|Nom de [l’ordinateur](machine.md) sur lequel l’action a été exécutée.|
+|creationDateTimeUtc|DateTimeOffset|Date et heure de création de l’action.|
+|lastUpdateTimeUtc|DateTimeOffset|Date et heure de la dernière mise à jour de l’état de l’action.|
+|relatedFileInfo|Classe|Contient deux propriétés. chaîne `fileIdentifier` , Enum `fileIdentifierType` avec les valeurs possibles : « Sha1 », « Sha256 » et « Md5 ».|
 
 ## <a name="json-representation"></a>Représentation Json
 

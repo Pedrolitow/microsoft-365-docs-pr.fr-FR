@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 038879e77dfa26d82add20d043a32de117f95b19
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: c83d5994ab93799536796c153dfd878e3e2dd6d0
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53287830"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542704"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>API de liste des incidents dans Microsoft 365 Defender
 
@@ -41,11 +41,11 @@ ms.locfileid: "53287830"
 
 ## <a name="api-description"></a>Description de l’API
 
-L’API des incidents de liste vous permet de trier les incidents pour créer une réponse de cybersécurité informée. Il expose un ensemble d’incidents qui ont été signalés dans votre réseau, dans la plage de temps que vous avez spécifiée dans votre stratégie de rétention d’environnement. Les incidents les plus récents sont affichés en haut de la liste. Chaque incident contient un tableau d’alertes associées et leurs entités connexes.
+L’API d’incidents de liste vous permet de trier les incidents pour créer une réponse de cybersécurité informée. Il expose un ensemble d’incidents qui ont été signalés dans votre réseau, dans la plage de temps que vous avez spécifiée dans votre stratégie de rétention d’environnement. Les incidents les plus récents sont affichés en haut de la liste. Chaque incident contient un tableau d’alertes associées et leurs entités connexes.
 
 L’API prend en charge les opérateurs **OData suivants** :
 
-- `$filter` sur `lastUpdateTime` le `createdTime` , et les `status` `assignedTo` propriétés
+- `$filter`sur `lastUpdateTime` les `createdTime` propriétés `status` , et `assignedTo`
 - `$top`, avec une valeur maximale de **100**
 - `$skip`
 
@@ -105,10 +105,11 @@ createdTime | Heure à partir de la première création de l’incident. | 2020-
 lastUpdateTime | Heure de la dernière mise à jour de l’incident sur le back-end.<br /><br /> Ce champ peut être utilisé lorsque vous paramétrez le paramètre de demande pour la durée de récupération des incidents. | 2020-09-06T14:46:57.29Z
 assignedTo | Propriétaire de l’incident ou *null* si aucun propriétaire n’est affecté. | secop2@contoso.com
 classification | Spécification de l’incident. Les valeurs de propriété *sont : Unknown*, *FalsePositive*, *TruePositive* | Inconnu
-détermination | Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
-status | Catégoriser les incidents *(en tant qu’incidents actifs* *ou résolus).* Il peut vous aider à organiser et à gérer votre réponse aux incidents. | Actif
-Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br /><br />Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*. | Moyenne
-balises | Tableau de balises personnalisées associées à un incident, par exemple pour baliser un groupe d’incidents avec une caractéristique commune. | \[\]
+détermination | Spécifie la détermination de l’incident. Les valeurs de propriété *sont : NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
+detectionSource | Spécifie la source de détection. | MCAS
+statut | Catégoriser les incidents *(en tant qu’incidents actifs* *ou résolus).* Il peut vous aider à organiser et à gérer votre réponse aux incidents. | Actif
+Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br /><br />Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*. | Moyen
+étiquettes | Tableau de balises personnalisées associées à un incident, par exemple pour baliser un groupe d’incidents avec une caractéristique commune. | \[\]
 commentaires | Tableau de commentaires créés par des secops lors de la gestion de l’incident, par exemple des informations supplémentaires sur la sélection de classification. | \[\]
 alertes | Tableau contenant toutes les alertes liées à l’incident, ainsi que d’autres informations, telles que la gravité, les entités impliquées dans l’alerte et la source des alertes. | \[\] (voir les détails sur les champs d’alerte ci-dessous)
 
@@ -125,15 +126,15 @@ resolvedTime | Heure de résolution de l’alerte. | 2020-09-10T05:22:59Z
 firstActivity | Heure à partir de la première alerte signalé que l’activité a été mise à jour sur le système back-end.| 2020-09-04T05:22:59Z
 title | Brève identification de la valeur de chaîne disponible pour chaque alerte. | Activité de rançongiciel
 description | Valeur de chaîne décrivant chaque alerte. | L’utilisateur Test User2 (testUser2@contoso.com) a manipulé 99 fichiers avec plusieurs extensions se terminant par l’extension *rare herunterladen*. Il s’agit d’un nombre inhabituel de manipulations de fichiers et qui indique une attaque potentielle par ransomware.
-category | Affichage visuel et numérique de la progression de l’attaque tout au long de la chaîne d’attaque. Aligné sur l’infrastructure [CK&ATT MITRE™.](https://attack.mitre.org/) | Impact
-status | Catégoriser les alertes *(en tant* que Nouveau, *Actif* *ou Résolu).* Il peut vous aider à organiser et à gérer votre réponse aux alertes. | Nouveau
-Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br>Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*. | Moyenne
+category | Affichage visuel et numérique de la progression de l’attaque tout au long de la chaîne d’attaque. Aligné sur l’infrastructure [mitre ATT&CK™.](https://attack.mitre.org/) | Impact
+statut | Catégoriser les alertes *(en tant* que Nouveau, *Actif* *ou Résolu).* Il peut vous aider à organiser et à gérer votre réponse aux alertes. | Nouveau
+Sévérité  | Indique l’impact possible sur les ressources. Plus la gravité est élevée, plus l’impact est important. En règle générale, les éléments de gravité plus élevée nécessitent l’attention la plus immédiate.<br>Une des valeurs suivantes *: Informational,* *Low,**Medium et *High*. | Moyen
 investigationId | ID d’examen automatisé déclenché par cette alerte. | 1234
-investigationState | Informations sur l’état actuel de l’enquête. Une des valeurs suivantes : *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Suppressed*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyMediaigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
+investigationState | Informations sur l’état actuel de l’enquête. L’une des valeurs suivantes : *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Suppressed*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyMediaigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
 classification | Spécification de l’incident. Les valeurs de propriété *sont : Unknown*, *FalsePositive*, *TruePositive* ou *null* | Inconnu
 détermination | Spécifie la détermination de l’incident. Les valeurs de propriété sont *: NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* ou  *null* | Apt
 assignedTo | Propriétaire de l’incident ou *null* si aucun propriétaire n’est affecté. | secop2@contoso.com
-actorName | Le groupe d’activités, le caser, l’associé à cette alerte. | BORON
+actorName | Le groupe d’activités, le caser, le groupe associé à cette alerte. | BORON
 threatFamilyName | Famille de menaces associée à cette alerte. | null
 mitreTechniques | Les techniques d’attaque, telles qu’alignées avec l’infrastructure&[CK ™ MITRE ATT.](https://attack.mitre.org/) | \[\]
 appareils | Tous les appareils sur lequel des alertes liées à l’incident ont été envoyées. | \[\] (voir les détails sur les champs d’entité ci-dessous)
@@ -167,7 +168,7 @@ processCommandLine | Disponible si entityType est *Process*. | « Votre fichier 
 processCreationTime | Disponible si entityType est *Process*. | 2020-07-18T03:25:38.5269993Z
 parentProcessId | Disponible si entityType est *Process*. | 16840
 parentProcessCreationTime | Disponible si entityType est *Process*. | 2020-07-18T02:12:32.8616797Z
-ipAddress | Disponible si entityType est *Ip*. <br>Adresse IP des alertes associées aux événements réseau, telles que la *communication vers une destination réseau malveillante.* | 62.216.203.204
+ipAddress | Disponible si entityType est *Ip*. <br>Adresse IP des alertes associées aux événements réseau, telles que la communication vers *une destination réseau malveillante.* | 62.216.203.204
 url | Disponible si entityType est *l’URL*. <br>URL des alertes associées aux événements réseau, telles que la communication vers *une destination réseau malveillante.* | down.esales360.cn
 accountName | Disponible si entityType est *User*. | testUser2
 domainName | Disponible si entityType est *User*. | europe.corp.contoso

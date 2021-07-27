@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4b212acdf4bdf8fa53ef00763463190e204fc1ed
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: 1595ea8e76eb6b4c929419ea11dba06e6158d30c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339165"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542356"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Applications connectées dans Microsoft Defender pour point de terminaison
 
@@ -33,7 +33,7 @@ ms.locfileid: "53339165"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Les applications connectées s’intègrent à la plateforme Defender for Endpoint à l’aide des API. 
 
@@ -41,9 +41,7 @@ Les applications utilisent le protocole OAuth 2.0 standard pour s’authentifier
  
 Vous devez suivre ces [étapes](/microsoft-365/security/defender-endpoint/apis-intro) pour utiliser les API avec l’application connectée.
  
-## <a name="access-the-connected-application-page"></a>Accéder à la page de l’application connectée
-Dans le menu de navigation de gauche, sélectionnez **Points de terminaison**  >  **Partenaires et APPLICATIONS connectées**  >  **API.**
-
+Dans le menu de navigation de gauche, sélectionnez **Partenaires & API** (sous Points de terminaison) > applications **connectées.** 
  
 ## <a name="view-connected-application-details"></a>Afficher les détails de l’application connectée
 La page Applications connectées fournit des informations sur les applications Azure AD connectées à Microsoft Defender pour endpoint dans votre organisation. Vous pouvez passer en revue l’utilisation des applications connectées : dernière expérience, nombre de demandes au cours des dernières 24 heures et tendances des demandes au cours des 30 derniers jours.

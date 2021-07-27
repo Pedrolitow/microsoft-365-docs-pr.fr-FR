@@ -1,0 +1,112 @@
+### YamlMime:FAQ
+metadata:
+  title: Télécharge les questions fréquemment posées
+  ms.author: cmcatee
+  author: cmcatee-MSFT
+  manager: scotv
+  ms.reviewer:
+  - Rani Chegondi
+  - Armando Valenzuela
+  ms.date: 07/22/2021
+  audience: Admin
+  ms.topic: article
+  ms.service: bookings
+  ms.custom: commerce_licensing
+  localization_priority: Normal
+  description: Questions fréquemment posées sur Centre d’administration Microsoft 365 téléchargements.
+  ms.openlocfilehash: a01c46bb4ac8072fe7293abbc016a9b2bb8e377d
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53542486"
+title: Télécharge les questions fréquemment posées
+summary: ''
+sections:
+- name: Généralités
+  questions:
+  - question: >
+      Quelles sont les conditions requises pour télécharger des logiciels à partir du Centre d’administration Microsoft 365 ?
+    answer: "Vous devez acheter une licence pour les produits que vous prévoyez de télécharger et avoir accès à une clé de produit valide pour chaque licence pour terminer l’installation. Vérifiez votre contrat de licence avant de télécharger les produits.\n\nVous pouvez trouver la demande système requise pour chaque produit en vous signant dans le Centre d’administration et en allant à la page Téléchargements de vos produits >  >   description **du produit.** \n\n**Remarque** Tous les produits ne nécessitent pas de clé de produit.\n"
+  - question: >
+      Quels produits puis-je télécharger à partir du Centre d’administration ?
+    answer: >
+      Si vos droits de téléchargement sont associés au programme Open License, Open Value ou Open Value Subscription, vous pouvez télécharger uniquement les produits que vous avez déjà achetés. Le Centre d’administration affiche les téléchargements uniquement pour les licences que vous avez achetées.
+
+
+      D’autres programmes de licence (Select Plus, Enterprise, Campus ou School) vous permettent de télécharger n’importe quel produit à partir du catalogue avant d’acheter des licences.
+
+
+      Si votre profil est lié à Open et à d’autres programmes de licence, vous pouvez afficher l’intégralité du catalogue.
+
+
+      Pour déterminer si un produit peut être téléchargé :
+
+        1.    Sélectionnez **licences** en volume, puis sélectionnez le produit ou **afficher les téléchargements**.
+        2.    Sous **Téléchargement,** si le produit n’est pas disponible, vous verrez « Ce produit n’est pas disponible en téléchargement ».
+  - question: >
+      Qu’est-ce qu’une licence d’accès client ?
+    answer: >
+      Une licence d’accès client (CAL) est une licence qui donne à un utilisateur le droit d’accéder aux services du serveur.
+
+
+      Vous n’avez pas besoin d’un fichier de téléchargement de logiciel ou d’une clé de produit pour activer une licence d’accès basé sur un logiciel. Au lieu de cela, le produit est activé et installé via l’Assistant Activation directement à partir de votre ordinateur.
+
+
+      Voici quelques exemples de cas de contrôle d’utilisation :
+        - Windows Server
+        - SQL Server
+        - Exchange Server
+        - Skype Entreprise Server
+        - SharePoint Server
+        - System Center
+        - Project Server
+  - question: "Comment télécharger des Office pour Mac ? \n"
+    answer: >
+      Pour exécuter une version de licence en volume de Office pour Mac, vous devez télécharger et installer les fichiers suivants :
+        - Package [sérialisateur de](/deployoffice/mac/volume-license-serializer) licence en volume (VL) situé dans le fichier Office pour Mac téléchargement.
+        - Le [package Office pour Mac’installation .](/officeupdates/update-history-office-for-mac#most-current-packages-for-office-for-mac) Les fichiers de package du programme d’installation pour des applications individuelles sont également disponibles sur le Centre d’administration Microsoft 365. Office pour Mac ne nécessite pas de clé de produit, car le sérialisateur VL est utilisé pour activer une version avec licence en volume de Office pour Mac.
+  - question: >
+      Comment télécharger des produits dans le Centre d’administration ?
+    answer: "Pour télécharger des produits dans le Centre d’administration :\n1.  Sélectionnez **licences** en volume, puis sélectionnez le produit ou **afficher les téléchargements**.\n2.  Sous **Télécharger,** sélectionnez un composant et sélectionnez une action de téléchargement ou l’icône de téléchargement. \n\nPour accéder aux téléchargements dans le Centre d’administration, un administrateur VLSC de votre organisation peut fournir l’accès en vous attribuant l’un des rôles ci-après :\n  - Administrateur\n  - Télécharger\n  - Gestionnaire Software Assurance\n"
+  - question: >
+      Comment modifier mes paramètres de téléchargement ?
+    answer: >
+      Pour accéder aux paramètres de téléchargement dans le Centre d’administration :
+
+      1.  Sélectionnez **licences** en volume, puis sélectionnez le produit ou **afficher les téléchargements**.
+
+      2.  Sous **Télécharger,** sélectionnez le **type de** langue et de système **d’exploitation.**
+
+
+      **Remarque** Les bloqueurs de fenêtres pop-up peuvent bloquer les téléchargements. Assurez-vous que les bloqueurs de fenêtres pop-up sont désactivés lorsque vous téléchargez des logiciels à partir du Centre d’administration.
+  - question: >
+      Que sont les fichiers EXE et ISO ?
+    answer: "Vous pouvez sélectionner deux types de fichiers lorsque vous téléchargez des produits à partir du Centre d’administration :\n  \n  - **Les fichiers exécutables (EXE)** peuvent être téléchargés et installés sur le même système, mais vous ne pouvez pas créer de disques de démarrage distincts pour l’installation sur d’autres ordinateurs.\n  - **Les fichiers image ISO (International Standards Organization)** sont des représentations exactes du contenu et du format logique. Vous pouvez les installer sur l’ordinateur utilisé pour télécharger le package ou écrire les fichiers sur les disques pour la distribution et l’installation sur d’autres ordinateurs.\n\n**Remarque** Tous les produits ne sont pas disponibles dans toutes les langues et dans tous les formats.\n"
+  - question: >
+      Comment utiliser le logiciel de fichier image ISO pour télécharger et enregistrer le fichier image ISO sur un CD-R ou un disque DVD-R ?
+    answer: >
+      Si vous utilisez un PC avec le système d’exploitation Windows, vous n’avez pas besoin de logiciel supplémentaire pour graver un CD-R ou un DVD-R. Double-cliquez sur le fichier ISO que vous avez téléchargé, puis suivez les étapes de l’Assistant Graveur d’images.
+
+
+      Si vous utilisez un système d’exploitation autre que Windows, vous aurez peut-être besoin de logiciels supplémentaires. Si votre ordinateur est équipé d’un graveur CD/DVD, le logiciel est probablement chargé sur votre PC. La plupart des logiciels d’écriture CD-R/DVD-R vous permettent de créer un disque à partir d’un fichier image. Sélectionnez un élément de menu tel **que Copier une image sur CD** ou **Graver une image** pour accéder à cette fonctionnalité.
+  - question: >
+      Comment monter et accéder aux fichiers ISO en tant que périphérique virtuel ?
+    answer: >
+      Si vous n’avez pas de graveur CD/DVD installé sur votre ordinateur ou si le support n’est pas disponible, vous pouvez monter le fichier ISO en tant que lecteur virtuel. Avec cette méthode, votre ordinateur pense que le fichier est un lecteur de disque réel et vous pouvez lire les fichiers à partir de ce disque virtuel.
+
+
+      **Remarque** Cette approche est conseillée uniquement pour l’installation d’applications telles que Office ou des mises à niveau système mineures. Vous ne pouvez pas installer un système d’exploitation à l’aide de cette approche, car le lecteur virtuel disparaît pendant l’installation.
+  - question: >
+      Comment obtenir une assistance pour les produits téléchargés ?
+    answer: >
+      Pour obtenir la liste des options de support, consultez [le Support Microsoft.](https://support.microsoft.com/) Certains clients de licence en volume peuvent utiliser la prise en charge de la résolution des problèmes, un avantage Software Assurance. Vérifiez vos avantages software assurance pour vérifier votre éligibilité.
+  - question: >
+      Où puis-je trouver de l’aide pour les rubriques couvertes dans ce FAQ ?
+    answer: >
+      Pour plus de ressources de formation, y compris des vidéos, voir la formation et les ressources du Centre de gestion des licences [en volume Microsoft.](/licensing/existing-customer/vlsc-training-and-resources?activetab=vlsc-tab%3aprimaryr3)
+  - question: >
+      Comment puis-je contacter le Support Microsoft ?
+    answer: >
+      Pour obtenir une prise en charge des formulaires web ou de téléphone client VLSC, [consultez contactez-nous.](/licensing/contact-us) Microsoft répond aux soumissions de formulaires web dans les 24 heures.
+additionalContent: "\n## <a name=\"additional-resources\"></a>Ressources supplémentaires\n\n- [FAQ sur les clés de produit](product-keys-faq.yml)\n\n- [Faq sur l’activation des services en ligne pour open programs](online-service-activation-faq.yml)"

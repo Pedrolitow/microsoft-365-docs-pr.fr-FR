@@ -13,12 +13,12 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 0f089efedef1e4fb6b146692da3f1a630f2bacac
-ms.sourcegitcommit: 4886457c0d4248407bddec56425dba50bb60d9c4
+ms.openlocfilehash: 4a91bece49c4e1e12e8f0a2d9d2d6f6cf0e2681a
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "53289690"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538888"
 ---
 # <a name="device-control-printer-protection"></a>Protection de l’Imprimante de Contrôle d’Appareil
 
@@ -33,7 +33,7 @@ Avant de commencer à vous lancer avec printer Protection, vous devez [confirmer
 
 ## <a name="permission"></a>Autorisation
 
-Pour le déploiement de stratégie dans Intune, pour déployer une stratégie via OMA-URI, le compte doit être autorisé à créer, modifier, mettre à jour ou supprimer des profils de configuration d’appareil. Vous pouvez créer des rôles personnalisés ou utiliser n’importe quel rôle intégré avec les autorisations ci-après :
+Pour le déploiement de stratégie dans Intune, pour déployer une stratégie via OMA-URI, le compte doit avoir les autorisations pour créer, modifier, mettre à jour ou supprimer des profils de configuration d’appareil. Vous pouvez créer des rôles personnalisés ou utiliser n’importe quel rôle intégré avec les autorisations ci-après :
 
 - Rôle gestionnaire de stratégies et de profils.
 - Ou rôle personnalisé avec les autorisations Créer/Modifier/Mettre à jour/Lecture/Supprimer/Afficher les rapports pour les profils de configuration d’appareil
@@ -72,11 +72,11 @@ Vous pouvez déployer la stratégie via la stratégie de groupe ou Intune.
 |**Liste des appareils d’impression connectés usb approuvés**\*|Autoriser une imprimante USB spécifique|Oui|Oui|Oui|Oui|
 |
 
-\*Cette stratégie doit être utilisée avec activer les **restrictions d’impression des contrôles d’appareil.**
+\*Cette stratégie doit être utilisée avec les **restrictions d’impression des contrôles d’appareil.**
 
 ## <a name="deploy-policy-via-intune"></a>Déployer une stratégie via Intune
 
-Pour Intune, la protection de l’imprimante de contrôle d’appareil prend uniquement en charge l’OMA-URI.
+Pour Intune, la protection de l’imprimante de contrôle d’appareil prend actuellement en charge l’OMA-URI uniquement.
 
 ### <a name="scenario-1-block-people-from-printing-via-any-non-corporate-printer-using-intune"></a>Scénario 1 : empêcher les personnes d’imprimer via une imprimante non d’entreprise à l’aide d’Intune
 
@@ -138,23 +138,15 @@ Si l’appareil n’est pas joint à Intune, vous pouvez également déployer la
 
 Le centre [Microsoft 365 de sécurité affiche](https://security.microsoft.com) l’impression bloquée par la stratégie Device Control Printer Protection ci-dessus.
 
-```sql
+```kusto
 DeviceEvents
-
-|where ActionType == 'PrintJobBlocked'
-
+| where ActionType == 'PrintJobBlocked'
 | extend parsed=parse_json(AdditionalFields)
-
 | extend PrintedFile=tostring(parsed.JobOrDocumentName)
-
 | extend PrintPortName=tostring(parsed.PortName)
-
 | extend PrinterName=tostring(parsed.PrinterName)
-
 | extend Policy=tostring(parsed.RestrictionReason) 
-
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName,Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
 | order by Timestamp desc
 ```
 

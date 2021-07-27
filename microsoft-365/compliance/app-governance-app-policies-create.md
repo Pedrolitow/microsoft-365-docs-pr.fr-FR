@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Créer des stratégies d’application.
-ms.openlocfilehash: 17417d7fac80f2763edbbaa8dbb2c8be16e47371
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 66d8dda7c9cd768d6971e2b58dca4c9c5437e5bb
+ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420219"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53438059"
 ---
 # <a name="create-app-policies"></a>Créer des stratégies d’application
 
@@ -30,11 +30,11 @@ En plus d’un ensemble intégré de fonctionnalités permettant de détecter le
 - Spécifiez les conditions selon lesquelles la gouvernance des applications peut vous avertir du comportement de l’application pour la correction automatique ou manuelle.
 - Implémentez les stratégies de conformité des applications pour votre organisation.
 
-Vous pouvez créer des stratégies d’application à partir de modèles fournis qui peuvent être personnalisés, ou vous pouvez créer votre propre stratégie d’application personnalisée.
+Vous pouvez créer des politiques d'application à partir de modèles fournis qui peuvent être personnalisés, vous pouvez aussi bien créer votre propre politique d'application personnalisée.
 
-Pour créer une stratégie d’application, accédez à **Centre de conformité Microsoft 365 > Protection d’applications et gouvernance > Page vue d’ensemble > Stratégies**:
+Pour créer une stratégie d’application, accédez à **Centre de conformité Microsoft 365 > Protection d’applications et gouvernance > Page vue d’ensemble > Politiques**:
 
-- Pour créer une nouvelle stratégie d’application avec des modèles conçus pour l’utilisation des applications, sélectionnez **Créer une stratégie** sous **Créer une stratégie d’utilisation des applications**.
+- Pour créer une nouvelle stratégie d’application avec des modèles conçus pour l’utilisation des applications, sélectionnez **Créer une stratégie** sous **Créer une politique d’utilisation des applications**.
 - Pour créer une nouvelle stratégie d’application avec des modèles conçus pour les autorisations d’application, sélectionnez **Créer une stratégie** sous **Créer une stratégie d’autorisations**.
 - Pour créer une nouvelle stratégie d’application pour la certification d’application ou pour une stratégie personnalisée, sélectionnez **Créer une nouvelle**.
 

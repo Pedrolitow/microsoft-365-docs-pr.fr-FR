@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrir le fonctionnement de la rétention pour Exchange.
-ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 1ec89ee838c73c0ba0eb50361f8c457a697bd9bb
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985431"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53538864"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Découvrir la rétention pour Exchange
 
@@ -84,6 +84,8 @@ Lorsque les paramètres de la stratégie de rétention sont définis sur conserv
 ## <a name="when-a-user-leaves-the-organization"></a>Lorsqu’un utilisateur quitte l’organisation 
 
 Si un utilisateur quitte votre organisation et que sa boîte aux lettres est incluse dans une stratégie de rétention, celle-ci devient inactive lorsque le compte Microsoft 365 de l’utilisateur est supprimé. Le contenu d’une boîte aux lettres inactive reste soumis à toute stratégie de rétention qui a été appliquée à la boîte aux lettres avant sa désactivation, et le contenu est accessible aux recherches eDiscovery. Pour plus d’informations, consultez [Boîtes aux lettres inactives dans Exchange Online](inactive-mailboxes-in-office-365.md).
+
+Lorsque les paramètres de rétention ne s’appliquent plus, car les données sont définitivement supprimées ou la période de rétention a expiré, l’administrateur Exchange peut désormais [supprimer la boîte aux lettres](delete-an-inactive-mailbox.md). Dans ce scénario, la boîte aux lettres inactive n’est pas automatiquement supprimée.
 
 ## <a name="configuration-guidance"></a>Instructions de configuration
 

@@ -4,6 +4,8 @@
     - name: Qu’est-ce que le bureau géré Microsoft ?
       href: intro/index.md
       items:
+        - name: Microsoft Managed Desktop et Windows 11
+          href: intro/win11-overview.md
         - name: Rôles et responsabilités
           href: intro/roles-and-responsibilities.md
         - name: Technologies associées au Bureau géré Microsoft
@@ -169,5 +171,7 @@
               href: working-with-managed-desktop/config-setting-ref.md
             - name: Déployer des paramètres configurables
               href: working-with-managed-desktop/config-setting-deploy.md
+        - name: Prévisualiser et tester Windows 11 avec Microsoft Managed Desktop
+          href: working-with-managed-desktop/test-win11-mmd.md
     - name: Historique des modifications de la documentation relative au Bureau géré Microsoft
       href: change-history-managed-desktop.md

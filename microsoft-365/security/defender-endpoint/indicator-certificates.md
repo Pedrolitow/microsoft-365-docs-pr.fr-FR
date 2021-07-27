@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b75a8cf1d2681281555a3b7bb80deadfc11ee44c
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 08a500dd548eb960d813d9bc693fa8b8dd871170
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845449"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542296"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -60,20 +60,22 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 #### <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>Créez un indicateur pour les certificats à partir de la page paramètres :
 
 >[!IMPORTANT]
-> La création et la suppression d’un certificat IoC peuvent prendre jusqu’à 3 heures.
+> La création et la suppression d’un IoC de certificat peut prendre jusqu’à 3 heures.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **indicateurs.**  
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **indicateurs de points** de  > 
+ **terminaison** (sous **Règles).**  
 
-2. Sélectionnez **l’onglet** Certificat.
 
-3. Sélectionnez **Ajouter un indicateur**.
+2. Sélectionnez **l’onglet Certificats.**
+
+3. Sélectionnez **Ajouter un élément.**
 
 4. Spécifiez les détails suivants :
    - Indicateur : spécifiez les détails de l’entité et définissez l’expiration de l’indicateur.
    - Action : spécifiez l’action à prendre et fournissez une description.
    - Étendue : définir l’étendue du groupe d’ordinateurs.
 
-5. Consultez les détails de l’onglet Résumé, puis cliquez sur **Enregistrer.**
+5. Consultez les détails de **l’onglet Résumé,** puis cliquez sur **Enregistrer.**
 
 ## <a name="related-topics"></a>Voir aussi
 - [Créer des indicateurs](manage-indicators.md)

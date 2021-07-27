@@ -1,5 +1,5 @@
 ---
-title: Planifier les rubriques microsoft
+title: Planifier les Sujets Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,36 +9,38 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-description: Découvrez comment planifier le plan des rubriques microsoft
-ms.openlocfilehash: a407fd6e6919c3b85235e317e5ed3ff103607700
-ms.sourcegitcommit: 48195345b21b409b175d68acdc25d9f2fc4fc5f1
+description: Découvrez comment planifier la Sujets Microsoft Viva
+ms.openlocfilehash: bd732edf9d206f6d62ed0cb3040b1d077b1948ca
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53229538"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542392"
 ---
-# <a name="plan-for-microsoft-viva-topics"></a>Planifier les rubriques microsoft
+# <a name="plan-for-microsoft-viva-topics"></a>Planifier les Sujets Microsoft Viva
 
 Vous contrôlez la façon dont les sujets sont abordés dans votre organisation. Vos décisions de planification pour Rubriques garantissent que les rubriques de haute qualité sont présentées à vos utilisateurs et qu’ils ont les autorisations nécessaires pour consommer et contribuer aux connaissances.
 
 Dans cet article, nous examinerons les décisions de planification ci-après :
 
 - Les SharePoint sites que vous souhaitez analyser pour les rubriques
-- Les rubriques, le cas besoin, que vous souhaitez exclure des expériences de rubrique
+- Rubriques, le cas caser, que vous souhaitez exclure des expériences de rubrique
 - Utilisateurs pour lesquels vous souhaitez rendre les rubriques visibles
 - Utilisateurs que vous souhaitez autoriser à gérer les rubriques dans le centre de rubriques
 - Utilisateurs que vous souhaitez autoriser à créer ou modifier des rubriques dans le centre de rubriques
 - Quel nom voulez-vous donner à votre centre de rubriques ?
 
-La sécurité et la confidentialité de vos données sont respectées, et les expériences de rubrique n’octroient pas aux utilisateurs un accès supplémentaire aux fichiers dont ils n’ont pas le droit. Nous vous recommandons également de lire les [rubriques microsoft sur](topic-experiences-security-privacy.md) la sécurité et la confidentialité dans le cadre de votre processus de planification.
+La sécurité et la confidentialité de vos données sont respectées, et les expériences de rubrique n’octroient pas aux utilisateurs un accès supplémentaire aux fichiers dont ils n’ont pas le droit. Nous vous recommandons également de lire Sujets Microsoft Viva [sécurité et confidentialité](topic-experiences-security-privacy.md) dans le cadre de votre processus de planification.
 
-Pour en savoir plus sur la technologie de l’IA derrière Rubriques, lisez La rubrique Sur le big data et le big knowledge dans [Microsoft Contrôles.](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
+Pour en savoir plus sur la technologie d’IA derrière Topics, consultez La rubrique Sujets Microsoft Viva : du [big data au big knowledge.](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)
+
+Gardez à l’esprit que Topics Doit accéder aux sites et fichiers que vos utilisateurs utilisent tous les jours. Le déploiement de rubriques Dans un environnement de test ou de développement peut ne pas produire de résultats utiles.
 
 ## <a name="requirements"></a>Conditions requises
 
 Vous devez être [abonné à Rubriques Et](https://www.microsoft.com/microsoft-viva/topics) être administrateur général ou administrateur SharePoint pour accéder à la Centre d’administration Microsoft 365 et configurer Rubriques.
 
-Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte [par la rubrique Configurer Microsoft Topics.](set-up-topic-experiences.md)
+Tous les utilisateurs qui vont utiliser rubriques nécessitent une licence **Expériences de** rubrique. L’attribution de licences est couverte par [la](set-up-topic-experiences.md)Sujets Microsoft Viva .
 
 ## <a name="topic-discovery"></a>Découverte de rubrique
 

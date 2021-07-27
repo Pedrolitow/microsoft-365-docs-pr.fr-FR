@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Pour les fournisseurs de services gérés,découvrez comment s’inscrire à Microsoft 365 Lighthouse.
-ms.openlocfilehash: 41482a97a7e940fab61b5b4884431ca7b385c3c0
-ms.sourcegitcommit: 2fd60871975d61e60d4827b36cd689021fd2a4c8
+ms.openlocfilehash: e87757f22cc76bf681058ab453bdfdf60c6c64c9
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53437999"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542368"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>S’inscrire à Microsoft 365 Lighthouse
 
@@ -30,13 +30,13 @@ ms.locfileid: "53437999"
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-- Assurez-vous que vous et vos clients respectez les exigences répertoriées dans [Microsoft 365 Lighthouse client.](m365-lighthouse-requirements.md)
+- Microsoft 365 Lighthouse est déployé dans le client partenaire uniquement pas dans les locataires du client, mais assurez-vous que vous et vos clients respectez les exigences répertoriées dans Microsoft 365 Lighthouse &mdash; [client.](m365-lighthouse-requirements.md)
 
 - Vous devez être administrateur général dans le client partenaire que vous êtes en train de vous inscrire.
 
 ## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>Étapes de l’inscription à Microsoft 365 Lighthouse
 
-1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> . 
+1. Go to the Centre d’administration Microsoft 365 at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and log in using your partner tenant credentials. 
 
 1. Go to **Billing**  >  **Purchase Services** Other  >  **Services**.
 
@@ -53,14 +53,14 @@ ms.locfileid: "53437999"
 
     Pour vérifier que Microsoft 365 Lighthouse ajouté à votre client, recherchez les Microsoft 365 Lighthouse sous **Facturation > Vos** produits dans le Centre d’administration Microsoft 365.
 
-1. Si vous n’êtes pas redirigé vers le portail Microsoft 365 Lighthouse, allez sur <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> .
+1. Si vous n’êtes pas redirigé vers le portail Microsoft 365 Lighthouse, allez à <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a> .
 
 1. Sélectionnez **Accepter & continuer à** terminer la modification de l’accord de partenaire.
 
     > [!NOTE]
     > Une fois l’inscription terminée, l’affichage des données client dans le Microsoft 365 Lighthouse peut prendre jusqu’à 48 heures.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 [Configurer la sécurité Microsoft 365 Lighthouse portail d’entreprise](m365-lighthouse-configure-portal-security.md) 
 

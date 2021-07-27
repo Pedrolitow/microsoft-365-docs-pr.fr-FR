@@ -158,8 +158,16 @@
           href: air-custom-reporting.md
         - name: Paramètres de filtre de courrier indésirable avancé (ASF)
           href: advanced-spam-filtering-asf-options.md
-        - name: Gérer la liste Autoriser/Bloquer du client
-          href: tenant-allow-block-list.md
+        - name: Liste Autoriser/Bloquer du client
+          items:
+            - name: Gérer la liste Autoriser/Bloquer du client
+              href: tenant-allow-block-list.md
+            - name: Ajouter des blocs dans la liste verte/rouge du locataire
+              href: manage-tenant-blocks.md
+            - name: Ajouter des autorisations dans la liste verte/rouge du client
+              href: manage-tenant-allows.md
+            - name: Modifier et supprimer des entrées dans la liste verte/rouge du client
+              href: modify-remove-entries-tenant-allow-block.md
         - name: Suivi des messages dans le Centre de sécurité et de conformité
           href: message-trace-scc.md
         - name: Signaler les messages et fichiers à Microsoft
@@ -186,7 +194,7 @@
               href: real-time-detections.md
         - name: Utiliser les suivis des menaces
           href: threat-trackers.md
-        - name: Afficher les alertes
+        - name: Stratégies d’alerte
           href: ../../compliance/alert-policies.md
         - name: Rapports intelligents et aperçus dans le Centre de sécurité et de conformité
           href: reports-and-insights-in-security-and-compliance.md

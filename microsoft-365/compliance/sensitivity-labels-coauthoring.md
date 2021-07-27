@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Activez un paramètre qui permet la co-édition et l’enregistrement automatique dans les applications de bureau pour les documents étiquetés et chiffrés dans SharePoint et OneDrive.
-ms.openlocfilehash: bd197a55e5a119263bd9c67716c38010a86e5263
-ms.sourcegitcommit: d34cac68537d6e1c65be757956646e73dea6e1ab
+ms.openlocfilehash: 494e00187be4d19eb54d0226a02103b8fe20cb98
+ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "53062191"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53461410"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Activer la co-édition pour les fichiers chiffrés avec les étiquettes de confidentialité
 
@@ -127,7 +127,7 @@ Cette version préliminaire de la co-édition pour les fichiers chiffrés avec d
 
 - Les utilisateurs ne peuvent pas appliquer d’étiquettes dans Office sur le web pour les fichiers Word, Excel et PowerPoint dont la taille est supérieur à 300 Mo. Pour ces fichiers, vous pouvez utiliser les applications de bureau Office pour appliquer une étiquette, mais vous devez être la seule personne à ouvrir le fichier.
 
-- Lorsque vous utilisez les [stratégies DLP qui utilisent des étiquettes de confidentialité comme conditions](dlp-sensitivity-label-as-condition.md), les pièces jointes non chiffrées pour les courriers électroniques ne sont pas prise en charge.
+- Déploiement en cours : prise en charge des [stratégies DLP qui utilisent des étiquettes de confidentialité comme conditions](dlp-sensitivity-label-as-condition.md) et des pièces jointes non chiffrées pour les e-mails.
 
 - Certains documents ne sont pas compatibles avec les étiquettes de niveau de confidentialité en raison de fonctionnalités telles que [protection par mot de passe](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), [classeurs partagés](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534) ou du contenu incluant des contrôles ActiveX. D’autres raisons sont consignées dans [Résoudre les problèmes de co-édition dans Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7). Pour ces documents, un message **ÉCHEC DE CHARGEMENT** s’affiche et vous devez sélectionner l’option **Ignorer les modifications**. Tant que ce problème n’a pas été résolu, n’étiquetez pas les documents identifiés avec ce message d’échec.
 

@@ -3,7 +3,7 @@ title: Différence entre la compréhension de document et les modèles de traite
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: lauriellis
+ms.reviewer: lauris
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Décrit la principale différence entre la compréhension de document et les modèles de traitement de formulaire
-ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Découvrez la principale différence entre un modèle de compréhension de document et un modèle de traitement de formulaire.
+ms.openlocfilehash: 929d7f248607b052aa8f41d08a2fbdee7a53fa6f
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706509"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578456"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Différence entre la compréhension de document et les modèles de traitement de formulaire 
 
@@ -55,6 +55,10 @@ Les modèles de compréhension de document sont créés et gérés dans un site 
 Les modèles de traitement de formulaire sont créés dans [AI Builder](/ai-builder/overview) de PowerApps, mais la création démarre directement à partir d’une bibliothèque de documents SharePoint. La création du modèle de traitement de formulaire d’une bibliothèque de documents doit être activée pour qu’un utilisateur puisse créer un modèle de traitement des formulaires pour celle-ci. Les administrateurs peuvent activer la création du modèle de traitement de formulaire dans le contenu comprenant les paramètres d’administration. Les modèles de traitement de formulaire utilisent des flux PowerAutomate pour traiter les fichiers lorsqu’ils sont téléchargés dans la bibliothèque de documents.
 
 Lorsque vous créez un modèle de compréhension de document, vous créez un nouveau [type de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), qui est enregistré dans la galerie Types de contenu SharePoint. Vous pouvez également utiliser des types de contenu existants pour définir votre modèle si nécessaire.
+
+Une fois qu’un type de contenu est créé et associé à un modèle, vous pouvez également le référencer à partir du panneau de propriétés **Type de contenu de site** .
+
+![Capture d’écran du panneau Type de contenu du site montrant le modèle compréhension de Document mis en évidence.](../media/content-understanding/site-content-type-panel.png)
 
 Les modèles de traitement de formulaire créent également de nouveaux [types de contenu SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) et sont, eux aussi, stockés dans la galerie Types de contenu SharePoint.
 

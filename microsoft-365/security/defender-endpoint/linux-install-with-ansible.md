@@ -18,30 +18,30 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13bcbc74fcb9c540c45a6eec7e7e506b6943986a
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f3ec3552e10fa0b25c75644c7c37c63afb81902b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841790"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542661"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Déployer Microsoft Defender pour endpoint sur Linux avec Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article explique comment déployer Defender pour endpoint sur Linux à l’aide d’Ansible. Un déploiement réussi nécessite l’exécution de toutes les tâches suivantes :
 
 - [Télécharger le package d’intégration](#download-the-onboarding-package)
 - [Créer des fichiers YAML ansibles](#create-ansible-yaml-files)
 - [Déploiement](#deployment)
-- [References](#references)
+- [Références](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>Conditions préalables et système requis
 
@@ -55,7 +55,7 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
   - sous-président
   - python-apt
 
-- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou le fichier approprié :
+- Tous les nodes gérés doivent être répertoriés au format suivant dans le `/etc/ansible/hosts` fichier ou dans le fichier approprié :
 
     ```bash
     [servers]
@@ -71,13 +71,13 @@ En outre, pour le déploiement Ansible, vous devez être familiarisé avec les t
 
 ## <a name="download-the-onboarding-package"></a>Télécharger le package d’intégration
 
-Téléchargez le package d’intégration à partir Centre de sécurité Microsoft Defender :
+Téléchargez le package d’intégration à partir Microsoft 365 Defender portail :
 
-1. In Centre de sécurité Microsoft Defender, go to **Paramètres > Device Management > Onboarding**.
-2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
+1. Dans Microsoft 365 Defender portail, go to **Paramètres > Endpoints > Device management > Onboarding**.
+2. Dans le premier menu déroulant, sélectionnez **Linux Server comme** système d’exploitation. Dans le deuxième menu déroulant, sélectionnez Votre outil de gestion de **configuration Linux préféré** comme méthode de déploiement.
 3. Sélectionnez **Télécharger le package d’intégration.** Enregistrez le fichier sous WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Centre de sécurité Microsoft Defender capture d’écran](images/atp-portal-onboarding-linux-2.png)
+    ![capture d Microsoft 365 Defender portail d’entreprise](images/portal-onboarding-linux-2.png)
 
 4. À partir d’une invite de commandes, vérifiez que vous avez le fichier. Extrayons le contenu de l’archive :
 
@@ -177,7 +177,7 @@ Créez une sous-tâche ou des fichiers de rôle qui contribuent à un manuel ou 
     when: ansible_os_family == "RedHat"
   ```
 
-- Créez les fichiers YAML d’installation et de désinstallation Ansible.
+- Créez les fichiers YaML d’installation et de désinstallation Ansible.
 
     - Pour les distributions basées sur apt, utilisez le fichier YAML suivant :
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Découvrez comment utiliser des add-ins centralisés pour déployer des modules pour les utilisateurs et les groupes de votre organisation.
-ms.openlocfilehash: aad68d37fb23c26ef1a1ca1ba7dfc5d4e2a40bfe
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: a27fc3744ab0dfc9256afbb6e08e881d2d35fb48
+ms.sourcegitcommit: a84a7a9bda2b616a24af03b89a84f5e75ebfc0c7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53392862"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "53578372"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gérer des compléments dans le centre d’administration
 
@@ -39,7 +39,7 @@ Pour plus d’informations sur l’installation des modules complémentaires à 
   
 ## <a name="add-in-states"></a>États de complément
 
-Un add-in peut être à **l’état On** ou **Off.**
+Un add-in peut être à **l’état « On** » ou « **Off** ».
   
 | État | Comment l’état se produit | Impact |
 |:-----|:-----|:-----|
@@ -56,7 +56,7 @@ Vous pouvez également supprimer un module qui a été déployé.
 1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
 
     > [!NOTE]
-    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en **Paramètres**  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
 
 2. Sélectionnez le add-in déployé.
 
@@ -71,7 +71,8 @@ Après le déploiement, les administrateurs peuvent également gérer l’accès
 1. Dans le Centre d’administration, allez à la page **Paramètres**  >  **services & les modules.**
 
     > [!NOTE]
-    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en **Paramètres**  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+
 
 2. Sélectionnez le add-in déployé.
 
@@ -91,7 +92,8 @@ En tant qu’organisation, vous pouvez empêcher le téléchargement de nouveaux
 1. Dans le centre d’administration, cliquez sur la page **Paramètres** \> [Services &amp; Compléments](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
     > [!NOTE]
-    > Le Centre d’administration est mis à jour vers l’expérience de déploiement avec les applications intégrées. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en **Paramètres**  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+    > Vous pouvez également déployer des applications intégrées dans le Centre d’administration. [](test-and-deploy-microsoft-365-apps.md) Les applications intégrées sont visibles par les administrateurs Exchange général et les administrateurs. Si vous ne voyez pas les étapes ci-dessus, consultez la section Déploiement centralisé en Paramètres  >  **applications intégrées.** En haut de la page **Applications intégrées,** choisissez **Les applications.**
+
     
 3. Sélectionnez **Applications et services appartenant aux utilisateurs**.
     

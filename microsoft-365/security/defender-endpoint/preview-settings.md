@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e8b5a2cf26c3ba99b528695c3296f7a83d5bc22
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: d3150caceae82be761d71d60373ccc128b59bcd8
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861082"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53542720"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>Activer l’expérience d’aperçu dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -36,16 +36,16 @@ ms.locfileid: "51861082"
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **fonctionnalités avancées.**
+1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **fonctionnalités avancées des points** de  >  **terminaison.**
 
-    ![Image des paramètres et de l’expérience d’aperçu](images/atp-preview-features.png)
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="image de l’expérience d’aperçu et des paramètres":::
 
 
-2. Basculez le paramètre entre **Sur** et **Hors et** sélectionnez Enregistrer **les préférences.**
+2. Basculez le paramètre entre **« Sur** » et « **Hors** » et sélectionnez Enregistrer **les préférences.**
 
 ## <a name="related-topics"></a>Voir aussi
 - [Mettre à jour les paramètres généraux dans Microsoft Defender pour le point de terminaison](data-retention-settings.md)
 - [Activer les fonctionnalités avancées dans Microsoft Defender pour le point de terminaison](advanced-features.md)
 - [Configurer les notifications par courrier électronique dans Microsoft Defender pour le point de terminaison](configure-email-notifications.md)
-- [Activer l’intégration SIEM dans Microsoft Defender pour le point de terminaison](enable-siem-integration.md)
+- [Activer l’intégration SIEM dans Microsoft Defender pour endpoint](enable-siem-integration.md)
 
