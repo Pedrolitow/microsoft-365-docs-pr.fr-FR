@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: c0736b93c314c3086f8a52477622c6bcfa4096a0
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: eebf6b6a07ed051a59ce9563497be25367ad3878
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458366"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544516"
 ---
 # <a name="enable-the-evaluation-environment"></a>Activer l’environnement d’évaluation
 
@@ -38,8 +38,7 @@ Cet article est [l’étape 2 sur 3 dans](eval-defender-office-365-overview.md) 
 
 Utilisez les étapes suivantes pour activer l’évaluation de Microsoft Defender pour Office 365.
 
-
-![Étapes permettant d’activer Microsoft Defender pour Office 365 dans l’environnement d’évaluation De Microsoft Defender](../../media/defender/m365-defender-office-eval-enable-steps.png)
+![Étapes permettant d’activer Microsoft Defender pour Office 365 dans l’environnement d’évaluation de Microsoft Defender](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
 - [Étape 1 : Activer les licences d’essai](#step-1-activate-trial-licenses)
 - [Étape 2 : Auditer et vérifier l’enregistrement MX public](#step-2-audit-and-verify-the-public-mx-record)
@@ -54,20 +53,20 @@ Connectez-vous à votre Microsoft Defender existant pour Office 365 environnemen
 1. Accédez au portail d’administration.
 2. Sélectionnez Acheter des services dans le lancement rapide.
 
-:::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="Cliquez sur Acheter des services dans le volet de navigation de Office 365.":::
+   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="Cliquez sur Acheter des services dans le volet de navigation de Office 365.":::
 
-3.  Faites défiler vers le bas jusquAdd-On section (ou recherchez « Defender ») pour localiser Microsoft Defender Office 365 plans.
-4.  Cliquez sur Détails à côté du plan que vous souhaitez évaluer.
+3. Faites défiler vers le bas jusquAdd-On section (ou recherchez « Defender ») pour localiser Microsoft Defender Office 365 plans.
+4. Cliquez sur Détails à côté du plan que vous souhaitez évaluer.
 
-:::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="Cliquez ensuite sur le bouton Détails.":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="Cliquez ensuite sur le bouton Détails.":::
 
 5. Cliquez sur le *lien Démarrer la version d’essai* gratuite.
 
-:::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Cliquez sur l’essai gratuit Démarrer *lien hypertexte* dans ce panneau.":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Cliquez sur l’essai gratuit Démarrer *lien hypertexte* dans ce panneau.":::
 
 6. Confirmez votre demande et cliquez sur le *bouton Essayer maintenant.*
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Cliquez maintenant sur le bouton Essayer maintenant **.":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="Cliquez maintenant sur le bouton Essayer maintenant **.":::
 
 ## <a name="step-2-audit-and-verify-the-public-mx-record"></a>Étape 2 : Auditer et vérifier l’enregistrement MX public
 
@@ -101,35 +100,36 @@ Utilisez les instructions ci-après pour activer votre Microsoft Defender pour O
 1. Connectez-vous à votre client avec un compte ayant accès au portail Microsoft 365 Defender client.
 2. Choisissez si vous souhaitez que le portail **Microsoft 365 Defender soit** votre interface par défaut pour Microsoft Defender pour Office 365 administration (recommandé).
 
-:::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="Cliquez sur le bouton Activer les paramètres pour utiliser le portail d’administration centralisé Microsoft 365 Defender amélioré.":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="Cliquez sur le bouton Activer les paramètres pour utiliser le portail d’administration centralisé Microsoft 365 Defender amélioré.":::
 
-3. Dans le menu de navigation, sélectionnez **Stratégies & sous** *Email & Collaboration*.
+3. Dans le menu de navigation, sélectionnez **Stratégies & sous** *Collaboration & courrier électronique.*
 
-:::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="Voici une image du menu Collaboration & courrier électronique pointant vers stratégies & règles. Cliquez dessus !":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="Voici une image du menu Collaboration & courrier électronique pointant vers stratégies & règles. Cliquez dessus !":::
 
 4. Dans le tableau *de bord Règles & stratégie,* cliquez sur **Stratégies de menace.**
 
-:::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="Image du tableau de bord Règles & stratégie et flèche pointant vers les stratégies de menace. Cliquez sur ce bouton suivant !":::
+   :::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="Image du tableau de bord Règles & stratégie et flèche pointant vers les stratégies de menace. Cliquez ensuite dessus !":::
 
-5. Faites défiler vers le bas *jusqu’à Stratégies* supplémentaires et sélectionnez la **vignette Évaluer Defender Office 365'évaluation.**
+5. Faites défiler vers le bas *jusqu’à Stratégies* supplémentaires et sélectionnez **la vignette Évaluer Defender Office 365'évaluation.**
 
-:::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="La vignette Eval Defender pour Office 365 qui s’agit d’une version d’essai de 30 jours sur les vecteurs de collaboration & courrier électronique. Cliquez dessus.":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-activate-eval.png" alt-text="La vignette Eval Defender pour Office 365 qui s’agit d’une version d’essai de 30 jours sur les vecteurs de collaboration & courrier électronique. Cliquez dessus.":::
 
 6. Choisissez maintenant si les e-mails externes sont Exchange Online directement ou vers une passerelle ou un service tiers, puis cliquez sur Suivant.
 
-:::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="Defender for Office 365 évaluera l’envoi de messages à Exchange Online boîtes aux lettres. Donnez des détails sur la façon dont votre courrier est acheminé maintenant, y compris le nom du connecteur sortant qui déroute votre courrier. Si vous utilisez uniquement Exchange Online Protection (EOP), vous n’avez pas de connecteur. Choisissez l’un des fournisseurs tiers ou locaux, ou j’utilise uniquement EOP.":::
+   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="Defender for Office 365 évaluera l’envoi de messages à Exchange Online boîtes aux lettres. Donnez des détails sur la façon dont votre courrier est acheminé maintenant, y compris le nom du connecteur sortant qui déroute votre courrier. Si vous utilisez uniquement Exchange Online Protection (EOP), vous n’avez pas de connecteur. Choisissez l’un des fournisseurs tiers ou locaux, ou j’utilise uniquement EOP.":::
 
 7. Si vous utilisez une passerelle tierce, sélectionnez le nom du fournisseur dans la liste sortante avec le connecteur entrant associé à cette solution. Lorsque vous avez répertorié vos réponses, cliquez sur Suivant.
 
-:::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="Dans cette boîte de dialogue, vous choisissez le service fournisseur tiers que votre organisation utilise, ou sélectionnez *Autre*. Dans la boîte de dialogue suivante, sélectionnez le connecteur entrant. Cliquez ensuite sur Suivant.":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="Dans cette boîte de dialogue, vous choisissez le service fournisseur tiers que votre organisation utilise, ou sélectionnez *Autre*. Dans la boîte de dialogue suivante, sélectionnez le connecteur entrant. Cliquez ensuite sur Suivant.":::
 
 8. Examinez vos paramètres et cliquez sur le bouton Créer **une** évaluation.
 
-|  |  |
-|---------|---------|
-|  :::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="Ce volet dispose d’une zone de drop-down pour passer en revue vos paramètres. Il dispose également d’un lien cliquable pour modifier votre type de routage si nécessaire. Lorsque vous êtes prêt, cliquez sur le grand bouton Bleu Créer l’évaluation.":::   |   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="La mise en place est maintenant terminée. Le bouton bleu de cette page indique « Passer à l’évaluation ».":::      |
+   |Avant|Après|
+   |:---:|:---:|
+   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="Ce volet dispose d’une zone de drop-down pour passer en revue vos paramètres. Il dispose également d’un lien cliquable pour modifier votre type de routage si nécessaire. Lorsque vous êtes prêt, cliquez sur le grand bouton Bleu Créer l’évaluation.":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="La mise en place est maintenant terminée. Le bouton bleu de cette page indique « Passer à l’évaluation ».":::|
+   |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Prochaines étapes
 
 Étape 3 sur 3 : Configurer le pilote pour Microsoft Defender pour Office 365
 

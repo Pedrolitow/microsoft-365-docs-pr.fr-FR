@@ -23,16 +23,16 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 06/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 56a63c09690e28f0ca4990dcbcbcb6cfff7d5eef
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: e2bce4d202c36e0174592fa3dd5e0edee08490ee
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929502"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544540"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Basculer vers Microsoft Defender pour le point de terminaison - Phase 1 : Préparer
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -46,24 +46,24 @@ Cette phase de migration comprend les étapes suivantes :
 
 1. [Obtenir et déployer des mises à jour sur les appareils de votre organisation](#get-and-deploy-updates-across-your-organizations-devices)
 2. [Obtenir Defender pour le point de terminaison](#get-microsoft-defender-for-endpoint).
-3. [Accorder l’accès au Centre de sécurité Microsoft Defender](#grant-access-to-the-microsoft-defender-security-center).
-4. [Configurez les paramètres de proxy et de connectivité Internet de l’appareil.](#configure-device-proxy-and-internet-connectivity-settings)
+3. [Accorder l’accès au portail Microsoft 365 Defender.](#grant-access-to-the-microsoft-365-defender-portal)
+4. [Configurer les paramètres de proxy et de connectivité Internet de l’appareil.](#configure-device-proxy-and-internet-connectivity-settings)
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Obtenir et déployer des mises à jour sur les appareils de votre organisation
 
-Il est préférable de maintenir à jour les appareils et points de terminaison de votre organisation. Assurez-vous que votre solution antivirus et de protection de point de terminaison existante est à jour et que les systèmes d’exploitation et les applications de votre organisation ont également les dernières mises à jour. Cela permet d’éviter les problèmes plus tard lors de la migration vers Defender pour endpoint et Antivirus Microsoft Defender.
+En tant que meilleure pratique, maintenez à jour les appareils et points de terminaison de votre organisation. Assurez-vous que votre solution antivirus et de protection de point de terminaison existante est à jour et que les systèmes d’exploitation et les applications de votre organisation ont également les dernières mises à jour. Cela permet d’éviter les problèmes plus tard lors de la migration vers Defender pour endpoint et Antivirus Microsoft Defender.
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>Assurez-vous que votre solution existante est à jour
 
 Maintenez votre solution de protection de point de terminaison existante à jour et assurez-vous que les appareils de votre organisation ont les dernières mises à jour de sécurité. 
 
-Besoin d’aide ? Consultez la documentation de votre fournisseur de solutions.
+Besoin d'aide ? Consultez la documentation de votre fournisseur de solutions.
 
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>Assurez-vous que les appareils de votre organisation sont à jour
 
 Vous avez besoin d’aide pour mettre à jour les appareils de votre organisation ? Consultez les ressources suivantes :
 
-|SYSTÈME D’EXPLOITATION | Ressource |
+|SYSTÈME D’EXPLOITATION | Resource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Comment mettre à jour le logiciel sur votre Mac](https://support.apple.com/HT201541)|
@@ -81,18 +81,18 @@ Maintenant que vous avez mis à jour les appareils de votre organisation, l’é
 
 3. En tant qu’administrateur général ou administrateur de sécurité, vous pouvez configurer votre instance cloud dédiée de Defender for Endpoint. Voir [Configuration de Defender pour le point de terminaison : configuration du client.](production-deployment.md#tenant-configuration)
 
-4. Si les points de terminaison (tels que les appareils) de votre organisation utilisent un proxy pour accéder à Internet, consultez La configuration de [Defender for Endpoint : Configuration réseau](production-deployment.md#network-configuration).
+4. Si les points de terminaison (tels que les appareils) de votre organisation utilisent un proxy pour accéder à Internet, voir Defender pour l’installation du point de [terminaison](production-deployment.md#network-configuration): configuration réseau .
  
-À ce stade, vous êtes prêt à accorder l’accès à vos administrateurs de sécurité et opérateurs de sécurité qui utiliseront le Centre de sécurité Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). 
+À ce stade, vous êtes prêt à accorder l’accès à vos administrateurs de sécurité et opérateurs de sécurité qui utiliseront le portail Microsoft 365 Defender ( [https://security.microsoft.com](https://security.microsoft.com) ). 
 
 > [!NOTE]
-> Le Centre de sécurité Microsoft Defender est parfois appelé le portail Defender pour point de terminaison et est accessible à l':. [https://securitycenter.windows.com](https://securitycenter.windows.com) 
+> Le portail Microsoft 365 Defender est parfois appelé portail Defender pour point de terminaison et est accessible à l':. [https://security.microsoft.com](https://security.microsoft.com) 
 
-## <a name="grant-access-to-the-microsoft-defender-security-center"></a>Accorder l’accès au Centre de sécurité Microsoft Defender
+## <a name="grant-access-to-the-microsoft-365-defender-portal"></a>Accorder l’accès au portail Microsoft 365 Defender web
 
-Le Centre de sécurité Microsoft Defender ( ) est l’endroit où vous accédez aux fonctionnalités et aux fonctionnalités de Defender for Endpoint et les [https://securitycenter.windows.com](https://securitycenter.windows.com) configurez. Pour plus d’informations, voir [Vue d’ensemble Centre de sécurité Microsoft Defender](use.md).
+Le Microsoft 365 Defender ( ) est l’endroit où vous accédez et configurez les fonctionnalités de [https://security.microsoft.com](https://security.microsoft.com) Defender for Endpoint. Pour plus d’informations, voir [Vue d’ensemble Microsoft 365 Defender portail.](use.md)
 
-Les autorisations sur le Centre de sécurité Microsoft Defender peuvent être accordées à l’aide d’autorisations de base ou d’un contrôle d’accès basé sur un rôle (RBAC). Nous vous recommandons d’utiliser RBAC afin de contrôler plus granulairement les autorisations.
+Les autorisations sur le portail Microsoft 365 Defender peuvent être accordées à l’aide d’autorisations de base ou d’un contrôle d’accès basé sur un rôle (RBAC). Nous vous recommandons d’utiliser RBAC afin de contrôler plus granulairement les autorisations.
 
 1. Planifiez les rôles et les autorisations de vos administrateurs de sécurité et opérateurs de sécurité. Voir [Contrôle d’accès basé sur un rôle.](prepare-deployment.md#role-based-access-control)
 
@@ -104,7 +104,7 @@ Les autorisations sur le Centre de sécurité Microsoft Defender peuvent être a
     - [Gestion avancée des stratégies de groupe](/microsoft-desktop-optimization-pack/agpm)
     - [Windows Centre d’administration](/windows-server/manage/windows-admin-center/overview)
 
-3. Accorder l’accès au Centre de sécurité Microsoft Defender. (Vous avez besoin d’aide ? Voir [Gérer l’accès au portail à l’aide de RBAC](rbac.md)).
+3. Accorder l’accès au Microsoft 365 Defender web. (Vous avez besoin d’aide ? Voir [Gérer l’accès au portail à l’aide de RBAC](rbac.md)).
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurer les paramètres de proxy d’appareil et de connectivité Internet
 
@@ -112,11 +112,11 @@ Pour activer la communication entre vos appareils et Defender pour le point de t
 
 | Fonctionnalités  | Système d’exploitation | Ressources |
 |:--|:--|:--|
-| [Détection et réponse des points](overview-endpoint-detection-response.md) de terminaison (PEPT) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Serveur 1803 ou ultérieur](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configurer les paramètres de connectivité Internet et proxy de l’ordinateur](configure-proxy-internet.md) |
-| PEPT | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configurer les paramètres de proxy et de connectivité Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+| [Détection et réponse des points](overview-endpoint-detection-response.md) de terminaison (PEPT) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Serveur 1803 ou ultérieur](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configurer les paramètres de proxy et de connectivité Internet de l’ordinateur](configure-proxy-internet.md) |
+| PEPT | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configurer les paramètres de proxy et de connectivité Internet](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
 | PEPT  | macOS :<p>11.3.1 (Big Sur)<p>10.15 (Île)<p>10.14 (Mojave)   | [Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections)  |
 | [Antivirus Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Serveur 1803 ou ultérieur](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Configurer et valider les connexions réseau à un antivirus Microsoft Defender](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-| Antivirus | macOS :<p>11.3.1 (Big Sur)<p>10.15 (Îles)<p>10.14 (Mojave) | [Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections) |
+| Antivirus | macOS :<p>11.3.1 (Big Sur)<p>10.15 (Île)<p>10.14 (Mojave) | [Defender pour le point de terminaison sur macOS : connexions réseau](microsoft-defender-endpoint-mac.md#network-connections) |
 | Antivirus | Linux : <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS ou un LTS supérieur<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Defender pour point de terminaison sur Linux : connexions réseau](microsoft-defender-endpoint-linux.md#network-connections) |
 
 ## <a name="next-step"></a>Étape suivante

@@ -107,12 +107,12 @@
 
 ##### [Déployer]()
 ###### [Déployer Microsoft Defender pour point de terminaison iOS via Intune](ios-install.md)
+###### [Déployer Microsoft Defender pour point de terminaison sur iOS pour les appareils non inscrits](ios-install-unmanaged.md)
 
 ##### [Configurer]()
 ###### [Configurer des fonctionnalités iOS](ios-configure-features.md)
 
-##### [Résoudre des problèmes]()
-###### [FAQs et résolution de problèmes](ios-troubleshoot.md)
+##### [FAQ et résolution des problèmes](ios-troubleshoot.md)
 
 ##### [Confidentialité](ios-privacy.md)
 
@@ -239,6 +239,7 @@
 #### [Vue d’ensemble de la réduction de la surface d'attaque](overview-attack-surface-reduction.md)
 #### [Configurer les fonctionnalités de la réduction de la surface d’attaque](configure-attack-surface-reduction.md)
 #### [En savoir plus sur les règles de réduction de la surface d’attaque](attack-surface-reduction.md)
+#### [Règles de réduction de la surface d’attaque](attack-surface-reduction-rules.md)
 #### [Évaluer les règles de réduction de la surface d’attaque](evaluate-attack-surface-reduction.md)
 #### [Activer les règles de réduction de la surface d’attaque](enable-attack-surface-reduction.md)
 #### [Personnaliser les règles de réduction de la surface d’attaque](customize-attack-surface-reduction.md)

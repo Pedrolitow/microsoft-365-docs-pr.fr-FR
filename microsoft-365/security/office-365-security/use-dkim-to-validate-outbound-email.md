@@ -20,12 +20,12 @@ ms.custom:
 description: Découvrez comment utiliser DKIM (DomainKeys Identified Mail) avec Microsoft 365 pour vous assurer que les systèmes de messagerie de destination approuvent les messages envoyés à partir de votre domaine personnalisé.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9aa67d7875bb7f81c6569b56704d221b57378962
-ms.sourcegitcommit: ebb1c3b4d94058a58344317beb9475c8a2eae9a7
+ms.openlocfilehash: b5e852e26d1fc336a52255ea8fc7a90ab384c64c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53108498"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544480"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Utilisation de DKIM pour valider les messages sortants envoyés à partir de votre domaine personnalisé
 
@@ -113,7 +113,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 > [!TIP]
 > Cette nouvelle clé 2048 bits prend effet sur RotateOnDate et envoie des e-mails avec la clé 1024 bits au niveau intermédiaire. Après quatre jours, vous pouvez à nouveau effectuer un test à l’aide de la touche 2048 bits (autrement dit, une fois que la rotation prend effet sur le deuxième sélecteur).
 
-Si vous voulez faire pivoter vers le deuxième sélecteur, vos options sont a) laisser le service Microsoft 365 faire pivoter le sélecteur et effectuer la mise à niveau vers le nombre de bits 2048 dans les 6 mois, ou b) après 4 jours et confirmation que le nombre de bits 2048 est utilisé, faire pivoter manuellement la deuxième touche du sélecteur en utilisant la cmdlet appropriée répertoriée ci-dessus.
+Si vous souhaitez faire pivoter vers le deuxième sélecteur, après quatre jours et confirmer que le nombre de bits 2048 est en cours d’utilisation, faites pivoter manuellement la deuxième clé de sélecteur à l’aide de l’applet de commande appropriée répertoriée ci-dessus.
 
 Pour obtenir des informations détaillées sur la syntaxe et les paramètres, consultez les articles suivants : [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig)et [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig).
 
@@ -208,6 +208,8 @@ Une fois que vous avez publié les enregistrements CNAME dans le système DNS, v
 
 5. Répétez ces étapes pour chaque domaine personnalisé.
 
+6. Si vous configurez DKIM pour la première fois et que vous voyez l’erreur « Aucune clé DKIM enregistrée pour ce domaine », vous devez utiliser Windows PowerShell pour activer la signature DKIM, comme expliqué à l’étape suivante.
+
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Activation de la signature DKIM pour votre domaine personnalisé à l’aide de PowerShell
 
 > [!IMPORTANT]
@@ -259,7 +261,7 @@ Si un jour vous décidez d'ajouter un autre domaine personnalisé et que vous so
 ## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>Désactivation de la stratégie de signature DKIM pour un domaine personnalisé
 <a name="DisableDKIMSigningPolicy"> </a>
 
-La désactivation de la stratégie de signature ne désactive pas complètement DKIM. Après un certain temps, Microsoft 365 applique automatiquement la stratégie par défaut pour votre domaine. Pour plus d'informations, voir [Comportement par défaut pour DKIM et Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+La désactivation de la stratégie de signature ne désactive pas complètement DKIM. Au bout d’un certain temps, Microsoft 365 applique automatiquement la stratégie par défaut pour votre domaine, si la stratégie par défaut est toujours dans l’état activé. Si vous souhaitez désactiver complètement DKIM, vous devez désactiver DKIM sur les domaines personnalisés et par défaut. Pour plus d'informations, voir [Comportement par défaut pour DKIM et Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Pour désactiver la stratégie de signature DKIM à l’aide de Windows PowerShell
 
@@ -294,9 +296,9 @@ La désactivation de la stratégie de signature ne désactive pas complètement 
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>Comportement par défaut pour DKIM et Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Si vous n’activez pas DKIM, Microsoft 365 crée automatiquement une clé publique DKIM 1024 bits pour votre domaine par défaut et la clé privée associée que nous stockons en interne dans notre centre de données. Par défaut, Microsoft 365 utilise une configuration de signature par défaut pour les domaines ne disposant d’aucune stratégie définie. Cela signifie que si vous ne configurez pas DKIM vous-même, Microsoft 365 utilise sa stratégie par défaut et les clés qu’il crée pour activer DKIM sur votre domaine.
+Si vous n’activez pas DKIM, Microsoft 365 crée automatiquement une clé publique DKIM 1024 bits pour votre adresse MOERA (Microsoft Online Email Routing Address)/domaine initial et la clé privée associée que nous stockons en interne dans notre centre de données. Par défaut, Microsoft 365 utilise une configuration de signature par défaut pour les domaines qui n’ont pas de stratégie en place. Cela signifie que si vous ne configurez pas DKIM vous-même, Microsoft 365 utilisera sa stratégie par défaut et les clés qu’il crée pour activer DKIM pour votre domaine.
 
-En outre, si vous désactivez la signature DKIM, après un certain temps, Microsoft 365 applique automatiquement sa stratégie par défaut pour votre domaine.
+En outre, si vous désactivez la signature DKIM sur votre domaine personnalisé après l’avoir activé, au bout d’un certain temps, Microsoft 365 applique automatiquement la stratégie de domaine MOERA/initiale pour votre domaine personnalisé.
 
 Dans l’exemple suivant, supposons que DKIM pour fabrikam.com a été activé par Microsoft 365, et pas par l’administrateur du domaine. Cela signifie que les enregistrements CNAME requis n’existent pas dans le système DNS. Les signatures DKIM pour les e-mails provenant de ce domaine se présenteront comme suit :
 

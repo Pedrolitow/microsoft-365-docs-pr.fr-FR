@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/5/2021
   localization_priority: Priority
-  ms.openlocfilehash: a8ef08c7207bf6183c185bb3d6e15a416d86a484
-  ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
+  ms.openlocfilehash: 86bb2dffb0ac0d547eed66475c145ebd761791e7
+  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/26/2021
-  ms.locfileid: "53587644"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "53544660"
 landingContent:
 - title: Microsoft Defender pour point de terminaison
   linkLists:
@@ -55,7 +55,7 @@ landingContent:
   - linkListType: video
     links:
     - text: Vidéo sur l’intégration
-      url: https://www.microsoft.com/videoplayer/embed/RE4bGqr
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
 - title: Opérations de sécurité
   linkLists:
   - linkListType: overview

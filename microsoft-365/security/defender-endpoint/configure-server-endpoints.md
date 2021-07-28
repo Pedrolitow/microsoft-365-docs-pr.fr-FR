@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ff4c44199e4b6f8f1b3ca4806908813d7e710e4b
-ms.sourcegitcommit: 4046c2c390851dffcdb430e1ba38c4df23fe2e69
+ms.openlocfilehash: c318f063814d9b31e6d07c3bc6c7feea503efe2c
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53415610"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544841"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Intégrer Windows serveurs d’accès au service Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "53415610"
 - Windows Server 2019 et ultérieur
 - Windows Server 2019 Core Edition
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
 Defender for Endpoint étend la prise en charge pour inclure également le Windows d’exploitation Server. Cette prise en charge offre des fonctionnalités avancées de détection d’attaques et d’examens en toute transparence via Microsoft 365 Defender console.
 
@@ -61,14 +61,14 @@ Après avoir effectué les étapes d’intégration à l’aide de l’une des o
 
 Vous devez installer et configurer MMA pour que les serveurs Windows rapportent les données de capteur à Defender for Endpoint. Pour plus d’informations, voir [Collecter les données du journal avec l’agent Azure Log Analytics.](/azure/azure-monitor/platform/log-analytics-agent)
 
-Si vous utilisez déjà System Center Operations Manager (SCOM) ou Azure Monitor (anciennement Operations Management Suite (OMS), attachez le Microsoft Monitoring Agent (MMA) pour signaler à votre espace de travail Defender for Endpoint par le biais de la prise en charge multi-homing.
+Si vous utilisez déjà System Center Operations Manager (SCOM) ou Azure Monitor (anciennement Operations Management Suite (OMS), attachez le Microsoft Monitoring Agent (MMA) pour signaler à votre espace de travail Defender for Endpoint par le biais de la prise en charge de l’homing multiple.
 
 En règle générale, vous devez suivre les étapes suivantes :
 
-1. Remplissez les conditions d’intégration décrites dans la section **Avant de commencer.**
-2. Activer la surveillance du serveur à partir Microsoft 365 Defender portail.
-3. Installez et configurez MMA pour le serveur afin de signaler les données de capteur à Defender for Endpoint.
-4. Configurez et mettez à jour System Center Endpoint Protection clients.
+  1. Remplissez les conditions d’intégration décrites dans la section **Avant de commencer.**
+  2. Activer la surveillance du serveur à partir Microsoft 365 Defender.
+  3. Installez et configurez MMA pour le serveur afin de signaler les données de capteur à Defender for Endpoint.
+  4. Configurez et mettez à jour System Center Endpoint Protection clients.
 
 > [!TIP]
 > Après avoir intégré l’appareil, vous pouvez choisir d’exécuter un test de détection pour vérifier qu’il est correctement intégré au service. Pour plus d’informations, voir Exécuter un test de détection sur un point de terminaison [Defender pour point de terminaison nouvellement intégré.](run-detection-test.md)
@@ -105,7 +105,7 @@ Pour Windows Server 2008 R2 SP1 et Windows Server 2012 R2 : configurer et mettre
     - [Configurez l’agent à l’aide d’un script.](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)
 
 > [!NOTE]
-> Si vous [](gov.md)êtes un client du gouvernement des États-Unis, sous « Azure Cloud », vous devez choisir « Azure US Government » si vous utilisez l’Assistant Installation, ou si vous utilisez une ligne de commande ou un script , définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
+> Si vous êtes un client du gouvernement [américain,](gov.md)sous « Azure Cloud », vous devez choisir « Azure US Government » si vous utilisez l’Assistant Installation, ou si vous utilisez une ligne de commande ou un script , définissez le paramètre « OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE » sur 1.
 
 ### <a name="configure-windows-server-proxy-and-internet-connectivity-settings-if-needed"></a>Configurer les paramètres Windows proxy du serveur et de connectivité Internet si nécessaire
 
@@ -121,7 +121,7 @@ Une fois terminé, vous devriez voir les serveurs Windows intégrés dans le por
 
 ### <a name="option-2-onboard-windows-servers-through-azure-security-center"></a>Option 2 : intégrer des serveurs Windows par le biais du Centre de sécurité Azure
 
-1. Dans le volet Microsoft 365 Defender navigation, sélectionnez Paramètres intégration de la gestion des appareils des points de  >    >    >  **terminaison.**
+Dans le volet Microsoft 365 Defender navigation, sélectionnez Paramètres intégration de la gestion des appareils des points de  >    >    >  **terminaison.**
 
 2. Sélectionnez **Windows Server 2008 R2 SP1, 2012 R2 et 2016** comme système d’exploitation.
 
@@ -145,7 +145,7 @@ Après avoir effectué les étapes d’intégration, vous devez configurer et me
 
 ## <a name="windows-server-sac-version-1803-windows-server-2019-and-windows-server-2019-core-edition"></a>Windows Server (SAC) version 1803, Windows Server 2019 et Windows Server 2019 Core Edition
 
-Vous pouvez intégrer Windows Server (SAC) version 1803, Windows Server 2019 ou Windows Server 2019 Core edition en utilisant les méthodes de déploiement suivantes :
+Vous pouvez intégrer Windows Server (SAC) version 1803, Windows Server 2019 ou Windows Server 2019 Core edition à l’aide des méthodes de déploiement suivantes :
 
 - [Script local](configure-endpoints-script.md)
 - [Stratégie de groupe](configure-endpoints-gp.md)
@@ -200,18 +200,19 @@ Les fonctionnalités suivantes sont incluses dans cette intégration :
     > L’intégration entre Azure Defender pour serveurs et Microsoft Defender pour point de terminaison a été étendue pour prendre en charge [Windows Server 2019 et Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Windows serveurs surveillés par Azure Defender seront également disponibles dans Defender pour le point de terminaison : Azure Defender se connecte en toute transparence au client Defender for Endpoint, fournissant une vue unique sur les clients et les serveurs.  En outre, les alertes defender pour point de terminaison seront disponibles dans la console Azure Defender.
-- Enquête sur le serveur : les clients Azure Defender peuvent accéder à Microsoft 365 Defender portail pour effectuer une enquête détaillée afin de découvrir l’étendue d’une violation potentielle.
+
+- Enquête sur le serveur : les clients Azure Defender peuvent accéder Microsoft 365 Defender pour effectuer une enquête détaillée afin de découvrir l’étendue d’une violation potentielle.
 
 > [!IMPORTANT]
 > - Lorsque vous utilisez Azure Defender pour surveiller les serveurs, un client Defender pour point de terminaison est automatiquement créé (aux États-Unis pour les utilisateurs américains, dans l’UE pour les utilisateurs européens et anglais).<br>
-Les données collectées par Defender pour endpoint sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
+Les données collectées par Defender pour le point de terminaison sont stockées dans l’emplacement géographique du client, comme identifié lors de l’approvisionnement.
 > - Si vous utilisez Defender pour Endpoint avant d’utiliser Azure Defender, vos données seront stockées à l’emplacement que vous avez spécifié lors de la création de votre client, même si vous intégrez Azure Defender ultérieurement.
 > - Une fois configuré, vous ne pouvez pas modifier l’emplacement où vos données sont stockées. Si vous devez déplacer vos données vers un autre emplacement, vous devez contacter le Support Microsoft pour réinitialiser le client. <br>
 La surveillance des points de terminaison de serveur utilisant cette intégration a été désactivée pour Office 365 Cloud de la communauté du secteur public clients.
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurer et mettre à jour System Center Endpoint Protection clients
 
-Defender pour le point de terminaison s’intègre à System Center Endpoint Protection. L’intégration offre une visibilité sur les détections de programmes malveillants et pour arrêter la propagation d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspectés.
+Defender pour le point de terminaison s’intègre à System Center Endpoint Protection. L’intégration offre une visibilité sur les détections de programmes malveillants et permet d’arrêter la propagation d’une attaque dans votre organisation en interdit les fichiers potentiellement malveillants ou les programmes malveillants suspects.
 
 Les étapes suivantes sont nécessaires pour activer cette intégration :
 
@@ -261,7 +262,7 @@ Pour mettre hors service Windows serveur, vous pouvez utiliser l’une des méth
 
 1. Obtenez votre ID d’espace de travail :
 
-   1. Dans le volet Microsoft 365 Defender navigation, sélectionnez Paramètres intégration de la gestion des appareils des points de  >    >    >  **terminaison.**
+   1. Dans le volet Microsoft 365 Defender navigation, sélectionnez Paramètres  >  **Endpoints**  >  **Device Management**  >  **Onboarding**.
 
    1. Sélectionnez **Windows Server 2008 R2 SP1, 2012 R2 et 2016** comme système d’exploitation et obtenez votre ID d’espace de travail :
 
@@ -325,7 +326,7 @@ Créez une stratégie de groupe spécifique pour l’intégration d’appareils 
 
     **Cela ajoute un nouveau dossier sur chaque serveur qui obtient l’GPO appliqué, appelé MMA, et qui sera stocké dans c:\windows. Il contient les fichiers d’installation pour le MMA, les éléments prérequis et le script d’installation.**
 
-- Créez une préférence de fichiers de stratégie de groupe pour chacun des fichiers stockés dans net logon.
+- Créez une préférence de fichiers de stratégie de groupe pour chacun des fichiers stockés dans l’ouverture de boutique Net.
 
      :::image type="content" source="images/grppolicyconfig2.png" alt-text="image1 de stratégie de groupe":::
 
@@ -338,7 +339,7 @@ Pour les deux ko (l’un pour Windows Server 2008R2/Windows 7 et l’autre pour 
 :::image type="content" source="images/targeteditor.png" alt-text="éditeur cible":::
 
 - Pour Windows Server 2008 R2, vous avez besoin de Windows6.1-PROXY3080149-x64.msu (et uniquement copié).
-- Pour Windows Server 2012 R2, vous avez besoin de Windows8.1-COPI3080149-x64.msu (et uniquement copié).
+- Par Windows Server 2012 R2, vous avez besoin de Windows8.1-COPI3080149-x64.msu (et uniquement copié).
 
 Une fois cette stratégie effectuée, vous devez créer une stratégie de script de démarrage :
 
@@ -350,7 +351,7 @@ Une fois que le serveur est redémarré dans le cadre du processus de démarrage
 Vous pouvez également utiliser une **tâche immédiate** pour exécuter le deployMMA.cmd si vous ne souhaitez pas redémarrer tous les serveurs.
 Cette étape peut être effectuée en deux phases. Tout **d’abord,** créez les fichiers et le dossier dans GPO : donnez au système le temps de s’assurer que l’GPO a été appliqué et que tous les serveurs disposent des fichiers d’installation. Ensuite, ajoutez la tâche immédiate. Cela permettra d’obtenir le même résultat sans nécessiter de redémarrage.
 
-Étant donné que le script dispose d’une méthode de sortie et ne se ré-exécute pas si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu’il vérifie quotidiennement pour s’assurer que le MMA est présent.
+Étant donné que le script dispose d’une méthode de sortie et ne se ré-exécute pas si le MMA est installé, vous pouvez également utiliser une tâche programmée quotidienne pour obtenir le même résultat. Similaire à une stratégie de conformité Configuration Manager qu’elle vérifie quotidiennement pour s’assurer que le MMA est présent.
 
 :::image type="content" source="images/schtask.png" alt-text="planifier une tâche":::
 
@@ -370,7 +371,7 @@ Pour Windows Server 2008 R2 PS1, veillez à respecter les conditions suivantes :
 
 Vérifiez que les ko sont présents avant l’intégration de Windows Server 2008 R2. Ce processus vous permet d’intégrer tous les serveurs si configuration Manager ne gère pas les serveurs.
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Voir aussi
 
 - [Intégrer des appareils Windows 10](configure-endpoints.md)
 - [Intégrer des appareils non Windows](configure-endpoints-non-windows.md)

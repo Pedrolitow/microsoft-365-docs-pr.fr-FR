@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b6edbdcda61eaf402275ae0b6dc9a38c5fe19f7
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+ms.openlocfilehash: a73d40e7569f934580b28976b5278b2a972066aa
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339489"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544600"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Fonctionnalités de prévisualisation de Microsoft Defender for Endpoint
 
@@ -64,7 +64,7 @@ Vous aurez accès aux fonctionnalités à venir sur qui vous pourrez nous faire 
 
 Activez le paramètre d’expérience de préversion pour être parmi les premiers à essayer les fonctionnalités à venir.
 
-1. Dans le volet de navigation, **sélectionnez** Paramètres  >  **fonctionnalités avancées d’aperçu.**  >  
+1. Dans le volet de navigation, **sélectionnez** Paramètres fonctionnalités avancées Des points de terminaison  >    >    >  **prévisualisation.**
 
 2. Basculez le paramètre entre **« Sur** » et « **Hors** » et sélectionnez Enregistrer **les préférences.**
 
@@ -72,7 +72,7 @@ Activez le paramètre d’expérience de préversion pour être parmi les premie
 
 Les fonctionnalités suivantes sont incluses dans la version préliminaire :
 
-- [Filtrage de contenu Web](web-content-filtering.md) <br> Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien qu’ils ne soient pas malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
+- [Filtrage de contenu Web](web-content-filtering.md) <br> Le filtrage de contenu Web fait partie des fonctionnalités de protection web de Microsoft Defender pour point de terminaison. Il permet à votre organisation de suivre et de contrôler l’accès aux sites web en fonction de leurs catégories de contenu. La plupart de ces sites web, bien que non malveillants, peuvent être problématiques en raison des réglementations de conformité, de l’utilisation de la bande passante ou d’autres problèmes.
 
 - [Rapport d’intégrité et de conformité des appareils](machine-reports.md) <br/> Le rapport sur l’état et la conformité de l’appareil fournit des informations de haut niveau sur les appareils de votre organisation.
 

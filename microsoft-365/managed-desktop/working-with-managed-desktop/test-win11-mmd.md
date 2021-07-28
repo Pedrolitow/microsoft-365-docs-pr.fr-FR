@@ -1,5 +1,5 @@
 ---
-title: Prévisualiser et tester Windows 11 avec Microsoft Manged Desktop
+title: Prévisualiser et tester Windows 11 avec Microsoft Managed Desktop
 description: Comment obtenir Windows 11 dans votre environnement
 keywords: Bureau géré Microsoft, Microsoft 365, service, documentation
 ms.service: m365-md
@@ -9,14 +9,14 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8dee18909d82656bcfb3e63fdc078328c678e660
-ms.sourcegitcommit: ea8de1b48adb6df92fb9351ea862184a9f16cbbb
+ms.openlocfilehash: 4ac12c4ec340bd6bb73418dae75774198190094b
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53461386"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53544684"
 ---
-# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Prévisualiser et tester Windows 11 avec Microsoft Manged Desktop
+# <a name="preview-and-test-windows-11-with-microsoft-managed-desktop"></a>Prévisualiser et tester Windows 11 avec Microsoft Managed Desktop
 
  Comment s’inscrire et participer au programme de test de compatibilité Windows 11 au sein de votre environnement Microsoft Manged Desktop. Pour plus d’informations Windows 11 et Microsoft Manged Desktop en général, voir [Windows 11 et Microsoft Manged Desktop](../intro/win11-overview.md). 
 
@@ -34,7 +34,7 @@ ms.locfileid: "53461386"
 
 ## <a name="add-devices-to-the-windows-11-test-group"></a>Ajouter des appareils au groupe de test Windows 11
 
-Commencez par ajouter des appareils au groupe d’appareils (**\[ Modern Workplace Windows \] 11 Pre-Release Test Devices**) créé pour tester et évaluer Windows 11. Les appareils de ce groupe obtiennent de nouvelles builds Windows 11 et Microsoft Manged Desktop configurations de base dès qu’elles sont disponibles et sont surveillées pour les problèmes de fiabilité.
+Sur demande, nous allons créer le groupe d’appareils (**Modern Workplace - Windows 11 Pre-Release Test Devices**) pour tester et évaluer Windows 11. Les appareils de ce groupe obtiennent de nouvelles builds Windows 11 et Microsoft Manged Desktop configurations de base dès qu’elles sont disponibles et sont surveillés pour les problèmes de fiabilité.
 
 Vous pouvez choisir n’importe quel appareil existant ou nouveau pour le test Windows 11, mais vous ne devez pas inscrire d’appareils de production dans ce groupe en raison du risque élevé de défauts ou de problèmes de compatibilité dans les builds pré-publiées. Les affectations de groupe d’appareils précédentes sont supprimées lors de l’affectation à ce groupe.
 
