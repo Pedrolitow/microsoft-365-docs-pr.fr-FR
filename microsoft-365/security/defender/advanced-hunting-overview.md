@@ -21,32 +21,32 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: f43d3bf9575f00649a2b5015a8be16351bebd11b
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: b59ff2a32ef5a067576c43b9b0a394590e30b666
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073960"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587956"
 ---
-# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherche proactive des menaces avec le recherche avancée dans Microsoft 365 Defender
+# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Recherchez de manière proactive les menaces avec le recherche avancée dans Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - Microsoft 365 Defender
 
-> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
+> Vous voulez essayer Microsoft 365 Defender ? Vous pouvez [l’évaluer dans un environnement de laboratoire](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ou [exécuter votre projet pilote en production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-Le repérage avancé est un outil de repérage de menaces basé sur des requêtes qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités de menace. L’accès flexible aux données permet un recherche sans contraintes pour les menaces connues et potentielles.
+Le recherche avancée est un outil de recherche de menace basé sur une requête qui vous permet d’explorer jusqu’à 30 jours de données brutes. Vous pouvez inspecter de manière proactive les événements de votre réseau pour localiser les indicateurs et entités de menace. L’accès flexible aux données permet un recherche sans contraintes pour les menaces connues et potentielles.
 <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 Vous pouvez utiliser les mêmes requêtes de repérage de menaces pour créer des règles de détection personnalisées. Ces règles s’exécutent automatiquement pour vérifier et répondre aux activités suspectées de violation, aux ordinateurs mal configurés et à d’autres conclusions.
 
-Cette fonctionnalité est similaire au [recherche avancée dans Microsoft Defender pour point de terminaison.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) Disponible dans Microsoft 365 de sécurité, cette fonctionnalité prend en charge les requêtes qui vérifient un ensemble de données plus large à partir des :
+Cette fonctionnalité est similaire au recherche avancée [dans Microsoft Defender pour point](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) de terminaison et prend en charge les requêtes qui vérifient un jeu de données plus large à partir de :
 
 - Microsoft Defender pour point de terminaison
 - Microsoft Defender pour Office 365
@@ -54,6 +54,8 @@ Cette fonctionnalité est similaire au [recherche avancée dans Microsoft Defend
 - Microsoft Defender pour l’identité
 
 Pour utiliser le hunting avancé, [Microsoft 365 Defender](m365d-enable.md).
+
+Pour plus d’informations sur le Microsoft Cloud App Security avancé, voir la [vidéo.](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa) 
 
 ## <a name="get-started-with-advanced-hunting"></a>Prise en main du repérage avancé
 
@@ -69,7 +71,7 @@ Nous vous recommandons de suivre plusieurs étapes pour commencer rapidement le 
 | **Créer des règles de détection personnalisées** | Comprendre comment utiliser des requêtes de recherche avancées pour déclencher des alertes et prendre des actions de réponse automatiquement. | - [Vue d’ensemble des détections personnalisées](custom-detections-overview.md) <br />- [Règles de détection personnalisées](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Obtenir l’accès
-Pour utiliser le hunting avancé ou [d’autres fonctionnalités Microsoft 365 Defender,](microsoft-365-defender.md) vous avez besoin d’un rôle approprié dans Azure Active Directory. [En savoir plus sur les rôles et autorisations requis pour le chasse avancée](custom-roles.md).
+Pour utiliser la recherche avancée ou [d Microsoft 365 Defender](microsoft-365-defender.md) fonctionnalités de recherche, vous avez besoin d’un rôle approprié dans Azure Active Directory. [En savoir plus sur les rôles et autorisations requis pour le chasse avancée](custom-roles.md).
 
 En outre, votre accès aux données de point de terminaison est déterminé par les paramètres de contrôle d’accès basé sur un rôle (RBAC) dans Microsoft Defender for Endpoint. [En savoir plus sur la gestion de l’accès Microsoft 365 Defender](m365d-permissions.md).
 

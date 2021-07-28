@@ -20,21 +20,21 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Comment activer ou désactiver la fonctionnalité de recherche du journal d’audit dans le Centre de conformité Microsoft 365 pour activer ou désactiver la possibilité pour les administrateurs de rechercher dans le journal d’audit.
-ms.openlocfilehash: dd39b883036ce6060aef71c6a927c03f391d827f
-ms.sourcegitcommit: 5db5047c24b56f3af90c2bc5c830a7a13eeeccad
+ms.openlocfilehash: 8da6ba3f8dc9fbc7564b7bd71e71c542cb118057
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53341495"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53567547"
 ---
 # <a name="turn-auditing-on-or-off"></a>Activer ou désactiver la fonctionnalité d’audit
 
-Nous activons par défaut la journalisation d’audit pour les organisations d’entreprise Microsoft 365 et Office 365. Lorsque l’audit dans le Centre de conformité Microsoft 365 est allumé, les activités des utilisateurs et des administrateurs de votre organisation sont enregistrées dans le journal d’audit et conservées pendant 90 jours et jusqu’à un an en fonction de la licence attribuée aux utilisateurs. Toutefois, votre organisation peut avoir des raisons de ne pas vouloir enregistrer et conserver les données du journal d’audit. Dans ce cas, un administrateur global peut décider de désactiver l’audit dans Microsoft 365.
+L’enregistrement d’audit est désactivé par défaut pour Microsoft 365 et Office 365'entreprise. Toutefois, lors de la configuration d’une nouvelle Microsoft 365 ou Office 365 organisation, vous devez vérifier l’état d’audit de votre organisation. Pour obtenir des instructions, consultez la section Vérifier [l’état d’audit](#verify-the-auditing-status-for-your-organization) de votre organisation dans cet article. 
 
-Lors de la configuration d’Microsoft 365 ou Office 365 organisation, vous pouvez vérifier l’état d’audit de votre organisation. Pour obtenir des instructions, consultez la section Vérifier [l’état d’audit](#verify-the-auditing-status-for-your-organization) de votre organisation dans cet article.
+Lorsque l’audit dans le Centre de conformité Microsoft 365 est allumé, les activités des utilisateurs et des administrateurs de votre organisation sont enregistrées dans le journal d’audit et conservées pendant 90 jours et jusqu’à un an en fonction de la licence attribuée aux utilisateurs. Toutefois, votre organisation peut avoir des raisons de ne pas vouloir enregistrer et conserver les données du journal d’audit. Dans ce cas, un administrateur global peut décider de désactiver l’audit dans Microsoft 365.
 
 > [!IMPORTANT]
-> Si vous désactiver l’audit dans Microsoft 365, vous ne pouvez pas utiliser l’API activité de gestion Office 365 ou Azure Sentinel pour accéder aux données d’audit de votre organisation. La suppression de l’audit en suivant les étapes de cet article signifie qu’aucun résultat ne sera renvoyé lorsque vous effectuerez une recherche dans le journal d’audit à l’aide du Centre de conformité Microsoft 365 ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell. Cela signifie également que les journaux d’audit ne seront pas disponibles via l Office 365 API Activité de gestion ou Azure Sentinel.
+> Si vous désactiver l’audit dans Microsoft 365, vous ne pouvez pas utiliser l’API activité de gestion Office 365 ou Azure Sentinel pour accéder aux données d’audit de votre organisation. La suppression de l’audit en suivant les étapes de cet article signifie qu’aucun résultat ne sera renvoyé lorsque vous effectuerez une recherche dans le journal d’audit à l’aide de l’Centre de conformité Microsoft 365 ou lorsque vous exécutez la cmdlet **Search-UnifiedAuditLog** dans Exchange Online PowerShell. Cela signifie également que les journaux d’audit ne seront pas disponibles via l’API activité Office 365 gestion ou Azure Sentinel.
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>Avant d’activer ou de désactiver l’audit
 
@@ -57,7 +57,7 @@ La valeur `True` de la propriété  _UnifiedAuditLogIngestionEnabled_ indique qu
 
 ## <a name="turn-on-auditing"></a>Activer l’audit
 
-Si l’audit n’est pas allumé pour votre organisation, vous pouvez l’activer dans le Centre de conformité Microsoft 365 ou à l’aide Exchange Online PowerShell. L’opération d’audit peut prendre plusieurs heures avant que vous ne renvoyiez des résultats lors de la recherche dans le journal d’audit.
+Si l’audit n’est pas allumé pour votre organisation, vous pouvez l’activer dans le Centre de conformité Microsoft 365 ou à l’aide Exchange Online PowerShell. L’opération d’audit peut prendre plusieurs heures avant que vous ne retourniez les résultats lors de la recherche dans le journal d’audit.
   
 ### <a name="use-the-compliance-center-to-turn-on-auditing"></a>Utiliser le centre de conformité pour activer l’audit
 

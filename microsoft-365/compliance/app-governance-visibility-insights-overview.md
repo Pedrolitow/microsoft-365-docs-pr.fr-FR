@@ -14,22 +14,22 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur la visibilité et les insights.
-ms.openlocfilehash: ee485c972193c515bafec55f58a7a89aa1f567f1
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: eac4cd67591d261843f0d3efe476db027c58db91
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420128"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541084"
 ---
 # <a name="learn-about-visibility-and-insights"></a>En savoir plus sur la visibilité et les insights
 
 >*[Guide de sécurité et conformité pour les licences Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Avec la gouvernance des applications Microsoft, vous pouvez rapidement obtenir une visibilité et des insights significatifs sur votre écosystème d’applications Microsoft 365. Vous commencez à partir du tableau de bord de gouvernance des applications qui fournit un résumé général des alertes et des applications de votre client qui nécessitent l’attention de l’administrateur.
+Avec la gouvernance des applications Microsoft, vous pouvez rapidement obtenir une visibilité et des insights significatifs sur votre écosystème d’applications Microsoft 365. Vous commencez à partir du tableau de bord de gouvernance des applications qui fournit une vue d’ensemble générale des alertes et des applications de votre locataire qui nécessitent l’attention de l’administrateur.
 
 Avec la visibilité et les insights de gouvernance des applications, vous pouvez voir :
 
-- Une liste des applications compatibles OAuth qui accèdent aux données Microsoft 365 via les API Microsoft Graph.
+- Une liste des applications compatibles OAuth qui accèdent aux données Microsoft 365 via les API Microsoft Graph dans votre client.
 - Une vue enrichie des activités de l’application afin que vous puissiez y réagir ou y répondre.
 
 >[!Note]
@@ -37,21 +37,6 @@ Avec la visibilité et les insights de gouvernance des applications, vous pouvez
 >
 
 Consultez les [rôles d’administrateur](app-governance-get-started.md#administrator-roles) pour obtenir une vue d’ensemble des rôles d’administrateur requis pour la visibilité et les insights.
-
-<!--
-From messaging doc, page 21:
-
-View M365 App List & Metadata
-View M365 App List of Consented Users
-View M365 App Permissions
-View M365 App Permission Usage
-View Over permissioned Apps
-Aggregate M365 API Usage Data by Workload (count, download/upload)
-Per-App M365 API Usage Data by Workload (count, download/upload)
-Per-User M365 API Usage Data by Workload (count, download/upload)
-M365 API Usage Data For High-Value/Classified Assets (count, download/upload)
-M365 API Error Analysis per App
--->
 
 Avec la gouvernance des applications, vous pouvez voir :
 
@@ -71,8 +56,8 @@ Avec la gouvernance des applications, vous pouvez voir :
 - Une vue cumulative des utilisateurs accédant aux applications.
 - Insights sur les alertes.
 - Insights sur la liste des stratégies.
-<!-->
-- Stratégies créées dans MCAS dans le portail de gouvernance des applications.
+<!--
+- Policies created in MCAS in the app governance portal.
 -->
 - Alertes pour les applications OAuth générées dans MCAS, dans le portail de gouvernance des applications.
 

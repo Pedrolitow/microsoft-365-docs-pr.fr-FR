@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: Découvrez comment importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents dans Microsoft 365 boîtes aux lettres.
-ms.openlocfilehash: c5eebef3e2c6021efc08ff1ed41ba28bacc92487
-ms.sourcegitcommit: 0d1b065c94125b495e9886200f7918de3bda40b3
+description: Découvrez comment importer des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration de documents vers Microsoft 365 boîtes aux lettres.
+ms.openlocfilehash: 512f08a621487fb2c3f2fd9f6b5d8ac00e49ac5e
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "53339429"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541072"
 ---
 # <a name="archive-third-party-data-in-microsoft-365"></a>Archiver des données tierces dans Microsoft 365
 
-Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de votre organisation Microsoft 365. L’un des principaux avantages de l’utilisation de connecteurs de données pour importer et archiver des données tierces dans Microsoft 365 est que vous pouvez y appliquer diverses solutions de conformité Microsoft 365 après leur importation. Cela vous permet de vous assurer que les données non Microsoft de votre organisation sont conformes aux réglementations et normes qui affectent votre organisation.
+Microsoft 365 permet aux administrateurs d’utiliser des connecteurs de données pour importer et archiver des données tierces à partir de plateformes de réseaux sociaux, de plateformes de messagerie instantanée et de plateformes de collaboration sur des documents, vers des boîtes aux lettres de Microsoft 365 organisation. L’un des principaux avantages de l’utilisation de connecteurs de données pour importer et archiver des données tierces dans Microsoft 365 est que vous pouvez y appliquer diverses solutions de conformité Microsoft 365 après leur importation. Cela vous permet de vous assurer que les données non Microsoft de votre organisation sont conformes aux réglementations et normes qui affectent votre organisation.
 
 ## <a name="third-party-data-connectors"></a>Connecteurs de données tiers
 
@@ -189,7 +189,7 @@ Vous pouvez [](retention.md) appliquer une stratégie de rétention aux boîtes 
 
 ### <a name="records-management"></a>Gestion des enregistrements
 
-La [fonctionnalité de gestion](records-management.md) des enregistrements Microsoft 365 vous permet de déclarer des données tierces en tant qu’enregistrement. Cela peut être effectué manuellement par les utilisateurs qui appliquent une étiquette de rétention qui marque des données tierces dans leur boîte aux lettres comme enregistrement. Vous pouvez également appliquer automatiquement des étiquettes de rétention en identifiant des informations sensibles, des mots clés ou des types de contenu dans des données tierces.
+La [fonctionnalité de gestion](records-management.md) des enregistrements Microsoft 365 vous permet de déclarer des données tierces en tant qu’enregistrement. Cette procédure peut être effectuée manuellement par les utilisateurs qui appliquent une étiquette de rétention qui marque des données tierces dans leur boîte aux lettres en tant qu’enregistrement. Vous pouvez également appliquer automatiquement des étiquettes de rétention en identifiant des informations sensibles, des mots clés ou des types de contenu dans des données tierces.
 
 ### <a name="communication-compliance"></a>Conformité des communications
 
@@ -198,6 +198,56 @@ Vous pouvez utiliser [la conformité des communications](communication-complianc
 ### <a name="insider-risk-management"></a>Gestion des risques internes
 
 Les signaux provenant de données tierces, tels que les données RH sélectives, peuvent être utilisés par la [solution](insider-risk-management.md) de gestion des risques internes pour minimiser les risques internes en vous permettant de détecter, d’examiner et d’agir sur les activités à risque dans votre organisation. Par exemple, les données importées par le connecteur de données RH sont utilisées comme indicateurs de risque pour vous aider à détecter le vol de données de l’employé qui quitte l’entreprise.
+
+## <a name="using-ediscovery-tools-to-search-for-third-party-data"></a>Utilisation des outils eDiscovery pour rechercher des données tierces
+
+Après avoir utilisé des connecteurs de données pour importer et archiver des données tierces dans des boîtes aux lettres utilisateur, vous pouvez utiliser les outils eDiscovery Microsoft 365 pour rechercher des données tierces. Vous pouvez également utiliser des outils eDiscovery pour créer des conservations basées sur des requêtes associées à core eDiscovery et Advanced eDiscovery cas pour conserver des données tierces. Pour plus d’informations sur les outils eDiscovery, voir [les solutions eDiscovery dans Microsoft 365](ediscovery.md).
+
+Pour rechercher (ou mettre en attente) tout type de données tierces que vous avez importées dans des boîtes aux lettres utilisateur à l’aide d’un connecteur de données, vous pouvez utiliser la requête de recherche suivante. Assurez-vous d’étendue de la recherche aux boîtes aux lettres des utilisateurs.
+
+```powershell
+kind:externaldata
+```
+
+Vous pouvez utiliser cette  requête dans la zone Mots clés pour une recherche de contenu, une recherche associée à un cas core eDiscovery ou une collection dans Advanced eDiscovery.
+
+![Requête pour rechercher des données tierces](..\media\SearchThirdPartyData1.png)
+
+Vous pouvez également utiliser la paire propriété:valeur pour restreindre l’étendue des recherches à `kind:externaldata` des données tierces. Par exemple, pour rechercher des éléments importés à partir d’une source de données tierce contenant le mot *contoso* dans la propriété  **Subject** de l’élément importé, utilisez la requête suivante dans la zone Mots clés :
+
+```powershell
+subject:contoso AND kind:externaldata
+```
+
+Vous pouvez également utiliser la condition type **message** pour configurer la même requête.
+
+![Utiliser une condition de type de message pour affiner les recherches à des données tierces](..\media\SearchThirdPartyData2.png)
+
+Pour rechercher un type spécifique de données tierces archivées, utilisez la propriété de boîte aux lettres **itemclass** dans une requête de recherche. Utilisez le format property:value suivant :
+
+```powershell
+itemclass:ipm.externaldata.<third-party data type>
+```
+
+Chaque élément importé par un connecteur de données tiers inclut la propriété **itemclass** avec une valeur correspondant au type de données tiers. Par exemple, pour rechercher des données Facebook contenant le mot *contoso*, dans la propriété **Subject** de l’élément importé, utilisez la requête suivante :
+
+```powershell
+subject:contoso AND itemclass:ipm.externaldata.facebook*
+```
+
+Voici quelques exemples de valeurs **de classe** d’éléments pour différents types de données tierces.
+
+| **Type de données tiers** | **Valeur de la propriété itemclass**   |
+|---------------------------|-------------------------------------|
+| Message Bloomberg         | ipm.externaldata.bloombergmessage* |
+| CellTrust                 | ipm.externaldata.celltrust*        |
+| Pivot                     | ipm.externaldata.pivot*            |
+| Archiveur WhatsApp         | ipm.externaldata.whatsapparchiver* |
+|||
+
+Les valeurs de *la propriété itemclass* ne sont pas sensibles à la cas. En règle générale, utilisez le nom du type de données tiers (sans espaces) suivi d’un caractère générique ( * ).
+
+Pour plus d’informations sur la création de requêtes de recherche eDiscovery, voir Requêtes par mot clé et conditions de recherche [pour eDiscovery.](keyword-queries-and-search-conditions.md)
 
 ## <a name="data-connectors-in-the-us-government-cloud"></a>Connecteurs de données dans le cloud du gouvernement des États-Unis
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Les stratégies de rétention du journal d’audit font partie des nouvelles fonctionnalités d’audit avancées de Microsoft 365. Une stratégie de rétention de journal d’audit vous permet de spécifier la durée de conservation des journaux d’audit dans votre organisation.
-ms.openlocfilehash: 8df2e240440ad33ac82d926b63cc495d1aaef692
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: ce7ff5158327c7358d921021017382a3a719a809
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925150"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541036"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gérer les stratégies de rétention du journal d'audit
 
@@ -85,7 +85,7 @@ Les stratégies de rétention du journal d’audit sont répertoriées sur l’o
 
 ### <a name="view-policies-in-the-dashboard"></a>Afficher des stratégies dans le tableau de bord
 
-Les stratégies de rétention du journal d’audit sont répertoriées dans le tableau de bord. L’un des avantages de l’affichage des stratégies dans le tableau de bord est que vous pouvez cliquer sur la colonne **Priorité** pour répertorier les stratégies selon la priorité d’application. Comme indiqué précédemment, une valeur plus élevée indique une priorité plus élevée.
+Les stratégies de rétention du journal d’audit sont répertoriées dans le tableau de bord. L’un des avantages de l’affichage des stratégies dans le tableau de bord est que vous pouvez cliquer sur la colonne **Priorité** pour répertorier les stratégies selon la priorité d’application. Comme indiqué précédemment, une valeur plus basse indique une priorité plus élevée.
 
 ![Colonne de la priorité dans le tableau de bord des stratégies de rétention d’audit](../media/AuditLogRetentionDashboardPriority.png)
 

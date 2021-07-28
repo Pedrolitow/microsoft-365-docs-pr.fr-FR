@@ -1,5 +1,5 @@
 ---
-title: Promouvoir votre environnement d Microsoft 365 Defender d’évaluation en production, Microsoft 365 Defender évaluation, essayer une évaluation, conserver une évaluation, évaluation de production
+title: Promouvoir votre environnement Microsoft 365 Defender d’évaluation en production, Microsoft 365 Defender évaluation, essayer une évaluation, conserver une évaluation, évaluation de production
 description: Utilisez cet article pour promouvoir vos evals de MDI, MDO, MDE et MCAS dans votre environnement en Microsoft 365 Defender ou M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,19 +20,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b67f0f493c97b900fa08b10e3eb7a5967560dcfd
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 3204a5453e3b441e2899a347df6d9e5a6cca2808
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458342"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588124"
 ---
 # <a name="promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>Promouvoir votre environnement d Microsoft 365 Defender d’évaluation vers la production
 
 **S’applique à :**
 - Microsoft 365 Defender
 
-Pour promouvoir votre environnement d Microsoft 365 Defender d’évaluation vers la production, achetez d’abord la licence nécessaire. Suivez les étapes de la procédure de création de l’environnement [eval](eval-create-eval-environment.md) et achetez la licence Office 365 E5 (au lieu de sélectionner Démarrer l’essai gratuit).
+Pour promouvoir votre environnement Microsoft 365 Defender d’évaluation vers la production, achetez d’abord la licence nécessaire. Suivez les étapes de la procédure de création de l’environnement [eval](eval-create-eval-environment.md) et achetez la licence Office 365 E5 (au lieu de sélectionner Démarrer l’essai gratuit).
 
 Ensuite, terminez toute configuration supplémentaire et développez vos groupes pilotes jusqu’à ce qu’ils atteignent la production complète. 
 
@@ -47,12 +47,12 @@ Après avoir correctement évalué ou piloté MDO, il peut être promu dans l’
 4. Mettez à jour l’enregistrement MX public pour votre domaine de messagerie de production afin qu’il soit résolu directement dans EOP.
 5. Désactivez toutes les passerelles SMTP tierces et désactivez ou supprimez les connecteurs EXO associés à ce relais.
 
-## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour Point de terminaison
-Pour promouvoir l’environnement d’évaluation de Microsoft Defender for Endpoint d’un pilote à un environnement de production, il vous suffit d’intégrer davantage de points de terminaison au service à l’aide de l’un des outils et [méthodes pris en charge.](/defender-endpoint/onboard-configure)
+## <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender pour point de terminaison
+Pour promouvoir l’environnement d’évaluation de Microsoft Defender for Endpoint d’un pilote à un environnement de production, il vous suffit d’intégrer davantage de points de terminaison au service à l’aide de l’un des outils et [méthodes pris en charge.](../defender-endpoint/onboard-configure.md)
 
 Utilisez les instructions générales suivantes pour intégrer davantage d’appareils à Microsoft Defender pour endpoint. 
 
-1. Vérifiez que l’appareil remplit les [conditions minimales requises.](/defender-endpoint/minimum-requirements)
+1. Vérifiez que l’appareil remplit les [conditions minimales requises.](../defender-endpoint/minimum-requirements.md)
 2. En fonction de l’appareil, suivez les étapes de configuration fournies dans la section d’intégration du portail Defender for Endpoint.
 3. Utilisez l’outil de gestion et la méthode de déploiement appropriés pour vos appareils.
 4.  Exécutez un test de détection pour vérifier que les appareils sont correctement intégrés et qu’ils font des rapports au service.

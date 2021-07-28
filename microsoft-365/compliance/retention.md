@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En savoir plus sur les stratégies de rétention et les étiquettes de rétention, qui permettent de conserver les éléments dont vous avez besoin et de supprimer ceux qui ne vous servent pas.
-ms.openlocfilehash: eb30e3d553435c76bcf8f7cc1efc0f5524c0b966
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2fe7bf71d4db9854f03a56ed75a3b9a670602197
+ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 07/23/2021
-ms.locfileid: "53538936"
+ms.locfileid: "53567571"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>En savoir plus sur les stratégies et les étiquettes de rétention
 
@@ -148,7 +148,7 @@ Avec les étiquettes de rétention, vous pouvez effectuer les actions suivantes 
     - des mots clés spécifiques correspondant à une requête que vous créez.
     - Le modèle correspond à un classifieur entraînable.
 
-- **Démarrer la période de rétention à compter de la date d’étiquetage du contenu** pour les documents des sites SharePoint et les comptes OneDrive, ainsi que pour les éléments de courrier à l’exception des éléments de calendrier. Si vous appliquez une étiquette de rétention avec cette configuration à un élément de calendrier, la période de rétention commence à partir de la date d’envoi.
+- **Démarrer la période de rétention à compter de la date d’étiquetage du contenu** pour les documents des sites SharePoint et les comptes OneDrive, ainsi que pour les éléments de courrier, sauf les éléments de calendrier. Si vous appliquez une étiquette de rétention avec cette configuration à un élément de calendrier, la période de rétention commence à partir de la date d’envoi.
 
 - **Démarrer la période de rétention à la date d’un événement** par exemple, employés quittant l’organisation ou expiration du contrat.
 
@@ -296,7 +296,9 @@ Utilisez ce flux pour comprendre les résultats de la rétention et de la suppre
 > Si vous utilisez des étiquettes de rétention : avant d’utiliser ce flux pour déterminer le résultat de plusieurs paramètres de rétention sur le même élément, assurez-vous de [ l’étiquette de rétention qui est appliquée](#only-one-retention-label-at-a-time).
 
 ![Diagramme des principes de rétention](../media/principles-of-retention.png)
-  
+
+Avant d’expliquer plus en détails chaque principe, il est important de comprendre la différence entre la période de rétention pour l’élément et la période de rétention spécifiée dans la stratégie de rétention ou l’étiquette de rétention. La raison est que, bien que la configuration par défaut a pour but de démarrer la période de rétention quand un élément est créé de manière à ce que la fin de la période de rétention de celui-ci soit fixée, les fichiers prennent également en charge la configuration pour le démarrage de la période de rétention à partir de la dernière date de modification du fichier. Avec cette configuration de remplacement, le démarrage de la période de rétention est réinitialisé lors de chaque modification du fichier, ce qui prolonge la fin de la période de rétention de l’élément. Les étiquettes de rétention prennent également en charge le démarrage de la période de rétention lorsqu’ils est étiqueté et au début d’un événement.
+
 Explication des quatre principes différents :
   
 1. **La rétention prend le pas sur la suppression.** Le contenu n’est pas supprimé définitivement lorsqu’il dispose également de paramètres de rétention pour conserver celui-ci. Bien que ce principe garantisse que le contenu est conservé pour des raisons de conformité, le processus de suppression est toujours lancé et peut supprimer le contenu de la vue et des recherches utilisateur. Pour SharePoint, par exemple, un document passe du dossier d’origine au dossier Conservation des préservations. Toutefois, la suppression permanente est suspendue. Pour plus d’informations sur la façon dont et où le contenu est conservé, utilisez les liens suivants pour chaque charge de travail :
@@ -306,45 +308,53 @@ Explication des quatre principes différents :
     - [Fonctionnement de la rétention pour Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
     - [Fonctionnement de la rétention pour Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
     
-    Exemple : un e-mail est soumis à une stratégie de rétention pour Exchange configurée pour supprimer les éléments après trois ans et dispose d’une étiquette de rétention également appliquée et configurée de manière à conserver les éléments pendant 5 ans.
+    **Exemple pour ce premier principe** : un e-mail est soumis à une stratégie de rétention pour Exchange configurée pour supprimer les éléments trois ans après leur création et dispose d’une étiquette de rétention également appliquée et configurée de manière à conserver les éléments 5 ans après leur création.
     
     L’e-mail est conservé pendant cinq ans, car cette action de rétention a la priorité sur la suppression. Le message électronique est définitivement supprimé à la fin des cinq ans en raison de l’action de suppression qui a été suspendue pendant que l’action de rétention était en vigueur.
 
 2. **La période de rétention la plus longue l’emporte.** Si du contenu est soumis à plusieurs paramètres de rétention pour différentes périodes, il est conservé jusqu’à la fin de la période de rétention la plus longue pour l’élément.
     
-    Exemple : les documents du site SharePoint marketing sont soumis à deux stratégies de rétention. La première stratégie de rétention est configurée pour que tous les sites SharePoint conservent des éléments pendant cinq ans. La seconde stratégie de rétention est configurée pour que tous les sites SharePoint conservent des éléments pendant dix ans.
+    > [!NOTE]
+    > Il est possible qu’une période de rétention de 5 ans dans une stratégie ou une étiquette de rétention prenne le pas sur une période de rétention de 7 ans dans une stratégie ou une étiquette de rétention, car la période de 5 ans est configurée pour démarrer en fonction de la date de dernière modification du fichier et la période de 7 ans est configurée pour démarrer à partir du moment où le fichier est créé.
     
-    Les documents de ce site SharePoint marketing sont conservés pendant 10 ans, car il s’agit de la période de rétention la plus longue.
+    **Exemple pour ce deuxième principe** : les documents du site Marketing SharePoint sont soumis à deux stratégies de rétention. La première stratégie de rétention est configurée pour que tous les sites SharePoint conservent des éléments cinq ans après leur création. La seconde stratégie de rétention est configurée pour que tous les sites SharePoint conservent des éléments dix ans après leur création.
+    
+    Les documents de ce site Marketing SharePoint sont conservés pendant 10 ans, car il s’agit de la période de rétention la plus longue pour l’élément.
 
 3. **L’explicite l’emporte sur l’implicite pour les suppressions.** Les conflits étant désormais résolus pour la rétention, seuls les conflits de suppression restent : 
     
     1. Une étiquette de rétention (même appliquée) fournit une rétention explicite par rapport aux stratégies de rétention, car les paramètres de rétention sont appliqués à un élément individuel plutôt qu’affecté à partir d’un conteneur de façon implicite. Cela signifie qu’une action de suppression d’une étiquette de rétention est toujours prioritaire par rapport à une action de suppression de toute stratégie de rétention.
         
-        Exemple : un document est soumis à deux stratégies de rétention qui ont respectivement une action de suppression de cinq ans et de dix ans, et également une étiquette de rétention qui a une action de suppression de sept ans.
+        **Exemple pour ce troisième principe (étiquette)** : un document est soumis à deux stratégies de rétention qui ont respectivement une action de suppression de cinq ans et de dix ans, et également une étiquette de rétention qui a une action de suppression de sept ans.
         
         Le document est définitivement supprimé après sept ans, car l’action de suppression de l’étiquette de rétention est prioritaire.
     
     2. Lorsque vous disposez de stratégies de rétention uniquement : si une stratégie de rétention pour un emplacement est définie pour l’utilisation d’une configuration d’inclusion (par exemple, des utilisateurs spécifiques à la courrier Exchange), la stratégie de rétention a la priorité sur les stratégies de rétention non étendues pour le même emplacement.
         
-        Une stratégie de rétention non étendue est où un emplacement est sélectionné sans spécifier d’instances spécifiques. Par exemple, **Courrier Exchange** et le paramètre par défaut **Tous les destinataires** est une stratégie de rétention non étendue. Ou, **sites SharePoint** et le paramètre par défaut de **Tous les sites**. Lorsque les stratégies de rétention sont étendues, elles ont une priorité égale à ce niveau.
+        Une stratégie de rétention non étendue est où un emplacement est sélectionné sans spécifier d’instances spécifiques. Par exemple, Courrier Exchange et le paramètre par défaut Tous les destinataires est une stratégie de rétention non étendue. Ou les sites SharePoint et le paramètre par défaut Tous les sites. Lorsque les stratégies de rétention sont étendues, elles ont une priorité égale à ce niveau.
         
-        Exemple 1 : un courrier électronique est soumis à deux stratégies de rétention. La première stratégie de rétention est non étendue et supprime les éléments après dix ans. La deuxième stratégie de rétention est étendue aux boîtes aux lettres spécifiques et supprime les éléments après cinq ans.
+        **Exemple 1 pour ce troisième principe (stratégies)** : un courrier électronique est soumis à deux stratégies de rétention. La première stratégie de rétention est non étendue et supprime les éléments après dix ans. La deuxième stratégie de rétention est étendue aux boîtes aux lettres spécifiques et supprime les éléments après cinq ans.
         
         Le courrier électronique est définitivement supprimé après cinq ans, car l’action de suppression de la stratégie de rétention étendue a la priorité sur la stratégie de rétention non étendue.
         
-        Exemple 2 : un document dans le compte OneDrive d’un utilisateur est soumis à deux stratégies de rétention. La première stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après 10 ans. La seconde stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après sept ans.
+        **Exemple 2 pour ce troisième principe (stratégies)** : un document dans le compte OneDrive d’un utilisateur est soumis à deux stratégies de rétention. La première stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après 10 ans. La seconde stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après sept ans.
         
         Le moment où ce document sera définitivement supprimé ne peut pas être déterminé à ce niveau, car les deux stratégies de rétention sont délimitées.
 
 4. **La période de suppression la plus courte l’emporte** Applicable pour déterminer quand les éléments seront supprimés des stratégies de rétention et que les résultats n’ont pas pu être résolus à partir du niveau précédent : le contenu est supprimé définitivement à la fin de la période de rétention la plus courte pour l’élément.
     
-    Exemple : un document dans le compte OneDrive d’un utilisateur est soumis à deux stratégies de rétention. La première stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après 10 ans. La seconde stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression après sept ans.
+    > [!NOTE]
+    > Il est possible qu’une stratégie de rétention ayant une période de rétention de 7 ans prenne le pas sur une stratégie de rétention de 5 ans, car la première stratégie est configurée pour démarrer la période de rétention en fonction de la date de création du fichier et la deuxième stratégie de rétention en fonction de la dernière modification du fichier.
     
-    Ce document sera définitivement supprimé après sept ans, car il s’agit de la période de rétention la plus courte pour ces deux stratégies de rétention étendue.
+    **Exemple pour ce quatrième principe** : un document dans le compte OneDrive d’un utilisateur est soumis à deux stratégies de rétention. La première stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression de 10 ans après la création du fichier. La deuxième stratégie de rétention est étendue à l’inclusion du compte OneDrive de cet utilisateur et a une action de suppression sept ans après la création du fichier.
+    
+    Ce document sera définitivement supprimé après sept ans, car il s’agit de la période de rétention la plus courte pour l’élément de ces deux stratégies de rétention étendue.
 
-Notez que les éléments soumis à la conservation eDiscovery sont également soumis au premier principe de rétention. ils ne peuvent pas être définitivement supprimés par une stratégie de rétention ou une étiquette de rétention. Lorsque cette suspension est libérée, les principes de rétention continuent de s’appliquer. Par exemple, ils peuvent ensuite faire l’objet d’une période de rétention non expirée ou d’une action de suppression.
+Les éléments soumis à la conservation eDiscovery sont également soumis au premier principe de rétention. ils ne peuvent pas être définitivement supprimés par une stratégie de rétention ou une étiquette de rétention. Lorsque cette suspension est libérée, les principes de rétention continuent de s’appliquer. Par exemple, ils peuvent ensuite faire l’objet d’une période de rétention non expirée ou d’une action de suppression.
 
-Exemples plus complexes qui combinent les actions de conservation et de suppression :
+### <a name="principles-of-retention-examples-that-combine-retain-and-delete-actions"></a>Exemples de principes de rétention qui combinent les actions de conservation et de suppression :
+
+Les exemples suivants sont pour complexes pour illustrer les principes de rétention lorsque plusieurs actions de conservation et de suppression sont combinées. Pour faciliter le suivi des exemples, toutes les stratégies et étiquettes de rétention utilisent le paramètre par défaut de démarrage de la période de rétention lorsque l’élément est créé pour que la fin de la période de rétention soit la même pour l’élément.
 
 1. Ces paramètres de rétention sont appliqués à un élément :
     
@@ -352,7 +362,7 @@ Exemples plus complexes qui combinent les actions de conservation et de suppress
     - Une stratégie de rétention qui conserve pendant trois ans, puis supprime
     - Une étiquette de rétention qui conserve uniquement pendant sept ans uniquement
     
-    **Résultat**: l’élément est conservé pendant sept ans, car la rétention a la priorité sur la suppression et la période de rétention la plus longue est de sept ans. À la fin de cette période de rétention, l’élément est définitivement supprimé en raison de l’action de suppression des stratégies de rétention.
+    **Résultat**: l’élément est conservé pendant sept ans, car la rétention a la priorité sur la suppression et la période de rétention la plus longue est de sept ans pour l’élément. À la fin de cette période de rétention, l’élément est définitivement supprimé en raison de l’action de suppression des stratégies de rétention.
     
     Bien que les deux stratégies de rétention aient des dates différentes pour les actions de suppression, l’élément le plus ancien possible peut être définitivement supprimé à la fin de la période de rétention la plus longue, qui dépasse les deux dates de suppression. 
 
@@ -362,7 +372,7 @@ Exemples plus complexes qui combinent les actions de conservation et de suppress
     - Une stratégie de rétention étendue qui conserve pendant cinq ans, puis supprime
     - Une étiquette de rétention qui conserve pendant trois ans, puis supprime
     
-    **Résultat**: l’élément est conservé pendant cinq ans parce qu’il s’agit de la période de rétention la plus longue. À la fin de cette période de rétention, l’élément est définitivement supprimé en raison de l’action de suppression de trois ans de l’étiquette de rétention. La suppression des étiquettes de rétention a la priorité sur la suppression de toutes les stratégies de rétention. Dans cet exemple, tous les conflits sont résolus au troisième niveau.
+    **Résultat** : l’élément est conservé pendant cinq ans parce qu’il s’agit de la période de rétention la plus longue pour l’élément. À la fin de cette période de rétention, l’élément est définitivement supprimé en raison de l’action de suppression de trois ans de l’étiquette de rétention. La suppression des étiquettes de rétention a la priorité sur la suppression de toutes les stratégies de rétention. Dans cet exemple, tous les conflits sont résolus au troisième niveau.
 
 ## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>Utiliser le verrouillage de conservation pour restreindre les modifications aux stratégies
 

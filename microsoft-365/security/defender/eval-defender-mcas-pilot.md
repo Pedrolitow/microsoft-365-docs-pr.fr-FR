@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e061bf213ee929f91a48b03c71b9654a7ea76b8c
-ms.sourcegitcommit: 718759c7146062841f7eb4a0a9a8bdddce0139b0
+ms.openlocfilehash: 672b01258c68f1cbcbfe3e2315c4b7cbcb36021e
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53457759"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587944"
 ---
 # <a name="pilot-microsoft-cloud-app-security-with-microsoft-365-defender"></a>Pilote Microsoft Cloud App Security avec Microsoft 365 Defender
 
@@ -81,9 +81,11 @@ Essayez les Sécurité des applications cloud didacticiels suivants :
 - [Protéger vos fichiers avec la mise en quarantaine de l’administrateur](/cloud-app-security/use-case-admin-quarantine)
 - [Exiger l’authentification par étapes en cas d’action risquée](/cloud-app-security/tutorial-step-up-authentication)
 
+Pour plus d’informations sur le Microsoft Cloud App Security avancé, voir la [vidéo.](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa)
+
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Examiner et répondre à l’Microsoft 365 Defender dans un environnement pilote](eval-defender-investigate-respond.md)
+[Examiner et répondre à l’aide Microsoft 365 Defender dans un environnement pilote](eval-defender-investigate-respond.md)
 
 Revenir à la vue d’ensemble [de l’Microsoft Cloud App Security](eval-defender-mcas-overview.md)
 

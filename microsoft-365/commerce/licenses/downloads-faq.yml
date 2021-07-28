@@ -14,12 +14,12 @@ metadata:
   ms.custom: commerce_licensing
   localization_priority: Normal
   description: Questions fréquemment posées sur Centre d’administration Microsoft 365 téléchargements.
-  ms.openlocfilehash: a01c46bb4ac8072fe7293abbc016a9b2bb8e377d
-  ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+  ms.openlocfilehash: 406e25fa4d6aac05ecbdaa05f407626cff9d112e
+  ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
   ms.translationtype: MT
   ms.contentlocale: fr-FR
   ms.lasthandoff: 07/23/2021
-  ms.locfileid: "53542486"
+  ms.locfileid: "53567343"
 title: Télécharge les questions fréquemment posées
 summary: ''
 sections:
@@ -79,7 +79,7 @@ sections:
       2.  Sous **Télécharger,** sélectionnez le **type de** langue et de système **d’exploitation.**
 
 
-      **Remarque** Les bloqueurs de fenêtres pop-up peuvent bloquer les téléchargements. Assurez-vous que les bloqueurs de fenêtres pop-up sont désactivés lorsque vous téléchargez des logiciels à partir du Centre d’administration.
+      **Remarque** Les bloqueurs de fenêtres pop-up peuvent bloquer les téléchargements. Assurez-vous que les bloqueurs de fenêtres pop-up sont désactivés lorsque vous téléchargez le logiciel à partir du Centre d’administration.
   - question: >
       Que sont les fichiers EXE et ISO ?
     answer: "Vous pouvez sélectionner deux types de fichiers lorsque vous téléchargez des produits à partir du Centre d’administration :\n  \n  - **Les fichiers exécutables (EXE)** peuvent être téléchargés et installés sur le même système, mais vous ne pouvez pas créer de disques de démarrage distincts pour l’installation sur d’autres ordinateurs.\n  - **Les fichiers image ISO (International Standards Organization)** sont des représentations exactes du contenu et du format logique. Vous pouvez les installer sur l’ordinateur utilisé pour télécharger le package ou écrire les fichiers sur les disques pour la distribution et l’installation sur d’autres ordinateurs.\n\n**Remarque** Tous les produits ne sont pas disponibles dans toutes les langues et dans tous les formats.\n"
@@ -104,7 +104,7 @@ sections:
   - question: >
       Où puis-je trouver de l’aide pour les rubriques couvertes dans ce FAQ ?
     answer: >
-      Pour plus de ressources de formation, y compris des vidéos, voir la formation et les ressources du Centre de gestion des licences [en volume Microsoft.](/licensing/existing-customer/vlsc-training-and-resources?activetab=vlsc-tab%3aprimaryr3)
+      Pour plus de ressources de formation, y compris des vidéos, voir la formation et les ressources du Centre de gestion des licences [en volume Microsoft.](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources)
   - question: >
       Comment puis-je contacter le Support Microsoft ?
     answer: >

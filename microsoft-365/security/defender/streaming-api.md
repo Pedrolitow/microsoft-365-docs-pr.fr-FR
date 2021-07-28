@@ -1,6 +1,6 @@
 ---
-title: Événements Stream Microsoft 365 Defender
-description: Découvrez comment configurer Microsoft 365 Defender pour diffuser des événements de recherche avancée vers des hubs d’événements ou un compte de stockage Azure
+title: Événements Microsoft 365 Defender stream
+description: Découvrez comment configurer des Microsoft 365 Defender pour diffuser des événements de recherche avancée vers des hubs d’événements ou un compte de stockage Azure
 keywords: exportation de données brutes, API de diffusion en continu, API, hubs d’événements, stockage Azure, compte de stockage, recherche avancée, partage de données brutes
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 21a83c4876a90a231eb2a78d10a290be2dca2fa0
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 431fd1271bf826ded53f88818741c5bbaa61e9b5
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782476"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588112"
 ---
 # <a name="streaming-api"></a>API de diffusion en continu
 
@@ -34,15 +34,15 @@ ms.locfileid: "52782476"
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Diffusez des événements de recherche avancée sur des hubs d’événements et/ou un compte de stockage Azure.
 
-Microsoft 365 Defender prend en charge les événements de diffusion en continu [via le service de](../defender/advanced-hunting-overview.md) recherche avancée sur un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/event-hubs/)
+Microsoft 365 Defender prend en charge les événements de diffusion en continu via [la](../defender/advanced-hunting-overview.md) recherche avancée vers un hub [d’événements](/azure/event-hubs/) et/ou un [compte de stockage Azure.](/azure/event-hubs/)
 
-
+Pour plus d’informations sur Microsoft 365 Defender API de diffusion en continu, voir la [vidéo.](https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga)
 
 ## <a name="in-this-section"></a>Dans cette section
 
 Rubrique | Description
 :---|:---
-[Flux d’événements dans les Hubs d’événements Azure](streaming-api-event-hub.md)| En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser en continu la recherche avancée vers [les](../defender/advanced-hunting-overview.md) hubs d’événements.
+[Flux d’événements dans les Hubs d’événements Azure](streaming-api-event-hub.md)| En savoir plus sur l’activation de l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser [en](../defender/advanced-hunting-overview.md) continu le chasse avancée aux hubs d’événements.
 [Flux d’événements sur votre compte de stockage Azure](streaming-api-storage.md)| Découvrez comment activer l’API de diffusion en continu dans votre client et configurer Microsoft 365 Defender pour diffuser en continu la recherche avancée [sur](advanced-hunting-overview.md) votre compte de stockage Azure.
 
 

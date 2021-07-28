@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08a500dd548eb960d813d9bc693fa8b8dd871170
-ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
+ms.openlocfilehash: 2354a6b86f88ac8d49956677d318700c8e104719
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53542296"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588136"
 ---
 # <a name="create-indicators-based-on-certificates"></a>Créer des indicateurs basés sur des certificats
 
@@ -33,16 +33,14 @@ ms.locfileid: "53542296"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Vous pouvez créer des indicateurs pour les certificats. Voici quelques cas d’utilisation courants :
 
 - Scénarios dans le cas où vous devez déployer [](controlled-folders.md) des technologies de blocage, telles que les règles de réduction de la [surface](attack-surface-reduction.md) d’attaque et l’accès contrôlé aux dossiers, mais qui doivent autoriser les comportements des applications signées en ajoutant le certificat dans la liste d’autorisations.
 - Blocage de l’utilisation d’une application signée spécifique au sein de votre organisation. En créant un indicateur pour bloquer le certificat de l’application, l’antivirus Windows Defender empêchera les exécutions de fichiers (blocage et correction) et les examens et corrections automatisés se comporteront de la même manière.
 
-
-### <a name="before-you-begin"></a>Avant de commencer
+## <a name="before-you-begin"></a>Avant de commencer
 
 Il est important de comprendre les exigences suivantes avant de créer des indicateurs pour les certificats :
 
@@ -52,32 +50,30 @@ Il est important de comprendre les exigences suivantes avant de créer des indic
 - Les définitions de protection contre les virus et menaces doivent être à jour.
 - Cette fonctionnalité prend actuellement en charge l’entrée. CER ou . Extensions de fichier PEM.
 
->[!IMPORTANT]
+> [!IMPORTANT]
+>
 > - Un certificat feuille valide est un certificat de signature qui possède un chemin de certification valide et doit être chaîné à l’autorité de certification racine (CA) approuvé par Microsoft.  Sinon, un certificat personnalisé (auto-signé) peut être utilisé tant qu’il est approuvé par le client (le certificat de l’autorité de certification racine est installé sous l’ordinateur local « Autorités de certification racines de confiance »).
 >- Les enfants ou le parent des IOC de certificats d’autorisation/de blocage ne sont pas inclus dans la fonctionnalité autoriser/bloquer les IoC, seuls les certificats feuille sont pris en charge.
 >- Les certificats signés par Microsoft ne peuvent pas être bloqués.
 
-#### <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>Créez un indicateur pour les certificats à partir de la page paramètres :
+## <a name="create-an-indicator-for-certificates-from-the-settings-page"></a>Créez un indicateur pour les certificats à partir de la page paramètres :
 
->[!IMPORTANT]
-> La création et la suppression d’un IoC de certificat peut prendre jusqu’à 3 heures.
+> [!IMPORTANT]
+> La création et la suppression d’un certificat IoC peuvent prendre jusqu’à 3 heures.
 
-1. Dans le volet de navigation, sélectionnez **Paramètres**  >  **indicateurs de points** de  > 
- **terminaison** (sous **Règles).**  
+1. Dans le volet de navigation, sélectionnez **Paramètres** \> **indicateurs de points** de \> **terminaison** (sous **Règles).**
 
+2. Sélectionnez **Ajouter un indicateur**.
 
-2. Sélectionnez **l’onglet Certificats.**
-
-3. Sélectionnez **Ajouter un élément.**
-
-4. Spécifiez les détails suivants :
+3. Spécifiez les détails suivants :
    - Indicateur : spécifiez les détails de l’entité et définissez l’expiration de l’indicateur.
    - Action : spécifiez l’action à prendre et fournissez une description.
    - Étendue : définir l’étendue du groupe d’ordinateurs.
 
-5. Consultez les détails de **l’onglet Résumé,** puis cliquez sur **Enregistrer.**
+4. Consultez les détails de l’onglet Résumé, puis cliquez sur **Enregistrer.**
 
 ## <a name="related-topics"></a>Voir aussi
+
 - [Créer des indicateurs](manage-indicators.md)
 - [Créer des indicateurs pour les fichiers](indicator-file.md)
 - [Créer des indicateurs pour les IP et URL/domaines](indicator-ip-domain.md)

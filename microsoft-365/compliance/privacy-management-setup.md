@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Découvrez comment configurer la gestion de la confidentialité pour votre organisation, définir des rôles et des autorisations et configurer des paramètres importants.
-ms.openlocfilehash: 5199cf96e9ede3287dc9ac33e26388c065189748
-ms.sourcegitcommit: 022d9d91263994c48efcebe08a84319573dc3a8c
+ms.openlocfilehash: f6989de8e9a3926f5d9e43cf08240ce76c85a0c9
+ms.sourcegitcommit: 60cc1b2828b1e191f30ca439b97e5a38f48c5169
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53378500"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53541012"
 ---
 # <a name="get-started-with-privacy-management-preview"></a>Prise en charge de la gestion de la confidentialité (aperçu)
 
@@ -29,11 +29,11 @@ Dans cet article : découvrez  comment configurer l’accès à  la gestion de l
 
 ## <a name="sign-up"></a>S’inscrire
 
-La gestion de la confidentialité sera disponible dans le Centre de conformité Microsoft 365. La prévisualisation publique de la gestion de la confidentialité est disponible pour les organisations ayant des licences E1, E3 et E5 Office 365 et Microsoft 365 licences d’entreprise. Lors de la disponibilité générale de la gestion de la confidentialité, les organisations doivent obtenir une nouvelle licence.
+La gestion de la confidentialité est disponible dans le Centre de conformité Microsoft 365. La prévisualisation publique de la gestion de la confidentialité est disponible pour les organisations ayant des licences E1, E3 et E5 Office 365 et Microsoft 365 licences d’entreprise. Lors de la disponibilité générale de la gestion de la confidentialité, les organisations doivent obtenir une nouvelle licence.
 
 Notez que la prévisualisation publique de la gestion de la confidentialité n’est pas disponible pour les clients modérés, Cloud de la communauté du secteur public élevés ou du département de la Défense (DoD) du gouvernement américain Community (Cloud de la communauté du secteur public).
 
-Pour commencer la prévisualisation publique, obtenez l’abonnement d’aperçu à partir du Centre d’administration. Si vous n’avez pas encore la licence lorsque vous sélectionnez la gestion de la confidentialité pour la première fois dans le centre de conformité, vous êtes dirigé vers le centre d’administration pour commencer. Il est recommandé que l’administrateur global se connecte et définisse les autorisations des utilisateurs comme indiqué ci-dessous lors de la première visite de la gestion de la confidentialité. Si vous ne devez pas détenir le rôle requis pour obtenir l’abonnement ou consentir aux conditions d’utilisation de la gestion de la confidentialité, vous serez invité à contacter votre administrateur global pour obtenir de l’aide.
+Pour commencer la prévisualisation publique, obtenez l’abonnement d’aperçu à partir du Centre d’administration. Si vous n’avez pas encore d’abonnement lorsque vous sélectionnez la gestion de la confidentialité pour la première fois dans le centre de conformité, vous êtes dirigé vers le Centre d’administration pour commencer. Il est recommandé que l’administrateur global se connecte et définisse les autorisations des utilisateurs comme indiqué ci-dessous lors de la première visite de la gestion de la confidentialité. Si vous ne devez pas détenir le rôle requis pour obtenir l’abonnement ou consentir aux conditions d’utilisation de la gestion de la confidentialité, vous serez invité à contacter votre administrateur global pour obtenir de l’aide.
 
 Confirmer que vous souhaitez commencer à utiliser la gestion de la confidentialité indique que vous acceptez les termes et le processus d’évaluation des données personnelles. Vous pouvez consulter les liens fournis dans son intégralité avant de poursuivre.
 
@@ -73,7 +73,7 @@ Administrateurs de la gestion de la confidentialité : les membres de ce groupe 
 
 Pour voir les rôles spécifiques inclus dans chaque groupe de rôles, consultez le tableau suivant.
 
-| **Groupe de rôles**      | **Rôles inclus**                        |
+|   Groupe de rôles        |   Rôles inclus                          |
 |:-- |:--|
 | Gestion de la confidentialité  | Gestion des cas                           |
 |                     | Visionneuse de contenu de classification des données        |
@@ -113,7 +113,7 @@ Cette fonctionnalité vous permet d’afficher des versions rendues anonymes des
 
 ### <a name="user-notification-emails"></a>E-mails de notification de l’utilisateur
 
-Lorsque nous détectons une correspondance pour vos stratégies de gestion des données, la gestion de la confidentialité peut envoyer un courrier électronique aux utilisateurs concernés avec des actions correctives à prendre et un lien vers la formation à la confidentialité. Dans Paramètres, vous pouvez activer ou désactiver la fonctionnalité de notification par courrier électronique de la gestion de la confidentialité dans son ensemble. Vous pouvez activer des notifications individuelles, définir la fréquence des e-mails et spécifier une URL de formation lorsque vous créez ou modifiez une stratégie. Si la fonctionnalité de notification est désactivée Paramètres, toute configuration au niveau de la stratégie pour des messages de notification spécifiques est désactivée. Pour en savoir plus sur les stratégies, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
+Lorsque nous détectons une correspondance pour vos stratégies de gestion des données, la gestion de la confidentialité peut envoyer un courrier électronique aux utilisateurs concernés avec des actions correctives à prendre et un lien vers une formation sur la confidentialité. Dans Paramètres, vous pouvez activer ou désactiver la fonctionnalité de notification par courrier électronique de la gestion de la confidentialité dans son ensemble. Vous pouvez activer des notifications individuelles, définir la fréquence des e-mails et spécifier une URL de formation lorsque vous créez ou modifiez une stratégie. Si la fonctionnalité de notification est désactivée Paramètres, toute configuration au niveau de la stratégie pour des messages de notification spécifiques est désactivée. Pour en savoir plus sur les stratégies, voir [Créer et gérer des stratégies.](privacy-management-policies.md)
 
 ### <a name="teams-collaboration"></a>Collaboration des équipes
 
@@ -121,7 +121,7 @@ Intégrez Microsoft Teams fonctionnalités de gestion de la confidentialité pou
 
 ### <a name="power-automate-flows"></a>Power Automate flux
 
-Utilisez Power Automate flux de travail pour gérer automatiquement les processus et les tâches liés à la confidentialité. Vous pouvez créer des flux dans la section Paramètres à l’aide de modèles de gestion de la confidentialité intégrés ou utiliser la console Power Automate pour créer des flux personnalisés. Pour en savoir plus sur les Power Automate, consultez la documentation [Power Automate](/power-automate/) documentation.
+Utilisez Power Automate flux de travail pour gérer automatiquement les processus et les tâches liés à la confidentialité. Vous pouvez créer des flux dans la section Paramètres à l’aide de modèles de gestion de la confidentialité intégrés ou utiliser la console Power Automate pour créer des flux personnalisés. Pour en savoir plus sur Power Automate, consultez la documentation [Power Automate](/power-automate/) documentation.
 
 ### <a name="data-matching"></a>Correspondance de données
 
@@ -129,7 +129,7 @@ Utilisez cette section pour télécharger des schémas de données qui décriven
 
 ### <a name="data-retention-periods"></a>Périodes de rétention des données
 
-Pour les demandes de droits de l’objet, choisissez la durée de rétention des données finales collectées et le rapport après la fermeture d’une demande. Vous pouvez choisir entre 30 et 90 jours. Pour en savoir plus sur les demandes de droits d’objet, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
+Pour les demandes de droits d’objet, choisissez la durée de rétention des données finales collectées et le rapport après la fermeture d’une demande. Vous pouvez sélectionner entre 30 et 90 jours. Pour en savoir plus sur les demandes de droits d’objet, voir [Gérer les demandes de droits d’objet.](privacy-management-subject-rights-requests.md)
 
 ### <a name="data-review-tags"></a>Balises de révision des données
 

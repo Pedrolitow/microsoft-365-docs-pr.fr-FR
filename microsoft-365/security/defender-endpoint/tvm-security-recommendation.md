@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fa9986d9ddab70f050055ce2e3b98357c2ab22c5
-ms.sourcegitcommit: 346c1332e1e9eebb5c90d6b8553dd70fcabf530a
+ms.openlocfilehash: 6243444c6dca31608512dbe9e6183cc7355ef55a
+ms.sourcegitcommit: bef7bd019531317d083c1125f7d339750c450b2f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53567151"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53588016"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>Recommandations en matière de sécurité : Gestion des menaces et des vulnérabilités
 
@@ -35,24 +35,22 @@ ms.locfileid: "53567151"
 - [Menaces et gestion des vulnérabilités](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Les faiblesses de cybersécurité identifiées dans votre organisation sont mappées à des recommandations de sécurité actionnables et hiérarchisées par leur impact. Les recommandations hiérarchisées permettent de raccourcir le temps d’atténuation ou de correction des vulnérabilités et de stimuler la conformité.
 
 Chaque recommandation de sécurité inclut des étapes de correction actionnables. Pour faciliter la gestion des tâches, la recommandation peut également être envoyée à l’aide Microsoft Intune et Microsoft Endpoint Configuration Manager. Lorsque le paysage des menaces change, la recommandation change également lorsqu’elle collecte en permanence des informations à partir de votre environnement.
 
->[!TIP]
->Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> Pour obtenir des e-mails sur les nouveaux événements de vulnérabilité, voir Configurer les notifications par courrier électronique de vulnérabilité [dans Microsoft Defender pour le point de terminaison](configure-vulnerability-email-notifications.md)
 
-## <a name="how-it-works"></a>Comment ça marche
+## <a name="how-it-works"></a>Mode de fonctionnement
 
 Chaque appareil de l’organisation est marqué en fonction de trois facteurs importants pour aider les clients à se concentrer sur les bonnes choses au bon moment.
 
-- **Menace :** caractéristiques des vulnérabilités et des exploits dans les appareils et l’historique des violations de votre organisation. En fonction de ces facteurs, les recommandations de sécurité indiquent les liens correspondants vers les alertes actives, les campagnes contre les menaces en cours et leurs rapports analytiques sur les menaces correspondants.
-
-- **Probabilité de violation :** posture de sécurité et résilience de votre organisation contre les menaces
-
-- **Valeur métier**: ressources de votre organisation, processus critiques et propriétés intellectuelles
+- **Menace**: caractéristiques des vulnérabilités et des exploits dans les appareils et l’historique des violations de votre organisation. En fonction de ces facteurs, les recommandations de sécurité indiquent les liens correspondants vers les alertes actives, les campagnes contre les menaces en cours et leurs rapports analytiques sur les menaces correspondants.
+- **Probabilité de violation :** posture de sécurité et résilience de votre organisation contre les menaces.
+- **Valeur métier**: ressources de votre organisation, processus critiques et propriétés intellectuelles.
 
 ## <a name="navigate-to-the-security-recommendations-page"></a>Accéder à la page Recommandations en matière de sécurité
 
@@ -80,18 +78,19 @@ Les principales recommandations en matière de sécurité présentent les opport
 
 ## <a name="security-recommendations-overview"></a>Vue d’ensemble des recommandations de sécurité
 
-Afficher les recommandations, le nombre de faiblesses trouvées, les composants associés, les informations sur les menaces, le nombre d’appareils exposés, l’état, le type de correction, les activités de correction, l’impact sur votre score d’exposition et le score de sécurité Microsoft pour les appareils et les balises associées.
+Afficher les recommandations, le nombre de faiblesses trouvées, les composants associés, les informations sur les menaces, le nombre d’appareils exposés, l’état, le type de correction, les activités de correction, l’impact sur votre score d’exposition et le score de sécurité Microsoft pour les appareils, ainsi que les balises associées.
 
 La couleur du graphique **des appareils exposés** change à mesure que la tendance change. Si le nombre d’appareils exposés augmente, la couleur passe en rouge. En cas de diminution du nombre d’appareils exposés, la couleur du graphique change en vert.
 
->[!NOTE]
->Menaces et gestion des vulnérabilités affiche les appareils qui étaient utilisés il y a **30** jours. Ceci est différent du reste de Microsoft Defender pour point de terminaison, où si un appareil n’a pas été utilisé pendant plus de 7 jours, il présente l’état « Inactif ».
+> [!NOTE]
+> Menaces et gestion des vulnérabilités affiche les appareils qui étaient utilisés il y a **30** jours. Ceci est différent du reste de Microsoft Defender pour point de terminaison, où si un appareil n’a pas été utilisé pendant plus de 7 jours, il présente l’état « Inactif ».
 
 ![Exemple de page d’accueil pour les recommandations de sécurité.](images/tvmsecrec-updated.png)
 
 ### <a name="icons"></a>Icônes
 
 Les icônes utiles peuvent également attirer rapidement votre attention sur :
+
 - ![flèche tapant une cible](images/tvm_alert_icon.png) alertes actives possibles
 - ![bogue rouge](images/tvm_bug_icon.png) exploits publics associés
 - ![light light light](images/tvm_insight_icon.png) informations sur les recommandations
@@ -115,7 +114,7 @@ Dans le volant, vous pouvez choisir l’une des options suivantes :
 
 ### <a name="investigate-changes-in-device-exposure-or-impact"></a>Examiner les modifications apportées à l’exposition ou à l’impact de l’appareil
 
-S’il y a une augmentation importante du nombre d’appareils exposés ou une augmentation significative de l’impact sur le score d’exposition de votre organisation et le score de sécurité Microsoft pour les appareils, cette recommandation de sécurité est utile.
+S’il y a une augmentation importante du nombre d’appareils exposés ou une forte augmentation de l’impact sur le score d’exposition de votre organisation et le score de sécurité Microsoft pour les appareils, cette recommandation de sécurité vaut la peine d’être étudier.
 
 1. Sélectionnez la page Recommandation **et Ouvrir le logiciel**
 2. Sélectionnez **l’onglet Chronologie** des événements pour afficher tous les événements qui ont un impact sur ce logiciel, tels que les nouvelles vulnérabilités ou les nouvelles exploitations publiques. [En savoir plus sur la chronologie des événements](threat-and-vuln-mgt-event-timeline.md)
@@ -151,7 +150,7 @@ Vous pouvez signaler un faux positif lorsque vous voyez des informations de reco
 
 1. Ouvrez la recommandation sécurité.
 
-2. Sélectionnez les trois points en dehors de la recommandation de sécurité que vous souhaitez signaler, puis sélectionnez **Imprécision du rapport.**
+2. Sélectionnez les trois points en dehors de la recommandation de sécurité que vous souhaitez signaler, puis sélectionnez **L’imprécision du rapport.**
 
     ![Affichage de l’endroit où le bouton « Signaler l’imprécision » se trouve dans un volant de recommandations de sécurité.](images/report-inaccuracy500.png)
 
