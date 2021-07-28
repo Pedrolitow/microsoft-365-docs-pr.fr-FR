@@ -19,22 +19,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dc1e8707dc0810c0986698674a64e969792b5fb8
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 33d4504d6d49eee0170d9250e241f1d6bfb63e91
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311231"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621582"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Résoudre les problèmes d’installation de Microsoft Defender pour endpoint sur Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## <a name="verify-if-installation-succeeded"></a>Vérifier si l’installation a réussi
 
@@ -178,4 +178,4 @@ Essayez maintenant de redémarrer le service mdatp à l’aide de l’étape 2. 
     Diagnostic file created: <path to file>
     ```
 
-    Le chemin d’accès à un fichier zip qui contient les journaux s’affiche en tant que sortie. À l’aide de ces journaux, connectez-vous au support technique.
+    Le chemin d’accès à un fichier zip qui contient les journaux s’affiche en tant que sortie. Connectez-vous à notre support client à l’aide de ces journaux.

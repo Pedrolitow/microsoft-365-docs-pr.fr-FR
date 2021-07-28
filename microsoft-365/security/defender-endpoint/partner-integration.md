@@ -1,7 +1,7 @@
 ---
-title: Scénarios et opportunités de partenaire Microsoft Defender pour point de terminaison
+title: Scénarios et opportunités de partenaires Microsoft Defender pour point de terminaison
 ms.reviewer: ''
-description: Découvrez comment étendre les offres de sécurité existantes en plus de l’infrastructure ouverte et d’un ensemble riche d’API pour créer des extensions et des intégrations avec Microsoft Defender for Endpoint
+description: Découvrez comment étendre les offres de sécurité existantes en plus de l’infrastructure ouverte et d’un ensemble riche d’API pour créer des extensions et des intégrations avec Microsoft Defender pour endpoint
 keywords: API, partenaire, étendre, ouvrir une infrastructure, api, extensions, intégrations, détection, gestion, réponse, vulnérabilités, intelligence
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,23 +17,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be2f33514a568f290a3fc5cf0adc62db72243a6f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c49daca5c17a72411997e935b4eb4085bb64673b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861108"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621570"
 ---
-# <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Scénarios et opportunités de partenaire Microsoft Defender pour point de terminaison
+# <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Scénarios et opportunités de partenaires Microsoft Defender pour point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 Les partenaires peuvent facilement étendre leurs offres de sécurité existantes en plus de l’infrastructure ouverte et d’un ensemble complet et complet d’API pour créer des extensions et des intégrations avec Defender for Endpoint. 

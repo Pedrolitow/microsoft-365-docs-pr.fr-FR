@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1db046d4001c2e8573b1e8bfb2274f9a58aaf3a3
-ms.sourcegitcommit: af575ade7b187af70f94db904b03f0471f56452a
+ms.openlocfilehash: 78d1f1eab2138fb53452d777027596dce12cb76a
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53590778"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618822"
 ---
 # <a name="take-response-actions-on-a-file"></a>Prendre des mesures de réponse sur un fichier
 
@@ -37,7 +37,7 @@ ms.locfileid: "53590778"
 
 Répondez rapidement aux attaques détectées en arrêtant et en bloquant des fichiers ou en bloquant un fichier. Après avoir pris des mesures sur les fichiers, vous pouvez vérifier les détails de l’activité dans le centre de l’action.
 
-Les actions de réponse sont disponibles sur la page de profil détaillée d’un fichier. Une fois sur cette page, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en faisant basculer la **nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
+Les actions de réponse sont disponibles sur la page de profil détaillée d’un fichier. Une fois sur cette page, vous pouvez basculer entre la nouvelle et l’ancienne mise en page en faisant basculer **la nouvelle page de fichier.** Le reste de cet article décrit la mise en page la plus nouvelle.
 
 Les actions de réponse s’exécutent le long de la partie supérieure de la page de fichiers et incluent :
 
@@ -51,12 +51,17 @@ Vous pouvez également soumettre des fichiers pour analyse approfondie, afin d�
 
 Certaines actions nécessitent certaines autorisations. Le tableau suivant décrit l’action que certaines autorisations peuvent prendre sur les fichiers exécutables portables (PE) et non PE :
 
-| Autorisation             | Fichiers PE | Fichiers non PE |
-| :--------------------- | :------: | :----------: |
-| Afficher les données              |     X    |       X      |
-| Examen des alertes   | &#x2611; |       X      |
-| Base de la réponse en direct    |     X    |       X      |
-| Réponse en direct avancée | &#x2611; |   &#x2611;   |
+<br>
+
+****
+
+|Autorisation|Fichiers PE|Fichiers non PE|
+|:---------------------|:------:|:----------:|
+|Afficher les données|X|X|
+|Examen des alertes|&#x2611;|X|
+|Base de la réponse en direct|X|X|
+|Réponse en direct avancée|&#x2611;|&#x2611;|
+|
 
 Pour plus d’informations sur les rôles, voir Créer et gérer des rôles pour le contrôle [d’accès basé sur les rôles.](user-roles.md)
 
@@ -76,7 +81,7 @@ L’action Arrêter **et mettre en** quarantaine le fichier inclut l’arrêt de
 Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieure, où le fichier a été observé au cours des 30 derniers jours.
 
 > [!NOTE]
-> Vous pourrez restaurer le fichier de quarantaine à tout moment.
+> Vous pourrez restaurer le fichier à partir de la quarantaine à tout moment.
 
 ### <a name="stop-and-quarantine-files"></a>Arrêter et mettre en quarantaine des fichiers
 
@@ -97,7 +102,7 @@ Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieu
    ![Image de la fenêtre modale de fichier d’arrêt et de mise en quarantaine](images/atp-stop-quarantine.png)
 
    Le centre de données affiche les informations de soumission :
-   
+
    ![Image du centre de mise en quarantaine et d’arrêt des fichiers](images/atp-stopnquarantine-file.png)
 
    - **Heure de soumission** : indique quand l’action a été envoyée.
@@ -107,10 +112,11 @@ Cette action prend effet sur les appareils Windows 10, version 1703 ou ultérieu
 
 4. Sélectionnez l’un des indicateurs d’état pour afficher plus d’informations sur l’action. Par exemple, **sélectionnez Échec pour** voir où l’action a échoué.
 
-**Notification sur l’utilisateur de l’appareil**:</br>
+#### <a name="notification-on-device-user"></a>Notification sur l’utilisateur de l’appareil
+
 Lorsque le fichier est supprimé d’un appareil, la notification suivante s’affiche :
 
-![Image de notification sur l’utilisateur de l’appareil](images/atp-notification-file.png)
+![Image de la notification sur l’utilisateur de l’appareil](images/atp-notification-file.png)
 
 Dans la chronologie de l’appareil, un nouvel événement est ajouté pour chaque appareil où un fichier a été arrêté et mis en quarantaine.
 
@@ -124,12 +130,12 @@ Vous pouvez revenir en quarantaine et supprimer un fichier si vous avez détermi
 
    1. Accéder à **Démarrer** et taper _cmd_.
 
-   1. Cliquez avec le bouton droit **sur Invite de** commandes et **sélectionnez Exécuter en tant qu’administrateur.**
+   1. Cliquez avec le bouton droit sur **Invite de commandes** et sélectionnez **Exécuter en tant qu'administrateur**.
 
 2. Entrez la commande suivante, puis appuyez sur **Entrée**:
 
-   ```console
-   “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+   ```dos
+   "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
    ```
 
    > [!NOTE]
@@ -182,7 +188,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 
 > [!IMPORTANT]
 >
-> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, [voir Manage cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+> - Cette fonctionnalité est disponible si votre organisation utilise Antivirus Microsoft Defender protection cloud est activée. Pour plus d’informations, voir Gérer la [protection cloud.](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)
 >
 > - La version du client anti-programme malveillant doit être 4.18.1901.x ou version ultérieure.
 > - Cette fonctionnalité est conçue pour empêcher le téléchargement de programmes malveillants (ou de fichiers potentiellement malveillants) à partir du web. Il prend actuellement en charge les fichiers exécutables portables( PE), notamment les fichiers _.exe_ et _.dll_ portables. La couverture sera étendue au fil du temps.
@@ -197,6 +203,7 @@ Empêcher toute propagation supplémentaire d’une attaque dans votre organisat
 ### <a name="enable-the-block-file-feature"></a>Activer la fonctionnalité bloquer le fichier
 
 Pour commencer à bloquer les fichiers, vous devez d’abord [activer  ](advanced-features.md) la fonctionnalité Bloquer ou autoriser dans Paramètres.
+
 ### <a name="allow-or-block-file"></a>Autoriser ou bloquer un fichier
 
 Lorsque vous ajoutez un hachage d’indicateur pour un fichier, vous pouvez choisir de lancer une alerte et de bloquer le fichier chaque fois qu’un appareil de votre organisation tente de l’exécuter.
@@ -213,7 +220,7 @@ Vous pouvez également modifier les indicateurs à partir de la page **Paramètr
 
 Consultez un expert microsoft en matière de menaces pour obtenir plus d’informations sur un appareil potentiellement compromis ou déjà compromis. Spécialistes des menaces Microsoft sont en action directement à partir du portail Microsoft 365 Defender pour une réponse précise et opportune. Les experts fournissent des informations sur un appareil potentiellement compromis et vous aident à comprendre les menaces complexes et les notifications d’attaque ciblée. Ils peuvent également fournir des informations sur les alertes ou un contexte d’intelligence des menaces que vous voyez sur votre tableau de bord du portail.
 
-Pour [plus d’informations, consultez un expert](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) microsoft en matière de menaces.
+Pour [plus d’informations, consultez un Expert en](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) menaces Microsoft.
 
 ## <a name="check-activity-details-in-action-center"></a>Vérifier les détails de l’activité dans le Centre de notifications
 
@@ -241,10 +248,11 @@ Le résumé de l’analyse approfondie inclut une liste des comportements *obser
 
 Les résultats d’une analyse approfondie sont en correspondance avec les informations sur les menaces et les correspondances génèrent des alertes appropriées.
 
-Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d’un fichier, généralement lors d’un examen d’une alerte ou pour toute autre raison pour laquelle vous suspectez un comportement malveillant. Cette fonctionnalité est disponible dans **l’onglet Analyse** approfondie, sur la page de profil du fichier.<br/>
-<br/>
+Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d’un fichier, généralement lors d’un examen d’une alerte ou pour toute autre raison pour laquelle vous suspectez un comportement malveillant. Cette fonctionnalité est disponible dans **l’onglet Analyse** approfondie, sur la page de profil du fichier.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4aAYy?rel=0]
+<br/><br/>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
 **L’envoi** pour analyse approfondie est activé lorsque le fichier est disponible dans la collection d’exemples principal Defender for Endpoint, ou s’il a été observé sur un appareil Windows 10 qui prend en charge l’envoi à une analyse approfondie.
 
@@ -254,14 +262,14 @@ Utilisez la fonctionnalité d’analyse approfondie pour examiner les détails d
 Vous pouvez également soumettre un exemple via le portail du Centre de sécurité [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) si le  fichier n’a pas été observé sur un appareil Windows 10 et attendre que le bouton Envoyer pour analyse approfondie devienne disponible.
 
 > [!NOTE]
-> En raison des flux de traitement principal dans le portail du Centre de sécurité Microsoft, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichiers et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender for Endpoint.
+> En raison des flux de traitement principal dans le portail centre de sécurité Microsoft, il peut y avoir jusqu’à 10 minutes de latence entre l’envoi de fichier et la disponibilité de la fonctionnalité d’analyse approfondie dans Defender pour le point de terminaison.
 
-### <a name="submit-files-for-deep-analysis"></a>Soumettre des fichiers pour analyse approfondie
+### <a name="submit-files-for-deep-analysis"></a>Envoyer des fichiers pour analyse approfondie
 
 1. Sélectionnez le fichier que vous souhaitez soumettre pour une analyse approfondie. Vous pouvez sélectionner ou rechercher un fichier dans l’un des affichages suivants :
 
     - **Alertes :** sélectionnez les liens de fichier dans la **description** ou les **détails** de la chronologie de l’alerte
-    - **Liste des appareils** : sélectionnez les liens de fichiers dans la **section Description** **ou Détails** de l’appareil **dans l’organisation**
+    - **Liste des appareils** : sélectionnez les liens de fichiers dans la **section Description** **ou Détails** de **l’appareil dans l’organisation**
     - **Zone de recherche** : **sélectionnez Fichier** dans le menu déroulant et entrez le nom du fichier
 
 2. Dans **l’onglet Analyse approfondie** de l’affichage de fichier, sélectionnez **Envoyer.**
@@ -274,7 +282,7 @@ Vous pouvez également soumettre un exemple via le portail du Centre de sécurit
    Une barre de progression s’affiche et fournit des informations sur les différentes étapes de l’analyse. Vous pouvez ensuite afficher le rapport une fois l’analyse effectuée.
 
 > [!NOTE]
-> En fonction de la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a Windows 10 de rapports sur l’appareil à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
+> Selon la disponibilité de l’appareil, la durée de collecte des échantillons peut varier. Il existe un délai d'3 heures pour la collecte d’exemples. La collecte échoue et l’opération est abandonnée s’il n’y a Windows 10 de rapports sur l’appareil à ce moment-là. Vous pouvez soumettre de nouveau des fichiers pour une analyse approfondie afin d’obtenir des données récentes sur le fichier.
 
 ### <a name="view-deep-analysis-reports"></a>Afficher des rapports d’analyse approfondie
 
@@ -304,18 +312,18 @@ Si vous êtes face à un problème lors de la tentative d’soumission d’un fi
 
 4. Si la stratégie de collection d’exemples n’est pas configurée, le comportement par défaut consiste à autoriser la collecte d’échantillons. Si elle est configurée, vérifiez que le paramètre de stratégie autorise la collecte d’exemples avant de soumettre à nouveau le fichier. Lorsque l’exemple de collection est configuré, vérifiez la valeur de Registre suivante :
 
-    ```console
+    ```text
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
     Hexadecimal value :
-      Value = 0 – block sample collection
-      Value = 1 – allow sample collection
+      Value = 0 - block sample collection
+      Value = 1 - allow sample collection
     ```
 
-1. Modifiez l’unité d’organisation par le biais de la stratégie de groupe. Pour plus d’informations, [voir Configurer avec la stratégie de groupe.](configure-endpoints-gp.md)
+5. Modifiez l’unité d’organisation par le biais de la stratégie de groupe. Pour plus d’informations, [voir Configurer avec la stratégie de groupe.](configure-endpoints-gp.md)
 
-1. Si ces étapes ne résolvent pas le problème, contactez [winatp@microsoft.com](mailto:winatp@microsoft.com).
+6. Si ces étapes ne résolvent pas le problème, contactez [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## <a name="related-topics"></a>Voir aussi
 

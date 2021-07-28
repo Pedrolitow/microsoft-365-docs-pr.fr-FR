@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd7aa2af2c7500bbe02108bb8aa5dee452ff2998
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 35a78870f3b1ecbe1d15790c033db1b59bf93a83
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771596"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621558"
 ---
 # <a name="recommendation-resource-type"></a>Type de ressource Recommendation
 
@@ -30,7 +30,7 @@ ms.locfileid: "52771596"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "52771596"
 ## <a name="methods"></a>Méthodes
 Méthode |Type renvoyé |Description
 :---|:---|:---
-[Répertorier toutes les actions d’amélioration](get-all-recommendations.md) | Collection Recommendation | Récupère la liste de toutes les recommandations de sécurité affectant l’organisation
+[Répertorier toutes les actions d’amélioration](get-all-recommendations.md) | Collection Recommendation | Récupère une liste de toutes les recommandations de sécurité affectant l’organisation
 [Obtenir les actions d’amélioration par ID](get-recommendation-by-id.md) | Recommandation | Récupère une recommandation de sécurité par son ID
 [Obtenir un logiciel de recommandation](get-recommendation-software.md)| [Logiciels](software.md) | Récupère une recommandation de sécurité liée à un logiciel spécifique
 [Obtenir des appareils de recommandation](get-recommendation-machines.md)|Collection MachineRef | Récupère la liste des appareils associés à la recommandation de sécurité
@@ -52,23 +52,23 @@ Méthode |Type renvoyé |Description
 ## <a name="properties"></a>Propriétés
 Propriété |   Type   |   Description
 :---|:---|:---
-id | String | ID de recommandation
+id | Chaîne | ID de recommandation
 productName | String | Nom du logiciel associé  
-recommendationName | String | Nom de la recommandation
+recommendationName | Chaîne | Nom de la recommandation
 Faiblesses | Entier long | Nombre de vulnérabilités découvertes
-Fournisseur | String | Nom du fournisseur associé
-recommendedVersion | String | Version recommandée
-recommendationCategory | String | Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityStack »
-sous-catégorie | String | Sous-catégorie de recommandation
+Fournisseur | Chaîne | Nom du fournisseur associé
+recommendedVersion | Chaîne | Version recommandée
+recommendationCategory | Chaîne | Catégorie de recommandation. Les valeurs possibles sont : « Accounts », « Application », « Network », « OS », « SecurityStack »
+sous-catégorie | Chaîne | Sous-catégorie de recommandation
 severityScore | Double | Impact potentiel de la configuration sur le Score de sécurité Microsoft pour les appareils de l’organisation (1-10)
-publicExploit | Booléen | Une exploitation publique est disponible 
-activeAlert | Booléen | L’alerte active est associée à cette recommandation
-associatedThreats | String collection | Le rapport d’analyse des menaces est associé à cette recommandation
-remediationType | String | Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »
-Statut | Énum | État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »
+publicExploit | Valeur booléenne | Une exploitation publique est disponible 
+activeAlert | Valeur booléenne | L’alerte active est associée à cette recommandation
+associatedThreats | Collection de chaînes | Le rapport d’analyse des menaces est associé à cette recommandation
+remediationType | Chaîne | Type de correction. Les valeurs possibles sont : « ConfigurationChange », « Update », « Upgrade », « Uninstall »
+État | Énum | État de l’exception de recommandation. Les valeurs possibles sont : « Active » et « Exception »
 configScoreImpact | Double | Impact du Score de sécurisation Microsoft pour les appareils
 exposureImpacte | Double | Impact du score d’exposition
 totalMachineCount | Entier long | Nombre d’appareils installés
 exposedMachinesCount | Entier long | Nombre d’appareils installés exposés aux vulnérabilités
 nonProductivityImpactedAssets | Entier long | Nombre d’appareils qui ne sont pas affectés  
-relatedComponent | String |  Composant logiciel associé
+relatedComponent | Chaîne |  Composant logiciel associé

@@ -19,24 +19,24 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: cb95deb890b52f0f5fde26a3a193181713b8ae5f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9d204c7ad9aaecd077f2bce462d650a4cfdbf06e
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933828"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619542"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner une adresse IP associée à une alerte Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Examinez les communications possibles entre vos appareils et les adresses IP externes.
 
@@ -56,7 +56,7 @@ La section Détails de l’adresse IP affiche les attributs de l’adresse IP, t
 
 ## <a name="alerts-related-to-this-ip"></a>Alertes associées à cette adresse IP
 
-Les **alertes associées à cette** section IP fournissent une liste des alertes associées à l’adresse IP.
+Les **alertes associées à cette** section IP fournissent une liste d’alertes associées à l’adresse IP.
 
 ## <a name="ip-in-organization"></a>IP dans l’organisation
 
@@ -87,7 +87,7 @@ En cliquant sur l’un des noms d’appareils, vous pouvez continuer à examiner
 
 ## <a name="related-topics"></a>Voir aussi
 
-- [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison](investigate-files.md)

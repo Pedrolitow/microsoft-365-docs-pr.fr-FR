@@ -16,22 +16,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 75b62f1bada67c30dc05237a284f8b64c3c7072d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1666470056b0ec76df6b1fc797d6809823163c7b
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771380"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618810"
 ---
 # <a name="indicator-resource-type"></a>Type de ressource Indicateur
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -41,35 +41,34 @@ ms.locfileid: "52771380"
 
 - Consultez la [page Indicateurs correspondante](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) dans le portail. 
 
-Méthode|Type renvoyé |Description
+Méthode|Type renvoyé|Description
 :---|:---|:---
-[Répertorier des indicateurs](get-ti-indicators-collection.md) | [Indicateur](ti-indicator.md) Collection | Entités [d’indicateur](ti-indicator.md) de liste.
-[Envoyer des indicateurs](post-ti-indicator.md) | [Indicateur](ti-indicator.md) | Entité d’indicateur [d’soumission ou](ti-indicator.md) de mise à jour.
-[Importer des indicateurs](import-ti-indicators.md) | [Indicateur](ti-indicator.md) Collection | Envoyer ou mettre à jour [des entités](ti-indicator.md) d’indicateurs.
-[Supprimer des indicateurs](delete-ti-indicator-by-id.md) | Aucun contenu | Supprime [l’entité Indicateur.](ti-indicator.md)
-
+[Répertorier des indicateurs](get-ti-indicators-collection.md)|[Indicateur](ti-indicator.md) Collection|Entités [d’indicateur](ti-indicator.md) de liste.
+[Envoyer des indicateurs](post-ti-indicator.md)|[Indicateur](ti-indicator.md)|Entité d’indicateur [d’soumission ou](ti-indicator.md) de mise à jour.
+[Importer des indicateurs](import-ti-indicators.md)|[Indicateur](ti-indicator.md) Collection|Envoyer ou mettre à jour [des entités](ti-indicator.md) d’indicateurs.
+[Supprimer des indicateurs](delete-ti-indicator-by-id.md)|Aucun contenu|Supprime [l’entité Indicateur.](ti-indicator.md)
 
 ## <a name="properties"></a>Propriétés
-Propriété |  Type    |   Description
-:---|:---|:---
-id | String | Identité de [l’entité Indicateur.](ti-indicator.md)
-indicatorValue | String | Valeur de [l’indicateur](ti-indicator.md).
-indicatorType | Énum | Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ».
-application | String | Application associée à l’indicateur. 
-action | Énum | Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ».
-sourceType | Énum | « Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
-source | string | Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
-createdBy | String | Identité unique de l’utilisateur/de l’application qui a soumis l’indicateur.
-lastUpdatedBy | String | Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
-creationTimeDateTimeUtc | DateTimeOffset | Date et heure de création de l’indicateur.
-expirationTime | DateTimeOffset | Heure d’expiration de l’indicateur.
-lastUpdateTime | DateTimeOffset | Dernière mise à jour de l’indicateur.
-Sévérité  | Énum | Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
-title | String | Titre de l’indicateur.
-description | String | Description de l’indicateur.
-recommendedActions | String | Actions recommandées pour l’indicateur.
-rbacGroupNames | Liste des chaînes | Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 
+Propriété|Type|Description
+:---|:---|:---
+id|Chaîne|Identité de [l’entité Indicateur.](ti-indicator.md)
+indicatorValue|Chaîne|Valeur de [l’indicateur](ti-indicator.md).
+indicatorType|Énum|Type de l’indicateur. Les valeurs possibles sont les suivantes : « FileSha1 », « FileSha256 », « IpAddress », « DomainName » et « Url ».
+application|Chaîne|Application associée à l’indicateur.
+action|Énum|Action qui sera entreprise si l’indicateur est détecté dans l’organisation. Les valeurs possibles sont : « Alert », « AlertAndBlock » et « Allowed ».
+sourceType|Énum|« Utilisateur » au cas où l’indicateur créé par un utilisateur (par exemple, à partir du portail), « AadApp » au cas où il a été envoyé à l’aide d’une application automatisée via l’API.
+source|string|Nom de l’utilisateur/de l’application qui a soumis l’indicateur.
+createdBy|String|Identité unique de l’utilisateur/de l’application qui a soumis l’indicateur.
+lastUpdatedBy|Chaîne|Identité de l’utilisateur/de l’application qui a mis à jour l’indicateur pour la dernière fois.
+creationTimeDateTimeUtc|DateTimeOffset|Date et heure de création de l’indicateur.
+expirationTime|DateTimeOffset|Heure d’expiration de l’indicateur.
+lastUpdateTime|DateTimeOffset|Dernière mise à jour de l’indicateur.
+Sévérité |Énum|Gravité de l’indicateur. les valeurs possibles sont : « Informational », « Low », « Medium » et « High ».
+title|Chaîne|Titre de l’indicateur.
+description|Chaîne|Description de l’indicateur.
+recommendedActions|Chaîne|Actions recommandées pour l’indicateur.
+rbacGroupNames|Liste des chaînes|Noms de groupes d’appareils RBAC où l’indicateur est exposé et actif. Liste vide au cas où elle serait exposée à tous les appareils.
 
 ## <a name="json-representation"></a>Représentation Json
 

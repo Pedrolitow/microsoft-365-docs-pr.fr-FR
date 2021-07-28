@@ -2,8 +2,8 @@
 title: Corriger les menaces liées aux applications
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Corrigez les menaces liées aux applications.
-ms.openlocfilehash: 73776621ef86523d64b2a216538412bb46ab5586
-ms.sourcegitcommit: 41c7f7bd5c808ee5ceca0f6efe13d4e67da0262b
+ms.openlocfilehash: 5d2673fa1723e227119dd535784b4ad391ccf79f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420183"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621694"
 ---
 # <a name="remediate-app-threats"></a>Corriger les menaces liées aux applications
 

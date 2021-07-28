@@ -17,22 +17,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: c4cdc80170b49a111f476d2d17222c41e2b5c55f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 76b701243b2c458ad623f7e39967bf8d2595bbc5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935364"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619602"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Corriger les capteurs défectueux dans Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 Les appareils classés comme étant mal configurés ou inactifs peuvent être signalés en raison de différentes causes. Cette section fournit des explications sur ce qui peut avoir entraîné la catégorisation d’un appareil comme inactif ou mal configuré.
 
@@ -84,7 +84,7 @@ Suivez ces actions pour corriger les problèmes connus liés à un appareil mal 
   Vérifiez que la configuration du proxy s’est correctement terminée, que WinHTTP peut découvrir et communiquer via le serveur proxy dans votre environnement, et que le serveur proxy autorise le trafic vers les URL du service Microsoft Defender for Endpoint.
 
 - [Vérifier que le service de données de diagnostic est activé](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-Si les appareils ne sont pas correctement signalés, vous devrez peut-être vérifier que le service de données de diagnostic Windows 10 est automatiquement mis en service et qu’il est en cours d’exécution sur le point de terminaison.
+Si les appareils ne sont pas correctement signalés, vous devrez peut-être vérifier que le service de données de diagnostic Windows 10 est automatiquement mis en service et qu’il s’exécute sur le point de terminaison.
 
 - [S’assurer que Antivirus Microsoft Defender n’est pas désactivé par la stratégie](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
 Si vos appareils exécutent un client de logiciel anti-programme malveillant tiers, l’agent Defender for Endpoint a besoin du pilote ELAM (Antivirus Microsoft Defender Early Launch Antimalware) pour être activé.

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0173e271967a1b5b18d69713e9e6540e9cd11a87
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 30a8f680ac6146945dfac869859667ec8a4ffdda
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772400"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53621798"
 ---
 # <a name="advanced-hunting-api"></a>API de recherche avancée
 
@@ -31,7 +31,7 @@ ms.locfileid: "52772400"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -55,15 +55,16 @@ ms.locfileid: "52772400"
 
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation |   Autorisation  |   Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application |   AdvancedQuery.Read.All |    « Exécuter des requêtes avancées »
-Déléguée (compte professionnel ou scolaire) | AdvancedQuery.Read | « Exécuter des requêtes avancées »
+Application|AdvancedQuery.Read.All|« Exécuter des requêtes avancées »
+Déléguée (compte professionnel ou scolaire)|AdvancedQuery.Read|« Exécuter des requêtes avancées »
 
->[!Note]
+> [!NOTE]
 > Lors de l’obtention d’un jeton à l’aide des informations d’identification de l’utilisateur :
->- L’utilisateur doit avoir le rôle AD « Afficher les données »
->- L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
+>
+> - L’utilisateur doit avoir le rôle AD « Afficher les données »
+> - L’utilisateur doit avoir accès à l’appareil, en fonction des paramètres de groupe d’appareils (voir Créer et gérer des groupes d’appareils [pour](machine-groups.md) plus d’informations)
 
 ## <a name="http-request"></a>Requête HTTP
 
@@ -73,27 +74,26 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-En-tête | Valeur 
+En-tête|Valeur
 :---|:---
-Autorisation | Porteur {token}. **Obligatoire**.
-Content-Type    | application/json
+Autorisation|Porteur {token}. **Obligatoire**.
+Content-Type|application/json
 
 ## <a name="request-body"></a>Corps de la demande
 
 Dans le corps de la demande, fournissons un objet JSON avec les paramètres suivants :
 
-Paramètre | Type    | Description
+Parameter|Type|Description
 :---|:---|:---
-Requête | Texte |  Requête à exécuter. **Obligatoire**.
+Requête|Texte|Requête à exécuter. **Obligatoire**.
 
 ## <a name="response"></a>Réponse
 
 Si elle réussit, cette méthode renvoie 200 OK et l’objet _QueryResponse_ dans le corps de la réponse.
 
-
 ## <a name="example"></a>Exemple
 
-##### <a name="request"></a>Demande
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
@@ -104,19 +104,19 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```json
 {
     "Query":"DeviceProcessEvents  
-    | where InitiatingProcessFileName =~ 'powershell.exe'
-    | where ProcessCommandLine contains 'appdata'
-    | project Timestamp, FileName, InitiatingProcessFileName, DeviceId
-    | limit 2"
+|where InitiatingProcessFileName =~ 'powershell.exe'
+|where ProcessCommandLine contains 'appdata'
+|project Timestamp, FileName, InitiatingProcessFileName, DeviceId
+|limit 2"
 }
 ```
 
-##### <a name="response"></a>Réponse
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
 
->[!NOTE]
->L’objet de réponse illustré ici peut être tronqué pour des raisons de concision. Toutes les propriétés sont renvoyées à partir d’un appel réel.
+> [!NOTE]
+> L’objet de réponse illustré ici peut être tronqué pour des raisons de concision. Toutes les propriétés sont renvoyées à partir d’un appel réel.
 
 ```json
 {

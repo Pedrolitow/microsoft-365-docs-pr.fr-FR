@@ -18,23 +18,23 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 7826229ba67384137c033745a5b85e557fc9c4a7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 98e4c781f28f1a89eb3ba9878b65ef57d0e40ea8
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933468"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619554"
 ---
 # <a name="investigate-a-domain-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un domaine associé à une alerte Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink) 
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatedomain-abovefoldlink)
 
 Examinez un domaine pour voir si les appareils et les serveurs de votre réseau d’entreprise communiquent avec un domaine malveillant connu.
 
@@ -57,7 +57,7 @@ La **carte Incident** affiche un graphique à barres de toutes les alertes activ
 
 ## <a name="prevalence"></a>Prévalence
 
-La **carte de** prévalence fournit des détails sur la prévalence de l’URL au sein de l’organisation, sur une période spécifiée.
+La **carte prévalence** fournit des détails sur la prévalence de l’URL au sein de l’organisation, sur une période spécifiée.
 
 Bien que la période par défaut soit les 30 derniers jours, vous pouvez personnaliser la plage en sélectionnant la flèche pointant vers le bas dans le coin de la carte. La plage la plus courte disponible est pour la prévalence au cours du dernier jour, tandis que la plage la plus longue se trouve sur les 6 derniers mois.
 
@@ -82,7 +82,7 @@ Vous pouvez afficher les événements de différentes périodes en entrant les d
 5. En cliquant sur l’un des noms d’appareils, vous pouvez continuer à examiner les alertes, comportements et événements signalés.
 
 ## <a name="related-topics"></a>Voir aussi
-- [Afficher et organiser la file d’attente des alertes microsoft Defender pour les points de terminaison](alerts-queue.md)
+- [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)
 - [Examiner microsoft Defender pour les alertes de point de terminaison](investigate-alerts.md)
 - [Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison](investigate-files.md)

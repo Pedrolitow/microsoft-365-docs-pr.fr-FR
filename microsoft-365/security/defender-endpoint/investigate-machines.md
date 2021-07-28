@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c89de5fbf5d5b4d5d5e53074109bc8884a271eea
-ms.sourcegitcommit: 00f001019c653269d85718d410f970887d904304
+ms.openlocfilehash: 6d1c5c1ffa12b300a7a28ad7d38cbda3be24828f
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53394892"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619566"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Examiner les appareils de la liste Microsoft Defender pour les appareils de point de terminaison
 
@@ -34,7 +34,7 @@ ms.locfileid: "53394892"
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Examinez les détails d’une alerte sur un appareil spécifique pour identifier d’autres comportements ou événements qui peuvent être liés à l’alerte ou à l’étendue potentielle de la violation.
 
@@ -110,13 +110,13 @@ Pour afficher une vue de page complète d’une alerte, y compris le graphique d
 
 **L’onglet** Chronologie fournit une vue chronologique des événements et des alertes associées qui ont été observés sur l’appareil. Cela peut vous aider à corréler tous les événements, fichiers et adresses IP par rapport à l’appareil.
 
-La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil pendant une période sélectionnée. Pour mieux contrôler votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
+La chronologie vous permet également d’aller de manière sélective dans les événements qui se sont produits au cours d’une période donnée. Vous pouvez afficher la séquence temporelle des événements qui se sont produits sur un appareil sur une période sélectionnée. Pour contrôler davantage votre affichage, vous pouvez filtrer par groupes d’événements ou personnaliser les colonnes.
 
 >[!NOTE]
 > Pour afficher les événements de pare-feu, vous devez activer la stratégie d’audit, voir Connexion à la plateforme de filtrage [d’audit.](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 >Le pare-feu couvre les événements suivants
 >
->- [5025](/windows/security/threat-protection/auditing/event-5025) - Service de pare-feu arrêté
+>- [5025](/windows/security/threat-protection/auditing/event-5025) : service de pare-feu arrêté
 >- [5031](/windows/security/threat-protection/auditing/event-5031) : application bloquée pour accepter les connexions entrantes sur le réseau
 >- [5157](/windows/security/threat-protection/auditing/event-5157) : connexion bloquée
 
@@ -128,11 +128,11 @@ Voici quelques-unes des fonctionnalités :
   - Utilisez la barre de recherche pour rechercher des événements de chronologie spécifiques.
 - Filtrer les événements à partir d’une date spécifique
   - Sélectionnez l’icône de calendrier dans le coin supérieur gauche du tableau pour afficher les événements du dernier jour, semaine, 30 jours ou plage personnalisée. Par défaut, la chronologie de l’appareil est définie pour afficher les événements des 30 derniers jours.
-  - Utilisez la chronologie pour passer à un moment spécifique dans le temps en mettant en surbrillance la section. Les flèches de la chronologie recherchent des investigations automatisées
+  - Utilisez la chronologie pour passer à un moment spécifique dans le temps en mettant en surbrillance la section. Les flèches sur la chronologie recherchent des investigations automatisées
 - Exporter des événements de chronologie détaillés de l’appareil
   - Exportez la chronologie de l’appareil pour la date actuelle ou une plage de dates spécifiée jusqu’à sept jours.
 
-Des informations supplémentaires sur certains événements sont fournies dans la section **Informations** supplémentaires. Ces détails varient en fonction du type d’événement, par exemple : 
+Des informations supplémentaires sur certains événements sont fournies dans la section **Informations supplémentaires.** Ces détails varient en fonction du type d’événement, par exemple : 
 
 - Contenu par Application Guard : l’événement de navigateur web a été limité par un conteneur isolé
 - Menace active détectée : la détection des menaces s’est produite pendant l’exécution de la menace
@@ -143,7 +143,7 @@ Des informations supplémentaires sur certains événements sont fournies dans l
 - Catégorie d’alerte : si l’événement a conduit à la génération d’une alerte, la catégorie d’alerte ( « Mouvement latéral », par exemple) est fournie.
 
 #### <a name="event-details"></a>Détails de l'événement
-Sélectionnez un événement pour afficher les détails pertinents sur cet événement. Un panneau s’affiche pour afficher des informations générales sur les événements. Le cas échéant et si des données sont disponibles, un graphique montrant les entités associées et leurs relations est également affiché.
+Sélectionnez un événement pour afficher les détails pertinents sur cet événement. Un panneau s’affiche pour afficher des informations générales sur les événements. Le cas échéant et lorsque des données sont disponibles, un graphique montrant les entités associées et leurs relations est également affiché.
 
 Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) et les événements connexes, vous pouvez rapidement exécuter une requête de recherche avancée en sélectionnant **Hunt pour les événements connexes.** La requête retourne l’événement sélectionné et la liste des autres événements qui se sont produits au même moment sur le même point de terminaison.
 
@@ -151,13 +151,13 @@ Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) 
 
 ### <a name="security-recommendations"></a>Recommandations de sécurité
 
-**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité de gestion des menaces [& vulnérabilités du](tvm-dashboard-insights.md) point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-utilisation. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
+**Des recommandations en matière** de sécurité sont générées à partir de Microsoft Defender pour la fonctionnalité de gestion des menaces [& vulnérabilités du](tvm-dashboard-insights.md) point de terminaison. La sélection d’une recommandation affiche un panneau dans lequel vous pouvez afficher des détails pertinents, tels que la description de la recommandation et les risques potentiels associés à sa non-adoption. Pour plus [d’informations, voir](tvm-security-recommendation.md) recommandations en matière de sécurité.
 
 ![Image de l’onglet Recommandations de sécurité](images/security-recommendations-device.png)
 
 ### <a name="software-inventory"></a>Inventaire des logiciels
 
-**L’onglet Inventaire** logiciel vous permet d’afficher le logiciel sur l’appareil, ainsi que les faiblesses ou menaces. La sélection du nom du logiciel vous permet d’afficher les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions sur la page des détails du logiciel. Voir [l’inventaire logiciel](tvm-software-inventory.md) pour plus d’informations
+**L’onglet Inventaire** logiciel vous permet d’afficher le logiciel sur l’appareil, ainsi que les faiblesses ou menaces. La sélection du nom du logiciel vous permet d’afficher les recommandations de sécurité, les vulnérabilités découvertes, les appareils installés et la distribution des versions sur la page de détails du logiciel. Voir [l’inventaire logiciel](tvm-software-inventory.md) pour plus d’informations
 
 ![Image de l’onglet Inventaire logiciel](images/software-inventory-device.png)
 
@@ -176,12 +176,12 @@ Pour inspecter plus en détail l’événement [](advanced-hunting-overview.md) 
 
 ### <a name="active-alerts"></a>Alertes actives
 
-La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des alertes relatives à l’appareil et à son niveau de risque, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et qu’il existe des alertes actives. Plus d’informations sont disponibles dans l’exercice « Alertes ».
+La carte **Azure Advanced Threat Protection** affiche une vue d’ensemble des alertes liées à l’appareil et à leur niveau de risque, si vous avez activé la fonctionnalité Microsoft Defender pour l’identité et qu’il existe des alertes actives. Plus d’informations sont disponibles dans l’exercice « Alertes ».
 
 ![Image de la carte d’alertes active](images/risk-level-small.png)
 
 >[!NOTE]
->Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
+>Vous devez activer l’intégration sur Microsoft Defender pour l’identité et Defender pour le point de terminaison pour utiliser cette fonctionnalité. Dans Defender pour point de terminaison, vous pouvez activer cette fonctionnalité dans les fonctionnalités avancées. Pour plus d’informations sur l’activer, voir [Activer les fonctionnalités avancées.](advanced-features.md)
 
 ### <a name="logged-on-users"></a>Utilisateurs connectés
 
@@ -197,7 +197,7 @@ La **carte d’évaluation de** la sécurité indique le niveau d’exposition g
 
 ![Image de la carte d’évaluation de la sécurité](images/security-assessments.png)
 
-## <a name="related-topics"></a>Rubriques associées
+## <a name="related-topics"></a>Voir aussi
 
 - [Afficher et organiser la file d’attente d’alertes Microsoft Defender pour point de terminaison](alerts-queue.md)
 - [Gérer les alertes microsoft Defender pour les points de terminaison](manage-alerts.md)

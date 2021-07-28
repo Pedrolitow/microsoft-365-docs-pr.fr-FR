@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fa1973d1c53048b04c9135a72e55ec4759412b18
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 440eb0d44d1faa0589e1c7315528d68c6c5dc1a5
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166708"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619626"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>Rechercher des informations sur l’appareil par API IP interne
 
@@ -28,7 +28,7 @@ ms.locfileid: "51166708"
 
 **S’applique à :** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Vous souhaitez découvrir Microsoft Defender pour le point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Vous voulez découvrir Microsoft Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -36,55 +36,57 @@ ms.locfileid: "51166708"
 
 Recherchez un appareil par adresse IP interne.
 
->[!NOTE]
->L’timestamp doit se trouver dans les 30 derniers jours.
+> [!NOTE]
+> L’timestamp doit se trouver dans les 30 derniers jours.
 
 ## <a name="permissions"></a>Autorisations
+
 L’une des autorisations suivantes est nécessaire pour appeler cette API. Pour en savoir plus, notamment sur le choix des autorisations, voir [Utiliser Microsoft Defender pour les API de point de terminaison](apis-intro.md)
 
-Type d’autorisation | Autorisation | Nom d’affichage de l’autorisation
+Type d’autorisation|Autorisation|Nom d’affichage de l’autorisation
 :---|:---|:---
-Application | Machine.Read.All | « Lire tous les profils d’ordinateur »
-Application | Machine.ReadWrite.All | « Lire et écrire toutes les informations sur l’ordinateur »
+Application|Machine.Read.All|« Lire tous les profils d’ordinateur »
+Application|Machine.ReadWrite.All|« Lire et écrire toutes les informations sur l’ordinateur »
 
 ## <a name="http-request"></a>Requête HTTP
-```
+
+```http
 GET /api/machines/find(timestamp={time},key={IP})
 ```
 
 ## <a name="request-headers"></a>En-têtes de demande
 
-Nom | Type | Description
+Nom|Type|Description
 :---|:---|:---
-Autorisation | String | Porteur {token}. **Obligatoire**.
-
+Autorisation|Chaîne|Porteur {token}. **Obligatoire**.
 
 ## <a name="request-body"></a>Corps de la demande
+
 Vide
 
 ## <a name="response"></a>Réponse
-En cas de réussite et si l’ordinateur existe : 200 - OK.
-Si aucun ordinateur n’est trouvé - 404 - In trouvé.
 
+En cas de réussite et si l’ordinateur existe : 200 - OK.
+Si aucun ordinateur n’a été trouvé - 404 - In trouvé.
 
 ## <a name="example"></a>Exemple
 
-**Demande**
+### <a name="request-example"></a>Exemple de requête
 
 Voici un exemple de demande.
 
-```
+```http
 GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
 Content-type: application/json
 ```
 
-**Réponse**
+### <a name="response-example"></a>Exemple de réponse
 
 Voici un exemple de réponse.
 
-La réponse retourne la liste de tous les appareils qui ont signalé cette adresse IP dans les 16 minutes qui s’viennent avant et après l’heure. 
+La réponse retourne la liste de tous les appareils qui ont signalé cette adresse IP dans les 16 minutes qui s’viennent avant et après l’heure.
 
-```
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 {
@@ -95,6 +97,6 @@ Content-type: application/json
             "computerDnsName": "",
             "firstSeen": "2017-07-06T01:25:04.9480498Z",
             "osPlatform": "Windows10",
-…
+...
 }
 ```

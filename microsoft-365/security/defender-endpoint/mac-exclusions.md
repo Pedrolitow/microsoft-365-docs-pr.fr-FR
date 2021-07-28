@@ -1,6 +1,6 @@
 ---
 title: Configurer et valider des exclusions pour Microsoft Defender pour endpoint sur Mac
-description: Fournir et valider des exclusions pour Microsoft Defender pour endpoint sur Mac. Les exclusions peuvent être définies pour les fichiers, dossiers et processus.
+description: Fournir et valider des exclusions pour Microsoft Defender pour point de terminaison sur Mac. Les exclusions peuvent être définies pour les fichiers, dossiers et processus.
 keywords: microsoft, defender, Microsoft Defender pour point de terminaison, mac, exclusions, analyses, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,53 +18,53 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c014447e51e5c5fcb96924e5e98c62f478a32ea7
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 43fc03522f1783c74eb5b2874da6125881a3740d
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935028"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53618922"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurer et valider des exclusions pour Microsoft Defender pour le point de terminaison sur macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vous souhaitez faire l’expérience de Defender for Endpoint ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Cet article fournit des informations sur la définition d’exclusions qui s’appliquent aux analyses à la demande, ainsi que sur la protection et la surveillance en temps réel.
 
->[!IMPORTANT]
->Les exclusions décrites dans cet article ne s’appliquent pas aux autres fonctionnalités de Defender for Endpoint sur Mac, notamment protection évolutive des points de terminaison (PEPT). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher PEPT alertes et autres détections.
+> [!IMPORTANT]
+> Les exclusions décrites dans cet article ne s’appliquent pas aux autres fonctionnalités de Defender for Endpoint sur Mac, notamment protection évolutive des points de terminaison (PEPT). Les fichiers que vous excluez à l’aide des méthodes décrites dans cet article peuvent toujours déclencher PEPT alertes et autres détections.
 
 Vous pouvez exclure certains fichiers, dossiers, processus et fichiers ouverts par processus de Defender pour endpoint sur Mac.
 
 Les exclusions peuvent être utiles pour éviter les détections incorrectes sur les fichiers ou les logiciels qui sont uniques ou personnalisés pour votre organisation. Ils peuvent également être utiles pour atténuer les problèmes de performances causés par Defender pour Endpoint sur Mac.
 
->[!WARNING]
->La définition d’exclusions réduit la protection offerte par Defender pour Endpoint sur Mac. Vous devez toujours évaluer les risques associés à l’implémentation d’exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu’ils ne sont pas malveillants.
+> [!WARNING]
+> La définition d’exclusions réduit la protection offerte par Defender pour Endpoint sur Mac. Vous devez toujours évaluer les risques associés à l’implémentation d’exclusions, et vous devez exclure uniquement les fichiers dont vous êtes certain qu’ils ne sont pas malveillants.
 
 ## <a name="supported-exclusion-types"></a>Types d’exclusion pris en charge
 
 Le tableau suivant indique les types d’exclusion pris en charge par Defender pour Endpoint sur Mac.
 
-Exclusion | Définition | Exemples
+Exclusion|Définition|Exemples
 ---|---|---
-Extension de fichier | Tous les fichiers avec l’extension, n’importe où sur l’ordinateur | `.test`
-Fichier | Un fichier spécifique identifié par le chemin d’accès complet | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Dossier | Tous les fichiers sous le dossier spécifié (de manière récursive) | `/var/log/`<br/>`/var/*/`
-Processus | Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci | `/bin/cat`<br/>`cat`<br/>`c?t`
+Extension de fichier|Tous les fichiers avec l’extension, n’importe où sur l’ordinateur|`.test`
+Fichier|Un fichier spécifique identifié par le chemin d’accès complet|`/var/log/test.log` <p> `/var/log/*.log` <p> `/var/log/install.?.log`
+Folder|Tous les fichiers sous le dossier spécifié (de manière récursive)|`/var/log/` <p> `/var/*/`
+Processus|Un processus spécifique (spécifié par le chemin d’accès complet ou le nom de fichier) et tous les fichiers ouverts par celui-ci|`/bin/cat` <p> `cat` <p> `c?t`
 
 Les exclusions de fichiers, de dossiers et de processus prisent en charge les caractères génériques suivants :
 
-Caractère générique | Description | Exemple | Correspondances | Ne correspond pas
+Caractère générique|Description|Exemple|Correspondances|Ne correspond pas
 ---|---|---|---|---
-\* |    Correspond à n’importe quel nombre de caractères, y compris aucun (notez que lorsque ce caractère générique est utilisé à l’intérieur d’un chemin d’accès, il ne remplace qu’un seul dossier) | `/var/*/*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | Correspond à n’importe quel caractère | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\*|Correspond à n’importe quel nombre de caractères, y compris aucun (notez que lorsque ce caractère générique est utilisé à l’intérieur d’un chemin d’accès, il ne remplace qu’un seul dossier)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|Correspond à n’importe quel caractère|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
 
 >[!NOTE]
 >Le produit tente de résoudre les liens fermes lors de l’évaluation des exclusions. La résolution firmlink ne fonctionne pas lorsque l’exclusion contient des caractères génériques ou que le fichier cible (sur le `Data` volume) n’existe pas.
@@ -79,13 +79,13 @@ Pour plus d’informations sur la configuration des exclusions à partir de JAMF
 
 Ouvrez l’application Defender for Endpoint et accédez à Gérer les **paramètres** Ajouter ou supprimer une exclusion... , comme illustré  >  dans la capture d’écran suivante :
 
-![Capture d’écran gérer les exclusions](images/mdatp-37-exclusions.png)
+![Capture d’écran Gérer les exclusions](images/mdatp-37-exclusions.png)
 
 Sélectionnez le type d’exclusion que vous souhaitez ajouter et suivez les invites.
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Valider les listes d’exclusions avec le fichier de test EICAR
 
-Vous pouvez vérifier que vos listes d’exclusions fonctionnent en téléchargeant `curl` un fichier de test.
+Vous pouvez vérifier que vos listes d’exclusions fonctionnent à l’aide `curl` du téléchargement d’un fichier de test.
 
 Dans l’extrait de code Bash suivant, remplacez-le par un fichier conforme `test.txt` à vos règles d’exclusion. Par exemple, si vous avez exclu `.testing` l’extension, `test.txt` remplacez par `test.testing` . Si vous testez un chemin d’accès, veillez à exécuter la commande dans ce chemin d’accès.
 

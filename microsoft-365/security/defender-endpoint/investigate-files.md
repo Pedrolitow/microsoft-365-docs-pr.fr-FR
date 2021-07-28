@@ -19,23 +19,23 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b509ab6d0c3e5183b99173e950198bad0ccd8ee0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e04384e98afb67a01582201aff0dced51e9c8ac7
+ms.sourcegitcommit: 3576c2fee77962b516236cb67dd3df847d61c527
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186064"
+ms.lasthandoff: 07/28/2021
+ms.locfileid: "53619578"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Examiner un fichier associé à une alerte Microsoft Defender pour le point de terminaison
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**S’applique à :**
+**S’applique à :**
 - [Microsoft Defender pour point de terminaison](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
->Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous à un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
+> Vous souhaitez faire l’expérience de Defender pour point de terminaison ? [Inscrivez-vous pour bénéficier d’un essai gratuit.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
 
 Examinez les détails d’un fichier associé à une alerte, un comportement ou un événement spécifique pour déterminer si le fichier présente des activités malveillantes, identifier la motivation de l’attaque et comprendre l’étendue potentielle de la violation.
 
@@ -81,7 +81,7 @@ La carte de prévalence du fichier indique où le fichier a été vu sur les app
 
 ## <a name="alerts"></a>Alertes
 
-**L’onglet Alertes** fournit une liste des alertes associées au fichier. Cette liste couvre la plupart des informations de la file d’attente des alertes, à l’exception du groupe d’appareils, s’il y en a, à qui appartient l’appareil concerné. Vous pouvez choisir le type d’informations affiché en sélectionnant Personnaliser les colonnes dans la barre d’outils au-dessus des en-têtes de colonne. 
+**L’onglet Alertes** fournit une liste des alertes associées au fichier. Cette liste couvre la plupart des informations de la file d’attente des alertes, à l’exception du groupe d’appareils, le cas caser, à qui appartient l’appareil concerné. Vous pouvez choisir le type d’informations affiché en sélectionnant Personnaliser les colonnes dans la barre d’outils au-dessus des en-têtes de colonne. 
 
 ![Image des alertes associées à la section de fichier](images/atp-alerts-related-to-file.png)
 
@@ -90,7 +90,7 @@ La carte de prévalence du fichier indique où le fichier a été vu sur les app
 L’onglet Observé **dans l’organisation** vous permet de spécifier une plage de dates pour voir quels appareils ont été observés avec le fichier.
 
 >[!NOTE]
->Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet vers un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
+>Cet onglet affiche un nombre maximal de 100 appareils. Pour voir tous _les_ appareils avec le fichier, exportez l’onglet dans un fichier CSV en sélectionnant **Exporter** à partir du menu Actions au-dessus des en-têtes de colonne de l’onglet.
 
 ![Image de l’appareil observé le plus récent avec le fichier](images/atp-observed-machines.png)
 
@@ -98,7 +98,7 @@ Utilisez le curseur ou le sélecteur de plage pour spécifier rapidement une pé
 
 ## <a name="deep-analysis"></a>Analyse profonde
 
-**L’onglet** Analyse approfondie vous permet d’envoyer le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois le fichier soumis, le rapport d’analyse approfondie s’affiche dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
+**L’onglet** Analyse approfondie vous permet de soumettre le fichier pour analyse [approfondie,](respond-file-alerts.md#deep-analysis)de découvrir plus de détails sur le comportement du fichier, ainsi que l’effet qu’il a au sein de vos organisations. Une fois le fichier soumis, le rapport d’analyse approfondie s’affiche dans cet onglet une fois que les résultats sont disponibles. Si l’analyse approfondie n’a trouvé rien, le rapport est vide et l’espace de résultats reste vide.
 
 ![Image de l’onglet Analyse approfondie](images/submit-file.png)
 
